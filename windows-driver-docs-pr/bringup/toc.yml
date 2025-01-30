@@ -68,12 +68,8 @@
     href: sample-powershell-script-to-query-smbios-locally.md
 - name: Boot and UEFI
   items:
-  - name: Boot and UEFI
-    href: boot-and-uefi.md
   - name: UEFI in Windows
     items:
-    - name: UEFI in Windows
-      href: uefi-in-windows.md
     - name: Minimum UEFI requirements for Windows on SoC platforms
       items:
       - name: Minimum UEFI requirements for Windows on SoC platforms
@@ -84,8 +80,6 @@
         href: uefi-requirements-for-usb-flashing-support.md
     - name: UEFI protocols for Windows
       items:
-      - name: UEFI protocols for Windows
-        href: uefi-protocols-for-windows.md
       - name: UEFI entropy gathering protocol
         items:
         - name: UEFI entropy gathering protocol
@@ -104,8 +98,6 @@
             href: efi-rng-algorithm-list.md
       - name: UEFI USB function protocol
         items:
-        - name: UEFI USB function protocol
-          href: uefi-usb-function-protocol.md
         - name: EFI_USBFN_IO_PROTOCOL.AbortTransfer
           href: efi-usbfn-io-protocolaborttransfer.md
         - name: EFI_USBFN_IO_PROTOCOL.AllocateTransferBuffer
@@ -184,8 +176,6 @@
           href: uefi-sequence-diagram.md
       - name: UEFI simple I/O protocol
         items:
-        - name: UEFI simple I/O protocol
-          href: uefi-simple-io-protocol.md
         - name: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Initialize
           href: efi-simple-winphone-io-protocolinitialize.md
         - name: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Read
@@ -196,14 +186,10 @@
           href: efi-simple-winphone-io-protocolgetmaxpacketsize.md
       - name: UEFI check signature protocol
         items:
-        - name: UEFI check signature protocol
-          href: uefi-check-signature-protocol.md
         - name: EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash
           href: efi-checksig-protocolefichecksignatureandhash.md
       - name: UEFI battery charging protocol
         items:
-        - name: UEFI battery charging protocol
-          href: uefi-battery-charging-protocol.md
         - name: EFI_BATTERY_CHARGING_PROTOCOL
           href: efi-battery-charging-protocol.md
         - name: EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryInformation
@@ -218,8 +204,6 @@
           href: efi-battery-charging-completion-token.md
       - name: UEFI display power state protocol
         items:
-        - name: UEFI display power state protocol
-          href: uefi-display-power-state-protocol.md
         - name: EFI_DISPLAY_POWER_PROTOCOL
           href: efi-display-power-protocol.md
         - name: EFI_DISPLAY_POWER_PROTOCOL.GetDisplayPowerState
@@ -333,9 +317,5 @@
       href: windows-button-array-device-specific-method---dsm-.md
 - name: Security
   items:
-  - name: Security
-    href: security-overview.md
-  - name: Secure boot and device encryption overview
-    href: secure-boot-and-device-encryption-overview.md
   - name: Secure MOR implementation
     href: device-guard-requirements.md
