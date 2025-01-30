@@ -30,7 +30,7 @@ Note that %MyCo% must be defined in an [**INF Strings section**](../install/inf-
 
 ## DestinationDirs
 
-In the [**INF DestinationDirs section**](../install/inf-destinationdirs-section.md), a battery driver's INF specifies the driver store (13) as the default for all files.
+In the [**INF DestinationDirs section**](../install/inf-destinationdirs-section.md), a battery driver's INF specifies the [driver store](../develop/run-from-driver-store.md) (13) as the default for all files.
 
 ``` syntax
 [DestinationDirs]
@@ -43,7 +43,7 @@ The [**INF Manufacturer section**](../install/inf-manufacturer-section.md) defin
 
 ``` syntax
 [Manufacturer]
-%MyCo%=MyCompany,NTamd64
+%MyCo%=MyCompany,NTamd64.10.0...16299
 ```
 
 ## Models
@@ -51,19 +51,20 @@ The [**INF Manufacturer section**](../install/inf-manufacturer-section.md) defin
 The [**INF *Models* section**](../install/inf-models-section.md) specifies the PnP hardware ID of the battery (shown as *pnpid* in the example). If the device is enumerated through ACPI, this section must also specify the EISA-style ID (shown as *acpidevnum*). For information about creating these IDs, see the *Advanced Configuration and Power Interface Specification*, which is available through the [ACPI / Power Management](https://uefi.org/acpi/specs) website.
 
 ``` syntax
-[MyCompany.NTamd64]
+[MyCompany.NTamd64.10.0...16299]
 %pnpid.DeviceDesc% = NewBatt_Inst,pnpid
 %ACPI\acpidevnum.DeviceDesc% = NewBatt_Inst,ACPI\acpidevnum
 ```
 
 ## DDInstall
 
-In the [**INF *DDInstall* section**](../install/inf-ddinstall-section.md) (named NewBatt_Inst in the example), an [**INF CopyFiles directive**](../install/inf-copyfiles-directive.md) copies the battery class driver (*Battc.sys*) and the new miniclass driver (*NewBatt.sys*) to the destination specified in the **DestinationDirs** directive.
+In the [**INF *DDInstall* section**](../install/inf-ddinstall-section.md) (named NewBatt_Inst in the example), an [**INF CopyFiles directive**](../install/inf-copyfiles-directive.md) copies the new miniclass driver (*NewBatt.sys*) to the destination specified in the **DestinationDirs** directive. An **Include** and **Needs** directive specifying a dependency on the battery class driver via *Battery_Inst* from battery.inf is also needed.
 
 ``` syntax
 [NewBatt_Inst]
 CopyFiles = @NewBatt.sys
-CopyFiles = @battc.sys
+Include = battery.inf
+Needs = Battery_Inst
 ```
 
 ## DDInstall.Services
