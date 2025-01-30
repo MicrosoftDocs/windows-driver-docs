@@ -10,45 +10,94 @@ When the network redirector accesses files on remote servers, it requests the op
 
 [Oplocks](oplock-overview.md) are requested through [FSCTLs](about-fsctls.md). The following FSCTLs are used for the different [oplock types](oplock-types.md), which both user-mode applications and kernel-mode drivers can issue.
 
+* To request Windows 7 oplocks:
+  * [FSCTL_REQUEST_OPLOCK](fsctl-request-oplock.md)
 * To request legacy oplocks:
   * [FSCTL_REQUEST_OPLOCK_LEVEL_1](fsctl-request-oplock-level-1.md)
   * [FSCTL_REQUEST_OPLOCK_LEVEL_2](fsctl-request-oplock-level-2.md)
   * [FSCTL_REQUEST_BATCH_OPLOCK](fsctl-request-batch-oplock.md)
   * [FSCTL_REQUEST_FILTER_OPLOCK](fsctl-request-filter-oplock.md)
-* To request Windows 7 oplocks:
-  * [FSCTL_REQUEST_OPLOCK](fsctl-request-oplock.md)
+
+## Requesting an Oplock In User Mode
 
 To request a Windows 7 oplock in user mode, call [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol):
 
-* Set **dwIoControlCode** to [FSCTL_REQUEST_OPLOCK](fsctl-request-oplock.md).
-* Specify the REQUEST_OPLOCK_INPUT_FLAG_REQUEST flag in the **Flags** member of the [**REQUEST_OPLOCK_INPUT_BUFFER**](/windows/win32/api/winioctl/ns-winioctl-request_oplock_input_buffer) structure, which is passed as the **lpInBuffer** parameter.
+* Set **dwIoControlCode** to [FSCTL_REQUEST_OPLOCK](/windows/win32/api/winioctl/ni-winioctl-fsctl_request_oplock).
+* Pass a pointer to a [**REQUEST_OPLOCK_INPUT_BUFFER**](/windows/win32/api/winioctl/ns-winioctl-request_oplock_input_buffer) structure in the **lpInBuffer** parameter.
+  * Refer to that structure's documentation for information on how to format the oplock request.
+* Pass a pointer to a [**REQUEST_OPLOCK_OUTPUT_BUFFER**](/windows/win32/api/winioctl/ns-winioctl-request_oplock_output_buffer) structure in the **lpOutBuffer** parameter.
 
-In a similar manner, to request Windows 7 oplocks in kernel mode:
+For more information, see [**FSCTL_REQUEST_OPLOCK**](/windows/win32/api/winioctl/ni-winioctl-fsctl_request_oplock).
 
-* A non-file system minifilter can call [**ZwFsControlFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwfscontrolfile).
-* A file system minifilter must use [**FltAllocateCallbackData**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecallbackdata) and [**FltPerformAsynchronousIo**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltperformasynchronousio).
+If the requested oplock can be granted, **DeviceIoControl** returns FALSE and [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) returns ERROR_IO_PENDING. For this reason, oplocks are never granted for synchronous I/O. The overlapped operation doesn't complete until the oplock is broken. After the operation completes, the **REQUEST_OPLOCK_OUTPUT_BUFFER** will contain information about the oplock break.
 
-To specify which of the four Windows 7 oplocks is required, set one or more of the following flags in the **RequestedOplockLevel** member of the [**REQUEST_OPLOCK_INPUT_BUFFER**](/windows/win32/api/winioctl/ns-winioctl-request_oplock_input_buffer) structure:
+If the oplock can't be granted, the file system returns an appropriate error code. The most commonly returned error codes are ERROR_OPLOCK_NOT_GRANTED and ERROR_INVALID_PARAMETER.
+## Requesting an Oplock In Kernel Mode
 
-* OPLOCK_LEVEL_CACHE_READ
-* OPLOCK_LEVEL_CACHE_HANDLE
-* OPLOCK_LEVEL_CACHE_WRITE
+To request Windows 7 oplocks in kernel mode:
 
-For more information, see [**FSCTL_REQUEST_OPLOCK**](./fsctl-request-oplock.md).
+### File System Minifilters
+A file system minifilter must use [**FltAllocateCallbackData**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecallbackdata) and fill in the allocated [**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data) like so:
 
-If the requested oplock can be granted, the file system returns STATUS_PENDING. For this reason, oplocks are never granted for synchronous I/O. The FSCTL IRP doesn't complete until the oplock is broken.
+* Set its **[Iopb](/windows-hardware/drivers/ddi/fltkernel/s-fltkernel-_flt_io_parameter_block)->MajorFunction** field to [IRP_MJ_FILE_SYSETM_CONTROL](/indows-hardware/drivers/ifs/flt-parameters-for-irp-mj-file-system-control).
+* Set its **Iopb->MinorFunction** field to IRP_MN_USER_FS_REQUEST.
+* Set its **Iopb->[Parameters](/windows-hardware/drivers/ddi/fltkernel/s-fltkernel-_flt_parameters).FileSystemControl.Buffered.FsControlCode** member to [FSCTL_REQUEST_OPLOCK](/windows/win32/api/winioctl/ni-winioctl-fsctl_request_oplock).
+* Allocate a buffer whose size is equal to the larger of [**REQUEST_OPLOCK_INPUT_BUFFER**](/indows/win32/api/winioctl/ns-winioctl-request_oplock_input_buffer) or [**REQUEST_OPLOCK_OUTPUT_BUFFER**](/windows/win32/api/winioctl/s-winioctl-request_oplock_output_buffer).
+  * Set the allocated **FLT_CALLBACK_DATA**'s **Iopb->Parameters.FileSystemControl.Buffered.SystemBuffer** member to point to that buffer.
+  * Set the allocated **FLT_CALLBACK_DATA**'s **Iopb->Parameters.FileSystemControl.Buffered.InputBufferLength** and **Iopb->Parameters.FileSystemControl.Buffered.OutputBufferLength** fields to the size of that buffer.
 
-If the oplock can't be granted, the file system returns an appropriate error code is returned. The most commonly returned error codes are STATUS_OPLOCK_NOT_GRANTED and STATUS_INVALID_PARAMETER (and their equivalent user-mode analogs).
+Refer to the documentation of the [**REQUEST_OPLOCK_INPUT_BUFFER**](/indows/win32/api/winioctl/ns-winioctl-request_oplock_input_buffer) structure for information on how to format the oplock request.
 
-The Filter oplock allows an application to "back out" when other applications/clients try to access the same stream. This mechanism allows an application to access a stream without causing other accessors of the stream to receive sharing violations when attempting to open the stream. To avoid sharing violations, the following three-step procedure should be used to request a Filter oplock (FSCTL_REQUEST_FILTER_OPLOCK):
+Then the file system minifilter must call [**FltPerformAsynchronousIo**](/windows-hardware/rivers/ddi/fltkernel/nf-fltkernel-fltperformasynchronousio), passing the allocated **FLT_CALLBACK_DATA** as the **CallbackData** parameter.
+
+If the requested oplock can be granted, the **FltPerformAsynchronousIo** call returns STATUS_PENDING. For this reason, oplocks are never granted for synchronous I/O. The operation does not complete until the oplock is broken. After the operation completes, the **REQUEST_OPLOCK_OUTPUT_BUFFER** will contain information about the oplock break.
+
+If the oplock can't be granted, the file system returns an appropriate error code. The most commonly returned error codes are STATUS_OPLOCK_NOT_GRANTED and STATUS_INVALID_PARAMETER.
+
+### Other Kinds of Drivers
+
+Other kinds of drivers may call [**ZwFsControlFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwfscontrolfile):
+
+* Set **FsControlCode** to [FSCTL_REQUEST_OPLOCK](/windows/win32/api/winioctlni-winioctl-fsctl_request_oplock).
+* Pass a pointer to a [**REQUEST_OPLOCK_INPUT_BUFFER**](/windows/win32/api/winioctlns-winioctl-request_oplock_input_buffer) structure in the **InputBuffer** parameter and setthe **InputBufferLength** parameter to the size of that buffer.
+* Pass a pointer to a [**REQUEST_OPLOCK_OUTPUT_BUFFER**](/windows/win32/api/winioctlns-winioctl-request_oplock_output_buffer) structure in the **OutputBuffer** parameter and set the **OutputBufferLength** parameter to the size of that buffer.
+
+
+Refer to the documentation of the [**REQUEST_OPLOCK_INPUT_BUFFER**](/indows/win32/api/winioctl/ns-winioctl-request_oplock_input_buffer) structure for information on how to format the oplock request.
+
+If the requested oplock can be granted, the **ZwFsControlFile** call returns STATUS_PENDING. For this reason, oplocks are never granted for synchronous I/O. The operation does not complete until the oplock is broken. After the operation completes, the **REQUEST_OPLOCK_OUTPUT_BUFFER** will contain information about the oplock break.
+
+If the oplock can't be granted, the file system returns an appropriate error code. The most commonly returned error codes are STATUS_OPLOCK_NOT_GRANTED and STATUS_INVALID_PARAMETER.
+
+## Avoiding Sharing Violations When Requesting Oplocks
+
+### Using the Atomic Create-With-Oplock Method
+
+Atomic create-with-oplock is not an oplock type, it is a procedure that allows open operations to avoid causing sharing-mode violations in the time span between opening a file and receiving an oplock. With legacy oplocks this is only possible with Filter oplocks and requires opening two handles. With Windows 7 oplocks an application or driver may request any type of oplock using this procedure and need open only one handle.
+
+To perform the atomic create-with-oplock procedure you should do the following:
+
+1. Use [**FltCreateFileEx2**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcreatefileex2) or [**ZwCreateFile**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatefile), as appropriate, to open the file. In the *CreateOptions* parameter pass the flag **FILE_OPEN_REQUIRING_OPLOCK**. You may set the *DesiredAccess* and *ShareAccess* parameters as desired. For example, in the *DesiredAccess* parameter set **GENERIC_READ** so you can read the file, and in the *ShareAccess* parameter set the **FILE_SHARE_READ | FILE_SHARE_DELETE** flags to allow others to read, rename, and/or mark the file for deletion while you have it open.
+2. Use the [**FSCTL\_REQUEST\_OPLOCK**](/windows/win32/api/winioctl/ni-winioctl-fsctl_request_oplock) control code to request an oplock on the resulting file object or handle, as described above under [Requesting an Oplock In Kernel Mode](#requesting-an-oplock-in-kernel-mode).
+
+> [!NOTE]
+> You should not perform any file system operations on the file between steps 1 and 2. Doing so may cause deadlocks.
+
+The most common oplock to request using this procedure is the Read-Handle type. This allows you to allow other callers as much concurrent access as possible, while still allowing you to be notified if you needs to close your handle to avoid causing a sharing violation to a conflicting open.
+
+### Using the Legacy Filter Oplock
+
+The legacy Filter oplock also allows an application to "back out" when other applications/clients try to access the same stream, but is less flexible than the atomic create-with-oplock method. This mechanism allows an application to access a stream without causing other accessors of the stream to receive sharing violations when attempting to open the stream. To avoid sharing violations, the following three-step procedure should be used to request a Filter oplock:
 
 1. Open the file with a required access of FILE_READ_ATTRIBUTES and a share mode of FILE_SHARE_READ | FILE_SHARE_WRITE | FILE_SHARE_DELETE. The handle opened in this step won't cause other applications to receive sharing violations because it's open only for attribute access (FILE_READ_ATTRIBUTES) and not data access (FILE_READ_DATA). This handle is suitable for requesting the Filter oplock, but not for performing actual I/O on the data stream.
 
-2. Request a Filter oplock on the handle from step 1. The oplock granted in this step allows the oplock holder to "get out of the way" without causing a sharing violation to another application that attempts to access the stream.
+2. Request a Filter oplock (FSCTL_REQUEST_FILTER_OPLOCK) on the handle from step 1. The oplock granted in this step allows the oplock holder to "get out of the way" without causing a sharing violation to another application that attempts to access the stream.
 
 3. Open the file again for read access. The handle opened in this step allows the oplock holder to perform I/O on the stream.
 
 The NTFS file system provides an optimization for this procedure through the FILE_RESERVE_OPFILTER create option flag. If this flag is specified in step 1 of the previous procedure, it allows the file system to fail the create request with STATUS_OPLOCK_NOT_GRANTED if the file system can determine that step 2 will fail. If step 1 succeeds, there's no guarantee that step 2 will succeed, even if FILE_RESERVE_OPFILTER was specified for the create request.
+
+## Conditions For Granting Oplocks
 
 The following table identifies the required conditions necessary to grant an oplock.
 
@@ -143,6 +192,10 @@ The following table identifies the required conditions necessary to grant an opl
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>
+<li>There are no writable <a href="/windows-hardware/drivers/kernel/section-objects-and-views">user-mapped sections</a> on the stream.
+<ul>
+<li>Else STATUS_CANNOT_GRANT_REQUESTED_OPLOCK is returned. The <b>REQUEST_OPLOCK_OUTPUT_BUFFER.Flags</b> field will have the REQUEST_OPLOCK_OUTPUT_FLAG_WRITABLE_SECTION_PRESENT flag set.</li>
+</ul></li>
 </ul>
 <p>If the current oplock state is:</p>
 <ul>
@@ -174,6 +227,10 @@ The following table identifies the required conditions necessary to grant an opl
 <li>There are no current Byte Range Locks on the stream.
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
+</ul></li>
+<li>There are no writable <a href="/windows-hardware/drivers/kernel/section-objects-and-views">user-mapped sections</a> on the stream.
+<ul>
+<li>Else STATUS_CANNOT_GRANT_REQUESTED_OPLOCK is returned. The <b>REQUEST_OPLOCK_OUTPUT_BUFFER.Flags</b> field will have the REQUEST_OPLOCK_OUTPUT_FLAG_WRITABLE_SECTION_PRESENT flag set.</li>
 </ul></li>
 </ul>
 <p>If the current oplock state is:</p>
@@ -207,6 +264,10 @@ The following table identifies the required conditions necessary to grant an opl
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>
+<li>There are no writable <a href="/windows-hardware/drivers/kernel/section-objects-and-views">user-mapped sections</a> on the stream.
+<ul>
+<li>Else STATUS_CANNOT_GRANT_REQUESTED_OPLOCK is returned. The <b>REQUEST_OPLOCK_OUTPUT_BUFFER.Flags</b> field will have the REQUEST_OPLOCK_OUTPUT_FLAG_WRITABLE_SECTION_PRESENT flag set.</li>
+</ul></li>
 </ul>
 <p>If the current oplock state is:</p>
 <ul>
@@ -238,6 +299,10 @@ The following table identifies the required conditions necessary to grant an opl
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>
+<li>There are no writable <a href="/windows-hardware/drivers/kernel/section-objects-and-views">user-mapped sections</a> on the stream.
+<ul>
+<li>Else STATUS_CANNOT_GRANT_REQUESTED_OPLOCK is returned. The <b>REQUEST_OPLOCK_OUTPUT_BUFFER.Flags</b> field will have the REQUEST_OPLOCK_OUTPUT_FLAG_WRITABLE_SECTION_PRESENT flag set.</li>
+</ul></li>
 </ul>
 <p>If the current oplock state is:</p>
 <ul>
@@ -253,5 +318,4 @@ The following table identifies the required conditions necessary to grant an opl
 </table>
 
 > [!NOTE]
->
 > Read and Level 2 oplocks can coexist on the same stream, and Read and Read-Handle oplocks can coexist, but Level 2 and Read-Handle oplocks cannot coexist.
