@@ -1,12 +1,7 @@
 ---
 title: Roadmap for Developing NDIS Drivers
 description: Learn how to create a Network Driver Interface Specification (NDIS) driver package.
-keywords:
-- NDIS WDK , drivers
-- NDIS WDK , drivers, developing
-- developing NDIS drivers WDK
-- Network Driver Interface Specification (NDIS) WDK
-ms.date: 12/17/2024
+ms.date: 01/31/2025
 ---
 
 # Roadmap for developing NDIS drivers

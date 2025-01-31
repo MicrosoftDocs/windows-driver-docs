@@ -1,10 +1,7 @@
 ---
 title: Introduction to Winsock Kernel
 description: Learn how to use Winsock Kernel to perform network I/O operations.
-keywords:
-- Winsock Kernel WDK networking , about Winsock Kernel
-- WSK WDK networking , about Winsock Kernel
-ms.date: 12/17/2024
+ms.date: 01/31/2025
 ---
 
 # Introduction to Winsock Kernel

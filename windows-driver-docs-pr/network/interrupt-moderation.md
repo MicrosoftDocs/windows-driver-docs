@@ -1,13 +1,7 @@
 ---
 title: Interrupt Moderation
 description: Learn how to use interrupt moderation to reduce the number of hardware interruptions.
-keywords:
-- interrupt moderation WDK networking
-- interrupts WDK networking , reducing number of
-- OID_GEN_INTERRUPT_MODERATION
-- NDIS_INTERRUPT_MODERATION_PARAMETERS
-- interrupts WDK networking , moderation
-ms.date: 12/17/2024
+ms.date: 01/31/2025
 ---
 
 # Interrupt moderation

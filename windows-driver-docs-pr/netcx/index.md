@@ -1,12 +1,7 @@
 ---
 title: Network Adapter WDF Class Extension (NetAdapterCx)
-description: Network Adapter WDF Class Extension (NetAdapterCx)
-ms.assetid: 74719A80-AE66-410F-85B7-31B6F455A818
-keywords:
-- Network Adapter Class Extension, Network Adapter WDF Class Extension, NetAdapterCx, NetCx
-ms.date: 08/27/2019
-ms.topic: article
-ms.custom: 19H1
+description: Learn about NetAdapterCx, which allows you to write KMDF-based client drivers for NICs with the power of WDF and the performance of NDIS.
+ms.date: 01/31/2025
 ---
 
 # Network Adapter WDF Class Extension (NetAdapterCx)
