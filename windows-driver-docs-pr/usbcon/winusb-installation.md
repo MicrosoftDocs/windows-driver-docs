@@ -1,7 +1,7 @@
 ---
 title: WinUSB (Winusb.sys) Installation for Developers
 description: Install WinUSB (Winusb.sys) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.
-ms.date: 07/15/2024
+ms.date: 01/31/2025
 ---
 
 # WinUSB (Winusb.sys) installation for developers
@@ -235,7 +235,7 @@ Each time *Winusb.sys* loads, it registers a device interface that has the devic
 
 `HKR,,DeviceInterfaceGUIDs, 0x10000,"{D696BFEB-1734-417d-8A04-86D01071C512}"`
 
-If you use the redistributable WinUSB package for Windows XP or Windows Server 2003, make sure that you don't uninstall WinUSB in your uninstall packages. Other USB devices might be using WinUSB, so its binaries must remain in the shared folder.
+If you use the redistributable WinUSB package for Windows XP or Windows Server 2003, make sure that you don't uninstall WinUSB in your uninstall packages. Other USB devices might be using WinUSB, so its binaries must remain in the shared folder.
 
 ## How to create a driver package that installs Winusb.sys
 
@@ -244,7 +244,7 @@ To use WinUSB as the device's function driver, you create a driver package. The 
 - WinUSB coinstaller (Winusbcoinstaller.dll)
 - KMDF coinstaller (WdfcoinstallerXXX.dll)
 - An .inf file that installs *Winusb.sys* as the device's function driver. For more information, see [Writing a custom INF for WinUSB installation](#writing-a-custom-inf-for-winusb-installation).
-- A signed catalog file for the package. This file is required to install WinUSB on x64 versions of Windows starting with Vista.
+- A signed catalog file for the package. This file is required to install WinUSB on x64 versions of Windows starting with Vista.
 
 ![WinUSB installation package.](images/winusb-package.jpg)
 
