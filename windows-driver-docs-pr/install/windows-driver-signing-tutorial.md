@@ -22,7 +22,7 @@ Windows requires all software running in kernel mode, including drivers, to be d
 > [!NOTE]
 > The mandatory kernel-mode code-signing policy applies to all kernel-mode software for x64-based systems that are running on Windows Vista and later versions of Windows. However, Microsoft encourages publishers to digitally sign all kernel-mode software, including device drivers (user-mode drivers included) for 32-bit systems as well. Windows Vista and later versions of Windows, verify kernel-mode signatures on 32-bit systems. Software to support protected media content must be digitally signed even if it's 32-bit.
 
-### User-Mode Driver Signing
+### User-mode driver signing
 
 User-mode drivers don't require digital signing but we recommend it for security purposes. Starting with Windows 8, there might be scenarios where signing is required, but signing isn't universally applicable.
 
