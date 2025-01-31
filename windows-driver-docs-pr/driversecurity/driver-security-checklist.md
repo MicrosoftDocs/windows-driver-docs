@@ -1,7 +1,7 @@
 ---
 title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
-ms.date: 01/23/2025
+ms.date: 01/29/2025
 ---
 
 # Driver security checklist
@@ -94,15 +94,15 @@ Consider the use of the Driver Module Framework (DMF) in your driver project. De
 
 Drivers must work to prevent users from inappropriately accessing a computer's devices and files. To prevent unauthorized access to devices and files, you must:
 
-- Name device objects only when necessary. Named device objects are generally only necessary for legacy reasons, for example if you have an application that expects to open the device using a particular name or if you're using a non-PNP device/control device. Note that WDF drivers do not need to name their PnP device FDO in order to create a symbolic link using [WdfDeviceCreateSymbolicLink](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatesymboliclink).
+- Name device objects only when necessary. Named device objects are generally only necessary for legacy reasons, for example if you have an application that expects to open the device using a particular name or if you're using a non-PNP device/control device. WDF drivers do not need to name their PnP device FDO in order to create a symbolic link using [WdfDeviceCreateSymbolicLink](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatesymboliclink).
 
 - Secure access to device objects and interfaces.
 
 In order to allow applications or other WDF drivers to access your PnP device PDO, you should use device interfaces. For more information, see [Using Device Interfaces](../wdf/using-device-interfaces.md). A device interface serves as a symbolic link to your device stack's PDO.
 
-One of the better ways to control access to the PDO is by specifying an SDDL string in your INF. If the SDDL string isn't in the INF file, Windows will apply a default security descriptor. For more information, see [Securing Device Objects](../kernel/controlling-device-access.md) and [SDDL for Device Objects](../kernel/sddl-for-device-objects.md).
+One of the better ways to control access to the PDO is by specifying an SDDL string in your INF. If the SDDL string isn't in the INF file, Windows applies a default security descriptor. For more information, see [Securing Device Objects](../kernel/controlling-device-access.md) and [SDDL for Device Objects](../kernel/sddl-for-device-objects.md).
 
-For more information about controlling access, see the following:
+For more information about controlling access, see:
 
 [Controlling Device Access in KMDF Drivers](../wdf/controlling-device-access-in-kmdf-drivers.md)
 
@@ -112,7 +112,7 @@ For more information about controlling access, see the following:
 
 If you're working with a WDM Driver and you used a named device object you can use [IoCreateDeviceSecure](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) and specify a SDDL to secure it. When you implement [IoCreateDeviceSecure](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) always specify a custom class GUID for DeviceClassGuid. You should not specify an existing class GUID here. Doing so has the potential to break security settings or compatibility for other devices belonging to that class. For more information, see [WdmlibIoCreateDeviceSecure](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure).
 
-For more information, see the following:
+For more information, see:
 
 [Controlling Device Access](../kernel/controlling-device-access.md)
 
@@ -146,7 +146,7 @@ An IOCTL (Input/Output Control) in Windows is a system call for device-specific 
 
 To further manage security when IOCTLs are sent by user-mode callers, the driver code can include the [IoValidateDeviceIoControlAccess](/windows-hardware/drivers/ddi/wdm/nf-wdm-iovalidatedeviceiocontrolaccess) function. This function allows a driver to check access rights. Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess](/windows-hardware/drivers/ddi/wdm/nf-wdm-iovalidatedeviceiocontrolaccess), specifying FILE_READ_ACCESS, FILE_WRITE_ACCESS, or both.
 
-Implementing granular IOCTL security control does not replace the need to manage driver access using the techniques discussed above.
+Implementing granular IOCTL security control doesn't replace the need to manage driver access using the techniques discussed above.
 
 For more information, see [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md) and 
 [Security Issues for I/O Control Codes](../kernel/security-issues-for-i-o-control-codes.md).
@@ -157,9 +157,9 @@ For more information, see [Defining I/O Control Codes](../kernel/defining-i-o-co
 
 Software-only kernel drivers do not use plug-and-play (PnP) to become associated with specific hardware IDs, and can run on any PC. Such a driver could be used for purposes other than the one originally intended, creating an attack vector.
 
-Because software-only kernel drivers contain additional risk, they must be limited to run on specific hardware (for example, by using a unique PnP ID to enable creation of a PnP driver, or by checking the SMBIOS table for the presence of specific hardware).
+Because software-only kernel drivers contain additional risk, they must be limited to run on specific hardware, for example by using a unique PnP ID to enable creation of a PnP driver, or by checking the SMBIOS table for the presence of specific hardware.
 
-For example, imagine OEM Fabrikam wants to distribute a driver that enables an overclocking utility for their systems. If this software-only driver were to execute on a system from a different OEM, system instability or damage might result. Fabrikam's systems should include a unique PnP ID to enable creation of a PnP driver that is also updatable through Windows Update. If this isn't possible, and Fabrikam authors a Legacy driver, that driver should find another method to verify that it is executing on a Fabrikam system (for example, by examination of the SMBIOS table before enabling any capabilities).
+For example, imagine OEM Fabrikam wants to distribute a driver that enables an overclocking utility for their systems. If this software-only driver were to execute on a system from a different OEM, system instability or damage might result. Fabrikam's systems should include a unique PnP ID to enable creation of a PnP driver that is also updatable through Windows Update. If this isn't possible, and Fabrikam authors a Legacy driver, that driver should find another method to verify that it is executing on a Fabrikam system, for example, by examination of the SMBIOS table before enabling any capabilities.
 
 ## Follow driver secure coding guidelines
 
@@ -184,7 +184,7 @@ One of the primary responsibilities of a Windows driver is transferring data bet
 | IOCTL Buffer Type                     | Summary                          | For more information                                                                        |
 |---------------------------------------|----------------------------------|---------------------------------------------------------------------------------------------|
 | METHOD_BUFFERED                       | Recommended for most situations | [Using Buffered I/O](../kernel/using-buffered-i-o.md)                                       |
-| METHOD_IN_DIRECT or METHOD_OUT_DIRECT | Used in some high speed HW I/O   | [Using Direct I/O](../kernel/using-direct-i-o.md)                                           |
+| METHOD_IN_DIRECT or METHOD_OUT_DIRECT | Used in some high speed hardware I/O   | [Using Direct I/O](../kernel/using-direct-i-o.md)                                           |
 | METHOD_NEITHER                        | Avoid if possible                | [Using Neither Buffered Nor Direct I/O](../kernel/using-neither-buffered-nor-direct-i-o.md) |
 
 In general, buffered I/O is recommended as it provides the most secure buffering methods. But even when using buffered I/O there are risks, such as embedded pointers that must be mitigated.
@@ -221,7 +221,7 @@ Handle zero-length buffers correctly. For more information, see [Errors in Direc
 
 There is a [potential time of check to time of use](https://en.wikipedia.org/wiki/Time_of_check_to_time_of_use) (TOCTOU) vulnerability when using direct I/O (for IOCTLs or for Read/Write). Be aware that as the driver is accessing the user data buffer, the user app can simultaneously be accessing the same data buffer.
 
-To manage this risk, copy any parameters that need to be validated from the user data buffer to memory that is solely accessible from kernel mode (such as the stack or pool). Then once the data can't be accessed by the user application, validate and then operate on the data that was passed in.
+To manage this risk, copy any parameters that need to be validated from the user data buffer to memory that is solely accessible from kernel mode, such as the stack or pool. Then once the data can't be accessed by the user application, validate and then operate on the data that was passed in.
 
 #### MSR model-specific register reads and writes
 
@@ -245,7 +245,7 @@ Windows I/O Request Packets (IRPs) are used to communicate I/O requests between 
 
 #### WDF and IRPs
 
-One advantage of using WDF, is that WDF drivers typically do not directly access IRPs. For example, the framework converts the WDM IRPs that represent read, write, and device I/O control operations to framework request objects that KMDF/UMDF receive in I/O queues. Whenever possible, the use of WDF is strongly recommended.
+One advantage of using WDF, is that WDF drivers typically don't directly access IRPs. For example, the framework converts the WDM IRPs that represent read, write, and device I/O control operations to framework request objects that KMDF/UMDF receive in I/O queues. Whenever possible, the use of WDF is strongly recommended.
 
 If you need to write a WDM driver, review the following guidance.
 
@@ -539,6 +539,12 @@ The Reporting Center can scan and analyze Windows drivers built for x86 and x64 
 
 **Security checklist item \#19:** *Review these resources to expand your understanding of the secure coding best practices that are applicable to driver developers.*
 
+### Microsoft NISTIR 8397 guidance 
+
+The United States government publication [NISTIR 8397: Guidelines on Minimum Standards for Developer Verification of Software](https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8397.pdf) by the [National Institute of Standards and Technology (NIST)](https://csrc.nist.gov/) contains guidance on how to build reliable and secure software in any programming language.
+
+[Build reliable and secure C++ programs](/cpp/code-quality/build-reliable-secure-programs) summarizes how to use Microsoft developer products for C++ and other languages to follow the NISTIR 8397 guidelines.
+
 ### NIST known software vulnerability database 
 
 The National Vulnerability Database (NVD) is a searchable repository of security-related software flaws, including Windows drivers.
@@ -553,15 +559,17 @@ Carnegie Mellon University SEI CERT - [C Coding Standard: Rules for Developing S
 
 MITRE - [Weaknesses Addressed by the CERT C Secure Coding Standard](https://cwe.mitre.org/data/definitions/734.html)
 
+Microsoft Visual Studio - [Use the C++ Core Guidelines checkers](/cpp/code-quality/using-the-cpp-core-guidelines-checkers)
+
 ### Secure coding organizations
 
 [Cybersecurity and Infrastructure Security Agency (CISA)](https://www.cisa.gov/)
 
 [CISA Resources](https://www.cisa.gov/resources-tools/resources)
-
-SAFECode - [https://safecode.org/](https://safecode.org/)
-
+ 
 [Carnegie Mellon University SEI CERT](https://www.sei.cmu.edu/about/divisions/cert/index.cfm)
+
+[SAFECode](https://safecode.org/)
 
 ### OSR
 
@@ -581,12 +589,9 @@ SAFECode - [https://safecode.org/](https://safecode.org/)
 
 ### Software supply chain security and Software Bill of Materials (SBOMs)
 
-[The Supply Chain Integrity, Transparency and Trust (SCITT) initiative](https://scitt.io/) 
+SBOMs provide a list of ingredients used in the creation of a piece of software, such as open-source software, components, and potentially even build tools. This enables producers and consumers to better inventory and evaluate license and vulnerability risk. Microsoft is using the [SPDX (Software Package Data Exchange)](https://spdx.dev/) as the SBOM document format. For more information see, [Generating Software Bills of Materials (SBOMs) with SPDX at Microsoft](https://devblogs.microsoft.com/engineering-at-microsoft/generating-software-bills-of-materials-sboms-with-spdx-at-microsoft/) and [Microsoft open sources its software bill of materials (SBOM) generation tool](https://devblogs.microsoft.com/engineering-at-microsoft/microsoft-open-sources-software-bill-of-materials-sbom-generation-tool/).
 
-[Generating Software Bills of Materials (SBOMs) with SPDX at Microsoft](https://devblogs.microsoft.com/engineering-at-microsoft/generating-software-bills-of-materials-sboms-with-spdx-at-microsoft/)
-
-[Microsoft open sources its software bill of materials (SBOM) generation tool](https://devblogs.microsoft.com/engineering-at-microsoft/microsoft-open-sources-software-bill-of-materials-sbom-generation-tool/)
-
+[The Supply Chain Integrity, Transparency and Trust (SCITT) initiative](https://scitt.io/) is a set of IETF internet standards for managing the compliance of goods and services across end-to-end supply chains. SCITT supports the ongoing verification of goods and services where the authenticity of entities, evidence, policy, and artifacts can be assured and the actions of entities can be guaranteed to be authorized, non-repudiable, immutable, and auditable.
 
 ### Books
 

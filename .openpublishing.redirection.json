@@ -1,6 +1,76 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/bringup/boot-and-uefi.md",
+      "redirect_url": "/previous-versions/windows/drivers/bringup/boot-and-uefi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/bringup/secure-boot-and-device-encryption-overview.md",
+      "redirect_url": "/previous-versions/windows/drivers/bringup/secure-boot-and-device-encryption-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/bringup/security-overview.md",
+      "redirect_url": "/previous-versions/windows/drivers/bringup/security-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/bringup/uefi-battery-charging-protocol.md",
+      "redirect_url": "/previous-versions/windows/drivers/bringup/uefi-battery-charging-protocol",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/bringup/uefi-check-signature-protocol.md",
+      "redirect_url": "/previous-versions/windows/drivers/bringup/uefi-check-signature-protocol",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/bringup/uefi-display-power-state-protocol.md",
+      "redirect_url": "/previous-versions/windows/drivers/bringup/uefi-display-power-state-protocol",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/bringup/uefi-in-windows.md",
+      "redirect_url": "/previous-versions/windows/drivers/bringup/uefi-in-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/bringup/uefi-protocols-for-windows.md",
+      "redirect_url": "/previous-versions/windows/drivers/bringup/uefi-protocols-for-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/bringup/uefi-simple-io-protocol.md",
+      "redirect_url": "/previous-versions/windows/drivers/bringup/uefi-simple-io-protocol",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/bringup/uefi-usb-function-protocol.md",
+      "redirect_url": "/previous-versions/windows/drivers/bringup/uefi-usb-function-protocol",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/bringup/architecture-of-the-uefi-battery-charging-application.md",
+      "redirect_url": "/previous-versions/windows/drivers/bringup/architecture-of-the-uefi-battery-charging-application",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/bringup/battery-charging-in-the-boot-environment.md",
+      "redirect_url": "/previous-versions/windows/drivers/bringup/battery-charging-in-the-boot-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/bringup/partition-layout.md",
+      "redirect_url": "/previous-versions/windows/drivers/bringup/partition-layout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/bringup/uefi-requirements-specific-to-windows-mobile.md",
+      "redirect_url": "/previous-versions/windows/drivers/bringup/uefi-requirements-specific-to-windows-mobile",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/gnss/gnss-driver-design-guide-for-windows-8-1.md",
       "redirect_url": "/previous-versions/windows/drivers/gnss/gnss-driver-design-guide-for-windows-8-1",
       "redirect_document_id": false

@@ -45,6 +45,7 @@ There are certain file system operations that check the current oplock state to 
 * [IRP_MJ_LOCK_CONTROL](irp-mj-lock-control2.md)
 * [IRP_MJ_SET_INFORMATION](irp-mj-set-information2.md)
 * [IRP_MJ_FILE_SYSTEM_CONTROL](irp-mj-file-system-control2.md)
+* [FS_FILTER_ACQUIRE_FOR_SECTION_SYNCHRONIZATION](fs-filter-acquire-for-section-synchronization2.md)
 
 A break of a Windows 7 oplock requires an acknowledgment if the REQUEST_OPLOCK_OUTPUT_FLAG_ACK_REQUIRED flag is set in the **Flags** member of the REQUEST_OPLOCK_OUTPUT_BUFFER structure passed as the output parameter of [DeviceIoControl](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol)(*lpOutBuffer*), [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)(*OutBuffer*), or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))(*OutBuffer*). For more information, see [**FSCTL_REQUEST_OPLOCK**](./fsctl-request-oplock.md).
 

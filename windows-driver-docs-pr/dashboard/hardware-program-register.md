@@ -1,70 +1,68 @@
 ---
 title: Register for the Microsoft Windows Hardware Developer Program
-description: How to register for the Microsoft Windows Hardware Developer Program
+description: How to register for the Microsoft Windows Hardware Developer Program.
 ms.topic: article
-ms.date: 08/16/2024
+ms.date: 01/27/2025
 ---
 
 # Register for the Microsoft Windows Hardware Developer Program
 
 This article shows you how to register for the Microsoft Windows Hardware Developer Program. When you register for the Hardware Developer Program, you're prompted to accept the following agreements
 
-- Code Signing Agreement
-- Windows Hardware Compatibility Agreement
-- Microsoft Marks License Agreement (MMLA) (ver. 2024)
-- Windows Analytics Agreement (ver. 2.0)
+- [Code Signing Agreement](/legal/windows/hardware/code-signing-agreement-2208)
+- [Windows Hardware Compatibility Agreement](/legal/windows/hardware/windows-hardware-compatibility-program-2208)
+- [Microsoft Marks License Agreement (MMLA) (ver. 2024)](/legal/windows/hardware/microsoft-marks-license-agreement-2024)
+- [Windows Analytics Agreement (ver. 2.0)](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fquery.prod.cms.rt.microsoft.com%2Fcms%2Fapi%2Fam%2Fbinary%2FRE1T4mt&wdOrigin=BROWSELINK)
 
 ## Prerequisites
 
-- If you have an existing organization Dev Center account that you want to use for the Hardware program, sign in with it before you begin registration.
-
-- You must have an Extended Validation (EV) code signing certificate. Check whether your organization already has a code signing certificate. If your company already has a certificate, have the certificate available. If your organization doesn't have a certificate, you must [purchase an EV certificate](code-signing-reqs.md#ev-certificate-signed-drivers). You only need the certificate to register for the Hardware Developer Program. You don't need to sign your driver with it.
-
-- Sign in with your organization's Microsoft Entra ID [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account. If you don't know whether your organization has a Microsoft Entra ID directory, contact your IT department. If your organization doesn't have a Microsoft Entra ID directory, you're able to create one for free during the registration process.
-
+- If you have an existing organization Dev Center account that you want to use for the hardware program, sign in with it before you begin registration.
+- You must have an extended validation (EV) code signing certificate. Check whether your organization already has a code signing certificate. If your company already has a certificate, have the certificate available. If your organization doesn't have a certificate, you must [purchase an EV certificate](code-signing-reqs.md#ev-certificate-signed-drivers). You only need the certificate to register for the Hardware Developer Program. You don't need to sign your driver with it.
+- Sign in with your organization's Microsoft Entra ID [global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account. If you don't know whether your organization has a Microsoft Entra ID directory, contact your IT department. If your organization doesn't have a Microsoft Entra ID directory, you can create one for free during the registration process.
 - You must have the authority to sign legal agreements on behalf of your organization.
 
 ## Register for the Hardware Developer Program
 
 To register for the Hardware Developer Program:
 
-1. Go to the [Hardware Developer Program registration](https://partner.microsoft.com/dashboard/Registration/Hardware).
+1. Go to the [Hardware Developer Program registration](https://partner.microsoft.com/dashboard/account/exp/enrollment/welcome?cloudInstance=Global&accountProgram=hardware).
 
-1. Read the prerequisites to make sure you have what you need, and then select **Next**.
+1. If your organization has a Microsoft Entra ID global administrator account, select **Login with work account**. If your organization doesn't have a Microsoft Entra ID directory, select **Create work account**. Follow the directions to create an account and sign in with your new global administrator user name and password.
 
-    :::image type="content" source="./images/hardware-program-register/registration-start.png" alt-text="Screenshot of the first page of the Hardware Developer Program registration process. The 'Next' button is selected.":::
+    :::image type="content" source="./images/hardware-program-register/registration-work-account.png" alt-text="Screenshot of the Microsoft Partner Center page for the Hardware Developer Program registration process. The **Login with work account** button is selected.":::
 
-1. If your organization has a Microsoft Entra ID global administrator account, select **Sign in to Microsoft Entra ID**. If your organization doesn't have a Microsoft Entra ID directory, select **Create a new directory for free**. Follow the directions to create an account and sign in with your new global administrator user name and password.
+1. Confirm that you signed in with global administrator credentials and select **Next**.
 
-    :::image type="content" source="./images/hardware-program-register/registration-work-account.png" alt-text="Screenshot of the Microsoft Entra ID page of the Hardware Developer Program registration process. The 'Sign in to Microsoft Entra ID' button is selected.":::
+    :::image type="content" source="./images/hardware-program-register/registration-welcome.png" alt-text="Screenshot of the Microsoft Partner Center welcome page.":::
 
-1. When you're signed in to Microsoft Entra ID, select the country or region where you live or where your business is located.
+1. In next screen, you'll see list of available programs in Partner Center. The **Hardware** program is selected by default. Select **Go to Dashboard**.
 
-    :::image type="content" source="./images/hardware-program-register/registration-select-country.png" alt-text="Screenshot of the Account country/region page of the Hardware Developer Program registration process. ":::
+    :::image type="content" source="./images/hardware-program-register/registration-program-join.png" alt-text="Screenshot of the Microsoft Partner Center 'Join programs' page.":::
 
-> [!IMPORTANT]
-> Once you complete your account information, you can't change your country/region.
+1. Provide your company information or D-U-N-S number and select **Search** to find your company details in external company databases.
 
-1. Enter your company display name. Customers see your apps, add-ins, extensions, or services listed under this name.
+    :::image type="content" source="./images/hardware-program-register/registration-company-info.png" alt-text="Screenshot of the Microsoft Partner Center company information page.":::
 
-   :::image type="content" source="./images/hardware-program-register/registration-company-name.png" alt-text="Screenshot of the Company display name textbox in the Hardware Developer Program registration process. The textbox has the value 'Contoso Display Name' ":::
+1. Select a record from search results that represents your company. If no record matches, you can choose to provide company details manually by selecting **I don't have D-U-N-S number** at bottom right corner of screen.
 
-1. Enter your personal contact info. Microsoft uses this info for account verification and to contact you. When you're done, select **Next** at the top of the page.
+    :::image type="content" source="./images/hardware-program-register/registration-company-search.png" alt-text="Screenshot of the Microsoft Partner Center company search page.":::
 
-   :::image type="content" source="./images/hardware-program-register/registration-personal-info.png" alt-text="Screenshot of the 'Your personal contact info' section in the Hardware Developer Program registration process.":::
+1. Provide company information and ensure the details are accurate.
 
-1. You're now in the **Certificate** section of the registration process. In order to secure your digital information, you must use your company's Extended Validation (EV) code signing certificate. If your company doesn't have an EV certificate, you can purchase one from an authorized certificate authority. Once you have your code signing certificate, select **Next**.
+1. Provide a legal contact with the authority to sign agreements on behalf of your company.
 
-   :::image type="content" source="./images/hardware-program-register/registration-ev-cert.png" alt-text="Screenshot of the 'Get a code signing certificate' section in the Hardware Developer Program registration process.":::
+    > [!IMPORTANT]
+    > **Microsoft emails the legal contact for account verification purposes. It's important to respond to the email.**
 
-1. Sign and upload your file. Follow the steps as directed on the **[Manage code signing certificates](code-signing-cert-manage.md)** page.
+1. If you're authorized by your company to accept legal agreements, review the agreement terms and select **Accept and Continue**. If you aren't authorized to accept agreements, pause the registration and get someone who is authorized to review and select **Accept and Continue**.
 
-    > [!NOTE]
-    > You can sign the signable file with your certificate offline and return later to upload it. When you return, be sure to sign in with your Microsoft Entra ID global administrator account to resume the process.
+1. Your registration request is now submitted. Now, upload the extended validation (EV) code signing certificate from Manage certificates page. Review the instructions and upload the EV certificate. The EV certificate is required for your request to be considered for approval.
 
-1. After your file is uploaded, select **Next** at the bottom of the page.
+    :::image type="content" source="./images/hardware-program-register/registration-manage-certificates.png" alt-text="Screenshot of the Microsoft Partner Center manage certificates page.":::
 
-1. Review all of your information, and then select **Submit**.
+1. After uploading the certificate, monitor the global administrator mail box for a questionnaire requiring more information about your business. Complete the questionnaire when received.
+
+1. After all approvals are complete, your global administrator will receive an email confirming approvals and next steps.
 
 ## Next Steps
 
