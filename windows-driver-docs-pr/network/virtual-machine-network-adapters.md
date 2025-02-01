@@ -1,7 +1,7 @@
 ---
 title: Virtual Machine Network Adapters
 description: Learn about the virtualization types that virtual machine network adapters support, and what steps occur when a user starts or stops a Hyper-V VM.
-ms.date: 12/16/2024
+ms.date: 01/31/2025
 ---
 
 # Virtual machine network adapters
@@ -29,7 +29,7 @@ The following diagram shows the interface between VM network adapters and the ex
 
 The following steps occur when the user starts a Hyper-V VM:
 
-1. The protocol edge of the extensible switch issues an object identifier (OID) set request of [OID\_SWITCH\_PORT\_CREATE](./oid-switch-port-create.md) down the extensible switch driver stack. This OID request notifies the underlying extensible switch extensions that a port is being created for the VM.
+1. The protocol edge of the extensible switch issues an object identifier (OID) set request of [OID\_SWITCH\_PORT\_CREATE](oid-switch-port-create.md) down the extensible switch driver stack. This OID request notifies the underlying extensible switch extensions that a port is being created for the VM.
 
 1. The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_CREATE](oid-switch-nic-create.md) down the extensible switch driver stack. This OID request notifies the underlying extensible switch extensions that a network connection for the VM network adapter is being created for the VM port that was previously created.
 
@@ -39,10 +39,10 @@ The following steps occur when the user starts a Hyper-V VM:
 
 The following steps occur when the user stops a Hyper-V VM:
 
-1. The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](./oid-switch-nic-disconnect.md) down the extensible switch driver stack. This OID request notifies the underlying extensible switch extensions that the connection to the VM network adapter is being torn down.
+1. The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](oid-switch-nic-disconnect.md) down the extensible switch driver stack. This OID request notifies the underlying extensible switch extensions that the connection to the VM network adapter is being torn down.
 
 1. After all packet traffic and OID requests that target the network connection are completed, the protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_DELETE](oid-switch-nic-delete.md) down the extensible switch driver stack. This OID request notifies the underlying extensible switch extensions that the connection to the VM network adapter was gracefully torn down and deleted.
 
-1. The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_TEARDOWN](./oid-switch-port-teardown.md) down the extensible switch driver stack. This OID request notifies the underlying extensible switch extensions that the port that was used for the VM network adapter connection is being torn down.
+1. The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_TEARDOWN](oid-switch-port-teardown.md) down the extensible switch driver stack. This OID request notifies the underlying extensible switch extensions that the port that was used for the VM network adapter connection is being torn down.
 
-1. The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_DELETE](./oid-switch-port-delete.md) down the extensible switch driver stack. This OID request notifies the underlying extensible switch extensions that the VM port was torn down and deleted.
+1. The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_DELETE](oid-switch-port-delete.md) down the extensible switch driver stack. This OID request notifies the underlying extensible switch extensions that the VM port was torn down and deleted.
