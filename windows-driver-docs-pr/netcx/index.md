@@ -10,9 +10,9 @@ ms.date: 01/31/2025
 
 Starting in Windows 10, version 2004, the Windows Driver Kit (WDK) includes a Network Adapter WDF Class Extension module (NetAdapterCx) that enables you to write a KMDF-based client driver for a Network Interface Controller (NIC). Starting in Windows 11, version 24H2, the [UMDF version of NetAdapterCx](user-mode-netcx.md) enables NIC drivers to operate in user-mode. NetAdapterCx gives you the power and flexibility of WDF and the networking performance of NDIS, and makes it easy to write a driver for your NIC.
 
-In previous versions of Windows, WDF and NDIS had individual advantages, but did not interoperate well. The only way to write a NIC driver was to write an NDIS miniport driver. To use WDF in an NDIS miniport driver, you had to write extra code in your driver, and even then, you only had access to a small subset of WDF functionality.
+In previous versions of Windows, WDF and NDIS had individual advantages, but didn't interoperate well. The only way to write a NIC driver was to write an NDIS miniport driver. To use WDF in an NDIS miniport driver, you had to write extra code in your driver, and even then, you only had access to a small subset of WDF functionality.
 
-With the NetAdapterCx model, conversely, you write a real WDF driver for your NIC. This means that your NetAdapterCx driver has access to full WDF functionality, as well as networking-specific APIs and I/O support from the NetAdapter class extension. As shown in the block diagram below, NetAdapterCx still works behind the scenes with NDIS, but it handles all the interaction with NDIS on your behalf.
+With the NetAdapterCx model, conversely, you write a real WDF driver for your NIC. Your NetAdapterCx driver has access to full WDF functionality, as well as networking-specific APIs and I/O support from the NetAdapter class extension. As shown in the following block diagram, NetAdapterCx still works behind the scenes with NDIS, but it handles all the interaction with NDIS on your behalf.
 
 :::image type="content" source="images/netcx-architecture.png" alt-text="Diagram that shows the NetAdapterCx architecture.":::
 
@@ -28,15 +28,15 @@ To start working right away with driver samples on GitHub, clone our [NetAdapter
 
 To see the source code for NetAdapterCx itself, or perform step-through debugging, see our [Network-Adapter-Class-Extension](https://github.com/Microsoft/Network-Adapter-Class-Extension) repo on GitHub.
 
-If you would like to work with Microsoft as you develop a NetAdapterCx client driver, or have feedback on the class extension, please send us an [email](mailto:netadapter@microsoft.com).
+If you would like to work with Microsoft as you develop a NetAdapterCx client driver, or have feedback on the class extension, send us an [email](mailto:netadapter@microsoft.com).
 
 The following video [Network Adapter Class Extension: Roadmap and Collaboration](https://learn-video.azurefd.net/vod/player?id=f151bf00-3de1-4a5b-acdb-a0a8f8c07678) discusses future roadmap and collaboration opportunities.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=f151bf00-3de1-4a5b-acdb-a0a8f8c07678]
 
-## Topics
+## Articles
 
-This section contains the following topics:
+This section contains the following articles:
 
 * [Porting NDIS miniport drivers to NetAdapterCx](porting-ndis-miniport-drivers-to-netadaptercx.md)
 * [Building a NetAdapterCx client driver](building-a-netadaptercx-client-driver.md)
