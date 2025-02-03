@@ -265,10 +265,9 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
 1. In the **Solution Explorer** window, right-click the **KmdfHelloWorld** project, and choose **Properties**.
 1. Go to **Driver Install > Deployment**.
 1. For **Target Device Name**, select the name of the computer that you configured for testing and debugging. In this exercise, we use a computer named MyTestComputer.
-1. Check **Remove previous driver versions before deployment**.
+1. To ensure that you are testing the latest version of the driver,check **Remove previous driver versions before deployment**.
 1. Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. For this exercise, the hardware ID is Root\\KmdfHelloWorld. Select **OK**.
 
-    :::image type="content" source="images/vs2019-kmdf-hello-world-property-pages.png" alt-text="Screenshot of the kmdfhelloworld property pages window with the deployment driver install option selected.":::
 
     >[!NOTE]
     > In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**. You'll see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfHelloWorld > Driver Files**, and double-click KmdfHelloWorld.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
