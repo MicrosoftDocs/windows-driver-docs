@@ -1,6 +1,6 @@
 ---
 title: Write a Hello World Windows Driver (Kernel-Mode)
-description: How to write a Windows driver using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template.
+description: How to write a Windows driver using Kernel-Mode Driver Framework (KMDF). You start with a Microsoft Visual Studio template.
 ms.date: 02/03/2025
 ---
 
@@ -23,14 +23,14 @@ This article describes how to write a small [Universal Windows driver](/windows-
 
 ## Create and build a driver
 
-1. Open Microsoft Visual Studio. On the **File** menu, choose **New &gt; Project**.
+1. Open Microsoft Visual Studio. On the **File** menu, choose **New > Project**.
 1. In the **Create a new project** dialog box, select **C++** in the left dropdown, choose **Windows** in the middle dropdown, and choose **Driver** in the right dropdown.
 1. Select **Kernel Mode Driver, Empty (KMDF)** from the list of project types. Select **Next**.
 
     :::image type="content" source="images/vs2019-kmdf-template.png" alt-text="Screenshot of the Visual Studio new project dialog box with the kernel mode driver option selected.":::
 
     > [!TIP]
-    > If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, launch **Visual Studio Installer**, select **Modify**, add **Windows Driver Kits** in the **Individual Component** tab, and select **Modify**.
+    > If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this issue, launch **Visual Studio Installer**, select **Modify**, add **Windows Driver Kits** in the **Individual Component** tab, and select **Modify**.
 
 1. In the **Configure your new project** dialog box, enter "KmdfHelloWorld" in the **Project name** field.
 
@@ -60,7 +60,7 @@ This article describes how to write a small [Universal Windows driver](/windows-
 
 ## Write your first driver code
 
-Now that you've created your empty Hello World project and added the Driver.c source file, you'll write the most basic code necessary for the driver to run by implementing two basic event callback functions. 
+Now that you created your empty Hello World project and added the Driver.c source file, you write the most basic code necessary for the driver to run by implementing two basic event callback functions. 
 
 1. In Driver.c, start by including these headers:
 
@@ -75,7 +75,7 @@ Now that you've created your empty Hello World project and added the Driver.c so
 
     [Ntddk.h](/windows-hardware/drivers/ddi/ntddk) contains core Windows kernel definitions for all drivers, while [Wdf.h](/windows-hardware/drivers/ddi/_wdf) contains definitions for drivers based on the Windows Driver Framework (WDF). 
 
-1. Next, provide declarations for the two callbacks you'll use:
+1. Next, provide declarations for the two callbacks:
 
     ```C
     DRIVER_INITIALIZE DriverEntry;
@@ -154,7 +154,7 @@ Now that you've created your empty Hello World project and added the Driver.c so
     }
     ```
 
-    [*EvtDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) is invoked by the system when it detects that your device has arrived. Its job is to initialize structures and resources for that device. In this example, you simply printed out a "Hello World" message for *EvtDeviceAdd*, created the device object, and returned. In other drivers you write, you might create I/O queues for your hardware, set up a *device context* storage space for device-specific information, or perform other tasks needed to prepare your device.
+    [*EvtDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) is invoked by the system when it detects that your device arrived. Its job is to initialize structures and resources for that device. In this example, you printed out a "Hello World" message for *EvtDeviceAdd*, created the device object, and returned. In other drivers you write, you might create I/O queues for your hardware, set up a *device context* storage space for device-specific information, or perform other tasks needed to prepare your device.
 
     > [!TIP]
     > For the device add callback, notice how you named it with your driver's name as a prefix (*KmdfHelloWorld*EvtDeviceAdd). Generally, we recommend naming your driver's functions in this way to differentiate them from other drivers' functions. *DriverEntry* is the only one you should name exactly that.
@@ -229,7 +229,7 @@ Now that you've created your empty Hello World project and added the Driver.c so
 
 This example illustrates a fundamental concept of drivers: they're a "collection of callbacks" that, once initialized, sit and wait for the system to call them when it needs something. A system call could be a new device arrival event, an I/O request from a user mode application, a system power shutdown event, a request from another driver, or a surprise removal event when a user unplugs the device unexpectedly. Fortunately, to say "Hello World," you only needed to worry about driver and device creation.
 
-Next, you'll build your driver.
+Next, you build your driver.
 
 ## Build the driver
 
@@ -237,7 +237,7 @@ Next, you'll build your driver.
 
 1. In the **Solution Explorer** window, right-select **KmdfHelloWorld** and choose **Properties**. In **Wpp Tracing > All Options**, set **Run Wpp tracing** to **No**. Select **Apply** and then **OK**.
 
-1. To build your driver, choose **Build Solution** from the **Build** menu. Visual Studio shows the build progress in the **Output** window. (If the **Output** window isn't visible, choose **Output** from the **View** menu.) When you've verified that the solution built successfully, you can close Visual Studio.
+1. To build your driver, choose **Build Solution** from the **Build** menu. Visual Studio shows the build progress in the **Output** window. (If the **Output** window isn't visible, choose **Output** from the **View** menu.) When you verify that the solution built successfully, you can close Visual Studio.
 
 1. To see the built driver, in File Explorer, go to your **KmdfHelloWorld** folder, and then to **x64\\Debug\KmdfHelloWorld**. The folder includes:
 
@@ -252,12 +252,12 @@ Next, you'll build your driver.
 
 Typically when you test and debug a driver, the debugger and the driver run on separate computers. The computer that runs the debugger is called the *host computer*, and the computer that runs the driver is called the *target computer*. The target computer is also called the *test computer*.
 
-So far you've used Visual Studio to build a driver on the host computer. Now you need to configure a target computer. 
+So far you used Visual Studio to build a driver on the host computer. Now you need to configure a target computer. 
 
 1. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md).
 
     > [!TIP]
-    > When you follow the steps to provision the target computer automatically using a network cable, take note of the port and key. You'll use them later in the debugging step. In this example, we'll use **50000** as the port and **1.2.3.4** as the key.
+    > When you follow the steps to provision the target computer automatically using a network cable, take note of the port and key. You'll use them later in the debugging step. In this example, you use **50000** as the port and **1.2.3.4** as the key.
     >
     > In real driver debugging scenarios, we recommend using a KDNET-generated key. For more information about how to use KDNET to generate a random key, see the [Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)](../debugger/debug-universal-drivers--kernel-mode-.md) topic.
 
@@ -270,7 +270,7 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
 
 
     >[!NOTE]
-    > In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**. You'll see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfHelloWorld > Driver Files**, and double-click KmdfHelloWorld.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
+    > In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that is given a place in the [device tree](device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**. You see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfHelloWorld > Driver Files**, and double-click KmdfHelloWorld.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
 
     ```C++
     [Standard.NT$ARCH$]
@@ -285,7 +285,7 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
 
 ## Install the driver
 
-With your Hello World driver deployed to the target computer, now you'll install the driver. When you previously provisioned the target computer with Visual Studio using the *automatic* option, Visual Studio set up the target computer to run test signed drivers as part of the provisioning process. Now you just need to install the driver using the DevCon tool.
+With your Hello World driver deployed to the target computer, now you install the driver. When you previously provisioned the target computer with Visual Studio using the *automatic* option, Visual Studio set up the target computer to run test signed drivers as part of the provisioning process. Now you just need to install the driver using the DevCon tool.
 
 1. On the host computer, navigate to the Tools folder in your WDK installation and locate the DevCon tool. For example, look in the following folder:
 
@@ -307,23 +307,23 @@ With your Hello World driver deployed to the target computer, now you'll install
 
         **c:\\tools\\devcon install kmdfhelloworld.inf root\kmdfhelloworld**
 
-        A dialog box will appear indicating that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
+        A dialog box appears indicating that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
         
         :::image type="content" source="../debugger/images/debuglab-image-install-security-warning.png" alt-text="Screenshot of the security warning displayed during the driver installation process.":::
 
 ## Debug the driver
 
-Now that you've installed your KmdfHelloWorld driver on the target computer, you'll attach a debugger remotely from the host computer.
+Now that you installed your KmdfHelloWorld driver on the target computer, you attach a debugger remotely from the host computer.
 
-1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. We'll use the x64version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation. Here's the default path to WinDbg.exe:
+1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. You use the x64version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation. Here's the default path to WinDbg.exe:
 
     *C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64*
 
-1. Launch WinDbg to connect to a kernel debug session on the target computer by using the following command. The value for the port and key should be the same as what you used to provision the target computer. We'll use **50000** for the port and **1.2.3.4** for the key, the values we used during the deploy step. The *k* flag indicates that this is a kernel debug session.
+1. Launch WinDbg to connect to a kernel debug session on the target computer by using the following command. The value for the port and key should be the same as what you used to provision the target computer. You use **50000** for the port and **1.2.3.4** for the key, the values you used during the deploy step. The *k* flag indicates that this is a kernel debug session.
 
     **WinDbg -k net:port=50000,key=1.2.3.4**
 
-1. On the **Debug** menu, choose **Break**. The debugger on the host computer will break into the target computer. In the **Debugger Command** window, you can see the kernel debugging command prompt: **kd\>**.
+1. On the **Debug** menu, choose **Break**. The debugger on the host computer breaks into the target computer. In the **Debugger Command** window, you can see the kernel debugging command prompt: **kd\>**.
 
 1. At this point, you can experiment with the debugger by entering commands at the **kd&gt;** prompt. For example, you could try these commands:
 
