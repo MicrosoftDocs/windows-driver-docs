@@ -1,7 +1,7 @@
 ---
 title: Write a Hello World Windows Driver (Kernel-Mode)
 description: How to write a Windows driver using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template.
-ms.date: 12/09/2024
+ms.date: 02/03/2025
 ---
 
 # Tutorial: Write a Hello World Windows Driver (Kernel-Mode Driver Framework)
@@ -46,10 +46,10 @@ This article describes how to write a small [Universal Windows driver](/windows-
 
     :::image type="content" source="images/vs2019-kmdf-hello-world-solution-explorer.png" alt-text="Screenshot of the Visual Studio solution explorer window displaying the solution and the empty driver project named KmdfHelloWorld.":::
 
-1. In the **Solution Explorer** window, select and hold (or right-select) the **KmdfHelloWorld** solution and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For example, choose **Debug** and **x64**.
+1. In the **Solution Explorer** window, right-select **Solution 'KmdfHelloWorld' (1 of 1 project)** and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For example, choose **Debug** and **x64**.
 
-1. In the **Solution Explorer** window, again select and hold (or right-select) the **KmdfHelloWorld** project, choose **Add**, and then select **New Item**.
-1. In the **Add New Item** dialog box, select **C++ File**. For **Name**, enter "Driver.c".
+1. In the **Solution Explorer** window, right-select the **KmdfHelloWorld** project, choose **Add**, and then select **New Item**.
+1. In the **Add New Item** dialog box, enter "Driver.c".
 
     > [!NOTE]
     > The file name extension is **.c**, not **.cpp**.
@@ -64,7 +64,7 @@ Now that you've created your empty Hello World project and added the Driver.c so
 
 1. In Driver.c, start by including these headers:
 
-    ```C++
+    ```C
     #include <ntddk.h>
     #include <wdf.h>
     ```
@@ -77,14 +77,14 @@ Now that you've created your empty Hello World project and added the Driver.c so
 
 1. Next, provide declarations for the two callbacks you'll use:
 
-    ```C++
+    ```C
     DRIVER_INITIALIZE DriverEntry;
     EVT_WDF_DRIVER_DEVICE_ADD KmdfHelloWorldEvtDeviceAdd;
     ```
 
 1. Use the following code to write your *DriverEntry*:
 
-    ```C++
+    ```C
     NTSTATUS 
     DriverEntry(
         _In_ PDRIVER_OBJECT     DriverObject, 
@@ -126,7 +126,7 @@ Now that you've created your empty Hello World project and added the Driver.c so
 
 1. Next, use the following code to write your *KmdfHelloWorldEvtDeviceAdd*:
 
-    ```C++
+    ```C
     NTSTATUS 
     KmdfHelloWorldEvtDeviceAdd(
         _In_    WDFDRIVER       Driver, 
@@ -161,7 +161,7 @@ Now that you've created your empty Hello World project and added the Driver.c so
 
 1. Your complete Driver.c now looks like this:
 
-    ```C++
+    ```C
     #include <ntddk.h>
     #include <wdf.h>
     DRIVER_INITIALIZE DriverEntry;
@@ -233,9 +233,9 @@ Next, you'll build your driver.
 
 ## Build the driver
 
-1. In the **Solution Explorer** window, select and hold (or right-select) **Solution 'KmdfHelloWorld' (1 project)** and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For this exercise, choose **Debug** and **x64**.
+1. In the **Solution Explorer** window, right-select **Solution 'KmdfHelloWorld' (1 of 1 project)** and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For this exercise, choose **Debug** and **x64**.
 
-1. In the **Solution Explorer** window, select and hold (or right-select) **KmdfHelloWorld** and choose **Properties**. In **Wpp Tracing > All Options**, set **Run Wpp tracing** to **No**. Select **Apply** and then **OK**.
+1. In the **Solution Explorer** window, right-select **KmdfHelloWorld** and choose **Properties**. In **Wpp Tracing > All Options**, set **Run Wpp tracing** to **No**. Select **Apply** and then **OK**.
 
 1. To build your driver, choose **Build Solution** from the **Build** menu. Visual Studio shows the build progress in the **Output** window. (If the **Output** window isn't visible, choose **Output** from the **View** menu.) When you've verified that the solution built successfully, you can close Visual Studio.
 
@@ -262,16 +262,16 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
     > In real driver debugging scenarios, we recommend using a KDNET-generated key. For more information about how to use KDNET to generate a random key, see the [Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)](../debugger/debug-universal-drivers--kernel-mode-.md) topic.
 
 1. On the host computer, open your solution in Visual Studio. You can double-click the solution file, KmdfHelloWorld.sln, in your KmdfHelloWorld folder.
-1. In the **Solution Explorer** window, select and hold (or right-click) the **KmdfHelloWorld** project, and choose **Properties**.
-1. In the **KmdfHelloWorld Property Pages** window, go to **Configuration Properties &gt; Driver Install &gt; Deployment**, as shown here.
-1. Check **Remove previous driver versions before deployment**.
+1. In the **Solution Explorer** window, right-click the **KmdfHelloWorld** project, and choose **Properties**.
+1. Go to **Driver Install > Deployment**.
 1. For **Target Device Name**, select the name of the computer that you configured for testing and debugging. In this exercise, we use a computer named MyTestComputer.
+1. Check **Remove previous driver versions before deployment**.
 1. Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. For this exercise, the hardware ID is Root\\KmdfHelloWorld. Select **OK**.
 
     :::image type="content" source="images/vs2019-kmdf-hello-world-property-pages.png" alt-text="Screenshot of the kmdfhelloworld property pages window with the deployment driver install option selected.":::
 
     >[!NOTE]
-    > In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**. You'll see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfHelloWorld &gt; Driver Files**, and double-click KmdfHelloWorld.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
+    > In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**. You'll see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfHelloWorld > Driver Files**, and double-click KmdfHelloWorld.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
 
     ```C++
     [Standard.NT$ARCH$]
