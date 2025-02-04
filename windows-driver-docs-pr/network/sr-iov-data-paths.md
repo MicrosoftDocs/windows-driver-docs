@@ -1,7 +1,7 @@
 ---
 title: Single Root I/O Virtualization Data Paths
 description: Learn about data paths between a single root I/O virtualization interface and the Hyper-V parent and child partitions.
-ms.date: 12/17/2024
+ms.date: 01/31/2025
 ---
 
 # Single root I/O virtualization data paths

@@ -1,11 +1,7 @@
 ---
 title: NDIS Protocol Driver Installation
 description: Learn how to install a Network Driver Interface Specification (NDIS) protocol driver.
-keywords:
-- protocol drivers WDK networking , installation
-- NDIS protocol drivers WDK , installation
-- installing NDIS protocol drivers WDK networking
-ms.date: 12/17/2024
+ms.date: 01/31/2025
 ---
 
 # NDIS protocol driver installation

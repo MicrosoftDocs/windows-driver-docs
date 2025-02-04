@@ -1,11 +1,7 @@
 ---
 title: NDIS Filter Driver Installation
 description: Learn how to install an NDIS filter driver using a setup information (INF) file.
-keywords:
-- filter drivers WDK networking , installation
-- NDIS filter drivers WDK , installation
-- installing NDIS filter drivers WDK networking
-ms.date: 12/20/2024
+ms.date: 01/31/2025
 ---
 
 # NDIS filter driver installation
