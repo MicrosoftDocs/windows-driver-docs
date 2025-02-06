@@ -2,7 +2,6 @@
 title: PKEY\_APO\_SWFallback\_ProcessingModes
 description: In Windows 10 version 1709 and later, the PKEY\_APO\_SWFallback\_ProcessingModes property key identifies the HW modes that can fallback to software processing modes supported by the driver.
 ms.date: 10/22/2018
-ms.topic: article
 ---
 
 # PKEY\_APO\_SWFallback\_ProcessingModes

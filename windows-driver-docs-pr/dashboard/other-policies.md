@@ -1,7 +1,6 @@
 ---
 title: Other Policies
 description: Other policies for publishing drivers
-ms.topic: article
 ms.date: 09/22/2020
 ---
 

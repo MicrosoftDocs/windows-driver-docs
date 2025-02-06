@@ -1,7 +1,6 @@
 ---
 title: Percent of machines with at least one audio capture stream initialization failure 
 description: This measure tracks the percentage of machines  with at least one ACI capture stream initialization failure
-ms.topic: article
 ms.date: 11/07/2022
 ---
 

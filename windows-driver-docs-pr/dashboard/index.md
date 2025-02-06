@@ -1,7 +1,6 @@
 ---
 title: Partner Center for Windows Hardware
 description: This article describes how to get started with the hardware submission process by using the Partner Center for Windows Hardware.
-ms.topic: article
 ms.date: 09/05/2024
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Errors and Solutions When Submitting Device Metadata Experiences
 description: Errors and Solutions When Submitting Device Metadata Experiences
-ms.topic: article
 ms.date: 04/20/2017
 ---
 

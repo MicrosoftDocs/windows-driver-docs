@@ -1,7 +1,6 @@
 ---
 title: Get support for Partner Center dashboard or HLK issues
 description: There are two types of support issues in Windows developer support, dashboard issues, and HLK issues.
-ms.topic: article
 ms.custom: "se-defect-target"
 ms.date: 12/10/2024
 ---

@@ -1,7 +1,6 @@
 ---
 title: Microsoft driver measure
 description: Publishers and authors use the descriptions of the Microsoft driver measures to better understand the criteria Microsoft uses in evaluating driver quality during driver flighting.
-ms.topic: article
 ms.date: 09/19/2024
 ---
 

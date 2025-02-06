@@ -1,7 +1,6 @@
 ---
 title: Get product data
 description: These methods from the Microsoft Hardware APIs retrieve data for hardware products registered to your Dev Center Account.
-ms.topic: article
 ms.date: 09/12/2024
 ---
 

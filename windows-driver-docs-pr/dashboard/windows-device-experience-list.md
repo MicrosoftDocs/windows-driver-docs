@@ -1,7 +1,6 @@
 ---
 title: Windows Device Experience List
 description: The Windows device experience list is a comprehensive list of devices that have supporting Windows device experiences submitted through the dashboard.
-ms.topic: article
 ms.date: 08/16/2024
 ---
 

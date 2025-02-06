@@ -1,7 +1,6 @@
 ---
 title: View partner shipping labels for a shared driver
 description: After you share a driver with a partner, the partner can create shipping labels for your driver. To view a list of partner shipping labels for your shared driver, follow the steps below.
-ms.topic: article
 ms.date: 04/20/2017
 ---
 

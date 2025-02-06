@@ -1,7 +1,6 @@
 ---
 title: Service number
 description: Service number
-ms.topic: article
 ms.date: 04/20/2017
 ---
 

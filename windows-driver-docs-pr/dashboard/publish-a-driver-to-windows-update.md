@@ -1,7 +1,6 @@
 ---
 title: Publish a driver to Windows Update
 description: To publish a driver to Windows Update, create a hardware submission and follow these steps.
-ms.topic: article
 ms.date: 09/11/2024
 ---
 

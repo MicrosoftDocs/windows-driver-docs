@@ -1,7 +1,6 @@
 ---
 title: Service icon requirements
 description: Service icon requirements
-ms.topic: article
 ms.date: 04/20/2017
 ---
 

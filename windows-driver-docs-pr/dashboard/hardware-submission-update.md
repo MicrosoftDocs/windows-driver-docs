@@ -1,7 +1,6 @@
 ---
 title: Update a hardware submission
 description: Learn to update hardware submission details, including status, packages, certification info, and shipping labels.
-ms.topic: article
 ms.date: 07/15/2024
 ---
 
