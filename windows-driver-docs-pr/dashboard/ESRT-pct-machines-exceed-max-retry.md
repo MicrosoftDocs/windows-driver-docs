@@ -1,7 +1,6 @@
 ---
 title: Percent of machines exceeded firmware max retry limit from ESRT
 description: The measure aggregates telemetry from a 28-day sliding window into a ratio of machines that hit max retry over machines that had an install event
-ms.topic: article
 ms.date: 10/31/2019
 ---
  

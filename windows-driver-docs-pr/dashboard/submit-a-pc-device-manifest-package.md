@@ -1,7 +1,6 @@
 ---
 title: Submit a PC device manifest package
 description: Submit a PC device manifest package
-ms.topic: article
 ms.date: 04/20/2017
 ---
 

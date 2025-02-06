@@ -1,7 +1,6 @@
 ---
 title: Reliability measure failure report
 description: Describes the reliability measure failure report provided upon cancellation.
-ms.topic: article
 ms.date: 07/14/2021
 ---
 

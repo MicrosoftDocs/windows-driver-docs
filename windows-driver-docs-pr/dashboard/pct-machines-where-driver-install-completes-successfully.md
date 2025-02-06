@@ -1,7 +1,6 @@
 ---
 title: Percent of machines where the driver install process completes successfully
 description: The measure aggregates telemetry from a 30-day sliding window into a Percentage of Machines that have Successfully Installed the Driver
-ms.topic: article
 ms.date: 07/20/2021
 ---
 

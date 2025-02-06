@@ -2,7 +2,6 @@
 description: Windows Portable Devices Documentation landing page
 title: Windows Portable Devices Documentation
 ms.date: 12/05/2024
-ms.topic: article
 ai-usage: ai-assisted
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: View hardware submissions
 description: This article shows you how to view and search for your organization's hardware submissions.
-ms.topic: article
 ms.date: 09/12/2024
 ---
 

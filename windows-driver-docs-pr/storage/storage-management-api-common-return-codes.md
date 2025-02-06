@@ -1,7 +1,6 @@
 ---
 title: Storage Management API Common Return Codes
 description: Storage Management API Common Return Codes
-ms.topic: article
 ms.date: 12/18/2024
 topic_type: 
 - kbArticle

@@ -1,7 +1,6 @@
 ---
 title: Create a new submission for a product
 description: Use this method in the Microsoft Hardware API to create a new submission for a product.
-ms.topic: article
 ms.date: 04/05/2018
 ---
 

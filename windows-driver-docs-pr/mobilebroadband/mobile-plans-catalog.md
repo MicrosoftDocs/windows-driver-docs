@@ -4,7 +4,6 @@ description: Mobile Plans catalog
 keywords:
 - Windows Mobile Plans mobile operators
 ms.date: 10/06/2023
-ms.topic: article
 ---
 
 

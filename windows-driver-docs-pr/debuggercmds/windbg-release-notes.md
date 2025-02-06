@@ -3,7 +3,6 @@ title: "WinDbg Release notes"
 description: "This topic provides information on what's new in WinDbg."
 keywords: ["Release notes", "WinDbg", "Windows Debugging"]
 ms.date: 08/29/2024
-ms.topic: article
 ---
 
 # Release notes

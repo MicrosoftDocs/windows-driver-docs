@@ -1,7 +1,6 @@
 ---
 title: Manage Code Signing Certificates
 description: This article describes how to get, add, and update code signing certificates to the hardware dashboard.
-ms.topic: article
 ms.date: 11/26/2024
 ---
 

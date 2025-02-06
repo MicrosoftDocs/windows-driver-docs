@@ -5,7 +5,6 @@ ms.assetid: e0827569-6c76-42a1-b94f-29235646519f
 keywords:
 - smart card drivers WDK
 ms.date: 04/20/2017
-ms.topic: article
 ---
 
 # Smart Card Reader Devices Design Guide

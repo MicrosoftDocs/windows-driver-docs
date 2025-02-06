@@ -3,7 +3,6 @@ title: Biometric Devices Design Guide
 description: This is the landing page for the Biometric Devices Design Guide documentation.
 ms.assetid: 78270890-4ea2-403e-bbd7-84a22581bbb7
 ms.date: 12/11/2024
-ms.topic: article
 ---
 
 # Biometric Devices Design Guide Documentation

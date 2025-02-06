@@ -3,7 +3,6 @@ title: Test Authoring and Execution Framework (TAEF)
 description: Test Authoring and Execution Framework (TAEF)
 ms.assetid: D96976DD-5126-4526-A52D-89A6A5660033
 ms.date: 04/20/2017
-ms.topic: article
 ---
 
 # Test Authoring and Execution Framework (TAEF)

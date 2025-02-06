@@ -11,7 +11,6 @@ keywords:
 - reporting hardware errors WDK
 - recovering from hardware errors WDK WHEA
 ms.date: 12/17/2024
-ms.topic: article
 ---
 
 # Windows Hardware Error Architecture (WHEA) design guide

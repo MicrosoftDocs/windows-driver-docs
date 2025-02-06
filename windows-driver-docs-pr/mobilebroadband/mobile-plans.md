@@ -2,7 +2,6 @@
 title: Mobile Plans Overview
 description: Mobile Plans overview
 ms.date: 09/27/2024
-ms.topic: article
 ---
 
 # Mobile Plans overview

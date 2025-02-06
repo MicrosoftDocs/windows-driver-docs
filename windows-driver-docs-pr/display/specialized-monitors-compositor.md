@@ -10,7 +10,6 @@ keywords:
 - HMD
 - virtual reality
 ms.date: 7/8/2020
-ms.topic: article
 ---
 
 # Building a custom compositor app for head-mounted and specialized monitors

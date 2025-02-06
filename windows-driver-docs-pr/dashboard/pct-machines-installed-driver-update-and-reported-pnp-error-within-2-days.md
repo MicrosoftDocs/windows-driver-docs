@@ -1,7 +1,6 @@
 ---
 title: Machines that reported a PnP error code within two days of installing a driver update
 description: The measure aggregates data from a 30-day sliding window into a percentage of machines that successfully installed the driver and then encountered a Plug and Play error within two days of install.
-ms.topic: article
 ms.date: 07/15/2024
 ---
 

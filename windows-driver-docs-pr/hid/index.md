@@ -7,7 +7,6 @@ keywords:
 - Human Interface Devices WDK
 - HID WDK
 ms.date: 10/22/2024
-ms.topic: article
 ---
 
 # Develop Windows device drivers for Human Interface Devices (HID)

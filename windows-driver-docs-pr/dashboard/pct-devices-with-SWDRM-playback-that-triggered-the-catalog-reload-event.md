@@ -1,7 +1,6 @@
 ---
 title: Percentage of devices with SWDRM playback that triggered the Catalog reload event
 description: Devices that experience a Code Integrity catalog reload event when loading binaries into mfpmp.exe, may receive a timeout from Netflix and other applications. This "device based" measure is used to capture this scenario.
-ms.topic: article
 ms.date: 06/20/2024
 ---
 

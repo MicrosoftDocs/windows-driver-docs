@@ -8,7 +8,6 @@ keywords:
 - Secure Digital WDK buses
 - memory cards WDK SD bus
 ms.date: 03/03/2023
-ms.topic: article
 ---
 
 # SD Bus Driver Design Guide

@@ -1,7 +1,6 @@
 ---
 title: Session based HWDRM Driver measure for Video playback on Netflix 
 description: This session-based Hardware DRM Driver measure is used to capture the percentage of sessions that have an error during video playback on Netflix while using hardware DRM.
-ms.topic: article
 ms.date: 06/20/2024
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Validating driver updates for Modern Standby systems
 description: This topic describes how to validate driver updates that target Modern Standby systems.
-ms.topic: article
 ms.date: 12/17/2020
 ---
 

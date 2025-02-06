@@ -1,7 +1,6 @@
 ---
 title: Attestation sign Windows drivers
 description: This article describes how to sign a driver using attestation signing.
-ms.topic: article
 ms.date: 08/16/2024
 ---
 
