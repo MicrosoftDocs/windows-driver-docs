@@ -5,7 +5,7 @@ keywords:
 - WDDM , automatic display switch , GPU
 - WDDM , ADS , GPU
 - WDDM , mux device , GPU switching
-ms.date: 01/13/2025
+ms.date: 02/06/2025
 ---
 
 # Automatic display switch
@@ -79,14 +79,14 @@ Several DDIs are added to satisfy the mux requirements. There are five different
 
 |       **DDI**      | **Description** |
 |--------------------|-----------------|
-| [**DxgkDdiDisplayMuxPreSwitchAway**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_pre_switch_away)  | Call to the driver currently connected to the display. This call informs the driver that the system is planning to switch away the display to another GPU (from GPU0 to GPU1). |
-| [**DxgkDdiDisplayMuxPreSwitchAwayGetPrivateData**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_pre_switch_away_get_private_data) | Call to collect any private switch data from the driver currently connected to the panel (from GPU0). |
-| [**DxgkDdiDisplayMuxPreSwitchTo**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_pre_switch_to) | Call to the driver currently not connected to the display. This call informs the driver that the OS is planning to switch the display to this GPU (to GPU1). |
-| [**DxgkDdiDisplayMuxSwitchCanceled**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_switch_canceled) | Call to the driver to indicate the switch sequence was canceled before the switch was completed. |
-| [**DxgkDdiDisplayMuxPostSwitchAway**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_post_switch_away)  | The mux switch is complete and GPU0's driver is no longer connected to the display. |
-| [**DxgkDdiDisplayMuxPostSwitchToPhase1**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase1) | The mux switch is complete and GPU1's driver is now connected to the display. This driver should now perform phase 1 tasks. |
-| [**DxgkDdiDisplayMuxPostSwitchToPhase2**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase2) | The mux switch is complete and the GPU1's driver is now connected to the display. This driver should now perform phase 2 tasks. |
-| [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_update_state) | Called at adapter start and return to the D0 power state to let the driver know the current mux state. |
+| [**DxgkDdiDisplayMuxPreSwitchAway**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_pre_switch_away)  | Call to the driver currently connected to the display. This call informs the driver that the system is planning to switch away the display to another GPU (from GPU0 to GPU1). |
+| [**DxgkDdiDisplayMuxPreSwitchAwayGetPrivateData**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_pre_switch_away_get_private_data) | Call to collect any private switch data from the driver currently connected to the panel (from GPU0). |
+| [**DxgkDdiDisplayMuxPreSwitchTo**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_pre_switch_to) | Call to the driver currently not connected to the display. This call informs the driver that the OS is planning to switch the display to this GPU (to GPU1). |
+| [**DxgkDdiDisplayMuxSwitchCanceled**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_switch_canceled) | Call to the driver to indicate the switch sequence was canceled before the switch was completed. |
+| [**DxgkDdiDisplayMuxPostSwitchAway**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_post_switch_away)  | The mux switch is complete and GPU0's driver is no longer connected to the display. |
+| [**DxgkDdiDisplayMuxPostSwitchToPhase1**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase1) | The mux switch is complete and GPU1's driver is now connected to the display. This driver should now perform phase 1 tasks. |
+| [**DxgkDdiDisplayMuxPostSwitchToPhase2**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase2) | The mux switch is complete and the GPU1's driver is now connected to the display. This driver should now perform phase 2 tasks. |
+| [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_update_state) | Called at adapter start and return to the D0 power state to let the driver know the current mux state. |
 
 There are explicit actions the driver needs to complete at each stage. These actions are described later in this article.
 
@@ -119,18 +119,18 @@ The following sequence is a high level view of the whole switch sequence when th
 1. A switch call is made at the API level.
 1. The OS collects attributes of the current internal panel state (HDR, mode, refresh rate, and so forth) and checks for temporary display mode.
 1. The OS disables performing any display topology due to HPDs from any GPU in the system.
-1. The OS calls GPU1 driver's [**DxgkDdiDisplayMuxPreSwitchTo**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_pre_switch_to), passing the current brightness level. The driver should do the following only if the lid is open:
+1. The OS calls GPU1 driver's [**DxgkDdiDisplayMuxPreSwitchTo**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_pre_switch_to), passing the current brightness level. The driver should do the following only if the lid is open:
     * Turn on power to the panel.
     * Set the brightness enabled signal.
     * Set the brightness level that the OS passed.
 1. The OS disables calling [**DxgkDdiQueryConnectionChange**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryconnectionchange) on GPU0 to ensure that lid HPD away can't be processed until after the mux switch.
-1. The OS calls GPU0 driver's [**DxgkDdiDisplayMuxPreSwitchAway**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_pre_switch_away) DDI. The driver should:
+1. The OS calls GPU0 driver's [**DxgkDdiDisplayMuxPreSwitchAway**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_pre_switch_away) DDI. The driver should:
     * If the lid is active, enable PSR1 (panel self refresh 1) on the panel and ensure it isn't disabled until the OS requests disablement later in the sequence.
     * Add a packet to its connection change list with [**DXGK_CONNECTION_CHANGE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_connection_change)'s **ConnectionStatus** set to **MonitorStatusDisconnected** and **MonitorConnect.MonitorConnectFlags.DisplayMuxConnectionChange** set to 1.
     * GPU0 can't add any connection change packets for the lid target into its queue. The OS bug checks if it does so.
     * Return the size of any private ADS data blob (GUID and data) to the OS.
    If the GPU0 driver fails this call, it needs to ensure any ADS connection status packets it placed into the queue are removed before returning.
-1. If GPU0's driver returned a nonzero private data size, the OS allocates that size and passes it to GPU0's [**DxgkDdiDisplayMuxPreSwitchAwayGetPrivateData**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_pre_switch_away_get_private_data) callback to get the private switch data.
+1. If GPU0's driver returned a nonzero private data size, the OS allocates that size and passes it to GPU0's [**DxgkDdiDisplayMuxPreSwitchAwayGetPrivateData**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_pre_switch_away_get_private_data) callback to get the private switch data.
 1. The OS calls the mux's ACPI method to switch from GPU0 to GPU1.
 1. The OS enables GPU0's [**DxgkDdiQueryConnectionChange**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryconnectionchange) to be called again.
 1. The OS calls GPU0's **DxgkDdiQueryConnectionChanges** to process the [**MonitorStatusDisconnected**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_connection_status) connection packet with **DisplayMuxConnectionChange** set to 1.
@@ -139,7 +139,7 @@ The following sequence is a high level view of the whole switch sequence when th
     * Disable the brightness signal.
     * Stop sending brightness level to mux.
 1. The OS processes the display departure. It doesn't trigger a topology change to avoid unnecessary topology changes.
-1. The OS calls GPU1's [**DxgkDdiDisplayMuxPostSwitchToPhase1**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase1) callback, passing any ADS private blob it obtained from GPU0. The driver should:
+1. The OS calls GPU1's [**DxgkDdiDisplayMuxPostSwitchToPhase1**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase1) callback, passing any ADS private blob it obtained from GPU0. The driver should:
     * Determine if the lid is open or closed.
     * Add the packet to its connection change list with [**DXGK_CONNECTION_CHANGE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_connection_change)'s:
       * **MonitorConnect.MonitorConnectFlags.DisplayMuxConnectionChange** bit set.
@@ -154,8 +154,8 @@ The following sequence is a high level view of the whole switch sequence when th
     * [**DxgkddiSettimingsfromvidpn**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_settimingsfromvidpn) is called on GPU1 to activate the display path.
     * DWM renders and presents the frame to the display path on GPU1.
     * The OS waits for the first frame to be made visible.
-1. The OS calls GPU1's [**DxgkDdiDisplayMuxPostSwitchToPhase2**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase2) callback, where the driver should turn off PSR1 for the display if **MonitorStatusConnected** was queued by GPU1; otherwise, it should do nothing.
-1. The OS calls GPU0's [**DxgkDdiDisplayMuxPreSwitchAway**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_pre_switch_away). While there are no expected actions from the driver, this call is useful for any driver cleanup or bookkeeping related to switching.
+1. The OS calls GPU1's [**DxgkDdiDisplayMuxPostSwitchToPhase2**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase2) callback, where the driver should turn off PSR1 for the display if **MonitorStatusConnected** was queued by GPU1; otherwise, it should do nothing.
+1. The OS calls GPU0's [**DxgkDdiDisplayMuxPreSwitchAway**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_pre_switch_away). While there are no expected actions from the driver, this call is useful for any driver cleanup or bookkeeping related to switching.
 1. The OS collects the attributes of the current internal panel state. If the panel state differs from what was previously saved, the OS triggers telemetry.
 
 This switch sequence is the same for iGPU->dGPU and dGPU->iGPU. There might be cases to switch the mux when the panel is inactive. In that case, this sequence isn't needed and the OS can just call ACPI methods on the mux to switch.
@@ -166,8 +166,8 @@ Most of the OS doesn't know the driver is in PSR mode. As a result, the driver s
 
 If a failure happens during any stage of the switch sequence, the following cleanup is performed:
 
-1. The OS calls GPU0's [**DxgkDdiDisplayMuxSwitchCanceled**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_switch_canceled) if GPU0's [**DxgkDdiDisplayMuxPreSwitchAway**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_pre_switch_away) was successfully called but its[**DxgkDdiDisplayMuxPostSwitchAway**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_post_switch_away) hasn't been called.
-1. The OS calls GPU1's **DxgkDdiDisplayMuxSwitchCanceled** if GPU1's [**DxgkDdiDisplayMuxPreSwitchTo**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_pre_switch_to) was successfully called but its [**DxgkDdiDisplayMuxPostSwitchToPhase2**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase2) hasn't been called.
+1. The OS calls GPU0's [**DxgkDdiDisplayMuxSwitchCanceled**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_switch_canceled) if GPU0's [**DxgkDdiDisplayMuxPreSwitchAway**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_pre_switch_away) was successfully called but its[**DxgkDdiDisplayMuxPostSwitchAway**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_post_switch_away) hasn't been called.
+1. The OS calls GPU1's **DxgkDdiDisplayMuxSwitchCanceled** if GPU1's [**DxgkDdiDisplayMuxPreSwitchTo**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_pre_switch_to) was successfully called but its [**DxgkDdiDisplayMuxPostSwitchToPhase2**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase2) hasn't been called.
 1. The OS re-enables display topology changes if they're disabled.
 1. The OS re-enables calling [**DxgkDdiQueryConnectionChange**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryconnectionchange) on GPU0 if disabled.
 1. The OS polls for lid connectivity on the GPU that the lid is connected to.
@@ -232,7 +232,7 @@ When GPU1 sets a mode on the panel, there's no guarantee that the link attribute
 
 In order for the ADS HLK test to verify that PSR is maintained during the switch process we would like a way for the OS to know if the PSR wasn't active after GPU1 test the mode. A challenge is that it's not defined how a panel will react if it can't support PSR across the link training.  
 
-As part of [**DxgkDdiDisplayMuxPostSwitchToPhase2**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase2), the driver returns a Boolean value in **pWasPanelInPSR** to inform the OS whether it detected that the panel wasn't in PSR.
+As part of [**DxgkDdiDisplayMuxPostSwitchToPhase2**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase2), the driver returns a Boolean value in **pWasPanelInPSR** to inform the OS whether it detected that the panel wasn't in PSR.
 
 ### EDID of the internal panel
 
@@ -247,9 +247,9 @@ Currently the OS will call [**DxgkDdiQueryAdapterInfo**](/windows-hardware/drive
 The OS performs the following list of checks to determine if ADS is available on a system. All checks have to be true for ADS to be supported.
 
 1. There's a GPU that is marked as integrated hybrid ([**DXGK_DRIVERCAPS.HybridIntegrated**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps)) that:
-   * Its driver implements the [**DXGK_DISPLAYMUX_INTERFACE**](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_displaymux_interface_2) interface.
+   * Its driver implements the [**DXGK_DISPLAYMUX_INTERFACE**](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-dxgk_displaymux_interface_2) interface.
    * Checks the ADS support level returned from [**DxgkDdiDisplayMuxGetDriverSupportLevel**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_get_driver_support_level).
-   * Checks the runtime ADS status from [**DxgkDdiDisplayMuxGetRuntimeStatus**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_get_runtime_status.md).
+   * Checks the runtime ADS status from [**DxgkDdiDisplayMuxGetRuntimeStatus**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_get_runtime_status).
    * Driver has to support the following DDIs:
        * [**DxgkddiSettimingsfromvidpn**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_settimingsfromvidpn)
        * [**DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay3**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_setvidpnsourceaddresswithmultiplaneoverlay3)
@@ -415,7 +415,7 @@ Thus, the switch occurs after the [**DxgkddiSettimingsfromvidpn**](/windows-hard
 
 This feature is intentionally designed to have the OS call the driver to provide the information rather than providing a callback that the driver can call at any time. This method avoids the driver getting confused if it queries the OS state during a switch sequence.
 
-The OS calls the driver's [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_update_state) DDI to provide the driver with the current mux state in the following cases:
+The OS calls the driver's [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_update_state) DDI to provide the driver with the current mux state in the following cases:
 
 1. At driver start, which allows the driver to avoid timely polling sequences when the panel isn't connected.
 2. On return to D0 from D*x*. When returning from some power states (for example, hibernate), the firmware might have to reset the mux; hence the driver doesn't know the state.
@@ -426,17 +426,17 @@ In the first version of this feature, there are no plans to switch the mux when 
 
 #### Adapter start time
 
-When a driver starts, it needs to respond to polling requests from the OS. The driver could attempt to discover if the mux is switched to them by attempting to communicate but that could be time consuming or unreliable. As part of the GPU start sequence, the OS calls the [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_update_state) DDI for each target that is connected to a mux and indicates whether it's switched to that target.
+When a driver starts, it needs to respond to polling requests from the OS. The driver could attempt to discover if the mux is switched to them by attempting to communicate but that could be time consuming or unreliable. As part of the GPU start sequence, the OS calls the [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_update_state) DDI for each target that is connected to a mux and indicates whether it's switched to that target.
 
 When a driver starts, it needs to respond to polling requests from the OS. The driver could attempt to discover if the mux is switched to their GPU by communicating with the OS, but that could be time consuming or unreliable.
 
-Instead, as part of the GPU start sequence, the OS calls [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_update_state) for each target that is connected to a mux and indicates whether the mux is switched to that target. The OS reports to the driver whether the mux is switched to the driver's GPU before it calls any polling DDIs.
+Instead, as part of the GPU start sequence, the OS calls [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_update_state) for each target that is connected to a mux and indicates whether the mux is switched to that target. The OS reports to the driver whether the mux is switched to the driver's GPU before it calls any polling DDIs.
 
 The ADS driver continues to report the internal panel to the OS the same way, with the OS calling [**DxgkDdiQueryAdapterInfo**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo)(**DXGKQAITYPE_INTEGRATED_DISPLAY_DESCRIPTOR2**) to query the internal panel details. The driver needs to ensure that [**DXGK_CHILD_CAPABILITIES.HpdAwareness**](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_child_capabilities) is set to **HpdAwarenessInterruptible** for any target connected to a mux.
 
 #### D0 transition
 
-Whenever a GPU with a connected mux is returned to powered-on state from a low power state, the OS calls [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_update_state) to tell the driver whether the mux is connected to its target or switched away to the other GPU.
+Whenever a GPU with a connected mux is returned to powered-on state from a low power state, the OS calls [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_update_state) to tell the driver whether the mux is connected to its target or switched away to the other GPU.
 
 #### Boot sequence
 
@@ -456,9 +456,9 @@ The boot sequence is asynchronous in nature, so this sequence is for example's p
 7. *Dxgkrnl* calls [**DxgkDdiDisplayMuxGetDriverSupportLevel**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_get_driver_support_level) to get the driver's ADS support level.
 8. *Dxgkrnl* calls [**DxgkDdiDisplayMuxReportPresence**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_report_presence)(TRUE) to let the iGPU know that the system has a functioning ADS mux in it.
 9. *Dxgkrnl* calls [**DxgkDdiStartDevice**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device). The iGPU driver returns the number of children including the VidPn target for the internal panel.
-10. *Dxgkrnl* calls [**DxgkDdiDisplayMuxGetRuntimeStatus**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_get_runtime_status.md) to check whether the iGPU supports ADS and if the driver got all required information from the system.
+10. *Dxgkrnl* calls [**DxgkDdiDisplayMuxGetRuntimeStatus**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_get_runtime_status) to check whether the iGPU supports ADS and if the driver got all required information from the system.
 11. *Dxgkrnl* calls [**DxgkDdiQueryChildStatus**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_status) for each child that the iGPU exposes.
-12. Once *Dxgkrnl* finds the iGPU-reported child that is connected to the mux, it calls [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_update_state) to inform the iGPU that the mux is connected to that target.
+12. Once *Dxgkrnl* finds the iGPU-reported child that is connected to the mux, it calls [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_update_state) to inform the iGPU that the mux is connected to that target.
 13. Because the iGPU exposed a connected internal monitor, *Dxgkrnl* sets a mode on the iGPU using [**DxgkddiSettimingsfromvidpn**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_settimingsfromvidpn).
 14. *Dxgkrnl* starts the dGPU driver, then repeats steps 5-12 for the dGPU.
 15. *Dxgkrnl* detects that the iGPU, dGPU, and mux are all configured correctly, so it creates a mux pair and the PnP Device Interface properties for the mux pair.
@@ -559,8 +559,8 @@ The following example describes a hibernate power transition on an ADS system.
 5. User powers on the system.
 6. Firmware configures the mux to iGPU and iGPU display boot sequence on the internal panel.
 7. *Dxgkrnl* reads the last mux configuration (dGPU in this case), and compares it to the current mux position using ACPI (iGPU in this case). *Dxgkrnl* then calls ACPI to switch the mux to the dGPU.
-8. *Dxgkrnl* transitions iGPU to D0, then calls iGPU's[**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_update_state) to inform the driver that the mux isn't connected to it.
-9. *Dxgkrnl* transitions the dGPU to D0, then calls dGPU's [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/d3dkmddi/nc-dispmprt-dxgkddi_displaymux_update_state) to inform the driver that the mux is connected to it.
+8. *Dxgkrnl* transitions iGPU to D0, then calls iGPU's[**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_update_state) to inform the driver that the mux isn't connected to it.
+9. *Dxgkrnl* transitions the dGPU to D0, then calls dGPU's [**DxgkDdiDisplayMuxUpdateState**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_displaymux_update_state) to inform the driver that the mux is connected to it.
 10. *Dxgkrnl* sets a mode on the dGPU.
 
 ### All In One systems (AIO)

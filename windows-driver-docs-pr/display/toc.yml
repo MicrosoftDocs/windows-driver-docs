@@ -88,6 +88,8 @@
         href: mcdm-implementation-guidelines.md
   - name: WDDM 2.4 features
     items:
+    - name: GPU paravirtualization
+      href: gpu-paravirtualization.md
     - name: IOMMU-based GPU isolation
       href: iommu-based-gpu-isolation.md
   - name: WDDM 2.1 features
