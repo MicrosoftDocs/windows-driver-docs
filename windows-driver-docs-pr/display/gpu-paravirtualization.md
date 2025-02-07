@@ -189,12 +189,12 @@ DWORD RTL_REGISTRY_CONTROL\GraphicsDrivers\DriverStoreCopyMode
 
 ## Registry access from UMD
 
-The KMD registry keys exist on the host and aren't reflected to the VM. Therefore, the UMD can't read such driver registry keys directly. The [**pfnQueryAdapterInfoCb2**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3ddi_queryadapterinfocb2) callback is added to the D3D runtime's [**D3DDDI_ADAPTERCALLBACKS**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_adaptercallbacks) structure. UMD can call **pfnQueryAdapterInfoCb2** with [**D3DDDICB_QUERYADAPTERINFO2**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddicb_queryadapterinfo2) set as follows to read certain registry keys:
+The KMD registry keys exist on the host and aren't reflected to the VM. Therefore, the UMD can't read such driver registry keys directly. The [**pfnQueryAdapterInfoCb2**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_queryadapterinfocb2) callback is added to the D3D runtime's [**D3DDDI_ADAPTERCALLBACKS**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_adaptercallbacks) structure. UMD can call **pfnQueryAdapterInfoCb2** with [**D3DDDICB_QUERYADAPTERINFO2**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_queryadapterinfocb2) set as follows to read certain registry keys:
 
 * [**D3DDDICB_QUERYADAPTERINFO2::QueryType**](/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_d3dddi_queryadaptertype) set to **D3DDDI_QUERYADAPTERTYPE_QUERYREGISTRY**.
-* **pPrivateDriverData** points to a buffer with a [**D3DDDI_QUERYREGISTRY_INFO**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_queryregistry_info) structure in which to return the registry information. UMD fills the following members:
+* **pPrivateDriverData** points to a buffer with a [**D3DDDI_QUERYREGISTRY_INFO**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_queryregistry_info) structure in which to return the registry information. UMD fills the following members:
   * [**D3DDDI_QUERYREGISTRY_INFO::QueryType**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddi_queryregistry_type) specifies the type of registry access; for example, service key, adapter key, or driver store path.
-  * [**QueryFlags**](/windows-hardware/drivers/ddi/d3dukmdt//windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_queryregistry_flags) specifies the flags for the query.
+  * [**D3DDDI_QUERYREGISTRY_FLAGS::QueryFlags**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_queryregistry_flags) specifies the flags for the query.
   * **ValueName** identifies the name of the value to read.
   * **ValueType** specifies the type of the value to read.
 * **PrivateDriverDataSize** is `sizeof(D3DDDI_QUERYREGISTRY_INFO)` plus the size of the buffer for the dynamically sized output value.
