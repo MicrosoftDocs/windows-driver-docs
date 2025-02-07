@@ -14,11 +14,9 @@ api_type:
 ms.date: 02/07/2025
 ---
 
-
 # KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT
 
-
-The KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT property registers a caller created event handle in a [KSMIDILOOPED_EVENT struct](/windows-hardware/drivers/ddi/ns-ksmedia-ksmidilooped_event.md). The driver adds a reference to the handle for that event and stores it.
+The **KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT** property registers a caller created event handle in a [KSMIDILOOPED_EVENT struct](/windows-hardware/drivers/ddi/ns-ksmedia-ksmidilooped_event.md). The driver adds a reference to the handle for that event and stores it.
 
 The following table summarizes the features of this property.
 
@@ -26,7 +24,7 @@ The following table summarizes the features of this property.
 
 |Get |Set|Target|Property descriptor type    |Property value type|
 |--- |--- |--- |---------------------------- |------------------ |
-|Yes |Yes |Pin |[KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property) TBD ????| NULL TBD ???|
+|Yes |Yes |Pin |[KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property)TBD ????| NULL TBD ???|
 
 Notes:
 
@@ -42,7 +40,7 @@ The property value (operation data) for this property is **NULL** because no ope
 
 ### Return Value
 
-A KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT property request returns STATUS_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate failure status code. The following table shows some of the possible failure status codes.
+A **KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT** property request returns STATUS_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate failure status code. The following table shows some of the possible failure status codes.
 
 |Status code|Meaning|
 |---------- |------ |
@@ -53,14 +51,41 @@ A KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT property request returns STA
 
 ## Remarks
 
-TBD
-
-*KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT*, a member of the [KSPROPERTY_MIDILOOPEDSTREAMING enum](ne-ksmedia-ksproperty_midiloopedstreaming.md) takes in a caller created event handle in a [KSMIDILOOPED_EVENT struct](ns-ksmedia-ksmidilooped_event.md). The driver adds a reference to the handle for that event and stores it. 
+**KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT** takes in a caller created event handle in a [KSMIDILOOPED_EVENT struct](ns-ksmedia-ksmidilooped_event.md). The driver adds a reference to the handle for that event and stores it. 
 
 ### Sample Code
 
+TBD - Better code sample then this test code?
+
 ```cpp
-TBD
+    HRESULT
+    LoopedEventCall(
+        _In_ HANDLE WriteEvent,
+        _In_ HANDLE ReadEvent
+    )
+    {
+        KSPROPERTY property {0};
+        ULONG propertySize {sizeof(property)};
+        KSMIDILOOPED_EVENT2 LoopedEvent {0};
+
+        LoopedEvent.WriteEvent = WriteEvent;
+        LoopedEvent.ReadEvent = ReadEvent;
+
+        property.Set    = KSPROPSETID_MidiLoopedStreaming; 
+        property.Id     = KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT;       
+        property.Flags  = KSPROPERTY_TYPE_SET;
+
+        RETURN_IF_FAILED(SyncIoctl(
+            m_Pin.get(),
+            IOCTL_KS_PROPERTY,
+            &property,
+            propertySize,
+            &LoopedEvent,
+            sizeof(LoopedEvent),
+            nullptr));
+
+        return S_OK;
+    }
 ```
 
 ## Requirements
@@ -78,10 +103,12 @@ TBD
 
 [**KSPROPERTY**](../stream/ksproperty-structure.md)
 
-[**KSPROPERTY_MIDILOOPEDSTREAMING enum**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming.md)
+TBD Future links:
 
-[**KSMIDILOOPED_BUFFER_PROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer_property.md)
+`[**KSPROPERTY_MIDILOOPEDSTREAMING enum**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming.md)`
 
-[**KSMIDILOOPED_BUFFER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer.md) 
+`[**KSMIDILOOPED_BUFFER_PROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer_property.md)`
 
-[**KSPROPERTY_MIDILOOPEDSTREAMING enum**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming.md)
+`[**KSMIDILOOPED_BUFFER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer.md)` 
+
+`[**KSPROPERTY_MIDILOOPEDSTREAMING enum**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming.md)`

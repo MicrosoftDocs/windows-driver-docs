@@ -37,16 +37,45 @@ EvtMidiGetLoopedStreamingRegistersCallback
 
 ### Return Value
 
-A *KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS property request returns STATUS_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an error code that indicates a failure.
+A **KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS** property request returns STATUS_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an error code that indicates a failure.
 
 ## Remarks
 
-*KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS* a member of the [KSPROPERTY_MIDILOOPEDSTREAMING enum](ne-ksmedia-ksproperty_midiloopedstreaming.md) is called with no input data. A [KSMIDILOOPED_REGISTERS struct](ns-ksmedia-ksmidilooped_registers.md) is returned, containing pointers to the read and write positions that are mapped to the caller’s process space. 
+**KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS** is called with no input data. A [KSMIDILOOPED_REGISTERS struct](ns-ksmedia-ksmidilooped_registers.md) is returned, containing pointers to the read and write positions that are mapped to the caller’s process space. 
 
 ### Sample Code
 
+TBD - Better code sample then this test code?
+
 ```cpp
-TBD
+    HRESULT
+    LoopedRegisterCall(
+        _In_ PULONG& ReadPosition,
+        _In_ PULONG& WritePosition
+    )
+    {
+        KSPROPERTY property {0};
+        KSMIDILOOPED_REGISTERS registers {0};
+        ULONG propertySize {sizeof(property)};
+
+        property.Set    = KSPROPSETID_MidiLoopedStreaming; 
+        property.Id     = KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS;       
+        property.Flags  = KSPROPERTY_TYPE_GET;
+
+        RETURN_IF_FAILED(SyncIoctl(
+            m_Pin.get(),
+            IOCTL_KS_PROPERTY,
+            &property,
+            propertySize,
+            &registers,
+            sizeof(registers),
+            nullptr));
+
+        ReadPosition = (PULONG) registers.ReadPosition;
+        WritePosition = (PULONG) registers.WritePosition;
+
+        return S_OK;
+    }
 ```
 
 ## Requirements
@@ -64,11 +93,13 @@ TBD
 
 [**KSPROPERTY**](../stream/ksproperty-structure.md)
 
-[**KSPROPERTY_MIDILOOPEDSTREAMING enum**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming.md)
+TBD Future links:
 
-[**KSMIDILOOPED_BUFFER_PROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer_property.md)
+`[**KSPROPERTY_MIDILOOPEDSTREAMING enum**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming.md)`
 
-[**KSMIDILOOPED_BUFFER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer.md) 
+`[**KSMIDILOOPED_BUFFER_PROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer_property.md)`
 
-[**KSPROPERTY_MIDILOOPEDSTREAMING enum**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming.md)
+`[**KSMIDILOOPED_BUFFER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer.md)` 
+
+`[**KSPROPERTY_MIDILOOPEDSTREAMING enum**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming.md)`
 
