@@ -11,14 +11,14 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 02/06/2025
+ms.date: 02/07/2025
 ---
 
 
 # KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT
 
 
-The KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT property registers a user-mode event for DMA-driven event notification. Events must be registered after successfully calling [**KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER\_WITH\_NOTIFICATION**](ksproperty-rtaudio-buffer-with-notification.md).
+The KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT property registers a user-mode event for DMA-driven event notification. Events must be registered after successfully calling [**KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER_WITH_NOTIFICATION**](ksproperty-rtaudio-buffer-with-notification.md).
 
 The following table summarizes the features of this property.
 
@@ -59,7 +59,7 @@ The following table summarizes the features of this property.
         0,
         0, 
 
-The property descriptor (instance data) consists of a KSRTAUDIO\_NOTIFICATION\_EVENT\_PROPERTY structure that contains a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure along with a user-mode event handle.
+The property descriptor (instance data) consists of a KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY structure that contains a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure along with a user-mode event handle.
 
 The property value (operation data) for this property is **NULL** because no operation data is returned.
 
@@ -67,69 +67,36 @@ The property value (operation data) for this property is **NULL** because no ope
 
 A KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT property request returns STATUS_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate failure status code. The following table shows some of the possible failure status codes.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Status code</th>
-<th align="left">Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>STATUS_NOT_SUPPORTED</p></td>
-<td align="left"><p>Event notifications are not supported.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>STATUS_INSUFFICIENT_RESOURCES</p></td>
-<td align="left"><p>Memory for the buffer cannot be allocated.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>STATUS_DEVICE_NOT_READY</p></td>
-<td align="left"><p>The device is not ready.</p></td>
-</tr>
-</tbody>
-</table>
+|Status code|Meaning|
+|---------- |------ |
+|STATUS_UNSUCCESSFUL|A cyclic buffer with the specified combination of buffer attributes cannot be allocated.|
+|STATUS_INSUFFICIENT_RESOURCES|Memory for the buffer cannot be allocated.|
+|STATUS_DEVICE_NOT_READY|The device is not ready|
 
- 
 
 ## Remarks
 
 This property is used to register user-mode events for DMA-driven event notification.
 
-When the pin is placed into the *run* state (KSSTATE\_RUN) the registered events are signaled once or twice per cycle of the cyclic audio buffer, depending on the notification count requested when KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER\_WITH\_NOTIFICATION was called. For more information about KSSTATERUN, see the [State Transitions](../stream/state-transitions.md) topic.
+When the pin is placed into the *run* state (KSSTATE_RUN) the registered events are signaled once or twice per cycle of the cyclic audio buffer, depending on the notification count requested when KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER_WITH_NOTIFICATION was called. For more information about KSSTATERUN, see the [State Transitions](../stream/state-transitions.md) topic.
 
-After you stop the pin, and prior to the time when you close it, each registered event is unregistered via a call to [**KSPROPERTY\_RTAUDIO\_UNREGISTER\_NOTIFICATION\_EVENT**](ksproperty-rtaudio-unregister-notification-event.md).
+After you stop the pin, and prior to the time when you close it, each registered event is unregistered via a call to [**KSPROPERTY_RTAUDIO_UNREGISTER_NOTIFICATION_EVENT**](ksproperty-rtaudio-unregister-notification-event.md).
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows Vista and later Windows operating systems.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Ksmedia.h</td>
-</tr>
-</tbody>
-</table>
+## Requirements
+
+|Item   | Description|
+|------ |----------- |
+|Version|Available in Windows 27788 (TDB) and later Windows operating systems.|
+|Header |Ksmedia.h|
 
 ## See also
 
+[**KSPROPERTY\_MIDILOOPEDSTREAMING\_BUFFER**](ksproperty-midiloopedstreaming-buffer.md)
+
+[**KSPROPERTY\_MIDILOOPEDSTREAMING\_REGISTERS**](ksproperty-midiloopedstreaming-registers.md)
 
 [**KSPROPERTY**](../stream/ksproperty-structure.md)
-
-[**KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER\_WITH\_NOTIFICATION**](ksproperty-rtaudio-buffer-with-notification.md)
-
-[**KSPROPERTY\_RTAUDIO\_UNREGISTER\_NOTIFICATION\_EVENT**](ksproperty-rtaudio-unregister-notification-event.md)
 
 [State Transitions](../stream/state-transitions.md)

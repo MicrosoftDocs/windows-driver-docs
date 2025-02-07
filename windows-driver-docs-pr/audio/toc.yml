@@ -978,6 +978,17 @@
       href: kspropsetid-itd3d.md
     - name: "KSPROPSETID_Jack"
       href: kspropsetid-jack.md
+    - name: "KSPROPSETID_MidiLoopedStreaming"
+# Auto-expanded node
+      items: 
+      - name: "KSPROPSETID_MidiLoopedStreaming"
+        href: kspropsetid-midiloopedstreaming
+      - name: "KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER"
+        href: ksproperty-midiloopedstreaming-buffer.md
+      - name: "KSPROPERTY_MIDILOOPEDSTREAMING_REGISTER"
+        href: ksproperty-midiloopedstreaming-registers.md
+      - name: "KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT"
+        href: ksproperty-midiloopedstreaming-notification-event.md
     - name: "KSPROPSETID_RTAudio"
       href: kspropsetid-rtaudio.md
     - name: "KSPROPSETID_SoundDetector"

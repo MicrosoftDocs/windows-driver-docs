@@ -15,10 +15,10 @@ ms.date: 03/06/2023
 ---
 
 
-# *KSPROPERTY\_MIDILOOPEDSTREAMING\_REGISTERS
+# *KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS
 
 
-The *KSPROPERTY\_MIDILOOPEDSTREAMING\_REGISTERS property .
+The *KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS property .
 
 The following table summarizes the features of this property.
 
@@ -61,13 +61,13 @@ The following table summarizes the features of this property.
         0,
         sizeof(KSMIDILOOPED_REGISTERS)
 
-The property descriptor (instance data) consists of a KSRTAUDIO\_HWREGISTER\_PROPERTY structure that contains a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure. Before sending the request, the client loads the KSRTAUDIO\_HWREGISTER\_PROPERTY structure with values that indicate the preferred base address for the clock register.
+The property descriptor (instance data) consists of a KSRTAUDIO_HWREGISTER_PROPERTY structure that contains a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure. Before sending the request, the client loads the KSRTAUDIO_HWREGISTER_PROPERTY structure with values that indicate the preferred base address for the clock register.
 
-The property value (operation data) is a pointer to a KSRTAUDIO\_HWREGISTER structure into which the property handler writes the register address and the register-update frequency. This register address is the user-mode or kernel-mode virtual address into which the hardware register is mapped. The client can directly read the register from this address.
+The property value (operation data) is a pointer to a KSRTAUDIO_HWREGISTER structure into which the property handler writes the register address and the register-update frequency. This register address is the user-mode or kernel-mode virtual address into which the hardware register is mapped. The client can directly read the register from this address.
 
 ### Return Value
 
-A *KSPROPERTY\_MIDILOOPEDSTREAMING\_REGISTERS property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an error code that indicates a failure.
+A *KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS property request returns STATUS_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an error code that indicates a failure.
 
 ## Remarks
 
@@ -79,30 +79,20 @@ The property request fails if the audio hardware does not support a clock regist
 
 The mapping of the clock register is destroyed when the pin closes. The client can map the register only once in the lifetime of a pin instance, and any subsequent call to map the clock register again for that instance fails.
 
-It is typically faster to read a clock register than it is to send a [**KSPROPERTY\_CLOCK\_TIME**](../stream/ksproperty-clock-time.md) request, which requires transitions between user-mode and kernel-mode for user-mode clients.
+It is typically faster to read a clock register than it is to send a [**KSPROPERTY_CLOCK_TIME**](../stream/ksproperty-clock-time.md) request, which requires transitions between user-mode and kernel-mode for user-mode clients.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows TBD and later Windows operating systems.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Ksmedia.h</td>
-</tr>
-</tbody>
-</table>
+|Item   | Description|
+|------ |----------- |
+|Version|Available in Windows 27788 (TDB) and later Windows operating systems.|
+|Header |Ksmedia.h|
 
 ## See also
 
+[**KSPROPERTY\_MIDILOOPEDSTREAMING\_BUFFER**](ksproperty-midiloopedstreaming-buffer.md)
 
-[**KSRTAUDIO\_HWREGISTER\_PROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwregister_property)
+[**KSPROPERTY\_MIDILOOPEDSTREAMING\_NOTIFICATION\_EVENT**](ksproperty-midiloopedstreaming-notification-event.md)
 
-[**KSRTAUDIO\_HWREGISTER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwregister)
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
+
