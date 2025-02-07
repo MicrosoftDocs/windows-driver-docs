@@ -18,48 +18,25 @@ ms.date: 02/07/2025
 # KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT
 
 
-The KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT property registers a user-mode event for DMA-driven event notification. Events must be registered after successfully calling [**KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER_WITH_NOTIFICATION**](ksproperty-rtaudio-buffer-with-notification.md).
+The KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT property registers a caller created event handle in a [KSMIDILOOPED_EVENT struct](/windows-hardware/drivers/ddi/ns-ksmedia-ksmidilooped_event.md). The driver adds a reference to the handle for that event and stores it.
 
 The following table summarizes the features of this property.
 
 ### Usage Summary Table
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Get</th>
-<th align="left">Set</th>
-<th align="left">Target</th>
-<th align="left">Property descriptor type</th>
-<th align="left">Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property" data-raw-source="[&lt;strong&gt;KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property)"><strong>KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY</strong></a></p></td>
-<td align="left"><p><strong>NULL</strong></p></td>
-</tr>
-</tbody>
-</table>
+|Get |Set|Target|Property descriptor type    |Property value type|
+|--- |--- |--- |---------------------------- |------------------ |
+|Yes |Yes |Pin |[KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property) TBD ????| NULL TBD ???|
 
-        &KSPROPSETID_MidiLoopedStreaming,
-        KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT,
-        ACX_PROPERTY_ITEM_FLAG_SET,
-        EvtMidiSetLoopedStreamingNotificationEventCallback,
-        0,
-        0, 
+Notes:
 
-The property descriptor (instance data) consists of a KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY structure that contains a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure along with a user-mode event handle.
+KSPROPSETID_MidiLoopedStreaming,
+
+KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT,
+
+ACX_PROPERTY_ITEM_FLAG_SET,
+
+EvtMidiSetLoopedStreamingNotificationEventCallback,
 
 The property value (operation data) for this property is **NULL** because no operation data is returned.
 
@@ -76,13 +53,15 @@ A KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT property request returns STA
 
 ## Remarks
 
-This property is used to register user-mode events for DMA-driven event notification.
+TBD
 
-When the pin is placed into the *run* state (KSSTATE_RUN) the registered events are signaled once or twice per cycle of the cyclic audio buffer, depending on the notification count requested when KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER_WITH_NOTIFICATION was called. For more information about KSSTATERUN, see the [State Transitions](../stream/state-transitions.md) topic.
+*KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT*, a member of the [KSPROPERTY_MIDILOOPEDSTREAMING enum](ne-ksmedia-ksproperty_midiloopedstreaming.md) takes in a caller created event handle in a [KSMIDILOOPED_EVENT struct](ns-ksmedia-ksmidilooped_event.md). The driver adds a reference to the handle for that event and stores it. 
 
-After you stop the pin, and prior to the time when you close it, each registered event is unregistered via a call to [**KSPROPERTY_RTAUDIO_UNREGISTER_NOTIFICATION_EVENT**](ksproperty-rtaudio-unregister-notification-event.md).
+### Sample Code
 
-## Requirements
+```cpp
+TBD
+```
 
 ## Requirements
 
@@ -99,4 +78,10 @@ After you stop the pin, and prior to the time when you close it, each registered
 
 [**KSPROPERTY**](../stream/ksproperty-structure.md)
 
-[State Transitions](../stream/state-transitions.md)
+[**KSPROPERTY_MIDILOOPEDSTREAMING enum**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming.md)
+
+[**KSMIDILOOPED_BUFFER_PROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer_property.md)
+
+[**KSMIDILOOPED_BUFFER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer.md) 
+
+[**KSPROPERTY_MIDILOOPEDSTREAMING enum**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming.md)

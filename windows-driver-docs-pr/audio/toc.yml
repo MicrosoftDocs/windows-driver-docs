@@ -982,7 +982,7 @@
 # Auto-expanded node
       items: 
       - name: "KSPROPSETID_MidiLoopedStreaming"
-        href: kspropsetid-midiloopedstreaming
+        href: kspropsetid-midiloopedstreaming.md
       - name: "KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER"
         href: ksproperty-midiloopedstreaming-buffer.md
       - name: "KSPROPERTY_MIDILOOPEDSTREAMING_REGISTER"
