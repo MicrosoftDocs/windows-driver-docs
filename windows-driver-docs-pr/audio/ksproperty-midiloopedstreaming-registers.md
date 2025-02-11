@@ -41,7 +41,7 @@ A **KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS** property request returns STATUS_S
 
 ## Remarks
 
-**KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS** is called with no input data. A [KSMIDILOOPED_REGISTERS struct](ns-ksmedia-ksmidilooped_registers.md) is returned, containing pointers to the read and write positions that are mapped to the caller’s process space. 
+**KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS** is called with no input data. A `[KSMIDILOOPED_REGISTERS struct](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_registers.md)` is returned, containing pointers to the read and write positions that are mapped to the caller’s process space. 
 
 ### Sample Code
 

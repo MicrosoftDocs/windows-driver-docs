@@ -1,7 +1,7 @@
 ---
 title: KSPROPSETID_MIDILOOPEDSTREAMING
 description: KSPROPSETID_MIDILOOPEDSTREAMING
-ms.date: 02/07/2025
+ms.date: 02/10/2025
 ms.topic: reference
 ---
 

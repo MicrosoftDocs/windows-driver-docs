@@ -52,7 +52,7 @@ A **KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER** property request returns STATUS_SUCC
 
 ## Remarks
 
-**KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER**, is called with a [KSMIDILOOPED_BUFFER_PROPERTY](ns-ksmedia-ksmidilooped_buffer_property.md), containing the requested buffer size. A [KSMIDILOOPED_BUFFER](ns-ksmedia-ksmidilooped_buffer.md) is returned, containing the allocated buffer, mapped to the caller process space, along with the actual buffer size. 
+**KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER**, is called with a `[KSMIDILOOPED_BUFFER_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer_property.md)`, containing the requested buffer size. A `[KSMIDILOOPED_BUFFER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer.md)` is returned, containing the allocated buffer, mapped to the caller process space, along with the actual buffer size. 
 
 The buffer is double mapped (the physical memory is mapped to the virtual address space twice, back to back) to simplify the read and write operations. This enables a read or write of up to one buffer size past the end of the primary buffer to loop back to the same physical memory that is mapped to the start of the primary buffer, without the need to perform address calculations. 
 
@@ -62,7 +62,7 @@ This same buffer transfer mechanism is also used for moving messages between the
 
 TBD - OK to have the next text here, or perhaps move to KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS?
 
-[KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS](ksproperty-midiloopedstreaming-registers.md) is called with no input data. A [KSMIDILOOPED_REGISTERS struct](ns-ksmedia-ksmidilooped_registers.md) is returned, containing pointers to the read and write positions that are mapped to the caller’s process space. 
+[KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS](ksproperty-midiloopedstreaming-registers.md) is called with no input data. A `[KSMIDILOOPED_REGISTERS struct](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_registers.md)` is returned, containing pointers to the read and write positions that are mapped to the caller’s process space. 
 
 Only one pin handle is permitted be opened at a time, which is the same requirement that the MIDI version 1 driver and many other KS/ACX drivers have. Only the process which holds the open pin may allocate the shared memory buffer. 
 

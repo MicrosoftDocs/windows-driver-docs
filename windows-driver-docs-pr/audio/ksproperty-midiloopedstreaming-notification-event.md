@@ -11,12 +11,12 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 02/07/2025
+ms.date: 02/10/2025
 ---
 
 # KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT
 
-The **KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT** property registers a caller created event handle in a [KSMIDILOOPED_EVENT struct](/windows-hardware/drivers/ddi/ns-ksmedia-ksmidilooped_event.md). The driver adds a reference to the handle for that event and stores it.
+The **KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT** property registers a caller created event handle in a `[KSMIDILOOPED_EVENT struct](/windows-hardware/drivers/ddi/ns-ksmedia-ksmidilooped_event.md)`. The driver adds a reference to the handle for that event and stores it.
 
 The following table summarizes the features of this property.
 
@@ -24,7 +24,7 @@ The following table summarizes the features of this property.
 
 |Get |Set|Target|Property descriptor type    |Property value type|
 |--- |--- |--- |---------------------------- |------------------ |
-|Yes |Yes |Pin |[KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property)TBD ????| NULL TBD ???|
+|Yes |Yes |Pin |`[KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property)`TBD ????| NULL TBD ???|
 
 Notes:
 
@@ -36,7 +36,7 @@ ACX_PROPERTY_ITEM_FLAG_SET,
 
 EvtMidiSetLoopedStreamingNotificationEventCallback,
 
-The property value (operation data) for this property is **NULL** because no operation data is returned.
+TBD -The property value (operation data) for this property is **NULL** because no operation data is returned. 
 
 ### Return Value
 
@@ -51,7 +51,7 @@ A **KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT** property request returns
 
 ## Remarks
 
-**KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT** takes in a caller created event handle in a [KSMIDILOOPED_EVENT struct](ns-ksmedia-ksmidilooped_event.md). The driver adds a reference to the handle for that event and stores it. 
+**KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT** takes in a caller created event handle in a `[KSMIDILOOPED_EVENT struct](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_event.md)`. The driver adds a reference to the handle for that event and stores it. 
 
 ### Sample Code
 
