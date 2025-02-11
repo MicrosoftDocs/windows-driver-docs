@@ -11,7 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 02/07/2025
+ms.date: 02/10/2025
 ---
 
 # KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER
