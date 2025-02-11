@@ -1,6 +1,6 @@
 ---
 title: KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER
-description: The KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER property specifies a driver-allocated cyclic buffer for audio data.The following table summarizes the features of this property.
+description: The KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER property specifies a driver-allocated cyclic buffer for audio data.
 keywords: ["KSPROPERTY_RTAUDIO_BUFFER Audio Devices"]
 topic_type:
 - apiref
@@ -23,12 +23,11 @@ The following table summarizes the features of this property.
 ### Usage Summary Table
 
 
-|Get |Set|Target|Property descriptor type    |Property value type|
-|--- |--- |--- |---------------------------- |------------------ |
+|Get |Set|Target|Property descriptor type        |Property value type|
+|--- |--- |--- |-------------------------------- |------------------ |
 |Yes |No  |Pin |KSRTAUDIO_BUFFER_PROPERTYTBD ????|KSRTAUDIO_BUFFER  TBD ???|
 
-
-Code snip notes:
+Internal Code snip notes:
 
 ```cpp
 &KSPROPSETID_MidiLoopedStreaming,
@@ -45,10 +44,12 @@ sizeof(KSMIDILOOPED_BUFFER),
 A **KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER** property request returns STATUS_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate failure status code. The following table shows some of the possible failure status codes.
 
 |Status code|Meaning|
-|--- |--- |
+|---------- |------ |
 |STATUS_UNSUCCESSFUL|A cyclic buffer with the specified combination of buffer attributes cannot be allocated.|
 |STATUS_INSUFFICIENT_RESOURCES|Memory for the buffer cannot be allocated.|
 |STATUS_DEVICE_NOT_READY|The device is not ready|
+
+TBD - Correct?
 
 ## Remarks
 
@@ -71,6 +72,8 @@ The shared memory buffer is allocated and controlled by the audio driver, and th
 ### Sample Code
 
 TBD - Better code sample to show here? Update code comment on property.RequestedBufferSize?
+
+TBD - OK to remove TBD in code comment?
 
 ```cpp
 _Use_decl_annotations_

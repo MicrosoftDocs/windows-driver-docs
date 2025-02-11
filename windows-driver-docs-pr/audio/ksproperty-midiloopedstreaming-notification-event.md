@@ -26,7 +26,7 @@ The following table summarizes the features of this property.
 |--- |--- |--- |---------------------------- |------------------ |
 |Yes |Yes |Pin |`[KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property)`TBD ????| NULL TBD ???|
 
-Notes:
+Internal code snip notes:
 
 KSPROPSETID_MidiLoopedStreaming,
 
@@ -90,10 +90,10 @@ TBD - Better code sample then this test code?
 
 ## Requirements
 
-|Item   | Description|
-|------ |----------- |
-|Version|Available in Windows 27788 (TDB) and later Windows operating systems.|
-|Header |Ksmedia.h|
+| Item   | Description|
+|------- |----------- |
+| Version| Available in Windows 27788 (TDB) and later Windows operating systems.|
+| Header | Ksmedia.h  |
 
 ## See also
 

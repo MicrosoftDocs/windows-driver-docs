@@ -11,9 +11,8 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 02/07/2023
+ms.date: 02/10/2023
 ---
-
 
 # KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS
 
@@ -23,17 +22,15 @@ The following table summarizes the features of this property.
 
 ### Usage Summary Table
 
-
 |Get |Set|Target|Property descriptor type    |Property value type|
 |--- |--- |--- |---------------------------- |------------------ |
 |Yes |No  |Pin |KSRTAUDIO_HWREGISTER_PROPERTY TBD ????|KSRTAUDIO_HWREGISTER  TBD ???|
 
-Notes: 
+Internal code snip notes:
 
 ACX_PROPERTY_ITEM_FLAG_GET
 
 EvtMidiGetLoopedStreamingRegistersCallback
-
 
 ### Return Value
 
@@ -80,10 +77,10 @@ TBD - Better code sample then this test code?
 
 ## Requirements
 
-|Item   | Description|
-|------ |----------- |
-|Version|Available in Windows 27788 (TDB) and later Windows operating systems.|
-|Header |Ksmedia.h|
+| Item   | Description|
+|------- |----------- |
+| Version| Available in Windows 27788 (TDB) and later Windows operating systems.|
+| Header | Ksmedia.h  |
 
 ## See also
 
@@ -102,4 +99,3 @@ TBD Future links:
 `[**KSMIDILOOPED_BUFFER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer.md)` 
 
 `[**KSPROPERTY_MIDILOOPEDSTREAMING enum**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming.md)`
-
