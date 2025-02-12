@@ -11,12 +11,12 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 02/10/2025
+ms.date: 02/12/2025
 ---
 
 # KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER
 
-The **KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER** property specifies a driver-allocated cyclic buffer for audio data.
+The **KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER** property specifies a cyclic( TBD?) buffer for MIDI data.
 
 The following table summarizes the features of this property.
 
@@ -25,9 +25,9 @@ The following table summarizes the features of this property.
 
 |Get |Set|Target|Property descriptor type        |Property value type|
 |--- |--- |--- |-------------------------------- |------------------ |
-|Yes |No  |Pin |KSRTAUDIO_BUFFER_PROPERTYTBD ????|KSRTAUDIO_BUFFER  TBD ???|
+|Yes |No  |Pin |KSRTAUDIO_BUFFER_PROPERTY TBD ????|KSRTAUDIO_BUFFER  TBD ???|
 
-Internal Code snip notes:
+Internal code snip notes:
 
 ```cpp
 &KSPROPSETID_MidiLoopedStreaming,
@@ -61,19 +61,16 @@ MIDI messages are read or written to the buffer one at a time, so the maximum si
 
 This same buffer transfer mechanism is also used for moving messages between the MIDI service and client applications, using a shared library implementation of the reader and writer. 
 
-TBD - OK to have the next text here, or perhaps move to KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS?
-
-[KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS](ksproperty-midiloopedstreaming-registers.md) is called with no input data. A `[KSMIDILOOPED_REGISTERS struct](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_registers.md)` is returned, containing pointers to the read and write positions that are mapped to the caller’s process space. 
-
 Only one pin handle is permitted be opened at a time, which is the same requirement that the MIDI version 1 driver and many other KS/ACX drivers have. Only the process which holds the open pin may allocate the shared memory buffer. 
 
 The shared memory buffer is allocated and controlled by the audio driver, and the allocations are performed at page boundaries to prevent unintentional kernel memory exposure. If the pin handle is closed, or the calling process exits, the worker threads are shut down and the allocated buffers freed by the driver. 
 
 ### Sample Code
 
-TBD - Better code sample to show here? Update code comment on property.RequestedBufferSize?
+TBD - Better code sample to show here? 
 
-TBD - OK to remove TBD in code comment?
+Update "TBD" code comment on property.RequestedBufferSize?
+
 
 ```cpp
 _Use_decl_annotations_
@@ -112,10 +109,10 @@ KSMidiDevice::ConfigureLoopedBuffer(ULONG& bufferSize
 
 ## Requirements
 
-|Item   | Description|
-|------ |----------- |
-|Version|Available in Windows 27788 (TDB) and later Windows operating systems.|
-|Header |Ksmedia.h|
+| Item   | Description|
+|------- |----------- |
+| Version| Available in Windows 27788 (TDB) and later Windows operating systems.|
+| Header | Ksmedia.h  |
 
 ## See also
 

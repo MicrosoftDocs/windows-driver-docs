@@ -1,6 +1,6 @@
 ---
 title: KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT
-description: The KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT property registers a user-mode event for DMA-driven event notification.
+description: The KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT property registers a reference to the handle for the MIDILOOPED streaming event and stores it.
 keywords: ["KSPROPERTY_RTAUDIO_REGISTER_NOTIFICATION_EVENT Audio Devices"]
 topic_type:
 - apiref
@@ -11,7 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 02/10/2025
+ms.date: 02/12/2025
 ---
 
 # KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT

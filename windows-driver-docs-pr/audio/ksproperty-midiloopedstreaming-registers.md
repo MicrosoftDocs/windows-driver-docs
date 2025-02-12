@@ -11,7 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 02/10/2023
+ms.date: 02/12/2023
 ---
 
 # KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS
@@ -27,8 +27,6 @@ The following table summarizes the features of this property.
 |Yes |No  |Pin |KSRTAUDIO_HWREGISTER_PROPERTY TBD ????|KSRTAUDIO_HWREGISTER  TBD ???|
 
 Internal code snip notes:
-
-ACX_PROPERTY_ITEM_FLAG_GET
 
 EvtMidiGetLoopedStreamingRegistersCallback
 
