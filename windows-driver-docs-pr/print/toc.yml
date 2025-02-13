@@ -2,8 +2,6 @@
   href: index.md
 - name: End of servicing plan for third-party printer drivers on Windows
   href: end-of-servicing-plan-for-third-party-printer-drivers-on-windows.md
-- name: "Windows protected print mode FAQ"
-  href: windows-protected-mode-faq.md
 - name: "Windows protected print mode for enterprises and developers"
   href: windows-protected-print-mode-for-enterprises-and-developers.md
 - name: "More information on Windows protected print mode for enterprises"

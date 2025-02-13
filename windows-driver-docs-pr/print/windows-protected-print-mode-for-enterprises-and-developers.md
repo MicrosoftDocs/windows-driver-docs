@@ -71,7 +71,3 @@ Value: <enabled/>
 ```
 
 To find more information on customizing settings via Intune, see [Add custom settings for Windows 10/11 devices in Microsoft Intune.](/mem/intune/configuration/custom-settings-windows-10)
-
-## FAQ
-
-See FAQs at [Windows protected print mode FAQ.](windows-protected-mode-faq.md)
