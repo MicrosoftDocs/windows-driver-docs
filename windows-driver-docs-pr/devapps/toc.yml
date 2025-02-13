@@ -84,6 +84,8 @@
   href: UWP-device-apps-for-specialized-devices.md
 - name: "Automatic installation for UWP device apps"
   href: auto-install-for-UWP-device-apps.md
+- name: "Register an OEM application during the imaging process"
+  href: register-an-oem-application-during-the-imaging-process.md
 - name: "Hardware Support App (HSA): Steps for Driver Developers"
   href: hardware-support-app--hsa--steps-for-driver-developers.md
 - name: "Hardware Support App (HSA): Steps for App Developers"

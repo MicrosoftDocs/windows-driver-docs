@@ -1,7 +1,7 @@
 ---
 title: UWP Device Apps
 description: UWP device apps are device companions, have capabilities beyond regular UWP apps, and perform privileged operations, such as firmware updates.
-ms.date: 01/10/2025
+ms.date: 02/12/2025
 ---
 
 # UWP device apps
@@ -30,5 +30,6 @@ If you're looking for information about UWP mobile broadband apps, see [Mobile B
 | [UWP device apps for cameras](uwp-device-apps-for-webcams.md) | This section introduces UWP device apps for cameras. |
 | [UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md) | This topic introduces the ways that UWP device apps can access internal devices. |
 | [Automatic installation for UWP device apps](auto-install-for-uwp-device-apps.md) | This topic describes how automatic installation works and how the app, metadata, and drivers can be updated and uninstalled. |
+| [Register an OEM application during the imaging process](register-an-oem-application-during-the-imaging-process.md) | Provides information on registering an OEM application during the imaging process via the Universal Orchestrator framework. |
 | [Hardware Support App (HSA): Steps for Driver Developers](hardware-support-app--hsa--steps-for-driver-developers.md) | This topic provides steps for a driver developer to associate a driver with a Universal Windows Platform (UWP) app. |
 | [Hardware Support App (HSA): Steps for App Developers](hardware-support-app--hsa--steps-for-app-developers.md) | This topic provides steps for an app developer to associate a Universal Windows Platform (UWP) app with a Universal Windows driver. |
