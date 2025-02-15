@@ -8043,6 +8043,11 @@
         "redirect_document_id": false
     },
     {
+        "source_path": "windows-driver-docs-pr/ifs/fsctl-lmr-query-info.md",
+        "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/ni-ntifs-fsctl_lmr_query_info",
+        "redirect_document_id": false
+    },
+    {
         "source_path": "windows-driver-docs-pr/ifs/oplock-semantics.md",
         "redirect_url": "/windows-hardware/drivers/ifs/oplock-overview",
         "redirect_document_id": false
