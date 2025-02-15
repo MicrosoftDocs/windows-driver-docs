@@ -3,6 +3,7 @@ title: GPU paravirtualization
 description: Describes GPU para-virtualization and the related DDI changes.
 keywords:
 - WDDM , GPU , paravirtualization
+- virtualization, GPU, Windows
 - WDDM , GPUP , GPU-PV
 ms.date: 02/06/2025
 ---
@@ -110,7 +111,7 @@ When you launch a VM or container, the operating system creates the following pr
 * VM worker process (*vmwp.exe*)
 * VM memory process (*vmmem.exe*)
 
-*Vmwp* holds various virtual device drivers, including *vrdumed.dll*, the driver for paravirtualized graphics adapters.
+*Vmwp* holds various virtual device drivers, including *vrdumed.dll* (virtual render device user-mode emulator DLL), which is the driver for paravirtualized graphics adapters.
 
 The *vmmem* process virtual address space serves as backing for the IO space of the vGPU in the guest. When the guest accesses the IO space, the resulting physical address is the entry to the second level translation, which uses the page tables of the *vmmem* process.
 
