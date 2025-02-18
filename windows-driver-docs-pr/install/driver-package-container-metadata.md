@@ -152,6 +152,6 @@ SoftwareID = pfn://CustomPrinterControlAppId
 
 [Strings]
 Device.ExtensionDesc = "Container Property Extension"
-ModelName = "HP ENVY 4500 series"
-Manufacturer = "HP"
+ModelName = "Custom Printer"
+Manufacturer = "Custom Manufacturer"
 ```
