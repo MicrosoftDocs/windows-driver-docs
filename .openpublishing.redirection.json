@@ -22040,6 +22040,16 @@
       "source_path":  "windows-driver-docs-pr/print/windows-protected-mode-faq.md",
       "redirect_URL":  "https://support.microsoft.com/windows/4f59fa38-3419-41c7-a6a7-8ca4e21f70bc",
       "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/print/windows-protected-print-mode-for-enterprises-and-developers.md",
+      "redirect_URL":  "https://support.microsoft.com/windows/4f59fa38-3419-41c7-a6a7-8ca4e21f70bc",
+      "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/print/more-information-on-windows-protected-print-mode-for-enterprises.md",
+      "redirect_URL":  "https://support.microsoft.com/windows/4f59fa38-3419-41c7-a6a7-8ca4e21f70bc",
+      "redirect_document_id":  false
     }
   ]
 }
