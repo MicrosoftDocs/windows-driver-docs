@@ -20,7 +20,7 @@ Driver package container metadata is supported starting in Windows 11 24H2 2D re
 
 # Using Base INF or Extension INF
 
-Driver package container metadata is specified by [INF AddReg Directive](inf-addreg-directive.md) within the driver package [INF file](overview-of-inf-files.md). Our recommendations for which INF file to use for container metadata are as follows:
+Driver package container metadata is specified by [INF AddProperty directive](inf-addproperty-directive.md) within the driver package [INF file](overview-of-inf-files.md). Our recommendations for which INF file to use for container metadata are as follows:
 1. If OEMs/IHVs already have a driver package with the base INF for their physical device, it is recommended to update the base INF to include the container metadata.
 2. If OEMs/IHVs do not have a driver package with the base INF for their physical device, creating a driver package with extension INF is recommended. Compared to a base INF, extension INF is the lighter weight way of including the container metadata.
 
