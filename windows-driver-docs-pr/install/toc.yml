@@ -456,6 +456,8 @@
       items:
       - name: Container ID
         href: container-ids.md
+      - name: Driver Package Container Metadata
+        href: driver-package-container-metadata.md
       - name: Overview of Container IDs
         href: overview-of-container-ids.md
       - name: How Container IDs are Generated
