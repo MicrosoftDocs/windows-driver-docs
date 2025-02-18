@@ -57,7 +57,7 @@ Aggregator_SendModuleCommand(
 
     *OutSize = 0;
 
-    moduleProperty = CONTAINING_RECORD(Params.Parameters.Property.Control, KSAUDIOMODULE_PROPERTY, ClassId);;
+    moduleProperty = CONTAINING_RECORD(Params.Parameters.Property.Control, KSAUDIOMODULE_PROPERTY, ClassId);
     aggregationDeviceIndex = AUDIOMODULE_GET_AGGDEVICEID(moduleProperty->InstanceId);
 
     ple = CircuitCtx->AggregatorCircuit->AggregatorEndpoint->AudioPaths[aggregationDeviceIndex]->TargetCircuitList.Flink;

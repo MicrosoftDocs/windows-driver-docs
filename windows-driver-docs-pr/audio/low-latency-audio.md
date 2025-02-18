@@ -326,7 +326,7 @@ int _tmain(int argc, _TCHAR* argv[])
        HANDLE signalEvent;
        LONG Priority = 1;
        IRtwqAsyncResult *pAsyncResult = NULL;
-       RTWQWORKITEM_KEY workItemKey = NULL;;
+       RTWQWORKITEM_KEY workItemKey = NULL;
        IRtwqAsyncCallback *callback = NULL;
        IUnknown *appObject = NULL;
        IUnknown *appState = NULL;

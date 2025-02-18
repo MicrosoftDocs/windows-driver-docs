@@ -62,7 +62,7 @@ NTSTATUS IoRoutine(WDFDEVICE Device, BOOLEAN ReadOperation)
     WDFIOTARGET IoTarget;
     XYZ_DEVICE_CONTEXT *DeviceExtension;
     UNICODE_STRING ReadString;
-    WCHAR ReadStringBuffer[100];;
+    WCHAR ReadStringBuffer[100];
     BOOL DesiredAccess;
     NTSTATUS Status;
     WDF_OBJECT_ATTRIBUTES ObjectAttributes;
@@ -188,6 +188,3 @@ In the preceding code example, `Data` is a pointer to a data buffer, `Size` is t
 For more information about **IOCTL\_GPIO\_READ\_PINS** requests, including the mapping of data input pins to the bits in the request output buffer, see [**IOCTL\_GPIO\_READ\_PINS**](/windows-hardware/drivers/ddi/gpio/ni-gpio-ioctl_gpio_read_pins). For more information about **IOCTL\_GPIO\_WRITE\_PINS** requests, including the mapping of the bits in the request input buffer to data output pins, see [**IOCTL\_GPIO\_WRITE\_PINS**](/windows-hardware/drivers/ddi/gpio/ni-gpio-ioctl_gpio_write_pins).
 
 For a sample driver that shows how to write a GPIO peripheral driver that runs in kernel mode, see the SimDevice sample driver in the [GPIO sample drivers](https://go.microsoft.com/fwlink/p/?LinkId=616032) collection on GitHub.
-
- 
-
