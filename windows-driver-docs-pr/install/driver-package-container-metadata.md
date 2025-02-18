@@ -82,3 +82,76 @@ The rankings of those devnodes for each container metadata are as follows:
 | 4    | Discrete-Property Devnode| Discrete-Property Devnode| Discrete-Property Devnode| Discrete-Property Devnode|
 
 Note: for ContainerCategories, the value is an aggregation of property values from all devnodes according to the rankings listed above. For other container metadata, values are sourced from a single devnode.
+
+# Examples
+
+The following example shows how container metadata is supplied to the computer container by targeting to the OEM computer device:
+
+```
+[Standard.NTamd64]
+%Device.ExtensionDesc% = DeviceInstall, Computer\{417c41d7-1d11-5b78-ab26-00b745dfac94}
+%Device.ExtensionDesc% = DeviceInstall, Computer\{70127e8f-991f-505a-b966-fc08b6f74f94}
+%Device.ExtensionDesc% = DeviceInstall, Computer\{ff26d547-8d7f-5069-bbcb-0c50756b691a}
+%Device.ExtensionDesc% = DeviceInstall, Computer\{770bbdbb-bbf5-5d39-ae1a-25f41b7bbcfd}
+
+[DeviceInstall]
+AddProperty = ComputerMetadata_Properties
+
+[ComputerMetadata_Properties]
+ContainerModelName,,,, %ModelName%
+ContainerManufacturer,,,, %Manufacturer%
+ContainerCategories,,,, Computer.Tablet
+ContainerIcon,,,, %13%\CustomComputer.ico
+
+[Strings]
+Device.ExtensionDesc = "Custom Computer Metadata Extension"
+ModelName = "Custom Computer"
+Manufacturer = "Custom Manufacturer"
+
+; en-us
+[Strings.0409]
+Device.ExtensionDesc = "Custom Computer Metadata Extension"
+ModelName = "Custom Computer"
+Manufacturer = "Custom Manufacturer"
+
+; zh-cn
+[Strings.0804]
+Device.ExtensionDesc = "Custom Computer Metadata Extension"
+ModelName = "自定义电脑型号"
+Manufacturer = "自定义制造商"
+```
+
+The following example shows how container metadata is supplied to a multi-function printer, along with Print Support App association:
+
+```
+[Standard.NTamd64]
+%Device.ExtensionDesc% = DeviceInstall, MF\CustomPrinter&WSD&IP_PRINT
+%Device.ExtensionDesc% = DeviceInstall, WSDPRINT\CustomPrinter
+%Device.ExtensionDesc% = DeviceInstall, USBPRINT\CustomPrinter
+%Device.ExtensionDesc% = DeviceInstall, CustomPrinter
+
+[DeviceInstall]
+AddProperty = Container_Metadata_Properties
+AddProperty = PSA_Association_Property
+
+[Container_Metadata_Properties]
+ContainerModelName,,,, %ModelName%
+ContainerManufacturer,,,, %Manufacturer%
+ContainerCategories,,,, PrintFax.Printer, Imaging.Scanner
+ContainerIcon,,,, %13%\CustomPrinter.ico
+
+[PSA_Association_Property]
+{A925764B-88E0-426D-AFC5-B39768BE59EB}, 1, 0x12,, CustomPrinterAUMID
+
+[DeviceInstall.Software]
+AddSoftware = Printer Control App,, Print_SoftwareInstall
+
+[Print_SoftwareInstall]
+SoftwareType = 2
+SoftwareID = pfn://CustomPrinterControlAppId
+
+[Strings]
+Device.ExtensionDesc = "Container Property Extension"
+ModelName = "HP ENVY 4500 series"
+Manufacturer = "HP"
+```
