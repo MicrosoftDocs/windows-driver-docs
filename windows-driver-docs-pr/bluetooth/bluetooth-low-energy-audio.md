@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Low Energy (LE) Audio
 description: This article provides an overview of Bluetooth LE Audio introduced in Windows 11 version 22H2 (KB5026446).
-ms.date: 01/10/2024
+ms.date: 02/18/2025
 ---
 
 # Bluetooth Low Energy (LE) Audio
@@ -22,7 +22,7 @@ In addition to the terms defined in this table, this document also references te
 | Classic audio | Bluetooth audio streaming that uses the hands-free profile (HFP) and advanced audio distribution profile (A2DP) |
 | Audio Device | A single remote Bluetooth LE Audio device or set of Bluetooth LE Audio devices that together compose a single audio endpoint from the perspective of Windows. |
 | BAP | The [Basic Audio Profile](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/) defines how devices can distribute and consume audio using Bluetooth Low Energy (LE) communications. |
-| TMAP | The [Telephony and Media Audio Profile](https://www.bluetooth.com/specifications/tmap-1-0/) specifies interoperable configurations of the lower-level audio services and profiles. |
+| TMAP | The [Telephony and Media Audio Profile](https://www.bluetooth.com/specifications/specs/tmap-1-0/) specifies interoperable configurations of the lower-level audio services and profiles. |
 | ASCS | The [Audio Stream Control Service](https://www.bluetooth.com/specifications/specs/audio-stream-control-service/) defines a standard way for Bluetooth LE Audio devices to configure and establish unicast audio streams. |
 | PACS | The [Published Audio Capabilities Service](https://www.bluetooth.com/specifications/specs/published-audio-capabilities-service-1-0-1/) defines a standard way for Bluetooth LE Audio devices to report its supported audio codec capabilities. |
 | CIS | The Connected Isochronous Streams transport is used to send and receive unicast audio data between Bluetooth LE devices. |
