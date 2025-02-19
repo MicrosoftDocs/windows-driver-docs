@@ -197,6 +197,40 @@ Adding `NO_KDNIC` will prevent the kdnic.sys driver (a miniport timer-based driv
 
 This can help with network performance that can be affected when kdnic.sys driver is running on top of kdnet. In this situation the target will never go to sleep, preventing power drip tests, or delays will occur when accessing the target via RDP. This is because the KDNET interface needs to route both debugger packets and Windows TCP/IP network packets when kdnic.sys is running.
 
+### Automatic reset of Host USB Controller
+
+Sometimes the Host USB stack can enter a degraded state which can cause Windows to fail to enumerate the target USB debug device.
+This will lead to the debug client failing to connect to the target machine even when all settings are correctly configured.
+This problem will present itself as a "banged out" device in device manager.
+
+In IC scenarios, this issue can be worked around by manually disabling\re-enabling the parent USB controller. For some scenarios, like automated test labs, manual steps like this are not practical.
+By enabling the `RestartKdNetUsbDebugDevice` setting, the debugger client will automatically monitor for degraded USB enumeration
+capabilities and reset the appropriate USB controller when the degraded state is detected.
+This functionality is built into the debugger client application and so is only active when the debugger client is running and the setting is enabled.
+
+#### How to enable:
+
+Option 1: From the debugger prompt run the following command.
+```console
+kd> dx Debugger.Settings.Debug.Advanced.RestartKdNetUsbDebugDevice=true
+```
+WARNING: you may not be able to use the strategy to set the option if the USB debug device is already failing to enumerate as this will prevent the session from connecting to and breaking in to the target so you will never get to a functional debugger prompt.
+
+**Coming soon (spring 2025):** Option 2: From the (new) Windbg application go to "File" -> "Settings" -> "Kernel debugging settings" and click the checkbox "Enable automatic reset of host USB controller when needed." then launch as normal from the "attach to kernel" dialog.
+
+Option 3: Create (or modify existing) config.xml file to include the `RestartKdNetUsbDebugDevice` setting. The config.xml file is loaded from the same directory as the debugger client application i.e. kd.exe or (legacy) windbg.exe. If there is not one present, create a new file called config.xml with the following contents:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Settings Version="2">
+  <Namespace Name="Debug">
+    <Namespace Name="Advanced">
+      <Setting Name="RestartKdNetUsbDebugDevice" Type="VT_BOOL" Value="true"></Setting>
+    </Namespace>
+  </Namespace>
+</Settings>
+```
+If, there is a config.xml already present, then merge the `<Setting Name="RestartKdNetUsbDebugDevice" Type="VT_BOOL" Value="true"></Setting>` xml element into the `Debug.Advanced` node in the existing xml document.
+
 ## See also
 
 [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
