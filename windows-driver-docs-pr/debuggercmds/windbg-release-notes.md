@@ -231,9 +231,9 @@ When debugging a 32-bit WOW process from a 64-bit context, users can now access 
 
 `dx @$curthread.NativeStack`
 
-#### Javascript Debugging Improvements
+#### JavaScript Debugging Improvements
 
-Javascript loaded in the UI can now be directly debugged within the console using the .scriptdebug command. For more information, see [JavaScript Debugger Scripting - JavaScript Debugging](../debugger/javascript-debugger-scripting.md#javascript-debugging).
+JavaScript loaded in the UI can now be directly debugged within the console using the .scriptdebug command. For more information, see [JavaScript Debugger Scripting - JavaScript Debugging](../debugger/javascript-debugger-scripting.md#javascript-debugging).
 
 ### Accessibility improvements
 

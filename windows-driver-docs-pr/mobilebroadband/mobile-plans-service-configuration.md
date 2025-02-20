@@ -35,7 +35,7 @@ The Mobile Plans service must ingest some configuration information to support a
 2. The branding logo. Required resolution is 300x300 pixels. Image should also be full bleed with no transparency.
 3. The list of countries where your solution is supported. Please use [ISO 3166 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) to create the list (comma separated).
 4. Your MO Direct portal URI (localization is not supported). This should be an *https* address. Port numbers are not supported.
-5. A notification URI. This is the host address from where the Javascript callbacks ([callback notifications](mobile-plans-callback-notifications.md)) are going to be run. This should be an *https* address. Port numbers are not supported.
+5. A notification URI. This is the host address from where the JavaScript callbacks ([callback notifications](mobile-plans-callback-notifications.md)) are going to be run. This should be an *https* address. Port numbers are not supported.
 6. The ICCID range or ranges that you want to want to associate with *Mobile Plans*.
 
 The following image shows an example for the *standard gateway page* in the Mobile Plans app. The “A” annotation corresponds to the branding logo you submit, and the “B” annotation corresponds to the brand name.
