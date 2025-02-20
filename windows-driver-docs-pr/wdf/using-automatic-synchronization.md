@@ -17,7 +17,7 @@ keywords:
 - WdfSynchronizationScopeQueue
 - WdfSynchronizationScopeNone
 - WdfSynchronizationScopeInheritFromParent
-ms.date: 04/20/2017
+ms.date: 02/19/2025
 ---
 
 # Using Automatic Synchronization
@@ -25,13 +25,13 @@ ms.date: 04/20/2017
 
 Almost all of the code in a framework-based driver resides in event callback functions. The framework automatically synchronizes most of a driver's callback functions, as follows:
 
--   The framework always synchronizes [general device object](/windows-hardware/drivers/ddi/wdfdevice/#device-callbacks), [functional device object (FDO)](/windows-hardware/drivers/ddi/wdfdevice/#fdo-callbacks), and [physical device object (PDO)](/windows-hardware/drivers/ddi/wdfdevice/#pdo-callbacks) event callback functions with each other so that only one of the callback functions (except [*EvtDeviceSurpriseRemoval*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_surprise_removal), [*EvtDeviceQueryRemove*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_query_remove), and [*EvtDeviceQueryStop*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_query_stop)) can be called at a time for each device. These callback functions support Plug and Play (PnP) and power management events and are called at IRQL = PASSIVE\_LEVEL.
+-   The framework always synchronizes [general device object](/windows-hardware/drivers/ddi/wdfdevice/#device-callbacks), [functional device object (FDO)](/windows-hardware/drivers/ddi/wdfdevice/#fdo-callbacks), and [physical device object (PDO)](/windows-hardware/drivers/ddi/wdfdevice/#pdo-callbacks) event callback functions with each other. Only one of the callback functions can be called at a time for each device. The exception is [*EvtDeviceSurpriseRemoval*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_surprise_removal), [*EvtDeviceQueryRemove*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_query_remove), and [*EvtDeviceQueryStop*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_query_stop). These callback functions support Plug and Play (PnP) and power management events and are called at IRQL = PASSIVE\_LEVEL.
 
 -   Optionally, the framework can synchronize the execution of the callback functions that handle a driver's I/O requests, so that these callback functions run one at a time. Specifically, the framework can synchronize the callback functions for [queue](/windows-hardware/drivers/ddi/wdfio/), [interrupt](/windows-hardware/drivers/ddi/wdfinterrupt/), [deferred procedure call (DPC)](/windows-hardware/drivers/ddi/wdfdpc/), [timer](/windows-hardware/drivers/ddi/wdftimer/), [work-item](/windows-hardware/drivers/ddi/wdfworkitem/), and [file](/windows-hardware/drivers/ddi/wdffileobject/) objects, along with the request object's [*EvtRequestCancel*](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_cancel) callback function. The framework calls most of these callback functions at IRQL = DISPATCH\_LEVEL, but you can force the queue and file object callback functions to run at IRQL = PASSIVE\_LEVEL. (Work-item callback functions always run at PASSIVE\_LEVEL.)
 
-The framework implements this automatic synchronization by using a set of internal synchronization locks. The framework ensures that two or more threads cannot call the same callback function at the same time, because each thread must wait until it can acquire a synchronization lock before calling a callback function. (Optionally, drivers can also acquire these synchronization locks when necessary. For more information, see [Using Framework Locks](using-framework-locks.md).)
+The framework implements this automatic synchronization by using a set of internal synchronization locks. The framework ensures that two or more threads can't call the same callback function at the same time. Each thread must wait until it can acquire a synchronization lock before calling a callback function. (Optionally, drivers can also acquire these synchronization locks when necessary. For more information, see [Using Framework Locks](using-framework-locks.md).)
 
-Your driver should store object-specific data in [object context space](framework-object-context-space.md). If your driver uses only framework-defined interfaces, only callback functions that receive a handle to the object can access this data. If the framework is synchronizing calls to the driver's callback functions, only one callback function will be called at a time and the object's context space will be accessible to only one callback function at a time.
+Your driver should store object-specific data in [object context space](framework-object-context-space.md). If your driver uses only framework-defined interfaces, only callback functions that receive a handle to the object can access this data. If the framework is synchronizing calls to the driver's callback functions, only one callback function is called at a time. The object's context space is accessible to only one callback function at a time.
 
 Unless your driver implements [passive-level interrupt handling](supporting-passive-level-interrupts.md), code that services interrupts and accesses interrupt data must run at the device's IRQL (DIRQL) and requires additional synchronization. For more information, see [Synchronizing Interrupt Code](synchronizing-interrupt-code.md).
 
@@ -78,7 +78,7 @@ In summary, the framework's automatic synchronization capability provides the fo
 
 -   Drivers must synchronize code that services interrupts and accesses interrupt data by using the techniques that are described in [Synchronizing Interrupt Code](synchronizing-interrupt-code.md).
 
--   The framework does not synchronize a driver's other callback functions, such as the driver's [*CompletionRoutine*](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_completion_routine) callback function, or the callback functions that the I/O target object defines. Instead, the framework provides additional [locks](using-framework-locks.md) that drivers can use to synchronize these callback functions.
+-   The framework doesn't synchronize a driver's other callback functions, such as the driver's [*CompletionRoutine*](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_completion_routine) callback function, or the callback functions that the I/O target object defines. Instead, the framework provides additional [locks](using-framework-locks.md) that drivers can use to synchronize these callback functions.
 
 ### Choosing a Synchronization Scope
 
@@ -86,17 +86,17 @@ You can choose to have the framework synchronize all of the callback functions t
 
 -   Device-level synchronization
 
-    The framework synchronizes the callback functions that the previous table contains, for all of the device's I/O queues, so that they run one at a time. The framework achieves this synchronization by acquiring the device's synchronization lock before calling a callback function.
+    The framework synchronizes the callback functions for all of the device's I/O queues, so they run one at a time. The framework achieves this synchronization by acquiring the device's synchronization lock before calling a callback function.
 
 -   Queue-level synchronization
 
-    The framework synchronizes the callback functions that the previous table contains, for each individual I/O queue, so that they run one at a time. The framework achieves this synchronization by acquiring the queue's synchronization lock before calling a callback function.
+    The framework synchronizes the callback functions for each individual I/O queue, so they run one at a time. The framework achieves this synchronization by acquiring the queue's synchronization lock before calling a callback function.
 
 -   No synchronization
 
-    The framework does not synchronize the execution of the callback functions that the previous table contains and does not acquire a synchronization lock before calling the callback functions. If synchronization is required, the driver must provide it.
+    The framework doesn't synchronize the execution of the callback functions in the preceding table and doesn't acquire a synchronization lock before calling the callback functions. If synchronization is required, the driver must provide it.
 
-To specify whether you want the framework to provide device-level synchronization, queue-level synchronization, or no synchronization for your driver, you can specify a *synchronization scope* for your driver object, device objects, or queue objects. The **SynchronizationScope** member of an object's [**WDF\_OBJECT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure identifies the object's synchronization scope. The synchronization scope values that your driver can specify are:
+To specify whether you want the framework to provide device-level synchronization, queue-level synchronization, or no synchronization for your driver, specify a *synchronization scope* for your driver object, device objects, or queue objects. The **SynchronizationScope** member of an object's [**WDF\_OBJECT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure identifies the object's synchronization scope. The synchronization scope values that your driver can specify are:
 
 <a href="" id="wdfsynchronizationscopedevice"></a>**WdfSynchronizationScopeDevice**  
 The framework synchronizes by obtaining a device object's synchronization lock.
@@ -105,56 +105,48 @@ The framework synchronizes by obtaining a device object's synchronization lock.
 The framework synchronizes by obtaining a queue object's synchronization lock.
 
 <a href="" id="wdfsynchronizationscopenone"></a>**WdfSynchronizationScopeNone**  
-The framework does not synchronize and does not obtain a synchronization lock.
+The framework doesn't synchronize and doesn't obtain a synchronization lock.
 
 <a href="" id="wdfsynchronizationscopeinheritfromparent"></a>**WdfSynchronizationScopeInheritFromParent**  
 The framework obtains the object's **SynchronizationScope** value from the object's parent object.
 
-In general, we do not recommend using device-level synchronization.
+In general, we don't recommend using device-level synchronization.
 
 For more information about the synchronization scope values, see [**WDF\_SYNCHRONIZATION\_SCOPE**](/windows-hardware/drivers/ddi/wdfobject/ne-wdfobject-_wdf_synchronization_scope).
 
 The default synchronization scope for driver objects is **WdfSynchronizationScopeNone**. The default synchronization scope for device and queue objects is **WdfSynchronizationScopeInheritFromParent**.
 
-If you want the framework to provide device-level synchronization for all devices, you can use the following steps:
+To use the framework to provide device-level synchronization for all devices, set **SynchronizationScope** to **WdfSynchronizationScopeDevice** in the [**WDF\_OBJECT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure of the driver's *driver* object. Use the default **WdfSynchronizationScopeInheritFromParent** value for each *device* object.
 
-1.  Set **SynchronizationScope** to **WdfSynchronizationScopeDevice** in the [**WDF\_OBJECT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure of the driver's *driver* object.
+To provide device-level synchronization for individual devices, use the default **WdfSynchronizationScopeNone** value for the *driver* object. Set **SynchronizationScope** to **WdfSynchronizationScopeDevice** in the [**WDF\_OBJECT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure of individual *device* objects.
 
-2.  Use the default **WdfSynchronizationScopeInheritFromParent** value for each *device* object.
+If you want the framework to provide queue-level synchronization for a device, you can use the following techniques:
 
-Alternatively, to provide device-level synchronization for individual devices, you can use the following steps:
-
-1.  Use the default **WdfSynchronizationScopeNone** value for the *driver* object.
-
-2.  Set **SynchronizationScope** to **WdfSynchronizationScopeDevice** in the [**WDF\_OBJECT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure of individual *device* objects.
-
-If you want the framework to provide queue-level synchronization for a device, the following techniques are available:
-
--   For framework versions 1.9 and later, you should enable queue-level synchronization for individual queues by setting **WdfSynchronizationScopeQueue** in the [**WDF\_OBJECT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure of the queue object. This is the preferred technique.
+-   For framework versions 1.9 and later, enable queue-level synchronization for individual queues by setting **WdfSynchronizationScopeQueue** in the [**WDF\_OBJECT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure of the queue object. This technique is preferred.
 
 -   Alternatively, you can use the following steps in all framework versions:
     1.  Set **SynchronizationScope** to **WdfSynchronizationScopeQueue** in the [**WDF\_OBJECT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure of the *device* object.
     2.  Use the default **WdfSynchronizationScopeInheritFromParent** value for each device's *queue* objects.
 
-If you do not want the framework to synchronize the callback functions that handle your driver's I/O requests, use the default **SynchronizationScope** value for your driver's driver, device, and queue objects. In this case, the framework does not automatically synchronize the driver's I/O request-related callback functions, and the callback functions can be called at IRQL &lt;= DISPATCH\_LEVEL.
+If you don't want the framework to synchronize the callback functions that handle your driver's I/O requests, use the default **SynchronizationScope** value for your driver's driver, device, and queue objects. In this case, the framework doesn't automatically synchronize the driver's I/O request-related callback functions. The framework can call the callback functions at IRQL &lt;= DISPATCH\_LEVEL.
 
-Note that setting a **SynchronizationScope** value synchronizes only the callback functions that the previous table contains. If you want the framework to also synchronize the driver's interrupt, DPC, work-item, and timer object callback functions, the driver must set the **AutomaticSerialization** member of these objects' configuration structures to **TRUE**.
+Setting a **SynchronizationScope** value synchronizes only the callback functions that the previous table contains. If you want the framework to also synchronize the driver's interrupt, DPC, work-item, and timer object callback functions, set the **AutomaticSerialization** member of these objects' configuration structures to **TRUE**.
 
 However, you can set **AutomaticSerialization** to **TRUE** only if all of the callback functions that you want to synchronize run at the same IRQL. Choosing an *execution level*, which is described next, might result in incompatible IRQL levels. In such a situation, the driver must use [framework locks](using-framework-locks.md) instead of setting **AutomaticSerialization**. For more information about the configuration structures for interrupt, DPC, work-item, and timer objects, and for more information about restrictions that apply to setting **AutomaticSerialization** in these structures, see [**WDF\_INTERRUPT\_CONFIG**](/windows-hardware/drivers/ddi/wdfinterrupt/ns-wdfinterrupt-_wdf_interrupt_config), [**WDF\_DPC\_CONFIG**](/windows-hardware/drivers/ddi/wdfdpc/ns-wdfdpc-_wdf_dpc_config), [**WDF\_WORKITEM\_CONFIG**](/windows-hardware/drivers/ddi/wdfworkitem/ns-wdfworkitem-_wdf_workitem_config), and [**WDF\_TIMER\_CONFIG**](/windows-hardware/drivers/ddi/wdftimer/ns-wdftimer-_wdf_timer_config).
 
-If you set **AutomaticSerialization** to **TRUE**, you should select queue-level synchronization.
+If you set **AutomaticSerialization** to **TRUE**, select queue-level synchronization.
 
 ### Choosing an Execution Level
 
-When a driver creates some types of framework objects, it can specify an *execution level* for the object. The execution level specifies the IRQL at which the framework will call the object's event callback functions that handle a driver's I/O requests.
+When a driver creates some types of framework objects, it can specify an *execution level* for the object. The execution level specifies the IRQL at which the framework calls the object's event callback functions that handle a driver's I/O requests.
 
 If a driver supplies an execution level, the supplied level affects the callback functions for queue and file objects. Ordinarily, if the driver is using automatic synchronization, the framework calls these callback functions at IRQL = DISPATCH\_LEVEL. By specifying an execution level, the driver can force the framework to call these callback functions at IRQL = PASSIVE\_LEVEL. The framework uses the following rules when setting the IRQL at which queue and file object callback functions are called:
 
 -   If a driver uses automatic synchronization, its queue and file object callback functions are called at IRQL = DISPATCH\_LEVEL unless the driver asks the framework to call its callback functions at IRQL = PASSIVE\_LEVEL.
 
--   If a driver is not using automatic synchronization and does not specify an execution level, the driver's queue and file object callback functions can be called at IRQL &lt;= DISPATCH\_LEVEL.
+-   If a driver isn't using automatic synchronization and doesn't specify an execution level, the driver's queue and file object callback functions can be called at IRQL <= DISPATCH\_LEVEL.
 
-Note that if your driver provides file object callback functions, you will most likely want the framework to call these callback functions at IRQL = PASSIVE\_LEVEL because some file data, such as the file name, is pageable.
+If your driver provides file object callback functions, you most likely want the framework to call these callback functions at IRQL = PASSIVE\_LEVEL because some file data, such as the file name, is pageable.
 
 To supply an execution level, your driver must specify a value for the **ExecutionLevel** member of an object's [**WDF\_OBJECT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure. The execution level values that your driver can specify are:
 
@@ -162,7 +154,7 @@ To supply an execution level, your driver must specify a value for the **Executi
 The framework calls the object's callback functions at IRQL = PASSIVE\_LEVEL.
 
 <a href="" id="wdfexecutionleveldispatch"></a>**WdfExecutionLevelDispatch**  
-The framework can call the object's callback functions at IRQL &lt;= DISPATCH\_LEVEL. (If the driver is using automatic synchronization, the framework always calls the callback functions at IRQL = DISPATCH\_LEVEL.)
+The framework can call the object's callback functions at IRQL &lt;= DISPATCH\_LEVEL. If the driver is using automatic synchronization, the framework always calls the callback functions at IRQL = DISPATCH\_LEVEL.
 
 <a href="" id="wdfexecutionlevelinheritfromparent"></a>**WdfExecutionLevelInheritFromParent**  
 The framework obtains the object's **ExecutionLevel** value from the object's parent.
@@ -226,19 +218,19 @@ You can set the execution level to **WdfExecutionLevelPassive** or **WdfExecutio
 
 You should specify **WdfExecutionLevelPassive** if:
 
--   Your driver's callback functions must call framework methods or Windows Driver Model (WDM) routines that can be called only at IRQL = PASSIVE\_LEVEL.
+-   Your driver's callback functions must call framework methods or Windows Driver Model (WDM) routines that you can call only at IRQL = PASSIVE\_LEVEL.
 
--   Your driver's callback functions must access pageable code or data. (For example, file object callback functions typically access pageable data.)
+-   Your driver's callback functions must access pageable code or data. For example, file object callback functions typically access pageable data.
 
 Instead of setting **WdfExecutionLevelPassive**, your driver can set **WdfExecutionLevelDispatch** and provide a callback function that creates [work items](using-framework-work-items.md) if it must handle some operations at IRQL = PASSIVE\_LEVEL.
 
-Before you decide whether your driver should set an object's execution level to **WdfExecutionLevelPassive**, you should determine the IRQL at which your driver and other drivers in the driver stack are called. Consider the following situations:
+Before you decide whether your driver should set an object's execution level to **WdfExecutionLevelPassive**, determine the IRQL at which your driver and other drivers in the driver stack are called. Consider the following situations:
 
--   If your driver is at the top of the kernel-mode driver stack, the system typically calls the driver at IRQL = PASSIVE\_LEVEL. The client of such a driver might be a UMDF-based driver or a user-mode application. Specifying **WdfExecutionLevelPassive** does not adversely affect the driver's performance, because the framework does not have to queue your driver's calls to work items that are called at IRQL = PASSIVE\_LEVEL.
+-   If your driver is at the top of the kernel-mode driver stack, the system typically calls the driver at IRQL = PASSIVE\_LEVEL. The client of such a driver might be a UMDF-based driver or a user-mode application. Specifying **WdfExecutionLevelPassive** doesn't adversely affect the driver's performance, because the framework doesn't have to queue your driver's calls to work items that are called at IRQL = PASSIVE\_LEVEL.
 
--   If your driver is not at the top of the stack, the system will likely not call your driver at IRQL = PASSIVE\_LEVEL. Therefore, the framework must queue your driver's calls to work items, which are later called at IRQL = PASSIVE\_LEVEL. This process can cause poor driver performance, compared to allowing your driver's callback functions to be called at IRQL &lt;= DISPATCH\_LEVEL.
+-   If your driver isn't at the top of the stack, the system likely doesn't call your driver at IRQL = PASSIVE\_LEVEL. Therefore, the framework must queue your driver's calls to work items, which are later called at IRQL = PASSIVE\_LEVEL. This process can cause poor driver performance, compared to allowing your driver's callback functions to be called at IRQL &lt;= DISPATCH\_LEVEL.
 
-For DPC objects, and for timer objects that do not represent [passive-level timers](using-timers.md), note that you cannot set the **AutomaticSerialization** member of the configuration structure to **TRUE** if you have set the parent device's execution level to **WdfExecutionLevelPassive**. This is because the framework will acquire the device object's [callback synchronization locks](using-framework-locks.md) at IRQL = PASSIVE\_LEVEL and therefore the locks cannot be used to synchronize the DPC or timer object callback functions, which must execute at IRQL = DISPATCH\_LEVEL. In such a case, your driver should use [framework spin locks](using-framework-locks.md#framework-spin-locks) in any device, DPC, or timer object callback functions that must be synchronized with each other.
+For DPC objects, and for timer objects that don't represent [passive-level timers](using-timers.md), you can't set the **AutomaticSerialization** member of the configuration structure to **TRUE** if you set the parent device's execution level to **WdfExecutionLevelPassive**. The framework acquires the device object's [callback synchronization locks](using-framework-locks.md) at IRQL = PASSIVE\_LEVEL. Therefore, it can't use the locks to synchronize the DPC or timer object callback functions, which must execute at IRQL = DISPATCH\_LEVEL. In this case, your driver should use [framework spin locks](using-framework-locks.md#framework-spin-locks) in any device, DPC, or timer object callback functions that must be synchronized with each other.
 
 Also note that for timer objects that *do* represent passive-level timers, you can set the **AutomaticSerialization** member of the configuration structure to TRUE *only* if the parent device's execution level is set to **WdfExecutionLevelPassive**.
 
