@@ -26,7 +26,7 @@ When the MO Direct portal is ready for a profile download, install, and activati
 | purchaseMetadata | Object | This object contains metadata about the user's purchase. This includes details about the user account, the purchase method or instrument, details if the user is adding a new line, and the name of the plan that the user purchased. All these are used for reporting. |
 | activationCode | String | The activation code for downloading the eSIM profile. The ICCID for the profile is inferred from the profile metadata. |
 
-The following Javascript function shows an example of the API to inform the application that an inline profile download should start.
+The following JavaScript function shows an example of the API to inform the application that an inline profile download should start.
 
 ```Javascript
 function NotifyMobilePlans() {
@@ -55,7 +55,7 @@ When a user completes a purchase in the MO Direct portal by adding more data to 
 | purchaseMetadata | Object | This object contains metadata about the user's purchase. This includes details about the user account, the purchase method or instrument, details if the user is adding a new line, and the name of the plan that the user purchased. All these are used for reporting. |
 | iccid | String | The ICCID to which data is assigned. If this ICCID is not active, the Mobile Plans app activates the corresponding profile.|
 
-The following Javascript function shows an example of the API to inform the application that the user has completed a purchase using a profile already available, but not necessarily active, on the eSIM.
+The following JavaScript function shows an example of the API to inform the application that the user has completed a purchase using a profile already available, but not necessarily active, on the eSIM.
 
  ```Javascript
 function finishPurchaseWithBalanceAddition() {
