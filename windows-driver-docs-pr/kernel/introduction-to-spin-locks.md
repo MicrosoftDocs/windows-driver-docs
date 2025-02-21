@@ -1,11 +1,11 @@
 ---
 title: Introduction to Spin Locks
-description: Introduction to Spin Locks
+description: Provides an introduction to spin locks.
 keywords: ["KSPIN_LOCK", "executive spin locks WDK kernel", "interrupt spin locks WDK kernel", "queued spin locks WDK kernel", "spin locks WDK kernel"]
-ms.date: 03/04/2024
+ms.date: 02/21/2025
 ---
 
-# Introduction to Spin Locks
+# Introduction to spin locks
 
 Spin locks are kernel-defined, kernel-mode-only synchronization mechanisms, exported as an opaque type: KSPIN_LOCK. A spin lock can be used to protect shared data or resources from simultaneous access.
 When running at IRQL <= DISPATCH_LEVEL, a driver can use [**KeAcquireInStackQueuedSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquireinstackqueuedspinlock) and [**KeReleaseInStackQueuedSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlock) to acquire and release the spin lock as a *queued spin lock*.

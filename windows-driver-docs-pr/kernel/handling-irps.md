@@ -1,15 +1,11 @@
 ---
 title: Handling IRPs
-description: Handling IRPs
+description: Provides information about handling IRPs.
 keywords: ["kernel-mode drivers WDK , IRPs", "IRPs WDK kernel", "I/O request packets WDK kernel See IRPs WDK kernel", "IRP WDK See IRPs WDK"]
-ms.date: 06/16/2017
+ms.date: 02/21/2025
 ---
 
 # Handling IRPs
-
-
-
-
 
 This section describes how kernel-mode drivers handle *I/O request packets* (IRPs). It contains the following sections:
 
@@ -44,11 +40,3 @@ This section describes how kernel-mode drivers handle *I/O request packets* (IRP
 [IRP Major Function Codes](irp-major-function-codes.md)
 
 [IRP Processing Examples](processing-irps-in-a-lowest-level-driver.md)
-
- 
-
- 
-
-
-
-

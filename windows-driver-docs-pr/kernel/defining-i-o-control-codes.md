@@ -1,34 +1,33 @@
 ---
 title: Defining I/O Control Codes
-description: Defining I/O Control Codes
+description: Provides information about defining I/O control codes.
 keywords: ["I/O control codes WDK kernel , defining", "control codes WDK IOCTLs , defining", "IOCTLs WDK kernel , defining", "CTL_CODE macro", "IOCTLs WDK user-mode", "user-mode components WDK IOCTLs", "I/O control codes WDK user-mode", "control codes WDK user-mode", "layouts WDK IOCTLs"]
-ms.date: 06/16/2017
+ms.date: 02/20/2025
 ---
 
-# Defining I/O Control Codes
-
+# Defining I/O control codes
 
 When defining new IOCTLs, it is important to remember the following rules:
 
--   If a new IOCTL will be available to user-mode software components, the IOCTL must be used with [**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md) requests. User-mode components send **IRP\_MJ\_DEVICE\_CONTROL** requests by calling the [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol), which is a Win32 function.
--   If a new IOCTL will be available only to kernel-mode driver components, the IOCTL must be used with [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](./irp-mj-internal-device-control.md) requests. Kernel-mode components create **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests by calling **IoBuildDeviceIoControlRequest**. For more information, see [Creating IOCTL Requests in Drivers](creating-ioctl-requests-in-drivers.md).
+- If a new IOCTL will be available to user-mode software components, the IOCTL must be used with [**IRP_MJ_DEVICE_CONTROL**](./irp-mj-device-control.md) requests. User-mode components send **IRP_MJ_DEVICE_CONTROL** requests by calling the [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol), which is a Win32 function.
+- If a new IOCTL will be available only to kernel-mode driver components, the IOCTL must be used with [**IRP_MJ_INTERNAL_DEVICE_CONTROL**](./irp-mj-internal-device-control.md) requests. Kernel-mode components create **IRP_MJ_INTERNAL_DEVICE_CONTROL** requests by calling **IoBuildDeviceIoControlRequest**. For more information, see [Creating IOCTL Requests in Drivers](creating-ioctl-requests-in-drivers.md).
 
 An I/O control code is a 32-bit value that consists of several fields. The following figure illustrates the layout of I/O control codes.
 
 ![diagram illustrating the i/o control code layout.](images/ioctl-1.png)
 
-Use the system-supplied **CTL\_CODE** macro, which is defined in Wdm.h and Ntddk.h, to define new I/O control codes. The definition of a new IOCTL code, whether intended for use with **IRP\_MJ\_DEVICE\_CONTROL** or **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests, uses the following format:
+Use the system-supplied **CTL_CODE** macro, which is defined in Wdm.h and Ntddk.h, to define new I/O control codes. The definition of a new IOCTL code, whether intended for use with **IRP_MJ_DEVICE_CONTROL** or **IRP_MJ_INTERNAL_DEVICE_CONTROL** requests, uses the following format:
 
 ```cpp
 #define IOCTL_Device_Function CTL_CODE(DeviceType, Function, Method, Access)
 ```
 
-Choose a descriptive constant name for the IOCTL, of the form IOCTL\_*Device*\_*Function*, where *Device* indicates the type of device and *Function* indicates the operation. An example constant name is IOCTL\_VIDEO\_ENABLE\_CURSOR.
+Choose a descriptive constant name for the IOCTL, of the form IOCTL_*Device*_*Function*, where *Device* indicates the type of device and *Function* indicates the operation. An example constant name is IOCTL_VIDEO_ENABLE_CURSOR.
 
-Supply the following parameters to the **CTL\_CODE** macro:
+Supply the following parameters to the **CTL_CODE** macro:
 
 <a href="" id="devicetype"></a>*DeviceType*  
-Identifies the device type. This value must match the value that is set in the **DeviceType** member of the driver's [**DEVICE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. (See [Specifying Device Types](specifying-device-types.md)). Values of less than 0x8000 are reserved for Microsoft. Values of 0x8000 and higher can be used by vendors. Note that the vendor-assigned values set the **Common** bit.
+Identifies the device type. This value must match the value that is set in the **DeviceType** member of the driver's [**DEVICE_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. (See [Specifying Device Types](specifying-device-types.md)). Values of less than 0x8000 are reserved for Microsoft. Values of 0x8000 and higher can be used by vendors. Note that the vendor-assigned values set the **Common** bit.
 
 <a href="" id="functioncode"></a>*FunctionCode*  
 Identifies the function to be performed by the driver. Values of less than 0x800 are reserved for Microsoft. Values of 0x800 and higher can be used by vendors. Note that the vendor-assigned values set the **Custom** bit.
@@ -38,52 +37,52 @@ Indicates how the system will pass data between the caller of [**DeviceIoControl
 
 Use one of the following system-defined constants:
 
-<a href="" id="method-buffered"></a>METHOD\_BUFFERED  
+<a href="" id="method-buffered"></a>METHOD_BUFFERED  
 Specifies the [buffered I/O](methods-for-accessing-data-buffers.md) method, which is typically used for transferring small amounts of data per request. Most I/O control codes for device and intermediate drivers use this *TransferType* value.
 
-For information about how the system specifies data buffers for METHOD\_BUFFERED I/O control codes, see [Buffer Descriptions for I/O Control Codes](buffer-descriptions-for-i-o-control-codes.md).
+For information about how the system specifies data buffers for METHOD_BUFFERED I/O control codes, see [Buffer Descriptions for I/O Control Codes](buffer-descriptions-for-i-o-control-codes.md).
 
 For more information about buffered I/O, see [Using Buffered I/O](using-buffered-i-o.md).
 
-<a href="" id="method-in-direct-or-method-out-direct"></a>METHOD\_IN\_DIRECT or METHOD\_OUT\_DIRECT  
+<a href="" id="method-in-direct-or-method-out-direct"></a>METHOD_IN_DIRECT or METHOD_OUT_DIRECT  
 Specifies the [direct I/O](methods-for-accessing-data-buffers.md) method, which is typically used for reading or writing large amounts of data, using DMA or PIO, that must be transferred quickly.
 
-Specify METHOD\_IN\_DIRECT if the caller of [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest** will pass data to the driver.
+Specify METHOD_IN_DIRECT if the caller of [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest** will pass data to the driver.
 
-Specify METHOD\_OUT\_DIRECT if the caller of [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest** will receive data from the driver.
+Specify METHOD_OUT_DIRECT if the caller of [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest** will receive data from the driver.
 
-For information about how the system specifies data buffers for METHOD\_IN\_DIRECT and METHOD\_OUT\_DIRECT I/O control codes, see [Buffer Descriptions for I/O Control Codes](buffer-descriptions-for-i-o-control-codes.md).
+For information about how the system specifies data buffers for METHOD_IN_DIRECT and METHOD_OUT_DIRECT I/O control codes, see [Buffer Descriptions for I/O Control Codes](buffer-descriptions-for-i-o-control-codes.md).
 
 For more information about direct I/O, see [Using Direct I/O](using-direct-i-o.md).
 
-<a href="" id="method-neither"></a>METHOD\_NEITHER  
+<a href="" id="method-neither"></a>METHOD_NEITHER  
 Specifies [neither buffered nor direct I/O](using-neither-buffered-nor-direct-i-o.md). The I/O manager does not provide any system buffers or MDLs. The IRP supplies the user-mode virtual addresses of the input and output buffers that were specified to [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest**, without validating or mapping them.
 
-For information about how the system specifies data buffers for METHOD\_NEITHER I/O control codes, see [Buffer Descriptions for I/O Control Codes](buffer-descriptions-for-i-o-control-codes.md).
+For information about how the system specifies data buffers for METHOD_NEITHER I/O control codes, see [Buffer Descriptions for I/O Control Codes](buffer-descriptions-for-i-o-control-codes.md).
 
-This method can be used only if the driver can be guaranteed to be running in the context of the thread that originated the I/O control request. Only a highest-level kernel-mode driver is guaranteed to meet this condition, so METHOD\_NEITHER is seldom used for the I/O control codes that are passed to low-level device drivers.
+This method can be used only if the driver can be guaranteed to be running in the context of the thread that originated the I/O control request. Only a highest-level kernel-mode driver is guaranteed to meet this condition, so METHOD_NEITHER is seldom used for the I/O control codes that are passed to low-level device drivers.
 
 With this method, the highest-level driver must determine whether to set up buffered or direct access to user data on receipt of the request, possibly must lock down the user buffer, and must wrap its access to the user buffer in a structured exception handler (see [Handling Exceptions](handling-exceptions.md)). Otherwise, the originating user-mode caller might change the buffered data before the driver can use it, or the caller could be swapped out just as the driver is accessing the user buffer.
 
 For more information, see [Using Neither Buffered Nor Direct I/O](using-neither-buffered-nor-direct-i-o.md).
 
 <a href="" id="requiredaccess"></a>*RequiredAccess*  
-Indicates the type of access that a caller must request when opening the file object that represents the device (see [**IRP\_MJ\_CREATE**](./irp-mj-create.md)). The I/O manager will create IRPs and call the driver with a particular I/O control code only if the caller has requested the specified access rights. *RequiredAccess* is specified by using the following system-defined constants:
+Indicates the type of access that a caller must request when opening the file object that represents the device (see [**IRP_MJ_CREATE**](./irp-mj-create.md)). The I/O manager will create IRPs and call the driver with a particular I/O control code only if the caller has requested the specified access rights. *RequiredAccess* is specified by using the following system-defined constants:
 
-<a href="" id="file-any-access"></a>FILE\_ANY\_ACCESS  
+<a href="" id="file-any-access"></a>FILE_ANY_ACCESS  
 The I/O manager sends the IRP for any caller that has a handle to the file object that represents the target device object.
 
-<a href="" id="file-read-data"></a>FILE\_READ\_DATA  
+<a href="" id="file-read-data"></a>FILE_READ_DATA  
 The I/O manager sends the IRP only for a caller with read access rights, allowing the underlying device driver to transfer data from the device to system memory.
 
-<a href="" id="file-write-data"></a>FILE\_WRITE\_DATA  
+<a href="" id="file-write-data"></a>FILE_WRITE_DATA  
 The I/O manager sends the IRP only for a caller with write access rights, allowing the underlying device driver to transfer data from system memory to its device.
 
-FILE\_READ\_DATA and FILE\_WRITE\_DATA can be ORed together if the caller must have both read and write access rights.
+FILE_READ_DATA and FILE_WRITE_DATA can be ORed together if the caller must have both read and write access rights.
 
-Some system-defined I/O control codes have a *RequiredAccess* value of FILE\_ANY\_ACCESS, which allows the caller to send the particular IOCTL regardless of the access granted to the device. Examples include I/O control codes that are sent to drivers of *exclusive devices*.
+Some system-defined I/O control codes have a *RequiredAccess* value of FILE_ANY_ACCESS, which allows the caller to send the particular IOCTL regardless of the access granted to the device. Examples include I/O control codes that are sent to drivers of *exclusive devices*.
 
-Other system-defined I/O control codes require the caller to have read access rights, write access rights, or both. For example, the following definition of the public I/O control code IOCTL\_DISK\_SET\_PARTITION\_INFO shows that this I/O request can be sent to a driver only if the caller has both read and write access rights:
+Other system-defined I/O control codes require the caller to have read access rights, write access rights, or both. For example, the following definition of the public I/O control code IOCTL_DISK_SET_PARTITION_INFO shows that this I/O request can be sent to a driver only if the caller has both read and write access rights:
 
 ```cpp
 #define IOCTL_DISK_SET_PARTITION_INFO\
@@ -92,13 +91,11 @@ Other system-defined I/O control codes require the caller to have read access ri
 ```
 
 > [!NOTE]
-> Before specifying FILE\_ANY\_ACCESS for a new IOCTL code, you must be absolutely certain that allowing unrestricted access to your device does not create a possible path for malicious users to compromise the system.
-
+> Before specifying FILE_ANY_ACCESS for a new IOCTL code, you must be absolutely certain that allowing unrestricted access to your device does not create a possible path for malicious users to compromise the system.
 
 Drivers can use [**IoValidateDeviceIoControlAccess**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iovalidatedeviceiocontrolaccess) to perform stricter access checking than that provided by an IOCTL's *RequiredAccess* bits.
 
 ## Other useful macros
-
 
 The following macros are useful for extracting the 16-bit *DeviceType* and 2-bit *TransferType* fields from an IOCTL code:
 
@@ -108,6 +105,3 @@ The following macros are useful for extracting the 16-bit *DeviceType* and 2-bit
 ```
 
 These macros are defined in Wdm.h and Ntddk.h.
-
- 
-

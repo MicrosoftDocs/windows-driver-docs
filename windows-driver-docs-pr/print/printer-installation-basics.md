@@ -1,10 +1,10 @@
 ---
 title: Printer Installation Basics
-description: Printer Installation Basics
-ms.date: 01/24/2023
+description: Provides information on printer installation basics.
+ms.date: 02/21/2025
 ---
 
-# Printer Installation Basics
+# Printer installation basics
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
