@@ -128,9 +128,9 @@ You can use the Control Panel to allow access through the Windows firewall. Open
 
 ## Third Party VMs
 
-### VMWare  
+### VMware  
 
-If you restart the virtual machine by using the VMWare facilities (for example, the reset button), exit WinDbg, and then restart WinDbg to continue debugging. During virtual machine debugging, VMWare often consumes 100% of the CPU.
+If you restart the virtual machine by using the VMware facilities (for example, the reset button), exit WinDbg, and then restart WinDbg to continue debugging. During virtual machine debugging, VMware often consumes 100% of the CPU.
  
 ## See also
 
