@@ -69,7 +69,7 @@ Recording can now be restricted to a specific set of modules using the `-module`
 
 Matching record and replay components are now included in the distribution. In the event of an incompatibility between the debugger and the command line recorder, or a replay bug, the replay components can be copied into the debugger install as a workaround until a new debugger is released.
 
-The installed file location can be found in Powershell by doing the following:
+The installed file location can be found in PowerShell by doing the following:
 
 ```
 ls (Get-AppxPackage | where Name -eq 'Microsoft.TimeTravelDebugging').InstallLocation
