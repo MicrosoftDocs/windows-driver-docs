@@ -35,11 +35,11 @@ ms.date: 05/20/2019
 |Msosync.exe|Cloud Storage|
 |Microsoft One Connect|Productivity|
 |Windbg.exe|Developer Tools|
-|Microsoft Office Onenote|Productivity|
+|Microsoft Office OneNote|Productivity|
 |Microsoft Mahjong|Games|
 |Power Point|Productivity|
 |Windbg.exe|Developer Tools|
-|Microsoft Office Onenote|Productivity|
+|Microsoft Office OneNote|Productivity|
 |Microsoft Zune Music|Media|
 |Microsoft Mahjong|Games|
 |PowerPoint|Productivity|
