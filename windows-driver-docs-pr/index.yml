@@ -33,10 +33,10 @@ highlightedContent:
 conceptualContent:
   # title: Get started
   items:
-    - title: Get the tools
+    - title: Get started
       links:
-        - text: Visual Studio
-          url: https://go.microsoft.com/fwlink/p/?LinkId=698539
+        - text: Partner Center for Windows Hardware
+          url: ./dashboard/index.md
           itemType: download
         - text: Debugging Tools for Windows
           url: ./debugger/index.md
