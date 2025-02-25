@@ -556,7 +556,7 @@ The following table describes IfType values.
 </td><td data-th="Value">
 <p>88</p>
 </td><td data-th="Comment">
-<p>Appletalk remote access protocol</p>
+<p>AppleTalk remote access protocol</p>
 </td></tr>
 <tr><td data-th="Name">
 <p>IF_TYPE_PROP_CNLS</p>
