@@ -50,8 +50,6 @@
     href: building-arm64-drivers.md
   - name: Using the Enterprise WDK 10
     href: using-the-enterprise-wdk.md
-  - name: Installing the WDK 8.1 Build Environment in a Lab
-    href: installing-the-wdk-build-environment-in-a-lab.md
   - name: Using the Microsoft C Runtime with User-Mode Drivers and Desktop Apps
     href: using-the-microsoft-c-runtime-with-user-mode-drivers-and-apps.md
   - name: Avoiding Floating Point Errors in Custom Build Environments
@@ -76,8 +74,6 @@
     href: preparing-a-computer-for-manual-driver-deployment.md
   - name: What happens when you provision a computer (WDK 8.1)
     href: what-happens-when-you-provision-a-computer--wdk-8-1-.md
-  - name: What happens when you provision a computer (WDK 8.0)
-    href: what-happens-when-you-provision-a-computer--wdk-8-0-.md
   - name: Troubleshooting Configuration of Driver Deployment, Testing and Debugging
     href: troubleshooting-configuration-of-driver-deployment--testing-and-debugging.md
   - name: Creating a Driver Package
@@ -118,22 +114,16 @@
     href: testing-a-driver.md
   - name: Tips for testing drivers during development
     href: strategies-for-testing-drivers-during-development.md
-  - name: How to test a driver at runtime using Visual Studio
-    href: testing-a-driver-at-runtime.md
-  - name: How to run the HCK Test Suites in WDK 8.1
-    href: run-the-hck-test-suites-in-the-wdk.md
   - name: How to select and configure the Device Fundamentals tests
     href: how-to-select-and-configure-the-device-fundamental-tests.md
-  - name: How to test a driver package
+  - name: Testing a driver at runtime
+    href: testing-a-driver-at-runtime.md
+  - name: How to test a driver package (Manual Deployment)
+    href: test-a-driver-package-manual-deployment.md
+  - name: How to test a driver package (Visual Studio)
     href: test-a-driver-package.md
-  - name: How to read the driver test results log
-    href: read-the-driver-test-results-log.md
   - name: How to test a driver at runtime from a Command Prompt
     href: how-to-test-a-driver-at-runtime-from-a-command-prompt.md
-  - name: How to write a driver test using a Driver Test template
-    href: how-to-write-a-driver-test-.md
-  - name: How to add test metadata
-    href: to-add-test-metadata.md
   - name: Static Driver Verifier Known Issues - Windows 10 October 2018 Update (version 1809)
     href: static-driver-verifier-known-issues.md
 - name: Logging

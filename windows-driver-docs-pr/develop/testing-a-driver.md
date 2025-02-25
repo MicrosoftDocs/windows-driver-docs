@@ -45,10 +45,6 @@ For more information, see [Run the DevFund Tests via the command-line](../devtes
 <td align="left"><p><a href="testing-a-driver-at-runtime.md" data-raw-source="[How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md)">How to test a driver at runtime using Visual Studio</a></p></td>
 <td align="left"><p>The WDK extensions to Visual Studio provide a device testing interface that enables you to conveniently build, deploy, install, and test a driver on a test computer on your network. The WDK provides a collection of device driver tests that you can use to test the features and functions of your driver.</p></td>
 </tr>
-<tr class="odd">
-<td align="left"><p><a href="how-to-write-a-driver-test-.md" data-raw-source="[How to write a driver test using a Driver Test template](how-to-write-a-driver-test-.md)">How to write a driver test using a Driver Test template</a></p></td>
-<td align="left"><p>You can use the Windows Driver Kit (WDK) for Windows 8 to create your own driver tests or to customize some of the tests that are provided. You can deploy the tests that you create to remote test computers using the driver testing framework that the WDK provides for Microsoft Visual Studio Ultimate 2012.</p></td>
-</tr>
 </tbody>
 </table>
 

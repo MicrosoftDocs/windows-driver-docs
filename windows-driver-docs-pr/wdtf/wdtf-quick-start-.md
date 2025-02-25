@@ -30,7 +30,7 @@ When you install the WDK, the installation package for the Windows Driver Test F
 
 ## Writing tests with WDTF
 
-The WDK provides templates for writing tests with WDTF. See [How to write a driver test using a Driver Test template](../develop/how-to-write-a-driver-test-.md). You can also use a template to create a WDTF Simple I/O plug-in for your target device. For information, see [Writing a WDTF Simple I/O plug-in for your device](writing-a-wdtf-simpleio-plug-in-for-your-device.md).
+The WDK provides templates for writing tests with WDTF. See [How to write a driver test using a Driver Test template](/previous-versions/windows/drivers/develop/how-to-write-a-driver-test-). You can also use a template to create a WDTF Simple I/O plug-in for your target device. For information, see [Writing a WDTF Simple I/O plug-in for your device](writing-a-wdtf-simpleio-plug-in-for-your-device.md).
 
 ## Running WDTF tests
 

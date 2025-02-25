@@ -58,7 +58,6 @@ You can use the **Additional Files** box to specify custom installation scripts 
 
 
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
-* [How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md)
 * [Getting Started with Windows Debugging](../debugger/getting-started-with-windows-debugging.md)
  
 
