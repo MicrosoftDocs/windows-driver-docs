@@ -1,6 +1,26 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/audio/version-numbers-for-audio-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/audio/version-numbers-for-audio-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/internal-and-external-version-numbers.md",
+      "redirect_url": "/previous-versions/windows/drivers/audio/internal-and-external-version-numbers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/inf-driver-version-entry.md",
+      "redirect_url": "/previous-versions/windows/drivers/audio/inf-driver-version-entry",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/directx-file-version-numbers.md",
+      "redirect_url": "/previous-versions/windows/drivers/audio/directx-file-version-numbers",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/bringup/boot-and-uefi.md",
       "redirect_url": "/previous-versions/windows/drivers/bringup/boot-and-uefi",
       "redirect_document_id": false
