@@ -30,6 +30,18 @@ Ctrl+Shift+F5   |   Restart
 Shift+F5    |   Stop debugging
 Alt+H,D     | Detach
 
+### Command Window
+
+| Keystroke     | Description |
+| ------------- | ------------------------- |
+Ctrl+M          | Toggle focus between output pane (mark mode) and input box
+Ctrl+Space      | Trigger command completion list popup
+TAB             | Trigger next autocompletion
+Shift+TAB       | Trigger previous autocompletion
+Ctrl+F          | Open find box
+Ctrl+[          | Select previous output pane section
+Ctrl+]          | Select next output pane section
+
 ### Setup
 
 | Keystroke     | Description             |
@@ -96,5 +108,5 @@ Ctrl+Alt+V      |       Toggle Verbose Mode
 
 ## See Also
 
-[WinDbg Features](../debugger/debugging-using-windbg-preview.md)
+[WinDbg Features](../debugger/debugging-using-windbg.md)
 
