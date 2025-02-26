@@ -1,7 +1,7 @@
 ---
 title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
-ms.date: 01/29/2025
+ms.date: 02/26/2025
 ---
 
 # Driver security checklist
@@ -16,9 +16,9 @@ A security flaw is any flaw that allows an attacker to cause a driver to malfunc
 
 When most developers are working on their driver, their focus is on getting the driver to work properly, and not on whether a malicious attacker will attempt to exploit vulnerabilities within their code. After a driver is released, however, attackers can attempt to probe and identify security flaws. Developers must consider these issues during the design and implementation phase in order to minimize the likelihood of such vulnerabilities. The goal is to eliminate all known security flaws before the driver is released.
 
-Creating more secure drivers requires the cooperation of the system architect (consciously thinking of potential threats to the driver), the developer implementing the code (defensively coding common operations that can be the source of exploits), and the test team (proactively attempting to find weakness and vulnerabilities). By properly coordinating all of these activities, the security of the driver is dramatically enhanced.
+Creating more secure drivers requires the cooperation of the system architect (consciously thinking of potential threats to the driver), the developer implementing the code (defensively coding common operations that can be the source of exploits), and the test team (proactively attempting to find weakness and vulnerabilities). By properly coordinating all of these activities, you can dramatically enhance the security of the driver.
 
-In addition to avoiding the issues associated with a driver being attacked, many of the steps described, such as more precise use of kernel memory, will increase the reliability of your driver. This reduces support costs and increases customer satisfaction with your product. Completing the tasks in the checklist below will help to achieve all these goals.
+In addition to avoiding the issues associated with a driver being attacked, many of the steps described, such as more precise use of kernel memory, will increase the reliability of your driver. This reduces support costs and increases customer satisfaction with your product. Completing the tasks in the checklist below will help to achieve all of these goals.
 
 **Security checklist:** *Complete the security task described in each of these topics.*
 
@@ -64,7 +64,7 @@ In addition to avoiding the issues associated with a driver being attacked, many
 
 **Security checklist item \#1:** *Confirm that a kernel driver is required and that a lower risk approach, such as Windows service or app, isn't a better option.*
 
-Kernel drivers live in the Windows kernel and having an issue when executing in kernel exposes the entire operating system. If any other option is available, it likely will be lower cost and have less associated risk than creating a new kernel driver.
+Kernel drivers live in the Windows kernel and having an issue when executing in kernel exposes the entire operating system. If any other option is available, it likely is lower cost and has less associated risk than creating a new kernel driver.
 
 For more information about using the built-in Windows drivers, see [Do you need to write a driver?](../gettingstarted/do-you-need-to-write-a-driver-.md).
 
@@ -76,7 +76,7 @@ For information on using Windows Services, see [Services](/windows/desktop/Servi
 
 **Security checklist item \#2:** *Use the driver frameworks to reduce the size of your code and increase its reliability and security.*
 
-Use the [Windows Driver Frameworks](../wdf/index.md) to reduce the size of your code and increase its reliability and security. To get started, review [Using WDF to Develop a Driver](../wdf/using-the-framework-to-develop-a-driver.md). For information on using the lower risk User Mode Driver Framework (UMDF), see [Choosing a driver model](../gettingstarted/choosing-a-driver-model.md).
+To reduce the size of your code and increase its reliability and security, use the [Windows Driver Frameworks](../wdf/index.md). To get started, review [Using WDF to Develop a Driver](../wdf/using-the-framework-to-develop-a-driver.md). For information on using the lower risk User Mode Driver Framework (UMDF), see [Choosing a driver model](../gettingstarted/choosing-a-driver-model.md).
 
 Writing an old-fashion [Windows Driver Model (WDM)](../kernel/writing-wdm-drivers.md) driver is more time consuming, costly, and involves recreating code that is available in the driver frameworks.
 
@@ -84,7 +84,7 @@ The Windows Driver Framework (WDF) source code is open source and available on G
 
 ### DMF - Driver Module Framework
 
-Consider the use of the Driver Module Framework (DMF) in your driver project. Developed by the Microsoft Surface team, DMF is a framework that allows creation of WDF objects called DMF modules. The code for these DMF modules can be shared between different drivers. In addition, DMF provides a library of DMF modules that have been developed for drivers and offer code reuse for tasks such as thread and I/O management. A DMF module is used to encapsulate driver tasks into smaller units. Each module is self-contained and has its own code, context, and callbacks, making it easier to reuse. For more information, see [Introducing Driver Module Framework](https://blogs.windows.com/windowsdeveloper/2018/08/15/introducing-driver-module-framework/) and the [GitHub site documentation](https://github.com/Microsoft/DMF/blob/master/Dmf/Documentation/Driver%20Module%20Framework.md#what-is-the-driver-module-framework-dmf).
+Consider using the Driver Module Framework (DMF) in your driver project. Developed by the Microsoft Surface team, DMF is a framework that allows creation of WDF objects called DMF modules. The code for these DMF modules can be shared between different drivers. In addition, DMF provides a library of DMF modules that have been developed for drivers and offer code reuse for tasks such as thread and I/O management. A DMF module encapsulates driver tasks into smaller units. Each module is self-contained and has its own code, context, and callbacks, making it easier to reuse. For more information, see [Introducing Driver Module Framework](https://blogs.windows.com/windowsdeveloper/2018/08/15/introducing-driver-module-framework/) and the [GitHub site documentation](https://github.com/Microsoft/DMF/blob/master/Dmf/Documentation/Driver%20Module%20Framework.md#what-is-the-driver-module-framework-dmf).
 
 ## Manage driver access control
 
@@ -94,7 +94,7 @@ Consider the use of the Driver Module Framework (DMF) in your driver project. De
 
 Drivers must work to prevent users from inappropriately accessing a computer's devices and files. To prevent unauthorized access to devices and files, you must:
 
-- Name device objects only when necessary. Named device objects are generally only necessary for legacy reasons, for example if you have an application that expects to open the device using a particular name or if you're using a non-PNP device/control device. WDF drivers do not need to name their PnP device FDO in order to create a symbolic link using [WdfDeviceCreateSymbolicLink](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatesymboliclink).
+- Name device objects only when necessary. Named device objects are generally only necessary for legacy reasons, for example if you have an application that expects to open the device using a particular name or if you're using a non-PNP device/control device. WDF drivers don't need to name their PnP device FDO in order to create a symbolic link using [WdfDeviceCreateSymbolicLink](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatesymboliclink).
 
 - Secure access to device objects and interfaces.
 
@@ -110,7 +110,7 @@ For more information about controlling access, see:
 
 ### Managing driver access control - WDM
 
-If you're working with a WDM Driver and you used a named device object you can use [IoCreateDeviceSecure](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) and specify a SDDL to secure it. When you implement [IoCreateDeviceSecure](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) always specify a custom class GUID for DeviceClassGuid. You should not specify an existing class GUID here. Doing so has the potential to break security settings or compatibility for other devices belonging to that class. For more information, see [WdmlibIoCreateDeviceSecure](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure).
+If you're working with a WDM Driver and you used a named device object, you can use [IoCreateDeviceSecure](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) and specify a SDDL to secure it. When you implement [IoCreateDeviceSecure](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) always specify a custom class GUID for DeviceClassGuid. Don't specify an existing class GUID here. Doing so has the potential to break security settings or compatibility for other devices belonging to that class. For more information, see [WdmlibIoCreateDeviceSecure](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure).
 
 For more information, see:
 
@@ -144,9 +144,9 @@ Following the general least privilege security principle, configure only the min
 
 An IOCTL (Input/Output Control) in Windows is a system call for device-specific input/output operations. IOCTLs are used by applications to communicate with device drivers, allowing them to send commands or request information from the hardware. For more information, see [Introduction to I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md) and [Example I/O Request - An Overview](../kernel/example-i-o-request---an-overview.md).
 
-To further manage security when IOCTLs are sent by user-mode callers, the driver code can include the [IoValidateDeviceIoControlAccess](/windows-hardware/drivers/ddi/wdm/nf-wdm-iovalidatedeviceiocontrolaccess) function. This function allows a driver to check access rights. Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess](/windows-hardware/drivers/ddi/wdm/nf-wdm-iovalidatedeviceiocontrolaccess), specifying FILE_READ_ACCESS, FILE_WRITE_ACCESS, or both.
+To further manage security when user-mode callers send IOCTLs, the driver code can include the [IoValidateDeviceIoControlAccess](/windows-hardware/drivers/ddi/wdm/nf-wdm-iovalidatedeviceiocontrolaccess) function. This function allows a driver to check access rights. Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess](/windows-hardware/drivers/ddi/wdm/nf-wdm-iovalidatedeviceiocontrolaccess), specifying FILE_READ_ACCESS, FILE_WRITE_ACCESS, or both.
 
-Implementing granular IOCTL security control doesn't replace the need to manage driver access using the techniques discussed above.
+Implementing granular IOCTL security control doesn't replace the need to manage driver access using the techniques discussed earlier.
 
 For more information, see [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md) and 
 [Security Issues for I/O Control Codes](../kernel/security-issues-for-i-o-control-codes.md).
@@ -187,7 +187,7 @@ One of the primary responsibilities of a Windows driver is transferring data bet
 | METHOD_IN_DIRECT or METHOD_OUT_DIRECT | Used in some high speed hardware I/O   | [Using Direct I/O](../kernel/using-direct-i-o.md)                                           |
 | METHOD_NEITHER                        | Avoid if possible                | [Using Neither Buffered Nor Direct I/O](../kernel/using-neither-buffered-nor-direct-i-o.md) |
 
-In general, buffered I/O is recommended as it provides the most secure buffering methods. But even when using buffered I/O there are risks, such as embedded pointers that must be mitigated.
+In general, buffered I/O is recommended as it provides the most secure buffering methods. But even when using buffered I/O there are risks, such as embedded pointers that that you must mitigate.
 
 For more information about working with buffers in IOCTLs, see [Methods for Accessing Data Buffers](../kernel/methods-for-accessing-data-buffers.md).
 
@@ -199,7 +199,7 @@ For more information about working with buffers in IOCTLs, see [Methods for Acce
 
 - Properly validate variable-length buffers. For more information, see [Failure to Validate Variable-Length Buffers](../kernel/failure-to-validate-variable-length-buffers.md).
 
-- When using buffered I/O, be sure and return the proper length for the OutputBuffer in the [IO_STATUS_BLOCK](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure Information field. Don't just directly return the length directly from a READ request. For example, consider a situation where the returned data from the user space indicates that there is a 4K buffer. If the driver actually should only return 200 bytes, but instead just returns 4K in the Information field an information disclosure vulnerability has occurred. This problem occurs because in earlier versions of Windows, the buffer the I/O Manager uses for Buffered I/O isn't zeroed. Thus, the user app gets back the original 200 bytes of data plus 4K-200 bytes of whatever was in the buffer (non-paged pool contents). This scenario can occur with all uses of Buffered I/O and not just with IOCTLs.
+- When using buffered I/O, be sure and return the proper length for the OutputBuffer in the [IO_STATUS_BLOCK](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure Information field. Don't just directly return the length directly from a READ request. For example, consider a situation where the returned data from the user space indicates that there is a 4K buffer. If the driver actually should only return 200 bytes, but instead just returns 4K in the Information field, an information disclosure vulnerability has occurred. This problem occurs because in earlier versions of Windows, the buffer the I/O Manager uses for Buffered I/O isn't zeroed. Thus, the user app gets back the original 200 bytes of data plus 4K-200 bytes of whatever was in the buffer (non-paged pool contents). This scenario can occur with all uses of Buffered I/O and not just with IOCTLs.
 
 #### Errors in IOCTL direct I/O
 
@@ -209,7 +209,7 @@ Handle zero-length buffers correctly. For more information, see [Errors in Direc
 
 - Validate pointers embedded in buffered I/O requests. For more information, see [Errors in Referencing User-Space Addresses](../kernel/errors-in-referencing-user-space-addresses.md).
 
-- Validate any address in the user space before trying to use it, using APIs such as [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread).
+- Validate any address in the user space before trying to use it, by using APIs such as [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread).
 
 ### Driver code must make correct use of memory
 
@@ -275,13 +275,13 @@ The driver should mark the IRP pending before it saves the IRP, and should consi
 
 #### Handle IRP cancellation operations properly
 
-Cancel operations can be difficult to code properly because they typically execute asynchronously. Problems in the code that handles cancel operations can go unnoticed for a long time, because this code is typically not executed frequently in a running system. Be sure to read and understand all of the information supplied under [Canceling IRPs](../kernel/canceling-irps.md). Pay special attention to [Synchronizing IRP Cancellation](../kernel/synchronizing-irp-cancellation.md) and [Points to Consider When Canceling IRPs](../kernel/points-to-consider-when-canceling-irps.md).
+Cancel operations can be difficult to code properly because they typically execute asynchronously. Problems in the code that handles cancel operations can go unnoticed for a long time, because this code typically isn't executed frequently in a running system. Be sure to read and understand all of the information supplied under [Canceling IRPs](../kernel/canceling-irps.md). Pay special attention to [Synchronizing IRP Cancellation](../kernel/synchronizing-irp-cancellation.md) and [Points to Consider When Canceling IRPs](../kernel/points-to-consider-when-canceling-irps.md).
 
 One recommended way to minimize the synchronization problems that are associated with cancel operations is to implement a [cancel-safe IRP queue](../kernel/cancel-safe-irp-queues.md).
 
 #### Handle IRP cleanup and close operations properly
 
-Be sure that you understand the difference between [**IRP\_MJ\_CLEANUP**](../kernel/irp-mj-cleanup.md) and [**IRP\_MJ\_CLOSE**](../kernel/irp-mj-close.md) requests. Cleanup requests arrive after an application closes all handles on a file object, but sometimes before all I/O requests have completed. Close requests arrive after all I/O requests for the file object have been completed or canceled. For more information, see the following:
+Be sure that you understand the difference between [**IRP\_MJ\_CLEANUP**](../kernel/irp-mj-cleanup.md) and [**IRP\_MJ\_CLOSE**](../kernel/irp-mj-close.md) requests. Cleanup requests arrive after an application closes all handles on a file object, but sometimes before all I/O requests complete. Close requests arrive after all I/O requests for the file object have been completed or canceled. For more information, see the following:
 
 [DispatchCreate, DispatchClose, and DispatchCreateClose Routines](../kernel/dispatchcreate--dispatchclose--and-dispatchcreateclose-routines.md)
 
@@ -321,13 +321,13 @@ Memory integrity, also known as Hypervisor-protected Code Integrity (HVCI) uses 
 
 To implement HVCI compatible code, make sure your driver code does the following:
 
-- Opts in to NX by default
-- Uses NX APIs/flags for memory allocation (NonPagedPoolNx)
-- Does not use sections that are both writable and executable
-- Does not attempt to directly modify executable system memory
-- Does not use dynamic code in kernel
-- Does not load data files as executable
-- Section alignment is a multiple of 0x1000 (PAGE\_SIZE). For example, DRIVER\_ALIGNMENT=0x1000
+- Opts in to NX by default.
+- Uses NX APIs/flags for memory allocation (NonPagedPoolNx).
+- Does not use sections that are both writable and executable.
+- Does not attempt to directly modify executable system memory.
+- Does not use dynamic code in kernel.
+- Does not load data files as executable.
+- Section alignment is a multiple of 0x1000 (PAGE\_SIZE). For example, DRIVER\_ALIGNMENT=0x1000.
 
 For more information about using the tool and a list of incompatible memory calls, see [Implement HVCI compatible code](implement-hvci-compatible-code.md).
 
@@ -364,7 +364,7 @@ For more information, see the following:
 
 ### File Systems
 
-For more information, about file system driver security see the following:
+For more information about file system driver security, see the following:
 
 [Introduction to File Systems Security](../ifs/introduction-to-file-systems-security.md)
 
@@ -414,7 +414,7 @@ If you don't have suitable staff to review your code internally, consider engagi
 
 In considering security, a common methodology is to create specific threat models that attempt to describe the types of attacks that are possible. This technique is useful when designing a driver because it forces the developer to consider the potential attack vectors against a driver in advance. Having identified potential threats, a driver developer can then consider means of defending against these threats in order to bolster the overall security of the driver component.
 
-This article provides driver specific guidance for creating a lightweight threat model: [Threat modeling for drivers](threat-modeling-for-drivers.md). The article provides an example driver threat model diagram that can be used as a starting point for your driver.
+For guidance on creating a lightweight threat model for drivers, see [Threat modeling for drivers](threat-modeling-for-drivers.md). The article provides an example driver threat model diagram that you can use as a starting point for your driver.
 
 :::image type="content" source="images/sampledataflowdiagramkernelmodedriver.gif" alt-text="Sample data flow diagram illustrating a hypothetical kernel-mode driver.":::
 
@@ -434,25 +434,25 @@ Driver Verifier uses a set of interface rules and a model of the operating syste
 
 Driver Verifier allows for live testing of the driver. Driver Verifier monitors Windows kernel-mode drivers and graphics drivers to detect illegal function calls or actions that might corrupt the system. An attached debugger, allows viewing of OS and driver code execution in real time. Driver Verifier can subject the Windows drivers to a variety of stresses and tests to find improper behavior. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
 
-Driver Verifer works with both WDM and KMDF drivers. For the specifics of what it can check, see the following topics.
+Driver Verifier works with both WDM and KMDF drivers. For the specifics of what it can check, see the following topics.
 
 - [Rules for WDM Drivers](../devtest/sdv-rules-for-wdm-drivers.md)
 - [Rules for KMDF Drivers](../devtest/sdv-rules-for-kmdf-drivers.md)
 
-For more information about the drivers that Driver Verifier can work with, see [DDI Compliance Rules](../devtest/static-driver-verifier-rules.md) and [Supported Drivers](../devtest/supported-drivers.md). For the addtional verifier rules for specific types of drivers, see:
+For more information about the drivers that Driver Verifier can work with, see [DDI Compliance Rules](../devtest/static-driver-verifier-rules.md) and [Supported Drivers](../devtest/supported-drivers.md). For the additional verifier rules for specific types of drivers, see:
 
 - [Rules for NDIS Drivers](../devtest/sdv-rules-for-ndis-drivers.md)
 - [Rules for Storport Drivers](../devtest/sdv-rules-for-storport-drivers.md)
 - [Rules for Audio Drivers](../devtest/rules-for-audio-drivers.md)
 - [Rules for AVStream Drivers](../devtest/rules-for-avstream-drivers.md)
 
-To become familiar with DV, you can use one of the sample drivers (for example, the featured toaster sample: <https://github.com/Microsoft/Windows-driver-samples/tree/main/general/toaster/toastDrv/kmdf/func/featured>).
+To become familiar with Driver Verifier, you can use one of the sample drivers (for example, the featured toaster sample: <https://github.com/Microsoft/Windows-driver-samples/tree/main/general/toaster/toastDrv/kmdf/func/featured>).
 
 ## Check code with the hardware compatibility program tests
 
 **Security checklist item \#14:** *Use the security related hardware compatibility program tests to check for security issues.*
 
-The hardware compatibility program includes security related tests can be used to look for code vulnerabilities. The Windows Hardware Compatibility Program leverages the tests in the Windows Hardware Lab Kit (HLK). The HLK Device Fundamentals tests can be used on the command line to exercise driver code and probe for weakness. For general information about the device fundamentals tests and the hardware compatibility program, see [Windows Hardware Lab Kit](/windows-hardware/test/hlk/).
+The hardware compatibility program includes security related tests you can use to look for code vulnerabilities. The Windows Hardware Compatibility Program leverages the tests in the Windows Hardware Lab Kit (HLK). The HLK Device Fundamentals tests can be used on the command line to exercise driver code and probe for weakness. For general information about the device fundamentals tests and the hardware compatibility program, see [Windows Hardware Lab Kit](/windows-hardware/test/hlk/).
 
 The following tests are examples of tests that may be useful to check driver code for some behaviors associated with code vulnerabilities:
 
@@ -482,11 +482,11 @@ Consider the development of custom domain-specific security tests. To develop ad
 
 **Security checklist item \#15:** *Check compiled code with the tools like BinSkim and SignTool before it is uploaded to partner center.*
 
-Use tools like BinSkim and SignTool to examine binary files to check compiled code before it is uploaded to the partner center to be distributed using Windows Update. Having tools in place to check compiled binaries, before they are submited for distribution, adds in another layer of protection.
+Use tools like BinSkim and SignTool to examine binary files to check compiled code before it is uploaded to the partner center to be distributed using Windows Update. Having tools in place to check compiled binaries, before they are submitted for distribution, adds in another layer of protection.
 
 ### BinSkim
 
-BinSkim can identify coding and building practices that can potentially render the binary vulnerable. BinSkim checks for:
+BinSkim can identify coding and building practices that can potentially make the binary vulnerable. BinSkim checks for:
 
 - Use of outdated compiler tool sets - Binaries should be compiled against the most recent compiler tool sets wherever possible to maximize the use of current compiler-level and OS-provided security mitigations.
 - Insecure compilation settings - Binaries should be compiled with the most secure settings possible to enable OS-provided security mitigations, maximize compiler errors and actionable warnings reporting, among other things.
@@ -511,7 +511,7 @@ Code signed by a trusted Software Publishers Certificate (SPC) or Windows Hardwa
 Examples of dangerous behavior include the following:
 
 - Providing the ability to map arbitrary kernel, physical, or device memory to user mode.
-- Providing the ability to read or write arbitrary kernel, physical or device memory, including Port input/output (I/O).
+- Providing the ability to read or write arbitrary kernel, physical, or device memory, including Port input/output (I/O).
 - Providing access to storage that bypasses Windows access control.
 - Providing the ability to modify hardware or firmware that the driver was not designed to manage.
 
@@ -533,7 +533,7 @@ For a description of safe software deployment practices refer to the CISA [Safe 
 
 Anyone can submit a questionable driver using the *Microsoft Vulnerable and Malicious Driver Reporting Center*. Refer to this blog entry for information on how drivers are submitted for analysis - [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/)
 
-The Reporting Center can scan and analyze Windows drivers built for x86 and x64 architectures. Vulnerable and malicious scanned drivers are flagged for analysis and investigation by Microsoft’s Vulnerable Driver team. After vulnerable drivers are confirmed, an appropriate notification occurs, they are added to the vulnerable driver blocklist. For more information about that, see [Microsoft recommended driver block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules). These rules are applied by default to Hypervisor-protected code integrity (HVCI) enabled devices and Windows 10 in S mode.
+The Reporting Center can scan and analyze Windows drivers built for x86 and x64 architectures. Vulnerable and malicious scanned drivers are flagged for analysis and investigation by Microsoft’s Vulnerable Driver team. After vulnerable drivers are confirmed, an appropriate notification occurs, they are added to the vulnerable driver blocklist. For more information, see [Microsoft recommended driver block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules). These rules are applied by default to Hypervisor-protected code integrity (HVCI) enabled devices and Windows 10 in S mode.
 
 ## Review secure coding resources
 
@@ -591,7 +591,7 @@ Microsoft Visual Studio - [Use the C++ Core Guidelines checkers](/cpp/code-quali
 
 SBOMs provide a list of ingredients used in the creation of a piece of software, such as open-source software, components, and potentially even build tools. This enables producers and consumers to better inventory and evaluate license and vulnerability risk. Microsoft is using the [SPDX (Software Package Data Exchange)](https://spdx.dev/) as the SBOM document format. For more information see, [Generating Software Bills of Materials (SBOMs) with SPDX at Microsoft](https://devblogs.microsoft.com/engineering-at-microsoft/generating-software-bills-of-materials-sboms-with-spdx-at-microsoft/) and [Microsoft open sources its software bill of materials (SBOM) generation tool](https://devblogs.microsoft.com/engineering-at-microsoft/microsoft-open-sources-software-bill-of-materials-sbom-generation-tool/).
 
-[The Supply Chain Integrity, Transparency and Trust (SCITT) initiative](https://scitt.io/) is a set of IETF internet standards for managing the compliance of goods and services across end-to-end supply chains. SCITT supports the ongoing verification of goods and services where the authenticity of entities, evidence, policy, and artifacts can be assured and the actions of entities can be guaranteed to be authorized, non-repudiable, immutable, and auditable.
+[The Supply Chain Integrity, Transparency and Trust (SCITT) initiative](https://scitt.io/) is a set of IETF internet standards for managing the compliance of goods and services across end-to-end supply chains. SCITT supports the ongoing verification of goods and services where the authenticity of entities, evidence, policy, and artifacts is evaluated. The goal is that the actions of entities can be guaranteed to be authorized, non-repudiable, immutable, and auditable.
 
 ### Books
 
@@ -630,13 +630,13 @@ SAFECode offers free training as well:
 
 Driver security is a complex undertaking containing many elements, but here are a few key points to consider:
 
-- Drivers live in the windows kernel, and having an issue when executing in kernel exposes the entire operating system. Because of this, pay close attention to driver security and design with security in mind.
+- Drivers live in the Windows kernel, and having an issue when executing in kernel exposes the entire operating system. Because of this, pay close attention to driver security and design with security in mind.
 
 - Apply the principle of least privilege:
 
-    a. Use a strict SDDL string to restrict access to the driver
+    a. Use a strict SDDL string to restrict access to the driver.
 
-    b. Further restrict individual IOCTL's
+    b. Further restrict individual IOCTL's.
 
 - Create a threat model to identify attack vectors and consider whether anything can be restricted further.
 
@@ -646,6 +646,6 @@ Driver security is a complex undertaking containing many elements, but here are 
 
 - Use code scanning utilities such as CodeQL to look for known code vulnerabilities and remediate any identified issues.
 
-- Seek out knowledgeable code reviewers to look for issues that you may have missed.
+- Seek out knowledgeable code reviewers to look for issues that you might have missed.
 
 - Use driver verifiers and test your driver with multiple inputs, including corner cases.
