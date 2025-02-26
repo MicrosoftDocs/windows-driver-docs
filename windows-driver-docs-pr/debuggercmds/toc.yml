@@ -12,7 +12,7 @@
   - name: "WinDbg – Settings and workspaces"
     href: windbg-setup-preview.md
   - name: "WinDbg – Keyboard shortcuts"
-    href: windbg-keyboard-shortcuts-preview.md
+    href: windbg-keyboard-shortcuts.md
   - name: "WinDbg - Start a user-mode session"
     href: windbg-user-mode-preview.md
   - name: "WinDbg - Start a kernel mode session"
