@@ -199,13 +199,13 @@ This can help with network performance that can be affected when kdnic.sys drive
 
 ### Automatic reset of Host USB Controller
 
-Sometimes the Host USB stack can enter a degraded state which can cause Windows to fail to enumerate the target USB debug device.
-This will lead to the debug client failing to connect to the target machine even when all settings are correctly configured.
-This problem will present itself as a "banged out" device in device manager.
+Sometimes the debugger can encounter a banged USB stack condition which can be caused by a previously failed USB enumeration.
+This will lead to the debugger failing to connect to the target machine even when all settings are correctly configured.
 
-In IC scenarios, this issue can be worked around by manually disabling\re-enabling the parent USB controller. For some scenarios, like automated test labs, manual steps like this are not practical.
-By enabling the `RestartKdNetUsbDebugDevice` setting, the debugger client will automatically monitor for degraded USB enumeration
-capabilities and reset the appropriate USB controller when the degraded state is detected.
+In IC scenarios, this issue can be worked around by manually disabling\re-enabling the parent USB controller.
+For other scenarios, like automated test labs, manual steps like this are not feasible.
+By enabling the `RestartKdNetUsbDebugDevice` setting, the debugger client will automatically monitor for failed USB enumeration 
+and reset the USB stack when a banged device is detected. This will allow the debugger to connect without any user intervention.
 This functionality is built into the debugger client application and so is only active when the debugger client is running and the setting is enabled.
 
 #### How to enable:
