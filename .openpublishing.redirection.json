@@ -21327,7 +21327,12 @@
         "redirect_document_id":  false
     },
     {
-        "source_path":  "windows-driver-docs-pr/debugger/windbg-keyboard-shortcuts.md",
+        "source_path":  "windows-driver-docs-pr/debugger/windbg-keyboard-shortcuts-preview.md",
+        "redirect_URL":  "/windows-hardware/drivers/debuggercmds/windbg-keyboard-shortcuts",
+        "redirect_document_id":  false
+    },
+    {
+        "source_path":  "windows-driver-docs-pr/debuggercmds/windbg-keyboard-shortcuts-preview.md",
         "redirect_URL":  "/windows-hardware/drivers/debuggercmds/windbg-keyboard-shortcuts",
         "redirect_document_id":  false
     },
