@@ -23,7 +23,7 @@ Suggestions can also be invoked with command shortcut `Ctrl + Space`
 #### Snapshot debugging
 
 While debugging live processes **locally**, the debugger can take snapshots of the process and switch between the snapshots and the live process via icons on the "Extensions" tab.
-Similarly, the debugger can attach to a process snapshot of a process without suspending it via a "snapshot:pid=<process pid in hex>" protocol string in "Connect to remote debugger".
+Similarly, the debugger can attach to a process snapshot of a process without suspending it via a `snapshot:pid=<process pid in hex>` protocol string in "Connect to remote debugger".
 
 #### New data model APIs
 
@@ -80,10 +80,10 @@ The redistributable component `dbgeng.dll` now has improved stack walking suppor
 * Added Go to Disassembly context menu item to Breakpoints window
 * Added context menu to Disassembly window for Run to Instruction, Set Instruction Pointer, Go to Source, Toggle Breakpoint, Toggle Breakpoint state
 
-### Time Travel Debugging (TTD)[](https://microsoft.visualstudio.com/Debugging%20Experiences/_wiki/wikis/Debugging-Experiences.wiki/144768/Release-Notes?anchor=time-travel-debugging-(ttd))
+### Time Travel Debugging (TTD)
 
 * Updated to version 1.11.481.
-* See [TTD Release Notes](https://learn.microsoft.com/en-us/windows-hardware/drivers/debuggercmds/time-travel-debugging-release-notes#111481) for more details.
+* See [TTD Release Notes](/windows-hardware/drivers/debuggercmds/time-travel-debugging-release-notes#111481)
 
 ## 1.2410.11001.0
 
@@ -114,6 +114,7 @@ We've fixed several issues when interacting with WinDbg using a screen reader.
 * Fixed issue where WinDbgX would resize after appearing during launch.
 
 ### Time Travel Debugging (TTD)
+
 * Updated to version 1.11.429.
 * See [TTD Release Notes](time-travel-debugging-release-notes.md#111429) for more details.
 
