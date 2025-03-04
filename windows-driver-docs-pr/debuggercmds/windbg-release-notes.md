@@ -11,6 +11,99 @@ ms.date: 08/29/2024
 
 This topic provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
+## 1.2502.25002.0
+
+### New Features
+
+#### Command Window IntelliSense
+
+The command input prompt will automatically show suggested completions when first typed character is `.` (dot), `!` (bang), or `$` (dollarsign).
+Suggestions can also be invoked with command shortcut `Ctrl + Space`
+
+#### Snapshot debugging
+
+While debugging live processes **locally**, the debugger can take snapshots of the process and switch between the snapshots and the live process via icons on the "Extensions" tab.
+Similarly, the debugger can attach to a process snapshot of a process without suspending it via a `snapshot:pid=<process pid in hex>` protocol string in "Connect to remote debugger".
+
+#### New data model APIs
+
+* `Debugger.Utility.Symbols.GetTypeInformation`
+
+It will return the type information associated with any inpassed object.
+There is an optional argument which allows for automatic dereferencing (one level) of pointers if you really want the type underneath any pointer (or ref).
+
+* `Debugger.Utility.Control.CreateStepFilter(<Type>, <Pattern>)`
+
+Creates a new step filter. It's in this namespace adjacent to all the breakpoint creation APIs.
+
+* `Debugger.State.StepFilters`
+
+Returns the list of step filters having properties Id, Description, Type, Pattern, and IsEnabled.  There is a .Remove() method on step filter objects.
+
+#### Improved CLR debugging experience without clrcomposition.dll
+
+The redistributable component `dbgeng.dll` now has improved stack walking support for CLR frames without the need for `clrcomposition.dll` to be present.
+
+#### Random improvements
+
+* Better support for Linux kernel debugging (especially for 6.11+ kernels)
+* Support for ZSTD compressed KDUMP pages
+
+### Bug fixes
+
+* Update SOS to version 9.0.557512.
+* Fixed a performance regression in checking for revoked signatures when loading msdia140.dll.
+* Fixed a crash when reading the XSTATE context.
+* Fixed disabled breakpoint highlighting in Disassembly Window to differentiate from enabled breakpoint
+* Fixed a crash when closing a floating tool window
+* Fixed an issue where sometimes the Timelines window current position would not populate after opening a recent trace.
+* Fixed an issue in Disassembly and Memory windows would sometimes not update after entering a new value.
+* Fixed title bar color scheme in dark theme.
+* Fixed presentation of deferred breakpoints in Breakpoints window where Location would show 0x0 instead of the original expression entered when it was created. Additionally, it has a distinct icon indicating it is not bound.
+* Fixed an issue in Locals/Watch where right-clicking on a visible item would cause the view to scroll up.
+* Fixed issues with natvis, see [the original bug report](https://github.com/microsoftfeedback/WinDbg-Feedback/issues/231).
+* Fixed kd debugger spam with message `Error getting port connector information`, see [the original bug report](https://github.com/microsoftfeedback/WinDbg-Feedback/issues/230).
+* Fixed an issue with `gc` triggering conditional breakpoints when the condition was false.
+* YMM and ZMM registers can now be viewed when debugging a TTD trace.
+
+### Accessibility Fixes
+
+* Improved keyboard navigation for Locals, Watch, and Breakpoints windows.
+* Improved visual readability of the Ribbon, Locals, Watch, and Breakpoints windows.
+* Improved screen reader usability of Locals, Watch, and Breakpoints windows
+* Editing items in Locals, Watch, Breakpoints will maintain previous keyboard focus, selection, and scroll, when possible.
+* Improved general support for Windows Text Scaling
+
+### General UI Improvements
+
+* Added command to move focus between command input textbox to command output pane as Toggle Mark mode (like command prompt). Shortcut is `Ctrl + M`
+* Added Go to Disassembly context menu item to Breakpoints window
+* Added context menu to Disassembly window for Run to Instruction, Set Instruction Pointer, Go to Source, Toggle Breakpoint, Toggle Breakpoint state
+
+### Time Travel Debugging (TTD)
+
+* Updated to version 1.11.481.
+* See [TTD Release Notes](/windows-hardware/drivers/debuggercmds/time-travel-debugging-release-notes#111481)
+
+## 1.2410.11001.0
+
+### Breaking change
+
+* dbghelp.dll dynamically links to msdia140.dll. This should only affect tools that redistribute dbghelp.dll without also including msdia140.dll. Note that msdia140.dll is included in nuget packages that include dbghelp.dll.
+
+### Bug fixes
+
+* Fixed issue where extension gallery function aliases were not bound to the load triggers
+* Don't defunct the symbol store when ERROR_INTERNET_SECURITY_CHANNEL error is received
+* Fixed issue where a backslash could not be typed in the Command Window for non-English keyboard layouts.
+* Fixed issue where the edit text box in Breakpoints, Locals, and Watch windows would not scroll to cursor when text is longer than the column it is hosted in.
+* For CAB or ZIP dumps prioritize \*.dmp (single period) over \*.\*.dmp (double periods)
+
+### Accessibility Fixes
+
+* Column resizing via keyboard was fixed for Watch/Locals windows.
+* Improved keyboard navigation throughout WinDbgX.
+
 ## 1.2409.17001.0
 
 ### Accessibility fixes
@@ -21,6 +114,7 @@ We've fixed several issues when interacting with WinDbg using a screen reader.
 * Fixed issue where WinDbgX would resize after appearing during launch.
 
 ### Time Travel Debugging (TTD)
+
 * Updated to version 1.11.429.
 * See [TTD Release Notes](time-travel-debugging-release-notes.md#111429) for more details.
 
