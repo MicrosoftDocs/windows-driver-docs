@@ -1,6 +1,71 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/devtest/boot-options-in-previous-versions-of-windows.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/boot-options-in-previous-versions-of-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/boot-options-in-a-boot-ini-file.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/boot-options-in-a-boot-ini-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/overview-of-the-boot-ini-file.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/overview-of-the-boot-ini-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/editing-the-boot-ini-file.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/editing-the-boot-ini-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/backing-up-the-boot-ini-file.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/backing-up-the-boot-ini-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/boot-options-in-efi-nvram.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/boot-options-in-efi-nvram",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/overview-of-boot-options-in-efi.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/overview-of-boot-options-in-efi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/editing-boot-options-in-efi.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/editing-boot-options-in-efi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/backing-up-boot-options-in-efi.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/backing-up-boot-options-in-efi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/exporting-and-importing-boot-entries-in-efi.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/exporting-and-importing-boot-entries-in-efi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/identifying-backup-files-for-existing-boot-entries.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/identifying-backup-files-for-existing-boot-entries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/identifying-backup-files-for-deleted-boot-entries.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/identifying-backup-files-for-deleted-boot-entries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/recognizing-unusable-boot-entry-backup-files.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/recognizing-unusable-boot-entry-backup-files",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/audio/version-numbers-for-audio-drivers.md",
       "redirect_url": "/previous-versions/windows/drivers/audio/version-numbers-for-audio-drivers",
       "redirect_document_id": false
