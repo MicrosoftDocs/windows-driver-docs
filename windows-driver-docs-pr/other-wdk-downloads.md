@@ -88,7 +88,7 @@ The WDK is integrated with Visual Studio and Debugging Tools for Windows (WinDbg
 | Windows 11, Version 24H2 | [WDK 10.0.26100.1882 (released October 14, 2024)](https://go.microsoft.com/fwlink/?linkid=2290025) |
 | Windows 11, Version 24H2 | [WDK 10.0.26100.1591 (released September 18, 2024)](https://go.microsoft.com/fwlink/?linkid=2286137) |
 | Windows 11, Version 24H2 | [WDK 10.0.26100.1 (released May 2024)](https://go.microsoft.com/fwlink/?linkid=2272234) |
-| Windows 11, Version 23H2 | [WDK 10.1.22621.2428 (released October 24, 2023)](https://go.microsoft.com/fwlink/?linkid=2249371) |
+| Windows 11, Version 23H2 | [WDK 10.0.22621.2428 (released October 24, 2023)](https://go.microsoft.com/fwlink/?linkid=2249371) |
 | Windows 11, version 22H2 | [WDK for Windows 11, version 22H2 (10.0.22621.382, released May 24, 2022)](https://go.microsoft.com/fwlink/?linkid=2196230) |
 | Windows 11, version 21H2 | [WDK for Windows 11, version 21H2](https://go.microsoft.com/fwlink/?linkid=2166289) |
 | Windows Server 2022 | [WDK for Windows Server 2022](https://go.microsoft.com/fwlink/?linkid=2164149) |
@@ -100,7 +100,7 @@ The WDK is integrated with Visual Studio and Debugging Tools for Windows (WinDbg
 | Windows 8 | [WDK 8 Samples](https://go.microsoft.com/fwlink/p/?LinkId=616509) |
 
 >[!NOTE]
->Review [Hardware development kits for Windows 10, Version 2004 (10.19041.1)](https://social.msdn.microsoft.com/Forums/en-US/96c770a9-19a3-42d0-8d0e-bd200285d980/hardware-development-kits-for-windows-10-version-2004?forum=wdk), which addresses a bug with ExAllocatePoolZero.
+>Review [Hardware development kits for Windows 10, Version 2004 (10.0.19041.1)](https://social.msdn.microsoft.com/Forums/en-US/96c770a9-19a3-42d0-8d0e-bd200285d980/hardware-development-kits-for-windows-10-version-2004?forum=wdk), which addresses a bug with ExAllocatePoolZero.
 
 > [!IMPORTANT]
 > If you have installed the WDK for Windows 10, version 1703 on a system that had the WDK for Windows 10, version 1607 installed, some files from the earlier version of the WDK might have been removed.
