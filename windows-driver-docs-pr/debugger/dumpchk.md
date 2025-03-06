@@ -13,6 +13,9 @@ ms.date: 12/06/2024
 
 **DumpChk.exe** is included in [Debugging Tools for Windows](index.md).
 
+> [!NOTE]
+> Dumpchk is not included in the stand alone version of the Windows Debugger. If you are looking for dumpchk, install the [Windows Debugging Tools](debugger-download-tools.md).
+
 ## DumpChk command-line options
 
 ```dbgcmd
