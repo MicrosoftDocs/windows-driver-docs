@@ -49,13 +49,13 @@ To create a networking driver package that uses the kernel-mode socket programmi
 
 -   **Step 6:** Learn about the Windows driver build, test, and debug processes and tools.
 
-    Building a driver differs from building a user-mode application. For information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) testing, see [Building, Debugging, and Testing Drivers](/windows-hardware/drivers). For information about tools for building, testing, verifying, and debugging, see [Driver Development Tools](../devtest/index.md).
+    Building a driver differs from building a user-mode application. For information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) testing, see [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop). For information about tools for building, testing, verifying, and debugging, see [Driver Development Tools](../devtest/index.md).
 
 -   **Step 7:** Review the [Winsock Kernel (WSK TCP Echo Server) driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617935) in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
 -   **Step 8:** Develop, build, test, and debug your driver.
 
-    For information about iterative building, testing, and debugging, see [Overview of Build, Debug, and Test Process](/windows-hardware/drivers). This process helps ensure that you build a driver that works.
+    For information about iterative building, testing, and debugging, see [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop). This process helps ensure that you build a driver that works.
 
 -   **Step 9:** Create a driver package for your driver.
 

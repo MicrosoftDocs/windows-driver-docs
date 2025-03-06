@@ -6,7 +6,7 @@ ms.date: 02/03/2025
 
 # Tutorial: Write a Hello World Windows Driver (Kernel-Mode Driver Framework)
 
-This article describes how to write a small [Universal Windows driver](/windows-hardware/drivers) using Kernel-Mode Driver Framework (KMDF) and then deploy and install your driver on a separate computer.
+This article describes how to write a small *Universal Windows driver* using Kernel-Mode Driver Framework (KMDF) and then deploy and install your driver on a separate computer.
 
 ## Prerequisites
 

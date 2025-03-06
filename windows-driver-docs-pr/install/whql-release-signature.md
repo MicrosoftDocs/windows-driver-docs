@@ -14,7 +14,7 @@ keywords:
 
 # WHQL release signature
 
-Your Windows Hardware Quality Labs (WHQL) digitally signed driver package can be distributed through the [Windows Update](/windows-hardware/drivers) program. WHQL can digitally sign your [driver packages](driver-packages.md) if they pass [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) testing.
+Your Windows Hardware Quality Labs (WHQL) digitally signed driver package can be distributed through the Windows Update program. WHQL can digitally sign your [driver packages](driver-packages.md) if they pass [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) testing.
 
 Obtaining a WHQL release signature is part of the [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/). A WHQL release signature consists of a digitally signed [catalog file](catalog-files.md). The digital signature doesn't change the driver binary files or the INF file that you submit for testing.
 

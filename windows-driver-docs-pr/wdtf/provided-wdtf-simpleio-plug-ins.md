@@ -6,7 +6,7 @@ ms.date: 04/20/2017
 
 # Provided WDTF Simple I/O plug-ins
 
-Simple I/O plug-ins are extensions to the Windows Driver Test Framework (WDTF) that implement generic device-specific I/O functionality. If a plug-in exists for the type of device being tested, the [Device Fundamental tests](/windows-hardware/drivers) use the WDTF Simple I/O interfaces to test I/O.
+Simple I/O plug-ins are extensions to the Windows Driver Test Framework (WDTF) that implement generic device-specific I/O functionality. If a plug-in exists for the type of device being tested, the [Device Fundamental tests](/windows-hardware/drivers/devtest/device-fundamentals-tests) use the WDTF Simple I/O interfaces to test I/O.
 
 This topic lists the device types that have Simple I/O plug-ins and indicates if there are specific requirements for testing the device. These are the same requirements you need to follow when you use the [Windows Hardware Lab Kit (Windows HLK)](/windows-hardware/test/hlk/). The topic also offers ideas to troubleshoot and triage test failures.
 
@@ -261,7 +261,7 @@ xperf.exe -merge Audio_SimpleIo_Kernel.etl Audio_SimpleIo.etl Audio_SimpleIo _Me
 
 ## Device Fundamental tests that have specific device configuration requirements
 
-Before you run the following [Device Fundamental tests](/windows-hardware/drivers), the devices on the test computer must be configured according to the requirements described in this topic for the specific device types.
+Before you run the following [Device Fundamental tests](/windows-hardware/drivers/devtest/device-fundamentals-tests), the devices on the test computer must be configured according to the requirements described in this topic for the specific device types.
 
 - PCI Root Port Surprise Remove Test (PCI devices only)
 - Device Path Exerciser Test (Certification)
@@ -276,10 +276,9 @@ Before you run the following [Device Fundamental tests](/windows-hardware/driver
 
 [Device Fundamentals Tests](../devtest/device-fundamentals-tests.md)  
 
-[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)  
+[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers/develop/test-a-driver-package)  
 
-[How to How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers)  
+[How to How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers/develop/how-to-test-a-driver-at-runtime-from-a-command-prompt)
 
-[How to select and configure the Device Fundamentals tests](/windows-hardware/drivers)  
+[How to select and configure the Device Fundamentals tests](/windows-hardware/drivers/develop/how-to-select-and-configure-the-device-fundamental-tests)  
 
-[Troubleshooting the Device Fundamentals tests](/windows-hardware/drivers)

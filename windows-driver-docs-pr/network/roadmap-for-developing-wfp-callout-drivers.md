@@ -27,7 +27,7 @@ To create a Windows Filtering Platform (WFP) callout driver, follow these steps:
 
 -   Step 5: Learn about the Windows driver build, test, and debug processes and tools.
 
-    Building a driver differs from building a user-mode application. For information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) testing, see [Building, Debugging, and Testing Drivers](/windows-hardware/drivers). For information about building, testing, verifying, and debugging tools, see [Driver Development Tools](../devtest/index.md).
+    Building a driver differs from building a user-mode application. For information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) testing, see [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop). For information about building, testing, verifying, and debugging tools, see [Driver Development Tools](../devtest/index.md).
 
 -   Step 6: Review the [Windows Filtering Platform (WFP) driver samples](https://go.microsoft.com/fwlink/p/?LinkId=618680) in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
@@ -37,7 +37,7 @@ To create a Windows Filtering Platform (WFP) callout driver, follow these steps:
 
 -   Step 8: Develop, build, test, and debug your WFP callout driver.
 
-    For information about WFP callout driver specifics, see [Callout Driver Operations](callout-driver-operations.md) and [Callout Driver Installation](callout-driver-installation.md). For information about functions, structures, enumerations, or constants that are specific to WFP, see [Windows Filtering Platform Callout Drivers Reference](/windows-hardware/drivers/ddi/_netvista/). For information about iterative building, testing, and debugging, see [Overview of Build, Debug, and Test Process](/windows-hardware/drivers). This process will help ensure that you build a driver that works.
+    For information about WFP callout driver specifics, see [Callout Driver Operations](callout-driver-operations.md) and [Callout Driver Installation](callout-driver-installation.md). For information about functions, structures, enumerations, or constants that are specific to WFP, see [Windows Filtering Platform Callout Drivers Reference](/windows-hardware/drivers/ddi/_netvista/). For information about iterative building, testing, and debugging, see [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop). This process will help ensure that you build a driver that works.
 
 -   Step 9: Create a driver package for your WFP callout driver.
 

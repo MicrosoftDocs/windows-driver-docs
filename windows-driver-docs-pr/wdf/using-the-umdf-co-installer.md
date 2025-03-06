@@ -39,7 +39,7 @@ ms.date: 04/20/2017
 >```
 
 
-A co-installer updates the framework version stored on the machine and processes framework-specific INF file sections. This topic describes the two UMDF co-installers and when you need to include one with your [driver installation package](/windows-hardware/drivers) or reference a co-installer in your INF file.
+A co-installer updates the framework version stored on the machine and processes framework-specific INF file sections. This topic describes the two UMDF co-installers and when you need to include one with your driver installation package or reference a co-installer in your INF file.
 
 ## Getting the Co-installer Package
 
@@ -61,7 +61,7 @@ If you are writing a UMDF 2.0 driver for Windows 8.1, your INF file must refere
 
 If you are writing a UMDF 1.11 driver that targets operating systems prior to Windows 8.1, you must ensure that version 1.11 of the framework is installed on machines that use your driver. Here are three ways to do this:
 
--   Reference the update co-installer in your INF file, and include the update co-installer in your [driver installation package](/windows-hardware/drivers). When the operating system installs your driver, it runs the co-installer. If your driver will be distributed via Windows Update, you must choose this option.
+-   Reference the update co-installer in your INF file, and include the update co-installer in your [driver installation package](/windows-hardware/drivers/install/components-of-a-driver-package). When the operating system installs your driver, it runs the co-installer. If your driver will be distributed via Windows Update, you must choose this option.
 
 -   Redistribute the relevant MSU package (for example umdf-1.11-Win-6.0.msu) along with a setup application that calls it. You can find a sample of such an application in the src\\general\\wdkinstall subdirectory of your WDK installation. You might choose this option if you are writing a setup program that ships with the device and must be run before the device can be used. If you choose this option, your INF file must reference the configuration co-installer.
 

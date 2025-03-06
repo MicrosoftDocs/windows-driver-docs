@@ -18,7 +18,7 @@ The article contains basic information about the USB samples that are available 
 
 ## Building a Sample
 
-For information about building the sample drivers, see [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers).
+For information about building the sample drivers, see [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop).
 
 ## Related topics
 

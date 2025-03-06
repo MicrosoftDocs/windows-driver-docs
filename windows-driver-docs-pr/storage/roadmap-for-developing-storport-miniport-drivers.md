@@ -26,7 +26,7 @@ ms.date: 04/20/2017
 
 5. **Learn about the Windows driver build, test, and debug processes and tools.**
 
-   Building a driver is not the same as building a user-mode application. See [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers) for information about Windows driver build, debug, and test processes, driver signing, and Windows Logo testing. See [Driver Development Tools](../devtest/index.md) for information about building, testing, verifying, and debugging tools.
+   Building a driver is not the same as building a user-mode application. See [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop) for information about Windows driver build, debug, and test processes, driver signing, and Windows Logo testing. See [Driver Development Tools](../devtest/index.md) for information about building, testing, verifying, and debugging tools.
 
 6. **Review storport miniport driver samples.**
 
@@ -34,14 +34,14 @@ ms.date: 04/20/2017
 
 7. **Develop, build, test, and debug your storport miniport driver.**
 
-    See [Building a Driver](../develop/building-a-driver.md), [Testing a Driver](/windows-hardware/drivers), and [Debugging a Driver](/windows-hardware/drivers) for information about iterative building, testing, and debugging. This process will help ensure that you build a driver that works.
+    See [Building a Driver](../develop/building-a-driver.md), [Testing a Driver](/windows-hardware/drivers/develop/testing-a-driver), and [Debugging a Driver](/windows-hardware/drivers/develop/debugging-a-driver) for information about iterative building, testing, and debugging. This process will help ensure that you build a driver that works.
 
 8. **Create a driver package for your storport miniport driver.**
 
-    For more information, see [Creating a Driver Package](/windows-hardware/drivers).
+    For more information, see Get started developing Windows drivers](/windows-hardware/drivers/develop/get-started-developing-windows-drivers).
 
 9. **Sign and distribute your storport miniport driver.**
 
-    The final step is to (optionally) sign and distribute the driver. If your driver meets the quality standards that are defined for Windows Hardware Certification, you can distribute it through the Microsoft Windows Update program. For more information, see [Distributing a Driver Package](/windows-hardware/drivers).
+    The final step is to (optionally) sign and distribute the driver. If your driver meets the quality standards that are defined for Windows Hardware Certification, you can distribute it through the Microsoft Windows Update program. For more information, see [Distributing a Driver Package](/windows-hardware/drivers/develop/distributing-a-driver-package).
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.

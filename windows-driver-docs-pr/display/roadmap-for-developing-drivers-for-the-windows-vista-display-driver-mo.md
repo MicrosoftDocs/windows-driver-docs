@@ -34,7 +34,7 @@ To create these display drivers, perform the following steps:
 
 - Step 7: Develop, build, test, and debug your display drivers.
 
-  For information about how to develop display drivers for your graphics adapter, see [Initializing Display Miniport and User-Mode Display Drivers](initializing-display-miniport-and-user-mode-display-drivers.md) and [WDDM Operation Flow](windows-vista-and-later-display-driver-model-operation-flow.md). See [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers) for information about iterative building, testing, and debugging. For debugging tips that are specific to display drivers, see [Debugging tips for WDDM drivers](debugging-tips-for-wddm-drivers.md). This process helps ensure that you build a driver that works.
+  For information about how to develop display drivers for your graphics adapter, see [Initializing Display Miniport and User-Mode Display Drivers](initializing-display-miniport-and-user-mode-display-drivers.md) and [WDDM Operation Flow](windows-vista-and-later-display-driver-model-operation-flow.md). See [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop) for information about iterative building, testing, and debugging. For debugging tips that are specific to display drivers, see [Debugging tips for WDDM drivers](debugging-tips-for-wddm-drivers.md). This process helps ensure that you build a driver that works.
 
 - Step 8: Create a driver package for your display drivers.
 
