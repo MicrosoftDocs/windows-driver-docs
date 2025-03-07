@@ -39,6 +39,8 @@ Ctrl+Space      | Trigger command completion list popup
 TAB             | Trigger next autocompletion
 Shift+TAB       | Trigger previous autocompletion
 Ctrl+F          | Open find box
+↑ / ↓           | Navigate command history
+Shift+↑ / ↓     | Navigate command history matching current text in command input
 Ctrl+[          | Select previous output pane section
 Ctrl+]          | Select next output pane section
 
