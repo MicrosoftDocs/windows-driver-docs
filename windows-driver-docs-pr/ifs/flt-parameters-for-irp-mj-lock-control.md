@@ -45,11 +45,11 @@ typedef union _FLT_PARAMETERS {
 
 - **ByteOffset**: Starting byte offset within the file of the range to be locked.
 
-- **ProcessId**: Opaque pointer to the process object for the process that requested the byte-range lock.
+- **ProcessId**: Opaque pointer to the process object for the process that requested the byte-range lock.  Although fltKerrnel.h, states: "Only meaningful for FastIo locking operations" this is always populated.  It is distiguished from the value returned by FltGetRequestorProcess because.....
 
-- **FailImmediately**: Boolean value specifying whether the lock request should fail if the lock cannot be granted immediately. This member is set to **FALSE** if the requesting thread can be put into a wait state until the request is granted or **TRUE** if it cannot.  
+- **FailImmediately**: Boolean value specifying whether the lock request should fail if the lock cannot be granted immediately. This member is set to **FALSE** if the requesting thread can be put into a wait state until the request is granted or **TRUE** if it cannot.    Although fltKerrnel.h, states: "Only meaningful for FastIo locking operations" this is always populated. 
 
-- **ExclusiveLock**: Boolean value specifying whether an exclusive lock is requested. This member is set to **TRUE** if an exclusive lock is requested or **FALSE** if a shared lock is requested.
+- **ExclusiveLock**: Boolean value specifying whether an exclusive lock is requested. This member is set to **TRUE** if an exclusive lock is requested or **FALSE** if a shared lock is requested. Although fltKerrnel.h, states: "Only meaningful for FastIo locking operations" this is always populated.
 
 ## Remarks
 
