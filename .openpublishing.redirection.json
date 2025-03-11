@@ -1,6 +1,191 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/serports/serial-drivers-overview.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/serial-drivers-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/serial-i-o-request-interface.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/serial-i-o-request-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/sercx-io-control-requests.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/sercx-io-control-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/differences-between-sercx2-and-serial-sys.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/differences-between-sercx2-and-serial-sys",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/using-serial-sys-and-serenum-sys.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/using-serial-sys-and-serenum-sys",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/features-of-serial-and-serenum.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/features-of-serial-and-serenum",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/configuration-of-serial-devices-and-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/configuration-of-serial-devices-and-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/configuration-of-com-ports.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/configuration-of-com-ports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/configuration-of-non-plug-and-play-serial-device-connected-to-an-rs-23.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/configuration-of-non-plug-and-play-serial-device-connected-to-an-rs-23",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/configuration-of-plug-and-play-serial-device-connected-to-an-rs-232-po.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/configuration-of-plug-and-play-serial-device-connected-to-an-rs-232-po",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/configuration-of-plug-and-play-serial-device-that-requires-a-16550-uar.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/configuration-of-plug-and-play-serial-device-that-requires-a-16550-uar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/configuration-of-plug-and-play-serial-device-on-a-multifunction-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/configuration-of-plug-and-play-serial-device-on-a-multifunction-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/operation-of-serenum-and-serial.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/operation-of-serenum-and-serial",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/serenum-filtering-of-i-o-requests.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/serenum-filtering-of-i-o-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/enumerating-serenum-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/enumerating-serenum-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/enumerating-legacy-com-ports.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/enumerating-legacy-com-ports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/external-naming-of-com-ports.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/external-naming-of-com-ports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/opening-and-initializing-a-serial-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/opening-and-initializing-a-serial-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/opening-and-initializing-a-16550-uart-compatible-interface.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/opening-and-initializing-a-16550-uart-compatible-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/sharing-a-serial-device-interrupt.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/sharing-a-serial-device-interrupt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/powering-up-a-serial-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/powering-up-a-serial-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/setting-read-and-write-timeouts-for-a-serial-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/setting-read-and-write-timeouts-for-a-serial-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/removing-a-plug-and-play-serial-device-on-an-rs-232-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/removing-a-plug-and-play-serial-device-on-an-rs-232-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/removing-a-plug-and-play-rs-232-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/removing-a-plug-and-play-rs-232-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/serial-device-control-requests2.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/serial-device-control-requests2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/determining-which-com-port-a-debugger-uses.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/determining-which-com-port-a-debugger-uses",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/registry-settings-for-serial.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/registry-settings-for-serial",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/registry-settings-for-the-serial-service.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/registry-settings-for-the-serial-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/registry-settings-for-a-plug-and-play-serial-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/registry-settings-for-a-plug-and-play-serial-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/registry-settings-for-a-legacy-com-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/registry-settings-for-a-legacy-com-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/registry-settings-for-serenum.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/registry-settings-for-serenum",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/com-port-database.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/com-port-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/installing-serial-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/installing-serial-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/installing-serial-ports-and-com-ports.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/installing-serial-ports-and-com-ports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/installing-plug-and-play-serial-ports-and-com-ports.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/installing-plug-and-play-serial-ports-and-com-ports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/installing-an-advanced-properties-page-for-a-com-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/installing-an-advanced-properties-page-for-a-com-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/serial-irp-major-function-codes.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/serial-irp-major-function-codes",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/devtest/boot-options-in-previous-versions-of-windows.md",
       "redirect_url": "/previous-versions/windows/drivers/devtest/boot-options-in-previous-versions-of-windows",
       "redirect_document_id": false
