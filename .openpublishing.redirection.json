@@ -6998,6 +6998,11 @@
         "redirect_document_id": false
     },
     {
+      "source_path": "windows-driver-docs-pr/develop/get-started-developing-windows-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/develop/windows-driver-types",
+      "redirect_document_id": false
+    },
+    {
         "source_path": "windows-driver-docs-pr/develop/getting-started-with-universal-drivers.md",
         "redirect_URL": "/windows-hardware/drivers/develop/getting-started-with-windows-drivers",
         "redirect_document_id": false

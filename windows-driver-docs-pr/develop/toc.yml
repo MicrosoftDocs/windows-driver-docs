@@ -2,8 +2,8 @@
   href: index.md
 - name: Windows Drivers
   items:
-  - name: Get started developing Windows drivers
-    href: get-started-developing-windows-drivers.md
+  - name: Windows Driver Types
+    href: windows-driver-types.md
   - name: DCH Design Principles and Best Practices
     href: dch-principles-best-practices.md
   - name: Driver Package Isolation
