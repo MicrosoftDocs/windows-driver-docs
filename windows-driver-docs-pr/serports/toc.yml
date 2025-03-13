@@ -54,5 +54,3 @@
       href: reading-data-from-a-sercx2-managed-serial-port.md
   - name: SerCx2 Object Handles
     href: sercx2-object-handles.md
-- name: Serial Port Console Redirection Table (SPCR)
-  href: serial-port-console-redirection-table.md

@@ -22360,6 +22360,11 @@
       "source_path":  "windows-driver-docs-pr/develop/read-the-driver-test-results-log.md",
       "redirect_URL":  "/previous-versions/windows/drivers/develop/read-the-driver-test-results-log",
       "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/serports/serial-port-console-redirection-table.md",
+      "redirect_URL":  "/windows-hardware/drivers/bringup/serial-port-console-redirection-table",
+      "redirect_document_id":  false
     }
   ]
 }

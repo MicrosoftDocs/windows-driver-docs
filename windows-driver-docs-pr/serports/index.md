@@ -22,7 +22,9 @@ SerCx2 relieves the serial controller driver of the processing work required to 
 
 For more information about SerCx2, see [Using Version 2 of the Serial Framework Extension (SerCx2)](using-version-2-of-the-serial-framework-extension.md).
 
-## In this section
+## See also
 
 - [Using Version 2 of the Serial Framework Extension (SerCx2)](using-version-2-of-the-serial-framework-extension.md)
-- [Serial Port Console Redirection Table (SPCR)](serial-port-console-redirection-table.md)
+- [Serial Port Console Redirection Table (SPCR)](../bringup/serial-port-console-redirection-table.md)
+- [Previous Versions of Windows - Serial Controller Drivers](/previous-versions/windows/drivers/serports/)
+- [Serial IRP major function codes](serial-irp-major-function-codes.md)
