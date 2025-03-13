@@ -7,7 +7,7 @@ ms.date: 11/28/2017
 # Debugging Windows Vista
 
 
-To use WinDbg to debug Windows Vista, get the Windows 7 Debugging Tools for Windows package, which is included in the [Microsoft Windows Software Development Kit (SDK) for Windows 7 and .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=8279).
+To use WinDbg to debug Windows Vista, get the Windows 7 Debugging Tools for Windows package, which is included in the [Microsoft Windows Software Development Kit (SDK) for Windows 7 and .NET Framework 4.0 - ISO](https://www.microsoft.com/download/details.aspx?id=8442).
 
 If you want to download only Debugging Tools for Windows, install the SDK, and, during the installation, select the **Debugging Tools for Windows** box and clear all the other boxes.
 
