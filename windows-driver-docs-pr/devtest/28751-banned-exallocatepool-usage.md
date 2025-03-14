@@ -8,7 +8,9 @@ f1_keywords: ["C28751", "BANNED_API_USAGE_EXALLOCATEPOOL", "__WARNING_BANNED_API
 
 > Banned usage of ExAllocatePool and its variants: ExAllocatePool is a banned API for improved error handling purposes.
 
-This warning indicates that a function is being used that has been banned and has a more robust or secure replacement. This specific warning indicates the use of ExAllocatePool or one of its variants, which are deprecated.
+This warning indicates the use of `ExAllocatePool` or one of its variants, which are deprecated. These APIs should be substituted with their more robust and secure replacements `ExAllocatePool2`/`ExAllocatePool3`.
+
+The new API should be used even if you are already zero-ing your memory because there is too many ways to misuse the banned APIs. If performance is a concern the new APIs provides a flag (`POOl_FLAG_UNINITIALIZED`) that can be used to opt-out of zero-ing your memory. If you do so you will need to take the steps necessary to ensure the your memory is correctly initialized.
 
 ## Remarks
 
