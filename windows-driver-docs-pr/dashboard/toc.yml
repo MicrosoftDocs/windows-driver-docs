@@ -149,14 +149,20 @@
       items:
       - name: "Camera measures"
         href: camera-measures.md
-      - name: "Percent of Camera initialization failures"
+      - name: "Percent of camera initialization failures"
         href: camera-initialization-failure-rate.md
-      - name: "Percent of Camera preview failures"
+      - name: "Percent of camera preview failures"
         href: camera-preview-failure-rate.md
-      - name: "Percent of Camera photo capture failures"
+      - name: "Percent of camera photo capture failures"
         href: camera-photo-failure-rate.md
-      - name: "Percent of Camera video and stream failures"
+      - name: "Percent of camera video and stream failures"
         href: camera-video-and-stream-failure-rate.md
+      - name: "Percent of legacy camera DShow failures"
+        href: camera-legacy-DShow-failure-rate.md
+      - name: "Percent of camera DShow bridge engine failures"
+        href: camera-DShow-bridge-failure-rate.md
+      - name: "Percent of machines with camera failures"
+        href: camera-machines-failure-rate.md
     - name: "Fingerprint"
       items:
       - name: "Fingerprint measures"
@@ -185,6 +191,8 @@
         href: ESRT-pct-machines-blocked-bitlocker.md
       - name: "Percent of machines updated and successfully unlocked bitlocker recovery"
         href: ESRT-pct-machines-entered-bitlocker-recovery.md
+      - name: "Percent of machines passing TPM critical checks for attestation but might have PCR mismatches"
+        href: ESRT-pre-attestation-health-check.md
     - name: "Graphics"
       items:
       - name: "Graphics measures"
