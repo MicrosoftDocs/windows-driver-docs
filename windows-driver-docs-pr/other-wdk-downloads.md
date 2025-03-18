@@ -5,7 +5,7 @@ keywords:
 - Windows Driver Kit
 - previous versions
 - WDK
-ms.date: 11/27/2024
+ms.date: 3/13/2025
 ---
 
 # Other WDK downloads
@@ -28,15 +28,7 @@ Starting with the Windows 11, version 22H2 release of the WDK and EWDK, the kits
 
 Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of the same build system. You can run the Windows 11, version 24H2 WDK on Windows 7 and later.
 
-To develop drivers for Windows 8.1, Windows 8, and Windows 7, you need to install an older WDK (Windows 11, version 21H2 and previous) and an older version of Visual Studio. The following table shows the full list of build targets for WDK for Windows 11, version 21H2:
-
-| Client OS | Server OS |
-|--|--|
-| Windows 11, version 24H2 | Windows Server 2022 |
-| Windows 10 | Windows Server 2019, Windows Server 2016 |
-| Windows 8.1 | Windows Server 2012 R2 |
-| Windows 8 | Windows Server 2012 |
-| Windows 7 | Windows Server 2008 R2 SP1 |
+The latest Windows 11 WDK release can be used to develop drivers for lower level client and server operating system. See [Building Driver for Previous OS Release Using the Latest Windows Driver Kits](https://techcommunity.microsoft.com/blog/windowsdriverdev/building-drivers-for-previous-os-releases-using-the-latest-windows-driver-kit-wd/4374910) for details
 
 For links to older kits, see the table in Step 2 below.
 
@@ -83,6 +75,7 @@ The WDK is integrated with Visual Studio and Debugging Tools for Windows (WinDbg
 
 | Released with | WDK and related downloads |
 |--|--|
+| Windows 11, Version 24H2 | [WDK 10.0.26100.3323 (released March 14, 2025)](https://go.microsoft.com/fwlink/?linkid=2307500) |
 | Windows 11, Version 24H2 | [WDK 10.0.26100.2454 (released November 27, 2024)](https://go.microsoft.com/fwlink/?linkid=2297653) |
 | Windows 11, Version 24H2 | [WDK 10.0.26100.2161 (released November 4, 2024)](https://go.microsoft.com/fwlink/?linkid=2294834) |
 | Windows 11, Version 24H2 | [WDK 10.0.26100.1882 (released October 14, 2024)](https://go.microsoft.com/fwlink/?linkid=2290025) |
@@ -125,6 +118,7 @@ For more information about the EWDK, see [Using the Enterprise WDK](./develop/us
 
 | Versions of Windows | EWDK |
 |--|--|
+| Windows 11, version 24H2 | [Windows 11, version 24H2 (released March 14, 2025) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022) |
 | Windows 11, version 24H2 | [Windows 11, version 24H2 (released November 27, 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022) |
 | Windows 11, version 24H2 | [Windows 11, version 24H2 (released November 4, 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022) |
 | Windows 11, version 24H2 | [Windows 11, version 24H2 (released October 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022) |

@@ -1,12 +1,24 @@
 ---
 title: Windows Drivers Kit (WDK) release notes
 description: Highlights the latest features in new WDK releases.
-ms.date: 11/05/2024
+ms.date: 3/13/2025
 ---
 
 # Windows Driver Kit (WDK) release notes
 
 The following features and bug fixes are in Windows 11 24H2 WDK update.
+
+## Version 10.0.26100.3323
+
+*Released March 14, 2025*.
+
+### SoundWire Device Class for Audio (SDCA)  
+
+The SdcaClass driver will now send notifications to the attached SDCA XU driver for changes in the hardware Function Status control along with system posture changes.
+
+### Bluetooth LE Audio Bidectional Multichannel Streaming
+
+A new set of data structures are added to support bidirectional multichannel streaming, e.g., stereo render with mono capture, for Bluetooth LE Audio. In addition, now there are flags to specify the audio codec location for bidirectional multichannel streaming support
 
 ## Version 10.0.26100.2454
 
