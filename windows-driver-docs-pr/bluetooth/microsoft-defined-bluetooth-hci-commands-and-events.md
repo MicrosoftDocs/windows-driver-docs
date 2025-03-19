@@ -184,7 +184,7 @@ RSSI_sampling_period (1 octet):
 | Value | Parameter description |
 |--|--|
 | 0x00 | Reserved value. |
-| *N*&nbsp;=&nbsp;0xXX | The sampling interval in milliseconds.<br>Time period = *N* * 100 milliseconds<br>Mandatory Range: 0x01&nbsp;to&nbsp;0xFE |
+| *N*&nbsp;=&nbsp;0xXX | The sampling interval in multiples of 100 milliseconds.<br>Time period = *N* * 100 milliseconds<br>Mandatory Range: 0x01&nbsp;to&nbsp;0xFE |
 | 0xFF | Reserved value. |
 
 #### Return_parameters
@@ -455,7 +455,7 @@ RSSI_sampling_period (1 octet):
 | Value | Parameter description |
 |--|--|
 | 0x00 | The controller shall propagate all received advertisements to the host. |
-| *N*&nbsp;=&nbsp;0xXX | The sampling interval in milliseconds.<br>Time period = *N* * 100 milliseconds.<br>Mandatory Range: 0x01&nbsp;to&nbsp;0xFE |
+| *N*&nbsp;=&nbsp;0xXX | The sampling interval in multiples of 100 milliseconds.<br>Time period = *N* * 100 milliseconds.<br>Mandatory Range: 0x01&nbsp;to&nbsp;0xFE |
 | 0xFF | The controller shall not propagate any of the received advertisements to the host. |
 
 Monitor_options (1 octet):
