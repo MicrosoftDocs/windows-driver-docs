@@ -1,7 +1,6 @@
 ---
 title: Create a Device Metadata Experience
 description: After creating your device metadata files that provide the images and other features that make your device easily recognizable, you must submit them as an experience.
-ms.topic: article
 ms.date: 09/19/2024
 ---
 

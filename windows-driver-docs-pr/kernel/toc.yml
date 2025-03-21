@@ -655,57 +655,59 @@
   - name: "Adding a PnP Device to a Running System"
     href: adding-a-pnp-device-to-a-running-system.md
   - name: "Plug and Play Minor IRPs"
-    href: plug-and-play-minor-irps.md
-  - name: "IRP_MN_CANCEL_REMOVE_DEVICE"
-    href: irp-mn-cancel-remove-device.md
-  - name: "IRP_MN_CANCEL_STOP_DEVICE"
-    href: irp-mn-cancel-stop-device.md
-  - name: "IRP_MN_DEVICE_ENUMERATED"
-    href: irp-mn-device-enumerated.md
-  - name: "IRP_MN_DEVICE_USAGE_NOTIFICATION"
-    href: irp-mn-device-usage-notification.md
-  - name: "IRP_MN_EJECT"
-    href: irp-mn-eject.md
-  - name: "IRP_MN_FILTER_RESOURCE_REQUIREMENTS"
-    href: irp-mn-filter-resource-requirements.md
-  - name: "IRP_MN_QUERY_BUS_INFORMATION"
-    href: irp-mn-query-bus-information.md
-  - name: "IRP_MN_QUERY_CAPABILITIES"
-    href: irp-mn-query-capabilities.md
-  - name: "IRP_MN_QUERY_DEVICE_RELATIONS"
-    href: irp-mn-query-device-relations.md
-  - name: "IRP_MN_QUERY_DEVICE_TEXT"
-    href: irp-mn-query-device-text.md
-  - name: "IRP_MN_QUERY_ID"
-    href: irp-mn-query-id.md
-  - name: "IRP_MN_QUERY_INTERFACE"
-    href: irp-mn-query-interface.md
-  - name: "IRP_MN_QUERY_LEGACY_BUS_INFORMATION"
-    href: irp-mn-query-legacy-bus-information.md
-  - name: "IRP_MN_QUERY_PNP_DEVICE_STATE"
-    href: irp-mn-query-pnp-device-state.md
-  - name: "IRP_MN_QUERY_REMOVE_DEVICE"
-    href: irp-mn-query-remove-device.md
-  - name: "IRP_MN_QUERY_RESOURCE_REQUIREMENTS"
-    href: irp-mn-query-resource-requirements.md
-  - name: "IRP_MN_QUERY_RESOURCES"
-    href: irp-mn-query-resources.md
-  - name: "IRP_MN_QUERY_STOP_DEVICE"
-    href: irp-mn-query-stop-device.md
-  - name: "IRP_MN_READ_CONFIG"
-    href: irp-mn-read-config.md
-  - name: "IRP_MN_REMOVE_DEVICE"
-    href: irp-mn-remove-device.md
-  - name: "IRP_MN_SET_LOCK"
-    href: irp-mn-set-lock.md
-  - name: "IRP_MN_START_DEVICE"
-    href: irp-mn-start-device.md
-  - name: "IRP_MN_STOP_DEVICE"
-    href: irp-mn-stop-device.md
-  - name: "IRP_MN_SURPRISE_REMOVAL"
-    href: irp-mn-surprise-removal.md
-  - name: "IRP_MN_WRITE_CONFIG"
-    href: irp-mn-write-config.md
+    items: 
+    - name: "Plug and Play Minor IRPs"
+      href: plug-and-play-minor-irps.md
+    - name: "IRP_MN_CANCEL_REMOVE_DEVICE"
+      href: irp-mn-cancel-remove-device.md
+    - name: "IRP_MN_CANCEL_STOP_DEVICE"
+      href: irp-mn-cancel-stop-device.md
+    - name: "IRP_MN_DEVICE_ENUMERATED"
+      href: irp-mn-device-enumerated.md
+    - name: "IRP_MN_DEVICE_USAGE_NOTIFICATION"
+      href: irp-mn-device-usage-notification.md
+    - name: "IRP_MN_EJECT"
+      href: irp-mn-eject.md
+    - name: "IRP_MN_FILTER_RESOURCE_REQUIREMENTS"
+      href: irp-mn-filter-resource-requirements.md
+    - name: "IRP_MN_QUERY_BUS_INFORMATION"
+      href: irp-mn-query-bus-information.md
+    - name: "IRP_MN_QUERY_CAPABILITIES"
+      href: irp-mn-query-capabilities.md
+    - name: "IRP_MN_QUERY_DEVICE_RELATIONS"
+      href: irp-mn-query-device-relations.md
+    - name: "IRP_MN_QUERY_DEVICE_TEXT"
+      href: irp-mn-query-device-text.md
+    - name: "IRP_MN_QUERY_ID"
+      href: irp-mn-query-id.md
+    - name: "IRP_MN_QUERY_INTERFACE"
+      href: irp-mn-query-interface.md
+    - name: "IRP_MN_QUERY_LEGACY_BUS_INFORMATION"
+      href: irp-mn-query-legacy-bus-information.md
+    - name: "IRP_MN_QUERY_PNP_DEVICE_STATE"
+      href: irp-mn-query-pnp-device-state.md
+    - name: "IRP_MN_QUERY_REMOVE_DEVICE"
+      href: irp-mn-query-remove-device.md
+    - name: "IRP_MN_QUERY_RESOURCE_REQUIREMENTS"
+      href: irp-mn-query-resource-requirements.md
+    - name: "IRP_MN_QUERY_RESOURCES"
+      href: irp-mn-query-resources.md
+    - name: "IRP_MN_QUERY_STOP_DEVICE"
+      href: irp-mn-query-stop-device.md
+    - name: "IRP_MN_READ_CONFIG"
+      href: irp-mn-read-config.md
+    - name: "IRP_MN_REMOVE_DEVICE"
+      href: irp-mn-remove-device.md
+    - name: "IRP_MN_SET_LOCK"
+      href: irp-mn-set-lock.md
+    - name: "IRP_MN_START_DEVICE"
+      href: irp-mn-start-device.md
+    - name: "IRP_MN_STOP_DEVICE"
+      href: irp-mn-stop-device.md
+    - name: "IRP_MN_SURPRISE_REMOVAL"
+      href: irp-mn-surprise-removal.md
+    - name: "IRP_MN_WRITE_CONFIG"
+      href: irp-mn-write-config.md
   - name: "Passing PnP IRPs Down the Device Stack"
     href: passing-pnp-irps-down-the-device-stack.md
   - name: "Postponing PnP IRP Processing Until Lower Drivers Finish"
@@ -758,36 +760,38 @@
       href: handling-an-irp-mn-surprise-removal-request.md
     - name: "Using Remove Locks"
       href: using-remove-locks.md
-  - name: "Using PnP Notification"
-    href: using-pnp-notification.md
-  - name: "PnP Notification Overview"
-    href: pnp-notification-overview.md
-  - name: "Guidelines for Writing PnP Notification Callback Routines"
-    href: guidelines-for-writing-pnp-notification-callback-routines.md
-  - name: "Using PnP Device Interface Change Notification"
-    href: using-pnp-device-interface-change-notification.md
-  - name: "Registering for Device Interface Change Notification"
-    href: registering-for-device-interface-change-notification.md
-  - name: "Handling Device Interface Change Events"
-    href: handling-device-interface-change-events.md
-  - name: "Using PnP Target Device Change Notification"
-    href: using-pnp-target-device-change-notification.md
-  - name: "Registering for Target Device Change Notification"
-    href: registering-for-target-device-change-notification.md
-  - name: "Handling a GUID_TARGET_DEVICE_QUERY_REMOVE Event"
-    href: handling-a-guid-target-device-query-remove-event.md
-  - name: "Handling a GUID_TARGET_DEVICE_REMOVE_COMPLETE Event"
-    href: handling-a-guid-target-device-remove-complete-event.md
-  - name: "Handling a GUID_TARGET_DEVICE_REMOVE_CANCELLED Event"
-    href: handling-a-guid-target-device-remove-cancelled-event.md
-  - name: "Using PnP Hardware Profile Change Notification"
-    href: using-pnp-hardware-profile-change-notification.md
-  - name: "Registering for Hardware Profile Change Notification"
-    href: registering-for-hardware-profile-change-notification.md
-  - name: "Handling Hardware Profile Change Events"
-    href: handling-hardware-profile-change-events.md
-  - name: "Using PnP Custom Notification"
-    href: using-pnp-custom-notification.md
+  - name: "PnP Notifications"
+    items: 
+    - name: "Using PnP Notification"
+      href: using-pnp-notification.md
+    - name: "PnP Notification Overview"
+      href: pnp-notification-overview.md
+    - name: "Guidelines for Writing PnP Notification Callback Routines"
+      href: guidelines-for-writing-pnp-notification-callback-routines.md
+    - name: "Using PnP Device Interface Change Notification"
+      href: using-pnp-device-interface-change-notification.md
+    - name: "Registering for Device Interface Change Notification"
+      href: registering-for-device-interface-change-notification.md
+    - name: "Handling Device Interface Change Events"
+      href: handling-device-interface-change-events.md
+    - name: "Using PnP Target Device Change Notification"
+      href: using-pnp-target-device-change-notification.md
+    - name: "Registering for Target Device Change Notification"
+      href: registering-for-target-device-change-notification.md
+    - name: "Handling a GUID_TARGET_DEVICE_QUERY_REMOVE Event"
+      href: handling-a-guid-target-device-query-remove-event.md
+    - name: "Handling a GUID_TARGET_DEVICE_REMOVE_COMPLETE Event"
+      href: handling-a-guid-target-device-remove-complete-event.md
+    - name: "Handling a GUID_TARGET_DEVICE_REMOVE_CANCELLED Event"
+      href: handling-a-guid-target-device-remove-cancelled-event.md
+    - name: "Using PnP Hardware Profile Change Notification"
+      href: using-pnp-hardware-profile-change-notification.md
+    - name: "Registering for Hardware Profile Change Notification"
+      href: registering-for-hardware-profile-change-notification.md
+    - name: "Handling Hardware Profile Change Events"
+      href: handling-hardware-profile-change-events.md
+    - name: "Using PnP Custom Notification"
+      href: using-pnp-custom-notification.md
 - name: "Power Management"
   items: 
   - name: "Introduction to Power Management"

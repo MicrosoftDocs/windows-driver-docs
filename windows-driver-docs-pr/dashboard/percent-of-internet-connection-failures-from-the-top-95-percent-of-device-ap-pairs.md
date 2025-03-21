@@ -1,7 +1,6 @@
 ---
 title: Internet connection failures of device and access-point pairs with more than 50% signal quality
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of instances where a device fails to connect to the internet via Wi-Fi.
-ms.topic: article
 ms.date: 01/23/2023
 ---
 

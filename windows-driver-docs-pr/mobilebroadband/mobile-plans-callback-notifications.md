@@ -46,7 +46,7 @@ This is a revised version of the legacy [Inline profile delivery](mobile-plans-l
 
 The eSIM profile download will begin upon receipt of the callback notificaiton. Control is returned to the web portal immediately after the call. UI will be displayed to show the profile download progress as popup element rendered on top of the web portal. The web portal can continue to be navigated during this process.
 
-The following Javascript function shows an example of the API to inform the application that a profile download should begin:
+The following JavaScript function shows an example of the API to inform the application that a profile download should begin:
 
 ```Javascript
 var purchaseMetaData = MobilePlans.createPurchaseMetaData();
@@ -64,7 +64,7 @@ See [purchase metadata properties](#purchase-metadata-properties-details) for de
 
 ### Listening for network registration changes
 
-To listen for network registration changes, the `MobilePlansInlineProfileDownload.registrationChangedScript` must be set to a string that is the name of a Javascript function that takes a string for the `registrationArgs`.
+To listen for network registration changes, the `MobilePlansInlineProfileDownload.registrationChangedScript` must be set to a string that is the name of a JavaScript function that takes a string for the `registrationArgs`.
 
 The registration args are a string that represents a JSON object.
 
@@ -87,7 +87,7 @@ The registration args are a string that represents a JSON object.
 | partner | String | The device is on a roaming partner network provider. |
 | denied | String | The device was denied registration. |
 
-The following Javascript example shows how to implement a listener for network registration changed events.
+The following JavaScript example shows how to implement a listener for network registration changed events.
 
 ```Javascript
 function onRegistrationChanged(registrationArgs) {
@@ -103,7 +103,7 @@ function onRegistrationChanged(registrationArgs) {
 
 ### Listening for profile activation
 
-To listen for profile activation events, the `MobilePlansInlineProfileDownload.profileActivationCompleteScript` must be set to a string that is the name of a Javascript function that takes a string for the `activationArgs`.
+To listen for profile activation events, the `MobilePlansInlineProfileDownload.profileActivationCompleteScript` must be set to a string that is the name of a JavaScript function that takes a string for the `activationArgs`.
 
 The `activationArgs` is a string that represents a JSON object.
 
@@ -150,7 +150,7 @@ The `activationArgs` is a string that represents a JSON object.
 | invalidActivationCode | String | Indicates that the MO portal has given invalid activation code. |
 | invalidIccid | String | Indicates that the MO portal has given an invalid ICCID. |
 
-The following Javascript example shows how to implement a listener for the profile activation event.
+The following JavaScript example shows how to implement a listener for the profile activation event.
 
 ```Javascript
 function onActivationComplete(activationArgs) {
@@ -180,7 +180,7 @@ The following diagram shows the call flow for how the Mobile Plans app supports 
 
 Control is returned to the mobile operator Portal immediately after the call. UI will be displayed to inform the user that a profile will be installed later. After the `downloadDelay` minutes has occurred, a notification will be shown to the user, inviting them to begin the process of downloading the profile.
 
-The following Javascript function shows an example of the API to inform the application that a profile download with delay should begin
+The following JavaScript function shows an example of the API to inform the application that a profile download with delay should begin
 
 ```Javascript
 var purchaseMetaData = MobilePlans.createPurchaseMetaData();
@@ -216,7 +216,7 @@ The following diagram shows the high level flow for how the Mobile Plans program
 
 This operation can be canceled before the user sees a toast notification informing them that download is ready to begin.
 
-The following Javascript function shows an example of the API to cancel an asynchronous action.
+The following JavaScript function shows an example of the API to cancel an asynchronous action.
 
 ```Javascript
 var purchaseMetaData = MobilePlans.createPurchaseMetaData();
@@ -247,7 +247,7 @@ After the user successfully completes the activation flow, the web portal inform
 | activationCode | String | The activation code for downloading the eSIM profile. The ICCID for the profile is inferred from the profile metadata. |
 | networkRegistrationInterval | Unsigned integer | The time needed for the mobile operator to provision connectivity to the user. The Mobile Plans app attempts to register to the network within the specified time interval, in minutes. **Note** This time is rounded to the nearest 15 minute interval. For example, if this is set as 5 minutes, the application tries to re-register to the network after approximately 15 minutes (but it might take longer). if set to "0" the device will attempt to register immediately. |
 
-The following Javascript function shows an example of the API to inform the application that the user purchase requires a delayed provisioning of connectivity.
+The following JavaScript function shows an example of the API to inform the application that the user purchase requires a delayed provisioning of connectivity.
 
  ```Javascript
 function finishPurchaseWithDownload() {
@@ -283,7 +283,7 @@ The following diagram shows the high level flow for how the Mobile Plans app sup
 
 When the mobile operator would like to add balance to a given account, the web portal should call the `MobilePlansInlineOperations.notifyBalanceAddition` API.
 
-The following Javascript function shows an example of the API to inform the application that a balance addition has been made.
+The following JavaScript function shows an example of the API to inform the application that a balance addition has been made.
 
 ```Javascript
 function NotifyMobilePlans() {
@@ -320,7 +320,7 @@ The following diagram shows the call flow for how the Mobile Plans app supports 
 
 Balance addition can also be made to a non active profile if the ICCID of the profile is known. Using the `MobilePlansInlineOperations.notifyBalanceAddition` with an ICCID will inform the app of the balance addition as well as switch the active profile to the profile corresponding to the provided ICCID.
 
-The following Javascript function shows an example of the API to inform the application that a balance addition has been made.
+The following JavaScript function shows an example of the API to inform the application that a balance addition has been made.
 
 ```Javascript
 function NotifyMobilePlans() {
@@ -346,7 +346,7 @@ If a user cancels the activation flow in the web portal, the portal must invoke 
 | --- | --- | -- |
 | purchaseMetadata | Object | This object contains metadata about the user's purchase. This includes details about the user account, the purchase method or instrument, details if the user is adding a new line, and the name of the plan that the user purchased. All these are used for reporting. |
 
-The following Javascript function shows an example of the API to inform the application that the user has canceled a purchase.
+The following JavaScript function shows an example of the API to inform the application that the user has canceled a purchase.
 
  ```Javascript
 function finishPurchaseWithCancellation() {

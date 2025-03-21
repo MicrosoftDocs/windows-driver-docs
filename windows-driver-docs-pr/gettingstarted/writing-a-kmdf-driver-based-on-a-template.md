@@ -6,7 +6,7 @@ ms.date: 12/09/2024
 
 # Tutorial: Write a Universal Windows driver (KMDF) based on a template
 
-This topic describes how to write a [Universal Windows driver](/windows-hardware/drivers) using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
+This topic describes how to write a *Universal Windows driver* using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
 
 ## Prerequisites
 

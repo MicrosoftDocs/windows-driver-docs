@@ -3,7 +3,6 @@ title: Sensor Device Driver Design Guide
 description: Sensor device driver design guide
 ms.assetid: 74e8ae08-3e61-41be-aed0-e733dc6072cf
 ms.date: 01/11/2024
-ms.topic: article
 ---
 
 # Introduction to the Sensor and Location Platform in Windows

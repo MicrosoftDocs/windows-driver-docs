@@ -2,7 +2,6 @@
 title: Static Driver Verifier Known Issues
 description: "Learn more about: Static Driver Verifier Known Issues - Windows 10 Version 1809"
 ms.date: 11/07/2018
-ms.topic: article
 ---
 
 # Static Driver Verifier Known Issues - Windows 10 Version 1809

@@ -30,7 +30,7 @@ To create a Network Driver Interface Specification (NDIS) protocol driver packag
 
 - Step 4: Learn about the Windows driver build, test, and debug processes and tools.
 
-  Building a driver differs from building a user-mode application. For more information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) testing, see [Building, Debugging, and Testing Drivers](/windows-hardware/drivers). For more information about building, testing, verifying, and debugging tools, see [Driver Development Tools](../devtest/index.md).
+  Building a driver differs from building a user-mode application. For more information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) testing, see [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop). For more information about building, testing, verifying, and debugging tools, see [Driver Development Tools](../devtest/index.md).
 
 - Step 5: Read the protocol driver introduction topics.
   [Introduction to NDIS Protocol Drivers](introduction-to-ndis-protocol-drivers.md)
@@ -49,7 +49,7 @@ To create a Network Driver Interface Specification (NDIS) protocol driver packag
   - [Porting NDIS 6.x Drivers to NDIS 6.20](porting-ndis-6-x-drivers-to-ndis-6-20.md)
   - [Porting NDIS 6.x Drivers to NDIS 6.30](porting-ndis-6-x-drivers-to-ndis-6-30.md)
 
-  For more information about iterative building, testing, and debugging, see [Overview of Build, Debug, and Test Process](/windows-hardware/drivers). This process will help ensure that you build a driver that works.
+  For more information about iterative building, testing, and debugging, see [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop). This process will help ensure that you build a driver that works.
 
 - Step 9: Create a driver package for your driver.
 

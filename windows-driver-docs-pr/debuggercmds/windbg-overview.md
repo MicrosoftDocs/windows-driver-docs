@@ -101,7 +101,7 @@ To report any bugs or suggest a new feature, you can follow the feedback button 
 - Review these topics to install and configure WinDbg:
   - [WinDbg – Command line startup options](windbg-command-line-preview.md)
   - [WinDbg – Settings and workspaces](windbg-setup-preview.md)
-  - [WinDbg – Keyboard shortcuts](windbg-keyboard-shortcuts-preview.md)
+  - [WinDbg – Keyboard shortcuts](windbg-keyboard-shortcuts.md)
 
 - These topics describe how to get connected to the environment that you want to debug:
   - [WinDbg – Start a user-mode session](windbg-user-mode-preview.md)

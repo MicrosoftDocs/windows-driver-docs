@@ -3,7 +3,6 @@ title: "Using WinDbg and the debugger commands"
 description: "Start here for an overview on using the Windows debugger and the debugger commands."
 keywords: ["Debugging Tools for Windows", "Windows debugging", "Windows Debugger", "Kernel debugging", "Kernel debugger", "WinDbg"]
 ms.date: 10/05/2023
-ms.topic: article
 ---
 
 # Using WinDbg and the debugger commands

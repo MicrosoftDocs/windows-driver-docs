@@ -167,7 +167,7 @@ This isn't supported. An INF should only be changing settings on services create
 
 ## Using AddReg to modify intrinsic state of a service
 
-If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to modify intrinsic service state, then the INF isn't compliant with driver package isolation.  Intrinsic service state is state about the serivce that is managed by the Service Control Manager.  This includes, but is not limited to:
+If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to modify intrinsic service state, then the INF isn't compliant with driver package isolation.  Intrinsic service state is state about the service that is managed by the Service Control Manager.  This includes, but is not limited to:
 * Display name
 * Description
 * Image path

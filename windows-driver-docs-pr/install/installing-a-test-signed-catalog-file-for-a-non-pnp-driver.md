@@ -18,7 +18,7 @@ A driver installation application can programmatically install a catalog file in
 
 Alternatively, you can use the [**SignTool**](../devtest/signtool.md) tool to install a [catalog file](catalog-files.md) in the system component and driver database. However, SignTool is not a redistributable tool. Therefore, an installation application can use SignTool on a computer only if the tool is already installed on the computer in a manner that complies with the Microsoft Software License Terms for the tool. For more information about this approach, see [Installing a Catalog File by using SignTool](installing-a-catalog-file-by-using-signtool.md).
 
-**Tip**   Using embedded signatures is generally easier and more efficient than by using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](/windows-hardware/drivers).
+**Tip**   Using embedded signatures is generally easier and more efficient than by using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Introduction to Test-Signing](/windows-hardware/drivers/install/introduction-to-test-signing).
 
  
 

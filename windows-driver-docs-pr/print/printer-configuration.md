@@ -1,16 +1,15 @@
 ---
 title: Printer Configuration
-description: Printer Configuration
+description: Provides information on configuring printers.
 keywords:
-- installing drivers WDK printer , configurng printers
+- installing drivers WDK printer , configuring printers
 - printer driver installations WDK , configuring printers
 - printer configuration WDK
 - printer drivers WDK , configuring
-ms.date: 04/20/2017
+ms.date: 02/20/2025
 ---
 
-# Printer Configuration
-
+# Printer configuration
 
 This section includes the following topics:
 
@@ -21,11 +20,3 @@ This section includes the following topics:
 [Bidirectional Communication](bidirectional-communication.md)
 
 [Printer Driver Isolation](printer-driver-isolation.md)
-
- 
-
- 
-
-
-
-

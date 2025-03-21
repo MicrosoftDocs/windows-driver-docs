@@ -1,12 +1,11 @@
 ---
 title: Using Nt and Zw Versions of the Native System Services Routines
-description: Using Nt and Zw Versions of the Native System Services Routines
+description: Provides information about using Nt and Zw Versions of the native system services routines.
 keywords: ["Native System Services API WDK"]
 ms.date: 06/16/2017
 ---
 
-# Using Nt and Zw Versions of the Native System Services Routines
-
+# Using Nt and Zw Versions of the native system services routines
 
 The Windows native operating system services API is implemented as a set of routines that run in kernel mode. These routines have names that begin with the prefix **Nt** or **Zw**. Kernel-mode drivers can call these routines directly. User-mode applications can access these routines by using system calls.
 
@@ -18,7 +17,7 @@ When a user-mode application calls the **Nt** or **Zw** version of a native syst
 
 Native system services routines make additional assumptions about the parameters that they receive. If a routine receives a pointer to a buffer that was allocated by a kernel-mode driver, the routine assumes that the buffer was allocated in system memory, not in user-mode memory. If the routine receives a handle that was opened by a user-mode application, the routine looks for the handle in the user-mode handle table, not in the kernel-mode handle table.
 
-In a few instances, the meaning of a parameter value differs more significantly between calls from user mode and from kernel mode. For example, the [**ZwNotifyChangeKey**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwnotifychangekey) routine (or its **NtNotifyChangeKey** counterpart) has a pair of input parameters, *ApcRoutine* and *ApcContext*, that mean different things, depending on whether the parameters are from a user-mode or kernel-mode source. For a call from user mode, *ApcRoutine* points to an APC routine and *ApcContext* points to a context value that the operating system supplies when it calls the APC routine. For a call from kernel mode, *ApcRoutine* points to a [**WORK\_QUEUE\_ITEM**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_work_queue_item) structure, and *ApcContext* specifies the type of work queue item that is described by the **WORK\_QUEUE\_ITEM** structure.
+In a few instances, the meaning of a parameter value differs more significantly between calls from user mode and from kernel mode. For example, the [**ZwNotifyChangeKey**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwnotifychangekey) routine (or its **NtNotifyChangeKey** counterpart) has a pair of input parameters, *ApcRoutine* and *ApcContext*, that mean different things, depending on whether the parameters are from a user-mode or kernel-mode source. For a call from user mode, *ApcRoutine* points to an APC routine and *ApcContext* points to a context value that the operating system supplies when it calls the APC routine. For a call from kernel mode, *ApcRoutine* points to a [**WORK_QUEUE_ITEM**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_work_queue_item) structure, and *ApcContext* specifies the type of work queue item that is described by the **WORK_QUEUE_ITEM** structure.
 
 This section includes the following topics:
 
@@ -31,4 +30,3 @@ This section includes the following topics:
 [Specifying Access Rights](access-mask.md)
 
 [NtXxx Routines](ntxxx-routines.md)
-

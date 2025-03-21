@@ -2,7 +2,6 @@
 title: Universal Serial Bus (USB)
 description: Learn to develop Windows drivers for USB devices.
 ms.date: 12/04/2024
-ms.topic: article
 ---
 
 # Universal Serial Bus (USB)

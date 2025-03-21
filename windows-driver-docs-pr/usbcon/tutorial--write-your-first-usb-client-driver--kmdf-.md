@@ -170,7 +170,7 @@ To configure your target computer for WPP tracing:
 > [!NOTE]
 > Do *not* specify the hardware ID of your device under **Hardware ID Driver Update**. The hardware ID must be specified only in your driver's information (INF) file.
 
-For more information about deploying the driver to the target system in Visual Studio, see [Deploying a Driver to a Test Computer](/windows-hardware/drivers).
+For more information about deploying the driver to the target system in Visual Studio, see [Deploying a Driver to a Test Computer](/windows-hardware/drivers/develop/test-a-driver-package).
 
 You can also manually install the driver on the target computer by using Device Manager. If you want to install the driver from a command prompt, these utilities are available:
 

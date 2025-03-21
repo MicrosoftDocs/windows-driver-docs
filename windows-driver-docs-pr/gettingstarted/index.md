@@ -2,7 +2,6 @@
 title: Get Started with Drivers on Windows
 description: Learn fundamental concepts about drivers. In this section, you will learn about drivers, the different types of drivers, and how to write a driver.
 ms.date: 09/27/2024
-ms.topic: article
 ---
 
 # Get started with drivers on Windows

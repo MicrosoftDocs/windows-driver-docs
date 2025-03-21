@@ -1,7 +1,6 @@
 ---
 title: Trusted certificates
 description: Trusted certificates
-ms.topic: article
 ms.date: 04/20/2017
 ---
 

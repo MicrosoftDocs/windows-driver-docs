@@ -1,7 +1,6 @@
 ---
 title: Percentage of devices with SWDRM playback that triggered the Catalog reload event
 description: Devices that experience a Code Integrity catalog reload event when loading binaries into mfpmp.exe, may receive a timeout from Netflix and other applications. This "device based" measure is used to capture this scenario.
-ms.topic: article
 ms.date: 06/20/2024
 ---
 
@@ -28,4 +27,4 @@ DRM (Digital Rights Management) techniques (Software or Hardware) are used durin
 
 1. The measure is computed daily. Each row corresponds to a device and the metric value is 1 or 0 respectively, if the device did or did not hit a catalog reload event.
 2. This information is then directly input to Mission control after leveraging the graphics BYOD modules which adds additional GPU related columns.
-3. One additional check is that we only associate IHVs with their missing dlls (such as only nv*.dll, amd*.dll and ig*.dll files are associated with Nvidia, AMD and Intel respectively) so that third party dlls with missing page hashes and unsigned OS dlls don't corrupt this measure
+3. One additional check is that we only associate IHVs with their missing dlls (such as only nv*.dll, amd*.dll and ig*.dll files are associated with NVIDIA, AMD and Intel respectively) so that third party dlls with missing page hashes and unsigned OS dlls don't corrupt this measure

@@ -1,6 +1,6 @@
 ---
 title: Installing Printers Over a Network
-description: Installing Printers Over a Network
+description: Provides information about installing printers over a network.
 keywords:
 - installing drivers WDK printer , over network
 - printer driver installations WDK , over network
@@ -10,11 +10,10 @@ keywords:
 - network-shared printers WDK
 - sharing printers over network
 - connections WDK printer
-ms.date: 04/20/2017
+ms.date: 02/21/2025
 ---
 
-# Installing Printers Over a Network
-
+# Installing printers over a network
 
 This section includes the following topics:
 
@@ -25,11 +24,3 @@ This section includes the following topics:
 [Installing TCP/IP Printers](installing-tcp-ip-printers.md)
 
 [Web Services Device Installation](web-services-device-installation.md)
-
- 
-
- 
-
-
-
-

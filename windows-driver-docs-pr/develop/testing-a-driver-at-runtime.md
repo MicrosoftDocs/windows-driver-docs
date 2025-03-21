@@ -79,14 +79,10 @@ For information about deploying a driver automatically at build time, see [Deplo
 
 For information about the driver tests and test categories, see [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md). For information about the testing framework, see [Test Authoring and Execution Framework](../taef/index.md) (TAEF) and [Windows Driver Test Framework](../wdtf/index.md) (WDTF).
 
-You can write your own driver tests and deploy those tests on test computers. For more information, see [How to write a driver test](how-to-write-a-driver-test-.md).
-
 Running the Device Fundamentals tests in Visual Studio early in the development cycle will help you when are finally ready to test your driver using the [Windows Hardware Certification Kit (HCK)](/windows-hardware/test/hlk/).
 
 ## <span id="related_topics"></span>Related topics
 
-
-* [How to run the HCK Test Suites in WDK 8.1](run-the-hck-test-suites-in-the-wdk.md)
 * [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
 * [Getting Started with Windows Debugging](../debugger/getting-started-with-windows-debugging.md)

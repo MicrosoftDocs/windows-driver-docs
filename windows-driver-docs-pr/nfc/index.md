@@ -11,7 +11,6 @@ keywords:
 - smart card
 - smartcard
 ms.date: 01/11/2024
-ms.topic: article
 ---
 
 # Near field communications (NFC) design guide

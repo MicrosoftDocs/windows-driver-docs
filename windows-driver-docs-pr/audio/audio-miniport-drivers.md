@@ -43,8 +43,6 @@ Various aspects of miniport driver development are discussed in the following to
 
 [Power Management for Audio Devices](power-management-for-audio-devices.md)
 
-[Version Numbers for Audio Drivers](version-numbers-for-audio-drivers.md)
-
 [Other Implementation Issues for Audio Drivers](other-implementation-issues-for-audio-drivers.md)
 
  

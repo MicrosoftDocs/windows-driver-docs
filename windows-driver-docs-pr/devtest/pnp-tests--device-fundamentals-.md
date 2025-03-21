@@ -12,7 +12,7 @@ The Device Fundamentals PnP tests force a driver to handle almost all of the PnP
 ## PNP tests
 
 
-The Plug and Play (PnP) tests execute various PnP-related code paths in the driver and user-mode components. The PnP tests should be run with [Driver Verifier](driver-verifier.md) enabled on the test computer. For information about enabling Driver Verifier, see [Driver Verifier properties for driver projects](/windows-hardware/drivers).
+The Plug and Play (PnP) tests execute various PnP-related code paths in the driver and user-mode components. The PnP tests should be run with [Driver Verifier](driver-verifier.md) enabled on the test computer. For information about enabling Driver Verifier, see [Driver Verifier properties for driver projects](/windows-hardware/drivers/develop/driver-verifier-properties-for--driver-projects).
 
 <table>
 <colgroup>
@@ -293,7 +293,7 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup\LogLevel
 ## Related topics
 
 
-[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)
+[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers/develop/test-a-driver-package)
 
 [How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)
 
@@ -301,5 +301,5 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup\LogLevel
 
 [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 
-[How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers)
+[How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers/develop/how-to-test-a-driver-at-runtime-from-a-command-prompt)
 

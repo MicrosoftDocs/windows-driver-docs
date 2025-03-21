@@ -1,7 +1,6 @@
 ---
 title: Share a driver with a partner
 description: To share a driver with one of your partners, create a hardware submission and follow the steps in this article.
-ms.topic: article
 ms.date: 09/18/2024
 ---
 

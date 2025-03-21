@@ -1,6 +1,5 @@
 ---
 title: Manage hardware dashboard users
-ms.topic: article
 description: This article describes how to manage your hardware dashboard users with Partner Center User Management.
 ms.date: 09/11/2024
 ---

@@ -49,13 +49,13 @@ While the preferred installation method is to use the App Installer, you can als
 
 ### Extract the files from an already installed TTD.exe command line utility
 
-If you have already installed the TTD command line utility, you can extract the files from the installed location. In Powershell you would do this to find the installed location:
+If you have already installed the TTD command line utility, you can extract the files from the installed location. In PowerShell you would do this to find the installed location:
 
 ```powershell
 (Get-AppxPackage | where Name -eq 'Microsoft.TimeTravelDebugging').InstallLocation
 ```
 
-From there you can copy all the binaries (*.dll, *.exe, *.sys) to a new location. Here is one way to do this in Powershell:
+From there you can copy all the binaries (*.dll, *.exe, *.sys) to a new location. Here is one way to do this in PowerShell:
 
 ```powershell
 robocopy.exe (Get-AppxPackage | where Name -eq 'Microsoft.TimeTravelDebugging').InstallLocation c:\myttd *.exe *.dll *.sys /E /XD AppxMetadata
@@ -95,7 +95,7 @@ The TTDRecordUI.dll is only needed if you want to use the UI to control recordin
 ### Download the TTD.exe command line utility package and extract the files manually
 
 If you do not want to install the TTD command line utility, you can download the package and extract the files manually. The following
-Powershell script will:
+PowerShell script will:
 * Get the URL for the current version of TTD from https://aka.ms/ttd/download.
 * Download the MSIX bundle.
 * Extract the requested architecture's MSIX from MSIX bundle.
@@ -390,7 +390,7 @@ Using these options can result in a significant reduction in recording overhead 
 `-passThroughExit`
 
 Pass the guest process exit value through as TTD.exe's exit value. This value is available to batch files
-through the `%ERRORLEVEL%` variable. Powershell and other command line environments offer mechanisms for getting the process exit value as well.
+through the `%ERRORLEVEL%` variable. PowerShell and other command line environments offer mechanisms for getting the process exit value as well.
 
 `-onInitCompleteEvent <eventName>`
 

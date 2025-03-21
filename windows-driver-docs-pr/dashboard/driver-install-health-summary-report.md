@@ -1,7 +1,6 @@
 ---
 title: Driver Install and Health Summary Report
 description: Describes the driver install and health summary report available to driver publishers
-ms.topic: article
 ms.date: 10/31/2023
 ---
 

@@ -2,24 +2,22 @@
 title: High-Resolution Timers
 description: Starting with Windows 8.1, drivers can use the ExXxxTimer routines to manage high-resolution timers.
 keywords: ["high-resolution timers", "timer accuracy", "timer resolution", "system clock granularity", "EX_TIMER_HIGH_RESOLUTION", "ExXxxTimer routines", "ExQueryTimerResolution", "ExSetTimerResolution"]
-ms.date: 06/16/2017
+ms.date: 02/21/2025
 ---
 
-# High-Resolution Timers
-
+# High-resolution timers
 
 Starting with Windows 8.1, drivers can use the [**Ex*Xxx*Timer**](exxxxtimer-routines-and-ex-timer-objects.md) routines to manage high-resolution timers. The accuracy of a high-resolution timer is limited only by the maximum supported resolution of the system clock. In contrast, timers that are limited to the default system clock resolution are significantly less accurate.
 
 However, high-resolution timers require system clock interrupts to—at least, temporarily—occur at a higher rate, which tends to increase power consumption. Thus, drivers should use high-resolution timers only when timer accuracy is essential, and use default-resolution timers in all other cases.
 
-To create a high-resolution timer, a WDM driver calls the [**ExAllocateTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatetimer) routine and sets the EX\_TIMER\_HIGH\_RESOLUTION flag in the *Attributes* parameter. When the driver calls the [**ExSetTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exsettimer) routine to set the high-resolution timer, the operating system increases the resolution of the system clock, as necessary, so that the times at which the timer expires more precisely correspond to the nominal expiration times specified in the *DueTime* and *Period* parameters.
+To create a high-resolution timer, a WDM driver calls the [**ExAllocateTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatetimer) routine and sets the EX_TIMER_HIGH_RESOLUTION flag in the *Attributes* parameter. When the driver calls the [**ExSetTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exsettimer) routine to set the high-resolution timer, the operating system increases the resolution of the system clock, as necessary, so that the times at which the timer expires more precisely correspond to the nominal expiration times specified in the *DueTime* and *Period* parameters.
 
-A Kernel-Mode Driver Framework (KMDF) driver can call the [**WdfTimerCreate**](/windows-hardware/drivers/ddi/wdftimer/nf-wdftimer-wdftimercreate) method to create a high-resolution timer. In this call, the driver passes a pointer to a [**WDF\_TIMER\_CONFIG**](/windows-hardware/drivers/ddi/wdftimer/ns-wdftimer-_wdf_timer_config) structure as a parameter. To create a high-resolution timer, the driver sets the **UseHighResolutionTimer** member of this structure to **TRUE**. This member is a part of the structure starting with Windows 8.1 and KMDF version 1.13.
+A Kernel-Mode Driver Framework (KMDF) driver can call the [**WdfTimerCreate**](/windows-hardware/drivers/ddi/wdftimer/nf-wdftimer-wdftimercreate) method to create a high-resolution timer. In this call, the driver passes a pointer to a [**WDF_TIMER_CONFIG**](/windows-hardware/drivers/ddi/wdftimer/ns-wdftimer-_wdf_timer_config) structure as a parameter. To create a high-resolution timer, the driver sets the **UseHighResolutionTimer** member of this structure to **TRUE**. This member is a part of the structure starting with Windows 8.1 and KMDF version 1.13.
 
 ## Controlling timer accuracy
 
-
-For example, for Windows running on an x86 processor, the default interval between system clock ticks is typically about 15 milliseconds, and the minimum interval between system clock ticks is about 1 millisecond. Thus, the expiration time of a default-resolution timer (which **ExAllocateTimer** creates if the EX\_TIMER\_HIGH\_RESOLUTION flag is not set) can be controlled only to within about 15 milliseconds, but the expiration time of a high-resolution timer can be controlled to within a millisecond.
+For example, for Windows running on an x86 processor, the default interval between system clock ticks is typically about 15 milliseconds, and the minimum interval between system clock ticks is about 1 millisecond. Thus, the expiration time of a default-resolution timer (which **ExAllocateTimer** creates if the EX_TIMER_HIGH_RESOLUTION flag is not set) can be controlled only to within about 15 milliseconds, but the expiration time of a high-resolution timer can be controlled to within a millisecond.
 
 If a driver specifies a relative expiration time for a default-resolution timer, the timer can expire up to about 15 milliseconds earlier or later than the specified expiration time. If a driver specifies a relative expiration time for a high-resolution timer, the timer can expire as late as about a millisecond after the specified expiration time but it never expires early. For more information about the relationship between system clock resolution and timer accuracy, see [Timer Accuracy](timer-accuracy.md).
 
@@ -33,8 +31,7 @@ Starting with Windows 8, a driver can call the [**ExQueryTimerResolution**](/wi
 
 ## Comparison to ExSetTimerResolution
 
-
-Starting with Windows 2000, a driver can call the [**ExSetTimerResolution**](calling-exsettimerresolution-while-processing-a-power-irp.md) routine to change the time interval between successive system clock interrupts. For example, a driver can call this routine to change the system clock from its default rate to its maximum rate to improve timer accuracy. However, using **ExSetTimerResolution** has several disadvantages compared to using high-resolution timers created by **ExAllocateTimer**.
+A driver can call the [**ExSetTimerResolution**](calling-exsettimerresolution-while-processing-a-power-irp.md) routine to change the time interval between successive system clock interrupts. For example, a driver can call this routine to change the system clock from its default rate to its maximum rate to improve timer accuracy. However, using **ExSetTimerResolution** has several disadvantages compared to using high-resolution timers created by **ExAllocateTimer**.
 
 First, after calling **ExSetTimerResolution** to temporarily increase the system clock rate, a driver must call **ExSetTimerResolution** a second time to restore the system clock to its default rate. Otherwise, the system clock timer continuously generates interrupts at the maximum rate, which might cause excessive power consumption.
 
@@ -43,6 +40,3 @@ Second, a driver that uses the **ExSetTimerResolution** routine cannot optimize 
 Third, if multiple drivers concurrently use **ExSetTimerResolution** to improve timer accuracy, the system clock might run at its maximum rate for long periods. In contrast, the operating system globally coordinates the operation of multiple high-resolution timers so that the system clock runs at the maximum rate only when necessary to meet the timing requirements of these timers.
 
 Finally, using **ExSetTimerResolution** is inherently less accurate than using a high-resolution timer. After a driver calls **ExSetTimerResolution** to increase the system clock to its maximum rate, which is typically about a tick per millisecond, the driver might call a routine such as [**KeSetTimerEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettimerex) to set the timer. If, in this call, the driver specifies a relative expiration time, the timer can expire up to about a millisecond earlier than or later than the specified expiration time. However, if a relative expiration time is specified for a high-resolution timer, the timer can expire up to about a millisecond later than the specified expiration time but it never expires early.
-
- 
-

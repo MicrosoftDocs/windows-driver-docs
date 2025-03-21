@@ -425,6 +425,8 @@ The following table provides links to bug check codes.
 | 0x000001EA | [**SECURE\_PCI\_CONFIG\_SPACE\_ACCESS\_VIOLATION**](bug-check-0x1ea--secure-pci-config-space-access-violation.md)                                 |
 | 0x000001EB | [**DAM\_WATCHDOG\_TIMEOUT**](bug-check-0x1eb--dam-watchdog-timeout.md)                                                                            |
 | 0x000001ED | [**HANDLE\_ERROR\_ON\_CRITICAL\_THREAD**](bug-check-0x1ed--handle-error-on-critical-thread.md)                                                    |
+| 0x000001F1 | [**KASAN\_ENLIGHTENMENT\_VIOLATION**](bug-check-0x1f1--kasan-enlightement-violation.md)                                                    |
+| 0x000001F2 | [**KASAN\_ILLEGAL\_ACCESS**](bug-check-0x1f2--kasan-illegal-access.md)                                                    |
 | 0x00000356 | [**XBOX\_ERACTRL\_CS\_TIMEOUT**](bug-check-0x356--xbox-eractrl-cs-timeout.md)                                                                     |
 | 0x00000BFE | [**BC\_BLUETOOTH\_VERIFIER\_FAULT**](bug-check-0xbfe--bc-bluetooth-verifier-fault.md)                                                             |
 | 0x00000BFF | [**BC\_BTHMINI\_VERIFIER\_FAULT**](bug-check-0xbff--bc-bthmini-verifier-fault.md)                                                                 |

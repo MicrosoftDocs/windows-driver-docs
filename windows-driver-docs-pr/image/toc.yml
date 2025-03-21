@@ -848,6 +848,8 @@
           href: wia-twain-driver-design-considerations.md
         - name: "WIA-TWAIN Compatibility"
           href: wia-twain-compatibility.md
+        - name: "DSM_Entry function"
+          href: dsm-entry.md
         - name: "WIA-TWAIN Locking"
           href: wia-twain-locking.md
         - name: "Multipage Scanning and TWAIN"

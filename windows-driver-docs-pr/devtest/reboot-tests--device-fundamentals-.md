@@ -66,7 +66,7 @@ The Device Fundamentals Reboot tests run I/O on the specified devices, before an
 ## <span id="related_topics"></span>Related topics
 
 
-[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)
+[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers/develop/test-a-driver-package)
 
 [How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)
 
@@ -74,5 +74,5 @@ The Device Fundamentals Reboot tests run I/O on the specified devices, before an
 
 [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 
-[How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers)
+[How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers/develop/how-to-test-a-driver-at-runtime-from-a-command-prompt)
 

@@ -9,7 +9,6 @@ keywords:
 - tools WDK , developing drivers
 - Web Services for Devices WDK WIA , tools
 ms.date: 06/26/2024
-ms.topic: article
 ---
 
 # Driver Development Tools

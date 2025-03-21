@@ -1,7 +1,6 @@
 ---
 title: Deploying Audio Processing Objects
 description: Instructions for deploying Audio Processing Object drivers to Windows 10 and Windows 11
-ms.topic: article
 ms.date: 08/28/2023
 ---
 

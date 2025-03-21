@@ -1,6 +1,6 @@
 ---
 title: USB Bidi Extender
-description: Describes Bidi support for USB device using a combination of a Bidi XML file and a Javascript file known as a USB Bidi extender.
+description: Describes Bidi support for USB device using a combination of a Bidi XML file and a JavaScript file known as a USB Bidi extender.
 ms.date: 01/25/2023
 ---
 
@@ -8,9 +8,9 @@ ms.date: 01/25/2023
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
-Windows allows manufacturers to support bidirectional communication (Bidi) for USB devices by using a combination of a Bidi XML file and a Javascript file known as a USB Bidi extender.
+Windows allows manufacturers to support bidirectional communication (Bidi) for USB devices by using a combination of a Bidi XML file and a JavaScript file known as a USB Bidi extender.
 
-The USB Bidi extender allows applications to use Bidi with USB as the transport mechanism. The Javascript implementation does not support any device flow control, or any multiplexing of control information with print jobs during printing.
+The USB Bidi extender allows applications to use Bidi with USB as the transport mechanism. The JavaScript implementation does not support any device flow control, or any multiplexing of control information with print jobs during printing.
 
 By default, Bidi queries and status requests are routed over the USB device interface that is used for printing. This allows full bidirectional communication for status using the **getSchemas** JavaScript method, as well as allowing Set operations using the **setSchema** JavaScript method. Full bidirectional communication is possible while there are no print jobs being sent to the print device.
 

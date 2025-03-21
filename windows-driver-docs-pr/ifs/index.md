@@ -5,7 +5,6 @@ ms.date: 09/25/2024
 keywords:
 - file system filter driver design, Windows, WDK
 - file system information, Windows, WDK
-ms.topic: article
 ---
 
 # File Systems and Filter Driver Design Guide

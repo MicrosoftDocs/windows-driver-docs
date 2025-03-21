@@ -1,7 +1,6 @@
 ---
 title: Device Metadata Business Rules
 description: Device Metadata Business Rules
-ms.topic: article
 ms.date: 09/05/2024
 ---
 

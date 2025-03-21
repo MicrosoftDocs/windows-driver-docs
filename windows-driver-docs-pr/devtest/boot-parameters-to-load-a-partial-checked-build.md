@@ -11,7 +11,7 @@ ms.date: 07/19/2024
 
 # Boot Parameters to Load a Partial Checked Build
 
-A *partial checked build* contains checked build versions of the kernel and HAL and a free build of the remainder of the operating system. For details, see [Installing Just the Checked Operating System and HAL (For Windows Vista and Later)](installing-just-the-checked-operating-system-and-hal--for-windows-vist.md).
+A *partial checked build* contains checked build versions of the kernel and HAL and a free build of the remainder of the operating system.
 
 > [!NOTE]
 > Checked builds were available on older versions of Windows, before Windows 10 version 1803.

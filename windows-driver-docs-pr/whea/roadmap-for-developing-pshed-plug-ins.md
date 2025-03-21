@@ -37,7 +37,7 @@ To create a PSHED plug-in driver for Windows Vista and later versions of Windows
 
     Building a driver is not the same as building a user-mode application.
 
-    For information about Windows driver build, debug, and test processes, driver signing, and Windows Logo testing, see [Building, Debugging, and Testing Drivers](/windows-hardware/drivers).
+    For information about Windows driver build, debug, and test processes, driver signing, and Windows Logo testing, see [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop).
 
     For information about building, testing, verifying, and debugging tools, see [Driver Development Tools](../devtest/index.md).
 
@@ -62,12 +62,12 @@ To create a PSHED plug-in driver for Windows Vista and later versions of Windows
     -   For guidelines on developing a PSHED plug-in, see [PSHED Plug-In Guidelines](pshed-plug-in-guidelines.md).
     -   For information about how to build a PSHED plug-in, see [Building a PSHED Plug-In](building-a-pshed-plug-in.md).
     -   For information about WHEA debugger extensions that can be used to debug a PSHED plug-in, see [Windows Hardware Error Architecture Debugger Extensions](windows-hardware-error-architecture-debugger-extensions.md).
-    -   For information about iterative building, testing, and debugging, see [Overview of Build, Debug, and Test Process](/windows-hardware/drivers).
+    -   For information about iterative building, testing, and debugging, see [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop).
 -   Step 6: Create a driver package for your PSHED Plug-In.
 
     A PSHED plug-in is a WDM driver. As with other WDM drivers, the PSHED plug-in is installed by using a [driver package](../install/driver-packages.md).
 
-    For more information about driver packages, see [Providing a Driver Package](/windows-hardware/drivers).
+    For more information about driver packages, see [Driver Packages](/windows-hardware/drivers/install/driver-packages).
 
     For more information about how to install a driver package for a PSHED plug-in, see [PSHED Plug-In Installation](pshed-plug-in-installation.md).
 

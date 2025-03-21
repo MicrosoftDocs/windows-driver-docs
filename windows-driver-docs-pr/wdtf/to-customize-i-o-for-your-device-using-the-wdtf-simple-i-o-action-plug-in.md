@@ -12,8 +12,8 @@ To get the most benefit from the Device Fundamental tests and tests you might ha
 ### Prerequisites
 
 -   Device under test is installed on the test computer.
--   Driver Package that is test signed and installed on the test computer. To verify that your driver is correctly installed, see [How to test a driver package](/windows-hardware/drivers).
--   Test computers that are configured and provisioned for deployment. See [test a driver at runtime using Visual Studio](/windows-hardware/drivers)
+-   Driver Package that is test signed and installed on the test computer. To verify that your driver is correctly installed, see [Testing a Driver](/windows-hardware/drivers/develop/testing-a-driver).
+-   Test computers that are configured and provisioned for deployment, see [test a driver at runtime using Visual Studio](/windows-hardware/drivers/develop/test-a-driver-package).
 
 ## Instructions
 
@@ -135,11 +135,11 @@ If you have not already done so, you will need to configure a computer for testi
 
    When you build the Simple I/O Action plug-in, two tests are created. These tests install and uninstall the plugin on the test computer. By default, the Simple I/O Action plugin files appear in **Test Group Explorer**, in the test category **My Test Category**.
 
-2. To install the Simple I/O Action Plug-in, run the test named **Register WDTF**<em>&lt;Project&gt;</em>**SimpleIOAction.DLL** on the test computer. For information about selecting and running tests see, [How to test a driver at runtime using Visual Studio](/windows-hardware/drivers).
+2. To install the Simple I/O Action Plug-in, run the test named **Register WDTF**<em>&lt;Project&gt;</em>**SimpleIOAction.DLL** on the test computer. For information about selecting and running tests see, [How to test a driver at runtime using Visual Studio](/windows-hardware/drivers/develop/test-a-driver-package).
 3. To verify that your Simple I/O Action Plug-in is installed, run the **Display devices that have WDTF Simple I/O Plug-ins** test on the test computer. Your plugin and device should appear in the results. For more information, see [How to How to determine if a custom WDTF Simple I/O Action Plug-in is required for your device](test-your-device-to-see-if-you-need-to-customize-the-wdtf-simple-i-o-action-plug-in.md).
 4. To uninstall the Simple I/O Action Plug-in, run the test named **Un-register WDTF**<em>&lt;Project&gt;</em>**SimpleIOAction.DLL** on the test computer. You can verify that you have uninstalled the plugin by running the **Display devices that have WDTF Simple I/O plug-ins** test.
 
 ## Related topics
 [Test Authoring and Execution Framework (TAEF)](../taef/index.md)  
 [How to How to determine if a custom WDTF Simple I/O Action Plug-in is required for your device](test-your-device-to-see-if-you-need-to-customize-the-wdtf-simple-i-o-action-plug-in.md)  
-[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)
+[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers/develop/test-a-driver-package)

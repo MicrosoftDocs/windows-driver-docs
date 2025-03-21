@@ -1,7 +1,6 @@
 ---
 title: Driver code signing requirements
 description: Driver code signing requirements
-ms.topic: article
 ms.date: 07/15/2024
 ---
 

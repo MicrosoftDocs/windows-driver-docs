@@ -1,7 +1,6 @@
 ---
 title: Submit a Device Metadata Package (Dashboard help)
 description: Submit a Device Metadata Package (Dashboard help)
-ms.topic: article
 ms.date: 04/20/2017
 ---
 

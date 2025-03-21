@@ -91,7 +91,7 @@ The table below contains the descriptions and requirements for the **KSCAMERA\_E
 </tr>
 <tr class="odd">
 <td><p>Capability</p></td>
-<td><p>This must be a bit-wise OR of <strong>KSCAMERA_EXTENDEDPROP_CAPS_ASYNCONTROL</strong> and <strong>KSCAMERA_EXTENDEDPROP_CAPS_CANCELLABLE</strong>.</p></td>
+<td><p>This must be a bit-wise OR of <strong>KSCAMERA_EXTENDEDPROP_CAPS_ASYNCCONTROL</strong> and <strong>KSCAMERA_EXTENDEDPROP_CAPS_CANCELLABLE</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Flags</p></td>

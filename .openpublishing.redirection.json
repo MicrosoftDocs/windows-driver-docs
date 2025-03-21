@@ -1,6 +1,276 @@
 {
     "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/serports/serial-drivers-overview.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/serial-drivers-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/serial-i-o-request-interface.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/serial-i-o-request-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/sercx-io-control-requests.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/sercx-io-control-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/differences-between-sercx2-and-serial-sys.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/differences-between-sercx2-and-serial-sys",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/using-serial-sys-and-serenum-sys.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/using-serial-sys-and-serenum-sys",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/features-of-serial-and-serenum.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/features-of-serial-and-serenum",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/configuration-of-serial-devices-and-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/configuration-of-serial-devices-and-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/configuration-of-com-ports.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/configuration-of-com-ports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/configuration-of-non-plug-and-play-serial-device-connected-to-an-rs-23.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/configuration-of-non-plug-and-play-serial-device-connected-to-an-rs-23",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/configuration-of-plug-and-play-serial-device-connected-to-an-rs-232-po.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/configuration-of-plug-and-play-serial-device-connected-to-an-rs-232-po",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/configuration-of-plug-and-play-serial-device-that-requires-a-16550-uar.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/configuration-of-plug-and-play-serial-device-that-requires-a-16550-uar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/configuration-of-plug-and-play-serial-device-on-a-multifunction-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/configuration-of-plug-and-play-serial-device-on-a-multifunction-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/operation-of-serenum-and-serial.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/operation-of-serenum-and-serial",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/serenum-filtering-of-i-o-requests.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/serenum-filtering-of-i-o-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/enumerating-serenum-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/enumerating-serenum-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/enumerating-legacy-com-ports.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/enumerating-legacy-com-ports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/external-naming-of-com-ports.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/external-naming-of-com-ports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/opening-and-initializing-a-serial-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/opening-and-initializing-a-serial-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/opening-and-initializing-a-16550-uart-compatible-interface.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/opening-and-initializing-a-16550-uart-compatible-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/sharing-a-serial-device-interrupt.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/sharing-a-serial-device-interrupt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/powering-up-a-serial-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/powering-up-a-serial-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/setting-read-and-write-timeouts-for-a-serial-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/setting-read-and-write-timeouts-for-a-serial-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/removing-a-plug-and-play-serial-device-on-an-rs-232-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/removing-a-plug-and-play-serial-device-on-an-rs-232-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/removing-a-plug-and-play-rs-232-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/removing-a-plug-and-play-rs-232-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/serial-device-control-requests2.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/serial-device-control-requests2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/determining-which-com-port-a-debugger-uses.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/determining-which-com-port-a-debugger-uses",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/registry-settings-for-serial.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/registry-settings-for-serial",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/registry-settings-for-the-serial-service.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/registry-settings-for-the-serial-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/registry-settings-for-a-plug-and-play-serial-device.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/registry-settings-for-a-plug-and-play-serial-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/registry-settings-for-a-legacy-com-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/registry-settings-for-a-legacy-com-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/registry-settings-for-serenum.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/registry-settings-for-serenum",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/com-port-database.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/com-port-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/installing-serial-devices.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/installing-serial-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/installing-serial-ports-and-com-ports.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/installing-serial-ports-and-com-ports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/installing-plug-and-play-serial-ports-and-com-ports.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/installing-plug-and-play-serial-ports-and-com-ports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/installing-an-advanced-properties-page-for-a-com-port.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/installing-an-advanced-properties-page-for-a-com-port",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/serports/serial-irp-major-function-codes.md",
+      "redirect_url": "/previous-versions/windows/drivers/serports/serial-irp-major-function-codes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/boot-options-in-previous-versions-of-windows.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/boot-options-in-previous-versions-of-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/boot-options-in-a-boot-ini-file.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/boot-options-in-a-boot-ini-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/overview-of-the-boot-ini-file.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/overview-of-the-boot-ini-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/editing-the-boot-ini-file.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/editing-the-boot-ini-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/backing-up-the-boot-ini-file.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/backing-up-the-boot-ini-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/boot-options-in-efi-nvram.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/boot-options-in-efi-nvram",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/overview-of-boot-options-in-efi.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/overview-of-boot-options-in-efi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/editing-boot-options-in-efi.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/editing-boot-options-in-efi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/backing-up-boot-options-in-efi.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/backing-up-boot-options-in-efi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/exporting-and-importing-boot-entries-in-efi.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/exporting-and-importing-boot-entries-in-efi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/identifying-backup-files-for-existing-boot-entries.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/identifying-backup-files-for-existing-boot-entries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/identifying-backup-files-for-deleted-boot-entries.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/identifying-backup-files-for-deleted-boot-entries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/recognizing-unusable-boot-entry-backup-files.md",
+      "redirect_url": "/previous-versions/windows/drivers/devtest/recognizing-unusable-boot-entry-backup-files",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/version-numbers-for-audio-drivers.md",
+      "redirect_url": "/previous-versions/windows/drivers/audio/version-numbers-for-audio-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/internal-and-external-version-numbers.md",
+      "redirect_url": "/previous-versions/windows/drivers/audio/internal-and-external-version-numbers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/inf-driver-version-entry.md",
+      "redirect_url": "/previous-versions/windows/drivers/audio/inf-driver-version-entry",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/directx-file-version-numbers.md",
+      "redirect_url": "/previous-versions/windows/drivers/audio/directx-file-version-numbers",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/bringup/boot-and-uefi.md",
       "redirect_url": "/previous-versions/windows/drivers/bringup/boot-and-uefi",
       "redirect_document_id": false
@@ -6728,6 +6998,11 @@
         "redirect_document_id": false
     },
     {
+      "source_path": "windows-driver-docs-pr/develop/get-started-developing-windows-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/develop/windows-driver-types",
+      "redirect_document_id": false
+    },
+    {
         "source_path": "windows-driver-docs-pr/develop/getting-started-with-universal-drivers.md",
         "redirect_URL": "/windows-hardware/drivers/develop/getting-started-with-windows-drivers",
         "redirect_document_id": false
@@ -8040,6 +8315,11 @@
     {
         "source_path": "windows-driver-docs-pr/ifs/nf-ntifs-ntcopyfilechunk.md",
         "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcopyfilechunk",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "windows-driver-docs-pr/ifs/fsctl-lmr-query-info.md",
+        "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/ni-ntifs-fsctl_lmr_query_info",
         "redirect_document_id": false
     },
     {
@@ -21303,7 +21583,12 @@
     },
     {
         "source_path":  "windows-driver-docs-pr/debugger/windbg-keyboard-shortcuts-preview.md",
-        "redirect_URL":  "/windows-hardware/drivers/debuggercmds/windbg-keyboard-shortcuts-preview",
+        "redirect_URL":  "/windows-hardware/drivers/debuggercmds/windbg-keyboard-shortcuts",
+        "redirect_document_id":  false
+    },
+    {
+        "source_path":  "windows-driver-docs-pr/debuggercmds/windbg-keyboard-shortcuts-preview.md",
+        "redirect_URL":  "/windows-hardware/drivers/debuggercmds/windbg-keyboard-shortcuts",
         "redirect_document_id":  false
     },
     {
@@ -22019,6 +22304,66 @@
     {
       "source_path":  "windows-driver-docs-pr/develop/distributing-a-driver-package-win8.md",
       "redirect_URL":  "/windows-hardware/drivers/develop/distributing-a-driver-package",
+      "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/print/modern-print-platform.md",
+      "redirect_URL":  "https://support.microsoft.com/windows/4f59fa38-3419-41c7-a6a7-8ca4e21f70bc",
+      "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/print/windows-protected-print-mode.md",
+      "redirect_URL":  "https://support.microsoft.com/windows/4f59fa38-3419-41c7-a6a7-8ca4e21f70bc",
+      "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/print/windows-protected-mode-faq.md",
+      "redirect_URL":  "https://support.microsoft.com/windows/4f59fa38-3419-41c7-a6a7-8ca4e21f70bc",
+      "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/print/windows-protected-print-mode-for-enterprises-and-developers.md",
+      "redirect_URL":  "https://support.microsoft.com/windows/4f59fa38-3419-41c7-a6a7-8ca4e21f70bc",
+      "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/print/more-information-on-windows-protected-print-mode-for-enterprises.md",
+      "redirect_URL":  "https://support.microsoft.com/windows/4f59fa38-3419-41c7-a6a7-8ca4e21f70bc",
+      "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/develop/installing-the-wdk-build-environment-in-a-lab.md",
+      "redirect_URL":  "/previous-versions/windows/drivers/develop/installing-the-wdk-build-environment-in-a-lab",
+      "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/develop/what-happens-when-you-provision-a-computer--wdk-8-0-.md",
+      "redirect_URL":  "/previous-versions/windows/drivers/develop/what-happens-when-you-provision-a-computer--wdk-8-0-",
+      "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/develop/run-the-hck-test-suites-in-the-wdk.md",
+      "redirect_URL":  "/previous-versions/windows/drivers/develop/run-the-hck-test-suites-in-the-wdk",
+      "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/develop/how-to-write-a-driver-test-.md",
+      "redirect_URL":  "/previous-versions/windows/drivers/develop/how-to-write-a-driver-test-",
+      "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/develop/to-add-test-metadata.md",
+      "redirect_URL":  "/previous-versions/windows/drivers/develop/to-add-test-metadata",
+      "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/develop/read-the-driver-test-results-log.md",
+      "redirect_URL":  "/previous-versions/windows/drivers/develop/read-the-driver-test-results-log",
+      "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/serports/serial-port-console-redirection-table.md",
+      "redirect_URL":  "/windows-hardware/drivers/bringup/serial-port-console-redirection-table",
       "redirect_document_id":  false
     }
   ]

@@ -59,6 +59,5 @@ Use the following steps to run an analysis of your code:
 ## See also
 
 [**Handling an IRP\_MN\_SURPRISE\_REMOVAL Request**](../kernel/handling-an-irp-mn-surprise-removal-request.md)
-[Analyzing a Driver Using Verification and Code Analysis Tools](/windows-hardware/drivers)
 [**IRP\_MN\_SURPRISE\_REMOVAL**](../kernel/irp-mn-surprise-removal.md)
 [**IRP\_MN\_REMOVE\_DEVICE**](../kernel/irp-mn-remove-device.md)

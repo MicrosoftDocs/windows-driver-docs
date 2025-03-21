@@ -440,6 +440,8 @@
             href: irp-mj-file-system-control2.md
         - name: Acknowledging oplock breaks
           href: acknowledging-oplock-breaks.md
+        - name: Checking the oplock state of an FS_FILTER_ACQUIRE_FOR_SECTION_SYNCHRONIZATION operation
+          href: fs-filter-acquire-for-section-synchronization2.md
         - name: Oplock synchronization
           href: oplock-synchronization.md
   - name: Kernel network redirector driver components

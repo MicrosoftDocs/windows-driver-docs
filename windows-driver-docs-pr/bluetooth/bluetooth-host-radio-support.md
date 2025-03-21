@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Host Radio Support
 description: Provides a list of questions and answers about Bluetooth host radio support in Windows
-ms.date: 07/01/2024
+ms.date: 03/05/2025
 ---
 
 # Bluetooth Host Radio Support
@@ -72,7 +72,7 @@ Vendors that want a vendor-specific profile must use their own GUID and referenc
 
 ## Bluetooth profiles and protocols that are enabled by default
 
-The Bluetooth stack included with Windows provides in-box support for only some Bluetooth profiles. Vendors must implement the required services to support any other Bluetooth profiles, much as they do for USB and PCI. Windows can use the Bluetooth profiles that are enabled by default—referred to as supported profiles—to generate physical device objects (PDOs). This enables default loading of the drivers that are required to enable the profile. You can identify the supported profiles in the registry by looking at the SupportedServices and UnsupportedServices values under the **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\Bthport \\Parameters** key.
+The Bluetooth stack included with Windows provides in-box support for only some Bluetooth profiles. Vendors must implement the required services to support any other Bluetooth profiles, much as they do for USB and PCI. Windows can use the Bluetooth profiles that are enabled by default—referred to as supported profiles—to generate physical device objects (PDOs). This enables default loading of the drivers that are required to enable the profile. You can identify the supported profiles in the registry by looking at the SupportedServices and UnsupportedServices values under the **HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\Bthport \\Parameters** key.
 
 > [!NOTE]
 > The Bthport key is added to the registry only after you install a Bluetooth device.
@@ -88,7 +88,7 @@ The following table lists the profiles in Bth.inf that Windows supports.
 
 ### Windows Bluetooth Profiles
 
-For a Bluetooth-enabled device or accessory to work with your PC that's running Windows 10, the device needs to use one of the supported Bluetooth profiles. See the most current list at [Supported Bluetooth profiles](https://support.microsoft.com/windows/supported-bluetooth-profiles-8900e50f-318e-4283-2beb-c8325bfc9515).
+For a Bluetooth-enabled device or accessory to work with your PC running Windows 10, the device needs to use one of the supported Bluetooth profiles. See the list at [Bluetooth Version and Profile Support in Previous Windows Versions](bluetooth-support-in-previous-windows-versions.md).
 
 If IHVs don't want Windows to automatically generate a PDO for their device, they can add the service GUID to the list of unsupported services. For examples, see Bth.inf.
 
@@ -98,11 +98,11 @@ For details on how to use Group Policy to block the installation of Bluetooth ra
 
 Use the following compatible IDs for the Bluetooth radio:
 
-USB\\Class\_E0 (for USB based radios)
-MS\_BTHX\_BTHMINI (for non-USB radios)
+USB\\Class_E0 (for USB based radios)
+MS_BTHX_BTHMINI (for non-USB radios)
 
 > [!NOTE]
-> This won't remove Bluetooth driver support if it has already been installed. Also, this policy needs to be applied to the preinstalled image.
+> Blocking Bluetooth radio installation doesn't remove Bluetooth driver support if it's already installed. Also, this policy must be applied to the preinstalled image.
 
 ## How to change the Device ID Profile record published by Windows
 

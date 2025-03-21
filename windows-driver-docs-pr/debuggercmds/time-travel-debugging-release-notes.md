@@ -11,6 +11,48 @@ ms.date: 11/15/2024
 
 This topic provides information on what's new in Time Travel Debugging.
 
+## 1.11.481
+
+We have revamped the !tt command to give you more powerful ways to navigate through your trace:
+- Fractional percentages can be used to narrow down the search space (!tt 23.65)
+- Find the previous/next time a register changes value (!tt br ebx)
+- Find the previous/next time a memory range is accessed (!tt ba- [addr] [range])
+- Find the previous/next time execution moves to a different module (!tt bm)
+- Find the previous/next time execution moves to a specific module (!tt bm ntdll)
+
+For more details see the [documentation](time-travel-debugging-extension-tt.md).
+
+Some notable fixes:
+- "Error: 64 bit value loses precision on conversion to number" messages when using `@$cursession.TTD.Data.Heap()` on 32-bit trace are gone.
+- Help option parsing (`-?`, `-help`) is now correctly detected anywhere in the command line.
+- `dx @$cursession.TTD.Calls()` no longer requires addresses to match the start of a function. Instead, the address will be mapped to the start of the closest matching function.
+- TTD correctly reports target OS version from vertarget command.
+- Using "-monitor" with a hosted service name no longer records unrelated hosted services.
+
+### Added
+
+- Register change breakpoints in TTD traces (1.11.431)
+
+### Changed
+
+- Fix recording of services by name using monitor mode (1.11.477)
+- Capture actual target system's OS information for use by debugger (1.11.473)
+- Fix the transfer of XMM registers between the emulator and CONTEXT (1.11.469)
+- Allow call queries against addresses inside a function (1.11.459)
+- Support symbols as addresses/sizes in !tt command line (1.11.454)
+- Improve the consistency and extend the capabilities of TTD navigation commands (1.11.453)
+- Improve module DB consistency in the face of corrupted data (1.11.430)
+
+### Fixed
+
+- Add process name to output when attaching to PID (1.11.486)
+- TTD.Data.Heap() reports "Error: 64 bit value loses precision on conversion to number" in some cases (1.11.471)
+- Improve the reliability of recording a process with shadow stacks enabled (1.11.466)
+- Add module navigation via !tt bm and data model (1.11.462)
+- Fix Some issues with command-line parsing. (1.11.444)
+- Fix lodsd, load doubleword at address (zero out upper part of rax) (1.11.434)
+- Fix some libfuzzer bugs (1.11.433)
+
 ## 1.11.429
 
 This update of TTD contains a few bug fixes along with some internal changes to improve reliability.
@@ -69,7 +111,7 @@ Recording can now be restricted to a specific set of modules using the `-module`
 
 Matching record and replay components are now included in the distribution. In the event of an incompatibility between the debugger and the command line recorder, or a replay bug, the replay components can be copied into the debugger install as a workaround until a new debugger is released.
 
-The installed file location can be found in Powershell by doing the following:
+The installed file location can be found in PowerShell by doing the following:
 
 ```
 ls (Get-AppxPackage | where Name -eq 'Microsoft.TimeTravelDebugging').InstallLocation

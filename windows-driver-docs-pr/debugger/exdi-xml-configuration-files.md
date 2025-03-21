@@ -42,7 +42,7 @@ The following table describes the GDBServer tags and attributes defined in the `
 ExdiTargets     | Specifies which specific GDB server target configuration will be used by the ExdiGgbSrv.dll to establish the GDB connection with the GDB server target, since the exdiConfigData.xml file includes all GDB server supported currently by the ExdiGdbSrv.dll (this file MUST be filled before using the ExdiGdbSrv.dll with a particular GDB server).
 CurrentTarget   | Specifies the name of the GDB server target (e.g. this attribute value should match with the name value of one of the `<ExdiTarget Name=` tags included by the exdiConfigData.xml file.
 ExdiTarget      | this is the start tag for all configuration data that is included by each GDB server target component.
-Name            | Specifies the name of the GDB server (e.g. QEMU, BMC-OpenOCD, Trace32, VMWare).
+Name            | Specifies the name of the GDB server (e.g. QEMU, BMC-OpenOCD, Trace32, VMware).
 agentNamePacket | This is the name of the GDB client as it is recognized by the GDB server HW debugger. This can be used by the GDB server HW debugger to configure itself for specific GDB clients (e.g. Trace32 GDB server requires the ExdiGdbSrv.dll to send “QMS.windbg” name to identify the windbg-GDB client and then enable customized GDB memory packets only supported for MS GDB server client (exdiGdbSrv.dll).
 ExdiGdbServerConfigData | Specifies the ExdiGdbSrv.dll component related configuration parameters.
 uuid            | specifies the UUI of the ExdiGdbSrv.dll component.

@@ -1,7 +1,6 @@
 ---
 title: How to validate the Microsoft signature
 description: This article shows you how to validate the Microsoft signature for a submission.
-ms.topic: article
 ms.date: 09/12/2024
 ---
 

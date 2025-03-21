@@ -274,6 +274,8 @@
       href: acpi-system-description-tables.md
     - name: Debug Port Table 2 (DBG2)
       href: acpi-debug-port-table.md
+    - name: Serial Port Console Redirection Table (SPCR)
+      href: serial-port-console-redirection-table.md
     - name: Generate ACPI tables by using AcpiGenFx
       href: generate-acpi-tables-by-using-acpigenfx.md
   - name: Device management namespace objects
