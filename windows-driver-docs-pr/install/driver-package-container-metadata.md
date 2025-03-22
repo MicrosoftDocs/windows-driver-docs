@@ -32,7 +32,7 @@ For more information about base INF and extension INF, see [Using an Extension I
 Driver packages are targeted on individual devnodes using device-specific information. This information includes [hardware ID](hardware-ids.md) and [compatible IDs](compatible-ids.md). To supply container metadata to the correct device container, the driver package must target one of the devnodes that belong to the device container. There are several ways to view all devnodes that belong to a device container:
 
 <!-- TODO: screenshots? -->
-1. [PnPUtil /enum-containers](..\devtest\pnputil-command-syntax.md###/enum-containers) (Command available starting in Windows 11, version 23H2)
+1. [PnPUtil /enum-containers](..\devtest\pnputil-command-syntax.md#enum-containers) (Command available starting in Windows 11, version 23H2)
 1. Device Manager: View Devices by Container
 1. Devices and Printers: View Properties on Container
 
