@@ -16,7 +16,7 @@ Driver package container metadata provides OEMs and IHVs with a [driver package]
 Without container metadata, the operating system generates the information in the previous list by looking at all device nodes (devnodes) that belong to the device container, then running heuristics based on the information of the devnodes. This process might not satisfy the needs of OEMs or IHVs for how their physical device is displayed. Using container metadata can fulfill this gap.
 
 <!-- TODO: use KB article -->
-Driver package container metadata is supported starting in Windows 11 24H2 2D release
+Driver package container metadata is supported starting in Windows 11 24H2 KB5052093 (OS Build 26100.3323) and will be available for Windows Server 2025 6D.
 
 ## Using Base INF or Extension INF
 
@@ -31,15 +31,16 @@ For more information about base INF and extension INF, see [Using an Extension I
 
 Driver packages are targeted on individual devnodes using device-specific information. This information includes [hardware ID](hardware-ids.md) and [compatible IDs](compatible-ids.md). To supply container metadata to the correct device container, the driver package must target one of the devnodes that belong to the device container. There are several ways to view all devnodes that belong to a device container:
 
-<!-- TODO: screenshots -->
+<!-- TODO: screenshots? -->
 1. [PnPUtil /enum-containers](..\devtest\pnputil-command-syntax.md###/enum-containers) (Command available starting in Windows 11, version 23H2)
 1. Device Manager: View Devices by Container
 1. Devices and Printers: View Properties on Container
 
 For computer container, it's represented by a special devnode called **OEM computer device**, which needs to be used for driver package targeting for container metadata. **OEM computer device** is available starting in Windows 11, version 23H2.
 
+<!-- TODO: review by HDC -->
 > [!NOTE]
-> Hardware Dev Center only allows extension INF for OEM computer device.
+> Hardware Dev Center only allows extension INF for OEM computer device. During submission, it is important to specify the inbox Microsoft driver for the device in the **Business Justification** box of the shipping label page: "ExtendsInboxDriver=compdev.inf"
 
 A **OEM computer device** can be identified by device description and hardware IDs such as in the following example:
 
@@ -47,24 +48,16 @@ A **OEM computer device** can be identified by device description and hardware I
 ```console
 Friendly name: HP HP Z2 Tower G9 Workstation Desktop PC
 Device description: Computer Device
+Inf name: compdev.inf
 Hardware IDs:
-    COMPUTER\{137BF115-E0A3-5E03-9CF3-1A8F2303884A}
-    COMPUTER\{B9FCB14E-BB0F-5B37-B27F-183103877144}
-    COMPUTER\{A6C3EC7B-6F22-5700-A17C-D9409F22D793}
-    COMPUTER\{9059F30D-53DA-5CF6-8A6C-BBA78D4852C3}
-    COMPUTER\{E9743E0A-2B5A-593B-9C98-336532EA6A9D}
-    COMPUTER\{753B339A-28CE-51F7-8E34-88ADD9928BF0}
-    COMPUTER\{B4693619-89DB-5E2E-82BD-12FB6B2756DF}
-    COMPUTER\{49088BAF-FD52-5BFA-B836-442C16C0F41F}
-    COMPUTER\{BE346E1C-6EC2-50F5-A3FA-D02B82CA91C7}
-    COMPUTER\{3BA15CFC-E9C2-56FD-AC5C-E671A539A8CE}
-    COMPUTER\{29EEE337-A41E-50B1-B87D-8085A10A5352}
-    COMPUTER\{3412CC8D-7338-5131-A04E-79B87B6B2FCB}
+    COMPUTER\{EBDF9B14-C5E0-45AA-BBA2-70B26A8B9F9E}
+    COMPUTER\{741CDDBA-3921-46B9-AC29-4ED1757033B8}
+    COMPUTER\{9ADBBBB5-22FA-4C1F-8802-908CF2303526}
+    COMPUTER\{1CBF7A7C-DEB8-4073-AAF4-7094EEDE2F3A}
 ```
 
-<!-- TODO: remove for the first publish -->
-## Device Ranking for Resolving Conflicts
-
+<!-- TODO: remove before check-in since the logic is internal only for now -->
+# Device Ranking for Resolving Conflicts 
 **[Not ready for publish since the logic is internal only for now]**
 
 Ideally only one devnode within a device container is configured with a driver package with container metadata. However, it's possible that several devnodes within the device container are all configured with driver packages that provide a full set or subset of container metadata. So device ranking is needed to resolve the conflicts to ensure consistent and optimal display information of the device container. The following list shows the categories of devnodes with container metadata:
@@ -157,4 +150,50 @@ SoftwareID = pfn://CustomPrinterControlAppId
 Device.ExtensionDesc = "Container Property Extension"
 ModelName = "Custom Printer"
 Manufacturer = "Custom Manufacturer"
+```
+
+For those transitioning from [Device Metadata Packages](overview-of-device-metadata-packages.md), the following shows what a Device Metadata Package may look like for the example above of the multi-function printer:
+
+- PackageInfo.xml
+```
+<?xml version="1.0" encoding="utf-8"?> 
+<PackageInfo xmlns="http://schemas.microsoft.com/windows/DeviceMetadata/PackageInfo/2007/11/">
+  <MetadataKey>
+    <HardwareIDList> 
+      <HardwareID>DOID:MF\CustomPrinter&WSD&IP_PRINT</HardwareID>
+      <HardwareID>DOID:WSDPRINT\CustomPrinter</HardwareID>
+      <HardwareID>DOID:USBPRINT\CustomPrinter</HardwareID>
+      <HardwareID>DOID:CustomPrinter</HardwareID>
+    </HardwareIDList>
+    <Locale default="true">en-US</Locale>
+  <LastModifiedDate>2014-04-08T07:19:14Z</LastModifiedDate> 
+  </MetadataKey> 
+  ...
+</PackageInfo>
+```
+- DeviceInfo.xml
+```
+<?xml version="1.0" encoding="utf-8"?>
+<DeviceInfo xmlns="http://schemas.microsoft.com/windows/DeviceMetadata/DeviceInfo/2007/11/">
+  <DeviceCategoryList>
+    <DeviceCategory>PrintFax.Printer</DeviceCategory>
+    <DeviceCategory>Imaging.Scanner</DeviceCategory>
+  </DeviceCategoryList>
+  <ModelName>Custom Printer</ModelName>
+  <Manufacturer>Custom Manufacturer</Manufacturer> 
+  <DeviceIconFile>CustomPrinter.ico</DeviceIconFile>
+</DeviceInfo>
+```
+- SoftwareInfo.xml
+```
+<?xml version="1.0" encoding="utf-8"?>
+<SoftwareInfo xmlns="http://schemas.microsoft.com/windows/2010/08/DeviceMetadata/SoftwareInfo">
+  <DeviceCompanionApplications>
+    <Package>
+      <Identity Name="CustomPrinterControlAppName" Publisher="CustomPrinterControlAppPublisher" />
+      ...
+    </Package>
+  </DeviceCompanionApplications>
+  ...
+</SoftwareInfo>
 ```
