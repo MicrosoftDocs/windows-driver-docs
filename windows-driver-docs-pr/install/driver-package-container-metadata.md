@@ -57,10 +57,11 @@ Hardware IDs:
 ```
 
 <!-- TODO: remove before check-in since the logic is internal only for now -->
-# Device Ranking for Resolving Conflicts 
+## Device Ranking for Resolving Conflicts
+
 **[Not ready for publish since the logic is internal only for now]**
 
-Ideally only one devnode within a device container is configured with a driver package with container metadata. However, it's possible that several devnodes within the device container are all configured with driver packages that provide a full set or subset of container metadata. So device ranking is needed to resolve the conflicts to ensure consistent and optimal display information of the device container. The following list shows the categories of devnodes with container metadata:
+Ideally, only one devnode within a device container is configured with a driver package with container metadata. However, it's possible that several devnodes within the device container are all configured with driver packages that provide a full set or subset of container metadata. So device ranking is needed to resolve the conflicts to ensure consistent and optimal display information of the device container. The following list shows the categories of devnodes with container metadata:
 
 1. **Full-Property Devnode**: highest ranked devnode with a full set of container metadata.
 1. **Identity-Property Devnode**: highest ranked devnode with at least ContainerManufacturer and ContainerModelName but not a full set of container metadata.
@@ -152,48 +153,53 @@ ModelName = "Custom Printer"
 Manufacturer = "Custom Manufacturer"
 ```
 
-For those transitioning from [Device Metadata Packages](overview-of-device-metadata-packages.md), the following shows what a Device Metadata Package may look like for the example above of the multi-function printer:
+For those transitioning from [Device Metadata Packages](overview-of-device-metadata-packages.md), the following shows what a Device Metadata Package might look like for the example above of the multi-function printer:
 
 - PackageInfo.xml
-```
-<?xml version="1.0" encoding="utf-8"?> 
-<PackageInfo xmlns="http://schemas.microsoft.com/windows/DeviceMetadata/PackageInfo/2007/11/">
-  <MetadataKey>
-    <HardwareIDList> 
-      <HardwareID>DOID:MF\CustomPrinter&WSD&IP_PRINT</HardwareID>
-      <HardwareID>DOID:WSDPRINT\CustomPrinter</HardwareID>
-      <HardwareID>DOID:USBPRINT\CustomPrinter</HardwareID>
-      <HardwareID>DOID:CustomPrinter</HardwareID>
-    </HardwareIDList>
-    <Locale default="true">en-US</Locale>
-  <LastModifiedDate>2014-04-08T07:19:14Z</LastModifiedDate> 
-  </MetadataKey> 
-  ...
-</PackageInfo>
-```
-- DeviceInfo.xml
-```
-<?xml version="1.0" encoding="utf-8"?>
-<DeviceInfo xmlns="http://schemas.microsoft.com/windows/DeviceMetadata/DeviceInfo/2007/11/">
-  <DeviceCategoryList>
-    <DeviceCategory>PrintFax.Printer</DeviceCategory>
-    <DeviceCategory>Imaging.Scanner</DeviceCategory>
-  </DeviceCategoryList>
-  <ModelName>Custom Printer</ModelName>
-  <Manufacturer>Custom Manufacturer</Manufacturer> 
-  <DeviceIconFile>CustomPrinter.ico</DeviceIconFile>
-</DeviceInfo>
-```
-- SoftwareInfo.xml
-```
-<?xml version="1.0" encoding="utf-8"?>
-<SoftwareInfo xmlns="http://schemas.microsoft.com/windows/2010/08/DeviceMetadata/SoftwareInfo">
-  <DeviceCompanionApplications>
-    <Package>
-      <Identity Name="CustomPrinterControlAppName" Publisher="CustomPrinterControlAppPublisher" />
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?> 
+    <PackageInfo xmlns="http://schemas.microsoft.com/windows/DeviceMetadata/PackageInfo/2007/11/">
+      <MetadataKey>
+        <HardwareIDList> 
+          <HardwareID>DOID:MF\CustomPrinter&WSD&IP_PRINT</HardwareID>
+          <HardwareID>DOID:WSDPRINT\CustomPrinter</HardwareID>
+          <HardwareID>DOID:USBPRINT\CustomPrinter</HardwareID>
+          <HardwareID>DOID:CustomPrinter</HardwareID>
+        </HardwareIDList>
+        <Locale default="true">en-US</Locale>
+      <LastModifiedDate>2014-04-08T07:19:14Z</LastModifiedDate> 
+      </MetadataKey> 
       ...
-    </Package>
-  </DeviceCompanionApplications>
-  ...
-</SoftwareInfo>
-```
+    </PackageInfo>
+    ```
+
+- DeviceInfo.xml
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <DeviceInfo xmlns="http://schemas.microsoft.com/windows/DeviceMetadata/DeviceInfo/2007/11/">
+      <DeviceCategoryList>
+        <DeviceCategory>PrintFax.Printer</DeviceCategory>
+        <DeviceCategory>Imaging.Scanner</DeviceCategory>
+      </DeviceCategoryList>
+      <ModelName>Custom Printer</ModelName>
+      <Manufacturer>Custom Manufacturer</Manufacturer> 
+      <DeviceIconFile>CustomPrinter.ico</DeviceIconFile>
+    </DeviceInfo>
+    ```
+
+- SoftwareInfo.xml
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <SoftwareInfo xmlns="http://schemas.microsoft.com/windows/2010/08/DeviceMetadata/SoftwareInfo">
+      <DeviceCompanionApplications>
+        <Package>
+          <Identity Name="CustomPrinterControlAppName" Publisher="CustomPrinterControlAppPublisher" />
+          ...
+        </Package>
+      </DeviceCompanionApplications>
+      ...
+    </SoftwareInfo>
+    ```
