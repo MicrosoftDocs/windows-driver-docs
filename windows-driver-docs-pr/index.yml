@@ -5,8 +5,8 @@ brand: windows
 metadata:
    title: Windows developer documentation
    description: Design, develop, and deploy hardware and device drivers for Windows PCs and other devices.
-   author: sonialopez
-   ms.author: sonialopez
+   author: mhopkins-msft
+   ms.author: mhopkins
    ms.topic: hub-page
    ms.date: 12/10/2024
    ms.localizationpriority: medium

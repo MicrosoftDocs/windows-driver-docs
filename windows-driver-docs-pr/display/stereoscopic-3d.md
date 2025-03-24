@@ -1,35 +1,29 @@
 ---
 title: Stereoscopic 3D
-description: Windows 8 provides a consistent API and device driver interface (DDI) platform for stereoscopic 3-D scenarios such as gaming and video playback.
-ms.date: 12/18/2024
+description: Stereoscopic 3D support is available starting on Windows 8 (WDDM 1.2).
+ms.keywords:
+- Windows, 3D stereo, driver support, WDK
+- 3D stereoscopic support, WDK , Windows, Direct3D
+- 3D stereoscopic support, gaming and video playback
+ms.date: 03/17/2025
 ---
 
-# Supporting Stereoscopic 3D in Windows
+# Supporting stereoscopic 3D in Windows drivers
 
-Starting in Windows 8 (WDDM 1.2), a consistent API and DDI platform is available to support stereoscopic 3-D scenarios such as gaming and video playback.
+Starting in Windows 8 (WDDM 1.2), graphics drivers can support stereoscopic 3D rendering to support scenarios such as gaming and video playback.
+
+Stereoscopic 3D rendering is only enabled on systems that have the necessary stereoscopic 3D-capable components. These components include 3D-capable display hardware, graphics hardware, peripherals, and software applications. The user interface settings are available in the **Display Settings** control panel only if the system has all the necessary components.
 
 * Driver implementation—Full graphics: Optional
-* [WHCK](/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests: **Device.Graphics** ¦ **ProcessingStereoscopicVideoContent**; **Device.Display.Monitor.Stereoscopic3DModes**
+* [WHLK](/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests: **Device.Graphics** ¦ **ProcessingStereoscopicVideoContent**; **Device.Display.Monitor.Stereoscopic3DModes** (DX11 3DStereoVideo)
 
-Stereoscopic 3-D rendering is only enabled on systems that have all the components that are stereoscopic 3-D-capable. These components include 3-D-capable display hardware, graphics hardware, peripherals, and software applications.
-
-The stereo design in the graphics stack is such that the particular visualization or display technology used is agnostic to the operating system. The kernel-mode display driver (KMD) communicates directly to the graphics display and has knowledge about the display capabilities through the standardized Extended Display Identification Data (EDID) structure. The KMD enumerates stereo capabilities only when it recognizes that such a display is connected to the system.
-
-On Windows 8, the stereoscopic display setting is part of the **Screen Resolution** control panel, as shown here:
-
-:::image type="content" source="images/stereo3ddisplaysetting.jpg" alt-text="Screenshot of the stereoscopic display setting in the Screen Resolution control panel on Windows 8.":::
-
-The **Enable Stereo** setting is a checkbox with the following states:
-
-* **Not available** (either grayed out or invisible): On systems incapable of rendering on stereo displays.
-* Set to **Enabled** (checked): This is the default setting on systems capable of rendering on stereo displays and implies Stereo-On-Demand. By default, the Desktop Window Manager (DWM) is mono mode. DWM switches to stereo mode only when the user launches a stereo app (on-demand). The DWM can be in either mono or stereo mode when this checkbox is checked.
-* Set to **Disabled** (unchecked): DWM is in mono mode if the user has unchecked this setting. Stereo applications present in mono mode in this case.
+The stereo design in the graphics stack is such that the particular visualization or display technology used is agnostic to the operating system. The kernel-mode display driver (KMD) communicates directly with the graphics display and has knowledge about the display capabilities through the standardized Extended Display Identification Data (EDID) structure. The KMD enumerates stereo capabilities only when it recognizes that such a display is connected to the system.
 
 To implement stereo capabilities in your KMD and user-mode drivers, see the following lists of added or updated DDIs.
 
-## Stereoscopic 3-D kernel-mode support
+## Stereoscopic 3D kernel-mode support
 
-The following DDIs are updated for Windows 8 to support stereoscopic 3-D rendering on a VidPN.
+The following DDIs were updated to support stereoscopic 3D rendering on a VidPN.
 
 * [**D3D11DDIARG_CREATERESOURCE**](/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddiarg_createresource)
 * [**D3DDDI_ALLOCATIONINFO**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_allocationinfo)
@@ -40,9 +34,9 @@ The following DDIs are updated for Windows 8 to support stereoscopic 3-D render
 * [**DXGK_SETVIDPNSOURCEADDRESS_FLAGS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_setvidpnsourceaddress_flags)
 * [**DXGKARG_OPENALLOCATION**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_openallocation)
 
-## Stereoscopic 3-D swapchain DDIs
+## Stereoscopic 3D swapchain DDIs
 
-The following DDIs were added or updated for Windows 8 to support stereoscopic 3-D swapchains.
+The following DDIs were added or updated to support stereoscopic 3D swapchains.
 
 * [*BltDXGI*](/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi_ddi_base_functions)
 * [*Blt1DXGI*](/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi1_2_ddi_base_functions)
@@ -60,8 +54,8 @@ The following DDIs were added or updated for Windows 8 to support stereoscopic 
 
 System builders are encouraged to test their stereo driver packages by using the settings described in this article to ensure correct functionality.
 
-Stereo 3-D functionality can be enabled only on DirectX 10-capable hardware and higher. However, since Direct3D 11 APIs work on DirectX 9.x and 10.x hardware, all WDDM 1.2 drivers must support Direct3D 11 and be tested thoroughly to ensure that Direct3D 11 APIs work on all Windows 8 hardware.
+Stereo 3D functionality can be enabled on DirectX 10-capable hardware and higher. However, since Direct3D 11 APIs work on DirectX 9.x and 10.x hardware, all WDDM 1.2 drivers must support Direct3D 11. To that end, they must be tested thoroughly to ensure that Direct3D 11 APIs work on all Windows 8 and later hardware.
 
-Although stereoscopic 3-D is an optional WDDM 1.2 feature, Direct3D 11 API support is required on all Windows 8 hardware. Therefore, WDDM 1.2 drivers (Full Graphics and Render devices) must support Direct3D 11 APIs by adding support for cross-process sharing of texture arrays. This requirement ensures that stereo apps don't have failures in mono modes.
+Although stereoscopic 3D is an optional WDDM 1.2 feature, Direct3D 11 API support is required starting on all Windows 8+ hardware. Therefore, WDDM 1.2 drivers (Full Graphics and Render devices) must support Direct3D 11 APIs by adding support for cross-process sharing of texture arrays. This requirement ensures that stereo apps don't have failures in mono modes.
 
 For more info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHLK documentation](/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics ¦ Processing Stereoscopic Video Content** and **Device.Display.Monitor.Stereoscopic 3D Modes**.
