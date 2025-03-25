@@ -12,6 +12,7 @@ keywords:
 - accepting connections WDK Winsock Kernel
 - WskAccept
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Listening for and Accepting Incoming Connections

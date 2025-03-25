@@ -5,6 +5,7 @@ keywords:
 - classify callouts WDK Windows Filtering Platform , stream data changes
 - stream data changes WDK Windows Filtering Platform
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Modifying Stream Data

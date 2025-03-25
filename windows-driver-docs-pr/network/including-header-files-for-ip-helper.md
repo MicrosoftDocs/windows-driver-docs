@@ -5,6 +5,7 @@ keywords:
 - IP Helper WDK networking , including header files
 - header files WDK IP Helper
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Including Header Files for IP Helper

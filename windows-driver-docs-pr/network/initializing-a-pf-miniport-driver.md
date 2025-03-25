@@ -2,6 +2,7 @@
 title: Initializing a PF Miniport Driver Topics
 description: Initializing a PF Miniport Driver Topics
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing a PF Miniport Driver Topics

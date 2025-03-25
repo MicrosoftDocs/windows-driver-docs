@@ -4,6 +4,7 @@ description: This topic describes the GUID_NDIS_ENUMERATE_ADAPTERS_EX GUID for t
 keywords:
 - GUID_NDIS_ENUMERATE_ADAPTERS_EX, WDK GUID_NDIS_ENUMERATE_ADAPTERS_EX network drivers
 ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # GUID_NDIS_ENUMERATE_ADAPTERS_EX

@@ -6,6 +6,7 @@ keywords:
 - NDIS filter drivers WDK , initializing
 - initializing filter drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing a Filter Driver

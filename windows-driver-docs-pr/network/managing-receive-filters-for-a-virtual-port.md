@@ -2,6 +2,7 @@
 title: Managing the Receive Filters for a Virtual Port
 description: Managing the Receive Filters for a Virtual Port
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Managing the Receive Filters for a Virtual Port

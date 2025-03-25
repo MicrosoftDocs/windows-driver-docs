@@ -6,6 +6,7 @@ keywords:
 - NdisMIndicateReceiveNetBufferLists
 - indicatings WDK NDIS miniport
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Indicating Received Data from a Miniport Driver

@@ -8,6 +8,7 @@ keywords:
 - NDIS_STATUS_WAN_CO_FRAGMENT
 - indications WDK CoNDIS WAN
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Indicating CoNDIS WAN Miniport Driver Status

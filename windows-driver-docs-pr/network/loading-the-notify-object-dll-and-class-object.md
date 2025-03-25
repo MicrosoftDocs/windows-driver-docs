@@ -8,6 +8,7 @@ keywords:
 - DLLs WDK notify objects
 - class objects WDK notify objects
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Loading the Notify Object DLL and Class Object

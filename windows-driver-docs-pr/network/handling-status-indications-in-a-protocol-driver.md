@@ -2,6 +2,7 @@
 title: Handling Status Indications in a Protocol Driver
 description: Handling Status Indications in a Protocol Driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling Status Indications in a Protocol Driver
