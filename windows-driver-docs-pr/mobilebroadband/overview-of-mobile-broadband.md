@@ -2,6 +2,7 @@
 title: Overview of Mobile Broadband
 description: Learn how Windows simplifies mobile broadband connectivity so users can enjoy streamlined, consistent internet access.
 ms.date: 12/16/2024
+ms.topic: concept-article
 ---
 
 # Overview of mobile broadband

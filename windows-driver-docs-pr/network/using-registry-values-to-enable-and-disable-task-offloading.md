@@ -2,6 +2,7 @@
 title: Using Registry Values to Enable and Disable Task Offloading
 description: Using Registry Values to Enable and Disable Task Offloading
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # Using Registry Values to Enable and Disable Task Offloading

@@ -7,6 +7,7 @@ keywords:
 - Plug and Play WDK NDIS miniport , stopping NIC
 - stopping NICs WDK networking
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Stopping a NIC

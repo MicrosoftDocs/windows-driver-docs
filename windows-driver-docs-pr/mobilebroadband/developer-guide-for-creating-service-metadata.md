@@ -2,6 +2,7 @@
 title: Developer Guide for Creating Service Metadata
 description: Developer guide for creating service metadata
 ms.date: 09/05/2024
+ms.topic: concept-article
 ---
 
 # Developer guide for creating service metadata

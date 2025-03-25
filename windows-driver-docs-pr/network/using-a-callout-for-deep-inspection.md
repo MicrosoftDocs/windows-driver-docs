@@ -5,6 +5,7 @@ keywords:
 - classify callouts WDK Windows Filtering Platform , deep inspection
 - deep inspection WDK Windows Filtering Platform
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using a Callout for Deep Inspection

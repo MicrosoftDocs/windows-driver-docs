@@ -2,6 +2,7 @@
 title: Design Messages in a Mobile Broadband App
 description: Design messages in a mobile broadband app
 ms.date: 10/05/2023
+ms.topic: concept-article
 ---
 
 # Design messages in a mobile broadband app

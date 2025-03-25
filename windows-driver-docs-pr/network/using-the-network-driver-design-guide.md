@@ -4,6 +4,7 @@ description: Navigating the Network Driver Design Guide
 keywords:
 - network drivers WDK , documentation
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Navigating the Network Driver Design Guide

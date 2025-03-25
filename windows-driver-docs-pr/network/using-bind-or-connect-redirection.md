@@ -2,6 +2,7 @@
 title: Using Bind or Connect Redirection
 description: The Windows Filtering Platform's (WFP) connect/bind redirection feature enables application layer enforcement (ALE) callout drivers to inspect and redirect connections.
 ms.date: 09/27/2024
+ms.topic: how-to
 ---
 
 # Using Bind or Connect Redirection

@@ -2,6 +2,7 @@
 title: Overview of Packet Coalescing
 description: Learn how NDIS packet coalescing reduces the number of receive interrupts and lowers processing overhead.
 ms.date: 01/31/2025
+ms.topic: concept-article
 ---
 
 # Overview of packet coalescing

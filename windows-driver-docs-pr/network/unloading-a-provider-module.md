@@ -6,6 +6,7 @@ keywords:
 - unloading network modules
 - NmrDeregisterProvider
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Unloading a Provider Module

@@ -6,6 +6,7 @@ keywords:
 - kdnet
 - 2PF
 ms.date: 08/23/2023
+ms.topic: reference
 ---
 
 # Debugger 2PF KDNET Support

@@ -2,6 +2,7 @@
 title: How NDIS Detects Idle Network Adapters
 description: How NDIS Detects Idle Network Adapters
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # How NDIS Detects Idle Network Adapters

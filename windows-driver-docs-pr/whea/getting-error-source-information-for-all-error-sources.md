@@ -8,6 +8,7 @@ keywords:
 - Windows Hardware Error Architecture WDK , getting error source information
 - hardware error sources WDK WHEA , getting informati
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Getting Error Source Information for All Error Sources

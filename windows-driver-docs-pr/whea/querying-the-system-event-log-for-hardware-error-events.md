@@ -9,6 +9,7 @@ keywords:
 - Windows Hardware Error Architecture WDK , querying system event log
 - event log WDK WHEA
 ms.date: 12/17/2024
+ms.topic: concept-article
 ---
 
 # Querying the System Event Log for Hardware Error Events

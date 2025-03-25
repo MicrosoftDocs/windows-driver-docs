@@ -5,6 +5,7 @@ keywords:
 - driver stacks WDK networking , starting
 - starting driver stacks WDK networking
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Starting a Driver Stack
