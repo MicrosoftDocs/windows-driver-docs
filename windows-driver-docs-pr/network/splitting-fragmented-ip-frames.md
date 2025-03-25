@@ -5,6 +5,7 @@ keywords:
 - Ethernet frame splitting WDK networking , fragmented IP frames
 - fragmented IP frames WDK header-data split
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Splitting Fragmented IP Frames

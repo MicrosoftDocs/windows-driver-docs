@@ -2,6 +2,7 @@
 title: Setting a Receive Filter on a Virtual Port
 description: Setting a Receive Filter on a Virtual Port
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting a Receive Filter on a Virtual Port

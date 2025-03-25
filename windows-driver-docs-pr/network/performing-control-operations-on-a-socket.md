@@ -6,6 +6,7 @@ keywords:
 - WSK WDK networking , control operations
 - control operations WDK Winsock Kernel
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Performing Control Operations on a Socket

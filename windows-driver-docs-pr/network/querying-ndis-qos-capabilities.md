@@ -2,6 +2,7 @@
 title: Querying NDIS QoS Capabilities
 description: Querying NDIS QoS Capabilities
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Querying NDIS QoS Capabilities

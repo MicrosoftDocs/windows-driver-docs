@@ -7,6 +7,7 @@ keywords:
 - virtual addresses WDK SANs
 - ownership WDK virtual addresses
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Securing and Releasing Ownership of Virtual Addresses

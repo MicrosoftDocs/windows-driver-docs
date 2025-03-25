@@ -7,6 +7,7 @@ keywords:
 - software loopbacks WDK networking
 - promiscuous-mode loopbacks WDK networking
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Sending Packets from a CoNDIS WAN Miniport Driver

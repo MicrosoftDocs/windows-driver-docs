@@ -2,6 +2,7 @@
 title: Setting the Number of RSS Processors
 description: Administrators should set the number of receive side scaling (RSS) processors to improve overall performance.
 ms.date: 06/28/2024
+ms.topic: concept-article
 ---
 
 # Setting the Number of RSS Processors

@@ -2,6 +2,7 @@
 title: Reserving Processors for Applications
 description: The receive side scaling (RSS) interface enables an administrator to reserve a set of processors for applications to use.
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # Reserving Processors for Applications

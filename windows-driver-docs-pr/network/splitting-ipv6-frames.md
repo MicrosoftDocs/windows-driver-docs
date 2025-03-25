@@ -5,6 +5,7 @@ keywords:
 - Ethernet frame splitting WDK networking , IPv6 frames
 - IPv6 frames WDK header-data split
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Splitting IPv6 Frames

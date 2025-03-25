@@ -5,6 +5,7 @@ keywords:
 - connection-oriented sockets WDK Winsock Kernel
 - WskSend
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Sending Data over a Connection-Oriented Socket

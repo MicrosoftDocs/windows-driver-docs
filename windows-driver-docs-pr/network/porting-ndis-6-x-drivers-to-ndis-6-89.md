@@ -2,6 +2,7 @@
 title: Porting NDIS 6.x drivers to NDIS 6.89
 description: NDIS 6.89 is substantially the same as NDIS 6.88.
 ms.date: 03/08/2024
+ms.topic: concept-article
 ---
 
 # Porting NDIS 6.x drivers to NDIS 6.89

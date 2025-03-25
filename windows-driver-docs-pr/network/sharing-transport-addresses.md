@@ -7,6 +7,7 @@ keywords:
 - local transport address bindings WDK Winsock Kernel
 - transport addresses WDK Winsock Kernel
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Sharing Transport Addresses

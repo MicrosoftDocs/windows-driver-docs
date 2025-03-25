@@ -2,6 +2,7 @@
 title: Starting and Pausing a Binding
 description: Starting and Pausing a Binding
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Starting and Pausing a Binding

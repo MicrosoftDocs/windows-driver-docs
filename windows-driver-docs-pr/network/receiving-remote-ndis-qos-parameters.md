@@ -2,6 +2,7 @@
 title: Receiving Remote NDIS QoS Parameters
 description: Receiving Remote NDIS QoS Parameters
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Receiving Remote NDIS QoS Parameters

@@ -6,6 +6,7 @@ keywords:
 - NdisMRegisterMiniportDriver
 - registering CoNDIS WAN drivers
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Registering CoNDIS WAN Drivers

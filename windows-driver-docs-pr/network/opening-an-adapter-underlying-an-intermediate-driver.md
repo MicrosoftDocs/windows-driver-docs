@@ -5,6 +5,7 @@ keywords:
 - underlying adapter opening WDK networking
 - opening underlying adapters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Opening an Adapter Underlying an Intermediate Driver

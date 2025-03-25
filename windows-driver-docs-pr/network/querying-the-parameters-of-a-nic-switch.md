@@ -2,6 +2,7 @@
 title: Querying the Parameters of a NIC Switch
 description: Querying the Parameters of a NIC Switch
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Querying the Parameters of a NIC Switch

@@ -5,6 +5,7 @@ keywords:
 - Ethernet frame splitting WDK networking , IPsec frames
 - IPsec frame splitting WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Splitting IPsec Frames

@@ -4,6 +4,7 @@ description: Setting Information for a Connection-Oriented Miniport Driver
 keywords:
 - connection-oriented drivers WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting Information for a Connection-Oriented Miniport Driver

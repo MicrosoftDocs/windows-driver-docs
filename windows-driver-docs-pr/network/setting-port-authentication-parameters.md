@@ -7,6 +7,7 @@ keywords:
 - OID requests WDK NDIS ports
 - authentication parameters WDK NDIS ports
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting Port Authentication Parameters

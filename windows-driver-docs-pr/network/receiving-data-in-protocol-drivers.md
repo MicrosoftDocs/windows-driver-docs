@@ -4,6 +4,7 @@ description: Receiving Data in Protocol Drivers
 keywords:
 - receiving data WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Receiving Data in Protocol Drivers
