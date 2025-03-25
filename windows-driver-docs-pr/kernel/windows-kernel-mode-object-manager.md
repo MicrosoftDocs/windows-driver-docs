@@ -2,6 +2,7 @@
 title: Windows Kernel-Mode Object Manager
 description: Windows Kernel-Mode Object Manager
 ms.date: 09/26/2023
+ms.topic: concept-article
 ---
 
 # Windows Kernel-Mode Object Manager

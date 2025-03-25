@@ -2,6 +2,7 @@
 title: IStillImage COM Interface
 description: IStillImage COM interface
 ms.date: 05/03/2023
+ms.topic: reference
 ---
 
 # IStillImage COM interface

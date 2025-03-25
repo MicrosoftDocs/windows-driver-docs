@@ -2,6 +2,7 @@
 title: IWiaLog COM Interface
 description: IWiaLog COM interface
 ms.date: 05/03/2023
+ms.topic: reference
 ---
 
 # IWiaLog COM interface

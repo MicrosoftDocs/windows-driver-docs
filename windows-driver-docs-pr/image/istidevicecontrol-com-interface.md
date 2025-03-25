@@ -2,6 +2,7 @@
 title: IStiDeviceControl COM Interface
 description: IStiDeviceControl COM Interface
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # IStiDeviceControl COM Interface

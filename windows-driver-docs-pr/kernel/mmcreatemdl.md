@@ -2,6 +2,7 @@
 title: Windows Kernel Obsolete Routines
 description: Windows kernel obsolete routines
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Windows kernel obsolete routines

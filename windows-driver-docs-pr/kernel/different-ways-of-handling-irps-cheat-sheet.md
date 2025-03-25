@@ -3,6 +3,7 @@ title: Different Ways of Handling IRPs - Cheat Sheet
 description: Different ways of handling IRPs
 keywords: ["IRPs WDK kernel , handling IRPs"]
 ms.date: 12/07/2017
+ms.topic: concept-article
 ---
 
 # Different ways of handling IRPs - Cheat sheet 

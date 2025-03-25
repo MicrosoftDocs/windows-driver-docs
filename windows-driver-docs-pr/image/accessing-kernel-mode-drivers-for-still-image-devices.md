@@ -2,6 +2,7 @@
 title: Access Kernel-Mode Drivers for Still Image Devices
 description: Access Kernel-Mode Drivers for Still Image Devices
 ms.date: 03/27/2023
+ms.topic: concept-article
 ---
 
 # Access Kernel-Mode Drivers for Still Image Devices

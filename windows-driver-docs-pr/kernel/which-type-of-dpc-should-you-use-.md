@@ -3,6 +3,7 @@ title: Which Type of DPC Should You Use
 description: Which Type of DPC Should You Use
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "DpcForIsr", "CustomDpc"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Which Type of DPC Should You Use?

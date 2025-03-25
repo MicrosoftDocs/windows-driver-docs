@@ -4,6 +4,7 @@ description: IPrintOemUni COM Interface
 keywords:
 - IPrintOemUni
 ms.date: 07/17/2023
+ms.topic: reference
 ---
 
 # IPrintOemUni COM Interface

@@ -3,6 +3,7 @@ title: Points to Consider About Device Objects
 description: Points to Consider About Device Objects
 keywords: ["device objects WDK kernel , design considerations"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Points to Consider About Device Objects

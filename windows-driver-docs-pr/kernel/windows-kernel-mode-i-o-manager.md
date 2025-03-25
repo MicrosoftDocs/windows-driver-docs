@@ -2,6 +2,7 @@
 title: Windows Kernel-Mode I/O Manager
 description: Windows Kernel-Mode I/O Manager
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Windows Kernel-Mode I/O Manager

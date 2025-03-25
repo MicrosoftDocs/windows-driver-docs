@@ -2,6 +2,7 @@
 title: Windows Kernel-Mode Plug and Play Manager
 description: Windows Kernel-Mode Plug and Play Manager
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Windows Kernel-Mode Plug and Play Manager

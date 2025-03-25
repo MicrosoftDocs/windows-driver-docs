@@ -7,6 +7,7 @@ keywords:
 - Print Tickets WDK , adding support for
 - IPrintTicketProvider
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # Add print ticket support to print drivers

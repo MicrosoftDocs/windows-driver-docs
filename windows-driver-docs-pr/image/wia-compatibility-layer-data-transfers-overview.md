@@ -2,6 +2,7 @@
 title: WIA Compatibility Layer Data Transfers Overview
 description: WIA Compatibility Layer Data Transfers Overview
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Compatibility Layer Data Transfers Overview

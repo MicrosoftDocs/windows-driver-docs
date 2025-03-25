@@ -2,6 +2,7 @@
 title: IWiaMiniDrv COM Interface
 description: This topic provides detailed guidance on using the IWiaMiniDrv COM interface
 ms.date: 05/03/2023
+ms.topic: reference
 ---
 
 # IWiaMiniDrv COM interface

@@ -4,6 +4,7 @@ description: IPrintOemUI2 COM Interface
 keywords:
 - IPrintOemUI2
 ms.date: 07/17/2023
+ms.topic: reference
 ---
 
 # IPrintOemUI2 COM Interface

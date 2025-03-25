@@ -2,6 +2,7 @@
 title: Example DownloadPreviewImage
 description: Example DownloadPreviewImage
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example: DownloadPreviewImage

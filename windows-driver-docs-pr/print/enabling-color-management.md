@@ -4,6 +4,7 @@ description: Provides information about how to enable color management.
 keywords:
 - color management WDK print, enabling
 ms.date: 01/27/2023
+ms.topic: reference
 ---
 
 # Enable color management

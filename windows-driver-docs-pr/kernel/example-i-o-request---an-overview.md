@@ -3,6 +3,7 @@ title: Example I/O Request - an Overview
 description: Example I/O Request - An Overview
 keywords: ["opening file objects", "named file objects WDK kernel", "file objects WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Example I/O Request - An Overview

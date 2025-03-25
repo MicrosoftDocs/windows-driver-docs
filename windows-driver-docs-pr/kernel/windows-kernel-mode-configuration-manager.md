@@ -2,6 +2,7 @@
 title: Windows Kernel-Mode Configuration Manager
 description: Windows Kernel-Mode Configuration Manager
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Windows Kernel-Mode Configuration Manager

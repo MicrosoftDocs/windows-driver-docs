@@ -3,6 +3,7 @@ title: Introduction to Message-Signaled Interrupts
 description: Provides an introduction to message-signaled interrupts.
 keywords: ["message-signaled interrupts WDK kernel", "MSIs WDK kernel"]
 ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
 # Introduction to message-signaled interrupts

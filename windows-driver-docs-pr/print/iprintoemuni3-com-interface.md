@@ -4,6 +4,7 @@ description: IPrintOemUni3 COM Interface
 keywords:
 - IPrintOemUni3
 ms.date: 07/17/2023
+ms.topic: reference
 ---
 
 # IPrintOemUni3 COM Interface

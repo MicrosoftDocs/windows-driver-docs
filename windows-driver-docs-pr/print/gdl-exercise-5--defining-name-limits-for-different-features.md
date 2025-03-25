@@ -8,6 +8,7 @@ keywords:
 - GDL WDK , tutorials
 - templates WDK GDL , defining name limits
 ms.date: 04/20/2017
+ms.topic: tutorial
 ---
 
 # GDL Exercise 5: Defining Name Limits for Different Features

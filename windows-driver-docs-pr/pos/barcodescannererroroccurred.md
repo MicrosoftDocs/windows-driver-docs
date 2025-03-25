@@ -2,6 +2,7 @@
 title: BarcodeScannerErrorOccurred
 description: The BarcodeScannerErrorOccurred event occurs when there is an error, such as a scanning error.
 ms.date: 03/17/2023
+ms.topic: reference
 ---
 
 # BarcodeScannerErrorOccurred

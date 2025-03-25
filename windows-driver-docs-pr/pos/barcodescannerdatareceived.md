@@ -2,6 +2,7 @@
 title: BarcodeScannerDataReceived
 description: The BarcodeScannerDataReceived event occurs after a successful scan event.
 ms.date: 03/17/2023
+ms.topic: reference
 ---
 
 # BarcodeScannerDataReceived

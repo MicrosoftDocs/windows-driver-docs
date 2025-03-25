@@ -2,6 +2,7 @@
 title: Windows Kernel-Mode HAL Library
 description: Windows Kernel-Mode HAL Library
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Windows Kernel-Mode HAL Library

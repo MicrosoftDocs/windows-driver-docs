@@ -2,6 +2,7 @@
 title: Design Guidelines for Starting Devices
 description: Design Guidelines for Starting Devices
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Design Guidelines for Starting Devices

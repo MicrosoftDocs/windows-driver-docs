@@ -2,6 +2,7 @@
 title: Windows Kernel-Mode Process and Thread Manager
 description: Windows Kernel-Mode Process and Thread Manager
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Windows Kernel-Mode Process and Thread Manager

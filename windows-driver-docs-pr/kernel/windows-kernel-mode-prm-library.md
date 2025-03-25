@@ -2,6 +2,7 @@
 title: Windows Kernel-Mode Platform Runtime Mechanism (PRM) Library
 description: Describes the steps required to use the PRM interface
 ms.date: 03/22/2024
+ms.topic: concept-article
 ---
 
 # Windows Kernel-Mode Platform Runtime Mechanism (PRM) Library

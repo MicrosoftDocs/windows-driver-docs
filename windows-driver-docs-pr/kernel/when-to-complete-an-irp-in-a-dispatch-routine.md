@@ -3,6 +3,7 @@ title: When to Complete an IRP in a Dispatch Routine
 description: When to Complete an IRP in a Dispatch Routine
 keywords: ["completing IRPs WDK kernel , dispatch routines", "dispatch routines WDK kernel , completing IRPs"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # When to Complete an IRP in a Dispatch Routine

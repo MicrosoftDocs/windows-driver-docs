@@ -2,6 +2,7 @@
 title: Example Simple Segmentation Filter
 description: Example Simple Segmentation Filter
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example: Simple Segmentation Filter

@@ -2,6 +2,7 @@
 title: Windows Kernel Global Variables
 description: Kernel global variables.
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Windows kernel global variables

@@ -12,6 +12,7 @@ keywords:
 - inheritance WDK GDL
 - virtual templates WDK GDL
 ms.date: 04/20/2017
+ms.topic: tutorial
 ---
 
 # GDL Exercise 2: Inheriting from Virtual Templates

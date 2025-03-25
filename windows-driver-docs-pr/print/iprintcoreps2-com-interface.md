@@ -4,6 +4,7 @@ description: IPrintCorePS2 COM interface
 keywords:
 - IPrintCorePS2
 ms.date: 06/26/2023
+ms.topic: reference
 ---
 
 # IPrintCorePS2 COM interface

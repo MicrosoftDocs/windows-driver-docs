@@ -2,6 +2,7 @@
 title: IPrintOemCommon COM Interface
 description: IPrintOemCommon COM Interface
 ms.date: 07/14/2023
+ms.topic: reference
 ---
 
 # IPrintOemCommon COM Interface

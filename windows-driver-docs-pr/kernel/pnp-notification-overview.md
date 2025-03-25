@@ -3,6 +3,7 @@ title: PnP Notification Overview
 description: PnP Notification Overview
 keywords: ["PnP WDK kernel , notifications", "Plug and Play WDK kernel , notifications", "notifications WDK PnP , about notifications", "event notifications WDK PnP", "EventCategoryDeviceInterfaceChange notification", "EventCategoryTargetDeviceChange notification", "EventCategoryHardwareProfileChange notification"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # PnP Notification Overview

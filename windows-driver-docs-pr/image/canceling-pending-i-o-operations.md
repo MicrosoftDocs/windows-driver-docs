@@ -2,6 +2,7 @@
 title: Cancel Pending I/O Operations
 description: Cancel pending I/O operations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Cancel pending I/O operations

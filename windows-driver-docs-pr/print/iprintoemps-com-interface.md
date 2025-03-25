@@ -4,6 +4,7 @@ description: IPrintOemPS COM Interface
 keywords:
 - IPrintOemPS
 ms.date: 07/17/2023
+ms.topic: reference
 ---
 
 # IPrintOemPS COM Interface
