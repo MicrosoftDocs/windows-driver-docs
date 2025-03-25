@@ -4,6 +4,7 @@ description: Warning C28753 Relying on undefined order of evaluation of paramete
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28753"
+ms.topic: reference
 ---
 
 # C28753

@@ -2,6 +2,7 @@
 title: Debugger Programming Extension APIs
 description: This topic describes the Debugger Programming Extension APIs
 ms.date: 08/01/2022
+ms.topic: reference
 ---
 
 # Debugger Programming Extension APIs

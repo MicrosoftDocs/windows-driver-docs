@@ -7,6 +7,7 @@ keywords:
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28162"
+ms.topic: reference
 ---
 
 # C28162

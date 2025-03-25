@@ -4,6 +4,7 @@ description: Warning C28725 Use Watson instead of this SetUnhandledExceptionFilt
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28725"
+ms.topic: reference
 ---
 
 # C28725

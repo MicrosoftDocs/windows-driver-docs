@@ -4,6 +4,7 @@ description: Warning C30031 Calling a memory allocating function and passing a p
 ms.date: 04/20/2017
 f1_keywords: 
   - "C30031"
+ms.topic: reference
 ---
 
 # C30031

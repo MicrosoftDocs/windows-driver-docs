@@ -2,6 +2,7 @@
 title: Debugger Data Model - Directory Objects
 description: Directory objects represent and manipulate directories on the file system.
 ms.date: 12/13/2018
+ms.topic: reference
 ---
 # Directory Objects 
 ## Summary

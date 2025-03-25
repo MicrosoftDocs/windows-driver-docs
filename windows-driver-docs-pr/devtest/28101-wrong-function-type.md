@@ -7,6 +7,7 @@ keywords:
 ms.date: 05/01/2020
 f1_keywords: 
   - "C28101"
+ms.topic: reference
 ---
 
 # C28101

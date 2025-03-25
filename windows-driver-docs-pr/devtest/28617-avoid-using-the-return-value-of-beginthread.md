@@ -4,6 +4,7 @@ description: Warning C28617 Avoid using the return value of _beginthread(). Use 
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28617"
+ms.topic: reference
 ---
 
 # C28617

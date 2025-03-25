@@ -2,6 +2,7 @@
 title: How do I Generate Trace Messages from a Header File
 description: How do I generate trace messages from a header file
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How do I generate trace messages from a header file?

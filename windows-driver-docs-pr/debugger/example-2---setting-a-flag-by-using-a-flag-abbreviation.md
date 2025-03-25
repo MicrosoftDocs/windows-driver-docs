@@ -2,6 +2,7 @@
 title: Example 2 Setting a Flag by Using a Flag Abbreviation
 description: Example 2 Setting a Flag by Using a Flag Abbreviation
 ms.date: 10/12/2018
+ms.topic: concept-article
 ---
 
 # Example 2: Setting a Flag by Using a Flag Abbreviation

@@ -4,6 +4,7 @@ description: Warning C28173 The current function appears to incorrectly adapt to
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28173"
+ms.topic: reference
 ---
 
 # C28173

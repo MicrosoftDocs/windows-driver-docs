@@ -8,6 +8,7 @@ keywords:
 - AppVerif.exe
 - user-mode application testing
 ms.date: 01/14/2022
+ms.topic: reference
 ---
 
 # Application Verifier - Stop Codes - Services

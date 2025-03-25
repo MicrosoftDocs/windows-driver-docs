@@ -4,6 +4,7 @@ description: Warning C28638 function delayload stub is missing a matching declar
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28638"
+ms.topic: reference
 ---
 
 # C28638

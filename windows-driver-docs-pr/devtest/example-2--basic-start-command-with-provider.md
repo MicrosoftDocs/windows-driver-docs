@@ -9,6 +9,7 @@ keywords:
 - -guid parameter
 - starting trace sessions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 2: Basic Start Command with Provider

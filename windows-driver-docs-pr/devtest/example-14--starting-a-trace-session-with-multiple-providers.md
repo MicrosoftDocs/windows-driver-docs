@@ -7,6 +7,7 @@ keywords:
 - tracing WDK , providers
 - multiple providers WDK software tracing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 14: Starting a Trace Session with Multiple Providers

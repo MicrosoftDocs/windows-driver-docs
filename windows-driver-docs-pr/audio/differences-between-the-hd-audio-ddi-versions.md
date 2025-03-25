@@ -7,6 +7,7 @@ keywords:
 - HDAUDIO_BUS_INTERFACE structure
 - HDAUDIO_BUS_INTERFACE_BDL structure
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Differences Between the HD Audio DDI Versions

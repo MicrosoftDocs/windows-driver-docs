@@ -4,6 +4,7 @@ description: Warning C28625 Function call used to clear sensitive data will be o
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28625"
+ms.topic: reference
 ---
 
 # C28625

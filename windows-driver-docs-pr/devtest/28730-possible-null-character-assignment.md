@@ -4,6 +4,7 @@ description: Warning C28730 Possible assignment of '\\0' directly to a pointer.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28730"
+ms.topic: reference
 ---
 
 # C28730

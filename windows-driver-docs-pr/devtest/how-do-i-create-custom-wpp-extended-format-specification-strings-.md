@@ -2,6 +2,7 @@
 title: How do I Create Custom WPP Extended Format Specification Strings
 description: How do I create custom WPP extended format specification strings
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How do I create custom WPP extended format specification strings?

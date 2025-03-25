@@ -4,6 +4,7 @@ description: Warning C30035 A call was made to a function that must be made from
 ms.date: 04/20/2017
 f1_keywords: 
   - "C30035"
+ms.topic: reference
 ---
 
 # C30035

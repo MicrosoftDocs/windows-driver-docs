@@ -4,6 +4,7 @@ description: The type for which 0 is being used does not treat it as failure cas
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28650"
+ms.topic: reference
 ---
 
 # C28650

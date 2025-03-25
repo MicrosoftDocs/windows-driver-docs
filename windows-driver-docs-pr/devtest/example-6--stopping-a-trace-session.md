@@ -5,6 +5,7 @@ keywords:
 - trace sessions WDK , stopping
 - stopping trace sessions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 6: Stopping a Trace Session

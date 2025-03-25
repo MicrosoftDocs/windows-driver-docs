@@ -4,6 +4,7 @@ description: Warning C28636 Calling LocalFree on non-allocated pointer obtained 
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28636"
+ms.topic: reference
 ---
 
 # C28636

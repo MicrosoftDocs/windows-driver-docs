@@ -5,6 +5,7 @@ keywords:
 - trace sessions WDK , real-time
 - real-time trace sessions WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 10: Starting a Real-Time Trace Session

@@ -4,6 +4,7 @@ description: Warning C28714 Cast between semantically different integer types.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28714"
+ms.topic: reference
 ---
 
 # C28714

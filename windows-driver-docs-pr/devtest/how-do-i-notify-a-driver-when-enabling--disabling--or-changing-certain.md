@@ -2,6 +2,7 @@
 title: How do I Notify a Driver when Enabling, Disabling, or Changing Certain Flags
 description: How do I notify a driver when enabling, disabling, or changing certain flags
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How do I notify a driver when enabling, disabling, or changing certain flags?

@@ -3,6 +3,7 @@ title: Enable Page Heap
 description: Enable page heap
 keywords: ["Enable page heap (global flag)"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Enable page heap

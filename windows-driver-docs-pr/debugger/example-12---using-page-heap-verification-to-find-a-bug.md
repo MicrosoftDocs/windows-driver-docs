@@ -2,6 +2,7 @@
 title: Example 12 Using Page Heap Verification to Find a Bug
 description: Example 12 Using Page Heap Verification to Find a Bug
 ms.date: 10/12/2018
+ms.topic: concept-article
 ---
 
 # Example 12: Using Page Heap Verification to Find a Bug

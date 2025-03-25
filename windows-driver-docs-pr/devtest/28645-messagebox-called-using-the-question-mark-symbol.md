@@ -4,6 +4,7 @@ description: Warning C28645 MessageBox was called using the question mark messag
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28645"
+ms.topic: reference
 ---
 
 # C28645

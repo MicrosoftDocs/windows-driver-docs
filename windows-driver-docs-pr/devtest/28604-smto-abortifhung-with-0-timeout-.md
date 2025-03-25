@@ -4,6 +4,7 @@ description: Warning C28604 Avoid calling SendMessageTimeout with SMTO_ABORTIFHU
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28604"
+ms.topic: reference
 ---
 
 # C28604

@@ -4,6 +4,7 @@ description: Warning C28740 Unannotated unsigned buffer.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28740"
+ms.topic: reference
 ---
 
 # C28740

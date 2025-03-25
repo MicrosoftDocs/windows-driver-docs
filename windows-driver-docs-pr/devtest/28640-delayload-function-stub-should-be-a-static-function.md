@@ -4,6 +4,7 @@ description: Warning C28640 function delayload stub should be a static function.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28640"
+ms.topic: reference
 ---
 
 # C28640

@@ -4,6 +4,7 @@ description: Warning C28624 No call to Release() to match incremented refcount f
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28624"
+ms.topic: reference
 ---
 
 # C28624

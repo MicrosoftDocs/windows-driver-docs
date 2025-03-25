@@ -5,6 +5,7 @@ keywords:
 - trace sessions WDK , Global Logger
 - Global Logger trace session WDK , examples
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 13: Creating a Global Logger Session

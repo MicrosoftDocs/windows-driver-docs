@@ -4,6 +4,7 @@ description: Warning C28623 Unsigned cast of GetMessagePos() coordinates. Use GE
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28623"
+ms.topic: reference
 ---
 
 # C28623

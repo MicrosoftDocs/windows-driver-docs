@@ -2,6 +2,7 @@
 title: Example 14 Configuring Special Pool
 description: Example 14 Configuring Special Pool
 ms.date: 10/12/2018
+ms.topic: concept-article
 ---
 
 # Example 14: Configuring Special Pool

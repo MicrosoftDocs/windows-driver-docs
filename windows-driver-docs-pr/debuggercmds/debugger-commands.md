@@ -3,6 +3,7 @@ title: "Debugger Commands"
 description: "Debugger Commands"
 keywords: ["debugger commands, reference", "debugger commands, complete listing"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Debugger Commands

@@ -3,6 +3,7 @@ title: Debugger Command Program Examples
 description: Debugger Command Program Examples
 keywords: ["debugger command program, examples"]
 ms.date: 03/30/2021
+ms.topic: reference
 ---
 
 # Debugger Command Program Examples
