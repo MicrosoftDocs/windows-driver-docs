@@ -11,6 +11,7 @@ keywords:
 - WDM lower edge WDK networking , driver initialization
 - initializing miniport drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing a Miniport Driver with a WDM Lower Edge

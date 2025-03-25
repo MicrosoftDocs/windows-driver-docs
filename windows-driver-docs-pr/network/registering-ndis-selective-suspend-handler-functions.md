@@ -2,6 +2,7 @@
 title: Registering NDIS Selective Suspend Handler Functions
 description: Registering NDIS Selective Suspend Handler Functions
 ms.date: 03/02/2023
+ms.topic: how-to
 ---
 
 # Registering NDIS Selective Suspend Handler Functions

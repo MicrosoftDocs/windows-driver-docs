@@ -2,6 +2,7 @@
 title: Freeing Resources for a Virtual Function
 description: Freeing Resources for a Virtual Function
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Freeing Resources for a Virtual Function

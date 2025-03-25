@@ -9,6 +9,7 @@ keywords:
 - unloading drivers
 - initializing SAN proxy drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing and Unloading a SAN Proxy Driver

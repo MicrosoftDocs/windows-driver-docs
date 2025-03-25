@@ -2,6 +2,7 @@
 title: Managing Physical Network Adapters
 description: Managing Physical Network Adapters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Managing Physical Network Adapters

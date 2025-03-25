@@ -2,6 +2,7 @@
 title: Reporting NDIS Selective Suspend Capabilities
 description: Reporting NDIS Selective Suspend Capabilities
 ms.date: 03/02/2023
+ms.topic: how-to
 ---
 
 # Reporting NDIS Selective Suspend Capabilities

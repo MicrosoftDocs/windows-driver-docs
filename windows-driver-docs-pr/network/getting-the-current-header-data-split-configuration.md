@@ -6,6 +6,7 @@ keywords:
 - current header-data split configuration WDK networking
 - status information WDK header-data split
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Getting the Current Header-Data Split Configuration

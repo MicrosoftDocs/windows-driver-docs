@@ -6,6 +6,7 @@ keywords:
 - NDIS protocol drivers WDK , initializing
 - initializing protocol drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing a Protocol Driver

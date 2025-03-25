@@ -2,6 +2,7 @@
 title: Reporting timestamping capabilities and current configuration
 description: Miniport drivers use status indications to report the timestamping capabilities and their current configuration to the operating system.
 ms.date: 01/31/2021
+ms.topic: how-to
 ---
 
 # Reporting timestamping capabilities and current configuration

@@ -17,6 +17,7 @@ keywords:
 - Halting state WDK networking
 - Initializing state WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Indicating Connection Status

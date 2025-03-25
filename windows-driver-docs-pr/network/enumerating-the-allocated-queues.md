@@ -2,6 +2,7 @@
 title: Enumerating the Allocated Queues
 description: Enumerating the Allocated Queues
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Enumerating the Allocated Queues

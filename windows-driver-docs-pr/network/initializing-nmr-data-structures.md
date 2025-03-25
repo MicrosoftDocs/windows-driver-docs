@@ -6,6 +6,7 @@ keywords:
 - NMR WDK Winsock Kernel
 - initializing NMR data structures
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing NMR Data Structures

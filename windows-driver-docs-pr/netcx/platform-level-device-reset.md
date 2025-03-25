@@ -6,6 +6,7 @@ keywords:
 - NetAdapterCx, Recovering mechanism, device reset, collecting diagnostics, PLDR
 ms.date: 07/02/2020
 ms.custom: Fe
+ms.topic: how-to
 ---
 
 # Recovering an unresponsive NIC with NetAdapterCx PLDR

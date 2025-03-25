@@ -2,6 +2,7 @@
 title: Reporting Wake Reason Status Indication Capabilities
 description: Reporting Wake Reason Status Indication Capabilities
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Reporting Wake Reason Status Indication Capabilities

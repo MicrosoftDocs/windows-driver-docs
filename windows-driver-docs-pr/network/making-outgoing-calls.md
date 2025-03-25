@@ -8,6 +8,7 @@ keywords:
 - outgoing calls WDK CoNDIS WAN
 - calls WDK CoNDIS WAN
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Making Outgoing Calls

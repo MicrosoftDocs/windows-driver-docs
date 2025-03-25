@@ -2,6 +2,7 @@
 title: Reporting Packet Coalescing Capabilities
 description: Reporting Packet Coalescing Capabilities
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Reporting Packet Coalescing Capabilities
