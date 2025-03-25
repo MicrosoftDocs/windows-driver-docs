@@ -2,6 +2,7 @@
 title: Creating WDF HID Minidrivers
 description: This topic describes how to create a Human Interface Device (HID) minidriver using Windows Driver Frameworks (WDF).
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating WDF HID Minidrivers

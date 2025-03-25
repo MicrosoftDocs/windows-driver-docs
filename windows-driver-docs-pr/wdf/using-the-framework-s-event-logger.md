@@ -9,6 +9,7 @@ keywords:
 - events WDK KMDF , logging
 - errors WDK KMDF
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Using the Framework's Event Logger

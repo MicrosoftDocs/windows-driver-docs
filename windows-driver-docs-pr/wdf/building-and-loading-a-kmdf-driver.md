@@ -14,6 +14,7 @@ keywords:
 - KMDF drivers WDK KMDF , building
 - KMDF drivers WDK KMDF , loading
 ms.date: 05/16/2019
+ms.topic: concept-article
 ---
 
 # Building and Loading a WDF Driver

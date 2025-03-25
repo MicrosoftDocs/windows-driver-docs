@@ -8,6 +8,7 @@ keywords:
 - undelivered I/O requests WDK KMDF
 - forwarding I/O requests WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Canceling I/O Requests

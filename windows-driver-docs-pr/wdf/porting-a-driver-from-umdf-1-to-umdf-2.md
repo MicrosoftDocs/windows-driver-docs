@@ -2,6 +2,7 @@
 title: Porting a Driver from UMDF 1 to UMDF 2
 description: This topic describes how to port a User-Mode Driver Framework (UMDF) 1 driver to UMDF 2.
 ms.date: 01/23/2023
+ms.topic: concept-article
 ---
 
 # Porting a Driver from UMDF 1 to UMDF 2

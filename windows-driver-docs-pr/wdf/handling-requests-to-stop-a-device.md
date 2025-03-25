@@ -12,6 +12,7 @@ keywords:
 - temporary device stoppage WDK KMDF
 - temporary device stoppage WDK KMDF , PnP
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling Requests to Stop a Device

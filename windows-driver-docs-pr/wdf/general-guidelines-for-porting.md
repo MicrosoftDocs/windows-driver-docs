@@ -2,6 +2,7 @@
 title: Preparing for Porting
 description: Preparing for Porting
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Preparing for Porting

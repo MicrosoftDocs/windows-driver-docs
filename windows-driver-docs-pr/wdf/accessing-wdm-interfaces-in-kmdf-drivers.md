@@ -8,6 +8,7 @@ keywords:
 - framework-based drivers WDK KMDF , WDM
 - WDM interfaces WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Accessing WDM Interfaces in KMDF Drivers

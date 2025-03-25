@@ -8,6 +8,7 @@ keywords:
 - IRPs WDK KMDF , outside framework
 - I/O request packets WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling WDM IRPs Outside of the Framework

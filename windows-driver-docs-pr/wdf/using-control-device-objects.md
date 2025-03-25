@@ -13,6 +13,7 @@ keywords:
 - names WDK KMDF
 - names WDK KMDF , device objects
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Using Control Device Objects

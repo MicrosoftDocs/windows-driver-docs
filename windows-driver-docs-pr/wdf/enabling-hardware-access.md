@@ -2,6 +2,7 @@
 title: Enabling Hardware Access
 description: Enabling Hardware Access
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Enabling Hardware Access

@@ -9,6 +9,7 @@ keywords:
 - filter drivers WDK UMDF
 - loading reflectors WDK UMDF
 ms.date: 03/07/2023
+ms.topic: concept-article
 ---
 
 # Specifying the Reflector in an INF File

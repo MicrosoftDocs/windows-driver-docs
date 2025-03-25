@@ -7,6 +7,7 @@ keywords:
 - bus-master DMA WDK KMDF , transactions
 - completing DMA transactions WDK KMDF
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Completing a DMA Transaction

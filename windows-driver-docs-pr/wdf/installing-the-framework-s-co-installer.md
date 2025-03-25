@@ -10,6 +10,7 @@ keywords:
 - DDInstall section WDK KMDF
 - Wdf INF file section WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Specifying the KMDF Co-installer in an INF File

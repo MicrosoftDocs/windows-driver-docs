@@ -2,6 +2,7 @@
 title: Card Requirements
 description: Card Requirements
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Card Requirements

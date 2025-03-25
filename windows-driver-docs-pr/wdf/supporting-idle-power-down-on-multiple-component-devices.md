@@ -2,6 +2,7 @@
 title: Supporting Idle Power-Down on Multiple-Component Devices
 description: Supporting Idle Power-Down on Multiple-Component Devices
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting Idle Power-Down on Multiple-Component Devices
