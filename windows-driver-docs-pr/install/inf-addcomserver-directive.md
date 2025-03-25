@@ -2,6 +2,7 @@
 title: INF AddComServer directive
 description: An AddComServer directive is used within a DDInstall.COM section and registers a COM server.
 ms.date: 04/17/2024
+ms.topic: reference
 ---
 
 # INF AddComServer directive

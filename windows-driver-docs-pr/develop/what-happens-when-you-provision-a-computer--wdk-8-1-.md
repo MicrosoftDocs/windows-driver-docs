@@ -2,6 +2,7 @@
 title: What Happens when you Provision a Computer (WDK 8.1)
 description: Here we show what happens when you use version 8.1 of the Windows Driver Kit (WDK) to provision a target computer.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # What happens when you provision a computer (WDK 8.1)
