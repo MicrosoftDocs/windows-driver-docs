@@ -6,6 +6,7 @@ keywords:
 - Windows Vista display driver model WDK , migrating
 - migrating display driver model WDK Windows Vista
 ms.date: 08/21/2024
+ms.topic: concept-article
 ---
 
 # Migrating to WDDM

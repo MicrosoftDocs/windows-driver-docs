@@ -7,6 +7,7 @@ keywords:
 - Windows file system driver FSCTL
 - Windows file system filter driver FSCTL
 ms.date: 12/20/2024
+ms.topic: concept-article
 ---
 
 # About FSCTLs

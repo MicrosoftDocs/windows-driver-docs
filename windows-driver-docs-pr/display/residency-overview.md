@@ -2,6 +2,7 @@
 title: Residency Overview
 description: Residency overview
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Residency overview

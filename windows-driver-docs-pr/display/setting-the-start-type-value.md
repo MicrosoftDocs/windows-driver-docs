@@ -5,6 +5,7 @@ keywords:
 - INF files WDK display , start type values
 - start type values WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting the Start Type Value

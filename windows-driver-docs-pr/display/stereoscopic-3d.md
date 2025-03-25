@@ -6,6 +6,7 @@ ms.keywords:
 - 3D stereoscopic support, WDK , Windows, Direct3D
 - 3D stereoscopic support, gaming and video playback
 ms.date: 03/17/2025
+ms.topic: concept-article
 ---
 
 # Supporting stereoscopic 3D in Windows drivers

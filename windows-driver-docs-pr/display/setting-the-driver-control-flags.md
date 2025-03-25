@@ -2,6 +2,7 @@
 title: Setting the Driver Control Flags
 description: Setting the Driver Control Flags
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting the Driver Control Flags

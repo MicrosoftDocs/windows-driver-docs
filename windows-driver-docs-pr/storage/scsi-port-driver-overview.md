@@ -5,6 +5,7 @@ keywords:
 - storage port drivers WDK , SCSI Port driver
 - SCSI Port drivers WDK storage
 ms.date: 06/26/2024
+ms.topic: concept-article
 ---
 
 # SCSI Port Driver Overview

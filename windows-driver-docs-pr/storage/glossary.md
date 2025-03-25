@@ -3,6 +3,7 @@ title: Storage Class Memory Glossary
 description: Glossary page
 Robots: noindex, nofollow
 ms.date: 10/17/2018
+ms.topic: glossary
 ---
 
 # Storage class memory glossary

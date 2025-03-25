@@ -14,6 +14,7 @@ keywords:
 - access control entry WDK file systems
 - ACE WDK file systems
 ms.date: 09/25/2024
+ms.topic: how-to
 ---
 
 # Access Control List

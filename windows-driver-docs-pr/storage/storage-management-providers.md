@@ -5,6 +5,7 @@ keywords:
 - storage management provider , SMP , WDK
 - SMI-S , Windows storage
 ms.date: 11/21/2024
+ms.topic: concept-article
 ---
 
 # About storage management providers

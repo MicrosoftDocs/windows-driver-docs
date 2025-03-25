@@ -5,6 +5,7 @@ keywords:
 - WDDM, feature enabled
 - WDDM, feature supported
 ms.date: 04/05/2024
+ms.topic: concept-article
 ---
 
 # Querying WDDM feature support and enablement

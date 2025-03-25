@@ -7,6 +7,7 @@ keywords:
 - graphics adapters string names WDK display
 - appending to graphics adapters string names WDK display
 ms.date: 12/06/2018
+ms.topic: how-to
 ---
 
 # Appending Information to the Friendly String Names of Graphics Adapters

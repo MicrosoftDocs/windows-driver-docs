@@ -12,6 +12,7 @@ keywords:
 - protection levels WDK display , DisplayPort Content Protection
 - protection levels WDK display , DPCP
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling Protection Levels with OPM

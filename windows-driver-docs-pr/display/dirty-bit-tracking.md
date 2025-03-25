@@ -6,6 +6,7 @@ keywords:
 - WDDM, GPU fence synchronization object
 - WDDM, hardware scheduling
 ms.date: 03/28/2024
+ms.topic: concept-article
 ---
 
 # Dirty bit tracking

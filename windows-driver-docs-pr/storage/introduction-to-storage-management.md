@@ -7,6 +7,7 @@ keywords:
 - storage management provider , WDK
 - WMI , Windows , storage management , WDK
 ms.date: 11/21/2024
+ms.topic: concept-article
 ---
 
 # Introduction to storage management for driver developers

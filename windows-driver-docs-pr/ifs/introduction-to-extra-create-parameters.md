@@ -6,6 +6,7 @@ keywords:
 - Extra create parameters , Windows
 - ECPs , Windows
 - ECP_LIST , Windows
+ms.topic: concept-article
 ---
 
 # About Extra Create Parameters (ECPs)

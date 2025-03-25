@@ -6,6 +6,7 @@ keywords:
 - virtual miniport drivers WDK
 - miniport drivers WDK storage , virtual
 ms.date: 03/01/2022
+ms.topic: concept-article
 ---
 
 # About Storport virtual miniport drivers

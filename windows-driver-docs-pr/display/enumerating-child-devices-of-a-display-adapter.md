@@ -8,6 +8,7 @@ keywords:
 - display adapter child devices WDK video present network
 - enumerating child devices WDK video present network
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Enumerating Child Devices of a Display Adapter

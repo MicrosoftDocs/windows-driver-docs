@@ -4,6 +4,7 @@ description: Storport Idle Power Management Overview
 keywords:
 - idle power management, storage devices, Windows
 ms.date: 06/27/2024
+ms.topic: concept-article
 ---
 
 # Storport Idle Power Management Overview

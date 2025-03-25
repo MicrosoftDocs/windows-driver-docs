@@ -2,6 +2,7 @@
 title: General Install Section Directives
 description: Directives that apply to general installations.
 ms.date: 04/20/2017
+ms.topic: install-set-up-deploy
 ---
 
 # General install section directives

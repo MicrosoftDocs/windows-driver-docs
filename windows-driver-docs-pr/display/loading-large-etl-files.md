@@ -2,6 +2,7 @@
 title: Loading Large ETL Files
 description: "ETL files are often larger than what the GPUView can load into memory."
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Loading Large ETL Files  

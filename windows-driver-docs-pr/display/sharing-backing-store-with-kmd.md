@@ -5,6 +5,7 @@ ms.date: 08/21/2024
 keywords:
 - UMD access to graphics allocation backing store from KMD
 - Sharing graphics allocation backing store
+ms.topic: concept-article
 ---
 
 # Sharing the backing store with KMD

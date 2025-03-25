@@ -2,6 +2,7 @@
 title: Generating a Trace for GPUView
 description: Describe how to generate an event trace log (.etl) file that contains the events that GPUView reads.
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # Generating a Trace for GPUView

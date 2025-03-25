@@ -2,6 +2,7 @@
 title: Reporting Optional Support for Rendering Operations
 description: Reporting Optional Support for Rendering Operations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Reporting Optional Support for Rendering Operations

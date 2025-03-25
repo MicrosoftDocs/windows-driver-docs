@@ -2,6 +2,7 @@
 title: Displaying More or Fewer Threads
 description: "GPUView has six different thread viewing levels."
 ms.date: 03/14/2023
+ms.topic: concept-article
 ---
 
 # Displaying More or Fewer Threads  

@@ -5,6 +5,7 @@ keywords:
 - Direct3D version 11 WDK Windows 7 display
 - Direct3D version 11 WDK Windows Server 2008 R2 display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting Direct3D Version 11
