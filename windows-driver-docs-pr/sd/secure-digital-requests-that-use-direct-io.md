@@ -2,6 +2,7 @@
 title: Secure Digital Requests that Use Direct I/O (Windows Drivers)
 description: Learn more about Securing Digital Requests That Use Direct I/O.
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Secure Digital Requests That Use Direct I/O

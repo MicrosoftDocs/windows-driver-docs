@@ -6,6 +6,7 @@ keywords:
 - parent device determining WDK SetupAPI
 - device parents WDK
 ms.date: 03/30/2022
+ms.topic: concept-article
 ---
 
 # Determining the Parent of a Device

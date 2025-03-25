@@ -2,6 +2,7 @@
 title: Choose a Driver Model for Developing a USB Driver
 description: Guidelines for choosing the best driver model for developing a USB client driver that acts as the device's function driver.
 ms.date: 01/17/2024
+ms.topic: how-to
 ---
 
 # Choosing a driver model for developing a USB client driver

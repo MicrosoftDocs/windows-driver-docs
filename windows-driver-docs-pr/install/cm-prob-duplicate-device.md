@@ -4,6 +4,7 @@ description: CM_PROB_DUPLICATE_DEVICE
 keywords:
 - CM_PROB_DUPLICATE_DEVICE
 ms.date: 09/10/2024
+ms.topic: reference
 ---
 
 # Code 42 - CM_PROB_DUPLICATE_DEVICE

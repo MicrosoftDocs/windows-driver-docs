@@ -2,6 +2,7 @@
 title: Testing a Driver
 description: Testing a Driver
 ms.date: 06/28/2018
+ms.topic: concept-article
 ---
 
 # Testing a Driver

@@ -7,6 +7,7 @@ keywords:
 - installed device interfaces WDK , enumerating
 - device interfaces WDK device installations , enumerating
 ms.date: 08/15/2022
+ms.topic: concept-article
 ---
 
 # Enumerating installed device interfaces

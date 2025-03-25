@@ -7,6 +7,7 @@ keywords:
 - debugging drivers WDK Bluetooth
 - profile drivers WDK Bluetooth , debugging
 ms.date: 01/10/2024
+ms.topic: concept-article
 ---
 
 # Debugging Bluetooth profile drivers

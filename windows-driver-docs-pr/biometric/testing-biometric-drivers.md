@@ -5,6 +5,7 @@ keywords:
 - biometric drivers WDK , testing
 - testing biometric drivers WDK biometric
 ms.date: 12/09/2024
+ms.topic: concept-article
 ---
 
 # Testing Biometric Drivers

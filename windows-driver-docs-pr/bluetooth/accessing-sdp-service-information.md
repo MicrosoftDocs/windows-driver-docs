@@ -12,6 +12,7 @@ keywords:
 - searching SDP records WDK Bluetooth
 - IOCTL_BTH_SDP_SERVICE_SEARCH
 ms.date: 01/10/2024
+ms.topic: concept-article
 ---
 
 # Accessing SDP service information

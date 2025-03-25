@@ -4,6 +4,7 @@ description: CM_PROB_INVALID_DATA
 keywords:
 - CM_PROB_INVALID_DATA
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 9 - CM_PROB_INVALID_DATA

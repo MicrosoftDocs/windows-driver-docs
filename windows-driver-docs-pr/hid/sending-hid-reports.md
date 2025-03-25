@@ -9,6 +9,7 @@ keywords:
 - IOCTL_HID_SET_Xxx requests WDK HID
 - HID reports WDK , sending
 ms.date: 09/17/2024
+ms.topic: concept-article
 ---
 
 # Sending HID reports

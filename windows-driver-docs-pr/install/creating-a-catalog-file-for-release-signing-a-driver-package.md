@@ -2,6 +2,7 @@
 title: Creating a Catalog File for Release-Signing a Driver Package
 description: Creating a Catalog File for Release-Signing a Driver Package
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating a Catalog File for Release-Signing a Driver Package

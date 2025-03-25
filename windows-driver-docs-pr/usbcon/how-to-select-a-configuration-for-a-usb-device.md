@@ -2,6 +2,7 @@
 title: How to Select a Configuration for a USB Device
 description: This article demonstrates how to select a configuration for a universal serial bus (USB) device.
 ms.date: 01/16/2024
+ms.topic: how-to
 ---
 
 # How to select a configuration for a USB device

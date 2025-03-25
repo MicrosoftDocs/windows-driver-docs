@@ -2,6 +2,7 @@
 title: Building Drivers for Different Versions of Windows
 description: If you are writing drivers for different versions of Windows, the following section provides some guidelines about how you should build those drivers using the Windows Driver Kit, Visual Studio, and MSBuild.
 ms.date: 03/14/2022
+ms.topic: concept-article
 ---
 
 # Building Drivers for Different Versions of Windows

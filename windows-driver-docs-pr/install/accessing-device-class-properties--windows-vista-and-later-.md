@@ -2,6 +2,7 @@
 title: Accessing Device Class Properties
 description: Learn more about how to access device class properties.
 ms.date: 04/12/2022
+ms.topic: concept-article
 ---
 
 # Accessing device class properties

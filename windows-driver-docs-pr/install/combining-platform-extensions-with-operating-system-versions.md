@@ -2,6 +2,7 @@
 title: Combining Platform Extensions with Operating System Versions
 description: Provides information on combining platform extensions with operating system versions
 ms.date: 06/15/2022
+ms.topic: how-to
 ---
 
 # Combining platform extensions with operating system versions

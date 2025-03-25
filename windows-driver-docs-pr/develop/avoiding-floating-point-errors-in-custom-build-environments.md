@@ -2,6 +2,7 @@
 title: Avoiding Floating Point Errors in Custom Build Environments
 description: This information is intended for developers and build engineers who compile kernel-mode drivers for Windows.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Avoiding Floating Point Errors in Custom Build Environments

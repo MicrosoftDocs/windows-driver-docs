@@ -2,6 +2,7 @@
 title: How to Write Your First USB Client Driver (KMDF)
 description: In this article you'll use the USB Kernel-Mode Driver template provided with Microsoft Visual Studio to write a simple kernel-mode driver framework (KMDF)-based client driver.
 ms.date: 01/17/2024
+ms.topic: how-to
 ---
 
 # How to write your first USB client driver (KMDF)

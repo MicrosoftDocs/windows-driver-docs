@@ -2,6 +2,7 @@
 title: Accessing Device Instance Properties (Prior to Windows Vista)
 description: Accessing Device Instance SPDRP_Xxx Properties
 ms.date: 04/04/2022
+ms.topic: concept-article
 ---
 
 # Accessing Device Instance Properties (Prior to Windows Vista)

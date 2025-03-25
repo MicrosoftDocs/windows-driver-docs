@@ -4,6 +4,7 @@ description: CM_PROB_BIOS_TABLE
 keywords:
 - CM_PROB_BIOS_TABLE
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 35 - CM_PROB_BIOS_TABLE

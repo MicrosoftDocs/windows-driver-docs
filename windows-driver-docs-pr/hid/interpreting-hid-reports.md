@@ -5,6 +5,7 @@ keywords:
 - HID reports WDK , interpreting
 - reports WDK HID , interpreting
 ms.date: 09/19/2024
+ms.topic: concept-article
 ---
 
 # Interpreting HID reports

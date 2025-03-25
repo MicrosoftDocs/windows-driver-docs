@@ -2,6 +2,7 @@
 title: Building a Driver with the WDK
 description: This topic describes how to build a driver with the Windows Driver Kit (WDK).
 ms.date: 05/30/2024
+ms.topic: how-to
 ---
 
 # Using Visual Studio or MSBuild to build a driver

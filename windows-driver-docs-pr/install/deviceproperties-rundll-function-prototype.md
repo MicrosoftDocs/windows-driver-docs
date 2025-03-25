@@ -8,6 +8,7 @@ keywords:
 - machine-name-parameter field WDK device installations
 - device-instance-ID-parameter field WDK device inst
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # DeviceProperties_RunDLL Function Prototype

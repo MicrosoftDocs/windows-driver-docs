@@ -2,6 +2,7 @@
 title: Creating a Preview Package
 description: Creating a Preview Package
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating a Preview Package
