@@ -2,6 +2,7 @@
 title: Introduction to Network Drivers Topics
 description: Introductory concepts for kernel-mode network drivers.
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # Introduction to Network Drivers Topics

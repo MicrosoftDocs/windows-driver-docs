@@ -11,6 +11,7 @@ keywords:
 - storage WDK header-data split
 - space managemen
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Introduction to Header-Data Split

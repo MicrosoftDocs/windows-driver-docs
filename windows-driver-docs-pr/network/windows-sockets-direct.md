@@ -11,6 +11,7 @@ keywords:
 - sockets WDK Windows Sockets Direct
 - SAN NIC WDK SANs
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Windows Sockets Direct Overview

@@ -2,6 +2,7 @@
 title: Create a Hardware Notification Client Driver
 description: This section provides general guidance on the development of a hardware notification client driver that utilizes the KMDF class extension provided by Microsoft.
 ms.date: 10/17/2018
+ms.topic: how-to
 ---
 
 # Create a hardware notification client driver

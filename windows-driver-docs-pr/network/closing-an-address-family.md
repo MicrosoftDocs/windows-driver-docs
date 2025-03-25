@@ -6,6 +6,7 @@ keywords:
 - AFs WDK networking
 - closing address families
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Closing an Address Family Overview

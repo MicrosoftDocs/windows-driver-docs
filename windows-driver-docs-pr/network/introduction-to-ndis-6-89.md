@@ -2,6 +2,7 @@
 title: Introduction to NDIS 6.89
 description: This section introduces NDIS 6.89 and describes changes from NDIS 6.88. NDIS 6.89 is included in Windows 11, version 24H2.
 ms.date: 01/31/2025
+ms.topic: concept-article
 ---
 
 # Introduction to NDIS 6.89

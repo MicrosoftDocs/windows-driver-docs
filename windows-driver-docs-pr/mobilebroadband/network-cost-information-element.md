@@ -2,6 +2,7 @@
 title: Network Cost Information Element
 description: Network cost information element
 ms.date: 10/10/2023
+ms.topic: concept-article
 ---
 
 # Network cost information element

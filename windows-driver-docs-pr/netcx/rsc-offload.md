@@ -5,6 +5,7 @@ keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads, Receive Segment Coalescing offload, RSC
 ms.date: 10/13/2020
 ms.custom: Fe
+ms.topic: concept-article
 ---
 
 # Receive Segment Coalescing (RSC) offload

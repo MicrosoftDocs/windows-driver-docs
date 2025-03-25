@@ -6,6 +6,7 @@ keywords:
 - NMR WDK , architecture
 - architecture WDK Network Module Registrar
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Architecture overview for the Network Module Registrar

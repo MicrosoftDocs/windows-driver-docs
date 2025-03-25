@@ -2,6 +2,7 @@
 title: Overview of Using Metadata to Configure Mobile Broadband Experiences
 description: Overview of using metadata to configure mobile broadband experiences
 ms.date: 10/10/2023
+ms.topic: concept-article
 ---
 
 # Overview of using metadata to configure mobile broadband experiences

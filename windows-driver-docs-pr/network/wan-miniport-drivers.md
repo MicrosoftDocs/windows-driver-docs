@@ -2,6 +2,7 @@
 title: Overview of WAN Miniport Drivers
 description: This section describes CoNDIS WAN miniport drivers, CoNDIS WAN call managers, and CoNDIS WAN miniport call managers (MCMs).
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # Overview of WAN Miniport Drivers

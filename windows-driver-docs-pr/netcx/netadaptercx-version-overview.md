@@ -5,6 +5,7 @@ keywords:
 - Version overview Network Adapter Class Extension, version overview NetAdapterCx, version overview NetCx
 ms.date: 12/09/2021
 ms.custom: Vib
+ms.topic: concept-article
 ---
 
 # NetAdapterCx version overview

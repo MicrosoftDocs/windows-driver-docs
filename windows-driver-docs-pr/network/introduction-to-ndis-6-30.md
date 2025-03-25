@@ -2,6 +2,7 @@
 title: Introduction to NDIS 6.30
 description: Introduction to NDIS 6.30
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Introduction to NDIS 6.30

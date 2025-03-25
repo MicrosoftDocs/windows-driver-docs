@@ -2,6 +2,7 @@
 title: WISPr Authentication Overview
 description: WISPr authentication overview
 ms.date: 10/06/2023
+ms.topic: concept-article
 ---
 
 # WISPr authentication overview

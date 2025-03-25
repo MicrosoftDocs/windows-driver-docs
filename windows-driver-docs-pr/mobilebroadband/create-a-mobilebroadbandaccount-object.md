@@ -2,6 +2,7 @@
 title: Create a MobileBroadbandAccount Object
 description: Create a MobileBroadbandAccount object
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Create a MobileBroadbandAccount object

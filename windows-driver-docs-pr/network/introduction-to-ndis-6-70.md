@@ -2,6 +2,7 @@
 title: Introduction to NDIS 6.70
 description: This section introduces NDIS 6.70 and describes changes from NDIS 6.60. NDIS 6.70 is included in Windows 10, version 1703.
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Introduction to NDIS 6.70

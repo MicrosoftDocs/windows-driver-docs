@@ -3,6 +3,7 @@ title: MB Interface Overview
 description: MB Interface Overview
 ms.date: 04/20/2017
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # MB Interface Overview

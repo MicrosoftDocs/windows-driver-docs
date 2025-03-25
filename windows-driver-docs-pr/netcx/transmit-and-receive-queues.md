@@ -5,6 +5,7 @@ keywords:
 - NetAdapterCx transmit and receive queues, NetCx transmit and receive queues
 ms.date: 01/24/2019
 ms.custom: 19H1
+ms.topic: concept-article
 ---
 
 # Transmit and receive queues

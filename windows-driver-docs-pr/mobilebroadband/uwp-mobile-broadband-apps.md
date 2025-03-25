@@ -2,6 +2,7 @@
 title: UWP Mobile Broadband Apps Overview
 description: UWP mobile broadband apps overview
 ms.date: 07/05/2019
+ms.topic: concept-article
 ---
 
 # UWP mobile broadband apps overview

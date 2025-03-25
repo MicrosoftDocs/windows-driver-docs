@@ -2,6 +2,7 @@
 title: Introduction to NDIS QoS for Data Center Bridging
 description: Introduction to NDIS QoS for Data Center Bridging
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Introduction to NDIS QoS for Data Center Bridging

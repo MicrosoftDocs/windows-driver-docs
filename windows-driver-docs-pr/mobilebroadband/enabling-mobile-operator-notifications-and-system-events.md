@@ -2,6 +2,7 @@
 title: Introduction to Enabling Mobile Operator Notifications and System Events
 description: Introduction to enabling mobile operator notifications and system events
 ms.date: 07/05/2019
+ms.topic: concept-article
 ---
 
 # Introduction to enabling mobile operator notifications and system events

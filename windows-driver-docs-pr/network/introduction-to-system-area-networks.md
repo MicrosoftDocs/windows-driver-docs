@@ -9,6 +9,7 @@ keywords:
 - SAN NIC WDK SANs
 ms.date: 01/28/2022
 ms.custom: engagement-fy23
+ms.topic: concept-article
 ---
 
 # Introduction to System Area Networks

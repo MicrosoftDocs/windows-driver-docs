@@ -2,6 +2,7 @@
 title: Service Metadata Overview
 description: Service metadata overview
 ms.date: 10/10/2023
+ms.topic: concept-article
 ---
 
 # Service metadata overview

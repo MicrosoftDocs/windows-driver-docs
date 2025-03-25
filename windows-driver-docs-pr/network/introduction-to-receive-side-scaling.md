@@ -2,6 +2,7 @@
 title: Introduction to Receive Side Scaling (RSS)
 description: RSS is a network driver technology that enables the efficient distribution of network receive processing across multiple CPUs in multiprocessor systems.
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # Introduction to Receive Side Scaling

@@ -7,6 +7,7 @@ keywords:
 - entry points WDK networking
 - DriverEntry WDK networking
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Intermediate Driver DriverEntry Function

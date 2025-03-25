@@ -2,6 +2,7 @@
 title: WindowsInfo XML Schema Overview
 description: WindowsInfo XML schema overview
 ms.date: 10/10/2023
+ms.topic: concept-article
 ---
 
 # WindowsInfo XML schema overview

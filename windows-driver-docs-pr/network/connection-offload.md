@@ -8,6 +8,7 @@ keywords:
 - connection offload WDK TCP/IP transport , about connection offload
 - capabilities WDK TCP/IP offload
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Connection Offload Overview

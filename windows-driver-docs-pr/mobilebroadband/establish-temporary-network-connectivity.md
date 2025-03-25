@@ -2,6 +2,7 @@
 title: Establish Temporary Network Connectivity
 description: Establish temporary network connectivity
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Establish temporary network connectivity

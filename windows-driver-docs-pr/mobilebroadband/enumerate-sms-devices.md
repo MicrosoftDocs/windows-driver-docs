@@ -2,6 +2,7 @@
 title: Enumerate SMS Devices
 description: Enumerate SMS devices
 ms.date: 10/10/2023
+ms.topic: how-to
 ---
 
 # Enumerate SMS devices
