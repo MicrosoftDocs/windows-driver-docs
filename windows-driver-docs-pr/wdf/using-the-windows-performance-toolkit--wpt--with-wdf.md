@@ -3,6 +3,7 @@ title: Using the Windows Performance Toolkit (WPT) with WDF
 description: Starting in Windows 10, you can use the Windows Performance Toolkit (WPT) to view performance data for a KMDF or UMDF 2 driver.
 Search.SourceType: Video
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Using the Windows Performance Toolkit (WPT) with WDF
