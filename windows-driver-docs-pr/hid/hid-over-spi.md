@@ -10,6 +10,7 @@ keywords:
 - Serial Peripheral Interface
 - Simple Peripheral Bus
 ms.date: 10/31/2024
+ms.topic: concept-article
 ---
 
 # Introduction to HID over SPI

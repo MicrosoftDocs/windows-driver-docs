@@ -2,6 +2,7 @@
 title: How to Test a Driver Package (manual deployment)
 description: Learn how to use the driver installation INF file to manually install a driver package on a test computer and verify its installation and operation.
 ms.date: 02/25/2025
+ms.topic: how-to
 ---
 
 # How to test a driver package (manual deployment)

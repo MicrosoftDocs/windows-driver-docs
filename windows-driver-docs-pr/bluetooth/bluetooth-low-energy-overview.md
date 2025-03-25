@@ -2,6 +2,7 @@
 title: Bluetooth Low Energy (LE) Overview
 description: This article provides an overview of Bluetooth Low Energy (LE) in Windows.
 ms.date: 01/10/2024
+ms.topic: concept-article
 ---
 
 # Bluetooth Low Energy (LE) overview

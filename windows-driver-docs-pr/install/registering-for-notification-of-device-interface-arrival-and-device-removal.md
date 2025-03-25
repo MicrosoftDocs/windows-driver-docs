@@ -2,6 +2,7 @@
 title: Register for Notification of Device Interface Arrival and Removal
 description: This topic describes how a user-mode application or driver registers for notification of device interface arrival and device removal.
 ms.date: 10/24/2024
+ms.topic: how-to
 ---
 
 # Registering for Notification of Device Interface Arrival and Device Removal

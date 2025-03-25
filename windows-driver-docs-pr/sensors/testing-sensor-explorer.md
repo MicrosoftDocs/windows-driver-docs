@@ -2,6 +2,7 @@
 title: Testing With SensorExplorer
 description: How to use SensorExplorer for sensor testing and logging
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # SensorExplorer overview

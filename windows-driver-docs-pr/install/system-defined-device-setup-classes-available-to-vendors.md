@@ -2,6 +2,7 @@
 title: System-Defined Device Setup Classes Available to Vendors
 description: Use the following list to select the right predefined values to use for the `Class` and `ClassGuid` entries in the [Version Section](inf-version-section.md) of the driver's INF file.
 ms.date: 09/10/2024
+ms.topic: concept-article
 ---
 
 # System-defined device setup classes available to vendors

@@ -2,6 +2,7 @@
 title: How to Create a Driver Verification Log
 description: Learn why the Windows Server hardware certification program requires a driver verification log (DVL) for all applicable driver submissions.
 ms.date: 09/26/2024
+ms.topic: how-to
 ---
 
 # How to create a driver verification log

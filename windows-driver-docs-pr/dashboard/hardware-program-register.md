@@ -2,6 +2,7 @@
 title: Register for the Microsoft Windows Hardware Developer Program
 description: How to register for the Microsoft Windows Hardware Developer Program.
 ms.date: 01/27/2025
+ms.topic: how-to
 ---
 
 # Register for the Microsoft Windows Hardware Developer Program

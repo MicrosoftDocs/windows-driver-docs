@@ -2,6 +2,7 @@
 title: Get a submission
 description: Retrieves data for a specific submission of a product to the hardware dashboard in the Microsoft Partner Center.
 ms.date: 04/05/2018
+ms.topic: how-to
 ---
 
 # Get a submission

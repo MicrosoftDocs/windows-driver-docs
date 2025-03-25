@@ -2,6 +2,7 @@
 title: Write a Universal Windows Driver (KMDF) Based on a Template
 description: This topic describes how to write a Universal Windows driver using Kernel-Mode Driver Framework (KMDF). 
 ms.date: 12/09/2024
+ms.topic: tutorial
 ---
 
 # Tutorial: Write a Universal Windows driver (KMDF) based on a template

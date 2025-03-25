@@ -2,6 +2,7 @@
 title: Bluetooth Test Platform Software Setup
 description: How to set up the Microsoft Bluetooth Test Platform software
 ms.date: 01/10/2024
+ms.topic: install-set-up-deploy
 ---
 
 # Bluetooth Test Platform software setup

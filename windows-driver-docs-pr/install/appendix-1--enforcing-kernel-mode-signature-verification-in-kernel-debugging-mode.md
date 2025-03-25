@@ -2,6 +2,7 @@
 title: Enforce Kernel-Mode Signature Verification in Kernel Debugging
 description: Describes how to enable load-time signature enforcement when a kernel debugger is attached.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Appendix 1: Enforcing Kernel-Mode Signature Verification in Kernel Debugging Mode

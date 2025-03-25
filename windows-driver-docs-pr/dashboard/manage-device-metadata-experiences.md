@@ -2,6 +2,7 @@
 title: Manage Device Metadata Experiences
 description: After you create and submit your device metadata experiences, you can review or edit them through the dashboard.
 ms.date: 09/17/2024
+ms.topic: how-to
 ---
 
 # Manage Device Metadata Experiences

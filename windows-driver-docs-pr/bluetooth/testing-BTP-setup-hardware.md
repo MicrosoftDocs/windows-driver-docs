@@ -2,6 +2,7 @@
 title: Hardware Setup for Bluetooth Test Platform
 description: How to set up hardware for the Microsoft Bluetooth Test Platform
 ms.date: 01/10/2024
+ms.topic: install-set-up-deploy
 ---
 
 # Hardware setup for Bluetooth Test Platform

@@ -2,6 +2,7 @@
 title: How to Install Netmon and USB ETW Parsers
 description: This article provides installation information about Netmon and the USB ETW parsers.
 ms.date: 09/23/2024
+ms.topic: install-set-up-deploy
 ---
 
 # How to install Netmon and USB ETW Parsers

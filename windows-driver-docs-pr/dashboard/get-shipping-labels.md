@@ -2,6 +2,7 @@
 title: Get shipping label data
 description: These methods from the Microsoft Hardware APIs get data for shipping labels of hardware products registered to your Dev Center Account.
 ms.date: 10/03/2019
+ms.topic: how-to
 ---
 # Get shipping label data
 

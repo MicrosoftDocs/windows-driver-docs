@@ -9,6 +9,7 @@ keywords:
 - installing devices WDK , INF files
 - Install a driver by using an INF file
 ms.date: 06/20/2024
+ms.topic: concept-article
 ---
 
 # Overview of INF Files

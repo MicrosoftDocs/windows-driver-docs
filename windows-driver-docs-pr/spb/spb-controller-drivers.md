@@ -2,6 +2,7 @@
 title: Overview of SPB Controller Drivers
 description: An SPB controller is a device that controls a simple peripheral bus (SPB) and that transfers data to and from the peripheral devices that are connected to the SPB.
 ms.date: 01/12/2024
+ms.topic: concept-article
 ---
 
 # Overview of SPB controller drivers

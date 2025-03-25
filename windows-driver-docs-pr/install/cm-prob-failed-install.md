@@ -4,6 +4,7 @@ description: CM_PROB_FAILED_INSTALL
 keywords:
 - CM_PROB_FAILED_INSTALL
 ms.date: 02/28/2020
+ms.topic: error-reference
 ---
 
 # Code 28 - CM_PROB_FAILED_INSTALL

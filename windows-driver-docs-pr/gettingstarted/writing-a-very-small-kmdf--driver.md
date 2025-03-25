@@ -2,6 +2,7 @@
 title: Write a Hello World Windows Driver (Kernel-Mode)
 description: How to write a Windows driver using Kernel-Mode Driver Framework (KMDF). You start with a Microsoft Visual Studio template.
 ms.date: 02/03/2025
+ms.topic: tutorial
 ---
 
 # Tutorial: Write a Hello World Windows Driver (Kernel-Mode Driver Framework)

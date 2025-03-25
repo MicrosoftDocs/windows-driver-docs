@@ -2,6 +2,7 @@
 title: How to Test-Sign a Driver Package
 description: How to Test-Sign a Driver Package
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How to Test-Sign a Driver Package

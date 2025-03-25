@@ -2,6 +2,7 @@
 title: Install the Sensor Driver
 description: This topic shows you how to install the sensor driver on a development board.
 ms.date: 01/11/2024
+ms.topic: install-set-up-deploy
 ---
 
 # Install the sensor driver

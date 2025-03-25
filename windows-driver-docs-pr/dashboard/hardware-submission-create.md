@@ -2,6 +2,7 @@
 title: Create a new hardware submission
 description: Create a new hardware submission
 ms.date: 08/16/2024
+ms.topic: how-to
 ---
 
 # Create a new hardware submission

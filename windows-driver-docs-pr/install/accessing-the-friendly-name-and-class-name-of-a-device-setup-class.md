@@ -2,6 +2,7 @@
 title: Accessing Friendly Name and Class Name of a Device Setup Class
 description: Accessing the Friendly Name and Class Name of a Device Setup Class
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Accessing the Friendly Name and Class Name of a Device Setup Class

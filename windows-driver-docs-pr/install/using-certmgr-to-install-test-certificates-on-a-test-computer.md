@@ -5,6 +5,7 @@ keywords:
 - Certmgr Tool
 - Certificate Manager tool WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using CertMgr to Install Test Certificates on a Test Computer

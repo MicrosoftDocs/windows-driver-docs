@@ -2,6 +2,7 @@
 title: Device Metadata Error Codes
 description: Device Metadata Error Codes
 ms.date: 04/20/2017
+ms.topic: error-reference
 ---
 
 # Device Metadata Error Codes

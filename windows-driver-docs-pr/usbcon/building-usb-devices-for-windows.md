@@ -2,6 +2,7 @@
 title: Overview of Building USB Devices for Windows
 description: This section provides links for manufacturers of USB peripheral devices.
 ms.date: 01/17/2024
+ms.topic: concept-article
 ---
 
 # Overview of building USB devices for Windows

@@ -2,6 +2,7 @@
 title: Test distribution guidance to self-host desktop drivers
 description: Hardware partners can test OS upgrade scenarios by publishing a driver to Windows Update and using test distribution.
 ms.date: 09/17/2024
+ms.topic: concept-article
 ---
 
 # Test distribution guidance to self-host desktop drivers

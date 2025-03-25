@@ -2,6 +2,7 @@
 title: Case Study - Troubleshooting an Unknown USB Device
 description: Provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.
 ms.date: 01/12/2024
+ms.topic: troubleshooting-general
 ---
 
 # Case Study: Troubleshooting an unknown USB device by using ETW and Netmon

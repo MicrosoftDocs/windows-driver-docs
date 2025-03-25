@@ -2,6 +2,7 @@
 title: Get all products
 description: This method in the Microsoft Hardware API retrieves data for all products registered to your Windows Dev Center account.
 ms.date: 04/05/2018
+ms.topic: how-to
 ---
 
 # Get all products

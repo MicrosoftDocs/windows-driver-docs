@@ -2,6 +2,7 @@
 title: Manage Product Submissions
 description: Manage hardware dashboard submissions for your products and get them signed by Microsoft.
 ms.date: 09/19/2024
+ms.topic: how-to
 ---
 
 # Manage product submissions

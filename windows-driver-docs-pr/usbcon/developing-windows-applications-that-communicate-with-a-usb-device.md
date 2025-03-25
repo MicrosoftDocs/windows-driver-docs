@@ -2,6 +2,7 @@
 title: Overview of Developing Windows Applications for USB Devices
 description: This article provides guidelines for deciding whether you should write a UWP app or a Windows desktop app to communicate with a USB device.
 ms.date: 01/12/2024
+ms.topic: concept-article
 ---
 
 # Overview of developing Windows applications for USB devices

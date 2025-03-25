@@ -2,6 +2,7 @@
 description: This topic summarizes the new features and improvements for Windows Portable Devices (WPD).
 title: What's New in WPD
 ms.date: 12/09/2024
+ms.topic: whats-new
 ---
 
 # What's New in WPD

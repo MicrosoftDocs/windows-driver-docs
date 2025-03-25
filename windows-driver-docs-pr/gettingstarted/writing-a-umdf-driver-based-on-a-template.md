@@ -2,6 +2,7 @@
 title: Write a UMDF 2 Based on a Template
 description: How to write a Universal Windows driver using User-Mode Driver Framework (UMDF) 2. You'll start with a Microsoft Visual Studio template.
 ms.date: 12/09/2024
+ms.topic: tutorial
 ---
 
 # Tutorial: Write a Universal Windows driver (UMDF 2) based on a template
