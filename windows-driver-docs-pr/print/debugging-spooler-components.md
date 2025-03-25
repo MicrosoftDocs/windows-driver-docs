@@ -6,6 +6,7 @@ keywords:
 - spooler component debugging WDK print
 - trace messages WDK printer
 ms.date: 01/27/2023
+ms.topic: how-to
 ---
 
 # Debugging Spooler Components

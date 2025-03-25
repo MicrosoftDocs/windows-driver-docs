@@ -3,6 +3,7 @@ title: Adding a PnP Device to a Running System
 description: Adding a PnP Device to a Running System
 keywords: ["PnP WDK kernel , adding device to running system", "Plug and Play WDK kernel , adding device to running system", "adding PnP device to running system", "enumerating PnP devices WDK PnP", "reporting PnP devices", "devnodes WDK PnP", "device nodes WDK PnP", "function drivers WDK PnP", "filter drivers WDK PnP", "AddDevice routine WDK PnP", "IRPs WDK PnP", "I/O request packets WDK PnP"]
 ms.date: 12/19/2024
+ms.topic: how-to
 ---
 
 # Adding a PnP Device to a Running System

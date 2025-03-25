@@ -2,6 +2,7 @@
 title: ESC_TWAIN_PRIVATE_SUPPORTED_CAPS Escape Code
 description: ESC_TWAIN_PRIVATE_SUPPORTED_CAPS Escape Code
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # ESC\_TWAIN\_PRIVATE\_SUPPORTED\_CAPS Escape Code

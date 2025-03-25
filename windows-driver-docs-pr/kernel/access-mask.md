@@ -2,6 +2,7 @@
 title: Specifying Access Rights
 description: Provides information about specifying access rights.
 ms.date: 02/20/2025
+ms.topic: concept-article
 ---
 
 # Specifying access rights

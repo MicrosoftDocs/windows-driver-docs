@@ -2,6 +2,7 @@
 title: Building a WIA Microdriver
 description: Building a WIA Microdriver
 ms.date: 03/27/2023
+ms.topic: concept-article
 ---
 
 # Building a WIA Microdriver

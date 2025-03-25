@@ -3,6 +3,7 @@ title: Title Element
 description: The required title element provides text that is displayed in the title of the event notification message.
 keywords: ["title element Print Devices"]
 ms.date: 01/31/2024
+ms.topic: concept-article
 ---
 
 # title element

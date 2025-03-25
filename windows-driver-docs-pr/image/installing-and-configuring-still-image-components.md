@@ -2,6 +2,7 @@
 title: Installing and Configuring Still Image Components
 description: Installing and Configuring Still Image Components
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Installing and Configuring Still Image Components

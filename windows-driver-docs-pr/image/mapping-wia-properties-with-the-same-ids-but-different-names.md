@@ -2,6 +2,7 @@
 title: Mapping WIA Properties with the Same IDs but Different Names
 description: Mapping WIA properties with the same IDs but different names
 ms.date: 05/10/2023
+ms.topic: concept-article
 ---
 
 # Mapping WIA properties with the same IDs but different names

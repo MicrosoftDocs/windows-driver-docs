@@ -2,6 +2,7 @@
 title: Authoring a Firmware Update Package
 description: Each firmware update package includes a single binary file that contains the entire firmware payload (for example firmware.bin) and a security catalog that Windows uses to validate firmware.bin.
 ms.date: 03/22/2023
+ms.topic: how-to
 ---
 
 # Authoring a firmware update package

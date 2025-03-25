@@ -2,6 +2,7 @@
 title: Writing WIA Properties by a Driver
 description: Writing WIA Properties by a Driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing WIA Properties by a Driver

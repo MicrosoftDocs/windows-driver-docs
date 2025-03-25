@@ -2,6 +2,7 @@
 title: Describing a WIA Device Using WIA Items
 description: Describing a WIA Device Using WIA Items
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Describing a WIA Device Using WIA Items

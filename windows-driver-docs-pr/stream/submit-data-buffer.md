@@ -8,6 +8,7 @@ keywords:
 - buffers WDK AV/C streaming
 - pending streams WDK AV/C streaming
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Submit Data Buffer

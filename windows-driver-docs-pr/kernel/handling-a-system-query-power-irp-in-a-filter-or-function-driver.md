@@ -3,6 +3,7 @@ title: Handling a System Query-Power IRP in a Filter or Function Driver
 description: Handling a System Query-Power IRP in a Filter or Function Driver
 keywords: ["query-power IRPs WDK power management", "filter drivers WDK power management", "function drivers WDK power management"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Handling a System Query-Power IRP in a Filter or Function Driver

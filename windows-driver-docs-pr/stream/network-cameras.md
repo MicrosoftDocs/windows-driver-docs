@@ -2,6 +2,7 @@
 title: Network Cameras
 description: Describes compatibility with ONVIF Network Cameras in Windows.
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # Network cameras

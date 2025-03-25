@@ -2,6 +2,7 @@
 title: Implementing Feeder Scanner Item Trees
 description: Implementing Feeder Scanner Item Trees
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Implementing Feeder Scanner Item Trees

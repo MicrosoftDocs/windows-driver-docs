@@ -2,6 +2,7 @@
 title: Creating a "Hello World" WIA Minidriver UI Extension
 description: Creating a "Hello World" WIA Minidriver UI Extension
 ms.date: 06/23/2023
+ms.topic: concept-article
 ---
 
 # Creating a "Hello World" WIA Minidriver UI Extension

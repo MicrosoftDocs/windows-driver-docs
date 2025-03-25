@@ -3,6 +3,7 @@ title: Accessing Read-Only System Memory
 description: Accessing Read-Only System Memory
 keywords: ["memory management WDK kernel , read-only memory", "read-only memory WDK kernel", "intercepting system calls", "global strings WDK memory"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Accessing Read-Only System Memory

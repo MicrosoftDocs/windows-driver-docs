@@ -2,6 +2,7 @@
 title: Reporting WIA Minidriver Status
 description: Reporting WIA Minidriver Status
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Reporting WIA Minidriver Status

@@ -2,6 +2,7 @@
 title: Implementing Scanner-Storage Item Trees
 description: Implementing Scanner-Storage Item Trees
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Implementing Scanner-Storage Item Trees

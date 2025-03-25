@@ -2,6 +2,7 @@
 title: Reading Device Metadata
 description: Reading Device Metadata
 ms.date: 08/13/2021
+ms.topic: concept-article
 ---
 
 # Reading Device Metadata

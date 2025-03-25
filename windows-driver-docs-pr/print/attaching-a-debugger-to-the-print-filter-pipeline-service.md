@@ -2,6 +2,7 @@
 title: Attaching a Debugger to the Print Filter Pipeline Service
 description: Attaching a Debugger to the Print Filter Pipeline Service
 ms.date: 01/26/2023
+ms.topic: how-to
 ---
 
 # Attaching a Debugger to the Print Filter Pipeline Service

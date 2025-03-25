@@ -2,6 +2,7 @@
 title: HIDI2C Device-Specific Method (_DSM)
 description: Provides information about the _DSM (Device Specific Method) defined in the ACPI 5.0 specification.
 ms.date: 03/23/2023
+ms.topic: reference
 ---
 
 # HIDI2C Device-Specific Method (_DSM)

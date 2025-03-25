@@ -2,6 +2,7 @@
 title: Installing a WIA Error Handling Driver Extension
 description: Installing a WIA Error Handling Driver Extension
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Installing a WIA Error Handling Driver Extension

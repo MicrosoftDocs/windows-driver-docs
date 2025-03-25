@@ -2,6 +2,7 @@
 title: Creating a WIA Minidriver
 description: Creating a WIA Minidriver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating a WIA Minidriver

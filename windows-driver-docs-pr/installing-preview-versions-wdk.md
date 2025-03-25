@@ -8,6 +8,7 @@ keywords:
 - Download
 - drivers
 ms.date: 08/16/2024
+ms.topic: concept-article
 ---
 
 # Installing preview versions of the Windows Driver Kit (WDK)

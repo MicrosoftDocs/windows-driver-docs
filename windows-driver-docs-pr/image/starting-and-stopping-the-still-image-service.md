@@ -2,6 +2,7 @@
 title: Starting and Stopping the Still Image Service
 description: Starting and Stopping the Still Image Service
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Starting and Stopping the Still Image Service

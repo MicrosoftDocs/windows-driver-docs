@@ -2,6 +2,7 @@
 title: Distinguishing Fast Startup from Wake-from-Hibernation
 description: Starting with Windows 8, a fast startup mode is available to start a computer in less time than is typically required for a traditional, cold startup.
 ms.date: 02/21/2025
+ms.topic: how-to
 ---
 
 # Distinguishing fast startup from wake-from-hibernation

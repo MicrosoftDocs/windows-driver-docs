@@ -3,6 +3,7 @@ title: Controlling Device Namespace Access
 description: Controlling Device Namespace Access
 keywords: ["device objects WDK kernel , security", "security WDK device objects", "device namespace access WDK kernel", "namespaces WDK device objects", "file open requests WDK device objects", "open requests WDK device objects"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Controlling Device Namespace Access

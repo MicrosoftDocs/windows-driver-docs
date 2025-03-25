@@ -8,6 +8,7 @@ keywords:
 - function drivers WDK ACPI , vendor-defined device interfaces
 - WDM function drivers WDK ACPI , vendor-defined device interfaces
 ms.date: 03/17/2023
+ms.topic: concept-article
 ---
 
 # Providing a Vendor-Defined ACPI Device Interface

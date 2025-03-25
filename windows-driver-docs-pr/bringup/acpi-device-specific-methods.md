@@ -2,6 +2,7 @@
 title: Device-Specific Methods (_DSM)
 description: To support increased functionality and extension to select technology stacks, Windows define Device-Specific Methods (_DSM) for the device.
 ms.date: 03/22/2023
+ms.topic: reference
 ---
 
 # Device-specific methods (_DSM)

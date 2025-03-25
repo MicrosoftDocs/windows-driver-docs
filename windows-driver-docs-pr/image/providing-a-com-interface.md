@@ -2,6 +2,7 @@
 title: Providing a COM Interface
 description: Providing a COM Interface
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Providing a COM Interface

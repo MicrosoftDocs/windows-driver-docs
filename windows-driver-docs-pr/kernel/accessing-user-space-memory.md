@@ -3,6 +3,7 @@ title: Accessing User-Space Memory
 description: Accessing User-Space Memory
 keywords: ["memory management WDK kernel , user-space memory", "user-space memory WDK kernel", "virtual user-space memory WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Accessing User-Space Memory

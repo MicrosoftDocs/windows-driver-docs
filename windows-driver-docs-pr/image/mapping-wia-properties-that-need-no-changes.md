@@ -2,6 +2,7 @@
 title: Mapping WIA Properties that Need No Changes
 description: Mapping WIA properties that need no changes
 ms.date: 05/03/2023
+ms.topic: concept-article
 ---
 
 # Mapping WIA properties that need no changes
