@@ -2,6 +2,7 @@
 description: The WpdBasicHardwareDriver Protocol
 title: The WpdBasicHardwareDriver Protocol
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # The WpdBasicHardwareDriver Protocol

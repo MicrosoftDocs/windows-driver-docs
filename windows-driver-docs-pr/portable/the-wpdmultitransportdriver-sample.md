@@ -2,6 +2,7 @@
 description: The WpdMultiTransportDriver Sample
 title: The WpdMultiTransportDriver Sample
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # The WpdMultiTransportDriver Sample

@@ -2,6 +2,7 @@
 title: Overview of Enumeration of Interface Collections on USB Composite Devices
 description: Interfaces on a composite USB device can be grouped in collections. The USB generic parent driver (Usbccgp.sys) can enumerate interface collections in four ways.
 ms.date: 01/17/2024
+ms.topic: concept-article
 ---
 
 # Overview of enumeration of interface collections on USB composite devices
