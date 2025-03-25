@@ -2,6 +2,7 @@
 title: Send USB Isochronous Transfers From a WinUSB Desktop App
 description: Starting in Windows 8.1, the set of WinUSB Functions have APIs that allow a desktop application to transfer data to and from isochronous endpoints of a USB device. For such an application, the Microsoft-provided Winusb.sys must be the device driver.
 ms.date: 01/12/2024
+ms.topic: how-to
 ---
 
 # Send USB isochronous transfers from a WinUSB desktop app

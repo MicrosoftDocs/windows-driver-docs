@@ -2,6 +2,7 @@
 title: How to Register a Composite Device
 description: How a USB multi-function device, called a composite driver, registers, and unregisters the composite device with the underlying USB driver stack.
 ms.date: 09/18/2024
+ms.topic: how-to
 ---
 
 # How to register a composite device

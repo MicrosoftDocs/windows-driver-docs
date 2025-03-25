@@ -4,6 +4,7 @@ description: CM_PROB_HARDWARE_DISABLED
 keywords:
 - CM_PROB_HARDWARE_DISABLED
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 29 - CM_PROB_HARDWARE_DISABLED

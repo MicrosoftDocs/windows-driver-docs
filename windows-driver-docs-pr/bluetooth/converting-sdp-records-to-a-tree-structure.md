@@ -12,6 +12,7 @@ keywords:
 - tree structures from SDP records WDK Bluetooth
 - SdpConvertStreamToTree
 ms.date: 01/10/2024
+ms.topic: concept-article
 ---
 
 # Converting SDP records to a tree structure

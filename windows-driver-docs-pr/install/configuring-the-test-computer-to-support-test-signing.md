@@ -2,6 +2,7 @@
 title: Configuring the Test Computer to Support Test-Signing
 description: Configuring the Test Computer to Support Test-Signing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Configuring the Test Computer to Support Test-Signing

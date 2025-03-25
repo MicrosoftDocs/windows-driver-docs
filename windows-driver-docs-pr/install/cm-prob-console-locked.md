@@ -4,6 +4,7 @@ description: CM_PROB_CONSOLE_LOCKED
 keywords:
 - CM_PROB_CONSOLE_LOCKED
 ms.date: 10/18/2022
+ms.topic: reference
 ---
 
 # Code 55 - CM_PROB_CONSOLE_LOCKED

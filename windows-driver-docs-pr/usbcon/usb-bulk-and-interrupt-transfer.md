@@ -2,6 +2,7 @@
 title: How to Send USB Bulk Transfer Requests
 description: This topic provides a brief overview about USB bulk transfers.
 ms.date: 01/17/2024
+ms.topic: how-to
 ---
 
 # How to send USB bulk transfer requests

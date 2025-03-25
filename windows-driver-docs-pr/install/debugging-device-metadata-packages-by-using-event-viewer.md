@@ -2,6 +2,7 @@
 title: Debugging Device Metadata Packages by Using Event Viewer
 description: Debugging Device Metadata Packages By Using Event Viewer
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Debugging Device Metadata Packages By Using Event Viewer

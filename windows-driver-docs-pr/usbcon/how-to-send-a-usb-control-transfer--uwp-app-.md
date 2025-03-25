@@ -2,6 +2,7 @@
 title: How to Send a USB Control Transfer (UWP App)
 description: An app that communicates with a USB device usually sends several control transfers requests.
 ms.date: 01/16/2024
+ms.topic: how-to
 ---
 
 # How to send a USB control transfer (UWP app)

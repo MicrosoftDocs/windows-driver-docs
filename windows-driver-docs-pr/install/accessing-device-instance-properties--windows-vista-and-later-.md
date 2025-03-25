@@ -2,6 +2,7 @@
 title: Accessing Device Instance Properties
 description: Accessing Device Instance Properties
 ms.date: 04/04/2022
+ms.topic: concept-article
 ---
 
 # Accessing Device Instance Properties

@@ -2,6 +2,7 @@
 title: Creating a Catalog File for a Non-PnP Driver
 description: Creating a Catalog File for a Non-PnP Driver
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating a Catalog File for a Non-PnP Driver

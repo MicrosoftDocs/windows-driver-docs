@@ -7,6 +7,7 @@ keywords:
 - initializing reports
 - controls WDK HID
 ms.date: 10/22/2024
+ms.topic: concept-article
 ---
 
 # Initializing HID Reports

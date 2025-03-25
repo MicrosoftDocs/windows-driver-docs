@@ -2,6 +2,7 @@
 title: How to Send a USB Bulk Transfer Request (UWP App)
 description: Learn about a USB bulk transfer and how to initiate a transfer request from your UWP app that communicates with a USB device.
 ms.date: 01/16/2024
+ms.topic: how-to
 ---
 
 # How to send a USB bulk transfer request (UWP app)

@@ -4,6 +4,7 @@ description: CM_PROB_GUEST_ASSIGNMENT_FAILED
 keywords:
 - CM_PROB_GUEST_ASSIGNMENT_FAILED
 ms.date: 02/28/2020
+ms.topic: reference
 ---
 
 # Code 57 - CM_PROB_GUEST_ASSIGNMENT_FAILED

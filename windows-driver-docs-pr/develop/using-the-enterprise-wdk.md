@@ -2,6 +2,7 @@
 title: Using the Enterprise WDK
 description: Describes how to set up a command-line based environment for organization use of the WDK.
 ms.date: 08/25/2017
+ms.topic: concept-article
 ---
 
 # Using the Enterprise WDK

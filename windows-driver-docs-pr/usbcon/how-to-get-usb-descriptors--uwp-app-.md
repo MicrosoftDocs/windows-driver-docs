@@ -2,6 +2,7 @@
 title: How to Get USB Descriptors (UWP App)
 description: This article describes how to get descriptors from the device at the endpoint, interface, configuration, and device level.
 ms.date: 01/16/2024
+ms.topic: how-to
 ---
 
 # How to get USB descriptors (UWP app)

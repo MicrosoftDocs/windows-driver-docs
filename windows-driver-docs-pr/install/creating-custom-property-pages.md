@@ -2,6 +2,7 @@
 title: Creating Custom Property Pages
 description: Creating Custom Property Pages
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating Custom Property Pages

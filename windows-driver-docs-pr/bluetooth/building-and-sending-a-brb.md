@@ -8,6 +8,7 @@ keywords:
 - sending BRBs
 - return values WDK Bluetooth
 ms.date: 01/10/2024
+ms.topic: how-to
 ---
 
 # Building and sending a Bluetooth request block (BRB)

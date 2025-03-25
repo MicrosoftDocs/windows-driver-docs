@@ -2,6 +2,7 @@
 title: Analyzing a Driver Using Code Analysis and Verification Tools
 description: Code analysis and verification tools can help improve the stability and reliability of your driver by systematically analyzing the source code.
 ms.date: 07/02/2018
+ms.topic: concept-article
 ---
 
 # Analyzing a Driver Using Code Analysis and Verification Tools

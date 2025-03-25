@@ -2,6 +2,7 @@
 title: How to Select a USB Interface Setting (UWP App)
 description: Use the UsbInterfaceSetting object to get the current setting and set a setting in the interface.
 ms.date: 01/16/2024
+ms.topic: how-to
 ---
 
 # How to select a USB interface setting (UWP app)

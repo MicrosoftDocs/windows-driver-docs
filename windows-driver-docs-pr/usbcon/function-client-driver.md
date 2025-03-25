@@ -2,6 +2,7 @@
 title: Write a Function Controller Client Driver
 description: This article describes the various tasks that a function controller client driver performs while interacting with USB function controller extension (UFX).
 ms.date: 01/12/2024
+ms.topic: how-to
 ---
 
 # Write a function controller client driver

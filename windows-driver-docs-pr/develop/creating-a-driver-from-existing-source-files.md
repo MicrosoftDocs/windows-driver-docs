@@ -2,6 +2,7 @@
 title: Creating a Driver From Existing Source Files
 description: The WDK is integrated with Microsoft Visual Studio, and uses the same compiler and build tools that you use to build Visual Studio solutions and projects.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating a Driver From Existing Source Files

@@ -2,6 +2,7 @@
 title: Configuring Usbccgp.sys to Select a Non-Default USB Configuration
 description: This article provides information about registry settings that configure the way Usbccgp.sys selects a USB configuration.
 ms.date: 01/17/2024
+ms.topic: how-to
 ---
 
 # Configuring Usbccgp.sys to select a non-default USB configuration

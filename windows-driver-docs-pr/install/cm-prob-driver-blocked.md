@@ -4,6 +4,7 @@ description: CM_PROB_DRIVER_BLOCKED
 keywords:
 - CM_PROB_DRIVER_BLOCKED
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 48 - CM_PROB_DRIVER_BLOCKED

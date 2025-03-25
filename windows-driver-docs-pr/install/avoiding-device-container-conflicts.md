@@ -2,6 +2,7 @@
 title: Avoiding Device Container Conflicts
 description: Avoiding Device Container Conflicts
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Avoiding Device Container Conflicts

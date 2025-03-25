@@ -2,6 +2,7 @@
 title: CM_PROB_WAITING_ON_DEPENDENCY
 description: CM_PROB_WAITING_ON_DEPENDENCY
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 51 - CM_PROB_WAITING_ON_DEPENDENCY
