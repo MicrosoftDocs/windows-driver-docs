@@ -5,6 +5,7 @@ keywords:
 - Storport drivers WDK , I/O
 - I/O WDK Storport
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Storport I/O Model Overview

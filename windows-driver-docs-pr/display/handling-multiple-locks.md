@@ -2,6 +2,7 @@
 title: Handling Multiple Locks
 description: Handling Multiple Locks
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling Multiple Locks

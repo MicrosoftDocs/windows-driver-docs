@@ -2,6 +2,7 @@
 title: Setting the HDCP SRM Version
 description: Setting the HDCP SRM Version
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting the HDCP SRM Version

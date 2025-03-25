@@ -7,6 +7,7 @@ keywords:
 - clone mode WDK video present network
 - surface rotation WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting Rotation in a Display Miniport Driver

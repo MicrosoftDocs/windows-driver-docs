@@ -7,6 +7,7 @@ keywords:
 - memory segments WDK display
 - address space WDK display
 ms.date: 07/01/2024
+ms.topic: concept-article
 ---
 
 # Handling Memory Segments

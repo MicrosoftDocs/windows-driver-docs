@@ -15,6 +15,7 @@ keywords:
 - mobile computer video output WDK video present networks
 - monitor hot plug detection WDK video present networks
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Monitor Hot Plug Detection

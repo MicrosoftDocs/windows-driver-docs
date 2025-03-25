@@ -4,6 +4,7 @@ description: Starting in Windows 10, version 1607, administrators and driver de
 keywords:
 - file system filter drivers, blocking, legacy
 ms.date: 09/05/2024
+ms.topic: how-to
 ---
 
 # Blocking legacy file system filter drivers

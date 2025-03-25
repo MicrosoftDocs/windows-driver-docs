@@ -10,6 +10,7 @@ keywords:
 - dividing linear memory-space segments WDK display
 - memory-space segments WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Dividing a Memory-Space Segment into Banks

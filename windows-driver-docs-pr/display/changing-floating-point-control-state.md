@@ -4,6 +4,7 @@ description: Changing Floating-Point Control State
 keywords:
 - floating-point control state WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Changing Floating-Point Control State

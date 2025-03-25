@@ -9,6 +9,7 @@ keywords:
 - deferred contexts WDK Windows 7 display , mapping
 - deferred contexts WDK Windows Server 2008 R2 display , mapping
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Mapping on Deferred Contexts

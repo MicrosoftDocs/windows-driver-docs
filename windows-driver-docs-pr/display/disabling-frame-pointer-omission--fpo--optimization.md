@@ -4,6 +4,7 @@ description: Windows Display Driver Model (WDDM) drivers must disable frame poin
 keywords:
 - Windows Display Driver Model (WDDM) , debugging
 ms.date: 10/21/2024
+ms.topic: concept-article
 ---
 
 # Disabling Frame Pointer Omission (FPO) optimization

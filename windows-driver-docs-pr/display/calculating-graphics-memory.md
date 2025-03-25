@@ -2,6 +2,7 @@
 title: Calculating Graphics Memory
 description: Calculating Graphics Memory
 ms.date: 08/29/2024
+ms.topic: concept-article
 ---
 
 # Calculating Graphics Memory

@@ -4,6 +4,7 @@ description: Describes debugging techniques for Windows Display Driver Model (WD
 keywords:
 - Windows Display Driver Model (WDDM) , debugging
 ms.date: 10/21/2024
+ms.topic: concept-article
 ---
 
 # Debugging tips for WDDM drivers

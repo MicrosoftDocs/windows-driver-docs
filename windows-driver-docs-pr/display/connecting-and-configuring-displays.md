@@ -13,6 +13,7 @@ keywords:
 - configuring displays WDK Windows 7 display
 - configuring displays WDK Windows Server 2008 R2 display
 ms.date: 03/18/2022
+ms.topic: concept-article
 ---
 
 # Connecting and configuring displays

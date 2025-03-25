@@ -2,6 +2,7 @@
 title: Differentiating the SKU for Windows 7 Display Drivers
 description: Differentiating the SKU for Windows 7 Display Drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Differentiating the SKU for Windows 7 Display Drivers

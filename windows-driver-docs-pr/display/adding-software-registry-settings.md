@@ -6,6 +6,7 @@ keywords:
 - software registry settings WDK display
 - registry WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Adding Software Registry Settings

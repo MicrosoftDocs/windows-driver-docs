@@ -2,6 +2,7 @@
 title: Supporting Direct3D Version 10
 description: Supporting Direct3D Version 10
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting Direct3D Version 10

@@ -6,6 +6,7 @@ keywords:
 - command buffers WDK display
 - DMA buffers WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling Command and DMA Buffers

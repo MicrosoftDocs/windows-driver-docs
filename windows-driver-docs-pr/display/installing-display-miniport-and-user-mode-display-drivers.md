@@ -11,6 +11,7 @@ keywords:
 - INF files WDK display , about driver installations
 - miniport drivers WDK display , installing
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # Installation Requirements for Display Miniport and User-Mode Display Drivers

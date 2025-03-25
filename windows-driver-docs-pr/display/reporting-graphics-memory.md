@@ -5,6 +5,7 @@ keywords:
 - graphics memory, WDDM display
 - video memory manager, reporting graphics memory
 ms.date: 08/29/2024
+ms.topic: concept-article
 ---
 
 # Reporting Graphics Memory

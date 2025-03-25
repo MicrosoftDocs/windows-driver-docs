@@ -2,6 +2,7 @@
 title: Microsoft Compute Driver Model Overview
 description: Overview of Microsoft Compute Driver Model
 ms.date: 06/26/2024
+ms.topic: concept-article
 ---
 
 # Microsoft Compute Driver Model overview

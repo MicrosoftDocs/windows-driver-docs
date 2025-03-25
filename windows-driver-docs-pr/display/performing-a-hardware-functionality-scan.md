@@ -5,6 +5,7 @@ keywords:
 - OPM WDK display , HFS
 - OPM WDK display , hardware functionality scan
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Performing a Hardware Functionality Scan

@@ -13,6 +13,7 @@ keywords:
 - D3DDDICAPS_GETDECODECONFIGURATIONCOUNT
 - D3DDDICAPS_GETDECODECONFIGURATIONS
 ms.date: 10/22/2021
+ms.topic: concept-article
 ---
 
 # Providing capabilities for video decoding

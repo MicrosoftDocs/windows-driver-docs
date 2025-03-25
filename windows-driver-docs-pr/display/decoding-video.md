@@ -5,6 +5,7 @@ keywords:
 - video decoding WDK DirectX VA , about decoding video
 - decoding video WDK DirectX VA , about decoding video
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Decoding Video

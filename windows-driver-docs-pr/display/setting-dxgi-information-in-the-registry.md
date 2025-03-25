@@ -2,6 +2,7 @@
 title: Setting DXGI Information in the Registry
 description: Setting DXGI Information in the Registry
 ms.date: 12/19/2024
+ms.topic: concept-article
 ---
 
 # Setting DXGI Information in the Registry

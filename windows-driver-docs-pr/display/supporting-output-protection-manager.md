@@ -9,6 +9,7 @@ keywords:
 - video copy protection WDK display
 - protected video WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting Output Protection Manager

@@ -2,6 +2,7 @@
 title: Enabling Logging of DirectX Video Acceleration Version 2 and Direct3D Events
 description: "How to enable logging of DXVA version 2 and Direct3D events in GPUView"
 ms.date: 06/30/2022
+ms.topic: concept-article
 ---
 
 # Enabling Logging of DirectX Video Acceleration Version 2 and Direct3D Events

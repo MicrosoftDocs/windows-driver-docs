@@ -12,6 +12,7 @@ keywords:
 - miniport drivers WDK display
 - display miniport drivers WDK See miniport drivers WDK display
 ms.date: 08/21/2024
+ms.topic: concept-article
 ---
 
 # WDDM overview

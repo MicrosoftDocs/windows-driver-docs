@@ -5,6 +5,7 @@ keywords:
 - ATA Port drivers WDK , I/O
 - I/O WDK ATA Port drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # ATA Port I/O Model Overview

@@ -6,6 +6,7 @@ keywords:
 - resume from hibernation WDK display
 - firmware modes in display drivers WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Providing seamless state transitions in WDDM 1.2 and later

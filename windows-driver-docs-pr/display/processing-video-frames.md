@@ -6,6 +6,7 @@ keywords:
 - video frame processing WDK DirectX VA
 - frames WDK DirectX VA
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Processing Video Frames
