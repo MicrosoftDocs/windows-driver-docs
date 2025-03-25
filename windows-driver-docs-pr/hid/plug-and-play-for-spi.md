@@ -2,6 +2,7 @@
 title: Plug and Play Support for HID Over SPI
 description: Describes Plug and Play support for devices that support HID over SPI.
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # Plug and Play support for HID over SPI

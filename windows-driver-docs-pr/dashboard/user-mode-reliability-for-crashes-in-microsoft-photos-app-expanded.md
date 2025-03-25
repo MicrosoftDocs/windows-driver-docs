@@ -2,6 +2,7 @@
 title: Number of user mode crashes in Microsoft Photos app
 description: The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in Microsoft Photos, caused by the graphics drivers, over total runtime in years 
 ms.date: 09/03/2021
+ms.topic: concept-article
 ---
 
 # Number of user mode crashes in Microsoft Photos app

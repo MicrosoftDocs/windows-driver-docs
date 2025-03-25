@@ -2,6 +2,7 @@
 title: Submit a Multiple-locale device manifest package
 description: Submit a Multiple-locale device manifest package
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Submit a Multiple-locale device manifest package

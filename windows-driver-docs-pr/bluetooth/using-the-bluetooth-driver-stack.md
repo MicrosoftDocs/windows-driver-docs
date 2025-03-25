@@ -20,6 +20,7 @@ keywords:
 - remote connections WDK Bluetooth
 - connections WDK Bluetooth
 ms.date: 01/10/2024
+ms.topic: how-to
 ---
 
 # How to use the Bluetooth Driver Stack

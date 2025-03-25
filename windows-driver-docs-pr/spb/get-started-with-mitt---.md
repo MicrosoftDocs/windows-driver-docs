@@ -2,6 +2,7 @@
 title: Get Started With MITT
 description: To run MITT tests, you must install the MITT firmware on a new MITT board. These steps describe how to update the MITT firmware and prepare the host machine for running MITT tests.
 ms.date: 01/12/2024
+ms.topic: get-started
 ---
 
 # Get started with MITT

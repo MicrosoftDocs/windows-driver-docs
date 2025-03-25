@@ -2,6 +2,7 @@
 title: Manage Preprod submissions
 description: Manage Preprod driver submissions to Hardware Dev Center to get them signed for preproduction testing.
 ms.date: 08/04/2022
+ms.topic: how-to
 ---
 
 # Manage Preprod Submissions

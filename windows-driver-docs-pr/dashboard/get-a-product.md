@@ -2,6 +2,7 @@
 title: Get a product
 description: This method in the Microsoft Hardware API retrieves data for a specific product registered to your Windows Dev Center account.
 ms.date: 04/05/2018
+ms.topic: how-to
 ---
 
 # Get a product

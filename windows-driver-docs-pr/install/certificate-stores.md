@@ -5,6 +5,7 @@ keywords:
 - certificate stores WDK
 ms.date: 01/13/2025
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 
 # Certificate Stores

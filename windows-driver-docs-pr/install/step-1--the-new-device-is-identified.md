@@ -2,6 +2,7 @@
 title: Step 1 The New Device is Identified
 description: Step 1 The New Device is Identified
 ms.date: 08/19/2024
+ms.topic: how-to
 ---
 
 # Step 1: The New Device is Identified

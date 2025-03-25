@@ -2,6 +2,7 @@
 description: Architecture overview of Windows portable devices
 title: Architecture Overview
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Architecture Overview

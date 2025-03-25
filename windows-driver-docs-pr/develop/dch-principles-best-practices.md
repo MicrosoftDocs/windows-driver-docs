@@ -2,6 +2,7 @@
 title: DCH Design Principles and Best Practices
 description: Describes DCH principles and best practices, including Declarative, Componentized, and Hardware Support App concepts.
 ms.date: 08/16/2024
+ms.topic: best-practice
 ---
 
 # DCH Design Principles and Best Practices

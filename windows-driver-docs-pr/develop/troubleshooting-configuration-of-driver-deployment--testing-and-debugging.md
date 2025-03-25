@@ -2,6 +2,7 @@
 title: Troubleshooting Driver Deployment, Testing and Debugging
 description: Provides troubleshooting tips for provisioning Visual Studio for driver deployment.
 ms.date: 04/20/2017
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshooting Configuration of Driver Deployment, Testing and Debugging

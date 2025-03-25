@@ -2,6 +2,7 @@
 title: System-Defined Device Setup Classes Reserved for System Use
 description: System-Defined Device Setup Classes Reserved for System Use
 ms.date: 05/31/2024
+ms.topic: concept-article
 ---
 
 # System-Defined Device Setup Classes Reserved for System Use

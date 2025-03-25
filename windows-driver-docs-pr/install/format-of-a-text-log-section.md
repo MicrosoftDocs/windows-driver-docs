@@ -7,6 +7,7 @@ keywords:
 - text logs WDK SetupAPI , sections
 - SetupAPI logging WDK Windows Vista , text log sections
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Format of a Text Log Section

@@ -2,6 +2,7 @@
 title: Write and Deploy Your Universal Sensor Driver
 description: This topic provides guidance on how to write and deploy your Universal sensor driver, using the user mode driver framework (UMDF) version 2.
 ms.date: 06/20/2024
+ms.topic: how-to
 ---
 
 # Write and deploy your Universal sensor driver

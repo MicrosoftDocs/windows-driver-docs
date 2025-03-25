@@ -3,6 +3,7 @@ title: Code Integrity Event Log Messages
 description: Code Integrity Event Log Messages
 ms.date: 05/21/2024
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 
 # Code Integrity Event Log Messages

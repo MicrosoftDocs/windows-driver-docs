@@ -10,6 +10,7 @@ keywords:
 - Bluetooth LE
 - I2C
 - transport minidriver
+ms.topic: concept-article
 ---
 
 # HID Transport Overview

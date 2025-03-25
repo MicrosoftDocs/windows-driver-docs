@@ -3,6 +3,7 @@ title: Windows Driver Signing Tutorial
 description: Provides an overview and details the steps to sign driver binaries for Windows.
 ms.date: 01/31/2025
 ai-usage: ai-assisted
+ms.topic: tutorial
 ---
 
 # Windows driver signing tutorial

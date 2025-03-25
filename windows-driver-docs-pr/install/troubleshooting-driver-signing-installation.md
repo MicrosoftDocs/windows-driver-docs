@@ -2,6 +2,7 @@
 title: Troubleshooting Driver Signing Installation
 description: Installing a release-signed driver is the same as described in Installing, Uninstalling and Loading the Test-Signed Driver Package in Test Signing, except for two additional steps needed when installing using any of the four methods described there.
 ms.date: 02/14/2022
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshooting Driver Signing Installation

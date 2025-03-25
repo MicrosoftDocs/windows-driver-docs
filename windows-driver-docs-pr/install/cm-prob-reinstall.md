@@ -4,6 +4,7 @@ description: CM_PROB_REINSTALL
 keywords:
 - CM_PROB_REINSTALL
 ms.date: 02/28/2020
+ms.topic: error-reference
 ---
 
 # Code 18 - CM_PROB_REINSTALL
