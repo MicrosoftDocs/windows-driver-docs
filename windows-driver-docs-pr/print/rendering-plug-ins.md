@@ -11,6 +11,7 @@ keywords:
 - Pscript WDK print
 - plug-ins WDK print , customized rendering
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Rendering Plug-Ins

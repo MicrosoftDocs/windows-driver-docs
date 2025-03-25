@@ -2,6 +2,7 @@
 title: Bundling the Core Driver with your Package-Aware Driver
 description: Bundling the Core Driver with Your Package-Aware Driver
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # Bundling the Core Driver with Your Package-Aware Driver

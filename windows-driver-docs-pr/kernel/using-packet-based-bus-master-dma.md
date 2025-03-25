@@ -3,6 +3,7 @@ title: Using Packet-Based Bus-Master DMA
 description: Using Packet-Based Bus-Master DMA
 keywords: ["bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Using Packet-Based Bus-Master DMA

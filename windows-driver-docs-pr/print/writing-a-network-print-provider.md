@@ -12,6 +12,7 @@ keywords:
 - network print providers WDK , about network print providers
 - providers WDK print
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing a Network Print Provider

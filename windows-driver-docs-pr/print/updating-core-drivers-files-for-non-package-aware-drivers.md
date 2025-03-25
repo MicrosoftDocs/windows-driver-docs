@@ -2,6 +2,7 @@
 title: Updating Core Drivers Files for Non-Package-Aware Drivers
 description: Updating Core Drivers Files for Non-Package-Aware Drivers
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # Updating Core Drivers Files for Non-Package-Aware Drivers

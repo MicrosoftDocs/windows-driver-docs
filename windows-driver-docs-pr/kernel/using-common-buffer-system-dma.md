@@ -3,6 +3,7 @@ title: Using Common-Buffer System DMA
 description: Using Common-Buffer System DMA
 keywords: ["system DMA WDK kernel , common buffer", "common buffer DMA WDK kernel", "DMA transfers WDK kernel , common buffer", "AllocateCommonBuffer", "auto-initialize mode WDK DMA", "continuous DMA WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Using Common-Buffer System DMA

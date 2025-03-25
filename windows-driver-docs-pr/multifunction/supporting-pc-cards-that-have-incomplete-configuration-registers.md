@@ -6,6 +6,7 @@ keywords:
 - system-supplied multifunction bus drivers WDK
 - mf.sys
 ms.date: 05/08/2023
+ms.topic: concept-article
 ---
 
 # Supporting PC Cards That Have Incomplete Configuration Registers

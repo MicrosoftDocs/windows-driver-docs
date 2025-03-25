@@ -9,6 +9,7 @@ keywords:
 - PICKONE parameters WDK GDL
 - null-value parameters WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Defining the Configuration-Dependent Data Parameters

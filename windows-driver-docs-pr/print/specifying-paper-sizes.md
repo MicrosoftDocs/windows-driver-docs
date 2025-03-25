@@ -7,6 +7,7 @@ keywords:
 - size WDK paper
 - Unidrv WDK print
 ms.date: 09/11/2024
+ms.topic: concept-article
 ---
 
 # Specifying paper sizes

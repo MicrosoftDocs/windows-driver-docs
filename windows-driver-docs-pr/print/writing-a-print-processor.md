@@ -9,6 +9,7 @@ keywords:
 - processors WDK print
 - writing print processors
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing a Print Processor

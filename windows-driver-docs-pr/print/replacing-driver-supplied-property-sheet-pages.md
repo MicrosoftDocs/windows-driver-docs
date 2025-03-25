@@ -12,6 +12,7 @@ keywords:
 - device-sticky properties WDK print
 - sticky properties WDK print
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Replacing Driver-Supplied Property Sheet Pages

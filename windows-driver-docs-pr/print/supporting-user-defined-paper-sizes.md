@@ -7,6 +7,7 @@ keywords:
 - largest paper size WDK Unidrv
 - margins WDK paper size
 ms.date: 09/24/2024
+ms.topic: how-to
 ---
 
 # Supporting user-defined paper sizes

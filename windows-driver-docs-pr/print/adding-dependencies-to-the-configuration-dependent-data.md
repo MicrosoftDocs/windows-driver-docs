@@ -10,6 +10,7 @@ keywords:
 - Feature/Option directive WDK GDL
 - constructs WDK GDL , default construct
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Adding Dependencies to the Configuration-Dependent Data

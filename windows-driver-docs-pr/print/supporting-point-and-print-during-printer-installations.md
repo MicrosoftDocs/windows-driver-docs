@@ -4,6 +4,7 @@ description: Provides information about supporting Point and Print during printe
 keywords:
 - Point and Print WDK , during printer installations
 ms.date: 02/20/2025
+ms.topic: concept-article
 ---
 
 # Supporting Point and Print during printer installations

@@ -4,6 +4,7 @@ description: Using GetGlobalAttribute
 keywords:
 - GetGlobalAttribute
 ms.date: 02/20/2024
+ms.topic: concept-article
 ---
 
 # Using GetGlobalAttribute

@@ -7,6 +7,7 @@ keywords:
 - GPD files WDK Unidrv , installable features and options
 - Unidrv WDK print
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Handling Installable Features and Options

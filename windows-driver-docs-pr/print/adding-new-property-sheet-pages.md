@@ -6,6 +6,7 @@ keywords:
 - UI plug-ins WDK print , property sheet pages
 - property sheet pages WDK print
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # Adding New Property Sheet Pages

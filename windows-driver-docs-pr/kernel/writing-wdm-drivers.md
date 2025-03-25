@@ -2,6 +2,7 @@
 title: Writing WDM Drivers
 description: Writing WDM Drivers
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Writing WDM Drivers

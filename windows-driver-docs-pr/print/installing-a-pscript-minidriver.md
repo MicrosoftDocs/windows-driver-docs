@@ -5,6 +5,7 @@ keywords:
 - minidrivers WDK Pscript , installing
 - INF files WDK print , Pscript
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Installing a Pscript Minidriver

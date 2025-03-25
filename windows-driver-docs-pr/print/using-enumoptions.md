@@ -4,6 +4,7 @@ description: Using EnumOptions
 keywords:
 - EnumOptions
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # Using EnumOptions

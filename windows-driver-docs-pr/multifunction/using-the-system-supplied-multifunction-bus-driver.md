@@ -10,6 +10,7 @@ keywords:
 - physical device objects WDK multifunction devices
 - PDOs WDK multifunction devices
 ms.date: 05/08/2023
+ms.topic: concept-article
 ---
 
 # Using the System-Supplied Multifunction Bus Driver

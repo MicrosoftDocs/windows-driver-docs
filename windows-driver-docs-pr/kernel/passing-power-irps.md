@@ -3,6 +3,7 @@ title: Passing Power IRPs
 description: Passing Power IRPs
 keywords: ["power IRPs WDK kernel , passing", "passing IRPs down device stack WDK", "DispatchPower routine", "dispatch routines WDK power management", "PoStartNextPowerIrp"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Passing Power IRPs

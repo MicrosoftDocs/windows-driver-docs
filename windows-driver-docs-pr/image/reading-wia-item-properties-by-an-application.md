@@ -2,6 +2,7 @@
 title: Reading WIA Item Properties by an Application
 description: Reading WIA Item Properties by an Application
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Reading WIA Item Properties by an Application

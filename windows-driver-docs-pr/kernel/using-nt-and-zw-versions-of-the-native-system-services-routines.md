@@ -3,6 +3,7 @@ title: Using Nt and Zw Versions of the Native System Services Routines
 description: Provides information about using Nt and Zw Versions of the native system services routines.
 keywords: ["Native System Services API WDK"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Using Nt and Zw Versions of the native system services routines

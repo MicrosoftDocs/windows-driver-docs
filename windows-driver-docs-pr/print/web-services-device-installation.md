@@ -4,6 +4,7 @@ description: Installing printers that support Web Services for Devices
 keywords:
 - Web Services Device Monitor WDK printer
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Installing printers that support Web Services for Devices

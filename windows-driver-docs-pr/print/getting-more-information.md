@@ -2,6 +2,7 @@
 title: Getting More Information
 description: Getting More Information
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Getting More Information

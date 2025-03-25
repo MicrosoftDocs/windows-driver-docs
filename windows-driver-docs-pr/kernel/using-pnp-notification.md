@@ -3,6 +3,7 @@ title: Using PnP Notification
 description: Using PnP Notification
 keywords: ["notifications WDK PnP"]
 ms.date: 03/05/2025
+ms.topic: concept-article
 ---
 
 # Using PnP Notification

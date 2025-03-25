@@ -3,6 +3,7 @@ title: Using TmXxx Routines
 description: Using TmXxx Routines
 keywords: ["Kernel Transaction Manager WDK , TmXxx routines", "KTM WDK , TmXxx routines", "TmXxx routines WDK KTM"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Using TmXxx Routines

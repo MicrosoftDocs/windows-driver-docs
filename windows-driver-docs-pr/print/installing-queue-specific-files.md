@@ -7,6 +7,7 @@ keywords:
 - print queues WDK , Point and Print
 - queues WDK printer , Point and Print
 ms.date: 06/26/2023
+ms.topic: concept-article
 ---
 
 # Installing queue-specific files

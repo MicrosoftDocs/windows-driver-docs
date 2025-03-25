@@ -3,6 +3,7 @@ title: Understanding when Remove IRPs are Issued
 description: Understanding When Remove IRPs Are Issued
 keywords: ["remove IRPs WDK PnP", "IRPs WDK PnP", "I/O request packets WDK PnP"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Understanding When Remove IRPs Are Issued

@@ -2,6 +2,7 @@
 title: Finishing Section
 description: Finishing Section
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Finishing Section

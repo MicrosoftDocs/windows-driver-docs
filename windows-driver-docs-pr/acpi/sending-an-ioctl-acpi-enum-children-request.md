@@ -2,6 +2,7 @@
 title: Sending an IOCTL_ACPI_ENUM_CHILDREN Request
 description: Provides information about sending an IOCTL_ACPI_ENUM_CHILDREN request
 ms.date: 03/17/2023
+ms.topic: how-to
 ---
 
 # Sending an IOCTL_ACPI_ENUM_CHILDREN Request

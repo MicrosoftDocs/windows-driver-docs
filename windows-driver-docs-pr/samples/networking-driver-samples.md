@@ -2,6 +2,7 @@
 title: Networking Driver Samples
 description: The driver samples in this directory provide a starting point for writing a custom network driver for your device.
 ms.date: 03/22/2023
+ms.topic: concept-article
 ---
 
 # Networking driver samples

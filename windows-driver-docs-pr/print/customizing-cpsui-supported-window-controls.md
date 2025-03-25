@@ -8,6 +8,7 @@ keywords:
 - window controls WDK CPSUI
 - customizing CPSUI-supported window controls WDK print
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Customizing CPSUI-Supported Window Controls

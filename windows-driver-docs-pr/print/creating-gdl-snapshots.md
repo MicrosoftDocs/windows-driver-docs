@@ -7,6 +7,7 @@ keywords:
 - parser WDK GDL , creating snapshots
 - configurations WDK GDL , creating snapshots
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating GDL Snapshots

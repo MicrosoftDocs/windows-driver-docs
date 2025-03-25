@@ -3,6 +3,7 @@ title: Using Buffered I/O
 description: Using Buffered I/O
 keywords: ["buffered I/O WDK kernel", "buffers WDK I/O , buffered I/O", "data buffers WDK I/O , buffered I/O", "nonpaged system buffers WDK I/O", "I/O control codes WDK kernel , buffered I/O", "I/O WDK kernel , buffered I/O"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Using Buffered I/O

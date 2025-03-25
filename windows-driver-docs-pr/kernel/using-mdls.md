@@ -3,6 +3,7 @@ title: Using MDLs
 description: Provides information about using MDLs.
 keywords: ["memory management WDK kernel ,"]
 ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
 # Using MDLs

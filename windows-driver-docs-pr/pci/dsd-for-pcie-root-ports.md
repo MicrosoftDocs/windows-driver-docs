@@ -3,6 +3,7 @@ title: Device Specific Data (_DSD) for PCIe Root Ports
 description: ACPI _DSD methods for supporting Modern Standby and PCI hot plug scenarios.
 keywords: ACPI, ACPI _DSD method
 ms.date: 09/26/2024
+ms.topic: reference
 ---
 
 # ACPI Interface: Device Specific Data (_DSD) for PCIe Root Ports
