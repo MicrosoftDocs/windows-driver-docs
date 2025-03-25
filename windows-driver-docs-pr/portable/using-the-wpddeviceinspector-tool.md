@@ -2,6 +2,7 @@
 description: Using the WpdDeviceInspector Tool
 title: Using the WpdDeviceInspector Tool
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Using the WpdDeviceInspector Tool

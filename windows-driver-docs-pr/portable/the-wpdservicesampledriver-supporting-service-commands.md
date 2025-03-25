@@ -2,6 +2,7 @@
 description: Supporting the Service Commands
 title: Supporting the Service Commands
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Supporting the Service Commands

@@ -2,6 +2,7 @@
 description: Supporting the Property Range Attributes
 title: Supporting the Property Range Attributes
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Supporting the Property Range Attributes

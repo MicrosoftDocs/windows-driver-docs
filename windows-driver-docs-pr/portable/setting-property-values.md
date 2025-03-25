@@ -2,6 +2,7 @@
 description: Setting Property Values
 title: Setting Property Values
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Setting Property Values

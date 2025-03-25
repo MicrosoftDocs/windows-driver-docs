@@ -2,6 +2,7 @@
 title: Using the INF AddProperty Directive and INF DelProperty Directive
 description: Using the INF AddProperty Directive and the INF DelProperty Directive
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using the INF AddProperty Directive and the INF DelProperty Directive

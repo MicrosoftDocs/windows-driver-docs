@@ -2,6 +2,7 @@
 description: Messaging Functionality
 title: Messaging Functionality
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Messaging Functionality

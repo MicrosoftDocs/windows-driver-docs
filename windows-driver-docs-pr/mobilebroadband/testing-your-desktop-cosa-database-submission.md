@@ -4,6 +4,7 @@ description: Before submitting a COSA update request to Microsoft, test your des
 ms.date: 08/16/2024
 author: mhopkins-msft
 ms.author: mhopkins
+ms.topic: how-to
 ---
 
 # Testing your desktop COSA database submission

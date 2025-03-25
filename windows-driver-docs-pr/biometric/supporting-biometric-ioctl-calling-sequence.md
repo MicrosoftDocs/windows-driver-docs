@@ -6,6 +6,7 @@ keywords:
 - supporting IOCTLs WDK biometric
 - IOCTLs WDK biometric
 ms.date: 03/03/2023
+ms.topic: how-to
 ---
 
 # Supporting Biometric IOCTL Calling Sequence

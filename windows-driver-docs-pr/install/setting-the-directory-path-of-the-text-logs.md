@@ -6,6 +6,7 @@ keywords:
 - directory paths WDK SetupAPI logging
 - LogPath
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting the Directory Path of the Text Logs

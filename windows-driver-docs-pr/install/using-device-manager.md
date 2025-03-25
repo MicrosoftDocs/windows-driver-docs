@@ -5,6 +5,7 @@ keywords:
 - Device Manager WDK
 - Device Manager WDK, about Device Manager
 ms.date: 12/05/2022
+ms.topic: concept-article
 ---
 
 # Using Device Manager

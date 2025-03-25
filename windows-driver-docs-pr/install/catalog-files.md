@@ -12,6 +12,7 @@ keywords:
 - signatures WDK , catalog files
 - catalog files WDK driver signing
 ms.date: 11/05/2024
+ms.topic: concept-article
 ---
 
 # Catalog files and digital signatures

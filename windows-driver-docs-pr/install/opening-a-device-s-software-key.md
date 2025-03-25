@@ -7,6 +7,7 @@ keywords:
 - modifying registry values in a device's software key
 - modifying registry values WDK device installations , device software key
 ms.date: 08/15/2022
+ms.topic: concept-article
 ---
 
 # Opening a device's software key

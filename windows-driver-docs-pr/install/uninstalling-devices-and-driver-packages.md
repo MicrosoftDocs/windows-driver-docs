@@ -2,6 +2,7 @@
 title: Uninstalling Devices and Driver Packages
 description: Uninstalling Devices and Driver Packages
 ms.date: 06/04/2024
+ms.topic: concept-article
 ---
 
 # Uninstalling Devices and Driver Packages

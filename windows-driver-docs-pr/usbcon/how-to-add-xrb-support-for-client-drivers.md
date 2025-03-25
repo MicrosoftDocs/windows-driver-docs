@@ -2,6 +2,7 @@
 title: Allocating and Building URBs
 description: This article describes how a USB client driver can use Windows Driver Model (WDM) driver routines to allocate and format an URB before sending the request to the Microsoft-provided USB driver stack.
 ms.date: 01/24/2023
+ms.topic: concept-article
 ---
 
 # Allocating and Building URBs

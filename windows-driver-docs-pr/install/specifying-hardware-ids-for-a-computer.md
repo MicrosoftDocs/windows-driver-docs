@@ -2,6 +2,7 @@
 title: Specifying Hardware IDs for a Computer
 description: Specifying Hardware IDs for a Computer
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 #  Specifying Hardware IDs for a Computer

@@ -2,6 +2,7 @@
 title: Installing a Release-Signed Catalog File for a Non-PnP Driver
 description: Installing a Release-Signed Catalog File for a Non-PnP Driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Installing a Release-Signed Catalog File for a Non-PnP Driver

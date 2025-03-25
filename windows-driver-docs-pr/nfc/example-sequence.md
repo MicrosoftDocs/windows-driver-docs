@@ -3,6 +3,7 @@ title: Example Sequence
 keywords: ["Examples of sequences of IOCTLs in the Smart Card resource manager including start-up connection and disconnection", "NFC","near field communications","proximity","near field proximity","NFP"]
 description: Provides examples of sequences of IOCTLs in the Smart Card resource manager, including start-up, connection, and disconnection.
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # Example sequence

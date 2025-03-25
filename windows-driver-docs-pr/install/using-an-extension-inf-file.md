@@ -2,6 +2,7 @@
 title: Using an Extension INF File
 description: Starting in Windows 10, you can extend a driver package's functionality by providing an additional INF file called an extension INF.
 ms.date: 05/08/2023
+ms.topic: how-to
 ---
 
 # Using an Extension INF File

@@ -12,6 +12,7 @@ keywords:
 - WM_NOTIFY
 - PSN_APPLY
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Handling Windows Messages for Property Pages

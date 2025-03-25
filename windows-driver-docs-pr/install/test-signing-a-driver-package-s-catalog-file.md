@@ -2,6 +2,7 @@
 title: Test-Signing a Driver Package's Catalog File
 description: Test-Signing a Driver Package's Catalog File
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Test-Signing a Driver Package's Catalog File

@@ -2,6 +2,7 @@
 title: Testing Auto Brightness
 description: How to test auto brightness by using the MALT (Microsoft Ambient Light Tool) tool.
 ms.date: 01/11/2024
+ms.topic: how-to
 ---
 
 # Testing auto brightness

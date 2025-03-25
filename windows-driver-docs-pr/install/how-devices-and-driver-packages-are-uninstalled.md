@@ -2,6 +2,7 @@
 title: How Devices and Driver Packages are Uninstalled
 description: How Devices and Driver Packages are Uninstalled
 ms.date: 06/04/2024
+ms.topic: concept-article
 ---
 
 # How Devices and Driver Packages are Uninstalled

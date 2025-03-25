@@ -4,6 +4,7 @@ description: Use this article plan for adding a new APN to the baseline COSA dat
 ms.date: 08/16/2024
 author: mhopkins-msft
 ms.author: mhopkins
+ms.topic: concept-article
 ---
 
 # Planning your desktop COSA database submission
