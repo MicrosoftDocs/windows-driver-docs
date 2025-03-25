@@ -2,6 +2,7 @@
 title: Creating and Configuring Internet Sharing Experiences
 description: Creating and configuring Internet Sharing experiences
 ms.date: 10/10/2023
+ms.topic: how-to
 ---
 
 # Creating and configuring Internet Sharing experiences

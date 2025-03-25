@@ -4,6 +4,7 @@ description: WiFiCx does not use the WDI_TLV_BSS_ENTRY_PHY_INFO TLV.
 ms.date: 09/30/2021
 keywords:
  - WDI_TLV_BSS_ENTRY_PHY_INFO Network Drivers Starting with Windows Vista
+ms.topic: reference
 ---
 
 # WDI\_TLV\_BSS\_ENTRY\_PHY\_INFO (dot11wificxtypes.hpp)

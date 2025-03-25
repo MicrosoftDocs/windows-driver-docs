@@ -5,6 +5,7 @@ keywords:
 - notify objects WDK networking , creating
 - network notify objects WDK , creating
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating a Notify Object

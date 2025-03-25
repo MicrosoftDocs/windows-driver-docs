@@ -6,6 +6,7 @@ keywords:
 - network notify objects WDK , driver configuration
 - driver configuration WDK network component
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Configuring the Component's Driver

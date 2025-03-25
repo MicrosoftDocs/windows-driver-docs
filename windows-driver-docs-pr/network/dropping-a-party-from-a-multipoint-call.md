@@ -7,6 +7,7 @@ keywords:
 - dropping party from multipoint calls
 - removing party from multipoint calls
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Dropping a Party from a Multipoint Call

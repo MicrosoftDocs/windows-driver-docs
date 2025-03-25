@@ -2,6 +2,7 @@
 title: Determining the VMQ Capabilities of a Network Adapter
 description: Determining the VMQ Capabilities of a Network Adapter
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Determining the VMQ Capabilities of a Network Adapter

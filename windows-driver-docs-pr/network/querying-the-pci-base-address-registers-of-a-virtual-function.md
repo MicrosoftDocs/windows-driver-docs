@@ -2,6 +2,7 @@
 title: Querying the PCI Base Address Registers of a Virtual Function
 description: Querying the PCI Base Address Registers of a Virtual Function
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Querying the PCI Base Address Registers of a Virtual Function

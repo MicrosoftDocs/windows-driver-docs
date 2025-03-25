@@ -6,6 +6,7 @@ keywords:
 - NDIS protocol drivers WDK , binding to adapter
 - binding operation WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Binding to an Adapter

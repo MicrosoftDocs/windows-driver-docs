@@ -2,6 +2,7 @@
 title: Attaching timestamps to packets
 description: Attaching hardware and software timestamps to packets
 ms.date: 01/31/2021
+ms.topic: how-to
 ---
 
 # Attaching timestamps to packets

@@ -2,6 +2,7 @@
 title: Handling the NDIS Selective Suspend Idle Notification
 description: Handling the NDIS Selective Suspend Idle Notification
 ms.date: 03/02/2023
+ms.topic: how-to
 ---
 
 # Handling the NDIS Selective Suspend Idle Notification

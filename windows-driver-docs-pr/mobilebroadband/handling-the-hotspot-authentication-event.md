@@ -2,6 +2,7 @@
 title: Handling the Hotspot Authentication Event
 description: Handling the hotspot authentication event
 ms.date: 10/10/2023
+ms.topic: concept-article
 ---
 
 # Handling the hotspot authentication event

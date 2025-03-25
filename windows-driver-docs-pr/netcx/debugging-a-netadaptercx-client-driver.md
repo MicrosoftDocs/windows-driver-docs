@@ -5,6 +5,7 @@ keywords:
 - debugging NetAdapterCx client drivers, debugging NetAdapterCx client drivers
 ms.date: 06/17/2020
 ms.custom: 19H1
+ms.topic: concept-article
 ---
 
 # Debugging a NetAdapterCx client driver

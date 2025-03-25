@@ -5,6 +5,7 @@ keywords:
 - INF files WDK network , filter drivers
 - monitoring filter drivers WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Configuring an INF File for a Monitoring Filter Driver
