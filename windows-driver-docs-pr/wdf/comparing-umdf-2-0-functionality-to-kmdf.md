@@ -2,6 +2,7 @@
 title: Comparing UMDF 2 Functionality to KMDF
 description: This topic compares the functionality available to a Kernel-Mode Driver Framework (KMDF) driver with that available to a User-Mode Driver Framework (UMDF) 2 driver.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Comparing UMDF 2 Functionality to KMDF

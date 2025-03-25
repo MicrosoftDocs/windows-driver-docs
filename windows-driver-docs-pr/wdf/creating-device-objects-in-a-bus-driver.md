@@ -11,6 +11,7 @@ keywords:
 - bus enumeration WDK KMDF
 - enumeration WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating Device Objects in a Bus Driver

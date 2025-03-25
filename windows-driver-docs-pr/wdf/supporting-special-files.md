@@ -7,6 +7,7 @@ keywords:
 - dump files WDK KMDF
 - hibernation files WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting Special Files

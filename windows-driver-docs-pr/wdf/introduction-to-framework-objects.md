@@ -8,6 +8,7 @@ keywords:
 - callback functions WDK KMDF
 - parent objects WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Introduction to Framework Objects

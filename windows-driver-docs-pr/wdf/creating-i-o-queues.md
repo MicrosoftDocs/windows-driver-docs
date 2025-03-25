@@ -7,6 +7,7 @@ keywords:
 - default I/O queues WDK KMDF
 - creating I/O queues WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating I/O Queues

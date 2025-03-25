@@ -9,6 +9,7 @@ keywords:
 - Kernel-Mode Driver Framework WDK , INX files
 ms.date: 02/20/2025
 ai-usage: ai-assisted
+ms.topic: how-to
 ---
 
 # Using INX Files to Create INF Files

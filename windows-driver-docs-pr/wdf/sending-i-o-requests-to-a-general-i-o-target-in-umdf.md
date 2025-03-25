@@ -5,6 +5,7 @@ keywords:
 - general I/O targets WDK UMDF , sending I/O requests to
 - sending I/O requests WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Sending I/O Requests to a General I/O Target in UMDF

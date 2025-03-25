@@ -2,6 +2,7 @@
 title: Reading and Writing to Device Registers in UMDF 1.x Drivers
 description: Reading and Writing to Device Registers in UMDF 1.x Drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Reading and Writing to Device Registers in UMDF 1.x Drivers

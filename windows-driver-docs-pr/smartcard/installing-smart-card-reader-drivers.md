@@ -5,6 +5,7 @@ keywords:
 - smart card drivers WDK , writing INF file
 - vendor-supplied drivers WDK smart card , INF file
 ms.date: 12/19/2024
+ms.topic: concept-article
 ---
 
 # Writing an INF file for a smart card reader driver

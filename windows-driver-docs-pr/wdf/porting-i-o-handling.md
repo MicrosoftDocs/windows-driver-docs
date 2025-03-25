@@ -2,6 +2,7 @@
 title: Porting I/O
 description: Porting I/O
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Porting I/O

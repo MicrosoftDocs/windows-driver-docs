@@ -8,6 +8,7 @@ keywords:
 - resource lists WDK KMDF
 - resource lists WDK KMDF , creating
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating a Resource List for a Boot Configuration

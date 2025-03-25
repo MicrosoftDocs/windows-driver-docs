@@ -9,6 +9,7 @@ keywords:
 - I/O queues WDK UMDF
 - locking WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Specifying a Callback Synchronization Mode

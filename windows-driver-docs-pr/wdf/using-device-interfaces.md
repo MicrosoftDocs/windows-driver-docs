@@ -7,6 +7,7 @@ keywords:
 - receiving device interface access requests WDK KMDF
 - device interface classes WDK KMDF
 ms.date: 06/14/2023
+ms.topic: how-to
 ---
 
 # Using Device Interfaces (WDF)

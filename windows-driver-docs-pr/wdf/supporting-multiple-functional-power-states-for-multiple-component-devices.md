@@ -2,6 +2,7 @@
 title: Multiple-Component Device, One or More Functional Power States
 description: Supporting Multiple-Component Devices with Single or Multiple Functional Power States
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting Multiple-Component Devices with Single or Multiple Functional Power States

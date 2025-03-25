@@ -7,6 +7,7 @@ keywords:
 - request processing WDK KMDF , completing requests
 - status information WDK KMDF , completing I/O requests
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Completing I/O Requests

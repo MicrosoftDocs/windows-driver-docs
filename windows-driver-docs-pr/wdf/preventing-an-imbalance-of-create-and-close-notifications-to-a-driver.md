@@ -8,6 +8,7 @@ keywords:
 - notifications WDK UMDF
 - notifications WDK UMDF , preventing create and close imbalance
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Preventing an Imbalance of Create and Close Notifications to a Driver

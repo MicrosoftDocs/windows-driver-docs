@@ -2,6 +2,7 @@
 title: Reading and Writing to Device Registers
 description: Reading and Writing to Device Registers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Reading and Writing to Device Registers

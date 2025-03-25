@@ -2,6 +2,7 @@
 title: Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers
 description: Starting in Windows 10, you can build your WDF driver so that it gets extra driver debugging information through the Windows software trace preprocessing.
 ms.date: 02/07/2023
+ms.topic: how-to
 ---
 
 # Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers

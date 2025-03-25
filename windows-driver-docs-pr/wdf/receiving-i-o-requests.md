@@ -6,6 +6,7 @@ keywords:
 - receiving I/O requests WDK KMDF
 - request processing WDK KMDF , receiving requests
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Receiving I/O Requests

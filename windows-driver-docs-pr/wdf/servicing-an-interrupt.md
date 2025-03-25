@@ -9,6 +9,7 @@ keywords:
 - ISRs WDK KMDF
 - deferred procedure calls WDK KMDF
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Servicing an Interrupt

@@ -6,6 +6,7 @@ keywords:
 - IRPs WDK KMDF , unsupported
 - WDM IRPs WDK KMDF , unsupported
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling an IRP that the Framework Does Not Support
