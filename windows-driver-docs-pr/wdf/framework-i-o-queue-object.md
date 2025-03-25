@@ -8,6 +8,7 @@ keywords:
 - IWDFIoQueue
 - queue objects WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Framework I/O Queue Object

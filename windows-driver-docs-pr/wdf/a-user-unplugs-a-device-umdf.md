@@ -5,6 +5,7 @@ keywords:
 - power management scenarios WDK UMDF , unplugging a device
 - unplugging a device scenario WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # A User Unplugs a Device (UMDF 1)

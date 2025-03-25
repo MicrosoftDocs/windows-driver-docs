@@ -10,6 +10,7 @@ keywords:
 - wake-up capabilities WDK KMDF
 - sleep power management WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # A Device Returns to Its Working State

@@ -12,6 +12,7 @@ keywords:
 - resource-requirements-list objects WDK KMDF
 - hardware resources WDK KMDF , specifying
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Framework Objects for Hardware Resources

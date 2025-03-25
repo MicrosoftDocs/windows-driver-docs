@@ -6,6 +6,7 @@ keywords:
 - framework objects WDK KMDF , string objects
 - Unicode strings WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using String Objects

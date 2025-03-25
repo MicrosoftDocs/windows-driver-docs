@@ -2,6 +2,7 @@
 title: Framework Interrupt Object
 description: Framework Interrupt Object
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Framework Interrupt Object

@@ -18,6 +18,7 @@ keywords:
 - WdfSynchronizationScopeNone
 - WdfSynchronizationScopeInheritFromParent
 ms.date: 02/19/2025
+ms.topic: concept-article
 ---
 
 # Using Automatic Synchronization

@@ -7,6 +7,7 @@ keywords:
 - plugging in devices WDK KMDF
 - adding devices WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # A User Plugs in a Device
