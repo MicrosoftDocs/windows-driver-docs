@@ -2,6 +2,7 @@
 title: Writing SR-IOV PF Miniport Drivers Overview
 description: Writing SR-IOV PF Miniport Drivers Overview
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing SR-IOV PF Miniport Drivers Overview

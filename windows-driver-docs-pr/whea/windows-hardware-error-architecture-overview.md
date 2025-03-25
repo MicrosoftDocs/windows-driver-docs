@@ -3,6 +3,7 @@ title: Windows Hardware Error Architecture Overview
 description: Windows Hardware Error Architecture Overview
 ms.date: 03/03/2023
 ms.custom: 19H1
+ms.topic: concept-article
 ---
 
 # Windows Hardware Error Architecture Overview

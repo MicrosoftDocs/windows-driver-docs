@@ -2,6 +2,7 @@
 title: Account Provisioning
 description: Account provisioning
 ms.date: 10/10/2023
+ms.topic: concept-article
 ---
 
 # Account provisioning

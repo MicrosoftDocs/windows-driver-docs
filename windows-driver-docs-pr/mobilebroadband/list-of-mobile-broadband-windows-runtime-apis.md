@@ -2,6 +2,7 @@
 title: Overview of Mobile Broadband Windows Runtime APIs
 description: Overview of mobile broadband Windows Runtime APIs
 ms.date: 10/10/2023
+ms.topic: concept-article
 ---
 
 # Overview of mobile broadband Windows Runtime APIs

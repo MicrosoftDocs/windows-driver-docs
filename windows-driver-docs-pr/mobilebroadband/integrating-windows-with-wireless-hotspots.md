@@ -2,6 +2,7 @@
 title: Introduction to Integrating Windows with Wireless Hotspots
 description: Introduction to integrating Windows with wireless hotspots
 ms.date: 07/05/2019
+ms.topic: concept-article
 ---
 
 # Introduction to integrating Windows with wireless hotspots

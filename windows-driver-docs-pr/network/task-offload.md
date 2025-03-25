@@ -2,6 +2,7 @@
 title: TCP/IP Task Offload Overview
 description: To increase its performance, the Microsoft TCP/IP transport can offload tasks to a NIC that has the appropriate task offload capabilities.
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # TCP/IP Task Offload Overview

@@ -2,6 +2,7 @@
 title: Remote NDIS To USB Mapping Overview
 description: A USB Remote NDIS device is implemented as a USB Communication Device Class (CDC) device with two interfaces.
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # Remote NDIS To USB Mapping overview

@@ -5,6 +5,7 @@ keywords:
 - NetAdapterCx transferring network data, NetCx transferring network data
 ms.date: 12/09/2022
 ms.custom: 19H1
+ms.topic: concept-article
 ---
 
 # Introduction to the NetAdapterCx data path

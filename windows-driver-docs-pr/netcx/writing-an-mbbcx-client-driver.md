@@ -4,6 +4,7 @@ description: Describes the behavior of MBB-NetAdapter class extension and tasks 
 keywords:
 - Mobile Broadband (MBB) WDF class extension, MBBCx, Mobile Broadband NetAdapterCx
 ms.date: 03/19/2018
+ms.topic: how-to
 ---
 
 # Writing an MBBCx client driver

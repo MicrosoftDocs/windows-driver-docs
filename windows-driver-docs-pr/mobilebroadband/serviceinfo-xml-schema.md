@@ -2,6 +2,7 @@
 title: ServiceInfo XML Schema Overview
 description: ServiceInfo XML schema overview
 ms.date: 10/10/2023
+ms.topic: concept-article
 ---
 
 # ServiceInfo XML schema overview

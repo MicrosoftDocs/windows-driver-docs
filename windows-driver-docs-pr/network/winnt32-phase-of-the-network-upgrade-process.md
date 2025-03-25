@@ -6,6 +6,7 @@ keywords:
 - upgrading network components WDK , phases
 - Winnt32 phase WDK networking
 ms.date: 04/20/2017
+ms.topic: upgrade-and-migration-article
 ---
 
 # Winnt32 Phase of the Network Upgrade Process

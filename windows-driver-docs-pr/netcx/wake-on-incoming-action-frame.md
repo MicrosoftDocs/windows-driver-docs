@@ -2,6 +2,7 @@
 title: Wake on Incoming Action Frame
 description: Wake on Incoming Action Frame wakes a WiFiCx device from a low power state when it receives specific action frames from the AP.
 ms.date: 03/07/2024
+ms.topic: concept-article
 ---
 
 # Wake on Incoming Action Frame

@@ -3,6 +3,7 @@ title: MB Firmware Upgrade for eSIM
 description: MB fw upgrade for eSIM
 ms.date: 03/01/2021
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 # Firmware Upgrade for eSIM
 

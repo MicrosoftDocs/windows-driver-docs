@@ -7,6 +7,7 @@ keywords:
 - network interfaces WDK
 - NDISIF WDK networking
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # Introduction to NDIS network interfaces

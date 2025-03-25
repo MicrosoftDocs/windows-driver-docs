@@ -2,6 +2,7 @@
 title: Best Practices for Handling Account Arrival and Removal Events
 description: Best practices for handling account arrival and removal events
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # Best practices for handling account arrival and removal events

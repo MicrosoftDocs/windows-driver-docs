@@ -2,6 +2,7 @@
 title: Overview of Remote NDIS (RNDIS)
 description: RNDIS eliminates the need for hardware vendors to write an NDIS miniport driver for a network device attached to the USB bus.
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # Overview of Remote NDIS (RNDIS)

@@ -8,6 +8,7 @@ keywords:
 - Ethernet frame splitting WDK networking , about Ethernet frame splitting
 - header-data split providers WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Splitting Ethernet Frames Overview

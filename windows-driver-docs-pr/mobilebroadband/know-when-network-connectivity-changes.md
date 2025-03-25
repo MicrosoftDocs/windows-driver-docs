@@ -2,6 +2,7 @@
 title: Know when Network Connectivity Changes
 description: Know when network connectivity changes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Know when network connectivity changes

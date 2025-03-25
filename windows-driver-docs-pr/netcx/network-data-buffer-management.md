@@ -5,6 +5,7 @@ keywords:
 - WDF Network Adapter Class Extension Buffer Manager, Network data buffer management
 ms.date: 02/20/2018
 ms.custom: 19H1
+ms.topic: concept-article
 ---
 
 # Network data buffer management
