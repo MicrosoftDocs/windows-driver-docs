@@ -6,6 +6,7 @@ keywords:
 - PSHED plug-ins WDK WHEA , qualifying
 - PSHED plug-ins WDK WHEA , distributing
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Qualifying and Distributing PSHED Plug-Ins

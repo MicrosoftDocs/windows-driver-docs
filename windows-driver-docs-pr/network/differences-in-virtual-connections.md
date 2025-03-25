@@ -5,6 +5,7 @@ keywords:
 - virtual connections WDK CoNDIS , MCM drivers vs. call managers
 - signaling VCs WDK CoNDIS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Differences in Virtual Connections

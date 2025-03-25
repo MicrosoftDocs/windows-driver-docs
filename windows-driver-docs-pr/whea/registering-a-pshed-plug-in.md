@@ -6,6 +6,7 @@ keywords:
 - registering PSHED plug-ins WDK WHEA
 - PSHED plug-ins WDK WHEA , registering
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Registering a PSHED Plug-In

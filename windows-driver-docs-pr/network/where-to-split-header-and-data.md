@@ -5,6 +5,7 @@ keywords:
 - header-data split WDK , where to split
 - Ethernet frame splitting WDK networking , where to split
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Where to Split Header and Data

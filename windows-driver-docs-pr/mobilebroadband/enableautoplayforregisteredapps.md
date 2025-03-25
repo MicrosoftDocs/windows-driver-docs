@@ -2,6 +2,7 @@
 title: EnableAutoPlayForRegisteredApps
 description: EnableAutoPlayForRegisteredApps
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # EnableAutoPlayForRegisteredApps

@@ -5,6 +5,7 @@ keywords:
 - NDIS 6.20 WDK , data structures
 - data structures WDK NDIS 6.20
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Using NDIS 6.20 Data Structures

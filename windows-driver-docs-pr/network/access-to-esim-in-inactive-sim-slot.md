@@ -4,6 +4,7 @@ description: MBIMEx 4.0 supports full access to an eSIM in the inactive SIM slot
 keywords:
 - Access to eSIM in inactive SIM slot
 ms.date: 05/23/2022
+ms.topic: concept-article
 ---
 
 # Access an eSIM in the inactive SIM slot

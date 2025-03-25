@@ -2,6 +2,7 @@
 title: Writing Hyper-V Extensible Switch Extensions Topics
 description: Writing Hyper-V Extensible Switch Extensions Topics
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing Hyper-V Extensible Switch Extensions Topics

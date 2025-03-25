@@ -8,6 +8,7 @@ keywords:
 - index operations WDK network interface
 - locally unique identifier WDK network interface
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using a NET\_LUID Index
