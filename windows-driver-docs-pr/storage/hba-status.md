@@ -2,6 +2,7 @@
 title: HBA_STATUS
 description: HBA\_STATUS
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # HBA\_STATUS

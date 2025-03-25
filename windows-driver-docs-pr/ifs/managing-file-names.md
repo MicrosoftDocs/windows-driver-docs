@@ -6,6 +6,7 @@ keywords:
 - file names WDK file system minifilter
 - names WDK file systems
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Managing File Names

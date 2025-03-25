@@ -5,6 +5,7 @@ keywords:
 - postoperation callback routines WDK file system minifilter , pending operations
 - pending I/O operations in callback routines WDK file system
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Pending an I/O Operation in a Postoperation Callback Routine

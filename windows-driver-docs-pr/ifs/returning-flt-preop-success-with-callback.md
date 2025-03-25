@@ -4,6 +4,7 @@ description: Returning FLT_PREOP_SUCCESS_WITH_CALLBACK
 keywords:
 - FLT_PREOP_SUCCESS_WITH_CALLBACK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Returning FLT\_PREOP\_SUCCESS\_WITH\_CALLBACK

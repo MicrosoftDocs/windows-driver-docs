@@ -2,6 +2,7 @@
 title: Checking the Oplock State of an FS_FILTER_ACQUIRE_FOR_SECTION_SYNCHRONIZATION Operation
 description: Checking the Oplock State of an FS_FILTER_ACQUIRE_FOR_SECTION_SYNCHRONIZATION operation
 ms.date: 02/07/2025
+ms.topic: concept-article
 ---
 
 # Checking the oplock state of an FS_FILTER_ACQUIRE_FOR_SECTION_SYNCHRONIZATION operation

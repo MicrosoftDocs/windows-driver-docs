@@ -10,6 +10,7 @@ keywords:
 - generic security checks WDK file systems
 - SeChangeNotifyPrivilege
 ms.date: 04/21/2022
+ms.topic: concept-article
 ---
 
 # Checking for Traverse Privilege on IRP_MJ_CREATE

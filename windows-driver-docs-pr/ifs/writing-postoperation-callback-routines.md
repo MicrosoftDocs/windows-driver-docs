@@ -5,6 +5,7 @@ keywords:
 - postoperation callback routines WDK file system minifilter , writing
 - writing callback routines
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing Postoperation Callback Routines

@@ -7,6 +7,7 @@ keywords:
 - filter drivers WDK , installing
 - minifilter drivers WDK , installing
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # Installing a file system filter driver

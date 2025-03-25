@@ -8,6 +8,7 @@ keywords:
 - opportunistic lock WDK file system minifilter
 - locking WDK file system minifilter
 ms.date: 05/29/2024
+ms.topic: concept-article
 ---
 
 # Processing I/O Operations

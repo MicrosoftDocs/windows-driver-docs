@@ -7,6 +7,7 @@ keywords:
 - storage drivers WDK , miniport drivers
 - Storage miniports should avoid calling operating system routines
 ms.date: 03/16/2021
+ms.topic: concept-article
 ---
 
 # Communicating with a storage port driver
