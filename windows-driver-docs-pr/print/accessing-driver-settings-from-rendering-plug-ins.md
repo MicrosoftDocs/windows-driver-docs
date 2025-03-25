@@ -5,6 +5,7 @@ keywords:
 - rendering plug-ins WDK print , accessing driver settings
 - status information WDK print plug-ins
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # Access driver settings from rendering plug-ins

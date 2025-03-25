@@ -2,6 +2,7 @@
 title: KSPROPSETID_VPConfig and KSPROPSETID_VPVBIConfig
 description: KSPROPSETID\_VPConfig and KSPROPSETID\_VPVBIConfig
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_VPConfig and KSPROPSETID\_VPVBIConfig

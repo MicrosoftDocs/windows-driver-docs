@@ -21,6 +21,7 @@ keywords:
 - property sets WDK BDA
 - method sets WDK BDA
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using BDA Property and Method Sets

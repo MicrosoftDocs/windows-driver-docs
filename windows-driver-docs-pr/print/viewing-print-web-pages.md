@@ -11,6 +11,7 @@ keywords:
 - viewing print server pages
 - print URLs WDK
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Viewing Print Web Pages

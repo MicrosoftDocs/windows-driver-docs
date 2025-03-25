@@ -2,6 +2,7 @@
 title: SRB_UNKNOWN_DEVICE_COMMAND
 description: SRB\_UNKNOWN\_DEVICE\_COMMAND
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # SRB\_UNKNOWN\_DEVICE\_COMMAND

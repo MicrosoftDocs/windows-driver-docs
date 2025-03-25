@@ -7,6 +7,7 @@ keywords:
 - reserved keywords WDK
 - SetPPPrefix directive WDK GDL
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # \#SetPPPrefix Preprocessor Directive

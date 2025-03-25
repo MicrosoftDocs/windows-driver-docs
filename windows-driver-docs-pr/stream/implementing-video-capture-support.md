@@ -6,6 +6,7 @@ keywords:
 - capturing video WDK AVStream , implementing
 - Stream class interface WDK video capture
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Implementing Video Capture Support

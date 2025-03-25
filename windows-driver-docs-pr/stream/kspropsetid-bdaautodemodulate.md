@@ -2,6 +2,7 @@
 title: KSPROPSETID_BdaAutodemodulate
 description: KSPROPSETID\_BdaAutodemodulate
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_BdaAutodemodulate

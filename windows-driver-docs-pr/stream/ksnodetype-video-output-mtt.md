@@ -2,6 +2,7 @@
 title: KSNODETYPE_VIDEO_OUTPUT_MTT
 description: KSNODETYPE\_VIDEO\_OUTPUT\_MTT
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSNODETYPE\_VIDEO\_OUTPUT\_MTT

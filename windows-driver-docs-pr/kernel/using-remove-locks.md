@@ -3,6 +3,7 @@ title: Using Remove Locks
 description: Using Remove Locks
 keywords: ["remove locks WDK PnP", "lock routines WDK PnP"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Using Remove Locks

@@ -7,6 +7,7 @@ keywords:
 - stream formats WDK video capture
 - formats WDK video capture
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Specifying Stream Formats

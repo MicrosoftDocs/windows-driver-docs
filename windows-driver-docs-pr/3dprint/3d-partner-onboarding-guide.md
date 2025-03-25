@@ -2,6 +2,7 @@
 title: 3D Print Partner Onboarding Guide
 description: This article describes how to implement 3D printer drivers that are then published on Windows Update.
 ms.date: 03/17/2023
+ms.topic: how-to
 ---
 
 # 3D print partner onboarding guide

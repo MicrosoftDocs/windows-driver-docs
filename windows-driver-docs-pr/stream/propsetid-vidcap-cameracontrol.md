@@ -3,6 +3,7 @@ title: PROPSETID_VIDCAP_CAMERACONTROL
 description: The PROPSETID_VIDCAP_CAMERACONTROL property set controls camera device settings. The controls it provides are a subset of the ITU T.RDC standard.
 keywords: ["KSPROPERTY_VIDCAP_CAMERACONTROL"]
 ms.date: 06/06/2022
+ms.topic: reference
 ---
 
 # PROPSETID_VIDCAP_CAMERACONTROL

@@ -7,6 +7,7 @@ keywords:
 - conditional directives WDK GDL
 - Ifdef directive WDK GDL
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # \#Ifdef Conditional Preprocessor Directive

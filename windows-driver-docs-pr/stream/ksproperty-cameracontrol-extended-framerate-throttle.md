@@ -2,6 +2,7 @@
 title: KSPROPERTY_CAMERACONTROL_EXTENDED_FRAMERATE_THROTTLE
 description: KSPROPERTY_CAMERACONTROL_EXTENDED_FRAMERATE_THROTTLE is a dynamic control that reduces the frame rate of the video by a scale factor of the original frame rate.
 ms.date: 04/04/2024
+ms.topic: reference
 ---
 
 # KSPROPERTY_CAMERACONTROL_EXTENDED_FRAMERATE_THROTTLE

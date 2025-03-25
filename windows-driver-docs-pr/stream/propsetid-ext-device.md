@@ -2,6 +2,7 @@
 title: PROPSETID_EXT_DEVICE
 description: PROPSETID\_EXT\_DEVICE
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # PROPSETID\_EXT\_DEVICE

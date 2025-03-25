@@ -6,6 +6,7 @@ keywords:
 - scanning tunable signals WDK video capture
 - tunable signals WDK video capture
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Scanning to Tunable Signals

@@ -9,6 +9,7 @@ keywords:
 - DirectShow filters WDK AVStream
 - AVStream Kernel Streaming Proxy WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using AVStream with the Kernel Streaming Proxy Module

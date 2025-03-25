@@ -2,6 +2,7 @@
 title: KSPROPSETID_BdaTableSection
 description: KSPROPSETID\_BdaTableSection
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_BdaTableSection

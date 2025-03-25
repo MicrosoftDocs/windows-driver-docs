@@ -2,6 +2,7 @@
 title: PROPSETID_VIDCAP_EXTENSION_UNIT
 description: PROPSETID\_VIDCAP\_EXTENSION\_UNIT
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # PROPSETID\_VIDCAP\_EXTENSION\_UNIT

@@ -8,6 +8,7 @@ keywords:
 - Build utility WDK , BDA
 - macros WDK BDA
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Building BDA Drivers

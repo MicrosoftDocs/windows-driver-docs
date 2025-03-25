@@ -7,6 +7,7 @@ keywords:
 - filter dispatch tables WDK BDA
 - pin dispatch tables WDK BDA
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating Dispatch Tables

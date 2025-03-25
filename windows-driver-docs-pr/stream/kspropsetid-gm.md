@@ -2,6 +2,7 @@
 title: KSPROPSETID_GM
 description: KSPROPSETID\_GM
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_GM

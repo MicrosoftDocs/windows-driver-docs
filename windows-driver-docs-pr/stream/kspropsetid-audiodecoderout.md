@@ -2,6 +2,7 @@
 title: KSPROPSETID_AudioDecoderOut
 description: KSPROPSETID\_AudioDecoderOut
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_AudioDecoderOut
