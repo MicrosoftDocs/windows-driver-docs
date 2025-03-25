@@ -2,6 +2,7 @@
 title: Developing a WIA Driver Basic Concepts
 description: Developing a WIA Driver Basic Concepts
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Developing a WIA Driver: Basic Concepts

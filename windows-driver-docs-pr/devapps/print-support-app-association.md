@@ -2,6 +2,7 @@
 title: Print Support App Association
 description: Provides guidance and examples for associating a print support app with a printer.
 ms.date: 01/10/2025
+ms.topic: concept-article
 ---
 
 # Print support app association

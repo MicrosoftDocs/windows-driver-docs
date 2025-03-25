@@ -2,6 +2,7 @@
 title: How to Manage Print Jobs in a UWP Device App
 description: In Windows 8.1, UWP device apps for printers can manage print jobs.
 ms.date: 03/17/2023
+ms.topic: how-to
 ---
 
 # How to manage print jobs in a UWP device app

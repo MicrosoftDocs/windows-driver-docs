@@ -2,6 +2,7 @@
 title: Setup Samples
 description: The driver samples in this directory provide information and examples for setup and installation of custom drivers for your device.
 ms.date: 03/22/2023
+ms.topic: concept-article
 ---
 
 # Setup samples

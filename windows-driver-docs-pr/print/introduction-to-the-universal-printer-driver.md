@@ -2,6 +2,7 @@
 title: Introduction to the Universal Printer Driver
 description: Introduction to the Universal Printer Driver
 ms.date: 09/11/2024
+ms.topic: concept-article
 ---
 
 # Introduction to the Universal Printer Driver

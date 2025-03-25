@@ -2,6 +2,7 @@
 title: Add WIA Properties to a WIA Item
 description: Add WIA Properties to a WIA Item
 ms.date: 03/27/2023
+ms.topic: how-to
 ---
 
 # Add WIA Properties to a WIA Item

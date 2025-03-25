@@ -7,6 +7,7 @@ keywords:
 - removing print ports
 - DeletePort
 ms.date: 09/07/2022
+ms.topic: how-to
 ---
 
 # Delete a port

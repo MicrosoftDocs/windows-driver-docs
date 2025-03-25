@@ -2,6 +2,7 @@
 title: How to Display Printer Status in a UWP Device App
 description: This topic uses the C# version of the Print settings and print notifications sample to demonstrate how to query the printer status and display it.
 ms.date: 03/17/2023
+ms.topic: how-to
 ---
 
 # How to display printer status in a UWP device app

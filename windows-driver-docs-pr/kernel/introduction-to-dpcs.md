@@ -3,6 +3,7 @@ title: Introduction to DPCs
 description: Introduction to DPCs
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Introduction to DPCs

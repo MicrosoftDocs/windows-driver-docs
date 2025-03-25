@@ -2,6 +2,7 @@
 title: About WIA Properties
 description: About WIA properties
 ms.date: 03/27/2023
+ms.topic: concept-article
 ---
 
 # About WIA properties

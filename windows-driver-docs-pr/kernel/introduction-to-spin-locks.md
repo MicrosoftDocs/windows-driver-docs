@@ -3,6 +3,7 @@ title: Introduction to Spin Locks
 description: Provides an introduction to spin locks.
 keywords: ["KSPIN_LOCK", "executive spin locks WDK kernel", "interrupt spin locks WDK kernel", "queued spin locks WDK kernel", "spin locks WDK kernel"]
 ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
 # Introduction to spin locks

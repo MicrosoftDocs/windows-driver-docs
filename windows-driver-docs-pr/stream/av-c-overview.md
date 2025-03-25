@@ -8,6 +8,7 @@ keywords:
 - virtual Avc.sys mode WDK AV/C
 - Avc.sys function driver WDK , about Avc.sys function driver
 ms.date: 03/05/2021
+ms.topic: concept-article
 ---
 
 # AV/C overview

@@ -3,6 +3,7 @@ title: Overview of the Windows I/O Model
 description: Provides an overview of the Windows I/O model.
 keywords: ["IRPs WDK kernel , about Windows I/O model", "Windows I/O model WDK", "I/O WDK kernel , model"]
 ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
 # Overview of the Windows I/O model

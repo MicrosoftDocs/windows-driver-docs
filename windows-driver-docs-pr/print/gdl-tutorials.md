@@ -8,6 +8,7 @@ keywords:
 - GDL Correctness Test WDK
 - GDL WDK , tutorials
 ms.date: 08/13/2021
+ms.topic: tutorial
 ---
 
 # GDL Tutorials

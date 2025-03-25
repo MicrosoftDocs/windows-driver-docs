@@ -2,6 +2,7 @@
 title: Create a Partner Settings App
 description: Create a partner settings app
 ms.date: 03/17/2023
+ms.topic: how-to
 ---
 
 # Create a partner settings app

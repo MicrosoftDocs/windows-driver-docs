@@ -2,6 +2,7 @@
 title: Enable DMA Remapping for Device Drivers
 description: Enable and opt-into Direct Memory Access(DMA) remapping to ensure compatibility with Kernel DMA Protection and DMAGuard policies.
 ms.date: 01/22/2025
+ms.topic: how-to
 ---
 
 # Enable DMA remapping for device drivers

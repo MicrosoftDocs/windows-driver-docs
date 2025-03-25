@@ -3,6 +3,7 @@ title: Overview of Windows Components
 description: Provides an overview of major internal components of the Windows operating system.
 keywords: ["Windows components WDK", "Windows NT components WDK kernel"]
 ms.date: 02/20/2025
+ms.topic: concept-article
 ---
 
 # Overview of Windows components

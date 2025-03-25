@@ -2,6 +2,7 @@
 title: Get Started with UWP Device Apps
 description: Start here to begin building UWP device apps.
 ms.date: 03/17/2023
+ms.topic: get-started
 ---
 
 # Get started with UWP device apps

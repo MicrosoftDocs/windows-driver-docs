@@ -2,6 +2,7 @@
 title: V4 Printer Driver Setup
 description: Provides details on the v4 print driver setup model including setup concepts, INF file details, and the driver manifest.
 ms.date: 01/25/2023
+ms.topic: install-set-up-deploy
 ---
 
 # V4 Printer Driver Setup

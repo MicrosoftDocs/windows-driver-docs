@@ -2,6 +2,7 @@
 title: Unidrv/PScript5 Driver Default DEVMODE Setup Behavior Changes
 description: Unidrv/PScript5 Driver Default DEVMODE Setup Behavior Changes
 ms.date: 06/07/2024
+ms.topic: concept-article
 ---
 
 # Unidrv/PScript5 Driver Default DEVMODE Setup Behavior Changes

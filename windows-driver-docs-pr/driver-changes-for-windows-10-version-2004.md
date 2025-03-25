@@ -2,6 +2,7 @@
 title: Driver development changes for Windows 10, version 2004
 description: This section describes new features for driver development in Windows 10, version 2004.
 ms.date: 06/21/2024
+ms.topic: whats-new
 ---
 
 # <a name="top"></a>What's new in Windows 10, version 2004

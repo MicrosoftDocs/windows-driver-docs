@@ -2,6 +2,7 @@
 title: Introduction to Application Notification
 description: Introduction to Application Notification
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Introduction to Application Notification

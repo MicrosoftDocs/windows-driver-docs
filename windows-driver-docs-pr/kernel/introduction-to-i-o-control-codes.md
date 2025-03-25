@@ -3,6 +3,7 @@ title: Introduction to I/O Control Codes
 description: Provides an introduction to I/O control codes.
 keywords: ["I/O control codes WDK kernel , about I/O control codes", "control codes WDK IOCTLs , about I/O control codes", "IOCTLs WDK kernel , about I/O control codes", "private IOCTLs WDK kernel", "public IOCTLs WDK kernel", "IOCTLs WDK user-mode", "user-mode components WDK IOCTLs", "I/O control codes WDK user-mode", "control codes WDK user-mode"]
 ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
 # Introduction to I/O control codes

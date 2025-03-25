@@ -2,6 +2,7 @@
 title: Introduction to Microsoft STI
 description: Introduction to Microsoft STI
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Introduction to Microsoft STI

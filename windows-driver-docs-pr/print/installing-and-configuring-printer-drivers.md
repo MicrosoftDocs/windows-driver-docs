@@ -5,6 +5,7 @@ keywords:
 - install drivers WDK printer
 - printer driver installations WDK
 ms.date: 12/18/2024
+ms.topic: install-set-up-deploy
 ---
 
 # Install and configure printer drivers

@@ -5,6 +5,7 @@ keywords:
 - port management WDK print, configuring ports
 - ConfigurePort
 ms.date: 09/07/2022
+ms.topic: how-to
 ---
 
 # Configure a port

@@ -2,6 +2,7 @@
 title: Background Tasks and Custom Triggers
 description: Background tasks provide an app with the ability to register a system event that runs a predefined block of code.
 ms.date: 03/17/2023
+ms.topic: concept-article
 ---
 
 # Background tasks and custom triggers

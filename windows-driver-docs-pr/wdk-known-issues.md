@@ -7,6 +7,7 @@ keywords:
 - drivers
 - known issues
 ms.date: 09/17/2024
+ms.topic: troubleshooting-known-issue
 ---
 
 # Windows Driver Kit (WDK) known issues

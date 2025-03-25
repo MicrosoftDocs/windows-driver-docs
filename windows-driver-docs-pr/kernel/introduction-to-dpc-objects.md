@@ -2,6 +2,7 @@
 title: Introduction to DPC Objects
 description: Introduction to DPC Objects
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Introduction to DPC Objects

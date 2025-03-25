@@ -6,6 +6,7 @@ keywords:
 - network print providers WDK , installing
 - installing print providers WDK
 ms.date: 09/14/2022
+ms.topic: install-set-up-deploy
 ---
 
 # Install a network print provider

@@ -2,6 +2,7 @@
 title: Print Support App v4 API Design Guide
 description: Provides guidance and examples for printer OEMs and IHVs that are implementing a v4 Print Support App (PSA) for their device.
 ms.date: 01/10/2025
+ms.topic: concept-article
 ---
 
 # Print Support App v4 API design guide

@@ -9,6 +9,7 @@ keywords:
 - install
 - download
 ms.date: 3/13/2025
+ms.topic: install-set-up-deploy
 ---
 
 # Install the WDK using WinGet

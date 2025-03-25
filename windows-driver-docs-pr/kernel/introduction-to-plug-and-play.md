@@ -3,6 +3,7 @@ title: Introduction to Plug and Play
 description: Introduction to Plug and Play
 keywords: ["PnP WDK kernel , about Plug and Play", "Plug and Play WDK kernel , about Plug and Play"]
 ms.date: 06/20/2024
+ms.topic: concept-article
 ---
 
 # Introduction to Plug and Play

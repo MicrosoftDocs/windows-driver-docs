@@ -2,6 +2,7 @@
 title: Overview of Driver Technologies
 description: This section contains information about each of the supported Windows driver technologies.
 ms.date: 02/22/2023
+ms.topic: concept-article
 ---
 
 # Overview of Driver Technologies

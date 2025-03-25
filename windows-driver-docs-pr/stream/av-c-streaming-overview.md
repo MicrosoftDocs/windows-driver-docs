@@ -8,6 +8,7 @@ keywords:
 - Avcstrm.sys streaming filter driver WDK , about Avcstrm.sys streaming filter driver
 - filter drivers WDK AV/C streaming
 ms.date: 03/05/2021
+ms.topic: concept-article
 ---
 
 # AV/C Streaming Overview

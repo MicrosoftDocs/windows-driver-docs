@@ -2,6 +2,7 @@
 title: Kiosk Apps for Assigned Access Best Practices
 description: Describes how to implement a kiosk app using best practices.
 ms.date: 03/20/2024
+ms.topic: best-practice
 ---
 
 # Kiosk apps for assigned access: Best practices

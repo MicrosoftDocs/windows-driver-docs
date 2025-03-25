@@ -2,6 +2,7 @@
 title: Introduction to Segmentation Filters
 description: Introduction to Segmentation Filters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Introduction to Segmentation Filters

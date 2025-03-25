@@ -3,6 +3,7 @@ title: Introduction to the Directed Power Management Framework
 description: Describes the Directed Power Management Framework, or DFx, which is part of the Power Framework, or PoFx, version 3.
 ms.date: 08/10/2022
 ms.custom: 19H1
+ms.topic: concept-article
 ---
 
 # Introduction to the Directed Power Management Framework

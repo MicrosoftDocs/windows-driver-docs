@@ -7,6 +7,7 @@ keywords:
 - Download
 - drivers
 ms.date: 3/13/2025
+ms.topic: how-to
 ---
 
 # Download the Windows Driver Kit (WDK)

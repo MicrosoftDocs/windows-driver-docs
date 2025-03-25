@@ -8,6 +8,7 @@ keywords:
 - components WDK printing
 - architecture WDK print
 ms.date: 09/12/2024
+ms.topic: concept-article
 ---
 
 # Introduction to printing

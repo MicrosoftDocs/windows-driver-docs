@@ -3,6 +3,7 @@ title: Introduction to Kernel Dispatcher Objects
 description: Kernel dispatcher objects include timer objects, event objects, semaphore objects, mutex objects, and thread objects.
 keywords: ["kernel dispatcher objects WDK , about kernel dispatcher objects", "dispatcher objects WDK kernel , about kernel dispatcher objects", "wait states WDK kernel", "Signaled state WDK kernel", "Not-Signaled state WDK kernel"]
 ms.date: 07/21/2021
+ms.topic: concept-article
 ---
 
 # Introduction to Kernel Dispatcher Objects

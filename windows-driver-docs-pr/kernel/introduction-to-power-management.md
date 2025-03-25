@@ -3,6 +3,7 @@ title: Introduction to Power Management
 description: Introduction to Power Management
 keywords: ["power management WDK kernel , about power management"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Introduction to Power Management

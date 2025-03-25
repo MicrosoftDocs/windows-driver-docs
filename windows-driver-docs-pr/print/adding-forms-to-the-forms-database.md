@@ -14,6 +14,7 @@ keywords:
 - custom forms WDK printer
 - Unidrv WDK print
 ms.date: 01/26/2023
+ms.topic: how-to
 ---
 
 # Add forms to the forms database

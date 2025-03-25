@@ -2,6 +2,7 @@
 title: What's new in driver development for Windows 11, version 22H2
 description: This section describes new features for driver development in Windows 11, version 22H2.
 ms.date: 05/23/2022
+ms.topic: whats-new
 ---
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 22H2

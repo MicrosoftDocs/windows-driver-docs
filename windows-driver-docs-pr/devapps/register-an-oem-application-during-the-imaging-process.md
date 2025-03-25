@@ -2,6 +2,7 @@
 title: Register an OEM Application during the Imaging Process via Universal Orchestrator Framework
 description: Provides information on registering an OEM application during the imaging process via Universal Orchestrator framework.
 ms.date: 02/12/2025
+ms.topic: how-to
 ---
 
 # Register an OEM application during the imaging process

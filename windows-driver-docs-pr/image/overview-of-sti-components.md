@@ -2,6 +2,7 @@
 title: Overview of STI Components
 description: Overview of STI Components
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Overview of STI Components

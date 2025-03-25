@@ -2,6 +2,7 @@
 title: What's New in Driver Development for Windows 11, Version 24H2
 description: This section describes new features for driver development in Windows 11, version 24H2.
 ms.date: 09/18/2024
+ms.topic: whats-new
 ---
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 24H2

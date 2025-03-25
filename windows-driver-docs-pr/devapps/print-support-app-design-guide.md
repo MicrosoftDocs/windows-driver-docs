@@ -2,6 +2,7 @@
 title: Print Support App v1 and v2 Design Guide
 description: Provides guidance and examples for printer OEMs and IHVs that are implementing a v1 and v2 Print Support App (PSA) for their device.
 ms.date: 01/10/2025
+ms.topic: concept-article
 ---
 
 # Print Support App v1 and v2 design guide

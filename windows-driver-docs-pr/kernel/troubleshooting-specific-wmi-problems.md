@@ -3,6 +3,7 @@ title: Troubleshooting Specific WMI Problems
 description: Troubleshooting Specific WMI Problems
 keywords: ["WMI WDK kernel , troubleshooting", "troubleshooting WMI problems WDK"]
 ms.date: 06/16/2017
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshooting Specific WMI Problems

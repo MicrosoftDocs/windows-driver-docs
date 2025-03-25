@@ -5,6 +5,7 @@ keywords:
 - customized printer setup operations WDK
 - INF files WDK print , customized setup operations
 ms.date: 06/16/2023
+ms.topic: install-set-up-deploy
 ---
 
 # Customized Printer Setup Operations
