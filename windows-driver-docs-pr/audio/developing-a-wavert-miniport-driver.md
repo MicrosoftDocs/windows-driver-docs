@@ -2,6 +2,7 @@
 title: Developing a WaveRT Miniport Driver
 description: Developing a WaveRT Miniport Driver
 ms.date: 07/03/2017
+ms.topic: concept-article
 ---
 
 # Developing a WaveRT Miniport Driver

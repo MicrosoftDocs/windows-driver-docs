@@ -2,6 +2,7 @@
 title: Setting Properties and Registry Values
 description: Learn how a Port Class audio driver can set properties and registry values for a PnP device interface.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting properties and registry values

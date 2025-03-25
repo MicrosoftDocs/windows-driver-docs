@@ -9,6 +9,7 @@ keywords:
 - failed batteries WDK
 - battery failures WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Responding to Battery Status Queries

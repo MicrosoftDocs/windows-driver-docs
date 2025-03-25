@@ -9,6 +9,7 @@ api_name:
 - PROCESSOR_START_TIMEOUT
 api_type:
 - NA
+ms.topic: reference
 ---
 
 # Bug Check 0x1DF: PROCESSOR_START_TIMEOUT

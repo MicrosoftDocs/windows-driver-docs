@@ -3,6 +3,7 @@ title: Controlling the User-Mode Debugger from the Kernel Debugger
 description: Controlling the User-Mode Debugger from the Kernel Debugger
 keywords: ["KD, controlling CDB or NTSD", "WinDbg, controlling CDB or NTSD", "CDB, redirecting control to the kernel debugger", "NTSD, redirecting control to the kernel debugger", "redirecting user-mode output to the kernel debugger", "controlling the user-mode debugger from the kernel debugger", "controlling the user-mode debugger from the kernel debugger, overview", "controlling the user-mode debugger from the kernel debugger, sleep mode", "sleep mode"]
 ms.date: 12/13/2024
+ms.topic: concept-article
 ---
 
 # Controlling the User-Mode Debugger from the Kernel Debugger

@@ -7,6 +7,7 @@ keywords:
 - Port Class audio adapters WDK , service installations
 - adapter services WDK audio
 ms.date: 10/26/2017
+ms.topic: concept-article
 ---
 
 # Installing an Audio Adapter Service in Windows

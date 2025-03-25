@@ -3,6 +3,7 @@ title: Controlling a KD Connection Server Session
 description: Controlling a KD Connection Server Session
 keywords: ["KD connection server, controlling a session"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Controlling a KD Connection Server Session

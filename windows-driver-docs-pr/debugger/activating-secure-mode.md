@@ -3,6 +3,7 @@ title: Activating Secure Mode
 description: Activating Secure Mode
 keywords: ["Secure Mode, how to activate"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Activating Secure Mode

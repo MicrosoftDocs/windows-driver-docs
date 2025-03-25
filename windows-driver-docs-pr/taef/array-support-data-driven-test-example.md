@@ -2,6 +2,7 @@
 title: Array Support Data Driven Test Example
 description: Array Support Data Driven Test Example
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Array Support Data Driven Test Example

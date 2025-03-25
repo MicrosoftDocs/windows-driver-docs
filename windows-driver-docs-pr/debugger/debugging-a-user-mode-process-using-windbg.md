@@ -2,6 +2,7 @@
 title: Debugging a User-Mode Process Using WinDbg
 description: You can use WinDbg Classic to attach to a running process or to spawn and attach to a new process.
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Debugging a User-Mode Process Using WinDbg Classic

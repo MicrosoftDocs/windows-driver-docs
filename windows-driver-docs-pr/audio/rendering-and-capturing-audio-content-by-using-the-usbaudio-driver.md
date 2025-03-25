@@ -4,6 +4,7 @@ description: Rendering and Capturing Audio Content by Using the USBAudio Driver
 keywords:
 - USBAudio class system driver WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Rendering and Capturing Audio Content by Using the USBAudio Driver

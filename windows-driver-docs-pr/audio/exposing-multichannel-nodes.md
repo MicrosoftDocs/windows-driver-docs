@@ -16,6 +16,7 @@ keywords:
 - speakers WDK audio , multichannel nodes
 - channel multichannel support WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Exposing Multichannel Nodes

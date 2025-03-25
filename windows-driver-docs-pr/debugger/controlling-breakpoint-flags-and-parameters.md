@@ -3,6 +3,7 @@ title: Controlling Breakpoint Flags and Parameters
 description: Controlling Breakpoint Flags and Parameters
 keywords: ["breakpoints, flags and parameters", "DEBUG_BREAK_READ", "DEBUG_BREAK_WRITE", "DEBUG_BREAK_EXECUTE", "DEBUG_BREAK_IO"]
 ms.date: 05/13/2020
+ms.topic: concept-article
 ---
 
 # Controlling Breakpoint Flags and Parameters

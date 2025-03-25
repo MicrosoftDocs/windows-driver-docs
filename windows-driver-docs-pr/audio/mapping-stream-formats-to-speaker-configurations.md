@@ -23,6 +23,7 @@ keywords:
 - WDM audio data formats WDK
 - data formats WDK audio , mapping formats
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Mapping Stream Formats to Speaker Configurations

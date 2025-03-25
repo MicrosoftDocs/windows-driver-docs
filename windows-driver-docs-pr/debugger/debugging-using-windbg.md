@@ -2,6 +2,7 @@
 title: Debugging Using The Windows Debugger - WinDbg
 description: This section describes how to perform basic debugging tasks using WinDbg.
 ms.date: 12/09/2022
+ms.topic: concept-article
 ---
 
 # Debugging Using The Windows Debugger - WinDbg

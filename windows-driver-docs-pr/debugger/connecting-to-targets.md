@@ -3,6 +3,7 @@ title: Connecting to Targets
 description: Connecting to Targets
 keywords: ["Debugger Engine, connecting to targets", "targets", "targets, connecting to"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Connecting to Targets

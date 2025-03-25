@@ -3,6 +3,7 @@ title: Analyzing a Video Stream Stall
 description: Analyzing a Video Stream Stall
 keywords: ["kernel streaming debugging, video stream stall"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Analyzing a Video Stream Stall

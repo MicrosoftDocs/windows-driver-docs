@@ -3,6 +3,7 @@ title: Controlling the Target Using WinDbg Classic
 description: Controlling the Target using WinDbg Classic
 keywords: ["controlling the target", "controlling the target, overview", "starting and stopping the target", "execution of the target"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Controlling the Target

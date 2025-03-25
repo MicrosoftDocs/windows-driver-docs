@@ -3,6 +3,7 @@ title: Debugging Targets on Multiple Computers
 description: Debugging Targets on Multiple Computers
 keywords: ["multiple computer debugging", "system, targets on multiple computers", "remote debugging, multiple computers"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging Targets on Multiple Computers

@@ -3,6 +3,7 @@ title: Customizing a Theme
 description: Customizing a Theme
 keywords: ["themes, customizing"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Customizing a Theme

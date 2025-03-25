@@ -3,6 +3,7 @@ title: Determining if a Debugger is Attached
 description: Determining if a Debugger is Attached
 keywords: ["determining if a debugger is attached", "KdRefreshDebuggerNotPresent function", "KD_DEBUGGER_ENABLED global variable", "KD_DEBUGGER_NOT_PRESENT global variable"]
 ms.date: 07/20/2020
+ms.topic: concept-article
 ---
 
 # Determining if a Debugger is Attached

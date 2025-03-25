@@ -2,6 +2,7 @@
 title: Opting Out of Volume Level Persistence
 description: Opting Out of Volume Level Persistence
 ms.date: 05/05/2023
+ms.topic: concept-article
 ---
 
 # Opting Out of Volume Level Persistence

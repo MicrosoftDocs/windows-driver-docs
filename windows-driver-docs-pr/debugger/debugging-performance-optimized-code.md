@@ -3,6 +3,7 @@ title: Debugging Performance-Optimized Code
 description: Debugging Performance-Optimized Code
 keywords: ["performance-optimized code"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging Performance-Optimized Code

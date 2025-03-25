@@ -3,6 +3,7 @@ title: Entering Debugger Commands in WinDbg (Classic)
 description: Entering Debugger Commands in WinDbg (Classic) using the Debugger Command window 
 keywords: debugging information windows, command window, WinDbg
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Entering Debugger Commands in WinDbg (Classic)

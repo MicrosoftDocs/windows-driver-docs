@@ -3,6 +3,7 @@ title: Analyzing a Stuck Call Problem
 description: Analyzing a Stuck Call Problem
 keywords: ["RPC debugging, stuck call"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Analyzing a Stuck Call Problem

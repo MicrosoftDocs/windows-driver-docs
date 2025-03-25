@@ -23,6 +23,7 @@ keywords:
 - S/PDIF pass-through WDK audio
 - mixing audio WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Specifying the Topology

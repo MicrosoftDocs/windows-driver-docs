@@ -6,6 +6,7 @@ keywords:
 - ETW WDK , kernel-mode
 - kernel-mode ETW WDK software tracing
 ms.date: 11/15/2023
+ms.topic: how-to
 ---
 
 # Adding Event Tracing to Kernel-Mode Drivers

@@ -3,6 +3,7 @@ title: Debugging CSRSS
 description: Debugging CSRSS
 keywords: ["CSRSS debugging", "NTSD, debugging CSRSS", "controlling the user-mode debugger from the kernel debugger, debugging CSRSS"]
 ms.date: 12/22/2021
+ms.topic: concept-article
 ---
 
 # Debugging CSRSS

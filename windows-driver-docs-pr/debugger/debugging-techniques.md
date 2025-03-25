@@ -3,6 +3,7 @@ title: Debugging Techniques
 description: This section discusses two types of debugging techniques standard and specialized.
 keywords: ["debugging techniques"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging Techniques

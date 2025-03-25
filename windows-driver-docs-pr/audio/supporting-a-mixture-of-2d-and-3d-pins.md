@@ -8,6 +8,7 @@ keywords:
 - pins WDK audio , 2D
 - pins WDK audio , 3D
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting a Mixture of 2D and 3D Pins

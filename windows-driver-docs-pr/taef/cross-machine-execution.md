@@ -2,6 +2,7 @@
 title: Cross Machine Execution
 description: Cross Machine Execution
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Cross Machine Execution

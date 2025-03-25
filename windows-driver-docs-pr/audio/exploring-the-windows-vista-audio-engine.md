@@ -2,6 +2,7 @@
 title: Exploring the Windows Vista Audio Engine
 description: Exploring the Windows Vista Audio Engine
 ms.date: 11/05/2018
+ms.topic: concept-article
 ---
 
 # Exploring the Windows Vista Audio Engine

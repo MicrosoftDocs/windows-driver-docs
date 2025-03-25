@@ -3,6 +3,7 @@ title: Configuring the Registry
 description: Configuring the Registry
 keywords: ["SymProxy, registry", "ProxyCfg and SymProxy", "Netsh and SymProxy"]
 ms.date: 12/16/2020
+ms.topic: concept-article
 ---
 
 # Configuring the Registry

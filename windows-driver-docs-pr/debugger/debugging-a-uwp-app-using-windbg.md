@@ -2,6 +2,7 @@
 title: Debugging a UWP App Using WinDbg
 description: You can debug Universal Windows Platform (UWP) app using WinDbg.
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Debugging a UWP app using WinDbg

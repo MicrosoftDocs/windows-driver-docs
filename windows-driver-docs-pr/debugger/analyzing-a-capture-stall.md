@@ -3,6 +3,7 @@ title: Analyzing a Capture Stall
 description: Analyzing a Capture Stall
 keywords: ["kernel streaming debugging, blah"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Analyzing a Capture Stall

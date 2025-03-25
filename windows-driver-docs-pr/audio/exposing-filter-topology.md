@@ -8,6 +8,7 @@ keywords:
 - exposing filter topology
 - audio filters WDK audio , exposing topology
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Exposing Filter Topology

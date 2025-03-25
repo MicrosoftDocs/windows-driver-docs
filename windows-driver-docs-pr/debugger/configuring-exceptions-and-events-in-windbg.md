@@ -2,6 +2,7 @@
 title: Configuring Exceptions and Events in WinDbg
 description: You can configure WinDbg to react to specified exceptions and events in a specific way. For each exception, you can set the break status and the handling status.
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Configuring Exceptions and Events in WinDbg

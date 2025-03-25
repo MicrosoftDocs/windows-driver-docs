@@ -7,6 +7,7 @@ keywords:
 - Port Class audio adapters WDK , version information
 - versions WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Specifying Version Information for an Audio Adapter

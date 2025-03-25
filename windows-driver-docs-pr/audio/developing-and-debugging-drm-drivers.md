@@ -8,6 +8,7 @@ keywords:
 - DRM WDK audio , debugging
 - debugging drivers WDK DRM
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Developing and Debugging DRM Drivers
