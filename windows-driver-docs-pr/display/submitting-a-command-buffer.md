@@ -6,6 +6,7 @@ keywords:
 - submitting command buffers WDK display
 - passing command buffers WDK display
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Submitting a Command Buffer

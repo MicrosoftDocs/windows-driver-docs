@@ -2,6 +2,7 @@
 title: MSFC_FibrePortHBAStatistics WMI Class
 description: MSFC\_FibrePortHBAStatistics WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSFC\_FibrePortHBAStatistics WMI Class

@@ -2,6 +2,7 @@
 title: MSiSCSI_NICConfig WMI Class
 description: MSiSCSI\_NICConfig WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_NICConfig WMI Class

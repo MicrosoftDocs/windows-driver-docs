@@ -2,6 +2,7 @@
 title: MPIO_ADAPTER_INFORMATION WMI Class
 description: MPIO\_ADAPTER\_INFORMATION WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MPIO\_ADAPTER\_INFORMATION WMI Class

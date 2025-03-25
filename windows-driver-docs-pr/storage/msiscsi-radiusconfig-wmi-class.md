@@ -2,6 +2,7 @@
 title: MSiSCSI_RADIUSConfig WMI Class
 description: MSiSCSI\_RADIUSConfig WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_RADIUSConfig WMI Class

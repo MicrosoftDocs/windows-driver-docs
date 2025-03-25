@@ -12,6 +12,7 @@ keywords:
 - I/O WDK network redirectors
 - kernel network redirectors WDK , RDBSS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # The Redirected Drive Buffering SubSystem

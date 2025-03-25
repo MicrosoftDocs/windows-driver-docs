@@ -2,6 +2,7 @@
 title: Access to Nonresident Allocation
 description: GPU access to allocations that aren't resident is illegal and result in a device removed for the application that generated the error.
 ms.date: 01/12/2024
+ms.topic: concept-article
 ---
 
 # Access to nonresident allocation

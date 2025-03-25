@@ -7,6 +7,7 @@ keywords:
 - compute accelerator driver development WDK, Windows
 - display miniport drivers , WDK , Windows
 ms.date: 11/21/2024
+ms.topic: concept-article
 ---
 
 # Developer documentation for display, graphics, and compute accelerator drivers

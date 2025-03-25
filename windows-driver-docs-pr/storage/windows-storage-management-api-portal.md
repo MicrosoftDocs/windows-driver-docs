@@ -2,6 +2,7 @@
 title: Windows Storage Management Provider
 description: Introduces the Windows Storage Management Provider API.
 ms.date: 11/21/2024
+ms.topic: concept-article
 ---
 
 # Windows Storage Management Provider API

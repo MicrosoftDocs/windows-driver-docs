@@ -5,6 +5,7 @@ keywords:
 - ATA Port drivers WDK , scatter/gather list
 - scatter/gather list WDK ATA Port driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Access to Scatter/Gather Lists in the ATA Port I/O Model

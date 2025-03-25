@@ -9,6 +9,7 @@ keywords:
 - offloaded data transfers, filters
 - offloaded data transfers, minifilters
 - ODX, Windows
+ms.topic: concept-article
 ---
 
 # Windows offloaded data transfers

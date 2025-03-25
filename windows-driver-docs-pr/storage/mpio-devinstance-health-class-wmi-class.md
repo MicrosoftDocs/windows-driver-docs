@@ -2,6 +2,7 @@
 title: MPIO_DEVINSTANCE_HEALTH_CLASS WMI Class
 description: MPIO\_DEVINSTANCE\_HEALTH\_CLASS WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MPIO\_DEVINSTANCE\_HEALTH\_CLASS WMI Class

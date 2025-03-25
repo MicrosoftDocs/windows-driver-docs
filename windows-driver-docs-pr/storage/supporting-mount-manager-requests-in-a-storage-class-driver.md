@@ -15,6 +15,7 @@ keywords:
 - symbolic link names WDK storage
 - nonpersistent names WDK storage
 ms.date: 06/05/2024
+ms.topic: concept-article
 ---
 
 # Supporting Mount Manager requests in a Storage Class Driver

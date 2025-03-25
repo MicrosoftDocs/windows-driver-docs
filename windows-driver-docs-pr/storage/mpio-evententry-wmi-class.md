@@ -2,6 +2,7 @@
 title: MPIO_EventEntry WMI Class
 description: MPIO\_EventEntry WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MPIO\_EventEntry WMI Class

@@ -2,6 +2,7 @@
 title: MS_SMHBA_SASPHYSTATISTICS WMI Class
 description: MS\_SMHBA\_SASPHYSTATISTICS WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MS\_SMHBA\_SASPHYSTATISTICS WMI Class

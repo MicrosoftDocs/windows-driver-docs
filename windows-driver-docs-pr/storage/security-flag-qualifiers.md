@@ -2,6 +2,7 @@
 title: SECURITY_FLAG_QUALIFIERS
 description: SECURITY\_FLAG\_QUALIFIERS
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # SECURITY\_FLAG\_QUALIFIERS

@@ -2,6 +2,7 @@
 title: MSFC_DH_Chap_Parameters WMI Class
 description: MSFC\_DH\_Chap\_Parameters WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSFC\_DH\_Chap\_Parameters WMI Class

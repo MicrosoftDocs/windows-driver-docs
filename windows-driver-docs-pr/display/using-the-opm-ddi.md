@@ -11,6 +11,7 @@ keywords:
 - OPM WDK display , getting graphics adapter information
 - protection levels WDK display , changing
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Using the OPM DDI

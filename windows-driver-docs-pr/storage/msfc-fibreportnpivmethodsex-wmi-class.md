@@ -2,6 +2,7 @@
 title: MSFC_FibrePortNPIVMethodsEx WMI Class (Windows Drivers)
 description: Learn more about the MSFC_FibrePortNPIVMethodsEx WMI Class.
 ms.date: 10/14/2022
+ms.topic: reference
 ---
 
 # MSFC\_FibrePortNPIVMethodsEx WMI Class

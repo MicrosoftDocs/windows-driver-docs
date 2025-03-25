@@ -6,6 +6,7 @@ keywords:
 - callback routines WDK WMI SRBs
 - WMI IRPs WDK storage
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # How the Port Driver Processes WMI Requests

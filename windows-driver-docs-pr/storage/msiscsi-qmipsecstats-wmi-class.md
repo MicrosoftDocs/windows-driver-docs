@@ -2,6 +2,7 @@
 title: MSiSCSI_QMIPSECStats WMI Class
 description: MSiSCSI\_QMIPSECStats WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_QMIPSECStats WMI Class

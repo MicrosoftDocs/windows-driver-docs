@@ -2,6 +2,7 @@
 title: SCSI_ADDR WMI Class
 description: SCSI\_ADDR WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # SCSI\_ADDR WMI Class
