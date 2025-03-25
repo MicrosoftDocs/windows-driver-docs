@@ -2,6 +2,7 @@
 title: ISCSI_STATUS_QUALIFIERS
 description: ISCSI\_STATUS\_QUALIFIERS
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # ISCSI\_STATUS\_QUALIFIERS

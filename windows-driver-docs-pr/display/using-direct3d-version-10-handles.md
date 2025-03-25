@@ -2,6 +2,7 @@
 title: Using Direct3D Version 10 Handles
 description: Using Direct3D Version 10 Handles
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using Direct3D Version 10 Handles

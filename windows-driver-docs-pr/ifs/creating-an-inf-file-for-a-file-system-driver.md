@@ -13,6 +13,7 @@ keywords:
 - Version section WDK file system
 - creating INF files WDK file system
 ms.date: 06/24/2024
+ms.topic: concept-article
 ---
 
 # Creating an INF file for a file system driver

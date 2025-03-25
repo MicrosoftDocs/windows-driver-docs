@@ -2,6 +2,7 @@
 title: Supporting the DXGI DDI
 description: Supporting the DXGI DDI
 ms.date: 10/12/2018
+ms.topic: concept-article
 ---
 
 # Supporting the DXGI DDI

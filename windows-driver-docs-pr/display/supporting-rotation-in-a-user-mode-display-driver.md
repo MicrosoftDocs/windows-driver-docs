@@ -6,6 +6,7 @@ keywords:
 - rotation WDK display
 - surface rotation WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting Rotation in a User-Mode Display Driver

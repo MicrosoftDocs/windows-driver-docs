@@ -5,6 +5,7 @@ keywords:
 - preoperation callback routines WDK file system minifilter , passing down driver instance stack
 - passing I/O ops down minifilter driver stack WDK file system
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Passing I/O Operations Down the Minifilter Driver Instance Stack

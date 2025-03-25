@@ -2,6 +2,7 @@
 title: Acknowledging Oplock Breaks
 description: Acknowledging Oplock Breaks
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Acknowledging Oplock Breaks

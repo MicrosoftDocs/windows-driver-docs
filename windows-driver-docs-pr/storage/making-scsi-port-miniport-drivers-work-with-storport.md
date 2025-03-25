@@ -5,6 +5,7 @@ keywords:
 - Storport drivers WDK , SCSI Port miniport drivers
 - SCSI Port drivers WDK storage , Storport drivers
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Making SCSI Port Miniport Drivers Work with Storport

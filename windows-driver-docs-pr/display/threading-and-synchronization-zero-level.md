@@ -5,6 +5,7 @@ keywords:
 - threading WDK display , zero level
 - synchronization WDK display , zero level
 ms.date: 10/03/2023
+ms.topic: concept-article
 ---
 
 # Threading and Synchronization Level Zero

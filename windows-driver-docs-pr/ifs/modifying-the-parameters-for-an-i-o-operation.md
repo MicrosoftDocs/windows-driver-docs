@@ -7,6 +7,7 @@ keywords:
 - file system minifilter drivers WDK , modifying I/O parameters
 - minifilter drivers WDK , modifying I/O parameters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Modifying the Parameters for an I/O Operation

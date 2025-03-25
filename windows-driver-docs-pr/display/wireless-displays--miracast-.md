@@ -7,6 +7,7 @@ keywords:
 - Wireless display callback functions called by Miracast WDDM 1.3 user-mode drivers
 - Wireless display functions implemented by Miracast user-mode drivers
 ms.date: 06/26/2024
+ms.topic: concept-article
 ---
 
 # Supporting Miracast wireless display

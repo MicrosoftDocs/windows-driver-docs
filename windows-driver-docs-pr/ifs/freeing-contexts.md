@@ -5,6 +5,7 @@ keywords:
 - contexts WDK file system minifilter , freeing
 - freeing contexts
 ms.date: 01/22/2021
+ms.topic: concept-article
 ---
 
 # Freeing Contexts

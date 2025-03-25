@@ -5,6 +5,7 @@ keywords:
 - threading WDK display , Level Two
 - synchronization WDK display , Level Two
 ms.date: 10/03/2023
+ms.topic: concept-article
 ---
 
 # Threading and Synchronization Level Two

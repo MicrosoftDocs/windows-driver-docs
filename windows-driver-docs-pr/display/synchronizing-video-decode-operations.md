@@ -6,6 +6,7 @@ keywords:
 - decoding video WDK DirectX VA , synchronization
 - synchronization WDK DirectX VA
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Synchronizing Video Decode Operations

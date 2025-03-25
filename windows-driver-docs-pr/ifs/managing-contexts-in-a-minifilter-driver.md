@@ -7,6 +7,7 @@ keywords:
 - contexts WDK file system minifilter
 - contexts WDK file system minifilter , about contexts
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # Managing minifilter contexts

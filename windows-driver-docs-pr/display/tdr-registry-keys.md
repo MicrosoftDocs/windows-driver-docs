@@ -12,6 +12,7 @@ keywords:
 - TDR tests, WHLK
 - TDR tests, Windows Hardware Lab Kit
 ms.date: 10/04/2024
+ms.topic: concept-article
 ---
 
 # Testing and debugging TDR during driver development

@@ -2,6 +2,7 @@
 title: Requesting and Granting Oplocks
 description: Requesting and granting oplocks
 ms.date: 02/07/2025
+ms.topic: how-to
 ---
 
 # Requesting and granting oplocks
