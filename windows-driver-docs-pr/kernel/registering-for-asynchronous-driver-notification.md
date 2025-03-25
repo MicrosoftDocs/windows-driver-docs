@@ -3,6 +3,7 @@ title: Registering for Asynchronous Driver Notification
 description: Registering for Asynchronous Driver Notification
 keywords: ["driver notification WDK dynamic hardware partitioning , registering", "asynchronous notification WDK dynamic hardware partitioning", "notification WDK dynamic hardware partitioning , registering", "asynchronous driver notification WDK dynamic hardware partitioning , registering", "registering for driver notifications WDK dynamic hardware partitioning"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Registering for Asynchronous Driver Notification

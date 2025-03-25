@@ -3,6 +3,7 @@ title: Specifying Device Types
 description: Provides information about specifying device types.
 keywords: ["device objects WDK kernel , device types", "device types WDK device objects"]
 ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
 # Specifying device types

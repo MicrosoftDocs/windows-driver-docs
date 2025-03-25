@@ -3,6 +3,7 @@ title: Defining I/O Control Codes
 description: Provides information about defining I/O control codes.
 keywords: ["I/O control codes WDK kernel , defining", "control codes WDK IOCTLs , defining", "IOCTLs WDK kernel , defining", "CTL_CODE macro", "IOCTLs WDK user-mode", "user-mode components WDK IOCTLs", "I/O control codes WDK user-mode", "control codes WDK user-mode", "layouts WDK IOCTLs"]
 ms.date: 02/20/2025
+ms.topic: concept-article
 ---
 
 # Defining I/O control codes

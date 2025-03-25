@@ -3,6 +3,7 @@ title: Updating Deprecated ExAllocatePool Calls to ExAllocatePool2 and ExAllocat
 description: Learn about Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3
 keywords: ["memory management WDK kernel , system-allocated space", "system-allocated space WDK kernel", "allocating system-space memory", "allocating I/O buffer memory", "ExAllocatePool3", "ExAllocatePool2"]
 ms.date: 01/11/2021
+ms.topic: concept-article
 ---
 
 # Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3

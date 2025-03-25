@@ -2,6 +2,7 @@
 title: Processing WM_DEVICECHANGE Messages
 description: Processing WM_DEVICECHANGE messages
 ms.date: 06/06/2022
+ms.topic: concept-article
 ---
 
 # Processing WM_DEVICECHANGE messages

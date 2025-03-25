@@ -3,6 +3,7 @@ title: Managing Device Queues
 description: Managing Device Queues
 keywords: ["device queues WDK IRPs , managing", "supplemental IRP queues WDK kernel", "StartIo routines, supplemental device queues"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Managing Device Queues

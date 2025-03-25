@@ -3,6 +3,7 @@ title: Handling an IRP_MN_CANCEL_STOP_DEVICE Request (Windows 2000 and Later)
 description: Handling an IRP_MN_CANCEL_STOP_DEVICE Request (Windows 2000 and later)
 keywords: ["IRP_MN_CANCEL_STOP_DEVICE"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Handling an IRP\_MN\_CANCEL\_STOP\_DEVICE Request (Windows 2000 and later)

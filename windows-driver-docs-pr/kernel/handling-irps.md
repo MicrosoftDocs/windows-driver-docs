@@ -3,6 +3,7 @@ title: Handling IRPs
 description: Provides information about handling IRPs.
 keywords: ["kernel-mode drivers WDK , IRPs", "IRPs WDK kernel", "I/O request packets WDK kernel See IRPs WDK kernel", "IRP WDK See IRPs WDK"]
 ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
 # Handling IRPs

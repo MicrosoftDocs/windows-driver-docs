@@ -3,6 +3,7 @@ title: Processing IRPs in an Intermediate-Level Driver
 description: Processing IRPs in an Intermediate-Level Driver
 keywords: ["IRPs WDK kernel , processing examples", "IoCompletion routines", "IoSetCompletionRoutine", "mirror drivers WDK IRPs", "allocating IRPs", "IoCallDriver"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Processing IRPs in an Intermediate-Level Driver

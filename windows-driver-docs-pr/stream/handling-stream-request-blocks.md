@@ -8,6 +8,7 @@ keywords:
 - SRBs WDK streaming minidriver
 - stream request blocks See SRB or SRBs
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Handling Stream Request Blocks

@@ -3,6 +3,7 @@ title: Logging Errors
 description: Provides information about logging errors.
 keywords: ["errors WDK kernel", "logs WDK kernel", "logging errors WDK kernel", "log files WDK kernel", "messages WDK error logs"]
 ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
 # Logging errors

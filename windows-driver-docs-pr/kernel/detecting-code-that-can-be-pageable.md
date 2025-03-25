@@ -3,6 +3,7 @@ title: Detecting Code that can be Pageable
 description: Detecting Code That Can Be Pageable
 keywords: ["pageable drivers WDK kernel , code detection", "detecting pageable code"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Detecting Code That Can Be Pageable

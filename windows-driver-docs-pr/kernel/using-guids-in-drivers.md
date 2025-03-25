@@ -3,6 +3,7 @@ title: Using GUIDs in Drivers
 description: Using GUIDs in Drivers
 keywords: ["globally unique identifiers WDK kernel", "GUIDs WDK kernel", "identifiers WDK GUIDs", "header files WDK GUIDs", "kernel-mode drivers WDK , GUIDs"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Using GUIDs in Drivers

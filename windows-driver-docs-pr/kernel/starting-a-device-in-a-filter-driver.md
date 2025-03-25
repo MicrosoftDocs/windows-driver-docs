@@ -3,6 +3,7 @@ title: Starting a Device in a Filter Driver
 description: Starting a Device in a Filter Driver
 keywords: ["filter drivers WDK PnP"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Starting a Device in a Filter Driver

@@ -3,6 +3,7 @@ title: Updating WMI Registration Information
 description: Updating WMI Registration Information
 keywords: ["WMI WDK kernel , registering with WMI", "registering WMI data providers", "data providers WDK WMI", "driver registrations WDK WMI", "event blocks WDK WMI", "blocks WDK WMI", "registering blocks", "updating WMI registration information"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Updating WMI Registration Information

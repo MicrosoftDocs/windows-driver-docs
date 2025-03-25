@@ -3,6 +3,7 @@ title: Enabling Message-Signaled Interrupts in the Registry
 description: Provides information about enabling message-signaled interrupts in the registry.
 keywords: ["message-signaled interrupts WDK kernel , enabling", "enabling message-signaled interrupts WDK kernel", "MSIs WDK kernel"]
 ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
 # Enabling message-signaled interrupts in the registry

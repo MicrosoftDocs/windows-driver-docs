@@ -3,6 +3,7 @@ title: Handling Rollback Operations
 description: Handling Rollback Operations
 keywords: ["transactions WDK KTM , rolling back transactions", "rolling back transactions WDK KTM", "resource managers WDK KTM , rolling backing transactions", "transactional clients WDK KTM , rolling back transactions"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Handling Rollback Operations

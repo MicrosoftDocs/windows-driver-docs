@@ -3,6 +3,7 @@ title: Determining Whether a Device Can Wake the System
 description: Determining Whether a Device Can Wake the System
 keywords: ["wait/wake IRPs WDK power management , devices with wake capability", "power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Determining Whether a Device Can Wake the System

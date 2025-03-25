@@ -3,6 +3,7 @@ title: Managing Device Performance States
 description: Managing Device Performance States
 keywords: ["power management WDK kernel , device performance states", "device performance states WDK power management", "performance states WDK power management", "custom power settings WDK power management"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Managing Device Performance States

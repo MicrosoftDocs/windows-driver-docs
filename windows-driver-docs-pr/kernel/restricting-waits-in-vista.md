@@ -2,6 +2,7 @@
 title: Restricting Waits in Vista
 description: Restricting Waits in Vista
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Restricting Waits in Vista

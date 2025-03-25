@@ -3,6 +3,7 @@ title: Handling a Wait/Wake IRP in a Function (FDO) or Filter Driver (Filter DO)
 description: Handling a Wait/Wake IRP in a Function (FDO) or Filter Driver (Filter DO)
 keywords: ["receiving wait/wake IRPs", "wait/wake IRPs WDK power management , receiving", "function drivers WDK power management", "FDOs WDK power management", "filter DOs WDK power management"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Handling a Wait/Wake IRP in a Function (FDO) or Filter Driver (Filter DO)

@@ -3,6 +3,7 @@ title: Programming a Device for an I/O Operation
 description: Programming a Device for an I/O Operation
 keywords: ["critical section routines WDK kernel", "I/O WDK kernel , device programming"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Programming a Device for an I/O Operation

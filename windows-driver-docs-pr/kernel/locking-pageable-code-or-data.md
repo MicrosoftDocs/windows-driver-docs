@@ -3,6 +3,7 @@ title: Locking Pageable Code or Data
 description: Locking Pageable Code or Data
 keywords: ["pageable drivers WDK kernel , locking code or data", "locking WDK pageable drivers", "restoring pageable status", "resident code WDK pageable drivers", "isolating pageable code", "PAGE keyword WDK"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Locking Pageable Code or Data

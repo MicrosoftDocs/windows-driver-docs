@@ -3,6 +3,7 @@ title: Managing Memory Sections
 description: Managing Memory Sections
 keywords: ["memory sections WDK kernel", "section objects WDK kernel", "views WDK memory section", "mapping section views"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Managing Memory Sections

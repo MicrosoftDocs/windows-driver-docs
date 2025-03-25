@@ -3,6 +3,7 @@ title: Defining New NTSTATUS Values
 description: Defining New NTSTATUS Values
 keywords: ["NTSTATUS values WDK kernel", "custom NTSTATUS values WDK kernel", "IO_ERR_XXX values"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Defining New NTSTATUS Values
