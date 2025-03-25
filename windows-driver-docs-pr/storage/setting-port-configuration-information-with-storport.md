@@ -2,6 +2,7 @@
 title: Setting Port Configuration Information with Storport
 description: Setting Port Configuration Information with Storport
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting Port Configuration Information with Storport

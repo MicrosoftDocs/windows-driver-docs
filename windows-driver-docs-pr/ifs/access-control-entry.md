@@ -9,6 +9,7 @@ keywords:
 - security identifiers WDK file systems
 - SIDs WDK file systems
 ms.date: 09/05/2024
+ms.topic: concept-article
 ---
 
 # Access Control Entry

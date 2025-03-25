@@ -2,6 +2,7 @@
 title: PDOSCSI_ADDR WMI Class
 description: PDOSCSI\_ADDR WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # PDOSCSI\_ADDR WMI Class

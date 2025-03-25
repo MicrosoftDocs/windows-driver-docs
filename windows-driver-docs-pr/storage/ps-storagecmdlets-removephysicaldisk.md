@@ -12,6 +12,7 @@ topic_type:
 api_name: 
 api_type: 
 api_location: 
+ms.topic: reference
 ---
 
 # RemovePhysicalDisk method of the PS\_StorageCmdlets class

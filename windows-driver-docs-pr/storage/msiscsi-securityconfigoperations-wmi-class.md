@@ -2,6 +2,7 @@
 title: MSiSCSI_SecurityConfigOperations WMI Class
 description: MSiSCSI\_SecurityConfigOperations WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_SecurityConfigOperations WMI Class

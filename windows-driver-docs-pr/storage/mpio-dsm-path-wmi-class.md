@@ -2,6 +2,7 @@
 title: MPIO_DSM_Path WMI Class
 description: MPIO\_DSM\_Path WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MPIO\_DSM\_Path WMI Class

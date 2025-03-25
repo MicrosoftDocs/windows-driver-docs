@@ -2,6 +2,7 @@
 title: MSFC_HBAPortAttributesResults WMI Class
 description: MSFC\_HBAPortAttributesResults WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSFC\_HBAPortAttributesResults WMI Class

@@ -2,6 +2,7 @@
 title: MSFC_PortEvent WMI Class
 description: MSFC\_PortEvent WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSFC\_PortEvent WMI Class

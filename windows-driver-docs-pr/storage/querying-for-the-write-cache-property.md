@@ -12,6 +12,7 @@ keywords:
 - querying write cache
 - write-through requests WDK storage
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Querying for the Write Cache Property

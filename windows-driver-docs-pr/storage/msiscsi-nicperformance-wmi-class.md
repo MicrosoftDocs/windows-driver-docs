@@ -2,6 +2,7 @@
 title: MSiSCSI_NICPerformance WMI Class
 description: MSiSCSI\_NICPerformance WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_NICPerformance WMI Class

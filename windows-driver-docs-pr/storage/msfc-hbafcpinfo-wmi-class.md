@@ -2,6 +2,7 @@
 title: MSFC_HBAFCPInfo WMI Class
 description: MSFC\_HBAFCPInfo WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSFC\_HBAFCPInfo WMI Class

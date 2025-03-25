@@ -2,6 +2,7 @@
 title: MPIO_PATH_HEALTH_INFO WMI Class
 description: MPIO\_PATH\_HEALTH\_INFO WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MPIO\_PATH\_HEALTH\_INFO WMI Class

@@ -2,6 +2,7 @@
 title: Upgrading Firmware for an NVMe Device
 description: Updates to the firmware on an NVMe storage device are issued to the miniport driver for that device. 
 ms.date: 06/26/2024
+ms.topic: how-to
 ---
 
 # Upgrading Firmware for an NVMe Device
