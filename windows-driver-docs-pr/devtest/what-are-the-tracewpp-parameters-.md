@@ -2,6 +2,7 @@
 title: What are the TraceWPP Parameters
 description: What are the TraceWPP parameters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # What are the TraceWPP parameters?

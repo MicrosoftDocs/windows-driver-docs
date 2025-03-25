@@ -38,6 +38,7 @@ api_name:
 - IWDTFDriverSetupAction2
 targetos: Windows
 req.typenames: 
+ms.topic: reference
 ---
 
 # IWDTFDriverSetupAction2 interface

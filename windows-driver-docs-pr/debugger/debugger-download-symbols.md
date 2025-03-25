@@ -3,6 +3,7 @@ title: Windows Symbol Packages for Debugging
 description: Learn about Windows symbol packages, which are used for debugging, and how to get Windows symbols with the Microsoft public symbol server.
 keywords: ["Windows Debugging Downloads", "WinDbg", "Download", "Symbols","Download Symbols"]
 ms.date: 12/10/2023
+ms.topic: concept-article
 ---
 
 # Windows symbol packages for debugging

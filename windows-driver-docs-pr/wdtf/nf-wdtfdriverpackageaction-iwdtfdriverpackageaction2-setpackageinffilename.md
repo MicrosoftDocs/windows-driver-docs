@@ -38,6 +38,7 @@ api_name:
 - IWDTFDriverPackageAction2.SetPackageInfFileName
 targetos: Windows
 req.typenames: 
+ms.topic: reference
 ---
 
 # IWDTFDriverPackageAction2::SetPackageInfFileName

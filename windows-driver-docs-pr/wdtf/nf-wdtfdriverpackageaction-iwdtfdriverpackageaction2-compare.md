@@ -38,6 +38,7 @@ api_name:
 - IWDTFDriverPackageAction2.Compare
 targetos: Windows
 req.typenames: 
+ms.topic: reference
 ---
 
 # IWDTFDriverPackageAction2::Compare

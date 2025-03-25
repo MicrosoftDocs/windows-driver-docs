@@ -3,6 +3,7 @@ title: The SrcTool Utility
 description: The SrcTool Utility
 keywords: ["SrcSrv, SrcTool utility", "SrcTool utility"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # The SrcTool Utility

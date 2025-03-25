@@ -2,6 +2,7 @@
 title: How do you Define Custom Data Types
 description: How do you define custom data types
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How do you define custom data types?
