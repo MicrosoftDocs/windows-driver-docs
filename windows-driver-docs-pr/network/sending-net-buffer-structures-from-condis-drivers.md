@@ -2,6 +2,7 @@
 title: Sending NET_BUFFER Structures from CoNDIS Drivers
 description: Sending NET_BUFFER Structures from CoNDIS Drivers
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Sending NET\_BUFFER Structures from CoNDIS Drivers

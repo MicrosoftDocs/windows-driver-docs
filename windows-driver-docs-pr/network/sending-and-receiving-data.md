@@ -7,6 +7,7 @@ keywords:
 - sending data WDK networking
 - receiving data WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Sending and receiving data over WSK sockets

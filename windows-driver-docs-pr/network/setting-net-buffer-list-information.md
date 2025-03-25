@@ -6,6 +6,7 @@ keywords:
 - header-data split WDK , NET_BUFFER_LIST
 - flags WDK header-data split
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting NET\_BUFFER\_LIST Information

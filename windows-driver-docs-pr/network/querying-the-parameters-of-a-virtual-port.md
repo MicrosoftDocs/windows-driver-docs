@@ -2,6 +2,7 @@
 title: Querying the Parameters of a Virtual Port
 description: Querying the Parameters of a Virtual Port
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Querying the Parameters of a Virtual Port

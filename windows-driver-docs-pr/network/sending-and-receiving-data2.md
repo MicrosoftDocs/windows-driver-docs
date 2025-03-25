@@ -4,6 +4,7 @@ description: Sending and receiving data in CoNDIS
 keywords:
 - virtual connections WDK CoNDIS , data transfers
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Sending and receiving data in CoNDIS

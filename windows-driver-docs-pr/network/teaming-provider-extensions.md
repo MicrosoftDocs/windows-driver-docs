@@ -2,6 +2,7 @@
 title: Teaming Provider Extensions
 description: Teaming Provider Extensions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Teaming Provider Extensions

@@ -5,6 +5,7 @@ keywords:
 - connection offload WDK TCP/IP transport , reporting capabilities
 - reporting connection offload capabilities
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Reporting a NIC's Connection Offload Capabilities

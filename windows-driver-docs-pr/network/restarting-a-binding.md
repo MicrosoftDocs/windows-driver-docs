@@ -8,6 +8,7 @@ keywords:
 - binding states WDK networking
 - restarting binding for protocol driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Restarting a Binding

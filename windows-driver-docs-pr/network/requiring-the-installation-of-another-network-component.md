@@ -7,6 +7,7 @@ keywords:
 - component dependencies WDK networking
 - dependencies WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Requiring the Installation of Another Network Component

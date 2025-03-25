@@ -2,6 +2,7 @@
 title: Reporting Power Management Capabilities
 description: Reporting Power Management Capabilities
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Reporting Power Management Capabilities

@@ -2,6 +2,7 @@
 title: Receiving Hyper-V Extensible Switch config change OID requests
 description: Receiving OID Requests about Hyper-V Extensible Switch Configuration Changes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Receiving OID Requests about Hyper-V Extensible Switch Configuration Changes

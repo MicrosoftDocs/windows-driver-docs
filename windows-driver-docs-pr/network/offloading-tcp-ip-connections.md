@@ -5,6 +5,7 @@ keywords:
 - connection offload WDK TCP/IP transport , TCP chimney offload services
 - TCP chimney offload services WDK TCP/IP transport
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Offloading TCP/IP Connections

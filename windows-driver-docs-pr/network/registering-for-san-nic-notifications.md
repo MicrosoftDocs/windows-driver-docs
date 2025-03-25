@@ -7,6 +7,7 @@ keywords:
 - SAN proxy drivers WDK , NIC notifications
 - registering NIC notifications
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Registering for SAN NIC Notifications

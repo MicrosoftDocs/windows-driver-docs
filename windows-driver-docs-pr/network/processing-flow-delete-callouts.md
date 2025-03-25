@@ -7,6 +7,7 @@ keywords:
 - flow delete callouts WDK Windows Filtering Platform
 - flowDeleteFn
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Processing Flow Delete Callouts

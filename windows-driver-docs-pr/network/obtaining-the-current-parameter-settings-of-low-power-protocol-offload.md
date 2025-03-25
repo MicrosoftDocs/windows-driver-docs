@@ -2,6 +2,7 @@
 title: Obtaining the Current Parameter Settings of Low Power Protocol Offloads
 description: Obtaining the Current Parameter Settings of Low Power Protocol Offloads
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Obtaining the Current Parameter Settings of Low Power Protocol Offloads

@@ -5,6 +5,7 @@ keywords:
 - NetAdapterCx Net rings and net ring iterators, NetCx Net rings and net ring iterators, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
 ms.date: 11/01/2019
 ms.custom: Vib
+ms.topic: how-to
 ---
 
 # Sending network data with net rings
