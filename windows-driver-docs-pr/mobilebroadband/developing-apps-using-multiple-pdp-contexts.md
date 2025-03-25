@@ -2,6 +2,7 @@
 title: Developing Apps Using Multiple PDP Contexts
 description: Developing apps using multiple PDP contexts
 ms.date: 10/06/2023
+ms.topic: concept-article
 ---
 
 # Developing apps using multiple PDP contexts

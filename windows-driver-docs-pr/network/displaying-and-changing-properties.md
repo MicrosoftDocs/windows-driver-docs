@@ -8,6 +8,7 @@ keywords:
 - properties WDK networking
 - displaying network configuration properties
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Displaying and Changing Properties

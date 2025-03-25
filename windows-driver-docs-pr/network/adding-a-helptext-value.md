@@ -5,6 +5,7 @@ keywords:
 - add-registry-sections WDK networking , HelpText values
 - HelpText values WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Adding a HelpText Value

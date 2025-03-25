@@ -2,6 +2,7 @@
 title: Provisioning Windows Using a Website
 description: Provisioning Windows using a website
 ms.date: 10/11/2023
+ms.topic: concept-article
 ---
 
 # Provisioning Windows using a website

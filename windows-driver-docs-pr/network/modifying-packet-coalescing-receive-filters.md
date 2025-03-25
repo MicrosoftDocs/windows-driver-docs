@@ -2,6 +2,7 @@
 title: Modifying Packet Coalescing Receive Filters
 description: Modifying Packet Coalescing Receive Filters
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Modifying Packet Coalescing Receive Filters

@@ -7,6 +7,7 @@ keywords:
 - filter drivers WDK networking , detaching filter modules
 - NDIS filter drivers WDK , detaching filter modules
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Detaching a Filter Module

@@ -8,6 +8,7 @@ keywords:
 - kernel-mode callout drivers WDK Windows Filtering Platform
 - user-mode callout drivers WDK Windows Filtering Platform
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Calling Other Windows Filtering Platform Functions

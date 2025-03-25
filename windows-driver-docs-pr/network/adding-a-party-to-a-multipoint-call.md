@@ -6,6 +6,7 @@ keywords:
 - multipoint calls WDK CoNDIS
 - adding parties to multipoint calls
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Adding a Party to a Multipoint Call

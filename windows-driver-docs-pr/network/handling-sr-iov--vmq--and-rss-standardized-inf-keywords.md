@@ -2,6 +2,7 @@
 title: Handling SR-IOV, VMQ, and RSS Standardized INF Keywords
 description: Handling SR-IOV, VMQ, and RSS Standardized INF Keywords
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Handling SR-IOV, VMQ, and RSS Standardized INF Keywords

@@ -2,6 +2,7 @@
 title: Allocating a VM Queue
 description: Allocating a VM Queue
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Allocating a VM Queue

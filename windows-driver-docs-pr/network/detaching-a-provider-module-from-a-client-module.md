@@ -9,6 +9,7 @@ keywords:
 - NMR WDK , detaching network modules
 - NmrDeregisterProvider
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Detaching a Provider Module from a Client Module

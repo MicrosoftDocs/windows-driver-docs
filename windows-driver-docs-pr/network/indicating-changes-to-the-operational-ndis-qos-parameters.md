@@ -2,6 +2,7 @@
 title: Indicating Changes to the Operational NDIS QoS Parameters
 description: Indicating Changes to the Operational NDIS QoS Parameters
 ms.date: 03/02/2023
+ms.topic: how-to
 ---
 
 # Indicating Changes to the Operational NDIS QoS Parameters

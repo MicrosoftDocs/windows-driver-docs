@@ -2,6 +2,7 @@
 title: Understanding and Configuring Windows Connection Manager
 description: Understanding and configuring Windows Connection Manager
 ms.date: 08/21/2024
+ms.topic: concept-article
 ---
 
 # Understanding and configuring Windows Connection Manager

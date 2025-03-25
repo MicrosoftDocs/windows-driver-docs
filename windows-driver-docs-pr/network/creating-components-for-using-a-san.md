@@ -8,6 +8,7 @@ keywords:
 - data transfers WDK SANs
 - transferring data WDK SANs
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating Components for Using a SAN

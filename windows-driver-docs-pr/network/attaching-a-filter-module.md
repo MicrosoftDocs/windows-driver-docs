@@ -7,6 +7,7 @@ keywords:
 - filter drivers WDK networking , attaching filter modules
 - NDIS filter drivers WDK , attaching filter modules
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Attaching a Filter Module

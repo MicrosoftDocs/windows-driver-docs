@@ -5,6 +5,7 @@ keywords:
 - driver stacks WDK networking , pausing
 - pausing driver stacks WDK networking
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Pausing a Driver Stack

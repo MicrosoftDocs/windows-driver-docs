@@ -7,6 +7,7 @@ keywords:
 - memory allocations WDK SANs
 - releasing memory for SAN proxy drivers
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Allocating and Releasing Memory for a SAN Proxy Driver

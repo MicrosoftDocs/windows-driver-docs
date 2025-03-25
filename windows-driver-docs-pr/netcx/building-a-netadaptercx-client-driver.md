@@ -4,6 +4,7 @@ description: Building a NetAdapterCx client driver
 keywords:
 - building a NetAdapterCx client driver, building a NIC driver
 ms.date: 06/05/2017
+ms.topic: how-to
 ---
 
 # Building a NetAdapterCx client driver

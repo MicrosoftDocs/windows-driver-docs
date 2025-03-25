@@ -4,6 +4,7 @@ description: Enabling Wake-Up Events
 keywords:
 - wake-up capabilities WDK networking , enabling wake-up events
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Enabling Wake-Up Events
