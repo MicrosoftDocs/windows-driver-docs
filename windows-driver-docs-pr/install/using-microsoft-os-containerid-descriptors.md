@@ -2,6 +2,7 @@
 title: Using Microsoft OS ContainerID Descriptors
 description: Using Microsoft OS ContainerID Descriptors
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using Microsoft OS ContainerID Descriptors

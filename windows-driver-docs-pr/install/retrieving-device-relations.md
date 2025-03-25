@@ -2,6 +2,7 @@
 title: Retrieving Device Relations
 description: Retrieving Device Relations
 ms.date: 04/05/2022
+ms.topic: how-to
 ---
 
 # Retrieving Device Relations

@@ -2,6 +2,7 @@
 description: Supporting WPP Tracing
 title: Supporting WPP Tracing
 ms.date: 12/09/2024
+ms.topic: how-to
 ---
 
 # Supporting WPP Tracing

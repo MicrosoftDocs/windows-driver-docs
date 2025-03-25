@@ -2,6 +2,7 @@
 title: Using Computer Hardware IDs (CHIDs)
 description: Computer Hardware IDs (CHIDs) are defined in the Specifying Hardware IDs for a Computer.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Using Computer Hardware IDs (CHIDs)

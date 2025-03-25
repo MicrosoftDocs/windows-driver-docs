@@ -2,6 +2,7 @@
 description: Defining the Sensor Objects
 title: Defining the Sensor Objects
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Defining the Sensor Objects

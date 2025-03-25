@@ -2,6 +2,7 @@
 description: Supporting AutoPlay
 title: Supporting AutoPlay
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Supporting AutoPlay

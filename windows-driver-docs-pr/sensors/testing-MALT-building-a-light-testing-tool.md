@@ -2,6 +2,7 @@
 title: Building a Light and Color Testing Tool (MALT)
 description: This topic provides instructions on how to use the MALT (Microsoft Ambient Light Tool) as a light and color testing solution.
 ms.date: 04/29/2024
+ms.topic: concept-article
 ---
 
 # Building a light and color testing tool (MALT)

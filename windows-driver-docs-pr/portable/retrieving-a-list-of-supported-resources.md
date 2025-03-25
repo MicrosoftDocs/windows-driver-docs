@@ -2,6 +2,7 @@
 title: Retrieving a List of Supported Resources
 description: Retrieving a list of Supported Resources
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Retrieving a list of Supported Resources

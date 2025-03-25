@@ -2,6 +2,7 @@
 description: Installing the Sample Driver
 title: Installing the Sample Driver
 ms.date: 03/03/2023
+ms.topic: how-to
 ---
 
 # Installing the Sample Driver

@@ -2,6 +2,7 @@
 description: Initializing the Driver
 title: Initializing the Driver
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Initializing the Driver

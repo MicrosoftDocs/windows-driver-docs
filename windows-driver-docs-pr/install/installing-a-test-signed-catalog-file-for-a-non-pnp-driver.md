@@ -7,6 +7,7 @@ keywords:
 - .cat files
 - non-PnP driver catalog files WDK driver signing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Installing a Test-Signed Catalog File for a Non-PnP Driver

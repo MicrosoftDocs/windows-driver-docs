@@ -2,6 +2,7 @@
 title: Retrieving the Status and Problem Code for a Device Instance
 description: Retrieving the Status and Problem Code for a Device Instance
 ms.date: 04/05/2022
+ms.topic: concept-article
 ---
 
 # Retrieving the Status and Problem Code for a Device Instance

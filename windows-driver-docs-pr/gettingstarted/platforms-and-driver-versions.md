@@ -2,6 +2,7 @@
 title: Writing Drivers for Different Versions of Windows
 description: Writing drivers for different versions of Windows
 ms.date: 03/15/2024
+ms.topic: how-to
 ---
 
 # Writing drivers for different versions of Windows

@@ -2,6 +2,7 @@
 title: Installing Device Metadata Packages from WMIS
 description: Installing Device Metadata Packages from WMIS
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Installing Device Metadata Packages from WMIS

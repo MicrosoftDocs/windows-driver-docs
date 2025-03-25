@@ -2,6 +2,7 @@
 description: Testing and Debugging the Sample Driver
 title: Testing and Debugging the Sample Driver
 ms.date: 03/03/2023
+ms.topic: how-to
 ---
 
 # Testing and Debugging the Sample Driver

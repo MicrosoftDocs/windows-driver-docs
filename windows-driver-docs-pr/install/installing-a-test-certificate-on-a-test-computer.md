@@ -7,6 +7,7 @@ keywords:
 - test signing driver packages WDK , installing test certificates
 - certificate stores WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Installing a Test Certificate on a Test Computer

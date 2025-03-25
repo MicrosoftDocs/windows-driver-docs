@@ -12,6 +12,7 @@ keywords:
 - applications WDK device installation
 - device installations WDK , applications
 ms.date: 03/23/2022
+ms.topic: how-to
 ---
 
 # Writing a Device Installation Application

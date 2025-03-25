@@ -2,6 +2,7 @@
 title: Verifying the Implementation of Container IDs
 description: Verifying the Implementation of Container IDs
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Verifying the Implementation of Container IDs

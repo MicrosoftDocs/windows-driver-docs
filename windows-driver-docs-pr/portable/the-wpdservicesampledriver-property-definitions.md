@@ -2,6 +2,7 @@
 description: Defining the Service Properties
 title: Defining the Service Properties
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Defining the Service Properties

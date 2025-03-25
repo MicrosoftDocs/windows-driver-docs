@@ -2,6 +2,7 @@
 description: Creating the Sensor Devices
 title: Creating the Sensor Devices
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Creating the Sensor Devices

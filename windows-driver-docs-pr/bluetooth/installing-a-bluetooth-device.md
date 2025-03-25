@@ -7,6 +7,7 @@ keywords:
 - server-side profile drivers WDK Bluetooth
 - INF files WDK Bluetooth
 ms.date: 06/17/2024
+ms.topic: how-to
 ---
 
 # Installing a Bluetooth device

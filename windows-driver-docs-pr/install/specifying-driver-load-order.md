@@ -7,6 +7,7 @@ keywords:
 - load order WDK INF files
 - service-install-sections WDK INF files
 ms.date: 02/02/2022
+ms.topic: how-to
 ---
 
 # Specifying Driver Load Order

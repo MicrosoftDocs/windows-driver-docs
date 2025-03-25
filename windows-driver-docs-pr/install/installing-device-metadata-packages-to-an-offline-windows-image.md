@@ -2,6 +2,7 @@
 title: Installing Device Metadata Packages to an Offline Windows Image
 description: Installing Device Metadata Packages to an Offline Windows Image
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Installing Device Metadata Packages to an Offline Windows Image

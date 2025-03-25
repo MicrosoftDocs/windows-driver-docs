@@ -2,6 +2,7 @@
 description: Supporting Client Contexts
 title: Supporting Client Contexts
 ms.date: 03/03/2023
+ms.topic: how-to
 ---
 
 # Supporting Client Contexts

@@ -2,6 +2,7 @@
 title: Using a Component INF File
 description: Describes how to use software components to include user-mode software that is specific to a device.
 ms.date: 05/08/2023
+ms.topic: how-to
 ---
 
 # Using a Component INF File

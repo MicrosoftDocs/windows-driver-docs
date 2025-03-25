@@ -2,6 +2,7 @@
 description: Retrieving Resource Attributes
 title: Retrieving Resource Attributes
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Retrieving Resource Attributes

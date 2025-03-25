@@ -2,6 +2,7 @@
 title: Invoking a Device Properties Dialog Box
 description: Invoking a Device Properties Dialog Box
 ms.date: 09/10/2024
+ms.topic: concept-article
 ---
 
 # Invoking a Device Properties Dialog Box
