@@ -1,7 +1,8 @@
 ---
 title: WinUSB (Winusb.sys) Installation for Developers
 description: Install WinUSB (Winusb.sys) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.
-ms.date: 01/31/2025
+ms.date: 03/26/2025
+
 ---
 
 # WinUSB (Winusb.sys) installation for developers
@@ -9,7 +10,7 @@ ms.date: 01/31/2025
 For certain Universal Serial Bus (USB) devices, you can install [WinUSB](introduction-to-winusb-for-developers.md) (*Winusb.sys*) instead of implementing a driver.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer experiencing USB problems, see [Fix USB-C problems in Windows](https://support.microsoft.com/windows/fix-usb-c-problems-in-windows-f4e0e529-74f5-cdae-3194-43743f30eed2)
+> This article is for programmers. If you're a customer experiencing USB problems, see [Fix USB-C problems in Windows](https://support.microsoft.com/windows/fix-usb-c-problems-in-windows-f4e0e529-74f5-cdae-3194-43743f30eed2)
 
 ## Automatic installation of WinUSB without an INF file
 
@@ -42,28 +43,18 @@ The preceding procedure doesn't add a device interface GUID for an app (UWP app 
 
 1. Under the **Device Parameters** key, add a *String* registry entry named **DeviceInterfaceGUID** or a *Multi-String* entry named **DeviceInterfaceGUIDs**. Set the value to the GUID you generated in step 2.
 1. Disconnect the device from the system and reconnect it to the same physical port.
-    > [!NOTE]
-    > If you change the physical port, you must repeat steps 1 through 4.
+  > [!NOTE]
+  > If you change the physical port, you must repeat steps 1 through 4.
 
 ## Writing a custom INF for WinUSB installation
 
 As part of the driver package, you provide an .inf file that installs *Winusb.sys* as the function driver for the USB device.
 
-The following example .inf file shows WinUSB installation for most USB devices with some modifications, such as changing **USB_Install** section names to an appropriate *DDInstall* value. You should also change the version, manufacturer, and model sections as necessary. For example, provide an appropriate manufacture's name, the name of your signed catalog file, the correct device class, and the vendor identifier (VID), and product identifier (PID) for the device. For info on creating a catalog file, see [Creating a Catalog File for Test-Signing a Driver Package](../install/creating-a-catalog-file-for-test-signing-a-driver-package.md).
-
-Also notice that the setup class is set to *USBDevice*. Vendors can use the *USBDevice* setup class for devices that don't belong to another class and aren't USB host controllers or hubs.
-
-If you're installing WinUSB as the function driver for one of the functions in a USB composite device, you must provide the hardware ID that is associated with the function, in the INF. You can obtain the hardware ID for the function from the properties of the devnode in **Device Manager**. The hardware ID string format is: `USB\VID_vvvv&PID_pppp`.
-
-The following INF installs WinUSB as the OSR USB FX2 board's function driver on an x64-based system.
-
-> [!NOTE]
-> Starting in Windows 10, version 1709, the Windows Driver Kit provides [InfVerif.exe](../devtest/infverif.md) that you can use to test a driver INF file to make sure there are no syntax issues and the INF file is universal. We recommend that you provide a universal INF. For more information, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
+Here's an example of a universal INF file that is valid for both x64 and ARM64 platforms running Windows 10 or later. This example doesn't include coinstallers, making it eligible for signing by the [Hardware Developer Center Dashboard](https://partner.microsoft.com/dashboard/home) portal.
 
 ```inf
 ;
-;
-; Installs WinUsb
+; Universal INF file for WinUsb installation
 ;
 
 [Version]
@@ -75,24 +66,16 @@ CatalogFile = WinUSBInstallation.cat
 DriverVer   = 09/04/2012,13.54.20.543
 PnpLockdown = 1
 
-; ========== Manufacturer/Models sections ===========
+; ========== Manufacturer and Models sections ===========
 
 [Manufacturer]
-%ManufacturerName% = Standard,NTamd64
+%ManufacturerName% = Standard,NTamd64,NTarm64
 
 [Standard.NTamd64]
 %DeviceName% =USB_Install, USB\VID_0547&PID_1002
 
-; ========== Class definition (for Windows 8 and earlier versions)===========
-
-[ClassInstall32]
-AddReg = ClassInstall_AddReg
-
-[ClassInstall_AddReg]
-HKR,,,,%ClassName%
-HKR,,NoInstallClass,,1
-HKR,,IconPath,%REG_MULTI_SZ%,"%systemroot%\system32\setupapi.dll,-20"
-HKR,,LowerLogoVersion,,5.2
+[Standard.NTarm64]
+%DeviceName% =USB_Install, USB\VID_0547&PID_1002
 
 ; =================== Installation ===================
 
@@ -107,27 +90,19 @@ Needs   = WINUSB.NT.Services
 [USB_Install.HW]
 AddReg=Dev_AddReg
 
-[USB_Install.Wdf]
-KmdfService=WINUSB, WinUsb_Install
-
-[WinUsb_Install]
-KmdfLibraryVersion=1.11
-
 [Dev_AddReg]
 HKR,,DeviceInterfaceGUIDs,0x10000,"{9f543223-cede-4fa3-b376-a25ce9a30e74}"
-
-; [DestinationDirs]
-; If your INF needs to copy files, you must not use the DefaultDestDir directive here.
-; You must explicitly reference all file-list-section names in this section.
 
 ; =================== Strings ===================
 
 [Strings]
-ManufacturerName=""
+ManufacturerName="Contoso"
 ClassName="Universal Serial Bus devices"
 DeviceName="Fx2 Learning Kit Device"
 REG_MULTI_SZ = 0x00010000
 ```
+
+This universal INF file can be used across multiple Windows platforms (x64 and ARM64) and is eligible to be signed by the [Hardware Developer Center Dashboard](https://partner.microsoft.com/dashboard/home) portal.
 
 To install only a new custom device setup class, include a ClassInstall32 section in a device INF file. INF files for devices in an installed class, whether a system-supplied device setup class or a custom class, must not include a ClassInstall32 section.
 
@@ -137,145 +112,24 @@ Except for device-specific values and several issues that are noted in the follo
 - **USB_Install.Services**: The **Include** directive in the **USB_Install.Services** section includes the system-supplied .inf for WinUSB (*Winusb.inf*). Windows installs this .inf file if it isn't already on the target system. The **Needs** directive specifies the section within *Winusb.inf* that contains information required to install *Winusb.sys* as the device's function driver. You shouldn't modify these directives.
 - **USB_Install.HW**: This section is the key in the .inf file. It specifies the device interface globally unique identifier (GUID) for your device. The **AddReg** directive sets the specified interface GUID in a standard registry value. When *Winusb.sys* is loaded as the device's function driver, it reads the registry value DeviceInterfaceGUIDs key and uses the specified GUID to represent the device interface. You should replace the GUID in this example with one that you create specifically for your device. If the protocols for the device change, create a new device interface GUID.
 
-    > [!NOTE]
-    > User-mode software must call [**SetupDiGetClassDevs**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw) to enumerate the registered device interfaces that are associated with one of the device interface classes specified under the DeviceInterfaceGUIDs key. **SetupDiGetClassDevs** returns the device handle for the device that the user-mode software must then pass to the [**WinUsb_Initialize**](/windows/win32/api/winusb/nf-winusb-winusb_initialize) routine to obtain a WinUSB handle for the device interface. For more info about these routines, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
-
-The following INF installs WinUSB as the OSR USB FX2 board's function driver on an x64-based system. The example shows INF with WDF coinstallers.
-
-```inf
-;
-;
-; Installs WinUsb
-;
-
-[Version]
-Signature   = "$Windows NT$"
-Class       = USBDevice
-ClassGUID   = {88BAE032-5A81-49f0-BC3D-A4FF138216D6}
-Provider    = %ManufacturerName%
-CatalogFile = WinUSBInstallation.cat
-DriverVer   = 09/04/2012,13.54.20.543
-PnpLockdown = 1
-
-; ========== Manufacturer/Models sections ===========
-
-[Manufacturer]
-%ManufacturerName% = Standard,NTamd64
-
-[Standard.NTamd64]
-%DeviceName% =USB_Install, USB\VID_0547&PID_1002
-
-; ========== Class definition (for Windows 8 and earlier versions) ===========
-
-[ClassInstall32]
-AddReg = ClassInstall_AddReg
-
-[ClassInstall_AddReg]
-HKR,,,,%ClassName%
-HKR,,NoInstallClass,,1
-HKR,,IconPath,%REG_MULTI_SZ%,"%systemroot%\system32\setupapi.dll,-20"
-HKR,,LowerLogoVersion,,5.2
-
-; =================== Installation ===================
-
-[USB_Install]
-Include = winusb.inf
-Needs   = WINUSB.NT
-
-[USB_Install.Services]
-Include =winusb.inf
-Needs   = WINUSB.NT.Services
-
-[USB_Install.HW]
-AddReg=Dev_AddReg
-
-[Dev_AddReg]
-HKR,,DeviceInterfaceGUIDs,0x10000,"{9f543223-cede-4fa3-b376-a25ce9a30e74}"
-
-[USB_Install.CoInstallers]
-AddReg=CoInstallers_AddReg
-CopyFiles=CoInstallers_CopyFiles
-
-[CoInstallers_AddReg]
-HKR,,CoInstallers32,0x00010000,"WdfCoInstaller01011.dll,WdfCoInstaller","WinUsbCoInstaller2.dll"
-
-[CoInstallers_CopyFiles]
-WinUsbCoInstaller2.dll
-WdfCoInstaller01011.dll
-
-[DestinationDirs]
-; If your INF needs to copy files, you must not use the DefaultDestDir directive here.
-CoInstallers_CopyFiles=11
-; ================= Source Media Section =====================
-
-[SourceDisksNames]
-1 = %DiskName%
-
-[SourceDisksFiles]
-WinUsbCoInstaller2.dll=1
-WdfCoInstaller01011.dll=1
-
-
-; =================== Strings ===================
-
-[Strings]
-ManufacturerName=""
-ClassName="Universal Serial Bus devices"
-DeviceName="Fx2 Learning Kit Device"
-DiskName="MyDisk"
-REG_MULTI_SZ = 0x00010000
-```
-
-- **USB_Install.CoInstallers**: This section, which includes the referenced **AddReg** and **CopyFiles** sections, contains data and instructions to install the WinUSB and KMDF coinstallers and associate them with the device. Most USB devices can use these sections and directives without modification.
-- The x86-based and x64-based versions of Windows have separate coinstallers.
-
-    Each coinstaller has free and checked versions. Use the free version to install WinUSB on free builds of Windows, including all retail versions. To install WinUSB on checked builds of Windows, use the checked version (with the "_chk" suffix).
+  > [!NOTE]
+  > User-mode software must call **[SetupDiGetClassDevs](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw)** to enumerate the registered device interfaces that are associated with one of the device interface classes specified under the DeviceInterfaceGUIDs key. **SetupDiGetClassDevs** returns the device handle for the device that the user-mode software must then pass to the [**WinUsb_Initialize**](/windows/win32/api/winusb/nf-winusb-winusb_initialize) routine to obtain a WinUSB handle for the device interface. For more info about these routines, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
 Each time *Winusb.sys* loads, it registers a device interface that has the device interface classes that are specified in the registry under the **DeviceInterfaceGUIDs** key.
 
 `HKR,,DeviceInterfaceGUIDs, 0x10000,"{D696BFEB-1734-417d-8A04-86D01071C512}"`
 
-If you use the redistributable WinUSB package for Windows XP or Windows Server 2003, make sure that you don't uninstall WinUSB in your uninstall packages. Other USB devices might be using WinUSB, so its binaries must remain in the shared folder.
-
 ## How to create a driver package that installs Winusb.sys
 
-To use WinUSB as the device's function driver, you create a driver package. The driver package must contain these files:
+To use WinUSB as the device's function driver, you create a driver package. Here are the steps to create a driver package the installs *Winusb.sys*:
 
-- WinUSB coinstaller (Winusbcoinstaller.dll)
-- KMDF coinstaller (WdfcoinstallerXXX.dll)
-- An .inf file that installs *Winusb.sys* as the device's function driver. For more information, see [Writing a custom INF for WinUSB installation](#writing-a-custom-inf-for-winusb-installation).
-- A signed catalog file for the package. This file is required to install WinUSB on x64 versions of Windows starting with Vista.
-
-![WinUSB installation package.](images/winusb-package.jpg)
-
-Make sure that the driver package contents meet these requirements:
-
-- The KMDF and WinUSB coinstaller files must be obtained from the same version of the Windows Driver Kit (WDK).
-- The coinstaller files must be obtained from the latest version of the WDK, so that the driver supports all the latest Windows releases.
-- The contents of the driver package must be digitally signed with a Winqual release signature. For more info about how to create and test signed catalog files, see [Kernel-Mode Code Signing Walkthrough](/windows-hardware/test/hlk/) on the Windows Dev Center - Hardware site.
-
-1. [Download the Windows Driver Kit (WDK)](../download-the-wdk.md) and install it.
-1. Create a driver package folder on the machine that the USB device is connected to. For example, c:\\UsbDevice.
-1. Copy the WinUSB coinstaller (WinusbcoinstallerX.dll) from the **WinDDK\\\<*BuildNumber*\>\\redist\\winusb** folder to the driver package folder.
-
-   The WinUSB coinstaller (Winusbcoinstaller.dll) installs WinUSB on the target system, if necessary. The WDK includes three versions of the coinstaller depending on the system architecture: x86-based, x64-based, and Itanium-based systems. Each coinstaller is named WinusbcoinstallerX.dll and is located in the appropriate subdirectory in the **WinDDK\\\<*BuildNumber*\>\\redist\\winusb** folder.
-
-1. Copy the KMDF coinstaller (WdfcoinstallerXXX.dll) from the **WinDDK\\\<*BuildNumber*\>\\redist\\wdf** folder to the driver package folder.
-
-   The KMDF coinstaller (WdfcoinstallerXXX.dll) installs the correct version of KMDF on the target system, if necessary. The version of WinUSB coinstaller must match the KMDF coinstaller because KMDF-based client drivers, such as *Winusb.sys*, require the corresponding version of the KMDF framework to be installed properly on the system. For example, Winusbcoinstaller2.dll requires KMDF version 1.9, which Wdfcoinstaller01009.dll installs. The x86 and x64 versions of WdfcoinstallerXXX.dll are included with the WDK under the **WinDDK\\\<*BuildNumber*\>\\redist\\wdf** folder. The following table shows the WinUSB coinstaller and the associated KMDF coinstaller to use on the target system.
-
-   Use this table to determine the WinUSB coinstaller and the associated KMDF coinstaller.
-
-   | WinUSB coinstaller | KMDF library version | KMDF coinstaller |
-   |---|---|---|
-   | Winusbcoinstaller.dll | Requires KMDF version 1.5 or later | Wdfcoinstaller01005.dll<br/>Wdfcoinstaller01007.dll<br/>Wdfcoinstaller01009.dll |
-   | Winusbcoinstaller2.dll | Requires KMDF version 1.9 or later | Wdfcoinstaller01009.dll |
-   | Winusbcoinstaller2.dll | Requires KMDF version 1.11 or later | WdfCoInstaller01011.dll |
-
-1. Write an .inf file that installs *Winusb.sys* as the function driver for the USB device.
-1. Create a signed catalog file for the package. This file is required to install WinUSB on x64 versions of Windows.
-1. Attach the USB device to your computer.
-1. To install the driver, open **Device Manager**. Follow the instructions on the **Update Driver Software** wizard and choose manual installation. To complete the installation, provide the location of the driver package folder.
+1. [Download the Windows Driver Kit (WDK)](../download-the-wdk.md) and install it on your machine.
+1. Create a driver package folder on your system where the USB device is connected, C:\\UsbDevice, for example.
+1. Write an .inf file that installs *Winusb.sys* as the function driver for the USB device and save it in the driver package folder. An example of how to write this file can be found in the [Writing a custom INF for WinUSB installation](#writing-a-custom-inf-for-winusb-installation) section of this document.
+1. Create a signed catalog file for the package. This file is required to install WinUSB on Windows. You can find more info about how to create and test signed catalog files in [Kernel-Mode Code Signing Walkthrough](/windows-hardware/test/hlk/) on the Windows Dev Center - Hardware site.
+  :::image type="content" source="images/winusb-package.jpg" alt-text="Diagram showing the contents of a WinUSB driver installation package":::
+1. Connect the USB device to your computer.
+1. Open **Device Manager** on your computer. Follow the instructions on the **Update Driver Software** wizard and choose manual installation. When prompted, provide the location of the driver package folder to complete the installation.
 
 ## Related topics
 
