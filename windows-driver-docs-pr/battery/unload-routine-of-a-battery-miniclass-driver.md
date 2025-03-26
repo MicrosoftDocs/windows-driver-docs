@@ -7,6 +7,7 @@ keywords:
 - verifying device unloads
 - unloading devices
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Unload Routine of a Battery Miniclass Driver

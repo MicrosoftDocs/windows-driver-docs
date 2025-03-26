@@ -3,6 +3,7 @@ title: Debugger Engine API Overview
 description: Debugger Engine API Overview
 keywords: ["Debugger Engine API, overview"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugger Engine API Overview

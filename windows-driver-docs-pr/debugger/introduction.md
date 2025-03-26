@@ -2,6 +2,7 @@
 title: Debugger Engine Introduction
 description: Debugger Engine Introduction
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Debugger Engine Introduction

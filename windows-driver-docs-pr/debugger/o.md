@@ -2,6 +2,7 @@
 title: O (Windows Debugger Glossary)
 description: Glossary page - O
 ms.date: 11/28/2017
+ms.topic: glossary
 ---
 
 # O

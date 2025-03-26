@@ -3,6 +3,7 @@ title: "Time Travel Debugging - Troubleshooting"
 description: "This section describes how to troubleshoot time travel traces."
 keywords: ["Troubleshooting", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 11/15/2024
+ms.topic: troubleshooting-general
 ---
 
 # Time Travel Debugging - Troubleshooting

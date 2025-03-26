@@ -3,6 +3,7 @@ title: Use perfmon to determine whether a memory leak exists
 description: Use perfmon to determine whether a memory leak exists
 keywords: ["memory leak, detection"]
 ms.date: 08/26/2024
+ms.topic: how-to
 ---
 
 # Use perfmon to determine whether a memory leak exists

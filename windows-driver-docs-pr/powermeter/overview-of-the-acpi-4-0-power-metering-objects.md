@@ -5,6 +5,7 @@ keywords:
 - Power Metering and Budgeting WDK , ACPI 4.0 power metering objects
 - ACPI 4.0 Power Metering objects WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Overview of the ACPI 4.0 Power Metering Objects

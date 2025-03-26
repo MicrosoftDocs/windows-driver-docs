@@ -3,6 +3,7 @@ title: "Time Travel Debugging Extension !index Command"
 description: "The !index extension indexes time travel traces or displays index status information."
 keywords: ["!index Command", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 11/13/2024
+ms.topic: concept-article
 ---
 
 # !index

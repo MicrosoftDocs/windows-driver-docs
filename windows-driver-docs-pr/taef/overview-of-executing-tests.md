@@ -2,6 +2,7 @@
 title: Overview of Executing Tests
 description: Overview of Executing Tests
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Overview of Executing Tests

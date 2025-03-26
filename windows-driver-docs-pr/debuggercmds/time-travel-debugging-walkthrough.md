@@ -3,6 +3,7 @@ title: "Time Travel Debugging - Sample App Walkthrough"
 description: "This section contains a walk through of a small C++ app. "
 keywords: ["Sample App Walkthrough", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 11/18/2024
+ms.topic: concept-article
 ---
 
 # Time Travel Debugging - Sample App Walkthrough

@@ -3,6 +3,7 @@ title: Set Up KDNET Network Kernel Debugging Manually
 description: Learn how Debugging Tools for Windows supports kernel debugging over a network. This article describes how to set up network debugging manually.
 keywords: ["Network debugging", "Ethernet debugging", "Docking station", "Setting Up Kernel-Mode Debugging over a Network Cable Manually"]
 ms.date: 12/12/2024
+ms.topic: how-to
 ---
 
 # Set up KDNET network kernel debugging manually

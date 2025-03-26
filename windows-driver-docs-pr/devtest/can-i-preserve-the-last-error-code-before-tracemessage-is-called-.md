@@ -2,6 +2,7 @@
 title: Can I Preserve the Last-Error Code Before TraceMessage is Called
 description: Can I preserve the last-error code before TraceMessage is called
 ms.date: 04/20/2017
+ms.topic: troubleshooting-error-codes
 ---
 
 # Can I preserve the last-error code before TraceMessage is called?

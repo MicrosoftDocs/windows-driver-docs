@@ -3,6 +3,7 @@ title: "WinDbg Overview"
 description: "This section is an overview of WinDbg's major features."
 keywords: ["Overview of WinDbg's major features", "WinDbg", "Overview", "Windows Debugging"]
 ms.date: 08/26/2024
+ms.topic: concept-article
 ---
 
 # What is WinDbg?

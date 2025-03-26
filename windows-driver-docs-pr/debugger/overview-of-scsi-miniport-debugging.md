@@ -3,6 +3,7 @@ title: Overview of SCSI Miniport Debugging
 description: Overview of SCSI Miniport Debugging
 keywords: ["SCSI Miniport Debugging, overview"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Overview of SCSI Miniport Debugging

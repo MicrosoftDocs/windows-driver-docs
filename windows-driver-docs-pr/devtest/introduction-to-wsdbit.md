@@ -8,6 +8,7 @@ keywords:
 - WSDAPI WDK , about
 - interoperability testing WDK WSDBIT
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Introduction to WSDBIT

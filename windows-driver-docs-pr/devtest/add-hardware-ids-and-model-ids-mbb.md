@@ -4,6 +4,7 @@ description: Add Hardware IDs in the Mobile Broadband Metadata Authoring Wizard
 keywords:
 - Add Hardware IDs in the Mobile Broadband Metadata Authoring Wizard
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Add Hardware IDs in the Mobile Broadband Metadata Authoring Wizard

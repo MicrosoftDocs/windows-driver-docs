@@ -9,6 +9,7 @@ keywords:
 - sessions WDK software tracing
 - tracing WDK , FAQs
 ms.date: 04/20/2017
+ms.topic: faq
 ---
 
 # Software Tracing FAQ

@@ -6,6 +6,7 @@ keywords:
 - Minifilter verification WDK Driver Verifier
 - Filter Verifier WDK Driver Verifier
 ms.date: 03/17/2023
+ms.topic: concept-article
 ---
 
 # File System Filter Verification

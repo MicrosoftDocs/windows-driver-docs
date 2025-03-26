@@ -6,6 +6,7 @@ keywords:
 - data-driven tests
 - SDEL query
 ms.date: 11/20/2017
+ms.topic: how-to
 ---
 
 # Run the tests

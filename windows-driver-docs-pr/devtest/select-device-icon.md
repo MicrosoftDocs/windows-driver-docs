@@ -4,6 +4,7 @@ description: Select device icon in the Device Metadata Authoring Wizard
 keywords:
 - Select device icon in the Device Metadata Authoring Wizard
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Select device icon in the Device Metadata Authoring Wizard

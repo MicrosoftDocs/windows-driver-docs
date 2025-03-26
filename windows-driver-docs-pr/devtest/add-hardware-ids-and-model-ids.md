@@ -4,6 +4,7 @@ description: Add Hardware and Model IDs in the Device Metadata Authoring Wizard
 keywords:
 - Add Hardware and Model IDs in the Device Metadata Authoring Wizard
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Add Hardware and Model IDs in the Device Metadata Authoring Wizard

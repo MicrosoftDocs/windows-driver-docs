@@ -2,6 +2,7 @@
 title: Install a Battery Driver
 description: This guide shows you how to install a battery driver using an INF file, including the necessary sections and directives.
 ms.date: 08/26/2024
+ms.topic: install-set-up-deploy
 ---
 
 # Install a battery driver

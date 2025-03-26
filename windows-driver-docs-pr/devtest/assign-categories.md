@@ -4,6 +4,7 @@ description: Assign categories in the Device Metadata Authoring Wizard
 keywords:
 - Assign categories in the Device Metadata Authoring Wizard
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Assign categories in the Device Metadata Authoring Wizard

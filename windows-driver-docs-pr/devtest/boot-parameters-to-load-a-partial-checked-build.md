@@ -7,6 +7,7 @@ keywords:
 - boot entry parameters WDK
 - loading partial checked builds WDK boot options
 ms.date: 07/19/2024
+ms.topic: reference
 ---
 
 # Boot Parameters to Load a Partial Checked Build

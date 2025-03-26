@@ -2,6 +2,7 @@
 title: Code Analysis for Drivers Overview
 description: The Windows Driver Kit provides a driver-specific extension to the Code Analysis tool in Microsoft Visual Studio.
 ms.date: 07/02/2024
+ms.topic: concept-article
 ---
 
 # Code Analysis for drivers overview

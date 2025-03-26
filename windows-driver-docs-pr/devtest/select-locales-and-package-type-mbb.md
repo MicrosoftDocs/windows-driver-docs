@@ -4,6 +4,7 @@ description: Select locales and package type in the Mobile Broadband Metadata Au
 keywords:
 - Select locales and package type in the Mobile Broadband Metadata Authoring Wizard
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Select locales and package type in the Mobile Broadband Metadata Authoring Wizard

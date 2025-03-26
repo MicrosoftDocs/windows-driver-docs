@@ -4,6 +4,7 @@ description: Overview of the Power Metering and Budgeting Infrastructure
 keywords:
 - Power Metering and Budgeting WDK , overview
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Overview of the Power Metering and Budgeting Infrastructure

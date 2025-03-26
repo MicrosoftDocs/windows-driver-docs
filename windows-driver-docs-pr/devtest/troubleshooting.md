@@ -4,6 +4,7 @@ description: Troubleshooting the metadata authoring wizards
 keywords:
 - Troubleshooting the Metadata Authoring Wizard
 ms.date: 04/20/2017
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshooting the metadata authoring wizards

@@ -4,6 +4,7 @@ description: Specify applications in the Device Metadata Authoring Wizard
 keywords:
 - Specify applications in the Device Metadata Authoring Wizard
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Specify applications in the Device Metadata Authoring Wizard

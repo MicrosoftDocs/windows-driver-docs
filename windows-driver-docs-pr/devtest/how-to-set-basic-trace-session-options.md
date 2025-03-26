@@ -6,6 +6,7 @@ keywords:
 - tracing WDK , basic options
 - software tracing WDK , basic options
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How to Set Basic Trace Session Options

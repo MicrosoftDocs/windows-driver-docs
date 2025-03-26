@@ -2,6 +2,7 @@
 title: Best practices for constraining high privileged behavior in kernel mode drivers
 description: Follow these best practices to help ensure that your driver code is secure from abuse by bad actors.
 ms.date: 01/08/2024
+ms.topic: best-practice
 ---
 
 # Best practices for constraining high privileged behavior in kernel mode drivers

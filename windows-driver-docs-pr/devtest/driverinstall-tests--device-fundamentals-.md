@@ -2,6 +2,7 @@
 title: Driver Install Tests (Device Fundamentals)
 description: The Driver Install test category includes tests that uninstall and reinstall a driver several times to test install functionality.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Driver Install Tests (Device Fundamentals)

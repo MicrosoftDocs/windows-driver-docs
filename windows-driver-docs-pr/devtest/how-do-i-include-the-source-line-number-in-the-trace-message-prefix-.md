@@ -2,6 +2,7 @@
 title: How do I Include the Source Line Number in the Trace Message Prefix
 description: How do I include the source line number in the trace message prefix
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How to include the source line number in the trace message prefix

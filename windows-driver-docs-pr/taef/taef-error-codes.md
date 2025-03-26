@@ -2,6 +2,7 @@
 title: TAEF Error Codes
 description: TAEF Error Codes
 ms.date: 04/20/2017
+ms.topic: error-reference
 ---
 
 # TAEF Error Codes

@@ -2,6 +2,7 @@
 title: Duplicate Entry Points for a Function Role Type
 description: Duplicate Entry Points for a Function Role Type
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Duplicate Entry Points for a Function Role Type

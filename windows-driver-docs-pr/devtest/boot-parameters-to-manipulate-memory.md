@@ -10,6 +10,7 @@ keywords:
 - simulating low-memory environments WDK boot parameters
 - memory WDK boot parameters
 ms.date: 07/19/2024
+ms.topic: reference
 ---
 
 # Boot Parameters to Manipulate Memory

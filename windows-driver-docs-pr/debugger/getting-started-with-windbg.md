@@ -2,6 +2,7 @@
 title: Get Started with WinDbg (User Mode)
 description: Get started using WinDbg in Debugging Tools for Windows with hands-on, user-mode debugger exercises.
 ms.date: 12/06/2024
+ms.topic: get-started
 ---
 
 # Get started with WinDbg (user mode)

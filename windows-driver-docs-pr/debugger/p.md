@@ -2,6 +2,7 @@
 title: P (Windows Debugger Glossary)
 description: Glossary page - P
 ms.date: 11/28/2017
+ms.topic: glossary
 ---
 
 # P

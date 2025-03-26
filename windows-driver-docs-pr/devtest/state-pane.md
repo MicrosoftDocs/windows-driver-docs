@@ -7,6 +7,7 @@ keywords:
 - State pane WDK Static Driver Verifier
 - Boolean expressions WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # State Pane

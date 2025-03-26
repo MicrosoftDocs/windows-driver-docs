@@ -2,6 +2,7 @@
 title: Boot Parameters to Test Drivers for Multiple Processor Group Support
 description: Boot Parameters to Test Drivers for Multiple Processor Group Support
 ms.date: 05/08/2018
+ms.topic: reference
 ---
 
 # Boot Parameters to Test Drivers for Multiple Processor Group Support

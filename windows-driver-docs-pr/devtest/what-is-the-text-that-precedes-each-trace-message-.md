@@ -2,6 +2,7 @@
 title: What is the Text that Precedes Each Trace Message
 description: What is the text that precedes each trace message
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # What is the text that precedes each trace message?

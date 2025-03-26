@@ -3,6 +3,7 @@ title: Manifest File Format
 description: Manifest File Format
 keywords: ["LogViewer, manifest, file format"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Manifest File Format
