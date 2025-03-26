@@ -43,8 +43,9 @@ The preceding procedure doesn't add a device interface GUID for an app (UWP app 
 
 1. Under the **Device Parameters** key, add a *String* registry entry named **DeviceInterfaceGUID** or a *Multi-String* entry named **DeviceInterfaceGUIDs**. Set the value to the GUID you generated in step 2.
 1. Disconnect the device from the system and reconnect it to the same physical port.
-  > [!NOTE]
-  > If you change the physical port, you must repeat steps 1 through 4.
+
+      > [!NOTE]
+    > If you change the physical port, you must repeat steps 1 through 4.
 
 ## Writing a custom INF for WinUSB installation
 
@@ -127,7 +128,9 @@ To use WinUSB as the device's function driver, you create a driver package. Here
 1. Create a driver package folder on your system where the USB device is connected, C:\\UsbDevice, for example.
 1. Write an .inf file that installs *Winusb.sys* as the function driver for the USB device and save it in the driver package folder. An example of how to write this file can be found in the [Writing a custom INF for WinUSB installation](#writing-a-custom-inf-for-winusb-installation) section of this document.
 1. Create a signed catalog file for the package. This file is required to install WinUSB on Windows. You can find more info about how to create and test signed catalog files in [Kernel-Mode Code Signing Walkthrough](/windows-hardware/test/hlk/) on the Windows Dev Center - Hardware site.
-  :::image type="content" source="images/winusb-package.jpg" alt-text="Diagram showing the contents of a WinUSB driver installation package":::
+
+    :::image type="content" source="images/winusb-package.jpg" alt-text="Diagram showing the contents of a WinUSB driver installation package":::
+
 1. Connect the USB device to your computer.
 1. Open **Device Manager** on your computer. Follow the instructions on the **Update Driver Software** wizard and choose manual installation. When prompted, provide the location of the driver package folder to complete the installation.
 
