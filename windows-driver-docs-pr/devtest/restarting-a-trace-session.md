@@ -6,6 +6,7 @@ keywords:
 - restarting trace sessions
 - TraceView WDK , restarting trace
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Restarting a Trace Session

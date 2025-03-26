@@ -2,6 +2,7 @@
 title: Diagnosing Problems Running WDTF-based Tests
 description: To help you troubleshoot problems running WDTF-based test, you can use a debugger.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Diagnosing problems running WDTF-based tests

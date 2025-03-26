@@ -2,6 +2,7 @@
 title: Using BinPlace from the Command Line
 description: Using BinPlace from the Command Line
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using BinPlace from the Command Line

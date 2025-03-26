@@ -2,6 +2,7 @@
 title: Managing Trace Sessions
 description: Managing Trace Sessions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Managing Trace Sessions

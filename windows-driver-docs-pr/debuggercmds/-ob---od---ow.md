@@ -3,6 +3,7 @@ title: "!ob, !od, !ow"
 description: "!ob, !od, !ow extension commands are obsolete"
 keywords: ["ob extension (obsolete)", "od extension (obsolete)", "ow extension (obsolete)"]
 ms.date: 03/27/2024
+ms.topic: reference
 ---
 
 # !ob, !od, !ow

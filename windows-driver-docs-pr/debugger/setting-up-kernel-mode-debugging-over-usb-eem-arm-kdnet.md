@@ -2,6 +2,7 @@
 title: Setting Up USB KDNET EEM Kernel-Mode Debugging (KDNET-EEM-USB)
 description: Debugging Tools for Windows supports kernel debugging over a USB cable using EEM. This topic describes how to set up USB EEM on using the kdnet.exe utility. (KDNET-EEM-USB)
 ms.date: 10/09/2024
+ms.topic: how-to
 ---
 
 # Setting Up USB KDNET EEM Kernel-Mode Debugging (KDNET-EEM-USB)

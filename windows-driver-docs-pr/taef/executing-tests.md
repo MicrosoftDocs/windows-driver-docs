@@ -2,6 +2,7 @@
 title: Executing Tests
 description: Executing Tests
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Executing Tests

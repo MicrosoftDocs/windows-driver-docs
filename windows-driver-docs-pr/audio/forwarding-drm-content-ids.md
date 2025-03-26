@@ -13,6 +13,7 @@ keywords:
 - converting digital to analog
 - authenticating DRM content IDs WDK audio
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Forwarding DRM Content IDs

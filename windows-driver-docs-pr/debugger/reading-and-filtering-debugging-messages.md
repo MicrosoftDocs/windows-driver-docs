@@ -3,6 +3,7 @@ title: Reading and Filtering Debugging Messages
 description: Reading and Filtering Debugging Messages
 keywords: ["reading and filtering debugging messages", "debugging messages, reading and filtering"]
 ms.date: 07/20/2020
+ms.topic: how-to
 ---
 
 # Reading and Filtering Debugging Messages

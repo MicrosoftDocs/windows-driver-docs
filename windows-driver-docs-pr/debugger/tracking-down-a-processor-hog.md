@@ -3,6 +3,7 @@ title: Tracking Down a Processor Hog
 description: Tracking Down a Processor Hog
 keywords: ["processor hog", "hogging a processor", "starving applications"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Tracking Down a Processor Hog

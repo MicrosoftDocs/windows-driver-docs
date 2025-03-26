@@ -3,6 +3,7 @@ title: Reattaching to the Target Application
 description: Reattaching to the Target Application
 keywords: ["re-attaching to the target application", "process, re-attaching debugger to"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Reattaching to the Target Application

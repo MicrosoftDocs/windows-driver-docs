@@ -9,6 +9,7 @@ keywords:
 - trace sessions WDK , flags
 - trace sessions WDK , levels
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Selecting Flags and Levels

@@ -2,6 +2,7 @@
 title: Accessing a Device on a SerCx2-Managed Serial Port
 description: SerCx2 and a serial controller driver jointly manage a serial port to which a peripheral device is permanently connected.
 ms.date: 01/20/2023
+ms.topic: concept-article
 ---
 
 # Accessing a Device on a SerCx2-Managed Serial Port

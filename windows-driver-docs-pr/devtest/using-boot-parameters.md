@@ -12,6 +12,7 @@ keywords:
 - EFI NVRAM boot options WDK , boot parameters
 - Boot.ini files WDK , boot parameters
 ms.date: 07/19/2024
+ms.topic: concept-article
 ---
 
 # Using boot parameters

@@ -8,6 +8,7 @@ keywords:
 - log files WDK TraceView , group logs
 - log files WDK TraceView
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Saving a Group Log

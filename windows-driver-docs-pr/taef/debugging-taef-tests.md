@@ -2,6 +2,7 @@
 title: Debugging TAEF Tests
 description: Debugging TAEF Tests
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Debugging TAEF Tests

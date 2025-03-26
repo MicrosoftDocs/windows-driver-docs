@@ -2,6 +2,7 @@
 title: Using SDV and the Sample Drivers
 description: Using SDV and the Sample Drivers
 ms.date: 07/02/2024
+ms.topic: concept-article
 ---
 
 # Using SDV and the Sample Drivers

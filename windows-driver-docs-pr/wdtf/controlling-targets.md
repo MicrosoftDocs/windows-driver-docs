@@ -16,6 +16,7 @@ keywords:
 - asynchronous tests WDK WDTF
 - test scripts WDK WDTF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Controlling Targets

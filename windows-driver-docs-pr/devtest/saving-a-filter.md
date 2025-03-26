@@ -6,6 +6,7 @@ keywords:
 - trace message filters WDK , saving
 - saving trace filters
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Saving a Filter

@@ -5,6 +5,7 @@ keywords:
 - Driver Verifier WDK , volatile settings
 - volatile settings WDK Driver Verifier
 ms.date: 06/29/2021
+ms.topic: how-to
 ---
 
 # Using Volatile Settings

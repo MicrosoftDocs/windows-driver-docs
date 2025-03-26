@@ -2,6 +2,7 @@
 title: Using Static Driver Verifier
 description: Using Static Driver Verifier
 ms.date: 07/02/2024
+ms.topic: concept-article
 ---
 
 # Using Static Driver Verifier

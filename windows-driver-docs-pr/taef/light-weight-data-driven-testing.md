@@ -2,6 +2,7 @@
 title: Light-weight Data-driven Testing
 description: Light-weight Data-driven Testing
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # <span id="taef.light-weight_data-driven_testing"></span>Light-weight Data-driven Testing

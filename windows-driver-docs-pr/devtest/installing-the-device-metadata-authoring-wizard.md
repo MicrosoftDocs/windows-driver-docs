@@ -2,6 +2,7 @@
 title: Installing the Device Metadata Authoring Wizard
 description: Installing the Device Metadata Authoring Wizard
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Installing the Device Metadata Authoring Wizard

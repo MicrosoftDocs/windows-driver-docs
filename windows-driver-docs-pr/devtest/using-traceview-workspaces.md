@@ -8,6 +8,7 @@ keywords:
 - trace sessions WDK , workspaces
 - trace logs WDK TraceView , workspaces
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using TraceView Workspaces

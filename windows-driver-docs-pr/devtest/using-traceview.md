@@ -2,6 +2,7 @@
 title: Using TraceView
 description: Using TraceView
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using TraceView

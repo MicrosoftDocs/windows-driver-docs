@@ -2,6 +2,7 @@
 title: Setting up KDNET USB kernel-mode debugging (KDNET-USB)
 description: Learn how to use kdnet.exe to set up KDNET-USB kernel-mode debugging over a USB 3.0 cable.
 ms.date: 10/09/2024
+ms.topic: how-to
 ---
 
 # Setting up KDNET USB kernel-mode debugging (KDNET-USB)

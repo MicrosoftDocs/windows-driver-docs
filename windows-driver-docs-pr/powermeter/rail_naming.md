@@ -6,6 +6,7 @@ keywords:
 - Energy Meter Interface WDK
 - PMI WDK Energy Meter
 ms.date: 10/14/2021
+ms.topic: concept-article
 ---
 
 # Integrating EMI data into E3

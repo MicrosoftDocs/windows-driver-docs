@@ -21,6 +21,7 @@ keywords:
 - StaticDV WDK , Static Driver Verifier Report
 - SDV WDK , Static Driver Verifier Report
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using the Static Driver Verifier Report

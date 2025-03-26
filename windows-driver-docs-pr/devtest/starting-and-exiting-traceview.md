@@ -6,6 +6,7 @@ keywords:
 - TraceView WDK , exiting
 - TraceView WDK , command-line interface
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Starting and Exiting TraceView

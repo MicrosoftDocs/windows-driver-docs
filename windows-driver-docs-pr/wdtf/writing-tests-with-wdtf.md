@@ -2,6 +2,7 @@
 title: Writing Tests with WDTF
 description: Write tests using templates provided in the Windows Driver Kit (WDK) to create and extend device-centric, scenario-based automated tests
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing tests with WDTF

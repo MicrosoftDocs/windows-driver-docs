@@ -2,6 +2,7 @@
 title: Reading Data from a SerCx2-Managed Serial Port
 description: A serial controller (or UART) typically includes a receive FIFO.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Reading Data from a SerCx2-Managed Serial Port

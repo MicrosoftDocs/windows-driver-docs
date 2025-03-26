@@ -9,6 +9,7 @@ keywords:
 - displaying trace flags
 - displaying trace levels
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using the Tracing Flags and Level Selection dialog box

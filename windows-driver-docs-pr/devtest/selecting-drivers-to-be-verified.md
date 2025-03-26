@@ -4,6 +4,7 @@ description: Selecting Drivers to be Verified
 keywords:
 - Driver Verifier WDK , driver selections
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Selecting Drivers to be Verified

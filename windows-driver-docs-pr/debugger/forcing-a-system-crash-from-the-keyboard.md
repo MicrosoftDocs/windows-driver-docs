@@ -4,6 +4,7 @@ description: Learn how to configure your settings to force a system crash from t
 keywords: ["boot process, causing system crash from keyboard", "CTRL+SCROLL LOCK", "system crash, causing from keyboard", "bug check, causing from keyboard", "keyboard-caused system crash", "USB keyboard and system crash", "PS/2 keyboard and system crash", "forcing system crash from keyboard"]
 ms.date: 09/23/2024
 ai-usage: ai-assisted
+ms.topic: how-to
 ---
 
 # Forcing a system crash from the keyboard

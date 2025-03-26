@@ -10,6 +10,7 @@ keywords:
 - removed devices WDK WDTF
 - hot-swapped devices WDK WDTF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating WDTF Scenarios

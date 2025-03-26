@@ -2,6 +2,7 @@
 title: Implementing Audio Processing Objects
 description: This topic describes how to implement an audio processing object (APO). For general information about APOs, see Audio Processing Object Architecture.
 ms.date: 05/05/2023
+ms.topic: how-to
 ---
 
 # Implementing Audio Processing Objects
