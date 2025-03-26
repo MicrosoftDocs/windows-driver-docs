@@ -25,7 +25,6 @@ To get a new code signing certificate:
 
     - [Certum EV code signing certificate](https://shop.certum.eu/data-safety/code-signing-certificates/certum-ev-code-sigining.html)
     - [DigiCert EV code signing certificate](https://www.digicert.com/signing/code-signing-certificates)
-    - [Entrust EV code signing certificate](https://www.entrust.com/products/digital-signing/code-signing-certificates)
     - [GlobalSign EV code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
     - [IdenTrust EV code signing certificate](https://www.identrust.com/digital-certificates/trustid-ev-code-signing)
     - [Sectigo (formerly Comodo) EV code signing certificate](https://www.sectigo.com/ssl-certificates-tls/code-signing)
