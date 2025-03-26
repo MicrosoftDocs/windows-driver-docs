@@ -8,7 +8,7 @@ keywords:
 - platform-specific hardware error driver (PSHED) WDK WHEA , predictive failure analysis
 - PSHED plug-in WDK WHEA
 - PSHED plug-in WDK WHEA , predictive failure analysis
-ms.date: 03/03/2023
+ms.date: 03/26/2025
 ---
 
 # PFA Performed by a PSHED Plug-In

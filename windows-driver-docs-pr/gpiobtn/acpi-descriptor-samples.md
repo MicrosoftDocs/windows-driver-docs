@@ -1,7 +1,7 @@
 ---
 title: ACPI Descriptor Samples
 description: This topic contains ACPI descriptor samples.
-ms.date: 10/17/2018
+ms.date: 03/26/2025
 ---
 
 # ACPI descriptor samples

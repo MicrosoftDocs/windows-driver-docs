@@ -6,7 +6,7 @@ keywords:
 - WHEA WDK , terminology
 - hardware errors WDK WHEA , terminology
 - errors WDK WHEA , terminology
-ms.date: 03/03/2023
+ms.date: 03/26/2025
 ---
 
 # Windows Hardware Error Architecture Definitions

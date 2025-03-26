@@ -1,7 +1,7 @@
 ---
 title: Button Behavior
 description: This topic describes the expected behavior of hardware buttons.
-ms.date: 10/17/2018
+ms.date: 03/26/2025
 ---
 
 # Button behavior
