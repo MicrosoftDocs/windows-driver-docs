@@ -3,6 +3,7 @@ title: Using the Debugger Engine API
 description: Using the Debugger Engine API
 keywords: ["Debugger Engine, API", "Debugger Engine API"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using the Debugger Engine API

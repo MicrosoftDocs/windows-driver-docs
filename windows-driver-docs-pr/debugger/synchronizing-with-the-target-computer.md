@@ -3,6 +3,7 @@ title: Synchronizing with the Target Computer
 description: Synchronizing with the Target Computer
 keywords: ["synchronizing with the target computer", "synchronizing with the target computer, overview"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Synchronizing with the Target Computer

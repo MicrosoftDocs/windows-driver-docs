@@ -3,6 +3,7 @@ title: Using the Watch Window - WinDbg (Classic)
 description: Using the Watch Window - WinDbg (Classic)
 keywords: ["debugging information windows, Watch window", "Watch window", "memory, Watch window"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Using the Watch Window - WinDbg (Classic)

@@ -2,6 +2,7 @@
 title: Debugging Support for Software Tracing
 description: Debugging Support for Software Tracing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Debugging Support for Software Tracing

@@ -3,6 +3,7 @@ title: Executing Until a Specified State is Reached
 description: Executing Until a Specified State is Reached
 keywords: ["executing until a specified state is reached", "breakpoints, used to control execution", "breakpoints, and pseudo-registers", "script file, used to control execution"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Executing Until a Specified State is Reached

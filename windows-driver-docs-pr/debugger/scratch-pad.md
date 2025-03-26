@@ -3,6 +3,7 @@ title: Using the Scratch Pad - WinDbg (Classic) - WinDbg (Classic)
 description: Using the Scratch Pad - WinDbg (Classic) - WinDbg (Classic)
 keywords: ["debugging information windows, Scratch Pad", "Scratch Pad"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using the Scratch Pad - WinDbg (Classic) - WinDbg (Classic)

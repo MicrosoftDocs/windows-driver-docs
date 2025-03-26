@@ -3,6 +3,7 @@ title: Configuring the EXDI Debugger Transport
 description: Debugging Tools for Windows supports debugging using EXDI. This topic describes how to configure the EXDI transport.
 ms.date: 10/30/2024
 ms.localizationpriority: medium
+ms.topic: how-to
 ---
 
 # Configuring the EXDI Debugger Transport

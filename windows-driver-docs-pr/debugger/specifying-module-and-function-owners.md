@@ -3,6 +3,7 @@ title: Specifying Module and Function Owners
 description: Specifying Module and Function Owners
 keywords: ["executable files and paths, specifying module owner", "function owners", "owners of modules and functions", "triage.ini file", "triage.ini file, syntax", "analyze extension, triage.ini file"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Specifying Module and Function Owners

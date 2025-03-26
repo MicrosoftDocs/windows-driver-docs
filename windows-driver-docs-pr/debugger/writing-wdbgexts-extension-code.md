@@ -3,6 +3,7 @@ title: Writing WdbgExts Extension Code
 description: Writing WdbgExts Extension Code
 keywords: ["WdbgExts extensions", "extensions, WdbgExts"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Writing WdbgExts Extension Code

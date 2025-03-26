@@ -3,6 +3,7 @@ title: Viewing and Editing Registers in WinDbg (Classic)
 description: In WinDbg, you can view and edit registers by entering commands, by using the Registers window, or by using the Watch Window.
 keywords: ["debugging information windows, Registers window", "Registers window", "registers, Registers window"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Viewing and Editing Registers in WinDbg (Classic)

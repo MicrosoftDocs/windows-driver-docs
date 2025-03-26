@@ -3,6 +3,7 @@ title: Tracking Contention in the Server Process
 description: Tracking Contention in the Server Process
 keywords: ["RPC debugging, tracking contention"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Tracking Contention in the Server Process

@@ -2,6 +2,7 @@
 title: Switching Modes
 description: Switching Modes
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Switching Modes

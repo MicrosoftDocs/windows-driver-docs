@@ -3,6 +3,7 @@ title: Using DBH
 description: Using DBH
 keywords: ["DBH, using"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using DBH

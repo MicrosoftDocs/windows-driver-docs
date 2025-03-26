@@ -2,6 +2,7 @@
 title: Keeping a Log File in WinDbg
 description: Keeping a Log File in WinDbg
 ms.date: 11/28/2017
+ms.topic: how-to
 ---
 
 # Keeping a Log File in WinDbg

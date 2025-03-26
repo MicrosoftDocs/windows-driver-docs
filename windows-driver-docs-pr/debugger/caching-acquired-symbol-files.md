@@ -3,6 +3,7 @@ title: Caching Acquired Symbol Files
 description: Caching Acquired Symbol Files
 keywords: ["SymProxy, caching"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Caching Acquired Symbol Files

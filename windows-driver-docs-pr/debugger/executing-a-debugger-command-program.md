@@ -3,6 +3,7 @@ title: Executing a Debugger Command Program
 description: Executing a Debugger Command Program
 keywords: ["debugger command program, execution"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Executing a Debugger Command Program

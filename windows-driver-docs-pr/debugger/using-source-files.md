@@ -3,6 +3,7 @@ title: Using Source Files
 description: Using Source Files
 keywords: ["Debugger Engine API, source"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using Source Files

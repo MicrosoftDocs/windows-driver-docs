@@ -3,6 +3,7 @@ title: "Using Debugger Commands"
 description: "This section describes using Debugger Commands. You enter commands at the prompt at the bottom of the window."
 keywords: commands, debugger commands, meta-commands
 ms.date: 10/17/2023
+ms.topic: how-to
 ---
 
 # Using Debugger Commands

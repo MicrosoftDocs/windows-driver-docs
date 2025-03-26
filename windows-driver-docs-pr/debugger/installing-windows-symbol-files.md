@@ -3,6 +3,7 @@ title: Installing Windows Symbol Files
 description: Installing Windows Symbol Files
 keywords: ["symbols, Windows", "symbols, user-mode"]
 ms.date: 09/29/2021
+ms.topic: concept-article
 ---
 
 # Installing Windows Symbol Files in Older Versions of Windows

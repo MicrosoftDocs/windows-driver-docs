@@ -3,6 +3,7 @@ title: Writing DbgEng Extension Code
 description: This section describes writing DbgEng extension code
 keywords: ["DbgEng Extensions, writing"]
 ms.date: 10/24/2019
+ms.topic: concept-article
 ---
 
 # Writing DbgEng Extension Code

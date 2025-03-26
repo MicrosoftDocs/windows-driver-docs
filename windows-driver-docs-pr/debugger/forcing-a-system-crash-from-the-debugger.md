@@ -3,6 +3,7 @@ title: Forcing a System Crash from the Debugger
 description: Forcing a System Crash from the Debugger
 keywords: ["system crash, causing from debugger", "bug check, causing from debugger", "forcing system crash from debugger"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Forcing a System Crash from the Debugger

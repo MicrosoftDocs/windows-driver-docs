@@ -2,6 +2,7 @@
 title: Canceling Requests for Special Pool
 description: Canceling Requests for Special Pool
 ms.date: 11/28/2017
+ms.topic: how-to
 ---
 
 # Canceling Requests for Special Pool

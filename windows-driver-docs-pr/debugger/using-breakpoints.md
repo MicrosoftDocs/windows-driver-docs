@@ -3,6 +3,7 @@ title: Using Breakpoints - Debugging Techniques
 description: Overview of Using Breakpoints with the Windows Debugger (Debugging Techniques)
 keywords: ["breakpoints", "breakpoints, overview"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using Breakpoints - Debugging Techniques

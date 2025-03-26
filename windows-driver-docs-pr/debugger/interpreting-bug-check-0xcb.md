@@ -3,6 +3,7 @@ title: Interpreting Bug Check 0xCB
 description: Interpreting Bug Check 0xCB
 keywords: ["kernel streaming debugging, video stream stall, bug check 0xcb"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Interpreting Bug Check 0xCB

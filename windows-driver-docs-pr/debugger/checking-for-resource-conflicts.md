@@ -3,6 +3,7 @@ title: Checking for Resource Conflicts
 description: Checking for Resource Conflicts
 keywords: ["Plug and Play (PnP), resource conflicts", "resource conflicts"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Checking for Resource Conflicts

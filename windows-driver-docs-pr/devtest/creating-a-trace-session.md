@@ -11,6 +11,7 @@ keywords:
 - tracing WDK , session creation
 - trace logs WDK TraceView , sessions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating a Trace Session

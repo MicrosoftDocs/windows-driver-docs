@@ -3,6 +3,7 @@ title: Finding the Process ID
 description: Finding the Process ID
 keywords: ["process, process ID (PID)", "PID (process ID)", "TList, related techniques", "Task Manager"]
 ms.date: 12/06/2024
+ms.topic: concept-article
 ---
 
 # Finding the process ID

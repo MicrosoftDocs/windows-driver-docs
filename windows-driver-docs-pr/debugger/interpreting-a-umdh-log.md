@@ -3,6 +3,7 @@ title: Interpreting a UMDH Log
 description: Interpreting a UMDH Log
 keywords: ["UMDH, interpreting a UMDH log"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Interpreting a UMDH Log

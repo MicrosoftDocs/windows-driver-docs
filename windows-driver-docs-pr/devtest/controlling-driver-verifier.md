@@ -6,6 +6,7 @@ keywords:
 - Driver Verifier Manager
 - Verifier utility
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Controlling Driver Verifier

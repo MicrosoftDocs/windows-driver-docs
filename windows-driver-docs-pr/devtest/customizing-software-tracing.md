@@ -2,6 +2,7 @@
 title: Customizing Software Tracing
 description: Customizing Software Tracing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Customizing Software Tracing

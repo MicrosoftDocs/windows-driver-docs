@@ -3,6 +3,7 @@ title: Using the WinDbg Graphical Interface (Classic)
 description: This section covers using the WinDbg Graphical Interface (Classic)
 keywords: WinDbg, graphical interface, GUI, graphical interface
 ms.date: 12/12/2022
+ms.topic: concept-article
 ---
 
 # Using the WinDbg Graphical Interface (Classic)

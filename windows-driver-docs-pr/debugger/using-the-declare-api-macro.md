@@ -3,6 +3,7 @@ title: Using the DECLARE_API Macro
 description: Using the DECLARE_API Macro
 keywords: ["WdbgExts extensions, DECLARE_API macro", "DECLARE_API macro (WdbgExts)"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using the DECLARE\_API Macro

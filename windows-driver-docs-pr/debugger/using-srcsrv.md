@@ -3,6 +3,7 @@ title: Using SrcSrv
 description: Using SrcSrv
 keywords: ["source servers, SrcSrv (srcsrv.dll)", "SrcSrv, overview"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using SrcSrv

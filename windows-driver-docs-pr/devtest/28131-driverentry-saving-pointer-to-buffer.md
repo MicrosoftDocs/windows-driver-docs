@@ -6,6 +6,7 @@ keywords:
 - errors listed WDK PREfast for Drivers
 ms.date: 09/27/2022
 f1_keywords: ["C28131", "NOT_COPYING_NAME", "__WARNING_NOT_COPYING_NAME"]
+ms.topic: reference
 ---
 # Warning C28131
 

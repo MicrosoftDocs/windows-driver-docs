@@ -2,6 +2,7 @@
 title: Mapping Symbols When the PEB is Paged Out
 description: Mapping Symbols When the PEB is Paged Out
 ms.date: 11/28/2017
+ms.topic: how-to
 ---
 
 # Mapping Symbols When the PEB is Paged Out

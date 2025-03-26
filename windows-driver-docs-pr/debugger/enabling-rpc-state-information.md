@@ -3,6 +3,7 @@ title: Enabling RPC State Information
 description: Enabling RPC State Information
 keywords: ["RPC debugging, enabling RPC state information"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Enabling RPC State Information

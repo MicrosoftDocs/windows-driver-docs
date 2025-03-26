@@ -2,6 +2,7 @@
 title: Configuring Silent Process Exit Monitoring
 description: Beginning in Windows 7, you can use the Silent Process Exit tab to enable and configure monitoring of silent exit for a process.
 ms.date: 11/28/2017
+ms.topic: how-to
 ---
 
 # Configuring Silent Process Exit Monitoring

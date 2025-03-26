@@ -3,6 +3,7 @@ title: Using Logger.exe
 description: Using Logger.exe
 keywords: ["Logger, logger.exe", "logger.exe", "Logger, stand-alone"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using Logger.exe

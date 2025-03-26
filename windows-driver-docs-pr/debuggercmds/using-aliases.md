@@ -3,6 +3,7 @@ title: "Using Aliases"
 description: "Using Aliases"
 keywords: ["Using Aliases", "WinDbg", "Windows Debugging"]
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Using Aliases

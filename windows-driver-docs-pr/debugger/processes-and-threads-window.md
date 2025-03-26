@@ -3,6 +3,7 @@ title: Controlling Processes and Threads in WinDbg (Classic)
 description: Controlling Processes and Threads in WinDbg (Classic)
 keywords: ["debugging information windows, Processes and Threads window", "Processes and Threads window", "process, Processes and Threads window", "thread, Processes and Threads window"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Controlling Processes and Threads in WinDbg (Classic)

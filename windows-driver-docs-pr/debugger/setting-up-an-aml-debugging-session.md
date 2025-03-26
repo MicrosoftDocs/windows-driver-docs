@@ -3,6 +3,7 @@ title: Setting Up an AML Debugging Session
 description: Setting Up an AML Debugging Session
 keywords: ["AMLI Debugger, setup", "debug build, of acpi.sys", "acpi.sys"]
 ms.date: 11/07/2018
+ms.topic: concept-article
 ---
 
 # Setting Up an AML Debugging Session

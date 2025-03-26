@@ -2,6 +2,7 @@
 title: Live Kernel-Mode Debugging Using KD
 description: Live Kernel-Mode Debugging Using KD
 ms.date: 12/22/2021
+ms.topic: reference
 ---
 
 # <span id="debugger.performing_kernel-mode_debugging_using_kd"></span>Live Kernel-Mode Debugging Using KD

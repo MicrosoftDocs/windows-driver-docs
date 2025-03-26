@@ -2,6 +2,7 @@
 title: Debugging the Service Application Automatically
 description: Debugging the Service Application Automatically
 ms.date: 11/28/2017
+ms.topic: how-to
 ---
 
 # Debugging the Service Application Automatically

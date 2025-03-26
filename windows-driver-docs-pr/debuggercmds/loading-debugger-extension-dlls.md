@@ -3,6 +3,7 @@ title: "Loading Debugger Extension DLLs"
 description: "Loading Debugger Extension DLLs"
 keywords: ["extension commands ( commands), loading", "loading extension commands", "nt4fre directory", "nt4chk directory", "w2kfre directory", "w2kchk directory", "winxp directory", "winext directory"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Loading Debugger Extension DLLs

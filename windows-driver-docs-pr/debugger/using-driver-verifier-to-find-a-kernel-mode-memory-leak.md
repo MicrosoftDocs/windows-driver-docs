@@ -2,6 +2,7 @@
 title: Using Driver Verifier to Find a Kernel-Mode Memory Leak
 description: Using Driver Verifier to Find a Kernel-Mode Memory Leak
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Using Driver Verifier to Find a Kernel-Mode Memory Leak

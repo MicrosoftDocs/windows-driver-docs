@@ -3,6 +3,7 @@ title: Forcing a System Crash
 description: Forcing a System Crash
 keywords: ["system crash, overview"]
 ms.date: 06/08/2020
+ms.topic: concept-article
 ---
 
 # Forcing a System Crash

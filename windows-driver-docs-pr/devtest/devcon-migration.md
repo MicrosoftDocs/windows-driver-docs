@@ -9,6 +9,7 @@ keywords:
 - Device Console WDK , commands
 - commands WDK DevCon
 ms.date: 06/19/2023
+ms.topic: concept-article
 ---
 
 # Replacing Device Console (DevCon.exe)

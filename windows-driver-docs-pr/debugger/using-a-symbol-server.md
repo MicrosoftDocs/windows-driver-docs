@@ -2,6 +2,7 @@
 title: Using a Symbol Server
 description: Using a Symbol Server
 ms.date: 09/28/2021
+ms.topic: how-to
 ---
 
 # Using a Symbol Server

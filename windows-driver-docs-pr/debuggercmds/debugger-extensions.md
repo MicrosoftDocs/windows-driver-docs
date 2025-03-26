@@ -3,6 +3,7 @@ title: "Using Debugger Extensions"
 description: "This topic describes using debugger extensions"
 keywords: extension commands, debugger extensions
 ms.date: 10/13/2023
+ms.topic: concept-article
 ---
 
 # Using Debugger Extensions

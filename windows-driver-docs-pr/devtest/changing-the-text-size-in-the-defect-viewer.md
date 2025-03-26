@@ -6,6 +6,7 @@ keywords:
 - Defect Viewer WDK Static Driver Verifier
 - text size WDK Defect Viewer
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Changing the Text Size in the Defect Viewer

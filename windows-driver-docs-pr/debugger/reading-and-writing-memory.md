@@ -3,6 +3,7 @@ title: Reading and Writing Memory
 description: Reading and Writing Memory
 keywords: ["memory", "memory, reading", "memory, writing", "reading memory", "writing memory"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Reading and Writing Memory

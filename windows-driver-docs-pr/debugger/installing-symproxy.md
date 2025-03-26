@@ -3,6 +3,7 @@ title: Installing SymProxy
 description: Installing SymProxy
 keywords: ["SymProxy, installation"]
 ms.date: 03/12/2019
+ms.topic: concept-article
 ---
 
 # Installing SymProxy
