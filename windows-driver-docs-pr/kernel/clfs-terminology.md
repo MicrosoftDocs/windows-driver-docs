@@ -63,9 +63,9 @@ The LSN of the oldest record in a log for which archiving has not taken place. N
 
 <a href="" id="kernel-clfs-term-active-portion-of-a-stream"></a>**active portion of a stream**  
 The portion of a stream that is currently in use by its clients. The active portion begins with the record pointed to by the base LSN or the archive tail, whichever is smaller. The active portion ends with the record pointed to by the last LSN.
-
  
-
+**authentication codes**  
+Hash-bashed hash authentication codes (HMAC) that are used to ensure CLFS is the author and writer of CLFS files.
  
 
 
