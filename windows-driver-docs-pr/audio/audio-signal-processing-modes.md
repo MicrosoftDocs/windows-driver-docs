@@ -104,7 +104,7 @@ OEMs define what effects will be used for each mode. Windows defines a list of s
 
 For information on how to associate APOs with modes, see [Implementing Audio Processing Objects](implementing-audio-processing-objects.md).
 
-It is possible for applications to ask what effects would be applied to a specific stream for either RAW or non-RAW processing. Applications can also ask to be notified when the effects or raw processing state change. The application may use this information to determine if a specific streaming effect like AEC is available, or if only RAW mode is in use. If only RAW mode is available, the application can determine how much audio processing of its own to add.
+It is possible for applications to ask what effects would be applied to a specific stream for either RAW or non-RAW processing. Applications can also ask to be notified when the effects or raw processing state change. The application may use this information to determine if a specific streaming effect like "acoustic echo cancelation" is available, or if no effects are in use. If no effects are in use, the application can determine how much audio processing of its own to add.
 
 If System.Devices.AudioDevice.RawProcessingSupported is true, applications also have the option to set a "use RAW" flag on certain streams. If System.Devices.AudioDevice.RawProcessingSupported is false, applications cannot set the "use RAW" flag.
 
