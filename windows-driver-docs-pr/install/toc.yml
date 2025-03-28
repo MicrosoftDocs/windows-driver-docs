@@ -50,6 +50,8 @@
       href: driver-packages.md
     - name: Components of a Driver Package
       href: components-of-a-driver-package.md
+    - name: Driver Package Container Metadata
+      href: driver-package-container-metadata.md
     - name: Sample Device Installation Files
       href: sample-device-installation-files.md
   - name: INF Files
@@ -456,8 +458,6 @@
       items:
       - name: Container ID
         href: container-ids.md
-      - name: Driver Package Container Metadata
-        href: driver-package-container-metadata.md
       - name: Overview of Container IDs
         href: overview-of-container-ids.md
       - name: How Container IDs are Generated

@@ -6,83 +6,61 @@ ms.date: 03/21/2025
 
 # Driver Package Container Metadata
 
-Driver package container metadata provides OEMs and IHVs with a [driver package](driver-packages.md)-based solution to customize and enhance user-facing information about their physical device. For example, it can enhance information about a [device container](container-ids.md). The physical device can be a peripheral connected to the computer, or the computer itself. The following list shows the type of information that driver package container metadata can supply:
+Driver package container metadata provides OEMs and IHVs with a [driver package](driver-packages.md)-based solution to customize and enhance user-facing information about their physical device as represented by a [device container](container-ids.md). The physical device can be a peripheral connected to the computer, or the computer itself. The following list shows the type of information that driver package container metadata can supply:
 
 - The name of the OEM/IHV.
 - The model name of the device container.
 - One or more functional categories that the device container supports.
-- A photo-realistic icon that represents the device container in the "Devices and Printers" user interface.
+- A photo-realistic icon that represents the device container.
 
-Without container metadata, the operating system generates the information in the previous list by looking at all device nodes (devnodes) that belong to the device container, then running heuristics based on the information of the devnodes. This process might not satisfy the needs of OEMs or IHVs for how their physical device is displayed. Using container metadata can fulfill this gap.
+Without container metadata, the operating system generates the information in the previous list by looking at all [device nodes](../gettingstarted/device-nodes-and-device-stacks.md) (devnodes) that belong to the device container, then running heuristics based on the information of the devnodes. This process might not satisfy the needs of OEMs or IHVs for how their physical device is displayed. Using container metadata can fulfill this gap.
 
-<!-- TODO: use KB article -->
-Driver package container metadata is supported starting in Windows 11 24H2 KB5052093 (OS Build 26100.3323) and will be available for Windows Server 2025 6D.
+Driver package container metadata is supported starting in Windows 11 24H2 KB5052093 (OS Build 26100.3323).
 
 ## Using Base INF or Extension INF
 
 The [INF AddProperty directive](inf-addproperty-directive.md) within the driver package [INF file](overview-of-inf-files.md) specifies the driver package container metadata. Our recommendations for which INF file to use for container metadata are:
 
-1. If OEMs/IHVs already have a driver package with the base INF for their physical device, update the base INF to include the container metadata.
-1. If OEMs/IHVs don't have a driver package with the base INF for their physical device, creating a driver package with extension INF is recommended. Compared to a base INF, extension INF is the lighter weight way of including the container metadata.
+1. If OEMs/IHVs already have a driver package that is the base INF for a devnode that is part of the device container, update the base INF to include the container metadata.
+1. If OEMs/IHVs don't have a driver package that is the base INF for a devnode that is part of the device container, creating a driver package with extension INF is recommended. Compared to a base INF, an extension INF is the lighter weight way of including the container metadata.
 
 For more information about base INF and extension INF, see [Using an Extension INF File](using-an-extension-inf-file.md).
 
 ## Device Container Targeting
 
-Driver packages are targeted on individual devnodes using device-specific information. This information includes [hardware ID](hardware-ids.md) and [compatible IDs](compatible-ids.md). To supply container metadata to the correct device container, the driver package must target one of the devnodes that belong to the device container. There are several ways to view all devnodes that belong to a device container:
+Driver packages are targeted on individual devnodes using device-specific information. This information includes [hardware IDs](hardware-ids.md) and [compatible IDs](compatible-ids.md). To supply container metadata to the correct device container, the driver package must target one of the devnodes that belong to the device container. There are several ways to view all devnodes that belong to a device container:
 
-<!-- TODO: screenshots? -->
 1. [PnPUtil /enum-containers](..\devtest\pnputil-command-syntax.md#enum-containers) (Command available starting in Windows 11, version 23H2)
-1. Device Manager: View Devices by Container
-1. Devices and Printers: View Properties on Container
+1. Device Manager: View -> Devices by container
 
-For computer container, it's represented by a special devnode called **OEM computer device**, which needs to be used for driver package targeting for container metadata. **OEM computer device** is available starting in Windows 11, version 23H2.
-
-<!-- TODO: review by HDC -->
-> [!NOTE]
-> Hardware Dev Center only allows extension INF for OEM computer device. During submission, it is important to specify the inbox Microsoft driver for the device in the **Business Justification** box of the shipping label page: "ExtendsInboxDriver=compdev.inf"
-
-A **OEM computer device** can be identified by device description and hardware IDs such as in the following example:
-
-<!-- TODO: use a generic example -->
-```console
-Friendly name: HP HP Z2 Tower G9 Workstation Desktop PC
-Device description: Computer Device
-Inf name: compdev.inf
-Hardware IDs:
-    COMPUTER\{EBDF9B14-C5E0-45AA-BBA2-70B26A8B9F9E}
-    COMPUTER\{741CDDBA-3921-46B9-AC29-4ED1757033B8}
-    COMPUTER\{9ADBBBB5-22FA-4C1F-8802-908CF2303526}
-    COMPUTER\{1CBF7A7C-DEB8-4073-AAF4-7094EEDE2F3A}
-```
-
-<!-- TODO: remove before check-in since the logic is internal only for now -->
-## Device Ranking for Resolving Conflicts
-
-**[Not ready for publish since the logic is internal only for now]**
-
-Ideally, only one devnode within a device container is configured with a driver package with container metadata. However, it's possible that several devnodes within the device container are all configured with driver packages that provide a full set or subset of container metadata. So device ranking is needed to resolve the conflicts to ensure consistent and optimal display information of the device container. The following list shows the categories of devnodes with container metadata:
-
-1. **Full-Property Devnode**: highest ranked devnode with a full set of container metadata.
-1. **Identity-Property Devnode**: highest ranked devnode with at least ContainerManufacturer and ContainerModelName but not a full set of container metadata.
-1. **Class-Property Devnode**: highest ranked devnode with at least ContainerCategories and ContainerIcon but not a full set of container metadata.
-1. **Discrete-Property Devnode**: highest ranked devnode with other combinations of container metadata.
-
-The rankings of devnodes for each container metadata are as follows:
-
-| Rank | ContainerModelName | ContainerManufacturer | ContainerCategories | ContainerIcon |
-|--|--|--|--|--|
-| 1 | Full-Property Devnode | Full-Property Devnode | Full-Property Devnode | Full-Property Devnode |
-| 2 | Identity-Property Devnode | Identity-Property Devnode | Class-Property Devnode | Class-Property Devnode |
-| 3 | Class-Property Devnode | Class-Property Devnode | Identity-Property Devnode | Identity-Property Devnode |
-| 4 | Discrete-Property Devnode | Discrete-Property Devnode | Discrete-Property Devnode | Discrete-Property Devnode |
+To supply container metadata for the computer container, you must target an extension INF at a special devnode called the **OEM computer device**. The **OEM computer device** is available starting in Windows 11, version 23H2.
 
 > [!NOTE]
-> For ContainerCategories, the value is an aggregation of property values from all devnodes according to the rankings listed in the table. For other container metadata, values are sourced from a single devnode.
+> Hardware Dev Center only allows extension INFs for the OEM computer device. During submission, it is important to specify the inbox Windows driver for the device in the **Business Justification** box of the shipping label page: `ExtendsInboxDriver=compdev.inf`
+
+A **OEM computer device** can be identified by device class and hardware IDs such as in the following example:
+
+1. Enumerate all devnodes belonging to the Computer class:
+
+    ```console
+    PnPUtil /enum-devices /class Computer /deviceids
+    ```
+2. The OEM computer device appears as follows:
+    ```console
+    Instance ID: SWD\COMPUTER\...
+    Status: Started
+    Driver Name: compdev.inf
+    Hardware IDs:
+        COMPUTER\{EBDF9B14-C5E0-45AA-BBA2-70B26A8B9F9E}
+        COMPUTER\{741CDDBA-3921-46B9-AC29-4ED1757033B8}
+        COMPUTER\{9ADBBBB5-22FA-4C1F-8802-908CF2303526}
+        COMPUTER\{1CBF7A7C-DEB8-4073-AAF4-7094EEDE2F3A}
+        ...
+    ```
 
 ## Examples
 
-The following example shows how container metadata is supplied to the computer container by targeting to the OEM computer device:
+The following example shows how container metadata is supplied to the computer container by targeting the OEM computer device on specific model systems:
 
 ```inf
 [Standard.NTamd64]
@@ -113,12 +91,12 @@ Manufacturer = "Custom Manufacturer"
 
 ; zh-cn
 [Strings.0804]
-Device.ExtensionDesc = "Custom Computer Metadata Extension"
+Device.ExtensionDesc = "自定义电脑元数据拓展"
 ModelName = "自定义电脑型号"
 Manufacturer = "自定义制造商"
 ```
 
-The following example shows how container metadata is supplied to a multi-function printer, along with Print Support App association:
+The following example shows how container metadata, including a [Print Support App association](../devapps/print-support-app-association.md) is supplied for a container that represents a multi-function printer:
 
 ```inf
 [Standard.NTamd64]
