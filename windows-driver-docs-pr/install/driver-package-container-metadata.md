@@ -42,7 +42,7 @@ A **OEM computer device** can be identified by device class and hardware IDs suc
     ```console
     PnPUtil /enum-devices /class Computer /deviceids
     ```
-2. The OEM computer device appears as follows:
+1. The OEM computer device appears as follows:
     ```console
     Instance ID: SWD\COMPUTER\...
     Status: Started
