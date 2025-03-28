@@ -35,9 +35,6 @@ Driver packages are targeted on individual devnodes using device-specific inform
 
 To supply container metadata for the computer container, you must target an extension INF at a special devnode called the **OEM computer device**. The **OEM computer device** is available starting in Windows 11, version 23H2.
 
-> [!NOTE]
-> Hardware Dev Center only allows extension INFs for the OEM computer device. During submission, it is important to specify the inbox Windows driver for the device in the **Business Justification** box of the shipping label page: `ExtendsInboxDriver=compdev.inf`
-
 A **OEM computer device** can be identified by device class and hardware IDs such as in the following example:
 
 1. Enumerate all devnodes belonging to the Computer class:
@@ -57,6 +54,8 @@ A **OEM computer device** can be identified by device class and hardware IDs suc
         COMPUTER\{1CBF7A7C-DEB8-4073-AAF4-7094EEDE2F3A}
         ...
     ```
+
+Windows Hardware Dev Center only allows extension INFs for the **OEM computer device**. During submission, it is important to specify the inbox Windows driver for the device in the **Business Justification** box of the shipping label page: `ExtendsInboxDriver=compdev.inf`. For more information about submitting and publishing extension INFs, see [Working with extension INF files in the Partner Center](../dashboard/submit-dashboard-extension-inf-files.md) and [Extension INF targeting rules](../dashboard/extension-inf-targeting-rules.md).
 
 ## Examples
 
