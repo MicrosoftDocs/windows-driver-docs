@@ -22365,6 +22365,11 @@
       "source_path":  "windows-driver-docs-pr/serports/serial-port-console-redirection-table.md",
       "redirect_URL":  "/windows-hardware/drivers/bringup/serial-port-console-redirection-table",
       "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/3dprint/3d-printing-partners.md",
+      "redirect_URL":  "/windows-hardware/drivers/3dprint",
+      "redirect_document_id":  false
     }
   ]
 }
