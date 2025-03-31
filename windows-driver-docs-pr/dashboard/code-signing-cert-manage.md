@@ -1,7 +1,7 @@
 ---
 title: Manage Code Signing Certificates
 description: This article describes how to get, add, and update code signing certificates to the hardware dashboard.
-ms.date: 11/26/2024
+ms.date: 03/31/2025
 ms.topic: how-to
 ---
 
@@ -21,7 +21,7 @@ To get a new code signing certificate:
 
 1. Determine which certificate you need. To help you choose a certificate, see [Driver signing requirements](code-signing-reqs.md).
 1. If you're reusing a certificate, move on to step 5.
-1. If your organization doesn't have a certificate, you need to [purchase an EV certificate](code-signing-reqs.md#ev-certificate-signed-drivers) from a trusted vendor.
+1. If your organization doesn't have a certificate, you need to [purchase an EV certificate from a trusted vendor](code-signing-reqs.md#where-to-get-ev-code-signing-certificates).
 1. Once the certificate authority verifies your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
 1. Go to [Partner Center](https://partner.microsoft.com/dashboard) and sign in using administrator credentials.
 1. Select the gear icon in the upper right, then select **Account Settings**, then **Manage Certificates** on the left side of the screen.
