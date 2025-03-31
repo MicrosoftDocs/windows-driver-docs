@@ -1,7 +1,7 @@
 ---
 title: Driver code signing requirements
 description: Driver code signing requirements
-ms.date: 07/15/2024
+ms.date: 03/31/2025
 ---
 
 # Driver code signing requirements
