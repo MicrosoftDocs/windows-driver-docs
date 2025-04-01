@@ -149,7 +149,7 @@ public sealed class PrintSupportWorkflowBackgroundTask : IBackgroundTask
         PrintWorkflowPrinterJob printerJob, PrintWorkflowConfiguration workflowConfig )
     {
         var errorToastXml = new XmlDocument();
-        // Generate Toast Xml based on error information from Exception and PrintWorkflowPrinterJob.
+        // Generate Toast XML based on error information from Exception and PrintWorkflowPrinterJob.
         return errorToastXml;
     }
 }
