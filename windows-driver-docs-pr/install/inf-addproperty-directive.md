@@ -141,12 +141,12 @@ The value that the add operation uses to modify a property value, depending on t
 
 For device container properties listed in *property-name*, the value can be a %strkey% token, allowing for locale-specific strings. The following table describes what values can be specified for those properties. For more information about locale-specific strings, see [INF Strings Section](inf-strings-section.md).
 
-| Property Name         | Value                                                                                                     | Localizable via [Strings.LanguageID] sections for %strkey% token    |
+| Property Name         | Value                                                                                                     | Localizable via [Strings.LanguageID] sections for %strkey% token |
 |-----------------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| ContainerModelName    | A string or %strkey% token                                                                                | Yes for optional locale-specific values            |
-| ContainerManufacturer | A string or %strkey% token                                                                                | Yes for optional locale-specific values            |
-| ContainerCategories   | A list of strings, delimited by comma, from [**DeviceCategory**](/previous-versions/windows/hardware/metadata/ff541101(v=vs.85))  | No                         |
-| ContainerIcon         | A string or %strkey% token that represents the path to icon file that is included with the driver package | Yes for optional locale-specific values            |
+| ContainerModelName    | A string or %strkey% token                                                                                | Yes |
+| ContainerManufacturer | A string or %strkey% token                                                                                | Yes |
+| ContainerCategories   | A list of strings, delimited by comma, from [**DeviceCategory**](/previous-versions/windows/hardware/metadata/ff541101(v=vs.85))  | No |
+| ContainerIcon         | A string or %strkey% token that represents the path to icon file that is included with the driver package | Yes |
 
 ## Remarks
 

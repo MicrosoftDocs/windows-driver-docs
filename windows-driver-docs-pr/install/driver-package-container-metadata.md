@@ -6,14 +6,14 @@ ms.date: 03/21/2025
 
 # Driver Package Container Metadata
 
-Driver package container metadata provides OEMs and IHVs with a [driver package](driver-packages.md)-based solution to customize and enhance user-facing information about their physical device as represented by a [device container](container-ids.md). The physical device can be a peripheral connected to the computer, or the computer itself. The following list shows the type of information that driver package container metadata can supply:
+Driver package container metadata provides OEMs and IHVs with a [driver package](driver-packages.md)-based solution to customize and enhance user-facing information about their physical device as represented by a [device container](container-ids.md). The physical device can be a peripheral connected to the computer or the computer itself. The following list shows the type of information that driver package container metadata can supply:
 
 - The name of the OEM/IHV.
 - The model name of the device container.
 - One or more functional categories that the device container supports.
 - A photo-realistic icon that represents the device container.
 
-Without container metadata, the operating system generates the information in the previous list by looking at all [device nodes](../gettingstarted/device-nodes-and-device-stacks.md) (devnodes) that belong to the device container, then running heuristics based on the information of the devnodes. This process might not satisfy the needs of OEMs or IHVs for how their physical device is displayed. Using container metadata can fulfill this gap.
+Without container metadata, the operating system generates the information in the previous list by looking at all [device nodes](../gettingstarted/device-nodes-and-device-stacks.md) (devnodes) that belong to the device container, then running heuristics based on the information of the devnodes. This process may not result in the values desired by the OEMs or IHVs for the display of their physical devices. Container metadata can be used by the OEMs or IHVs to directly control these values.
 
 Driver package container metadata is supported starting in Windows 11 24H2 KB5052093 (OS Build 26100.3323).
 
@@ -22,15 +22,15 @@ Driver package container metadata is supported starting in Windows 11 24H2 KB505
 The [INF AddProperty directive](inf-addproperty-directive.md) within the driver package [INF file](overview-of-inf-files.md) specifies the driver package container metadata. Our recommendations for which INF file to use for container metadata are:
 
 1. If OEMs/IHVs already have a driver package that is the base INF for a devnode that is part of the device container, update the base INF to include the container metadata.
-1. If OEMs/IHVs don't have a driver package that is the base INF for a devnode that is part of the device container, creating a driver package with extension INF is recommended. Compared to a base INF, an extension INF is the lighter weight way of including the container metadata.
+1. If OEMs/IHVs don't have a driver package that is the base INF for a devnode that is part of the device container, creating an extension INF driver package is recommended. Compared to a base INF, an extension INF is the lighter weight way of including the container metadata.
 
-For more information about base INF and extension INF, see [Using an Extension INF File](using-an-extension-inf-file.md).
+For more information about base INFs and extension INFs, see [Using an Extension INF File](using-an-extension-inf-file.md).
 
 ## Device Container Targeting
 
 Driver packages are targeted on individual devnodes using device-specific information. This information includes [hardware IDs](hardware-ids.md) and [compatible IDs](compatible-ids.md). To supply container metadata to the correct device container, the driver package must target one of the devnodes that belong to the device container. There are several ways to view all devnodes that belong to a device container:
 
-1. [PnPUtil /enum-containers](..\devtest\pnputil-command-syntax.md#enum-containers) (Command available starting in Windows 11, version 23H2)
+1. [PnPUtil /enum-containers /devices](..\devtest\pnputil-command-syntax.md#enum-containers) (Command available starting in Windows 11, version 23H2)
 1. Device Manager: View -> Devices by container
 
 To supply container metadata for the computer container, you must target an extension INF at a special devnode called the **OEM computer device**. The **OEM computer device** is available starting in Windows 11, version 23H2.
@@ -48,14 +48,14 @@ A **OEM computer device** can be identified by device class and hardware IDs suc
     Status: Started
     Driver Name: compdev.inf
     Hardware IDs:
-        COMPUTER\{EBDF9B14-C5E0-45AA-BBA2-70B26A8B9F9E}
-        COMPUTER\{741CDDBA-3921-46B9-AC29-4ED1757033B8}
-        COMPUTER\{9ADBBBB5-22FA-4C1F-8802-908CF2303526}
-        COMPUTER\{1CBF7A7C-DEB8-4073-AAF4-7094EEDE2F3A}
+        COMPUTER\{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}
+        COMPUTER\{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}
+        COMPUTER\{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}
+        COMPUTER\{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}
         ...
     ```
 
-Windows Hardware Dev Center only allows extension INFs for the **OEM computer device**. During submission, it is important to specify the inbox Windows driver for the device in the **Business Justification** box of the shipping label page: `ExtendsInboxDriver=compdev.inf`. For more information about submitting and publishing extension INFs, see [Working with extension INF files in the Partner Center](../dashboard/submit-dashboard-extension-inf-files.md) and [Extension INF targeting rules](../dashboard/extension-inf-targeting-rules.md).
+Windows Hardware Dev Center only allows extension INFs to match on IDs belonging to the **OEM computer device**. During submission, it is important to specify the inbox Windows driver for the device in the **Business Justification** box of the shipping label page: `ExtendsInboxDriver=compdev.inf`. For more information about submitting and publishing extension INFs, see [Working with extension INF files in the Partner Center](../dashboard/submit-dashboard-extension-inf-files.md) and [Extension INF targeting rules](../dashboard/extension-inf-targeting-rules.md).
 
 ## Examples
 
