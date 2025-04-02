@@ -1268,7 +1268,7 @@
       href: multiplexed-clfs-logs.md
     - name: "CLFS Support for Archiving"
       href: clfs-support-for-archiving.md
-    - name: "CLFS Logfile Authentication"
+    - name: "CLFS logfile authentication"
       href: clfs-authentication.md
   - name: "Kernel Transaction Manager"
     items:
