@@ -13,7 +13,7 @@ The following figure illustrates a container.
 
 ![diagram illustrating containers, blocks, and records.](images/clfscontainers.gif)
 
-The preceding figure illustrates a container that holds three log I/O blocks. The first log I/O block contains three records, the second contains five records, and the third contains two records. As the figure suggests, the beginning of each log I/O block is always aligned with the beginning of a sector on the stable storage medium. Note that log I/O blocks on stable storage vary in size.
+The preceding figure illustrates a container that holds three log I/O blocks. The first log I/O block contains three records, the second contains five records, and the third contains two records. As the figure suggests, the beginning of each log I/O block is always aligned with the beginning of a sector on the stable storage medium. Log I/O blocks on stable storage vary in size.
 
 CLFS uses a set of three numbers to locate a record in a log.
 
@@ -33,13 +33,13 @@ Suppose a log has three containers, and a single client is writing CLFS records 
 
 1. The client sets the log base (by calling [**ClfsAdvanceLogBase**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsadvancelogbase) or [**ClfsWriteRestartArea**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfswriterestartarea).) to one of the records in container 2. By doing that, the client is saying that it no longer needs the records in container 1.
 
-1. The client writes another record to the log and gets back the LSN of the newly written record. The logical container identifier in that LSN is 4. When records are flushed to stable storage, records that the client sees in logical container 4 will go to physical container 1.
+1. The client writes another record to the log and gets back the LSN of the newly written record. The logical container identifier in that LSN is 4. When records are flushed to stable storage, records that the client sees in logical container 4, go to physical container 1.
 
 The following figure illustrates the scenario; it shows how the client sequence of logical containers is mapped to physical containers on stable storage.
 
 ![diagram illustrating logical and physical containers.](images/clfslogicalcontainers.gif)
 
-The logical container identifier, block offset, and record sequence number are stored in an LSN in such a way that the LSNs for a particular stream always form a strictly increasing sequence. That is, the LSN (with logical container identifier) of a log record written to a stream is always greater than the LSNs of the log records previously written to that same stream. LSNs, then, serve a dual purpose: (1) they give the clients of a stream an ordered sequence of record identifiers, and (2) they provide CLFS with the location of records on stable storage.
+The logical container identifier, block offset, and record sequence number are stored in an LSN so that the LSNs for a particular stream always form a strictly increasing sequence. The LSN (with logical container identifier) of a log record written to a stream is always greater than the LSNs of the log records previously written to that same stream. LSNs serve a dual purpose: (1) they give the clients of a stream an ordered sequence of record identifiers, and (2) they provide CLFS with the location of records on stable storage.
 
 Given the LSN of a record, you can extract the logical container identifier, the block offset, and the record sequence number by calling the following functions.
 
@@ -51,8 +51,8 @@ Given the LSN of a record, you can extract the logical container identifier, the
 
 The logical container identifier is a 32-bit number, so there are 2^32 possible logical container identifiers, and they are in the range 0x0 through 0xFFFFFFFF. A stream can have at most 2^32 logical containers.
 
-The block offset is stored in 23 bits of the LSN, but **ClfsLsnBlockOffset** returns a 32-bit number that is aligned with the sector size of the stable storage medium. The block offset is always a multiple of 512. Also, the block offset is aligned with the sector size of the stable storage medium. For example, if the sector size is 1024 bytes, the block offset will be a multiple of 1024.
+The block offset is stored in 23 bits of the LSN, but **ClfsLsnBlockOffset** returns a 32-bit number that is aligned with the sector size of the stable storage medium. The block offset is always a multiple of 512. Also, the block offset is aligned with the sector size of the stable storage medium. For example, if the sector size is 1,024 bytes, the block offset is a multiple of 1024.
 
 The record sequence number is a 9-bit number, so there are 2^9 (512) possible record sequence numbers, and they are in the range 0x0 through 0x1FF. A log I/O block can have at most 512 records.
 
- When [**CLFS File Authentication**](/windows-hardware/drivers/kernel/clfs-authentication) is enabled, CLFS will create transaction files with the extension ".cnpf" alongside the BLF and container files. If a logfile is not cleanly closed, the transaction file will hold data needed for CLFS to recover the logfile.
+ When [**CLFS File Authentication**](/windows-hardware/drivers/kernel/clfs-authentication) is enabled, CLFS creates transaction files with the extension .cnpf alongside the Base Log File (BLF) and container files. If a logfile isn't cleanly closed, the transaction file holds data needed for CLFS to recover the logfile.

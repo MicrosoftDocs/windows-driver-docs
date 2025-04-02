@@ -8,11 +8,11 @@ ms.topic: concept-article
 
 # Introduction to the Common Log File System
 
-The Common Log File System (CLFS) is a general-purpose logging service that can be used by software [*clients*](clfs-terminology.md) running in user-mode or kernel-mode. This documentation discusses the CLFS interface for kernel-mode clients. For information about the user-mode interface, see Common Log File System in the Microsoft Windows SDK.
+The Common Log File System (CLFS) is a general-purpose logging service used by software [*clients*](clfs-terminology.md) running in user-mode or kernel-mode. This documentation discusses the CLFS interface for kernel-mode clients. For information about the user-mode interface, see Common Log File System in the Microsoft Windows SDK.
 
-CLFS encapsulates all the functionality of the Algorithm for Recovery and Isolation Exploiting Semantics (ARIES). However, the CLFS device driver interface (DDI) is not limited to supporting ARIES; it is well suited to a variety of logging scenarios.
+CLFS encapsulates all the functionality of the Algorithm for Recovery and Isolation Exploiting Semantics (ARIES). However, the CLFS device driver interface (DDI) isn't limited to supporting ARIES; it's well suited to various logging scenarios.
 
-The primary job of any high-performance transactional log is to allow log clients to accurately repeat history. CLFS does this by marshalling client log records into memory buffers, forcing them to stable storage, and reading records back on request. It is important to note that after a record makes it to stable storage and the storage media is intact, CLFS will be able to read the record across system failures.
+The primary job of any high-performance transactional log is to allow log clients to accurately repeat history. CLFS does this by marshalling client log records into memory buffers, forcing them to stable storage, and reading records back on request. It's important to note that after a record makes it to stable storage and the storage media is intact, CLFS will be able to read the record across system failures.
 
 CLFS supports dedicated logs and multiplexed logs. A dedicated log has a single [*stream*](clfs-terminology.md) of log records that is used by all of the log's clients. A multiplexed log (also called a common log) has several streams. Each stream has its own clients and its own memory buffers for marshalling log records, but the records from all those buffers are multiplexed into a single queue and flushed to a single log on stable storage. Multiplexing allows the I/O operations of several streams to be consolidated.
 
@@ -20,7 +20,7 @@ When a client writes a record to a stream, it gets back a log sequence number (L
 
 CLFS provides several services in addition to marshalling, flushing, and retrieving log records. The following list describes some of those additional services.
 
-- Space for a set of related log records can be reserved ahead of time. This means that a client can proceed with a transaction knowing that CLFS will be able to append to the log all of the records that describe the transaction.
+- Space for a set of related log records can be reserved ahead of time. A client can proceed with a transaction knowing that CLFS is able to append to the log all of the records that describe the transaction.
 
 - CLFS maintains a header for each log record. Clients can set certain fields in the header to create chains of linked records that you can later traverse in reverse order.
 
@@ -30,7 +30,7 @@ CLFS provides several services in addition to marshalling, flushing, and retriev
 
 - For each stream, CLFS maintains a base LSN and a last LSN that a client can use to delineate the active portion of the stream.
 
-- For dedicated logs, CLFS maintains (at the client's request) an archive tail that the client can use to keep track of the portion of the log that has been archived.
+- For dedicated logs, CLFS maintains (at the client's request) an archive tail that the client can use to keep track of the portion of the log that is archived.
 
 Certain features of CLFS (for example, the previous LSN and undo-next LSN fields of a record header) can be best understood by studying ARIES. For more information about ARIES, see the following papers.
 
