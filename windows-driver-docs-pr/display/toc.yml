@@ -85,7 +85,7 @@
       - name: MCDM architecture
         href: mcdm-architecture.md
       - name: MCDM KM driver implementation guidelines
-        href: mcdm-implementation-guidelines.
+        href: mcdm-implementation-guidelines.md
   - name: WDDM 2.5 features
     items:
     - name: D3D12 render passes
