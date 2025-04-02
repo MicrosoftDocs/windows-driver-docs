@@ -85,7 +85,11 @@
       - name: MCDM architecture
         href: mcdm-architecture.md
       - name: MCDM KM driver implementation guidelines
-        href: mcdm-implementation-guidelines.md
+        href: mcdm-implementation-guidelines.
+  - name: WDDM 2.5 features
+    items:
+    - name: D3D12 render passes
+      href: d3d12-render-passes.md
   - name: WDDM 2.4 features
     items:
     - name: GPU paravirtualization
