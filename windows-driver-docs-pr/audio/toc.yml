@@ -256,8 +256,6 @@
     items:
     - name: Supporting Non-PCM Wave Formats
       href: supporting-non-pcm-wave-formats.md
-    - name: Background of Non-PCM Support
-      href: background-of-non-pcm-support.md
     - name: Requirements for a Non-PCM Pin Factory
       href: requirements-for-a-non-pcm-pin-factory.md
     - name: Subformat GUIDs for Compressed Audio Formats
@@ -268,8 +266,6 @@
       href: ks-topology-considerations.md
     - name: Specifics for waveOut Clients
       href: specifics-for-waveout-clients.md
-    - name: Specifics for DirectSound Clients
-      href: specifics-for-directsound-clients.md
     - name: S/PDIF Pass-Through Transmission of Non-PCM Streams
       href: s-pdif-pass-through-transmission-of-non-pcm-streams.md
     - name: Specifying AC-3 Data Ranges
@@ -751,8 +747,6 @@
       items:
       - name: Kernel Mode Hardware Acceleration DDI
         href: kernel-mode-hardware-acceleration-ddi.md
-      - name: DirectMusic WDM Kernel Streaming Background
-        href: directmusic-wdm-kernel-streaming-background.md
       - name: Synthesizer Miniport Driver Overview
         href: synthesizer-miniport-driver-overview.md
       - name: DirectMusic Miniport Driver Interface

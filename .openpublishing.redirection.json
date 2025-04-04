@@ -22370,6 +22370,21 @@
       "source_path":  "windows-driver-docs-pr/3dprint/3d-printing-partners.md",
       "redirect_URL":  "/windows-hardware/drivers/3dprint",
       "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/audio/background-of-non-pcm-support.md",
+      "redirect_URL":  "/previous-versions/windows/drivers/audio/background-of-non-pcm-support",
+      "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/audio/directmusic-wdm-kernel-streaming-background.md",
+      "redirect_URL":  "/previous-versions/windows/drivers/audio/directmusic-wdm-kernel-streaming-background",
+      "redirect_document_id":  false
+    },
+    {
+      "source_path":  "windows-driver-docs-pr/audio/specifics-for-directsound-clients.md",
+      "redirect_URL":  "/previous-versions/windows/drivers/audio/specifics-for-directsound-clients",
+      "redirect_document_id":  false
     }
   ]
 }

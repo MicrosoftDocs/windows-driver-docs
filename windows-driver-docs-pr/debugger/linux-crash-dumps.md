@@ -2,7 +2,7 @@
 title: Linux crash dumps
 description: Linux crash dumps
 keywords: ["remote debugging, linux, process"]
-ms.date: 11/08/2024
+ms.date: 04/04/2025
 ---
 
 # Linux crash dumps
@@ -632,7 +632,7 @@ These commands can be used only on kernel core dump (KDUMP) files.
 
 `!cppex` - Displays information about the current in-flight (uncaught and "just" caught) C++ exceptions for the current thread, using libstdc++'s internal structures and DWARF symbols.
 
-`!cppfilt [-n] <mangled name>`  -  Demangles a C++ mangled name as if it were run through the c++filt tool. For more information about  C==filtr tool, see [c++filt(1) — Linux manual page](https://www.man7.org/linux/man-pages/man1/c++filt.1.html).
+`!cppfilt [-n] <mangled name>`  -  Demangles a C++ mangled name as if it were run through the c++filt tool. For more information about  C==filtr tool, see [c++filt(1) — Linux manual page](https://www.man7.org/linux/man-pages/index.html).
 
 `!rustdemangle <mangled name>` - Demangles a Rust mangled name. For more information about rust symbol name mangling, see [Rust Symbol Mangling - RFC 2603](https://rust-lang.github.io/rfcs/2603-rust-symbol-name-mangling-v0.html).  
 
