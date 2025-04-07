@@ -72,3 +72,11 @@ The [fsutil clfs authenticate](/windows-server/administration/windows-commands/f
 1. If a logfile isn't opened during the mitigation adoption period, or is missing authentication codes for any reason, this command can be used to add authentication codes to the logfile.
 
 1. If you want to be able to open logfiles that were created on a different system (and therefore different cryptographic key), this command can be used to correct existing authentication codes using the local system's cryptographic key.
+
+## See also
+
+[ClfsAddLogContainer](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsaddlogcontainer)
+
+[ClfsAddLogContainerSet](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsaddlogcontainerset)
+
+[fsutil clfs authenticate](/windows-server/administration/windows-commands/fsutil-clfs)

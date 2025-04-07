@@ -20,3 +20,11 @@ To specify the maximum number of log I/O buffers that can be allocated at one ti
 If you want to do your own memory allocation for log I/O buffers, set the *pfnAllocBuffer* and *pfnFreeBuffer* parameters of the **ClfsCreateMarshallingArea** function to point to your own allocation and deallocation functions. Then CLFS calls your functions to perform the actual memory allocation and deallocation whenever it needs to create or free log I/O buffers.
 
 In some cases, you might want to reserve space in a marshalling area ahead of time. For example, you might know that you're about to write a set of 10 log records, and you want to be sure that there's enough space in the marshalling area for the entire set. To reserve space for the 10 records, create a 10-element array that holds the sizes of the records, and then pass the array to the [**ClfsReserveAndAppendLog**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreserveandappendlog) function in the *rgcbReservation* parameter. **ClfsReserveAndAppendLog** is a multi-purpose function that reserves space in a marshalling area or appends log records to a stream or does both of those things atomically. By setting the parameters appropriately, you can call **ClfsReserveAndAppendLog** to reserve space for future use without actually appending any records to the stream.
+
+## See also
+
+[**ClfsCreateMarshallingArea**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatemarshallingarea)
+
+[**ClfsReserveAndAppendLog**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreserveandappendlog)
+
+[*marshalling area*](clfs-terminology.md)

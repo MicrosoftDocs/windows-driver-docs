@@ -16,7 +16,7 @@ If you want to write a restart record to a stream and change the base LSN of the
 
 ## See also
 
-**ClfsWriteRestartArea**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfswriterestartarea)
+[**ClfsWriteRestartArea**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfswriterestartarea)
 
 [Reading restart records from a CLFS stream](reading-restart-records-from-a-clfs-stream.md)
 

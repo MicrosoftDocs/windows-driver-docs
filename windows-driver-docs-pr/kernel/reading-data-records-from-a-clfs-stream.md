@@ -97,6 +97,18 @@ Suppose you wrote a chain of data records linked by their undo-next LSNs. To rea
 
 In addition to chains linked by previous LSNs and undo-next LSNs, you can create chains linked by your own LSNs that you embed in your record data.
 
-Suppose you have written a chain of data records that are linked by LSNs you stored in the record data itself. To read the chain of records, you must create a read context that has its mode set to either **ClfsContextPrevious** or **ClfsContextUndoNext**. Create your read context and obtain the most recently written record in the chain by calling [**ClfsReadLogRecord**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreadlogrecord). Then call [**ClfsReadNextLogRecord**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreadnextlogrecord) repeatedly to obtain the previous records in the chain. Each time you call **ClfsReadNextLogRecord**, set the *plsnUser* parameter to the LSN of the previous record in your chain. The LSN you supply in *plsnUser* overrides any values stored in the current record's previous-LSN or undo-next LSN fields.
+Suppose you have written a chain of data records that are linked by LSNs you stored in the record data itself. To read the chain of records, you must create a read context that has its mode set to either **ClfsContextPrevious** or **ClfsContextUndoNext**. Create your read context and obtain the most recently written record in the chain by calling **ClfsReadLogRecord**. Then call **ClfsReadNextLogRecord** repeatedly to obtain the previous records in the chain. Each time you call **ClfsReadNextLogRecord**, set the *plsnUser* parameter to the LSN of the previous record in your chain. The LSN you supply in *plsnUser* overrides any values stored in the current record's previous-LSN or undo-next LSN fields.
 
 You can only move backward in the stream when you call **ClfsReadNextLogRecord** to read a record chain. The LSN you supply in *plsnUser* must be less than the LSN of the current record in the chain.
+
+## See also
+
+[*archive tail*](clfs-terminology.md)
+
+[CLFS Log Sequence Numbers](clfs-log-sequence-numbers.md)
+
+[**ClfsReadLogRecord**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreadlogrecord)
+
+[**ClfsReadNextLogRecord**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreadnextlogrecord)
+
+[Reading restart records from a CLFS stream](reading-restart-records-from-a-clfs-stream.md)

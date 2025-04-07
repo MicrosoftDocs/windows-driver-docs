@@ -55,4 +55,18 @@ The block offset is stored in 23 bits of the LSN, but **ClfsLsnBlockOffset** ret
 
 The record sequence number is a 9-bit number, so there are 2^9 (512) possible record sequence numbers, and they are in the range 0x0 through 0x1FF. A log I/O block can have at most 512 records.
 
- When [**CLFS File Authentication**](/windows-hardware/drivers/kernel/clfs-authentication) is enabled, CLFS creates transaction files with the extension .cnpf alongside the Base Log File (BLF) and container files. If a logfile isn't cleanly closed, the transaction file holds data needed for CLFS to recover the logfile.
+ When [CLFS File Authentication](/windows-hardware/drivers/kernel/clfs-authentication) is enabled, CLFS creates transaction files with the extension .cnpf alongside the Base Log File (BLF) and container files. If a logfile isn't cleanly closed, the transaction file holds data needed for CLFS to recover the logfile.
+
+## See also
+
+[CLFS File Authentication](/windows-hardware/drivers/kernel/clfs-authentication)
+
+[**ClfsAdvanceLogBase**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsadvancelogbase)
+
+[**ClfsWriteRestartArea**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfswriterestartarea)
+
+[**ClfsLsnBlockOffset**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsnblockoffset)
+
+[**ClfsLsnContainer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsncontainer)
+
+[**ClfsLsnRecordSequence**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsnrecordsequence)

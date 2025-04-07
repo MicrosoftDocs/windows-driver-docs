@@ -37,3 +37,9 @@ Certain features of CLFS (for example, the previous LSN and undo-next LSN fields
 - C. Mohan, Don Haderle, Bruce Lindsay, Hamid Pirahesh, Peter Schwarz, *ARIES: A Transaction Recovery Method Supporting Fine-Granularity Locking and Partial Rollbacks Using Write-Ahead Logging*.
 
 - C. Mohan, *Repeating History Beyond ARIES*.
+
+## See also
+
+[*clients*](clfs-terminology.md)
+
+[*stream*](clfs-terminology.md)
