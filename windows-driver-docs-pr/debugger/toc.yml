@@ -2766,3 +2766,5 @@
       href: stack-unwind-information-not-available.md
     - name: "No Header Information Available"
       href: no-header-information-available.md
+    - name: "Could Not Open Dump File"
+      href: could-not-open-dump-file.md
