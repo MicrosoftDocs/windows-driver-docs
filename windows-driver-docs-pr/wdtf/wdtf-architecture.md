@@ -28,7 +28,7 @@ To understand the architecture of WDTF, you should first read [Windows Device Te
 Your scenario can use some or all of the following WDTF objects and interfaces:
 
 <a href="" id="wdtf-aggregation-object"></a>WDTF aggregation object  
-The WDTF aggregation object ([**IWDTF2**](/windows-hardware/drivers/ddi/index)) is the initial instantiation point for the entire framework. Everything in the framework must be accessed through this object.
+The WDTF aggregation object ([**IWDTF2**](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtfactions2)) is the initial instantiation point for the entire framework. Everything in the framework must be accessed through this object.
 
 <a href="" id="systemdepot-property"></a>[**SystemDepot**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtf2-get_systemdepot) property  
 The [**SystemDepot**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtf2-get_systemdepot) property ([**IWDTFSystemDepot2**](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtfsystemdepot2)) contains only the local computer, which you can access through the [**ThisSystem**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfsystemdepot2-get_thissystem) property.
@@ -50,7 +50,7 @@ The [**IWDTFTargets2**](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftargets2
 
 ### Action Plug-ins
 
-WDTF includes a set of interfaces and implementations ([**action interfaces**](/windows-hardware/drivers/ddi/index)) that you can use in your test scenarios to control targets. Each implementation knows how to perform target-specific actions, such as enabling and disabling, or performing I/O operations. Your scripts can refer to these interfaces by their interface name, without understanding the specific implementation, as the following illustration shows.
+WDTF includes a set of interfaces and implementations for **action interfaces** that you can use in your test scenarios to control targets. Each implementation knows how to perform target-specific actions, such as enabling and disabling, or performing I/O operations. Your scripts can refer to these interfaces by their interface name, without understanding the specific implementation, as the following illustration shows.
 
 :::image type="content" source="images/wdtf-getinterface.gif" alt-text="Diagram illustrating the Target::GetInterface method.":::
 

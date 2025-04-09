@@ -20,4 +20,4 @@ If the NFP technology must poll, the polling MUST be done in hardware without wa
 
 ## Related topics
 
-- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)
+- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)

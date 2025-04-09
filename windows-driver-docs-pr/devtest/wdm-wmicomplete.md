@@ -54,9 +54,10 @@ Use the following steps to run an analysis of your code:
 
 [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)
 [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol)
+
 ## See also
 
 [**WmiForward**](wdm-wmiforward.md)
 [**WMI Requirements for WDM Drivers**](../kernel/wmi-requirements-for-wdm-drivers.md)
 [**Handling WMI Requests**](../kernel/handling-wmi-requests.md)
-[**WMI Library Support Routines**](/windows-hardware/drivers/ddi/index)
+[**WMI Library Header (wmilib.h)**](/windows-hardware/drivers/ddi/wmilib/index)

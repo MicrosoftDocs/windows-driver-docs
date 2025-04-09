@@ -7,7 +7,7 @@ ms.date: 03/26/2025
 # GpioClx DDI
 
 
-The general-purpose I/O (GPIO) controller driver communicates with the GPIO framework extension (GpioClx) through the GpioClx device-driver interface (DDI). This DDI is defined in the Gpioclx.h header file and is described in [General-Purpose I/O (GPIO) Driver Reference](/windows-hardware/drivers/ddi/index). As part of this DDI, GpioClx implements several [driver support methods](/previous-versions/hh439460(v=vs.85)), which are called by the GPIO controller driver. This driver implements a set of [event callback functions](/previous-versions/hh439464(v=vs.85)), which are called by GpioClx. GpioClx uses these callbacks to manage interrupt requests from GPIO pins that are configured as interrupt inputs, and to transfer data to or from GPIO pins that are configured as data inputs and outputs.
+The general-purpose I/O (GPIO) controller driver communicates with the GPIO framework extension (GpioClx) through the GpioClx device-driver interface (DDI). This DDI is defined in the Gpioclx.h header file and is described in [General-Purpose I/O (GPIO) Controllers](/windows-hardware/drivers/ddi/_gpio/). As part of this DDI, GpioClx implements several [driver support methods](/previous-versions/hh439460(v=vs.85)), which are called by the GPIO controller driver. This driver implements a set of [event callback functions](/previous-versions/hh439464(v=vs.85)), which are called by GpioClx. GpioClx uses these callbacks to manage interrupt requests from GPIO pins that are configured as interrupt inputs, and to transfer data to or from GPIO pins that are configured as data inputs and outputs.
 
 ## In this section
 

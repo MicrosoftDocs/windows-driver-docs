@@ -34,7 +34,7 @@ The following table shows the USB-specific UMDF interface hierarchy:
 
 The [IWDFUsbTargetDevice](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetdevice) and [IWDFUsbTargetPipe](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetpipe) interfaces derive from the [IWDFIoTarget](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotarget) interface and, therefore, expose I/O target objects. The [IWDFUsbInterface](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbinterface) interface does not derive from IWDFIoTarget (IWDFUsbInterface derives from the [IWDFObject](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject) interface) and, therefore, does not expose an I/O target object. Any I/O sent to discover and manipulate interface details is sent to the target device.
 
-For step-by-step directions on writing a simple UMDF-based USB client driver, see [How to write your first USB client driver (UMDF)](/windows-hardware/drivers/ddi/index).
+For step-by-step directions on writing a simple UMDF-based USB client driver, see [How to write your first USB client driver (UMDF)](/windows-hardware/drivers/usbcon/implement-driver-entry-for-a-usb-driver--umdf-).
 
-To learn about the source code required for a UMDF-based USB client driver, see [Understanding the USB client driver code structure (UMDF)](/windows-hardware/drivers/ddi/index).
+To learn about the source code required for a UMDF-based USB client driver, see [Understanding the USB client driver code structure (UMDF)](/windows-hardware/drivers/usbcon/understanding-the-umdf-template-code-for-usb).
 

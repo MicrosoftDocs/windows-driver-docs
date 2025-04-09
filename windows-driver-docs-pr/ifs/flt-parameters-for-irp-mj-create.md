@@ -82,7 +82,7 @@ IRP_MJ_CREATE is an IRP-based operation.
 
 [FLT_IO_PARAMETER_BLOCK](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block)
 
-[FLT_IS_FASTIO_OPERATION](/windows-hardware/drivers/ddi/index)
+[FLT_IS_FASTIO_OPERATION](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-flt_is_fastio_operation)
 
 [FLT_PARAMETERS](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
 

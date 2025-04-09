@@ -9,7 +9,7 @@ ms.date: 05/30/2024
 # Kernel-Mode Driver Architecture Design Guide
 
 >[!NOTE]
->For information about programming interfaces that your driver can implement or call, see the [Kernel-Mode Driver Reference](/windows-hardware/drivers/ddi/index).
+>For information about programming interfaces that your driver can implement or call, see the [Kernel-Mode Driver Reference](/windows-hardware/drivers/ddi/_kernel).
 
 This section includes general concepts to help you understand kernel-mode programming and describes specific techniques of kernel programming. For a general overview of Windows Drivers, see [Get started developing Windows drivers](../develop/get-started-developing-windows-drivers.md), which provides a general overview of Windows components, lists the types of device drivers used in Windows, discusses the goals of Windows device drivers, and discusses generic sample device drivers included in the kit.
 

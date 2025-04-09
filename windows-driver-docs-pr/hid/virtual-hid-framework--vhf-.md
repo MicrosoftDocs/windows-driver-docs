@@ -118,7 +118,7 @@ VHF invokes HID source driver-implemented event callback functions for these IOC
 
    If the driver wants to get a write a HID Input Report asynchronously, the driver must implement the **[EvtVhfAsyncOperation](/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_async_operation)** function and specify a pointer to the function in the **EvtVhfAsyncOperationWriteReport** member of **[VHF_CONFIG](/windows-hardware/drivers/ddi/vhf/ns-vhf-_vhf_config)**.
 
-For any other [HID Minidriver IOCTL](/windows-hardware/drivers/ddi/index), VHF completes the request with STATUS_NOT_SUPPORTED.
+For any other HID Minidriver IOCTL, VHF completes the request with STATUS_NOT_SUPPORTED.
 
 The virtual HID device is deleted by calling the **[VhfDelete](/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfdelete)**. The **[EvtVhfCleanup](/windows-hardware/drivers/ddi/vhf/nc-vhf-evt_vhf_cleanup)** callback is required if the driver allocated resources for the virtual HID device. The driver must implement the **EvtVhfCleanup** function and specify a pointer to that function in the **EvtVhfCleanup** member of **[VHF_CONFIG](/windows-hardware/drivers/ddi/vhf/ns-vhf-_vhf_config)**. **EvtVhfCleanup** is invoked before the **VhfDelete** call completes. For more information, see [Delete the virtual HID device](#delete-the-virtual-hid-device).
 
