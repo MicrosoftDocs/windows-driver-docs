@@ -15,7 +15,7 @@ Driver package container metadata provides OEMs and IHVs with a [driver package]
 
 Without container metadata, the operating system generates the information in the previous list by looking at all [device nodes](../gettingstarted/device-nodes-and-device-stacks.md) (devnodes) that belong to the device container, then running heuristics based on the information of the devnodes. This process may not result in the values desired by the OEMs or IHVs for the display of their physical devices. Container metadata can be used by the OEMs or IHVs to directly control these values.
 
-Driver package container metadata is supported starting in Windows 11 24H2 KB5052093 (OS Build 26100.3323). If the driver package that includes the container metadata is installed on an older Windows system, the installation will be successfuly but container metadata will not be processed and applied.
+Driver package container metadata is supported starting in Windows 11 24H2 KB5052093 (OS Build 26100.3323). If the driver package that includes the container metadata is installed on an older Windows system, the installation will be successfuly but the container metadata will not be processed and applied.
 
 ## Using Base INF or Extension INF
 
@@ -26,7 +26,7 @@ The [INF AddProperty directive](inf-addproperty-directive.md) within the driver 
 
 For more information about base INFs and extension INFs, see [Using an Extension INF File](using-an-extension-inf-file.md).
 
-To certify an INF file that specifies container metadata, an updated [InfVerif](../devtest/infverif.md) is needed, which is available starting in [Windows Driver Kit, Version 10.0.26100.3323](../wdk-release-notes.md) and [Windows HLK 24H2 (updated January 2025)](/windows-hardware/test/hlk/windows-hardware-lab-kit).
+To certify an INF file that specifies the container metadata, an updated [InfVerif](../devtest/infverif.md) is required, which is available starting in [Windows Driver Kit, Version 10.0.26100.3323](../wdk-release-notes.md) and [Windows HLK 24H2 (updated January 2025)](/windows-hardware/test/hlk/windows-hardware-lab-kit).
 
 ## Device Container Targeting
 
