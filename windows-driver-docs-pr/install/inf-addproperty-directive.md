@@ -139,7 +139,7 @@ For device container properties listed in *property-name*, flags are not needed 
 *value*  
 The value that the add operation uses to modify a property value, depending on the property data type and the value of the *flags* entry.
 
-For device container properties listed in *property-name*, the value can be a %strkey% token, allowing for locale-specific strings. The following table describes what values can be specified for those properties. For more information about locale-specific strings, see [INF Strings Section](inf-strings-section.md).
+For some device container properties listed in *property-name*, the value can be a %strkey% token, allowing for locale-specific strings. The following table describes what values can be specified for those properties. For more information about locale-specific strings, see [INF Strings Section](inf-strings-section.md).
 
 | Property Name         | Value                                                                                                     | Localizable via [Strings.LanguageID] sections for %strkey% token |
 |-----------------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------|
