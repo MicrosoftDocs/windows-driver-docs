@@ -1,5 +1,5 @@
 ---
-title: Symbol Options
+title: Symbol Options [BUG]
 description: Symbol Options
 keywords: ["symbols, setting symbol options", "symbols, SYMOPT_XXXX", "noisy symbol loading", "CV record"]
 ms.date: 05/23/2017
