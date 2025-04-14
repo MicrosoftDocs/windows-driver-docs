@@ -1,13 +1,13 @@
 ---
 title: Signing a Driver for Public Release
 description: Before you release a driver package to the public, we recommend that you submit the package for certification.
-ms.date: 04/20/2017
+ms.date: 04/14/2025
 ms.topic: how-to
 ---
 
 # Signing a Driver for Public Release
 
-Before you release a driver package to the public, we recommend that you submit the package for certification. For more information, see [Windows Hardware Certification](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) and [Hardware Dashboard Services](../dashboard/index.md. To submit a driver package for certification, you must sign the package with a certificate that you obtain from a trusted certification authority like VeriSign. For more information, see [Get a VeriSign Certificate](../dashboard/index.md). You will also need a cross certificate, which is provided by Microsoft.
+Before you release a driver package to the public, we recommend that you submit the package for certification. For more information, see [Windows Hardware Certification](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) and [Hardware Dashboard Services](../dashboard/index.md). To submit a driver package for certification, you must sign the package with a certificate that you obtain from a trusted certification authority like VeriSign. For more information, see [Get a VeriSign Certificate](../dashboard/index.md). You will also need a cross certificate, which is provided by Microsoft.
 
 Suppose you have obtained a pair of files from Verisign: a private key file (PVK) and a software publishing certificate (SPC). Also suppose you have a Microsoft Visual Studio solution that contains a driver project named MyDriver and a driver package project named MyDriver Package. To sign your driver package, follow these steps.
 
