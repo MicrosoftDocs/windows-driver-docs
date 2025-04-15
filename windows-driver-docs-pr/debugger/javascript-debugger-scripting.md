@@ -1141,13 +1141,13 @@ Caught and returned!
 Test
 ```
 
-## <span id="Vscode"></span><span id="vscode"></span><span id="VSCODE"></span>JavaScript in VSCode - Adding IntelliSense
+## <span id="Vscode"></span><span id="vscode"></span><span id="VSCODE"></span>JavaScript in VS Code - Adding IntelliSense
 
-If you would like to work with the debugger data model objects in VSCode, you can use a definition file that is available in the Windows development kits. The IntelliSense definition file provides support for all of the host.* debugger object APIs. If you installed the kit in the default directory on a 64 bit PC, it is located here:
+If you would like to work with the debugger data model objects in VS Code, you can use a definition file that is available in the Windows development kits. The IntelliSense definition file provides support for all of the host.* debugger object APIs. If you installed the kit in the default directory on a 64 bit PC, it is located here:
 
 `C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\winext\JsProvider.d.ts`
 
-To use the IntelliSense definition file in VSCode:
+To use the IntelliSense definition file in VS Code:
 
 1. Locate the definition file - JSProvider.d.ts
 
