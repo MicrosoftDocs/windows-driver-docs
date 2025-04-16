@@ -15,7 +15,7 @@ Driver package container metadata provides OEMs and IHVs with a [driver package]
 
 Without container metadata, the operating system generates the information in the previous list by looking at all [device nodes](../gettingstarted/device-nodes-and-device-stacks.md) (devnodes) that belong to the device container, then running heuristics based on the information of the devnodes. This process may not result in the values desired by the OEMs or IHVs for the display of their physical devices. Container metadata can be used by the OEMs or IHVs to directly control these values.
 
-Driver package container metadata is supported starting in Windows 11 24H2 KB5052093 (OS Build 26100.3323). If the driver package that includes the container metadata is installed on an older Windows system, the installation will be successfuly but the container metadata will not be processed and applied.
+Driver package container metadata is supported starting in Windows 11 24H2 KB5052093 (OS Build 26100.3323). If the driver package that includes the container metadata is installed on an older Windows system, the installation will be successful but the container metadata will not be processed and applied.
 
 ## Using Base INF or Extension INF
 
