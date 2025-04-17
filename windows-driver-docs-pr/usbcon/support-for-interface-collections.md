@@ -1,7 +1,7 @@
 ---
 title: Overview of Enumeration of Interface Collections on USB Composite Devices
 description: Interfaces on a composite USB device can be grouped in collections. The USB generic parent driver (Usbccgp.sys) can enumerate interface collections in four ways.
-ms.date: 01/17/2024
+ms.date: 04/17/2025
 ms.topic: concept-article
 ---
 
@@ -13,7 +13,7 @@ These four methods of enumeration of interface collections are arranged hierarch
 
 1. Vendor-supplied callback routines
 
-    If the vendor has registered a callback routine with the [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md), the generic parent driver gives precedence to the callback routine, and allows the callback routine to group interfaces rather than using some other method. For more information on the enumeration of interface collection using vendor-supplied callback routines, see [Enumeration of Interface Collections on USB Composite Devices](support-for-interface-collections.md).
+    If the vendor has registered a callback routine with the [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md), the generic parent driver gives precedence to the callback routine, and allows the callback routine to group interfaces rather than using some other method. For more information on the enumeration of interface collection using vendor-supplied callback routines, see [Enumeration of Interface Collections on USB Composite Devices](enumeration-of-interfaces-not-grouped-in-collections.md).
 
 1. Union functional descriptors
 
@@ -457,11 +457,11 @@ When the USB generic parent driver assigns a single PDO to all of the OBEX inter
 | Related interfaces | One data class interface that the union functional descriptor (UFD) references. |
 | Hardware IDs | `USB\Vid_%04x&Pid_%04x&Rev_%04x&WPD_OBEX&MI_%02x`<br>`USB\Vid_%04x&Pid_%04x&Rev_%04x&WPD_OBEX`<br>`USB\Vid_%04x&Pid_%04x&WPD_OBEX&MI_%02x`<br>`USB\Vid_%04x&Pid_%04x&WPD_OBEX` |
 | Compatible IDs | `USB\Class_02&WPD_OBEX`<br>`USB\Class_02` |
-| Special handling | The registry settings that are associated with the instance of the USB generic parent driver that manages the composite device determine whether OBEX interfaces are managed with a single PDO or multiple PDOs. For an explanation of the registry settings that specify how the USB generic parent driver enumerates OBEX interfaces, see [Enumeration of Interface Collections on USB Composite Devices](support-for-interface-collections.md). |
+| Special handling | The registry settings that are associated with the instance of the USB generic parent driver that manages the composite device determine whether OBEX interfaces are managed with a single PDO or multiple PDOs. For an explanation of the registry settings that specify how the USB generic parent driver enumerates OBEX interfaces, see [Enumeration of Interface Collections on USB Composite Devices](enumeration-of-interfaces-not-grouped-in-collections.md). |
 
 #### WMCDC wireless handset control model
 
-The USB generic parent driver does not always enumerate wireless handset control model (WHCM) interface collections. The registry settings that are associated with the instance of the USB generic parent driver that manages the WHCM interface collection determine whether the USB generic parent driver creates a physical device object (PDO) for the interface collection or not. For an explanation of the registry settings that specify how the USB generic parent driver enumerates WHCM interfaces, see [Enumeration of Interface Collections on USB Composite Devices](support-for-interface-collections.md).
+The USB generic parent driver does not always enumerate wireless handset control model (WHCM) interface collections. The registry settings that are associated with the instance of the USB generic parent driver that manages the WHCM interface collection determine whether the USB generic parent driver creates a physical device object (PDO) for the interface collection or not. For an explanation of the registry settings that specify how the USB generic parent driver enumerates WHCM interfaces, see [Enumeration of Interface Collections on USB Composite Devices](enumeration-of-interfaces-not-grouped-in-collections.md).
 
 Enumerated WHCM interface collections have the following properties.
 
@@ -514,7 +514,7 @@ In these hardware IDs,
 
 In these compatible IDs, c(2), s(2), and p(2) contain values that are taken, respectively, from the **bFunctionClass**, **bFunctionSubClass**, and **bFunctionProtocol** fields of the IAD.
 
-You cannot use IADs recursively to bind functions of functions. In particular, if a device has IAD descriptors in its firmware, the generic parent driver will not group interfaces by audio device class, as described in [Enumeration of Interface Collections on USB Composite Devices](support-for-interface-collections.md).
+You cannot use IADs recursively to bind functions of functions. In particular, if a device has IAD descriptors in its firmware, the generic parent driver will not group interfaces by audio device class, as described in [Enumeration of Interface Collections on USB Composite Devices](enumeration-of-interfaces-not-grouped-in-collections.md).
 
 ### Enumeration of interface collections on audio devices without IADs
 

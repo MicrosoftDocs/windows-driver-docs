@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - Model 2433 ESP32
 description: Bluetooth Test Platform (BTP) supported hardware (ESP32).
-ms.date: 05/20/2024
+ms.date: 04/17/2025
 ---
 
 # Microsoft Bluetooth Test Platform - Model 2433 ESP32
@@ -35,14 +35,14 @@ USB serial to UART breakout board equivalent to [Sparkfun FT232RL](https://www.s
 
 ## Getting Started
 
-If the ESP32 has already been updated, skip to [Updating ESP32 Firmware via Traduci.cmd](testing-BTP-hw-esp32.md#updating-esp32-firmware-via-traducicmd)
+If the ESP32 has already been updated, skip to [Updating ESP32 Firmware via Traduci.cmd](#updating-esp32-firmware-via-traducicmd)
 
 > [!NOTE]
 > The ESP32 device can **only** be plugged into the Traduci board 12-pin port labeled 'JD'.
 
 ## Updating ESP32 firmware manually
 
-Updating ESP32 firmware manually is required for first time setup of an ESP32 radio for use with the BTP Wi-Fi Coexistence tests. After first time setup, firmware updates to the device sled can be done via [Traduci.cmd](testing-BTP-hw-esp32.md#updating-esp32-firmware-via-traducicmd).  
+Updating ESP32 firmware manually is required for first time setup of an ESP32 radio for use with the BTP Wi-Fi Coexistence tests. After first time setup, firmware updates to the device sled can be done via [Traduci.cmd](#updating-esp32-firmware-via-traducicmd).
 
 1. Acquire and set up the Arduino command line interface.
     1. Download the latest version of the [arduino-cli](https://arduino.github.io/arduino-cli/latest/installation/#download).
@@ -92,7 +92,7 @@ TraduciCmd.exe -updateesp32firmware
 
 Wait for "ESP32 firmware is up to date" to show on the terminal and indicate the process is done.
 
-The flashing process doesn't require the use of a UART to USB serial board. The process fails if the ESP32 hasn't previously been provisioned with BTP compatible firmware via the [manual instructions](testing-BTP-hw-esp32.md#updating-esp32-firmware-manually)
+The flashing process doesn't require the use of a UART to USB serial board. The process fails if the ESP32 hasn't previously been provisioned with BTP compatible firmware via the [manual instructions](#updating-esp32-firmware-manually)
 
 ## Features
 
