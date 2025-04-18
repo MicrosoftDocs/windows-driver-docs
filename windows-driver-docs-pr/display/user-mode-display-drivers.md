@@ -12,7 +12,7 @@ ms.date: 12/18/2024
 
 # User-mode display drivers
 
-Along with a kerne-mode display driver, graphics hardware vendors must also write a user-mode display driver (UMD) for their display adapters. The UMD is a dynamic-link library (DLL) that the Direct3D runtime loads.
+Along with a kernel-mode display driver, graphics hardware vendors must also write a user-mode display driver (UMD) for their display adapters. The UMD is a dynamic-link library (DLL) that the Direct3D runtime loads.
 
 The UMD can consist of one DLL that supports multiple Direct3D versions, or it can consist of separate DLLs. The following articles discuss various aspects of the UMD:
 
