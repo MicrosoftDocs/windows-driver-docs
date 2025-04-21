@@ -94,8 +94,3 @@ NDIS handles the OID method request of OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS f
 [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_queue_parameters)
 
 [OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE](oid-receive-filter-allocate-queue.md)
-
-[OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS](oid-receive-filter-queue-parameters.md)
-
- 
-

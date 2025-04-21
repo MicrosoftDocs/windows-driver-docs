@@ -1,7 +1,7 @@
 ---
 title: Overview of Mobile Broadband Windows Runtime APIs
 description: Overview of mobile broadband Windows Runtime APIs
-ms.date: 10/10/2023
+ms.date: 04/21/2025
 ms.topic: concept-article
 ---
 
@@ -89,4 +89,4 @@ Network account IDs are segregated by mobile network operator (MNO), so that if 
 
 ## Related topics
 
-[Mobile broadband WinRT API overview](list-of-mobile-broadband-windows-runtime-apis.md)
+[Connection profile API](connection-profile-api.md)
