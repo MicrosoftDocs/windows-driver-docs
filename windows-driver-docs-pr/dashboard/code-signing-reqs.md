@@ -1,7 +1,7 @@
 ---
 title: Driver code signing requirements
 description: Driver code signing requirements
-ms.date: 03/31/2025
+ms.date: 04/17/2025
 ---
 
 # Driver code signing requirements
@@ -61,7 +61,7 @@ Attestation signing has the following restrictions and requirements:
 
 - Attestation signing doesn't return the proper PE Level for **ELAM** or **Windows Hello** PE binaries. These binaries must be tested and submitted as .hlkx packages to receive the extra signature attributes.
 
-- Attestation signing requires the use of an [extended validation (EV) Certificate](code-signing-reqs.md#ev-certificate-signed-drivers) to submit the driver to the Partner Center (Hardware Dev Center Dashboard).
+- Attestation signing requires the use of an [extended validation (EV) Certificate](#ev-certificate-signed-drivers) to submit the driver to the Partner Center (Hardware Dev Center Dashboard).
 
 - Attestation signing requires driver folder names to contain no special characters, no UNC file share paths, and to be fewer than 40 characters long.
 
