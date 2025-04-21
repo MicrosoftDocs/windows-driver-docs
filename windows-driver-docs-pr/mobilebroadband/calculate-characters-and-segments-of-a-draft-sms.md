@@ -1,7 +1,7 @@
 ---
 title: Calculate Characters and Segments of a Draft SMS
 description: Calculate characters and segments of a draft SMS
-ms.date: 10/10/2023
+ms.date: 04/21/2025
 ---
 
 # Calculate characters and segments of a draft SMS
@@ -13,7 +13,7 @@ The Mobile Broadband SMS platform provides a function to estimate the number of 
 
 Providing an accurate estimate on the number of segments that are used while composing an SMS message promotes user confidence, because users are typically charged per SMS message that is sent.
 
-**JavaScript code example**
+## JavaScript code example
 
 ``` syntax
 var smsMessage = new Windows.Devices.Sms.SmsTextMessage();
@@ -25,4 +25,4 @@ id('messageSegmentsCount').innerText = messageLength.segmentCount;
 
 ## Related topics
 
-[Send SMS by using the text-mode interface](calculate-characters-and-segments-of-a-draft-sms.md)
+[Specify mobile telephone numbers](specify-mobile-telephone-numbers.md)

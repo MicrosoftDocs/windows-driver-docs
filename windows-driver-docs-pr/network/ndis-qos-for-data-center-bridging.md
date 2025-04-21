@@ -16,7 +16,7 @@ This section includes the following topics:
 
 [Overview of Data Center Bridging](overview-of-data-center-bridging.md)
 
-[Overview of NDIS QoS for Data Center Bridging](ndis-qos-for-data-center-bridging.md)
+[Overview of NDIS QoS for Data Center Bridging](ndis-qos-requirements-for-data-center-bridging.md)
 
 [Managing NDIS QoS Capabilities](registering-ndis-qos-capabilities.md)
 

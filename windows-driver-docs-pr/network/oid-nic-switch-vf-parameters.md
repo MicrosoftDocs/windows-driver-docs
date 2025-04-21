@@ -112,5 +112,3 @@ NDIS handles the OID method request of OID\_NIC\_SWITCH\_VF\_PARAMETERS for mini
 
 [**NDIS\_NIC\_SWITCH\_VF\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_info)
 
-[OID\_NIC\_SWITCH\_VF\_PARAMETERS](oid-nic-switch-vf-parameters.md)
-

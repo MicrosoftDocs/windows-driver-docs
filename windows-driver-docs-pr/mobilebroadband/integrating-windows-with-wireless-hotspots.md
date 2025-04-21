@@ -1,12 +1,11 @@
 ---
 title: Introduction to Integrating Windows with Wireless Hotspots
 description: Introduction to integrating Windows with wireless hotspots
-ms.date: 07/05/2019
+ms.date: 04/21/2025
 ms.topic: concept-article
 ---
 
 # Introduction to integrating Windows with wireless hotspots
-
 
 Wi-Fi hotspots have proliferated in public areas such as airports, coffee shops, and hotels. Operators of such networks generally offer Internet access, either as a complimentary service to their clients that is funded by the venue owner, or as a paid offering.
 
@@ -14,21 +13,10 @@ Various methods have been developed to handle authentication to these networks. 
 
 The topics in this section address the interaction between a Wi-Fi hotspot operator, their app, and Windows 8, Windows 8.1, orWindows 10. The described actions can be taken by a standard app that is downloaded from the Microsoft Store, or by a mobile broadband app that is installed by Windows to complement a mobile broadband device that is attached to the computer.
 
--   [Get started with a hotspot authentication app](review-the-hotspot-authentication-sample.md)
+- [Get started with a hotspot authentication app](review-the-hotspot-authentication-sample.md)
 
--   [Hotspot authentication methods](integrating-windows-with-wireless-hotspots.md)
+- [Hotspot authentication methods](captive-portals.md)
 
 ## Related topics
 
-
 [Mobile operator scenarios](mobile-plans-scenarios.md)
-
- 
-
- 
-
-
-
-
-
-
