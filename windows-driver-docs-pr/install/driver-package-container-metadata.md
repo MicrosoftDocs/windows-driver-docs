@@ -37,7 +37,7 @@ Driver packages are targeted on individual devnodes using device-specific inform
 
 To supply container metadata for the computer container, you must target an extension INF at a special devnode called the **OEM computer device**. The **OEM computer device** is available starting in Windows 11, version 22H2.
 
-A **OEM computer device** can be identified by device class and hardware IDs such as in the following example:
+The **OEM computer device** can be identified by device class and hardware IDs such as in the following example:
 
 1. Enumerate all devnodes belonging to the Computer class:
 
