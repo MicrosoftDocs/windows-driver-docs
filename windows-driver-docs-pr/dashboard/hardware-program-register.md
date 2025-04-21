@@ -12,7 +12,7 @@ This article shows you how to register for the Microsoft Windows Hardware Develo
 - [Code Signing Agreement](/legal/windows/hardware/code-signing-agreement-2208)
 - [Windows Hardware Compatibility Agreement](/legal/windows/hardware/windows-hardware-compatibility-program-2208)
 - [Microsoft Marks License Agreement (MMLA) (ver. 2024)](/legal/windows/hardware/microsoft-marks-license-agreement-2024)
-- [Windows Analytics Agreement (ver. 2.0)](collaborate/windows-analytics-agreement)
+- [Windows Analytics Agreement (ver. 2.0)](/collaborate/windows-analytics-agreement)
 
 ## Prerequisites
 
