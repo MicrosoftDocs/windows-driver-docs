@@ -1,7 +1,7 @@
 ---
 title: USB Device Registry Entries
 description: This article describes USB device-specific registry entries.
-ms.date: 07/01/2024
+ms.date: 04/22/2025
 ---
 
 # USB device registry entries
@@ -9,7 +9,7 @@ ms.date: 07/01/2024
 This article describes USB device-specific registry entries.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer experiencing USB problems, see [Fix USB-C problems in Windows](https://support.microsoft.com/windows/fix-usb-c-problems-in-windows-f4e0e529-74f5-cdae-3194-43743f30eed2)
+> This article is for programmers. If you're a customer experiencing USB problems, see [Fix USB-C problems in Windows](https://support.microsoft.com/windows/fix-usb-c-problems-in-windows-f4e0e529-74f5-cdae-3194-43743f30eed2)
 
 ## Registry settings for configuring USB driver stack behavior
 
@@ -29,7 +29,7 @@ In the ***vvvvpppprrrr*** key,
 
 - ***vvvv*** is a 4-digit hexadecimal number that identifies the vendor
 - ***pppp*** is a 4-digit hexadecimal number that identifies the product
-- ***rrrr*** is a 4-digit hexadecimal number that contains the revision number of the device.
+- ***rrrr*** is a 4-digit hexadecimal number that contains the revision number of the device
 
 The vendor ID, product ID, and revision number values are obtained from the [USB device descriptor](usb-device-descriptors.md). The [USB_DEVICE_DESCRIPTOR](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_device_descriptor) structure describes a device descriptor.
 
@@ -45,7 +45,7 @@ The following table describes the possible registry entries for the ***vvvvppppr
 
 View the device interface GUID, Hardware ID, and [device class](supported-usb-classes.md#usb-device-classes) information about your device
 
-1. Find the device that exposes the device interface you are interested in and make note of the instance ID. For example, if the device interface belongs to class {A5DCBF10-6530-11D2-901F-00C04FB951ED} you could find the right device interface and device with the following:
+1. Find the device that exposes the device interface you're interested in and make note of the instance ID. For example, if the device interface belongs to class {A5DCBF10-6530-11D2-901F-00C04FB951ED} you could find the right device interface and device with the following command:
 
     ```cmd
     >pnputil /enum-interfaces /class {A5DCBF10-6530-11D2-901F-00C04FB951ED} /instanceid
