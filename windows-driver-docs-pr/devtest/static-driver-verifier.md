@@ -26,11 +26,7 @@ Static Driver Verifier (also known as "StaticDV" or "SDV") is a static verificat
 
 Static Driver Verifier is available as part of the Windows Driver Kit (WDK) in both the full WDK experience and in the standalone Enterprise WDK.  In addition, the Visual C++ Redistributable Packages for Visual Studio are required for SDV to run. See the following:
 
-* [Visual Studio 2019 Redistribution](/visualstudio/releases/2019/redistribution)
-* [Visual C++ Redistributable Packages for Visual Studio 2017](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
-* [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)  
-
-For versions of SDV available in the WDK for Windows 10, Version 1809 or earlier, the [Visual C++ Redistributable Packages for Visual Studio 2012](https://my.visualstudio.com/Downloads?pid=1452) should be installed instead of the 2017 packages.
+* [Microsoft Visual C++ Redistributable latest supported downloads](/cpp/windows/latest-supported-vc-redist)
 
 ## Visual Studio Integration
 

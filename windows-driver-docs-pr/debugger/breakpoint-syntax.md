@@ -84,8 +84,6 @@ In version 10.0.25310.1001 and later of the debugger engine, ambiguous breakpoin
 
 [Using Breakpoints](using-breakpoints.md)
 
-[Breakpoint Syntax](breakpoint-syntax.md)
-
 [bp, bu, bm (Set Breakpoint)](../debuggercmds/bp--bu--bm--set-breakpoint-.md)
 
 [Unresolved Breakpoints (bu Breakpoints)](unresolved-breakpoints---bu-breakpoints-.md)

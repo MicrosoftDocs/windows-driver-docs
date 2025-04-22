@@ -30,6 +30,5 @@ For detailed information about the DDI members, see [Bluetooth HFP DDI Reference
 
 ## Related topics
 
-- [Bluetooth HFP bypass guidelines for audio drivers](bluetooth-bypass-guidelines-for-audio-drivers.md)
 - [Bluetooth HFP bypass audio streaming](bluetooth-hfp-bypass-audio-streaming.md)
 - [Bluetooth Low Energy (LE) Audio](../bluetooth/bluetooth-low-energy-audio.md)

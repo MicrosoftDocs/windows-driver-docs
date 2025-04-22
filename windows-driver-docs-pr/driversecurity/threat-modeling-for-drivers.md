@@ -116,7 +116,7 @@ After you identify the points at which a driver might be vulnerable, you can det
 - Could malicious use of a feature compromise security?
 - Do default settings provide adequate security?
 
-## <span id="The_STRIDE_approach"></span><span id="the_stride_approach"></span><span id="THE_STRIDE_APPROACH"></span>The STRIDE approach to threat categorization
+## The STRIDE approach to threat categorization
 
 The acronym STRIDE describes six categories of threats to software. This acronym is derived from:
 

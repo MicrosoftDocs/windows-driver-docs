@@ -135,6 +135,4 @@ In addition to the support described in the preceding sections for hardware-offl
 
 ## Related topics
 
-[Hardware Offloaded Audio Driver Implementation](driver-implementation-details.md)
-
 [Windows Audio Processing Objects](windows-audio-processing-objects.md)
