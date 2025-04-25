@@ -13,7 +13,7 @@ keywords:
 - traverse right privileges WDK file systems
 - backup privileges WDK file systems
 - restore privileges WDK file systems
-ms.date: 06/24/2024
+ms.date: 04/24/2025
 ms.topic: concept-article
 ---
 
@@ -24,7 +24,7 @@ ms.topic: concept-article
 * The privilege must be held by the caller.
 * The privilege must also be enabled.
 
-The principle of these requirements is known as *least privilege*. Least privilege requires that privileges be enabled before they're used, rather than assumed. This requirement minimizes the chance that a user might inadvertently perform an operation they didn't intend. For example, **SeRestorePrivilege** would normally allow the caller to bypass the usual checks for write access to a file. For example, an administrator might not wish to actually override the normal security checks when copying a file; however, they might wish to do so when restoring that same file using a backup/restore utility.
+The principle of these requirements is known as *least privilege*. Least privilege requires that privileges be enabled before they're used, rather than assumed. This requirement minimizes the chance that a user might inadvertently perform an operation they didn't intend. For example, **SeRestorePrivilege** would normally allow the caller to bypass the usual checks for write access to a file. For example, an administrator might not wish to actually override the normal security checks when copying a file. However, they might wish to do so when restoring that same file using a backup/restore utility.
 
 For file systems, there are many privileges that are often used to modify the normal behavior (notably, security checks) for the system. These privileges are:
 

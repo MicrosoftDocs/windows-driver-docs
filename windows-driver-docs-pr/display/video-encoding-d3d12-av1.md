@@ -5,12 +5,12 @@ keywords:
 - D3D12 , video encoding
 - D3D12 , AV1 video encoding
 - Direct3D12 , video encoding
-ms.date: 05/14/2024
+ms.date: 04/24/2025
 ---
 
 # D3D12 AV1 video encoding
 
-The Direct3D12 video encoding feature is extended to support AV1 encoding starting in Windows 11, version 24H2 (WDDM 3.2). This article describes the points of extension where the existing D3D12 Video Encode DDI needs modifications and new structures to support AV1 encoding. For more information, including application-level specifics, see the [AV1 D3D12 Video Encoding Specification](https://microsoft.github.io/DirectX-Specs/d3d/D3D12_Video_Encoding_AV1.html).
+The Direct3D12 video encoding feature is extended to support AV1 encoding starting in Windows 11, version 24H2 (WDDM 3.2). This article describes the points of extension where the existing [D3D12 Video Encoding](video-encoding-d3d12.md) DDI needs modifications and new structures to support AV1 encoding. For more information, including application-level specifics, see the [AV1 D3D12 Video Encoding Specification](https://microsoft.github.io/DirectX-Specs/d3d/D3D12_Video_Encoding_AV1.html).
 
 ## Extensions to rate control
 
@@ -121,7 +121,10 @@ If the driver reports [**D3D12_VIDEO_ENCODER_SUPPORT_FLAG_RESOLUTION_RECONFIGURA
 
 The active sequence header must have the max_frame_\*_minus_1 syntax set to the maximum resolution present in the associated ID3D12VideoEncoderHeap being used. Different frames using resolutions also present in the associated ID3D12VideoEncoderHeap can use the AV1 syntax frame_size_override_flag in frame_size() to convey change of resolution.
 
-If D3D12_VIDEO_ENCODER_AV1_FRAME_TYPE_FLAG_SWITCH_FRAME is supported, the reference frames must point to higher or equal resolution than the current switch frame being encoded and the different resolutions must be all present in the associated ID3D12VideoEncoderHeap being used.
+If D3D12_VIDEO_ENCODER_AV1_FRAME_TYPE_FLAG_SWITCH_FRAME is supported:
+
+* The reference frames must point to higher or equal resolution than the current switch frame being encoded.
+* The different resolutions must be all present in the associated ID3D12VideoEncoderHeap being used.
 
 Similarly, if spatial scalability is supported, the different resolutions of the reference frames must be all present in the associated ID3D12VideoEncoderHeap being used.
 

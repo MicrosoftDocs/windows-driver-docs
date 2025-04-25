@@ -4,14 +4,15 @@ description: The Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) imple
 keywords:
 - DirectX graphics kernel subsystem
 - Dxgkrnl.sys
-ms.date: 06/26/2024
+ms.date: 04/24/2025
 ---
 
-# DirectX Graphics Kernel Subsystem (*Dxgkrnl*)
+# DirectX Graphics Kernel Subsystem
 
-This article describes kernel-mode interfaces that the Windows operating system implements through the DirectX graphics kernel subsystem (*Dxgkrnl.sys*).
+This article describes system-supplied, kernel-mode interfaces provided through the DirectX graphics kernel subsystem (*Dxgkrnl.sys*).
 
-The display port driver is one portion of *Dxgkrnl.sys*. A graphics/display hardware vendor implements the kernel-mode display miniport driver (KMD).
+* The display port driver is a part of *Dxgkrnl.sys*.
+* The kernel-mode display miniport driver (KMD) is implemented by graphics hardware vendors.
 
 For descriptions of other functions implemented by *Dxgkrnl*, see articles such as:
 
