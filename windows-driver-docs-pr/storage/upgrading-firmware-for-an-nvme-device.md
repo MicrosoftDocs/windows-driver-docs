@@ -1,17 +1,19 @@
 ---
 title: Upgrading Firmware for an NVMe Device
 description: Updates to the firmware on an NVMe storage device are issued to the miniport driver for that device. 
-ms.date: 06/26/2024
+ms.date: 04/24/2025
 ms.topic: how-to
 ---
 
 # Upgrading Firmware for an NVMe Device
 
+This article describes the firmware upgrade process, the miniport firmware control requests, and the structures used in the requests. The article also provides an example of how to perform a firmware upgrade.
+
 Updates to the firmware on an NVMe storage device are issued to the miniport driver for that device. Function commands for getting firmware information, downloading, and activating firmware images are issued to the miniport.
 
 ## Firmware upgrade process
 
-NVMe devices certified for Windows are capable of updating their firmware while the device is in operation. Firmware is updated using the [**IOCTL_SCSI_MINIPORT**](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_miniport) request containing the associated firmware control data formatted in an SRB. The update process involves:
+NVMe devices certified for Windows are capable of updating their firmware while the device is in operation. Firmware is updated using the [**IOCTL_SCSI_MINIPORT**](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_miniport) request containing the associated firmware control data formatted in an SRB (storage request block). The update process involves:
 
 1. Gather the firmware slot information to determine where to place the update. There are a few considerations in deciding where to place the firmware update, such as:
 
@@ -536,7 +538,7 @@ Exit:
 
 > [!NOTE]
 >
-> Downloading multiple firmware images simultaneously is not supported. A single firmware download is always followed by a single firmware activation.
+> Downloading multiple firmware images simultaneously isn't supported. A single firmware download is always followed by a single firmware activation.
 
 A firmware image already resident in a slot can be reactivated by using just the activate function command with the corresponding slot number.
 

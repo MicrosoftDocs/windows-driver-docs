@@ -7,7 +7,7 @@ keywords:
 - fltkd debugger extension WDK file system minifilter
 - Filter Verifier WDK file system minifilter
 - Verifier utility
-ms.date: 06/24/2024
+ms.date: 04/24/2025
 ---
 
 # Tools for minifilter development and testing
