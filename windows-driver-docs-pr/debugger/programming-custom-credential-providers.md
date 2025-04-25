@@ -2,7 +2,7 @@
 title: Programming custom credential providers
 description: This topic describes how to program a custom credential provider for the Windows debugger. 
 keywords: ["symbols, programming"]
-ms.date: 12/12/2024
+ms.date: 04/25/2025
 ms.topic: concept-article
 ---
 
@@ -27,7 +27,20 @@ Two XML files are used to configure the custom credential provider, one that ind
 
 When a 401 unauthorized is returned, the debugger invokes DbgCredentialProvider.dll. This DLL will look for credential providers using the following process. It opens a file DbgCredentialProvider.config.xml which should be located in the same directory as DbgCredentialProvider.dll that provides the folder location of the configuration XML files. 
 
-Note that the search behavior that is used to locate DbgCredentialProvider.config.xml file may change in the future.
+## DbgCredentialProvider.config.xml search behavopr
+
+The search behavior that is used to locate DbgCredentialProvider.config.xml file is described here. It searches and opens a file DbgCredentialProvider.config.xml as follows in the specified order. Once the file is found the search terminates.
+
+- It tries to locate the DbgCredentialProvider.config.xml file in the folder specified in `DBG_COMMON_FOLDER` environment variable if ihas been set.
+- It tries to locate the DbgCredentialProvider.config.xml file in %LOCALAPPDATA%\Dbg\Common folder.
+- It tries to locate the DbgCredentialProvider.config.xml file in the folder of the calling application.
+- It tries to locate the DbgCredentialProvider.config.xml file in the folder next to DbgCredentialProvider.dll.
+
+For information on how to set environmental values for WinDbg, see [Environment Variables](../debugger/environment-variables).
+
+TBD - Add DBG_COMMON_FOLDER to set environmental values docs for WinDbg
+
+TBD - reword and polish 
 
 ### XML configuration file location - DbgCredentialProvider.config.xml
 
@@ -59,6 +72,7 @@ After the specified folder location is located, all files with extension '*.xml'
 
 Multiple custom credential providers are supported. The debugger will ask every provider for credentials and it will use the credentials from the first provider which returns success.
 
+
 The order in which the XML files are enumerated is unspecified. 
 
 The example DbgCredentialProvider_gcmw.xml file shows how a batch file can be called.
@@ -76,7 +90,7 @@ The example DbgCredentialProvider_gcmw.xml file shows how a batch file can be ca
 </CredentialProviders>
 ```
 
-This example XML shows how a dll can be called.
+This example XML shows how a dll can be called for authentication.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -87,11 +101,26 @@ This example XML shows how a dll can be called.
       The provider is a DLL, EXE or CMD file.
     -->
    <CredentialProvider>GCMW\DbgCredentialProvider_gcmw.dll</CredentialProvider>
-
 </CredentialProviders>
 ```
 
 In this example we have just one provider DbgCredentialProvider_gcmw.dll and it is located in GCMW folder relative to the  DbgCredentialProvider_gcmw.xml file location. 
+
+### Multiple Credential Providers
+
+This example shows multiple credential providers. If the first credential provider completes sucessfully any others that are configured are not used? TBD - Or all of them need to suceed?
+
+```xml
+    <CredentialProviders> 
+
+        <CredentialProvider ApiVersion="2.0.0" >GCMW\DbgCredentialProvider_gcmw.dll</CredentialProvider> 
+
+        <CredentialProvider ApiVersion="2.0.0">OAuth2CredentialProvider\OAuth2CredentialProvider.cmd</CredentialProvider> 
+
+    </CredentialProviders> 
+```
+
+TBD - Keep blank lines?
 
 ## Use the command line to invoke the custom credential provider
 
