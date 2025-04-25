@@ -1,7 +1,7 @@
 ---
 title: USB Selective Suspend
 description: This article provides information about choosing the correct mechanism for the selective suspend feature.
-ms.date: 04/22/2025
+ms.date: 04/25/2025
 ai-usage: ai-assisted
 ---
 

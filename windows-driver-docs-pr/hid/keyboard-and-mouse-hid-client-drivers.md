@@ -1,6 +1,6 @@
 ---
-title: Keyboard and Mouse HID Client Drivers
-description: Keyboards and mice represent the first set of HID clients that were standardized in the HID usage tables and implemented in Windows operating systems.
+title: Developing Keyboard and Mouse HID Client Drivers
+description: Keyboard and mouse HID client drivers are implemented in the form of HID mapper drivers.
 keywords:
 - HID keyboard driver
 - keyboard drivers, HID
@@ -8,20 +8,21 @@ keywords:
 - HID mouse driver
 - mouse drivers, HID
 - HID mouse driver for Windows
-ms.date: 06/17/2024
+ms.date: 04/16/2025
+ai-usage: ai-assisted
 ---
 
-# Keyboard and mouse HID client drivers
+# Developing keyboard and mouse HID client drivers
 
 > [!NOTE]
-> This topic is for developers who are creating drivers for keyboard and mouse HID clients. If you are looking to fix a mouse or keyboard, see:
+> This article is for developers who are creating drivers for keyboard and mouse HID clients. If you're looking to fix a mouse or keyboard, see:
 >
 > - [Mouse, touchpad, and keyboard problems in Windows](https://support.microsoft.com/windows/mouse-and-keyboard-problems-in-windows-94b4ca7b-4f2f-077e-4eb4-f7b4ecdf4f61)
-> - [Troubleshoot a wireless mouse that does not function correctly](https://support.microsoft.com/topic/troubleshoot-problems-with-your-microsoft-mouse-or-keyboard-5afe478d-6402-d72b-93b9-e4235fd5c4cd)
+> - [Troubleshoot a wireless mouse that doesn't function correctly](https://support.microsoft.com/topic/troubleshoot-problems-with-your-microsoft-mouse-or-keyboard-5afe478d-6402-d72b-93b9-e4235fd5c4cd)
 
 This article discusses keyboard and mouse HID client drivers. Keyboards and mice represent the first set of HID clients that were standardized in the HID usage tables and implemented in Windows operating systems.
 
-Keyboard and mouse HID client drivers are implemented in the form of HID Mapper Drivers. A HID mapper driver is a kernel-mode WDM filter driver that provides a bidirectional interface for I/O requests between a non-HID Class driver and the HID class driver. The mapper driver maps the I/O requests and data protocols of one to the other.
+Keyboard and mouse HID client drivers are implemented in the form of HID mapper drivers. A HID mapper driver is a kernel-mode filter driver that provides a bidirectional interface for I/O requests between a non-HID Class driver and the HID class driver. The mapper driver maps the I/O requests and data protocols of one to the other.
 
 Windows provides system-supplied HID mapper drivers for HID keyboard, and HID mice devices.
 
@@ -42,8 +43,8 @@ The figure shows the following components:
 The system builds the driver stack as follows:
 
 - The transport stack creates a physical device object (PDO) for each HID device attached and loads the appropriate HID transport driver, which in turn loads the HID Class Driver.
-- The HID class driver creates a PDO for each keyboard or mouse TLC. Complex HID devices (more than one TLC) are exposed as multiple PDOs created by HID class driver. For example, a keyboard with an integrated mouse might have one collection for the standard keyboard controls and a different collection for the mouse.
-- The keyboard or mouse HID client mapper drivers are loaded on the appropriate FDO.
+- The HID class driver creates a PDO for each keyboard or mouse [top level collection (TLC)](top-level-collections.md). Complex HID devices (more than one TLC) are exposed as multiple PDOs created by HID class driver. For example, a keyboard with an integrated mouse might have one collection for the standard keyboard controls and a different collection for the mouse.
+- The keyboard or mouse HID client mapper drivers are loaded on the appropriate functional device object (FDO).
 - The HID mapper drivers create FDOs for keyboard and mouse, and load the class drivers.
 
 ### Important notes
@@ -55,9 +56,9 @@ The system builds the driver stack as follows:
 - The system prevents disable/enabling a keyboard.
 - The system provides support for horizontal/vertical wheels with smooth scrolling capabilities.
 
-## Driver Guidance
+## Driver guidance
 
-Microsoft provides this guidance for IHVs writing drivers:
+Microsoft provides this guidance for independent hardware vendors (IHVs) writing drivers:
 
 1. Driver developers are allowed to add more drivers in the form of a filter driver or a new HID client driver.
     1. Filters drivers: Driver developers should ensure that their value-add driver is a filter driver and doesn't replace (or be used in place of) existing Windows HID drivers in the input stack.
@@ -88,7 +89,6 @@ A *keyboard layout* fully describes a keyboard's input characteristics for Micro
 See these resources for information about keyboard layouts:
 
 - Keyboard header file, kdb.h, in the Windows Driver Development Kit (DDK), which documents general information about keyboard layouts.
-
 - Sample keyboard [layouts](/samples/microsoft/windows-driver-samples/keyboard-layout-samples/).
 
 To visualize the layout of a specific keyboard, see [Windows Keyboard Layouts](/globalization/windows-keyboard-layouts).
@@ -97,14 +97,12 @@ For more details around the keyboard layout, visit Control Panel\\Clock, Languag
 
 ## Supported buttons and wheels on mice
 
-The following table identifies the features supported across different client versions of the Windows operating system.
+This list identifies the mouse features supported by Windows:
 
-| Feature                                               | Windows XP             | Windows Vista          | Windows 7              | Windows 8 and later    |
-|-------------------------------------------------------|------------------------|------------------------|------------------------|------------------------|
-| Buttons 1-5                                           | Supported (P/2 & HID)  | Supported (PS/2 & HID) | Supported (PS/2 & HID) | Supported (PS/2 & HID) |
-| Vertical Scroll Wheel                                 | Supported (PS/2 & HID) | Supported (PS/2 & HID) | Supported (PS/2 & HID) | Supported (PS/2 & HID) |
-| Horizontal Scroll Wheel                               | Not Supported          | Supported(HID only)    | Supported(HID only)    | Supported(HID only)    |
-| Smooth Scroll Wheel Support (Horizontal and Vertical) | Not Supported          | Partly Supported       | Supported (HID only)   | Supported (HID only)   |
+- Buttons 1-5
+- Vertical scroll wheel
+- Horizontal scroll wheel
+- Smooth scroll wheel support (horizontal and vertical)
 
 ### Activating buttons 4-5 and wheel on PS/2 mice
 
@@ -125,7 +123,7 @@ This method is applicable to PS/2 mice only, not HID mice. HID mice must report 
 | 3    | Y7    | Y6    | Y5    | Y4    | Y3  | Y2 | Y1 | Y0 | Y data bytes                     |
 
 > [!NOTE]
-> Windows mouse drivers do not check the overflow bits. In case of overflow, the mouse should simply send the maximal signed displacement value.
+> Windows mouse drivers don't check the overflow bits. If there's an overflow, the mouse should send the maximal signed displacement value.
 
 #### Standard PS/2-compatible mouse data packet format (three buttons + vertical wheel)
 
@@ -146,7 +144,7 @@ This method is applicable to PS/2 mice only, not HID mice. HID mice must report 
 | 4    | 0  | 0  | B5    | B4    | Z3 | Z2 | Z1 | Z0 | Z/wheel data and buttons 4 and 5 |
 
 > [!IMPORTANT]
-> Notice that the Z/wheel data for a five-button wheel mouse has been reduced to four bits instead of the 8 bits used in the IntelliMouse-compatible three-button wheel mode. This reduction is made possible by the fact that the wheel typically cannot generate values beyond the range +7/-8 during any given interrupt period. Windows mouse drivers will sign extend the four Z/wheel data bits when the mouse is in the five-button wheel mode, and the full Z/wheel data byte when the mouse operates in the three-button wheel mode.
+> The Z/wheel data for a five-button wheel mouse is reduced to four bits instead of the eight bits used in the IntelliMouse-compatible three-button wheel mode. This reduction is made possible by the fact that the wheel typically can't generate values beyond the range +7/-8 during any given interrupt period. Windows mouse drivers sign extend the four Z/wheel data bits when the mouse is in five-button wheel mode. They sign extend the full Z/wheel data byte when the mouse operates in three-button wheel mode.
 >
 > Buttons 4 & 5 on are mapped to WM_APPCOMMAND messages and correspond to App_Back and App_Forward.
 
@@ -337,7 +335,7 @@ VOID KbFilter_ServiceCallback(
 
 ## Moufiltr sample
 
-Moufiltr is used with Mouclass, the system class driver for mouse devices used with Windows 2000 and later versions, and I8042prt, the function driver for a PS/2-style mouse used with Windows 2000 and later. Moufiltr demonstrates how to filter I/O requests and add callback routines that modify the operation of Mouclass and I8042prt.
+Moufiltr works with Mouclass, the system class driver for mouse devices. It also works with I8042prt, the function driver for a PS/2-style mouse. Both drivers are used with Windows 2000 and later versions. Moufiltr demonstrates how to filter I/O requests and add callback routines that modify the operation of Mouclass and I8042prt.
 
 For more information about Moufiltr operation, see these resources:
 
@@ -371,7 +369,7 @@ Moufiltr completes the IOCTL_INTERNAL_MOUSE_DISCONNECT request with an error sta
 
 For all other requests, Moufiltr skips the current IRP stack and sends the request down the device stack without further processing.
 
-### Moufiltr Callback Routines
+### Moufiltr callback routines
 
 MouFiltr implements the following callback routines.
 

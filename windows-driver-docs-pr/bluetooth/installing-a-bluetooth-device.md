@@ -6,14 +6,14 @@ keywords:
 - client-side profile drivers WDK Bluetooth
 - server-side profile drivers WDK Bluetooth
 - INF files WDK Bluetooth
-ms.date: 06/17/2024
+ms.date: 04/16/2025
 ms.topic: how-to
 ---
 
 # Installing a Bluetooth device
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer experiencing Bluetooth device installation issues see [Pair a Bluetooth device in Windows](https://support.microsoft.com/windows/pair-a-bluetooth-device-in-windows-2be7b51f-6ae9-b757-a3b9-95ee40c3e242)
+> This article is for programmers. If you're a customer experiencing Bluetooth device installation issues, see [Pair a Bluetooth device in Windows](https://support.microsoft.com/windows/pair-a-bluetooth-device-in-windows-2be7b51f-6ae9-b757-a3b9-95ee40c3e242)
 
 There are two installation types for Bluetooth profile drivers:
 
@@ -27,9 +27,9 @@ These two installation types require different installation procedures.
 A user that wants to use a Bluetooth-enabled device brings the device within range of the computer and initiates a connection from the computer to the remote device using the following installation sequence for a client-side profile driver.
 
 1. Select **Add a Bluetooth device** in **Control Panel** to find all devices within range of the computer.
-1. Select the device to pair with.
+1. Select the device with which to pair.
 1. Pair the device with the local radio, which might or might not involve a PIN exchange.
-1. The local radio issues an SDP inquiry to identify the services supported on the remote device.
+1. The local radio issues a Service Discovery Protocol (SDP) inquiry to identify the services supported on the remote device.
 1. The **Found New Hardware Wizard** searches for appropriate drivers on the local hard disk drive, and on Windows Update.
 1. If the **Found New Hardware Wizard** doesn't find an appropriate driver for the device, it prompts the user to insert the profile driver installation media that contains the profile driver's device setup information file (INF file).
 
