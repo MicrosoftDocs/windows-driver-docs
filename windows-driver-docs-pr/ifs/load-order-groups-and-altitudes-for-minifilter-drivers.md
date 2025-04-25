@@ -9,10 +9,12 @@ keywords:
 - driver start types WDK file system
 - create a filter altitude
 - update filter altitude information
-ms.date: 06/24/2024
+ms.date: 04/24/2025
 ---
 
 # Load order groups and altitudes for minifilter drivers
+
+This article describes the load order groups and altitudes for minifilter drivers. It also describes how to create a filter altitude and how to update information associated with existing altitudes.
 
 ## Minifilter load order groups
 

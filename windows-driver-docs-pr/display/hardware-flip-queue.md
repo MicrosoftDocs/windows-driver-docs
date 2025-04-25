@@ -4,7 +4,7 @@ description: Hardware flip queue
 keywords:
 - Direct3D, hardware flip queue
 - D3D, hardware flip queue
-ms.date: 06/26/2024
+ms.date: 04/24/2025
 ---
 
 # Hardware flip queue
