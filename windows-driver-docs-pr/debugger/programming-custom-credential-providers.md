@@ -36,7 +36,7 @@ The search behavior that is used to locate DbgCredentialProvider.config.xml file
 - It tries to locate the DbgCredentialProvider.config.xml file in the folder of the calling application.
 - It tries to locate the DbgCredentialProvider.config.xml file in the folder next to DbgCredentialProvider.dll.
 
-For information on how to set environmental values for WinDbg, see [Environment Variables](../debugger/environment-variables).
+For information on how to set environmental values for WinDbg, see [Environment Variables](../debugger/environment-variables.md).
 
 TBD - Add DBG_COMMON_FOLDER to set environmental values docs for WinDbg
 
