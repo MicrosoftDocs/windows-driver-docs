@@ -1,7 +1,7 @@
 ---
 title: USB Selective Suspend
 description: This article provides information about choosing the correct mechanism for the selective suspend feature.
-ms.date: 04/25/2025
+ms.date: 05/01/2025
 ai-usage: ai-assisted
 ---
 
@@ -63,7 +63,7 @@ The following WDM example code illustrates the steps that a device driver takes 
     sizeof(struct _USB_IDLE_CALLBACK_INFO));
     idleCallbackInfo->IdleCallback = IdleNotificationCallback;
     // Put a pointer to the device extension in member IdleContext
-    idleCallbackInfo->IdleContext = (PVOID) DeviceExtension; 
+    idleCallbackInfo->IdleContext = (PVOID) DeviceExtension;
     nextStack->Parameters.DeviceIoControl.Type3InputBuffer = idleCallbackInfo;
     ```
 
@@ -183,7 +183,8 @@ IdleNotificationRequestComplete(
         //This call is not shown.
         powerState.DeviceState = PowerDeviceD0;
 
-        // Issue a new IRPPoRequestPowerIrp (
+        // Issue a new IRP
+        PoRequestPowerIrp (
             DeviceExtension->PhysicalDeviceObject,
             IRP_MN_SET_POWER,
             powerState,
@@ -247,7 +248,7 @@ The idle notification callback routine should determine whether its device has a
 
 ## USB global suspend
 
-The USB 2.0 Specification defines global suspend as the suspension of the entire bus behind a USB host controller by ceasing all USB traffic on the bus, including start-of-frame packets. Downstream devices that aren't already suspended detect the Idle state on their upstream port and enter the suspend state on their own. Windows always selectively suspends each USB device behind a USB host controller before it ceases all USB traffic on the bus.
+The USB 2.0 Specification defines global suspend as the suspension of the entire bus behind a USB host controller by ceasing all USB traffic on the bus, including start-of-frame packets. Downstream devices that aren't already suspended detect the Idle state on their upstream port and enter the suspend state on their own. Windows doesn't implement global suspend in this manner. Windows always selectively suspends each USB device behind a USB host controller before it ceases all USB traffic on the bus.
 
 ### Conditions for global suspend
 
