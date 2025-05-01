@@ -16013,6 +16013,11 @@
         "redirect_document_id": false
     },
     {
+      "source_path": "windows-driver-docs-pr/ifs/installing-a-file-system-driver.md",
+      "redirect_URL": "/windows-hardware/drivers/ifs/creating-an-inf-file-for-a-file-system-driver",
+      "redirect_document_id": false
+    },
+    {
         "source_path": "windows-driver-docs-pr/ifs/rxassert.md",
         "redirect_URL": "/previous-versions/windows/hardware/rdbss/rxassert",
         "redirect_document_id": false
