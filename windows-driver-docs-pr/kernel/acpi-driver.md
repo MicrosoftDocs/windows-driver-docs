@@ -2,27 +2,14 @@
 title: Acpi.sys (Windows ACPI Driver)
 description: The Windows ACPI driver, Acpi.sys, is an inbox component of the Windows operating system.
 keywords: ["ACPI drivers WDK power management", "enumerators WDK power management", "PDOs WDK power management", "filter DOs WDK power management", "physical device objects WDK power management"]
-ms.date: 06/20/2024
-ms.author: bagold
+ms.date: 04/23/2025
 ---
 
 # Acpi.sys (Windows ACPI driver)
 
-The Windows ACPI driver, Acpi.sys, is an inbox component of the Windows operating system. The responsibilities of Acpi.sys include support for power management and Plug and Play (PnP) device enumeration. On hardware platforms that have an [ACPI BIOS](acpi-bios.md), the [HAL](windows-kernel-mode-hal-library.md) causes Acpi.sys to be loaded during system startup at the base of the [device tree](device-tree.md). Acpi.sys acts as the interface between the operating system and the ACPI BIOS. Acpi.sys is transparent to the other drivers in the device tree.
+The Windows Advanced Configuration and Power Interface (ACPI) driver, Acpi.sys, is an inbox component of the Windows operating system. The responsibilities of Acpi.sys include support for power management and Plug and Play (PnP) device enumeration. On hardware platforms that have an [ACPI BIOS](acpi-bios.md), the [HAL](windows-kernel-mode-hal-library.md) causes Acpi.sys to be loaded during system startup at the base of the [device tree](device-tree.md). Acpi.sys acts as the interface between the operating system and the ACPI BIOS. Acpi.sys is transparent to the other drivers in the device tree.
 
 Other tasks performed by Acpi.sys on a particular hardware platform might include reprogramming the resources for a COM port or enabling the USB controller for system wake-up.
-
-## In this topic
-
-- [ACPI devices](#acpi-devices)
-
-- [ACPI control methods](#acpi-control-methods)
-
-- [ACPI specification](#acpi-specification)
-
-- [ACPI debugging](#acpi-debugging)
-
-- [Microsoft ACPI source language (ASL) compiler](#microsoft-acpi-source-language-asl-compiler)
 
 ## ACPI devices
 

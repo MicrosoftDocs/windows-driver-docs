@@ -1,30 +1,16 @@
 ---
-title: Printer driver isolation
+title: Printer Driver Isolation
 description: Printer driver isolation improves the reliability of the Windows print service, by enabling printer drivers to run in processes that are separate from the process in which the print spooler runs.
-ms.date: 06/21/2024
+ms.date: 04/25/2025
 ---
 
 # Printer driver isolation
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
-Printer driver isolation improves the reliability of the Windows print service, by enabling printer drivers to run in processes that are separate from the process in which the print spooler runs.
+Printer driver isolation improves the reliability of the Windows print service, by enabling printer drivers to run in processes that are separate from the process in which the print spooler runs. An inbox printer driver must support printer driver isolation and be able to run in an isolated process.
 
-Support for printer driver isolation is implemented in Windows 7, Windows Server 2008 R2 and later operating systems.
-
-Starting with Windows 7 and Windows Server 2008 R2, an inbox printer driver must support printer driver isolation and be able to run in an isolated process.
-
-In previous versions of Windows, printer drivers always ran in the same process as the spooler. Printer driver components that ran in the spooler process included the following:
-
-- Print driver configuration modules
-
-- Print processors
-
-- Rendering modules
-
-The failure of a single print driver component could cause the print subsystem to fail, halting print operations for all users and for all print components.
-
-Starting with Windows 7 and Windows Server 2008 R2, an administrator can, as an option, configure a printer driver to run in an isolated process--a process that is separate from the spooler process. By isolating the driver, the administrator can prevent a fault in a driver component from halting the print service.
+An administrator can, as an option, configure a printer driver to run in an isolated process, a process that is separate from the spooler process. By isolating the driver, the administrator can prevent a fault in a driver component from halting the print service.
 
 For more information about the spooler functions, see [Spooler Component Functions and Structures](/windows-hardware/drivers/ddi/_print/index).
 
@@ -57,7 +43,7 @@ The first group loads the driver into the spooler processes. Each subsequent gro
 
 A computer administrator can use the Windows Print Management console or call the Windows spooler functions to configure the driver-isolation settings for each printer driver installed on a computer. The administrator configures the driver to use one of the settings listed in the following table.
 
-| Driver-isolation mode | Meaning |
+| Driver-isolation mode | Operation |
 |--|--|
 | Shared | Run the driver in a process that is shared with other printer drivers but is separate from the spooler process. |
 | Isolated | Run the driver in a process that is separate from the spooler process and is not shared with other printer drivers. |

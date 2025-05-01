@@ -1,14 +1,14 @@
 ---
 title: Switch from legacy MBR disk to GPT disk with Windows 10
 description: Provides guidance to enable a seamless upgrade and enable the user to apply new and improved security features of Windows 10.
-ms.date: 06/21/2024
+ms.date: 04/30/2025
 ---
 
 # Switch from legacy MBR disk to GPT disk with Windows 10
 
 To upgrade from downlevel operating systems, such as Windows 7, or transitioning from BIOS Boot to UEFI Boot for the enhanced security features, Microsoft provides the following information on switching from legacy MBR disk to GPT disk with Windows 10
 
-The steps in this section enables a more seamless upgrade to Windows 10 and enable the user the ability to apply the new and improved security features of Windows 10. For purposes of the below steps, we refer to the GUID Partition Table as GPT, and legacy Master Boot Record as legacy MBR boot disks.
+The steps in this section enable a more seamless upgrade to Windows 10 and enable the user the ability to apply the new and improved security features of Windows 10. For purposes of the below steps, we refer to the GUID Partition Table as GPT, and legacy master boot record (MBR) as legacy MBR boot disks.
 
 These four configurations are used:
 
@@ -37,7 +37,7 @@ These four configurations are used:
 
 **Legacy MBR boot** isn't able to recognize GUID Partition Table (GPT) disks. It requires an active partition and supporting BIOS to facilitate access to disk. OLD and limited on HDD size and number of partitions. On UEFI firmware systems, it requires CSM enabled and loaded into memory to facilitate active partition booting.
 
-## In this section
+## See also
 
 [New method - Windows 10, version 1703 and later](new-method--windows-10--version-1703-and-later.md)
 
@@ -46,7 +46,5 @@ These four configurations are used:
 [Old method - Windows 10, version 1607 and earlier](old-method--windows-10--version-1607-and-earlier.md)
 
 [How to convert an installed x64 Windows 7 system](how-to-convert-an-installed-x64-windows-7.md)
-
-## Related resources
 
 [Windows 10 specification](https://www.microsoft.com/windows/Windows-10-specifications)

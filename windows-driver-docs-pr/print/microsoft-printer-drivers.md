@@ -1,7 +1,7 @@
 ---
-title: Microsoft printer drivers
+title: Microsoft Printer Drivers
 description: Describes how to design, configure, and install printer drivers and print spoolers for the Microsoft Windows operating system.
-ms.date: 06/21/2024
+ms.date: 04/25/2025
 ---
 
 # Microsoft printer drivers
