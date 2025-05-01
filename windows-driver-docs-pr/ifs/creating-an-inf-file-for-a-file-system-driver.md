@@ -12,13 +12,19 @@ keywords:
 - DestinationDirs section WDK file system
 - Version section WDK file system
 - creating INF files WDK file system
-ms.date: 04/24/2025
+ms.date: 04/30/2025
 ms.topic: concept-article
 ---
 
 # Creating an INF file for a file system driver
 
 This article describes how to create an INF file for a file system driver.
+
+For information about installing and uninstalling a file system driver using an INF file, follow the guidelines provided in the following articles for legacy file system filter drivers:
+
+* [Using an INF file to install a file system filter driver](using-an-inf-file-to-install-a-file-system-filter-driver.md). You can use the INF file alone, or together with a batch file or [user-mode setup application](../install/writing-a-device-installation-application.md).
+
+* [Using an INF File to Uninstall a File System Filter Driver](using-an-inf-file-to-uninstall-a-file-system-filter-driver.md) for uninstall information.
 
 ## About file system INF files
 
@@ -32,17 +38,17 @@ Starting with 64-bit versions of Windows Vista, all kernel-mode components must 
 
 For these versions of the Windows operating system, the following information is relevant to file system drivers.
 
-- INF files for non-PnP drivers, including file system drivers, aren't required to contain \[Manufacturer\] or \[Models\] sections.
+* INF files for non-PnP drivers, including file system drivers, aren't required to contain \[Manufacturer\] or \[Models\] sections.
 
-- The [**SignTool**](../devtest/signtool.md) command-line tool, located in the *\bin\xx.x.xxxxx.x\SelfSign* directory of the WDK installation directory, can be used to directly "embed sign" a driver SYS executable file. For performance reasons, boot-start drivers must contain an embedded signature.
+* The [**SignTool**](../devtest/signtool.md) command-line tool, located in the *\bin\xx.x.xxxxx.x\SelfSign* directory of the WDK installation directory, can be used to directly "embed sign" a driver SYS executable file. For performance reasons, boot-start drivers must contain an embedded signature.
 
-- Given an INF file, the [**Inf2Cat**](../devtest/inf2cat.md) command-line tool can be used to create a catalog (.cat) file for a driver package.
+* Given an INF file, the [**Inf2Cat**](../devtest/inf2cat.md) command-line tool can be used to create a catalog (.cat) file for a driver package.
 
-- With Administrator privileges, an unsigned driver can still be installed on x64-based systems starting with Windows Vista. However, the driver will fail to load (and thus execute) because it's unsigned.
+* With Administrator privileges, an unsigned driver can still be installed on x64-based systems starting with Windows Vista. However, the driver will fail to load (and thus execute) because it's unsigned.
 
-- For detailed information about the driving signing process, including the driving signing process for 64-bit versions of Windows Vista and later, see the [Kernel-Mode Code Signing Walkthrough](https://go.microsoft.com/fwlink/p/?linkid=79445) Word document.
+* For detailed information about the driving signing process, including the driving signing process for 64-bit versions of Windows Vista and later, see the [Kernel-Mode Code Signing Walkthrough](https://go.microsoft.com/fwlink/p/?linkid=79445) Word document.
 
-- All kernel-mode components, including custom kernel-mode development tools, must be signed. For more information, see [Introduction to Test-Signing)](../install/introduction-to-test-signing.md).
+* All kernel-mode components, including custom kernel-mode development tools, must be signed. For more information, see [Introduction to Test-Signing)](../install/introduction-to-test-signing.md).
 
 INF files can't be used to read information from the registry or to launch a user-mode application.
 
@@ -52,25 +58,25 @@ To construct your own file system driver INF file, use the following information
 
 An INF file for a file system driver generally contains the following sections.
 
-- [Version (required)](#version-section-required)
+* [Version (required)](#version-section-required)
 
-- [DestinationDirs (optional but recommended)](#destinationdirs-section-optional-but-recommended)
+* [DestinationDirs (optional but recommended)](#destinationdirs-section-optional-but-recommended)
 
-- [SourceDisksNames (required)](#sourcedisksnames-section-required)
+* [SourceDisksNames (required)](#sourcedisksnames-section-required)
 
-- [SourceDisksFiles (required)](#sourcedisksfiles-section-required)
+* [SourceDisksFiles (required)](#sourcedisksfiles-section-required)
 
-- [DefaultInstall (required)](#defaultinstall-section-required)
+* [DefaultInstall (required)](#defaultinstall-section-required)
 
-- [DefaultInstall.Services (required)](#defaultinstallservices-section-required)
+* [DefaultInstall.Services (required)](#defaultinstallservices-section-required)
 
-- [ServiceInstall (required)](#serviceinstall-section-required)
+* [ServiceInstall (required)](#serviceinstall-section-required)
 
-- [DefaultUninstall (optional)](#defaultuninstall-section-optional)
+* [DefaultUninstall (optional)](#defaultuninstall-section-optional)
 
-- [DefaultUninstall.Services (optional)](#defaultuninstallservices-section-optional)
+* [DefaultUninstall.Services (optional)](#defaultuninstallservices-section-optional)
 
-- [Strings (required)](#strings-section-required)
+* [Strings (required)](#strings-section-required)
 
 ### Version Section (required)
 
