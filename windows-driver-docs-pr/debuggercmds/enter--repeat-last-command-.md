@@ -36,9 +36,7 @@ ENTER
 
 ## Remarks
 
-In CDB and KD, pressing the ENTER key by itself at a command prompt reissues the command that you previously entered.
+Pressing the ENTER key by itself at the debugger command prompt reissues the command that you previously entered.
 
-In WinDbg, the ENTER key can have no effect or you can use it to repeat the previous command. You can set this option in the **Options** dialog box. (To open the **Options** dialog box, click **Options** on the **View** menu or click the **Options** button (:::image type="content" source="images/tbopt.png" alt-text="Screenshot of the Options button.":::
-
-If you set ENTER to repeat the last command, but you want to create white space in the [Debugger Command window](../debugger/debugger-command-window.md), use the [**\* (Comment Line Specifier)**](----comment-line-specifier-.md) token and then press ENTER several times.
+If you want to create white space in the [Debugger Command window](../debugger/debugger-command-window.md), use the [**\* (Comment Line Specifier)**](----comment-line-specifier-.md) token and then press ENTER several times.
 
