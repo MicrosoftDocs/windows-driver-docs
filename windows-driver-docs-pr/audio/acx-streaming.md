@@ -203,7 +203,6 @@ NotifyPacketComplete should be called by the driver when it has read the entiret
  
 There will be a delay between NotifyPacketComplete and when the last sample of that packet is actually rendered; this delay is expressed as the result from EvtAcxStreamGetHwLatency.
 
-
 ### Ping-pong buffers
 
 Ping-pong buffers can be used, where one buffer is being read (ping), while the other is being filled (pong). This allows one buffer to be processed while the other collects the next set of data. In ACX the driver internally takes care of switching when a buffer is filled. Once the ping buffer is completely filled, it is notified with a registered callback. In the callback, the processed buffer's address is obtained, and the buffer is resubmitted. Meanwhile, the pong buffer collects data in the background. This mechanism ensures continuous data processing without interruptions.
@@ -214,27 +213,23 @@ When sharing a single buffer between two packets, the second packet should be co
 
 ### Adding additional information to the packet header
 
-It is only possible to add additional information to the packet header information, for example for logging or other purposes at the beginning of the packet for ping/pong event driven streams (where packet count = 2). For timer driven streams where only one packet is allocated, the one packet needs to be fully page aligned (starting on a page boundary and ending on a page boundary) since the packet is mapped into User Mode twice. 
+It is only possible to add additional information to the packet header information, for example for logging or bookkeeping, at the beginning of the packet for ping/pong event driven streams (where packet count = 2). For timer driven streams where only one packet is allocated, the one packet needs to be fully page aligned (starting on a page boundary and ending on a page boundary) since the packet is mapped into User Mode twice. 
 
 :::image type="content" source="images/audio-acx-stream-two-buffers.png" alt-text="Diagram illustrating two buffers and how they are accessed in kernel and user mode memory.":::
-
-TBD - Possibly move diagram earlier.
  
 In this case, the app can write past the end of the first mapping into the second mapping, which writes at the end of the system buffer then at the beginning of the same system buffer.
  
 The single allocated buffer needs to be page aligned because the virtual memory mapping into user mode can only happen on a per-page basis.
 
-### ### Timer driven buffers
+### Timer driven buffers
 
-Timer driven buffers in ACX can be used to ensure an glitch-free audio experiences by maintaining precise timing and synchronization.
-
-For timer driven buffers in ACX:
+Timer driven buffers in ACX can be used to ensure a glitch-free audio experience by maintaining precise timing and synchronization. For timer driven buffers in ACX:
 
 - The client uses the value from EvtAcxStreamGetPresentationPosition to determine how many frames can be written.
 - The presentation position needs to be updated more than once per pass through the buffer. The client will write to the buffer starting at the position it last wrote to through the position the driver reports (which should be the data the hardware consumed since the last time the position was queried).
 - The more granular the position, the less likely there will be glitching.
 - In timer driven buffers the DSP can’t just consume the entire buffer before updating the position.
-- In timer driven, the driver could potentially split the one timer driven buffer into multiple DSP buffers, updating position as the DSP works through each buffer (e.g. a 20ms timer-driven buffer split into 10 2ms buffers would behave fairly well in timer-driven mode)
+- In timer driven, the driver could potentially split the one timer driven buffer into multiple DSP buffers, updating position as the DSP works through each buffer (e.g. a 20ms timer-driven buffer split into 10 2ms buffers would behave reasonably well in timer-driven mode).
 
 ### Large buffer streams packet sizes
 
