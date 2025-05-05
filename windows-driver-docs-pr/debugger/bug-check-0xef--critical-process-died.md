@@ -60,7 +60,7 @@ If you're not able to work with the debugger, these general troubleshooting tips
 
 - If new device drivers or system services have been added recently, try removing or updating them. Try to determine what changed in the system that caused the new bug check code to appear.
 
-- Check the System Log in Event Viewer for other error messages that might help pinpoint the device or driver that's causing the error. For more information, see [Open Event Viewer](https://support.microsoft.com/hub/4338813/windows-help#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+- Check the System Log in Event Viewer for other error messages that might help pinpoint the device or driver that's causing the error. Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 - Check with the manufacturer to see if an updated system BIOS or firmware is available.
 

@@ -14,15 +14,12 @@ api_type:
 
 # Bug Check 0x139: KERNEL\_SECURITY\_CHECK\_FAILURE
 
-
 The KERNEL\_SECURITY\_CHECK\_FAILURE bug check has a value of 0x00000139. This bug check indicates that the kernel has detected the corruption of a critical data structure.
 
 > [!IMPORTANT]
 > This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
-
 ## Bug Check 0x139 KERNEL\_SECURITY\_CHECK\_FAILURE Parameters
-
 
 | Parameter | Description                                                                 |
 |-----------|-----------------------------------------------------------------------------|
@@ -31,7 +28,6 @@ The KERNEL\_SECURITY\_CHECK\_FAILURE bug check has a value of 0x00000139. This b
 | 3         | Address of the exception record for the exception that caused the bug check |
 | 4         | Reserved                                                                    |
 
- 
 
 The following table describes possible values for Parameter 1.
 
@@ -101,7 +97,7 @@ These general troubleshooting tips may be helpful.
 
 -   If new device drivers or system services have been added recently, try removing or updating them. Try to determine what changed in the system that caused the new bug check code to appear.
 
--   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://support.microsoft.com/hub/4338813/windows-help#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+-   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 -   Look in **Device Manager** to see if any devices are marked with the exclamation point (!). Review the events log displayed in driver properties for any faulting driver. Try updating the related driver.
 
@@ -109,17 +105,8 @@ These general troubleshooting tips may be helpful.
 
 -   For additional general troubleshooting information, see [**Analyze Bug Check Blue Screen Data**](blue-screen-data.md).
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md)
 
 [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
-
- 
-
- 
-
-
-
-

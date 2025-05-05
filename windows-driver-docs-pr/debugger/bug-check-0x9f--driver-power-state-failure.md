@@ -27,8 +27,8 @@ Parameter 1 indicates the type of violation.
 |---------- |---------- |---------- |---------- |---- |
 |0x1|The device object|Reserved|Reserved|The device object that is being freed still has an outstanding power request that it has not completed.|
 |0x2|The target device's device object, if it is available|The device object|The driver object, if it is available|The device object completed the I/O request packet (IRP) for the system power state request, but it did not call PoStartNextPowerIrp.|
-|0x3|The physical device object (PDO) of the stack|nt!_TRIAGE_9F_POWER.|The blocked IRP|A device object has been blocking an IRP for too long a time.|
-|0x4|Time-out value, in seconds.|The thread currently holding onto the Plug-and-Play (PnP) lock.|nt!TRIAGE_9F_PNP.|The power state transition timed out waiting to synchronize with the PnP subsystem.|
+|0x3|The physical device object (PDO) of the stack|`nt!_TRIAGE_9F_POWER`.|The blocked IRP|A device object has been blocking an IRP for too long a time.|
+|0x4|Time-out value, in seconds.|The thread currently holding onto the Plug-and-Play (PnP) lock.|`nt!_TRIAGE_9F_PNP`.|The power state transition timed out waiting to synchronize with the PnP subsystem.|
 |0x5|Physical Device Object of the stack|The POP_FX_DEVICE object|Reserved - 0|The device failed to complete a directed power transition within the required amount of time.|
 |0x6|The POP_FX_DEVICE object|Indicates if this was a Directed Power Down(1) or Power Up(0) completion.|Reserved - 0|The device did not complete its Directed Power Transition callback successfully.|
 |0x500|Reserved|The target device's device object, if available|Device object|The device object completed the IRP for the system power state request, but it did not call PoStartNextPowerIrp.|
@@ -225,10 +225,10 @@ The [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command displa
 
 The nt!TRIAGE\_9F\_PNP structure provides additional bug check information that might help you determine the cause of the error. The nt!TRIAGE\_9F\_PNP structure provides a pointer to a structure that contains the list of dispatched (but not completed) PnP IRPs and provides a pointer to the delayed system worker queue.
 
-- Use the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command and specify the **nt!TRIAGE\_9F\_PNP** structure and the address that you found in Arg4.
+- Use the [**dt (Display Type)**](../debuggercmds/dt--display-type-.md) command and specify the `nt!_TRIAGE_9F_PNP` structure and the address that you found in Arg4.
 
 ```dbgcmd
-    kd> dt nt!TRIAGE_9F_PNP 82931b24
+    kd> dt nt!_TRIAGE_9F_PNP 82931b24
        +0x000 Signature        : 0x8001
        +0x002 Revision         : 1
        +0x004 CompletionQueue  : 0x82970e20 _TRIAGE_PNP_DEVICE_COMPLETION_QUEUE
@@ -254,7 +254,7 @@ If you are not equipped to debug this problem using the techniques described abo
 
 - Look in **Device Manager** to see if any devices are marked with the exclamation point (!). Review the events log displayed in driver properties for any faulting driver. Try updating the related driver.
 
-- Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://support.microsoft.com/hub/4338813/windows-help#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+- Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 - To try and isolate the cause, temporally disable power save using control panel, power options. Some driver issues are related to the various states of system hibernation and the suspending and resumption of power.
 
