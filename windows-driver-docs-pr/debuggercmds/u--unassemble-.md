@@ -52,16 +52,11 @@ Specifies that the disassembly will continue even if there is a memory read erro
 
 ## Additional Information
 
-For more information about assembly debugging and related commands, see [Debugging in Assembly Mode](../debugger/debugging-in-assembly-mode.md).
+For more information about assembly debugging and related commands, see [Debugging in Assembly Mode](../debugger/debugging-in-assembly-mode.md) and [Annotated x86 Disassembly](../debugger/annotated-x86-disassembly.md).
 
 ## Remarks
 
-If you do not specify a parameter for the **u** command, the following occurs:
-
-- The default range of eight instructions is used.
-- If **u** has not been used since the last break, the disassembly begins at the current instruction.
-- If **u** has been already used since the last break, the disassembly continues on from the last point, with the direction forward by default or backwards if **ub** is used.
-- After using one of the `u*` commands with no parameters, you can use ENTER to achieve the same effect as running the same command again.
+If you do not specify a parameter for the u command, the disassembly begins at the current address and extends eight instructions on an x86-based or x64-based processor. When you use `ub` without a parameter, the disassembly includes the eight instructions before the current address. For more information on working with debugger commands, see [Using Debugger Commands](using-debugger-commands.md).
 
 Do not confuse this command with the [**up (Unassemble from Physical Memory)**](up--unassemble-from-physical-memory-.md). The **u** command disassembles only virtual memory, while the **up** command disassembles only physical memory.
 
