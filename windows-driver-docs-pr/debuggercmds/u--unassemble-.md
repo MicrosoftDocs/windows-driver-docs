@@ -15,7 +15,7 @@ api_type:
 # u, ub, uu (Unassemble)
 
 
-The **u\\*** commands display an assembly translation of the specified program code in memory.
+The `u*` commands display an assembly translation of the specified program code in memory.
 
 This command should not be confused with the [**~u (Unfreeze Thread)**](-u--unfreeze-thread-.md) command.
 
@@ -35,7 +35,7 @@ Specifies the memory range that contains the instructions to disassemble. For mo
 Specifies the beginning of the memory range to disassemble. Eight instructions on an x86-based processor are unassembled. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
 <span id="_______b______"></span><span id="_______B______"></span> **b**   
-Determines the memory range to disassemble by counting backward. If **ub** *Address* is used, the disassembled range will be the eight or nine byte range ending with *Address*. If a range is specified using the syntax **ub** *Address* **L**_Length_, the disassembled range will be the range of the specified length ending at *Address*.
+Determines the memory range to disassemble by counting backward. If **ub** *Address* is used, the disassembled range will be the eight instructions preceding *Address*. If a range is specified using the syntax **ub** *Address* **L**_Length_, the disassembled range will be the range of the specified length ending at *Address*.
 
 <span id="_______u______"></span><span id="_______U______"></span> **u**   
 Specifies that the disassembly will continue even if there is a memory read error.
@@ -56,7 +56,12 @@ For more information about assembly debugging and related commands, see [Debuggi
 
 ## Remarks
 
-If you do not specify a parameter for the **u** command, the disassembly begins at the current address and extends eight instructions on an x86-based or x64-based processor. When you use **ub** without a parameter, the disassembly includes the eight or nine instructions before the current address.
+If you do not specify a parameter for the **u** command, the following occurs:
+
+- The default range of eight instructions is used.
+- If **u** has not been used since the last break, the disassembly begins at the current instruction.
+- If **u** has been already used since the last break, the disassembly continues on from the last point, with the direction forward by default or backwards if **ub** is used.
+- After using one of the `u*` commands with no parameters, you can use ENTER to achieve the same effect as running the same command again.
 
 Do not confuse this command with the [**up (Unassemble from Physical Memory)**](up--unassemble-from-physical-memory-.md). The **u** command disassembles only virtual memory, while the **up** command disassembles only physical memory.
 
