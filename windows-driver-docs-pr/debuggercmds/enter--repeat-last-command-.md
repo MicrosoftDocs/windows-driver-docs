@@ -32,11 +32,10 @@ ENTER
 |Targets |Live, crash dump      |
 |Platforms|All                  |
 
- 
 
 ## Remarks
 
-Pressing the ENTER key by itself at the debugger command prompt reissues the command that you previously entered.
+In CDB, KD and WinDbg, pressing the ENTER key by itself at the debugger command prompt reissues the command that you previously entered. For more information, see [Using Debugger Commands](using-debugger-commands.md).
 
 If you want to create white space in the [Debugger Command window](../debugger/debugger-command-window.md), use the [**\* (Comment Line Specifier)**](----comment-line-specifier-.md) token and then press ENTER several times.
 
