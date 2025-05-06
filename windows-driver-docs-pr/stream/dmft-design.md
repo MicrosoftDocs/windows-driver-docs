@@ -1,7 +1,7 @@
 ---
 title: Device MFT Design Guide
 description: This article outlines the design of a device-wide extension running in user mode that can be used to perform post-processing common to all streams.
-ms.date: 06/27/2024
+ms.date: 04/30/2025
 ---
 
 # Device MFT design guide
@@ -27,7 +27,7 @@ This article outlines the design of a device-wide extension running in user mode
 
 - Supports any number of inputs coming from the device
 
-- Supports any number of outputs (current requirement is three streams: preview, record and photo)
+- Supports any number of outputs (current requirement is three streams: preview, record, and photo)
 
 - Routes all device controls to Device MFT (which optionally handles or passes it to the device)
 
@@ -75,7 +75,7 @@ Device MFT is a user-mode extension to the capture driver. It's an *m x n* async
 
 The number of input streams of Device MFT must be same as the number of Ks pins exposed by the device. The mediatypes supported by Device MFT's input streams must be same as the mediatypes exposed by the KS pins.
 
-The number of output streams exposed by Device MFT are the streams seen by DeviceSource and capture stack, capture API and applications and can  be one, two, or three stream. The input and output stream counts of Device MFT don't need to be the same. Also, input and output streams don't need to have the same mediatypes, and typically has different mediatypes. The number of mediatypes need not match either.
+The number of output streams exposed by Device MFT are the streams seen by DeviceSource and capture stack, capture API, and applications and can  be one, two, or three stream. The input and output stream counts of Device MFT don't need to be the same. Also, input and output streams don't need to have the same mediatypes, and typically has different mediatypes. The number of mediatypes need not match either.
 
 The first Ks Pin represented in user mode by Devproxy's output stream gets associated with the first input stream of Device MFT, the second Ks Pin represented in user mode by Devproxy's output stream with the second input stream of Device MFT, and so on.
 
@@ -102,7 +102,7 @@ SourceReader starts the DeviceSource when CaptureEngine calls ReadSample. In tur
 
 DTM calls **SetOutputStreamState** on Device MFT's outputs with the streaming state parameter. Device MFT starts streaming in those output streams. DTM starts the streaming on the Devproxy output streams that has valid mediatype set. Devproxy allocates the samples and fetches them from the device. These samples are fed into the Device MFT in the relevant input pin. Device MFT processes these samples and gives the output to DeviceSource. From DeviceSource, the samples flow through SourceReader to CaptureEngine.
 
-CaptureEngine stops individual streams by disabling individual streams through an internal interface on DeviceSource. This is translated into specific output stream disabling on Device MFT through **SetOutputStreamState**. In turn, Device MFT may request to disable specific input streams through **METransformInputStreamStateChanged** event. DTM propagates this to corresponding Devproxy streams.
+CaptureEngine stops individual streams by disabling individual streams through an internal interface on DeviceSource. This is translated into specific output stream disabling on Device MFT through **SetOutputStreamState**. In turn, Device MFT can request to disable specific input streams through **METransformInputStreamStateChanged** event. DTM propagates this to corresponding Devproxy streams.
 
 As long as the Device MFT itself in streaming state, it can request any input stream to transition to any of the valid DeviceStreamState. For example, it could send it to DeviceStreamState_Stop or DeviceStreamState_Run or DeviceStreamState_Pause, and so on, without affecting other streams.
 
@@ -142,7 +142,7 @@ Since this is an *m x n* MFT, there can be repercussions on input streaming pin'
 
 - Output pin is disabled
 
-  - When an application disables one of Device MFT's outputs when the same input is shared by more than one outputs, for optimization, the input may have to change the mediatype. For example, if a 1080p output stream stops, and all the other streams, sharing one input, are streaming at 720p, then the input stream should change its mediatype to 720p to save power and improve performance.
+  - When an application disables one of Device MFT's outputs when the same input is shared by more than one outputs, for optimization, the input might have to change the mediatype. For example, if a 1080p output stream stops, and all the other streams, sharing one input, are streaming at 720p, then the input stream should change its mediatype to 720p to save power and improve performance.
 
 DTM handles [METransformInputStreamStateChanged](./metransforminputstreamstatechanged.md) notifications from Device MFT to change the mediatype and state on Device MFT input and Devproxy output under these conditions.
 
@@ -166,7 +166,7 @@ Two types of flushing are needed while managing Device MFT:
 
   - Output pin-specific flush. This typically happens when a stream is stopped.
 
-All the events that were posted prior to flush are dropped by Device MFT Manager. After flush, the Device MFT resets its internal [METransformHaveOutput](./metransformhaveoutput.md) tracking count.
+All the events that were posted before flush are dropped by Device MFT Manager. After flush, the Device MFT resets its internal [METransformHaveOutput](./metransformhaveoutput.md) tracking count.
 
 ### Drain of Device MFT
 
@@ -190,7 +190,7 @@ Device MFT supports photo confirmation through the **IMFCapturePhotoConfirmation
 
 ### Metadata
 
-Devproxy queries the driver for metadata buffer size and allocates the memory for metadata. Metadata coming from driver is still set by Devproxy on the sample. Device MFT consumes the sample's metadata. Metadata can either be passed on with the sample through its output stream or used for its post processing.
+Devproxy queries the driver for metadata buffer size and allocates the memory for metadata. Metadata coming from te driver is set by Devproxy on the sample. Device MFT consumes the sample's metadata. Metadata can either be passed on with the sample through its output stream or used for its post processing.
 
 With Device MFT supporting any number of inputs, a dedicated input pin could be used just for metadata or out-of-band metadata. The mediatype for this pin is custom and the driver decides the size and number of buffers.
 
@@ -306,7 +306,7 @@ These INF entries result in the following registry keys being entered:
 
 Device MFT is the recommended user mode plugin mechanism for IHVs and OEMs to extend the camera functionality on Windows.
 
-Prior to Windows 10, version 1703, the camera pipeline supported only one DMFT extension plugin.
+Before Windows 10, version 1703, the camera pipeline supported only one DMFT extension plugin.
 
 Starting with Windows 10, version 1703, the Windows camera pipeline supports an optional chain of DMFTs with maximum of two DMFTs.
 
@@ -328,7 +328,7 @@ Requirements on DMFTs:
 
 - The input pin count of the DMFT must match with the output pin count of previous DMFT. Otherwise DTM would fail during initialization. However, the input and output pin counts of the same DMFT don't need to match.
 
-- DMFT needs to support interfaces - IMFDeviceTransform, IMFShutdown, IMFRealTimeClientEx, IKsControl, and IMFMediaEventGenerator; IMFTransform may need to be supported if there's MFT0 configured or the next DMFT in the chain requires IMFTransform support.
+- DMFT needs to support interfaces - IMFDeviceTransform, IMFShutdown, IMFRealTimeClientEx, IKsControl, and IMFMediaEventGenerator; IMFTransform might need to be supported if there's MFT0 configured or the next DMFT in the chain requires IMFTransform support.
 
 - On 64-bit systems that don't make use of Frame Server, both 32-bit and 64-bit DMFTs must be registered. Given that a USB camera might get plugged into an arbitrary system, for "external" (or noninbox) USB cameras, the USB camera vendor should supply both 32-bit and 64-bit DMFTs.
 

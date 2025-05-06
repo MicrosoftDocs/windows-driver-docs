@@ -3,11 +3,14 @@ title: MBIMEx 4.0 – 5G SA Phase 2 support
 description: MBIMEx 4.0 5G SA Phase 2 includes support for end-to-end URSP handling and multiple concurrent eMBB network slices. 
 keywords:
 - MBIMEx 4.0 – 5G SA Phase 2 support
-ms.date: 05/23/2022
+ms.date: 05/01/2025
 ms.custom: UpdateFrequency3
 ---
 
 # MBIMEx 4.0 – 5G SA Phase 2 support
+
+> [!NOTE]
+> The release of MBIMEx 4.0, which includes 5G network slicing using URSP rules on Windows laptops, is still on hold. This hold also applies to IHV, OEM, and other partner testing involving the special capability mentioned in Microsoft documentation. We continue to welcome signals, use cases, and opportunities from our partners and will continue to reevaluate this decision. 
 
 Windows 11, version 22H2 previews the 5G SA Phase 2 feature set. Additionally, it supports all Windows 11 cellular features such as 5G SA Phase 1. The 5G SA Phase 2 feature set includes support for end-to-end URSP handling and multiple concurrent eMBB network slices. 
 
@@ -21,4 +24,4 @@ MBIMEx 4.0 modifies the following existing CIDs:
 
 :::image type="content" source="images/MBIMEx-4.0-modified-CIDs.png" alt-text="Table displaying modified CIDs in MBIMEx 4.0.":::
 
-By default, Windows 11, version 22H2 announces MBIMEx 3.0 as the highest supported MBIMEx version by the host. A special capability is available to change the default to MBIMEx 4.0 for IHVs and driver developers. Contact your TAM for support if a Microsoft engineering partner needs the capability for testing and development.
+By default, Windows 11, version 22H2 announces MBIMEx 3.0 as the highest supported MBIMEx version by the host.

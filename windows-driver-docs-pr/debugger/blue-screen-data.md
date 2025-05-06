@@ -26,7 +26,7 @@ Each bug check code has four associated parameters that provide information. The
 
 There are multiple ways to gather the four stop code parameters.
 
-- Examine the Windows system log in the Event Viewer. The event properties for the bug check will list the four stop code parameters. For more information, see [Open Event Viewer](/microsoft-365/security/defender-endpoint/event-error-codes).
+- Examine the Windows system log in the Event Viewer. The event properties for the bug check will list the four stop code parameters. 
 
 - Load the generated dump file and use the [!analyze](../debuggercmds/-analyze.md) command with the debugger attached. For more information, see [Analyzing a kernel-mode dump file with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md).
 
