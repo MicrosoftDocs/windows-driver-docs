@@ -1,7 +1,8 @@
 ---
 title: USB Selective Suspend
 description: This article provides information about choosing the correct mechanism for the selective suspend feature.
-ms.date: 04/22/2025
+ms.date: 05/07/2025
+ai-usage: ai-assisted
 ---
 
 # USB selective suspend
@@ -9,24 +10,22 @@ ms.date: 04/22/2025
 > [!NOTE]
 > This article is for device driver developers. If you're experiencing difficulty with a USB device, see [Fix USB-C problems in Windows](https://support.microsoft.com/windows/fix-usb-c-problems-in-windows-f4e0e529-74f5-cdae-3194-43743f30eed2)
 
-The USB selective suspend feature allows the hub driver to suspend an individual port without affecting the operation of the other ports on the hub. Selective suspension of USB devices is especially useful in portable computers since it helps conserve battery power. Many devices, such as biometric scanners, only require power intermittently. Suspending such devices, when the device isn't in use, reduces overall power consumption. More importantly, any device that isn't selectively suspended might prevent the USB host controller from disabling its transfer schedule, which resides in system memory. Direct memory access (DMA) transfers by the host controller to the scheduler can prevent the system's processors from entering deeper sleep states, such as C3.
+The USB selective suspend feature allows the hub driver to suspend an individual port without affecting the operation of the other ports on the hub. This functionality is useful in portable computers as it helps conserve battery power. Many devices, such as biometric scanners, only require power intermittently. Suspending such devices, when they aren't in use, reduces overall power consumption. More importantly, any device that isn't selectively suspended might prevent the USB host controller from disabling its transfer schedule, which resides in system memory. Direct memory access (DMA) transfers by the host controller to the scheduler can prevent the system's processors from entering deeper sleep states, such as C3.
 
-There are two different mechanisms to selectively suspend a USB device: idle request IRPs (**[IOCTL_INTERNAL_USB_SUBMIT_IDLE_NOTIFICATION](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)**) and set power IRPs (**[IRP_MN_SET_POWER](../kernel/irp-mn-set-power.md)**). The mechanism to use depends on the operating system and the type of device: composite or noncomposite.
+Selective suspend is enabled by default. Microsoft strongly recommends *not disabling* selective suspend.
+
+Client drivers shouldn't try to determine whether selective suspend is enabled before sending idle requests. They should submit idle requests whenever the device is idle. If the idle request fails, the client driver should reset the idle timer and retry.
+
+To selectively suspend a USB device, two different mechanisms exist: idle request IRPs (**[IOCTL_INTERNAL_USB_SUBMIT_IDLE_NOTIFICATION](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)**) and set power IRPs (**[IRP_MN_SET_POWER](../kernel/irp-mn-set-power.md)**). The mechanism to use depends on the type of device: composite or noncomposite.
 
 ## Selecting a selective suspend mechanism
 
-Client drivers for an interface on a composite device, that enable the interface for remote wake-up with a wait wake IRP (IRP_MN_WAIT_WAKE), must use the idle request IRP (**[IOCTL_INTERNAL_USB_SUBMIT_IDLE_NOTIFICATION](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)**) mechanism to selectively suspend a device.
+Client drivers for an interface on a composite device that enable the interface for remote wake-up with a wait wake IRP (IRP_MN_WAIT_WAKE), must use the idle request IRP (**[IOCTL_INTERNAL_USB_SUBMIT_IDLE_NOTIFICATION](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)**) mechanism to selectively suspend a device.
 
 For information about remote wake-up, see:
 
 - [Remote wake-up of USB devices](./remote-wakeup-of-usb-devices.md)
 - [Overview of wait/wake operation](../kernel/overview-of-wait-wake-operation.md)
-
-The version of the Windows operating system determines the way drivers for noncomposite devices enable selective suspend.
-
-- **Windows XP**: On Windows XP, all client drivers must use idle request IRPs (**[IOCTL_INTERNAL_USB_SUBMIT_IDLE_NOTIFICATION](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)**) to power down their devices. Client drivers must not use WDM power IRPs to selectively suspend their devices. Doing so prevents other devices from selectively suspending.
-
-- **Windows Vista and later versions of Windows**: Driver writers have more choices for powering down devices in Windows Vista and newer versions of Windows. Although Windows Vista supports the Windows idle request IRP mechanism, drivers aren't required to use it.
 
 This section explains the Windows selective suspend mechanism.
 
@@ -38,7 +37,7 @@ In the callback routine, the client driver must cancel all pending I/O operation
 
 The bus driver doesn't complete the idle request IRP after calling the idle notification callback routine. Instead, the bus driver holds the idle request IRP pending until one of the following conditions is true:
 
-- An **IRP_MN_SUPRISE_REMOVAL** or **IRP_MN_REMOVE_DEVICE IRP** is received. When one of these IRPs is received the idle request IRP completes with STATUS_CANCELLED.
+- An **IRP_MN_SURPRISE_REMOVAL** or **IRP_MN_REMOVE_DEVICE IRP** is received. When one of these IRPs is received, the idle request IRP completes with STATUS_CANCELLED.
 - The bus driver receives a request to put the device into a working power state (**D0**). Upon receiving this request, the bus driver completes the pending idle request IRP with STATUS_SUCCESS.
 
 The following restrictions apply to the use of idle request IRPs:
@@ -66,9 +65,8 @@ The following WDM example code illustrates the steps that a device driver takes 
     sizeof(struct _USB_IDLE_CALLBACK_INFO));
     idleCallbackInfo->IdleCallback = IdleNotificationCallback;
     // Put a pointer to the device extension in member IdleContext
-    idleCallbackInfo->IdleContext = (PVOID) DeviceExtension;  
-    nextStack->Parameters.DeviceIoControl.Type3InputBuffer =
-    idleCallbackInfo;
+    idleCallbackInfo->IdleContext = (PVOID) DeviceExtension;
+    nextStack->Parameters.DeviceIoControl.Type3InputBuffer = idleCallbackInfo;
     ```
 
 1. Set a completion routine.
@@ -120,8 +118,8 @@ The following list indicates how a completion routine for an idle request should
 | Status Code | Description |
 |---|---|
 | STATUS_SUCCESS | Indicates that the device should no longer be suspended. However, drivers should verify that their devices are powered, and put them in **D0** if they aren't already in **D0**. |
-| STATUS_CANCELLED | The bus driver completes the idle request IRP with STATUS_CANCELLED in any of the following circumstances:<ul><li>The device driver canceled the IRP.</li><li>A system power state change is required.</li><li>On Windows XP, the device driver for one of the connected USB devices failed to put its device in **D2** while executing its idle request callback routine. As a result, the bus driver completed all pending idle request IRPs.</li></ul> |
-| STATUS_POWER_STATE_INVALID | Indicates that the device driver requested a **D3** power state for its device. When this occurs, the bus driver completes all pending idle IRPs with STATUS_POWER_STATE_INVALID. |
+| STATUS_CANCELLED | The bus driver completes the idle request IRP with STATUS_CANCELLED in any of the following circumstances:<ul><li>The device driver canceled the IRP.</li><li>A system power state change is required.</li></ul> |
+| STATUS_POWER_STATE_INVALID | Indicates that the device driver requested a **D3** power state for its device. When this request occurs, the bus driver completes all pending idle IRPs with STATUS_POWER_STATE_INVALID. |
 | STATUS_DEVICE_BUSY | Indicates that the bus driver already holds an idle request IRP pending for the device. Only one idle IRP can be pending at a time for a given device. Submitting multiple idle request IRPs is an error on the part of the power policy owner. The driver writer addresses the error. |
 
 The following code example shows a sample implementation for the idle request completion routine.
@@ -181,12 +179,10 @@ IdleNotificationRequestComplete(
             break;
         }
 
-
         // If IRP completes with error, issue a SetD0
         //Increment the I/O count because
         //a new IRP is dispatched for the driver.
         //This call is not shown.
-
         powerState.DeviceState = PowerDeviceD0;
 
         // Issue a new IRP
@@ -237,9 +233,7 @@ A device driver must take the following actions in its idle notification callbac
 
 - Request an **[IRP_MN_WAIT_WAKE](../kernel/irp-mn-wait-wake.md)** IRP for the device if the device must be armed for remote wakeup.
 - Cancel all I/O and prepare the device to go to a lower power state.
-- Put the device in a WDM sleep state by calling **[PoRequestPowerIrp](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp)** with the *PowerState* parameter set to the enumerator value PowerDeviceD2 (defined in wdm.h; ntddk.h). In Windows XP, a driver must not put its device in PowerDeviceD3, even if the device isn't armed for remote wake.
-
-In Windows XP, a driver must rely on an idle notification callback routine to selectively suspend a device. If a driver running in Windows XP puts a device in a lower power state directly without using an idle notification callback routine, it might prevent other devices in the USB device tree from suspending.
+- Put the device in a WDM sleep state by calling **[PoRequestPowerIrp](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp)** with the *PowerState* parameter set to the enumerator value PowerDeviceD2 (defined in wdm.h; ntddk.h).
 
 Both the hub driver and the [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md) call the idle notification callback routine at IRQL = PASSIVE_LEVEL. The callback routine can then block while it waits for the power state change request to complete.
 
@@ -258,55 +252,9 @@ The idle notification callback routine should determine whether its device has a
 
 The USB 2.0 Specification defines global suspend as the suspension of the entire bus behind a USB host controller by ceasing all USB traffic on the bus, including start-of-frame packets. Downstream devices that aren't already suspended detect the Idle state on their upstream port and enter the suspend state on their own. Windows doesn't implement global suspend in this manner. Windows always selectively suspends each USB device behind a USB host controller before it ceases all USB traffic on the bus.
 
-- [Conditions for global suspend in Windows 7](#conditions-for-global-suspend-in-windows-7)
-- [Conditions for global suspend in Windows Vista](#conditions-for-global-suspend-in-windows-vista)
-- [Conditions for global suspend in Windows XP](#conditions-for-global-suspend-in-windows-xp)
-- [Related topics](#related-topics)
+### Conditions for global suspend
 
-### Conditions for global suspend in Windows 7
-
-Windows 7 is more aggressive about selectively suspending USB hubs than Windows Vista. The Windows 7 USB hub driver selectively suspends any hub where all of its attached devices are in **D1**, **D2**, or **D3** device power state. The entire bus enters global suspend once all USB hubs are selectively suspended. The Windows 7 USB driver stack treats a device as Idle whenever the device is in a WDM device state of **D1**, **D2**, or **D3**.
-
-### Conditions for global suspend in Windows Vista
-
-The requirements for doing a global suspend are more flexible in Windows Vista than in Windows XP.
-
-In particular, the USB stack treats a device as Idle in Windows Vista whenever the device is in a WDM device state of **D1**, **D2**, or **D3**.
-
-The following diagram illustrates a scenario that might occur in Windows Vista.
-
-:::image type="content" source="images/global-suspendlh.png" alt-text="Diagram illustrating a global suspend in Windows Vista.":::
-
-This diagram illustrates a situation similar to the one depicted in [Conditions for global suspend in Windows XP](#conditions-for-global-suspend-in-windows-xp). However, in this case Device 3 qualifies as an Idle device. Since all devices are idle, the bus driver is able to call the idle notification callback routines associated with the pending idle request IRPs. Each driver suspends its device and the bus driver suspends the USB host controller as soon as it's safe to do so.
-
-On Windows Vista all non-hub USB devices must be in **D1**, **D2**, or **D3** before global suspend is initiated, at which time all USB hubs, including the root hub, is suspended. This means that any USB client driver that doesn't support selective suspend, prevents the bus from entering global suspend.
-
-### Conditions for global suspend in Windows XP
-
-In order to maximize power savings on Windows XP, it's important that every device driver uses idle request IRPs to suspend its device. If one driver suspends its device with an **[IRP_MN_SET_POWER](../kernel/irp-mn-set-power.md)** request instead of an idle request IRP, it could prevent other devices from suspending.
-
-The following diagram illustrates a scenario that might occur in Windows XP.
-
-:::image type="content" source="images/global-suspendxp.png" alt-text="Diagram illustrating a global suspend in Windows XP.":::
-
-In this figure, device 3 is in power state D3 and doesn't have an idle request IRP pending. Device 3 doesn't qualify as an idle device for purposes of a global suspend in Windows XP, because it doesn't have an idle request IRP pending with its parent. This prevents the bus driver from calling the idle request callback routines associated with the drivers of other devices in the tree.
-
-## Enabling selective suspend
-
-Selective suspend is disabled for upgrade versions of Microsoft Windows XP. It's enabled for clean installations of Windows XP, Windows Vista, and later versions of Windows.
-
-To enable selective suspend support for a given root hub and its child devices, select the checkbox on the **Power Management** tab for the USB root hub in **Device Manager**.
-
-Alternatively, you can enable or disable selective suspend by setting the value of **HcDisableSelectiveSuspend** under the software key of the USB port driver. A value of 1 disables selective suspend. A value of 0 enables selective suspend.
-
-For instance, the following lines in Usbport.inf disable selective suspend for a Hydra OHCI controller:
-
-```cpp
-[OHCI_NOSS.AddReg.NT]
-HKR,,"HcDisableSelectiveSuspend",0x00010001,1
-```
-
-Client drivers shouldn't try to determine whether selective suspend is enabled before sending idle requests. They should submit idle requests whenever the device is idle. If the idle request fails the client driver should reset the idle timer and retry.
+The USB hub driver selectively suspends any hub where all of its attached devices are in **D1**, **D2**, or **D3** device power state. The entire bus enters global suspend once all USB hubs are selectively suspended. The USB driver stack treats a device as Idle whenever the device is in a WDM device state of **D1**, **D2**, or **D3**.
 
 ## Related topics
 
