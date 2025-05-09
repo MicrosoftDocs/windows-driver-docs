@@ -92,7 +92,7 @@ Strategic planning reduces risk, improves user experience, and ensures efficient
 - Plan for failure scenarios by defining rollback criteria, identifying rollback candidates, and documenting escalation procedures.
 - Ensure alignment between engineering, QA, and business stakeholders to meet quality and delivery expectations.
 
-Learn more in [Developing a Deployment Plan](deployment-plan.md).
+Learn more in [Create a Deployment Plan](/windows/deployment/update/create-deployment-plan).
 
 ## Distribution
 
