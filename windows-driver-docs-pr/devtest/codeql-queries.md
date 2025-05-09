@@ -4,7 +4,7 @@ description: Reference for the CodeQL queries and suites required to test Window
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 04/30/2025
+ms.date: 05/09/2025
 ---
 
 # CodeQL Queries and Suites
@@ -228,3 +228,8 @@ The *windows-driver-suites/windows_recommended_partial.qls* file contains these 
       - drivers/wdm/queries/PendingStatusError/PendingStatusError.ql
       - drivers/wdm/queries/WrongDispatchTableAssignment/WrongDispatchTableAssignment.ql
 ```
+## Related Content
+
+- [Run the CodeQL analysis on your driver code](/devtest/static-tools-and-codeql.md)
+- [CodeQL Overview](/devtest/codeql-overview.md)
+- [CodeQL FAQ](/devtest/codeql-faq.md)

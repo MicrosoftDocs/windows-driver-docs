@@ -331,7 +331,7 @@ Further instructions for the Static Tools Logo HLK Test and guidance on where to
 
 ## Troubleshooting
 
-If you are certifying with WHCP, first ensure you are using the HLK version associated with the Windows release you are targeting, the associated branch in the Windows Driver Developer Supplemental Tools repository, and the subsequent CodeQL CLI version. For HLK/Windows Release compatibility matrix, see [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) and for Windows Release/Windows Driver Developer Supplemental Tools repo branch/CodeQL CLI version, see the WHCP table in the [Select the CodeQL version](#1-select-the-codeql-version) section.
+If you are certifying with WHCP, first ensure you are using the HLK version associated with the Windows release you are targeting, the associated branch in the Windows Driver Developer Supplemental Tools repository, and the subsequent CodeQL CLI version. For HLK/Windows Release compatibility matrix, see [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) and for Windows Release/Windows Driver Developer Supplemental Tools repo branch/CodeQL CLI version, see the WHCP table in the [Select the CodeQL version](#select-the-appropriate-codeql-version) section.
 
 ### Errors and Workarounds
 
@@ -418,3 +418,6 @@ In this example, a small batch file is created in the target location and called
 
 ## Related content
 
+- [CodeQL FAQ](/devtest/codeql-faq.md)
+- [CodeQL and the Static Tools Logo Test](/devtest/codeql-overview.md)
+- [CodeQL Queries and Suites](/devtest/codeql-queries.md)
