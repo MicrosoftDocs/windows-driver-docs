@@ -38,8 +38,8 @@ Usage of CodeQL for the purpose of certifying for the Windows Hardware Compatibi
 
 ## Related Content
 
-- [Run the CodeQL analysis on your driver code](/devtest/static-tools-and-codeql.md)
-- [Frequently Asked Questions for CodeQL tests](/devtest/codeql-faq.md)
-- [CodeQL Queries and Suites](/devtest/codeql-queries.md)
+- [Run the CodeQL analysis on your driver code](./static-tools-and-codeql.md)
+- [Frequently Asked Questions for CodeQL tests](./codeql-faq.md)
+- [CodeQL Queries and Suites](./codeql-queries.md)
 
 

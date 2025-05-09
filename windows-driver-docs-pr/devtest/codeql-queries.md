@@ -230,6 +230,6 @@ The *windows-driver-suites/windows_recommended_partial.qls* file contains these 
 ```
 ## Related Content
 
-- [Run the CodeQL analysis on your driver code](/devtest/static-tools-and-codeql.md)
-- [CodeQL Overview](/devtest/codeql-overview.md)
-- [CodeQL FAQ](/devtest/codeql-faq.md)
+- [Run the CodeQL analysis on your driver code](./static-tools-and-codeql.md)
+- [CodeQL Overview](./codeql-overview.md)
+- [CodeQL FAQ](./codeql-faq.md)

@@ -418,6 +418,6 @@ In this example, a small batch file is created in the target location and called
 
 ## Related content
 
-- [CodeQL FAQ](/devtest/codeql-faq.md)
-- [CodeQL and the Static Tools Logo Test](/devtest/codeql-overview.md)
-- [CodeQL Queries and Suites](/devtest/codeql-queries.md)
+- [CodeQL FAQ](./codeql-faq.md)
+- [CodeQL and the Static Tools Logo Test](./codeql-overview.md)
+- [CodeQL Queries and Suites](./codeql-queries.md)

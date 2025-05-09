@@ -60,6 +60,6 @@ Send feedback and questions to [stlogohelp@microsoft.com](mailto:stlogohelp@micr
 
 ## Related Content
 
-- [Run the CodeQL analysis on your driver code](/devtest/static-tools-and-codeql.md)
-- [CodeQL Overview](/devtest/codeql-overview.md)
-- [CodeQL Queries and Suites](/devtest/codeql-queries.md)
+- [Run the CodeQL analysis on your driver code](./static-tools-and-codeql.md)
+- [CodeQL Overview](./codeql-overview.md)
+- [CodeQL Queries and Suites](./codeql-queries.md)
