@@ -21,8 +21,8 @@ In this article, you:
 ## Select the appropriate CodeQL version for your driver
 
 > [!NOTE]
-> Visual Studio 17.8 breaks compatibility with older versions of CodeQL used in the WHCP_21H2 and WHCP_22H2 branches.
- CodeQL CLI version 2.15.4 has been validated for use with WHCP 21H2 and WHCP 22H2 when using Visual Studio 17.8 or greater. When using Visual Studio 17.7 or earlier, use version 2.4.6 or version 2.6.3. For the WHCP Program, use the CodeQL CLI version and Windows release you are certifying for - version 2.4.6, version 2.6.3, or version 2.15.4. For general use with the main branch, use CodeQL CLI version 2.15.4.
+> Visual Studio (VS) 17.8 breaks compatibility with older versions of CodeQL used in the WHCP_21H2 and WHCP_22H2 branches.
+ CodeQL CLI version 2.15.4 is validated for use with WHCP 21H2 and WHCP 22H2 when using Visual Studio 17.8 or greater. When using Visual Studio 17.7 or earlier, use version 2.4.6 or version 2.6.3. For the WHCP Program, use the CodeQL CLI version and Windows release you're certifying for - version 2.4.6, version 2.6.3, or version 2.15.4. For general use with the main branch, use CodeQL CLI version 2.15.4.
 
 Select the tab for your scenario:
 
@@ -59,7 +59,7 @@ For general use of CodeQL with other versions of Windows outside of the WHCP pro
    C:\> mkdir C:\codeql-home
    ```
 
-1. Refer to the previous tables to select which version of CodeQL CLI to use in accordance with the desired branch of Microsoft's driver queries. If you are performing analysis as part of the WHCP program, refer to the table **For Windows Hardware Compatibility Program Use**, otherwise use Main branch and [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4). Using a different version may result in a database incompatible with the libraries.
+1. Refer to the previous tables to select which version of CodeQL CLI to use in accordance with the desired branch of Microsoft's driver queries. If you're performing analysis as part of the WHCP program, refer to the table **For Windows Hardware Compatibility Program Use**, otherwise use Main branch and [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4). Using a different version may result in a database incompatible with the libraries.
 
 1. Navigate to the CodeQL CLI binaries release associated with the previous tables, and download the zip file in accordance with your project's architecture. For example, for 64 bit Windows *codeql-win64.zip*.
 
@@ -158,7 +158,7 @@ CodeQL installs the query packs to the default directory:
 
 ### Download the Windows driver query suites
 
-Microsoft provides two additional query suites to simplify the end-to-end driver developer workflow. The *windows_driver_recommended.qls* suite is a superset of all the queries Microsoft has deemed valuable for driver developers, and *windows_driver_mustfix.qls* suite contains queries deemed **"Must-Fix"** for WHCP certification. *windows_driver_mustfix.qls* must be run and passed in order to pass the Static Tools Logo Test. 
+Microsoft provides two query suites to simplify the end-to-end driver developer workflow. The *windows_driver_recommended.qls* suite is a superset of all the queries Microsoft deems valuable for driver developers, and *windows_driver_mustfix.qls* suite contains queries deemed **"Must-Fix"** for WHCP certification. *windows_driver_mustfix.qls* must be run and passed in order to pass the Static Tools Logo Test. 
 
 Copy the two query suite files from [https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/suites](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/suites) to your local PC.
 
@@ -210,10 +210,10 @@ At this point, the database creation is complete and the next step is to perform
 
 1. Use the CodeQL command to analyze your database using the following parameters:
 
-    - the first parameter is a link to your database directory. For example, *C:\codeql-home\databases\MyDriverDatabase*. (Note: this command will fail if the directory doesn't exist.)
+    - the first parameter is a link to your database directory. For example, *C:\codeql-home\databases\MyDriverDatabase*. (Note: this command fails if the directory doesn't exist.)
     - `--download` flag tells CodeQL to download dependencies before running the queries.
     - `--format` is the file type of the output file. Options include: SARIF and CSV. (**For WHCP Users** use SARIF format.)
-    - `--output` is the path to where you want the output file, be sure to include the format in the file name. (This command will fail if the directory doesn't already exist.)
+    - `--output` is the path to where you want the output file, be sure to include the format in the file name. (This command fails if the directory doesn't already exist.)
     - the query specifiers parameter is a space separated list of arguments which can include:
         - a path to a query file
         - a path to a directory containing query files
@@ -263,7 +263,7 @@ These instructions only apply when using both Visual Studio 17.7 or earlier, alo
     1.  Use the CodeQL command to create a database using the following parameters:
 
         - The first parameter is a link to your database directory, for example: C:\codeql-home\databases\MyDriverDatabase. (Note: this command will fail if the directory already exists).
-        - `--language` or `-l` is the language or languages your source code is in (this can be a comma separated list, for example [cpp, javascript]).
+        - `--language` or `-l` is the language or languages your source code is in (the parameters can be a comma separated list, for example [cpp, javascript]).
         - `-- source` or `-s` is the path to your source code.
         - `--command` or `-c` is your build command or the path to your build file.
     
@@ -304,7 +304,7 @@ These instructions only apply when using both Visual Studio 17.7 or earlier, alo
 
 ## View and Interpret Results
 
-We will be focusing on SARIF format for this section as it is what is required for the following steps, though you are welcome to use CSV format if it suits your needs better.
+We will be focusing on SARIF format for this section as it is what is required for the following steps, though you're welcome to use CSV format if it suits your needs better.
 
 Static Analysis Results Interchange Format (SARIF) is a JSON type format used for sharing static analysis results. Read more about the standard at [OASIS Static Analysis Results Interchange Format (SARIF)](https://github.com/oasis-tcs/sarif-spec), how CodeQL uses [SARIF Output](https://codeql.github.com/docs/codeql-cli/sarif-output/#sarif-output), and [the schema json](https://github.com/oasis-tcs/sarif-spec/blob/main/sarif-2.1/schema/sarif-schema-2.1.0.json).
 
@@ -328,7 +328,7 @@ Further instructions for the Static Tools Logo HLK Test and guidance on where to
 
 ## Troubleshooting
 
-If you are certifying with WHCP, first ensure you are using the HLK version associated with the Windows release you are targeting, the associated branch in the Windows Driver Developer Supplemental Tools repository, and the subsequent CodeQL CLI version. For HLK/Windows Release compatibility matrix, see [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) and for Windows Release/Windows Driver Developer Supplemental Tools repo branch/CodeQL CLI version, see the WHCP table in the [Select the CodeQL version](#select-the-appropriate-codeql-version-for-your-driver) section.
+If you're certifying with WHCP, first ensure you're using the HLK version associated with the Windows release you're targeting, the associated branch in the Windows Driver Developer Supplemental Tools repository, and the subsequent CodeQL CLI version. For HLK/Windows Release compatibility matrix, see [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) and for Windows Release/Windows Driver Developer Supplemental Tools repo branch/CodeQL CLI version, see the WHCP table in the [Select the CodeQL version](#select-the-appropriate-codeql-version-for-your-driver) section.
 
 ### Errors and Workarounds
 
@@ -370,7 +370,7 @@ Once a suppression is present and recognized, the resulting SARIF file will incl
 
 ### Visual Studio Post-Build Event 
 
-If you are building the driver using Visual Studio, you can configure CodeQL queries to run as a post build event.
+If you're building the driver using Visual Studio, you can configure CodeQL queries to run as a post build event.
 
 In this example, a small batch file is created in the target location and called as a post build event. For more information about Visual Studio C++ build events, see [Specifying build events](/cpp/build/specifying-build-events).
 
