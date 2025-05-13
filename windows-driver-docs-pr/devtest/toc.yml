@@ -12,7 +12,7 @@
     items:
     - name: CodeQL Overview
       href: codeql-overview.md
-    - name: Run the CodeQL analysis
+    - name: Run the CodeQL analysis on your driver code
       href: static-tools-and-codeql.md
     - name: CodeQL Queries and Suites
       href: codeql-queries.md
