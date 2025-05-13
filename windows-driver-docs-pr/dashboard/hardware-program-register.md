@@ -52,7 +52,7 @@ To register for the Hardware Developer Program:
 1. Provide a legal contact with the authority to sign agreements on behalf of your company.
 
     > [!IMPORTANT]
-    > **Microsoft emails the legal contact for account verification purposes. It's important to respond to the email.**
+    > Microsoft emails the legal contact for account verification purposes. It's important to respond to the email.
 
 1. If you're authorized by your company to accept legal agreements, review the agreement terms and select **Accept and Continue**. If you aren't authorized to accept agreements, pause the registration and get someone who is authorized to review and select **Accept and Continue**.
 
@@ -61,6 +61,9 @@ To register for the Hardware Developer Program:
     :::image type="content" source="./images/hardware-program-register/registration-manage-certificates.png" alt-text="Screenshot of the Microsoft Partner Center manage certificates page.":::
 
 1. After uploading the certificate, monitor the global administrator mail box for a questionnaire requiring more information about your business. Complete the questionnaire when received.
+
+    > [!IMPORTANT]
+    > Enable the global administrator mailbox to receive the questionnaire or provide a preferred email address under **My Preferences**. Registration doesn't proceed until the questionnaire is completed.
 
 1. After all approvals are complete, your global administrator will receive an email confirming approvals and next steps.
 
