@@ -105,7 +105,7 @@ For general use of CodeQL with other versions of Windows outside of the WHCP pro
      generate  Generate formatted QL documentation.
    ```
 
-For help on a specific command, run *codeql <command> --help*. For example:  
+For help on a specific command, run *codeql \<command\> --help*. For example:  
 
 `codeql create --help`  
 
@@ -131,7 +131,7 @@ CodeQL introduced CodeQL Packages (*CodeQL packs* or *query packs*) in version 2
 > [!NOTE]
 > It is possible to skip step 1, as the `--download` option downloads any necessary queries later when running the analysis process. 
 
-1. Download the correct version of the microsoft/windows-drivers pack from the [Windows Hardware Compatibility Program Use](#select-the-appropriate-codeql-version)table. Specify the `@<version>` in the following command.
+1. Download the correct version of the microsoft/windows-drivers pack from the [Windows Hardware Compatibility Program Use](#select-the-appropriate-codeql-version-for-your-driver)table. Specify the `@<version>` in the following command.
 
 ```console
 C:\codeql-home\> codeql pack download microsoft/windows-drivers@<version>
@@ -242,7 +242,7 @@ These instructions only apply when using both Visual Studio 17.7 or earlier, alo
 
     `git clone https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools.git --recurse-submodules`
 
-3. Refer to the [Windows Hardware Compatibility Program Use](#select-the-appropriate-codeql-version) table to identify the correct branch for the version of Windows you wish to certify for.
+3. Refer to the [Windows Hardware Compatibility Program Use](#select-the-appropriate-codeql-version-for-your-driver) table to identify the correct branch for the version of Windows you wish to certify for.
 
 4. Use the `git checkout` command to checkout the identified branch.
 
@@ -328,7 +328,7 @@ Further instructions for the Static Tools Logo HLK Test and guidance on where to
 
 ## Troubleshooting
 
-If you are certifying with WHCP, first ensure you are using the HLK version associated with the Windows release you are targeting, the associated branch in the Windows Driver Developer Supplemental Tools repository, and the subsequent CodeQL CLI version. For HLK/Windows Release compatibility matrix, see [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) and for Windows Release/Windows Driver Developer Supplemental Tools repo branch/CodeQL CLI version, see the WHCP table in the [Select the CodeQL version](#select-the-appropriate-codeql-version) section.
+If you are certifying with WHCP, first ensure you are using the HLK version associated with the Windows release you are targeting, the associated branch in the Windows Driver Developer Supplemental Tools repository, and the subsequent CodeQL CLI version. For HLK/Windows Release compatibility matrix, see [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) and for Windows Release/Windows Driver Developer Supplemental Tools repo branch/CodeQL CLI version, see the WHCP table in the [Select the CodeQL version](#select-the-appropriate-codeql-version-for-your-driver) section.
 
 ### Errors and Workarounds
 
