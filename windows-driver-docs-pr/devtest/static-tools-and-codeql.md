@@ -131,7 +131,7 @@ CodeQL introduced CodeQL Packages (*CodeQL packs* or *query packs*) in version 2
 > [!NOTE]
 > It is possible to skip step 1, as the `--download` option downloads any necessary queries later when running the analysis process. 
 
-1. Download the correct version of the microsoft/windows-drivers pack from the [Windows Hardware Compatibility Program Use](#select-the-appropriate-codeql-version-for-your-driver)table. Specify the `@<version>` in the following command.
+1. Download the correct version of the microsoft/windows-drivers pack from the [Windows Hardware Compatibility Program Use](#select-the-appropriate-codeql-version-for-your-driver) table. Specify the `@<version>` in the following command.
 
 ```console
 C:\codeql-home\> codeql pack download microsoft/windows-drivers@<version>
