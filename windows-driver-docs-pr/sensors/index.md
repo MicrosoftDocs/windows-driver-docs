@@ -2,7 +2,7 @@
 title: Sensor Device Driver Design Guide
 description: Sensor device driver design guide
 ms.assetid: 74e8ae08-3e61-41be-aed0-e733dc6072cf
-ms.date: 01/11/2024
+ms.date: 05/15/2025
 ms.topic: concept-article
 ---
 
@@ -58,4 +58,3 @@ Windows includes a control panel that allows computer users to enable or disable
 ## Related sections
 
 - [Sensors DDI reference](/windows-hardware/drivers/ddi/_sensors/)
-- [Sensors Blogs](https://techcommunity.microsoft.com/t5/microsoft-sensors-blog/bg-p/MicrosoftSensorsBlog)
