@@ -31,7 +31,7 @@ When a 401 unauthorized is returned, the debugger invokes DbgCredentialProvider.
 
 The search behavior that is used to locate DbgCredentialProvider.config.xml file is described here. It searches and opens a file DbgCredentialProvider.config.xml as follows in the specified order. Once the file is found the search terminates.
 
-- It tries to locate the DbgCredentialProvider.config.xml file in the folder specified in `DBG_COMMON_FOLDER` environment variable if ihas been set.
+- It tries to locate the DbgCredentialProvider.config.xml file in the folder specified in `DBG_COMMON_FOLDER` environment variable if it has been set.
 - It tries to locate the DbgCredentialProvider.config.xml file in %LOCALAPPDATA%\Dbg\Common folder.
 - It tries to locate the DbgCredentialProvider.config.xml file in the folder of the calling application.
 - It tries to locate the DbgCredentialProvider.config.xml file in the folder next to DbgCredentialProvider.dll.
