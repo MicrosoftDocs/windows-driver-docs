@@ -108,7 +108,9 @@ In this example we have just one provider DbgCredentialProvider_gcmw.dll and it 
 
 ### Multiple Credential Providers
 
-This example shows multiple credential providers. If the first credential provider completes sucessfully any others that are configured are not used? TBD - Or all of them need to suceed?
+This example shows multiple credential providers. TBD - If the first credential provider completes successfully any others that are configured are not used? 
+
+TBD - Or all of them need to succeed?
 
 ```xml
     <CredentialProviders> 
