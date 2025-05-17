@@ -27,7 +27,7 @@ Two XML files are used to configure the custom credential provider, one that ind
 
 When a 401 unauthorized is returned, the debugger invokes DbgCredentialProvider.dll. This DLL will look for credential providers using the following process. It opens a file DbgCredentialProvider.config.xml which should be located in the same directory as DbgCredentialProvider.dll that provides the folder location of the configuration XML files. 
 
-## DbgCredentialProvider.config.xml search behavopr
+## DbgCredentialProvider.config.xml search behavior
 
 The search behavior that is used to locate DbgCredentialProvider.config.xml file is described here. It searches and opens a file DbgCredentialProvider.config.xml as follows in the specified order. Once the file is found the search terminates.
 
