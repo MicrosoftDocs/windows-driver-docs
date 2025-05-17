@@ -221,15 +221,15 @@ In this case, the app can write past the end of the first mapping into the secon
  
 The single allocated buffer needs to be page aligned because the virtual memory mapping into user mode can only happen on a per-page basis.
 
-### Timer driven buffers
+### Timer-driven buffers
 
-Timer driven buffers in ACX can be used to ensure a glitch-free audio experience by maintaining precise timing and synchronization. For timer driven buffers in ACX:
+Timer-driven buffers in ACX can be used to ensure a glitch-free audio experience by maintaining precise timing and synchronization. For timer-driven buffers in ACX:
 
 - The client uses the value from EvtAcxStreamGetPresentationPosition to determine how many frames can be written.
 - The presentation position needs to be updated more than once per pass through the buffer. The client will write to the buffer starting at the position it last wrote to through the position the driver reports (which should be the data the hardware consumed since the last time the position was queried).
 - The more granular the position, the less likely there will be glitching.
-- In timer driven buffers the DSP can’t just consume the entire buffer before updating the position.
-- In timer driven, the driver could potentially split the one timer driven buffer into multiple DSP buffers, updating position as the DSP works through each buffer (e.g. a 20ms timer-driven buffer split into 10 2ms buffers would behave reasonably well in timer-driven mode).
+- In timer-driven buffers the DSP can’t just consume the entire buffer before updating the position.
+- In timer-driven, the driver could potentially split the one timer-driven buffer into multiple DSP buffers, updating position as the DSP works through each buffer (e.g. a 20ms timer-driven buffer split into 10 2ms buffers would behave reasonably well in timer-driven mode).
 
 ### Large buffer streams packet sizes
 
