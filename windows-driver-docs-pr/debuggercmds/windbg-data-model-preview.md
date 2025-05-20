@@ -62,7 +62,7 @@ New generic data model windows are given `Data Model` title, but the title can b
 :::image type="content" source="images/windbgx-data-model-custom-titles.png" alt-text="Screenshot of the Data model explore window presenting two tabs with custom titles in WinDbg.":::
 
 > [!NOTE]
-> Title cannot be empty nor can it contain semicolons.
+> Title cannot be empty or contain semicolons.
 
 ---
 
