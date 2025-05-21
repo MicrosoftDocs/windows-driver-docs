@@ -2,7 +2,7 @@
 title: Debug Drivers - Step-by-Step Lab (Sysvad Kernel Mode)
 description: This lab provides hands-on exercises that demonstrate how to debug the Sysvad audio kernel-mode device driver.
 keywords: ["debug lab", "step-by-step", "SYSVAD"]
-ms.date: 01/20/2021
+ms.date: 05/21/2025
 ms.topic: how-to
 ---
 
@@ -96,25 +96,6 @@ Ethernet adapter Ethernet:
 2. Record the IP address of the host System: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 3. Record the Host Name of the host System: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-**-&gt; On the target system**
-
-4. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the actual IP address of the host system you recorded instead of 169.182.1.1 that is shown in the sample output.
-
-```console
-C:\> ping 169.182.1.1
-
-Pinging 169.182.1.1 with 32 bytes of data:
-Reply from 169.182.1.1: bytes=32 time=1ms TTL=255
-Reply from 169.182.1.1: bytes=32 time<1ms TTL=255
-Reply from 169.182.1.1: bytes=32 time<1ms TTL=255
-Reply from 169.182.1.1: bytes=32 time<1ms TTL=255
-
-Ping statistics for 169.182.1.1:
-    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
-Approximate round trip times in milli-seconds:
-    Minimum = 0ms, Maximum = 1ms, Average = 0ms
-```
 
 To use the KDNET utility to enable kernel-mode debugging on the target system, peform the following steps.
 
