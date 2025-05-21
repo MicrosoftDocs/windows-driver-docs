@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0xB8 ATTEMPTED_SWITCH_FROM_DPC
-description: The ATTEMPTED_SWITCH_FROM_DPC bug check has a value of 0x000000B8. This indicates that an illegal operation was attempted by a delayed procedure call (DPC) routine.
+description: The ATTEMPTED_SWITCH_FROM_DPC bug check has a value of 0x000000B8. This indicates that an illegal operation was attempted by a deferred procedure call (DPC) routine.
 keywords: ["Bug Check 0xB8 ATTEMPTED_SWITCH_FROM_DPC", "ATTEMPTED_SWITCH_FROM_DPC"]
 ms.date: 05/23/2017
 topic_type:
