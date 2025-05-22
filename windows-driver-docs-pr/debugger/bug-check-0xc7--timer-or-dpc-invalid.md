@@ -15,7 +15,7 @@ api_type:
 # Bug Check 0xC7: TIMER\_OR\_DPC\_INVALID
 
 
-The TIMER\_OR\_DPC\_INVALID bug check has a value of 0x000000C7. This is issued if a kernel timer or delayed procedure call (DPC) is found somewhere in memory where it is not permitted.
+The TIMER\_OR\_DPC\_INVALID bug check has a value of 0x000000C7. This is issued if a kernel timer or deferred procedure call (DPC) is found somewhere in memory where it is not permitted.
 
 > [!IMPORTANT]
 > This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
