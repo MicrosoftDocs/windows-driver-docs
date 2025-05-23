@@ -24,8 +24,8 @@ Windows lets users bypass captive portals on later connection attempts. However,
 
 This topic discusses the following best practices for using captive portals:
 
-- [Consistent connection handling](#consistent-connection-handling)
-- [Touch-friendly web pages](#touch-friendly-web-pages)
+- [Consistent connection handling](#ensure-consistent-connection-handling)
+- [Touch-friendly web pages](#use-touch-friendly-web-pages)
 - [Provision after purchase](#provision-after-purchase)
 - [Offer app installation](#offer-app-installation)
 
