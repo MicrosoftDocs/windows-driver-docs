@@ -39,7 +39,7 @@ In addition, the client can provide these optional callback functions after init
 
 ### Create a transmit queue
 
-NetAdapterCx calls [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](/windows-hardware/drivers/ddi/netadapter/nc-netadapter-evt_net_adapter_create_txqueue) at the very end of the [power-up sequence](power-up-sequence-for-a-netadaptercx-client-driver.md). During this callback, client drivers typically do the following:
+NetAdapterCx calls [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](/windows-hardware/drivers/ddi/netadapter/nc-netadapter-evt_net_adapter_create_txqueue) at the very end of the [power-up sequence](power-up-sequence-for-a-netadaptercx-client-driver.md). During this callback, client drivers typically do the following actions:
 
   
 - Optionally register start and stop callbacks for the queue.
@@ -48,9 +48,8 @@ NetAdapterCx calls [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](/windows-hardware/drivers/
     - If [**NetTxQueueCreate**](/windows-hardware/drivers/ddi/nettxqueue/nf-nettxqueue-nettxqueuecreate) fails, the *EvtNetAdapterCreateTxQueue* callback function should return an error code.
 - Query for packet extension offsets.
 
-  
-
-The following example shows how these steps might look in code. Error handling code has been left out of this example for clarity.
+ 
+The following example shows how these steps might look in code. For clarity, error handling code is omitted from the example.
 
 ```C++
 NTSTATUS
@@ -115,7 +114,7 @@ EvtAdapterCreateTxQueue(
 
 To create a receive queue from [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](/windows-hardware/drivers/ddi/netadapter/nc-netadapter-evt_net_adapter_create_rxqueue), use the same pattern as a transmit queue and call [**NetRxQueueCreate**](/windows-hardware/drivers/ddi/netrxqueue/nf-netrxqueue-netrxqueuecreate). 
 
-The following example shows how creating a receive queue might look in code. Error handling code has been left out of this example for clarity.
+The following example shows how creating a receive queue might look in code. For clarity, error handling code is omitted from the example.
 
 ```c++
 NTSTATUS
@@ -170,7 +169,7 @@ EvtAdapterCreateRxQueue(
 
 ## Polling model
 
-The NetAdapter data path is a polling model, and the polling operation on one packet queue is completely independent of other queues. The polling model is implemented by calling the client driver's queue advance callbacks, as shown in the following figure:
+The NetAdapter data path is a polling model, and the polling operation on one packet queue is independent of other queues. The polling model is implemented by calling the client driver's queue advance callbacks, as shown in the following figure:
 
 :::image type="content" source="images/polling.png" alt-text="Diagram that shows the polling flow in NetAdapterCx.":::
 
@@ -190,15 +189,15 @@ For an example of implementing *EvtPacketQueueAdvance* for a transmit queue, see
 
 ## Enable and disable packet queue notification
 
-When a client driver receives new packets in a packet queue's net rings, NetAdapterCx invokes the client driver's [*EvtPacketQueueSetNotificationEnabled*](/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_set_notification_enabled) callback function. This callback indicates to a client driver that polling (of *EvtPacketQueueAdvance* or *EvtPacketQueueCancel*) will stop and will not continue until the client driver calls [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](/windows-hardware/drivers/ddi/nettxqueue/nf-nettxqueue-nettxqueuenotifymorecompletedpacketsavailable) or [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](/windows-hardware/drivers/ddi/netrxqueue/nf-netrxqueue-netrxqueuenotifymorereceivedpacketsavailable). Typically, a PCI device uses this callback to enable Tx or Rx interrupts. Once an interrupt is received, interrupts can be disabled again and the client driver calls **NetTxQueueNotifyMoreCompletedPacketsAvailable** or **NetRxQueueNotifyMoreReceivedPacketsAvailable** to trigger the framework to begin polling again.
+When a client driver receives new packets in a packet queue's net rings, NetAdapterCx invokes the client driver's [*EvtPacketQueueSetNotificationEnabled*](/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_set_notification_enabled) callback function. This callback indicates to a client driver that polling (of *EvtPacketQueueAdvance* or *EvtPacketQueueCancel*) will stop and won't continue until the client driver calls [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](/windows-hardware/drivers/ddi/nettxqueue/nf-nettxqueue-nettxqueuenotifymorecompletedpacketsavailable) or [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](/windows-hardware/drivers/ddi/netrxqueue/nf-netrxqueue-netrxqueuenotifymorereceivedpacketsavailable). Typically, a PCI device uses this callback to enable Tx or Rx interrupts. Once an interrupt is received, interrupts can be disabled again and the client driver calls **NetTxQueueNotifyMoreCompletedPacketsAvailable** or **NetRxQueueNotifyMoreReceivedPacketsAvailable** to trigger the framework to begin polling again.
 
 ### Enable and disable notification for a transmit queue
 
-For a PCI NIC, enabling transmit queue notification typically means enabling the transmit queue's hardware interrupt. When the hardware interrupt fires, the client calls [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](/windows-hardware/drivers/ddi/nettxqueue/nf-nettxqueue-nettxqueuenotifymorecompletedpacketsavailable) from its DPC.
+For a PCI NIC, enabling transmit queue notification typically means to enable the transmit queue's hardware interrupt. When the hardware interrupt fires, the client calls [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](/windows-hardware/drivers/ddi/nettxqueue/nf-nettxqueue-nettxqueuenotifymorecompletedpacketsavailable) from its DPC.
 
 Similarly, for a PCI NIC, disabling queue notification means disabling the interrupt associated with the queue.
 
-For a device that has an asynchronous I/O model, the client typically uses an internal flag to track the enabled state. When an asynchronous operation completes, the completion handler checks this flag and calls [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](/windows-hardware/drivers/ddi/nettxqueue/nf-nettxqueue-nettxqueuenotifymorecompletedpacketsavailable) if it is set.
+For a device that has an asynchronous I/O model, the client typically uses an internal flag to track the enabled state. When an asynchronous operation completes, the completion handler checks this flag and calls [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](/windows-hardware/drivers/ddi/nettxqueue/nf-nettxqueue-nettxqueuenotifymorecompletedpacketsavailable) if it's set.
 
 If NetAdapterCx calls *EvtPacketQueueSetNotificationEnabled* with *NotificationEnabled* set to **FALSE**, the client must not call [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](/windows-hardware/drivers/ddi/nettxqueue/nf-nettxqueue-nettxqueuenotifymorecompletedpacketsavailable) until NetAdapterCx next calls this callback function with *NotificationEnabled* set to **TRUE**.
 
