@@ -117,7 +117,7 @@ This file is created and its content maintained by the Base CSP/KSP. Information
 
 **CONTAINERMAPRECORD**
 
-These records contain the CAPI-assigned container GUID and the key sizes for the associated key exchange or signing keys that are associated with that container. All WORD members are little-Endean byte order.
+These records contain the CAPI-assigned container GUID and the key sizes for the associated key exchange or signing keys that are associated with that container. All WORD members are little-Endian byte order.
 
 ``` syntax
 //
