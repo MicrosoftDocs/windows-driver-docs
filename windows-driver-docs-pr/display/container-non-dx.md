@@ -28,7 +28,7 @@ In the installation INF, the driver can define multiple values in the following 
 The former sub-keys modify the system32 directory, while the latter sub-keys modify the syswow64 directory.
 Each value type under a subkey must be REG_MULTI_SZ or REG_SZ.
 If the value type is REG_MULTI_SZ, there must be maximum 2 strings in the value.
-This implies that each value defines a pair of stings, where the second string could be empty.
+This implies that each value defines a pair of strings, where the second string could be empty.
 The first name in a pair is a path to a file in the driver store.
 The path is relative to the root of the driver store and can contain sub-directories.
 The second name in a pair is the name of the file how it will appear in the system32 or syswow64 directory.

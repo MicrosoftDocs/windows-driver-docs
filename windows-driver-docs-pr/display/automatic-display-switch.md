@@ -620,8 +620,8 @@ If the method understands the specified query type, it should return the appropr
 | ---------------- | ----------- |
 | 1    | ASCII string that contains the ACPI name of the GPU child device that the mux is currently switched to. |
 | 2    | Integer representing the ADS support level. See the next table for details. |
-| 3    | ASCII sting that contains the ACPI name of the first GPU child device that the mux connected to. |
-| 4    | ASCII sting that contains the ACPI name of the second GPU child device that the mux connected to. |
+| 3    | ASCII string that contains the ACPI name of the first GPU child device that the mux connected to. |
+| 4    | ASCII string that contains the ACPI name of the second GPU child device that the mux connected to. |
 
 The following table lists the ADS support level values and their meanings when the query type is 2.
 
