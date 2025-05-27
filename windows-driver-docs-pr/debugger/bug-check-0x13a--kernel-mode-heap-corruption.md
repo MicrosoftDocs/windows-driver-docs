@@ -62,7 +62,7 @@ The KERNEL_MODE_HEAP_CORRUPTION bug check has a value of 0x0000013A. This bug ch
 
 0x12: The heap detected invalid internal state during the current operation. This can be the result of a use-after-free error or a buffer overflow of an adjacent block.
 
-0x13: The heap API was passed a NULL heap handle. Look at the call stack and to determine why a bad handle was supplied to the heap.
+0x13: The heap API was passed a NULL heap handle. Look at the call stack to determine why a bad handle was supplied to the heap.
 
 0x14: The requested heap allocation is larger than the current allocation limit.
 
