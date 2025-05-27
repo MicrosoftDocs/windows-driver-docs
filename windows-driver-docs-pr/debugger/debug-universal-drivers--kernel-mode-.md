@@ -18,17 +18,17 @@ WinDbg can step through source code, set breakpoints, view variables (including 
 
 You will need the following hardware to be able to complete the lab:
 
--   A laptop or desktop computer (host) running Windows 10
--   A laptop or desktop computer (target) running Windows 10
+-   A laptop or desktop computer (host) running Windows 11
+-   A laptop or desktop computer (target) running Windows 11
 -   A network hub/router and network cables to connect the two PCs
 -   Access to the internet to download symbol files
 
 You will need the following software to be able to complete the lab.
 
--   Microsoft Visual Studio 2017
--   Windows Software Development Kit (SDK) for Windows 10
--   Windows Driver Kit (WDK) for Windows 10
--   The sample Sysvad audio driver for Windows 10
+-   Microsoft Visual Studio 2022
+-   Windows Software Development Kit (SDK) for Windows 11
+-   Windows Driver Kit (WDK) for Windows 11
+-   The sample Sysvad audio driver for Windows 11
 
 For information on downloading and installing the WDK, see [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
 

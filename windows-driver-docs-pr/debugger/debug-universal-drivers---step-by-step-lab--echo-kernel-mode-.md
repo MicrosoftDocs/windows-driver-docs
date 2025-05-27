@@ -2,7 +2,7 @@
 title: Debug Windows Drivers Step-By-Step Lab (Echo Kernel Mode)
 description: This lab introduces the WinDbg kernel debugger. Use WinDbg to debug the echo kernel mode sample driver code.
 keywords: ["debug lab", "step-by-step", "ECHO"]
-ms.date: 05/21/2025
+ms.date: 05/27/2025
 ms.topic: how-to
 ---
 
@@ -39,17 +39,17 @@ This exercise covers debug commands that are frequently used during both user mo
 
 You need the following hardware to complete the lab:
 
-- A laptop or desktop computer (host) running Windows 10
-- A second laptop or desktop computer (target) running Windows 10
+- A laptop or desktop computer (host) running Windows 11
+- A second laptop or desktop computer (target) running Windows 11
 - A network hub or router and network cables to connect the two computers
 - Access to the internet to download symbol files
 
 You need the following software to complete the lab:
 
 - Visual Studio
-- Windows Software Development Kit (SDK) for Windows 10
-- Windows Driver Kit (WDK) for Windows 10
-- The sample echo driver for Windows 10
+- Windows Software Development Kit (SDK) for Windows 11
+- Windows Driver Kit (WDK) for Windows 11
+- The sample echo driver for Windows 11
 
 The lab has the following sections:
 
@@ -391,7 +391,7 @@ On the target system, enable test signed drivers:
 
 1. Under **Advanced startup**, select **Restart Now**.
 
-1. When the computer restarts, select **Startup options**. In Windows 10, select **Troubleshoot** > **Advanced options** > **Startup Settings** , then select **Restart**.
+1. When the computer restarts, select **Startup options**. In Windows 11, select **Troubleshoot** > **Advanced options** > **Startup Settings** , then select **Restart**.
 
 1. Select *Disable driver signature enforcement* by pressing the F7 key.
 
