@@ -105,7 +105,7 @@ Option | Description
 -xe *Exception*  |   Enable first-chance exception handling for the specified exception.
 -xd *Exception* |   Enable second-chance exception handling for the specified exception.
 -xn *Exception* |   For the given exception, disable first- and second-chance-handling, and only display a message on the console.
--xi *Exception* |   Completely ignore the given exception, disabling first- and second-chance handling, and not outputing anything to the console.
+-xi *Exception* |   Completely ignore the given exception, disabling first- and second-chance handling, and not outputting anything to the console.
 
 For a list of exceptions that can be specified, see [Event Definitions and Defaults](./../debugger/controlling-exceptions-and-events.md#event-definitions-and-defaults).
 
