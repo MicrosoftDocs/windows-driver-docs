@@ -31,7 +31,7 @@ For more information on the contents of the ACPI SPCR table, see [Serial Port Co
 ## Enabling EMS on a Computer with UEFI Firmware
 
 To enable EMS on a computer with UEFI firmware, use the [**BCDEdit /ems**](./bcdedit--ems.md) command and specify a boot entry. Windows finds the out-of-band port and its settings in the firmware by reading the SPCR table and uses the same port and rate for EMS console redirection.
-The following command enables EMS console redirection on the the current boot entry.
+The following command enables EMS console redirection on the current boot entry.
 
 ```command
 bcdedit /ems {current} on
