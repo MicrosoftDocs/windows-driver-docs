@@ -2,7 +2,7 @@
 title: Bug Check 0x13A KERNEL_MODE_HEAP_CORRUPTION
 description: Learn how the KERNEL_MODE_HEAP_CORRUPTION bug check indicates that the kernel mode heap manager has detected corruption in a heap.
 keywords: ["Bug Check 0x13A KERNEL_MODE_HEAP_CORRUPTION", "KERNEL_MODE_HEAP_CORRUPTION"]
-ms.date: 05/27/2022
+ms.date: 05/27/2025
 topic_type:
 - apiref
 ms.topic: reference
