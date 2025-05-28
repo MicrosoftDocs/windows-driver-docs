@@ -116,7 +116,7 @@ Approximate round trip times in milli-seconds:
     Minimum = 0ms, Maximum = 1ms, Average = 0ms
 ```
 
-To use the KDNET utility to enable kernel-mode debugging on the target system, peform the following steps.
+To use the KDNET utility to enable kernel-mode debugging on the target system, perform the following steps.
 
 1. On the host system, locate the WDK KDNET directory. By default it is located here.
 
@@ -131,7 +131,7 @@ This labs assumes that both PCs are running a 64 bit version of Windowson both t
     VerifiedNICList.xml
 
 
-3. On the target computer, open a Command Prompt window as Administrator. Enter this command to validate that the NIC on the target PC is suported.
+3. On the target computer, open a Command Prompt window as Administrator. Enter this command to validate that the NIC on the target PC is supported.
 
 ```console
 C:\KDNET>kdnet
