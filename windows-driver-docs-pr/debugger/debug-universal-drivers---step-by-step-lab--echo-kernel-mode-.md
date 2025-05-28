@@ -130,7 +130,7 @@ This labs assumes that both PCs are running a 64 bit version of Windowson both t
     VerifiedNICList.xml
 
 
-3. On the target computer, open a Command Prompt window as Administrator. Enter this command to validate that the NIC on the target PC is suported.
+3. On the target computer, open a Command Prompt window as Administrator. Enter this command to validate that the NIC on the target PC is supported.
 
 ```console
 C:\KDNET>kdnet
