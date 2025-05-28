@@ -12,11 +12,11 @@ A secure, reliable, and Windows-compatible driver deployment strategy is essenti
 
 This article outlines safe deployment best practices for Microsoft hardware and firmware partners to help them build and execute robust deployment plans that minimize disruptions, inefficiencies, and device failures.
 
-While some partners might choose to manage their own distribution processes outside Windows Update, using Windows Update is recommended whenever possible. Windows Update offers a controlled, secure, and efficient ecosystem that reduces the risk of incompatibility, security vulnerabilities, and user impact. For detailed guidance on distributing driver packages, see [Distributing a Driver Package](/windows-hardware/drivers/develop/distributing-a-driver-package).
+While some partners might choose to manage their own distribution processes outside Windows Update, using Windows Update is recommended whenever possible. Windows Update offers a controlled, secure, and efficient ecosystem that reduces the risk of incompatibility, security vulnerabilities, and user impact. For detailed guidance on distributing driver packages, see [Distributing a Driver Package](distributing-a-driver-package.md).
 
 In alignment with the Cybersecurity and Infrastructure Security Agency's (CISA) [Safe Software Deployment Guidance](https://www.cisa.gov/sites/default/files/2024-10/safe-software-deployment-how-software-manufacturers-can-ensure-reliability-for-customers-508c.pdf), these best practices emphasize transparency, versioning, rollback planning, and secure software design—essential elements of modern driver deployment.
 
-For more about Microsoft's driver security philosophy, see [driver security guidance](/windows-hardware/drivers/driversecurity/).
+For more about Microsoft's driver security philosophy, see [driver security guidance](../driversecurity/index.md).
 
 ## Safe deployment lifecycle
 
@@ -28,13 +28,13 @@ Driver safe deployment best practices are grouped into three stages of the deplo
 
 - **Distribution**
 
-  Covers the actual distribution of the driver, including using Windows Update when applicable, deploying a ring strategy, and following best practices for gradual rollouts.
+  Covers the actual distribution of the driver, including using Windows Update when applicable, deploying a ring strategy, and following best practices for gradual rollout.
 
 - **Post-deployment monitoring and maintenance**
 
   Involves monitoring device health signals, analyzing telemetry, and pausing, rolling back, or updating deployments based on real-world performance.
 
-:::image type="content" source="images/safe-deployment-lifecycle-with-three-stages.png" alt-text="Diagram showing the safe deployment lifecycle with three stages: predeployment, distribution, and post-deployment monitoring.":::
+:::image type="content" source="images/safe-deployment-lifecycle-with-three-stages.png" alt-text="Diagram showing the safe deployment lifecycle with three stages: pre-deployment, distribution, and post-deployment monitoring.":::
 
 Each section provides actionable guidance to help partners ensure driver releases meet high standards of reliability, security, and performance throughout their deployment journey.
 
@@ -42,7 +42,7 @@ Each section provides actionable guidance to help partners ensure driver release
 
 Before distributing a driver, test, validate, and assess security to ensure a secure and reliable experience for end users. These steps prevent deployment issues, reduce support costs, and enhance user satisfaction.
 
-For an overview of Microsoft's recommended end-to-end process, see the [Developing, Testing and Deploying Drivers](/windows-hardware/drivers/develop/) guide.
+For an overview of Microsoft's recommended end-to-end process, see the [Developing, Testing and Deploying Drivers](index.md) guide.
 
 ### Final testing and validation
 
@@ -51,27 +51,27 @@ Before distributing a driver, test, validate, and assess security. This step red
 - Test across diverse hardware configurations to ensure compatibility.
 - Validate against supported Windows versions and latest servicing updates to prevent regressions.
 - Include power management, stress testing, suspend-and-resume, and recovery scenario validation.
-- Use [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk) and [Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) for compliance and certification.
-- See [Testing a Driver](/windows-hardware/drivers/develop/testing-a-driver):
-  - [Tips for Testing During Development](/windows-hardware/drivers/develop/strategies-for-testing-drivers-during-development)
-  - [Testing at Runtime with Visual Studio](/windows-hardware/drivers/develop/testing-a-driver-at-runtime)
-  - [Tools for Verifying Drivers](/windows-hardware/drivers/devtest/tools-for-verifying-drivers)
+- Use [Windows Driver Kit (WDK)](../download-the-wdk.md) and [Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) for compliance and certification.
+- See [Testing a Driver](testing-a-driver.md):
+  - [Tips for Testing During Development](strategies-for-testing-drivers-during-development.md)
+  - [Testing at Runtime with Visual Studio](testing-a-driver-at-runtime.md)
+  - [Tools for Verifying Drivers](../devtest/tools-for-verifying-drivers.md)
 
 ### Security and code integrity
 
 Driver security is critical for system stability, protection, and compliance with Windows driver policies.
 
-- Digitally sign your driver in accordance with [Driver Signing](/windows-hardware/drivers/develop/signing-a-driver) requirements. Review the [Driver code signing requirements](/windows-hardware/drivers/dashboard/code-signing-reqs) for more compliance and policy guidance.
+- Digitally sign your driver in accordance with [Driver Signing](signing-a-driver.md) requirements. Review the [Driver code signing requirements](../dashboard/code-signing-reqs.md) for more compliance and policy guidance.
 
   - All drivers intended for deployment, whether through Windows Update or alternate channels, must be properly signed to ensure integrity and trust.
 
-  - Drivers must obtain Windows Hardware Quality Labs (WHQL) signatures regardless of whether the distribution channel is Windows Update, OEM-controlled channels, or vendor-controlled channels (for example, websites or enterprise-specific tools). Obtaining a [WHQL release signature](/windows-hardware/drivers/install/whql-release-signature) ensures that driver packages are trusted by default on Windows systems. Without it, extra configuration steps are required to establish trust using alternate certificates, introducing complexity and risk during deployment. The WHQL certification required to obtain a WHQL release signature validates that the driver passes Microsoft's compatibility tests, and meets required security standards.
+  - Drivers must obtain Windows Hardware Quality Labs (WHQL) signatures regardless of whether the distribution channel is Windows Update, OEM-controlled channels, or vendor-controlled channels (for example, websites or enterprise-specific tools). Obtaining a [WHQL release signature](../install/whql-release-signature.md) ensures that driver packages are trusted by default on Windows systems. Without it, extra configuration steps are required to establish trust using alternate certificates, introducing complexity and risk during deployment. The WHQL certification required to obtain a WHQL release signature validates that the driver passes Microsoft's compatibility tests, and meets required security standards.
 
-- To minimize vulnerabilities, follow Microsoft's [Driver Security Checklist](/windows-hardware/drivers/driversecurity/driver-security-checklist).
+- To minimize vulnerabilities, follow Microsoft's [Driver Security Checklist](../driversecurity/driver-security-checklist.md).
 
-- To uncover potential security flaws, use [Code QL](/windows-hardware/drivers/devtest/static-tools-and-codeql) at compile time and [Driver Verifier](/windows-hardware/drivers/devtest/driver-verifier) at runtime.
+- To uncover potential security flaws, use [Code QL](../devtest/static-tools-and-codeql.md) at compile time and [Driver Verifier](../devtest/driver-verifier.md) at runtime.
 
-- Align your development practices with the [Driver Security Guidance](/windows-hardware/drivers/driversecurity/), which outlines the benefits of shipping secure, reliable drivers, and includes guidance on avoiding malicious or vulnerable code patterns.
+- Align your development practices with the [Driver Security Guidance](../driversecurity/index.md), which outlines the benefits of shipping secure, reliable drivers, and includes guidance on avoiding malicious or vulnerable code patterns.
 
 Microsoft encourages organizations that develop and publish anti-malware drivers to participate in the [Microsoft Virus Initiative (MVI)](/unified-secops-platform/virus-initiative-criteria), a program dedicated to aligning anti-malware technologies with Windows security standards.
 
@@ -81,12 +81,12 @@ Strategic planning reduces risk, improves user experience, and ensures efficient
 
 - Define rollout strategies (for example, gradual rollout, pilot deployments, regional, or hardware-targeted releases).
 
-  - To reduce risk and monitor real-world behavior before global release, learn about [Gradual Rollout](/windows-hardware/drivers/dashboard/gradual-rollout).
+  - To reduce risk and monitor real-world behavior before global release, learn about [Gradual Rollout](../dashboard/gradual-rollout.md).
 
 - Choose a deployment channel:
 
   - Windows Update is recommended for its controlled and secure infrastructure.
-  - For publishing guidance, see [Distribute Drivers through Windows Update](/windows-hardware/drivers/develop/distributing-a-driver-package#use-windows-update-to-distribute-driver-packages).
+  - For publishing guidance, see [Distribute Drivers through Windows Update](distributing-a-driver-package.md#use-windows-update-to-distribute-driver-packages).
   - If managing distribution independently, ensure the same level of safety and monitoring is implemented.
 
 - Plan for failure scenarios by defining rollback criteria, identifying rollback candidates, and documenting escalation procedures.
@@ -107,13 +107,13 @@ Ensuring drivers reach users securely, reliably, and efficiently is essential to
 - Enables telemetry-driven gradual rollout and built-in rollback mechanisms.
 - Supports targeting by hardware ID, OS version, and other criteria.
 
-Learn more in [Distributing a driver package](/windows-hardware/drivers/develop/distributing-a-driver-package).
+Learn more in [Distributing a driver package](distributing-a-driver-package.md).
 
 **Publisher channels:**
 
 - Might be necessary in niche or enterprise-controlled environments.
 - Require safety measures to match Windows Update protections:
-  - Drivers should be securely packaged and undergo [WHQL release signature](/windows-hardware/drivers/install/whql-release-signature). Even when drivers are deployed outside of Windows Update, they should still complete WHQL testing and be digitally signed. WHQL testing and driver signing ensure alignment with Microsoft's quality and security expectations, and maintain parity with protections offered by Windows Update.
+  - Drivers should be securely packaged and undergo [WHQL release signature](../install/whql-release-signature.md). Even when drivers are deployed outside of Windows Update, they should still complete WHQL testing and be digitally signed. WHQL testing and driver signing ensure alignment with Microsoft's quality and security expectations, and maintain parity with protections offered by Windows Update.
   - Manual rollback mechanisms and version control.
   - Coordination with IT teams or end users to ensure safe installation.
 
@@ -139,7 +139,7 @@ Driver deployment is a multiphase process ensuring security, reliability, and mi
   - Helps identify systemic issues while minimizing widespread impact.
   - Adjust rollout pace and scope based on quality metrics and device health.
 
-Learn more in [Gradual rollout for driver updates](/windows-hardware/drivers/dashboard/gradual-rollout) in Microsoft Hardware Dev Center.
+Learn more in [Gradual rollout for driver updates](../dashboard/gradual-rollout.md) in Microsoft Hardware Dev Center.
 
 - **Full deployment (controlled rollout):**
   - Enabled after successful monitoring of pilot and gradual rollout phases.
@@ -153,14 +153,14 @@ Actively monitor driver reliability after release to detect and fix potential is
 
 - Use [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) and driver deployment reporting to track driver failures, including failures caused by kernel-mode drivers like system crashes (bug checks).
 
-- Refer to the Hardware Dev Center for reports such as [Cohort failure report](/windows-hardware/drivers/dashboard/idr-cohort-report), [Plug and Play failure report](/windows-hardware/drivers/dashboard/pnp-failure-report), [Reliability report](/windows-hardware/drivers/dashboard/reliability-failure-report), and [Driver install and health summary report](/windows-hardware/drivers/dashboard/driver-install-health-summary-report).
+- Refer to the Hardware Dev Center for reports such as [Cohort failure report](../dashboard/idr-cohort-report.md), [Plug and Play failure report](../dashboard/pnp-failure-report.md), [Reliability report](../dashboard/reliability-failure-report.md), and [Driver install and health summary report](../dashboard/driver-install-health-summary-report.md).
 
 - Continuously monitor installation issues and hardware compatibility problems in real-world usage scenarios.
 
 ### Issue response and driver updates
 
 - Release patches to address security vulnerabilities.
-- Provide hotfixes or new driver versions based on telemetry insights.
+- Provide hot fixes or new driver versions based on telemetry insights.
 - Prepublish rollback candidates and alternative drivers.
 - Communicate with Microsoft support or driver ship room channels.
 
