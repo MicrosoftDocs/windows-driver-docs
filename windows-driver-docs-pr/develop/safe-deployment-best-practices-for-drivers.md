@@ -2,7 +2,7 @@
 title: Safe Deployment Best Practices for Drivers
 description: Learn about secure and reliable driver deployment strategies, including pre-deployment testing, distribution methods, and post-deployment monitoring.
 ms.topic: concept-article
-ms.date: 05/08/2025
+ms.date: 05/28/2025
 ai-usage: ai-assisted
 ---
 
@@ -166,7 +166,7 @@ Actively monitor driver reliability after release to detect and fix potential is
 
 Learn more about security tools for incident response in [Incident response: Windows Security best practices for integrating and managing security tools](https://www.microsoft.com/security/blog/2024/07/27/windows-security-best-practices-for-integrating-and-managing-security-tools).
 
-### End-of-life considerations
+### End-of-support considerations
 
 - Plan to deprecate older drivers and transition users seamlessly.
 - Provide clear communication and support for users during transitions.
