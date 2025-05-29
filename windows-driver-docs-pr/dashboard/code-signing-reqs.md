@@ -1,7 +1,7 @@
 ---
 title: Driver code signing requirements
 description: Driver code signing requirements
-ms.date: 04/17/2025
+ms.date: 05/29/2025
 ---
 
 # Driver code signing requirements
@@ -12,9 +12,9 @@ This article provides general information on the types of code signing available
 
 For more extensive information on driver signing requirements see the following pages:
 
-- [Driver Signing Changes in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Driver-Signing-changes-in-Windows-10/ba-p/364859)
+- [Driver Signing Changes in Windows 10](https://techcommunity.microsoft.com/blog/windowshardwarecertification/driver-signing-changes-in-windows-10/364859)
 - [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/blog/windowshardwarecertification/driver-signing-changes-in-windows-10-version-1607/364894)
-- [Update on Sysdev EV Certificate requirement](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Update-on-Sysdev-EV-Certificate-requirement/ba-p/364879)
+- [Update on Sysdev EV Certificate requirement](https://techcommunity.microsoft.com/blog/windowshardwarecertification/update-on-sysdev-ev-certificate-requirement/364879)
 
 ## Where to get EV code signing certificates
 
