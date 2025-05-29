@@ -1,7 +1,7 @@
 ---
 title: Case Study - Troubleshooting an Unknown USB Device
 description: Provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.
-ms.date: 01/12/2024
+ms.date: 05/29/2025
 ms.topic: troubleshooting-general
 ---
 
@@ -13,16 +13,16 @@ For this example, we plugged in a device and it appeared as an unknown device in
 
 ## About the Unknown Device Problem
 
-To debug an unknown USB device problem, it helps to understand what the USB driver stack does to enumerate a device when a user plugs it into the system. For information on USB enumeration, see the blog post titled [How does USB stack enumerate a device?](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/how-does-usb-stack-enumerate-a-device/ba-p/270685)
+To debug an unknown USB device problem, it helps to understand what the USB driver stack does to enumerate a device when a user plugs it into the system. For information on USB enumeration, see the blog post titled [How does USB stack enumerate a device?](https://techcommunity.microsoft.com/blog/microsoftusbblog/how-does-usb-stack-enumerate-a-device/270685)
 
 Typically when the USB driver stack fails to enumerate a device, the hub driver still reports the arrival of the device to Windows and the USB device is marked as an unknown device in Device Manager. The device has a Device ID of USB\\VID\_0000&PID\_0000 and a Hardware ID and Compatible ID of USB\\UNKNOWN. The following events cause the USB hub driver to enumerate a USB device as an unknown device:
 
-* A port reset request timed out during enumeration.
-* The Set Address request for the USB device failed.
-* The request for the USB device's Device Descriptor failed.
-* The [USB Device Descriptor](usb-device-descriptors.md) was malformed and failed validation.
-* The request for the Configuration Descriptor failed.
-* The [USB Configuration Descriptor](usb-configuration-descriptors.md) was malformed and failed validation.
+- A port reset request timed out during enumeration.
+- The Set Address request for the USB device failed.
+- The request for the USB device's Device Descriptor failed.
+- The [USB Device Descriptor](usb-device-descriptors.md) was malformed and failed validation.
+- The request for the Configuration Descriptor failed.
+- The [USB Configuration Descriptor](usb-configuration-descriptors.md) was malformed and failed validation.
 
 In Windows 7, unknown devices that fail enumeration are marked with failure [Code 43](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725873(v=ws.10)?redirectedfrom=MSDN) in Device Manager.
 
@@ -129,8 +129,8 @@ To see an overview of the sequence of errors, you can briefly view each error ev
 
 You can create custom filters in Netmon. The easiest method is to create a filter from data on the screen in one of the following ways:
 
-* Right-click a field in the **Frame Details** pane and select **Add Selected Value to Display Filter**.
-* Right-click a field in the **Frame Summary** pane and select **Add [field name] to Display Filter**.
+- Right-click a field in the **Frame Details** pane and select **Add Selected Value to Display Filter**.
+- Right-click a field in the **Frame Summary** pane and select **Add [field name] to Display Filter**.
 
 You can change the operators (such as OR, AND, and ==) and the filter values to build the appropriate filter expressions.
 

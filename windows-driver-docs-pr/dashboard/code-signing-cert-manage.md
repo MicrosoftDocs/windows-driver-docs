@@ -1,7 +1,7 @@
 ---
 title: Manage Code Signing Certificates
 description: This article describes how to get, add, and update code signing certificates to the hardware dashboard.
-ms.date: 03/31/2025
+ms.date: 05/29/2025
 ms.topic: how-to
 ---
 
@@ -9,7 +9,7 @@ ms.topic: how-to
 
 As a Partner Center administrator, you're responsible for adding, updating, and retiring driver certificates when they expire. This article describes how to get, add, and update code signing certificates to the hardware dashboard.
 
-For more information on rules for driver signing, see [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-signing-changes-in-windows-10-version-1607/ba-p/364894) in the [Windows Hardware Certification blog](https://techcommunity.microsoft.com/t5/windows-hardware-certification/bg-p/WindowsHardwareCertification).
+For more information on rules for driver signing, see [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/blog/windowshardwarecertification/driver-signing-changes-in-windows-10-version-1607/364894) in the [Windows Hardware Certification blog](https://techcommunity.microsoft.com/category/winhec-online/blog/windowshardwarecertification).
 
 ## Prerequisites
 

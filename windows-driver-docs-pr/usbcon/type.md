@@ -1,7 +1,7 @@
 ---
 title: USB Type-C Manual Interoperability Test Procedures
 description: This article explains how to test the interoperability of USB Type-C enabled systems and Windows.
-ms.date: 05/06/2025
+ms.date: 05/29/2025
 ---
 
 # USB Type-C manual interoperability test procedures
@@ -127,7 +127,7 @@ Additional information of selective suspend can be found from the following sour
 
 - [Enabling selective suspend for HID](/previous-versions/windows/hardware/design/dn613941(v=vs.85)?redirectedfrom=MSDN)
 - [Selective suspend for HID over USB devices](../hid/selective-suspend-for-hid-over-usb-devices.md)
-- [Demystifying selective suspend](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/demystifying-usb-selective-suspend/ba-p/270736)
+- [Demystifying selective suspend](https://techcommunity.microsoft.com/blog/microsoftusbblog/demystifying-usb-selective-suspend/270736)
 
 ## FT Case 5: Dock identification
 

@@ -1,7 +1,7 @@
 ---
 title: Overview of Building USB Devices for Windows
 description: This section provides links for manufacturers of USB peripheral devices.
-ms.date: 05/06/2025
+ms.date: 05/29/2025
 ms.topic: concept-article
 ---
 
@@ -11,11 +11,11 @@ This section provides links for manufacturers of USB peripheral devices.
 
 ## USB device enumeration process
 
-- [How does USB stack enumerate a device?](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/how-does-usb-stack-enumerate-a-device/ba-p/270685)
+- [How does USB stack enumerate a device?](https://techcommunity.microsoft.com/blog/microsoftusbblog/how-does-usb-stack-enumerate-a-device/270685)
 
    A detailed description of the enumeration process used by the Microsoft USB driver stack - starting from when the stack detects the presence of a device and indicates to the PnP manager that a new device is connected.
 
-- [USB 2.1, 2.0, 1.1 device enumeration changes in Windows 8](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/usb-2-1-2-0-1-1-device-enumeration-changes-in-windows-8/ba-p/270775)
+- [USB 2.1, 2.0, 1.1 device enumeration changes in Windows 8](https://techcommunity.microsoft.com/blog/microsoftusbblog/usb-2-1-2-0-1-1-device-enumeration-changes-in-windows-8/270775)
 
    Modifications in the USB driver stack support new USB features and improve device enumeration performance. Read the post to understand those subtle changes, and enable device and firmware builders to easily determine the root cause of enumeration failures.
 
@@ -57,7 +57,7 @@ An IHV can use Microsoft OS descriptors to store the information in firmware ins
 
    This document provides guidelines for hardware vendors and OEMs to implement power management for USB devices by using Link Power Management (LPM) with Selective Suspend. It explains hardware transitions from U1 to U2 and provides information about common pitfalls in LPM implementation in USB controllers, hubs, and devices.
 
-- [Demystifying selective suspend](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/demystifying-usb-selective-suspend/ba-p/270736)
+- [Demystifying selective suspend](https://techcommunity.microsoft.com/blog/microsoftusbblog/demystifying-usb-selective-suspend/270736)
 
    This blog post describes how the USB driver stack handles function and selective suspend in USB 3.0 devices.
 
