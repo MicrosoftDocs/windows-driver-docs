@@ -22,7 +22,7 @@ All hardware submissions to the dashboard are processed within five business day
 
     | Operating system | Required signed file type | Guidance|
     |------------------|---------------------------|---------|
-    | Windows 11, Windows 10, and Windows Server versions beginning with Windows Server 2016 | A Windows Hardware Lab kit *.hlk* file | [Find and download the correct version of the HLK](/windows-hardware/test/hlk/) based on the compatible system. You can then [merge all HLK test results](/windows-hardware/test/hlk/user/merge-packages) into a single dashboard submission.</br></br>**Note:** The Windows 10 version 22H2 release follows the same guidelines as Windows 10, version 2004. For more information, see [WHCP guidance for Windows 10, version 22H2](https://techcommunity.microsoft.com/t5/windows-hardware-certification/whcp-guidance-for-windows-10-version-22h2/ba-p/3586362). |
+    | Windows 11, Windows 10, and Windows Server versions beginning with Windows Server 2016 | A Windows Hardware Lab kit *.hlk* file | [Find and download the correct version of the HLK](/windows-hardware/test/hlk/) based on the compatible system. You can then [merge all HLK test results](/windows-hardware/test/hlk/user/merge-packages) into a single dashboard submission.</br></br>**Note:** The Windows 10 version 22H2 release follows the same guidelines as Windows 10, version 2004. For more information, see [WHCP guidance for Windows 10, version 22H2](https://techcommunity.microsoft.com/blog/windowshardwarecertification/whcp-guidance-for-windows-10-version-22h2/3586362). |
     | Windows 8/8.1 and older | A Windows Hardware Certification Kit.hckx* file | To learn how to create and digitally sign an *.hckx* file, see the [Windows HCK Getting Started Guide](/previous-versions/windows/hardware/hck/jj123537(v=vs.85)) |
     | Windows Server 2008 and older  | A WLK hardware submission package *.cab* file | To learn how to create a WLK submission package, see [Create a new WLK hardware submission](hardware-submission-wlk.md). |
 
@@ -92,9 +92,7 @@ The failure is caused by an incorrect .cab file structure. The .CAB structure wa
 
 ### Zip64 error
 
-Your error message is:
-
-**File is using Zip64(4gb+file Size)**
+Your error message is: **File is using Zip64(4gb+file Size)**
 
 This error is caused when the uploaded archive's filetype is .zip64 instead of .zip. This error is caused by a large file size. To fix this error, repackage the submission using the below steps.
 
@@ -107,13 +105,11 @@ This error is caused when the uploaded archive's filetype is .zip64 instead of .
 
 ### Failed to open DUA package
 
-Your error message is:
-
-**Failed to open package: Not compatible with a version (3.2.0.0) with this instance package manager**
+Your error message is: **Failed to open package: Not compatible with a version (3.2.0.0) with this instance package manager**
 
 Use [HLK studio](/windows-hardware/test/hlk/user/install-standalone-hlk-studio) to open the downloaded DUA shell package and to create DUA submission.
 
-**Other issues**
+### Other issues
 
 If you don't see your issue addressed here, go to [Get support for Partner Center dashboard issues](technical-support.md).
 

@@ -15,7 +15,7 @@ This section provides links for manufacturers of USB peripheral devices.
 
    A detailed description of the enumeration process used by the Microsoft USB driver stack - starting from when the stack detects the presence of a device and indicates to the PnP manager that a new device is connected.
 
-- [USB 2.1, 2.0, 1.1 device enumeration changes in Windows 8](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/usb-2-1-2-0-1-1-device-enumeration-changes-in-windows-8/ba-p/270775)
+- [USB 2.1, 2.0, 1.1 device enumeration changes in Windows 8](https://techcommunity.microsoft.com/blog/microsoftusbblog/usb-2-1-2-0-1-1-device-enumeration-changes-in-windows-8/270775)
 
    Modifications in the USB driver stack support new USB features and improve device enumeration performance. Read the post to understand those subtle changes, and enable device and firmware builders to easily determine the root cause of enumeration failures.
 
