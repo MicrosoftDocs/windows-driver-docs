@@ -22,7 +22,8 @@ The EWDK End User License Agreement has been updated. This included a routine re
 Audio Configuration 8 is now available, enabling stereo render with concurrent mono capture. This enhancement supports Spatial Audio in Microsoft Teams and delivers an improved wireless gaming audio experience
 
 ### Enclave Access Restriction Update
-The [IMAGE_ENCLAVE_CONFIG32](https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-image_enclave_config32) flag now enforces a policy that restricts enclave access to the containing process’s address space. Enclaves must use [EnclaveCopyIntoEnclave](https://learn.microsoft.com/en-us/windows/win32/api/winenclaveapi/nf-winenclaveapi-enclavecopyintoenclave) and [EnclaveCopyOutOfEnclave](https://learn.microsoft.com/en-us/windows/win32/api/winenclaveapi/nf-winenclaveapi-enclavecopyoutofenclave) APIs for memory access. Additionally, the [EnclaveRestrictContainingProcessAccess](https://learn.microsoft.com/en-us/windows/win32/api/winenclaveapi/nf-winenclaveapi-enclaverestrictcontainingprocessaccess) API can be used to modify this restriction at runtime.
+
+The [IMAGE_ENCLAVE_CONFIG32](/windows/win32/api/winnt/ns-winnt-image_enclave_config32) flag now enforces a policy that restricts enclave access to the containing process's address space. Enclaves must use [EnclaveCopyIntoEnclave](/windows/win32/api/winenclaveapi/nf-winenclaveapi-enclavecopyintoenclave) and [EnclaveCopyOutOfEnclave](/windows/win32/api/winenclaveapi/nf-winenclaveapi-enclavecopyoutofenclave) APIs for memory access. Additionally, the [EnclaveRestrictContainingProcessAccess](/windows/win32/api/winenclaveapi/nf-winenclaveapi-enclaverestrictcontainingprocessaccess) API can be used to modify this restriction at runtime.
 
 ## Version 10.0.26100.3323
 
