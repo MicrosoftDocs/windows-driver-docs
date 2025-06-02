@@ -13,13 +13,13 @@ The following features and bug fixes are in Windows 11 24H2 WDK update.
 
 *Released June 10, 2025*
 
-### Windows Driver Kit EULA
+### Windows Driver Kit End User License Agreement (EULA)
 
-The EWDK End User License Agreement has been updated. This included a routine review, and some broken links were fixed
+The Windows Driver Kit EULA is updated. This update includes a routine review, and some fixed broken links.
 
 ### Bluetooth Stereo Render Feature
 
-Audio Configuration 8 is now available, enabling stereo render with concurrent mono capture. This enhancement supports Spatial Audio in Microsoft Teams and delivers an improved wireless gaming audio experience
+Audio Configuration 8 is now available, enabling stereo render with concurrent mono capture. This enhancement supports Spatial Audio in Microsoft Teams and delivers an improved wireless gaming audio experience.
 
 ### Enclave Access Restriction Update
 
@@ -31,7 +31,7 @@ The [IMAGE_ENCLAVE_CONFIG32](/windows/win32/api/winnt/ns-winnt-image_enclave_con
 
 ### SoundWire Device Class for Audio (SDCA)
 
-The SdcaClass driver will now send notifications to the attached SDCA XU driver for changes in the hardware Function Status control along with system posture changes.
+The SdcaClass driver now sends notifications to the attached SDCA XU driver for changes in the hardware Function Status control along with system posture changes.
 
 ### Bluetooth LE Audio Bidirectional Multichannel Streaming
 
@@ -43,11 +43,11 @@ A new set of data structures are added to support bidirectional multichannel str
 
 ### Packet Monitor APIs
 
-Pktmon APIs are available for kernel-mode drivers to send and receive network package notifications. You can use these to diagnose performance and network connectivity issues.
+Pktmon APIs are available for kernel-mode drivers to send and receive network package notifications. You can use these APIs to diagnose performance and network connectivity issues.
 
 ### Bug Fixes
 
-WDK installer unexpectedly launches the bundled VSIX installation at the end of installation if an earlier WDK was already present on the computer.  The WDK VSIX is no longer part of the WDK MSI, so the installer no longer exhibits this behavior.
+WDK installer unexpectedly launches the bundled VSIX installation at the end of installation if an earlier WDK was already present on the computer. The WDK VSIX is no longer part of the WDK MSI, so the installer no longer exhibits this behavior.
 
 ## Version 10.0.26100.2161
 
