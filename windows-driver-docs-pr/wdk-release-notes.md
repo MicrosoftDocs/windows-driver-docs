@@ -1,13 +1,28 @@
 ---
 title: Windows Drivers Kit (WDK) release notes
 description: Highlights the latest features in new WDK releases.
-ms.date: 04/11/2025
+ms.date: 06/02/2025
 ms.topic: release-notes
 ---
 
 # Windows Driver Kit (WDK) release notes
 
 The following features and bug fixes are in Windows 11 24H2 WDK update.
+
+## Version 10.0.26100.4202
+
+*Released June 10, 2025*
+
+### Windows Driver Kit EULA
+
+The EWDK End User License Agreement has been updated. This included a routine review, and some broken links were fixed
+
+### Bluetooth Stereo Render Feature
+
+Audio Configuration 8 is now available, enabling stereo render with concurrent mono capture. This enhancement supports Spatial Audio in Microsoft Teams and delivers an improved wireless gaming audio experience
+
+### Enclave Access Restriction Update
+The [IMAGE_ENCLAVE_CONFIG32](https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-image_enclave_config32) flag now enforces a policy that restricts enclave access to the containing process’s address space. Enclaves must use [EnclaveCopyIntoEnclave](https://learn.microsoft.com/en-us/windows/win32/api/winenclaveapi/nf-winenclaveapi-enclavecopyintoenclave) and [EnclaveCopyOutOfEnclave](https://learn.microsoft.com/en-us/windows/win32/api/winenclaveapi/nf-winenclaveapi-enclavecopyoutofenclave) APIs for memory access. Additionally, the [EnclaveRestrictContainingProcessAccess](https://learn.microsoft.com/en-us/windows/win32/api/winenclaveapi/nf-winenclaveapi-enclaverestrictcontainingprocessaccess) API can be used to modify this restriction at runtime.
 
 ## Version 10.0.26100.3323
 
