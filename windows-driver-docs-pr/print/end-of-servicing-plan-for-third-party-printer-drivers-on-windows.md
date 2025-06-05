@@ -35,7 +35,7 @@ May 2025 update – Printer driver timeline date adjustment.
 
 **A:** Printer manufacturers can continue to submit printer drivers through the [**Partner Center**](https://partner.microsoft.com/dashboard/home) hardware tool for driver validation and signing. However, beginning January 15, 2026, new printer drivers targeted at Windows 11+ and Windows Server 2025+, will only be approved on a case-by-case basis to be signed.
 
-**Exemptions for a driver package to be signed**
+**Conditions when a driver package can be signed**
 
 - A printer that cannot be Mopria certified.
 - Driver package submissions specifying a ceiling of Windows 10 or lower, will continue to be signed.  
