@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 3/13/2025
+ms.date: 05/14/2025
 ms.topic: how-to
 ---
 
@@ -17,7 +17,8 @@ The WDK is used to develop, test, and deploy drivers for Windows. The most recen
 - You can install and run this WDK on Windows 7 and later.
 - You can use this kit to build drivers for Windows 10, Windows Server 2016, and later client and server versions.
 
-To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see [Other WDK downloads](./other-wdk-downloads.md).
+> [!IMPORTANT]
+> Starting in May 2025, Microsoft no longer publishes older versions of Windows Drivers Kit. Use the latest release of the WDK for all driver development efforts. If you're targeting older versions of Windows, follow the guidance in the [Building Drivers for Previous OS Releases Using the Latest Windows Driver Kit (WDK)](https://techcommunity.microsoft.com/blog/windowsdriverdev/building-drivers-for-previous-os-releases-using-the-latest-windows-driver-kit-wd/4374910) blog post. If your development scenario is not supported by the latest WDK, contact [Microsoft WDK Feedback](mailto:wdkfeedback@microsoft.com) for assistance.
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://aka.ms/wipwdk). For installation instructions for Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](./installing-preview-versions-wdk.md).
 
@@ -61,7 +62,7 @@ When you install Visual Studio 2022, select the **Desktop development with C++**
 
 Installing Visual Studio doesn't download the latest SDK version, use the following link to install
 
-- [Download Windows SDK 10.0.26100.3037](https://developer.microsoft.com/windows/downloads/windows-sdk/)
+- [Download the latest Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk/)
 
 The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match. For more information, see [Kit versioning](#kit-versioning).
 

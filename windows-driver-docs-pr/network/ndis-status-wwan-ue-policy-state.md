@@ -12,9 +12,7 @@ ms.localizationpriority: medium
 
 Miniport drivers use the NDIS_STATUS_WWAN_UE_POLICY_STATE notification to inform the MB Service of device UE policies in response to [OID_WWAN_UE_POLICY](oid-wwan-ue-policy.md) query requests.
 
-Miniport drivers can also send unsolicited events with this notification.
-
-This notification uses the [**NDIS_STATUS_WWAN_UE_POLICY_STATE**](ndis-status-wwan-ue-policy-state.md) structure.
+Miniport drivers can also send unsolicited events with this notification. This notification uses the NDIS_STATUS_WWAN_UE_POLICY_STATE structure.
 
 ## Requirements
 
@@ -23,7 +21,5 @@ This notification uses the [**NDIS_STATUS_WWAN_UE_POLICY_STATE**](ndis-status-ww
 **Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
-
-[**NDIS_STATUS_WWAN_UE_POLICY_STATE**](ndis-status-wwan-ue-policy-state.md)
 
 [OID_WWAN_UE_POLICY](oid-wwan-ue-policy.md)

@@ -23,4 +23,4 @@ The high-level architecture diagram of the NFC stack on Windows is shown further
 
 ## Related topics
 
-- [NFC device driver interface (DDI) reference](/windows-hardware/drivers/ddi/index)
+- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)

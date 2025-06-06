@@ -1,7 +1,7 @@
 ---
 title: Windows Drivers Kit (WDK) release notes
 description: Highlights the latest features in new WDK releases.
-ms.date: 3/13/2025
+ms.date: 04/11/2025
 ms.topic: release-notes
 ---
 
@@ -13,19 +13,19 @@ The following features and bug fixes are in Windows 11 24H2 WDK update.
 
 *Released March 14, 2025*.
 
-### SoundWire Device Class for Audio (SDCA)  
+### SoundWire Device Class for Audio (SDCA)
 
 The SdcaClass driver will now send notifications to the attached SDCA XU driver for changes in the hardware Function Status control along with system posture changes.
 
-### Bluetooth LE Audio Bidectional Multichannel Streaming
+### Bluetooth LE Audio Bidirectional Multichannel Streaming
 
-A new set of data structures are added to support bidirectional multichannel streaming, e.g., stereo render with mono capture, for Bluetooth LE Audio. In addition, now there are flags to specify the audio codec location for bidirectional multichannel streaming support
+A new set of data structures are added to support bidirectional multichannel streaming. For example, stereo render with mono capture for Bluetooth LE Audio. There are now flags to specify the audio codec location for bidirectional multichannel streaming support.
 
 ## Version 10.0.26100.2454
 
 *Released November 27, 2024*.
 
-### Packet Monitor APIs 
+### Packet Monitor APIs
 
 Pktmon APIs are available for kernel-mode drivers to send and receive network package notifications. You can use these to diagnose performance and network connectivity issues.
 

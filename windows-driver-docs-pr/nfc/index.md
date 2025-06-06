@@ -27,4 +27,4 @@ To enable NFC support, Microsoft relies on IHVs to provide device drivers that i
 ## Related topics
 
 - [Getting Started with UMDF](../wdf/getting-started-with-umdf-version-2.md)
-- [NFC device driver interface (DDI) reference](/windows-hardware/drivers/ddi/index)
+- [NFC class extension (CX) design guide](/windows-hardware/drivers/nfc/nfc-class-extension-)

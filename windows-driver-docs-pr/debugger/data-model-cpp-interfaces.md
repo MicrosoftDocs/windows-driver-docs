@@ -886,8 +886,6 @@ This topic is part of a series which describes the interfaces accessible from C+
 
 [Debugger Data Model C++ Overview](data-model-cpp-overview.md)
 
-[Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
-
 [Debugger Data Model C++ Objects](data-model-cpp-objects.md)
 
 [Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)

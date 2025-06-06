@@ -16,7 +16,7 @@ ms.date: 04/20/2017
 ## <span id="_ntovr_smart_card_driver_library_callback_routines"></span><span id="_NTOVR_SMART_CARD_DRIVER_LIBRARY_CALLBACK_ROUTINES"></span>
 
 
-The smart card architecture defines a set of standard callback routine types. For details about these routines, see [Smart Card Driver Callbacks](/windows-hardware/drivers/ddi/index).
+The smart card architecture defines a set of standard callback routine types. For details about these routines, see [Smart Card Driver Callbacks](/windows-hardware/drivers/smartcard/smart-card-driver-library-callback-routines).
 
 A reader driver must make these callback routines available for the driver library routine, [**SmartcardDeviceControl (WDM)**](/previous-versions/ff548939(v=vs.85)), to call by storing pointers to them in the smart card device extension, which is of type [**SMARTCARD\_EXTENSION**](/windows-hardware/drivers/ddi/smclib/ns-smclib-_smartcard_extension). These pointers are stored in an array that is located in the **ReaderFunction** member of SMARTCARD\_EXTENSION structure. Individual callback routines can be identified by a series of constant values, which should be used as indexes into the **ReaderFunction** array.
 
@@ -87,7 +87,7 @@ The following table lists the constants that identify the various types of callb
 
  
 
-When the reader driver calls these routines, it should retrieve the calling parameters from the input buffers, as described in [Smart Card Driver Callbacks](/windows-hardware/drivers/ddi/index). The reader driver should also store the output data in the appropriate buffer areas, as described in the same section.
+When the reader driver calls these routines, it should retrieve the calling parameters from the input buffers, as described in [Smart Card Driver Callbacks](/windows-hardware/drivers/smartcard/smart-card-driver-library-callback-routines). The reader driver should also store the output data in the appropriate buffer areas, as described in the same section.
 
 When any callback routine other than the card-tracking callback routine returns STATUS\_PENDING, the smart card library stops servicing any further calls from the reader driver. (For information about the card-tracking callback routine, see [*RDF\_CARD\_TRACKING*](/previous-versions/windows/hardware/drivers/ff548920(v=vs.85)).) If the reader driver attempts to use a driver library routine while the library is in this state, the library routine returns a status of STATUS\_DEVICE\_BUSY. This effectively prevents the reader driver from servicing IOCTL requests from the resource manager, because the reader driver cannot process IOCTL requests if it cannot call [**SmartcardDeviceControl**](/previous-versions/ff548939(v=vs.85)).
 

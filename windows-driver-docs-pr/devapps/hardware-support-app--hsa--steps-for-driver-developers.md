@@ -7,7 +7,7 @@ keywords:
 - custom capabilities
 - UWP
 - Hardware
-ms.date: 06/20/2024
+ms.date: 04/30/2025
 ---
 
 # Hardware Support App (HSA): Steps for Driver Developers
@@ -36,11 +36,11 @@ First, reserve a custom capability:
 
     - Any security or privacy concerns
 
-    - What data events will be processed to the partner?
+    - What data events are processed to the partner?
 
-        - Would the events include personal identifiers such as  precise user locations, passwords, IP address, PUID, device ID , CID, username and contact data)?
+        - Would the events include personal identifiers such as  precise user locations, passwords, IP address, PUID, device ID, CID, username, and contact data?
 
-        - Do the data events stay on the users device, or is it sent  to partner?
+        - Do the data events stay on the user's device, or is it sent  to partner?
 
     - What data does your capability provide access to?
 
@@ -62,7 +62,7 @@ To allow access to an RPC endpoint to a UWP app that has the custom capability, 
 
 1. Create an RPC endpoint using the information from the Security Descriptor.
 
-You can see an implementation of the above in the [RPC server code](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/CustomCapability/Service/Server/RpcServer.cpp) in the [Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability).
+You can see an implementation of this process in the [RPC server code](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/CustomCapability/Service/Server/RpcServer.cpp) in the [Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability).
 
 ## Allowing access to a driver to a UWP app using the custom capability
 
@@ -82,7 +82,7 @@ AddProperty= AddInterfaceSection.AddProps
 {026e516e-b814-414b-83cd-856d6fef4822}, 8, 0x2012,, "CompanyName.myCustomCapabilityName_MyStorePubId"
 ```
 
-Or, do the following in the driver:
+Or implement this code in the driver:
 
 ```cpp
 WDF_DEVICE_INTERFACE_PROPERTY_DATA PropertyData = {};
@@ -103,9 +103,9 @@ Status = WdfDeviceAssignInterfaceProperty(
 
 Replace `zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz` with the GUID for the interface to expose.  Replace *CompanyName* with your company name, *myCustomCapabilityName* with a name that is unique within your company, and *MyStorePubId* with your publisher store ID.
 
-For an example of the driver code shown immediately above, see the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU).
+For an example of this implemented driver code, see the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU).
 
-To set the property in kernel mode, use code like the following:
+To set the property in kernel mode, use this code:
 
 ```cpp
 #if defined(NTDDI_WIN10_RS2) && (NTDDI_VERSION >= NTDDI_WIN10_RS2)
@@ -161,7 +161,7 @@ To prepare the SCCD file, first update the custom capability string.  Use the fo
 Next, the custom capability owner obtains the Package Family Name (PFN) and the signature hash from the app developer and updates those strings in the SCCD file.
 
 > [!NOTE]
-> The app does not have to be signed directly with the certificate, but the specified certificate must be part of the cert chain that signs the app.
+> The app doesn't have to be signed directly with the certificate, but the specified certificate must be part of the cert chain that signs the app.
 
 After completing the SCCD, the capability owner emails it to Microsoft for signing.  Microsoft returns the signed SCCD to the capability owner.
 
@@ -204,7 +204,7 @@ We recommend specifying authorized entities (apps) that can use a custom capabil
 </CustomCapabilityDescriptor>
 ```
 
-The resulting signed SCCD will validate in any app package.
+The resulting signed SCCD validates in any app package.
 
 ## Multiple SCCDs
 
@@ -313,7 +313,7 @@ The following is the formal XML XSD schema for an SCCD file.  Use this schema to
 </xs:schema>
 ```
 
-The following schema is also valid as of Windows 10, version 1809.  It enables a SCCD to declare any app package to be an authorized entity.
+The following schema is also valid as of Windows 10, version 1809.  It enables an SCCD to declare any app package to be an authorized entity.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

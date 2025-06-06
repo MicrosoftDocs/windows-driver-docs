@@ -1,7 +1,7 @@
 ---
 title: Manage Code Signing Certificates
 description: This article describes how to get, add, and update code signing certificates to the hardware dashboard.
-ms.date: 11/26/2024
+ms.date: 05/29/2025
 ms.topic: how-to
 ---
 
@@ -9,7 +9,7 @@ ms.topic: how-to
 
 As a Partner Center administrator, you're responsible for adding, updating, and retiring driver certificates when they expire. This article describes how to get, add, and update code signing certificates to the hardware dashboard.
 
-For more information on rules for driver signing, see [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-signing-changes-in-windows-10-version-1607/ba-p/364894) in the [Windows Hardware Certification blog](https://techcommunity.microsoft.com/t5/windows-hardware-certification/bg-p/WindowsHardwareCertification).
+For more information on rules for driver signing, see [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/blog/windowshardwarecertification/driver-signing-changes-in-windows-10-version-1607/364894) in the [Windows Hardware Certification blog](https://techcommunity.microsoft.com/category/winhec-online/blog/windowshardwarecertification).
 
 ## Prerequisites
 
@@ -21,16 +21,7 @@ To get a new code signing certificate:
 
 1. Determine which certificate you need. To help you choose a certificate, see [Driver signing requirements](code-signing-reqs.md).
 1. If you're reusing a certificate, move on to step 5.
-1. Go to the page of one the following certificate authorities and follow their directions for purchase:
-
-    - [Certum EV code signing certificate](https://shop.certum.eu/data-safety/code-signing-certificates/certum-ev-code-sigining.html)
-    - [DigiCert EV code signing certificate](https://www.digicert.com/signing/code-signing-certificates)
-    - [Entrust EV code signing certificate](https://www.entrust.com/products/digital-signing/code-signing-certificates)
-    - [GlobalSign EV code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
-    - [IdenTrust EV code signing certificate](https://www.identrust.com/digital-certificates/trustid-ev-code-signing)
-    - [Sectigo (formerly Comodo) EV code signing certificate](https://www.sectigo.com/ssl-certificates-tls/code-signing)
-    - [SSL.com EV code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
-
+1. If your organization doesn't have a certificate, you need to [purchase an EV certificate from a trusted vendor](code-signing-reqs.md#where-to-get-ev-code-signing-certificates).
 1. Once the certificate authority verifies your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
 1. Go to [Partner Center](https://partner.microsoft.com/dashboard) and sign in using administrator credentials.
 1. Select the gear icon in the upper right, then select **Account Settings**, then **Manage Certificates** on the left side of the screen.

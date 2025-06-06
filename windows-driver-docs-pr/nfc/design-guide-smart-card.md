@@ -41,5 +41,5 @@ The Windows smart card DDI includes IOCTL requests for Get and Set attributes. I
 
 ## Related topics
 
-- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)
+- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)
 - [Smart card DDI and command reference](/previous-versions/dn905601(v=vs.85))

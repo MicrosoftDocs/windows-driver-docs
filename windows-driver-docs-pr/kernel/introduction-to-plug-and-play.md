@@ -2,7 +2,7 @@
 title: Introduction to Plug and Play
 description: Introduction to Plug and Play
 keywords: ["PnP WDK kernel , about Plug and Play", "Plug and Play WDK kernel , about Plug and Play"]
-ms.date: 06/20/2024
+ms.date: 04/23/2025
 ms.topic: concept-article
 ---
 
@@ -12,23 +12,23 @@ Plug and Play (PnP) is the part of Windows that enables a computer system to ada
 
 PnP requires support from device hardware, system software, and drivers. Initiatives in the hardware industry define standards for easy identification of add-in boards and system components. This Windows Driver Kit (WDK) documentation focuses on the system software support for PnP and how drivers use that support to implement PnP.
 
-The system software support for PnP, together with PnP drivers provides the following:
+The system software support for PnP, together with PnP drivers provides the following functionality:
 
--   Automatic and dynamic recognition of installed hardware
+- Automatic and dynamic recognition of installed hardware
 
--   Hardware resource allocation (and reallocation)
+- Hardware resource allocation (and reallocation)
 
     The PnP manager determines the hardware resources requested by each device (for example, input/output ports, interrupt requests, direct memory access channels, and memory locations) and assigns hardware resources appropriately. The PnP manager reconfigures resource assignments when necessary, such as when a new device is added to the system that requires resources already in use.
 
-    Drivers for PnP devices do not assign resources; instead, the requested resources for a device are identified when the device is enumerated. The PnP manager retrieves the requirements for each device during resource allocation. Resources are not dynamically configurable for legacy devices, so the PnP manager assigns resources to legacy devices first.
+    Drivers for PnP devices don't assign resources; instead, the requested resources for a device are identified when the device is enumerated. The PnP manager retrieves the requirements for each device during resource allocation. Resources aren't dynamically configurable for legacy devices, so the PnP manager assigns resources to legacy devices first.
 
--   Loading of appropriate drivers
+- Loading of appropriate drivers
 
--   A programming interface for drivers to interact with the PnP system
+- A programming interface for drivers to interact with the PnP system
 
     The interface includes I/O manager routines, Plug and Play minor IRPs, required [standard driver routines](./introduction-to-standard-driver-routines.md), and information in the registry.
 
--   Mechanisms for drivers and applications to learn of changes in the hardware environment and take appropriate actions
+- Mechanisms for drivers and applications to learn of changes in the hardware environment and take appropriate actions
 
     PnP enables drivers and user-mode code to register for, and be notified of, certain hardware events.
 

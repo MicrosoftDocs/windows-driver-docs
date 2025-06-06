@@ -61,7 +61,3 @@ Because of these display rules, when a number is displayed as a 32-bit number fr
 [MASM Expressions vs. C++ Expressions](masm-expressions-vs--c---expressions.md)
 
 [Mixed Expression Examples](expression-examples.md)
-
-[Sign Extension](sign-extension.md) 
-
-

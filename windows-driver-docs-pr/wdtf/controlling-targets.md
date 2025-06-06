@@ -30,7 +30,7 @@ Your scenario can attempt to locate an implementation for one of these interface
 Set Action = Device.GetInterface("PNP")
 ```
 
-The [**Action Interfaces**](/windows-hardware/drivers/ddi/index) are identified with a WDTF *ProgId*. You must specify the WDTF *ProgId* when you call the [**HasInterface**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-hasinterface), [**GetInterface**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-getinterface), [**GetInterfaces**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftargets2-getinterfaces), and [**GetInterfacesIfExist**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftargets2-getinterfacesifexist) methods. For information about WDTF *ProgId*, see the **Action Interfaces**.
+The **Action Interfaces** are identified with a WDTF *ProgId*. You must specify the WDTF *ProgId* when you call the [**HasInterface**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-hasinterface), [**GetInterface**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-getinterface), [**GetInterfaces**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftargets2-getinterfaces), and [**GetInterfacesIfExist**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftargets2-getinterfacesifexist) methods. For information about WDTF *ProgId*, see the **Action Interfaces**.
 
 You can add interfaces and implementations of interfaces to WDTF through a plug-in model. For more information about this model, see [Extending the Framework](extending-the-framework.md).
 

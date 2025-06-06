@@ -147,8 +147,6 @@ For a code sample and example debugging session of an orphaned critical section,
 
 [Displaying a Critical Section](displaying-a-critical-section.md)
 
-[Critical Section Time Outs](critical-section-time-outs.md) (user mode)
-
-[**!ntsdexts.locks**](../debuggercmds/-locks---ntsdexts-locks-.md) 
+[!ntsdexts.locks](../debuggercmds/-locks---ntsdexts-locks-.md) 
 
 [!cs ](../debuggercmds/-cs.md)

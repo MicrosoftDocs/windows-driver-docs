@@ -10,7 +10,7 @@ ms.topic: reference
 
 # modMessage function
 
-The **modMessage** function is the entry-point function for musical instrument digital interface (MIDI) output drivers and for internal synthesizer drivers. For more information about audio device messages related to MIDI, see [Audio Device Messages for MIDI](https://msdn.microsoft.com/library/ff536194\(v=vs.85\)).
+The **modMessage** function is the entry-point function for musical instrument digital interface (MIDI) output drivers and for internal synthesizer drivers. For more information about audio device messages related to MIDI, see [Audio Device Messages for MIDI](audio-device-messages-for-midi.md)
 
 ## Syntax
 
@@ -91,11 +91,11 @@ The **modMessage** function returns MMSYSERR\_NOERROR if it can successfully pro
 </tr>
 <tr class="even">
 <td><strong>MMSYSERR_INVALFLAG</strong></td>
-<td><p>An invalid flag was passed to <a href="mod-message.md"><strong>modMessage</strong></a>(by using <em>dwParam2</em>).</p></td>
+<td><p>An invalid flag was passed to <strong>modMessage</strong> (by using <em>dwParam2</em>).</p></td>
 </tr>
 <tr class="odd">
 <td><strong>MMSYSERR_INVALPARAM</strong></td>
-<td><p>An invalid parameter was passed to <a href="mod-message.md"><strong>modMessage</strong></a>.</p></td>
+<td><p>An invalid parameter was passed to <strong>modMessage</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><strong>MMSYSERR_HANDLEBUSY</strong></td>
@@ -131,11 +131,11 @@ The **modMessage** function returns MMSYSERR\_NOERROR if it can successfully pro
 </tr>
 <tr class="even">
 <td><strong>MMSYSERR_NODRIVERCB</strong></td>
-<td><p>The driver that works with <a href="mod-message.md"><strong>modMessage</strong></a> does not call <a href="/windows/win32/api/mmiscapi/nf-mmiscapi-drivercallback">DriverCallback</a>.</p></td>
+<td><p>The driver that works with <strong>modMessage</strong> does not call <a href="/windows/win32/api/mmiscapi/nf-mmiscapi-drivercallback">DriverCallback</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>MMSYSERR_MOREDATA</strong></td>
-<td><p><a href="mod-message.md"><strong>modMessage</strong></a> has more data to return.</p></td>
+<td><p><strong>modMessage</strong> has more data to return.</p></td>
 </tr>
 <tr class="even">
 <td><strong>MMSYSERR_LASTERROR</strong></td>

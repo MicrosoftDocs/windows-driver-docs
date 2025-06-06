@@ -14,4 +14,4 @@ Network drivers prior to Windows Vista used NDIS 5.1, which was superseded in Wi
 
 ## Related topics
 
-[Previous Versions of Network Drivers](network-drivers-prior-to-windows-vista.md)
+[Native 802.11 Wireless LAN Drivers](native-802-11-wireless-lan-drivers.md)

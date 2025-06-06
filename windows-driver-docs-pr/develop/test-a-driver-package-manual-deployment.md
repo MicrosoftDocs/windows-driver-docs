@@ -132,7 +132,7 @@ Use Device Manager to confirm that you have successfully installed your driver, 
 
 ### PnPUtil
 
-Use [PnPUtil](../devtest/pnputil.md) to to gather addtional information on your installed driver.
+Use [PnPUtil](../devtest/pnputil.md) to gather additional information on your installed driver.
 
 1. Open a Command Prompt window (Run as administrator).
 

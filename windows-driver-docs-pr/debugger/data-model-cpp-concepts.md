@@ -312,8 +312,6 @@ This topic is part of a series which describes the interfaces accessible from C+
 
 [Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
 
-[Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
-
 [Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
 
 

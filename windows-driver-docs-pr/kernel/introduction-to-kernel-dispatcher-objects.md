@@ -54,7 +54,7 @@ Based on these limitations, you must use the following rules:
 
 - A dispatch routine for a device I/O control request can wait for a dispatcher object to be set to the Signaled state only if the transfer type for the I/O control code is METHOD_BUFFERED.
 
-- SCSI miniport drivers should not use kernel dispatcher objects. SCSI miniport drivers should call only [SCSI Port Library Routines](/windows-hardware/drivers/ddi/index).
+- SCSI miniport drivers should not use kernel dispatcher objects. SCSI miniport drivers should call only [SCSI Port Driver Support Routines](/windows-hardware/drivers/storage/scsi-port-driver-support-routines).
 
 Every other standard driver routine executes in an arbitrary thread context: that of whatever thread happens to be current when the driver routine is called to process a queued operation or to handle a device interrupt. Moreover, most standard driver routines are run at a raised IRQL, either at DISPATCH_LEVEL, or for device drivers, at DIRQL.
 

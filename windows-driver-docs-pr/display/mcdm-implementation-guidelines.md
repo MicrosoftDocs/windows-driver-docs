@@ -1,7 +1,8 @@
 ---
 title: MCDM Kernel-Mode Driver Implementation Guidelines
 description: Implementation guidelines for MCDM kernel-mode driver
-ms.date: 12/18/2024
+ms.date: 04/24/2025
+ms.topic: concept-article
 ---
 
 # MCDM kernel-mode driver implementation guidelines
@@ -343,13 +344,13 @@ The following [DXGK_DRIVERCAPS](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmd
 
 | Member | Notes |
 | ------ | ----- |
-| HighestAcceptableAddress  | If this address is less than the highest physical address of the system memory that is present during driver load, the load will fail. |
+| HighestAcceptableAddress  | If this address is less than the highest physical address of the system memory that is present during driver load, the load fails. |
 | InterruptMessageNumber    | Set as appropriate. |
 | [SchedulingCaps](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidschcaps) | See [SchedulingCaps requirements](#schedulingcaps-requirements). |
 | [MemoryManagementCaps](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidmmcaps) | See [MemoryManagementCaps requirements](#memorymanagementcaps-requirements). |
 | [GpuEngineTopology](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_gpuenginetopology) | Set **NbAsymetricProcessingNodes** to the number supported GPU engines. |
 | [WDDMVersion](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_wddmversion) | Must be set to DXGKDDI_WDDMv2_6 or later. |
-| [PreemptionCaps](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmdt_preemption_caps)  | Set **GraphicsPreemptionGranularity** appropriately to the level supported by the hardware. At a minimum, you should attempt to support packet-level preemption for dequeue packets that are scheduled but haven't yet started executing. Set **ComputePreemptionGranularity** to anything other than D3DKMDT_COMPUTE_PREEMPTION_NONE. |
+| [PreemptionCaps](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmdt_preemption_caps)  | Set **GraphicsPreemptionGranularity** appropriately to the level supported by the hardware. At a minimum, you should attempt to support packet-level preemption for dequeue packets that are scheduled but not yet started executing. Set **ComputePreemptionGranularity** to anything other than D3DKMDT_COMPUTE_PREEMPTION_NONE. |
 | SupportPerEngineTDR | Must be set to TRUE. See [TDR Changes in Windows 8 and later](tdr-changes-in-windows-8.md). |
 | SupportRuntimePowerManagement | Set as appropriate. See [GPU power management of idle states and active power](gpu-power-management-of-idle-and-active-power.md). |
 | SupportSurpriseRemovalInHibernation | Set to TRUE if the driver supports surprise removal when in hibernation; otherwise set as appropriate. See [DXGKDDI_NOTIFY_SURPRISE_REMOVAL](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_notify_surprise_removal). |
@@ -417,7 +418,7 @@ The following [DXGK_DRIVERCAPS](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmd
 | IoMmuSupported              | Set as appropriate. This cap is set when the device shares page tables with the CPU (shared virtual memory (SVM)). See [IoMmu Model](iommu-model.md). |
 | ReplicateGdiContent         | Must be set to FALSE. |
 | NonCpuVisiblePrimary        | Must be set to FALSE. |
-| ParavirtualizationSupported | MCDM host drivers that support the virtualization of the device through the GPU partitioning interface (GPU-P with SR-IOV) should set this field to FALSE. All other cases (drivers for physical machines without GPU-P support or guest drivers of vGPUs that have been exposed through GPU-P) should set this field to TRUE. |
+| ParavirtualizationSupported | MCDM host drivers that support the virtualization of the device through the GPU partitioning interface (GPU-P with SR-IOV) should set this field to FALSE. All other cases (drivers for physical machines without GPU-P support or guest drivers of vGPUs exposed through GPU-P) should set this field to TRUE. |
 | IoMmuSecureModeSupported    | Set as appropriate. If this cap is set TRUE, the driver supports IoMmu isolation (the device has a dedicated page table for the IoMmu unit). If this cap is set FALSE, the device can't be used in the "secure" virtual machines (Windows Sandbox or MDAG). |
 | DisableSelfRefreshVRAMInS3  | Set as appropriate. |
 

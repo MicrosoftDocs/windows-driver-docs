@@ -16,7 +16,7 @@ ms.topic: concept-article
 # Creating WDTF Scenarios
 
 
-You can begin your WDTF-based scenarios by creating an instance of the [**IWDTF2**](/windows-hardware/drivers/ddi/index) aggregation interface, which contains [**DeviceDepot**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtf2-get_devicedepot) and [**SystemDepot**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtf2-get_systemdepot) properties.
+You can begin your WDTF-based scenarios by creating an instance of the [**IWDTF2**](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtf2) aggregation interface, which contains [**DeviceDepot**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtf2-get_devicedepot) and [**SystemDepot**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtf2-get_systemdepot) properties.
 
 To collect one or more target objects, use the [**IWDTFDeviceDepot2**](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtfdevicedepot2) interface, and use the **Query** method with the [Simple Data Evaluation Language](simple-data-evaluation-language-overview.md) (SDEL).
 
@@ -68,7 +68,4 @@ Device-type targets include an **IsPhantom** attribute (and **IsAttached** attri
 Set NonPhantomDevices = WDTF.DeviceDepot.Query ("IsAttached")
 ```
 
-For more attribute keywords, see [SDEL Tokens](/windows-hardware/drivers/ddi/index).
-
- 
-
+For more attribute keywords, see [Attribute Tokens in SDEL](attribute-tokens-in-sdel.md).

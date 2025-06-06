@@ -1,23 +1,27 @@
 ---
-title: Writing a WiFiCx client driver
-description: Describes the behavior of the WiFiCx class extension.
+title: Develop a WiFiCx Client Driver Using NetAdapterCx
+description: Learn how to develop a WiFiCx client driver using NetAdapterCx. This guide explains initialization, command handling, and Wi-Fi Direct support. 
 keywords:
 - WiFiCx WDF class extension, WiFiCx, WiFi NetAdapterCx
-ms.date: 06/17/2021
+ms.date: 05/22/2025
 ms.topic: how-to
 ---
 
-# Writing a WiFiCx client driver
+# Develop a WiFiCx client driver
 
 ## Device and adapter initialization
 
-In addition to the tasks that NetAdapterCx requires for [NetAdapter device initialization](device-and-adapter-initialization.md), a WiFiCx client driver must also perform the following tasks in its [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function:
+In addition to the tasks that NetAdapterCx requires for [NetAdapter device initialization](device-and-adapter-initialization.md), a WiFiCx client driver also performs these tasks in its [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function:
 
+  
 1. Call [**WifiDeviceInitConfig**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifideviceinitconfig) after calling [**NetDeviceInitConfig**](/windows-hardware/drivers/ddi/netdevice/nf-netdevice-netdeviceinitconfig) but before calling [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate), referencing the same [**WDFDEVICE_INIT**](../wdf/wdfdevice_init.md) object passed in by the framework.
 
-2. Call [**WifiDeviceInitialize**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifideviceinitialize) to register WiFiCx device-specific callback functions, using an initialized [**WIFI_DEVICE_CONFIG**](/windows-hardware/drivers/ddi/wificx/ns-wificx-wifi_device_config) structure and the **WDFDEVICE** object obtained from **WdfDeviceCreate**.
+  
+1. Call [**WifiDeviceInitialize**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifideviceinitialize) to register WiFiCx device-specific callback functions, using an initialized [**WIFI_DEVICE_CONFIG**](/windows-hardware/drivers/ddi/wificx/ns-wificx-wifi_device_config) structure and the **WDFDEVICE** object obtained from **WdfDeviceCreate**.
 
-The following example demonstrates how to initialize the WiFiCx device. Error handling has been left out for clarity.
+  
+
+The following example demonstrates how to initialize the WiFiCx device. The example omits error handling for clarity.
 
 ```C++
 status = NetDeviceInitConfig(deviceInit);
@@ -40,31 +44,40 @@ auto peerVersion = WifiDeviceGetOsWdiVersion(wdfDevice);
 
 ```
 
-This message flow diagram shows the initialization process.
-
-:::image type="content" source="images/wificx_initialization.png" alt-text="Diagram showing the WiFiCx client driver initialization process.":::
+  
+:::image type="content" source="images/wificx_initialization.png" alt-text="Screenshot of WiFiCx client driver initialization process.":::
+  
 
 ### Default adapter (station) creation flow
 
 Next, the client driver must set all the Wi-Fi specific device capabilities, typically in the [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows. If your hardware needs interrupts to be enabled in order to query firmware capabilities, this can be done in [*EvtWdfDeviceD0EntryPostInterruptsEnabled*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry_post_interrupts_enabled). 
 
-Note that WiFiCx no longer calls **WDI_TASK_OPEN**/**WDI_TASK_CLOSE** to instruct clients to load/unload firmware nor will it query for Wi-Fi capabilities via the **WDI\_GET\_ADAPTER\_CAPABILITIES** command. 
+  
+WiFiCx no longer calls **WDI_TASK_OPEN** or **WDI_TASK_CLOSE** to instruct clients to load or unload firmware, and it doesn't query for Wi-Fi capabilities by using the **WDI_GET_ADAPTER_CAPABILITIES** command.
 
-Unlike other types of NetAdapterCx drivers, WiFiCx drivers must not create the NETADAPTER object from within the *EvtDriverDeviceAdd* callback function. Instead, WiFiCx will instruct drivers to create the default NetAdapter (station) later using the [*EvtWifiDeviceCreateAdapter*](/windows-hardware/drivers/ddi/wificx/nc-wificx-evt_wifi_device_create_adapter) callback (after the client’s *EvtDevicePrepareHardware* callback is successful). Furthermore, WiFiCx/WDI no longer calls the **WDI\_TASK\_CREATE\_PORT** command.
+  
+Unlike other types of NetAdapterCx drivers, WiFiCx drivers don't create the NETADAPTER object in the *EvtDriverDeviceAdd* callback function. Instead, WiFiCx instructs drivers to create the default NetAdapter (station) later by using the [*EvtWifiDeviceCreateAdapter*](/windows-hardware/drivers/ddi/wificx/nc-wificx-evt_wifi_device_create_adapter) callback after the client’s *EvtDevicePrepareHardware* callback succeeds. WiFiCx and WDI no longer call the **WDI_TASK_CREATE_PORT** command.
 
 In its [*EvtWifiDeviceCreateAdapter*](/windows-hardware/drivers/ddi/wificx/nc-wificx-evt_wifi_device_create_adapter) callback function, the client driver must:
 
+  
 1. Call [**NetAdapterCreate**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptercreate) to create the new NetAdapter object.
 
-2. Call [**WifiAdapterInitialize**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadapterinitialize) to initialize the WiFiCx context and associate it with this NetAdapter object.
+  
+1. Call [**WifiAdapterInitialize**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadapterinitialize) to initialize the WiFiCx context and associate it with this NetAdapter object.
 
-3. Call [**NetAdapterStart**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterstart) to start the adapter.
+  
+1. Call [**NetAdapterStart**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterstart) to start the adapter.
 
-If this succeeds, WiFiCx will send initialization commands for the device/adapter (for example, [SET\_ADAPTER\_CONFIGURATION](oid-wdi-set-adapter-configuration.md), [TASK\_SET\_RADIO\_STATE](oid-wdi-task-set-radio-state.md), etc.).
+  
 
-For a code example of *EvtWifiDeviceCreateAdapter*, see [Event callback for adapter creation](#event-callback-for-adapter-creation).
+If this succeeds, WiFiCx sends initialization commands for the device or adapter, such as [SET_ADAPTER_CONFIGURATION](oid-wdi-set-adapter-configuration.md) and [TASK_SET_RADIO_STATE](oid-wdi-task-set-radio-state.md).
 
+See [Event callback for adapter creation](#event-callback-for-adapter-creation) for a code example of *EvtWifiDeviceCreateAdapter*.
+
+  
 :::image type="content" source="images/wificx_station.png" alt-text="Flow chart showing WiFiCx client driver station adapter creation.":::
+  
 
 ## Handling WiFiCx command messages
 
@@ -72,27 +85,36 @@ WiFiCx command messages are based off of the previous WDI model commands for mos
 
 Commands are exchanged through a set of callback functions provided by the client driver and APIs provided by WiFiCx:
 
+  
 - WiFiCx sends a command message to the client driver by invoking its [*EvtWifiDeviceSendCommand*](/windows-hardware/drivers/ddi/wificx/nc-wificx-evt_wifi_device_send_command) callback function. 
 
+  
 - To retrieve the message, the client driver calls [**WifiRequestGetInOutBuffer**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifirequestgetinoutbuffer) to get the input/output buffer and buffer lengths. The driver also needs to call [**WifiRequestGetMessageId**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifirequestgetmessageid) to retrieve the message ID.
 
+  
 - To complete the request, the driver sends the M3 for the command asynchronously by calling [**WifiRequestComplete**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifirequestcomplete). 
 
+  
 - If the command is a set command and the original request didn't contain a large enough buffer, the client should call [**WifiRequestSetBytesNeeded**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifirequestsetbytesneeded) to set the required buffer size and then fail the request with status BUFFER\_OVERFLOW.
 
+  
 - If the command is a task command, the client driver needs to later send the associated M4 indication by calling [**WifiDeviceReceiveIndication**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifidevicereceiveindication) and pass the indication buffer with a WDI header that contains the same message ID as contained in the M1.
 
+  
 - Unsolicited indications are also notified via **WifiDeviceReceiveIndication**, but with the **TransactionId** member of [**WDI_MESSAGE_HEADER**](/windows-hardware/drivers/ddi/dot11wificxintf/ns-dot11wificxintf-wdi_message_header) set to **0**.
 
+  
 :::image type="content" source="images/wificx_command1.png" alt-text="Flow chart showing WiFiCx driver command message handling.":::
+  
 
 ## Wi-Fi Direct (P2P) support
 
-The following sections describe how WiFiCx drivers can support Wi-Fi Direct.
+The following sections explain how WiFiCx drivers support Wi-Fi Direct.
 
 ### Wi-Fi Direct device capabilities
 
 [**WIFI_WIFIDIRECT_CAPABILITIES**](/windows-hardware/drivers/ddi/wificx/ns-wificx-wifi_wifidirect_capabilities) represents all the relevant capabilities that were previously set in WDI via the WDI_P2P_CAPABILITIES and WDI\_AP\_CAPABILITIES TLVs. The client driver calls [**WifiDeviceSetWiFiDirectCapabilities**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifidevicesetwifidirectcapabilities) to report Wi-Fi direct capabilities to WiFiCx in the set device capabilities phase.
+
 ```C++
 WIFI_WIFIDIRECT_CAPABILITIES wfdCapabilities = {};
 
@@ -108,11 +130,19 @@ WifiDeviceSetWiFiDirectCapabilities(Device, &wfdCapabilities);
 
 For Wi-Fi Direct, the "WfdDevice" is a control object with no data path capabilities. Therefore, WiFiCx has a new WDFObject named WIFIDIRECTDEVICE. In their [*EvtWifiDeviceCreateWifiDirectDevice*](/windows-hardware/drivers/ddi/wificx/nc-wificx-evt_wifi_device_create_wifidirectdevice) callback function, client drivers:
 
+  
 - Call [**WifiDirectDeviceCreate**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifidirectdevicecreate) to create the WIFIDIRECTDEVICE object.
+
+  
 - Call [**WifiDirectDeviceInitialize**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifidirectdeviceinitialize) to initialize the object. 
+
+  
 - Call [**WifiDirectDeviceGetPortId**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifidirectdevicegetportid) to determine the port id (which is used in command messages).
 
+  
+
 This example shows how to create and initialize a WIFIDIRECTDEVICE object.
+
 ```C++
 NTSTATUS
 EvtWifiDeviceCreateWifiDirectDevice(
@@ -157,8 +187,14 @@ EvtWifiDeviceCreateWifiDirectDevice(
 ### Event callback for adapter creation
 
 Client drivers create the station adapter and WfdRole adapter using the same event callback: [*EvtWifiDeviceCreateAdapter*](/windows-hardware/drivers/ddi/wificx/nc-wificx-evt_wifi_device_create_adapter). 
+
+  
 - Call [**WifiAdapterGetType**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadaptergettype) to determine the adapter type. 
+
+  
 - If the driver needs to query the adapter type from the NETADAPTER_INIT object before the adapter is created, call [**WifiAdapterInitGetType**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadapterinitgettype). 
+
+  
 - Call [**WifiAdapterGetPortId**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadaptergetportid) determine the port ID (used in message commands). 
 
 
@@ -219,6 +255,7 @@ EvtWifiDeviceCreateAdapter(
     return ntStatus;
 }
 ```
+
 ### Wi-Fi ExemptionAction support in Tx queues
 
 ExemptionAction is a new NetAdapter packet extension that indicates whether the packet is expected to be exempt from any cipher operations performed by the client. Please read the documentation on [usExemptionActionType](/windows-hardware/drivers/ddi/windot11/ns-windot11-dot11_extsta_send_context) for details.
@@ -389,6 +426,7 @@ BuildTcbForPacket(
 }
 
 ```
+
 ### Wi-Fi Direct INI/INF file change
 
 vWifi functionalities have been replaced by the NetAdapter. If you are porting from WDI based driver, the INI/INF should remove the vWIFI related information. 
@@ -401,10 +439,10 @@ BusType         = 5
 *PhysicalMediaType = 9; NdisPhysicalMediumNative802_11
 NumberOfNetworkInterfaces   = 5; For WIFI DIRECT DEVICE AND ROLE ADAPTER
 
-; TODO: Set this to 0 if your device is not a physical device.
+; TODO: Set this to 0 if your device isn't a physical device.
 *IfConnectorPresent     = 1     ; true
 
-; In most cases, you can keep these at their default values.
+; In most cases, keep these at their default values.
 *ConnectionType         = 1     ; NET_IF_CONNECTION_DEDICATED
 *DirectionType          = 0     ; NET_IF_DIRECTION_SENDRECEIVE
 *AccessType             = 2     ; NET_IF_ACCESS_BROADCAST
@@ -423,7 +461,7 @@ KmdfLibraryVersion      = $KMDFVERSION$
 
 By default, NetAdapterCx will create one Tx queue for all packets intended for a NetAdapter. 
 
-If a driver needs to support multiple Tx queues for QOS or needs to set up different queues for different peers, it can do so by setting up the appropriate DEMUX properties. If demux properties are added, the Tx queue count is the product of the maximum number of peers and maximum number of tids, plus **1** (for broadcast/multicast).
+If a driver needs to support multiple Tx queues for QOS or set up different queues for different peers, it does so by setting up the appropriate DEMUX properties. If you add demux properties, the Tx queue count is the product of the maximum number of peers and the maximum number of tids, plus **1** (for broadcast or multicast).
 
 #### Multiple queues for QOS
 Before using a NETADAPTER_INIT * object to create a NETADAPTER, the client driver should add WMMINFO demux to it:
@@ -435,9 +473,9 @@ WIFI_ADAPTER_TX_WMMINFO_DEMUX_INIT(&wmmInfoDemux);
 WifiAdapterInitAddTxDemux(adapterInit, &wmmInfoDemux);
 ```
 
-This will cause the translator to create up to 8 Tx queues on demand, depending on the NBL WlanTagHeader::WMMInfo value.
+This causes the translator to create up to eight Tx queues on demand, depending on the NBL WlanTagHeader::WMMInfo value.
 
-The client driver should query the priority that the framework will use for this queue from [*EvtPacketQueueStart*](/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_start):
+The client driver queries the priority that the framework uses for this queue from [*EvtPacketQueueStart*](/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_start):
 
 ```C++
 auto const priority = WifiTxQueueGetDemuxWmmInfo(queue);
@@ -453,28 +491,28 @@ WIFI_ADAPTER_TX_DEMUX peerInfoDemux;
 WIFI_ADAPTER_TX_PEER_ADDRESS_DEMUX_INIT(&peerInfoDemux, maxNumOfPeers);
 WifiAdapterInitAddTxDemux(adapterInit, &peerInfoDemux);
 ```
-The client driver should query the peer address that the framework will use for this queue from [*EvtPacketQueueStart*](/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_start):
+The client driver queries the peer address that the framework uses for this queue from [*EvtPacketQueueStart*](/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_start):
 
 ```C++
 auto const peerAddress = WifiTxQueueGetDemuxPeerAddress(queue);
 ```
-All packets placed on this queue between **EvtStart** and **EvtStop** will be for this peer.
+All packets placed in this queue between **EvtStart** and **EvtStop** have the given priority.
 
-Queues are only opened for peer addresses that the driver added using the following APIs:
+The framework opens queues only for peer addresses that the driver adds by using the following APIs:
 
 [**WifiAdapterAddPeer**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadapteraddpeer):
-Tells WiFiCx that a peer has connected with the given address. WiFiCx will use this address with peer demultiplexing by associating a queue to the peer address. The maximum number of peers that the driver may add shall not exceed the range value provided when adding Tx demultiplexing info.
+Tells WiFiCx that a peer has connected with the given address. WiFiCx will use this address with peer demultiplexing by associating a queue to the peer address. The maximum number of peers that the driver can add can't exceed the range value provided when adding Tx demultiplexing info.
 
 [**WifiAdapterRemovePeer**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifiadapterremovepeer):
-Tells WiFiCx that a peer has been disconnected. This causes the framework to stop the associated queue.
+Tells WiFiCx that a peer has been disconnected. The framework stops the associated queue.
 
 ![Peer lifetime](images/PeerDemux.png)
 
 ## Power policy changes
 
-For power management, client drivers should use the NETPOWERSETTINGS object [like other types of NetAdapterCx client drivers](configuring-power-management.md).
+For power management, client drivers use the NETPOWERSETTINGS object [like other types of NetAdapterCx client drivers](configuring-power-management.md).
 
-To support device idling when the system is in its working (S0) state, the driver must call [**WdfDeviceAssignS0IdleSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings) and set the **IdleTimeoutType**  member of [**WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) to **SystemManagedIdleTimeoutWithHint**:
+To support device idling when the system is in its working (S0) state, the driver calls [**WdfDeviceAssignS0IdleSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings) and sets the **IdleTimeoutType** member of [**WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) to **SystemManagedIdleTimeoutWithHint**:
 
 ```cpp
 const ULONG WIFI_DEFAULT_IDLE_TIMEOUT_HINT_MS = 3u * 1000u; // 3 seconds
@@ -487,3 +525,4 @@ idleSettings.IdleTimeoutType = SystemManagedIdleTimeoutWithHint;
     status = WdfDeviceAssignS0IdleSettings(DeviceContext->WdfDevice, &idleSettings);
 
 ```
+

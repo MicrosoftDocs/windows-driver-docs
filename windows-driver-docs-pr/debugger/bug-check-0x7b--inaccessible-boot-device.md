@@ -131,7 +131,7 @@ If you receive this stop code and Windows does boot, try the following resolutio
 
 - Look in **Device Manager** to see if any devices are marked with the exclamation point (!). Review the events log displayed in the driver properties for a faulting driver. Try updating the related driver.
 
-- Check the System Log in Event Viewer for other error messages that might help pinpoint the device or driver that's causing the error. For more information, see [Open Event Viewer](/microsoft-365/security/defender-endpoint/event-error-codes). Look for critical errors in the system log that occurred in the same time frame as the blue screen.
+- Check the System Log in Event Viewer for other error messages that might help pinpoint the device or driver that's causing the error. Look for critical errors in the system log that occurred in the same time frame as the blue screen.
 
 - You can try running the hardware diagnostics supplied by the system manufacturer.
 

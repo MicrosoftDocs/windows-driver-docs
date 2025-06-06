@@ -1,24 +1,22 @@
 ---
 title: Choose a Driver Model
 description: Microsoft Windows provides a variety of driver models that you can use to write drivers.
-ms.date: 06/28/2024
+ms.date: 05/07/2025
 ---
 
 # Choose a driver model
 
-
 Microsoft Windows provides a variety of driver models that you can use to write drivers. The strategy for choosing the best driver model depends on the type of driver you're planning to write. Here are the options:
 
--   Device function driver
--   Device filter driver
--   Software driver
--   File system filter driver
--   File system driver
+- Device function driver
+- Device filter driver
+- Software driver
+- File system filter driver
+- File system driver
 
 For a discussion about the differences between the various types of drivers, see [What is a driver?](what-is-a-driver-.md) and [Device nodes and device stacks](device-nodes-and-device-stacks.md). The following sections explain how to choose a model for each type of driver.
 
 ## Choosing a driver model for a device function driver
-
 
 As you design a hardware device, one of the first things to consider is whether you need to write a function driver. Ask the following questions:
 
@@ -28,15 +26,15 @@ To answer these questions, determine where your device fits in the list of techn
 
 Some of the individual technologies have minidriver models. In a minidriver model, the device driver consists of two parts: one that handles general tasks, and one that handles device-specific tasks. Typically, Microsoft writes the general portion and the device manufacturer writes the device-specific portion. The device specific portions have a variety of names, most of which share the prefix *mini*. Here are some of the names used in minidriver models:
 
--   Display miniport driver
--   Audio miniport driver
--   Battery miniclass driver
--   Bluetooth protocol driver
--   HID minidriver
--   WIA minidriver
--   NDIS miniport driver
--   Storage miniport driver
--   Streaming minidriver
+- Display miniport driver
+- Audio miniport driver
+- Battery miniclass driver
+- Bluetooth protocol driver
+- HID minidriver
+- WIA minidriver
+- NDIS miniport driver
+- Storage miniport driver
+- Streaming minidriver
 
 For an overview of minidriver models, see [Minidrivers and driver pairs](minidrivers-and-driver-pairs.md).
 
@@ -44,13 +42,11 @@ Not every technology listed in [Device and driver technologies](../device-and-dr
 
 ## Choosing a driver model for a device filter driver
 
-
 Frequently several drivers participate in a single I/O request (like reading data from a device). The drivers are layered in a stack, and the conventional way to visualize the stack is with the first driver at the top and the last driver at the bottom. The stack has one function driver and can also have filter drivers. For a discussion about function drivers and filter drivers, see [What is a driver?](what-is-a-driver-.md) and [Device nodes and device stacks](device-nodes-and-device-stacks.md).
 
 If you're preparing to write a filter driver for a device, determine where your device fits in the list of technologies described in [Device and driver technologies](../device-and-driver-technologies.md). Check to see whether the documentation for your particular device technology has any guidance on choosing a filter driver model. If the documentation for your device technology doesn't offer this guidance, then first consider using UMDF as your driver model. If your filter driver needs access to data structures that aren't available through UMDF, consider using KMDF as your driver model. In the rare case that your driver needs access to data structures not available through KMDF, use WDM as your driver model.
 
 ## Choosing a driver model for a software driver
-
 
 A driver that isn't associated with a device is called a *software driver*. For a discussion about software drivers, see [What is a driver?](what-is-a-driver-.md). Software drivers are useful because they can run in kernel mode, which gives them access to protected operating system data. For information about processor modes, see [User mode and kernel mode](user-mode-and-kernel-mode.md).
 
@@ -62,26 +58,17 @@ Our recommendation is that you use KMDF, especially if you're already familiar w
 
 ## Choosing a driver model for a file system driver
 
-
 For help with choosing a model for a file system driver, see [File system driver samples](../samples/file-system-driver-samples.md). Note that file system drivers can be complex and may require knowledge of advanced concepts for driver development.
-
 
 ## Choosing a driver model for a file system filter driver
 
-
-For help with choosing a model for a file system filter driver, see File system minifilter drivers and [File system filter drivers](../ifs/index.md#file-system-filter-drivers).
+For help with choosing a model for a file system filter driver, see File system minifilter drivers and [File system filter drivers](../ifs/index.md).
 
 ## Choosing a driver model for a file system minifilter driver
-
 
 For help choosing a model for a file system minifilter driver, see [File System Minifilter Drivers](../ifs/filter-manager-concepts.md).
 
 ## Related articles
 
-
-[Kernel-Mode Driver Framework](../wdf/index.md)
-
-[User-Mode Driver Framework](../wdf/index.md)
-
- 
-
+- [Kernel-Mode Driver Framework](../wdf/index.md)
+- [User-Mode Driver Framework](../wdf/index.md)

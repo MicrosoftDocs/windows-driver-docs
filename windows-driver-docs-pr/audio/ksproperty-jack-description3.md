@@ -74,9 +74,9 @@ The Windows audio system caches audio device capabilities during audio endpoint 
 
 With [**KSJACK_DESCRIPTION3**](ksjack-description3.md), the Windows audio system provides a mechanism for the audio driver to request all cached values be discarded and refreshed. The request can be triggered by changes in the audio device capabilities such as resource constraints. 
 
-Whenever the driver changes the contents of KSJACK\_DESCRIPTION3 at runtime, the driver will trigger the existing [KSEVENT_PINCAPS_JACKINFOCHANGE](ksproperty-jack-description3.md) event. 
+Whenever the driver changes the contents of KSJACK\_DESCRIPTION3 at runtime, the driver will trigger the existing [KSEVENT_PINCAPS_JACKINFOCHANGE](ksevent-pincaps-jackinfochange.md) event. 
 
-The Windows audio system maintains the last reported *ConfigId* value cached on the audio endpoint. The *ConfigId* value is retrieved in response to [KSEVENT_PINCAPS_JACKINFOCHANGE](ksproperty-jack-description3.md) event and during normal processing of the audio endpoint at system boot, Audio Endpoint Builder service restart, audio driver update, or interface state changes for the endpoint. 
+The Windows audio system maintains the last reported *ConfigId* value cached on the audio endpoint. The *ConfigId* value is retrieved in response to [KSEVENT_PINCAPS_JACKINFOCHANGE](ksevent-pincaps-jackinfochange.md) event and during normal processing of the audio endpoint at system boot, Audio Endpoint Builder service restart, audio driver update, or interface state changes for the endpoint. 
 
 If the retrieved *ConfigId* value differs from the previously stored value, the Windows audio system will discard all previously cached endpoint capabilities and refresh them. 
 

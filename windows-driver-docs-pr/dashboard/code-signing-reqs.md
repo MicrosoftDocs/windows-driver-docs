@@ -1,7 +1,7 @@
 ---
 title: Driver code signing requirements
 description: Driver code signing requirements
-ms.date: 07/15/2024
+ms.date: 05/29/2025
 ---
 
 # Driver code signing requirements
@@ -12,18 +12,20 @@ This article provides general information on the types of code signing available
 
 For more extensive information on driver signing requirements see the following pages:
 
-- [Driver Signing Changes in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Driver-Signing-changes-in-Windows-10/ba-p/364859)
-- [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Driver-Signing-changes-in-Windows-10-version-1607/ba-p/364894)
-- [Update on Sysdev EV Certificate requirement](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Update-on-Sysdev-EV-Certificate-requirement/ba-p/364879)
+- [Driver Signing Changes in Windows 10](https://techcommunity.microsoft.com/blog/windowshardwarecertification/driver-signing-changes-in-windows-10/364859)
+- [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/blog/windowshardwarecertification/driver-signing-changes-in-windows-10-version-1607/364894)
+- [Update on Sysdev EV Certificate requirement](https://techcommunity.microsoft.com/blog/windowshardwarecertification/update-on-sysdev-ev-certificate-requirement/364879)
 
-## Where to get code signing certificates
+## Where to get EV code signing certificates
 
-Code signing certificates can be purchased from one of the following certificate authorities:
+EV Code signing certificates can be purchased from one of the following certificate authorities:
 
-- [DigiCert code signing certificate](https://order.digicert.com/step1/code_signing)
-- [Entrust code signing certificate](https://www.entrust.com/products/digital-signing/code-signing-certificates)
-- [GlobalSign code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
-- [SSL.com code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
+- [Certum EV code signing certificate](https://shop.certum.eu/data-safety/code-signing-certificates/certum-ev-code-sigining.html)
+- [DigiCert EV code signing certificate](https://www.digicert.com/signing/code-signing-certificates)
+- [GlobalSign EV code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
+- [IdenTrust EV code signing certificate](https://www.identrust.com/digital-certificates/trustid-ev-code-signing)
+- [Sectigo (formerly Comodo) EV code signing certificate](https://www.sectigo.com/ssl-certificates-tls/code-signing)
+- [SSL.com EV code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
 
 ## EV certificate signed drivers
 
@@ -35,7 +37,7 @@ The following rules apply:
 - While Microsoft strongly recommends that you sign individual submissions with an EV certificate, you can alternatively sign submissions with an Authenticode signing certificate that is also registered to your Partner Center account.
 - All certificates must be SHA2 and signed with the `/fd sha256` SignTool command line switch.
 
-If you already have an approved EV certificate from a certificate authority, you can use it to establish a Partner Center account. If you don't have an EV certificate, choose [one the certificate authorities](#where-to-get-code-signing-certificates) and follow their directions for purchase.
+If you already have an approved EV certificate from a certificate authority, you can use it to establish a Partner Center account. If you don't have an EV certificate, choose [one the certificate authorities](#where-to-get-ev-code-signing-certificates) and follow their directions for purchase.
 
 Once the certificate authority verifies your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
 
@@ -59,7 +61,7 @@ Attestation signing has the following restrictions and requirements:
 
 - Attestation signing doesn't return the proper PE Level for **ELAM** or **Windows Hello** PE binaries. These binaries must be tested and submitted as .hlkx packages to receive the extra signature attributes.
 
-- Attestation signing requires the use of an [extended validation (EV) Certificate](code-signing-reqs.md#ev-certificate-signed-drivers) to submit the driver to the Partner Center (Hardware Dev Center Dashboard).
+- Attestation signing requires the use of an [extended validation (EV) Certificate](#ev-certificate-signed-drivers) to submit the driver to the Partner Center (Hardware Dev Center Dashboard).
 
 - Attestation signing requires driver folder names to contain no special characters, no UNC file share paths, and to be fewer than 40 characters long.
 

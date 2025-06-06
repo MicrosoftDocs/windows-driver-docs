@@ -5,7 +5,7 @@ keywords:
 - Windows Driver Kit
 - previous versions
 - WDK
-ms.date: 3/13/2025
+ms.date: 05/14/2025
 ---
 
 # Other WDK downloads
@@ -19,11 +19,8 @@ To use these earlier versions, you must *first* install the version of Visual St
 Starting with the Windows 11, version 22H2 release of the WDK and EWDK, the kits support:
 
 - Visual Studio 2022 exclusively
-
 - Building and testing kernel-mode drivers for x64 and Arm64
-
 - Building and testing drivers for Windows 10, Windows Server 2016 and later client and server versions
-
 - Side by side (SxS) support with previous WDK/EWDK
 
 Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of the same build system. You can run the Windows 11, version 24H2 WDK on Windows 7 and later.
@@ -71,28 +68,25 @@ The Windows SDK wasn't included in Visual Studio 2015, so you must install the S
 The WDK is integrated with Visual Studio and Debugging Tools for Windows (WinDbg). This integrated environment gives you the tools you need to develop, build, package, deploy, test, and debug drivers.
 
 > [!NOTE]
-> Information the user should notice even if skimmingStarting with Windows 10, version 1709, installing the WDK will by default install the WDK extensions for Visual Studio. These extensions are required for integration of the WDK with Visual Studio.
+> The WDK VSIX isn't shipped as a Visual Studio individual component. The WDK is also not available through the MSI installation process. Instead, use the Visual Studio Installer to install the WDK. This installation method is required for WDK integration in Visual Studio.
+>
+> Starting April 13, 2025, Microsoft no longer distributes older kits. We provide download links only for the latest version of the Windows Driver Kit. The latest published Windows Driver Kit supports driver development for Windows 10, Windows Server 2016, and later versions of each Windows variant. For details, see [Building Drivers for Previous OS Release Using the Latest WDK](https://techcommunity.microsoft.com/blog/windowsdriverdev/building-drivers-for-previous-os-releases-using-the-latest-windows-driver-kit-wd/4374910). If you need further assistance, contact [Microsoft WDK Feedback](mailto:wdkfeedback@microsoft.com).
 
 | Released with | WDK and related downloads |
 |--|--|
 | Windows 11, Version 24H2 | [WDK 10.0.26100.3323 (released March 14, 2025)](https://go.microsoft.com/fwlink/?linkid=2307500) |
-| Windows 11, Version 24H2 | [WDK 10.0.26100.2454 (released November 27, 2024)](https://go.microsoft.com/fwlink/?linkid=2297653) |
-| Windows 11, Version 24H2 | [WDK 10.0.26100.2161 (released November 4, 2024)](https://go.microsoft.com/fwlink/?linkid=2294834) |
-| Windows 11, Version 24H2 | [WDK 10.0.26100.1882 (released October 14, 2024)](https://go.microsoft.com/fwlink/?linkid=2290025) |
-| Windows 11, Version 24H2 | [WDK 10.0.26100.1591 (released September 18, 2024)](https://go.microsoft.com/fwlink/?linkid=2286137) |
-| Windows 11, Version 24H2 | [WDK 10.0.26100.1 (released May 2024)](https://go.microsoft.com/fwlink/?linkid=2272234) |
-| Windows 11, Version 23H2 | [WDK 10.0.22621.2428 (released October 24, 2023)](https://go.microsoft.com/fwlink/?linkid=2249371) |
-| Windows 11, version 22H2 | [WDK for Windows 11, version 22H2 (10.0.22621.382, released May 24, 2022)](https://go.microsoft.com/fwlink/?linkid=2196230) |
-| Windows 11, version 21H2 | [WDK for Windows 11, version 21H2](https://go.microsoft.com/fwlink/?linkid=2166289) |
-| Windows Server 2022 | [WDK for Windows Server 2022](https://go.microsoft.com/fwlink/?linkid=2164149) |
-| Windows 10, version 2004 | [WDK for Windows 10, version 2004](https://go.microsoft.com/fwlink/?linkid=2128854) |
-| Windows 10, version 1903 | [WDK for Windows 10, version 1903](https://go.microsoft.com/fwlink/?linkid=2085767) |
-| Windows 10, version 1809<br>Windows Server 2019 | [WDK for Windows 10, version 1809](https://go.microsoft.com/fwlink/?linkid=2026156) |
-| Windows 10, version 1607<br>Windows Server 2016 | [WDK for Windows 10, version 1607](https://go.microsoft.com/fwlink/p/?LinkId=526733) |
-| Windows 8.1 Update | WDK 8.1 Update (English only) - permanently unavailable<br/>WDK 8.1 Update Test Pack (English only) - permanently unavailable <br/>[WDK 8.1 Samples](https://go.microsoft.com/fwlink/p/?LinkId=618052)  <br/><br/>**Note:** You can use any WDK from Windows 10, version 1607 through Windows 11, version 21H2 to build drivers for Windows 8.1. |
+| Windows 11, Version 23H2 | Permanently unavailable |
+| Windows 11, version 22H2 | Permanently unavailable |
+| Windows 11, version 21H2 | Permanently unavailable |
+| Windows Server 2022 | Permanently unavailable |
+| Windows 10, version 2004 | Permanently unavailable |
+| Windows 10, version 1903 | Permanently unavailable |
+| Windows 10, version 1809<br>Windows Server 2019 | Permanently unavailable |
+| Windows 10, version 1607<br>Windows Server 2016 | Permanently unavailable |
+| Windows 8.1 Update | WDK 8.1 Update (English only) - permanently unavailable<br/>WDK 8.1 Update Test Pack (English only) - permanently unavailable <br/>[WDK 8.1 Samples](https://go.microsoft.com/fwlink/p/?LinkId=618052)  <br/><br/>**NOTE:** You can use any WDK from Windows 10, version 1607 through Windows 11, version 21H2 to build drivers for Windows 8.1. |
 | Windows 8 | [WDK 8 Samples](https://go.microsoft.com/fwlink/p/?LinkId=616509) |
 
->[!NOTE]
+> [!NOTE]
 >Review [Hardware development kits for Windows 10, Version 2004 (10.0.19041.1)](https://social.msdn.microsoft.com/Forums/en-US/96c770a9-19a3-42d0-8d0e-bd200285d980/hardware-development-kits-for-windows-10-version-2004?forum=wdk), which addresses a bug with ExAllocatePoolZero.
 
 > [!IMPORTANT]
@@ -101,11 +95,8 @@ The WDK is integrated with Visual Studio and Debugging Tools for Windows (WinDbg
 To restore these files:
 
 1. On the Start menu, enter **Apps & features** in the search box, and select **Apps & features** from the results.
-
 1. Find **Windows Driver Kit - Windows 10.0.15063.0** in the list of **Apps & Features**, and then select the program.
-
 1. Select **Modify**, select **Repair**, and then follow the directions on the screen.
-
 1. The files will be restored.
 
 ## Install the EWDK
@@ -149,27 +140,10 @@ WinDbg is the latest version of WinDbg with more modern visuals, faster windows,
 
 For download links and more information about WinDbg, see [Download and install the WinDbg Windows debugger](./debugger/index.md) and [Debugging Tools for Windows](./debugger/debugger-download-tools.md).
 
-## Standalone tools for debugging Windows XP and Windows Vista
-
-If you're debugging Windows XP, Windows Server 2003, Windows Vista, or Windows Server 2008 (or using one of these operating systems to run Debugging Tools for Windows), you need to use the Windows 7 release of the debugging tools. It's included in the SDK for Windows 7 and .NET Framework 4.0.
-
-> [!IMPORTANT]
-> Newer versions of the Visual C++ 2010 Redistributable can cause issues when you install the SDK for Windows 7.
-
-Get the standalone debugging tools for Windows XP by first downloading the Windows 7 SDK:
-
-[Microsoft Windows SDK for Windows 7 and .NET Framework 4](https://www.microsoft.com/en-us/download/details.aspx?id=8279&msockid=3060929ead6a62e408d283a0a96a6484).
-
-To install the Debugging Tools for Windows as a standalone component, start the SDK installer, and in the installation wizard, select **Debugging Tools for Windows**, and clear all other components.
-
 ### Related downloads
 
-[Download the Windows Assessment and Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install)
-
-[Download the Windows HLK, HCK, or Logo Kit](/windows-hardware/test/hlk/windows-hardware-lab-kit)
-
-[Download the debugging Tools for Windows (WinDbg)](./debugger/debugger-download-tools.md)
-
-[Download Windows Symbol Packages](./debugger/debugger-download-symbols.md)
-
-[Download the WDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
+- [Download the Windows Assessment and Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install)
+- [Download the Windows HLK, HCK, or Logo Kit](/windows-hardware/test/hlk/windows-hardware-lab-kit)
+- [Download the debugging Tools for Windows (WinDbg)](./debugger/debugger-download-tools.md)
+- [Download Windows Symbol Packages](./debugger/debugger-download-symbols.md)
+- [Download the WDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)

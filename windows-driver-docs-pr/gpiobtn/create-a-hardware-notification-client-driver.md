@@ -32,7 +32,7 @@ This section provides general guidance on the development of a hardware notifica
 
     -   Calling [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) to create a framework driver object for the client driver.
 
-    -   Defining the contents of the [**HWN\_CLIENT\_REGISTRATION\_PACKET**](/windows-hardware/drivers/ddi/hwnclx/ns-hwnclx-_hwn_client_registration_packet), including the callback function pointers for use by the class extension. For more information about the required callback functions, see [Hardware notifications reference](/windows-hardware/drivers/ddi/index).
+    -   Defining the contents of the [**HWN\_CLIENT\_REGISTRATION\_PACKET**](/windows-hardware/drivers/ddi/hwnclx/ns-hwnclx-_hwn_client_registration_packet), including the callback function pointers for use by the class extension. For more information about the required callback functions, see [Hardware notifications reference](/windows-hardware/drivers/ddi/_gpiobtn/).
 
     -   Calling [HwNRegisterClient](/windows-hardware/drivers/ddi/hwnclx/nf-hwnclx-hwnregisterclient) to register the client driver with the class extension.
 

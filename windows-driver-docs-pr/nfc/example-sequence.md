@@ -66,5 +66,5 @@ The Power reset is irrelevant since we do not support SCARD_SWALLOWED, SCARD_POW
 
 ## Related topics
 
-- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)
+- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)
 - [Smart card DDI and command reference](/previous-versions/dn905601(v=vs.85))

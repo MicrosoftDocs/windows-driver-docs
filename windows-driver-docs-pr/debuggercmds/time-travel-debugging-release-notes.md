@@ -12,6 +12,20 @@ ms.topic: release-notes
 
 This topic provides information on what's new in Time Travel Debugging.
 
+## 1.11.506
+
+This is a minor release to coincide with the April 2025 release of WinDbg.
+
+### Changed
+
+- Clicking on a TTD position in the data model (i.e. in the Modules list) navigates to that position in the trace. (1.11.492)
+
+  Note: The command window will not show the updated TTD position until the next step or run command is executed.
+
+### Fixed
+
+- Add process name to .out file when attaching to a PID to aid troubleshooting. (1.11.486)
+
 ## 1.11.481
 
 We have revamped the !tt command to give you more powerful ways to navigate through your trace:

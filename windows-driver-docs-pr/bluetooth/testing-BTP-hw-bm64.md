@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - BM-64-EVB-C2 Board
 description: Bluetooth Test Platform (BTP) supported hardware (BM64).
-ms.date: 01/07/2025
+ms.date: 04/17/2025
 ---
 
 # BM-64-EVB-C2 board
@@ -122,7 +122,7 @@ After firmware and EEPROM updates occur, the UART messaging capabilities of the 
 1. Select on the *Information* tab and select on the *Update* button.
 
     - If UART messages are being communicated correctly, the information such as the *Local Device Name* and *Bluetooth Address* is populated, and the logs show both *Event:* and *Command:* messages followed by hex codes representing the UART message contents.
-    - If no BM64 information is populated and only *Command:* messages are seen in the logs, try closing and reopening the connection. If the expected behavior still doesn't occur, refer to the [Further Help](testing-BTP-hw-bm64.md#further-help) section.
+    - If no BM64 information is populated and only *Command:* messages are seen in the logs, try closing and reopening the connection. If the expected behavior still doesn't occur, refer to the [Further Help](#further-help) section.
 
     :::image type="content" source="images/btp-bm64-spkcommand.png" alt-text="Screenshot of the SPKCommand tool showing successful communication.":::
 

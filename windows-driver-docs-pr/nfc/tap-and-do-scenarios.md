@@ -38,5 +38,5 @@ See [Tap and Do Use Cases](tap-and-do-use-cases.md) for and explanation of vario
 
 ## Related topics
 
-- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)
+- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)
 - [Near field proximity DDI reference](/windows-hardware/drivers/ddi/_nfpdrivers)

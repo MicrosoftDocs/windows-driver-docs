@@ -27,8 +27,6 @@ If you have not written a user-mode version before doing your kernel-mode implem
 
 The next two sections give a brief background of WDM kernel streaming and an overview of how to implement a miniport-driver for a synthesizer:
 
-[DirectMusic WDM Kernel Streaming Background](directmusic-wdm-kernel-streaming-background.md)
-
 [Synthesizer Miniport Driver Overview](synthesizer-miniport-driver-overview.md)
 
 This section also includes:

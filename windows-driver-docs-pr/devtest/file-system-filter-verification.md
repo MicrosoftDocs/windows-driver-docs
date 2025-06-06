@@ -100,14 +100,14 @@ verifier.exe /standard /driver MyFilter.sys
 Verification starts when the minifilter driver registers with the filter manager.
 
 - **Enabling Only Filter Verifier in Windows 11 and Later Versions of Windows**
-    To enable the minimal set of Filter Verifier checks, enable the [I/O Verification](../devtest/i-o-verification.md) and [File System Filter Verification](../devtest/file-system-filter-verification.md) options in Driver Verifier (*verifier.exe*). For example:
+    To enable the minimal set of Filter Verifier checks, enable the [I/O Verification](i-o-verification.md) and *File System Filter Verification* options in Driver Verifier (*verifier.exe*). For example:
 
     ```
     verifier.exe /ruleclasses 5 37 /driver MyFilter.sys
     ```
 
 - **Enabling Only Filter Verifier in Windows 10 and Prior Versions of Windows**
-    To enable the minimal set of Filter Verifier checks, specify the minifilter driver's name and enable the [I/O Verification](../devtest/i-o-verification.md) option in Driver Verifier (*verifier.exe*). For example:
+    To enable the minimal set of Filter Verifier checks, specify the minifilter driver's name and enable the [I/O Verification](i-o-verification.md) option in Driver Verifier (*verifier.exe*). For example:
 
     ```
     verifier.exe /flags 0x10 /driver MyFilter.sys

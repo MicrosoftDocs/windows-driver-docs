@@ -1,12 +1,12 @@
 ---
 title: Barcode Scanner Driver Sample
 description: The barcode scanner driver sample demonstrates how to create a Universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver.
-ms.date: 06/20/2024
+ms.date: 04/28/2025
 ---
 
 # Barcode scanner driver sample
 
-The barcode scanner driver sample demonstrates how to create a Universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver. The sample uses the User-Mode Driver Framework (UMDF) 2.0 and demonstrates basic functionality such as claiming the device for exclusive access. The sample driver can be compiled and deployed on x86, amd64, and Arm platforms. For more information on Universal drivers, go to [Using a Universal INF File](../install/using-a-universal-inf-file.md).
+The barcode scanner driver sample demonstrates how to create a Universal driver for a barcode scanner. It's intended to be used as a template for creating a new barcode scanner driver. The sample uses the User-Mode Driver Framework (UMDF) 2.0 and demonstrates basic functionality such as claiming the device for exclusive access. The sample driver can be compiled and deployed on x86, amd64, and Arm platforms. For more information on Universal drivers, go to [Using a Universal INF File](../install/using-a-universal-inf-file.md).
 
 ## Requirements
 
@@ -16,9 +16,9 @@ The barcode scanner driver sample demonstrates how to create a Universal driver 
 
 - [Windows Driver Kit (WDK) 10](../download-the-wdk.md)
 
-The Windows Software Development Kit (SDK) 10 is also required, but this is installed as part of Microsoft Visual Studio.
+The Windows Software Development Kit (SDK) 10 is also required, but this kit is installed as part of Microsoft Visual Studio.
 
-The sample driver does not require any barcode scanner hardware to function because it operates on a software device. If you have a hardware device you wish to use with the sample, you can still use the driver by adding the device hardware ID to the INF file.
+The sample driver doesn't require any barcode scanner hardware to function because it operates on a software device. If you have a hardware device you wish to use with the sample, you can still use the driver by adding the device hardware ID to the INF file.
 
 ## Download and extract the sample
 
@@ -26,7 +26,7 @@ The [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples
 
 1. Download [**Windows-driver-samples-master.zip**](https://github.com/microsoft/Windows-driver-samples/archive/master.zip). This file contains all Windows Driver Kit (WDK) samples.
 
-1. Extract **Windows-driver-samples-master.zip** to the location of your choice on your development machine. This location will be referred to as `<sample_root>` throughout the remainder of this article.
+1. Extract **Windows-driver-samples-master.zip** to the location of your choice on your development machine. This location is referenced as `<sample_root>` throughout the remainder of this article.
 
 ## Open the driver solution in Visual Studio
 
@@ -34,13 +34,11 @@ The [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples
 
 1. Double-click the solution file, **BarcodeScanner.sln** to open the solution with Visual Studio.
 
-1. The project zip file was downloaded from the Internet so you may see a security warning when you open the solution. If you do, select **OK** to finish loading the project.
-
-1. In Visual Studio, locate **Solution Explorer**. If this is not already open, select **Solution Explorer** from the **View** menu. In **Solution Explorer**, you can see the project and the source files it contains.
+1. In Visual Studio, locate **Solution Explorer**. If this isn't already open, select **Solution Explorer** from the **View** menu. In **Solution Explorer**, you can see the project and the source files it contains.
 
 ## Build the sample using Visual Studio
 
-1. From the *Standard* toolbar in Visual Studio, select the *Solution Platform* that matches your operating system platform. For example, if you are using a 64-bit version of Windows, select x64. If targeting the Arm platform, you will need to use the configuration manager to add Arm to your list of targets.
+1. From the *Standard* toolbar in Visual Studio, select the *Solution Platform* that matches your operating system platform. For example, if you're using a 64-bit version of Windows, select x64. If targeting the Arm platform, you'll need to use the configuration manager to add Arm to your list of targets.
 
 1. Select **Build Solution** from the **Build** menu.
 
@@ -50,11 +48,11 @@ The [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples
 
     `bcdedit.exe /set TESTSIGNING on`
 
-1. Reboot your machine. If test-signing had been enabled previously, a reboot is not necessary.
+1. Reboot your machine. If test-signing had been enabled previously, a reboot isn't necessary.
 
-1. From an elevated command prompt, navigate to the folder where your project was built. If you created an x64 debug build, this folder will be `<project_root>\x64\Debug\SampleBarcodeScannerDrv`.
+1. From an elevated command prompt, navigate to the folder where your project was built. If you created an x64 debug build, this folder is `<project_root>\x64\Debug\SampleBarcodeScannerDrv`.
 
-    In that folder, you will see the following files:
+    In that folder, you'll see the following files:
 
     | File | Description |
     |--|--|
@@ -68,13 +66,13 @@ The [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples
 
     `<devcon_path>\devcon.exe install SampleBarcodeScannerDrv.inf Root\SampleBarcodeScannerDrv`
 
-1. You will see a **Windows Security** dialog informing you that the publisher of the driver can't be verified. This is because the driver was signed with a test certificate. Select **Install this driver software anyway**. In a moment, you will see confirmation that your driver was installed correctly.
+1. You'll see a **Windows Security** dialog informing you that the publisher of the driver can't be verified. This is because the driver was signed with a test certificate. Select **Install this driver software anyway**. In a moment, you'll see confirmation that your driver was installed correctly.
 
-If the Device Console utility was not able to install the driver, confirm that you were using the one that matches your current OS platform and the platform of the driver.
+If the Device Console utility wasn't able to install the driver, confirm that you were using the one that matches your current OS platform and the platform of the driver.
 
 ## View the device in Device Manager
 
-1. Open Device Manager. This can be done many ways, but if you are still in a command prompt, type `devmgmt`.
+1. Open Device Manager. This can be done many ways, but if you're still in a command prompt, type `devmgmt`.
 
 1. In Device Manager, choose **Devices by type** from the **View** menu.
 

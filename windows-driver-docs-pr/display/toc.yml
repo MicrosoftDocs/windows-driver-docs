@@ -4,7 +4,7 @@
   items:
   - name: WDDM Overview
     href: windows-vista-display-driver-model-design-guide.md
-  - name: Roadmap for the Windows Display Driver Model (WDDM)
+  - name: Roadmap for WDDM driver development
     href: roadmap-for-developing-drivers-for-the-windows-vista-display-driver-mo.md
   - name: WDDM Architecture and Operation
     items:
@@ -86,6 +86,10 @@
         href: mcdm-architecture.md
       - name: MCDM KM driver implementation guidelines
         href: mcdm-implementation-guidelines.md
+  - name: WDDM 2.5 features
+    items:
+    - name: D3D12 render passes
+      href: d3d12-render-passes.md
   - name: WDDM 2.4 features
     items:
     - name: GPU paravirtualization
@@ -726,7 +730,7 @@
         href: building-iddcx1.4-drivers.md
       - name: EvtIddCxMonitorAssignSwapChain error handling
         href: idd-evtiddcxmonitorassignswapchain-error-handling.md
-  - name: Tasks in the Windows Display Driver Model (WDDM)
+  - name: Tasks in WDDM
     items:
     - name: Tasks in the Windows Display Driver Model (WDDM)
       href: tasks-in-the-windows-vista-display-driver-model.md
@@ -870,9 +874,9 @@
           href: exporting-data-to-a-file.md
         - name: Other Visual Items of the Segment Viewer Window
           href: other-visual-items-of-the-segment-viewer-window.md
-  - name: Tips and Requirements for the Windows Display Driver Model (WDDM)
+  - name: Other WDDM driver tips and requirements
     items:
-    - name: Tips and Requirements for the Windows Display Driver Model (WDDM)
+    - name: Other tips and requirements for WDDM
       href: implementation-tips-and-requirements-for-the-windows-vista-display-dri.md
     - name: Hardware support for Direct3D feature levels
       items:
@@ -1054,13 +1058,15 @@
           href: querying-vidpnhardware-capabilities.md
       - name: Example code for displaying an app on a portrait device
         href: displaying-app-on-portrait-device.md
-    - name: Wireless displays (Miracast)
+    - name: Supporting Miracast wireless displays
+      href: wireless-displays--miracast-.md
+    - name: Supporting Miracast displays in Windows 8.1
       items:
-      - name: Wireless displays (Miracast)
-        href: wireless-displays--miracast-.md
-      - name: WDDM display miniport driver tasks to support Miracast wireless displays
+      - name: Supporting Miracast in Windows 8.1
+        href: supporting-miracast-in-windows-8-1.md
+      - name: Display miniport driver tasks to support Miracast wireless displays
         href: wddm-display-miniport-driver-tasks-to-support-miracast-wireless-displays.md
-      - name: Miracast user-mode driver tasks to support Miracast wireless displays
+      - name: User-mode driver tasks to support Miracast wireless displays
         href: miracast-user-mode-driver-tasks-to-support-miracast-wireless-displays.md
       - name: Reporting Miracast encode chunks and statistics
         href: reporting-miracast-encode-chunks-and-statistics.md

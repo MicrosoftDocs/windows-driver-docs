@@ -31,7 +31,7 @@ This will generate an ETL file named MySession.etl in the C:\\Data folder. You c
 The NFC CX does not include any debugging extensions.
 
 ## Related topics
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
-[NFC class extension (CX) reference](/windows-hardware/drivers/ddi/index)  
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)  
+[NFC class extension (CX) design guide](/windows-hardware/drivers/nfc/nfc-class-extension-)  
 [Event Tracing for Windows (Windows Drivers)](../devtest/tools-for-software-tracing.md)  
 [Tools for Software Tracing](../devtest/wpp-software-tracing.md)

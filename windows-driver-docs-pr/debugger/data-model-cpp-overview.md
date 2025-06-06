@@ -11,8 +11,6 @@ This topic provides an overview of how to use Debugger Data Model C++ Interfaces
 
 This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
 
-[Debugger Data Model C++ Overview](data-model-cpp-overview.md)
-
 [Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
 
 [Debugger Data Model C++ Objects](data-model-cpp-objects.md)

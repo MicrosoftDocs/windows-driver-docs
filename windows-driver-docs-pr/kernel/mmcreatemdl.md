@@ -32,7 +32,7 @@ The following obsolete routines are exported to support existing binaries:
 </tr>
 <tr class="odd">
 <td><strong>ExAllocateFromZone</strong></td>
-<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/ddi/index" data-raw-source="[Buffer Management](/windows-hardware/drivers/ddi/index)">Buffer Management</a>.</p></td>
+<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/wdf/using-memory-buffers" data-raw-source="[Using Memory Buffers](/windows-hardware/drivers/wdf/using-memory-buffers)">Using Memory Buffers</a>.</p></td>
 </tr>
 <tr class="even">
 <td><strong>ExConvertExclusiveToShared</strong></td>
@@ -44,11 +44,11 @@ The following obsolete routines are exported to support existing binaries:
 </tr>
 <tr class="even">
 <td><strong>ExExtendZone</strong></td>
-<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/ddi/index" data-raw-source="[Buffer Management](/windows-hardware/drivers/ddi/index)">Buffer Management</a>.</p></td>
+<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/wdf/using-memory-buffers" data-raw-source="[Using Memory Buffers](/windows-hardware/drivers/wdf/using-memory-buffers)">Using Memory Buffers</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>ExFreeToZone</strong></td>
-<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/ddi/index" data-raw-source="[Buffer Management](/windows-hardware/drivers/ddi/index)">Buffer Management</a>.</p></td>
+<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/wdf/using-memory-buffers" data-raw-source="[Using Memory Buffers](/windows-hardware/drivers/wdf/using-memory-buffers)">Using Memory Buffers</a>.</p></td>
 </tr>
 <tr class="even">
 <td><strong>ExInitializeResource</strong></td>
@@ -60,11 +60,11 @@ The following obsolete routines are exported to support existing binaries:
 </tr>
 <tr class="even">
 <td><strong>ExInitializeZone</strong></td>
-<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/ddi/index" data-raw-source="[Buffer Management](/windows-hardware/drivers/ddi/index)">Buffer Management</a>.</p></td>
+<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/wdf/using-memory-buffers" data-raw-source="[Using Memory Buffers](/windows-hardware/drivers/wdf/using-memory-buffers)">Using Memory Buffers</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>ExInterlockedAllocateFromZone</strong></td>
-<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/ddi/index" data-raw-source="[Buffer Management](/windows-hardware/drivers/ddi/index)">Buffer Management</a>.</p></td>
+<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/wdf/using-memory-buffers" data-raw-source="[Using Memory Buffers](/windows-hardware/drivers/wdf/using-memory-buffers)">Using Memory Buffers</a>.</p></td>
 </tr>
 <tr class="even">
 <td><strong>ExInterlockedDecrementLong</strong></td>
@@ -80,11 +80,11 @@ The following obsolete routines are exported to support existing binaries:
 </tr>
 <tr class="odd">
 <td><strong>ExInterlockedExtendZone</strong></td>
-<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/ddi/index" data-raw-source="[Buffer Management](/windows-hardware/drivers/ddi/index)">Buffer Management</a>.</p></td>
+<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/wdf/using-memory-buffers" data-raw-source="[Using Memory Buffers](/windows-hardware/drivers/wdf/using-memory-buffers)">Using Memory Buffers</a>.</p></td>
 </tr>
 <tr class="even">
 <td><strong>ExInterlockedFreeToZone</strong></td>
-<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/ddi/index" data-raw-source="[Buffer Management](/windows-hardware/drivers/ddi/index)">Buffer Management</a>.</p></td>
+<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/wdf/using-memory-buffers" data-raw-source="[Using Memory Buffers](/windows-hardware/drivers/wdf/using-memory-buffers)">Using Memory Buffers</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>ExInterlockedIncrementLong</strong></td>
@@ -92,11 +92,11 @@ The following obsolete routines are exported to support existing binaries:
 </tr>
 <tr class="even">
 <td><strong>ExIsFullZone</strong></td>
-<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/ddi/index" data-raw-source="[Buffer Management](/windows-hardware/drivers/ddi/index)">Buffer Management</a>.</p></td>
+<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/wdf/using-memory-buffers" data-raw-source="[Using Memory Buffers](/windows-hardware/drivers/wdf/using-memory-buffers)">Using Memory Buffers</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>ExIsObjectInFirstZoneSegment</strong></td>
-<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/ddi/index" data-raw-source="[Buffer Management](/windows-hardware/drivers/ddi/index)">Buffer Management</a>.</p></td>
+<td><p>Use lookaside lists instead. For more information, see <a href="/windows-hardware/drivers/wdf/using-memory-buffers" data-raw-source="[Using Memory Buffers](/windows-hardware/drivers/wdf/using-memory-buffers)">Using Memory Buffers</a>.</p></td>
 </tr>
 <tr class="even">
 <td><strong>ExIsResourceAcquired</strong></td>

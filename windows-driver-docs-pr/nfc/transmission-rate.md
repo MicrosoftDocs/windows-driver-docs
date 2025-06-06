@@ -17,5 +17,5 @@ Each provider implementation can specify an approximate transmission rate.
 ## Related topics
 
 - **[IOCTL_NFP_GET_KILO_BYTES_PER_SECOND](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_kilo_bytes_per_second)**
-- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)
+- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)
 - [Near field proximity DDI reference](/windows-hardware/drivers/ddi/_nfpdrivers)
