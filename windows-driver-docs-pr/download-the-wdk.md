@@ -6,13 +6,13 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 05/14/2025
+ms.date: 06/09/2025
 ms.topic: how-to
 ---
 
 # Download the Windows Driver Kit (WDK)
 
-The WDK is used to develop, test, and deploy drivers for Windows. The most recent public release is WDK 10.0.26100.3323 (released March 14, 2025).
+The WDK is used to develop, test, and deploy drivers for Windows. The most recent public release is WDK 10.0.26100.4202 (released June 9, 2025).
 
 - You can install and run this WDK on Windows 7 and later.
 - You can use this kit to build drivers for Windows 10, Windows Server 2016, and later client and server versions.
@@ -68,7 +68,7 @@ The provided links for the SDK and the WDK have matching build numbers, which is
 
 ## ![download icon for WDK](images/download-install.png) Step 3: Install WDK
 
-- [Download WDK 10.0.26100.3323](https://go.microsoft.com/fwlink/?linkid=2307500)
+- [Download WDK 10.0.26100.4202](https://go.microsoft.com/fwlink/?linkid=2307500)
 
 Starting with version 17.11.0, the WDK VSIX is included as an individual component in Visual Studio. Before installing the WDK, the installer checks if a compatible version of the VSIX is already installed. If the WDK VSIX is not found, users will be prompted to install it. To install the WDK VSIX, launch the Visual Studio Installer, select **Modify**, navigate to the **Individual Components** tab, add **Windows Driver Kit**, and then select **Modify** again.
 
@@ -85,7 +85,7 @@ The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-- [Download EWDK 10.0.26100.3323 with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
+- [Download EWDK 10.0.26100.4202 with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
 
 After you download the ISO, use these steps to set up your build environment:
 
