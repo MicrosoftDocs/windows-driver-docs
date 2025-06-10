@@ -1,7 +1,7 @@
 ---
 title: System-Defined Device Setup Classes Available to Vendors
 description: Use the following list to select the right predefined values to use for the `Class` and `ClassGuid` entries in the [Version Section](inf-version-section.md) of the driver's INF file.
-ms.date: 09/10/2024
+ms.date: 06/10/2025
 ms.topic: concept-article
 ---
 
@@ -50,7 +50,7 @@ The following table shows the predefined values to use for the **Class** and **C
 | **Media Changers** | MediumChanger | ce5939ae-ebde-11d0-b181-0000f8753ec4 | Includes SCSI media changer devices. |
 | **Memory Technology Driver** | MTD | 4d36e970-e325-11ce-bfc1-08002be10318 | Includes memory devices, such as flash memory cards. |
 | **Modem** | Modem | 4d36e96d-e325-11ce-bfc1-08002be10318 | Includes [modem devices](/previous-versions/windows/hardware/modem/ff542476(v=vs.85)). An INF file for a device of this class specifies the features and configuration of the device and stores this information in the registry. An INF file for a device of this class can also be used to install device drivers for a *controllerless modem* or a *software modem*. These devices split the functionality between the modem device and the device driver. For more information about modem INF files and Microsoft Windows Driver Model (WDM) modem devices, see [Overview of Modem INF Files](/previous-versions/windows/hardware/modem/ff542559(v=vs.85)) and [Adding WDM Modem Support](/previous-versions/windows/hardware/modem/ff541218(v=vs.85)). |
-| **Monitor** | Monitor | 4d36e96e-e325-11ce-bfc1-08002be10318 | Includes display monitors. An INF for a device of this class installs no device drivers, but instead specifies the features of a particular monitor to be stored in the registry for use by drivers of video adapters. (Monitors are enumerated as the child devices of display adapters.)
+| **Monitor** | Monitor | 4d36e96e-e325-11ce-bfc1-08002be10318 | Includes display monitors. An INF for a device of this class installs no device drivers, but instead specifies the features of a particular monitor to be stored in the registry for use by drivers of video adapters. (Monitors are enumerated as the child devices of display adapters.) |
 | **Mouse** | Mouse | 4d36e96f-e325-11ce-bfc1-08002be10318 | Includes all mouse devices and other kinds of pointing devices, such as trackballs. That is, this class must also be specified in the (secondary) INF for an enumerated child HID mouse device. |
 | **Multifunction Devices** | Multifunction | 4d36e971-e325-11ce-bfc1-08002be10318 | Includes combo cards, such as a PCMCIA modem and network card adapter. The driver for such a Plug and Play multifunction device is installed under this class and enumerates the modem and network card separately as its child devices. |
 | **Multimedia** | Media | 4d36e96c-e325-11ce-bfc1-08002be10318 | Includes Audio and DVD multimedia devices, joystick ports, and full-motion video capture devices. |
@@ -59,13 +59,14 @@ The following table shows the predefined values to use for the **Class** and **C
 | **Network Client** | NetClient | 4d36e973-e325-11ce-bfc1-08002be10318 | Includes network and/or print providers. **NetClient** components are deprecated in Windows 8.1, Windows Server 2012 R2, and later. |
 | **Network Service** | NetService | 4d36e974-e325-11ce-bfc1-08002be10318 | Includes network services, such as redirectors and servers. |
 | **Network Transport** | NetTrans | 4d36e975-e325-11ce-bfc1-08002be10318 | Includes NDIS protocols CoNDIS stand-alone call managers, and CoNDIS clients, in addition to higher level drivers in transport stacks. |
+| **NVMe Disks** | NvmeDisk | 75416e63-5912-4dfa-ae8f-3efaccaffb14 | Storage disks utilizing a multi-queue storage stack. |
 | **PCI SSL Accelerator** | SecurityAccelerator | 268c95a1-edfe-11d3-95c3-0010dc4050a5 | Includes devices that accelerate secure socket layer (SSL) cryptographic processing. |
 | **PCMCIA Adapters** | PCMCIA | 4d36e977-e325-11ce-bfc1-08002be10318 | Includes PCMCIA and CardBus host controllers, but not PCMCIA or CardBus peripherals. Drivers for this class are system-supplied. |
 | **Ports (COM & LPT ports)** | Ports | 4d36e978-e325-11ce-bfc1-08002be10318 | Includes serial and parallel port devices. See also the MultiportSerial class. |
 | **Printers** | Printer | 4d36e979-e325-11ce-bfc1-08002be10318 | Includes printers. |
 | **Printers, Bus-specific class drivers** | PNPPrinters | 4658ee7e-f050-11d1-b6bd-00c04fa372a7 | Includes SCSI/1394-enumerated printers. Drivers for this class provide printer communication for a specific bus. |
 | **Processors** | Processor | 50127dc3-0f36-415e-a6cc-4cb3be910b65 | Includes processor types. |
-| **SCSI and RAID Controllers** | SCSIAdapter | 4d36e97b-e325-11ce-bfc1-08002be10318 | Includes SCSI HBAs (Host Bus Adapters) and disk-array controllers. |
+| **SCSI, RAID, and NVMe Controllers** | SCSIAdapter | 4d36e97b-e325-11ce-bfc1-08002be10318 | Includes SCSI Host Bus Adapters (HBAs), disk-array, and NVMe controllers. |
 | **Security Devices** | Securitydevices | d94ee5d8-d189-4994-83d2-f68d7d41b0e6 | (Windows 8.1, Windows 10) Includes [Trusted Platform Module](/windows/security/information-protection/tpm/trusted-platform-module-top-node) chips. A TPM is a secure cryptoprocessor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. Any new manufactured device must implement and enable TPM 2.0 by default. For more information, see [TPM Recommendations](/windows/security/information-protection/tpm/tpm-recommendations). |
 | **Sensors** | Sensor | 5175d334-c371-4806-b3ba-71fd53c9258d | (Windows 7 and later versions of Windows) Includes sensor and location devices, such as GPS devices. |
 | **Smart Card Readers** | SmartCardReader | 50dd5230-ba8a-11d1-bf5d-0000f805f530 | Includes smart card readers. |
