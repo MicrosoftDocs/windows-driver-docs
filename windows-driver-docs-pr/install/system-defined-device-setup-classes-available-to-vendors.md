@@ -59,7 +59,6 @@ The following table shows the predefined values to use for the **Class** and **C
 | **Network Client** | NetClient | 4d36e973-e325-11ce-bfc1-08002be10318 | Includes network and/or print providers. **NetClient** components are deprecated in Windows 8.1, Windows Server 2012 R2, and later. |
 | **Network Service** | NetService | 4d36e974-e325-11ce-bfc1-08002be10318 | Includes network services, such as redirectors and servers. |
 | **Network Transport** | NetTrans | 4d36e975-e325-11ce-bfc1-08002be10318 | Includes NDIS protocols CoNDIS stand-alone call managers, and CoNDIS clients, in addition to higher level drivers in transport stacks. |
-| **NVMe Disks** | NvmeDisk | 75416e63-5912-4dfa-ae8f-3efaccaffb14 | Storage disks utilizing a multi-queue storage stack. |
 | **PCI SSL Accelerator** | SecurityAccelerator | 268c95a1-edfe-11d3-95c3-0010dc4050a5 | Includes devices that accelerate secure socket layer (SSL) cryptographic processing. |
 | **PCMCIA Adapters** | PCMCIA | 4d36e977-e325-11ce-bfc1-08002be10318 | Includes PCMCIA and CardBus host controllers, but not PCMCIA or CardBus peripherals. Drivers for this class are system-supplied. |
 | **Ports (COM & LPT ports)** | Ports | 4d36e978-e325-11ce-bfc1-08002be10318 | Includes serial and parallel port devices. See also the MultiportSerial class. |
@@ -71,6 +70,7 @@ The following table shows the predefined values to use for the **Class** and **C
 | **Sensors** | Sensor | 5175d334-c371-4806-b3ba-71fd53c9258d | (Windows 7 and later versions of Windows) Includes sensor and location devices, such as GPS devices. |
 | **Smart Card Readers** | SmartCardReader | 50dd5230-ba8a-11d1-bf5d-0000f805f530 | Includes smart card readers. |
 | **Software Component** | SoftwareComponent | 5c4c3332-344d-483c-8739-259e934c9cc8 | (Windows 10 version 1703 and later versions of Windows) Includes virtual child device to encapsulate software components. For more information, see [Adding Software Components with an INF file](./using-a-component-inf-file.md). |
+| **Storage Disks** | NvmeDisk | 75416e63-5912-4dfa-ae8f-3efaccaffb14 | Storage disks utilizing a multi-queue storage stack. |
 | **Storage Volumes** | Volume | 71a27cdd-812a-11d0-bec7-08002be2092f | Includes storage volumes as defined by the system-supplied logical volume manager and class drivers that create device objects to represent storage volumes, such as the system disk class driver. |
 | **System Devices** | System | 4d36e97d-e325-11ce-bfc1-08002be10318 | Includes HALs, system buses, system bridges, the system ACPI driver, and the system volume manager driver. |
 | **Tape Drives** | TapeDrive | 6d807884-7d21-11cf-801c-08002be10318 | Includes tape drives, including all tape miniclass drivers. |
