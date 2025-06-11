@@ -68,7 +68,7 @@ The provided links for the SDK and the WDK have matching build numbers, which is
 
 ## ![download icon for WDK](images/download-install.png) Step 3: Install WDK
 
-- [Download WDK 10.0.26100.4202](https://go.microsoft.com/fwlink/?linkid=2307500)
+- [Download WDK](https://go.microsoft.com/fwlink/?linkid=2324617)
 
 Starting with version 17.11.0, the WDK VSIX is included as an individual component in Visual Studio. Before installing the WDK, the installer checks if a compatible version of the VSIX is already installed. If the WDK VSIX is not found, users will be prompted to install it. To install the WDK VSIX, launch the Visual Studio Installer, select **Modify**, navigate to the **Individual Components** tab, add **Windows Driver Kit**, and then select **Modify** again.
 
@@ -81,11 +81,11 @@ Starting with version 17.11.0, the WDK VSIX is included as an individual compone
 
 As an alternative to downloading Visual Studio, the SDK, and the WDK, you can download the EWDK, which is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.
 
-The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.11.4 and MSVC toolset v14.41
+The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.11.9 and MSVC toolset v14.41
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-- [Download EWDK 10.0.26100.4202 with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
+- [Download EWDK with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
 
 After you download the ISO, use these steps to set up your build environment:
 
