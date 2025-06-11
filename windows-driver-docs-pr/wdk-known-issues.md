@@ -6,7 +6,7 @@ keywords:
 - WDK
 - drivers
 - known issues
-ms.date: 09/17/2024
+ms.date: 06/16/2025
 ms.topic: troubleshooting-known-issue
 ---
 
@@ -15,6 +15,10 @@ ms.topic: troubleshooting-known-issue
 This topic details known issues concerning the WDK.
 
 ## WDK for Windows 11, version 24H2
+
+## x86 Kernel Mode Driver Development
+
+Starting with Windows 11, version 24H2, the WDK no longer supports x86 kernel-mode driver development. If you have a business need to develop x86 kernel-mode drivers, please use [WDK Version 23H2](https://go.microsoft.com/fwlink/?linkid=2249371)
 
 ### Restart after provisioning
 
