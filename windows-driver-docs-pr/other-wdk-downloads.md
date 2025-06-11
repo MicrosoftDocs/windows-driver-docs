@@ -5,7 +5,7 @@ keywords:
 - Windows Driver Kit
 - previous versions
 - WDK
-ms.date: 05/14/2025
+ms.date: 06/16/2025
 ---
 
 # Other WDK downloads
@@ -74,7 +74,7 @@ The WDK is integrated with Visual Studio and Debugging Tools for Windows (WinDbg
 
 | Released with | WDK and related downloads |
 |--|--|
-| Windows 11, Version 24H2 | [WDK 10.0.26100.3323 (released March 14, 2025)](https://go.microsoft.com/fwlink/?linkid=2307500) |
+| Windows 11, Version 24H2 | [WDK 10.0.26100.4202](https://go.microsoft.com/fwlink/?linkid=2324617) |
 | Windows 11, Version 23H2 | Permanently unavailable |
 | Windows 11, version 22H2 | Permanently unavailable |
 | Windows 11, version 21H2 | Permanently unavailable |
