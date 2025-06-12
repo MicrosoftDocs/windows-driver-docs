@@ -1,13 +1,13 @@
 ---
 title: Testing With SensorExplorer
 description: How to use SensorExplorer for sensor testing and logging
-ms.date: 01/11/2024
+ms.date: 06/12/2025
 ms.topic: concept-article
 ---
 
 # SensorExplorer overview
 
-SensorExplorer is an app available on the [Microsoft Store](https://www.microsoft.com/p/sensorexplorer/9pgl3xpq1tpx?activetab=pivot:overviewtab) and the app package can be accessed through [GitHub](https://github.com/microsoft/busiotools/tree/master/sensors/Tools/SensorExplorer). SensorExplorer offers tests to quickly verify the installation of supported sensors such as orientation sensors (accelerometer, simple orientation sensors, etc.) and provide detailed tables and plots that enable monitoring different sensors. SensorExplorer also provides logging that can be reviewed for debugging.
+SensorExplorer is an app available on the [Microsoft Store](https://apps.microsoft.com/detail/9pgl3xpq1tpx?hl=en-US&gl=US) and the app package can be accessed through [GitHub](https://github.com/microsoft/busiotools/tree/master/sensors/Tools/SensorExplorer). SensorExplorer offers tests to quickly verify the installation of supported sensors such as orientation sensors (accelerometer, simple orientation sensors, etc.) and provide detailed tables and plots that enable monitoring different sensors. SensorExplorer also provides logging that can be reviewed for debugging.
 
 There are five modes available via the menu bar on the left-hand side in SensorExplorer:
 
