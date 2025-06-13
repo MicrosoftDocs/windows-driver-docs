@@ -1,7 +1,7 @@
 ---
 title: Windows Drivers Kit (WDK) release notes
 description: Highlights the latest features in new WDK releases.
-ms.date: 06/02/2025
+ms.date: 06/16/2025
 ms.topic: release-notes
 ---
 
@@ -11,7 +11,7 @@ The following features and bug fixes are in Windows 11 24H2 WDK update.
 
 ## Version 10.0.26100.4202
 
-*Released June 10, 2025*
+*Released June 16, 2025*
 
 ### Windows Driver Kit End User License Agreement (EULA)
 
