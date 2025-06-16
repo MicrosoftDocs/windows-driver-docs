@@ -12,10 +12,10 @@ ms.topic: how-to
 
 # Download the Windows Driver Kit (WDK)
 
-The WDK is used to develop, test, and deploy drivers for Windows.
+The WDK is used to develop, test, and deploy drivers for Windows. 
 
-- You can install and run this WDK on Windows 7 and later.
-- You can use this kit to build drivers for Windows 10, Windows Server 2016, and later client and server versions.
+- You can install and run the latest released WDK on Windows 7 and later.
+- You can also use the latest release WDK to build drivers for Windows 10, Windows Server 2016, and later client and server versions.
 
 > [!IMPORTANT]
 > Starting in May 2025, Microsoft no longer publishes older versions of Windows Drivers Kit. Use the latest release of the WDK for all driver development efforts. If you're targeting older versions of Windows, follow the guidance in the [Building Drivers for Previous OS Releases Using the Latest Windows Driver Kit (WDK)](https://techcommunity.microsoft.com/blog/windowsdriverdev/building-drivers-for-previous-os-releases-using-the-latest-windows-driver-kit-wd/4374910) blog post. If your development scenario is not supported by the latest WDK, contact [Microsoft WDK Feedback](mailto:wdkfeedback@microsoft.com) for assistance.
