@@ -87,7 +87,7 @@ In the implementation of the *EvtMbbDeviceCreateAdapter* callback function, the 
 
 1. Call [**MbbAdapterInitialize**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbadapterinitialize) on the NETADAPTER object created by [*NetAdapterCreate*](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptercreate).
 
-2. After calling *MbbAdapterinitialize*, call [**MbbAdapterGetSessionId**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbadaptergetsessionid) to retreive the data session ID for which MBBCx intends to use this NETADAPTER object. For example, if the returned value is 0, it means MBBCx will use this NETADAPTER interface for the data session established by the primary PDP context/default EPS bearer.
+2. After calling *MbbAdapterinitialize*, call [**MbbAdapterGetSessionId**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbadaptergetsessionid) to retrieve the data session ID for which MBBCx intends to use this NETADAPTER object. For example, if the returned value is 0, it means MBBCx will use this NETADAPTER interface for the data session established by the primary PDP context/default EPS bearer.
 
 3. We recommend that MBBCx client drivers keep an internal mapping between the created NETADAPTER object and the returned *SessionId*. This helps track the data session-to-NETADAPTER object relationship, which is especially useful when multiple PDP contexts/EPS bearers have been activated.
 
