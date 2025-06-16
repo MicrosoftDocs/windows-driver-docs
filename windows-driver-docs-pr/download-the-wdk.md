@@ -12,7 +12,7 @@ ms.topic: how-to
 
 # Download the Windows Driver Kit (WDK)
 
-The WDK is used to develop, test, and deploy drivers for Windows. The most recent public release is WDK 10.0.26100.4202 (released June 9, 2025).
+The WDK is used to develop, test, and deploy drivers for Windows.
 
 - You can install and run this WDK on Windows 7 and later.
 - You can use this kit to build drivers for Windows 10, Windows Server 2016, and later client and server versions.
