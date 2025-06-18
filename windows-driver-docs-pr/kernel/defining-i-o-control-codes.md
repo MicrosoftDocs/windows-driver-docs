@@ -17,7 +17,7 @@ This article describes how to create a unique [I/O control code (IOCTL)](introdu
 
 An IOCTL is a 32-bit value that consists of several fields. The following figure illustrates the bit-wise layout of an IOCTL:
 
-![diagram illustrating the bitwise layout of a 32-bit i/o control code.](images/ioctl-bit-layout.png)
+![Diagram illustrating the bitwise layout of a 32-bit i/o control code.](images/ioctl-bit-layout.png)
 
 Each field in the IOCTL has a specific purpose, as described in the following table:
 
