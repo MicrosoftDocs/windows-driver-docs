@@ -5,7 +5,7 @@ keywords:
 - Windows Driver Kit
 - previous versions
 - WDK
-ms.date: 05/14/2025
+ms.date: 06/19/2025
 ---
 
 # Other WDK downloads
