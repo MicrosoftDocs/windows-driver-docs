@@ -8,7 +8,7 @@ ms.topic: best-practice
 # Best practices for testing the download of device metadata packages
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 Because of how the device metadata retrieval client ([DMRC](device-metadata-retrieval-client.md)) caches metadata packages, a delay can occur between the time when a device metadata package is available on the Windows Metadata and Internet Services ([WMIS](windows-metadata-and-internet-services.md)) server and the time when the DMRC downloads the metadata package to a client system. To test the download of a device metadata package, you can force a download in one of the following ways:
 

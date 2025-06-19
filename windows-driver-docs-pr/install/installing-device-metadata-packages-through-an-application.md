@@ -8,7 +8,7 @@ ms.topic: how-to
 # Installing Device Metadata Packages through an Application
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 To install device metadata packages in the [device metadata store](device-metadata-store.md) by using an application, such as a device installation application, follow these steps:
 

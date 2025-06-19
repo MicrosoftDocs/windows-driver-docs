@@ -8,7 +8,7 @@ ms.topic: how-to
 # Installing Device Metadata Packages from WMIS
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 When the operating system detects a new device, it queries an online service called the [Windows Metadata and Internet Services](windows-metadata-and-internet-services.md) (WMIS) for a metadata package for the device. If a device metadata package is available, the Device Metadata Retrieval Client (DMRC) that runs on the local computer downloads the package from WMIS and installs the package on the local computer.
 

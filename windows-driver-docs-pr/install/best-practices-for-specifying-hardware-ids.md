@@ -8,7 +8,7 @@ ms.topic: best-practice
 # Best Practices for Specifying Hardware IDs
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 The **[HardwareIDList](/previous-versions/windows/hardware/metadata/ff546121(v=vs.85))** element specifies one or more hardware identification strings for the device. Each string is specified by a **[HardwareID](/previous-versions/windows/hardware/metadata/ff546114(v=vs.85))** XML element. The operating system first queries the device for its identification string and then loads the device metadata package that has a **HardwareID** value that matches this string.
 

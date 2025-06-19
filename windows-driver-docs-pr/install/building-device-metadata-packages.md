@@ -10,7 +10,7 @@ ms.topic: concept-article
 # Building Device Metadata Packages
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 This topic provides guidelines on how to build device metadata packages.
 

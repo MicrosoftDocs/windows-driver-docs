@@ -8,7 +8,7 @@ ms.topic: error-reference
 # Device Metadata Error Codes
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 Starting with Windows 7, the operating system logs the following error codes within events that are related to the download and processing of device metadata packages. The Event Tracing for Windows (ETW) service manages these events, which can be viewed by using Event Viewer. For more information about these events, see [Debugging Device Metadata Packages By Using Event Viewer](debugging-device-metadata-packages-by-using-event-viewer.md).
 

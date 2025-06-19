@@ -8,7 +8,7 @@ ms.topic: concept-article
 # How the DMRC Selects a Device Metadata Package
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 When the Devices and Printers or Device Stage user interfaces are opened, the operating system starts the device metadata retrieval client ([DMRC](device-metadata-retrieval-client.md)) to search its cache for the most appropriate and current metadata package for a device. The DMRC also searches for a newer metadata package for the device on the Windows Metadata and Internet Services ([WMIS](windows-metadata-and-internet-services.md)) server. If one is found, the DMRC downloads the package and installs it on the computer.
 

@@ -10,7 +10,7 @@ ms.topic: concept-article
 # Overview of Device Metadata Packages
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 Starting with Windows 7, device metadata packages contain XML documents that represent the properties of the device and its hardware functions. The Devices and Printers user interface displays device-specific information to the user based on the XML documents from the device's metadata package.
 

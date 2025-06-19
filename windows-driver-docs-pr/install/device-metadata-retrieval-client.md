@@ -10,7 +10,7 @@ ms.date: 06/19/2025
 # Device Metadata Retrieval Client
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 The Device Metadata Retrieval Client (DMRC) is the operating system component that matches devices to device metadata packages. When the user opens the gallery view window of the Devices and Printers user interface, the DMRC tries to obtain device metadata for the devices that Devices and Printers will display. First, it checks the local computer's [device metadata cache](device-metadata-cache.md) and [device metadata store](device-metadata-store.md). If the device is newly installed, or if the device is scheduled for a periodic metadata update, DMRC queries the [Windows Metadata and Internet Services](windows-metadata-and-internet-services.md) (WMIS) website to determine whether a device metadata package is available for the device. If a device metadata package is available, DMRC automatically downloads the package from WMIS, extracts the package's device metadata components, and saves them within the device metadata cache.
 

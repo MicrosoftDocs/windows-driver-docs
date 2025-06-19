@@ -8,7 +8,7 @@ ms.topic: concept-article
 # Installing Device Metadata Packages through a Driver Package
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 A [driver package](driver-packages.md) can install device metadata packages by copying them to the [device metadata store](device-metadata-store.md). This installation is accomplished by using setup information (INF) **[CopyFiles directives](inf-copyfiles-directive.md)** within the **[DestinationDirs](inf-destinationdirs-section.md)** and **[DDInstall](inf-ddinstall-section.md)** sections of the [INF file](overview-of-inf-files.md) for the driver package.
 

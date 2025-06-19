@@ -8,7 +8,7 @@ ms.topic: best-practice
 # Best Practices for specifying model IDs
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 Model IDs are based on the business definition or stock keeping unit (SKU) of the physical device. Each model ID must be unique for all makes and models of the physical device.
 

@@ -7,7 +7,7 @@ ms.date: 06/19/2025
 # PackageInfo XML Document
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 The PackageInfo XML document contains data that specifies the contents of the device metadata package. The operating system uses this data to install the package and reference its contents.
 

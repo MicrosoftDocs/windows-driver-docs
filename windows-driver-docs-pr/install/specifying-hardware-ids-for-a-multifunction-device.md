@@ -8,7 +8,7 @@ ms.topic: concept-article
 # Specifying Hardware IDs for a multifunction device
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 You can specify more than one **[HardwareID]**(/previous-versions/windows/hardware/metadata/ff546114(v=vs.85)) element for a physical device. This is done by specifying multiple **HardwareID** element values within the parent **[HardwareIDList]**(/previous-versions/windows/hardware/metadata/ff546121(v=vs.85)) element. Each value must specify a unique [hardware ID](hardware-ids.md) for the device.
 

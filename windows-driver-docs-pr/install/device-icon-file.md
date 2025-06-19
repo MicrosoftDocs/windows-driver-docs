@@ -7,7 +7,7 @@ ms.date: 06/19/2025
 # Device Icon File
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 A device metadata package can contain one photo-realistic image, or icon, that represents the device in the Devices and Printers user interface. The image is stored in an icon file, and the file name must be specified in the [**DeviceIconFile**](/previous-versions/windows/hardware/metadata/ff541123(v=vs.85)) element of the package's [DeviceInfo XML document](deviceinfo-xml-document.md).
 

@@ -12,7 +12,7 @@ ms.topic: concept-article
 # Windows Metadata and Internet Services
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 The Windows Metadata and Internet Services (WMIS) manages device metadata packages that OEMs submit to the [Windows Quality Online Services (Winqual)](../dashboard/index.md) website over the Internet. By using the Winqual site, you can certify hardware devices and software applications for Windows.
 

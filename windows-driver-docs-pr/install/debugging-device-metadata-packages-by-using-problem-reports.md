@@ -8,7 +8,7 @@ ms.topic: how-to
 # Debugging device metadata packages by using problem reports
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 Starting with Windows 7, the operating system sends problem reports about device metadata package errors (error code 0x50000xx) to the Windows error report (WER) server. These reports provide useful debug information to help diagnose problems with your device metadata package.
 

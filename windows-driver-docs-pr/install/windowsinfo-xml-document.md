@@ -7,7 +7,7 @@ ms.date: 06/19/2025
 # WindowsInfo XML Document
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 This document contains data that specifies the display actions that the operating system performs for the specified device in the device metadata package. These actions include the following:
 

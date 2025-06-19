@@ -8,7 +8,7 @@ ms.topic: concept-article
 # How the DMRC Determines When to Search the WMIS Server
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 The device metadata retrieval client ([DMRC](device-metadata-retrieval-client.md)) maintains a cache of device metadata packages. This cache is populated with metadata packages that the DMRC downloaded from the Windows Metadata and Internet Services ([WMIS](windows-metadata-and-internet-services.md)) server.
 

@@ -8,7 +8,7 @@ ms.topic: concept-article
 # Specifying Hardware IDs for a computer
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 Devices and Printers recognizes the computer as a [device container](container-ids.md). As a result, the computer can be identified within a device metadata package by using a **[HardwareID](/previous-versions/windows/hardware/metadata/ff546114(v=vs.85))** XML element that specifies a unique [hardware ID](hardware-ids.md) value.  This hardware ID value for the computer (sometimes referred to as a computer hardware ID, or CHID) can specify a combination of the System Management BIOS (SMBIOS) field data.
 

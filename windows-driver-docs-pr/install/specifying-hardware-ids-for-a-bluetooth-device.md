@@ -8,7 +8,7 @@ ms.topic: concept-article
 # Specifying Hardware IDs for a Bluetooth device
 
 > [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 To specify [hardware IDs](hardware-ids.md) for a Bluetooth device within a device metadata package, the device must support the Device Identification (DID) Profile. Otherwise, the operating system cannot select and load the most appropriate device metadata package for the Bluetooth device. We highly recommend that all Bluetooth devices support the DID profile.
 
