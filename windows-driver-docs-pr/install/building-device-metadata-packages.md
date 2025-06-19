@@ -9,10 +9,12 @@ ms.topic: concept-article
 
 # Building Device Metadata Packages
 
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
 
 This topic provides guidelines on how to build device metadata packages.
 
-### <a href="" id="device-metadata-package-file-names"></a> Device metadata package file names
+## Device metadata package file names
 
 Before you create the device metadata package file, you must first create a globally unique identifier (GUID) for the metadata package. To do this, use the Guidgen tool *(Guidgen.exe*) that is described in the [GUID Generation](/previous-versions/aa475087(v=msdn.10)) website.
 
@@ -28,23 +30,21 @@ For example, if you create a GUID that has the value of {20f001a99-4675-8707-248
 20f001a99-4675-8707-248ca-187dfd9.devicemetadata-ms
 ```
 
-**Note**  The operating system recognizes device metadata packages only if it has a suffix of .*devicemetadata-ms*.
-
- 
+> [!NOTE]
+> The operating system recognizes device metadata packages only if it has a suffix of .*devicemetadata-ms*.
 
 The following rules apply to device metadata package files:
 
--   The GUID for each metadata package file name must be unique. When you create a new or revised metadata package, you must create a new GUID, even if the changes are minor.
+- The GUID for each metadata package file name must be unique. When you create a new or revised metadata package, you must create a new GUID, even if the changes are minor.
 
--   Each metadata package can support only one locale. If you support more than one locale for your device, you must create separate metadata packages for each locale, with each metadata package having its own GUID. For more information, see [**Locale XML element**](/previous-versions/windows/hardware/metadata/ff548647(v=vs.85)).
+- Each metadata package can support only one locale. If you support more than one locale for your device, you must create separate metadata packages for each locale, with each metadata package having its own GUID. For more information, see [**Locale XML element**](/previous-versions/windows/hardware/metadata/ff548647(v=vs.85)).
 
-    **Note**  If you require multiple locale-specific device metadata package files for your device, you can group all the files by creating a language-neutral identifier. This identifier is a GUID, and the same GUID can be specified in the [**LanguageNeutralIdentifier**](/previous-versions/windows/hardware/metadata/ff548617(v=vs.85)) XML element within all metadata packages for the same device.
+    > [!NOTE]
+    > If you require multiple locale-specific device metadata package files for your device, you can group all the files by creating a language-neutral identifier. This identifier is a GUID, and the same GUID can be specified in the [**LanguageNeutralIdentifier**](/previous-versions/windows/hardware/metadata/ff548617(v=vs.85)) XML element within all metadata packages for the same device.
 
-     
+- The *&lt;GUID&gt;* prefix of the device metadata package file name must specify the GUID without the '{' or '}' delimiters.
 
--   The *&lt;GUID&gt;* prefix of the device metadata package file name must specify the GUID without the '{' or '}' delimiters.
-
-### Creating a device metadata package file
+## Creating a device metadata package file
 
 The [components of a device metadata package](device-metadata-package-components.md) are stored in a file compressed by using the Cabarc (*Cabarc.exe*) tool. For more information about this tool, refer to the [Cabarc Overview](/previous-versions/windows/it-pro/windows-server-2003/cc781787(v=ws.10)) website.
 
@@ -73,7 +73,5 @@ Cabarc.exe -r -p -P .\MyMetadataPackage\
     .\MyMetadataPackage\WindowsInformation\WindowsInfo.xml
 ```
 
-**Note**  Each metadata package can support only one locale. If you support more than one locale for your device, you must create separate metadata packages for each locale, with each metadata package having its own GUID.
-
- 
-
+> [!NOTE]
+> Each metadata package can support only one locale. If you support more than one locale for your device, you must create separate metadata packages for each locale, with each metadata package having its own GUID.

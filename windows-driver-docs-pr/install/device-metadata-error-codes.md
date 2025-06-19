@@ -1,198 +1,60 @@
 ---
 title: Device Metadata Error Codes
 description: Device Metadata Error Codes
-ms.date: 04/20/2017
+ms.date: 06/19/2025
 ms.topic: error-reference
 ---
 
 # Device Metadata Error Codes
 
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](windows-hardware/drivers/install/driver-package-container-metadata)**.
 
 Starting with Windows 7, the operating system logs the following error codes within events that are related to the download and processing of device metadata packages. These events are managed by the Event Tracing for Windows (ETW) service and can be viewed by using Event Viewer. For more information about these events, see [Debugging Device Metadata Packages By Using Event Viewer](debugging-device-metadata-packages-by-using-event-viewer.md).
 
-<a href="" id="windows-metadata-and-internet-services--wmis--errors--200000xx-"></a>Windows Metadata and Internet Services (WMIS) Errors (200000xx)  
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Error code</th>
-<th align="left">Explanation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>20000021</p></td>
-<td align="left"><p>The request does not contain a device metadata request.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>20000022</p></td>
-<td align="left"><p>The request batch size exceeds the maximum allowed value.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>20000023</p></td>
-<td align="left"><p>The locale value is invalid.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>20000024</p></td>
-<td align="left"><p>The request does not contain valid header information.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>20000025</p></td>
-<td align="left"><p>The request format is invalid.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>20000031</p></td>
-<td align="left"><p>An error occurred at the service side when processing the request.</p></td>
-</tr>
-</tbody>
-</table>
+## Windows Metadata and Internet Services (WMIS) Errors (200000xx)
 
- 
+| Error code | Explanation |
+|--|--|
+| 20000021 | The request does not contain a device metadata request. |
+| 20000022 | The request batch size exceeds the maximum allowed value. |
+| 20000023 | The locale value is invalid. |
+| 20000024 | The request does not contain valid header information. |
+| 20000025 | The request format is invalid. |
+| 20000031 | An error occurred at the service side when processing the request. |
 
-<a href="" id="device-metadata-retrieval-client--dmrc--errors--0x400000xx-"></a>Device Metadata Retrieval Client (DMRC) Errors (0x400000xx)  
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Error code</th>
-<th align="left">Explanation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>40000011</p></td>
-<td align="left"><p>There is no local metadata cache.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>40000012</p></td>
-<td align="left"><p>The structure (folders) in the local metadata cache is not correct.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>40000021</p></td>
-<td align="left"><p>There is no local metadata store.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>40000022</p></td>
-<td align="left"><p>The structure (folders) in the local metadata store is corrupted.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>40000031</p></td>
-<td align="left"><p>The DMRC index data is missing.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>40000032</p></td>
-<td align="left"><p>The DMRC index data is corrupted.</p></td>
-</tr>
-</tbody>
-</table>
+## Device Metadata Retrieval Client (DMRC) Errors (0x400000xx)
 
- 
+| Error code | Explanation |
+|--|--|
+| 40000011 | There is no local metadata cache. |
+| 40000012 | The structure (folders) in the local metadata cache is not correct. |
+| 40000021 | There is no local metadata store. |
+| 40000022 | The structure (folders) in the local metadata store is corrupted. |
+| 40000031 | The DMRC index data is missing. |
+| 40000032 | The DMRC index data is corrupted. |
 
-<a href="" id="device-metadata-package-errors--0x500000xx-"></a>Device Metadata Package Errors (0x500000xx)  
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Error code</th>
-<th align="left">Explanation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>50000011</p></td>
-<td align="left"><p>The<em>.devicemetadata-ms</em> cabinet (<em>cab</em>) file is corrupted.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>50000012</p></td>
-<td align="left"><p>The <em>.devicemetadata-ms</em> cab file does not have correct device metadata structure.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>50000021</p></td>
-<td align="left"><p><em>PackageInfo.xml</em> is missing.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>50000022</p></td>
-<td align="left"><p><em>PackageInfo.xml</em> is not well-formed and cannot be parsed.</p>
-<div class="alert">
-<strong>Note</strong>   This error code includes the cases where either the <em>PackageInfo.xml</em> document is missing required elements, or one or more of its elements are not valid based on the syntax of the <a href="/previous-versions/windows/hardware/metadata/ff549614(v=vs.85)" data-raw-source="[PackageInfo XML Schema](/previous-versions/windows/hardware/metadata/ff549614(v=vs.85))">PackageInfo XML Schema</a>.
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>50000031</p></td>
-<td align="left"><p><em>DeviceInfo.xml</em> is missing.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>50000032</p></td>
-<td align="left"><p><em>DeviceInfo.xml</em> is not well-formed and cannot be parsed.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>50000033</p></td>
-<td align="left"><p><em>DeviceInfo.xml</em> is missing required elements.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>50000034</p></td>
-<td align="left"><p>Elements in <em>DeviceInfo.xml</em> are not valid based on the XML schema definition.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>50000041</p></td>
-<td align="left"><p><em>WindowsInfo.xml</em> is missing.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>50000042</p></td>
-<td align="left"><p><em>WindowsInfo.xml</em> is not well-formed and cannot be parsed.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>50000043</p></td>
-<td align="left"><p><em>WindowsInfo.xml</em> is missing required elements.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>50000044</p></td>
-<td align="left"><p>Elements in <em>WindowsInfo.xml</em> are not valid based on the XML schema definition.</p></td>
-</tr>
-</tbody>
-</table>
+## Device Metadata Package Errors (0x500000xx)
 
- 
+| Error code | Explanation |
+|--|--|
+| 50000011 | The *.devicemetadata-ms* cabinet (*cab*) file is corrupted. |
+| 50000012 | The *.devicemetadata-ms* cab file does not have correct device metadata structure. |
+| 50000021 | *PackageInfo.xml* is missing. |
+| 50000022 | *PackageInfo.xml* is not well-formed and cannot be parsed.<br>This error code includes the cases where either the *PackageInfo.xml* document is missing required elements, or one or more of its elements are not valid based on the syntax of the [PackageInfo XML Schema](/previous-versions/windows/hardware/metadata/ff549614(v=vs.85)). |
+| 50000031 | *DeviceInfo.xml* is missing. |
+| 50000032 | *DeviceInfo.xml* is not well-formed and cannot be parsed. |
+| 50000033 | *DeviceInfo.xml* is missing required elements. |
+| 50000034 | Elements in *DeviceInfo.xml* are not valid based on the XML schema definition. |
+| 50000041 | *WindowsInfo.xml* is missing. |
+| 50000042 | *WindowsInfo.xml* is not well-formed and cannot be parsed. |
+| 50000043 | *WindowsInfo.xml* is missing required elements. |
+| 50000044 | Elements in *WindowsInfo.xml* are not valid based on the XML schema definition. |
 
-<a href="" id="wmis-query--0x7000xxxx-"></a>WMIS Query (0x7000xxxx)  
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Error code</th>
-<th align="left">Explanation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>70000408</p></td>
-<td align="left"><p>The WMIS server is not down, but the request timed out.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>70000500</p></td>
-<td align="left"><p>The WMIS server returned an internal error, but a detailed error code is not available.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>70000503</p></td>
-<td align="left"><p>The WMIS server is busy and cannot service the request.</p></td>
-</tr>
-</tbody>
-</table>
+## WMIS Query (0x7000xxxx)
 
- 
-
+| Error code | Explanation |
+|--|--|
+| 70000408 | The WMIS server is not down, but the request timed out. |
+| 70000500 | The WMIS server returned an internal error, but a detailed error code is not available. |
+| 70000503 | The WMIS server is busy and cannot service the request. |
