@@ -1,15 +1,15 @@
 ---
 title: Using Safe Integer Functions
-description: The ntintsafe library provides a set of C functions that perform safe integer arithmetic operations with bounds checking to prevent overflows and underflows in kernel-mode code.
+description: The ntintsafe library provides a set of C functions that perform safe integer arithmetic operations with bounds checking to prevent overflows in kernel-mode code.
 ms.date: 09/28/2023
 ms.topic: concept-article
 ---
 
 # Using Safe Integer Functions
 
-One way to minimize security problems is to prevent integer overflows and underflows. Integer overflows occur when the result of an arithmetic operation is larger than the memory space of the data type that is set to receive it. This results in the truncation of the integer and an incorrect result. An underflow occurs when an operation, usually subtraction, gives an incorrect result. Casting between two data types can also cause incorrect results due to truncation of a result that does not fit the new memory space.
+One way to minimize security problems is to prevent integer overflows. Integer overflows occur when the result of an arithmetic operation is larger than the memory space of the data type that is set to receive it. This results in the truncation of the integer and an incorrect result. Casting between two data types can also cause incorrect results due to truncation of a result that does not fit the new memory space.
 
-The ntintsafe library provides a set of C functions that perform safe integer arithmetic operations with bounds checking to prevent overflows and underflows in kernel-mode code. These functions correspond to the Windows IntSafe functions that are used by application code. You use these functions to calculate an index or buffer size, or to compute some other form of bounds check. The functions are optimized for speed.
+The ntintsafe library provides a set of C functions that perform safe integer arithmetic operations with bounds checking to prevent overflows in kernel-mode code. These functions correspond to the Windows IntSafe functions that are used by application code. You use these functions to calculate an index or buffer size, or to compute some other form of bounds check. The functions are optimized for speed.
 
 Safe integer functions offer the following advantages:
 
