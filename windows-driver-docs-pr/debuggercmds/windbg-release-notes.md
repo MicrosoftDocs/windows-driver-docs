@@ -14,8 +14,6 @@ This topic provides information on what's new in WinDbg. Earlier versions were r
 
 ## 1.2506.12002.1
 
-## 2506
-
 ### New Features
 
 WinDbg now ships with the console mode debuggers (cdb.exe / ntsd64.exe / kd.exe)! To disambiguate the binaries from each other, and to not interfere with existing copies of the tools, the binaries include the architecture name:
@@ -49,11 +47,7 @@ Additional features:
 * Launch debug target error dialog provides more detail and, for open dump failures, provides a hyperlink to a failed to open dump file TSG.
 * Tool window title bars have same context menu as their docked tab.
 * Visual improvements to Locals, Watch, and Model windows.
-
-### Time Travel Debugging (TTD)[](https://dev.azure.com/microsoft/Debugging%20Experiences/_wiki/wikis/Debugging-Experiences.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=/Debugging%20Platform%20Wiki/Debugger%20Releases/Release%20Notes&pageId=144768&anchor=time-travel-debugging-(ttd))
-
-*   Updated to version 1.11.532.
-*   See [TTD Release Notes](https://learn.microsoft.com/en-us/windows-hardware/drivers/debuggercmds/time-travel-debugging-release-notes#111506)  for more details.
+* Time Travel Debugging (TTD) updated to version 1.11.532. See [TTD Release Notes](time-travel-debugging-release-notes.md) for more details.
 
 ## 1.2502.25002.0
 
