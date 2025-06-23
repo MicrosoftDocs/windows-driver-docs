@@ -2,7 +2,7 @@
 title: "Time travel debugging release notes"
 description: "This topic provides information on what's new in Time Travel Debugging."
 keywords: ["release notes", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 11/15/2024
+ms.date: 06/23/2024
 ms.topic: release-notes
 ---
 
