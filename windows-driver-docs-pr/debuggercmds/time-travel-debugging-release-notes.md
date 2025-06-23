@@ -14,7 +14,7 @@ This topic provides information on what's new in Time Travel Debugging.
 
 ## 1.11.532
 
-This is a maintenance release that makes some improvements to recording robustness and coincides with the June 2025 release of Windbg. One customer-facing feature is the Position data model object now reports percentage into the trace.
+This is a maintenance release that makes improvements to recording robustness. This TTD release coincides with the June 2025 release of Windbg. One new feature is the Position data model object now reports percentage into the trace.
 
 ### Changed
 
@@ -50,7 +50,7 @@ We have revamped the !tt command to give you more powerful ways to navigate thro
 - Find the previous/next time execution moves to a different module (!tt bm)
 - Find the previous/next time execution moves to a specific module (!tt bm ntdll)
 
-For more details see the [documentation](time-travel-debugging-extension-tt.md).
+For more details see [!tt (time travel)](time-travel-debugging-extension-tt.md).
 
 Some notable fixes:
 - "Error: 64 bit value loses precision on conversion to number" messages when using `@$cursession.TTD.Data.Heap()` on 32-bit trace are gone.
