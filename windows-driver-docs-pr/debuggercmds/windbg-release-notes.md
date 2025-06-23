@@ -12,6 +12,49 @@ ms.topic: release-notes
 
 This topic provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
+## 1.2506.12002.1
+
+## 2506
+
+### New Features
+
+WinDbg now ships with the console mode debuggers (cdb.exe / ntsd64.exe / kd.exe)! To disambiguate the binaries from each other, and to not interfere with existing copies of the tools, the binaries include the architecture name:
+* cdbARM64.exe / cdbX64.exe / cdbX86.exe
+* kdARM64.exe / kdX64.exe / kdX86.exe
+* ntsdARM64.exe / ntsdX64.exe / ntsdX86.exe
+
+Additional features:
+* Data Model tool window title can be customized via $OpenDmoToolwindow command and can also be changed via title bar context menu.
+* New debugger setting to enable parallel HTTP downloads of symbol files. This option is enabled by default.
+* Support for getting PDZ files from HTTP and UNC symbol stores.
+
+### Bug Fixes
+
+* Fixed how target path is saved for dump files opened via command line (-z) so that it can be opened successfully from recents menu.
+* Fixed a crash in the Script Editor window.
+* Fixed how WinDbg handles inconsistent line endings in source files opened in Source Window to provide a more consistent view of source files.
+* Fixed an issue where credentials would not be renewed for HTTP symbol servers when using the new parallel downloads feature.
+* Fixed an issue where the properties of data model objects would not be enumerated properly in JavaScript extensions.
+* Fixed an issue where column text disappeared when reordered via click and drag.
+* Fixed an issue where setting event filtering via command line options were not applied to debug target at startup.
+* Fixed an issue where sometimes undocking a tool window would result in blank content.
+* Fixed an issue where minidumps of X64 emulated processes on ARM64 machines could not be debugged.
+* Fixed an issue where ambiguous breakpoints crashed the debugger.
+* Fixed an issue where GDBServer crashed at process exit when debugging a live Linux process.
+* Fixed multiple issues related to debugging JavaScript extensions (.scriptdebug), including better enumeration of properties and fixing a crashing issue.
+
+### General UI Improvements
+
+* Command suggestion popup aligns to the cursor and only shows the suggested completions, instead of everything before the cursor.
+* Launch debug target error dialog provides more detail and, for open dump failures, provides a hyperlink to a failed to open dump file TSG.
+* Tool window title bars have same context menu as their docked tab.
+* Visual improvements to Locals, Watch, and Model windows.
+
+### Time Travel Debugging (TTD)[](https://dev.azure.com/microsoft/Debugging%20Experiences/_wiki/wikis/Debugging-Experiences.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=/Debugging%20Platform%20Wiki/Debugger%20Releases/Release%20Notes&pageId=144768&anchor=time-travel-debugging-(ttd))
+
+*   Updated to version 1.11.532.
+*   See [TTD Release Notes](https://learn.microsoft.com/en-us/windows-hardware/drivers/debuggercmds/time-travel-debugging-release-notes#111506)  for more details.
+
 ## 1.2502.25002.0
 
 ### New Features

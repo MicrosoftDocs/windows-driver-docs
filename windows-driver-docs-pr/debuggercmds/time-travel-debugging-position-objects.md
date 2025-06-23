@@ -17,6 +17,7 @@ A position of FFFFFFFFFFFFFFFE:0 indicates the end of the trace.
 
 | Property | Description |
 | -------- | ----------- |
+| Percent  | Percentage into trace (to the nearest Sequence).<br>Note: The exact percentage can differ from what is requested in !tt command due to rounding to the nearest Sequence. |
 | Sequence | The sequencing point relevant to the position. |
 | Steps    | The number of steps from the sequence point in this thread to get to this position. |
 
@@ -25,6 +26,7 @@ A position of FFFFFFFFFFFFFFFE:0 indicates the end of the trace.
 | Method   | Description |
 | -------- | ----------- |
 | SeekTo() | Time travels to this position in the trace. |
+| ToSystemTime() | Returns the approximate wall clock time for the position (UTC). |
 
 ## Example Usage
 

@@ -12,6 +12,21 @@ ms.topic: release-notes
 
 This topic provides information on what's new in Time Travel Debugging.
 
+## 1.11.532
+
+This is a maintenance release that makes some improvements to recording robustness and coincides with the June 2025 release of Windbg. One customer-facing feature is the Position data model object now reports percentage into the trace.
+
+### Changed
+
+- Miscellaneous infrastructure maintenance.
+- Use the ISO standard implementation of C++ volatile. (1.11.518)
+- Add Percent to Position data model projection. (1.11.514)
+
+### Fixed
+
+- Increase the robustness of TTD's handling of decoded instructions. (1.11.530)
+- Remove uses of XSAVE in the emulator and optimize internal register transfer. (1.11.509)
+
 ## 1.11.506
 
 This is a minor release to coincide with the April 2025 release of WinDbg.
