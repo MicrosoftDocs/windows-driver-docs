@@ -37,54 +37,21 @@ Additionally, starting with Windows 11, version 22H2 release of the WDK and EWDK
 
 The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2022 System Requirements](/visualstudio/releases/2022/system-requirements).
 
-The following table indicates which Visual Studio version is required for the different releases of the WDK.
+Table below indicates which Visual Studio version is required for the different releases of the WDK.
 
-| Targeted versions of Windows | Editions of Visual Studio |
-|--|--|
-| Windows 11, version 24H2<br/>Windows 11, version 23H2<br/>Windows 11, version 22H2 | [Visual Studio Community 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=17) <br/> [Visual Studio Professional 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=17) <br/> [Visual Studio Enterprise 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=17) |
-| Windows 11, version 21H2<br/>Windows Server 2022 <br/>Windows 10, version 2004 <br/>Windows 10, version 1903 | [Visual Studio Community 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16) <br/>[Visual Studio Professional 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=16) <br/>[Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=16) |
-| Windows 10, version 1809 <br/>Windows 10, version 1803 <br/>Windows 10, version 1709 | [Visual Studio Community 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15) <br/>[Visual Studio Professional 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15) <br/>[Visual Studio Enterprise 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15) |
-| Windows 10, version 1703 <br/>Windows 10, version 1607 | [Visual Studio Express 2015 for Desktop](https://go.microsoft.com/fwlink/?linkid=875331) <br/>[Visual Studio Community 2015](https://go.microsoft.com/fwlink/p/?LinkId=534599) <br/>[Visual Studio Professional 2015](https://go.microsoft.com/fwlink/p/?LinkId=619628) <br/>[Visual Studio Enterprise 2015](https://go.microsoft.com/fwlink/p/?LinkId=619629) |
-| Windows 8.1 Update <br/>Windows 8.1 | [Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=875331) |
-| Windows 8 | [Visual Studio Professional 2012](https://go.microsoft.com/fwlink/p/?LinkID=255976) <br/>[Visual Studio Ultimate 2012](https://go.microsoft.com/fwlink/p/?LinkID=255982) |
+## Step 2: Install the Windows SDK
 
-For information on which options to select when installing Visual Studio, see [Download the Windows Driver Kit](./download-the-wdk.md).
+The WDK requires SDK. If your development targets systems that run Windows 11, then you should mostly be fine by installing the SDK included in the Visual Studio under Desktop Development with C++ workload. The table below indicates which SDK version is required for the different releases of the WDK. As a general rule of thumb, the installed SDK version should match with the WDK version you are using.
 
-### Install the Windows SDK to target Windows 10, versions 1607 and 1703
-
-If your development targets systems that run Windows 10, version 1607 or Windows 10, version 1703, you should install Visual Studio 2015, and then also download and install the version of the Windows SDK for the targeted version of Windows 10, as identified in the following table.
-
-| Targeted versions of Windows | Version of Windows SDK |
-|--|--|
-| Windows 10, version 1703 | [Windows SDK for Windows 10.0.15063.468](https://go.microsoft.com/fwlink/p/?LinkID=845298) |
-| Windows 10, version 1607 | [Windows SDK for Windows 10.0.14393.795](https://go.microsoft.com/fwlink/p/?LinkId=838916) |
-| Windows 8.1 | [Windows SDK for Windows 8.1](https://go.microsoft.com/fwlink/p/?LinkId=323507) |
-| Windows 8 | [Windows SDK for Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=226658) |
-
-The Windows SDK wasn't included in Visual Studio 2015, so you must install the SDK separately. Later versions of Visual Studio include the Windows SDK.
-
-## Step 2: Install the WDK
+## Step 3: Install the WDK
 
 The WDK is integrated with Visual Studio and Debugging Tools for Windows (WinDbg). This integrated environment gives you the tools you need to develop, build, package, deploy, test, and debug drivers.
 
 > [!NOTE]
-> The WDK VSIX isn't shipped as a Visual Studio individual component. The WDK is also not available through the MSI installation process. Instead, use the Visual Studio Installer to install the WDK. This installation method is required for WDK integration in Visual Studio.
+> The WDK VSIX is now shipped as a Visual Studio individual component. The WDK VSIX is no longer available through the MSI installation process. Instead, use the Visual Studio Installer to install the WDK VSIX. This installation method is required for WDK integration in Visual Studio.
 >
 > Starting April 13, 2025, Microsoft no longer distributes older kits. We provide download links only for the latest version of the Windows Driver Kit. The latest published Windows Driver Kit supports driver development for Windows 10, Windows Server 2016, and later versions of each Windows variant. For details, see [Building Drivers for Previous OS Release Using the Latest WDK](https://techcommunity.microsoft.com/blog/windowsdriverdev/building-drivers-for-previous-os-releases-using-the-latest-windows-driver-kit-wd/4374910). If you need further assistance, contact [Microsoft WDK Feedback](mailto:wdkfeedback@microsoft.com).
 
-| Released with | WDK and related downloads |
-|--|--|
-| Windows 11, Version 24H2 | [WDK 10.0.26100.3323 (released March 14, 2025)](https://go.microsoft.com/fwlink/?linkid=2307500) |
-| Windows 11, Version 23H2 | Permanently unavailable |
-| Windows 11, version 22H2 | Permanently unavailable |
-| Windows 11, version 21H2 | Permanently unavailable |
-| Windows Server 2022 | Permanently unavailable |
-| Windows 10, version 2004 | Permanently unavailable |
-| Windows 10, version 1903 | Permanently unavailable |
-| Windows 10, version 1809<br>Windows Server 2019 | Permanently unavailable |
-| Windows 10, version 1607<br>Windows Server 2016 | Permanently unavailable |
-| Windows 8.1 Update | WDK 8.1 Update (English only) - permanently unavailable<br/>WDK 8.1 Update Test Pack (English only) - permanently unavailable <br/>[WDK 8.1 Samples](https://go.microsoft.com/fwlink/p/?LinkId=618052)  <br/><br/>**NOTE:** You can use any WDK from Windows 10, version 1607 through Windows 11, version 21H2 to build drivers for Windows 8.1. |
-| Windows 8 | [WDK 8 Samples](https://go.microsoft.com/fwlink/p/?LinkId=616509) |
 
 > [!NOTE]
 >Review [Hardware development kits for Windows 10, Version 2004 (10.0.19041.1)](https://social.msdn.microsoft.com/Forums/en-US/96c770a9-19a3-42d0-8d0e-bd200285d980/hardware-development-kits-for-windows-10-version-2004?forum=wdk), which addresses a bug with ExAllocatePoolZero.
@@ -107,23 +74,7 @@ Using the EWDK requires .NET Framework 4.7.2. For more information about which s
 
 For more information about the EWDK, see [Using the Enterprise WDK](./develop/using-the-enterprise-wdk.md).
 
-| Versions of Windows | EWDK |
-|--|--|
-| Windows 11, version 24H2 | [Windows 11, version 24H2 (released March 14, 2025) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022) |
-| Windows 11, version 24H2 | [Windows 11, version 24H2 (released November 27, 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022) |
-| Windows 11, version 24H2 | [Windows 11, version 24H2 (released November 4, 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022) |
-| Windows 11, version 24H2 | [Windows 11, version 24H2 (released October 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022) |
-| Windows 11, version 24H2 | [Windows 11, version 24H2 (released September 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022) |
-| Windows 11, version 24H2 | [Windows 11, version 24H2 (released May 2024) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022) |
-| Windows 11, version 22H2 | [Windows 11, version 22H2 (released May 2023) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022) |
-| Windows 11, version 21H2 | [Windows 11, version 21H2 EWDK](/legal/windows/hardware/enterprise-wdk-license-2019-New) |
-| Windows Server 2022 | [EWDK for Windows Windows Server 2022](/legal/windows/hardware/enterprise-wdk-license-2019) |
-| Windows 10, version 2004 | [EWDK for Windows 10, version 2004](/legal/windows/hardware/enterprise-wdk-license-2019) |
-| Windows 10, version 1903 | [EWDK for Windows 10, version 1903](/legal/windows/hardware/enterprise-wdk-license-2019) |
-| Windows 10, version 1809 | [EWDK for Windows 10, version 1809](/legal/windows/hardware/enterprise-wdk-license-2017) |
-| Windows 10, version 1803 | [EWDK for Windows 10, version 1803](/legal/windows/hardware/enterprise-wdk-license-2017) |
-| Windows 10, version 1709 | [EWDK for Visual Studio with Build Tools 15.6](/legal/windows/hardware/enterprise-wdk-license-2017) (Recommended) <br/>[EWDK for Visual Studio with Build Tools 15.4](/legal/windows/hardware/enterprise-wdk-license-2017) <br/>[EWDK for Visual Studio with Build Tools 15.2](/legal/windows/hardware/enterprise-wdk-license-2017) |
-| Windows 10, version 1703 | [EWDK for Windows 10, version 1703](/legal/windows/hardware/enterprise-wdk-license-2015) |
+Table below indicates which Visual Studio version is required for the different releases of the WDK.
 
 > [!NOTE]
 > Information the user should notice even if skimmingStarting in Windows 10 version 1709, the EWDK is ISO-based. To get started, download and mount the ISO, and then run **LaunchBuildEnv**.
