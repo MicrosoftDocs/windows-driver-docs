@@ -1,10 +1,13 @@
 ---
 title: AutoPlay for UWP Device Apps
 description: This topic describes how to use the Device Metadata Authoring Wizard to enable AutoPlay. It also describes how to handle AutoPlay activations in your app.
-ms.date: 03/17/2023
+ms.date: 06/24/2025
 ---
 
 # AutoPlay for UWP device apps
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 Device manufacturers can specify their UWP device app as an AutoPlay handler for their device. They can also let other UWP apps act as AutoPlay handlers for their device. This topic describes how to use the Device Metadata Authoring Wizard to enable AutoPlay. It also describes how to handle AutoPlay activations in your app. For more info about device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
@@ -16,9 +19,7 @@ Device manufacturers can specify their UWP device app as an AutoPlay handler for
 Depending on the version of your app, you can enable AutoPlay in these ways:
 
 - Only your UWP device app can handle AutoPlay activation for your device (supported in Windows 8, Windows 8.1).
-
 - Other UWP apps can handle AutoPlay activation for your device (supported in Windows 8.1 only).
-
 - Your UWP device app and other UWP apps can handle AutoPlay activation for your device (supported in Windows 8.1 only).
 
 This example shows an AutoPlay dialog for an app named **Contoso Dashboard** that has registered as the AutoPlay handler for the **Contoso Pedometer** device:
@@ -96,9 +97,9 @@ To register your app as an AutoPlay handler for your device, you need to specify
 
 1. Open your app's project in Microsoft Visual Studio.
 
-2. In **Solution Explorer**, right-click the **Package.appxmanifest** file and select **View Code**. This will display the app package manifest in the XML (Text) Editor.
+1. In **Solution Explorer**, right-click the **Package.appxmanifest** file and select **View Code**. This will display the app package manifest in the XML (Text) Editor.
 
-3. In the `Application` element, below the `VisualElements` element, paste the following `Extensions` element into your package manifest file.
+1. In the `Application` element, below the `VisualElements` element, paste the following `Extensions` element into your package manifest file.
 
     ```xml
           <Extensions>
@@ -113,7 +114,7 @@ To register your app as an AutoPlay handler for your device, you need to specify
           </Extensions>
     ```
 
-4. Replace the AutoPlay values from this example with the actual values for your app:
+1. Replace the AutoPlay values from this example with the actual values for your app:
 
     - `Verb`: This is the identifier for the AutoPlay activation. Your app will use it to determine if the activation came from your device. If your app was specified as the default AutoPlay handler for your device, this value should match the **Verb** that you specified in the device metadata. If your app was not specified as the default AutoPlay handler for your device, you can use any value for the Verb setting, except for **open**, which is reserved.
   
@@ -155,12 +156,9 @@ In this example, the activation event parameter (eventObj) carries the device's 
 </html>
 ```
 
-## Related topics
+## Related articles
 
-[Meet UWP device apps](meet-uwp-device-apps.md)
-
-[Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md)
-
-[Auto-launching with AutoPlay](/previous-versions/windows/apps/hh452731(v=win.10))
-
-[Launching, resuming, and multitasking](/previous-versions/windows/apps/hh770837(v=win.10))
+- [Meet UWP device apps](meet-uwp-device-apps.md)
+- [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md)
+- [Auto-launching with AutoPlay](/previous-versions/windows/apps/hh452731(v=win.10))
+- [Launching, resuming, and multitasking](/previous-versions/windows/apps/hh770837(v=win.10))

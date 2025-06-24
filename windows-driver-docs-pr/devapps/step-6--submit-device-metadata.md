@@ -1,13 +1,16 @@
 ---
 title: Step 6 Submit Device Metadata for your UWP Device App
 description: This topic describes how to submit device metadata for your UWP device app to the Windows Dev Center hardware dashboard.
-ms.date: 03/17/2023
+ms.date: 06/24/2025
 ms.topic: how-to
 ---
 
 # Step 6: Submit device metadata for your UWP device app
 
-![device app workflow, step 6.](images/6-device-app-workflow.png)
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
+
+:::image type="content" source="images/6-device-app-workflow.png" alt-text="device app workflow, step 6.":::
 
 This topic describes how to submit device metadata for your UWP device app to the Windows Dev Center hardware dashboard.
 
@@ -33,17 +36,17 @@ You can use the **Bulk Package Wizard** to create a bulk submission package that
 
 1. In the **Device Metadata Authoring Wizard**, click **Tools**, and then click **Create a Bulk Package**.
 
-2. In the **Bulk Package Wizard**, for each .devicemanifest-ms file, do the following:
+1. In the **Bulk Package Wizard**, for each .devicemanifest-ms file, do the following:
 
     - Click **Add Metadata Package**.
 
     - Browse to the .devicemanifest-ms file, and then click **OK**.
 
-3. Select the **Preview** check box next to each .devicemanifest-ms file that should be submitted in preview mode.
+1. Select the **Preview** check box next to each .devicemanifest-ms file that should be submitted in preview mode.
 
-4. After you've added all of the .devicemanifest-ms files, click **Next**.
+1. After you've added all of the .devicemanifest-ms files, click **Next**.
 
-5. On the **Specify the device experience information** page, add the following:
+1. On the **Specify the device experience information** page, add the following:
 
     - **Experience name** should be a name that is unique among the other experience names that have been submitted by your company.
 
@@ -55,6 +58,6 @@ You can use the **Bulk Package Wizard** to create a bulk submission package that
 
     The device must be certified before submitting device metadata for your UWP device app.
 
-6. On the **Prepare bulk package for submission** page, click **Launch Signature Wizard** to start the **Digital Signature Wizard**, which is used to digitally sign your bulk submission package.
+1. On the **Prepare bulk package for submission** page, click **Launch Signature Wizard** to start the **Digital Signature Wizard**, which is used to digitally sign your bulk submission package.
 
 For more info on submitting a device metadata package to the hardware dashboard, see [Device Metadata](../dashboard/index.md).

@@ -1,11 +1,14 @@
 ---
 title: Print Support App Association
 description: Provides guidance and examples for associating a print support app with a printer.
-ms.date: 01/10/2025
+ms.date: 06/24/2025
 ms.topic: concept-article
 ---
 
 # Print support app association
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 Follow the guidance in this article to set up and associate a print support app with a printer.
 
@@ -15,13 +18,9 @@ Follow the guidance in this article to set up and associate a print support app 
 This article discusses the following tasks:
 
 - Find a Hardware ID or a Compatible ID for your printer
-
 - Prepare a psa.inf extension INF file
-
 - Install the psa.inf extension INF file on a Windows 11 PC
-
 - PSA association override for enterprise and business customers
-
 - Use PSA with Universal Print
 
 ## Set up printers and find the Hardware ID or Compatible ID
@@ -31,27 +30,16 @@ A print support app (PSA) is associated with a printer queue, using a Hardware I
 To find the Hardware ID and Compatible ID for your printer, follow these steps:
 
 1. Connect the IPP printer to the Windows 11 PC.
-
 1. In the Windows 11 Settings app, select **Bluetooth & devices**.
-
 1. On the **Bluetooth & devices** page, select **Printers & scanners**.
-
 1. Select the IPP printer.
-
 1. On the IPP printer page, select **Hardware properties**.
-
 1. In the printer hardware properties dialog, select the **Settings** tab.
-
 1. Select **Devices and Printers Folder**.
-
 1. Right-click on the IPP printer and select **Properties** from the context menu.
-
 1. On the **Hardware** tab, select **Microsoft IPP Class Driver** in the list of **Device Functions** and then select the **Properties** button.
-
 1. In the **Microsoft IPP Class Driver Properties** dialog, select the **Details** tab.
-
 1. In the **Property** drop-down list, select **Hardware Ids** (or Compatible ID).
-
 1. Copy the Hardware ID string (it starts with "PSA_") in the Value list. You need this for extension INF, or alternatively, the Compatible ID (which doesn't start with "PSA_").
 
 ### Prepare the PSA extension INF file
@@ -61,13 +49,9 @@ A PSA is associated with a printer by using an [extension INF](../install/using-
 The following steps create and test an extension INF file:
 
 1. Copy the psa.inf sample extension INF shown below as a starting point for your INF file.
-
 1. Update **PrinterHardwareId** in psa.inf file with your Hardware ID or Compatible ID.
-
 1. Update the **PackageFamilyName** and **AUMID** (AppUserModeId) for your PSA application.
-
 1. Create a [catalog file](../devtest/inf2cat.md).
-
 1. Sign the psa.cat file sample extension INF.
 
 #### psa.inf sample extension INF file
@@ -116,13 +100,12 @@ PrinterHardwareId2 = "PSA_XeroxAltaLink_B8055C036"
 PrinterHardwareId3 = "PSA_BrotherMFC-J775DWF678"
 ```
 
-> [!Note]
+> [!NOTE]
 > `{A925764B-88E0-426D-AFC5-B39768BE59EB}, 1` is a predefined property used in the PSA association process for a printer using INF.
 
 ### Test install extension INF on Windows 11
 
 1. Import your root certificate to the trusted store, if you used a self-signed certificate to sign the .cat file.
-
 1. Open an elevated command prompt and run the following command:
 
     ```console
@@ -140,11 +123,8 @@ A registry key can be used to override a PSA association from an extension INF. 
 Here's a ranking of how PSA is associated:
 
 1. Printer manufacturers' custom v3/v4 driver is downloaded from Windows Update (no PSA is used)
-
 1. Registry key is used to associate PSA
-
 1. Extension INF is used to associate PSA
-
 1. IPP printing without PSA
 
 We recommend that enterprise customers use Microsoft Endpoint Manager to distribute the registry key. They can use Endpoint Manager to deploy a custom PSA as well.
@@ -160,11 +140,11 @@ The registry key is defined as follows:
 
 The PSA key in **Registry Editor**:
 
-![P S A key in registry editor](images/psa-association-1.png)
+:::image type="content" source="images/psa-association-1.png" alt-text="P S A key in registry editor":::
 
 The **Value name** and **Value data** in the **Edit Multi-String** dialog:
 
-![P S A key in edit multi string dialog](images/psa-association-2.png)
+:::image type="content" source="images/psa-association-2.png" alt-text="P S A key in edit multi string dialog":::
 
 ## Using PSA with Universal Print
 
@@ -176,39 +156,25 @@ You can associate PSA with printers that natively support Universal Print.
 You can find the Hardware ID of a Universal Print printer in the Windows 11 Settings app, similar to a local IPP printer:
 
 1. In the Windows 11 Settings app, select **Bluetooth & devices**.
-
 1. On the **Bluetooth & devices** page, select **Printers & scanners**.
-
 1. Select the Universal Print printer.
-
 1. On the Universal Print printer page, select **Hardware properties**.
-
 1. In the printer hardware properties dialog, select the **Settings** tab.
-
 1. Select **Devices and Printers Folder**.
-
 1. Right-click on your printer and select **Properties** from the context menu.
-
 1. On the **Hardware** tab, select **Universal Print Class Driver** in the list of **Device Functions** and then select the **Properties** button.
-
 1. In the properties dialog, select the **Details** tab.
-
 1. In the **Property** drop-down list, select **Hardware Ids**.
 
 The Hardware ID is the printer-device-id IPP attribute from the printer.
 
-![printer device id I P P attribute from the printer properties dialog](images/psa-association-3.png)
+:::image type="content" source="images/psa-association-3.png" alt-text="printer device id I P P attribute from the printer properties dialog":::
 
 ## Related articles
 
-[End of servicing plan for third-party printer drivers on Windows](../print/end-of-servicing-plan-for-third-party-printer-drivers-on-windows.md)
-
-[*Internet Printing Protocol (IPP) specification*](https://tools.ietf.org/html/rfc8011)
-
-[Print support app design guide](./print-support-app-design-guide.md)
-
-[Windows.Devices.Printers](/uwp/api/windows.devices.printers?view=winrt-insider&preserve-view=true)
-
-[Windows.Graphics.Printing.PrintSupport](/uwp/api/windows.graphics.printing.printsupport?view=winrt-insider&preserve-view=true)
-
-[Windows.Graphics.Printing.Workflow](/uwp/api/windows.graphics.printing.workflow?view=winrt-insider&preserve-view=true)
+- [End of servicing plan for third-party printer drivers on Windows](../print/end-of-servicing-plan-for-third-party-printer-drivers-on-windows.md)
+- [*Internet Printing Protocol (IPP) specification*](https://tools.ietf.org/html/rfc8011)
+- [Print support app design guide](./print-support-app-design-guide.md)
+- [Windows.Devices.Printers](/uwp/api/windows.devices.printers?view=winrt-insider&preserve-view=true)
+- [Windows.Graphics.Printing.PrintSupport](/uwp/api/windows.graphics.printing.printsupport?view=winrt-insider&preserve-view=true)
+- [Windows.Graphics.Printing.Workflow](/uwp/api/windows.graphics.printing.workflow?view=winrt-insider&preserve-view=true)

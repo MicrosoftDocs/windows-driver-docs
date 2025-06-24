@@ -1,14 +1,17 @@
 ---
 title: Device Sync and Update for Store Device Apps in Windows 8.1
 description: In Windows 8.1, your UWP app can use a device background task to synchronize data on your peripheral device.
-ms.date: 03/17/2023
+ms.date: 06/24/2025
 ---
 
 # Device sync and update for Store device apps in Windows 8.1
 
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
+
 In Windows 8.1, your UWP app can use a device background task to synchronize data on your peripheral device. If your app is associated with device metadata, that UWP device app can also use a device background agent to perform device updates, such as firmware updates. Device background agents are subject to policies that ensure user consent and help preserve battery life while devices are being synced and updated.
 
-To perform device sync and update operations, create a device background task that uses the [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger) and [DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger), respectively. To learn how this is done with the [Custom USB device sample](https://github.com/Microsoft/Windows-universal-samples/tree/main/Samples/CustomUsbDeviceAccess), see [Creating a device background task](how-to-create-a-device-background-task.md).
+To perform device sync and update operations, create a device background task that uses the **[DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger)** and **[DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger)**, respectively. To learn how this is done with the [Custom USB device sample](https://github.com/Microsoft/Windows-universal-samples/tree/main/Samples/CustomUsbDeviceAccess), see [Creating a device background task](how-to-create-a-device-background-task.md).
 
 > [!NOTE]
 > Windows Runtime device APIs don't require device metadata. That means your app doesn't need to be a UWP device app to use them. UWP apps can use these APIs to access USB, Human Interface Devices (HID), Bluetooth devices, and more. For more info, see [Integrating devices](/previous-versions/windows/apps/dn263141(v=win.10)).
@@ -19,8 +22,8 @@ When users move your UWP app off-screen, Windows suspends your app in-memory. Th
 
 | Background task trigger | Requires device metadata | Description |
 |--|--|--|
-| [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger) | No | Enables long running sync operations to or from your peripheral device while your app is suspended. Syncing your device in the background requires that your user has approved background syncing by your app. Your device must also be connected to or paired with the PC, with active I/O, and is allowed a maximum of 10 minutes of background activity. More detail on policy enforcement is described later in this topic. |
-| [DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger) | Yes | nables long running device updates, for example settings transfers or firmware updates, while your app is suspended. Updating your device in the background requires user approval each time the background task is used. Unlike the DeviceUseTrigger background task, the DeviceServicingTrigger background task allows for device reboot and disconnect and allows a maximum of 30 minutes of background activity. More detail on policy enforcement is described later in this topic. |
+| **[DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger)** | No | Enables long running sync operations to or from your peripheral device while your app is suspended. Syncing your device in the background requires that your user has approved background syncing by your app. Your device must also be connected to or paired with the PC, with active I/O, and is allowed a maximum of 10 minutes of background activity. More detail on policy enforcement is described later in this topic. |
+| **[DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger)** | Yes | nables long running device updates, for example settings transfers or firmware updates, while your app is suspended. Updating your device in the background requires user approval each time the background task is used. Unlike the DeviceUseTrigger background task, the DeviceServicingTrigger background task allows for device reboot and disconnect and allows a maximum of 30 minutes of background activity. More detail on policy enforcement is described later in this topic. |
 
 DeviceServicingTrigger requires device metadata because the app must be specified as a privileged app in order to perform device update operations.
 
@@ -49,7 +52,7 @@ Device background tasks that use DeviceUseTrigger and DeviceServicingTrigger let
 
 Your app will perform sync and update operations in code that runs as part of a background task. This code is embedded in a Windows Runtime class that implements IBackgroundTask (or in a dedicated JavaScript page for JavaScript apps). To use a device background task, your app must declare it in the app manifest file of a foreground app, like it does for system-triggered background tasks.
 
-In this example of an app package manifest file, **DeviceLibrary.SyncContent** and **DeviceLibrary.UpdateFirmware** are entry points from the foreground app. **DeviceLibrary.SyncContent** is the entry point for the background task that uses the [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger). **DeviceLibrary.UpdateFirmware** is the entry point for the background task that uses the [DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger).
+In this example of an app package manifest file, **DeviceLibrary.SyncContent** and **DeviceLibrary.UpdateFirmware** are entry points from the foreground app. **DeviceLibrary.SyncContent** is the entry point for the background task that uses the **[DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger)**. **DeviceLibrary.UpdateFirmware** is the entry point for the background task that uses the **[DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger)**.
 
 ```xml
 <Extensions>
@@ -107,17 +110,17 @@ A background task that uses DeviceUseTrigger requires a one-time user consent al
 
 In the following example, an app named Tailspin Toys is getting user permission to sync in the background.
 
-![device sync user consent message dialog.](images/devicesyncuserconsent.png)
+:::image type="content" source="images/devicesyncuserconsent.png" alt-text="device sync user consent message dialog.":::
 
 If users change their minds later, they can revoke permissions in Settings.
 
-![device sync permissions setting dialog.](images/devicesyncapppermissions.png)
+:::image type="content" source="images/devicesyncapppermissions.png" alt-text="device sync permissions setting dialog.":::
 
 ### Device update user consent
 
 Unlike those that use DeviceUseTrigger, background tasks that use the DeviceServicingTrigger background task require user consent each time the background task is triggered. And this consent is not stored like it is for DeviceUseTrigger. This is because of the higher-risk operations involved with device firmware updates and the longer amount of time needed for device updates. In addition to obtaining user consent, Windows will provide users with information about device updates , like a warning to keep the device connected throughout the update and ensure that the PC is charged, and the approximate running time of the operation (if your app provides it).
 
-![device update user consent message dialog.](images/deviceupdateuserconsent.png)
+:::image type="content" source="images/deviceupdateuserconsent.png" alt-text="device update user consent message dialog.":::
 
 ## Frequency and foreground restrictions
 
@@ -193,12 +196,9 @@ To cancel a task running in the background from your foreground app, use the Unr
 
 The Unregister method additionally takes a Boolean true or false value to indicate if currently running instances of your background task should be canceled without allowing them to finish. For more info, see the API reference for [BackgroundTaskRegistration.Unregister](/uwp/api/Windows.ApplicationModel.Background.BackgroundTaskRegistration).
 
-## Related topics
+## Related articles
 
-[Creating a device background task](how-to-create-a-device-background-task.md)
-
-[Custom USB device sample](https://github.com/Microsoft/Windows-universal-samples/tree/main/Samples/CustomUsbDeviceAccess)
-
-[Launching, resuming, and multitasking](/previous-versions/windows/apps/hh770837(v=win.10))
-
-[Supporting your app with background tasks](/previous-versions/windows/apps/hh977056(v=win.10))
+- [Creating a device background task](how-to-create-a-device-background-task.md)
+- [Custom USB device sample](https://github.com/Microsoft/Windows-universal-samples/tree/main/Samples/CustomUsbDeviceAccess)
+- [Launching, resuming, and multitasking](/previous-versions/windows/apps/hh770837(v=win.10))
+- [Supporting your app with background tasks](/previous-versions/windows/apps/hh977056(v=win.10))

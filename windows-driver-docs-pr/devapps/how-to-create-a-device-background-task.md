@@ -1,11 +1,14 @@
 ---
 title: Creating a Device Background Task in Windows 8.1
 description: This topic describes how to create a device background task that uses the DeviceUseTrigger or DeviceServicingTrigger.
-ms.date: 03/17/2023
+ms.date: 06/24/2025
 ms.topic: how-to
 ---
 
 # Creating a device background task in Windows 8.1 (UWP device apps)
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 In Windows 8.1, your UWP app can synchronize data on your peripheral device. If your app is associated with device metadata, that UWP device app can also perform device updates, such as firmware updates. This topic describes how to create a device background task that uses the [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger) or [DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger). Device background agents that use these triggers are subject to policies that ensure user consent and help preserve battery life while devices are being synced and updated. For more info about device background tasks, see [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md).
 
@@ -94,12 +97,9 @@ The foreground app in the [Custom USB device sample](https://github.com/Microsof
 
 1. The private `CancelSyncWithDevice` method unregisters and cancels any active device syncs so the device can be reopened by using the [BackgroundTaskRegistration.Unregister](/uwp/api/Windows.ApplicationModel.Background.BackgroundTaskRegistration) method.
 
-## Related topics
+## Related articles
 
-[Custom USB device sample](https://github.com/Microsoft/Windows-universal-samples/tree/main/Samples/CustomUsbDeviceAccess )
-
-[Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md)
-
-[Launching, resuming, and multitasking](/previous-versions/windows/apps/hh770837(v=win.10))
-
-[Supporting your app with background tasks](/previous-versions/windows/apps/hh977056(v=win.10))
+- [Custom USB device sample](https://github.com/Microsoft/Windows-universal-samples/tree/main/Samples/CustomUsbDeviceAccess )
+- [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md)
+- [Launching, resuming, and multitasking](/previous-versions/windows/apps/hh770837(v=win.10))
+- [Supporting your app with background tasks](/previous-versions/windows/apps/hh977056(v=win.10))
