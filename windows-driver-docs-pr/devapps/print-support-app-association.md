@@ -1,7 +1,7 @@
 ---
 title: Print Support App Association
 description: Provides guidance and examples for associating a print support app with a printer.
-ms.date: 06/24/2025
+ms.date: 06/25/2025
 ms.topic: concept-article
 ---
 
@@ -12,8 +12,7 @@ ms.topic: concept-article
 
 Follow the guidance in this article to set up and associate a print support app with a printer.
 
-> [!IMPORTANT]
-> Starting with the release of Windows 11 SDK (22000.1), Print Support Apps (PSA) are the recommended method of developing UWP apps for printers. To develop a Print Support App for your print device, download and install the [Windows 11 SDK (22000.1)](https://go.microsoft.com/fwlink/?linkid=2166460).
+Starting with the release of Windows 11 SDK (22000.1), Print Support Apps (PSA) are the recommended method of developing UWP apps for printers. To develop a Print Support App for your print device, download and install the [Windows 11 SDK (22000.1)](https://go.microsoft.com/fwlink/?linkid=2166460).
 
 This article discusses the following tasks:
 

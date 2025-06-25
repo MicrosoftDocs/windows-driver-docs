@@ -1,7 +1,7 @@
 ---
 title: Device Sync and Update for Store Device Apps in Windows 8.1
 description: Your UWP app can use a device background task to synchronize data on your peripheral device.
-ms.date: 06/24/2025
+ms.date: 06/25/2025
 ---
 
 # Device sync and update for Store device apps in Windows 8.1
@@ -13,8 +13,7 @@ Your UWP app can use a device background task to synchronize data on your periph
 
 To perform device sync and update operations, create a device background task that uses the **[DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger)** and **[DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger)**, respectively. To learn how to create a device background task with the [Custom USB device sample](https://github.com/Microsoft/Windows-universal-samples/tree/main/Samples/CustomUsbDeviceAccess), see [Creating a device background task](how-to-create-a-device-background-task.md).
 
-> [!NOTE]
-> Windows Runtime device APIs don't require device metadata. That means your app doesn't need to be a UWP device app to use them. UWP apps can use these APIs to access USB, Human Interface Devices (HID), Bluetooth devices, and more. For more info, see [Integrating devices](/previous-versions/windows/apps/dn263141(v=win.10)).
+Windows Runtime device APIs don't require device metadata. That means your app doesn't need to be a UWP device app to use them. UWP apps can use these APIs to access USB, Human Interface Devices (HID), Bluetooth devices, and more. For more info, see [Integrating devices](/previous-versions/windows/apps/dn263141(v=win.10)).
 
 ## Device background task overview
 

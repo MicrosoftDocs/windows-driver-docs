@@ -1,7 +1,7 @@
 ---
 title: AutoPlay for UWP Device Apps
 description: This article describes how to use the Device Metadata Authoring Wizard to enable AutoPlay. It also describes how to handle AutoPlay activations in your app.
-ms.date: 06/24/2025
+ms.date: 06/25/2025
 ---
 
 # AutoPlay for UWP device apps
@@ -11,8 +11,7 @@ ms.date: 06/24/2025
 
 Device manufacturers can specify their UWP device app as an AutoPlay handler for their device. They can also let other UWP apps act as AutoPlay handlers for their device. This article describes how to use the Device Metadata Authoring Wizard to enable AutoPlay. It also describes how to handle AutoPlay activations in your app. For more info about device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-> [!NOTE]
-> You don't need to use device metadata for all types of AutoPlay. Without device metadata, AutoPlay lets you provide your app as an option when a user connects a device to a PC. These devices nonvolume devices like a camera or media player, or volume devices like a USB thumb drive, SD card, or DVD. AutoPlay also lets you register your app as an option when users share files between two machines by using Proximity (tapping). But your app can't install automatically without device metadata. For more info about using AutoPlay when device metadata isn't required, see [Auto-launching with AutoPlay](/previous-versions/windows/apps/hh452731(v=win.10)).
+You don't need to use device metadata for all types of AutoPlay. Without device metadata, AutoPlay lets you provide your app as an option when a user connects a device to a PC. These devices nonvolume devices like a camera or media player, or volume devices like a USB thumb drive, SD card, or DVD. AutoPlay also lets you register your app as an option when users share files between two machines by using Proximity (tapping). But your app can't install automatically without device metadata. For more info about using AutoPlay when device metadata isn't required, see [Auto-launching with AutoPlay](/previous-versions/windows/apps/hh452731(v=win.10)).
 
 ## AutoPlay overview
 
