@@ -17,27 +17,27 @@ The table below list previous versions of Windows Driver Kit (WDK) that are no l
 | Windows Version | Build Number | Visual Studio | WDK | Comments |
 | --- | --- | --- | --- | --- |
 | Windows 11 24H2 (Ge) | 26100.3323 | VS 2022 | [WDK](https://go.microsoft.com/fwlink/?linkid=2307500), [EWDK](https://go.microsoft.com/fwlink/?linkid=2303317), [WDK NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.26100.3323) | 2502D (latest) |
-| Windows 11 24H2 (Ge) | 26100.2454 | VS 2022 | Permanently Unavailable | 2411D |
-| Windows 11 24H2 (Ge) | 26100.2161 | VS 2022 | Permanently Unavailable |  |
-| Windows 11 24H2 (Ge) | 26100.1882 | VS 2022 | Permanently Unavailable |  |
-| Windows 11 24H2 (Ge) | 26100.1591 | VS 2022 | Permanently Unavailable |  |
-| Windows 11 24H2 (Ge) | 26100.1 | VS 2022 | Permanently Unavailable |  |
-| Windows 11 23H2 (NI) | 22621.2824 | VS 2022 | Permanently Unavailable |  |
-| Windows 11 22H2 (NI) | 22621.1778 | VS 2022 | Permanently Unavailable |  |
-| Windows 11 22H2 (NI) | 22621.775 | VS 2022 | Permanently Unavailable |  |
-| Windows 11 21H2 (CO0) | 22000.832 | VS 2019 | Permanently Unavailable |  |
-| Windows Server 2022 (FE) | 20348.1 | VS 2019 | Permanently Unavailable |  |
-| Windows 10 2004 (VB) | 19041.685 | VS 2019 | Permanently Unavailable |  |
-| Windows 10 1903 (19H1) | 18362.1 | VS 2019 | Permanently Unavailable |  |
-| Windows 10 1809 (RS5) | 17763.132 | VS 2017 | Permanently Unavailable |  |
-| Windows 10 1803 (RS4) | 17134.12 | VS 2017 | Permanently Unavailable |  |
-| Windows 10 1709 (RS3) | 16299.91 | VS 2017 | Permanently Unavailable |  |
-| Windows 10 1703 (RS2) | 15063.486 | VS 2015 | Permanently Unavailable |  |
-| Windows 10 1607 (RS1) | 14393.795 | VS 2015 | Permanently Unavailable |  |
-| Windows 10 1507 | 1024 | VS 2015 | Permanently Unavailable |  |
-| Windows 8.1 Update | 9600 | VS 2013 | Permanently Unavailable |  |
+| Windows 11 24H2 (Ge) | 26100.2454 | VS 2022 | Removed | 2411D |
+| Windows 11 24H2 (Ge) | 26100.2161 | VS 2022 | Removed |  |
+| Windows 11 24H2 (Ge) | 26100.1882 | VS 2022 | Removed |  |
+| Windows 11 24H2 (Ge) | 26100.1591 | VS 2022 | Removed |  |
+| Windows 11 24H2 (Ge) | 26100.1 | VS 2022 | Removed |  |
+| Windows 11 23H2 (NI) | 22621.2824 | VS 2022 | Removed |  |
+| Windows 11 22H2 (NI) | 22621.1778 | VS 2022 | Removed |  |
+| Windows 11 22H2 (NI) | 22621.775 | VS 2022 | Removed |  |
+| Windows 11 21H2 (CO0) | 22000.832 | VS 2019 | Removed |  |
+| Windows Server 2022 (FE) | 20348.1 | VS 2019 | Removed |  |
+| Windows 10 2004 (VB) | 19041.685 | VS 2019 | Removed |  |
+| Windows 10 1903 (19H1) | 18362.1 | VS 2019 | Removed |  |
+| Windows 10 1809 (RS5) | 17763.132 | VS 2017 | Removed |  |
+| Windows 10 1803 (RS4) | 17134.12 | VS 2017 | Removed |  |
+| Windows 10 1709 (RS3) | 16299.91 | VS 2017 | Removed |  |
+| Windows 10 1703 (RS2) | 15063.486 | VS 2015 | Removed |  |
+| Windows 10 1607 (RS1) | 14393.795 | VS 2015 | Removed |  |
+| Windows 10 1507 | 1024 | VS 2015 | Removed |  |
+| Windows 8.1 Update | 9600 | VS 2013 | Removed |  |
 | Windows 8.1 |  |  |  |  |
-| Windows 8 | 9200 | VS 2012 | Permanently Unavailable |  |
-| Windows 7 | 7600 | VS 2010 | Permanently Unavailable |  |
+| Windows 8 | 9200 | VS 2012 | Removed |  |
+| Windows 7 | 7600 | VS 2010 | Removed |  |
 
 
