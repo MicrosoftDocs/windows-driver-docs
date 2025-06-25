@@ -3,13 +3,16 @@ title: Using the Mobile Broadband Metadata Authoring Wizard
 description: Using the Mobile Broadband Metadata Authoring Wizard
 keywords:
 - Using the Mobile Broadband Metadata Authoring Wizard
-ms.date: 04/20/2017
+ms.date: 06/25/2025
 ms.topic: concept-article
 ---
 
 # Using the Mobile Broadband Metadata Authoring Wizard
 
-This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8.
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
+
+This section describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8.
 
 After you launch the **Mobile Broadband** tool, the **Welcome to the Metadata Authoring Wizard** screen appears. Select one of the following options:
 
