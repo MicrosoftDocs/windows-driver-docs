@@ -10,13 +10,13 @@ ms.date: 06/24/2025
 
 ## Other WDK Downloads
 
-This page contains previous versions of the Windows Driver Kit (WDK) that Microsoft has now unpublished. These kits are no longer maintained or supported. All driver developers should use the latest WDK release for all Windows driver projects.Please fill out the [form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or send us an email on feedback@microsoft.com
+The table below list previous versions of Windows Driver Kit (WDK) that are no longer available for download. These versions have been removed from public access and are no longer maintained or supported. To develop Windows drivers, use the latest version of WDK, which includes the most up-to-date tools, features and securiity updates. If you have questions or feedback, please fill out the [form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or send us an email at wdkfeedback@microsoft.com.
 
 ## WDK Version Decoder
 
 | Windows Version | Build Number | Visual Studio | WDK | Comments |
 | --- | --- | --- | --- | --- |
-| Windows 11 24H2 (Ge) | 26100.3323 | VS 2022 | [WDK](https://go.microsoft.com/fwlink/?linkid=2307500), [EWDK](https://go.microsoft.com/fwlink/?linkid=2303317), [WDK NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.26100.3323) | 2502D |
+| Windows 11 24H2 (Ge) | 26100.3323 | VS 2022 | [WDK](https://go.microsoft.com/fwlink/?linkid=2307500), [EWDK](https://go.microsoft.com/fwlink/?linkid=2303317), [WDK NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.26100.3323) | 2502D (latest) |
 | Windows 11 24H2 (Ge) | 26100.2454 | VS 2022 | Permanently Unavailable | 2411D |
 | Windows 11 24H2 (Ge) | 26100.2161 | VS 2022 | Permanently Unavailable |  |
 | Windows 11 24H2 (Ge) | 26100.1882 | VS 2022 | Permanently Unavailable |  |
