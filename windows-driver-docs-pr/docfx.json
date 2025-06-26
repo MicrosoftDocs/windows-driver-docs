@@ -59,6 +59,7 @@
       "ms.author": "mhopkins",
       "ms.topic": "article",
       "ms.custom": "UpdateFrequency3",
+      "ms.update-cycle": "1095-days",
       "recommendations": true,
       "_op_documentIdPathDepotMapping": {
         "./": {
@@ -252,6 +253,29 @@
         "**/taef/*.md": "UpdateFrequency5",
         "**/wdtf/*.md": "UpdateFrequency5",
         "**/whea/*.md": "UpdateFrequency5"
+      },
+      "ms.update-cycle": {
+        "**/audio/*.md": "1095-days",
+        "**/battery/*.md": "1825-days",
+        "**/biometric/*.md": "1825-days",
+        "**/debugger/*.md": "1095-days",
+        "**/debuggercmds/*.md": "1095-days",
+        "**/devtest/*.md": "1825-days",
+        "**/driversecurity/*.md": "1095-days",
+        "**/gpio/*.md": "1825-days",
+        "**/mobilebroadband/*.md": "1825-days",
+        "**/network/*.md": "1825-days",
+        "**/nfc/*.md": "1825-days",
+        "**/pci/*.md": "1825-days",
+        "**/portable/*.md": "1825-days",
+        "**/powermeter/*.md": "1825-days",
+        "**/sd/*.md": "1825-days",
+        "**/serports/*.md": "1825-days",
+        "**/spb.md": "1825-days",
+        "**/storage/*.md": "1825-days",
+        "**/taef/*.md": "1825-days",
+        "**/wdtf/*.md": "1825-days",
+        "**/whea/*.md": "1825-days"
       },
       "adobe-target": {
         "**/*/*.md": true

@@ -2,6 +2,7 @@
 title: MB Analyzing Logs
 description: MB Analyzing Logs
 ms.date: 03/01/2021
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
 ---
 

@@ -4,6 +4,7 @@ description: MBIMEx 3.0 supports the first phase of features for 5G systems with
 keywords:
 - MBIMEx 3.0 – 5G SA Phase 1 support
 ms.date: 05/04/2022
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
 ---
 

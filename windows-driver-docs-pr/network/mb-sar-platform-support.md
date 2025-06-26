@@ -2,6 +2,7 @@
 title: MB SAR Platform Support
 description: MB SAR Platform Support
 ms.date: 03/01/2021
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
 ---
 
