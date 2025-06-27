@@ -6,107 +6,107 @@ keywords:
 - WDK
 - drivers
 - known issues
-ms.date: 06/16/2025
+ms.date: 06/27/2025
 ms.topic: troubleshooting-known-issue
 ---
 
 # Windows Driver Kit (WDK) known issues
 
-This topic details known issues concerning the WDK.
+This article details known issues concerning the WDK.
 
 ## WDK for Windows 11, version 24H2
 
 ## x86 Kernel Mode Driver Development
 
-Starting with Windows 11, version 24H2, the WDK no longer supports x86 kernel-mode driver development. If you have a business need to develop x86 kernel-mode drivers, please use [WDK Version 23H2](https://go.microsoft.com/fwlink/?linkid=2249371)
+Starting with Windows 11, version 24H2, the WDK no longer supports x86 kernel-mode driver development. If you have a business need to develop x86 kernel-mode drivers, use [WDK Version 23H2](https://go.microsoft.com/fwlink/?linkid=2249371)
 
 ### Restart after provisioning
 
-After provisioning and deployment, the target machine fails to restart after the deployment steps. 
+After provisioning and deployment, the target machine fails to restart after the deployment steps.
 
 ### ARM64 WDK Driver SxS Support
 
-When both the Windows 11, version 24H2 kit and the Windows 11, version 22H2 kit are installed on an ARM64 machine, building a KMDF driver for ARM64 with **TargetPlatformVersion** set to Windows 11, version 22H2 fails with `WdfDriverEntry.lib(stub.obj) : error LNK2001: unresolved external symbol`.
+When both the Windows 11, version 24H2 kit and the Windows 11, version 22H2 kit are installed on an ARM64 machine, building a Kernel Mode Driver Framework (KMDF) driver for ARM64 with **TargetPlatformVersion** set to Windows 11, version 22H2 fails with `WdfDriverEntry.lib(stub.obj) : error LNK2001: unresolved external symbol`.
 
 ### WDK extension fails to install
 
-If you are using Visual Studio version 17.11.0 or later, uncheck the install extension checkbox in the WDK installation.
+If you're using Visual Studio version 17.11.0 or later, uncheck the install extension checkbox in the WDK installation.
 
 ## WDK for Windows 11, version 22H2
 
 ### Service error at startup
 
-If you installed the original Windows 11, version 22H2 WDK between May and August 2022 (version 10.0.22621.1), you may see the following error message when you start Visual Studio with the WDK.
+If you installed the original Windows 11, version 22H2 WDK between May and August 2022 (version 10.0.22621.1), you might see the following error message when you start Visual Studio with the WDK.
 
-The `Microsoft.Windows.Tools.WinIDE.Debugger.DebuggerPackage, DebuggerPackage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null` package did not load correctly.
+The `Microsoft.Windows.Tools.WinIDE.Debugger.DebuggerPackage, DebuggerPackage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null` package didn't load correctly.
 
 This issue is fixed in WDK version 10.0.22621.382. You can uninstall the WDK and then reinstall the latest WDK using the instructions in [Download the Windows Driver Kit](./download-the-wdk.md).
 
 ### Debugger within Visual Studio doesn't work
 
-It is not possible to debug drivers within the Visual Studio interface when using Visual Studio 2022 version 17.2.0 and 17.3 with the Windows 11, version 22H2 WDK (10.0.22621.382). To work around the problem, do one of the following: update Visual Studio to 17.4.1 or later, debug with WinDbg, or use a version of Visual Studio earlier than 17.2.0. The following error message is related to this issue:
+It isn't possible to debug drivers within the Visual Studio interface when using Visual Studio 2022 version 17.2.0 and 17.3 with the Windows 11, version 22H2 WDK (10.0.22621.382). To work around the problem, do one of the following actions: update Visual Studio to 17.4.1 or later, debug with WinDbg, or use a version of Visual Studio earlier than 17.2.0. The following error message is related to this issue:
 
 QueryBuildManagerBusyEx must be called on the UI.
 
-### WDF redistributable co-installers don't work
+### Windows Driver Framework (WDF) redistributable co-installers don't work
 
-Starting with this release, WDF redistributable co-installers are no longer supported. Specifically, on a computer that has both the Windows 11, version 22H2 WDK and an older WDK, when building a WDF 1.11 driver, msbuild fails because it cannot find the WDF coinstaller.
+WDF redistributable co-installers are no longer supported. This causes problems on computers that have both the Windows 11, version 22H2 WDK and an older WDK installed. When you try to build a WDF 1.11 driver on such a system, msbuild fails. The build fails because msbuild can't find the WDF co-installer.
 
-To fix this problem, before installing Windows 11, version 22H2 WDK, back up the folder `\Program files (x86)\windows kit\10\redist\wdf` and restore it afterwards. Alternatively, if you have already installed the Windows 11, version 22H2 WDK, install the MSI file at [WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) on a separate computer and copy the `redist` folder to the above folder. For more information, see [Redistributable Framework Components](./wdf/installation-components-for-kmdf-drivers.md).
+To fix this problem, before installing Windows 11, version 22H2 WDK, back up the folder `\Program files (x86)\windows kit\10\redist\wdf` and restore it afterwards. Alternatively, if you installed the Windows 11, version 22H2 WDK, install the MSI file at [WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) on a separate computer and copy the `redist` folder to the `\Program files (x86)\windows kit\10\redist\wdf` folder. For more information, see [Redistributable Framework Components](./wdf/installation-components-for-kmdf-drivers.md).
 
 ## WDK for Windows 10, version 2004
 
 ### Issue in ExAllocatePoolZero, ExAllocatePoolQuotaZero, and ExAllocatePoolPriorityZero functions FIXED
 
-In May 2020, [OSR](https://www.osr.com/) discovered that the new down-level support for automatic zeroing of pool allocations had an issue that could lead to an allocation not getting zero-initialized on systems running Windows 10, version 1909. This has now been fixed with a security refresh of the WDK for Windows 10, version 2004 and the Enterprise WDK (EWDK) for Windows 10, version 2004 on Dec 16th. Microsoft took advantage of the security refresh and updated the EWDK to include the Visual Studio build tools 16.7. Microsoft recommends all driver developers uninstall the original SDK and WDK (version 2004) and install the refresh SDK and WDK or EWDK.
+In May 2020, [OSR](https://www.osr.com/) discovered an issue with the new down-level support for automatic zeroing of pool allocations. The issue could cause an allocation to not get zero-initialized on systems running Windows 10, version 1909. This was fixed with a security refresh of the WDK for Windows 10, version 2004 and the Enterprise WDK (EWDK) for Windows 10, version 2004 on Dec 16. Microsoft took advantage of the security refresh and updated the EWDK to include the Visual Studio build tools 16.7. Microsoft recommends all driver developers uninstall the original SDK and WDK (version 2004) and install the refresh SDK and WDK or EWDK.
 
 To ensure there was a complete security solution in place, an OS fix was released for Windows 10, version 1909 in November, so if there was a driver created with the security issue the OS would be protected from it.
 
-In addition to downloading the updated WDK/EWDK, Microsoft recommends that all drivers switch all kernel allocations to use the new pool zeroing DDIs which return zeroed memory by default. This will increase driver security and reliability. In order to help with this transition, Microsoft has created a Static Driver Verifier rule which is available in preview Windows 10 WDK versions 20236 and above. The rule will identify all instances in a driver’s source code where the old pool allocation DDIs are being used and will recommend replacing them with the new, safer equivalent DDI. The rule is applicable to WDM, WDF and NDIS based drivers.
+In addition to downloading the updated WDK/EWDK, Microsoft recommends that all drivers switch all kernel allocations to use the new pool zeroing DDIs, which return zeroed memory by default. This increases driver security and reliability. In order to help with this transition, Microsoft created a Static Driver Verifier rule, which is available in preview Windows 10 WDK versions 20236 and above. The rule identifies all instances in a driver's source code where the old pool allocation DDIs are being used and recommends replacing them with the new, safer equivalent DDI. The rule is applicable to WDM, WDF, and NDIS based drivers.
 
 ### Installing WDK no longer enables Spectre mitigations for all C++ projects as seen in WDK 1903
 
-While the WDK install will enable Spectre mitigation by default for all drivers, it no longer enables them for all C++ projects.
+While the WDK install enables Spectre mitigation by default for all drivers, it no longer enables them for all C++ projects.
 
-### Error ‘A WDK corresponding to target ’10.0.19041.0’ was not found.’
+### Error 'A WDK corresponding to target '10.0.19041.0' wasn't found.'
 
-When selecting [Windows SDK Version] to '10.0 (latest installed version)' with WDK 10.0.19041.0 causes the "A WDK corresponding to target version '10.0.19041.0' was not found" error even if the SDK version is installed.
+When selecting [Windows SDK Version] to '10.0 (latest installed version)' with WDK 10.0.19041.0 causes the "A WDK corresponding to target version '10.0.19041.0' wasn't found" error even if the SDK version is installed.
 
-**Workaround:** In the properties page for the driver project (Configuration Properties >General) set Windows SDK Version to $(LatestTargetPlatformVersion). If this option is not available to select then select the option **inherit from parent or project default**.
+**Workaround:** In the properties page for the driver project (Configuration Properties >General) set Windows SDK Version to $(LatestTargetPlatformVersion). If this option isn't available to select then select the option **inherit from parent or project default**.
 
 ### EWDK and SDV running on Server have .NET requirements
 
-Running Static Driver Verifier from the EWDK requires .Net Framework 4.7.2. Depending on the version of Windows on your system, .NET may be installed, may be installed but need to be enabled, or may not be installed. For more information about what version of .NET is installed or the state of .NET installation please review [.NET Framework versions and dependencies](/dotnet/framework/migration-guide/versions-and-dependencies).
+Running Static Driver Verifier from the EWDK requires .NET Framework 4.7.2. Depending on the version of Windows on your system, .NET might be installed, might be installed but need to be enabled, or might not be installed. For more information about what version of .NET is installed, or the state of .NET installation, review [.NET Framework versions and dependencies](/dotnet/framework/migration-guide/versions-and-dependencies).
 
 ### DVL generation fails with System.IO.FileNotFoundException
 
-When attempting to create a Driver Verification Log (DVL), the following error will be presented:
+When attempting to create a Driver Verification Log (DVL), the following error is presented:
 
 ```console
-Unhandled Exception: System.IO.FileNotFoundException: 
-Could not load file or assembly 
-'System.Runtime, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' 
-or one of its dependencies. 
+Unhandled Exception: System.IO.FileNotFoundException.
+Could not load file or assembl.
+'System.Runtime, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
+or one of its dependencies.
 The system cannot find the file specified.
 ```
 
-This can occur in both the command-line and GUI environments.  This issue is resolved in a future version of the WDK and can be seen in the [Windows Insider Preview WDK](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK). Unfortunately, no workaround exists for the current version.
+This issue can occur in both the command-line and GUI environments. This issue is resolved in a future version of the WDK and can be seen in the [Windows Insider Preview WDK](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK). Unfortunately, no workaround exists for the current version.
 
-### SDV fails in the EWDK if VS is not installed
+### SDV fails in the EWDK if VS isn't installed
 
-SDV has a dependency on VCRUNTIME140D.dll as part of Visual Studio.  As such, running the EWDK on a machine without VS installed will fail.  Install Visual Studio on the machine to work around this issue.
+SDV has a dependency on VCRUNTIME140D.dll as part of Visual Studio. As such, running the EWDK on a machine without VS installed fails. Install Visual Studio on the machine to work around this issue.
 
-### Driver Verifier does not get enabled/disabled when using WDK test explorer
+### Driver Verifier doesn't get enabled/disabled when using WDK test explorer
 
-Driver Verifier does not get enabled/disabled when Device Fundamental tests are run using the WDK Test Explorer.
+Driver Verifier doesn't get enabled/disabled when Device Fundamental tests are run using the WDK Test Explorer.
 
-**Workaround:** On the client machine manually enable/disable driver verifier per these instructions.
+**Workaround:** On the client machine, manually enable/disable driver verifier per these instructions.
 
 ### WDK Side by Side installations of Windows 10, version 2004 and WDK Windows 10, version 1903 or version 1803
 
-With both versions of kits installed on the same PC the ‘Deploy driver’ feature won’t work for older version.
+With both versions of kits installed on the same PC, the **Deploy driver** feature doesn't work for the older version.
 
-**Workaround:** Use 1803 on a separate machine if Deploy driver feature is needed.
+**Workaround:** Use 1803 on a separate machine if the **Deploy driver** feature is needed.
 
 ### Windows Device Testing Framework (WDTF) tests now only run on systems with matching Windows 10 versions as the WDK
 
@@ -118,7 +118,7 @@ The WDTF tests in WDK for Windows 10, version 1803 can be run on previous Window
 
 ### APIValidator
 
-On an x86 arch machine APIValidator is unable to run against x64 binaries. If building x64 drivers on an x86 machine APIValidator should be turned off.
+On an x86 arch machine, APIValidator is unable to run against x64 binaries. If building x64 drivers on an x86 machine, APIValidator should be turned off.
 
 **Workaround:**
 
@@ -128,25 +128,25 @@ On an x86 arch machine APIValidator is unable to run against x64 binaries. If bu
 
 ### WDK running on Windows 7 systems requires KB 3033929
 
-You must install Microsoft Security Advisory 3033929 (KB3033929) prior to installing the WDK on systems running Windows 7.  KB3033929 can be downloaded from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=46148).
+You must install Microsoft Security Advisory 3033929 (KB3033929) before installing the WDK on systems running Windows 7. KB3033929 can be downloaded from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=46148).
 
 ### Installing the WDK generates an error from Visual Studio that the add-in component is already installed
 
-This error message can be seen if the WDK was uninstalled but the WDK drivers extension for Visual Studio was not uninstalled.
+This error message can be seen if the WDK was uninstalled but the WDK drivers extension for Visual Studio wasn't uninstalled.
 
-**Resolution:** In Visual Studio, go to the **Extension** dropdown menu, choose **Manage Extensions**, select the **Windows Driver Kit**, and then click **Uninstall**.
+**Resolution:** In Visual Studio, go to the **Extension** dropdown menu, choose **Manage Extensions**, select the **Windows Driver Kit**, and then select **Uninstall**.
 
 ## FAQ
 
 ### How do I tell if the WDK or EWDK versions I have contains the fix for the zeroing of pool allocations?
 
-In **System Settings** go to **Add or Remove programs**, search for **Windows Driver Kit** and note the version. The original WDK for Windows 10, version 2004 has a version of 10.0.19041.1, the refreshed WDK version is 10.0.19041.685
-For the EWDK, once the EWDK environment is launched, look at the title of the command window. The refreshed version will contain **vb_release_svc_prod1.19041.685**. Additionally, when looking at the environment variables, the **BuildLab** variable should show **vb_release_svc_prod1.19041.685**.  
+In **System Settings** go to **Add or Remove programs**, search for **Windows Driver Kit** and note the version. The original WDK for Windows 10, version 2004 has a version of 10.0.19041.1. The refreshed WDK version is 10.0.19041.685
+For the EWDK, once the EWDK environment is launched, look at the title of the command window. The refreshed version contains **vb_release_svc_prod1.19041.685**. Additionally, when looking at the environment variables, the **BuildLab** variable should show **vb_release_svc_prod1.19041.685**.
 
-### The Windows Software Development Kit (SDK) was also refreshed, is this needed as well?
+### The Windows Software Development Kit (SDK) was also refreshed, is this needed?
 
-No, however the refreshed Windows Software Development Kit (SDK) contains a fix for onecore.lib that may be nice to have. Also, it’s generally a good idea to keep the SDK and WDK aligned.
+No, however the refreshed Windows Software Development Kit (SDK) contains a fix for onecore.lib that might be nice to have. Also, it's generally a good idea to keep the SDK and WDK aligned.
 
 ### If I already have the WDK for Windows 10, version 2004 installed, do I need to uninstall it before installing the refreshed version?
 
-It is highly recommended that if you have the original 2004 SDK and WDK that these be uninstalled and the security refresh SDK and WDK be installed. That said if the refreshed WDK is installed on top of the original WDK the refreshed version will overwrite the original. Note: In this scenario “Add or remove programs”, both versions will be listed.
+We recommend that if you have the original 2004 SDK and WDK that they be uninstalled and the security refresh SDK and WDK be installed. That said if the refreshed WDK is installed on top of the original WDK the refreshed version overwrites the original. Note: In this scenario "Add or remove programs", both versions are listed.
