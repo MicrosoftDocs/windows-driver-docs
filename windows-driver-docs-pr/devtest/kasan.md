@@ -32,6 +32,8 @@ KASAN is supported only on x64.
    reg add "HKLM\System\CurrentControlSet\Control\Session Manager\Kernel" /v KasanEnabled /t REG_DWORD /d 1
    ```
 
+   This instructs the Windows kernel to prepare for and accept loading KASAN-instrumented drivers. Not setting this registry key causes the Windows kernel to refuse loading KASAN-instrumented drivers.
+
 1. Reboot your target system for the change to take effect.
 
 1. Recompile your kernel driver with KASAN instrumentation enabled by passing a new flag to the MSVC compiler. Use either of the following methods:
