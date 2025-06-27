@@ -81,7 +81,7 @@ Starting with version 17.11.0, the WDK VSIX is included as an individual compone
 
 As an alternative to downloading Visual Studio, the SDK, and the WDK, you can download the EWDK, which is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.
 
-The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.11.9 and MSVC toolset v14.41
+The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.11.4 and MSVC toolset v14.41
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
