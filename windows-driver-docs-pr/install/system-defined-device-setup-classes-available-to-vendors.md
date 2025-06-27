@@ -1,13 +1,13 @@
 ---
 title: System-Defined Device Setup Classes Available to Vendors
-description: Use the following list to select the right predefined values to use for the `Class` and `ClassGuid` entries in the [Version Section](inf-version-section.md) of the driver's INF file.
-ms.date: 09/10/2024
+description: Use the following list to select the right predefined values to use for the Class and ClassGuid entries in the Version section of the driver's setup information (INF) file.
+ms.date: 06/12/2025
 ms.topic: concept-article
 ---
 
 # System-defined device setup classes available to vendors
 
-Use the following list to select the right predefined values to use for the **Class** and **ClassGuid** entries in the [Version Section](inf-version-section.md) of the driver's INF file.
+Use the following list to select the right predefined values to use for the **Class** and **ClassGuid** entries in the [Version section](inf-version-section.md) of the driver's setup information (INF) file.
 
 > [!NOTE]
 > If you're looking for info on reserved classes and GUIDs, see [System-Defined Device Setup Classes Reserved for System Use](system-defined-device-setup-classes-reserved-for-system-use.md).
@@ -21,23 +21,23 @@ Unless otherwise noted, you can use entries in the following list to install dev
 
 ## Device categories and class values
 
-The following table shows the predefined values to use for the **Class** and **ClassGuid** entries in the [Version Section](inf-version-section.md) of the driver's INF file.
+The following table shows the predefined values to use for the **Class** and **ClassGuid** entries in the [Version section](inf-version-section.md) of the driver's INF file.
 
 | Device category | Class | Class GUID | Notes |
 |--|--|--|--|
 | **Audio Processing Objects (APOs)** | AudioProcessingObject | 5989fce8-9cd0-467d-8a6a-5419e31529d4 | Includes Audio processing objects (APOs). For more info, see [Windows Audio Processing Objects](../audio/windows-audio-processing-objects.md). |
 | **Battery Devices** | Battery | 72631e54-78a4-11d0-bcf7-00aa00b7b32a | Includes battery devices and UPS devices. |
-| **Biometric Device** | Biometric | 53D29EF7-377C-4D14-864B-EB3A85769359 | (Windows Server 2003 and later versions of Windows) Includes all biometric-based personal identification devices. |
-| **Bluetooth Devices** | Bluetooth | e0cbf06c-cd8b-4647-bb8a-263b43f0f974 | (Windows XP SP1 and later versions of Windows) Includes all Bluetooth devices. |
-| **Camera Device** | Camera | ca3e7ab9-b4c3-4ae6-8251-579ef933890f | (Windows 10 version 1709 and later versions of Windows) Includes universal camera drivers. |
+| **Biometric Device** | Biometric | 53D29EF7-377C-4D14-864B-EB3A85769359 | (Windows Server 2003 and later versions) Includes all biometric-based personal identification devices. |
+| **Bluetooth Devices** | Bluetooth | e0cbf06c-cd8b-4647-bb8a-263b43f0f974 | (Windows XP SP1 and later versions) Includes all Bluetooth devices. |
+| **Camera Device** | Camera | ca3e7ab9-b4c3-4ae6-8251-579ef933890f | (Windows 10 version 1709 and later versions) Includes universal camera drivers. |
 | **CD-ROM Drives** | CDROM | 4d36e965-e325-11ce-bfc1-08002be10318 | Includes CD-ROM drives, including SCSI CD-ROM drives. By default, the system's CD-ROM class installer also installs a system-supplied CD audio driver and CD-ROM changer driver as Plug and Play filters. |
 | **Disk Drives** | DiskDrive | 4d36e967-e325-11ce-bfc1-08002be10318 | Includes hard disk drives. See also the HDC and SCSIAdapter classes. |
 | **Display Adapters** | Display | 4d36e968-e325-11ce-bfc1-08002be10318 | Includes video adapters. Drivers for this class include display drivers and video miniport drivers. |
-| **Extension INF** | Extension | e2f84ce7-8efa-411c-aa69-97454ca4cb57 | (Windows 10 and later versions of Windows) Includes all devices requiring customizations. For more information, see [Using an Extension INF File](./using-an-extension-inf-file.md). |
+| **Extension INF** | Extension | e2f84ce7-8efa-411c-aa69-97454ca4cb57 | (Windows 10 and later versions) Includes all devices requiring customizations. For more information, see [Using an Extension INF File](./using-an-extension-inf-file.md). |
 | **Floppy Disk Controllers** | FDC | 4d36e969-e325-11ce-bfc1-08002be10318 | Includes floppy disk drive controllers. |
 | **Floppy Disk Drives** | FloppyDisk | 4d36e980-e325-11ce-bfc1-08002be10318 | Includes floppy disk drives. |
 | **Hard Disk Controllers** | HDC | 4d36e96a-e325-11ce-bfc1-08002be10318 | Includes hard disk controllers, including ATA/ATAPI controllers but not SCSI and RAID disk controllers. |
-| **Human Interface Devices (HID)** | HIDClass | 745a17a0-74d3-11d0-b6fe-00a0c90f57da | Includes interactive input devices that are operated by the system-supplied [HID class driver](../hid/hid-architecture.md). This includes USB devices that comply with the [USB HID Standard](../hid/hid-over-usb.md) and non-USB devices that use a HID minidriver. For more information, see [HIDClass Device Setup Class](../hid/minidriver-operations.md). See also the Keyboard or Mouse classes. |
+| **Human Interface Devices (HID)** | HIDClass | 745a17a0-74d3-11d0-b6fe-00a0c90f57da | Includes interactive input devices that are operated by the system-supplied [HID class driver](../hid/hid-architecture.md). Includes USB devices that comply with the [USB HID Standard](../hid/hid-over-usb.md) and non-USB devices that use a HID minidriver. For more information, see [HIDClass Device Setup Class](../hid/minidriver-operations.md). See also the Keyboard or Mouse classes. |
 | **IEEE 1284.4 Devices** | Dot4 | 48721b56-6795-11d2-b1a8-0080c72e74a2 | Includes devices that control the operation of multifunction IEEE 1284.4 peripheral devices. |
 | **IEEE 1284.4 Print Functions** | Dot4Print | 49ce6ac8-6f86-11d2-b1e5-0080c72e74a2 | Includes Dot4 print functions. A Dot4 print function is a function on a Dot4 device and has a single child device, which is a member of the Printer device setup class. |
 | **IEEE 1394 Devices That Support the 61883 Protocol** | 61883 | 7ebefbc0-3200-11d2-b4c2-00a0C9697d07 | Includes IEEE 1394 devices that support the IEC-61883 protocol device class. The 61883 component includes the *61883.sys* protocol driver that transmits various audio and video data streams over the 1394 bus. These currently include standard/high/low quality DV, MPEG2, DSS, and Audio. The IEC-61883 specifications define these data streams. |
@@ -50,7 +50,7 @@ The following table shows the predefined values to use for the **Class** and **C
 | **Media Changers** | MediumChanger | ce5939ae-ebde-11d0-b181-0000f8753ec4 | Includes SCSI media changer devices. |
 | **Memory Technology Driver** | MTD | 4d36e970-e325-11ce-bfc1-08002be10318 | Includes memory devices, such as flash memory cards. |
 | **Modem** | Modem | 4d36e96d-e325-11ce-bfc1-08002be10318 | Includes [modem devices](/previous-versions/windows/hardware/modem/ff542476(v=vs.85)). An INF file for a device of this class specifies the features and configuration of the device and stores this information in the registry. An INF file for a device of this class can also be used to install device drivers for a *controllerless modem* or a *software modem*. These devices split the functionality between the modem device and the device driver. For more information about modem INF files and Microsoft Windows Driver Model (WDM) modem devices, see [Overview of Modem INF Files](/previous-versions/windows/hardware/modem/ff542559(v=vs.85)) and [Adding WDM Modem Support](/previous-versions/windows/hardware/modem/ff541218(v=vs.85)). |
-| **Monitor** | Monitor | 4d36e96e-e325-11ce-bfc1-08002be10318 | Includes display monitors. An INF for a device of this class installs no device drivers, but instead specifies the features of a particular monitor to be stored in the registry for use by drivers of video adapters. (Monitors are enumerated as the child devices of display adapters.)
+| **Monitor** | Monitor | 4d36e96e-e325-11ce-bfc1-08002be10318 | Includes display monitors. An INF for a device of this class installs no device drivers, but instead specifies the features of a particular monitor to be stored in the registry for use by drivers of video adapters. (Monitors are enumerated as the child devices of display adapters.) |
 | **Mouse** | Mouse | 4d36e96f-e325-11ce-bfc1-08002be10318 | Includes all mouse devices and other kinds of pointing devices, such as trackballs. That is, this class must also be specified in the (secondary) INF for an enumerated child HID mouse device. |
 | **Multifunction Devices** | Multifunction | 4d36e971-e325-11ce-bfc1-08002be10318 | Includes combo cards, such as a PCMCIA modem and network card adapter. The driver for such a Plug and Play multifunction device is installed under this class and enumerates the modem and network card separately as its child devices. |
 | **Multimedia** | Media | 4d36e96c-e325-11ce-bfc1-08002be10318 | Includes Audio and DVD multimedia devices, joystick ports, and full-motion video capture devices. |
@@ -65,14 +65,15 @@ The following table shows the predefined values to use for the **Class** and **C
 | **Printers** | Printer | 4d36e979-e325-11ce-bfc1-08002be10318 | Includes printers. |
 | **Printers, Bus-specific class drivers** | PNPPrinters | 4658ee7e-f050-11d1-b6bd-00c04fa372a7 | Includes SCSI/1394-enumerated printers. Drivers for this class provide printer communication for a specific bus. |
 | **Processors** | Processor | 50127dc3-0f36-415e-a6cc-4cb3be910b65 | Includes processor types. |
-| **SCSI and RAID Controllers** | SCSIAdapter | 4d36e97b-e325-11ce-bfc1-08002be10318 | Includes SCSI HBAs (Host Bus Adapters) and disk-array controllers. |
+| **SCSI, RAID, and NVMe Controllers** | SCSIAdapter | 4d36e97b-e325-11ce-bfc1-08002be10318 | Includes SCSI Host Bus Adapters (HBAs), disk-array, and NVMe controllers. |
 | **Security Devices** | Securitydevices | d94ee5d8-d189-4994-83d2-f68d7d41b0e6 | (Windows 8.1, Windows 10) Includes [Trusted Platform Module](/windows/security/information-protection/tpm/trusted-platform-module-top-node) chips. A TPM is a secure cryptoprocessor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. Any new manufactured device must implement and enable TPM 2.0 by default. For more information, see [TPM Recommendations](/windows/security/information-protection/tpm/tpm-recommendations). |
-| **Sensors** | Sensor | 5175d334-c371-4806-b3ba-71fd53c9258d | (Windows 7 and later versions of Windows) Includes sensor and location devices, such as GPS devices. |
+| **Sensors** | Sensor | 5175d334-c371-4806-b3ba-71fd53c9258d | (Windows 7 and later versions) Includes sensor and location devices, such as GPS devices. |
 | **Smart Card Readers** | SmartCardReader | 50dd5230-ba8a-11d1-bf5d-0000f805f530 | Includes smart card readers. |
 | **Software Component** | SoftwareComponent | 5c4c3332-344d-483c-8739-259e934c9cc8 | (Windows 10 version 1703 and later versions of Windows) Includes virtual child device to encapsulate software components. For more information, see [Adding Software Components with an INF file](./using-a-component-inf-file.md). |
+| **Storage Disks** | NvmeDisk | 75416e63-5912-4dfa-ae8f-3efaccaffb14 | Storage disks utilizing a multi-queue storage stack. |
 | **Storage Volumes** | Volume | 71a27cdd-812a-11d0-bec7-08002be2092f | Includes storage volumes as defined by the system-supplied logical volume manager and class drivers that create device objects to represent storage volumes, such as the system disk class driver. |
 | **System Devices** | System | 4d36e97d-e325-11ce-bfc1-08002be10318 | Includes HALs, system buses, system bridges, the system ACPI driver, and the system volume manager driver. |
 | **Tape Drives** | TapeDrive | 6d807884-7d21-11cf-801c-08002be10318 | Includes tape drives, including all tape miniclass drivers. |
 | **USB Device** | USBDevice | 88BAE032-5A81-49f0-BC3D-A4FF138216D6 | USBDevice includes all USB devices that don't belong to another class. This class isn't used for USB host controllers and hubs; drivers for these devices are provided by the operating system and should use the **USB** class described in [System-Defined Device Setup Classes Reserved for System Use](./system-defined-device-setup-classes-reserved-for-system-use.md). |
 | **Windows CE USB ActiveSync Devices** | WCEUSBS | 25dbce51-6c8f-4a72-8a6d-b54c2b4fc835 | Includes Windows CE ActiveSync devices. The WCEUSBS setup class supports communication between a personal computer and a device that is compatible with the Windows CE ActiveSync driver (generally, PocketPC devices) over USB. |
-| **Windows Portable Devices (WPD)** | WPD | eec5ad98-8080-425f-922a-dabf3de3f69a | (Windows Vista and later versions of Windows) Includes WPD devices. |
+| **Windows Portable Devices (WPD)** | WPD | eec5ad98-8080-425f-922a-dabf3de3f69a | (Windows Vista and later versions) Includes WPD devices. |
