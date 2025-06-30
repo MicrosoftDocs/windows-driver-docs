@@ -31,12 +31,12 @@ Additional features:
 * Fixed how target path is saved for dump files opened via command line (-z) so that it can be opened successfully from recents menu.
 * Fixed a crash in the Script Editor window.
 * Fixed how WinDbg handles inconsistent line endings in source files opened in Source Window to provide a more consistent view of source files.
-* Fixed an issue where credentials would not be renewed for HTTP symbol servers when using the new parallel downloads feature.
-* Fixed an issue where the properties of data model objects would not be enumerated properly in JavaScript extensions.
+* Fixed an issue where credentials wouldn't be renewed for HTTP symbol servers when using the new parallel downloads feature.
+* Fixed an issue where the properties of data model objects wouldn't be enumerated properly in JavaScript extensions.
 * Fixed an issue where column text disappeared when reordered via click and drag.
-* Fixed an issue where setting event filtering via command line options were not applied to debug target at startup.
+* Fixed an issue where setting event filtering via command line options weren't applied to debug target at startup.
 * Fixed an issue where sometimes undocking a tool window would result in blank content.
-* Fixed an issue where minidumps of X64 emulated processes on ARM64 machines could not be debugged.
+* Fixed an issue where minidumps of X64 emulated processes on ARM64 machines couldn't be debugged.
 * Fixed an issue where ambiguous breakpoints crashed the debugger.
 * Fixed an issue where GDBServer crashed at process exit when debugging a live Linux process.
 * Fixed multiple issues related to debugging JavaScript extensions (.scriptdebug), including better enumeration of properties and fixing a crashing issue.
@@ -68,7 +68,7 @@ Similarly, the debugger can attach to a process snapshot of a process without su
 * `Debugger.Utility.Symbols.GetTypeInformation`
 
 It will return the type information associated with any inpassed object.
-There is an optional argument which allows for automatic dereferencing (one level) of pointers if you really want the type underneath any pointer (or ref).
+There's an optional argument which allows for automatic dereferencing (one level) of pointers if you really want the type underneath any pointer (or ref).
 
 * `Debugger.Utility.Control.CreateStepFilter(<Type>, <Pattern>)`
 
@@ -76,7 +76,7 @@ Creates a new step filter. It's in this namespace adjacent to all the breakpoint
 
 * `Debugger.State.StepFilters`
 
-Returns the list of step filters having properties Id, Description, Type, Pattern, and IsEnabled.  There is a .Remove() method on step filter objects.
+Returns the list of step filters having properties Id, Description, Type, Pattern, and IsEnabled.  There's a .Remove() method on step filter objects.
 
 #### Improved CLR debugging experience without clrcomposition.dll
 
@@ -94,10 +94,10 @@ The redistributable component `dbgeng.dll` now has improved stack walking suppor
 * Fixed a crash when reading the XSTATE context.
 * Fixed disabled breakpoint highlighting in Disassembly Window to differentiate from enabled breakpoint
 * Fixed a crash when closing a floating tool window
-* Fixed an issue where sometimes the Timelines window current position would not populate after opening a recent trace.
+* Fixed an issue where sometimes the Timelines window current position wouldn't populate after opening a recent trace.
 * Fixed an issue in Disassembly and Memory windows would sometimes not update after entering a new value.
 * Fixed title bar color scheme in dark theme.
-* Fixed presentation of deferred breakpoints in Breakpoints window where Location would show 0x0 instead of the original expression entered when it was created. Additionally, it has a distinct icon indicating it is not bound.
+* Fixed presentation of deferred breakpoints in Breakpoints window where Location would show 0x0 instead of the original expression entered when it was created. Additionally, it has a distinct icon indicating it's not bound.
 * Fixed an issue in Locals/Watch where right-clicking on a visible item would cause the view to scroll up.
 * Fixed issues with natvis, see [the original bug report](https://github.com/microsoftfeedback/WinDbg-Feedback/issues/231).
 * Fixed kd debugger spam with message `Error getting port connector information`, see [the original bug report](https://github.com/microsoftfeedback/WinDbg-Feedback/issues/230).
@@ -131,10 +131,10 @@ The redistributable component `dbgeng.dll` now has improved stack walking suppor
 
 ### Bug fixes
 
-* Fixed issue where extension gallery function aliases were not bound to the load triggers
+* Fixed issue where extension gallery function aliases weren't bound to the load triggers
 * Don't defunct the symbol store when ERROR_INTERNET_SECURITY_CHANNEL error is received
-* Fixed issue where a backslash could not be typed in the Command Window for non-English keyboard layouts.
-* Fixed issue where the edit text box in Breakpoints, Locals, and Watch windows would not scroll to cursor when text is longer than the column it is hosted in.
+* Fixed issue where a backslash couldn't be typed in the Command Window for non-English keyboard layouts.
+* Fixed issue where the edit text box in Breakpoints, Locals, and Watch windows wouldn't scroll to cursor when text is longer than the column it's hosted in.
 * For CAB or ZIP dumps prioritize \*.dmp (single period) over \*.\*.dmp (double periods)
 
 ### Accessibility Fixes
@@ -162,7 +162,7 @@ We've fixed several issues when interacting with WinDbg using a screen reader.
 
 #### New JavaScript Scripting Provider
 
-We are now shipping a new backwards compatible JavaScript provider based on V8.
+We're now shipping a new backwards compatible JavaScript provider based on V8.
 As a result of this, arm64 hosts can now use JavaScript extensions.
 The arm64 UI also now defaults to the arm64 engine.
 
@@ -217,7 +217,7 @@ We've made some small improvements to windows like the modules window or the sta
 
 ### Bug fixes
 
-* Fixed an issue where PDBs larger than 4GB would not be downloaded over HTTP.
+* Fixed an issue where PDBs larger than 4GB wouldn't be downloaded over HTTP.
   - Edge is an example of such a PDB.
 * Fixed caching issue in the debugger credential provider (now it will cache credentials per site).
 * Fixed bugs during evaluation of the Extension Gallery load triggers.
@@ -369,7 +369,7 @@ JavaScript loaded in the UI can now be directly debugged within the console usin
 
 ### Accessibility improvements
 
-With WinDbg Preview we are committed to building a debugger that is inclusive to engineers with disabilities, we are continuously improving accessibility. The following improvements have been made.
+With WinDbg Preview we're committed to building a debugger that is inclusive to engineers with disabilities, we're continuously improving accessibility. The following improvements have been made.
 
 - Command window links can now be clicked via the keyboard (Shift+Enter)
 - Improved keyboard navigation of main menu
@@ -383,7 +383,7 @@ Time Travel Debugger (TTD) now provides an “Overwrite” data access type. Mem
 ### Other fixes, improvements, and updates
 
 - Added feature to automatically detect and apply workaround for USB 3.1 hardware issue when both kernel debugging host and target are USB 3.1 controllers.
-- Added a new UI shortcut: Ctrl + Shift + Click over a DML link will to copy it to the clipboard
+- Added a new UI shortcut: Ctrl + Shift + Click over a DML link will copy it to the clipboard.
 
 ## 1.0.2007.01003
 
@@ -405,7 +405,7 @@ You can select and hold (or right-click) the bookmark to travel to that position
 
 **Modules Window**
 
-A new windows shows modules and their related information, it is available via the View ribbon.
+A new window shows modules and their related information, it's available via the View ribbon.
 It displays:
 
 - The name of the module including the path location
@@ -455,7 +455,7 @@ Portable PDB support has been added. The Portable PDB (Program Database) format 
 
 **Other changes and bug fixes**
 
-* The stack and locals window will now be disabled when your target is running and won’t show “Unspecified error” when there is no target.
+* The stack and locals window will now be disabled when your target is running and won’t show “Unspecified error” when there's no target.
 * Added a “Services” column to the attach dialog to easily find which services are running.
 * Fixed a bug that caused architecture detection to not work when launching applications with arguments.
 * The disassembly window has improved disassembly when private symbols are loaded.
@@ -518,7 +518,7 @@ Other changes and bug fixes:
 
 This version includes these updates.
 
-**Debugger data model C++ header** - There is a new C++ header, DbgModel.h, included as part of the Windows SDK for extending the debugger data model via C++. You can find more information in [Debugger Data Model C++ Overview](../debugger/data-model-cpp-overview.md). This release includes a new extension that adds some more "API style" features to the debugger data model that can be accessed through the 'dx' command, JavaScript, and the new DbgModel.h header. This extension extensions the data model to include knowledge about assembly and code execution through the [Debugger.Utility.Code](../debugger/dbgmodel-namespace-code.md) namespace, and the local file system through the [Debugger.Utility.FileSystem namespace](../debugger/dbgmodel-namespace-file-system.md).
+**Debugger data model C++ header** - There's a new C++ header, DbgModel.h, included as part of the Windows SDK for extending the debugger data model via C++. You can find more information in [Debugger Data Model C++ Overview](../debugger/data-model-cpp-overview.md). This release includes a new extension that adds some more "API style" features to the debugger data model that can be accessed through the 'dx' command, JavaScript, and the new DbgModel.h header. This extension extensions the data model to include knowledge about assembly and code execution through the [Debugger.Utility.Code](../debugger/dbgmodel-namespace-code.md) namespace, and the local file system through the [Debugger.Utility.FileSystem namespace](../debugger/dbgmodel-namespace-file-system.md).
 
 **Synthetic types extension** With this new API extension, we have a new sample up on our GitHub repo here - https://github.com/Microsoft/WinDbg-Samples/tree/master/SyntheticTypes. This JavaScript extension reads basic C header files and defines synthetic type information for the structures and unions defined in the header. Through the dx command, memory can then be viewed structured as if you had a PDB with type information for those types.
 
@@ -587,12 +587,12 @@ Minor changes and bug fixes:
 
 This version includes these updates.
 
-**Symbol status and cancellation improvements** - There are time where the debugger display *BUSY* loading symbols and it’s difficult to determine what it’s doing and why without !sym noisy enabled. We’ve updated WinDbg Preview to have some better communication around what it’s doing when loading symbols to help troubleshoot any issues.
+**Symbol status and cancellation improvements** - There are times where the debugger displays *BUSY* loading symbols and it’s difficult to determine what it’s doing and why without !sym noisy enabled. We’ve updated WinDbg Preview to have some better communication around what it’s doing when loading symbols to help troubleshoot any issues.
 In addition to easily seeing exactly what’s happening, we’ve made some changes that should make cancelling symbols more reliable and the Logs window will contain some of the details that’s normally output when !sym noisy is enabled. If you hit View -> Logs you’ll get the full noisy symbol loading output without having to turn it on and attempt to reload the symbols.
 
 **Experimental notes window** - WinDbg Preview now has a window for taking notes. Just hit View -> “Notes” to open it. If you copy/paste into it, DML links will be preserved and still work as if it was the command window. You can also save and load notes files from the “Notes” ribbon when the window is open. 
 
-**Experimental faster source window** - To help improve the performance of WinDbg Preview there is an experimental new source window that is quite a bit more efficient. There’s still a few gaps around context menus and syntax highlighting, but we want to give everyone the option of trying it out before it’s finished to give us early feedback. Run $UseFastSourceWindow to use it. If you want to go back to the old one, run $UseMonacoSourceWindow. The setting will preserve across sessions, you will need to close and re-open source windows to get the new version.
+**Experimental faster source window** - To help improve the performance of WinDbg Preview there's an experimental new source window that is quite a bit more efficient. There’s still a few gaps around context menus and syntax highlighting, but we want to give everyone the option of trying it out before it’s finished to give us early feedback. Run $UseFastSourceWindow to use it. If you want to go back to the old one, run $UseMonacoSourceWindow. The setting will preserve across sessions, you will need to close and re-open source windows to get the new version.
 
 **JSProvider API version 1.2** - For JavaScript extensions that declare support for API version 1.2:
 
@@ -642,7 +642,7 @@ Unique execution example: `dx @$cursession.TTD.Memory(startAddress, endAddress, 
 **JavaScript Improvements**
 
 - 64-bit numbers and numerics in JavaScript now contain a modulo method allowing a true 64-bit modulo operation.
-- Objects defined in JavaScript can now implement a custom comparable or equatable notion which will work in dx using standard C++ operators or in LINQ operations. In order to utilize this, the script must declare in the initializeScript array that it supports a new version of the host API by inserting a record “new host.apiVersionSupport(1, 2)”. After you’ve done that you can use these functions in any ‘dx’ or Data Model Window LINQ query. If the method implements .compareTo(other), it is comparable (comparison operators work in dx and LINQ). If the method returns a negative value, such as “this < other”. If the method returns zero, “this == other”. If the method returns a positive value “this > other”. If the method implements .equals(other), it is equatable (== works in dx and LINQ). The method must return either true or false.
+- Objects defined in JavaScript can now implement a custom comparable or equatable notion which will work in dx using standard C++ operators or in LINQ operations. In order to utilize this, the script must declare in the initializeScript array that it supports a new version of the host API by inserting a record “new host.apiVersionSupport(1, 2)”. After you’ve done that you can use these functions in any ‘dx’ or Data Model Window LINQ query. If the method implements .compareTo(other), it's comparable (comparison operators work in dx and LINQ). If the method returns a negative value, such as “this < other”. If the method returns zero, “this == other”. If the method returns a positive value “this > other”. If the method implements .equals(other), it's equatable (== works in dx and LINQ). The method must return either true or false.
 
 Minor changes and bug fixes:
 
@@ -663,9 +663,9 @@ This version includes these updates.
 
 **Improved process server experience** -  A new notification in the File menu to show what process server you’re connected to and interacting with has been added. As part of these changes, when ending a debugging session, the process server connection will persist and can be disconnected in the File menu.
 
-**New pre-set layout options in the View ribbon** - There is a new “Layouts” option in the “View” ribbon. There are currently three layouts: the default, one focused on disassembly, and one minimal. 
+**New pre-set layout options in the View ribbon** - There's a new “Layouts” option in the “View” ribbon. There are currently three layouts: the default, one focused on disassembly, and one minimal. 
 
-**Time Travel Debugging ribbon** - There is an enhanced Time Travel ribbon that will show up when debugging a time travel debugging trace.
+**Time Travel Debugging ribbon** - There's an enhanced Time Travel ribbon that will show up when debugging a time travel debugging trace.
 
 **Metadata from JavaScript scripts** - JavaScript extensions can now return metadata for properties and other constructs. This means that the extension can provide help strings, indicate the display radix for values, and more. Metadata is provided by placing a metadata descriptor on an object via either presence of Symbol.metadataDescriptor or an explicit call to host.metadata.defineMetadata. Function returns, iterated values, and other value contexts can return metadata for their value via host.metadata.valueWithMetadata.
 
@@ -681,7 +681,7 @@ Changes in API version 1.1 include:
 
 - JavaScript extensions can now add and remove properties on data model objects via Object.defineProperty and the delete operator. Adding or registering a JavaScript class as a parent model or type signature is still the strongly preferred way of manipulating the object model.
 - JavaScript extensions can now modify global variables within modules in the debug target through a new host.setModuleSymbol API.
-- All of the math functions which are on the 64-bit library type (e.g.: .add, .subtract, .multiply, .divide, etc…) are now present on JavaScript numbers as well.
+- All of the math functions which are on the 64-bit library type (e.g.: .add, .subtract, .multiply, .divide, etc.) are now present on JavaScript numbers as well.
 - JavaScript functions and properties can now return values which are enums through custom marshaling. A function or property accessor can return host.typeSystem.marshalAs(value, type…) in order to evoke such custom marshaling.
 - The breakpoint command in the script debugger can now break on function names in addition to line/column positions.
 - Type objects in JavaScript extensions have access to their containing module through the .containingModule property.
