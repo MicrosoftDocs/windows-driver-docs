@@ -25,7 +25,7 @@ The table below list previous versions of Windows Driver Kit (WDK) that are no l
 | Windows 11 23H2 (NI) | 22621.2824 | VS 2022 | Removed |  |
 | Windows 11 22H2 (NI) | 22621.1778 | VS 2022 | Removed |  |
 | Windows 11 22H2 (NI) | 22621.775 | VS 2022 | Removed |  |
-| Windows 11 21H2 (CO0) | 22000.832 | VS 2019 | Removed |  |
+| Windows 11 21H2 (CO) | 22000.832 | VS 2019 | Removed |  |
 | Windows Server 2022 (FE) | 20348.1 | VS 2019 | Removed |  |
 | Windows 10 2004 (VB) | 19041.685 | VS 2019 | Removed |  |
 | Windows 10 1903 (19H1) | 18362.1 | VS 2019 | Removed |  |
