@@ -240,7 +240,7 @@ You can now live debug a Linux process. For more information, see these topics:
 
 [Linux symbols and sources](../debugger/linux-dwarf-symbols.md)
 
-The WinDbg client for the foreseeable future will still require Windows, as WinDbg does not run on Linux.
+The WinDbg client for the foreseeable future will still require Windows, as WinDbg doesn't run on Linux.
 
 #### Record a subset of execution with Time Travel Debugging
 
@@ -250,7 +250,7 @@ For finer control, you can precisely record your program using a new in-process 
 
 #### Compact register window
 
-The new register window looks just like the output from the `r` command. Note that editing from the new register window is not yet supported.
+The new register window looks just like the output from the `r` command. Note that editing from the new register window isn't yet supported.
 
 #### New parameters for `e` (Enter Values) into memory commands
 
@@ -467,9 +467,9 @@ Portable PDB support has been added. The Portable PDB (Program Database) format 
 
 **Support for Open Enclave** - WinDbg Preview can now debug Open Enclave (OE) applications for more information, see [Open Enclave debugging](../debugger/open-enclave-debugging.md)).
 
-**ELF Core Dumps** - As part of supporting Open Enclave, WinDbg can open ELF core dumps and binaries as well as DWARF symbols (DWARF 5 is not currently supported) from both Enclaves and Linux applications. When opening a core dump from a non-Windows application, basic windows and commands should all work properly, but most extensions and Windows-specific commands will not work. ELF and DWARF files will be downloaded from symbol servers following the [key conventions defined here](https://github.com/dotnet/symstore/blob/master/docs/specs/SSQP_Key_Conventions.md). Enclaves are the only supported scenario, but we’re open to feedback on opening other Linux core dumps.
+**ELF Core Dumps** - As part of supporting Open Enclave, WinDbg can open ELF core dumps and binaries as well as DWARF symbols (DWARF 5 isn't currently supported) from both Enclaves and Linux applications. When opening a core dump from a non-Windows application, basic windows and commands should all work properly, but most extensions and Windows-specific commands won't work. ELF and DWARF files will be downloaded from symbol servers following the [key conventions defined here](https://github.com/dotnet/symstore/blob/master/docs/specs/SSQP_Key_Conventions.md). Enclaves are the only supported scenario, but we’re open to feedback on opening other Linux core dumps.
 
-**TTD File format change** - We’ve made a major update to the file format for TTD traces that breaks forward compatibility. Previous versions of WinDbg Preview will not be able to open traces recorded with this (and future) versions of WinDbg Preview, but this (and future) versions will be able to open both new and old traces.
+**TTD File format change** - We’ve made a major update to the file format for TTD traces that breaks forward compatibility. Previous versions of WinDbg Preview won't be able to open traces recorded with this (and future) versions of WinDbg Preview, but this (and future) versions will be able to open both new and old traces.
 
 **Other changes**
 
@@ -552,7 +552,7 @@ Other changes and bug fixes:
 
 This version includes these updates.
 
-**Automatic saving and loading of breakpoints**. This is a first step to replace workspaces. We’re starting down that route by enabling the saving and loading of breakpoints. Launching something you’ve debugged previously from the “Recents” tab in the file menu will now load the breakpoints from that session. The plan is to expand this functionality to preserve more information across sessions. Hardware breakpoints (ba) and other various properties on breakpoints like thread and process specific contexts as well as conditions are not currently being saved.
+**Automatic saving and loading of breakpoints**. This is a first step to replace workspaces. We’re starting down that route by enabling the saving and loading of breakpoints. Launching something you’ve debugged previously from the “Recents” tab in the file menu will now load the breakpoints from that session. The plan is to expand this functionality to preserve more information across sessions. Hardware breakpoints (ba) and other various properties on breakpoints like thread and process specific contexts as well as conditions aren't currently being saved.
  
 Minor changes and bug fixes:
 
@@ -592,7 +592,7 @@ In addition to easily seeing exactly what’s happening, we’ve made some chang
 
 **Experimental notes window** - WinDbg Preview now has a window for taking notes. Just hit View -> “Notes” to open it. If you copy/paste into it, DML links will be preserved and still work as if it was the command window. You can also save and load notes files from the “Notes” ribbon when the window is open. 
 
-**Experimental faster source window** - To help improve the performance of WinDbg Preview there's an experimental new source window that is quite a bit more efficient. There’s still a few gaps around context menus and syntax highlighting, but we want to give everyone the option of trying it out before it’s finished to give us early feedback. Run $UseFastSourceWindow to use it. If you want to go back to the old one, run $UseMonacoSourceWindow. The setting will preserve across sessions, you will need to close and re-open source windows to get the new version.
+**Experimental faster source window** - To help improve the performance of WinDbg Preview there's an experimental new source window that is quite a bit more efficient. There’s still a few gaps around context menus and syntax highlighting, but we want to give everyone the option of trying it out before it’s finished to give us early feedback. Run $UseFastSourceWindow to use it. If you want to go back to the old one, run $UseMonacoSourceWindow. The setting will preserve across sessions, you'll need to close and re-open source windows to get the new version.
 
 **JSProvider API version 1.2** - For JavaScript extensions that declare support for API version 1.2:
 
@@ -669,12 +669,12 @@ This version includes these updates.
 
 **Metadata from JavaScript scripts** - JavaScript extensions can now return metadata for properties and other constructs. This means that the extension can provide help strings, indicate the display radix for values, and more. Metadata is provided by placing a metadata descriptor on an object via either presence of Symbol.metadataDescriptor or an explicit call to host.metadata.defineMetadata. Function returns, iterated values, and other value contexts can return metadata for their value via host.metadata.valueWithMetadata.
 
-**JavaScript API updates** - Some potentially source level breaking changes were made to the APIs within the JavaScript provider (including new projected methods and properties on native objects). Existing extensions will not see any of the potentially breaking changes without indicating that they support a new version of the JsProvider API. Support for the new API version is indicated by placing a host.apiVersionSupport record in the array returned by initializeScript with a claim of supporting version 1.1. maybe? .. with a value indicating support for version 1.1.
+**JavaScript API updates** - Some potentially source level breaking changes were made to the APIs within the JavaScript provider (including new projected methods and properties on native objects). Existing extensions won't see any of the potentially breaking changes without indicating that they support a new version of the JsProvider API. Support for the new API version is indicated by placing a host.apiVersionSupport record in the array returned by initializeScript with a claim of supporting version 1.1. maybe? .. with a value indicating support for version 1.1.
 
 Changes in API version 1.1 include:
 
-- host.getModuleSymbol and host.getModuleType return null if they cannot find the symbol instead of throwing an exception.
-- All native objects have the address property on them in addition to .targetLocation. If the object does not have an address, an exception will be thrown when accessing the property.
+- host.getModuleSymbol and host.getModuleType return null if they can't find the symbol instead of throwing an exception.
+- All native objects have the address property on them in addition to .targetLocation. If the object doesn't have an address, an exception will be thrown when accessing the property.
 - All native objects have new .getObjectValue and .setObjectValue methods on them to access properties on the object which may conflict with names JavaScript places on the object (e.g.: ‘address’) .
 
 **Additional JavaScript changes**
@@ -696,7 +696,7 @@ Minor changes and bug fixes:
 - Disabled various file menu and ribbon options when they can’t be used (like “Go” when in a dump file).
 
 Known issues:
-- SOS will not work on x86 traces.
+- SOS won't work on x86 traces.
 
 ## 1.0.13.0
 
