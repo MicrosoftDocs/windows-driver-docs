@@ -35,7 +35,7 @@ This is a minor release to coincide with the April 2025 release of WinDbg.
 
 - Clicking on a TTD position in the data model (i.e. in the Modules list) navigates to that position in the trace. (1.11.492)
 
-  Note: The command window will not show the updated TTD position until the next step or run command is executed.
+  Note: The command window won't show the updated TTD position until the next step or run command is executed.
 
 ### Fixed
 
@@ -99,7 +99,7 @@ Fixes:
 Improved accessibility: Progress UI now properly scales with Text Size changes.
 
 The ```@$cursession.TTD.Calls()``` command in the debugger now supports wildcards that match a large number of functions.
-It is now possible to query for large numbers of functions (```@$cursession.TTD.Calls("kernel32!*")```).
+It's now possible to query for large numbers of functions (```@$cursession.TTD.Calls("kernel32!*")```).
 
 Automation: A new ```-onMonitorReadyEvent``` command-line option indicates when the recording monitor (```-monitor``` switch)
 is ready to record new processes.
@@ -218,7 +218,7 @@ This release increases visibility of certain error messages by extracting them f
 
 ### Fixed
 
-- Fix file conflict while reading .out file from seperate process. (1.11.171)
+- Fix file conflict while reading .out file from separate process. (1.11.171)
 - Fix rare crash during trace replay. (1.11.166)
 
 ## 1.11.163
@@ -239,7 +239,7 @@ This release is the first public release of the command line recorder. Along wit
 enable public release of the command line recorder, this release also includes a number of bug fixes, including
 a couple of fixes to the CPU emulator.
 
-The new ```-timestampFileName``` switch enables timestamp-based .run file generation. This is useful when you are
+The new ```-timestampFileName``` switch enables timestamp-based .run file generation. This is useful when you're
 recording many instances of the same process, and want to minimize recording startup time.
 
 ### Changed
