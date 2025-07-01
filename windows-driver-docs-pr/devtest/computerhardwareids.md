@@ -10,10 +10,13 @@ api_name:
 - ComputerHardwareIds Overview
 api_type:
 - NA
-ms.date: 02/28/2023
+ms.date: 06/24/2025
 ---
 
 # ComputerHardwareIds
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 ComputerHardwareIds (ComputerHardwareIds.exe) is a Windows Driver Kit (WDK) command-line tool that can be used to generate hardware IDs for a specific model of a vendor's computer system. The vendor can use these hardware IDs to match device metadata packages to that specific computer model.
 
@@ -31,7 +34,7 @@ C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64>ComputerHardwareIds>
 
 ### Parameters
 
-None  
+None
 
 ## Comments
 
@@ -74,6 +77,5 @@ For more information about device metadata packages, see [Device Metadata Packag
 
 ## See also
 
-[Specifying Hardware IDs for a Computer](../install/specifying-hardware-ids-for-a-computer.md)
-
-[Download the Windows Driver Kit (WDK)](../download-the-wdk.md)
+- [Specifying Hardware IDs for a Computer](../install/specifying-hardware-ids-for-a-computer.md)
+- [Download the Windows Driver Kit (WDK)](../download-the-wdk.md)
