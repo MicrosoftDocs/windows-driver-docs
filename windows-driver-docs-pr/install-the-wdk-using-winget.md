@@ -8,19 +8,19 @@ keywords:
 - winget
 - install
 - download
-ms.date: 6/25/2025
+ms.date: 07/01/2025
 ms.topic: install-set-up-deploy
 ---
 
 # Install the WDK using WinGet
 
-You can use the Windows Package Manager (WinGet) tool to install or update the Windows Driver Kit on your computer, along with its dependencies such as Visual Studio and the Windows Software Development Kit, all from the command line.
+You can use the Windows Package Manager (WinGet) tool to install or update the Windows Driver Kit on your computer. WinGet can also install the WDK's dependencies, such as Visual Studio and the Windows Software Development Kit. All of this can be done from the command line.
 
-Refer to the [WinGet install documentation](/windows/package-manager/winget/#install-winget) if you need help making sure that you have WinGet installed and configured correctly.
+Refer to the [WinGet install documentation](/windows/package-manager/winget/#install-winget) if you need help with making sure that you have WinGet installed and configured correctly.
 
 ## Install the latest WDK step by step using WinGet
 
-The latest version of the WDK is 10.0.26100.3323. It requires Visual Studio 2022 and the latest Windows SDK. For more info, see [Kit versioning](./download-the-wdk.md#kit-versioning).
+This step requires Visual Studio 2022 and the latest Windows SDK. For more info, see [Kit versioning](./download-the-wdk.md#kit-versioning).
 
 ### Step 1: Install Visual Studio 2022
 
@@ -62,10 +62,10 @@ You can use WinGet to install Visual Studio 2022 with all the workloads and comp
 }
 ```
 
-Depending on the edition you would like to install, you will need to provide `winget` with a different set of installer parameters along with the path to the .vsconfig file you have just created to customize your installation.
+Depending on the edition you would like to install, you need to provide `winget` with a different set of installer parameters along with the path to the .vsconfig file you created to customize your installation.
 
 > [!CAUTION]
-> You must provide an absolute path to your *wdk.vsconfig* file in the following commands. Otherwise, WinGet may fail to install Visual Studio while still reporting success.
+> You must provide an absolute path to your *wdk.vsconfig* file in the following commands. Otherwise, WinGet might fail to install Visual Studio while still reporting success.
 
 **Visual Studio Community 2022**:
 
@@ -103,14 +103,14 @@ winget install --source winget --exact --id Microsoft.WindowsSDK.10.0.26100 --lo
 winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.26100 --log $env:USERPROFILE/Desktop/wdk-install.log
 ```
 
-If you are using VS 17.11.0 or later, uncheck the install extension checkbox.
+If you're using VS 17.11.0 or later, uncheck the install extension checkbox.
 
 ### Step 3: Install WDK Visual Studio extension
 
 > [!NOTE]
 > This section is only application when using VS earlier than 17.11.0 release. 
 
-After installing the WDK from command line, you will need to install the Windows Driver Kit Visual Studio extension separately to be able to build and test drivers. By default, the extension is located under `%ProgramFiles(x86)%\Windows Kits\10\Vsix\VS2022\10.0.26100.0\%PROCESSOR_ARCHITECTURE%\WDK.vsix`.
+After installing the WDK from command line, you'll need to install the Windows Driver Kit Visual Studio extension separately to be able to build and test drivers. By default, the extension is located under `%ProgramFiles(x86)%\Windows Kits\10\Vsix\VS2022\10.0.26100.0\%PROCESSOR_ARCHITECTURE%\WDK.vsix`.
 
 Using Command Prompt:
 
@@ -130,7 +130,7 @@ Using PowerShell:
 
 By [using a WinGet Configuration file](/windows/package-manager/configuration/#use-a-winget-configuration-file-to-configure-your-machine), you can set up a new machine for driver development with minimal manual intervention.
 
-A [configuration file](https://raw.githubusercontent.com/microsoft/Windows-driver-samples/main/configuration.dsc.yaml) for installing the Windows 11, version 24H2 WDK and its dependencies is provided for your convenience. This configuration will set up the following components:
+A [configuration file](https://raw.githubusercontent.com/microsoft/Windows-driver-samples/main/configuration.dsc.yaml) for installing the Windows 11, version and its dependencies are provided for your convenience. This configuration sets up the following components:
 
 - Visual Studio 2022 Community.
 - Visual Studio required workflows and components for driver development.
@@ -138,7 +138,7 @@ A [configuration file](https://raw.githubusercontent.com/microsoft/Windows-drive
 - Windows 11, version 24H2 WDK.
 - WDK Visual Studio Extension.
 
-Although using a configuration description file works better for provisioning a new machine, you can use it even if you have some of the components installed already and WinGet will attempt to only install the missing components.
+Configuration files work best when setting up a new machine. However, you can also use this configuration file on machines that already have some components installed. WinGet detects installed components and only installs the missing components.
 
 > [!TIP]
 > You can directly download and install the WDK configuration file using PowerShell. After [installing the latest version of WinGet](/windows/package-manager/winget/#install-winget), you can run the following commands:
@@ -156,14 +156,14 @@ winget configure -f configuration.dsc.yaml
 
 ### Step 1: Set up WinGet
 
-Make sure that you have WinGet version 1.6 or higher installed on the machine you would like to provision. You can do so by running `winget --version` on your terminal and checking that the output version number is `v1.6.2631` or greater. If not, or if the terminal throws an error telling that the command does not exist, you will need to [install the latest version of WinGet](/windows/package-manager/winget/#install-winget) before proceeding.
+Make sure that you have WinGet version 1.6 or higher installed on the machine you would like to provision. You can do so by running `winget --version` on your terminal and checking that the output version number is `v1.6.2631` or greater. If not, or if the terminal throws an error telling that the command doesn't exist, you need to [install the latest version of WinGet](/windows/package-manager/winget/#install-winget) before proceeding.
 
 ### Step 2: Download the WDK Configuration file
 
 The configuration description file can be downloaded from [here](https://raw.githubusercontent.com/microsoft/Windows-driver-samples/main/configuration.dsc.yaml). Save this file as `configuration.dsc.yml` and take note of its location.
 
 > [!TIP]
-> The provided configuration file will install the Community edition of Visual Studio 2022. If you need a different edition, you can edit `Microsoft.VisualStudio.2022.Community` and `Microsoft.VisualStudio.Product.Community` product IDs with different IDs for the edition you would like to install (for Professional: `Microsoft.VisualStudio.2022.Professional` and `Microsoft.VisualStudio.Product.Professional`; for Enterprise: `Microsoft.VisualStudio.2022.Enterprise` and `Microsoft.VisualStudio.Product.Enterprise`).
+> The provided configuration file installs the Community edition of Visual Studio 2022. If you need a different edition, you can edit `Microsoft.VisualStudio.2022.Community` and `Microsoft.VisualStudio.Product.Community` product IDs with different IDs for the edition you would like to install (for Professional: `Microsoft.VisualStudio.2022.Professional` and `Microsoft.VisualStudio.Product.Professional`; for Enterprise: `Microsoft.VisualStudio.2022.Enterprise` and `Microsoft.VisualStudio.Product.Enterprise`).
 
 ### Step 3A: Run WinGet configure to install WDK Configuration file
 
@@ -175,7 +175,7 @@ winget configure -f configuration.dsc.yaml
 
 ### Step 3B: Use Dev Home to install WDK Configuration file
 
-Alternatively, if you have [Dev Home](/windows/dev-home/) installed, you can use it to [configure your machine](/windows/dev-home/setup). Select "Machine configuration" from the sidebar, then "Set up development environment" > "Configuration file" on the main screen to open the WDK configuration file that you have downloaded. After confirming that you would like to use that file to configure your machine, installation will proceed and, after it completes, you should have an environment ready for driver development.
+Alternatively, if you have [Dev Home](/windows/dev-home/) installed, you can use it to [configure your machine](/windows/dev-home/setup). To open the WDK configuration file that you downloaded, select **Machine configuration** from the sidebar, then **Set up development environment** > **Configuration file** on the main screen. After confirming that you would like to use that file to configure your machine, installation will proceed and, after it completes, you should have an environment ready for driver development.
 
 ## See also
 

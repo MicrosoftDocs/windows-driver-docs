@@ -5,7 +5,7 @@ keywords:
 - Windows Driver Kit
 - previous versions
 - WDK
-ms.date: 06/24/2025
+ms.date: 07/01/2025
 ---
 
 # Other WDK Downloads
@@ -39,5 +39,3 @@ The table below list previous versions of Windows Driver Kit (WDK) that are no l
 | Windows 8.1 |  |  |  |  |
 | Windows 8 | 9200 | VS 2012 | Removed |  |
 | Windows 7 | 7600 | VS 2010 | Removed |  |
-
-
