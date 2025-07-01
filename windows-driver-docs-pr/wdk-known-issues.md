@@ -6,7 +6,7 @@ keywords:
 - WDK
 - drivers
 - known issues
-ms.date: 06/27/2025
+ms.date: 07/01/2025
 ms.topic: troubleshooting-known-issue
 ---
 
