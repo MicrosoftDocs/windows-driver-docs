@@ -8,7 +8,7 @@ keywords:
 - winget
 - install
 - download
-ms.date: 06/27/2025
+ms.date: 01/01/2025
 ms.topic: install-set-up-deploy
 ---
 
@@ -126,84 +126,17 @@ Using PowerShell:
 & $(& "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -nologo -latest -products * -property enginePath | Join-Path -ChildPath 'VSIXInstaller.exe') "${env:ProgramFiles(x86)}\Windows Kits\10\Vsix\VS2022\10.0.26100.0\${env:PROCESSOR_ARCHITECTURE}\WDK.vsix"
 ```
 
-## Install other WDK versions using WinGet
-
-You can install multiple kits for different Windows versions from WinGet.
-
-> [!NOTE]
-> For versions 22000 (targeting Windows 11, version 21H2) and older, you need to install an older version of Visual Studio. See [Other WDK downloads > Step 1: Install Visual Studio](other-wdk-downloads.md#step-1-install-visual-studio) to find the required Visual Studio version for the WDK version you would like to install.
-
-You can search for other available kit versions using the `winget search` command.
-
-**Windows SDK**:
-
-```cmd
-winget search --source winget --id Microsoft.WindowsSDK
-```
-
-**Windows WDK**:
-
-```cmd
-winget search --source winget --id Microsoft.WindowsWDK
-```
-
-Each command returns a table with all the available SDK/WDK versions in WinGet. For example, when looking for all the available WDK versions, a table like this is shown:
-
-```cmd
-Name                                        Id                              Version        Source
---------------------------------------------------------------------------------------------------
-Windows Driver Kit - Windows 10.0.22621.2428 Microsoft.WindowsWDK.10.0.22621 10.1.22621.2428 winget
-Windows Driver Kit - Windows 10.1.22000.1    Microsoft.WindowsWDK.10.0.22000 10.1.22000.1    winget
-Windows Driver Kit                           Microsoft.WindowsWDK.10.0.19041 10.1.19041.685  winget
-Windows Driver Kit - Windows 10.0.26100.1    Microsoft.WindowsWDK.10.0.26100 10.1.26100.1    winget
-```
-
-You can then install your required combination of kits for a specific `<kit-version>` using `winget install`:
-
-**Windows SDK**:
-
-```cmd
-winget install --source winget --exact --id Microsoft.WindowsSDK.10.0.<kit-version>
-```
-
-**Windows WDK**:
-
-```cmd
-winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.<kit-version>
-```
-
-> [!NOTE]
-> If the Windows Driver Kit version you're looking for isn't available in WinGet, you need to download and install it separately from [Other WDK downloads](./other-wdk-downloads.md).
-
-Unless you have the WDK Visual Studio extension from a newer WDK installed already, you need to install it manually. It's located by default under `%ProgramFiles(x86)%\Windows Kits\10\Vsix\<vs-version>\10.0.<kit-version>.0\WDK.vsix` for kit versions 22621 and newer, or `%ProgramFiles(x86)%\Windows Kits\10\Vsix\<vs-version>\WDK.vsix` for kit versions 22000 and older.
-
-Locate first the folder for the `<vs-version>` that you're using (`VS2022` for versions 22621 and newer, `VS2019` for versions 18362 through 22000). If that folder contains multiple versioned folders, locate the folder inside with the latest version number. Take note of this location as `<wdk-vsix-folder>` if you want to install the extension from command line.
-
-Using Command Prompt:
-
-```cmd
-for /f "usebackq tokens=*" %i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -nologo -latest -products * -property enginePath`) do (
-  "%i\VSIXInstaller.exe" "<wdk-vsix-folder>\WDK.vsix"
-)
-```
-
-Using PowerShell:
-
-```powershell
-& $(& "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -nologo -latest -products * -property enginePath | Join-Path -ChildPath 'VSIXInstaller.exe') "<wdk-vsix-folder>\WDK.vsix"
-```
-
 ## Install a full driver development environment using a WinGet configuration file
 
 By [using a WinGet Configuration file](/windows/package-manager/configuration/#use-a-winget-configuration-file-to-configure-your-machine), you can set up a new machine for driver development with minimal manual intervention.
 
 A [configuration file](https://raw.githubusercontent.com/microsoft/Windows-driver-samples/main/configuration.dsc.yaml) for installing the Windows 11, version and its dependencies are provided for your convenience. This configuration sets up the following components:
 
-* Visual Studio 2022 Community.
-* Visual Studio required workflows and components for driver development.
-* Windows 11, version 24H2 SDK.
-* Windows 11, version 24H2 WDK.
-* WDK Visual Studio Extension.
+- Visual Studio 2022 Community.
+- Visual Studio required workflows and components for driver development.
+- Windows 11, version 24H2 SDK.
+- Windows 11, version 24H2 WDK.
+- WDK Visual Studio Extension.
 
 Configuration files work best when setting up a new machine. However, you can also use this configuration file on machines that already have some components installed. WinGet detects installed components and only installs the missing components.
 
@@ -246,16 +179,16 @@ Alternatively, if you have [Dev Home](/windows/dev-home/) installed, you can use
 
 ## See also
 
-* [Use the WinGet tool to install and manage applications](/windows/package-manager/winget/#install-winget)
-* [WinGet Configuration](/windows/package-manager/configuration/): How to set up a machine using winget and a configuration file
-* [Use command-line parameters to install, update, and manage Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)
-* [Windows 11 hardware requirements](/windows/whats-new/windows-11-requirements)
+- [Use the WinGet tool to install and manage applications](/windows/package-manager/winget/#install-winget)
+- [WinGet Configuration](/windows/package-manager/configuration/): How to set up a machine using winget and a configuration file
+- [Use command-line parameters to install, update, and manage Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)
+- [Windows 11 hardware requirements](/windows/whats-new/windows-11-requirements)
 
 ## Related downloads
 
-* [Download current version of the WDK and Enterprise WDK manually](download-the-wdk.md)
-* [Download previous versions of the WDK manually](other-wdk-downloads.md)
-* [Download the Windows Assessment and Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install)
-* [Download the Windows HLK](/windows-hardware/test/hlk/windows-hardware-lab-kit)
-* [Download the Windows Debugging Tools (WinDbg)](./debugger/debugger-download-tools.md)
-* [Download Windows Symbol Packages](./debugger/debugger-download-symbols.md)
+- [Download current version of the WDK and Enterprise WDK manually](download-the-wdk.md)
+- [Download previous versions of the WDK manually](other-wdk-downloads.md)
+- [Download the Windows Assessment and Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install)
+- [Download the Windows HLK](/windows-hardware/test/hlk/windows-hardware-lab-kit)
+- [Download the Windows Debugging Tools (WinDbg)](./debugger/debugger-download-tools.md)
+- [Download Windows Symbol Packages](./debugger/debugger-download-symbols.md)
