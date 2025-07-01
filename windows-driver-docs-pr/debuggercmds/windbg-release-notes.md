@@ -2,7 +2,7 @@
 title: "WinDbg Release notes"
 description: "This topic provides information on what's new in WinDbg."
 keywords: ["Release notes", "WinDbg", "Windows Debugging"]
-ms.date: 06/23/2025
+ms.date: 07/01/2025
 ms.topic: release-notes
 ---
 
@@ -24,7 +24,6 @@ WinDbg now ships with the console mode debuggers (cdb.exe / ntsd64.exe / kd.exe)
 Additional features:
 * Data Model tool window title can be customized via $OpenDmoToolwindow command and can also be changed via title bar context menu.
 * New debugger setting to enable parallel HTTP downloads of symbol files. This option is enabled by default.
-* Support for getting PDZ files from HTTP and UNC symbol stores.
 
 ### Bug Fixes
 
