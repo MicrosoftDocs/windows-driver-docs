@@ -1,7 +1,7 @@
 ---
 title: Windows Drivers Kit (WDK) release notes
 description: Highlights the latest features in new WDK releases.
-ms.date: 04/11/2025
+ms.date: 07/01/2025
 ms.topic: release-notes
 ---
 
@@ -9,13 +9,29 @@ ms.topic: release-notes
 
 The following features and bug fixes are in Windows 11 24H2 WDK update.
 
+## Version 10.0.26100.4202
+
+*Released June 16, 2025*
+
+### Windows Driver Kit End User License Agreement (EULA)
+
+The Windows Driver Kit EULA is updated. This update includes a routine review, and some fixed broken links.
+
+### Bluetooth Stereo Render Feature
+
+Audio Configuration 8 is now available, enabling stereo render with concurrent mono capture. This enhancement supports Spatial Audio in Microsoft Teams and delivers an improved wireless gaming audio experience.
+
+### Enclave Access Restriction Update
+
+The [IMAGE_ENCLAVE_CONFIG32](/windows/win32/api/winnt/ns-winnt-image_enclave_config32) flag now enforces a policy that restricts enclave access to the containing process's address space. Enclaves must use [EnclaveCopyIntoEnclave](/windows/win32/api/winenclaveapi/nf-winenclaveapi-enclavecopyintoenclave) and [EnclaveCopyOutOfEnclave](/windows/win32/api/winenclaveapi/nf-winenclaveapi-enclavecopyoutofenclave) APIs for memory access. Additionally, the [EnclaveRestrictContainingProcessAccess](/windows/win32/api/winenclaveapi/nf-winenclaveapi-enclaverestrictcontainingprocessaccess) API can be used to modify this restriction at runtime.
+
 ## Version 10.0.26100.3323
 
 *Released March 14, 2025*.
 
 ### SoundWire Device Class for Audio (SDCA)
 
-The SdcaClass driver will now send notifications to the attached SDCA XU driver for changes in the hardware Function Status control along with system posture changes.
+The SdcaClass driver now sends notifications to the attached SDCA XU driver for changes in the hardware Function Status control along with system posture changes.
 
 ### Bluetooth LE Audio Bidirectional Multichannel Streaming
 
@@ -27,11 +43,11 @@ A new set of data structures are added to support bidirectional multichannel str
 
 ### Packet Monitor APIs
 
-Pktmon APIs are available for kernel-mode drivers to send and receive network package notifications. You can use these to diagnose performance and network connectivity issues.
+Pktmon APIs are available for kernel-mode drivers to send and receive network package notifications. You can use these APIs to diagnose performance and network connectivity issues.
 
 ### Bug Fixes
 
-WDK installer unexpectedly launches the bundled VSIX installation at the end of installation if an earlier WDK was already present on the computer.  The WDK VSIX is no longer part of the WDK MSI, so the installer no longer exhibits this behavior.
+WDK installer unexpectedly launches the bundled VSIX installation at the end of installation if an earlier WDK was already present on the computer. The WDK VSIX is no longer part of the WDK MSI, so the installer no longer exhibits this behavior.
 
 ## Version 10.0.26100.2161
 
