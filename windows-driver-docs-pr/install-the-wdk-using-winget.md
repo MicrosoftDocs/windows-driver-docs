@@ -8,7 +8,7 @@ keywords:
 - winget
 - install
 - download
-ms.date: 01/01/2025
+ms.date: 07/01/2025
 ms.topic: install-set-up-deploy
 ---
 
