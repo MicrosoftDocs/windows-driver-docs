@@ -3,11 +3,14 @@ title: Specify Applications in the Mobile Broadband Metadata Authoring Wizard
 description: Specify applications in the Mobile Broadband Metadata Authoring Wizard
 keywords:
 - Specify applications in the Mobile Broadband Metadata Authoring Wizard
-ms.date: 04/20/2017
+ms.date: 06/25/2025
 ms.topic: how-to
 ---
 
 # Specify applications in the Mobile Broadband Metadata Authoring Wizard
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 To specify the various applications for your service, including the Microsoft Store device app and privileged applications, click the **Applications** tab.
 
@@ -23,7 +26,7 @@ To specify the app, fill out the following fields:
 
 The **Package Name**, **Publisher**, and **App ID** all must match the information in the app package.appxmanifest.
 
-The following is an example of the Application Manifest:
+The following xml code is an example of the Application Manifest:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -44,16 +47,16 @@ The following is an example of the Application Manifest:
 ## To see the Package name and Publisher
 
 1. Open the app solution in Visual Studio.
-2. Click the app manifest in Solution Explorer.
-3. Double-click Package.appxmanifest.
-4. In the **Packaging** tab, review the **Package name** and **Publisher** fields.
+1. Click the app manifest in Solution Explorer.
+1. Double-click Package.appxmanifest.
+1. In the **Packaging** tab, review the **Package name** and **Publisher** fields.
 
 ## To see the App ID
 
 1. Open the app solution in Visual Studio.
-2. Click the app manifest in Solution Explorer.
-3. Right-click Package.appxmanifest.
-4. Select **View Code**.
+1. Click the app manifest in Solution Explorer.
+1. Right-click Package.appxmanifest.
+1. Select **View Code**.
 
 ## Privileged applications
 
@@ -67,7 +70,7 @@ To specify the Privileged Applications, fill out the following fields under **Pr
 - **Package Name**. Enter the value of the Name attribute in the Identity element in the Package element of the Application Manifest.
 - **Publisher**. Enter the value of the Publisher attribute in the Identity element in the Package element of the Application Manifest.
 
-The following is an example of the Application Manifest:
+The following xml code is an example of the Application Manifest:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

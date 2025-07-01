@@ -259,7 +259,7 @@ This object provides more attributes about the product if it is of type RAID con
 | isThirdPartyNeeded | boolean | Non-Microsoft driver needed for connectivity |
 | isSES | boolean | SES (SCSI Enclosure Services). Indicates if a SES is included. SCSI is the standard term for a service bus that connects devices on a system, originally Small Computer System Interface. SES is short for SCSI Enclosure Services. |
 | isSAFTE | boolean | SAF-TE (ANBll Specification). Indicates if a SAF-TE is included. ANBll an industry specification. SAF-TE is short for SCSI Accessed Fault Tolerant Enclosures. SCSI is the standard term for a service bus that connects devices on a system, originally Small Computer System Interface. |
-| additionalInfo | string | Additonal Information |
+| additionalInfo | string | Additional Information |
 
 #### SVVP Object
 

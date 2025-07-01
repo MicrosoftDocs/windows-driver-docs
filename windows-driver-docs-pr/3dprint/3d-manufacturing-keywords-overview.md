@@ -39,7 +39,7 @@ The terms in this section provide a basic framework and vocabulary for describin
 
 ### 1.3.1. Model
 
-The *model*, in this specification, refers to the object or objects to be created via 3D manufacturing processes as a single job. It might include a single object, multiple homogenous objects, multiple heterogeneous objects, an object fully enclosed in another object, or multiple objects in an interlocked and inseparable *assembly*.
+The *model*, in this specification, refers to the object or objects to be created via 3D manufacturing processes as a single job. It might include a single object, multiple homogeneous objects, multiple heterogeneous objects, an object fully enclosed in another object, or multiple objects in an interlocked and inseparable *assembly*.
 
 ### 1.3.2. Coordinate space
 

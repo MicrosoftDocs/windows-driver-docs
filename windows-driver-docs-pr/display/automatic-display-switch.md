@@ -134,7 +134,7 @@ The following sequence is a high level view of the whole switch sequence when th
 1. The OS calls the mux's ACPI method to switch from GPU0 to GPU1.
 1. The OS enables GPU0's [**DxgkDdiQueryConnectionChange**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryconnectionchange) to be called again.
 1. The OS calls GPU0's **DxgkDdiQueryConnectionChanges** to process the [**MonitorStatusDisconnected**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_connection_status) connection packet with **DisplayMuxConnectionChange** set to 1.
-1. The OS calls GPU0's [**DxgkddiSettimingsfromvidpn**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_settimingsfromvidpn) to inactivate the path of the display that is being switched from. GPU0's driver should:
+1. The OS calls GPU0's [**DxgkddiSettimingsfromvidpn**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_settimingsfromvidpn) to deactivate the path of the display that is being switched from. GPU0's driver should:
     * Turn panel power off.
     * Disable the brightness signal.
     * Stop sending brightness level to mux.
