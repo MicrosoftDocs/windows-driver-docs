@@ -26,7 +26,7 @@ For the sample driver, the code remains intact for the WPD\_COMMAND\_OBJECT\_ENU
 
 The driver calls the **WpdObjectEnumerator::OnStartFind** handler in response to the WPD\_COMMAND\_OBJECT\_ENUMERATION\_START\_FIND command. The handler, in turn, creates, initializes, and adds a new enumeration context to the client context map. For the sample driver, the **InitializeEnumerationContext** helper function that is called from within the **OnStartFind** handler was modified.
 
-The modifications to both the **OnStartFind** handler and the **InitializeEnumerationContext** helper function included removing support for objects that were no longer supported (the storage, folder, and file objects) and adding support for the sensor object. The following is the code for the **InitalizeEnumerationContext** helper function:
+The modifications to both the **OnStartFind** handler and the **InitializeEnumerationContext** helper function included removing support for objects that were no longer supported (the storage, folder, and file objects) and adding support for the sensor object. The following is the code for the **InitializeEnumerationContext** helper function:
 
 ```cpp
 VOID WpdObjectEnumerator::InitializeEnumerationContext(
