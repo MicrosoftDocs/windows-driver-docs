@@ -27,9 +27,17 @@ A noncompliant USB device can cause a poor user experience, difficult public rel
 
 ## Windows HLK requirements for USB-IF tests
 
+- Host controllers (**Device.BusController.UsbController.UsbifCertification**)
+
+    USB host controller manufacturers must obtain full USB-IF certification in order to meet their respective Windows HLK requirements.
+
+- USB4 host routers (**Device.BusController.UsbController.USB4.UsbifCertification**)
+
+    USB4 Host Routers must obtain USB-IF certification as described [here](https://learn.microsoft.com/en-us/windows-hardware/test/hlk/testref/cbc811b5-f155-4831-bc96-5c70d9573a98).
+  
 - Devices (**Device.Connectivity.UsbDevices.UsbifCertification**):
 
-    We strongly recommend USB-IF certification. However, the Windows HLK requirement **Device.Connectivity.UsbDevices.UsbifCertification** no longer requires USB-IF certification for USB devices. The requirement states that the device can be either USB-IF certified, or that a subset of the USB-IF's certification tests can be run on the device.
+    We strongly recommend USB-IF certification for USB devices. However, the Windows HLK requirement **Device.Connectivity.UsbDevices.UsbifCertification** no longer requires USB-IF certification for USB devices. The requirement states that the device can be either USB-IF certified, or that a subset of the USB-IF's certification tests can be run on the device.
 
 - Host controllers (**Device.BusController.UsbController.UsbifCertification**)
 
