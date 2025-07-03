@@ -33,7 +33,7 @@ A noncompliant USB device can cause a poor user experience, difficult public rel
 
 - USB4 host routers (**Device.BusController.UsbController.USB4.UsbifCertification**)
 
-    USB4 Host Routers must obtain USB-IF certification as described [here](https://learn.microsoft.com/en-us/windows-hardware/test/hlk/testref/cbc811b5-f155-4831-bc96-5c70d9573a98).
+    USB4 host routers must obtain USB-IF certification as described in [USB4 USB Implementers Forum (IF) certification test](/windows-hardware/test/hlk/testref/cbc811b5-f155-4831-bc96-5c70d9573a98).
   
 - Devices (**Device.Connectivity.UsbDevices.UsbifCertification**):
 
