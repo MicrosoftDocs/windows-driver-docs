@@ -17,7 +17,7 @@ The following is required:
 
 - On the target computer, a Synopsys USB 3.0 controller connected to an USB type C port.
 
-- On the host computer, an externally accesible  USB 3.0 port is required.
+- On the host computer, an externally accessible USB 3.0 port is required.
 
 - Windows 10 October 2020 Update (20H2) or later
 
