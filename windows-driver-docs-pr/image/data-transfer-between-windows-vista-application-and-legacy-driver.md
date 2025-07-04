@@ -19,7 +19,7 @@ The simplest way to implement this part of the compatibility layer have been to 
 
 However, a legacy driver does not support **WiaImgFmt\_BMP**, but **WiaImgFmt\_MEMORYBMP** for TYMED\_CALLBACK. Therefore, the conversion callback object has to create the BMP file header and write this file header back to the application as well. Sometimes this is easy, such as when the BMP file header can be directly constructed from the BMP info header. There are cases however when the height of the BMP info header is set to 0. In this case, the WIA compatibility layer must wait until all the data has been transferred before it can write the BMP file header and update the BMP info header.
 
-The reason TYMED transfers, other than just TYMED\_CALLBACK, are preformed from a legacy driver is that multi-page formats are typically only supported by TYMED\_MULTIPAGE\_FILE, and drivers typically support more formats for TYMED\_FILE than for TYMED\_CALLBACK..
+The reason TYMED transfers, other than just TYMED\_CALLBACK, are performed from a legacy driver is that multi-page formats are typically only supported by TYMED\_MULTIPAGE\_FILE, and drivers typically support more formats for TYMED\_FILE than for TYMED\_CALLBACK..
 
 During a TYMED\_FILE transfer the compatibility layer waits until the transfer is finished before it writes the data back to the application's stream. This is done by mapping the file to memory and writing all the data in the memory back in one single write request.
 
