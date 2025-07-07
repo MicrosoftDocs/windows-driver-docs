@@ -14,7 +14,7 @@ The Mobile Plans app has a built-in retry solution that attempts to repair situa
 
 ## Handling eSIM download errors
 
-The Mobile Plans app has a feature that passes error codes to the MO portal once the user re-enters the portal. The following example shows how the app passes relevant paremeters.
+The Mobile Plans app has a feature that passes error codes to the MO portal once the user re-enters the portal. The following example shows how the app passes relevant parameters.
 
 ```HTTP
 GET https://moportal.com/?market=US&location=US&transactionId=HADRdRhKI0S5bN4n.1&eid=89033023422130000000000199272786&imei=001102000224082 HTTP/1.1

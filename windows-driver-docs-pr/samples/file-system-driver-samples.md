@@ -1,7 +1,7 @@
 ---
 title: File System and Filter Driver Samples
 description: The driver samples in this directory provide a starting point for writing custom file system drivers and file system filter drivers.
-ms.date: 04/30/2025
+ms.date: 05/01/2025
 ---
 
 # File system and filter driver samples
@@ -32,4 +32,4 @@ The driver samples in this directory provide a starting point for writing a cust
 | [PassThrough File System Minifilter Driver](/samples/microsoft/windows-driver-samples/passthrough-file-system-minifilter-driver) | Demonstrates how to specify callback functions for different types of I/O requests. |
 | [Scanner File System Minifilter Driver](/samples/microsoft/windows-driver-samples/scanner-file-system-minifilter-driver) | A file data scanner example. Typically, anti-virus filters are of this type. |
 | [SimRep File System Minifilter Driver](/samples/microsoft/windows-driver-samples/simrep-file-system-minifilter-driver) | Demonstrates how a file system filter can simulate file-system like reparse-point behavior to redirect a file open to an alternate path. |
-| [SwapBuffer File System Minifilter Driver](/samples/microsoft/windows-driver-samples/swapbuffer-file-system-minifilter-driver) | Demonstrates how to switch buffers between reads and writes of data. This technique is particularly useful for encryption filters. |
+| [SwapBuffer File System Minifilter Driver](/samples/microsoft/windows-driver-samples/swapbuffer-file-system-minifilter-driver) | Demonstrates how to switch buffers between reads and writes of data. This technique is useful for encryption filters. |

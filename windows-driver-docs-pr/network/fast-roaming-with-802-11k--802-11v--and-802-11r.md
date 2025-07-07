@@ -1,42 +1,36 @@
 ---
-title: Fast Roaming with 802.11k, 802.11v, and 802.11r
-description: This section describes improved WLAN roaming experiences with 802.11k, 801.11v, and 802.11r.
-ms.date: 06/28/2024
+title: Fast Roaming in Windows 10 with 802.11k, 802.11v, and 802.11r
+description: Learn how fast roaming with 802.11k, 802.11v, and 802.11r improves WLAN performance in Windows 10. Discover benefits and requirements.
+ms.date: 05/15/2025
 ---
 
-# Fast Roaming with 802.11k, 802.11v, and 802.11r
+# Fast Roaming in Windows 10 with 802.11k, 802.11v, and 802.11r
+
+Fast roaming with 802.11k, 802.11v, and 802.11r lets Windows 10 devices switch between wireless access points more quickly. This article explains how these standards improve WLAN performance and give you faster, more reliable connections.
+
+## How 802.11k neighbor reports improve roaming
+
+Wireless access points (APs) that support 802.11k give Neighbor Reports to devices running Windows 10. Neighbor Reports have information about neighboring access points and help the device understand its surroundings. Windows 10 uses this capability to shorten the list of channels the device scans before finding a neighboring AP to roam to.
+
+## How 802.11v transition management improves WLAN
+
+APs that support 802.11v can direct Windows 10 devices to roam to another AP that gives a better WLAN experience. Windows 10 devices accept and respond to these Basic Service Set (BSS) Transition Management frames, which improves WLAN quality when connected to a network that supports 802.11v.
+
+## How 802.11r fast BSS transition enhances roaming
+
+Fast BSS Transition reduces the time a Windows 10 device needs to transition to an AP that supports 802.11r. Fewer frames are exchanged with the AP before data transfer, so latency sensitive applications, like an active Skype call, have better connection quality. Windows 10 supports Fast BSS Transitions over networks that use 802.1X as the authentication method. Pre-Shared Key (PSK) and open networks aren't supported.
+
+With 802.11k, 802.11v, and 802.11r, Windows 10 uses industry standards to improve the roaming experience for you. VoIP applications use this improved roaming to deliver better call quality when you're moving.
+
+## Important considerations for fast roaming
+
+Not all Windows 10 devices support 802.11k, 802.11v, and 802.11r. The WLAN radio driver must support these features for them to work on Windows 10. Check with your device manufacturer to see if your device supports these features. The network (AP controllers and APs) must also support these features. Check with your network admin to see if these features are supported and enabled on your network.
+
+Windows 10 supports Opportunistic Key Caching (OKC) when 802.11r isn't available on the device or the network.
+
+All three features need AP-side support and don't work unless they're enabled on the APs.
 
 
-Improved WLAN roaming experiences are available to devices running Windows 10. Industry standard implementations that reduce the time needed for a device to roam from one wireless access point (AP) to another are supported.
-
-## 802.11k (Neighbor Reports)
-
-
-Wireless Access Points (APs) that support 802.11k are able to provide Neighbor Reports to devices running Windows 10. Neighbor Reports contain information about neighboring access points and allows the device to have a better understanding of its surroundings. Windows 10 takes advantage of this capability by shortening the list of channels that the device needs to scan before finding a neighboring AP to roam to.
-
-## 802.11v (BSS Transition Management Frames)
-
-
-APs that support 802.11v can now direct Windows 10 devices to roam to another AP that it deems will provide a better WLAN experience for the device. Windows 10 devices can now accept and respond to these Basic Service Set (BSS) Transition Management frames, leading to improved WLAN quality when connected to a network that supports 802.11v.
-
-## 802.11r (Fast BSS Transition)
-
-
-Fast BSS Transition reduces the time needed for a Windows 10 device to transition to an AP that supports 802.11r. This time reduction results from fewer frames being exchanged with the AP prior to data transfer. By decreasing the time before data transfer when the device roams from one AP to another, the connection quality is improved for latency sensitive applications, such as an active Skype call. Windows 10 supports Fast BSS Transitions over networks using 802.1X as the authentication method. Pre-Shared Key (PSK) and Open Networks are currently not supported.
-
-With the combination of 802.11k, 802.11v, and 802.11r, Windows 10 takes advantage of established industry standards to improve the roaming experience for our users. VoIP applications can now take advantage of this improved roaming to deliver better call quality when users are not stationary.
-
-## Things to note
-
-Not all Windows 10 devices support 802.11k, 802.11v, and 802.11r. The WLAN Radio driver must support these features to enable them to work on Windows 10. Please check with your device manufacturer to determine whether or not your device supports these features. In addition to device-side support, the network (AP Controllers and APs) must also support the features for the experience to work. Please check with your network administrator to see if these features are supported and have been enabled on the network in question.
-
-Windows 10 continues to support Opportunistic Key Caching (OKC) when 802.11r is not available on the device or the network.
-
-All three features require AP-side support and don't work unless those features are enabled on the APs.
-
- 
-
- 
 
 
 

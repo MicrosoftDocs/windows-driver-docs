@@ -141,7 +141,7 @@ The following is a list of feature additions and updates for WDDM 2.1.
 
 * Driver Store installation for graphics drivers to improve driver upgrade resiliency.
 
-* DXIL, a new shader complier language
+* DXIL, a new shader compiler language
 
 * D3D12 performance and optimization improvements
 

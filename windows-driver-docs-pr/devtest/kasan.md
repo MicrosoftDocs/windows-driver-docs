@@ -32,6 +32,8 @@ KASAN is supported only on x64.
    reg add "HKLM\System\CurrentControlSet\Control\Session Manager\Kernel" /v KasanEnabled /t REG_DWORD /d 1
    ```
 
+   Setting this registry key instructs the Windows kernel to prepare for, and accept loading KASAN instrumented drivers. Not setting this registry key causes the Windows kernel to refuse loading KASAN instrumented drivers.
+
 1. Reboot your target system for the change to take effect.
 
 1. Recompile your kernel driver with KASAN instrumentation enabled by passing a new flag to the MSVC compiler. Use either of the following methods:
@@ -76,9 +78,16 @@ In KASAN, we consider that all of the kernel memory is divided in contiguous chu
 |--|--|
 | `0x00` | The cell is entirely valid: accesses to all eight bytes of the cell are legal. |
 | `0x01` -> `0x07` | The cell is partially valid: the first *value* bytes in the cell are valid, but the rest are invalid. |
+| `0x08` -> `0x7F` | The cell is conditionally valid: accesses to all eight bytes of the cell can be legal or illegal depending on specific conditions. |
 | >= `0x80` | The cell is entirely invalid: accesses to all eight bytes of the cell are illegal. |
 
-Several sub-codes are used for the entirely invalid cells to further indicate what type of memory the cell is associated to, and why it is invalid:
+Several sub-codes are used for the conditionally valid and entirely invalid cells to further indicate what type of memory the cell is associated to, and why access to it may be illegal.
+
+Sub-codes used by conditionally valid cells:
+
+ - `0x09`: pageable memory, which is illegal to access at *DISPATCH_LEVEL* or above, but legal to access otherwise.
+
+Sub-codes used by entirely invalid cells:
 
  - `0x81`: left redzone of alloca.
  - `0x82`: middle redzone of alloca.
@@ -86,7 +95,7 @@ Several sub-codes are used for the entirely invalid cells to further indicate wh
  - `0x84`: right redzone of global variable.
  - `0x85`: generic redzone.
  - `0x86`: right redzone of pool memory.
- - `0x87`: freed memory.
+ - `0x87`: freed pool memory.
  - `0x8A`: left redzone of contiguous memory.
  - `0x8B`: right redzone of contiguous memory.
  - `0x8C`: freed lookasidelist memory.

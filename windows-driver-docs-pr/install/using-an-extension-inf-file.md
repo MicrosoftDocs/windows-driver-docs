@@ -1,7 +1,7 @@
 ---
 title: Using an Extension INF File
 description: Starting in Windows 10, you can extend a driver package's functionality by providing an additional INF file called an extension INF.
-ms.date: 05/08/2023
+ms.date: 05/02/2025
 ms.topic: how-to
 ---
 
@@ -243,12 +243,16 @@ To improve extensibility, we recommend that an IHV put optional functionality in
 
 ## Backward compatibility
 
-Any change to the base driver package must be thoroughly tested to ensure that it doesn't break backward compatibility for existing extension INFs.
+Changes to both base driver packages and extension driver packages must be thoroughly tested to ensure that the changes don't break backward compatibility for existing driver packages. Newer base driver packages may be installed with older extension driver packages and newer extension driver packages may be installed with older base driver packages. These situations should not cause reliability or stability problems on the system.
 
-When managing a base driver package, follow these best practices:
+When managing a base driver package that expects to be extended by an extension driver package, follow these best practices:
 
-- Document parameter value ranges and constraints both in code comments and in a design document. Future changes must conform to the specified ranges.
+- Document what parameters the extension driver package can set to modify base driver package behavior. Document parameter names, locations, value ranges, and constraints both in code comments and in a design document. Share this design document with partners that will be writing extension driver packages to extend the base driver package. Future changes to the base driver package must maintain compatibility with the specified ranges.
 - To support new ranges, add an optional parameter (no default value).
+
+When managing an extension driver package, follow these best practices:
+
+- Adhere to the constraints set forth in a design document from the base driver package owner as to how the extension driver package should extend the base driver package.
 
 ## Submitting an extension INF for certification
 

@@ -1,6 +1,6 @@
 ---
 title: Task Manager Live Memory Dump
-description: This topic describes how to take a live kernel memory dump using task manger.
+description: This topic describes how to take a live kernel memory dump using task manager.
 ms.date: 12/12/2024
 ms.topic: concept-article
 ---

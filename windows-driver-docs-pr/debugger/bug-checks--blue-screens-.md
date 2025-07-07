@@ -48,7 +48,7 @@ For general troubleshooting of Windows bug check codes, follow these suggestions
 
 - You can try running the hardware diagnostics supplied by the system manufacturer.
 
-- Check the system log in Event Viewer for other error messages that might help pinpoint the device or driver that's causing the error. For more information, see [Open Event Viewer](/microsoft-365/security/defender-endpoint/event-error-codes). Look for critical errors in the system log that occurred in the same time frame as the blue screen.
+- Check the system log in Event Viewer for other error messages that might help pinpoint the device or driver that's causing the error. Look for critical errors in the system log that occurred in the same time frame as the blue screen.
 
 - Run the Windows Memory Diagnostics tool to test the memory. In the Control Panel search box, type **Memory**, and then select **Diagnose your computer's memory problems**.‌ After the test is run, use Event Viewer to view the results under the system log. Look for the *MemoryDiagnostics-Results* entry to view the results.
 

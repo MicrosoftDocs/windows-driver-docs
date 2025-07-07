@@ -170,7 +170,7 @@ please try resync with target, recycle the host debugger, or reboot the target W
 
 This issue can happen because the pci.sys driver is probing the debug device. To eliminate these error messages, create the following registry entry on the TARGET device at an administrator command prompt.
 
-This setting can also allow the debugger to connect if the initial KD transport failed to connect at boot, for some other reason, for example if the the debug device could not be configured at boot.
+This setting can also allow the debugger to connect if the initial KD transport failed to connect at boot, for some other reason, for example if the debug device could not be configured at boot.
 
 ```console
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\SERVICES\kdnet /v SkipPciProbeDebugDevice /t REG_DWORD /d 1 /f

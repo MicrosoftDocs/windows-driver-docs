@@ -2,7 +2,7 @@
 title: "Time travel debugging release notes"
 description: "This topic provides information on what's new in Time Travel Debugging."
 keywords: ["release notes", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 11/15/2024
+ms.date: 06/23/2025
 ms.topic: release-notes
 ---
 
@@ -12,6 +12,21 @@ ms.topic: release-notes
 
 This topic provides information on what's new in Time Travel Debugging.
 
+## 1.11.532
+
+This is a maintenance release that makes improvements to recording robustness. This TTD release coincides with the June 2025 release of Windbg. One new feature is the Position data model object now reports percentage into the trace.
+
+### Changed
+
+- Miscellaneous infrastructure maintenance.
+- Use the ISO standard implementation of C++ volatile. (1.11.518)
+- Add Percent to Position data model projection. (1.11.514)
+
+### Fixed
+
+- Increase the robustness of TTD's handling of decoded instructions. (1.11.530)
+- Remove uses of XSAVE in the emulator and optimize internal register transfer. (1.11.509)
+
 ## 1.11.506
 
 This is a minor release to coincide with the April 2025 release of WinDbg.
@@ -20,7 +35,7 @@ This is a minor release to coincide with the April 2025 release of WinDbg.
 
 - Clicking on a TTD position in the data model (i.e. in the Modules list) navigates to that position in the trace. (1.11.492)
 
-  Note: The command window will not show the updated TTD position until the next step or run command is executed.
+  Note: The command window won't show the updated TTD position until the next step or run command is executed.
 
 ### Fixed
 
@@ -35,7 +50,7 @@ We have revamped the !tt command to give you more powerful ways to navigate thro
 - Find the previous/next time execution moves to a different module (!tt bm)
 - Find the previous/next time execution moves to a specific module (!tt bm ntdll)
 
-For more details see the [documentation](time-travel-debugging-extension-tt.md).
+For more details see [!tt (time travel)](time-travel-debugging-extension-tt.md).
 
 Some notable fixes:
 - "Error: 64 bit value loses precision on conversion to number" messages when using `@$cursession.TTD.Data.Heap()` on 32-bit trace are gone.
@@ -84,7 +99,7 @@ Fixes:
 Improved accessibility: Progress UI now properly scales with Text Size changes.
 
 The ```@$cursession.TTD.Calls()``` command in the debugger now supports wildcards that match a large number of functions.
-It is now possible to query for large numbers of functions (```@$cursession.TTD.Calls("kernel32!*")```).
+It's now possible to query for large numbers of functions (```@$cursession.TTD.Calls("kernel32!*")```).
 
 Automation: A new ```-onMonitorReadyEvent``` command-line option indicates when the recording monitor (```-monitor``` switch)
 is ready to record new processes.
@@ -203,7 +218,7 @@ This release increases visibility of certain error messages by extracting them f
 
 ### Fixed
 
-- Fix file conflict while reading .out file from seperate process. (1.11.171)
+- Fix file conflict while reading .out file from separate process. (1.11.171)
 - Fix rare crash during trace replay. (1.11.166)
 
 ## 1.11.163
@@ -224,7 +239,7 @@ This release is the first public release of the command line recorder. Along wit
 enable public release of the command line recorder, this release also includes a number of bug fixes, including
 a couple of fixes to the CPU emulator.
 
-The new ```-timestampFileName``` switch enables timestamp-based .run file generation. This is useful when you are
+The new ```-timestampFileName``` switch enables timestamp-based .run file generation. This is useful when you're
 recording many instances of the same process, and want to minimize recording startup time.
 
 ### Changed

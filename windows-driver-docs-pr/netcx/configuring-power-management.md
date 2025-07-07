@@ -127,7 +127,7 @@ EvtDeviceArmWakeFromSx(
 
     NetDeviceGetWakeSourceList(Device, &wakeSourceList);
 
-    for(UINT32 i = 0; i < NetWakeSourceListGetCount(&wakeSourceList; i++); i++)
+    for(UINT32 i = 0; i < NetWakeSourceListGetCount(&wakeSourceList); i++)
     {
         NETWAKESOURCE wakeSource = NetWakeSourceListGetElement(&wakeSourceList, i);
         NET_WAKE_SOURCE_TYPE const wakeSourceType = NetWakeSourceGetType(wakeSource);

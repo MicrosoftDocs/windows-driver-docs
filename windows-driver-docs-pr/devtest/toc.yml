@@ -10,8 +10,14 @@
     href: static-and-dynamic-verification-tools.md
   - name: CodeQL and the Static Tools Logo Test
     items:
-    - name: CodeQL and Static Tools Logo Test
+    - name: CodeQL Overview
+      href: codeql-overview.md
+    - name: Run the CodeQL analysis on your driver code
       href: static-tools-and-codeql.md
+    - name: CodeQL Queries and Suites
+      href: codeql-queries.md
+    - name: CodeQL FAQ
+      href: codeql-faq.md
     - name: Supplemental Windows Driver CodeQL Queries
       items:
       - name: Supplemental Windows Driver CodeQL Queries

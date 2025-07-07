@@ -293,7 +293,7 @@ For the ErrorReport , VALUE can be the combination of the following values.
 
 0x00000100 means the stack trace for this stop will be logged in the log file.
 
-For the Severity , VALUE can be one of followings.
+For the Severity, VALUE can be one of the following.
 
 0x00000003 Informative stop.
 

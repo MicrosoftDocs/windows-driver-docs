@@ -2,13 +2,13 @@
 title: Updating Deprecated ExAllocatePool Calls to ExAllocatePool2 and ExAllocatePool3
 description: Learn about Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3
 keywords: ["memory management WDK kernel , system-allocated space", "system-allocated space WDK kernel", "allocating system-space memory", "allocating I/O buffer memory", "ExAllocatePool3", "ExAllocatePool2"]
-ms.date: 01/11/2021
+ms.date: 05/01/2025
 ms.topic: concept-article
 ---
 
 # Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3
 
-The following DDIs are deprecated starting with  Windows 10, version 2004 and should be replaced as described in this topic.
+The following DDIs are deprecated starting with  Windows 10, version 2004 and should be replaced as described in this article.
 
 [ExAllocatePool](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool)
 
@@ -22,14 +22,14 @@ The following DDIs are deprecated starting with  Windows 10, version 2004 and sh
 
 ## Driver updates for versions of Windows 10, version 2004 and later
 
-If you are building a driver that targets Windows 10, version 2004 and later, use the replacement APIs [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) and [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3) instead.
+If you're building a driver that targets Windows 10, version 2004 and later, use the replacement APIs [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) and [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3) instead.
 
-| Old API                       | New API                                                                     |
-|-------------------------------|-----------------------------------------------------------------------------|
-| ExAllocatePool                | [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) |
-| ExAllocatePoolWithTag         | [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) |
-| ExAllocatePoolWithQuota       | [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) |
-| ExAllocatePoolWithQuotaTag    | [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) |
+| Old API | New API |
+|--|--|
+| ExAllocatePool | [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) |
+| ExAllocatePoolWithTag | [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) |
+| ExAllocatePoolWithQuota | [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) |
+| ExAllocatePoolWithQuotaTag | [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) |
 | ExAllocatePoolWithTagPriority | [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3) |
 
 The new APIs will zero pool allocations by default, to help avoid possible memory disclosure bugs.  
@@ -76,7 +76,7 @@ PVOID Allocation = ExAllocatePool3(POOL_FLAG_PAGED, 100, 'abcd', &params, 1);
 
 ## Driver updates for versions of Windows earlier than Windows 10, version 2004
 
-If you are building a driver that targets versions of Windows prior to Windows 10, version 2004, you must use the following force inline wrapper functions.
+If you're building a driver that targets versions of Windows prior to Windows 10, version 2004, you must use the following force inline wrapper functions.
 
 You must also #define POOL_ZERO_DOWN_LEVEL_SUPPORT and call [ExInitializeDriverRuntime](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializedriverruntime) during driver initialization, before calling the pool allocation functions.
 
@@ -134,12 +134,12 @@ Refer to the latest wdm.h header for the implementation code for these code wrap
 
 ### Mapping of old APIs to new APIs
 
-| Old API                       | New API                    |
-|-------------------------------|----------------------------|
-| ExAllocatePool                | ExAllocatePoolZero         |
-| ExAllocatePoolWithTag         | ExAllocatePoolZero         |
-| ExAllocatePoolWithQuota       | ExAllocatePoolQuotaZero    |
-| ExAllocatePoolWithQuotaTag    | ExAllocatePoolQuotaZero    |
+| Old API | New API |
+|--|--|
+| ExAllocatePool | ExAllocatePoolZero |
+| ExAllocatePoolWithTag | ExAllocatePoolZero |
+| ExAllocatePoolWithQuota | ExAllocatePoolQuotaZero |
+| ExAllocatePoolWithQuotaTag | ExAllocatePoolQuotaZero |
 | ExAllocatePoolWithTagPriority | ExAllocatePoolPriorityZero |
 
 ### Example
@@ -164,11 +164,11 @@ PVOID Allocation = ExAllocatePoolZero(PagedPool, 100, 'abcd');
 
 ## Driver verifier UnSafeAllocatePool rules
 
-The driver verifier [UnSafeAllocatePool](../devtest/kmdf-unsafeallocatepool.md) rule is an important security rule that checks that a driver is not using deprecated DDIs to allocate memory. This rule is available in preview WDK builds 20236 and above.
+The driver verifier [UnSafeAllocatePool](../devtest/kmdf-unsafeallocatepool.md) rule is an important security rule that checks that a driver isn't using deprecated DDIs to allocate memory. This rule is available in preview WDK builds 20236 and above.
 
 ## See Also
 
-[ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) 
+[ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2)
 
 [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3)
 

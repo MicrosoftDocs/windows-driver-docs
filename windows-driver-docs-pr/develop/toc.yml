@@ -92,6 +92,8 @@
     href: driver-signing-properties.md
 - name: Deploying Drivers
   items:
+  - name: Safe Deployment Best Practices for Drivers
+    href: safe-deployment-best-practices-for-drivers.md
   - name: Deploying a Driver to a Test Computer
     href: deploying-a-driver-to-a-test-computer.md
   - name: Deployment Properties for Driver Package Projects
