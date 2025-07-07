@@ -1,7 +1,7 @@
 ---
 title: Kiosk Apps for Assigned Access Best Practices
 description: Describes how to implement a kiosk app using best practices.
-ms.date: 03/20/2024
+ms.date: 05/12/2025
 ms.topic: best-practice
 ---
 
@@ -13,9 +13,9 @@ There are two different experiences that assigned access provides:
 
 1. The single-app kiosk experience
 
-    Assign one app to an account. When a user logs in, they'll have access to only this app and nothing else on the system. During this time, the kiosk device is locked, with the kiosk app running above the lock screen. This experience is often used for public-facing kiosk machines. see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions) for more information.
+    Assign one app to an account. When a user logs in, they have access to only this app and nothing else on the system. During this time, the kiosk device is locked, with the kiosk app running above the lock screen. This experience is often used for public-facing kiosk machines. see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions) for more information.
 
-2. The multi-app kiosk experience (available in Windows 10, version 1709 and later)
+1. The multi-app kiosk experience (available in Windows 10, version 1709 and later)
 
     You can assign one or more apps to an account. When a user logs in, the device starts in a restricted shell experience with access to only your selected apps. See [Create a Windows 10 kiosk that runs multiple apps](/windows/configuration/lock-down-windows-10-to-specific-apps) for more information.
 
@@ -25,7 +25,7 @@ This article describes the single-app kiosk experience only. In the multi-app ex
 
 | Term | Description |
 |--|--|
-| assigned access | A feature that allows a system administrator to manage the user's experience by limiting application entry points exposed to the user of the device. For example, you can restrict customers at your business to using one app so your PC acts like a kiosk. Whenever someone signs in with the specified account, they'll only be able to use that one app. They won't be able to switch apps or close the app using touch gestures, a mouse, the keyboard, or hardware buttons. They also won't see any app notifications. |
+| assigned access | A feature that allows a system administrator to manage the user's experience by limiting application entry points exposed to the user of the device. For example, you can restrict customers at your business to using one app so your PC acts like a kiosk. Whenever someone signs in with the specified account, they're only able to use that one app. They can't switch apps or close the app using touch gestures, a mouse, the keyboard, or hardware buttons. They also won't see any app notifications. |
 | lock screen app (or lock app) | An application that either takes advantage of the ability to set a dynamic wallpaper or that takes advantage of the new lock extensibility framework. |
 | above lock screen app (or above lock app) | An application that launches above the lock screen while lock screen app is running (for example, when the desktop is locked). |
 | under lock app | An application that runs normally, in an unlocked Windows context. |
@@ -38,13 +38,13 @@ Assigned access in Windows 10 uses the lock framework. When an assigned access u
 
 Using **windows.aboveLockScreen** enables your kiosk app to access the [LockApplicationHost](/uwp/api/Windows.ApplicationModel.LockScreen.LockApplicationHost) runtime class, which enables the app to know when it's running above the lock (and therefore running as a kiosk experience). If an instance can't be returned, the app is running in a regular desktop context.
 
-When the lock framework launches the kiosk app above the lock and the app has the **windows.aboveLockScreen** extension, the lock framework automatically creates a new secondary view above the lock. The main view is located under the lock. This secondary view contains your app's content and be what the user sees. This additional view can be used with the extension to tailor your kiosk experience. For example, you can:
+When the lock framework launches the kiosk app above the lock and the app has the **windows.aboveLockScreen** extension, the lock framework automatically creates a new secondary view above the lock. The main view is located under the lock. This secondary view contains your app's content and be what the user sees. This view can be used with the extension to tailor your kiosk experience. For example, you can:
 
 - [Secure your kiosk experience](#secure-your-information) by creating a separate page to display kiosk-only content.
 
-- Call the **LockApplicationHost.RequestUnlock()** method from your app to [Add a way out of Assigned Access mode](#add-a-way-out-of-assigned-access) and go back to the login screen.
+- Call the **LockApplicationHost.RequestUnlock()** method from your app to [Add a way out of Assigned Access mode](#add-a-way-out-of-assigned-access) and go back to the sign-in screen.
 
-- [Add an event handler](#add-a-way-out-of-assigned-access) to the **LockApplicationHost.Unlocking* event that fires when a user presses Ctrl+Alt+Del to exit the kiosk experience. The handler could also be used to save any data before exiting.
+- [Add an event handler](#add-a-way-out-of-assigned-access) to the **LockApplicationHost.Unlocking** event that fires when a user presses Ctrl+Alt+Del to exit the kiosk experience. The handler could also be used to save any data before exiting.
 
 If the app doesn't have the **windows.aboveLockScreen** extension, no secondary view is created and the app launches as if it's running normally. Additionally, because the app won't have access to an instance of LockApplicationHost it won't be able to determine if it's running in a regular context, or for a kiosk experience. Not including the extension has benefits, such as being able to support [multiple monitors](#dispatcher)
 
@@ -64,7 +64,7 @@ If the kiosk app is meant to run both above lock in assigned access and also in 
 
 1. If the call fails, the kiosk app should launch normally, under the lock.
 
-1. If the call succeeds, the kiosk app should launch above the lock running in assigned access mode. You may want this version of the kiosk app to have a different main page to hide sensitive information.
+1. If the call succeeds, the kiosk app should launch above the lock running in assigned access mode. You might want this version of the kiosk app to have a different main page to hide sensitive information.
 
 The following sample demonstrates how to do this. AssignedAccessPage.xaml is predefined, and the app navigates to AssignedAccessPage.xaml once it detects that is running in above lock mode. As a result, the normal page would display only in the under lock scenario.
 
@@ -99,10 +99,10 @@ if (rootFrame.Content == null)
 
 Starting in Windows 10, version 1803, [Multiple views](/windows/uwp/design/layout/show-multiple-views) are supported in the kiosk experience for apps that don't have the **windows.aboveLockScreen** extension. To use multiple views, ensure the kiosk device's **Multiple displays** option is set to **Extend these displays**.
 
-When an app with multiple views (and without **windows.aboveLockScreen**) is launched during a kiosk experience, the main view of the app will be rendered on the first monitor. If a new view is created by app using [CreateNewView()](/uwp/api/windows.applicationmodel.core.coreapplication), it is rendered on the second monitor. If the app creates another view, it will go to the third monitor, and so on.
+When an app with multiple views (and without **windows.aboveLockScreen**) is launched during a kiosk experience, the main view of the app will be rendered on the first monitor. If a new view is created by app using [CreateNewView()](/uwp/api/windows.applicationmodel.core.coreapplication), it's rendered on the second monitor. If the app creates another view, it will go to the third monitor, and so on.
 
 > [!IMPORTANT]
-> Kiosk devices can only display one view per monitor. For example, if the kiosk device has only one monitor, it will always show the main view of the kiosk app. New views created by the app will not be displayed.
+> Kiosk devices can only display one view per monitor. For example, if the kiosk device has only one monitor, it will always show the main view of the kiosk app. New views created by the app won't be displayed.
 
 When a kiosk app has the **windows.aboveLockScreen** extension, and is running above the lock, it's initialized differently. Its main view is located under the lock, with a secondary view above it. This secondary view is what the user sees. Even if you don't explicitly create any new views, you'll still have two views in the app instance.  
 
@@ -153,11 +153,11 @@ When the app has windows.aboveLockScreen and runs as a kiosk experience, creatin
 Windows.ApplicationModel.Core.CoreApplication.CreateNewView(); //causes exception
 ```
 
-Because of this, you can't have multiple views or run on multiple monitors. If your app needs to support either, you'll need to remove the windows.aboveLockScreen extension from your app.
+Because of this, you can't have multiple views or run on multiple monitors. If your app needs to support either, you need to remove the windows.aboveLockScreen extension from your app.
 
 ### Add a way out of assigned access
 
-In some situations, the power button, escape button, or other buttons used to stop an application may not be enabled or available on the keyboard. In these situations, provide a way to stop assigned access, for instance a software key. The following event handler shows how to stop assigned access mode by responding to button select event that could be triggered by a software key.
+In some situations, the power button, escape button, or other buttons used to stop an application might not be enabled or available on the keyboard. In these situations, provide a way to stop assigned access, for instance a software key. The following event handler shows how to stop assigned access mode by responding to button select event that could be triggered by a software key.
 
 ```csharp
 LockApplicationHost^ lockHost = LockApplicationHost::GetForCurrentView();
@@ -169,7 +169,7 @@ LockApplicationHost^ lockHost = LockApplicationHost::GetForCurrentView();
 
 ### Lifecycle management
 
-A kiosk app's lifecycle is handled by the assigned access framework. If the app ends unexpectedly, the framework attempts to relaunch it. If however, a user presses Ctrl+Alt+Del to bring up the login screen, an unlocking event is triggered. The assigned access framework listens to the event, and will try to terminate the app.
+A kiosk app's lifecycle is handled by the assigned access framework. If the app ends unexpectedly, the framework attempts to relaunch it. If however, a user presses Ctrl+Alt+Del to bring up the sign-in screen, an unlocking event is triggered. The assigned access framework listens to the event, and will try to terminate the app.
 
 Your kiosk app can also register a handler for this event and perform actions before exiting. Saving any data is an example of this. See the code below for an example of registering a handler.
 
@@ -194,11 +194,11 @@ private void LockHost_Unlocking(LockApplicationHost sender, LockScreenUnlockingE
 }
 ```
 
-After the user presses Ctrl+Alt+Del and a login screen is shown, two things could happen:
+After the user presses Ctrl+Alt+Del and a sign-in screen is shown, two things could happen:
 
 1. The user knows the assigned access account password and unlocks the desktop. The assigned access framework starts, locks the desktop, and the lock screen app launches which in turn launches the kiosk app.
 
-1. The user doesn't know the password or doesn't take any further action. The login screen timeouts and the desktop relocks; the lock screen app launches which in turn launches the kiosk app.
+1. The user doesn't know the password or doesn't take any further action. The sign-in screen timeouts and the desktop relocks; the lock screen app launches which in turn launches the kiosk app.
 
 ### Don't create new windows or views in assigned access mode
 

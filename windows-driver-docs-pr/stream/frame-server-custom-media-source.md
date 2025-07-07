@@ -1,13 +1,13 @@
 ---
 title: Frame Server Custom Media Source
 description: Provides information on implementation of a Custom Media Source within the Frame Server architecture.
-ms.date: 05/08/2023
+ms.date: 05/08/2025
 ms.topic: concept-article
 ---
 
 # Frame Server Custom Media Source
 
-This topic provides information on implementation of a Custom Media Source within the Frame Server architecture.
+This article provides information on implementation of a Custom Media Source within the Frame Server architecture.
 
 ## AV Stream and Custom Media Source options
 
@@ -15,7 +15,7 @@ When deciding how to provide video capture stream support within the Frame Serve
 
 The AV Stream model is the standard camera driver model using an AV Stream miniport driver (kernel mode driver). Typically AV Stream drivers fall into two main categories: MIPI based drivers and USB Video Class drivers.
 
-For the Custom Media Source option, the driver model may be completely custom (proprietary) or may be based on a non-traditional camera source (such as file, or network sources).
+For the Custom Media Source option, the driver model might be completely custom (proprietary) or might be based on a non-traditional camera source (such as file, or network sources).
 
 ### AV Stream Driver
 
@@ -23,11 +23,11 @@ The main benefit of an AV Stream Driver approach is that the PnP and Power Manag
 
 However, it also means the underlying source must be a physical device with a kernel mode driver to interface with the hardware. For UVC devices, a Windows UVC 1.5 class driver is provided inbox so devices simply need to implement their firmware.
 
-For MIPI based devices, the vendor will need to implement their own AV Stream miniport driver.
+For MIPI based devices, the vendor needs to implement their own AV Stream miniport driver.
 
 ### Custom Media Source
 
-For sources whose device driver is already available (but not an AV Stream miniport driver) or sources which use non-traditional camera capture, an AV Stream Driver may not be viable. For example, an IP Camera connected over the network would not fit into an AV Stream Driver model.
+For sources whose device driver is already available (but not an AV Stream miniport driver) or sources which use nontraditional camera capture, an AV Stream Driver might not be viable. For example, an IP Camera connected over the network wouldn't fit into an AV Stream Driver model.
 
 In such situations, a Custom Media Source using the Frame Server model would be an alternative.
 
@@ -57,11 +57,11 @@ The first requirement is needed for two purposes:
 
 The Custom Media Source for Frame Server differs from the generic Custom Media Source in terms of security in the following manner:
 
-- Frame Server Custom Media Source runs as Local Service (not to be confused with Local System; Local Service is a very low privileged account on Windows machines).
+- Frame Server Custom Media Source runs as Local Service (not to be confused with Local System; Local Service is a low privileged account on Windows machines).
 
-- Frame Server Custom Media Source runs in Session 0 (System Service session) and cannot interact with the user desktop.
+- Frame Server Custom Media Source runs in Session 0 (System Service session) and can't interact with the user desktop.
 
-Given these constraints, Frame Server Custom Media Sources must not attempt to access protected parts of the file system nor the registry. Generally, read access is permitted, but write access is not.
+Given these constraints, Frame Server Custom Media Sources must not attempt to access protected parts of the file system nor the registry. Generally, read access is permitted, but write access isn't.
 
 ### Performance
 
@@ -71,7 +71,7 @@ As a part of the Frame Server model, there are two cases in how Custom Media Sou
 
 - During "camera" activation
 
-The Sensor Group generation is typically done during device installation and/or power cycle. Given this, we strongly recommended that Custom Media Sources avoid any significant processing during its creation and defer any such activity to the [IMFMediaSource::Start](/windows/win32/api/mfidl/nf-mfidl-imfmediasource-start) function. The Sensor Group generation will not attempt to start the Custom Media Source, merely query the various available streams/media types and source/stream attribute information.
+The Sensor Group generation is typically done during device installation and/or power cycle. Given this, we strongly recommended that Custom Media Sources avoid any significant processing during its creation and defer any such activity to the [IMFMediaSource::Start](/windows/win32/api/mfidl/nf-mfidl-imfmediasource-start) function. The Sensor Group generation won't attempt to start the Custom Media Source, merely query the various available streams/media types and source/stream attribute information.
 
 ## Stub Driver
 
@@ -84,11 +84,11 @@ The driver requirements are:
 - Register your "camera" (the Custom Media Source) device interface under the [KSCATEGORY_VIDEO_CAMERA](../install/kscategory-video-camera.md) category so it can be enumerated.
 
 > [!NOTE]
-> To allow enumeration by legacy DirectShow applications, your driver will need to also register under the [KSCATEGORY_VIDEO](../install/kscategory-video.md) and [KSCATEGORY_CAPTURE](../install/kscategory-capture.md).
+> To allow enumeration by legacy DirectShow applications, your driver needs to also register under the [KSCATEGORY_VIDEO](../install/kscategory-video.md) and [KSCATEGORY_CAPTURE](../install/kscategory-capture.md).
 
 - Add a registry entry under the device interface node (use the **AddReg** directive in your driver INF **DDInstall.Interface** section) which declares the CoCreate-able CLSID of your Custom Media Source COM object. This must be added using the following registry value name: **CustomCaptureSourceClsid**.
 
-This allows the "camera" source to be discovered by applications and when activated, informs the Frame Server service to intercept the activation call and re-route it to the CoCreated Custom Media Source.
+This allows the "camera" source to be discovered by applications and when activated, informs the Frame Server service to intercept the activation call and reroute it to the CoCreated Custom Media Source.
 
 ### Sample INF
 
@@ -215,10 +215,10 @@ REG_EXPAND_SZ = 0x00020000
 
 The above Custom Media Source registers under **KSCATEGORY_VIDEO**, **KSCATEGORY_CAPTURE**, and **KSCATEGORY_VIDEO_CAMERA** to ensure the "camera" is discoverable by any UWP and non-UWP apps searching for a standard RGB camera.
 
-If the Custom Media Source also exposes non-RGB streams (IR, Depth, and so on) it may optionally also register under the [KSCATEGORY_SENSOR_CAMERA](../install/kscategory-sensor-camera.md).
+If the Custom Media Source also exposes non-RGB streams (IR, Depth, and so on) it might optionally also register under the [KSCATEGORY_SENSOR_CAMERA](../install/kscategory-sensor-camera.md).
 
 > [!NOTE]
-> Most USB based webcams will expose YUY2 and MJPG formats. Because of this behavior, many legacy DirectShow applications are written with the assumption that YUY2/MJPG is available. To ensure compatibility with such application, it is recommended that YUY2 media type is made available from your Custom Media Source if legacy app compatibility is desired.
+> Most USB based webcams expose YUY2 and MJPG formats. Because of this behavior, many legacy DirectShow applications are written with the assumption that YUY2/MJPG is available. To ensure compatibility with such application, it's recommended that YUY2 media type is made available from your Custom Media Source if legacy app compatibility is desired.
 
 ### Stub Driver Implementation
 
@@ -451,9 +451,9 @@ Return Value:
 
 ### PnP Operation
 
-Just like any other physical camera, it is recommended that your stub driver manage at least the PnP operations of enabling and disabling the device when the underlying source is removed/attached. For example, if your Custom Media Source is using a network source (such as an IP camera), you may want to trigger a device removal when that network source is no longer available.
+Just like any other physical camera, it's recommended that your stub driver manage at least the PnP operations of enabling and disabling the device when the underlying source is removed/attached. For example, if your Custom Media Source is using a network source (such as an IP camera), you might want to trigger a device removal when that network source is no longer available.
 
-This ensures that applications listen for device add/removal via the PnP APIs get the proper notifications. And ensures that a source that is no longer available cannot be enumerated.
+This ensures that applications listen for device add/removal via the PnP APIs get the proper notifications. And ensures that a source that is no longer available can't be enumerated.
 
 For UMDF and KMDF drivers, see the [WdfDeviceSetDeviceState](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdevicestate) function documentation.
 
@@ -487,13 +487,13 @@ Each supported stream within the Custom Media Source must support the following 
 > [!NOTE]
 > **IMFMediaStream2** inherits from **IMFMediaStream** and **IMFMediaStream** inherits from **IMFMediaEventGenerator**.
 
-Refer to the [Writing a Custom Media Source](/windows/desktop/medfound/writing-a-custom-media-source) documentation on how to create a Custom Media Source. The rest of this section will explain the differences needed to support your Custom Media Source within the Frame Server framework.
+Refer to the [Writing a Custom Media Source](/windows/desktop/medfound/writing-a-custom-media-source) documentation on how to create a Custom Media Source. The rest of this section explains the differences needed to support your Custom Media Source within the Frame Server framework.
 
 ### IMFGetService
 
-**IMFGetService** is a mandatory interface for Frame Server Custom Media Source. **IMFGetService** may return **MF_E_UNSUPPORTED_SERVICE** if your Custom Media Source does not need to expose any additional service interfaces.
+**IMFGetService** is a mandatory interface for Frame Server Custom Media Source. **IMFGetService** might return **MF_E_UNSUPPORTED_SERVICE** if your Custom Media Source doesn't need to expose any other service interfaces.
 
-The following example show an **IMFGetService** implementation with no support service interfaces:
+The following example shows an **IMFGetService** implementation with no support service interfaces:
 
 ```cpp
 _Use_decl_annotations_
@@ -538,7 +538,7 @@ IFACEMETHOD(GetEvent)(DWORD dwFlags, _Out_ IMFMediaEvent **ppEvent);
 IFACEMETHOD(QueueEvent)(MediaEventType met, REFGUID guidExtendedType, HRESULT hrStatus, _In_opt_ const PROPVARIANT *pvValue);
 ```
 
-The following code shows the recommended implementation of the **IMFMediaEventGenerator** interface. The Custom Media Source implementation will expose the **IMFMediaEventGenerator** interface, and the methods for that interface will be routing the requests into the **IMFMediaEventQueue** object created during the media source creation/initialization.
+The following code shows the recommended implementation of the **IMFMediaEventGenerator** interface. The Custom Media Source implementation exposes the **IMFMediaEventGenerator** interface, and the methods for that interface are routing the requests into the **IMFMediaEventQueue** object created during the media source creation/initialization.
 
 In the code below, **_spEventQueue** object is the **IMFMediaEventQueue** created using the **MFCreateEventQueue** function:
 
@@ -621,15 +621,15 @@ SimpleMediaSource::QueueEvent(
 
 ### Seeking and Pausing
 
-Custom Media Sources supported through the Frame Server framework do not support Seek or Pause operations. Your Custom Media Source does not need to provide support for these operations and must not post either the **MFSourceSeeked** or **MEStreamSeeked** event.
+Custom Media Sources supported through the Frame Server framework don't support Seek or Pause operations. Your Custom Media Source doesn't need to provide support for these operations and must not post either the **MFSourceSeeked** or **MEStreamSeeked** event.
 
-[IMFMediaSource::Pause](/windows/win32/api/mfidl/nf-mfidl-imfmediasource-pause) should return **MF_E_INVALID_STATE_TRANSITION** (or **MF_E_SHUTDOWN** if the source was already shutdown).
+[IMFMediaSource::Pause](/windows/win32/api/mfidl/nf-mfidl-imfmediasource-pause) should return **MF_E_INVALID_STATE_TRANSITION** (or **MF_E_SHUTDOWN** if the source was already shut down).
 
 ### IKsControl
 
-[IKsControl](/windows-hardware/drivers/ddi/ks/nn-ks-ikscontrol) is the standard control interface for all camera related controls. If your Custom Media Source implements any camera controls the **IKsControl** interface is how the pipeline will route the control I/O.
+[IKsControl](/windows-hardware/drivers/ddi/ks/nn-ks-ikscontrol) is the standard control interface for all camera related controls. If your Custom Media Source implements any camera controls the **IKsControl** interface is how the pipeline routes the control I/O.
 
-For more information, see the following Control Set documentation topics:
+For more information, see the following Control Set documentation articles:
 
 - [PROPSETID_VIDCAP_CAMERACONTROL](./propsetid-vidcap-cameracontrol.md)
 
@@ -786,14 +786,14 @@ SimpleMediaSource::Start(
 
 This must be done for each stream selected via the [IMFPresentationDescriptor](/windows/win32/api/mfidl/nn-mfidl-imfpresentationdescriptor).
 
-For Custom Media Sources with video stream, [MEEndOfStream](/windows/desktop/medfound/meendofstream) and [MEEndOfPresentation](/windows/desktop/medfound/meendofpresentation) events should not be sent.
+For Custom Media Sources with video stream, [MEEndOfStream](/windows/desktop/medfound/meendofstream) and [MEEndOfPresentation](/windows/desktop/medfound/meendofpresentation) events shouldn't be sent.
 
 ### Stream Attributes
 
-All Custom Media Source streams must have the [MF_DEVICESTREAM_STREAM_CATEGORY](/windows/desktop/medfound/mf-devicestream-stream-category) set to be **PINNAME_VIDEO_CAPTURE**. **PINNAME_VIDEO_PREVIEW** is not supported for Custom Media Sources.
+All Custom Media Source streams must have the [MF_DEVICESTREAM_STREAM_CATEGORY](/windows/desktop/medfound/mf-devicestream-stream-category) set to be **PINNAME_VIDEO_CAPTURE**. **PINNAME_VIDEO_PREVIEW** isn't supported for Custom Media Sources.
 
 > [!NOTE]
-> **PINNAME_IMAGE**, while supported, is not recommended. Exposing a stream with **PINNAME_IMAGE** requires the Custom Media Source to support all the photo trigger controls. See the [Photo Stream Controls](#photo-stream-controls) section below for more details.
+> **PINNAME_IMAGE**, while supported, isn't recommended. Exposing a stream with **PINNAME_IMAGE** requires the Custom Media Source to support all the photo trigger controls. See the [Photo Stream Controls](#photo-stream-controls) section below for more details.
 
 [MF_DEVICESTREAM_STREAM_ID](/windows/desktop/medfound/mf-devicestream-stream-id) is a mandatory attribute for all streams. It should be a 0-based index. So the first stream has an ID of 0, second stream an ID of 1, and so on.
 
@@ -805,23 +805,23 @@ The following are a list of recommended attributes on the stream:
 
 #### MF_DEVICESTREAM_ATTRIBUTE_FRAMESOURCE_TYPES
 
-**MF_DEVICESTREAM_ATTRIBUTE_FRAMESOURCE_TYPES** is a UINT32 attribute which is a bitmasked value of stream type. It may be set to any of the following (while these types are a bitmask flag, it is recommend that source types not be mixed if at all possible):
+**MF_DEVICESTREAM_ATTRIBUTE_FRAMESOURCE_TYPES** is a UINT32 attribute which is a bitmasked value of stream type. It might be set to any of the following (while these types are a bitmask flag, it's recommend that source types not be mixed if at all possible):
 
 | Type                         | Flag   | Description                                      |
 |------------------------------|--------|--------------------------------------------------|
 | MFFrameSourceTypes_Color    | 0x0001 | Standard RGB color stream                        |
 | MFFrameSourceTypes_Infrared | 0x0002 | IR stream                                        |
 | MFFrameSourceTypes_Depth    | 0x0004 | Depth stream                                     |
-| MFFrameSourceTypes_Image    | 0x0008 | Image stream (non-video subtype, typically JPEG) |
+| MFFrameSourceTypes_Image    | 0x0008 | Image stream (nonvideo subtype, typically JPEG) |
 | MFFrameSourceTypes_Custom   | 0x0080 | Custom stream type                               |
 
 #### MF_DEVICESTREAM_FRAMESERVER_SHARED
 
-**MF_DEVICESTREAM_FRAMESERVER_SHARED** is a UINT32 attribute which can be set to either 0 or 1. If set to 1, it marks the stream as being "shareable" by the Frame Server. This will allow applications to open the stream in a shared mode, even when used by another app.
+**MF_DEVICESTREAM_FRAMESERVER_SHARED** is a UINT32 attribute which can be set to either 0 or 1. If set to 1, it marks the stream as being "shareable" by the Frame Server. This allows applications to open the stream in a shared mode, even when used by another app.
 
-If this attribute is not set, Frame Server will allow the first non-marked stream to be shared (if the Custom Media Source has only one stream, that stream will be marked as shared).
+If this attribute isn't set, Frame Server allows the first nonmarked stream to be shared (if the Custom Media Source has only one stream, that stream is marked as shared).
 
-If this attribute is set to 0, Frame Server will block the stream from shared apps. If the Custom Media Source marks all streams with this attribute set to 0, no shared application will be able to initialize the source.
+If this attribute is set to 0, Frame Server blocks the stream from shared apps. If the Custom Media Source marks all streams with this attribute set to 0, no shared application is able to initialize the source.
 
 ### Sample Allocation
 
@@ -829,9 +829,9 @@ All media frames must be produced as an [IMFSample](/windows/win32/api/mfobjects
 
 Each **IMFSample** must have the sample time and sample duration set. All sample timestamps must be based on QPC time (QueryPerformanceCounter).
 
-It is recommended that Custom Media Sources use the [MFGetSystemTime](/windows/win32/api/mfidl/nf-mfidl-mfgetsystemtime) function where possible. This function is a wrapper around **QueryPerformanceCounter** and converts the QPC ticks to 100 nanosecond units.
+It's recommended that Custom Media Sources use the [MFGetSystemTime](/windows/win32/api/mfidl/nf-mfidl-mfgetsystemtime) function where possible. This function is a wrapper around **QueryPerformanceCounter** and converts the QPC ticks to 100-nanosecond units.
 
-Custom Media Sources may use an internal clock, but all timestamps must be correlated to 100 nanosecond units based on the current QPC.
+Custom Media Sources might use an internal clock, but all timestamps must be correlated to 100-nanosecond units based on the current QPC.
 
 #### Media Buffer
 
@@ -847,19 +847,19 @@ Use any of the following APIs to allocate media frames:
 
 - [MFCreateDXGISurfaceBuffer](/windows/win32/api/mfapi/nf-mfapi-mfcreatedxgisurfacebuffer)
 
-**MFCreateMemoryBuffer** and **MFCreateAlignedMemoryBuffer** should be used for non-stride aligned media data. Typically these would be custom subtypes or compressed subtypes (such as H264/HEVC/MJPG).
+**MFCreateMemoryBuffer** and **MFCreateAlignedMemoryBuffer** should be used for nonstride aligned media data. Typically these would be custom subtypes or compressed subtypes (such as H264/HEVC/MJPG).
 
-For known uncompressed media types (such as YUY2, NV12, and so on) using system memory, it is recommended to use **MFCreate2DMediaBuffer**.
+For known uncompressed media types (such as YUY2, NV12, and so on) using system memory, it's recommended to use **MFCreate2DMediaBuffer**.
 
 For using DX surfaces (for GPU accelerated operations such as rendering and/or encoding), **MFCreateDXGISurfaceBuffer** should be used.
 
-**MFCreateDXGISurfaceBuffer** does not create the DX surface. The surface is created using the DXGI Manager passed into the media source via the [IMFMediaSourceEx::SetD3DManager](/windows/win32/api/mfidl/nf-mfidl-imfmediasourceex-setd3dmanager) method.
+**MFCreateDXGISurfaceBuffer** doesn't create the DX surface. The surface is created using the DXGI Manager passed into the media source via the [IMFMediaSourceEx::SetD3DManager](/windows/win32/api/mfidl/nf-mfidl-imfmediasourceex-setd3dmanager) method.
 
-The [IMFDXGIDeviceManager::OpenDeviceHandle](/windows/win32/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-opendevicehandle) will provide the handle associated with the selected D3D device. The [ID3D11Device](/windows/win32/api/d3d11/nn-d3d11-id3d11device) interface can be then obtained using the [IMFDXGIDeviceManager::GetVideoService](/windows/win32/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-getvideoservice) method.
+The [IMFDXGIDeviceManager::OpenDeviceHandle](/windows/win32/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-opendevicehandle) provides the handle associated with the selected D3D device. The [ID3D11Device](/windows/win32/api/d3d11/nn-d3d11-id3d11device) interface can be then obtained using the [IMFDXGIDeviceManager::GetVideoService](/windows/win32/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-getvideoservice) method.
 
 Regardless of what type of buffer is used, the **IMFSample** created must be provided to the pipeline through the **MEMediaSample** event on the **IMFMediaEventGenerator** of the media stream.
 
-While it is possible to use the same **IMFMediaEventQueue** for both the Custom Media Source and the underlying collection of **IMFMediaStream**, it should be noted that doing so will result in serialization of the media source events and stream events (which includes the media flow). For sources with multiple streams, this is not desirable.
+While it's possible to use the same **IMFMediaEventQueue** for both the Custom Media Source and the underlying collection of **IMFMediaStream**, it should be noted that doing so will result in serialization of the media source events and stream events (which includes the media flow). For sources with multiple streams, this isn't desirable.
 
 The following code snip shows a sample implementation of the media stream:
 
@@ -914,35 +914,35 @@ IFACEMETHODIMP
 
 In addition to the above list of interfaces that must be supported for a Custom Media Source, one of the limitations imposed by Custom Media Source operation within the Frame Server architecture is that there can only be one instance of the UMDF driver "activated" through the pipeline.
 
-For example, if you have a physical device which installs a UMDF stub driver in addition to its non-AV Stream driver package, and you attach more than one of those physical devices to a computer, while each instance of the UMDF driver will get a unique symbolic link name, the activation path for the Custom Media Source will not have a means to communicate the symbolic link name associated with the Custom Media Source at the time of creation.
+For example, if you have a physical device which installs a UMDF stub driver in addition to its non-AV Stream driver package, and you attach more than one of those physical devices to a computer, while each instance of the UMDF driver will get a unique symbolic link name, the activation path for the Custom Media Source won't have a means to communicate the symbolic link name associated with the Custom Media Source at the time of creation.
 
-Custom Media Source may look for the standard [MF_DEVSOURCE_ATTRIBUTE_SOURCE_TYPE_VIDCAP_SYMBOLIC_LINK](/windows/desktop/medfound/mf-devsource-attribute-source-type-vidcap-symbolic-link) attribute in the Custom Media Source's attribute store (the attribute store returned from the Custom Media Source through the [IMFMediaSourceEx::GetSourceAttributes](/windows/win32/api/mfidl/nf-mfidl-imfmediasourceex-getsourceattributes) method) at the time [IMFMediaSource::Start](/windows/win32/api/mfidl/nf-mfidl-imfmediasource-start) is invoked.
+Custom Media Source might look for the standard [MF_DEVSOURCE_ATTRIBUTE_SOURCE_TYPE_VIDCAP_SYMBOLIC_LINK](/windows/desktop/medfound/mf-devsource-attribute-source-type-vidcap-symbolic-link) attribute in the Custom Media Source's attribute store (the attribute store returned from the Custom Media Source through the [IMFMediaSourceEx::GetSourceAttributes](/windows/win32/api/mfidl/nf-mfidl-imfmediasourceex-getsourceattributes) method) at the time [IMFMediaSource::Start](/windows/win32/api/mfidl/nf-mfidl-imfmediasource-start) is invoked.
 
-However, this may result in a higher start up latency since this will defer in the HW resource acquisition to start time rather than creation/initialization time.
+However, this might result in a higher startup latency since this will defer in the HW resource acquisition to start time rather than creation/initialization time.
 
-Because of this, in Windows 10, version 1809, Custom Media Sources may optionally expose an [IMFActivate](/windows/win32/api/mfobjects/nn-mfobjects-imfactivate) interface.
+Because of this, in Windows 10, version 1809, Custom Media Sources might optionally expose an [IMFActivate](/windows/win32/api/mfobjects/nn-mfobjects-imfactivate) interface.
 
 > [!NOTE]
 > **IMFActivate** inherits from [IMFAttributes](/windows/win32/api/mfobjects/nn-mfobjects-imfattributes).
 
 ### IMFActivate
 
-If the COM server for the Custom Media Source supports **IMFActivate** interface, the device initialization information will be provided to the COM server through the **IMFAttributes** inherited by the **IMFActivate**. So when the [IMFActivate::ActivateObject](/windows/win32/api/mfobjects/nf-mfobjects-imfactivate-activateobject) is invoked, the attribute store of the **IMFActivate** will contain the symbolic link name of the UMDF stub driver and any additional configuration settings provided by the pipeline/application at the time of the source creation/initialization.
+If the COM server for the Custom Media Source supports **IMFActivate** interface, the device initialization information is provided to the COM server through the **IMFAttributes** inherited by the **IMFActivate**. So when the [IMFActivate::ActivateObject](/windows/win32/api/mfobjects/nf-mfobjects-imfactivate-activateobject) is invoked, the attribute store of the **IMFActivate** contains the symbolic link name of the UMDF stub driver and any other configuration settings provided by the pipeline/application at the time of the source creation/initialization.
 
 The Custom Media Source should use this method invocation to acquire any hardware resources it needs.
 
 > [!NOTE]
-> If the hardware resource acquisition takes greater than 200 milliseconds, it is recommended hardware resource is asynchronously acquired. The activation of the Custom Media Source should not block on the hardware resource acquisition. Instead [IMFMediaSource::Start](/windows/win32/api/mfidl/nf-mfidl-imfmediasource-start) operation should be serialized against the hardware resource acquisition.
+> If the hardware resource acquisition takes greater than 200 milliseconds, it's recommended hardware resource is asynchronously acquired. The activation of the Custom Media Source shouldn't block on the hardware resource acquisition. Instead [IMFMediaSource::Start](/windows/win32/api/mfidl/nf-mfidl-imfmediasource-start) operation should be serialized against the hardware resource acquisition.
 
-The two additional methods exposed by **IMFActivate**, [DetachObject](/windows/win32/api/mfobjects/nf-mfobjects-imfactivate-detachobject) and [ShutdownObject](/windows/win32/api/mfobjects/nf-mfobjects-imfactivate-shutdownobject), must return **E_NOTIMPL**.
+The two other methods exposed by **IMFActivate**, [DetachObject](/windows/win32/api/mfobjects/nf-mfobjects-imfactivate-detachobject) and [ShutdownObject](/windows/win32/api/mfobjects/nf-mfobjects-imfactivate-shutdownobject), must return **E_NOTIMPL**.
 
-The Custom Media Source may choose to implement the **IMFActivate** and **IMFAttributes** interface within the same COM object as the [IMFMediaSource](/windows/win32/api/mfidl/nn-mfidl-imfmediasource). If this is done, it is recommended the [IMFMediaSourceEx::GetSourceAttributes](/windows/win32/api/mfidl/nf-mfidl-imfmediasourceex-getsourceattributes) return the same **IMFAttributes** interface as those from the **IMFActivate**.
+The Custom Media Source might choose to implement the **IMFActivate** and **IMFAttributes** interface within the same COM object as the [IMFMediaSource](/windows/win32/api/mfidl/nn-mfidl-imfmediasource). If this is done, it's recommended the [IMFMediaSourceEx::GetSourceAttributes](/windows/win32/api/mfidl/nf-mfidl-imfmediasourceex-getsourceattributes) return the same **IMFAttributes** interface as those from the **IMFActivate**.
 
-If the Custom Media Source does not implement the **IMFActivate** and **IMFAttributes** with the same object, the Custom Media Source must copy all the attributes set on the **IMFActivate** attribute store into the Custom Media Source's source attribute store.
+If the Custom Media Source doesn't implement the **IMFActivate** and **IMFAttributes** with the same object, the Custom Media Source must copy all the attributes set on the **IMFActivate** attribute store into the Custom Media Source's source attribute store.
 
 ## Encoded Camera Stream
 
-A Custom Media Source may expose compressed media types (HEVC or H264 elementary streams) and the OS pipeline fully supports the source and configuration of the encoding parameters on the Custom Media Source (the encoding parameters are communicated through the [ICodecAPI](/windows/win32/api/strmif/nn-strmif-icodecapi), which is routed as an [IKsControl::KsProperty](/windows-hardware/drivers/ddi/ksproxy/nf-ksproxy-ikscontrol-ksproperty) call):
+A Custom Media Source might expose compressed media types (HEVC or H264 elementary streams) and the OS pipeline fully supports the source and configuration of the encoding parameters on the Custom Media Source (the encoding parameters are communicated through the [ICodecAPI](/windows/win32/api/strmif/nn-strmif-icodecapi), which is routed as an [IKsControl::KsProperty](/windows-hardware/drivers/ddi/ksproxy/nf-ksproxy-ikscontrol-ksproperty) call):
 
 ```cpp
 // IKsControl methods
@@ -957,7 +957,7 @@ SimpleMediaSource::KsProperty(
     );
 ```
 
-The **KSPROPERTY** structure passed into the **IKsControl::KsProperty** method will have the following information:
+The **KSPROPERTY** structure passed into the **IKsControl::KsProperty** method has the following information:
 
 ```cpp
 KSPROPERTY.Set = Encoder Property GUID
@@ -971,14 +971,14 @@ The payload of the Encoder Property will be passed in through the *pPropertyData
 
 ### Capture Engine Requirements
 
-While encoded sources are fully supported by Frame Server, the client side Capture Engine (**IMFCaptureEngine**) which is used by the [Windows.Media.Capture.MediaCapture](/uwp/api/windows.media.capture.mediacapture) object imposes additional requirements:
+While encoded sources are fully supported by Frame Server, the client side Capture Engine (**IMFCaptureEngine**) which is used by the [Windows.Media.Capture.MediaCapture](/uwp/api/windows.media.capture.mediacapture) object imposes extra requirements:
 
 - Stream must either be all encoded (HEVC or H264) or all uncompressed (in this context MJPG is treated as uncompressed).
 
 - There must be at least one uncompressed stream available.
 
 > [!NOTE]
-> These requirements are in addition to the Custom Media Source requirements outlined in this topic. However, the Capture Engine Requirements are only enforced when the client application uses the Custom Media Source via the **IMFCaptureEngine** or **Windows.Media.Capture.MediaCapture** API.
+> These requirements are in addition to the Custom Media Source requirements outlined in this article. However, the Capture Engine Requirements are only enforced when the client application uses the Custom Media Source via the **IMFCaptureEngine** or **Windows.Media.Capture.MediaCapture** API.
 
 ## Camera Profiles (available in Windows 10, version 1803 and later)
 
@@ -1042,7 +1042,7 @@ SimpleMediaSource::GetSourceAttributes(
 
 ### Face Authentication Profile
 
-If the Custom Media Source is designed to support Windows Hello Facial Recognition, then it is recommended to publish a Face Authentication Profile. The requirements of a Face Authentication Profile are:
+If the Custom Media Source is designed to support Windows Hello Facial Recognition, then it's recommended to publish a Face Authentication Profile. The requirements of a Face Authentication Profile are:
 
 - The Face Authentication DDI Control must be supported on a single IR stream. For more information, see [KSPROPERTY_CAMERACONTROL_EXTENDED_FACEAUTH_MODE](./ksproperty-cameracontrol-extended-faceauth-mode.md).
 
@@ -1056,6 +1056,6 @@ We recommended that the Face Authentication Profile only advertise one media typ
 
 ## Photo Stream Controls
 
-If independent photo streams are exposed by marking one of the stream's[MF_DEVICESTREAM_STREAM_CATEGORY](/windows/desktop/medfound/mf-devicestream-stream-category) as **PINNAME_IMAGE**, then a stream with stream category of **PINNAME_VIDEO_CAPTURE** is required (for example, a single stream exposing just the **PINNAME_IMAGE** is not a valid media source).
+If independent photo streams are exposed by marking one of the stream's[MF_DEVICESTREAM_STREAM_CATEGORY](/windows/desktop/medfound/mf-devicestream-stream-category) as **PINNAME_IMAGE**, then a stream with stream category of **PINNAME_VIDEO_CAPTURE** is required (for example, a single stream exposing just the **PINNAME_IMAGE** isn't a valid media source).
 
 Through **IKsControl**, the **PROPSETID_VIDCAP_VIDEOCONTROL** property set must be supported. For more information, see [Video Control Properties](./video-control-properties.md).

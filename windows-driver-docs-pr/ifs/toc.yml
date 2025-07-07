@@ -1,123 +1,121 @@
-- name: File systems filter driver design guide
+- name: File system and FS filter drivers
   href: index.md
-- name: About file system and filter drivers
+- name: File system drivers
   items:
-  - name: File system drivers
-    items:
-    - name: File system sample code
-      href: file-system-sample-code.md
-    - name: Development process for file system driver installation
-      href: installing-a-file-system-driver.md
-    - name: Creating an INF file for a file system driver
-      href: creating-an-inf-file-for-a-file-system-driver.md
-  - name: File system filter drivers
-    items:
-    - name: About file system filter drivers
-      href: about-file-system-filter-drivers.md
-    - name: How file system filter drivers are similar to device drivers
-      href: how-file-system-filter-drivers-are-similar-to-device-drivers.md
-    - name: How file system filter drivers are different from device drivers
-      href: how-file-system-filter-drivers-are-different-from-device-drivers.md
-    - name: File system control (FSCTL) codes
-      items:
-      - name: About FSCTLs
-        href: about-fsctls.md
-      - name: FSCTL_ADD_OVERLAY
-        href: fsctl-add-overlay.md
-      - name: FSCTL_DELETE_EXTERNAL_BACKING
-        href: fsctl-delete-external-backing.md
-      - name: FSCTL_DELETE_REPARSE_POINT
-        href: fsctl-delete-reparse-point.md
-      - name: FSCTL_DISMOUNT_VOLUME
-        href: fsctl-dismount-volume.md
-      - name: FSCTL_DUPLICATE_EXTENTS_TO_FILE_EX
-        href: fsctl-duplicate-extents-to-file-ex.md
-      - name: FSCTL_ENUM_EXTERNAL_BACKING
-        href: fsctl-enum-external-backing.md
-      - name: FSCTL_ENUM_OVERLAY
-        href: fsctl-enum-overlay.md
-      - name: FSCTL_FILE_LEVEL_TRIM
-        href: fsctl-file-level-trim.md
-      - name: FSCTL_FIND_FILES_BY_SID
-        href: fsctl-find-files-by-sid.md
-      - name: FSCTL_GET_BOOT_AREA_INFO
-        href: fsctl-get-boot-area-info.md
-      - name: FSCTL_GET_EXTERNAL_BACKING
-        href: fsctl-get-external-backing.md
-      - name: FSCTL_GET_REPARSE_POINT
-        href: fsctl-get-reparse-point.md
-      - name: FSCTL_GET_RETRIEVAL_POINTER_BASE
-        href: fsctl-get-retrieval-pointer-base.md
-      - name: FSCTL_GET_RETRIEVAL_POINTERS
-        href: fsctl-get-retrieval-pointers.md
-      - name: FSCTL_GET_WOF_VERSION
-        href: fsctl-get-wof-version.md
-      - name: FSCTL_INVALIDATE_VOLUMES
-        href: fsctl-invalidate-volumes.md
-      - name: FSCTL_IS_PATHNAME_VALID
-        href: fsctl-is-pathname-valid.md
-      - name: FSCTL_IS_VOLUME_DIRTY
-        href: fsctl-is-volume-dirty.md
-      - name: FSCTL_LMR_GET_LINK_TRACKING_INFORMATION
-        href: fsctl-lmr-get-link-tracking-information.md
-      - name: FSCTL_LMR_QUERY_INFO
-        href: fsctl-lmr-query-info.md
-      - name: FSCTL_MARK_AS_SYSTEM_HIVE
-        href: fsctl-mark-as-system-hive.md
-      - name: FSCTL_MARK_VOLUME_DIRTY
-        href: fsctl-mark-volume-dirty.md
-      - name: FSCTL_QUERY_VOLUME_NUMA_INFO
-        href: fsctl-query-volume-numa-info.md
-      - name: FSCTL_OFFLOAD_READ
-        href: fsctl-offload-read.md
-      - name: FSCTL_OFFLOAD_WRITE
-        href: fsctl-offload-write.md
-      - name: FSCTL_OPBATCH_ACK_CLOSE_PENDING
-        href: fsctl-opbatch-ack-close-pending.md
-      - name: FSCTL_OPLOCK_BREAK_ACK_NO_2
-        href: fsctl-oplock-break-ack-no-2.md
-      - name: FSCTL_OPLOCK_BREAK_ACKNOWLEDGE
-        href: fsctl-oplock-break-acknowledge.md
-      - name: FSCTL_OPLOCK_BREAK_NOTIFY
-        href: fsctl-oplock-break-notify.md
-      - name: FSCTL_QUERY_FILE_LAYOUT
-        href: fsctl-query-file-layout.md
-      - name: FSCTL_QUERY_PERSISTENT_VOLUME_STATE
-        href: fsctl-query-persistent-volume-state.md
-      - name: FSCTL_QUERY_REFS_SMR_VOLUME_INFO
-        href: fsctl-query-refs-smr-volume-info.md
-      - name: FSCTL_QUERY_RETRIEVAL_POINTERS
-        href: fsctl-query-retrieval-pointers.md
-      - name: FSCTL_REMOVE_OVERLAY
-        href: fsctl-remove-overlay.md
-      - name: FSCTL_REQUEST_BATCH_OPLOCK
-        href: fsctl-request-batch-oplock.md
-      - name: FSCTL_REQUEST_FILTER_OPLOCK
-        href: fsctl-request-filter-oplock.md
-      - name: FSCTL_REQUEST_OPLOCK
-        href: fsctl-request-oplock.md
-      - name: FSCTL_REQUEST_OPLOCK_LEVEL_1
-        href: fsctl-request-oplock-level-1.md
-      - name: FSCTL_REQUEST_OPLOCK_LEVEL_2
-        href: fsctl-request-oplock-level-2.md
-      - name: FSCTL_SET_EXTERNAL_BACKING
-        href: fsctl-set-external-backing.md
-      - name: FSCTL_SET_PERSISTENT_VOLUME_STATE
-        href: fsctl-set-persistent-volume-state.md
-      - name: FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS
-        href: fsctl-set-refs-smr-volume-gc-parameters.md
-      - name: FSCTL_SET_REPARSE_POINT
-        href: fsctl-set-reparse-point.md
-      - name: FSCTL_SET_REPARSE_POINT_EX
-        href: fsctl-set-reparse-point-ex.md
-      - name: FSCTL_SET_ZERO_DATA
-        href: fsctl-set-zero-data.md
-      - name: FSCTL_SUSPEND_OVERLAY
-        href: fsctl-suspend-overlay.md
-      - name: FSCTL_UPDATE_OVERLAY
-        href: fsctl-update-overlay.md
+  - name: About file system drivers
+    href: about-file-system-filter-drivers.md
+  - name: File system sample code
+    href: file-system-sample-code.md
+  - name: Creating an INF file for a file system driver
+    href: creating-an-inf-file-for-a-file-system-driver.md
+- name: File system control (FSCTL) codes
+  items:
+  - name: About FSCTLs
+    href: about-fsctls.md
+  - name: FSCTL_ADD_OVERLAY
+    href: fsctl-add-overlay.md
+  - name: FSCTL_DELETE_EXTERNAL_BACKING
+    href: fsctl-delete-external-backing.md
+  - name: FSCTL_DELETE_REPARSE_POINT
+    href: fsctl-delete-reparse-point.md
+  - name: FSCTL_DISMOUNT_VOLUME
+    href: fsctl-dismount-volume.md
+  - name: FSCTL_DUPLICATE_EXTENTS_TO_FILE_EX
+    href: fsctl-duplicate-extents-to-file-ex.md
+  - name: FSCTL_ENUM_EXTERNAL_BACKING
+    href: fsctl-enum-external-backing.md
+  - name: FSCTL_ENUM_OVERLAY
+    href: fsctl-enum-overlay.md
+  - name: FSCTL_FILE_LEVEL_TRIM
+    href: fsctl-file-level-trim.md
+  - name: FSCTL_FIND_FILES_BY_SID
+    href: fsctl-find-files-by-sid.md
+  - name: FSCTL_GET_BOOT_AREA_INFO
+    href: fsctl-get-boot-area-info.md
+  - name: FSCTL_GET_EXTERNAL_BACKING
+    href: fsctl-get-external-backing.md
+  - name: FSCTL_GET_REPARSE_POINT
+    href: fsctl-get-reparse-point.md
+  - name: FSCTL_GET_RETRIEVAL_POINTER_BASE
+    href: fsctl-get-retrieval-pointer-base.md
+  - name: FSCTL_GET_RETRIEVAL_POINTERS
+    href: fsctl-get-retrieval-pointers.md
+  - name: FSCTL_GET_WOF_VERSION
+    href: fsctl-get-wof-version.md
+  - name: FSCTL_INVALIDATE_VOLUMES
+    href: fsctl-invalidate-volumes.md
+  - name: FSCTL_IS_PATHNAME_VALID
+    href: fsctl-is-pathname-valid.md
+  - name: FSCTL_IS_VOLUME_DIRTY
+    href: fsctl-is-volume-dirty.md
+  - name: FSCTL_LMR_GET_LINK_TRACKING_INFORMATION
+    href: fsctl-lmr-get-link-tracking-information.md
+  - name: FSCTL_LMR_QUERY_INFO
+    href: fsctl-lmr-query-info.md
+  - name: FSCTL_MARK_AS_SYSTEM_HIVE
+    href: fsctl-mark-as-system-hive.md
+  - name: FSCTL_MARK_VOLUME_DIRTY
+    href: fsctl-mark-volume-dirty.md
+  - name: FSCTL_QUERY_VOLUME_NUMA_INFO
+    href: fsctl-query-volume-numa-info.md
+  - name: FSCTL_OFFLOAD_READ
+    href: fsctl-offload-read.md
+  - name: FSCTL_OFFLOAD_WRITE
+    href: fsctl-offload-write.md
+  - name: FSCTL_OPBATCH_ACK_CLOSE_PENDING
+    href: fsctl-opbatch-ack-close-pending.md
+  - name: FSCTL_OPLOCK_BREAK_ACK_NO_2
+    href: fsctl-oplock-break-ack-no-2.md
+  - name: FSCTL_OPLOCK_BREAK_ACKNOWLEDGE
+    href: fsctl-oplock-break-acknowledge.md
+  - name: FSCTL_OPLOCK_BREAK_NOTIFY
+    href: fsctl-oplock-break-notify.md
+  - name: FSCTL_QUERY_FILE_LAYOUT
+    href: fsctl-query-file-layout.md
+  - name: FSCTL_QUERY_PERSISTENT_VOLUME_STATE
+    href: fsctl-query-persistent-volume-state.md
+  - name: FSCTL_QUERY_REFS_SMR_VOLUME_INFO
+    href: fsctl-query-refs-smr-volume-info.md
+  - name: FSCTL_QUERY_RETRIEVAL_POINTERS
+    href: fsctl-query-retrieval-pointers.md
+  - name: FSCTL_REMOVE_OVERLAY
+    href: fsctl-remove-overlay.md
+  - name: FSCTL_REQUEST_BATCH_OPLOCK
+    href: fsctl-request-batch-oplock.md
+  - name: FSCTL_REQUEST_FILTER_OPLOCK
+    href: fsctl-request-filter-oplock.md
+  - name: FSCTL_REQUEST_OPLOCK
+    href: fsctl-request-oplock.md
+  - name: FSCTL_REQUEST_OPLOCK_LEVEL_1
+    href: fsctl-request-oplock-level-1.md
+  - name: FSCTL_REQUEST_OPLOCK_LEVEL_2
+    href: fsctl-request-oplock-level-2.md
+  - name: FSCTL_SET_EXTERNAL_BACKING
+    href: fsctl-set-external-backing.md
+  - name: FSCTL_SET_PERSISTENT_VOLUME_STATE
+    href: fsctl-set-persistent-volume-state.md
+  - name: FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS
+    href: fsctl-set-refs-smr-volume-gc-parameters.md
+  - name: FSCTL_SET_REPARSE_POINT
+    href: fsctl-set-reparse-point.md
+  - name: FSCTL_SET_REPARSE_POINT_EX
+    href: fsctl-set-reparse-point-ex.md
+  - name: FSCTL_SET_ZERO_DATA
+    href: fsctl-set-zero-data.md
+  - name: FSCTL_SUSPEND_OVERLAY
+    href: fsctl-suspend-overlay.md
+  - name: FSCTL_UPDATE_OVERLAY
+    href: fsctl-update-overlay.md
 - name: File system filter drivers
   items:
+  - name: About file system filter drivers
+    href: about-file-system-filter-drivers.md
+  - name: File system filter driver sample code
+    href: filter-driver-sample-code.md
+  - name: How file system filter drivers are similar to device drivers
+    href: how-file-system-filter-drivers-are-similar-to-device-drivers.md
+  - name: How file system filter drivers are different from device drivers
+    href: how-file-system-filter-drivers-are-different-from-device-drivers.md
   - name: Filter Manager and filters
     items:
     - name: Overview

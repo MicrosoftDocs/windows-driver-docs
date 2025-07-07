@@ -1,7 +1,7 @@
 ---
 title: Universal Serial Bus (USB)
 description: Learn to develop Windows drivers for USB devices.
-ms.date: 12/04/2024
+ms.date: 05/29/2025
 ---
 
 # Universal Serial Bus (USB)
@@ -174,7 +174,7 @@ Read an overview of tests in the Hardware Certification Kit that enable hardware
 
 - [Official USB Specification](https://www.usb.org/documents): Provides complete technical details for the USB protocol.
 
-- [Microsoft Windows USB Core Team Blog](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog): Check out posts written by the Microsoft USB Team. The blog focuses on the Windows USB driver stack that works with various USB Host controllers and USB hubs found in Windows PC. A useful resource for USB client driver developers and USB hardware designers to understand the driver stack implementation, resolve common issues, and explain how to use tools for gathering traces and log files.
+- [Microsoft Windows USB Core Team Blog](https://techcommunity.microsoft.com/category/microsoftusb/blog/microsoftusbblog): Check out posts written by the Microsoft USB Team. The blog focuses on the Windows USB driver stack that works with various USB Host controllers and USB hubs found in Windows PC. A useful resource for USB client driver developers and USB hardware designers to understand the driver stack implementation, resolve common issues, and explain how to use tools for gathering traces and log files.
 
 - [OSR Online Lists - ntdev](https://community.osr.com/categories/ntdev): Discussion list managed by [OSR Online](https://www.osronline.com/index.cfm) for kernel-mode driver developers.
 

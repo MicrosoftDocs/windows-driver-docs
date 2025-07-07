@@ -48,7 +48,7 @@ When this entry is set to Enabled (0x1), the capture pipeline uses Method 2 for 
 
 An example for the custom INF section would be as follows:
 
-```INF
+```inf
 [USBVideo.NT.Interfaces]
 AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,USBVideo.Interface
 AddInterface=%KSCATEGORY_RENDER%,GLOBAL,USBVideo.Interface
@@ -94,25 +94,25 @@ A SET_CUR request is issued by host after setting all fields.
 
 The following table maps the control selectors for Microsoft-XU to their respective values and the bit position for the *bmControls* field in Extension Unit Descriptor:
 
-| Control Selector                  | Value  | Bit Position<br>(bmControls Field)  |
-|-----------------------------------|:------:|:-----------------------------------:|
-| MSXU_CONTROL_UNDEFINED            |  0x00  |                 NA                  |
-| MSXU_CONTROL_FOCUS                |  0x01  |                 D0                  |
-| MSXU_CONTROL_EXPOSURE             |  0x02  |                 D1                  |
-| MSXU_CONTROL_EVCOMPENSATION       |  0x03  |                 D2                  |
-| MSXU_CONTROL_WHITEBALANCE         |  0x04  |                 D3                  |
-| Reserved for future use           |  0x05  |                 D4                  |
-| MSXU_CONTROL_FACE_AUTHENTICATION  |  0x06  |                 D5                  |
-| MSXU_CONTROL_CAMERA_EXTRINSICS    |  0x07  |                 D6                  |
-| MSXU_CONTROL_CAMERA_INTRINSICS    |  0x08  |                 D7                  |
-| MSXU_CONTROL_METADATA             |  0x09  |                 D8                  |
-| MSXU_CONTROL_IR_TORCH             |  0x0A  |                 D9                  |
-| MSXU_CONTROL_DIGITALWINDOW        |  0X0B  |                 D10                 |
-| MSXU_CONTROL_DIGITALWINDOW_CONFIG |  0X0C  |                 D11                 |
-| MSXU_CONTROL_VIDEO_HDR            |  0X0D  |                 D12                 |
-| MSXU_CONTROL_FRAMERATE_THROTTLE   |  0x0E  |                 D13                 |
-| MSXU_CONTROL_FIELDOFVIEW2_CONFIG  |  0x0F  |                 D14                 |
-| MSXU_CONTROL_FIELDOFVIEW2         |  0x10  |                 D15                 |
+| Control Selector | Value | Bit Position<br>(bmControls Field) |
+|--|:-:|:-:|
+| MSXU_CONTROL_UNDEFINED | 0x00 | NA |
+| MSXU_CONTROL_FOCUS | 0x01 | D0 |
+| MSXU_CONTROL_EXPOSURE | 0x02 | D1 |
+| MSXU_CONTROL_EVCOMPENSATION | 0x03 | D2 |
+| MSXU_CONTROL_WHITEBALANCE | 0x04 | D3 |
+| Reserved for future use | 0x05 | D4 |
+| MSXU_CONTROL_FACE_AUTHENTICATION | 0x06 | D5 |
+| MSXU_CONTROL_CAMERA_EXTRINSICS | 0x07 | D6 |
+| MSXU_CONTROL_CAMERA_INTRINSICS | 0x08 | D7 |
+| MSXU_CONTROL_METADATA | 0x09 | D8 |
+| MSXU_CONTROL_IR_TORCH | 0x0A | D9 |
+| MSXU_CONTROL_DIGITALWINDOW | 0X0B | D10 |
+| MSXU_CONTROL_DIGITALWINDOW_CONFIG | 0X0C | D11 |
+| MSXU_CONTROL_VIDEO_HDR | 0X0D | D12 |
+| MSXU_CONTROL_FRAMERATE_THROTTLE | 0x0E | D13 |
+| MSXU_CONTROL_FIELDOFVIEW2_CONFIG | 0x0F | D14 |
+| MSXU_CONTROL_FIELDOFVIEW2 | 0x10 | D15 |
 
 ##### 2.2.2.1 Cancelable Controls
 
@@ -422,19 +422,19 @@ Even if this is a filter scope control, the frame rate control shouldn't impact 
 
 This control gets mapped to [**KSPROPERTY_CAMERACONTROL_EXTENDED_FRAMERATE_THROTTLE**](ksproperty-cameracontrol-extended-framerate-throttle.md) by the camera driver.
 
-| Control selector      | MSXU_CONTROL_FRAMERATE_THROTTLE                                                                   |
-|---------------------- |---------------------------------------------------------------------------------------------------|
-| Mandatory Requests    | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR                           |
-| Optional Requests     |                                                                                                   |
-| **wLength**           | 20                                                                                                |
+| Control selector | MSXU_CONTROL_FRAMERATE_THROTTLE |
+|--|--|
+| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR |
+| Optional Requests |  |
+| **wLength** | 20 |
 
-| Offset               | Field                                 | Size   | Value   | Description                                                |
-|----------------------|---------------------------------------|:------:|---------|------------------------------------------------------------|
-| 0                    | **dwMode**                            | 4      | Flags   | D0: 0 (OFF) or 1 (ON) <br> D1-D31: reserved and set to 0   |
-| 4                    | **scaleFactorPercentage**             | 4      | Number  | This value should be within the range of Min and Max, and it should be set to a multiple of Step value. For example: if Min = 5, Max = 100 and Step = 5 and if an application decided to reduce the frame rate to 80% of original value, then this member value should be set to 80. By setting this value appropriately an app can make sure that the new frame rate never exceeds the original value, nor goes to zero, but original frame rate is possible.   |
-| 8                    | **min**                               | 4      | Number  | Min should be equal to at-lease one step size or it should be a multiple of step size, (Example: step*1, Step*2 etc.). Min value can't be set to 0.   |
-| 12                   | **max**                               | 4      | Number  | Max must be set to 100, meaning no change in frame rate.   |
-| 16                   | **step**                              | 4      | Number  | Step should be a strict factor of Max, for example, {Max % Step == 0}. Example: 1, 2, 4, 5 etc.   |
+| Offset | Field | Size | Value | Description |
+|--|--|:-:|--|--|
+| 0 | **dwMode** | 4 | Flags | D0: 0 (OFF) or 1 (ON) <br> D1-D31: reserved and set to 0 |
+| 4 | **scaleFactorPercentage** | 4 | Number | This value should be within the range of Min and Max, and it should be set to a multiple of Step value. For example: if Min = 5, Max = 100 and Step = 5 and if an application decided to reduce the frame rate to 80% of original value, then this member value should be set to 80. By setting this value appropriately an app can make sure that the new frame rate never exceeds the original value, nor goes to zero, but original frame rate is possible. |
+| 8 | **min** | 4 | Number | Min should be equal to at-lease one step size or it should be a multiple of step size, (Example: step*1, Step*2 etc.). Min value can't be set to 0. |
+| 12 | **max** | 4 | Number | Max must be set to 100, meaning no change in frame rate. |
+| 16 | **step** | 4 | Number | Step should be a strict factor of Max, for example, {Max % Step == 0}. Example: 1, 2, 4, 5 etc. |
 
 The following applies:
 
@@ -464,18 +464,18 @@ This is synchronous filter level control.
 
 This control is mapped to [**KSPROPERTY_CAMERACONTROL_EXTENDED_ FIELDOFVIEW2_CONFIGCAPS**](ksproperty-cameracontrol-extended-fieldofview2-configcaps.md) by the camera driver.
 
-| Control selector      | MSXU_CONTROL_FIELDOFVIEW2_CONFIG                                                                  |
-|---------------------- |---------------------------------------------------------------------------------------------------|
-| Mandatory Requests    | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR                                    |
-| Optional Requests     |                                                                                                   |
-| **wLength**           | 4 bytes + **Count** times 4 bytes, where **Count** is the number of unique Field of View values.  |
+| Control selector | MSXU_CONTROL_FIELDOFVIEW2_CONFIG |
+|--|--|
+| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR |
+| Optional Requests |  |
+| **wLength** | 4 bytes + **Count** times 4 bytes, where **Count** is the number of unique Field of View values. |
 
-| Offset               | Field                                  | Size   | Value   | Description                                                                                        |
-|----------------------|----------------------------------------|:------:|---------|----------------------------------------------------------------------------------------------------|
-| 0                    | **dwDefaultFieldOfView**               | 4      | Number  | The default diagonal Field of View must be one of the values reported in FieldOfViewValues array.  |
-| 4                    | **FieldOfViewValues[0]**               | 4      | Number  | First Field of View value, this must be the widest FoV (Field of View) value.                      |
-| …                    | …                                      | …      | …       | …                                                                                                  |
-| 4 + 4*(**Count**-1)  | **FieldOfViewValues** [**Count** -1]   | 4      | Number  | Last Field of View value, this must be the narrowest FoV value.                                    |
+| Offset | Field | Size | Value | Description |
+|--|--|:-:|--|--|
+| 0 | **dwDefaultFieldOfView** | 4 | Number | The default diagonal Field of View must be one of the values reported in FieldOfViewValues array. |
+| 4 | **FieldOfViewValues[0]** | 4 | Number | First Field of View value, this must be the widest FoV (Field of View) value. |
+| … | … | … | … | … |
+| 4 + 4*(**Count**-1) | **FieldOfViewValues** [**Count** -1] | 4 | Number | Last Field of View value, this must be the narrowest FoV value. |
 
 The following applies:
 
@@ -507,15 +507,15 @@ This is synchronous filter level control.
 
 This control is mapped to [**KSPROPERTY_CAMERACONTROL_EXTENDED_ FIELDOFVIEW2**](ksproperty-cameracontrol-extended-fieldofview2.md) by the camera driver.
 
-| Control selector      | MSXU_CONTROL_FIELDOFVIEW2                                                                         |
-|---------------------- |---------------------------------------------------------------------------------------------------|
-| Mandatory Requests    | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR                           |
-| Optional Requests     |                                                                                                   |
-| **wLength**           | 4                                                                                                 |
+| Control selector | MSXU_CONTROL_FIELDOFVIEW2 |
+|--|--|
+| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR |
+| Optional Requests |  |
+| **wLength** | 4 |
 
-| Offset               | Field                                  | Size   | Value   | Description                                |
-|----------------------|----------------------------------------|:------:|---------|--------------------------------------------|
-| 0                    |**dwValue**                             | 4      | Number  | Diagonal Field of View value in degrees.   |
+| Offset | Field | Size | Value | Description |
+|--|--|:-:|--|--|
+| 0 | **dwValue** | 4 | Number | Diagonal Field of View value in degrees. |
 
 The following applies:
 
@@ -761,7 +761,7 @@ KSCAMERA_METADATA_FRAMEILLUMINATION.Reserved = 0;
 
 The metadata format for this identifier is defined by a common KSCAMERA_METADATA_ITEMHEADER followed by a KSSTREAM_UVC_METADATA structure:
 
-```c++
+```cpp
 typedef struct
 {
     ULONG       PresentationTimeStamp;

@@ -14,7 +14,7 @@ api_type:
 
 # Bug Check 0x1F1: KASAN\_ENLIGHTENMENT\_VIOLATION 
 
-The KASAN\_ENLIGHTENMENT\_VIOLATION bug check has a value of 0x000001F1. It indicates that KASAN enlightenment encoutered a violation when attempting to interact with memory shadow. This bug check is used to check internal operation of KASAN in Windows. For more information, see [Kernel Address Sanitizer (KASAN)](../devtest/kasan.md) and the Microsoft C++ [AddressSanitizer (ASAN)](/cpp/sanitizers/asan) documentation.  
+The KASAN\_ENLIGHTENMENT\_VIOLATION bug check has a value of 0x000001F1. It indicates that KASAN encountered an internal error. This bug check is used to check internal operation of KASAN in Windows. For more information, see [Kernel Address Sanitizer (KASAN)](../devtest/kasan.md) and the Microsoft C++ [AddressSanitizer (ASAN)](/cpp/sanitizers/asan) documentation.
 
 > [!IMPORTANT]
 > This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
@@ -22,15 +22,14 @@ The KASAN\_ENLIGHTENMENT\_VIOLATION bug check has a value of 0x000001F1. It indi
 
 ## KASAN\_ENLIGHTENMENT\_VIOLATION Parameters
 
-| Parameter |Description                          |
-|---------- |------------------------------------ |
-| 1         | Type of KASAN shadow interaction.   |
-| 2         | Type of violation.                  | 
-| 3         | Extra information on the violation. |
-| 4         | Extra information on the violation. |
+| Parameter |Description                                        |
+|---------- |-------------------------------------------------- |
+| 1         | Type of operation that led to the internal error. |
+| 2         | Type of the internal error.                       |
+| 3         | Extra information on the internal error.          |
+| 4         | Extra information on the internal error.          |
 
 ## See also
 
 - [Kernel Address Sanitizer (KASAN)](../devtest/kasan.md)
 - [Bug Check Code Reference](bug-check-code-reference2.md)
-

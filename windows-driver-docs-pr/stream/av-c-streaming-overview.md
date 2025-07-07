@@ -7,7 +7,7 @@ keywords:
 - Avcstrm.sys streaming filter driver WDK
 - Avcstrm.sys streaming filter driver WDK , about Avcstrm.sys streaming filter driver
 - filter drivers WDK AV/C streaming
-ms.date: 03/05/2021
+ms.date: 04/25/2025
 ms.topic: concept-article
 ---
 
@@ -37,4 +37,4 @@ For more information and resources see the following links:
 
 [Windows Driver Model](../kernel/introduction-to-wdm.md)
 
-[International Electrotechnical Commission](https://www.iec.ch/)
+[International Electrotechnical Commission (IEC)](https://webstore.iec.ch/?linkid=8732)

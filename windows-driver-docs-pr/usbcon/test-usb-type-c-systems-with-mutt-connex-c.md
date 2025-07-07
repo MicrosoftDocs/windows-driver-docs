@@ -1,7 +1,7 @@
 ---
 title: Test USB Type-C Systems With USB Type-C ConnEx
 description: The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board.
-ms.date: 12/13/2024
+ms.date: 05/29/2025
 ms.topic: concept-article
 ---
 
@@ -111,7 +111,7 @@ Make sure you meet these requirements:
 - **[Download](https://www.microsoft.com/download/details.aspx?id=51604)**  and install the latest MUTT software package on the proxy controller.
  The package is a suite of tools used to run tests with USB Type-C ConnEx. It includes utilities to update the firmware, switch between the peripheral ports, and send requests to simulate test cases. It also contains test driver packages that test the functionality of the buses, its controller, and devices connected to the bus.
 
-- For UCSI based systems we strongly recommended testing with some additional settings to help discover UCSI firmware bugs. This setting will make UCSI firmware issues discoverable and is highly recommended for testing purposes only. Please see [Debugging USCI firmware failures](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/Debugging-UCSI-firmware-failures/ba-p/283226) in this blog post.
+- For UCSI based systems we strongly recommended testing with some additional settings to help discover UCSI firmware bugs. This setting will make UCSI firmware issues discoverable and is highly recommended for testing purposes only. Please see [Debugging USCI firmware failures](https://techcommunity.microsoft.com/blog/microsoftusbblog/debugging-ucsi-firmware-failures/283226) in this blog post.
 
 - Installation of the test tools requires an elevated command window.
 

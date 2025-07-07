@@ -67,7 +67,7 @@ This topic describes the use of the EXDI COM GDB Server client (ExdiGdbSrv.dll),
 
 ## Summary of process to use an EXDI connection
 
-Use this this process to use an EXDI connection with WinDbg. 
+Use this process to use an EXDI connection with WinDbg. 
 
 1. Download and install the Windows debugging tools on the host system.
 1. Launch WinDbg using the UI or the -kx option to connect to the EXDI server.

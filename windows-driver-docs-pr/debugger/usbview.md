@@ -2,7 +2,7 @@
 title: Universal Serial Bus Viewer in Windows
 description: Universal Serial Bus Viewer is a Windows graphical UI app that you can use to browse all USB controllers and connected USB devices on your computer.
 keywords: ["USBView"]
-ms.date: 08/01/2024
+ms.date: 05/19/2024
 ---
 
 # Universal Serial Bus Viewer in Windows
@@ -17,7 +17,7 @@ To download  and use USBView, complete the following steps:
 
 1. During the installation, select only the **Debugging Tools for Windows** box and clear all other boxes.
 
-1. By default, on an x64 PC the SDK will install USBView to the following directory.
+1. By default, on an x64 PC the SDK installs USBView to the following directory.
 
    `C:\Program Files (x86)\Windows Kits\10\Debuggers\x64`
 

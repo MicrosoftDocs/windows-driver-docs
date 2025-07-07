@@ -133,7 +133,7 @@ Lines 8, 13, and 18 show the metadata set that has been specified for this light
 
 You can select on the Data value or name just like you could in Table based data-driven tests. For example you can select SetsOfDataTest\#metadataSet1 by a selection query like **/select:@Data:Color='Maroon'** or **/name:\*\#metadataSet1**
 
-For quick reference, /listproperties output from the manged test example is shown below:
+For quick reference, /listproperties output from the managed test example is shown below:
 
 ``` syntax
 te Examples\CSharp.DataDriven.Example.dll /name:*SetsOfMetadataTest* /listproperties

@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Low Energy (LE) Audio
 description: This article provides an overview of Bluetooth LE Audio introduced in Windows 11 version 22H2 (KB5026446).
-ms.date: 02/18/2025
+ms.date: 05/05/2025
 ---
 
 # Bluetooth Low Energy (LE) Audio
@@ -64,7 +64,7 @@ This vendor specific component is responsible for sending and receiving Bluetoot
 
 #### Windows Bluetooth LE Audio profile
 
-This component contains the implementation of the Basic Audio Profile (BAP), Volume Control Profile, and Microphone Control Profile. It's responsible for creating the head **[ACXCIRCUIT](/windows-hardware/drivers/audio/acx-summary-of-objects#acx-circuit)** for each Bluetooth LE Audio device or set of devices paired to Windows, reporting audio formats reported by the remote device and Bluetooth controller, and manages the state of isochronous channels and groups.
+This component contains the implementation of the Basic Audio Profile (BAP), Volume Control Profile, and Microphone Control Profile. It's responsible for creating the control **[ACXCIRCUIT](/windows-hardware/drivers/audio/acx-summary-of-objects#acx-circuit)** for each Bluetooth LE Audio device or set of devices paired to Windows, reporting audio formats reported by the remote device and Bluetooth controller, and managing the state of isochronous channels and groups.
 
 #### Windows Bluetooth core stack
 

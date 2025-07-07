@@ -1,7 +1,7 @@
 ---
 title: PCI power management and device drivers
 description: Clarifies how hardware that complies with PCI Power Management (PCI-PM) interacts with device drivers.
-ms.date: 06/21/2024
+ms.date: 04/30/2025
 ---
 
 # PCI power management and device drivers
@@ -26,8 +26,7 @@ Some devices, particularly motherboard video devices in portables, may require b
 
 The OnNow architecture is a layered architecture, handling the integration of the device driver, PCI driver, and ACPI driver (and ASL) naturally. The following scenarios show the order in which drivers are called to handle these devices.
 
->[!NOTE]
->For the above scenarios to work as described, a WDM driver must forward POWER IRPs correctly as described in the current version of the Microsoft WDK.
+For the above scenarios to work as described, a WDM driver must forward POWER IRPs correctly as described in the current version of the Microsoft WDK.
 
 ## Scenario 1: Turning off a device
 

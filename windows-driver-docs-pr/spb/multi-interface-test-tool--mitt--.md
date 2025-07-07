@@ -12,7 +12,7 @@ To use the Multiple Interface Test Tool (MITT), you need a MITT board and bus-sp
 
 - **MITT board**
 
-    For example, FPGA development board (Nexys A7). See [FPGA board from Digilent](https://digilent.com/reference/programmable-logic/nexys-a7/start).
+    For example, [FPGA development board (Nexys A7)](https://www.amd.com/en/corporate/university-program/aup-boards/digilent-nexys-a7.html).
 
     :::image type="content" source="images/nexys-a7-top-600.png" alt-text="Picture of a MITT board.":::
 

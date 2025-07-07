@@ -2,10 +2,10 @@
 title: System Shutdown State S5
 description: Provides information about system shutdown state S5.
 keywords: ["S5 WDK power management", "system shutdown states WDK power management", "software resumption WDK power management", "resumption WDK power management", "hardware latency WDK power management", "system hardware context WDK power management", "hardware context WDK power management", "context WDK power management", "latency WDK power management", "system power states WDK kernel , shutdown state", "shutdown states WDK power management"]
-ms.date: 06/07/2021
+ms.date: 04/30/2025
 ---
 
-# System shutdownsState S5
+# System shutdowns state S5
 
 System power state S5 is the shutdown or off state. Similar to a system in a sleeping state (S1 through S4), a system in S5 is not performing any computational tasks and appears to be off. Unlike S1-S4, however, a system in S5 does not retain memory state.
 

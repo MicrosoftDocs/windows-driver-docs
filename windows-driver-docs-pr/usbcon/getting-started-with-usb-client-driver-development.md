@@ -1,7 +1,7 @@
 ---
 title: First Steps for USB Client Driver Development
 description: This section introduces you to USB driver development.
-ms.date: 01/12/2024
+ms.date: 05/06/2025
 ---
 
 # First steps for USB client driver development
@@ -32,7 +32,7 @@ Driver developers must have coding experience in the C++ programming language an
     - [Concepts for All Driver Developers](../gettingstarted/concepts-and-knowledge-for-all-driver-developers.md).
     - [Concepts for all USB developers](usb-concepts-for-all-developers.md).
     - [Device nodes and device stacks](../gettingstarted/device-nodes-and-device-stacks.md).
-    - *Developing Drivers with Windows Driver Foundation* written by Penny Orwick and Guy Smith. For more information see [Developing Drivers with WDF](../wdf/developing-drivers-with-wdf.md).
+    - *[Developing Drivers with the Windows Driver Foundation: Reference Book](../wdf/developing-drivers-with-wdf.md)* by Penny Orwick and Guy Smith.
     - [USB driver samples](usb-driver-samples-in-wdk.md).
     - Understand the fundamentals of how drivers work in Windows operating systems. Knowing the fundamentals will help make appropriate design decisions and streamline the development process.
     - Differentiate between user mode and kernel mode driver architecture models.
@@ -59,7 +59,7 @@ Driver developers must have coding experience in the C++ programming language an
 
 ## Community Resources for USB
 
-- [Microsoft Windows USB Core Team Blog](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/bg-p/MicrosoftUSBBlog)
+- [Microsoft Windows USB Core Team Blog](https://techcommunity.microsoft.com/category/microsoftusb/blog/microsoftusbblog)
 
    Check out posts written by the Microsoft USB Team. The blog focuses on the Windows USB driver stack that works with various USB Host controllers and USB hubs found in Windows PC. A useful resource for USB client driver developers and USB hardware designers understand the driver stack implementation, resolve common issues, and explain how to use tools for gathering traces and log files.
 

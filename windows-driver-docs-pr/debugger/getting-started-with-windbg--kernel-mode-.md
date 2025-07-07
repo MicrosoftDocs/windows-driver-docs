@@ -9,10 +9,7 @@ ms.topic: get-started
 
 WinDbg is a kernel-mode and user-mode debugger that's included in Debugging Tools for Windows. This article provides exercises to help you get started using WinDbg as a kernel-mode debugger.
 
-For information about how to get Debugging Tools for Windows, see [Download and install the WinDbg Windows debugger](index.md). After you have installed the debugging tools, locate the installation directories for 64-bit (x64) and 32-bit (x86) versions of the tools. For example:
-
-- **C:\Program Files (x86)\Windows Kits\10\Debuggers\x64**
-- **C:\Program Files (x86)\Windows Kits\10\Debuggers\x86**
+For information about how to get WinDbg, see [Download and install the WinDbg Windows debugger](index.md).
 
 ## Set up a kernel-mode debugging
 

@@ -1,7 +1,7 @@
 ---
-title: Device firmware update for USB devices without using a co-installer
+title: Device Firmware Update for USB Devices without using a Co-installer
 description: Outlines a recommended method to update USB device firmware without a co-installer.
-ms.date: 06/21/2024
+ms.date: 04/28/2025
 ---
 
 # Device firmware update For USB devices without using a co-installer
@@ -72,7 +72,7 @@ While installing the driver update package, the firmware update WDF filter drive
 
     1. Because there's no necessity for updating the firmware as the device has the expected firmware.
 
-When the [EVT_WDF_DEVICE_D0_ENTRY](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) callback of the WDF filter driver is called at a later point, the filter driver must register for device interface change notifications using CM_Register_Notification or IoRegisterPlugPlayNotification (UMDF or KMDF) to listen to the device interface class the USB device will register the device into. Ror example, the firmware update filter driver for an RGB camera would register for KSCATEGORY_VIDEO_CAMERA. On receiving the notification, the filter driver should post a work-item that would perform the firmware update.
+When the [EVT_WDF_DEVICE_D0_ENTRY](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) callback of the WDF filter driver is called at a later point, the filter driver must register for device interface change notifications using CM_Register_Notification or IoRegisterPlugPlayNotification (UMDF or KMDF) to listen to the device interface class the USB device registers the device into. Ror example, the firmware update filter driver for an RGB camera would register for KSCATEGORY_VIDEO_CAMERA. On receiving the notification, the filter driver should post a work-item that would perform the firmware update.
 
 UMDF based firmware update drivers can use the device specific APIs or issue the control transfers directly to access the USB device to perform the firmware update. For example, the UMDF based filter driver for a camera would use Camera APIs to perform the firmware update.
 
@@ -100,7 +100,7 @@ In addition to the driver update package, a separate Firmware Update Device Driv
 
 ![Firmware update WDF driver method.](images/fw-update-wdf-driver-method.png)
 
-While installing the driver update package, the WDF lower filter driver's AddDevice routine is called. From this routine, the filter driver queries for the device firmware version from the device HW registry key. The device firmware should have placed the "firmware version", using the MSOS descriptor or the USB device's extension INF, onto the device HW registry key.
+While installing the driver update package, the WDF lower filter driver's AddDevice routine is called. From this routine, the filter driver queries for the device firmware version from the device HW registry key. The device firmware places the "firmware version", using the MSOS descriptor or the USB device's extension INF, onto the device HW registry key.
 
 1. If the device firmware version and the filter driver expected firmware versions are different or
 
@@ -110,7 +110,7 @@ While installing the driver update package, the WDF lower filter driver's AddDev
 
 1. Else, the WDF filter driver won't insert itself into the device stack
 
-When the [EVT_WDF_DEVICE_D0_ENTRY](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) callback of the WDF filter driver is called at a later point, the filter driver issues a vendor specific command to the device that places it in firmware update mode. The device will disconnect and reconnect, exposing the firmware update interface.
+When the [EVT_WDF_DEVICE_D0_ENTRY](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) callback of the WDF filter driver is called at a later point, the filter driver issues a vendor specific command to the device that places it in firmware update mode. The device disconnects and reconnects, exposing the firmware update interface.
 
 The system enumerates the firmware update device interface. A custom firmware update WDF driver supplied by the vendor, in the firmware update package, will be load for this firmware update interface. This driver updates the firmware.
 
@@ -122,7 +122,7 @@ This method is recommended for devices that can't hold the updated and original 
 
 ## Recovery
 
-The firmware update process can fail for various reasons. If that happens, when the device is enumerated again, the firmware update driver may try to update the firmware again and may fail again and this update process could end up in a loop. The firmware update driver must put an upper limit to the number of retries it can perform. When the firmware update retries gets beyond a threshold (for example, three retries) then the filter driver shouldn't attempt to update the firmware again, until a new version of the driver is downloaded from WU. The firmware update driver may use the registry to persist the retry states.
+The firmware update process can fail for various reasons. If that happens, when the device is enumerated again, the firmware update driver may try to update the firmware again and may fail again and this update process could end up in a loop. The firmware update driver must put an upper limit to the number of retries it can perform. When the firmware update retries exceed a threshold (for example, three retries) then the filter driver shouldn't attempt to update the firmware again, until a new version of the driver is downloaded from WU. The firmware update driver may use the registry to persist the retry states.
 
 At the end of device firmware update, we recommend that the device reset itself and re-enumerate.
 

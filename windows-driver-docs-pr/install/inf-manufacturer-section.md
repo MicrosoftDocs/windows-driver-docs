@@ -10,7 +10,7 @@ api_name:
 - INF Manufacturer Section
 api_type:
 - NA
-ms.date: 11/02/2023
+ms.date: 05/21/2025
 ---
 
 # INF Manufacturer section
@@ -192,6 +192,8 @@ The following table defines the build number for the Windows operating system.
 
 | Windows version | Build number |
 |--|--|
+| Windows Server 2025 | 26100 |
+| Windows 11 version 24H2 | 26100 |
 | Windows 11 version 23H2 | 22631 |
 | Windows 11 version 22H2 | 22621 |
 | Windows 11 version 21H2 | 22000 |

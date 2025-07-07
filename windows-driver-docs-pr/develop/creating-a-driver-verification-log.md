@@ -1,7 +1,7 @@
 ---
 title: How to Create a Driver Verification Log
 description: Learn why the Windows Server hardware certification program requires a driver verification log (DVL) for all applicable driver submissions.
-ms.date: 09/26/2024
+ms.date: 05/09/2025
 ms.topic: how-to
 ---
 
@@ -64,7 +64,7 @@ Microsoft ships as part of the [Windows Driver Kit (WDK)](../download-the-wdk.md
 
 ### Generate a DVL from a CodeQL sarif file, or when using CA and SDV
 
-1. Place the results that must be consumed to create the DVL in a single directory, along with any vcxproj file. For drivers to be certified for Windows Client, this file is the [CodeQL SARIF file](../devtest/static-tools-and-codeql.md#3-perform-analysis). Windows Server certification might also include the Code Analysis and Static Driver Verifier (SDV) results files. Check the [WHCP requirements](/windows-hardware/design/compatibility/whcp-specifications-policies) documents for specific details on which tools are required to be run for device driver certification.
+1. Place the results that must be consumed to create the DVL in a single directory, along with any vcxproj file. For drivers to be certified for Windows Client, this file is the [CodeQL SARIF file](../devtest/static-tools-and-codeql.md#perform-analysis). Windows Server certification might also include the Code Analysis and Static Driver Verifier (SDV) results files. Check the [WHCP requirements](/windows-hardware/design/compatibility/whcp-specifications-policies) documents for specific details on which tools are required to be run for device driver certification.
 1. Place the CodeQL SARIF files and Code Analysis XML files in the top level of the directory. Place the SDV DVL.xml file in a subfolder called *sdv*.
 1. Navigate to the top-level directory which contains the CodeQL SARIF file from the command line.
 1. Locate dvl.exe from the WDK or a mounted eWDK.
