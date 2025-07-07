@@ -1,7 +1,7 @@
 ---
 title: ACX Streaming
 description: This topic provides a summary of the ACX streaming and the associated buffering, which is critical to a glitch free audio experience.
-ms.date: 05/02/2024
+ms.date: 07/07/2022
 ms.localizationpriority: medium
 ---
 
@@ -179,9 +179,9 @@ Drivers will need to perform similar steps to add an ACXSTREAMAUDIOENGINE elemen
 
 ## Stream resource allocation  
 
-The streaming model for ACX is packet-based, with support for one or two packets for a stream. The Render or Capture ACXPIN for the streaming circuit is given a request to allocate the memory packets that are used in the stream. To support Rebalance, the allocated memory must be system memory instead of device memory mapped into the system. The driver may use existing WDF functions to perform the allocation, and will return an array of pointers to the buffer allocations. If the driver requires a single contiguous block, it may allocate both packets as a single buffer, returning a pointer to an offset of the buffer as the second packet.
+The streaming model for ACX is packet-based, with support for one or two packets for a stream. The Render or Capture ACXPIN for the streaming circuit is given a request to allocate the memory packets that are used in the stream. To support Rebalance, the allocated memory must be system memory instead of device memory mapped into the system. The driver may use existing WDF functions to perform the allocation, and will return an array of pointers to the buffer allocations. If the driver requires a single contiguous block, it may allocate both packets as a single buffer. The second packet will have `WdfMemoryDescriptorTypeInvalid` and the offset of the second packet will be into the buffer described by the first packet.
 
-If a single packet is allocated, the packet must be page-aligned and is mapped twice into user mode:
+If a single packet is allocated, the driver must allocate a page-aligned buffer with a length that is page-divisible. The offset for the single packet also must be 0. The ACX framework will map this packet into user mode twice, back to back:
 
 | packet 0 | packet 0 |
 
@@ -196,12 +196,14 @@ With the initial ACX packet streaming, there are only two packets allocated at t
 For PacketCount=1, if the application asks for 10ms of data, the audio stack will send a request for a single 10ms buffer to the driver (it won’t double the buffer size sent to the driver).
  
 The driver will allocate a page-aligned buffer that’s at least 10ms long. For a 48k 2ch 2 byte per sample stream, the smallest timer-driven buffer that can be allocated is 1024 samples which is 21.333ms. For a 48k 8ch 2bytes per sample stream, the smallest timer-driven buffer that can be allocated is 512 samples or 10.667ms.
+
+The driver will allocate a page-aligned buffer that’s at least 10ms long. For a 48k 2ch 2 byte per sample stream, the smallest timer-driven buffer that can be allocated is 1024 samples (one page of memory) which is 21.333ms. For a 48k 8ch 2bytes per sample stream, the smallest timer-driven buffer that can be allocated is 512 samples (one page of memory) or 10.667ms. For a 48k 6ch 2 byte per sample stream, the smallest timer-driven buffer is still 1024 samples (three pages of memory, to ensure the end of a sample aligns with the end of the buffer) which is 21.333ms.
  
 The ACX framework will map this page-aligned buffer into the user-mode process twice, back to back. The user-mode process can then write up to a buffer’s worth of data into the user-mode mapping starting anywhere in the buffer without having to do any wrapping.
 
 NotifyPacketComplete should be called by the driver when it has read the entirety of the packet from system memory, so that the system knows it can write the next packet of audio data to the packet’s buffer.
  
-There will be a delay between NotifyPacketComplete and when the last sample of that packet is actually rendered; this delay is expressed as the result from EvtAcxStreamGetHwLatency.
+There will be a delay between NotifyPacketComplete and when the last sample of that packet is actually rendered; this delay is expressed as the result from `EvtAcxStreamGetHwLatency`.
 
 ### Ping-pong buffers
 
