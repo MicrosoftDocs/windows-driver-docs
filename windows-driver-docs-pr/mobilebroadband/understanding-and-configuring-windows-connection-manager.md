@@ -109,7 +109,7 @@ For PCs that have multiple Ethernet ports, Windows can't prevent an interconnect
 
 Because prohibiting interconnections is a security consideration, any disconnections that comply with this policy take effect immediately, even if there's ongoing activity. Users experience a connectivity disruption when transitioning between public and corporate networks, even if the two networks overlap.
 
-For example, a user engaged in a VoIP call over a mobile broadband network with a laptop docked to a corporate Ethernet connection loses the call. This result occurs even thought the app might be able to automatically recover over the new connection. If the policy isn't enabled, Windows instead soft-disconnects the mobile broadband connection by waiting for the call to complete. On the other hand, a VoIP call started over a corporate Wi-Fi network isn't disrupted when docked to the corporate network because both networks connect to the domain. The Wi-Fi network is disconnected after the call completes.
+For example, a user engaged in a VoIP call over a mobile broadband network with a laptop docked to a corporate Ethernet connection loses the call. This result occurs even though the app might be able to automatically recover over the new connection. If the policy isn't enabled, Windows instead soft-disconnects the mobile broadband connection by waiting for the call to complete. On the other hand, a VoIP call started over a corporate Wi-Fi network isn't disrupted when docked to the corporate network because both networks connect to the domain. The Wi-Fi network is disconnected after the call completes.
 
 ### Prohibit roaming on mobile broadband networks
 
@@ -187,7 +187,7 @@ The following conditions determine the preference between networks in the provis
 
 Before Windows 8, the Wi-Fi preferred network list was accessible to the user through the Manage Wireless Networks control panel. However, customer data shows few users access the functionality. Additionally, the user interface lists only Wi-Fi connections and doesn't incorporate preferences between Wi-Fi and mobile broadband.
 
-Most users don't seek to manually modify the network list. However, certain users or applications might find it necessary.
+Most users don't need to manually modify the network list. However, certain users or applications might find it necessary.
 
 ### User interface
 
