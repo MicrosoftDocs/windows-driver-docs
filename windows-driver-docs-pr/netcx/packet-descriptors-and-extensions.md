@@ -38,7 +38,7 @@ For more information on net rings and the Net Ring Iterator Interface, see [Intr
 
 ## Packet descriptor extensibility
 
-Extensibility is a core feature of the NetAdapterCx packet descriptor, forming the foundation for the descriptor's versionability and performance. At runtime, the operating system allocates all packets descriptors for each packet queue in a contiguous block, together with any avaiable extensions. Each extension block is immediately behind the core descriptor, as shown in the following figure:
+Extensibility is a core feature of the NetAdapterCx packet descriptor, forming the foundation for the descriptor's versionability and performance. At runtime, the operating system allocates all packets descriptors for each packet queue in a contiguous block, together with any available extensions. Each extension block is immediately behind the core descriptor, as shown in the following figure:
 
 :::image type="content" source="images/packet-descriptors-1-layout.png" alt-text="Diagram that shows the NetAdapterCx packet descriptor layout with 3 extension blocks.":::
 
