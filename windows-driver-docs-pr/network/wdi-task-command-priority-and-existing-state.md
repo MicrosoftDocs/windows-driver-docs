@@ -8,10 +8,10 @@ ms.date: 07/08/2025
 
 When the adapter is in a particular state, new commands may come down to it that could affect the existing state (for example, a scan that affects existing connections). Using the following definitions
 
-**Important**: Prioritize the existing state higher than the new request. 
-**Maintain**: Prioritize the existing state and the new command equally.
-**Throttle**: Throttle down the servicing of the existing state so that it works, but prioritize the new command higher.
-**Pause**: Stop servicing the existing state and attempt to finish the existing state as soon as possible.
+- **Important**: Prioritize the existing state higher than the new request. 
+- **Maintain**: Prioritize the existing state and the new command equally.
+- **Throttle**: Throttle down the servicing of the existing state so that it works, but prioritize the new command higher.
+- **Pause**: Stop servicing the existing state and attempt to finish the existing state as soon as possible.
 
 this table describes how new commands should be prioritized against the existing state in the adapter. The columns describe how to service the existing state when the new command comes in.
 
