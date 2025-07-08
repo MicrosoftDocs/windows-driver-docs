@@ -2,6 +2,7 @@
 title: Cellular Architecture and Implementation
 description: Learn about the elements of cellular architecture for Windows 10, and how they interact.
 ms.date: 01/07/2024
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
 ---
 

@@ -2,6 +2,7 @@
 title: MB eSIM MBIM ready state guidance
 description: MB eSIM MBIM ready state guidance
 ms.date: 08/10/2017
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
 ---
 

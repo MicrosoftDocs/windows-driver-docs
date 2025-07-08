@@ -2,6 +2,7 @@
 title: MB Collecting Logs
 description: MB Collecting Logs
 ms.date: 03/10/2021
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
 ---
 
