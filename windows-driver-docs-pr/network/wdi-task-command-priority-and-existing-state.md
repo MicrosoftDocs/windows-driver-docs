@@ -6,7 +6,7 @@ ms.date: 07/08/2025
 
 # WDI task command priority and existing state
 
-When the adapter is in a particular state, new commands may come down to it that could affect the existing state (for example, a scan that affects existing connections). THe following table uses these definitions
+When the adapter is in a particular state, new commands may come down to it that could affect the existing state (for example, a scan that affects existing connections). The following table uses these definitions
 
 - **Important**: Prioritize the existing state higher than the new request. 
 - **Maintain**: Prioritize the existing state and the new command equally.
