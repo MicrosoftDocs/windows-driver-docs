@@ -60,7 +60,7 @@ Adjust the general time settings so you can capture a graph of any data leaks ov
 
 ## Start application and monitor data 
 
-After you configure the counters and time settings, run Performance Monitor to check for leaks:
+After you configure the counters and time settings, check for leaks with Performance Monitor:
 
 1. Start the application or test program that you want to check for leaks.
 
@@ -79,9 +79,9 @@ After you configure the counters and time settings, run Performance Monitor to c
 
 ### Investigate user-mode leaks
 
-User-mode memory leaks are always located in _pageable_ pool.
+User-mode memory leaks are always located in _pageable_ pool. This type of leak causes the **Memory** > **Pool Paged Bytes** counter and the **Paging File** > **Usage** counter to increase steadily over time.
 
-This type of leak causes the **Memory** > **Pool Paged Bytes** counter and the **Paging File** > **Usage** counter to increase steadily over time.
+For more information, see [Find user-mode memory leaks with PerfMon](./using-performance-monitor-to-find-a-user-mode-memory-leak.md).
 
 ### Investigate kernel-mode leaks
 

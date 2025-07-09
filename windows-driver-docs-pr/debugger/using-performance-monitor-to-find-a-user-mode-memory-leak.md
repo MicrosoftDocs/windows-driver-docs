@@ -1,26 +1,76 @@
 ---
-title: Use Performance Monitor to Find a User-Mode Memory Leak
-description: Learn how to use Performance Monitor to find a user-mode memory leak and to measure the memory usage of individual processes.
+title: Look For User-Mode Memory Leak With PerfMon
+description: Use Windows Performance Monitor (PerfMon) to find a user-mode memory leak and measure the memory usage of individual processes.
 keywords: ["memory leak, user-mode, performance monitor"]
-ms.date: 08/26/2024
+ms.date: 07/10/2025
 ---
 
-# Use Performance Monitor to find a user-mode memory leak
+# Find user-mode memory leaks with Performance Monitor (PerfMon)
 
-If you suspect there's a user-mode memory leak but aren't sure which process causes it, use Performance Monitor to measure the memory usage of individual processes.
+If you suspect there's a user-mode memory leak, you can use Windows Performance Monitor (PerfMon) to measure the memory usage of individual processes. The tool can help you identify the specific process causing the leak.
 
-Run Performance Monitor as Administrator. Right click on the *Performance Monitor* under *Monitoring Tools* and select **Properties** to add the following counters:
+Open Performance Monitor from Windows **Search**. Enter _perfmon_ (or _Performance Monitor_), then right-click the tool and select **Run as administrator**.
 
-- **Process** > **Private Bytes** (for each process you want to examine)
+## Add data counters
 
-- **Process** > **Virtual Bytes** (for each process you wish to examine)
+Add memory and page file counters to the main Performance Monitor graph so you can monitor data changes.
 
- Set the *Duration* to capture enough activity. For example, change the update time to 600 seconds to capture a graph of the leak over time. You might also want to log the data to a file for later examination.
+1. In Performance Monitor, expand **Monitoring Tools**, and select **Performance Monitor**. The graph view displays.
 
-The **Private Bytes** counter indicates the total amount of memory that a process has allocated, not including memory shared with other processes. 
+1. Right-click **Performance Monitor** and select **Properties**. 
 
-The **Virtual Bytes** counter indicates the current size of the virtual address space that the process uses.
+1. In the **Performance Monitor Properties** dialog, select the **Data** tab.
 
-Some memory leaks appear in the data file in the form of an increase in private bytes allocated. Other memory leaks show up in the form of an increase in the virtual address space.
+1. Select **Add**. The **Add Counters** dialog opens.
 
-After you've determined which process is leaking memory, use the UMDH tool to determine the specific routine that's at fault. For details, see [Using UMDH to find user-mode memory leaks](using-umdh-to-find-a-user-mode-memory-leak.md).
+1. In the list of counters (sorted alphabetically), locate **Process**. Select the dropdown arrow for **Process** to see all memory-related counters. 
+
+1. Add the following memory counters. Select a counter and then select **Add**.
+
+   - **Private Bytes** (for each process to examine): Indicates the total amount of memory allocated for the process, not including memory shared with other processes.
+
+   - **Virtual Bytes** (for each process to examine): Indicates the current size of the virtual address space that the process uses.
+
+1. Select **OK**. 
+
+## Set duration to capture enough activity
+
+Adjust the general time settings so you can capture a graph of any data leaks over time.
+
+1. In the **Performance Monitor Properties** dialog, select the **General** tab.
+
+1. Set the **Sample every** time to **600** seconds, which measures the value every 10 minutes.
+
+1. Set the **Duration** time to capture enough activity.
+
+   To monitor the data over 24 hours, the value is **86400** (60 x 60 x 24 = 86,400).
+   
+1. Select **OK**.
+
+> [!TIP]
+> Log the graph data to a file for later examination.
+
+## Start application and check user-mode data 
+
+After you configure the counters and time settings, check for leaks with Performance Monitor:
+
+1. Start the application or test program that you want to check for leaks.
+
+1. Allow the program to run undisturbed for some time.
+
+   > [!IMPORTANT]
+   > Don't use the target computer while you're running the program to check for leaks.
+   > Leaks usually develop slowly.
+   > It can take hours for a data leak to accumulate to a detectable level.
+
+1. Watch the Performance Monitor counters.
+
+   When you start monitoring, the counter values change rapidly. It can take time for the memory pools values to reach a steady state.
+
+   - **Private Bytes**: Some memory leaks appear in the data file in the form of an increase in private bytes allocated.
+
+   - **Virtual Bytes**: Some memory leaks appear as an increase in the virtual address space.
+
+## Find specific routine with leak
+
+After you identify which process is leaking memory, use the user-mode dump heap (UMDH) utility to determine the specific routine with the memory issue. For for information, see [Use UMDH to find user-mode memory leaks](using-umdh-to-find-a-user-mode-memory-leak.md).
