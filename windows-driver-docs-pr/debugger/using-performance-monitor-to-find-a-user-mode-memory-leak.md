@@ -13,7 +13,7 @@ Open Performance Monitor from Windows **Search**. Enter _perfmon_ (or _Performan
 
 ## Add data counters
 
-Add memory and page file counters to the main Performance Monitor graph so you can monitor data changes.
+Add process data counters to the main Performance Monitor graph so you can monitor data changes.
 
 1. In Performance Monitor, expand **Monitoring Tools**, and select **Performance Monitor**. The graph view displays.
 
