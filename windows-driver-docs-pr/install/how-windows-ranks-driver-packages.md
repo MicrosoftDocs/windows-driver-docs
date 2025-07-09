@@ -7,7 +7,7 @@ keywords:
 - driver selections WDK device installations , ranking drivers
 - locating drivers for device installation WDK device installations , ranking drivers
 - searching for drivers during device installation WDK devi
-ms.date: 12/03/2021
+ms.date: 07/08/2025
 ms.topic: concept-article
 ---
 
@@ -22,12 +22,12 @@ The rank of a driver package is a composite value that depends on a driver packa
 
 A rank is represented by a value of type DWORD. A rank is the sum of a signature score, a feature score, and an identifier score. A rank is formatted as 0x*SSGGTHHH*, where *S*, *G*, *T*, and *H* are four-bitfields and the *SS*, *GG*, and *THHH* fields represent the three ranking scores, as follows:
 
--   The [signature score](signature-score--windows-vista-and-later-.md) ranks a driver package based on whether its digital signature is trusted. The signature score depends only on the value of the *SS* field. An unspecified signature score is represented as 0x*SS*000000.
+-   The [signature score](signature-score--windows-vista-and-later-.md) ranks a driver package based on whether its digital signature is trusted. The signature score depends only on the value of the *SS* field. An unknown signature score is represented as 0x*FF*000000.
 
     For an overview on how Windows Vista and later versions of Windows use a driver package's signature to determine how the driver package is installed, see [Signature Categories and Driver Installation](signature-categories-and-driver-installation.md).
 
--   The [feature score](feature-score--windows-vista-and-later-.md) ranks a driver package based on the features that the driver package supports. The feature score depends only on the value of the *GG* field. An unspecified feature score is represented as 0x00*GG*0000.
+-   The [feature score](feature-score--windows-vista-and-later-.md) ranks a driver package based on the features that the driver package supports. The feature score depends only on the value of the *GG* field. An unspecified feature score is represented as 0x00*FF*0000.
 
--   The [identifier score](identifier-score--windows-vista-and-later-.md) ranks a driver package based on the type of match between a [device identification string](device-identification-strings.md) that is reported by a device and a device identification string that is listed in an entry of an INF *Models* section of a driver package INF file. The identifier score depends only on the value of the *THHH* field. An unspecified identifier score is represented as 0x0000*THHH*.
+-   The [identifier score](identifier-score--windows-vista-and-later-.md) ranks a driver package based on the type of match between a [device identification string](device-identification-strings.md) that is reported by a device and a device identification string that is listed in an entry of an INF *Models* section of a driver package INF file. The identifier score depends only on the value of the *THHH* field.
 
 For information about entries in the SetupAPI log that indicate the rank of a driver package and the type of driver package signature, see [Driver Rank Information in the SetupAPI Log](driver-rank-information-in-the-setupapi-log.md).
