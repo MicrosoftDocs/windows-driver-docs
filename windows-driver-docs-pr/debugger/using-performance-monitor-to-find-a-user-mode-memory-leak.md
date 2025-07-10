@@ -13,63 +13,35 @@ Open Performance Monitor from Windows **Search**. Enter _perfmon_ (or _Performan
 
 ## Add data counters
 
-Add process data counters to the main Performance Monitor graph so you can monitor data changes.
+Add process data counters to the main Performance Monitor graph so you can monitor data changes. Under **Monitoring Tools**, right-click **Performance Monitor** and select **Properties**. In the **Properties** dialog > **Data** tab, add the following counters:
 
-1. In Performance Monitor, expand **Monitoring Tools**, and select **Performance Monitor**. The graph view displays.
+- **Process** > **Private Bytes** > (for each process to examine): Set the total amount of memory allocated for the specific process, not including memory shared with other processes.
 
-1. Right-click **Performance Monitor** and select **Properties**. 
-
-1. In the **Performance Monitor Properties** dialog, select the **Data** tab.
-
-1. Select **Add**. The **Add Counters** dialog opens.
-
-1. In the list of counters (sorted alphabetically), locate **Process**. Select the dropdown arrow for **Process** to see all memory-related counters. 
-
-1. Add the following memory counters. Select a counter and then select **Add**.
-
-   - **Private Bytes** (for each process to examine): Indicates the total amount of memory allocated for the process, not including memory shared with other processes.
-
-   - **Virtual Bytes** (for each process to examine): Indicates the current size of the virtual address space that the process uses.
-
-1. Select **OK**. 
+- **Process** > **Virtual Bytes** > (for each process to examine): Set the current size of the virtual address space for the specific process.
 
 ## Set duration to capture enough activity
 
-Adjust the general time settings so you can capture a graph of any data leaks over time.
+Adjust the general time settings so you can capture a graph of any data leaks over time. In the **Properties** dialog > **General** tab, configure the following values:
 
-1. In the **Performance Monitor Properties** dialog, select the **General** tab.
+- **Sample every**: Set the time to **600** seconds, which measures the value every 10 minutes.
 
-1. Set the **Sample every** time to **600** seconds, which measures the value every 10 minutes.
-
-1. Set the **Duration** time to capture enough activity.
-
-   To monitor the data over 24 hours, the value is **86400** (60 x 60 x 24 = 86,400).
-   
-1. Select **OK**.
+- **Duration**: Set the time to capture enough activity. For example, to monitor the data over 24 hours, set the value to **86400** (60 x 60 x 24 = 86,400).
 
 > [!TIP]
 > Log the graph data to a file for later examination.
 
-## Start application and check user-mode data 
+## Start application and monitor user-mode data 
 
-After you configure the counters and time settings, check for leaks with Performance Monitor:
+After you configure the counters and time settings, start the application or test program that you want to check for leaks. Allow the program to run undisturbed for some time.
 
-1. Start the application or test program that you want to check for leaks.
+> [!IMPORTANT]
+> Don't use the target computer while you're running the program to check for leaks. Leaks usually develop slowly. It can take hours for a data leak to accumulate to a detectable level.
 
-1. Allow the program to run undisturbed for some time.
+Watch the Performance Monitor counters. When you start monitoring, the counter values change rapidly. It can take time for the memory pools values to reach a steady state.
 
-   > [!IMPORTANT]
-   > Don't use the target computer while you're running the program to check for leaks.
-   > Leaks usually develop slowly.
-   > It can take hours for a data leak to accumulate to a detectable level.
+- **Private Bytes**: Some memory leaks appear in the data file in the form of an increase in private bytes allocated.
 
-1. Watch the Performance Monitor counters.
-
-   When you start monitoring, the counter values change rapidly. It can take time for the memory pools values to reach a steady state.
-
-   - **Private Bytes**: Some memory leaks appear in the data file in the form of an increase in private bytes allocated.
-
-   - **Virtual Bytes**: Some memory leaks appear as an increase in the virtual address space.
+- **Virtual Bytes**: Some memory leaks appear as an increase in the virtual address space.
 
 ## Find specific routine with leak
 
