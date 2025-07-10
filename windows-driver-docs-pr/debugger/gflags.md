@@ -34,7 +34,7 @@ GFlags supports the following features:
 - The GFlags dialog has tabbed pages for easy navigation.
 
 > [!IMPORTANT]
-> Pool tagging is permanently enabled on Windows. The **Enable pool tagging** check box on the **Global Flags** dialog is unavailable, and commands to enable or disable pool tagging fail.
+> Pool tagging is permanently enabled on Windows. The **Enable pool tagging** check box on the **Global Flags** dialog is unavailable, and commands to enable or disable pool tagging fail.
 
 ### Requirements
 

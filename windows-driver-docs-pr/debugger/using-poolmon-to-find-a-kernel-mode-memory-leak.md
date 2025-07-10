@@ -32,17 +32,17 @@ Fat      Paged     6662  ( 8)    4971  ( 6)    1691     174560 ( 128)    103
 MmSt     Paged      614  ( 0)     441  ( 0)     173      83456   ( 0)    482 
 ```
 
-PoolMon has command keys that sort the output according to various criteria. To change how the data is sorted, select the letter associated with the specific sort command. It takes a few seconds for each command to affect the display.
+PoolMon has command keys that sort the output according to various criteria. To change how the data is sorted, select the keyboard shortcut associated with the specific sort command. It takes a few seconds for each command to affect the display.
 
-The sort commands include:
+The following table lists the available sort commands:
 
-| Command key | Operation |
-|---|---|
-| **P** | Limit the tags shown to nonpaged pool bytes, paged pool bytes, or both. Repeatedly selecting **P** cycles through each of these options, in that order.|
+| Command&nbsp;key | Operation |
+|:-----:|-------|
+| **P** | Limit the tags shown to nonpaged pool bytes (**P**), paged pool bytes (**P**, **P**), or both (**Enter**). Repeatedly selecting **P** cycles through the options. |
 | **B** | Sort tags by maximum byte usage. |
 | **M** | Sort tags by maximum byte allocations. |
 | **T** | Sort tags alphabetically by tag name. |
-| **E** | Adjust the display to include the paged and nonpaged totals across the bottom. |
+| **E** | Show the paged and nonpaged totals across the bottom of the display. |
 | **A** | Sort tags by allocation size. |
 | **F** | Sort tags by free operations. |
 | **S** | Sort tags by the difference between allocations and frees. |
