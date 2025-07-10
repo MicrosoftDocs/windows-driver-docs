@@ -7,7 +7,7 @@ ms.date: 07/11/2025
 
 # Symbols for Windows debugging
 
-Symbol files hold various data that while not essential for running the binaries, can be useful for debugging. Symbols can include the name, type (if applicable), store address (or register), and any parent or child symbols. Examples of symbols include variable names (local and global), functions, and any entry point into a module.
+Symbol files hold various data that while not essential for running the binaries, can be useful for debugging. Symbols can include the symbol name, symbol type (if applicable), symbol store address (or register), and any parent or child symbols. Examples of symbols include variable names (local and global), functions, and any entry point into a module.
 
 The debugger gets its information about symbols from symbol files located on the local file system or loaded from a remote symbol server. When you use a symbol server, the debugger automatically uses the correct version of the symbol file to match the module in the target. 
 
@@ -19,7 +19,7 @@ Symbols for the Windows debuggers are available from a public symbol server over
 
 - For kernel-mode debugging, you need symbols for the driver you're debugging and also the Windows public symbols. 
 
-You can load symbols automatically with the `.symfix` command, which [sets the symbol store path)](../debuggercmds/-symfix--set-symbol-store-path-.md). To run the command, you need access to the internet while your debugger is running. Next, use the `.reload` command to [reload the module and symbols](../debuggercmds/-reload--reload-module-.md).
+You can load symbols automatically with the `.symfix` command, which [sets the symbol store path](../debuggercmds/-symfix--set-symbol-store-path-.md). To run the command, you need access to the internet while your debugger is running. Next, use the `.reload` command to [reload the module and symbols](../debuggercmds/-reload--reload-module-.md).
 
 To learn more about symbols, including WinDbg support for Portable PDB symbols, see the following articles:
 
