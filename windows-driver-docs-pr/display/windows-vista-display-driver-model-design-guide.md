@@ -27,7 +27,7 @@ Key features of WDDM include:
 
 - **Virtual memory management for the GPU**: Supports more complex and larger graphics workloads without running out of physical memory.  
 
-- **Driver with both user-mode and kernel-mode components**: Reduces the likelihood of system crashes due to driver failures.  
+- **Driver with both a user-mode and kernel-mode component**: Reduces the likelihood of system crashes due to driver failures.  
 
 - **Tight integration with DirectX**: Ensures applications can use the full capabilities of modern GPUs and more complex and efficient rendering techniques.
 
