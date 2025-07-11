@@ -33,7 +33,7 @@ The `%MyCo%` value must be defined in an [INF Strings section](../install/inf-st
 
 In the [INF DestinationDirs section](../install/inf-destinationdirs-section.md), a battery driver's INF specifies the [driver store](../develop/run-from-driver-store.md) as the default for all files. 
 
-The following example shows how to specify the DestinationDirs section where the [driver store value is 13](../develop/run-from-driver-store#quick-reference-for-destination-directory-updates):
+The following example shows how to specify the DestinationDirs section where the [driver store value is 13](../develop/run-from-driver-store.md#quick-reference-for-destination-directory-updates):
 
 ```INF
 [DestinationDirs]
