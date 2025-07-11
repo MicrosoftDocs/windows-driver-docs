@@ -33,7 +33,7 @@ To get your driver signed, first [Register for the Windows Hardware Dev Center p
 
 * [Does every new production version of a driver package require a Microsoft signature?](#does-every-new-production-version-of-a-driver-package-require-a-microsoft-signature)
 
-* [Can I sign nondriver code with existing certificates issued by a third party?](#can-i-sign-non-driver-code-with-existing-certificates-issued-by-a-third-party)
+* [Can I sign nondriver code with existing certificates issued by a third party?](#can-i-sign-nondriver-code-with-existing-certificates-issued-by-a-third-party)
 
 * [Can I continue to use EV certificate for signing submissions to Hardware Dev Center?](#can-i-continue-to-use-ev-certificate-for-signing-submissions-to-hardware-dev-center)
 
