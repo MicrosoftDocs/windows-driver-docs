@@ -11,7 +11,7 @@ keywords:
 - Windows display driver model WDK , about display driver model
 - miniport drivers WDK display
 - display miniport drivers WDK See miniport drivers WDK display
-ms.date: 07/11/2025
+ms.date: 07/12/2025
 ms.topic: concept-article
 ---
 
@@ -23,7 +23,7 @@ WDDM is required starting with Windows 8 (WDDM 1.2).
 
 Key features of WDDM include:
 
-- **GPU scheduling**: Allows for better management of GPU resources with preemptive scheduling because multiple applications can share the GPU more efficiently.  
+- **GPU scheduling**: Preemptive scheduling allows for better management of GPU resources because multiple applications can share the GPU more efficiently.  
 
 - **Virtual memory management for the GPU**: Supports more complex and larger graphics workloads without running out of physical memory.  
 
@@ -31,6 +31,6 @@ Key features of WDDM include:
 
 - **Tight integration with DirectX**: Ensures applications can use the full capabilities of modern GPUs and more complex and efficient rendering techniques.
 
-- **Timeout detection and recovery (TDR)**: Increases system stability.  
+- **Timeout detection and recovery (TDR) support**: Increases system stability.  
 
 - **Multiple monitor support**: Enables seamless configuration and management of multi-display setups.
