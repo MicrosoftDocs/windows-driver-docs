@@ -17,8 +17,7 @@ DLRM enables the system to operate at the most efficient power state for the cur
 To support DLRM, the following requirements must be met:
 
 - **BIOS Support**: DLRM is opt-in and must be enabled by platform firmware. The enabling status is reported to the OS via ACPI.
-- **OS Support**: DLRM is supported in Windows 24H2 build 26100.2894 and later. Note: DLRM is supported by default in Active Development 27000 Series Build build 27766 
-and later.
+- **OS Support**: DLRM is supported in Windows 24H2 build 26100.2894 and later.
 - **Microsoft Inbox NVMe Driver**: The system must use the Microsoft inbox NVMe driver (`stornvme.sys`).
 - **PCIe EQ Bypass Disabled**: Equalization Bypass must be disabled, as it restricts supported PCIe generations and conflicts with DLRM. Note: Generally, any PCIe feature that restricts PCIe generations should not be enabled as it will conflict with DLRM. 
 
@@ -77,61 +76,3 @@ Scope (\_SB.PC00.RP05.PXSX) {
 > - The `_DSM` method must be declared on the PCIe Root Port where the NVMe device is installed.
 > - If no NVMe device is present, the method should return `0`.
 > - The Root Port location may vary by platform design.
-
-## Implementation Details
-
-The NVMe Dynamic Link Rate Management (DLRM) is implemented within the Storport driver (`storport.sys`) and operates by monitoring I/O throughput across two distinct time windows to make intelligent decisions about PCIe link speed adjustments. DLRM is supported exclusively on NVMe devices utilizing the `stornvme.sys` miniport driver. Monitoring is activated only if the prerequisites outlined above are met.
-
-### Monitoring Mechanism
-
-`storport.sys` monitors incoming I/O operations within two distinct time windows:
-
-- **Scaling Up Window**: Tracks if current data rates require a higher PCIe speed.
-  - Throughput exceeding the threshold triggers immediate scaling to the maximum supported speed.
-  - Default window: **20 milliseconds**.
-- **Scaling Down Window**: Evaluates if a lower PCIe speed can handle the workload.
-  - Scaling down occurs only after the window expires, reducing speed one generation at a time (minimum Gen2).
-  - Default window: **500 milliseconds**.
-
-### Threshold Calculations
-
-- **Scale Up Threshold**: 80% of the maximum speed of the current generation.
-- **Scale Down Threshold**: 70% of the maximum speed of the next lower generation.
-
-#### PCIe Speed Thresholds (4-Lane NVMe Devices)
-
-| PCIe Generation | Max Bandwidth (MB/s) | Scale Up Threshold (MB/s) | Scale Down Threshold (MB/s) |
-|-----------------|----------------------|---------------------------|-----------------------------|
-| Gen1            | 1,000                | 800                       | N/A (minimum is Gen2)       |
-| Gen2            | 2,000                | 1,600                     | N/A (minimum is Gen2)       |
-| Gen3            | 3,936                | 3,149                     | 1,400 (70% of Gen2)         |
-| Gen4            | 7,872                | 6,298                     | 2,755 (70% of Gen3)         |
-| Gen5            | 15,748               | 12,598                    | 5,510 (70% of Gen4)         |
-| Gen6            | 31,500               | 25,200                    | 11,024 (70% of Gen5)        |
-
-*Note: Thresholds may change based on future optimizations and hardware characteristics.*
-
-#### Power Mode Behavior
-
-DLRM enablement also depends on system Power Mode Settings (`Settings -> System -> Power -> Power Mode`).
-
-| Power Mode           | DLRM Status | Link Speed Behavior                                 |
-|----------------------|-------------|-----------------------------------------------------|
-| Best Performance     | OFF         | NVMe always operates at maximum supported speed.     |
-| Balanced             | ON          | Link speed dynamically varies between Gen2 and max. <br> *Note: In Deepest Run-time Idle Platform State (DRIPS), the maximum PCI Gen Speed is capped at Gen3.* |
-| Best Power Efficiency| ON          | Max link speed limited to Gen3; varies Gen2–Gen3.    |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
