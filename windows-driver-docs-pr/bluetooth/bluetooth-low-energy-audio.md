@@ -821,7 +821,7 @@ Since the Codec_Capability[i] in the response for an HCI_Read_Local_Supported_Co
 
 | Parameter | Size (Octets) | Description |
 |---|---|---|
-| Codec_ID | 5 | **Octet 0:** 0xFF (Vendor Specific)<br><br><hr><br>**Octet 1 to 2:** 0x0006 (Microsoft)<br><br><hr><br>**Octet 3 to 4:** Vendor-defined codec ID <br><br>If the most significant bit of octet 4 is set to zero (0), octet 3 contains a SIG-approved coding format (ranging from 0x00 to 0x07 as of May 31, 2024), except for 0xFF.<br><br>If the most significant bit of octet 4 is set to one (1), octet 3 contains a coding format that is yet to be defined and is reserved by Windows for future use. |
+| Codec_ID | 5 | **Octet 0:** 0xFF (Vendor Specific)<br><hr>**Octet 1 to 2:** 0x0006 (Microsoft)<br><hr>**Octet 3 to 4:** Vendor-defined codec ID <br><br>If the most significant bit of octet 4 is set to zero (0), octet 3 contains a SIG-approved coding format (ranging from 0x00 to 0x07 as of May 31, 2024), except for 0xFF.<br><br>If the most significant bit of octet 4 is set to one (1), octet 3 contains a coding format that is yet to be defined and is reserved by Windows for future use. |
 
 *<sup>Table 7 Microsoft-specific codec ID</sup>*
 
@@ -838,7 +838,7 @@ The controller shall advertise its support for the Microsoft-specific codec ID v
 
 | Field | Description |
 |---|---|
-| Vendor_Specific_Codec_ID[k] | **Octets 0 to 1:** Company ID (0x0006)<br>For more information, see **Octet 1 to 2** in Table 7.<br><br><hr><br>**Octets 2 to 3:** Vendor-defined codec ID (for example, 0x0006 for LC3)<br>For more information, see **Octet 3 to 4** in Table 7. |
+| Vendor_Specific_Codec_ID[k] | **Octets 0 to 1:** Company ID (0x0006)<br>For more information, see **Octet 1 to 2** in Table 7.<br><hr>**Octets 2 to 3:** Vendor-defined codec ID (for example, 0x0006 for LC3)<br>For more information, see **Octet 3 to 4** in Table 7. |
 | Vendor_Specific_Codec_Transport[k] | LE_CIS (0x02) must be supported. |
 
 *<sup>Table 8 HCI_Read_Local_Supported_Codec [v2] response value</sup>*
@@ -849,7 +849,7 @@ To query for all Windows-specific codec capabilities, including the list of rend
 
 | Parameter | Size (Octets) | Description |
 |---|---|---|
-| Codec_ID (Microsoft-specific codec ID) | 5 | **Octet 0:** 0xFF (Vendor Specific)<br><br><hr><br>**Octet 1 to 2:** Company ID (0x0006)<br>For more information, see **Octet 1 to 2** in Table 8.<br><br><hr><br>**Octet 3 to 4:** Vendor-defined codec ID (for example, 0x0006 for LC3)<br>For more information, see **Octet 3 to 4** in Table 8. |
+| Codec_ID (Microsoft-specific codec ID) | 5 | **Octet 0:** 0xFF (Vendor Specific)<br><hr>**Octet 1 to 2:** Company ID (0x0006)<br>For more information, see **Octet 1 to 2** in Table 8.<br><hr>**Octet 3 to 4:** Vendor-defined codec ID (for example, 0x0006 for LC3)<br>For more information, see **Octet 3 to 4** in Table 8. |
 | Logical_Transport_Type | 1 | 0x2 (LE CIS) |
 | Direction | 1 | 0x00 (Input, for example, Host to Controller) |
 
