@@ -78,7 +78,7 @@ Scope (\_SB.PC00.RP05.PXSX) {
 > - If no NVMe device is present, the method should return `0`.
 > - The Root Port location may vary by platform design.
 
-## High Level Implementation Details
+## Implementation Details
 
 The NVMe Dynamic Link Rate Management (DLRM) is implemented within the Storport driver (`storport.sys`) and operates by monitoring I/O throughput across two distinct time windows to make intelligent decisions about PCIe link speed adjustments. DLRM is supported exclusively on NVMe devices utilizing the `stornvme.sys` miniport driver. Monitoring is activated only if the prerequisites outlined above are met.
 
