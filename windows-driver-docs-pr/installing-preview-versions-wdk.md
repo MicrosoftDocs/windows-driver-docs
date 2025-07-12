@@ -13,9 +13,7 @@ ms.topic: concept-article
 
 # Installing preview versions of the Windows Driver Kit (WDK)
 
-This article provides installation instructions for Insider Preview (prerelease) versions of the Windows Driver Kit (WDK). 
-
-You can follow procedures to [install the WDK Insider Preview](#install-the-wdk-insider-preview) or the [Enterprise WDK (EWDK)](#install-the-ewdk-insider-preview).
+This article provides installation instructions for Insider Preview (prerelease) versions of the Windows Driver Kit (WDK). Follow procedures to [install the WDK Insider Preview](#install-the-wdk-insider-preview) or the [Enterprise WDK (EWDK)](#install-the-ewdk-insider-preview).
 
 The download links for the latest prerelease version of the WDK and the EWDK are available at [Windows Insider Preview Downloads](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK).
 
@@ -59,8 +57,6 @@ Complete the installation of the WDK Insider Preview by following the instructio
 ## Install the EWDK Insider Preview
 
 An alternate approach is to install the EWDK Insider Preview. The EWDK is a standalone self-contained command-line environment for building drivers that includes Build Tools for Visual Studio 2022. For more information, see [Using the Enterprise WDK](develop/using-the-enterprise-wdk.md).
-
-To install the EWDK Insider Preview, follow these steps:
 
 ### Step 1. Get the EWDK Insider Preview
 

@@ -14,15 +14,15 @@ This article describes Windows 11 support for Bluetooth versions, profiles, and 
 > [!NOTE]
 > Looking for drivers for your Bluetooth audio device? You can find available options in [Fix Bluetooth problems in Windows](https://support.microsoft.com/windows/fix-bluetooth-problems-in-windows-723e092f-03fa-858b-5c80-131ec3fba75c).
 
-## Supported Bluetooth versions in Windows 11
+## Supported Bluetooth versions
 
 Windows 11 provides support for Bluetooth as follows:
 
-- Windows 11 version 22H2, all editions support for Bluetooth Core Specification version 5.3.
+- Windows 11 version 22H2, all editions support Bluetooth Core Specification version 5.3.
 
 - Windows Server **doesn't** provide in-box support for Bluetooth wireless technology. Other Bluetooth drivers might be available from independent hardware vendors (IHVs).
 
-## In-box supported Bluetooth profiles in Windows 11
+## In-box support for Bluetooth profiles
 
 The following Bluetooth profiles have in-box support in Windows 11.
 
@@ -84,7 +84,7 @@ Windows 11 version 22H2 supports Bluetooth version 5.3 and the following Bluetoo
 | Telephony and Media Audio Profile           | TMAP         | 1.0     |
 | Volume Control Profile                      | VCP          | 1.0     |
 
-## New features and recommendations for recent Windows 11 versions
+## New features and recommendations for recent versions
 
 To learn about new features and hardware developer recommendations for recent Windows 11 versions, see [Bluetooth](/windows-hardware/design/component-guidelines/bluetooth) in the [Hardware component guidelines](/windows-hardware/design/component-guidelines/components) section.
 
