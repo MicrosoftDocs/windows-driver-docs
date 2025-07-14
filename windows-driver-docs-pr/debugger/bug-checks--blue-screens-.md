@@ -1,13 +1,13 @@
 ---
-title: Bug Checks (Blue Screens)
-description: This topic covers bug checks (Blue Screens)
-keywords: bug check, blue screen, kernel error, stop error, stop code
+title: Bug Checks (Stop Code Errors)
+description: This topic covers bug checks (stop code errors)
+keywords: bug check, stop code error, kernel error, stop error, stop code
 ms.date: 08/23/2024
 ---
 
-# Bug Checks (Blue Screens)
+# Bug Checks (stop code errors)
 
-**Note**   If you are an IT professional or support agent, see this article for additional information, [Troubleshoot "blue screen" or Stop error problems before you contact Microsoft Support](https://support.microsoft.com/help/3106831/). If you are a customer whose system has displayed a blue screen with a bug check code, see [Troubleshoot blue screen errors](https://support.microsoft.com/sbs/windows/troubleshoot-blue-screen-errors-5c62726c-6489-52da-a372-3f73142c14ad).
+**Note**   If you are an IT professional or support agent, see this article for additional information, [Troubleshoot stop code error problems before you contact Microsoft Support](https://support.microsoft.com/help/3106831/). If you are a customer whose system has displayed a stop code error with a bug check code, see [Troubleshoot stop code errors](https://support.microsoft.com/sbs/windows/troubleshoot-blue-screen-errors-5c62726c-6489-52da-a372-3f73142c14ad).
 
 ## Bug Check System Halt
 
@@ -21,12 +21,12 @@ Examples of situations that could occur are:
 
 - If a kernel debugger is attached and active, the system causes a break so that the debugger can be used to investigate the crash.
 
-- If no debugger is attached, a blue text screen appears with information about the error. This screen is called a *blue screen*, a *bug check screen*, or a *stop screen*.
+- If no debugger is attached, a blue text screen appears with information about the error. This screen is called a *stop code error*, or a *bug check screen*.
 
-If you're using an insider build of Windows, the text is displayed on a green background. The exact appearance of the blue screen depends on the cause of the error.
-The following example shows a possible blue screen:
+If you're using an insider build of Windows, the text is displayed on a green background. The exact appearance of the stop code error depends on the cause of the error.
+The following example shows a possible stop code error:
 
-:::image type="content" source="images/bug-check-example-blue-screen-page-fault.png" alt-text="Screenshot of a Windows 10 blue screen displaying a bug check with a QR code.":::
+:::image type="content" source="images/unexpected restart.png" alt-text="Screenshot showing that your device ran into a problem and needs to restart.":::
 
 The stop code is displayed, such as [PAGE_FAULT_IN_NONPAGED_AREA](bug-check-0x50--page-fault-in-nonpaged-area.md). When it's available, the module name of the code that was being executed is also displayed, such as **AcmeVideo.sys**.
 
@@ -34,9 +34,9 @@ If a [kernel-mode dump file](kernel-mode-dump-files.md) has been written, it's i
 
 There's a stop code hex value associated with each stop code as listed in [Bug check code reference](bug-check-code-reference2.md).
 
-## General Tips for Bug Check (Blue Screens)
+## General Tips for Bug Check (stop code errors)
 
-If your computer stops working and displays a blue screen, the computer has shut down abruptly to protect itself from data loss. A hardware device, its driver, or related software might have caused this error. To learn more about the information that is displayed, such as the faulting driver name, see [Analyze Bug Check Blue Screen Data](blue-screen-data.md).
+If your computer stops working and displays a stop code error, the computer has shut down abruptly to protect itself from data loss. A hardware device, its driver, or related software might have caused this error. To learn more about the information that is displayed, such as the faulting driver name, see [Analyze Bug Check Stop Code Error Data](blue-screen-data.md).
 
 For general troubleshooting of Windows bug check codes, follow these suggestions:
 
@@ -48,7 +48,7 @@ For general troubleshooting of Windows bug check codes, follow these suggestions
 
 - You can try running the hardware diagnostics supplied by the system manufacturer.
 
-- Check the system log in Event Viewer for other error messages that might help pinpoint the device or driver that's causing the error. Look for critical errors in the system log that occurred in the same time frame as the blue screen.
+- Check the system log in Event Viewer for other error messages that might help pinpoint the device or driver that's causing the error. Look for critical errors in the system log that occurred in the same time frame as the stop code error.
 
 - Run the Windows Memory Diagnostics tool to test the memory. In the Control Panel search box, type **Memory**, and then select **Diagnose your computer's memory problems**.‌ After the test is run, use Event Viewer to view the results under the system log. Look for the *MemoryDiagnostics-Results* entry to view the results.
 
