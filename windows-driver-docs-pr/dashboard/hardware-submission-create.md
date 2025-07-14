@@ -22,19 +22,19 @@ All hardware submissions to the dashboard are processed within five business day
 
    | Operating system | Required signed file type | Guidance |
    |------------------|---------------------------|----------|
-   | Windows 11, Windows 10, and Windows Server versions beginning with Windows Server 2016 | A Windows Hardware Lab kit *.hlk* file | [Find and download the correct version of the Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) based on the compatible system. You can then [merge all HLK package test results](/windows-hardware/test/hlk/user/merge-packages) into a single dashboard submission.</br></br>**Note:** The Windows 10 version 22H2 release follows the same guidelines as Windows 10, version 2004. For more information, see [Windows Hardware Compatibility Program (WHCP) guidance for Windows 10, version 22H2](https://techcommunity.microsoft.com/blog/windowshardwarecertification/whcp-guidance-for-windows-10-version-22h2/3586362). |
-   | Windows 8/8.1 and older | A Windows Hardware Certification Kit (HCK) *.hckx* file | To learn how to create and digitally sign an *.hckx* file, see the [Windows HCK Getting Started Guide](/previous-versions/windows/hardware/hck/jj123537(v=vs.85)) |
-   | Windows Server 2008 and older  | A Windows Logo Kit (WLK) hardware submission package *.cab* file | To learn how to create a WLK submission package, see [Create a new WLK hardware submission](hardware-submission-wlk.md). |
+   | Windows 11 and Windows 10 </br>Windows Server 2016 and later | Windows Hardware Lab Kit (WHLK) file, *.hlk* | [Find and download the correct version of the Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) based on the compatible system. You can then [merge all HLK package test results](/windows-hardware/test/hlk/user/merge-packages) into a single dashboard submission.</br></br>**Note:** The Windows 10 version 22H2 release follows the same guidelines as Windows 10, version 2004. For more information, see [Windows Hardware Compatibility Program (WHCP) guidance for Windows 10, version 22H2](https://techcommunity.microsoft.com/blog/windowshardwarecertification/whcp-guidance-for-windows-10-version-22h2/3586362). |
+   | Windows 8/8.1 and earlier | Windows Hardware Certification Kit (HCK) file, *.hckx* | To learn how to create and digitally sign an *.hckx* file, see the [Windows HCK Getting Started Guide](/previous-versions/windows/hardware/hck/jj123537(v=vs.85)) |
+   | Windows Server 2008 and earlier  | Windows Logo Kit (WLK) hardware submission package file, *.cab* | To learn how to create a WLK submission package, see [Create a new WLK hardware submission](hardware-submission-wlk.md). |
 
 ## Submit your new hardware
 
 To submit your new hardware, follow these steps:
 
-1. Go to [Partner Center hardware dashboard](https://partner.microsoft.com/dashboard/home) and sign in with your credentials.
+1. Go to the [Partner Center hardware dashboard](https://partner.microsoft.com/dashboard/home) and sign in with your credentials.
 
 1. Select **Submit new hardware**:
 
-   :::image type="content" source="./images/hardware-submission-create/hardware-list.png" alt-text="Screenshot of the list of submitted hardware options.":::
+   :::image type="content" source="./images/hardware-submission-create/hardware-list.png" alt-text="Screenshot of the list of hardware submisssions.":::
 
 1. In the **Packages and signing properties** section, enter a product name for your driver submission. This name can be used to search for and organize your driver submissions.
 
@@ -85,20 +85,21 @@ To submit your new hardware, follow these steps:
 
 The following sections provide troubleshooting suggestions to address issues with your submission.
 
-### Files missing errors
+### Error: File missing
 
 If a file is missing, you receive one of the following errors:
 
-- _There are files at the root of the cabinet._
-- _No .inf files found in driver directory/directories: XYZ._
+> _There are files at the root of the cabinet._
+
+> _No .inf files found in driver directory/directories: XYZ._
 
 The failure cause is an incorrect *.cab* file structure. The *.cab* structure was created with driver files in the root folder of the *.cab* file instead of locating the files in a subfolder. For instructions on how to create a proper *.cab* file for your driver signing submissions, see [Attestation sign Windows 10 (and later) drivers](code-signing-attestation.md).
 
-### Zip64 error
+### Error: Zip64
 
 If a Zip error occurs, you receive the error:
 
-_File is using Zip64(4gb+file Size)_
+> _File is using Zip64(4gb+file Size)_
 
 This error occurs when the uploaded archive's file type is *.zip64* instead of *.zip*. The most common cause is large file size.
 
@@ -110,11 +111,11 @@ To fix the error, repackage the submission by following these steps:
 1. Rename the new archive *.zip* file to *.hckx* (or *.hlkx*).
 1. Upload the new archive *.hckx* (or *.hlkx*) file.
 
-### Failed to open DUA package
+### Error: Package fails to open
 
 If the DUA package fails to open, you receive the following error:
 
-_Failed to open package: Not compatible with a version (3.2.0.0) with this instance package manager_
+> _Failed to open package: Not compatible with a version (3.2.0.0) with this instance package manager_
 
 To resolve the issue, [install standalone HLK Studio](/windows-hardware/test/hlk/user/install-standalone-hlk-studio), open the downloaded DUA shell package, and create a DUA submission.
 

@@ -1,179 +1,187 @@
 ---
-title: Attestation sign Windows drivers
-description: This article describes how to sign a driver using attestation signing.
-ms.date: 08/16/2024
+title: Attestation Sign Windows Drivers
+description: Sign a Windows driver by using attestation signing, create and sign the CAB file, submit and validate the signed file in the Partner Center, and test your driver on Windows.
+ms.date: 07/15/2025
 ---
 
 # Attestation sign Windows drivers
 
-This article describes how to sign a driver using attestation signing. For detailed information and requirements for attestation signing, see [Windows 10 attestation signed drivers](code-signing-reqs.md#windows-10-attestation-signed-drivers-for-testing-scenarios).
+This article describes how to sign a driver by using attestation signing. For detailed information and requirements for attestation signing, see [Windows 10 attestation signed drivers](code-signing-reqs.md#windows-10-attestation-signed-drivers-for-testing-scenarios).
 
 > [!IMPORTANT]
-> As of March 1, 2023, attestation signed drivers targeting retail audiences are no longer published on Windows Update. Attestation signed drivers for testing scenarios are still supported when selecting *CoDev* or *Test Registry Key / Surface SSRK* options.
+> As of March 1, 2023, attestation signed drivers that target retail audiences are no longer published on Windows Update. Support continues for attestation-signed drivers when testing scenarios with the **CoDev** or **Test Registry Key / Surface SSRK** options.
 
 ## Prerequisites
 
-- Read and understand the requirements for [Windows 10 attestation signed drivers](code-signing-reqs.md#windows-10-attestation-signed-drivers-for-testing-scenarios).
+- Read and understand the requirements for [Windows 10 attestation signed drivers](code-signing-reqs.md#windows-10-attestation-signed-drivers-for-testing-scenarios) for testing scenarios.
 
-- Register for the Hardware Developer program. If you're not yet registered, follow the steps in [How to register for the Microsoft Windows Hardware Developer Program](hardware-program-register.md).
+- Register for the Hardware Developer program. If you aren't registered, follow the steps in [Register for the Microsoft Windows Hardware Developer Program](hardware-program-register.md).
 
-- You must have an Extended Validation (EV) code signing certificate. Check whether your organization already has a code signing certificate. If your company already has a certificate, have the certificate available. If your organization doesn't have a certificate, you need to [purchase an EV certificate](code-signing-reqs.md#ev-certificate-signed-drivers).
+- You must have an extended validation (EV) code signing certificate. Check whether your organization already has a code signing certificate.
 
-- Follow the process described in [Download kits and tools for Windows 10](/windows-hardware/get-started/adk-install) to download and install the Windows Driver Kit (WDK).
+   - If you have an existing certificate, make the certificate available.
+   
+   - If your organization doesn't have a certificate, [purchase an EV certificate](code-signing-reqs.md#ev-certificate-signed-drivers).
 
-- (Optional)  Download the [echo driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/echo/kmdf/driver/AutoSync) that is used in this article.
+- Download and install the Windows Assessment and Deployment Kit (Windows ADK) by following the process described in [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
 
-### Create the CAB file
+- (Optional) Download the [Echo driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/echo/kmdf/driver/AutoSync) used in this article, which is available on GitHub.
 
-In this section, we step through the process of creating a CAB files submission. We're using the [echo driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/echo/kmdf/driver/AutoSync) to illustrate the process.
+## Create the CAB file
 
-A typical CAB file submission must contain:
+The following procedure creates a CAB files submission by using the [Echo driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/echo/kmdf/driver/AutoSync) to illustrate the steps.
 
-- The driver itself, for example Echo.sys
+A typical CAB file submission must contain the following components:
 
-- The driver INF file that is used by the dashboard to facilitate the signing process.
+- The driver itself, for example *Echo.sys*.
 
-- The symbol file that is used for debugging information. For example, Echo.pdb. The .pdb file is required for Microsoft's automated crash analysis tools.
+- The driver INF (*.inf*) file used by the dashboard to facilitate the signing process.
 
-- Catalog .CAT files are required and used for company verification only. Microsoft regenerates catalog files and replaces any catalog files that were submitted.
+- The symbol file used for debugging information, such as *Echo.pdb*. The *.pdb* file is required for Microsoft's automated crash analysis tools.
+
+- Catalog *.CAT* files are required and used for company verification only. Microsoft regenerates catalog files and replaces any catalog files submitted previously.
 
 > [!NOTE]
-> Each driver folder in your CAB file must support the same set of architectures. For example, they must support x86, x64, or they all must support both x86 and x64.
+> Each driver folder in your CAB file must support the same set of architectures. For example, they must support x86, x64, or they must all support both x86 and x64.
 >
-> Do not use UNC file share paths when referencing your driver locations (`\\\server\share`). You must use a mapped drive letter for the CAB to be valid.
+> Don't use UNC file share paths when you reference your driver locations (`\server\share`). You must use a mapped drive letter for the CAB to be valid.
 
-To create the CAB file:
+To create the CAB file, follow these steps:
 
-   1. Gather the binaries to be signed into a single directory. In this example, we use `C:\\Echo`.
+1. Gather the binaries to be signed into a single directory. This example uses the `C:\Echo` folder.
 
-   1. Open a Command Prompt window as Administrator.
+1. Open a Command Prompt window with Administrator privileges.
 
-   1. Enter `MakeCab /?` to view the MakeCab options:
-
-      ```cmd
-      C:\Echo> MakeCab /?
-      Cabinet Maker - Lossless Data Compression Tool
-
-      MAKECAB [/V[n]] [/D var=value ...] [/L dir] source [destination]
-      MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
-
-      source         File to compress.
-      destination    File name to give compressed file. If omitted, the
-                     last character of the source file name is replaced
-                     with an underscore (_) and used as the destination.
-      /F directives  A file with MakeCAB directives (may be repeated). Refer to
-                     Microsoft Cabinet SDK for information on directive_file.
-      /D var=value   Defines variable with specified value.
-      /L dir         Location to place destination (default is current directory).
-      /V[n]          Verbosity level (1..3).
-      ```
-
-   1. Prepare a cab file DDF input file. For our Echo driver, it might look something like this:
-
-      ```ddf
-      ;*** Echo.ddf example
-      ;
-      .OPTION EXPLICIT     ; Generate errors
-      .Set CabinetFileCountThreshold=0
-      .Set FolderFileCountThreshold=0
-      .Set FolderSizeThreshold=0
-      .Set MaxCabinetSize=0
-      .Set MaxDiskFileCount=0
-      .Set MaxDiskSize=0
-      .Set CompressionType=MSZIP
-      .Set Cabinet=on
-      .Set Compress=on
-      ;Specify file name for new cab file
-      .Set CabinetNameTemplate=Echo.cab
-      ; Specify the subdirectory for the files.
-      ; Your cab file should not have files at the root level,
-      ; and each driver package must be in a separate subfolder.
-      .Set DestinationDir=Echo
-      ;Specify files to be included in cab file
-      C:\Echo\Echo.Inf
-      C:\Echo\Echo.Sys
-      ```
-
-   1. Enter the following command to create the CAB file.
-
-      ```cmd
-      C:\Echo> MakeCab /f "C:\Echo\Echo.ddf
-      ```
-
-      The output of MakeCab should display the number of files in the created CAB file. In this case, there should be two files.
-
-      ```cmd
-      C:\Echo> MakeCab /f Echo.ddf
-      Cabinet Maker - Lossless Data Compression Tool
-
-      17,682 bytes in 2 files
-      Total files:              2
-      Bytes before:        17,682
-      Bytes after:          7,374
-      After/Before:            41.70% compression
-      Time:                     0.20 seconds ( 0 hr  0 min  0.20 sec)
-      Throughput:              86.77 Kb/second
-      ```
-
-   1. Locate the CAB file in the `Disk1` subdirectory. You can select the CAB file in File Explorer to verify that it contains the expected files.
-
-### Sign the CAB file with your EV certificate
-
-1. To sign the CAB file with your EV certificate, use the process recommended by the EV certificate provider. For example, to sign your CAB file with an SHA256 Certificate/Digest Algorithm/Timestamp, enter the following command:
+1. Enter the `MakeCab /?` command to see the command options:
 
    ```cmd
-   C:\Echo> SignTool sign /s MY /n "Company Name" /fd sha256 /tr http://sha256timestamp.ws.symantec.com/sha256/timestamp /td sha256 /v "C:\Echo\Disk1\Echo.cab"
+   C:\Echo> MakeCab /?
+   Cabinet Maker - Lossless Data Compression Tool
+
+   MAKECAB [/V[n]] [/D var=value ...] [/L dir] source [destination]
+   MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
+
+   source         File to compress.
+   destination    File name to give compressed file. If omitted, the
+                  last character of the source file name is replaced
+                  with an underscore (_) and used as the destination.
+   /F directives  A file with MakeCAB directives (may be repeated). Refer to
+                  Microsoft Cabinet SDK for information on directive_file.
+   /D var=value   Defines variable with specified value.
+   /L dir         Location to place destination (default is current directory).
+   /V[n]          Verbosity level (1..3).
    ```
 
-   > [!IMPORTANT]
-   > Remember to use industry best practices to manage the security of the EV code signing process.
+1. Prepare a cab file DDF input file. For the Echo driver in this example, the input might be similar to the following code:
 
-### Submit the EV signed Cab file using the Partner Center
+   ```ddf
+   ;*** Echo.ddf example
+   ;
+   .OPTION EXPLICIT     ; Generate errors
+   .Set CabinetFileCountThreshold=0
+   .Set FolderFileCountThreshold=0
+   .Set FolderSizeThreshold=0
+   .Set MaxCabinetSize=0
+   .Set MaxDiskFileCount=0
+   .Set MaxDiskSize=0
+   .Set CompressionType=MSZIP
+   .Set Cabinet=on
+   .Set Compress=on
+   ;Specify file name for new cab file
+   .Set CabinetNameTemplate=Echo.cab
+   ; Specify the subdirectory for the files.
+   ; Your cab file should not have files at the root level,
+   ; and each driver package must be in a separate subfolder.
+   .Set DestinationDir=Echo
+   ;Specify files to be included in cab file
+   C:\Echo\Echo.Inf
+   C:\Echo\Echo.Sys
+   ```
 
-1. Go to [Partner Center hardware dashboard](https://partner.microsoft.com/dashboard/hardware/Search) and sign in using your credentials.
+1. Enter the following command to create the CAB file:
 
-1. Select **Submit new hardware**.
+   ```cmd
+   C:\Echo> MakeCab /f "C:\Echo\Echo.ddf
+   ```
 
-    :::image type="content" source="./images/code-signing-attestation/hardware-list.png" alt-text="Screenshot of the list of submitted hardware.":::
+   The output of the `MakeCab` command should display the number of files in the created CAB file. In this case, there should be two files.
+
+   ```cmd
+   C:\Echo> MakeCab /f Echo.ddf
+   Cabinet Maker - Lossless Data Compression Tool
+
+   17,682 bytes in 2 files
+   Total files:              2
+   Bytes before:        17,682
+   Bytes after:          7,374
+   After/Before:            41.70% compression
+   Time:                     0.20 seconds ( 0 hr  0 min  0.20 sec)
+   Throughput:              86.77 Kb/second
+   ```
+
+1. Locate the CAB file in the `Disk1` subdirectory. You can select the CAB file in File Explorer to verify it contains the expected files.
+
+## Sign the CAB file with your EV certificate
+
+The next procedure step is to sign the CAB file with your EV certificate.
+
+Use the process recommended by your EV certificate provider. For example, to sign your CAB file with an SHA256 Certificate/Digest Algorithm/Timestamp, enter the following command:
+
+```cmd
+C:\Echo> SignTool sign /s MY /n "Company Name" /fd sha256 /tr http://sha256timestamp.ws.symantec.com/sha256/timestamp /td sha256 /v "C:\Echo\Disk1\Echo.cab"
+```
+
+> [!IMPORTANT]
+> Remember to use industry best practices to manage the security of the EV code signing process.
+
+## Submit the EV signed Cab file in the Partner Center
+
+After you sign the CAB file, you're ready to submit the file in the Partner Center:
+
+1. Go to the [Partner Center hardware dashboard](https://partner.microsoft.com/dashboard/hardware/Search) and sign in with your credentials.
+
+1. Select **Submit new hardware**:
+
+   :::image type="content" source="./images/code-signing-attestation/hardware-list.png" alt-text="Screenshot of the list of hardware submissions.":::
 
 1. In the **Packages and signing properties** section, enter a product name for your driver submission. This name can be used to search for and organize your driver submissions.
 
-    > [!NOTE]
-    > If you share your driver with another company, they will see this name.
+   > [!NOTE]
+   > The name is visible when you share your driver with another company.
 
-1. Leave both test-signing options unchecked.
+1. Leave both test-signing options unchecked (not selected).
 
-1. For **Requested Signatures**, select which signatures you wish to include in your driver package.
+1. For the **Requested Signatures** option, select the signatures to include in your driver package:
 
-    :::image type="content" source="./images/code-signing-attestation/attestation-flow.png" alt-text="A screenshot showing the options for submitting the echo driver for signing.":::
+   :::image type="content" source="./images/code-signing-attestation/attestation-flow.png" alt-text="Screenshot showing the options for submitting the Echo driver for signing.":::
 
-1. Move down through the page, and select **Submit**.
+1. Select **Submit** at the bottom of the page.
 
-1. When the signing process is complete, download your signed driver from the hardware dashboard.
+1. After the signing process completes, download your signed driver from the hardware dashboard.
 
-### Validate that the driver was properly signed
+## Validate the driver is properly signed
 
-Complete the following steps to ensure that the driver was properly signed.
+Confirm your driver was properly signed with these steps:
 
 1. After you download the submission file, extract the driver file.
 
-1. Open a Command Prompt window as Administrator.
+1. Open a Command Prompt window with Administrator privileges.
 
-1. Enter the following command to verify that the driver was signed as expected.
+1. Enter the following command to verify the driver is signed as expected:
 
    ```cmd
    C:\Echo> SignTool verify Echo.Sys
    ```
 
-1. To list additional information and have SignTool verify all signatures in a file with multiple signatures, enter the following command:
+1. To list other information and have SignTool verify all signatures in a file with multiple signatures, enter the following command:
 
    ```cmd
     C:\Echo> SignTool verify /pa /ph /v /d Echo.Sys
    ```
 
-1. To confirm the EKUs of the driver complete the following steps.
+1. To confirm the EKUs of the driver complete the following steps:
 
-   1. Open Windows Explorer and locate the binary file. Select and hold (or right-click) the file and select **Properties**.
+   1. Open Windows Explorer and locate the binary file. Right-click the file and select **Properties**.
 
    1. On the **Digital Signatures** tab, select the listed item in the Signature list.
 
@@ -181,33 +189,39 @@ Complete the following steps to ensure that the driver was properly signed.
 
    1. On the **Details** tab, select **Enhanced Key Usage**.
 
-When the driver is resigned by the dashboard, the following process is used:
+The driver uses the following process when it resigns the driver
 
-- Appends a Microsoft SHA2 embedded signature.
-- If the driver binaries are embedded signed by the customer with their own certificates, those signatures aren't overwritten.
-- Creates and signs a new catalog file with an SHA2 Microsoft certificate. This catalog replaces any existing catalog provided by the customer.
+1. Append a Microsoft SHA2 embedded signature.
 
-### Test your driver on Windows
+1. If the driver binaries are embedded signed by the customer with their own certificates, overwrite the signatures.
 
-Use the following instructions to install the sample driver.
+1. Create and sign a new catalog file with an SHA2 Microsoft certificate. The catalog replaces any existing catalog provided by the customer.
 
-1. Open a Command Prompt window as Administrator. Go to your driver package folder, and enter the following command.
+## Test your driver on Windows
+
+Install the sample driver and test it on Windows:
+
+1. Open a Command Prompt window with Administrator privileges.
+
+1. Go to your driver package folder, and enter the following command.
 
    ```cmd
    C:\Echo> devcon install echo.inf root\ECHO
    ```
 
-1. Confirm that the driver install process doesn't display the "Windows can't verify the publisher of this driver software." Windows security dialog box.
+1. Confirm the driver install process doesn't show the following error message:
+
+   > _Windows can't verify the publisher of this driver software_ message._
 
 ## Create a submission with multiple drivers
 
-To submit multiple drivers at the same time:
+Submit multiple drivers at the same time by following these steps:
 
-1. Create a subdirectory for each driver.
+1. Create a subdirectory for each driver:
 
-   :::image type="content" source="./images/code-signing-attestation/multiple-driver-signing.png" alt-text="A diagram showing an example driver signing directory structure.":::
+   :::image type="content" source="./images/code-signing-attestation/multiple-driver-signing.png" border="false" alt-text="Diagram showing an example driver signing directory structure.":::
 
-1. Prepare a CAB file DDF input file that references the subdirectories. It might look something like this:
+1. Prepare a CAB file DDF input file that references the subdirectories. For this example, the input might be similar to the following code:
 
    ```ddf
    ;*** Submission.ddf multiple driver example
