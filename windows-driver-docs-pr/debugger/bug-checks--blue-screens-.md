@@ -26,7 +26,7 @@ Examples of situations that could occur are:
 If you're using an insider build of Windows, the text is displayed on a green background. The exact appearance of the stop code error depends on the cause of the error.
 The following example shows a possible stop code error:
 
-:::image type="content" source="images/unexpected restart.png" alt-text="Screenshot showing that your device ran into a problem and needs to restart.":::
+:::image type="content" source="images/unexpected-restart.png" alt-text="Screenshot showing that your device ran into a problem and needs to restart.":::
 
 The stop code is displayed, such as [PAGE_FAULT_IN_NONPAGED_AREA](bug-check-0x50--page-fault-in-nonpaged-area.md). When it's available, the module name of the code that was being executed is also displayed, such as **AcmeVideo.sys**.
 
