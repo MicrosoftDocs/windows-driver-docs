@@ -189,7 +189,7 @@ Confirm your driver was properly signed with these steps:
 
    1. On the **Details** tab, select **Enhanced Key Usage**.
 
-The driver uses the following process when it resigns the driver
+The driver uses the following process when it resigns the driver:
 
 1. Append a Microsoft SHA2 embedded signature.
 
