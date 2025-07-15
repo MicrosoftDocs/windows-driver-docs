@@ -34,7 +34,7 @@ The stop code is displayed, such as [PAGE_FAULT_IN_NONPAGED_AREA](bug-check-0x50
 
 Here's an example for Windows 11, version 24H2 and later versions:
 
-:::image type="content" source="images/unexpected-restart.png" alt-text="Screenshot showing that your device ran into a problem and needs to restart.":::
+:::image type="content" source="images/unexpected-restart.png" alt-text="Screenshot showing that your device ran into a problem and needs to restart." lightbox="images/unexpected-restart-lightbox.png":::
 
 The stop code is displayed, such as [CRITICAL_PROCESS_DIED](bug-check-0xef--critical-process-died.md). When it's available, the module name of the code that was being executed is also displayed, such as **rdbyss.sys**.
 
