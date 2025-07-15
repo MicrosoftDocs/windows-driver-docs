@@ -21,11 +21,7 @@ The information in this article is intended for programmers. Depending on your s
 
 If you're looking for a specific bug check code that isn't described in this article, you can use the [!analyze](../debuggercmds/-analyze.md) extension in WinDbg. This command causes WinDbg to display information about the specified bug check code.
 
-Run the extention in kernel mode with the following syntax. Replace the `<code>` placeholder with the bug check code to analyze. If your default number base (radix) isn't 16, prefix the `<code>` value with `0x`.
-
-```dbgcmd
-`!analyze -show <code>`
-```
+Run the extention in kernel mode with the syntax `!analyze -show <code>`. Replace the `<code>` placeholder with the bug check code to analyze. If your default number base (radix) isn't 16, prefix the `<code>` value with `0x`.
 
 If you want to display any available parameter information, include the stop code parameters in the `!analyze` command. To display information on [Bug Check 0x9F: DRIVER_POWER_STATE_FAILURE](bug-check-0x9f--driver-power-state-failure.md) for a parameter 1 value of 0x3, you use the command `!analyze -show 0x9F 0x3`. The following example demonstrates the syntax and output:
 
@@ -58,7 +54,7 @@ When a bug check occurs, a **bug check dump file** might be available. The file 
 
 The following table lists the bug check codes and provides links for more information about each code.
 
-| Code       | Name                                                                                                                                              |
+| Code       | Name and reference link                                                                                                                           |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0x00000001 | [**APC\_INDEX\_MISMATCH**](bug-check-0x1--apc-index-mismatch.md)                                                                                  |
 | 0x00000002 | [**DEVICE\_QUEUE\_NOT\_BUSY**](bug-check-0x2--device-queue-not-busy.md)                                                                           |
