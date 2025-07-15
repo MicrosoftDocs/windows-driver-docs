@@ -21,14 +21,22 @@ Examples of situations that could occur are:
 
 - If a kernel debugger is attached and active, the system causes a break so that the debugger can be used to investigate the crash.
 
-- If no debugger is attached, a blue text screen appears with information about the error. This screen is called a *stop code error*, or a *bug check screen*.
+- If no debugger is attached, a text screen appears with information about the error. This screen is called a *stop code error*, or a *bug check screen*.
 
-If you're using an insider build of Windows, the text is displayed on a green background. The exact appearance of the stop code error depends on the cause of the error.
-The following example shows a possible stop code error:
+If you're using an insider build of Windows, the text is displayed on a green background. The exact stop code error displayed will depend on the cause of the error.
+The following examples show possible stop code errors:
+
+Here's an example for Windows 11, version 23H2 and earlier versions:
+
+:::image type="content" source="images/bug-check-example-blue-screen-page-fault.png" alt-text="Screenshot of a Windows 10 blue screen displaying a bug check with a QR code.":::
+
+The stop code is displayed, such as [PAGE_FAULT_IN_NONPAGED_AREA](bug-check-0x50--page-fault-in-nonpaged-area.md). When it's available, the module name of the code that was being executed is also displayed, such as **AcmeVideo.sys**.
+
+Here's an example for Windows 11, version 24H2 and later versions:
 
 :::image type="content" source="images/unexpected-restart.png" alt-text="Screenshot showing that your device ran into a problem and needs to restart.":::
 
-The stop code is displayed, such as [PAGE_FAULT_IN_NONPAGED_AREA](bug-check-0x50--page-fault-in-nonpaged-area.md). When it's available, the module name of the code that was being executed is also displayed, such as **AcmeVideo.sys**.
+The stop code is displayed, such as [CRITICAL_PROCESS_DIED](bug-check-0xef--critical-process-died.md). When it's available, the module name of the code that was being executed is also displayed, such as **rdbyss.sys**.
 
 If a [kernel-mode dump file](kernel-mode-dump-files.md) has been written, it's indicated with a percentage complete count down as the dump is being written.
 
