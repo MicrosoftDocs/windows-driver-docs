@@ -21,9 +21,9 @@ Examples of situations that could occur are:
 
 - If a kernel debugger is attached and active, the system causes a break so that the debugger can be used to investigate the crash.
 
-- If no debugger is attached, a text screen appears with information about the error. This screen is called a *stop code error*, or a *bug check screen*.
+- If no debugger is attached, a text screen appears with information about the error. This screen is called a *stop code error* or *bug check screen*.
 
-If you're using an insider build of Windows, the text is displayed on a green background. The exact stop code error displayed will depend on the cause of the error.
+If you're using an insider build of Windows, the text is displayed on a green background. The exact stop code error displayed depends on the cause of the error.
 The following examples show possible stop code errors:
 
 Here's an example for Windows 11, version 23H2 and earlier versions:
