@@ -6,7 +6,7 @@ ms.date: 07/11/2025
 ms.topic: reference
 ---
 
-# ACPI/BIOS Requirements for NVMe Dynamic Link Rate Management (DLRM)
+# ACPI/BIOS requirements for NVMe Dynamic Link Rate Management (DLRM)
 
 NVMe Dynamic Link Rate Management (DLRM) is a feature designed to optimize power efficiency in NVMe devices by dynamically adjusting the PCIe link speed based on I/O workload characteristics. This is increasingly important as newer PCIe generations offer higher bandwidth but also consume more power, impacting battery life in Windows devices.
 
@@ -19,7 +19,7 @@ To support DLRM, the following requirements must be met:
 - **BIOS Support**: DLRM is opt-in and must be enabled by platform firmware. The enabling status is reported to the OS via ACPI.
 - **OS Support**: DLRM is supported in Windows 24H2 build 26100.2894 and later.
 - **Microsoft Inbox NVMe Driver**: The system must use the Microsoft inbox NVMe driver (`stornvme.sys`).
-- **PCIe EQ Bypass Disabled**: Equalization Bypass must be disabled, as it restricts supported PCIe generations and conflicts with DLRM. Note: Generally, any PCIe feature that restricts PCIe generations should not be enabled as it will conflict with DLRM. 
+- **PCIe EQ Bypass Disabled**: Equalization Bypass must be disabled, as it restricts supported PCIe generations and conflicts with DLRM. Note that generally, any PCIe feature that restricts PCIe generations should not be enabled as it will conflict with DLRM. 
 
 ## ACPI/BIOS Interface for DLRM
 
@@ -66,9 +66,9 @@ Scope (\_SB.PC00.RP05.PXSX) {
 }
 ```
 
-1. **UUID Check**: Verifies the UUID matches DLRM's unique identifier.
-2. **Revision Check**: Ensures the revision level is 1.
-3. **Function Index**:
+- **UUID Check**: Verifies the UUID matches DLRM's unique identifier.
+- **Revision Check**: Ensures the revision level is 1.
+- **Function Index**:
     - `0`: Returns a buffer indicating supported functions.
     - `1`: Returns DLRM enablement state for storage devices (`1` if enabled, `0` otherwise).
 
