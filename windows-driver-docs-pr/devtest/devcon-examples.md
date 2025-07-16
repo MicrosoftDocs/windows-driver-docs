@@ -40,7 +40,7 @@ The article provides examples for the following categories of Device Console com
 | **Enable**| [Example 28: Enable a particular device](#example-28-enable-a-particular-device) </br>[Example 29: Enable devices by class](#example-29-enable-devices-by-class) |
 | **Disable**| [Example 30: Disable devices by an ID pattern](#example-30-disable-devices-by-an-id-pattern) </br>[Example 31: Disable devices by device instance ID](#example-31-disable-devices-by-device-instance-id) |
 | **Update and UpdateNI**| [Example 32: Update the driver for communication ports](#example-32-update-the-driver-for-communication-ports) </br>[Example 44: Forcibly update the hardware abstraction layer (HAL)](#example-44-forcibly-update-the-hal) |
-| **Install**| [Example 33: Install a device](#example-33-install-a-device) </br>[Example 34: Install a device by using unattended setup](#example-34-install-a-device-using-unattended-setup) |
+| **Install**| [Example 33: Install a device](#example-33-install-a-device) </br>[Example 34: Install a device by using unattended setup](#example-34-install-a-device-by-using-unattended-setup) |
 | **Remove**| [Example 35: Remove devices by device instance ID pattern](#example-35-remove-devices-by-device-instance-id-pattern) </br>[Example 36: Remove a particular network device](#example-36-remove-a-particular-network-device) |
 | **Rescan**| [Example 37: Scan the computer for new devices](#example-37-scan-the-computer-for-new-devices) |
 | **Restart**| [Example 38: Restart a device](#example-38-restart-a-device) |
@@ -526,7 +526,7 @@ LPTENUM\MICROSOFTRAWPORT\5&CA97D7E&0&LPT1
 
 ### Example 16: Display the stack for related devices
 
-The following command uses the **DevCon Stack** operation to display the expected stack for miniport driver devices. It searches for devices in the Net setup class that have "miniport" in their hardware ID or compatible ID.
+The following command uses the **[DevCon Stack](devcon-stack.md)** operation to display the expected stack for miniport driver devices. It searches for devices in the Net setup class that have "miniport" in their hardware ID or compatible ID.
 
 This command first limits the search to the Net setup class and then finds the "miniport" string. It doesn't find devices other than the items in the Net setup class.
 
@@ -1134,7 +1134,7 @@ Scanning completed.
 
 ### Example 38: Restart a device
 
-The following command uses the **[DevCon Restart](devcon-restart.md)** operation to restart the loopback adapter on the local computer. The command limits the search to the Net setup class and, within that class, specifies the device instance ID of the loopback adapter, `@'**ROOT\MSLOOP\0000`. 
+The following command uses the **[DevCon Restart](devcon-restart.md)** operation to restart the loopback adapter on the local computer. The command limits the search to the Net setup class and, within that class, specifies the device instance ID of the loopback adapter, `@'ROOT\*MSLOOP\0000`. 
 
 The **at** symbol (`@`) identifies the string value as a device instance ID. The single quote character (`'`) informs DevCon to interpret the string literally. As a result, DevCon interprets the asterisk (`*`) as part of the ID and not as a wildcard character.
 
@@ -1242,13 +1242,13 @@ Modified 27 hardware ID(s).
 
 The following examples show how to use the various features of the **[DevCon SetHwID](devcon-sethwid.md)** operation.
 
-This series of examples uses a fictitious device, *DeviceX*, with the device instance ID, `ROOT\DeviceX\0000`. Before DevCon commands run for the device, the device has the following list of hardware IDs:
+This series of examples uses a fictitious device, **DeviceX**, with the device instance ID, `ROOT\DeviceX\0000`. Before DevCon commands run for the device, the device has the following list of hardware IDs:
 
 ```console
 Hw3 Hw4
 ```
 
-The following command uses the plus symbol (`+`) to add the ID values `Hw1` and `Hw2` to the beginning of a list of hardware IDs for *DeviceX*. Because the `Hw2` ID already appears in the list, the ID value is moved, not added. The command uses the **at** symbol (`@`) to identify the device by its device instance ID.
+The following command uses the plus symbol (`+`) to add the ID values `Hw1` and `Hw2` to the beginning of a list of hardware IDs for DeviceX. Because the `Hw2` ID already appears in the list, the ID value is moved, not added. The command uses the **at** symbol (`@`) to identify the device by its device instance ID.
 
 ```console
 devcon sethwid @ROOT\DEVICEX\0000 := +Hw1 Hw2
@@ -1271,7 +1271,7 @@ This command demonstrates that unlike the other symbol parameters for the **DevC
 devcon sethwid @ROOT\DeviceX\0000 := !Hw1 Hw5
 ```
 
-In response, DevCon displays the resulting hardware ID list for *DeviceX*:
+In response, DevCon displays the resulting hardware ID list for DeviceX:
 
 ```console
 ROOT\DEVICEX\0000                         : Hw2,Hw3,Hw4,Hw5
