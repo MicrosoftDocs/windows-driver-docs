@@ -33,7 +33,7 @@ Here are some example scenarios related to a bug check system halt:
 
 The following example illustrates a bug check system halt condition that displays a Blue Screen:
 
-:::image type="content" source="images/bug-check-example-blue-screen-page-fault.png" alt-text="Screenshot of a Windows 10 Blue Screen displaying a bug check with a QR code.":::
+:::image type="content" source="images/bug-check-example-blue-screen-page-fault.png" border="false" alt-text="Screenshot of a Windows 10 Blue Screen displaying a bug check with a QR code.":::
 
 The Blue Screen displays the stop code and also the module name of the currently executing code, when it's available. The example shows the [PAGE_FAULT_IN_NONPAGED_AREA](bug-check-0x50--page-fault-in-nonpaged-area.md) stop code and the name of the executing module, `AcmeVideo.sys`. The stop code hex value associated with each stop code is available in [Bug check code reference](bug-check-code-reference2.md).
 
