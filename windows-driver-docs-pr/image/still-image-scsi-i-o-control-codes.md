@@ -2,6 +2,7 @@
 title: Still Image SCSI I/O Control Codes
 description: Still image SCSI I/O control codes
 ms.date: 05/04/2023
+ms.topic: reference
 ---
 
 # Still image SCSI I/O control codes

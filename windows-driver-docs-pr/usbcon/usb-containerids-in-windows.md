@@ -2,6 +2,7 @@
 title: USB ContainerIDs in Windows
 description: This article provides information about USB ContainerIDs for the Windows operating system. It includes guidelines for device manufacturers to program their multifunction USB devices so that they're correctly detected by Windows.
 ms.date: 09/19/2024
+ms.topic: concept-article
 ---
 
 # USB ContainerIDs in Windows

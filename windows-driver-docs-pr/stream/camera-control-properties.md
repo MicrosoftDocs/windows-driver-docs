@@ -6,6 +6,7 @@ keywords:
 - control properties WDK video capture
 - PROPSETID_VIDCAP_CAMERACONTROL
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Camera Control Properties

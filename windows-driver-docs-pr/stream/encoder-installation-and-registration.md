@@ -14,6 +14,7 @@ keywords:
 - KS proxy WDK AVStream
 - Kernel Streaming Proxy WDK AVStream
 ms.date: 04/20/2017
+ms.topic: install-set-up-deploy
 ---
 
 # Encoder Installation and Registration

@@ -5,6 +5,7 @@ keywords:
 - logs WDK driver signing
 - SetupAPI logging WDK driver signing
 ms.date: 04/20/2017
+ms.topic: troubleshooting
 ---
 
 # SetupAPI Device Installation Log Entries

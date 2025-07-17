@@ -6,6 +6,7 @@ keywords:
 - spooler print providers WDK print
 - providers WDK print
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # Print Providers

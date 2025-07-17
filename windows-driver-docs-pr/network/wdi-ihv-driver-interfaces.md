@@ -2,6 +2,7 @@
 title: WDI IHV driver interfaces
 description: The WDI IHV miniport is like any other NDIS miniport driver and it would follow the development practices and documentation for any NDIS miniport.
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # WDI IHV driver interfaces

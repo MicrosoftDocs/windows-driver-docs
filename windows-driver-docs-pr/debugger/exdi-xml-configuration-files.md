@@ -3,6 +3,7 @@ title: EXDI XML Configuration files
 description: Debugging Tools for Windows supports debugging using EXDI. This topic describes how to configure advanced options using the EXDI XML Configuration files.
 ms.date: 10/30/2024
 ms.localizationpriority: medium
+ms.topic: how-to
 ---
 
 # EXDI XML Configuration files

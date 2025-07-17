@@ -7,6 +7,7 @@ keywords:
 - SFD WDK storage , dispatch routines
 - dispatch routines WDK storage
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Storage Filter Driver's Dispatch Routines

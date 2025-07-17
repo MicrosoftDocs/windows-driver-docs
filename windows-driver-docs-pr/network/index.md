@@ -3,6 +3,7 @@ title: Network Driver Design Guide
 description: How to design and create network device drivers for Windows operating systems.
 ms.assetid: 200517b2-d0a0-40cc-a5cb-9e2067e01028
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # Network Driver Design Guide

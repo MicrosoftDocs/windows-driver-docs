@@ -4,6 +4,7 @@ description: GDL Reference
 keywords:
 - GDL WDK , reference
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # GDL Reference

@@ -7,6 +7,7 @@ keywords:
 - CoNDIS TAPI WDK networking , initializing
 - initializing CoNDIS TAPI
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # CoNDIS TAPI Initialization

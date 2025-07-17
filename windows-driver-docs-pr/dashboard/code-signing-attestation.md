@@ -2,6 +2,7 @@
 title: Attestation Sign Windows Drivers
 description: Sign a Windows driver by using attestation signing, create and sign the CAB file, submit and validate the signed file in the Partner Center, and test your driver on Windows.
 ms.date: 07/15/2025
+ms.topic: how-to
 ---
 
 # Attestation sign Windows drivers

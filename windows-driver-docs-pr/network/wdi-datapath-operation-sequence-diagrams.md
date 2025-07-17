@@ -2,6 +2,7 @@
 title: WDI datapath operation sequence diagrams
 description: This section shows diagrams illustrating WDI datapath operations
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # WDI datapath operation sequence diagrams

@@ -2,6 +2,7 @@
 title: RunAs System
 description: TAEF runs the test as Local System.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # RunAs System

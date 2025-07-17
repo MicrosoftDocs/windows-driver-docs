@@ -6,6 +6,7 @@ keywords:
 - decoder properties WDK video capture
 - PROPSETID_VIDCAP_VIDEODECODER
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Video Decoder Properties

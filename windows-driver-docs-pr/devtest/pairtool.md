@@ -2,6 +2,7 @@
 title: PairTool
 description: PairTool is a command line tool that lets authenticated users and administrators work with devices based on protocols.
 ms.date: 11/08/2023
+ms.topic: overview
 ---
 
 # PairTool

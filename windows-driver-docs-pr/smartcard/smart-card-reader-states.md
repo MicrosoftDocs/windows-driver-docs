@@ -7,6 +7,7 @@ keywords:
 - states WDK smart card
 - vendor-supplied drivers WDK smart card , reader states
 ms.date: 04/20/2017
+ms.topic: error-reference
 ---
 
 # Smart Card Reader States

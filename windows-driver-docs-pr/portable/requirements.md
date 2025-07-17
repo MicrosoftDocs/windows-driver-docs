@@ -2,6 +2,7 @@
 description: Requirements to create a WPD driver
 title: Requirements to create a WPD driver
 ms.date: 12/09/2024
+ms.topic: checklist
 ---
 
 # Requirements to create a WPD driver

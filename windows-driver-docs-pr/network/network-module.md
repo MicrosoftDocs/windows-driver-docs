@@ -4,6 +4,7 @@ description: Network Module
 keywords:
 - network modules WDK Network Module Registrar , defined
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Network Module

@@ -8,6 +8,7 @@ keywords:
 - Print Tickets WDK , about Print Tickets
 - Print Tickets WDK
 ms.date: 01/24/2023
+ms.topic: concept-article
 ---
 
 # Print Ticket and Print Capabilities Technologies

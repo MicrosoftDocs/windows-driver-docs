@@ -2,6 +2,7 @@
 title: WIA Properties for Segmentation Filters
 description: WIA Properties for Segmentation Filters
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # WIA Properties for Segmentation Filters

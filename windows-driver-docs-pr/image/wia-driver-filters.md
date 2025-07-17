@@ -2,6 +2,7 @@
 title: WIA Driver Filters
 description: WIA Driver Filters
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # WIA Driver Filters

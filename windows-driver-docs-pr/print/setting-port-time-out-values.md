@@ -7,6 +7,7 @@ keywords:
 - OpenPort
 - SetPortTimeOuts
 ms.date: 09/08/2022
+ms.topic: how-to
 ---
 
 # Set port time-out values

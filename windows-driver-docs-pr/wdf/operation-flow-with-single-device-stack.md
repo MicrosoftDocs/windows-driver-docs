@@ -7,6 +7,7 @@ keywords:
 - I/O requests WDK UMDF , operation flow
 - request processing WDK UMDF , operation flow
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Operation Flow with Single Device Stack

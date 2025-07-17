@@ -2,6 +2,7 @@
 title: System-defined ECPs
 description: Lists and describes system-defined extra create parameters (ECPs) that attach extra information to the IRP_MJ_CREATE operation on a file.
 ms.date: 02/12/2024
+ms.topic: reference
 ---
 
 # System-defined ECPs

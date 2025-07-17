@@ -2,6 +2,7 @@
 title: SetRADIUSSharedSecret
 description: SetRADIUSSharedSecret
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # SetRADIUSSharedSecret

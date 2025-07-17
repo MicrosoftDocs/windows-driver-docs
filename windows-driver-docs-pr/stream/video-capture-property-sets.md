@@ -11,6 +11,7 @@ keywords:
 - default video capture property sets WDK AVStream
 - capture property sets WDK video capture
 ms.date: 06/11/2018
+ms.topic: concept-article
 ---
 
 # Video Capture Property Sets

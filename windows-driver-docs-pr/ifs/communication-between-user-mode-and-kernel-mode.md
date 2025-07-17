@@ -9,6 +9,7 @@ keywords:
 - user-mode communication WDK file system minifilter
 - ports WDK , file system minifilter
 ms.date: 07/10/2024
+ms.topic: concept-article
 ---
 
 # Communication between user-mode and minifilters

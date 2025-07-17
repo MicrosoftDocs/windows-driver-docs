@@ -2,6 +2,7 @@
 title: WexLogger
 description: WexLogger
 ms.date: 12/15/2021
+ms.topic: reference
 ---
 
 # WexLogger

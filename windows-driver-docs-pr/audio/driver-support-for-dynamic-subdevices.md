@@ -5,6 +5,7 @@ keywords:
 - dynamic audio subdevices WDK audio
 - dynamic topologies WDK audio
 ms.date: 12/22/2020
+ms.topic: reference
 ---
 
 # Driver Support for Dynamic Subdevices

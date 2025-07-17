@@ -2,6 +2,7 @@
 title: System and Driver Support for Resizable BAR
 description: Explore how the operating system and drivers support a resizable base address register (BAR).
 ms.date: 07/12/2025
+ms.topic: concept-article
 ---
 
 # System and driver support for Resizable BAR

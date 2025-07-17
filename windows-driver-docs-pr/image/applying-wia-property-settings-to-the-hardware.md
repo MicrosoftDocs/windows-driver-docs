@@ -2,6 +2,7 @@
 title: Apply WIA Property Settings to the Hardware
 description: Apply WIA Property Settings to the Hardware
 ms.date: 03/27/2023
+ms.topic: tutorial
 ---
 
 # Apply WIA Property Settings to the Hardware

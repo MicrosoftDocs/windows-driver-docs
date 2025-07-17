@@ -4,6 +4,7 @@ description: Sample Print Provider
 keywords:
 - print providers WDK , samples
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Sample Print Provider

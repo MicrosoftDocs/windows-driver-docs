@@ -2,6 +2,7 @@
 title: UWP App for a USB Device
 description: The Windows.Devices.Usb namespace provides APIs to communicate with an external USB device.
 ms.date: 01/17/2024
+ms.topic: concept-article
 ---
 
 # UWP app for a USB device

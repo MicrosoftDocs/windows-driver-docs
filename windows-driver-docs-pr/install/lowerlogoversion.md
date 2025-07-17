@@ -4,6 +4,7 @@ description: LowerLogoVersion is a device setup class property that affects the 
 keywords:
 - LowerLogoVersion
 ms.date: 04/12/2022
+ms.topic: concept-article
 ---
 
 # LowerLogoVersion

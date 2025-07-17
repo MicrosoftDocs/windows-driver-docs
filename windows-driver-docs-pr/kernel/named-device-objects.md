@@ -3,6 +3,7 @@ title: Named Device Objects
 description: Named Device Objects
 keywords: ["device objects WDK kernel , named", "named device objects WDK kernel"]
 ms.date: 09/28/2017
+ms.topic: concept-article
 ---
 
 # Named Device Objects

@@ -7,6 +7,7 @@ keywords:
 - network component upgrades WDK , about upgrading network components
 - upgrading network components WDK , about upgrading network components
 ms.date: 04/20/2017
+ms.topic: upgrade-and-migration-article
 ---
 
 # Process for upgrading network components

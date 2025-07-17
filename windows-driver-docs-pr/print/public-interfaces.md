@@ -7,6 +7,7 @@ keywords:
 - public interfaces WDK spooler notification
 - interfaces WDK spooler notification
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Public Interfaces

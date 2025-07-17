@@ -3,6 +3,7 @@ title: User-mode Dump Files
 description: Get an overview of user-mode dump files and how to use them to help resolve bugs and crashes.
 keywords: ["dump file, user-mode"]
 ms.date: 01/24/2025
+ms.topic: concept-article
 ---
 
 # User-mode dump files

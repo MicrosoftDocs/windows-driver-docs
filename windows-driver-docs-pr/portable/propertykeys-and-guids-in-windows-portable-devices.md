@@ -2,6 +2,7 @@
 description: PROPERTYKEYs and GUIDs in Windows Portable Devices
 title: PROPERTYKEYs and GUIDs in Windows Portable Devices
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # PROPERTYKEYs and GUIDs in Windows Portable Devices

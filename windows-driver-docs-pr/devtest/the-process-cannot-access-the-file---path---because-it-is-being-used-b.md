@@ -2,6 +2,7 @@
 title: Process Cannot Access File Path Because it is Being Used by Another Process
 description: The process cannot access the file path because it is being used by another process.
 ms.date: 04/20/2017
+ms.topic: troubleshooting-general
 ---
 
 # The process cannot access the file "&lt;Path&gt;" because it is being used by another process

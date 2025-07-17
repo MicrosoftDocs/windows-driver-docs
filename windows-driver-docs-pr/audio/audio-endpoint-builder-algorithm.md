@@ -2,6 +2,7 @@
 title: Audio Endpoint Builder Algorithm
 description: Audio Endpoint Builder Algorithm
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Audio Endpoint Builder Algorithm

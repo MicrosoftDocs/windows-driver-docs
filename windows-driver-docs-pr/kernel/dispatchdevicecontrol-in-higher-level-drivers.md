@@ -3,6 +3,7 @@ title: DispatchDeviceControl in Higher-Level Drivers
 description: DispatchDeviceControl in Higher-Level Drivers
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch DispatchDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "device control dispatch routines WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # DispatchDeviceControl in Higher-Level Drivers

@@ -2,6 +2,7 @@
 title: Image Application Dialog Extensions
 description: Image Application Dialog Extensions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Image Application Dialog Extensions

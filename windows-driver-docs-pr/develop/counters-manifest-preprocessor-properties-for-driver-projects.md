@@ -2,6 +2,7 @@
 title: Counters Manifest Preprocessor Properties for Driver Projects
 description: Sets the properties for the CTRPP tool that parses and validates your counters manifest.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Counters Manifest Preprocessor Properties for Driver Projects

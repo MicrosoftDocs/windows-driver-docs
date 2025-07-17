@@ -11,6 +11,7 @@ keywords:
 - driver package digital signatures WDK
 - package digital signatures WDK
 ms.date: 03/03/2022
+ms.topic: concept-article
 ---
 
 # Digital Signatures and PnP Device Installation (Windows Vista and Later)

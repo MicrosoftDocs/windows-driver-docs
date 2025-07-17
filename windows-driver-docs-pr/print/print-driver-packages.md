@@ -8,6 +8,7 @@ keywords:
 - driver packages WDK print
 - printer driver packages WDK print
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print Driver Packages

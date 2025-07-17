@@ -3,6 +3,7 @@ title: Security During User-Mode Debugging
 description: Security During User-Mode Debugging
 keywords: ["security considerations, user-mode debugging"]
 ms.date: 11/26/2017
+ms.topic: best-practice
 ---
 
 # Security During User-Mode Debugging

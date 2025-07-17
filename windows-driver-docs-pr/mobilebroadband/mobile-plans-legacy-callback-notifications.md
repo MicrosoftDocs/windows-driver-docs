@@ -4,6 +4,7 @@ description: This topic describes the Callback notifications support by Mobile P
 keywords:
 - Windows Mobile Plans Legacy Callback notifications, Mobile Plans Legacy implementation mobile operators
 ms.date: 10/06/2023
+ms.topic: reference
 ---
 
 # Mobile Plans legacy callback notifications

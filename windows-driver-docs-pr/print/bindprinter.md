@@ -4,6 +4,7 @@ description: The BindPrinter method binds a printer or print queue to a specific
 keywords:
 - BindPrinter
 ms.date: 01/26/2023
+ms.topic: reference
 ---
 
 # BindPrinter

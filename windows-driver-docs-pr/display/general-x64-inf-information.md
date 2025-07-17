@@ -5,6 +5,7 @@ keywords:
 - INF files WDK display , 64-bit
 - 64-bit WDK display
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # General x64 INF Information

@@ -6,6 +6,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , INF files
 - INF files WDK WHEA
 ms.date: 06/13/2023
+ms.topic: install-set-up-deploy
 ---
 
 # INF Files for PSHED Plug-Ins

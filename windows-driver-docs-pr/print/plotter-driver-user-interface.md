@@ -6,6 +6,7 @@ keywords:
 - MSPlot WDK print, user interface
 - user interface WDK MSPlot
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Plotter driver user interface

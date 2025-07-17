@@ -2,6 +2,7 @@
 title: Object Viewer Dialog Box
 description: "The Object Viewer dialog box tracks different objects throughout the life span of the trace file."
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Object Viewer Dialog Box  

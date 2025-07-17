@@ -3,6 +3,7 @@ title: Failure to Validate Device Objects
 description: Failure to Validate Device Objects
 keywords: ["reliability WDK kernel , device object validations", "device objects WDK kernel , validation failures", "validation failures WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: troubleshooting-general
 ---
 
 # Failure to Validate Device Objects

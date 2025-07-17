@@ -2,6 +2,7 @@
 title: MBR2GPT Tool Test Guidance
 description: Provides guidance on the MBR2GPT tool test.
 ms.date: 05/12/2025
+ms.topic: checklist
 ---
 
 # MBR2GPT tool test guidance

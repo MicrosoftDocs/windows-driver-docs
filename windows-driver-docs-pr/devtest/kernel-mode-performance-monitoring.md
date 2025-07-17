@@ -2,6 +2,7 @@
 title: Kernel Mode Performance Monitoring
 description: Kernel Mode Performance Monitoring
 ms.date: 08/24/2023
+ms.topic: concept-article
 ---
 
 # Kernel Mode Performance Monitoring

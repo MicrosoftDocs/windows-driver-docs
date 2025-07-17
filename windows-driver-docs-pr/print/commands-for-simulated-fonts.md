@@ -5,6 +5,7 @@ keywords:
 - simulated font commands WDK Unidrv
 - font commands WDK Unidrv
 ms.date: 01/26/2023
+ms.topic: reference
 ---
 
 # Commands for Simulated Fonts

@@ -2,6 +2,7 @@
 title: SPB Device Stacks
 description: Acpi.sys creates the PDO for a peripheral device on an SPB.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # SPB Device Stacks

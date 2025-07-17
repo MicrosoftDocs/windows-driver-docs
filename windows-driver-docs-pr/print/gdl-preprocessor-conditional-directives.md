@@ -8,6 +8,7 @@ keywords:
 - directives WDK GDL , conditional directives
 - conditional directives WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Preprocessor Conditional Directives

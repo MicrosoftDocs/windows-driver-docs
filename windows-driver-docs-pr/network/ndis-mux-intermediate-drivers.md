@@ -7,6 +7,7 @@ keywords:
 - one-to-n MUX intermediate driver configuration WDK
 - n-to-one MUX intermediate driver configuration WDK
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # NDIS MUX Intermediate Drivers

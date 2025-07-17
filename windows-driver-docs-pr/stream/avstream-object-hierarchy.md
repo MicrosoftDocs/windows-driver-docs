@@ -8,6 +8,7 @@ keywords:
 - filter types WDK AVStream
 - AVStream WDK , object hierarchy
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # AVStream Object Hierarchy

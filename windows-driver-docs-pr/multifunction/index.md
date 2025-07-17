@@ -12,6 +12,7 @@ keywords:
 - parent buses WDK multifunction devices
 - INF files WDK multifunction devices
 ms.date: 03/17/2023
+ms.topic: design-pattern
 ---
 
 # Multifunction device driver design guide

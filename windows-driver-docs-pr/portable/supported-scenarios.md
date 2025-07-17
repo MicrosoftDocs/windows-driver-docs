@@ -2,6 +2,7 @@
 description: Supported Scenarios
 title: Supported Scenarios
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Supported Scenarios

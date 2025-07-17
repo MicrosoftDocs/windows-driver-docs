@@ -2,6 +2,7 @@
 title: System and Language Support for Software Tracing
 description: System and Language Support for Software Tracing
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # System and Language Support for Software Tracing

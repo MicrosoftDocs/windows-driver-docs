@@ -11,6 +11,7 @@ keywords:
 - snapshots WDK GDL , GDL parser
 - parser WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Parser

@@ -4,6 +4,7 @@ description: Types of APCs
 keywords: ["asynchronous procedure calls WDK kernel", "APCs WDK kernel", "user APCs WDK kernel", "normal kernel APCs WDK kernel", "special kernel APCs WDK kernel"]
 ms.date: 09/16/2022
 ms.custom: engagement-fy23
+ms.topic: concept-article
 ---
 
 # Types of APCs

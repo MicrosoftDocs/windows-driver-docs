@@ -5,6 +5,7 @@ keywords:
 - printer commands WDK Unidrv , option selections
 - option selection commands WDK Unidrv
 ms.date: 01/30/2023
+ms.topic: reference
 ---
 
 # Option selection command

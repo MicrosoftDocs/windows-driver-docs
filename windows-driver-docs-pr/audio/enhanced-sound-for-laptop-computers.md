@@ -2,6 +2,7 @@
 title: Enhanced Sound for Laptop Computers
 description: Enhanced Sound for Laptop Computers
 ms.date: 11/07/2018
+ms.topic: overview
 ---
 
 # Enhanced Sound for Laptop Computers

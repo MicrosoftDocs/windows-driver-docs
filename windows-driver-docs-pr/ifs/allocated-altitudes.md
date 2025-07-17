@@ -7,6 +7,7 @@ keywords:
 - filter driver altitude
 - minifilter driver altitude
 ms.custom: UpdateFrequency1
+ms.topic: error-reference
 ---
 
 # Allocated filter altitudes

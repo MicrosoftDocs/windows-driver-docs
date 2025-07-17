@@ -7,6 +7,7 @@ keywords:
 - UMDF DDI WDK
 - DDI WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # UMDF DDI Programming Model

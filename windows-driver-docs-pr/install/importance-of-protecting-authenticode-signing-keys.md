@@ -9,6 +9,7 @@ keywords:
 - cryptography WDK driver signing
 - keys WDK driver signing
 ms.date: 09/30/2024
+ms.topic: concept-article
 ---
 
 # Importance of Protecting Authenticode Signing Keys

@@ -6,6 +6,7 @@ keywords:
 - driver stacks WDK Bluetooth
 - stacks WDK Bluetooth
 ms.date: 07/14/2025
+ms.topic: concept-article
 ---
 
 # Bluetooth driver stack

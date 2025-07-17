@@ -2,6 +2,7 @@
 title: USBTCD Package
 description: USBTCD is the combination of a user-mode application and kernel-mode driver.
 ms.date: 09/23/2024
+ms.topic: overview
 ---
 
 # USBTCD package

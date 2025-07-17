@@ -4,6 +4,7 @@ description: Explore how driver signing associates a digital signature with a dr
 keywords:
 - driver signing WDK
 ms.date: 07/11/2025
+ms.topic: concept-article
 ---
 
 # Driver signing

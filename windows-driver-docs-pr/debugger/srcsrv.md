@@ -3,6 +3,7 @@ title: SrcSrv
 description: SrcSrv
 keywords: ["source servers", "SrcSrv"]
 ms.date: 05/23/2017
+ms.topic: overview
 ---
 
 # SrcSrv

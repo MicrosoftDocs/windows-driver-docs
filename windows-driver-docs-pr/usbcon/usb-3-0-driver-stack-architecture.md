@@ -2,6 +2,7 @@
 title: USB Host-Side Drivers in Windows
 description: This article provides an overview of the Universal Serial Bus (USB) driver stack architecture.
 ms.date: 01/17/2024
+ms.topic: overview
 ---
 
 # USB host-side drivers in Windows

@@ -4,6 +4,7 @@ description: PCL XL Issues
 keywords:
 - PCL XL vector graphics WDK Unidrv , additional considerations
 ms.date: 01/30/2023
+ms.topic: troubleshooting-known-issue
 ---
 
 # PCL XL Issues

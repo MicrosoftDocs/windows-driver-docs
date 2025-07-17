@@ -2,6 +2,7 @@
 title: Code Samples
 description: This section includes code samples and sample descriptors for interface implementation.
 ms.date: 03/26/2025
+ms.topic: reference
 ---
 
 # Code samples

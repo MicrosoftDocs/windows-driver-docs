@@ -9,6 +9,7 @@ keywords:
 - illegal function calls WDK Driver Verifier
 - stress testing WDK Driver Verifier
 ms.date: 12/06/2024
+ms.topic: concept-article
 ---
 
 # Driver Verifier

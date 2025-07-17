@@ -18,6 +18,7 @@ keywords:
 - system bus drivers WDK audio
 - subdevices WDK audio
 ms.date: 04/20/2017
+ms.topic: glossary
 ---
 
 # WDM Audio Terminology

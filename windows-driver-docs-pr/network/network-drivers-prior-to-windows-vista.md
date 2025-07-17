@@ -4,6 +4,7 @@ description: Network Drivers Prior to Windows Vista
 keywords:
 - Network Drivers Prior to Windows Vista WDK, NDIS 5.1 network drivers, Windows 2000 network drivers, Windows XP network drivers
 ms.date: 12/07/2017
+ms.topic: concept-article
 ---
 
 # Network Drivers Prior to Windows Vista

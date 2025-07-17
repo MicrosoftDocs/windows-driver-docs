@@ -2,6 +2,7 @@
 title: Supported Ethernet NICs for Network Kernel Debugging in Windows 10
 description: Learn about kernel debugging over an Ethernet network cable when the target computer is running Windows 10.
 ms.date: 04/20/2021
+ms.topic: reference
 ---
 
 # Supported Ethernet NICs for Network Kernel Debugging in Windows 10

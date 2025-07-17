@@ -3,6 +3,7 @@ title: "TTD Exception Objects"
 description: "This section describes the exception model objects associated with time travel debugging."
 keywords: ["TTD Exception Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 11/14/2024
+ms.topic: reference
 ---
 
 # TTD Exception Objects

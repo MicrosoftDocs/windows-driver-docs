@@ -2,6 +2,7 @@
 title: Hyper-V Extensible Switch OID Requests
 description: Hyper-V Extensible Switch OID Requests
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Hyper-V Extensible Switch OID Requests

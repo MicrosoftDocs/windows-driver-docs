@@ -2,6 +2,7 @@
 title: Privacy shutter replacement image
 description: Enable image replacement for a camera that supports shutter state reporting and provide a custom replacement image.
 ms.date: 04/25/2024
+ms.topic: how-to
 ---
 
 # Privacy shutter replacement image

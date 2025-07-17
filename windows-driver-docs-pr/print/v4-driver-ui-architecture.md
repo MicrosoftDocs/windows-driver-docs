@@ -2,6 +2,7 @@
 title: V4 Driver UI Architecture
 description: A high level design goal for the v4 driver architecture was to provide built-in support for the Microsoft Store app user interface.
 ms.date: 11/12/2024
+ms.topic: design-pattern
 ---
 
 # V4 driver UI architecture

@@ -23,6 +23,7 @@ keywords:
 - WDM audio data formats WDK
 - data formats WDK audio , multichannel
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Multichannel Formats for Home-Theater Systems

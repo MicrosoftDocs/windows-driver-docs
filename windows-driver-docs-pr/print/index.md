@@ -2,6 +2,7 @@
 title: Printer Driver Design Guide
 description: This section provides information on designing printer drivers.
 ms.date: 09/06/2024
+ms.topic: concept-article
 ---
 
 # Printer driver design guide

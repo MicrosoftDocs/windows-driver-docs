@@ -6,6 +6,7 @@ keywords:
 - streaming minidrivers WDK Windows 2000 Kernel , writing
 - minidrivers WDK Windows 2000 Kernel Streaming , writing
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # Notes on Writing Stream Class Minidrivers

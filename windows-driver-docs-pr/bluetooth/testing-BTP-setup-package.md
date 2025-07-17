@@ -2,6 +2,7 @@
 title: Install Bluetooth Test Platform Package - BTP
 description: Learn how to install the Microsoft Bluetooth Test Platform (BTP) software package, read descriptions of architecture files, and find changes made in specific versions.
 ms.date: 07/14/2025
+ms.topic: install-set-up-deploy
 ---
 
 # Get the Microsoft Bluetooth Test Platform software package

@@ -3,6 +3,7 @@ title: ACX Multi Circuit Composition
 description: This topic provides a summary of multi circuit composition 
 ms.date: 02/09/2024
 ms.localizationpriority: medium
+ms.topic: concept-article
 ---
 
 # ACX multi circuit composition

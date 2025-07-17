@@ -4,6 +4,7 @@ description: Packet Indication Format
 keywords:
 - packet indication WDK Windows Filtering Platform
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Packet Indication Format

@@ -14,6 +14,7 @@ keywords:
 - bit rates WDK encoder
 - registry WDK encoder
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Encoder code examples

@@ -5,6 +5,7 @@ keywords:
 - adapters WDK 802.11 WLAN , arrivals
 - WLAN adapters WDK , arrivals
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # 802.11 WLAN Adapter Arrival

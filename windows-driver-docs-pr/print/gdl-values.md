@@ -11,6 +11,7 @@ keywords:
 - values WDK GDL , examples
 - contexts WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Values

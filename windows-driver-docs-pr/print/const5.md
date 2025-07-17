@@ -4,6 +4,7 @@ description: The Web Services for Devices (WSD) Const construct defines the data
 keywords:
 - Const construct
 ms.date: 06/16/2023
+ms.topic: reference
 ---
 
 # Const (WSD)

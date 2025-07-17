@@ -7,6 +7,7 @@ keywords:
 - query-property requests WDK storage
 - configuration information WDk storage
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Storage Class Driver's ClaimDevice Routine

@@ -5,6 +5,7 @@ keywords:
 - NDIS network interfaces WDK , information about
 - network interfaces WDK , information about
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Network Interface Information

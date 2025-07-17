@@ -8,6 +8,7 @@ keywords:
 - socket objects WDK Winsock Kernel
 - client objects WDK Winsock Kernel
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Winsock Kernel Objects

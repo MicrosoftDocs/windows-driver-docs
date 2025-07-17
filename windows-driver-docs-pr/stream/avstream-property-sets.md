@@ -2,6 +2,7 @@
 title: AVStream Property Sets
 description: This section documents AVStream property sets.
 ms.date: 10/07/2021
+ms.topic: reference
 ---
 
 # AVStream Property Sets

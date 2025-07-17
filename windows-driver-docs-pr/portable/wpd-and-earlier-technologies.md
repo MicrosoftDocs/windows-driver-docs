@@ -2,6 +2,7 @@
 description: WPD and Earlier Technologies
 title: WPD and Earlier Technologies
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # WPD and Earlier Technologies

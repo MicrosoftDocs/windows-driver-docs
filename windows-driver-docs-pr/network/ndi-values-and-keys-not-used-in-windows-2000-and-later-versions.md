@@ -6,6 +6,7 @@ keywords:
 - Ndi key WDK networking
 - Ndi value WDK networking
 ms.date: 04/20/2017
+ms.topic: error-reference
 ---
 
 # Deprecated Ndi Values and Keys

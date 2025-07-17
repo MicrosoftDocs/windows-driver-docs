@@ -7,6 +7,7 @@ keywords:
 - printer configuration WDK
 - printer drivers WDK , configuring
 ms.date: 02/20/2025
+ms.topic: overview
 ---
 
 # Printer configuration

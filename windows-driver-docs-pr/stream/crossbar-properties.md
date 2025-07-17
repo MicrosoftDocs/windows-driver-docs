@@ -5,6 +5,7 @@ keywords:
 - crossbar properties WDK video capture
 - PROPSETID_VIDCAP_CROSSBAR
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Crossbar Properties

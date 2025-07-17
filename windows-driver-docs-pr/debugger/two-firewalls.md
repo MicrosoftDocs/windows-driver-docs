@@ -3,6 +3,7 @@ title: Two Firewalls
 description: Two Firewalls
 keywords: ["remote debugging, two firewalls", "firewalls and remote debugging"]
 ms.date: 11/25/2024
+ms.topic: example-scenario
 ---
 
 # Two Firewalls

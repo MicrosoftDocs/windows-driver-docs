@@ -2,6 +2,7 @@
 title: GUIDType (ServiceInfo)
 description: GUIDType (ServiceInfo)
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # GUIDType (ServiceInfo)

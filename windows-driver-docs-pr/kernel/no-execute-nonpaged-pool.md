@@ -2,6 +2,7 @@
 title: No-Execute (NX) Nonpaged Pool
 description: As a best practice, drivers for Windows 8 and later versions of Windows should allocate most or all of their nonpaged memory from the no-execute (NX) nonpaged pool.
 ms.date: 10/17/2018
+ms.topic: best-practice
 ---
 
 # No-Execute (NX) Nonpaged Pool

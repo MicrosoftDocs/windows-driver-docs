@@ -2,6 +2,7 @@
 title: Configure USB Endpoints in a USB Host Controller Driver
 description: UCX manages the creation of endpoint objects, and notifies the host controller to program or deprogram endpoints into the USB host controller.
 ms.date: 01/12/2024
+ms.topic: concept-article
 ---
 
 # Configure USB endpoints in a USB host controller driver

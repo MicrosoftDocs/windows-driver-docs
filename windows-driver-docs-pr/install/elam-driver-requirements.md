@@ -2,6 +2,7 @@
 title: ELAM Driver Requirements
 description: Driver installation must use existing tools for online and offline installation, registering a driver through typical INF processing.
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # ELAM Driver Requirements

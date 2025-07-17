@@ -3,6 +3,7 @@ title: Messages from the Target
 description: Messages from the Target
 keywords: ["debugging messages", "debugging messages, overview"]
 ms.date: 05/23/2017
+ms.topic: overview
 ---
 
 # Messages from the Target

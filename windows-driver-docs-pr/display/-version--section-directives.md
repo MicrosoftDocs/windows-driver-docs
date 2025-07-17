@@ -2,6 +2,7 @@
 title: '[Version] Section Directives'
 description: This topic describes [Version] section directives in the INF.
 ms.date: 01/12/2024
+ms.topic: reference
 ---
 
 # \[Version\] section directives

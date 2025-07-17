@@ -2,6 +2,7 @@
 title: WIA Core Components
 description: WIA Core Components
 ms.date: 07/18/2018
+ms.topic: concept-article
 ---
 
 # WIA Core Components

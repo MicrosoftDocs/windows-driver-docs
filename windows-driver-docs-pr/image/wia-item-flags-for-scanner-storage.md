@@ -2,6 +2,7 @@
 title: WIA Item Flags for Scanner Storage
 description: WIA Item Flags for Scanner Storage
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # WIA Item Flags for Scanner Storage

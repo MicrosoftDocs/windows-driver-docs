@@ -2,6 +2,7 @@
 title: Device Management Namespace Objects
 description: The ACPI 5.0 specification defines several types of namespace objects that can be used to manage devices.
 ms.date: 03/22/2023
+ms.topic: concept-article
 ---
 
 # Device management namespace objects

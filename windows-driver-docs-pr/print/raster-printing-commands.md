@@ -5,6 +5,7 @@ keywords:
 - raster printing commands WDK Unidrv
 - printer commands WDK Unidrv , raster
 ms.date: 01/30/2023
+ms.topic: reference
 ---
 
 # Raster Printing Commands

@@ -3,6 +3,7 @@ title: Hot Replace of Partition Units
 description: Hot Replace of Partition Units
 keywords: ["dynamic hardware partitioning WDK , hot replace", "hardware partitioning WDK dynamic , hot replace", "partitioning WDK dynamic hardware , hot replace", "hot replace WDK dynamic hardware partitioning"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Hot Replace of Partition Units

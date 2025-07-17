@@ -2,6 +2,7 @@
 title: HBAFC3MgmtInfo WMI Class
 description: HBAFC3MgmtInfo WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # HBAFC3MgmtInfo WMI Class

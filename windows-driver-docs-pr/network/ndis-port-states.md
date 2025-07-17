@@ -9,6 +9,7 @@ keywords:
 - link states WDK NDIS ports
 - initialization states WDK NDIS ports
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # NDIS Port States

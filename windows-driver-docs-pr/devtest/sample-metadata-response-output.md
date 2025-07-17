@@ -5,6 +5,7 @@ keywords:
 - WSDBIT tool WDK , sample
 - WSDAPI Basic Interoperability Tool WDK , sample
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Sample Metadata Response Output

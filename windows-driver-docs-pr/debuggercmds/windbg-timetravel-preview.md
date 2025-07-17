@@ -3,6 +3,7 @@ title: "WinDbg - Time Travel "
 description: "This section describes how work with the time travel menu."
 keywords: ["Time Travel", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/10/2020
+ms.topic: how-to
 ---
 
 # WinDbg - Time Travel Menu

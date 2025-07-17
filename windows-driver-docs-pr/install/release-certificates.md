@@ -7,6 +7,7 @@ keywords:
 - release certificates WDK
 - certificates WDK , release
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # Release Certificates

@@ -2,6 +2,7 @@
 title: Display-related Sample Code
 description: Lists graphics and display sample code that ships with the WDK.
 ms.date: 07/12/2024
+ms.topic: reference
 ---
 
 # WDK display and graphics sample code

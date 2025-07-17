@@ -2,6 +2,7 @@
 title: CPSUI Option Types
 description: When using CPSUI to create a property sheet page, user-selectable options must be defined using CPSUI-supported window controls.
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # CPSUI Option Types

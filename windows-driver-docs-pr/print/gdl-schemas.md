@@ -7,6 +7,7 @@ keywords:
 - schemas WDK GDL , examples
 - constructs WDK GDL , examples
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Schemas

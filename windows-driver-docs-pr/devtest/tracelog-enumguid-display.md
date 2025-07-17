@@ -8,6 +8,7 @@ keywords:
 - -enumguid command
 - enumguid command
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Tracelog Enumguid Display

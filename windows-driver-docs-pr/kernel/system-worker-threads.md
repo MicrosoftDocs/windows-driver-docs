@@ -3,6 +3,7 @@ title: System Worker Threads
 description: System Worker Threads
 keywords: ["executive worker threads WDK kernel", "work items WDK kernel", "thread objects WDK kernel", "WorkItem", "WorkItemEx", "worker threads WDK kernel", "worker-thread callback routines WDK kernel", "callback routines WDK worker threads"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # System Worker Threads

@@ -2,6 +2,7 @@
 title: BadOverflowGuard (Supplemental Windows Driver CodeQL Query)
 description: BadOverflowGuard a Supplemental Windows Driver CodeQL Query
 ms.date: 01/11/2021
+ms.topic: best-practice
 ---
 
 # BadOverflowGuard (Windows Driver CodeQL Query)

@@ -2,6 +2,7 @@
 title: Component-Level Performance State Management
 description: Starting with Windows 10, the power management framework (PoFx) enables a driver to define one or more sets of individually adjustable performance states for individual components within a device.
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Component-Level Performance State Management

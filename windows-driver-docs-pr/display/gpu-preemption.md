@@ -2,6 +2,7 @@
 title: GPU Preemption
 description: An updated GPU preemption model is available starting with Windows 8.
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # GPU preemption

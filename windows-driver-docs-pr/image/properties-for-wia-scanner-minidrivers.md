@@ -2,6 +2,7 @@
 title: Properties for WIA Scanner Minidrivers
 description: Properties for WIA Scanner Minidrivers
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Properties for WIA Scanner Minidrivers

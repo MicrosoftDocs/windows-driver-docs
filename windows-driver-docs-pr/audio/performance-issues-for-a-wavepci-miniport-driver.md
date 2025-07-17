@@ -13,6 +13,7 @@ keywords:
 - synchronization primitives WDK audio
 - IPinCount
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # Performance Issues for a WavePci Miniport Driver

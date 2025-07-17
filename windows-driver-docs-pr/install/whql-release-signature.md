@@ -10,6 +10,7 @@ keywords:
 - WHQL digital signatures WDK
 - public release driver signing WDK , WHQL
 - release signing WDK , WHQL
+ms.topic: how-to
 ---
 
 # WHQL release signature

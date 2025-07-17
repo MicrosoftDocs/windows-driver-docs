@@ -3,6 +3,7 @@ title: Local Kernel-Mode Debugging
 description: Local Kernel-Mode Debugging
 keywords: ["local kernel debugging", "local kernel debugging, commands available", "local kernel debugging, LiveKD tool", "LiveKD tool"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Local Kernel-Mode Debugging

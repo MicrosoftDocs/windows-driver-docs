@@ -13,6 +13,7 @@ keywords:
 - GDL WDK , values
 - values WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Source File Structure

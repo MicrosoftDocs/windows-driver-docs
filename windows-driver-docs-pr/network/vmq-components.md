@@ -2,6 +2,7 @@
 title: VMQ Components
 description: VMQ Components
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # VMQ Components

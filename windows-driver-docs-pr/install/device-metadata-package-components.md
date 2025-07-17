@@ -2,6 +2,7 @@
 title: Device Metadata Package Structure
 description: Device Metadata Package Structure
 ms.date: 06/19/2025
+ms.topic: concept-article
 ---
 
 # Device Metadata Package Structure

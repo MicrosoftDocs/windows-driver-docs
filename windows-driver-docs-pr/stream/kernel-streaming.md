@@ -9,6 +9,7 @@ keywords:
 - KS WDK , about kernel streaming
 - minidrivers WDK kernel streaming
 ms.date: 09/24/2024
+ms.topic: concept-article
 ---
 
 # Kernel streaming

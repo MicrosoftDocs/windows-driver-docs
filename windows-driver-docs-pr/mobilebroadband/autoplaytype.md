@@ -2,6 +2,7 @@
 title: AutoplayType
 description: AutoplayType
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # AutoplayType

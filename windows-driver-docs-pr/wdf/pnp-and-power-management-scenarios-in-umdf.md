@@ -8,6 +8,7 @@ keywords:
 - power management scenarios WDK UMDF , PnP
 - power management scenarios WDK UMDF , Plug and Play
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # PnP and Power Management Scenarios in UMDF

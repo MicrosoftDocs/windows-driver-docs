@@ -7,6 +7,7 @@ keywords:
 - Kernel-mode file copy
 - Kernel-mode file copy detection scenarios
 ms.date: 09/25/2024
+ms.topic: concept-article
 ---
 
 # Kernel-mode file copy and detecting copy file scenarios

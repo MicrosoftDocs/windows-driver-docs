@@ -4,6 +4,7 @@ description: This article introduces the mobile operator configuration portal to
 ms.date: 08/16/2024
 author: mhopkins-msft
 ms.author: mhopkins
+ms.topic: how-to
 ---
 # Microsoft mobile operator configuration portal guide
 

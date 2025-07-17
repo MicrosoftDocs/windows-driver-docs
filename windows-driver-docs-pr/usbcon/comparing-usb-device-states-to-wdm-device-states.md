@@ -2,6 +2,7 @@
 title: USB Device Power States
 description: This article describes the Windows Driver Model (WDM) device states to use for USB device power states as specified in section 9.1 of the Universal Serial Bus 2.0 specification.
 ms.date: 09/12/2024
+ms.topic: concept-article
 ---
 
 # USB device power states

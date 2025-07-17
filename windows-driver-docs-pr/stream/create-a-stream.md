@@ -6,6 +6,7 @@ keywords:
 - stream creation WDK AV/C streaming
 - contexts WDK AV/C streaming
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Create a Stream

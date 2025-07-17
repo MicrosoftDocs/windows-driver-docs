@@ -2,6 +2,7 @@
 title: Scanner Storage Architecture
 description: Scanner Storage Architecture
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Scanner Storage Architecture

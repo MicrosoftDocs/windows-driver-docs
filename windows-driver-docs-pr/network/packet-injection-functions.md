@@ -5,6 +5,7 @@ keywords:
 - packet injection functions WDK Windows Filtering Platform
 - injection functions WDK Windows Filtering Platform
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Packet Injection Functions

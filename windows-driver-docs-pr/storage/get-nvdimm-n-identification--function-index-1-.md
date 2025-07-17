@@ -2,6 +2,7 @@
 title: Get NVDIMM-N Identification (Function Index 1)
 description: This function returns device-specific information.
 ms.date: 11/18/2022
+ms.topic: reference
 ---
 
 # Get NVDIMM-N Identification (Function Index 1)

@@ -5,6 +5,7 @@ keywords:
 - Trusted Root Certification Authorities certificate store WDK
 - Trusted Publishers certificate store WDK
 ms.date: 07/11/2025
+ms.topic: troubleshooting-known-issue
 ---
 
 # Deprecation of software publisher certificates, commercial release certificates, and commercial test certificates

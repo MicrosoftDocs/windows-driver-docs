@@ -2,6 +2,7 @@
 title: Personal Information Exchange (.Pfx) Files
 description: Personal Information Exchange (.pfx) Files
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Personal Information Exchange (.pfx) Files

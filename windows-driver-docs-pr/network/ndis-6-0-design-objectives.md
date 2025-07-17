@@ -4,6 +4,7 @@ description: NDIS 6.0 Design Objectives
 keywords:
 - NDIS WDK , about NDIS
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # NDIS 6.0 Design Objectives

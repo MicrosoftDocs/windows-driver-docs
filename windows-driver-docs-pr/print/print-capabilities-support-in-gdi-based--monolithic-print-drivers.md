@@ -6,6 +6,7 @@ keywords:
 - GDI-based monolithic print drivers WDK
 - monolithic print drivers WDK
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print capabilities support in GDI-based monolithic print drivers

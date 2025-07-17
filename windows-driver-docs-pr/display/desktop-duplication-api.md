@@ -2,6 +2,7 @@
 title: Desktop Duplication
 description: Windows 8 introduces a new Microsoft DirectX Graphics Infrastructure (DXGI)-based API to make it easier for independent software vendors (ISVs) to support desktop collaboration and remote desktop access scenarios.
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # Desktop duplication

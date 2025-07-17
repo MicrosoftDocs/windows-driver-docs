@@ -2,6 +2,7 @@
 title: Target a System Using CHID Targeting
 description: Provides information about how to target a system using CHID targeting.
 ms.date: 03/23/2023
+ms.topic: concept-article
 ---
 
 # Target a system using CHID targeting

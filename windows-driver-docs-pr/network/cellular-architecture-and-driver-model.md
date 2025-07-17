@@ -4,6 +4,7 @@ description: Learn about the elements of cellular architecture for Windows 10, a
 ms.date: 01/07/2024
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # Cellular architecture

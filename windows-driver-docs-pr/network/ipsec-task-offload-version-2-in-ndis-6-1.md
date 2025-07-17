@@ -5,6 +5,7 @@ keywords:
 - IPsec offload WDK TCP/IP transport , version 2
 - IPsecOV2 WDK TCP/IP transport , about IPsecOV2
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # IPsec Task Offload Version 2 in NDIS 6.1

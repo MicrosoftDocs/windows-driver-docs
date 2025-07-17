@@ -8,6 +8,7 @@ keywords:
 - digital signatures WDK , Authenticode
 - signatures WDK , Authenticode
 ms.date: 07/11/2025
+ms.topic: concept-article
 ---
 
 # Authenticode digital signatures

@@ -5,6 +5,7 @@ keywords:
 - WDM audio drivers WDK , about WDM audio drivers
 - audio drivers WDK , platform differences
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # WDM Audio Platform Differences

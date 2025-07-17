@@ -9,6 +9,7 @@ keywords:
 - kernel device names WDK smart card
 - WDM device names WDK smart card
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # WDM Device Names for Smart Card Readers

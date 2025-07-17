@@ -2,6 +2,7 @@
 title: Code Example for Opening a Property Store
 description: Code example for opening a Property Store
 ms.date: 03/28/2023
+ms.topic: how-to
 ---
 
 # Code example for opening a Property Store

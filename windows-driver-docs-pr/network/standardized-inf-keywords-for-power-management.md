@@ -2,6 +2,7 @@
 title: Standardized INF Keywords for Power Management
 description: Learn how to use standardized INF keywords for power management.
 ms.date: 12/20/2024
+ms.topic: concept-article
 ---
 
 # Standardized INF keywords for power management

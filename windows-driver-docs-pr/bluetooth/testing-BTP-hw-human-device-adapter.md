@@ -2,6 +2,7 @@
 title: Microsoft Bluetooth Test Platform - Human Device Adapter
 description: Bluetooth Test Platform (BTP) Human Device Adapter (HDA) Setup and Pairing 
 ms.date: 01/10/2024
+ms.topic: how-to
 ---
 
 # Human Device Adapter
