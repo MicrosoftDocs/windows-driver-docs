@@ -103,7 +103,7 @@ When you start the connection, WinDbg might prompt you to allow access to the po
 
 :::image type="content" source="images/debuglab-image-firewall-dialog-box.png" border="false" alt-text="Screenshot of Windows Security Alert with selections to allow access to all three network types.":::
 
-Select each checkbox to enable access for **all three** network types, and select **Allow access**.
+In the message dialog, select each checkbox to enable access for **all three** network types, and select **Allow access**.
 
 At this point, the debugger waits for the target to reconnect and shows progress in the debugger command window:
 
@@ -168,7 +168,7 @@ A company network policy might limit the range of port numbers available for net
 
 ### Find supported network adapters
 
-If the _Network debugging isn't supported on any of the NICs in this machine_ message displays when you run KDNET, the network adapter isn't supported.
+If you see the _Network debugging isn't supported on any of the NICs in this machine_ message when you run KDNET, the network adapter isn't supported.
 
 The host computer can use any network adapter, but the target computer must use a network adapter supported by Debugging Tools for Windows. For a list of supported network adapters, see the following articles:
 
@@ -179,7 +179,7 @@ The host computer can use any network adapter, but the target computer must use 
 
 Windows 10 October 2020 Update (20H2) and later support four types of debugging:
 
-| KNDET option | Debugging type       | Equivalent set command             | More information |
+| KDNET option | Debugging type       | Equivalent set command             | More information |
 |:------------:|----------------------|------------------------------------|------------------|
 | `b`          | Bootmgr debugging    | `bcdedit /bootdebug {bootmgr} on`  | [BCDEdit /bootdebug](../devtest/bcdedit--bootdebug.md) |
 | `w`          | Winload debugging    | `bcdedit /bootdebug on`            | [BCDEdit /bootdebug](../devtest/bcdedit--bootdebug.md) |
@@ -190,7 +190,7 @@ Here are the details about working with the debugging types:
 
 - You can specify any combination of debug types.
 - If you don't specify a debug types, the system enables kernel debugging.
-- If you enable both hypervisor and kernel debugging, the hypervisor port is set to `<YourDebugPort>` + 1.
+- If you enable both hypervisor and kernel debugging, the hypervisor port is set to `<Debug-Port>` + 1.
 
 ### Example: Enable bootmgr, kernel, and winload debugging
 
