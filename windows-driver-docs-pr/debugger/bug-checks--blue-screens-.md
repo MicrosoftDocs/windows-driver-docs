@@ -38,7 +38,7 @@ Here's an example for Windows 11, version 24H2 and later versions:
 
 The stop code is displayed, such as [CRITICAL_PROCESS_DIED](bug-check-0xef--critical-process-died.md). When it's available, the module name of the code that was being executed is also displayed, such as **rdbyss.sys**.
 
-If a [kernel-mode dump file](kernel-mode-dump-files.md) has been written, it's indicated with a percentage complete count down as the dump is being written.
+If a dump file is written, it's indicated with a percentage complete count down as the dump is being written.
 
 There's a stop code hex value associated with each stop code as listed in [Bug check code reference](bug-check-code-reference2.md).
 
