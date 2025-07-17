@@ -15,7 +15,7 @@ WinDbg is the latest version of the Windows Debugger that offers more modern vis
 
 :::image type="content" source="images/windbgx-main-menu.png" border="false" alt-text="Screenshot of the main screen in WinDbg debugger.":::
 
-## Access prominent features
+## Use prominent features
 
 Improve your debugging experience with the many features and programming benefits provided in WinDbg:
 
@@ -24,8 +24,6 @@ Improve your debugging experience with the many features and programming benefit
     :::image type="content" source="images/windbgx-start-debugging-menu.png" border="false" alt-text="Screenshot of the start debugging screen in WinDbg debugger.":::
 
 - **Dark theme** - Enable user interface (UI) preferences like dark theme under **File** > **Settings**.
-
-   <!-- The following image shows a Microsoft email alias, DOMARS, which might be considered a security issue. -->
 
     :::image type="content" source="images/windbgx-dark-theme.png" border="false" alt-text="Screenshot of WinDbg debugger with dark theme enabled.":::
 
@@ -83,7 +81,7 @@ The **Scripting** window makes it easier for you to develop JavaScript and NatVi
 
 The **Data model** window provides an expandable and browsable version of the `dx` and `dx -g` commands. This feature helps you create powerful tables on-top of your NatVis, JavaScript, and LINQ queries. For more information, see [WinDbg - Data model](windbg-data-model-preview.md).
 
-:::image type="content" source="images/windbgx-data-model-explore-window.png" border="false" alt-text="Screenshot of the data model window in WinDbg debugger with expandable and browsable features.":::
+:::image type="content" source="images/windbgx-data-model-explore-window.png" alt-text="Screenshot of the data model window in WinDbg debugger with expandable and browsable features.":::
 
 The **Locals** and **Watch** windows are both based off the data model used by the `dx` command. They benefit from the same features as other data model windows.
 
@@ -103,7 +101,7 @@ Watch the following episodes of the [Defrag Tools](</shows/defrag-tools/>) show 
 
 ## Install and configure WinDbg
 
-Review the following article for information about installing and configuring WinDbg:
+Review the following articles for information about installing and configuring WinDbg:
 
 - [WinDbg – Command line startup options](windbg-command-line-preview.md)
 - [WinDbg – Settings and workspaces](windbg-setup-preview.md)
