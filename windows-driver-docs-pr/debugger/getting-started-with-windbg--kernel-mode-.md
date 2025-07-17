@@ -29,8 +29,6 @@ An option for older versions of Windows is to use a direct cable, such as a seri
 
 :::image type="content" source="images/configfortest02.png" border="false" alt-text="Diagram showing host and target computers connected by using a debug cable for debugging.":::
 
-### Start the setup
-
 Start the process by following the setup procedure for your desired configuration:
 
 - To set up the host and target computers, see [Set up kernel-mode debugging manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md).
@@ -43,19 +41,25 @@ After you set up your host and target computer and connect them with a debug cab
 
 Continue with the instructions in the article you used for the setup process. For example, if you set up your host and target computers for debugging over an Ethernet cable for kernel-mode debugging, follow the instructions in [Set up KDNET network kernel debugging automatically](setting-up-a-network-debugging-connection-automatically.md).
 
-## Get started with using WinDbg
+## Start debugging with WinDbg
 
 To get started with using WinDbg for the debugging session, follow these steps:
 
 1. On the host computer, open WinDbg and establish a kernel-mode debugging session with the target computer.
 
-1. To open the debugger documentation CHM (*.chm*) file, select **Help** > **Contents**. The debugger documentation is also available online in the Debugging Tools for Windows. For more information, see [Install the Windows debugger](index.md).
+1. Open the debugger documentation CHM (*.chm*) file by selecting **Help** > **Contents**.
+
+   The debugger documentation is also available online in the Debugging Tools for Windows. For more information, see [Install the Windows debugger](index.md).
 
 1. When you establish a kernel-mode debugging session, WinDbg might break into the target computer automatically. If WinDbg doesn't break in, select **Debug** > **Break**.
 
 1. In the command line at the bottom of the WinDbg window, run the following commands:
 
-   1. Set the symbol path with the [.sympath srv*](../debuggercmds/-sympath--set-symbol-path-.md) command.
+   1. Set the symbol path with the [.sympath (Symbol Path)](../debuggercmds/-sympath--set-symbol-path-.md) command.
+
+      ```dbgcmd
+      .sympath srv*
+      ```
 
       The output is similar to this example:
 
@@ -67,8 +71,16 @@ To get started with using WinDbg for the debugging session, follow these steps:
       The symbol search path tells WinDbg where to look for symbol program database (PDB) files (*.pdb*). The debugger needs symbol files to obtain information about code modules, such as function names and variable names.
 
    1. Run the [.reload](../debuggercmds/-reload--reload-module-.md) command so WinDbg starts finding and loading symbols files.
+
+      ```dbgcmd
+      .reload
+      ```
  
 1. View a list of loaded modules with the [lm](../debuggercmds/lm--list-loaded-modules-.md) command.
+
+   ```dbgcmd
+   lm
+   ```
 
    The output is similar to this example:
 
@@ -87,7 +99,11 @@ To get started with using WinDbg for the debugging session, follow these steps:
 
 1. Start the target computer running again with the [g (Go)](../debuggercmds/g--go-.md) command.
 
-1. To break in to the target computer again, select **Debug** > **Break**.
+   ```dbgcmd
+   g
+   ```
+
+1. Break in to the target computer again by selecting **Debug** > **Break**.
 
 1. Run the [dt (Display Type)](../debuggercmds/dt--display-type-.md) command and examine the `_FILE_OBJECT` data type in the `nt` module:
 
@@ -127,13 +143,12 @@ To get started with using WinDbg for the debugging session, follow these steps:
 
 1. Run the [bu (Set Breakpoint)](../debuggercmds/bp--bu--bm--set-breakpoint-.md) and [bl (Breakpoint List)](../debuggercmds/bl--breakpoint-list-.md) commands to set and check breakpoints:
 
-   1. Use the `bu` command and set a breakpoint at the Windows call into the `MmCreateProcessAddressSpace` routine:
+   Use the `bu` command and set a breakpoint at the Windows call into the `MmCreateProcessAddressSpace` routine. Then run the `bl` command and verify the breakpoint is set.
 
-      ```dbgcmd
-      bu nt!MmCreateProcessAddressSpace
-      ```
-
-   1. Run the `bl` command and verify the breakpoint is set.
+   ```dbgcmd
+   bu nt!MmCreateProcessAddressSpace
+   bl
+   ```
 
    The output is similar to this example:
 
@@ -145,11 +160,15 @@ To get started with using WinDbg for the debugging session, follow these steps:
 
 1. Enter `g` (Go) to let the target computer run.
 
+   ```dbgcmd
+   g
+   ```
+
    The target computer breaks into the debugger when Windows calls the `MmCreateProcessAddressSpace` routine.
 
    If the target computer doesn't break into the debugger immediately, perform a few actions on the target computer. For example, open Notepad and save a file.
 
-1. To see the stack trace, run the `.reload` and [k (Display Stack Backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands:
+1. View the stack trace with the `.reload` and [k (Display Stack Backtrace)](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands:
 
    ```dbgcmd
    .reload
@@ -173,9 +192,19 @@ To get started with using WinDbg for the debugging session, follow these steps:
    
    Enter step commands a few more times as you watch the output in the **Disassembly** window.
 
-1. Clear your breakpoint with the [bc *](../debuggercmds/bc--breakpoint-clear-.md) (Breakpoint Clear) command.
+1. Clear your breakpoint with the [bc (Breakpoint Clear)](../debuggercmds/bc--breakpoint-clear-.md) command.
 
-1. Enter `g` (Go) to let the target computer run. To break in again, select **Debug** > **Break**, or select **CTRL-Break**.
+   ```dbgcmd
+   bc *
+   ```
+
+1. Enter `g` (Go) to let the target computer run.
+
+   ```dbgcmd
+   g
+   ```
+
+   To break in again, select **Debug** > **Break**, or select **CTRL-Break**.
 
 1. View a list of all processes with the [!process](../debuggercmds/-process.md) command:
 
@@ -387,6 +416,10 @@ To get started with using WinDbg for the debugging session, follow these steps:
 
 1. Enter `g` (Go) to let the target computer run.
 
+   ```dbgcmd
+   g
+   ```
+
    The target computer breaks into the debugger when Windows calls the `ClassGlobalDispatch` routine. 
 
    If the target computer doesn't break into the debugger immediately, perform a few actions on the target computer.or example, open Notepad and save a file.
@@ -414,6 +447,10 @@ To get started with using WinDbg for the debugging session, follow these steps:
    ```
 
 1. Use the [qd (Quit and Detach)](../debuggercmds/qd--quit-and-detach-.md) command to end your debugging session.
+
+   ```dbgcmd
+   qd
+   ```
 
 ## Summary of commands
 
