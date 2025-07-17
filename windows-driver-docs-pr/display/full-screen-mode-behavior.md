@@ -4,6 +4,7 @@ description: Full-Screen-Mode Behavior
 keywords:
 - full-screen rotation WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Full-Screen-Mode Behavior

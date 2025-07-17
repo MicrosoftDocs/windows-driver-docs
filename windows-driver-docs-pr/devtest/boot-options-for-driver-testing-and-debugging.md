@@ -12,6 +12,7 @@ keywords:
 - operating system boot options WDK
 - load configurations WDK boot options
 ms.date: 04/19/2019
+ms.topic: concept-article
 ---
 
 # Tools for Changing Boot Options for Driver Testing and Debugging

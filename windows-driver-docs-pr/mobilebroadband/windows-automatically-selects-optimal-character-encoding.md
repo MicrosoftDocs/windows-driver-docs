@@ -2,6 +2,7 @@
 title: Windows Automatically Selects Optimal Character Encoding
 description: Windows automatically selects optimal character encoding
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Windows automatically selects optimal character encoding

@@ -2,6 +2,7 @@
 title: Indicator Testing
 description: This topic describes common indicator step procedures and examples.
 ms.date: 03/26/2025
+ms.topic: example-scenario
 ---
 
 # Indicator testing

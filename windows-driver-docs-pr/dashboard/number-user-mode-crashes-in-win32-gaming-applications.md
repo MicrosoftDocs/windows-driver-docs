@@ -2,6 +2,7 @@
 title: Number of user mode crashes or TDRs in Win32 gaming applications
 description: Counts the number of crashes in display drivers that happen in the context of Win32 gaming applications
 ms.date: 07/20/2021
+ms.topic: concept-article
 ---
 
 # Number of user mode crashes or TDRs in Win32 gaming applications

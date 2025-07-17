@@ -5,6 +5,7 @@ keywords:
 - Direct3D version 10.1 WDK Windows 7 display , extended format
 - extended format WDK Windows 7 display
 ms.date: 09/10/2019
+ms.topic: concept-article
 ---
 
 # Details of the Extended Format

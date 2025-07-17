@@ -8,6 +8,7 @@ keywords:
 - font descriptions WDK Unidrv
 - printer font descriptions WDK Unidrv , about printer font descriptions
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Printer Font Descriptions

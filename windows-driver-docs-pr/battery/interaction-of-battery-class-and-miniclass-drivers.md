@@ -5,6 +5,7 @@ keywords:
 - battery miniclass drivers WDK, battery class driver interaction
 - battery class drivers WDK, battery miniclass driver interaction
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Interaction of battery class and miniclass drivers

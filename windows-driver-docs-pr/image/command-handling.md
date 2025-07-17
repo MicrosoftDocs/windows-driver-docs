@@ -2,6 +2,7 @@
 title: Command Handling
 description: Command handling
 ms.date: 03/29/2023
+ms.topic: concept-article
 ---
 
 # Command handling

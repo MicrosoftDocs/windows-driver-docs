@@ -2,6 +2,7 @@
 description: Supported Command Retrieval
 title: Supported Command Retrieval
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Supported Command Retrieval

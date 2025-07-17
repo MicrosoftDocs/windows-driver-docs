@@ -5,6 +5,7 @@ keywords:
 - Enhanced storage class driver, WDK
 - ehstorclass.sys, WDK
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # Enhanced Storage class driver

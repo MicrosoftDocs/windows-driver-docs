@@ -4,6 +4,7 @@ description: Describes DDIs that drivers can use to divide their device hardware
 keywords: [AcceptDeviceNotification]
 ms.date: 12/17/2018
 ms.custom: 19H1
+ms.topic: reference
 ---
 
 # Device power management reference

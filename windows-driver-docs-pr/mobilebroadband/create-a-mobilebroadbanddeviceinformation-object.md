@@ -2,6 +2,7 @@
 title: Create a MobileBroadbandDeviceInformation Object
 description: Create a MobileBroadbandDeviceInformation object
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Create a MobileBroadbandDeviceInformation object

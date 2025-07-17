@@ -9,6 +9,7 @@ keywords:
 - port class drivers WDK audio
 - PortCls WDK audio , power management
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Power Management for Audio Devices

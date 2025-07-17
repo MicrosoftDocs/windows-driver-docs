@@ -2,6 +2,7 @@
 title: Container IDs Generated from the Removable Device Capability
 description: Container IDs Generated from the Removable Device Capability
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Container IDs Generated from the Removable Device Capability

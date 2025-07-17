@@ -9,6 +9,7 @@ keywords:
 - low-level hardware error handler WDK WHEA
 - LLHEH WDK WHEA
 ms.date: 03/26/2025
+ms.topic: concept-article
 ---
 
 # PFA Performed by WHEA

@@ -5,6 +5,7 @@ ms.date: 07/14/2025
 content_well_notification: 
   - AI-contribution
 ai-usage: ai-assisted
+ms.topic: overview
 ---
 
 # Bluetooth version and profile support in Windows 11

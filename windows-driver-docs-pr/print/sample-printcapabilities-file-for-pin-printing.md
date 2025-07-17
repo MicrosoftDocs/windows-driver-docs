@@ -2,6 +2,7 @@
 title: Sample PrintCapabilities File for PIN Printing
 description: Here is a sample PrintCapabilities file to show how to specify personal ID number (PIN) protected printing.
 ms.date: 01/25/2023
+ms.topic: reference
 ---
 
 # Sample PrintCapabilities File for PIN Printing

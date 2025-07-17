@@ -3,6 +3,7 @@ title: ACX Multi Stack Cross Driver Communications
 description: This topic provides a high level summary of the multi stack cross driver communications.
 ms.date: 09/29/2023
 ms.localizationpriority: medium
+ms.topic: concept-article
 ---
 
 # ACX multi stack cross driver communications

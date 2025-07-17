@@ -4,6 +4,7 @@ description: Windows Display Driver Model (WDDM) 1.3 and later drivers can suppo
 keywords:
 - multiplane overlay support , WDDM , DirectX, Direct3D , DXGI, D3D
 ms.date: 04/24/2025
+ms.topic: concept-article
 ---
 
 # Multiplane overlay support

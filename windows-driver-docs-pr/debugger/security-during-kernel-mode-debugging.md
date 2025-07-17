@@ -3,6 +3,7 @@ title: Security During Kernel-Mode Debugging
 description: Security During Kernel-Mode Debugging
 keywords: ["security considerations, kernel-mode debugging", "local kernel debugging, security considerations"]
 ms.date: 11/25/2024
+ms.topic: concept-article
 ---
 
 # Security During Kernel-Mode Debugging

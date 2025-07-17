@@ -16,6 +16,7 @@ keywords:
 - default synthesizers
 - synthesizers WDK audio , user-mode custom rendering
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Custom Rendering in User Mode

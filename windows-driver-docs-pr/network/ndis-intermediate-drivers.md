@@ -5,6 +5,7 @@ keywords:
 - intermediate drivers WDK networking , architecture
 - NDIS intermediate drivers WDK , architecture
 ms.date: 11/26/2018
+ms.topic: concept-article
 ---
 
 # Intermediate drivers

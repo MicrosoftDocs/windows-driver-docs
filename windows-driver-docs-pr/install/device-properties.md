@@ -5,6 +5,7 @@ keywords:
 - device installations WDK , device properties
 - device properties WDK device installations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Device Properties

@@ -4,6 +4,7 @@ description: USB Short Packets
 keywords:
 - USB short packets WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # USB Short Packets

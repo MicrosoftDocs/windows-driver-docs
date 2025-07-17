@@ -6,6 +6,7 @@ keywords:
 - variables WDK GPD files
 - standard variables WDK GPD files
 ms.date: 12/19/2024
+ms.topic: reference
 ---
 
 # Standard variables

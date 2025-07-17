@@ -2,6 +2,7 @@
 title: PoolMon Commands
 description: PoolMon Commands
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # PoolMon Commands

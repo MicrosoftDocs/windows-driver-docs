@@ -16,6 +16,7 @@ keywords:
 - filter graphs WDK audio , AEC system filters
 - audio filter graphs WDK
 ms.date: 11/05/2018
+ms.topic: concept-article
 ---
 
 # AEC System Filter

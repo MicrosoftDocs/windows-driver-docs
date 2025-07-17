@@ -14,6 +14,7 @@ keywords:
 - connection messages WDK AV/C
 - AV/C WDK , debugging
 ms.date: 04/20/2017
+ms.topic: troubleshooting
 ---
 
 # AV/C Subunit Driver Debugging

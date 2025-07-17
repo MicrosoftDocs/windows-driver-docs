@@ -8,6 +8,7 @@ keywords:
 - test scenarios WDK WSDBIT
 - Attachments scenario WDK WSDBIT
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Attachments Scenarios

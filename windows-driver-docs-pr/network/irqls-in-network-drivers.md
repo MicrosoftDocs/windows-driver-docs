@@ -5,6 +5,7 @@ keywords:
 - network drivers WDK , IRQLs
 - IRQLs WDK networking
 ms.date: 11/26/2018
+ms.topic: concept-article
 ---
 
 # IRQLs in Network Drivers

@@ -6,6 +6,7 @@ keywords:
 - Pscript WDK print , HostFontXxx registry entries
 - HostFontXxx registry entries WDK Pscript
 ms.date: 01/27/2023
+ms.topic: reference
 ---
 
 # Hostfont registry entries

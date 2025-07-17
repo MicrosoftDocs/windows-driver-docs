@@ -2,6 +2,7 @@
 title: Virtualized networking enhancements in NDIS 6.30
 description: This section describes virtualized networking enhancements in NDIS 6.30
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Virtualized Networking Enhancements in NDIS 6.30

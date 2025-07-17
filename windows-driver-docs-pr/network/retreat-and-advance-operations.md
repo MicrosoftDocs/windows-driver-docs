@@ -9,6 +9,7 @@ keywords:
 - packets WDK networking , advance operations
 - packets WDK networking , retreat operations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Retreat and Advance Operations

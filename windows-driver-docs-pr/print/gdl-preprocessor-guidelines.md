@@ -6,6 +6,7 @@ keywords:
 - directives WDK GDL , source file preprocessor directives
 - source files WDK GDL , preprocessor directives
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # GDL Preprocessor Guidelines

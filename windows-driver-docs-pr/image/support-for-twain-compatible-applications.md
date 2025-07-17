@@ -2,6 +2,7 @@
 title: Support for TWAIN-Compatible Applications
 description: Support for TWAIN-Compatible Applications
 ms.date: 05/08/2025
+ms.topic: concept-article
 ---
 
 # Support for TWAIN-compatible applications

@@ -2,6 +2,7 @@
 title: ScsiReportLuns
 description: ScsiReportLuns
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # ScsiReportLuns

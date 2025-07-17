@@ -7,6 +7,7 @@ keywords:
 - mixers WDK kernel streaming
 - kernel streaming WDK , filters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # KS Filters

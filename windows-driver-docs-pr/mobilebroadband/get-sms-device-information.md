@@ -2,6 +2,7 @@
 title: Get SMS Device Information
 description: Get SMS device information
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Get SMS device information

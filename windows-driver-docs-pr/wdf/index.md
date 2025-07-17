@@ -10,6 +10,7 @@ keywords:
 - objects WDK KMDF
 - framework objects WDK KMDF
 ms.date: 04/22/2025
+ms.topic: overview
 ---
 
 # Windows Driver Frameworks

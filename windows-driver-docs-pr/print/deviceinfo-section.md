@@ -2,6 +2,7 @@
 title: DeviceInfo Section
 description: DeviceInfo Section
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # DeviceInfo Section

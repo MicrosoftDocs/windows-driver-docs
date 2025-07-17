@@ -7,6 +7,7 @@ keywords:
 - arbitrary value contexts WDK GDL
 - values WDK GDL , contexts
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Arbitrary Value Contexts

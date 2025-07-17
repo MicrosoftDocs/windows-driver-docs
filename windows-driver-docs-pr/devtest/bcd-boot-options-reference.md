@@ -2,6 +2,7 @@
 title: BCDEdit Options Reference
 description: BCDEdit Options Reference
 ms.date: 08/26/2024
+ms.topic: reference
 ---
 
 # BCDEdit Options Reference

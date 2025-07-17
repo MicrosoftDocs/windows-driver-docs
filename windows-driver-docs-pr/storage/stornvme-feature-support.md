@@ -2,6 +2,7 @@
 title: NVMe Feature and Extended Capability Support
 description: Describes NVMe features supported by StorNVMe
 ms.date: 09/18/2024
+ms.topic: reference
 ---
 
 # NVMe feature and extended capability support

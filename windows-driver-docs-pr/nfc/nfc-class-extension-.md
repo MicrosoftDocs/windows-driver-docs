@@ -9,6 +9,7 @@ keywords:
 - NFP
 - CX
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # NFC class extension (CX) design guide

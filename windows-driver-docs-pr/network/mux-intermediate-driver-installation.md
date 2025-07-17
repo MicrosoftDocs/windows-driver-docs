@@ -5,6 +5,7 @@ keywords:
 - MUX intermediate drivers WDK
 - NDIS MUX intermediate drivers WDK
 ms.date: 04/20/2017
+ms.topic: install-set-up-deploy
 ---
 
 # MUX Intermediate Driver Installation

@@ -2,6 +2,7 @@
 title: Advanced Duplex-Capable Document Feeder
 description: Advanced Duplex-Capable Document Feeder
 ms.date: 03/27/2023
+ms.topic: concept-article
 ---
 
 # Advanced Duplex-Capable Document Feeder

@@ -2,6 +2,7 @@
 title: GPUView Menu Options
 description: "This section describes GPUView's menu options."
 ms.date: 05/10/2022
+ms.topic: reference
 ---
 
 # GPUView Menu Options  

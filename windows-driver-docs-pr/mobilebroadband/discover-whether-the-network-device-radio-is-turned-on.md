@@ -2,6 +2,7 @@
 title: Discover Whether the Network Device Radio is Turned on
 description: Discover whether the network device radio is turned on
 ms.date: 04/20/2017
+ms.topic: end-user-help
 ---
 
 # Discover whether the network device radio is turned on

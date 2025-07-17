@@ -3,6 +3,7 @@ title: Failure to Validate Variable-Length Buffers
 description: Failure to Validate Variable-Length Buffers
 keywords: ["input buffers WDK kernel", "variable-length input buffers WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: best-practice
 ---
 
 # Failure to Validate Variable-Length Buffers

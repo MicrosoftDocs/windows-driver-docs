@@ -5,6 +5,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , guidelines
 - PSHED plug-ins WDK WHEA , guidelines
 ms.date: 03/03/2023
+ms.topic: best-practice
 ---
 
 # PSHED Plug-In Guidelines

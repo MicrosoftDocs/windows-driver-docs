@@ -2,6 +2,7 @@
 title: Hyper-V Extensible Switch hybrid forwarding
 description: This section describes hybrid forwarding with a Hyper-V Extensible Switch
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Hybrid Forwarding

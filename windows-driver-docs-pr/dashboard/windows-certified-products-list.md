@@ -2,6 +2,7 @@
 title: Windows Compatible Products List
 description: The Windows compatible products list is a comprehensive list of certified devices and systems.
 ms.date: 08/19/2024
+ms.topic: feature-availability
 ---
 
 # Windows compatible products list

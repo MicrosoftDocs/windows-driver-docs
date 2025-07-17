@@ -2,6 +2,7 @@
 title: Printer Installation Basics
 description: Provides information on printer installation basics.
 ms.date: 02/21/2025
+ms.topic: install-set-up-deploy
 ---
 
 # Printer installation basics

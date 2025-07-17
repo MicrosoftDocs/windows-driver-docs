@@ -3,6 +3,7 @@ title: ERESOURCE Structures
 description: ERESOURCE Structures
 keywords: ["synchronization WDK kernel , ERESOURCE structures", "locking WDK kernel", "read/write locking WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # ERESOURCE Structures

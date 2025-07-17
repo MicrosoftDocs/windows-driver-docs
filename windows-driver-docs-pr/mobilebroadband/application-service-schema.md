@@ -2,6 +2,7 @@
 title: Application
 description: Application
 ms.date: 10/13/2023
+ms.topic: reference
 ---
 
 # Application

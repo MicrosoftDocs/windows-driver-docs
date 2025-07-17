@@ -2,6 +2,7 @@
 title: Advanced Software Tracing
 description: Advanced Software Tracing
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Advanced Software Tracing

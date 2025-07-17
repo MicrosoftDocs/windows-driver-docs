@@ -12,6 +12,7 @@ keywords:
 - audio/video streaming WDK AVStream
 - audio WDK AVStream
 ms.date: 04/20/2017
+ms.topic: design-pattern
 ---
 
 # AVStream Minidrivers Design Guide

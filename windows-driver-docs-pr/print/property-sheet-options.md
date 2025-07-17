@@ -8,6 +8,7 @@ keywords:
 - property sheets WDK print
 - selectable property sheet page items WDK print
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Property Sheet Options

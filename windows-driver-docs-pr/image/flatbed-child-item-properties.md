@@ -2,6 +2,7 @@
 title: Flatbed Child Item Properties
 description: Flatbed Child Item Properties
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Flatbed Child Item Properties

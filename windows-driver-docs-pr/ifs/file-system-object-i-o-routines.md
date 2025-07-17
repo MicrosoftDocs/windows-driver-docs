@@ -9,6 +9,7 @@ keywords:
 - file objects WDK mini-redirectors
 - objects WDK mini-redirectors
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # File System Object I/O Routines

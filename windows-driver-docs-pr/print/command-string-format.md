@@ -6,6 +6,7 @@ keywords:
 - command strings WDK Unidrv
 - strings WDK Unidrv
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # Command String Format

@@ -3,6 +3,7 @@ title: Find a Memory Leak
 description: Provides information about how to find memory leak.
 keywords: ["memory leak", "memory leak, debugging"]
 ms.date: 12/06/2024
+ms.topic: troubleshooting
 ---
 
 # Find a memory leak

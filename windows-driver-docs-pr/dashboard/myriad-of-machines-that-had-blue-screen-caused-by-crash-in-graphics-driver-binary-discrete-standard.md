@@ -2,6 +2,7 @@
 title: Myriad of machines that had a stop error caused by a discrete graphics driver crash
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines with discrete GPU that experienced a stop error caused by a crash in the graphics driver binary
 ms.date: 09/03/2021
+ms.topic: troubleshooting-known-issue
 ---
 
 # Myriad of machines that had a stop error caused by a discrete graphics driver crash

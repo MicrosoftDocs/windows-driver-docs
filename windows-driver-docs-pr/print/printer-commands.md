@@ -9,6 +9,7 @@ keywords:
 - printer commands WDK Unidrv , about printer commands
 - Unidrv WDK print
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Printer Commands

@@ -6,6 +6,7 @@ keywords:
 - single-interface devices WDK USB
 - multiple-interface devices WDK USB
 ms.date: 11/05/2024
+ms.topic: concept-article
 ---
 
 # Standard USB identifiers

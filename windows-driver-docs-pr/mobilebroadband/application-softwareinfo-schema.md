@@ -2,6 +2,7 @@
 title: Application (SoftwareInfo)
 description: Application (SoftwareInfo)
 ms.date: 10/10/2023
+ms.topic: reference
 ---
 
 # Application (SoftwareInfo)

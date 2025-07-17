@@ -5,6 +5,7 @@ keywords:
 - data index WDK HID
 - index WDK HID data
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Data Indices

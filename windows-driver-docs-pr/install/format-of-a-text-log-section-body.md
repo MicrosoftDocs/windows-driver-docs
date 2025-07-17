@@ -6,6 +6,7 @@ keywords:
 - formats WDK SetupAPI logging
 - text logs WDK SetupAPI, section body
 ms.date: 12/05/2022
+ms.topic: reference
 ---
 
 # Format of a Text Log Section Body

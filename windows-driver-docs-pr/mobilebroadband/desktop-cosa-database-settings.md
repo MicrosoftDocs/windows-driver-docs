@@ -4,6 +4,7 @@ description: Desktop COSA database settings
 ms.date: 01/02/2024
 author: mhopkins-msft
 ms.author: mhopkins
+ms.topic: checklist
 ---
 
 # Desktop COSA database settings

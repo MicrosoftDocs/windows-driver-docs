@@ -10,6 +10,7 @@ keywords:
 - protocols WDK Bluetooth
 - custom drivers WDK Bluetooth
 ms.date: 01/10/2024
+ms.topic: overview
 ---
 
 # Bluetooth Profile Drivers

@@ -2,6 +2,7 @@
 title: V4 Printer Driver Localization
 description: Windows provides standard localized display strings to support development of printer extensions and UWP device apps.
 ms.date: 01/25/2023
+ms.topic: concept-article
 ---
 
 # V4 Printer Driver Localization

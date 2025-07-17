@@ -2,6 +2,7 @@
 title: Network Virtualization using Generic Routing Encapsulation
 description: Learn how to use network virtualization using generic routing encapsulation (NVGRE) to virtualize IP addresses.
 ms.date: 12/19/2024
+ms.topic: concept-article
 ---
 
 # Network virtualization using generic routing encapsulation

@@ -2,6 +2,7 @@
 title: SMS Device Storage Limits
 description: SMS device storage limits
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # SMS device storage limits

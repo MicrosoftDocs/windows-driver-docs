@@ -7,6 +7,7 @@ keywords:
 - canceling IRPs WDK AVStream
 - locked stream pointers WDK AVStream
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Stream Pointers and IRP Cancellation

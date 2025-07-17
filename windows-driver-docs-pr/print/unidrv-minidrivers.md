@@ -9,6 +9,7 @@ keywords:
 - GPD files WDK Unidrv , Unidrv capabilities
 - Unidrv WDK print
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Unidrv Minidrivers

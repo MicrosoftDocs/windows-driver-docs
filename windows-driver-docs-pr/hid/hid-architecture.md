@@ -6,6 +6,7 @@ keywords:
 - HID class driver
 - hidclass.sys
 - HID class driver for Windoows
+ms.topic: concept-article
 ---
 
 # HID architecture

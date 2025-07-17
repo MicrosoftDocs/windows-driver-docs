@@ -6,6 +6,7 @@ keywords:
 - display driver model WDK Windows Vista , 64-bit
 - Windows Vista display driver model WDK , 64-bit
 ms.date: 04/20/2017
+ms.topic: troubleshooting-general
 ---
 
 # Windows Display Driver Model (WDDM) 64-Bit Issues

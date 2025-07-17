@@ -5,6 +5,7 @@ keywords:
 - Driver Verifier Manager
 - Verifier utility
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Driver Verifier Manager

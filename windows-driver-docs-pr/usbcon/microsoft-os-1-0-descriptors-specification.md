@@ -2,6 +2,7 @@
 title: Microsoft OS 1.0 Descriptors Specification
 description: Microsoft OS 1.0 Descriptors Specification
 ms.date: 09/18/2024
+ms.topic: concept-article
 ---
 
 # Microsoft OS 1.0 Descriptors Specification

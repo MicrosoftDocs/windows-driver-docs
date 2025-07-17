@@ -2,6 +2,7 @@
 title: WIA Microdriver Commands
 description: WIA Microdriver Commands
 ms.date: 10/05/2021
+ms.topic: reference
 ---
 
 # WIA Microdriver Commands

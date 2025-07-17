@@ -2,6 +2,7 @@
 title: PwrTest Disk Scenario
 description: The PwrTest Disk Scenario monitors disk idle statistics and spin-down events.
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # PwrTest Disk Scenario

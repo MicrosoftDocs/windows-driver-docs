@@ -6,6 +6,7 @@ keywords:
 - resource usage WDK
 - I/O resources WDK
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # I/O Resource Usage Reduction

@@ -5,6 +5,7 @@ keywords:
 - header-data split WDK , configuration
 - WMI WDK networking , header-data split
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WMI Support for Header-Data Split

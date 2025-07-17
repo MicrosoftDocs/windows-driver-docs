@@ -4,6 +4,7 @@ description: Sample UPS Minidriver
 keywords:
 - UPS minidrivers WDK , samples
 ms.date: 04/01/2019
+ms.topic: reference
 ---
 
 # Sample UPS Minidriver

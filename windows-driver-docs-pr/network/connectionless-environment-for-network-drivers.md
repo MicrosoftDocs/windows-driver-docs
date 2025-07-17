@@ -5,6 +5,7 @@ keywords:
 - connectionless environments WDK networking
 - connectionless drivers WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Connectionless Environment for Network Drivers

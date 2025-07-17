@@ -2,6 +2,7 @@
 title: WLAN feature information
 description: This section contains specific WLAN feature information.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WLAN feature information

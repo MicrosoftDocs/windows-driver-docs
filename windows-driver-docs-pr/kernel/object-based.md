@@ -3,6 +3,7 @@ title: Object-Based
 description: Object-Based
 keywords: ["object-based drivers WDK kernel", "object opacity WDK kernel", "opacity WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Object-Based

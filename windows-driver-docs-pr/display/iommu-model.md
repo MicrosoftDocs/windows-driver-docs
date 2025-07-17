@@ -5,6 +5,7 @@ keywords:
 - IoMmu model, WDDM 2.0
 - IOMMU, WDDM 2.0
 ms.date: 09/20/2024
+ms.topic: concept-article
 ---
 
 # IoMmu model

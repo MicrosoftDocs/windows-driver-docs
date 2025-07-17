@@ -5,6 +5,7 @@ keywords:
 - IPrintTicketProvider
 - IPrintOemPrintTicketProvider
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print ticket interfaces and print driver plug-ins

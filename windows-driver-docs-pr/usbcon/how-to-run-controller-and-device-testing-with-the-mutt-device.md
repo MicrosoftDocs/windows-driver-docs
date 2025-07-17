@@ -2,6 +2,7 @@
 title: USB Host Controller Testing With MUTT Devices
 description: The goal of controller testing is to generate a complete set of possible traffic patterns from hubs and devices.
 ms.date: 01/16/2024
+ms.topic: checklist
 ---
 
 # USB host controller testing with MUTT devices

@@ -2,6 +2,7 @@
 title: Stream Latency During Recording
 description: Stream Latency During Recording
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Stream Latency During Recording

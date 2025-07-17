@@ -2,6 +2,7 @@
 title: Broadcast Network Type GUIDs
 description: An AVStream minidriver uses network-type GUIDs to specify the broadcast network types that it supports for scanning operations.
 ms.date: 10/08/2021
+ms.topic: reference
 ---
 
 # Broadcast Network Type GUIDs

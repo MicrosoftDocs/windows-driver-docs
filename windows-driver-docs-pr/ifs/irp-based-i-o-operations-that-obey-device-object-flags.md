@@ -2,6 +2,7 @@
 title: IRP-Based I/O Operations That Obey Device Object Flags
 description: IRP-Based I/O Operations That Obey Device Object Flags
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # IRP-Based I/O Operations That Obey Device Object Flags

@@ -5,6 +5,7 @@ keywords:
 - Driver Verifier WDK , options listed
 - errors WDK Driver Verifier
 ms.date: 06/29/2021
+ms.topic: concept-article
 ---
 
 # Driver Verifier options and rule classes

@@ -2,6 +2,7 @@
 title: Revise Canceled Request Logic
 description: Revise Canceled Request Logic
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Revise Canceled Request Logic

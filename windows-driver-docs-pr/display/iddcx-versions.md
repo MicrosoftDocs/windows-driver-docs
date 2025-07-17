@@ -5,6 +5,7 @@ ms.date: 10/02/2024
 keywords:
 - IddCx versions, WDK
 - IddCx versions, Windows versions
+ms.topic: reference
 ---
 
 # IddCx versions

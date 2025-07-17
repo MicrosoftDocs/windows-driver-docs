@@ -6,6 +6,7 @@ keywords:
 - MRxCleanupFobx
 - PMRX_CALLDOWN
 ms.date: 11/02/2022
+ms.topic: reference
 ---
 
 # MRxCleanupFobx routine

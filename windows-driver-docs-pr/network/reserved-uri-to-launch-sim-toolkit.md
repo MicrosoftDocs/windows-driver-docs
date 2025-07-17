@@ -2,6 +2,7 @@
 title: Reserved URI to launch SIM toolkit
 description: Reserved URI to launch SIM toolkit
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Reserved URI to launch SIM toolkit

@@ -2,6 +2,7 @@
 title: NDIS Filter Driver Installation
 description: Learn how to install an NDIS filter driver using a setup information (INF) file.
 ms.date: 01/31/2025
+ms.topic: install-set-up-deploy
 ---
 
 # NDIS filter driver installation

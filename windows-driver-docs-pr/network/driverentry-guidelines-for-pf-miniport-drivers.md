@@ -2,6 +2,7 @@
 title: DriverEntry Guidelines for PF Miniport Drivers
 description: DriverEntry Guidelines for PF Miniport Drivers
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # DriverEntry Guidelines for PF Miniport Drivers

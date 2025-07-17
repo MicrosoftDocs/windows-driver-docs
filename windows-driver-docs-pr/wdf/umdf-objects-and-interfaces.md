@@ -9,6 +9,7 @@ keywords:
 - interfaces WDK UMDF
 - framework objects WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # UMDF Objects and Interfaces

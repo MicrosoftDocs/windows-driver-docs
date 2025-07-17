@@ -3,6 +3,7 @@ title: Varieties of Kernel-Mode Dump Files
 description: This article describes the five varieties of Kernel-Mode Dump Files
 keywords: ["dump file, kernel-mode file types"]
 ms.date: 01/24/2025
+ms.topic: concept-article
 ---
 
 # Varieties of Kernel-Mode Dump Files

@@ -2,6 +2,7 @@
 title: WSD Scan Service Job and Document Elements
 description: WSD Scan Service Job and Document Elements
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # WSD Scan Service Job and Document Elements

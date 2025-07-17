@@ -6,6 +6,7 @@ keywords:
 - security checks WDK file systems
 - security checks WDK file systems , about security checks
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Security checks in file systems

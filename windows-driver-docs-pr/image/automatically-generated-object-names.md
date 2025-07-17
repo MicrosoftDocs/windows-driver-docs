@@ -2,6 +2,7 @@
 title: Automatically Generated Object Names
 description: Automatically Generated Object Names
 ms.date: 03/27/2023
+ms.topic: concept-article
 ---
 
 # Automatically Generated Object Names

@@ -7,6 +7,7 @@ keywords:
 - installing callout drivers WDK Windows Filtering Platform
 - INF files WDK Windows Filtering Platform
 ms.date: 04/20/2017
+ms.topic: install-set-up-deploy
 ---
 
 # INF Files for Callout Drivers

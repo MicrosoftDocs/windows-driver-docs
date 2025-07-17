@@ -6,6 +6,7 @@ keywords:
 - XPS printing features WDK XPSDrv
 - color management WDK print , XPS printing advantages
 ms.date: 01/31/2023
+ms.topic: overview
 ---
 
 # XPS Printing Features

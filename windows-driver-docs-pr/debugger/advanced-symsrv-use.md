@@ -3,6 +3,7 @@ title: Advanced SymSrv Use
 description: Advanced SymSrv Use
 keywords: ["SymSrv, features", "caching symbols", "symbol servers, caching", "symbols, caching", "symbol servers, downstream store", "downstream store (symbol server)"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Advanced SymSrv Use

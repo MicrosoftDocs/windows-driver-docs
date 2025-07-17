@@ -2,6 +2,7 @@
 description: MultiTransport Device Support
 title: MultiTransport Device Support
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # MultiTransport Device Support

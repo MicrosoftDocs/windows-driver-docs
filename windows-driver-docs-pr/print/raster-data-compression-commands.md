@@ -5,6 +5,7 @@ keywords:
 - data compression raster printing commands WDK Unidrv
 - compression raster printing commands WDK Unidrv
 ms.date: 01/29/2024
+ms.topic: reference
 ---
 
 # Raster data compression commands

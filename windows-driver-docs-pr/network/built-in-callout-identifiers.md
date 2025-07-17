@@ -4,6 +4,7 @@ description: This section describes built-in callout identifiers.
 keywords:
 - Built-in callout identifiers network drivers
 ms.date: 11/08/2017
+ms.topic: reference
 ---
 
 # Built-in callout identifiers

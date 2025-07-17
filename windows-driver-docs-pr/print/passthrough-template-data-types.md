@@ -8,6 +8,7 @@ keywords:
 - schemas WDK GDL , validating PASSTHROUGH data types
 - ArrayLabel directive WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Passthrough Template Data Types

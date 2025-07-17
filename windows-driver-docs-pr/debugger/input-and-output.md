@@ -3,6 +3,7 @@ title: Input and Output
 description: Input and Output
 keywords: ["Debugger Engine, input and output", "input and output", "output"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Input and Output

@@ -2,6 +2,7 @@
 title: Support for Enumeration Commands (WpdBasicHardwareDriverSample)
 description: Support for enumeration commands (WpdBasicHardwareDriverSample)
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Support for enumeration commands (WpdBasicHardwareDriverSample)

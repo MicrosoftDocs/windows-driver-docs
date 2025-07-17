@@ -3,6 +3,7 @@ title: SCSI Miniport Debugging
 description: SCSI Miniport Debugging
 keywords: ["SCSI Miniport debugging"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # SCSI Miniport Debugging

@@ -2,6 +2,7 @@
 title: Language Specification 3
 description: Language Specification 3
 ms.date: 09/28/2021
+ms.topic: concept-article
 ---
 
 # Language Specification 3

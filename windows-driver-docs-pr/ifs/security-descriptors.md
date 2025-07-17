@@ -10,6 +10,7 @@ keywords:
 - storage WDK file systems
 - offline security descriptor storage WDK file systems
 ms.date: 09/05/2024
+ms.topic: concept-article
 ---
 
 # Security descriptors in file systems

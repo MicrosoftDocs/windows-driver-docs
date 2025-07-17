@@ -6,6 +6,7 @@ keywords:
 - pseudovector graphics WDK Unidrv
 - nonvector graphics devices WDK Unidrv
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Pseudo-Vector Graphics Support

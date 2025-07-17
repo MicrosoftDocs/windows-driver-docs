@@ -5,6 +5,7 @@ keywords:
 - DMRC WDK
 - Device Metadata Retrieval Client WDK
 ms.date: 06/19/2025
+ms.topic: concept-article
 ---
 
 # Device Metadata Retrieval Client

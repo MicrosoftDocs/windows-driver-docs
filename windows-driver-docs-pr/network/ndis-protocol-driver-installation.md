@@ -2,6 +2,7 @@
 title: NDIS Protocol Driver Installation
 description: Learn how to install a Network Driver Interface Specification (NDIS) protocol driver.
 ms.date: 01/31/2025
+ms.topic: install-set-up-deploy
 ---
 
 # NDIS protocol driver installation

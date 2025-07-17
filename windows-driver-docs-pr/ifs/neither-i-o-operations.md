@@ -7,6 +7,7 @@ keywords:
 - I/O WDK file systems
 - neither I/O operations WDK file system
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Neither I/O Operations

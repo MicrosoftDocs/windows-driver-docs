@@ -5,6 +5,7 @@ keywords:
 - framework objects WDK KMDF , listed
 - framework objects WDK KMDF , summary
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Summary of Framework Objects

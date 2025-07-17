@@ -6,6 +6,7 @@ keywords:
 - lookasides WDK Driver Verifier
 - freed memory WDK Driver Verifier
 ms.date: 06/04/2020
+ms.topic: concept-article
 ---
 
 # Miscellaneous Checks

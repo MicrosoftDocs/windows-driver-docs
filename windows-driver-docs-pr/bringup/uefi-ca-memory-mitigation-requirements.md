@@ -2,6 +2,7 @@
 title: UEFI CA Memory Mitigation Requirements for Signing
 description: Provides background and guidance on the signing requirements for UEFI memory mitigations.
 ms.date: 05/12/2025
+ms.topic: best-practice
 ---
 
 # UEFI memory mitigations

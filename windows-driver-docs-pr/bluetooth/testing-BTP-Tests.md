@@ -3,6 +3,7 @@ title: Microsoft Bluetooth Test Platform - Currently Supported BTP Tests
 description: List of Bluetooth Test Platform (BTP) test categories
 ms.date: 01/10/2024
 
+ms.topic: checklist
 ---
 
 # Currently Available BTP Tests

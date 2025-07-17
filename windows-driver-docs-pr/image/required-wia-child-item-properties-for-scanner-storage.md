@@ -2,6 +2,7 @@
 title: Required WIA Child Item Properties for Scanner Storage
 description: Required WIA Child Item Properties for Scanner Storage
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Required WIA Child Item Properties for Scanner Storage

@@ -6,6 +6,7 @@ keywords:
 - CoNDIS WDK networking , call managers
 - call managers WDK networking , connection-oriented operations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Connection-Oriented Operations Performed by Call Managers

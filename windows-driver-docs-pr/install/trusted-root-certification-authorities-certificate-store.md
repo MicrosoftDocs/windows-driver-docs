@@ -7,6 +7,7 @@ keywords:
 - Trusted Root Certification Authorities certificate store WDK
 ms.date: 12/05/2024
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 
 # Trusted Root Certification Authorities Certificate Store

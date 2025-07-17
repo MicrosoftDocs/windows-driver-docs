@@ -2,6 +2,7 @@
 title: WIA Data Item
 description: WIA Data Item
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Data Item

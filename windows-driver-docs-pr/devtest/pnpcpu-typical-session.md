@@ -2,6 +2,7 @@
 title: PNPCPU Typical Session
 description: PNPCPU Typical Session
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # PNPCPU Typical Session

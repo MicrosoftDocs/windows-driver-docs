@@ -2,6 +2,7 @@
 title: Low Frequency Protection
 description: Low Frequency Protection
 ms.date: 11/07/2018
+ms.topic: concept-article
 ---
 
 # Low Frequency Protection

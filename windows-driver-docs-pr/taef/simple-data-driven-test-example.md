@@ -2,6 +2,7 @@
 title: Simple Data Driven Test Example
 description: Simple Data Driven Test Example
 ms.date: 04/20/2017
+ms.topic: tutorial
 ---
 
 # Simple Data Driven Test Example

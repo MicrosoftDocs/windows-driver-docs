@@ -3,6 +3,7 @@ title: RPC Debugging
 description: RPC Debugging
 keywords: ["RPC debugging", "RPC state information", "DbgRpc, RPC debugging"]
 ms.date: 05/23/2017
+ms.topic: overview
 ---
 
 # RPC Debugging

@@ -2,6 +2,7 @@
 title: SMS API
 description: SMS API
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # SMS API

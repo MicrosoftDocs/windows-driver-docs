@@ -3,6 +3,7 @@ title: Driver security guidance
 description: This section contains crucial advice on improving the security of drivers in Windows.
 ms.assetid: 50D09948-8CE2-446F-A208-35F7B3795A6B
 ms.date: 01/21/2025
+ms.topic: best-practice
 ---
 
 # Driver security guidance

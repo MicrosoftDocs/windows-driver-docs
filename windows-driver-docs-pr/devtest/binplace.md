@@ -13,6 +13,7 @@ keywords:
 - BinPlace WDK , about BinPlace
 - files WDK BinPlace
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # BinPlace

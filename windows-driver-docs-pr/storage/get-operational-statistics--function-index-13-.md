@@ -2,6 +2,7 @@
 title: Get Operational Statistics (Function Index 13)
 description: This function returns counters that track operations performed by the NVDIMM-N.
 ms.date: 11/18/2022
+ms.topic: reference
 ---
 
 # Get Operational Statistics (Function Index 13)

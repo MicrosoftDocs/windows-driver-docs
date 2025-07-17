@@ -2,6 +2,7 @@
 title: Goto Dialog Box
 description: "The Goto dialog box is a navigational helper."
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Goto Dialog Box  

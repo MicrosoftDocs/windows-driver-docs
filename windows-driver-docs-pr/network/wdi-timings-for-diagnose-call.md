@@ -2,6 +2,7 @@
 title: Timings for diagnose call
 description: The timing requirements of Diagnose to collect debug information are as follows.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Timings for diagnose call

@@ -2,6 +2,7 @@
 title: HFP Device Removal
 description: Learn about the process and consequences of removing a Bluetooth hands-free profile (HFP) device from an audio system.
 ms.date: 07/27/2023
+ms.topic: how-to
 ---
 
 # HFP device removal

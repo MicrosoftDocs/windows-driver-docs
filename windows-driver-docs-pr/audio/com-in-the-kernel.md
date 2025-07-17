@@ -9,6 +9,7 @@ keywords:
 - port class drivers WDK audio
 - PortCls WDK audio , COM
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # COM in the Kernel

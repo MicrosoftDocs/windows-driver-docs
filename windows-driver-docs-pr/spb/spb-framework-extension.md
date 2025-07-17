@@ -2,6 +2,7 @@
 title: SPB Framework Extension (SpbCx)
 description: The SPB framework extension (SpbCx) is a system-supplied extension to the Kernel-Mode Driver Framework (KMDF).
 ms.date: 09/19/2024
+ms.topic: concept-article
 ---
 
 # SPB Framework Extension (SpbCx)

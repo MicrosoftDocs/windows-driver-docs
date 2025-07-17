@@ -2,6 +2,7 @@
 title: Color Management for Still Image Devices
 description: Color Management for Still Image Devices
 ms.date: 03/29/2023
+ms.topic: concept-article
 ---
 
 # Color Management for Still Image Devices

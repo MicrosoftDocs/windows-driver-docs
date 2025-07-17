@@ -5,6 +5,7 @@ keywords:
 - Kernel Streaming Proxy WDK AVStream , property page
 - property page WDK AVStream
 ms.date: 06/18/2020
+ms.topic: how-to
 ---
 
 # Property page plug-in

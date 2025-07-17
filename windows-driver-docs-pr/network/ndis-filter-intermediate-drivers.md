@@ -5,6 +5,7 @@ keywords:
 - NDIS filter intermediate drivers WDK
 - filter intermediate drivers WDK NDIS
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # NDIS Filter Intermediate Drivers

@@ -9,6 +9,7 @@ keywords:
 - dynamic child lists WDK KMDF
 - traversing dynamic child lists WDK KMDF
 ms.date: 02/19/2025
+ms.topic: concept-article
 ---
 
 # Dynamic Enumeration

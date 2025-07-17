@@ -2,6 +2,7 @@
 title: Added Costs for Testing Vulnerable NDIS Drivers
 description: Added Costs for Testing Vulnerable NDIS Drivers
 ms.date: 03/02/2023
+ms.topic: best-practice
 ---
 
 # Added Costs for Testing Vulnerable NDIS Drivers

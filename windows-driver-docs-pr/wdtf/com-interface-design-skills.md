@@ -6,6 +6,7 @@ keywords:
 - WDTF WDK , action interfaces
 - action interfaces WDK WDTF
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # COM Interface Design Skills

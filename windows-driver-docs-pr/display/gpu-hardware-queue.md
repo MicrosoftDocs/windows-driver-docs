@@ -2,6 +2,7 @@
 title: GPUView GPU Hardware Queue
 description: This article provides information about what the user views when looking at the GPU Hardware Queue. 
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # GPUView GPU hardware queue
