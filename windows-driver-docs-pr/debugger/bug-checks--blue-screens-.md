@@ -5,7 +5,7 @@ keywords: bug check, stop code error, kernel error, stop error, stop code
 ms.date: 08/23/2024
 ---
 
-# Bug Checks (stop code errors)
+# Bug checks (stop code errors)
 
 **Note**   If you are an IT professional or support agent, see this article for additional information, [Troubleshoot stop code error problems before you contact Microsoft Support](https://support.microsoft.com/help/3106831/). If you are a customer whose system has displayed a stop code error with a bug check code, see [Troubleshoot stop code errors](https://support.microsoft.com/sbs/windows/troubleshoot-blue-screen-errors-5c62726c-6489-52da-a372-3f73142c14ad).
 
