@@ -52,7 +52,7 @@ Install the SDK Insider Preview by following the instructions at [Get the SDK In
 Complete the installation of the WDK Insider Preview by following the instructions at [Get the WDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
 
 > [!Note]
-> During the installation, Visual Studio installs the WDK Visual Studio Extensions. For more information, see [Download the Windows Driver Kit](download-the-wdk.md#download-icon-for-wdk-step-3-install-wdk).
+> During the installation, Visual Studio installs the WDK Visual Studio Extensions. For more information, see [Download the Windows Driver Kit](download-the-wdk.md#download-icon-for-wdk-step-3-install-the-wdk).
 
 ## Install the EWDK Insider Preview
 
