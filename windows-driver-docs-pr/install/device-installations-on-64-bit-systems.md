@@ -5,6 +5,7 @@ keywords:
 - 64-bit WDK device installations
 - device installations WDK , 64-bit systems
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Device Installations on 64-Bit Systems

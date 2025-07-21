@@ -2,6 +2,7 @@
 title: D3cold Capabilities of a Device
 description: Before the driver that is the power policy owner (PPO) for a device enables the device to enter D3cold (when the computer is to remain in S0), the driver must verify that the device will be responsive and continue to operate correctly after the device enters D3cold.
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # D3cold Capabilities of a Device

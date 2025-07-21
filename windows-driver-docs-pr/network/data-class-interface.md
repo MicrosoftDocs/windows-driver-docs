@@ -2,6 +2,7 @@
 title: Data Class Interface
 description: Data Class Interface
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Data Class Interface

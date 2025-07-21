@@ -3,6 +3,7 @@ title: Memory Management for Windows Drivers
 description: Kernel-mode drivers allocate memory for purposes such as storing internal data, buffering data during I/O operations, and sharing memory with other kernel-mode and user-mode components.
 keywords: ["memory management WDK kernel", "available space WDK kernel", "free space WDK kernel", "space WDK See memory WDK"]
 ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
 # Memory management for windows drivers

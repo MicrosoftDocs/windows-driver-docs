@@ -2,6 +2,7 @@
 title: Verify Background Events
 description: Verify background events
 ms.date: 04/20/2017
+ms.topic: troubleshooting-general
 ---
 
 # Verify background events

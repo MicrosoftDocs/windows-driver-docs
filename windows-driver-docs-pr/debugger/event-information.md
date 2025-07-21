@@ -3,6 +3,7 @@ title: Event Information
 description: Event Information
 keywords: ["targets, events"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Event Information

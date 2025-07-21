@@ -3,6 +3,7 @@ title: Device Filter Driver Ordering
 description: Microsoft has developed a method of declaratively adding filters by expressing the intent of the filter, rather than the stack position, known as device filter driver ordering.
 ms.date: 06/03/2022
 ms.custom: 19H1
+ms.topic: concept-article
 ---
 
 # Device filter driver ordering

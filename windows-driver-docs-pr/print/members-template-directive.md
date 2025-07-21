@@ -4,6 +4,7 @@ description: Members Template Directive
 keywords:
 - Members directive WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Members Template Directive

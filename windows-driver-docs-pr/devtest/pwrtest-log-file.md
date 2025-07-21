@@ -2,6 +2,7 @@
 title: PwrTest Log File
 description: PwrTest Log File
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # PwrTest Log File

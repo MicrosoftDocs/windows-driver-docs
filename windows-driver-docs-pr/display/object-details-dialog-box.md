@@ -2,6 +2,7 @@
 title: "Object Details Dialog Box"
 description: "The Object Details dialog box displays detailed information about DMA Packets, Queue Packets, and Flip Queue Entries."
 ms.date: 05/10/2022
+ms.topic: overview
 ---
 
 # Object Details Dialog Box  

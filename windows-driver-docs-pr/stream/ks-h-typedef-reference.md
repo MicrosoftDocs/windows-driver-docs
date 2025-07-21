@@ -2,6 +2,7 @@
 title: Ks.h (Stream)
 description: This section contains streaming media structure typedef reference topics for the Ks.h header.
 ms.date: 07/13/2021
+ms.topic: reference
 ---
 
 # Ks.h (streaming media typedef reference)

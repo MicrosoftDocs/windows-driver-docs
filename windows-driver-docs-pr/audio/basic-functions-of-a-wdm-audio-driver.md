@@ -5,6 +5,7 @@ keywords:
 - WDM audio drivers WDK , about WDM audio drivers
 - audio drivers WDK , about audio drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Basic Functions of a WDM Audio Driver

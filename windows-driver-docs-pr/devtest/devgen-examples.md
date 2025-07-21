@@ -2,6 +2,7 @@
 title: DevGen Examples
 description: DevGen examples.
 ms.date: 12/01/2022
+ms.topic: example-scenario
 ---
 
 # DevGen Examples

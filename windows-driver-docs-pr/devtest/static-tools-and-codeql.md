@@ -5,6 +5,7 @@ keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
 ms.date: 05/13/2025
+ms.topic: how-to
 ---
 
 # Run CodeQL Analysis on Windows Driver Code

@@ -2,6 +2,7 @@
 title: Image Processing
 description: Image Processing
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # Image Processing

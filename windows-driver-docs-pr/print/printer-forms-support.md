@@ -10,6 +10,7 @@ keywords:
 - custom forms WDK printer
 - databases WDK printer forms
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Printer Forms Support

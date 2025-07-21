@@ -5,6 +5,7 @@ keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
 ms.date: 07/02/2024
+ms.topic: concept-article
 ---
 
 # Static and Dynamic Verification Tools

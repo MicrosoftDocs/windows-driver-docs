@@ -8,6 +8,7 @@ keywords:
 - print jobs WDK , Print Tickets
 - jobs WDK print , Print Tickets
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print Ticket

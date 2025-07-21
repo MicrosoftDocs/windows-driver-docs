@@ -4,6 +4,7 @@ description: Storage Management API Common Return Codes
 ms.date: 12/18/2024
 topic_type: 
 - kbArticle
+ms.topic: error-reference
 ---
 
 # SMP API common return codes

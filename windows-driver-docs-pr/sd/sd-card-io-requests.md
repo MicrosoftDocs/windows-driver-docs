@@ -2,6 +2,7 @@
 title: SD Card I/O Requests (Windows Drivers)
 description: Learn more about SD Card I/O Requests.
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # SD Card I/O Requests

@@ -2,6 +2,7 @@
 title: SR-IOV Physical Function (PF)
 description: The Physical Function is a PCI Express (PCIe) function of a network adapter that supports the single root I/O virtualization (SR-IOV) interface.
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # SR-IOV Physical Function (PF)

@@ -2,6 +2,7 @@
 title: Component-Level Power Management
 description: Starting with Windows 8, the power management framework (PoFx) enables a driver to manage the power states of the individual components in a device. Component-level power management exists side-by-side with device-level power management.
 ms.date: 08/05/2021
+ms.topic: concept-article
 ---
 
 # Component-Level Power Management

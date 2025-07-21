@@ -2,6 +2,7 @@
 title: Additional Printer Topics
 description: Additional Printer Topics
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # Additional Printer Topics

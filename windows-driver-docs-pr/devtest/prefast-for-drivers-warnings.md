@@ -6,6 +6,7 @@ keywords:
 - warnings WDK PREfast for Drivers
 - errors WDK PREfast for Drivers
 ms.date: 07/02/2024
+ms.topic: error-reference
 ---
 
 # Code Analysis for Drivers Warnings

@@ -4,6 +4,7 @@ description: MIDI Stream Data Format
 keywords:
 - MIDI stream data formats WDK audio
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # MIDI Stream Data Format

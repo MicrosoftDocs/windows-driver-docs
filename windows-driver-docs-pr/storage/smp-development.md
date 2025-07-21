@@ -2,6 +2,7 @@
 title: SMP Development (Windows Drivers)
 description: Learn more about SMP Development.
 ms.date: 11/21/2024
+ms.topic: concept-article
 ---
 
 # SMP Development

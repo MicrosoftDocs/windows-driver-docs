@@ -2,6 +2,7 @@
 title: Query Implemented Functions (Function Index 0)
 description: This function returns the functions supported by this interface version.
 ms.date: 11/18/2022
+ms.topic: reference
 ---
 
 # Function Index 0: Query Implemented Functions

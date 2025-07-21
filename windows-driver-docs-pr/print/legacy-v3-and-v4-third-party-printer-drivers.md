@@ -6,6 +6,7 @@ keywords:
 - print WDK See printer driver
 - print WDK See printing
 ms.date: 09/26/2024
+ms.topic: concept-article
 ---
 
 # Legacy v3 and v4 third-party printer drivers

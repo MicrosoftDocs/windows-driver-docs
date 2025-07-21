@@ -2,6 +2,7 @@
 title: Open a Dump File with WinDbg
 description: Learn about various ways to open a crash memory dump file using WinDbg in a debugging session.
 ms.date: 12/13/2022
+ms.topic: how-to
 ---
 
 # Open a dump file with WinDbg

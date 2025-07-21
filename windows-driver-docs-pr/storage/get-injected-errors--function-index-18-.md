@@ -2,6 +2,7 @@
 title: Get Injected Errors (Function Index 18)
 description: This function returns information about errors currently being injected.
 ms.date: 11/18/2022
+ms.topic: reference
 ---
 
 # Get Injected Errors (Function Index 18)

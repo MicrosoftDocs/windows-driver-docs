@@ -6,6 +6,7 @@ keywords:
 - reparse points WDK file systems
 - reparse point tag
 ms.date: 02/11/2025
+ms.topic: concept-article
 ---
 
 # File system reparse points

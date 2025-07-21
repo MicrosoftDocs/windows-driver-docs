@@ -2,6 +2,7 @@
 title: Audio Device Messages for MIDI
 description: Audio Device Messages for MIDI
 ms.date: 04/22/2020
+ms.topic: reference
 ---
 
 # Audio Device Messages for MIDI

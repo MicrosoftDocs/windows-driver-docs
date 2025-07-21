@@ -2,6 +2,7 @@
 title: WaveRT Miniport Driver
 description: WaveRT Miniport Driver
 ms.date: 10/01/2020
+ms.topic: concept-article
 ---
 
 # WaveRT Miniport Driver

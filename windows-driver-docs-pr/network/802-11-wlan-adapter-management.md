@@ -7,6 +7,7 @@ keywords:
 - WLAN adapters WDK
 - Native 802.11 IHV Extensions DLL WDK , adapter management
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # 802.11 WLAN Adapter Management Topics

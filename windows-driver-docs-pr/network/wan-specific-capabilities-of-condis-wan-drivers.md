@@ -5,6 +5,7 @@ keywords:
 - CoNDIS WAN drivers WDK networking , vs. non-WAN CoNDIS drivers
 - non-WAN CoNDIS drivers WDK networking
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # WAN-Specific Capabilities of CoNDIS WAN Drivers

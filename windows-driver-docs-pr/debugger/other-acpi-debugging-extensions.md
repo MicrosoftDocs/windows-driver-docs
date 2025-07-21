@@ -3,6 +3,7 @@ title: Other ACPI Debugging Extensions
 description: Other ACPI Debugging Extensions
 keywords: ["ACPI debugging, useful extensions"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Other ACPI Debugging Extensions

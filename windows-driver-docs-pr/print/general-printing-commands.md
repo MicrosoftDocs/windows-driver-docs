@@ -2,6 +2,7 @@
 title: General Printing Commands
 description: General Printing Commands
 ms.date: 01/27/2023
+ms.topic: overview
 ---
 
 # General Printing Commands

@@ -10,6 +10,7 @@ keywords:
 - SdBusSubmitRequest
 - SdBusSubmitRequestAsync
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # SD Card Requests

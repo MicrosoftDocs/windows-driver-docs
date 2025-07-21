@@ -5,6 +5,7 @@ keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , COM interfaces
 - COM interfaces WDK Native 802.11 IHV UI Extensions DLL
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Native 802.11 IHV UI Extensions COM Interfaces

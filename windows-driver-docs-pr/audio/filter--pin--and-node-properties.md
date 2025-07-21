@@ -16,6 +16,7 @@ keywords:
 - nodes WDK audio , property overview
 - pins WDK audio , property overview
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Filter, Pin, and Node Properties

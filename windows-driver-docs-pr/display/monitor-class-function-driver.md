@@ -13,6 +13,7 @@ keywords:
 - FDOs WDK monitors
 - filter DOs WDK monitors
 ms.date: 09/23/2024
+ms.topic: concept-article
 ---
 
 # Monitor class function driver

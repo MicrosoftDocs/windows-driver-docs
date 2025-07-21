@@ -5,6 +5,7 @@ keywords:
 - printer commands WDK Unidrv , configuration
 - configuration commands WDK Unidrv
 ms.date: 07/19/2023
+ms.topic: reference
 ---
 
 # Printer configuration commands

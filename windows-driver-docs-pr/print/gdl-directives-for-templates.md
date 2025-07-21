@@ -22,6 +22,7 @@ keywords:
 - ElementTags directive WDK GDL
 - templates WDK GDL , directives
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Directives for Templates

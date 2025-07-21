@@ -5,6 +5,7 @@ keywords:
 - HP-GL/2 monochrome WDK Unidrv , additional considerations
 - PCL-5e WDK Unidrv , additional considerations
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # HP-GL/2 Caveats

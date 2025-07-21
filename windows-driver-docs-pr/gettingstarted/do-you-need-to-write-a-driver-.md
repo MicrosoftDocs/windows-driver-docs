@@ -2,6 +2,7 @@
 title: Built-in Drivers for Windows Devices
 description: Microsoft Windows contains built-in drivers for many device types. Learn how to check the built-in drivers for your device.
 ms.date: 12/09/2024
+ms.topic: end-user-help
 ---
 
 # Built-in Drivers for Windows Devices

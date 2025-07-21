@@ -2,6 +2,7 @@
 title: Windows 98 Core Components
 description: Windows 98 Core Components
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Windows 98 Core Components

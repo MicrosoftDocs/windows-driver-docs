@@ -4,6 +4,7 @@ description: This topic describes OIDs for connection-oriented call managers and
 keywords:
 - OIDs for connection-oriented call managers and clients
 ms.date: 11/02/2017
+ms.topic: reference
 ---
 
 # OIDs for connection-oriented call managers and clients

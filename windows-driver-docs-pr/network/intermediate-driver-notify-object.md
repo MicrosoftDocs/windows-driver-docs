@@ -4,6 +4,7 @@ description: Intermediate Driver Notify Object
 keywords:
 - notify objects WDK networking , intermediate drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Intermediate Driver Notify Object

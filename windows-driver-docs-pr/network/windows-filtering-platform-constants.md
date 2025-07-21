@@ -4,6 +4,7 @@ description: This section describes Windows Filtering Platform constants.
 keywords:
 - Windows Filtering Platform constants network drivers
 ms.date: 11/07/2017
+ms.topic: reference
 ---
 
 # Windows Filtering Platform constants

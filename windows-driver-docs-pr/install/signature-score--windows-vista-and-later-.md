@@ -4,6 +4,7 @@ description: Signature Score
 keywords:
 - signature score WDK device installations
 ms.date: 12/03/2021
+ms.topic: concept-article
 ---
 
 # Signature Score

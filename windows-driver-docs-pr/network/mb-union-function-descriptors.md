@@ -4,6 +4,7 @@ description: This section describes union function descriptors and MBIM backward
 ms.date: 04/20/2017
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # MB Union Function Descriptors

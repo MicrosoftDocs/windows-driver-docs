@@ -2,6 +2,7 @@
 title: Summary of WDF and WDM Equivalents
 description: Summary of WDF and WDM Equivalents
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # Summary of WDF and WDM Equivalents

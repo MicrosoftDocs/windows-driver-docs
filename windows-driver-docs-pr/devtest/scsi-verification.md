@@ -5,6 +5,7 @@ keywords:
 - SCSI Verification feature WDK Driver Verifier
 - miniport drivers WDK Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # SCSI Verification

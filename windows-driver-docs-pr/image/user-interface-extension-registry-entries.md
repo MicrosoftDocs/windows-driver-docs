@@ -2,6 +2,7 @@
 title: User Interface Extension Registry Entries
 description: User Interface Extension Registry Entries
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # User Interface Extension Registry Entries

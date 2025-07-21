@@ -3,6 +3,7 @@ title: Analyze Crash Dump Files by Using WinDbg
 description: You can analyze crash dump files by using WinDbg and other Windows debuggers.
 keywords: dump file, crash dump file
 ms.date: 12/06/2024
+ms.topic: concept-article
 ---
 
 # Analyze crash dump files by using WinDbg

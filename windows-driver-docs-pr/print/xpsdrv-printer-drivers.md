@@ -9,6 +9,7 @@ keywords:
 - XPS spool files WDK XPSDrv
 - spool files WDK print
 ms.date: 01/31/2023
+ms.topic: overview
 ---
 
 # XPSDrv Printer Drivers

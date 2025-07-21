@@ -18,6 +18,7 @@ keywords:
 - NPIV_WWPN_NOT_FOUND
 - NPIV_WWPN_INVALID_FORMAT
 ms.date: 10/14/2022
+ms.topic: error-reference
 ---
 
 # NPIV Status Codes

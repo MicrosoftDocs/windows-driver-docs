@@ -7,6 +7,7 @@ keywords:
 - power management WDK NDIS miniport , OIDs
 - object identifiers WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Required and Optional OIDs for Power Management

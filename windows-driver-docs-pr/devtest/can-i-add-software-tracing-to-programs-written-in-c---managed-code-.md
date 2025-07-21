@@ -2,6 +2,7 @@
 title: Can I Add Software Tracing to Programs Written in C++ Managed Code
 description: Can I add software tracing to programs written in C++ managed code
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Can I add software tracing to programs written in C++ managed code?

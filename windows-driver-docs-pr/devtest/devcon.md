@@ -17,6 +17,7 @@ keywords:
 - listing device information WDK
 ms.date: 09/23/2024
 ai-usage: ai-assisted
+ms.topic: overview
 ---
 
 # Windows Device Console (Devcon.exe)

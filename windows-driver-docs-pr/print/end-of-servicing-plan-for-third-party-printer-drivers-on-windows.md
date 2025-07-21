@@ -6,6 +6,7 @@ keywords:
 - print WDK See printer driver
 - print WDK See printing
 ms.date: 05/09/2025
+ms.topic: release-notes
 ---
 
 # End of servicing plan for third-party printer drivers on Windows

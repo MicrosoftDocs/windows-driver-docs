@@ -2,6 +2,7 @@
 title: TAEF Timeouts
 description: TAEF Timeouts
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # TAEF Timeouts

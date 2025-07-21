@@ -2,6 +2,7 @@
 title: ChildLocationPaths Registry Subkey
 description: ChildLocationPaths Registry Subkey
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # ChildLocationPaths Registry Subkey

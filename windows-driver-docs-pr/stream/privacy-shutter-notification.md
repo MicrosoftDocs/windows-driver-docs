@@ -2,6 +2,7 @@
 title: Privacy Shutter/Switch Notification
 description: Provides guidance for OEMs and ODMs that are adding a mechanism to detect the state of the physical camera privacy shutter or kill switch.
 ms.date: 09/11/2024
+ms.topic: best-practice
 ---
 
 # Privacy shutter/switch notification

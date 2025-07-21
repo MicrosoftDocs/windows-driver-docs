@@ -2,6 +2,7 @@
 title: Windows Automatically Segments Long Messages
 description: Windows automatically segments long messages
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Windows automatically segments long messages

@@ -5,6 +5,7 @@ keywords:
 - trace flags WDK
 - flags WDK software tracing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Trace Flags

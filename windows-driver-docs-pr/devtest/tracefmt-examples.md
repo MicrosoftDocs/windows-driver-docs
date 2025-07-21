@@ -5,6 +5,7 @@ keywords:
 - Tracefmt WDK , examples
 - examples WDK Tracefmt
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Tracefmt Examples

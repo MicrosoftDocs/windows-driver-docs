@@ -2,6 +2,7 @@
 title: Verb
 description: Verb
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Verb

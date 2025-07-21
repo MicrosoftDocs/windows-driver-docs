@@ -6,6 +6,7 @@ keywords:
 - Connecting and Configuring Displays (CCD) WDK display
 - CCD (Connecting and Configuring Displays) WDK display
 ms.date: 03/18/2022
+ms.topic: reference
 ---
 
 # CCD DDIs

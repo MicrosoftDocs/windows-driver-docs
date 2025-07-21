@@ -2,6 +2,7 @@
 title: Percent of machines with subpar stream initialization success rate
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have a subpar initialization rate
 ms.date: 11/19/2021
+ms.topic: concept-article
 ---
 
 # Percent of Machines with Subpar Stream Initialization Success Rate

@@ -6,6 +6,7 @@ keywords:
 - Video Class drivers WDK USB , implementing
 - UVC drivers WDK AVStream , implementing
 ms.date: 05/16/2022
+ms.topic: concept-article
 ---
 
 # USB Video Class implementation

@@ -2,6 +2,7 @@
 title: Virtual Ports (VPorts)
 description: Learn how a VPort represents an internal port on the NIC switch of a network adapter that supports single root I/O virtualization.
 ms.date: 12/19/2024
+ms.topic: concept-article
 ---
 
 # Virtual ports (VPorts)

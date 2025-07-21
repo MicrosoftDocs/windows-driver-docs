@@ -57,7 +57,6 @@
       "ms.service": "windows-hardware-driver-quality",
       "author": "mhopkins-msft",
       "ms.author": "mhopkins",
-      "ms.topic": "article",
       "recommendations": true,
       "_op_documentIdPathDepotMapping": {
         "./": {

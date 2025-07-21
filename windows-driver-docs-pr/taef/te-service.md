@@ -2,6 +2,7 @@
 title: Te.Service
 description: Some TAEF features, such as Cross Machine Test Execution and RunAs, require that Te.Service is installed and started.
 ms.date: 04/20/2017
+ms.topic: install-set-up-deploy
 ---
 
 # Te.Service

@@ -12,6 +12,7 @@ keywords:
 - multimedia WDK audio
 - miniport interfaces WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Driver Support for Legacy Audio Interfaces

@@ -2,6 +2,7 @@
 title: USB Type-C Manual Interoperability Test Procedures
 description: This article explains how to test the interoperability of USB Type-C enabled systems and Windows.
 ms.date: 05/29/2025
+ms.topic: checklist
 ---
 
 # USB Type-C manual interoperability test procedures

@@ -13,6 +13,7 @@ keywords:
 - working states WDK KMDF
 - power states WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Power Policy Ownership

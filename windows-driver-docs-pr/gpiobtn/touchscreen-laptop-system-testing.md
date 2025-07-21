@@ -2,6 +2,7 @@
 title: Touchscreen Laptop System Testing
 description: This topic describes tests for touchscreen laptop systems.
 ms.date: 03/26/2025
+ms.topic: checklist
 ---
 
 # Touchscreen laptop system testing

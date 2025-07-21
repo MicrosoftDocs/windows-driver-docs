@@ -2,6 +2,7 @@
 title: Microdriver Functions
 description: Microdriver Functions
 ms.date: 05/01/2023
+ms.topic: reference
 ---
 
 # Microdriver Functions

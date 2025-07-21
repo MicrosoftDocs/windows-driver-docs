@@ -3,6 +3,7 @@ title: Advanced Configuration and Power Interface (ACPI) BIOS
 description: Provides information about ACPI BIOS support.
 keywords: ["ACPI BIOS WDK power management"]
 ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
 # ACPI BIOS

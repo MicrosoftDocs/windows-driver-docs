@@ -3,6 +3,7 @@ title: Could not open dump file
 description: Could not open dump file
 keywords: ["could not open dump file (error)", "minidump does not have system info", "could not match dump file signature"]
 ms.date: 04/07/2025
+ms.topic: troubleshooting
 ---
 
 # Could Not Open Dump File

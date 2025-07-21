@@ -3,6 +3,7 @@ title: Bug Check Code Reference
 description: Explore common bug checks, review the codes displayed on the blue bug check screen, and learn how to use the !analyze extension in the Windows Debugger (WinDbg).
 ms.custom: "se-defect-target"
 ms.date: 07/15/2025
+ms.topic: error-reference
 ---
 
 # Bug check code reference

@@ -9,6 +9,7 @@ keywords:
 - interrupt service routines WDK audio
 - ISRs WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Reliability Issues for a WavePci Miniport Driver

@@ -2,6 +2,7 @@
 title: Retrieve ConnectionProfile Objects for a MobileBroadbandAccount
 description: Retrieve ConnectionProfile objects for a MobileBroadbandAccount
 ms.date: 10/10/2023
+ms.topic: reference
 ---
 
 # Retrieve ConnectionProfile objects for a MobileBroadbandAccount

@@ -3,6 +3,7 @@ title: "Sign Extension"
 description: "Sign Extension"
 keywords: ["sign extension of numbers", "sign extension of registers", "MASM expressions, sign extension", "registers, sign extension"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Sign Extension

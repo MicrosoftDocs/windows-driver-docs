@@ -2,6 +2,7 @@
 title: Component Firmware Update (CFU) Protocol Specification
 description: Provides detailed information on the Component Firmware Update (CFU) protocol offer, content, and firmware update command sequence.
 ms.date: 03/17/2023
+ms.topic: concept-article
 ---
 
 # Component Firmware Update (CFU) protocol specification

@@ -6,6 +6,7 @@ keywords:
 - printer drivers WDK, GDI
 - GDI printer drivers WDK, about GDI printer drivers
 ms.date: 01/24/2023
+ms.topic: concept-article
 ---
 
 # GDI Printer Drivers

@@ -2,6 +2,7 @@
 title: ACPI Design Guide
 description: This section describes how device drivers can interface an Advanced Configuration and Power Interface (ACPI) device. ACPI devices are defined by the Advanced Configuration and Power Interface (ACPI) Specification.
 ms.date: 03/17/2023
+ms.topic: design-pattern
 ---
 
 # ACPI design guide

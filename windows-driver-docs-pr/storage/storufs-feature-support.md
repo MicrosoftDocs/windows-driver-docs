@@ -2,6 +2,7 @@
 title: Features Supported by StorUFS
 description: Overview of Features supported by StorUFS
 ms.date: 11/12/2024
+ms.topic: feature-availability
 ---
 
 # Features supported by StorUFS

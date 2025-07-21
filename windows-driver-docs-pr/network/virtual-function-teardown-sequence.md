@@ -2,6 +2,7 @@
 title: Virtual Function Teardown Sequence
 description: Virtual Function Teardown Sequence
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Virtual Function Teardown Sequence

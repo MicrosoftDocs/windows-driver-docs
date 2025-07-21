@@ -3,6 +3,7 @@ title: Standard Driver Routine Requirements
 description: Standard Driver Routine Requirements
 keywords: ["standard driver routines WDK kernel , requirements", "driver routines WDK kernel , requirements", "routines WDK kernel , requirements"]
 ms.date: 06/16/2017
+ms.topic: checklist
 ---
 
 # Standard Driver Routine Requirements

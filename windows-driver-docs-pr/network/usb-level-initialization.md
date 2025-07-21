@@ -2,6 +2,7 @@
 title: USB-Level Initialization
 description: USB-Level Initialization
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # USB-Level Initialization

@@ -2,6 +2,7 @@
 title: SCSI Port's Role in Transmitting SCSI Sense Data
 description: SCSI Port's Role in Transmitting SCSI Sense Data
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # SCSI Port's Role in Transmitting SCSI Sense Data

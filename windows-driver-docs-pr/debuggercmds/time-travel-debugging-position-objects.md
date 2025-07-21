@@ -3,6 +3,7 @@ title: "TTD Position Objects"
 description: "This section describes the position model objects associated with time travel debugging."
 keywords: ["TTD Position Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 06/23/2025
+ms.topic: concept-article
 ---
 
 # TTD Position Objects

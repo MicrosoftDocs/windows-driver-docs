@@ -2,6 +2,7 @@
 title: 32-Bit and 64-Bit WIA Interoperability
 description: 32-Bit and 64-Bit WIA Interoperability
 ms.date: 03/27/2023
+ms.topic: concept-article
 ---
 
 # 32-Bit and 64-Bit WIA Interoperability

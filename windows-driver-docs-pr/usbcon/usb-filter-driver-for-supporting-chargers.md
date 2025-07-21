@@ -2,6 +2,7 @@
 description: Supporting USB chargers for function controllers
 title: USB Filter Driver for Supporting USB Chargers
 ms.date: 01/17/2024
+ms.topic: concept-article
 ---
 
 

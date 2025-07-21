@@ -9,6 +9,7 @@ keywords:
 - kernel-mode code signing requirements WDK
 - kernel-mode driver signing WDK
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # Kernel-Mode Code Signing Requirements

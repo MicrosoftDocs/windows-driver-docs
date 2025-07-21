@@ -2,6 +2,7 @@
 title: GPUView Zoomed Main Window
 description: The following figure shows a screen shot that represents about a frame's worth of data in the GPUView timeline. 
 ms.date: 05/10/2022
+ms.topic: overview
 ---
 
 # GPUView Zoomed Main Window

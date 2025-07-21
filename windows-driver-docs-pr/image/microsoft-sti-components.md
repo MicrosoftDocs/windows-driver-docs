@@ -2,6 +2,7 @@
 title: Microsoft STI Components
 description: Microsoft STI Components
 ms.date: 07/18/2018
+ms.topic: overview
 ---
 
 # Microsoft STI Components

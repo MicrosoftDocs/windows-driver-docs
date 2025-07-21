@@ -3,6 +3,7 @@ title: "Kernel-Mode Extensions"
 description: "Kernel-Mode Extensions"
 keywords: ["extension commands ( commands), kernel-mode extensions", "kdextx86.dll (kernel-mode extensions)", "kdexts.dll (kernel-mode extensions)", "kext.dll (kernel-mode extensions)", "kernel-mode extensions (kdext .dll and kext.dll)"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Kernel-Mode Extensions

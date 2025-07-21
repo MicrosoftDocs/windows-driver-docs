@@ -6,6 +6,7 @@ keywords:
 ms.date: 05/23/2025
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: release-notes
 ---
 
 # MBIMEx 4.0 – 5G SA Phase 2 support

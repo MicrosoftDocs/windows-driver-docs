@@ -2,6 +2,7 @@
 title: Find Dialog Box
 description: "The Find dialog box helps the user find specific processes or threads in the main window of GPUView."
 ms.date: 05/10/2022
+ms.topic: end-user-help
 ---
 
 # Find Dialog Box

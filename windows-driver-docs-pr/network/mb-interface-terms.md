@@ -4,6 +4,7 @@ description: Provides a list of mobile broadband terminology used in the MB inte
 ms.date: 04/20/2017
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: glossary
 ---
 
 # MB Interface Terms

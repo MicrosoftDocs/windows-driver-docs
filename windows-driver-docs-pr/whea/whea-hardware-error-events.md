@@ -10,6 +10,7 @@ keywords:
 - hardware error events WDK WHEA
 - events WDK WHEA
 ms.date: 12/16/2024
+ms.topic: error-reference
 ---
 
 # WHEA Hardware Error Events

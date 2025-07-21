@@ -7,6 +7,7 @@ keywords:
 - user-mode drivers WDK UMDF , UMDF-USB object model
 - UMDF-USB object model WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # USB-Specific UMDF 1.x Interfaces

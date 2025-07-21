@@ -4,6 +4,7 @@ description: Support for Transactions in Microsoft Windows Vista
 keywords:
 - kernel network redirectors WDK , transaction support
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Support for Transactions in Microsoft Windows Vista

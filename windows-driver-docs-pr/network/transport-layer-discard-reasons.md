@@ -4,6 +4,7 @@ description: This section describes Transport layer discard reasons for Windows 
 keywords:
 - Transport layer discard reasons network drivers
 ms.date: 11/09/2017
+ms.topic: error-reference
 ---
 
 # Transport layer discard reasons

@@ -2,6 +2,7 @@
 title: USB Driver Samples
 description: The article contains basic information about the USB samples that are available for download from the Windows driver samples repository on GitHub.
 ms.date: 01/17/2024
+ms.topic: overview
 ---
 
 # USB driver samples

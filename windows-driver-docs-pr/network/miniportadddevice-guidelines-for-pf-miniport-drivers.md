@@ -2,6 +2,7 @@
 title: MiniportAddDevice Guidelines for PF Miniport Drivers
 description: MiniportAddDevice Guidelines for PF Miniport Drivers
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # MiniportAddDevice Guidelines for PF Miniport Drivers

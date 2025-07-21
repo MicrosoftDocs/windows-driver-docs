@@ -3,6 +3,7 @@ title: Registry Key Object Routines
 description: Registry Key Object Routines
 keywords: ["registry WDK kernel , object routines", "driver registry information WDK kernel , object routines", "object routines WDK kernel", "registry-key objects WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Registry Key Object Routines

@@ -2,6 +2,7 @@
 title: Microcontroller Commands for MALT
 description: Defines commands between the PC and the microcontroller (Arduino) that is controlling the sensors in the MALT.
 ms.date: 04/29/2024
+ms.topic: reference
 ---
 
 # Microcontroller commands for MALT

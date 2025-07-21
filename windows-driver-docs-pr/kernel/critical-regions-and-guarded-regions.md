@@ -3,6 +3,7 @@ title: Critical Regions and Guarded Regions
 description: Critical Regions and Guarded Regions
 keywords: ["asynchronous procedure calls WDK kernel", "APCs WDK kernel", "critical regions WDK kernel", "guarded regions WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Critical Regions and Guarded Regions

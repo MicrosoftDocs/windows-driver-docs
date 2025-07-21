@@ -10,6 +10,7 @@ keywords:
 - parser WDK GDL , data type wrappers
 - snapshots WDK GDL , data type wrapers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Data Type Wrappers

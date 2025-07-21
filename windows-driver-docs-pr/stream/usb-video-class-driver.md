@@ -13,6 +13,7 @@ keywords:
 - UVC drivers WDK AVStream
 - pins WDK USB Video Class
 ms.date: 09/21/2018
+ms.topic: overview
 ---
 
 # USB Video Class Driver

@@ -5,6 +5,7 @@ keywords:
 - tokens
 - device relation
 ms.date: 09/03/2020
+ms.topic: reference
 ---
 
 # Device Relation Tokens in SDEL

@@ -5,6 +5,7 @@ keywords:
 - INF files WDK print, entries
 - dependent files WDK printer
 ms.date: 09/26/2024
+ms.topic: concept-article
 ---
 
 # Printer INF file entries

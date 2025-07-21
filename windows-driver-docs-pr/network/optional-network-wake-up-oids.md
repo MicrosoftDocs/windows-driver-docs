@@ -4,6 +4,7 @@ description: Optional Network Wake Up OIDs
 keywords:
 - Optional Network Wakeup OIDs
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Optional Network Wake Up OIDs

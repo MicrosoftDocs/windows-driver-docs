@@ -4,6 +4,7 @@ description: INF File Settings for Filter Drivers
 keywords:
 - INF files WDK network , filter drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # INF File Settings for Filter Drivers

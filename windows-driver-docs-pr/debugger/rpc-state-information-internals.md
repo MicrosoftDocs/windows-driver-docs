@@ -3,6 +3,7 @@ title: RPC State Information Internals
 description: RPC State Information Internals
 keywords: ["RPC debugging, RPC state information internals"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # RPC State Information Internals

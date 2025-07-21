@@ -10,6 +10,7 @@ keywords:
 - unions WDK GDL
 - GDL WDK , unions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Multiple Personality Template Data Types

@@ -6,6 +6,7 @@ keywords:
 - EvtIddCxMonitorAssignSwapChain, error handling
 - EvtIddCxMonitorAssignSwapChain error handling, indirect display driver
 - EvtIddCxMonitorAssignSwapChain error handling, IDD
+ms.topic: troubleshooting-error-codes
 ---
 
 # EvtIddCxMonitorAssignSwapChain error handling

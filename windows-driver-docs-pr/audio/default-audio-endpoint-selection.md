@@ -4,6 +4,7 @@ description: Default Audio Endpoint Selection
 keywords:
 - audio default endpoint selection
 ms.date: 01/04/2023
+ms.topic: concept-article
 ---
 
 # Default Audio Endpoint Selection Starting in Windows 10

@@ -2,6 +2,7 @@
 description: Requirements for Objects
 title: Requirements for Objects
 ms.date: 03/03/2023
+ms.topic: checklist
 ---
 
 # Requirements for Objects

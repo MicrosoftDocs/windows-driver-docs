@@ -9,6 +9,7 @@ keywords:
 - hue WDK video capture
 - PROPSETID_VIDCAP_VIDEOPROCAMP
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Video Processing Amplifier Properties

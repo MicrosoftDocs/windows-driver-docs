@@ -4,6 +4,7 @@ description: Template Template Directive
 keywords:
 - Template directive WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Template Template Directive

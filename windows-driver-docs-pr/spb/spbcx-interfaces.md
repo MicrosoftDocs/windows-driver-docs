@@ -2,6 +2,7 @@
 title: SpbCx Interfaces
 description: The SPB framework extension (SpbCx) has two interfaces.
 ms.date: 09/14/2021
+ms.topic: concept-article
 ---
 
 # SpbCx Interfaces

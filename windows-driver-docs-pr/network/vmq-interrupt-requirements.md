@@ -2,6 +2,7 @@
 title: VMQ Interrupt Requirements
 description: VMQ Interrupt Requirements
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # VMQ Interrupt Requirements

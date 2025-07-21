@@ -2,6 +2,7 @@
 title: Standard Debugging Techniques
 description: This section discusses standard debugging techniques that you can apply across different technologies and different types of code.
 ms.date: 11/28/2017
+ms.topic: troubleshooting
 ---
 
 # Standard Debugging Techniques

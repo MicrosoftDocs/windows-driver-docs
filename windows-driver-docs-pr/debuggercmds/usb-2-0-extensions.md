@@ -3,6 +3,7 @@ title: "USB 2.0 Extensions"
 description: "This section describes the USB 2.0 debugger extension commands. These commands display information from data structures maintained by drivers in the USB 2.0 driver stack."
 keywords: ["USB 2.0 Extensions", "extensions", "WinDbg", "Windows Debugging"]
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # USB 2.0 Extensions

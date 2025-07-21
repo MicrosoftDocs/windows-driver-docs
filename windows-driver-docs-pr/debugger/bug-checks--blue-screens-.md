@@ -3,6 +3,7 @@ title: Bug Checks (Blue Screens)
 description: Review general information about bug check system halt errors or Blue Screens, and find troubleshooting tips.
 keywords: bug check, blue screen, kernel error, stop error, stop code
 ms.date: 07/15/2025
+ms.topic: troubleshooting
 ---
 
 # Bug checks (Blue Screens)

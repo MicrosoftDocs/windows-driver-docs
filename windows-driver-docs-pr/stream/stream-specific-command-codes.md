@@ -2,6 +2,7 @@
 title: Stream-Specific Command Codes
 description: Stream-Specific Command Codes
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # Stream-Specific Command Codes

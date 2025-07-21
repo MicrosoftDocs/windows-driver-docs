@@ -5,6 +5,7 @@ keywords:
 - WDDM 2.0 , virtual memory , driver residency , context monitoring
 - WDDM 2.0 , Windows 10
 ms.date: 12/16/2024
+ms.topic: release-notes
 ---
 
 # WDDM 2.0 features

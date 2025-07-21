@@ -13,6 +13,7 @@ keywords:
 - audio drivers WDK , Universal Audio Architecture
 - 1394 WDK audio
 ms.date: 05/08/2018
+ms.topic: concept-article
 ---
 
 # Universal Audio Architecture

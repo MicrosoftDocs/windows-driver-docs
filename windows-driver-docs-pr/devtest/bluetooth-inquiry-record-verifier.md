@@ -2,6 +2,7 @@
 title: Bluetooth Inquiry Record Verifier
 description: The Bluetooth Inquiry Record Verifier displays a Bluetooth device’s inquiry record as Microsoft Windows interprets it.
 ms.date: 04/20/2017
+ms.topic: troubleshooting-known-issue
 ---
 
 # Bluetooth Inquiry Record Verifier

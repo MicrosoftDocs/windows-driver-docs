@@ -6,6 +6,7 @@ keywords:
 - Unidrv, customized rendering options
 - Unidrv WDK print
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Unidrv-Specific Customized Rendering

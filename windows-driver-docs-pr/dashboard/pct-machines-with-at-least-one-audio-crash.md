@@ -2,6 +2,7 @@
 title: Percent of machines with at least one audio crash
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have at least one audio crash in AudioSrv.dll or AudioDG.exe
 ms.date: 11/19/2022
+ms.topic: reference
 ---
 
 # Percent of machines with at least one audio crash

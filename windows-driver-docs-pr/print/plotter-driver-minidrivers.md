@@ -8,6 +8,7 @@ keywords:
 - PCD files WDK MSPlot
 - .pcd files
 ms.date: 01/30/2023
+ms.topic: reference
 ---
 
 # Plotter Driver Minidrivers

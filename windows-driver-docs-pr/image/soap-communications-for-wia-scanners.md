@@ -2,6 +2,7 @@
 title: SOAP Communications for WIA Scanners
 description: SOAP Communications for WIA Scanners
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # SOAP Communications for WIA Scanners

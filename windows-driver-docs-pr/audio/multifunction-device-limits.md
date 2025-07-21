@@ -4,6 +4,7 @@ description: Multifunction Device Limits
 keywords:
 - multifunction audio devices WDK , limits
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Multifunction Device Limits

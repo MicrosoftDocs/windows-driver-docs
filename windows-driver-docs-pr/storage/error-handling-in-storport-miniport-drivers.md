@@ -2,6 +2,7 @@
 title: Error Handling in Storport Miniport Drivers
 description: Error Handling in Storport Miniport Drivers
 ms.date: 09/25/2024
+ms.topic: error-reference
 ---
 
 # Error handling in Storport miniport drivers

@@ -2,6 +2,7 @@
 title: WIA RAW Data Header
 description: WIA RAW Data Header
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # WIA RAW Data Header

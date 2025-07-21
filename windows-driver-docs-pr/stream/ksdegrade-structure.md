@@ -2,6 +2,7 @@
 title: KSDEGRADE Structure (Ks.H)
 description: The KSDEGRADE structure contains specifics of degradation strategies.
 ms.date: 07/14/2022
+ms.topic: reference
 ---
 
 # KSDEGRADE structure

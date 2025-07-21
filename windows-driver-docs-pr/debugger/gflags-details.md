@@ -3,6 +3,7 @@ title: GFlags Details
 description: GFlags Details
 keywords: ["GFlags, details"]
 ms.date: 04/12/2019
+ms.topic: concept-article
 ---
 
 # GFlags Details

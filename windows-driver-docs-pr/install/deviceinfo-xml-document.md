@@ -2,6 +2,7 @@
 title: DeviceInfo XML Document
 description: DeviceInfo XML Document
 ms.date: 06/19/2025
+ms.topic: concept-article
 ---
 
 # DeviceInfo XML Document

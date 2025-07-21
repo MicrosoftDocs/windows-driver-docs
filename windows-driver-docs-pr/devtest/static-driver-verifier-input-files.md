@@ -8,6 +8,7 @@ keywords:
 - input files WDK Static Driver Verifier
 - files WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Static Driver Verifier Input Files

@@ -7,6 +7,7 @@ keywords:
 - device IDs WDK AV/C
 - Avc.sys function driver WDK , identifiers
 ms.date: 08/25/2020
+ms.topic: concept-article
 ---
 
 # AV/C Device Identifiers

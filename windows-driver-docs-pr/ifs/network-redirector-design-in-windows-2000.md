@@ -9,6 +9,7 @@ keywords:
 - buffering code WDK network redirectors
 - kernel network redirectors WDK , Windows 2000
 ms.date: 09/05/2024
+ms.topic: design-pattern
 ---
 
 # Network redirector design

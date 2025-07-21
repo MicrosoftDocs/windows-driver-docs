@@ -2,6 +2,7 @@
 title: Driver Signing Properties
 description: "Learn more about: Driver Signing Properties"
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Driver Signing Properties

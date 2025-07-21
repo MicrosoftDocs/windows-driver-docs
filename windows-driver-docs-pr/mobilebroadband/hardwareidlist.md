@@ -2,6 +2,7 @@
 title: HardwareIdList (PackageInfo)
 description: HardwareIdList (PackageInfo)
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # HardwareIdList (PackageInfo)

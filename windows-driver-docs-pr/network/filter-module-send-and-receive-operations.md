@@ -8,6 +8,7 @@ keywords:
 - NDIS filter drivers WDK , send operations
 - filter drivers WDK networking , receive operations
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Filter Module Send and Receive Operations

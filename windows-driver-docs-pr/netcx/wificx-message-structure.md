@@ -2,6 +2,7 @@
 title: WiFiCx message structure
 description: This section describes the structure for WiFiCx command messages
 ms.date: 06/17/2021
+ms.topic: reference
 ---
 
 # WiFiCx message structure

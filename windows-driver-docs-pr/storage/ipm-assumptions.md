@@ -2,6 +2,7 @@
 title: Idle Power Management Assumptions
 description: Idle Power Management Assumptions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Idle Power Management Assumptions
