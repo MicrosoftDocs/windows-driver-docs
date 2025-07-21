@@ -5,6 +5,7 @@ keywords:
 - PCM high-bitdepth stream data formats WDK
 - high-bitdepth stream data formats WDK
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # PCM High Bitdepth Stream Data Format

@@ -7,6 +7,7 @@ keywords:
 - ICD WDK display
 - installable client driver WDK display
 ms.date: 11/17/2021
+ms.topic: install-set-up-deploy
 ---
 
 # Kernel-Mode Support to the OpenGL Installable Client Driver

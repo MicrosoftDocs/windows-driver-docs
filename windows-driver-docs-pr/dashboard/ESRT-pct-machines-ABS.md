@@ -2,6 +2,7 @@
 title: Percent of machines with abnormal shutdown not due to bugcheck or power button
 description: The measure aggregates telemetry from a 28-day sliding window into a ratio of machines reported abnormal shutdown within 3 days of installation / machines successfuly installed
 ms.date: 10/31/2019
+ms.topic: concept-article
 ---
  
 # Percent of machines with abnormal shutdown not due to bugcheck or power button

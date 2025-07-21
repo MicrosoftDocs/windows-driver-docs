@@ -2,6 +2,7 @@
 title: WDI doc change history
 description: This section lists documentation change history for WDI documentation pages
 ms.date: 03/02/2023
+ms.topic: release-notes
 ---
 
 # WDI doc change history

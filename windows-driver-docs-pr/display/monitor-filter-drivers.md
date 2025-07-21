@@ -4,6 +4,7 @@ description: Monitor Filter Drivers
 keywords:
 - filter drivers WDK monitors
 ms.date: 09/23/2024
+ms.topic: concept-article
 ---
 
 # Monitor Filter Drivers

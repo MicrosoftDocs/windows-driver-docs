@@ -7,6 +7,7 @@ keywords:
 - displayport, usb4
 - kernel-mode driver, usb4
 ms.date: 10/13/2023
+ms.topic: concept-article
 ---
 
 # WDDM support for DisplayPort monitors over USB4

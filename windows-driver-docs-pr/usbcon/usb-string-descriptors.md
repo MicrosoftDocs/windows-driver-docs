@@ -2,6 +2,7 @@
 title: USB String Descriptors
 description: Device, configuration, and interface descriptors may contain references to string descriptors. This topic describes how to get a particular string descriptor from the device.
 ms.date: 01/17/2024
+ms.topic: reference
 ---
 
 # USB String Descriptors

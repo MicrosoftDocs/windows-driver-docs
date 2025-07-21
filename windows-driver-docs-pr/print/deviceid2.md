@@ -5,6 +5,7 @@ keywords:
 - WSDMON port monitors WDK , DeviceID command
 - DeviceID
 ms.date: 09/07/2021
+ms.topic: reference
 ---
 
 # DeviceID command

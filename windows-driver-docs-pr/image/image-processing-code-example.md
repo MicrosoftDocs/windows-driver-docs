@@ -2,6 +2,7 @@
 title: Image Processing Code Example
 description: Image Processing Code Example
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Image Processing Code Example

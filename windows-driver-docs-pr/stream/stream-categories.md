@@ -8,6 +8,7 @@ keywords:
 - stream categories WDK video capture , about stream categories
 - GUIDs WDK video capture
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Stream Categories

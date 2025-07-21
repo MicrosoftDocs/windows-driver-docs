@@ -2,6 +2,7 @@
 title: GpioClx I/O and Interrupt Interfaces
 description: Typically, the clients of a GPIO controller are drivers for peripheral devices that connect to GPIO pins.
 ms.date: 03/26/2025
+ms.topic: concept-article
 ---
 
 # GpioClx I/O and Interrupt Interfaces

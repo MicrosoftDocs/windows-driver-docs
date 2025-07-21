@@ -3,6 +3,7 @@ title: WMI Architecture
 description: WMI Architecture
 keywords: ["WMI WDK kernel , architecture"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # WMI Architecture

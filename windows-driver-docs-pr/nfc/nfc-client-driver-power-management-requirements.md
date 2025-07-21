@@ -8,6 +8,7 @@ keywords:
 - NFP
 description: Information about meeting the requirements for NFP devices on connected standby. platforms
 ms.date: 01/11/2024
+ms.topic: best-practice
 ---
 
 # NFC client driver power management requirements

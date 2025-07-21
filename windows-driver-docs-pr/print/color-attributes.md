@@ -5,6 +5,7 @@ keywords:
 - color attributes WDK Unidrv
 - general printer attributes WDK Unidrv, color
 ms.date: 01/26/2023
+ms.topic: reference
 ---
 
 # Color attributes

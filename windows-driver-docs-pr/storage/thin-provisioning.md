@@ -5,6 +5,7 @@ keywords:
 - thin provisioning , WDK , Windows Server
 - thin provisioning , storage management
 ms.date: 09/24/2024
+ms.topic: concept-article
 ---
 
 # Thin Provisioning

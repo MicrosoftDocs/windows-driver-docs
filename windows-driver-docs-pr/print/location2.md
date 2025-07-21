@@ -2,6 +2,7 @@
 title: Location (Hole Punch)
 description: This property contains all the value entries that pertain to the location at which holes are punched in output pages.
 ms.date: 07/07/2020
+ms.topic: reference
 ---
 
 # Location (hole punch)

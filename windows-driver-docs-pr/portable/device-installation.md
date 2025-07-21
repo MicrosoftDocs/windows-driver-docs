@@ -2,6 +2,7 @@
 description: Device Installation
 title: Device Installation
 ms.date: 12/09/2024
+ms.topic: overview
 ---
 
 # Device Installation

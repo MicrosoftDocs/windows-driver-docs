@@ -3,6 +3,7 @@ title: Symbols for Windows Debugging
 description: Explore symbols for the Windows debuggers (WinDbg, KD, CDB, and NTSD) that are available from a public symbol server.
 keywords: ["symbols", "setup, symbols", "symbols, setup"]
 ms.date: 07/11/2025
+ms.topic: concept-article
 ---
 
 # Symbols for Windows debugging

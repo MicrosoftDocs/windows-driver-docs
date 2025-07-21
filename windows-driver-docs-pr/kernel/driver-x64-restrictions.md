@@ -2,6 +2,7 @@
 title: Driver x64 Restrictions
 description: Provides information about driver x64 restrictions.
 ms.date: 01/15/2025
+ms.topic: concept-article
 ---
 
 # Driver x64 restrictions

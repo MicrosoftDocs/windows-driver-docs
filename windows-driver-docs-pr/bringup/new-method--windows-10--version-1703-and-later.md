@@ -2,6 +2,7 @@
 title: New Method - Windows 10, Version 1703 and Later
 description: Provides information about the new Mbr2gpt.exe tool available to convert Legacy MBR disk to GPT disk in a non-destructive conversion.
 ms.date: 03/23/2023
+ms.topic: overview
 ---
 
 # New method - Windows 10, version 1703 and later

@@ -2,6 +2,7 @@
 description: Device Representation
 title: Device Representation
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Device Representation

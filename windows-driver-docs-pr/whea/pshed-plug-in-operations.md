@@ -5,6 +5,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , operations
 - PSHED plug-ins WDK WHEA , operations
 ms.date: 03/03/2023
+ms.topic: overview
 ---
 
 # PSHED Plug-In Operations

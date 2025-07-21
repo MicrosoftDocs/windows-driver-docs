@@ -8,6 +8,7 @@ keywords:
 - parser WDK GDL , handling whitespace
 - GDL WDK , whitespace characters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Whitespace Characters

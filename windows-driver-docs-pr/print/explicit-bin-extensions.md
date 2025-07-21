@@ -4,6 +4,7 @@ description: Explicit bin extensions
 keywords:
 - explicit bin extensions WDK printer
 ms.date: 06/21/2023
+ms.topic: concept-article
 ---
 
 # Explicit bin extensions

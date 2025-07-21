@@ -4,6 +4,7 @@ description: This section describes run-time filtering layer identifiers.
 keywords:
 - Run-time filtering layer identifiers network drivers
 ms.date: 11/08/2017
+ms.topic: concept-article
 ---
 
 # Run-time filtering layer identifiers

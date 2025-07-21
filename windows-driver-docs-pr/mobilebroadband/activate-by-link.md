@@ -2,6 +2,7 @@
 title: Use a QR code or URI link to download an eSIM profile
 description: eSIM profiles downloads on Windows devices can be triggered by scanning a QR code or clicking on a URI
 ms.date: 08/16/2024
+ms.topic: best-practice
 ---
 
 # Use a QR code or URI link to download an eSIM profile

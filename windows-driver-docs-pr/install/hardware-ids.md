@@ -2,6 +2,7 @@
 title: Hardware ID
 description: A hardware ID is a vendor-defined identification string that Windows uses to match a device to an INF file.
 ms.date: 12/04/2024
+ms.topic: concept-article
 ---
 
 # Hardware ID

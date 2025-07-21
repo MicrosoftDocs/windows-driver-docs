@@ -2,6 +2,7 @@
 title: GetWithArgument Request and Response Schemas
 description: The GetWithArgument request schema and corresponding response schema definition, and an example of each, are below.
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # GetWithArgument Request and Response Schemas

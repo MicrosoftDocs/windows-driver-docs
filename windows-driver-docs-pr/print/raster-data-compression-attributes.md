@@ -5,6 +5,7 @@ keywords:
 - data compression raster printing attributes WDK Unidrv
 - compression raster printing attributes WDK Unidrv
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Raster Data Compression Attributes

@@ -3,6 +3,7 @@ title: I/O Programming Techniques
 description: I/O Programming Techniques
 keywords: ["I/O WDK kernel", "kernel-mode drivers WDK , I/O techniques", "IO WDK See I/O WDK", "transferring data WDK kernel", "data transfers WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # I/O Programming Techniques

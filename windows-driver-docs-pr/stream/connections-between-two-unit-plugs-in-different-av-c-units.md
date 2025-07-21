@@ -7,6 +7,7 @@ keywords:
 - AVCCONNECTINFO
 - AVCPRECONNECTINFO
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Connections Between Two Unit Plugs in Different AV/C Units

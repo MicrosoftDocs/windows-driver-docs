@@ -9,6 +9,7 @@ keywords:
 - PCM buffers WDK audio
 - latency WDK audio , clocks
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Time-Stamped Events

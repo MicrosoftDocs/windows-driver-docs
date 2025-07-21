@@ -2,6 +2,7 @@
 title: General Requirements for Device Property Page Providers
 description: General Requirements for Device Property Page Providers
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # General Requirements for Device Property Page Providers

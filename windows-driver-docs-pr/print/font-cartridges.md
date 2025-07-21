@@ -6,6 +6,7 @@ keywords:
 - font cartridges WDK Unidrv
 - cartridge fonts WDK Unidrv
 ms.date: 06/23/2023
+ms.topic: concept-article
 ---
 
 # Font cartridges

@@ -6,6 +6,7 @@ keywords:
 - Enhancements tab WDK
 - default APO WDK
 ms.date: 11/07/2018
+ms.topic: overview
 ---
 
 # Windows Default APOs

@@ -2,6 +2,7 @@
 title: WdfTester WDF Driver Testing Toolset
 description: WdfTester WDF Driver Testing Toolset
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # WdfTester: WDF Driver Testing Toolset

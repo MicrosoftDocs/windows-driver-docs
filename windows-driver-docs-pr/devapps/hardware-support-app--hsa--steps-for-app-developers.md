@@ -8,6 +8,7 @@ keywords:
 - UWP
 - Hardware
 ms.date: 05/08/2025
+ms.topic: how-to
 ---
 
 # Hardware Support App (HSA): Steps for App Developers

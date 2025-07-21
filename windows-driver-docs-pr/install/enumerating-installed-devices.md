@@ -5,6 +5,7 @@ keywords:
 - enumerate installed devices WDK
 - installed devices WDK, enumerate
 ms.date: 08/29/2022
+ms.topic: how-to
 ---
 
 # Enumerate installed devices

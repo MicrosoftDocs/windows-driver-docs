@@ -2,6 +2,7 @@
 title: Roadmap for Developing NDIS Drivers
 description: Learn how to create a Network Driver Interface Specification (NDIS) driver package.
 ms.date: 01/31/2025
+ms.topic: checklist
 ---
 
 # Roadmap for developing NDIS drivers

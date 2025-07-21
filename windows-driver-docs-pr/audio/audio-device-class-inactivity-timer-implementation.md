@@ -12,6 +12,7 @@ keywords:
 - conservation power mode WDK audio
 - performance power mode WDK audio
 ms.date: 09/29/2022
+ms.topic: concept-article
 ---
 
 # Audio Device Class Inactivity Timer Implementation

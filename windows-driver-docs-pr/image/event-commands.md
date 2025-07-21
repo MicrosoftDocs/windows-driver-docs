@@ -2,6 +2,7 @@
 title: Event Commands
 description: The commands in this section are used by the microdriver for device event support.
 ms.date: 09/27/2021
+ms.topic: reference
 ---
 
 # Event Commands

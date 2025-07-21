@@ -7,6 +7,7 @@ keywords:
 - yellow exclamation point WDK Device Manager
 - messages WDK Device Manager
 ms.date: 03/04/2020
+ms.topic: error-reference
 ---
 
 # Device Manager Error Messages

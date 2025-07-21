@@ -7,6 +7,7 @@ keywords:
 - TMF files WDK , about TMF files
 - files WDK software tracing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Trace Message Format File

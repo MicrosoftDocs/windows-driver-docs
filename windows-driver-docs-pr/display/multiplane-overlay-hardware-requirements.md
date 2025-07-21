@@ -2,6 +2,7 @@
 title: Multiplane Overlay Hardware Requirements
 description: Hardware requirements needed to support multiplane overlays.
 ms.date: 12/18/2024
+ms.topic: checklist
 ---
 
 # Multiplane overlay hardware requirements

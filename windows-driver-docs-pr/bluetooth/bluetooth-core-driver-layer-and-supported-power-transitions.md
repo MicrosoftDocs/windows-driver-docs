@@ -2,6 +2,7 @@
 title: Bluetooth Core Driver Layer and Supported Power Transitions
 description: Summarizes device and system power states that the Bluetooth core driver supports.
 ms.date: 01/10/2024
+ms.topic: concept-article
 ---
 
 # Bluetooth core driver layer and supported power transitions

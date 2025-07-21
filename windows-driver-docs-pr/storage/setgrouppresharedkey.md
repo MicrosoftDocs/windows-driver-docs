@@ -2,6 +2,7 @@
 title: SetGroupPresharedKey
 description: SetGroupPresharedKey
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # SetGroupPresharedKey

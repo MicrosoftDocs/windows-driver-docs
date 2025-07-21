@@ -11,6 +11,7 @@ keywords:
 - built-in port drivers WDK audio
 - stream interfaces WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Miniport Interfaces

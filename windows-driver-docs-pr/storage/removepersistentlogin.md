@@ -2,6 +2,7 @@
 title: RemovePersistentLogin
 description: RemovePersistentLogin
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # RemovePersistentLogin

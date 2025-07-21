@@ -2,6 +2,7 @@
 title: WIA Scanner Item Tree for Windows Me and Windows XP
 description: WIA Scanner Item Tree for Windows Me and Windows XP
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Scanner Item Tree for Windows Me and Windows XP

@@ -5,6 +5,7 @@ keywords:
 - registry WDK device installations, delete a device's registry keys
 - delete registry keys WDK device installations
 ms.date: 08/29/2022
+ms.topic: how-to
 ---
 
 # Delete the registry keys of a device

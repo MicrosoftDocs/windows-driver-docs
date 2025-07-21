@@ -2,6 +2,7 @@
 title: INF Files for WIA Devices
 description: INF files for WIA devices
 ms.date: 05/08/2025
+ms.topic: reference
 ---
 
 # INF files for WIA devices

@@ -2,6 +2,7 @@
 title: WIA Feeder Scanners
 description: WIA Feeder Scanners
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Feeder Scanners

@@ -2,6 +2,7 @@
 title: Supported Scanner Paper Sizes
 description: Supported Scanner Paper Sizes
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # Supported Scanner Paper Sizes

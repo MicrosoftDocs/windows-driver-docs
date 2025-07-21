@@ -8,6 +8,7 @@ keywords:
 - status-change events WDK audio
 - power management WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Wake Enable

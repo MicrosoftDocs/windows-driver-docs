@@ -4,6 +4,7 @@ description: Discover the responsibilities and functions of a battery miniclass 
 keywords:
 - battery miniclass drivers WDK, functionality
 ms.date: 10/04/2023
+ms.topic: concept-article
 ---
 
 # Battery miniclass driver functionality

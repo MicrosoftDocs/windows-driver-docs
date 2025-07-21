@@ -2,6 +2,7 @@
 title: Local Machine and Current User Certificate Stores
 description: Local Machine and Current User Certificate Stores
 ms.date: 12/04/2024
+ms.topic: concept-article
 ---
 
 # Local machine and current user certificate stores

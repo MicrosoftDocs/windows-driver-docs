@@ -2,6 +2,7 @@
 title: WDM IRPs and WDF Event Callback Functions
 description: WDM IRPs and WDF Event Callback Functions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WDM IRPs and WDF Event Callback Functions

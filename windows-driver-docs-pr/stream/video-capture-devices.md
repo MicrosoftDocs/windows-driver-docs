@@ -4,6 +4,7 @@ description: Video Capture Devices
 keywords:
 - capturing video WDK AVStream
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Video Capture Devices

@@ -9,6 +9,7 @@ keywords:
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
 ms.date: 05/02/2024
+ms.topic: concept-article
 ---
 
 # Identifiers for PCI devices

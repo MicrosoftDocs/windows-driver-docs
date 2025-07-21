@@ -4,6 +4,7 @@ description: Tracelog Displays
 keywords:
 - Tracelog WDK , displays
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # Tracelog Displays

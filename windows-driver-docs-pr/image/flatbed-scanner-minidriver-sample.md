@@ -2,6 +2,7 @@
 title: Flatbed Scanner Minidriver Sample
 description: Flatbed Scanner Minidriver Sample
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Flatbed Scanner Minidriver Sample

@@ -6,6 +6,7 @@ keywords:
 ms.date: 03/07/2019
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # MB UICC application and file system access

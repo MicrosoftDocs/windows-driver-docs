@@ -2,6 +2,7 @@
 title: Multiple Voice Assistant
 description: The Multiple Voice Assistant platform provides support for additional voice assistants beyond Cortana. 
 ms.date: 04/13/2023
+ms.topic: concept-article
 ---
 
 # Multiple Voice Assistant

@@ -2,6 +2,7 @@
 title: Unified Extensible Firmware Interface (UEFI) 
 description: Provides information about Unified Extensible Firmware Interface (UEFI) 
 ms.date: 03/23/2023
+ms.topic: concept-article
 ---
 
 # Unified Extensible Firmware Interface (UEFI)

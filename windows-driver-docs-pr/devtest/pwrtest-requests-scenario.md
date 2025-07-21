@@ -2,6 +2,7 @@
 title: PwrTest Requests Scenario
 description: The PwrTest Requests Scenario logs power requests from processes and services running in the system as they happen.
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # PwrTest Requests Scenario

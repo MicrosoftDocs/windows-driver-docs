@@ -2,6 +2,7 @@
 title: UEFI Requirements for Windows on SoC Platforms
 description: This article describes UEFI requirements that apply to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
 ms.date: 03/23/2023
+ms.topic: checklist
 ---
 
 # UEFI requirements for Windows editions on SoC platforms

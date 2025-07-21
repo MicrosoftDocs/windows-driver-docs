@@ -2,6 +2,7 @@
 title: Non-Duplex-Capable Document Feeder
 description: Non-Duplex-Capable Document Feeder
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Non-Duplex-Capable Document Feeder

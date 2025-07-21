@@ -3,6 +3,7 @@ title: Features of Secure Mode
 description: Features of Secure Mode
 keywords: ["Secure Mode, overview"]
 ms.date: 08/27/2024
+ms.topic: overview
 ---
 
 # Features of Secure Mode

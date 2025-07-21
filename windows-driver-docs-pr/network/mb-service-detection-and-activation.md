@@ -4,6 +4,7 @@ description: MB Service Detection and Activation
 ms.date: 04/20/2017
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # MB Service Detection and Activation

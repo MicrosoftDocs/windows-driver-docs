@@ -5,6 +5,7 @@ keywords:
 - Kernel Streaming Proxy WDK AVStream , interface handler
 - interface handler WDK AVStream
 ms.date: 06/18/2020
+ms.topic: concept-article
 ---
 
 # Interface handler plug-in

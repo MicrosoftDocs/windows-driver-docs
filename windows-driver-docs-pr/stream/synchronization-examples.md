@@ -7,6 +7,7 @@ keywords:
 - minidrivers WDK Windows 2000 Kernel Streaming , synchronization
 - synchronization WDK streaming minidriver
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Synchronization Examples

@@ -5,6 +5,7 @@ keywords:
 - Overlay DDI WDK Windows 7 display , programming considerations
 - Overlay DDI WDK Server 2008 R2 display , programming considerations
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # Overlay DDI Programming Considerations

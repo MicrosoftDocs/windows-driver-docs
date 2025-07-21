@@ -2,6 +2,7 @@
 title: Full-Duplex I/O Requests
 description: Some buses, such as SPI, support full-duplex bus transfers.
 ms.date: 09/14/2021
+ms.topic: concept-article
 ---
 
 # Full-Duplex I/O Requests

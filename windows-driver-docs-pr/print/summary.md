@@ -2,6 +2,7 @@
 title: Summary Property
 description: A brief description of the current state of the device.
 ms.date: 09/08/2021
+ms.topic: reference
 ---
 
 # Summary property

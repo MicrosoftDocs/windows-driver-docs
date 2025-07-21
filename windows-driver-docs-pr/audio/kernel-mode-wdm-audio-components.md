@@ -21,6 +21,7 @@ keywords:
 - IEEE 1394 WDK audio
 - WDM audio components WDK
 ms.date: 05/08/2018
+ms.topic: concept-article
 ---
 
 # Kernel-Mode WDM Audio Components

@@ -2,6 +2,7 @@
 title: Appendix 2 Signing Drivers with Visual Studio
 description: Describes how to sign Windows device drivers using Microsoft Visual Studio.
 ms.date: 05/21/2024
+ms.topic: how-to
 ---
 
 # Appendix 2: Signing Drivers with Visual Studio

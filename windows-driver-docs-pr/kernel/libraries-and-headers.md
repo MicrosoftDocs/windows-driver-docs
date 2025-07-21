@@ -2,6 +2,7 @@
 title: Libraries and Headers
 description: Libraries and Headers
 ms.date: 07/12/2022
+ms.topic: concept-article
 ---
 
 # Libraries and Headers

@@ -2,6 +2,7 @@
 title: IRP Major Function Codes
 description: Provides information about IRP major function codes.
 ms.date: 02/21/2025
+ms.topic: reference
 ---
 
 # IRP major function codes

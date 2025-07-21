@@ -2,6 +2,7 @@
 title: Wi-Fi Direct
 description: Provides information on the use of Wi-Fi Direct WinRT APIs in Windows applications.
 ms.date: 09/26/2024
+ms.topic: concept-article
 ---
 
 # Wi-Fi Direct

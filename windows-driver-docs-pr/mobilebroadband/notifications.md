@@ -2,6 +2,7 @@
 title: Notifications
 description: Notifications
 ms.date: 10/06/2023
+ms.topic: concept-article
 ---
 
 # Notifications

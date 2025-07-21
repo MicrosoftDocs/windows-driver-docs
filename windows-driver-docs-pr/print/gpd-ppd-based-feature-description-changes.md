@@ -2,6 +2,7 @@
 title: GPD/PPD-Based Feature Description Changes
 description: GPD/PPD-Based Feature Description Changes
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # GPD/PPD-Based Feature Description Changes

@@ -3,6 +3,7 @@ title: StartIo Routines in Lowest-Level Drivers
 description: Describes how StartIo routines are processed in low-level drivers.
 keywords: ["StartIo routines, lowest-level drivers", "I/O control requests WDK kernel", "buffered I/O WDK kernel", "direct I/O WDK kernel", "synchronization WDK IRPs"]
 ms.date: 07/23/2021
+ms.topic: concept-article
 ---
 
 # StartIo Routines in Lowest-Level Drivers

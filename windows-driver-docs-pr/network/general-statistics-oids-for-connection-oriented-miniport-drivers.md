@@ -4,6 +4,7 @@ description: This topic describes general statistics OIDs for connection-oriente
 keywords:
 - General statistics OIDs connection-oriented miniport drivers
 ms.date: 11/02/2017
+ms.topic: reference
 ---
 
 # General statistics OIDs for connection-oriented miniport drivers

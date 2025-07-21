@@ -2,6 +2,7 @@
 title: Direct3D Version 10 Runtime and Driver Handles
 description: Direct3D Version 10 Runtime and Driver Handles
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Direct3D Version 10 Runtime and Driver Handles

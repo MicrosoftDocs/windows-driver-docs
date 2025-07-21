@@ -7,6 +7,7 @@ keywords:
 - SFD WDK storage , DriverEntry
 - DriverEntry WDK storage
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Storage Filter Driver's DriverEntry Routine

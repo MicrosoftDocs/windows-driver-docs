@@ -2,6 +2,7 @@
 title: Custom Audio Driver Type Decision Tree
 description: Custom Audio Driver Type Decision Tree
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Custom Audio Driver Type Decision Tree

@@ -2,6 +2,7 @@
 title: OPM and ChangeDisplaySettingsEx
 description: OPM and ChangeDisplaySettingsEx
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # OPM and ChangeDisplaySettingsEx

@@ -2,6 +2,7 @@
 title: VMQ Send and Receive Operations
 description: VMQ Send and Receive Operations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # VMQ Send and Receive Operations

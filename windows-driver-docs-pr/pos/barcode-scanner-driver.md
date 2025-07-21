@@ -2,6 +2,7 @@
 title: Barcode Scanner Driver Sample
 description: The barcode scanner driver sample demonstrates how to create a Universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver.
 ms.date: 04/28/2025
+ms.topic: install-set-up-deploy
 ---
 
 # Barcode scanner driver sample

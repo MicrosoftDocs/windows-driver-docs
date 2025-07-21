@@ -6,6 +6,7 @@ keywords:
 - default data-intersection handlers
 - minimal data-intersection handlers WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Default Data-Intersection Handlers

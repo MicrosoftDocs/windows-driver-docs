@@ -13,6 +13,7 @@ keywords:
 - note-on events WDK audio
 - note-off events WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # MIDI and DirectMusic Components

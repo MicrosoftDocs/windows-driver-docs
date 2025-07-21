@@ -8,6 +8,7 @@ keywords:
 - errors WDK WHEA , Windows and firmware
 - firmware WDK WHEA
 ms.date: 03/26/2025
+ms.topic: concept-article
 ---
 
 # Relationship between Microsoft Windows and the System Firmware

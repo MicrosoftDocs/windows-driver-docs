@@ -3,6 +3,7 @@ title: Linux symbols and sources
 description: Linux symbols and sources
 keywords: ["symbols, linux, process"]
 ms.date: 01/31/2025
+ms.topic: concept-article
 ---
 
 # Linux symbols and sources

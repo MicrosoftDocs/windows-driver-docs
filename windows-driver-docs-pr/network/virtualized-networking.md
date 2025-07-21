@@ -2,6 +2,7 @@
 title: Virtualized Networking Topics
 description: Virtualized Networking Topics
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Virtualized Networking Topics

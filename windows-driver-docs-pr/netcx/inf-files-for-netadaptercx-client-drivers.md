@@ -4,6 +4,7 @@ description: INF files for NetAdapterCx client drivers
 keywords:
 - INF files for NetAdapterCx client drivers, NetCx INF files, NetAdapterCx INF
 ms.date: 08/13/2018
+ms.topic: reference
 ---
 
 # INF files for NetAdapterCx client drivers

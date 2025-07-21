@@ -4,6 +4,7 @@ description: In the GpuMmu model, the graphics processing unit (GPU) has its own
 keywords:
 - WDDM 2.0 , GpuMmu model , GPU , memory management unit , GPU memory management
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # GpuMmu model

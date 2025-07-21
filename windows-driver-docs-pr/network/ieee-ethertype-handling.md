@@ -9,6 +9,7 @@ keywords:
 - privacy exceptions WDK Native 802.11 IHV Extensions DLL
 - decryption WDK Native 802.11 IHV Extensions DLL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # IEEE EtherType Handling

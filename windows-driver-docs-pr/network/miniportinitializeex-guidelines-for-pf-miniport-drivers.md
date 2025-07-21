@@ -2,6 +2,7 @@
 title: MiniportInitializeEx Guidelines for PF Miniport Drivers
 description: MiniportInitializeEx Guidelines for PF Miniport Drivers
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # MiniportInitializeEx Guidelines for PF Miniport Drivers

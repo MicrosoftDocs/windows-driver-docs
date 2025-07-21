@@ -2,6 +2,7 @@
 title: Smart Card Plug and Play
 description: Smart Card Plug and Play
 ms.date: 05/08/2023
+ms.topic: how-to
 ---
 
 # Smart Card Plug and Play

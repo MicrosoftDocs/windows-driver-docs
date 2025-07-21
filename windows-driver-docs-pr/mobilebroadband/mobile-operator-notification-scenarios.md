@@ -2,6 +2,7 @@
 title: Mobile Operator Notification Scenarios
 description: Mobile operator notification scenarios
 ms.date: 02/08/2024
+ms.topic: concept-article
 ---
 
 # Mobile operator notification scenarios

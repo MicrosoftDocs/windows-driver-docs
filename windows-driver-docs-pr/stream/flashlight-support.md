@@ -2,6 +2,7 @@
 title: Flashlight Support
 description: This topic provides guidance on how the WinRT Lamp API should be supported by devices
 ms.date: 08/16/2019
+ms.topic: concept-article
 ---
 
 # Flashlight Support

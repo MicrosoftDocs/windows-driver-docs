@@ -2,6 +2,7 @@
 title: Pscript5 Keywords
 description: Pscript5 Keywords
 ms.date: 12/19/2024
+ms.topic: reference
 ---
 
 # Pscript5 keywords

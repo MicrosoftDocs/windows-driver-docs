@@ -2,6 +2,7 @@
 description: This article provides a brief overview about using Event Tracing for Windows (ETW) to examine USB selective suspend state and identifying system energy efficiency problems by using the Windows PowerCfg utility.
 title: USB ETW and Power Management
 ms.date: 12/02/2022
+ms.topic: overview
 ---
 
 # USB ETW and power management

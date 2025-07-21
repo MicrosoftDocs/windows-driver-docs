@@ -5,6 +5,7 @@ keywords:
 - header-data split WDK , receive indications
 - received data formats WDK header-data split
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Receive Indications with Header-Data Split

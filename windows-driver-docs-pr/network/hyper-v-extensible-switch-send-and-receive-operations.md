@@ -2,6 +2,7 @@
 title: Hyper-V Extensible Switch Send and Receive Operations
 description: Hyper-V Extensible Switch Send and Receive Operations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Hyper-V Extensible Switch Send and Receive Operations

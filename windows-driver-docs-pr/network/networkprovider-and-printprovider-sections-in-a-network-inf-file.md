@@ -9,6 +9,7 @@ keywords:
 - PrintProvider section WDK networking
 - NetworkProvider section WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # NetworkProvider and PrintProvider Sections in a Network INF File

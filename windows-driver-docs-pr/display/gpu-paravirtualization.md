@@ -6,6 +6,7 @@ keywords:
 - virtualization, GPU, Windows
 - WDDM , GPUP , GPU-PV
 ms.date: 02/06/2025
+ms.topic: concept-article
 ---
 
 # GPU paravirtualization

@@ -8,6 +8,7 @@ keywords:
 - near field proximity
 - NFP
 ms.date: 01/11/2024
+ms.topic: reference
 ---
 
 # NFP device interface

@@ -5,6 +5,7 @@ keywords:
 - filter specific allocators WDK kernel streaming
 - filter allocators WDK kernel streaming
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Filter Specific Allocators

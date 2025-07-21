@@ -10,6 +10,7 @@ keywords:
 - sensory data
 - accelerometers
 - gyroscope
+ms.topic: concept-article
 ---
 
 # HID application programming interface (API)

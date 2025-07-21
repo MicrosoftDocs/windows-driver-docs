@@ -4,6 +4,7 @@ description: Packet Inspection Points
 keywords:
 - packet inspection points WDK Windows Filtering Platform
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Packet Inspection Points

@@ -3,6 +3,7 @@ title: Universal Serial Bus Viewer in Windows
 description: Explore the Universal Serial Bus Viewer (USBView) in Windows and browse all USB controllers and connected USB devices on your computer.
 keywords: ["USBView"]
 ms.date: 07/11/2025
+ms.topic: how-to
 ---
 
 # Universal Serial Bus Viewer in Windows

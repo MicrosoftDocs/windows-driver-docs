@@ -5,6 +5,7 @@ keywords:
 - filtering trace messages, special actions WDK
 - trace message filters WDK , special actions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Special Actions for Filter Rules

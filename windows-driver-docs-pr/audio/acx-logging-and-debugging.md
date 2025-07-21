@@ -3,6 +3,7 @@ title: ACX Logging and Debugging
 description: This topic provides information on logging, tracing and debugging of the ACX Audio Class Extensions.
 ms.date: 05/03/2024
 ms.localizationpriority: medium
+ms.topic: troubleshooting
 ---
 
 # ACX logging and debugging

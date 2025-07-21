@@ -9,6 +9,7 @@ keywords:
 - shutdown WDK networking
 - closing CoNDIS TAPI operations calls WDK CoNDIS WAN
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # CoNDIS TAPI Shutdown

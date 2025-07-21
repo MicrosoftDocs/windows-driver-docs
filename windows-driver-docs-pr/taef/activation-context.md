@@ -2,6 +2,7 @@
 title: Activation Context
 description: Activation Context
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Activation Context

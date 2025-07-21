@@ -2,6 +2,7 @@
 title: Flatbed Scanners that Support Film Scanning
 description: Flatbed Scanners that Support Film Scanning
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Flatbed Scanners that Support Film Scanning

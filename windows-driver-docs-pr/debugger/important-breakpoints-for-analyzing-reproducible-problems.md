@@ -3,6 +3,7 @@ title: Important Breakpoints for Analyzing Reproducible Problems
 description: Important Breakpoints for Analyzing Reproducible Problems
 keywords: ["SCSI Miniport Debugging, breakpoints and reproducible problems"]
 ms.date: 05/23/2017
+ms.topic: troubleshooting-general
 ---
 
 # Important Breakpoints for Analyzing Reproducible Problems

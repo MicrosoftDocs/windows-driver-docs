@@ -2,6 +2,7 @@
 title: Bidirectional Request and Response Schemas
 description: The Bidirectional Request and Response Schemas provide an XML-formatted set of queries and responses that can be used for bidirectional communication between applications and printers.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Bidirectional Request and Response Schemas

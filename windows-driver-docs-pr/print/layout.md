@@ -2,6 +2,7 @@
 title: Layout Property
 description: Contains information about the appearance of each page of the print job.
 ms.date: 09/07/2021
+ms.topic: reference
 ---
 
 # Layout property

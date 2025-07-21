@@ -5,6 +5,7 @@ keywords:
 - printer font descriptions WDK Unidrv , hardware-resident fonts
 - hardware-resident fonts WDK Unidrv
 ms.date: 06/23/2023
+ms.topic: concept-article
 ---
 
 # Hardware-resident fonts

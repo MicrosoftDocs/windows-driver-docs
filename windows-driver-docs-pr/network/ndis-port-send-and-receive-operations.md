@@ -9,6 +9,7 @@ keywords:
 - target ports WDK NDIS
 - source ports WDK NDIS
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # NDIS Port Send and Receive Operations

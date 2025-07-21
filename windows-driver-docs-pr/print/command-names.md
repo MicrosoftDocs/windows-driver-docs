@@ -5,6 +5,7 @@ keywords:
 - printer commands WDK Unidrv , names
 - names WDK printer commands
 ms.date: 01/26/2023
+ms.topic: reference
 ---
 
 # Command Names

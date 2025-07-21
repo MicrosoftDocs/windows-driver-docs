@@ -4,6 +4,7 @@ description: Limitations of TraceView Workspaces
 keywords:
 - workspaces WDK TraceView , limitations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Limitations of TraceView Workspaces

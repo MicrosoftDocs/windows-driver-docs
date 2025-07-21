@@ -2,6 +2,7 @@
 title: Tools Included in Debugging Tools for Windows
 description: Learn about the other tools included in Debugging Tools for Windows that are in addition to the debugging engine and debugging environments.
 ms.date: 07/11/2025
+ms.topic: overview
 ---
 
 # Tools included in Debugging Tools for Windows

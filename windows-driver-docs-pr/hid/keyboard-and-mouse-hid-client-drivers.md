@@ -10,6 +10,7 @@ keywords:
 - HID mouse driver for Windows
 ms.date: 04/16/2025
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 
 # Developing keyboard and mouse HID client drivers

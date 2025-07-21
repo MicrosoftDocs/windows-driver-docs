@@ -3,6 +3,7 @@ title: Wait/Wake IRP Requests
 description: Wait/Wake IRP Requests
 keywords: ["sending wait/wake IRPs", "wake-up signal enabled WDK kernel", "wait/wake IRPs WDK power management , sending"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Wait/Wake IRP Requests

@@ -5,6 +5,7 @@ keywords:
 - Summary of NetAdapterCx objects, NetCx summary of objects
 ms.date: 11/01/2018
 ms.custom: 19H1
+ms.topic: concept-article
 ---
 
 # Summary of NetAdapterCx objects

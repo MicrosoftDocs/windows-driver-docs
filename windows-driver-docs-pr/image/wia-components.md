@@ -2,6 +2,7 @@
 title: WIA Components
 description: WIA components
 ms.date: 05/04/2023
+ms.topic: concept-article
 ---
 
 # WIA components

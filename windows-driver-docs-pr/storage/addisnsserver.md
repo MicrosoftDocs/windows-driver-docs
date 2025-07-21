@@ -2,6 +2,7 @@
 title: AddiSNSServer
 description: AddiSNSServer
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # AddiSNSServer

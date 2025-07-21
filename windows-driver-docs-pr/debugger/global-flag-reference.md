@@ -3,6 +3,7 @@ title: Global Flag Reference
 description: Global Flag Reference
 keywords: ["GFlags, global flag reference"]
 ms.date: 05/23/2017
+ms.topic: error-reference
 ---
 
 # Global Flag Reference

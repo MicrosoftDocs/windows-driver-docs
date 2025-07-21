@@ -2,6 +2,7 @@
 title: Rules for coalescing TCP/IP segments
 description: This section defines the rules for coalescing TCP/IP segments in miniport drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Rules for Coalescing TCP/IP Segments

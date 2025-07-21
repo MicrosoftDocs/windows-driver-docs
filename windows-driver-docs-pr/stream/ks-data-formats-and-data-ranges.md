@@ -15,6 +15,7 @@ keywords:
 - kernel streaming WDK , data formats
 - KS WDK , data formats
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # KS Data Formats and Data Ranges

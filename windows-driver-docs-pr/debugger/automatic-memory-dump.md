@@ -2,6 +2,7 @@
 title: Automatic Memory Dump
 description: Automatic Memory Dump
 ms.date: 05/08/2018
+ms.topic: concept-article
 ---
 
 # Automatic Memory Dump

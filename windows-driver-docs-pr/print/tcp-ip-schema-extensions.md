@@ -4,6 +4,7 @@ description: TCP/IP Schema Extensions
 keywords:
 - in-box autoconfiguration support WDK printer , TCP/IP schema extensions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # TCP/IP Schema Extensions

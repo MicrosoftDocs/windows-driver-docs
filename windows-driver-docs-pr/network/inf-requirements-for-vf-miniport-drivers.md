@@ -2,6 +2,7 @@
 title: INF Requirements for VF Miniport Drivers
 description: INF Requirements for VF Miniport Drivers
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # INF Requirements for VF Miniport Drivers

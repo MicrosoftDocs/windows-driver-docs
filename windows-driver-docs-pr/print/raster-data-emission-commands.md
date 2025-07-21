@@ -5,6 +5,7 @@ keywords:
 - data emission raster printing commands WDK Unidrv
 - emission raster printing commands WDK Unidrv
 ms.date: 01/29/2024
+ms.topic: reference
 ---
 
 # Raster data emission commands

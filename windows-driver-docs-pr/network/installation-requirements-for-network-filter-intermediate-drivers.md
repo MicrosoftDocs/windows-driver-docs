@@ -6,6 +6,7 @@ keywords:
 - service INF files WDK networking
 - device INF files WDK networking
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Installation Requirements for Network Filter Intermediate Drivers

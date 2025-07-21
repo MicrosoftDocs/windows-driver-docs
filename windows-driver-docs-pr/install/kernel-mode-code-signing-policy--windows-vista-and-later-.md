@@ -11,6 +11,7 @@ keywords:
 - driver package digital signatures WDK
 - package digital signatures WDK
 ms.date: 08/19/2024
+ms.topic: concept-article
 ---
 
 # Driver Signing Policy

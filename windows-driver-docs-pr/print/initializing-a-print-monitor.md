@@ -6,6 +6,7 @@ keywords:
 - initializing print monitors
 - LoadLibrary
 ms.date: 09/14/2022
+ms.topic: how-to
 ---
 
 # Initialize a print monitor

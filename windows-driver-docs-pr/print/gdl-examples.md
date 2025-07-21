@@ -5,6 +5,7 @@ keywords:
 - GDL WDK , examples
 - examples WDK GDL
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # GDL Examples

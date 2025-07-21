@@ -3,6 +3,7 @@ title: ACX Power Management
 description: This topic provides a summary of the ACX power management
 ms.date: 03/07/2024
 ms.localizationpriority: medium
+ms.topic: concept-article
 ---
 
 # ACX power management

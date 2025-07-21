@@ -6,6 +6,7 @@ keywords:
 - network INF files WDK , DDInstall section
 - DDInstall section WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # DDInstall Section in a Network INF File

@@ -6,6 +6,7 @@ keywords:
 - rank ranges WDK device installations
 - range ranking WDK device installations
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Driver Package Rank Example

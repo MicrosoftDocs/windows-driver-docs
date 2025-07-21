@@ -2,6 +2,7 @@
 title: Build a UWP Device App Step-By-Step
 description: This step-by-step guide describes in detail how to build a UWP device app with Microsoft Visual Studio and the Device Metadata Authoring Wizard.
 ms.date: 03/17/2023
+ms.topic: how-to
 ---
 
 # Build a UWP device app step-by-step

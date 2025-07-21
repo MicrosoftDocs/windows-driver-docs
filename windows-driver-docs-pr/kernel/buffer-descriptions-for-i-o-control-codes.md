@@ -3,6 +3,7 @@ title: Buffer Descriptions for I/O Control Codes
 description: Buffer Descriptions for I/O Control Codes
 keywords: ["I/O control codes WDK kernel , buffer descriptions", "control codes WDK IOCTLs , buffer descriptions", "IOCTLs WDK kernel , buffer descriptions", "buffer descriptions WDK IOCTLs"]
 ms.date: 04/30/2025
+ms.topic: reference
 ---
 
 # Buffer Descriptions for I/O Control Codes

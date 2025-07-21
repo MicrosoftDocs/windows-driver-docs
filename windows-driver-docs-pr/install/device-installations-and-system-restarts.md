@@ -9,6 +9,7 @@ keywords:
 - initiating reboots during device installations
 - restarting during device installations
 ms.date: 05/20/2022
+ms.topic: best-practice
 ---
 
 # Device Installations and System Restarts

@@ -2,6 +2,7 @@
 title: Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1
 description: You can do kernel debugging over an Ethernet network cable when the target computer is running Windows 8.1. The target computer must have a supported network interface card (NIC) or network adapter.
 ms.date: 02/20/2020
+ms.topic: reference
 ---
 
 # Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1

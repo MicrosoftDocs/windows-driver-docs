@@ -2,6 +2,7 @@
 title: WinUSB Device
 description: Learn about how Windows recognizes a WinUSB device in this article.
 ms.date: 12/04/2024
+ms.topic: concept-article
 ---
 
 # WinUSB device

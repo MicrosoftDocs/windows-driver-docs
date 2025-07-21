@@ -6,6 +6,7 @@ keywords:
 - WDDM , ADS , GPU
 - WDDM , mux device , GPU switching
 ms.date: 02/06/2025
+ms.topic: concept-article
 ---
 
 # Automatic display switch

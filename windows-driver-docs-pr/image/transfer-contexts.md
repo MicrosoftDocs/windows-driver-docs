@@ -2,6 +2,7 @@
 title: Transfer Contexts
 description: Transfer Contexts
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Transfer Contexts

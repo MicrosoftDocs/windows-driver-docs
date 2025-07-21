@@ -2,6 +2,7 @@
 title: Port Policies
 description: Port Policies
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Port Policies

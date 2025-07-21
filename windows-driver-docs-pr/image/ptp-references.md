@@ -2,6 +2,7 @@
 title: PTP References
 description: PTP References
 ms.date: 05/29/2020
+ms.topic: reference
 ---
 
 # PTP References

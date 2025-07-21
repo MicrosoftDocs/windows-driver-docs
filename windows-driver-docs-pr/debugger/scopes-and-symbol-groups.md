@@ -3,6 +3,7 @@ title: Scopes and Symbol Groups
 description: Scopes and Symbol Groups
 keywords: ["Debugger Engine API, symbols, symbol groups", "symbol group, scopes", "Debugger Engine API, symbols, scopes", "scopes"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Scopes and Symbol Groups

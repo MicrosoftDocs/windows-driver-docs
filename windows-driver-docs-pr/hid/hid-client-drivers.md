@@ -2,6 +2,7 @@
 title: HID Client Drivers
 description: If a system-supplied HID minidriver does not support a device's port or bus, a vendor supplied minidriver is required.
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # HID client drivers

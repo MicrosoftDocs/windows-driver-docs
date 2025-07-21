@@ -5,6 +5,7 @@ keywords:
 - TraceView WDK , window
 - trace sessions WDK , displaying
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # Initial View

@@ -6,6 +6,7 @@ keywords:
 - Unicode representations WDK GDL
 - parser WDK GDL , Unicod representations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Unicode Representations in XML Snapshots

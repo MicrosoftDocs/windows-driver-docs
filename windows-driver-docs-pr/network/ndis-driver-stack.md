@@ -4,6 +4,7 @@ description: Learn about configurations of a Network Driver Interface Specificat
 keywords:
 - driver stacks WDK networking , NDIS basic configuration
 ms.date: 12/17/2024
+ms.topic: concept-article
 ---
 
 # NDIS driver stack

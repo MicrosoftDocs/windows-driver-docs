@@ -2,6 +2,7 @@
 title: Container Support for non-DX APIs
 description: Non-DX APIs must interact with drivers and kernel more directly, so they are exposed to more complications
 ms.date: 05/07/2019
+ms.topic: concept-article
 ---
 
 # Container support for non-DX APIs

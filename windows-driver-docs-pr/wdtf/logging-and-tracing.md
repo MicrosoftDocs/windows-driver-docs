@@ -5,6 +5,7 @@ keywords:
 - logging WDK WDTF
 - tracing WDK WDTF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WDTF Object Logging

@@ -2,6 +2,7 @@
 title: Packet Flow through the Extensible Switch Data Path
 description: Packet Flow through the Extensible Switch Data Path
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Packet Flow through the Extensible Switch Data Path

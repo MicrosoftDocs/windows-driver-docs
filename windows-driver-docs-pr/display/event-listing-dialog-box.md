@@ -2,6 +2,7 @@
 title: Event Listing Dialog Box
 description: "The Event Listing dialog box's main purpose is to allow for detailed exploring of events (or classes of events) over specific periods for a specific focus."
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Event Listing Dialog Box  

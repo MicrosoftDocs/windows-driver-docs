@@ -3,6 +3,7 @@ title: DSSA Log Filter
 description: TextAnalysisTool Filter for DSSA
 ms.assetid: 4d575360-e867-4025-bb7d-575e1795c7e5
 ms.date: 03/01/2021
+ms.topic: how-to
 ---
 
 # DSSA Log Filter

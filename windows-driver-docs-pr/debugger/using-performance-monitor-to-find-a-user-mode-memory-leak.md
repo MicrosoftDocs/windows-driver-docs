@@ -3,6 +3,7 @@ title: Use Performance Monitor to Find a User-Mode Memory Leak
 description: Learn how to use Performance Monitor to find a user-mode memory leak and to measure the memory usage of individual processes.
 keywords: ["memory leak, user-mode, performance monitor"]
 ms.date: 08/26/2024
+ms.topic: how-to
 ---
 
 # Use Performance Monitor to find a user-mode memory leak

@@ -8,6 +8,7 @@ keywords:
 - video decoding WDK DirectX VA
 - decoding video WDK DirectX VA
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Video Decode Acceleration for DirectX VA 2.0
