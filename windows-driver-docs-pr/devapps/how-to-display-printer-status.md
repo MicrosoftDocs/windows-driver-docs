@@ -1,11 +1,14 @@
 ---
 title: How to Display Printer Status in a UWP Device App
 description: This topic uses the C# version of the Print settings and print notifications sample to demonstrate how to query the printer status and display it.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
 ms.topic: how-to
 ---
 
 # How to display printer status in a UWP device app
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 In Windows 8.1, users can check their printer status from the modern UI of a UWP device app. This topic uses the C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample to demonstrate how to query the printer status and display it. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
@@ -308,14 +311,9 @@ If your printer was found when enumerating the associated printers, but a Bidi q
 
 ## Related topics
 
-[Developing v4 print drivers](../print/v4-printer-driver.md)
-
-[Printer Extension Interfaces (v4 Print Driver)](/windows-hardware/drivers/ddi/_print/)
-
-[Bidirectional Communications](../print/bidirectional-communication.md)
-
-[Getting started with UWP apps](getting-started.md)
-
-[Create a UWP device app (step-by-step guide)](step-1--create-a-uwp-device-app.md)
-
-[Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
+- [Developing v4 print drivers](../print/v4-printer-driver.md)
+- [Printer Extension Interfaces (v4 Print Driver)](/windows-hardware/drivers/ddi/_print/)
+- [Bidirectional Communications](../print/bidirectional-communication.md)
+- [Getting started with UWP apps](getting-started.md)
+- [Create a UWP device app (step-by-step guide)](step-1--create-a-uwp-device-app.md)
+- [Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)

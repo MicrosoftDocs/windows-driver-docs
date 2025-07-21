@@ -1,7 +1,7 @@
 ---
 title: Creating a Camera Driver MFT for a UWP Device App
 description: UWP device apps let device manufacturers apply custom settings and special effects on the camera's video stream with a camera driver MFT (media foundation transform).
-ms.date: 03/17/2023
+ms.date: 07/21/2025
 ms.topic: how-to
 ---
 
@@ -9,6 +9,9 @@ ms.topic: how-to
 
 > [!IMPORTANT]
 > This topic has been deprecated. See the [Device MFT design guide](../stream/dmft-design.md) for updated guidance.
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 UWP device apps let device manufacturers apply custom settings and special effects on the camera's video stream with a camera driver MFT (media foundation transform). This topic introduces driver MFTs and uses the [Driver MFT](/samples/browse/) sample to show how to create one. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
@@ -318,25 +321,17 @@ UWP device apps for internal cameras are eligible for [Automatic installation](a
 For both internal and external cameras, you need to create a device metadata package. When you submit your camera's UWP device app to the Microsoft Store (or preinstall it using the OPK, in the case of internal cameras), in addition to the app itself, you'll need to provide metadata containing the following:
 
 - Application publisher name
-
 - Application package name
-
 - Application element identifier
-
 - Device experience identifier
 
 For more info about how to use device metadata to associate your app with your device, see [Building UWP device apps](the-workflow.md).
 
 ## Related topics
 
-[Building UWP device apps](the-workflow.md)
-
-[Automatic installation for UWP device apps](auto-install-for-uwp-device-apps.md)
-
-[Hardware Handshake Sequence (Hardware MFTs)](/windows/win32/medfound/hardware-mfts)
-
-[AVStream Minidrivers Design Guide](../stream/avstream-minidrivers-design-guide.md)
-
-[UWP device app for camera sample](/samples/browse/)
-
-[Driver MFT sample](/samples/browse/)
+- [Building UWP device apps](the-workflow.md)
+- [Automatic installation for UWP device apps](auto-install-for-uwp-device-apps.md)
+- [Hardware Handshake Sequence (Hardware MFTs)](/windows/win32/medfound/hardware-mfts)
+- [AVStream Minidrivers Design Guide](../stream/avstream-minidrivers-design-guide.md)
+- [UWP device app for camera sample](/samples/browse/)
+- [Driver MFT sample](/samples/browse/)

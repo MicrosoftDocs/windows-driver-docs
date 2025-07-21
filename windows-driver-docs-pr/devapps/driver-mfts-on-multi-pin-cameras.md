@@ -1,13 +1,16 @@
 ---
 title: Using Driver MFTs on Multi-Pin Cameras
 description: Some cameras provide separate pins for preview, capture, and stills. These multi-pin cameras pose unique challenges to developers. This topic covers some points to consider when developing a camera driver MFT on a multi-pin camera.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
 ms.topic: concept-article
 ---
 
 # Considerations for Driver MFTs on multi-pin cameras (UWP device apps)
 
-Windows 8.1 offers IHVs and system OEMs the ability to create video processing plug-ins in the form of a Media Foundation Transform (MFT), known as the camera driver MFT. Once installed, these driver MFTs can be used by UWP device apps to enable special video effects. Some cameras provide separate pins for preview, capture, and stills. These multi-pin cameras pose unique challenges to developers. This topic covers some points to consider when developing a camera driver MFT on a multi-pin camera. For more info about creating a driver MFT, see [Creating a camera driver MFT](creating-a-camera-driver-mft.md).
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
+
+Windows offers IHVs and system OEMs the ability to create video processing plug-ins in the form of a Media Foundation Transform (MFT), known as the camera driver MFT. Once installed, these driver MFTs can be used by UWP device apps to enable special video effects. Some cameras provide separate pins for preview, capture, and stills. These multi-pin cameras pose unique challenges to developers. This topic covers some points to consider when developing a camera driver MFT on a multi-pin camera. For more info about creating a driver MFT, see [Creating a camera driver MFT](creating-a-camera-driver-mft.md).
 
 ## Introduction
 
