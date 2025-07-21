@@ -7,6 +7,9 @@ ms.topic: how-to
 
 # Step 2: Create device metadata for your UWP device app
 
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
+
 ![device app workflow, step 2.](images/2-device-app-workflow.png)
 
 This topic describes how to use the **Device Metadata Authoring Wizard** to create new device metadata that associates your UWP device app with a device. The wizard can also create a **StoreManifest.xml** file that you may need to add to your app in the next step.
@@ -82,8 +85,6 @@ The **Device Metadata Authoring Wizard** is used to create new device metadata.
 
 ## Related topics
 
-[Building UWP device apps](the-workflow.md)
-
-[Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md)
-
-[UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md)
+- [Building UWP device apps](the-workflow.md)
+- [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md)
+- [UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md)

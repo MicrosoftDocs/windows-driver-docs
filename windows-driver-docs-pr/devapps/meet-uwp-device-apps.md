@@ -1,11 +1,14 @@
 ---
 title: Meet UWP Device Apps
 description: This topic provides an overview of the features and capabilities that make a UWP device app uniquely different from a regular UWP app.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
 ms.topic: overview
 ---
 
 # Meet UWP device apps
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 Device manufacturers can create a UWP device app that serves as a companion to their device. Device apps are able to use the full range of functionality of a peripheral or internal device and can perform privileged operations, such as firmware updates. This topic provides an overview of the features and capabilities that make a UWP device app uniquely different from a regular UWP app.
 
@@ -80,10 +83,7 @@ For more info about automatic installation, see [Automatic installation for prin
 
 ## Related topics
 
-[Building UWP device apps](the-workflow.md)
-
-[Automatic installation for UWP device apps](auto-install-for-uwp-device-apps.md)
-
-[AutoPlay for UWP device apps](autoplay-for-uwp-device-apps.md)
-
-[Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md)
+- [Building UWP device apps](the-workflow.md)
+- [Automatic installation for UWP device apps](auto-install-for-uwp-device-apps.md)
+- [AutoPlay for UWP device apps](autoplay-for-uwp-device-apps.md)
+- [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md)

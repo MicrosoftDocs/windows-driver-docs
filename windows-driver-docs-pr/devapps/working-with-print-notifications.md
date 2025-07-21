@@ -1,13 +1,16 @@
 ---
 title: Working with Print Notifications in a UWP Device App
 description: This topic introduces print notifications, and shows how the C# version of the Print settings and print notifications sample uses a background task to respond to print notification.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
 ms.topic: how-to
 ---
 
 # Working with print notifications in a UWP device app
 
-In Windows 8.1, UWP device apps can respond to bidirectional communication (Bidi) events that are sent from a v4 print driver. This topic introduces print notifications, and shows how the C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample uses a background task to respond to print notification. The background task demonstrates how to save notification details in the local app data store, send toasts, and update a tile and badge. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
+
+UWP device apps can respond to bidirectional communication (Bidi) events that are sent from a v4 print driver. This topic introduces print notifications, and shows how the C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample uses a background task to respond to print notification. The background task demonstrates how to save notification details in the local app data store, send toasts, and update a tile and badge. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
 The C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample demonstrates the background portion of the app (*the background task*) in the **BackgroundTask** project. The code for the background task is in the **PrintBackgroundTask.cs** file. The *foreground app*, the full-screen app that can be launched from Start, is in the **DeviceAppForPrinters** project. The **InkLevel.xaml.cs** file shows one way that notification details can be accessed from the foreground app. To work with print notifications, the sample uses the printer extension library in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
 
@@ -24,13 +27,9 @@ When a DriverEvent occurs, and the background task of a UWP device app is starte
 The background task can choose to:
 
 - Do nothing
-
 - Save the notification details in [local app data store](/previous-versions/windows/apps/hh700361(v=win.10))
-
 - Update a [UWP app tile notification](/previous-versions/windows/apps/hh779724(v=win.10))
-
 - Update a [UWP app notification badge](/previous-versions/windows/apps/hh779719(v=win.10))
-
 - Send a [UWP app toast notification](/previous-versions/windows/apps/hh779727(v=win.10))
 
 The tile notification or toast notification can let the user conveniently launch your foreground app. When the foreground app is launched, it can use the `OnLaunched` method in **App.xaml.cs** to check if it was launched by a tile or toast. If it was, the foreground app can access any print notification details in the [local app data store](/previous-versions/windows/apps/hh700361(v=win.10)).
@@ -113,13 +112,11 @@ Before building your app, you should work with your designers and your marketing
 It's important to review the Microsoft Store app guidelines before designing your tile and badge experience. The guidelines help ensure that your app provides an intuitive experience that is consistent with other UWP apps.
 
 - [Guidelines for tiles and badges](/windows/uwp/design/shell/tiles-and-notifications/creating-tiles)
-
 - [Guidelines for toast notifications](/windows/uwp/design/shell/tiles-and-notifications/)
 
 For the main page of your app, keep in mind that Windows 8.1 can display multiple apps in various sizes on a single monitor. See the following guidelines to learn more about how your app can reflow gracefully between screen sizes, window sizes, and orientations.
 
 - [Guidelines for window sizes and scaling to screens](/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design)
-
 - [Guidelines for resizing windows to tall and narrow layouts](/previous-versions/windows/hh465371(v=win.10))
 
 ### Best practices
@@ -415,26 +412,15 @@ If no default print notification appears when expected...
 
 ## Related topics
 
-[Badge overview (UWP apps)](/previous-versions/windows/apps/hh779719(v=win.10))
-
-[Tile and tile notification overview (UWP apps)](/previous-versions/windows/apps/hh779724(v=win.10))
-
-[Guidelines and checklist for tiles and badges (UWP apps)](/windows/uwp/design/shell/tiles-and-notifications/creating-tiles)
-
-[Toast notification overview (UWP apps)](/previous-versions/windows/apps/hh779727(v=win.10))
-
-[Guidelines and checklist for toast notifications (UWP apps)](/windows/uwp/design/shell/tiles-and-notifications/)
-
-[Driver Support for Customized UI](../print/driver-support-for-customized-ui.md)
-
-[Developing v4 print drivers](../print/v4-printer-driver.md)
-
-[Printer Extension Interfaces (v4 Print Driver)](/windows-hardware/drivers/ddi/_print/)
-
-[Bidirectional Communications](../print/bidirectional-communication.md)
-
-[Getting started with UWP apps](getting-started.md)
-
-[Create a UWP device app (step-by-step guide)](step-1--create-a-uwp-device-app.md)
-
-[Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
+- [Badge overview (UWP apps)](/previous-versions/windows/apps/hh779719(v=win.10))
+- [Tile and tile notification overview (UWP apps)](/previous-versions/windows/apps/hh779724(v=win.10))
+- [Guidelines and checklist for tiles and badges (UWP apps)](/windows/uwp/design/shell/tiles-and-notifications/creating-tiles)
+- [Toast notification overview (UWP apps)](/previous-versions/windows/apps/hh779727(v=win.10))
+- [Guidelines and checklist for toast notifications (UWP apps)](/windows/uwp/design/shell/tiles-and-notifications/)
+- [Driver Support for Customized UI](../print/driver-support-for-customized-ui.md)
+- [Developing v4 print drivers](../print/v4-printer-driver.md)
+- [Printer Extension Interfaces (v4 Print Driver)](/windows-hardware/drivers/ddi/_print/)
+- [Bidirectional Communications](../print/bidirectional-communication.md)
+- [Getting started with UWP apps](getting-started.md)
+- [Create a UWP device app (step-by-step guide)](step-1--create-a-uwp-device-app.md)
+- [Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)

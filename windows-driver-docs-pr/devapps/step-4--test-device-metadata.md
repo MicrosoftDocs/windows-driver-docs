@@ -1,11 +1,14 @@
 ---
 title: Step 4 Test the Device Metadata for your UWP Device App
 description: This topic describes how you can test device metadata for your UWP device app locally before you submit it to the Windows Dev Center Dashboard.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
 ms.topic: how-to
 ---
 
 # Step 4: Test the device metadata for your UWP device app
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 ![device app workflow, step 4.](images/4-device-app-workflow.png)
 
@@ -64,4 +67,4 @@ You can validate your device metadata against a UWP device app or a device by us
 
 ## Next step
 
-[Step 5: Submit the app](step-5--submit-the-app.md)
+- [Step 5: Submit the app](step-5--submit-the-app.md)

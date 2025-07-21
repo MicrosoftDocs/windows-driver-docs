@@ -1,11 +1,14 @@
 ---
 title: Step 1 Create a UWP Device App
 description: This topic describes the basic process for creating a UWP device app by using Microsoft Visual Studio. Learn about the tasks that are common to all UWP device apps.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
 ms.topic: how-to
 ---
 
 # Step 1: Create a UWP device app
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 ![device app workflow, step 1.](images/1-device-app-workflow.png)
 
@@ -111,13 +114,10 @@ You can sync or update your device from a UWP device app by using device backgro
 
 ### Learn more
 
-[**UWP device apps for printers**](uwp-device-apps-for-printers.md): Display printer status and extend the print settings experience. Starting in Windows 8.1, your app can also manage print jobs and perform printer maintenance.
-
-[**UWP device apps for cameras**](uwp-device-apps-for-webcams.md): Extend the camera options experience. Your app can also provide custom effects with a Driver MFT.
-
-[**Integrating devices**](/previous-versions/windows/apps/dn263141(v=win.10)): Learn about Windows Runtime APIs for USB, HID, Bluetooth, Scanning, and more.
-
-[**UWP device apps for internal devices**](uwp-device-apps-for-specialized-devices.md): Lean how OEMs can write device apps for devices internal to the PC.
+- [UWP device apps for printers](uwp-device-apps-for-printers.md): Display printer status and extend the print settings experience. Starting in Windows 8.1, your app can also manage print jobs and perform printer maintenance.
+- [UWP device apps for cameras](uwp-device-apps-for-webcams.md): Extend the camera options experience. Your app can also provide custom effects with a Driver MFT.
+- [Integrating devices](/previous-versions/windows/apps/dn263141(v=win.10)): Learn about Windows Runtime APIs for USB, HID, Bluetooth, Scanning, and more.
+- [UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md): Lean how OEMs can write device apps for devices internal to the PC.
 
 ## Use the Windows App Certification Kit
 
@@ -125,4 +125,4 @@ To give your app the best chance of getting certified, validate and test it on y
 
 ## Next step
 
-[Step 2: Create device metadata](step-2--create-device-metadata.md)
+- [Step 2: Create device metadata](step-2--create-device-metadata.md)
