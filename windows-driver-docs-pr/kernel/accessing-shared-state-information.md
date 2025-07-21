@@ -10,13 +10,13 @@ ms.topic: concept-article
 
 Use the following general guidelines when designing and writing [*SynchCritSection*](/windows-hardware/drivers/ddi/wdm/nc-wdm-ksynchronize_routine) routines that maintain state information:
 
-- To access data that an ISR also accesses, a driver routine must call a *SynchCritSection* routine. Non-critical section code can be interrupted. Remember that it's not sufficient to simply acquire a spin lock to protect data that ISRs also access, because ISRs execute at DIRQL and acquiring a spin lock ([**KeAcquireSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock)) only raises IRQL to DISPATCH_LEVEL, which allows an interrupt to invoke the ISR on the current processor.
+- To access data that an ISR also accesses, a driver routine must call a *SynchCritSection* routine. Noncritical section code can be interrupted. Remember that it's not sufficient to just acquire a spin lock to protect data that ISRs also access, because ISRs execute at DIRQL and acquiring a spin lock ([**KeAcquireSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock)) only raises IRQL to DISPATCH_LEVEL, which allows an interrupt to invoke the ISR on the current processor.
 
 - Give each *SynchCritSection* routine that maintains state information responsibility for a discrete set of state variables. That is, avoid writing *SynchCritSection* routines that maintain overlapping state information.
 
   This approach prevents contention, and possibly race conditions, between *SynchCritSection* routines (and the ISR) trying to access the same state concurrently.
 
-  This approach also ensures that each *SynchCritSection* routine returns control as quickly as possible because one *SynchCritSection* routine never has to wait for another that updates some of the same state information to return control.
+  This approach also ensures that each *SynchCritSection* routine returns control as quickly as possible. That is, one *SynchCritSection* routine never has to wait for another that updates some of the same state information to return control.
 
 - Avoid writing a single, large, general-purpose *SynchCritSection* routine that does more testing of conditions to determine what to do than actually doing useful work. On the other hand, avoid having many *SynchCritSection* routines that never execute a conditional statement because each updates only a single byte of state information.
 
@@ -24,7 +24,7 @@ Use the following general guidelines when designing and writing [*SynchCritSecti
 
 The following example shows a technique for maintaining a timer counter in a device extension. Assume the driver uses the counter to determine if an I/O operation times out. Also assume the driver doesn't overlap I/O operations.
 
-- The driver's [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine initializes the timer counter to some initial value for each I/O request. The driver then adds a second to its device time-out value, in case its [*IoTimer*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_timer_routine) routine just returned control.
+- The driver's [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine initializes the timer counter to some initial value for each I/O request. The driver then adds a second to its device timeout value, in case its [*IoTimer*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_timer_routine) routine just returned control.
 
 - The driver's ISR sets this timer counter to minus one.
 

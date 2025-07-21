@@ -1,15 +1,19 @@
 ---
 title: Using a Driver-Supplied Spin Lock
 description: Using a Driver-Supplied Spin Lock
+ms.topic: how-to
 keywords: ["spin locks WDK kernel", "driver-supplied spin locks WDK kernel", "global cancel spin locks WDK kernel"]
 ms.date: 07/16/2025
 ---
 
 # Using a Driver-Supplied Spin Lock
 
-Drivers that manage their own queues of IRPs can use a driver-supplied spin lock, instead of the system cancel spin lock, to synchronize access to the queues. You can improve performance by avoiding use of the cancel spin lock except when absolutely necessary. Because the system has only one cancel spin lock, a driver might sometimes have to wait for that spin lock to become available. Using a driver-supplied spin lock eliminates this potential delay and makes the cancel spin lock available for the I/O manager and other drivers. Although the system still acquires the cancel spin lock when it calls the driver's [*Cancel*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_cancel) routine, a driver can use its own spin lock to protect its queue of IRPs.
+Instead of the system cancel spin lock, drivers that manage their own queues of IRPs can use a driver-supplied spin lock to synchronize access to the queues. You can improve performance by avoiding use of the cancel spin lock except when necessary. Because the system has only one cancel spin lock, a driver might sometimes have to wait for that spin lock to become available. Using a driver-supplied spin lock eliminates this potential delay and makes the cancel spin lock available for the I/O manager and other drivers. Although the system still acquires the cancel spin lock when it calls the driver's [*Cancel*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_cancel) routine, a driver can use its own spin lock to protect its queue of IRPs.
 
-Even if a driver does not queue pending IRPs, but retains ownership in some other way, that driver must set a *Cancel* routine for the IRP and must use a spin lock to protect the IRP pointer. For example, suppose a driver marks an IRP pending, then passes the IRP pointer as context to an [*IoTimer*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_timer_routine) routine. The driver must set a *Cancel* routine that cancels the timer and must use the same spin lock in both the *Cancel* routine and the timer callback when accessing the IRP.
+Even if a driver doesn't queue pending IRPs, but retains ownership in some other way, that driver must set a *Cancel* routine for the IRP and must use a spin lock to protect the IRP pointer. For example, suppose a driver marks an IRP pending, then passes the IRP pointer as context to an [*IoTimer*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_timer_routine) routine. In this situation, the driver:
+
+- Must set a *Cancel* routine that cancels the timer.
+- Must use the same spin lock in both the *Cancel* routine and the timer callback when accessing the IRP.
 
 Any driver that queues its own IRPs and uses its own spin lock must do the following steps:
 
@@ -145,11 +149,11 @@ PIRP DequeueIrp(DEVICE_CONTEXT *deviceContext)
 }
 ```
 
-In the example, the driver acquires the associated spin lock before it accesses the queue. While holding the spin lock, it checks that the queue isn't empty and gets the next IRP off the queue. Then it calls **IoSetCancelRoutine** to reset the *Cancel* routine for the IRP. Because the IRP could be canceled while the driver dequeues the IRP and resets the *Cancel* routine, the driver must check the value returned by **IoSetCancelRoutine**. If **IoSetCancelRoutine** returns **NULL**, which indicates that the *Cancel* routine either is or will soon be called, the dequeuing routine lets the *Cancel* routine complete the IRP. It then releases the lock that protects the queue and returns.
+In the example, the driver acquires the associated spin lock before it accesses the queue. While holding the spin lock, the driver checks that the queue isn't empty and gets the next IRP off the queue. Then it calls **IoSetCancelRoutine** to reset the *Cancel* routine for the IRP. Because the IRP could be canceled while the driver dequeues the IRP and resets the *Cancel* routine, the driver must check the value returned by **IoSetCancelRoutine**. If **IoSetCancelRoutine** returns **NULL**, which indicates that the *Cancel* routine either is or will soon be called, the dequeuing routine lets the *Cancel* routine complete the IRP. It then releases the lock that protects the queue and returns.
 
 Note the use of [**InitializeListHead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-initializelisthead) in the preceding routine. The driver could requeue the IRP, so that the *Cancel* routine can dequeue it, but it's simpler to call **InitializeListHead**, which reinitializes the IRP's **ListEntry** field so that it points to the IRP itself. Using the self-referencing pointer is important because the structure of the list could change before the *Cancel* routine acquires the spin lock. If the list structure changes, possibly making the original value of **ListEntry** invalid, the *Cancel* routine could corrupt the list when it dequeues the IRP. But if **ListEntry** points to the IRP itself, the *Cancel* routine always uses the correct IRP.
 
-The *Cancel* routine simply does the following:
+The *Cancel* routine does the following steps:
 
 ```cpp
 VOID IrpCancelRoutine(IN PDEVICE_OBJECT DeviceObject, IN PIRP Irp)

@@ -22,7 +22,7 @@ The driver routine that calls **AllocateAdapterChannel** must run at IRQL = DISP
 
 **AllocateAdapterChannel** queues the driver's *AdapterControl* routine. The system runs this routine when it assigns the system DMA controller to this driver and allocates a set of [map registers](map-registers.md) for the driver's DMA operations.
 
-On entry, the *AdapterControl* routine receives the *DeviceObject* and *Context* pointers passed in the call to **AllocateAdapterChannel**, as well as a handle (*MapRegisterBase*) for the allocated map registers.
+On entry, the *AdapterControl* routine receives the *DeviceObject* and *Context* pointers passed in the call to **AllocateAdapterChannel**, and a handle (*MapRegisterBase*) for the allocated map registers.
 
 The *AdapterControl* routine also receives a pointer to the **DeviceObject-&gt;CurrentIrp** if the driver has a [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine. If the driver manages its own queuing of IRPs (instead of having a *StartIo* routine), the driver should include a pointer to the current IRP as part of the context it passes when it calls **AllocateAdapterChannel**.
 
@@ -40,11 +40,15 @@ Every *AdapterControl* routine must return a system-defined value of type [**IO_
 
 Because an *AdapterControl* routine can't wait for the subordinate device to carry out the DMA operation, each *AdapterControl* routine must, at a minimum, do the following steps:
 
-1. Save context information, particularly the *MapRegisterBase* handle, in the driver's device extension, controller extension, or other driver-accessible resident storage area (nonpaged pool allocated by the driver).
+1. Save context information, particularly the *MapRegisterBase* handle in one of the following places:
+
+   - The driver's device extension.
+   - The driver's controller extension.
+   - Another driver-accessible resident storage area (nonpaged pool allocated by the driver).
 
 1. Return **KeepObject**.
 
-For additional information, see [Writing AdapterControl Routines](writing-adaptercontrol-routines.md).
+For more information, see [Writing AdapterControl Routines](writing-adaptercontrol-routines.md).
 
 Another driver routine (probably the [*DpcForIsr*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine) routine) must call [**FlushAdapterBuffers**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pflush_adapter_buffers) when each DMA transfer operation completes. This routine also must call **MapTransfer** and **FlushAdapterBuffers** again if it's necessary to set up the DMA controller more than once to satisfy the current IRP's transfer request.
 
