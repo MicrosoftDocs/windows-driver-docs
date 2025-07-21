@@ -3,6 +3,7 @@ title: Universal Serial Bus Viewer in Windows
 description: Universal Serial Bus Viewer is a Windows graphical UI app that you can use to browse all USB controllers and connected USB devices on your computer.
 keywords: ["USBView"]
 ms.date: 05/19/2024
+ms.topic: how-to
 ---
 
 # Universal Serial Bus Viewer in Windows

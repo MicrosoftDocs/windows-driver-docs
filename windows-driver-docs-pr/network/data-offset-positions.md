@@ -4,6 +4,7 @@ description: This section describes Data offset positions for Windows Filtering 
 keywords:
 - Data offset positions network drivers
 ms.date: 11/09/2017
+ms.topic: concept-article
 ---
 
 # Data offset positions

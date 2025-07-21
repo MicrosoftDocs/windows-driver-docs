@@ -8,6 +8,7 @@ keywords:
 - printer driver architecture WDK
 - printer drivers WDK , architecture
 ms.date: 02/20/2025
+ms.topic: concept-article
 ---
 
 # Printer driver architecture

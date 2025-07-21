@@ -2,6 +2,7 @@
 title: Secure Boot
 description: Secure boot
 ms.date: 09/26/2024
+ms.topic: concept-article
 ---
 
 # Secure boot

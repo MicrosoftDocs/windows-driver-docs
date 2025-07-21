@@ -2,6 +2,7 @@
 title: SerCx2 I/O Transactions
 description: SerCx2 simplifies the handling of read (IRP_MJ_READ) and write (IRP_MJ_WRITE) requests for your serial controller driver.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # SerCx2 I/O Transactions

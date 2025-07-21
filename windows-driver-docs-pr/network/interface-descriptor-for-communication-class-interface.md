@@ -2,6 +2,7 @@
 title: Interface Descriptor for Communication Class Interface
 description: Interface Descriptor for Communication Class Interface
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Interface Descriptor for Communication Class Interface

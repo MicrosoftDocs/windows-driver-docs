@@ -5,6 +5,7 @@ keywords:
 - rendering plug-ins WDK print , Pscript5
 - Pscript WDK print , customized rendering
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Pscript-Specific Customized Rendering

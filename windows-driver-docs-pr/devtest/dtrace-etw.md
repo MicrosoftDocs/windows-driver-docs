@@ -11,6 +11,7 @@ keywords:
 - tracing WDK , DTrace
 - trace message format files WDK
 ms.date: 05/02/2022
+ms.topic: concept-article
 ---
 
 # DTrace ETW

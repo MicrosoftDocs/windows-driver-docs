@@ -2,6 +2,7 @@
 title: Discovery Process
 description: Discovery Process
 ms.date: 09/01/2022
+ms.topic: concept-article
 ---
 
 # Discovery Process

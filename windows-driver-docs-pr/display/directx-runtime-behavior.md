@@ -4,6 +4,7 @@ description: DirectX Runtime Behavior
 keywords:
 - DirectX runtime rotation WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # DirectX Runtime Behavior

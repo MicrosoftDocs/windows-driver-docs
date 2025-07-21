@@ -2,6 +2,7 @@
 title: Hyper-V Extensible Switch Architecture Topics
 description: Hyper-V Extensible Switch Architecture Topics
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Hyper-V Extensible Switch Architecture Topics

@@ -3,6 +3,7 @@ title: Small Memory Dump
 description: Small Memory Dump
 keywords: ["dump file, Small Memory Dump", "Small Memory Dump"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Small Memory Dump

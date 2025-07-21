@@ -2,6 +2,7 @@
 title: Unsynchronized HwStorBuildIo Routine
 description: Unsynchronized HwStorBuildIo Routine
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Unsynchronized HwStorBuildIo Routine

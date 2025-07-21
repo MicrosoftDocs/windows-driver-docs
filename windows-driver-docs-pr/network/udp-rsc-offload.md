@@ -2,6 +2,7 @@
 title: UDP Receive Segment Coalescing Offload (URO)
 description: Learn about the rules for coalescing UDP packets and how to write a URO miniport driver.
 ms.date: 12/19/2024
+ms.topic: concept-article
 ---
 
 # UDP receive segment coalescing offload (URO)

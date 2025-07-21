@@ -2,6 +2,7 @@
 title: Named Kernel Objects for WIA Drivers
 description: Named Kernel Objects for WIA Drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Named Kernel Objects for WIA Drivers

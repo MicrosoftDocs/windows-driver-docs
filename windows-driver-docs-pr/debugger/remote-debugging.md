@@ -3,6 +3,7 @@ title: Remote Debugging
 description: This topic provides an overview of remote user-mode debugging. This involves two computers the client and the server.
 keywords: remote debugging
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Remote Debugging

@@ -3,6 +3,7 @@ title: Secure Mode
 description: Secure Mode
 keywords: ["Secure Mode"]
 ms.date: 11/25/2024
+ms.topic: concept-article
 ---
 
 # Secure Mode

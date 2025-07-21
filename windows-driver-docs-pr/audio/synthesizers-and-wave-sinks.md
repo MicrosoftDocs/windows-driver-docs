@@ -18,6 +18,7 @@ keywords:
 - DirectMusic WDK audio , synthesizers
 - DMus port drivers WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Synthesizers and Wave Sinks

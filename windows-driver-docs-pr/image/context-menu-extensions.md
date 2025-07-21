@@ -2,6 +2,7 @@
 title: Context Menu Extensions
 description: Context menu extensions
 ms.date: 03/29/2023
+ms.topic: concept-article
 ---
 
 # Context menu extensions

@@ -3,6 +3,7 @@ title: Symbols in the Middle
 description: Symbols in the Middle
 keywords: ["remote debugging, symbols on third machine"]
 ms.date: 05/23/2017
+ms.topic: example-scenario
 ---
 
 # Symbols in the Middle

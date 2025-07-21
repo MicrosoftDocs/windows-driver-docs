@@ -2,6 +2,7 @@
 title: iSCSI WMI Operations Classes
 description: iSCSI WMI Operations Classes
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # iSCSI WMI Operations Classes

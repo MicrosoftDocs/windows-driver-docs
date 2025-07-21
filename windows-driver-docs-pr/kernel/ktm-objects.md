@@ -3,6 +3,7 @@ title: KTM Objects
 description: KTM Objects
 keywords: ["Kernel Transaction Manager WDK , objects", "KTM WDK , objects", "objects WDK KTM"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # KTM Objects

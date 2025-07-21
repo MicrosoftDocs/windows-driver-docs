@@ -2,6 +2,7 @@
 title: WIA Driver Versioning
 description: WIA Driver Versioning
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # WIA Driver Versioning

@@ -6,6 +6,7 @@ keywords:
 - device properties WDK device installations , modifying
 - modifying device properties WDK device installations
 ms.date: 08/15/2022
+ms.topic: best-practice
 ---
 
 # Rules for modifying device properties

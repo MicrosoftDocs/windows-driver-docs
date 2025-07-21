@@ -2,6 +2,7 @@
 title: Static Driver Verifier Report Panes
 description: Static Driver Verifier Report Panes
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # Static Driver Verifier Report Panes

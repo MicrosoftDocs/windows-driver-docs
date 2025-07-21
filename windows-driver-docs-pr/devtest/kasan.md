@@ -6,6 +6,7 @@ keywords:
 - KASAN
 - verifying drivers WDK
 ms.date: 10/31/2024
+ms.topic: how-to
 ---
 
 # Kernel Address Sanitizer (KASAN)

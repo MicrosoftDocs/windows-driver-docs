@@ -2,6 +2,7 @@
 title: Selection
 description: Selection
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Selection

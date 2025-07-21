@@ -2,6 +2,7 @@
 title: 802.3 Statistic OIDs
 description: 802.3 Statistic OIDs
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # 802.3 Statistic OIDs

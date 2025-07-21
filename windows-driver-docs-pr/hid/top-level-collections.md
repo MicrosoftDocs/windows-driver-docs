@@ -4,6 +4,7 @@ description: A top-level collection is a grouping of functionality that targets 
 ms.date: 06/27/2024
 keywords:
 - top-level collections WDK HID
+ms.topic: concept-article
 ---
 
 # Top-level collections

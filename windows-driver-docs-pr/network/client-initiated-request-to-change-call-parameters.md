@@ -5,6 +5,7 @@ keywords:
 - call parameter changes WDK CoNDIS
 - client-initiated call parameter changes WDK CoNDIS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Client-Initiated Request to Change Call Parameters

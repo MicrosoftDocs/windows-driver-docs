@@ -2,6 +2,7 @@
 title: GPUView Main Window
 description: The following figure shows a screen shot of what first appears when GPUView is loaded after it has parsed the event file. 
 ms.date: 05/10/2022
+ms.topic: overview
 ---
 
 # GPUView Main Window

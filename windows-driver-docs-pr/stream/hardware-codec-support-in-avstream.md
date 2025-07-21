@@ -6,6 +6,7 @@ keywords:
 - hardware codec support WDK AVStream
 - AVStream hardware codec support WDK
 ms.date: 06/18/2020
+ms.topic: concept-article
 ---
 
 # Hardware codec support in AVStream

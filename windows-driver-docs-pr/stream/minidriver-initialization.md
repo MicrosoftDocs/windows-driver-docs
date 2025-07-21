@@ -7,6 +7,7 @@ keywords:
 - streaming minidrivers WDK Windows 2000 Kernel , initializing
 - minidrivers WDK Windows 2000 Kernel Streaming , initializing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Minidriver Initialization

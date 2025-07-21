@@ -3,6 +3,7 @@ title: AdapterControl Routine Requirements
 description: AdapterControl Routine Requirements
 keywords: ["AdapterControl routines, requirements", "AdapterControl routines, writing", "adapter objects WDK kernel , writing AdapterControl routines", "DMA transfers WDK kernel , writing AdapterControl routines"]
 ms.date: 07/21/2021
+ms.topic: checklist
 ---
 
 # AdapterControl Routine Requirements

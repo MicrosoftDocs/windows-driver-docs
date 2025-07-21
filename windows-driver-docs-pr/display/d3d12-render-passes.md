@@ -2,7 +2,7 @@
 title: Direct3D 12 Render Passes
 description: The Direct3D render pass feature
 ms.date: 03/28/2025
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Direct3D 12 render passes

@@ -10,6 +10,7 @@ keywords:
 - Windows software trace preprocessor WDK , build process
 - WPP software tracing WDK , build process
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WPP Preprocessor

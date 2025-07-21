@@ -3,6 +3,7 @@ title: requestOpen Element
 description: The requestOpen element is used to open an event notification message on the client computer.
 keywords: ["requestOpen element Print Devices"]
 ms.date: 12/19/2024
+ms.topic: reference
 ---
 
 # requestOpen element

@@ -2,6 +2,7 @@
 title: Camera Minidriver Sample
 description: Camera Minidriver Sample
 ms.date: 03/28/2023
+ms.topic: example-scenario
 ---
 
 # Camera Minidriver Sample

@@ -11,6 +11,7 @@ keywords:
 - Example 44 Forcibly update the HAL
 - HAL update example
 ms.date: 08/26/2024
+ms.topic: example-scenario
 ---
 
 # Device Console (DevCon.exe) examples

@@ -2,6 +2,7 @@
 title: Choose a Driver Model
 description: Microsoft Windows provides a variety of driver models that you can use to write drivers.
 ms.date: 05/07/2025
+ms.topic: concept-article
 ---
 
 # Choose a driver model

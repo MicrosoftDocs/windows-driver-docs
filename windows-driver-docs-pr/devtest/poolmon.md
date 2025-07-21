@@ -17,6 +17,7 @@ keywords:
 - statistics WDK PoolMon
 - status information WDK PoolMon
 ms.date: 07/10/2025
+ms.topic: overview
 ---
 
 # PoolMon

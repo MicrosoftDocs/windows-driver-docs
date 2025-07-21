@@ -2,6 +2,7 @@
 title: Room Correction
 description: Room Correction
 ms.date: 06/15/2022
+ms.topic: concept-article
 ---
 
 # Room Correction

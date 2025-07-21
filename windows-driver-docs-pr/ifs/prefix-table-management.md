@@ -8,6 +8,7 @@ keywords:
 - names WDK RDBSS
 - version stamps WDK RDBSS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Prefix Table Management

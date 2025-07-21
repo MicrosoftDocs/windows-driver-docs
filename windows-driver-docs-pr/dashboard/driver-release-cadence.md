@@ -2,6 +2,7 @@
 title: Driver Ship Room Release Cadence Windows
 description: This page provides information on the operation schedule for driver ship room. In order to provide the best experience for Windows users, there are certain times where aspects of publication operations are suspended.
 ms.date: 11/11/2024
+ms.topic: release-notes
 ---
 
 # Driver Ship Room Release Cadence Windows

@@ -7,6 +7,7 @@ keywords:
 - WDM lower edge WDK networking , power management
 - power management WDK networking , NDIS-WDM miniport drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Power Management for WDM Lower Edge

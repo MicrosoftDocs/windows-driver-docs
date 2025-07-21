@@ -4,6 +4,7 @@ description: Describes the BypassIO path for storage drivers
 keywords:
 - storage drivers WDK , BypassIO
 ms.date: 09/26/2024
+ms.topic: concept-article
 ---
 
 # BypassIO in storage drivers

@@ -3,6 +3,7 @@ title: "Mixed Expression Examples"
 description: "Mixed Expression Examples"
 keywords: ["expressions, examples", "MASM expressions, examples", "C++ expressions, examples"]
 ms.date: 03/31/2021
+ms.topic: example-scenario
 ---
 
 # Mixed Expression Examples

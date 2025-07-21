@@ -2,6 +2,7 @@
 description: Property Support
 title: Property Support
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Property Support

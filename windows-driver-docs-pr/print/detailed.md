@@ -2,6 +2,7 @@
 title: Detailed Property
 description: A comprehensive description of the current information about the device, including any problem conditions.
 ms.date: 09/03/2021
+ms.topic: reference
 ---
 
 # Detailed property

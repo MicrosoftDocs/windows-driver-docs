@@ -2,6 +2,7 @@
 title: WMI Class Qualifier Definitions in Hbaapi.mof
 description: WMI Class Qualifier Definitions in Hbaapi.mof
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # WMI Class Qualifier Definitions in Hbaapi.mof

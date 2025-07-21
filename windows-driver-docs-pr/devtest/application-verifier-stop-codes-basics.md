@@ -348,7 +348,7 @@ The following stop codes are contained in the basics set of tests.
 </ul>
 <p></p>
 <h3>Exception raised while verifying the heap block header.</h3>
-<p></p><i>Probable cause</i><p>This situation happens if we really cannot determine any particular type of corruption for the block. Most likely this stop will happen when the heap block address passed to a heap free points to a non-accesible memory area (corrupted pointer, uninitialized pointer, etc.).</p>
+<p></p><i>Probable cause</i><p>This situation happens if we really cannot determine any particular type of corruption for the block. Most likely this stop will happen when the heap block address passed to a heap free points to a non-accessible memory area (corrupted pointer, uninitialized pointer, etc.).</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
   <li><b>Parameter 1</b>&nbsp;-&nbsp;Heap handle for the heap owning the block.</li>
   <li><b>Parameter 2</b>&nbsp;-&nbsp;Heap block that is corrupted.</li>

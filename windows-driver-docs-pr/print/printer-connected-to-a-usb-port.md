@@ -5,6 +5,7 @@ keywords:
 - USB printers WDK
 - bus-type printer driver WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Printer Connected to a USB Port

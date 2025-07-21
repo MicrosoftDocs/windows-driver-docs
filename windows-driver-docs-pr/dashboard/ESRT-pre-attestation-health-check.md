@@ -2,6 +2,7 @@
 title: Percent of machines passing TPM critical checks for attestation but might have PCR mismatches
 description: This measure is an average aggregation of telemetry from a 28-day sliding window.
 ms.date: 03/13/2025
+ms.topic: concept-article
 ---
  
 # Percent of machines passing TPM critical checks for attestation but might have PCR mismatches

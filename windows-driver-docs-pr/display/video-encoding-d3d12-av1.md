@@ -6,6 +6,7 @@ keywords:
 - D3D12 , AV1 video encoding
 - Direct3D12 , video encoding
 ms.date: 04/24/2025
+ms.topic: concept-article
 ---
 
 # D3D12 AV1 video encoding

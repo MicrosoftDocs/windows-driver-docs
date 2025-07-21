@@ -3,6 +3,7 @@ title: Remote Targets
 description: Remote Targets
 keywords: ["Debugger Engine API, targets, remote", "Debugger Engine API, debugging servers", "Debugger Engine API, process servers", "Debugger Engine API, kernel connection servers", "Debugger Engine API, smart clients"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Remote Targets

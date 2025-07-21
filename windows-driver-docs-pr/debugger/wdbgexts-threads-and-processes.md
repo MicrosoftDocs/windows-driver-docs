@@ -3,6 +3,7 @@ title: WdbgExts Threads and Processes
 description: WdbgExts Threads and Processes
 keywords: ["WdbgExts extensions, threads", "WdbgExts extensions, processes"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # WdbgExts Threads and Processes

@@ -2,6 +2,7 @@
 title: Revise Code that Handles Completed Requests
 description: Revise Code That Handles Completed Requests
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Revise Code That Handles Completed Requests

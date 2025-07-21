@@ -5,6 +5,7 @@ keywords:
 - rendering plug-ins WDK print , PDEV structures
 - PDEV WDK print
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Customized PDEV Structures

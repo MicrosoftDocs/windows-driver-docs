@@ -5,6 +5,7 @@ keywords:
 - GPD file entries WDK Unidrv , constants
 - constants WDK GPD files
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # Constants (GPD language)

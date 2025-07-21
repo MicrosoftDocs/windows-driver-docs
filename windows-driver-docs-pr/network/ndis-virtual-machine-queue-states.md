@@ -2,6 +2,7 @@
 title: NDIS Virtual Machine Queue States
 description: NDIS Virtual Machine Queue States
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # NDIS Virtual Machine Queue States

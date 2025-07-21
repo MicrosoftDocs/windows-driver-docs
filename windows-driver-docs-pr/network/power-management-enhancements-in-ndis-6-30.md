@@ -2,6 +2,7 @@
 title: Power management enhancements in NDIS 6.30
 description: Introduces NDIS 6.30 power management enhancements to reduce computer power consumption
 ms.date: 03/02/2023
+ms.topic: release-notes
 ---
 
 # Power Management Enhancements in NDIS 6.30

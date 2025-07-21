@@ -2,6 +2,7 @@
 title: General I/O Programming Techniques
 description: General I/O Programming Techniques
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # General I/O Programming Techniques

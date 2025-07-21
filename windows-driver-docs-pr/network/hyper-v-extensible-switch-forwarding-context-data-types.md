@@ -2,6 +2,7 @@
 title: Hyper-V Extensible Switch Forwarding Context Data Types
 description: Hyper-V Extensible Switch Forwarding Context Data Types
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Hyper-V Extensible Switch Forwarding Context Data Types

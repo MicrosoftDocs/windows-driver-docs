@@ -2,6 +2,7 @@
 title: Container IDs for 1394 Devices
 description: Container IDs for 1394 Devices
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Container IDs for 1394 Devices

@@ -2,6 +2,7 @@
 title: Status Section
 description: Status Section
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # Status Section

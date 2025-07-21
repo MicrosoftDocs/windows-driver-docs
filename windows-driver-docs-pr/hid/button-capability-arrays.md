@@ -7,6 +7,7 @@ keywords:
 - capabilities WDK HID collections
 - button usages WDK HID
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # Button capability arrays

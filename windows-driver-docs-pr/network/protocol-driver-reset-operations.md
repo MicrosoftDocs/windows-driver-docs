@@ -6,6 +6,7 @@ keywords:
 - NDIS protocol drivers WDK , reset operations
 - reset operations WDK NDIS protocol
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Protocol Driver Reset Operations

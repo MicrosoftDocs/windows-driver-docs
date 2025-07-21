@@ -2,6 +2,7 @@
 title: Driver package metadata
 description: Describes the structure of the driver package metadata for Partner Center submissions.
 ms.date: 08/21/2018
+ms.topic: reference
 ---
 
 # Driver package metadata

@@ -2,6 +2,7 @@
 title: WIA Flatbed Scanner Compatibility for Windows XP and Windows Me
 description: WIA Flatbed Scanner Compatibility for Windows XP and Windows Me
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Flatbed Scanner Compatibility for Windows XP and Windows Me

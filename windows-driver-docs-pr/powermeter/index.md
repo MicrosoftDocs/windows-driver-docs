@@ -5,6 +5,7 @@ ms.assetid: 93ec51ac-5180-4495-98b4-a48342957ec1
 keywords:
 - Power Metering and Budgeting WDK , design guide
 ms.date: 10/09/2017
+ms.topic: design-pattern
 ---
 
 # Power Metering and Budgeting Design Guide

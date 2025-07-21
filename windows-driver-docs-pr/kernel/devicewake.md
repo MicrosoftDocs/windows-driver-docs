@@ -3,6 +3,7 @@ title: DeviceWake
 description: DeviceWake
 keywords: ["DeviceWake"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # DeviceWake

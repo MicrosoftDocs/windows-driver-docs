@@ -2,6 +2,7 @@
 title: WIA Minidriver Interfaces
 description: WIA Minidriver Interfaces
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # WIA Minidriver Interfaces

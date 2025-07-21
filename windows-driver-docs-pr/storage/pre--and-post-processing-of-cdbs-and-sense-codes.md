@@ -2,6 +2,7 @@
 title: Pre- and Post-Processing of CDBs and Sense Codes
 description: Pre- and Post-Processing of CDBs and Sense Codes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Pre- and Post-Processing of CDBs and Sense Codes

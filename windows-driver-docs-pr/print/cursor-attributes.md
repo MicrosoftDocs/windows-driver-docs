@@ -5,6 +5,7 @@ keywords:
 - cursor attributes WDK Unidrv
 - general printer attributes WDK Unidrv , cursor
 ms.date: 06/16/2023
+ms.topic: reference
 ---
 
 # Cursor attributes

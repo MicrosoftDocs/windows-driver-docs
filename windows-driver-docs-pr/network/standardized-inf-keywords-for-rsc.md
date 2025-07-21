@@ -7,6 +7,7 @@ keywords:
 - standardized INF keywords WDK RSC
 - INF entries WDK RSC
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Standardized INF Keywords for RSC

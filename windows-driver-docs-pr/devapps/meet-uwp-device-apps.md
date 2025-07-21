@@ -2,6 +2,7 @@
 title: Meet UWP Device Apps
 description: This topic provides an overview of the features and capabilities that make a UWP device app uniquely different from a regular UWP app.
 ms.date: 03/17/2023
+ms.topic: overview
 ---
 
 # Meet UWP device apps

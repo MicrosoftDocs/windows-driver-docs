@@ -2,6 +2,7 @@
 title: Atomic Bus Operations
 description: To use certain hardware capabilities of an SPB-connected peripheral device, a client of the SPB controller (that is, a peripheral driver) might need to perform a sequence of data transfers to and from the device as an atomic bus operation.
 ms.date: 01/12/2024
+ms.topic: concept-article
 ---
 
 # Atomic bus operations

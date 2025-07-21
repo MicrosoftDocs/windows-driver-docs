@@ -7,6 +7,7 @@ keywords:
 - notification errors WDK print spooler
 - errors WDK spooler notification
 ms.date: 07/18/2023
+ms.topic: error-reference
 ---
 
 # Notification errors

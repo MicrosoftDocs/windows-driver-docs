@@ -2,6 +2,7 @@
 description: This topic discusses the LPM mechanism for saving power and described various common problems seen in current USB 3.0 hardware.
 title: Common Hardware Problems With U1 or U2 Implementation
 ms.date: 01/12/2024
+ms.topic: troubleshooting-known-issue
 ---
 
 # Common hardware problems with U1 or U2 implementation

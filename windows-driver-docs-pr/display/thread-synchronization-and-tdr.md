@@ -7,6 +7,7 @@ keywords:
 - TDR (timeout detection and recovery) WDK display , and thread synchronization
 - Windows Display Driver Model , WDDM , thread synchronization and TDR
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # Thread Synchronization and TDR

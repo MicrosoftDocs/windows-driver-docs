@@ -2,6 +2,7 @@
 title: Driver Package Container Metadata
 description: Driver package container metadata provides OEMs and IHVs with a driver package-based solution to customize and enhance user facing information about their physical device.
 ms.date: 03/21/2025
+ms.topic: concept-article
 ---
 
 # Driver Package Container Metadata

@@ -2,6 +2,7 @@
 description: Property-Value Retrieval
 title: Property-Value Retrieval
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Property-Value Retrieval

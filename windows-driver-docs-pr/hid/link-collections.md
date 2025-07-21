@@ -9,6 +9,7 @@ keywords:
 - link collection nodes WDK HID
 - arrays WDK HID
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # Link collections

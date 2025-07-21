@@ -11,6 +11,7 @@ keywords:
 - default WPP software tracing
 - tracing WDK , WPP
 ms.date: 12/12/2024
+ms.topic: concept-article
 ---
 
 # WPP Software Tracing

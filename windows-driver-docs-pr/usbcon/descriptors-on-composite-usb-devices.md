@@ -2,6 +2,7 @@
 description: Descriptors on USB Composite Devices
 title: Descriptors on USB Composite Devices
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Descriptors on USB Composite Devices

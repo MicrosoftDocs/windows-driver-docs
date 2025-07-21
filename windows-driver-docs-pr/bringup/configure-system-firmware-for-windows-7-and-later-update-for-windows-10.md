@@ -2,6 +2,7 @@
 title: Configure System Firmware for Windows 7 and Enable for Windows 10
 description: Provides information about how to configure system firmware for Windows 7 and enable for Windows 10.
 ms.date: 03/22/2023
+ms.topic: checklist
 ---
 
 # Configure system firmware for Windows 7 and enable for Windows 10

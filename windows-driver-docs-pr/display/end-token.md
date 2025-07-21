@@ -2,6 +2,7 @@
 title: End Token
 description: End Token
 ms.date: 01/05/2018
+ms.topic: reference
 ---
 
 # End Token

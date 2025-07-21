@@ -9,6 +9,7 @@ keywords:
 - identifying audio devices
 - hardware-specific information WDK audio
 ms.date: 09/29/2022
+ms.topic: concept-article
 ---
 
 # Extended Capabilities from a WDM Audio Driver

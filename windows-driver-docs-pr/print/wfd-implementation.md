@@ -2,6 +2,7 @@
 title: Wi-Fi Direct Printing Implementation
 description: Provides information on device requirements for a Wi-Fi Direct printing implementation.
 ms.date: 09/09/2022
+ms.topic: concept-article
 ---
 
 # Wi-Fi Direct printing implementation

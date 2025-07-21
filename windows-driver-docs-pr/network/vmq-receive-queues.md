@@ -2,6 +2,7 @@
 title: VMQ Receive Queues
 description: VMQ Receive Queues
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # VMQ Receive Queues

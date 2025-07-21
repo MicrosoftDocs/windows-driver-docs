@@ -2,6 +2,7 @@
 title: USB Audio Device Not Playing
 description: This article discusses the "Audio services not responding" error.
 ms.date: 12/13/2024
+ms.topic: troubleshooting
 ---
 
 # USB audio device not playing

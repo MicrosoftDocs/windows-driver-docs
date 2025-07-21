@@ -2,6 +2,7 @@
 title: WIA Error Handler Cancellation of Modeless Dialogs
 description: WIA Error Handler Cancellation of Modeless Dialogs
 ms.date: 04/20/2017
+ms.topic: troubleshooting-general
 ---
 
 # WIA Error Handler Cancellation of Modeless Dialogs

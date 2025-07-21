@@ -8,6 +8,7 @@ keywords:
 - Serial
 - UART
 ms.date: 03/22/2023
+ms.topic: reference
 ---
 
 # Microsoft Debug Port Table 2 (DBG2)

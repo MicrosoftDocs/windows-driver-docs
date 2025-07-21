@@ -2,6 +2,7 @@
 title: WIA Item Categories
 description: WIA Item Categories
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Item Categories

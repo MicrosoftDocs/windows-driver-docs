@@ -2,6 +2,7 @@
 title: Driver Support for Protected Printing
 description: Windows 8.1 includes support for protected printing, which allows users to specify a personal identification number (PIN) that is then used at the printer, prior to the job being printed out.
 ms.date: 06/22/2023
+ms.topic: concept-article
 ---
 
 # Driver Support for Protected Printing

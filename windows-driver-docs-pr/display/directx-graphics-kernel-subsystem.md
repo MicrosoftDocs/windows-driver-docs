@@ -5,6 +5,7 @@ keywords:
 - DirectX graphics kernel subsystem
 - Dxgkrnl.sys
 ms.date: 04/24/2025
+ms.topic: reference
 ---
 
 # DirectX Graphics Kernel Subsystem

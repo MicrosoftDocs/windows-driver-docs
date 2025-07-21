@@ -8,6 +8,7 @@ keywords:
 - Streaming Model WDK Windows 2000 Kernel
 - Kernel Streaming Model WDK
 ms.date: 04/20/2017
+ms.topic: design-pattern
 ---
 
 # Windows 2000 Kernel Streaming Model Design Guide

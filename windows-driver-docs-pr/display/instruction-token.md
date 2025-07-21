@@ -2,6 +2,7 @@
 title: Instruction Token
 description: Instruction Token
 ms.date: 01/05/2018
+ms.topic: concept-article
 ---
 
 # Instruction Token

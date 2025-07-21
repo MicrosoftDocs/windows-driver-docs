@@ -3,6 +3,7 @@ title: Organization of DPC Queues
 description: Organization of DPC Queues
 keywords: ["DPC queues WDK kernel", "queues WDK DPC"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Organization of DPC Queues

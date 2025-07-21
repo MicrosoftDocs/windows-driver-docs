@@ -6,6 +6,7 @@ keywords:
 - GDL WDK , templates
 - data types WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Template Data Types

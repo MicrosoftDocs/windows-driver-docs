@@ -2,6 +2,7 @@
 title: Custom and Auto Page Sizes
 description: Custom and Auto Page Sizes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Custom and Auto Page Sizes

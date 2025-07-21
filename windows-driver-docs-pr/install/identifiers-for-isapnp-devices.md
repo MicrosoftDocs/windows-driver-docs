@@ -8,6 +8,7 @@ keywords:
 - ISAPNP device identifiers WDK device installations
 - hardware IDs WDK device installations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Identifiers for ISAPNP Devices

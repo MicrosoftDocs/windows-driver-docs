@@ -4,6 +4,7 @@ description: DirectSound Stream Data Format
 keywords:
 - DirectSound WDK audio , stream data formats
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # DirectSound Stream Data Format

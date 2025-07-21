@@ -9,6 +9,7 @@ keywords:
 - print Web pages WDK
 - Web pages WDK printer
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # Internet Printing

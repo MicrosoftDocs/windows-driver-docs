@@ -2,6 +2,7 @@
 title: WDF DDI Fault Injection Tester (WdfFiTester)
 description: WDF DDI Fault Injection Tester (WdfFiTester)
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # WDF DDI Fault Injection Tester (WdfFiTester)

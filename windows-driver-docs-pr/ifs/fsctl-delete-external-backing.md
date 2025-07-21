@@ -46,7 +46,7 @@ To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers
 | ---- | ------- |
 | STATUS_OBJECT_NOT_EXTERNALLY_BACKED | The file is not externally backed. |
 | STATUS_INVALID_DEVICE_REQUEST | The backing service is not present or not started. |
-| STATUS_ACCESS_DENIED | The requestor does not have permission to delete the backing associations for the file. |
+| STATUS_ACCESS_DENIED | The requester does not have permission to delete the backing associations for the file. |
 
 ## Remarks
 

@@ -2,6 +2,7 @@
 title: Print Ticket and Print Capabilities Support
 description: Print Ticket and Print Capabilities Support
 ms.date: 01/30/2023
+ms.topic: overview
 ---
 
 # Print Ticket and Print Capabilities Support

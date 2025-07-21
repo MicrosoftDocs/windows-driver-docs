@@ -5,6 +5,7 @@ keywords:
 - GPD files WDK GDL extensions , autoconfiguration flow
 - in-box autoconfiguration support WDK printer , sequence of steps
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Autoconfiguration Flow for GPD in Windows Vista

@@ -2,6 +2,7 @@
 title: Standardized INF Keywords for Network Devices
 description: Standardized INF Keywords for Network Devices
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Standardized INF Keywords for Network Devices

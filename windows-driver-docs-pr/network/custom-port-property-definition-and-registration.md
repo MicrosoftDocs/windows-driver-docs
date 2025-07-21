@@ -2,6 +2,7 @@
 title: Custom Port Property Definition and Registration
 description: Custom Port Property Definition and Registration
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Custom Port Property Definition and Registration

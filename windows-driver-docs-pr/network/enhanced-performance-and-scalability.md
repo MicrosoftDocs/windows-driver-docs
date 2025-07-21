@@ -6,6 +6,7 @@ keywords:
 - performance WDK NDIS
 - scalability WDK NDIS
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # Enhanced Performance and Scalability

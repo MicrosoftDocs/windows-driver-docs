@@ -3,6 +3,7 @@ title: StartIo Routines in Higher-Level Drivers
 description: StartIo Routines in Higher-Level Drivers
 keywords: ["StartIo routines, higher-level drivers"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # StartIo Routines in Higher-Level Drivers

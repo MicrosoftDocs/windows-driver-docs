@@ -3,6 +3,7 @@ title: AML Debugging Examples
 description: AML Debugging Examples
 keywords: ["AMLI Debugger, debugging examples"]
 ms.date: 11/07/2018
+ms.topic: how-to
 ---
 
 # AML Debugging Examples

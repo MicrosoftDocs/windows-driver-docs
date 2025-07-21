@@ -2,6 +2,7 @@
 title: Optional Power Management OIDs
 description: Optional Power Management OIDs
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Optional Power Management OIDs

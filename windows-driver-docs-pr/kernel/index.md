@@ -4,6 +4,7 @@ description: Kernel-mode driver architecture design guide
 ms.assetid: 21c199f3-abc3-4607-a674-eb84b6c3c25a
 keywords: ["kernel-mode drivers WDK , architecture", "kernel-mode drivers WDK"]
 ms.date: 04/23/2025
+ms.topic: design-pattern
 ---
 
 # Kernel-mode driver architecture design guide

@@ -3,6 +3,7 @@ title: Linux live remote process debugging
 description: Linux live remote process debugging
 keywords: ["remote debugging, linux, process"]
 ms.date: 05/02/2024
+ms.topic: how-to
 ---
 
 # Linux live remote process debugging

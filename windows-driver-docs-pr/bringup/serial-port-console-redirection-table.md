@@ -6,6 +6,7 @@ keywords:
 - EMS
 - UART
 ms.date: 09/23/2021
+ms.topic: reference
 ---
 
 # Serial Port Console Redirection Table (SPCR)

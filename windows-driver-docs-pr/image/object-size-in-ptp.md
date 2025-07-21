@@ -2,6 +2,7 @@
 title: Object Size in PTP
 description: Object Size in PTP
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Object Size in PTP

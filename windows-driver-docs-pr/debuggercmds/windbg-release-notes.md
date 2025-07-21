@@ -12,7 +12,7 @@ ms.topic: release-notes
 
 This topic provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
-## 1.2506.12002.1
+## 1.2506.12002.0
 
 ### New Features
 

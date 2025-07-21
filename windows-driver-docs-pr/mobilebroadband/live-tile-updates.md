@@ -2,6 +2,7 @@
 title: Live Tile Updates
 description: Live tile updates
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # Live tile updates

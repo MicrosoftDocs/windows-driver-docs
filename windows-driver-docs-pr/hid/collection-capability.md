@@ -5,6 +5,7 @@ keywords:
 - capabilities WDK HID collections
 - summary capabilities WDK HID
 ms.date: 10/22/2024
+ms.topic: concept-article
 ---
 
 # Collection capability

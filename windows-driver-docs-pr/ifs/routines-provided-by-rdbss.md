@@ -6,6 +6,7 @@ keywords:
 - Redirected Drive Buffering Subsystem WDK file systems , routines
 - routines WDK RDBSS
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Routines Provided by RDBSS

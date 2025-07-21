@@ -3,6 +3,7 @@ title: Look For User-Mode Memory Leak With PerfMon
 description: Use Windows Performance Monitor (PerfMon) to find a user-mode memory leak and measure the memory usage of individual processes.
 keywords: ["memory leak, user-mode, performance monitor"]
 ms.date: 07/10/2025
+ms.topic: how-to
 ---
 
 # Find user-mode memory leaks with Performance Monitor (PerfMon)

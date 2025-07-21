@@ -6,6 +6,7 @@ keywords:
 - StaticDV WDK , reference
 - SDV WDK , reference
 ms.date: 07/02/2024
+ms.topic: reference
 ---
 
 # Static Driver Verifier Reference

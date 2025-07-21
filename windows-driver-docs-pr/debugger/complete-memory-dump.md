@@ -3,6 +3,7 @@ title: Complete Memory Dump
 description: Complete Memory Dump
 keywords: ["dump file, Complete Memory Dump", "Complete Memory Dump"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Complete Memory Dump

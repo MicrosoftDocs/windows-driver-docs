@@ -2,6 +2,7 @@
 title: D3Hot Support for HidSpiCx Devices
 description: Describes the D3Hot support feature of HidSpiCx.
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # D3Hot support for HID over SPI devices

@@ -2,6 +2,7 @@
 title: Audio Processing Object Architecture
 description: Architecture for Audio Processing Object APOs used for software based digital signal processing for Windows audio streams.
 ms.date: 12/13/2024
+ms.topic: concept-article
 ---
 
 # Audio Processing Object Architecture

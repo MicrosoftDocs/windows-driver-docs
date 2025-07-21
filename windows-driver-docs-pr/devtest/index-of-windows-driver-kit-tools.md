@@ -18,6 +18,7 @@ keywords:
 - GUID Generator WDK
 - GUIDGen.exe WDK
 ms.date: 06/25/2024
+ms.topic: reference
 ---
 
 # Index of Windows Driver Kit Tools

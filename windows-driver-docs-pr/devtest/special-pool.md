@@ -5,6 +5,7 @@ keywords:
 - Special Pool feature WDK Driver Verifier
 - memory corruption WDK Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Special pool memory corruption detection in Driver Verifier

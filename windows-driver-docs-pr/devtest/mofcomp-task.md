@@ -2,6 +2,7 @@
 title: Mofcomp Task
 description: The Windows Driver Kit (WDK) provides the Mofcomp task so that you can run the Mofcomp.exe tool when you build your driver using MSBuld.
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Mofcomp task

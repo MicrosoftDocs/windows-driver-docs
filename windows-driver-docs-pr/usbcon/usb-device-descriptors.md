@@ -2,6 +2,7 @@
 title: USB Device Descriptors
 description: The device descriptor contains information about a USB device as a whole. This article describes the USB_DEVICE_DESCRIPTOR structure and includes information about how a client driver can send a get-descriptor request to obtain the device descriptor.
 ms.date: 01/17/2024
+ms.topic: reference
 ---
 
 # USB device descriptors

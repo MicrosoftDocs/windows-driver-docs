@@ -2,6 +2,7 @@
 title: PnPUtil
 description: PnPUtil
 ms.date: 12/06/2024
+ms.topic: overview
 ---
 
 # PnPUtil

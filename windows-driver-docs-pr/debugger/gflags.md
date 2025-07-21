@@ -3,6 +3,7 @@ title: GFlags - Overview
 description: Learn how GFlags, the Global Flags Editor (gflags.exe), enables and disables advanced debugging, diagnostic, and troubleshooting features. 
 keywords: GFlags, Global Flags Editor, gflags.exe
 ms.date: 07/10/2025
+ms.topic: overview
 ---
 
 # GFlags

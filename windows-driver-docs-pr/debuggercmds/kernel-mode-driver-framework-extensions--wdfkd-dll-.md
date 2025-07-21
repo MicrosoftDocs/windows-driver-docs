@@ -3,6 +3,7 @@ title: "Windows Driver Framework Extensions (Wdfkd.dll)"
 description: "Windows Driver Framework Extensions (Wdfkd.dll)"
 keywords: ["Kernel-Mode Driver Framework debugging, extensions (wdfkd.dll)", "Kernel-Mode Driver Framework extensions (wdfkd.dll)", "wdfkd.dll (Kernel-Mode Driver Framework extensions)", "extensions, Kernel-Mode Driver Framework"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Windows Driver Framework Extensions (Wdfkd.dll)

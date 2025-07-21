@@ -5,6 +5,7 @@ keywords:
 - direct OID request interface WDK networking
 - direct OID request path WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Miniport Adapter Direct OID Requests

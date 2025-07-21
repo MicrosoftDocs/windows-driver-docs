@@ -3,6 +3,7 @@ title: Resource Manager Objects
 description: Resource Manager Objects
 keywords: ["resource managers WDK KTM , objects", "resource managers WDK KTM", "resource managers WDK KTM , routines", "Kernel Transaction Manager WDK , resource managers", "KTM WDK , resource managers", "resource manager objects WDK KTM"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Resource Manager Objects

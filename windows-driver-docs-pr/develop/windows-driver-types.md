@@ -3,6 +3,7 @@ title: Windows Driver Types
 description: Learn the types of Windows drivers, including Desktop, Universal, and Windows drivers. Understand the importance of DCH design principles, driver package isolation, and API layering for enhanced reliability and future certification.
 ms.date: 03/12/2025
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 
 # Windows driver types

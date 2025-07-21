@@ -2,6 +2,7 @@
 title: RoleTypeCorrectlyUsed (Supplemental Windows Driver CodeQL Query)
 description: RoleTypeCorrectlyUsed a Supplemental Windows Driver CodeQL Query
 ms.date: 02/06/2024
+ms.topic: best-practice
 ---
 
 # RoleTypeCorrectlyUsed (Windows Driver CodeQL Query)

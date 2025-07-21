@@ -6,6 +6,7 @@ keywords:
 - TDR (timeout detection and recovery), WDK graphics drivers
 - TDR (timeout detection and recovery), WDDM
 ms.date: 09/20/2024
+ms.topic: concept-article
 ---
 
 # WDDM support for timeout detection and recovery

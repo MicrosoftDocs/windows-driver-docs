@@ -2,6 +2,7 @@
 title: INF Validation Errors and Warnings
 description: Driver installation errors and warnings can appear as a result of the automatic INF verification that Microsoft Visual Studio performs.
 ms.date: 05/30/2024
+ms.topic: error-reference
 ---
 
 # INF Validation Errors and Warnings

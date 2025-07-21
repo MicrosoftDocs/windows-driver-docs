@@ -2,6 +2,7 @@
 title: WDI non-TLV versioning
 description: This section describes WDI non-TLV versioning
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # WDI non-TLV versioning
