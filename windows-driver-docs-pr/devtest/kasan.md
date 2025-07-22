@@ -58,8 +58,6 @@ You can work around this error by adding the following flag to your linker comma
 /alternatename:__asan_wrap_wcscat=wcscat
 ```
 
-This regression will be addressed in future versions of VisualStudio.
-
 ### Regression in VisualStudio 17.14
 
 If you are using VisualStudio 17.14 you may encounter the following build error:
@@ -81,8 +79,6 @@ And the following flags to your linker command line:
 /alternatename:__asan_wrap_wcscpy=wcscpy
 /alternatename:__asan_wrap_wcsncpy=wcsncpy
 ```
-
-This regression will be addressed in future versions of VisualStudio.
 
 ## How to verify that KASAN is enabled on your kernel driver
 
