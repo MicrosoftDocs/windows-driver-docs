@@ -1,6 +1,6 @@
 ---
 title: Working with Print Notifications in a UWP Device App
-description: This topic introduces print notifications, and shows how the C# version of the Print settings and print notifications sample uses a background task to respond to print notification.
+description: This article introduces print notifications, and shows how the C# version of the Print settings and print notifications sample uses a background task to respond to print notification.
 ms.date: 07/21/2025
 ms.topic: how-to
 ---
@@ -10,11 +10,11 @@ ms.topic: how-to
 > [!IMPORTANT]
 > Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
-UWP device apps can respond to bidirectional communication (Bidi) events that are sent from a v4 print driver. This topic introduces print notifications, and shows how the C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample uses a background task to respond to print notification. The background task demonstrates how to save notification details in the local app data store, send toasts, and update a tile and badge. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
+UWP device apps can respond to bidirectional communication (Bidi) events that are sent from a v4 print driver. This article introduces print notifications, and shows how the C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample uses a background task to respond to print notification. The background task demonstrates how to save notification details in the local app data store, send toasts, and update a tile and badge. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
 The C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample demonstrates the background portion of the app (*the background task*) in the **BackgroundTask** project. The code for the background task is in the **PrintBackgroundTask.cs** file. The *foreground app*, the full-screen app that can be launched from Start, is in the **DeviceAppForPrinters** project. The **InkLevel.xaml.cs** file shows one way that notification details can be accessed from the foreground app. To work with print notifications, the sample uses the printer extension library in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
 
-The code examples shown in this topic are based on the C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample. This sample is also available in JavaScript and C++. Note that because C++ can access COM directly, the C++ version of the sample does not include code library projects. Download the samples to see the latest versions of the code.
+The code examples shown in this article are based on the C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample. This sample is also available in JavaScript and C++. Because C++ can access COM directly, the C++ version of the sample doesn't include code library projects. Download the samples to see the latest versions of the code.
 
 ## Print notifications
 
@@ -22,7 +22,7 @@ Print notifications let your UWP device app inform the user of important printer
 
 Printer manufacturers must implement Bidi and the DriverEvent XML file in their v4 print driver to use print notifications with their UWP device apps. For more info, see [Bidirectional Communications](../print/bidirectional-communication.md).
 
-When a DriverEvent occurs, and the background task of a UWP device app is started, the app has several options as to how it can proceed. For more details about the flow that leads to the launch of the task, see [Driver Support for Customized UI](../print/driver-support-for-customized-ui.md).
+When a DriverEvent occurs, and the background task of a UWP device app is started, the app has several options as to how it can proceed. For more information about the flow that leads to the launch of the task, see [Driver Support for Customized UI](../print/driver-support-for-customized-ui.md).
 
 The background task can choose to:
 
@@ -42,15 +42,15 @@ Before you get started:
 
 1. Get your development PC set up. See [Getting started](getting-started.md) for info about downloading the tools and creating a developer account.
 
-1. Associate your app with the store. See [Create a UWP device app](step-1--create-a-uwp-device-app.md) for info about that.
+1. Associate your app with the store. For more information, see [Create a UWP device app](step-1--create-a-uwp-device-app.md).
 
-1. Create device metadata for your printer that associates it with your app. See [Create device metadata](step-2--create-device-metadata.md) for more about that.
+1. Create device metadata for your printer that associates it with your app. For more information, see [Create device metadata](step-2--create-device-metadata.md).
 
-1. Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](/windows/uwp/design/).
+1. Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they're displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](/windows/uwp/design/).
 
-1. If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** and **DeviceAppForPrintersLibrary** projects to your UWP device app solution. You can find each of these projects in the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample.
+1. If you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** and **DeviceAppForPrintersLibrary** projects to your UWP device app solution. You can find each of these projects in the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample.
 
-Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.
+Because C++ can access COM directly, C++ apps don't require a separate library to work with the COM-based printer device context.
 
 ## Step 1: Register background task
 
@@ -121,23 +121,23 @@ For the main page of your app, keep in mind that Windows 8.1 can display multip
 
 ### Best practices
 
-- **Don't include action words on notifications.** On the notification message, don't use text that tells users to push, press, or click notification. Users already understand that they can press a toast to find out more information. For example just write "Your printer is low on ink" instead of "Your printer is low on ink. Press to troubleshoot".
+- **Don't include action words on notifications.** On the notification message, don't use text that tells users to push, press, or select notification. Users already understand that they can press a toast to find more information. For example, just write "Your printer is low on ink" instead of "Your printer is low on ink. Press to troubleshoot".
 
-- **Keep interactions simple.** Everything shown on the notifications experience should be related to the notification. For example a notification page about a paper jam should only contain links and information about resolving that issue. It should not contain links to unrelated experiences such purchasing ink or other support information.
+- **Keep interactions simple.** Everything shown on the notifications experience should be related to the notification. For example a notification page about a paper jam should only contain links and information about resolving that issue. It shouldn't contain links to unrelated experiences such purchasing ink or other support information.
 
 - **Use multimedia.** Use actual photos, videos, or illustrations of the device to help users quickly resolve an issue with their device.
 
-- **Keep users within the context of your app.** When providing information about an issue, do not link to online or other support materials. Keep the user in the context of the app.
+- **Keep users within the context of your app.** When providing information about an issue, don't link to online or other support materials. Keep the user in the context of the app.
 
 ## Step 4: Create background task
 
 If your app registers a background task for print notifications, it must supply a handler for the background task activation. In the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample, the `PrintBackgroundTask` class handles the print notifications.
 
-If your printer status doesn't require immediate user intervention, update a tile rather than show a toast. For example, for a low ink condition, a tile update is sufficient. But if the printer is completely out of ink, the app may show a toast notification.
+If your printer status doesn't require immediate user intervention, update a tile rather than show a toast. For example, for a low ink condition, a tile update is sufficient. But if the printer is out of ink, the app could show a toast notification.
 
 ### Saving notification details
 
-The background task cannot launch the foreground app directly, only the user can: from a tile, toast, or Start. So, to ensure that the foreground app can access the print notification details, the background task saves them to local storage. For more info about using local storage, see [Quickstart: local app data](/previous-versions/windows/apps/hh700361(v=win.10)).
+The background task can't launch the foreground app directly, only the user can: from a tile, toast, or Start. So, to ensure that the foreground app can access the print notification details, the background task saves them to local storage. For more info about using local storage, see [Quickstart: local app data](/previous-versions/windows/apps/hh700361(v=win.10)).
 
 When a print notification is triggered, Windows runs the background task by calling its `Run` method. The notification data is passed to the background task through a method parameter that must be cast to type Windows.Devices.Printers.Extensions.PrintNotificationEventDetails. The `PrinterName` and `EventData` properties of that object carry the printer name and Bidi message, respectively.
 
@@ -203,10 +203,10 @@ void UpdateBadge()
 
 A toast notification is a transient message to the user that contains relevant, time-sensitive information and provides quick access to related content in an app. Toast notifications should be viewed to users as an invitation to return to your app to follow up on something of interest. For more info, see [Toast notification overview](/previous-versions/windows/apps/hh779727(v=win.10)).
 
-To enable toast notifications, the app needs to register that it is toast-capable in the app package manifest. In the `VisualElements` element, set the `ToastCapable` attribute to true.
+To enable toast notifications, the app needs to register that it's toast-capable in the app package manifest. In the `VisualElements` element, set the `ToastCapable` attribute to true.
 
 > [!IMPORTANT]
-> We do not recommended always showing a toast, especially for non-actionable events. This may become annoying for users and cause them to turn off all toasts from an app. For events that do not require user's immediate attention, we recommended updating only the tile and badge, and not showing a toast.
+> We don't recommended always showing a toast, especially for nonactionable events. This could become annoying for users and cause them to turn off all toasts from an app. For events that don't require user's immediate attention, we recommended updating only the tile and badge, and not showing a toast.
 
 This example shows the `ToastCapable` attribute in the `VisualElements` element, as it appears in the app package manifest file, **Package.appxmanifest**.
 
@@ -252,9 +252,9 @@ void ShowToast(string title, string body)
 
 ## Step 5: Handle activation
 
-After a print notification triggers the background task, the app can be launched by tapping a toast notification or a tile. If your app is activated from either, a parameter will be passed to the app through `LaunchActivatedEventArgs.arguments` property. For more info about activation and the Microsoft Store app lifecycle, see [Application lifecycle](/previous-versions/windows/apps/hh464925(v=win.10)).
+After a print notification triggers the background task, the app can be launched by tapping a toast notification or a tile. If your app is activated from either, a parameter is passed to the app through `LaunchActivatedEventArgs.arguments` property. For more info about activation and the Microsoft Store app lifecycle, see [Application lifecycle](/previous-versions/windows/apps/hh464925(v=win.10)).
 
-To determine if your app was activated in one these cases, handle the `OnLaunched` event, and examine the event arguments that are passed to the event handler. If the event arguments are null, the app was activated by the user from Start. If the event arguments are not null, the app was launched from a toast or tile.
+To determine if your app was activated in one these cases, handle the `OnLaunched` event, and examine the event arguments that are passed to the event handler. If the event arguments are null, the app was activated by the user from Start. If the event arguments aren't null, the app was launched from a toast or tile.
 
 This example is from the `OnLaunched` method of the **App.xaml.cs** file. It shows how to handle the activation from toast or tiles.
 
@@ -310,7 +310,7 @@ protected override async void OnLaunched(LaunchActivatedEventArgs args)
 
 Because the background task can't directly launch the foreground app, the print notification details need to be saved to the app's settings so that the foreground app can access them. For more info about using local storage, see [Quickstart: local app data](/previous-versions/windows/apps/hh700361(v=win.10)).
 
-This example shows how the printer name and Bidi message are be retrieved from app settings in the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample. The code is from the `DisplayBackgroundTaskTriggerDetails` method of the **InkLevel.xaml.cs** file. Note that the key index values, `keyPrinterName` and `keyAsyncUIXML`, are the same string constants that are used in the background task, **PrintBackgroundTask.cs**.
+This example shows how the printer name and Bidi message are retrieved from app settings in the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample. The code is from the `DisplayBackgroundTaskTriggerDetails` method of the **InkLevel.xaml.cs** file. The key index values, `keyPrinterName`, and `keyAsyncUIXML`, are the same string constants that are used in the background task, **PrintBackgroundTask.cs**.
 
 ```csharp
 void DisplayBackgroundTaskTriggerDetails()
@@ -346,9 +346,9 @@ void DisplayBackgroundTaskTriggerDetails()
 
 Before you can test your UWP device app, it must be linked to your printer using device metadata.
 
-You need a copy of the device metadata package for your printer, to add the device app info to it. If you don't have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
+You need a copy of the device metadata package for your printer, to add the device app info to it. If you don't have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the article [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
 
-To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](https://developer.microsoft.com/windows/hardware/), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
+To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](https://developer.microsoft.com/windows/hardware/), before completing the steps in this article. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
 
 The following steps build your app and install the device metadata.
 
@@ -360,27 +360,27 @@ The following steps build your app and install the device metadata.
 
 1. Reboot the computer
 
-1. Build the solution by opening the solution (.sln) file. Press F7 or go to **Build-&gt;Build Solution** from the top menu after the sample has loaded.
+1. Build the solution by opening the solution (.sln) file. Press F7 or go to **Build->Build Solution** from the top menu after the sample is loaded.
 
 1. Disconnect and uninstall the printer. This step is required so that Windows will read the updated device metadata the next time the device is detected.
 
 1. Edit and save device metadata. To link the device app to your device, you must associate the device app with your device.
 
-    If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
+    If your device metadata isn't created yet, see [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
 
-    1. If the **Device Metadata Authoring Wizard** is not open yet, start it from *%ProgramFiles(x86)%*\\Windows Kits\\8.1\\bin\\x86, by double-clicking **DeviceMetadataWizard.exe**.
+    1. If the **Device Metadata Authoring Wizard** isn't open yet, start it from *%ProgramFiles(x86)%*\\Windows Kits\\8.1\\bin\\x86, by double-clicking **DeviceMetadataWizard.exe**.
 
-    1. Click **Edit Device Metadata**. This will let you edit your existing device metadata package.
+    1. Select **Edit Device Metadata**. This option lets you edit your existing device metadata package.
 
     1. In the **Open** dialog box, locate the device metadata package associated with your UWP device app. (It has a **devicemetadata-ms** file extension.)
 
-    1. On the **Specify UWP device app information** page, enter the Microsoft Store app info in the **UWP device app** box. Click on **Import UWP app manifest file** to automatically enter the **Package name**, **Publisher name**, and **UWP app ID**.
+    1. On the **Specify UWP device app information** page, enter the Microsoft Store app info in the **UWP device app** box. Select on **Import UWP app manifest file** to automatically enter the **Package name**, **Publisher name**, and **UWP app ID**.
 
     1. If your app is registering for printer notifications, fill out the **Notification handlers** box. In **Event ID**, enter the name of the print event handler. In **Event Asset**, enter the name of the file where that code resides.
 
-    1. When you're done, click **Next** until you get to the **Finish** page.
+    1. When you're done, select **Next** until you get to the **Finish** page.
 
-    1. On the **Review the device metadata package** page, make sure that all of the settings are correct and select the **Copy the device metadata package to the metadata store on the local computer** check box. Then click **Save**.
+    1. On the **Review the device metadata package** page, make sure that all of the settings are correct and select the **Copy the device metadata package to the metadata store on the local computer** check box. Then select **Save**.
 
 1. Reconnect your printer so that Windows reads the updated device metadata when the device is connected.
 
@@ -390,27 +390,27 @@ The following steps build your app and install the device metadata.
 
 If no default print notification appears when expected...
 
-- **Possible cause:** Test signing is not turned on. See the Debugging section in this topic for info about turning it on.
+- **Possible cause:** Test signing isn't turned on. See the Debugging section in this article for info about turning it on.
 
-- **Possible cause:** Domain policies have disabled toast notifications. Leave the domain and try again.
+- **Possible cause:** Toast notifications are disabled by domain policies. Leave the domain and try again.
 
-- **Possible cause:** The printer has not implemented DriverEvents. Check that your v4 driver supports Bidi and DriverEvents. For more info, see [Driver Support for Customized UI](../print/driver-support-for-customized-ui.md).
+- **Possible cause:** The printer hasn't implemented DriverEvents. Check that your v4 driver supports Bidi and DriverEvents. For more info, see [Driver Support for Customized UI](../print/driver-support-for-customized-ui.md).
 
 - **Possible cause:** The machine has no recent job in the printer queue. Make sure the printer icon is shown in the lower right hand corner of your screen. If not, send another print job.
 
-- **Possible cause:** Your entry point for the background task (`IBackgroundTask`) is within the same project as your foreground app. This is not allowed. Separate out an entirely new class for your background task handler.
+- **Possible cause:** Your entry point for the background task (`IBackgroundTask`) is within the same project as your foreground app. This scenario isn't allowed. Separate out an entirely new class for your background task handler.
 
-- **Possible cause:** The class that is the entry point for notifications in your app is incorrectly given in your manifest or device metadata, causing the app to crash within the backgroundhost and not showing any toast. Check the following:
+- **Possible cause:** The class that is the entry point for notifications in your app is incorrectly given in your manifest or device metadata, causing the app to crash within the background host and not showing any toast. Check for the following issues:
 
   - Make sure the entry point is given correctly in the **Declarations** tab of the Manifest Designer. It should be in the form of Namespace.ClassName for C# and C++. For JavaScript, it should be the relative directory path to the .js file.
 
-  - A JavaScript app should call close() after it is finished.
+  - A JavaScript app should call close() after it's finished.
 
   - The C# class has to implement Windows.ApplicationModel.Background.IBackgroundTask and has to have a public void `Run(Windows.ApplicationModel.Background.IBackgroundTaskInstance taskInstance)` method.
   
   - The C++ class has to implement Windows::ApplicationModel::Background::IBackgroundTask and has to have a `virtual void Run(Windows::ApplicationModel::Background::IBackgroundTaskInstance^ taskInstance)` method.
 
-## Related topics
+## Related articles
 
 - [Badge overview (UWP apps)](/previous-versions/windows/apps/hh779719(v=win.10))
 - [Tile and tile notification overview (UWP apps)](/previous-versions/windows/apps/hh779724(v=win.10))
