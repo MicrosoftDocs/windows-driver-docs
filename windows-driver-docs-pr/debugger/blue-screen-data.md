@@ -1,24 +1,24 @@
 ---
-title: Analyze Bug Check Blue Screen Data
+title: Analyze Bug Check Stop Code Error Data
 description: Learn about bug checks, which provide information when Microsoft Windows encounters a condition that compromises safe system operation and the system halts.
-keywords: ["Analyze Bug Check Blue Screen Data Windows Debugging"]
+keywords: ["Analyze Bug Check Stop Code Error Data Windows Debugging"]
 ms.date: 08/23/2024
 topic_type:
 - apiref
 ms.topic: reference
 api_name:
-- Analyze Bug Check Blue Screen Data
+- Analyze Bug Check Stop Code Error Data
 api_type:
 - NA
 ---
 
-# Analyze Bug Check Blue Screen Data
+# Analyze bug check (stop code error) data
 
 > [!NOTE]
-> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
+> This article is for programmers. If you're a customer who has received a stop code error while using your computer, see [Troubleshoot stop code errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
 
 > [!NOTE]
-> If you're an IT professional or support agent, see [Advanced troubleshooting for stop or blue screen errors](https://support.microsoft.com/help/3106831/) for more information.
+> If you're an IT professional or support agent, see [Advanced troubleshooting for stop code errors](https://support.microsoft.com/help/3106831/) for more information.
 
 ## Gather the stop code parameters
 
@@ -53,7 +53,7 @@ There are multiple ways to gather the four stop code parameters.
 
 ### Read bug check information from the debugger
 
-If a debugger is attached, and debugging is enabled on the PC, a bug check will cause the target computer to break into the debugger. In this case, the blue screen might not appear immediately. The full details on this crash will be sent to the debugger and appear in the debugger window. To see this information a second time, use the [.bugcheck (Display bug check data)](../debuggercmds/-bugcheck--display-bug-check-data-.md) command or the [!analyze](../debuggercmds/-analyze.md) extension command. For information on enabling debugging see, [Getting started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md).
+If a debugger is attached, and debugging is enabled on the PC, a bug check will cause the target computer to break into the debugger. In this case, the stop code error might not appear immediately. The full details on this crash will be sent to the debugger and appear in the debugger window. To see this information a second time, use the [.bugcheck (Display bug check data)](../debuggercmds/-bugcheck--display-bug-check-data-.md) command or the [!analyze](../debuggercmds/-analyze.md) extension command. For information on enabling debugging see, [Getting started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md).
 
 ## Kernel debugging and crash dump analysis
 
@@ -75,7 +75,7 @@ For more information, see the following articles:
 
 ## Use Driver Verifier to gather information
 
-It's estimated that about three quarters of blue screens are caused by faulting drivers. Driver Verifier is a tool that runs in real time to examine the behavior of drivers. For example, Driver Verifier checks the use of memory resources, such as memory pools. If it finds errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. The driver verifier manager is built into Windows and is available on all Windows PCs. To start the driver verifier manager, enter **Verifier** at a command prompt. You can configure which drivers you would like to verify. The code that verifies drivers adds overhead as it runs, so try to verify the smallest number of drivers as possible. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
+It's estimated that about three quarters of stop code errors are caused by faulting drivers. Driver Verifier is a tool that runs in real time to examine the behavior of drivers. For example, Driver Verifier checks the use of memory resources, such as memory pools. If it finds errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. The driver verifier manager is built into Windows and is available on all Windows PCs. To start the driver verifier manager, enter **Verifier** at a command prompt. You can configure which drivers you would like to verify. The code that verifies drivers adds overhead as it runs, so try to verify the smallest number of drivers as possible. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
 
 ## Tips for software engineers
 
