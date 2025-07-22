@@ -24,15 +24,15 @@ Use the following general guidelines when designing and writing [*SynchCritSecti
 
 The following example shows a technique for maintaining a timer counter in a device extension. Assume the driver uses the counter to determine if an I/O operation times out. Also assume the driver doesn't overlap I/O operations.
 
-- The driver's [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine initializes the timer counter to some initial value for each I/O request. The driver then adds a second to its device timeout value, in case its [*IoTimer*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_timer_routine) routine just returned control.
+1. The driver's [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine initializes the timer counter to some initial value for each I/O request. The driver then adds a second to its device timeout value, in case its [*IoTimer*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_timer_routine) routine just returned control.
 
-- The driver's ISR sets this timer counter to minus one.
+1. The driver's ISR sets this timer counter to minus one.
 
-- The driver's [*IoTimer*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_timer_routine) routine is called once per second to read the time counter and determine whether the ISR already set it to minus one. If not, the *IoTimer* routine decrements the counter by using [**KeSynchronizeExecution**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesynchronizeexecution) to call a SynchCritSection_1 routine.
+1. The driver's [*IoTimer*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_timer_routine) routine is called once per second to read the time counter and determine whether the ISR already set it to minus one. If not, the *IoTimer* routine decrements the counter by using [**KeSynchronizeExecution**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesynchronizeexecution) to call a SynchCritSection_1 routine.
 
   If the counter goes to zero, indicating that the request timed out, the SynchCritSection_1 routine calls a SynchCritSection_2 routine to program a device reset operation. If the counter is minus one, the [*IoTimer*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_timer_routine) routine simply returns.
 
-- If the driver's [*DpcForIsr*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine) routine must reprogram the device to begin a partial-transfer operation, it must reinitialize the timer counter as the [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine did.
+1. If the driver's [*DpcForIsr*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine) routine must reprogram the device to begin a partial-transfer operation, it must reinitialize the timer counter as the [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine did.
 
   The [*DpcForIsr*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine) routine also must use [**KeSynchronizeExecution**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesynchronizeexecution) to call the SynchCritSection_2 routine, or possibly a SynchCritSection_3 routine, to program the device for another transfer operation.
 

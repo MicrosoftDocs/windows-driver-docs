@@ -17,13 +17,13 @@ Even if a driver doesn't queue pending IRPs, but retains ownership in some other
 
 Any driver that queues its own IRPs and uses its own spin lock must do the following steps:
 
-- Create a spin lock to protect the queue.
+1. Create a spin lock to protect the queue.
 
-- Set and clear the *Cancel* routine only while holding this spin lock.
+1. Set and clear the *Cancel* routine only while holding this spin lock.
 
-- If the *Cancel* routine starts running while the driver is dequeuing an IRP, allow the *Cancel* routine to complete the IRP.
+1. If the *Cancel* routine starts running while the driver is dequeuing an IRP, allow the *Cancel* routine to complete the IRP.
 
-- Acquire the lock that protects the queue in the *Cancel* routine.
+1. Acquire the lock that protects the queue in the *Cancel* routine.
 
 To create the spin lock, the driver calls [**KeInitializeSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializespinlock). In the following example, the driver saves the spin lock in a **DEVICE_CONTEXT** structure along with the queue it created:
 
@@ -102,7 +102,7 @@ The first call sets the *Cancel* routine for the IRP. However, because the IRP m
 
 - If the IRP is canceled but the *Cancel* routine isn't called yet, the current routine dequeues the IRP and completes it with STATUS_CANCELLED.
 
-- If the IRP is canceled and the *Cancel* routine is already called, the current return marks the IRP pending and returns STATUS_PENDING. The *Cancel* routine completes the IRP.
+- If the IRP is canceled and the *Cancel* routine is already called, the current routine marks the IRP pending and returns STATUS_PENDING. The *Cancel* routine completes the IRP.
 
 The following example shows how to remove an IRP from the previously created queue:
 
