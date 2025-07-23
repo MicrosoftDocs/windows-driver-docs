@@ -44,6 +44,42 @@ KASAN is supported only on x64.
 
 1. Load your recompiled kernel driver on your target system, and stress-test it as you usually would. KASAN operates at runtime and reports illegal memory access events via **Bug Check 0x1F2: KASAN_ILLEGAL_ACCESS**.
 
+### Regression in VisualStudio 17.12
+
+If you are using VisualStudio 17.12 you may encounter the following build error:
+
+```console
+error LNK2019: unresolved external symbol __asan_wrap_wcscat referenced in function
+```
+
+You can work around this error by adding the following flag to your linker command line:
+
+```console
+/alternatename:__asan_wrap_wcscat=wcscat
+```
+
+### Regression in VisualStudio 17.14
+
+If you are using VisualStudio 17.14 you may encounter the following build error:
+
+```console
+error LNK2001: unresolved external symbol __LINK_WITH_asan_compat.lib_TO_USE_NEW_COMPILER_WITH_OLDER_ASAN_RUNTIME
+```
+
+You can work around this error by adding the following flag to your compiler command line:
+
+```console
+/fno-sanitize-address-asan-compat-lib
+```
+
+And the following flags to your linker command line:
+
+```console
+/alternatename:__asan_wrap_wcscat=wcscat
+/alternatename:__asan_wrap_wcscpy=wcscpy
+/alternatename:__asan_wrap_wcsncpy=wcsncpy
+```
+
 ## How to verify that KASAN is enabled on your kernel driver
 
 The kernel drivers compiled with KASAN have a PE section called "`KASAN`". Verify that KASAN is enabled on your driver by running the following command in a **Developer Command Prompt**:
