@@ -1,11 +1,14 @@
 ---
 title: Manage Device Metadata Experiences
 description: After you create and submit your device metadata experiences, you can review or edit them through the dashboard.
-ms.date: 09/17/2024
+ms.date: 07/21/2025
 ms.topic: how-to
 ---
 
 # Manage Device Metadata Experiences
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 After you create and submit your device metadata experiences, you can review or edit them through the dashboard.
 

@@ -1,11 +1,14 @@
 ---
 title: UWP Device Apps for Internal Devices
 description: This topic introduces the ways that UWP device apps can access internal devices.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
 ms.topic: concept-article
 ---
 
 # UWP device apps for internal devices
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 This topic introduces the ways that UWP device apps can access internal devices. *Internal devices* are devices that reside inside or are integrated with the PC enclosure.
 
@@ -36,7 +39,7 @@ When an OEM/component supplier needs to access an internal device in a way that 
 | USB | [Windows.Devices.Usb](/uwp/api/Windows.Devices.Usb) | exclusive read & exclusive write |
 | HID | [Windows.Devices.HumanInterfaceDevice](/uwp/api/Windows.Devices.HumanInterfaceDevice) | shared read & exclusive write |
 
-To access peripheral devices that use only Microsoft class drivers - the most common use for the device protocol APIs - device metadata is not required. However, to access internal devices with those APIs, metadata is required. When accessing an internal device, the app must be specified in the device metadata as a privileged app for the system container. This requirements restricts internal device access to OEMs.
+To access peripheral devices that use only Microsoft class drivers - the most common use for the device protocol APIs - device metadata is not required. However, to access internal devices with those APIs, metadata is required. When accessing an internal device, the app must be specified in the device metadata as a privileged app for the system container. This requirement restricts internal device access to OEMs.
 
 For more info, see:
 
@@ -68,4 +71,4 @@ For more info about these workflows, see [UWP device apps design guide for speci
 
 ## Related topics
 
-[Identifying the location of internal cameras (UWP device apps)](identifying-the-location-of-internal-cameras.md)
+- [Identifying the location of internal cameras (UWP device apps)](identifying-the-location-of-internal-cameras.md)
