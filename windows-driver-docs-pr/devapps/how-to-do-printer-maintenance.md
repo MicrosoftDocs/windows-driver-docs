@@ -220,7 +220,7 @@ The following steps build your app and install the device metadata.
 
     1. In the **Open** dialog box, locate the device metadata package associated with your UWP device app. (It has a **devicemetadata-ms** file extension.)
 
-    1. On the **Specify UWP device app information** page, enter the Microsoft Store app info in the **UWP device app** box. Select on **Import UWP app manifest file** to automatically enter the **Package name**, **Publisher name**, and **UWP app ID**.
+    1. On the **Specify UWP device app information** page, enter the Microsoft Store app info in the **UWP device app** box. Select **Import UWP app manifest file** to automatically enter the **Package name**, **Publisher name**, and **UWP app ID**.
 
     1. If your app is registering for printer notifications, fill out the **Notification handlers** box. In **Event ID**, enter the name of the print event handler. In **Event Asset**, enter the name of the file where that code resides.
 
