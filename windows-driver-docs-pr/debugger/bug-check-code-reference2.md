@@ -1,6 +1,6 @@
 ---
 title: Bug Check Code Reference
-description: Explore common bug checks, review the codes displayed on the blue bug check screen, and learn how to use the !analyze extension in the Windows Debugger (WinDbg).
+description: Explore common bug checks, review the codes displayed on the bug check screen, and learn how to use the !analyze extension in the Windows Debugger (WinDbg).
 ms.custom: "se-defect-target"
 ms.date: 07/15/2025
 ms.topic: error-reference
@@ -8,15 +8,15 @@ ms.topic: error-reference
 
 # Bug check code reference
 
-This article describes common bug check codes displayed on the blue bug check screen. You can use the [!analyze](../debuggercmds/-analyze.md) extension in the Windows Debugger (WinDbg) to display information about a bug check code.
+This article describes common bug check codes displayed on the bug check screen. You can use the [!analyze](../debuggercmds/-analyze.md) extension in the Windows Debugger (WinDbg) to display information about a bug check code.
 
 The information in this article is intended for programmers. Depending on your scenario requirements, you might be interested in another article:
 
-- If you're a customer whose system is displaying a Blue Screen with a bug check code, see [Resolving Blue Screen errors in Windows](https://support.microsoft.com/windows/resolving-blue-screen-errors-in-windows-60b01860-58f2-be66-7516-5c45a66ae3c6).
+- If you're a customer whose system is displaying a bug check code, see [Resolving Blue Screen errors in Windows](https://support.microsoft.com/windows/resolving-blue-screen-errors-in-windows-60b01860-58f2-be66-7516-5c45a66ae3c6).
 
 - If you're an IT professional, you can find more information in [Advanced troubleshooting for stop code errors](/troubleshoot/windows-client/performance/stop-code-error-troubleshooting). 
 
-- For general information about bug check system halt errors, see [Bug checks (Blue Screens)](bug-checks--blue-screens-.md).
+- For general information about bug check system halt errors, see [Bug checks](bug-checks--blue-screens-.md).
 
 ## Use WinDbg to display stop code information
 
@@ -439,5 +439,5 @@ The following table lists the bug check codes and provides links for more inform
 
 ## Related articles
 
-- [Bug checks (Blue Screens)](bug-checks--blue-screens-.md)
+- [Bug checks)](bug-checks--blue-screens-.md)
 - [Analyze bug check Blue Screen data](blue-screen-data.md)
