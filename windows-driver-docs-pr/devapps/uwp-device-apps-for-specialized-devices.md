@@ -39,7 +39,7 @@ When an OEM/component supplier needs to access an internal device in a way that 
 | USB | [Windows.Devices.Usb](/uwp/api/Windows.Devices.Usb) | exclusive read & exclusive write |
 | HID | [Windows.Devices.HumanInterfaceDevice](/uwp/api/Windows.Devices.HumanInterfaceDevice) | shared read & exclusive write |
 
-To access peripheral devices that use only Microsoft class drivers - the most common use for the device protocol APIs - device metadata is not required. However, to access internal devices with those APIs, metadata is required. When accessing an internal device, the app must be specified in the device metadata as a privileged app for the system container. This requirements restricts internal device access to OEMs.
+To access peripheral devices that use only Microsoft class drivers - the most common use for the device protocol APIs - device metadata is not required. However, to access internal devices with those APIs, metadata is required. When accessing an internal device, the app must be specified in the device metadata as a privileged app for the system container. This requirement restricts internal device access to OEMs.
 
 For more info, see:
 

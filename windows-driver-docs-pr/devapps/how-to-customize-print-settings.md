@@ -1,7 +1,7 @@
 ---
 title: How to Customize Print Settings (UWP Device Apps)
 description: This topic introduces the advanced print settings flyout, and shows how the C# version of the Print settings and print notifications sample replaces the default flyout with a custom flyout.
-ms.date: 07/21/2025
+ms.date: 07/23/2025
 ms.topic: how-to
 ---
 
@@ -652,7 +652,7 @@ The following steps build your app and install the device metadata.
 
 ### Issue: Advanced print settings shows default flyout instead of custom flyout
 
-If the advanced print settings flyout shows the default flyout instead of than the custom flyout that your app implements...
+If the advanced print settings flyout shows the default flyout instead of the custom flyout that your app implements...
 
 - **Possible cause:** Test signing is not turned on. See the Debugging section in this topic for info about turning it on.
 

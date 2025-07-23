@@ -14,7 +14,7 @@ ms.topic: how-to
 
 This article describes how to use the **Device Metadata Authoring Wizard** to create new device metadata that associates your UWP device app with a device. The wizard can also create a **StoreManifest.xml** file that you might need to add to your app in the next step.
 
-A UWP device app is a special UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
+A UWP device app is a special UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more information about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
 This article is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
@@ -38,13 +38,13 @@ The **Device Metadata Authoring Wizard** is used to create new device metadata.
 
 1. On the **Specify the locales** page, select at least one locale that should be associated with the device metadata package. You can also set a default locale that is used when a locale-specific package isn't available on the computer. Select **Next**.
 
-1. On the **Describe the device** page, enter the info that is shown to end users that plug in your device. A model name and manufacturer is required for each locale.
+1. On the **Describe the device** page, enter the information that is shown to end users that plug in your device. A model name and manufacturer is required for each locale.
 
 1. On the **Specify the hardware information** page, add at least one hardware ID and one model ID. The hardware ID should include the vendor ID for your company. The model ID is a GUID and is the recommended way to associate device metadata with devices that support a model ID. Select **Next**.
 
 1. On the **Specify UWP device app information** page:
 
-   - If you want to enable [automatic installation](auto-install-for-uwp-device-apps.md) for your device app, or extend the [camera](uwp-device-apps-for-webcams.md) or [printer](uwp-device-apps-for-printers.md) experience (which requires automatic installation), enter the Microsoft Store app info in the **UWP device app** box. Select on **Import UWP app manifest file** to automatically enter the **Package name**, **Publisher name**, and **UWP app ID**.
+   - If you want to enable [automatic installation](auto-install-for-uwp-device-apps.md) for your device app, or extend the [camera](uwp-device-apps-for-webcams.md) or [printer](uwp-device-apps-for-printers.md) experience (which requires automatic installation), enter the Microsoft Store app information in the **UWP device app** box. Select **Import UWP app manifest file** to automatically enter the **Package name**, **Publisher name**, and **UWP app ID**.
 
      > [!WARNING]
      > It's important to consider that the automatic installation feature doesn't provide a notification to the user when the app is installed. Some users find this experience confusing and frustrating, and give your app a bad rating.
@@ -71,7 +71,7 @@ The **Device Metadata Authoring Wizard** is used to create new device metadata.
 
     If you want to let other apps act as AutoPlay handlers for your device, select **Enable AutoPlay for registered apps**.
 
-    For more info about AutoPlay, see [AutoPlay for UWP device apps](autoplay-for-uwp-device-apps.md).
+    For more information about AutoPlay, see [AutoPlay for UWP device apps](autoplay-for-uwp-device-apps.md).
 
 1. When you're ready to continue, select **Next**.
 

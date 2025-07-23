@@ -14,7 +14,7 @@ ms.topic: how-to
 
 This topic describes the basic process for creating a UWP device app by using Microsoft Visual Studio. Learn about the tasks that are common to all UWP device apps.
 
-A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
+A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more information about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
 This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
@@ -30,9 +30,9 @@ Before you can begin, you need to have installed Visual Studio and created a UWP
 
 Some UWP device app and APIs require that your device supports a Microsoft-supplied driver or that your driver supports a specific driver model. This table lists the driver requirements for some device apps and APIs.
 
-| Device app or API | Driver info |
+| Device app or API | Driver information |
 |--|--|
-| UWP device apps for camera | Your camera's driver must use the AvStream driver model. For more info on the AvStream driver model, see the [AVStream Overview](../stream/avstream-overview.md) in the Windows Driver Kit. A an additional component, known as the Driver MFT (a media foundation transform), can be supplied with the driver installation package to provide custom effects for the camera. For more info, see [Windows store device apps for cameras](uwp-device-apps-for-webcams.md). |
+| UWP device apps for camera | Your camera's driver must use the AvStream driver model. For more information on the AvStream driver model, see the [AVStream Overview](../stream/avstream-overview.md) in the Windows Driver Kit. An additional component, known as the Driver MFT (a media foundation transform), can be supplied with the driver installation package to provide custom effects for the camera. For more info, see [Windows store device apps for cameras](uwp-device-apps-for-webcams.md). |
 | UWP device apps for printers | Printers must use the v4 Printer driver. See [Developing the v4 print driver](../print/v4-printer-driver.md) for more info. |
 | USB APIs | To use the Windows Runtime[Windows.Devices.Usb](/uwp/api/Windows.Devices.Usb)APIs, your device must be compatible with the Winusb.sys driver. |
 | Human Interface Device (HID) APIs | The HID APIs are designed for use over USB, Bluetooth, Bluetooth Smart, and the I2C transports. To use the Windows Runtime[Windows.Devices.HumanInterfaceDevice](/uwp/api/Windows.Devices.HumanInterfaceDevice) APIs, your device must be compatible with the HIDClass.sys driver and the driver required by the transport. For more info, see [HID Architecture](../hid/hid-architecture.md). |

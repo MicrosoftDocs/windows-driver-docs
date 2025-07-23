@@ -38,7 +38,7 @@ A three-pin camera could have as many as three instances of MFT0, depending on t
 
 ![three-pin webcam.](images/372826-camera-three-pin-camera.png)
 
-This situation presents several challenges. First, in the case of a host-based autoexposure solution, which requires direct control of the camera sensor and ISP settings, three MFT0s mights be trying to control the camera at the same time. This breaks the control system.
+This situation presents several challenges. First, in the case of a host-based autoexposure solution, which requires direct control of the camera sensor and ISP settings, three MFT0s might be trying to control the camera at the same time. This breaks the control system.
 
 Second, there are potentially three instances of video effects. Beyond incurring the cost of three times the calculations, the three instances of the MFT0 must now communicate in a way that ensures each video frame always has the same effect in the exact same state. Otherwise what the user sees won't be what is saved or shared.
 

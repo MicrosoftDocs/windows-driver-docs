@@ -36,7 +36,7 @@ Before you get started:
 
 1. Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](/windows/uwp/design/).
 
-1. If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** project to your UWP device app solution. You can find this project in the [Print job management and printer maintenance](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20job%20management%20and%20printer%20maintenance) sample.
+1. If you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** project to your UWP device app solution. You can find this project in the [Print job management and printer maintenance](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20job%20management%20and%20printer%20maintenance) sample.
 
 Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.
 
@@ -249,7 +249,7 @@ internal class DisplayablePrintJobStatus
 
 ## Step 4: Cancel print job
 
-Similar to displaying print job status, cancelling a print job is fairly straightforward when you have an `IPrintJob` object. The `IPrintJob` class provides a `RequestCancel` method that initiates the cancellation of the corresponding print job. This is demonstrated in the sample's `CancelPrintJob_Click` method.
+Similar to displaying print job status, canceling a print job is fairly straightforward when you have an `IPrintJob` object. The `IPrintJob` class provides a `RequestCancel` method that initiates the cancellation of the corresponding print job. This is demonstrated in the sample's `CancelPrintJob_Click` method.
 
 This example shows the `CancelPrintJob_Click` method in the **PrintJobManagement.xaml.cs** file.
 

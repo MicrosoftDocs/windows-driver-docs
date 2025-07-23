@@ -1,7 +1,7 @@
 ---
 title: How to Display Printer Status in a UWP Device App
 description: This topic uses the C# version of the Print settings and print notifications sample to demonstrate how to query the printer status and display it.
-ms.date: 07/21/2025
+ms.date: 07/23/2025
 ms.topic: how-to
 ---
 
@@ -29,7 +29,7 @@ Before you get started:
 
 1. Create device metadata for your printer that associates it with your app. See [Step 2: Create device metadata](step-2--create-device-metadata.md) for more about that.
 
-1. If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** and **DeviceAppForPrintersLibrary** projects to your UWP device app solution. You can find each of these projects in the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample.
+1. If you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** and **DeviceAppForPrintersLibrary** projects to your UWP device app solution. You can find each of these projects in the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample.
 
     > [!NOTE]
     > Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.

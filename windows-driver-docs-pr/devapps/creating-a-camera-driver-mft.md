@@ -1,7 +1,7 @@
 ---
 title: Creating a Camera Driver MFT for a UWP Device App
 description: UWP device apps let device manufacturers apply custom settings and special effects on the camera's video stream with a camera driver MFT (media foundation transform).
-ms.date: 07/21/2025
+ms.date: 07/23/2025
 ms.topic: how-to
 ---
 
@@ -45,7 +45,7 @@ The UWP device app for a camera runs in a different process than the Microsoft S
 
 ### AvStream driver model requirement
 
-Your camera's driver must use the AvStream driver model. For more info about the AVStream driver model, see [AVStream Minidrivers Design Guide](../stream/avstream-minidrivers-design-guide.md).
+Your camera's driver must use the AvStream driver model. For more information about the AVStream driver model, see [AVStream Minidrivers Design Guide](../stream/avstream-minidrivers-design-guide.md).
 
 ### How the driver MFT is exposed to apps
 
