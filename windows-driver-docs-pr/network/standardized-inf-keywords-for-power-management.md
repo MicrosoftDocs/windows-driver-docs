@@ -1,7 +1,7 @@
 ---
 title: Standardized INF Keywords for Power Management
 description: Learn how to use standardized INF keywords for power management.
-ms.date: 12/20/2024
+ms.date: 07/23/2025
 ms.topic: concept-article
 ---
 
@@ -17,7 +17,7 @@ Both [Network Adapter WDF Class Extension (NetAdapterCx)](../netcx/index.md) cli
 
 * [Power management keywords exclusive to NDIS](#power-management-keywords-exclusive-to-ndis)
 
-The traditional NDIS miniport device driver should always indicate the device's hardware power management capabilities to NDIS in the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure.
+The traditional NDIS miniport device driver should always indicate the device's hardware power management capabilities to NDIS in the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) structure.
 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
