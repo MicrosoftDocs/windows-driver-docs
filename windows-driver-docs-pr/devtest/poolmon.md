@@ -1,6 +1,6 @@
 ---
-title: PoolMon
-description: PoolMon
+title: PoolMon - Overview
+description: Review an overview of PoolMon, the Memory Pool Monitor, and find links to articles with more information.
 keywords:
 - PoolMon WDK
 - Pool Monitor WDK
@@ -16,30 +16,28 @@ keywords:
 - tag files WDK PoolMon
 - statistics WDK PoolMon
 - status information WDK PoolMon
-ms.date: 08/26/2024
+ms.date: 07/10/2025
 ms.topic: overview
 ---
 
 # PoolMon
 
-PoolMon (poolmon.exe), the Memory Pool Monitor, displays data that the operating system collects about memory allocations from the system paged and nonpaged kernel pools, and the memory pools used for Terminal Services sessions. The data is grouped by pool allocation tag.
+PoolMon (_poolmon.exe_), the Memory Pool Monitor, displays data that the operating system collects about memory allocations from the system paged and nonpaged kernel pools, and the memory pools used for Terminal Services sessions. The data is grouped according to the pool allocation tag.
 
 Driver developers and testers often use PoolMon to detect memory leaks when they create a new driver, change the driver code, or stress the driver. You can also use PoolMon in each stage of testing to view the driver's patterns of allocation and free operations, and to reveal how much pool memory the driver is using at any given time.
 
-PoolMon is included in the `\Tools\Other` subdirectory of the [Windows Driver Kit (WDK)](../download-the-wdk.md).
+PoolMon is included in the _\Tools\Other_ subdirectory of the [Windows Driver Kit (WDK)](../download-the-wdk.md).
 
-This topic includes:
+This section includes:
 
-[PoolMon Overview](poolmon-overview.md)
+- [PoolMon overview](poolmon-overview.md)
 
-[PoolMon Requirements](poolmon-requirements.md)
+- [PoolMon requirements](poolmon-requirements.md)
 
-[PoolMon Commands](poolmon-commands.md)
+- [PoolMon commands](poolmon-commands.md)
 
-[PoolMon Display](poolmon-display.md)
+- [PoolMon display](poolmon-display.md)
 
-[PoolMon Examples](poolmon-examples.md)
+- [PoolMon examples](poolmon-examples.md)
 
-
-PoolMon can display the names of the Windows components and commonly used drivers that assign each pool tag. This feature uses data from pooltag.txt, a file installed with PoolMon and with the Debugging Tools for Windows packages.
-
+PoolMon can display the names of the Windows components and commonly used drivers that assign each pool tag. This feature uses data from the _pooltag.txt_ file installed with PoolMon and with the Debugging Tools for Windows packages.

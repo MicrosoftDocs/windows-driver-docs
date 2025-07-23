@@ -1795,12 +1795,12 @@
     href: extracting-information-from-a-dump-file.md
   - name: "CAB Files that Contain Paging Files Along with a Memory Dump"
     href: cab-files-that-contain-paging-files-along-with-a-memory-dump.md
-- name: "Bug Checks (Blue Screens)"
+- name: "Bug Checks (Stop Code Errors)"
 # Auto-expanded node
   items: 
-  - name: "Bug Checks (Blue Screens)"
+  - name: "Bug Checks (Stop Code Errors)"
     href: bug-checks--blue-screens-.md
-  - name: "Analyze Bug Check Blue Screen Data"
+  - name: "Analyze Bug Check (Stop Code Error) Data"
     href: blue-screen-data.md
   - name: "Bug Check Code Reference"
 # Auto-expanded node
