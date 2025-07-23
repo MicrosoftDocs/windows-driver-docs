@@ -1,96 +1,86 @@
 ---
 title: Bug Checks (Stop Code Errors)
-description: This topic covers bug checks (stop code errors)
+description: Review general information about bug check system halt errors (stop code errors), and find troubleshooting tips.
 keywords: bug check, stop code error, kernel error, stop error, stop code
-ms.date: 08/23/2024
+ms.date: 07/23/2025
 ms.topic: troubleshooting
 ---
 
 # Bug checks (stop code errors)
 
-**Note**   If you are an IT professional or support agent, see this article for additional information, [Troubleshoot stop code error problems before you contact Microsoft Support](https://support.microsoft.com/help/3106831/). If you are a customer whose system has displayed a stop code error with a bug check code, see [Troubleshoot stop code errors](https://support.microsoft.com/sbs/windows/troubleshoot-blue-screen-errors-5c62726c-6489-52da-a372-3f73142c14ad).
+This article provides general information about bug check system halt errors, also known as _stop code errors_. The exact appearance of the stop code screen depends on the cause of the error.
 
-## Bug Check System Halt
+Depending on your scenario, you might be interested in another article:
 
-When Microsoft Windows encounters a condition that compromises safe system operation, the system halts. This condition is called a *bug check*. It's also referred to as a *system crash*, a *kernel error*, or a *stop error*.  
+- If you're a customer whose system is displaying a stop code error with a bug check code, see [Troubleshoot stop code errors](https://support.microsoft.com/windows/resolving-blue-screen-errors-in-windows-60b01860-58f2-be66-7516-5c45a66ae3c6).
 
-Examples of situations that could occur are:
+- If you're an IT professional, you can find more information in [Advanced troubleshooting for stop code errors](/troubleshoot/windows-client/performance/stop-code-error-troubleshooting). 
 
-- If the OS is allowed to continue to run after the operating system integrity is compromised, it could corrupt data or compromise the security of the system.
+- If you're a programmer looking for common bug check codes displayed on the bug check screen, see the [Bug check code reference](bug-check-code-reference2.md).
+
+## Understand bug check system halts
+
+When Windows encounters a condition that compromises safe system operation, the system halts. This condition is referred to as a *bug check*, or sometimes, a *system crash*, *kernel error*, or *stop error*. 
+
+Here are some example scenarios related to a bug check system halt:
+
+- If the operating system is allowed to continue to run after the integrity is compromised, data can be corrupted or the security of the system compromised.
 
 - If crash dumps are enabled on the system, a crash dump file is created.
 
-- If a kernel debugger is attached and active, the system causes a break so that the debugger can be used to investigate the crash.
+- If a kernel debugger is attached and active, the system causes a break so the debugger can be used to investigate the crash.
 
 - If no debugger is attached, a text screen appears with information about the error. This screen is called a *stop code error* or *bug check screen*.
 
-If you're using an insider build of Windows, the text is displayed on a green background. The exact stop code error displayed depends on the cause of the error.
-The following examples show possible stop code errors:
+The following example illustrates a bug check system halt condition that displays a stop code error:
 
-Here's an example for Windows 11, version 23H2 and earlier versions:
+:::image type="content" source="images/bug-check-example-blue-screen-page-fault.png" border="false" alt-text="Screenshot of a Windows 10 screen displaying a bug check with a QR code.":::
 
-:::image type="content" source="images/bug-check-example-blue-screen-page-fault.png" alt-text="Screenshot of a Windows 10 blue screen displaying a bug check with a QR code.":::
-
-The stop code is displayed, such as [PAGE_FAULT_IN_NONPAGED_AREA](bug-check-0x50--page-fault-in-nonpaged-area.md). When it's available, the module name of the code that was being executed is also displayed, such as **AcmeVideo.sys**.
+The bug check screen displays the stop code error and also the module name of the currently executing code, when it's available. The example shows the [PAGE_FAULT_IN_NONPAGED_AREA](bug-check-0x50--page-fault-in-nonpaged-area.md) stop code and the name of the executing module, `AcmeVideo.sys`. The stop code hex value associated with each stop code is available in [Bug check code reference](bug-check-code-reference2.md).
 
 Here's an example for Windows 11, version 24H2 and later versions:
 
-:::image type="content" source="images/unexpected-restart.png" alt-text="Screenshot showing that your device ran into a problem and needs to restart." lightbox="images/unexpected-restart-lightbox.png":::
+:::image type="content" source="images/unexpected-restart.png" alt-text="Screenshot showing that the device encountered a problem and needs to restart." lightbox="images/unexpected-restart-lightbox.png":::
 
-The stop code is displayed, such as [CRITICAL_PROCESS_DIED](bug-check-0xef--critical-process-died.md). When it's available, the module name of the code that was being executed is also displayed, such as **rdbyss.sys**.
+The bug check screen displays the stop code error, such as [CRITICAL_PROCESS_DIED](bug-check-0xef--critical-process-died.md). When the module name of the currently executing code is available, the name also displays, such as _rdbyss.sys_.
 
-If a dump file is written, it's indicated with a percentage complete count down as the dump is being written.
+If the system can generate a dump file, you see a display showing the percent complete as the system writes the dump file.
 
-There's a stop code hex value associated with each stop code as listed in [Bug check code reference](bug-check-code-reference2.md).
+## Troubleshoot bug checks (stop code errors)
 
-## General Tips for Bug Check (stop code errors)
+If your computer stops working and displays a stop code error, the computer shuts down abruptly to protect itself from data loss. A hardware device, its driver, or related software might cause the error. To learn more about the information displayed, such as the faulting driver name, see [Analyze bug check stop code error data](blue-screen-data.md).
 
-If your computer stops working and displays a stop code error, the computer has shut down abruptly to protect itself from data loss. A hardware device, its driver, or related software might have caused this error. To learn more about the information that is displayed, such as the faulting driver name, see [Analyze Bug Check Stop Code Error Data](blue-screen-data.md).
+The following table provides general troubleshooting tips for Windows bug check codes.
 
-For general troubleshooting of Windows bug check codes, follow these suggestions:
+| Scenario | Troubleshooting tips |
+|----------|----------------------|
+| _New device drivers or system services_ | Remove or update any recently added device drivers or system services. Identify any recent system configuration changes that might cause a new bug check code. |
+| _Faulty devices or drives_ | Open Windows **Device Manager** and check for devices marked with the exclamation point (**!**). Review the events log displayed in the driver properties. Look for any faulting driver and update the related driver. |
+| _New hardware_ | Remove or replace any recently added hardware. Check with the manufacturer to see if any patches are available. |
+| _Other hardware issues_ | Run the hardware diagnostics supplied by the system manufacturer. |
+| _Critical errors in system log_ | Check the system log in the **Event Viewer** for error messages. Look for content that might help pinpoint the device or driver that's causing the error. Check for critical errors in the system log that occurred in the same time frame as the stop code error. |
+| _Memory errors_ | Run the Windows **Memory Diagnostics** tool to test the memory. In the Window **Control Panel**, search for **Memory**, and then select **Diagnose your computer's memory problems**.‌ </br></br> After the test runs, use **Event Viewer** to see the results under the system log. Look for the **MemoryDiagnostics-Results** entry and view the results. |
+| _Hardware incompatibility_ | Confirm any recently installed hardware is compatible with the installed version of Windows. For example, you can get information about required hardware at [Windows 10 specifications](https://www.microsoft.com/windows/windows-10-specifications). |
+| _Virus or system corruption_ | Run a virus detection program. Viruses can infect all types of hard disks formatted for Windows. The resulting disk corruption can generate system bug check codes. Check the Master Boot Record for infections with the virus detection program. |
+| _File system errors_ | Use the **Scan disk** utility to confirm there are no file system errors. Right-click the drive to scan and select **Properties** > **Tools** > **Check now**. |
+| _Missing or corrupted files_ | Use the **System File Checker** tool to repair missing or corrupted system files. This Windows utility allows users to look for corruptions in Windows system files and then restore corrupted files. Use the `SFC /scannow` command to run the **System File Checker** tool (*SFC.exe*). </br></br>For more information, see [Use the System File Checker tool to repair missing or corrupted system files](https://support.microsoft.com/topic/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system-files-79aa86cb-ca52-166a-92a3-966e85d4094e). |
+| _Insufficient free space_ | Confirm sufficient free space on the hard drive. The operating system and some applications require sufficient free space to create swap files and perform other functions. Based on the system configuration, the exact requirement varies, but it's a good idea to have 10% to 15% of free space available. |
+| _Outdated software_ | Verify the system has the latest Service Pack installed. To detect which Service Pack is installed on your system, select **Start** > **Run**, enter _winver_, and select **OK**. The **About Windows** dialog opens showing the Windows version number and the version number of the Service Pack, if any is installed. |
+| _Outdated BIOS or firmware_ | Check with the manufacturer to see if an updated system BIOS or Unified Extensible Firmware Interface (UEFI) firmware is available. |
+| _Hardware connection problems_ | For computers, make sure all expansion boards are properly seated and all cables are properly connected. |
 
-- If new device drivers or system services have been added recently, try removing or updating them. Try to determine what changed in the system that caused the new bug check code to appear.
+### Use Safe Mode
 
-- Look in the **Device Manager** to see if any devices are marked with the exclamation point (!). Review the events log displayed in the driver properties for any faulting driver. Try updating the related driver.
+When you remove or disable any components during troubleshooting, it's a good practice to run in Safe Mode.
 
-- If you recently added hardware to the system, try removing or replacing it. Or you can check with the manufacturer to see if any patches are available.
+Safe Mode loads only the minimum required drivers and system services during the Windows startup. 
 
-- You can try running the hardware diagnostics supplied by the system manufacturer.
+1. To enter Safe Mode, go to **Control Panel** > **Settings** and select **Update and Security**. 
 
-- Check the system log in Event Viewer for other error messages that might help pinpoint the device or driver that's causing the error. Look for critical errors in the system log that occurred in the same time frame as the stop code error.
+1. To boot to maintenance mode, select **Recovery** > **Advanced startup**.
 
-- Run the Windows Memory Diagnostics tool to test the memory. In the Control Panel search box, type **Memory**, and then select **Diagnose your computer's memory problems**.‌ After the test is run, use Event Viewer to view the results under the system log. Look for the *MemoryDiagnostics-Results* entry to view the results.
+1. At the next menu, select **Troubleshoot** > **Advanced Options** > **Startup Settings** > **Restart**. 
 
-- Confirm that any new hardware that's installed is compatible with the installed version of Windows. For example, you can get information about required hardware at [Windows 10 specifications](https://www.microsoft.com/windows/windows-10-specifications).
+1. After Windows restarts to the **Startup Settings** screen, select option 4, 5, or 6 to boot to Safe Mode.
 
-- Run a virus detection program. Viruses can infect all types of hard disks formatted for Windows, and resulting disk corruption can generate system bug check codes. Check the Master Boot Record for infections with the virus detection program.
-
-- Use the scan disk utility to confirm that there are no file system errors. Select and hold (or right-click) on the drive you want to scan and select **Properties** > **Tools** > **Check now**.
-
-- Use the System File Checker tool to repair missing or corrupted system files. The System File Checker is a utility in Windows that allows users to scan for corruptions in Windows system files and restore corrupted files. Use the following command to run the System File Checker tool (SFC.exe).
-
-    ```console
-    SFC /scannow
-    ```
-
-    For more information, see [Use the System File Checker tool to repair missing or corrupted system files](https://support.microsoft.com/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system).
-
-- Confirm that there's sufficient free space on the hard drive. The operating system and some applications require sufficient free space to create swap files and perform other functions. Based on the system configuration, the exact requirement varies, but it's a good idea to have 10% to 15% of free space available.
-
-- Verify that the system has the latest Service Pack installed. To detect which Service Pack, if any, is installed on your system, select **Start**, select **Run**, enter **winver**, and then select ENTER. The **About Windows** dialog displays the Windows version number and the version number of the Service Pack, if one has been installed.
-
-- Check with the manufacturer to see if an updated system BIOS or UEFI firmware is available.
-
-- For PCs, make sure that all expansion boards are properly seated and all cables are completely connected.
-
-- **Use Safe Mode**
-
-    Consider using Safe Mode when removing or disabling components. Using Safe Mode loads only the minimum required drivers and system services during the Windows startup. 
-    1. To enter Safe Mode, go to Settings and select **Update and Security**. 
-    1. Select **Recovery** > **Advanced startup** to boot to maintenance mode. 
-    1. At the resulting menu, select **Troubleshoot** > **Advanced Options** > **Startup Settings** > **Restart**. 
-    1. After Windows restarts to the **Startup Settings** screen, select option 4, 5, or 6 to boot to Safe Mode.
-
-    Safe Mode might be available by pressing a function key on boot, for example F8. Refer to information from the manufacturer for specific startup options.
-
-
+Safe Mode might be available by pressing a function key on boot, for example **F8**. Refer to information from the manufacturer for specific startup options.
