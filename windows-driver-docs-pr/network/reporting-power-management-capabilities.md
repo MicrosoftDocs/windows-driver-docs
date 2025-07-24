@@ -1,7 +1,7 @@
 ---
 title: Reporting Power Management Capabilities
 description: Reporting Power Management Capabilities
-ms.date: 07/23=2025
+ms.date: 07/23/2025
 ms.topic: concept-article
 ---
 

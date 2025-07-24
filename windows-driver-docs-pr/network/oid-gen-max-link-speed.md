@@ -46,7 +46,7 @@ To specify the maximum link speeds, set the **MaxXmitLinkSpeed** and **MaxRcvLin
 
 [**NDIS\_LINK\_SPEED**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_speed)
 
-[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributess)
+[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes)
 
 [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes)
 
