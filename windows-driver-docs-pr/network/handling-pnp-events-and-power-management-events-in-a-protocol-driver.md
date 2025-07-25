@@ -10,7 +10,7 @@ keywords:
 - Plug and Play WDK NDIS protocol
 - notifications WDK PnP , NDIS protocol drivers
 - event notifications WDK networking
-ms.date: 04/20/2017
+ms.date: 07/23/2025
 ms.topic: concept-article
 ---
 
@@ -28,7 +28,7 @@ The following list contains PnP and power management events, as indicated by the
 
     If the miniport adapter is in a low-power state, the protocol driver cannot issue any OID requests. This requirement is an additional power management restriction that is added to the other restrictions that apply when the driver stack is in the Paused state.
 
-    If the underlying miniport adapter is not power management–aware, the miniport driver sets the **PowerManagementCapabilities** member of [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) to **NULL** and NDIS sets the **PowerManagementCapabilities** member of [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) to **NULL**.
+    If the underlying miniport adapter is not power management–aware, the miniport driver sets the **PowerManagementCapabilities** member of [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) to **NULL** and NDIS sets the **PowerManagementCapabilities** member of [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) to **NULL**.
 
     **Note**  Starting with NDIS 6.30, after being notified of this event, the protocol driver must stop generating new I/O requests and should not wait for the completion of any pending I/O requests within the context of the call to [*ProtocolNetPnPEvent*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event).
 
