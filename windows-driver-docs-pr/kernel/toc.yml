@@ -280,6 +280,8 @@
     href: accessing-read-only-system-memory.md
   - name: "Accessing User-Space Memory"
     href: accessing-user-space-memory.md
+  - name: "User-mode Accessors"
+    href: user-mode-accessors.md
   - name: "No-Execute (NX) Nonpaged Pool"
     href: no-execute-nonpaged-pool.md
   - name: "NX and Execute Pool Types"
