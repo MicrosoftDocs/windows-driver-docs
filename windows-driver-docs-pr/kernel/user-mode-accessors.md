@@ -208,11 +208,11 @@ For more information, see [Acquire and Release Semantics](acquire-and-release-se
 
 ## Best practices
 
-1. **Always use UMA DDIs** when accessing user-mode memory from kernel code.
-2. **Handle exceptions** with appropriate `__try/__except` blocks.
-3. **Use mode-based DDIs** when your code might handle both user-mode and kernel-mode memory.
-4. **Consider acquire/release semantics** when memory ordering is important for your use case.
-5. **Validate copied data** after copying it to kernel memory to ensure consistency.
+- **Always use UMA DDIs** when accessing user-mode memory from kernel code.
+- **Handle exceptions** with appropriate `__try/__except` blocks.
+- **Use mode-based DDIs** when your code might handle both user-mode and kernel-mode memory.
+- **Consider acquire/release semantics** when memory ordering is important for your use case.
+- **Validate copied data** after copying it to kernel memory to ensure consistency.
 
 ## Future hardware support
 
