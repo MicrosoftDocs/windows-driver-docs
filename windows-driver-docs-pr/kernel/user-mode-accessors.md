@@ -35,8 +35,8 @@ Kernel-mode code that needs to access user-mode memory must do so within a `__tr
 
 // User-mode structure definition
 typedef struct _StructWithData {
-        ULONG Size;
-        CHAR* Data[1];
+    ULONG Size;
+    CHAR* Data[1];
 } StructWithData;
 
 // Kernel-mode call that accesses user-mode memory
@@ -48,7 +48,7 @@ void MySysCall(StructWithData* Ptr) {
         // Allocate memory in the kernel
         PVOID LocalData = ExAllocatePool2(POOL_FLAG_PAGED, Ptr->Size);
         
-        //Copy user-mode data into the heap allocation
+        // Copy user-mode data into the heap allocation
         RtlCopyMemory(LocalData, Ptr->Data, Ptr->Size);
     } __except (…) {
         // Handle exceptions
@@ -105,9 +105,9 @@ void MySysCall(StructWithData* Ptr) {
 
         // This UMA call probes the passed user-mode memory and does a
         // volatile read of Ptr->Size to ensure it isn't optimized away by the compiler.
-        ULONG LocalSize =  ReadULongFromUser(&Ptr->Size);
+        ULONG LocalSize = ReadULongFromUser(&Ptr->Size);
         
-        // Allocate memory in the kernel
+        // Allocate memory in the kernel.
         PVOID LocalData = ExAllocatePool2(POOL_FLAG_PAGED, LocalSize);
         
         //This UMA call safely copies UM data into the KM heap allocation.
