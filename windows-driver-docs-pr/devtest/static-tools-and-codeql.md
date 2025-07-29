@@ -48,7 +48,9 @@ Use this matrix to determine the versions to be downloaded.
 
 For the most recent version information, including testing the latest in development, see [Windows driver developer supplemental tools](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/README.md).
 
+
 | CodeQL CLI version |
+|--------------------|
 | 2.21.4 |
 | 2.21.2 |
 | 2.20.1 |
