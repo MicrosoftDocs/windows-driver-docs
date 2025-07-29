@@ -32,7 +32,7 @@ Select the tab for your scenario:
 Use this matrix to determine the versions to be downloaded.
 
 | Windows Release          | CodeQL CLI version                                    | microsoft/windows-drivers CodeQL pack version | microsoft/cpp-queries CodeQL pack version | codeql/cpp-queries version | Associated repo branch to use |
-|--------------------------|-------------------------------------------------------|-----------------------------------------------|-----------------------------------------|---------------|
+|--------------------------|-------------------------------------------------------|-----------------------------------------------|-----------------------------------------|---------------|-----------|
 | Windows Server 2022      | [2.4.6](https://github.com/github/codeql-cli-binaries/releases/tag/v2.4.6) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4) | 1.0.13 (If using codeql 2.15.4)  | N/A   | 0.9.0 (If using codeql 2.15.4) | WHCP_21H2     |
 | Windows 11               | [2.4.6](https://github.com/github/codeql-cli-binaries/releases/tag/v2.4.6) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4) | 1.0.13 (If using codeql 2.15.4)  | N/A   | 0.9.0 (If using codeql 2.15.4) | WHCP_21H2     |
 | Windows 11, version 22H2 | [2.6.3](https://github.com/github/codeql-cli-binaries/releases/tag/v2.6.3) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4) | 1.0.13 (If using codeql 2.15.4)  | N/A   | 0.9.0 (If using codeql 2.15.4) | WHCP_22H2     |
