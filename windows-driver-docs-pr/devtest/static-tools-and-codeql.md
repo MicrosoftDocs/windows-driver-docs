@@ -38,8 +38,8 @@ Use this matrix to determine the versions to be downloaded.
 | Windows 11, version 22H2 | [2.6.3](https://github.com/github/codeql-cli-binaries/releases/tag/v2.6.3) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4) | 1.0.13 (If using codeql 2.15.4)  | N/A   | 0.9.0 (If using codeql 2.15.4) | WHCP_22H2     |
 | Windows 11, version 23H2 | [2.6.3](https://github.com/github/codeql-cli-binaries/releases/tag/v2.6.3) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4) | 1.0.13 (If using codeql 2.15.4)  | N/A   | 0.9.0 (If using codeql 2.15.4) | WHCP_22H2     |
 | Windows 11, version 24H2 | [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4)                                                                               | 1.1.0                            | N/A   | 0.9.0                          | WHCP_24H2     |
-| Windows Server 2025      | [2.20.1](https://github.com/github/codeql-cli-binaries/releases/tag/v2.20.1)                                                                               | 1.6.0                            | 0.0.4 | N/A                            |               |
-| Windows 11, version      | [2.20.1](https://github.com/github/codeql-cli-binaries/releases/tag/v2.20.1)                                                                               | 1.6.0                            | 0.0.4 | N/A                            |               |
+| Windows Server 2025      | [2.20.1](https://github.com/github/codeql-cli-binaries/releases/tag/v2.20.1)                                                                               | 1.6.0                            | 0.0.4 | N/A                            | WHCP_25H2     |
+| Windows 11, version 25H2 | [2.20.1](https://github.com/github/codeql-cli-binaries/releases/tag/v2.20.1)                                                                               | 1.6.0                            | 0.0.4 | N/A                            | WHCP_25H2     |
 
 > [!NOTE]
 > A version of the CodeQL pack is not specified for CodeQL CLI 2.4.6 and 2.6.3 because only versions of CodeQL later than v2.7.0 support CodeQL packs.
