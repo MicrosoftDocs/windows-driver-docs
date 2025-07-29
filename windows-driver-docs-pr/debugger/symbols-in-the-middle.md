@@ -2,7 +2,7 @@
 title: Symbols in the Middle
 description: Symbols in the Middle
 keywords: ["remote debugging, symbols on third machine"]
-ms.date: 05/23/2017
+ms.date: 07/29/2025
 ms.topic: example-scenario
 ---
 
@@ -11,6 +11,8 @@ ms.topic: example-scenario
 
 ## <span id="ddk_symbols_in_the_middle_dbg"></span><span id="DDK_SYMBOLS_IN_THE_MIDDLE_DBG"></span>
 
+> [!IMPORTANT]
+> There are additional important security considerations when using remote debugging, for more information, including information on enabling secure mode, see [Security During Remote Debugging](security-during-remote-debugging.md) and [Security Considerations for Windows Debugging Tools](security-considerations.md).
 
 In this scenario, you have three computers. The first has the target application, the second has the symbols, and the third has the technician.
 

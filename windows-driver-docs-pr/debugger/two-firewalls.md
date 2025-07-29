@@ -2,11 +2,14 @@
 title: Two Firewalls
 description: Two Firewalls
 keywords: ["remote debugging, two firewalls", "firewalls and remote debugging"]
-ms.date: 11/25/2024
+ms.date: 07/29/2025
 ms.topic: example-scenario
 ---
 
 # Two Firewalls
+
+> [!IMPORTANT]
+> There are additional important security considerations when using remote debugging, for more information, including information on enabling secure mode, see [Security During Remote Debugging](security-during-remote-debugging.md) and [Security Considerations for Windows Debugging Tools](security-considerations.md).
 
 In this scenario, you need to perform kernel debugging on a computer in Building A. Your technician is located in Building C, and has access to symbols there. However, both buildings have firewalls that will not allow incoming connections.
 
