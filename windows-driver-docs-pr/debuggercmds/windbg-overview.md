@@ -4,6 +4,7 @@ description: Explore the Windows Debugger (WinDbg), including general features a
 keywords: ["Overview of WinDbg's major features", "WinDbg", "Overview", "Windows Debugging"]
 ms.date: 07/17/2025
 ms.topic: concept-article
+ms.custom: sfi-image-nochange
 ---
 
 # What is WinDbg?

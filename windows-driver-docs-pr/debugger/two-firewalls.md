@@ -4,6 +4,7 @@ description: Two Firewalls
 keywords: ["remote debugging, two firewalls", "firewalls and remote debugging"]
 ms.date: 11/25/2024
 ms.topic: example-scenario
+ms.custom: sfi-ropc-nochange
 ---
 
 # Two Firewalls

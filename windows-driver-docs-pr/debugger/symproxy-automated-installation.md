@@ -3,6 +3,7 @@ title: SymProxy Automated Installation
 description: These steps along with the Install.cmd script below can help automate the installation of SymProxy to a default IIS installation. 
 ms.date: 03/12/2019
 ms.topic: install-set-up-deploy
+ms.custom: sfi-ropc-nochange
 ---
 
 # SymProxy Automated Installation

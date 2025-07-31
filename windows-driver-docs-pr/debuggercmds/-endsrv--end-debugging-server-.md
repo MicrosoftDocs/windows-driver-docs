@@ -9,6 +9,7 @@ ms.topic: reference
 api_name:
 - .endsrv (End Debugging Server)
 api_type:
+ms.custom: sfi-ropc-nochange
 - NA
 ---
 

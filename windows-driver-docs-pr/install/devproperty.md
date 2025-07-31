@@ -38,6 +38,7 @@ keywords:
 - devpropdef/PDEVPROPERTY
 ms.date: 09/09/2024
 ms.topic: reference
+ms.custom: sfi-ropc-nochange
 ---
 
 # DEVPROPERTY structure
