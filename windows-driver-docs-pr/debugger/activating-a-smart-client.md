@@ -9,8 +9,8 @@ ms.topic: reference
 api_name:
 - Activating a Smart Client
 api_type:
-ms.custom: sfi-ropc-nochange
 - NA
+ms.custom: sfi-ropc-nochange
 ---
 
 # Activating a Smart Client

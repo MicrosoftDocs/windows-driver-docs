@@ -9,8 +9,8 @@ ms.topic: reference
 api_name:
 - Activating a Debugging Client
 api_type:
-ms.custom: sfi-ropc-nochange
 - NA
+ms.custom: sfi-ropc-nochange
 ---
 
 # Activating a Debugging Client

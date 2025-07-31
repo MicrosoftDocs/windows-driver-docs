@@ -9,8 +9,8 @@ ms.topic: reference
 api_name:
 - .server (Create Debugging Server)
 api_type:
-ms.custom: sfi-ropc-nochange
 - NA
+ms.custom: sfi-ropc-nochange
 ---
 
 # .server (Create Debugging Server)

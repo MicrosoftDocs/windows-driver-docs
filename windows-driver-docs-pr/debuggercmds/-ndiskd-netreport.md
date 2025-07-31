@@ -9,8 +9,8 @@ ms.topic: reference
 api_name:
 - ndiskd.netreport
 api_type:
-ms.custom: sfi-image-nochange
 - NA
+ms.custom: sfi-image-nochange
 ---
 
 # !ndiskd.netreport
