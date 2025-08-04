@@ -10,6 +10,7 @@ api_name:
 - ndiskd.netreport
 api_type:
 - NA
+ms.custom: sfi-image-nochange
 ---
 
 # !ndiskd.netreport

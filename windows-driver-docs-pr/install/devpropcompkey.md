@@ -10,6 +10,7 @@ keywords:
 - devpropdef/PDEVPROPCOMPKEY
 ms.date: 09/09/2024
 ms.topic: reference
+ms.custom: sfi-ropc-nochange
 ---
 
 # DEVPROPCOMPKEY structure

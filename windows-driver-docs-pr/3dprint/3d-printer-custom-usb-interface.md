@@ -3,6 +3,7 @@ title: Custom USB Interface Support for 3D Printers
 description: This topic describes how to enable a custom USB interfaces for 3D printers in the v3 and v4 print driver ecosystems.
 ms.date: 03/17/2023
 ms.topic: concept-article
+ms.custom: sfi-image-nochange
 ---
 
 # Enable a custom USB interface for a 3D printer

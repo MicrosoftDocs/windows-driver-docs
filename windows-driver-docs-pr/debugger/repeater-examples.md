@@ -4,6 +4,7 @@ description: Repeater Examples
 keywords: ["repeater, examples"]
 ms.date: 05/23/2017
 ms.topic: example-scenario
+ms.custom: sfi-ropc-nochange
 ---
 
 # Repeater Examples

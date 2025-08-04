@@ -3,6 +3,7 @@ title: How to validate the Microsoft signature
 description: This article shows you how to validate the Microsoft signature for a submission.
 ms.date: 09/12/2024
 ms.topic: how-to
+ms.custom: sfi-image-nochange
 ---
 
 # How to validate the Microsoft signature

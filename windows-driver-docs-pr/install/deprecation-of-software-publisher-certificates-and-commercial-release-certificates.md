@@ -6,6 +6,7 @@ keywords:
 - Trusted Publishers certificate store WDK
 ms.date: 07/11/2025
 ms.topic: troubleshooting-known-issue
+ms.custom: sfi-image-nochange
 ---
 
 # Deprecation of software publisher certificates, commercial release certificates, and commercial test certificates
