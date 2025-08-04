@@ -2,6 +2,7 @@
 title: TWAIN Compatibility
 description: TWAIN compatibility
 ms.date: 02/25/2025
+ms.topic: concept-article
 ---
 
 # TWAIN compatibility

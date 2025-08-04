@@ -7,6 +7,7 @@ keywords:
 - registry settings WDK WHEA , predictive failure analysis (PFA)
 - policy settings WDK WHEA
 ms.date: 03/26/2025
+ms.topic: concept-article
 ---
 
 # WHEA Policy Settings

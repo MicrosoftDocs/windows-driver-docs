@@ -7,6 +7,7 @@ keywords:
 - deadlocks WDK storage
 - paging path WDK storage
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Restrictions on Pageable Code in Storage Drivers

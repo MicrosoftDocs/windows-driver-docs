@@ -2,6 +2,7 @@
 title: "Option: File"
 description: "By default, GPUView inspects the command for the name of the ETL file to open."
 ms.date: 05/10/2022
+ms.topic: how-to
 ---
 
 # Option: File  

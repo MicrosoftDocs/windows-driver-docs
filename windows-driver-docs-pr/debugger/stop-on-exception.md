@@ -3,6 +3,7 @@ title: Stop on Exception
 description: Stop on exception
 keywords: ["Stop on exception (global flag)"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Stop on exception

@@ -2,6 +2,7 @@
 title: Myriad of machines with integrated GPU that had a TDR caused by a graphics driver crash
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of machines with integrated GPU that had a TDR caused by a crash in the graphics driver 
 ms.date: 09/02/2021
+ms.topic: troubleshooting-known-issue
 ---
 
 # Myriad of machines with integrated GPU that had a TDR caused by a graphics driver crash

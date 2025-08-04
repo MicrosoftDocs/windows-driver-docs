@@ -5,6 +5,7 @@ keywords:
 - storage class drivers WDK , internal routines
 - class drivers WDK storage , internal routines
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Storage Class Driver's Internal Routines

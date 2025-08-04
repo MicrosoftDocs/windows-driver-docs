@@ -2,6 +2,7 @@
 title: General-Purpose I/O (GPIO)
 description: System on a Chip (SoC) integrated circuits make extensive use of general-purpose I/O (GPIO) pins.
 ms.date: 03/23/2023
+ms.topic: concept-article
 ---
 
 # General-purpose I/O (GPIO)

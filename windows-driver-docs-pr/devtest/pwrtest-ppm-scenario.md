@@ -2,6 +2,7 @@
 title: PwrTest PPM Scenario
 description: The PwrTest PPM Scenario logs processor power management (PPM) information and periodic statistics totals.
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # PwrTest PPM Scenario

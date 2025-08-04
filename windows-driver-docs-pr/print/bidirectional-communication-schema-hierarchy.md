@@ -6,6 +6,7 @@ keywords:
 - bidi communication schema WDK print
 - hierarchy WDK bidi communication
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Bidirectional Communication Schema Hierarchy

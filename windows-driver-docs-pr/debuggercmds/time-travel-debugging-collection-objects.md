@@ -3,6 +3,7 @@ title: "TTD Collection Objects"
 description: "Learn about the collection model objects associated with time travel debugging. See example usage and view additional available resources."
 keywords: ["TTD Collection Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 11/14/2024
+ms.topic: concept-article
 ---
 
 # TTD Collection Objects

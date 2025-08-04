@@ -8,6 +8,7 @@ keywords:
 - errors WDK WHEA , new information about WHEA
 - source information WDK WHEA , new
 ms.date: 03/26/2025
+ms.topic: release-notes
 ---
 
 # New Information for Windows Hardware Error Architecture

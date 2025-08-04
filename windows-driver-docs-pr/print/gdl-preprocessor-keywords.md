@@ -8,6 +8,7 @@ keywords:
 - keywords WDK GDL
 - reserved keywords WDK
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # GDL Preprocessor Keywords

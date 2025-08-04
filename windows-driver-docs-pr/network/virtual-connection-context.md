@@ -6,6 +6,7 @@ keywords:
 - VCs WDK networking , context
 - context WDK virtual connection
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Virtual Connection Context

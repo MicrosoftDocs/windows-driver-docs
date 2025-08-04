@@ -6,6 +6,7 @@ keywords:
 - printer driver installations WDK , INF files
 - INF files WDK print
 ms.date: 09/11/2024
+ms.topic: reference
 ---
 
 # Printer INF files

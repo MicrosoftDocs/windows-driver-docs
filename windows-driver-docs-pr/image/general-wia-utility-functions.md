@@ -2,6 +2,7 @@
 title: General WIA Utility Functions
 description: General WIA Utility Functions
 ms.date: 04/25/2023
+ms.topic: reference
 ---
 
 # General WIA Utility Functions

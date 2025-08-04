@@ -6,6 +6,7 @@ keywords:
 - wdk CD-ROM drivers
 - IOCTLs WDK CD-ROM
 ms.date: 12/19/2018
+ms.topic: reference
 ---
 
 # General Storage I/O Control Codes

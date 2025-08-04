@@ -2,6 +2,7 @@
 title: Supported Smart Card Attributes
 description: This topic describes supported smart card attributes.
 ms.date: 01/11/2024
+ms.topic: reference
 ---
 
 # Supported smart card attributes

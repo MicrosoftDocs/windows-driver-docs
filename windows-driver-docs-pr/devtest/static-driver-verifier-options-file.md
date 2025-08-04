@@ -9,6 +9,7 @@ keywords:
 - files WDK Static Driver Verifier
 - options files WDK Static Driver Verifier
 ms.date: 07/02/2024
+ms.topic: reference
 ---
 
 # Static Driver Verifier Options File

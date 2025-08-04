@@ -6,6 +6,7 @@ keywords:
 - WDDM driver , debugging
 - WDDM , user-mode driver logging
 ms.date: 10/21/2024
+ms.topic: concept-article
 ---
 
 # User-mode driver logging

@@ -11,6 +11,7 @@ keywords:
 - cameras WDK USBCAMD2
 - data flow WDK USBCAMD2
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Data Flow Using Isochronous Pipes

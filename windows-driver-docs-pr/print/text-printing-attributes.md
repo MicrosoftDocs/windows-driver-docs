@@ -5,6 +5,7 @@ keywords:
 - text printing attributes WDK Unidrv
 - general printer attributes WDK Unidrv , text
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Text Printing Attributes

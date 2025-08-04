@@ -11,6 +11,7 @@ keywords:
 - building software components WDK
 - software component building WDK
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # Tools for Building Drivers

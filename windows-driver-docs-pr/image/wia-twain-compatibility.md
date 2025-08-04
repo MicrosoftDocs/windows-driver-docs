@@ -2,6 +2,7 @@
 title: WIA-TWAIN Compatibility
 description: WIA-TWAIN Compatibility
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA-TWAIN Compatibility

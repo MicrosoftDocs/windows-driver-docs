@@ -2,6 +2,7 @@
 title: SCSI Driver
 description: SCSI driver
 ms.date: 05/01/2025
+ms.topic: reference
 ---
 
 # SCSI driver

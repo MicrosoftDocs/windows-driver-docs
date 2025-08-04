@@ -6,6 +6,7 @@ keywords:
 - Storport drivers WDK
 - Storport drivers WDK , about Storport drivers
 ms.date: 04/24/2025
+ms.topic: concept-article
 ---
 
 # Storport Driver

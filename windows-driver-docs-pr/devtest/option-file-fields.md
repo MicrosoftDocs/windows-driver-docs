@@ -5,6 +5,7 @@ keywords:
 - options files WDK Static Driver Verifier
 - fields WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Option File Fields

@@ -7,6 +7,7 @@ keywords:
 - parsing GPD file sections
 - preprocessor symbols WDK GPD files
 ms.date: 07/19/2023
+ms.topic: concept-article
 ---
 
 # Preprocessor directives

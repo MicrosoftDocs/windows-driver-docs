@@ -5,6 +5,7 @@ keywords:
 - grouping trace sessions
 - trace sessions WDK , groups
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Limitations of Grouping

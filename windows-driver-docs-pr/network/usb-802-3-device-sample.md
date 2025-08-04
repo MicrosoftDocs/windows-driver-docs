@@ -2,6 +2,7 @@
 title: USB 802.3 Device Sample
 description: USB 802.3 Device Sample
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # USB 802.3 Device Sample

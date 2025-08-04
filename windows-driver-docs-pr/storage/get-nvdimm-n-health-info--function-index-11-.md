@@ -2,6 +2,7 @@
 title: Get NVDIMM-N Health Info (Function Index 11)
 description: This function returns information about the health of the NVDIMM-N module.
 ms.date: 11/18/2022
+ms.topic: reference
 ---
 
 # Get NVDIMM-N Health Info (Function Index 11)

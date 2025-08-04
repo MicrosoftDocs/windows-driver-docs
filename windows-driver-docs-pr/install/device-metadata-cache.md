@@ -4,6 +4,7 @@ description: Device Metadata Cache
 keywords:
 - device metadata cache WDK
 ms.date: 06/19/2025
+ms.topic: concept-article
 ---
 
 # Device Metadata Cache

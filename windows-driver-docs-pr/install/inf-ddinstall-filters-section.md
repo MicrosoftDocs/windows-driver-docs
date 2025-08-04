@@ -2,6 +2,7 @@
 title: INF DDInstall.Filters Section
 description: The DDInstall.Filters section contains one or more INF AddFilter directives that reference additional INF-writer-defined sections in a device driver INF file.
 ms.date: 06/21/2024
+ms.topic: reference
 ---
 
 # INF DDInstall.Filters Section

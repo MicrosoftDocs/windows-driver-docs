@@ -12,6 +12,7 @@ keywords:
 - event notifications WDK Winsock Kernel
 - notifications WDK Winsock Kernel
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Winsock Kernel Events

@@ -2,6 +2,7 @@
 title: UE hang detection Steps 1-14
 description: Steps 1 through 14 of UE hang detection are described below. The steps correspond to the diagram shown in UE hang detection and recovery flow.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # UE hang detection: Steps 1-14

@@ -2,6 +2,7 @@
 title: OPM and Display Modes
 description: OPM and Display Modes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # OPM and Display Modes

@@ -2,6 +2,7 @@
 title: BDA Stream Format GUIDs
 description: A BDA minidriver uses BDA stream format GUIDs to specify the data formats it supports.
 ms.date: 10/07/2021
+ms.topic: reference
 ---
 
 # BDA Stream Format GUIDs

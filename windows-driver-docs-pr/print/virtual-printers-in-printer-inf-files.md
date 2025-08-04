@@ -2,6 +2,7 @@
 title: Virtual Printers in Printer INF Files
 description: Virtual Printers in Printer INF Files
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # Virtual Printers in Printer INF Files

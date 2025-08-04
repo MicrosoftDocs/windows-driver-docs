@@ -2,6 +2,7 @@
 title: SendDownStreamIrp Function
 description: Provides information about the SendDownStreamIrp function
 ms.date: 03/17/2023
+ms.topic: reference
 ---
 
 # SendDownStreamIrp Function

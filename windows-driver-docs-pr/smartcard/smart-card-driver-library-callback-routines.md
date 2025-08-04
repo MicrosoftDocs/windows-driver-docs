@@ -8,6 +8,7 @@ keywords:
 - ReaderFunction
 - vendor-supplied drivers WDK smart card , IOCTL request management
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Smart Card Driver Library Callback Routines

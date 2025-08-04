@@ -2,6 +2,7 @@
 title: Security Group Commands
 description: The following sections describe special requirements for sending certain security commands.
 ms.date: 06/12/2019
+ms.topic: concept-article
 ---
 
 # Security Group Commands

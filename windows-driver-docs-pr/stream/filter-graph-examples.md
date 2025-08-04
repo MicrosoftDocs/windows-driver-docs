@@ -7,6 +7,7 @@ keywords:
 - filter graph configurations WDK video capture
 - filter graph configurations WDK video capture , listed
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Filter Graph Examples

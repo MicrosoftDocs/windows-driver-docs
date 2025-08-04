@@ -3,6 +3,7 @@ title: Remote Tool Commands
 description: Remote Tool Commands
 keywords: ["Remote Tool, commands"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Remote Tool Commands

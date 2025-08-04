@@ -8,6 +8,7 @@ keywords:
 - Web Services for Devices WDK WIA , port monitor
 - WSD compliance WDK print
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WSDMON Port Monitor

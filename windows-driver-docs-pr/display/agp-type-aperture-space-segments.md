@@ -6,6 +6,7 @@ keywords:
 - AGP-type aperture-space segments WDK display
 - aperture-space segments WDK display
 ms.date: 07/01/2024
+ms.topic: concept-article
 ---
 
 # AGP-Type Aperture-Space Segments

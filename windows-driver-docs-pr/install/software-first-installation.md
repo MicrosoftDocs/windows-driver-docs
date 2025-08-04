@@ -9,6 +9,7 @@ keywords:
 - AutoRun-enabled installation applications WDK
 - device installations WDK , types
 ms.date: 05/31/2024
+ms.topic: install-set-up-deploy
 ---
 
 # Software-First Installation

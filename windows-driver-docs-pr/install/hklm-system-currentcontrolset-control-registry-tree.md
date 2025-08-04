@@ -2,6 +2,7 @@
 title: HKLM\SYSTEM\CurrentControlSet\Control Registry Tree
 description: HKLM\SYSTEM\CurrentControlSet\Control registry tree contains information for controlling system startup and some aspects of device configuration.
 ms.date: 11/05/2024
+ms.topic: reference
 ---
 
 # HKLM\\SYSTEM\\CurrentControlSet\\Control Registry Tree

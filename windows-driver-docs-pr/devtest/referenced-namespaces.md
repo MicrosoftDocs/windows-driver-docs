@@ -8,6 +8,7 @@ keywords:
 - DWPS WDK
 - Device Profile for Web Services WDK
 ms.date: 04/21/2023
+ms.topic: reference
 ---
 
 # Referenced Namespaces

@@ -2,6 +2,7 @@
 title: Remote NDIS Version
 description: Remote NDIS Version
 ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # Remote NDIS Version

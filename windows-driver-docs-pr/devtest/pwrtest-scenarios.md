@@ -3,6 +3,7 @@ title: PwrTest Scenarios
 description: PwrTest Scenarios
 ms.date: 04/20/2017
 ms.custom: 19H1
+ms.topic: solution-overview
 ---
 
 # PwrTest Scenarios

@@ -2,6 +2,7 @@
 title: Remote NDIS Data Message
 description: Remote NDIS Data Message
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Remote NDIS Data Message

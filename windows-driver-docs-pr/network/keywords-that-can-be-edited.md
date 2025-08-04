@@ -5,6 +5,7 @@ keywords:
 - installation keywords WDK networking , editing
 - editing installation keywords
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Keywords That Can Be Edited

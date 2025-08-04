@@ -2,6 +2,7 @@
 title: Basic Scanning for Flatbed Scanners
 description: Basic Scanning for Flatbed Scanners
 ms.date: 03/27/2023
+ms.topic: how-to
 ---
 
 # Basic Scanning for Flatbed Scanners

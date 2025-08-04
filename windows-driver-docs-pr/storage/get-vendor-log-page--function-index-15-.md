@@ -2,6 +2,7 @@
 title: Get Vendor Log Page (Function Index 15)
 description: This function returns the vendor log page.
 ms.date: 10/18/2018
+ms.topic: reference
 ---
 
 # Get Vendor Log Page (Function Index 15)

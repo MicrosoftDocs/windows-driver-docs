@@ -3,6 +3,7 @@ title: Manually Walking a Stack
 description: Manually Walking a Stack
 keywords: ["stack trace, walking the stack manually", "walking the stack"]
 ms.date: 10/29/2021
+ms.topic: tutorial
 ---
 
 # Manually Walking a Stack

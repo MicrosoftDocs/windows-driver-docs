@@ -6,6 +6,7 @@ keywords:
 - WDDM 3.0 , video encoding
 ms.date: 12/18/2024
 ms.localizationpriority: medium
+ms.topic: concept-article
 ---
 
 # D3D12 video encoding

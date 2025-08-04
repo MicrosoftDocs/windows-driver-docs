@@ -8,6 +8,7 @@ keywords:
 - user-mode display drivers WDK Windows Vista
 - Direct3D WDK display
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # User-mode display drivers

@@ -2,6 +2,7 @@
 title: Multipage Scanning and TWAIN
 description: Multipage Scanning and TWAIN
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Multipage Scanning and TWAIN

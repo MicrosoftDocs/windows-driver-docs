@@ -3,6 +3,7 @@ title: PreviousMode
 description: PreviousMode
 keywords: ["PreviousMode", "RequestorMode"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # PreviousMode

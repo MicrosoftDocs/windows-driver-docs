@@ -2,6 +2,7 @@
 title: NDKPI Object Lifetime Requirements
 description: This section describes NDKPI object lifetime requirements
 ms.date: 10/05/2022
+ms.topic: concept-article
 ---
 
 # NDKPI Object Lifetime Requirements

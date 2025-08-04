@@ -2,6 +2,7 @@
 title: Scanner Microdriver Sample
 description: Scanner Microdriver Sample
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Scanner Microdriver Sample

@@ -5,6 +5,7 @@ keywords:
 - ATA Port drivers WDK , power management
 - power management WDK ATA Port driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # ATA Port Driver's Power Management

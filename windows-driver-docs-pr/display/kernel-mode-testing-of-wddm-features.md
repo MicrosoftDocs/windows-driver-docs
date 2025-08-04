@@ -5,6 +5,7 @@ keywords:
 - WDDM kernel-mode testing
 - kernel-mode testing without D3D runtimes
 ms.date: 06/17/2024
+ms.topic: concept-article
 ---
 
 # Kernel-mode testing of WDDM features

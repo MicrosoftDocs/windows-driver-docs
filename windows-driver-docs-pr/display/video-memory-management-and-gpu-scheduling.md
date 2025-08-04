@@ -13,6 +13,7 @@ keywords:
 - user-mode display drivers WDK Windows Vista , GPU scheduling
 - miniport drivers WDK display , GPU scheduling
 ms.date: 07/01/2024
+ms.topic: concept-article
 ---
 
 # Video Memory Management and GPU Scheduling

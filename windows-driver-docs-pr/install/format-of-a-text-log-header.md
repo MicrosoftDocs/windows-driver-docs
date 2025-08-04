@@ -6,6 +6,7 @@ keywords:
 - formats WDK SetupAPI logging
 - text logs WDK SetupAPI , headers
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Format of a Text Log Header

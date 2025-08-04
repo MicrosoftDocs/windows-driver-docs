@@ -2,6 +2,7 @@
 title: DMA Programming Techniques
 description: DMA Programming Techniques
 ms.date: 07/09/2021
+ms.topic: concept-article
 ---
 
 # DMA Programming Techniques

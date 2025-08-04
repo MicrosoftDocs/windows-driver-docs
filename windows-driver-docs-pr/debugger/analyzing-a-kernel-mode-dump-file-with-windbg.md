@@ -3,6 +3,7 @@ title: Analyze a Kernel-Mode Dump File by Using WinDbg
 description: Learn how to analyze a kernel-mode dump file by using WinDbg. Analysis of a dump file is similar to analysis of a live debugging session.
 keywords: ["WinDbg, analyzing a kernel-mode dump file", "CAB file containing a dump file, analyzing kernel-mode dump file with WinDbg"]
 ms.date: 01/23/2025
+ms.topic: how-to
 ---
 
 # Analyze a kernel-mode dump file by using WinDbg

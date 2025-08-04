@@ -6,6 +6,7 @@ keywords:
 - device experience resources
 - UWP device app resources
 ms.date: 06/25/2025
+ms.topic: overview
 ---
 
 # Additional resources

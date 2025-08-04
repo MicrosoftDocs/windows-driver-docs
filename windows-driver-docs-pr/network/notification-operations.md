@@ -5,6 +5,7 @@ keywords:
 - IHV Extensions DLL WDK Native 802.11 , notification operations
 - Native 802.11 IHV Extensions DLL WDK , notification operations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Notification Operations

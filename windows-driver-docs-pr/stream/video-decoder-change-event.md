@@ -7,6 +7,7 @@ keywords:
 - events WDK video capture
 - EVENTSETID_VIDEODECODER
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Video Decoder Change Event

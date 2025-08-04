@@ -2,6 +2,7 @@
 title: ServiceProvider
 description: ServiceProvider
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # ServiceProvider

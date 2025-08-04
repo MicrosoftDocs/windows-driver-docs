@@ -2,6 +2,7 @@
 title: Vendor-Extended Properties
 description: Vendor-Extended Properties
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Vendor-Extended Properties

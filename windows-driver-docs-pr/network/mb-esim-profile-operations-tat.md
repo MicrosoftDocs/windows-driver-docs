@@ -2,6 +2,7 @@
 title: eSIM Profile Operations Log Filter
 description: TextAnalysisTool Filter for eSIM Profile Operations
 ms.date: 03/01/2021
+ms.topic: how-to
 ---
 
 # eSIM Profile Operations Log Filter

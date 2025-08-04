@@ -5,11 +5,13 @@ keywords:
 - memory segments WDK display , about memory segments
 - hidden video memory WDK display
 - video memory manager WDK display
-ms.date: 08/29/2024
+ms.date: 07/29/2025
 ms.topic: how-to
 ---
 
 # Using Memory Segments to Describe the GPU Address Space
+
+A memory segment is a contiguous range of virtual addresses mapped to a contiguous range of physical addresses. They were introduced in Windows Vista.
 
 The video memory manager (*VidMm*) is responsible for managing the address space of the GPU. Before it can do so, the kernel-mode display miniport driver (KMD) must describe the GPU's address space to *VidMm* by using memory segments.
 

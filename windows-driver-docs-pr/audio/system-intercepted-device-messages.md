@@ -8,6 +8,7 @@ keywords:
 - messages WDK audio
 - intercepted device messages WDK audio
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # System-Intercepted Device Messages

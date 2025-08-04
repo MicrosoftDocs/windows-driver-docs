@@ -3,6 +3,7 @@ title: Waits and APCs
 description: Waits and APCs
 keywords: ["kernel dispatcher objects WDK , alerts", "dispatcher objects WDK kernel , alerts", "APCs WDK kernel", "alerts WDK kernel", "kernel dispatcher objects WDK , APCs", "dispatcher objects WDK kernel , APCs", "Alertable parameter", "WaitMode parameter", "kernel dispatcher objects WDK , waiting for", "dispatcher objects WDK kernel , waiting for"]
 ms.date: 09/16/2022
+ms.topic: concept-article
 ---
 
 # Waits and APCs

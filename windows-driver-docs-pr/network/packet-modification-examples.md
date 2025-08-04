@@ -4,6 +4,7 @@ description: Packet Modification Examples
 keywords:
 - packet modification WDK Windows Filtering Platform
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Packet Modification Examples

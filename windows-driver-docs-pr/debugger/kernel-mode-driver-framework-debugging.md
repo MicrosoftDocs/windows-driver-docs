@@ -3,6 +3,7 @@ title: Kernel-Mode Driver Framework Debugging
 description: Kernel-Mode Driver Framework Debugging
 keywords: ["Kernel-Mode Driver Framework debugging", "Windows Driver Foundation"]
 ms.date: 09/13/2024
+ms.topic: reference
 ---
 
 # Kernel-Mode Driver Framework Debugging

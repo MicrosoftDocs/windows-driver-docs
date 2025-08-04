@@ -11,6 +11,7 @@ keywords:
 - synth sink WDK audio
 - render sink WDK audio
 ms.date: 04/20/2017
+ms.topic: design-pattern
 ---
 
 # Driver Support for DirectMusic

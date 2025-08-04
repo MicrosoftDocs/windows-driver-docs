@@ -5,6 +5,7 @@ keywords:
 - security WDK file systems , reparse points
 - reparse points WDK file systems
 ms.date: 02/12/2025
+ms.topic: concept-article
 ---
 
 # Security considerations for reparse points

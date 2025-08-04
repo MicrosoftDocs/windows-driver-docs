@@ -6,6 +6,7 @@ keywords:
 - general printer attributes WDK Unidrv , root-level-only
 - PPD attributes WDK Unidrv
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # New Root-Level-Only PPD Attributes for Windows Vista

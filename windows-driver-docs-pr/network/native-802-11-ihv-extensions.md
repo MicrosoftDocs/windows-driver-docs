@@ -10,6 +10,7 @@ keywords:
 - IHV extensions WDK Native 802.11 , adding functionality
 - Native 802.11 IHV Extensions WDK , adding functionality
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Native 802.11 IHV Extensions Topics 

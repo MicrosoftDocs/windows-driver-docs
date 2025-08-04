@@ -6,6 +6,7 @@ keywords:
 - Trace Tree pane WDK Static Driver Verifier
 - color coding WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: end-user-help
 ---
 
 # Color Coding in the Trace Tree Pane

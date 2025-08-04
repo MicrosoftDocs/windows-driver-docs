@@ -4,6 +4,7 @@ description: This article explains the different types of USB Type-C troubleshoo
 ms.date: 05/23/2025
 ms.custom: template-concept
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 
 # Windows USB Type-C troubleshooting notifications

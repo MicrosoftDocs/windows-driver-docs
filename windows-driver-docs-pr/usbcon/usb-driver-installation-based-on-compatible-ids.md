@@ -2,6 +2,7 @@
 title: USB Serial Driver (Usbser.sys)
 description: Use the Microsoft-provided USB driver (Usbser.sys) for your communications and CDC control device.
 ms.date: 06/11/2025
+ms.topic: concept-article
 ---
 
 # USB serial driver (Usbser.sys)

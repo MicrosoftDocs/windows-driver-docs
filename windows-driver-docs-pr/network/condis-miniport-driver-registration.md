@@ -6,6 +6,7 @@ keywords:
 - NDIS miniport drivers WDK , CoNDIS
 - registering miniport drivers
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # CoNDIS Miniport Driver Registration

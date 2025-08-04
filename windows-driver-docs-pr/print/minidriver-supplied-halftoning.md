@@ -5,6 +5,7 @@ keywords:
 - minidriver-supplied halftoning WDK Unidrv
 - customized halftoning WDK Unidrv
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Minidriver-Supplied Halftoning

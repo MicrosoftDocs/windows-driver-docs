@@ -2,6 +2,7 @@
 title: Required Root Item Properties for Scanner Storage
 description: Required Root Item Properties for Scanner Storage
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Required Root Item Properties for Scanner Storage

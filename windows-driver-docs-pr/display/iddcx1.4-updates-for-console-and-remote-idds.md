@@ -9,6 +9,7 @@ keywords:
 - Console IDD
 - Remote indirect display driver
 - Remote IDD
+ms.topic: release-notes
 ---
 
 # IddCx 1.4 updates for console and remote IDDs

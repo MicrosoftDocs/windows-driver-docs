@@ -6,6 +6,7 @@ keywords:
 - selector properties WDK video capture
 - PROPSETID_VIDCAP_SELECTOR
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # UVC Video Capture Selector Properties

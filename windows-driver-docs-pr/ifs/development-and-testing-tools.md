@@ -8,6 +8,7 @@ keywords:
 - Filter Verifier WDK file system minifilter
 - Verifier utility
 ms.date: 04/24/2025
+ms.topic: system-utilities
 ---
 
 # Tools for minifilter development and testing

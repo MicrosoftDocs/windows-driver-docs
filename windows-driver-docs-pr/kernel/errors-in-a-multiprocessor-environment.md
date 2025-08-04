@@ -3,6 +3,7 @@ title: Errors in a Multiprocessor Environment
 description: Errors in a Multiprocessor Environment
 keywords: ["reliability WDK kernel , race conditions", "race conditions WDK kernel", "reliability WDK kernel , multiprocessor environment errors", "multiprocessor environment errors WDK kernel", "locking WDK kernel", "multiple I/O request handling WDK kernel", "I/O requests WDK kernel", "thread conflicts WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: troubleshooting-general
 ---
 
 # Errors in a Multiprocessor Environment

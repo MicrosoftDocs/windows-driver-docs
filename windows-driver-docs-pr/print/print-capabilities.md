@@ -7,6 +7,7 @@ keywords:
 - PrintCapabilities document WDK print
 - IPrintTicketProvider
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print capabilities

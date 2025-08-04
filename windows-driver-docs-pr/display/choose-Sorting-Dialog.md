@@ -2,6 +2,7 @@
 title: Choose Sorting Dialog
 description: With the Choose sorting dialog, the user can customize the layout of the Segment viewer. 
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Choose Sorting Dialog

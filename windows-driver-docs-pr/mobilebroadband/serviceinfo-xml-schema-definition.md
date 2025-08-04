@@ -2,6 +2,7 @@
 title: ServiceInfo XML Schema Definition
 description: ServiceInfo XML Schema Definition
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # ServiceInfo XML Schema Definition

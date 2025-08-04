@@ -2,6 +2,7 @@
 title: Asynchronous User Notification Schema
 description: Provides information on the XML schema that can be used by a printer driver to provide asynchronous event notification messages.
 ms.date: 08/31/2021
+ms.topic: reference
 ---
 
 # Asynchronous User Notification Schema

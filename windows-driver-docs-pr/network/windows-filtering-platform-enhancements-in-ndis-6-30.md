@@ -2,6 +2,7 @@
 title: Windows Filtering Platform Enhancements in NDIS 6.30
 description: Windows filtering platform (WFP) includes the following enhancements for NDIS 6.30 and later drivers
 ms.date: 03/02/2023
+ms.topic: release-notes
 ---
 
 # Windows Filtering Platform Enhancements in NDIS 6.30

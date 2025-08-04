@@ -2,6 +2,7 @@
 title: UEFI Entropy Gathering Protocol
 description: The UEFI entropy gathering protocol is used to produce Random Number Generation (RNG) values in a well-known manner.
 ms.date: 03/23/2023
+ms.topic: concept-article
 ---
 
 # UEFI entropy gathering protocol

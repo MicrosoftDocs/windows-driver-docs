@@ -5,6 +5,7 @@ keywords:
 - NetAdapterCx device initialization, NetCx device initialization, NetAdapterCx adapter initialization, NetCx adapter initialization
 ms.date: 01/07/2019
 ms.custom: Vib
+ms.topic: concept-article
 ---
 
 # Device and adapter initialization

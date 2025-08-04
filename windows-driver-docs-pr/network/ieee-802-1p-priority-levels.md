@@ -2,6 +2,7 @@
 title: IEEE 802.1p Priority Levels
 description: IEEE 802.1p Priority Levels
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # IEEE 802.1p Priority Levels

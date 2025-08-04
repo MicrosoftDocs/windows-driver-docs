@@ -4,6 +4,7 @@ description: DirectMusic Stream Data Range
 keywords:
 - DirectMusic WDK audio , stream data ranges
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # DirectMusic Stream Data Range

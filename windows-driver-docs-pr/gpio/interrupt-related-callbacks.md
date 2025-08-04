@@ -2,6 +2,7 @@
 title: Interrupt-Related Callbacks
 description: As an option, the driver for a general-purpose I/O (GPIO) controller can provide support for GPIO interrupts.
 ms.date: 03/26/2025
+ms.topic: concept-article
 ---
 
 # Interrupt-Related Callbacks

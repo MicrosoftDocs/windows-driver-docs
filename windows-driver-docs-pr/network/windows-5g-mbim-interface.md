@@ -4,7 +4,9 @@ description: Windows 5G MBIM Interface
 keywords:
 - Windows 5G MBIM Interface
 ms.date: 03/01/2021
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # Windows 5G MBIM Interface

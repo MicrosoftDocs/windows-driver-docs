@@ -3,6 +3,7 @@ title: Targets
 description: Targets
 keywords: ["Debugger Engine, targets"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Targets

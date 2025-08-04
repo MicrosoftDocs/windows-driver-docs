@@ -6,6 +6,7 @@ keywords:
 - registry WDK Bluetooth
 - COD_Type subkey
 ms.date: 01/10/2024
+ms.topic: reference
 ---
 
 # Bluetooth Registry Entries

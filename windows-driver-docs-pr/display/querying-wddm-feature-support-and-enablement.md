@@ -207,7 +207,7 @@ Lists features with descriptor information
 ```dbgcmd
 !feature config
 
-Lists the current configuration information for each feature. In most cases, this will be unspecified/default values if not overriden.
+Lists the current configuration information for each feature. In most cases, this will be unspecified/default values if not overridden.
 
 2: kd> !dxgkdx.feature config
 
@@ -348,7 +348,7 @@ static_assert(ARRAYSIZE(g_FeatureInterfaceTables) == DXGK_FEATURE_MAX, "New feat
 
 //
 // TODO: This table may be defined independently for each supported hardware or architecture,
-// or may be completely overriden dynamically at runtime during DRIVER_ADAPTER::InitializeFeatureConfiguration
+// or may be completely overridden dynamically at runtime during DRIVER_ADAPTER::InitializeFeatureConfiguration
 //
 static const DRIVER_FEATURE_DESC g_FeatureDefaults[] =
 {

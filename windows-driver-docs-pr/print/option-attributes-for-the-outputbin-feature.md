@@ -4,6 +4,7 @@ description: Option Attributes for the OutputBin Feature
 keywords:
 - OutputBin Feature
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Option Attributes for the OutputBin Feature

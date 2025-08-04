@@ -2,6 +2,7 @@
 title: Packet Coalescing Receive Filters
 description: Packet Coalescing Receive Filters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 #  Packet Coalescing Receive Filters

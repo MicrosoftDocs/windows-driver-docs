@@ -3,6 +3,7 @@ title: Power Manager
 description: Power manager
 keywords: ["power manager WDK kernel", "usage manager WDK power management", "power IRPs WDK kernel , power manager", "system-wide power policy WDK kernel", "power policy WDK kernel", "sleep power management WDK kernel", "hibernation power management WDK kernel", "shutdown power management WDK kernel"]
 ms.date: 05/08/2025
+ms.topic: concept-article
 ---
 
 # Power manager

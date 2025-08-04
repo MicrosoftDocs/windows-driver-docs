@@ -5,6 +5,7 @@ keywords:
 - print processors WDK, functions
 - functions WDK print
 ms.date: 09/12/2022
+ms.topic: reference
 ---
 
 # Functions defined by print processors

@@ -2,6 +2,7 @@
 title: Get Save Operation Requirements (Function Index 2)
 description: This function returns information about hardware requirements for a save operation.
 ms.date: 11/18/2022
+ms.topic: reference
 ---
 
 # Get Save Operation Requirements (Function Index 2)

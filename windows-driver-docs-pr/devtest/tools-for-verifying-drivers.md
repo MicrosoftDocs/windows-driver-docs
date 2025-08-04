@@ -7,6 +7,7 @@ keywords:
 - verifying drivers WDK
 - driver verification WDK
 ms.date: 07/02/2024
+ms.topic: best-practice
 ---
 
 # Tools for verifying drivers

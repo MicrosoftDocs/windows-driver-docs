@@ -2,6 +2,7 @@
 title: SoftwareInfo XML Schema Definition
 description: SoftwareInfo XML Schema Definition
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # SoftwareInfo XML Schema Definition

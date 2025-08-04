@@ -11,6 +11,7 @@ keywords:
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
 ms.date: 04/08/2022
+ms.topic: reference
 ---
 
 # Identifiers for Secure Digital (SD) devices

@@ -1,16 +1,16 @@
 ---
-title: System-Defined Device Setup Classes Reserved for System Use
-description: A list of system-defined device setup classes reserved for Windows system use.
-ms.date: 05/31/2024
+title: System-Defined Device Setup Classes - Reserved
+description: Review the list of system-defined device setup classes that are reserved for Windows system use.
+ms.date: 07/11/2025
 ms.topic: concept-article
 ---
 
 # System-defined device setup classes reserved for system use
 
 > [!NOTE]
-> If you're looking for info on predefined values to use for the `Class` and `ClassGuid` entries in the [Version Section](inf-version-section.md) of the driver's setup information (INF) file, see [System-Defined Device Setup Classes Available to Vendors](system-defined-device-setup-classes-available-to-vendors.md).
+> If you're looking for information on predefined values to use for the `Class` and `ClassGuid` entries in the [Version section](inf-version-section.md) of the driver's setup information INF file (_.inf_), see [System-defined device setup classes available to vendors](system-defined-device-setup-classes-available-to-vendors.md).
 
-Don't use the following classes and GUIDs to install devices or drivers on Windows 2000 or later versions of Windows:
+Don't use the following classes and GUIDs to install devices or drivers on Windows 2000 or later versions of Windows.
 
 | Driver or device | Class | ClassGuid | Remarks |
 |--|--|--|--|
@@ -29,4 +29,4 @@ Don't use the following classes and GUIDs to install devices or drivers on Windo
 | **Audio Endpoint** | AudioEndpoint | {c166523c-fe0c-4a94-a586-f1a80cfbbf3e} | &nbsp; |
 | **Sound** | Sound | {4d36e97c-e325-11ce-bfc1-08002be10318} | This class is obsolete. |
 | **Storage Volume Snapshots** | VolumeSnapshot | {533c5b84-ec70-11d2-9505-00c04F79deaf} | This class is reserved for system use. |
-| **USB Bus Devices (hubs and host controllers)** | USB | {36fc9e60-c465-11cf-8056-444553540000} | This class includes USB host controllers and USB hubs, but not USB peripherals. Drivers for this class are provided by the operating system. Drivers for USB peripherals should use the appropriate class from [System-Defined Device Setup Classes Available to Vendors](./system-defined-device-setup-classes-available-to-vendors.md) that matches the functionality of the peripheral, or use the **USBDevice** class if no other class is a better fit. |
+| **USB Bus Devices (hubs and host controllers)** | USB | {36fc9e60-c465-11cf-8056-444553540000} | This class includes USB host controllers and USB hubs, but not USB peripherals. Drivers for this class are provided by the operating system. Drivers for USB peripherals should use the appropriate class from [System-defined device setup classes available to vendors](./system-defined-device-setup-classes-available-to-vendors.md) that matches the functionality of the peripheral, or use the **USBDevice** class if no other class is a better fit. |

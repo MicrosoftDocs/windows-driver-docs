@@ -2,6 +2,7 @@
 title: NDKPI Terminology
 description: The NDKPI documentation uses the following terms to describe NDK providers and consumers.
 ms.date: 04/20/2017
+ms.topic: glossary
 ---
 
 # NDKPI Terminology

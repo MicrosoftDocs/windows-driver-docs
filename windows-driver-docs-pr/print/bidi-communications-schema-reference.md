@@ -3,6 +3,7 @@ title: Bidirectional Communication Schema Reference
 description: Bidirectional Communication Schema Reference
 keywords: ["bidirectional communication schema WDK print", "bidi communication schema WDK print"]
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # Bidirectional Communication Schema Reference

@@ -11,6 +11,7 @@ keywords:
 - compatible IDs WDK device installations
 - integrated device electronics identifiers WDK device installations
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Identifiers for IDE Devices

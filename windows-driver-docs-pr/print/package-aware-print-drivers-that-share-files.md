@@ -5,6 +5,7 @@ keywords:
 - package-aware print drivers WDK
 - core drivers WDK printer
 ms.date: 07/18/2023
+ms.topic: concept-article
 ---
 
 # Package-Aware Print Drivers that Share Files

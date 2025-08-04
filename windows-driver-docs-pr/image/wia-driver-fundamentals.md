@@ -2,6 +2,7 @@
 title: WIA Driver Fundamentals
 description: WIA Driver Fundamentals
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Driver Fundamentals

@@ -2,6 +2,7 @@
 title: Application Item Contexts
 description: Application Item Contexts
 ms.date: 03/27/2023
+ms.topic: concept-article
 ---
 
 # Application Item Contexts

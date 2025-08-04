@@ -2,6 +2,7 @@
 title: SpbCx Object Handles
 description: This topic describes object handles that are defined for the SPB framework extension (SpbCx) library.
 ms.date: 09/14/2021
+ms.topic: reference
 ---
 
 # SpbCx Object Handles

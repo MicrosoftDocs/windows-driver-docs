@@ -2,6 +2,7 @@
 title: Synchronous I/O Programming
 description: Synchronous I/O Programming
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Synchronous I/O Programming

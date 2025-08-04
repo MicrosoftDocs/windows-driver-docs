@@ -8,6 +8,7 @@ keywords:
 - source files WDK GDL
 - strings WDK GDL , allowed characters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # XML Restrictions on Allowed Characters in Snapshots

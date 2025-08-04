@@ -2,6 +2,7 @@
 title: Percent of Machines with Camera Failures 
 description: This measure aggregates telemetry from a 30-day sliding window into a percentage of machines that had a camera failure.
 ms.date: 03/12/2025
+ms.topic: concept-article
 ---
 
 # Percent of machines with camera failures

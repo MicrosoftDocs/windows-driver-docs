@@ -2,6 +2,7 @@
 title: PNPCPU General Notes
 description: PNPCPU General Notes
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # PNPCPU General Notes

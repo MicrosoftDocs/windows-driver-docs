@@ -9,6 +9,7 @@ keywords:
 - HMD
 - virtual reality
 ms.date: 04/24/2025
+ms.topic: concept-article
 ---
 
 # EDID extension for head-mounted and specialized monitors

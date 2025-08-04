@@ -6,6 +6,7 @@ keywords:
 - NDIS intermediate drivers WDK , status indications
 - status indications WDK networking , intermediate drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Status Indications in an Intermediate Driver

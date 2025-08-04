@@ -2,6 +2,7 @@
 title: LaunchDeviceStageOnDeviceConnect
 description: LaunchDeviceStageOnDeviceConnect
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # LaunchDeviceStageOnDeviceConnect

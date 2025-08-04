@@ -3,6 +3,7 @@ title: CLFS Support for Archiving
 description: CLFS Support for Archiving
 keywords: ["Common Log File System WDK kernel , archiving", "CLFS WDK kernel , archiving", "archiving WDK CLFS", "non-ephemeral logs WDK CLFS", "archive tail WDK CLFS"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # CLFS Support for Archiving

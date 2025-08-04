@@ -8,6 +8,7 @@ keywords:
 - CPSUI WDK print
 - property sheet pages WDK print
 ms.date: 01/26/2023
+ms.topic: overview
 ---
 
 # Common Property Sheet User Interface

@@ -5,6 +5,7 @@ keywords:
 - GPD file entries WDK Unidrv , value types
 - value types WDK GPD files
 ms.date: 01/27/2023
+ms.topic: glossary
 ---
 
 # GPD Value Types

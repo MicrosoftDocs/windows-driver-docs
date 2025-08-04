@@ -16,6 +16,7 @@ keywords:
 - framework objects WDK KMDF , architecture
 - framework-based drivers WDK KMDF , architecture
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WDF Architecture

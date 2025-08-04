@@ -4,6 +4,7 @@ description: This section describes Data field identifiers for Windows Filtering
 keywords:
 - Data field identifiers network drivers
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # Data field identifiers

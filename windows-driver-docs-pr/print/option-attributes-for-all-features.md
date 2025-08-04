@@ -2,6 +2,7 @@
 title: Option Attributes for All Features
 description: Option attributes for all features
 ms.date: 07/18/2023
+ms.topic: reference
 ---
 
 # Option attributes for all features

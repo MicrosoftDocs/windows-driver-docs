@@ -10,6 +10,7 @@ keywords:
 - error record header WDK WHEA
 - error record section WDK WHEA
 ms.date: 12/17/2024
+ms.topic: error-reference
 ---
 
 # Error Records

@@ -3,6 +3,7 @@ title: DispatchCleanup Routines
 description: DispatchCleanup Routines
 keywords: ["dispatch routines WDK kernel , DispatchCleanup routine", "DispatchCleanup routine", "IRP_MJ_CLEANUP I/O function code", "deallocating resources WDK kernel", "unmapping hardware memory", "unmapping user-mode memory", "unlocking user-mode memory", "cleaning up resources WDK kernel", "spin locks WDK kernel", "cleanup dispatch routines WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # DispatchCleanup Routines

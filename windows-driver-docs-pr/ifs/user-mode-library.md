@@ -6,6 +6,7 @@ keywords:
 - user-mode library WDK file system minifilter
 - Fltlib.dll
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # User-Mode Library

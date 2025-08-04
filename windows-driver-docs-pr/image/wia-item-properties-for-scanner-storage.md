@@ -2,6 +2,7 @@
 title: WIA Item Properties for Scanner Storage
 description: WIA Item Properties for Scanner Storage
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # WIA Item Properties for Scanner Storage

@@ -16,6 +16,7 @@ keywords:
 - wave-out applications WDK audio
 - wave-in applications WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Wave and DirectSound Components

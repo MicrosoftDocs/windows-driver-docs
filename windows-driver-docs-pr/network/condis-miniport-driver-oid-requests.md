@@ -5,6 +5,7 @@ keywords:
 - miniport drivers WDK networking , CoNDIS
 - NDIS miniport drivers WDK , CoNDIS
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # CoNDIS Miniport Driver OID Requests

@@ -8,6 +8,7 @@ keywords:
 - CHECKPNGFORMAT
 - compressed images WDK print
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # Color Management of JPEG and PNG Images

@@ -3,6 +3,7 @@ title: ACPI Extensions (Acpikd.dll and Kdexts.dll)
 description: ACPI Extensions (Acpikd.dll and Kdexts.dll)
 keywords: ["ACPI debugging, extensions (acpikd.dll and kdexts.dll)", "acpikd.dll (ACPI extensions)", "extensions, ACPI"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # ACPI Extensions (Acpikd.dll and Kdexts.dll)

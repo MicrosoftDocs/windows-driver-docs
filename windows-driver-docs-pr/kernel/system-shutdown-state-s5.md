@@ -3,6 +3,7 @@ title: System Shutdown State S5
 description: Provides information about system shutdown state S5.
 keywords: ["S5 WDK power management", "system shutdown states WDK power management", "software resumption WDK power management", "resumption WDK power management", "hardware latency WDK power management", "system hardware context WDK power management", "hardware context WDK power management", "context WDK power management", "latency WDK power management", "system power states WDK kernel , shutdown state", "shutdown states WDK power management"]
 ms.date: 04/30/2025
+ms.topic: concept-article
 ---
 
 # System shutdowns state S5

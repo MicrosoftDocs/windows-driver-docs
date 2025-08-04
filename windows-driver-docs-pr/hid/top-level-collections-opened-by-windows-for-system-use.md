@@ -4,6 +4,7 @@ description: Top-level collections opened by Windows for system use
 keywords:
 - top-level collections WDK HID
 ms.date: 01/11/2024
+ms.topic: reference
 ---
 
 # Top-level collections opened by Windows for system use

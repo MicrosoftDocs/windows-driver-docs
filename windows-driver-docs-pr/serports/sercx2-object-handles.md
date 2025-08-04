@@ -2,6 +2,7 @@
 title: SerCx2 Object Handles
 description: This topic describes object handle types that are specifically defined for version 2 of the serial framework extension (SerCx2). 
 ms.date: 12/27/2018
+ms.topic: concept-article
 ---
 
 # SerCx2 Object Handles

@@ -2,6 +2,7 @@
 title: Data Driven Testing
 description: Data Driven Testing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Data Driven Testing

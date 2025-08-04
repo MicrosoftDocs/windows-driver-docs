@@ -2,6 +2,7 @@
 title: Main I/O Path
 description: Main I/O Path
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Main I/O Path

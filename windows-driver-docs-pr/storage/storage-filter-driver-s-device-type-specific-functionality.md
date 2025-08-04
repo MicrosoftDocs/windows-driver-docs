@@ -7,6 +7,7 @@ keywords:
 - SFD WDK storage , device-type-specific functionality
 - device-type-specific functionality WDK storage
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Storage Filter Driver's Device-Type-Specific Functionality

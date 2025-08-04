@@ -10,6 +10,7 @@ keywords:
 - create a filter altitude
 - update filter altitude information
 ms.date: 04/24/2025
+ms.topic: concept-article
 ---
 
 # Load order groups and altitudes for minifilter drivers

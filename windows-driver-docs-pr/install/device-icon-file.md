@@ -2,6 +2,7 @@
 title: Device Icon File
 description: Device Icon File
 ms.date: 06/19/2025
+ms.topic: concept-article
 ---
 
 # Device Icon File

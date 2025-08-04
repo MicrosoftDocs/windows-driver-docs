@@ -2,6 +2,7 @@
 title: Microsoft Bluetooth Test Platform - BM-62-EVB Board
 description: Bluetooth Test Platform (BTP) supported hardware (BM62).
 ms.date: 01/10/2024
+ms.topic: overview
 ---
 
 # BM62

@@ -2,6 +2,7 @@
 title: Data Out Endpoint Descriptor
 description: Data Out Endpoint Descriptor
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Data Out Endpoint Descriptor

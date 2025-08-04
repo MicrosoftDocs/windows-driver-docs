@@ -2,6 +2,7 @@
 title: Memory Buffer Life Cycle
 description: Memory Buffer Life Cycle
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Memory Buffer Life Cycle

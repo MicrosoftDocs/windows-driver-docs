@@ -5,6 +5,7 @@ keywords:
 - DVD decoder minidrivers WDK
 - regionalization WDK DVD decoder
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # DVD Regionalization

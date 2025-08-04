@@ -3,6 +3,7 @@ title: Remote Tool
 description: The Remote tool, Remote.exe, is a command-line tool that lets you run and control any console program from a remote computer.
 keywords: ["Remote Tool", "Remote.exe", "Remote.exe, See Remote Tool"]
 ms.date: 05/23/2017
+ms.topic: overview
 ---
 
 # Remote Tool

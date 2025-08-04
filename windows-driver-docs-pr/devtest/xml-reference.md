@@ -4,6 +4,7 @@ description: XML reference
 keywords:
 - device metadata XML Reference
 ms.date: 06/25/2025
+ms.topic: reference
 ---
 
 # XML reference

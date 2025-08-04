@@ -2,6 +2,7 @@
 title: Staple Property
 description: Contains all of the information that describes the stapling device.
 ms.date: 09/08/2021
+ms.topic: reference
 ---
 
 # Staple property

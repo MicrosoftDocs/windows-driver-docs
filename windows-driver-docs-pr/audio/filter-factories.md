@@ -10,6 +10,7 @@ keywords:
 - speakers WDK audio , filter factories
 - instantiating filters WDK audio
 ms.date: 12/19/2024
+ms.topic: concept-article
 ---
 
 # Filter Factories

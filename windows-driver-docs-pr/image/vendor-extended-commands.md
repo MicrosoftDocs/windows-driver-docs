@@ -2,6 +2,7 @@
 title: Vendor-extended Commands
 description: Vendor-extended commands
 ms.date: 05/02/2023
+ms.topic: concept-article
 ---
 
 # Vendor-extended commands

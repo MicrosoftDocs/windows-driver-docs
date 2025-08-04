@@ -2,6 +2,7 @@
 title: Device Settings Configuration Elements
 description: Device Settings Configuration Elements
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # Device Settings Configuration Elements

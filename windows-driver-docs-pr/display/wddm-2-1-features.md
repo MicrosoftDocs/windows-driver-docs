@@ -2,6 +2,7 @@
 title: WDDM 2.1 Features
 description: This section provides details about features and enhancements in Windows Display Driver Model (WDDM) version 2.1.
 ms.date: 09/24/2024
+ms.topic: release-notes
 ---
 
 # WDDM 2.1 Features

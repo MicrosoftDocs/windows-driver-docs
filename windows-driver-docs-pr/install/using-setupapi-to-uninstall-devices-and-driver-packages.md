@@ -37,7 +37,7 @@ Starting with Windows Vista, this function also removes the [driver package](dri
 
 Alternatively, a device installation application can call [DiUninstallDriver](/windows/win32/api/newdev/nf-newdev-diuninstalldriverw) to remove a driver package from the Driver Store.
 
-For more information on removing a driver package from the Driver Store, see [Deleting a Driver Package from the Driver Store](./how-devices-and-driver-packages-are-uninstalled.md#deleting-a-driver-package-from-the-driver-store).
+For more information on removing a driver package from the Driver Store, see [Delete a Driver Package from the Driver Store](./how-devices-and-driver-packages-are-uninstalled.md#delete-a-driver-package-from-the-driver-store).
 
 ### <a href="" id="deleting-the-binary-files-of-the-installed-driver"></a> Deleting the Binary Files of the Installed Driver
 

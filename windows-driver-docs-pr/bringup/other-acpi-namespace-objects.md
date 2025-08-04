@@ -2,6 +2,7 @@
 title: Other ACPI Namespace Objects
 description: For some specific classes of device, there are requirements for additional ACPI namespace objects to appear under those devices in the namespace.
 ms.date: 03/23/2023
+ms.topic: concept-article
 ---
 
 # Other ACPI namespace objects

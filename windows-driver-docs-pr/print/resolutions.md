@@ -2,6 +2,7 @@
 title: Resolutions
 description: Contains all the value entries that pertain to the print resolutions that are supported by the device.
 ms.date: 09/02/2021
+ms.topic: reference
 ---
 
 # Resolutions

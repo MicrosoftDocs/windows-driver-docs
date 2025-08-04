@@ -3,6 +3,7 @@ title: Security Vulnerabilities
 description: This section covers debugging security vulnerabilities
 keywords: security vulnerabilities, debugger, security
 ms.date: 11/25/2024
+ms.topic: concept-article
 ---
 
 # Security Vulnerabilities

@@ -2,6 +2,7 @@
 title: Roadmap for Device and Driver Installation
 description: Roadmap for Device and Driver Installation
 ms.date: 12/19/2024
+ms.topic: checklist
 ---
 
 # Roadmap for Device and Driver Installation

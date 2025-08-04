@@ -4,6 +4,7 @@ description: Sample Printer Interface DLL
 keywords:
 - printer interface DLL WDK , samples
 ms.date: 01/30/2023
+ms.topic: reference
 ---
 
 # Sample Printer Interface DLL

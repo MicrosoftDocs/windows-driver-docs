@@ -2,6 +2,7 @@
 title: Roadmap for Developing WDM Audio Drivers
 description: Roadmap for Developing WDM Audio Drivers
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Roadmap for Developing WDM Audio Drivers

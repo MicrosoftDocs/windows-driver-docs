@@ -3,6 +3,7 @@ title: Dispatch Routines and IRQLs
 description: Dispatch Routines and IRQLs
 keywords: ["dispatch routines WDK kernel , IRQLs", "IRQLs WDK dispatch routines"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Dispatch Routines and IRQLs

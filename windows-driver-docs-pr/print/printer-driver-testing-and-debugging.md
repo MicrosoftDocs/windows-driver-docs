@@ -2,6 +2,7 @@
 title: Printer Driver Testing and Debugging
 description: Printer Driver Testing and Debugging
 ms.date: 01/24/2023
+ms.topic: concept-article
 ---
 
 # Printer Driver Testing and Debugging

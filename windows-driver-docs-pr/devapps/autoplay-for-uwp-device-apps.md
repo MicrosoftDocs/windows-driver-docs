@@ -2,6 +2,7 @@
 title: AutoPlay for UWP Device Apps
 description: This article describes how to use the Device Metadata Authoring Wizard to enable AutoPlay. It also describes how to handle AutoPlay activations in your app.
 ms.date: 06/25/2025
+ms.topic: how-to
 ---
 
 # AutoPlay for UWP device apps

@@ -2,6 +2,7 @@
 title: Wi-Fi Hotspot Offloading Architecture
 description: Wi-Fi Hotspot Offloading Architecture
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Wi-Fi Hotspot Offloading Architecture

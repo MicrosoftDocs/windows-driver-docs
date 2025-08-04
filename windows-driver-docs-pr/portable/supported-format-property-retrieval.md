@@ -2,6 +2,7 @@
 description: Supported Format-Property Retrieval
 title: Supported Format-Property Retrieval
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Supported Format-Property Retrieval

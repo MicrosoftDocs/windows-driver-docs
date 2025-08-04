@@ -7,6 +7,7 @@ keywords:
 - minidrivers WDK Windows 2000 Kernel Streaming , class driver/minidriver relationship
 - class driver/minidriver relationship WDK streaming minidriver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Class Driver and Minidriver Definitions

@@ -2,6 +2,7 @@
 title: AV/C Streaming Constants
 description: AV/C Streaming Constants
 ms.date: 07/26/2021
+ms.topic: reference
 ---
 
 # AV/C Streaming Constants

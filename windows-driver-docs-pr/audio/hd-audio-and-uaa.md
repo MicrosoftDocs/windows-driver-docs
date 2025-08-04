@@ -7,6 +7,7 @@ keywords:
 - UAA WDK
 - Universal Audio Architecture WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # HD Audio and UAA

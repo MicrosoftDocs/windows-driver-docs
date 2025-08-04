@@ -3,6 +3,7 @@ title: "TTD Event Objects"
 description: "This section describes the event model objects associated with time travel debugging."
 keywords: ["TTD Event Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 11/13/2024
+ms.topic: reference
 ---
 
 # TTD Event Objects

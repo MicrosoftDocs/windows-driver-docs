@@ -2,6 +2,7 @@
 title: Default PageMediaSize Mappings
 description: This section shows the default mappings between the PageMediaSize option of the PrintTicket and the GPD/PPD file entries.
 ms.date: 01/25/2023
+ms.topic: reference
 ---
 
 # Default PageMediaSize Mappings

@@ -2,6 +2,7 @@
 title: Network Adapter Index Values
 description: Network Adapter Index Values
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Network Adapter Index Values

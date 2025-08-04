@@ -11,6 +11,7 @@ keywords:
 - DMA transactions WDK KMDF , about DMA transactions
 - DMA transfers WDK KMDF , about DMA transfers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # DMA Transactions and DMA Transfers

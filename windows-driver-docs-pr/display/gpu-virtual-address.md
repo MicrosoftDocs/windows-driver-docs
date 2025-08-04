@@ -2,6 +2,7 @@
 title: GPU Virtual Address
 description: Describes GPU virtual address (GPUVA) concepts and how they're managed starting with WDDM 2.0 (Windows 10).
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # GPU virtual address

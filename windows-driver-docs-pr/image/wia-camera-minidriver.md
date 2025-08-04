@@ -2,6 +2,7 @@
 title: WIA Camera Minidriver
 description: WIA Camera Minidriver
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # WIA Camera Minidriver

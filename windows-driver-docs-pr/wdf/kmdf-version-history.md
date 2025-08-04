@@ -6,6 +6,7 @@ keywords:
 - KMDF WDK , revision history
 - Kernel-Mode Driver Framework WDK , revision history
 ms.date: 06/06/2024
+ms.topic: release-notes
 ---
 
 # KMDF Version History

@@ -5,6 +5,7 @@ ms.date: 08/21/2024
 keywords:
 - IOMMU DMA remapping, WDDM
 - IOMMU, WDDM
+ms.topic: concept-article
 ---
 
 # IOMMU DMA remapping

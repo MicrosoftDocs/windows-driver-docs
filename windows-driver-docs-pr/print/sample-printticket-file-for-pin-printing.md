@@ -2,6 +2,7 @@
 title: Sample PrintTicket File for PIN Printing
 description: Here is a sample PrintTicket file to show how to specify PIN printing.
 ms.date: 01/25/2023
+ms.topic: example-scenario
 ---
 
 # Sample PrintTicket File for PIN Printing

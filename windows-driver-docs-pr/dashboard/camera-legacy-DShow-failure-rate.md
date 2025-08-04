@@ -2,6 +2,7 @@
 title: Percent of Legacy Camera DShow failures
 description: This measure aggregates telemetry from a 30-day sliding window into a percentage of machines that had a camera DShow engine failure.
 ms.date: 03/12/2025
+ms.topic: reference
 ---
 
 # Percent of legacy camera DShow failures

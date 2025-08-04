@@ -11,6 +11,7 @@ keywords:
 - hardware-enforced DEP WDK boot parameters
 - software-enforced DEP WDK boot parameters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Boot Parameters to Configure DEP and PAE

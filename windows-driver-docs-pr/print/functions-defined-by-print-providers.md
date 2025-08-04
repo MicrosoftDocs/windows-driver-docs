@@ -5,6 +5,7 @@ keywords:
 - print providers WDK, functions
 - functions WDK print providers
 ms.date: 09/12/2022
+ms.topic: reference
 ---
 
 # Functions defined by print providers

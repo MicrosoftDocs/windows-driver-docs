@@ -2,6 +2,7 @@
 title: Filter Installation
 description: Filter Installation
 ms.date: 04/20/2017
+ms.topic: install-set-up-deploy
 ---
 
 # Filter Installation

@@ -2,6 +2,7 @@
 title: Manually Adding Device Metadata Packages
 description: Manually adding device metadata packages
 ms.date: 06/19/2025
+ms.topic: how-to
 ---
 
 # Manually adding device metadata packages

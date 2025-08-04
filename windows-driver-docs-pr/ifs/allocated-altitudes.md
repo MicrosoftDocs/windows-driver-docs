@@ -2,10 +2,12 @@
 title: Allocated Filter Altitudes
 description: Lists file system filter altitudes allocated by Microsoft
 ms.date: 02/14/2025
+ms.update-cycle: 365-days
 keywords:
 - filter driver altitude
 - minifilter driver altitude
 ms.custom: UpdateFrequency1
+ms.topic: error-reference
 ---
 
 # Allocated filter altitudes

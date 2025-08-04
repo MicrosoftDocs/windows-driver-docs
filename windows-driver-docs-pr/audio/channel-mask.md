@@ -24,6 +24,7 @@ keywords:
 - positions WDK audio
 - data formats WDK audio , channel masks
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Channel Mask

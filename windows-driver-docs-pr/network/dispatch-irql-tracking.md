@@ -8,6 +8,7 @@ keywords:
 - current IRQLs WDK networking
 - dispatch IRQL tracking WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Dispatch IRQL Tracking

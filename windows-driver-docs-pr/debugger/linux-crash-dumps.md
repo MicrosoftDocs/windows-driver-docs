@@ -3,6 +3,7 @@ title: Linux crash dumps
 description: Linux crash dumps
 keywords: ["remote debugging, linux, process"]
 ms.date: 04/04/2025
+ms.topic: concept-article
 ---
 
 # Linux crash dumps

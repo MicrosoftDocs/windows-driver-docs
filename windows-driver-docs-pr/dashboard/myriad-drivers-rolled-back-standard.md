@@ -2,6 +2,7 @@
 title: Myriad of drivers that were rolled back or re-installed within 2 days of installation
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines that were rolled back or re-installed within 2 days of installation
 ms.date: 05/11/2020
+ms.topic: concept-article
 ---
 
 # Myriad of drivers that were rolled back or re-installed within 2 days of installation

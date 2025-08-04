@@ -22,7 +22,7 @@ As storage infrastructure gets increasingly complex, it's important to be able t
 
 ## Storage Management Initiative Specification (SMI-S)  
 
-SMI-S is an ANSI standard developed by the Storage Networking Industry Association (SNIA). It defines an interoperable framework for the management of storage devices and services in a storage area network (SAN) of *heterogenous* storage vendor devices. SMI-S aims to help the management of storage environments by providing a standardized method for the discovery, configuration, monitoring, and management of storage resources, regardless of the vendor or technology. This standard enables a wide range of storage operations, including provisioning, capacity management, and SAN configuration, through a common set of interfaces.
+SMI-S is an ANSI standard developed by the Storage Networking Industry Association (SNIA). It defines an interoperable framework for the management of storage devices and services in a storage area network (SAN) of *heterogeneous* storage vendor devices. SMI-S aims to help the management of storage environments by providing a standardized method for the discovery, configuration, monitoring, and management of storage resources, regardless of the vendor or technology. This standard enables a wide range of storage operations, including provisioning, capacity management, and SAN configuration, through a common set of interfaces.
 
 For driver developers, adhering to SMI-S standards ensures that storage solutions can be managed consistently in multi-vendor environments, enhancing compatibility and integration capabilities.  
 

@@ -19,6 +19,7 @@ keywords:
 - tracing WDK , viewing events
 - trace consumers WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Survey of Software Tracing Tools

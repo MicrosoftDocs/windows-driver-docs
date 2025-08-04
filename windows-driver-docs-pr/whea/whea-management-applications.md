@@ -7,6 +7,7 @@ keywords:
 - applications WDK WHEA , management
 - management applications WDK WHEA
 ms.date: 03/26/2025
+ms.topic: overview
 ---
 
 # WHEA Management Applications

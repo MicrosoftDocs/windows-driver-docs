@@ -2,6 +2,7 @@
 title: Erase NVM Image (Function Index 19)
 description: This function erases the backup image saved in the non-volatile memory module.
 ms.date: 11/18/2022
+ms.topic: reference
 ---
 
 # Erase NVM Image (Function Index 19)

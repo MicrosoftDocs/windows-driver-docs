@@ -2,6 +2,7 @@
 title: HTTP Sites and UNC Shares
 description: HTTP Sites and UNC Shares
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # HTTP Sites and UNC Shares

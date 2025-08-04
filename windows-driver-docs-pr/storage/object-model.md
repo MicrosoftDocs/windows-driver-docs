@@ -2,6 +2,7 @@
 title: Object Model (Windows Drivers)
 description: Learn more about the Object Model.
 ms.date: 11/21/2024
+ms.topic: concept-article
 ---
 
 # Object Model

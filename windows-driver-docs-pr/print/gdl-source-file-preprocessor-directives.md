@@ -19,6 +19,7 @@ keywords:
 - EnablePPDirective directive WDK GDL
 - DisablePPDirective directive WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Source File Preprocessor Directives

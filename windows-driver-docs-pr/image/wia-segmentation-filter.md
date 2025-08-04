@@ -2,6 +2,7 @@
 title: WIA Segmentation Filter
 description: WIA Segmentation Filter
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # WIA Segmentation Filter

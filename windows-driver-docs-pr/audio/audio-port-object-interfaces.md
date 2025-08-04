@@ -2,6 +2,7 @@
 title: Audio Port Object Interfaces
 description: Audio Port Object Interfaces
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # Audio Port Object Interfaces

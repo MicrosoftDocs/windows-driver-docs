@@ -7,6 +7,7 @@ keywords:
 - KS events WDK DVD decoder
 - events WDK DVD decoder
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # DVD Decoder Related KS Events

@@ -2,6 +2,7 @@
 title: V4 Printer Driver Connectivity
 description: The v4 printer driver connectivity model enables the use of, for example, Bidi and Web Services for Devices (WSD) to communicate with a print device.
 ms.date: 01/25/2023
+ms.topic: concept-article
 ---
 
 # V4 Printer Driver Connectivity

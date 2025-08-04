@@ -3,6 +3,7 @@ title: Ambiguous Breakpoint Resolution
 description: Learn more about ambiguous breakpoint resolution
 keywords: ["Debugger Engine, breakpoints"]
 ms.date: 06/26/2023
+ms.topic: concept-article
 ---
 
 # Ambiguous breakpoint resolution

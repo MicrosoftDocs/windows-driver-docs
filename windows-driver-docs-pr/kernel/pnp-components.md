@@ -3,6 +3,7 @@ title: PnP Components
 description: This article shows the components that work together to support PnP.
 keywords: ["PnP WDK kernel , components", "Plug and Play WDK kernel , components", "software components WDK PnP", "PnP drivers WDK kernel", "user-mode PnP manager WDK", "kernel-mode PnP manager WDK", "PnP managers WDK", "PnP components WDK user-mode"]
 ms.date: 05/08/2025
+ms.topic: concept-article
 ---
 
 # PnP components

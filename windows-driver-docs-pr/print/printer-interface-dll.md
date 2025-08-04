@@ -8,6 +8,7 @@ keywords:
 - user interface WDK printer interface DLL
 - configuration options user interface WDK print
 ms.date: 01/30/2023
+ms.topic: overview
 ---
 
 # Printer Interface DLL

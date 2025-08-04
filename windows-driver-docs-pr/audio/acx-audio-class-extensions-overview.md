@@ -12,26 +12,26 @@ This topic provides a high level summary of the ACX Audio Class Extensions.
 
 ### ACX framework is built on top of the Windows Driver Framework
 
-To allow audio drivers to be more reliable and offer the best possible experience for PC users, Audio Class eXtension (ACX) is now available in. ACX defines a Windows Driver Framework (WDF) class extension for the audio domain. For more information about WDF see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md). Many WDF concepts such as WDF IO targets, are available in ACX. For more information about WDF IO targets, see [Introduction to I/O Targets](../wdf/introduction-to-i-o-targets.md).
+To allow audio drivers to be more reliable and offer the best possible experience for PC users, Audio Class eXtension (ACX) is now available in Windows. ACX defines a Windows Driver Framework (WDF) class extension for the audio domain. For more information about WDF see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md). Many WDF concepts such as WDF IO targets, are available in ACX. For more information about WDF IO targets, see [Introduction to I/O Targets](../wdf/introduction-to-i-o-targets.md).
 
 ACX is built using the Kernel Mode Driver Framework (KMDF) and not the User Mode Driver Framework (UMDF) to avoid any latency associated with task-switching multiple times from User to Kernel mode while streaming. Portcls audio drivers, the current legacy model, are WDM, kernel mode based drivers.
 
-The use of the ACX framework makes it easy to create working audio drivers ‘out of the box’. For example, ACX  supports default completion for most of its settings. This makes it easier for the driver to use the correct setting, yet still allows for customization.
+The use of the ACX framework makes it easy to create working audio drivers ‘out of the box’. For example, ACX supports default completion for most of its settings, which makes it easier for the driver to use the correct setting, while still allowing for customization.
 
 The ACX framework exposes audio concepts as WDF objects that driver can interact with (stream, format, etc.). This allows for a consistent programming experience and enables a larger community of audio driver developers.
 
 ### ACX goals
 
-The audio class extensions (ACX) have the following goals.
+The Audio Class eXtensions (ACX) have the following goals:
 
 - Simplify the effort and know-how required to develop simple stand-alone audio drivers.
 - Reduce the amount of code that a 3rd party needs to develop. Fewer lines of code decreases maintenance and makes debugging easier.
-- Allows existing upper user-mode clients (services and apps) to run as is.
+- Allow existing upper user-mode clients (services and apps) to run as is.
 - Simplify the power-pnp management of the audio stack drivers.
-- No impact the overall performance, i.e., no additional/noticeable latency.
+- No negative impacts to overall performance; such as, for example, additional or noticeable latency in processing or delivery of audio.
 - Simplify the effort required to develop multi-stack audio drivers.
 - Allow 3rd party driver to specify the locking mechanism to be used when streaming.
-- Uses the Microsoft component deployment isolation solution that makes drivers/APOs modules self-contained and reusable.
+- Use the Microsoft component deployment isolation solution, which makes drivers/APOs modules both self-contained and reusable.
 
 ### ACX architecture
 
@@ -43,9 +43,9 @@ This diagram illustrates the ACX architecture showing existing user mode apps an
 
 ACX is designed to co-exist with existing audio drivers, to allow for a flexible migration to new ACX drivers.
 
-- Binary compatibility of exiting, unchanged (WDM-based) audio miniport drivers is maintained by existing legacy Windows class drivers. 
+- Binary compatibility of existing, unchanged (WDM-based) audio miniport drivers is maintained by existing legacy Windows class drivers. 
 - Only WaveRT based streaming is currently supported by ACX.
-- Legacy PortCls/Ks and new ACX stacks run side-by-side. Using ACX does not force 3rd party to port their current audio drivers to the new model. As the model offers many advantages, 3rd parties may voluntarily opt to use it for their future audio development.
+- Legacy PortCls/KS and new ACX stacks run side-by-side. Using ACX does not force 3rd party to port their current audio drivers to the new model. As the model offers many advantages, 3rd parties may voluntarily opt to use it for their future audio development.
 
 ## ACX common definitions
 
@@ -57,7 +57,7 @@ ACX is designed to co-exist with existing audio drivers, to allow for a flexible
 
 *Core Circuit* - The circuit in a multi-stack architecture (partial audio path) that gives the identity of the audio endpoint device.
 
-*Element* - A subcomponent of a Circuit or Stream, representing an audio capability of the underline hardware. This could be a Volume, or Mute, or Jack element, or a Module element on a DSP circuit, etc.
+*Element* - A subcomponent of a Circuit or Stream, representing an audio capability of the underlying hardware. This could be a Volume, or Mute, or Jack element, or a Module element on a DSP circuit, etc.
 
 *Endpoint Audio Path* - A single or group of Circuit objects connected together to represent a single audio endpoint. The Circuit objects must come from different device stacks belonging to the same or different drivers.
 
@@ -77,7 +77,7 @@ The use of driver verifier is encouraged for all Windows drivers, including ACX 
 
 It is common for the audio path to go through multiple hardware components handled by different driver stacks to create a complete audio experience.  It is typical for a system to have the DSP, CODEC and AMP functionality implemented by different audio technology vendors.
 
-In a multi-stack architecture without a well-defined standard, each vendor is forced to define its own proprietary interface and communications protocol. It is a goal of ACX to facilitate the development of multi-stack audio drivers by taking ownership of the synchronization between these stacks and providing a simple re-usable pattern for drivers communicate with each other.
+In a multi-stack architecture without a well-defined standard, each vendor is forced to define its own proprietary interface and communications protocol. It is a goal of ACX to facilitate the development of multi-stack audio drivers by taking ownership of the synchronization between these stacks and providing a simple re-usable pattern for drivers to easily communicate with each other.
 
 For more information, see [ACX multi stack cross driver communications](acx-multi-stack.md).
 

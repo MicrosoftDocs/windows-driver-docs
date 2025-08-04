@@ -2,6 +2,7 @@
 title: WDI TLV generator/parser topics
 description: This section includes topics describing the TLV generator and parser shared library
 ms.date: 03/02/2023
+ms.topic: overview
 ---
 
 # WDI TLV generator/parser topics

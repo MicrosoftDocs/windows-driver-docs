@@ -2,6 +2,7 @@
 title: Percent of Camera DShow Bridge Engine Failures
 description: This measure aggregates telemetry from a 30-day sliding window into a percentage of machines that had a camera DShow bridge engine failure.
 ms.date: 03/13/2025
+ms.topic: reference
 ---
 
 # Percent of camera DShow bridge engine failures

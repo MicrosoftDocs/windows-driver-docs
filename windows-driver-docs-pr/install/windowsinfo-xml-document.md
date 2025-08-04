@@ -2,6 +2,7 @@
 title: WindowsInfo XML Document
 description: WindowsInfo XML Document
 ms.date: 06/19/2025
+ms.topic: reference
 ---
 
 # WindowsInfo XML Document

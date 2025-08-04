@@ -5,6 +5,7 @@ keywords:
 - TraceView WDK , window
 - Trace Session List WDK
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # Trace Session List

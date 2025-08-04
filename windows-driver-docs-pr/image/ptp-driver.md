@@ -2,6 +2,7 @@
 title: PTP Driver
 description: PTP Driver
 ms.date: 08/09/2017
+ms.topic: overview
 ---
 
 # PTP Driver

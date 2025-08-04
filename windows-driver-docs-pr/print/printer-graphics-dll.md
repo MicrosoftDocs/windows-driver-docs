@@ -5,6 +5,7 @@ keywords:
 - GDI printer drivers WDK ,
 - DLLs WDK print
 ms.date: 01/30/2023
+ms.topic: overview
 ---
 
 # Printer Graphics DLL

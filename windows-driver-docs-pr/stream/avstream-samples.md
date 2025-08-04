@@ -5,6 +5,7 @@ keywords:
 - AVStream WDK , samples
 - sample minidrivers WDK AVStream
 ms.date: 06/07/2021
+ms.topic: example-scenario
 ---
 
 # AVStream samples

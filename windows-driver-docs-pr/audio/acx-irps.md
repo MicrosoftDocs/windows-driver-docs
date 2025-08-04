@@ -3,6 +3,7 @@ title: ACX IO Request Packet IRPs
 description: This topic provides a high level summary of the ACX IO request packet IRPs.
 ms.date: 09/29/2023
 ms.localizationpriority: medium
+ms.topic: concept-article
 ---
 
 # ACX IO request packet IRPs

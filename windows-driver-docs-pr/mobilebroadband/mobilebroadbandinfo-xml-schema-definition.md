@@ -2,6 +2,7 @@
 title: MobileBroadbandInfo XML Schema Definition
 description: MobileBroadbandInfo XML schema definition
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # MobileBroadbandInfo XML schema definition

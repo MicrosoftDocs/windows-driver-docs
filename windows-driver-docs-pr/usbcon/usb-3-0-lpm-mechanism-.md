@@ -2,6 +2,7 @@
 title: USB 3.0 link power management (LPM) mechanism
 description: This topic describes the USB 3.0 LPM mechanism. There is an addendum to the official USB 2.0 Specification which defines LPM for newer USB 2.0 hardware.
 ms.date: 01/17/2024
+ms.topic: concept-article
 ---
 
 # USB 3.0 link power management mechanism

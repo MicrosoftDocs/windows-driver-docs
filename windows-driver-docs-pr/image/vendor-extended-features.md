@@ -2,6 +2,7 @@
 title: Vendor-Extended Features
 description: Vendor-Extended Features
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Vendor-Extended Features

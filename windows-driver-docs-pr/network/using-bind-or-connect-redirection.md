@@ -24,7 +24,7 @@ Changing the local address and port of a flow is only supported in the bind-redi
 
 ### Layers Used for Redirection
 
-Callout drivers can preform redirection at the following layers, which are called "redirect layers":
+Callout drivers can perform redirection at the following layers, which are called "redirect layers":
 
 -   FWPM\_LAYER\_ALE\_BIND\_REDIRECT\_V4 (FWPS\_LAYER\_ALE\_BIND\_REDIRECT\_V4)
 

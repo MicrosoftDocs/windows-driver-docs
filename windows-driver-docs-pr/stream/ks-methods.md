@@ -7,6 +7,7 @@ keywords:
 - methods WDK kernel streaming
 - method sets WDK kernel streaming
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # KS Methods

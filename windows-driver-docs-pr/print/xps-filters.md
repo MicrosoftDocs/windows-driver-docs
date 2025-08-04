@@ -9,6 +9,7 @@ keywords:
 - filters WDK XPS
 - IPrintPipelineFilter
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # XPS Filters

@@ -2,6 +2,7 @@
 title: WIA-TWAIN Driver Design Considerations
 description: WIA-TWAIN Driver Design Considerations
 ms.date: 04/20/2017
+ms.topic: design-pattern
 ---
 
 # WIA-TWAIN Driver Design Considerations

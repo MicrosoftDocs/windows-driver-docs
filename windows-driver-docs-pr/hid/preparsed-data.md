@@ -5,6 +5,7 @@ keywords:
 - parsed data WDK HID
 - preparsed data WDK HID
 ms.date: 09/18/2024
+ms.topic: concept-article
 ---
 
 # Preparsed Data

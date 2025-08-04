@@ -2,6 +2,7 @@
 description: Resources (Windows Portable Device)
 title: Resources
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Resources

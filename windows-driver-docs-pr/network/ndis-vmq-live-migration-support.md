@@ -2,6 +2,7 @@
 title: NDIS VMQ Live Migration Support
 description: NDIS VMQ Live Migration Support
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # NDIS VMQ Live Migration Support

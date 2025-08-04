@@ -2,6 +2,7 @@
 title: NIC Switches
 description: NIC Switches
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # NIC Switches

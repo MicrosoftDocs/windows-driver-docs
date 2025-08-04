@@ -2,6 +2,7 @@
 title: Installation Requirements for Network Protocols
 description: Installation Requirements for Network Protocols
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Installation Requirements for Network Protocols

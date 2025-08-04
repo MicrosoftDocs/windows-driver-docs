@@ -2,6 +2,7 @@
 title: Label Token
 description: Label Token
 ms.date: 01/05/2018
+ms.topic: reference
 ---
 
 # Label Token

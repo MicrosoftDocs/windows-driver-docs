@@ -4,6 +4,7 @@ description: The NdisQueryMdl macro retrieves the buffer length, and optionally 
 ms.date: 07/18/2017
 keywords:
  - NdisQueryMdl macro Network Drivers Starting with Windows Vista
+ms.topic: reference
 ---
 
 # NdisQueryMdl macro

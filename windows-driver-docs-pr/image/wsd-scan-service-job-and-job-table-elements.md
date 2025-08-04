@@ -2,6 +2,7 @@
 title: WSD Scan Service Job and Job Table Elements
 description: WSD Scan Service Job and Job Table Elements
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # WSD Scan Service Job and Job Table Elements

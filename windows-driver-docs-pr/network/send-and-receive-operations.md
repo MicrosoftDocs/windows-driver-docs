@@ -11,6 +11,7 @@ keywords:
 - NET_BUFFER_LIST
 - multiple NET_BUFFER_LIST structures WDK networki
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Send and Receive Operations

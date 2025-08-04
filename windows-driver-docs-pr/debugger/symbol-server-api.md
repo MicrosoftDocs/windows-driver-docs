@@ -3,6 +3,7 @@ title: Symbol and Image File APIs
 description: Symbol and Image File APIs
 keywords: ["symbol servers, Symbol and Image File APIs", "SymbolServerXxx routines", "DbgHelp interface", "ImageHlp interface", "dbghelp.chm (Debug Help Library documentation), Symbol and Image File APIs", "Debug Help Library documentation (dbghelp.chm), Symbol and Image File APIs"]
 ms.date: 12/27/2022
+ms.topic: reference
 ---
 
 # Symbol and Image File APIs

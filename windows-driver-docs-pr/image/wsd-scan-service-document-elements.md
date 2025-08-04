@@ -2,6 +2,7 @@
 title: WSD Scan Service Document Elements
 description: WSD Scan Service Document Elements
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # WSD Scan Service Document Elements

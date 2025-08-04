@@ -4,6 +4,7 @@ description: ValueType Template Directive
 keywords:
 - ValueType directive WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # ValueType Template Directive

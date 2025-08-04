@@ -2,6 +2,7 @@
 title: Locale
 description: Locale
 ms.date: 10/10/2023
+ms.topic: reference
 ---
 
 # Locale

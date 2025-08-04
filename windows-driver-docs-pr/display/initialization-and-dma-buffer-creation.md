@@ -4,6 +4,7 @@ description: Initialization and DMA Buffer Creation
 keywords:
 - DMA buffers WDK display , creating for GDI hardware acceleration
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initialization and DMA Buffer Creation

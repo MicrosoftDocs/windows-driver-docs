@@ -1,7 +1,7 @@
 ---
 title: Reporting Wake Reason Status Indication Capabilities
 description: Reporting Wake Reason Status Indication Capabilities
-ms.date: 04/20/2017
+ms.date: 07/23/2025
 ms.topic: how-to
 ---
 
@@ -47,9 +47,9 @@ When NDIS calls the driver's [*MiniportInitializeEx*](/windows-hardware/drivers/
 
     -   The miniport driver sets the **MediaSpecificWakeUpEvents** to the media-specific wake-up events that the network adapter supports. These events include generating a wake-up event when the 802.11 adapter becomes disassociated with the AP.
 
-2.  The miniport driver initializes an [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure and sets the**PowerManagementCapabilitiesEx** member to the address of the initialized [**NDIS\_PM\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure.
+2.  The miniport driver initializes an [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) structure and sets the**PowerManagementCapabilitiesEx** member to the address of the initialized [**NDIS\_PM\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure.
 
-3.  The miniport driver calls the [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function to register its power management capabilities. When the miniport driver calls this function, it sets the *MiniportAttributes* parameter to the address of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure.
+3.  The miniport driver calls the [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function to register its power management capabilities. When the miniport driver calls this function, it sets the *MiniportAttributes* parameter to the address of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) structure.
 
 The method that is used by miniport drivers to report the wake reason status indication capabilities is based on the NDIS 6.20 method for reporting power management capabilities. For more information about this method, see [Reporting Power Management Capabilities](reporting-power-management-capabilities.md).
 

@@ -2,6 +2,7 @@
 title: Container IDs for PCI Express Devices
 description: Container IDs for PCI Express Devices
 ms.date: 11/29/2021
+ms.topic: concept-article
 ---
 
 # Container IDs for PCI Express Devices

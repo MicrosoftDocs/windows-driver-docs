@@ -2,6 +2,7 @@
 title: Fast Roaming in Windows 10 with 802.11k, 802.11v, and 802.11r
 description: Learn how fast roaming with 802.11k, 802.11v, and 802.11r improves WLAN performance in Windows 10. Discover benefits and requirements.
 ms.date: 05/15/2025
+ms.topic: concept-article
 ---
 
 # Fast Roaming in Windows 10 with 802.11k, 802.11v, and 802.11r

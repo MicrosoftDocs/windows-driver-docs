@@ -5,6 +5,7 @@ keywords:
 - Print Schema WDK
 - printer drivers WDK , Print Schema
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print Schema

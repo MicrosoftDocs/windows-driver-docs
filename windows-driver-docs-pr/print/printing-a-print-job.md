@@ -12,6 +12,7 @@ keywords:
 - bidi communication WDK print
 - printing print jobs WDK
 ms.date: 09/08/2022
+ms.topic: how-to
 ---
 
 # Print a print job

@@ -2,6 +2,7 @@
 title: Camera Microdriver Sample
 description: Camera Microdriver Sample
 ms.date: 03/28/2023
+ms.topic: example-scenario
 ---
 
 # Camera Microdriver Sample

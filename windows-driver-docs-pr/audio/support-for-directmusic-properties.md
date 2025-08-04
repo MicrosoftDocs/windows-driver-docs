@@ -9,6 +9,7 @@ keywords:
 - IKsControl interface
 - property-set GUIDs WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Support for DirectMusic Properties

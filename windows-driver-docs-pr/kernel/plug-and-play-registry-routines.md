@@ -3,6 +3,7 @@ title: Plug and Play Registry Routines
 description: Plug and Play Registry Routines
 keywords: ["registry WDK kernel , Plug and Play", "driver registry information WDK kernel , Plug and Play", "Plug and Play WDK kernel , registry routines", "hardware keys WDK kernel", "software keys WDK kernel", "IoOpenDeviceRegistryKey", "IoOpenDeviceInterfaceRegistryKey", "PnP WDK kernel , registry routines"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Plug and Play Registry Routines

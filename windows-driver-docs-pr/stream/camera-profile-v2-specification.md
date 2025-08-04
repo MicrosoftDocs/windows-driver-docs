@@ -2,6 +2,7 @@
 title: Camera Profile V2 Developer Specification
 description: This article provides an overview of the Camera Profile V2 developer specification.
 ms.date: 06/08/2023
+ms.topic: concept-article
 ---
 
 # Camera Profile V2 developer specification

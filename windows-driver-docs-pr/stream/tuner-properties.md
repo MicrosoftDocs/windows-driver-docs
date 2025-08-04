@@ -7,6 +7,7 @@ keywords:
 - radio tuner properties WDK video capture
 - TV tuner properties WDK video capture
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Tuner Properties

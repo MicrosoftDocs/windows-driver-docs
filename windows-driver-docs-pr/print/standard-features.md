@@ -5,6 +5,7 @@ keywords:
 - printer features WDK Unidrv , standard
 - standard features WDK Unidrv
 ms.date: 12/19/2024
+ms.topic: concept-article
 ---
 
 # Standard features

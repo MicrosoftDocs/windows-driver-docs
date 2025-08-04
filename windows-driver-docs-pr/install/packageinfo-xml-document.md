@@ -2,6 +2,7 @@
 title: PackageInfo XML Document
 description: PackageInfo XML Document
 ms.date: 06/19/2025
+ms.topic: reference
 ---
 
 # PackageInfo XML Document

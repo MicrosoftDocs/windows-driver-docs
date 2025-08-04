@@ -9,6 +9,7 @@ keywords:
 - GDL WDK , constructs
 - parser WDK GDL , handling constructs
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Syntactical and Logical Constructs in GDL

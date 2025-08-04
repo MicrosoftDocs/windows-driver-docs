@@ -3,6 +3,7 @@ title: "TTD Module Objects"
 description: "This section describes the module model objects associated with time travel debugging."
 keywords: ["TTD Module Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 11/15/2024
+ms.topic: reference
 ---
 
 # TTD Module Objects

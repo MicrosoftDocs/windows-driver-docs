@@ -6,6 +6,7 @@ keywords:
 - extended format WDK Windows 7 display , XR layout
 - XR layout WDK Windows 7 display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # XR Layout

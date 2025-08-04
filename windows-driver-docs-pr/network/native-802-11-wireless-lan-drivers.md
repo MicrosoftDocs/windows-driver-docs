@@ -4,6 +4,7 @@ description: Design guide and reference topics for Native 802.11 Wireless LAN dr
 keywords:
 - Native 802.11 Wireless LAN Drivers WDK, Native Wi-Fi network drivers, Native 802.11 wlan drivers
 ms.date: 03/16/2022
+ms.topic: concept-article
 ---
 
 # Native 802.11 Wireless LAN Drivers

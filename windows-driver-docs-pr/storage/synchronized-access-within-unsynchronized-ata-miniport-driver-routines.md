@@ -6,6 +6,7 @@ keywords:
 - synchronization WDK ATA Port driver
 - unsynchronized processing WDK ATA Port driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Synchronized Access within ATA Miniport Driver Routines

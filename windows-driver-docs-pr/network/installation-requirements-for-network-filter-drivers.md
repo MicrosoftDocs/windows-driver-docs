@@ -2,6 +2,7 @@
 title: Installation Requirements for Network Filter Drivers
 description: Installation Requirements for Network Filter Drivers
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Installation Requirements for Network Filter Drivers

@@ -3,6 +3,7 @@ title: ACX audio data formats
 description: This topic describes how ACX format types are used to help a driver to track, manage and compare signal data formats.  
 ms.date: 03/15/2024
 ms.localizationpriority: medium
+ms.topic: concept-article
 ---
 
 # ACX audio data formats and data format lists

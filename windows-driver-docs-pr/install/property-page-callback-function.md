@@ -9,6 +9,7 @@ keywords:
 - PSPCB_CREATE
 - PSPCB_RELEASE
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Property Page Callback Function

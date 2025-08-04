@@ -2,6 +2,7 @@
 title: Native Debugger Objects in JavaScript Extensions - Debugger Object Details
 description: Native debugger objects represent various constructs of the debugger environment. This topic describes additional details about the native debugger objects in JavaScript extensions.
 ms.date: 04/01/2021
+ms.topic: concept-article
 ---
 
 # Native Debugger Objects in JavaScript Extensions - Debugger Object Details

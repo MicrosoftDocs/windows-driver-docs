@@ -2,6 +2,7 @@
 title: SMP Behavior and Interaction (Windows Drivers)
 description: Learn more about SMP Behavior and Interaction.
 ms.date: 11/21/2024
+ms.topic: concept-article
 ---
 
 # SMP Behavior and Interaction

@@ -2,6 +2,7 @@
 title: Compatible ID
 description: A compatible ID is a vendor-defined identification string that Windows uses to match a device to an INF file.
 ms.date: 04/08/2022
+ms.topic: concept-article
 ---
 
 # Compatible ID

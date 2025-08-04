@@ -5,6 +5,7 @@ keywords:
 - minidrivers WDK Unidrv
 - version numbers WDK Unidrv
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Unidrv Printer Minidriver Versioning

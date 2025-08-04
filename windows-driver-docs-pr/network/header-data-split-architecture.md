@@ -5,6 +5,7 @@ keywords:
 - header-data split WDK , architecture
 - header-data split providers WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Header-Data Split Architecture

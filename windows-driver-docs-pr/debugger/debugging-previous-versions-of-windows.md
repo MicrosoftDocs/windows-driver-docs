@@ -2,6 +2,7 @@
 title: Windows 7 Debugging Tools for Windows
 description: Learn about debugging previous versions of Windows. See topics for debugging different Windows versions and view additional available information.
 ms.date: 12/09/2022
+ms.topic: overview
 ---
 
 # Windows 7 Debugging Tools for Windows

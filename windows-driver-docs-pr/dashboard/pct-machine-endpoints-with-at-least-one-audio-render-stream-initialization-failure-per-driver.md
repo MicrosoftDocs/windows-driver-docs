@@ -2,6 +2,7 @@
 title: Percent of machine endpoints with at least one audio render stream initialization failure per driver
 description: The measure will track the percentage of machine endpoints with at least one audio stream initialization render failure.
 ms.date: 11/07/2022
+ms.topic: concept-article
 ---
 
 # Percent of machine endpoints with at least one audio render stream initialization failure per driver

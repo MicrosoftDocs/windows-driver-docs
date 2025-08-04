@@ -3,6 +3,7 @@ title: D1Latency, D2Latency, and D3Latency
 description: D1Latency, D2Latency, and D3Latency
 keywords: ["D1Latency", "D2Latency", "D3Latency"]
 ms.date: 06/16/2017
+ms.topic: reference
 ---
 
 # D1Latency, D2Latency, and D3Latency

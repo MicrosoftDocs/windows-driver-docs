@@ -8,6 +8,7 @@ keywords:
 - VPEs WDK video capture
 - video port extensions WDK video capture
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Video Port-Based Capture

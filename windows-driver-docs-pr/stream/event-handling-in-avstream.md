@@ -6,6 +6,7 @@ keywords:
 - AVStream events WDK
 - automation tables WDK AVStream
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Event Handling in AVStream

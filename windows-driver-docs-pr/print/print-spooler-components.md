@@ -6,6 +6,7 @@ keywords:
 - spooler customizing WDK print
 - customizing print spooler components WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Print Spooler Components

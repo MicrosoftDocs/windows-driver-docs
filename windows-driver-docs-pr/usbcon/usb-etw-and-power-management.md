@@ -1,7 +1,8 @@
 ---
 description: This article provides a brief overview about using Event Tracing for Windows (ETW) to examine USB selective suspend state and identifying system energy efficiency problems by using the Windows PowerCfg utility.
 title: USB ETW and Power Management
-ms.date: 12/02/2022
+ms.date: 07/29/2025
+ms.topic: overview
 ---
 
 # USB ETW and power management
@@ -12,7 +13,7 @@ If a USB device driver supports [USB Selective Suspend](usb-selective-suspend.md
 
 You can use USB ETW to examine USB devices and their drivers to validate whether they successfully go into selective suspend. Inspect your USB devices and drivers to ensure that they properly support selective suspend before you provide the devices to end users.
 
-To help you identify system energy efficiency problems, we enhanced the Windows PowerCfg utility in Windows 7. PowerCfg is a command-line utility that is included with Windows that enables power policy enumeration and configuration. The enhancements to PowerCfg for determining energy efficiency problems are exercised by using the **[/energy](/windows-hardware/design/device-experiences/powercfg-command-line-options#energy)** option. These enhancements enable PowerCfg to inspect the system for common energy efficiency problems and generate an HTML report that contains any issues that it found.
+Use the Windows PowerCfg utility to help you identify system energy efficiency problems. PowerCfg is a command-line utility that is included with Windows that enables power policy enumeration and configuration. The enhancements to PowerCfg for determining energy efficiency problems are exercised by using the **[/energy](/windows-hardware/design/device-experiences/powercfg-command-line-options#energy)** option. These enhancements enable PowerCfg to inspect the system for common energy efficiency problems and generate an HTML report that contains any issues that it found.
 
 PowerCfg detects various energy efficiency problems including:
 
@@ -30,12 +31,10 @@ To generate a power efficiency diagnostics report using the PowerCfg utility, ru
 powercfg /energy
 ```
 
-For details, see [Guided Help: Get a detailed Power Efficiency Diagnostics Report](https://support.microsoft.com/topic/guided-help-get-a-detailed-power-efficiency-diagnostics-report-for-your-computer-in-windows-7-3f6ce138-fc04-7648-089a-854bcf332810).
-
-For more about Windows power management and the PowerCfg tool, including the **[/energy](/windows-hardware/design/device-experiences/powercfg-command-line-options#energy)** option, see [Powercfg Command-Line Options](/windows-hardware/design/device-experiences/powercfg-command-line-options).
+For more about Windows power management and the PowerCfg tool, including the **[/energy](/windows-hardware/design/device-experiences/powercfg-command-line-options#energy)** option, see [PowerCfg command-line options](/windows-hardware/design/device-experiences/powercfg-command-line-options).
 
 ## Related articles
 
-- [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)
-- [Guided Help: Get a detailed Power Efficiency Diagnostics Report](https://support.microsoft.com/topic/guided-help-get-a-detailed-power-efficiency-diagnostics-report-for-your-computer-in-windows-7-3f6ce138-fc04-7648-089a-854bcf332810)
-- [Powercfg Command-Line Options](/windows-hardware/design/device-experiences/powercfg-command-line-options)
+- [USB event tracing for Windows](usb-event-tracing-for-windows.md)
+- [PowerCfg command-line options](/windows-hardware/design/device-experiences/powercfg-command-line-options)
+- [What does it mean if Windows isn't supported?](https://support.microsoft.com/windows/what-does-it-mean-if-windows-isn-t-supported-08f3b92d-7539-671e-1452-2e71cdad18b5)

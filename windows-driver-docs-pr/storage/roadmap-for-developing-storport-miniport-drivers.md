@@ -2,6 +2,7 @@
 title: Roadmap for Developing Storport Miniport Drivers
 description: Roadmap for Developing Storport Miniport Drivers
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Roadmap for Developing Storport Miniport Drivers

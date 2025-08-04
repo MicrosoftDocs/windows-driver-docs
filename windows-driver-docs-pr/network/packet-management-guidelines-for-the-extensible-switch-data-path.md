@@ -2,6 +2,7 @@
 title: Packet Management Guidelines for the Extensible Switch Data Path
 description: Packet Management Guidelines for the Extensible Switch Data Path
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # Packet Management Guidelines for the Extensible Switch Data Path

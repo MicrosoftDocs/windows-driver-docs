@@ -9,6 +9,7 @@ keywords:
 - events WDK printer
 - print queues WDK, printer change notifications
 ms.date: 09/08/2022
+ms.topic: best-practice
 ---
 
 # Support printer change notifications

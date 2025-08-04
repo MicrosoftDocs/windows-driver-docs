@@ -3,6 +3,7 @@ title: "Command Tokens"
 description: "Command Tokens"
 keywords: ["Command Tokens", "WinDbg", "Windows Debugging"]
 ms.date: 01/23/2024
+ms.topic: reference
 ---
 
 # Command Tokens

@@ -5,6 +5,7 @@ keywords:
 - printer interface DLL WDK, functions
 - functions WDK printer interface DLL
 ms.date: 01/27/2023
+ms.topic: reference
 ---
 
 # Functions defined by printer interface DLLs

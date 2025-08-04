@@ -3,6 +3,7 @@ title: Device Tree
 description: Provides information about the device tree.
 keywords: ["devnodes WDK PnP", "nonpresent devices WDK", "PnP WDK kernel , device trees", "Plug and Play WDK kernel , device trees", "removal relations WDK PnP", "ejection relations WDK PnP", "device trees WDK PnP", "trees WDK PnP", "device nodes WDK PnP", "child devices WDK PnP", "hierarchy WDK PnP", "relationships WDK PnP"]
 ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
 # Device tree

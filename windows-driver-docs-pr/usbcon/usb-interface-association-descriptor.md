@@ -2,6 +2,7 @@
 title: USB Interface Association Descriptor
 description: USB interface association descriptor (IAD) allows the device to group interfaces that belong to a function.
 ms.date: 01/17/2024
+ms.topic: concept-article
 ---
 
 # USB interface association descriptor

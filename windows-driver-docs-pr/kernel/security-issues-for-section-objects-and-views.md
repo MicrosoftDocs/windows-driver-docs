@@ -3,6 +3,7 @@ title: Security Issues for Section Objects and Views
 description: Security issues for section objects and views
 keywords: ["memory sections WDK kernel", "section objects WDK kernel", "views WDK memory section", "security WDK memory section", "protocols WDK memory section"]
 ms.date: 06/16/2017
+ms.topic: best-practice
 ---
 
 # Security issues for section objects and views

@@ -7,6 +7,7 @@ keywords:
 - simultaneous printer options WDK Unidrv
 - combining printer options WDK Unidrv
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Option Constraints

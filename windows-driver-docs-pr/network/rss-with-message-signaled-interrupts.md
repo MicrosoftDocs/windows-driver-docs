@@ -8,6 +8,7 @@ keywords:
 - MSIs WDK networking , RSS
 - MSI-X WDK networking , RSS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # RSS with Message Signaled Interrupts

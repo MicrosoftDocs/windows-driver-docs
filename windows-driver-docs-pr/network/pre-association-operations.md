@@ -5,6 +5,7 @@ keywords:
 - IHV Extensions DLL WDK Native 802.11 , pre-association operations
 - Native 802.11 IHV Extensions DLL WDK , pre-association operations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Pre-Association Operations Topics

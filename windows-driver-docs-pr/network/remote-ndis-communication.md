@@ -2,6 +2,7 @@
 title: Remote NDIS Communication
 description: Learn about remote NDIS communication.
 ms.date: 12/20/2024
+ms.topic: overview
 ---
 
 # Remote NDIS communication

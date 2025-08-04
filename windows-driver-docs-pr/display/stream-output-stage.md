@@ -2,6 +2,7 @@
 title: Stream Output Stage
 description: Stream Output Stage
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Stream Output Stage

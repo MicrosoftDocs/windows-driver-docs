@@ -5,6 +5,7 @@ keywords:
 - Print Tickets WDK , Unidrv
 - Print Tickets WDK , PScript5
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print Ticket Support in Unidrv and PScript5 Print Drivers

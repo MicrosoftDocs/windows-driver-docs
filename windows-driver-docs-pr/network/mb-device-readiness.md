@@ -2,7 +2,9 @@
 title: MB Device Readiness
 description: MB Device Readiness
 ms.date: 03/01/2021
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # MB Device Readiness

@@ -2,6 +2,7 @@
 title: PackageInfo XML Elements List
 description: PackageInfo XML elements list
 ms.date: 07/05/2019
+ms.topic: reference
 ---
 
 # PackageInfo XML elements list

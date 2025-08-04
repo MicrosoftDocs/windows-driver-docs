@@ -5,6 +5,7 @@ keywords:
 - security WDK file systems , proxy operations
 - proxy operations WDK file systems
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Proxy Operations in File System Filter Drivers

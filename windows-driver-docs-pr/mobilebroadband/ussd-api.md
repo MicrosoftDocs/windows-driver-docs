@@ -2,6 +2,7 @@
 title: USSD API
 description: USSD API
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # USSD API

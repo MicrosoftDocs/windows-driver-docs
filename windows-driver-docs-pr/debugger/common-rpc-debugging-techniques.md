@@ -3,6 +3,7 @@ title: Common RPC Debugging Techniques
 description: Common RPC Debugging Techniques
 keywords: ["RPC debugging, common techniques"]
 ms.date: 09/13/2024
+ms.topic: troubleshooting
 ---
 
 # Common RPC Debugging Techniques

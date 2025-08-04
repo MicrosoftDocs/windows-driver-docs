@@ -2,6 +2,7 @@
 title: Exit Codes for TAEF
 description: Exit Codes for TAEF
 ms.date: 04/20/2017
+ms.topic: error-reference
 ---
 
 # Exit Codes for TAEF

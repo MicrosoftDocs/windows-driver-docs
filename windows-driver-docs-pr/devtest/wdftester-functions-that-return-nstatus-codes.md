@@ -2,6 +2,7 @@
 title: KMDF Functions that Return NSTATUS Codes
 description: KMDF Functions that Return NSTATUS Codes
 ms.date: 04/20/2017
+ms.topic: error-reference
 ---
 
 # KMDF Functions that Return NSTATUS Codes

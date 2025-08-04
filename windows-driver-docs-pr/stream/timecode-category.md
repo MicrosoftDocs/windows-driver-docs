@@ -6,6 +6,7 @@ keywords:
 - Timecode category WDK video capture
 - PINNAME_VIDEO_TIMECODE
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Timecode Category

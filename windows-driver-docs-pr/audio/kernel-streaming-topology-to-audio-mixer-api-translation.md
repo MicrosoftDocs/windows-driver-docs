@@ -15,6 +15,7 @@ keywords:
 - source pins WDK audio
 - KS pins WDK audio , translating
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Kernel Streaming Topology to Audio Mixer API Translation

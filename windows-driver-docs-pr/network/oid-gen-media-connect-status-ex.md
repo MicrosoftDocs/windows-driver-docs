@@ -2,7 +2,7 @@
 title: OID_GEN_MEDIA_CONNECT_STATUS_EX
 ms.topic: reference
 description: As a query, the OID_GEN_MEDIA_CONNECT_STATUS_EX OID returns the connection state of an interface. Windows Vista and laterSupported. NDIS 6.0 and later miniport driversNot requested. For NDIS interface providers only.
-ms.date: 08/08/2017
+ms.date: 07/23/2025
 keywords: 
  -OID_GEN_MEDIA_CONNECT_STATUS_EX Network Drivers Starting with Windows Vista
 ---
@@ -26,7 +26,7 @@ If the query succeeds, the interface provider returns NDIS\_STATUS\_SUCCESS, and
 
 Miniport drivers supply the media connect status during initialization and provide updates with status indications.
 
-To specify the connection state in a miniport driver, set the **MediaConnectState** member of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure that the miniport driver passes to the [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function.
+To specify the connection state in a miniport driver, set the **MediaConnectState** member of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) structure that the miniport driver passes to the [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function.
 
 ## Requirements
 
@@ -46,7 +46,7 @@ To specify the connection state in a miniport driver, set the **MediaConnectStat
 ## See also
 
 
-[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes)
+[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes)
 
 [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes)
 

@@ -2,6 +2,7 @@
 title: Consumables Section
 description: Consumables Section
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # Consumables Section

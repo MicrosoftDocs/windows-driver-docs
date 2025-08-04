@@ -5,6 +5,7 @@ keywords:
 - handles WDK file systems
 - security WDK file systems , minimizing threats
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # Handle Management

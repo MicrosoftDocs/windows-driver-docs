@@ -10,6 +10,7 @@ keywords:
 - still image capturing WDK video capture
 - cameras WDK video capture
 ms.date: 06/19/2020
+ms.topic: concept-article
 ---
 
 # USB-based camera with a capture button

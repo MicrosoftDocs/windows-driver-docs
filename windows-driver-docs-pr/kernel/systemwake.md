@@ -3,6 +3,7 @@ title: SystemWake
 description: SystemWake
 keywords: ["SystemWake"]
 ms.date: 06/16/2017
+ms.topic: reference
 ---
 
 # SystemWake

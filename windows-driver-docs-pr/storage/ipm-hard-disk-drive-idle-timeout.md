@@ -2,6 +2,7 @@
 title: Idle Power Management Policy
 description: Idle Power Management Timeout
 ms.date: 06/27/2024
+ms.topic: concept-article
 ---
 
 # Idle Power Management

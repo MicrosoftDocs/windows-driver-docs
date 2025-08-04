@@ -7,6 +7,7 @@ keywords:
 - GPD files WDK XPSDrv
 - PPD files WDK XPSDrv
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # Configuration Modules Based on GPD or PPD Files

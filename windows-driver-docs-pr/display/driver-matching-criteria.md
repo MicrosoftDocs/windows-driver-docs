@@ -2,6 +2,7 @@
 title: Driver Matching Criteria
 description: This topic describes the elements that are used to choose the best match on a driver.
 ms.date: 03/11/2022
+ms.topic: concept-article
 ---
 
 # Driver matching criteria

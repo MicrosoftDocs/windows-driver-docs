@@ -4,6 +4,7 @@ description: Sample Rendering Plug-Ins
 keywords:
 - rendering plug-ins WDK print , samples
 ms.date: 01/30/2023
+ms.topic: reference
 ---
 
 # Sample Rendering Plug-Ins

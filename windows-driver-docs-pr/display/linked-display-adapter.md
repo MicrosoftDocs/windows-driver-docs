@@ -2,6 +2,7 @@
 title: Linked Display Adapter
 description: Each physical adapter in a linked display adapter (LDA) link can support GpuMmu or IoMmu or both addressing modes independently.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Linked display adapter

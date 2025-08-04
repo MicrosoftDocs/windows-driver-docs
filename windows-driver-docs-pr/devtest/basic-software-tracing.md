@@ -2,6 +2,7 @@
 title: Basic Software Tracing
 description: Basic Software Tracing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Basic Software Tracing

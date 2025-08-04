@@ -6,6 +6,7 @@ keywords:
 - schema extensions WDK WSD
 - driver-specific queries WDK printer
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WSD Schema Extensions for Driver-Specific Queries

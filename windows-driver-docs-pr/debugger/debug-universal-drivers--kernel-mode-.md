@@ -1349,7 +1349,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 ## <span id="viewingcallstacks"></span>Section 9: View call stacks
 
 
-*In Section 9, you'll view call stacks to examine caller/calle code.*
+*In Section 9, you'll view call stacks to examine caller/callee code.*
 
 The call stack is the chain of function calls that have led to the current location of the program counter. The top function on the call stack is the current function, and the next function is the function that called the current function, and so on.
 

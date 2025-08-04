@@ -2,6 +2,7 @@
 title: Optional Flatbed Item Properties
 description: Optional Flatbed Item Properties
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Optional Flatbed Item Properties

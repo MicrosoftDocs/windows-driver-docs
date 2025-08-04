@@ -3,6 +3,7 @@ title: NT Device Names
 description: NT Device Names
 keywords: ["NT device names WDK kernel", "device objects WDK kernel , named", "named device objects WDK kernel", "device names WDK kernel", "non-WDM driver device names WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # NT Device Names

@@ -8,6 +8,7 @@ keywords:
 - GDL WDK , directives
 - directives WDK GDL , preprocessor directives
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Source Files

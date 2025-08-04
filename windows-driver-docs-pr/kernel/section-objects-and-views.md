@@ -3,6 +3,7 @@ title: Section Objects and Views
 description: Provides information about section objects and views.
 keywords: ["memory management WDK kernel , section objects", "memory management WDK kernel , shared memory", "shared memory WDK kernel", "section objects WDK kernel", "memory sections WDK kernel", "sharing memory address space", "views WDK memory section"]
 ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
 # Section objects and views

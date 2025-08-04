@@ -11,6 +11,7 @@ keywords:
 - tracing WDK , DTrace
 - trace message format files WDK
 ms.date: 12/12/2024
+ms.topic: concept-article
 ---
 
 # DTrace on Windows

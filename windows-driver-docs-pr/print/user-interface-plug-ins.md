@@ -11,6 +11,7 @@ keywords:
 - PostScript Printer Driver WDK print , user interface plug-ins
 - UI plug-ins WDK print
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # User Interface Plug-Ins

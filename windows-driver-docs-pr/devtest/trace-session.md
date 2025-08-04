@@ -13,6 +13,7 @@ keywords:
 - process trace sessions WDK
 - reserved trace sessions WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Trace Session

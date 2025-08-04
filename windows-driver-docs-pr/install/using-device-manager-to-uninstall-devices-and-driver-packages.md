@@ -45,4 +45,4 @@ Also be aware that Windows Update may also reinstall drivers if it detects that 
 
 ## Related topics
 
-[Deleting a Driver Package from the Driver Store](./how-devices-and-driver-packages-are-uninstalled.md#deleting-a-driver-package-from-the-driver-store)
+[Delete a Driver Package from the Driver Store](./how-devices-and-driver-packages-are-uninstalled.md#delete-a-driver-package-from-the-driver-store)

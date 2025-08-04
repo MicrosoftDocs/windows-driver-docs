@@ -15,6 +15,7 @@ keywords:
 - set operations WDK kernel streaming
 - get operations WDK kernel streaming
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # KS Properties, Events, and Methods

@@ -2,6 +2,7 @@
 title: Core Driver Sample
 description: Core Driver Sample
 ms.date: 01/27/2023
+ms.topic: example-scenario
 ---
 
 # Core Driver Sample

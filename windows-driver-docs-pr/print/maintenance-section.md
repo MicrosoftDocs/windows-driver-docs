@@ -2,6 +2,7 @@
 title: Maintenance Section
 description: Maintenance Section
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Maintenance Section

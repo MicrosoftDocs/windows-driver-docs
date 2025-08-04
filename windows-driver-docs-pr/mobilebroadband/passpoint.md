@@ -2,6 +2,7 @@
 title: Passpoint
 description: Learn how to use Passpoint (Hotspot 2.0) in Windows to create an encrypted connection between the client and the access point.
 ms.date: 01/31/2025
+ms.topic: concept-article
 ---
 
 # Passpoint

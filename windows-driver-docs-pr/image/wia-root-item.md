@@ -2,6 +2,7 @@
 title: WIA Root Item
 description: WIA Root Item
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Root Item

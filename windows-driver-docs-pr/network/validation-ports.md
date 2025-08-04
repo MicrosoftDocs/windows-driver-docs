@@ -2,6 +2,7 @@
 title: Validation Ports
 description: Validation Ports
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Validation Ports

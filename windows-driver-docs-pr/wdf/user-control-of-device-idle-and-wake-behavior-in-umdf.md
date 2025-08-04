@@ -9,6 +9,7 @@ keywords:
 - wake-up capabilities WDK UMDF
 - wake-up capabilities WDK UMDF , user control
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # User Control of Device Idle and Wake Behavior in UMDF

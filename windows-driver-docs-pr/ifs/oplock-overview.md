@@ -5,6 +5,7 @@ keywords:
 - oplocks, WDK, Windows Driver Kit, Windows, driver
 - opportunistic locks, file system, file server, network redirector
 ms.date: 09/23/2024
+ms.topic: concept-article
 ---
 
 # Oplocks and network redirectors

@@ -2,6 +2,7 @@
 title: Graphics Kernel Performance Improvements
 description: To help evaluate graphics hardware performance, Windows Display Driver Model (WDDM) 1.3 and later drivers can optionally provide accurate timing information for API calls that are processed by the GPU. This capability is new starting with Windows 8.1.
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Graphics kernel performance improvements

@@ -5,6 +5,7 @@ keywords:
 - templates WDK GDL , data types
 - data types WDK GDL , problems with template data types
 ms.date: 04/20/2017
+ms.topic: troubleshooting-known-issue
 ---
 
 # GDL Template Data Type Issues

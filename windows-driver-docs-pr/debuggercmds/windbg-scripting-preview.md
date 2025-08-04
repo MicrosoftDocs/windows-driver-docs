@@ -3,6 +3,7 @@ title: "WinDbg - Scripting Menu"
 description: "This section describes how to use scripting in the WinDbg debugger."
 keywords: ["Scripting Menu", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/20/2020
+ms.topic: how-to
 ---
 
 # WinDbg - Scripting Menu

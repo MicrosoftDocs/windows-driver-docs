@@ -8,6 +8,7 @@ keywords:
 - identifying audio devices
 - preferred device IDs WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Preferred Voice-Communications Device ID

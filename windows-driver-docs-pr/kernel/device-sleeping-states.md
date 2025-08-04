@@ -3,6 +3,7 @@ title: Device Low-Power States
 description: Provides information about device low-power states.
 keywords: ["device power states WDK kernel", "device low-power states WDK power management", "sleep power management WDK kernel", "Dx names WDK power management", "asleep devices WDK power management", "lowest-powered device state WDK kernel", "highest-powered device low-power state WDK kernel", "intermediate sleeping state WDK kernel", "low power modes WDK kernel", "power saving modes WDK kernel", "continuous power WDK kernel", "delays WDK power management", "state transition delays WDK power management"]
 ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
 # Device low-power states

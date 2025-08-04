@@ -2,6 +2,7 @@
 title: Convertible Testing
 description: This topic describes tests for convertibles.
 ms.date: 03/26/2025
+ms.topic: checklist
 ---
 
 # Convertible testing

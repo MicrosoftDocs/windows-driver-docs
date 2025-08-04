@@ -12,6 +12,7 @@ keywords:
 - SYS files
 - .cat files
 ms.date: 04/22/2025
+ms.topic: concept-article
 ---
 
 # Components of a Driver Package

@@ -2,6 +2,7 @@
 title: RSS Configuration
 description: To obtain RSS configuration information, an overlying driver can send an OID query to a miniport driver.
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # RSS Configuration

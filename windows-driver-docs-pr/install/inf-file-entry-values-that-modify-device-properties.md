@@ -4,6 +4,7 @@ description: INF File Entry Values That Modify Device Properties before Windows 
 keywords:
 - device properties WDK device installations , modifying
 ms.date: 04/04/2022
+ms.topic: concept-article
 ---
 
 # INF File Entry Values That Modify Device Properties before Windows Vista

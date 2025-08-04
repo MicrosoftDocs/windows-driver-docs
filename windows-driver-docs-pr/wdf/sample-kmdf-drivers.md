@@ -8,6 +8,7 @@ keywords:
 - framework-based drivers WDK KMDF , samples
 - sample drivers WDK KMDF
 ms.date: 06/04/2018
+ms.topic: example-scenario
 ---
 
 # Sample KMDF Drivers

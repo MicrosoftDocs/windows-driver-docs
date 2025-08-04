@@ -5,6 +5,7 @@ keywords:
 - printer attributes WDK Unidrv , formats
 - formats WDK printer attributes
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Printer Attribute Format

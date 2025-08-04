@@ -2,6 +2,7 @@
 title: Enhanced Transmission Selection (ETS) Algorithm
 description: Enhanced Transmission Selection (ETS) Algorithm
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Enhanced Transmission Selection (ETS) Algorithm

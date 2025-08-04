@@ -7,6 +7,7 @@ keywords:
 - WavePci design guidelines WDK audio
 - scatter/gather DMA WDK audio
 ms.date: 04/20/2017
+ms.topic: design-pattern
 ---
 
 # Implementation Issues for WavePci Devices

@@ -4,6 +4,7 @@ description: Device Metadata Store
 keywords:
 - device metadata store WDK
 ms.date: 06/19/2025
+ms.topic: concept-article
 ---
 
 # Device Metadata Store

@@ -3,6 +3,7 @@ title: Get RPC Call Information
 description: Get RPC Call Information
 keywords: ["RPC call information", "SCALL (server call)"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Get RPC Call Information

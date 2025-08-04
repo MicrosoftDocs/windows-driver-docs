@@ -14,6 +14,7 @@ keywords:
 - phase-locked loops WDK audio
 - synchronization WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Clock Synchronization

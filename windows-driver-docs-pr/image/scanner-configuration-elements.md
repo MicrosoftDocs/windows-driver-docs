@@ -2,6 +2,7 @@
 title: Scanner Configuration Elements
 description: Scanner Configuration Elements
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Scanner Configuration Elements

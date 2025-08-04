@@ -2,6 +2,7 @@
 title: DCH Example
 description: Describes how the DCHU driver sample applies the DCH design principles (Declarative, Componentized, Hardware Support Apps [HSA]).
 ms.date: 05/05/2023
+ms.topic: example-scenario
 ---
 
 # DCH-Compliant Driver Package Example

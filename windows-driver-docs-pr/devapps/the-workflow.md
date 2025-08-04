@@ -1,11 +1,14 @@
 ---
 title: Building UWP Device Apps
 description: Device manufacturers can create a UWP device app that serves as a companion to their device.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
 ms.topic: concept-article
 ---
 
 # Building UWP device apps
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 Device manufacturers can create a UWP device app that serves as a companion to their device. This topic describes the components of a UWP device app, the basic steps for building one, and the order in which you must submit your app and device metadata to the Microsoft Store dashboard and the Windows Dev Center hardware dashboard, respectively. For a more detailed look at each step, see [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md).
 
@@ -87,12 +90,8 @@ In each device metadata package, the following limits apply:
 
 ## Related topics
 
-[Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md)
-
-[Automatic installation for UWP device apps](auto-install-for-uwp-device-apps.md)
-
-[AutoPlay for UWP device apps](autoplay-for-uwp-device-apps.md)
-
-[Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md)
-
-[UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md)
+- [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md)
+- [Automatic installation for UWP device apps](auto-install-for-uwp-device-apps.md)
+- [AutoPlay for UWP device apps](autoplay-for-uwp-device-apps.md)
+- [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md)
+- [UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md)

@@ -2,6 +2,7 @@
 title: Send Firmware Update Data (Function Index 23)
 description: This function sends firmware data to the device.
 ms.date: 11/18/2022
+ms.topic: reference
 ---
 
 # Send Firmware Update Data (Function Index 23)

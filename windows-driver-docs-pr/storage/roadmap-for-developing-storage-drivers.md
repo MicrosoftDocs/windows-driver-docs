@@ -2,6 +2,7 @@
 title: Roadmap for Developing Windows Storage Drivers
 description: Roadmap for Developing Windows Storage Drivers
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Roadmap for Developing Windows Storage Drivers

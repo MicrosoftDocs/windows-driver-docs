@@ -4,6 +4,7 @@ description: This section describes Internet Key Exchange functions.
 keywords:
 - Internet Key Exchange functions network drivers
 ms.date: 11/07/2017
+ms.topic: reference
 ---
 
 # Internet Key Exchange functions

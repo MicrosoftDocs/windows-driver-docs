@@ -2,6 +2,7 @@
 title: Percent of machines with a live kernel dump
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have experienced a live kernel dump
 ms.date: 05/29/2020
+ms.topic: concept-article
 ---
 
 # Percent of machines without a live kernel dump

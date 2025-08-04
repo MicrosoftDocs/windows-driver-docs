@@ -7,6 +7,7 @@ keywords:
 - construct element WDK GDL
 - snapshots WDK GDL , structure
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # GDL Schema Construct Element

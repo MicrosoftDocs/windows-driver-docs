@@ -6,6 +6,7 @@ keywords:
 - NDIS miniport drivers WDK networking , samples
 - sample drivers WDK NDIS
 ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # Sample NDIS Miniport Drivers

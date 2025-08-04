@@ -4,6 +4,7 @@ description: Header-Data Split in NDIS 6.1
 keywords:
 - header-data split WDK , about header-data split
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Header-Data Split in NDIS 6.1

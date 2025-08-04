@@ -4,6 +4,7 @@ description: Enterprise CA Test Certificate
 keywords:
 - Enterprise CA test certificates WDK
 ms.date: 04/22/2025
+ms.topic: concept-article
 ---
 
 # Enterprise CA Test Certificate

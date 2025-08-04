@@ -2,6 +2,7 @@
 title: Driver Packages
 description: A driver package is a collection of software components that enable a Windows device to work properly.
 ms.date: 04/16/2025
+ms.topic: concept-article
 ---
 
 # Driver packages

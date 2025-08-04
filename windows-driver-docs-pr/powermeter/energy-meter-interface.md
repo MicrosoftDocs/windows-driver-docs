@@ -6,6 +6,7 @@ keywords:
 - Energy Meter Interface WDK
 - PMI WDK Energy Meter
 ms.date: 11/17/2017
+ms.topic: concept-article
 ---
 
 # Energy Meter Interface

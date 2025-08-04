@@ -2,6 +2,7 @@
 title: Sample Code to Create Custom Properties
 description: Sample Code to Create Custom Properties
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Sample Code to Create Custom Properties

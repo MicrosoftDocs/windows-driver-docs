@@ -5,6 +5,7 @@ keywords:
 - NDIS Poll Mode
 ms.date: 03/02/2023
 ms.localizationpriority: medium
+ms.topic: concept-article
 ---
 
 # NDIS Poll Mode

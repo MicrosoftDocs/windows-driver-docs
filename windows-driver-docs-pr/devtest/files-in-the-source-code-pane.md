@@ -6,6 +6,7 @@ keywords:
 - Source Code pane WDK Static Driver Verifier
 - files WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Files in the Source Code Pane

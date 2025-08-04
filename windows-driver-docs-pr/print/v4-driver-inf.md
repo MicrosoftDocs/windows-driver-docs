@@ -2,6 +2,7 @@
 title: V4 Driver INF
 description: The v4 print driver setup model continues to use INF files, but also employs a new manifest file to capture the printer specific setup directives.
 ms.date: 05/08/2023
+ms.topic: concept-article
 ---
 
 # V4 Driver INF

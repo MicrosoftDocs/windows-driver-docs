@@ -11,6 +11,7 @@ keywords:
 - KMDF verifier tools WDK WDF
 - UMDF verifier tools WDK WDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WDF Drivers Tab

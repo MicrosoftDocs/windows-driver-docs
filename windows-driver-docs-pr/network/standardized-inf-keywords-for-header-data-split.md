@@ -6,6 +6,7 @@ keywords:
 - standardized keywords WDK header-data split
 - INF entries WDK header-data split
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Standardized INF Keywords for Header-Data Split

@@ -7,6 +7,7 @@ keywords:
 - display driver model WDK Windows Vista , requirements
 - Windows Vista display driver model WDK , requirements
 ms.date: 12/06/2018
+ms.topic: best-practice
 ---
 
 # Tips and Requirements for the Windows Display Driver Model (WDDM)

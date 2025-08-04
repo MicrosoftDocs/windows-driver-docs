@@ -4,6 +4,7 @@ description: NetAdapterCx receive side scaling (RSS)
 keywords:
 - WDF Network Adapter Class Extension Receive Side Scaling, NetAdapterCx receive side scaling, NetAdapterCx RSS, NetAdapter RSS
 ms.date: 02/01/2023
+ms.topic: concept-article
 ---
 
 # NetAdapterCx receive side scaling (RSS)

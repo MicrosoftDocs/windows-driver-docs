@@ -5,6 +5,7 @@ keywords:
 - templates WDK GDL , directives
 - directives WDK GDL , template directives
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # GDL Template Directives

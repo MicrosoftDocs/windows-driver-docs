@@ -5,6 +5,7 @@ keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads, Generic segmentation offload, GSO, Large Segmentation Offload, LSO, UDP Segmentation Offload, USO
 ms.date: 10/08/2020
 ms.custom: Fe
+ms.topic: concept-article
 ---
 
 # Generic Segmentation Offload

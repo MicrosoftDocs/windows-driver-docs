@@ -2,6 +2,7 @@
 title: Bypass a Class Driver with SCSI Pass-Through Requests to Storport
 description: Bypass a Class Driver with SCSI Pass-Through Requests to Storport
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Bypass a Class Driver with SCSI Pass-Through Requests to Storport

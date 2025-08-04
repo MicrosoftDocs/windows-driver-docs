@@ -5,6 +5,7 @@ keywords:
 - user interface plug-ins WDK print
 - UI plug-ins WDK print
 ms.date: 01/30/2023
+ms.topic: reference
 ---
 
 # Sample UI Plug-In

@@ -2,6 +2,7 @@
 title: Scalable Networking Enhancements in NDIS 6.30
 description: Scalable networking includes the following enhancements for NDIS 6.30 and later drivers
 ms.date: 03/02/2023
+ms.topic: overview
 ---
 
 # Scalable Networking Enhancements in NDIS 6.30

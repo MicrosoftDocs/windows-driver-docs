@@ -5,6 +5,7 @@ keywords:
 - GDL WDK , elements
 - printer drivers WDK , Generic Description Language
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Elements

@@ -2,7 +2,7 @@
 title: OID_GEN_LINK_STATE
 ms.topic: reference
 description: As a query, NDIS and overlying drivers use the OID_GEN_LINK_STATE OID to determine the current link state of a miniport adapter.
-ms.date: 08/08/2017
+ms.date: 07/23/2025
 keywords: 
  -OID_GEN_LINK_STATE Network Drivers Starting with Windows Vista
 ---
@@ -24,7 +24,7 @@ Not requested. (see Remarks section)
 
 Miniport drivers supply the link state during initialization and provide updates with status indications.
 
-To specify the link state, set the **MediaConnectState**, **MediaDuplexState**, **XmitLinkSpeed**, **RcvLinkSpeed**, **PauseFunctions**, and **AutoNegotiationFlags** members of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure that the miniport driver passes to the [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function.
+To specify the link state, set the **MediaConnectState**, **MediaDuplexState**, **XmitLinkSpeed**, **RcvLinkSpeed**, **PauseFunctions**, and **AutoNegotiationFlags** members of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) structure that the miniport driver passes to the [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function.
 
 If a miniport driver does not support this OID, the driver should return NDIS\_STATUS\_NOT\_SUPPORTED. If the miniport driver supports this OID, it returns the connection state, duplex state, and link speeds in an [**NDIS\_LINK\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_state) structure.
 
@@ -48,7 +48,7 @@ If a miniport driver does not support this OID, the driver should return NDIS\_S
 
 [**NDIS\_LINK\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_state)
 
-[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes)
+[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes)
 
 [**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header)
 

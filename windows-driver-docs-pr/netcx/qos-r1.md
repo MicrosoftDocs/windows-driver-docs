@@ -2,6 +2,7 @@
 title: WiFiCx QoS R1
 description: This article specifies the WiFiCx driver modifications required for QoS R1 features, including MSCS and QoS Mapping.
 ms.date: 03/07/2024
+ms.topic: concept-article
 ---
 
 # WiFiCx QoS R1

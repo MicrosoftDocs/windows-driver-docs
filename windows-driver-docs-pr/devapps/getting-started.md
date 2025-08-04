@@ -1,13 +1,16 @@
 ---
 title: Get Started with UWP Device Apps
 description: Start here to begin building UWP device apps.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
 ms.topic: get-started
 ---
 
 # Get started with UWP device apps
 
 Start here to begin building UWP device apps.
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 ![get started with windows store device apps.](images/devices-diagram-350x350.png)
 
@@ -30,7 +33,6 @@ To develop a UWP device app: you need Microsoft Visual Studio, for developing UW
 If you're developing Windows drivers in addition to UWP device apps, use Microsoft Visual Studio Professional or Microsoft Visual Studio Ultimate to create UWP device apps. These editions include the new Device Metadata Authoring Wizard and are also required by the Windows Driver Kit (WDK) 8.1.
 
 1. [Download Visual Studio Professional or Visual Studio Ultimate](https://developer.microsoft.com/windows/hardware/)
-
 1. [Download the WDK 8.1](https://developer.microsoft.com/windows/hardware/)
 
 ### If you're not going to be developing drivers
@@ -38,7 +40,6 @@ If you're developing Windows drivers in addition to UWP device apps, use Microso
 If you don't need to develop drivers, you can use Microsoft Visual Studio Express 2015 for Windows to create UWP device apps. But this version of Visual Studio installs a version of the SDK that doesn't include the Device Metadata Authoring Wizard. To get the new Device Metadata Authoring Wizard, you must also download the standalone Windows 8.1 SDK.
 
 1. [Download Visual Studio Express 2015 for Windows 10](https://visualstudio.microsoft.com/vs/express/)
-
 1. [Download the standalone Windows 8.1 SDK](https://developer.microsoft.com/windows/hardware/)
 
 ## 2. Build some regular UWP apps
@@ -46,9 +47,7 @@ If you don't need to develop drivers, you can use Microsoft Visual Studio Expres
 A UWP device app is a special kind of UWP app. So, before you develop your first UWP device app, get set up to build some regular UWP apps.
 
 - Sign up for a Microsoft Store developer account at [Windows Dev Center](https://developer.microsoft.com/windows)
-
 - [Get started with Microsoft Visual Studio](/previous-versions/windows/apps/br211384(v=win.10))
-
 - See the [Microsoft Store design principles](/windows/uwp/design/)
 
 ## 3. Learn what makes UWP device apps special
@@ -56,7 +55,6 @@ A UWP device app is a special kind of UWP app. So, before you develop your first
 Learn about the special things that you can do with a UWP device app and what it takes to build one.
 
 - [Meet UWP device apps](meet-uwp-device-apps.md)
-
 - [Building a UWP device app](the-workflow.md)
 
 ## 4. Download samples

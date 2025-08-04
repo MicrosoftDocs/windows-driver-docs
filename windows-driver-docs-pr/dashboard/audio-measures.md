@@ -2,6 +2,7 @@
 title: Audio measures
 description: Whenever an application or Windows component wants to play or record audio, it uses one of various audio APIs.
 ms.date: 08/27/2024
+ms.topic: concept-article
 ---
 
 # Audio measures

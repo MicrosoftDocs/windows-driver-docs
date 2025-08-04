@@ -12,13 +12,15 @@ keywords:
 - D3DDDICAPS_GETVIDEOPROCESSORRTSUBSTREAMFORMATCOUNT
 - D3DDDICAPS_GETVIDEOPROCESSORRTSUBSTREAMFORMATS
 - D3DDDICAPS_FILTERPROPERTYRANGE
-ms.date: 10/22/2021
+ms.date: 07/30/2025
 ms.topic: concept-article
 ---
 
 # Providing video processing capabilities
 
 ## How to query capabilities for video processing
+
+This article describes how to query video processing capabilities in a user-mode display driver (UMD) that supports DirectX Video Acceleration (DXVA) 2.0.
 
 When its [**GetCaps**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps) function is called, the user-mode display driver (UMD) provides the following video processing capabilities based on the request type specified in the **Type** member of the [**D3DDDIARG_GETCAPS**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_getcaps) structure that the *pData* parameter points to:
 

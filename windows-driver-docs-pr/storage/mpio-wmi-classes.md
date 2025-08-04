@@ -2,6 +2,7 @@
 title: MPIO WMI Classes
 description: MPIO WMI Classes
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MPIO WMI Classes

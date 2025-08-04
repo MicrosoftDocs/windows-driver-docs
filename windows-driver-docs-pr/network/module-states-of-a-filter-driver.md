@@ -9,6 +9,7 @@ keywords:
 - filter drivers WDK networking , filter modules
 - NDIS filter drivers WDK ,
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Module States of a Filter Driver

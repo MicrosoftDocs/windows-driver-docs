@@ -2,6 +2,7 @@
 title: Sensor Testing Sources
 description: This section provides useful links to sensor testing materials.
 ms.date: 01/11/2024
+ms.topic: checklist
 ---
 
 # Sensor testing sources

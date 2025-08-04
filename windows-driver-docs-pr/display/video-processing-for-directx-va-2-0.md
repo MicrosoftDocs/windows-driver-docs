@@ -7,6 +7,7 @@ keywords:
 - VA WDK DirectX , video processing
 - video processing WDK DirectX VA
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # Video Processing for DirectX VA 2.0

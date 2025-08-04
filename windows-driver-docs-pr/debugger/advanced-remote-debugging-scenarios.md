@@ -3,6 +3,7 @@ title: Advanced Remote Debugging Scenarios
 description: Advanced Remote Debugging Scenarios
 keywords: ["remote debugging, advanced"]
 ms.date: 12/13/2024
+ms.topic: concept-article
 ---
 
 # Advanced Remote Debugging Scenarios

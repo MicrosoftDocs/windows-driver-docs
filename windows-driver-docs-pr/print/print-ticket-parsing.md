@@ -7,6 +7,7 @@ keywords:
 - Print Tickets WDK , XPSDrv printer drivers
 - parsing Print Ticket objects
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print Ticket Parsing

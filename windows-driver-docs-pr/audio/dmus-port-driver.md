@@ -8,6 +8,7 @@ keywords:
 - audio miniport drivers WDK , port drivers
 - miniport drivers WDK audio , port drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # DMus Port Driver

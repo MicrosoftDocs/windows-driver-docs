@@ -2,6 +2,7 @@
 title: Required WIA Child Item Properties for Film Scanners
 description: Required WIA Child Item Properties for Film Scanners
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Required WIA Child Item Properties for Film Scanners

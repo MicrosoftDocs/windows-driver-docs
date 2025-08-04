@@ -2,6 +2,7 @@
 title: Optional WIA Child Item Properties for Film Scanners
 description: Optional WIA Child Item Properties for Film Scanners
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Optional WIA Child Item Properties for Film Scanners

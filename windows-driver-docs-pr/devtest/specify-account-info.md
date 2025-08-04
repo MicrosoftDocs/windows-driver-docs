@@ -4,6 +4,7 @@ description: Specify account information in the Mobile Broadband Metadata Author
 keywords:
 - Specify account information in the Mobile Broadband Metadata Authoring Wizard
 ms.date: 06/25/2025
+ms.topic: how-to
 ---
 
 # Specify account information in the Mobile Broadband Metadata Authoring Wizard

@@ -2,6 +2,7 @@
 title: Selections in the Flip Queue
 description: "The Flip Queue Entry has data of the following form."
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Selections in the Flip Queue

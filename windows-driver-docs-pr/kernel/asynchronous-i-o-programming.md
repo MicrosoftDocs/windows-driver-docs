@@ -2,6 +2,7 @@
 title: Asynchronous I/O Programming
 description: Asynchronous I/O Programming
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Asynchronous I/O Programming

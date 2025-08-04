@@ -8,6 +8,7 @@ keywords:
 - testing drivers WDK , ONECPU
 - logical processors WDK
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # PNPCPU

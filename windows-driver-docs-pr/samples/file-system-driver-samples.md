@@ -2,6 +2,7 @@
 title: File System and Filter Driver Samples
 description: The driver samples in this directory provide a starting point for writing custom file system drivers and file system filter drivers.
 ms.date: 05/01/2025
+ms.topic: example-scenario
 ---
 
 # File system and filter driver samples

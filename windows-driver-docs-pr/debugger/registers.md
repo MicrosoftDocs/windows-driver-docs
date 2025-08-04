@@ -3,6 +3,7 @@ title: Registers
 description: Registers
 keywords: ["memory access, registers", "registers"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Registers

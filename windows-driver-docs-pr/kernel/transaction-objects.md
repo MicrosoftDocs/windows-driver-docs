@@ -3,6 +3,7 @@ title: Transaction Objects
 description: Transaction Objects
 keywords: ["transactions WDK KTM , objects", "transactions WDK KTM", "transactional clients WDK KTM , creating transactions", "Kernel Transaction Manager WDK , transactions", "KTM WDK , transactions", "transaction objects WDK KTM"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Transaction Objects

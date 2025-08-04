@@ -2,6 +2,7 @@
 title: Mobile Operator Notification Event Technical Details
 description: Mobile operator notification event technical details
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Mobile operator notification event technical details

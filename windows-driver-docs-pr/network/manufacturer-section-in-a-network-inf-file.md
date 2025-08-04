@@ -2,6 +2,7 @@
 title: Manufacturer Section in a Network INF File
 description: How to create the manufacturer section of a network INF file.
 ms.date: 04/17/2023
+ms.topic: how-to
 ---
 
 # Manufacturer Section in a Network INF File

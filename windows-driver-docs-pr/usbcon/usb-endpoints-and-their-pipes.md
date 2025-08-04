@@ -2,6 +2,7 @@
 title: USB Endpoints and Their Pipes
 description: A USB device has endpoints that are used to for data transfers.
 ms.date: 05/09/2025
+ms.topic: concept-article
 ---
 
 # USB endpoints and their pipes

@@ -2,6 +2,7 @@
 title: Signature Categories and Driver Installation
 description: Signature Categories and Driver Installation
 ms.date: 12/03/2021
+ms.topic: concept-article
 ---
 
 # Signature Categories and Driver Installation

@@ -3,6 +3,7 @@ title: Command-Line Options
 description: Command-Line Options
 keywords: ["command-line options", "starting the debugger, command-line options"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Command-Line Options

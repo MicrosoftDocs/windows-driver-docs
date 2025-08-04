@@ -3,6 +3,7 @@ title: Toolbar Buttons - WinDbg (Classic)
 description: Toolbar Buttons - WinDbg (Classic)
 keywords: ["toolbar (WinDbg), button descriptions", "buttons (WinDbg Toolbar), descriptions"]
 ms.date: 05/23/2017
+ms.topic: end-user-help
 ---
 
 # Toolbar Buttons - WinDbg (Classic)

@@ -3,6 +3,7 @@ title: DispatchFlushBuffers Routines
 description: DispatchFlushBuffers Routines
 keywords: ["dispatch routines WDK kernel , DispatchFlushBuffers routine", "DispatchFlushBuffers routine", "IRP_MJ_FLUSH_BUFFERS I/O function code", "flush buffers dispatch routines WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # DispatchFlushBuffers Routines

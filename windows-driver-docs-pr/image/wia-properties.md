@@ -2,6 +2,7 @@
 title: WIA Properties
 description: WIA Properties
 ms.date: 05/29/2020
+ms.topic: reference
 ---
 
 # WIA Properties

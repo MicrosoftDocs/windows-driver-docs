@@ -2,6 +2,7 @@
 title: Print Ticket Support in the XPSDrv Render Module
 description: Print Ticket Support in the XPSDrv Render Module
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print Ticket Support in the XPSDrv Render Module

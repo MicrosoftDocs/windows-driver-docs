@@ -9,6 +9,7 @@ keywords:
 - queues WDK AVStream
 - SRBs WDK AVStream
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Stream Pointers

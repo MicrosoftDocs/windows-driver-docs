@@ -6,6 +6,7 @@ keywords:
 - Direct3D 12, work graphs
 - WDDM, GPU-driven rendering with work graphs
 ms.date: 05/03/2024
+ms.topic: concept-article
 ---
 
 # Work graphs

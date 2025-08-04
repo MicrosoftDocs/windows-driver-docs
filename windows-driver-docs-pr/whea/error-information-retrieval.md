@@ -10,6 +10,7 @@ keywords:
 - PSHED plug-ins WDK WHEA , error information retrieval
 - error information retrieval WDK WHEA
 ms.date: 03/26/2025
+ms.topic: error-reference
 ---
 
 # Error Information Retrieval

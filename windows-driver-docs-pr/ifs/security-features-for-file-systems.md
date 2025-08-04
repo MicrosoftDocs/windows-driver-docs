@@ -4,6 +4,7 @@ description: Security Features for File Systems
 keywords:
 - security WDK file systems , features
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Security Features for File Systems

@@ -4,6 +4,7 @@ description: Proprietary Speaker-Configuration Utilities
 keywords:
 - proprietary speaker-configuration utilities WDK audio
 ms.date: 04/20/2017
+ms.topic: system-utilities
 ---
 
 # Proprietary Speaker-Configuration Utilities

@@ -7,6 +7,7 @@ keywords:
 - print queues WDK, Directory Services
 - queues WDK printer, Directory Services
 ms.date: 09/12/2022
+ms.topic: overview
 ---
 
 # Directory Services for printers

@@ -2,6 +2,7 @@
 title: Roadmap for Developing NDIS Miniport Drivers
 description: Roadmap for Developing NDIS Miniport Drivers
 ms.date: 03/02/2023
+ms.topic: checklist
 ---
 
 # Roadmap for Developing NDIS Miniport Drivers

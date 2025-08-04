@@ -2,6 +2,7 @@
 title: Cohort Failure Report
 description: Describes the cohort failure report provided upon cancellation
 ms.date: 10/06/2020
+ms.topic: concept-article
 ---
 
 # Cohort Failure Report

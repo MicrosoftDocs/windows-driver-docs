@@ -18,6 +18,7 @@ keywords:
 - usage ranges WDK HID
 - aliased usages WDK HID
 - usage WDK HID
+ms.topic: concept-article
 ---
 
 # HID Usages

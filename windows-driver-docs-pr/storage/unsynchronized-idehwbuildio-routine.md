@@ -7,6 +7,7 @@ keywords:
 - AtaHwBuildIo
 - unsynchronized processing WDK ATA Port driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Unsynchronized IdeHwBuildIo Routine

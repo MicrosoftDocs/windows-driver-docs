@@ -7,6 +7,7 @@ keywords:
 - memory allocators WDK kernel streaming
 - multiple destination sinks WDK kernel streaming
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Default Allocators

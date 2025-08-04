@@ -2,6 +2,7 @@
 title: RAW Format Data Transfer
 description: RAW Format Data Transfer
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # RAW Format Data Transfer

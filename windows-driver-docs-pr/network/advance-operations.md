@@ -11,6 +11,7 @@ keywords:
 - freeing MDLs
 - reducing use
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Advance Operations

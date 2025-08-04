@@ -4,6 +4,7 @@ description: Option attributes for the Memory feature
 keywords:
 - Memory Feature WDK print
 ms.date: 07/19/2023
+ms.topic: reference
 ---
 
 # Option attributes for the Memory feature

@@ -10,6 +10,7 @@ keywords:
 - power management WDK KMDF , idle power-down
 - idle power-down WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # User Control of Device Idle and Wake Behavior

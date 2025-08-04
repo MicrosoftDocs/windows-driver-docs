@@ -2,6 +2,7 @@
 title: Required Direct3D 9 Capabilities
 description: Capabilities required for the user-mode driver to access Direct3D 9 features.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Required Direct3D 9 capabilities

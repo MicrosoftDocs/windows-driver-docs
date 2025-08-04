@@ -4,6 +4,7 @@ description: Windows Display Driver Model (WDDM) 1.2 and later drivers must be a
 keywords:
 - Windows Display Driver Model (WDDM) , XPS rasterization, debugging
 ms.date: 10/21/2024
+ms.topic: concept-article
 ---
 
 # XPS rasterization on the GPU

@@ -2,6 +2,7 @@
 title: Driver Store
 description: The Driver Store is a trusted collection of inbox and non-Microsoft driver packages.
 ms.date: 04/16/2025
+ms.topic: concept-article
 ---
 
 # Driver store
