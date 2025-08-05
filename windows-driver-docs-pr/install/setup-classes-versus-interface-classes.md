@@ -1,5 +1,5 @@
 ---
-title: Comparing Setup Classes and Interface Classes
+title: Compare Setup Classes and Interface Classes
 description: A comparison of setup classes and interface classes.
 keywords:
 - device interface classes WDK device installations
@@ -11,7 +11,7 @@ ms.topic: concept-article
 ai-usage: ai-assisted
 ---
 
-# Comparing setup classes and interface classes
+# Compare setup classes and interface classes
 
 It's important to distinguish between the two types of device classes: *[device interface classes](./overview-of-device-interface-classes.md)* and *[device setup classes](./overview-of-device-setup-classes.md)*. The two can be easily confused. In user-mode code, both classes use the same set of [device installation functions](/previous-versions/ff541299(v=vs.85)). They also use the same set of data structures ([device information sets](device-information-sets.md)).
 
