@@ -1,74 +1,74 @@
 ---
 title: ACX Streaming
-description: This topic provides a summary of the ACX streaming and the associated buffering, which is critical to a glitch free audio experience.
-ms.date: 07/07/2022
+description: This article provides a summary of ACX streaming and associated buffering, which is critical to a glitch-free audio experience.
+ms.date: 08/05/2025
 ms.localizationpriority: medium
 ms.topic: concept-article
 ---
 
 # ACX streaming
 
-This topic discusses ACX streaming and the associated buffering, which is critical to a glitch free audio experience. It describes the mechanisms used by the driver to communicate about the stream state and manage the buffer for the stream. For a list of common ACX audio terms and an introduction to ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md).
+This article discusses ACX streaming and associated buffering, which are critical to a glitch-free audio experience. It describes the mechanisms used by the driver to communicate about the stream state and manage the buffer for the stream. For a list of common ACX audio terms and an introduction to ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md).
 
 ## ACX streaming types
 
-An AcxStream represents an audio stream on a specific circuit’s hardware. An AcxStream may aggregate one or more AcxElements-like objects.
+An AcxStream represents an audio stream on a specific circuit's hardware. An AcxStream can aggregate one or more AcxElements-like objects.
 
 The ACX framework supports two stream types. The first stream type, the *RT Packet Stream*, provides support for allocating RT packets and using RT packets for transferring audio data to or from the device hardware along with stream state transitions. The second stream type, the *Basic Stream*, provides only support for stream state transitions.
 
-In a single circuit endpoint the circuit must be a streaming circuit that creates an RT Packet Stream. If two or more circuits are connected to create an endpoint, the first circuit in the endpoint is the streaming circuit and creates an RT Packet Stream; connected circuits will create Basic Streams to receive events related to stream state transitions.
+In a single circuit endpoint, the circuit must be a streaming circuit that creates an RT Packet Stream. If two or more circuits are connected to create an endpoint, the first circuit in the endpoint is the streaming circuit and creates an RT Packet Stream; connected circuits create Basic Streams to receive events related to stream state transitions.
 
-For more information, see *ACX Stream* in [Summary of ACX Objects](acx-summary-of-objects.md). The DDIs for stream are defined in the [acxstreams.h](/windows-hardware/drivers/ddi/acxstreams) header.
+For more information, see *ACX Stream* in [Summary of ACX Objects](acx-summary-of-objects.md). The DDIs for streams are defined in the [acxstreams.h](/windows-hardware/drivers/ddi/acxstreams) header.
 
 ## ACX streaming communications stack
 
-There are two types of communications for ACX Streaming. One communications path is used for controlling the streaming behavior, for commands such as Start, Create, and Allocate, that will use the standard ACX communications. The ACX framework uses IO Queues and passes along WDF Requests using the queues. The queue behavior is hidden from the actual driver code through the use of Evt callbacks and ACX functions, though the driver is also be given a chance to pre-process all WDF Requests.
+There are two types of communications for ACX streaming. One communication path controls the streaming behavior. For example, commands such as Start, Create, and Allocate, that use standard ACX communications. The ACX framework uses IO queues and passes along WDF requests using the queues. The queue behavior is hidden from the actual driver code by using event callbacks and ACX functions. The driver is also given a chance to preprocess all WDF requests.
 
-The second and more interesting communications path, is used for the audio streaming signaling. This involves telling the driver when a packet is ready and receiving data on when the driver has finished processing a packet.  
+The second and more interesting communications path handles audio streaming signaling. Signaling involves telling the driver when a packet is ready and receiving data and when the driver finishes processing a packet.
 
-The main requirements for streaming signaling:  
+Main requirements for streaming signaling:
 
-- Support Glitch-Free Playback  
-  - Low Latency  
+- Support glitch-free playback
+  - Low latency
   - Any necessary locks are limited to the stream in question
-- Ease of use for driver developer  
+- Ease of use for driver developer
 
-To communicate with the driver to signal streaming state, ACX uses events with a shared buffer and direct IRP calls. These are described next.
+To communicate with the driver to signal streaming state, ACX uses events with a shared buffer and direct IRP calls. These techniques are described next.
 
 ### Shared buffer
 
-For communicating from the driver to the client, a shared buffer and event are used. This ensures the client does not need to wait or poll, and that the client can determine everything it needs to continue streaming while reducing or eliminating the need for direct IRP calls.
+A shared buffer and event communicate from the driver to the client. The event and shared buffer ensure the client doesn't need to wait or poll. The client can determine everything it needs to continue streaming while reducing or eliminating the need for direct IRP calls.
 
-The device driver uses a shared buffer to communicate to the client which packet is being rendered from or captured to. This shared buffer includes the packet count (1-based) of the last completed packet along with the QPC (QueryPerformanceCounter) value of the completion time. For the device driver, it must indicate this information by calling [AcxRtStreamNotifyPacketComplete](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxrtstreamnotifypacketcomplete). When the device driver calls AcxRtStreamNotifyPacketComplete, the ACX framework will update the shared buffer with the new packet count and QPC and signal an event shared with the client to indicate that the client may read the new packet count.
+The device driver uses a shared buffer to communicate to the client which packet is being rendered from or captured to. This shared buffer includes the packet count (one-based) of the last completed packet along with the QPC (QueryPerformanceCounter) value of the completion time. For the device driver, it must indicate this information by calling **[AcxRtStreamNotifyPacketComplete](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxrtstreamnotifypacketcomplete)**. When the device driver calls **AcxRtStreamNotifyPacketComplete**, the ACX framework updates the shared buffer with the new packet count and QPC and signals an event shared with the client to indicate that the client can read the new packet count.
 
 #### Direct IRP calls
 
-For communicating from the client to the driver, direct IRP calls are used. This reduces the complexities around ensuring WDF requests are handled in a timely manner and has been proven to work well in the existing architecture.
+Direct IRP calls communicate from the client to the driver.
 
-The client may at any time request the current packet count or indicate the current packet count to the device driver. These requests will call the [EvtAcxStreamGetCurrentPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_current_packet) and [EvtAcxStreamSetRenderPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_set_render_packet) device driver event handlers. The client may also request the current capture packet which will call the [EvtAcxStreamGetCapturePacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_capture_packet) device driver event handler.
+The client can request the current packet count, or indicate the current packet count to the device driver at any time. These requests call the [EvtAcxStreamGetCurrentPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_current_packet) and [EvtAcxStreamSetRenderPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_set_render_packet) device driver event handlers. The client can also request the current capture packet, which calls the [EvtAcxStreamGetCapturePacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_capture_packet) device driver event handler.
 
 #### Similarities with PortCls
 
-The combination of direct IRP calls and shared buffer used by ACX is similar to how buffer completion handling is communicated in PortCls. The IRPs are very similar and the shared buffer introduces the ability for the driver to directly communicate packet count and timing without relying on IRPs.
-  
-Drivers will need to ensure they do nothing that requires access to locks that are also used in the stream control paths – this is necessary to prevent glitching.  
+The combination of direct IRP calls and shared buffer that ACX uses is similar to how PortCls communicates buffer completion handling.
 
-## Large buffer support for low power playback  
+To prevent glitching, drivers must ensure they do nothing that requires access to locks that are also used in the stream control paths.
 
-To reduce the amount of power consumed when playing back media content, it is important to reduce the amount of time the APU spends in a high-power state. Since the normal audio playback uses 10ms buffers, the APU always needs to be active. To give the APU the time it needs to reduce state, ACX drivers are allowed to advertise support for significantly larger buffers, in the 1-2 second size range. This means the APU can wake up once every 1-2 seconds, do the operations required at maximum speed to prepare the next 1-2 second buffer, and then go to the lowest possible power state until the next buffer is needed.  
+## Large buffer support for low power playback
 
-In existing streaming models low power playback is supported through Offload Playback. An audio driver advertises support for Offload Playback by exposing an AudioEngine node on the wave filter for an endpoint. The AudioEngine node provides a means to control the DSP engine the driver uses to render the audio from the large buffers with the desired processing.
+To reduce the amount of power consumed when playing back media content, it's important to reduce the amount of time the APU spends in a high-power state. Because normal audio playback uses 10-ms buffers, the APU always needs to be active. To give the APU the time it needs to reduce state, ACX drivers are allowed to advertise support for larger buffers, in the 1-2 second size range. The APU can wake up once every 1-2 seconds, do the operations required at maximum speed to prepare the next 1-2 second buffer, and then go to the lowest possible power state until the next buffer is needed.
 
-The AudioEngine node provides these facilities:  
+In existing streaming models, offload playback supports low power playback. An audio driver advertises support for offload playback by exposing an AudioEngine node on the wave filter for an endpoint. The AudioEngine node provides a means to control the DSP engine the driver uses to render the audio from the large buffers with the desired processing.
 
-- Audio Engine Description, which tells the audio stack which pins on the wave filter provide offload and loopback support (and host playback support).  
-- Buffer Size Range, which tells the audio stack the minimum and maximum buffer sizes that can be supported for offload. playback. The Buffer Size Range can change dynamically based on system activity.  
-- Format support, including supported formats, the current device mix format, and the device format.  
-- Volume, including ramping support, since with the larger buffers software volume will not be responsive.
-- Loopback Protection, which tells the driver to mute the AudioEngine Loopback pin if one or more of the Offloaded streams contains protected content.  
-- Global FX state, to enable or disable GFX on the AudioEngine.  
+The AudioEngine node provides these facilities:
 
-When a stream is created on the Offload Pin, the stream supports Volume, Local FX, and Loopback Protection.  
+- Audio Engine Description tells the audio stack which pins on the wave filter provide offload and loopback support (and host playback support).
+- Buffer Size Range tells the audio stack the minimum and maximum buffer sizes that can be supported for offload. playback. The Buffer Size Range can change dynamically based on system activity.
+- Format support, including supported formats, the current device mix format, and the device format.
+- Volume, including ramping support, since with the larger buffers software volume won't be responsive.
+- Loopback Protection, which tells the driver to mute the AudioEngine Loopback pin if one or more of the Offloaded streams contains protected content.
+- Global FX state, to enable or disable GFX on the AudioEngine.
+
+When you create a stream on the offload pin, the stream supports volume, local FX, and loopback protection.
 
 ### Low power playback with ACX
 
@@ -76,7 +76,7 @@ The ACX framework uses the same model for low power playback. The driver creates
 
 ### Offloaded stream creation
 
-The driver will also add an ACXAUDIOENGINE element to streams created for offload to allow control over volume, mute, and peak meter.
+The driver also adds an ACXAUDIOENGINE element to streams created for offload to allow control over volume, mute, and peak meter.
 
 ### Streaming diagram
 
@@ -84,56 +84,56 @@ This diagram shows a multi-stack ACX driver.
 
 :::image type="content" source="images/audio-acx-multi-stack-kernel-streaming.png" alt-text="Diagram illustrating DSP, CODEC, and AMP boxes with a kernel streaming interface on top.":::
 
-Each ACX driver controls a separate portion of the audio hardware and could be provided by a different vendor. ACX provides a compatible kernel streaming interface to allow applications to run as is.
+Each ACX driver controls a separate portion of the audio hardware, which might be provided by a different vendor. ACX provides a compatible kernel streaming interface to allow applications to run as is.
 
-#### Stream pins  
+#### Stream pins
 
-Each ACXCIRCUIT has at least one Sink Pin and one Source Pin. These Pins are used by the ACX framework to expose the circuit’s connections to the audio stack. For a Render circuit, the Source Pin is used to control the render behavior of any stream created from the circuit. For a Capture circuit, the Sink Pin is used to control the capture behavior of any stream created from the circuit.
-  
-ACXPIN is the object used to control streaming in the Audio Path. The streaming ACXCIRCUIT is responsible for creating the appropriate ACXPIN object(s) for the Endpoint Audio Path at circuit creation time and registering the ACXPINs with ACX. The ACXCIRCUIT only needs to create the render or capture pin or pins for the Circuit; the ACX framework will create the other pin needed to connect to and communicate with the circuit.  
-  
+Each ACXCIRCUIT has at least one Sink Pin and one Source Pin. These Pins are used by the ACX framework to expose the circuit's connections to the audio stack. For a Render circuit, the Source Pin is used to control the render behavior of any stream created from the circuit. For a Capture circuit, the Sink Pin is used to control the capture behavior of any stream created from the circuit.
+
+ACXPIN is the object used to control streaming in the Audio Path. The streaming ACXCIRCUIT is responsible for creating the appropriate ACXPIN objects for the Endpoint Audio Path at circuit creation time and registering the ACXPINs with ACX. The ACXCIRCUIT only needs to create the render or capture pins for the circuit; the ACX framework creates the other pin needed to connect to and communicate with the circuit.
+
 #### Streaming circuit
 
 When an endpoint is composed of a single circuit, that circuit is the streaming circuit.
 
-When an endpoint is composed of more than one circuit created by one or more device drivers, the circuits are connected in the specific order determined by the ACXCOMPOSITETEMPLATE that describes the composed endpoint. The first circuit in the endpoint is the streaming circuit for the endpoint.
+When an endpoint is composed of more than one circuit created by one or more device drivers, the ACXCOMPOSITETEMPLATE that describes the composed endpoint determines the specific order that connects the circuits. The first circuit in the endpoint is the streaming circuit for the endpoint.
 
-The streaming circuit should use [AcxRtStreamCreate](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxrtstreamcreate) to create an RT Packet Stream in response to [EvtAcxCircuitCreateStream](/windows-hardware/drivers/ddi/acxcircuit/nc-acxcircuit-evt_acx_circuit_create_stream). The ACXSTREAM created with AcxRtStreamCreate will allow the streaming circuit driver to allocate the buffer used for streaming and to control the streaming flow in response to the client and hardware needs.
+The streaming circuit should use [AcxRtStreamCreate](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxrtstreamcreate) to create an RT Packet Stream in response to [EvtAcxCircuitCreateStream](/windows-hardware/drivers/ddi/acxcircuit/nc-acxcircuit-evt_acx_circuit_create_stream). The ACXSTREAM created with AcxRtStreamCreate allows the streaming circuit driver to allocate the buffer used for streaming and to control the streaming flow in response to the client and hardware needs.
 
-Following circuits in the endpoint should use [AcxStreamCreate](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxstreamcreate) to create a Basic Stream in response to EvtAcxCircuitCreateStream. The ACXSTREAM objects created with AcxStreamCreate by the following circuits will allow the drivers to configure hardware in response to stream state changes such as Pause or Run.
+Following circuits in the endpoint should use [AcxStreamCreate](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxstreamcreate) to create a Basic Stream in response to EvtAcxCircuitCreateStream. The ACXSTREAM objects created with AcxStreamCreate by the following circuits allow the drivers to configure hardware in response to stream state changes such as Pause or Run.
 
 The streaming ACXCIRCUIT is the first circuit to receive the requests to create a stream. The request includes the device, the pin, and the data format (including mode).
 
-Each ACXCIRCUIT in the Audio Path will create an ACXSTREAM object that represents the circuit’s stream instance. The ACX framework links the ACXSTREAM objects together (in much the same way the ACXCIRCUIT objects are linked).  
+Each ACXCIRCUIT in the Audio Path creates an ACXSTREAM object that represents the circuit's stream instance. The ACX framework links the ACXSTREAM objects together (in much the same way the ACXCIRCUIT objects are linked).
 
 #### Upstream and downstream circuits
 
-Stream creation starts at the streaming circuit and is forwarded to each downstream circuit in the order the circuits are connected. The connections are made between bridge pins created with Communication equal to AcxPinCommunicationNone. The ACX framework will create one or more bridge pins for a circuit if the driver doesn't add them at circuit creation time.
+Stream creation starts at the streaming circuit and is forwarded to each downstream circuit in the order the circuits are connected. The connections are made between bridge pins created with Communication equal to AcxPinCommunicationNone. The ACX framework creates one or more bridge pins for a circuit if the driver doesn't add them at circuit creation time.
 
-For each circuit starting with the streaming circuit, the AcxPinTypeSource bridge pin will connect to the next downstream circuit. The final circuit will have an endpoint pin describing the audio endpoint hardware (such as whether the endpoint is a Microphone or Speaker and whether the Jack is plugged in).
+For each circuit starting with the streaming circuit, the AcxPinTypeSource bridge pin connects to the next downstream circuit. The final circuit has an endpoint pin describing the audio endpoint hardware (such as whether the endpoint is a Microphone or Speaker and whether the Jack is plugged in).
 
-For each circuit following the streaming circuit, the AcxPinTypeSink bridge pin will connect to the next upstream circuit.
+For each circuit following the streaming circuit, the AcxPinTypeSink bridge pin connects to the next upstream circuit.
 
-#### Stream format negotiation  
+#### Stream format negotiation
 
-The driver advertises the supported formats for stream creation by adding the supported formats per mode to the ACXPIN used for stream creation with [AcxPinAssignModeDataFormatList](/windows-hardware/drivers/ddi/acxpin/nf-acxpin-acxpinassignmodedataformatlist) and [AcxPinGetRawDataFormatList](/windows-hardware/drivers/ddi/acxpin/nf-acxpin-acxpingetrawdataformatlist). For multi circuit endpoints, an ACXSTREAMBRIDGE can be used to coordinate mode and format support between ACX Circuits. The supported stream formats for the endpoint are determined by the streaming ACXPINs created by the streaming circuit. The formats used by the following circuits are determined by the bridge pin of the previous circuit in the endpoint.
+The driver advertises the supported formats for stream creation by adding the supported formats per mode to the ACXPIN used for stream creation with [AcxPinAssignModeDataFormatList](/windows-hardware/drivers/ddi/acxpin/nf-acxpin-acxpinassignmodedataformatlist) and [AcxPinGetRawDataFormatList](/windows-hardware/drivers/ddi/acxpin/nf-acxpin-acxpingetrawdataformatlist). For multi circuit endpoints, an ACXSTREAMBRIDGE can be used to coordinate mode and format support between ACX Circuits. The streaming ACXPINs created by the streaming circuit determine the supported stream formats for the endpoint. The formats used by the following circuits are determined by the bridge pin of the previous circuit in the endpoint.
 
-By default, the ACX framework will create an ACXSTREAMBRIDGE between each circuit in a multi circuit endpoint. The default ACXSTREAMBRIDGE will use the RAW mode's default format of the bridge pin of the upstream circuit when forwarding the stream creation request to the downstream circuit. If the upstream circuit's bridge pin has no formats, the original stream format will be used. If the connected pin of the downstream circuit does not support the format being used, stream creation will fail.
+By default, the ACX framework creates an ACXSTREAMBRIDGE between each circuit in a multi circuit endpoint. The default ACXSTREAMBRIDGE uses the RAW mode's default format of the bridge pin of the upstream circuit when forwarding the stream creation request to the downstream circuit. If the upstream circuit's bridge pin has no formats, the original stream format is used. If the connected pin of the downstream circuit doesn't support the format being used, stream creation fails.
 
 If a device circuit is performing a stream format change, the device driver should add the downstream format to the downstream bridge pin.
-  
-#### Stream creation  
 
-The first step in Stream Creation is creating the ACXSTREAM instance for each ACXCIRCUIT in the Endpoint Audio Path. ACX will call each circuit’s [EvtAcxCircuitCreateStream](/windows-hardware/drivers/ddi/acxcircuit/nc-acxcircuit-evt_acx_circuit_create_stream). ACX will start with the head circuit and call each circuit’s EvtAcxCircuitCreateStream in order, ending with the tail circuit. The order can be reversed by specifying the AcxStreamBridgeInvertChangeStateSequence flag (defined in [ACX_STREAM_BRIDGE_CONFIG_FLAGS](/windows-hardware/drivers/ddi/acxstreams/ne-acxstreams-acx_stream_bridge_config_flags)) for the Stream Bridge. After all circuits have created a stream object, the stream objects will handle streaming logic.
+#### Stream creation
 
-The Stream Creation Request is sent to the appropriate PIN generated as part of the head circuit’s topology generation by calling the EvtAcxCircuitCreateStream specified during head circuit creation.  
+The first step in Stream Creation is creating the ACXSTREAM instance for each ACXCIRCUIT in the Endpoint Audio Path. ACX calls each circuit's [EvtAcxCircuitCreateStream](/windows-hardware/drivers/ddi/acxcircuit/nc-acxcircuit-evt_acx_circuit_create_stream). ACX starts with the head circuit and call each circuit's EvtAcxCircuitCreateStream in order, ending with the tail circuit. The order can be reversed by specifying the AcxStreamBridgeInvertChangeStateSequence flag (defined in [ACX_STREAM_BRIDGE_CONFIG_FLAGS](/windows-hardware/drivers/ddi/acxstreams/ne-acxstreams-acx_stream_bridge_config_flags)) for the Stream Bridge. After all circuits create a stream object, the stream objects handle streaming logic.
+
+The Stream Creation Request is sent to the appropriate PIN generated as part of the head circuit's topology generation by calling the EvtAcxCircuitCreateStream specified during head circuit creation.
 
 The streaming circuit is the upstream circuit that initially handles the stream creation request.
 
 - It updates the ACXSTREAM_INIT structure, assigning AcxStreamCallbacks and AcxRtStreamCallbacks
 - It creates the ACXSTREAM object using AcxRtStreamCreate
-- It creates any stream-specific elements (e.g. ACXVOLUME or ACXAUDIOENGINE)  
-- It adds the elements to the ACXSTREAM object  
+- It creates any stream-specific elements (for example, ACXVOLUME or ACXAUDIOENGINE)
+- It adds the elements to the ACXSTREAM object
 - It returns the ACXSTREAM object that was created to the ACX framework
 
 ACX then forwards the stream creation to the next downstream circuit.
@@ -144,84 +144,84 @@ ACX then forwards the stream creation to the next downstream circuit.
 - It adds the elements to the ACXSTREAM object
 - It returns the ACXSTREAM object that was created to the ACX framework
 
-The communication channel between circuits in an audio path uses ACXTARGETSTREAM objects. In this example, each circuit will have access to an IO Queue for the circuit in front of it and the circuit behind it in the Endpoint Audio Path. In addition, an Endpoint Audio Path is linear and bi-directional. The actual IO Queue handling is performed by the ACX framework.  
-  
+The communication channel between circuits in an audio path uses ACXTARGETSTREAM objects. In this example, each circuit has access to an IO Queue for the circuit in front of it and the circuit behind it in the Endpoint Audio Path. In addition, an Endpoint Audio Path is linear and bi-directional. The actual IO Queue handling is performed by the ACX framework.
+
 While creating the ACXSTREAM object, each circuit can add Context information to the ACXSTREAM object to store and track private data for the stream.
 
 #### Render stream example
 
-Creating a render stream on an Endpoint Audio Path composed of three circuits: DSP, CODEC, and AMP. The DSP circuit functions as the streaming circuit, and has provided an EvtAcxPinCreateStream handler. The DSP circuit also functions as a filter circuit: depending on the stream mode and configuration, it may apply signal processing to the audio data. The CODEC circuit represents the DAC, providing the audio sink functionality. The AMP circuit represents the analog hardware between the DAC and the speaker. The AMP circuit might handle jack detection or other endpoint hardware details.
+Creating a render stream on an Endpoint Audio Path composed of three circuits: DSP, CODEC, and AMP. The DSP circuit functions as the streaming circuit, and has provided an EvtAcxPinCreateStream handler. The DSP circuit also functions as a filter circuit: depending on the stream mode and configuration, it can apply signal processing to the audio data. The CODEC circuit represents the DAC, providing the audio sink functionality. The AMP circuit represents the analog hardware between the DAC and the speaker. The AMP circuit might handle jack detection or other endpoint hardware details.
 
 1. AudioKSE calls NtCreateFile to create a stream.
-2. This filters through ACX and ends with calling the DSP circuit’s EvtAcxPinCreateStream with the pin, dataformat (including mode), and device information.  
-3. The DSP circuit validates the dataformat information to ensure it can handle the created stream.  
-4. The DSP circuit creates the ACXSTREAM object to represent the stream.  
-5. The DSP circuit allocates a private context structure and associates it with the ACXSTREAM.  
-6. The DSP circuit returns flow of execution to the ACX framework, which then calls into the next circuit in the Endpoint Audio Path, the CODEC circuit.  
-7. The CODEC circuit validates the dataformat information to confirm it can handle rendering the data.  
-8. The CODEC circuit allocates a private context structure and associates it with the ACXSTREAM.  
+2. This filters through ACX and ends with calling the DSP circuit's EvtAcxPinCreateStream with the pin, dataformat (including mode), and device information.
+3. The DSP circuit validates the dataformat information to ensure it can handle the created stream.
+4. The DSP circuit creates the ACXSTREAM object to represent the stream.
+5. The DSP circuit allocates a private context structure and associates it with the ACXSTREAM.
+6. The DSP circuit returns flow of execution to the ACX framework, which then calls into the next circuit in the Endpoint Audio Path, the CODEC circuit.
+7. The CODEC circuit validates the dataformat information to confirm it can handle rendering the data.
+8. The CODEC circuit allocates a private context structure and associates it with the ACXSTREAM.
 9. The CODEC circuit adds itself as a stream sink to the ACXSTREAM.
-10. The CODEC circuit returns flow of execution to the ACX framework, which then calls into the next circuit in the Endpoint Audio Path, the AMP circuit.  
-11. The AMP circuit allocates a private context structure and associates it with the ACXSTREAM.  
-12. The AMP circuit returns flow of execution to the ACX framework. At this point, stream creation is complete.  
+10. The CODEC circuit returns flow of execution to the ACX framework, which then calls into the next circuit in the Endpoint Audio Path, the AMP circuit.
+11. The AMP circuit allocates a private context structure and associates it with the ACXSTREAM.
+12. The AMP circuit returns flow of execution to the ACX framework. At this point, stream creation is complete.
 
-#### Large buffer streams  
+#### Large buffer streams
 
-Large buffer streams are created on the ACXPIN designated for Offload by the ACXCIRCUIT’s ACXAUDIOENGINE element.
+Large buffer streams are created on the ACXPIN designated for Offload by the ACXCIRCUIT's ACXAUDIOENGINE element.
 
-To support offload streams, the device driver should do the following during the streaming circuit creation:
+To support offload streams, the device driver should do the following actions during streaming circuit creation:
 
 1. Create the Host, Offload, and Loopback ACXPIN objects and add them to the ACXCIRCUIT.
-2. Create ACXVOLUME, ACXMUTE, and ACXPEAKMETER elements. These will not be added directly to the ACXCIRCUIT.
+2. Create ACXVOLUME, ACXMUTE, and ACXPEAKMETER elements. These won't be added directly to the ACXCIRCUIT.
 3. Initialize an [ACX_AUDIOENGINE_CONFIG structure](/windows-hardware/drivers/ddi/acxelements/ns-acxelements-acx_audioengine_config), assigning the HostPin, OffloadPin, LoopbackPin, VolumeElement, MuteElement, and PeakMeterElement objects.
 4. Create the ACXAUDIOENGINE element.
 
-Drivers will need to perform similar steps to add an ACXSTREAMAUDIOENGINE element when creating a stream on the Offload pin.
+Drivers need to perform similar steps to add an ACXSTREAMAUDIOENGINE element when creating a stream on the Offload pin.
 
-## Stream resource allocation  
+## Stream resource allocation
 
-The streaming model for ACX is packet-based, with support for one or two packets for a stream. The Render or Capture ACXPIN for the streaming circuit is given a request to allocate the memory packets that are used in the stream. To support Rebalance, the allocated memory must be system memory instead of device memory mapped into the system. The driver may use existing WDF functions to perform the allocation, and will return an array of pointers to the buffer allocations. If the driver requires a single contiguous block, it may allocate both packets as a single buffer. The second packet will have `WdfMemoryDescriptorTypeInvalid` and the offset of the second packet will be into the buffer described by the first packet.
+The streaming model for ACX is packet-based, with support for one or two packets for a stream. The Render or Capture ACXPIN for the streaming circuit is given a request to allocate the memory packets that are used in the stream. To support Rebalance, the allocated memory must be system memory instead of device memory mapped into the system. The driver can use existing WDF functions to perform the allocation, and return an array of pointers to the buffer allocations. If the driver requires a single contiguous block, it can allocate both packets as a single buffer. The second packet has `WdfMemoryDescriptorTypeInvalid` and the offset of the second packet is into the buffer described by the first packet.
 
-If a single packet is allocated, the driver must allocate a page-aligned buffer with a length that is page-divisible. The offset for the single packet also must be 0. The ACX framework will map this packet into user mode twice, back to back:
+If a single packet is allocated, the driver must allocate a page-aligned buffer with a length that is page-divisible. The offset for the single packet also must be 0. The ACX framework maps this packet into user mode twice, back to back:
 
 | packet 0 | packet 0 |
 
-This enables GetBuffer to return a pointer to a single contiguous memory buffer that may span from the end of the buffer to the beginning without requiring the application to handle wrapping the memory access.  
+This enables GetBuffer to return a pointer to a single contiguous memory buffer that can span from the end of the buffer to the beginning without requiring the application to handle wrapping the memory access.
 
-If two packets are allocated, they are mapped into user mode :  
+If two packets are allocated, they're mapped into user mode:
 
 | packet 0  | packet 1 |
 
-With the initial ACX packet streaming, there are only two packets allocated at the beginning. The client virtual memory mapping will remain valid without changing for the life of the stream once the allocation and mapping has been performed. There is one event associated with the stream to indicate packet completion for both packets. There will also be a shared buffer that the ACX framework will use to communicate which packet finished with the event.
+With the initial ACX packet streaming, there are only two packets allocated at the beginning. After the allocation and mapping are performed, the client virtual memory mapping remains valid, without changing for the life of the stream. There's one event associated with the stream to indicate packet completion for both packets. There's also a shared buffer that the ACX framework uses to communicate which packet finished with the event.
 
-For PacketCount=1, if the application asks for 10ms of data, the audio stack will send a request for a single 10ms buffer to the driver (it won’t double the buffer size sent to the driver).
- 
-The driver will allocate a page-aligned buffer that’s at least 10ms long. For a 48k 2ch 2 byte per sample stream, the smallest timer-driven buffer that can be allocated is 1024 samples which is 21.333ms. For a 48k 8ch 2bytes per sample stream, the smallest timer-driven buffer that can be allocated is 512 samples or 10.667ms.
+For PacketCount=1, if the application asks for 10 ms of data, the audio stack sends a request for a single 10-ms buffer to the driver (it doesn't double the buffer size sent to the driver).
 
-The driver will allocate a page-aligned buffer that’s at least 10ms long. For a 48k 2ch 2 byte per sample stream, the smallest timer-driven buffer that can be allocated is 1024 samples (one page of memory) which is 21.333ms. For a 48k 8ch 2bytes per sample stream, the smallest timer-driven buffer that can be allocated is 512 samples (one page of memory) or 10.667ms. For a 48k 6ch 2 byte per sample stream, the smallest timer-driven buffer is still 1024 samples (three pages of memory, to ensure the end of a sample aligns with the end of the buffer) which is 21.333ms.
- 
-The ACX framework will map this page-aligned buffer into the user-mode process twice, back to back. The user-mode process can then write up to a buffer’s worth of data into the user-mode mapping starting anywhere in the buffer without having to do any wrapping.
+The driver allocates a page-aligned buffer that's at least 10 ms long. For a 48k 2ch 2 bytes per sample stream, the smallest timer-driven buffer that can be allocated is 1024 samples, which are 21.333 ms. For a 48k 8ch 2bytes per sample stream, the smallest timer-driven buffer that can be allocated is 512 samples or 10.667 ms.
 
-NotifyPacketComplete should be called by the driver when it has read the entirety of the packet from system memory, so that the system knows it can write the next packet of audio data to the packet’s buffer.
- 
-There will be a delay between NotifyPacketComplete and when the last sample of that packet is actually rendered; this delay is expressed as the result from `EvtAcxStreamGetHwLatency`.
+The driver allocates a page-aligned buffer that's at least 10 ms long. For a 48k 2ch 2 bytes per sample stream, the smallest timer-driven buffer can be allocated is 1,024 samples (one page of memory) which is 21.333 ms. For a 48k 8ch 2bytes per sample stream, the smallest timer-driven buffer that can be allocated is 512 samples (one page of memory) or 10.667 ms. For a 48k 6ch 2 bytes per sample stream, the smallest timer-driven buffer is still 1,024 samples (three pages of memory, to ensure the end of a sample aligns with the end of the buffer) which is 21.333 ms.
+
+The ACX framework maps this page-aligned buffer into the user-mode process twice, back to back. The user-mode process can then write up to a buffer's worth of data into the user-mode mapping starting anywhere in the buffer without having to do any wrapping.
+
+NotifyPacketComplete should be called by the driver when it has read the entirety of the packet from system memory, so that the system knows it can write the next packet of audio data to the packet's buffer.
+
+There's a delay between NotifyPacketComplete and when the last sample of that packet is rendered; this delay is expressed as the result from `EvtAcxStreamGetHwLatency`.
 
 ### Ping-pong buffers
 
-Ping-pong buffers can be used, where one buffer is being read (ping), while the other is being filled (pong). This allows one buffer to be processed while the other collects the next set of data. In ACX the driver internally takes care of switching when a buffer is filled. Once the ping buffer is completely filled, it is notified with a registered callback. In the callback, the processed buffer's address is obtained, and the buffer is resubmitted. Meanwhile, the pong buffer collects data in the background. This mechanism ensures continuous data processing without interruptions.
+Ping-pong buffers can be used, where one buffer is being read (ping), while the other is being filled (pong). This allows one buffer to be processed while the other collects the next set of data. In ACX the driver internally takes care of switching when a buffer is filled. After the ping buffer is filled, it's notified with a registered callback. In the callback, the processed buffer's address is obtained, and the buffer is resubmitted. Meanwhile, the pong buffer collects data in the background. This mechanism ensures continuous data processing without interruptions.
 
-For a ping-pong buffer, the requested packet size will be for a single buffer (either ping or pong separately) and the packet count will be two.
- 
+For a ping-pong buffer, the requested packet size is for a single buffer (either ping or pong separately) and the packet count is two.
+
 When sharing a single buffer between two packets, the second packet should be configured as described in the [EVT_ACX_STREAM_ALLOCATE_RTPACKETS callback function](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_allocate_rtpackets). The part of the buffer described by the first packet (memory, offset, and length) will be treated as the ping buffer while the part of the buffer described by the second packet (no memory to indicate the buffer is shared with the first packet, plus offset that points to the buffer just after the first packet) will be treated as the pong buffer.
 
 ### Adding additional information to the packet header
 
-It is only possible to add additional information to the packet header information, for example for logging or bookkeeping, at the beginning of the packet for ping/pong event driven streams (where packet count = 2). For timer driven streams where only one packet is allocated, the one packet needs to be fully page aligned (starting on a page boundary and ending on a page boundary) since the packet is mapped into User Mode twice. 
+It's only possible to add additional information to the packet header information, for example for logging or bookkeeping, at the beginning of the packet for ping/pong event driven streams (where packet count = 2). For timer driven streams where only one packet is allocated, the one packet needs to be fully page aligned (starting on a page boundary and ending on a page boundary) since the packet is mapped into User Mode twice.
 
-:::image type="content" source="images/audio-acx-stream-two-buffers.png" alt-text="Diagram illustrating two buffers and how they are accessed in kernel and user mode memory.":::
- 
+:::image type="content" source="images/audio-acx-stream-two-buffers.png" alt-text="Diagram illustrating two buffers and how they're accessed in kernel and user mode memory.":::
+
 In this case, the app can write past the end of the first mapping into the second mapping, which writes at the end of the system buffer then at the beginning of the same system buffer.
- 
+
 The single allocated buffer needs to be page aligned because the virtual memory mapping into user mode can only happen on a per-page basis.
 
 ### Timer-driven buffers
@@ -229,18 +229,18 @@ The single allocated buffer needs to be page aligned because the virtual memory 
 Timer-driven buffers in ACX can be used to ensure a glitch-free audio experience by maintaining precise timing and synchronization. For timer-driven buffers in ACX:
 
 - The client uses the value from EvtAcxStreamGetPresentationPosition to determine how many frames can be written.
-- The presentation position needs to be updated more than once per pass through the buffer. The client will write to the buffer starting at the position it last wrote to through the position the driver reports (which should be the data the hardware consumed since the last time the position was queried).
+- The presentation position needs to be updated more than once per pass through the buffer. The client writes to the buffer starting at the position it last wrote to through the position the driver reports (which should be the data the hardware consumed since the last time the position was queried).
 - The more granular the position, the less likely there will be glitching.
-- In timer-driven buffers the DSP can’t just consume the entire buffer before updating the position.
-- In timer-driven, the driver could potentially split the one timer-driven buffer into multiple DSP buffers, updating position as the DSP works through each buffer (e.g. a 20ms timer-driven buffer split into 10 2ms buffers would behave reasonably well in timer-driven mode).
+- In timer-driven buffers the DSP can't just consume the entire buffer before updating the position.
+- In timer-driven, the driver could potentially split the one timer-driven buffer into multiple DSP buffers, updating position as the DSP works through each buffer (for example, a 20-ms timer-driven buffer split into 10 2-ms buffers would behave reasonably well in timer-driven mode).
 
 ### Large buffer streams packet sizes
 
 When exposing support for Large Buffers, the driver will also provide a callback that is used to determine the minimum and maximum packet sizes for Large Buffer playback.
-  
+
 The packet size for stream buffer allocation is determined based on the minimum and maximum.
 
-Since the minimum and maximum buffer sizes may be volatile, the driver can fail the packet allocation call if the minimum and maximum have changed.
+Because the minimum and maximum buffer sizes can be volatile, the driver can fail the packet allocation call if there are changes to the minimum and maximum buffer sizes.
 
 ### Specifying ACX buffer constraints
 
@@ -328,7 +328,7 @@ Later in the EvtCircuitCompositeCircuitInitialize function, the AddPropertyToCir
     status = AddPropertyToCircuitInterface(Circuit, ARRAYSIZE(DspC_InterfaceProperties), DspC_InterfaceProperties);
 ```
 
-The AddPropertyToCircuitInterface helper function takes the [AcxCircuitGetSymbolicLinkName](/windows-hardware/drivers/ddi/acxcircuit/nf-acxcircuit-acxcircuitgetsymboliclinkname) for the circuit and then calls [IoGetDeviceInterfaceAlias](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfacealias) to locate the audio interface used by the circuit.
+The AddPropertyToCircuitInterface helper function takes the [AcxCircuitGetSymbolicLinkName](/windows-hardware/drivers/ddi/acxcircuit/nf-acxdevice-acxcircuitgetsymboliclinkname) for the circuit and then calls [IoGetDeviceInterfaceAlias](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfacealias) to locate the audio interface used by the circuit.
 
 Then the SetDeviceInterfacePropertyDataMultiple function calls [IoSetDeviceInterfacePropertyData function](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacepropertydata) to modify the current value of the device interface property - the KS audio property values on the audio interface for the ACXCIRCUIT.
 
@@ -396,40 +396,38 @@ exit:
     return status;
 }
 ```
-  
+
 ### Stream state changes
 
-When a stream state change occurs, each stream object in the Endpoint Audio Path for the stream will receive a notification event from the ACX framework. The order in which this happens depends on the state change and the flow of the stream.
+When a stream state change occurs, each stream object in the Endpoint Audio Path for the stream receives a notification event from the ACX framework. The order in which this happens depends on the state change and the flow of the stream.
 
-- For Render streams going from a less-active state to a more-active state, the streaming circuit (which registered the SINK) will receive the event first. Once it’s handled the event, the next circuit in the Endpoint Audio Path will receive the event.
-- For Render streams going from a more-active state to a less-active state, the streaming circuit will receive the event last.  
+- For render streams going from a less-active state to a more-active state, the streaming circuit (which registered the SINK) receives the event first. Once the circuit handles the event, the next circuit in the Endpoint Audio Path receives the event.
+- For render streams going from a more-active state to a less-active state, the streaming circuit receives the event last.
 
-- For Capture streams going from a less-active state to a more-active state, the streaming circuit will receive the event last.  
-- For Capture streams going from a more-active state to a less-active state, the streaming circuit will receive the event first.  
+- For Capture streams going from a less-active state to a more-active state, the streaming circuit receives the event last.
+- For Capture streams going from a more-active state to a less-active state, the streaming circuit receives the event first.
 
-The above ordering is the default provided by the ACX framework. A driver can request the opposite behavior by setting AcxStreamBridgeInvertChangeStateSequence (defined in [ACX_STREAM_BRIDGE_CONFIG_FLAGS](/windows-hardware/drivers/ddi/acxstreams/ne-acxstreams-acx_stream_bridge_config_flags)) when creating the ACXSTREAMBRIDGE that the driver adds to the streaming circuit.
-  
-### Streaming audio data  
+The ordering is the default provided by the ACX framework. A driver can request the opposite behavior by setting AcxStreamBridgeInvertChangeStateSequence (defined in [ACX_STREAM_BRIDGE_CONFIG_FLAGS](/windows-hardware/drivers/ddi/acxstreams/ne-acxstreams-acx_stream_bridge_config_flags)) when creating the ACXSTREAMBRIDGE that the driver adds to the streaming circuit.
 
-Once the stream is created and the appropriate buffers are allocated, the stream is in the Pause state awaiting stream start. When the client puts the stream into Play state, the ACX framework will call all ACXSTREAM objects associated with the stream to indicate the stream state is in Play. The ACXPIN will then be placed in the Play state, at which point data will start flowing.  
+### Streaming audio data
+
+After you create the stream and allocate the appropriate buffers, the stream is in the Pause state awaiting stream start. When the client puts the stream into Play state, the ACX framework calls all ACXSTREAM objects associated with the stream to indicate the stream state is in Play. The ACXPIN is then placed in the Play state, at which point data starts flowing.
 
 #### Rendering audio data
 
-Once the stream is created and the resources are allocated, the application will call Start on the stream to start playback. Note that an application should call GetBuffer/ReleaseBuffer before starting the stream to ensure the first packet that will start playing immediately will have valid audio data.  
+After you create the stream and allocate the resources, the application calls Start on the stream to start playback. An application should call GetBuffer/ReleaseBuffer before starting the stream to ensure the first packet that starts playing has valid audio data.
 
-The client starts by pre-rolling a buffer. When the client calls ReleaseBuffer, this will translate to a call in AudioKSE that will call into the ACX layer, which will call [EvtAcxStreamSetRenderPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_set_render_packet) on the active ACXSTREAM. The property will include the packet index (0-based) and, if appropriate, an EOS flag with the byte offset of the end of the stream in the current packet.  
-  
-After the streaming circuit finishes with a packet, it will trigger the buffer-complete notification that will release clients waiting to fill the next packet with render audio data.  
+The client starts by prerolling a buffer. When the client calls ReleaseBuffer, this translates to a call in AudioKSE that will call into the ACX layer, which will call [EvtAcxStreamSetRenderPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_set_render_packet) on the active ACXSTREAM. The property includes the packet index (zero-based) and, if appropriate, an EOS flag with the byte offset of the end of the stream in the current packet.
+
+After the streaming circuit finishes with a packet, it will trigger the buffer-complete notification that will release clients waiting to fill the next packet with render audio data.
 
 The Timer Driven streaming mode is supported and is indicated by using a PacketCount value of 1 when calling the driver's [EvtAcxStreamAllocateRtPackets](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_allocate_rtpackets) callback.
 
 #### Capturing audio data
 
-Once the stream is created and the resources are allocated, the application will call Start on the stream to start playback.  
+When the stream is running, the source circuit fills the capture packet with audio data. After the first packet is filled, the source circuit releases the packet to the ACX framework. At this point, the ACX framework signals the stream notification event.
 
-When the stream is running, the source circuit fills the capture packet with audio data. Once the first packet is filled, the source circuit releases the packet to the ACX framework. At this point the ACX framework signals the stream notification event.  
-
-Once the stream notification has been signaled, the client can send [KSPROPERTY_RTAUDIO_GETREADPACKET](./ksproperty-rtaudio-getreadpacket.md) to get the index (0-based) of the packet that’s finished capturing. When the client has sent GETCAPTUREPACKET, the driver can assume all previous packets have been processed and are available for filling.  
+After the stream notification has been signaled, the client can send [KSPROPERTY_RTAUDIO_GETREADPACKET](./ksproperty-rtaudio-getreadpacket.md) to get the index (zero-based) of the packet that's finished capturing. When the client has sent GETCAPTUREPACKET, the driver can assume all previous packets have been processed and are available for filling.
 
 For Burst capture, the source circuit can release a new packet to the ACX framework as soon as GETREADPACKET has been called.
 
@@ -439,7 +437,7 @@ The client can also use [KSPROPERTY_RTAUDIO_PACKETVREGISTER](/windows-hardware/d
 
 There can be situations, such as when a driver implements burst capture (as in a key word spotter implementation), where the legacy kernel streaming packet handling behavior needs to be used instead of the PacketVRegister. To use the previous packet-based behavior, the driver should return STATUS_NOT_SUPPORTED for [KSPROPERTY_RTAUDIO_PACKETVREGISTER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_packetvregister_property).
 
-The following sample shows how to do this in the [AcxStreamInitAssignAcxRequestPreprocessCallback](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxstreaminitassignacxrequestpreprocesscallback) for an ACXSTREAM. For more information see [AcxStreamDispatchAcxRequest](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxstreamdispatchacxrequest).
+The following sample shows how to do this in the [AcxStreamInitAssignAcxRequestPreprocessCallback](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxstreaminitassignacxrequestpreprocesscallback) for an ACXSTREAM. For more information, see [AcxStreamDispatchAcxRequest](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxstreamdispatchacxrequest).
 
 ```cpp
 Circuit_EvtStreamRequestPreprocess(
@@ -472,68 +470,68 @@ Circuit_EvtStreamRequestPreprocess(
 }
 ```
 
-#### Stream position  
+#### Stream position
 
-The ACX framework will call the [EvtAcxStreamGetPresentationPosition](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_presentation_position)   callback to get the current stream position. The current stream position will include the PlayOffset and the WriteOffset.  
+The ACX framework calls the [EvtAcxStreamGetPresentationPosition](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_presentation_position)   callback to get the current stream position. The current stream position includes the PlayOffset and the WriteOffset.
 
-The WaveRT streaming model allows the audio driver to expose a HW Position register to the client. The ACX streaming model will not support exposing any HW registers since these would prevent a rebalance from happening.  
+The WaveRT streaming model allows the audio driver to expose an HW position register to the client. The ACX streaming model won't support exposing any HW registers since these would prevent a rebalance from happening.
 
-Each time the streaming circuit completes a packet, it calls [AcxRtStreamNotifyPacketComplete](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxrtstreamnotifypacketcomplete) with the 0-based packet index and the QPC value taken as close to packet completion as possible (as an example, the QPC value can be calculated by the Interrupt Service Routine). This information is available to clients through [KSPROPERTY_RTAUDIO_PACKETVREGISTER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_packetvregister_property), which returns a pointer to a structure that contains the CompletedPacketCount, the CompletedPacketQPC, and a value that combines the two (which allows the client to ensure the CompletedPacketCount and CompletedPacketQPC are from the same packet).
-  
+Each time the streaming circuit completes a packet, it calls [AcxRtStreamNotifyPacketComplete](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxrtstreamnotifypacketcomplete) with the zero-based packet index and the QPC value taken as close to packet completion as possible (as an example, the QPC value can be calculated by the Interrupt Service Routine). This information is available to clients through [KSPROPERTY_RTAUDIO_PACKETVREGISTER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_packetvregister_property), which returns a pointer to a structure that contains the CompletedPacketCount, the CompletedPacketQPC, and a value that combines the two (which allows the client to ensure the CompletedPacketCount and CompletedPacketQPC are from the same packet).
+
 #### Stream state transitions
 
 After a stream has been created, ACX will transition the stream to different states using the following callbacks:
 
-- [EvtAcxStreamPrepareHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_prepare_hardware) will transition the stream from the AcxStreamStateStop state to the AcxStreamStatePause state. The driver should reserve required hardware such as DMA Engines when it receives EvtAcxStreamPrepareHardware.
-- [EvtAcxStreamRun](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_run) will transition the stream from the AcxStreamStatePause state to the AcxStreamStateRun state.
-- [EvtAcxStreamPause](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_pause) will transition the stream from the AcxStreamStateRun state to the AcxStreamStatePause state.
-- [EvtAcxStreamReleaseHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware) will transition the stream from the AcxStreamStatePause state to the AcxStreamStateStop state. The driver should release required hardware such as DMA engines when it receives EvtAcxStreamReleaseHardware.
+- [EvtAcxStreamPrepareHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_prepare_hardware) transitions the stream from the AcxStreamStateStop state to the AcxStreamStatePause state. The driver should reserve required hardware such as DMA Engines when it receives EvtAcxStreamPrepareHardware.
+- [EvtAcxStreamRun](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_run) transitions the stream from the AcxStreamStatePause state to the AcxStreamStateRun state.
+- [EvtAcxStreamPause](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_pause) transitions the stream from the AcxStreamStateRun state to the AcxStreamStatePause state.
+- [EvtAcxStreamReleaseHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware) transitions the stream from the AcxStreamStatePause state to the AcxStreamStateStop state. The driver should release required hardware such as DMA engines when it receives EvtAcxStreamReleaseHardware.
 
-The stream can receive the EvtAcxStreamPrepareHardware callback after it has received the EvtAcxStreamReleaseHardware callback. This will transition the stream back to the AcxStreamStatePause state.
+The stream can receive the EvtAcxStreamPrepareHardware callback after it has received the EvtAcxStreamReleaseHardware callback. This transitions the stream back to the AcxStreamStatePause state.
 
-Packet allocation with EvtAcxStreamAllocateRtPackets will normally happen before the first call to EvtAcxStreamPrepareHardware. The allocated packets will normally be freed with EvtAcxStreamFreeRtPackets after the last call to EvtAcxStreamReleaseHardware. This ordering is not guaranteed.
+Packet allocation with EvtAcxStreamAllocateRtPackets normally happens before the first call to EvtAcxStreamPrepareHardware. The allocated packets are normally freed with EvtAcxStreamFreeRtPackets after the last call to EvtAcxStreamReleaseHardware. This ordering isn't guaranteed.
 
-The AcxStreamStateAcquire state is not used. ACX removes the need for the driver to have the acquire state, as this state is implicit with the prepare hardware ([EvtAcxStreamPrepareHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_prepare_hardware)) and release hardware ([EvtAcxStreamReleaseHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware)) callbacks.
+The AcxStreamStateAcquire state isn't used. ACX removes the need for the driver to have the acquire state, as this state is implicit with the prepare hardware ([EvtAcxStreamPrepareHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_prepare_hardware)) and release hardware ([EvtAcxStreamReleaseHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware)) callbacks.
 
-### Large buffer streams and offload engine support  
+### Large buffer streams and offload engine support
 
 ACX uses the ACXAUDIOENGINE element to designate an ACXPIN that will handle Offload stream creation and the different elements required for offload stream volume, mute, and peak meter state. This is similar to the existing audio engine node in WaveRT drivers.
 
 ## Stream close process
 
-When the client closes the stream, the driver will receive EvtAcxStreamPause and EvtAcxStreamReleaseHardware before the ACXSTREAM object is deleted by the ACX Framework. The driver can supply the standard WDF EvtCleanupCallback entry in the [WDF_OBJECT_ATTRIBUTES structure](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) when calling AcxStreamCreate to perform final cleanup for the ACXSTREAM. WDF will call EvtCleanupCallback when the framework attempts to delete the object. Do not use EvtDestroyCallback, which is only called once all references to the object have been released which is indeterminate.
+When the client closes the stream, the driver receives EvtAcxStreamPause and EvtAcxStreamReleaseHardware before the ACXSTREAM object is deleted by the ACX Framework. The driver can supply the standard WDF EvtCleanupCallback entry in the [WDF_OBJECT_ATTRIBUTES structure](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) when calling AcxStreamCreate to perform final cleanup for the ACXSTREAM. WDF calls EvtCleanupCallback when the framework attempts to delete the object. Don't use EvtDestroyCallback, which is only called once all references to the object have been released which is indeterminate.
 
 The driver should clean up system memory resources associated with the ACXSTREAM object in EvtCleanupCallback, if the resources haven't already been cleaned up in EvtAcxStreamReleaseHardware.
 
-It is important that the driver does not clean up resources that support the stream, until requested to by the client.
+It's important that the driver doesn't clean up resources that support the stream until the client requests it.
 
-The AcxStreamStateAcquire state is not used. ACX removes the need for the driver to have the acquire state, as this state is implicit with the prepare hardware (EvtAcxStreamPrepareHardware) and release hardware (EvtAcxStreamReleaseHardware) callbacks.
+The AcxStreamStateAcquire state isn't used. ACX removes the need for the driver to have the acquire state, as this state is implicit with the prepare hardware (EvtAcxStreamPrepareHardware) and release hardware (EvtAcxStreamReleaseHardware) callbacks.
 
-### Stream surprise removal and invalidation  
+### Stream surprise removal and invalidation
 
-If the driver determines the stream has become invalid (e.g. the jack goes unplugged), the circuit will shut down all streams.  
+If the driver determines the stream has become invalid (for example, the jack goes unplugged), the circuit shuts down all streams.
 
 ### Stream memory cleanup
 
-The disposal of the stream's resources can be done in the driver's stream context cleanup (not destroy). Never put the disposal of anything that is shared in an object's context destroy callback. This guidance applies to all the ACX objects.
+The disposal of the stream's resources can be done in the driver's stream context cleanup (not destroy). Don't put the disposal of anything that is shared in an object's context destroy callback. This guidance applies to all the ACX objects.
 
-The destroy callback is invoked after the last ref is gone, when it is unknown.
+The destroy callback is invoked after the last ref is gone, when it's unknown.
 
-In general, the stream's cleanup callback is called when the handle is closed. One exception to this is when the driver created the stream in its callback. If ACX failed to add this stream to its stream-bridge just before returning from the stream-create operation, the stream is cancelled async, and the current thread returns an error to the create-stream client. The stream should not have any mem allocations allocated at this point. For more information, see [EVT_ACX_STREAM_RELEASE_HARDWARE callback](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware).
+In general, the stream's cleanup callback is called when the handle is closed. One exception is when the driver created the stream in its callback. If ACX failed to add this stream to its stream-bridge just before returning from the stream-create operation, the stream is canceled async, and the current thread returns an error to the create-stream client. The stream shouldn't have any memory allocations at this point. For more information, see [EVT_ACX_STREAM_RELEASE_HARDWARE callback](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware).
 
-### Stream memory clean up sequence
+### Stream memory clean-up sequence
 
-The stream buffer is a system resource and it should be released only when the user mode client closes the stream’s handle. The buffer (which is different from the device’s hardware resources) has the same lifetime as the stream’s handle. When the client closes the handle ACX invokes the stream objects cleanup callback and then the stream obj’s delete callback when the ref on the object goes to zero.
+The stream buffer is a system resource and it should be released only when the user mode client closes the stream's handle. The buffer (which is different from the device's hardware resources) has the same lifetime as the stream's handle. When the client closes the handle, ACX invokes the stream object's cleanup callback, and then the stream object's delete callback when the reference count on the object goes to zero.
 
-It is possible for ACX to defer a STREAM obj deletion to a work-item when the driver created a stream-obj and then it failed the create-stream callback. To prevent a deadlock with a shutdown WDF thread, ACX defers the deletion to a different thread. To avoid any possible side-effects of this behavior (deferred release of resources), the driver can release the allocated stream resources before it returns an error from the stream-create.
+It's possible for ACX to defer a STREAM obj deletion to a work-item when the driver created a stream-obj and then it failed the create-stream callback. To prevent a deadlock with a shutdown WDF thread, ACX defers the deletion to a different thread. To avoid any possible side-effects of this behavior (deferred release of resources), the driver can release the allocated stream resources before it returns an error from the stream-create.
 
 The driver must free the audio buffers when ACX invokes the [EVT_ACX_STREAM_FREE_RTPACKETS callback](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_free_rtpackets). This callback is called when the user closes the stream handles.
 
-Because RT buffers are mapped in user-mode, the buffer lifetime is the same as the handle lifetime. The driver should not attempt to release/free the audio buffers before ACX invokes this callback.
+Because RT buffers are mapped in user-mode, the buffer lifetime is the same as the handle lifetime. The driver shouldn't attempt to release or free the audio buffers before ACX invokes this callback.
 
 [EVT_ACX_STREAM_FREE_RTPACKETS callback](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_free_rtpackets) should be call after [EVT_ACX_STREAM_RELEASE_HARDWARE callback](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware) and end before EvtDeviceReleaseHardware.
 
-This callback may happen after the driver processed the WDF release hardware callback, because the user-mode client can hold on to its handles for long time. The driver should not attempt to wait for these handles to go away, this will just create a 0x9f  DRIVER_POWER_STATE_FAILURE bug check. See [EVT_WDF_DEVICE_RELEASE_HARDWARE callback function](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware) for more information.
+This callback might happen after the driver processed the WDF release hardware callback, because the user-mode client can hold on to its handles for long time. The driver shouldn't attempt to wait for these handles to go away. This action creates a 0x9f DRIVER_POWER_STATE_FAILURE bug check. See [EVT_WDF_DEVICE_RELEASE_HARDWARE callback function](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware) for more information.
 
 This EvtDeviceReleaseHardware code from the sample ACX driver, shows an example of calling [AcxDeviceRemoveCircuit](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceremovecircuit)  and then releasing the streaming h/w memory.
 
@@ -549,7 +547,7 @@ This EvtDeviceReleaseHardware code from the sample ACX driver, shows an example 
 
 In summary:
 
-*wdf device release hardware -> release device’s h/w resources*
+WDF device release hardware -> release device's hardware resources
 
 [AcxStreamFreeRtPackets](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_free_rtpackets) -> release/free audio buffer associated with handle
 
@@ -571,7 +569,7 @@ This structure identifies the driver callbacks for streaming to the ACX framewor
 
 #### EvtAcxStreamAllocateRtPackets
 
-The [EvtAcxStreamAllocateRtPackets](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_allocate_rtpackets) event tells the driver to allocate RtPackets for streaming. An AcxRtStream will receive PacketCount = 2 for event driven streaming or PacketCount = 1 for timer based streaming. If the driver uses a single buffer for both packets, the second RtPacketBuffer should have a [WDF_MEMORY_DESCRIPTOR](/windows-hardware/drivers/ddi/wdfmemory/ns-wdfmemory-_wdf_memory_descriptor) with Type = WdfMemoryDescriptorTypeInvalid with an RtPacketOffset that aligns with the end of the first packet (packet[2].RtPacketOffset = packet[1].RtPacketOffset+packet[1].RtPacketSize).
+The [EvtAcxStreamAllocateRtPackets](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_allocate_rtpackets) event tells the driver to allocate RtPackets for streaming. An AcxRtStream receives PacketCount = 2 for event driven streaming or PacketCount = 1 for timer based streaming. If the driver uses a single buffer for both packets, the second RtPacketBuffer should have a [WDF_MEMORY_DESCRIPTOR](/windows-hardware/drivers/ddi/wdfmemory/ns-wdfmemory-_wdf_memory_descriptor) with Type = WdfMemoryDescriptorTypeInvalid with an RtPacketOffset that aligns with the end of the first packet (packet[2].RtPacketOffset = packet[1].RtPacketOffset+packet[1].RtPacketSize).
 
 #### EvtAcxStreamFreeRtPackets
 
@@ -585,17 +583,17 @@ The [EvtAcxStreamGetHwLatency](/windows-hardware/drivers/ddi/acxstreams/nc-acxst
 
 The [EvtAcxStreamSetRenderPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_set_render_packet) event tells the driver which packet was just released by the client. If there are no glitches, this packet should be (CurrentRenderPacket + 1), where CurrentRenderPacket is the packet the driver is currently streaming from.
 
-Flags can be 0 or `KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM = 0x200`, indicating the Packet is the last packet in the stream, and EosPacketLength is a valid length in bytes for the packet. For more information see _OptionsFlags_ in [KSSTREAM_HEADER structure (ks.h)](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header).
+Flags can be 0 or `KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM = 0x200`, indicating the Packet is the last packet in the stream, and EosPacketLength is a valid length in bytes for the packet. For more information, see *OptionsFlags* in [KSSTREAM_HEADER structure (ks.h)](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header).
 
 The driver should continue to increase the CurrentRenderPacket as packets are rendered instead of changing its CurrentRenderPacket to match this value.
 
 #### EvtAcxStreamGetCurrentPacket
 
-The [EvtAcxStreamGetCurrentPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_current_packet) tells the driver to indicate which packet (0-based) is currently being rendered to the hardware or is currently being filled by the capture hardware.
+The [EvtAcxStreamGetCurrentPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_current_packet) tells the driver to indicate which packet (zero-based) is currently being rendered to the hardware or is currently being filled by the capture hardware.
 
 #### EvtAcxStreamGetCapturePacket
 
-The [EvtAcxStreamGetCapturePacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_capture_packet) tells the driver to indicate which packet (0-based) was completely filled most recently, including the QPC value at the time the driver started filling the packet.
+The [EvtAcxStreamGetCapturePacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_capture_packet) tells the driver to indicate which packet (zero-based) was filled most recently, including the QPC value at the time the driver started filling the packet.
 
 #### EvtAcxStreamGetPresentationPosition
 
@@ -603,15 +601,12 @@ The [EvtAcxStreamGetPresentationPosition](/windows-hardware/drivers/ddi/acxstrea
 
 ### STREAM STATE EVENTS
 
-The streaming state for an ACXSTREAM is managed by the following APIs.
+The following APIs manage the streaming state for an ACXSTREAM.
 
-[EVT_ACX_STREAM_PREPARE_HARDWARE](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_prepare_hardware)
-
-[EVT_ACX_STREAM_RELEASE_HARDWARE](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware)
-
-[EVT_ACX_STREAM_RUN](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_run)
-
-[EVT_ACX_STREAM_PAUSE](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_pause)
+- [EVT_ACX_STREAM_PREPARE_HARDWARE](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_prepare_hardware)
+- [EVT_ACX_STREAM_RELEASE_HARDWARE](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware)
+- [EVT_ACX_STREAM_RUN](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_run)
+- [EVT_ACX_STREAM_PAUSE](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_pause)
 
 ### Streaming ACX APIs
 
@@ -625,12 +620,10 @@ AcxRtStreamCreate creates an ACX Stream that can be used to control streaming be
 
 #### [AcxRtStreamNotifyPacketComplete](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxrtstreamnotifypacketcomplete)
 
-The driver calls this ACX API when a packet has completed. The packet completion time and the 0-based Packet index are included to improve client performance. The ACX framework will set any notification events associated with the stream.
+The driver calls this ACX API when a packet has completed. The packet completion time and the zero-based Packet index are included to improve client performance. The ACX framework sets any notification events associated with the stream.
 
 ## See also
 
-[ACX audio class extensions overview](acx-audio-class-extensions-overview.md)
-
-[ACX reference documentation](acx-reference.md)
-
-[Summary of ACX Objects](acx-summary-of-objects.md)
+- [ACX audio class extensions overview](acx-audio-class-extensions-overview.md)
+- [ACX reference documentation](acx-reference.md)
+- [Summary of ACX Objects](acx-summary-of-objects.md)
