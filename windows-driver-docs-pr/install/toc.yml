@@ -534,8 +534,6 @@
       href: identifiers-generated-by-usbprint-sys.md
   - name: Device Classes
     items:
-    - name: Compare Setup Classes and Interface Classes
-      href: setup-classes-versus-interface-classes.md
     - name: Device Information Sets
       href: device-information-sets.md
     - name: Device Setup Classes
@@ -556,6 +554,8 @@
         href: using-a-device-interface.md
       - name: Registering for Notification of Device Interface Arrival and Device Removal
         href: registering-for-notification-of-device-interface-arrival-and-device-removal.md
+    - name: Comparison of Setup Classes and Interface Classes
+      href: setup-classes-versus-interface-classes.md
   - name: Device Properties
     items:
     - name: Overview of Device Properties
