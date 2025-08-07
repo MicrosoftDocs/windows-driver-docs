@@ -25,6 +25,9 @@ Audio categories (selected by applications) are mapped to audio modes (defined b
 
 \* New in Windows 10.
 
+> [!IMPORTANT]
+> Raw capture streams must not include any time varying or adaptive processing, such as echo control, automatic gain control, or noise suppression.  The only audio processing permitted in raw capture is linear equalization to flatten frequency response.
+
 ## Signal Processing Mode Driver Requirements
 
 Audio device drivers need to support at least the *Raw* or *Default* mode. Supporting additional modes is optional.
