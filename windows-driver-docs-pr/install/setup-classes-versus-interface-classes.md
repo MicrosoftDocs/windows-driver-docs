@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 # Comparison of setup classes and interface classes
 
-Understanding the distinction between setup classes and interface classes is crucial for successful Windows driver development and device management. While these classes might appear similar, they serve fundamentally different purposes in the Windows device ecosystem. Setup classes govern how devices are installed and configured by the operating system. Interface classes enable runtime communication and functionality between drivers, applications, and devices. Mastering this distinction will help you choose the correct class type for device installation, implement proper device notifications, and avoid common development pitfalls.
+Understanding the distinction between setup classes and interface classes is crucial for successful Windows driver development and device management. While these classes might appear similar, they serve fundamentally different purposes in the Windows device ecosystem. Setup classes govern how the operating system installs and configures devices. Interface classes enable runtime communication and functionality between drivers, applications, and devices. Understanding this distinction helps you choose the correct class type for device installation, implement proper device notifications, and avoid common development pitfalls.
 
 A device often belongs to both a setup class and several interface classes at the same time. Nevertheless, the two types of classes serve different purposes, make use of different areas in the registry, and rely on a different set of header files for defining class GUIDs.
 
