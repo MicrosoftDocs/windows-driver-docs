@@ -680,8 +680,9 @@
         href: obtaining-information-about-a-general-i-o-target-in-umdf.md
       - name: "USB I/O Targets in UMDF"
         href: usb-i-o-targets-in-umdf.md
-      - name: "Choosing a Driver Model for a USB Device"
-        href: choosing-a-driver-model-for-a-usb-device.md
+    - name: "Choosing a Driver Model for a USB Device"
+      href: choosing-a-driver-model-for-a-usb-device.md
+      items:
       - name: "USB-Specific UMDF 1.x Interfaces"
         href: usb-specific-umdf-1-x-interfaces.md
       - name: "Working with USB Devices in UMDF 1.x Drivers"
