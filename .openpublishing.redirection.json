@@ -9758,6 +9758,11 @@
         "redirect_document_id": false
     },
     {
+        "source_path": "windows-driver-docs-pr/kernel/eresource-structures.md",
+        "redirect_url": "/windows-hardware/drivers/kernel/introduction-to-eresource-routines",
+        "redirect_document_id": false
+    },
+    {
         "source_path": "windows-driver-docs-pr/kernel/errors-in-buffered-i-o.md",
         "redirect_url": "/windows-hardware/drivers/kernel/failure-to-check-the-size-of-buffers",
         "redirect_document_id": false
