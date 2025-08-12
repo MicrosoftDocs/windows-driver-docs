@@ -582,24 +582,25 @@
       items:
       - name: "Framework Objects"
         href: framework-objects.md
-      - name: "Framework Base Object"
-        href: framework-base-object.md
-      - name: "Framework Driver Object"
-        href: framework-driver-object.md
-      - name: "Framework Device Object"
-        href: framework-device-object.md
-      - name: "Framework File Object"
-        href: framework-file-object.md
-      - name: "Framework I/O Queue Object"
-        href: framework-i-o-queue-object.md
-      - name: "Framework I/O Request Object"
-        href: framework-i-o-request-object.md
-      - name: "Framework I/O Target Object"
-        href: framework-i-o-target-object.md
-      - name: "Framework Interrupt Object"
-        href: framework-interrupt-object.md
-      - name: "Framework Memory Object"
-        href: framework-memory-object.md
+        items:
+        - name: "Framework Base Object"
+          href: framework-base-object.md
+        - name: "Framework Driver Object"
+          href: framework-driver-object.md
+        - name: "Framework Device Object"
+          href: framework-device-object.md
+        - name: "Framework File Object"
+          href: framework-file-object.md
+        - name: "Framework I/O Queue Object"
+          href: framework-i-o-queue-object.md
+        - name: "Framework I/O Request Object"
+          href: framework-i-o-request-object.md
+        - name: "Framework I/O Target Object"
+          href: framework-i-o-target-object.md
+        - name: "Framework Interrupt Object"
+          href: framework-interrupt-object.md
+        - name: "Framework Memory Object"
+          href: framework-memory-object.md
       - name: "Framework Object Hierarchy"
         href: framework-object-hierarchy.md
       - name: "UMDF Based on COM Subset"
@@ -622,33 +623,36 @@
         href: pnp-and-power-management-interfaces.md
       - name: "Power Policy Ownership in UMDF"
         href: power-policy-ownership-in-umdf.md
-      - name: "Supporting Idle Power-Down in UMDF Drivers"
-        href: supporting-idle-power-down-in-umdf-drivers.md
-      - name: "Supporting System Wake-Up in UMDF Drivers"
-        href: supporting-system-wake-up-in-umdf-drivers.md
-      - name: "User Control of Device Idle and Wake Behavior in UMDF"
-        href: user-control-of-device-idle-and-wake-behavior-in-umdf.md
+        items:
+        - name: "Supporting Idle Power-Down in UMDF Drivers"
+          href: supporting-idle-power-down-in-umdf-drivers.md
+        - name: "Supporting System Wake-Up in UMDF Drivers"
+          href: supporting-system-wake-up-in-umdf-drivers.md
+        - name: "User Control of Device Idle and Wake Behavior in UMDF"
+          href: user-control-of-device-idle-and-wake-behavior-in-umdf.md
       - name: "PnP and Power Management Scenarios in UMDF"
         href: pnp-and-power-management-scenarios-in-umdf.md
-      - name: "A User Plugs in a Device"
-        href: a-user-plugs-in-a-device-umdf.md
-      - name: "A User Unplugs a Device"
-        href: a-user-unplugs-a-device-umdf.md
-      - name: "A Device Enters a Low-Power State"
-        href: a-device-enters-a-low-power-state-umdf.md
-      - name: "A Device Returns to Its Working State"
-        href: a-device-returns-to-its-working-state-umdf.md
-      - name: "The PnP Manager Redistributes System Resources"
-        href: the-pnp-manager-redistributes-system-resources-umdf.md
+        items:
+        - name: "A User Plugs in a Device"
+          href: a-user-plugs-in-a-device-umdf.md
+        - name: "A User Unplugs a Device"
+          href: a-user-unplugs-a-device-umdf.md
+        - name: "A Device Enters a Low-Power State"
+          href: a-device-enters-a-low-power-state-umdf.md
+        - name: "A Device Returns to Its Working State"
+          href: a-device-returns-to-its-working-state-umdf.md
+        - name: "The PnP Manager Redistributes System Resources"
+          href: the-pnp-manager-redistributes-system-resources-umdf.md
     - name: "Processing I/O Requests"
       href: processing-i-o-requests-umdf.md
       items:
       - name: "I/O Request Processing Operation Flow"
         href: i-o-request-processing-operation-flow.md
-      - name: "Operation Flow with Single Device Stack"
-        href: operation-flow-with-single-device-stack.md
-      - name: "Operation Flow with Double Device Stack"
-        href: operation-flow-with-double-device-stack.md
+        items:
+        - name: "Operation Flow with Single Device Stack"
+          href: operation-flow-with-single-device-stack.md
+        - name: "Operation Flow with Double Device Stack"
+          href: operation-flow-with-double-device-stack.md
       - name: "Sending I/O Requests to Lower Drivers"
         href: sending-i-o-requests-to-lower-drivers.md
       - name: "Obtaining Parameters for I/O Requests"
@@ -670,31 +674,32 @@
       items:
       - name: "General I/O Targets in UMDF"
         href: general-i-o-targets-in-umdf.md
-      - name: "Initializing a General I/O Target in UMDF"
-        href: initializing-a-general-i-o-target-in-umdf.md
-      - name: "Sending I/O Requests to a General I/O Target in UMDF"
-        href: sending-i-o-requests-to-a-general-i-o-target-in-umdf.md
-      - name: "Controlling a General I/O Target's State in UMDF"
-        href: controlling-a-general-i-o-target-s-state-in-umdf.md
-      - name: "Obtaining Information About a General I/O Target in UMDF"
-        href: obtaining-information-about-a-general-i-o-target-in-umdf.md
+        items:
+        - name: "Initializing a General I/O Target in UMDF"
+          href: initializing-a-general-i-o-target-in-umdf.md
+        - name: "Sending I/O Requests to a General I/O Target in UMDF"
+          href: sending-i-o-requests-to-a-general-i-o-target-in-umdf.md
+        - name: "Controlling a General I/O Target's State in UMDF"
+          href: controlling-a-general-i-o-target-s-state-in-umdf.md
+        - name: "Obtaining Information About a General I/O Target in UMDF"
+          href: obtaining-information-about-a-general-i-o-target-in-umdf.md
       - name: "USB I/O Targets in UMDF"
         href: usb-i-o-targets-in-umdf.md
-    - name: "Choosing a Driver Model for a USB Device"
-      href: choosing-a-driver-model-for-a-usb-device.md
-      items:
-      - name: "USB-Specific UMDF 1.x Interfaces"
-        href: usb-specific-umdf-1-x-interfaces.md
-      - name: "Working with USB Devices in UMDF 1.x Drivers"
-        href: working-with-usb-devices-in-umdf-1-x-drivers.md
-      - name: "Working with USB Interfaces in UMDF 1.x Drivers"
-        href: working-with-usb-interfaces-in-umdf-1-x-drivers.md
-      - name: "Working with USB Pipes in UMDF 1.x Drivers"
-        href: working-with-usb-pipes-in-umdf-1-x-drivers.md
-      - name: "File Creation by a USB I/O Target"
-        href: file-creation-by-a-usb-i-o-target.md
-      - name: "Calling WinUSB from UMDF"
-        href: escaping-to-winusb.md
+        items:
+        - name: "Choosing a Driver Model for a USB Device"
+          href: choosing-a-driver-model-for-a-usb-device.md
+        - name: "USB-Specific UMDF 1.x Interfaces"
+          href: usb-specific-umdf-1-x-interfaces.md
+        - name: "Working with USB Devices in UMDF 1.x Drivers"
+          href: working-with-usb-devices-in-umdf-1-x-drivers.md
+        - name: "Working with USB Interfaces in UMDF 1.x Drivers"
+          href: working-with-usb-interfaces-in-umdf-1-x-drivers.md
+        - name: "Working with USB Pipes in UMDF 1.x Drivers"
+          href: working-with-usb-pipes-in-umdf-1-x-drivers.md
+        - name: "File Creation by a USB I/O Target"
+          href: file-creation-by-a-usb-i-o-target.md
+        - name: "Calling WinUSB from UMDF"
+          href: escaping-to-winusb.md
     - name: "Accessing Hardware and Handling Interrupts"
       href: accessing-hardware-and-handling-interrupts.md
       items:
@@ -706,18 +711,19 @@
         href: reading-and-writing-to-device-registers-in-umdf-1-x-drivers.md
       - name: "Handling Interrupts"
         href: handling-interrupts.md
-      - name: "Creating an Interrupt Object"
-        href: creating-an-interrupt-object-umdf.md
-      - name: "Enabling and Disabling Interrupts"
-        href: enabling-and-disabling-interrupts-umdf.md
-      - name: "Servicing an Interrupt"
-        href: servicing-an-interrupt-umdf.md
-      - name: "Using Work Items"
-        href: using-workitems.md
-      - name: "Synchronizing Interrupt Code"
-        href: synchronizing-interrupt-code-umdf.md
-      - name: "Deleting an Interrupt Object"
-        href: deleting-an-interrupt-object.md
+        items:
+        - name: "Creating an Interrupt Object"
+          href: creating-an-interrupt-object-umdf.md
+        - name: "Enabling and Disabling Interrupts"
+          href: enabling-and-disabling-interrupts-umdf.md
+        - name: "Servicing an Interrupt"
+          href: servicing-an-interrupt-umdf.md
+        - name: "Using Work Items"
+          href: using-workitems.md
+        - name: "Synchronizing Interrupt Code"
+          href: synchronizing-interrupt-code-umdf.md
+        - name: "Deleting an Interrupt Object"
+          href: deleting-an-interrupt-object.md
     - name: "UMDF Driver Tasks"
       href: umdf-driver-tasks.md
       items:
@@ -725,12 +731,13 @@
         href: using-device-interfaces-in-umdf-drivers.md
       - name: "Creating Callback Objects"
         href: creating-callback-objects.md
-      - name: "Creating Callback Objects Example"
-        href: creating-callback-objects-example.md
-      - name: "Defining Callback Objects Example"
-        href: defining-callback-objects-example.md
-      - name: "Associating Callback Interfaces Example"
-        href: associating-callback-interfaces-example.md
+        items:
+        - name: "Creating Callback Objects Example"
+          href: creating-callback-objects-example.md
+        - name: "Defining Callback Objects Example"
+          href: defining-callback-objects-example.md
+        - name: "Associating Callback Interfaces Example"
+          href: associating-callback-interfaces-example.md
       - name: "Specifying a Callback Synchronization Mode"
         href: specifying-a-callback-synchronization-mode.md
       - name: "I/O Queue Event Callback Functions"
@@ -741,10 +748,11 @@
         href: combining-dispatch-and-synchronization-modes.md
       - name: "Creating a File Object to Handle I/O"
         href: creating-a-file-object-to-handle-i-o.md
-      - name: "Driver-Created Versus Application-Created File Objects"
-        href: driver-created-versus-application-created-file-objects.md
-      - name: "Creating and Using Driver-Created File Objects"
-        href: creating-and-using-driver-created-file-objects.md
+        items:
+        - name: "Driver-Created Versus Application-Created File Objects"
+          href: driver-created-versus-application-created-file-objects.md
+        - name: "Creating and Using Driver-Created File Objects"
+          href: creating-and-using-driver-created-file-objects.md
       - name: "Using the Registry in UMDF 1.x Drivers"
         href: using-the-registry-in-umdf-1-x-drivers.md
       - name: "Supporting Kernel-Mode Clients in UMDF 1.x Drivers"
@@ -753,5 +761,5 @@
         href: viewing-umdf-objects.md
       - name: "Determining Why a UMDF Driver Consumes an Excessive Amount of Memory"
         href: determining-why-a-umdf-driver-consumes-an-excessive-amount-of-memory.md
-    - name: "Summary of Debugger Extensions in Wudfext.dll"
-      href: using-umdf-debugger-extensions.md
+      - name: "Summary of Debugger Extensions in Wudfext.dll"
+        href: using-umdf-debugger-extensions.md
