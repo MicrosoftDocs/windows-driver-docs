@@ -9759,7 +9759,7 @@
     },
     {
         "source_path": "windows-driver-docs-pr/kernel/eresource-structures.md",
-        "redirect_url": "/windows-hardware/drivers/kernel/introduction-to-eresource-structures",
+        "redirect_url": "/windows-hardware/drivers/kernel/introduction-to-eresource-routines",
         "redirect_document_id": false
     },
     {
