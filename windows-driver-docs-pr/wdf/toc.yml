@@ -576,8 +576,10 @@
   items: 
   - name: "UMDF 1.x Design Guide"
     href: user-mode-driver-framework-design-guide.md
+    items:
     - name: "UMDF Objects and Interfaces"
       href: umdf-objects-and-interfaces.md
+      items:
       - name: "Framework Objects"
         href: framework-objects.md
       - name: "Framework Base Object"
@@ -608,12 +610,14 @@
         href: managing-the-lifetime-of-objects.md
     - name: "Initializing UMDF Drivers"
       href: initializing-umdf-drivers.md
+      items:
       - name: "Adding a Device Overview"
         href: adding-a-device-overview.md
       - name: "Adding a Device"
         href: adding-a-device.md
     - name: "PnP and Power Management in UMDF Drivers"
       href: pnp-and-power-management-in-umdf-drivers.md
+      items:
       - name: "PnP and Power Management Interfaces"
         href: pnp-and-power-management-interfaces.md
       - name: "Power Policy Ownership in UMDF"
@@ -638,6 +642,7 @@
         href: the-pnp-manager-redistributes-system-resources-umdf.md
     - name: "Processing I/O Requests"
       href: processing-i-o-requests-umdf.md
+      items:
       - name: "I/O Request Processing Operation Flow"
         href: i-o-request-processing-operation-flow.md
       - name: "Operation Flow with Single Device Stack"
@@ -662,6 +667,7 @@
         href: preventing-an-imbalance-of-create-and-close-notifications-to-a-driver.md
     - name: "Using I/O Targets in UMDF"
       href: using-i-o-targets-in-umdf.md
+      items:
       - name: "General I/O Targets in UMDF"
         href: general-i-o-targets-in-umdf.md
       - name: "Initializing a General I/O Target in UMDF"
@@ -690,6 +696,7 @@
         href: escaping-to-winusb.md
     - name: "Accessing Hardware and Handling Interrupts"
       href: accessing-hardware-and-handling-interrupts.md
+      items:
       - name: "Enabling Hardware Access"
         href: enabling-hardware-access.md
       - name: "Finding and Mapping Hardware Resources in UMDF 1.x Drivers"
@@ -712,6 +719,7 @@
         href: deleting-an-interrupt-object.md
     - name: "UMDF Driver Tasks"
       href: umdf-driver-tasks.md
+      items:
       - name: "Using Device Interfaces in UMDF Drivers"
         href: using-device-interfaces-in-umdf-drivers.md
       - name: "Creating Callback Objects"
