@@ -70,6 +70,5 @@ When defining a new interface class, *don't use a single GUID to identify both a
 
 - [Overview of device setup classes](./overview-of-device-setup-classes.md)
 - [System-defined device setup classes available to vendors](./system-defined-device-setup-classes-available-to-vendors.md)
-- [Creating a new device setup class](./creating-a-new-device-setup-class.md)
 - [Overview of device interface classes](./overview-of-device-interface-classes.md)
 - [Using GUIDs in drivers](../kernel/using-guids-in-drivers.md).
