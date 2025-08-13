@@ -25,31 +25,28 @@ The following table summarizes the key differences and relationships between set
 |--------|---------------|-------------------|
 | **Primary Purpose** | Grouping devices with similar installation and configuration | Grouping device interfaces that provide similar functionality and communication |
 | **Usage** | Used by Windows during device installation | Used by drivers and applications for device interaction |
-| **Registry Location** | Stored in setup class registry keys | Stored in interface class registry keys |
-| **GUID Definitions** | Defined in *Devguid.h* | Defined in device-specific header files (for example, *Ntddmou.h*, *Ntddpar.h*) |
-| **Grouping Criteria** | Devices installed and configured similarly | Devices with shared characteristics or functionality |
+| **GUID Definitions** | Usually defined in *Devguid.h* | Defined in device-specific header files (for example, *Ntddmou.h*, *Ntddpar.h*) |
+| **Grouping Criteria** | Devices installed and configured similarly | Generally, devices that implement a particular IO contract |
 | **Notification** | Not used for device arrival or removal notifications | Used for registering device interface arrival and removal notifications |
 | **Examples** | Sensors, Firmware, Bluetooth | Audio Capture, Audio Render, Ambient Light Sensor |
-| **Relationship** | A device belongs to one setup class | A device can belong to multiple interface classes |
+| **Relationship** | A device belongs to one setup class | A device can expose zero or more interface classes |
 | **Lifetime** | Relevant during installation process | Relevant during device operation |
 
 It's important to distinguish between the two types of device classes: *[device interface classes](./overview-of-device-interface-classes.md)* and *[device setup classes](./overview-of-device-setup-classes.md)*. The two can be easily confused. In user-mode code, both classes use the same set of [device installation functions](/previous-versions/ff541299(v=vs.85)). They also use the same set of data structures ([device information sets](device-information-sets.md)).
 
-Both a USB mouse and a USB keyboard could fall under the same setup class (Human Interface Device), but they utilize different interface classes to communicate with the system.
-
 Same setup class, different interface classes:
 
-- **Devices**: A USB mouse and a USB keyboard.
-- **Setup Class**: Both devices can belong to the *Human Interface Devices* setup class.
-- **Interface Classes**: The mouse might use the *HID mouse* interface class, while the keyboard uses the *HID keyboard* interface class.
+- **Devices**: Two different sensor devices
+- **Setup Class**: Both devices are in the *Sensors* class.
+- **Interface Classes**: One sensor exposes an ambient light sensor device interface, and the other exposes an accelerometer device interface.
 
-Consider a USB audio device and a USB video device. Both might use the same interface class (USB device), but they belong to different setup classes, such as *Audio* and *Display*, respectively.
+Consider a USB mouse device, and a USB keyboard device. Both use the same interface class (*Human Interface Device*). But they belong to different setup classes, *Mouse* and *Keyboard*, respectively.
 
 Same interface class, different setup classes:
 
-- **Devices**: A USB audio device and a USB video device.
-- **Interface Class**: Both devices might use the *USB device* interface class.
-- **Setup Classes**: The audio device could belong to the *Audio* setup class, while the video device belongs to the *Display* setup class.
+- **Devices**: A USB mouse and a USB keyboard
+- **Interface Class**: Both devices utilize the same interface class (*Human Interface Device*) to communicate with the system.
+- **Setup Classes**: The mouse device belongs to the *Mouse* setup class, while the keyboard device belongs to the *Keyboard* setup class.
 
 ## Device setup classes
 
@@ -63,9 +60,9 @@ Windows device setup classes are defined in the system file *Devguid.h*. This fi
 
 Definitions of interface classes aren't provided in a single file. A device interface class is always defined in a header file that belongs exclusively to a particular class of devices. For example, *Ntddmou.h* contains the definition of GUID_DEVINTERFACE_MOUSE, the GUID representing the mouse interface class. *Ntddpar.h* defines the interface class GUID for parallel devices. *Ntddpcm.h* defines the standard interface class GUID for PCMCIA devices. *Ntddstor.h* defines the interface class GUID for storage devices.
 
-To register for device notifications, use the GUIDs found in the header files that are specific to the device interface class. These GUIDs allow you to be notified when a device interface instance arrives. If a driver registers for notification using a setup class GUID instead of an interface class GUID, it isn't notified when an interface arrives.
+To register for device interface notifications, use the GUIDs found in the header files that are specific to the device interface class. These GUIDs allow you to be notified when a device interface instance arrives. If a driver registers for notification using a setup class GUID instead of an interface class GUID, it isn't notified when an interface arrives.
 
-When defining a new setup class or interface class, *don't use a single GUID to identify both a setup class and an interface class.*
+When defining a new interface class, *don't use a single GUID to identify both a setup class and an interface class.*
 
 ## Related articles
 
