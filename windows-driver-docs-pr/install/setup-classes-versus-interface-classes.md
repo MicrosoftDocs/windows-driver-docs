@@ -17,6 +17,8 @@ Understanding the distinction between [device setup classes](./overview-of-devic
 
 A device often belongs to both a setup class and several interface classes at the same time. Nevertheless, the two types of classes serve different purposes and are not interchangeable.
 
+:::image type="content" source="images/comparison-of-setup-classes-and-interface-classes.png" alt-text="Diagram showing the relationship between a device, its setup class, and its various interface classes.":::
+
 ## Comparison
 
 The following table summarizes the key differences and relationships between setup classes and interface classes:
