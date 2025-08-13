@@ -23,7 +23,7 @@ The following table summarizes the key differences and relationships between set
 
 | Aspect | Setup classes | Interface classes |
 |--------|---------------|-------------------|
-| **Primary Purpose** | Device installation and configuration | Device functionality and communication |
+| **Primary Purpose** | Grouping devices with similar installation and configuration | Grouping device interfaces that provide similar functionality and communication |
 | **Usage** | Used by Windows during device installation | Used by drivers and applications for device interaction |
 | **Registry Location** | Stored in setup class registry keys | Stored in interface class registry keys |
 | **GUID Definitions** | Defined in *Devguid.h* | Defined in device-specific header files (for example, *Ntddmou.h*, *Ntddpar.h*) |
