@@ -555,7 +555,7 @@
       - name: Registering for Notification of Device Interface Arrival and Device Removal
         href: registering-for-notification-of-device-interface-arrival-and-device-removal.md
     - name: Comparison of Setup Classes and Interface Classes
-      href: setup-classes-versus-interface-classes.md
+      href: comparison-of-setup-classes-and-interface-classes.md
   - name: Device Properties
     items:
     - name: Overview of Device Properties

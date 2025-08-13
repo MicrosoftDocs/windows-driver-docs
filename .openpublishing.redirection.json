@@ -436,6 +436,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows-driver-docs-pr/install/setup-classes-versus-interface-classes.md",
+      "redirect_url": "/windows-hardware/drivers/install/comparison-of-setup-classes-and-interface-classes",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/install/how-setup-ranks-drivers--windows-vista-and-later-.md",
       "redirect_url": "/windows-hardware/drivers/install/how-windows-ranks-driver-packages",
       "redirect_document_id": false
