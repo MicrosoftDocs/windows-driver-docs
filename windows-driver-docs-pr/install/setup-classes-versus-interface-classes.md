@@ -6,7 +6,7 @@ keywords:
 - device setup classes WDK device installations
 - interface classes WDK device installations
 - setup classes WDK device installations
-ms.date: 08/05/2025
+ms.date: 08/13/2025
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -58,7 +58,7 @@ Windows device setup classes are defined in the system file *Devguid.h*. This fi
 
 ## Device interface classes
 
-[Device interface classes](./overview-of-device-interface-classes.md) provide a mechanism for grouping devices according to shared characteristics or functionality. Drivers and user applications can register for notifications about devices in a particular interface class. This means they get notified when any device belonging to that class arrives or is removed from the system. They don't need to track individual devices.
+[Device interface classes](./overview-of-device-interface-classes.md) provide a mechanism for grouping devices according to shared characteristics or functionality. Drivers and user applications can register for notifications about devices in a particular interface class. This means they get notified when any device belonging to that class arrives or is removed from the system. They don't need to track individual devices. Device interface classes are grouping device interfaces exposed by devices. You register for notifications of arrival and removal of device interfaces.
 
 Definitions of interface classes aren't provided in a single file. A device interface class is always defined in a header file that belongs exclusively to a particular class of devices. For example, *Ntddmou.h* contains the definition of GUID_DEVINTERFACE_MOUSE, the GUID representing the mouse interface class. *Ntddpar.h* defines the interface class GUID for parallel devices. *Ntddpcm.h* defines the standard interface class GUID for PCMCIA devices. *Ntddstor.h* defines the interface class GUID for storage devices.
 
