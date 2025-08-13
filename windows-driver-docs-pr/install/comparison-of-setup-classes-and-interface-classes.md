@@ -31,7 +31,7 @@ The following table summarizes the key differences and relationships between set
 | **Grouping Criteria** | Devices installed and configured similarly | Generally, device interfaces that implement a particular IO contract |
 | **Notification** | Not used for device arrival or removal notifications | Used for registering device interface arrival and removal notifications |
 | **Examples** | Sensors, Firmware, Bluetooth | Audio Capture, Audio Render, Ambient Light Sensor |
-| **Relationship** | A device belongs to one setup class | A device can expose zero or more interface classes |
+| **Relationship** | A device belongs to one setup class | A device can expose zero or more device interfaces in different interface classes |
 | **Lifetime** | Relevant during installation process | Relevant during device operation |
 
 It's important to distinguish between the two types of device classes: *[device interface classes](./overview-of-device-interface-classes.md)* and *[device setup classes](./overview-of-device-setup-classes.md)*. The two can be easily confused. In user-mode code, both classes use the same set of [device installation functions](/previous-versions/ff541299(v=vs.85)). They also use the same set of data structures ([device information sets](device-information-sets.md)).
