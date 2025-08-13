@@ -28,7 +28,7 @@ The following table summarizes the key differences and relationships between set
 | **Primary Purpose** | Grouping devices with similar installation and configuration | Grouping device interfaces that provide similar functionality and communication |
 | **Usage** | Used by Windows during device installation | Used by drivers and applications for device interaction |
 | **GUID Definitions** | Usually defined in *Devguid.h* | Defined in device-specific header files (for example, *Ntddmou.h*, *Ntddpar.h*) |
-| **Grouping Criteria** | Devices installed and configured similarly | Generally, devices that implement a particular IO contract |
+| **Grouping Criteria** | Devices installed and configured similarly | Generally, device interfaces that implement a particular IO contract |
 | **Notification** | Not used for device arrival or removal notifications | Used for registering device interface arrival and removal notifications |
 | **Examples** | Sensors, Firmware, Bluetooth | Audio Capture, Audio Render, Ambient Light Sensor |
 | **Relationship** | A device belongs to one setup class | A device can expose zero or more interface classes |
