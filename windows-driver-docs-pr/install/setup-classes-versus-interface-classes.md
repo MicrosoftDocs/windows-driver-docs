@@ -28,7 +28,7 @@ The following table summarizes the key differences and relationships between set
 | **Registry Location** | Stored in setup class registry keys | Stored in interface class registry keys |
 | **GUID Definitions** | Defined in *Devguid.h* | Defined in device-specific header files (for example, *Ntddmou.h*, *Ntddpar.h*) |
 | **Grouping Criteria** | Devices installed and configured similarly | Devices with shared characteristics or functionality |
-| **Notification** | Not used for device arrival or removal notifications | Used for registering device arrival and removal notifications |
+| **Notification** | Not used for device arrival or removal notifications | Used for registering device interface arrival and removal notifications |
 | **Examples** | Human Interface Device, Audio Device, Video Device | HID mouse, HID keyboard, USB device |
 | **Relationship** | A device belongs to one setup class | A device can belong to multiple interface classes |
 | **Lifetime** | Relevant during installation process | Relevant during device operation |
