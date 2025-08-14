@@ -23642,7 +23642,7 @@
     },
     {
       "source_path": "windows-driver-docs-pr/powermeter/index.md",
-      "redirect_url": "/windows-hardware/drivers/powermeter/",
+      "redirect_url": "/windows-hardware/drivers/powermeter/overview-of-the-power-metering-and-budgeting-infrastructure",
       "redirect_document_id": false
     }
   ]
