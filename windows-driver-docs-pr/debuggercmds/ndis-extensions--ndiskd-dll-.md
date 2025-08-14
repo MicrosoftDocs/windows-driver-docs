@@ -164,7 +164,7 @@ The following commands display information about NDIS.sys and ndiskd.dll.
 
 ## <span id="Related_Topics"></span><span id="related_topics"></span><span id="RELATED_TOPICS"></span>Related Topics
 
-For more information about designing NDIS drivers for Windows Vista and later, see the [Network Driver Design Guide](/windows-hardware/network/).
+For more information about designing NDIS drivers for Windows Vista and later, see the [Network Driver Design Guide](/windows-hardware/drivers/network/)).
 
 For more information about reference for NDIS drivers for Windows Vista and later, see [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/).
 

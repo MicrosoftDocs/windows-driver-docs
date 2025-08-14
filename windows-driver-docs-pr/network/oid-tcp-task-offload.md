@@ -50,7 +50,7 @@ An offload target can use pause or resume offload indications to change its repo
 - An offload target makes a pause indication by calling the [NdisMIndicateStatusEx](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) function with the NDIS_STATUS_INDICATION->**StatusCode** member set to NDIS_STATUS_OFFLOAD_PAUSE.
 - An offload target makes a resume indication by calling the **NdisMIndicateStatusEx** function with the NDIS_STATUS_INDICATION->**StatusCode** member set to NDIS_STATUS_OFFLOAD_RESUME.
 
-After an offload target requests the host stack to resume offloading state objects, the host stack queries OID_TCP_TASK_OFFLOAD again to obtain the offload target's TCP offload revised capabilities. For more information, see [NDIS_STATUS_OFFLOAD_RESUME](./).
+After an offload target requests the host stack to resume offloading state objects, the host stack queries OID_TCP_TASK_OFFLOAD again to obtain the offload target's TCP offload revised capabilities. For more information, see [NDIS_STATUS_OFFLOAD_RESUME](/windows-hardware/drivers/network/).
 
 ## Disabling offload capabilities
 

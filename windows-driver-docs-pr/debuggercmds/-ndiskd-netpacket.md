@@ -136,7 +136,7 @@ You can now combine the basic description with any of the other **!ndiskd.netpac
 
 ## See also
 
-[Network Driver Design Guide](/windows-hardware/network/)
+[Network Driver Design Guide](/windows-hardware/drivers/network/))
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 

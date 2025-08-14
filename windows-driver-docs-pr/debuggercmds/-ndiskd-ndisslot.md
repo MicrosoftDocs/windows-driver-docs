@@ -91,7 +91,7 @@ Clicking on one of the handles for the per-processor slot variables will show yo
 ## See also
 
 
-[Network Driver Design Guide](/windows-hardware/network/)
+[Network Driver Design Guide](/windows-hardware/drivers/network/))
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 

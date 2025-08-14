@@ -51,7 +51,7 @@ Run the **!ndiskd.compartments** extension to see a list of all network compartm
 ## See also
 
 
-[Network Driver Design Guide](/windows-hardware/network/)
+[Network Driver Design Guide](/windows-hardware/drivers/network/))
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 

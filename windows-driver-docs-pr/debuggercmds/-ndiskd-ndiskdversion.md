@@ -44,7 +44,7 @@ The following example shows output for **!ndiskd.ndiskdversion**.
 
 ## See also
 
-[Network Driver Design Guide](/windows-hardware/network/)
+[Network Driver Design Guide](/windows-hardware/drivers/network/))
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
