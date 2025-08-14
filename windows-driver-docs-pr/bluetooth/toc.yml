@@ -1,5 +1,4 @@
 - name: "Bluetooth Design Guide"
-  href: index.md
 - name: "Bluetooth Profile Drivers Overview"
   items: 
   - name: "Introduction to Bluetooth Profile Drivers"

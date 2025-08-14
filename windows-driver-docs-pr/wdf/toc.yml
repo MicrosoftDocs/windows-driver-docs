@@ -107,7 +107,6 @@
   - name: "Supporting PnP and Power Management in Function Drivers"
     href: supporting-pnp-and-power-management-in-function-drivers.md
   - name: "PnP and Power Management Scenarios"
-    href: pnp-and-power-management-scenarios.md
   - name: "A User Plugs in a Device"
     href: a-user-plugs-in-a-device.md
   - name: "A User Unplugs a Device"
@@ -473,7 +472,6 @@
   - name: "Porting PnP and Power Management"
     href: porting-pnp-and-power-management-functionality.md
   - name: "Porting I/O"
-    href: porting-i-o-handling.md
   - name: "Porting I/O Queues"
     href: porting-i-o-queues.md
   - name: "Porting I/O Dispatch Routines to I/O Event Callback Functions"
@@ -617,7 +615,6 @@
       - name: "Adding a Device"
         href: adding-a-device.md
     - name: "PnP and Power Management in UMDF Drivers"
-      href: pnp-and-power-management-in-umdf-drivers.md
       items:
       - name: "PnP and Power Management Interfaces"
         href: pnp-and-power-management-interfaces.md
@@ -631,7 +628,6 @@
         - name: "User Control of Device Idle and Wake Behavior in UMDF"
           href: user-control-of-device-idle-and-wake-behavior-in-umdf.md
       - name: "PnP and Power Management Scenarios in UMDF"
-        href: pnp-and-power-management-scenarios-in-umdf.md
         items:
         - name: "A User Plugs in a Device"
           href: a-user-plugs-in-a-device-umdf.md
@@ -644,7 +640,6 @@
         - name: "The PnP Manager Redistributes System Resources"
           href: the-pnp-manager-redistributes-system-resources-umdf.md
     - name: "Processing I/O Requests"
-      href: processing-i-o-requests-umdf.md
       items:
       - name: "I/O Request Processing Operation Flow"
         href: i-o-request-processing-operation-flow.md
@@ -725,7 +720,6 @@
         - name: "Deleting an Interrupt Object"
           href: deleting-an-interrupt-object.md
     - name: "UMDF Driver Tasks"
-      href: umdf-driver-tasks.md
       items:
       - name: "Using Device Interfaces in UMDF Drivers"
         href: using-device-interfaces-in-umdf-drivers.md

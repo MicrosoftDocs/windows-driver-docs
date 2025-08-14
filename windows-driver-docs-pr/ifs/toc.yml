@@ -151,7 +151,6 @@
   - name: Filter driver installation
     items:
     - name: Installing a filter driver
-      href: installing-a-minifilter-driver.md
     - name: 'File system filter load order '
       href: what-determines-when-a-driver-is-loaded.md
     - name: Creating an INF file

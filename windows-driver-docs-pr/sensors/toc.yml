@@ -127,7 +127,6 @@
 - name: "Test Windows sensor hardware, drivers, and apps"
   items:
   - name: "Sensor Testing Sources"
-    href: testing-sensor-landing.md
   - name: Microsoft SensorExplorer
     href: testing-sensor-explorer.md
   - name: "The Microsoft Ambient Light Tool (MALT)"

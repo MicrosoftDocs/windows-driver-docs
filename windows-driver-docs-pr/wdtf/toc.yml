@@ -20,7 +20,6 @@
 # Auto-expanded node
     items: 
     - name: "Writing tests with WDTF"
-      href: writing-tests-with-wdtf.md
     - name: "Simple Data Evaluation Language Overview"
       href: simple-data-evaluation-language-overview.md
     - name: "Device relation tokens in SDEL"

@@ -9,7 +9,6 @@
   - name: What's new in driver development for Windows 11, version 22H2
     href: driver-changes-for-windows-11-version-22h2.md
   - name: What's new in driver development for Windows 11, version 21H2
-    href: driver-changes-for-windows-11-version-21h2.md
   - name: What's new in driver development for Windows Server 2022
     href: driver-changes-for-windows-server-2022.md
   - name: What's new in driver development for Windows 10, version 2004
@@ -63,7 +62,6 @@
   - name: Biometric Drivers
     href: biometric/index.md
   - name: Bluetooth Drivers
-    href: bluetooth/index.md
   - name: Component Firmware Update (CFU)
     href: cfu/index.md
   - name: Display and graphics drivers
@@ -93,7 +91,6 @@
   - name: NetAdapterCx
     href: netcx/index.md
   - name: Network drivers
-    href: network/index.md
   - name: NFC device drivers
     href: nfc/index.md
   - name: Partner application development
@@ -103,7 +100,6 @@
   - name: Point of Service device drivers
     href: pos/index.md
   - name: Power management technologies
-    href: powermeter/index.md
   - name: Print device drivers
     href: print/index.md
   - name: SD card bus drivers

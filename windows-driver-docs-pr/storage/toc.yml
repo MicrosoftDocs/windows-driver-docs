@@ -91,7 +91,6 @@
     - name: Internal Routines
       items:
       - name: Overview
-        href: storage-class-driver-s-internal-routines.md
       - name: ClaimDevice Routine
         href: storage-class-driver-s-claimdevice-routine.md
       - name: GetDescriptor Routine

@@ -171,7 +171,6 @@
 # Auto-expanded node
       items: 
       - name: "Command Tokens"
-        href: command-tokens.md
       - name: ";  (Command Separator)"
         href: ----command-separator-.md
       - name: "{ }  (Block Delimiter)"
@@ -1283,7 +1282,6 @@
 # Auto-expanded node
       items: 
       - name: "Specialized Extension Commands"
-        href: specialized-extensions.md
       - name: "Storage Kernel Debugger Extensions"
 # Auto-expanded node
         items: 

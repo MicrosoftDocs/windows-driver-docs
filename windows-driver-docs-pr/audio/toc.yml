@@ -167,7 +167,6 @@
     - name: Examples of Audio Data Formats and Data Ranges
       items:
       - name: Examples of Audio Data Formats and Data Ranges
-        href: examples-of-audio-data-formats-and-data-ranges.md
       - name: Analog Audio Stream Data Range
         href: analog-audio-stream-data-range.md
       - name: DirectMusic Stream Data Format
@@ -213,7 +212,6 @@
 - name: 'WDM Audio Architecture: Advanced Topics'
   items:
   - name: 'WDM Audio Architecture: Advanced Topics'
-    href: wdm-audio-architecture--advanced-topics.md
   - name: Data-Intersection Handlers
     items:
     - name: Data-Intersection Handlers
@@ -281,7 +279,6 @@
     - name: HD Audio and UAA
       items:
       - name: HD Audio and UAA
-        href: hd-audio-and-uaa.md
       - name: Intel's HD Audio Architecture
         href: intel-s-hd-audio-architecture.md
       - name: UAA Extensions to the HD Audio Architecture
@@ -334,7 +331,6 @@
 - name: WDM Audio Support in Different Versions of Windows
   items:
   - name: WDM Audio Support in Different Versions of Windows
-    href: wdm-audio-support-in-different-versions-of-windows.md
   - name: Implementing Audio Module Communication
     items:
     - name: Implementing Audio Module Communication
@@ -392,7 +388,6 @@
     - name: PortCls Power Management Updates for SoC
       items:
       - name: PortCls Power Management Updates for SoC
-        href: portcls-power-management-updates-for-soc.md
       - name: PortCls Registry Power Settings
         href: portcls-registry-power-settings.md
       - name: Immediate Idle Timeout Opt-in
@@ -428,7 +423,6 @@
   - name: Typical Audio Configurations
     items:
     - name: Typical Audio Configurations
-      href: typical-audio-configurations.md
     - name: Rendering and Capturing Wave Content
       href: rendering-and-capturing-wave-content.md
     - name: Rendering and Capturing MIDI Content
@@ -670,7 +664,6 @@
     - name: DirectSound Hardware Acceleration in WDM Audio
       items:
       - name: DirectSound Hardware Acceleration in WDM Audio
-        href: directsound-hardware-acceleration-in-wdm-audio.md
       - name: Overview of DirectSound Hardware Acceleration
         href: overview-of-directsound-hardware-acceleration.md
       - name: Supporting 2D DirectSound Acceleration in WDM Audio
@@ -690,7 +683,6 @@
     - name: DirectSound Speaker-Configuration Settings
       items:
       - name: DirectSound Speaker-Configuration Settings
-        href: directsound-speaker-configuration-settings.md
       - name: Translating Speaker-Configuration Requests
         href: translating-speaker-configuration-requests.md
       - name: Applying Speaker-Configuration Settings

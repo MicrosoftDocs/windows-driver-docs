@@ -323,7 +323,6 @@
 - name: "I/O"
   items: 
   - name: "Handling IRPs"
-    href: handling-irps.md
   - name: "Overview of the Windows I/O Model"
     href: overview-of-the-windows-i-o-model.md
   - name: "End-User I/O Requests and File Objects"

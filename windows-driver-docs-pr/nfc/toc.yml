@@ -41,7 +41,6 @@
 # Auto-expanded node
     items: 
     - name: "NFP device driver requirements"
-      href: nfp-device-driver-requirements.md
     - name: "Device identifiers"
       href: device-identifiers.md
     - name: "Device interface"

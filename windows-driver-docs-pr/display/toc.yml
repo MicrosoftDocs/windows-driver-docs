@@ -287,7 +287,6 @@
   - name: Initializing Display Miniport and User-Mode Display Drivers
     items:
     - name: Initializing Display Miniport and User-Mode Display Drivers
-      href: initializing-display-miniport-and-user-mode-display-drivers.md
     - name: Plug and Play (PnP) in WDDM 1.2 and later
       href: plug-and-play--pnp--start-and-stop-cases.md
     - name: Providing seamless state transitions in WDDM 1.2 and later
@@ -335,7 +334,6 @@
     - name: Handling Memory Segments
       items:
       - name: Handling Memory Segments
-        href: handling-memory-segments.md
       - name: Using Memory Segments to Describe the GPU Address Space
         href: using-memory-segments-to-describe-the-gpu-address-space.md
       - name: Configuring Memory Segment Types
@@ -369,7 +367,6 @@
     - name: Handling Command and DMA Buffers
       items:
       - name: Handling Command and DMA Buffers
-        href: handling-command-and-dma-buffers.md
       - name: Introduction to Command and DMA Buffers
         href: introduction-to-command-and-dma-buffers.md
       - name: Using the Guaranteed Contract DMA Buffer Model
@@ -439,7 +436,6 @@
       - name: Video Decode Acceleration for DirectX VA 2.0
         items:
         - name: Video Decode Acceleration for DirectX VA 2.0
-          href: video-decode-acceleration-for-directx-va-2-0.md
         - name: Providing Capabilities for Video Decoding
           href: providing-capabilities-for-video-decoding.md
         - name: Creating a Video Decode Device
@@ -453,7 +449,6 @@
       - name: Video Processing for DirectX VA 2.0
         items:
         - name: Video Processing for DirectX VA 2.0
-          href: video-processing-for-directx-va-2-0.md
         - name: Providing Capabilities for Video Processing
           href: providing-capabilities-for-video-processing.md
         - name: Creating a Video Processing Device
@@ -473,7 +468,6 @@
     - name: Supporting Direct3D Version 10
       items:
       - name: Supporting Direct3D Version 10
-        href: supporting-direct3d-version-10.md
       - name: Enabling Support for the Direct3D Version 10 DDI
         href: enabling-support-for-the-direct3d-version-10-ddi.md
       - name: Initializing Communication with the Direct3D Version 10 DDI
@@ -529,7 +523,6 @@
     - name: Supporting Direct3D Version 10.1
       items:
       - name: Supporting Direct3D Version 10.1
-        href: supporting-direct3d-version-10-1.md
       - name: Version Numbers for Direct3D Version 10.1
         href: version-numbers-for-direct3d-version-10-1.md
       - name: Supporting Extended Format Awareness
@@ -573,7 +566,6 @@
     - name: Supporting Direct3D Version 11
       items:
       - name: Supporting Direct3D Version 11
-        href: supporting-direct3d-version-11.md
       - name: Enabling Support for the Direct3D Version 11 DDI
         href: enabling-support-for-the-direct3d-version-11-ddi.md
       - name: Initializing Communication with the Direct3D Version 11 DDI
@@ -587,7 +579,6 @@
       - name: Supporting Deferred Contexts
         items:
         - name: Supporting Deferred Contexts
-          href: supporting-deferred-contexts.md
         - name: Introduction to Deferred Contexts
           href: introduction-to-deferred-contexts.md
         - name: Excluding DDI Functions for Deferred Contexts
@@ -681,7 +672,6 @@
   - name: Multiple Monitors and Video Present Networks
     items:
     - name: Multiple Monitors and Video Present Networks
-      href: multiple-monitors-and-video-present-networks.md
     - name: Video Present Network Terminology
       href: video-present-network-terminology.md
     - name: Introduction to Video Present Networks
@@ -733,7 +723,6 @@
   - name: Tasks in WDDM
     items:
     - name: Tasks in the Windows Display Driver Model (WDDM)
-      href: tasks-in-the-windows-vista-display-driver-model.md
     - name: Requesting and Using Surface Memory
       href: requesting-and-using-surface-memory.md
     - name: Specifying Memory Type for a Resource
@@ -877,7 +866,6 @@
   - name: Other WDDM driver tips and requirements
     items:
     - name: Other tips and requirements for WDDM
-      href: implementation-tips-and-requirements-for-the-windows-vista-display-dri.md
     - name: Hardware support for Direct3D feature levels
       items:
       - name: Hardware support for Direct3D feature levels
@@ -1029,7 +1017,6 @@
         - name: CCD Summaries and Scenarios
           items:
           - name: CCD Summaries and Scenarios
-            href: ccd-summaries-and-scenarios.md
           - name: QueryDisplayConfig Summary and Scenarios
             href: querydisplayconfig-summary-and-scenarios.md
           - name: GetDisplayConfigBufferSizes Summary and Scenarios

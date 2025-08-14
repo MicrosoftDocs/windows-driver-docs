@@ -16,7 +16,6 @@
 # Auto-expanded node
       items: 
       - name: "Supporting an Operation Region"
-        href: supporting-an-operation-region.md
       - name: "Maintaining an Operation Region Memory Buffer"
         href: maintaining-an-operation-region-memory-buffer.md
       - name: "Registering and Deregistering an Operation Region Handler"

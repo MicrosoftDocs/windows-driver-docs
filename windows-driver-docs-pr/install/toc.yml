@@ -397,7 +397,6 @@
     - name: Device Properties Dialog Box
       items:
       - name: Invoking a Device Properties Dialog Box
-        href: invoking-a-device-properties-dialog-box.md
       - name: Invoking a Device Properties Dialog Box Programmatically in an Installation Application
         href: invoking-a-device-properties-dialog-box-programmatically-in-an-install.md
       - name: Invoking a Device Properties Dialog Box from a Command-line Prompt
@@ -597,7 +596,6 @@
       - name: INF File Entry Values That Modify Device Properties
         href: inf-file-entry-values-that-modify-device-properties.md
       - name: Using SetupAPI and Configuration Manager to Access Device Properties
-        href: using-setupapi-and-configuration-manager-to-access-device-properties.md
       - name: Accessing Device Instance Properties
         href: accessing-device-instance-spdrp-xxx-properties.md
       - name: Retrieving a Device Instance Identifier
@@ -633,7 +631,6 @@
     - name: Registry Trees and Keys
       href: registry-trees-and-keys.md
     - name: Registry Trees for Devices and Drivers
-      href: overview-of-registry-trees-and-keys.md
     - name: HKLM\SYSTEM\CurrentControlSet\Services Registry Tree
       href: hklm-system-currentcontrolset-services-registry-tree.md
     - name: HKLM\SYSTEM\CurrentControlSet\Control Registry Tree

@@ -27,7 +27,6 @@
 # Auto-expanded node
     items: 
     - name: "Windows Hardware Error Architecture Overview"
-      href: windows-hardware-error-architecture-overview.md
     - name: "Hardware Errors and Error Sources"
       href: hardware-errors-and-error-sources.md
     - name: "Relationship between Microsoft Windows and the System Firmware"
@@ -64,7 +63,6 @@
 # Auto-expanded node
     items: 
     - name: "Platform-Specific Hardware Error Driver Plug-Ins"
-      href: platform-specific-hardware-error-driver-plug-ins2.md
     - name: "Roadmap for Developing PSHED Plug-Ins"
       href: roadmap-for-developing-pshed-plug-ins.md
     - name: "Introduction to PSHED Plug-Ins"
@@ -73,7 +71,6 @@
 # Auto-expanded node
       items: 
       - name: "Functional Areas"
-        href: functional-areas.md
       - name: "Error Source Discovery"
         href: error-source-discovery.md
       - name: "Error Source Control"
@@ -90,7 +87,6 @@
 # Auto-expanded node
       items: 
       - name: "PSHED Plug-In Operations"
-        href: pshed-plug-in-operations.md
       - name: "Registering a PSHED Plug-In"
         href: registering-a-pshed-plug-in.md
       - name: "Participating in Error Source Discovery"
@@ -149,7 +145,6 @@
 # Auto-expanded node
         items: 
         - name: "WHEA Management Operations"
-          href: whea-management-operations.md
         - name: "Getting Error Source Information for All Error Sources"
           href: getting-error-source-information-for-all-error-sources.md
         - name: "Getting Error Source Information for a Specific Error Source"

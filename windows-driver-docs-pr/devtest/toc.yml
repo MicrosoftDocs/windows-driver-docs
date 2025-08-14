@@ -123,7 +123,6 @@
       - name: Controlling Driver Verifier
         items:
         - name: Controlling Driver Verifier
-          href: controlling-driver-verifier.md
         - name: Selecting Driver Verifier Options
           href: selecting-driver-verifier-options.md
         - name: Selecting Drivers to be Verified
@@ -137,7 +136,6 @@
       - name: Monitoring Driver Verifier
         items:
         - name: Monitoring Driver Verifier
-          href: monitoring-driver-verifier.md
         - name: Monitoring Global Counters
           href: monitoring-global-counters.md
         - name: Monitoring Individual Counters
@@ -1470,7 +1468,6 @@
       - name: Static Driver Verifier Limitations
         items:
         - name: Static Driver Verifier Limitations
-          href: static-driver-verifier-limitations.md
         - name: Determining if Static Driver Verifier supports your driver or library
           href: determining-if-static-driver-verifier-supports-your-driver-or-library.md
         - name: Static Driver Verifier General Tool and Technical Limitations
@@ -1514,7 +1511,6 @@
       - name: Trace Viewer
         items:
         - name: Trace Viewer
-          href: defect-viewer.md
         - name: Understanding the Trace Viewer
           href: understanding-the-defect-viewer.md
         - name: Opening and Closing the Trace Viewer
@@ -1526,7 +1522,6 @@
       - name: Static Driver Verifier Report Panes
         items:
         - name: Static Driver Verifier Report Panes
-          href: static-driver-verifier-report-panes.md
         - name: Trace Tree Pane
           items:
           - name: Trace Tree Pane
@@ -1542,7 +1537,6 @@
         - name: Source Code Pane
           items:
           - name: Source Code Pane
-            href: source-code-pane.md
           - name: Understanding the Source Code Pane
             href: understanding-the-source-code-pane.md
           - name: Using the Source Code Pane
@@ -1684,7 +1678,6 @@
 - name: Tools for Testing Drivers
   items:
   - name: Tools for Testing Drivers
-    href: tools-for-testing-drivers.md
   - name: Device Fundamentals Tests
     items:
     - name: Device Fundamentals Tests
@@ -1837,7 +1830,6 @@
         - name: PwrTest Log File
           href: pwrtest-log-file.md
         - name: PwrTest Scenarios
-          href: pwrtest-scenarios.md
         - name: PwrTest Battery Scenario
           href: pwrtest-battery-scenario.md
         - name: PwrTest Connected Standby Scenario
@@ -1911,7 +1903,6 @@
       - name: WSDBIT Reference
         items:
         - name: WSDBIT Reference
-          href: wsdbit-reference.md
         - name: Sample Metadata Response Output
           href: sample-metadata-response-output.md
         - name: SimpleService WSDL
@@ -1955,7 +1946,6 @@
   - name: Tracing Tool Concepts
     items:
     - name: Tracing Tool Concepts
-      href: tracing-tool-concepts.md
     - name: Trace Log
       href: trace-log.md
     - name: Trace Provider
@@ -2007,7 +1997,6 @@
     - name: Using TraceView
       items:
       - name: Using TraceView
-        href: using-traceview.md
       - name: TraceView Basics
         items:
         - name: TraceView Basics
@@ -2105,7 +2094,6 @@
       - name: Advanced TraceView Features
         items:
         - name: Advanced TraceView Features
-          href: advanced-traceview-features.md
         - name: Creating Text Versions of Trace Logs
           href: creating-text-versions-of-trace-logs.md
         - name: Grouping Trace Sessions
@@ -2139,7 +2127,6 @@
         - name: Using TraceView Workspaces
           items:
           - name: Using TraceView Workspaces
-            href: using-traceview-workspaces.md
           - name: Saving or Resaving a Workspace
             href: saving-or-resaving-a-workspace.md
           - name: Opening a Workspace
@@ -2177,7 +2164,6 @@
     - name: Tracelog Examples
       items:
       - name: Tracelog Examples
-        href: tracelog-examples.md
       - name: 'Example 1: Basic Start Command'
         href: example-1--basic-start-command.md
       - name: 'Example 2: Basic Start Command with Provider'
@@ -2227,7 +2213,6 @@
     - name: Tracefmt Concepts
       items:
       - name: Tracefmt Concepts
-        href: tracefmt-concepts.md
       - name: Tracefmt Output File
         href: tracefmt-output-file.md
       - name: Summary Message File
@@ -2239,7 +2224,6 @@
     - name: Tracefmt Examples
       items:
       - name: Tracefmt Examples
-        href: tracefmt-examples.md
       - name: 'Example 1: No Parameters'
         href: example-1--no-parameters.md
       - name: 'Example 2: Basic Command'
@@ -2295,11 +2279,9 @@
   - name: Software Tracing FAQ
     items:
     - name: Software Tracing FAQ
-      href: software-tracing-faq.md
     - name: Getting Started with Software Tracing
       items:
       - name: Getting Started with Software Tracing
-        href: getting-started-with-software-tracing.md
       - name: Where are the tracing tools?
         href: where-are-the-tracing-tools-.md
       - name: Where are the tracing samples?
@@ -2323,7 +2305,6 @@
     - name: Basic Software Tracing
       items:
       - name: Basic Software Tracing
-        href: basic-software-tracing.md
       - name: What is the performance cost of software tracing?
         href: what-is-the-performance-cost-of-software-tracing-.md
       - name: Can I optimize the conditional checks that the WPP macros produce before the tracing?
@@ -2341,7 +2322,6 @@
     - name: System and Language Support for Software Tracing
       items:
       - name: System and Language Support for Software Tracing
-        href: system-and-language-support-for-software-tracing.md
       - name: How do I implement software tracing for Windows XP and later versions of Windows?
         href: how-do-i-implement-software-tracing-for-windows-xp-and-later-versions-.md
       - name: How do I add tracing to a driver or export driver written in C++?
@@ -2357,7 +2337,6 @@
     - name: Debugging Support for Software Tracing
       items:
       - name: Debugging Support for Software Tracing
-        href: debugging-support-for-software-tracing.md
       - name: How do I send trace messages to a kernel debugger?
         href: how-do-i-send-trace-messages-to-a-kernel-debugger-.md
       - name: How do I send trace messages to a user-mode debugger?
@@ -2369,7 +2348,6 @@
     - name: Customizing Software Tracing
       items:
       - name: Customizing Software Tracing
-        href: customizing-software-tracing.md
       - name: What is the Defaultwpp.ini file?
         href: what-is-the-defaultwpp-ini-file-.md
       - name: Can I customize DoTraceMessage?
@@ -2389,7 +2367,6 @@
     - name: Advanced Software Tracing
       items:
       - name: Advanced Software Tracing
-        href: advanced-software-tracing.md
       - name: How do I generate trace messages from a header file?
         href: how-do-i-generate-trace-messages-from-a-header-file-.md
       - name: What happens to NULL strings in tracing code?
@@ -2461,7 +2438,6 @@
 - name: Additional Driver Tools
   items:
   - name: Additional Driver Tools
-    href: additional-driver-tools.md
   - name: Tools for Building Drivers
     items:
     - name: Tools for Building Drivers

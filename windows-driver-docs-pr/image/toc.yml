@@ -25,7 +25,6 @@
 # Auto-expanded node
     items: 
     - name: "WIA Driver Fundamentals"
-      href: wia-driver-fundamentals.md
     - name: "WIA Driver Components"
 # Auto-expanded node
       items: 
@@ -170,7 +169,6 @@
 # Auto-expanded node
   items: 
   - name: "WIA Properties"
-    href: about-wia-properties.md
   - name: "Properties for All WIA Minidrivers"
     href: properties-for-all-wia-minidrivers.md
   - name: "Properties for WIA Scanner Minidrivers"
@@ -257,7 +255,6 @@
 # Auto-expanded node
     items: 
     - name: "WIA Segmentation Filter"
-      href: wia-segmentation-filter.md
     - name: "Introduction to Segmentation Filters"
       href: introduction-to-segmentation-filters.md
     - name: "Interfaces for Segmentation Filters"
@@ -277,7 +274,6 @@
 # Auto-expanded node
       items: 
       - name: "Segmentation Filter Examples"
-        href: segmentation-filter-examples.md
       - name: "Example: Default Segmentation Filter"
         href: example--default-segmentation-filter.md
       - name: "Example: Simple Segmentation Filter"
@@ -343,7 +339,6 @@
 # Auto-expanded node
     items: 
     - name: "WIA Scanner Item Tree for Windows Vista"
-      href: wia-scanner-item-tree-for-windows-vista.md
     - name: "WIA Flatbed Scanners"
 # Auto-expanded node
       items: 
@@ -355,14 +350,12 @@
 # Auto-expanded node
         items: 
         - name: "Implementing Flatbed Scanner Item Trees"
-          href: implementing-flatbed-scanner-item-trees.md
         - name: "WIA Item Flags for Flatbed Scanners"
           href: wia-item-flags-for-flatbed-scanners.md
         - name: "WIA Item Properties for Flatbed Scanners"
 # Auto-expanded node
           items: 
           - name: "WIA Item Properties for Flatbed Scanners"
-            href: wia-item-properties-for-flatbed-scanners.md
           - name: "Required Root Item Properties for WIA Scanners"
             href: required-root-item-properties-for-wia-scanners.md
           - name: "Optional Root Item Properties for WIA Scanners"
@@ -409,7 +402,6 @@
 # Auto-expanded node
           items: 
           - name: "WIA Item Properties for Feeder Scanners"
-            href: wia-item-properties-for-feeder-scanners.md
           - name: "Required Root Item Properties for Feeder Scanners"
             href: required-root-item-properties-for-feeder-scanners.md
           - name: "Required WIA Item Properties for Feeder Scanners"
@@ -440,14 +432,12 @@
 # Auto-expanded node
         items: 
         - name: "Implementing Film Scanner Item Trees"
-          href: implementing-film-scanner-item-trees.md
         - name: "WIA Item Flags for Film Scanners"
           href: wia-item-flags-for-film-scanners.md
         - name: "WIA Item Properties for Film Scanners"
 # Auto-expanded node
           items: 
           - name: "WIA Item Properties for Film Scanners"
-            href: wia-item-properties-for-film-scanners.md
           - name: "Required Root Item Properties for Film Scanners"
             href: required-root-item-properties-for-film-scanners.md
           - name: "Required WIA Item Properties for Film Scanners"
@@ -482,7 +472,6 @@
 # Auto-expanded node
           items: 
           - name: "WIA Item Properties for Scanner Storage"
-            href: wia-item-properties-for-scanner-storage.md
           - name: "Required Root Item Properties for Scanner Storage"
             href: required-root-item-properties-for-scanner-storage.md
           - name: "Required WIA Item Properties for Scanner Storage"
@@ -565,17 +554,14 @@
 # Auto-expanded node
   items: 
   - name: "Developing a WIA Driver"
-    href: developing-a-wia-driver.md
   - name: "Developing a WIA Driver: Basic Concepts"
 # Auto-expanded node
     items: 
     - name: "Developing a WIA Driver: Basic Concepts"
-      href: developing-a-wia-driver--basic-concepts.md
     - name: "Creating a WIA Minidriver"
 # Auto-expanded node
       items: 
       - name: "Creating a WIA Minidriver"
-        href: creating-a-wia-minidriver.md
       - name: "Providing a COM Interface"
         href: providing-a-com-interface.md
       - name: "Providing an IStiUSD Interface"
@@ -617,7 +603,6 @@
 # Auto-expanded node
         items: 
         - name: "Using WIA Properties"
-          href: using-wia-properties.md
         - name: "Adding WIA Properties to a WIA Item"
           href: adding-wia-properties-to-a-wia-item.md
         - name: "Defining Custom Properties"
@@ -772,7 +757,6 @@
 # Auto-expanded node
       items: 
       - name: "Creating a Well-Behaved PTP Camera"
-        href: creating-a-well-behaved-ptp-camera.md
       - name: "Object Handle and Event Order"
         href: object-handle-and-event-order.md
       - name: "Automatically Generated Object Names"
@@ -805,7 +789,6 @@
 # Auto-expanded node
       items: 
       - name: "WIA Camera Minidriver"
-        href: wia-camera-minidriver.md
       - name: "Creating  a WIA Camera Item Tree Layout"
         href: creating--a-wia-camera-item-tree-layout.md
       - name: "Adding Attachments to Images"
@@ -845,7 +828,6 @@
 # Auto-expanded node
         items: 
         - name: "WIA-TWAIN Driver Design Considerations"
-          href: wia-twain-driver-design-considerations.md
         - name: "WIA-TWAIN Compatibility"
           href: wia-twain-compatibility.md
         - name: "DSM_Entry function"
@@ -931,7 +913,6 @@
 # Auto-expanded node
       items: 
       - name: "WIA Security Best Practices"
-        href: wia-security-best-practices.md
       - name: "File System Access for WIA Drivers"
         href: file-system-access-for-wia-drivers.md
       - name: "Registry Access for WIA Drivers"
@@ -1546,7 +1527,6 @@
 # Auto-expanded node
     items: 
     - name: "Still Image COM Interfaces"
-      href: still-image-com-interfaces.md
     - name: "IStillImage COM Interface"
       href: istillimage-com-interface.md
     - name: "IStiDevice COM Interface"
@@ -1597,7 +1577,6 @@
 # Auto-expanded node
     items: 
     - name: "Installing and Configuring Still Image Components"
-      href: installing-and-configuring-still-image-components.md
     - name: "Property Sheet Pages for Still Image Devices"
       href: property-sheet-pages-for-still-image-devices.md
     - name: "Registry Entries for Still Image Devices"
@@ -1628,17 +1607,14 @@
 # Auto-expanded node
     items: 
     - name: "Scan Service (WS-Scan) Schema"
-      href: scan-service--ws-scan--schema.md
     - name: "WSD Scan Service Scanner Elements"
 # Auto-expanded node
       items: 
       - name: "WSD Scan Service Scanner Elements"
-        href: wsd-scan-service-scanner-elements.md
       - name: "Scanner Description Elements"
 # Auto-expanded node
         items: 
         - name: "Scanner Description Elements"
-          href: scanner-description-elements.md
         - name: "ScannerDescription"
           href: scannerdescription.md
         - name: "ScannerInfo"
@@ -1651,14 +1627,12 @@
 # Auto-expanded node
         items: 
         - name: "Scanner Configuration Elements"
-          href: scanner-configuration-elements.md
         - name: "ScannerConfiguration"
           href: scannerconfiguration.md
         - name: "Device Settings Configuration Elements"
 # Auto-expanded node
           items: 
           - name: "Device Settings Configuration Elements"
-            href: device-settings-configuration-elements.md
           - name: "AutoExposureSupported"
             href: autoexposuresupported.md
           - name: "BrightnessSupported"
@@ -1747,7 +1721,6 @@
 # Auto-expanded node
       items: 
       - name: "Film Configuration Elements"
-        href: film-configuration-elements.md
       - name: "Film"
         href: film.md
       - name: "FilmColor"
@@ -1768,7 +1741,6 @@
 # Auto-expanded node
         items: 
         - name: "Scanner Status Elements"
-          href: scanner-status-elements.md
         - name: "ActiveConditions"
           href: activeconditions.md
         - name: "ClearTime"
@@ -1815,7 +1787,6 @@
 # Auto-expanded node
         items: 
         - name: "WSD Scan Service Job and Job Table Elements"
-          href: wsd-scan-service-job-and-job-table-elements.md
         - name: "ActiveJobs"
           href: activejobs.md
         - name: "Job"
@@ -1852,7 +1823,6 @@
 # Auto-expanded node
         items: 
         - name: "WSD Scan Service Document Elements"
-          href: wsd-scan-service-document-elements.md
         - name: "AutoExposure"
           href: autoexposure.md
         - name: "Brightness"
@@ -1927,7 +1897,6 @@
 # Auto-expanded node
       items: 
       - name: "WSD Scan Service Event Elements"
-        href: wsd-scan-service-event-elements.md
       - name: "ClientContext"
         href: clientcontext.md
       - name: "ClientDisplayName"

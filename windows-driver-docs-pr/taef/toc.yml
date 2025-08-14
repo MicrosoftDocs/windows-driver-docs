@@ -77,7 +77,6 @@
 # Auto-expanded node
     items: 
     - name: "Executing Tests"
-      href: executing-tests.md
     - name: "Overview of Executing Tests"
       href: overview-of-executing-tests.md
     - name: "Te.exe Command Options"

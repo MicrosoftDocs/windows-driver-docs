@@ -148,7 +148,6 @@
 # Auto-expanded node
   items: 
   - name: "AVStream Minidrivers Design Guide"
-    href: avstream-minidrivers-design-guide.md
   - name: "New AVStream Interfaces for Windows 8.1"
     href: new-avstream-interfaces-for-windows-8-1.md
   - name: "New AVStream Interfaces for Windows 8"
@@ -162,7 +161,6 @@
 # Auto-expanded node
       items: 
       - name: "Introduction to AVStream"
-        href: introduction-to-avstream.md
       - name: "AVStream Overview"
         href: avstream-overview.md
       - name: "AVStream Headers"
@@ -206,7 +204,6 @@
 # Auto-expanded node
       items: 
       - name: "AVStream Architecture: Advanced Topics"
-        href: avstream-architecture--advanced-topics.md
       - name: "Power and State Changes in AVStream"
         href: power-and-state-changes-in-avstream.md
       - name: "Object Bags"
@@ -229,7 +226,6 @@
 # Auto-expanded node
         items: 
         - name: "Stream Pointers"
-          href: stream-pointers.md
         - name: "Introduction to Stream Pointers"
           href: introduction-to-stream-pointers.md
         - name: "Leading and Trailing Edge Stream Pointers"
@@ -274,7 +270,6 @@
 # Auto-expanded node
     items: 
     - name: "Broadcast Driver Architecture Drivers"
-      href: broadcast-driver-architecture-drivers2.md
     - name: "Broadcast Receiver Topology"
 # Auto-expanded node
       items: 
@@ -286,7 +281,6 @@
 # Auto-expanded node
         items: 
         - name: "Control Nodes, Filters and Hardware"
-          href: control-nodes--filters-and-hardware.md
         - name: "Control Nodes"
           href: control-nodes.md
         - name: "Combining Nodes in a Filter"
@@ -316,7 +310,6 @@
 # Auto-expanded node
         items: 
         - name: "Using BDA Property and Method Sets"
-          href: using-bda-property-and-method-sets.md
         - name: "Determining BDA Device Topology"
           href: determining-bda-device-topology.md
         - name: "Mapping Connection Topology"
@@ -450,7 +443,6 @@
 # Auto-expanded node
     items: 
     - name: "USB Video Class Driver"
-      href: usb-video-class-driver.md
     - name: "USB Video Class Driver Overview"
       href: usb-video-class-driver-overview.md
     - name: "USB Video Class Driver Stack"
@@ -467,7 +459,6 @@
 # Auto-expanded node
       items: 
       - name: "USB Video Class Extension Units"
-        href: usb-video-class-extension-units.md
       - name: "Introduction to USB Video Class Extension Units"
         href: introduction-to-usb-video-class-extension-units.md
       - name: "Device Requirements for USB Video Class Extension Units"
@@ -478,7 +469,6 @@
 # Auto-expanded node
         items: 
         - name: "UVC Extension Unit Code Samples"
-          href: uvc-extension-unit-code-samples.md
         - name: "Building the Extension Unit Sample Control"
           href: building-the-extension-unit-sample-control.md
         - name: "Sample Interface for UVC Extension Units"
@@ -575,7 +565,6 @@
 # Auto-expanded node
         items: 
         - name: "Filter Graph Examples"
-          href: filter-graph-examples.md
         - name: "USB or 1394-Based Conferencing Camera"
           href: usb-or-1394-based-conferencing-camera.md
         - name: "USB-Based Camera with a Capture Button"
@@ -638,7 +627,6 @@
 # Auto-expanded node
         items: 
         - name: "Video Capture Event Sets"
-          href: video-capture-event-sets.md
         - name: "Tuner Events"
           href: tuner-events.md
         - name: "Video Decoder Change Event"
@@ -653,7 +641,6 @@
 # Auto-expanded node
       items: 
       - name: "Implementing Video Capture Support"
-        href: implementing-video-capture-support.md
       - name: "Registering with the Stream Class Interface"
         href: registering-with-the-stream-class-interface.md
       - name: "Selecting a Stream Format"
@@ -702,7 +689,6 @@
 # Auto-expanded node
   items: 
   - name: "Windows 2000 Kernel Streaming Model Design Guide"
-    href: windows-2000-kernel-streaming-model-design-guide.md
   - name: "Streaming Minidrivers"
 # Auto-expanded node
     items: 
@@ -887,7 +873,6 @@
 # Auto-expanded node
   items: 
   - name: "AVStream Property Sets"
-    href: avstream-property-sets.md
   - name: "KSPROPSETID_Clock"
 # Auto-expanded node
     items: 
@@ -1804,7 +1789,6 @@
 # Auto-expanded node
   items: 
   - name: "Video Capture Minidriver Event Sets"
-    href: video-capture-minidriver-event-sets.md
   - name: "EVENTSETID_TUNER"
 # Auto-expanded node
     items: 
@@ -1888,7 +1872,6 @@
 # Auto-expanded node
   items: 
   - name: "Kernel Streaming Topology Nodes"
-    href: kernel-streaming-topology-nodes.md
   - name: "KSNODETYPE_VIDEO_STREAMING"
     href: ksnodetype-video-streaming.md
   - name: "KSNODETYPE_VIDEO_INPUT_TERMINAL"
@@ -1936,7 +1919,6 @@
 # Auto-expanded node
   items: 
   - name: "Kernel Streaming Event Sets"
-    href: kernel-streaming-event-sets.md
   - name: "KSEVENTSETID_Clock"
 # Auto-expanded node
     items: 
@@ -2000,7 +1982,6 @@
 # Auto-expanded node
     items: 
     - name: "Device-Specific Command Codes"
-      href: device-specific-command-codes.md
     - name: "SRB_CHANGE_POWER_STATE"
       href: srb-change-power-state.md
     - name: "SRB_CLOSE_DEVICE_INSTANCE"
@@ -2037,7 +2018,6 @@
 # Auto-expanded node
     items: 
     - name: "Stream-Specific Command Codes"
-      href: stream-specific-command-codes.md
     - name: "SRB_CLOSE_MASTER_CLOCK"
       href: srb-close-master-clock.md
     - name: "SRB_GET_DATA_FORMAT"

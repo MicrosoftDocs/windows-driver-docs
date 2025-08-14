@@ -163,7 +163,6 @@
 # Auto-expanded node
         items: 
         - name: "Global Flag Reference"
-          href: global-flag-reference.md
         - name: "Buffer DbgPrint Output"
           href: buffer-dbgprint-output.md
         - name: "Create kernel mode stack trace database"
@@ -238,7 +237,6 @@
 # Auto-expanded node
         items: 
         - name: "GFlags Examples"
-          href: gflags-examples.md
         - name: "Example 1:  Displaying Global Flags"
           href: example-1---displaying-global-flags.md
         - name: "Example 2:  Setting a Flag by Using a Flag Abbreviation"
@@ -448,7 +446,6 @@
 # Auto-expanded node
       items: 
       - name: "Security Vulnerabilities"
-        href: security-vulnerabilities.md
       - name: "Security During Kernel-Mode Debugging"
         href: security-during-kernel-mode-debugging.md
       - name: "Security During User-Mode Debugging"
@@ -534,7 +531,6 @@
 # Auto-expanded node
         items: 
         - name: "Debugger Engine API Overview"
-          href: debugger-engine-api-overview.md
         - name: "Interacting with the Engine"
 # Auto-expanded node
           items: 
@@ -596,7 +592,6 @@
 # Auto-expanded node
           items: 
           - name: "Connecting to Targets"
-            href: connecting-to-targets.md
           - name: "Live User-Mode Targets"
             href: live-user-mode-targets.md
           - name: "Live Kernel-Mode Targets"
@@ -622,7 +617,6 @@
 # Auto-expanded node
         items: 
         - name: "DbgEng Extension Design Guide"
-          href: dbgeng-extension-design-guide.md
         - name: "Anatomy of a DbgEng Extension DLL"
           href: anatomy-of-a-dbgeng-extension-dll.md
         - name: "Using Clients and the Engine"
@@ -640,7 +634,6 @@
 # Auto-expanded node
         items: 
         - name: "EngExtCpp Extension Design Guide"
-          href: engextcpp-extension-design-guide.md
         - name: "EngExtCpp Extension Libraries"
           href: engextcpp-extension-libraries.md
         - name: "Client Objects and the Engine"
@@ -662,7 +655,6 @@
 # Auto-expanded node
         items: 
         - name: "WdbgExts Extension Design Guide"
-          href: wdbgexts-extension-design-guide.md
         - name: "WdbgExts Extension API Overview"
           href: wdbgexts-extension-api-overview.md
         - name: "32-Bit Pointers and 64-Bit Pointers"
@@ -709,7 +701,6 @@
   - name: "Debugger Programming Reference"
     href: debugger-programming-reference.md
   - name: "Debug Engine Interfaces"
-    href: client-com-interfaces.md
   - name: "Debugger Engine Reference"
 # Auto-expanded node
     items: 
@@ -723,7 +714,6 @@
 # Auto-expanded node
       items: 
       - name: "Debug API Constants"
-        href: debug-api-constants.md
       - name: "DBG_ASMOPT_XXX"
         href: debug-asmopt-xxx.md
       - name: "DBG_ATTACH_XXX"
@@ -964,7 +954,6 @@
 # Auto-expanded node
     items: 
     - name: "Debugging Using WinDbg"
-      href: debugging-using-windbg.md
     - name: "Debugging a User-Mode Process Using WinDbg"
       href: debugging-a-user-mode-process-using-windbg.md
     - name: "Debugging a UWP app using WinDbg"
@@ -1043,7 +1032,6 @@
 # Auto-expanded node
       items: 
       - name: "Using Debugger Command Programs"
-        href: using-debugger-command-programs.md
       - name: "Elements of a Debugger Command Program"
         href: elements-of-a-debugger-command-program.md
       - name: "Control Flow Tokens"
@@ -1143,7 +1131,6 @@
 # Auto-expanded node
       items: 
       - name: "Advanced Remote Debugging Scenarios"
-        href: advanced-remote-debugging-scenarios.md
       - name: "Debugging Targets on Multiple Computers"
         href: debugging-targets-on-multiple-computers.md
       - name: "Symbols in the Middle"
@@ -1154,7 +1141,6 @@
 # Auto-expanded node
     items: 
     - name: "Using the WinDbg Graphical Interface (Classic)"
-      href: windbg-graphical-interface.md
     - name: "Live Kernel-Mode Debugging Using WinDbg (Classic)"
       href: performing-kernel-mode-debugging-using-windbg.md
     - name: "Ending a Debugging Session in WinDbg (Classic)"
@@ -1237,12 +1223,10 @@
 # Auto-expanded node
     items: 
     - name: "Standard Debugging Techniques"
-      href: standard-debugging-techniques.md
     - name: "Using Breakpoints"
 # Auto-expanded node
       items: 
       - name: "Using Breakpoints"
-        href: using-breakpoints.md
       - name: "Methods of Controlling Breakpoints"
         href: methods-of-controlling-breakpoints.md
       - name: "Breakpoint Syntax"
@@ -1267,7 +1251,6 @@
 # Auto-expanded node
       items: 
       - name: "Reading and Writing Memory"
-        href: reading-and-writing-memory.md
       - name: "Accessing Memory by Virtual Address"
         href: accessing-memory-by-virtual-address.md
       - name: "Accessing Memory by Physical Address"
@@ -1402,7 +1385,6 @@
 # Auto-expanded node
     items: 
     - name: "Specialized Debugging Techniques"
-      href: specialized-debugging-techniques.md
     - name: "Debugging ARM64"
       href: debugging-arm64.md
     - name: "Windows Runtime Debugging"
@@ -1435,7 +1417,6 @@
 # Auto-expanded node
       items: 
       - name: "RPC Debugging"
-        href: rpc-debugging.md
       - name: "Overview of RPC Debugging"
         href: overview-of-rpc-debugging.md
       - name: "Enabling RPC State Information"
@@ -1463,7 +1444,6 @@
 # Auto-expanded node
         items: 
         - name: "Common RPC Debugging Techniques"
-          href: common-rpc-debugging-techniques.md
         - name: "Analyzing a Stuck Call Problem"
           href: analyzing-a-stuck-call-problem.md
         - name: "Tracking Contention in the Server Process"
@@ -1483,7 +1463,6 @@
 # Auto-expanded node
         items: 
         - name: "The AMLI Debugger"
-          href: the-amli-debugger.md
         - name: "Introduction to the AMLI Debugger"
           href: introduction-to-the-amli-debugger.md
         - name: "Setting Up an AML Debugging Session"
@@ -1509,14 +1488,12 @@
 # Auto-expanded node
       items: 
       - name: "Kernel Streaming Debugging"
-        href: kernel-streaming-debugging.md
       - name: "Overview of Kernel Streaming Debugging"
         href: overview-of-kernel-streaming-debugging.md
       - name: "Analyzing a Video Stream Stall"
 # Auto-expanded node
         items: 
         - name: "Analyzing a Video Stream Stall"
-          href: analyzing-a-video-stream-stall.md
         - name: "Determining the Cause of a Video Stream Stall"
           href: determining-the-cause-of-a-video-stream-stall.md
         - name: "Debugging a Processing Stall"
@@ -1537,7 +1514,6 @@
 # Auto-expanded node
       items: 
       - name: "SCSI Miniport Debugging"
-        href: scsi-miniport-debugging.md
       - name: "Overview of SCSI Miniport Debugging"
         href: overview-of-scsi-miniport-debugging.md
       - name: "Extensions for Debugging SCSI Miniport Drivers"
@@ -1552,7 +1528,6 @@
 # Auto-expanded node
       items: 
       - name: "Plug and Play Debugging"
-        href: plug-and-play-debugging.md
       - name: "Extensions for Debugging Plug and Play Drivers"
         href: extensions-for-debugging-plug-and-play-drivers.md
       - name: "Determining the Status of a Device"
@@ -1697,7 +1672,6 @@
 # Auto-expanded node
     items: 
     - name: "DBH"
-      href: dbh.md
     - name: "Using DBH"
       href: using-dbh.md
     - name: "Additional DBH Examples"
@@ -1732,7 +1706,6 @@
 # Auto-expanded node
   items: 
   - name: "Crash dump analysis using the Windows debuggers (WinDbg)"
-    href: crash-dump-files.md
   - name: "Kernel-Mode Dump Files"
 # Auto-expanded node
     items: 
@@ -2679,7 +2652,6 @@
 # Auto-expanded node
     items: 
     - name: "Command-Line Options"
-      href: command-line-options.md
     - name: "CDB Command-Line Options"
       href: cdb-command-line-options.md
     - name: "KD Command-Line Options"
@@ -2742,7 +2714,6 @@
     - name: "Debugger-Related APIs"
       href: debugger-related-apis.md
     - name: "Symbol and Image File APIs"
-      href: symbol-server-api.md
     - name: "The dbgeng.h Header File"
       href: the-dbgeng-h-header-file.md
     - name: "The wdbgexts.h Header File"

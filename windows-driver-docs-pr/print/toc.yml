@@ -3,7 +3,6 @@
 - name: End of servicing plan for third-party printer drivers on Windows
   href: end-of-servicing-plan-for-third-party-printer-drivers-on-windows.md
 - name: Legacy v3 and v4 third-party printer driver design guide
-  href: legacy-v3-and-v4-third-party-printer-drivers.md
 - name: "V4 Printer Drivers"
 # Auto-expanded node
   items: 
@@ -33,7 +32,6 @@
 # Auto-expanded node
     items: 
     - name: "V4 Printer Driver Configuration"
-      href: v4-driver-configuration.md
     - name: "V4 Printer Driver Configuration Architecture"
       href: v4-driver-configuration-architecture.md
     - name: "Improvements in Configuration Formats"
@@ -57,7 +55,6 @@
 # Auto-expanded node
     items: 
     - name: "V4 Printer Driver Setup"
-      href: v4-driver-setup.md
     - name: "V4 Driver Setup Concepts"
       href: v4-driver-setup-concepts.md
     - name: "V4 Driver INF"
@@ -85,7 +82,6 @@
 # Auto-expanded node
     items: 
     - name: "V4 Printer Driver Connectivity"
-      href: v4-printer-driver-connectivity.md
     - name: "V4 Driver Connectivity Architecture"
       href: v4-driver-connectivity-architecture.md
     - name: "USB Bidi Extender"
@@ -114,7 +110,6 @@
 # Auto-expanded node
     items: 
     - name: "Build a v4 Printer Driver in Visual Studio"
-      href: build-a-v4-print-driver-in-visual-studio.md
     - name: "Building a Basic v4 Printer Driver"
       href: building-a-basic-v4-printer-driver.md
     - name: "Exploring the Driver Options in the Wizard"
@@ -123,14 +118,12 @@
 # Auto-expanded node
   items: 
   - name: "Microsoft Printer Drivers"
-    href: microsoft-printer-drivers.md
   - name: "Introduction to Printing"
     href: introduction-to-printing.md
 - name: "Printer Driver Overview"
 # Auto-expanded node
   items: 
   - name: "Printer Driver Overview"
-    href: printer-driver-overview.md
   - name: "Driver Support for OpenXPS"
     href: driver-support-for-openxps.md
   - name: "XPS Printer Driver (XPSDrv)"
@@ -164,7 +157,6 @@
 # Auto-expanded node
         items: 
         - name: "Print Ticket Support in the XPSDrv Render Module"
-          href: print-ticket-support-in-the-xpsdrv-render-module.md
         - name: "Print Ticket Merging"
           href: print-ticket-merging.md
         - name: "Print Ticket Parsing"
@@ -189,7 +181,6 @@
 # Auto-expanded node
           items: 
           - name: "XPSDrv Driver Implementation"
-            href: xpsdrv-driver-implementation.md
           - name: "Configuration Modules Based on GPD or PPD Files"
             href: configuration-modules-based-on-gpd-or-ppd-files.md
           - name: "Unidrv/PScript5 Plug-in Configuration Modules"
@@ -200,7 +191,6 @@
 # Auto-expanded node
           items: 
           - name: "Unidrv-based or PScript5-based XPSDrv Driver Changes"
-            href: unidrv-based-or-pscript5-based-xpsdrv-driver-changes.md
           - name: "Hard-Coded UniDrv and PScript5 Features for XPSDrv"
             href: hard-coded-unidrv-and-pscript5-features-for-xpsdrv.md
           - name: "Unidrv/PScript5 XPSDrv UI Behavior Changes"
@@ -228,7 +218,6 @@
 # Auto-expanded node
     items: 
     - name: "Introduction to the Universal Printer Driver"
-      href: introduction-to-the-universal-printer-driver.md
     - name: "Unidrv Capabilities"
       href: unidrv-capabilities.md
     - name: "Unidrv Components"
@@ -255,7 +244,6 @@
 # Auto-expanded node
         items: 
         - name: "GPD Value Types"
-          href: gpd-value-types.md
         - name: "Symbolic Names"
           href: symbolic-names.md
         - name: "Text Strings"
@@ -299,7 +287,6 @@
 # Auto-expanded node
     items: 
     - name: "Printer Attributes"
-      href: printer-attributes.md
     - name: "Printer Attribute Format"
       href: printer-attribute-format.md
     - name: "Attribute Types"
@@ -369,7 +356,6 @@
 # Auto-expanded node
       items: 
       - name: "Command Names"
-        href: command-names.md
       - name: "General Printing Commands"
 # Auto-expanded node
         items: 
@@ -387,7 +373,6 @@
 # Auto-expanded node
         items: 
         - name: "Text Printing Commands"
-          href: text-printing-commands.md
         - name: "Commands for Device Fonts"
           href: commands-for-device-fonts.md
         - name: "Commands for Downloaded Fonts"
@@ -694,7 +679,6 @@
 # Auto-expanded node
         items: 
         - name: "XPS Printing Features"
-          href: xps-printing-features.md
         - name: "Improved Color Printing "
           href: improved-color-printing.md
         - name: "High-Fidelity Print Output"
@@ -718,7 +702,6 @@
 # Auto-expanded node
     items: 
     - name: "Printer Graphics DLL"
-      href: printer-graphics-dll.md
     - name: "Introduction to Printer Graphics DLLs"
       href: introduction-to-printer-graphics-dlls.md
     - name: "Functions Defined by Printer Graphics DLLs"
@@ -739,7 +722,6 @@
 # Auto-expanded node
     items: 
     - name: "Printer Interface DLL"
-      href: printer-interface-dll.md
     - name: "Introduction to Printer Interface DLLs"
       href: introduction-to-printer-interface-dlls.md
     - name: "Functions Defined by Printer Interface DLLs"
@@ -754,7 +736,6 @@
 # Auto-expanded node
       items: 
       - name: "Print Ticket and Print Capabilities Support"
-        href: print-ticket-and-print-capabilities-support.md
       - name: "Print Ticket and Print Capabilities Provider Interface Implemented by Printer Drivers"
         href: print-ticket-and-print-capabilities-provider-interface-implemented-by-2.md
       - name: "Print Ticket and Print Capabilities Provider Interface Implemented by Unidrv/Pscript5 Plug-ins"
@@ -763,7 +744,6 @@
 # Auto-expanded node
         items: 
         - name: "Print Ticket Interfaces and Print Driver Plug-ins"
-          href: print-ticket-interfaces-and-print-driver-plug-ins.md
         - name: "OpenPrinter"
           href: openprinter.md
         - name: "ConvertDevModeToPrintTicket overview"
@@ -861,17 +841,14 @@
 # Auto-expanded node
   items: 
   - name: "Installing and Configuring Printer Drivers"
-    href: installing-and-configuring-printer-drivers.md
   - name: "Printer Installation Basics"
 # Auto-expanded node
     items: 
     - name: "Printer Installation Basics"
-      href: printer-installation-basics.md
     - name: "Printer INF Files"
 # Auto-expanded node
       items: 
       - name: "Printer INF Files"
-        href: printer-inf-files.md
       - name: "Plug and Play IDs for Printer INF Files"
         href: plug-and-play-ids-for-printer-inf-files.md
       - name: "Printer Dirids"
@@ -980,7 +957,6 @@
 # Auto-expanded node
     items: 
     - name: "Installing Printers Over a Network"
-      href: installing-printers-over-a-network.md
     - name: "Supporting Point and Print"
 # Auto-expanded node
       items: 
@@ -1024,7 +1000,6 @@
     - name: "Installing printers that support WSD"
       href: web-services-device-installation.md
 - name: "Printer Configuration"
-  href: printer-configuration.md
 - name: "Generic Description Language"
 # Auto-expanded node
   items: 
@@ -1134,7 +1109,6 @@
 # Auto-expanded node
           items: 
           - name: "Creating GDL Snapshots"
-            href: creating-gdl-snapshots.md
           - name: "Configurations for Creating Snapshots"
             href: configurations-for-creating-snapshots.md
           - name: "Valid GDL Configurations"
@@ -1174,14 +1148,12 @@
 # Auto-expanded node
   items: 
   - name: "GDL Reference"
-    href: gdl-reference.md
   - name: "GDL Source File Structure"
     href: gdl-source-file-structure.md
   - name: "GDL Directives"
 # Auto-expanded node
     items: 
     - name: "GDL Directives"
-      href: gdl-directives.md
     - name: "GDL Source File Preprocessor Directives"
 # Auto-expanded node
       items: 
@@ -1246,7 +1218,6 @@
 # Auto-expanded node
     items: 
     - name: "GDL Macros"
-      href: gdl-macros.md
     - name: "GDL Value Macros"
       href: gdl-value-macros.md
     - name: "GDL Block Macros"
@@ -1261,7 +1232,6 @@
 # Auto-expanded node
     items: 
     - name: "GDL Template Structure"
-      href: gdl-template-structure.md
     - name: "GDL Template Inheritance"
       href: gdl-template-inheritance.md
     - name: "Criteria for Associating GDL Templates with Keywords"
@@ -1282,7 +1252,6 @@
 # Auto-expanded node
         items: 
         - name: "GDL Primitive Data Types"
-          href: gdl-primitive-data-types.md
         - name: "Passthrough Template Data Types"
           href: passthrough-template-data-types.md
         - name: "Native XML Template Data Types"
@@ -1302,7 +1271,6 @@
 # Auto-expanded node
           items: 
           - name: "GDL Template Data Type Issues"
-            href: gdl-template-data-type-issues.md
           - name: "Compound Template Data Type Issues"
             href: compound-template-data-type-issues.md
           - name: "List Template Data Type Issues"
@@ -1325,7 +1293,6 @@
 # Auto-expanded node
       items: 
       - name: "GDL Template Directives"
-        href: gdl-template-directives.md
       - name: "Template Template Directive"
         href: template-template-directive.md
       - name: "Name Template Directive"
@@ -1463,7 +1430,6 @@
 # Auto-expanded node
         items: 
         - name: "TCP/IP Schema Extensions"
-          href: tcp-ip-schema-extensions.md
         - name: "TCP/IP Schema Extensions for Driver-Specific Queries"
 # Auto-expanded node
           items: 
@@ -1545,7 +1511,6 @@
 # Auto-expanded node
   items: 
   - name: "Bidirectional Communication Schema Reference"
-    href: bidi-communications-schema-reference.md
   - name: "Printer Property"
     href: printer-property.md
   - name: "DeviceInfo Section"
@@ -1780,7 +1745,6 @@
 # Auto-expanded node
   items: 
   - name: "Asynchronous User Notification Schema"
-    href: asynchronous-user-notification-schema.md
   - name: "action"
     href: action.md
   - name: "asyncPrintUIRequest"
@@ -1822,7 +1786,6 @@
 # Auto-expanded node
     items: 
     - name: "User Interface Plug-Ins"
-      href: user-interface-plug-ins.md
     - name: "Introduction to User Interface Plug-Ins"
       href: introduction-to-user-interface-plug-ins.md
     - name: "Sample UI Plug-In"
@@ -1860,7 +1823,6 @@
 # Auto-expanded node
     items: 
     - name: "Rendering Plug-Ins"
-      href: rendering-plug-ins.md
     - name: "Introduction to Rendering Plug-Ins"
       href: introduction-to-rendering-plug-ins.md
     - name: "Sample Rendering Plug-Ins"
@@ -1905,7 +1867,6 @@
 # Auto-expanded node
       items: 
       - name: "Unidrv-Specific Customized Rendering"
-        href: unidrv-specific-customized-rendering.md
       - name: "Customized Color Formats"
         href: customized-color-formats.md
       - name: "Customized Halftoning"
@@ -1944,7 +1905,6 @@
 # Auto-expanded node
     items: 
     - name: "Common Property Sheet User Interface"
-      href: common-property-sheet-user-interface.md
     - name: "Introduction to CPSUI"
       href: introduction-to-cpsui.md
     - name: "Sample CPSUI Application"
@@ -1996,7 +1956,6 @@
 # Auto-expanded node
       items: 
       - name: "CPSUI Option Types"
-        href: cpsui-option-types.md
       - name: "TVOT_2STATES"
         href: tvot-2states.md
       - name: "TVOT_3STATES"
@@ -2021,7 +1980,6 @@
 # Auto-expanded node
     items: 
     - name: "Color management for printers"
-      href: color-management-for-printers.md
     - name: "Enabling Color Management"
       href: enabling-color-management.md
     - name: "Controlling Color Management"
@@ -2093,7 +2051,6 @@
 # Auto-expanded node
       items: 
       - name: "Iasphelp Property Get Operations"
-        href: iasphelp-property-get-operations.md
       - name: "AspPage"
         href: iasphelp-asppage.md
       - name: "AvgJobSize"
@@ -2157,7 +2114,6 @@
 # Auto-expanded node
       items: 
       - name: "IOleCvt Property Get Operations"
-        href: iolecvt-property-get-operations.md
       - name: "DecodeUnicodeName"
         href: iolecvt-decodeunicodename.md
       - name: "EncodeUnicodeName"
@@ -2175,7 +2131,6 @@
 # Auto-expanded node
       items: 
       - name: "ISNMP Methods"
-        href: isnmp-methods.md
       - name: "Close"
         href: isnmp-close.md
       - name: "Get"
@@ -2200,12 +2155,10 @@
 # Auto-expanded node
   items: 
   - name: "Additional Printer Topics"
-    href: additional-printer-topics.md
   - name: "Internet Printing"
 # Auto-expanded node
     items: 
     - name: "Internet Printing"
-      href: internet-printing.md
     - name: "Printing to URLs from Applications"
       href: printing-to-urls-from-applications.md
     - name: "Viewing Print Web Pages"
@@ -2293,7 +2246,6 @@
 # Auto-expanded node
         items: 
         - name: "Print Providers"
-          href: print-providers.md
         - name: "Introduction to Print Providers"
           href: introduction-to-print-providers.md
         - name: "Sample Print Provider"
@@ -2317,7 +2269,6 @@
 # Auto-expanded node
         items: 
         - name: "Public Interfaces"
-          href: public-interfaces.md
         - name: "Notification Filtering and Communication Styles "
           href: notification-filtering-and-communication-styles.md
         - name: "Interfaces Implemented at Both Ends of the Notification Channel"
@@ -2363,12 +2314,10 @@
 # Auto-expanded node
   items: 
   - name: "Print Spooler Components"
-    href: print-spooler-components.md
   - name: "Writing a Print Processor"
 # Auto-expanded node
     items: 
     - name: "Writing a Print Processor"
-      href: writing-a-print-processor.md
     - name: "Introduction to Print Processors"
 # Auto-expanded node
       items: 
@@ -2517,7 +2466,6 @@
 # Auto-expanded node
     items: 
     - name: "Debugging Printer Drivers and Spooler Components"
-      href: debugging-printer-drivers-and-spooler-components.md
     - name: "Debugging Printer Driver Components"
       href: debugging-printer-driver-components.md
     - name: "Debugging Spooler Components"

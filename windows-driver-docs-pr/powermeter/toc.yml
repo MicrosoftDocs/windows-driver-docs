@@ -1,5 +1,4 @@
 - name: "Power Metering and Budgeting Design Guide"
-  href: index.md
 - name: "Overview of the Power Metering and Budgeting Infrastructure"
   href: overview-of-the-power-metering-and-budgeting-infrastructure.md
 - name: "User-Mode Power Service"
