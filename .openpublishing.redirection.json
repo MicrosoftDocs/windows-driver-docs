@@ -22402,7 +22402,7 @@
     },
     {
       "source_path": "windows-driver-docs-pr/acpi/supporting-an-operation-region.md",
-      "redirect_url": "/windows-hardware/drivers/acpi/",
+      "redirect_url": "/windows-hardware/drivers/acpi",
       "redirect_document_id": false
     },
     {
@@ -22447,7 +22447,7 @@
     },
     {
       "source_path": "windows-driver-docs-pr/bluetooth/index.md",
-      "redirect_url": "/windows-hardware/drivers/bluetooth/",
+      "redirect_url": "/windows-hardware/drivers/bluetooth/index",
       "redirect_document_id": false
     },
     {
@@ -23017,7 +23017,7 @@
     },
     {
       "source_path": "windows-driver-docs-pr/network/index.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
@@ -23202,7 +23202,7 @@
     },
     {
       "source_path": "windows-driver-docs-pr/powermeter/index.md",
-      "redirect_url": "/windows-hardware/drivers/powermeter/",
+      "redirect_url": "/windows-hardware/drivers/powermeter/index",
       "redirect_document_id": false
     },
     {
