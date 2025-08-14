@@ -157,7 +157,7 @@ This shows that the WFP 802.3 MAC Layer LightWeight Filter sits above the QoS Pa
 ## See also
 
 
-[Network Driver Design Guide](../network/)
+[Network Driver Design Guide](/windows-hardware/network/)
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 

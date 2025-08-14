@@ -23629,6 +23629,21 @@
       "source_path": "windows-driver-docs-pr/display/supporting-direct3d-version-10-1.md",
       "redirect_url": "/windows-hardware/drivers/display/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/bluetooth/index.md",
+      "redirect_url": "/windows-hardware/drivers/bluetooth/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/index.md",
+      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/powermeter/index.md",
+      "redirect_url": "/windows-hardware/drivers/powermeter/",
+      "redirect_document_id": false
     }
   ]
 }

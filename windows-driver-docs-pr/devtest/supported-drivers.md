@@ -64,7 +64,7 @@ For SDV to verify an NDIS driver, the driver must:
 
 - Include Ndis.h and Ntddk.h.
 
-- Follow the guidelines in the [Network Design Guide](../network/) to create NDIS drivers.
+- Follow the guidelines in the [Network Design Guide](/windows-hardware/network/) to create NDIS drivers.
 
 - Annotate each callback function by using an SDV-NDIS callback function role type, as described in [Using Function Role Type Declarations](using-function-role-type-declarations.md). For a list of the supported role types, see [Static Driver Verifier NDIS Function Declarations](static-driver-verifier-ndis-function-declarations.md).
 

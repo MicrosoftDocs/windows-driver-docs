@@ -126,7 +126,7 @@ RECEIVE FILTER
 
 ## See also
 
-[Network Driver Design Guide](../network/)
+[Network Driver Design Guide](/windows-hardware/network/)
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
