@@ -1,6 +1,6 @@
 - name: Audio Drivers Design Guide
   href: index.md
-- name: 'Windows 10: What''s New for Audio'
+- name: "Windows 10: What's New for Audio"
   href: windows-threshold--what-s-new-for-audio.md
 - name: Windows Audio Architecture
   href: windows-audio-architecture.md
