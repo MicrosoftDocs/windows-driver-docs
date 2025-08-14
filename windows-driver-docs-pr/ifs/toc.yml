@@ -150,7 +150,6 @@
       href: guidelines-for-porting-legacy-filter-drivers.md
   - name: Filter driver installation
     items:
-    - name: Installing a filter driver
     - name: 'File system filter load order '
       href: what-determines-when-a-driver-is-loaded.md
     - name: Creating an INF file
@@ -311,7 +310,8 @@
         href: irp-based-i-o-operations-that-obey-device-object-flags.md
       - name: IRP-based I/O operations that always use buffered I/O
         href: irp-based-i-o-operations-that-always-use-buffered-i-o.md
-      - name: IRP-based I/O operations that always use Neither buffered Nor Direct I/O
+      - name: IRP-based I/O operations that always use Neither buffered Nor Direct
+          I/O
         href: irp-based-i-o-operations-that-always-use-neither-buffered-nor-direct-i.md
       - name: IRP-based IOCTL and FSCTL operations
         href: irp-based-ioctl-and-fsctl-operations.md
@@ -437,7 +437,8 @@
             href: irp-mj-file-system-control2.md
         - name: Acknowledging oplock breaks
           href: acknowledging-oplock-breaks.md
-        - name: Checking the oplock state of an FS_FILTER_ACQUIRE_FOR_SECTION_SYNCHRONIZATION operation
+        - name: Checking the oplock state of an FS_FILTER_ACQUIRE_FOR_SECTION_SYNCHRONIZATION
+            operation
           href: fs-filter-acquire-for-section-synchronization2.md
         - name: Oplock synchronization
           href: oplock-synchronization.md

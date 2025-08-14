@@ -1,7 +1,1 @@
-- name: Windows
-  tocHref: /windows-hardware/
-  topicHref: /windows/index
-  items:
-  - name: Windows Drivers
-    tocHref: /windows-hardware/drivers/
-    topicHref: /windows-hardware/drivers/index
+[]

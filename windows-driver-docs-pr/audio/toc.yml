@@ -1,6 +1,6 @@
 - name: Audio Drivers Design Guide
   href: index.md
-- name: "Windows 10: What's New for Audio"
+- name: 'Windows 10: What''s New for Audio'
   href: windows-threshold--what-s-new-for-audio.md
 - name: Windows Audio Architecture
   href: windows-audio-architecture.md
@@ -166,7 +166,6 @@
         href: header-file-changes.md
     - name: Examples of Audio Data Formats and Data Ranges
       items:
-      - name: Examples of Audio Data Formats and Data Ranges
       - name: Analog Audio Stream Data Range
         href: analog-audio-stream-data-range.md
       - name: DirectMusic Stream Data Format
@@ -211,7 +210,6 @@
       href: drm-functions-and-interfaces.md
 - name: 'WDM Audio Architecture: Advanced Topics'
   items:
-  - name: 'WDM Audio Architecture: Advanced Topics'
   - name: Data-Intersection Handlers
     items:
     - name: Data-Intersection Handlers
@@ -278,7 +276,6 @@
       href: high-definition-audio-ddi.md
     - name: HD Audio and UAA
       items:
-      - name: HD Audio and UAA
       - name: Intel's HD Audio Architecture
         href: intel-s-hd-audio-architecture.md
       - name: UAA Extensions to the HD Audio Architecture
@@ -296,7 +293,8 @@
         href: programming-guidelines.md
       - name: Differences Between the HD Audio DDI Versions
         href: differences-between-the-hd-audio-ddi-versions.md
-      - name: Managing Memory Buffers During Audio Resource Rebalance and Surprise Removal Operations
+      - name: Managing Memory Buffers During Audio Resource Rebalance and Surprise
+          Removal Operations
         href: managing-memory-buffers-rebalance.md
       - name: Synchronous and Asynchronous Codec Commands
         href: synchronous-and-asynchronous-codec-commands.md
@@ -330,7 +328,6 @@
           href: obtaining-an-hdaudio-bus-interface-bdl-ddi-object.md
 - name: WDM Audio Support in Different Versions of Windows
   items:
-  - name: WDM Audio Support in Different Versions of Windows
   - name: Implementing Audio Module Communication
     items:
     - name: Implementing Audio Module Communication
@@ -387,7 +384,6 @@
       href: glitch-reporting-for-offloaded-audio.md
     - name: PortCls Power Management Updates for SoC
       items:
-      - name: PortCls Power Management Updates for SoC
       - name: PortCls Registry Power Settings
         href: portcls-registry-power-settings.md
       - name: Immediate Idle Timeout Opt-in
@@ -422,7 +418,6 @@
       href: virtual-audio-devices.md
   - name: Typical Audio Configurations
     items:
-    - name: Typical Audio Configurations
     - name: Rendering and Capturing Wave Content
       href: rendering-and-capturing-wave-content.md
     - name: Rendering and Capturing MIDI Content
@@ -663,7 +658,6 @@
       href: driver-support-for-directsound.md
     - name: DirectSound Hardware Acceleration in WDM Audio
       items:
-      - name: DirectSound Hardware Acceleration in WDM Audio
       - name: Overview of DirectSound Hardware Acceleration
         href: overview-of-directsound-hardware-acceleration.md
       - name: Supporting 2D DirectSound Acceleration in WDM Audio
@@ -682,7 +676,6 @@
         href: prefetch-offsets.md
     - name: DirectSound Speaker-Configuration Settings
       items:
-      - name: DirectSound Speaker-Configuration Settings
       - name: Translating Speaker-Configuration Requests
         href: translating-speaker-configuration-requests.md
       - name: Applying Speaker-Configuration Settings

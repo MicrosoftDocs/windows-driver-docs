@@ -1,135 +1,128 @@
-- name: "WDTF Design Guide"
-# Auto-expanded node
-  items: 
-  - name: "WDTF Design Guide"
+- name: WDTF Design Guide
+  items:
+  - name: WDTF Design Guide
     href: index.md
-  - name: "WDTF Quick Start"
+  - name: WDTF Quick Start
     href: wdtf-quick-start-.md
-  - name: "Writing a WDTF SimpleIO plug-in for your device"
-# Auto-expanded node
-    items: 
-    - name: "Writing a WDTF SimpleIO plug-in for your device"
+  - name: Writing a WDTF SimpleIO plug-in for your device
+    items:
+    - name: Writing a WDTF SimpleIO plug-in for your device
       href: writing-a-wdtf-simpleio-plug-in-for-your-device.md
-    - name: "How to determine if a custom  WDTF Simple I/O Action Plug-in is required for your device"
+    - name: How to determine if a custom  WDTF Simple I/O Action Plug-in is required
+        for your device
       href: test-your-device-to-see-if-you-need-to-customize-the-wdtf-simple-i-o-action-plug-in.md
-    - name: "How to customize I/O for your device using the WDTF Simple I/O Action Plug-in"
+    - name: How to customize I/O for your device using the WDTF Simple I/O Action
+        Plug-in
       href: to-customize-i-o-for-your-device-using-the-wdtf-simple-i-o-action-plug-in.md
-    - name: "Provided WDTF SimpleIO plug-ins"
+    - name: Provided WDTF SimpleIO plug-ins
       href: provided-wdtf-simpleio-plug-ins.md
-  - name: "Writing tests with WDTF"
-# Auto-expanded node
-    items: 
-    - name: "Writing tests with WDTF"
-    - name: "Simple Data Evaluation Language Overview"
+  - name: Writing tests with WDTF
+    items:
+    - name: Simple Data Evaluation Language Overview
       href: simple-data-evaluation-language-overview.md
-    - name: "Device relation tokens in SDEL"
+    - name: Device relation tokens in SDEL
       href: device-relation-tokens-in-sdel.md
-    - name: "Attribute tokens in SDEL"
+    - name: Attribute tokens in SDEL
       href: attribute-tokens-in-sdel.md
-    - name: "Examples of SDEL queries"
+    - name: Examples of SDEL queries
       href: examples-of-sdel-queries.md
-    - name: "Creating WDTF Scenarios"
-# Auto-expanded node
-      items: 
-      - name: "Creating WDTF Scenarios"
+    - name: Creating WDTF Scenarios
+      items:
+      - name: Creating WDTF Scenarios
         href: creating-wdtf-scenarios.md
-      - name: "Sample WDTF Scenarios"
+      - name: Sample WDTF Scenarios
         href: sample-wdtf-scenarios.md
-    - name: "Controlling Targets"
+    - name: Controlling Targets
       href: controlling-targets.md
-    - name: "Action interfaces"
+    - name: Action interfaces
       href: action-interfaces.md
-  - name: "Triaging WDTF-based tests"
-# Auto-expanded node
-    items: 
-    - name: "Triaging WDTF-based tests"
+  - name: Triaging WDTF-based tests
+    items:
+    - name: Triaging WDTF-based tests
       href: triaging-wdtf-based-tests.md
-    - name: "WDTF Object Logging"
-# Auto-expanded node
-      items: 
-      - name: "WDTF Object Logging"
+    - name: WDTF Object Logging
+      items:
+      - name: WDTF Object Logging
         href: logging-and-tracing.md
-      - name: "WDTF Object Name tags"
+      - name: WDTF Object Name tags
         href: wdtf-object-name-tags.md
-    - name: "Enabling and Viewing WDTF Traces"
+    - name: Enabling and Viewing WDTF Traces
       href: viewing-wdtf-traces.md
-    - name: "Diagnosing problems running WDTF-based tests"
+    - name: Diagnosing problems running WDTF-based tests
       href: diagnosing-problems-running-wdtf-based-tests.md
-  - name: "WDTF Architecture and Overview"
-# Auto-expanded node
-    items: 
-    - name: "WDTF Architecture and Overview"
+  - name: WDTF Architecture and Overview
+    items:
+    - name: WDTF Architecture and Overview
       href: wdtf-overview.md
-    - name: "WDTF Architecture"
+    - name: WDTF Architecture
       href: wdtf-architecture.md
-    - name: "WDTF runtime library" 
+    - name: WDTF runtime library
       href: wdtf-runtime-library.md
-    - name: "Extending the Framework"
-# Auto-expanded node
-      items: 
-      - name: "Extending the Framework"
+    - name: Extending the Framework
+      items:
+      - name: Extending the Framework
         href: extending-the-framework.md
-      - name: "COM Interface Design Skills"
+      - name: COM Interface Design Skills
         href: com-interface-design-skills.md
-- name: "WDTF Reference"
-  items: 
-  - name: "IWDTFDriverPackageAction2 interface"
+- name: WDTF Reference
+  items:
+  - name: IWDTFDriverPackageAction2 interface
     items:
-    - name: "IWDTFDriverPackageAction2 interface"
+    - name: IWDTFDriverPackageAction2 interface
       href: nn-wdtfdriverpackageaction-iwdtfdriverpackageaction2.md
-    - name: "IWDTFDriverPackageAction2::Compare"
+    - name: IWDTFDriverPackageAction2::Compare
       href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-compare.md
-    - name: "IWDTFDriverPackageAction2::GetQueryForDeviceThatCanUsePackage method"
+    - name: IWDTFDriverPackageAction2::GetQueryForDeviceThatCanUsePackage method
       href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-getqueryfordevicethatcanusepackage.md
-    - name: "IWDTFDriverPackageAction2::GetQueryForDeviceUsingPackage method"
+    - name: IWDTFDriverPackageAction2::GetQueryForDeviceUsingPackage method
       href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-getqueryfordeviceusingpackage.md
-    - name: "IWDTFDriverPackageAction2::get_CatalogFile"
+    - name: IWDTFDriverPackageAction2::get_CatalogFile
       href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_catalogfile.md
-    - name: "IWDTFDriverPackageAction2::get_ClassGuid"
+    - name: IWDTFDriverPackageAction2::get_ClassGuid
       href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_classguid.md
-    - name: "IWDTFDriverPackageAction2::get_ClassName"
+    - name: IWDTFDriverPackageAction2::get_ClassName
       href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_classname.md
-    - name: "IWDTFDriverPackageAction2::get_Date"
+    - name: IWDTFDriverPackageAction2::get_Date
       href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_date.md
-    - name: "IWDTFDriverPackageAction2::get_DigitalSigner"
+    - name: IWDTFDriverPackageAction2::get_DigitalSigner
       href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_digitalsigner.md
-    - name: "IWDTFDriverPackageAction2::get_HasCatalog"
+    - name: IWDTFDriverPackageAction2::get_HasCatalog
       href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_hascatalog.md
-    - name: "IWDTFDriverPackageAction2::get_InfFileName"
+    - name: IWDTFDriverPackageAction2::get_InfFileName
       href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_inffilename.md
-    - name: "IWDTFDriverPackageAction2::get_IsDigitalSigned"
+    - name: IWDTFDriverPackageAction2::get_IsDigitalSigned
       href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_isdigitalsigned.md
-    - name: "IWDTFDriverPackageAction2::get_IsImported"
+    - name: IWDTFDriverPackageAction2::get_IsImported
       href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_isimported.md
-    - name: "IWDTFDriverPackageAction2::get_Provider"
+    - name: IWDTFDriverPackageAction2::get_Provider
       href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_provider.md
-    - name: "IWDTFDriverPackageAction2::get_Version"
+    - name: IWDTFDriverPackageAction2::get_Version
       href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-get_version.md
-    - name: "IWDTFDriverPackageAction2::SetPackageInfFileName"
+    - name: IWDTFDriverPackageAction2::SetPackageInfFileName
       href: nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-setpackageinffilename.md
-  - name: "IWDTFDriverSetupAction2 interface"
+  - name: IWDTFDriverSetupAction2 interface
     items:
-    - name: "IWDTFDriverSetupAction2 interface"
+    - name: IWDTFDriverSetupAction2 interface
       href: nn-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2.md
-    - name: "IWDTFDriverSetupAction2::UnInstallDriverPermanently"
+    - name: IWDTFDriverSetupAction2::UnInstallDriverPermanently
       href: nf-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2-uninstalldriverpermanently.md
-    - name: "IWDTFDriverSetupAction2::UpdateDriver"
+    - name: IWDTFDriverSetupAction2::UpdateDriver
       href: nf-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2-updatedriver.md
-  - name: "IWDTFDriverSetupSystemAction2 interface"
+  - name: IWDTFDriverSetupSystemAction2 interface
     items:
-    - name: "IWDTFDriverSetupSystemAction2 interface"
+    - name: IWDTFDriverSetupSystemAction2 interface
       href: nn-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2.md
-    - name: "IWDTFDriverSetupSystemAction2::ClearTriageLogs"
+    - name: IWDTFDriverSetupSystemAction2::ClearTriageLogs
       href: nf-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2-cleartriagelogs.md
-    - name: "IWDTFDriverSetupSystemAction2::ImportDriverPackage"
+    - name: IWDTFDriverSetupSystemAction2::ImportDriverPackage
       href: nf-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2-importdriverpackage.md
-    - name: "IWDTFDriverSetupSystemAction2::IsImported"
+    - name: IWDTFDriverSetupSystemAction2::IsImported
       href: nf-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2-isimported.md
-    - name: "IWDTFDriverSetupSystemAction2::RemoveDriverPackage"
+    - name: IWDTFDriverSetupSystemAction2::RemoveDriverPackage
       href: nf-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2-removedriverpackage.md
-    - name: "IWDTFDriverSetupSystemAction2::RescanAllDevices"
+    - name: IWDTFDriverSetupSystemAction2::RescanAllDevices
       href: nf-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2-rescanalldevices.md
-    - name: "IWDTFDriverSetupSystemAction2::SnapTriageLogs"
+    - name: IWDTFDriverSetupSystemAction2::SnapTriageLogs
       href: nf-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2-snaptriagelogs.md
-    - name: "IWDTFDriverSetupSystemAction2::WaitNoPendingInstallEvents"
+    - name: IWDTFDriverSetupSystemAction2::WaitNoPendingInstallEvents
       href: nf-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2-waitnopendinginstallevents.md

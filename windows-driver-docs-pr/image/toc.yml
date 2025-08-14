@@ -1,2032 +1,1871 @@
-- name: "Imaging device driver design guide"
+- name: Imaging device driver design guide
   href: index.md
-- name: "Device Interface Classes for Imaging Devices"
-# Auto-expanded node
-  items: 
-  - name: "Device Interface Classes for Imaging Devices"
+- name: Device Interface Classes for Imaging Devices
+  items:
+  - name: Device Interface Classes for Imaging Devices
     href: device-interface-classes-for-imaging-devices.md
-  - name: "GUID_DEVINTERFACE_IMAGE Device Interface Class"
+  - name: GUID_DEVINTERFACE_IMAGE Device Interface Class
     href: guid-devinterface-image-device-interface-class.md
-- name: "Windows Image Acquisition Drivers"
-# Auto-expanded node
-  items: 
-  - name: "Windows Image Acquisition Drivers"
+- name: Windows Image Acquisition Drivers
+  items:
+  - name: Windows Image Acquisition Drivers
     href: windows-image-acquisition-drivers.md
-  - name: "Introduction to WIA"
-# Auto-expanded node
-    items: 
-    - name: "Introduction to WIA"
+  - name: Introduction to WIA
+    items:
+    - name: Introduction to WIA
       href: introduction-to-wia.md
-    - name: "WIA Architecture Overview"
+    - name: WIA Architecture Overview
       href: wia-architecture-overview.md
-    - name: "WIA Core Components"
+    - name: WIA Core Components
       href: wia-core-components.md
-  - name: "WIA Driver Fundamentals"
-# Auto-expanded node
-    items: 
-    - name: "WIA Driver Fundamentals"
-    - name: "WIA Driver Components"
-# Auto-expanded node
-      items: 
-      - name: "WIA Driver Components"
+  - name: WIA Driver Fundamentals
+    items:
+    - name: WIA Driver Components
+      items:
+      - name: WIA Driver Components
         href: wia-driver-components.md
-      - name: "WIA Minidriver Interfaces"
+      - name: WIA Minidriver Interfaces
         href: wia-minidriver-interfaces.md
-      - name: "Device Communication through the Bus Driver"
+      - name: Device Communication through the Bus Driver
         href: device-communication-through-the-bus-driver.md
-      - name: "WIA Components"
+      - name: WIA Components
         href: wia-components.md
-    - name: "Driver Capabilities"
+    - name: Driver Capabilities
       href: driver-capabilities.md
-    - name: "Properties and Data Management"
-# Auto-expanded node
-      items: 
-      - name: "Properties and Data Management"
+    - name: Properties and Data Management
+      items:
+      - name: Properties and Data Management
         href: properties-and-data-management.md
-      - name: "Device Properties"
+      - name: Device Properties
         href: device-properties.md
-      - name: "Driver Items"
+      - name: Driver Items
         href: driver-items.md
-    - name: "Data Transfers"
-# Auto-expanded node
-      items: 
-      - name: "Data Transfers"
+    - name: Data Transfers
+      items:
+      - name: Data Transfers
         href: data-transfers.md
-      - name: "In-Memory Transfers"
+      - name: In-Memory Transfers
         href: in-memory-transfers.md
-      - name: "File Transfers"
+      - name: File Transfers
         href: file-transfers.md
-      - name: "IStream Data Transfers"
-# Auto-expanded node
-        items: 
-        - name: "IStream Data Transfers"
+      - name: IStream Data Transfers
+        items:
+        - name: IStream Data Transfers
           href: istream-data-transfers.md
-        - name: "WIA Transfer Architecture"
-# Auto-expanded node
-          items: 
-          - name: "WIA Transfer Architecture"
+        - name: WIA Transfer Architecture
+          items:
+          - name: WIA Transfer Architecture
             href: wia-transfer-architecture.md
-          - name: "IStream Data Transfer Driver Changes"
+          - name: IStream Data Transfer Driver Changes
             href: istream-data-transfer-driver-changes.md
-          - name: "IStream Transfer Driver Example"
+          - name: IStream Transfer Driver Example
             href: istream-transfer-driver-example.md
-        - name: "Multipage IStream Transfers"
-# Auto-expanded node
-          items: 
-          - name: "Multipage IStream Transfers"
+        - name: Multipage IStream Transfers
+          items:
+          - name: Multipage IStream Transfers
             href: multipage-istream-transfers.md
-          - name: "Driver Behavior During Multipage Transfers"
+          - name: Driver Behavior During Multipage Transfers
             href: driver-behavior-during-multipage-transfers.md
-        - name: "Cancellation of IStream Data Transfers"
-# Auto-expanded node
-          items: 
-          - name: "Cancellation of IStream Data Transfers"
+        - name: Cancellation of IStream Data Transfers
+          items:
+          - name: Cancellation of IStream Data Transfers
             href: cancellation-of-istream-data-transfers.md
-          - name: "Cancellation of Data Transfers in Windows XP"
+          - name: Cancellation of Data Transfers in Windows XP
             href: cancellation-of-data-transfers-in-windows-xp.md
-          - name: "Cancellation of Data Transfers in Windows Vista"
+          - name: Cancellation of Data Transfers in Windows Vista
             href: cancellation-of-data-transfers-in-windows-vista.md
-        - name: "Integration with the Image Processing Filter"
+        - name: Integration with the Image Processing Filter
           href: integration-with-the-image-processing-filter.md
-        - name: "Uploading Data to a Device"
-# Auto-expanded node
-          items: 
-          - name: "Uploading Data to a Device"
+        - name: Uploading Data to a Device
+          items:
+          - name: Uploading Data to a Device
             href: uploading-data-to-a-device.md
-          - name: "Driver Behavior on Upload"
+          - name: Driver Behavior on Upload
             href: driver-behavior-on-upload.md
-        - name: "Achieving Compatibility with IStream Transfers"
-# Auto-expanded node
-          items: 
-          - name: "Achieving Compatibility with IStream Transfers"
+        - name: Achieving Compatibility with IStream Transfers
+          items:
+          - name: Achieving Compatibility with IStream Transfers
             href: achieving-compatibility-with-istream-transfers.md
-          - name: "Internal Compatibility Layer"
+          - name: Internal Compatibility Layer
             href: internal-compatibility-layer.md
-          - name: "Single Driver for Windows Vista and Windows XP"
+          - name: Single Driver for Windows Vista and Windows XP
             href: single-driver-for-windows-vista-and-windows-xp.md
-          - name: "WIA Driver Versioning"
+          - name: WIA Driver Versioning
             href: wia-driver-versioning.md
-        - name: "WIA Transfer Constants"
+        - name: WIA Transfer Constants
           href: wia-transfer-constants.md
-    - name: "Image Processing"
+    - name: Image Processing
       href: image-processing.md
-    - name: "Command Processing and Event Reporting"
-# Auto-expanded node
-      items: 
-      - name: "Command Processing and Event Reporting"
+    - name: Command Processing and Event Reporting
+      items:
+      - name: Command Processing and Event Reporting
         href: command-processing-and-event-reporting.md
-      - name: "Command Handling"
+      - name: Command Handling
         href: command-handling.md
-      - name: "Event Reporting"
+      - name: Event Reporting
         href: event-reporting.md
-    - name: "About Contexts"
-# Auto-expanded node
-      items: 
-      - name: "About Contexts"
+    - name: About Contexts
+      items:
+      - name: About Contexts
         href: about-contexts.md
-      - name: "Application Item Contexts"
+      - name: Application Item Contexts
         href: application-item-contexts.md
-      - name: "Property Contexts"
+      - name: Property Contexts
         href: property-contexts.md
-      - name: "Transfer Contexts"
+      - name: Transfer Contexts
         href: transfer-contexts.md
-      - name: "Device-Specific Contexts"
+      - name: Device-Specific Contexts
         href: device-specific-contexts.md
-    - name: "WIA DDI Interfaces"
-# Auto-expanded node
-      items: 
-      - name: "WIA DDI Interfaces"
+    - name: WIA DDI Interfaces
+      items:
+      - name: WIA DDI Interfaces
         href: wia-ddi-interfaces.md
-      - name: "IWiaMiniDrv COM Interface"
-# Auto-expanded node
-        items: 
-        - name: "IWiaMiniDrv COM Interface"
+      - name: IWiaMiniDrv COM Interface
+        items:
+        - name: IWiaMiniDrv COM Interface
           href: iwiaminidrv-com-interface.md
-        - name: "Error Reporting"
+        - name: Error Reporting
           href: error-reporting.md
-      - name: "WIA Driver Services Library"
+      - name: WIA Driver Services Library
         href: wia-driver-services-library.md
-      - name: "WIA Utility Library"
-# Auto-expanded node
-        items: 
-        - name: "WIA Utility Library"
+      - name: WIA Utility Library
+        items:
+        - name: WIA Utility Library
           href: wia-utility-library.md
-        - name: "WIA Functions for Debugging"
+        - name: WIA Functions for Debugging
           href: wia-functions-for-debugging.md
-        - name: "General WIA Utility Functions"
+        - name: General WIA Utility Functions
           href: general-wia-utility-functions.md
-        - name: "WIA Utility Classes"
+        - name: WIA Utility Classes
           href: wia-utility-classes.md
-      - name: "IWiaMiniDrvCallBack COM Interface"
+      - name: IWiaMiniDrvCallBack COM Interface
         href: iwiaminidrvcallback-com-interface.md
-      - name: "IWiaDrvItem COM Interface"
+      - name: IWiaDrvItem COM Interface
         href: iwiadrvitem-com-interface.md
-      - name: "IWiaLog COM Interface"
+      - name: IWiaLog COM Interface
         href: iwialog-com-interface.md
-      - name: "WIA Diagnostic Log Macros"
+      - name: WIA Diagnostic Log Macros
         href: wia-diagnostic-log-macros.md
-- name: "WIA Properties"
-# Auto-expanded node
-  items: 
-  - name: "WIA Properties"
-  - name: "Properties for All WIA Minidrivers"
+- name: WIA Properties
+  items:
+  - name: Properties for All WIA Minidrivers
     href: properties-for-all-wia-minidrivers.md
-  - name: "Properties for WIA Scanner Minidrivers"
+  - name: Properties for WIA Scanner Minidrivers
     href: properties-for-wia-scanner-minidrivers.md
-  - name: "Properties for WIA Camera Minidrivers"
+  - name: Properties for WIA Camera Minidrivers
     href: properties-for-wia-camera-minidrivers.md
-  - name: "Properties for WIA Video Minidrivers"
+  - name: Properties for WIA Video Minidrivers
     href: properties-for-wia-video-minidrivers.md
-  - name: "Properties for WIA File System Minidrivers"
+  - name: Properties for WIA File System Minidrivers
     href: properties-for-wia-file-system-minidrivers.md
-- name: "64-bit and WIA"
-# Auto-expanded node
-  items: 
-  - name: "64-bit and WIA"
+- name: 64-bit and WIA
+  items:
+  - name: 64-bit and WIA
     href: 64-bit-and-wia.md
-  - name: "64-bit WIA driver components"
+  - name: 64-bit WIA driver components
     href: 64-bit-wia-driver-components.md
-  - name: "32-Bit and 64-Bit WIA Interoperability"
+  - name: 32-Bit and 64-Bit WIA Interoperability
     href: 32-bit-and-64-bit-wia-interoperability.md
-- name: "WIA Compatibility Layer"
-# Auto-expanded node
-  items: 
-  - name: "WIA Compatibility Layer"
+- name: WIA Compatibility Layer
+  items:
+  - name: WIA Compatibility Layer
     href: wia-compatibility-layer.md
-  - name: "WIA Property Mapping"
-# Auto-expanded node
-    items: 
-    - name: "WIA Property Mapping"
+  - name: WIA Property Mapping
+    items:
+    - name: WIA Property Mapping
       href: wia-property-mapping.md
-    - name: "WIA Properties That Do Not Require Mapping"
+    - name: WIA Properties That Do Not Require Mapping
       href: wia-properties-that-do-not-require-mapping.md
-    - name: "Mapping WIA Properties with Different IDs and Names"
+    - name: Mapping WIA Properties with Different IDs and Names
       href: mapping-wia-properties-with-different-ids-and-names.md
-    - name: "Mapping WIA Properties with the Same IDs but Different Names"
+    - name: Mapping WIA Properties with the Same IDs but Different Names
       href: mapping-wia-properties-with-the-same-ids-but-different-names.md
-    - name: "Mapping WIA Properties with the Same IDs and Names"
+    - name: Mapping WIA Properties with the Same IDs and Names
       href: mapping-wia-properties-with-the-same-ids-and-names.md
-    - name: "Mapping WIA Properties That Need No Changes"
+    - name: Mapping WIA Properties That Need No Changes
       href: mapping-wia-properties-that-need-no-changes.md
-    - name: "Mapping WIA Properties That Need No Changes - Special Cases"
+    - name: Mapping WIA Properties That Need No Changes - Special Cases
       href: mapping-wia-properties-that-need-no-changes---special-cases.md
-  - name: "WIA Compatibility Layer Data Transfers"
-# Auto-expanded node
-    items: 
-    - name: "WIA Compatibility Layer Data Transfers"
+  - name: WIA Compatibility Layer Data Transfers
+    items:
+    - name: WIA Compatibility Layer Data Transfers
       href: wia-compatibility-layer-data-transfers.md
-    - name: "WIA Compatibility Layer Data Transfers Overview"
+    - name: WIA Compatibility Layer Data Transfers Overview
       href: wia-compatibility-layer-data-transfers-overview.md
-    - name: "WIA Compatibility Layer Data Transfer Design"
-# Auto-expanded node
-      items: 
-      - name: "WIA Compatibility Layer Data Transfer Design"
+    - name: WIA Compatibility Layer Data Transfer Design
+      items:
+      - name: WIA Compatibility Layer Data Transfer Design
         href: wia-compatibility-layer-data-transfer-design.md
-      - name: "Data Transfer Between Legacy Application and Windows Vista Driver"
+      - name: Data Transfer Between Legacy Application and Windows Vista Driver
         href: data-transfer-between-legacy-application-and-windows-vista-driver.md
-      - name: "Data Transfer Between Windows Vista Application and Legacy Driver"
+      - name: Data Transfer Between Windows Vista Application and Legacy Driver
         href: data-transfer-between-windows-vista-application-and-legacy-driver.md
-    - name: "WIA Compatibility Layer Message Mapping"
-# Auto-expanded node
-      items: 
-      - name: "WIA Compatibility Layer Message Mapping"
+    - name: WIA Compatibility Layer Message Mapping
+      items:
+      - name: WIA Compatibility Layer Message Mapping
         href: wia-compatibility-layer-message-mapping.md
-      - name: "Mapping for a Legacy Application and Windows Vista Driver"
+      - name: Mapping for a Legacy Application and Windows Vista Driver
         href: mapping-for-a-legacy-application-and-windows-vista-driver.md
-      - name: "Mapping for a Vista Application and Legacy Driver"
+      - name: Mapping for a Vista Application and Legacy Driver
         href: mapping-for-a-vista-application-and-legacy-driver.md
-- name: "WIA Driver Filters"
-# Auto-expanded node
-  items: 
-  - name: "WIA Driver Filters"
+- name: WIA Driver Filters
+  items:
+  - name: WIA Driver Filters
     href: wia-driver-filters.md
-  - name: "WIA Image Processing Filter"
-# Auto-expanded node
-    items: 
-    - name: "WIA Image Processing Filter"
+  - name: WIA Image Processing Filter
+    items:
+    - name: WIA Image Processing Filter
       href: wia-image-processing-filter.md
-    - name: "Introduction to Image Processing Filters"
+    - name: Introduction to Image Processing Filters
       href: introduction-to-image-processing-filters.md
-    - name: "Installing an Image Processing Filter"
+    - name: Installing an Image Processing Filter
       href: installing-an-image-processing-filter.md
-    - name: "Image Processing Code Example"
+    - name: Image Processing Code Example
       href: image-processing-code-example.md
-  - name: "WIA Segmentation Filter"
-# Auto-expanded node
-    items: 
-    - name: "WIA Segmentation Filter"
-    - name: "Introduction to Segmentation Filters"
+  - name: WIA Segmentation Filter
+    items:
+    - name: Introduction to Segmentation Filters
       href: introduction-to-segmentation-filters.md
-    - name: "Interfaces for Segmentation Filters"
+    - name: Interfaces for Segmentation Filters
       href: interfaces-for-segmentation-filters.md
-    - name: "Implementation Notes for Segmentation Filters"
+    - name: Implementation Notes for Segmentation Filters
       href: implementation-notes-for-segmentation-filters.md
-    - name: "Installing a Segmentation Filter"
+    - name: Installing a Segmentation Filter
       href: installing-a-segmentation-filter.md
-    - name: "WIA Properties for Segmentation Filters"
-# Auto-expanded node
-      items: 
-      - name: "WIA Properties for Segmentation Filters"
+    - name: WIA Properties for Segmentation Filters
+      items:
+      - name: WIA Properties for Segmentation Filters
         href: wia-properties-for-segmentation-filters.md
-      - name: "WIA_IPS_DESKEW_X and WIA_IPS_DESKEW_Y Properties"
+      - name: WIA_IPS_DESKEW_X and WIA_IPS_DESKEW_Y Properties
         href: wia-ips-deskew-x-and-wia-ips-deskew-y-properties.md
-    - name: "Segmentation Filter Examples"
-# Auto-expanded node
-      items: 
-      - name: "Segmentation Filter Examples"
-      - name: "Example: Default Segmentation Filter"
+    - name: Segmentation Filter Examples
+      items:
+      - name: 'Example: Default Segmentation Filter'
         href: example--default-segmentation-filter.md
-      - name: "Example: Simple Segmentation Filter"
+      - name: 'Example: Simple Segmentation Filter'
         href: example--simple-segmentation-filter.md
-      - name: "Example: Application Using a Segmentation Filter"
+      - name: 'Example: Application Using a Segmentation Filter'
         href: example--application-using-a-segmentation-filter.md
-      - name: "Example: DetectSubregions"
+      - name: 'Example: DetectSubregions'
         href: example--detectsubregions.md
-      - name: "Example: DownloadPreviewImage"
+      - name: 'Example: DownloadPreviewImage'
         href: example--downloadpreviewimage.md
-- name: "WIA Item Trees"
-# Auto-expanded node
-  items: 
-  - name: "WIA Item Trees"
+- name: WIA Item Trees
+  items:
+  - name: WIA Item Trees
     href: wia-item-trees.md
-  - name: "WIA Item Tree Architecture"
-# Auto-expanded node
-    items: 
-    - name: "WIA Item Tree Architecture"
+  - name: WIA Item Tree Architecture
+    items:
+    - name: WIA Item Tree Architecture
       href: wia-item-tree-architecture.md
-    - name: "Application Items and Driver Items"
-# Auto-expanded node
-      items: 
-      - name: "Application Items and Driver Items"
+    - name: Application Items and Driver Items
+      items:
+      - name: Application Items and Driver Items
         href: application-items-and-driver-items.md
-      - name: "About Item Properties"
+      - name: About Item Properties
         href: about-item-properties.md
-      - name: "WIA Driver Item Tree"
+      - name: WIA Driver Item Tree
         href: wia-driver-item-tree.md
-      - name: "WIA Camera Tree"
+      - name: WIA Camera Tree
         href: wia-camera-tree.md
-      - name: "WIA Scanner Tree"
+      - name: WIA Scanner Tree
         href: wia-scanner-tree.md
-      - name: "Common, Camera, and Scanner Properties"
+      - name: Common, Camera, and Scanner Properties
         href: common--camera--and-scanner-properties.md
-    - name: "Describing a WIA Device Using WIA Items"
-# Auto-expanded node
-      items: 
-      - name: "Describing a WIA Device Using WIA Items"
+    - name: Describing a WIA Device Using WIA Items
+      items:
+      - name: Describing a WIA Device Using WIA Items
         href: describing-a-wia-device-using-wia-items.md
-      - name: "WIA Item Flags"
+      - name: WIA Item Flags
         href: wia-item-flags.md
-      - name: "WIA Item Categories"
+      - name: WIA Item Categories
         href: wia-item-categories.md
-      - name: "Example Usage of WIA Item Flags and Categories"
+      - name: Example Usage of WIA Item Flags and Categories
         href: example-usage-of-wia-item-flags-and-categories.md
-      - name: "WIA Root Item"
+      - name: WIA Root Item
         href: wia-root-item.md
-      - name: "WIA Data Item"
+      - name: WIA Data Item
         href: wia-data-item.md
-  - name: "Changing the WIA Item Tree Structure"
+  - name: Changing the WIA Item Tree Structure
     href: changing-the-wia-item-tree-structure.md
-  - name: "WIA Scanner Item Tree for Windows Me and Windows XP"
-# Auto-expanded node
-    items: 
-    - name: "WIA Scanner Item Tree for Windows Me and Windows XP"
+  - name: WIA Scanner Item Tree for Windows Me and Windows XP
+    items:
+    - name: WIA Scanner Item Tree for Windows Me and Windows XP
       href: wia-scanner-item-tree-for-windows-me-and-windows-xp.md
-    - name: "WIA Scanner Item Tree Layout for Windows Me and Windows XP"
+    - name: WIA Scanner Item Tree Layout for Windows Me and Windows XP
       href: wia-scanner-item-tree-layout-for-windows-me-and-windows-xp.md
-    - name: "Adding Document Feeder Support for Windows Me and Windows XP"
+    - name: Adding Document Feeder Support for Windows Me and Windows XP
       href: adding-document-feeder-support-for-windows-me-and-windows-xp.md
-  - name: "WIA Scanner Item Tree for Windows Vista"
-# Auto-expanded node
-    items: 
-    - name: "WIA Scanner Item Tree for Windows Vista"
-    - name: "WIA Flatbed Scanners"
-# Auto-expanded node
-      items: 
-      - name: "WIA Flatbed Scanners"
+  - name: WIA Scanner Item Tree for Windows Vista
+    items:
+    - name: WIA Flatbed Scanners
+      items:
+      - name: WIA Flatbed Scanners
         href: wia-flatbed-scanners.md
-      - name: "Flatbed Scanner Architecture"
+      - name: Flatbed Scanner Architecture
         href: flatbed-scanner-architecture.md
-      - name: "Implementing Flatbed Scanner Item Trees"
-# Auto-expanded node
-        items: 
-        - name: "Implementing Flatbed Scanner Item Trees"
-        - name: "WIA Item Flags for Flatbed Scanners"
+      - name: Implementing Flatbed Scanner Item Trees
+        items:
+        - name: WIA Item Flags for Flatbed Scanners
           href: wia-item-flags-for-flatbed-scanners.md
-        - name: "WIA Item Properties for Flatbed Scanners"
-# Auto-expanded node
-          items: 
-          - name: "WIA Item Properties for Flatbed Scanners"
-          - name: "Required Root Item Properties for WIA Scanners"
+        - name: WIA Item Properties for Flatbed Scanners
+          items:
+          - name: Required Root Item Properties for WIA Scanners
             href: required-root-item-properties-for-wia-scanners.md
-          - name: "Optional Root Item Properties for WIA Scanners"
+          - name: Optional Root Item Properties for WIA Scanners
             href: optional-root-item-properties-for-wia-scanners.md
-          - name: "Required Flatbed Item Properties"
+          - name: Required Flatbed Item Properties
             href: required-flatbed-item-properties.md
-          - name: "Optional Flatbed Item Properties"
+          - name: Optional Flatbed Item Properties
             href: optional-flatbed-item-properties.md
-          - name: "Flatbed Child Item Properties"
+          - name: Flatbed Child Item Properties
             href: flatbed-child-item-properties.md
-        - name: "Basic Scanning for Flatbed Scanners"
+        - name: Basic Scanning for Flatbed Scanners
           href: basic-scanning-for-flatbed-scanners.md
-      - name: "WIA Flatbed Scanner Compatibility for Windows XP and Windows Me"
-# Auto-expanded node
-        items: 
-        - name: "WIA Flatbed Scanner Compatibility for Windows XP and Windows Me"
+      - name: WIA Flatbed Scanner Compatibility for Windows XP and Windows Me
+        items:
+        - name: WIA Flatbed Scanner Compatibility for Windows XP and Windows Me
           href: wia-flatbed-scanner-compatibility-for-windows-xp-and-windows-me.md
-        - name: "WIA Item Property and Location Changes"
+        - name: WIA Item Property and Location Changes
           href: wia-item-property-and-location-changes.md
-    - name: "WIA Feeder Scanners"
-# Auto-expanded node
-      items: 
-      - name: "WIA Feeder Scanners"
+    - name: WIA Feeder Scanners
+      items:
+      - name: WIA Feeder Scanners
         href: wia-feeder-scanners.md
-      - name: "Feeder Scanner Architecture"
-# Auto-expanded node
-        items: 
-        - name: "Feeder Scanner Architecture"
+      - name: Feeder Scanner Architecture
+        items:
+        - name: Feeder Scanner Architecture
           href: feeder-scanner-architecture.md
-        - name: "Non-Duplex-Capable Document Feeder"
+        - name: Non-Duplex-Capable Document Feeder
           href: non-duplex-capable-document-feeder.md
-        - name: "Simple Duplex-Capable Document Feeder"
+        - name: Simple Duplex-Capable Document Feeder
           href: simple-duplex-capable-document-feeder.md
-        - name: "Advanced Duplex-Capable Document Feeder"
+        - name: Advanced Duplex-Capable Document Feeder
           href: advanced-duplex-capable-document-feeder.md
-      - name: "Implementing Feeder Scanner Item Trees"
-# Auto-expanded node
-        items: 
-        - name: "Implementing Feeder Scanner Item Trees"
+      - name: Implementing Feeder Scanner Item Trees
+        items:
+        - name: Implementing Feeder Scanner Item Trees
           href: implementing-feeder-scanner-item-trees.md
-        - name: "WIA Item Flags for Feeder Scanners"
+        - name: WIA Item Flags for Feeder Scanners
           href: wia-item-flags-for-feeder-scanners.md
-        - name: "WIA Item Properties for Feeder Scanners"
-# Auto-expanded node
-          items: 
-          - name: "WIA Item Properties for Feeder Scanners"
-          - name: "Required Root Item Properties for Feeder Scanners"
+        - name: WIA Item Properties for Feeder Scanners
+          items:
+          - name: Required Root Item Properties for Feeder Scanners
             href: required-root-item-properties-for-feeder-scanners.md
-          - name: "Required WIA Item Properties for Feeder Scanners"
+          - name: Required WIA Item Properties for Feeder Scanners
             href: required-wia-item-properties-for-feeder-scanners.md
-          - name: "Optional WIA Item Properties for Feeder Scanners"
+          - name: Optional WIA Item Properties for Feeder Scanners
             href: optional-wia-item-properties-for-feeder-scanners.md
-          - name: "Requirements for Feeder Scanners Child Items"
+          - name: Requirements for Feeder Scanners Child Items
             href: requirements-for-feeder-scanners-child-items.md
-        - name: "Basic Scanning with a Feeder Scanner"
+        - name: Basic Scanning with a Feeder Scanner
           href: basic-scanning-with-a-feeder-scanner.md
-      - name: "WIA Feeder Scanner Compatibility for Windows XP and Windows Me"
+      - name: WIA Feeder Scanner Compatibility for Windows XP and Windows Me
         href: wia-feeder-scanner-compatibility-for-windows-xp-and-windows-me.md
-    - name: "WIA Film Scanners"
-# Auto-expanded node
-      items: 
-      - name: "WIA Film Scanners"
+    - name: WIA Film Scanners
+      items:
+      - name: WIA Film Scanners
         href: wia-film-scanners.md
-      - name: "Film Scanner Architecture"
-# Auto-expanded node
-        items: 
-        - name: "Film Scanner Architecture"
+      - name: Film Scanner Architecture
+        items:
+        - name: Film Scanner Architecture
           href: film-scanner-architecture.md
-        - name: "Flatbed Scanners that Support Film Scanning"
+        - name: Flatbed Scanners that Support Film Scanning
           href: flatbed-scanners-that-support-film-scanning.md
-        - name: "Dedicated Film Scanners"
+        - name: Dedicated Film Scanners
           href: dedicated-film-scanners.md
-      - name: "Implementing Film Scanner Item Trees"
-# Auto-expanded node
-        items: 
-        - name: "Implementing Film Scanner Item Trees"
-        - name: "WIA Item Flags for Film Scanners"
+      - name: Implementing Film Scanner Item Trees
+        items:
+        - name: WIA Item Flags for Film Scanners
           href: wia-item-flags-for-film-scanners.md
-        - name: "WIA Item Properties for Film Scanners"
-# Auto-expanded node
-          items: 
-          - name: "WIA Item Properties for Film Scanners"
-          - name: "Required Root Item Properties for Film Scanners"
+        - name: WIA Item Properties for Film Scanners
+          items:
+          - name: Required Root Item Properties for Film Scanners
             href: required-root-item-properties-for-film-scanners.md
-          - name: "Required WIA Item Properties for Film Scanners"
+          - name: Required WIA Item Properties for Film Scanners
             href: required-wia-item-properties-for-film-scanners.md
-          - name: "Optional WIA Item Properties for Film Scanners"
+          - name: Optional WIA Item Properties for Film Scanners
             href: optional-wia-item-properties-for-film-scanners.md
-          - name: "Required WIA Child Item Properties for Film Scanners"
+          - name: Required WIA Child Item Properties for Film Scanners
             href: required-wia-child-item-properties-for-film-scanners.md
-          - name: "Optional WIA Child Item Properties for Film Scanners"
+          - name: Optional WIA Child Item Properties for Film Scanners
             href: optional-wia-child-item-properties-for-film-scanners.md
-        - name: "Using IWiaItem::CreateChildItem to Create Selection Areas"
+        - name: Using IWiaItem::CreateChildItem to Create Selection Areas
           href: using-iwiaitem-createchilditem-to-create-selection-areas.md
-        - name: "Basic Scanning for Film Scanners"
+        - name: Basic Scanning for Film Scanners
           href: basic-scanning-for-film-scanners.md
-      - name: "WIA Film Scanner Compatibility for Windows XP and Windows Me"
+      - name: WIA Film Scanner Compatibility for Windows XP and Windows Me
         href: wia-film-scanner-compatibility-for-windows-xp-and-windows-me.md
-    - name: "WIA Scanner Storage"
-# Auto-expanded node
-      items: 
-      - name: "WIA Scanner Storage"
+    - name: WIA Scanner Storage
+      items:
+      - name: WIA Scanner Storage
         href: wia-scanner-storage.md
-      - name: "Scanner Storage Architecture"
+      - name: Scanner Storage Architecture
         href: scanner-storage-architecture.md
-      - name: "Implementing Scanner-Storage Item Trees"
-# Auto-expanded node
-        items: 
-        - name: "Implementing Scanner-Storage Item Trees"
+      - name: Implementing Scanner-Storage Item Trees
+        items:
+        - name: Implementing Scanner-Storage Item Trees
           href: implementing-scanner-storage-item-trees.md
-        - name: "WIA Item Flags for Scanner Storage"
+        - name: WIA Item Flags for Scanner Storage
           href: wia-item-flags-for-scanner-storage.md
-        - name: "WIA Item Properties for Scanner Storage"
-# Auto-expanded node
-          items: 
-          - name: "WIA Item Properties for Scanner Storage"
-          - name: "Required Root Item Properties for Scanner Storage"
+        - name: WIA Item Properties for Scanner Storage
+          items:
+          - name: Required Root Item Properties for Scanner Storage
             href: required-root-item-properties-for-scanner-storage.md
-          - name: "Required WIA Item Properties for Scanner Storage"
+          - name: Required WIA Item Properties for Scanner Storage
             href: required-wia-item-properties-for-scanner-storage.md
-          - name: "Optional WIA Item Properties for Scanner Storage"
+          - name: Optional WIA Item Properties for Scanner Storage
             href: optional-wia-item-properties-for-scanner-storage.md
-          - name: "Required WIA Child Item Properties for Scanner Storage"
+          - name: Required WIA Child Item Properties for Scanner Storage
             href: required-wia-child-item-properties-for-scanner-storage.md
-          - name: "Optional WIA Child Item Properties for Scanner Storage"
+          - name: Optional WIA Child Item Properties for Scanner Storage
             href: optional-wia-child-item-properties-for-scanner-storage.md
-        - name: "Transferring Data from Scanner Storage"
+        - name: Transferring Data from Scanner Storage
           href: transferring-data-from-scanner-storage.md
-      - name: "WIA Scanner Storage Compatibility for Windows XP and Windows Me"
+      - name: WIA Scanner Storage Compatibility for Windows XP and Windows Me
         href: wia-scanner-storage-compatibility-for-windows-xp-and-windows-me.md
-  - name: "WIA Scanner Item Tree for Windows 7"
-# Auto-expanded node
-    items: 
-    - name: "WIA Scanner Item Tree for Windows 7"
+  - name: WIA Scanner Item Tree for Windows 7
+    items:
+    - name: WIA Scanner Item Tree for Windows 7
       href: wia-scanner-item-tree-for-windows-7.md
-    - name: "Auto-Configured Scanning"
-# Auto-expanded node
-      items: 
-      - name: "Auto-Configured Scanning"
+    - name: Auto-Configured Scanning
+      items:
+      - name: Auto-Configured Scanning
         href: auto-configured-scanning.md
-      - name: "Auto Item"
+      - name: Auto Item
         href: auto-item.md
-      - name: "WIA Properties Supported by an Auto Item"
+      - name: WIA Properties Supported by an Auto Item
         href: wia-properties-supported-by-an-auto-item.md
-    - name: "Identifying the Input Source for a Scan Event"
+    - name: Identifying the Input Source for a Scan Event
       href: identifying-the-input-source-for-a-scan-event.md
-- name: "WIA with Web Services for Devices"
-# Auto-expanded node
-  items: 
-  - name: "WIA with Web Services for Devices"
+- name: WIA with Web Services for Devices
+  items:
+  - name: WIA with Web Services for Devices
     href: wia-with-web-services-for-devices.md
-  - name: "Install a WIA scanner driver with WSD"
-# Auto-expanded node
-    items: 
-    - name: "Install a WIA scanner driver with WSD"
+  - name: Install a WIA scanner driver with WSD
+    items:
+    - name: Install a WIA scanner driver with WSD
       href: installing-a-wia-scanner-driver-with-wsd.md
-    - name: "Sample INF File for a Web Services Scanner"
+    - name: Sample INF File for a Web Services Scanner
       href: sample-inf-file-for-a-web-services-scanner.md
-  - name: "SOAP Communications for WIA Scanners"
-# Auto-expanded node
-    items: 
-    - name: "SOAP Communications for WIA Scanners"
+  - name: SOAP Communications for WIA Scanners
+    items:
+    - name: SOAP Communications for WIA Scanners
       href: soap-communications-for-wia-scanners.md
-    - name: "Obtaining a Function Instance Object"
-# Auto-expanded node
-      items: 
-      - name: "Obtaining a Function Instance Object"
+    - name: Obtaining a Function Instance Object
+      items:
+      - name: Obtaining a Function Instance Object
         href: obtaining-a-function-instance-object.md
-      - name: "Code Example for Obtaining a Function Instance Object"
+      - name: Code Example for Obtaining a Function Instance Object
         href: code-example-for-obtaining-a-function-instance-object.md
-    - name: "Reading Device Metadata"
-# Auto-expanded node
-      items: 
-      - name: "Reading Device Metadata"
+    - name: Reading Device Metadata
+      items:
+      - name: Reading Device Metadata
         href: reading-device-metadata.md
-      - name: "Code Example for Opening a Property Store"
+      - name: Code Example for Opening a Property Store
         href: code-example-for-opening-a-property-store.md
-      - name: "Code Example for Reading Device Properties"
+      - name: Code Example for Reading Device Properties
         href: code-example-for-reading-device-properties.md
-      - name: "Code Example for Initializing Device Properties"
+      - name: Code Example for Initializing Device Properties
         href: code-example-for-initializing-device-properties.md
-  - name: "Challenging a Disconnected Scanner with the WSD Challenger"
-# Auto-expanded node
-    items: 
-    - name: "Challenging a Disconnected Scanner with the WSD Challenger"
+  - name: Challenging a Disconnected Scanner with the WSD Challenger
+    items:
+    - name: Challenging a Disconnected Scanner with the WSD Challenger
       href: challenging-a-disconnected-scanner-with-the-wsd-challenger.md
-    - name: "Definitions and Variables Used in the Examples"
+    - name: Definitions and Variables Used in the Examples
       href: definitions-and-variables-used-in-the-examples.md
-    - name: "Macro Example to Filter Error Codes"
+    - name: Macro Example to Filter Error Codes
       href: macro-example-to-filter-error-codes.md
-    - name: "Code Example for Challenging a Potentially Disconnected Device"
+    - name: Code Example for Challenging a Potentially Disconnected Device
       href: code-example-for-challenging-a-potentially-disconnected-device.md
-    - name: "Code Example for Implementing Helper Methods"
+    - name: Code Example for Implementing Helper Methods
       href: code-example-for-implementing-helper-methods.md
-- name: "Developing a WIA Driver"
-# Auto-expanded node
-  items: 
-  - name: "Developing a WIA Driver"
-  - name: "Developing a WIA Driver: Basic Concepts"
-# Auto-expanded node
-    items: 
-    - name: "Developing a WIA Driver: Basic Concepts"
-    - name: "Creating a WIA Minidriver"
-# Auto-expanded node
-      items: 
-      - name: "Creating a WIA Minidriver"
-      - name: "Providing a COM Interface"
+- name: Developing a WIA Driver
+  items:
+  - name: 'Developing a WIA Driver: Basic Concepts'
+    items:
+    - name: Creating a WIA Minidriver
+      items:
+      - name: Providing a COM Interface
         href: providing-a-com-interface.md
-      - name: "Providing an IStiUSD Interface"
+      - name: Providing an IStiUSD Interface
         href: providing-an-istiusd-interface.md
-      - name: "Initializing the WIA Minidriver"
-# Auto-expanded node
-        items: 
-        - name: "Initializing the WIA Minidriver"
+      - name: Initializing the WIA Minidriver
+        items:
+        - name: Initializing the WIA Minidriver
           href: initializing-the-wia-minidriver.md
-        - name: "Calling Order for Minidriver Functions"
+        - name: Calling Order for Minidriver Functions
           href: calling-order-for-minidriver-functions.md
-        - name: "Loading and Unloading a WIA Minidriver"
+        - name: Loading and Unloading a WIA Minidriver
           href: loading-and-unloading-a-wia-minidriver.md
-        - name: "Connecting and Disconnecting a WIA Application"
-# Auto-expanded node
-          items: 
-          - name: "Connecting and Disconnecting a WIA Application"
+        - name: Connecting and Disconnecting a WIA Application
+          items:
+          - name: Connecting and Disconnecting a WIA Application
             href: connecting-and-disconnecting-a-wia-application.md
-          - name: "How the Application Creates the WIA Device"
+          - name: How the Application Creates the WIA Device
             href: how-the-application-creates-the-wia-device.md
-          - name: "How the Application Releases the WIA Device"
+          - name: How the Application Releases the WIA Device
             href: how-the-application-releases-the-wia-device.md
-          - name: "How the WIA Minidriver Receives a Disconnect Event from the WIA Service"
+          - name: How the WIA Minidriver Receives a Disconnect Event from the WIA
+              Service
             href: how-the-wia-minidriver-receives-a-disconnect-event-from-the-wia-servic.md
-        - name: "Reporting WIA Minidriver Status"
-# Auto-expanded node
-          items: 
-          - name: "Reporting WIA Minidriver Status"
+        - name: Reporting WIA Minidriver Status
+          items:
+          - name: Reporting WIA Minidriver Status
             href: reporting-wia-minidriver-status.md
-          - name: "Reporting Device Online Status"
+          - name: Reporting Device Online Status
             href: reporting-device-online-status.md
-          - name: "Performing Diagnostics on a WIA Device"
+          - name: Performing Diagnostics on a WIA Device
             href: performing-diagnostics-on-a-wia-device.md
-      - name: "Creating the WIA Driver Item Tree"
+      - name: Creating the WIA Driver Item Tree
         href: creating-the-wia-driver-item-tree.md
-      - name: "Informing an Application of Item Tree Changes"
+      - name: Informing an Application of Item Tree Changes
         href: informing-an-application-of-item-tree-changes.md
-      - name: "Using WIA Properties"
-# Auto-expanded node
-        items: 
-        - name: "Using WIA Properties"
-        - name: "Adding WIA Properties to a WIA Item"
+      - name: Using WIA Properties
+        items:
+        - name: Adding WIA Properties to a WIA Item
           href: adding-wia-properties-to-a-wia-item.md
-        - name: "Defining Custom Properties"
+        - name: Defining Custom Properties
           href: defining-custom-properties.md
-        - name: "Using Custom Properties"
-# Auto-expanded node
-          items: 
-          - name: "Using Custom Properties"
+        - name: Using Custom Properties
+          items:
+          - name: Using Custom Properties
             href: using-custom-properties.md
-          - name: "Sample Code to Create Custom Properties"
+          - name: Sample Code to Create Custom Properties
             href: sample-code-to-create-custom-properties.md
-          - name: "Sample Code to Set Custom Properties"
+          - name: Sample Code to Set Custom Properties
             href: sample-code-to-set-custom-properties.md
-        - name: "Reading WIA Item Properties by an Application"
+        - name: Reading WIA Item Properties by an Application
           href: reading-wia-item-properties-by-an-application.md
-        - name: "Reading WIA Item Properties by a Driver"
+        - name: Reading WIA Item Properties by a Driver
           href: reading-wia-item-properties-by-a-driver.md
-        - name: "Writing WIA Item Properties by an Application"
+        - name: Writing WIA Item Properties by an Application
           href: writing-wia-item-properties-by-an-application.md
-        - name: "Writing WIA Properties by a Driver"
+        - name: Writing WIA Properties by a Driver
           href: writing-wia-properties-by-a-driver.md
-        - name: "Applying WIA Property Settings to the Hardware"
+        - name: Applying WIA Property Settings to the Hardware
           href: applying-wia-property-settings-to-the-hardware.md
-        - name: "Adding Image Format Support"
+        - name: Adding Image Format Support
           href: adding-image-format-support.md
-        - name: "Deleting an Item from the Driver Tree"
+        - name: Deleting an Item from the Driver Tree
           href: deleting-an-item-from-the-driver-tree.md
-      - name: "Accessing Kernel-Mode Drivers for Still Image Devices"
-# Auto-expanded node
-        items: 
-        - name: "Accessing Kernel-Mode Drivers for Still Image Devices"
+      - name: Accessing Kernel-Mode Drivers for Still Image Devices
+        items:
+        - name: Accessing Kernel-Mode Drivers for Still Image Devices
           href: accessing-kernel-mode-drivers-for-still-image-devices.md
-        - name: "SCSI Driver"
+        - name: SCSI Driver
           href: scsi-driver.md
-        - name: "USB Driver"
+        - name: USB Driver
           href: usb-driver.md
-      - name: "Implementing Image Color Management"
+      - name: Implementing Image Color Management
         href: implementing-image-color-management.md
-    - name: "Creating a WIA Microdriver"
-# Auto-expanded node
-      items: 
-      - name: "Creating a WIA Microdriver"
+    - name: Creating a WIA Microdriver
+      items:
+      - name: Creating a WIA Microdriver
         href: creating-a-wia-microdriver.md
-      - name: "Microdriver Functions"
+      - name: Microdriver Functions
         href: microdriver-functions.md
-      - name: "WIA Flatbed Driver"
+      - name: WIA Flatbed Driver
         href: wia-flatbed-driver.md
-      - name: "INF File Entries"
+      - name: INF File Entries
         href: inf-file-entries.md
-    - name: "Creating a Hello World WIA Minidriver"
-# Auto-expanded node
-      items: 
-      - name: "Creating a Hello World WIA Minidriver"
+    - name: Creating a Hello World WIA Minidriver
+      items:
+      - name: Creating a Hello World WIA Minidriver
         href: creating-a---hello-world---wia-minidriver.md
-      - name: "Hello World Definition File"
+      - name: Hello World Definition File
         href: --hello-world---definition-file.md
-      - name: "Hello World Installation File"
+      - name: Hello World Installation File
         href: --hello-world---installation-file.md
-      - name: "Hello World Implementation File"
+      - name: Hello World Implementation File
         href: --hello-world---implementation-file.md
-    - name: "Transferring Data to a WIA Application"
-# Auto-expanded node
-      items: 
-      - name: "Transferring Data to a WIA Application"
+    - name: Transferring Data to a WIA Application
+      items:
+      - name: Transferring Data to a WIA Application
         href: transferring-data-to-a-wia-application.md
-      - name: "Understanding TYMED"
+      - name: Understanding TYMED
         href: understanding-tymed.md
-      - name: "Allocating Memory for Data"
+      - name: Allocating Memory for Data
         href: allocating-memory-for-data.md
-      - name: "Canceling a Data Transfer"
+      - name: Canceling a Data Transfer
         href: canceling-a-data-transfer.md
-      - name: "Canceling Pending I/O Operations"
+      - name: Canceling Pending I/O Operations
         href: canceling-pending-i-o-operations.md
-      - name: "RAW Format Data Transfer"
-# Auto-expanded node
-        items: 
-        - name: "RAW Format Data Transfer"
+      - name: RAW Format Data Transfer
+        items:
+        - name: RAW Format Data Transfer
           href: raw-format-data-transfer.md
-        - name: "WIA RAW Data Header"
+        - name: WIA RAW Data Header
           href: wia-raw-data-header.md
-        - name: "Property Validation for RAW Format Transfers"
+        - name: Property Validation for RAW Format Transfers
           href: property-validation-for-raw-format-transfers.md
-    - name: "WIA Driver Event Support"
-# Auto-expanded node
-      items: 
-      - name: "WIA Driver Event Support"
+    - name: WIA Driver Event Support
+      items:
+      - name: WIA Driver Event Support
         href: wia-driver-event-support.md
-      - name: "Adding Interrupt Event Support"
+      - name: Adding Interrupt Event Support
         href: adding-interrupt-event-support.md
-      - name: "Adding Polling Event Support"
+      - name: Adding Polling Event Support
         href: adding-polling-event-support.md
-      - name: "Providing Event Notification"
+      - name: Providing Event Notification
         href: providing-event-notification.md
-    - name: "WIA Driver Command Support"
+    - name: WIA Driver Command Support
       href: wia-driver-command-support.md
-    - name: "WIA Driver Error Handling and Recovery"
-# Auto-expanded node
-      items: 
-      - name: "WIA Driver Error Handling and Recovery"
+    - name: WIA Driver Error Handling and Recovery
+      items:
+      - name: WIA Driver Error Handling and Recovery
         href: wia-driver-error-handling-and-recovery.md
-      - name: "WIA Driver Error Reporting for Windows Me and Windows XP"
+      - name: WIA Driver Error Reporting for Windows Me and Windows XP
         href: wia-driver-error-reporting-for-windows-me-and-windows-xp.md
-      - name: "WIA Driver Error Recovery for Windows Vista"
-# Auto-expanded node
-        items: 
-        - name: "WIA Driver Error Recovery for Windows Vista"
+      - name: WIA Driver Error Recovery for Windows Vista
+        items:
+        - name: WIA Driver Error Recovery for Windows Vista
           href: wia-driver-error-recovery-for-windows-vista.md
-        - name: "WIA Error Handling Architecture"
+        - name: WIA Error Handling Architecture
           href: wia-error-handling-architecture.md
-        - name: "WIA Error Handler Cancellation of Modeless Dialogs"
+        - name: WIA Error Handler Cancellation of Modeless Dialogs
           href: wia-error-handler-cancellation-of-modeless-dialogs.md
-        - name: "WIA Error Handler Return Values"
+        - name: WIA Error Handler Return Values
           href: wia-error-handler-return-values.md
-        - name: "WIA Device Messages"
+        - name: WIA Device Messages
           href: wia-device-messages.md
-        - name: "Installing a WIA Error Handling Driver Extension"
+        - name: Installing a WIA Error Handling Driver Extension
           href: installing-a-wia-error-handling-driver-extension.md
-        - name: "WIA Error Handling Example"
+        - name: WIA Error Handling Example
           href: wia-error-handling-example.md
-- name: "Developing a WIA Camera Driver"
-# Auto-expanded node
-  items: 
-  - name: "Developing a WIA Camera Driver"
+- name: Developing a WIA Camera Driver
+  items:
+  - name: Developing a WIA Camera Driver
     href: developing-a-wia-camera-driver.md
-  - name: "PTP Driver"
-# Auto-expanded node
-    items: 
-    - name: "PTP Driver"
+  - name: PTP Driver
+    items:
+    - name: PTP Driver
       href: ptp-driver.md
-    - name: "Installing a PTP Camera"
+    - name: Installing a PTP Camera
       href: installing-a-ptp-camera.md
-    - name: "Mapping PTP Objects to WIA Items"
-# Auto-expanded node
-      items: 
-      - name: "Mapping PTP Objects to WIA Items"
+    - name: Mapping PTP Objects to WIA Items
+      items:
+      - name: Mapping PTP Objects to WIA Items
         href: mapping-ptp-objects-to-wia-items.md
-      - name: "Mapping PTP Format Codes to WIA Format GUIDs"
+      - name: Mapping PTP Format Codes to WIA Format GUIDs
         href: mapping-ptp-format-codes-to-wia-format-guids.md
-      - name: "Mapping PTP Associations to WIA Folders"
+      - name: Mapping PTP Associations to WIA Folders
         href: mapping-ptp-associations-to-wia-folders.md
-    - name: "PTP Events"
+    - name: PTP Events
       href: ptp-events.md
-    - name: "PTP Error Recovery"
+    - name: PTP Error Recovery
       href: ptp-error-recovery.md
-    - name: "PTP Error Codes"
+    - name: PTP Error Codes
       href: ptp-error-codes.md
-    - name: "PTP Required Commands"
+    - name: PTP Required Commands
       href: ptp-required-commands.md
-    - name: "Canceling a Data Transfer by a Device"
+    - name: Canceling a Data Transfer by a Device
       href: canceling-a-data-transfer-by-a-device.md
-    - name: "Creating a Well-Behaved PTP Camera"
-# Auto-expanded node
-      items: 
-      - name: "Creating a Well-Behaved PTP Camera"
-      - name: "Object Handle and Event Order"
+    - name: Creating a Well-Behaved PTP Camera
+      items:
+      - name: Object Handle and Event Order
         href: object-handle-and-event-order.md
-      - name: "Automatically Generated Object Names"
-# Auto-expanded node
-        items: 
-        - name: "Automatically Generated Object Names"
+      - name: Automatically Generated Object Names
+        items:
+        - name: Automatically Generated Object Names
           href: automatically-generated-object-names.md
-        - name: "Object Size in PTP"
+        - name: Object Size in PTP
           href: object-size-in-ptp.md
-        - name: "Image Geometry Properties"
+        - name: Image Geometry Properties
           href: image-geometry-properties.md
-      - name: "Vendor-Extended Features"
-# Auto-expanded node
-        items: 
-        - name: "Vendor-Extended Features"
+      - name: Vendor-Extended Features
+        items:
+        - name: Vendor-Extended Features
           href: vendor-extended-features.md
-        - name: "Exposing the Vendor Extensions of Your PTP Camera"
+        - name: Exposing the Vendor Extensions of Your PTP Camera
           href: exposing-the-vendor-extensions-of-your-ptp-camera.md
-        - name: "Vendor-Extended Properties"
+        - name: Vendor-Extended Properties
           href: vendor-extended-properties.md
-        - name: "Vendor-Extended Events"
+        - name: Vendor-Extended Events
           href: vendor-extended-events.md
-        - name: "Vendor-Extended Commands"
+        - name: Vendor-Extended Commands
           href: vendor-extended-commands.md
-      - name: "PTP References"
+      - name: PTP References
         href: ptp-references.md
-    - name: "Mass Storage Driver"
+    - name: Mass Storage Driver
       href: mass-storage-driver.md
-    - name: "WIA Camera Minidriver"
-# Auto-expanded node
-      items: 
-      - name: "WIA Camera Minidriver"
-      - name: "Creating  a WIA Camera Item Tree Layout"
+    - name: WIA Camera Minidriver
+      items:
+      - name: Creating  a WIA Camera Item Tree Layout
         href: creating--a-wia-camera-item-tree-layout.md
-      - name: "Adding Attachments to Images"
+      - name: Adding Attachments to Images
         href: adding-attachments-to-images.md
-      - name: "Storing and Transferring Thumbnail Data"
+      - name: Storing and Transferring Thumbnail Data
         href: storing-and-transferring-thumbnail-data.md
-      - name: "Storing and Transferring Audio Data"
+      - name: Storing and Transferring Audio Data
         href: storing-and-transferring-audio-data.md
-  - name: "Developing a WIA Scanner Driver"
-# Auto-expanded node
-    items: 
-    - name: "Developing a WIA Scanner Driver"
+  - name: Developing a WIA Scanner Driver
+    items:
+    - name: Developing a WIA Scanner Driver
       href: developing-a-wia-scanner-driver.md
-    - name: "WIA Scanner Item Tree Layout"
+    - name: WIA Scanner Item Tree Layout
       href: wia-scanner-item-tree-layout.md
-    - name: "Adding Document Feeder Support"
+    - name: Adding Document Feeder Support
       href: adding-document-feeder-support.md
-    - name: "Page Size and Orientation"
-# Auto-expanded node
-      items: 
-      - name: "Page Size and Orientation"
+    - name: Page Size and Orientation
+      items:
+      - name: Page Size and Orientation
         href: page-size-and-orientation.md
-      - name: "Supported Scanner Paper Sizes"
+      - name: Supported Scanner Paper Sizes
         href: supported-scanner-paper-sizes.md
-      - name: "Custom and Auto Page Sizes"
+      - name: Custom and Auto Page Sizes
         href: custom-and-auto-page-sizes.md
-      - name: "Page Orientation"
+      - name: Page Orientation
         href: page-orientation.md
-      - name: "Page Size and Orientation Code Examples"
+      - name: Page Size and Orientation Code Examples
         href: page-size-and-orientation-code-examples.md
-    - name: "TWAIN compatibility"
-# Auto-expanded node
-      items: 
-      - name: "TWAIN compatibility"
+    - name: TWAIN compatibility
+      items:
+      - name: TWAIN compatibility
         href: twain-compatibility.md
-      - name: "WIA-TWAIN Driver Design Considerations"
-# Auto-expanded node
-        items: 
-        - name: "WIA-TWAIN Driver Design Considerations"
-        - name: "WIA-TWAIN Compatibility"
+      - name: WIA-TWAIN Driver Design Considerations
+        items:
+        - name: WIA-TWAIN Compatibility
           href: wia-twain-compatibility.md
-        - name: "DSM_Entry function"
+        - name: DSM_Entry function
           href: dsm-entry.md
-        - name: "WIA-TWAIN Locking"
+        - name: WIA-TWAIN Locking
           href: wia-twain-locking.md
-        - name: "Multipage Scanning and TWAIN"
+        - name: Multipage Scanning and TWAIN
           href: multipage-scanning-and-twain.md
-        - name: "TWAIN and Raw RGB Format"
+        - name: TWAIN and Raw RGB Format
           href: twain-and-raw-rgb-format.md
-        - name: "WIA-TWAIN Risks"
+        - name: WIA-TWAIN Risks
           href: wia-twain-risks.md
-      - name: "Support for TWAIN-Compatible Applications"
-# Auto-expanded node
-        items: 
-        - name: "Support for TWAIN-Compatible Applications"
+      - name: Support for TWAIN-Compatible Applications
+        items:
+        - name: Support for TWAIN-Compatible Applications
           href: support-for-twain-compatible-applications.md
-        - name: "Enabling TWAIN Capability Pass-Through in a WIA Driver"
+        - name: Enabling TWAIN Capability Pass-Through in a WIA Driver
           href: enabling-twain-capability-pass-through-in-a-wia-driver.md
-        - name: "Using the IStiUSD Escape Method"
-# Auto-expanded node
-          items: 
-          - name: "Using the IStiUSD Escape Method"
+        - name: Using the IStiUSD Escape Method
+          items:
+          - name: Using the IStiUSD Escape Method
             href: using-the-istiusd-escape-method.md
-          - name: "ESC_TWAIN_CAPABILITY Escape Code"
+          - name: ESC_TWAIN_CAPABILITY Escape Code
             href: esc-twain-capability-escape-code.md
-          - name: "ESC_TWAIN_PRIVATE_SUPPORTED_CAPS Escape Code"
+          - name: ESC_TWAIN_PRIVATE_SUPPORTED_CAPS Escape Code
             href: esc-twain-private-supported-caps-escape-code.md
-  - name: "Developing a WIA Video Driver"
+  - name: Developing a WIA Video Driver
     href: developing-a-wia-video-driver.md
-  - name: "Customizing a WIA Driver"
-# Auto-expanded node
-    items: 
-    - name: "Customizing a WIA Driver"
+  - name: Customizing a WIA Driver
+    items:
+    - name: Customizing a WIA Driver
       href: customizing-a-wia-driver.md
-    - name: "User Interface Extensions"
-# Auto-expanded node
-      items: 
-      - name: "User Interface Extensions"
+    - name: User Interface Extensions
+      items:
+      - name: User Interface Extensions
         href: user-interface-extensions.md
-      - name: "Context Menu Extensions"
+      - name: Context Menu Extensions
         href: context-menu-extensions.md
-      - name: "Control Panel Wizard Replacement"
+      - name: Control Panel Wizard Replacement
         href: control-panel-wizard-replacement.md
-      - name: "Image Application Dialog Extensions"
-# Auto-expanded node
-        items: 
-        - name: "Image Application Dialog Extensions"
+      - name: Image Application Dialog Extensions
+        items:
+        - name: Image Application Dialog Extensions
           href: image-application-dialog-extensions.md
-        - name: "IWiaUIExtension COM Interface"
+        - name: IWiaUIExtension COM Interface
           href: iwiauiextension-com-interface.md
-      - name: "Property Sheet Extensions"
+      - name: Property Sheet Extensions
         href: property-sheet-extensions.md
-      - name: "User Interface Extension Registry Entries"
+      - name: User Interface Extension Registry Entries
         href: user-interface-extension-registry-entries.md
-    - name: "Adding UI to a WIA Minidriver"
-# Auto-expanded node
-      items: 
-      - name: "Adding UI to a WIA Minidriver"
+    - name: Adding UI to a WIA Minidriver
+      items:
+      - name: Adding UI to a WIA Minidriver
         href: adding-ui-to-a-wia-minidriver.md
-      - name: "Creating a Hello World WIA Minidriver UI Extension"
+      - name: Creating a Hello World WIA Minidriver UI Extension
         href: creating-a--hello-world--wia-minidriver-ui-extension.md
-- name: "WIA Minidriver Best Practices"
-# Auto-expanded node
-  items: 
-  - name: "WIA Minidriver Best Practices"
+- name: WIA Minidriver Best Practices
+  items:
+  - name: WIA Minidriver Best Practices
     href: wia-minidriver-best-practices.md
-  - name: "Locking and Unlocking Best Practices"
+  - name: Locking and Unlocking Best Practices
     href: locking-and-unlocking-best-practices.md
-  - name: "Security Issues for WIA Drivers"
-# Auto-expanded node
-    items: 
-    - name: "Security Issues for WIA Drivers"
+  - name: Security Issues for WIA Drivers
+    items:
+    - name: Security Issues for WIA Drivers
       href: security-issues-for-wia-drivers.md
-    - name: "Common WIA Security Problems"
-# Auto-expanded node
-      items: 
-      - name: "Common WIA Security Problems"
+    - name: Common WIA Security Problems
+      items:
+      - name: Common WIA Security Problems
         href: common-wia-security-problems.md
-      - name: "WIA Security and Security Descriptors"
+      - name: WIA Security and Security Descriptors
         href: wia-security-and-security-descriptors.md
-    - name: "WIA Security Best Practices"
-# Auto-expanded node
-      items: 
-      - name: "WIA Security Best Practices"
-      - name: "File System Access for WIA Drivers"
+    - name: WIA Security Best Practices
+      items:
+      - name: File System Access for WIA Drivers
         href: file-system-access-for-wia-drivers.md
-      - name: "Registry Access for WIA Drivers"
+      - name: Registry Access for WIA Drivers
         href: registry-access-for-wia-drivers.md
-      - name: "Named Kernel Objects for WIA Drivers"
-# Auto-expanded node
-        items: 
-        - name: "Named Kernel Objects for WIA Drivers"
+      - name: Named Kernel Objects for WIA Drivers
+        items:
+        - name: Named Kernel Objects for WIA Drivers
           href: named-kernel-objects-for-wia-drivers.md
-        - name: "Namespaces for WIA Drivers"
+        - name: Namespaces for WIA Drivers
           href: namespaces-for-wia-drivers.md
-        - name: "Access Permissions for WIA Drivers"
+        - name: Access Permissions for WIA Drivers
           href: access-permissions-for-wia-drivers.md
-      - name: "Out-of-Process COM Objects for WIA Drivers"
+      - name: Out-of-Process COM Objects for WIA Drivers
         href: out-of-process-com-objects-for-wia-drivers.md
-      - name: "Creating and Opening Processes by WIA Drivers"
+      - name: Creating and Opening Processes by WIA Drivers
         href: creating-and-opening-processes-by-wia-drivers.md
-- name: "WIA Microdriver Commands"
-# Auto-expanded node
-  items: 
-  - name: "WIA Microdriver Commands"
+- name: WIA Microdriver Commands
+  items:
+  - name: WIA Microdriver Commands
     href: wia-microdriver-commands.md
-  - name: "Automatic Document Feeder Commands"
+  - name: Automatic Document Feeder Commands
     href: automatic-document-feeder-commands.md
-  - name: "Event Commands"
+  - name: Event Commands
     href: event-commands.md
-  - name: "Required Commands"
+  - name: Required Commands
     href: required-commands.md
-  - name: "Optional Commands"
+  - name: Optional Commands
     href: optional-commands.md
-- name: "Building, Troubleshooting and Debugging WIA Minidrivers"
-# Auto-expanded node
-  items: 
-  - name: "Building, Troubleshooting and Debugging WIA Minidrivers"
+- name: Building, Troubleshooting and Debugging WIA Minidrivers
+  items:
+  - name: Building, Troubleshooting and Debugging WIA Minidrivers
     href: building--troubleshooting-and-debugging-wia-minidrivers.md
-  - name: "Setting Up the WIA Build Environment"
-# Auto-expanded node
-    items: 
-    - name: "Setting Up the WIA Build Environment"
+  - name: Setting Up the WIA Build Environment
+    items:
+    - name: Setting Up the WIA Build Environment
       href: setting-up-the-wia-build-environment.md
-    - name: "Building a WIA Minidriver"
+    - name: Building a WIA Minidriver
       href: building-a-wia-minidriver.md
-    - name: "Building a WIA Microdriver"
+    - name: Building a WIA Microdriver
       href: building-a-wia-microdriver.md
-  - name: "WIA Minidriver Troubleshooting"
+  - name: WIA Minidriver Troubleshooting
     href: wia-minidriver-troubleshooting.md
-  - name: "WIA Minidriver Debugging"
+  - name: WIA Minidriver Debugging
     href: wia-minidriver-debugging.md
-- name: "WIA Samples and Tools"
-# Auto-expanded node
-  items: 
-  - name: "WIA Samples and Tools"
+- name: WIA Samples and Tools
+  items:
+  - name: WIA Samples and Tools
     href: wia-samples-and-tools.md
-  - name: "Sample WIA Drivers"
-# Auto-expanded node
-    items: 
-    - name: "Sample WIA Drivers"
+  - name: Sample WIA Drivers
+    items:
+    - name: Sample WIA Drivers
       href: sample-wia-drivers.md
-    - name: "Flatbed Scanner Minidriver Sample"
+    - name: Flatbed Scanner Minidriver Sample
       href: flatbed-scanner-minidriver-sample.md
-    - name: "Scanner Microdriver Sample"
+    - name: Scanner Microdriver Sample
       href: scanner-microdriver-sample.md
-    - name: "Camera Minidriver Sample"
+    - name: Camera Minidriver Sample
       href: camera-minidriver-sample.md
-    - name: "Camera Microdriver Sample"
+    - name: Camera Microdriver Sample
       href: camera-microdriver-sample.md
-    - name: "Camera Driver UI Extension Sample "
+    - name: 'Camera Driver UI Extension Sample '
       href: camera-driver-ui-extension-sample.md
-    - name: "USBSCN9X Kernel-Mode Sample Driver"
+    - name: USBSCN9X Kernel-Mode Sample Driver
       href: usbscn9x-kernel-mode-sample-driver.md
-  - name: "WIA Tools"
+  - name: WIA Tools
     href: wia-tools.md
-  - name: "Installing a WIA Minidriver"
-# Auto-expanded node
-    items: 
-    - name: "Installing a WIA Minidriver"
+  - name: Installing a WIA Minidriver
+    items:
+    - name: Installing a WIA Minidriver
       href: installing-a-wia-minidriver.md
-    - name: "Registry Entries for WIA Drivers"
+    - name: Registry Entries for WIA Drivers
       href: registry-entries-for-wia-drivers.md
-    - name: "INF Files for WIA Devices"
+    - name: INF Files for WIA Devices
       href: inf-files-for-wia-devices.md
-    - name: "Installing Scanning Functionality in an MFP with a Single PDO"
+    - name: Installing Scanning Functionality in an MFP with a Single PDO
       href: installing-scanning-functionality-in-an-mfp-with-a-single-pdo.md
-  - name: "WIA Properties"
-# Auto-expanded node
-    items: 
-    - name: "WIA Properties"
+  - name: WIA Properties
+    items:
+    - name: WIA Properties
       href: wia-properties.md
-    - name: "WIA_DIP_BAUDRATE"
+    - name: WIA_DIP_BAUDRATE
       href: wia-dip-baudrate.md
-    - name: "WIA_DIP_DEV_DESC"
+    - name: WIA_DIP_DEV_DESC
       href: wia-dip-dev-desc.md
-    - name: "WIA_DIP_DEV_ID"
+    - name: WIA_DIP_DEV_ID
       href: wia-dip-dev-id.md
-    - name: "WIA_DIP_DEV_NAME"
+    - name: WIA_DIP_DEV_NAME
       href: wia-dip-dev-name.md
-    - name: "WIA_DIP_DEV_TYPE"
+    - name: WIA_DIP_DEV_TYPE
       href: wia-dip-dev-type.md
-    - name: "WIA_DIP_DRIVER_VERSION"
+    - name: WIA_DIP_DRIVER_VERSION
       href: wia-dip-driver-version.md
-    - name: "WIA_DIP_HW_CONFIG"
+    - name: WIA_DIP_HW_CONFIG
       href: wia-dip-hw-config.md
-    - name: "WIA_DIP_PORT_NAME"
+    - name: WIA_DIP_PORT_NAME
       href: wia-dip-port-name.md
-    - name: "WIA_DIP_REMOTE_DEV_ID"
+    - name: WIA_DIP_REMOTE_DEV_ID
       href: wia-dip-remote-dev-id.md
-    - name: "WIA_DIP_SERVER_NAME"
+    - name: WIA_DIP_SERVER_NAME
       href: wia-dip-server-name.md
-    - name: "WIA_DIP_STI_GEN_CAPABILITIES"
+    - name: WIA_DIP_STI_GEN_CAPABILITIES
       href: wia-dip-sti-gen-capabilities.md
-    - name: "WIA_DIP_UI_CLSID"
+    - name: WIA_DIP_UI_CLSID
       href: wia-dip-ui-clsid.md
-    - name: "WIA_DIP_VEND_DESC"
+    - name: WIA_DIP_VEND_DESC
       href: wia-dip-vend-desc.md
-    - name: "WIA_DIP_WIA_VERSION"
+    - name: WIA_DIP_WIA_VERSION
       href: wia-dip-wia-version.md
-    - name: "WIA_DPA_CONNECT_STATUS"
+    - name: WIA_DPA_CONNECT_STATUS
       href: wia-dpa-connect-status.md
-    - name: "WIA_DPA_DEVICE_TIME"
+    - name: WIA_DPA_DEVICE_TIME
       href: wia-dpa-device-time.md
-    - name: "WIA_DPA_FIRMWARE_VERSION"
+    - name: WIA_DPA_FIRMWARE_VERSION
       href: wia-dpa-firmware-version.md
-    - name: "WIA_DPC_ARTIST"
+    - name: WIA_DPC_ARTIST
       href: wia-dpc-artist.md
-    - name: "WIA_DPC_BATTERY_STATUS"
+    - name: WIA_DPC_BATTERY_STATUS
       href: wia-dpc-battery-status.md
-    - name: "WIA_DPC_BURST_INTERVAL"
+    - name: WIA_DPC_BURST_INTERVAL
       href: wia-dpc-burst-interval.md
-    - name: "WIA_DPC_BURST_NUMBER"
+    - name: WIA_DPC_BURST_NUMBER
       href: wia-dpc-burst-number.md
-    - name: "WIA_DPC_CAPTURE_DELAY"
+    - name: WIA_DPC_CAPTURE_DELAY
       href: wia-dpc-capture-delay.md
-    - name: "WIA_DPC_CAPTURE_MODE"
+    - name: WIA_DPC_CAPTURE_MODE
       href: wia-dpc-capture-mode.md
-    - name: "WIA_DPC_COMPRESSION_SETTING"
+    - name: WIA_DPC_COMPRESSION_SETTING
       href: wia-dpc-compression-setting.md
-    - name: "WIA_DPC_CONTRAST"
+    - name: WIA_DPC_CONTRAST
       href: wia-dpc-contrast.md
-    - name: "WIA_DPC_COPYRIGHT_INFO"
+    - name: WIA_DPC_COPYRIGHT_INFO
       href: wia-dpc-copyright-info.md
-    - name: "WIA_DPC_DIGITAL_ZOOM"
+    - name: WIA_DPC_DIGITAL_ZOOM
       href: wia-dpc-digital-zoom.md
-    - name: "WIA_DPC_DIMENSION"
+    - name: WIA_DPC_DIMENSION
       href: wia-dpc-dimension.md
-    - name: "WIA_DPC_EFFECT_MODE"
+    - name: WIA_DPC_EFFECT_MODE
       href: wia-dpc-effect-mode.md
-    - name: "WIA_DPC_EXPOSURE_COMP"
+    - name: WIA_DPC_EXPOSURE_COMP
       href: wia-dpc-exposure-comp.md
-    - name: "WIA_DPC_EXPOSURE_INDEX"
+    - name: WIA_DPC_EXPOSURE_INDEX
       href: wia-dpc-exposure-index.md
-    - name: "WIA_DPC_EXPOSURE_METERING_MODE"
+    - name: WIA_DPC_EXPOSURE_METERING_MODE
       href: wia-dpc-exposure-metering-mode.md
-    - name: "WIA_DPC_EXPOSURE_MODE"
+    - name: WIA_DPC_EXPOSURE_MODE
       href: wia-dpc-exposure-mode.md
-    - name: "WIA_DPC_EXPOSURE_TIME"
+    - name: WIA_DPC_EXPOSURE_TIME
       href: wia-dpc-exposure-time.md
-    - name: "WIA_DPC_FLASH_MODE"
+    - name: WIA_DPC_FLASH_MODE
       href: wia-dpc-flash-mode.md
-    - name: "WIA_DPC_FNUMBER"
+    - name: WIA_DPC_FNUMBER
       href: wia-dpc-fnumber.md
-    - name: "WIA_DPC_FOCAL_LENGTH"
+    - name: WIA_DPC_FOCAL_LENGTH
       href: wia-dpc-focal-length.md
-    - name: "WIA_DPC_FOCUS_DISTANCE"
+    - name: WIA_DPC_FOCUS_DISTANCE
       href: wia-dpc-focus-distance.md
-    - name: "WIA_DPC_FOCUS_MANUAL_DIST"
+    - name: WIA_DPC_FOCUS_MANUAL_DIST
       href: wia-dpc-focus-manual-dist.md
-    - name: "WIA_DPC_FOCUS_METERING"
+    - name: WIA_DPC_FOCUS_METERING
       href: wia-dpc-focus-metering.md
-    - name: "WIA_DPC_FOCUS_METERING_MODE"
+    - name: WIA_DPC_FOCUS_METERING_MODE
       href: wia-dpc-focus-metering-mode.md
-    - name: "WIA_DPC_FOCUS_MODE"
+    - name: WIA_DPC_FOCUS_MODE
       href: wia-dpc-focus-mode.md
-    - name: "WIA_DPC_PAN_POSITION"
+    - name: WIA_DPC_PAN_POSITION
       href: wia-dpc-pan-position.md
-    - name: "WIA_DPC_PICT_HEIGHT"
+    - name: WIA_DPC_PICT_HEIGHT
       href: wia-dpc-pict-height.md
-    - name: "WIA_DPC_PICT_WIDTH"
+    - name: WIA_DPC_PICT_WIDTH
       href: wia-dpc-pict-width.md
-    - name: "WIA_DPC_PICTURES_REMAINING"
+    - name: WIA_DPC_PICTURES_REMAINING
       href: wia-dpc-pictures-remaining.md
-    - name: "WIA_DPC_PICTURES_TAKEN"
+    - name: WIA_DPC_PICTURES_TAKEN
       href: wia-dpc-pictures-taken.md
-    - name: "WIA_DPC_POWER_MODE"
+    - name: WIA_DPC_POWER_MODE
       href: wia-dpc-power-mode.md
-    - name: "WIA_DPC_RGB_GAIN"
+    - name: WIA_DPC_RGB_GAIN
       href: wia-dpc-rgb-gain.md
-    - name: "WIA_DPC_SHARPNESS"
+    - name: WIA_DPC_SHARPNESS
       href: wia-dpc-sharpness.md
-    - name: "WIA_DPC_THUMB_HEIGHT"
+    - name: WIA_DPC_THUMB_HEIGHT
       href: wia-dpc-thumb-height.md
-    - name: "WIA_DPC_THUMB_WIDTH"
+    - name: WIA_DPC_THUMB_WIDTH
       href: wia-dpc-thumb-width.md
-    - name: "WIA_DPC_TILT_POSITION"
+    - name: WIA_DPC_TILT_POSITION
       href: wia-dpc-tilt-position.md
-    - name: "WIA_DPC_TIMELAPSE_INTERVAL"
+    - name: WIA_DPC_TIMELAPSE_INTERVAL
       href: wia-dpc-timelapse-interval.md
-    - name: "WIA_DPC_TIMELAPSE_NUMBER"
+    - name: WIA_DPC_TIMELAPSE_NUMBER
       href: wia-dpc-timelapse-number.md
-    - name: "WIA_DPC_TIMER_MODE"
+    - name: WIA_DPC_TIMER_MODE
       href: wia-dpc-timer-mode.md
-    - name: "WIA_DPC_TIMER_VALUE"
+    - name: WIA_DPC_TIMER_VALUE
       href: wia-dpc-timer-value.md
-    - name: "WIA_DPC_UPLOAD_URL"
+    - name: WIA_DPC_UPLOAD_URL
       href: wia-dpc-upload-url.md
-    - name: "WIA_DPC_WHITE_BALANCE"
+    - name: WIA_DPC_WHITE_BALANCE
       href: wia-dpc-white-balance.md
-    - name: "WIA_DPC_ZOOM_POSITION"
+    - name: WIA_DPC_ZOOM_POSITION
       href: wia-dpc-zoom-position.md
-    - name: "WIA_DPF_MOUNT_POINT"
+    - name: WIA_DPF_MOUNT_POINT
       href: wia-dpf-mount-point.md
-    - name: "WIA_DPS_DEVICE_ID"
+    - name: WIA_DPS_DEVICE_ID
       href: wia-dps-device-id.md
-    - name: "WIA_DPS_DITHER_PATTERN_DATA"
+    - name: WIA_DPS_DITHER_PATTERN_DATA
       href: wia-dps-dither-pattern-data.md
-    - name: "WIA_DPS_DITHER_SELECT"
+    - name: WIA_DPS_DITHER_SELECT
       href: wia-dps-dither-select.md
-    - name: "WIA_DPS_DOCUMENT_HANDLING_CAPABILITIES"
+    - name: WIA_DPS_DOCUMENT_HANDLING_CAPABILITIES
       href: wia-dps-document-handling-capabilities.md
-    - name: "WIA_DPS_DOCUMENT_HANDLING_CAPACITY"
+    - name: WIA_DPS_DOCUMENT_HANDLING_CAPACITY
       href: wia-dps-document-handling-capacity.md
-    - name: "WIA_DPS_DOCUMENT_HANDLING_SELECT"
+    - name: WIA_DPS_DOCUMENT_HANDLING_SELECT
       href: wia-dps-document-handling-select.md
-    - name: "WIA_DPS_DOCUMENT_HANDLING_STATUS"
+    - name: WIA_DPS_DOCUMENT_HANDLING_STATUS
       href: wia-dps-document-handling-status.md
-    - name: "WIA_DPS_ENDORSER_CHARACTERS"
+    - name: WIA_DPS_ENDORSER_CHARACTERS
       href: wia-dps-endorser-characters.md
-    - name: "WIA_DPS_ENDORSER_STRING"
+    - name: WIA_DPS_ENDORSER_STRING
       href: wia-dps-endorser-string.md
-    - name: "WIA_DPS_FILTER_SELECT"
+    - name: WIA_DPS_FILTER_SELECT
       href: wia-dps-filter-select.md
-    - name: "WIA_DPS_GLOBAL_IDENTITY"
+    - name: WIA_DPS_GLOBAL_IDENTITY
       href: wia-dps-global-identity.md
-    - name: "WIA_DPS_HORIZONTAL_BED_REGISTRATION"
+    - name: WIA_DPS_HORIZONTAL_BED_REGISTRATION
       href: wia-dps-horizontal-bed-registration.md
-    - name: "WIA_DPS_HORIZONTAL_BED_SIZE"
+    - name: WIA_DPS_HORIZONTAL_BED_SIZE
       href: wia-dps-horizontal-bed-size.md
-    - name: "WIA_DPS_HORIZONTAL_SHEET_FEED_SIZE"
+    - name: WIA_DPS_HORIZONTAL_SHEET_FEED_SIZE
       href: wia-dps-horizontal-sheet-feed-size.md
-    - name: "WIA_DPS_MAX_SCAN_TIME"
+    - name: WIA_DPS_MAX_SCAN_TIME
       href: wia-dps-max-scan-time.md
-    - name: "WIA_DPS_MIN_HORIZONTAL_SHEET_FEED_SIZE"
+    - name: WIA_DPS_MIN_HORIZONTAL_SHEET_FEED_SIZE
       href: wia-dps-min-horizontal-sheet-feed-size.md
-    - name: "WIA_DPS_MIN_VERTICAL_SHEET_FEED_SIZE"
+    - name: WIA_DPS_MIN_VERTICAL_SHEET_FEED_SIZE
       href: wia-dps-min-vertical-sheet-feed-size.md
-    - name: "WIA_DPS_OPTICAL_XRES"
+    - name: WIA_DPS_OPTICAL_XRES
       href: wia-dps-optical-xres.md
-    - name: "WIA_DPS_OPTICAL_YRES"
+    - name: WIA_DPS_OPTICAL_YRES
       href: wia-dps-optical-yres.md
-    - name: "WIA_DPS_PAD_COLOR"
+    - name: WIA_DPS_PAD_COLOR
       href: wia-dps-pad-color.md
-    - name: "WIA_DPS_PAGE_HEIGHT"
+    - name: WIA_DPS_PAGE_HEIGHT
       href: wia-dps-page-height.md
-    - name: "WIA_DPS_PAGE_SIZE"
+    - name: WIA_DPS_PAGE_SIZE
       href: wia-dps-page-size.md
-    - name: "WIA_DPS_PAGE_WIDTH"
+    - name: WIA_DPS_PAGE_WIDTH
       href: wia-dps-page-width.md
-    - name: "WIA_DPS_PAGES"
+    - name: WIA_DPS_PAGES
       href: wia-dps-pages.md
-    - name: "WIA_DPS_PLATEN_COLOR"
+    - name: WIA_DPS_PLATEN_COLOR
       href: wia-dps-platen-color.md
-    - name: "WIA_DPS_PREVIEW"
+    - name: WIA_DPS_PREVIEW
       href: wia-dps-preview.md
-    - name: "WIA_DPS_SCAN_AHEAD_PAGES"
+    - name: WIA_DPS_SCAN_AHEAD_PAGES
       href: wia-dps-scan-ahead-pages.md
-    - name: "WIA_DPS_SCAN_AVAILABLE_ITEM"
+    - name: WIA_DPS_SCAN_AVAILABLE_ITEM
       href: wia-dps-scan-available-item.md
-    - name: "WIA_DPS_SERVICE_ID"
+    - name: WIA_DPS_SERVICE_ID
       href: wia-dps-service-id.md
-    - name: "WIA_DPS_SHEET_FEEDER_REGISTRATION"
+    - name: WIA_DPS_SHEET_FEEDER_REGISTRATION
       href: wia-dps-sheet-feeder-registration.md
-    - name: "WIA_DPS_SHOW_PREVIEW_CONTROL"
+    - name: WIA_DPS_SHOW_PREVIEW_CONTROL
       href: wia-dps-show-preview-control.md
-    - name: "WIA_DPS_TRANSPARENCY"
+    - name: WIA_DPS_TRANSPARENCY
       href: wia-dps-transparency.md
-    - name: "WIA_DPS_TRANSPARENCY_CAPABILITIES"
+    - name: WIA_DPS_TRANSPARENCY_CAPABILITIES
       href: wia-dps-transparency-capabilities.md
-    - name: "WIA_DPS_TRANSPARENCY_SELECT"
+    - name: WIA_DPS_TRANSPARENCY_SELECT
       href: wia-dps-transparency-select.md
-    - name: "WIA_DPS_TRANSPARENCY_STATUS"
+    - name: WIA_DPS_TRANSPARENCY_STATUS
       href: wia-dps-transparency-status.md
-    - name: "WIA_DPS_USER_NAME"
+    - name: WIA_DPS_USER_NAME
       href: wia-dps-user-name.md
-    - name: "WIA_DPS_VERTICAL_BED_REGISTRATION"
+    - name: WIA_DPS_VERTICAL_BED_REGISTRATION
       href: wia-dps-vertical-bed-registration.md
-    - name: "WIA_DPS_VERTICAL_BED_SIZE"
+    - name: WIA_DPS_VERTICAL_BED_SIZE
       href: wia-dps-vertical-bed-size.md
-    - name: "WIA_DPS_VERTICAL_SHEET_FEED_SIZE"
+    - name: WIA_DPS_VERTICAL_SHEET_FEED_SIZE
       href: wia-dps-vertical-sheet-feed-size.md
-    - name: "WIA_DPV_DSHOW_DEVICE_PATH"
+    - name: WIA_DPV_DSHOW_DEVICE_PATH
       href: wia-dpv-dshow-device-path.md
-    - name: "WIA_DPV_IMAGES_DIRECTORY"
+    - name: WIA_DPV_IMAGES_DIRECTORY
       href: wia-dpv-images-directory.md
-    - name: "WIA_DPV_LAST_PICTURE_TAKEN"
+    - name: WIA_DPV_LAST_PICTURE_TAKEN
       href: wia-dpv-last-picture-taken.md
-    - name: "WIA_IPA_ACCESS_RIGHTS"
+    - name: WIA_IPA_ACCESS_RIGHTS
       href: wia-ipa-access-rights.md
-    - name: "WIA_IPA_APP_COLOR_MAPPING"
+    - name: WIA_IPA_APP_COLOR_MAPPING
       href: wia-ipa-app-color-mapping.md
-    - name: "WIA_IPA_BITS_PER_CHANNEL"
+    - name: WIA_IPA_BITS_PER_CHANNEL
       href: wia-ipa-bits-per-channel.md
-    - name: "WIA_IPA_BUFFER_SIZE"
+    - name: WIA_IPA_BUFFER_SIZE
       href: wia-ipa-buffer-size.md
-    - name: "WIA_IPA_BYTES_PER_LINE"
+    - name: WIA_IPA_BYTES_PER_LINE
       href: wia-ipa-bytes-per-line.md
-    - name: "WIA_IPA_CHANNELS_PER_PIXEL"
+    - name: WIA_IPA_CHANNELS_PER_PIXEL
       href: wia-ipa-channels-per-pixel.md
-    - name: "WIA_IPA_COLOR_PROFILE"
+    - name: WIA_IPA_COLOR_PROFILE
       href: wia-ipa-color-profile.md
-    - name: "WIA_IPA_COMPRESSION"
+    - name: WIA_IPA_COMPRESSION
       href: wia-ipa-compression.md
-    - name: "WIA_IPA_DATATYPE"
+    - name: WIA_IPA_DATATYPE
       href: wia-ipa-datatype.md
-    - name: "WIA_IPA_DEPTH"
+    - name: WIA_IPA_DEPTH
       href: wia-ipa-depth.md
-    - name: "WIA_IPA_FILENAME_EXTENSION"
+    - name: WIA_IPA_FILENAME_EXTENSION
       href: wia-ipa-filename-extension.md
-    - name: "WIA_IPA_FORMAT"
+    - name: WIA_IPA_FORMAT
       href: wia-ipa-format.md
-    - name: "WIA_IPA_FULL_ITEM_NAME"
+    - name: WIA_IPA_FULL_ITEM_NAME
       href: wia-ipa-full-item-name.md
-    - name: "WIA_IPA_GAMMA_CURVES"
+    - name: WIA_IPA_GAMMA_CURVES
       href: wia-ipa-gamma-curves.md
-    - name: "WIA_IPA_ICM_PROFILE_NAME"
+    - name: WIA_IPA_ICM_PROFILE_NAME
       href: wia-ipa-icm-profile-name.md
-    - name: "WIA_IPA_ITEM_CATEGORY"
+    - name: WIA_IPA_ITEM_CATEGORY
       href: wia-ipa-item-category.md
-    - name: "WIA_IPA_ITEM_FLAGS"
+    - name: WIA_IPA_ITEM_FLAGS
       href: wia-ipa-item-flags.md
-    - name: "WIA_IPA_ITEM_NAME"
+    - name: WIA_IPA_ITEM_NAME
       href: wia-ipa-item-name.md
-    - name: "WIA_IPA_ITEM_SIZE"
+    - name: WIA_IPA_ITEM_SIZE
       href: wia-ipa-item-size.md
-    - name: "WIA_IPA_ITEM_TIME"
+    - name: WIA_IPA_ITEM_TIME
       href: wia-ipa-item-time.md
-    - name: "WIA_IPA_ITEMS_STORED"
+    - name: WIA_IPA_ITEMS_STORED
       href: wia-ipa-items-stored.md
-    - name: "WIA_IPA_MIN_BUFFER_SIZE"
+    - name: WIA_IPA_MIN_BUFFER_SIZE
       href: wia-ipa-min-buffer-size.md
-    - name: "WIA_IPA_NUMBER_OF_LINES"
+    - name: WIA_IPA_NUMBER_OF_LINES
       href: wia-ipa-number-of-lines.md
-    - name: "WIA_IPA_PIXELS_PER_LINE"
+    - name: WIA_IPA_PIXELS_PER_LINE
       href: wia-ipa-pixels-per-line.md
-    - name: "WIA_IPA_PLANAR"
+    - name: WIA_IPA_PLANAR
       href: wia-ipa-planar.md
-    - name: "WIA_IPA_PREFERRED_FORMAT"
+    - name: WIA_IPA_PREFERRED_FORMAT
       href: wia-ipa-preferred-format.md
-    - name: "WIA_IPA_PROP_STREAM_COMPAT_ID"
+    - name: WIA_IPA_PROP_STREAM_COMPAT_ID
       href: wia-ipa-prop-stream-compat-id.md
-    - name: "WIA_IPA_RAW_BITS_PER_CHANNEL"
+    - name: WIA_IPA_RAW_BITS_PER_CHANNEL
       href: wia-ipa-raw-bits-per-channel.md
-    - name: "WIA_IPA_REGION_TYPE"
+    - name: WIA_IPA_REGION_TYPE
       href: wia-ipa-region-type.md
-    - name: "WIA_IPA_SUPPRESS_PROPERTY_PAGE"
+    - name: WIA_IPA_SUPPRESS_PROPERTY_PAGE
       href: wia-ipa-suppress-property-page.md
-    - name: "WIA_IPA_TYMED"
+    - name: WIA_IPA_TYMED
       href: wia-ipa-tymed.md
-    - name: "WIA_IPA_UPLOAD_ITEM_SIZE"
+    - name: WIA_IPA_UPLOAD_ITEM_SIZE
       href: wia-ipa-upload-item-size.md
-    - name: "WIA_IPC_AUDIO_AVAILABLE"
+    - name: WIA_IPC_AUDIO_AVAILABLE
       href: wia-ipc-audio-available.md
-    - name: "WIA_IPC_AUDIO_DATA"
+    - name: WIA_IPC_AUDIO_DATA
       href: wia-ipc-audio-data.md
-    - name: "WIA_IPC_AUDIO_DATA_FORMAT"
+    - name: WIA_IPC_AUDIO_DATA_FORMAT
       href: wia-ipc-audio-data-format.md
-    - name: "WIA_IPC_NUM_PICT_PER_ROW"
+    - name: WIA_IPC_NUM_PICT_PER_ROW
       href: wia-ipc-num-pict-per-row.md
-    - name: "WIA_IPC_SEQUENCE"
+    - name: WIA_IPC_SEQUENCE
       href: wia-ipc-sequence.md
-    - name: "WIA_IPC_THUMBNAIL"
+    - name: WIA_IPC_THUMBNAIL
       href: wia-ipc-thumbnail.md
-    - name: "WIA_IPC_THUMBNAIL_HEIGHT"
+    - name: WIA_IPC_THUMBNAIL_HEIGHT
       href: wia-ipc-thumbnail-height.md
-    - name: "WIA_IPC_THUMBNAIL_WIDTH"
+    - name: WIA_IPC_THUMBNAIL_WIDTH
       href: wia-ipc-thumbnail-width.md
-    - name: "WIA_IPC_TIMEDELAY"
+    - name: WIA_IPC_TIMEDELAY
       href: wia-ipc-timedelay.md
-    - name: "WIA_IPS_ALARM"
+    - name: WIA_IPS_ALARM
       href: wia-ips-alarm.md
-    - name: "WIA_IPS_AUTO_CROP"
+    - name: WIA_IPS_AUTO_CROP
       href: wia-ips-auto-crop.md
-    - name: "WIA_IPS_AUTO_DESKEW"
+    - name: WIA_IPS_AUTO_DESKEW
       href: wia-ips-auto-deskew.md
-    - name: "WIA_IPS_BARCODE_READER"
+    - name: WIA_IPS_BARCODE_READER
       href: wia-ips-barcode-reader.md
-    - name: "WIA_IPS_BARCODE_SEARCH_DIRECTION"
+    - name: WIA_IPS_BARCODE_SEARCH_DIRECTION
       href: wia-ips-barcode-search-direction.md
-    - name: "WIA_IPS_BARCODE_SEARCH_TIMEOUT"
+    - name: WIA_IPS_BARCODE_SEARCH_TIMEOUT
       href: wia-ips-barcode-search-timeout.md
-    - name: "WIA_IPS_BLANK_PAGES"
+    - name: WIA_IPS_BLANK_PAGES
       href: wia-ips-blank-pages.md
-    - name: "WIA_IPS_BLANK_PAGES_SENSITIVITY"
+    - name: WIA_IPS_BLANK_PAGES_SENSITIVITY
       href: wia-ips-blank-pages-sensitivity.md
-    - name: "WIA_IPS_BRIGHTNESS"
+    - name: WIA_IPS_BRIGHTNESS
       href: wia-ips-brightness.md
-    - name: "WIA_IPS_COLOR_DROP"
+    - name: WIA_IPS_COLOR_DROP
       href: wia-ips-color-drop.md
-    - name: "WIA_IPS_COLOR_DROP_BLUE"
+    - name: WIA_IPS_COLOR_DROP_BLUE
       href: wia-ips-color-drop-blue.md
-    - name: "WIA_IPS_COLOR_DROP_GREEN"
+    - name: WIA_IPS_COLOR_DROP_GREEN
       href: wia-ips-color-drop-green.md
-    - name: "WIA_IPS_COLOR_DROP_MULTI"
+    - name: WIA_IPS_COLOR_DROP_MULTI
       href: wia-ips-color-drop-multi.md
-    - name: "WIA_IPS_COLOR_DROP_RED"
+    - name: WIA_IPS_COLOR_DROP_RED
       href: wia-ips-color-drop-red.md
-    - name: "WIA_IPS_CONTRAST"
+    - name: WIA_IPS_CONTRAST
       href: wia-ips-contrast.md
-    - name: "WIA_IPS_CUR_INTENT"
+    - name: WIA_IPS_CUR_INTENT
       href: wia-ips-cur-intent.md
-    - name: "WIA_IPS_DESKEW_X"
+    - name: WIA_IPS_DESKEW_X
       href: wia-ips-deskew-x.md
-    - name: "WIA_IPS_DESKEW_Y"
+    - name: WIA_IPS_DESKEW_Y
       href: wia-ips-deskew-y.md
-    - name: "WIA_IPS_DITHER_SELECT"
+    - name: WIA_IPS_DITHER_SELECT
       href: wia-ips-dither-select.md
-    - name: "WIA_IPS_DOCUMENT_HANDLING_SELECT"
+    - name: WIA_IPS_DOCUMENT_HANDLING_SELECT
       href: wia-ips-document-handling-select.md
-    - name: "WIA_IPS_ENABLED_BARCODE_TYPES"
+    - name: WIA_IPS_ENABLED_BARCODE_TYPES
       href: wia-ips-enabled-barcode-types.md
-    - name: "WIA_IPS_ENABLED_PATCH_CODE_TYPES"
+    - name: WIA_IPS_ENABLED_PATCH_CODE_TYPES
       href: wia-ips-enabled-patch-code-types.md
-    - name: "WIA_IPS_FEEDER_CONTROL"
+    - name: WIA_IPS_FEEDER_CONTROL
       href: wia-ips-feeder-control.md
-    - name: "WIA_IPS_FILM_SCAN_MODE"
+    - name: WIA_IPS_FILM_SCAN_MODE
       href: wia-ips-film-scan-mode.md
-    - name: "WIA_IPS_INVERT"
+    - name: WIA_IPS_INVERT
       href: wia-ips-invert.md
-    - name: "WIA_IPS_JOB_SEPARATORS"
+    - name: WIA_IPS_JOB_SEPARATORS
       href: wia-ips-job-separators.md
-    - name: "WIA_IPS_LAMP"
+    - name: WIA_IPS_LAMP
       href: wia-ips-lamp.md
-    - name: "WIA_IPS_LAMP_AUTO_OFF"
+    - name: WIA_IPS_LAMP_AUTO_OFF
       href: wia-ips-lamp-auto-off.md
-    - name: "WIA_IPS_LONG_DOCUMENT"
+    - name: WIA_IPS_LONG_DOCUMENT
       href: wia-ips-long-document.md
-    - name: "WIA_IPS_MAX_HORIZONTAL_SIZE"
+    - name: WIA_IPS_MAX_HORIZONTAL_SIZE
       href: wia-ips-max-horizontal-size.md
-    - name: "WIA_IPS_MAX_VERTICAL_SIZE"
+    - name: WIA_IPS_MAX_VERTICAL_SIZE
       href: wia-ips-max-vertical-size.md
-    - name: "WIA_IPS_MAXIMUM_BARCODE_SEARCH_RETRIES"
+    - name: WIA_IPS_MAXIMUM_BARCODE_SEARCH_RETRIES
       href: wia-ips-maximum-barcode-search-retries.md
-    - name: "WIA_IPS_MAXIMUM_BARCODES_PER_PAGE"
+    - name: WIA_IPS_MAXIMUM_BARCODES_PER_PAGE
       href: wia-ips-maximum-barcodes-per-page.md
-    - name: "WIA_IPS_MAXIMUM_PATCH_CODE_SEARCH_RETRIES"
+    - name: WIA_IPS_MAXIMUM_PATCH_CODE_SEARCH_RETRIES
       href: wia-ips-maximum-patch-code-search-retries.md
-    - name: "WIA_IPS_MAXIMUM_PATCH_CODES_PER_PAGE"
+    - name: WIA_IPS_MAXIMUM_PATCH_CODES_PER_PAGE
       href: wia-ips-maximum-patch-codes-per-page.md
-    - name: "WIA_IPS_MICR_READER"
+    - name: WIA_IPS_MICR_READER
       href: wia-ips-micr-reader.md
-    - name: "WIA_IPS_MIN_HORIZONTAL_SIZE"
+    - name: WIA_IPS_MIN_HORIZONTAL_SIZE
       href: wia-ips-min-horizontal-size.md
-    - name: "WIA_IPS_MIN_VERTICAL_SIZE"
+    - name: WIA_IPS_MIN_VERTICAL_SIZE
       href: wia-ips-min-vertical-size.md
-    - name: "WIA_IPS_MIRROR"
+    - name: WIA_IPS_MIRROR
       href: wia-ips-mirror.md
-    - name: "WIA_IPS_MULTI_FEED"
+    - name: WIA_IPS_MULTI_FEED
       href: wia-ips-multi-feed.md
-    - name: "WIA_IPS_MULTI_FEED_DETECT_METHOD"
+    - name: WIA_IPS_MULTI_FEED_DETECT_METHOD
       href: wia-ips-multi-feed-detect-method.md
-    - name: "WIA_IPS_MULTI_FEED_SENSITIVITY"
+    - name: WIA_IPS_MULTI_FEED_SENSITIVITY
       href: wia-ips-multi-feed-sensitivity.md
-    - name: "WIA_IPS_OPTICAL_XRES"
+    - name: WIA_IPS_OPTICAL_XRES
       href: wia-ips-optical-xres.md
-    - name: "WIA_IPS_OPTICAL_YRES"
+    - name: WIA_IPS_OPTICAL_YRES
       href: wia-ips-optical-yres.md
-    - name: "WIA_IPS_ORIENTATION"
+    - name: WIA_IPS_ORIENTATION
       href: wia-ips-orientation.md
-    - name: "WIA_IPS_OVER_SCAN"
+    - name: WIA_IPS_OVER_SCAN
       href: wia-ips-over-scan.md
-    - name: "WIA_IPS_OVER_SCAN_BOTTOM"
+    - name: WIA_IPS_OVER_SCAN_BOTTOM
       href: wia-ips-over-scan-bottom.md
-    - name: "WIA_IPS_OVER_SCAN_LEFT"
+    - name: WIA_IPS_OVER_SCAN_LEFT
       href: wia-ips-over-scan-left.md
-    - name: "WIA_IPS_OVER_SCAN_RIGHT"
+    - name: WIA_IPS_OVER_SCAN_RIGHT
       href: wia-ips-over-scan-right.md
-    - name: "WIA_IPS_OVER_SCAN_TOP"
+    - name: WIA_IPS_OVER_SCAN_TOP
       href: wia-ips-over-scan-top.md
-    - name: "WIA_IPS_PAGE_HEIGHT"
+    - name: WIA_IPS_PAGE_HEIGHT
       href: wia-ips-page-height.md
-    - name: "WIA_IPS_PAGE_SIZE"
+    - name: WIA_IPS_PAGE_SIZE
       href: wia-ips-page-size.md
-    - name: "WIA_IPS_PAGE_WIDTH"
+    - name: WIA_IPS_PAGE_WIDTH
       href: wia-ips-page-width.md
-    - name: "WIA_IPS_PAGES"
+    - name: WIA_IPS_PAGES
       href: wia-ips-pages.md
-    - name: "WIA_IPS_PATCH_CODE_READER"
+    - name: WIA_IPS_PATCH_CODE_READER
       href: wia-ips-patch-code-reader.md
-    - name: "WIA_IPS_PATCH_CODE_SEARCH_DIRECTION"
+    - name: WIA_IPS_PATCH_CODE_SEARCH_DIRECTION
       href: wia-ips-patch-code-search-direction.md
-    - name: "WIA_IPS_PATCH_CODE_SEARCH_TIMEOUT"
+    - name: WIA_IPS_PATCH_CODE_SEARCH_TIMEOUT
       href: wia-ips-patch-code-search-timeout.md
-    - name: "WIA_IPS_PHOTOMETRIC_INTERP"
+    - name: WIA_IPS_PHOTOMETRIC_INTERP
       href: wia-ips-photometric-interp.md
-    - name: "WIA_IPS_PREVIEW"
+    - name: WIA_IPS_PREVIEW
       href: wia-ips-preview.md
-    - name: "WIA_IPS_PREVIEW_TYPE"
+    - name: WIA_IPS_PREVIEW_TYPE
       href: wia-ips-preview-type.md
-    - name: "WIA_IPS_PRINTER_ENDORSER"
+    - name: WIA_IPS_PRINTER_ENDORSER
       href: wia-ips-printer-endorser.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_CHARACTER_ROTATION"
+    - name: WIA_IPS_PRINTER_ENDORSER_CHARACTER_ROTATION
       href: wia-ips-printer-endorser-character-rotation.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_COUNTER"
+    - name: WIA_IPS_PRINTER_ENDORSER_COUNTER
       href: wia-ips-printer-endorser-counter.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_COUNTER_DIGITS"
+    - name: WIA_IPS_PRINTER_ENDORSER_COUNTER_DIGITS
       href: wia-ips-printer-endorser-counter-digits.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_FONT_TYPE"
+    - name: WIA_IPS_PRINTER_ENDORSER_FONT_TYPE
       href: wia-ips-printer-endorser-font-type.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_GRAPHICS"
+    - name: WIA_IPS_PRINTER_ENDORSER_GRAPHICS
       href: wia-ips-printer-endorser-graphics.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_GRAPHICS_DOWNLOAD"
+    - name: WIA_IPS_PRINTER_ENDORSER_GRAPHICS_DOWNLOAD
       href: wia-ips-printer-endorser-graphics-download.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_GRAPHICS_MAX_HEIGHT"
+    - name: WIA_IPS_PRINTER_ENDORSER_GRAPHICS_MAX_HEIGHT
       href: wia-ips-printer-endorser-graphics-max-height.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_GRAPHICS_MAX_WIDTH"
+    - name: WIA_IPS_PRINTER_ENDORSER_GRAPHICS_MAX_WIDTH
       href: wia-ips-printer-endorser-graphics-max-width.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_GRAPHICS_MIN_HEIGHT"
+    - name: WIA_IPS_PRINTER_ENDORSER_GRAPHICS_MIN_HEIGHT
       href: wia-ips-printer-endorser-graphics-min-height.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_GRAPHICS_MIN_WIDTH"
+    - name: WIA_IPS_PRINTER_ENDORSER_GRAPHICS_MIN_WIDTH
       href: wia-ips-printer-endorser-graphics-min-width.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_GRAPHICS_POSITION"
+    - name: WIA_IPS_PRINTER_ENDORSER_GRAPHICS_POSITION
       href: wia-ips-printer-endorser-graphics-position.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_GRAPHICS_UPLOAD"
+    - name: WIA_IPS_PRINTER_ENDORSER_GRAPHICS_UPLOAD
       href: wia-ips-printer-endorser-graphics-upload.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_INK"
+    - name: WIA_IPS_PRINTER_ENDORSER_INK
       href: wia-ips-printer-endorser-ink.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_MAX_CHARACTERS"
+    - name: WIA_IPS_PRINTER_ENDORSER_MAX_CHARACTERS
       href: wia-ips-printer-endorser-max-characters.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_MAX_GRAPHICS"
+    - name: WIA_IPS_PRINTER_ENDORSER_MAX_GRAPHICS
       href: wia-ips-printer-endorser-max-graphics.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_NUM_LINES"
+    - name: WIA_IPS_PRINTER_ENDORSER_NUM_LINES
       href: wia-ips-printer-endorser-num-lines.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_ORDER"
+    - name: WIA_IPS_PRINTER_ENDORSER_ORDER
       href: wia-ips-printer-endorser-order.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_PADDING"
+    - name: WIA_IPS_PRINTER_ENDORSER_PADDING
       href: wia-ips-printer-endorser-padding.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_STEP"
+    - name: WIA_IPS_PRINTER_ENDORSER_STEP
       href: wia-ips-printer-endorser-step.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_STRING"
+    - name: WIA_IPS_PRINTER_ENDORSER_STRING
       href: wia-ips-printer-endorser-string.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_TEXT_DOWNLOAD"
+    - name: WIA_IPS_PRINTER_ENDORSER_TEXT_DOWNLOAD
       href: wia-ips-printer-endorser-text-download.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_TEXT_UPLOAD"
+    - name: WIA_IPS_PRINTER_ENDORSER_TEXT_UPLOAD
       href: wia-ips-printer-endorser-text-upload.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_VALID_CHARACTERS"
+    - name: WIA_IPS_PRINTER_ENDORSER_VALID_CHARACTERS
       href: wia-ips-printer-endorser-valid-characters.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_VALID_FORMAT_SPECIFIERS"
+    - name: WIA_IPS_PRINTER_ENDORSER_VALID_FORMAT_SPECIFIERS
       href: wia-ips-printer-endorser-valid-format-specifiers.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_XOFFSET"
+    - name: WIA_IPS_PRINTER_ENDORSER_XOFFSET
       href: wia-ips-printer-endorser-xoffset.md
-    - name: "WIA_IPS_PRINTER_ENDORSER_YOFFSET"
+    - name: WIA_IPS_PRINTER_ENDORSER_YOFFSET
       href: wia-ips-printer-endorser-yoffset.md
-    - name: "WIA_IPS_ROTATION"
+    - name: WIA_IPS_ROTATION
       href: wia-ips-rotation.md
-    - name: "WIA_IPS_SCAN_AHEAD"
+    - name: WIA_IPS_SCAN_AHEAD
       href: wia-ips-scan-ahead.md
-    - name: "WIA_IPS_SCAN_AHEAD_CAPACITY"
+    - name: WIA_IPS_SCAN_AHEAD_CAPACITY
       href: wia-ips-scan-ahead-capacity.md
-    - name: "WIA_IPS_SEGMENTATION"
+    - name: WIA_IPS_SEGMENTATION
       href: wia-ips-segmentation.md
-    - name: "WIA_IPS_SHEET_FEEDER_REGISTRATION"
+    - name: WIA_IPS_SHEET_FEEDER_REGISTRATION
       href: wia-ips-sheet-feeder-registration.md
-    - name: "WIA_IPS_SHOW_PREVIEW_CONTROL"
+    - name: WIA_IPS_SHOW_PREVIEW_CONTROL
       href: wia-ips-show-preview-control.md
-    - name: "WIA_IPS_SUPPORTED_BARCODE_TYPES"
+    - name: WIA_IPS_SUPPORTED_BARCODE_TYPES
       href: wia-ips-supported-barcode-types.md
-    - name: "WIA_IPS_SUPPORTED_PATCH_CODE_TYPES"
+    - name: WIA_IPS_SUPPORTED_PATCH_CODE_TYPES
       href: wia-ips-supported-patch-code-types.md
-    - name: "WIA_IPS_SUPPORTS_CHILD_ITEM_CREATION"
+    - name: WIA_IPS_SUPPORTS_CHILD_ITEM_CREATION
       href: wia-ips-supports-child-item-creation.md
-    - name: "WIA_IPS_THRESHOLD"
+    - name: WIA_IPS_THRESHOLD
       href: wia-ips-threshold.md
-    - name: "WIA_IPS_TRANSFER_CAPABILITIES"
+    - name: WIA_IPS_TRANSFER_CAPABILITIES
       href: wia-ips-transfer-capabilities.md
-    - name: "WIA_IPS_WARM_UP_TIME"
+    - name: WIA_IPS_WARM_UP_TIME
       href: wia-ips-warm-up-time.md
-    - name: "WIA_IPS_XEXTENT"
+    - name: WIA_IPS_XEXTENT
       href: wia-ips-xextent.md
-    - name: "WIA_IPS_XPOS"
+    - name: WIA_IPS_XPOS
       href: wia-ips-xpos.md
-    - name: "WIA_IPS_XRES"
+    - name: WIA_IPS_XRES
       href: wia-ips-xres.md
-    - name: "WIA_IPS_XSCALING"
+    - name: WIA_IPS_XSCALING
       href: wia-ips-xscaling.md
-    - name: "WIA_IPS_YEXTENT"
+    - name: WIA_IPS_YEXTENT
       href: wia-ips-yextent.md
-    - name: "WIA_IPS_YPOS"
+    - name: WIA_IPS_YPOS
       href: wia-ips-ypos.md
-    - name: "WIA_IPS_YRES"
+    - name: WIA_IPS_YRES
       href: wia-ips-yres.md
-    - name: "WIA_IPS_YSCALING"
+    - name: WIA_IPS_YSCALING
       href: wia-ips-yscaling.md
-- name: "Still Image Drivers"
-# Auto-expanded node
-  items: 
-  - name: "Still Image Drivers"
+- name: Still Image Drivers
+  items:
+  - name: Still Image Drivers
     href: still-image-drivers.md
-  - name: "Overview of Microsoft STI and Microsoft WIA"
+  - name: Overview of Microsoft STI and Microsoft WIA
     href: overview-of-microsoft-sti-and-microsoft-wia.md
-  - name: "Introduction to Microsoft STI"
+  - name: Introduction to Microsoft STI
     href: introduction-to-microsoft-sti.md
-  - name: "Microsoft STI Components"
-# Auto-expanded node
-    items: 
-    - name: "Microsoft STI Components"
+  - name: Microsoft STI Components
+    items:
+    - name: Microsoft STI Components
       href: microsoft-sti-components.md
-    - name: "Overview of STI Components"
+    - name: Overview of STI Components
       href: overview-of-sti-components.md
-    - name: "Windows 98 Core Components"
+    - name: Windows 98 Core Components
       href: windows-98-core-components.md
-    - name: "Windows 2000 Core Components"
+    - name: Windows 2000 Core Components
       href: windows-2000-core-components.md
-  - name: "Still Image COM Interfaces"
-# Auto-expanded node
-    items: 
-    - name: "Still Image COM Interfaces"
-    - name: "IStillImage COM Interface"
+  - name: Still Image COM Interfaces
+    items:
+    - name: IStillImage COM Interface
       href: istillimage-com-interface.md
-    - name: "IStiDevice COM Interface"
+    - name: IStiDevice COM Interface
       href: istidevice-com-interface.md
-    - name: "IStiUSD COM Interface"
+    - name: IStiUSD COM Interface
       href: istiusd-com-interface.md
-    - name: "IStiDeviceControl COM Interface"
+    - name: IStiDeviceControl COM Interface
       href: istidevicecontrol-com-interface.md
-  - name: "Still Image I/O"
-# Auto-expanded node
-    items: 
-    - name: "Still Image I/O"
+  - name: Still Image I/O
+    items:
+    - name: Still Image I/O
       href: still-image-i-o.md
-    - name: "Still Image SCSI I/O"
-# Auto-expanded node
-      items: 
-      - name: "Still Image SCSI I/O"
+    - name: Still Image SCSI I/O
+      items:
+      - name: Still Image SCSI I/O
         href: still-image-scsi-i-o.md
-      - name: "Still Image SCSI I/O Control Codes"
+      - name: Still Image SCSI I/O Control Codes
         href: still-image-scsi-i-o-control-codes.md
-      - name: "Still Image SCSI I/O Structures"
+      - name: Still Image SCSI I/O Structures
         href: still-image-scsi-i-o-structures.md
-    - name: "Still Image USB I/O"
-# Auto-expanded node
-      items: 
-      - name: "Still Image USB I/O"
+    - name: Still Image USB I/O
+      items:
+      - name: Still Image USB I/O
         href: still-image-usb-i-o.md
-      - name: "Still Image USB I/O Control Codes"
+      - name: Still Image USB I/O Control Codes
         href: still-image-usb-i-o-control-codes.md
-      - name: "Still Image USB I/O Structures"
+      - name: Still Image USB I/O Structures
         href: still-image-usb-i-o-structures.md
-  - name: "Creating Push-Model Aware Applications"
+  - name: Creating Push-Model Aware Applications
     href: creating-push-model-aware-applications.md
-  - name: "Creating Device-Specific Components for Image Acquisition APIs"
+  - name: Creating Device-Specific Components for Image Acquisition APIs
     href: creating-device-specific-components-for-image-acquisition-apis.md
-  - name: "Creating a User-Mode Still Image Minidriver"
-# Auto-expanded node
-    items: 
-    - name: "Creating a User-Mode Still Image Minidriver"
+  - name: Creating a User-Mode Still Image Minidriver
+    items:
+    - name: Creating a User-Mode Still Image Minidriver
       href: creating-a-user-mode-still-image-minidriver.md
-    - name: "Still Image Device Events"
+    - name: Still Image Device Events
       href: still-image-device-events.md
-    - name: "Transfer Modes"
+    - name: Transfer Modes
       href: transfer-modes.md
-    - name: "Security Issues for Still Image Drivers"
+    - name: Security Issues for Still Image Drivers
       href: security-issues-for-still-image-drivers.md
-  - name: "Installing and Configuring Still Image Components"
-# Auto-expanded node
-    items: 
-    - name: "Installing and Configuring Still Image Components"
-    - name: "Property Sheet Pages for Still Image Devices"
+  - name: Installing and Configuring Still Image Components
+    items:
+    - name: Property Sheet Pages for Still Image Devices
       href: property-sheet-pages-for-still-image-devices.md
-    - name: "Registry Entries for Still Image Devices"
+    - name: Registry Entries for Still Image Devices
       href: registry-entries-for-still-image-devices.md
-    - name: "INF Files for Still Image Devices"
+    - name: INF Files for Still Image Devices
       href: inf-files-for-still-image-devices.md
-    - name: "Still Image Device Installers"
+    - name: Still Image Device Installers
       href: still-image-device-installers.md
-    - name: "Color Management for Still Image Devices"
+    - name: Color Management for Still Image Devices
       href: color-management-for-still-image-devices.md
-  - name: "Starting and Stopping the Still Image Service"
+  - name: Starting and Stopping the Still Image Service
     href: starting-and-stopping-the-still-image-service.md
-  - name: "Debugging Still Image Components"
+  - name: Debugging Still Image Components
     href: debugging-still-image-components.md
-- name: "Web Services on Devices"
-# Auto-expanded node
-  items: 
-  - name: "Web Services on Devices"
+- name: Web Services on Devices
+  items:
+  - name: Web Services on Devices
     href: web-services-on-devices.md
-  - name: "Scan Service (WS-SCAN"
+  - name: Scan Service (WS-SCAN
     href: scan-service--ws-scan.md
-- name: "Web Services on Devices Reference"
-# Auto-expanded node
-  items: 
-  - name: "Web Services on Devices Reference"
+- name: Web Services on Devices Reference
+  items:
+  - name: Web Services on Devices Reference
     href: web-services-on-devices-reference.md
-  - name: "Scan Service (WS-Scan) Schema"
-# Auto-expanded node
-    items: 
-    - name: "Scan Service (WS-Scan) Schema"
-    - name: "WSD Scan Service Scanner Elements"
-# Auto-expanded node
-      items: 
-      - name: "WSD Scan Service Scanner Elements"
-      - name: "Scanner Description Elements"
-# Auto-expanded node
-        items: 
-        - name: "Scanner Description Elements"
-        - name: "ScannerDescription"
+  - name: Scan Service (WS-Scan) Schema
+    items:
+    - name: WSD Scan Service Scanner Elements
+      items:
+      - name: Scanner Description Elements
+        items:
+        - name: ScannerDescription
           href: scannerdescription.md
-        - name: "ScannerInfo"
+        - name: ScannerInfo
           href: scannerinfo.md
-        - name: "ScannerLocation"
+        - name: ScannerLocation
           href: scannerlocation.md
-        - name: "ScannerName"
+        - name: ScannerName
           href: scannername.md
-      - name: "Scanner Configuration Elements"
-# Auto-expanded node
-        items: 
-        - name: "Scanner Configuration Elements"
-        - name: "ScannerConfiguration"
+      - name: Scanner Configuration Elements
+        items:
+        - name: ScannerConfiguration
           href: scannerconfiguration.md
-        - name: "Device Settings Configuration Elements"
-# Auto-expanded node
-          items: 
-          - name: "Device Settings Configuration Elements"
-          - name: "AutoExposureSupported"
+        - name: Device Settings Configuration Elements
+          items:
+          - name: AutoExposureSupported
             href: autoexposuresupported.md
-          - name: "BrightnessSupported"
+          - name: BrightnessSupported
             href: brightnesssupported.md
-          - name: "CompressionQualityFactorSupported"
+          - name: CompressionQualityFactorSupported
             href: compressionqualityfactorsupported.md
-          - name: "ContentTypesSupported"
+          - name: ContentTypesSupported
             href: contenttypessupported.md
-          - name: "ContentTypeValue"
+          - name: ContentTypeValue
             href: contenttypevalue.md
-          - name: "ContrastSupported"
+          - name: ContrastSupported
             href: contrastsupported.md
-          - name: "DeviceSettings"
+          - name: DeviceSettings
             href: devicesettings.md
-          - name: "DocumentSizeAutoDetectSupported"
+          - name: DocumentSizeAutoDetectSupported
             href: documentsizeautodetectsupported.md
-          - name: "FormatsSupported"
+          - name: FormatsSupported
             href: formatssupported.md
-          - name: "FormatValue"
+          - name: FormatValue
             href: formatvalue.md
-          - name: "MaxValue"
+          - name: MaxValue
             href: maxvalue.md
-          - name: "MinValue"
+          - name: MinValue
             href: minvalue.md
-          - name: "RotationsSupported"
+          - name: RotationsSupported
             href: rotationssupported.md
-          - name: "RotationValue"
+          - name: RotationValue
             href: rotationvalue.md
-          - name: "ScalingHeight"
+          - name: ScalingHeight
             href: scalingheight2.md
-          - name: "ScalingRangeSupported"
+          - name: ScalingRangeSupported
             href: scalingrangesupported.md
-          - name: "ScalingWidth"
+          - name: ScalingWidth
             href: scalingwidth2.md
-    - name: "Platen Configuration Elements"
-# Auto-expanded node
-      items: 
-      - name: "Platen Configuration Elements"
+    - name: Platen Configuration Elements
+      items:
+      - name: Platen Configuration Elements
         href: platen-configuration-elements.md
-      - name: "ColorEntry"
+      - name: ColorEntry
         href: colorentry.md
-      - name: "Height"
+      - name: Height
         href: height.md
-      - name: "Heights"
+      - name: Heights
         href: heights.md
-      - name: "Platen"
+      - name: Platen
         href: platen.md
-      - name: "PlatenColor"
+      - name: PlatenColor
         href: platencolor.md
-      - name: "PlatenMaximumSize"
+      - name: PlatenMaximumSize
         href: platenmaximumsize.md
-      - name: "PlatenMinimumSize"
+      - name: PlatenMinimumSize
         href: platenminimumsize.md
-      - name: "PlatenOpticalResolution"
+      - name: PlatenOpticalResolution
         href: platenopticalresolution.md
-      - name: "PlatenResolutions"
+      - name: PlatenResolutions
         href: platenresolutions.md
-      - name: "Width"
+      - name: Width
         href: width.md
-      - name: "Widths"
+      - name: Widths
         href: widths.md
-    - name: "ADF Configuration Elements"
-# Auto-expanded node
-      items: 
-      - name: "ADF Configuration Elements"
+    - name: ADF Configuration Elements
+      items:
+      - name: ADF Configuration Elements
         href: adf-configuration-elements.md
-      - name: "ADF"
+      - name: ADF
         href: adf.md
-      - name: "ADFBack"
+      - name: ADFBack
         href: adfback.md
-      - name: "ADFColor"
+      - name: ADFColor
         href: adfcolor.md
-      - name: "ADFFront"
+      - name: ADFFront
         href: adffront.md
-      - name: "ADFMaximumSize"
+      - name: ADFMaximumSize
         href: adfmaximumsize.md
-      - name: "ADFMinimumSize"
+      - name: ADFMinimumSize
         href: adfminimumsize.md
-      - name: "ADFOpticalResolution"
+      - name: ADFOpticalResolution
         href: adfopticalresolution.md
-      - name: "ADFResolutions"
+      - name: ADFResolutions
         href: adfresolutions.md
-      - name: "ADFSupportsDuplex"
+      - name: ADFSupportsDuplex
         href: adfsupportsduplex.md
-    - name: "Film Configuration Elements"
-# Auto-expanded node
-      items: 
-      - name: "Film Configuration Elements"
-      - name: "Film"
+    - name: Film Configuration Elements
+      items:
+      - name: Film
         href: film.md
-      - name: "FilmColor"
+      - name: FilmColor
         href: filmcolor.md
-      - name: "FilmMaximumSize"
+      - name: FilmMaximumSize
         href: filmmaximumsize.md
-      - name: "FilmMinimumSize"
+      - name: FilmMinimumSize
         href: filmminimumsize.md
-      - name: "FilmOpticalResolution"
+      - name: FilmOpticalResolution
         href: filmopticalresolution.md
-      - name: "FilmResolutions"
+      - name: FilmResolutions
         href: filmresolutions.md
-      - name: "FilmScanModesSupported"
+      - name: FilmScanModesSupported
         href: filmscanmodessupported.md
-      - name: "FilmScanModeValue"
+      - name: FilmScanModeValue
         href: filmscanmodevalue.md
-      - name: "Scanner Status Elements"
-# Auto-expanded node
-        items: 
-        - name: "Scanner Status Elements"
-        - name: "ActiveConditions"
+      - name: Scanner Status Elements
+        items:
+        - name: ActiveConditions
           href: activeconditions.md
-        - name: "ClearTime"
+        - name: ClearTime
           href: cleartime.md
-        - name: "Component"
+        - name: Component
           href: component.md
-        - name: "ConditionHistory"
+        - name: ConditionHistory
           href: conditionhistory.md
-        - name: "ConditionHistoryEntry"
+        - name: ConditionHistoryEntry
           href: conditionhistoryentry.md
-        - name: "DeviceCondition"
+        - name: DeviceCondition
           href: devicecondition.md
-        - name: "Name Element for DeviceCondition and ConditionHistoryEntry"
+        - name: Name Element for DeviceCondition and ConditionHistoryEntry
           href: name-element-for-devicecondition-and-conditionhistoryentry.md
-        - name: "ScannerCurrentTime"
+        - name: ScannerCurrentTime
           href: scannercurrenttime.md
-        - name: "ScannerState"
+        - name: ScannerState
           href: scannerstate.md
-        - name: "ScannerStateReason"
+        - name: ScannerStateReason
           href: scannerstatereason.md
-        - name: "ScannerStateReasons"
+        - name: ScannerStateReasons
           href: scannerstatereasons.md
-        - name: "ScannerStatus"
+        - name: ScannerStatus
           href: scannerstatus.md
-        - name: "Severity"
+        - name: Severity
           href: severity.md
-        - name: "Time"
+        - name: Time
           href: time.md
-      - name: "Scan Tickets"
-# Auto-expanded node
-        items: 
-        - name: "Scan Tickets"
+      - name: Scan Tickets
+        items:
+        - name: Scan Tickets
           href: scan-tickets.md
-        - name: "DefaultScanTicket"
+        - name: DefaultScanTicket
           href: defaultscanticket.md
-        - name: "ScanTicket"
+        - name: ScanTicket
           href: scanticket.md
-    - name: "WSD Scan Service Job and Document Elements"
-# Auto-expanded node
-      items: 
-      - name: "WSD Scan Service Job and Document Elements"
+    - name: WSD Scan Service Job and Document Elements
+      items:
+      - name: WSD Scan Service Job and Document Elements
         href: wsd-scan-service-job-and-document-elements.md
-      - name: "WSD Scan Service Job and Job Table Elements"
-# Auto-expanded node
-        items: 
-        - name: "WSD Scan Service Job and Job Table Elements"
-        - name: "ActiveJobs"
+      - name: WSD Scan Service Job and Job Table Elements
+        items:
+        - name: ActiveJobs
           href: activejobs.md
-        - name: "Job"
+        - name: Job
           href: job.md
-        - name: "JobCompletedTime"
+        - name: JobCompletedTime
           href: jobcompletedtime.md
-        - name: "JobCreatedTime"
+        - name: JobCreatedTime
           href: jobcreatedtime.md
-        - name: "JobDescription"
+        - name: JobDescription
           href: jobdescription.md
-        - name: "JobHistory"
+        - name: JobHistory
           href: jobhistory2.md
-        - name: "JobId"
+        - name: JobId
           href: jobid.md
-        - name: "JobInformation"
+        - name: JobInformation
           href: jobinformation.md
-        - name: "JobName"
+        - name: JobName
           href: jobname.md
-        - name: "JobOriginatingUserName"
+        - name: JobOriginatingUserName
           href: joboriginatingusername.md
-        - name: "JobState"
+        - name: JobState
           href: jobstate.md
-        - name: "JobStateReason"
+        - name: JobStateReason
           href: jobstatereason.md
-        - name: "JobStateReasons"
+        - name: JobStateReasons
           href: jobstatereasons.md
-        - name: "JobStatus"
+        - name: JobStatus
           href: jobstatus.md
-        - name: "JobTable"
+        - name: JobTable
           href: jobtable.md
-        - name: "ScansCompleted"
+        - name: ScansCompleted
           href: scanscompleted.md
-      - name: "WSD Scan Service Document Elements"
-# Auto-expanded node
-        items: 
-        - name: "WSD Scan Service Document Elements"
-        - name: "AutoExposure"
+      - name: WSD Scan Service Document Elements
+        items:
+        - name: AutoExposure
           href: autoexposure.md
-        - name: "Brightness"
+        - name: Brightness
           href: brightness.md
-        - name: "ColorProcessing"
+        - name: ColorProcessing
           href: colorprocessing.md
-        - name: "CompressionQualityFactor"
+        - name: CompressionQualityFactor
           href: compressionqualityfactor.md
-        - name: "ContentType"
+        - name: ContentType
           href: contenttype.md
-        - name: "Contrast"
+        - name: Contrast
           href: contrast.md
-        - name: "Document"
+        - name: Document
           href: document.md
-        - name: "DocumentDescription"
+        - name: DocumentDescription
           href: documentdescription.md
-        - name: "DocumentFinalParameters"
+        - name: DocumentFinalParameters
           href: documentfinalparameters.md
-        - name: "DocumentName"
+        - name: DocumentName
           href: documentname.md
-        - name: "DocumentParameters"
+        - name: DocumentParameters
           href: documentparameters.md
-        - name: "Documents"
+        - name: Documents
           href: documents.md
-        - name: "DocumentSizeAutoDetect"
+        - name: DocumentSizeAutoDetect
           href: documentsizeautodetect.md
-        - name: "Exposure"
+        - name: Exposure
           href: exposure.md
-        - name: "ExposureSettings"
+        - name: ExposureSettings
           href: exposuresettings.md
-        - name: "FilmScanMode"
+        - name: FilmScanMode
           href: filmscanmode.md
-        - name: "Format"
+        - name: Format
           href: format.md
-        - name: "ImagesToTransfer"
+        - name: ImagesToTransfer
           href: imagestotransfer.md
-        - name: "InputMediaSize"
+        - name: InputMediaSize
           href: inputmediasize.md
-        - name: "InputSize"
+        - name: InputSize
           href: inputsize.md
-        - name: "InputSource"
+        - name: InputSource
           href: inputsource.md
-        - name: "MediaBack"
+        - name: MediaBack
           href: mediaback.md
-        - name: "MediaFront"
+        - name: MediaFront
           href: mediafront.md
-        - name: "MediaSides"
+        - name: MediaSides
           href: mediasides.md
-        - name: "Resolution"
+        - name: Resolution
           href: resolution.md
-        - name: "Rotation"
+        - name: Rotation
           href: rotation.md
-        - name: "Scaling"
+        - name: Scaling
           href: scaling.md
-        - name: "ScalingHeight"
+        - name: ScalingHeight
           href: scalingheight.md
-        - name: "ScalingWidth"
+        - name: ScalingWidth
           href: scalingwidth.md
-        - name: "ScanRegion"
+        - name: ScanRegion
           href: scanregion.md
-        - name: "ScanRegionHeight"
+        - name: ScanRegionHeight
           href: scanregionheight.md
-        - name: "ScanRegionWidth"
+        - name: ScanRegionWidth
           href: scanregionwidth.md
-        - name: "ScanRegionXOffset"
+        - name: ScanRegionXOffset
           href: scanregionxoffset.md
-        - name: "ScanRegionYOffset"
+        - name: ScanRegionYOffset
           href: scanregionyoffset.md
-        - name: "Sharpness"
+        - name: Sharpness
           href: sharpness.md
-    - name: "WSD Scan Service Event Elements"
-# Auto-expanded node
-      items: 
-      - name: "WSD Scan Service Event Elements"
-      - name: "ClientContext"
+    - name: WSD Scan Service Event Elements
+      items:
+      - name: ClientContext
         href: clientcontext.md
-      - name: "ClientDisplayName"
+      - name: ClientDisplayName
         href: clientdisplayname.md
-      - name: "ConditionClearTime"
+      - name: ConditionClearTime
         href: conditioncleartime.md
-      - name: "ConditionId"
+      - name: ConditionId
         href: conditionid.md
-      - name: "DestinationResponse"
+      - name: DestinationResponse
         href: destinationresponse.md
-      - name: "DestinationResponses"
+      - name: DestinationResponses
         href: destinationresponses.md
-      - name: "DestinationToken"
+      - name: DestinationToken
         href: destinationtoken.md
-      - name: "DeviceConditionCleared"
+      - name: DeviceConditionCleared
         href: deviceconditioncleared.md
-      - name: "ElementChanges"
+      - name: ElementChanges
         href: elementchanges.md
-      - name: "JobCompletedState"
+      - name: JobCompletedState
         href: jobcompletedstate.md
-      - name: "JobCompletedStateReasons"
+      - name: JobCompletedStateReasons
         href: jobcompletedstatereasons.md
-      - name: "JobEndState"
+      - name: JobEndState
         href: jobendstate.md
-      - name: "JobEndStateEvent"
+      - name: JobEndStateEvent
         href: jobendstateevent.md
-      - name: "JobStatusEvent"
+      - name: JobStatusEvent
         href: jobstatusevent.md
-      - name: "ScanAvailableEvent"
+      - name: ScanAvailableEvent
         href: scanavailableevent.md
-      - name: "ScanDestination"
+      - name: ScanDestination
         href: scandestination.md
-      - name: "ScanDestinations"
+      - name: ScanDestinations
         href: scandestinations.md
-      - name: "ScanIdentifier"
+      - name: ScanIdentifier
         href: scanidentifier.md
-      - name: "ScannerElementsChangeEvent"
+      - name: ScannerElementsChangeEvent
         href: scannerelementschangeevent.md
-      - name: "ScannerStatusConditionClearedEvent"
+      - name: ScannerStatusConditionClearedEvent
         href: scannerstatusconditionclearedevent.md
-      - name: "ScannerStatusConditionEvent"
+      - name: ScannerStatusConditionEvent
         href: scannerstatusconditionevent.md
-      - name: "ScannerStatusSummaryEvent"
+      - name: ScannerStatusSummaryEvent
         href: scannerstatussummaryevent.md
-      - name: "StatusSummary"
+      - name: StatusSummary
         href: statussummary.md
-    - name: "WSD Scan Service Operation Elements and Error Codes"
-# Auto-expanded node
-      items: 
-      - name: "WSD Scan Service Operation Elements and Error Codes"
+    - name: WSD Scan Service Operation Elements and Error Codes
+      items:
+      - name: WSD Scan Service Operation Elements and Error Codes
         href: wsd-scan-service-operation-elements-and-error-codes.md
-      - name: "WSD Scan Service Operation Elements"
-# Auto-expanded node
-        items: 
-        - name: "WSD Scan Service Operation Elements"
+      - name: WSD Scan Service Operation Elements
+        items:
+        - name: WSD Scan Service Operation Elements
           href: wsd-scan-service-operation-elements.md
-        - name: "BytesPerLine"
+        - name: BytesPerLine
           href: bytesperline.md
-        - name: "CancelJobRequest"
+        - name: CancelJobRequest
           href: canceljobrequest.md
-        - name: "CancelJobResponse"
+        - name: CancelJobResponse
           href: canceljobresponse.md
-        - name: "CreateScanJobRequest"
+        - name: CreateScanJobRequest
           href: createscanjobrequest.md
-        - name: "CreateScanJobResponse"
+        - name: CreateScanJobResponse
           href: createscanjobresponse.md
-        - name: "ElementData for JobElements Element"
+        - name: ElementData for JobElements Element
           href: elementdata-for-jobelements-element.md
-        - name: "ElementData for ScannerElements Element"
+        - name: ElementData for ScannerElements Element
           href: elementdata-for-scannerelements-element.md
-        - name: "GetActiveJobsRequest"
+        - name: GetActiveJobsRequest
           href: getactivejobsrequest.md
-        - name: "GetActiveJobsResponse"
+        - name: GetActiveJobsResponse
           href: getactivejobsresponse.md
-        - name: "GetJobElementsRequest"
+        - name: GetJobElementsRequest
           href: getjobelementsrequest.md
-        - name: "GetJobElementsResponse"
+        - name: GetJobElementsResponse
           href: getjobelementsresponse.md
-        - name: "GetJobHistoryRequest"
+        - name: GetJobHistoryRequest
           href: getjobhistoryrequest.md
-        - name: "GetJobHistoryResponse"
+        - name: GetJobHistoryResponse
           href: getjobhistoryresponse.md
-        - name: "GetScannerElementsRequest"
+        - name: GetScannerElementsRequest
           href: getscannerelementsrequest.md
-        - name: "GetScannerElementsResponse"
+        - name: GetScannerElementsResponse
           href: getscannerelementsresponse.md
-        - name: "ImageInformation"
+        - name: ImageInformation
           href: imageinformation.md
-        - name: "JobElements"
+        - name: JobElements
           href: jobelements.md
-        - name: "JobHistory"
+        - name: JobHistory
           href: jobhistory.md
-        - name: "JobSummary"
+        - name: JobSummary
           href: jobsummary.md
-        - name: "JobToken"
+        - name: JobToken
           href: jobtoken.md
-        - name: "MediaBackImageInfo"
+        - name: MediaBackImageInfo
           href: mediabackimageinfo.md
-        - name: "MediaFrontImageInfo"
+        - name: MediaFrontImageInfo
           href: mediafrontimageinfo.md
-        - name: "Name for RequestedElements Element"
+        - name: Name for RequestedElements Element
           href: name-for-requestedelements-element.md
-        - name: "NumberOfLines"
+        - name: NumberOfLines
           href: numberoflines.md
-        - name: "PixelsPerLine"
+        - name: PixelsPerLine
           href: pixelsperline.md
-        - name: "RequestedElements"
+        - name: RequestedElements
           href: requestedelements.md
-        - name: "RetrieveImageRequest"
+        - name: RetrieveImageRequest
           href: retrieveimagerequest.md
-        - name: "RetrieveImageResponse"
+        - name: RetrieveImageResponse
           href: retrieveimageresponse.md
-        - name: "ScanData"
+        - name: ScanData
           href: scandata.md
-        - name: "ScannerElements"
+        - name: ScannerElements
           href: scannerelements.md
-        - name: "ValidateScanTicketRequest"
+        - name: ValidateScanTicketRequest
           href: validatescanticketrequest.md
-        - name: "ValidateScanTicketResponse"
+        - name: ValidateScanTicketResponse
           href: validatescanticketresponse.md
-        - name: "ValidationInfo"
+        - name: ValidationInfo
           href: validationinfo.md
-        - name: "ValidScanTicket"
+        - name: ValidScanTicket
           href: validscanticket.md
-        - name: "ValidTicket"
+        - name: ValidTicket
           href: validticket.md
-      - name: "WSD Scan Service Operation Error Reporting"
-# Auto-expanded node
-        items: 
-        - name: "WSD Scan Service Operation Error Reporting"
+      - name: WSD Scan Service Operation Error Reporting
+        items:
+        - name: WSD Scan Service Operation Error Reporting
           href: wsd-scan-service-operation-error-reporting.md
-        - name: "Common WSD Scan Service Operation Error Codes"
+        - name: Common WSD Scan Service Operation Error Codes
           href: common-wsd-scan-service-operation-error-codes.md
