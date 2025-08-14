@@ -77,7 +77,7 @@ Use the **!ndiskd.nb -chain** command to see this **NET\_BUFFER**'s MDL chain in
 
 ## See also
 
-[Network Driver Design Guide](../network)
+[Network Driver Design Guide](../network/)
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 

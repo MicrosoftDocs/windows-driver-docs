@@ -87,7 +87,7 @@ By clicking on the NETTXQUEUE's handle or entering the **!ndiskd.netqueue -handl
 
 ## See also
 
-[Network Driver Design Guide](../network)
+[Network Driver Design Guide](../network/)
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 

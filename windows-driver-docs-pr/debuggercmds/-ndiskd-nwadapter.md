@@ -31,7 +31,7 @@ Ndiskd.dll
 
 ## See Also
 
-[Network Driver Design Guide](../network)
+[Network Driver Design Guide](../network/)
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 

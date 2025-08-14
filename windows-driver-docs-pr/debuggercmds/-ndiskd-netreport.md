@@ -75,7 +75,7 @@ The Data flows tab, which appears if NBL tracking was enabled on the target syst
 
 ## See also
 
-[Network Driver Design Guide](../network)
+[Network Driver Design Guide](../network/)
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
