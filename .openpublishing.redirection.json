@@ -23637,7 +23637,7 @@
     },
     {
       "source_path": "windows-driver-docs-pr/network/index.md",
-      "redirect_url": "/windows-hardware/drivers/network/useing-the-network-driver-design-guide",
+      "redirect_url": "/windows-hardware/drivers/network/using-the-network-driver-design-guide",
       "redirect_document_id": false
     },
     {
