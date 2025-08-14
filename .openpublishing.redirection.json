@@ -22972,217 +22972,217 @@
     },
     {
       "source_path": "windows-driver-docs-pr/network/802-11-wlan-adapter-management.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/allocating-and-freeing-vm-queues.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/callout-driver-operations.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/creating-a-notify-object.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/enhanced-performance-and-scalability.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/hyper-v-extensible-switch-architecture.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/hyper-v-extensible-switch-network-adapters.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/implementing-condis-wan-miniport-drivers.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/initializing-a-callout-driver.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/initializing-a-pf-miniport-driver.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/introduction-to-network-drivers.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/managing-receive-filters-for-a-virtual-port.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/native-802-11-ihv-extensions-dll4.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/native-802-11-ihv-extensions.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/native-802-11-ihv-ui-extensions-dll2.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/native-802-11-wireless-lan-drivers.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/ndis-packet-coalescing.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/ndis-qos-for-data-center-bridging.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/network-module-registrar2.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/power-management--ndis-6-30-.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/remote-ndis-communication.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/scalable-networking-enhancements-in-ndis-6-30.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/sending-and-receiving-data.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/setting-and-clearing-vmq-filters.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/simplified-driver-model.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/sr-iov-data-paths.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/supplemental-mb-documentation.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/supporting-system-area-networks.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/virtualized-networking.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/vmq-send-and-receive-operations.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/wan-miniport-drivers.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/wdi-datapath-operation-sequence-diagrams.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/wdi-design-guide.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/wdi-tlv-generator-parser.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/wdi-usb-selective-suspend.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/wi-fi-hotspot-offloading-guide.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/windows-filtering-platform-constants.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/windows-filtering-platform-enhancements-in-ndis-6-30.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/winsock-kernel-operations.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/winsock-kernel-overview.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/writing-hyper-v-extensible-switch-extensions.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/writing-sr-iov-pf-miniport-drivers.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/writing-sr-iov-vf-miniport-drivers.md",
-      "redirect_url": "/windows-hardware/drivers/network/",
+      "redirect_url": "/windows-hardware/drivers/network/index",
       "redirect_document_id": false
     },
     {
