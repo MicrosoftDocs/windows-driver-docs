@@ -22446,11 +22446,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/bluetooth/index.md",
-      "redirect_url": "/windows-hardware/drivers/bluetooth/index",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "windows-driver-docs-pr/bringup/implementing-support-for-uefi-firmware-updates.md",
       "redirect_url": "/windows-hardware/drivers/bringup/",
       "redirect_document_id": false
@@ -23016,11 +23011,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/network/index.md",
-      "redirect_url": "/windows-hardware/drivers/network/index",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "windows-driver-docs-pr/network/initializing-a-callout-driver.md",
       "redirect_url": "/windows-hardware/drivers/network/",
       "redirect_document_id": false
@@ -23198,11 +23188,6 @@
     {
       "source_path": "windows-driver-docs-pr/nfc/nfp-device-driver-requirements.md",
       "redirect_url": "/windows-hardware/drivers/nfc/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows-driver-docs-pr/powermeter/index.md",
-      "redirect_url": "/windows-hardware/drivers/powermeter/index",
       "redirect_document_id": false
     },
     {
@@ -23638,6 +23623,11 @@
     {
       "source_path": "windows-driver-docs-pr/whea/windows-hardware-error-architecture-overview.md",
       "redirect_url": "/windows-hardware/drivers/whea/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/supporting-direct3d-version-10-1.md",
+      "redirect_url": "/windows-hardware/drivers/display/",
       "redirect_document_id": false
     }
   ]
