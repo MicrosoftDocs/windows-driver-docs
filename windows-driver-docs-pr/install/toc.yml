@@ -118,7 +118,8 @@
       href: installing-an-unsigned-driver-during-development-and-test.md
     - name: Windows Driver Signing Tutorial
       href: windows-driver-signing-tutorial.md
-    - name: 'Appendix 1: Enforcing Kernel-Mode Signature Verification in Kernel Debugging Mode'
+    - name: 'Appendix 1: Enforcing Kernel-Mode Signature Verification in Kernel Debugging
+        Mode'
       href: appendix-1--enforcing-kernel-mode-signature-verification-in-kernel-debugging-mode.md
     - name: 'Appendix 2: Signing Drivers with Visual Studio'
       href: appendix-2--signing-drivers-with-visual-studio.md
@@ -174,7 +175,8 @@
         href: personal-information-exchange---pfx--files.md
       - name: Importing an SPC into a Certificate Store
         href: importing-an-spc-into-a-certificate-store.md
-      - name: Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates
+      - name: Deprecation of Software Publisher Certificates, Commercial Release Certificates,
+          and Commercial Test Certificates
         href: deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md
     - name: Test Signing
       items:
@@ -182,7 +184,8 @@
         href: introduction-to-test-signing.md
       - name: How to Test-Sign a Driver Package
         href: how-to-test-sign-a-driver-package.md
-      - name: How to Install a Test-signed Driver Package Required for Windows Setup and Boot
+      - name: How to Install a Test-signed Driver Package Required for Windows Setup
+          and Boot
         href: how-to-install-test-signed-driver-for-setup-and-boot.md
       - name: Creating Test Certificates
         href: creating-test-certificates.md
@@ -264,7 +267,8 @@
         href: verifying-the-signature-of-a-release-signed-driver-file.md
       - name: Signing a Catalog File with a Commercial Release Certificate
         href: signing-a-catalog-file-with-a-commercial-release-certificate.md
-      - name: Verifying the Signature of a Catalog File Signed by a Commercial Release Certificate
+      - name: Verifying the Signature of a Catalog File Signed by a Commercial Release
+          Certificate
         href: verifying-the-signature-of-a-catalog-file-signed-by-a-commercial-relea.md
       - name: Installing a Release-Signed Catalog File for a Non-PnP Driver
         href: installing-a-release-signed-catalog-file-for-a-non-pnp-driver.md
@@ -390,15 +394,15 @@
         href: handling-windows-messages-for-property-pages.md
       - name: Sample Custom Property Page
         href: sample-custom-property-page.md
-      - name: Specific Requirements for Device Property Page Providers (Property Page Extension DLLs)
+      - name: Specific Requirements for Device Property Page Providers (Property Page
+          Extension DLLs)
         href: specific-requirements-for-device-property-page-providers--property-pag.md
       - name: Specific Requirements for Device Property Page Providers (Co-Installers)
         href: specific-requirements-for-device-property-page-providers--class-instal.md
     - name: Device Properties Dialog Box
       items:
-      - name: Invoking a Device Properties Dialog Box
-        href: invoking-a-device-properties-dialog-box.md
-      - name: Invoking a Device Properties Dialog Box Programmatically in an Installation Application
+      - name: Invoking a Device Properties Dialog Box Programmatically in an Installation
+          Application
         href: invoking-a-device-properties-dialog-box-programmatically-in-an-install.md
       - name: Invoking a Device Properties Dialog Box from a Command-line Prompt
         href: invoking-a-device-properties-dialog-box-from-a-command-line-prompt.md
@@ -552,7 +556,8 @@
         href: enabling-and-disabling-a-device-interface-instance.md
       - name: Using a Device Interface
         href: using-a-device-interface.md
-      - name: Registering for Notification of Device Interface Arrival and Device Removal
+      - name: Registering for Notification of Device Interface Arrival and Device
+          Removal
         href: registering-for-notification-of-device-interface-arrival-and-device-removal.md
     - name: Comparison of Setup Classes and Interface Classes
       href: comparison-of-setup-classes-and-interface-classes.md
@@ -592,12 +597,11 @@
           href: using-the-inf-addproperty-directive-and-the-inf-delproperty-directive.md
     - name: Device Property Model (Windows Server 2003, Windows XP, and Windows 2000)
       items:
-      - name: Device Property Representations (Windows Server 2003, Windows XP, and Windows 2000)
+      - name: Device Property Representations (Windows Server 2003, Windows XP, and
+          Windows 2000)
         href: device-property-representations--windows-server-2003--windows-xp--and-.md
       - name: INF File Entry Values That Modify Device Properties
         href: inf-file-entry-values-that-modify-device-properties.md
-      - name: Using SetupAPI and Configuration Manager to Access Device Properties
-        href: using-setupapi-and-configuration-manager-to-access-device-properties.md
       - name: Accessing Device Instance Properties
         href: accessing-device-instance-spdrp-xxx-properties.md
       - name: Retrieving a Device Instance Identifier
@@ -632,8 +636,6 @@
     items:
     - name: Registry Trees and Keys
       href: registry-trees-and-keys.md
-    - name: Registry Trees for Devices and Drivers
-      href: overview-of-registry-trees-and-keys.md
     - name: HKLM\SYSTEM\CurrentControlSet\Services Registry Tree
       href: hklm-system-currentcontrolset-services-registry-tree.md
     - name: HKLM\SYSTEM\CurrentControlSet\Control Registry Tree
