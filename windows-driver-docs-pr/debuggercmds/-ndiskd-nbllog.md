@@ -97,7 +97,7 @@ For a more detailed description of how to interpret the results of **!ndiskd.nbl
 
 ## See also
 
-[Network Driver Design Guide](../network/index.md)
+[Network Driver Design Guide](../network)
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 

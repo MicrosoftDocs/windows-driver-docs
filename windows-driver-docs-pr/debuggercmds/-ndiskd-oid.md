@@ -114,7 +114,7 @@ In this example, the OID pending is [OID\_GEN\_STATISTICS](../network/oid-gen-st
 
 ## See also
 
-[Network Driver Design Guide](../network/index.md)
+[Network Driver Design Guide](../network)
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 

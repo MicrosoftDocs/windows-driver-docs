@@ -17,7 +17,7 @@ ms.topic: reference
 # GUID_DEVINTERFACE_NET
 
 
-The GUID_DEVINTERFACE_NET [device interface class](./overview-of-device-interface-classes.md) is defined for [network devices](../network/index.md).
+The GUID_DEVINTERFACE_NET [device interface class](./overview-of-device-interface-classes.md) is defined for [network devices](../network).
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Drivers of network devices register instances of this device interface class to 
 
 NDIS registers instances of this interface class for NDIS miniport drivers.
 
-For information about network devices and drivers, see [Network Design Guide](../network/index.md).
+For information about network devices and drivers, see [Network Design Guide](../network).
 
 ## Requirements
 

@@ -22402,7 +22402,7 @@
     },
     {
       "source_path": "windows-driver-docs-pr/acpi/supporting-an-operation-region.md",
-      "redirect_url": "/windows-hardware/drivers/acpi",
+      "redirect_url": "/windows-hardware/drivers/acpi/",
       "redirect_document_id": false
     },
     {
