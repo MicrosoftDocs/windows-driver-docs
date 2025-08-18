@@ -31,7 +31,7 @@ In addition to the terms defined in this table, this document also references te
 | Streaming circuits | One or more **ACXCIRCUIT** objects created by the Vendor Specific Audio Driver Stack for its streaming path. |
 | Profile circuit | An **ACXCIRCUIT** object created by the Bluetooth LE audio profile implementation on Windows. This **ACXCIRCUIT** isn't a streaming circuit. |
 
-This document assumes familiarity with the previously defined terms and the following HCI commands defined in the [Bluetooth Core specification](https://www.bluetooth.com/specifications/specs/core54-html/):
+This article assumes familiarity with the previously defined terms and the following HCI commands defined in the [Bluetooth Core specification](https://www.bluetooth.com/specifications/specs/core54-html/):
 
 - Local Controller Commands
   - HCI_Read_Local_Supported_Codecs (v2)
@@ -251,8 +251,6 @@ Signal processing mode: **Default**
 | 48 kHz | 2 | 16 | 7.5ms | 80 kbps | 48_1 |
 | 48 kHz | 2 | 16 | 10 ms | 96 kbps | 48_4 |
 | 48 kHz | 2 | 16 | 10ms | 80 kbps | 48_2 |
-| 32 kHz | 2 | 16 | 7.5ms | 64 kbps | 32_1 |
-| 32 kHz | 2 | 16 | 10ms | 64 kbps | 32_2 |
 | 24 kHz | 2 | 16 | 7.5ms | 48 kbps | 24_1 |
 | 24 kHz | 2 | 16 | 10ms | 48 kbps | 24_2 |
 
@@ -266,8 +264,6 @@ Signal processing mode: **Default**
 | 48 kHz | 1 | 16 | 7.5ms | 80 kbps | 48_1 |
 | 48 kHz | 1 | 16 | 10ms | 96 kbps | 48_4 |
 | 48 kHz | 1 | 16 | 10ms | 80 kbps | 48_2 |
-| 32 kHz | 1 | 16 | 7.5ms | 64 kbps | 32_1 |
-| 32 kHz | 1 | 16 | 10ms | 64 kbps | 32_2 |
 | 24 kHz | 1 | 16 | 7.5ms | 48 kbps | 24_1 |
 | 24 kHz | 1 | 16 | 10ms | 48 kbps | 24_2 |
 | 16 kHz | 1 | 16 | 7.5ms | 32 kbps | 16_1 |
@@ -359,7 +355,7 @@ The PC is connected to a single audio device that supports stereo render streams
 
 | Use Case | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
-| Voice call | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
+| Voice call | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 1 or 2<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
 | Video game playback with voice chat | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 2<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
 
 ###### Basic audio profile configuration 8(ii)
@@ -442,7 +438,7 @@ The PC is broadcasting stereo audio with each channel transmitting on its own BI
 
 | Use Case | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
-| System sounds, music playback | **Render:**<br>Signal Processing Mode: Default<br>Channel Count: 1<br> | BIS Count: 1<br>BIG Count: 1<br>BAP QoS Settings: High Reliability |
+| System sounds, music playback | **Render:**<br>Signal Processing Mode: Default<br>Channel Count: 2<br> | BIS Count: 1<br>BIG Count: 1<br>BAP QoS Settings: High Reliability |
 | Video game audio | **Render:**<br>Signal Processing Mode: Default<br>Channel Count: 1<br> | BIS Count: 1<br>BIG Count: 1<br>BAP QoS Settings: Low Latency |
 
 ### Data structures
@@ -755,11 +751,9 @@ Bluetooth LE Audio doesn't have any power management requirements or flows outsi
 
 ### Stereo render with mono capture
 
-#### Introduction
+Today's Bluetooth audio experience is convenient but has limitations, especially when compared to wired audio experiences. One key limitation, with user-facing consequences, is the drop to mono audio whenever the microphone is active. This blocks experiences like Spatial Audio in Teams and other VoIP apps from working, and it heavily degrades gaming experiences involving voice chat.
 
-Today's Bluetooth audio experience is convenient but has limitations, especially when compared to wired audio experiences. One key limitation, with user-facing consequnces, is the drop to mono audio whenever the microphone is active. This blocks experiences like Spatial Audio in Teams and other VoIP apps from working, and it heavily degrades gaming experiences involving voice chat.
-
-With Bluetooth LE Audio, we can close that gap with improved audio fidelity and reduced latency for these scenarios by adding support for stereo playback while the microphone is in use.
+Bluetooth LE Audio can close the gap with improved audio fidelity and reduced latency for these scenarios by adding support for stereo playback while the microphone is in use.
 
 #### Render/capture format pairs
 
@@ -800,21 +794,13 @@ Table 5 defines the list of audio formats all IHV solutions shall support:
 
 *<sup>Table 5 Mandatory render/capture format pairs</sup>*
 
-Table 6 lists the more TBD formats Microsoft is considering:
-
-|Entry | (Render_format, Capture_format) |
-|---|---|
-| 1 | { Render(24 kHz, 2 ch), Capture(16 kHz,1 ch) } |
-
-*<sup>Table 6 Additional render/capture format pairs to consider</sup>*
-
 #### Capabilities Advertisement
 
-Depending on whether the Bluetooth controller supports the audio codec involved (default to LC3), an IHV solution advertises the list of render/capture format pairs (see 3.12.1) it supports in different ways. Specifically:
+Depending on whether the Bluetooth controller supports the audio codec involved (default to LC3), an IHV solution advertises the list of render/capture format pairs it supports in different ways. Specifically:
 
-- If the codec is in the Bluetooth controller, both the controller and the IHV ACX streaming driver shall advertise the lists of format pairs independently (see 3.12.3.1 and 3.12.3.2)—if the two lists disagree with each other, Windows shall intersect and keep the common parts.
+- If the codec is in the Bluetooth controller, both the controller and the IHV ACX streaming driver shall advertise the lists of format pairs independently. If the two lists disagree with each other, Windows shall intersect and keep the common parts.
 
-- If the codec isn't in the Bluetooth controller (for example, it is in the audio DSP), only the IHV ACX streaming driver is required to advertise the list of format pairs (see 3.12.3.2).
+- If the codec isn't in the Bluetooth controller (for example, it is in the audio DSP), only the IHV ACX streaming driver is required to advertise the list of format pairs.
 Bluetooth controller
 
 Since the Codec_Capability[i] in the response for an HCI_Read_Local_Supported_Codec_Capabilities doesn't support metadata, the Bluetooth controller is required to support a family of Microsoft-specific codec IDs (see Table 7) such that Windows can query for more codec capabilities, for example, the list of render/capture format pairs, that can't be easily conveyed through the existing HCI interface.
