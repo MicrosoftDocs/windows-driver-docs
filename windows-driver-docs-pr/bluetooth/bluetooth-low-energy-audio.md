@@ -420,7 +420,7 @@ If the remote device or device set supports bidirectional audio, then the config
 
 The following audio configuration is defined in table 4.2 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-12.png" alt-text="Diagram showing basic audio profile configuration 12 with PC connected to a single audio device in mono.":::
+:::image type="content" source="images/bluetooth-audio-profile-configuration-12.png" alt-text="Diagram showing basic audio profile configuration 12 with PC connected to a single audio device in mono.":::
 
 The PC is broadcasting one channel of mono audio.
 
@@ -433,7 +433,7 @@ The PC is broadcasting one channel of mono audio.
 
 The following audio configuration is defined in table 4.2 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-13.png" alt-text="Diagram showing basic audio profile configuration 13 with PC connected to a single audio device in stereo.":::
+:::image type="content" source="images/bluetooth-audio-profile-configuration-13.png" alt-text="Diagram showing basic audio profile configuration 13 with PC connected to a single audio device in stereo.":::
 
 The PC is broadcasting stereo audio with each channel transmitting on its own BIS.
 
