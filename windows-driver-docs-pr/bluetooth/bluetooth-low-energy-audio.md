@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Low Energy (LE) Audio
 description: This article provides an overview of Bluetooth LE Audio introduced in Windows 11 version 22H2 (KB5026446).
-ms.date: 08/18/2025
+ms.date: 05/05/2025
 ms.topic: overview
 ---
 
@@ -369,7 +369,7 @@ The PC is connected to a coordinated set of audio devices. Each set member is re
 
 | Use Case | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
-| Voice call | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
+| Voice call | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 1 or 2<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
 | Video game playback with voice chat | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 2<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
 
 ##### Unicast capture-only configurations
