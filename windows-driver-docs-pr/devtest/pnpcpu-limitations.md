@@ -4,6 +4,7 @@ description: PNPCPU Limitations
 keywords:
 - PNPCPU WDK , limitations
 ms.date: 04/20/2017
+ms.topic: troubleshooting-known-issue
 ---
 
 # PNPCPU Limitations

@@ -14,6 +14,7 @@ keywords:
 - formats WDK audio
 - data formats WDK audio , about audio data formats
 ms.date: 02/15/2017
+ms.topic: concept-article
 ---
 
 # Audio Data Formats

@@ -6,6 +6,7 @@ keywords:
 - audio miniport drivers WDK , function tables
 - miniport drivers WDK audio , function tables
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Function Tables for Miniport Drivers

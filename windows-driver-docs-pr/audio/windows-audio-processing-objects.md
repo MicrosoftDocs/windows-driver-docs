@@ -2,6 +2,7 @@
 title: Windows Audio Processing Objects
 description: Audio processing objects (APOs), provide customizable software based digital signal processing for Windows audio streams.
 ms.date: 10/18/2019
+ms.topic: concept-article
 ---
 
 # Windows Audio Processing Objects

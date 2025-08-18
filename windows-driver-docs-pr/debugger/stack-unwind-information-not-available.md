@@ -3,6 +3,7 @@ title: Stack Unwind Information Not Available
 description: Stack Unwind Information Not Available
 keywords: ["Stack unwind information not available (warning)", "call stack, Stack unwind information not available (warning)"]
 ms.date: 05/23/2017
+ms.topic: troubleshooting-general
 ---
 
 # Stack Unwind Information Not Available

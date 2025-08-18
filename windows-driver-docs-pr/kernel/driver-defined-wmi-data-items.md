@@ -3,6 +3,7 @@ title: Driver-Defined WMI Data Items
 description: Driver-Defined WMI Data Items
 keywords: ["data types WDK WMI", "embedded classes WDK WMI", "data items WDK WMI", "WMI WDK kernel , driver-defined data items", "driver-defined data items WDK WMI", "classes WDK WMI", "WMI WDK kernel , classes"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Driver-Defined WMI Data Items

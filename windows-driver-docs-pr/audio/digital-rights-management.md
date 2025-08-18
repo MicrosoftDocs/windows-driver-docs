@@ -20,6 +20,7 @@ keywords:
 - unauthorized copying WDK audio
 - copy protection WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Digital Rights Management

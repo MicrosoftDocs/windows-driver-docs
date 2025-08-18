@@ -4,6 +4,7 @@ description: vendors can define custom control codes
 keywords:
 - biometric drivers WDK , control codes
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Custom Control Codes

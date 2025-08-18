@@ -3,6 +3,7 @@ title: Symbol Storage Format
 description: Symbol Storage Format
 keywords: ["SymStore, storage format"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Symbol Storage Format

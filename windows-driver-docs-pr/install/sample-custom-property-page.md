@@ -2,6 +2,7 @@
 title: Sample Custom Property Page
 description: Sample Custom Property Page
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Sample Custom Property Page

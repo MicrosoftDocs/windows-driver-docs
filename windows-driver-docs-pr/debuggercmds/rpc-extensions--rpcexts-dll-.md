@@ -3,6 +3,7 @@ title: "RPC Extensions (Rpcexts.dll)"
 description: "RPC Extensions (Rpcexts.dll)"
 keywords: ["RPC extensions (rpcexts.dll), complete listing", "extensions, RPC"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # RPC Extensions (Rpcexts.dll)

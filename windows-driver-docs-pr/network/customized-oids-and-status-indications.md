@@ -9,6 +9,7 @@ keywords:
 - custom status indications WDK networking
 - WMI WDK networking , OID
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Customized OIDs and Status Indications

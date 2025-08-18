@@ -2,6 +2,7 @@
 title: PIO Techniques
 description: PIO Techniques
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # PIO Techniques

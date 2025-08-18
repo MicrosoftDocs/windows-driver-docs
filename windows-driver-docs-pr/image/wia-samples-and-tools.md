@@ -2,6 +2,7 @@
 title: WIA Samples and Tools
 description: WIA Samples and Tools
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # WIA Samples and Tools

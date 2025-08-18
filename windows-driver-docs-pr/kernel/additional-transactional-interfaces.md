@@ -3,6 +3,7 @@ title: Additional Transactional Interfaces
 description: Additional Transactional Interfaces
 keywords: ["transactions WDK KTM , non-KTM interfaces", "transactional interfaces WDK"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Additional Transactional Interfaces

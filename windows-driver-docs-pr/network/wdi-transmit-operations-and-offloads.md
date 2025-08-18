@@ -2,6 +2,7 @@
 title: WDI transmit operations and offloads
 description: WDI operates in one of two Tx modes Port queuing and PeerTID queuing.
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # WDI transmit operations and offloads

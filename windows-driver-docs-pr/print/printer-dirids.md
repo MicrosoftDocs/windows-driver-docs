@@ -8,6 +8,7 @@ keywords:
 - printer dirids WDK
 - identifiers WDK printer
 ms.date: 01/30/2023
+ms.topic: reference
 ---
 
 # Printer Dirids

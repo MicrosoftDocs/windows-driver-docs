@@ -3,6 +3,7 @@ title: Test Signing
 description: Windows 64-bit editions require all software running in kernel mode, including drivers, to be digitally signed in order to be loaded.
 ms.date: 05/08/2023
 ms.topic: concept-article
+ms.custom: sfi-image-nochange
 ---
 
 # Test Signing

@@ -2,6 +2,7 @@
 title: NetworkingInfo
 description: Provides networking information the user or administrator can set to personalize their device.
 ms.date: 08/31/2021
+ms.topic: reference
 ---
 
 # NetworkingInfo

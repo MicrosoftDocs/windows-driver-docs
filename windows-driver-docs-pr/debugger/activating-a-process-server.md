@@ -10,6 +10,7 @@ api_name:
 - Activating a Process Server
 api_type:
 - NA
+ms.custom: sfi-ropc-nochange
 ---
 
 # Activating a Process Server

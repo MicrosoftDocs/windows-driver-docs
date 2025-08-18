@@ -7,6 +7,7 @@ keywords:
 - Device Metadata Authoring Wizard documentation
 - Device Metadata Authoring Tool documentation
 ms.date: 06/24/2025
+ms.topic: overview
 ---
 
 # Device Metadata Authoring Wizard

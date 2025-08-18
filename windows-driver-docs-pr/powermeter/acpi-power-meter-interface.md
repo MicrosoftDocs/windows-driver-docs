@@ -5,6 +5,7 @@ keywords:
 - Power Metering and Budgeting WDK , ACPI Power Meter Interface (PMI)
 - ACPI Power Meter Interface WDK
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # ACPI Power Meter Interface

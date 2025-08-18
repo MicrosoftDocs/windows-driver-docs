@@ -2,6 +2,7 @@
 title: Interfaces for Segmentation Filters
 description: Interfaces for Segmentation Filters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Interfaces for Segmentation Filters

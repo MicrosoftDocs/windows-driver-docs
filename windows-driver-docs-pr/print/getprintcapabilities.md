@@ -4,6 +4,7 @@ description: The IPrintTicketProvider GetPrintCapabilities method must return a 
 keywords:
 - GetPrintCapabilities
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # GetPrintCapabilities

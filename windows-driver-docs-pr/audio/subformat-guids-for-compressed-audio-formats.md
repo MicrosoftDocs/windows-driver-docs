@@ -2,6 +2,7 @@
 title: Subformat GUIDs for Compressed Audio Formats
 description: Subformat GUIDs for Compressed Audio Formats
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Subformat GUIDs for Compressed Audio Formats

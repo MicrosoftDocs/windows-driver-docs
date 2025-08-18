@@ -5,6 +5,7 @@ keywords:
 - root-level-only attributes WDK Unidrv
 - general printer attributes WDK Unidrv, root-level-only
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Root-level-only attributes

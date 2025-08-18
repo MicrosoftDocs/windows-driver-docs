@@ -4,6 +4,7 @@ description: The TCP/IP Installed construct contains the object ID (OID) of the 
 keywords:
 - Installed construct
 ms.date: 06/26/2023
+ms.topic: reference
 ---
 
 # Installed (TCP/IP)

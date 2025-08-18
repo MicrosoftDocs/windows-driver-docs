@@ -2,6 +2,7 @@
 title: Scan Service (WS-SCAN)
 description: Scan Service (WS-SCAN)
 ms.date: 05/17/2018
+ms.topic: overview
 ---
 
 # Scan Service (WS-SCAN)

@@ -6,6 +6,7 @@ keywords:
 - audio properties WDK video capture
 - PROPSETID_VIDCAP_TVAUDIO
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # TV Audio Properties

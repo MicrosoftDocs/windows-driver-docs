@@ -2,6 +2,7 @@
 title: U1 and U2 Transitions
 description: This topic first describes the initial setup that is done by the software to enable U1 and U2 transitions, and then describes how these transitions occur in the hardware.
 ms.date: 01/17/2024
+ms.topic: concept-article
 ---
 
 # U1 and U2 transitions

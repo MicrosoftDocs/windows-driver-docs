@@ -7,6 +7,7 @@ keywords:
 - user-mode execution WDK printer graphics
 - kernel-mode execution WDK printer graphics
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # Choose user mode or kernel mode

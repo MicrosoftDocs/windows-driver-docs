@@ -2,6 +2,7 @@
 title: AllowStandardUserPinUnlock
 description: AllowStandardUserPinUnlock
 ms.date: 10/13/2023
+ms.topic: reference
 ---
 
 # AllowStandardUserPinUnlock

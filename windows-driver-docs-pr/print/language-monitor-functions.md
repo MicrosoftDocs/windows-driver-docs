@@ -4,6 +4,7 @@ description: Provides a list of functions that a language monitor must define.
 keywords:
 - language monitors WDK print, functions
 ms.date: 09/08/2022
+ms.topic: reference
 ---
 
 # Language monitor functions

@@ -1,9 +1,5 @@
-- name: Network Driver Design Guide
-  href: index.md
 - name: Introduction to Network Drivers
   items:
-  - name: Introduction to Network Drivers Topics
-    href: introduction-to-network-drivers.md
   - name: Roadmap for Developing NDIS Drivers
     href: roadmap-for-developing-ndis-drivers.md
   - name: Using the Network Driver Design Guide
@@ -212,10 +208,6 @@
         href: power-management-enhancements-in-ndis-6-30.md
       - name: Quality of Service (QoS) Support in NDIS 6.30
         href: quality-of-service--qos--support-in-ndis-6-30.md
-      - name: Windows Filtering Platform Enhancements in NDIS 6.30
-        href: windows-filtering-platform-enhancements-in-ndis-6-30.md
-      - name: Scalable Networking Enhancements in NDIS 6.30
-        href: scalable-networking-enhancements-in-ndis-6-30.md
       - name: Implementing an NDIS 6.30 Driver
         href: implementing-an-ndis-6-30-driver.md
       - name: Using NDIS 6.30 Data Structures
@@ -268,8 +260,6 @@
         href: ndis-6-0-design-objectives.md
       - name: Enhanced Performance and Scalability in NDIS 6.0
         items:
-        - name: Enhanced Performance and Scalability
-          href: enhanced-performance-and-scalability.md
         - name: NET_BUFFER Data Packaging
           href: net-buffer-data-packaging.md
         - name: Improved Send and Receive Paths
@@ -286,8 +276,6 @@
           href: full-tcp-offload.md
       - name: Simplified Driver Model in NDIS 6.0
         items:
-        - name: Simplified Driver Model
-          href: simplified-driver-model.md
         - name: Easier Initialization
           href: easier-initialization.md
         - name: Versioned Interfaces
@@ -350,7 +338,8 @@
         href: ndis-6-30-backward-compatibility.md
       - name: Summary of Changes Required to Port a Miniport Driver to NDIS 6.30
         href: summary-of-changes-required-to-port-a-miniport-driver-to-ndis-6-30.md
-      - name: Summary of Changes Required to Port a Protocol or Filter Driver to NDIS 6.30
+      - name: Summary of Changes Required to Port a Protocol or Filter Driver to NDIS
+          6.30
         href: summary-of-changes-required-to-port-a-protocol-or-filter-driver-to-ndis-6-30.md
       - name: Summary of Changes Required to Port an Intermediate Driver to NDIS 6.30
         href: summary-of-changes-required-to-port-an-intermediate-driver-to-ndis-6-30.md
@@ -474,7 +463,8 @@
         href: miniport-adapter-check-for-hang-and-reset-operations.md
       - name: Miniport Adapter Shutdown
         href: miniport-adapter-shutdown.md
-    - name: Obtaining and Setting Miniport Driver Information and NDIS Support for WMI
+    - name: Obtaining and Setting Miniport Driver Information and NDIS Support for
+        WMI
       items:
       - name: NDIS Management Information and OIDs
         href: ndis-management-information-and-oids.md
@@ -644,8 +634,6 @@
         href: installing-ndis-wdm-miniport-drivers.md
     - name: WAN Miniport Drivers
       items:
-      - name: Overview of WAN Miniport Drivers
-        href: wan-miniport-drivers.md
       - name: Choosing a WAN Driver Model
         items:
         - name: WAN Driver Models
@@ -674,8 +662,6 @@
           href: ndproxy-overview.md
       - name: Writing CoNDIS WAN Miniport Drivers
         items:
-        - name: Implementing CoNDIS WAN Miniport Drivers
-          href: implementing-condis-wan-miniport-drivers.md
         - name: WAN-Specific Capabilities of CoNDIS WAN Drivers
           href: wan-specific-capabilities-of-condis-wan-drivers.md
         - name: Registering CoNDIS WAN Drivers
@@ -714,7 +700,8 @@
             href: specifying-parameters-for-an-outgoing-call.md
           - name: Specifying Parameters for an Incoming Call
             href: specifying-parameters-for-an-incoming-call.md
-        - name: Non-WAN-Specific Extensions to Support Telephonic Services Over Connection-Oriented NDIS
+        - name: Non-WAN-Specific Extensions to Support Telephonic Services Over Connection-Oriented
+            NDIS
           href: non-wan-specific-extensions-to-support-telephonic-services-over-connec.md
       - name: WAN Packet Framing
         items:
@@ -952,9 +939,11 @@
         href: intermediate-driver-network-data-management.md
       - name: Receiving Data in an Intermediate Driver
         items:
-        - name: Receiving Data in an Intermediate Driver with a Connectionless Lower Edge
+        - name: Receiving Data in an Intermediate Driver with a Connectionless Lower
+            Edge
           href: receiving-data-in-an-intermediate-driver-with-a-connectionless-lower-e.md
-        - name: Receiving Data in an Intermediate Driver with a Connection-Oriented Lower Edge
+        - name: Receiving Data in an Intermediate Driver with a Connection-Oriented
+            Lower Edge
           href: receiving-data-in-an-intermediate-driver-with-a-connection-oriented-lo.md
         - name: Indicating Receive Network Data to Higher Level Drivers
           href: indicating-receive-network-data-to-higher-level-drivers.md
@@ -962,9 +951,11 @@
         href: transmitting-network-data-through-an-intermediate-driver.md
       - name: Intermediate Driver PnP Events and Power Management Events
         items:
-        - name: Handling PnP Events and Power Management Events in an Intermediate Driver
+        - name: Handling PnP Events and Power Management Events in an Intermediate
+            Driver
           href: handling-pnp-events-and-power-management-events-in-an-intermediate-dri.md
-        - name: Initializing Intermediate Drivers to Handle PnP and Power Management Events
+        - name: Initializing Intermediate Drivers to Handle PnP and Power Management
+            Events
           href: initializing-intermediate-drivers-to-handle-pnp-and-power-management-events.md
         - name: Handling OID_PNP_Xxx Queries and Sets
           href: handling-oid-pnp-xxx-queries-and-sets.md
@@ -1260,12 +1251,8 @@
     items:
     - name: Power Management for NDIS 6.30
       items:
-      - name: Power Management (NDIS 6.30)
-        href: power-management--ndis-6-30-.md
       - name: NDIS Packet Coalescing
         items:
-        - name: Introduction to NDIS Packet Coalescing
-          href: ndis-packet-coalescing.md
         - name: Overview of Packet Coalescing
           href: overview-of-packet-coalescing.md
         - name: Packet Coalescing Receive Filters
@@ -1412,8 +1399,6 @@
         href: avoiding-ndis-power-management-problems.md
   - name: NDIS QoS for Data Center Bridging
     items:
-    - name: Introduction to NDIS QoS for Data Center Bridging
-      href: ndis-qos-for-data-center-bridging.md
     - name: Overview of Data Center Bridging
       href: overview-of-data-center-bridging.md
     - name: Overview of NDIS QoS for Data Center Bridging
@@ -1544,7 +1529,8 @@
             href: adding-service-related-values-to-the-ndi-key.md
           - name: Specifying Binding Interfaces
             href: specifying-binding-interfaces.md
-          - name: Specifying Configuration Parameters for the Advanced Properties Page
+          - name: Specifying Configuration Parameters for the Advanced Properties
+              Page
             href: specifying-configuration-parameters-for-the-advanced-properties-page.md
           - name: Specifying Custom Property Pages for Network Adapters
             href: specifying-custom-property-pages-for-network-adapters.md
@@ -1604,8 +1590,6 @@
           href: configuring-the-network.md
       - name: Notify Object Creation
         items:
-        - name: Creating a Notify Object
-          href: creating-a-notify-object.md
         - name: Loading the Notify Object DLL and Class Object
           href: loading-the-notify-object-dll-and-class-object.md
         - name: Defining a Notify Class
@@ -1858,11 +1842,13 @@
       href: networkdirect-disconnect-scheme.md
     - name: NDKPI Deferred Processing Scheme
       href: ndkpi-deferred-processing-scheme.md
-  - name: Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
+  - name: Network Virtualization using Generic Routing Encapsulation (NVGRE) Task
+      Offload
     items:
     - name: Network Virtualization using Generic Routing Encapsulation (NVGRE)
       href: network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md
-    - name: Overview of Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
+    - name: Overview of Network Virtualization using Generic Routing Encapsulation
+        (NVGRE) Task Offload
       href: overview-of-network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md
     - name: Supporting NVGRE in Large Send Offload (LSO)
       href: supporting-nvgre-in-large-send-offload--lso-.md
@@ -1872,7 +1858,8 @@
       href: supporting-nvgre-in-checksum-offload.md
     - name: Supporting NVGRE in RSS and VMQ Receive Task Offloads
       href: supporting-nvgre-in-rss-and-vmq-receive-task-offloads.md
-    - name: Locating the Transport Header for Encapsulated Packets in the Receive Path
+    - name: Locating the Transport Header for Encapsulated Packets in the Receive
+        Path
       href: locating-the-transport-header-for-encapsulaged-packets-in-the-receive-path.md
     - name: Determining the NVGRE Task Offload Capabilities of a Network Adapter
       href: determining-the-nvgre-task-offload-capabilities-of-a-network-adapter.md
@@ -2040,8 +2027,6 @@
         href: ndis-status-pd-current-config.md
 - name: Virtualized Networking
   items:
-  - name: Virtualized Networking Topics
-    href: virtualized-networking.md
   - name: Virtualized Networking Concepts and Terms
     href: virtualized-networking-concepts-and-terms.md
   - name: Overview of Virtualized Networking
@@ -2080,8 +2065,6 @@
           href: virtual-ports--vports-.md
       - name: SR-IOV Data Paths and Failover
         items:
-        - name: SR-IOV Data Paths
-          href: sr-iov-data-paths.md
         - name: Overview of SR-IOV Data Paths
           href: overview-of-sr-iov-data-paths.md
         - name: SR-IOV VF Data Path
@@ -2092,12 +2075,8 @@
           href: sr-iov-vf-failover-and-live-migration-support.md
     - name: Writing SR-IOV PF Miniport Drivers
       items:
-      - name: Writing SR-IOV PF Miniport Drivers Overview
-        href: writing-sr-iov-pf-miniport-drivers.md
       - name: PF Miniport Driver Initialization
         items:
-        - name: Initializing a PF Miniport Driver Topics
-          href: initializing-a-pf-miniport-driver.md
         - name: Determining SR-IOV Capabilities
           href: determining-sr-iov-capabilities.md
         - name: Determining NIC Switch Capabilities
@@ -2152,8 +2131,6 @@
           href: setting-the-parameters-of-a-virtual-port.md
         - name: Virtual Port Receive Filter Management
           items:
-          - name: Managing the Receive Filters for a Virtual Port
-            href: managing-receive-filters-for-a-virtual-port.md
           - name: Setting a Receive Filter on a Virtual Port
             href: setting-a-receive-filter-on-a-virtual-port.md
           - name: Clearing a Receive Filter on a Virtual Port
@@ -2230,8 +2207,6 @@
           href: handling-sr-iov--vmq--and-rss-standardized-inf-keywords.md
     - name: Writing SR-IOV VF Miniport Drivers
       items:
-      - name: Writing SR-IOV VF Miniport Drivers Overview
-        href: writing-sr-iov-vf-miniport-drivers.md
       - name: Initializing a VF Miniport Driver
         href: initializing-a-vf-miniport-driver.md
       - name: Halting a VF Miniport Driver
@@ -2292,8 +2267,6 @@
         href: vmq-interrupt-requirements.md
       - name: VM Queue Allocation and Freeing
         items:
-        - name: Allocating and Freeing VM Queues
-          href: allocating-and-freeing-vm-queues.md
         - name: Allocating a VM Queue
           href: allocating-a-vm-queue.md
         - name: Freeing a VM Queue
@@ -2304,8 +2277,6 @@
           href: enumerating-the-allocated-queues.md
       - name: VMQ Filters
         items:
-        - name: Setting and Clearing VMQ Filters
-          href: setting-and-clearing-vmq-filters.md
         - name: Setting a VMQ Filter
           href: setting-a-vmq-filter.md
         - name: Clearing a VMQ Filter
@@ -2316,8 +2287,6 @@
         href: obtaining-and-updating-vm-queue-parameters.md
       - name: Transferring network data with VMQ
         items:
-        - name: VMQ Send and Receive Operations
-          href: vmq-send-and-receive-operations.md
         - name: VMQ Filter Operations
           href: vmq-filter-operations.md
         - name: Shared Memory in Receive Buffers
@@ -2338,8 +2307,6 @@
       href: overview-of-the-hyper-v-extensible-switch.md
     - name: Hyper-V Extensible Switch Architecture
       items:
-      - name: Hyper-V Extensible Switch Architecture Topics
-        href: hyper-v-extensible-switch-architecture.md
       - name: Hyper-V Extensible Switch Components
         items:
         - name: Hyper-V Extensible Switch Components Overview
@@ -2370,8 +2337,6 @@
             href: operational-ports.md
         - name: Hyper-V Extensible Switch Network Adapters Topics
           items:
-          - name: Hyper-V Extensible Switch Network Adapters
-            href: hyper-v-extensible-switch-network-adapters.md
           - name: Overview of Hyper-V Extensible Switch Network Adapters
             href: overview-of-hyper-v-extensible-switch-network-adapters.md
           - name: External Network Adapters
@@ -2458,8 +2423,6 @@
           href: hyper-v-extensible-switch-live-migration-support.md
     - name: Writing Hyper-V Extensible Switch Extensions
       items:
-      - name: Writing Hyper-V Extensible Switch Extensions Topics
-        href: writing-hyper-v-extensible-switch-extensions.md
       - name: Transferring Network Data with Hyper-V Extensible Switch
         items:
         - name: Hyper-V Extensible Switch Send and Receive Operations
@@ -2476,7 +2439,8 @@
           href: hyper-v-extensible-switch-oid-requests.md
         - name: Querying the Hyper-V Extensible Switch Configuration
           href: querying-the-hyper-v-extensible-switch-configuration.md
-        - name: Receiving OID Requests about Hyper-V Extensible Switch Configuration Changes
+        - name: Receiving OID Requests about Hyper-V Extensible Switch Configuration
+            Changes
           href: receiving-oid-requests-about-hyper-v-extensible-switch-configuration-changes.md
         - name: Forwarding OID Requests from a Hyper-V Child Partition
           href: forwarding-oid-requests-from-a-hyper-v-child-partition.md
@@ -2874,11 +2838,10 @@
         href: ndis-status-wwan-visible-providers.md
     - name: Supplemental MB Documentation
       items:
-      - name: Supplemental MB Documentation Topics
-        href: supplemental-mb-documentation.md
       - name: HOST Shutdown Device Service
         href: host-shutdown-device-service.md
-      - name: IHV Guidance for Implementing Multimode and Multicarrier Capable MB Devices
+      - name: IHV Guidance for Implementing Multimode and Multicarrier Capable MB
+          Devices
         href: ihv-guidance-for-implementing-multimode-and-multicarrier-capable-mb-devices.md
       - name: Mobile Broadband Device Firmware Update
         href: mobile-broadband-device-firmware-update.md
@@ -2946,8 +2909,6 @@
         href: wdi-rx-path.md
       - name: WDI TX path
         href: wdi-tx-path.md
-      - name: WDI datapath operation sequence diagrams
-        href: wdi-datapath-operation-sequence-diagrams.md
     - name: IHV component in the WDI model
       items:
       - name: IHV component for WDI model
@@ -2976,8 +2937,6 @@
           href: user-initiated-feedback-repro-mode.md
     - name: WDI TLV generator/parser
       items:
-      - name: WDI TLV generator/parser topics
-        href: wdi-tlv-generator-parser.md
       - name: WDI TLV parser interface overview
         href: wdi-tlv-parser-interface-overview.md
       - name: WDI TLV generator interface overview
@@ -3664,8 +3623,6 @@
         href: wdi-tlv-wfd-association-status.md
     - name: WDI USB Selective Suspend
       items:
-      - name: WDI USB Selective Suspend Topics
-        href: wdi-usb-selective-suspend.md
       - name: WDI NDIS idle detection
         href: wdi-ndis-idle-detection.md
       - name: WDI and WLAN Selective Suspend capability
@@ -3680,8 +3637,6 @@
         href: wdi-usb-remote-wake-sequence.md
     - name: WDI design guide
       items:
-      - name: WDI design guide topics
-        href: wdi-design-guide.md
       - name: WDI low latency connection quality
         href: wdi-low-latency-connection-quality.md
       - name: WDI Extended channel switch announcement (ECSA)
@@ -3934,16 +3889,12 @@
       href: wdi-doc-change-history.md
   - name: Native 802.11 IHV Extensions
     items:
-    - name: Native 802.11 IHV Extensions Topics
-      href: native-802-11-ihv-extensions.md
     - name: Overview of IHV Extensibility
       href: overview-of-ihv-extensibility.md
     - name: Installing Native 802.11 IHV Extensions
       href: installing-native-802-11-ihv-extensions.md
     - name: Native 802.11 IHV Extensions DLL
       items:
-      - name: Native 802.11 IHV Extensions DLL Topics
-        href: native-802-11-ihv-extensions-dll4.md
       - name: Native 802.11 IHV Extensions DLL Overview
         href: native-802-11-ihv-extensions-dll-overview.md
       - name: Native 802.11 IHV Extensibility Functions
@@ -3962,8 +3913,6 @@
           href: dll-stop-operations.md
       - name: 802.11 WLAN Adapter Management
         items:
-        - name: 802.11 WLAN Adapter Management Topics
-          href: 802-11-wlan-adapter-management.md
         - name: 802.11 WLAN Adapter Arrival
           href: 802-11-wlan-adapter-arrival.md
         - name: 802.11 WLAN Adapter Removal
@@ -4030,8 +3979,6 @@
         href: virtual-station.md
     - name: Native 802.11 IHV UI Extensions DLL
       items:
-      - name: Native 802.11 IHV UI Extensions DLL Topics
-        href: native-802-11-ihv-ui-extensions-dll2.md
       - name: Windows SDK References
         href: windows-sdk-references.md
       - name: Native 802.11 IHV UI Extensions DLL Overview
@@ -4070,8 +4017,6 @@
           href: accessing-profile-and-context-data.md
   - name: Wi-Fi Hotspot Offloading Guide
     items:
-    - name: Wi-Fi Hotspot Offloading Overview
-      href: wi-fi-hotspot-offloading-guide.md
     - name: Wi-Fi Hotspot Offloading Architecture
       href: wi-fi-hotspot-offloading-architecture.md
     - name: Wi-Fi Hotspot Offloading Plugin
@@ -4172,8 +4117,6 @@
           href: ehs-update-result.md
 - name: Network Module Registrar
   items:
-  - name: Network Module Registrar Topics
-    href: network-module-registrar2.md
   - name: Introduction to the Network Module Registrar
     href: introduction-to-the-network-module-registrar.md
   - name: Network Module Registrar Definitions
@@ -4228,8 +4171,6 @@
     href: introduction-to-winsock-kernel.md
   - name: Winsock Kernel Overview
     items:
-    - name: Winsock Kernel Overview Topics
-      href: winsock-kernel-overview.md
     - name: Winsock Kernel Architecture
       href: winsock-kernel-architecture.md
     - name: Winsock Kernel Objects
@@ -4248,8 +4189,6 @@
       href: using-irps-with-winsock-kernel-functions.md
   - name: Winsock Kernel Operations
     items:
-    - name: Winsock Kernel Operations Topics
-      href: winsock-kernel-operations.md
     - name: Registering a Winsock Kernel Application
       href: registering-a-winsock-kernel-application.md
     - name: Performing Control Operations on a Client Object
@@ -4268,8 +4207,6 @@
       href: establishing-a-connection-with-a-destination.md
     - name: Transferring network data over WSK sockets
       items:
-      - name: Sending and receiving data over WSK sockets
-        href: sending-and-receiving-data.md
       - name: Sending Data over a Datagram Socket
         href: sending-data-over-a-datagram-socket.md
       - name: Receiving Data over a Datagram Socket
@@ -4582,12 +4519,8 @@
     href: windows-filtering-platform-architecture-overview.md
   - name: Callout Driver Operations
     items:
-    - name: Callout Driver Operation Topics
-      href: callout-driver-operations.md
     - name: Callout Driver Initialization
       items:
-      - name: Initializing a Callout Driver
-        href: initializing-a-callout-driver.md
       - name: Specifying an Unload Function
         href: specifying-an-unload-function.md
       - name: Creating a Device Object
@@ -4670,8 +4603,6 @@
       href: closing-a-session-to-the-filter-engine.md
   - name: Windows Filtering Platform identifiers
     items:
-    - name: Windows Filtering Platform constants
-      href: windows-filtering-platform-constants.md
     - name: Built-in callout identifiers
       href: built-in-callout-identifiers.md
     - name: Filtering layer identifiers
@@ -4726,8 +4657,6 @@
     href: system-area-networks.md
   - name: Supporting System Area Networks
     items:
-    - name: Supporting System Area Networks Topics
-      href: supporting-system-area-networks.md
     - name: Introduction to System Area Networks
       href: introduction-to-system-area-networks.md
     - name: Using a SAN with Windows Sockets Applications
@@ -4858,8 +4787,6 @@
       href: types-of-remote-ndis-devices.md
   - name: RNDIS Communication
     items:
-    - name: Remote NDIS Communication
-      href: remote-ndis-communication.md
     - name: RNDIS Control Messages
       items:
       - name: REMOTE_NDIS_INITIALIZE_MSG
@@ -5724,7 +5651,5 @@
   items:
   - name: Network Drivers Prior to Windows Vista
     href: network-drivers-prior-to-windows-vista.md
-  - name: Native 802.11 Wireless LAN Drivers
-    href: native-802-11-wireless-lan-drivers.md
   - name: Cellular COM API Reference
     href: cellular-com-api-reference.md

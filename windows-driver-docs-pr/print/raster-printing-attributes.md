@@ -5,6 +5,7 @@ keywords:
 - raster printing attributes WDK Unidrv
 - general printer attributes WDK Unidrv , raster
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Raster Printing Attributes

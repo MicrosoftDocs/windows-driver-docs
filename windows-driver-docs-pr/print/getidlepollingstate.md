@@ -4,6 +4,7 @@ description: GetIdlePollingState
 keywords:
 - GetIdlePollingState
 ms.date: 06/22/2023
+ms.topic: reference
 ---
 
 # GetIdlePollingState

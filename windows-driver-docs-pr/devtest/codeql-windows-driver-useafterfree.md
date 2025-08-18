@@ -2,6 +2,7 @@
 title: UseAfterFree (Windows Driver CodeQL Query)
 description: UseAfterFree, High Precision a Supplemental Windows Driver CodeQL Query
 ms.date: 01/11/2021
+ms.topic: best-practice
 ---
 
 # UseAfterFree (Windows Driver CodeQL Query)

@@ -10,6 +10,7 @@ keywords:
 - PresentDXGI and XR_BIAS WDK Windows 7 display
 - BltDXGI and XR_BIAS WDK Windows 7 display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Extended Format Aware Requirements

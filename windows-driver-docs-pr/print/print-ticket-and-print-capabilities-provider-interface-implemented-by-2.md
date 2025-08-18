@@ -7,6 +7,7 @@ keywords:
 - Print Capabilities WDK , printer interface DLL
 - Print Tickets WDK , printer interface DLL
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print Ticket and Print Capabilities Provider Interface Implemented by Printer Drivers

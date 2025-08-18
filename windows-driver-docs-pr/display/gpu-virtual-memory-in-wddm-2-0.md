@@ -5,6 +5,7 @@ keywords:
 - GPU virtual memory, WDDM
 - GPU virtual addressing, WDDM
 ms.date: 04/24/2025
+ms.topic: concept-article
 ---
 
 # GPU virtual memory in WDDM 2.0

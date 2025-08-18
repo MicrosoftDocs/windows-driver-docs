@@ -3,6 +3,7 @@ title: MOF Syntax for WMI Data and Event Blocks
 description: MOF Syntax for WMI Data and Event Blocks
 keywords: ["WMI WDK kernel , event blocks", "event blocks WDK WMI", "data blocks WDK WMI", "WMI WDK kernel , data blocks", "blocks WDK WMI", "MOF files WDK WMI"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # MOF Syntax for WMI Data and Event Blocks

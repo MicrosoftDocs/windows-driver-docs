@@ -7,6 +7,7 @@ keywords:
 - minidrivers WDK Windows 2000 Kernel Streaming , debugging
 - debugging stream class minidrivers WDK Windows 2000 Kernel
 ms.date: 04/20/2017
+ms.topic: troubleshooting
 ---
 
 # Stream Class Debugging

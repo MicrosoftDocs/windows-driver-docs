@@ -2,6 +2,7 @@
 title: Hyper-V Extensible Switch control path for NDIS status indication
 description: Hyper-V Extensible Switch Control Path for NDIS Status Indications
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Hyper-V Extensible Switch Control Path for NDIS Status Indications

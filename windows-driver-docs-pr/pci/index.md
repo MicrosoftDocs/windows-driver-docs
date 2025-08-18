@@ -13,6 +13,7 @@ keywords:
 - querying power management capability data
 - headers WDK PCI
 ms.date: 09/26/2024
+ms.topic: concept-article
 ---
 
 # PCI driver programming guide

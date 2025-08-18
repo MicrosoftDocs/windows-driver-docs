@@ -10,6 +10,7 @@ api_name:
 - Activating a Debugging Server
 api_type:
 - NA
+ms.custom: sfi-ropc-nochange
 ---
 
 # Activating a Debugging Server

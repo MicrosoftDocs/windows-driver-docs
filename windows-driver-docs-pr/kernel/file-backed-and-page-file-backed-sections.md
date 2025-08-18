@@ -3,6 +3,7 @@ title: File-Backed and Page-File-Backed Sections
 description: File-Backed and Page-File-Backed Sections
 keywords: ["file-backed sections WDK kernel", "page-file-backed sections WDK kernel", "backed memory sections WDK kernel", "paged file backups WDK kernel", "temporarily shared data WDK kernel", "permanently shared data WDK kernel", "memory sections WDK kernel", "section objects WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # File-Backed and Page-File-Backed Sections

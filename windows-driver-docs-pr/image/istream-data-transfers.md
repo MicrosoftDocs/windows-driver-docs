@@ -2,6 +2,7 @@
 title: IStream Data Transfers
 description: IStream Data Transfers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # IStream Data Transfers

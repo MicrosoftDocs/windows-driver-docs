@@ -4,6 +4,7 @@ description: DirectMusic Stream Data Format
 keywords:
 - DirectMusic WDK audio , stream data formats
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # DirectMusic Stream Data Format

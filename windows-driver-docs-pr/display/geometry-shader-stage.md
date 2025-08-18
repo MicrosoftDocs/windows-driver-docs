@@ -2,6 +2,7 @@
 title: Geometry Shader Stage
 description: Geometry Shader Stage
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Geometry Shader Stage

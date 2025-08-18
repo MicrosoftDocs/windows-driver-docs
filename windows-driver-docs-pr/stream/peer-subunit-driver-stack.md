@@ -13,6 +13,7 @@ keywords:
 - command targets WDK AV/C
 - Avc.sys function driver WDK , driver stacks
 ms.date: 01/06/2025
+ms.topic: concept-article
 ---
 
 # Peer subunit driver stack

@@ -2,6 +2,7 @@
 title: History of Storport
 description: History of Storport
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # History of Storport

@@ -2,6 +2,7 @@
 title: Get Firmware Info (Function Index 26)
 description: This function retrieves information about a firmware image slot.
 ms.date: 11/18/2022
+ms.topic: reference
 ---
 
 # Get Firmware Info (Function Index 26)

@@ -2,6 +2,7 @@
 title: MSBuild Primer for WDK Developers
 description: This section introduces some basic MSBuild terminology to WDK developers, who are familiar with Build.exe and NMake.exe. This section shows the construction of simple MSBuild projects.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # MSBuild primer for WDK developers

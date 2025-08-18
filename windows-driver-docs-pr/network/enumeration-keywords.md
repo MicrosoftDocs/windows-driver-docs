@@ -4,7 +4,8 @@ description: Enumeration Keywords
 keywords:
 - installation keywords WDK networking , enumeration keywords
 - enumeration keywords WDK NDIS miniport
-ms.date: 4/08/2020
+ms.date: 07/23/2025
+ms.topic: concept-article
 ---
 
 # Enumeration Keywords
@@ -74,12 +75,12 @@ Otherwise, if the Rx flag is disabled, the miniport driver should not copy the r
 If the Tx flag is enabled on the transmit path, the miniport driver should do the following:
 
 - Insert the 802.1Q header into each outgoing packet and fill it up with the data from OOB (if any non-zero data exists in OOB).
-- Advertise appropriate **MacOptions** in [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) (**NDIS\_MAC\_OPTION\_8021P\_PRIORITY** and **NDIS\_MAC\_OPTION\_8021Q\_VLAN**).
+- Advertise appropriate **MacOptions** in [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) (**NDIS\_MAC\_OPTION\_8021P\_PRIORITY** and **NDIS\_MAC\_OPTION\_8021Q\_VLAN**).
 
 Otherwise, if the Tx flag is disabled, then:
 
 - The miniport filter should not honor 802.1Q information in OOB (and therefore not insert any tag).
-- The miniport filter should not advertise appropriate **MacOptions** in [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes).
+- The miniport filter should not advertise appropriate **MacOptions** in [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes).
 
 **Note**  If the miniport driver supports NDIS quality of service (QoS), it must also read the **\*QOS** keyword value. Based on the **\*QOS** keyword value, the **\*PriorityVLANTag** keyword values are interpreted differently. For more information, see [Standardized INF Keywords for NDIS QoS](standardized-inf-keywords-for-ndis-qos.md).
 

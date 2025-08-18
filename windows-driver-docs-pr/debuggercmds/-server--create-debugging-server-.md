@@ -10,6 +10,7 @@ api_name:
 - .server (Create Debugging Server)
 api_type:
 - NA
+ms.custom: sfi-ropc-nochange
 ---
 
 # .server (Create Debugging Server)

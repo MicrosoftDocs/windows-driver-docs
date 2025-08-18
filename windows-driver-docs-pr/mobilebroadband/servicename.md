@@ -2,6 +2,7 @@
 title: ServiceName
 description: ServiceName
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # ServiceName

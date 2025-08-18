@@ -2,6 +2,7 @@
 title: Features not carried over in WDI
 description: The following features are available in the previous Native WLAN driver model, but are not available in WDI.
 ms.date: 03/02/2023
+ms.topic: release-notes
 ---
 
 # Features not carried over in WDI

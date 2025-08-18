@@ -2,6 +2,7 @@
 title: Te.exe Command Options
 description: Te.exe Command Options
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Te.exe Command Options

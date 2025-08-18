@@ -4,6 +4,7 @@ description: Learn about the Callback notifications support by the Mobile Plans 
 keywords:
 - Windows Mobile Plans Callback notifications, Mobile Plans implementation mobile operators
 ms.date: 10/06/2023
+ms.topic: concept-article
 ---
 
 # Mobile Plans callback notifications

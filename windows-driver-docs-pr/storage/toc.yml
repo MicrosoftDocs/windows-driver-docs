@@ -90,8 +90,6 @@
         href: queuing-storage-requests.md
     - name: Internal Routines
       items:
-      - name: Overview
-        href: storage-class-driver-s-internal-routines.md
       - name: ClaimDevice Routine
         href: storage-class-driver-s-claimdevice-routine.md
       - name: GetDescriptor Routine
@@ -1580,7 +1578,8 @@
       href: storage-class-memory-portal.md
     - name: Storage class memory glossary
       href: glossary.md
-    - name: _DSM Interface for JEDEC Byte Addressable Energy Backed Function Class (Function Interface 1)
+    - name: _DSM Interface for JEDEC Byte Addressable Energy Backed Function Class
+        (Function Interface 1)
       items:
       - name: Device-Specific Method (_DSM) Interface
         href: -dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md

@@ -4,6 +4,7 @@ description: UI Plug-in Changes
 keywords:
 - in-box autoconfiguration support WDK printer , UI plug-in changes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # UI Plug-in Changes

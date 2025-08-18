@@ -2,6 +2,7 @@
 title: Bluetooth Software Radio Switch Function Prototypes
 description: Learn about bluetooth version and profile support in previous windows versions. See requirements, recommendations, and code examples.
 ms.date: 01/10/2024
+ms.topic: reference
 ---
 
 # Bluetooth software radio switch function prototypes

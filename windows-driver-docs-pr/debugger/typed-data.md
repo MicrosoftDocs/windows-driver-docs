@@ -2,6 +2,7 @@
 title: Typed Data
 description: Typed Data
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Typed Data

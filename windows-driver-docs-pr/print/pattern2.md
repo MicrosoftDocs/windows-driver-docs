@@ -2,6 +2,7 @@
 title: Pattern Property
 description: Contains all the value entries that pertain to the patterns in which holes can be punched in output pages.
 ms.date: 09/08/2021
+ms.topic: reference
 ---
 
 # Pattern property

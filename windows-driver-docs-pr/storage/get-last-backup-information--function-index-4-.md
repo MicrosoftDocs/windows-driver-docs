@@ -2,6 +2,7 @@
 title: Get Last Backup Information (Function Index 4)
 description: This function returns information about the saved image.
 ms.date: 11/18/2022
+ms.topic: reference
 ---
 
 # Get Last Backup Information (Function Index 4)

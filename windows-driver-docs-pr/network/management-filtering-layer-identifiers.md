@@ -4,6 +4,7 @@ description: This section describes management filtering layer identifiers.
 keywords:
 - Management filtering layer identifiers network drivers
 ms.date: 11/08/2017
+ms.topic: concept-article
 ---
 
 # Management filtering layer identifiers

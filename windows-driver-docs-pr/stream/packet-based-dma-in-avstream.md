@@ -11,6 +11,7 @@ keywords:
 - capture buffers WDK AVStream
 - buffers WDK AVStream
 ms.date: 06/18/2020
+ms.topic: concept-article
 ---
 
 # Packet-based DMA in AVStream

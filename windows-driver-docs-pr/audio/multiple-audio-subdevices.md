@@ -5,6 +5,7 @@ keywords:
 - multifunction audio devices WDK , subdevices
 - multiple subdevices WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Multiple Audio Subdevices

@@ -2,6 +2,7 @@
 title: ServiceNumber
 description: ServiceNumber
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # ServiceNumber

@@ -11,6 +11,7 @@ keywords:
 - helper objects WDK audio , about port driver helper objects
 - port drivers WDK audio , helper objects
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Port Driver Helper Objects

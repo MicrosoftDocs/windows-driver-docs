@@ -4,6 +4,7 @@ description: Describes the operations to send and receive messages using the Uns
 ms.date: 04/20/2017
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # MB USSD Operations

@@ -8,6 +8,7 @@ keywords:
 - IDmaChannel interface
 - channel objects WDK audio
 ms.date: 09/23/2020
+ms.topic: concept-article
 ---
 
 # DMA Channel Objects

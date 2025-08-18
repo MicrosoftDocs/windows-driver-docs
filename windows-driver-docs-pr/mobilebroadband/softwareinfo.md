@@ -2,6 +2,7 @@
 title: SoftwareInfo
 description: SoftwareInfo
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # SoftwareInfo

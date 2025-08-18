@@ -3,6 +3,7 @@ title: WdbgExts Symbols
 description: WdbgExts Symbols
 keywords: ["WdbgExts extensions, symbols"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # WdbgExts Symbols

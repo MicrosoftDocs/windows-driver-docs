@@ -2,6 +2,7 @@
 title: Architecture of USB Device Emulation (UDE)
 description: This article describes the architecture of USB device emulation (UDE), which emulates the behavior of a USB host controller and a connected device.
 ms.date: 09/17/2024
+ms.topic: concept-article
 ---
 
 # Architecture of USB device emulation

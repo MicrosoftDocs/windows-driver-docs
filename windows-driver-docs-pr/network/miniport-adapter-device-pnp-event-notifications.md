@@ -8,6 +8,7 @@ keywords:
 - MiniportDevicePnPEventNotify
 - events WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Miniport Adapter Device PnP Event Notifications

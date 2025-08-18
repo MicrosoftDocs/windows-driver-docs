@@ -3,6 +3,7 @@ title: ACX WDF Driver Lifetime Management
 description: This topic provides a summary of the ACX destruction and proper memory cleanup.
 ms.date: 03/08/2024
 ms.localizationpriority: medium
+ms.topic: concept-article
 ---
 
 # ACX WDF driver lifetime management

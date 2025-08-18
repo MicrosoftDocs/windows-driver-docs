@@ -6,6 +6,7 @@ keywords:
 - previous versions
 - WDK
 ms.date: 07/01/2025
+ms.topic: feature-availability
 ---
 
 # Other WDK Downloads

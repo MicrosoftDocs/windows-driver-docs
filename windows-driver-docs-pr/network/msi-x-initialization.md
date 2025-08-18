@@ -7,6 +7,7 @@ keywords:
 - MSIs WDK networking , initializing
 - initializing MSI-X
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # MSI-X Initialization

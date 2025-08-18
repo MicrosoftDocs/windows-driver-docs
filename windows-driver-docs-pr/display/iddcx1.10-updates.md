@@ -12,6 +12,7 @@ keywords:
 - Remote IDD
 - HDR support, IddCx
 - SDR support, IddCx
+ms.topic: release-notes
 ---
 
 # Updates for IddCx versions 1.10 and later

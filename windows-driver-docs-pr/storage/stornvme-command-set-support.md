@@ -4,6 +4,7 @@ description: Describes the command set support provided by StorNVMe
 keywords:
 - commands, opcodes, NVM Express, StorNVMe
 ms.date: 12/20/2024
+ms.topic: reference
 ---
 
 # StorNVMe command set support

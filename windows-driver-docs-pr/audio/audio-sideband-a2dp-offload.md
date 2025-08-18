@@ -3,6 +3,7 @@ title: Audio Sideband A2DP Offload
 description: This topic describes how Audio Sideband A2DP Offload can be used to reduce power consumption.
 ms.date: 07/17/2024
 ms.localizationpriority: medium
+ms.topic: concept-article
 ---
 
 # Audio Sideband A2DP Offload  

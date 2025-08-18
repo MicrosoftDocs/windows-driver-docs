@@ -6,6 +6,7 @@ keywords:
 ms.date: 08/09/2018
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # MB hang detection

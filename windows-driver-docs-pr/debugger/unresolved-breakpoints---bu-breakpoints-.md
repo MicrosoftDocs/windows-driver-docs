@@ -3,6 +3,7 @@ title: Unresolved Breakpoints (bu Breakpoints)
 description: Unresolved Breakpoints (bu Breakpoints)
 keywords: ["breakpoints, deferred", "deferred breakpoints", "breakpoints, BP versus BU", "breakpoints, unresolved"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Unresolved Breakpoints (bu Breakpoints)

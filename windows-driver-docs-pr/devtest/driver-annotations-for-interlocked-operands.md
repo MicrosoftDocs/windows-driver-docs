@@ -2,6 +2,7 @@
 title: Driver Annotations for Interlocked Operands
 description: Driver annotations for interlocked operands
 ms.date: 08/24/2023
+ms.topic: concept-article
 ---
 
 # Driver annotations for interlocked operands

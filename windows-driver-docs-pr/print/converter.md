@@ -2,6 +2,7 @@
 title: Converter (TCP/IP)
 description:  Extends the bidi communications schema with queries that retrieve data from a particular MIB object.
 ms.date: 09/08/2021
+ms.topic: concept-article
 ---
 
 # Converter (TCP/IP)

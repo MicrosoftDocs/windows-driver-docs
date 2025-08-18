@@ -7,6 +7,7 @@ keywords:
 - revision numbers WDK Device Manager
 - Details tab WDK Device Manager
 ms.date: 12/05/2022
+ms.topic: concept-article
 ---
 
 # Device Manager Details tab

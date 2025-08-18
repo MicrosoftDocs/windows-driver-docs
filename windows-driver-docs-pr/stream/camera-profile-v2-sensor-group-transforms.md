@@ -2,6 +2,7 @@
 title: Camera Profile V2 Sensor Group Transforms
 description: This article provides information about the Camera Profile V2 sensor group transforms (SGT).
 ms.date: 06/08/2023
+ms.topic: concept-article
 ---
 
 # Sensor group transforms (Camera Profile V2)

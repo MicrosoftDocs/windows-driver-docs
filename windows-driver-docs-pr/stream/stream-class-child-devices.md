@@ -7,6 +7,7 @@ keywords:
 - minidrivers WDK Windows 2000 Kernel Streaming , child devices
 - child devices WDK streaming minidriver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Stream Class Child Devices

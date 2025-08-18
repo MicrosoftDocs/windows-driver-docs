@@ -8,6 +8,7 @@ keywords:
 - Installing WDTF
 - driver testing
 ms.date: 08/14/2018
+ms.topic: install-set-up-deploy
 ---
 
 # The WDTF runtime library

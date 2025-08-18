@@ -6,6 +6,7 @@ keywords:
 - global options files WDK Static Driver Verifier
 - local options files WDK Static Driver Verifier
 ms.date: 04/02/2018
+ms.topic: concept-article
 ---
 
 # Global and Local Options Files

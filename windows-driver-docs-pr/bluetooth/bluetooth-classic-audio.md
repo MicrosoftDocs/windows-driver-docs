@@ -2,6 +2,7 @@
 title: Bluetooth Classic Audio
 description: This article describes the Bluetooth Classic audio functionality in Windows.
 ms.date: 11/14/2024
+ms.topic: concept-article
 ---
 
 # Bluetooth Classic audio

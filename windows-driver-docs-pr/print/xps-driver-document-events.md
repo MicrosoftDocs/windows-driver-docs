@@ -7,6 +7,7 @@ keywords:
 - notifications WDK XPSDrv
 - DrvDocumentEvent
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # XPS driver document events

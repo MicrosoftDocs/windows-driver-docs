@@ -2,6 +2,7 @@
 title: Shader Code Tokens
 description: Shader Code Tokens
 ms.date: 01/05/2018
+ms.topic: reference
 ---
 
 # Shader Code Tokens

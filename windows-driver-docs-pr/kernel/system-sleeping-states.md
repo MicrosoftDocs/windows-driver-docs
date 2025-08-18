@@ -3,6 +3,7 @@ title: System Sleeping States
 description: System Sleeping States
 keywords: ["system power states WDK kernel , sleeping states", "system sleeping states WDK power management", "sleeping states WDK power management", "S1 WDK power management", "S2 WDK power management", "S3 WDK power management", "S4 WDK power management", "software resumption WDK power management", "resumption WDK power management", "hardware latency WDK power management", "system hardware context WDK power management", "hardware context WDK power management", "context WDK power management", "latency WDK power management"]
 ms.date: 04/23/2025
+ms.topic: concept-article
 ---
 
 # System Sleeping States

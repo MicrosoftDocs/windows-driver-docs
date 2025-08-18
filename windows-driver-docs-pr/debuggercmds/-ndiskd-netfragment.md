@@ -80,7 +80,7 @@ By clicking on the handle for the first fragment or by entering the **!ndiskd.ne
 
 ## See also
 
-[Network Driver Design Guide](../network/index.md)
+[Network Driver Design Guide](/windows-hardware/drivers/network/))
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 

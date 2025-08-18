@@ -2,6 +2,7 @@
 title: SIM toolkit commands
 description: SIM toolkit commands
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # SIM toolkit commands

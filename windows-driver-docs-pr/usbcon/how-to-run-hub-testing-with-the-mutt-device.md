@@ -2,6 +2,7 @@
 title: USB Hub Testing With MUTT Devices
 description: The goal of hub testing is to generate a complete set of possible traffic patterns from devices. You can test disconnect scenarios by adding an upstream SuperMUTT pack.
 ms.date: 01/16/2024
+ms.topic: best-practice
 ---
 
 # USB hub testing with MUTT devices

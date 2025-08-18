@@ -3,6 +3,7 @@ title: Required Dispatch Routines
 description: Required Dispatch Routines
 keywords: ["dispatch routines WDK kernel , required", "required dispatch routines WDK kernel"]
 ms.date: 12/06/2018
+ms.topic: checklist
 ---
 
 # Required Dispatch Routines

@@ -2,6 +2,7 @@
 title: Plan Purchase
 description: Plan purchase
 ms.date: 10/06/2023
+ms.topic: how-to
 ---
 
 # Plan purchase

@@ -5,6 +5,7 @@ keywords:
 - protocol drivers WDK networking , CoNDIS
 - NDIS protocol drivers WDK , CoNDIS
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # CoNDIS Protocol Driver OID Requests

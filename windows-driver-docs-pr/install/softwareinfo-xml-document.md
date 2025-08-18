@@ -2,6 +2,7 @@
 title: SoftwareInfo XML Document
 description: For Windows 8 or later, a metadata package may contain one Softwareinfo.xml file, which contains information for downloading an app that is associated with the device and giving privileged access to applications.
 ms.date: 06/19/2025
+ms.topic: concept-article
 ---
 
 # SoftwareInfo XML Document

@@ -3,6 +3,7 @@ title: ACX Streaming
 description: This topic provides a summary of the ACX streaming and the associated buffering, which is critical to a glitch free audio experience.
 ms.date: 07/17/2024
 ms.localizationpriority: medium
+ms.topic: concept-article
 ---
 
 # ACX streaming

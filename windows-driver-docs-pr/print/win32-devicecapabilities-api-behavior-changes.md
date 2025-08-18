@@ -2,6 +2,7 @@
 title: Win32 DeviceCapabilities API behavior changes
 description: Win32 DeviceCapabilities API behavior changes
 ms.date: 06/13/2024
+ms.topic: release-notes
 ---
 
 # Win32 DeviceCapabilities API behavior changes

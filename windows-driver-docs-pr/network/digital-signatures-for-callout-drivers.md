@@ -9,6 +9,7 @@ keywords:
 - signatures WDK , callout drivers
 - signing drivers WDK , callout drivers
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # Digital Signatures for Callout Drivers

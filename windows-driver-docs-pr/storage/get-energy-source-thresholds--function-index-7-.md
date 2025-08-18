@@ -2,6 +2,7 @@
 title: Get Energy Source Thresholds (Function Index 7)
 description: This function returns warning and error thresholds used to indicate a problem with the Energy Source (ES).
 ms.date: 11/18/2022
+ms.topic: reference
 ---
 
 # Get Energy Source Thresholds (Function Index 7)

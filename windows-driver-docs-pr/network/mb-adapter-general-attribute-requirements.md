@@ -1,15 +1,16 @@
 ---
 title: MB Adapter General Attribute Requirements
 description: MB Adapter General Attribute Requirements
-ms.date: 04/20/2017
+ms.date: 07/23/2025
 ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: checklist
 ---
 
 # MB Adapter General Attribute Requirements
 
 
-The following table describes the values that miniport drivers should set the member variables of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure to. MB miniport drivers must use these values when they call [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) from their [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, during miniport driver initialization.
+The following table describes the values that miniport drivers should set the member variables of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) structure to. MB miniport drivers must use these values when they call [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) from their [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, during miniport driver initialization.
 
 <table>
 <colgroup>

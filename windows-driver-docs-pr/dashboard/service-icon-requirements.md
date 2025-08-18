@@ -2,6 +2,7 @@
 title: Service icon requirements
 description: Service icon requirements
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Service icon requirements

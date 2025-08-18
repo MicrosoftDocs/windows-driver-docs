@@ -5,6 +5,7 @@ keywords:
 - I/O work items WDK NDIS
 - I/O WDK kernel , NDIS
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # NDIS I/O Work Items

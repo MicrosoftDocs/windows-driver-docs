@@ -2,6 +2,7 @@
 title: Connection Profile API
 description: Connection Profile API
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Connection Profile API

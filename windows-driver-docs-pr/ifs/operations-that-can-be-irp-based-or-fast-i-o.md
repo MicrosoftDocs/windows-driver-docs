@@ -6,6 +6,7 @@ keywords:
 - Flags member WDK file system
 - device object flags WDK file system
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Operations That Can Be IRP-Based or Fast I/O

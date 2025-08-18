@@ -10,6 +10,7 @@ keywords:
 - ISRs WDK audio
 - non-interrupt routines WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Interrupt Sync Objects

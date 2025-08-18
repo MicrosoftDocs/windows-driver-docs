@@ -13,6 +13,7 @@ keywords:
 - device installations WDK , digital certificates
 - driver signing WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Digital Certificates

@@ -2,6 +2,7 @@
 title: VMQ Filter Operations
 description: VMQ Filter Operations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # VMQ Filter Operations

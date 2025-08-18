@@ -6,6 +6,7 @@ keywords:
 - graphics DDI functions WDK print
 - hooking graphics DDI functions WDK print
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Customized Graphics DDI Functions

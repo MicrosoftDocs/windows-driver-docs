@@ -6,6 +6,7 @@ keywords:
 - linear memory-space segments WDK display
 - memory-space segments WDK display
 ms.date: 07/01/2024
+ms.topic: concept-article
 ---
 
 # Linear Memory-Space Segments

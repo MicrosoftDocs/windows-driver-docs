@@ -2,6 +2,7 @@
 title: Can I Override the Actual Tracing Function
 description: Can I override the actual tracing function
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Can I override the actual tracing function?

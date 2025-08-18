@@ -2,6 +2,7 @@
 title: Context CPU Queue
 description: The following is a zoomed-in screen shot that shows the GPU Hardware Queue along with the Context CPU Queues of four processes.
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Context CPU Queue

@@ -6,6 +6,7 @@ keywords:
 - RSS WDK networking , hash
 - hash WDK RSS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # RSS Hashing Types

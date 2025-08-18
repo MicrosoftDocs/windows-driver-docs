@@ -6,6 +6,7 @@ keywords:
 - version numbers WDK display
 - version numbers WDK display , Direct3D version 10.1
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Version Numbers for Direct3D Version 10.1

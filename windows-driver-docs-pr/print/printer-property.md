@@ -2,6 +2,7 @@
 title: Printer Property
 description: Printer Property
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Printer Property

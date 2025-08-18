@@ -2,6 +2,7 @@
 title: User mode crashes in Microsoft Edge Chromium
 description: The measure aggregates telemetry from a 7-day sliding window a ratio of crashes in Microsoft Edge Chromium, caused by the graphics drivers, over total runtime in years
 ms.date: 09/03/2021
+ms.topic: troubleshooting-known-issue
 ---
 
 # User mode crashes in Microsoft Edge Chromium

@@ -5,7 +5,7 @@ keywords:
 - OID_PNP_Xxx
 - query operations WDK NDIS intermediate
 - set operations WDK NDIS intermediate
-ms.date: 04/20/2017
+ms.date: 07/23/2025
 ms.topic: concept-article
 ---
 
@@ -57,7 +57,7 @@ An intermediate driver should handle queries and sets as follows:
 
 The intermediate driver must also propagate the underlying miniport driver's response to these OIDs to the overlying protocol drivers.
 
-If the underlying miniport adapter is not power management-aware, the miniport driver sets the **PowerManagementCapabilities** member of [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) to **NULL** and NDIS sets the **PowerManagementCapabilities** member of [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) to **NULL**.
+If the underlying miniport adapter is not power management-aware, the miniport driver sets the **PowerManagementCapabilities** member of [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) to **NULL** and NDIS sets the **PowerManagementCapabilities** member of [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) to **NULL**.
 
 If an underlying miniport adapter is not power management-aware, the intermediate driver should return NDIS\_STATUS\_NOT\_SUPPORTED in response to a query or set of these OIDs.
 

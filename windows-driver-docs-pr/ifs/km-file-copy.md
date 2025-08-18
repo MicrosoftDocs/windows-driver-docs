@@ -7,6 +7,7 @@ keywords:
 - Kernel-mode file copy
 - Kernel-mode file copy detection scenarios
 ms.date: 09/25/2024
+ms.topic: concept-article
 ---
 
 # Kernel-mode file copy and detecting copy file scenarios
@@ -25,7 +26,7 @@ To ensure that kernel-mode read and write operations are safely marked as part o
 
 All read and write operations from **NtCopyFileChunk** have:
 
-* The IRP's requestor mode set to **KernelMode**
+* The IRP's requester mode set to **KernelMode**
 * An IRP extension of type **IopCopyInformationType**.
 
 Filters don't have access to the IRP extensions directly but can check the presence of this extension and get copy information from the callback data by calling [**FltGetCopyInformationFromCallbackData**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetcopyinformationfromcallbackdata).
