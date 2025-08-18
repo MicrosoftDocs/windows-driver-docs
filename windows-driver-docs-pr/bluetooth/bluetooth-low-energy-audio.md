@@ -278,7 +278,7 @@ Signal processing mode: **Default**
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-1.png" alt-text="Diagram illustrating basic audio profile configuration 1.":::
+:::image type="content" source="images/basic-audio-profile-configuration-1.png" alt-text="Diagram illustrating basic audio profile configuration 1.":::
 
 The PC is connected to a single audio device that supports mono streams. The single device might be a standalone device or a single connected member of a coordinated set.
 
@@ -292,7 +292,7 @@ The PC is connected to a single audio device that supports mono streams. The sin
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-4.png" alt-text="Diagram illustrating basic audio profile configuration 4.":::
+:::image type="content" source="images/basic-audio-profile-configuration-4.png" alt-text="Diagram illustrating basic audio profile configuration 4.":::
 
 The PC is connected to a single audio device that supports stereo streams. The audio device is capable of processing two audio channels on a single CIS.
 
@@ -305,7 +305,7 @@ The PC is connected to a single audio device that supports stereo streams. The a
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-6-i.png" alt-text="Diagram illustrating basic audio profile configuration 6 I.":::
+:::image type="content" source="images/basic-audio-profile-configuration-6-i.png" alt-text="Diagram illustrating basic audio profile configuration 6 I.":::
 
 The PC is connected to a single audio device that supports stereo streams. The audio device is only capable of processing one audio channel on each of the two CISs
 
@@ -319,7 +319,7 @@ The PC is connected to a single audio device that supports stereo streams. The a
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-6-ii.png" alt-text="Diagram illustrating basic audio profile configuration 6 II.":::
+:::image type="content" source="images/basic-audio-profile-configuration-6-ii.png" alt-text="Diagram illustrating basic audio profile configuration 6 II.":::
 
 The PC is connected to a coordinated set of audio devices. The set is capable of processing two channels of audio with each member processing a single channel.
 
@@ -337,7 +337,7 @@ Bidirectional configurations are used when the Bluetooth LE Audio profile detect
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-3.png" alt-text="Diagram illustrating basic audio profile configuration 3.":::
+:::image type="content" source="images/basic-audio-profile-configuration-3.png" alt-text="Diagram illustrating basic audio profile configuration 3.":::
 
 The PC is connected to a single audio device with a bidirectional mono stream established on a single CIS.
 
@@ -350,7 +350,7 @@ The PC is connected to a single audio device with a bidirectional mono stream es
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-8-i.png" alt-text="Diagram illustrating basic audio profile configuration 8 I.":::
+:::image type="content" source="images/basic-audio-profile-configuration-8-i.png" alt-text="Diagram illustrating basic audio profile configuration 8 I.":::
 
 The PC is connected to a single audio device that supports stereo render streams and mono capture streams. The device is capable of processing one channel of audio on a single CIS for a given direction.
 
@@ -363,7 +363,7 @@ The PC is connected to a single audio device that supports stereo render streams
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-8-ii.png" alt-text="Diagram illustrating basic audio profile configuration 8 II.":::
+:::image type="content" source="images/basic-audio-profile-configuration-8-ii.png" alt-text="Diagram illustrating basic audio profile configuration 8 II.":::
 
 The PC is connected to a coordinated set of audio devices. Each set member is receiving one channel of render audio. A single set member has an established capture stream. The set member with the capture stream is the first set member that connects to the PC that also supports capture streams.
 
@@ -378,7 +378,7 @@ The PC is connected to a coordinated set of audio devices. Each set member is re
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-2.png" alt-text="Diagram illustrating basic audio profile configuration 2.":::
+:::image type="content" source="images/basic-audio-profile-configuration-2.png" alt-text="Diagram illustrating basic audio profile configuration 2.":::
 
 The PC is connected to a single audio device that supports mono capture streams.
 
@@ -390,7 +390,7 @@ The PC is connected to a single audio device that supports mono capture streams.
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-9-i.png" alt-text="Diagram illustrating basic audio profile configuration 9 I.":::
+:::image type="content" source="images/basic-audio-profile-configuration-9-i.png" alt-text="Diagram illustrating basic audio profile configuration 9 I.":::
 
 The PC is connected to a single audio device that supports sending stereo audio data. The device is capable of encoding one channel of audio on a single CIS.
 
@@ -404,7 +404,7 @@ The PC is connected to a single audio device that supports mono capture streams.
 
 The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bap-configuration-9-ii.png" alt-text="Diagram showing basic audio profile configuration 9(ii) with PC connected to a single audio device.":::
+:::image type="content" source="images/basic-audio-profile-configuration-9-ii.png" alt-text="Diagram showing basic audio profile configuration 9(ii) with PC connected to a single audio device.":::
 
 The PC is connected to a set of audio devices. Each set member sends one channel of audio to the PC.
 
@@ -420,7 +420,7 @@ If the remote device or device set supports bidirectional audio, then the config
 
 The following audio configuration is defined in table 4.2 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bluetooth-audio-profile-configuration-12.png" alt-text="Diagram showing basic audio profile configuration 12 with PC connected to a single audio device in mono.":::
+:::image type="content" source="images/basic-audio-profile-configuration-12.png" alt-text="Diagram showing basic audio profile configuration 12 with PC connected to a single audio device in mono.":::
 
 The PC is broadcasting one channel of mono audio.
 
@@ -433,7 +433,7 @@ The PC is broadcasting one channel of mono audio.
 
 The following audio configuration is defined in table 4.2 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
-:::image type="content" source="images/bluetooth-audio-profile-configuration-13.png" alt-text="Diagram showing basic audio profile configuration 13 with PC connected to a single audio device in stereo.":::
+:::image type="content" source="images/basic-audio-profile-configuration-13.png" alt-text="Diagram showing basic audio profile configuration 13 with PC connected to a single audio device in stereo.":::
 
 The PC is broadcasting stereo audio with each channel transmitting on its own BIS.
 
