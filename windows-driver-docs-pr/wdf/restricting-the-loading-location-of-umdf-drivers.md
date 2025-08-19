@@ -1,5 +1,5 @@
 ---
-title: Restricting the loading location of UMDF drivers
+title: Restricting the Loading Location of UMDF Drivers
 description: Provides information about restricting the loading location of UMDF drivers.
 keywords:
 - locations WDK UMDF
@@ -9,6 +9,7 @@ keywords:
 - loading locations WDK UMDF
 - INF files WDK UMDF , loading locations
 ms.date: 05/12/2022
+ms.topic: concept-article
 ---
 
 # Restricting the loading location of UMDF drivers

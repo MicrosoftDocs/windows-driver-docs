@@ -24,7 +24,7 @@ CTRL+B  ENTER
 ## <span id="ddk_meta_ctrl_b_dbg"></span><span id="DDK_META_CTRL_B_DBG"></span>
 
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -55,7 +55,7 @@ CTRL+B  ENTER
 
 ## Remarks
 
-In CDB, the [**q (Quit)**](q--qq--quit-.md) command should be used to exit. CTRL+B should only be used if the debugger is not responding.
+In CDB, the [**q (Quit)**](../debuggercmds/q--qq--quit-.md) command should be used to exit. CTRL+B should only be used if the debugger is not responding.
 
 In KD, the **q** command will end the debugging session and leave the target computer locked. If you need to preserve the debugging session (so a new debugger can connect to it), or if you need to leave the target computer running, you should use CTRL+B.
 
@@ -64,8 +64,3 @@ In WinDbg, the equivalent command is **File | Exit** or ALT+F4.
  
 
  
-
-
-
-
-

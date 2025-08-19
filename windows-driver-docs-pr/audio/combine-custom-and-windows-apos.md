@@ -1,7 +1,8 @@
 ---
-title: Combine custom and Windows APOs
+title: Combine Custom and Windows APOs
 description: Combine Windows and Custom Audio processing objects (APOs) to provide customizable software based digital signal processing for Windows audio streams.
 ms.date: 06/23/2022
+ms.topic: concept-article
 ---
 
 # Combine custom and Windows APOs
@@ -59,7 +60,7 @@ A custom APO must initialize the Window APO by calling its [IAudioSystemEffects:
 
 If the custom APO replaces a feature, it is generally advisable to turn off the corresponding feature on the APO. However, turning off the  feature might not be strictly necessary, depending on how the feature works. To turn off a feature, query the APO for its IPropertyStore interface and call [IPropertyStore::SetValue](/windows/win32/api/propsys/nf-propsys-ipropertystore-setvalue). The properties that are supported by the APO's property store are described in "Supported IPropertyStore Properties." later in this topic.
 
-For examples of how to communicate with the Windows custom audio system effects APO property store, see the samples on Github at: 
+For examples of how to communicate with the Windows custom audio system effects APO property store, see the samples on GitHub at: 
 https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad/APO
 
 ### Query APO's feature state
@@ -124,7 +125,7 @@ To use the APO CLSID and property key definitions, include wmcodecdsp.h and link
 
 ### APO samples
 
-There are four sample audio system effects samples. The APO samples are available on Github at: 
+There are four sample audio system effects samples. The APO samples are available on GitHub at: 
 https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad/APO 
 
 ## General guidelines for custom audio system effects

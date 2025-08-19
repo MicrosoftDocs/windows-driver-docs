@@ -9,6 +9,7 @@ keywords:
 - lower edge of NDIS miniport drivers WDK networking , about WDM lower edge
 - WDM lower edge WDK networking , about WDM lower edge
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Miniport Driver with a WDM Lower Edge
@@ -21,7 +22,7 @@ A miniport driver with a WDM lower edge (an NDIS-WDM miniport driver) follows th
 
 The following diagram shows an NDIS-WDM miniport driver that interfaces with the USB driver stack by using a WDM lower edge.
 
-![diagram illustrating an ndis-wdm miniport driver that interfaces with the usb driver stack by using a wdm lower edge.](images/nonndslo.png)
+:::image type="content" source="images/nonndslo.png" alt-text="Diagram showing an NDIS-WDM miniport driver interfacing with the USB driver stack using a WDM lower edge.":::
 
 The following list describes the components that the preceding diagram shows:
 

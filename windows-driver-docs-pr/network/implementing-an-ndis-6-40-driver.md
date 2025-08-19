@@ -2,6 +2,7 @@
 title: Implementing an NDIS 6.40 Driver
 description: An NDIS 6.40 driver must follow the requirements that are defined in Implementing an NDIS 6.30 Driver.
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Implementing an NDIS 6.40 Driver

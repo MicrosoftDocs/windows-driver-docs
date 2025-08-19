@@ -1,7 +1,8 @@
 ---
-title: Handling interrupts in UMDF drivers
+title: Handling Interrupts in UMDF Drivers
 description: Handling Interrupts
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling interrupts in UMDF drivers

@@ -3,17 +3,14 @@ title: SymProxy
 description: SymProxy
 keywords: ["symbols, SymProxy (symproxy.dll)", "symbol stores, HTTP", "symbol stores, SymProxy (symproxy.dll)", "SymProxy"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # SymProxy
 
-
-## <span id="ddk_using_other_symbol_stores_dbg"></span><span id="DDK_USING_OTHER_SYMBOL_STORES_DBG"></span>
-
-
 You can configure your HTTP-based symbol store to act as a proxy between client computers and other symbol stores. The implementation is through an Internet Server Application Programming Interface (ISAPI) filter called SymProxy (Symproxy.dll). The SymProxy server can be used as a gateway computer to the Internet or other sources within your company network. The following diagram shows an example SymProxy configuration.
 
-![diagram of an example symproxy configuration.](images/symproxy-configuration.png)
+:::image type="content" source="images/symproxy-configuration.png" alt-text="Diagram showing an example SymProxy configuration.":::
 
 SymProxy is useful in many situations. For example:
 
@@ -27,11 +24,11 @@ SymProxy is useful in many situations. For example:
 
 To install SymProxy, you must manually copy the files to the correct location, configure the registry, choose network security credentials, and configure Internet Information Services (IIS). To ensure that your HTTP symbol store is properly configured, see [HTTP Symbol Stores](http-symbol-stores.md).
 
-### <span id="Multiple_Symbol_Server_Performance_Considerations"></span><span id="multiple_symbol_server_performance_considerations"></span><span id="MULTIPLE_SYMBOL_SERVER_PERFORMANCE_CONSIDERATIONS"></span>Multiple Symbol Server Performance Considerations
+## Multiple Symbol Server Performance Considerations
 
 Each Virtual Directory can be associated with multiple (upstream) symbol stores. Each symbol store is queried independently. For performance, local SMB servers should be processed before internet HTTP servers. Unlike a debugger symbol path, multiple HTTP symbol stores can be specified in a SymProxy symbol path. A maximum of 10 entries are supported per Virtual Directory.
 
-### <span id="SymProxy_Symbol_Path"></span><span id="symproxy_symbol_path"></span><span id="SYMPROXY_SYMBOL_PATH"></span>SymProxy Symbol Path
+## SymProxy Symbol Path
 
 SymProxy splits the (registry defined) symbol path value up in to the individual entries and uses each entry to generate a SRV\* based symbol path to retrieve the file. It uses the Virtual Directory’s folder as the downstream store in each of the queries – in effect, merging the upstream stores in to a single downstream symbol store.
 
@@ -87,8 +84,3 @@ This section includes:
  
 
  
-
-
-
-
-

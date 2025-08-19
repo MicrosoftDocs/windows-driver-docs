@@ -1,5 +1,5 @@
 ---
-title: CreateVolume method of the MSFT\_StoragePool class
+title: CreateVolume Method of the MSFT_StoragePool Class
 description: Creates a virtual disk and single volume using the resources of the storage pool.
 ms.assetid: 35FFE851-F9A4-43D6-BBB6-975836E79105
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

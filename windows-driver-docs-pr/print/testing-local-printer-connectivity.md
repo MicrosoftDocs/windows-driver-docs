@@ -7,6 +7,7 @@ keywords:
 - local printer testing WDK
 - connections WDK printer
 ms.date: 01/30/2023
+ms.topic: how-to
 ---
 
 # Testing Local Printer Connectivity

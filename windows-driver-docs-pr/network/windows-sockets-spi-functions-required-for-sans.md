@@ -5,6 +5,7 @@ keywords:
 - SAN service providers WDK , required functions
 - functions WDK SANs
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Windows Sockets SPI Functions Required for SANs

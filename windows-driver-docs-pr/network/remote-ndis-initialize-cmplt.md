@@ -2,6 +2,7 @@
 description: "REMOTE\_NDIS\_INITIALIZE\_CMPLT"
 title: 'REMOTE_NDIS_INITIALIZE_CMPLT'
 ms.date: 07/31/2017
+ms.topic: reference
 ---
 
 # REMOTE\_NDIS\_INITIALIZE\_CMPLT

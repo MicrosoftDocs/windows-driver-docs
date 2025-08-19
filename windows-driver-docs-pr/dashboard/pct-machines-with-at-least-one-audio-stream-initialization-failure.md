@@ -1,8 +1,8 @@
 ---
 title: Percent of machines with at least one audio stream initialization failure
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have at least one unexpected initialization failure
-ms.topic: article
-ms.date: 11/19/2022
+ms.date: 10/10/2023
+ms.topic: reference
 ---
 
 # Percent of machines with at least one audio stream initialization failure
@@ -20,13 +20,13 @@ See the "Audio stream initialization" section at [Audio measures](audio-measures
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|1000 machines|
 |**Passing criteria**|<=2 % of machines with at least one audio steam initialization failure|
-|**Measure ID**| *12111510 (Legacy*), 39415055|
+|**Measure ID**| 39415055 |
 
 ## Calculation
 
 1. The measure aggregates telemetry from a 7-day sliding window into a **percentage of machines that have at least one unexpected initialization failure**
-2. *Machines with itialization failure = Count(machines with at least one unexpected initialization failure)*
-3. *Total machines = Count(machines that attempted to initalizate an audio stream)*
+2. *Machines with initialization failure = Count(machines with at least one unexpected initialization failure)*
+3. *Total machines = Count(machines that attempted to initialize an audio stream)*
 
 ### Final calculation
 

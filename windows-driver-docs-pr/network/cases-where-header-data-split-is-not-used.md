@@ -5,6 +5,7 @@ keywords:
 - header-data split WDK , when not used
 - Ethernet frame splitting WDK networking , when not used
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Cases Where Header-Data Split Is Not Used

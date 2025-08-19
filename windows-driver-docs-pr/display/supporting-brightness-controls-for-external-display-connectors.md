@@ -1,8 +1,9 @@
 ---
-title: Supporting brightness controls for external display connectors
+title: Supporting Brightness Controls for External Display Connectors
 description: This feature only allows OEMs to indicate to Windows that an external connector display supports brightness control.
 keywords: ["brightness WDK display", "ACPI-based brightness hot-keys WDK display", "notifying brightness hot keys WDK display", "BIOS brightness control WDK display", "automatic brightness WDK display"]
 ms.date: 03/20/2023
+ms.topic: concept-article
 ---
 
 # Supporting brightness controls for external display connectors
@@ -15,7 +16,7 @@ This feature only allows OEMs to indicate to Windows that an external connector 
 
 Use the "BrightnessControl" DWORD registry value. The Registry path is HKLM\SYSTEM\CurrentControlSet\Control\Class\{4D36E96E-E325-11CE-BFC1-08002BE10318}\\*XXXX*, where *XXXX* is for the targeted individual display. The following figure shows the layout for this value.
 
-![diagram showing the bit layout of the brightness control registry value.](images/BrightnessControlRegistry.png)
+:::image type="content" source="images/BrightnessControlRegistry.png" alt-text="Diagram showing the bit layout of the Brightness Control Registry value.":::
 
 * The first bit in this registry value defines the noninternal monitor brightness control support.
 * The second bit defines an ACPI override that forces ACPI brightness to be used.

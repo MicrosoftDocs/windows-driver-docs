@@ -8,6 +8,7 @@ keywords:
 - unidirectional channels WDK spooler notification
 - data channels WDK spooler notification
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Overview of Spooler Notification

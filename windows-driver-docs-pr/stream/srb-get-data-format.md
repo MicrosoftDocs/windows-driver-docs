@@ -1,7 +1,8 @@
 ---
-title: SRB\_GET\_DATA\_FORMAT
+title: SRB_GET_DATA_FORMAT
 description: SRB\_GET\_DATA\_FORMAT
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # SRB\_GET\_DATA\_FORMAT

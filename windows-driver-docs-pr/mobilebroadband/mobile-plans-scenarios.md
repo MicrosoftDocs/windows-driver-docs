@@ -1,9 +1,10 @@
 ---
-title: Mobile Plans scenarios
+title: Mobile Plans Scenarios
 description: This topic describes the basic end user facing scenarios that mobile operators can implement.
 keywords:
 - Windows Mobile Plans scenarios, Mobile Plans implementation mobile operators
 ms.date: 05/31/2019
+ms.topic: solution-overview
 ---
 
 # Mobile Plans scenarios
@@ -14,7 +15,7 @@ This topic provides guidance about most common scenarios that mobile operators w
 
 ## Install an eSIM profile on a Windows 10 device
 
-This section describes the steps a mobile operator should take to download, install and activate an eSIM profile on a Windows 10 device. Depending upon constrainsts of the mobile operator's eSIM platform and network backend, there are multiple methods used to fulfill the profile and network connectivity at the conclusion of the activation flow.
+This section describes the steps a mobile operator should take to download, install and activate an eSIM profile on a Windows 10 device. Depending upon constraints of the mobile operator's eSIM platform and network backend, there are multiple methods used to fulfill the profile and network connectivity at the conclusion of the activation flow.
 
 1. Develop the [mobile operator web portal](mobile-plans-web-portal.md#web-portal-interface-for-esim-enabled-devices) that will take the user through the sign in and activation steps.
 2. Implement one of the supported callback methods to return control back to the Mobile Plans app for download of the eSIM profile:
@@ -26,7 +27,7 @@ This section describes the steps a mobile operator should take to download, inst
 
 ## Activate a warm SIM in a Windows device
 
-This section describes the steps to allow users to activate a warm phsycial SIM in a Windows device. The term 'warm' refers to a SIM which has been preactivated and can connect to the mobile operator network, but has not been associated with an active subscription.
+This section describes the steps to allow users to activate a warm physical SIM in a Windows device. The term 'warm' refers to a SIM which has been preactivated and can connect to the mobile operator network, but has not been associated with an active subscription.
 
 1. Implement the [mobile operator web portal](mobile-plans-web-portal.md#web-portal-interface-for-physical-sims) that will walk the user through the sign in and activation steps.
 2. Implement the callback method for [adding balance](mobile-plans-callback-notifications.md#adding-balance).
@@ -36,7 +37,7 @@ This section describes the steps to allow users to activate a warm phsycial SIM 
 
 ## Add balance to a current subscription
 
-This section describes the steps invovled in adding balance for an existing customer subscription. This is useful when a mobile operator is selling prepaid data plans that must be topped off when the balance runs out.
+This section describes the steps involved in adding balance for an existing customer subscription. This is useful when a mobile operator is selling prepaid data plans that must be topped off when the balance runs out.
 
 1. Develop the [mobile operator web portal](mobile-plans-web-portal.md).
 2. Implement the callback method for [adding balance](mobile-plans-callback-notifications.md#adding-balance).

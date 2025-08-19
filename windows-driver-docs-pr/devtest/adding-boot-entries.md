@@ -6,7 +6,8 @@ keywords:
 - boot entries WDK
 - adding boot entries
 - Boot.ini files WDK , adding boot entries
-ms.date: 11/14/2022
+ms.date: 12/12/2024
+ms.topic: how-to
 ---
 
 # Adding Boot Entries
@@ -21,7 +22,14 @@ To add a boot entry, copy an existing boot entry, and then modify the copy.
 
 This topic applies to Windows Vista and later, Windows Server 2008 and later, and the Windows Recovery Environment.
 
-## Adding a new boot entry <a name="adding-a-new-boot-entry"></a>
+> [!CAUTION]
+> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the **BCDEdit** command could render your computer inoperable.
+
+> [!CAUTION]
+> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the **BCDEdit /set** command could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings. For more information, see *[How to open MSConfig in Windows 10](https://support.microsoft.com/help/4026130/windows-how-to-open-msconfig-in-windows-10)*.
+
+
+## Adding a new boot entry
 
 In Windows, you use BCDEdit to modify your boot options. To add a new boot entry, open a Command Prompt window with elevated privileges (select and hold (or right-click) **Command Prompt** and select **Run as administrator** from the shortcut menu).
 
@@ -41,7 +49,7 @@ The entry was successfully copied to {49916baf-0e08-11db-9af4-000bdbd316a0}.
 
 When you copy a boot loader entry that appears on the boot menu, the copy is automatically added as the last item on the boot menu.
 
-The GUID in the preceding message (which appears between braces ({})) is the identifier of the new boot entry. The **/copy** option creates a new GUID for the boot entry. You use the identifier to represent the entry in all subsequent BCDEdit commands.
+The GUID in the preceding message (which appears between braces `{}`) is the identifier of the new boot entry. The **/copy** option creates a new GUID for the boot entry. You use the identifier to represent the entry in all subsequent BCDEdit commands.
 
 If the command fails, be sure that you are running in a Command Prompt window with administrator privileges and that all of the command parameters are spelled correctly, including the braces around **{current}**.
 
@@ -58,17 +66,17 @@ When you use the **/create** option, the new boot loader entries are not added t
 
 For information about the **/create** command parameters, type **bcdedit /? /create** in a Command Prompt window.
 
-## Editing the boot menu <a name="editing-the-boot-menu"></a>
+## Editing the boot menu
 
-In Windows, new boot loader entries are not added to the boot menu automatically. You can place the boot loader entries in any order.
-
-You can use the **/displayorder** option to set the order in which the boot manager displays the boot entries on a multi-boot menu. The command has the following syntax:
+In Windows, new boot loader entries are not added to the boot menu automatically. You can use the **/displayorder** option to set the order in which the boot manager displays the boot entries on a multi-boot menu. The command has the following syntax:
 
 ```
 bcdedit /displayorder {ID} {ID} ...
 ```
 
-The ID is the GUID of the boot entry or a reserved identifier, such as **{current}**). Separate each identifier with a space. Be sure to include the braces ({}).
+You can place the boot loader entries in any order.
+
+The ID is the GUID of the boot entry or a reserved identifier, such as **{current}**. Separate each identifier with a space. Be sure to include the braces ({}).
 
 For example, to add the DebugEntry boot entry to the boot menu after the **{current}** entry, use the following command (remember to use `"{guid}"` in Windows PowerShell):
 
@@ -82,7 +90,7 @@ You can also use the options **/addlast, /addfirst**, and **/remove** to order a
 bcdedit /displayorder {49916baf-0e08-11db-9af4-000bdbd316a0} /addlast
 ```
 
-## Removing and deleting a boot entry <a name="removing-a-boot-entry"></a>
+## Removing and deleting a boot entry
 
 The following command removes the {49916baf-0e08-11db-9af4-000bdbd316a0} boot entry item from the boot menu.
 
@@ -147,6 +155,7 @@ resumeobject            {d7094401-2641-11db-baba-00e018e2b8db}
 nx                      OptIn
 debug                   Yes
 ```
+
 ## See Also
 
 [Editing Boot Options](./editing-boot-options.md)

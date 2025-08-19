@@ -2,7 +2,7 @@
 title: Commit a product submission
 description: Use this method in the Microsoft Hardware API to commit a new submission to the Partner Center.
 ms.date: 04/05/2018
-ms.topic: article
+ms.topic: reference
 ---
 
 # Commit a product submission
@@ -29,7 +29,7 @@ The productId in the method is the product for which the submission is intended.
 
 | Header | Type | Description |
 |:--|:--|:--|
-| Authorization | String | Required. The Azure AD access token in the form **Bearer** \<token\>. |
+| Authorization | String | Required. The Microsoft Entra ID access token in the form **Bearer** \<token\>. |
 | accept | String | Optional. Specifies the type of content. Allowed value is “application/json” |
 
 In the headers, set `Content-Length: 0` and `Content-type: application/json`.

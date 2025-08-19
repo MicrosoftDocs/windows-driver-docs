@@ -2,6 +2,7 @@
 title: Connection Profile API
 description: Connection Profile API
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Connection Profile API
@@ -17,7 +18,7 @@ The connection profile API, which is part of [**Windows.Networking.Connectivity.
 
 This API also includes a status change event that notifies the application whenever connectivity on the operator’s interface has changed. For more info about the [**NetworkStatusChanged**](/uwp/api/Windows.Networking.Connectivity.NetworkInformation#Windows_Networking_Connectivity_NetworkInformation_NetworkStatusChanged) event, see [**NetworkStatusChangedEventHandler delegate**](/uwp/api/windows.networking.connectivity.networkstatuschangedeventhandler).
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [List of mobile broadband Windows Runtime APIs](list-of-mobile-broadband-windows-runtime-apis.md)

@@ -1,8 +1,9 @@
 ---
-title: Enable debugging of Win32 subsystem
+title: Enable Debugging of Win32 Subsystem
 description: Enable debugging of Win32 subsystem
 keywords: ["Enable debugging of Win32 subsystem (global flag)"]
 ms.date: 12/22/2021
+ms.topic: reference
 ---
 
 # Enable debugging of Win32 subsystem
@@ -55,8 +56,3 @@ For details on NTSD, see [Debugging Using CDB and NTSD](debugging-using-cdb-and-
  
 
  
-
-
-
-
-

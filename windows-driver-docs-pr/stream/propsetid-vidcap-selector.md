@@ -1,7 +1,8 @@
 ---
-title: PROPSETID\_VIDCAP\_SELECTOR
+title: PROPSETID_VIDCAP_SELECTOR
 description: PROPSETID\_VIDCAP\_SELECTOR
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # PROPSETID\_VIDCAP\_SELECTOR

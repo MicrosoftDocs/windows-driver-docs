@@ -5,6 +5,7 @@ keywords:
 - filtering trace messages, changeable elements WDK
 - trace message filters WDK , changeable elements
 ms.date: 04/20/2017
+ms.topic: glossary
 ---
 
 # Filter Rule Elements
@@ -26,12 +27,4 @@ A text field in which you specify the condition that the value in the **Column**
 
 <span id="Action"></span><span id="action"></span><span id="ACTION"></span>**Action**  
 The action that is performed on the trace message if it meets the conditions specified in the **Text** field.
-
- 
-
- 
-
-
-
-
 

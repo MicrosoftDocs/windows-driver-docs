@@ -7,6 +7,7 @@ keywords:
 - KS properties WDK DVD decoder
 - property sets WDK DVD decoder
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # DVD Decoder Related KS Properties
@@ -189,7 +190,7 @@ The [KSPROPSETID\_VPConfig and KSPROPSETID\_VPVBIConfig](./kspropsetid-vpconfig-
 </tr>
 <tr class="even">
 <td><p><a href="/windows-hardware/drivers/stream/ksproperty-vpconfig-vpdatainfo" data-raw-source="[&lt;strong&gt;KSPROPERTY_VPCONFIG_VPDATAINFO&lt;/strong&gt;](./ksproperty-vpconfig-vpdatainfo.md)"><strong>KSPROPERTY_VPCONFIG_VPDATAINFO</strong></a></p></td>
-<td><p>Specifies the initial video port configuration, such as pixel aspect ration and field polarity.</p></td>
+<td><p>Specifies the initial video port configuration, such as pixel aspect ratio and field polarity.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="/windows-hardware/drivers/stream/ksproperty-vpconfig-maxpixelrate" data-raw-source="[&lt;strong&gt;KSPROPERTY_VPCONFIG_MAXPIXELRATE&lt;/strong&gt;](./ksproperty-vpconfig-maxpixelrate.md)"><strong>KSPROPERTY_VPCONFIG_MAXPIXELRATE</strong></a></p></td>

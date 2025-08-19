@@ -1,7 +1,8 @@
 ---
-title: MSFC\_FibrePortNPIVMethods WMI Class
+title: MSFC_FibrePortNPIVMethods WMI Class
 description: MSFC\_FibrePortNPIVMethods WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSFC\_FibrePortNPIVMethods WMI Class

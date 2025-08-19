@@ -2,6 +2,7 @@
 title: Creating Push-Model Aware Applications
 description: Creating Push-Model Aware Applications
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating Push-Model Aware Applications

@@ -1,8 +1,9 @@
 ---
-title: C28750 warning
+title: C28750 Warning
 description: Warning C28750 Banned usage of lstrlen and its variants.
 ms.date: 08/22/2022
 f1_keywords: ["C28750", "BANNED_API_USAGE_LSTRLEN", "__WARNING_BANNED_API_USAGE_LSTRLEN"]
+ms.topic: reference
 ---
 # Warning C28750
 

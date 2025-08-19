@@ -1,7 +1,8 @@
 ---
-title: KSPROPSETID\_BdaDigitalDemodulator
+title: KSPROPSETID_BdaDigitalDemodulator
 description: KSPROPSETID\_BdaDigitalDemodulator
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_BdaDigitalDemodulator

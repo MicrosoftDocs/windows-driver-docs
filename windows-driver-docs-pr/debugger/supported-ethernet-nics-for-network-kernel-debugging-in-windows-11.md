@@ -1,10 +1,11 @@
 ---
-title: Supported Ethernet NICs for Network Kernel Debugging in Windows 11
-description: Learn about kernel debugging over an Ethernet network cable when the target computer is running Windows 11.
-ms.date: 10/06/2021
+title: Supported Ethernet NICs for Network Kernel Debugging in Windows 11 23H2
+description: Learn about kernel debugging over an Ethernet network cable when the target computer is running Windows 11 23H2.
+ms.date: 10/15/2024
+ms.topic: reference
 ---
 
-# Supported Ethernet NICs for Network Kernel Debugging in Windows 11
+# Supported Ethernet NICs for Network Kernel Debugging in Windows 11 23H2
 
 To do kernel debugging over an Ethernet network cable, the target computer must have a supported network interface card (NIC).
 
@@ -16,7 +17,9 @@ To do kernel debugging over a network cable, the target computer must have a sup
 
 This topic lists the supported adapters for the following versions of Windows
 
-- Windows 11, Build 22000
+- Windows 11, 23H2 Build 22631
+
+For information about Windows 11 versions, see [Windows 11 release information](/windows/release-health/windows11-release-information).
 
 **Determining NIC support using VerifiedNicList.xml**  
 
@@ -249,9 +252,6 @@ For vendor ID 8086, these device IDs are supported:
 2159
 294C
 8976
-
-*New in Windows 11*
-
 1572
 1574
 1580
@@ -284,7 +284,34 @@ For vendor ID 8086, these device IDs are supported:
 550B
 550C
 550D
-
+550E
+550F
+5510
+5511
+0DC7
+0DC8
+0DC5
+0DC6
+57A0
+57A1
+57B3
+57B4
+57B5
+57B6
+57B7
+57B8
+15F2
+15F3
+0D9F
+3100
+3101
+3102
+5502
+125B
+125C
+125D
+125E
+5503
 
 ### Vendor ID 10EC, Realtek Semiconductor Corp.
 
@@ -302,6 +329,9 @@ For vendor ID 10EC, these device IDs are supported:
 8168
 8169
 8225
+8126
+8162
+5000
 
 ### Vendor ID 14E4, Broadcom
 
@@ -435,9 +465,6 @@ For vendor ID 14E4, these device IDs are supported:
 170E
 170F
 D802
-
-*New in Windows 11*
-
 1041
 1042
 1043
@@ -480,7 +507,6 @@ D82C
 D82D
 D82E
 D82F
-
 
 ### Vendor ID 1969, Atheros Communications
 
@@ -592,6 +618,20 @@ For vendor ID 15B3, these device IDs are supported:
 For vendor ID 1137, these device IDs are supported:
 
 0043
+
+### Vendor ID 1414, Microsoft Corporation
+
+For vendor ID 1414, these device IDs are supported:
+
+00B9
+
+### Vendor ID 15AD, VMware Inc
+
+*New in Windows 23H2*
+
+For vendor ID 15AD, these device IDs are supported:
+
+07B0
 
 ## XML Supported NIC List
 
@@ -843,6 +883,34 @@ This is the same information shown above in the XML format.
       <deviceid build="20271">37D2</deviceid>
       <deviceid build="20271">37D3</deviceid>
       <deviceid build="20271">37D4</deviceid>
+      <deviceid build="22536">550E</deviceid>
+      <deviceid build="22536">550F</deviceid>
+      <deviceid build="22536">5510</deviceid>
+      <deviceid build="22536">5511</deviceid>
+      <deviceid build="22536">0DC7</deviceid>
+      <deviceid build="22536">0DC8</deviceid>
+      <deviceid build="22536">0DC5</deviceid>
+      <deviceid build="22536">0DC6</deviceid>
+      <deviceid build="25215">57A0</deviceid>
+      <deviceid build="25215">57A1</deviceid>
+      <deviceid build="25215">57B3</deviceid>
+      <deviceid build="25215">57B4</deviceid>
+      <deviceid build="25215">57B5</deviceid>
+      <deviceid build="25215">57B6</deviceid>
+      <deviceid build="25215">57B7</deviceid>
+      <deviceid build="25215">57B8</deviceid>
+      <deviceid build="25250">15F2</deviceid>
+      <deviceid build="25250">15F3</deviceid>
+      <deviceid build="25250">0D9F</deviceid>
+      <deviceid build="25250">3100</deviceid>
+      <deviceid build="25250">3101</deviceid>
+      <deviceid build="25250">3102</deviceid>
+      <deviceid build="25250">5502</deviceid>
+      <deviceid build="25250">125B</deviceid>
+      <deviceid build="25250">125C</deviceid>
+      <deviceid build="25250">125D</deviceid>
+      <deviceid build="25250">125E</deviceid>
+      <deviceid build="25250">5503</deviceid>
   </NIC>
 
   <NIC>
@@ -859,6 +927,9 @@ This is the same information shown above in the XML format.
       <deviceid build="18362">2502</deviceid>
       <deviceid build="18362">2600</deviceid>
       <deviceid build="18362">3000</deviceid>
+      <deviceid build="25876">8126</deviceid>
+      <deviceid build="25876">8162</deviceid>
+      <deviceid build="25876">5000</deviceid>
   </NIC>
 
   <NIC>
@@ -1157,6 +1228,16 @@ This is the same information shown above in the XML format.
       <deviceid build="15063">0043</deviceid>
   </NIC>
 
+  <NIC>
+    <manufacturer>1414</manufacturer>
+      <deviceid build="25500">00B9</deviceid>
+  </NIC>
+
+  <NIC>
+    <manufacturer>15AD</manufacturer>
+      <deviceid build="26006">07B0</deviceid>
+  </NIC>
+
 </SupportedNetworkInterfaceCards>
 ```
 
@@ -1165,5 +1246,9 @@ This is the same information shown above in the XML format.
 [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 
 [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md)
+
+[Supported Ethernet NICs for Network Kernel Debugging in Windows 11 21H2](supported-ethernet-nics-for-network-kernel-debugging-in-windows-11-21h2.md)
+
+[Supported Ethernet NICs for Network Kernel Debugging in Windows 11 22H2](supported-ethernet-nics-for-network-kernel-debugging-in-windows-11-22h2.md)
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md)

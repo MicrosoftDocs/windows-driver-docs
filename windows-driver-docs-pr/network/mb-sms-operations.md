@@ -2,7 +2,9 @@
 title: MB SMS Operations
 description: MB SMS Operations
 ms.date: 03/01/2021
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # MB SMS Operations
@@ -42,22 +44,22 @@ For more information about SMS operations, see [OID\_WWAN\_SMS\_CONFIGURATION](.
 ## SMS Architecture/Flows
 
 ### SMS Block Diagram
-![SMS Architecture Flow.](images/mb-sms-architecture.png)
+:::image type="content" source="images/mb-sms-architecture.png" alt-text="Diagram that shows SMS architecture flow.":::
 
 ### SMS App Registration
-![SMS App Registration.](images/mb-sms-appregistration.png)
+:::image type="content" source="images/mb-sms-appregistration.png" alt-text="Diagram that shows SMS app registration process.":::
 
 ### Send SMS
-![SMS Send Message.](images/mb-sms-send.png)
+:::image type="content" source="images/mb-sms-send.png" alt-text="Diagram that shows the SMS send message process.":::
 
 ### API Receive Message
-![API Receive Message.](images/mb-sms-apireceive.png)
+:::image type="content" source="images/mb-sms-apireceive.png" alt-text="Diagram that shows the API receive message process.":::
 
 ### App Lifecycle
-![SMS App Lifecycle.](images/mb-sms-lifecycle.png)
+:::image type="content" source="images/mb-sms-lifecycle.png" alt-text="Diagram that shows the SMS app lifecycle.":::
 
 ### Service Lifecycle
-![Service Lifecycle.](images/mb-sms-servicelifecycle.png)
+:::image type="content" source="images/mb-sms-servicelifecycle.png" alt-text="Diagram that shows the service lifecycle.":::
 
 ## Testing
 

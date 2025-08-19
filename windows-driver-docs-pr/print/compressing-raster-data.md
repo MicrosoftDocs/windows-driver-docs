@@ -8,6 +8,7 @@ keywords:
 - compressing raster data WDK Unidrv
 - Unidrv WDK print
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # Compressing Raster Data

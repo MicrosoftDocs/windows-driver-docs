@@ -1,7 +1,8 @@
 ---
-title: Microsoft-defined Bluetooth HCI commands and events
+title: Microsoft-Defined Bluetooth HCI Commands and Events
 description: The Bluetooth Host-Controller Interface (HCI) specifies all interactions between a host and a Bluetooth radio controller.
-ms.date: 04/17/2023
+ms.date: 07/15/2024
+ms.topic: reference
 ---
 
 # Microsoft-defined Bluetooth HCI extensions
@@ -99,11 +100,13 @@ The controller shall always complete this command promptly with a Command Comple
 | 0x00000000&nbsp;00000004 | Controller supports the RSSI Monitoring of LE legacy advertisements. |
 | 0x00000000&nbsp;00000008 | Controller supports Advertising Monitoring of LE legacy advertisements. |
 | 0x00000000&nbsp;00000010 | Controller supports verifying the validity of the public X and Y coordinates on the curve during the Secure Simple pairing process for P-192 and P-256. <br>For more information, see [Bluetooth Core Specification Erratum 10734](https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=447440). |
-| 0x00000000&nbsp;00000020 | Controller supports Continuous Advertising Monitoring of LE legacy advertisements performed concurrently with other radio activities. |
+| 0x00000000&nbsp;00000020 | Controller supports Continuous Advertising Monitoring of LE advertisements performed concurrently with other radio activities, using [HCI_VS_MSFT_LE_Monitor_Advertisement [v1]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. |
 | 0x00000000&nbsp;00000040 | Reserved. |
-| 0x00000000&nbsp;00000080 | Reserved. |
+| 0x00000000&nbsp;00000080 | Controller supports AVDTP offload and the HCI_VS_MSFT_Avdtp_* commands described in this document. |
 | 0x00000000&nbsp;00000100 | Reserved. |
-| 0xFFFFFFFF&nbsp;FFFFFFF0 | Bits reserved for future definition. Must be zero. |
+| 0x00000000&nbsp;00000200 | Reserved. |
+| 0x00000000&nbsp;00000400 | Controller supports [HCI_VS_MSFT_LE_Monitor_Advertisement [v2]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. Additionally, the Controller supports Continuous Advertising Monitoring of LE advertisements performed concurrently with other radio activities, using [HCI_VS_MSFT_LE_Monitor_Advertisement [v2]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. |
+| 0xFFFFFFFF&nbsp;FFFFFF00 | Bits reserved for future definition. Must be zero. |
 
 **Microsoft_event_prefix_length** (1 octet):
 
@@ -135,7 +138,7 @@ The controller shall refuse the command if another HCI_VS_MSFT_Monitor_Rssi comm
 
 This state diagram shows the transition states on the controller when monitoring RSSI for a connection.
 
-:::image type="content" source="images/HCI_VS_MSFT_Monitor_Rssi_State_Diagram.png" alt-text="State diagram of HCI_VS_MSFT_Monitor_Rssi":::
+:::image type="content" source="images/HCI_VS_MSFT_Monitor_Rssi_State_Diagram.png" alt-text="State diagram showing transition states on the controller when monitoring RSSI for a connection.":::
 
 The controller shall generate an [HCI_VS_MSFT_Rssi_Event][ref_HCI_VS_MSFT_Rssi_Event] when the received RSSI is greater than or equal to the specified *RSSI_threshold_high*. After this event has been generated, the controller shall not generate a new [HCI_VS_MSFT_Rssi_Event][ref_HCI_VS_MSFT_Rssi_Event] to specify that the *RSSI_threshold_high* has been exceeded until it generates an [HCI_VS_MSFT_Rssi_Event][ref_HCI_VS_MSFT_Rssi_Event] that specifies the RSSI has fallen below *RSSI_threshold_low*.
 
@@ -182,7 +185,7 @@ RSSI_sampling_period (1 octet):
 | Value | Parameter description |
 |--|--|
 | 0x00 | Reserved value. |
-| *N*&nbsp;=&nbsp;0xXX | The sampling interval in milliseconds.<br>Time period = *N* * 100 milliseconds<br>Mandatory Range: 0x01&nbsp;to&nbsp;0xFE |
+| *N*&nbsp;=&nbsp;0xXX | The sampling interval in multiples of 100 milliseconds.<br>Time period = *N* * 100 milliseconds<br>Mandatory Range: 0x01&nbsp;to&nbsp;0xFE |
 | 0xFF | Reserved value. |
 
 #### Return_parameters
@@ -267,22 +270,75 @@ HCI_VS_MSFT_LE_Monitor_Advertisement requests that the controller starts monitor
 - A specified Identity Resolution Key (IRK) can be used to resolve the private address of the device from which the advertisement packet originated.
 - A specified Bluetooth Address can be matched to the received advertisement packet.
 
+The v2 command permits the Host to combine some of the above conditions with options governing the source of the advertisement and the target of a directed advertisement, to further refine which advertisements are monitored. The v2 command also permits the Host to filter which monitored advertisements cause the Controller to generate advertisement reports.
+
 | Command | Code | Command parameters | Return parameters |
 |--|--|--|--|
-| HCI_VS_MSFT_LE_Monitor_Advertisement | Chosen base code | Subcommand_opcode,<br>RSSI_threshold_high,<br>RSSI_threshold_low,<br>RSSI_threshold_low_time_interval,<br>RSSI_sampling_period,<br>Condition_type,<br>\<Condition Parameters\> | Status,<br>Subcommand_opcodee,<br>Monitor_Handle |
+| HCI_VS_MSFT_LE_Monitor_Advertisement [v2] | Chosen base code | Subcommand_opcode_v2,<br>RSSI_threshold_high,<br>RSSI_threshold_low,<br>RSSI_threshold_low_time_interval,<br>RSSI_sampling_period,<br>Monitor_options,<br>Advertisement_report_filtering_options,<br>Peer_device_address,<br>Peer_device_address_type,<br>Peer_device_IRK,<br>Condition_type,<br>\<Condition Parameters\> | Status,<br>Subcommand_opcode,<br>Monitor_Handle |
+| HCI_VS_MSFT_LE_Monitor_Advertisement [v1] | Chosen base code | Subcommand_opcode_v1,<br>RSSI_threshold_high,<br>RSSI_threshold_low,<br>RSSI_threshold_low_time_interval,<br>RSSI_sampling_period,<br>Condition_type,<br>\<Condition Parameters\> | Status,<br>Subcommand_opcode,<br>Monitor_Handle |
 
 The controller shall generate a Command Complete event in response to this command. The status value should be set to zero if the controller can begin monitoring, or a nonzero status otherwise.
 If the controller doesn't support RSSI monitoring for LE Advertisements, it shall ignore the *RSSI_threshold_high*, *RSSI_threshold_low*, *RSSI_threshold_low_time_interval*, and *RSSI_sampling_period* parameter values.
 
 This state diagram shows the transition states on the controller when monitoring RSSI for an advertisement.
 
-:::image type="content" source="images/HCI_VS_MSFT_LE_Monitor_Advertisement_State_Diagram.png" alt-text="State diagram for HCI_VS_MSFT_LE_Monitor_Advertisement.":::
+:::image type="content" source="images/HCI_VS_MSFT_LE_Monitor_Advertisement_State_Diagram.svg" alt-text="State diagram showing transition states for HCI_VS_MSFT_LE_Monitor_Advertisement.":::
 
-The controller shall propagate the first advertisement packet to the host only when the received RSSI is greater than or equal to *RSSI_threshold_high* for a particular device. The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with *Monitor_state* set to 1 and *Monitor_handle* set to the handle for this *Condition*, to notify the host that the controller is monitoring this particular device for *Condition*.
+The controller shall begin monitoring an advertisement only when the received RSSI is greater than or equal to *RSSI_threshold_high* for a particular device and the *Monitor_options* match (see below).  The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with *Monitor_state* set to 1 and *Monitor_handle* set to the handle for this *Condition*, to notify the host that the controller is monitoring this particular device for *Condition*. Additionally, the Controller shall propagate the first advertisement report of a monitored advertisement to the Host only when the *Advertisement_report_filter_options* match (see below).
+
+The *Monitor_options* for a filter are considered a match based on the following logic (in pseudocode):
+
+```
+MatchesCondition = (PDU Matches Condition Parameters)
+
+IsAdvAMatch = ((Monitor_options bit 0 is set) && ((AdvA == Peer_device_address) && (TxAdd == Peer_device_address_type))) ||
+    ((Monitor_options bit 1 is set) && (AdvA resolvable with Peer_device_IRK))
+
+IsDirectedAdvAMatch = (TargetA is permitted based on the Scanning Filter Policy) &&
+    (((Monitor_options bit 2 is set) && ((AdvA == Peer_device_address) && (TxAdd == Peer_device_address_type))) ||
+        ((Monitor_options bit 3 is set) && (AdvA resolvable with Peer_device_IRK)))
+
+IsDirectedTargetAMatch = (Monitor_options bit 4 is set) &&
+    (TargetA is permitted based on the Scanning Filter Policy)
+
+MonitorOptionsMatch = (MatchesCondition && IsAdvAMatch) ||
+    IsDirectedAdvAMatch ||
+    IsDirectedTargetAMatch ||
+    ((Monitor_options bit 5 is set) && MatchesCondition)
+```
+
+And for a monitored advertisement, the *Advertisement_report_filter_options* are considered a match based on the following logic (in pseudocode):
+
+```
+IsDuplicateFilterSatisfied = (Advertisement_report_filter_options bit 0 is NOT set || PDU is not a duplicate)
+
+ShouldGenerateLegacyReport = (Advertisement_report_filter_options bit 1 is set) &&
+    (PDU is Legacy) &&
+    MonitorOptionsMatch
+
+ShouldGenerateExtendedReport = (Advertisement_report_filter_options bit 2 is set) &&
+    (PDU is Extended) &&
+    MonitorOptionsMatch
+
+ShouldGenerateDirectedReport = (Advertisement_report_filter_options bit 3 is set) &&
+    (PDU is Directed) &&
+    MonitorOptionsMatch
+
+AdvertisementReportFilterOptionsMatch = IsDuplicateFilterSatisfied &&
+    (ShouldGenerateLegacyReport || ShouldGenerateExtendedReport || ShouldGenerateDirectedReport)
+```
+
 The controller shall stop monitoring for *Condition* if the RSSI of the received advertisements equals or falls below  *RSSI_threshold_low* over *RSSI_threshold_low_interval* for the particular device. The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with *Monitor_state* set to 0 to notify the host that the controller has stopped monitoring the particular device for the *Condition*. After the controller specifies the HCI_VS_MSFT_LE_Monitor_Device_Event with *Monitor_state* set to 0, the controller shall not allow further advertisement packets to flow to the host for the device until the controller has notified the host that the RSSI for the particular device has risen to or above *RSSI_threshold_high* for the particular device for the *Condition*.
+
 Additionally, the controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with *Monitor_state* set to 0 to notify the host that the controller has stopped monitoring the device for the *Condition* if the specified *RSSI_threshold_low_time_interval* expires without receiving any advertising packets from the device. If the controller is monitoring a device for a particular condition, the following statements are true.
 
 If the controller supports the RSSI monitoring of LE extended advertisements without sampling, the controller shall propagate anonymous advertisement packets to the host if the RSSI value for the packet is greater than or equal to *RSSI_threshold_high*. Anonymous advertisements shall not be tracked and the [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] event shall not be generated.
+
+If the controller supports the RSSI monitoring of LE advertisements without sampling, the controller shall generate a truncated advertising report in the case where the received fragment(s) of the advertisement are matching, but where the entire advertisement was not received successfully.
+
+The Controller shall support a minimum of 30 simultaneous Monitor_handles, a minimum of 30 simultaneous tracked devices, and a minimum of 20 simultaneous tracked duplicate advertisements. The Controller shall also be capable of performing a continuous LE scan at 10% duty cycle.
+
+If Address Resolution is enabled in the Controller and the Host intends to monitor a remote device with its IRK successfully stored in the Controller's resolving list, then the Host shall provide the Peer_Identity_Address and Peer_Identity_Address_Type parameters from the remote device's resolving list entry as the Peer_device_address and Peer_device_address_type parameters, respectively.
 
 | *RSSI_sampling_period* | Legacy Advertisements | Extended Advertisements (Non-Anonymous) | Extended Advertisements (Anonymous) |
 |--|--|--|--|
@@ -305,7 +361,7 @@ The *Condition_type* parameter specifies whether the *Condition* parameter speci
 
 If the *Condition_type* parameter specifies a pattern, the *Condition* contains two sections that contain the number of patterns present within the *Condition*, and the pattern data.
 
-:::image type="content" source="images/HCI_VS_MSFT_LE_Monitor_Advertisement_Conditions.png" alt-text="Pattern condition data layout":::
+:::image type="content" source="images/HCI_VS_MSFT_LE_Monitor_Advertisement_Conditions.png" alt-text="Diagram illustrating the pattern condition data layout for HCI_VS_MSFT_LE_Monitor_Advertisement.":::
 
 *Number of Patterns* specifies the number of patterns that need to be matched.
 
@@ -320,7 +376,7 @@ If there are multiple patterns specified, the controller shall ensure that at le
 
 If the controller supports the RSSI monitoring of LE extended advertisements without sampling:
 
-- The controller shall only look for the pattern in the first extended advertisement PDU. If the ad section extends beyond the first PDU, the controller shall look for the pattern within the part of the ad section that is in the first PDU.
+- The controller shall look for the pattern in the first 251 octets of the Host Advertising Data and may look in any remaining octets of the Host Advertising Data. If the AD section extends beyond the first 251 octets of the Host Advertising Data, the controller shall look for the pattern within the part of the AD section that is in the first 251 octets of the Host Advertising Data and may look in any remaining octets of the Host Advertising Data. Note: based on fragmentation by the advertiser, the first 251 octets of the Host Advertising Data may extend across the AdvData of multiple advertising PDUs. Scanners should take care to limit the number of AuxPtrs that they follow, to avoid following excessively long chains of PDUs.
 
 - The controller shall track based on a per device address per advertising set basis. The controller shall propagate a [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] for each advertising set that matches the pattern even if the advertisement comes from the same device address.
 
@@ -328,7 +384,7 @@ If the *Condition_type* parameter specifies a UUID, the *Condition* parameter co
 
 If the controller supports the RSSI monitoring of LE extended advertisements without sampling:
 
-- The controller shall only look for the Service UUID in the first extended advertisement PDU. If the ad section extends beyond the first PDU, the controller shall look for the Service UUID within the part of the ad section that is in the first PDU.
+- The controller shall look for the Service UUID in the first 251 octets of the Host Advertising Data and may look in any remaining octets of the Host Advertising Data. If the AD section extends beyond the first 251 octets of the Host Advertising Data, the controller shall look for the Service UUID within the part of the AD section that is in the first 251 octets of the Host Advertising Data and may look in any remaining octets of the Host Advertising Data. Note: based on fragmentation by the advertiser, the first 251 octets of the Host Advertising Data may span the AdvData of multiple advertising PDUs. Scanners should take care to limit the number of AuxPtrs that they follow, to avoid following excessively long chains of PDUs.
 
 - The controller shall track based on a per device address per advertising set basis. The controller shall propagate a [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] for each advertising set that matches the Service UUID even if the advertisement comes from the same device.
 
@@ -342,13 +398,39 @@ When active scanning is enabled, the scan response for an advertisement matching
 If the controller receives a HCI_VS_MSFT_LE_Monitor_Advertisement command when the filters are disabled (due to  a previously received [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable][ref_HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable] command with *Enable* set to 0x00), the controller shall accept the command if it can, but set it to a disabled state.
 The controller may also refuse the command for other reasons such as resource exhaustion.
 
+If all bits of Monitor_options are clear, the Controller should return the error code *Invalid HCI Command Parameters* (0x12).
+
+If bit 1 or bit 3 of Monitor_options is set and Peer_device_IRK is set to an invalid IRK, or none of the bits of Monitor_options is set, the Controller should return the error code *Invalid HCI Command Parameters* (0x12).
+
+If bit 0 or bit 1 or bit 2 or bit 3 of Monitor_options is set and Condition_type is set to 0x03 or 0x04, then the Controller should return the error code *Invalid HCI Command Parameters* (0x12).
+
+If bit 0 of Advertisement_report_filter_options is set and RSSI_sampling_period is any value other than 0x00, the Controller should return the error code *Invalid HCI Command Parameters* (0x12).
+
+#### Missing parameters
+
+When a version of this command is issued that does not include all the parameters, the following shall be used:
+
+| Parameter | Value |
+|--|--|
+| Monitor_options | Bit 5 set; all other bits cleared |
+| Advertisement_report_filter_options | Bits 1 and 2 set; all other bits cleared |
+| Peer_device_IRK | 0x0000000000000000&nbsp;0000000000000000 |
+| Peer_device_address | 0x000000000000 |
+| Peer_device_address_type | 0x00 |
+
 #### Command_parameters
 
-Subcommand_opcode (1 octet):
+Subcommand_opcode_v1 (1 octet):
 
 | Value | Parameter description |
 |--|--|
-| 0x03 | The subcommand opcode for [HCI_VS_MSFT_LE_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. |
+| 0x03 | The subcommand opcode for [HCI_VS_MSFT_LE_Monitor_Advertisement [v1]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. |
+
+Subcommand_opcode_v2 (1 octet):
+
+| Value | Parameter description |
+|--|--|
+| 0x0F | The subcommand opcode for [HCI_VS_MSFT_LE_Monitor_Advertisement [v2]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. |
 
 RSSI_threshold_high (1 octet):
 
@@ -374,8 +456,51 @@ RSSI_sampling_period (1 octet):
 | Value | Parameter description |
 |--|--|
 | 0x00 | The controller shall propagate all received advertisements to the host. |
-| *N*&nbsp;=&nbsp;0xXX | The sampling interval in milliseconds.<br>Time period = *N* * 100 milliseconds.<br>Mandatory Range: 0x01&nbsp;to&nbsp;0xFE |
+| *N*&nbsp;=&nbsp;0xXX | The sampling interval in multiples of 100 milliseconds.<br>Time period = *N* * 100 milliseconds.<br>Mandatory Range: 0x01&nbsp;to&nbsp;0xFE |
 | 0xFF | The controller shall not propagate any of the received advertisements to the host. |
+
+Monitor_options (1 octet):
+
+| Bit number | Parameter description |
+|--|--|
+| 0 | The Controller shall monitor advertising PDUs where AdvA or its resolved Identity Address matches Peer_device_address and Peer_device_address_type and where TargetA is not present or, if it is present, the TargetA is permitted based on the Scanning Filter Policy, if those PDUs match the condition specified in Condition_Type. |
+| 1 | The Controller shall monitor advertising PDUs where AdvA is resolvable with Peer_device_IRK and where TargetA is not present or, if it is present, the TargetA is permitted based on the Scanning Filter Policy, if those PDUs match the condition specified in Condition_Type. This bit shall not be set if Link Layer Privacy is in use in the Controller. |
+| 2 | The Controller shall monitor directed advertising PDUs where the TargetA is permitted based on the Scanning Filter Policy and where AdvA or its resolved Identity Address matches Peer_device_address and Peer_device_address_type. This is regardless of whether the PDU matches the condition specified in Condition_Type. |
+| 3 | The Controller shall monitor directed advertising PDUs where the TargetA is permitted based on the Scanning Filter Policy and where AdvA is resolvable with Peer_device_IRK. This is regardless of whether the PDU matches the condition specified in Condition_Type. This bit shall not be set if Link Layer Privacy is in use in the Controller. |
+| 4 | The Controller shall monitor directed advertising PDUs where the TargetA is permitted based on the Scanning Filter Policy, regardless of the value of Peer_device_address and Peer_device_address_type or  Peer_device_IRK and regardless of whether the PDU matches the condition specified in Condition_Type. |
+| 5 | The Controller shall monitor advertising PDUs from any AdvA where TargetA is not present or, if it is present, the TargetA is permitted based on the Scanning Filter Policy, if those PDUs match the condition specified in Condition_Type. |
+| All other bits | Reserved for future use |
+
+Advertisement_report_filtering_options (1 octet):
+
+| Bit number | Parameter description |
+|--|--|
+| 0 | Filter duplicate advertising PDUs. This bit shall only be set if RSSI_sampling_period is 0x00. |
+| 1 | The Controller shall generate HCI_LE_Advertising_Report events or HCI_LE_Directed_Advertising_Report events or HCI_LE_Extended_Advertising_Report events for Legacy advertising PDUs, if those PDUs match the specified Monitor_options. |
+| 2 | The Controller shall generate HCI_LE_Extended_Advertising_Report events for Extended advertising PDUs, if those PDUs match the specified Monitor_options. |
+| 3 | The Controller shall generate HCI_LE_Advertising_Report events or HCI_LE_Directed_Advertising_Report events or HCI_LE_Extended_Advertising_Report events for directed advertising PDUs, if those PDUs match the specified Monitor_options. |
+| All other bits | Reserved for future use |
+
+Peer_device_address (6 octets):
+
+| Value | Parameter description |
+|--|--|
+| 0xXXXXXXXXXXXX | Public Device Address or Random Device Address to match. |
+
+Peer_device_address_type (1 octet):
+
+| Value | Parameter description |
+|--|--|
+| 0x00 | Public Device Address |
+| 0x01 | Random Device Address |
+| All other values | Reserved for future use |
+
+Peer_device_IRK (16 octets):
+
+| Value | Parameter description |
+|--|--|
+| 0x0000000000000000&nbsp;0000000000000000 | Invalid IRK. Shall not be the value when Monitor_options bit 1 is set or when Monitor_options bit 3 is set. |
+| 0xXXXXXXXXXXXXXXXX&nbsp;XXXXXXXXXXXXXXXX | IRK of the device to match. Peer_device_address and Peer_device_address_type shall be populated. |
 
 Condition_type (1 octet):
 
@@ -383,8 +508,8 @@ Condition_type (1 octet):
 |--|--|
 | 0x01 | The condition is a pattern that has to be matched on the advertisement. |
 | 0x02 | The condition is a UUID Type and a UUID. |
-| 0x03 | The condition is the resolution of an IRK. |
-| 0x04 | The condition is a Bluetooth address Type and a Bluetooth address. |
+| 0x03 | The condition is the resolution of an IRK.  Excluded if any of Monitor_options bits 0, 1, 2, or 3 are set. |
+| 0x04 | The condition is a Bluetooth address Type and a Bluetooth address. Excluded if any of Monitor_options bits 0, 1, 2, or 3 are set. |
 
 Condition:
 The applicable fields for Condition depend on the value of Condition_type. See the Condition_type and Condition parameters section for more information.
@@ -452,7 +577,7 @@ Subcommand_opcode (1 octet):
 
 | Value | Parameter description |
 |--|--|
-| 0x03 | The subcommand opcode for [HCI_VS_MSFT_LE_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. |
+| 0x03 or 0x0F | The subcommand opcode for [HCI_VS_MSFT_LE_Monitor_Advertisement [v1]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement] or [HCI_VS_MSFT_LE_Monitor_Advertisement [v2]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement], depending on which command was submitted. |
 
 Monitor_handle (1 octet):
 
@@ -726,10 +851,274 @@ Monitor_handle (1 octet):
 
 Monitor_state (1 octet):
 
-| Value | Parameter description |
-|--|--|
-| 0x00 | The controller stopped monitoring the device specified by *BD_ADDR* and *Monitor_handle*. |
-| 0x01 | The controller started monitoring the device specified by *BD_ADDR* and *Monitor_handle*. |
+|Value|Parameter description|
+|---|---|
+|0x00|The controller stopped monitoring the device specified by _BD_ADDR_ and _Monitor_handle_.|
+|0x01|The controller started monitoring the device specified by _BD_ADDR_ and _Monitor_handle_.|
+
+## Microsoft-defined AVDTP HCI commands
+
+The following AVDTP HCI commands provide support for the audio sideband A2DP offload. For more information, see [Audio Sideband A2DP Offload](../audio/audio-sideband-a2dp-offload.md).
+
+|HCI AVDTP Commands|Description|
+|------------------|-----------|
+|[HCI_VS_MSFT_Avdtp_Capabilities_Configuration](#hci_vs_msft_avdtp_capabilities_configuration) | Configures the audio transport interface and returns codec capabilities of the Bluetooth controller, which is a list of codec information blocks. |
+|[HCI_VS_MSFT_Avdtp_Open](#hci_vs_msft_avdtp_open) | Allocates and configures AVDTP offload resources within the controller. |
+|[HCI_VS_MSFT_Avdtp_Start](#hci_vs_msft_avdtp_start) | Begins audio streaming from the audio transport to transmitted AVDTP media packets.|
+|[HCI_VS_MSFT_Avdtp_Suspend](#hci_vs_msft_avdtp_suspend) | Stops the streaming activity initiated by HCI_VS_MSFT_Avdtp_Start. |
+|[HCI_VS_MSFT_Avdtp_Close](#hci_vs_msft_avdtp_close) | Releases the AVDTP offload resources allocated by HCI_VS_MSFT_Avdtp_Open. |
+
+### HCI_VS_MSFT_Avdtp_Capabilities_Configuration
+
+HCI_VS_MSFT_Avdtp_Capabilities_Configuration configures the audio transport interface and returns codec capabilities of the Bluetooth controller, which is a list of codec information blocks. Each codec information block describes one supported codec.
+
+Some parameters below are arrays of structures with variable length, so it is assumed that all these parameters will still fit into one HCI Command and into one corresponding HCI Event.
+
+#### Command_parameters
+
+External\_codec\_count (1 octet):
+
+| **Value** | **Parameter description**                          |
+|-----------|----------------------------------------------------|
+| 0x00-0xFF | The count of Codec\_capability blocks that follow. |
+
+External\_codec\_capability (variable length):
+
+| **Value** | **Parameter description** |
+| --- | --- |
+| Codec capability block | A codec capability information block as described in the Codec capabilities information. This describes a single codec supported by the device attached to the audio interface. |
+
+This data structure repeats _External\_codec\_count_ times.
+
+Audio\_interface\_parameter\_count (1 octet):
+
+| **Value** | **Parameter description**                              |
+|-----------|--------------------------------------------------------|
+| 0x00-0xFF | The count of Audio\_interface\_parameters that follow. |
+
+Audio\_interface\_parameter (variable length)
+
+| **Value** | **Parameter description** |
+|-----------|---------------------------|
+| Audio interface parameter | An audio interface parameter as described above, set by the device connected to the audio interface. |
+
+This data structure repeats _Audio\_interface\_parameter\_count_ times.
+
+#### Return_parameters
+
+Status (1 octet):
+
+| **Value** | **Parameter description**                                                            |
+|-----------|--------------------------------------------------------------------------------------|
+| 0x00      | The command succeeded.                                                               |
+| 0x01-0xFF | The command failed. See Error Codes in the Bluetooth Core specification for details. |
+
+Subcommand\_opcode _ (1 octet):
+
+| **Value** | **Parameter description**                                                    |
+|-----------|------------------------------------------------------------------------------|
+| 0x07     | The subcommand opcode for HCI\_VS\_MSFT\_Avdtp\_Capabilities\_Configuration. |
+
+Internal\_codec\_count (1 octet):
+
+| **Value** | **Parameter description**                                    |
+|-----------|--------------------------------------------------------------|
+| 0x00-0xFF | The count of Internal\_codec\_capability blocks that follow. |
+
+Internal\_codec\_capability (variable length):
+
+| **Value** | **Parameter description** |
+| --- | --- |
+| Codec capability block | A codec capability information block as described in [Audio Sideband A2DP Offload](../audio/audio-sideband-a2dp-offload.md). This describes a single codec supported by the Bluetooth controller. |
+
+This data structure repeats Internal\_codec\_count times.
+
+Audio\_interface\_parameter\_count (1 octet):
+
+| **Value** | **Parameter description**                              |
+|-----------|--------------------------------------------------------|
+| 0x00-0xFF | The count of Audio\_interface\_parameters that follow. |
+
+Audio\_interface\_parameter (variable length)
+
+| **Value** | **Parameter description** |
+|-----------|---------------------------|
+| Audio interface parameter | An audio interface parameter as described above. The host software passes this parameter to the device connected to the audio interface. |
+
+This data structure repeats Audio\_interface\_parameter\_count times.
+
+### HCI_VS_MSFT_Avdtp_Open
+
+Allocates and configures AVDTP offload resources within the controller.
+
+Some parameters below are arrays of structures with variable length, so it is assumed that all these parameters will still fit into one HCI Command and into one corresponding HCI Event.
+
+#### Command_parameters
+
+Connection_handle (2 octets)
+
+| **Value** | **Parameter description**                                                 |
+|-----------|---------------------------------------------------------------------------|
+| 0xXXXX    | IIdentifies the AVDTP media L2CAP channel connected to the remote device. |
+
+L2cap_destination_cid (2 octets)
+
+| **Value** | **Parameter description**                    |
+|-----------|----------------------------------------------|
+| 0xXXXX    | L2CAP destination CID of AVDTP media channel |
+
+L2cap_mtu (2 octets)
+
+| **Value** | **Parameter description**     |
+|-----------|-------------------------------|
+| 0xXXXX    | L2CAP AVDTP media channel MTU |
+
+Configured_codec_capability (variable length):
+
+| **Value** | **Parameter description** |
+| --- | --- |
+| Codec capability block | A codec capability information block as described in [Audio Sideband A2DP Offload](../audio/audio-sideband-a2dp-offload.md). This describes the codec configured for the AVDTP media. |
+
+Audio_interface_parameter_count (1 octet):
+
+| **Value** | **Parameter description**                              |
+|-----------|--------------------------------------------------------|
+| 0x00-0xFF | The count of Audio\_interface\_parameters that follow. |
+
+Audio_interface_parameter (variable length)
+
+| **Value** | **Parameter description** |
+| --- | --- |
+| Audio interface parameter | An audio interface parameter as described above. The device connected to the audio interface specifies these parameters for a particular stream instance. |
+
+This data structure repeats Audio\_interface\_parameter\_count times.
+
+#### Return_parameters
+
+Status (1 octet):
+
+| **Value** | **Parameter description** |
+|-----------|---------------------------|
+| 0x00      | The command succeeded.    |
+| 0x01-0xFF | The command failed. See Error Codes in the Bluetooth Core specification for details. |
+
+Subcommand\_opcode (1 octet):
+
+| **Value** | **Parameter description**                             |
+|-----------|-------------------------------------------------------|
+| 0x08      | The subcommand opcode for HCI\_VS\_MSFT\_Avdtp\_Open. |
+
+Avdtp\_offload\_handle (2 octets):
+
+| **Value** | **Parameter description**                                   |
+|-----------|-------------------------------------------------------------|
+| 0xXXXX    | Identifies the resource allocated for the offloaded stream. |
+
+Audio_interface_parameter_count (1 octet):
+
+| **Value** | **Parameter description**                              |
+|-----------|--------------------------------------------------------|
+| 0x00-0xFF | The count of Audio\_interface\_parameters that follow. |
+
+Audio_interface_parameter (variable length)
+
+| **Value** | **Parameter description** |
+| --- | --- |
+| Audio interface parameter | An audio interface parameter as described above. The host software passes this parameter to the device connected to the audio interface for the stream instance. |
+
+This data structure repeats Audio_interface_parameter_count times.
+
+### HCI_VS_MSFT_Avdtp_Start
+
+This command begins audio streaming from the audio transport to transmitted AVDTP media packets. Upon executing this command, the Bluetooth controller begins the following activity.
+
+- Receives audio data from the audio transport
+- If the encoder is in the Bluetooth controller, encodes the data received from the audio transport to produce encoded frames
+- If the encoder is in the audio DSP, extracts encoded frames from the audio transport
+- Assembles encoded frames into AVDTP media payloads
+- Constructs and transmits AVDTP media packets containing the media payloads
+
+#### Command_parameters
+
+Avdtp_offload_handle (2 octets):
+
+| **Value** | **Parameter description**                                   |
+|-----------|-------------------------------------------------------------|
+| 0xXXXX    | Identifies the resource allocated for the offloaded stream. |
+
+#### Return_parameters
+
+Status (1 octet):
+
+| **Value** | **Parameter description** |
+| --- | --- |
+| 0x00 | The command succeeded. |
+| 0x01-0xFF | The command failed. See Error Codes in the Bluetooth Core specification for details. |
+
+Subcommand\_opcode (1 octet):
+
+| **Value** | **Parameter description**                              |
+|-----------|--------------------------------------------------------|
+| 0x09      | The subcommand opcode for HCI\_VS\_MSFT\_Avdtp\_Start. |
+
+### HCI_VS_MSFT_Avdtp_Suspend
+
+Stops the streaming activity initiated by HCI\_VS\_MSFT\_Avdtp\_Start.
+
+#### Command_parameters
+
+Avdtp\_offload\_handle (2 octets):
+
+| **Value** | **Parameter description**                                  |
+|-----------|------------------------------------------------------------|
+| 0xXXXX    | Identifies the resource allocated for the offloaded stream |
+
+#### Return_parameters
+
+Status (1 octet):
+
+| **Value** | **Parameter description**                                                            |
+|-----------|--------------------------------------------------------------------------------------|
+| 0x00      | The command succeeded.                                                               |
+| 0x01-0xFF | The command failed. See Error Codes in the Bluetooth Core specification for details. |
+
+Subcommand\_opcode (1 octet):
+
+| **Value** | **Parameter description**                                |
+|-----------|----------------------------------------------------------|
+| 0x0A      | The subcommand opcode for HCI\_VS\_MSFT\_Avdtp\_Suspend. |
+
+### HCI_VS_MSFT_Avdtp_Close
+
+Releases the AVDTP offload resources allocated by HCI\_VS\_MSFT\_Avdtp\_Open.
+
+#### Command_parameters
+
+Avdtp\_offload\_handle (2 octets):
+
+| **Value** | **Parameter description**                                         |
+|-----------|-------------------------------------------------------------------|
+| 0xXXXX    | Note: This value is no longer valid after this command completes. |
+
+#### Return_parameters
+
+Status (1 octet):
+
+| **Value** | **Parameter description**                                                            |
+|-----------|--------------------------------------------------------------------------------------|
+| 0x00      | The command succeeded.                                                               |
+| 0x01-0xFF | The command failed. See Error Codes in the Bluetooth Core specification for details. |
+
+Subcommand\_opcode (1 octet):
+
+| **Value** | **Parameter description**                              |
+|-----------|--------------------------------------------------------|
+| 0x0B      | The subcommand opcode for HCI\_VS\_MSFT\_Avdtp\_Close. |
+  
+| Value | Parameter description                                                                     |
+|-------|-------------------------------------------------------------------------------------------|
+| 0x00  | |
+| 0x01  | The controller started monitoring the device specified by *BD_ADDR* and *Monitor_handle*. |
 
 ## Appendix
 
@@ -811,7 +1200,7 @@ Verdict: **PASS** (both patterns match)
 
 Verdict: **PASS** (only first pattern matches)
 
-### Evaluating match for Advertisement packet [C]
+#### Evaluating match for Advertisement packet [C]
 
 | Description | Value |
 |--|--|
@@ -826,7 +1215,7 @@ Verdict: **PASS** (only first pattern matches)
 
 Verdict: **PASS** (only second pattern matches)
 
-### Evaluating match for Advertisement packet [D]
+#### Evaluating match for Advertisement packet [D]
 
 | Description | Value |
 |--|--|
@@ -872,7 +1261,7 @@ This example illustrates RSSI advertisement monitoring. The RSSI values for rece
 | *RSSI_threshold_low_time_interval* | 3 seconds |
 | *RSSI_sampling_period* | 2 seconds |
 
-:::image type="content" source="images/HCI_Example_Advertisement_Monitoring.png" alt-text="Advertisement monitoring graph":::
+:::image type="content" source="images/HCI_Example_Advertisement_Monitoring.png" alt-text="Graph showing advertisement monitoring with RSSI values over time.":::
 
 The advertisement RSSI is greater than *RSSI_threshold_high* at time 3. The periodic timer for sampling starts at time 3. Every 2 seconds, the periodic timer expires and the average RSSI value of the received advertisement is propagated to the stack.
 
@@ -882,13 +1271,53 @@ When the periodic timer expires at time 13, the average of the advertisement RSS
 
 When *RSSI_threshold_low_time_interval* expires at instant 15, an advertisement is propagated to the host with RSSI of -85dB. No further advertisements are sent to the host in this example.
 
+### Example: Monitoring BAP Announcements from a device
+
+While bonded with a CAP Acceptor, but not connected, a Host could monitor BAP Announcements from that device.
+
+| Parameter | Value |
+|--|--|
+| Subcommand_opcode_v2 | 0x0F |
+| RSSI_threshold_high | -127 |
+| RSSI_threshold_low | -127 |
+| RSSI_threshold_low_time_interval | 0x05 |
+| RSSI_sampling_period | 0x00 |
+| Monitor_options | Bit 0 set; Bit 1 set if the device distributed an IRK |
+| Advertisement_report_filtering_options | Bit 0, 1, and 2 set |
+| Peer_device_address | \<address\> |
+| Peer_device_address_type | \<address type\> |
+| Peer_device_IRK | \<IRK, if bit 1 is set\> |
+| Condition_type | 0x01 |
+| Number_of_patterns | 0x01 |
+| Pattern_data | 0x04 (length)<br>0x16 (Service Data – 16 bit UUID)<br>0x00 (Start byte)<br>0x4E (low byte of ASCS UUID)<br>0x18 (high byte of ASCS UUID) |
+
+### Example: Monitoring CAP Announcements from a device
+
+While bonded with a CAP Commander, but not connected, a Host could monitor CAP Announcements from that device.
+
+| Parameter | Value |
+|--|--|
+| Subcommand_opcode_v2 | 0x0F |
+| RSSI_threshold_high | -127 |
+| RSSI_threshold_low | -127 |
+| RSSI_threshold_low_time_interval | 0x05 |
+| RSSI_sampling_period | 0x00 |
+| Monitor_options | Bit 0 set; Bit 1 set if the device distributed an IRK |
+| Advertisement_report_filtering_options | Bit 0, 1, and 2 set |
+| Peer_device_address | \<address\> |
+| Peer_device_address_type | \<address type\> |
+| Peer_device_IRK | \<IRK, if bit 1 is set\> |
+| Condition_type | 0x01 |
+| Number_of_patterns | 0x01 |
+| Pattern_data | 0x04 (length)<br>0x16 (Service Data – 16 bit UUID)<br>0x00 (Start byte)<br>0x53 (low byte of CAS UUID)<br>0x18 (high byte of CAS UUID) |
+
 ### Flowchart: Advertisement and filter accept list filtering
 
 This flowchart provides an example controller implementation of advertisement filtering and filter accept list filtering when an advertisement is received.
 
 A controller can implement this logic differently, as long as the host is notified of the advertisement or [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] as specified by the flowchart.
 
-:::image type="content" source="images/HCI_Filtering_Flowchart.png" alt-text="Microsoft HCI extension filtering flowchart":::
+:::image type="content" source="images/HCI_Filtering_Flowchart.png" alt-text="Flowchart that shows Microsoft HCI extension filtering process.":::
 
 ### Sequence diagram: Propagate scan response associated with advertisement
 
@@ -898,4 +1327,4 @@ This sequence diagram shows a propagate scan response that is associated with an
 This diagram only shows the expected sequence of events between controller and host, and doesn't show events between the controller and a particular device.
 Assume that there's an advertisement *A* that satisfies an advertisement filter, and an advertisement *B* that doesn't satisfy the advertisement filter.
 
-:::image type="content" source="images/HCI_Propagate_Scan_Sequence.png" alt-text="HCI propagate scan sequence diagram":::
+:::image type="content" source="images/HCI_Propagate_Scan_Sequence.png" alt-text="Sequence diagram that shows HCI propagate scan response associated with advertisement.":::

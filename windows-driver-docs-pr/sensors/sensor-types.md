@@ -1,7 +1,7 @@
 ---
-title: Sensor types
+title: Sensor Types
 description: Universal Sensor Type GUIDs
-ms.date: 03/02/2023
+ms.date: 08/01/2024
 ms.topic: reference
 ---
 
@@ -18,9 +18,11 @@ Sensor type GUIDs are defined in Sensorsdef.h.
 | GUID_SensorType_AmbientLight | This GUID identifies the ambient light sensor. |
 | GUID_SensorType_Barometer | This GUID identifies the barometer |
 | GUID_SensorType_Custom | This GUID identifies a custom sensor. |
+| GUID_SensorType_FloorElevation | This GUID identifies the floor elevation. |
 | GUID_SensorType_GeomagneticOrientation | This GUID identifies the geomagnetic orientation. |
 | GUID_SensorType_GravityVector | This GUID identifies the gravity vector. |
 | GUID_SensorType_Gyrometer3D | This GUID identifies the gyrometer. |
+| GUID_SensorType_HingeAngle | This GUID identifies the hinge angle. |
 | GUID_SensorType_Humidity | This GUID identifies the humidity sensor. |
 | GUID_SensorType_LinearAccelerometer | This GUID identifies the linear accelerometer. |
 | GUID_SensorType_Magnetometer3D | This GUID identifies the magnetometer. |

@@ -2,6 +2,7 @@
 title: Using an Interrupt to Wake a Device
 description: When a device transitions to a low-power state, the framework disconnects (or reports as inactive) interrupts that are used for I/O handling.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Using an Interrupt to Wake a Device
@@ -47,7 +48,7 @@ Follow these steps to create a wake-capable interrupt object in your KMDF or UMD
 
 9.  The framework continues with the normal power-up callback sequence, as described in [Power-Up Sequence for a Function or Filter Driver](power-up-sequence-for-a-function-or-filter-driver.md).
 
-You can use the [**!wdfkd.wdfinterrupt**](../debugger/-wdfkd-wdfinterrupt.md) debugger extension to show whether a specific interrupt has been configured to be wake-capable.
+You can use the [**!wdfkd.wdfinterrupt**](../debuggercmds/-wdfkd-wdfinterrupt.md) debugger extension to show whether a specific interrupt has been configured to be wake-capable.
 
 Wake interrupt functionality cannot be used in conjunction with USB selective suspend.
 

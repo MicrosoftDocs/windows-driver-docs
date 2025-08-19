@@ -3,6 +3,7 @@ title: Debugging Performance-Optimized Code
 description: Debugging Performance-Optimized Code
 keywords: ["performance-optimized code"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging Performance-Optimized Code
@@ -21,7 +22,7 @@ Therefore, a function (or any symbol) plus an offset will not necessarily have t
 
 ### <span id="debugging_performance_optimized_code"></span><span id="DEBUGGING_PERFORMANCE_OPTIMIZED_CODE"></span>Debugging Performance-Optimized Code
 
-When debugging, you can see if a module has been performance-optimized by using the [**!lmi**](-lmi.md) extension command on any module for which symbols have been loaded:
+When debugging, you can see if a module has been performance-optimized by using the [**!lmi**](../debuggercmds/-lmi.md) extension command on any module for which symbols have been loaded:
 
 ```dbgcmd
 0:000> !lmi ntdll
@@ -43,7 +44,7 @@ Debug Data Dirs: Type Size     VA  Pointer
 
 In this output, notice the term **perf** on the "Characteristics" line. This indicates that this performance optimization has been applied to ntdll.dll.
 
-The debugger is able to understand a function or other symbol without an offset; this allows you to set breakpoints on functions or other labels without any problem. However, the output of a dissassembly operation may be confusing, because this disassembly will reflect the changes made by the optimizer.
+The debugger is able to understand a function or other symbol without an offset; this allows you to set breakpoints on functions or other labels without any problem. However, the output of a disassembly operation may be confusing, because this disassembly will reflect the changes made by the optimizer.
 
 Since the debugger will try to stay close to the original code, you might see some amusing results. The rule of thumb when working with performance-optimized codes is simply that you cannot perform reliable address arithmetic on optimized code.
 
@@ -87,15 +88,10 @@ f8641afb 5b               pop     ebx
 f8641afc c9               leave
 ```
 
-What is happening here is that the debugger recognizes the symbol **IPTransmit** as equivalent to the address 0xF8640CA6, and the command parser performs a simple addition to find that 0xF8640CA6 + 0xE48 = 0xF8641AEE. This address is then used as the argument for the [**u (Unassemble)**](u--unassemble-.md) command. But once this location is analyzed, the debugger discovers that this is not **IPTransmit** plus an offset of 0xE48. Indeed, it is not part of this function at all. Rather, it corresponds to the function **ARPTransmit** plus an offset of 0xD8.
+What is happening here is that the debugger recognizes the symbol **IPTransmit** as equivalent to the address 0xF8640CA6, and the command parser performs a simple addition to find that 0xF8640CA6 + 0xE48 = 0xF8641AEE. This address is then used as the argument for the [**u (Unassemble)**](../debuggercmds/u--unassemble-.md) command. But once this location is analyzed, the debugger discovers that this is not **IPTransmit** plus an offset of 0xE48. Indeed, it is not part of this function at all. Rather, it corresponds to the function **ARPTransmit** plus an offset of 0xD8.
 
 The reason this happens is that performance optimization is not reversible through address arithmetic. While the debugger can take an address and deduce its original symbol and offset, it does not have enough information to take a symbol and offset and translate it to the correct address. Consequently, disassembly is not useful in these cases.
 
  
 
  
-
-
-
-
-

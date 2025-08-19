@@ -2,6 +2,7 @@
 title: TraceLogging Examples
 description: The source code in this topic demonstrates how to use TraceLogging.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # TraceLogging Examples
@@ -9,7 +10,7 @@ ms.date: 04/20/2017
 
 The source code in this topic demonstrates how to use TraceLogging.
 
-```
+```cpp
 #include <windows.h>
 #include <TraceLoggingProvider.h>
 #include <winmeta.h>

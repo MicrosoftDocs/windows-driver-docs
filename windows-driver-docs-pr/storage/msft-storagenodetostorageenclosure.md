@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageNodeToStorageEnclosure class
+title: MSFT_StorageNodeToStorageEnclosure Class
 description: Association between StorageNode and StorageEnclosure.
 ms.assetid: 1EC3975C-618B-4DE0-B1CC-B6B63D1936BE
 keywords:
@@ -23,7 +23,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

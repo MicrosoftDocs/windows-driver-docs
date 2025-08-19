@@ -1,7 +1,8 @@
 ---
-title: Handling dispatch routines in stream drivers
+title: Handling Dispatch Routines in Stream Drivers
 description: Provides guidance for handling driver dispatch routines.
 ms.date: 05/17/2018
+ms.topic: concept-article
 ---
 
 # Handling dispatch routines in stream drivers
@@ -82,7 +83,7 @@ _Dispatch_type_(IRP_MJ_POWER) DRIVER_DISPATCH KsDefaultDispatchPower;
 
 The **KsDefaultDispatchPower** function is a default main Power dispatch handler. Notifications regarding the Functional Device Object can be directed here. This function passes all notifications to the PnP Device Object previously set with **KsSetDevicePnpAndBaseObject**, and assumes the use of a device header.
 
-The **KsDefaultDispatchPower** function is useful when there is no extra cleanup needed on power IRPs, or just as a way of completing any power IRP. It also allows specific file objects, such as the default clock imlementation, to attach themselves to the power IRPs using **KsSetPowerDispatch**, and act on them before they are completed by this routine. This function calls each power dispatch routine before completing the IRP.
+The **KsDefaultDispatchPower** function is useful when there is no extra cleanup needed on power IRPs, or just as a way of completing any power IRP. It also allows specific file objects, such as the default clock implementation, to attach themselves to the power IRPs using **KsSetPowerDispatch**, and act on them before they are completed by this routine. This function calls each power dispatch routine before completing the IRP.
 
 For more information, see the [DRIVER_DISPATCH](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 

@@ -13,6 +13,7 @@ keywords:
 - process trace sessions WDK
 - reserved trace sessions WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Trace Session
@@ -62,12 +63,4 @@ The buffers used in private trace sessions are always pageable. You cannot speci
 You cannot send the trace messages from a private trace session to the debugger. The WMI Tracing Extension (**!wmitrace**) does not support private trace sessions.
 
 For more information about private event tracing sessions, see the Microsoft Windows SDK documentation.
-
- 
-
- 
-
-
-
-
 

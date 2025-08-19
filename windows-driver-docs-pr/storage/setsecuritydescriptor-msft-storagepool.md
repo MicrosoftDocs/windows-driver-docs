@@ -1,5 +1,5 @@
 ---
-title: SetSecurityDescriptor method of the MSFT\_StoragePool class
+title: SetSecurityDescriptor Method of the MSFT_StoragePool Class
 description: Sets or changes the security descriptor that controls access to the storage pool object.
 ms.assetid: 443D68E6-A51F-43C6-ABFC-8B9FBEFA9D5A
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

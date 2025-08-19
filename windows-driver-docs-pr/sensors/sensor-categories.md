@@ -1,7 +1,7 @@
 ---
-title: Sensor categories
+title: Sensor Categories
 description: Sensor categories
-ms.date: 03/02/2023
+ms.date: 08/01/2024
 ms.topic: reference
 ---
 
@@ -23,5 +23,6 @@ Sensor category GUIDs are defined in SensorsDef.h
 | GUID_SensorCategory_Motion| This GUID identifies the motion sensor category. |
 | GUID_SensorCategory_Orientation | This GUID identifies the orientation sensor category. |
 | GUID_SensorCategory_Other | This GUID identifies a category for sensors that are supported, but do not fit into any of the predefined categories. |
+| GUID_SensorCategory_PersonalActivity | This GUID identifies the personal activity sensor category. |
 | GUID_SensorCategory_Scanner| This GUID identifies the scanner sensor category. |
 | GUID_SensorCategory_Unsupported| This GUID identifies a category for sensors that are unsupported. |

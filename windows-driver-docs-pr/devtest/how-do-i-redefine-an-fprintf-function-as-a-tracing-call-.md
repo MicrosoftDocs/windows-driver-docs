@@ -1,7 +1,8 @@
 ---
-title: How do I redefine an fprintf function as a tracing call
+title: How do I Redefine an Fprintf Function as a Tracing Call
 description: How do I redefine an fprintf function as a tracing call
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How do I redefine an fprintf function as a tracing call?
@@ -26,12 +27,4 @@ The following example shows a function description that does both:
 You can define this function description in a local configuration file, such as localwpp.ini, or use the **-func** parameter of RUN\_WPP (the macro that invokes the WPP preprocessor) to define the function description.
 
 For a complete list of the optional parameters for RUN\_WPP, see [WPP Preprocessor](wpp-preprocessor.md).
-
- 
-
- 
-
-
-
-
 

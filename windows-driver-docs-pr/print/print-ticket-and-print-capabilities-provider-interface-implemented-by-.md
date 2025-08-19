@@ -1,9 +1,10 @@
 ---
-title: Print ticket and capabilities - Unidrv/Pscript5
+title: Print Ticket and Capabilities - Unidrv/Pscript5
 description: Print ticket and print capabilities provider interface implemented by Unidrv/Pscript5 plug-ins
 keywords:
 - Unidrv WDK print
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print ticket and print capabilities provider interface implemented by Unidrv/Pscript5 plug-ins

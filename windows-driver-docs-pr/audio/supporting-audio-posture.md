@@ -2,7 +2,7 @@
 title: Supporting Audio Posture
 description: Windows 11 provides the ability to determine the posture of the device and remap and calibrate input and outputs to create an improved user experience.
 ms.date: 08/13/2021
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Supporting Audio Posture
@@ -26,7 +26,7 @@ posture notifications from the display and informs audio endpoints that support 
 
 The following diagram shows the relationship and control flow between components involved with handling posture changes for audio devices.
 
-![stack diagram showing osshell talking OS audio, in user mode with an APO, talking down to portcls and the audio driver in kernel](images/audio-posture-architecture.png)
+:::image type="content" source="images/audio-posture-architecture.png" alt-text="Diagram showing the relationship between OS Shell, OS Audio, APO, PortCls, and Audio Driver in handling posture changes for audio devices.":::
 
 
 ## Components  

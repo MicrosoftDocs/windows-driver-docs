@@ -1,8 +1,9 @@
 ---
-title: Disable protected DLL verification
+title: Disable Protected DLL Verification
 description: Disable protected DLL verification
 keywords: ["Disable protected DLL verification (global flag)"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Disable protected DLL verification
@@ -43,8 +44,3 @@ The **Disable protected DLL verification** flag appears in GFlags, but it has no
  
 
  
-
-
-
-
-

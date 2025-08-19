@@ -1,5 +1,5 @@
 ---
-title: INF AddReg directive
+title: INF AddReg Directive
 description: An AddReg directive references one or more INF-writer-defined add-registry-sections that are used to modify or create registry information.
 keywords:
 - INF AddReg Directive Device and Driver Installation
@@ -10,7 +10,7 @@ api_name:
 - INF AddReg Directive
 api_type:
 - NA
-ms.date: 06/14/2022
+ms.date: 03/05/2025
 ---
 
 # INF AddReg directive
@@ -151,6 +151,9 @@ The given _value-entry-name_ and/or _value_ is of the registry type [REG_DWORD](
 
 **0x00020001** (FLG_ADDREG_TYPE_NONE)  
 The given _value-entry-name_ and/or _value_ is of the registry type [REG_NONE](/windows/desktop/SysInfo/registry-value-types).
+
+**0x000B0001** (FLG_ADDREG_TYPE_QWORD)  
+The given _value-entry-name_ and/or _value_ is of the registry type [REG_QWORD](/windows/desktop/SysInfo/registry-value-types).
 
 _value_  
 This optionally specifies a new value for the specified _value-entry-name_ to be added to the given registry key. Such a _value_ can be a "replacement" value for an existing named value entry in an existing key, a value to be appended (_flag_ value **0x00010008**) to an existing named [REG_MULTI_SZ](/windows/desktop/SysInfo/registry-value-types)-type value entry in an existing key, a new value entry to be written into an existing key, or the initial value entry for a new _subkey_ to be added to the registry.

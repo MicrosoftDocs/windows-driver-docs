@@ -3,6 +3,7 @@ title: PnP Driver Design Guidelines
 description: PnP Driver Design Guidelines
 keywords: ["PnP WDK kernel , design guidelines", "Plug and Play WDK kernel , design guidelines"]
 ms.date: 06/16/2017
+ms.topic: design-pattern
 ---
 
 # PnP Driver Design Guidelines

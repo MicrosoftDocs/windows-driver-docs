@@ -5,6 +5,7 @@ keywords:
 - Static Driver Verifier Report WDK , Source Code pane
 - Source Code pane WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using the Source Code Pane
@@ -21,12 +22,4 @@ To find the functions that SDV is monitoring for the rule and identify actions t
 You can use the **Source Code** pane to read any file, but the cursor steps through the code line by line; not in the order of execution.
 
 You can also copy the code from any tab of the **Source Code** pane and paste it into an application that supports rich text format (RTF) files, such as Microsoft Word or WordPad. To copy the code, from the **Edit** menu, select **Select All** and then, from the **Edit** menu, select **Copy**. Or, press CTRL+A (select all) and then CTRL+C (copy).
-
- 
-
- 
-
-
-
-
 

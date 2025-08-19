@@ -6,6 +6,7 @@ keywords:
 - maximum header size WDK header-data split
 - buffer allocations WDK header-data split
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Allocating the Header Buffer

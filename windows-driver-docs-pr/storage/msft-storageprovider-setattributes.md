@@ -1,5 +1,5 @@
 ---
-title: SetAttributes method of the MSFT\_StorageProvider class
+title: SetAttributes Method of the MSFT_StorageProvider Class
 description: Sets the attributes of the provider.
 ms.assetid: 649B08C0-CC46-4A93-8037-47CACBC1AD4E
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

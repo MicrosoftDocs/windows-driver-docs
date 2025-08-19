@@ -1,5 +1,5 @@
 ---
-title: CreatePartition method of the MSFT\_Disk class
+title: CreatePartition Method of the MSFT_Disk Class
 description: Creates a partition on a disk.
 ms.assetid: 4356352c-462e-4283-97e1-fcf7fe173b19
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

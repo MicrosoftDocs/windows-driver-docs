@@ -1,7 +1,8 @@
 ---
-title: Single-Component Device, one or more Functional Power States
+title: Single-Component Device, One or More Functional Power States
 description: Describes how to implement Fx state support for a single-component device in a KMDF driver.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Supporting Single-Component Devices with Single or Multiple Functional Power States
@@ -34,7 +35,7 @@ The framework calls the driver's [*EvtDeviceWdmPostPoFxRegisterDevice*](/windows
 3.  [*EvtInterruptEnable*](/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_enable)
 4.  [*EvtDeviceWdmPostPoFxRegisterDevice*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdfdevice_wdm_post_po_fx_register_device) // PoFx handle is available
 
-The driver provides the [*EvtDeviceWdmPostPoFxRegisterDevice*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdfdevice_wdm_post_po_fx_register_device) callback if it must perform any additional operations using the POHANDLE for the power framework registration. For example, it could specify latency, residency, and wake requirements. For more information about routines that use the POHANDLE, see [Device Power Management Routines](/windows-hardware/drivers/ddi/index).
+The driver provides the [*EvtDeviceWdmPostPoFxRegisterDevice*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdfdevice_wdm_post_po_fx_register_device) callback if it must perform any additional operations using the POHANDLE for the power framework registration. For example, it could specify latency, residency, and wake requirements. For more information about routines that use the POHANDLE, see [Device Power Management Routines](/windows-hardware/drivers/kernel/device-power-management-reference#device-power-management-routines).
 
 Your driver can also use the POHANDLE to exchange power control requests with PoFx:
 

@@ -2,6 +2,7 @@
 title: Rules for KMDF Drivers
 description: Rules for KMDF Drivers
 ms.date: 05/21/2018
+ms.topic: best-practice
 ---
 
 # Rules for KMDF Drivers
@@ -65,12 +66,4 @@ This section lists and describes the [DDI Compliance Rules](static-driver-verifi
 </table>
 
  
-
- 
-
- 
-
-
-
-
 

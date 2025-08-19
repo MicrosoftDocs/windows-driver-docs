@@ -1,5 +1,5 @@
 ---
-title: GetSupportedCopyStates method of the MSFT\_ReplicationCapabilities class
+title: GetSupportedCopyStates Method of the MSFT_ReplicationCapabilities Class
 description: Returns, for a given ReplicationType, the supported copy states.
 ms.assetid: A9E00172-F462-46B7-9738-D87593CFC341
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

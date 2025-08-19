@@ -3,13 +3,10 @@ title: Debugging an Application Failure
 description: Debugging an Application Failure
 keywords: ["application failures"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging an Application Failure
-
-
-## <span id="ddk_debugging_an_application_failure_dbg"></span><span id="DDK_DEBUGGING_AN_APPLICATION_FAILURE_DBG"></span>
-
 
 There are a variety of errors possible in user-mode applications.
 
@@ -23,11 +20,8 @@ Critical section timeouts (or possible deadlocks) occur when one thread is waiti
 
 In-page I/O errors are almost always hardware failures. You can double-check the status code in ntstatus.h to verify.
 
- 
+## See also
 
- 
+[Displaying a Critical Section](displaying-a-critical-section.md)
 
-
-
-
-
+[Critical Section Time Outs](critical-section-time-outs.md) (user mode)

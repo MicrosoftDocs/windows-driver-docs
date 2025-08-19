@@ -4,6 +4,7 @@ description: Setting Advanced Trace Session Options
 keywords:
 - trace sessions WDK , options
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting Advanced Trace Session Options
@@ -27,12 +28,4 @@ This section includes:
 For information about setting these properties in a [trace controller](trace-controller.md), see the description of the **EVENT\_TRACE\_PROPERTIES** structure in the Microsoft Windows SDK documentation.
 
 The default values that TraceView sets might differ from the default values set by other trace controllers, such as [Tracelog](tracelog.md).
-
- 
-
- 
-
-
-
-
 

@@ -1,8 +1,9 @@
 ---
-title: C30029 warning
+title: C30029 Warning
 description: Warning C30029 Calling a memory allocating function that requests executable memory.
 ms.date: 08/23/2022
 f1_keywords: ["C30029", "BANNED_MEM_ALLOCATION_NOTYPE", "__WARNING_BANNED_MEM_ALLOCATION_NOTYPE"]
+ms.topic: reference
 ---
 # C30029
 
@@ -24,7 +25,7 @@ The following code generates this warning. This issue stems from the use of `MmM
 MmMapIoSpace(PhysicalAddress, numberOfBytes, MmNonCached);
 ```
 
-The following code avoids this warning by replaceing `MmMapIoSpace` with `MmMapIoSpace`:
+The following code avoids this warning by replacing `MmMapIoSpace` with `MmMapIoSpace`:
 
 ```cpp
 MmMapIoSpaceEx(PhysicalAddress, numberOfBytes, PAGE_NOCACHE | PAGE_READWRITE);

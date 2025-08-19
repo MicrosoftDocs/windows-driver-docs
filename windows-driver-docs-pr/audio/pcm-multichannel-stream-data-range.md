@@ -4,6 +4,7 @@ description: PCM Multichannel Stream Data Range
 keywords:
 - PCM multichannel stream data ranges WDK
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # PCM Multichannel Stream Data Range

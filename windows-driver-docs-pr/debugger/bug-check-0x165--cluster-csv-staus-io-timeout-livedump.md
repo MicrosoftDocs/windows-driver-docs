@@ -17,7 +17,7 @@ api_type:
 The CLUSTER\_CSV\_STATUS\_IO\_TIMEOUT\_LIVEDUMP live dump has a value of 0x00000165. This indicates that a SMB client on the non-coordinating node complains that an IO on coordinating node is taking too long and fails all IOs with STATUS_IO_TIMEOUT.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## CLUSTER\_CSV\_STATUS\_IO\_TIMEOUT\_LIVEDUMP Parameters
@@ -45,7 +45,7 @@ Additional information is available in the dump's secondary data streams.
 
 [Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 
-[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+[Kernel Live Dump Code Reference](kernel-live-dump-code-reference.md)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

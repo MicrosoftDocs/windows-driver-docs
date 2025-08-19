@@ -4,6 +4,7 @@ description: Supporting Point and Print
 keywords:
 - Point and Print WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting Point and Print

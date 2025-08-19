@@ -6,6 +6,7 @@ keywords:
 - tracing WDK , basic options
 - software tracing WDK , basic options
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How to Set Basic Trace Session Options
@@ -20,12 +21,4 @@ Use this procedure to set basic trace session options while creating a trace ses
 3.  To add additional providers, click **Add Provider**. Otherwise, click **Next**.
 
 4.  On the **Log Session Options** page, set the basic trace session options.
-
- 
-
- 
-
-
-
-
 

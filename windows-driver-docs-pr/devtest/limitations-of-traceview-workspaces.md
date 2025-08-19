@@ -4,6 +4,7 @@ description: Limitations of TraceView Workspaces
 keywords:
 - workspaces WDK TraceView , limitations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Limitations of TraceView Workspaces
@@ -22,12 +23,4 @@ The TraceView workspaces feature has the following limitations.
 -   Workspaces are not saved in files. You cannot move them to a remote computer.
 
 -   Workspaces that are created by one version of TraceView might not be supported in other versions of TraceView.
-
- 
-
- 
-
-
-
-
 

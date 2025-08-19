@@ -1,13 +1,14 @@
 ---
 title: UEFI CA Memory Mitigation Requirements for Signing
 description: Provides background and guidance on the signing requirements for UEFI memory mitigations.
-ms.date: 03/23/2023
+ms.date: 05/12/2025
+ms.topic: best-practice
 ---
 
 # UEFI memory mitigations
 
 The Microsoft 3rd Party UEFI Certificate Authority (CA) requirements are being updated to mandate that UEFI images
-include memory mitigations - these changes will be reflected in [UEFI Signing Requirements - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/hardware-dev-center/updated-uefi-signing-requirements/ba-p/1062916).
+include memory mitigations - these changes are reflected in [UEFI Signing Requirements - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/hardware-dev-center/updated-uefi-signing-requirements/ba-p/1062916).
 
 The [Cybersecurity & Infrastructure Security Agency](https://static.rainfocus.com/rsac/us21/sess/1602603692582001zuMc/finalwebsite/2021_US21_TECH-W13_01_DHS-CISA-Strategy-to-Fix-Vulnerabilities-Below-the-OS-Among-Worst-Offenders_1620749389851001CH5E.pdf)
 recently found that firmware vulnerabilities, as a whole, continue to rise. Meanwhile, firmware mitigation techniques
@@ -39,7 +40,7 @@ Since No Execute (NX) compliance can't be detected statically, firmware that set
 should follow these steps to ensure that the firmware image can operate correctly with NX protections applied.
 
 1. The code module must not execute self-modifying code; meaning that the code sections of the application must not have
-   the write attribute. Any attempt to change values within the memory range will cause an execution fault.
+   the write attribute. Any attempt to change values within the memory range causes an execution fault.
 
 1. If the code module attempts to load any internal code into memory for execution, or if it provides support for
    an external loader, then it must use the `EFI_MEMORY_ATTRIBUTE_PROTOCOL` appropriately.  This optional protocol
@@ -51,7 +52,7 @@ should follow these steps to ensure that the firmware image can operate correctl
      assume newly allocated memory allows code execution (even of code types).
 
 1. The application must not assume all memory ranges are valid; specifically, page 0 (typically at physical address
-   0 to 4 KB).
+   0 KB to 4 KB).
 
 1. Stack space can't be used for code execution.
 
@@ -61,14 +62,14 @@ the DLL Characteristic bit.
 ## Application of memory mitigation requirements
 
 Image section alignment enables the UEFI/Platform Initialization (PI) firmware environment to protect the section with
-page table attributes. In addition, firmware components should assume page table attributes will be applied to a
+page table attributes. In addition, firmware components should assume page table attributes are applied to a
 firmware image to enable the following features:
 
 - No Execute (NX) memory protection - Any non-code sections will be marked as NX and code sections will be
   marked read-only (RO) to prevent execution outside code sections and overwriting of code sections.
 
 - Page guards - A guard page may be added before and after the corresponding page allocated. Any attempt to access
-  the guard page will result in a page fault (#PF).
+  the guard page results in a page fault (#PF).
 
 - Pool guards - A head guard page and a tail guard page will be placed before and after the portion of memory, which the
   allocated pool occupies. It's recommended that vendor firmware tests for both underflow (using a head guard page)

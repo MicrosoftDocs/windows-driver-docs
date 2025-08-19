@@ -7,6 +7,7 @@ keywords:
 - user-mode drivers WDK UMDF , USB interfaces
 - USB interfaces WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Working with USB Interfaces in UMDF 1.x Drivers

@@ -1,9 +1,10 @@
 ---
-title: C28723 warning
+title: C28723 Warning
 description: Warning C28723 Unannotated buffer in function definition that has no corresponding declaration.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28723"
+ms.topic: reference
 ---
 
 # C28723

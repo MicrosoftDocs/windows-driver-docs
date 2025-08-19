@@ -1,7 +1,8 @@
 ---
-title: USB request blocks (URBs)
+title: USB Request Blocks (URBs)
 description: Information about how a USB client driver can allocate, build, and submit URBs to the USB driver stack.
-ms.date: 01/18/2023
+ms.date: 01/12/2024
+ms.topic: concept-article
 ---
 
 # USB request blocks (URBs)

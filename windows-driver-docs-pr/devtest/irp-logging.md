@@ -5,6 +5,7 @@ keywords:
 - IRP Logging feature WDK Driver Verifier
 - DC2WMIParser tool
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # IRP Logging
@@ -129,12 +130,4 @@ The second device begins here:
     1                           Number of IOCTLs for second targeted device (type 2d)
       2d,420,0,0,c,0              Device type 2d, function 420, method 0, access 0, inbuflen c, outbuflen 0
 ```
-
- 
-
- 
-
-
-
-
 

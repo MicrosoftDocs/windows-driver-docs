@@ -4,6 +4,7 @@ description: Windows SDK References
 keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , Windows SDK references
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Windows SDK References
@@ -13,7 +14,7 @@ ms.date: 04/20/2017
 
  
 
-To understand the material in this section, you should befamiliar with standard COM interfaces and methods, and specifically the following:
+To understand the material in this section, you should be familiar with standard COM interfaces and methods, and specifically the following:
 
 [IWizardExtension COM Interface](/windows/win32/api/shobjidl/nn-shobjidl-iwizardextension)
 

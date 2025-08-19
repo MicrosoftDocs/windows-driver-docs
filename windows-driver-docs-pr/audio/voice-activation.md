@@ -1,13 +1,14 @@
 ---
 title: Voice Activation
 description: Cortana, the Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation.
-ms.date: 05/15/2020
+ms.date: 08/17/2023
+ms.topic: concept-article
 ---
 
 # Voice Activation
 
 > [!NOTE]
-> This topic refers primarily to our consumer experiences, which are currently delivered in Windows 10 (version 1909 and earlier).
+> This topic refers primarily to our consumer experiences, which are currently delivered in Windows 10 (version 1909 and earlier) For more information, see [End of support for Cortana in Windows and Teams](https://support.microsoft.com/topic/end-of-support-for-cortana-in-windows-and-teams-d025b39f-ee5b-4836-a954-0ab646ee1efa).
 
 Cortana, the personal assistant technology was demonstrated for the first time at the Microsoft BUILD Developer Conference in 2013. The Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation. Voice activation is a feature that enables users to invoke a speech recognition engine from various device power states by saying a specific phrase - "Hey Cortana". To create hardware that supports voice activation technology, review the information in this topic.
 
@@ -21,7 +22,6 @@ To understand the voice interaction experience available in Windows, review thes
 |Topic|Description|
 |----|----|
 | [What is Cortana?](https://support.microsoft.com/help/17214/cortana-what-is)      | Provides and overview and usage direction for Cortana                 |
-| [Make Cortana yours](https://support.microsoft.com/help/17178/windows-10-make-cortana-yours) | Describes customization available through Cortana's Settings screens. |
 
 ## Introduction to "Hey Cortana" Voice Activation and "Learn my voice"
 
@@ -39,7 +39,7 @@ A *chained command* describes the ability of issuing a command immediately follo
 
 This diagram illustrates chained and keyword only activation.
 
-![chained and keyword activation diagram showing audio buffer and time sequence.](images/audio-chained-keyword-activation.png)
+:::image type="content" source="images/audio-chained-keyword-activation.png" alt-text="Diagram showing the difference between chained and keyword-only activation with audio buffer and time sequence.":::
 
 Microsoft provides an OS default keyword spotter (software keyword spotter) that is used to ensure quality of hardware keyword detections and to provide the Hey Cortana experience in cases where hardware keyword detection is absent or unavailable.
 
@@ -47,7 +47,7 @@ Microsoft provides an OS default keyword spotter (software keyword spotter) that
 
 The "Learn my voice" feature allows the user to train Cortana to recognize their unique voice. This is accomplished by the user selecting *Learn how I say "Hey Cortana"* in the Cortana settings screen. The user then repeats six carefully chosen phrases that provide a sufficient variety of phonetic patterns to identify the unique attributes of the users voice.
 
-![cortana desktop settings for hw keyword spotter wake on voice.](images/audio-voice-activation-settings-2017.png)
+:::image type="content" source="images/audio-voice-activation-settings-2017.png" alt-text="Screenshot of Cortana desktop settings for hardware keyword spotter and wake on voice feature.":::
 
 When voice activation is paired with "Learn my voice", the two algorithms will work together to reduce false activations. This is especially valuable for the meeting room scenario, where one person says "Hey Cortana" in a room full of devices. This feature is  available only for Windows 10 version 1903 and earlier.
 
@@ -68,7 +68,7 @@ This glossary summarizes terms related to voice activation.
 |KWS                    |Keyword spotter – the algorithm that provides the detection of “Hey Cortana” |
 | SW KWS                |Software keyword spotter – an implementation of KWS that runs on the host (CPU). For "Hey Cortana", SW KWS is included as part of Windows. |
 | HW KWS                | Hardware-offloaded keyword spotter – an implementation of KWS that runs offloaded on hardware. |
-|Burst Buffer           | A circular buffer used to store PCM data that can be ‘bursted up’ in the event of a KWS detection, so that all audio that triggered a KWS detection is included. |
+|Burst Buffer           | A circular buffer used to store PCM data that can ‘burst up’ in the event of a KWS detection, so that all audio that triggered a KWS detection is included. |
 |Keyword Detector OEM Adapter |A driver-level shim that enables the WoV-enabled HW to communicate with Windows and the Cortana stack. |
 |Model | The acoustic model data file used by the KWS algorithm. The data file is static. Models are localized, one per locale.|
 
@@ -135,7 +135,7 @@ The audio stack external interfaces for enabling Voice Activation serves as the 
 
 Audio endpoint graph building occurs normally. The graph is prepared to handle faster than real time capture. Timestamps on captured buffers remain true. Specifically, the timestamps will correctly reflect data that was captured in the past and buffered, and is now “bursting”.
 
-### Theory of Operation
+### Theory of Bluetooth bypass audio streaming
 
 The driver exposes a KS filter for its capture device as usual. This filter supports several KS properties and a KS event to configure, enable and signal a detection event. The filter also includes an additional pin factory identified as a keyword spotter (KWS) pin. This pin is used to stream audio from the keyword spotter.
 
@@ -280,7 +280,7 @@ Audio is processed in a unique way for voice activation training. The following 
 
 This diagram provides an overview of the keyword recognition system.
 
-![keyword recognition system including cortana the speech runtime and the voice activation manager.](images/audio-simple-voice-recon-diagram1.png)
+:::image type="content" source="images/audio-simple-voice-recon-diagram1.png" alt-text="Diagram of keyword recognition system including Cortana, speech runtime, and voice activation manager components.":::
 
 ## Keyword Recognition Sequence Diagrams
 
@@ -288,15 +288,15 @@ In these diagrams, the speech runtime module is shown as the “speech platform�
 
 During startup, capabilities are gathered using [**IKeywordDetectorOemAdapter::GetCapabilities**](/windows-hardware/drivers/ddi/keyworddetectoroemadapter/nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-getcapabilities).
 
-![keyword recognition sequence showing training ux speech platform and the oem keyword detector during startup.](images/audio-voice-activation-startup.png)
+:::image type="content" source="images/audio-voice-activation-startup.png" alt-text="Sequence diagram of keyword recognition during startup, showing training UX, speech platform, and OEM keyword detector.":::
 
 Later when the user selects to "Learn my voice", the training flow is invoked.
 
-![keyword recognition sequence showing training ux speech platform and the oem keyword detector during learn my voice.](images/audio-voice-activation-training.png)
+:::image type="content" source="images/audio-voice-activation-training.png" alt-text="Sequence diagram of keyword recognition during 'Learn my voice' process, showing training UX, speech platform, and OEM keyword detector.":::
 
 This diagram describes the process of arming for keyword detection.
 
-![keyword recognition sequence showing speech platform oem keyword detector and the audio drive detector during arming for keyword detection.](images/audio-voice-activation-arming.png)
+:::image type="content" source="images/audio-voice-activation-arming.png" alt-text="Sequence diagram of keyword recognition during arming for keyword detection, showing speech platform, OEM keyword detector, and audio drive detector.":::
 
 ## WAVERT Enhancements
 

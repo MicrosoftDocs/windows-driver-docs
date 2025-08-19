@@ -5,6 +5,7 @@ keywords:
 - PPD files WDK autoconfiguration , sequence of steps
 - in-box autoconfiguration support WDK printer , sequence of steps
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Autoconfig Flow in Windows Vista for PPD

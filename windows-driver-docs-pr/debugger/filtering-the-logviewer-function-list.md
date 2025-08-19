@@ -3,6 +3,7 @@ title: Filtering the LogViewer Function List
 description: Filtering the LogViewer Function List
 keywords: ["LogViewer, filtering the LogViewer function list"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Filtering the LogViewer Function List
@@ -26,8 +27,3 @@ There are several ways to filter out function calls in LogViewer:
  
 
  
-
-
-
-
-

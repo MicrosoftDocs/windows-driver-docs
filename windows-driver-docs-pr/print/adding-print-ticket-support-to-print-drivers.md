@@ -1,5 +1,5 @@
 ---
-title: Add print ticket support to print drivers
+title: Add Print Ticket Support to Print Drivers
 description: Provides information about how to add print ticket support to print drivers.
 keywords:
 - printer driver customizing WDK , Print Tickets
@@ -7,6 +7,7 @@ keywords:
 - Print Tickets WDK , adding support for
 - IPrintTicketProvider
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # Add print ticket support to print drivers

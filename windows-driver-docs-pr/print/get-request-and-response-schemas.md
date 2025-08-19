@@ -2,6 +2,7 @@
 title: Get Request and Response Schemas
 description: The Get request schema and corresponding response schema definition, and an example of each, are below.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Get Request and Response Schemas

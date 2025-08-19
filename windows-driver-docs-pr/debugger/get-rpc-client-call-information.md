@@ -3,12 +3,10 @@ title: Get RPC Client Call Information
 description: Get RPC Client Call Information
 keywords: ["RPC client call information", "CCALL (client call)"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Get RPC Client Call Information
-
-
-## <span id="ddk_get_rpc_client_call_information_dbg"></span><span id="DDK_GET_RPC_CLIENT_CALL_INFORMATION_DBG"></span>
 
 
 Client call (CCALL) call information is displayed by the **!rpcexts.getclientcallinfo** extension, or by DbgRpc when the **-a** switch is used.
@@ -27,7 +25,7 @@ Searching for call info ...
 
 For details on the optional parameters, see [**DbgRpc Command-Line Options**](dbgrpc-command-line-options.md).
 
-For a similar example using the RPC debugger extensions, see [**!rpcexts.getclientcallinfo**](-rpcexts-getclientcallinfo.md).
+For a similar example using the RPC debugger extensions, see [**!rpcexts.getclientcallinfo**](../debuggercmds/-rpcexts-getclientcallinfo.md).
 
 **Note**   Information about Client Call objects is only gathered if the **Full** state information is being gathered. See [Enabling RPC State Information](enabling-rpc-state-information.md) for details.
 
@@ -36,8 +34,3 @@ For a similar example using the RPC debugger extensions, see [**!rpcexts.getclie
  
 
  
-
-
-
-
-

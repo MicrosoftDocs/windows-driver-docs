@@ -1,7 +1,8 @@
 ---
-title: Checking the Oplock State of an IRP_MJ_READ operation
+title: Checking the Oplock State of an IRP_MJ_READ Operation
 description: Checking the Oplock State of an IRP_MJ_READ operation
 ms.date: 11/25/2019
+ms.topic: concept-article
 ---
 
 # Checking the Oplock State of an IRP_MJ_READ operation

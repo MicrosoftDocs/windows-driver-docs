@@ -1,5 +1,5 @@
 ---
-title: Reset method of the MSFT\_PhysicalDisk class
+title: Reset Method of the MSFT_PhysicalDisk Class
 description: Resets the health and operational status of the physical disk.
 ms.assetid: 0330F04C-1FAE-40BA-8FFD-B4BEDB3B4D9C
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

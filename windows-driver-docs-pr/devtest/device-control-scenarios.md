@@ -8,6 +8,7 @@ keywords:
 - test scenarios WDK WSDBIT
 - Device Control scenario WDK WSDBIT
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Device Control Scenarios
@@ -106,12 +107,4 @@ Responds to the client by using the **TypeCheckResponse** method with:
 The XML fragment that was sent from the client is displayed correctly at the device before it is echoed back to the client. The XML fragment is again displayed correctly when it is received at the client.
 
  
-
- 
-
- 
-
-
-
-
 

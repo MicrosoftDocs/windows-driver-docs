@@ -1,11 +1,12 @@
 ---
-title: Functions defined by printer graphics DLLs
+title: Functions Defined by Printer Graphics DLLs
 description: Provides information about functions defined by printer graphics DLLs.
 keywords:
 - printer graphics DLL WDK, functions
 - functions WDK printer graphics DLL
 - graphics DLL WDK printer, functions
 ms.date: 01/27/2023
+ms.topic: reference
 ---
 
 # Functions defined by printer graphics DLLs

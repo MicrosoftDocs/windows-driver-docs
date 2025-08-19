@@ -1,5 +1,5 @@
 ---
-title: Open and close a port
+title: Open and Close a Port
 description: Provides information about how to open and close a port.
 keywords:
 - print monitors WDK, port management
@@ -13,6 +13,7 @@ keywords:
 - spooler opening and closing ports WDK print
 - print spooler opening and closing ports WDK
 ms.date: 09/08/2022
+ms.topic: how-to
 ---
 
 # Open and close a port

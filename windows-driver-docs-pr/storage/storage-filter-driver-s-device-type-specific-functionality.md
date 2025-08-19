@@ -7,11 +7,12 @@ keywords:
 - SFD WDK storage , device-type-specific functionality
 - device-type-specific functionality WDK storage
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Storage Filter Driver's Device-Type-Specific Functionality
 
-Depending on the nature of its device, an storage filter driver (SFD) might be responsible for the following device-type-specific functionality:
+Depending on the nature of its device, a storage filter driver (SFD) might be responsible for the following device-type-specific functionality:
 
 - Translating data from or into a device-specific format before or after sending a transfer request to lower drivers if the device processes data in a nonstandard format
 

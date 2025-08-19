@@ -1,7 +1,8 @@
 ---
-title: Send SMS by using custom character sets
+title: Send SMS by Using Custom Character Sets
 description: Send SMS by using custom character sets
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Send SMS by using custom character sets
@@ -103,7 +104,7 @@ function smsMessageReadSuccess(smsMessage)
 }
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Developing SMS apps](developing-sms-apps.md)

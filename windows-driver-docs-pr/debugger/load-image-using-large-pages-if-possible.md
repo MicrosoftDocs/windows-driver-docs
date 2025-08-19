@@ -1,8 +1,9 @@
 ---
-title: Load image using large pages if possible
+title: Load Image Using Large Pages if Possible
 description: Load image using large pages if possible
 keywords: ["Load image using large pages if possible (global flag)"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Load image using large pages if possible
@@ -49,8 +50,3 @@ This setting is not technically a global flag, because its value is stored in a 
  
 
  
-
-
-
-
-

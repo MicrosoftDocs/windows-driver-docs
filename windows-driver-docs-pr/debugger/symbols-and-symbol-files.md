@@ -3,6 +3,7 @@ title: Symbols and Symbol Files
 description: Symbols and Symbol Files
 keywords: ["symbols, overview"]
 ms.date: 05/23/2017
+ms.topic: overview
 ---
 
 # Symbols and Symbol Files
@@ -93,8 +94,3 @@ The following table lists several of the directories which exist in a standard W
  
 
  
-
-
-
-
-

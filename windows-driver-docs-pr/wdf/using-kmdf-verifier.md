@@ -2,6 +2,7 @@
 title: Using KMDF Verifier
 description: Using KMDF Verifier
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Using KMDF Verifier
@@ -35,7 +36,7 @@ You can manually enable KMDF Verifier using this procedure:
 
 To disable the framework's verifier, follow the same steps, but set the value of **VerifierOn** to zero.
 
-To determine whether the framework's verifier is enabled, set a breakpoint at a location after your driver calls [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) and use the [**!wdfdriverinfo**](../debugger/-wdfkd-wdfdriverinfo.md) debugger extension command:
+To determine whether the framework's verifier is enabled, set a breakpoint at a location after your driver calls [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) and use the [**!wdfdriverinfo**](../debuggercmds/-wdfkd-wdfdriverinfo.md) debugger extension command:
 
 **!wdfkd.wdfdriverinfo** *&lt;your drivername&gt;* **** **0x1**
 

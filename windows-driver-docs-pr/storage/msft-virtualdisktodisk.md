@@ -1,5 +1,5 @@
 ---
-title: MSFT\_VirtualDiskToDisk class
+title: MSFT_VirtualDiskToDisk Class
 description: Association between VirtualDisk and Disk.
 ms.assetid: 661e8d56-ac91-4b94-a951-8577b7a26d2e
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

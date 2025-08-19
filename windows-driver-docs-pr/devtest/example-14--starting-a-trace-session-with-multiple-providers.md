@@ -7,6 +7,7 @@ keywords:
 - tracing WDK , providers
 - multiple providers WDK software tracing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 14: Starting a Trace Session with Multiple Providers
@@ -69,12 +70,4 @@ To specify different flags and levels for each trace provider in the session, us
 tracelog -enable MyTraces -guid #1540ff4c-3fd7-4bba-9938-1d1bf31573a7 -flag 2 -level 1
 tracelog -enable MyTraces -guid #dab01d4d-2d48-477d-b1c3-daad0ce6f06b -flag 3 -level ffff
 ```
-
- 
-
- 
-
-
-
-
 

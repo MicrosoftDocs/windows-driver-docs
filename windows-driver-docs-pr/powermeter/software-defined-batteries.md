@@ -5,6 +5,7 @@ keywords:
 - Software Defined Battery
 - SDB
 ms.date: 11/09/2017
+ms.topic: concept-article
 ---
 
 # Software Defined Battery
@@ -47,7 +48,7 @@ Imagine a two battery system. Where one battery is a non removable battery, situ
 
 *A Multi-Battery System*
 
-![A multi-battery system showing internal and external batteries.](images/powermeter-multi-battery.png)
+:::image type="content" source="images/powermeter-multi-battery.png" alt-text="Diagram of a multi-battery system with internal and external batteries.":::
 
 As the keyboard is attached-detached over a period of time, it forces the two batteries to age differently. This creates a scope for age balancing the batteries and prolonging system usability period by employing the SDB simple age balancing algorithm.
 
@@ -57,7 +58,7 @@ The algorithm is called *simple age balancing* because it attempts to balance th
 
 *Simple Age Balancing SDB Algorithm*
 
-![Simple Age Balancing SDB Algorithm.](images/powermeter-simple-age-balancing-algorithm.png)
+:::image type="content" source="images/powermeter-simple-age-balancing-algorithm.png" alt-text="Diagram illustrating the Simple Age Balancing SDB Algorithm.":::
 
 The core idea behind the simple age balancing algorithm is to simply use the battery that has accrued least battery cycle counts, as depicted by decision box (2) in the flowchart above. The hypothetical system in this example, allows for exclusive use of either internal or external batteries. However, this may not be true for all the systems. Other systems may not be as flexible or may have electrical constraints on use of batteries. In such cases the algorithm expects a best attempt of age balancing. For example consider the following.  
 
@@ -96,7 +97,7 @@ Windows calculates the battery availability and produces a “Preserve Non-Hot S
 
 *Simple Age Balancing SDB Algorithm Adapted for Hot Swappable Batteries*
 
-![Simple Age Balancing SDB Algorithm Adapted for Hot Swappable Batteries.](images/powermeter-simple-age-balancing-algorithm-hot-swap.png)
+:::image type="content" source="images/powermeter-simple-age-balancing-algorithm-hot-swap.png" alt-text="Diagram of Simple Age Balancing SDB Algorithm adapted for hot swappable batteries.":::
 
 ## Implementing SDB Algorithm in Firmware
 
@@ -105,15 +106,15 @@ This section depicts the full battery discharge control logic implemented in the
 Note that this is not a prescription of how the SDB algorithm should be implemented by the OEMs, but rather a comprehensive example for the simplistic, hypothetical, multi-battery device described in this section that is used to illustrate SDB behavior.
 
 
-*Full Firmware Implemenation of Simple Age Balancing SDB Algorithm*
+*Full Firmware Implementation of Simple Age Balancing SDB Algorithm*
 
-![Full Firmware Implemenation of Simple Age Balancing SDB Algorithm.](images/powermeter-firmware-age-balancing-algorithm-hot-swap.png)
+:::image type="content" source="images/powermeter-firmware-age-balancing-algorithm-hot-swap.png" alt-text="Diagram of full firmware implementation of Simple Age Balancing SDB Algorithm.":::
 
 ## Power Stack Architecture
 
 This section describes the component layout for all components participating in the power stack and their relative relationship with each other.
 
-![Power stack architecture showing HPMI.](images/powermeter-hpmi-stack-architecture.png)
+:::image type="content" source="images/powermeter-hpmi-stack-architecture.png" alt-text="Diagram of power stack architecture with HPMI component.":::
 
 ### Battery Miniport
 
@@ -129,7 +130,7 @@ The Hardware Power Manager Interface (HPMI), is a new component introduced in th
 
 HPMI is a driver developed and owned by the OEM/device manufacturer.
 
-HPMI has intimate knowledge of the underlying hardware configuration and state, and has access to the system firmware. 
+HPMI has intimate knowledge of the underlying hardware configuration and state, and has access to the system firmware.
 
 To implement the SDB feature, the HPMI driver will:
 
@@ -154,7 +155,7 @@ HPMI may be manifested as either an ACPI device or be root enumerated by one of 
 
 The following diagram illustrates two examples of how the SDB algorithm may be implemented if the firmware component already hosts bulk of battery control logic.
 
-![HPMI and firmware example SDB algorithm stack examples.](images/powermeter-firmware-and-hpmi-implementation.png)
+:::image type="content" source="images/powermeter-firmware-and-hpmi-implementation.png" alt-text="Diagram of HPMI and firmware example SDB algorithm stack implementations.":::
 
 ### HPMI Implements SDB Algorithm
 
@@ -366,7 +367,7 @@ Windows issues this IOCTL with HPMI_BATTERY_UTILIZATION_HINT. Version is set to 
 
 PreserveNonHotSwappableBatteries is set to one of the following values:
 
-- HpmiBoolUnavailable: Set when no battery utilization hint can be provided. As a response, HPMI/Fimware should generally engage the defacto discharge policies.
+- HpmiBoolUnavailable: Set when no battery utilization hint can be provided. As a response, HPMI/Fimware should generally engage the de facto discharge policies.
 - HpmiBoolFalse: Set when Windows determines an opportune time for battery age balancing to occur.
 - HpmiBoolTrue: Set when Windows determines need to conserve the energy stored in the internal batteries.
 

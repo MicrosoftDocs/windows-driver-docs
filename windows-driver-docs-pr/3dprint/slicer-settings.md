@@ -1,7 +1,8 @@
 ---
-title: Slicer settings
+title: Slicer Settings
 description: The configuration file XML contains a number of settings that need to be adjusted for a specific 3D Printer device to control the print capabilities exposed to the 3D Print Dialog in Windows.
 ms.date: 03/17/2023
+ms.topic: checklist
 ---
 
 # Slicer settings

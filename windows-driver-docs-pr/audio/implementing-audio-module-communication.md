@@ -1,7 +1,8 @@
 ---
 title: Implementing Audio Module Communication
 description: An Audio Module is a distinct piece of audio processing logic performing a relatively atomic function.
-ms.date: 07/07/2017
+ms.date: 09/12/2024
+ms.topic: concept-article
 ---
 
 # Implementing Audio Module Communication
@@ -33,29 +34,37 @@ Audio Module	| A distinct piece of audio processing logic performing a relativel
 
 
 ### Common Audio Definitions
+
 These definitions are typically used when working with audio drivers.
+
+| Term | Definition                      |
+|------|---------------------------------|
+| HSA  | Hardware Support Application    |
+| UWP  | Universal Windows Platform      |
+| APO  | Audio Processing Object         |
+| DSP  | Digital Signal Processing       |
 
 | Term | Definition                      |
 |------|---------------------------------|
 | OEM  | Original Equipment Manufacturer |
 | IHV  | Independent Hardware Vendor     |
 | ISV  | Independent Software Vendor     |
-| HSA  | Hardware Support Application    |
-| UWP  | Universal Windows Platform      |
-| APO  | Audio Processing Object         |
-| DSP  | Digital Signal Processing       |
 
 ### Architecture 
 
-Audio Modules puts in place a Windows supported mechanism to send messages between user mode and kernel mode audio components. An important distinction is that Audio Modules standardizes the transport pipeline. It does not establish the communication protocol over that transport and relies on the ISVs and IHVs to define the protocol. The intent is to allow existing third party designs to migrate easily to Audio Modules with very little changes.
+*Audio Modules* puts in place a Windows OS supported mechanism to send messages between user mode and kernel mode audio components. An important distinction is that Audio Modules standardizes the transport pipeline. It does not establish the communication protocol over that transport and relies on the ISVs and IHVs to define the protocol. The intent is to allow existing third party designs to migrate easily to Audio Modules with very little changes.
 
-\<Diagram Pending\>
+The diagram shows how audio data flows from user applications down to the audio driver via the Audio Module APIs. 
+
+:::image type="content" source="images/audio-modules-communications.png" alt-text="Diagram showing how audio modules transport flows from user applications through various interfaces and processing layers.":::
+
+Device modules and stream modules are present, depending on whether they're accessed from a client process or an APO running in AudioDG using the stream modules interface provided to the APO from AudioDG. For general information about the audio endgine and the audio device graph (AudioDG), see [Windows Audio Architecture](windows-audio-architecture.md).
+
+The driver notifies Windows.Media.Devices of modules changes via [IoReportTargetDeviceChangeAsynchronous function](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreporttargetdevicechangeasynchronous), which is then turned into callbacks from the modules API to the client process or APO.
 
 The Audio Module API provides access to the modules through two different targeting methods: the KS wave filter and an initialized KS pin (stream). The placement and access to specific modules is implementation specific.
 
-HSAs and other applications will only be able to access the modules available through the filter handle. The individual APOs loaded on a stream are the only objects that will have access to the stream targeted audio modules.
-
-For more information about APOs, see [Windows Audio Processing Objects](./windows-audio-processing-objects.md).
+HSAs and other applications will only be able to access the modules available through the filter handle. The individual APOs loaded on a stream are the only objects that will have access to the stream targeted audio modules. For more information about APOs, see [Windows Audio Processing Objects](./windows-audio-processing-objects.md).
 
 ### Sending Commands
 
@@ -67,7 +76,7 @@ The audio miniport also has a way to notify and pass information to Audio Module
 
 ### Enable, Disable and General Topology Information
 
-The Audio Modules APIs define how to enumerate and send commands to the modules. However, the APIs do not explicitly define how Audio Module clients can enable or disable specific modules. Also, it does not establish a way for clients to find topology information or the placement of modules in relation to one another. IHVs and ISVs can determine if this functionality is needed an decide how to implement it.
+The Audio Modules APIs define how to enumerate and send commands to the modules. However, the APIs do not explicitly define how Audio Module clients can enable or disable specific modules. Also, it does not establish a way for clients to find topology information or the placement of modules in relation to one another. IHVs and ISVs can determine if this functionality is needed and decide how to implement it.
 
 The recommended approach is exposing a global driver module. The global driver module would handle custom commands for these topology specific requests.
 
@@ -212,7 +221,7 @@ For more information, see:
 
 The miniport will call into their port to create and send the notification.  The general call sequence is shown in this diagram.
 
-![AudioIPortClsNotifications Calling Sequence.](images/AudioIPortClsNotificationsCallingSequenceDiagram.png)
+:::image type="content" source="images/AudioIPortClsNotificationsCallingSequenceDiagram.png" alt-text="Diagram showing the calling sequence for AudioIPortClsNotifications.":::
 
 
 

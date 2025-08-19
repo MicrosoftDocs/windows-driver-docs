@@ -5,7 +5,8 @@ keywords:
 - OID_PNP_Xxx
 - query operations WDK NDIS intermediate
 - set operations WDK NDIS intermediate
-ms.date: 04/20/2017
+ms.date: 07/23/2025
+ms.topic: concept-article
 ---
 
 # Handling OID\_PNP\_Xxx Queries and Sets
@@ -24,7 +25,7 @@ An intermediate driver should handle queries and sets as follows:
 
 -   [OID\_PNP\_CAPABILITIES](./oid-pnp-capabilities.md)
 
-    In response to this OID query, intermediate drivers must report the PnP capabilites of the underlying physical miniport adapters. Note that miniport adapters for physical devices do not receive this OID query.
+    In response to this OID query, intermediate drivers must report the PnP capabilities of the underlying physical miniport adapters. Note that miniport adapters for physical devices do not receive this OID query.
 
     The intermediate driver receives the PnP capabilities of the underlying miniport adapters in the bind parameters. It should pass them to overlying drivers as appropriate for the intermediate driver's intended use. Intermediate drivers and miniport drivers report PnP capabilities in miniport adapter attributes. The intermediate driver does not issue OID\_PNP\_CAPABILITIES requests to the underlying miniport driver. If the underlying miniport adapter is power management-aware, in the NDIS\_PM\_WAKE\_UP\_CAPABILITIES structure in the virtual miniport attributes, the intermediate driver must specify a device power state of **NdisDeviceStateUnspecified** for each wake-up capability:
 
@@ -56,7 +57,7 @@ An intermediate driver should handle queries and sets as follows:
 
 The intermediate driver must also propagate the underlying miniport driver's response to these OIDs to the overlying protocol drivers.
 
-If the underlying miniport adapter is not power management-aware, the miniport driver sets the **PowerManagementCapabilities** member of [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) to **NULL** and NDIS sets the **PowerManagementCapabilities** member of [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) to **NULL**.
+If the underlying miniport adapter is not power management-aware, the miniport driver sets the **PowerManagementCapabilities** member of [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) to **NULL** and NDIS sets the **PowerManagementCapabilities** member of [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) to **NULL**.
 
 If an underlying miniport adapter is not power management-aware, the intermediate driver should return NDIS\_STATUS\_NOT\_SUPPORTED in response to a query or set of these OIDs.
 

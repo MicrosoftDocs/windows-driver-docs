@@ -4,6 +4,7 @@ description: Reprocessing a Library
 keywords:
 - library WDK Static Driver Verifier , reprocessing
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Reprocessing a Library
@@ -35,12 +36,4 @@ If you cannot process a required library for any reason, you can still run a ver
 5.  Repeat the steps to add and select project files for each library your driver uses.
 
 You can also reprocess a library from in an MSBuild command by using the /clean and /lib parameter options. For more information, see [Static Driver Verifier commands (MSBuild)](-static-driver-verifier-commands--msbuild-.md).
-
- 
-
- 
-
-
-
-
 

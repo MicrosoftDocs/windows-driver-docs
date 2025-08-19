@@ -1,17 +1,17 @@
 ---
+title: The MTP Setup Information (.Inf) File
 description: The MTP Setup Information (.inf) File
-title: The MTP Setup Information (.inf) File
-ms.date: 03/03/2023
+ms.date: 12/09/2024
+ms.topic: install-set-up-deploy
 ---
 
-# The MTP Setup Information (.inf) File
-
+# The MTP Setup Information (WpdMtp.inf) File
 
 Microsoft provides a set of class drivers to support the Media Transfer Protocol (MTP). If your device supports MTP, you can use one of these drivers. In addition to the class drivers, Microsoft provides a setup information (.inf) file to install a class driver. This file is named *WpdMtp.inf*.
 
 If your MTP device has unique requirements, create a new setup information (.inf) file that is based on the original version of *WpdMtp.inf*. (You cannot modify *WpdMtp.inf* directly.)
 
-The following table describes specific Needs directives that are found in *WpdMtp.inf* and possible modifications that you can make to the sections that are identified by a given directive.
+The following table describes specific **Needs directives** that are found in *WpdMtp.inf* and possible modifications that you can make to the sections that are identified by a given directive.
 
 The entries in the following table can support any of three transports (USB, IP, or Bluetooth). Be aware that each transport requires a unique installation section. Also be aware that the Bluetooth transport is only supported in Windows 7.
 
@@ -33,7 +33,7 @@ The entries in the following table can support any of three transports (USB, IP,
 <pre><code>;;[DDInstall]
 ;;Include = wpdmtp.inf
 ;;Needs = WPD.MTP</code></pre>
-<p>Starting with Windows 7, <em>WinUsb.sys</em> replaces <em>WpdUsb.sys</em> as the lower filter driver for MTP devices that connect to the computer by using USB. The following directive is required for a vendor’s INF to include <em>WinUsb.inf</em> and a specific WinUSB section:</p>
+<p>Starting with Windows 7, <em>WinUsb.sys</em> replaces <em>WpdUsb.sys</em> as the lower filter driver for MTP devices that connect to the computer by using USB. The following directive is required for a vendor's INF to include <em>WinUsb.inf</em> and a specific WinUSB section:</p>
 <pre><code>;;[DDInstall]
 ;;Include = wpdmtp.inf, WINUSB.INF
 ;;Needs = WPD.MTP, WINUSB.NT</code></pre></td>

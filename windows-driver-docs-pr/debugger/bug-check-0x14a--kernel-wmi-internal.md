@@ -18,7 +18,7 @@ api_type:
 The KERNEL\_WMI\_INTERNAL bug check has a value of 0x0000014A. This indicates that the internal kernel WMI subsystem has encountered a fatal error.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## KERNEL\_WMI\_INTERNAL Parameters

@@ -4,6 +4,7 @@ description: Creating Custom Device Properties
 keywords:
 - device properties WDK device installations , creating custom
 ms.date: 04/04/2022
+ms.topic: concept-article
 ---
 
 # Creating Custom Device Properties

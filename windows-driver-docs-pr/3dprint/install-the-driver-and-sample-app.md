@@ -1,7 +1,9 @@
 ---
-title: Install the driver and sample app
+title: Install the Driver and Sample App
 description: This section provides information on installing the driver and the WSD sample app.
 ms.date: 03/17/2023
+ms.topic: install-set-up-deploy
+ms.custom: sfi-image-nochange
 ---
 
 # Install the driver and sample app
@@ -16,7 +18,7 @@ To install the print driver included in the 3D printing SDK, selecting the drive
 
 Start by installing Microsoft Visual Studio 2013 (Professional or Ultimate) and applying any required service packs or updates.
 
-The sample implementation consists of an Microsoft Internet Information Services (IIS) web service implemented in ASP.NET with a http handler that responds to the WS-Print protocol requests.
+The sample implementation consists of a Microsoft Internet Information Services (IIS) web service implemented in ASP.NET with a http handler that responds to the WS-Print protocol requests.
 
 Directed discovery can operate with the web service running as it works off the http protocol without UDP discovery.
 

@@ -2,6 +2,7 @@
 title: BarcodeScannerTriggerPressed
 description: The BarcodeScannerTriggerPressed event occurs when the barcode scanner trigger is pressed.
 ms.date: 03/17/2023
+ms.topic: reference
 ---
 
 # BarcodeScannerTriggerPressed

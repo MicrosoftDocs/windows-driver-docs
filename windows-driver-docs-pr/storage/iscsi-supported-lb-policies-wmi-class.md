@@ -1,7 +1,8 @@
 ---
-title: ISCSI\_Supported\_LB\_Policies WMI Class
+title: ISCSI_Supported_LB_Policies WMI Class
 description: ISCSI\_Supported\_LB\_Policies WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # ISCSI\_Supported\_LB\_Policies WMI Class

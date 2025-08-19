@@ -1,5 +1,5 @@
 ---
-title: SetSecurityDescriptor method of the MSFT\_MaskingSet class
+title: SetSecurityDescriptor Method of the MSFT_MaskingSet Class
 description: Sets the security descriptor that controls access to the masking set object.
 ms.assetid: 5B15F67F-465A-4DA9-9B42-CAD79B272685
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

@@ -3,6 +3,7 @@ title: Postponing PnP IRP Processing Until Lower Drivers Finish
 description: Postponing PnP IRP Processing Until Lower Drivers Finish
 keywords: ["PnP WDK kernel , postponing IRP processing", "Plug and Play WDK kernel , postponing IRP processing", "IRPs WDK PnP", "I/O request packets WDK PnP", "postponing IRP processing WDK PnP", "delaying IRP processing WDK PnP", "DispatchPnP routine", "IoCompletion routine"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Postponing PnP IRP Processing Until Lower Drivers Finish

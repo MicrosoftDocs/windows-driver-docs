@@ -1,5 +1,5 @@
 ---
-title: button element
+title: Button Element
 description: The required button element specifies the characteristics of a button in a message box that is displayed on the client computer.
 keywords: ["button element Print Devices"]
 topic_type:

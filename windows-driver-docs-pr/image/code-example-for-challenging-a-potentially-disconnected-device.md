@@ -1,7 +1,8 @@
 ---
-title: Code example for challenging a potentially disconnected device
+title: Code Example for Challenging a Potentially Disconnected Device
 description: Code example for challenging a potentially disconnected device
 ms.date: 03/28/2023
+ms.topic: example-scenario
 ---
 
 # Code example for challenging a potentially disconnected device

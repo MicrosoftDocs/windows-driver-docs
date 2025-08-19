@@ -1,5 +1,5 @@
 ---
-title: FSCTL_ENUM_OVERLAY control code
+title: FSCTL_ENUM_OVERLAY Control Code
 description: The FSCTL_ENUM_OVERLAY control code enumerates all the data sources from a backing provider for a specified volume.
 keywords: ["FSCTL_ENUM_OVERLAY control code Installable File System Drivers"]
 topic_type:
@@ -46,7 +46,7 @@ To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers
 
 | Code | Meaning |
 | ---- | ------- |
-| STATUS_ACCESS_DENIED | The requestor does not have administrative privileges. |
+| STATUS_ACCESS_DENIED | The requester does not have administrative privileges. |
 | STATUS_BUFFER_TOO_SMALL | The length of the output buffer pointed to by **OutputBuffer** and specified by **OutputBufferLength** is too small. |
 | STATUS_INTERNAL_ERROR | The requested volume is not accessible. |
 | STATUS_INVALID_DEVICE_REQUEST | The backing service is not present or not started. |

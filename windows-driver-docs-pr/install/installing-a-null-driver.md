@@ -1,5 +1,5 @@
 ---
-title: Install a null driver
+title: Install a Null Driver
 description: Provides information about how to install a null driver.
 keywords:
 - Device setup WDK device installations, null drivers
@@ -8,6 +8,7 @@ keywords:
 - null drivers WDK device installations
 - nonexistent drivers WDK device installations
 ms.date: 08/29/2022
+ms.topic: install-set-up-deploy
 ---
 
 # Install a null driver

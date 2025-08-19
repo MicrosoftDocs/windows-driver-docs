@@ -1,7 +1,8 @@
 ---
-title: Mapping WIA Properties That Need No Changes - Special Cases
+title: Mapping WIA Properties that Need No Changes - Special Cases
 description: Mapping WIA Properties That Need No Changes - Special Cases
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Mapping WIA Properties That Need No Changes - Special Cases

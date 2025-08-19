@@ -2,6 +2,7 @@
 title: Multiple Voice Assistant
 description: The Multiple Voice Assistant platform provides support for additional voice assistants beyond Cortana. 
 ms.date: 04/13/2023
+ms.topic: concept-article
 ---
 
 # Multiple Voice Assistant
@@ -45,7 +46,7 @@ This glossary summarizes terms related to voice activation.
 | KWS | Keyword spotter – the algorithm that provides the detection of "Hey Contoso". |
 | SW KWS | Software keyword spotter – an implementation of KWS that runs on the host (CPU). For "Hey Cortana", SW KWS is included as part of Windows. |
 | HW KWS | Hardware keyword spotter – an implementation of KWS that runs offloaded on hardware. |
-| Burst buffer | A circular buffer used to store PCM data that can be bursted up in the event of a KWS detection, so that all audio that triggered a KWS detection is included. |
+| Burst buffer | A circular buffer used to store PCM data that can burst up in the event of a KWS detection, so that all audio that triggered a KWS detection is included. |
 | Event detector OEM Adapter | A user mode component that acts as an intermediary between the Windows voice assistant stack and driver. |
 | Model | The acoustic model data file used by the KWS algorithm. The data file is static. Models are localized, one per locale.|
 | MVA | Multiple Voice Agent - HWKWS DDI which supports multiple agents. |
@@ -112,7 +113,7 @@ The audio stack external interfaces for enabling Voice Activation serves as the 
 
 Audio endpoint graph building occurs normally. The graph is prepared to handle faster than real time capture. Timestamps on captured buffers remain true. Specifically, the timestamps will correctly reflect data that was captured in the past and buffered, and is now bursting.
 
-### Theory of Operation
+### Theory of Bluetooth bypass audio streaming
 
 The driver exposes a KS filter for its capture device as usual. This filter supports several KS properties and a KS event to configure, enable and signal a detection event. The filter also includes an additional pin factory identified as a keyword spotter (KWS) pin. This pin is used to stream audio from the keyword spotter.
 

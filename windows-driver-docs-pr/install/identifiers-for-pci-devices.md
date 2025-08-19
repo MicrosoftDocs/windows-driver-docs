@@ -1,5 +1,5 @@
 ---
-title: Identifiers for PCI devices
+title: Identifiers for PCI Devices
 description: Describes the device identification string formats that the PCI bus driver uses to report hardware IDs.
 keywords:
 - device identification strings WDK , PCI devices
@@ -8,7 +8,8 @@ keywords:
 - PCI device identifiers WDK device installations
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
-ms.date: 04/08/2022
+ms.date: 05/02/2024
+ms.topic: concept-article
 ---
 
 # Identifiers for PCI devices
@@ -38,9 +39,10 @@ Where:
 
 - d(4) is the four-character vendor-defined identifier for the device.
 
-- s(4) is the four-character vendor-defined subsystem identifier.
+- s(4) is the four-character subsystem identifier, as defined by the PCI SIG.
 
-- n(4) is the four-character PCI SIG-assigned identifier for the vendor of the subsystem. As specified in [Publishing restrictions](../dashboard/publishing-restrictions.md), `0000` and `FFFF` are invalid codes for this identifier.
+- n(4) is the four-character subsystem vendor identifier, as assigned by PCI-SIG. As specified in [Publishing restrictions](../dashboard/publishing-restrictions.md), 0000 and FFFF are invalid codes for this identifier.
+    - (Note: subsystem device identifier defined by PCI-SIG is not used as part of PCI hardware IDs).
 
 - r(2) is the two-character revision number.
 

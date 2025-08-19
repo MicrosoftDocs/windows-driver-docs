@@ -9,6 +9,7 @@ keywords:
 - data tree WDK GDL
 - GDL WDK , entries
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # XML Structure of GDL Snapshots
@@ -18,7 +19,7 @@ The XML snapshot is a subset of the GDL data tree that contains those switch and
 
 In addition to emitting an XML snapshot, the GDL parser can also generate a separate XSD schema that describes the overall structure of the snapshot. This schema also contains the definition of enumeration data types that the GDL templates define. These definitions enable clients to perform schema validation of all primitive data types in the snapshot if desired. If the schema validation is not performed, enumerations will not be checked for validity when the DOM tree is loaded; this check is not necessary because the GDL parser performs its own enumeration validity checks.
 
-To be a valid XML document, the napshot contains a single root element: &lt;SnapshotRoot&gt;. This element represents the root context of the GDL tree. The &lt;SnapshotRoot&gt; element can contain child &lt;CONSTRUCT&gt; or &lt;GDL\_ATTRIBUTE&gt; elements. The &lt;CONSTRUCT&gt; element is used to represent a GDL construct, and the &lt;GDL\_ATTRIBUTE&gt; element is used to represent a GDL attribute.
+To be a valid XML document, the snapshot contains a single root element: &lt;SnapshotRoot&gt;. This element represents the root context of the GDL tree. The &lt;SnapshotRoot&gt; element can contain child &lt;CONSTRUCT&gt; or &lt;GDL\_ATTRIBUTE&gt; elements. The &lt;CONSTRUCT&gt; element is used to represent a GDL construct, and the &lt;GDL\_ATTRIBUTE&gt; element is used to represent a GDL attribute.
 
 Each &lt;CONSTRUCT&gt; element can contain other &lt;CONSTRUCT&gt; and &lt;GDL\_ATTRIBUTE&gt; elements. The &lt;GDL\_ATTRIBUTE&gt; element holds only the value that is associated with that attribute and does not contain any &lt;CONSTRUCT&gt; or &lt;GDL\_ATTRIBUTE&gt; elements. The &lt;GDL\_ATTRIBUTE&gt; value can appear directly as the character data content of the &lt;GDL\_ATTRIBUTE&gt; element for non-compound data types or can be represented by one or more child elements if the value is defined as a GDL compound data type.
 

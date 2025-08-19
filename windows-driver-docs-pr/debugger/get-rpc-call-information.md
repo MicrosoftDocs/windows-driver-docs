@@ -3,13 +3,10 @@ title: Get RPC Call Information
 description: Get RPC Call Information
 keywords: ["RPC call information", "SCALL (server call)"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Get RPC Call Information
-
-
-## <span id="ddk_get_rpc_call_information_dbg"></span><span id="DDK_GET_RPC_CALL_INFORMATION_DBG"></span>
-
 
 Server-side call (SCALL) information is displayed by the **!rpcexts.getcallinfo** extension, or by DbgRpc when the **-c** switch is used.
 
@@ -70,13 +67,12 @@ Searching for call info ...
 
 For details on the optional parameters, see [**DbgRpc Command-Line Options**](dbgrpc-command-line-options.md).
 
-For a similar example using the RPC debugger extensions, see [**!rpcexts.getcallinfo**](-rpcexts-getcallinfo.md).
+For a similar example using the RPC debugger extensions, see [**!rpcexts.getcallinfo**](../debuggercmds/-rpcexts-getcallinfo.md).
 
+  
+## RPC Security 
+
+For general information about RPC security and guidelines for usage, see [Writing a Secure RPC Client or Server](/windows/win32/rpc/writing-a-secure-rpc-client-or-server).
  
 
  
-
-
-
-
-

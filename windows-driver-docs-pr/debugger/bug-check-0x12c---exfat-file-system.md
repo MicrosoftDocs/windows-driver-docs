@@ -18,7 +18,7 @@ api_type:
 The EXFAT\_FILE\_SYSTEM bug check has a value of 0x0000012C. This bug check indicates that a problem occurred in the Extended File Allocation Table (exFAT) file system.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## EXFAT\_FILE\_SYSTEM Parameters
@@ -63,7 +63,7 @@ This bug check is caused by the file system as a last resort when its internal a
 
 ## Resolution
 
-**To debug this problem:** Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command together with Parameter 3, and then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md).
+**To debug this problem:** Use the [**.cxr (Display Context Record)**](../debuggercmds/-cxr--display-context-record-.md) command together with Parameter 3, and then use [**kb (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md).
 
  
 

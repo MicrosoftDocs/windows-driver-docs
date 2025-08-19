@@ -52,7 +52,7 @@ The *Set* value is provided as part of the command. When the *Get* is used, it r
 
  
 
-The property value type is a undefined. The implementer can create a module specific custom command structure.
+The property value type is undefined. The implementer can create a module specific custom command structure.
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 

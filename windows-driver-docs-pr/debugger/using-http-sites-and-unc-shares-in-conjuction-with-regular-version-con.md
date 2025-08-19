@@ -1,10 +1,11 @@
 ---
-title: Using HTTP Sites and UNC Shares in Conjuction with Regular Version Control
-description: Using HTTP Sites and UNC Shares in Conjuction with Regular Version Control
+title: Using HTTP Sites and UNC Shares in Conjunction with Regular Version Control
+description: Using HTTP Sites and UNC Shares in Conjunction with Regular Version Control
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
-# Using HTTP Sites and UNC Shares in Conjuction with Regular Version Control
+# Using HTTP Sites and UNC Shares in Conjunction with Regular Version Control
 
 
 You may find that you must support your developers using the standard SrcSrv functionality that extracts files from version control but must also make source files available through a Web site or UNC share. This could happen if you have set up a test lab that does not have access to version control. It is possible to support both users using the same set of .pdb files.
@@ -26,8 +27,3 @@ All debuggers set up in this fashion ignore the standard version control extract
  
 
  
-
-
-
-
-

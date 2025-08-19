@@ -3,6 +3,7 @@ title: The PDBStr Tool
 description: The PDBStr Tool
 keywords: ["SrcSrv, PDBStr tool", "PDBStr tool"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # The PDBStr Tool
@@ -15,8 +16,3 @@ For more information, run PDBStr with the **-?** option.
  
 
  
-
-
-
-
-

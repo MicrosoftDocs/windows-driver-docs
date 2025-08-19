@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x1EA SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION
-description: The SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION bug check has a value of 0x000001EA. This indicates that the the access to the PCI config space region from VTL0 by directly mapping the PCI MCFG range is prohibited because secure PCI is enabled.
+description: The SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION bug check has a value of 0x000001EA. This indicates that the access to the PCI config space region from VTL0 by directly mapping the PCI MCFG range is prohibited because secure PCI is enabled.
 keywords: ["Bug Check 0x1EA SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION", "SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION"]
 ms.date: 08/03/2022
 topic_type:
@@ -17,7 +17,7 @@ api_type:
 The SECURE\_PCI\_CONFIG\_SPACE\_ACCESS\_VIOLATION bug check has a value of 0x000001EA. This indicates that the access to the PCI config space region from VTL0 by directly mapping the PCI MCFG range is prohibited because secure PCI is enabled.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## SECURE_PCI_CONFIG\_SPACE\_ACCESS\_VIOLATION Parameters
@@ -56,4 +56,4 @@ The SECURE\_PCI\_CONFIG\_SPACE\_ACCESS\_VIOLATION bug check has a value of 0x000
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.

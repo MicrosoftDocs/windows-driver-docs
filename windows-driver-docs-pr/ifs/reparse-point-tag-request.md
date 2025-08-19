@@ -1,7 +1,8 @@
 ---
-title: Reparse point tag request
+title: Reparse Point Tag Request
 description: Describes how to obtain a Reparse Point tag, for those file system filter drivers that need one.
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Reparse point tag request

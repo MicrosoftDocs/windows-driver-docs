@@ -6,6 +6,7 @@ keywords:
 - buffers WDK UMDF
 - request processing WDK UMDF , data buffers
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Accessing Data Buffers in UMDF 1.x Drivers

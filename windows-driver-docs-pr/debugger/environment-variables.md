@@ -3,6 +3,7 @@ title: Environment Variables
 description: Environment Variables
 keywords: ["environment variables"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Environment Variables
@@ -22,8 +23,3 @@ For information about using environment variables for debugging, see [Getting Se
  
 
  
-
-
-
-
-

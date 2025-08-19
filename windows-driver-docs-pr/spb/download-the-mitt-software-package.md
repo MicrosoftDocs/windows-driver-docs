@@ -1,7 +1,8 @@
 ---
-title: Download the MITT software package
+title: Download the MITT Software Package
 description: Download the MITT software package.
-ms.date: 01/13/2023
+ms.date: 01/12/2024
+ms.topic: install-set-up-deploy
 ---
 
 # Download the MITT software package

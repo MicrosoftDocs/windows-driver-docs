@@ -3,6 +3,7 @@ title: Get RPC Cell Information
 description: Get RPC Cell Information
 keywords: ["RPC cell information"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Get RPC Cell Information
@@ -28,13 +29,8 @@ Last update time (in seconds since boot):470.25 (0x1D6.19)
 
 For details on the optional parameters, see [**DbgRpc Command-Line Options**](dbgrpc-command-line-options.md).
 
-For a similar example using the RPC debugger extensions, see [**!rpcexts.getdbgcell**](-rpcexts-getdbgcell.md).
+For a similar example using the RPC debugger extensions, see [**!rpcexts.getdbgcell**](../debuggercmds/-rpcexts-getdbgcell.md).
 
  
 
  
-
-
-
-
-

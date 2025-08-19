@@ -1,5 +1,5 @@
 ---
-title: RDF_CARD_TRACKING callback function
+title: RDF_CARD_TRACKING Callback Function
 description: RDF_CARD_TRACKING callback function
 keywords:
 - vendor-supplied drivers RDF callback functions
@@ -29,7 +29,7 @@ NTSTATUS (*ReaderFunction[RDF_CARD_TRACKING])(
 
 ## Return value
 
-This function returnsone of the following NTSTATUS values:
+This function returns one of the following NTSTATUS values:
 
 <table>
 <thead>

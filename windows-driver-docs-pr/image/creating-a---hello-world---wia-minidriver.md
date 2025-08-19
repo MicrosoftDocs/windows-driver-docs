@@ -2,6 +2,7 @@
 title: Creating a 'Hello World' WIA Minidriver
 description: Creating a 'Hello World' WIA Minidriver
 ms.date: 05/29/2020
+ms.topic: concept-article
 ---
 
 # Creating a 'Hello World' WIA Minidriver

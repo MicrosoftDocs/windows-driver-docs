@@ -1,11 +1,11 @@
 ---
-title: '[String] section changes for localized strings'
+title: '[String] Section Changes for Localized Strings'
 description: This INF requirement ensures that pseudo-localized builds work. The requirement is to delineate localizable versus non-localizable strings within the strings section
-ms.date: 04/20/2017
+ms.date: 01/12/2024
+ms.topic: reference
 ---
 
 # \[String\] section changes for localized strings
-
 
 This INF requirement ensures that pseudo-localized builds work. The requirement is to delineate localizable versus non-localizable strings within the strings section.
 
@@ -35,12 +35,3 @@ IHV  = "Contoso, Ltd"
 REG_MULTI_SZ   = 0x00010000
 REG_DWORD      = 0x00010001
 ```
-
- 
-
- 
-
-
-
-
-

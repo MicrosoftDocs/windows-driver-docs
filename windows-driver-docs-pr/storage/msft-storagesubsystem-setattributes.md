@@ -1,5 +1,5 @@
 ---
-title: SetAttributes method of the MSFT\_StorageSubSystem class
+title: SetAttributes Method of the MSFT_StorageSubSystem Class
 description: Sets the SupportsAutomaticObjectClustering field of the storage subsystem object instance.
 ms.assetid: 226BCD54-EA3A-4917-9688-7293C1C049EA
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

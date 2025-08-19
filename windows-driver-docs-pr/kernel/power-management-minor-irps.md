@@ -2,6 +2,7 @@
 title: Power Management Minor IRPs
 description: Power Management Minor IRPs
 ms.date: 08/12/2017
+ms.topic: reference
 ---
 
 # Power Management Minor IRPs

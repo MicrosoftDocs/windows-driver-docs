@@ -14,6 +14,7 @@ keywords:
 - bitmap branding WDK audio
 - image branding WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Branding Control Panel with Bitmaps or Icons

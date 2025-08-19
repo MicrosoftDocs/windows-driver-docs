@@ -3,6 +3,7 @@ title: Controlling Threads and Processes
 description: Controlling Threads and Processes
 keywords: ["Debugger Engine API, threads and processes"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Controlling Threads and Processes
@@ -21,7 +22,7 @@ In kernel-mode debugging the debugger engine will use the *implicit process* to 
 
 The implicit process may be changed by using [**SetImplicitProcessDataOffset**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsystemobjects4-setimplicitprocessdataoffset). To determine the implicit process use [**GetImplicitProcessDataOffset**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsystemobjects4-getimplicitprocessdataoffset).
 
-**Note**   When setting [breakpoints](multiprocessor-syntax.md#breakpoints) during a live kernel debugging session, the debugger engine will pass the virtual address of the breakpoint to the target, and the target will set the breakpoint. In this case, only the process context of the target is used when handling the breakpoint; the value of the implicit process is irrelevant.
+**Note**   When setting [breakpoints](../debuggercmds/multiprocessor-syntax.md#breakpoints) during a live kernel debugging session, the debugger engine will pass the virtual address of the breakpoint to the target, and the target will set the breakpoint. In this case, only the process context of the target is used when handling the breakpoint; the value of the implicit process is irrelevant.
 
  
 

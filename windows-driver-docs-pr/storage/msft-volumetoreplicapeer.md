@@ -1,5 +1,5 @@
 ---
-title: MSFT\_VolumeToReplicaPeer class
+title: MSFT_VolumeToReplicaPeer Class
 description: Association between MSFT\_Volume and MSFT\_ReplicaPeer .
 ms.assetid: FB7BF33C-21F1-4DAB-B45E-F2126ACC10BF
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

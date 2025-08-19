@@ -1,7 +1,8 @@
 ---
-title: Adding Constructs to Your GDL File for GPD
+title: Adding Constructs to your GDL File for GPD
 description: Adding Constructs to Your GDL File for GPD
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Adding Constructs to Your GDL File for GPD

@@ -1,5 +1,5 @@
 ---
-title: CreateMaskingSet method of the MSFT\_StorageSubSystem class
+title: CreateMaskingSet Method of the MSFT_StorageSubSystem Class
 description: Creates a new masking set.
 ms.assetid: 479E1710-0101-4791-9936-07B1F1644454
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

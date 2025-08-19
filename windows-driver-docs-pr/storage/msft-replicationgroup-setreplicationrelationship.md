@@ -1,5 +1,5 @@
 ---
-title: SetReplicationRelationship method of the MSFT\_ReplicationGroup class
+title: SetReplicationRelationship Method of the MSFT_ReplicationGroup Class
 description: Modifies the relationship between replication groups.
 ms.assetid: AEA4DB91-51E2-4F47-BC45-D58C82580AAA
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

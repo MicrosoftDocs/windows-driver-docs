@@ -14,10 +14,10 @@ api_type:
 
 # Bug Check 0xC000021A: WINLOGON\_FATAL\_ERROR
 
-The WINLOGON\_FATAL\_ERROR bug check has a value of 0xC000021A. This means that that the Winlogon process terminated unexpectedly.
+The WINLOGON\_FATAL\_ERROR bug check has a value of 0xC000021A. This means that the Winlogon process terminated unexpectedly.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## WINLOGON\_FATAL\_ERROR Parameters
 
@@ -72,7 +72,7 @@ If you have recently restored your hard disk from a backup, check if there is an
 
 - Look at the most recently installed applications. To do this navigate to "Uninstall or change a program" in control panel and sort the installed applications by install date.
 
-- Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://support.microsoft.com/hub/4338813/windows-help#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+- Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 -   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. Look for critical errors in the system log that occurred in the same time window as the blue screen.
 

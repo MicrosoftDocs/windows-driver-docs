@@ -5,6 +5,7 @@ keywords:
 - audio drivers WDK , 64-bit
 - 64-bit WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing 64-Bit Audio Drivers

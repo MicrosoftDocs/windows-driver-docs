@@ -1,5 +1,5 @@
 ---
-title: SetSecurityDescriptor method of the MSFT\_VirtualDisk class
+title: SetSecurityDescriptor Method of the MSFT_VirtualDisk Class
 description: Sets the security descriptor that controls access to the virtual disk object instance.
 ms.assetid: E735ACD5-096A-4EBE-8C01-C6DE2523B5F8
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

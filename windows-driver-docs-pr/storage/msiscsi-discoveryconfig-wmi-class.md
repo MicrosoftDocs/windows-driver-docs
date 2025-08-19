@@ -1,7 +1,8 @@
 ---
-title: MSiSCSI\_DiscoveryConfig WMI Class
+title: MSiSCSI_DiscoveryConfig WMI Class
 description: MSiSCSI\_DiscoveryConfig WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_DiscoveryConfig WMI Class

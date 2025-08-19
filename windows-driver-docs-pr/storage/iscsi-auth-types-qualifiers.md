@@ -1,7 +1,8 @@
 ---
-title: ISCSI\_AUTH\_TYPES\_QUALIFIERS
+title: ISCSI_AUTH_TYPES_QUALIFIERS
 description: ISCSI\_AUTH\_TYPES\_QUALIFIERS
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # ISCSI\_AUTH\_TYPES\_QUALIFIERS

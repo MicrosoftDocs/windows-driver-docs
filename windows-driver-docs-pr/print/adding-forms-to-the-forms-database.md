@@ -1,5 +1,5 @@
 ---
-title: Add forms to the forms database
+title: Add Forms to the Forms Database
 description: Provides information about how to add forms to the forms database.
 keywords:
 - additional forms WDK Unidrv
@@ -14,6 +14,7 @@ keywords:
 - custom forms WDK printer
 - Unidrv WDK print
 ms.date: 01/26/2023
+ms.topic: how-to
 ---
 
 # Add forms to the forms database

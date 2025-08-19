@@ -4,6 +4,7 @@ description: CM_PROB_IRQ_TRANSLATION_FAILED
 keywords:
 - CM_PROB_IRQ_TRANSLATION_FAILED
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 36 - CM_PROB_IRQ_TRANSLATION_FAILED

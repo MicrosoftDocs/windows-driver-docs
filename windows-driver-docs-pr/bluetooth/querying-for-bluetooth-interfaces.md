@@ -1,11 +1,12 @@
 ---
-title: Querying for Bluetooth interfaces
+title: Querying for Bluetooth Interfaces
 description: Querying for Bluetooth interfaces
 keywords:
 - Bluetooth WDK , interface queries
 - querying Bluetooth interfaces
 - interfaces WDK Bluetooth
-ms.date: 04/20/2017
+ms.date: 01/10/2024
+ms.topic: how-to
 ---
 
 # Querying for Bluetooth interfaces

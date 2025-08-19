@@ -2,6 +2,8 @@
 title: Signing a Driver During Development and Testing
 description: Only signed driver packages can be installed on 64-bit Windows.  For testing purposes, you can test sign the driver package.
 ms.date: 04/20/2017
+ms.topic: how-to
+ms.custom: sfi-image-nochange
 ---
 
 # Signing a Driver During Development and Testing
@@ -19,9 +21,9 @@ To manually enable test signing, follow these steps.
 
 1.  In Visual Studio, open a solution that has a driver package project. Select and hold (or right-click) the driver package project, and choose **Properties**.
 
-2.  In the property pages for the package, navigate to **Configuation Properties &gt; Driver Signing &gt; General**. In the **Sign Mode** drop-down list, select **Test Sign**.
+2.  In the property pages for the package, navigate to **Configuration Properties &gt; Driver Signing &gt; General**. In the **Sign Mode** drop-down list, select **Test Sign**.
 
-3.  In the property pages for the package, navigate to **Configuation Properties &gt; Inf2Cat &gt; General**. In the **Run Inf2Cat** drop-down list, select **Yes**.
+3.  In the property pages for the package, navigate to **Configuration Properties &gt; Inf2Cat &gt; General**. In the **Run Inf2Cat** drop-down list, select **Yes**.
 
 ## <span id="Viewing_the_signed_driver_package"></span><span id="viewing_the_signed_driver_package"></span><span id="VIEWING_THE_SIGNED_DRIVER_PACKAGE"></span>Viewing the signed driver package
 
@@ -36,7 +38,7 @@ When you test sign a driver package, Visual Studio creates a signing certificate
 To share the signing certificate, follow these steps.
 
 -   In Visual Studio, in the Solution Explorer window, select and hold (or right-click) your driver package project, and choose **Properties**.
--   In the property pages for the package, navigate to **Configuation Properties &gt; Driver Signing &gt; General**. In the **Test Certificate** field, choose **Select From Store**.
+-   In the property pages for the package, navigate to **Configuration Properties &gt; Driver Signing &gt; General**. In the **Test Certificate** field, choose **Select From Store**.
 
 -   In the Select Certificate dialog box, locate your test-signing certificate. The name of the certificate will be similar to WDKTestCert *yourName*. Select your test-signing certificate, and select **Properties**. In the **Details** tab, select **Copy to File**.
 -   Follow the instructions in the Certificate Export Wizard to export a PFX file. When you are asked whether you want to export the private key, select **Yes, export the private key**.

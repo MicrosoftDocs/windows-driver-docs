@@ -8,6 +8,7 @@ keywords:
 - autoconfiguring printer memory WDK
 - printer memory configurations WDK autoconfiguration
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Autoconfiguring the Printer's Memory for GPD

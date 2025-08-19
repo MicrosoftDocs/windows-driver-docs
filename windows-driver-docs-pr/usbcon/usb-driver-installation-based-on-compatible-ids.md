@@ -1,115 +1,66 @@
 ---
-description: Microsoft-provided in-box driver (Usbser.sys) for your Communications and CDC Control device.
-title: USB serial driver (Usbser.sys)
-ms.date: 03/18/2022
+title: USB Serial Driver (Usbser.sys)
+description: Use the Microsoft-provided USB driver (Usbser.sys) for your communications and CDC control device.
+ms.date: 06/11/2025
+ms.topic: concept-article
 ---
 
 # USB serial driver (Usbser.sys)
 
+Use the Microsoft-provided USB driver (Usbser.sys) for your communications and communications device class (CDC) control devices. Use the drivers included with Windows whenever possible.
+
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer experiencing USB problems, see [Troubleshoot common USB problems](https://support.microsoft.com/help/17614/windows-10-troubleshoot-common-usb-problems)
+> This article is for manufacturers of CDC control devices. If you're a customer experiencing USB problems, see [Fix USB-C problems in Windows](https://support.microsoft.com/windows/fix-usb-c-problems-in-windows-f4e0e529-74f5-cdae-3194-43743f30eed2)
 
-## Versions supported
+Usbser.sys is implemented using the [Kernel-Mode Driver Framework](../wdf/index.md). The driver supports Plug and Play, and power management features like [USB Selective Suspend](usb-selective-suspend.md).
 
-- Windows 11
-- Windows 10
-- Windows 8.1
 
-## Applies to
-
-- Device manufacturers of CDC Control devices
-
-Microsoft-provided in-box driver (*Usbser.sys*) for your communications and CDC control device.
-
-In Windows 10, the driver was rewritten using the [Kernel-Mode Driver Framework](../wdf/index.md), improving the overall stability of the driver.
-
-- Improved Plug and Play and power management by the driver.
-- Added power management features such as [USB Selective Suspend](usb-selective-suspend.md).
-
-In addition, UWP applications can now use the APIs provided by the [**Windows.Devices.SerialCommunication**](/uwp/api/Windows.Devices.SerialCommunication) namespace that allow apps to talk to these devices.
+Universal Windows Platform (UWP) applications can use the APIs provided by the **[Windows.Devices.SerialCommunication](/uwp/api/Windows.Devices.SerialCommunication)** namespace, allowing apps to talk to CDC devices.
 
 ## Usbser.sys installation
 
 Load the Microsoft-provided in-box driver (*Usbser.sys*) for your communications and CDC control device.
 
 > [!NOTE]
-> If you trying to install a USB device class driver included in Windows, you do not need to download the driver. They are installed automatically. If they are not installed automatically, contact the device manufacturer. For the list of USB device class driver included in Windows, see [USB device class drivers included in Windows](supported-usb-classes.md).
+> If you're trying to install a USB device class driver included in Windows, you don't need to download the driver. Windows installs these drivers automatically. If Windows doesn't install the driver, contact the device manufacturer. For a list of USB device class drivers included in Windows, see [USB device class drivers included in Windows](supported-usb-classes.md).
 
-### Windows 10 and later
-
-Starting in Windows 10, *Usbser.inf* was added to the %Systemroot%\\INF directory, which loads *Usbser.sys* as the functional device object (FDO) in the device stack. If your device belongs to the communications and CDC control device class, *Usbser.sys* is loaded automatically. You do not need to write your own INF to reference the driver. The driver is loaded based on a compatible ID match similar to [other USB device class drivers included in Windows](supported-usb-classes.md).
+*Usbser.inf* is located in the `%Systemroot%\INF` directory. This setup information (INF) file loads *Usbser.sys* as the functional device object (FDO) in the device stack. If your device belongs to the communications and CDC control device class, *Usbser.sys* loads automatically. You don't need to write your own INF file to reference the driver. Windows loads the driver based on a compatible ID match, similar to [other USB device class drivers included in Windows](supported-usb-classes.md).
 
 `USB\Class_02`
 
 `USB\Class_02&SubClass_02`
 
-- If you want to load *Usbser.sys* automatically, set the class code to 02 and subclass code to 02 in the [Device Descriptor](usb-device-descriptors.md). For more information, see [USB communications device class](https://www.usb.org/document-library/class-definitions-communication-devices-12). With this approach, you are not required to distribute INF files for your device because the system uses Usbser.inf.
-- If your device specifies class code 02 but a subclass code value other than 02, *Usbser.sys* does not load automatically. The Plug and Play manager tries to find a driver. If a suitable driver is not found, the device might not have a driver loaded. In this case, you might have to load your own driver or write an INF that references another in-box driver.
-- If your device specifies class and subclass codes to 02, and you want to load another driver instead of *Usbser.sys*, you have to write an INF that specifies the hardware ID of the device and the driver to install. For examples, look through the INF files included with [sample drivers](../samples/universal-serial-bus--usb--driver-samples.md) and find devices similar to your device. For information about INF sections, see [Overview of INF Files](../install/overview-of-inf-files.md).
+To load *Usbser.sys* automatically, set the class code to 02 and subclass code to 02 in the [Device Descriptor](usb-device-descriptors.md). With this approach, you don't need to distribute INF files for your device because the system uses *Usbser.inf*. For more information, see [Class definitions for Communication Devices 1.2](https://www.usb.org/document-library/class-definitions-communication-devices-12).
 
-> [!NOTE]
-> Microsoft encourages you to use in-box drivers whenever possible. On mobile editions of Windows, such as Windows 10 Mobile, only drivers that are part of the operating system are loaded. Unlike desktop editions, it is not possible to load a driver through an external driver package. With the new in-box INF, *Usbser.sys* is automatically loaded if a USB-to-serial device is detected on the mobile device.
+If your device specifies class code 02 but a subclass code other than 02, *Usbser.sys* doesn't load automatically. The Plug and Play manager tries to find a driver. If Windows doesn't find a suitable driver, the device might not have a driver loaded. You might need to load your own driver or write an INF file that references another in-box driver.
 
-### Windows 8.1 and earlier versions
-
-In Windows 8.1 and earlier versions of the operating system, *Usbser.sys* is not automatically loaded when a USB-to-serial device is attached to a computer. To load the driver, you need to write an INF that references the modem INF (*mdmcpq.inf*) by using the **Include** directive. The directive is required for instantiating the service, copying inbox binaries, and registering a device interface GUID that applications require to find the device and talk to it. That INF specifies "Usbser" as a lower filter driver in a device stack.
-
-The INF also needs to specify the device setup class as **Modem** to use *mdmcpq.inf*. Under the **Version** section of the INF, specify the **Modem** and the device class GUID. for details, see [System-Supplied Device Setup Classes](../install/system-defined-device-setup-classes-reserved-for-system-use.md).
-
-``` syntax
-[DDInstall.NT]
-include=mdmcpq.inf
-CopyFiles=FakeModemCopyFileSection
-
-[DDInstall.NT.Services]
-include=mdmcpq.inf
-AddService=usbser, 0x00000000, LowerFilter_Service_Inst
-
-[DDInstall.NT.HW]
-include=mdmcpq.inf
-AddReg=LowerFilterAddReg
-```
-
-For more information, see [How to use or reference the Usbser.sys driver from universal serial bus (USB) modem .inf files](/troubleshoot/windows-client/deployment/how-to-use-reference-usbser-driver-universal-serial-bus).
+If your device specifies class and subclass codes of 02, and you want to load another driver instead of *Usbser.sys*, write an INF file. In the INF file, specify the hardware ID of the device and the driver to install.
 
 ## Configure selective suspend for Usbser.sys
 
-Starting in Windows 10, *Usbser.sys* supports [USB Selective Suspend](usb-selective-suspend.md). It allows the attached USB-to-serial device to enter a low power state when not in use, while the system remains in the S0 state. When communication with the device resumes, the device can leave the suspend state and resume the working state. The feature is disabled by default and can be enabled and configured by setting the **IdleUsbSelectiveSuspendPolicy** entry under this registry key:
+*Usbser.sys* supports [USB Selective Suspend](usb-selective-suspend.md). This driver lets the attached USB-to-serial device enter a low power state when not in use, while the system stays in the S0 state. When communication with the device resumes, the device leaves the suspend state and resumes the working state. The feature is disabled by default, but can be enabled and configured by setting the **IdleUsbSelectiveSuspendPolicy** entry under this registry key:
 
-```syntax
-HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\USB\\&lt;hardware id&gt;\\&lt;instance id&gt;\\Device Parameters
-```
+`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\<hardware id>\<instance id>\Device Parameters`
 
-To configure power management features of *Usbser.sys*, you can set **IdleUsbSelectiveSuspendPolicy** to:
+To configure power management features of *Usbser.sys*, set the **IdleUsbSelectiveSuspendPolicy** parameter to:
 
-- "0x00000001": Enters selective suspend when idle, that is, when there are no active data transfers to or from the device.
+| Value | Behavior |
+|--|--|
+| `0x00000001` | Enter selective suspend when idle, that is, when there are no active data transfers to or from the device. |
+| `0x00000000` | Enter selective suspend only when there are no open handles to the device. |
 
-- "0x00000000": Enters selective suspend only when there are no open handles to the device.
+Add that entry in one of two ways:
 
-That entry can be added in one of two ways:
+1. Write an INF that references the install INF and add the registry entry in the **HW.AddReg** section.
 
-- Write an INF that references the install INF and add the registry entry in the **HW.AddReg** section.
-- Describe the registry entry in an extended properties OS feature descriptor. Add a custom property section that sets the **bPropertyName** field to a Unicode string, "IdleUsbSelectiveSuspendPolicy" and **wPropertyNameLength** to 62 bytes. Set the **bPropertyData** field to "0x00000001" or "0x00000000". The property values are stored as little-endian 32-bit integers.
+1. Describe the registry entry in an extended properties OS feature descriptor. Add a custom property section that sets the **bPropertyName** field to a Unicode string: `IdleUsbSelectiveSuspendPolicy`. Set the **wPropertyNameLength** to 62 bytes. Set the **bPropertyData** field to `0x00000001` or `0x00000000`. The property values store as little-endian 32-bit integers.
 
     For more information, see [Microsoft OS Descriptors](./microsoft-defined-usb-descriptors.md).
 
 ## Develop Windows applications for a USB CDC device
 
-If you install *Usbser.sys* for the USB CDC device, here are the application programming model options:
+A Windows app sends requests to *Usbser.sys* by using the **[Windows.Devices.SerialCommunication](/uwp/api/Windows.Devices.SerialCommunication)** namespace. The namespace defines Windows Runtime classes that communicate with a USB CDC device through a serial port or an abstraction of a serial port. The classes let you discover serial devices, read and write data, and control serial-specific properties for flow control, such as setting the baud rate and signal states.
 
-- Starting in Windows 10, a Windows app can send requests to *Usbser.sys* by using the [**Windows.Devices.SerialCommunication**](/uwp/api/Windows.Devices.SerialCommunication) namespace. It defines Windows Runtime classes that can use to communicate with a USB CDC device through a serial port or some abstraction of a serial port. The classes provide functionality to discover such serial device, read and write data, and control serial-specific properties for flow control, such as setting baud rate, signal states.
+## Related articles
 
-- In Windows 8.1 and earlier versions, you can write a Windows desktop application that opens a virtual COM port and communicates with the device. For more information, see:
-
-    Win32 programming model:
-
-  - [Configuring a Communications Resource](/windows/desktop/DevIO/configuring-a-communications-resource)
-  - [Communications Reference](/windows/desktop/DevIO/communications-reference)
-
-    .NET framework programming model:
-
-  - [System.IO.Ports Namespace](/dotnet/api/system.io.ports?redirectedfrom=MSDN)
-
-## Related topics
-
-[USB device class drivers included in Windows](supported-usb-classes.md)
+- [USB device class drivers included in Windows](supported-usb-classes.md)

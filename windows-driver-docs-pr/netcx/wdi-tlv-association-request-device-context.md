@@ -1,7 +1,7 @@
 ---
 title: WDI_TLV_ASSOCIATION_REQUEST_DEVICE_CONTEXT (dot11wificxtypes.hpp)
 ms.topic: reference
-description: WDI_TLV_ASSOCIATION_REQUEST_DEVICE_CONTEXT is a WiFiCx TLV that contains vendor-specific information that is passed down to the port if the host decides to send a response to a incoming association request.
+description: WDI_TLV_ASSOCIATION_REQUEST_DEVICE_CONTEXT is a WiFiCx TLV that contains vendor-specific information that is passed down to the port if the host decides to send a response to an incoming association request.
 ms.date: 07/31/2021
 keywords:
  - WDI_TLV_ASSOCIATION_REQUEST_DEVICE_CONTEXT Network Drivers Starting with Windows Vista
@@ -12,7 +12,7 @@ keywords:
 [!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
 
-WDI\_TLV\_ASSOCIATION\_REQUEST\_DEVICE\_CONTEXT is a TLV that contains vendor-specific information that is passed down to the port if the host decides to send a response to a incoming association request.
+WDI\_TLV\_ASSOCIATION\_REQUEST\_DEVICE\_CONTEXT is a TLV that contains vendor-specific information that is passed down to the port if the host decides to send a response to an incoming association request.
 
 ## TLV Type
 
@@ -29,7 +29,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
 | Type      | Description                                                                                                                           |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------|
-| UINT8\[\] | Vendor-specific information that is passed down to the port if the host decides to send a response to a incoming association request. |
+| UINT8\[\] | Vendor-specific information that is passed down to the port if the host decides to send a response to an incoming association request. |
 
  
 

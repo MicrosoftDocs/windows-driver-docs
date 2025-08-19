@@ -1,7 +1,8 @@
 ---
-title: How are flag values assigned
+title: How are Flag Values Assigned
 description: How are flag values assigned
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # How are flag values assigned?

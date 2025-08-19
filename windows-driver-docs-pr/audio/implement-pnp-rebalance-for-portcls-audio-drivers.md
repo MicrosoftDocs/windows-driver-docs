@@ -2,6 +2,7 @@
 title: Implement PnP Rebalance for PortCls Audio Drivers
 description: PnP rebalancing is used in certain PCI scenarios where memory resources need to be reallocated.
 ms.date: 04/09/2019
+ms.topic: how-to
 ---
 
 # Implement PnP Rebalance for PortCls Audio Drivers
@@ -12,7 +13,7 @@ PnP rebalancing is used in certain PCI scenarios where memory resources need to 
 Rebalance can be triggered in two main scenarios:
 
 1. PCI hotplug: A user plugs in a device and the PCI bus does not have enough resources to load the driver for the new device. Some examples of devices that fall into this category include Thunderbolt, USB-C and NVME Storage. In this scenario memory resources need to be rearranged and consolidated (rebalanced) to support the additional devices being added.
-2. PCI resizeable BARs: After a driver for a device is successfully loaded in memory, it requests additional resources. Some examples of devices include high-end graphics cards and storage devices. For more information about video driver support see, [Resizable BAR support](../display/resizable-bar-support.md).
+2. PCI resizable BARs: After a driver for a device is successfully loaded in memory, it requests additional resources. Some examples of devices include high-end graphics cards and storage devices. For more information about video driver support see, [Resizable BAR support](../display/resizable-bar-support.md).
 This topic describes what needs to be done to implement PnP rebalance for PortCls audio drivers.
 
 PnP rebalancing is available in Windows 10, version 1511 and later versions of Windows.

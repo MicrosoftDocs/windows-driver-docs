@@ -1,7 +1,8 @@
 ---
-title: Near field communication (NFC) driver samples
+title: Near Field Communication (NFC) Driver Samples
 description: The NFC driver sample in this directory provides a starting point for writing a custom driver for your device.
 ms.date: 03/22/2023
+ms.topic: example-scenario
 ---
 
 # Near field communication (NFC) driver samples

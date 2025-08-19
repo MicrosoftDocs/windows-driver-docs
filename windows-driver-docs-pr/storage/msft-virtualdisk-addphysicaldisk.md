@@ -1,5 +1,5 @@
 ---
-title: AddPhysicalDisk method of the MSFT\_VirtualDisk class
+title: AddPhysicalDisk Method of the MSFT_VirtualDisk Class
 description: Adds one or more physical disks for manual allocation.
 ms.assetid: EB92254A-1A7C-45F6-BD4B-5E4F97F09984
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

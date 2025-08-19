@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageJob class
+title: MSFT_StorageJob Class
 description: Represents a storage job.
 ms.assetid: 71DC2B71-3F39-488F-B9D0-01E65354BF7C
 keywords:
@@ -33,7 +33,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

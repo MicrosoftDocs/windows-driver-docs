@@ -3,6 +3,7 @@ title: Receiving a Wait/Wake IRP
 description: Receiving a Wait/Wake IRP
 keywords: ["power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "receiving wait/wake IRPs", "wait/wake IRPs WDK power management , receiving"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Receiving a Wait/Wake IRP

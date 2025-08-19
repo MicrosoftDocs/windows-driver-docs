@@ -1,5 +1,5 @@
 ---
-title: Load order groups and altitudes for minifilter drivers
+title: Load Order Groups and Altitudes for Minifilter Drivers
 description: Describes load order groups and altitudes for minifilter drivers
 keywords:
 - altitudes WDK file system minifilter
@@ -9,32 +9,35 @@ keywords:
 - driver start types WDK file system
 - create a filter altitude
 - update filter altitude information
-ms.date: 05/27/2021
+ms.date: 04/24/2025
+ms.topic: concept-article
 ---
 
 # Load order groups and altitudes for minifilter drivers
 
-## About load order groups
+This article describes the load order groups and altitudes for minifilter drivers. It also describes how to create a filter altitude and how to update information associated with existing altitudes.
 
-Windows uses a dedicated set of *load order groups* for file system minifilters and legacy filter drivers that are loaded at system startup. A filter's load order group assignment depends on the filter's type (for example: AV, encryption, etc).
+## Minifilter load order groups
 
-## About altitudes
+Windows uses a dedicated set of *load order groups* for file system minifilters and legacy filter drivers that are loaded at system startup. A filter's load order group assignment depends on the filter's type (for example: anti-virus, encryption, etc.).
 
-Each load order group has a defined range of *altitudes*. Every filter driver must have a unique altitude identifier. The filter's altitude defines its position relative to other filter drivers in the I/O stack when it is loaded.
+## Minifilter altitudes
+
+Each load order group has a defined range of *altitudes*. Every filter driver must have a unique altitude identifier. The filter's altitude defines its position relative to other filter drivers in the I/O stack when that filter is loaded.
 
 The altitude is an infinite-precision string interpreted as a decimal number. A filter driver that has a low numerical altitude is loaded into the I/O stack below a filter driver that has a higher numerical value.
 
-Microsoft allocates "integer" altitude values based on filter requirements and load order group. Companies with a Microsoft-assigned integer altitude can [create their own altitudes](#create-an-altitude) within the same load order group.
+Microsoft must allocate your first altitude value based on filter requirements and load order group. Companies with a Microsoft-assigned "integer" altitude can then [create their own altitudes](#create-an-altitude) within the same load order group.
 
-Altitude values for a filter driver are specified in the **Instance** definitions of the [**Strings** Section in the filter driver's INF file](creating-an-inf-file-for-a-minifilter-driver.md). Instance definitions can also be specified in calls to the [**InstanceSetupCallback**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_instance_setup_callback) routine in the [**FLT_REGISTRATION**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_registration) structure. Multiple instances and altitudes can be defined for a filter driver. These instance definitions apply across all volumes. Note that multiple altitudes for the same driver is rarely allowed and there is always a better solution.
+Altitude values for a filter driver are specified in the **Instance** definitions of the [**Strings** Section in the filter driver's INF file](creating-an-inf-file-for-a-minifilter-driver.md). Instance definitions can also be specified in calls to the [**InstanceSetupCallback**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_instance_setup_callback) routine in the [**FLT_REGISTRATION**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_registration) structure. Multiple instances and altitudes can be defined for a filter driver. These instance definitions apply across all volumes. Multiple altitudes for the same driver are rarely allowed and there's always a better solution.
 
 ## Types of load order groups and their altitude ranges
 
 The following table lists the system-defined load order groups and altitude ranges. Each entry in the table's "Load order group" column uses the value that should be specified for a group in the **LoadOrderGroup** entry in the [**ServiceInstall** Section of a filter's INF file](creating-an-inf-file-for-a-minifilter-driver.md). The Altitude range column contains the range of altitudes for a particular load order group.
 
-The load order groups and altitude ranges are listed as they appear on the stack, which is the reverse of the order in which they are loaded.
+The load order groups and altitude ranges are listed as they appear on the stack, which is the reverse of the order in which they're loaded.
 
-Load order group | Altitude range | Group description |
+| Load order group | Altitude range | Group description |
 | -------------- | -------------- | ----------------- |
 | Filter | 420000-429999 | Same as the Filter load order group that was available on Windows 2000 and earlier. This group loads last and thus attaches furthest from the file system. |
 | FSFilter Top | 400000-409999 | For filter drivers that must attach above all other FSFilter types. |
@@ -62,14 +65,11 @@ Load order group | Altitude range | Group description |
 
 ## Create an altitude
 
-If you don't already have a Microsoft-assigned integer altitude in the same load order group, you need to [request a filter altitude](minifilter-altitude-request.md).
+If you don't already have a Microsoft-assigned "integer" altitude in the same load order group, you need to [request a filter altitude](minifilter-altitude-request.md).
 
-If you already have a Microsoft-assigned altitude, you can create your own altitude to place a new filter in the same load order group. To do so, simply append a fractional value to your existing altitude. For example:
+If you already have a Microsoft-assigned altitude, you can create your own altitude to place a new filter in the same load order group. To do so, just append a fractional value to your existing altitude. For example, let's say that you were previously assigned altitude 325000 in the FSFilter Anti-Virus group. If you have two new filters, you can choose to load them at altitudes such as 325000.3 and 325000.7 without making an altitude request.
 
-* Let's say that you were previously assigned altitude 325000 in the FSFilter Anti-Virus group.
-* If you have two new filters, you could choose to load them at altitudes such as 325000.3 and 325000.7 without making an altitude request.
-
-If you create your own fractional value altitude for a new filter, please email [fsfcomm@microsoft.com](mailto:fsfcomm@microsoft.com?subject=Filter%20altitude%20request) with the following information so that we can keep the [filter community list](allocated-altitudes.md) up to date:
+If you create your own fractional value altitude for a new filter, email [*fsfcomm@microsoft.com*](mailto:fsfcomm@microsoft.com?subject=Filter%20altitude%20request) with the following information so that we can keep the [filter community list](allocated-altitudes.md) up to date:
 
 * Your company name
 * Contact e-mail (long-term company e-mail alias; not an individual email)
@@ -82,4 +82,4 @@ If you create your own fractional value altitude for a new filter, please email 
 
 ## Update information associated with existing altitudes
 
-To update information associated with existing altitudes (for example, changes to your company name, contact e-mail, product URL, filter description, etc), send email to [fsfcomm@microsoft.com](mailto:fsfcomm@microsoft.com?subject=Filter%20altitude%20request) and include the information to be updated.
+To update information associated with existing altitudes, send email to [*fsfcomm@microsoft.com*](mailto:fsfcomm@microsoft.com?subject=Filter%20altitude%20request) with the information to be updated. Updated information might include changes to your company name, contact e-mail, product URL, filter description, etc.

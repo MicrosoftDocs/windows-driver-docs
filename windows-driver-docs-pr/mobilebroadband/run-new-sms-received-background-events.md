@@ -1,7 +1,8 @@
 ---
-title: Run new SMS received background events
+title: Run New SMS Received Background Events
 description: Run new SMS received background events
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Run new SMS received background events
@@ -78,7 +79,7 @@ taskAway.addEventListener("progress", new ProgressHandler(taskAway).onProgress);
 taskAway.addEventListener("completed", new CompleteHandler(taskAway).onCompleted);
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Developing SMS apps](developing-sms-apps.md)

@@ -11,6 +11,7 @@ keywords:
 - Direct Memory Access WDK Driver Verifier
 - DMA errors WDK Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # DMA Verification

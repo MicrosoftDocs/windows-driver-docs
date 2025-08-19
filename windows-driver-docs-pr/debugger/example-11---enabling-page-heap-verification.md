@@ -2,6 +2,7 @@
 title: Example 11 Enabling Page Heap Verification
 description: Example 11 Enabling Page Heap Verification
 ms.date: 10/12/2018
+ms.topic: concept-article
 ---
 
 # Example 11: Enabling Page Heap Verification
@@ -41,8 +42,3 @@ gflags /i myapp.exe -02000000
  
 
  
-
-
-
-
-

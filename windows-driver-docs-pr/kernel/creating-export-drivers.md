@@ -3,6 +3,7 @@ title: Creating Export Drivers
 description: Creating Export Drivers
 keywords: ["export drivers WDK kernel", "loading export drivers WDK kernel", "importing export driver functions", "module-definition files WDK kernel", ".def files", "def files", "kernel-mode drivers WDK , export drivers"]
 ms.date: 10/01/2021
+ms.topic: how-to
 ---
 
 # Creating Export Drivers

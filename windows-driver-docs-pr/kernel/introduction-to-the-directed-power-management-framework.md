@@ -3,6 +3,7 @@ title: Introduction to the Directed Power Management Framework
 description: Describes the Directed Power Management Framework, or DFx, which is part of the Power Framework, or PoFx, version 3.
 ms.date: 08/10/2022
 ms.custom: 19H1
+ms.topic: concept-article
 ---
 
 # Introduction to the Directed Power Management Framework
@@ -19,7 +20,9 @@ DFx does not power down paging or debug devices.
 
 ## Requirements for WDF (non-miniport) drivers
 
-A WDF driver that specifies **SystemManagedIdleTimeout** or **SystemManagedIdleTimeoutWithHint** in the [WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure can opt into DFx by adding the following registry key to the INF's [AddReg directive section](../install/inf-addreg-directive.md) within the [DDInstall.HW section](../install/inf-ddinstall-hw-section.md):
+A WDF driver that is a power policy owner must implement an appropriate S0-Idle policy by specifying  **SystemManagedIdleTimeout** or **SystemManagedIdleTimeoutWithHint** in the [WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure. This will allow the device to power down when it is idle. As an added power resiliency measure, the driver can opt into DFx. The power subsystem may direct WDF to power down the device if it is a D-state constraint and has not already powered down when the system enters into a low power modern standby state. When the power subsystem directs WDF to power down the device, WDF will initiate a transition to a low power Dx state. This is conceptually similar to how WDF may power down the device in response to a system power transition to Sx (where x > 0). When the device has been directed to power down by PoFx, power managed IO requests or a call to [WdfDeviceStopIdle](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle) will not restore the device to a powered on D0 state. See [WdfDeviceStopIdle](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle) for more information.
+
+A driver can opt into by adding the following registry key to the INF's [AddReg directive section](../install/inf-addreg-directive.md) within the [DDInstall.HW section](../install/inf-ddinstall-hw-section.md):
 
 `HKR,"WDF","WdfDirectedPowerTransitionEnable",0x00010001,1`
 
@@ -34,7 +37,7 @@ A WDF driver targeting version 33 and above can alternatively opt out of DFx by 
 
 Because requesting system-managed idle timeout causes WDF to register with PoFx on the driver's behalf, the driver does not need to register with PoFx in this scenario.
 
-If the driver specifies **DriverManagedIdleTimeout**, consider switching to system-managed idle timeout.  If that is not feasible, use the guidelines in the WDM section below to opt into DFx.
+If the driver specifies **DriverManagedIdleTimeout**, consider switching to system-managed idle timeout. If that is not feasible, use the guidelines in the WDM section below to opt into DFx.
 
 If the WDF driver does not use runtime power management, add support for it and use system-managed idle timeout.  To do so, provide an [WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure as input to [**WdfDeviceAssignS0IdleSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings).
 
@@ -88,7 +91,7 @@ For device classes that follow a port/miniport driver model, system-supplied por
 
 ## Guidance for third-party miniports of KS.sys
 
-Starting with Windows 10, version 2004 (also known as 20H1 or build 19041), KS.sys opts-out of DFx and related HLK requirements by default. Third-party minports of KS.sys can opt-in to DFx and related HLK by registering itself with PoFx and adding KsDFxSupportEnable registry key to the INF. 
+Starting with Windows 10, version 2004 (also known as 20H1 or build 19041), KS.sys opts-out of DFx and related HLK requirements by default. Third-party miniports of KS.sys can opt-in to DFx and related HLK by registering itself with PoFx and adding KsDFxSupportEnable registry key to the INF. 
 
 A driver can register itself with PoFx by using the implementation mentioned in [this section](#requirements-for-wdm-non-miniport-drivers). Additionally, the following line needs to be added in the [AddReg directive](../install/inf-addreg-directive.md) section.
 

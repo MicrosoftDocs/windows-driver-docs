@@ -1,5 +1,5 @@
 ---
-title: Set method of the MSFT\_StorageSetting class
+title: Set Method of the MSFT_StorageSetting Class
 description: Sets the state of various storage settings on this computer.
 ms.assetid: 94F98CA7-795B-481C-BE97-B65FF015B761
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

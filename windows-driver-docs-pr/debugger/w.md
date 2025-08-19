@@ -2,6 +2,7 @@
 title: W (Windows Debugger Glossary)
 description: Glossary page - W
 ms.date: 11/28/2017
+ms.topic: glossary
 ---
 
 # W
@@ -19,8 +20,3 @@ An emulation layer in 64-bit Windows that can run 32-bit Windows applications. W
  
 
  
-
-
-
-
-

@@ -3,6 +3,7 @@ title: SymStore Transactions
 description: SymStore Transactions
 keywords: ["SymStore, transactions"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # SymStore Transactions
@@ -176,8 +177,3 @@ The fields for the delete transaction are described as follows.
  
 
  
-
-
-
-
-

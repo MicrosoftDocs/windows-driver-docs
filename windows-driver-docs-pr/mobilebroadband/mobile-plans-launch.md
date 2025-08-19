@@ -1,10 +1,10 @@
 ---
-title: Mobile Plans launch
+title: Mobile Plans Launch
 description: This topic describes the launch step for the Mobile Plans program.
 keywords:
 - Windows Mobile Plans launch, Mobile Plans launch mobile operators
 ms.date: 03/25/2019
-ms.topic: article
+ms.topic: solution-overview
 ---
 
 # Mobile Plans launch

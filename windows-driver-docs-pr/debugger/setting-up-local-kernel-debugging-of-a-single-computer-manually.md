@@ -2,12 +2,13 @@
 title: Setting Up Local Kernel Debugging of a Single Computer Manually
 description: Setting Up Local Kernel Debugging of a Single Computer Manually
 ms.date: 07/11/2018
+ms.topic: how-to
 ---
 
 # Setting Up Local Kernel Debugging of a Single Computer Manually
 
 
-Debugging Tools for Windows supports *local kernel debugging*. This is kernel-mode debugging on a single computer. In other words, the debugger runs on the same computer that is being debugged. With local debugging you can examine state, but not break into kernel mode processes that would cause the OS to stop running.
+Debugging Tools for Windows supports *local kernel debugging*. This is kernel-mode debugging on a single computer. In other words, the debugger runs on the same computer that is being debugged. With local debugging, you can examine state, but not break into kernel mode processes that would cause the OS to stop running.
 
 The *local* bcdedit option is available in Windows 8.0 and Windows Server 2012 and later.
 
@@ -49,9 +50,3 @@ Open a Command Prompt window as Administrator, and enter the following command:
  
 
  
-
-
-
-
-
-

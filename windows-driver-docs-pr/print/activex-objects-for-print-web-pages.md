@@ -7,6 +7,7 @@ keywords:
 - customized print Web pages WDK , ActiveX objects
 - ActiveX objects WDK printer
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # ActiveX Objects for Print Web Pages

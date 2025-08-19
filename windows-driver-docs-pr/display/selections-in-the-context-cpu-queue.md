@@ -2,6 +2,7 @@
 title: Selections in the Context CPU Queue
 description: "The standard queue packet has the time measurements similar to the Standard Dma Packet."
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Selections in the Context CPU Queue  

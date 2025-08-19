@@ -2,6 +2,7 @@
 title: Windows Kernel-Mode Safe String Library
 description: Windows Kernel-Mode Safe String Library
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Windows Kernel-Mode Safe String Library

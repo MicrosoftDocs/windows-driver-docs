@@ -3,6 +3,7 @@ title: Special Pool
 description: Special Pool
 keywords: ["Special Pool", "Special Pool, overview", "GFlags, Special Pool"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Special Pool
@@ -153,8 +154,3 @@ On Windows Vista and later versions of Windows, you can configure the Special Po
  
 
  
-
-
-
-
-

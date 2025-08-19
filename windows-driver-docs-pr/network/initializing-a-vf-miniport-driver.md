@@ -1,7 +1,8 @@
 ---
 title: Initializing a VF Miniport Driver
-description: Initializing a VF Miniport Driver
+description: The guidelines for writing a MiniportInitializeEx function for the miniport driver for a PCI Express (PCIe) Virtual Function (VF).
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing a VF Miniport Driver
@@ -38,7 +39,7 @@ In addition to these steps, the VF miniport driver must follow these additional 
 
   1.  The miniport driver initializes an [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes) structure.
 
-      The miniport driver sets the **HardwareSriovCapabilities** and **CurrentSriovCapabilities** members to a pointer to the previouslyinitialized [**NDIS\_SRIOV\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_sriov_capabilities) structure.
+      The miniport driver sets the **HardwareSriovCapabilities** and **CurrentSriovCapabilities** members to a pointer to the previously initialized [**NDIS\_SRIOV\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_sriov_capabilities) structure.
 
   2.  The driver calls [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) and sets the *MiniportAttributes* parameter to a pointer to the [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes) structure.
 

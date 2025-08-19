@@ -4,6 +4,8 @@ description: Viewing Test Certificates
 keywords:
 - driver signing WDK , viewing test certificates
 ms.date: 04/20/2017
+ms.topic: how-to
+ms.custom: sfi-image-nochange
 ---
 
 # Viewing Test Certificates

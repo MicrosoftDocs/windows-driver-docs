@@ -1,7 +1,8 @@
 ---
-title: Enumerate available mobile broadband accounts
+title: Enumerate Available Mobile Broadband Accounts
 description: Enumerate available mobile broadband accounts
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Enumerate available mobile broadband accounts
@@ -30,7 +31,7 @@ Account watcher objects automatically stop when the app is suspended by Windows,
 
  
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Common tasks for mobile broadband Windows Runtime APIs](./create-a-mobilebroadbandaccount-object.md)

@@ -1,12 +1,13 @@
 ---
-description: This topic provides installation information about Netmon and the USB ETW parsers.
-title: How to install Netmon and USB ETW Parsers
-ms.date: 03/24/2023
+title: How to Install Netmon and USB ETW Parsers
+description: This article provides installation information about Netmon and the USB ETW parsers.
+ms.date: 09/23/2024
+ms.topic: install-set-up-deploy
 ---
 
 # How to install Netmon and USB ETW Parsers
 
-This topic provides installation information about Netmon and the USB ETW parsers.
+This article provides installation information about Netmon and the USB ETW parsers.
 
 Install Netmon from the Microsoft Download Center, and then install USB ETW parsers from [Windows Driver Kit (WDK)](../download-the-wdk.md). The USB ETW parsers are supported in Netmon Version 3.3 and later versions.
 
@@ -14,30 +15,31 @@ Install Netmon from the Microsoft Download Center, and then install USB ETW pars
 
 1. Determine whether your machine is running 32-bit Windows or 64-bit Windows:
 
-    1. Open the **Start** menu, right-click **Computer** and view **Properties**.
+    1. Open the **Start** menu, right-click **Computer**, and view **Properties**.
     1. Look at the **System type** field.
 
-    If your system type is 32-bit Operating System, you will use the x86 download. If your system type is 64-bit Operating System and your processor is Itanium, you will use the ia64 download. For other processor types, use the x64 or AMD64 download.
+    If your system type is 32-bit Operating System, you'll use the x86 download. If your system type is 64-bit Operating System and your processor is Itanium, you'll use the ia64 download. For other processor types, use the x64 or AMD64 download.
 
 1. Install Netmon:
-    1. On the [Windows Network Monitor](https://go.microsoft.com/fwlink/p/?linkid=103158) page in the Microsoft Download Center and read the description of the tool.
-    1. Under **Files in this Download** section toward the bottom of the page, select the **Download** button for your system type.
-    1. Download and run the .exe file to start the Setup Wizard.
-    1. Select **Typical** when you are asked to choose the setup type.
+    1. Navigate to the [Windows Network Monitor](https://www.microsoft.com/download/details.aspx?id=4865) page in the Microsoft Download Center.
+    1. Select the **Download** button.
+    1. Choose one or more appropriate .exe files for your system in the download pop-up window and select the **Download** button.
+    1. After the download completes, run the .exe file to start the Setup Wizard.
+    1. Select **Typical** when you're asked to choose the setup type.
 
 1. Install the WDK from [Windows Driver Kit (WDK))](../download-the-wdk.md).
 1. Allow execution of PowerShell scripts:
-    1. On the Start screen, type "powershell", right-click on the Windows PowerShell result, and select **Run as administrator**.
+    1. On the Start screen, type `powershell`, right-click on the Windows PowerShell result, and select **Run as administrator**.
     1. In the PowerShell window, type this command:
 
-        ```syntax
+        ```powershell
         Set-ExecutionPolicy RemoteSigned -Force
         ```
 
     1. Close the PowerShell window.
     1. Open a PowerShell window (you don't need to **Run as administrator**) and run the following commands. Adjust the path if you installed the kit to a different location:
 
-        ```syntax
+        ```powershell
         cd "C:\Program Files (x86)\Windows Kits\10\Tools\10.0.22621.0\x86\Network Monitor Parsers\usb"
         ..\NplAutoProfile.ps1
         ```
@@ -56,6 +58,6 @@ Netmon is now configured for use with a USB ETW trace file. For more information
 
 ## Related topics
 
-* [Using USB ETW](using-usb-etw.md)  
-* [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
-* [How to open an ETW trace in Netmon](how-to-examining-a-trace-file-by-using-netmon.md)
+- [Using USB ETW](using-usb-etw.md)
+- [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)
+- [How to open an ETW trace in Netmon](how-to-examining-a-trace-file-by-using-netmon.md)

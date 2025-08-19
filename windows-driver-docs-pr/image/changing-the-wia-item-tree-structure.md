@@ -1,7 +1,8 @@
 ---
-title: Change the WIA item tree structure
+title: Change the WIA Item Tree Structure
 description: Change the WIA item tree structure
 ms.date: 03/28/2023
+ms.topic: concept-article
 ---
 
 # Change the WIA item tree structure

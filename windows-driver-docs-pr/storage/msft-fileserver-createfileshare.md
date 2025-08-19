@@ -1,5 +1,5 @@
 ---
-title: CreateFileShare method of the MSFT\_FileServer class
+title: CreateFileShare Method of the MSFT_FileServer Class
 description: Creates a file share on the file server.
 ms.assetid: 0567E773-D3C4-4BE8-83AA-2929A8064F45
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

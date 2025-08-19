@@ -1,10 +1,11 @@
 ---
-title: Pairs (GPD language)
+title: Pairs (GPD Language)
 description: To assign a pair of values to an attribute, use the PAIR keyword.
 keywords:
 - GPD file entries WDK Unidrv , pairs
 - pairs WDK GPD files
 ms.date: 01/30/2023
+ms.topic: reference
 ---
 
 # Pairs (GPD language)

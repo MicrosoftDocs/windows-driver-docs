@@ -2,6 +2,7 @@
 title: Creating and Opening Processes by WIA Drivers
 description: Creating and Opening Processes by WIA Drivers
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating and Opening Processes by WIA Drivers

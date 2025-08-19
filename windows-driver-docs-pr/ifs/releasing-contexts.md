@@ -5,6 +5,7 @@ keywords:
 - contexts WDK file system minifilter , releasing
 - releasing contexts
 ms.date: 01/22/2021
+ms.topic: concept-article
 ---
 
 # Releasing Contexts

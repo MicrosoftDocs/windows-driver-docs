@@ -2,6 +2,7 @@
 title: Debugging the Service Application Manually
 description: Debugging the Service Application Manually
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Debugging the Service Application Manually
@@ -34,8 +35,3 @@ After the debugger starts, proceed as you would in any other user-mode debugging
  
 
  
-
-
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_QUALITY\_ERROR
+title: KSPROPERTY_QUALITY_ERROR
 description: The KSPROPERTY\_QUALITY\_ERROR property is an optional property that should be implemented if the pin supports quality management.
 keywords: ["KSPROPERTY_QUALITY_ERROR Streaming Media Devices"]
 topic_type:

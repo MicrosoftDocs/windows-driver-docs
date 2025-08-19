@@ -3,6 +3,7 @@ title: Client and Server Examples
 description: Client and Server Examples
 keywords: ["remote debugging through the debugger, examples"]
 ms.date: 06/08/2020
+ms.topic: example-scenario
 ---
 
 # Client and Server Examples
@@ -65,8 +66,3 @@ D:\> cdb -server "ssl:proto=tls1,machuser=ab 38 f7 ae 13 20 ac da 05 14 65 60 30
  
 
  
-
-
-
-
-

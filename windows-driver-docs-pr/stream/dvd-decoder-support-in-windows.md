@@ -6,30 +6,29 @@ keywords:
 - decoder minidrivers WDK DVD , Windows support
 - DVD decoder minidrivers WDK , writing
 - decoder minidrivers WDK DVD , writing
-ms.date: 06/16/2020
+ms.date: 04/25/2025
+ms.topic: concept-article
 ---
 
 # DVD Decoder Support in Windows
 
 > [!NOTE]
-> This topic is intended for developers. For general information about DVD decoders for Windows, including a list of software decoders, see [Plug-ins and add-ons for Windows Media Player](https://support.microsoft.com/help/17948/plug-ins-and-add-ons-for-windows-media-player) on the Microsoft Support site.
-
-DVD decoders are supported in Windows 98/Me and later as well as Windows 2000 and later.
+> This topic is intended for developers. For general information about Windows Media Player 12 and decoders for Windows, see [Windows Media Player 12](https://support.microsoft.com/windows/windows-media-player-12-e8f84f54-cd64-865c-2e83-1d8ec121b5b8) on the Microsoft Support site.
 
 To write a DVD decoder minidriver, the minidriver must include the *ksmedia.h* and *ntddcdvd.h* header files that are provided in the WDK. The minidriver must also link to the *stream.lib*, *ks.lib*, *ksguid.lib*, and *dxapi.lib* libraries.
 
-Under Windows XP, the following components support DVD decoding and playback:
+The following components support DVD decoding and playback:
 
 - **WDM Stream Class Driver**
 
     The WDM stream class driver supports streaming data types and MPEG-2 and AC-3 hardware decoders. For more information, see [Streaming Minidrivers](/windows-hardware/drivers/ddi/_stream/index).
 
     > [!NOTE]
-    > Microsoft does not provide MPEG-2 or AC-3 software/hardware decoder filters with Windows XP. Vendors must supply either a DirectShow-compatible software decoder for each required DVD data stream, or provide a WDM streaming-compatible DVD decoder minidriver to support their DVD hardware decoders.
+    > Microsoft does not provide MPEG-2 or AC-3 software/hardware decoder filters. Vendors must supply either a DirectShow-compatible software decoder for each required DVD data stream, or provide a WDM streaming-compatible DVD decoder minidriver to support their DVD hardware decoders.
 
 - **DVD-ROM Class Driver**
 
-    Support for the DVD-ROM command set, including commands for copyright protection and regionalization, is provided in Windows XP by an updated CD-ROM class driver. This class driver provides the ability to read data sectors from a DVD-ROM drive.
+    Support for the DVD-ROM command set, including commands for copyright protection and regionalization, is provided by an updated CD-ROM class driver. This class driver provides the ability to read data sectors from a DVD-ROM drive.
 
 - **UDF File System**
 

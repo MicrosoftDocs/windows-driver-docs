@@ -1,7 +1,8 @@
 ---
-title: WDDM 1.2 installation scenarios
+title: WDDM 1.2 Installation Scenarios
 description: The Windows 8 installation graphics driver behavior is designed to ensure that, whenever possible, our customers get a graphics driver that has been tested and certified for Windows 8.
 ms.date: 04/20/2017
+ms.topic: solution-overview
 ---
 
 # WDDM 1.2 installation scenarios

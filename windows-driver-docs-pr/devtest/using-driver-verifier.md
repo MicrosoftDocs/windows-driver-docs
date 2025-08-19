@@ -2,6 +2,7 @@
 title: Using Driver Verifier
 description: Using Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using Driver Verifier
@@ -19,12 +20,4 @@ This section includes:
 [Controlling Driver Verifier](controlling-driver-verifier.md)
 
 [Monitoring Driver Verifier](monitoring-driver-verifier.md)
-
- 
-
- 
-
-
-
-
 

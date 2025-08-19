@@ -1,5 +1,5 @@
 ---
-title: C28158 warning
+title: C28158 Warning
 description: Warning C28158 No IRQL was saved.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -7,6 +7,7 @@ keywords:
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28158"
+ms.topic: reference
 ---
 
 # C28158
@@ -15,12 +16,4 @@ f1_keywords:
 warning C28158: No IRQL was saved
 
 A **\_IRQL\_saves\_** annotation specifies that the current function will save an IRQL value in the specified variable, but there is at least one path in which the IRQL value is not saved in that variable.
-
- 
-
- 
-
-
-
-
 

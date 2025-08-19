@@ -1,18 +1,26 @@
 ---
-title: Write a Universal Windows driver (UMDF 2) based on a template
-description: This topic describes how to write a Universal Windows driver using User-Mode Driver Framework (UMDF) 2. You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
-keywords:
-- Write a UMDF driver
-ms.date: 06/02/2021
+title: Write a UMDF 2 Based on a Template
+description: How to write a Universal Windows driver using User-Mode Driver Framework (UMDF) 2. You'll start with a Microsoft Visual Studio template.
+ms.date: 12/09/2024
+ms.topic: tutorial
 ---
 
-# Write a Universal Windows driver (UMDF 2) based on a template
+# Tutorial: Write a Universal Windows driver (UMDF 2) based on a template
 
-This topic describes how to write a [Universal Windows driver](/windows-hardware/drivers) using User-Mode Driver Framework (UMDF) 2. You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
+This topic describes how to write a *Universal Windows driver* using User-Mode Driver Framework (UMDF) 2. You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
 
-To get started, be sure you have the most recent version of Microsoft Visual Studio and the Windows Driver Kit (WDK). For download links, see [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
+## Prerequisites
 
-[Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
+- Follow the steps to install [Windows Driver Kit (WDK)](../download-the-wdk.md). [Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
+- Install [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/). When you install Visual Studio 2022, select the **Desktop development with C++** workload, then under **Individual Components** add:
+
+    - MSVC v143 - VS 2022 C++ ARM64/ARM64EC Spectre-mitigated libs (Latest)
+    - MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
+    - C++ ATL for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
+    - C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)
+    - C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
+    - C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)
+    - Windows Driver Kit
 
 ## Create and build a driver
 
@@ -24,6 +32,9 @@ To get started, be sure you have the most recent version of Microsoft Visual Stu
 1. Select **User Mode Driver (UMDF V2)** from the list of project types. Select **Next**.
 
     :::image type="content" source="images/vs2019-umdf2-template.png" alt-text="Screen shot of the new project dialog box, showing user mode driver selected.":::
+
+    > [!TIP]
+    > If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, launch **Visual Studio Installer**, select **Modify**, add **Windows Driver Kits** in the **Individual Component** tab, and select **Modify**.
 
 1. In the **Configure your new project** dialog box, enter "UmdfDriver" in the **Project name** field.
 
@@ -60,7 +71,8 @@ To get started, be sure you have the most recent version of Microsoft Visual Stu
 
 Typically when you test and debug a driver, the debugger and driver run on separate computers. The computer that runs the debugger is called the *host computer*, and the computer that runs the driver is called the *target computer*. The target computer is also called the *test computer*.
 
-So far, you've used Visual Studio to build a driver on the host computer. Now you need to configure a target computer. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md). Then you'll be ready to deploy, install, load, and debug your driver:
+> [!IMPORTANT]
+> So far, you've used Visual Studio to build a driver on the host computer. Now you need to configure a target computer. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md). Then you'll be ready to deploy, install, load, and debug your driver.
 
 1. On the host computer, open your solution in Visual Studio. You can double-click the solution file, UmdfDriver.sln, in your UmdfDriver folder.
 2. In the **Solution Explorer** window, select and hold (or right-click) **UmdfDriver**, and choose **Properties**.

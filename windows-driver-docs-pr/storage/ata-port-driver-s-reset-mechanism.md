@@ -6,6 +6,7 @@ keywords:
 - reset mechanism WDK ATA Port driver
 - LUN resets WDK ATA Port driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # ATA Port Driver's Reset Mechanism

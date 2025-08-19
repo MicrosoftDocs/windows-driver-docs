@@ -1,5 +1,5 @@
 ---
-title: CreateReplica method of the MSFT\_VirtualDisk class
+title: CreateReplica Method of the MSFT_VirtualDisk Class
 description: Creates a replication relationship between virtual disks.
 ms.assetid: F2453003-BE50-4B12-ACDA-03B44D3803FF
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - adojet.h
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

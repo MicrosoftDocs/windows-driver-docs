@@ -4,6 +4,7 @@ description: This topic describes WFP user mode management functions.
 keywords:
 - WFP user mode management functions network drivers
 ms.date: 11/07/2017
+ms.topic: reference
 ---
 
 # WFP user mode management functions

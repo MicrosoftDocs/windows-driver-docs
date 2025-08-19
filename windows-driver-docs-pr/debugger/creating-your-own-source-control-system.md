@@ -3,6 +3,7 @@ title: Creating Your Own Source Control System
 description: Creating Your Own Source Control System
 keywords: ["source servers, HTTP sites", "source servers, UNC shares", "SrcSrv, HTTP sites", "SrcSrv, UNC shares"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Creating Your Own Source Control System
@@ -25,8 +26,3 @@ This section includes:
  
 
  
-
-
-
-
-

@@ -15,6 +15,7 @@ keywords:
 - status information WDK KMDF , USB I/O targets
 - device objects WDK KMDF
 ms.date: 06/24/2019
+ms.topic: concept-article
 ---
 
 # Working with USB Devices
@@ -32,7 +33,7 @@ It contains the following sections:
 -   [Resetting and Power-Cycling a Device's Port](#resetting-and-power-cycling-a-device-s-port)
 -   [Sending an URB to a Device](#sending-a-urb-to-a-device)
 
-For step-by-step directions on writing a simple KMDF-based USB client driver, see [How to write your first USB client driver (KMDF)](/windows-hardware/drivers/ddi/index).
+For step-by-step directions on writing a simple KMDF-based USB client driver, see [How to write your first USB client driver (KMDF)](/windows-hardware/drivers/usbcon/tutorial--write-your-first-usb-client-driver--kmdf-).
 
 ## <a href="" id="creating-a-framework-usb-device-object"></a> Creating a USB device object
 
@@ -87,10 +88,10 @@ Retrieves the current USB frame number.
 To obtain the Unicode strings that are contained in a USB device's descriptors, the driver can call any of the following methods:
 
 <a href="" id="wdfusbtargetdevicegetdevicedescriptor"></a>[**WdfUsbTargetDeviceGetDeviceDescriptor**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetdevicedescriptor)  
-Obtains a device's [USB device descriptor](/windows-hardware/drivers/ddi/index).
+Obtains a device's [USB device descriptor](/windows-hardware/drivers/usbcon/usb-device-descriptors).
 
 <a href="" id="wdfusbtargetdeviceretrieveconfigdescriptor"></a>[**WdfUsbTargetDeviceRetrieveConfigDescriptor**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceretrieveconfigdescriptor)  
-Obtains a device's [USB configuration descriptor](/windows-hardware/drivers/ddi/index), interface descriptors, and endpoint descriptors.
+Obtains a device's [USB configuration descriptor](/windows-hardware/drivers/usbcon/usb-configuration-descriptors), interface descriptors, and endpoint descriptors.
 
 <a href="" id="---------wdfusbtargetdevicequerystring--------"></a>[**WdfUsbTargetDeviceQueryString**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequerystring)  
 Copies a Unicode string to a driver-supplied buffer.
@@ -112,7 +113,7 @@ Synchronously sends a USB control transfer request.
 <a href="" id="---------wdfusbtargetdeviceformatrequestforcontroltransfer--------"></a>[**WdfUsbTargetDeviceFormatRequestForControlTransfer**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdeviceformatrequestforcontroltransfer)  
 Formats a request for a USB control transfer. The driver can call [**WdfRequestSend**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend) to send the request synchronously or asynchronously.
 
-For related information, see [How to send a USB control transfer](/windows-hardware/drivers/ddi/index).
+For related information, see [How to send a USB control transfer](/windows-hardware/drivers/usbcon/usb-control-transfer).
 
 ## <a href="" id="resetting-and-power-cycling-a-device-s-port"></a> Resetting and Power-Cycling a Device's Port
 

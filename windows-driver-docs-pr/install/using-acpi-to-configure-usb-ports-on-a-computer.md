@@ -2,6 +2,7 @@
 title: Using ACPI to Configure USB Ports on a Computer
 description: Using ACPI to Configure USB Ports on a Computer
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using ACPI to Configure USB Ports on a Computer

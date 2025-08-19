@@ -1,7 +1,8 @@
 ---
-title: Code example for reading device properties
+title: Code Example for Reading Device Properties
 description: Code example for reading device properties
 ms.date: 03/28/2023
+ms.topic: how-to
 ---
 
 # Code example for reading device properties

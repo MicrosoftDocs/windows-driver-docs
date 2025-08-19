@@ -1,7 +1,8 @@
 ---
 title: BCDEdit Options Reference
 description: BCDEdit Options Reference
-ms.date: 09/25/2020
+ms.date: 08/26/2024
+ms.topic: reference
 ---
 
 # BCDEdit Options Reference
@@ -11,7 +12,7 @@ ms.date: 09/25/2020
 This section describes the boot options for supported versions of Windows that are related to developing, testing, and debugging drivers on computers with x86-based and x64-based processors. You can add these parameters to the boot entries for Windows operating systems.
 
 > [!CAUTION]
-> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the **BCDEdit /set** command could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings. For more information, see [How to open MSConfig in Windows 10](https://support.microsoft.com/help/4026130/windows-how-to-open-msconfig-in-windows-10).
+> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the **BCDEdit /set** command could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings. For more information, see *[How to open MSConfig in Windows 10](https://support.microsoft.com/help/4026130/windows-how-to-open-msconfig-in-windows-10)*.
 
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
@@ -19,7 +20,7 @@ This section describes the boot options for supported versions of Windows that 
 ## In this section
 
 |Topic|Description|
-|--- |--- |
+|---- |---------- |
 |[BCDEdit /bootdebug](bcdedit--bootdebug.md)|The /bootdebug boot option enables or disables boot debugging of the current or specified Windows operating system boot entry.|
 |[BCDEdit /bootsequence](bcdedit--bootsequence.md)|Sets the one-time boot sequence for the boot manager. |
 |[BCDEdit /dbgsettings](bcdedit--dbgsettings.md)|The /dbgsettings option sets or displays the current global debugger settings for the computer. To enable or disable the kernel debugger, use the BCDEdit /debug option.|
@@ -34,7 +35,7 @@ This section describes the boot options for supported versions of Windows that 
 |[BCDEdit /hypervisorsettings](bcdedit--hypervisorsettings.md)|The /hypervisorsettings option sets or displays the hypervisor debugger settings for the system. |
 |[BCDEdit /set](bcdedit--set.md)|The BCDEdit /set command sets a boot entry option value in the Windows boot configuration data store (BCD). Use the BCDEdit /set command to configure specific boot entry elements, such as kernel debugger settings, memory options, or options that enable test-signed kernel-mode code or load alternate hardware abstraction layer (HAL) and kernel files. To remove a boot entry option, use the BCDEdit /deletevalue command.|
 |[BCDEdit /timeout](bcdedit--timeout.md)|Sets the boot manager time-out value. |
-|[BCDEdit /tooldisplayorder](bcdedit--toolsdisplayorder.md)|Sets the order in which the boot manager displays the tools menu. |
+|[BCDEdit /toolsdisplayorder](bcdedit--toolsdisplayorder.md)|Sets the order in which the boot manager displays the tools menu. |
 
 ## See also
 

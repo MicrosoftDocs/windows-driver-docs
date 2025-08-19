@@ -1,23 +1,25 @@
 ---
-title: Writing an INF file for a Smart Card Reader Driver
-description: Writing an INF file for a Smart Card Reader Driver
+title: Writing an INF File for a Smart Card Reader Driver
+description: This article describes required sections for INF file for smart card reader drivers for Microsoft Windows.
 keywords:
 - smart card drivers WDK , writing INF file
 - vendor-supplied drivers WDK smart card , INF file
-ms.date: 03/09/2023
+ms.date: 12/19/2024
+ms.topic: concept-article
 ---
 
-# Writing an INF file for a Smart Card Reader Driver
+# Writing an INF file for a smart card reader driver
 
-This section describes required sections for INF file for smart card reader drivers for Microsoft Windows.
+This article describes required sections for INF file for smart card reader drivers for Microsoft Windows.
 
-Vendors that supply their own reader drivers should make each driver a member of the **SmartCardReader** setup class in the [**INF Version Section**](../install/inf-version-section.md) of the driver's INF file. Vendors must also add a section to properly configure the smartcard services. For example:
+Vendors that supply their own reader drivers should make each driver a member of the **SmartCardReader** setup class in the **[INF Version Section](../install/inf-version-section.md)** of the driver's INF file. Vendors must also add a section to properly configure the smartcard services. For example:
 
-```cpp
+```inf
 [Version]
-Signature="$Windows NT$"
+...
 Class=SmartCardReader
 ClassGuid={50DD5230-BA8A-11D1-BF5D-0000F805F530}
+...
 
 ; ============ Add reg for all readers ===============
 
@@ -32,11 +34,11 @@ HKLM, System\CurrentControlSet\Services\CertPropSvc,Start,0x00010001,2
 
 Vendors that supply their own UMDF reader driver need a registry setting to allow PnP filter drivers to sit on top of the UMDF reflector. Specifically, in the driver INF file, this entry is needed:
 
-```cpp
+```inf
 [Install.NT.Wdf]
 UmdfKernelModeClientPolicy=AllowKernelModeClients
 ```
 
 There are no other special requirements that are associated with installing smart card reader drivers.
 
-For general information about device installation in Windows, see [Device Installation Overview](../install/overview-of-device-and-driver-installation.md).
+For general information about device installation in Windows, see [Device and Driver Installation](../install/index.md).

@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPS\_PRINTER\_ENDORSER\_CHARACTER\_ROTATION
-description: The WIA\_IPS\_PRINTER\_ENDORSER\_CHARACTER\_ROTATION property is used to configure the rotation of the individual characters in the printed or endorsed text.
+title: WIA_IPS_PRINTER_ENDORSER_CHARACTER_ROTATION
+description: The WIA_IPS_PRINTER_ENDORSER_CHARACTER_ROTATION property is used to configure the rotation of the individual characters in the printed or endorsed text.
 keywords: ["WIA_IPS_PRINTER_ENDORSER_CHARACTER_ROTATION Imaging Devices"]
 topic_type:
 - apiref
@@ -11,44 +11,23 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 05/08/2023
 ---
 
-# WIA\_IPS\_PRINTER\_ENDORSER\_CHARACTER\_ROTATION
+# WIA_IPS_PRINTER_ENDORSER_CHARACTER_ROTATION
 
+The **WIA_IPS_PRINTER_ENDORSER_CHARACTER_ROTATION** property is used to configure the rotation of the individual characters in the printed or endorsed text. If supported, individual character rotation can be done in addition to the rotation of the current imprinted or endorsed region that is described by the [**WIA_IPS_ROTATION**](wia-ips-rotation.md) property. This feature is available with Windows 8 and later versions of Windows.
 
-The **WIA\_IPS\_PRINTER\_ENDORSER\_CHARACTER\_ROTATION** property is used to configure the rotation of the individual characters in the printed or endorsed text. If supported, individual character rotation can be done in addition to the rotation of the current imprinted or endorsed region that is described by the [**WIA\_IPS\_ROTATION**](wia-ips-rotation.md) property. This feature is available with Windows 8 and later versions of Windows.
+Property Type: VT_I4
 
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read-Write
 
 ## Remarks
 
-Valid values for the **WIA\_IPS\_PRINTER\_ENDORSER\_CHARACTER\_ROTATION** property are the same as the existing values for the **WIA\_IPS\_ROTATION** property.
+Valid values for the **WIA_IPS_PRINTER_ENDORSER_CHARACTER_ROTATION** property are the same as the existing values for the **WIA_IPS_ROTATION** property.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

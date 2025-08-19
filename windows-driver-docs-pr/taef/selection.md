@@ -2,6 +2,7 @@
 title: Selection
 description: Selection
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Selection
@@ -194,7 +195,7 @@ In our example this would run all methods except Examples\\CPP.SelectionCriteria
 - Examples\\CPP.SelectionCriteria1.Example.dll - class11::method111, class11::method112, class12::method121
 - Examples\\CPP.SelectionCriteria2.Example.dll - class21::method211.
 
-NOTE that you can use "/select" in conjuction with other command options like "/list" "/listproperties" etc.
+NOTE that you can use "/select" in conjunction with other command options like "/list" "/listproperties" etc.
 
 ## Smart Quotes
 

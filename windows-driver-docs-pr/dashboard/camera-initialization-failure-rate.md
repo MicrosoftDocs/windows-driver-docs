@@ -1,8 +1,8 @@
 ---
 title: Percent of Camera initialization failures
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of instances where a camera device failed to initialize
-ms.topic: article
 ms.date: 05/20/2019
+ms.topic: concept-article
 ---
 
 # Percent of Camera initialization failures
@@ -30,7 +30,7 @@ When a someone tries to use an application that accesses the machine’s camera 
 
 2. Types of Instances:
 
-   a. *Successful inialization event = 0% failure*
+   a. *Successful initialization event = 0% failure*
 
 ```cpp
 MF_CAPTURE_ENGINE_INITIALIZED with an HRESULT == 0

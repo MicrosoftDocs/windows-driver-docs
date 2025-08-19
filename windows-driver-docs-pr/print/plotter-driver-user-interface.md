@@ -1,11 +1,12 @@
 ---
-title: Plotter driver user interface
+title: Plotter Driver User Interface
 description: Provides information about the plotter driver user interface.
 keywords:
 - Plotter Driver WDK print, user interface
 - MSPlot WDK print, user interface
 - user interface WDK MSPlot
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Plotter driver user interface

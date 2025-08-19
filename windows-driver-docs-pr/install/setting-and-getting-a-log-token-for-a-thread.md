@@ -10,6 +10,7 @@ keywords:
 - thread log tokens WDK SetupAPI
 - SetupSetThreadLogToken
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting and Getting a Log Token for a Thread

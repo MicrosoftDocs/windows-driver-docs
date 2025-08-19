@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x124 WHEA_UNCORRECTABLE_ERROR
-description: Learn about the bug check 0x124 WHEA_UNCORRECTABLE_ERROR, which indicates that a fatal hardware error has occurred. 
+description: Learn about the bug check 0x124 WHEA_UNCORRECTABLE_ERROR, which indicates that a fatal hardware error has occurred.
 keywords: ["Bug Check 0x124 WHEA_UNCORRECTABLE_ERROR", "WHEA_UNCORRECTABLE_ERROR"]
 ms.date: 12/12/2022
 topic_type:
@@ -10,7 +10,6 @@ api_name:
 - WHEA_UNCORRECTABLE_ERROR
 api_type:
 - NA
-ms.custom: contperf-fy22q1
 ---
 
 # Bug Check 0x124: WHEA_UNCORRECTABLE_ERROR
@@ -50,18 +49,18 @@ To identify a specific cause of the error, an understanding of the [WHEA\_ERROR\
 
 This bug check is typically related to physical hardware failures. It can be heat related or a result of defective hardware, memory, or even a processor that's beginning to fail or has failed. If over-clocking has been enabled, try disabling it. Confirm that any cooling systems such as fans are functional. Run system diagnostics to confirm that the system memory isn't defective. It's less likely, but possible, that a driver is causing the hardware to fail with this bug check.
 
-To learn more about general bug check troubleshooting, see [Blue screen data](blue-screen-data.md).
+To learn more about general bug check troubleshooting, see [Analyze Bug Check Blue Screen Data](blue-screen-data.md).
 
 ## Remarks
 
-The [!analyze debug extension](-analyze.md) displays information about the bug check and can be helpful in determining the root cause.
+The [!analyze debug extension](../debuggercmds/-analyze.md) displays information about the bug check and can be helpful in determining the root cause.
 
 - Parameter 1 identifies the type of error source that reported the error.
 - Parameter 2 holds the address of the [WHEA\_ERROR\_RECORD](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_record) structure that describes the error condition.
 
 When a hardware error occurs, WHEA creates an error record to store the error information associated with the hardware error condition. Each error record is described by a WHEA\_ERROR\_RECORD structure. The Windows kernel includes the error record with the Event Tracing for Windows (ETW) hardware error event that it raises in response to the error, so that the error record is saved in the system event log. The format of the error records that are used by WHEA are based on the Common Platform Error Record, as described in Appendix N of version 2.2 of the Unified Extensible Firmware Interface (UEFI) specification. For more information, see [WHEA\_ERROR\_RECORD](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_record) and [Windows Hardware Error Architecture (WHEA)](../whea/index.md).
 
-You can use [!errrec address](-errrec.md) to display the WHEA\_ERROR\_RECORD structure using the address provided in Parameter 2. The [!whea](-whea.md) and [!errpkt](-errpkt.md) extensions can be used to display additional WHEA information.
+You can use [!errrec address](../debuggercmds/-errrec.md) to display the WHEA\_ERROR\_RECORD structure using the address provided in Parameter 2. The [!whea](../debuggercmds/-whea.md) and [!errpkt](../debuggercmds/-errpkt.md) extensions can be used to display additional WHEA information.
 
 For more information, see the following articles:
 
@@ -69,6 +68,6 @@ For more information, see the following articles:
 
 [Analyze a kernel-mode dump file with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-Use the [!analyze extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
+Use the [!analyze extension](using-the--analyze-extension.md) and [!analyze](../debuggercmds/-analyze.md)
 
 This bug check isn't supported in Windows versions prior to Windows Vista. Instead, machine check exceptions are reported through [bug check 0x9C](bug-check-0x9c--machine-check-exception.md).

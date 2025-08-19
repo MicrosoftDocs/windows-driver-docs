@@ -1,10 +1,11 @@
 ---
-title: Using a device interface
+title: Using a Device Interface
 description: Learn more about how to use a device interface
 keywords:
 - interface classes WDK device installations
 - device interface classes WDK device installations
 ms.date: 04/11/2022
+ms.topic: how-to
 ---
 
 # Using a device interface

@@ -5,6 +5,7 @@ keywords:
 - Direct3D version 10.1 WDK Windows 7 display , extended format
 - extended format WDK Windows 7 display
 ms.date: 09/10/2019
+ms.topic: concept-article
 ---
 
 # Details of the Extended Format
@@ -29,7 +30,7 @@ Column key for the below table:
 - **H**: DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM
 
 <table>
-<head>
+<th>
     <tr>
         <th>Resource Attribute</th>
         <th>A</th>
@@ -41,7 +42,7 @@ Column key for the below table:
         <th>G</th>
         <th>H</th>
     </tr>
-</head>
+</th>
     <tr>
         <td>Buffer</td>
         <td>N/A</td>

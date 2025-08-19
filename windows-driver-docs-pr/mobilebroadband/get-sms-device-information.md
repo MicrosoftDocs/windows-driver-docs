@@ -1,7 +1,8 @@
 ---
-title: Get SMS device information
+title: Get SMS Device Information
 description: Get SMS device information
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Get SMS device information
@@ -15,7 +16,7 @@ The Mobile Broadband SMS platform provides information about the mobile broadban
 var mobileNumber = smsDevice.accountPhoneNumber;
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Developing SMS apps](developing-sms-apps.md)

@@ -4,6 +4,7 @@ description: Selecting Drivers to be Verified
 keywords:
 - Driver Verifier WDK , driver selections
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Selecting Drivers to be Verified
@@ -69,12 +70,4 @@ To deactivate all options and clear the verified driver list, start Driver Verif
 On Windows XP and Windows Server 2003, you can start and stop the verification of a driver without restarting ("rebooting") the computer, but only if the driver is not loaded. For details, see [Using Volatile Settings](using-volatile-settings.md).
 
 Beginning in Windows Vista, you can start and stop the verification of drivers that are not loaded without rebooting the computer. You can also start the verification of a driver that is already loaded without rebooting. However, you cannot stop the verification of a driver that is already loaded until you reboot the system. For details, see [Using Volatile Settings](using-volatile-settings.md).
-
- 
-
- 
-
-
-
-
 

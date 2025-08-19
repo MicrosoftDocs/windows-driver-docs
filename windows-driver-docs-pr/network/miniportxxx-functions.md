@@ -4,6 +4,7 @@ description: MiniportXxx Functions
 keywords:
 - MiniportXxx functions WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # MiniportXxx Functions

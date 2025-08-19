@@ -1,5 +1,5 @@
 ---
-title: MSFT\_DiskToPartition class
+title: MSFT_DiskToPartition Class
 description: Association between Disk and Partition.
 ms.assetid: 6d293eea-3c40-414d-bb05-c59a37ccb1e7
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

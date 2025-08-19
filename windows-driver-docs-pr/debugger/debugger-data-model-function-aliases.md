@@ -3,6 +3,7 @@ title: Debugger Data Model Function Aliases
 description: Function aliases are a quick unique short name by which a user of the debugger can access functionality defined in a debugger extension.
 keywords: ["Debugger Data Model Function Aliases"]
 ms.date: 03/21/2017
+ms.topic: reference
 ---
 
 # Debugger Data Model Function Aliases
@@ -11,9 +12,7 @@ Function aliases are a unique short name by which a user of the debugger can acc
 
 This topic assumes the reader is familiar with the debugger object model and JavaScript. For information about using debugger objects with JavaScript, see [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md).
 
-Some of the examples shown here use the dx command, for more information about working with the dx command, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md). In addition the LINQ is used which is described in [Using LINQ With the debugger objects](./using-linq-with-the-debugger-objects.md).
-
-
+Some of the examples shown here use the dx command, for more information about working with the dx command, see [dx (Display Debugger Object Model Expression)](../debuggercmds/dx--display-visualizer-variables-.md). In addition the LINQ is used which is described in [Using LINQ With the debugger objects](./using-linq-with-the-debugger-objects.md).
 
 ## Using function alias as extension commands
 
@@ -156,10 +155,7 @@ One of the advantages with using a function alias, is that it can be further ref
     [0x5]            : STORAGE\VolumeSnapshot\HarddiskVolumeSnapshot6
 ```
 
-
 LINQ commands such as the following can be used with functional aliases -  .All, .Any, .Count, .First, .Flatten, .GroupBy, .Last, .OrderBy, .OrderByDescending, .Select, and .Where. These methods follow (as closely as possible) the C# LINQ method form. For more information see [Using LINQ With the debugger objects](./using-linq-with-the-debugger-objects.md).
-
-
 
 **Grid Display**
 
@@ -169,9 +165,7 @@ As with other dx commands, you can right click on a command after it was execute
 0: kd> dx -g @$devices().OrderBy(obj => obj.@"InstancePath")
 ```
 
-![debugger objects function alias grid output showing sorted rows.](images/debugger-objects-function-alias.png) 
-
-
+:::image type="content" source="images/debugger-objects-function-alias.png" alt-text="Screenshot of debugger objects function alias grid output with sorted rows.":::
 
 ## Process Threads Example
 
@@ -190,8 +184,8 @@ function initializeScript()
     return [new host.functionAlias(__Processes, "Processes")];
 }
 ```
-This shows the example output with the !Processes function alias.
 
+This shows the example output with the !Processes function alias.
 
 ```dbgcmd
 0: kd> !Processes
@@ -225,11 +219,9 @@ In this example the top 5 process with the largest thread count are displayed.
     [...]   
 ```
 
+## See also
 
-
-## <span id="see_also"></span>See also
-
-[dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)
+[dx (Display Debugger Object Model Expression)](../debuggercmds/dx--display-visualizer-variables-.md)
 
 [Using LINQ With the debugger objects](using-linq-with-the-debugger-objects.md)
 

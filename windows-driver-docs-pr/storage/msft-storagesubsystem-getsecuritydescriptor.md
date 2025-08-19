@@ -1,5 +1,5 @@
 ---
-title: GetSecurityDescriptor method of the MSFT\_StorageSubSystem class
+title: GetSecurityDescriptor Method of the MSFT_StorageSubSystem Class
 description: Retrieves the security descriptor that controls access to the storage subsystem object instance.
 ms.assetid: F0647CD6-1F85-49D9-9200-E99FBD988E27
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

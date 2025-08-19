@@ -7,6 +7,7 @@ keywords:
 - software loopbacks WDK networking
 - promiscuous-mode loopbacks WDK networking
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Sending Packets from a CoNDIS WAN Miniport Driver
@@ -21,7 +22,7 @@ The NDISWAN intermediate driver calls NDIS to forward the new NET\_BUFFER\_LIST 
 
 The CoNDIS WAN miniport driver owns both the NET\_BUFFER\_LIST structures and associated data until the send completes. The miniport driver must later call [**NdisMSendNetBufferListsComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsendnetbufferlistscomplete) to complete the send request.
 
-A completion call does not necessarily indicate that the network datahas been transmitted; however with the exception of intelligent NICs, the network data usually has been transmitted. A completion call does however, indicate that the miniport driver is ready to release ownership of the NET\_BUFFER\_LIST structures.
+A completion call does not necessarily indicate that the network data has been transmitted; however with the exception of intelligent NICs, the network data usually has been transmitted. A completion call does however, indicate that the miniport driver is ready to release ownership of the NET\_BUFFER\_LIST structures.
 
 After the CoNDIS WAN miniport driver receives NET\_BUFFER\_LIST structure that contains a network data packet, it should send the packet out on an active virtual connection (VC).
 

@@ -8,6 +8,7 @@ keywords:
 - standby flags WDK NDIS intermediate
 - power states WDK networking
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Handling a Set Power Request
@@ -18,7 +19,7 @@ ms.date: 04/20/2017
 
 An intermediate driver must handle requests to set power to the working state (a network device power state of D0) and to sleeping states (a network device power state of D1, D2, or D3). The intermediate driver should also maintain power state variables and a StandBy flag. These issues are discussed further in this topic.
 
-For examples of intermediate driver power management, see the [NDIS MUX Intermediate Driver and Notify Object](https://go.microsoft.com/fwlink/p/?LinkId=617916) driver sample in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+For examples of intermediate driver power management, see the [NDIS MUX Intermediate Driver and Notify Object](https://github.com/microsoft/Windows-driver-samples/tree/develop/network/ndis/mux) driver sample in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples/tree/develop) repository on GitHub.
 
 ### Handling a Set Power Request to a Sleeping State
 
@@ -46,7 +47,7 @@ When the protocol lower edge of the intermediate driver transitions the underlyi
 
 1.  NDIS calls the [*ProtocolNetPnPEvent*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event) function of the intermediate driver protocol lower edge. The call to *ProtocolNetPnPEvent* specifies a **NetEventSetPower** event for a sleeping state. The intermediate driver must stop sending network data and making OID requests to the underlying miniport driver. If there are outstanding requests or sends, the intermediate driver should return NDIS\_STATUS\_PENDING from the call to *ProtocolNetPnPEvent*. The intermediate driver calls [**NdisCompleteNetPnPEvent**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscompletenetpnpevent) to complete the call to *ProtocolNetPnPEvent*. The protocol edge of an intermediate driver can still get received packet and status indications from the underlying miniport driver. Received network data can be ignored. If an intermediate driver's implementation depends upon monitoring the status of the underlying miniport driver, status indications should still be monitored.
 
-2.  NDIS pauses the protocol edge of the intermediate driver and then pauses the underying miniport adapter after issuing the **NetEventSetPower** event. The specified reason for the pause is a transition to a low-power state. For more information about pausing a protocol binding, see [Pausing a Binding](pausing-a-binding.md).
+2.  NDIS pauses the protocol edge of the intermediate driver and then pauses the underlying miniport adapter after issuing the **NetEventSetPower** event. The specified reason for the pause is a transition to a low-power state. For more information about pausing a protocol binding, see [Pausing a Binding](pausing-a-binding.md).
 
     **Note**  No OID requests can be sent to the underlying miniport adapter while it is in a low-power state, with the exception of [OID\_PNP\_SET\_POWER](./oid-pnp-set-power.md).
 

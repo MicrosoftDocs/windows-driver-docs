@@ -1,5 +1,5 @@
 ---
-title: DestinationResponses element
+title: DestinationResponses Element
 description: The required DestinationResponses element is a collection of all of the responses to a client's scan destination requests.
 keywords: ["DestinationResponses element Imaging Devices"]
 topic_type:

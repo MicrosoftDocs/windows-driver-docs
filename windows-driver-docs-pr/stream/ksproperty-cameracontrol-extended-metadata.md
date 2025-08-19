@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_METADATA
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_METADATA
 description: This extended property control is used by the client to query the driver for the metadata buffer requirements.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_METADATA Streaming Media Devices"]
 topic_type:

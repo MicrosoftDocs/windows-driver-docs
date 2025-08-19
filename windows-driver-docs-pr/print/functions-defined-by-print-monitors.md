@@ -1,10 +1,11 @@
 ---
-title: Functions defined by print monitors
+title: Functions Defined by Print Monitors
 description: Provides information about functions defined by print monitors.
 keywords:
 - functions WDK print
 - print monitors WDK, functions
 ms.date: 09/12/2022
+ms.topic: reference
 ---
 
 # Functions defined by print monitors

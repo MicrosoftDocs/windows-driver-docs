@@ -3,6 +3,7 @@ title: TList Examples
 description: TList Examples
 keywords: ["TList, TList examples"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # TList Examples
@@ -171,8 +172,3 @@ In response, TList displays process details for Inorpc.exe, Inort.exe, and Inota
  
 
  
-
-
-
-
-

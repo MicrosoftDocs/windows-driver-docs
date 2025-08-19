@@ -4,6 +4,7 @@ description: Trace Session List Features
 keywords:
 - Trace Session List WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Trace Session List Features
@@ -42,12 +43,4 @@ When a trace session or trace log is displayed in the Trace Session List, you ca
 -   [Remove trace sessions](removing-a-trace-session.md)
 
 -   [Manage trace message filters](filtering-trace-messages.md)
-
- 
-
- 
-
-
-
-
 

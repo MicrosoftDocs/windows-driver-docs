@@ -2,6 +2,7 @@
 title: Still Image I/O
 description: Still Image I/O
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Still Image I/O

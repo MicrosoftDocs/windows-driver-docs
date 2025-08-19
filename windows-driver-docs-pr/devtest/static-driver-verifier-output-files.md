@@ -8,6 +8,7 @@ keywords:
 - files WDK Static Driver Verifier
 - output files WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Static Driver Verifier Output Files
@@ -22,12 +23,4 @@ This section includes:
 [Sdv-map.h](sdv-map-h.md)
 
 When evaluating the results of a SDV verification, you must examine all of the output carefully and investigate any errors.
-
- 
-
- 
-
-
-
-
 

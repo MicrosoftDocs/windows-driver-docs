@@ -1,5 +1,5 @@
 ---
-title: CompressionQualityFactor element
+title: CompressionQualityFactor Element
 description: The optional CompressionQualityFactor element specifies an idealized integer amount of image quality, on a scale from 0 through 100.
 keywords: ["CompressionQualityFactor element Imaging Devices"]
 topic_type:

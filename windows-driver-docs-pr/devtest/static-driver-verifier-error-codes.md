@@ -2,6 +2,7 @@
 title: Static Driver Verifier Error Codes
 description: The following table lists the error codes that Static Driver Verifier could return, and where possible, suggests methods for resolving them.
 ms.date: 04/20/2017
+ms.topic: error-reference
 ---
 
 # Static Driver Verifier Error Codes
@@ -46,12 +47,4 @@ The following table lists the error codes that Static Driver Verifier could retu
 | 32 SDV\_UNSUPPORTED\_SWITCH                  | SDV does not support the given command. Please check and try again. Consult SDV documentation for a list of supported commands.                                                                                |
 
  
-
- 
-
- 
-
-
-
-
 

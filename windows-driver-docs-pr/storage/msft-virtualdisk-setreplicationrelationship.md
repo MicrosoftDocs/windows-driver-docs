@@ -1,5 +1,5 @@
 ---
-title: SetReplicationRelationship method of the MSFT\_VirtualDisk class
+title: SetReplicationRelationship Method of the MSFT_VirtualDisk Class
 description: Sets the replication relationship between virtual disks.
 ms.assetid: FF87D964-498E-4413-BC33-CCC1E6A5AF0F
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

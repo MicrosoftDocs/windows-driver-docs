@@ -18,7 +18,7 @@ api_type:
 The POOL\_CORRUPTION\_IN\_FILE\_AREA bug check has a value of 0x000000DE. This indicates that a driver has corrupted pool memory that is used for holding pages destined for disk.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## POOL\_CORRUPTION\_IN\_FILE\_AREA Parameters
@@ -31,6 +31,10 @@ None
 When the Memory Manager dereferenced the file, it discovered this corruption in pool memory.
 
  
+## Resolution
+
+The [!analyze](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+
 
  
 

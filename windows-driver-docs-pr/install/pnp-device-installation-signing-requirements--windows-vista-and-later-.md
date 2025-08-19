@@ -9,6 +9,7 @@ keywords:
 - PnP WDK driver signing
 - Plug and Play WDK driver signing
 ms.date: 03/03/2022
+ms.topic: best-practice
 ---
 
 # PnP Device Installation Signing Requirements

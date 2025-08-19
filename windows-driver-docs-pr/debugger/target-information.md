@@ -3,6 +3,7 @@ title: Target Information
 description: Target Information
 keywords: ["Debugger Engine API, targets, info"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Target Information
@@ -10,7 +11,7 @@ ms.date: 05/23/2017
 
 The method [**GetDebuggeeType**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getdebuggeetype) returns the nature of the current target (for example, whether it is a kernel-mode or user-mode target), and how the [debugger engine](introduction.md#debugger-engine) is connected to it.
 
-If the target is a crash dump file file, the method [**GetDumpFormatFlags**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getdumpformatflags) will indicate what information is contained in the dump.
+If the target is a crash dump file, the method [**GetDumpFormatFlags**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getdumpformatflags) will indicate what information is contained in the dump.
 
 ### <span id="target_s_computer"></span><span id="TARGET_S_COMPUTER"></span>Target's Computer
 

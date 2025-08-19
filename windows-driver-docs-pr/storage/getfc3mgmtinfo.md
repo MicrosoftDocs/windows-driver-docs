@@ -1,5 +1,5 @@
 ---
-title: GetFC3MgmtInfo function
+title: GetFC3MgmtInfo Function
 description: The GetFC3MgmtInfo WMI method retrieves FC3 management information that is associated with a Fibre Channel adapter.
 keywords: ["GetFC3MgmtInfo function Storage Devices"]
 topic_type:

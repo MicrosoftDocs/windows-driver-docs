@@ -1,5 +1,5 @@
 ---
-title: RequestStateChange method of the MSFT\_StorageJob class
+title: RequestStateChange Method of the MSFT_StorageJob Class
 description: Requests that the state of the job be changed to the value specified in the RequestedState parameter.
 ms.assetid: 5259BE29-2B3C-4FED-9D99-14264751D898
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

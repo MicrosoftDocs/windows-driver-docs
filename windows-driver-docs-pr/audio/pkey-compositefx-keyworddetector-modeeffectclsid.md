@@ -31,7 +31,7 @@ HKR,FX\0,%PKEY_CompositeFX_KeywordDetector_ModeEffectClsid%,0x00010000,%SWAP_FX_
 
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)
 

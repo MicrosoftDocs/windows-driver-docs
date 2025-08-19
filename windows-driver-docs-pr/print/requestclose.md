@@ -1,15 +1,9 @@
 ---
-title: requestClose element
+title: requestClose Element
 description: The optional requestClose element is used to close an event notification message on the client computer.
 keywords: ["requestClose element Print Devices"]
-topic_type:
-- apiref
+ms.date: 12/19/2024
 ms.topic: reference
-api_name:
-- requestClose
-api_type:
-- Schema
-ms.date: 11/28/2017
 ---
 
 # requestClose element
@@ -40,25 +34,9 @@ There are no child elements.
 
 ## Parent elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="asyncprintuirequest.md" data-raw-source="[&lt;strong&gt;asyncPrintUIRequest&lt;/strong&gt;](asyncprintuirequest.md)"><strong>asyncPrintUIRequest</strong></a></p></td>
-<td><p></p>
-<p>A required element that describes a request issued by the printer driver to create a message on a client computer.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|--|--|
+| [**asyncPrintUIRequest**](asyncprintuirequest.md) | A required element that describes a request issued by the printer driver to create a message on a client computer. |
 
 ## Examples
 

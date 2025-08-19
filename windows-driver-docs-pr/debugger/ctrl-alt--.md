@@ -24,7 +24,7 @@ CTRL+ALT+\
 ## <span id="ddk_meta_ctrl_p_dbg"></span><span id="DDK_META_CTRL_P_DBG"></span>
 
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
 <table>
 <colgroup>
@@ -57,13 +57,8 @@ CTRL+ALT+\
 
 This is equivalent to launching a new CDB through the [**remote.exe**](the-remote-exe-utility.md) utility, and using it to debug the debugger that you are already running.
 
-**CTRL+ALT+\\** is similar to the [**.dbgdbg (Debug Current Debugger)**](-dbgdbg--debug-current-debugger-.md) command, however **CTRL+ALT+\\** has the advantage that it can be used when no debugger command line is available.
+**CTRL+ALT+\\** is similar to the [**.dbgdbg (Debug Current Debugger)**](../debuggercmds/-dbgdbg--debug-current-debugger-.md) command, however **CTRL+ALT+\\** has the advantage that it can be used when no debugger command line is available.
 
  
 
  
-
-
-
-
-

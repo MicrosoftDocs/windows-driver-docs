@@ -1,5 +1,5 @@
 ---
-title: SetReplicationSettings method of the MSFT\_ReplicationGroup class
+title: SetReplicationSettings Method of the MSFT_ReplicationGroup Class
 description: Specifies the replication settings for this replication group.
 ms.assetid: D7D6E175-A067-4EAF-99A6-0A394D3679AD
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

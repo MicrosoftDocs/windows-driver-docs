@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEOCOMPRESSION\_PFRAMES\_PER\_KEYFRAME
+title: KSPROPERTY_VIDEOCOMPRESSION_PFRAMES_PER_KEYFRAME
 description: The KSPROPERTY\_VIDEOCOMPRESSION\_PFRAMES\_PER\_KEYFRAME property controls the predicted frame (P-Frame) interval. This property must be implemented.
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_PFRAMES_PER_KEYFRAME Streaming Media Devices"]
 topic_type:

@@ -1,7 +1,8 @@
 ---
-title: How to write your first USB client driver (KMDF)
+title: How to Write Your First USB Client Driver (KMDF)
 description: In this article you'll use the USB Kernel-Mode Driver template provided with Microsoft Visual Studio to write a simple kernel-mode driver framework (KMDF)-based client driver.
-ms.date: 02/22/2023
+ms.date: 01/17/2024
+ms.topic: how-to
 ---
 
 # How to write your first USB client driver (KMDF)
@@ -39,7 +40,7 @@ You can also get a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be 
 
 - [Concepts for All Driver Developers](../gettingstarted/concepts-and-knowledge-for-all-driver-developers.md)
 - [Device nodes and device stacks](../gettingstarted/device-nodes-and-device-stacks.md)
-- [Getting started with Windows drivers](../gettingstarted/index.md)
+- [Get started with drivers on Windows](../gettingstarted/index.md)
 - [Kernel-Mode Driver Framework](../wdf/index.md)
 - *Developing Drivers with Windows Driver Foundation*, written by Penny Orwick and Guy Smith. For more information, see [Developing Drivers with WDF](../wdf/developing-drivers-with-wdf.md).
 
@@ -170,13 +171,13 @@ To configure your target computer for WPP tracing:
 > [!NOTE]
 > Do *not* specify the hardware ID of your device under **Hardware ID Driver Update**. The hardware ID must be specified only in your driver's information (INF) file.
 
-For more information about deploying the driver to the target system in Visual Studio, see [Deploying a Driver to a Test Computer](/windows-hardware/drivers).
+For more information about deploying the driver to the target system in Visual Studio, see [Deploying a Driver to a Test Computer](/windows-hardware/drivers/develop/test-a-driver-package).
 
 You can also manually install the driver on the target computer by using Device Manager. If you want to install the driver from a command prompt, these utilities are available:
 
 - [PnPUtil](../devtest/pnputil.md)
 
-    This tool comes with the Windows. It is in Windows\\System31. You can use this utility to add the driver to the driver store.
+    This tool comes with the Windows. It is in Windows\\System32. You can use this utility to add the driver to the driver store.
 
     ```cmd
     C:\>pnputil /a m:\MyDriver_.inf
@@ -225,5 +226,5 @@ Visual Studio first displays progress in the **Output** window. Then it opens th
 
 ## Related topics
 
-- [Understanding the KMDF template code for a USB client driver](understanding-the-kmdf-template-code-for-usb.md)  
+- [Understanding the KMDF template code for a USB client driver](understanding-the-kmdf-template-code-for-usb.md)
 - [Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)

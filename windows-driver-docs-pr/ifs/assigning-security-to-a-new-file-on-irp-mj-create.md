@@ -7,6 +7,7 @@ keywords:
 - security checks WDK file systems , IRP_MJ_CREATE
 - security descriptors WDK file systems , new files
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Assigning Security to a New File on IRP\_MJ\_CREATE

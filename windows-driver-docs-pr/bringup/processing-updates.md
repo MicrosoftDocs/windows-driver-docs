@@ -1,7 +1,8 @@
 ---
-title: Processing updates
+title: Processing Updates
 description: After any firmware update packages have been applied and the system subsequently rebooted, the Windows OS loader loads all the firmware payload files (in this example, firmware.bin) into physical memory.
 ms.date: 03/23/2023
+ms.topic: concept-article
 ---
 
 # Processing updates

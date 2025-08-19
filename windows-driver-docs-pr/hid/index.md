@@ -1,23 +1,22 @@
 ---
-title: Introduction to Human Interface Devices (HID)
-description: This section introduces Human Interface Devices (or HID). Typically, these are devices that humans use to directly control the operation of computer systems.
-ms.assetid: 19aefe5f-d82a-411f-86ab-5d1d53191524
+title: Develop Windows Device Drivers for Human Interface Devices (HID)
+description: Learn to develop Windows device drivers for Human Interface Devices (HID), which people use to directly control the operation of computer systems.
 keywords:
 - pointing devices WDK
 - input devices WDK
 - Human Interface Devices WDK
 - HID WDK
-ms.date: 03/18/2022
-ms.topic: article
+ms.date: 10/22/2024
+ms.topic: concept-article
 ---
 
-# Introduction to Human Interface Devices (HID)
+# Develop Windows device drivers for Human Interface Devices (HID)
 
-Human Interface Devices (HID) is a device class definition to replace PS/2-style connectors with a generic USB driver to support HID devices such as keyboards, mice, game controllers, and so on. Prior to HID, devices could only utilize strictly-defined protocols for mice and keyboards. Hardware innovation required either overloading data in an existing protocol or creating non-standard hardware with its own specialized driver. HID provided support for these "boot mode" devices while adding support for hardware innovation through extensible, standardized and easily-programmable interfaces.
+Learn to develop Windows device drivers for Human Interface Devices (HID). HID is a device class definition for generic USB drivers to support HID devices such as keyboards, mice, game controllers, and so on. Before HID, devices could only utilize strictly defined protocols for mice and keyboards. Hardware innovation required either overloading data in an existing protocol or creating nonstandard hardware with its own specialized driver. HID provides support for boot mode devices while adding support for innovation through extensible, standardized, and easily programmable interfaces.
 
-HID devices today include a broad range of devices such as alphanumeric displays, bar code readers, volume controls on speakers/headsets, auxiliary displays, sensors and many others. Many hardware vendors also use HID for their proprietary devices.
+HID devices include alphanumeric displays, bar code readers, speakers, headsets, auxiliary displays, sensors, and many others. Hardware vendors also use HID for their proprietary devices.
 
-HID began with USB but was designed to be bus-agnostic. It was designed for low latency, low bandwidth devices but with flexibility to specify the rate in the underlying transport. The specification for HID over USB was ratified by the [USB-IF](https://www.usb.org/about) in 1996 and support over additional transports followed soon after. Details on currently supported transports can be found in [HID Transports Supported in Windows](./hid-transports.md). Third-party, vendor-specific transports are also allowed via custom transport drivers.
+HID began with USB but was designed to be bus-agnostic. It was designed for low latency, low bandwidth devices but with flexibility to specify the rate in the underlying transport. The [USB-IF](https://www.usb.org/about) ratified the specification for HID over USB in 1996. Support for HID over other transports soon followed. Details on currently supported transports can be found in [HID Transports Supported in Windows](./hid-transports.md). Vendor-specific transports are also allowed via custom transport drivers.
 
 ## HID concepts
 
@@ -37,8 +36,12 @@ Each top level collection defined in a report descriptor can contain zero or mor
 
 ### Usage tables
 
-The [USB-IF](https://www.usb.org/about) working group publishes HID usage tables that are part of the report descriptors that describe what HID devices are allowed to do. These HID usage tables contain a list with descriptions of **Usages**, which describe the intended meaning and use of a particular item described in the report descriptor. For example, a usage is defined for the left button of a mouse. The report descriptor can define where in a report an application can find the current state of the mouse's left button. The usage tables are broken up into several name spaces, called usage pages. Each usage page describes a set of related usages to help organize the document. The combination of a usage page and usage define the usage ID that uniquely identifies a specific usage in the usage tables.
+The [USB-IF](https://www.usb.org/about) working group publishes HID usage tables that are part of the report descriptors that describe what HID devices are allowed to do. These HID usage tables contain a list with descriptions of **Usages** describing the intended meaning and use of a particular item in the report descriptor. For example, a usage is defined for the left button of a mouse. The report descriptor can define where in a report an application can find the current state of the mouse's left button. The usage tables are broken up into several name spaces, called usage pages. Each usage page describes a set of related usages to help organize the document. The combination of a usage and a usage page define the usage ID that uniquely identifies a specific usage in the usage tables.
 
 ## See also
 
-[USB-IF HID Specifications](https://www.usb.org/hid)
+- [HID Architecture](hid-architecture.md)
+- [HID Application Programming Interface](hid-api.md)
+- [HID Clients Overview](hid-clients.md)
+- [HID Usages](hid-usages.md)
+- [USB-IF HID Specifications](https://www.usb.org/hid)

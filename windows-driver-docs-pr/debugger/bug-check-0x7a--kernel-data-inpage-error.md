@@ -1,5 +1,5 @@
 ---
-title: Bug check 0x7A KERNEL_DATA_INPAGE_ERROR
+title: Bug Check 0x7A KERNEL_DATA_INPAGE_ERROR
 description: Learn about bug check 0x7A KERNEL_DATA_INPAGE_ERROR, which indicates that the requested page of kernel data from the paging file couldn't be read into memory.
 keywords: ["Bug check 0x7A KERNEL_DATA_INPAGE_ERROR", "KERNEL_DATA_INPAGE_ERROR"]
 ms.date: 02/24/2023
@@ -17,7 +17,7 @@ api_type:
 The KERNEL\_DATA\_INPAGE\_ERROR bug check has a value of 0x0000007A. This bug check indicates that the requested page of kernel data from the paging file couldn't be read into memory.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## Parameters
 

@@ -1,26 +1,54 @@
 ---
-title: ACX version information
+title: ACX Version Information
 description: This topic provides a summary of the ACX and KMDF version information 
-ms.date: 04/19/2023
+ms.date: 03/07/2024
 ms.localizationpriority: medium
+ms.topic: reference
 ---
 
-# ACX version overview
-
->[!IMPORTANT]
-> Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+# ACX version information
 
 This topic discusses ACX and KMDF version information. For a general overview of ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md).
 
-## ACX version information
+## ACX and KMDF versions
 
-The current version of ACX is **1.1**.
+Use the [!wdfkd.wdfldr](../debuggercmds/-wdfkd-wdfldr.md) extension  to view version information for ACX. The !wdfkd.wdfldr extension displays information about the drivers that are currently dynamically bound to the Windows Driver Frameworks.
+
+```dbgcmd
+!wdfkd.wdfldr Acx01000.sys
+```
+
+### Version 1.1
+
+The current version of ACX is **1.1** and is recommended for all new driver development.
 
 Windows OS support for ACX versions are described in the following table.
 
 | Operating system         | KMDF version | Supported ACX version | Version notes           |
 |--------------------------|--------------|-----------------------|-------------------------|
-| Windows 10, version 2004 | 1.31         | 1.1                   | Initial public release. |
+| Windows 10, version 2004 | Minimum 1.31 | 1.1                   | Initial public release. |
+
+These DDIs were added in version 1.1.
+
+- AcxCircuitGetElementsCount
+- AcxCircuitGetPinsCount
+- AcxCircuitGetSymbolicLinkName
+- AcxCircuitGetNotificationId
+- AcxFactoryCircuitGetSymbolicLinkName
+- AcxDataFormatListRemoveDataFormats
+- AcxPinRemoveModeDataFormatList
+- AcxStreamGetElementsCount
+- AcxStreamGetNotificationId
+- AcxTargetCircuitGetSymbolicLinkName
+- AcxTargetPinFlushModeDataFormatListCache
+
+### Pre-release 1.0 version
+
+Version 1.0 is not recommended for new driver development, but it was used in early development and testing of ACX drivers.
+
+| Operating system         | KMDF version | Supported ACX version | Version notes |
+|--------------------------|--------------|-----------------------|---------------|
+| Windows 10, version 1903 | 1.29         | 1.0                   | Pre-release.  |
 
 ## KMDF version information
 

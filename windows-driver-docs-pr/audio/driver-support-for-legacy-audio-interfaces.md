@@ -12,27 +12,24 @@ keywords:
 - multimedia WDK audio
 - miniport interfaces WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Driver Support for Legacy Audio Interfaces
 
-
-## <span id="driver_support_for_legacy_audio_interfaces"></span><span id="DRIVER_SUPPORT_FOR_LEGACY_AUDIO_INTERFACES"></span>
-
-
 The WDM audio system provides driver support for application programs that access audio devices through the legacy Windows multimedia functions. These functions include the following audio-specific APIs:
 
--   aux
+- aux
 
--   mixer
+- mixer
 
--   midiIn
+- midiIn
 
--   midiOut
+- midiOut
 
--   waveIn
+- waveIn
 
--   waveOut
+- waveOut
 
 For information about these APIs, see the Microsoft Windows SDK documentation. For a description of the system components that provide driver support for legacy audio functions, see [WDM Audio Components](wdm-audio-components.md).
 
@@ -43,11 +40,3 @@ This section discusses the following topics:
 [Kernel Streaming Topology to Audio Mixer API Translation](kernel-streaming-topology-to-audio-mixer-api-translation.md)
 
 [WDM Audio Extensions to Legacy Windows Multimedia APIs](wdm-audio-extensions-to-legacy-windows-multimedia-apis.md)
-
- 
-
- 
-
-
-
-

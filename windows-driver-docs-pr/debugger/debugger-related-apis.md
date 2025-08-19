@@ -3,6 +3,7 @@ title: Debugger-Related APIs
 description: Debugger-Related APIs
 keywords: ["debugger-related apis", "apis"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Debugger-Related APIs
@@ -22,8 +23,3 @@ This reference section includes:
  
 
  
-
-
-
-
-

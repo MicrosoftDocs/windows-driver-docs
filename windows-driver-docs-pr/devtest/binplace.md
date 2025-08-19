@@ -13,6 +13,7 @@ keywords:
 - BinPlace WDK , about BinPlace
 - files WDK BinPlace
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # BinPlace
@@ -38,12 +39,4 @@ This section includes:
 [Using BinPlace](using-binplace.md)
 
 [BinPlace Examples](binplace-examples.md)
-
- 
-
- 
-
-
-
-
 

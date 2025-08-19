@@ -8,6 +8,7 @@ keywords:
 - input files WDK Static Driver Verifier
 - files WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Static Driver Verifier Input Files
@@ -32,12 +33,4 @@ This section includes detailed descriptions of the following files:
 [Static Driver Verifier Rule List File](static-driver-verifier-rule-list-file.md)
 
 [Static Driver Verifier Options File](static-driver-verifier-options-file.md)
-
- 
-
- 
-
-
-
-
 

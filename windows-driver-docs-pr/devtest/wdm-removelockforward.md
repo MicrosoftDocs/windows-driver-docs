@@ -1,6 +1,6 @@
 ---
-title: RemoveLockForward rule (wdm)
-description: The RemoveLockForward rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used correctly when forwarding a IRP to another device.
+title: RemoveLockForward Rule (WDM)
+description: The RemoveLockForward rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used correctly when forwarding an IRP to another device.
 ms.date: 05/21/2018
 keywords: ["RemoveLockForward rule (wdm)"]
 topic_type:
@@ -15,7 +15,7 @@ api_type:
 # RemoveLockForward rule (wdm)
 
 
-The **RemoveLockForward** rule verifies that calls to [**IoAcquireRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock) and [**IoReleaseRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreleaseremovelock) are used correctly when forwarding a IRP to another device.
+The **RemoveLockForward** rule verifies that calls to [**IoAcquireRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock) and [**IoReleaseRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreleaseremovelock) are used correctly when forwarding an IRP to another device.
 
 Note this rule does not check IRP\_MN\_REMOVE\_DEVICE, IRP\_MN\_QUERY\_DEVICE or IRP\_MN\_SUPRISE\_REMOVAL IRPs.
 

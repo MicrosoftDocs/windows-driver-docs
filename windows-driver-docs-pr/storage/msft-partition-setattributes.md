@@ -1,5 +1,5 @@
 ---
-title: SetAttributes method of the MSFT\_Partition class
+title: SetAttributes Method of the MSFT_Partition Class
 description: Sets various attributes and properties of the partition.
 ms.assetid: 203396F7-2F2B-4121-B415-21BFE036074F
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

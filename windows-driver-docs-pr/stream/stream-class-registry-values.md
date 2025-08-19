@@ -7,6 +7,7 @@ keywords:
 - minidrivers WDK Windows 2000 Kernel Streaming , registry
 - registry WDK streaming minidriver
 ms.date: 08/25/2020
+ms.topic: reference
 ---
 
 # Stream Class Registry Values

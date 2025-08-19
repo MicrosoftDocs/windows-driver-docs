@@ -1,5 +1,5 @@
 ---
-title: Resize method of the MSFT\_StorageTier class
+title: Resize Method of the MSFT_StorageTier Class
 description: Resizes the storage tier on the virtual disk.
 ms.assetid: 54CD7F91-DA1B-4634-9EA0-430A835F0951
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

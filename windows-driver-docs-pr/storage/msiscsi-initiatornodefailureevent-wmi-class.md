@@ -1,7 +1,8 @@
 ---
-title: MSiSCSI\_InitiatorNodeFailureEvent WMI Class
+title: MSiSCSI_InitiatorNodeFailureEvent WMI Class
 description: MSiSCSI\_InitiatorNodeFailureEvent WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_InitiatorNodeFailureEvent WMI Class

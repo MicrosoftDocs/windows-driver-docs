@@ -1,8 +1,8 @@
 ---
 title: Cancel a shipping label
 description: Use this method in the Microsoft Hardware API to request cancellation of a shipping label in Microsoft Approval or Gradual Rollout.
-ms.topic: article
 ms.date: 11/13/2019
+ms.topic: concept-article
 ---
 
 # Cancel a shipping label
@@ -30,7 +30,7 @@ The *productID*, *submissionID* and *shippingLabelId* in the method represent th
 
 | Header | Type | Description |
 |:--|:--|:--|
-| Authorization | String | Required. The Azure AD access token in the form **Bearer** \<token\>. |
+| Authorization | String | Required. The Microsoft Entra ID access token in the form **Bearer** \<token\>. |
 | Accept | String | Optional. Specifies the type of content. Allowed value is “application/json” |
 
 ### Request parameters

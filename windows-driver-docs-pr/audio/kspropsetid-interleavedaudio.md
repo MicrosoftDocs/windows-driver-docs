@@ -2,6 +2,7 @@
 title: KSPROPSETID\_InterleavedAudio
 description: The KSPROPSETID\_InterleavedAudio property set is implemented by audio device drivers that would like to provide extra information about the interleaving of loopback audio and capture audio.
 ms.date: 12/13/2018
+ms.topic: reference
 ---
 
 # KSPROPSETID\_InterleavedAudio

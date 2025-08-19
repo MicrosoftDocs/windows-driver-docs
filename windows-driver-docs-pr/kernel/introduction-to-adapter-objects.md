@@ -3,6 +3,7 @@ title: Introduction to Adapter Objects
 description: Introduction to Adapter Objects
 keywords: ["AdapterControl routines, about AdapterControl routines", "DMA transfers WDK kernel , adapter objects", "adapter objects WDK kernel , about adapter objects"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Introduction to Adapter Objects

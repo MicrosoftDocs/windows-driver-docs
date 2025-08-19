@@ -1,7 +1,8 @@
 ---
-title: Mapping for a legacy application and Windows Vista driver
+title: Mapping for a Legacy Application and Windows Vista Driver
 description: Mapping for a legacy application and Windows Vista driver
 ms.date: 05/01/2023
+ms.topic: concept-article
 ---
 
 # Mapping for a legacy application and Windows Vista driver

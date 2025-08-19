@@ -1,5 +1,5 @@
 ---
-title: Introduction to print providers
+title: Introduction to Print Providers
 description: Provides an introduction to print providers.
 keywords:
 - print providers WDK, about print providers
@@ -8,6 +8,7 @@ keywords:
 - OpenPrinter
 - jobs WDK print, print providers
 ms.date: 09/14/2022
+ms.topic: concept-article
 ---
 
 # Introduction to print providers

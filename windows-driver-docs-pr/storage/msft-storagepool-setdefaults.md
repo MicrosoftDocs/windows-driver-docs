@@ -1,5 +1,5 @@
 ---
-title: SetDefaults method of the MSFT\_StoragePool class
+title: SetDefaults Method of the MSFT_StoragePool Class
 description: Sets or changes the default values for properties of the storage pool object.
 ms.assetid: F9435AA1-B102-4628-B664-251D35AD40F1
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

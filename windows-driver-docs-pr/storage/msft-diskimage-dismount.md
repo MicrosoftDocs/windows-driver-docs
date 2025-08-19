@@ -1,5 +1,5 @@
 ---
-title: Dismount method of the MSFT\_DiskImage class
+title: Dismount Method of the MSFT_DiskImage Class
 description: Dismounts the disk image.
 ms.assetid: 67E66529-1B2C-4F53-A7C5-03FC4E671D7A
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - vds.h
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

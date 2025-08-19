@@ -1,7 +1,8 @@
 ---
-title: Get the updated core driver package
+title: Get the Updated Core Driver Package
 description: Provides information about how to get the updated core driver package.
 ms.date: 01/27/2023
+ms.topic: how-to
 ---
 
 # Get the updated core driver package

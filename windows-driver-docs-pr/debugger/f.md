@@ -2,6 +2,7 @@
 title: F (Windows Debugger Glossary)
 description: Glossary page - F
 ms.date: 12/17/2019
+ms.topic: glossary
 ---
 
 # F
@@ -22,8 +23,3 @@ The first opportunity to handle an exception. If an exception is not handled by 
  
 
  
-
-
-
-
-

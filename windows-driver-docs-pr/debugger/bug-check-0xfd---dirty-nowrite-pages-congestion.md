@@ -18,7 +18,7 @@ api_type:
 The DIRTY\_NOWRITE\_PAGES\_CONGESTION bug check has a value of 0x000000FD. This indicates that there are no free pages available to continue basic system operations.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## DIRTY\_NOWRITE\_PAGES\_CONGESTION Parameters
@@ -63,7 +63,7 @@ This bug check usually occurs because the component that owns the modified non-w
 
 ## Resolution
 
-For more information about which driver is causing the problem, use the [**!vm 3**](-vm.md) extension, followed by [**!memusage 1**](-memusage.md) .
+For more information about which driver is causing the problem, use the [**!vm 3**](../debuggercmds/-vm.md) extension, followed by [**!memusage 1**](../debuggercmds/-memusage.md) .
 
  
 

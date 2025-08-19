@@ -1,5 +1,5 @@
 ---
-title: IrqlPsPassive rule (wdm)
+title: IrqlPsPassive Rule (WDM)
 ms.date: 05/21/2018
 description: "Learn more about: IrqlPsPassive rule (wdm)"
 keywords: ["IrqlPsPassive rule (wdm)"]
@@ -15,7 +15,7 @@ api_type:
 # IrqlPsPassive rule (wdm)
 
 
-The **IrqlPsPassive** rule specifies that the driver calls the following [**Process Structure routines**](/windows-hardware/drivers/ddi/index) only when it is executing at IRQL = PASSIVE\_LEVEL:
+The **IrqlPsPassive** rule specifies that the driver calls the following **Process Structure routines** only when it is executing at IRQL = PASSIVE\_LEVEL:
 
 -   [**PsCreateSystemThread**](/windows-hardware/drivers/ddi/wdm/nf-wdm-pscreatesystemthread)
 

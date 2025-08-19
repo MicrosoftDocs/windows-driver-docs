@@ -9,6 +9,7 @@ keywords:
 - I/O WDK file systems
 - IRP-based I/O operations WDK file system minifilter
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Accessing the User Buffers for an I/O Operation

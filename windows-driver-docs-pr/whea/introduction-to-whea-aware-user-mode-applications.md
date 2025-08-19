@@ -14,6 +14,7 @@ keywords:
 - hardware errors WDK WHEA , events
 - errors WDK WHEA , events
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Introduction to WHEA-Aware User-Mode Applications

@@ -2,6 +2,7 @@
 title: SINCOS Instruction Format
 description: SINCOS Instruction Format
 ms.date: 01/05/2018
+ms.topic: reference
 ---
 
 # SINCOS Instruction Format

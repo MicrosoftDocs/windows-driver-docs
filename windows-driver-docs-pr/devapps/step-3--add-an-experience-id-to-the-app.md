@@ -1,10 +1,14 @@
 ---
-title: Step 3 Add an experience ID to the Microsoft Store device app
+title: Step 3 Add an Experience ID to the Microsoft Store Device App
 description: This topic describes how to add the experience ID to your UWP device app.
 ms.date: 03/17/2023
+ms.topic: how-to
 ---
 
 # Step 3: Add an experience ID to the Microsoft Store device app
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 ![device app workflow, step 3.](images/3-device-app-workflow.png)
 

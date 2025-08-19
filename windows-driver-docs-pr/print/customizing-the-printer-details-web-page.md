@@ -10,6 +10,7 @@ keywords:
 - print Web pages WDK , details page
 - Web pages WDK printer , details page
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Customizing the Printer Details Web Page

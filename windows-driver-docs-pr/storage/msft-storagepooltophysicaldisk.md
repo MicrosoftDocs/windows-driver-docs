@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StoragePoolToPhysicalDisk class
+title: MSFT_StoragePoolToPhysicalDisk Class
 description: Association between StoragePool and PhysicalDisk.Primordial storage pools should retain their association to all physical disks that originated from that pool.
 ms.assetid: aadef48f-76c7-4aa5-86e7-2ffdceb7f048
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

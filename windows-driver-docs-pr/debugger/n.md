@@ -2,6 +2,7 @@
 title: N (Windows Debugger Glossary)
 description: Glossary page - N
 ms.date: 11/28/2017
+ms.topic: glossary
 ---
 
 # N
@@ -13,8 +14,3 @@ A portion of system memory that will not be paged to disk.
  
 
  
-
-
-
-
-

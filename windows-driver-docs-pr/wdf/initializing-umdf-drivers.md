@@ -10,6 +10,7 @@ keywords:
 - loading reflectors WDK UMDF
 - driver host process WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing UMDF Drivers

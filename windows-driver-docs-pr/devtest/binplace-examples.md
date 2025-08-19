@@ -5,6 +5,7 @@ keywords:
 - BinPlace WDK , examples
 - examples WDK BinPlace
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # BinPlace Examples
@@ -16,12 +17,4 @@ ms.date: 04/20/2017
 This section provides examples for how to use BinPlace and includes the following topics:
 
 -   [Using BinPlace from the Command Line](using-binplace-from-the-command-line.md)
-
- 
-
- 
-
-
-
-
 

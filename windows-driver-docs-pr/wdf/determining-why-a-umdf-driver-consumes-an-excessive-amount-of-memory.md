@@ -6,6 +6,7 @@ keywords:
 - UMDF WDK , debugging scenarios, UMDF driver consumes excessive memory
 - UMDF WDK , UMDF driver consumes excessive memory
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Determining Why a UMDF Driver Consumes an Excessive Amount of Memory
@@ -14,7 +15,7 @@ ms.date: 04/20/2017
 
 This topic describes how you can use the Wudfext.dll debugger extensions in conjunction with a User-Mode Driver Framework (UMDF) version 1 driver to determine why a UMDF driver consumes an excessive amount of memory.
 
-Starting with UMDF version 2, you should instead use the Wdfkd.dll debugger extensions. For more info, see [Windows Driver Framework Extensions (Wdfkd.dll)](../debugger/kernel-mode-driver-framework-extensions--wdfkd-dll-.md).
+Starting with UMDF version 2, you should instead use the Wdfkd.dll debugger extensions. For more info, see [Windows Driver Framework Extensions (Wdfkd.dll)](../debuggercmds/kernel-mode-driver-framework-extensions--wdfkd-dll-.md).
 
 To investigate memory usage, use the following steps:
 

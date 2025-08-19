@@ -10,6 +10,7 @@ keywords:
 - audio filter graphs WDK
 - graphical representation WDK audio
 ms.date: 01/21/2022
+ms.topic: overview
 ---
 
 # KsStudio Utility
@@ -58,7 +59,7 @@ Setup installs the platform-specific versions of KsStudio.exe in the x86, and am
 
 ## KsStudio menu layout and structure
 
-![Scren shot of KSStream Utility showing menu panes 1, 2,3 and six on the first row then 4 and lastly 5 on the bottom of the screen.](images/ksstudio-user-interface.png)
+:::image type="content" source="images/ksstudio-user-interface.png" alt-text="Screenshot of KSStream Utility interface displaying menu panes 1, 2, 3, and 6 on the first row, followed by 4 and 5 on the bottom row.":::
 
 #### 1) Filter Factory View
 

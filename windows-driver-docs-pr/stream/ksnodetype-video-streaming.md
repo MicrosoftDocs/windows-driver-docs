@@ -1,7 +1,8 @@
 ---
-title: KSNODETYPE\_VIDEO\_STREAMING
+title: KSNODETYPE_VIDEO_STREAMING
 description: KSNODETYPE\_VIDEO\_STREAMING
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSNODETYPE\_VIDEO\_STREAMING

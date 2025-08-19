@@ -2,6 +2,7 @@
 title: PIN Operations Log Filter
 description: TextAnalysisTool Filter for PIN Operations
 ms.date: 03/01/2021
+ms.topic: concept-article
 ---
 
 # PIN Operations Log filter

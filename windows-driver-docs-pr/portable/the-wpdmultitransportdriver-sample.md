@@ -2,6 +2,7 @@
 description: The WpdMultiTransportDriver Sample
 title: The WpdMultiTransportDriver Sample
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # The WpdMultiTransportDriver Sample
@@ -20,7 +21,7 @@ The multitransport driver stack is shown in the following image:
 
 In the previous image, a hypothetical WPD application (*App.exe*) can move data back and forth between a cell phone that is enabled with multitransport and either a USB or a Bluetooth connection. The WPD Composite driver (*Wpdcomp.dll*) is supplied by Microsoft and is included with Windows 7. The multitransport driver (*WpdMultiTranscell.dll*) is a hypothetical vendor-supplied driver.
 
-The previous image depicts simultaneous connections over Bluetooth and USB. Some drivers mightimplement this functionality. The WpdMultiTransportDriver supports a single (rather than a simultaneous) connection at any given point in time.
+The previous image depicts simultaneous connections over Bluetooth and USB. Some drivers might implement this functionality. The WpdMultiTransportDriver supports a single (rather than a simultaneous) connection at any given point in time.
 
 This sample driver is based on the WpdHelloWorldDriver that is included in the WDK. Before you review the topics in this section, be familiar with the [WpdHelloWorldDriver](the-sample-driver-architecture.md).
 

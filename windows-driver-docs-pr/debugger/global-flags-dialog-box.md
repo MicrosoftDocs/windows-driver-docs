@@ -3,6 +3,7 @@ title: Global Flags Dialog Box
 description: Global Flags Dialog Box
 keywords: ["GFlags, dialog box"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Global Flags Dialog Box
@@ -48,8 +49,3 @@ To determine whether a full or standard page heap verification is enabled for a 
  
 
  
-
-
-
-
-

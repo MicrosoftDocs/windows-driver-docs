@@ -1,5 +1,5 @@
 ---
-title: MSFT\_FileStorageTier class
+title: MSFT_FileStorageTier Class
 description: This class provides methods to manually pin a file onto a storage tier and to unpin it.
 ms.assetid: 002FE1D2-A54F-45DB-B511-F7776A39FAD4
 keywords:
@@ -20,7 +20,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

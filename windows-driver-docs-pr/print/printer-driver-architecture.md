@@ -1,30 +1,31 @@
 ---
 title: Printer Driver Architecture
-description: Printer Driver Architecture
+description: Provides information about printer driver architecture.
 keywords:
 - print jobs WDK , printer drivers
 - jobs WDK print , printer drivers
 - Windows printing architecture WDK
 - printer driver architecture WDK
 - printer drivers WDK , architecture
-ms.date: 01/30/2023
+ms.date: 02/20/2025
+ms.topic: concept-article
 ---
 
-# Printer Driver Architecture
+# Printer driver architecture
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
-Print jobs are created by applications through calls to Microsoft Win32 GDI or, in Windows Vista, Windows Presentation Foundation (WPF) functions. The Win32 functions spool application data as [EMF](emf-data-type.md) records for later playback by the EMF *print processor*, or they can immediately render a printable image for each document page. The WPF functions spool application data as an XPS spool file.
+Print jobs are created by applications through calls to Microsoft Win32 GDI or Windows Presentation Foundation (WPF) functions. The Win32 functions spool application data as [EMF](emf-data-type.md) records for later playback by the EMF *print processor*, or they can immediately render a printable image for each document page. The WPF functions spool application data as an XPS spool file.
 
-Prior to Windows Vista, applications communicated printer settings to the printer by using a [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devmodew) structure. In Windows Vista, the Print Ticket and Print Capabilities technologies communicate printer settings so that printer settings are more compatible across printers and applications.
+Print Ticket and Print Capabilities technologies communicate printer settings so that printer settings are more compatible across printers and applications.
 
 Image rendering, whether performed immediately or during print processing, is performed in the print driver:
 
-- A [GDI-based printer driver](gdi-printer-drivers.md) performs the image rendering during the playback of EMF records from the spool file and is controlled by the GDI rendering engine. During the rendering operation, the GDI rendering engine calls the appropriate Windows 2000 and later printer driver for assistance.
+- A [GDI-based printer driver](gdi-printer-drivers.md) performs the image rendering during the playback of EMF records from the spool file and is controlled by the GDI rendering engine. During the rendering operation, the GDI rendering engine calls the appropriate printer driver for assistance.
 
 - [XPSDrv print drivers](xpsdrv-printer-drivers.md) use a series of processing filters to process the XPS spool file content for output to the printer.
 
-Windows 2000 and later GDI-based printer drivers must:
+GDI-based printer drivers must:
 
 - Assist GDI in rendering print jobs by providing printer-specific drawing capabilities that GDI cannot support.
 
@@ -34,9 +35,9 @@ Windows 2000 and later GDI-based printer drivers must:
 
 XPSDrv printer drivers have the same user interface responsibility as the GDI-based drivers and are also responsible for processing the print job data and sending the data to the printer. XPSDrv printer drivers, however, do not need to use GDI to render the page images for the printer.
 
-Windows 2000 and later printer drivers are made up of a set of [printer driver components](gdi-printer-drivers.md) that divide a driver's drawing and user interface operations into separate DLLs. XPSDrv printer drivers are also made up of components that divide the configuration and the drawing and rendering functions into separate objects.
+Printer drivers are made up of a set of [printer driver components](gdi-printer-drivers.md) that divide a driver's drawing and user interface operations into separate DLLs. XPSDrv printer drivers are also made up of components that divide the configuration and the drawing and rendering functions into separate objects.
 
-This section is intended to help you understand the different types of printer drivers that the Windows 2000 and later operating systems support, but you should also remember that the following three printer drivers are shipped with the operating system:
+This section is intended to help you understand the different types of printer drivers that the operating systems support, but you should also remember that the following three printer drivers are shipped with the operating system:
 
 [Microsoft Universal Printer Driver](microsoft-universal-printer-driver.md)
 

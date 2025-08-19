@@ -1,10 +1,11 @@
 ---
-title: Functions defined by print providers
+title: Functions Defined by Print Providers
 description: Provides information about functions defined by print providers.
 keywords:
 - print providers WDK, functions
 - functions WDK print providers
 ms.date: 09/12/2022
+ms.topic: reference
 ---
 
 # Functions defined by print providers

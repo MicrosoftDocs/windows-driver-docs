@@ -1,7 +1,8 @@
 ---
-title: Determine if a device is PIN-locked
+title: Determine if a Device is PIN-locked
 description: Determine if a device is PIN-locked
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Determine if a device is PIN-locked
@@ -19,7 +20,7 @@ if (account.currentDeviceInformation.networkDeviceStatus == Windows.Networking.N
 }
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Common tasks for mobile broadband Windows Runtime APIs](./create-a-mobilebroadbandaccount-object.md)

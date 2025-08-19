@@ -1,7 +1,8 @@
 ---
-title: MSiSCSI\_InitiatorLoginStatistics WMI Class
+title: MSiSCSI_InitiatorLoginStatistics WMI Class
 description: MSiSCSI\_InitiatorLoginStatistics WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_InitiatorLoginStatistics WMI Class
@@ -53,7 +54,7 @@ class MSiSCSI_InitiatorLoginStatistics : Win32_PerfRawData {
     Description("Count of Login Authentication Failed 
     Responses"): amended] 
     uint32 LoginAuthFailRsps;
-  [WmiDataId(6), DisplayName("Logins  Faiedl (Tar Auth)"): 
+  [WmiDataId(6), DisplayName("Logins  Failed (Tar Auth)"): 
     amended, PerfDefault, CounterType(0x00010000),
     // PERF_COUNTER_RAWCOUNT
     DefaultScale(0), PerfDetail(100), read,

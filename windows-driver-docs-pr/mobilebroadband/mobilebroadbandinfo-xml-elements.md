@@ -1,7 +1,8 @@
 ---
-title: MobileBroadbandInfo XML elements list
+title: MobileBroadbandInfo XML Elements List
 description: MobileBroadbandInfo XML elements list
 ms.date: 07/05/2019
+ms.topic: reference
 ---
 
 # MobileBroadbandInfo XML elements list

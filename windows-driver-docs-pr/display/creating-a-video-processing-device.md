@@ -4,6 +4,7 @@ description: Creating a Video Processing Device
 keywords:
 - video processing WDK DirectX VA , creating devices
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating a Video Processing Device

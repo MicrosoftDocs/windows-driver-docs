@@ -1,7 +1,8 @@
 ---
 title: INF DDInstall.Filters Section
 description: The DDInstall.Filters section contains one or more INF AddFilter directives that reference additional INF-writer-defined sections in a device driver INF file.
-ms.date: 05/11/2022
+ms.date: 06/21/2024
+ms.topic: reference
 ---
 
 # INF DDInstall.Filters Section
@@ -17,7 +18,7 @@ Each per-Models *DDInstall*.**Filters** section contains one or more [**INF AddF
 [install-section-name.ntarm.Filters] |
 [install-section-name.ntarm64.Filters]
  
-AddFilters=FilterName,[flags],filter-install-section
+AddFilter=FilterName,[flags],filter-install-section
 ```
 
 You can provide a *DDInstall*.**Filters** section with at least one [AddFilter directive](inf-addfilter-directive.md) to add a filter to a device stack.

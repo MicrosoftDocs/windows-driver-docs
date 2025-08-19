@@ -1,5 +1,5 @@
 ---
-title: C28162 warning
+title: C28162 Warning
 description: Warning C28162 Exiting while holding the right to use floating-point hardware.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -7,6 +7,7 @@ keywords:
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28162"
+ms.topic: reference
 ---
 
 # C28162
@@ -30,12 +31,4 @@ warning C28162: Exiting while holding the right to use floating-point hardware
  
 
 The **\_Kernel\_float\_restored\_** annotation was used to release the right to use floating point, but a path through the function was detected where no function known to perform that operation was successfully called. This warning might indicate that a conditional (**\_When\_**) annotation is needed, or it might indicate a coding error.
-
- 
-
- 
-
-
-
-
 

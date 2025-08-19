@@ -8,6 +8,7 @@ keywords:
 - AppVerif.exe
 - user-mode application testing
 ms.date: 01/14/2022
+ms.topic: reference
 ---
 
 # Application Verifier - Stop Codes - Printing
@@ -72,7 +73,7 @@ The following stop codes are contained in this set of tests.
 </ul>
 <p></p>
 <h3>Race condition detected while using a printer handle</h3>
-<p></p><i>Probable cause</i><p>A printer handle is being used concurrently in multiple threads. Printer handles are not thread safe which means that simultaneous use of a printer handle in multiple threads is not permitted without application-level synchronization to safely coordinate access to the handle. The application should either open a separate printer handle in each thread or provide custom synchronization access to the printer handle by using the Win32 synchronization API. The Win32 synchronization API is described further at http://msdn.microsoft.com/library/en-us/dllproc/base/synchronization_functions.asp.</p>
+<p></p><i>Probable cause</i><p>A printer handle is being used concurrently in multiple threads. Printer handles are not thread safe which means that simultaneous use of a printer handle in multiple threads is not permitted without application-level synchronization to safely coordinate access to the handle. The application should either open a separate printer handle in each thread or provide custom synchronization access to the printer handle by using the Win32 synchronization API. The Win32 synchronization API is described further at https://learn.microsoft.com/windows/win32/sync/synchronization-functions.</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
   <li><b>Parameter 1</b>&nbsp;-&nbsp;Printer handle being accessed.</li>
   <li><b>Parameter 2</b>&nbsp;-&nbsp;Current thread id.</li>
@@ -91,7 +92,7 @@ The following stop codes are contained in this set of tests.
 </ul>
 <p></p>
 <h3>Potential multi-threaded access to a printer handle detected</h3>
-<p></p><i>Probable cause</i><p>A printer handle was used in a different thread than the thread that created it. Printer handles are not thread safe which means that simultaneous use of a printer handle in multiple threads is not permitted without application-level synchronization to safely coordinate access to the handle. The application should either open a separate printer handle in each thread or provide custom synchronization access to the printer handle by using the Win32 synchronization API. The Win32 synchronization API is described further at http://msdn.microsoft.com/library/en-us/dllproc/base/synchronization_functions.asp.</p>
+<p></p><i>Probable cause</i><p>A printer handle was used in a different thread than the thread that created it. Printer handles are not thread safe which means that simultaneous use of a printer handle in multiple threads is not permitted without application-level synchronization to safely coordinate access to the handle. The application should either open a separate printer handle in each thread or provide custom synchronization access to the printer handle by using the Win32 synchronization API. The Win32 synchronization API is described further at https://learn.microsoft.com/windows/win32/sync/synchronization-functions.</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
   <li><b>Parameter 1</b>&nbsp;-&nbsp;Printer handle being accessed.</li>
   <li><b>Parameter 2</b>&nbsp;-&nbsp;Thread id of the initializing thread.</li>
@@ -319,7 +320,7 @@ The following stop codes are contained in this set of tests.
 </ul>
 <p></p>
 <h3>Race condition detected while using a PrintTicket provider handle</h3>
-<p></p><i>Probable cause</i><p>A PrintTicket provider handle was being used concurrently in multiple threads. This requires application-level of synchronization of the access to the handle. PrintTicket provider handles are not thread safe which means that simultaneous use of a PrintTicket provider handle in multiple threads is not permitted. Instead, the application should either open a separate PrintTicket provider handle in each thread or provide custom synchronization access to the PrintTicket provider handle by using the Win32 synchronization API. The Win32 synchronization API is described further at http://msdn.microsoft.com/library/en-us/dllproc/base/synchronization_functions.asp.</p>
+<p></p><i>Probable cause</i><p>A PrintTicket provider handle was being used concurrently in multiple threads. This requires application-level of synchronization of the access to the handle. PrintTicket provider handles are not thread safe which means that simultaneous use of a PrintTicket provider handle in multiple threads is not permitted. Instead, the application should either open a separate PrintTicket provider handle in each thread or provide custom synchronization access to the PrintTicket provider handle by using the Win32 synchronization API. The Win32 synchronization API is described further at https://learn.microsoft.com/windows/win32/sync/synchronization-functions.</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
   <li><b>Parameter 1</b>&nbsp;-&nbsp;PrintTicket provider handle being accessed.</li>
   <li><b>Parameter 2</b>&nbsp;-&nbsp;Current thread id.</li>
@@ -338,7 +339,7 @@ The following stop codes are contained in this set of tests.
 </ul>
 <p></p>
 <h3>Potential multi-threaded access to a PrintTicket provider handle detected</h3>
-<p></p><i>Probable cause</i><p>This is a warning that a PrintTicket provider handle was used in a thread different from the thread that created it. This may require application-level synchronization to safely access the handle. PrintTicket provider handles are not thread safe which means that simultaneous use of a PrintTicket provider handle in multiple threads is not permitted. Instead, the application should either open a separate PrintTicket provider handle in each thread or provide custom synchronization access to the PrintTicket provider handle by using the Win32 synchronization API. The Win32 synchronization API is described further at http://msdn.microsoft.com/library/en-us/dllproc/base/synchronization_functions.asp.</p>
+<p></p><i>Probable cause</i><p>This is a warning that a PrintTicket provider handle was used in a thread different from the thread that created it. This may require application-level synchronization to safely access the handle. PrintTicket provider handles are not thread safe which means that simultaneous use of a PrintTicket provider handle in multiple threads is not permitted. Instead, the application should either open a separate PrintTicket provider handle in each thread or provide custom synchronization access to the PrintTicket provider handle by using the Win32 synchronization API. The Win32 synchronization API is described further at https://learn.microsoft.com/windows/win32/sync/synchronization-functions.</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
   <li><b>Parameter 1</b>&nbsp;-&nbsp;PrintTicket provider  handle being accessed.</li>
   <li><b>Parameter 2</b>&nbsp;-&nbsp;Thread id of the initializing thread.</li>
@@ -769,7 +770,7 @@ This verifier stop was caused by a software component that called the print subs
 </ul>
 <p></p>
 <h3>Race detected during closing of IPrintAsyncNotifyChannel</h3>
-<p></p><i>Probable cause</i><p>*** Please report this stop to Microsoft. *** This stop indicates that a notification arrives _during_ the call to CloseChannel. If this condition occurs, it may be imposible for the consumer to correctly release the channel. This stop should not be frequently encountered. It can be prevented by always ensuring a listener is available before a bidirectional channel is created, AND/OR ensuring that no listener can be started before attempting closing a channel that has already sent a notification but not recieved the callback.</p>
+<p></p><i>Probable cause</i><p>*** Please report this stop to Microsoft. *** This stop indicates that a notification arrives _during_ the call to CloseChannel. If this condition occurs, it may be impossible for the consumer to correctly release the channel. This stop should not be frequently encountered. It can be prevented by always ensuring a listener is available before a bidirectional channel is created, AND/OR ensuring that no listener can be started before attempting closing a channel that has already sent a notification but not received the callback.</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
   <li><b>Format:</b>&nbsp;-&nbsp;In function %s, a call is already in progress on a different thread.  See help for more info.</li>
   <li><b>Parameter 1</b>&nbsp;-&nbsp;IPrintAsyncNotifyChannel interface pointer.</li>
@@ -1699,7 +1700,7 @@ This verifier stop was caused by a software component that called the print subs
 </ul>
 <p></p>
 <h3>Print filter changed the COM apartment type for the current thread.</h3>
-<p></p><i>Probable cause</i><p>This verifier stop occurs when a print filter changes the COM apartment type in one of it's methods (InitializeFilter, StartOperation, or ShutdownOperation). Use the 'ln poi(&lt;Param1&gt;)' command in the debugger to identify the name of the print filter DLL.</p>
+<p></p><i>Probable cause</i><p>This verifier stop occurs when a print filter changes the COM apartment type in one of its methods (InitializeFilter, StartOperation, or ShutdownOperation). Use the 'ln poi(&lt;Param1&gt;)' command in the debugger to identify the name of the print filter DLL.</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
   <li><b>Format:</b>&nbsp;-&nbsp;
   This verifier stop was caused by a print filter's %lS method changing the COM apartment type from %lS(%d) to %lS(%d).

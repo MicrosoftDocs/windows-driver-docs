@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageModificationEvent class
+title: MSFT_StorageModificationEvent Class
 description: Represents a storage modification event. Storage modification events are used when the underlying state of an object has changed.
 ms.assetid: 7AD4584D-09DA-40BB-B686-AD704119A78B
 keywords:
@@ -14,7 +14,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

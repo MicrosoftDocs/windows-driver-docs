@@ -2,6 +2,7 @@
 title: INF AddComponent Directive
 description: An AddComponent directive creates a software component device underneath the current device.
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # INF AddComponent Directive

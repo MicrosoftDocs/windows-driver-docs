@@ -1,5 +1,5 @@
 ---
-title: RemoveVirtualDisk method of the MSFT\_MaskingSet class
+title: RemoveVirtualDisk Method of the MSFT_MaskingSet Class
 description: Removes one or more virtual disks from the masking set.
 ms.assetid: 8B134FD9-E044-4DF8-812B-F6E2C8E39010
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

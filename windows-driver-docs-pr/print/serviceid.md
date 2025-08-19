@@ -1,10 +1,11 @@
 ---
-title: ServiceID command
+title: ServiceID Command
 description: The ServiceID command returns the service identifier (ID) in the form of the function discovery key.
 keywords:
 - WSDMON port monitors WDK , ServiceID command
 - ServiceID
 ms.date: 09/08/2021
+ms.topic: reference
 ---
 
 # ServiceID command

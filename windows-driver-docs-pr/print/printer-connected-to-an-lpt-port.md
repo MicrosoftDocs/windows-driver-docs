@@ -1,11 +1,12 @@
 ---
-title: Printer connected to an LPT port
+title: Printer Connected to an LPT Port
 description: Provides information about a printer connected to an LPT port.
 keywords:
 - LPT enumerator WDK printer
 - parallel ports WDK, printer connections
 - parallel enumerators WDk printer
 ms.date: 09/08/2022
+ms.topic: concept-article
 ---
 
 # Printer connected to an LPT port

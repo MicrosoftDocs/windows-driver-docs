@@ -7,6 +7,7 @@ keywords:
 - statistics WDK Driver Verifier
 - counters WDK Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Monitoring Individual Counters
@@ -51,12 +52,4 @@ The current number of bytes allocated to the specified driver from this type of 
 The greatest number of bytes allocated at any single time since the last boot to the specified driver from this type of memory pool.
 
 Allocations whose size is one page or larger are not tracked by Pool Tracking and cannot be allocated from the special pool. These individual counters do not reflect these large allocations. A count of all such allocations can be seen in the [global counters](monitoring-global-counters.md).
-
- 
-
- 
-
-
-
-
 

@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ADVANCEDPHOTO
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_ADVANCEDPHOTO
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ADVANCEDPHOTO is used to control photo HDR, flash no flash, and ultra low light fusion on the driver. This is a pin level control for photo pin only.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_ADVANCEDPHOTO Streaming Media Devices"]
 topic_type:

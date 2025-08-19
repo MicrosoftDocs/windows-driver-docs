@@ -1,5 +1,5 @@
 ---
-title: MSFT\_InitiatorId class
+title: MSFT_InitiatorId Class
 description: Represents an initiator identifier.
 ms.assetid: 446877F7-C9A3-40D5-A17E-D3DBBF341B9B
 keywords:
@@ -18,7 +18,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

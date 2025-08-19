@@ -7,6 +7,7 @@ keywords:
 - security WDK BDA
 - blue screen WDK BDA
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Securing a BDA Minidriver

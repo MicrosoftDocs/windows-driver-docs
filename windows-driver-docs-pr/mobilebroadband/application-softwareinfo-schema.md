@@ -1,7 +1,8 @@
 ---
 title: Application (SoftwareInfo)
 description: Application (SoftwareInfo)
-ms.date: 04/20/2017
+ms.date: 10/10/2023
+ms.topic: reference
 ---
 
 # Application (SoftwareInfo)
@@ -10,8 +11,7 @@ ms.date: 04/20/2017
 
 The Application element specifies the associated device notification handler.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
-
+## Usage
 
 ``` syntax
 <Application Id=”tns:ApplicationIdType”>
@@ -19,8 +19,7 @@ The Application element specifies the associated device notification handler.
 </Application>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
-
+## Attributes
 
 <table>
 <colgroup>
@@ -47,10 +46,7 @@ The Application element specifies the associated device notification handler.
 </tbody>
 </table>
 
- 
-
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
-
+## Child elements
 
 <table>
 <colgroup>
@@ -71,10 +67,7 @@ The Application element specifies the associated device notification handler.
 </tbody>
 </table>
 
- 
-
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
-
+## Parent elements
 
 <table>
 <colgroup>
@@ -95,10 +88,7 @@ The Application element specifies the associated device notification handler.
 </tbody>
 </table>
 
- 
-
-## <span id="XSD"></span><span id="xsd"></span>XSD
-
+## XSD
 
 ``` syntax
 <xs:element name="Application" type="tns:ApplicationType"/>
@@ -112,16 +102,6 @@ The Application element specifies the associated device notification handler.
 </xs:complexType>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
-
+## Remarks
 
 The Application element is optional.
-
- 
-
- 
-
-
-
-
-

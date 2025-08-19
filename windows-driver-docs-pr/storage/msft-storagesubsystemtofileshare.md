@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToFileShare class
+title: MSFT_StorageSubSystemToFileShare Class
 description: Association between an MSFT\_StorageSubSystem and its MSFT\_FileShare objects.
 ms.assetid: 4BED3526-1DAA-4A20-97B5-BBC558FD10CF
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

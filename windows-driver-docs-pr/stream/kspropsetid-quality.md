@@ -1,7 +1,8 @@
 ---
-title: KSPROPSETID\_Quality
+title: KSPROPSETID_Quality
 description: KSPROPSETID\_Quality
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_Quality

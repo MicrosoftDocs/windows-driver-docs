@@ -1,5 +1,5 @@
 ---
-title: Viewing hidden devices
+title: Viewing Hidden Devices
 description: Viewing hidden devices
 keywords:
 - non-present devices WDK
@@ -12,6 +12,7 @@ keywords:
 - showing non-present devices
 - displaying non-present devices
 ms.date: 12/05/2022
+ms.topic: concept-article
 ---
 
 # Viewing Hidden Devices

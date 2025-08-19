@@ -45,7 +45,7 @@ It can be difficult to understand the effect of rotation on the current image's 
 
 [**WIA_IPS_YEXTENT**](wia-ips-yextent.md) is not related to [**WIA_IPS_ORIENTATION**](wia-ips-orientation.md). WIA_IPS_ORIENTATION describes the orientation of the document to be scanned relative to the direction of the scan; in contrast, WIA_IPS_ROTATION describes the rotation that is to be applied to an image after it is scanned.
 
-WIA_IPS_ORIENTATION can impact the area to be scanned. Not all page sizes are available in both landscape and portrait, and the extents of the image from an change in WIA_IPS_ORIENTATION could crop the image. WIA_IPS_ROTATION does not impact the image extents and is not related to the orientation of the document that is to be scanned.
+WIA_IPS_ORIENTATION can impact the area to be scanned. Not all page sizes are available in both landscape and portrait, and the extents of the image from a change in WIA_IPS_ORIENTATION could crop the image. WIA_IPS_ROTATION does not impact the image extents and is not related to the orientation of the document that is to be scanned.
 
 ## Requirements
 

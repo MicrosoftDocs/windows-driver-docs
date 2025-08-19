@@ -10,6 +10,7 @@ keywords:
 - failed verification WDK Static Driver Verifier
 - inconclusive verification WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Passing and Failing a Verification
@@ -34,12 +35,4 @@ A driver *fails* a verification when the SDV verification engine proves that the
 A verification is *inconclusive* if it terminates before it completes because of timeouts (a **Timeout** result) or a memory shortage (a **Spaceout** result), or when SDV could not reach a passing or failing conclusion (an **Uncertain** result). Also, SDV might have encountered internal tool errors that prevent it from completing its tasks. (For more information about the results, see [Interpreting Static Driver Verifier Results](interpreting-static-driver-verifier-results.md).)
 
 When a rule does not apply to the driver, for example, if the driver does not make use of the device driver interfaces that the rule verifies, SDV reports that the rule is **Not Applicable**.
-
- 
-
- 
-
-
-
-
 

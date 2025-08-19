@@ -1,7 +1,8 @@
 ---
-title: MSiSCSI\_InitiatorSessionInfo WMI Class
+title: MSiSCSI_InitiatorSessionInfo WMI Class
 description: MSiSCSI\_InitiatorSessionInfo WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_InitiatorSessionInfo WMI Class

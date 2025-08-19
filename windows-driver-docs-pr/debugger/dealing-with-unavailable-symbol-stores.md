@@ -3,6 +3,7 @@ title: Dealing with Unavailable Symbol Stores
 description: Dealing with Unavailable Symbol Stores
 keywords: ["SymProxy, unavailable stores"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Dealing with Unavailable Symbol Stores
@@ -46,8 +47,3 @@ This feature of SymSrv is currently available only when running as a service. Th
  
 
  
-
-
-
-
-

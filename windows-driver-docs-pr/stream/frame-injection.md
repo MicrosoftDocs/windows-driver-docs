@@ -12,6 +12,7 @@ keywords:
 - overriding default frame behavior WDK streaming media
 - circuits WDK AVStream
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Frame Injection

@@ -2,6 +2,7 @@
 title: WDF Driver Call Tracer (WdfCallTracer)
 description: WDF Driver Call Tracer (WdfCallTracer)
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # WDF Driver Call Tracer (WdfCallTracer)
@@ -59,12 +60,4 @@ Now you are ready to register the driver and enable tracing so that you can view
 3.  Enable the driver from Device Manager, or plug in your hardware. If your driver was already enabled, use Device Manager to disable it, and then enable it again.
 
 You should now see driver communication in the TraceView application.
-
- 
-
- 
-
-
-
-
 

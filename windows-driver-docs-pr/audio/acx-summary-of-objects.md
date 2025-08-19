@@ -1,14 +1,12 @@
 ---
-title: Summary of ACX objects
+title: Summary of ACX Objects
 description: This topic provides a high level summary of ACX objects that form the base of an ACX audio driver.
-ms.date: 04/19/2023
+ms.date: 06/17/2024
 ms.localizationpriority: medium
+ms.topic: concept-article
 ---
 
 # Summary of ACX objects
-
->[!IMPORTANT]
-> Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic provides a high level summary of Audio Class Extensions (ACX) objects that form the base of an ACX audio driver. For a general overview of ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md).
 
@@ -18,7 +16,11 @@ ACX objects are Windows Driver Framework (WDF) objects - WDFOBJECT. For more inf
 
 In ACX (as in WDF), the driver object is the root object, and all other objects are its children/descendants. All ACX objects are children of the driver object directly or indirectly via other ACX or WDF objects. An ACX driver can specify the parent of an ACX object during creation time. If the parent is not specified, ACX uses a default parent as described in these sections.
 
-![diagram illustrating the hierarchy of ACX objects with WDFDEVICE at the top and major ACX objects such as circuit and stream](images/audio-acx-object-hierarchy.png)
+:::image type="content" source="images/audio-acx-object-hierarchy.png" alt-text="Diagram illustrating the hierarchy of ACX objects, with WDFDEVICE at the top and major ACX objects like circuit and stream below.":::
+
+### Creating non ACX WDF objects
+
+In addition to ACX objects, an audio driver can create and use other WDF objects as required. If a driver is planning to enumerate non-ACX devices, it should do so by using a different child list than the default WDF child list created when an ACX/WDF device is created. A driver can create a new WDF child-list using [WdfChildListCreate](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistcreate) as described in [Creating Device Objects in a Function Driver](../wdf/creating-device-objects-in-a-function-driver.md).  For general information on WDF objects, see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md), [WDF Architecture](../wdf/kernel-mode-driver-framework-architecture.md) and [Developing Drivers with the Windows Driver Foundation](../wdf/developing-drivers-with-wdf.md). For information on initializing an ACX device, see [AcxDeviceInitialize](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceinitialize).
 
 ## ACX Circuit
 
@@ -36,13 +38,13 @@ The DDIs for ACX circuits are described in the [acxcircuit.h](/windows-hardware/
 
 ## ACX Pin
 
-Just as in WDM Portcls audio drivers, and AcxPin object represent the logical connections (not physical connections) through which data streams enter the adapter from the system communications bus or enter the system communications bus from the adapter. 
+Just as in WDM Portcls audio drivers, and AcxPin object represent the logical connections (not physical connections) through which data streams enter the adapter from the system communications bus or enter the system communications bus from the adapter.
 
 The DDIs for Pin are described in the [acxpin.h](/windows-hardware/drivers/ddi/acxpin/) header.
 
 ## ACX Stream
 
-An AcxStream represents an audio stream on a specific circuit’s hardware.  An AcxStream may aggregate one or more AcxElements-like objects. By default, AcxElements are ‘connected’ in the same order of assembly. An AcxStream is associated with only one ACX circuit. 
+An AcxStream represents an audio stream on a specific circuit’s hardware.  An AcxStream may aggregate one or more AcxElements-like objects. By default, AcxElements are ‘connected’ in the same order of assembly. An AcxStream is associated with only one ACX circuit.
 
 - An AcxStream has a dedicated WDF queue.  For more information about WDF queues, see [Framework Queue Objects](../wdf/creating-i-o-queues.md)
 - An AcxStream support different states. These states indicate when audio is flowing (RUN state) or not flowing (PAUSE or STOP state).
@@ -52,7 +54,7 @@ The DDIs for stream are defined in the [acxstreams.h](/windows-hardware/drivers/
 
 ## ACX Targets
 
-WdfIoTarget is a WDF abstraction to facilitate the communication between two different stacks. For more information about WDF IO targets, see [Introduction to I/O Targets](../wdf/introduction-to-i-o-targets.md). 
+WdfIoTarget is a WDF abstraction to facilitate the communication between two different stacks. For more information about WDF IO targets, see [Introduction to I/O Targets](../wdf/introduction-to-i-o-targets.md).
 
 - Drivers use AcxTargetCircuit to communicate with a remote circuit exposed by a different stack. AcxTargetCircuit is implemented using a WdfIoTarget.
 - Drivers use AcxTargetPin to communicate with a remote circuit’s pin exposed by a different stack. AcxTargetPin is implemented using a WdfIoTarget to send messages to the remote pin entity.
@@ -66,7 +68,7 @@ The DDIs for targets are defined in the [acxtargets.h](/windows-hardware/drivers
 
 ## ACX Stream Bridge
 
-The AcxStreamBridge object is used by a circuit to propagate a stream creation, stream’s states transitions and DRM settings between circuit segments. This object is only used in a multi circuit (audio composite) scenario. A driver may associate one or more ACXSTREAMBRIDGE objects to a bridge pin. A bridge pin is the ACXPIN that logically connects to the correspoinding ACXPIN on the other circuit.
+The AcxStreamBridge object is used by a circuit to propagate a stream creation, stream’s states transitions and DRM settings between circuit segments. This object is only used in a multi circuit (audio composite) scenario. A driver may associate one or more ACXSTREAMBRIDGE objects to a bridge pin. A bridge pin is the ACXPIN that logically connects to the corresponding ACXPIN on the other circuit.
 
 The DDIs for Stream are described in the [acxstreams.h](/windows-hardware/drivers/ddi/acxstreams) header.
 
@@ -74,9 +76,9 @@ The DDIs for Stream are described in the [acxstreams.h](/windows-hardware/driver
 
 The following diagram illustrates an ACX circuit. The host and offload pins are inputs to the circuit with a loopback pin that could be used for echo cancellation. The output could be a bridge pin that routes to a speaker.
 
-![diagram illustrating and acx circuit with and host, offload an loopback pins on the left and a bridge pin on the right routed through a audio engine node](images/audio-acx-elements-1.png)
+:::image type="content" source="images/audio-acx-elements-1.png" alt-text="Diagram illustrating an ACX circuit with host, offload, and loopback pins on the left, and a bridge pin on the right, routed through an audio engine node.":::
 
-Note that driver doesn't need to perform the step of explicitly connecting when circuit/elements are connected in the  same order as they were added to the circuit. 
+Note that driver doesn't need to perform the step of explicitly connecting when circuit/elements are connected in the  same order as they were added to the circuit.
 
 By default ACX connects the elements starting from the circuit's ACX request sink pin and ending with the circuit's device bridge pin for both render and capture devices.
 
@@ -90,7 +92,7 @@ The ACX Object Bag is used to store various data types. ACXOBJECTBAG can be pass
 
 ## ACX object summary  
 
-The following table lists all of the ACX objects and provides some basic information about each object. 
+The following table lists all of the ACX objects and provides some basic information about each object.
 
 | Handle                  | Name                   | Purpose                                                                                                           |
 |-------------------------|------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -129,7 +131,7 @@ The following table lists all of the ACX objects and provides some basic informa
 
 The following ACX objects are used to store circuit, stream and circuit factory information.
 
-| Handle                 | Purpose                                                    | 
+| Handle                 | Purpose                                                    |
 |------------------------|------------------------------------------------------------|
 | ACXCIRCUIT_INIT        | Stores ACX circuit initialization data                     |
 | ACXSTREAM_INIT         | Stores ACX stream initialization data                      |  
@@ -140,5 +142,3 @@ The following ACX objects are used to store circuit, stream and circuit factory 
 [ACX audio class extensions overview](acx-audio-class-extensions-overview.md)
 
 [ACX reference documentation](acx-reference.md)
-
-[ACX multi stack cross driver communications](acx-multi-stack.md)

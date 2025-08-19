@@ -3,6 +3,7 @@ title: The Remote.exe Utility
 description: The Remote.exe Utility
 keywords: ["remote debugging through remote.exe, remote.exe utility"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # The Remote.exe Utility
@@ -22,8 +23,3 @@ Please note that remote.exe does no security authorization, and will permit anyo
  
 
  
-
-
-
-
-

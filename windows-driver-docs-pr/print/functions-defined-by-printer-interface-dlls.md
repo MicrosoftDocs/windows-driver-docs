@@ -1,10 +1,11 @@
 ---
-title: Functions defined by printer interface DLLs
+title: Functions Defined by Printer Interface DLLs
 description: Provides information about functions defined by printer interface DLLs.
 keywords:
 - printer interface DLL WDK, functions
 - functions WDK printer interface DLL
 ms.date: 01/27/2023
+ms.topic: reference
 ---
 
 # Functions defined by printer interface DLLs

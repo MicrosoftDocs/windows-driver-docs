@@ -1,7 +1,8 @@
 ---
-title: KSPROPSETID\_StreamAllocator
+title: KSPROPSETID_StreamAllocator
 description: KSPROPSETID\_StreamAllocator
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_StreamAllocator

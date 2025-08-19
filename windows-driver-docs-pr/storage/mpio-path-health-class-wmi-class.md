@@ -1,7 +1,8 @@
 ---
-title: MPIO\_PATH\_HEALTH\_CLASS WMI Class
+title: MPIO_PATH_HEALTH_CLASS WMI Class
 description: MPIO\_PATH\_HEALTH\_CLASS WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MPIO\_PATH\_HEALTH\_CLASS WMI Class

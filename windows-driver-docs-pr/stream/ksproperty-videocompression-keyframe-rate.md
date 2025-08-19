@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEOCOMPRESSION\_KEYFRAME\_RATE
+title: KSPROPERTY_VIDEOCOMPRESSION_KEYFRAME_RATE
 description: The KSPROPERTY\_VIDEOCOMPRESSION\_KEYFRAME\_RATE property controls the key frame rate. This property must be implemented.
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_KEYFRAME_RATE Streaming Media Devices"]
 topic_type:

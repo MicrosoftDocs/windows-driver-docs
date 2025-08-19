@@ -1,8 +1,9 @@
 ---
-title: When Are WDM Device Objects Created
+title: When are WDM Device Objects Created
 description: When Are WDM Device Objects Created
 keywords: ["device objects WDK kernel , when created", "layered device objects WDK kernel", "functional device objects WDK kernel", "FDO WDK kernel", "physical device objects WDK kernel", "PDOs WDK kernel", "filter DOs WDK kernel", "device stacks WDK kernel , device object layers possible", "attaching device objects"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # When Are WDM Device Objects Created?

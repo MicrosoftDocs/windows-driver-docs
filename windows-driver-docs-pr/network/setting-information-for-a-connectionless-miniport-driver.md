@@ -4,6 +4,7 @@ description: Setting Information for a Connectionless Miniport Driver
 keywords:
 - connectionless drivers WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting Information for a Connectionless Miniport Driver
@@ -16,7 +17,7 @@ To set an OID that a connectionless miniport driver maintains, a bound protocol 
 
 The call to *MiniportOidRequest* can complete synchronously or asynchronously. To complete the call asynchronously, the miniport driver calls [**NdisMOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete). The following diagram illustrates setting information in a connectionless miniport driver (per binding).
 
-![diagram illustrating setting information in a connectionless miniport driver (per binding).](images/fig5-4.png)
+:::image type="content" source="images/fig5-4.png" alt-text="Diagram illustrating the process of setting information in a connectionless miniport driver per binding.":::
 
  
 

@@ -3,6 +3,7 @@ title: Using Lookaside Lists
 description: Using Lookaside Lists
 keywords: ["memory management WDK kernel , lookaside lists", "lookaside lists WDK kernel", "fixed-size buffer allocations WDK kernel", "ExXxxLookasideList routines WDK", "entries WDK lookaside", "nonpaged lookaside lists WDK kernel", "paged lookaside lists WDK kernel", "Allocate routine WDK memory", "Free routine WDK memory"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Using Lookaside Lists
@@ -17,7 +18,7 @@ For example, storage class drivers that must set up SCSI request blocks (SRBs) f
 
 The operating system maintains state about all paged and nonpaged lookaside lists that are currently being used, dynamically tracking the demand for allocations and deallocations of entries in all lists, and available system pool for new entries. When demand for allocations is high, the operating system increases the number of entries it holds in each lookaside list. When demand falls again, it frees surplus lookaside entries back to system pool.
 
-Lookaside lists are thread-safe. A lookaside list has built-in synchronization to enable multiple, concurrently running threads in a driver to share a lookaside list. These threads can safely allocate buffers from the shared lookaside list and free these buffers to the list without requiring the driver to explicitly synchronize these operations. However, to avoid possible leaks and data corruption, a set of threads that share a lookaside list must explictly synchronize the initialization and deletion of the list.
+Lookaside lists are thread-safe. A lookaside list has built-in synchronization to enable multiple, concurrently running threads in a driver to share a lookaside list. These threads can safely allocate buffers from the shared lookaside list and free these buffers to the list without requiring the driver to explicitly synchronize these operations. However, to avoid possible leaks and data corruption, a set of threads that share a lookaside list must explicitly synchronize the initialization and deletion of the list.
 
 ## Lookaside list interfaces
 

@@ -3,6 +3,7 @@ title: Creating a Kernel-Mode Dump File
 description: Creating a Kernel-Mode Dump File
 keywords: ["dump file, creating kernel-mode dump file", "dump file, NMI switch", "NMI switch"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Creating a Kernel-Mode Dump File
@@ -38,8 +39,3 @@ The usage of NMI switches is not covered in this documentation.
  
 
  
-
-
-
-
-

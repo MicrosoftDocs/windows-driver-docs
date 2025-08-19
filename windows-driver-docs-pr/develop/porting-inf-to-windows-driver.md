@@ -1,12 +1,13 @@
 ---
-title: Porting an INF to follow driver package isolation
+title: Porting an INF to Follow Driver Package Isolation
 description: This article provides tips on how to port an INF from old syntax to conform to driver package isolation
-ms.date: 01/30/2023
+ms.date: 12/20/2024
+ms.topic: concept-article
 ---
 
 # Porting an INF to follow driver package isolation
 
-This article is intended to be a quick lookup guide to help you update an INF file to follow [driver package isolation](driver-isolation.md) as part of updating your driver package to be a [Windows Driver](getting-started-with-windows-drivers.md). The following sections provide examples of some of the more common things you may have in your driver package INF file with references to information on how to update those to be driver package isolation compliant.  If your driver package needs to support the old way of doing something for older operating system versions while using the new way on newer operating system versions, see [Combining Platform Extensions with Operating System Versions](../install/combining-platform-extensions-with-operating-system-versions.md) for how to achieve that in an INF.
+This article is intended to be a quick lookup guide to help you update an INF file to follow [driver package isolation](driver-isolation.md) as part of updating your driver package to be a [Windows Driver](get-started-developing-windows-drivers.md). The following sections provide examples of some of the more common things you may have in your driver package INF file with references to information on how to update those to be driver package isolation compliant.  If your driver package needs to support the old way of doing something for older operating system versions while using the new way on newer operating system versions, see [Combining Platform Extensions with Operating System Versions](../install/combining-platform-extensions-with-operating-system-versions.md) for how to achieve that in an INF.
 
 ## DestinationDirs isn't DIRID 13
 
@@ -14,7 +15,7 @@ If your [DestinationDirs section](../install/inf-destinationdirs-section.md) spe
 
 ## Using AddReg to register ETW providers and EventLog channels
 
-If your INF uses an AddReg directive to register an ETW provider and EventLog channels, then the INF isn't compliant with driver package isolation.  For example, your INF may have:
+If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to register an ETW provider and EventLog channels, then the INF isn't compliant with driver package isolation.  For example, your INF may have:
 
 ```inf
 HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\ExampleProvider/Analytic", "OwningPublisher", 0x0, "{35356277-0b54-43da-b324-671006d74759}"
@@ -55,7 +56,7 @@ Using an [AddEventProvider directive](../install/inf-addeventprovider-directive.
 
 ## Using AddReg to register an AutoLogger
 
-If your INF uses an AddReg directive to register or modify an ETW AutoLogger, then the INF isn't compliant with driver package isolation. For example, your INF may have:
+If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to register or modify an ETW AutoLogger, then the INF isn't compliant with driver package isolation. For example, your INF may have:
 
 ```inf
 HKLM,SYSTEM\CurrentControlSet\Control\WMI\Autologger\ExampleAutoLogger, BufferSize, %REG_DWORD%, 0x00000040
@@ -91,7 +92,7 @@ Using an [AddAutoLogger or UpdateAutoLogger directive](../install/inf-addupdatea
 
 ## Using AddReg to add an entry to the RunOnce key
 
-If your INF uses an AddReg directive to add an entry to the RunOnce key, then the INF isn't compliant with driver package isolation. For example, your INF may have:
+If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to add an entry to the RunOnce key, then the INF isn't compliant with driver package isolation. For example, your INF may have:
 
 ```inf
 [ExampleDDInstall]
@@ -105,7 +106,7 @@ This isn't supported. An INF shouldn't be modifying global registry entries.  If
 
 ## Using AddReg to add an entry to the Run key
 
-If your INF uses an AddReg directive to add an entry to the Run key, then the INF isn't compliant with driver package isolation. For example, your INF may have:
+If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to add an entry to the Run key, then the INF isn't compliant with driver package isolation. For example, your INF may have:
 
 ```inf
 [ExampleDDInstall]
@@ -119,7 +120,7 @@ This isn't supported. An INF shouldn't be modifying global registry entries.  If
 
 ## Using CopyFiles to add files to the 'Program Files' directories
 
-If your INF uses a CopyFiles directive to add files to the 'Program Files' directories, then the INF is not compliant with driver package isolation. This includes, but is not limited to, usage of the [DIRIDs](../install/using-dirids.md) 16422, 16426, 16427, and 16428. For example, your INF may have:
+If your INF uses a [CopyFiles directive](../install/inf-copyfiles-directive.md) to add files to the 'Program Files' directories, then the INF is not compliant with driver package isolation. This includes, but is not limited to, usage of the [DIRIDs](../install/using-dirids.md) 16422, 16426, 16427, and 16428. For example, your INF may have:
 ```inf
 [DestinationDirs]
 Example_CopyFiles = 16422, Contoso
@@ -149,11 +150,11 @@ ExampleCoInstall.dll
 HKR,,CoInstallers32,0x00010000,"ExampleCoInstall.dll,ExampleCoInstallEntryPoint"
 ```
 
-Instead, your application should be a Universal Windows Platform application and installed using an [AddSoftware directive](../install/inf-addsoftware-directive.md) from a [DDInstall.Software section](../install/inf-ddinstall-software-section.md). For more information, see [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md). An [AddSoftware directive](../install/inf-addsoftware-directive.md) is supported on Windows 10 1703 and later versions of Windows.
+For information on how to handle this situation, see [Removing Co-installers from Driver Packages](./removing-coinstallers.md).
 
 ## Using AddReg to modify a service that isn't added by the INF
 
-If your INF uses an AddReg directive to modify the state of a service that isn't added by an AddService directive in your INF, then the INF isn't compliant with driver package isolation.  For example, your INF may have:
+If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to modify the state of a service that isn't added by an AddService directive in your INF, then the INF isn't compliant with driver package isolation.  For example, your INF may have:
 
 ```inf
 [ExampleDDInstall]
@@ -165,9 +166,51 @@ HKLM,SYSTEM\CurrentControlSet\Services\ServiceNotCreatedByThisInf\ExampleKey, Ex
 
 This isn't supported. An INF should only be changing settings on services created by that INF and the INF should remove this AddReg.
 
+## Using AddReg to modify intrinsic state of a service
+
+If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to modify intrinsic service state, then the INF isn't compliant with driver package isolation.  Intrinsic service state is state about the service that is managed by the Service Control Manager.  This includes, but is not limited to:
+* Display name
+* Description
+* Image path
+* Type
+* Start type
+* Error control
+* Load order group
+* Dependencies
+* Security information
+* Required privileges
+* SID type
+* Delayed auto start setting
+* Triggers
+* Failure actions
+* Boot flags
+
+For example, your INF may have:
+
+```inf
+[ExampleDDInstall.Services]
+AddService = ExampleService,0,Example_Service_Inst
+
+[Example_Service_Inst]
+DisplayName   = %SvcDesc%
+ServiceType   = %SERVICE_WIN32_OWN_PROCESS%
+StartType     = %SERVICE_DEMAND_START%
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %13%\ExampleService.exe
+AddReg = Example_Service_Registry
+
+[Example_Service_Registry]
+HKR,TriggerInfo\0,Type,0x00010001,0x01
+HKR,TriggerInfo\0,Action,0x00010001,0x01
+HKR,TriggerInfo\0,Guid,0x00000001,2D,DF,41,BD,DD,AD,C9,4F,A1,94,B9,88,1D,2A,2E,FA
+HKR,,ServiceSidType,0x00010001,0x01
+```
+
+To be driver package isolation compliant, you need to use the built in INF directives for specifying that state as described at [AddService directive](../install/inf-addservice-directive.md).
+
 ## Using AddReg to modify state in the root of a service
 
-If your INF uses an AddReg directive to create keys or values in the root of a service's state, then the INF isn't compliant with driver package isolation.  For example, your INF may have:
+If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to create keys or values in the root of a service's state, then the INF isn't compliant with driver package isolation.  For example, your INF may have:
 
 ```inf
 [ExampleDDInstall.Services]
@@ -186,11 +229,13 @@ HKR,,ExampleValue,%REG_DWORD%,0x00000040
 HKR,CustomSubkey,ExampleValue,%REG_DWORD%,0x00000040
 ```
 
-To be driver package isolation compliant, an AddReg directive supplying service registry keys and values can only modify keys and values under the service's Parameters subkey.  The settings need to be moved under the service's Parameters subkey and the Parameters subkey can be accessed at runtime with [IoOpenDriverRegistryKey](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) using a RegKeyType of DriverRegKeyParameters. IoOpenDriverRegistryKey is supported on Windows 10 1803 and later versions of Windows.
+To be driver package isolation compliant, an AddReg directive supplying service registry keys and values can only modify keys and values under the service's Parameters subkey.  
+
+If your INF is creating or modifying other state under the root of the service, the settings need to be moved under the service's Parameters subkey and the Parameters subkey can be accessed at runtime with [IoOpenDriverRegistryKey](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) using a RegKeyType of DriverRegKeyParameters. IoOpenDriverRegistryKey is supported on Windows 10 1803 and later versions of Windows.
 
 ## Using HKCR AddReg to register an APO
 
-If your INF uses an AddReg directive with an HKCR registry root to register an Audio Processing Object (APO), then the INF isn't compliant with driver package isolation. For example, your INF may have:
+If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) with an HKCR registry root to register an Audio Processing Object (APO), then the INF isn't compliant with driver package isolation. For example, your INF may have:
 
 ```inf
 HKCR,AudioEngine\AudioProcessingObjects\%EXAMPLE_CLSID%, "FriendlyName", , %APO_FriendlyName%
@@ -212,3 +257,80 @@ Instead, the APO registration information should be in a section referenced by a
 ## UMDF driver version is less than 2
 
 If your driver package payloads a [User-Mode Driver Framework (UMDF)](../wdf/getting-started-with-umdf-version-2.md) driver that uses a UMDF version earlier than version 2, then it isn't compliant with "Windows Drivers". For more information on how to move your UMDF driver to a more recent UMDF version, see [Porting a Driver from UMDF 1 to UMDF 2](../wdf/porting-a-driver-from-umdf-1-to-umdf-2.md).
+
+
+## Using AddReg to add an upper or lower filter to a device stack
+
+If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to add an upper or lower filter to a device stack, then the INF isn't compliant with driver package isolation. For example, your INF may have:
+
+```inf
+[ExampleDDInstall.HW]
+AddReg = FilterAddReg
+
+[FilterAddReg]
+HKR,,"UpperFilters",0x00010000,"ExampleFilterDriver" ; REG_MULTI_SZ value
+```
+
+Instead, the filter should be added to the device stack using the [AddFilter](../install/inf-addfilter-directive.md) directive. For example:
+
+```inf
+[ExampleDDInstall.Filters]
+AddFilter = ExampleFilterDriver,, ExampleFilterSection
+
+[ExampleFilterSection]
+FilterPosition = Upper
+```
+
+See [Device filter driver ordering](device-filter-driver-ordering.md) for more details on adding device filters.
+
+## Using AddReg to register Media Category Name values
+
+If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to register a Media Category Name value, then the INF isn't compliant with driver package isolation. For example, your INF may have:
+
+```inf
+[ExampleDDInstall]
+AddReg=MediaCategoryRegistration
+
+[MediaCategoryRegistration]
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%ExampleGuid%,Name,,%ExampleName%
+```
+
+Instead of using an AddReg to register a Media Category name under the global registry location, they should be registered in device relative state using an HKR AddReg from the [DDInstall section](../install/inf-ddinstall-section.md). For example:
+
+```inf
+[ExampleDDInstall]
+AddReg=MediaCategoryRegistration
+
+[MediaCategoryRegistration]
+HKR,MediaCategories\%ExampleGuid%,Name,,%ExampleName%
+```
+
+Using device relative state to register Media Category names is supported on Windows 10, version 1809 and later versions of Windows. See [Friendly Names for Audio Endpoint Devices](../audio/friendly-names-for-audio-endpoint-devices.md) for more information.
+
+## Using AddReg to register Media Category Display values
+
+If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to register a Media Category Display value, then the INF isn't compliant with driver package isolation. For example, your INF may have:
+
+```inf
+[ExampleDDInstall]
+AddReg=MediaCategoryRegistration
+
+[MediaCategoryRegistration]
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%ExampleGuid%,Display,1,00,00,00,00
+```
+
+This value is not used and should be removed from the INF.
+
+## Using AddReg to register DmaSecurity\AllowedBuses values
+
+If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to specify values under the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses` registry key, then the INF isn't compliant with driver package isolation. For example, your INF may have:
+
+```inf
+[ExampleDDInstall]
+AddReg=DmaSecurityRegistration
+
+[DmaSecurityRegistration]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,"Example Friendly Name Description",0,PCI\VEN_ABCD&DEV_0123
+```
+
+Starting with Windows 11, version 24H2, this value is not used and should be removed from the INF. Please see [BitLocker automatic device encryption hardware requirements](/windows-hardware/design/device-experiences/oem-bitlocker#bitlocker-automatic-device-encryption-hardware-requirements) for more information.

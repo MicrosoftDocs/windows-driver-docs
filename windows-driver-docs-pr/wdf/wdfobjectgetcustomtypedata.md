@@ -1,5 +1,5 @@
 ---
-title: WdfObjectGetCustomTypeData macro
+title: WdfObjectGetCustomTypeData Macro
 description: The WdfObjectGetCustomTypeData macro retrieves the data that the driver previously associated with a framework object and custom type.
 keywords:
  - WdfObjectGetCustomTypeData macro

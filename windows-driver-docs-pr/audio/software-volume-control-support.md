@@ -2,6 +2,7 @@
 title: Software Volume Control Support
 description: Software Volume Control Support
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Software Volume Control Support
@@ -11,7 +12,7 @@ In Windows Vista and later, software volume support is provided for audio hardwa
 
 The following diagram shows a simplified representation of the Windows software volume support.
 
-![diagram illustrating the windows vista software volume support .](images/audio-volume-architecture.png)
+:::image type="content" source="images/audio-volume-architecture.png" alt-text="Diagram showing simplified representation of Windows software volume support with two audio data paths.":::
 
 The diagram shows two separate audio data paths. One when an amplifier is present and one when the Windows APO software volume control is used. If an amplifier is present, the driver advertises, KSPROPERTY\_AUDIO\_VOLUMELEVEL. If the audio driver does not indicate that it supports KSPROPERTY\_AUDIO\_VOLUMELEVEL, the Windows audio engine creates a software volume control APO.
 

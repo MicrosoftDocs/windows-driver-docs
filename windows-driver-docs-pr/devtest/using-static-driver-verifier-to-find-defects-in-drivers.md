@@ -2,6 +2,7 @@
 title: Using Static Driver Verifier to Find Defects in Windows Drivers
 description: Static Driver Verifier (SDV) uses a set of interface rules and a model of the operating system to determine if the driver interacts correctly with the Windows operating system.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Using Static Driver Verifier to Find Defects in Windows Drivers
@@ -9,6 +10,12 @@ ms.date: 04/20/2017
 Static Driver Verifier (SDV) uses a set of interface rules and a model of the operating system to determine if the driver interacts correctly with the Windows operating system. SDV finds defects in driver code that could point to potential bugs in drivers.
 
 SDV can analyze kernel-mode drivers that conform to one of the following driver models: WDM, KMDF, NDIS, or Storport. For more information, see [Supported Drivers](supported-drivers.md) and [Determining if Static Driver Verifier supports your driver or library](determining-if-static-driver-verifier-supports-your-driver-or-library.md).  Additionally, SDV provides limited support (a severely restricted rule set focused on general errors such as null dereferences) for drivers that do not follow the above driver models.
+
+> [!IMPORTANT]
+> SDV is no longer supported and SDV is not available in Windows 24H2 WDK or EWDK releases. It is not available in WDKs newer than build 26017, and is not included in the Windows 24H2 RTM WDK.
+> SDV can still be used by downloading the Windows 11, version 22H2 EWDK (released October 24, 2023) with Visual Studio build tools 17.1.5 from [Download the Windows Driver Kit (WDK)](../download-the-wdk.md). Only the use of the Enterprise WDK to run SDV is recommended. Using older versions of the standard WDK in conjunction with recent releases of Visual Studio is not recommended, as this will likely result in analysis failures. <br>
+> Going forward, CodeQL will be the primary static analysis tool for drivers. CodeQL provides a powerful query language that treats code as a database to be queried, making it simple to write queries for specific behaviors, patterns, and more.
+> For more information about using CodeQL, see [CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md).
 
 ## Preparing your source code
 
@@ -97,7 +104,7 @@ Use the following steps to prepare your code for analysis.
     **Schedule** Select a start time for the verification to begin. The default setting is to begin the analysis immediately after you click **Start** on the **Main** tab. Depending upon the size of the driver and its complexity, the static analysis can take a long time to run. You might want to schedule the analysis to begin when it is most convenient for you; for example, at the end of the day.
 
     >[!NOTE]
-    >]Be sure to check your computer's power management plan to ensure the computer will not go into a sleep state during the analysis.
+    > Be sure to check your computer's power management plan to ensure the computer will not go into a sleep state during the analysis.
 
 4. Click the **Rules** tab to select which driver API usage rules to verify when you start the analysis.
 

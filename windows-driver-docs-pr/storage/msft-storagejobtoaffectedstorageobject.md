@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageJobToAffectedStorageObject class
+title: MSFT_StorageJobToAffectedStorageObject Class
 description: Association between a MSFT\_StorageJob and MSFT\_StorageObject objects that are affected by the job operation.
 ms.assetid: 86056850-8918-4AD4-BAFC-EE73DEFF8958
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

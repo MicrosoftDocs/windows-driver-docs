@@ -1,5 +1,5 @@
 ---
-title: MSFT\_Partition class
+title: MSFT_Partition Class
 description: Represents a partition on a disk.
 ms.assetid: d692d4f5-c912-48ec-98a6-9c72ac6e75f6
 keywords:
@@ -32,7 +32,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

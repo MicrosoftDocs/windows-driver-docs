@@ -1,5 +1,5 @@
 ---
-title: GetAccessControlEntries method of the MSFT\_FileShare class
+title: GetAccessControlEntries Method of the MSFT_FileShare Class
 description: Gets the access control entries for specified accounts.
 ms.assetid: 252AD23C-4951-4C1D-A9FD-42E35A2ED81F
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

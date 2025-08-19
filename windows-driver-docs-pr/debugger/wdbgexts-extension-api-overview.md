@@ -3,6 +3,7 @@ title: WdbgExts Extension API Overview
 description: WdbgExts Extension API Overview
 keywords: ["WdbgExts extensions, overview"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # WdbgExts Extension API Overview
@@ -24,8 +25,3 @@ The debugger engine will place a **try / except** block around a call to an exte
  
 
  
-
-
-
-
-

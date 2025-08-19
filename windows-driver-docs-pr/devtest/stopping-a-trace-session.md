@@ -6,6 +6,7 @@ keywords:
 - stopping trace sessions
 - TraceView WDK , stopping trace
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Stopping a Trace Session
@@ -26,12 +27,4 @@ TraceView can stop only the trace sessions that it started. To stop other trace 
 Stopping a trace session does not remove the session from the display or delete any trace logs.
 
 TraceView uses the **EnableTrace** function to stop the trace session. For more information about this function, see the Microsoft Windows SDK documentation.
-
- 
-
- 
-
-
-
-
 

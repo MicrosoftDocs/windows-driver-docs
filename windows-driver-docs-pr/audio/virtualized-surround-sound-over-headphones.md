@@ -1,7 +1,8 @@
 ---
-title: Virtualized Surround Sound over Headphones
+title: Virtualized Surround Sound Over Headphones
 description: Virtualized Surround Sound over Headphones
 ms.date: 06/15/2022
+ms.topic: concept-article
 ---
 
 # Virtualized Surround Sound over Headphones

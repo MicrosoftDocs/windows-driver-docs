@@ -1,10 +1,11 @@
 ---
-title: Special pool memory corruption detection in Driver Verifier
+title: Special Pool Memory Corruption Detection in Driver Verifier
 description: To detect memory corruption, Driver Verifier can allocate driver memory from a special pool and monitor that pool for incorrect access. 
 keywords:
 - Special Pool feature WDK Driver Verifier
 - memory corruption WDK Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Special pool memory corruption detection in Driver Verifier

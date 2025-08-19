@@ -1,7 +1,8 @@
 ---
-title: Implement memory integrity compatible code
+title: Implement Memory Integrity Compatible Code
 description: Follow these steps to use to evaluate memory integrity driver compatibility of your driver code.
 ms.date: 07/20/2022
+ms.topic: how-to
 ---
 
 # Implement memory integrity compatible code

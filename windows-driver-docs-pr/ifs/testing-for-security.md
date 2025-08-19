@@ -5,6 +5,7 @@ keywords:
 - security WDK file systems , testing
 - testing security WDK file systems
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Testing for Security

@@ -1,5 +1,5 @@
 ---
-title: Referencing locales
+title: Referencing Locales
 description: Provides information about referencing locales.
 keywords:
 - Unidrv, referencing locales
@@ -8,6 +8,7 @@ keywords:
 - locale referencing WDK Unidrv
 - Unidrv WDK print
 ms.date: 01/30/2023
+ms.topic: how-to
 ---
 
 # Referencing locales

@@ -51,8 +51,3 @@ After this command succeeds, you can discover KD connection servers (running on 
  
 
  
-
-
-
-
-

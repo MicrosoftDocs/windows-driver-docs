@@ -2,6 +2,7 @@
 title: Mobile Broadband Implementation Guidelines for USB Devices
 description: This topic provides specific implementation guidance to help mobile broadband device manufacturers produce compliant USB devices for Windows.
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # Mobile Broadband Implementation Guidelines for USB Devices
@@ -87,7 +88,7 @@ MBIM devices that support Auto Packet Service Attach manage the attachment and d
 
 When a device loses signal strength the device must indicate **MBIMActivationStateDeactivated** followed by **MBIMPacketServiceStateDetached** followed by **MBIMRegisterStateDeregistered** in that order. If the device loses packet service while it is context activated the device must indicate **MBIMActivationStateDeactivated** followed by **MBIMPacketServiceStateDetached** in that order. The following sequence diagram shows the interaction between the host and the device.
 
-![the sequence diagram shows the interaction between the host and the device.](images/mbimplementationguidelinesusb.png)
+:::image type="content" source="images/mbimplementationguidelinesusb.png" alt-text="Sequence diagram illustrating the interaction between the host and the device.":::
 
 ## DNS Server Information
 

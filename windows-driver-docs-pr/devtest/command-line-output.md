@@ -5,6 +5,7 @@ keywords:
 - output files WDK Static Driver Verifier
 - command-line output WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Command-Line Output
@@ -142,12 +143,4 @@ The following table describes the results that can appear in the results summary
 </table>
 
  
-
- 
-
- 
-
-
-
-
 

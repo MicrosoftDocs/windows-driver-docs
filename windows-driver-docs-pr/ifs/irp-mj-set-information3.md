@@ -1,5 +1,5 @@
 ---
-title: Security checks on IRP_MJ_SET_INFORMATION
+title: Security Checks on IRP_MJ_SET_INFORMATION
 description: Describes how a file system does security checks on IRP_MJ_SET_INFORMATION
 keywords:
 - IRP_MJ_SET_INFORMATION
@@ -9,6 +9,7 @@ keywords:
 - hard link operations WDK file systems
 - names WDK file systems
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Security checks on IRP_MJ_SET_INFORMATION

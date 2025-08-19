@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE
 description: This property sets or retrieves the photo mode setting for the camera.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE Streaming Media Devices"]
 topic_type:

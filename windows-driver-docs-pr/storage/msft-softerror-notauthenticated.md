@@ -1,5 +1,5 @@
 ---
-title: MSFT\_SoftError\_NotAuthenticated class
+title: MSFT_SoftError_NotAuthenticated Class
 description: Represents an access-denied error.
 ms.assetid: EC170B07-05EA-46F7-A910-559C96DFAD7B
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

@@ -7,6 +7,7 @@ keywords:
 - trace sessions WDK , groups
 - multiple trace sessions WDK TraceView
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Grouping Trace Sessions
@@ -27,12 +28,4 @@ This section includes:
 [Saving a Group Log](saving-a-group-log.md)
 
 [Limitations of Grouping](limitations-of-grouping.md)
-
- 
-
- 
-
-
-
-
 

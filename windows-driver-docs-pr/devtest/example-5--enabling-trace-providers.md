@@ -6,6 +6,7 @@ keywords:
 - providers WDK software tracing
 - tracing WDK , providers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 5: Enabling Trace Providers

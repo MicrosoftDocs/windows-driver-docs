@@ -1,7 +1,8 @@
 ---
-title: Recommended USB tests for system development
+title: Recommended USB Tests for System Development
 description: If you're building a new system, the tests in this article are recommended.
-ms.date: 03/08/2023
+ms.date: 01/17/2024
+ms.topic: best-practice
 ---
 
 # Recommended USB tests for system development

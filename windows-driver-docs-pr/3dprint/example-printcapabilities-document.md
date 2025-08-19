@@ -1,7 +1,8 @@
 ---
-title: PrintCapabilities document example
+title: PrintCapabilities Document Example
 description: The keywords used in the following example are for illustration only, although they generally conform to the Print Schema keywords for 3D manufacturing.
 ms.date: 03/17/2023
+ms.topic: example-scenario
 ---
 
 # PrintCapabilities document example

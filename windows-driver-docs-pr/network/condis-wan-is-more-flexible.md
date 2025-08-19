@@ -4,6 +4,7 @@ description: CoNDIS WAN Is More Flexible
 keywords:
 - CoNDIS WAN drivers WDK networking , benefits
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # CoNDIS WAN Is More Flexible

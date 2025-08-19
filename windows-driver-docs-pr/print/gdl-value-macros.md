@@ -9,6 +9,7 @@ keywords:
 - Macros directive WDK GDL
 - macros WDK GDL , examples
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Value Macros
@@ -82,7 +83,7 @@ The parser will expand the preceding macro references to produce the following c
 
 ```cpp
 *BadOutput: The audience was disappointed with today's performance.
-*GoodOutput: The audience was very very pleased and impressed and while remaining restrained with today's performance.
+*GoodOutput: The audience was very, very pleased and impressed and while remaining restrained with today's performance.
 ```
 
 Value macro references are not recognized in all value contexts. For example, value macros are not recognized within the arbitrary value or quoted string contexts. But value macros are recognized within hex string contexts that might reside within the quoted string context.

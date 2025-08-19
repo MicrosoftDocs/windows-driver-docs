@@ -8,6 +8,7 @@ keywords:
 - AppVerif.exe
 - user-mode application testing
 ms.date: 01/12/2022
+ms.topic: faq
 ---
 
 # Application Verifier - Frequently Asked Questions (FAQs)
@@ -45,6 +46,10 @@ Make sure you are running the latest release. Consider trying the same app on a 
 AppVerifier cares about the interfaces between the operating system and the application. As a result, unless your managed code is performing interop against native APIs that have to do with Heaps, Handles, Critical Section, etc. your test cases are not going to give you any interaction with the interfaces that are verified. 
 
 We recommend leveraging the Managed Debugging Assistants for verifying your managed code. Read more about them at [Debugging Managed Code Using the Windows Debugger](../debugger/debugging-managed-code.md).
+
+*Is ARM64EC supported?*
+
+Application Verifier does not support ARM64EC.
 
  
 ## Debugger Questions 

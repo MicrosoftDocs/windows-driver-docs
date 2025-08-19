@@ -29,3 +29,8 @@ sections:
           |Deployment Dependencies    |WU: Driver package<br>Store: App|WU: Driver package<br>Store: App                  |
                                                                                                                                                                                                               
           For more information on DCAs, see [Getting started with Microsoft Store device apps](./getting-started.md).
+
+      - question: |
+          Is there a replacement for device metadata functionality?
+        answer: |
+          Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.

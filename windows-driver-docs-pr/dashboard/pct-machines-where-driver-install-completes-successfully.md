@@ -1,15 +1,15 @@
 ---
 title: Percent of machines where the driver install process completes successfully
 description: The measure aggregates telemetry from a 30-day sliding window into a Percentage of Machines that have Successfully Installed the Driver
-ms.topic: article
 ms.date: 07/20/2021
+ms.topic: concept-article
 ---
 
 # Percent of machines where the driver install process completes successfully
 
 ## Description
 
-When a driver fails to install correctly, the targeted component can lose functionality and prevent the user from accessing the component’s features. The user must troubleshoot the issue to regain functionality. A list of PNP error codes is located on [Device Manager Problem Codes](../install/device-manager-error-messages.md) and on [Windows Support](https://support.microsoft.com/help/310123/error-codes-in-device-manager-in-windows).
+When a driver fails to install correctly, the targeted component can lose functionality and prevent the user from accessing the component's features. The user must troubleshoot the issue to regain functionality. A list of PNP error codes is located on [Device Manager Problem Codes](../install/device-manager-error-messages.md) and on [Windows Support](https://support.microsoft.com/topic/error-codes-in-device-manager-in-windows-524e9e89-4dee-8883-0afa-6bca0456324e).
 
 ## Measure attributes
 

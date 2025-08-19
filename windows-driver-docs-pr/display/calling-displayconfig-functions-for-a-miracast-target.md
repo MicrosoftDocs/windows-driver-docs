@@ -1,7 +1,8 @@
 ---
-title: Calling DisplayConfig functions for a Miracast target
+title: Calling DisplayConfig Functions for a Miracast Target
 description: Calling DisplayConfig functions for a Miracast target
 ms.date: 03/24/2023
+ms.topic: concept-article
 ---
 
 # Calling DisplayConfig functions for a Windows 8.1 Miracast target

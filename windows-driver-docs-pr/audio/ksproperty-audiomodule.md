@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_AUDIOMODULE enumeration
-description: The KSPROPERTY\_AUDIOMODULE enumeration defines constants that are used by audio drivers to communicate information about partner defined audio modules.
+title: KSPROPERTY_AUDIOMODULE Enumeration
+description: The KSPROPERTY_AUDIOMODULE enumeration defines constants that are used by audio drivers to communicate information about partner defined audio modules.
 keywords: ["KSPROPERTY_AUDIOMODULE enumeration Audio Devices"]
 topic_type:
 - apiref
@@ -24,7 +24,7 @@ For more information about audio modules, see [Implementing Audio Module Discove
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 typedef enum  { 
   KSPROPERTY_AUDIOMODULE_DESCRIPTORS             = 1,
   KSPROPERTY_AUDIOMODULE_COMMAND                 = 2,

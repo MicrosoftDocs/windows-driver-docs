@@ -10,6 +10,7 @@ keywords:
 - monitoring battery status
 - battery class drivers WDK , notifications
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supplying Battery Device Notification

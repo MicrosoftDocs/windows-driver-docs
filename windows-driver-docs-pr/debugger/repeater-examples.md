@@ -3,20 +3,18 @@ title: Repeater Examples
 description: Repeater Examples
 keywords: ["repeater, examples"]
 ms.date: 05/23/2017
+ms.topic: example-scenario
+ms.custom: sfi-ropc-nochange
 ---
 
 # Repeater Examples
-
-
-## <span id="ddk_repeater_examples_dbg"></span><span id="DDK_REPEATER_EXAMPLES_DBG"></span>
-
 
 Let us suppose you have three computers, \\\\BOXA, \\\\BOXB, and \\\\BOXC, and you wish to use them as the server, the repeater, and the client, respectively.
 
 You can start a debugging server on \\\\BOXA, using process 122 as the target, in the following manner:
 
 ```console
-E:\Debugging Tools for Windows> cdb -server tcp:port=1025,password=wrought -p 122 
+E:\Debugging Tools for Windows> cdb -server tcp:port=1025,password=Password -p 122 
 ```
 
 Then you can start a repeater on \\\\BOXB as follows:
@@ -28,7 +26,7 @@ C:\Misc> dbengprx -c tcp:server=BOXA,port=1025 -s npipe:pipe=MyPipe
 Finally, start a debugging client on \\\\BOXC in the following manner:
 
 ```console
-G:\Debugging Tools> windbg -remote npipe:server=BOXB,pipe=MyPipe,password=wrought 
+G:\Debugging Tools> windbg -remote npipe:server=BOXB,pipe=MyPipe,password=Password 
 ```
 
 Here is another example. Your symbols are at the remote location, 127.0.0.30. So you decide to use a process server on the computer where the target is, 127.0.0.10. You put a repeater at 127.0.0.20.
@@ -53,11 +51,8 @@ E:\Debugging Tools for Windows> dbgsrv -t tcp:port=1025,clicon=127.0.0.20
 
 For a more complicated example using repeaters, see [Two Firewalls](two-firewalls.md).
 
+> [!IMPORTANT]
+> There are important security considerations when using remote debugging. For more information, including information on enabling secure mode, see [Security During Remote Debugging](security-during-remote-debugging.md) and [Security Considerations for Windows Debugging Tools](security-considerations.md).
  
 
  
-
-
-
-
-

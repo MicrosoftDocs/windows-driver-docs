@@ -1,11 +1,12 @@
 ---
-title: Install a network print provider
+title: Install a Network Print Provider
 description: Provides information about how to install a network print provider.
 keywords:
 - print providers WDK , installing
 - network print providers WDK , installing
 - installing print providers WDK
 ms.date: 09/14/2022
+ms.topic: install-set-up-deploy
 ---
 
 # Install a network print provider

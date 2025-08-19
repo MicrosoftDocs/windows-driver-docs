@@ -1,16 +1,20 @@
 ---
-title: Step 1 Create a UWP device app
+title: Step 1 Create a UWP Device App
 description: This topic describes the basic process for creating a UWP device app by using Microsoft Visual Studio. Learn about the tasks that are common to all UWP device apps.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
+ms.topic: how-to
 ---
 
 # Step 1: Create a UWP device app
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 ![device app workflow, step 1.](images/1-device-app-workflow.png)
 
 This topic describes the basic process for creating a UWP device app by using Microsoft Visual Studio. Learn about the tasks that are common to all UWP device apps.
 
-A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
+A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more information about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
 This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
@@ -26,9 +30,9 @@ Before you can begin, you need to have installed Visual Studio and created a UWP
 
 Some UWP device app and APIs require that your device supports a Microsoft-supplied driver or that your driver supports a specific driver model. This table lists the driver requirements for some device apps and APIs.
 
-| Device app or API | Driver info |
+| Device app or API | Driver information |
 |--|--|
-| UWP device apps for camera | Your camera's driver must use the AvStream driver model. For more info on the AvStream driver model, see the [AVStream Overview](../stream/avstream-overview.md) in the Windows Driver Kit. A an additional component, known as the Driver MFT (a media foundation transform), can be supplied with the driver installation package to provide custom effects for the camera. For more info, see [Windows store device apps for cameras](uwp-device-apps-for-webcams.md). |
+| UWP device apps for camera | Your camera's driver must use the AvStream driver model. For more information on the AvStream driver model, see the [AVStream Overview](../stream/avstream-overview.md) in the Windows Driver Kit. An additional component, known as the Driver MFT (a media foundation transform), can be supplied with the driver installation package to provide custom effects for the camera. For more info, see [Windows store device apps for cameras](uwp-device-apps-for-webcams.md). |
 | UWP device apps for printers | Printers must use the v4 Printer driver. See [Developing the v4 print driver](../print/v4-printer-driver.md) for more info. |
 | USB APIs | To use the Windows Runtime[Windows.Devices.Usb](/uwp/api/Windows.Devices.Usb)APIs, your device must be compatible with the Winusb.sys driver. |
 | Human Interface Device (HID) APIs | The HID APIs are designed for use over USB, Bluetooth, Bluetooth Smart, and the I2C transports. To use the Windows Runtime[Windows.Devices.HumanInterfaceDevice](/uwp/api/Windows.Devices.HumanInterfaceDevice) APIs, your device must be compatible with the HIDClass.sys driver and the driver required by the transport. For more info, see [HID Architecture](../hid/hid-architecture.md). |
@@ -42,7 +46,7 @@ Some UWP device app and APIs require that your device supports a Microsoft-suppl
 
 A developer account on the Microsoft Store is required. You'll need the publisher name when you author the app manifest and the device metadata in later steps. You can also reserve a name for your app once you've created a store profile.
 
-To create a Microsoft Store account, go to the [UWP apps sign up page](https://developer.microsoft.com/microsoft-store/register/) and click **Sign up**.
+To create a Microsoft Store account, go to the [Windows Dev Center](https://developer.microsoft.com/windows).
 
 When you enter the **publisher display name**, enter the name under which your apps should be listed in the Microsoft Store. You won't be able to change this name until your account verification is complete. Choose the name carefully, as customers will see this name when browsing and will come to know your apps by this name.
 
@@ -110,13 +114,10 @@ You can sync or update your device from a UWP device app by using device backgro
 
 ### Learn more
 
-[**UWP device apps for printers**](uwp-device-apps-for-printers.md): Display printer status and extend the print settings experience. Starting in Windows 8.1, your app can also manage print jobs and perform printer maintenance.
-
-[**UWP device apps for cameras**](uwp-device-apps-for-webcams.md): Extend the camera options experience. Your app can also provide custom effects with a Driver MFT.
-
-[**Integrating devices**](/previous-versions/windows/apps/dn263141(v=win.10)): Learn about Windows Runtime APIs for USB, HID, Bluetooth, Scanning, and more.
-
-[**UWP device apps for internal devices**](uwp-device-apps-for-specialized-devices.md): Lean how OEMs can write device apps for devices internal to the PC.
+- [UWP device apps for printers](uwp-device-apps-for-printers.md): Display printer status and extend the print settings experience. Starting in Windows 8.1, your app can also manage print jobs and perform printer maintenance.
+- [UWP device apps for cameras](uwp-device-apps-for-webcams.md): Extend the camera options experience. Your app can also provide custom effects with a Driver MFT.
+- [Integrating devices](/previous-versions/windows/apps/dn263141(v=win.10)): Learn about Windows Runtime APIs for USB, HID, Bluetooth, Scanning, and more.
+- [UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md): Lean how OEMs can write device apps for devices internal to the PC.
 
 ## Use the Windows App Certification Kit
 
@@ -124,4 +125,4 @@ To give your app the best chance of getting certified, validate and test it on y
 
 ## Next step
 
-[Step 2: Create device metadata](step-2--create-device-metadata.md)
+- [Step 2: Create device metadata](step-2--create-device-metadata.md)

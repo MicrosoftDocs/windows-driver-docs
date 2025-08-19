@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM is used to control digital zoom.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM Streaming Media Devices"]
 topic_type:

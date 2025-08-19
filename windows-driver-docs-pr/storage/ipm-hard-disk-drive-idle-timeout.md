@@ -1,16 +1,21 @@
 ---
-title: Idle Power Management Hard Disk Drive Idle Timeout
-description: Idle Power Management Hard Disk Drive Idle Timeout
-ms.date: 04/20/2017
+title: Idle Power Management Policy
+description: Idle Power Management Timeout
+ms.date: 06/27/2024
+ms.topic: concept-article
 ---
 
-# Idle Power Management Hard Disk Drive Idle Timeout
+# Idle Power Management
 
-Although the hard disk drive (HDD) is not the primary power consumer in the typical mobile PC, power savings can be realized by spinning down the HDD media. The HDD idle timeout allows Windows to automatically spin down the HDD media after a period of disk read and write inactivity.
+This article describes the idle power management (IPM) policy for all storage devices. This policy isn't used on a Modern Standby Windows client.
 
-The power savings that are realized when the HDD media is spun down varies by the make and model of the HDD. We encourage system manufacturers to work with HDD vendors to determine the optimal HDD idle timeout value for specific devices.
+Although the storage media isn't the primary power consumer on a typical mobile PC, power savings can be realized by idling the storage media. The idle timeout allows Windows to automatically spin down the storage media after a period of disk read and write inactivity for all storage devices.
 
-By default, Windows Vista specifies moderately long HDD idle timeout values. System manufacturers should consider specifying shorter values when trying to achieve aggressive battery conservation on mobile PCs. The following table summarizes details of the HDD idle settings.
+The power savings that are realized when the storage media is spun down varies by the device's make and model. System manufacturers are encouraged to work with storage vendors to determine the optimal idle timeout value for specific devices.
+
+By default, Windows specifies moderately long idle timeout values. System manufacturers should consider specifying shorter values when trying to achieve aggressive battery conservation on mobile PCs.
+
+The following table summarizes details of idle settings for a hard disk drive (HDD) as an example.
 
 | Detail | Description |
 | ------ | ----------- |
@@ -22,4 +27,4 @@ By default, Windows Vista specifies moderately long HDD idle timeout values. Sys
 | Defined in        | Ntpoapi.h |
 | Balanced defaults | 60 minutes (AC) 30 minutes (DC) |
 
-For more information see [Mobile Battery Life Solutions - A Guide for Mobile Platform Professionals.](https://go.microsoft.com/fwlink/p/?linkid=144534)
+For more information, see [Mobile Battery Life Solutions - A Guide for Mobile Platform Professionals.](https://go.microsoft.com/fwlink/p/?linkid=144534)

@@ -4,6 +4,7 @@ description: Extending the UI for Standard 802.1X Security Methods
 keywords:
 - standard 802.1X security WDK IHV UI Extensions DLL
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Extending the UI for Standard 802.1X Security Methods
@@ -13,7 +14,7 @@ ms.date: 04/20/2017
 
  
 
-If the Native 802.11 IHV Extensions DLL supports proprietary encryption extensions that can be used with the operating system's 802.1X security methods, the Native 802.11 IHV UI Extensions DLL can extend the Network Configuration user interface's (UI')s **Security** tab to allow user configuration of the these extensions. For more information about extending the Native 802.11 802.1X module, see [Interface to the Native 802.11 802.1X Module](interface-to-the-native-802-11-802-1x-module.md).
+If the Native 802.11 IHV Extensions DLL supports proprietary encryption extensions that can be used with the operating system's 802.1X security methods, the Native 802.11 IHV UI Extensions DLL can extend the Network Configuration user interface's (UI')s **Security** tab to allow user configuration of these extensions. For more information about extending the Native 802.11 802.1X module, see [Interface to the Native 802.11 802.1X Module](interface-to-the-native-802-11-802-1x-module.md).
 
 For more information about the Network Configuration UI and other Native 802.11 components, see [Native 802.11 Software Architecture](/previous-versions/windows/hardware/wireless/native-802-11-software-architecture).
 

@@ -1,10 +1,11 @@
 ---
-title: Enumerate installed devices
+title: Enumerate Installed Devices
 description: Provides information about how to enumerate installed devices.
 keywords:
 - enumerate installed devices WDK
 - installed devices WDK, enumerate
 ms.date: 08/29/2022
+ms.topic: how-to
 ---
 
 # Enumerate installed devices

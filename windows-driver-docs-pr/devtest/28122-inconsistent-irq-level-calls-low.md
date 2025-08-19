@@ -1,5 +1,5 @@
 ---
-title: C28122 warning
+title: C28122 Warning
 description: Warning C28122 The function is not permitted to be called at a low IRQ level. Prior function calls are inconsistent with this constraint.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -7,6 +7,7 @@ keywords:
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28122"
+ms.topic: reference
 ---
 
 # C28122
@@ -36,12 +37,4 @@ When the Code Analysis tool reports this warning, consult the WDK documentation 
 The Code Analysis tool infers the current IRQL and reports this warning only when it has inferred enough about the IRQL to detect the error. This inference might be based on the *function signature* (the arguments and result type) of the function being analyzed, or from prior calls in the execution path.
 
 For a description of a similar situation, see[Warning 28123](28123-inconsistent-irq-level-calls-high.md).
-
- 
-
- 
-
-
-
-
 

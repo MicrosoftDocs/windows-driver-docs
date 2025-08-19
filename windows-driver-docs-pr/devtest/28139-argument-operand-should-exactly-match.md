@@ -1,5 +1,5 @@
 ---
-title: C28139 warning
+title: C28139 Warning
 description: Warning C28139 The argument should exactly match the type.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -7,6 +7,7 @@ keywords:
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28139"
+ms.topic: reference
 ---
 
 # C28139
@@ -46,12 +47,4 @@ The following code example avoids this warning.
 ```
 ....KeWaitForSingleObject(&MyMutex, UserRequest, UserMode, false, NULL);
 ```
-
- 
-
- 
-
-
-
-
 

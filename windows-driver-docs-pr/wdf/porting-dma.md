@@ -2,6 +2,7 @@
 title: Porting DMA
 description: Porting DMA
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Porting DMA

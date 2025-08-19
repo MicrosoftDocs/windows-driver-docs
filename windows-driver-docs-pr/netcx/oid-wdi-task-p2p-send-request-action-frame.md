@@ -45,7 +45,7 @@ The WDI interface itself is unchanged and continues to use units of milliseconds
 |[**WDI_TLV_P2P_SEND_ACTION_ REQUEST_FRAME_PARAMETERS**](wdi-tlv-p2p-send-action-request-frame-parameters.md)|||Parameters such as action frame type, device address of target peer adapter, and dialog token.|
 |[**WDI_TLV_P2P_GO_ NEGOTIATION_REQUEST_INFO**](wdi-tlv-p2p-go-negotiation-request-info.md)||X|GO Negotiation Request Parameters. THe port shall only examine this structure if wfdRequestFrameType is a GO Negotiation request.|
 |[**WDI_TLV_P2P_INVITATION_REQUEST_INFO**](wdi-tlv-p2p-invitation-request-info.md)||X|Invitation Request Parameters. The port shall only examine this structure if wfdRequestFrameType is an Invitation request.|
-|[**WDI_TLV_P2P_PROVISION_ DISCOVERY_REQUEST_INFO**](wdi-tlv-p2p-provision-discovery-request-info.md)||X|Provision Discovery Request Parameters. The port shall only examine this structure if wfdRequestFrameType is an Provision Discovery request.|
+|[**WDI_TLV_P2P_PROVISION_ DISCOVERY_REQUEST_INFO**](wdi-tlv-p2p-provision-discovery-request-info.md)||X|Provision Discovery Request Parameters. The port shall only examine this structure if wfdRequestFrameType is a Provision Discovery request.|
 |[**WDI_TLV_BSS_ENTRY**](wdi-tlv-bss-entry.md)|||The device discovery entry as returned by the Wi-Fi Direct Discovery task from the port. This is provided so the port does not need to remember its discovery database in order to send Wi-Fi Direct Action Frame Requests to remote Wi-Fi Direct devices without requiring a discovery.|
 |[**WDI_TLV_VENDOR_SPECIFIC_IE**](wdi-tlv-vendor-specific-ie.md)||X|One or more IEs that must be included in the frame sent by the port.|
 

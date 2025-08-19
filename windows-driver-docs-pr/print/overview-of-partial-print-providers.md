@@ -1,11 +1,12 @@
 ---
-title: Overview of partial print providers
+title: Overview of Partial Print Providers
 description: Provides an overview of partial print providers.
 keywords:
 - print providers WDK , partial print providers
 - network print providers WDK, partial print providers
 - partial print providers WDK
 ms.date: 09/14/2022
+ms.topic: concept-article
 ---
 
 # Overview of partial print providers

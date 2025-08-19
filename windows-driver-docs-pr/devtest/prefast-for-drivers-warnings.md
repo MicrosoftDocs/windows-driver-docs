@@ -5,13 +5,18 @@ keywords:
 - PREfast for Drivers WDK , warnings
 - warnings WDK PREfast for Drivers
 - errors WDK PREfast for Drivers
-ms.date: 04/20/2017
+ms.date: 07/02/2024
+ms.topic: error-reference
 ---
 
 # Code Analysis for Drivers Warnings
 
-
 This section lists and describes the warnings that the Code Analysis for Drivers reports when it detects a possible error in driver code. Note that some warnings are intended for kernel-mode code and can be ignored when analyzing user-mode drivers.
+
+> [!IMPORTANT]
+> Code Analysis for drivers is available in the Windows 24H2 WDK and EWDK, but be advised that it is set to be retired at a future date. <br>
+> Going forward, CodeQL will be the primary static analysis tool for drivers. CodeQL provides a powerful query language that treats code as a database to be queried, making it simple to write queries for specific behaviors, patterns, and more.
+> For more information about using CodeQL, see [CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md).
 
 Code Analysis for Drivers reports the following types of warnings:
 

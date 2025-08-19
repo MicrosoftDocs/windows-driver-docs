@@ -1,5 +1,5 @@
 ---
-title: Device Manager Details tab
+title: Device Manager Details Tab
 description: Device Manager Details tab displays information useful to driver developers and testers, and aids Microsoft Customer Support Services (CSS) in diagnosing customer problems.
 keywords:
 - Device Manager WDK, Details tab
@@ -7,6 +7,7 @@ keywords:
 - revision numbers WDK Device Manager
 - Details tab WDK Device Manager
 ms.date: 12/05/2022
+ms.topic: concept-article
 ---
 
 # Device Manager Details tab

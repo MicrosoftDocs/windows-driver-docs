@@ -7,6 +7,7 @@ keywords:
 - NDIS-WDM miniport drivers WDK networking
 - WDM lower interface WDK NDIS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Overview of Miniport Drivers with a WDM Lower Interface

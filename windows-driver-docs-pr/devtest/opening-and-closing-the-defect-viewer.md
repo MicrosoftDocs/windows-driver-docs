@@ -5,6 +5,7 @@ keywords:
 - Static Driver Verifier Report WDK , Defect Viewer
 - Defect Viewer WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Opening and Closing the Trace Viewer
@@ -25,12 +26,4 @@ To close the Defect Viewer, do either of the following:
 -   From the **File** menu, select **Exit**.
 
 -   Click the **Close** (**X**) button in the far right corner of the Static Driver Verifier Report.
-
- 
-
- 
-
-
-
-
 

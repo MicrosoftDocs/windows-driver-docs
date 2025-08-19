@@ -1,5 +1,5 @@
 ---
-title: Repair method of the MSFT\_VirtualDisk class
+title: Repair Method of the MSFT_VirtualDisk Class
 description: Initiates a repair of the virtual disk, restoring data and redundancy to different (or new) physical disks within the storage pool.
 ms.assetid: 9CA3B021-F5FB-44C7-B285-022FBAF18192
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

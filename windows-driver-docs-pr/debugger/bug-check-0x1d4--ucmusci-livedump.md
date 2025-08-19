@@ -41,5 +41,5 @@ Parameter | Description
 
 [Universal Serial Bus (USB)](../usbcon/index.md)
 
-[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+[Kernel Live Dump Code Reference](kernel-live-dump-code-reference.md)
 

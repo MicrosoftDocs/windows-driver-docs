@@ -1,14 +1,12 @@
 ---
-title: ACX logging and debugging
+title: ACX Logging and Debugging
 description: This topic provides information on logging, tracing and debugging of the ACX Audio Class Extensions.
-ms.date: 04/14/2023
+ms.date: 05/03/2024
 ms.localizationpriority: medium
+ms.topic: troubleshooting
 ---
 
 # ACX logging and debugging
-
->[!IMPORTANT]
-> Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic provides information on logging, tracing and debugging of the ACX Audio Class Extensions.
 
@@ -64,7 +62,7 @@ To improve the reliability of your ACX driver consider the following behaviors f
 
 ### Using the WMI Tracing debugger extensions
 
-To view trace events in the debugger, use the WMI extension, Wmitrace.dll. It contains a library of functions designed to control and view WMI event tracing. For more information, see [WMI Tracing Extensions (Wmitrace.dll)](../debugger/wmi-tracing-extensions--wmitrace-dll-.md).
+To view trace events in the debugger, use the WMI extension, Wmitrace.dll. It contains a library of functions designed to control and view WMI event tracing. For more information, see [WMI Tracing Extensions (Wmitrace.dll)](../debuggercmds/wmi-tracing-extensions--wmitrace-dll-.md).
 
 ## ACX driver debugging
 
@@ -90,8 +88,7 @@ ACX drivers are WDF drivers, so the debugging techniques described for WDF drive
 
 To aid debugging, ACX has a companion kernel debugger extension library (AcxKd.dll). This library aids developers in tracking down issue on single and multi-stack audio paths. The kd extension allows developer to look inside ACX structures.
 
->[!NOTE]
-> This debugger extension is under development and information will be provided here when it is available.
+For more information about debugging ACX drivers and working with the AcxKd.dll debugger extension, see [!acxkd](../debuggercmds/-acxkd.md).
 
 ## See also
 

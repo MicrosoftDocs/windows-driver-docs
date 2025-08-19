@@ -1,5 +1,5 @@
 ---
-title: Optimize method of the MSFT\_StoragePool class
+title: Optimize Method of the MSFT_StoragePool Class
 description: Optimizes the storage pool.
 ms.assetid: 61B3D59A-FDA6-4447-AED5-180484839DBE
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

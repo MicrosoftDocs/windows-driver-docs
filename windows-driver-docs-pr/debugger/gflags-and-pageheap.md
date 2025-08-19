@@ -3,6 +3,7 @@ title: GFlags and PageHeap
 description: GFlags and PageHeap
 keywords: ["GFlags, GFlags and PageHeap", "PageHeap (pageheap.exe)"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # GFlags and PageHeap
@@ -34,8 +35,3 @@ To determine whether full or standard page heap verification is enabled for a pr
  
 
  
-
-
-
-
-

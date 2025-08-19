@@ -5,6 +5,7 @@ keywords:
 - Ethernet frame splitting WDK networking , UDP payload
 - UDP payload WDK header-data split
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Splitting Frames at the UDP Payload

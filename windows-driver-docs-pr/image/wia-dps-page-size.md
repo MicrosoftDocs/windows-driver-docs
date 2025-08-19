@@ -130,8 +130,6 @@ WIA_IPS_YRES = 100
 
 [**WIA_DPS_PAGE_HEIGHT**](wia-dps-page-height.md)
 
-[**WIA_DPS_PAGE_SIZE**](wia-dps-page-size.md)
-
 [**WIA_DPS_PAGE_WIDTH**](wia-dps-page-width.md)
 
 [**WIA_IPS_ORIENTATION**](wia-ips-orientation.md)

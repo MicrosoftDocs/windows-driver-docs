@@ -1,8 +1,9 @@
 ---
-title: Enable close exception
+title: Enable Close Exception
 description: Enable close exception
 keywords: ["Enable close exception (global flag)"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Enable close exception
@@ -47,8 +48,3 @@ The **Enable close exception** flag raises a user-mode exception whenever an inv
  
 
  
-
-
-
-
-

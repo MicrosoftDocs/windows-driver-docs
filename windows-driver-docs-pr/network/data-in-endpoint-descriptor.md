@@ -2,6 +2,7 @@
 title: Data In Endpoint Descriptor
 description: Data In Endpoint Descriptor
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Data In Endpoint Descriptor

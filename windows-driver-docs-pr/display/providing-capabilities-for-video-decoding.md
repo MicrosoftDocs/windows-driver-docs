@@ -12,12 +12,15 @@ keywords:
 - D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFO
 - D3DDDICAPS_GETDECODECONFIGURATIONCOUNT
 - D3DDDICAPS_GETDECODECONFIGURATIONS
-ms.date: 10/22/2021
+ms.date: 07/30/2025
+ms.topic: concept-article
 ---
 
 # Providing capabilities for video decoding
 
 ## How to query video decoding capabilities
+
+This article describes how to query video decoding capabilities in a user-mode display driver (UMD) that supports DirectX Video Acceleration (DXVA) 2.0.
 
 To query the video decoding capabilities of a user-mode display driver (UMD), the D3D runtime calls the UMD's [**GetCaps**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps) function with one of the following [request types](/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_d3dddicaps_type) specified in the **Type** member of the [**D3DDDIARG_GETCAPS**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_getcaps) structure passed to **GetCaps**:
 

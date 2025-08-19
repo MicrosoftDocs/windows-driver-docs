@@ -3,6 +3,7 @@ title: KSEVENTSETID\_LoopedStreaming
 description: KSEVENTSETID\_LoopedStreaming
 keywords: ["KSEVENTSETID_LoopedStreaming"]
 ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 # KSEVENTSETID\_LoopedStreaming

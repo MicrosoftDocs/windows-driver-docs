@@ -7,6 +7,7 @@ keywords:
 - SDV WDK , requirements
 - function prototypes WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Supported Drivers
@@ -14,6 +15,12 @@ ms.date: 04/20/2017
 For SDV to verify a driver, it must be able to interpret the driver code, specifically, the driver's entry points and the code in functions and routines that support required driver functionality.
 
 The following sections describe the basic requirements for drivers and the specific syntax that SDV expects of the drivers that it verifies. SDV does not verify that drivers comply with these requirements, but if the driver does not comply, SDV may fail to run and, in rare situations, it reports false positive or false negative results because of misinterpretation.
+
+> [!IMPORTANT]
+> SDV is no longer supported and SDV is not available in Windows 24H2 WDK or EWDK releases. It is not available in WDKs newer than build 26017, and is not included in the Windows 24H2 RTM WDK.
+> SDV can still be used by downloading the Windows 11, version 22H2 EWDK (released October 24, 2023) with Visual Studio build tools 17.1.5 from [Download the Windows Driver Kit (WDK)](../download-the-wdk.md). Only the use of the Enterprise WDK to run SDV is recommended. Using older versions of the standard WDK in conjunction with recent releases of Visual Studio is not recommended, as this will likely result in analysis failures. <br>
+> Going forward, CodeQL will be the primary static analysis tool for drivers. CodeQL provides a powerful query language that treats code as a database to be queried, making it simple to write queries for specific behaviors, patterns, and more.
+> For more information about using CodeQL, see [CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md).
 
 ## Basic Driver Characteristics
 
@@ -57,7 +64,7 @@ For SDV to verify an NDIS driver, the driver must:
 
 - Include Ndis.h and Ntddk.h.
 
-- Follow the guidelines in the [Network Design Guide](../network/index.md) to create NDIS drivers.
+- Follow the guidelines in the [Network Design Guide](/windows-hardware/drivers/network/)) to create NDIS drivers.
 
 - Annotate each callback function by using an SDV-NDIS callback function role type, as described in [Using Function Role Type Declarations](using-function-role-type-declarations.md). For a list of the supported role types, see [Static Driver Verifier NDIS Function Declarations](static-driver-verifier-ndis-function-declarations.md).
 
@@ -79,6 +86,6 @@ Specifically, SDV does not correctly interpret code if:
 
 - The code includes function names that begin with sdv\_, such as sdv\_Func, or include the string \_sdv\_, such as Func\_sdv\_ or Func\_sdv\_foo.
 
-- The library uses a .def file to rename an exported function and the external name is the same as the name of another static function in the library.
+- The library uses a `.def` file to rename an exported function and the external name is the same as the name of another static function in the library.
 
 If the driver code or library code includes these elements, SDV attempts to verify the driver or process the library, but the result is **Not Supported Feature (NSF)**. For more information about SDV results, see [Interpreting Static Driver Verifier Results](interpreting-static-driver-verifier-results.md).

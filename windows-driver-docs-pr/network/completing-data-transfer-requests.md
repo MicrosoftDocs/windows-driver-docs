@@ -2,6 +2,7 @@
 title: Completing Data Transfer Requests
 description: Completing Data Transfer Requests
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Completing Data Transfer Requests

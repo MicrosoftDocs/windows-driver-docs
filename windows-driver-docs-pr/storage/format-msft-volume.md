@@ -1,5 +1,5 @@
 ---
-title: Format method of the MSFT\_Volume class
+title: Format Method of the MSFT_Volume Class
 description: Formats the volume.
 ms.assetid: 007dd46a-4812-4273-beaa-74fbe9520c7d
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 
@@ -169,7 +168,7 @@ This parameter allows the storage provider to return extended (implementation-sp
 **Access Denied** (40001)
  
 
-**An unexpected I/O error has occured** (40004)
+**An unexpected I/O error has occurred** (40004)
  
 
 **The specified object is managed by the Microsoft Failover Clustering component. The disk must be in cluster maintenance mode and the cluster resource status must be online to perform this operation.** (40018)

@@ -1,7 +1,8 @@
 ---
-title: KSPROPSETID\_VramCapture
+title: KSPROPSETID_VramCapture
 description: KSPROPSETID\_VramCapture
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_VramCapture

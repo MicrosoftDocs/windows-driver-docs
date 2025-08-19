@@ -3,6 +3,7 @@ title: Initializing Spin Locks
 description: Initializing Spin Locks
 keywords: ["initializing spin locks", "spin locks WDK kernel", "KeInitializeSpinLock", "executive spin locks WDK kernel", "interrupt spin locks WDK kernel", "queued spin locks WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Initializing Spin Locks

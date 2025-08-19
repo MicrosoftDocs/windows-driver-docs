@@ -21,6 +21,7 @@ keywords:
 - WdfIoQueueDispatchSequential
 - WdfIoQueueDispatchManual
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example Uses of I/O Queues

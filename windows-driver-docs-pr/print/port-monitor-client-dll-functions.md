@@ -1,10 +1,11 @@
 ---
-title: Port monitor client DLL functions
+title: Port Monitor Client DLL Functions
 description: Provides information about port monitor client DLL functions.
 keywords:
 - port monitors WDK print, functions
 - client DLL port monitor functions WDK
 ms.date: 09/14/2022
+ms.topic: reference
 ---
 
 # Port monitor client DLL functions

@@ -1,5 +1,5 @@
 ---
-title: Download queue-specific files
+title: Download Queue-Specific Files
 description: Provides information about how to download queue-specific files.
 keywords:
 - download queue-specific printer files
@@ -8,6 +8,7 @@ keywords:
 - print queues WDK, Point and Print
 - queues WDK printer, Point and Print
 ms.date: 09/12/2022
+ms.topic: how-to
 ---
 
 # Download queue-specific files

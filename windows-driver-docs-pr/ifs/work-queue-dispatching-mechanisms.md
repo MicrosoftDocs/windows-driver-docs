@@ -15,6 +15,7 @@ keywords:
 - queues WDK RDBSS
 - states WDK RDBSS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Work Queue Dispatching Mechanisms
@@ -51,7 +52,7 @@ The distinction between Critical and Delayed is one of priority. The HyperCritic
 
 The work queue implementation in RDBSS is built around a KQUEUE implementation. The additional support involves the regulation of a number of threads that are actively waiting for the work items. Each work queue data structure is allocated from nonpaged pool memory and has its own synchronization mechanism (a spinlock).
 
-In addition to bookkeeping information (queue state and type, for example), RDBSS also maintains statistics that are gathered over the lifetime of the work queue. This can provide valuable information in tuning a work queue. The number of items that have been processed , the number of items that have to be processed, and the cumulative queue length is structureed. The cumulative queue length is an important metric and represents the sum of the number of items waiting to be processed each time an additional work item was queued. The cumulative queue length divided by the sum of the total number of items processed and the number of items to be processed gives an indication of the average queue length. A value much greater than one signifies that the minimum number of worker threads associated with the work queue can be increased. A value much less than one signifies that the maximum number of work threads associated with the queue can be decreased.
+In addition to bookkeeping information (queue state and type, for example), RDBSS also maintains statistics that are gathered over the lifetime of the work queue. This can provide valuable information in tuning a work queue. The number of items that have been processed , the number of items that have to be processed, and the cumulative queue length is structured. The cumulative queue length is an important metric and represents the sum of the number of items waiting to be processed each time an additional work item was queued. The cumulative queue length divided by the sum of the total number of items processed and the number of items to be processed gives an indication of the average queue length. A value much greater than one signifies that the minimum number of worker threads associated with the work queue can be increased. A value much less than one signifies that the maximum number of work threads associated with the queue can be decreased.
 
 The work queue typically start in an active state and continue until either a non-recoverable situation is encountered (lack of system resources, for example) or when it transitions to the inactive state. When a rundown is initiated, it transitions to the rundown-in-progress state.
 

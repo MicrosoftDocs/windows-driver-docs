@@ -2,6 +2,7 @@
 title: Using UNC Shares
 description: Using UNC Shares
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Using UNC Shares
@@ -11,7 +12,7 @@ The Cv2http.cmd, Cv2http.pl, and Walk (Walk.cmd) scripts are used to provide sou
 
 `cv2http.cmd PDB Alias SourceRoot`
 
-where *PDB* specifies the name of the .pdbfile to modify, *Alias* specifies the logical name to apply to your Web site, and *SourceRoot* specifies the root of the UNC share to which you extracted the source files. Note that the *Alias* parameter is stored in the PDB as a varaible name that can be overridden on the debugger client in Scrsrv.ini, should you ever move the location of the Web site.
+where *PDB* specifies the name of the .pdbfile to modify, *Alias* specifies the logical name to apply to your Web site, and *SourceRoot* specifies the root of the UNC share to which you extracted the source files. Note that the *Alias* parameter is stored in the PDB as a variable name that can be overridden on the debugger client in Scrsrv.ini, should you ever move the location of the Web site.
 
 This script requires that all the standard SrcSrv tools be available in the path because it calls both SrcTool and PDBStr. Remember that Cv2http.pl is a Perl script and can be modified to meet your needs.
 
@@ -28,8 +29,3 @@ After this command is executed on a tree of .pdb files, they are ready for insta
  
 
  
-
-
-
-
-

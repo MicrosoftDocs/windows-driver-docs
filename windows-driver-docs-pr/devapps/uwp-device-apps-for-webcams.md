@@ -1,10 +1,14 @@
 ---
-title: UWP device apps for cameras
+title: UWP Device Apps for Cameras
 description: This section introduces UWP device apps for cameras.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
+ms.topic: overview
 ---
 
 # UWP device apps for cameras
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 This section introduces UWP device apps for cameras. Device apps can highlight the special features of cameras through customized camera settings and special camera effects.
 

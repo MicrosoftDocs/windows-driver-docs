@@ -1,5 +1,5 @@
 ---
-title: Bug check 0xEF CRITICAL_PROCESS_DIED
+title: Bug Check 0xEF CRITICAL_PROCESS_DIED
 description: Learn how the CRITICAL_PROCESS_DIED bug check has a value of 0x000000EF and indicates that a critical system process died.
 keywords: ["Bug Check 0xEF CRITICAL_PROCESS_DIED", "CRITICAL_PROCESS_DIED"]
 ms.date: 12/16/2022
@@ -36,7 +36,7 @@ A developer can also create a service and set its recovery option to **Restart t
 
 Determining the cause of this issue typically requires the use of the debugger to gather additional information. You should examine multiple dump files to see if this stop code has similar characteristics, such as the code that's running when the stop code appears.
 
-For more information, see [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md), [Using the !analyze extension](using-the--analyze-extension.md) and [!analyze](-analyze.md).
+For more information, see [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md), [Using the !analyze extension](using-the--analyze-extension.md) and [!analyze](../debuggercmds/-analyze.md).
 
 In many cases, a user dump is also created before the system bug checks. In general, when a user dump is available, that dump should be examined first to find the root cause of the issue. There are limitations to debugging user mode code from the kernel dump, including paged out/missing data. For more information, see [User-Mode dump files](user-mode-dump-files.md).
 
@@ -46,9 +46,9 @@ Once information about the code in question is available, set a breakpoint in th
 
 Use the second parameter of the bug check to determine if a dying process or thread caused the bug check.
 
-If it's a process, use the [!process](-process.md) command to display information on the process before and after the point of failure to look for abnormal behavior. The [Process explorer](/sysinternals/downloads/process-explorer) utility can gather general information about parent child relationships and which processes are running.
+If it's a process, use the [!process](../debuggercmds/-process.md) command to display information on the process before and after the point of failure to look for abnormal behavior. The [Process explorer](/sysinternals/downloads/process-explorer) utility can gather general information about parent child relationships and which processes are running.
 
-If it's a thread, consider using the [!thread](-thread.md) command to display information about the thread. For information about threads in kernel mode, see [Changing Contexts](changing-contexts.md).
+If it's a thread, consider using the [!thread](../debuggercmds/-thread.md) command to display information about the thread. For information about threads in kernel mode, see [Changing Contexts](changing-contexts.md).
 
 For general information on threads, processes, and other specifics on Windows protected critical code, such as wininit and csrss, see *Windows Internals* by Pavel Yosifovich, Mark E. Russinovich, David A. Solomon, and Alex Ionescu.
 
@@ -60,7 +60,7 @@ If you're not able to work with the debugger, these general troubleshooting tips
 
 - If new device drivers or system services have been added recently, try removing or updating them. Try to determine what changed in the system that caused the new bug check code to appear.
 
-- Check the System Log in Event Viewer for other error messages that might help pinpoint the device or driver that's causing the error. For more information, see [Open Event Viewer](https://support.microsoft.com/hub/4338813/windows-help#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+- Check the System Log in Event Viewer for other error messages that might help pinpoint the device or driver that's causing the error. Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 - Check with the manufacturer to see if an updated system BIOS or firmware is available.
 

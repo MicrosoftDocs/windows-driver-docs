@@ -1,8 +1,8 @@
 ---
 title: Percent of machines with WHEA error after firmware installation
 description: The measure aggregates telemetry from a 28-day sliding window into a ratio of machines that have reported a fatal WHEA event over machines successfully installing firmware
-ms.topic: article
 ms.date: 10/31/2019
+ms.topic: error-reference
 ---
  
 # Percent of machines with Windows Hardware Error Architecture (WHEA) error after firmware installation

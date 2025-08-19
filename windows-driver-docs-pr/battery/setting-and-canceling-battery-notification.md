@@ -9,6 +9,7 @@ keywords:
 - canceling battery notifications
 - stopping battery notifications
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting and Canceling Battery Notification

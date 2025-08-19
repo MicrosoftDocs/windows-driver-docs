@@ -6,6 +6,7 @@ keywords:
 - set operations WDK NDIS intermediate
 - canceling OID requests
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Responding to Sets and Queries in an Intermediate Driver

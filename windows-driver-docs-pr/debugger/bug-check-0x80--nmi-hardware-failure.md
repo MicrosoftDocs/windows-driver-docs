@@ -18,7 +18,7 @@ api_type:
 The NMI\_HARDWARE\_FAILURE bug check has a value of 0x00000080. This bug check indicates that a hardware malfunction has occurred.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## NMI\_HARDWARE\_FAILURE Parameters
@@ -32,7 +32,7 @@ A variety of hardware malfunctions can cause the NMI\_HARDWARE\_FAILURE bug chec
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. Remove any hardware or drivers that have been recently installed. Make sure that all memory modules are of the same type.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. Remove any hardware or drivers that have been recently installed. Make sure that all memory modules are of the same type.
 
  
 

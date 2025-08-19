@@ -3,6 +3,7 @@ title: File System References and Symbol Files
 description: File System References and Symbol Files
 keywords: ["SymStore, short file names", "short file names and SymStore"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # File System References and Symbol Files
@@ -20,8 +21,3 @@ For further information, see [Matching Symbol Names](matching-symbol-names.md).
  
 
  
-
-
-
-
-

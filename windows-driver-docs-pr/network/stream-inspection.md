@@ -4,6 +4,7 @@ description: Stream Inspection
 keywords:
 - stream inspection WDK Windows Filtering Platform
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Stream Inspection

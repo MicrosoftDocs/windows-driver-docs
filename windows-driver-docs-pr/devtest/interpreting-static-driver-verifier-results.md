@@ -10,18 +10,18 @@ keywords:
 - SDV WDK , verification results
 - verification results WDK Static Driver Verifier
 ms.date: 04/02/2018
+ms.topic: concept-article
 ---
 
 # Interpreting Static Driver Verifier Results
 
-
 When you launch Static Driver Verifier from Visual Studio and run an analysis of your driver, the results appear in the **Results** summary on the Main tab.
 
-![screen shot showing the results summary after running static driver verifier.](images/sdv-results-vs.png)
+:::image type="content" source="images/sdv-results-vs.png" alt-text="Screenshot of the Results summary in Visual Studio after running Static Driver Verifier.":::
 
 ### <span id="Statistics"></span><span id="statistics"></span><span id="STATISTICS"></span>Statistics
 
-**Entrypoints** Reports the number of entry points found in the driver source code. Entry points are the driver-supplied callback or dispatch routines. You define the entry points using function role type declarations. To perform analysis, SDV must fiind at least one entry point. For more information see, [Using Function Role Type Declarations](using-function-role-type-declarations.md).
+**Entrypoints** Reports the number of entry points found in the driver source code. Entry points are the driver-supplied callback or dispatch routines. You define the entry points using function role type declarations. To perform analysis, SDV must find at least one entry point. For more information see, [Using Function Role Type Declarations](using-function-role-type-declarations.md).
 
 **Defects found** Reports the number of defects found during the analysis. A defect is a violation of a DDI Compliance Rule.
 
@@ -71,4 +71,3 @@ A spaceout is considered to be an inconclusive result. If SDV reports a spaceout
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Other**  
 
 The number of times that SDV encountered an internal error from which it could not recover.  See the [Static Driver Verifier Error Messages](./static-driver-verifier-error-messages.md) page for more information on errors and debugging.
-

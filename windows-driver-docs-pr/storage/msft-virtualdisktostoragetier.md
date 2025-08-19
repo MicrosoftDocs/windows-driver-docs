@@ -1,5 +1,5 @@
 ---
-title: MSFT\_VirtualDiskToStorageTier class
+title: MSFT_VirtualDiskToStorageTier Class
 description: Association between a virtual disk and a storage tier.
 ms.assetid: 363F92E4-D7D1-415F-8565-E1A41B57CF48
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

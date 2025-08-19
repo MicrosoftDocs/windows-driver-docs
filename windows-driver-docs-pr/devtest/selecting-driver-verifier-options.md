@@ -4,6 +4,7 @@ description: Selecting Driver Verifier Options
 keywords:
 - Driver Verifier WDK , option selections
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Selecting Driver Verifier Options
@@ -45,12 +46,4 @@ To deactivate all options and clear the verified driver list, select the **Delet
 Beginning in Windows Vista, you can activate and deactivate all options without restarting ("rebooting") the computer except for [DDI compliance checking](ddi-compliance-checking.md), [Power Framework Delay Fuzzing](concurrency-stress-test.md), or [Storport Verification](dv-storport-verification.md). For details, see [Using Volatile Settings](using-volatile-settings.md).
 
 For details, see [Using Volatile Settings](using-volatile-settings.md).
-
- 
-
- 
-
-
-
-
 

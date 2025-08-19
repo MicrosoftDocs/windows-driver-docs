@@ -1,7 +1,8 @@
 ---
-title: Common WIA security problems
+title: Common WIA Security Problems
 description: Common WIA security problems
 ms.date: 03/29/2023
+ms.topic: troubleshooting-known-issue
 ---
 
 # Common WIA security problems

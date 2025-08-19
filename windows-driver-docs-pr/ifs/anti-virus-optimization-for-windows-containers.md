@@ -1,7 +1,8 @@
 ---
-title: Anti-virus optimization for Windows Containers
+title: Anti-virus Optimization for Windows Containers
 description: This topic describes optimizations that anti-virus products can utilize when running within Windows Containers.
 ms.date: 03/06/2020
+ms.topic: best-practice
 ---
 
 # Anti-virus optimization for Windows Containers

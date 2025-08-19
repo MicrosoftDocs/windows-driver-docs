@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageNodeToVirtualDisk class
+title: MSFT_StorageNodeToVirtualDisk Class
 description: Association between a storage node and a virtual disk.
 ms.assetid: 7A193FBD-6435-4CF3-86D3-FAEEB755C21F
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

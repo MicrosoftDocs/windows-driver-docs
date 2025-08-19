@@ -2,6 +2,7 @@
 title: Creating a Virtual Port
 description: Creating a Virtual Port
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating a Virtual Port

@@ -3,6 +3,7 @@ title: Symbol Storage Format
 description: Symbol Storage Format
 keywords: ["SymStore, storage format"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Symbol Storage Format
@@ -152,8 +153,3 @@ Whenever the final entry in refs.ptr is a pointer, the file file.ptr will exist 
  
 
  
-
-
-
-
-

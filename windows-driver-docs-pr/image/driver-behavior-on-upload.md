@@ -2,6 +2,7 @@
 title: Driver Behavior on Upload
 description: Driver Behavior on Upload
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Driver Behavior on Upload

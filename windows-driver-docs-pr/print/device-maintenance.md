@@ -1,7 +1,8 @@
 ---
-title: Device maintenance
+title: Device Maintenance
 description: A device maintenance feature has been introduced in Windows 8.1 and later versions of Windows.
 ms.date: 01/25/2023
+ms.topic: concept-article
 ---
 
 # Device maintenance

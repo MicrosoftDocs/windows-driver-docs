@@ -7,6 +7,7 @@ keywords:
 - source files WDK display
 - identifying display source disks or files
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Identifying Source Disks and Files

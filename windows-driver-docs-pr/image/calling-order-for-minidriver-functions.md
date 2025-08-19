@@ -1,7 +1,8 @@
 ---
-title: Call order for minidriver functions
+title: Call Order for Minidriver Functions
 description: Call order for minidriver functions
 ms.date: 03/27/2023
+ms.topic: concept-article
 ---
 
 # Call order for minidriver functions

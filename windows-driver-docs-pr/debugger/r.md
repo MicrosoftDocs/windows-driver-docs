@@ -2,6 +2,7 @@
 title: R  (Windows Debugger Glossary)
 description: Glossary page - R
 ms.date: 11/28/2017
+ms.topic: glossary
 ---
 
 # R
@@ -24,7 +25,7 @@ A very fast temporary memory location in the CPU.
 <span id="register_context"></span><span id="REGISTER_CONTEXT"></span>**register context**  
 The full processor state which includes all the processor's registers.
 
-For more information, see [**Register Context**](-thread--set-register-context-.md).
+For more information, see [**Register Context**](../debuggercmds/-thread--set-register-context-.md).
 
 <span id="retail_build"></span><span id="RETAIL_BUILD"></span>**retail build**  
 See free build.
@@ -32,8 +33,3 @@ See free build.
  
 
  
-
-
-
-
-

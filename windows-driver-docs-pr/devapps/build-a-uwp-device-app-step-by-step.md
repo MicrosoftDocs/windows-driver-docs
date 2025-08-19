@@ -1,10 +1,14 @@
 ---
-title: Build a UWP device app step-by-step
+title: Build a UWP Device App Step-By-Step
 description: This step-by-step guide describes in detail how to build a UWP device app with Microsoft Visual Studio and the Device Metadata Authoring Wizard.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
+ms.topic: how-to
 ---
 
 # Build a UWP device app step-by-step
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 This step-by-step guide describes in detail how to build a UWP device app with Microsoft Visual Studio and the Device Metadata Authoring Wizard. For a high-level introduction to this process, see [Building UWP device apps](the-workflow.md).
 

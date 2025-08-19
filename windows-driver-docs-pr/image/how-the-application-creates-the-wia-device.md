@@ -2,6 +2,7 @@
 title: How the Application Creates the WIA Device
 description: How the Application Creates the WIA Device
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # How the Application Creates the WIA Device

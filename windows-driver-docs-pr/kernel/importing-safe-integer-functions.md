@@ -2,6 +2,7 @@
 title: Importing Kernel-Mode Safe Integer Functions
 description: The kernel-mode safe integer functions are available as inline code that is contained in ntintsafe.h or in a library that you link your code to.
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Importing Kernel-Mode Safe Integer Functions

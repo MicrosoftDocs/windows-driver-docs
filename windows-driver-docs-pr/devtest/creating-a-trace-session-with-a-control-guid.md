@@ -6,6 +6,7 @@ keywords:
 - GUIDs WDK software tracing
 - identifiers WDK software tracing
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating a Trace Session with a Control GUID
@@ -49,12 +50,4 @@ When creating a trace session by typing or pasting a control GUID, you can use t
 If the TMC file is not available, you can set the trace flags and level for the provider manually in the **Advanced Trace Session Options** dialog box. For instructions, see [Setting Advanced Trace Session Options](setting-advanced-trace-session-options.md).
 
 For information about specifying TMF files, see Set TMF Search Path and Select TMF Files Options.
-
- 
-
- 
-
-
-
-
 

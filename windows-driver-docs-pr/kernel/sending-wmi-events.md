@@ -3,6 +3,7 @@ title: Sending WMI Events
 description: Sending WMI Events
 keywords: ["WMI WDK kernel , event tracking", "events WDK WMI", "tracing WDK WMI", "sending WMI events", "event blocks WDK WMI", "notifications WDK WMI", "dynamic instance names WDK WMI"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Sending WMI Events

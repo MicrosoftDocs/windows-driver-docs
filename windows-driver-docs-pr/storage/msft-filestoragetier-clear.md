@@ -1,5 +1,5 @@
 ---
-title: Clear method of the MSFT\_FileStorageTier class
+title: Clear Method of the MSFT_FileStorageTier Class
 description: Unpins a volume or file from a storage tier.
 ms.assetid: 771004D8-8D11-4B34-8CF4-F6DF785C6634
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

@@ -20,7 +20,7 @@ This error indicates that a partition was improperly dereferenced. This normally
 
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## KERNEL\_PARTITION\_REFERENCE\_VIOLATION Parameters
@@ -35,9 +35,3 @@ Parameter 1 | Parameter 2 | Parameter 3 | Parameter 4
 | 0x1 : The system partition is being deleted | Pointer to the partition. | Reserved | Reserved |
 | 0x2 :  A partition with outstanding ex work queue items is being deleted. | Pointer to the partition. |Pointer to the ex work queue with outstanding items. | Reserved |
  
-
-
-
-
-
-

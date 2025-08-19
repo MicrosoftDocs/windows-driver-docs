@@ -3,6 +3,7 @@ title: Stopping a Device to Rebalance Resources
 description: Stopping a Device to Rebalance Resources
 keywords: ["rebalancing resources WDK PnP", "resource rebalancing WDK PnP", "pausing PnP devices"]
 ms.date: 10/06/2022
+ms.topic: how-to
 ---
 
 # Stopping a Device to Rebalance Resources

@@ -1,7 +1,8 @@
 ---
-title: Executing Data-driven tests
+title: Executing Data-driven Tests
 description: Executing Data-driven tests
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # <span id="taef.executing_data-driven_tests"></span>Executing Data-driven tests

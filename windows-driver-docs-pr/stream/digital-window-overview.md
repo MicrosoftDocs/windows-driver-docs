@@ -1,7 +1,8 @@
 ---
-title: Digital Window overview
+title: Digital Window Overview
 description: Describes Digital Window controls that allow an application that implements digital pan, tilt and zoom to focus selectively on objects.
 ms.date: 06/24/2021
+ms.topic: concept-article
 ---
 
 # Digital Window overview
@@ -70,7 +71,7 @@ This ambiguity could be resolved with per-frame metadata injected by the camera,
 
 ### Aspect Ratios
 
-It is unclear or undefined how CT_DIGITAL_WINDOW_CONTROL handles differing aspect ratios. To crop the field of view correctly the the GET_DEF and GET_CUR values reported by the UVC 1.5 control would need to change to match the current aspect after every probe/commit. To handle this correctly, the CT_DIGITAL_WINDOW_CONTROL should be an AutoUpdate control and the driver would need to not cache the GET_DEF result, but instead query this value again for every resolution exposed by the camera.
+It is unclear or undefined how CT_DIGITAL_WINDOW_CONTROL handles differing aspect ratios. To crop the field of view correctly the GET_DEF and GET_CUR values reported by the UVC 1.5 control would need to change to match the current aspect after every probe/commit. To handle this correctly, the CT_DIGITAL_WINDOW_CONTROL should be an AutoUpdate control and the driver would need to not cache the GET_DEF result, but instead query this value again for every resolution exposed by the camera.
 
 This complexity could create discovery problems when trying to map the digital window control to a specific resolution. You may not know in advance what portion of the sensor's field of view the camera would use by default until you perform a probe or commit on all media types supported by the camera. This presents potential issues with discovering any porch values for a given resolution since those are dependent on the sensor's field of view normally in use by that format relative to the total field of view available on the sensor.
 

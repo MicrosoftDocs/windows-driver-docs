@@ -3,6 +3,7 @@ title: No Header Information Available
 description: No Header Information Available
 keywords: ["No header information available (warning)", "header information not available (warning)"]
 ms.date: 05/23/2017
+ms.topic: error-reference
 ---
 
 # No Header Information Available
@@ -18,8 +19,3 @@ For information about how to debug a target when module headers are paged out, s
  
 
  
-
-
-
-
-

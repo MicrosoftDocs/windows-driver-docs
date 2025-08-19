@@ -1,10 +1,11 @@
 ---
-title: Configure the machine for testing
+title: Configure the Machine for Testing
 description: Outline of the steps required to install WDTF and TAEF, copy the System Fundamentals data-driven tests, and configure the machine for testing
 keywords:
 - Sysfund tests
 - data-driven tests
 ms.date: 10/12/2018
+ms.topic: how-to
 ---
 
 # Configure the machine for testing

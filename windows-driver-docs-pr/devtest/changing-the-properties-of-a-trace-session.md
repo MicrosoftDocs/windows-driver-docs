@@ -7,6 +7,7 @@ keywords:
 - changeable properties WDK TraceView
 - displaying trace session properties
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Changing the Properties of a Trace Session
@@ -37,12 +38,4 @@ To change the value of a property, click the value, and then type a new value in
 The values in the **Flags** and **Level** columns represent the [trace flags](trace-flags.md) and [trace level](trace-level.md) properties of the trace providers in the trace session. The value in the **Flags** and **Level** column can be a hexadecimal value that represents the actual values or the word "SET".
 
 A value of **SET** indicates that the trace flags and trace level are set in the **Tracing Flags and Level Selection** dialog box. To open the **Tracing Flags and Level Selection** dialog box, click the **SET** value.
-
- 
-
- 
-
-
-
-
 

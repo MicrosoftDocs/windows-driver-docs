@@ -1,5 +1,5 @@
 ---
-title: Security checks on IRP_MJ_FILE_SYSTEM_CONTROL
+title: Security Checks on IRP_MJ_FILE_SYSTEM_CONTROL
 description: Describes how a file system does security checks on IRP_MJ_FILE_SYSTEM_CONTROL
 keywords:
 - IRP_MJ_FILE_SYSTEM_CONTROL
@@ -8,6 +8,7 @@ keywords:
 - file system controls WDK security
 - set file information processing WDK file systems
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Security checks on IRP_MJ_FILE_SYSTEM_CONTROL (IFS)

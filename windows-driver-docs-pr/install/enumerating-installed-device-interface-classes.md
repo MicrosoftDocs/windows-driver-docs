@@ -1,5 +1,5 @@
 ---
-title: Enumerating installed device interfaces
+title: Enumerating Installed Device Interfaces
 description: Provides information about enumerating installed device interfaces.
 keywords:
 - enumerating installed device interfaces WDK
@@ -7,6 +7,7 @@ keywords:
 - installed device interfaces WDK , enumerating
 - device interfaces WDK device installations , enumerating
 ms.date: 08/15/2022
+ms.topic: concept-article
 ---
 
 # Enumerating installed device interfaces

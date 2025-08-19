@@ -2,6 +2,7 @@
 title: Improving System Startup Performance
 description: Improving System Startup Performance
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Improving System Startup Performance

@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageFaultDomain class
+title: MSFT_StorageFaultDomain Class
 description: Common base class for all storage fault domain objects.
 ms.assetid: 662C4D52-AE58-4922-BB01-0470B5B3F3C3
 keywords:
@@ -20,7 +20,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

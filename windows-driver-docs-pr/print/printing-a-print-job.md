@@ -1,5 +1,5 @@
 ---
-title: Print a print job
+title: Print a Print Job
 description: Provides information about how to print a print job.
 keywords:
 - print monitors WDK, printing print jobs
@@ -12,6 +12,7 @@ keywords:
 - bidi communication WDK print
 - printing print jobs WDK
 ms.date: 09/08/2022
+ms.topic: how-to
 ---
 
 # Print a print job

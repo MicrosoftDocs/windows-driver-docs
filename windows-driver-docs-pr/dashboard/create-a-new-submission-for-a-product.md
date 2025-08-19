@@ -1,8 +1,8 @@
 ---
 title: Create a new submission for a product
 description: Use this method in the Microsoft Hardware API to create a new submission for a product.
-ms.topic: article
 ms.date: 04/05/2018
+ms.topic: how-to
 ---
 
 # Create a new submission for a product
@@ -28,7 +28,7 @@ The productId in the method is the product for which the submission is intended.
 
 | Header | Type | Description |
 |:--|:--|:--|
-| Authorization | String | Required. The Azure AD access token in the form **Bearer** \<token\>. |
+| Authorization | String | Required. The Microsoft Entra ID access token in the form **Bearer** \<token\>. |
 | Accept | String | Optional. Specifies the type of content. Allowed value is “application/json” |
 
 
@@ -70,7 +70,7 @@ The following example demonstrates the JSON response body returned by a successf
     "items": [
       {
         "type": "initialPackage",
-        "url": "https://ingestionpackages.blob.core.windows.net/ingestion/38c19eaf-7377-4834-893c-28d5791f7896?sv=2017-04-17&sr=b&sig=SlD5j5e067oA4Y3hdk1sPW3UycTSUVlIp80WbWvj4A8%3D&se=2018-03-20T05:00:14Z&sp=rwl"
+        "url": "<SAS URL from Hardware API>"
       }
     ],
     "messages": []

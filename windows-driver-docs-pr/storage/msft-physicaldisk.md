@@ -1,5 +1,5 @@
 ---
-title: MSFT\_PhysicalDisk class
+title: MSFT_PhysicalDisk Class
 description: Represents a subsystem drive or spindle.
 ms.assetid: 01eeb68b-c8b0-4f91-9072-3a03b20b9636
 keywords:
@@ -44,7 +44,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

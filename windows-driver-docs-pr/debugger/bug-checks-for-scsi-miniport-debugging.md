@@ -3,6 +3,7 @@ title: Bug Checks for SCSI Miniport Debugging
 description: Bug Checks for SCSI Miniport Debugging
 keywords: ["SCSI Miniport debugging, bug checks"]
 ms.date: 05/23/2017
+ms.topic: troubleshooting-error-codes
 ---
 
 # Bug Checks for SCSI Miniport Debugging
@@ -18,7 +19,7 @@ Each of these bug checks indicates that a paging error has occurred. There are t
 
 -   Controller errors
 
-To determine the precise cause of the failure, begin by using the [**!scsikd.classext**](-scsikd-classext.md) extension, which displays information about recently failed requests, including the SRB status, SCSI status, and sense data of the request.
+To determine the precise cause of the failure, begin by using the [**!scsikd.classext**](../debuggercmds/-scsikd-classext.md) extension, which displays information about recently failed requests, including the SRB status, SCSI status, and sense data of the request.
 
 ```dbgcmd
 kd> !scsikd.classext 816e96b0
@@ -46,8 +47,3 @@ As always, miniport driver developers are responsible for associating error code
  
 
  
-
-
-
-
-

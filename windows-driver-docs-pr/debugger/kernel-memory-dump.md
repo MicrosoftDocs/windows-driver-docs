@@ -3,6 +3,7 @@ title: Kernel Memory Dump
 description: Kernel Memory Dump
 keywords: ["dump file, Kernel Memory Dump", "Kernel Memory Dump"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Kernel Memory Dump
@@ -25,7 +26,7 @@ The Kernel Memory Dump file is written to %SystemRoot%\\Memory.dmp by default.
 
 If a second bug check occurs and another Kernel Memory Dump (or Complete Memory Dump) is created, the previous file will be overwritten.
 
-To suppress missing page error messages when debugging a Kernel Memory Dump, use the [**.ignore\_missing\_pages**](-ignore-missing-pages--suppress-missing-page-errors-.md) command.
+To suppress missing page error messages when debugging a Kernel Memory Dump, use the [**.ignore\_missing\_pages**](../debuggercmds/-ignore-missing-pages--suppress-missing-page-errors-.md) command.
 
 ## <span id="related_topics"></span>See also
 
@@ -35,9 +36,3 @@ To suppress missing page error messages when debugging a Kernel Memory Dump, use
  
 
  
-
-
-
-
-
-

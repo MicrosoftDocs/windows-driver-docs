@@ -1,12 +1,16 @@
 ---
-title: UWP device apps
-description: UWP device apps are device companions, have capabilities beyond regular UWP apps, and perform privileged operations, such as firmware updates
-ms.date: 03/17/2023
+title: UWP Device Apps
+description: UWP device apps are device companions, have capabilities beyond regular UWP apps, and perform privileged operations, such as firmware updates.
+ms.date: 07/21/2025
+ms.topic: overview
 ---
 
 # UWP device apps
 
-Device manufacturers can create a UWP device app that serves as a companion to their device. UWP device apps have more capabilities than regular UWP apps and can perform privileged operations, such as firmware updates. Also, UWP device apps can start from AutoPlay (on more devices than other apps can), automatically install the first time a device is connected, and extend the printer and camera experiences built into Windows 8.1 and Windows 10.
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
+
+Device manufacturers can create a UWP device app that serves as a companion to their device. UWP device apps have more capabilities than regular UWP apps and can perform privileged operations, such as firmware updates. Also, UWP device apps can start from AutoPlay (on more devices than other apps can), automatically install the first time a device is connected, and extend the printer and camera experiences built into Windows 8.1, Windows 10 and Windows 11.
 
 This section describes what UWP device apps are and how device manufacturers can create them. If you're new to UWP device apps, take a look at [Getting started](getting-started.md).
 
@@ -21,11 +25,15 @@ If you're looking for information about UWP mobile broadband apps, see [Mobile B
 | [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) | This step-by-step guide describes in detail how to build a UWP device app with Microsoft Visual Studio and the Device Metadata Authoring Wizard. |
 | [AutoPlay for UWP device apps](autoplay-for-uwp-device-apps.md) | This topic describes how to use the Device Metadata Authoring Wizard to enable AutoPlay. It also describes how to handle AutoPlay activations in your app. |
 | [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md) | In Windows 8.1, your UWP app can use a device background task to synchronize data on your peripheral device. If your app is associated with device metadata, that UWP device app can also use a device background agent to perform device updates, such as firmware updates. |
-| [Print support app design guide](print-support-app-design-guide.md) | Provides guidance and examples for printer OEMs and IHVs that are implementing a print support app (PSA) for their device. |
+| [Print Support App design guide](print-support-app-design-guide.md) | Provides guidance and examples for printer OEMs and IHVs that are implementing a print support app (PSA) for their device. |
+| [Print Support App v3 API design guide](print-support-app-v3-design-guide.md) | Provides guidance and examples for printer OEMs and IHVs that are implementing a v3 Print Support App (PSA) for their device. |
+| [Print Support App v4 API design guide](print-support-app-v4-design-guide.md) | Provides guidance and examples for printer OEMs and IHVs that are implementing a v4 Print Support App (PSA) for their device. |
+| [MSIX Manifest Specification for Print Support Virtual Printer](msix-manifest-specification-print-support-virtual-printer.md) | Provides MSIX manifest guidance and examples for printer OEMs and IHVs that are implementing a Print Support Virtual Printer. |
 | [Print support app association](print-support-app-association.md) | Provides guidance and examples for associating a print support app (PSA) with a printer. |
 | [UWP device apps for printers](uwp-device-apps-for-printers.md) | This section introduces UWP device apps for printers. |
 | [UWP device apps for cameras](uwp-device-apps-for-webcams.md) | This section introduces UWP device apps for cameras. |
 | [UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md) | This topic introduces the ways that UWP device apps can access internal devices. |
 | [Automatic installation for UWP device apps](auto-install-for-uwp-device-apps.md) | This topic describes how automatic installation works and how the app, metadata, and drivers can be updated and uninstalled. |
+| [Register an OEM application during the imaging process](register-an-oem-application-during-the-imaging-process.md) | Provides information on registering an OEM application during the imaging process via the Universal Orchestrator framework. |
 | [Hardware Support App (HSA): Steps for Driver Developers](hardware-support-app--hsa--steps-for-driver-developers.md) | This topic provides steps for a driver developer to associate a driver with a Universal Windows Platform (UWP) app. |
 | [Hardware Support App (HSA): Steps for App Developers](hardware-support-app--hsa--steps-for-app-developers.md) | This topic provides steps for an app developer to associate a Universal Windows Platform (UWP) app with a Universal Windows driver. |

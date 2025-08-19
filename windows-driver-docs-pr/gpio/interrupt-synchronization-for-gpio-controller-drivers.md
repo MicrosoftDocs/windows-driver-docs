@@ -2,6 +2,7 @@
 title: Interrupt Synchronization for GPIO Controller Drivers
 description: GPIO controller drivers can call the GPIO_CLX_AcquireInterruptLock and GPIO_CLX_ReleaseInterruptLock methods to acquire and release interrupt locks that are implemented internally by the GPIO framework extension (GpioClx).
 ms.date: 03/03/2023
+ms.topic: how-to
 ---
 
 # Interrupt Synchronization for GPIO Controller Drivers

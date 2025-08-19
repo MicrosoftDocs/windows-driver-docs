@@ -1,5 +1,5 @@
 ---
-title: C28120 warning
+title: C28120 Warning
 description: Warning C28120 The function is not permitted to be called at the current IRQ level. The current level is too low.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -7,6 +7,7 @@ keywords:
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28120"
+ms.topic: reference
 ---
 
 # C28120
@@ -38,12 +39,4 @@ The Code Analysis tool infers the current IRQL and reports this warning only whe
 If the Code Analysis tool cannot determine the IRQL at which the driver is running, it will not report this warning, even if the function is being called at the wrong IRQL.
 
 For a description of a similar situation, see [Warning 28121](28121-irq-execution-too-high.md).
-
- 
-
- 
-
-
-
-
 

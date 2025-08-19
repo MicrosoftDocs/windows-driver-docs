@@ -18,7 +18,7 @@ The STORAGE\_MINIPORT\_ERROR bug check has a value of 0x00000F0. It indicates th
 
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
  
 
@@ -64,7 +64,7 @@ A bug in the storage Miniport driver kept a SRB request from completing. See the
 ## Resolution
 -----
 
-The [!analyze](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. 
+The [!analyze](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. 
 
 The driver name returned in parameter 2 should point to the offending driver.
 

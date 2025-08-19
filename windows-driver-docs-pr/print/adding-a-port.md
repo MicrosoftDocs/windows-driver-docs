@@ -1,11 +1,12 @@
 ---
-title: Add a port
+title: Add a Port
 description: Provides information about how to add a port.
 keywords:
 - port management WDK print, adding ports
 - adding ports
 - AddPort
 ms.date: 09/07/2022
+ms.topic: how-to
 ---
 
 # Add a port

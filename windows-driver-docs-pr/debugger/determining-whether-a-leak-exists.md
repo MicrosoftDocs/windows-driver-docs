@@ -1,44 +1,55 @@
 ---
-title: Determining Whether a Leak Exists
-description: Determining Whether a Leak Exists
+title: Look For Potential Memory Leaks With PerfMon
+description: Use Windows Performance Monitor (PerfMon) to determine if your system has memory leaks, and investigate memory issues related to degraded performance.
 keywords: ["memory leak, detection"]
-ms.date: 10/01/2021
+ms.date: 07/10/2025
+ms.topic: how-to
 ---
 
-# Determining Whether a Leak Exists
+# Look for memory leaks with Performance Monitor (PerfMon)
 
+If Windows performance is degrading over time and you suspect a memory leak might be involved, use Windows Performance Monitor (PerfMon) to investigate for possible memory leaks. You can monitor data changes in memory over time for different aspects of your application or program. The tool doesn't identify the source of a leak, or confirm the presence of an issue in user mode or kernel mode. You can adjust settings in the tool to help locate the issue.
 
-If Windows performance is degrading over time and you suspect that a memory leak may be involved, use Windows Performance Monitor to investigate whether there is a memory leak. This process will not tell you what the source of the leak is, nor whether it is user mode or kernel mode. 
+Open Performance Monitor with one of the following procedures:
 
-Begin by launching Performance Monitor. To open Performance Monitor, use one of the following procedures:
+- In Windows **Search**, enter _perfmon_ (or _Performance Monitor_), and select the tool.
 
-- Open Start Menu, search for Performance Monitor, and click the result 
-- Use the ```Windows Key + R``` keyboard shortcut to open the _Run_ command, type ```perfmon```, and click OK to open.
+- Use the **Windows Key** + **R** keyboard shortcut to open the **Run** command dialog. Enter _perfmon_ and select **OK**.
 
-After opening the Performance Monitor, add the following counters to the main Performance Monitor graph:
+## Add data counters
 
--   **Memory**--&gt;**Pool Nonpaged Bytes**
+Add memory and page file counters to the main Performance Monitor graph so you can monitor data changes. Under **Monitoring Tools**, right-click **Performance Monitor** and select **Properties**. In the **Properties** dialog > **Data** tab, add the following counters:
 
--   **Memory**--&gt;**Pool Paged Bytes**
+- **Memory** > **Pool Nonpaged Bytes**
 
--   **Paging File**--&gt;**% Usage**
+- **Memory** > **Pool Paged Bytes**
 
+- **Paging File** > **% Usage**
 
-Right click on the *Performance Monitor* under *Monitoring Tools* and select **Properties**. 
+## Set duration to capture enough activity
 
-To capture a graph of the leak over time, set the *Sample every* time to 600 seconds to measure the value every ten minutes. Set the *Duration* to capture enough activity. For example to set it to 24 hours, the value would be, `60*60*24 = 86,400` You might also want to log the data to a file for later examination.
+Adjust the general time settings so you can capture a graph of any data leaks over time. In the **Properties** dialog > **General** tab, configure the following values:
 
-Start the application or test that you believe is causing the leak. Allow the application or test to run undisturbed for some time; do not use the target computer during this time. Leaks are usually slow and may take hours to detect. Wait for a few hours before deciding whether a leak has occurred.
+- **Sample every**: Set the time to **600** seconds, which measures the value every 10 minutes.
 
-Monitor the Performance Monitor counters. After the test has started, the counter values will change rapidly, and it may take some time for the memory pools values to reach a steady state.
+- **Duration**: Set the time to capture enough activity. For example, to monitor the data over 24 hours, set the value to **86400** (60 x 60 x 24 = 86,400).
 
-User-mode memory leaks are always located in pageable pool and cause both the **Pool Paged Bytes** counter and the page file **Usage** counter to increase steadily over time. Kernel-mode memory leaks usually deplete nonpaged pool, causing the **Pool Nonpaged Bytes** counter to increase, although pageable memory can be affected as well. Occasionally these counters may show false positives because an application is caching data.
+> [!TIP]
+> Log the graph data to a file for later examination.
 
- 
+## Start application and monitor data 
 
- 
+After you configure the counters and time settings, start the application or test program that you want to check for leaks. Allow the program to run undisturbed for some time.
 
+> [!IMPORTANT]
+> Don't use the target computer while you're running the program to check for leaks. Leaks usually develop slowly. It can take hours for a data leak to accumulate to a detectable level.
 
+Watch the Performance Monitor counters. When you start monitoring, the counter values change rapidly. It can take time for the memory pools values to reach a steady state. Wait several hours before you decide there's a leak.
 
+### Investigate user-mode leaks
 
+User-mode memory leaks are always located in _pageable_ pool. This type of leak causes the **Memory** > **Pool Paged Bytes** counter and the **Paging File** > **Usage** counter to increase steadily over time. For more information, see [Find user-mode memory leaks with PerfMon](./using-performance-monitor-to-find-a-user-mode-memory-leak.md).
 
+### Investigate kernel-mode leaks
+
+Kernel-mode memory leaks usually deplete _nonpaged_ pool. This type of leak causes the **Memory** > **Pool Nonpaged Bytes** counter to increase and potentially, pageable memory. Occasionally, Kernel-mode counters can show false positives because an application is caching data.

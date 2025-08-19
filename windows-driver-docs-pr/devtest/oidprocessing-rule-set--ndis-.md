@@ -1,7 +1,8 @@
 ---
-title: OidProcessing rule set (NDIS)
+title: OidProcessing Rule Set (NDIS)
 description: Use these rules to verify that your driver correctly processes OID requests.
 ms.date: 05/21/2018
+ms.topic: reference
 ---
 
 # OidProcessing rule set (NDIS)

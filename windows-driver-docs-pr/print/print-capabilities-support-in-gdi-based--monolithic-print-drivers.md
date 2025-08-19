@@ -1,11 +1,12 @@
 ---
-title: Print capabilities support in GDI-based monolithic print drivers
+title: Print Capabilities Support in GDI-based Monolithic Print Drivers
 description: Provides information about print capabilities support in GDI-based monolithic print drivers.
 keywords:
 - Print Capabilities WDK , GDI-based monolithic print drivers
 - GDI-based monolithic print drivers WDK
 - monolithic print drivers WDK
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print capabilities support in GDI-based monolithic print drivers

@@ -1,7 +1,7 @@
 ---
-title: Orientation sensor property
+title: Orientation Sensor Property
 description: The property key for the orientation sensor.
-ms.date: 03/02/2023
+ms.date: 01/11/2024
 ms.topic: reference
 ---
 

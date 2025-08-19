@@ -1,7 +1,8 @@
 ---
-title: Mapping PTP format codes to WIA format GUIDs
+title: Mapping PTP Format Codes to WIA Format GUIDs
 description: Mapping PTP format codes to WIA format GUIDs
 ms.date: 05/03/2023
+ms.topic: concept-article
 ---
 
 # Mapping PTP format codes to WIA format GUIDs

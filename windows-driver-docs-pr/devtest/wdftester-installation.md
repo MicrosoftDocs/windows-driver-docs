@@ -2,6 +2,7 @@
 title: WdfTester Installation
 description: WdfTester Installation
 ms.date: 04/20/2017
+ms.topic: install-set-up-deploy
 ---
 
 # WdfTester Installation
@@ -22,12 +23,4 @@ Before you can run the WdfTester tool on your driver, you must first copy the Wd
     This command installs the Wdftester.sys driver and starts the service.
 
 3.  Press Enter.
-
- 
-
- 
-
-
-
-
 

@@ -1,8 +1,9 @@
 ---
-title: Flushing Cached Data during DMA Operations
+title: Flushing Cached Data During DMA Operations
 description: Flushing Cached Data during DMA Operations
 keywords: ["DMA transfers WDK kernel , data integrity", "KeFlushIoBuffers", "FlushAdapterBuffers", "flushing cached data"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Flushing Cached Data during DMA Operations

@@ -1,7 +1,8 @@
 ---
-title: Update the hotspot authentication sample
+title: Update the Hotspot Authentication Sample
 description: Update the hotspot authentication sample
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Update the hotspot authentication sample
@@ -23,7 +24,7 @@ The [Hotspot Authentication Sample](/samples/browse/) project uses a default car
 
     -   **Install-RootCertFromFile** Applies the test root certificate on a different PC, to test the client experience on a machine other than the development PC.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Get started with a hotspot authentication app](review-the-hotspot-authentication-sample.md)

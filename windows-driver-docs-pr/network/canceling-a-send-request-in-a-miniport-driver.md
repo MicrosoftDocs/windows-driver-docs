@@ -6,6 +6,7 @@ keywords:
 - MiniportCancelSend
 - canceling send requests WDK networking
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Canceling a Send Request in a Miniport Driver
@@ -16,7 +17,7 @@ ms.date: 04/20/2017
 
 The following figure illustrates a miniport driver cancel send operation.
 
-![diagram illustrating a miniport driver cancel send operation.](images/miniportcancelsend.png)
+:::image type="content" source="images/miniportcancelsend.png" alt-text="Diagram illustrating a miniport driver cancel send operation.":::
 
 Protocol, filter, and intermediate drivers can call [**NdisCancelSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscancelsendnetbufferlists) to cancel outstanding send requests. These overlying drivers must mark the send data with a cancellation ID before making a send request.
 

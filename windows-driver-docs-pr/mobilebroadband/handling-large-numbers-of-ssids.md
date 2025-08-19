@@ -1,7 +1,8 @@
 ---
-title: Handling large numbers of SSIDs
+title: Handling Large Numbers of SSIDs
 description: Handling large numbers of SSIDs
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling large numbers of SSIDs
@@ -22,7 +23,7 @@ The following sections are included in this topic:
 
 ## Multiple SSIDs per profile
 
-If you are provisioning Windows 8, Windows 8.1, or Windows 10 to connect to several SSIDs, we recommend that you provide multiple SSIDs per profile. This greatly reduces the size of the provisioning file and improves the responsiveness of the computer.
+If you are provisioning Windows to connect to several SSIDs, we recommend that you provide multiple SSIDs per profile. This greatly reduces the size of the provisioning file and improves the responsiveness of the computer.
 
 If you intend to use APIs to mark a network that should no longer be used, be aware that these actions apply to all SSIDs that are covered by the same profile. Therefore, it is a best practice to group related SSIDs in a single profile.
 

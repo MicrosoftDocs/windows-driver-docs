@@ -3,6 +3,7 @@ title: Handling an IRP_MN_CANCEL_REMOVE_DEVICE Request
 description: Handling an IRP_MN_CANCEL_REMOVE_DEVICE Request
 keywords: ["IRP_MN_CANCEL_REMOVE_DEVICE", "spurious cancel-remove requests WDK PnP"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Handling an IRP\_MN\_CANCEL\_REMOVE\_DEVICE Request

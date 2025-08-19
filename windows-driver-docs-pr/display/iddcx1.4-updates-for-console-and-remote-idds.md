@@ -1,5 +1,5 @@
 ---
-title: IddCx 1.4 updates for console and remote IDDs
+title: IddCx 1.4 Updates for Console and Remote IDDs
 description: IddCx version 1.4 updates for console and remote indirect display drivers
 ms.date: 08/09/2022
 keywords:
@@ -9,6 +9,7 @@ keywords:
 - Console IDD
 - Remote indirect display driver
 - Remote IDD
+ms.topic: release-notes
 ---
 
 # IddCx 1.4 updates for console and remote IDDs
@@ -27,16 +28,16 @@ IddCx versions before IddCx 1.4 used the [power-on self-test (POST) adapter](plu
 
 IddCx 1.4 includes an optional [**IddCxAdapterSetRenderAdapter**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxadaptersetrenderadapter) OS callback. The IDD can call **IddCxAdapterSetRenderAdapter** to set the render adapter it wants to use for all the swapchains on that adapter.
 
-Windows also has a Graphics Settings page in the Settings application that allows a user to set their preference for power saving or high-performance GPU. The following table describes how these two features combine on a Surface Book device that has an Intel-integrated and Nvidia discrete GPU.
+Windows also has a Graphics Settings page in the Settings application that allows a user to set their preference for power saving or high-performance GPU. The following table describes how these two features combine on a Surface Book device that has an Intel-integrated and NVIDIA discrete GPU.
 
-| IDD's GPU pref\* | User/OS pref\*\* | Enum for DWM\+ | Enum for App\+\+ | Intel path~ | Nvidia path~~ | Swapchain GPU^ |
+| IDD's GPU pref\* | User/OS pref\*\* | Enum for DWM\+ | Enum for App\+\+ | Intel path~ | NVIDIA path~~ | Swapchain GPU^ |
 | ----------------- | ------ | ------ | ------ | -------------------- | -------------------- | ------ |
 | **None or Intel** | System | Intel  | Intel  | Same adapter         | Hybrid cross adapter | Intel  |
 | **None or Intel** | Power  | Intel  | Intel  | Same adapter         | Hybrid cross adapter | Intel  |
-| **None or Intel** | Perf   | Intel  | Nvidia | Same adapter         | Hybrid cross adapter | Intel  |
-| **Nvidia**        | System | Nvidia | Nvidia | Hybrid cross adapter | Same adapter         | Nvidia |
-| **Nvidia**        | Power  | Nvidia | Intel  | Hybrid cross adapter | Same adapter         | Nvidia |
-| **Nvidia**        | Perf   | Nvidia | Nvidia | Hybrid cross adapter | Same adapter         | Nvidia |
+| **None or Intel** | Perf   | Intel  | NVIDIA | Same adapter         | Hybrid cross adapter | Intel  |
+| **NVIDIA**        | System | NVIDIA | NVIDIA | Hybrid cross adapter | Same adapter         | NVIDIA |
+| **NVIDIA**        | Power  | NVIDIA | Intel  | Hybrid cross adapter | Same adapter         | NVIDIA |
+| **NVIDIA**        | Perf   | NVIDIA | NVIDIA | Hybrid cross adapter | Same adapter         | NVIDIA |
 
 Where:
 
@@ -45,7 +46,7 @@ Where:
 * \+Enum for DWM = The GPU that the DX runtime enumerates the ID monitor on for Desktop Windows Manager (DWM)
 * \+\+Enum for App = The GPU that the DX runtime enumerates the ID monitor on for the application
 * ~Intel path = The application-to-DWM presentation path when the application is on Intel
-* ~~Nvidia path = The application-to-DWM presentation path when the application is on Nvidia
+* ~~NVIDIA path = The application-to-DWM presentation path when the application is on NVIDIA
 * ^Swapchain GPU = The GPU that the indirect display's swapchain is created on
 
 ## Update EvtIddCxMonitorAssignSwapChain error handling for Windows 10, version 1903 and later

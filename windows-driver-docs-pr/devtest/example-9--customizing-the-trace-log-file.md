@@ -7,6 +7,7 @@ keywords:
 - custom trace logs WDK
 - event trace logs WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 9: Customizing the Trace Log File
@@ -42,12 +43,4 @@ tracelog -start MyTrace −guid MyProvider.guid -f testtrace%d.etl -newfile 1
 ```
 
 The resulting 1 MB files are numbered in the order that they are created, for example testtrace1.etl.
-
- 
-
- 
-
-
-
-
 

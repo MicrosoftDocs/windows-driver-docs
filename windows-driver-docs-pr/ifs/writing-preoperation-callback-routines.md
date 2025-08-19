@@ -6,6 +6,7 @@ keywords:
 - writing callback routines
 - IRQL, preoperation callback routine
 ms.date: 01/24/2023
+ms.topic: concept-article
 ---
 
 # Writing Pre-operation Callback Routines
@@ -50,8 +51,6 @@ FltMgr has no way of knowing what a minifilter might do in its pre-operation cal
 The following information about a minifilter's pre-operation callback routine IRQL is useful to know:
 
 - A pre-operation callback can be called at IRQL = PASSIVE_LEVEL or IRQL = APC_LEVEL. Most pre-operation callbacks are called at IRQL = PASSIVE_LEVEL, in the context of the thread that originated the I/O request. Only a handful of pre-operation callbacks might be called at IRQL = APC_LEVEL.
-
-- For fast I/O and file system filter (FsFilter) operations, a pre-operation callback routine is always called at IRQL = PASSIVE_LEVEL. IRQL > PASSIVE_LEVEL applies only to IRP-based operations.
 
 - For IRP-based operations, a minifilter's pre-operation callback can be called in the context of a system worker thread if a higher filter or minifilter driver pends the operation for processing by the worker thread. A pre-operation callback is the equivalent of a legacy filter's dispatch routine, so knowing the [IRQL and thread context of a legacy filter's dispatch routine](dispatch-routine-irql-and-thread-context.md) might be helpful.
 

@@ -1,5 +1,5 @@
 ---
-title: Set port time-out values
+title: Set Port Time-Out Values
 description: Provides information about how to set port time-out values.
 keywords:
 - port management WDK print , time-out values
@@ -7,6 +7,7 @@ keywords:
 - OpenPort
 - SetPortTimeOuts
 ms.date: 09/08/2022
+ms.topic: how-to
 ---
 
 # Set port time-out values

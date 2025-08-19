@@ -1,15 +1,19 @@
 ---
-title: WDDM 2.0 and Windows 10
-description: This section provides details about new features and enhancements in Windows Display Driver Model (WDDM) version 2.0, which is available starting with Windows 10.
-ms.date: 08/10/2021
+title: WDDM 2.0 Features
+description: Lists the features and enhancements introduced in WDDM 2.0, which is designed to improve the performance and capabilities of the Windows Display Driver Model.
+keywords:
+- WDDM 2.0 , virtual memory , driver residency , context monitoring
+- WDDM 2.0 , Windows 10
+ms.date: 12/16/2024
+ms.topic: release-notes
 ---
 
-# WDDM 2.0 and Windows 10
+# WDDM 2.0 features
 
-This section provides details about the following Windows Display Driver Model (WDDM) version 2.0 features and enhancements. WDDM 2.0 is available starting with Windows 10.
+WDDM 2.0 was introduced starting with Windows 10. It includes several new features and enhancements that are designed to improve the performance and capabilities of the Windows Display Driver Model (WDDM), such as:
 
-| Topic | Description |
-| ----- | ----------- |
-| [GPU virtual memory in WDDM 2.0](gpu-virtual-memory-in-wddm-2-0.md) | Provides details about GPU virtual memory, including why the changes were made and how drivers use it. |
-| [Driver residency in WDDM 2.0](driver-residency-in-wddm-2-0.md) | Provides details about the driver residency changes for WDDM 2.0. |
-| [Context monitoring](context-monitoring.md) | A monitored fence object is an advanced form of fence synchronization which allows either a CPU core or a graphics processing unit (GPU) engine to signal or wait on a particular fence object, allowing for very flexible synchronization between GPU engines, or across CPU cores and GPU engines. |
+* [GPU virtual addressing](gpu-virtual-memory-in-wddm-2-0.md), where each process is assigned a unique GPU virtual address (GPUVA) space that every GPU context can execute in.
+
+* [Driver residency](driver-residency-in-wddm-2-0.md), where residency is moved to an explicit list on the device instead of the per-command buffer list. The video memory manager (*VidMm*) ensures that all allocations on a particular device residency requirement list are resident before any contexts belonging to that device are scheduled for execution.
+
+* [Context monitoring](context-monitoring.md), which allows for flexible synchronization between GPU engines, or across CPU cores and GPU engines. A monitored fence object, which is an advanced form of fence synchronization, allows either a CPU core or a GPU engine to signal or wait on a particular fence object.

@@ -1,8 +1,9 @@
 ---
-title: Create kernel mode stack trace database
+title: Create Kernel Mode Stack Trace Database
 description: Create kernel mode stack trace database
 keywords: ["Create kernel mode stack trace database (global flag)"]
 ms.date: 05/23/2017
+ms.topic: error-reference
 ---
 
 # Create kernel mode stack trace database
@@ -47,8 +48,3 @@ GFlags displays this flag as a kernel flag setting, but it is not effective at r
  
 
  
-
-
-
-
-

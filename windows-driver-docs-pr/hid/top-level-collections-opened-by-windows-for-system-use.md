@@ -1,9 +1,10 @@
 ---
-title: Top-level collections opened by Windows for system use
+title: Top-Level Collections Opened by Windows for System Use
 description: Top-level collections opened by Windows for system use
 keywords:
 - top-level collections WDK HID
-ms.date: 07/14/2022
+ms.date: 01/11/2024
+ms.topic: reference
 ---
 
 # Top-level collections opened by Windows for system use

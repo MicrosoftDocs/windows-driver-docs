@@ -2,6 +2,7 @@
 title: Setting Symbol and Executable Image Paths in WinDbg
 description: Setting Symbol and Executable Image Paths in WinDbg
 ms.date: 05/05/2021
+ms.topic: concept-article
 ---
 
 # Setting Symbol and Executable Image Paths in WinDbg
@@ -20,7 +21,7 @@ To control the symbol path in WinDbg, do one of the following:
 
 -   Choose **Symbol File Path** from the **File** menu or press CTRL+S.
 
--   Use the [**.sympath (Set Symbol Path)**](-sympath--set-symbol-path-.md) command. If you are using a symbol server, the [**.symfix (Set Symbol Store Path)**](-symfix--set-symbol-store-path-.md) command is similar to **.sympath** but saves you typing.
+-   Use the [**.sympath (Set Symbol Path)**](../debuggercmds/-sympath--set-symbol-path-.md) command. If you are using a symbol server, the [**.symfix (Set Symbol Store Path)**](../debuggercmds/-symfix--set-symbol-store-path-.md) command is similar to **.sympath** but saves you typing.
 
 -   When you start the debugger, use the **-y** command-line option. See [**WinDbg Command-Line Options**](windbg-command-line-options.md).
 
@@ -48,7 +49,7 @@ To control the executable image path in WinDbg, do one of the following:
 
 -   Choose **Image File Path** from the **File** menu, or press CTRL+I.
 
--   Use the [**.exepath (Set Executable Path)**](-exepath--set-executable-path-.md) command.
+-   Use the [**.exepath (Set Executable Path)**](../debuggercmds/-exepath--set-executable-path-.md) command.
 
 -   When you start the debugger, use the **-i** command-line option. See [**WinDbg Command-Line Options**](windbg-command-line-options.md).
 
@@ -61,8 +62,3 @@ To control the executable image path in WinDbg, do one of the following:
  
 
  
-
-
-
-
-

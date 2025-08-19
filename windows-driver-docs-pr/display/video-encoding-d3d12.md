@@ -1,24 +1,27 @@
 ---
-title: D3D12 video encoding
+title: D3D12 Video Encoding
 description: Learn about D3D12 video encoding
 keywords:
 - Direct3D12 video encoding
 - WDDM 3.0 , video encoding
-ms.date: 02/16/2022
+ms.date: 12/18/2024
 ms.localizationpriority: medium
+ms.topic: concept-article
 ---
 
 # D3D12 video encoding
 
-This page provides general information for driver developers regarding the Direct3D12 video encoding feature. For additional information, including application-level specifics, see the [D3D Video Encoding Specification](https://microsoft.github.io/DirectX-Specs/d3d/D3D12VideoEncoding.html).
+This article provides general information for driver developers regarding the Direct3D12 video encoding feature. For more information, including application-level specifics, see the [D3D Video Encoding Specification](https://microsoft.github.io/DirectX-Specs/d3d/D3D12VideoEncoding.html).
 
 ## About Direct3D 12 video encoding
 
-Prior to Windows 11 (WDDM 3.0), DirectX 12 provided application- and driver-level interfaces (APIs and DDIs) to support GPU acceleration for several video applications, including video decoding, video processing, and motion estimation.
+Before Windows 11 (WDDM 3.0), DirectX 12 provided application- and driver-level interfaces (APIs and DDIs) to support GPU acceleration for several video applications, including video decoding, video processing, and motion estimation.
 
-Starting in Windows 11, D3D12 added a video encoding feature to the existing video API/DDI family. This feature provides a coherent set of encoding APIs/DDIs that are consistent with the existing D3D12 framework, and allows developers to perform video encoding using GPU-accelerated video engines.
+Starting in Windows 11, D3D12 adds a video encoding feature to the existing video API/DDI family. This feature provides a coherent set of encoding APIs/DDIs that are consistent with the existing D3D12 framework, and allows developers to perform video encoding using GPU-accelerated video engines.
 
-The video encode framework provides access to the video encode hardware acceleration capabilities for different scenarios such as Internet of Things (IoT), cloud, media APIs, machine learning and game streaming.
+The video encoding framework provides access to the video encoder hardware acceleration capabilities. It can be used in different scenarios such as Internet of Things (IoT), cloud, media APIs, machine learning (ML), and game streaming.
+
+Support for AV1 Encode is added in Windows 11, version 24H2 (WDDM 3.2). For more information, see [D3D12 AV1 Video Encoding](video-encoding-d3d12-av1.md).
 
 ## Supported codecs
 
@@ -89,10 +92,10 @@ The following tests are included as part of the [Windows Hardware Lab Kit (WHLK)
 | Test Name | Description |
 | --------- | ----------- |
 | CreateVideoEncoder | Validates the creation of VideoEncoder/VideoEncoderHeap based on the reported CheckFeatureSupport related cases. |
-| SingleEncodeH264/HEVC | QR-code based tests for structural image basic checks. The input images sequence is stamped with predefined QR content, then encoded and decoded, and finally checked to ensure that the output values (and to some extent, quality), are what is expected. |
+| SingleEncodeH264/HEVC | QR-code based tests for structural image basic checks. The input images sequence is stamped with predefined QR content, then encoded and decoded. Finally, the output values (and to some extent, quality) are checked to ensure they're what is expected. |
 | EncodeProfileLevelSuggestionsH264/HEVC | Validates that the D3D12_FEATURE_DATA_VIDEO_ENCODER_SUPPORT.SuggestedProfile/Level values are as expected based on H.264/HEVC specifications and on the configurations passed as input to D3D12_FEATURE_DATA_VIDEO_ENCODER_SUPPORT. |
 | EncodeHeapSizeCap | Validates increasing memory footprint with different increasing input arguments. |
-| SimpleGOPEncodeH264/HEVC(10bit) | Transcodes an input video using different resolutions, GOP patterns, slice modes and other codec configurations, and validates the output encoded video against the input video stream difference is acceptable. This comparison is done using peak signal to noise ratio (PSNR). |
+| SimpleGOPEncodeH264/HEVC(10 bit) | Transcodes an input video using different resolutions, GOP patterns, slice modes, and other codec configurations, and validates the output encoded video against the input video stream difference is acceptable. This comparison is done using peak signal to noise ratio (PSNR). |
 | EncodeSubregions/ResolutionReconfiguration | Validates on-the-fly reconfigurations. |
 | EncodeH264LongTermReferences | Validates the use of long term picture references. |
 | EncodeIntraRefresh | Validates a simple scenario of intra-refresh with an open IPP...P...P... GOP. |
@@ -103,15 +106,15 @@ The following tests are included as part of the [Windows Hardware Lab Kit (WHLK)
 
 ### OneCore
 
-D3D12 video encoding support enables portable hardware-accelerated video encoding on platforms where only D3D12 is available. This includes the various OneCore SKUs used by cloud compute and IoT platforms. Video encoding acceleration is available in these scenarios without the need for using platform-specific solutions.
+D3D12 video encoding support enables portable hardware-accelerated video encoding on platforms where only D3D12 is available. These platforms include the various OneCore SKUs used by cloud compute and IoT platforms. Video encoding acceleration is available in these scenarios without the need for using platform-specific solutions.
 
 ### Media APIs
 
-Video encoding capabilities in a low level and portable way is accessible across all hardware vendors. This allows higher level Media APIs (such as Media Foundation) to build their media layers on top of this API which takes care of abstracting the different hardware platforms. Given the low level design of the API, these higher level media layers can optimize for their scenarios by having fine grain control of synchronization and memory allocation/residency aspects of the video encode session such as full control of the reference picture management and bitstream headers writing responsibilities. This shift of responsibilities to the layer sitting above this API also allows hardware vendors to have a consistent set of encoding policies (eg. DPB heuristics such as adaptive GOP) in the media layer that can be reused across different hardware platforms.
+Video encoding capabilities in a low level and portable way is accessible across all hardware vendors. This accessibility allows higher level Media APIs (such as Media Foundation) to build their media layers on top of this API which takes care of abstracting the different hardware platforms. Given the low level design of the API, these higher level media layers can optimize for their scenarios by having fine grain control of synchronization and memory allocation/residency aspects of the video encode session, such as full control of the reference picture management and bitstream headers writing responsibilities. This shift of responsibilities to the layer sitting above this API also allows hardware vendors to have a consistent set of encoding policies (for example, DPB heuristics such as adaptive GOP) in the media layer that can be reused across different hardware platforms.
 
 ### Interoperability with D3D graphics, compute, and machine learning
 
-The D3D12 video encode API enables efficient interoperability between D3D12 video encode and D3D12 graphics, compute, and machine learning scenarios, which is interesting for scenarios such as running machine learning inference over a camera stream.
+The D3D12 video encode API enables efficient interoperability between D3D12 video encode and D3D12 graphics, compute, and ML scenarios. This interoperability is interesting for scenarios such as running ML inference over a camera stream.
 
 ### Game streaming scenarios
 

@@ -11,13 +11,14 @@ keywords:
 - tracing WDK , DTrace
 - trace message format files WDK
 ms.date: 05/02/2022
+ms.topic: concept-article
 ---
 
 # DTrace ETW
 
 Use DTrace for Windows to process existing ETW events and to add new ETW events.
 
-Event Tracing for Windows (ETW) is an kernel-level tracing facility that lets you log kernel or application-defined events to a log file. You can consume the events in real time or from a log file and use them to debug an application or to determine where performance issues are occurring in the application. For general information about ETW, see [About Event Tracing](/windows/win32/etw/about-event-tracing).
+Event Tracing for Windows (ETW) is a kernel-level tracing facility that lets you log kernel or application-defined events to a log file. You can consume the events in real time or from a log file and use them to debug an application or to determine where performance issues are occurring in the application. For general information about ETW, see [About Event Tracing](/windows/win32/etw/about-event-tracing).
 
 > [!NOTE]
 > DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server Build 18975.

@@ -1,7 +1,8 @@
 ---
-title: NDIS/WIFI verification
+title: NDIS/WIFI Verification
 description: The NDIS/WIFI verification option determines whether an NDIS or WIFI driver correctly interacts with the Windows operating system kernel.
 ms.date: 04/10/2020
+ms.topic: best-practice
 ---
 
 # NDIS/WIFI verification

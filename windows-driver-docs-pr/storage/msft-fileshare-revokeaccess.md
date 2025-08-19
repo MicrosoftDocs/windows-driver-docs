@@ -1,5 +1,5 @@
 ---
-title: RevokeAccess method of the MSFT\_FileShare class
+title: RevokeAccess Method of the MSFT_FileShare Class
 description: Revokes access to the file share for specified users.
 ms.assetid: D6835291-A93F-4510-9B2D-71B0AABFEDFF
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

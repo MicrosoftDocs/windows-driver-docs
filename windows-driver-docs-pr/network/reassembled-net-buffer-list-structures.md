@@ -8,6 +8,7 @@ keywords:
 - child/parent NET_BUFFER_LIST relationships WDK networking
 - relationships WDK NET_BUFFER_LIST
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Reassembled NET\_BUFFER\_LIST Structures
@@ -20,7 +21,7 @@ An NDIS driver can create a reassembled [**NET\_BUFFER\_LIST**](/windows-hardwar
 
 The following figure shows the relationship between a parent NET\_BUFFER\_LIST structure and a reassembled child structure:
 
-![diagram illustrating the relationship between a parent net\-buffer\-list structure and a reassembled child structure .](images/netbufferlistreassembled.png)
+:::image type="content" source="images/netbufferlistreassembled.png" alt-text="Diagram illustrating the relationship between a parent NET_BUFFER_LIST structure and a reassembled child structure.":::
 
 The preceding figure contains a parent [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure and a child structure that was derived from that parent. The parent structure has one [**NET\_BUFFER\_LIST\_CONTEXT**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list_context) structure and three [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures with MDLs attached. The parent structure's parent pointer is **NULL** indicating that it is not a derived structure.
 

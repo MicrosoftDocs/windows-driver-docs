@@ -1,7 +1,8 @@
 ---
-title: MSiSCSI\_HBASessionConfig WMI Class
+title: MSiSCSI_HBASessionConfig WMI Class
 description: MSiSCSI\_HBASessionConfig WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_HBASessionConfig WMI Class

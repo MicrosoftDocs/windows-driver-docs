@@ -5,6 +5,7 @@ keywords:
 - OIDs WDK networking , filter drivers
 - filtering OID requests in filter driver
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Filtering OID Requests in an NDIS Filter Driver
@@ -19,7 +20,7 @@ NDIS can call a filter driver's [*FilterCancelOidRequest*](/windows-hardware/dri
 
 The following figure illustrates a filtered OID request.
 
-![diagram illustrating a filtered oid request.](images/requestfilter.png)
+:::image type="content" source="images/requestfilter.png" alt-text="Diagram illustrating the process of a filtered OID request.":::
 
 The filter driver can complete the OID request synchronously or asynchronously by returning NDIS\_STATUS\_SUCCESS or NDIS\_STATUS\_PENDING, respectively, from [*FilterOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_oid_request). *FilterOidRequest* can also complete synchronously with an error status.
 

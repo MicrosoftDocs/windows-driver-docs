@@ -7,6 +7,7 @@ keywords:
 - DMA transfers WDK KMDF , completing
 - completing DMA transfers WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Completing a DMA Transfer

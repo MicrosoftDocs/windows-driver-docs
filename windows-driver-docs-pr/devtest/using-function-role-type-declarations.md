@@ -2,6 +2,7 @@
 title: Using Function Role Type Declarations
 description: Using Function Role Type Declarations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using Function Role Type Declarations
@@ -20,12 +21,4 @@ For more information about adding these declarations, see the following.
 [Declaring Functions by Using Function Role Types for NDIS Drivers](declaring-functions-by-using-function-role-types-for-ndis-drivers.md)
 
 [Declaring Functions by Using Function Role Types for Storport Drivers](declaring-functions-by-using-function-role-types-for-storport-drivers.md)
-
- 
-
- 
-
-
-
-
 

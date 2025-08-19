@@ -2,6 +2,7 @@
 title: Data-driven Class
 description: Data-driven Class
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # <span id="taef.data-driven_class"></span>Data-driven Class

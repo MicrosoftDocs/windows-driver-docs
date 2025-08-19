@@ -10,7 +10,8 @@ keywords:
 - kernel-mode driver signing WDK
 - driver package digital signatures WDK
 - package digital signatures WDK
-ms.date: 04/20/2017
+ms.date: 08/19/2024
+ms.topic: concept-article
 ---
 
 # Driver Signing Policy
@@ -36,7 +37,7 @@ To sign a driver for Windows 10, follow these steps:
 
 1. For each version of Windows 10 that you want to certify on, download the Windows HLK (Hardware Lab Kit) for that version and run a full cert pass against the client for that version. You'll get one log per version.
 2. If you have multiple logs, merge them into a single log using the most recent HLK.
-3. Submit your driver and the merged HLK test results to the [Windows Hardware Developer Center Dashboard portal](../dashboard/index.yml).
+3. Submit your driver and the merged HLK test results to the [Windows Hardware Developer Center Dashboard portal](../dashboard/index.md).
 
 For version-specific details, please review the [WHCP (Windows Hardware Compatibility Program) policy](/windows-hardware/design/compatibility/whcp-specifications-policies) for the Windows versions you want to target.
 

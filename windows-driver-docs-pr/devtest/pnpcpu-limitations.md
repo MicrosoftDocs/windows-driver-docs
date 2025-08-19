@@ -4,6 +4,7 @@ description: PNPCPU Limitations
 keywords:
 - PNPCPU WDK , limitations
 ms.date: 04/20/2017
+ms.topic: troubleshooting-known-issue
 ---
 
 # PNPCPU Limitations
@@ -20,12 +21,4 @@ ms.date: 04/20/2017
 -   When the custom bus enumerator driver is loaded, the default processor driver will not be loaded, hence the error code 28 on each processor that is shown in Device Manager.
 
 -   After performing the hot-add operation, there will be two entries in Device Manager for each processor, one with error code 28 and the other not. When you select **View** &gt; **Devices by Connection** in Device Manager, you will see one instance of each processor under **Microsoft ACPI-Compliant System**, and a second instance for each under **Processor Bus Enumerator**, which will be the actual running instance.
-
- 
-
- 
-
-
-
-
 

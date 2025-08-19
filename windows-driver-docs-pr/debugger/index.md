@@ -3,31 +3,44 @@ title: Install WinDbg
 description: Start here for an overview on the Windows debugger and installing WinDbg.
 ms.assetid: 938ef180-84de-442f-9b6c-1138c2fc8d5a
 keywords: ["Debugging Tools for Windows", "Windows debugging", "Windows Debugger", "Kernel debugging", "Kernel debugger", "WinDbg"]
-ms.date: 04/10/2023
-ms.topic: article
+ms.date: 04/04/2025
+ms.topic: install-set-up-deploy
 ---
 
 # Install the Windows debugger
 
 WinDbg is a debugger that can be used to analyze crash dumps, debug live user-mode and kernel-mode code, and examine CPU registers and memory.
 
-## ![Small WinDbg logo](images/windbg-logo-35px.png) Install WinDbg
+:::image type="content" source="images/windbg-logo-35px.png" alt-text="WinDbg logo.":::
 
-This latest version features a more modern user experience with an updated interface, fully fledged scripting capabilities, an extensible debugging data model, built-in Time Travel Debugging (TTD) support, and many additional features.
+This latest version features a more modern user experience with an updated interface, fully-fledged scripting capabilities, an extensible debugging data model, built-in Time Travel Debugging (TTD) support, and many additional features.
 
-For more information, see [WinDbg Overview](windbg-overview.md).
+For more information, see [WinDbg Overview](../debuggercmds/windbg-overview.md).
+
+> [!NOTE]
+> Formerly released as *WinDbg Preview* in the Microsoft Store, this version leverages the same underlying engine as *WinDbg (classic)* and supports all the same commands, extensions, and workflows.
+
+## Install WinDbg directly
+
+Download the WinDbg installer file below, then open the file and follow the prompts. 
 
 > [!div class="nextstepaction"]
 > [Download WinDbg](https://aka.ms/windbg/download)
 
-Select *Install* and the debugger will download and install.
 
-WinDbg will also periodically check for new versions in the background and autoupdate if necessary.
+## Install WinDbg with Microsoft Store
 
-> [!NOTE]
-> Formerly released as *WinDbg Preview* in the Microsoft Store, this version leverages the same underlying engine as *WinDbg (classic)* and supports all the same commands, extensions, and workflows.
->
-> To get and stay on the latest release, install WinDbg as described on this page. *WinDbg Preview* will not receive further updates in the Microsoft Store.
+[![Download from Microsoft Store button](images/microsoftstoredownloadbutton.svg)](https://apps.microsoft.com/detail/WinDbg%20Preview/9PGJGD53TN86?launch=true&mode=mini "Download from Microsoft Store")
+
+## Install WinDbg with Windows Package Manager
+
+To install WinDbg using the [Windows Package Manager](/windows/package-manager/winget/), run the following from the command line / PowerShell:
+
+```powershell
+winget install Microsoft.WinDbg
+```
+
+## Notes
 
 ### Requirements
 
@@ -36,6 +49,16 @@ WinDbg will also periodically check for new versions in the background and autou
   - Windows 10 Anniversary Update (version 1607) or newer
 - Processor architectures:
   - x64 and ARM64
+ 
+### Updating WinDbg
+
+When installed directly or with Microsoft Store, WinDbg will periodically check for new versions in the background and auto-update if necessary. 
+
+When installed with Windows Package Manager, run this command to update WinDbg: 
+
+```powershell
+winget upgrade Microsoft.WinDbg
+```
 
 ### Troubleshooting
 

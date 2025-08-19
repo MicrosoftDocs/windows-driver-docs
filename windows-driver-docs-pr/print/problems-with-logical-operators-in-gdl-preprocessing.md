@@ -11,6 +11,7 @@ keywords:
 - AND operator WDK GDL
 - OR operator WDK GDL
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Problems with Logical Operators in GDL Preprocessing

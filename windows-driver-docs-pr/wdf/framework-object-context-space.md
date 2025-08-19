@@ -6,6 +6,7 @@ keywords:
 - context space WDK KMDF
 - object context space WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Framework Object Context Space

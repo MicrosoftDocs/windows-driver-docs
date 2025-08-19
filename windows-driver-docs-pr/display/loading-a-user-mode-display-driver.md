@@ -6,6 +6,7 @@ keywords:
 - user-mode display drivers WDK Windows Vista , loading
 - loading drivers WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Loading a User-Mode Display Driver

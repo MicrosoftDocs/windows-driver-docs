@@ -29,7 +29,7 @@ The LIVE\_SYSTEM\_DUMP live dump has a value of 0x00000161. This indicates that 
 
 ## Remarks
 
-Starting in Windows 22H2, version 25276, Task manger can be used to create a live system memory dump. For more information, see [Task Manager live memory dump](task-manager-live-dump.md).
+Starting in Windows 22H2, version 25276, Task manager can be used to create a live system memory dump. For more information, see [Task Manager live memory dump](task-manager-live-dump.md).
 
 
 
@@ -37,4 +37,4 @@ Starting in Windows 22H2, version 25276, Task manger can be used to create a liv
 
 [Task Manager live memory dump](task-manager-live-dump.md)
 
-[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+[Kernel Live Dump Code Reference](kernel-live-dump-code-reference.md)

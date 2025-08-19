@@ -3,6 +3,7 @@ title: Remote Tool Examples
 description: Remote Tool Examples
 keywords: ["Remote Tool, examples"]
 ms.date: 05/23/2017
+ms.topic: example-scenario
 ---
 
 # Remote Tool Examples
@@ -231,8 +232,3 @@ To end a remote session, on the server computer, type <strong>@k</strong>. This 
  
 
  
-
-
-
-
-

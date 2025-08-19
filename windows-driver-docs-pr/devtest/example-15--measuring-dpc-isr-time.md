@@ -8,6 +8,7 @@ keywords:
 - ISRs WDK software tracing
 - time WDK software tracing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 15: Measuring DPC/ISR Time
@@ -133,7 +134,7 @@ A **tracelog -stop** command usually requires a session name, but because "NT Ke
 
 To summarize the DPC/ISR messages in the event trace log, use the version of Tracerpt included in Windows XP with SP2 and later versions of Windows.
 
-The following Tracerpt command formats the messages in the *Test01.etl* file and creates an text-formatted report of the activity in Windows XP with SP2.
+The following Tracerpt command formats the messages in the *Test01.etl* file and creates a text-formatted report of the activity in Windows XP with SP2.
 
 ```
 tracerpt test01.etl -report dpcisr.txt -df

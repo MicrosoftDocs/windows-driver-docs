@@ -1,7 +1,8 @@
 ---
-title: SRB\_SURPRISE\_REMOVAL
+title: SRB_SURPRISE_REMOVAL
 description: SRB\_SURPRISE\_REMOVAL
 ms.date: 08/25/2020
+ms.topic: reference
 ---
 
 # SRB\_SURPRISE\_REMOVAL

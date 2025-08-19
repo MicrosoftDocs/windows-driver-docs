@@ -1,7 +1,8 @@
 ---
-title: Requests That KMDF Does Not Support
+title: Requests that KMDF does not Support
 description: Requests That KMDF Does Not Support
 ms.date: 04/20/2017
+ms.topic: error-reference
 ---
 
 # Requests That KMDF Does Not Support

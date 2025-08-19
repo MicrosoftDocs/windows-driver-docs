@@ -7,6 +7,7 @@ keywords:
 - I/O requests WDK KMDF , DMA devices
 - request processing WDK KMDF , DMA devices
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Handling I/O Requests in a KMDF Driver for a Bus-Master DMA Device
@@ -21,7 +22,7 @@ This topics in this section describe how a KMDF driver for a bus-master DMA devi
 
 Handling I/O requests in a KMDF driver for a bus-master DMA device requires code in several of the driver’s event callback functions, as shown in the following figure:
 
-![dma implementation in kmdf drivers.](images/dma-implementation-in-kmdf.png)
+:::image type="content" source="images/dma-implementation-in-kmdf.png" alt-text="Flowchart illustrating the DMA implementation process in KMDF drivers.":::
 
 As shown above, DMA-related processing takes place in four phases:
 

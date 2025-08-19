@@ -1,7 +1,8 @@
 ---
-title: Code example for implementing helper methods
+title: Code Example for Implementing Helper Methods
 description: Code example for implementing helper methods
 ms.date: 03/28/2023
+ms.topic: how-to
 ---
 
 # Code example for implementing helper methods

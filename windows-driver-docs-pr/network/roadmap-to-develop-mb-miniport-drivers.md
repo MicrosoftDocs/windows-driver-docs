@@ -2,7 +2,9 @@
 title: Roadmap to Develop MB Miniport Drivers
 description: Roadmap to Develop MB Miniport Drivers
 ms.date: 04/20/2017
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: checklist
 ---
 
 # Roadmap to Develop MB Miniport Drivers
@@ -24,7 +26,7 @@ To create an MB miniport driver, follow these steps:
 
 -   **Step 4**: Learn about the Windows driver build, test, and debug processes and tools.
 
-    Building a driver differs from building a user mode application. For information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) testing, see [Building, Debugging, and Testing Drivers](/windows-hardware/drivers). For information about building, testing, verifying, and debugging tools, see [Driver Development Tools](../devtest/index.md).
+    Building a driver differs from building a user mode application. For information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) testing, see [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop). For information about building, testing, verifying, and debugging tools, see [Driver Development Tools](../devtest/index.md).
 
 -   **Step 5**: Make design decisions about your MB miniport driver.
 
@@ -32,7 +34,7 @@ To create an MB miniport driver, follow these steps:
 
 -   **Step 6**: Develop, build, test, and debug your MB miniport driver.
 
-    For information about iterative building, testing, and debugging, see [Overview of Build, Debug, and Test Process](/windows-hardware/drivers). This process will help ensure that you build a miniport driver that works.
+    For information about iterative building, testing, and debugging, see [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop). This process will help ensure that you build a miniport driver that works.
 
 -   **Step 7**: Create a driver package for your MB miniport driver.
 

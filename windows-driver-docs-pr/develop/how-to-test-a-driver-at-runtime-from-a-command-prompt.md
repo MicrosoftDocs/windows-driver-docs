@@ -1,14 +1,15 @@
 ---
-title: How to test a driver at runtime from a Command Prompt
+title: How to Test a Driver At Runtime from a Command Prompt
 description: The WDK provides device testing components that enable you to test a driver on a test computer on your network.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How to test a driver at runtime from a Command Prompt
 
 The WDK provides device testing components that enable you to test a driver on a test computer on your network. You can use these components outside of Visual Studio by copying and installing the necessary files. You can use these components to run the same collection of device driver tests that are available in Visual Studio to test the features and functions of your driver.
 
-Starting in WDK 8.1, you can copy and run the HCK Test Suites on test computers using command scripts. See [How to run the HCK Test Suites in WDK 8.1](run-the-hck-test-suites-in-the-wdk.md).
+Starting in WDK 8.1, you can copy and run the HCK Test Suites on test computers using command scripts. See [How to run the HCK Test Suites in WDK 8.1](/previous-versions/windows/drivers/develop/run-the-hck-test-suites-in-the-wdk).
 
 ### <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
@@ -51,6 +52,6 @@ Te.exe /name:"*PNPSurpriseRemoveAndRestartDevice" Devfund_PnPDTest.dll /P:"DQ=De
 
 * [Device Fundamentals Tests](../devtest/device-fundamentals-tests.md)
 * [Device Fundamentals Test Parameters](how-to-select-and-configure-the-device-fundamental-tests.md)
-* [How to run the HCK Test Suites in WDK 8.1](run-the-hck-test-suites-in-the-wdk.md)
+* [How to run the HCK Test Suites in WDK 8.1](/previous-versions/windows/drivers/develop/run-the-hck-test-suites-in-the-wdk)
 * [Test Authoring and Execution Framework (TAEF)](../taef/index.md)
 * [Te.exe Command Options](../taef/te-exe-command-line-parameters.md)

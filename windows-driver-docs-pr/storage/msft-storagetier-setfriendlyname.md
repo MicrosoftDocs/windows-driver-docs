@@ -1,5 +1,5 @@
 ---
-title: SetFriendlyName method of the MSFT\_StorageTier class
+title: SetFriendlyName Method of the MSFT_StorageTier Class
 description: Renames the storage tier.
 ms.assetid: B4DD1630-AA13-46DD-8106-5662173A4E30
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

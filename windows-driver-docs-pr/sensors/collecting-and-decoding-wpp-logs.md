@@ -1,7 +1,8 @@
 ---
-title: Collecting and decoding WPP logs
+title: Collecting and Decoding WPP Logs
 description: This article provides information about collecting and decoding Windows software trace preprocessor (WPP) logs for the sensor class extension (CX) trace provider.
-ms.date: 11/30/2022
+ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # Collecting and decoding WPP logs

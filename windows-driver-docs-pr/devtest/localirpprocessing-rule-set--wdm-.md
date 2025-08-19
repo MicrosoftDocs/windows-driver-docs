@@ -1,7 +1,8 @@
 ---
-title: LocalIrpProcessing rule set (WDM)
+title: LocalIrpProcessing Rule Set (WDM)
 description: Use these rules to verify that your driver correctly handles I/O request packets (IRP) that are created by the driver.
 ms.date: 05/21/2018
+ms.topic: reference
 ---
 
 # LocalIrpProcessing rule set (WDM)

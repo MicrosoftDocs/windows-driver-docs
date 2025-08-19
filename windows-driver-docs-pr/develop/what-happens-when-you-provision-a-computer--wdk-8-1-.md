@@ -1,15 +1,15 @@
 ---
-title: What happens when you provision a computer (WDK 8.1)
+title: What Happens when you Provision a Computer (WDK 8.1)
 description: Here we show what happens when you use version 8.1 of the Windows Driver Kit (WDK) to provision a target computer.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # What happens when you provision a computer (WDK 8.1)
 
 Using Microsoft Visual Studio to configure and set up driver deployment and driver testing is called *provisioning a target computer* or *provisioning a test computer*. For information about provisioning, see [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md). Here we show what happens when you use version 8.1 of the Windows Driver Kit (WDK) to provision a target computer.
 
-## <span id="when_you_provision_a_computer_wdk_8_0"></span><span id="WHEN_YOU_PROVISION_A_COMPUTER_WDK_8_0"></span>When you provision a computer (WDK 8.1)
-
+## When you provision a computer (WDK 8.1)
 
 Provisioning a computer performs the following tasks:
 
@@ -32,8 +32,7 @@ Provisioning a computer performs the following tasks:
 -   Reboots the target computer if necessary
 -   Creates a system restore point
 
-## <span id="Removing_provisioning_from_the_target_computer"></span><span id="removing_provisioning_from_the_target_computer"></span><span id="REMOVING_PROVISIONING_FROM_THE_TARGET_COMPUTER"></span>Removing provisioning from the target computer
-
+## Removing provisioning from the target computer
 
 Once you have provisioned a target computer, you cannot completely remove the provisioning. However, you can remove most of the provisioning from the target computer by using Visual Studio on the host computer. Here are the steps.
 
@@ -43,8 +42,7 @@ Once you have provisioned a target computer, you cannot completely remove the pr
 4.  When the removal process is complete, select **Finish**.
 5.  Uninstall WDK Test Target Setup from the target computer.
 
-## <span id="when_you_remove_provisioning__wdk_8.1_"></span><span id="WHEN_YOU_REMOVE_PROVISIONING__WDK_8.1_"></span>When you remove provisioning (WDK 8.1)
-
+## When you remove provisioning (WDK 8.1)
 
 When you remove provisioning from the target computer, these items are removed:
 

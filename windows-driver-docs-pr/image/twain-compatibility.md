@@ -1,7 +1,8 @@
 ---
-title: TWAIN compatibility
+title: TWAIN Compatibility
 description: TWAIN compatibility
-ms.date: 03/21/2022
+ms.date: 02/25/2025
+ms.topic: concept-article
 ---
 
 # TWAIN compatibility

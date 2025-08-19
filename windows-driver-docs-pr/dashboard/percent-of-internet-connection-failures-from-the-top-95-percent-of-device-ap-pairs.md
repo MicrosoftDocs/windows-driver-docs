@@ -1,8 +1,8 @@
 ---
 title: Internet connection failures of device and access-point pairs with more than 50% signal quality
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of instances where a device fails to connect to the internet via Wi-Fi.
-ms.topic: article
 ms.date: 01/23/2023
+ms.topic: concept-article
 ---
 
 # Internet connection failures of device and access-point pairs with more than 50% signal quality
@@ -20,7 +20,7 @@ After a device connects to an access point (AP), it can use that connection to a
 | **Measurement criteria** | Device / AP pair aggregation  |
 | **Minimum instances** | 1,000 |
 | **Passing criteria** | <= 6% of Instances have connection failures to internet via Wi-Fi |
-| **Measure ID** | 32321427 (Legacy), 40722956 |
+| **Measure ID** | 40722956 |
 
 ## Calculation
 

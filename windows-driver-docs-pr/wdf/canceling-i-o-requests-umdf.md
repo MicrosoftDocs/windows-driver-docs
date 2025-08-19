@@ -9,6 +9,7 @@ keywords:
 - I/O requests WDK UMDF , states
 - request processing WDK UMDF , states
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Canceling I/O Requests in UMDF

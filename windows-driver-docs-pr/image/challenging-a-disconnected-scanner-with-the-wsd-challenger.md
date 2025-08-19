@@ -1,7 +1,8 @@
 ---
-title: Challenge a disconnected scanner with the WSD Challenger
+title: Challenge a Disconnected Scanner with the WSD Challenger
 description: Challenge a disconnected scanner with the WSD Challenger
 ms.date: 03/28/2023
+ms.topic: concept-article
 ---
 
 # Challenge a disconnected scanner with the WSD Challenger

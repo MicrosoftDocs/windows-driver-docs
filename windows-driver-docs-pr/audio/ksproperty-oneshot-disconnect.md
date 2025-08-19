@@ -17,7 +17,6 @@ ms.date: 03/06/2023
 
 # KSPROPERTY\_ONESHOT\_DISCONNECT
 
-
 The **KSPROPERTY\_ONESHOT\_DISCONNECT** property is used to prompt the audio driver to disconnect from the Bluetooth audio device.
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table

@@ -1,7 +1,8 @@
 ---
-title: Can I use enumerations in my tracing code
+title: Can I Use Enumerations in My Tracing Code
 description: Can I use enumerations in my tracing code
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Can I use enumerations in my tracing code?

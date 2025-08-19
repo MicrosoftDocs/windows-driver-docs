@@ -1,7 +1,8 @@
 ---
-title: Windows automatically segments long messages
+title: Windows Automatically Segments Long Messages
 description: Windows automatically segments long messages
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Windows automatically segments long messages
@@ -11,7 +12,7 @@ The Mobile Broadband SMS platform automatically segments long messages that are 
 
 Mobile network operators charge users per message segment. SMS platform automatically creates a maximum of 10 segments and truncates text above the limit.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Send SMS by using the text-mode interface](calculate-characters-and-segments-of-a-draft-sms.md)

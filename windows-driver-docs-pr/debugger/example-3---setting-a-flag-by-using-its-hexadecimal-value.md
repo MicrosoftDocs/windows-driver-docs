@@ -2,6 +2,7 @@
 title: Example 3 Setting a Flag by Using Its Hexadecimal Value
 description: Example 3 Setting a Flag by Using Its Hexadecimal Value
 ms.date: 10/12/2018
+ms.topic: concept-article
 ---
 
 # Example 3: Setting a Flag by Using Its Hexadecimal Value
@@ -30,8 +31,3 @@ Current Boot Registry Settings are: 02000000
  
 
  
-
-
-
-
-

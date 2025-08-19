@@ -2,7 +2,11 @@
 title: MB Data Connectivity
 description: MB Data Connectivity
 ms.date: 03/01/2021
-ms.custom: UpdateFrequency3
+ms.update-cycle: 1095-days
+ms.topic: concept-article
+ms.custom:
+  - UpdateFrequency3
+  - sfi-image-nochange
 ---
 
 # MB Data Connectivity
@@ -20,10 +24,10 @@ ms.custom: UpdateFrequency3
 - [MB data connectivity troubleshooting guide](#mb-data-connectivity-troubleshooting-guide)
 
 ## Cellular Architecture in Windows
-The main componment of the cellular stack in the OS is **WWAN Service (WwanSvc)** which controls and sets up all the data connection, states, and events.
+The main component of the cellular stack in the OS is **WWAN Service (WwanSvc)** which controls and sets up all the data connection, states, and events.
 It interacts with a couple of client drivers to enable activities across the OS.
 
-![WWANSVC External Interaction.](images/mb-wwansvc-external-interaction-diag.png "WWANSVC External Interaction")
+:::image type="content" source="images/mb-wwansvc-external-interaction-diag.png" alt-text="Diagram of WWAN Service external interactions with components.":::
 
 The acronyms in the preceding image:
 
@@ -52,10 +56,10 @@ For more information on individual components, see [Cellular architecture](cellu
 
 The main state machines resides in the Default Context Controller and its associated Context Life Cycle object.
 
-![WWANSVC Internal Interaction.](images/mb-wwansvc-internal-interaction-diag.png "WWANSVC Internal Interaction")
+:::image type="content" source="images/mb-wwansvc-internal-interaction-diag.png" alt-text="Diagram of internal interactions among WWAN Service components such as Default Context Controller.":::
 
 ## Interactions between the Default Context Controller and its immediate neighbors
-![Default Context Controller.](images/mb-default-context-controller-diag.png "Default Context Controller")
+:::image type="content" source="images/mb-default-context-controller-diag.png" alt-text="Diagram illustrating interactions between Default Context Controller and neighboring components.":::
 
 ## Default Context Controller
 The Default Context Controller controls the internet data connection.
@@ -83,7 +87,7 @@ The Default Context Controller performs the following tasks:
 The Default Context Controller uses a finite state machine to manage its tasks. 
 
 ### Finite state machine transitions of the Default Context Controller
-![Deafult Context Controller FSM.](images/mb-default-context-controller-fsm-diag.png "Default Context Controller FSM")
+:::image type="content" source="images/mb-default-context-controller-fsm-diag.png" alt-text="Diagram depicting Finite State Machine transitions in the Default Context Controller.":::
 
 ### Auto-connect
 #### Policy settings that need to be met for auto-connect
@@ -158,7 +162,7 @@ If one round of attempts has multiple MBB profiles, the order is:
 	-  Slow-pace: 300 seconds
 	-  Glacier-pace: 24 hours (practically no retry)
 
-#### Back-off cancelation or back-off timer expiration
+#### Back-off cancellation or back-off timer expiration
 - Back-off can be cancelled and retry commenced immediately in these situations:
     - Auto-connect hint from WCM
 	- Auto-connect MBB profiles are added or updated
@@ -208,16 +212,16 @@ If one round of attempts has multiple MBB profiles, the order is:
 
 ### Successful Activation
 
-![Successful PDP Context Activation.](images/mb_successful_activation.png "Successful PDP Context Activation Flow")
+:::image type="content" source="images/mb_successful_activation.png" alt-text="Flowchart illustrating successful PDP context activation process in data connectivity.":::
 
 ### Successful Deactivation
 
-![Successful PDP Context Deactivation.](images/mb_successful_deactivation.png "Successful PDP Context Deactivation Flow")
+:::image type="content" source="images/mb_successful_deactivation.png" alt-text="Flowchart illustrating successful PDP context deactivation process in data connectivity.":::
 
 
 ### Manual Connect
 
-![Manual Connection.](images/mb_manual_connect.png "Manual Connection Flow")
+:::image type="content" source="images/mb_manual_connect.png" alt-text="Flowchart illustrating manual connection process in data connectivity.":::
 
 ## Hardware Lab Kit (HLK) tests
 
@@ -265,7 +269,7 @@ The file showing the HLK test results should have been generated in the director
 ## MB data connectivity troubleshooting guide
 1. Logs can be collected and decoded using these instructions: [MB Collecting Logs](mb-collecting-logs.md)
 1. Open the .txt file in [TextAnalysisTool](mb-analyzing-logs.md)
-1. Load the [Bacis Connectivity filter](mb-basic-connectivity-tat.md)
+1. Load the [Basic Connectivity filter](mb-basic-connectivity-tat.md)
 
 ### Sample log for disconnect success:
 ```
@@ -319,7 +323,7 @@ TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDefaultC
 TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDefaultContextController::IsAllowedByRoamingPolicies Message: 	return TRUE"
 TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDataExecutor::DisconnectMatchingAdditionalPdpContexts Message: 	""Looking for APN: microsoft.com, IPType: 0"""
 TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDataResourceManager::CheckResourceMaxContextCountByOEM Message: 	non-CDMA"
-TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDataResourceManager::CheckResourceMaxContextCountByOEM Message: 	""per IMSI OEM configred MaxNumberOfPDPContexts not found, trying device settings."""
+TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDataResourceManager::CheckResourceMaxContextCountByOEM Message: 	""per IMSI OEM configured MaxNumberOfPDPContexts not found, trying device settings."""
 TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDataResourceManager::CheckResourceMaxContextCountByOEM Message: 	""device OEM configred MaxNumberOfPDPContexts not found, using default settings."""
 TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDataResourceManager::SetPdpContextsOEMConfigured Message: 	OEMConfig using 8"
 TraceLog	Microsoft-Windows-WWAN-SVC-EVENTS	25:16.1	"FunctionCall: 	CWwanDataResourceManager::UpdatePdpContexts Message: 	""OEMConfiged 8, Modem supports 17, using 8"""

@@ -1,7 +1,8 @@
 ---
-title: TrEE driver samples
+title: TrEE Driver Samples
 description: The samples in this directory provide a starting point for writing a custom TrEE driver for your device.
 ms.date: 03/22/2023
+ms.topic: example-scenario
 ---
 
 # Trusted Execution Environment (TrEE) driver samples

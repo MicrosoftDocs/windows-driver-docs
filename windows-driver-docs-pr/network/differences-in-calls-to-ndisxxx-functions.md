@@ -4,6 +4,7 @@ description: Differences in Calls to NdisXxx Functions
 keywords:
 - NdisCmXxx functions WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Differences in Calls to NdisXxx Functions

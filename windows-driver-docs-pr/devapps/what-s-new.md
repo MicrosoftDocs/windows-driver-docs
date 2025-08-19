@@ -1,10 +1,14 @@
 ---
-title: What's new for UWP device apps
+title: What's New for UWP Device Apps
 description: This section provides a glimpse of what's new for UWP device apps.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
+ms.topic: whats-new
 ---
 
 # What's new for UWP device apps
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 This section provides a glimpse of what's new for UWP device apps. For more info about device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 

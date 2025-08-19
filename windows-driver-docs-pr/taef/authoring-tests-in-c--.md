@@ -2,6 +2,7 @@
 title: Authoring Tests in C++
 description: Authoring Tests in C++
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Authoring Tests in C++
@@ -64,7 +65,7 @@ If you wish to define the tests inline within the class declaration, you can do 
 
 **Lines 10 and 15** now contain the definitions of the test methods.
 
-**Note**  If you put your test class declaration in a header file, it is best to only include that header file into one cpp file. Including a test class declaration into multiple CPP files results in extratraneous data being compiled into the test DLL.
+**Note**  If you put your test class declaration in a header file, it is best to only include that header file into one cpp file. Including a test class declaration into multiple CPP files results in extraneous data being compiled into the test DLL.
 
  
 

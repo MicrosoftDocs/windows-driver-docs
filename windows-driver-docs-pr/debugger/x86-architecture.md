@@ -2,14 +2,11 @@
 title: x86 Architecture
 description: x86 Architecture
 keywords: ["x86 processor, architecture", "registers, on an x86 processor", "x86 processor, registers", "x86 processor, calling conventions", "x86 processor, data types"]
-ms.date: 10/21/2022
+ms.date: 12/13/2024
+ms.topic: concept-article
 ---
 
 # x86 Architecture
-
-
-## <span id="ddk_x86_architecture_dbg"></span><span id="DDK_X86_ARCHITECTURE_DBG"></span>
-
 
 The Intel x86 processor uses complex instruction set computer (CISC) architecture, which means there is a modest number of special-purpose registers instead of large quantities of general-purpose registers. It also means that complex special-purpose instructions will predominate.
 
@@ -17,7 +14,7 @@ The x86 processor traces its heritage at least as far back as the 8-bit Intel 80
 
 Microsoft Win32 uses the x86 processor in *32-bit flat mode*. This documentation will focus only on the flat mode.
 
-### <span id="Registers"></span><span id="registers"></span><span id="REGISTERS"></span>Registers
+## Registers
 
 The x86 architecture consists of the following unprivileged integer registers.
 
@@ -61,8 +58,6 @@ The x86 architecture consists of the following unprivileged integer registers.
 </tr>
 </tbody>
 </table>
-
- 
 
 All integer registers are 32 bit. However, many of them have 16-bit or 8-bit subregisters.
 
@@ -139,13 +134,12 @@ All integer registers are 32 bit. However, many of them have 16-bit or 8-bit sub
 </tbody>
 </table>
 
- 
 
 Operating on a subregister affects only the subregister and none of the parts outside the subregister. For example, storing to the **ax** register leaves the high 16 bits of the **eax** register unchanged.
 
-When using the [**? (Evaluate Expression)**](---evaluate-expression-.md) command, registers should be prefixed with an "at" sign ( **@** ). For example, you should use <strong>? @ax</strong> rather than **? ax**. This ensures that the debugger recognizes **ax** as a register rather than a symbol.
+When using the [**? (Evaluate Expression)**](../debuggercmds/---evaluate-expression-.md) command, registers should be prefixed with an "at" sign ( **@** ). For example, you should use <strong>? @ax</strong> rather than **? ax**. This ensures that the debugger recognizes **ax** as a register rather than a symbol.
 
-However, the (@) is not required in the [**r (Registers)**](r--registers-.md) command. For instance, **r ax=5** will always be interpreted correctly.
+However, the (@) is not required in the [**r (Registers)**](../debuggercmds/r--registers-.md) command. For instance, **r ax=5** will always be interpreted correctly.
 
 Two other registers are important for the processor's current state.
 
@@ -172,7 +166,7 @@ The instruction pointer is the address of the instruction being executed.
 
 The flags register is a collection of single-bit flags. Many instructions alter the flags to describe the result of the instruction. These flags can then be tested by conditional jump instructions. See [x86 Flags](#x86-flags) for details.
 
-### <span id="Calling_Conventions"></span><span id="calling_conventions"></span><span id="CALLING_CONVENTIONS"></span>Calling Conventions
+### Calling Conventions
 
 The x86 architecture has several different calling conventions. Fortunately, they all follow the same register preservation and function return rules:
 
@@ -202,7 +196,7 @@ The following is a list of calling conventions used on the x86 architecture:
 
     Function parameters are passed on the stack, pushed right to left, and the caller cleans the stack. The **\_\_cdecl** calling convention is used for all functions with variable-length parameters.
 
-### <span id="Debugger_Display_of_Registers_and_Flags"></span><span id="debugger_display_of_registers_and_flags"></span><span id="DEBUGGER_DISPLAY_OF_REGISTERS_AND_FLAGS"></span>Debugger Display of Registers and Flags
+### Debugger Display of Registers and Flags
 
 Here is a sample debugger register display:
 
@@ -214,7 +208,7 @@ cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000             efl=00000286
 
 In user-mode debugging, you can ignore the **iopl** and the entire last line of the debugger display.
 
-### <span id="x86-flags"></span><span id="X86_FLAGS"></span>x86 Flags
+### x86 Flags
 
 In the preceding example, the two-letter codes at the end of the second line are *flags*. These are single-bit registers and have a variety of uses.
 
@@ -233,7 +227,7 @@ The following table lists the x86 flags:
 | **tf**    | Trap Flag            |       |             |If **tf** equals 1, the processor will raise a STATUS\_SINGLE\_STEP exception after the execution of one instruction. This flag is used by a debugger to implement single-step tracing. It should not be used by other applications. |
 | **iopl**  | I/O Privilege Level  |       |             |I/O Privilege Level This is a two-bit integer, with values between zero and 3. It is used by the operating system to control access to hardware. It should not be used by applications. |
  
-When registers are displayed as a result of some command in the Debugger Command window, it is the *flag status* that is displayed. However, if you want to change a flag using the [**r (Registers)**](r--registers-.md) command, you should refer to it by the *flag code*.
+When registers are displayed as a result of some command in the Debugger Command window, it is the *flag status* that is displayed. However, if you want to change a flag using the [**r (Registers)**](../debuggercmds/r--registers-.md) command, you should refer to it by the *flag code*.
 
 In the Registers window of WinDbg, the flag code is used to view or alter flags. The flag status is not supported.
 
@@ -247,7 +241,7 @@ This sets the sign flag to zero. If you do another register display, the **ng** 
 
 The Sign Flag, Zero Flag, and Carry Flag are the most commonly-used flags.
 
-### <span id="Conditions"></span><span id="conditions"></span><span id="CONDITIONS"></span>Conditions
+### Conditions
 
 A *condition* describes the state of one or more flags. All conditional operations on the x86 are expressed in terms of conditions.
 
@@ -309,8 +303,6 @@ The assembler uses a one or two letter abbreviation to represent a condition. A 
 </tr>
 </tbody>
 </table>
-
- 
 
 Conditions can also be used to compare two values. The **cmp** instruction compares its two operands, and then sets flags as if subtracted one operand from the other. The following conditions can be used to check the result of **cmp** *value1*, *value2*.
 
@@ -399,8 +391,6 @@ NAE</td>
 </tbody>
 </table>
 
- 
-
 Conditions are typically used to act on the result of a **cmp** or **test** instruction. For example,
 
 ```asm
@@ -410,7 +400,7 @@ jz equal
 
 compares the **eax** register against the number 5 by computing the expression (**eax** - 5) and setting flags according to the result. If the result of the subtraction is zero, then the **zr** flag will be set, and the **jz** condition will be true so the jump will be taken.
 
-### <span id="Data_Types"></span><span id="data_types"></span><span id="DATA_TYPES"></span>Data Types
+### Data Types
 
 -   byte: 8 bits
 
@@ -424,7 +414,7 @@ compares the **eax** register against the number 5 by computing the expression (
 
 -   oword: 128 bits
 
-### <span id="Notation"></span><span id="notation"></span><span id="NOTATION"></span>Notation
+### Notation
 
 The following table indicates the notation used to describe assembly language instructions.
 
@@ -479,21 +469,19 @@ The following table indicates the notation used to describe assembly language in
 </tbody>
 </table>
 
- 
-
-### <span id="Addressing_Modes"></span><span id="addressing_modes"></span><span id="ADDRESSING_MODES"></span>Addressing Modes
+### Addressing Modes
 
 There are several different addressing modes, but they all take the form **T ptr \[expr\]**, where **T** is some data type (see the preceding Data Types section) and **expr** is some expression involving constants and registers.
 
 The notation for most modes can be deduced without much difficulty. For example, **BYTE PTR \[esi+edx\*8+3\]** means "take the value of the **esi** register, add to it eight times the value of the **edx** register, add three, then access the byte at the resulting address."
 
-### <span id="Pipelining"></span><span id="pipelining"></span><span id="PIPELINING"></span>Pipelining
+### Pipelining
 
 The Pentium is dual-issue, which means that it can perform up to two actions in one clock tick. However, the rules on when it is capable of doing two actions at once (known as *pairing*) are very complicated.
 
 Because x86 is a CISC processor, you do not have to worry about jump delay slots.
 
-### <span id="Synchronized_Memory_Access"></span><span id="synchronized_memory_access"></span><span id="SYNCHRONIZED_MEMORY_ACCESS"></span>Synchronized Memory Access
+### Synchronized Memory Access
 
 Load, modify, and store instructions can receive a **lock** prefix, which modifies the instruction as follows:
 
@@ -505,7 +493,7 @@ The **xchg** instruction automatically obeys the previous rules whenever it exch
 
 All other instructions default to nonlocking.
 
-### <span id="Jump_Prediction"></span><span id="jump_prediction"></span><span id="JUMP_PREDICTION"></span>Jump Prediction
+### Jump Prediction
 
 Unconditional jumps are predicted to be taken.
 
@@ -513,7 +501,7 @@ Conditional jumps are predicted to be taken or not taken, depending on whether t
 
 If the CPU does not have a record of whether the conditional jump was taken or not taken the last time it was executed, it predicts backward conditional jumps as taken and forward conditional jumps as not taken.
 
-### <span id="Alignment"></span><span id="alignment"></span><span id="ALIGNMENT"></span>Alignment
+### Alignment
 
 The x86 processor will automatically correct unaligned memory access, at a performance penalty. No exception is raised.
 
@@ -521,11 +509,11 @@ A memory access is considered aligned if the address is an integer multiple of t
 
 The **lock** prefix should not be used for unaligned memory accesses.
 
- 
+## See also
+
+[x64 Architecture](x64-architecture.md)
+
+[X86-64 Wikipedia](https://en.wikipedia.org/wiki/X86-64)
+
 
  
-
-
-
-
-

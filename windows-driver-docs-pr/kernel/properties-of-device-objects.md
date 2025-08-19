@@ -3,6 +3,7 @@ title: Properties of Device Objects
 description: Properties of Device Objects
 keywords: ["device objects WDK kernel , properties", "properties WDK device objects"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Properties of Device Objects

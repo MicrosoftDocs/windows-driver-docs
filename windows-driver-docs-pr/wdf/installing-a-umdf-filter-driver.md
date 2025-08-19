@@ -2,6 +2,7 @@
 title: Installing a UMDF Filter Driver
 description: A filter driver can support a specific device or all devices in a setup class.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Installing a UMDF Filter Driver
@@ -15,7 +16,7 @@ As you structure your device stack, keep in mind that the framework currently su
 
 **How to install and configure your driver**
 
-1.  A UMDF 1 filter driver should call [**IWDFDeviceInitialize::SetFilter**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdeviceinitialize-setfilter) from the its [**IDriverEntry::OnDeviceAdd**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) callback function. Starting in UMDF version 2, your driver instead calls [**WdfFdoInitSetFilter**](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitsetfilter).
+1.  A UMDF 1 filter driver should call [**IWDFDeviceInitialize::SetFilter**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdeviceinitialize-setfilter) from its [**IDriverEntry::OnDeviceAdd**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) callback function. Starting in UMDF version 2, your driver instead calls [**WdfFdoInitSetFilter**](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitsetfilter).
 
 2.  In addition to any UMDF-specific directives your driver may specify, you must specify the **UmdfService** and **UmdfServiceOrder** directives. In this topic, we'll specify an upper filter driver:
 

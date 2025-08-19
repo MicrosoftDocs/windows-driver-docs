@@ -2,7 +2,7 @@
 title: Activating a Smart Client
 description: Once the DbgSrv process server has been activated, you can create a smart client on another computer and begin a debugging session.
 keywords: ["Activating a Smart Client Windows Debugging"]
-ms.date: 02/28/2019
+ms.date: 11/26/2024
 topic_type:
 - apiref
 ms.topic: reference
@@ -10,16 +10,33 @@ api_name:
 - Activating a Smart Client
 api_type:
 - NA
+ms.custom: sfi-ropc-nochange
 ---
 
 # Activating a Smart Client
-
 
 Once the DbgSrv process server has been activated, you can create a smart client on another computer and begin a debugging session.
 
 There are two ways to start a smart client: by starting CDB or WinDbg with the -premote [command-line option](command-line-options.md), or by using the WinDbg graphical interface.
 
+> [!IMPORTANT]
+> There are important security considerations when using remote debugging. For more information, including information on enabling secure mode, see [Security During Remote Debugging](security-during-remote-debugging.md) and [Security Considerations for Windows Debugging Tools](security-considerations.md).
+
 The protocol of the smart client must match the protocol of the process server. The general syntax for starting a smart client depends on the protocol used. The following options exist:
+
+*Recommended connection methods, with some additional security*
+
+```console
+Debugger -premote spipe:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,pipe=PipeName[,password=Password] [Options]
+
+Debugger -premote ssl:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,port=Socket[,password=Password] [Options]
+
+Debugger -premote ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,port=Socket[,password=Password] [Options]
+
+Debugger -premote com:port=COMPort,baud=BaudRate,channel=COMChannel[,password=Password] [Options]
+```
+
+*Unsecure connection methods*
 
 ```console
 Debugger -premote npipe:server=Server,pipe=PipeName[,password=Password] [Options]
@@ -28,16 +45,23 @@ Debugger -premote tcp:server=Server,port=Socket[,password=Password][,ipversion=6
 
 Debugger -premote tcp:clicon=Server,port=Socket[,password=Password][,ipversion=6] [Options]
 
-Debugger -premote com:port=COMPort,baud=BaudRate,channel=COMChannel[,password=Password] [Options]
-
-Debugger -premote spipe:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,pipe=PipeName[,password=Password] [Options]
-
-Debugger -premote ssl:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,port=Socket[,password=Password] [Options]
-
-Debugger -premote ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,port=Socket[,password=Password] [Options]
 ```
 
 To use the graphical interface to connect to a process server, WinDbg must be in dormant mode -- it must either have been started with no command-line parameters, or it must have ended the previous debugging session. Select the **File | Connect to Remote Stub** menu command. When the **Connect to Remote Stub Server** dialog box appears, enter one of the following strings into the **Connection string** text box:
+
+*Recommended connection methods, with some additional security*
+
+```dbgcmd
+spipe:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,pipe=PipeName[,password=Password] 
+
+ssl:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,port=Socket[,password=Password] 
+
+ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,port=Socket[,password=Password] 
+
+com:port=COMPort,baud=BaudRate,channel=COMChannel[,password=Password] 
+```
+
+*Unsecure connection methods*
 
 ```dbgcmd
 npipe:server=Server,pipe=PipeName[,password=Password] 
@@ -45,20 +69,11 @@ npipe:server=Server,pipe=PipeName[,password=Password]
 tcp:server=Server,port=Socket[,password=Password][,ipversion=6] 
 
 tcp:clicon=Server,port=Socket[,password=Password][,ipversion=6] 
-
-com:port=COMPort,baud=BaudRate,channel=COMChannel[,password=Password] 
-
-spipe:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,pipe=PipeName[,password=Password] 
-
-ssl:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,port=Socket[,password=Password] 
-
-ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,port=Socket[,password=Password] 
 ```
 
 Alternatively, you can use the **Browse** button to locate active process servers.
 
-## <span id="ddk_activating_a_smart_client_dbg"></span><span id="DDK_ACTIVATING_A_SMART_CLIENT_DBG"></span>
-
+## Parameters
 
 The parameters in the preceding commands have the following possible values:
 
@@ -117,7 +132,7 @@ Any additional command-line parameters can be placed here. See [Command-Line Opt
 
 Since the process server simply acts as a gateway for the smart client, the additional *Options* will be the same as those you would use if you were starting a user-mode debugger on the same machine as the target application.
 
-If you are using the **-premote** option with [**.attach (Attach to Process)**](-attach--attach-to-process-.md) or [**.create (Create Process)**](-create--create-process-.md), the parameters are the same as those listed above.
+If you are using the **-premote** option with [**.attach (Attach to Process)**](../debuggercmds/-attach--attach-to-process-.md) or [**.create (Create Process)**](../debuggercmds/-create--create-process-.md), the parameters are the same as those listed above.
 
 ## Troubleshooting
 
@@ -128,8 +143,3 @@ It is uncommon that protocol changes are made. When this does happen, be sure yo
  
 
  
-
-
-
-
-

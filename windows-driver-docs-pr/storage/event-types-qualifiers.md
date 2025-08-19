@@ -1,7 +1,8 @@
 ---
-title: EVENT\_TYPES\_QUALIFIERS
+title: EVENT_TYPES_QUALIFIERS
 description: EVENT\_TYPES\_QUALIFIERS
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # EVENT\_TYPES\_QUALIFIERS

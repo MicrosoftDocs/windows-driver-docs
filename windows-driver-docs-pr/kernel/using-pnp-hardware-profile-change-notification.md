@@ -3,6 +3,7 @@ title: Using PnP Hardware Profile Change Notification
 description: Using PnP Hardware Profile Change Notification
 keywords: ["notifications WDK PnP , hardware profile changes", "hardware profile change notifications WDK PnP", "EventCategoryHardwareProfileChange notification", "profile change notifications WDK PnP", "machine hardware profile change notifications WDK PnP"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Using PnP Hardware Profile Change Notification

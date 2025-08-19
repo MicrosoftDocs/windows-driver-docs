@@ -1,7 +1,8 @@
 ---
-title: MSiSCSI\_ManagementOperations WMI Class
+title: MSiSCSI_ManagementOperations WMI Class
 description: MSiSCSI\_ManagementOperations WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_ManagementOperations WMI Class
@@ -64,7 +65,7 @@ class MSiSCSI_ManagementOperations
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces one of the [MSiSCSI\_ManagementOperations](/windows-hardware/drivers/ddi/index) data structures.
+When the WMI tool suite compiles the preceding class definition, it produces one of the [MSiSCSI\_ManagementOperations](msiscsi-managementoperations-wmi-class.md) data structures.
 
  
 

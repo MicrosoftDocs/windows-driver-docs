@@ -1,5 +1,5 @@
 ---
-title: AddMember method of the MSFT\_ReplicationGroup class
+title: AddMember Method of the MSFT_ReplicationGroup Class
 description: Adds members to this replication group.
 ms.assetid: 1E6A5089-40BB-4401-AC4D-7A266FB18C46
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

@@ -3,6 +3,7 @@ title: Starting a Remote.exe Session
 description: Starting a Remote.exe Session
 keywords: ["remote debugging through remote.exe, starting the session"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Starting a Remote.exe Session
@@ -43,7 +44,7 @@ You cannot use this method to start NTSD directly, because the NTSD process runs
 
 ### <span id="starting_the_remote_exe_server__second_method"></span><span id="STARTING_THE_REMOTE_EXE_SERVER__SECOND_METHOD"></span>Starting the Remote.exe Server: Second Method
 
-There is an alternate method that can start a Remote.exe Server. This method involves first starting the debugger, and then using the [**.remote (Create Remote.exe Server)**](-remote--create-remote-exe-server-.md) command to start the server.
+There is an alternate method that can start a Remote.exe Server. This method involves first starting the debugger, and then using the [**.remote (Create Remote.exe Server)**](../debuggercmds/-remote--create-remote-exe-server-.md) command to start the server.
 
 Since the **.remote** command is issued after the debugger has started, this method works equally well with KD, CDB, and NTSD.
 
@@ -90,8 +91,3 @@ To end the server session, enter the <strong>@K</strong> command on the Remote.e
  
 
  
-
-
-
-
-

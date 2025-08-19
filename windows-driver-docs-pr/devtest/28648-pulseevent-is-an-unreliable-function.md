@@ -1,9 +1,10 @@
 ---
-title: C28648 warning
+title: C28648 Warning
 description: Warning C28648 PulseEvent is an unreliable function.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28648"
+ms.topic: reference
 ---
 
 # C28648
@@ -22,12 +23,4 @@ Some of the ways to fix the use of **PulseEvent**:
 -   If all threads waiting on the event need to be released AND the event is a manual-reset event, redesign your code to use a different kind of synchronization object (such as a semaphore).
 
 -   If all threads waiting on the event need to be released AND the event is an auto-reset event, call **SetEvent** instead of **PulseEvent** (your original call to **PulseEvent** was releasing only one thread anyway).
-
- 
-
- 
-
-
-
-
 

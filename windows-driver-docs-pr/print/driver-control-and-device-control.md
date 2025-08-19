@@ -1,5 +1,5 @@
 ---
-title: Driver control and device control
+title: Driver Control and Device Control
 description: Provides information about driver control and device control.
 keywords:
 - proprietary color management WDK print
@@ -9,6 +9,7 @@ keywords:
 - driver color management WDK See color management WDK
 - device color management WDK See color management WDK
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Driver control and device control
@@ -17,7 +18,7 @@ ms.date: 01/27/2023
 
 If color management control is provided by either the driver or by printer hardware, the driver's [printer graphics DLL](printer-graphics-dll.md) must set the GCAPS_ICM flag in the [**DEVINFO**](/windows/win32/api/winddi/ns-winddi-devinfo) structure.
 
-The driver must indicate support for CYMK color space (if appropriate), as described in [Supporting CMYK Color Space](supporting-cmyk-color-space.md).
+The driver must indicate support for CMYK color space (if appropriate), as described in [Supporting CMYK Color Space](supporting-cmyk-color-space.md).
 
 Printer graphics DLLs must define the following three functions:
 

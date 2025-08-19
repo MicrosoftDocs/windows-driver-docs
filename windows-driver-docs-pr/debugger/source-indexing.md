@@ -3,6 +3,7 @@ title: Source Indexing
 description: Source Indexing
 keywords: ["source indexing"]
 ms.date: 03/07/2022
+ms.topic: concept-article
 ---
 
 # Source Indexing
@@ -32,8 +33,3 @@ These tools are installed with Debugging Tools for Windows in the subdirectory s
  
 
  
-
-
-
-
-

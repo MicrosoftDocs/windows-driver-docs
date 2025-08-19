@@ -1,7 +1,8 @@
 ---
-title: Microsoft Bluetooth Test Platform supported hardware
+title: Microsoft Bluetooth Test Platform Supported Hardware
 description: Describes Bluetooth Test Platform (BTP) supported hardware.
-ms.date: 05/05/2022
+ms.date: 01/10/2024
+ms.topic: feature-availability
 ---
 
 # Bluetooth Test Platform supported hardware

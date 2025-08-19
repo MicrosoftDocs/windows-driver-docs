@@ -2,6 +2,7 @@
 title: Setting Breakpoints in CDB
 description: Setting Breakpoints in CDB
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Setting Breakpoints in CDB
@@ -12,8 +13,3 @@ You can set, view, and manipulate breakpoints in CDB by entering commands. For a
  
 
  
-
-
-
-
-

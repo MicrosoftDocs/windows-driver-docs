@@ -1,13 +1,13 @@
 ---
-title: Common data fields
+title: Common Data Fields
 description: This topic shows the common data fields that are included in all sensor-specific data fields.
-ms.date: 03/02/2023
+ms.date: 08/16/2024
 ms.topic: reference
 ---
 
 # Sensor data fields
 
-*Sensor data fields* represent specific kinds of information that a sensor can provide. When reporting data, a value is said to be contained in a *data field*. A collection of related data fields comprise a *data report*. Data reports are packaged together within a SENSOR_COLLECTION_LIST structure. Each data report must contain at least one valid data field and a time stamp that identifies when the data report was created. Time stamps are represented by the PKEY_SensorData_Timestamp property key. Examples of data fields are the x, y, z acceleration values for an accelerometer. Each data field is identified by a **PROPERTYKEY** constant.
+Sensor data fields represent specific kinds of information that a sensor can provide. When reporting data, a value is contained in a data field. A collection of related data fields comprise a data report. Data reports are packaged together within a SENSOR_COLLECTION_LIST structure. Each data report must contain at least one valid data field and a time stamp that identifies when the data report was created. Time stamps are represented by the PKEY_SensorData_Timestamp property key. Examples of data fields are the x, y, z acceleration values for an accelerometer. Each data field is identified by a **PROPERTYKEY** constant.
 
 ## Common data fields
 

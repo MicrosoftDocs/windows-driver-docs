@@ -1,5 +1,5 @@
 ---
-title: Convert print monitors for use with clustered print servers
+title: Convert Print Monitors for use with Clustered Print Servers
 description: How to convert print monitors for use with clustered print servers.
 keywords:
 - print monitors WDK, clustered print servers
@@ -7,6 +7,7 @@ keywords:
 - print server clustering WDK
 - converting print monitors for clustered print servers
 ms.date: 09/07/2022
+ms.topic: how-to
 ---
 
 # Convert print monitors for use with clustered print servers

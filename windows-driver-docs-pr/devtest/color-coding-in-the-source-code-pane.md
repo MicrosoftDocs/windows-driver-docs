@@ -6,6 +6,7 @@ keywords:
 - Static Driver Verifier Report WDK , Source Code pane
 - Source Code pane WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Color Coding in the Source Code Pane
@@ -38,12 +39,4 @@ The following text colors are used in the **Source Code** pane:
 -   **Black:** Code that is not executed in the path to the rule violation.
 
 -   **Blue:** (Rule source file (\*.slic) only.) Indicates code that is not executed in the path to the rule violation.
-
- 
-
- 
-
-
-
-
 

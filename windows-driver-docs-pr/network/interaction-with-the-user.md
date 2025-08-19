@@ -6,6 +6,7 @@ keywords:
 - user interaction WDK Native 802.11 IHV Extensions DLL
 - Native 802.11 IHV Extensions DLL WDK , user interaction
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Interaction with the User

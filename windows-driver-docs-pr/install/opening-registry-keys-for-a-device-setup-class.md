@@ -1,10 +1,11 @@
 ---
-title: Opening registry keys for a device setup class
+title: Opening Registry Keys for a Device Setup Class
 description: Provides information about opening registry keys for a device setup class.
 keywords:
 - registry WDK device installations , opening registry keys for a device setup class
 - device setup classes WDK device installations , opening registry keys
 ms.date: 08/15/2022
+ms.topic: how-to
 ---
 
 # Opening registry keys for a device setup class

@@ -2,6 +2,7 @@
 title: CAB Files that Contain Paging Files Along with a Memory Dump
 description: A memory dump file can be placed in a cabinet (CAB) file along with paging files.
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # CAB Files that Contain Paging Files Along with a Memory Dump
@@ -60,8 +61,3 @@ To specify that you want paging files to be saved when Windows restarts, set the
  
 
  
-
-
-
-
-

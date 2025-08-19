@@ -8,6 +8,7 @@ keywords:
 - removing trace providers
 - disabling trace providers
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Removing a Trace Provider
@@ -32,12 +33,4 @@ traceview -disable SessionName -guid {#GUID | GUIDFile}
 ```
 
 However, this command causes TraceView to stop the trace session. To continue, use a **traceview -start***SessionName* command to restart the trace session. For more information, see [**TraceView Control Commands**](traceview-control-commands.md).
-
- 
-
- 
-
-
-
-
 

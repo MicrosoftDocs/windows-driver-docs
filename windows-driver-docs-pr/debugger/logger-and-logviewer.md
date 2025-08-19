@@ -3,6 +3,7 @@ title: Logger and LogViewer
 description: Logger and LogViewer
 keywords: ["Logger", "LogViewer"]
 ms.date: 05/23/2017
+ms.topic: overview
 ---
 
 # Logger and LogViewer
@@ -35,9 +36,3 @@ Logger and LogViewer are included in [Debugging Tools for Windows](index.md).
  
 
  
-
-
-
-
-
-

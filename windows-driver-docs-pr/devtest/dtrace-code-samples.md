@@ -11,6 +11,7 @@ keywords:
 - tracing WDK , DTrace
 - trace message format files WDK
 ms.date: 05/02/2022
+ms.topic: tutorial
 ---
 
 # DTrace Code Samples
@@ -590,7 +591,7 @@ dtrace:::END
 }
 ```
 
-Save the file as comparequid.d and use the -s option to run the test script, providing the paramter shown below.
+Save the file as comparequid.d and use the -s option to run the test script, providing the parameter shown below.
 
 ```dtrace
 C:\Windows\system32>dtrace -s compareguid.d -c "powercfg /qh scheme_current sub_sleep standbyidle"

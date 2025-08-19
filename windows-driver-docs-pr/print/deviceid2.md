@@ -1,10 +1,11 @@
 ---
-title: DeviceID command
+title: DeviceID Command
 description: The DeviceID command returns the function discovery key.
 keywords:
 - WSDMON port monitors WDK , DeviceID command
 - DeviceID
 ms.date: 09/07/2021
+ms.topic: reference
 ---
 
 # DeviceID command

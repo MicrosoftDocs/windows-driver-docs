@@ -1,10 +1,11 @@
 ---
-title: Coexistence with other File System Filter Drivers
+title: Coexistence with Other File System Filter Drivers
 description: Coexistence with other File System Filter Drivers
 keywords:
 - security WDK file systems , coexistence
 - coexistence WDK file systems
 ms.date: 04/20/2017
+ms.topic: design-pattern
 ---
 
 # Coexistence with other File System Filter Drivers

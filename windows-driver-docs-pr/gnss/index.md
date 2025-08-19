@@ -1,7 +1,8 @@
 ---
-title: Global Navigation Satellite System (GNSS) driver design guide
+title: Global Navigation Satellite System (GNSS) Driver Design Guide
 description: This section contains design guidance for building Global Navigation Satellite System (GNSS) device drivers.
-ms.date: 03/21/2023
+ms.date: 01/24/2025
+ms.topic: design-pattern
 ---
 
 # Global Navigation Satellite System (GNSS) driver design guide
@@ -9,8 +10,6 @@ ms.date: 03/21/2023
 This section contains design guidance for building Global Navigation Satellite System (GNSS) device drivers.
 
 ## In this section
-
-[Global Navigation Satellite System (GNSS) driver design guide for Windows 8.1](gnss-driver-design-guide-for-windows-8-1.md)
 
 [Global Navigation Satellite System (GNSS) driver design guide for Windows 10](gnss-driver-design-guide-for-windows-10.md)
 

@@ -8,6 +8,7 @@ keywords:
 - multimedia WDK audio
 - Windows multimedia support WDK audio
 ms.date: 10/27/2017
+ms.topic: concept-article
 ---
 
 # Installing Windows Multimedia System Support for an Audio Adapter

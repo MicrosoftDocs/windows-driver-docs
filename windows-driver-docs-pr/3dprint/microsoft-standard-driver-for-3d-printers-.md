@@ -1,12 +1,13 @@
 ---
-title: Getting started guide - Microsoft Standard Driver for 3D Printers
+title: Getting Started Guide - Microsoft Standard Driver for 3D Printers
 description: The Microsoft Standard Driver for 3D Printers allows developers to easily make their printer compatible with Windows 10.
-ms.date: 03/17/2023
+ms.date: 08/16/2024
+ms.topic: get-started
 ---
 
 # Getting started guide - Microsoft Standard Driver for 3D Printers
 
-The Microsoft Standard Driver for 3D Printers allows developers to easily make their printer compatible with Windows 10. Any printer that uses Microsoft OS descriptors can be recognized as a compatible 3D printer. Using a concrete example, this article will show how to create a firmware that allows a device to be recognized as a 3D printer by Windows 10 and communicate its print capabilities.
+The Microsoft Standard Driver for 3D Printers allows developers to easily make their printer compatible with Windows 10. Any printer that uses Microsoft OS descriptors can be recognized as a compatible 3D printer. Using a concrete example, this article shows how to create firmware that allows a device to be recognized as a 3D printer by Windows 10 and communicate its print capabilities.
 
 ## Introduction
 
@@ -16,23 +17,23 @@ The general process to get a 3D printer working on Windows 10 includes the foll
 
 1. **Compatible ID**. The independent hardware vendor (IHV) has to include the "3D Print" compatible ID in the firmware of the printer. This allows the device to be recognized as a 3D printer.
 
-1. **Standard Driver**. Once the device is plugged in, Windows Update will download the 3D print standard driver and detect the current device as a 3D printer that uses a default configuration.
+1. **Standard Driver**. Once the device is plugged in, Windows Update downloads the 3D print standard driver and detect the current device as a 3D printer that uses a default configuration.
 
 1. **Extended properties descriptor**. Several base configurations for 3D printers are made available as part of the standard driver. A developer can therefore choose a base configuration that matches their 3D printer. On top of choosing a base configuration, a developer can override some of the properties to better match their 3D printer and include them in the new firmware.
 
-1. **Plug and play**. Once the firmware is burned in the flash memory of the 3D printer, whenever a user plugs it into a Windows 10 machine, the standard driver will automatically be downloaded and will use the custom print capabilities that the developer has chosen.
+1. **Plug and play**. Once the firmware is burned in the flash memory of the 3D printer, whenever a user plugs it into a Windows 10 machine, the standard driver will automatically be downloaded and uses the custom print capabilities that the developer has chosen.
 
-In the following sections, we will illustrate each of these steps using a concrete example.
+In the following sections, we'll illustrate each of these steps using a concrete example.
 
 For more information, see [Microsoft OS Descriptors](/previous-versions/gg463179(v=msdn.10)).
 
 ## Compatible ID
 
-To specify to the Windows operating system that we are currently using a 3D printer, we have to use the right compatible ID. The list of Microsoft Compatible ID are available at [Microsoft OS Descriptors](/previous-versions/gg463179(v=msdn.10)).
+To specify to the Windows operating system that we're currently using a 3D printer, we have to use the right compatible ID. The list of Microsoft Compatible ID are available at [Microsoft OS Descriptors](/previous-versions/gg463179(v=msdn.10)).
 
 The compatible ID for a 3D printer is shown in the following table:
 
-| Compatible ID | Sub-compatible ID | Description |
+| Compatible ID | Subcompatible ID | Description |
 |--|--|--|
 | "3DPRINT" (0x33 0x44 0x50 0x52 0x49 0x4E 0x54 0x00) | Varies | MS3DPRINT G-Code Printer |
 
@@ -72,13 +73,13 @@ This line in the code above is the compatible ID of a 3D Printer:
 
 `'3', 'D', 'P', 'R', 'I', 'N', 'T', 0x00,         // compatibleID ("3DPRINT")`
 
-With this specific configuration, IHVs can compile their firmware and flash the device. Then when the device is plugged in, the 3D Print Standard Driver will automatically get downloaded from Windows Update.
+With this specific configuration, IHVs can compile their firmware and flash the device. Then when the device is plugged in, the 3D Print Standard Driver is automatically downloaded from Windows Update.
 
 At this stage the printer is using the standard driver default configuration, the parameters used by the default configuration are accessible in the folder %SYSTEMROOT%\\System32\\MS3DPrint in the file StandardGCode.xml. Additionally, a developer can chose to use a different base configuration, a list of base configurations are available in the same folder %SYSTEMROOT%\\System32\\MS3DPrint. This list is regularly populated with new configuration as new 3D printers emerge on the market.
 
 ## Extended Properties OS Feature Descriptor
 
-As stated in the above section, IHVs have access to several base configurations. This has the advantage of minimizing the amount of information that has to be stored in the printer's flash memory. Developers can inspect the base configurations made available and choose the one that is the closest to their printers. In this example we are going to choose the SD card base configuration and override some of the properties with the parameters below:
+As stated in the above section, IHVs have access to several base configurations. This has the advantage of minimizing the amount of information that has to be stored in the printer's flash memory. Developers can inspect the base configurations made available and choose the one that is the closest to their printers. In this example we're going to choose the SD card base configuration and override some of the properties with the parameters below:
 
 | Parameters | Value |
 |--|--|
@@ -87,7 +88,7 @@ As stated in the above section, IHVs have access to several base configurations.
 | Job3DOutputAreaHeight | 270000 |
 | Filamentdiameter | 2850 |
 
-For more information about these parameters, please refer to the *MS3DPrint Standard G-Code Driver.docx* document in the [3D Printing SDK (MSI download)](https://download.microsoft.com/download/6/2/7/62727B7E-D493-4B7E-9429-56FF84365852/MS3DPrinting.msi) documentation.
+For more information about these parameters, see the *MS3DPrint Standard G-Code Driver.docx* document in the [3D Printing SDK (MSI download)](https://download.microsoft.com/download/6/2/7/62727B7E-D493-4B7E-9429-56FF84365852/MS3DPrinting.msi) documentation.
 
 To specify which base configuration to use and which parameters to override, the developer has to specify it through the Extended Properties OS Feature Descriptor as shown here:
 
@@ -129,21 +130,21 @@ static const uint8_t PROGMEM ms3dprint_properties_descriptor[] = {
 };
 ```
 
-Information regarding the extended properties OS feature descriptor are in the *OS\_Desc\_Ext\_Prop.doc* file. See [Microsoft OS Descriptors](/previous-versions/gg463179(v=msdn.10)) for more information.
+Information regarding the extended properties OS feature descriptor are in the *OS\_Desc\_Ext\_Prop.doc* file. For more information, see [Microsoft OS Descriptors](/previous-versions/gg463179(v=msdn.10)).
 
 ## Verifying the print capabilities
 
-Once the device has the firmware burned in flash memory , the device will automatically be detected by Windows 10 and the print capabilities will be stored in registry.
+Once the device has the firmware burned in flash memory, the device will automatically be detected by Windows 10 and the print capabilities are stored in registry.
 
 ![installing compatable 3d printer .](images/installing-compatible-3d-printer.png)
 
-It is very important that the IHV changes the VID/PID of the device to their own. You should never use the Vendor ID (VID) or Product ID (PID) of another existing device as the operating system will not be able to detect the device properly as the VID and PID take priority over the OS descriptor.
+It's important that the IHV changes the VID/PID of the device to their own. You should never use the Vendor ID (VID) or Product ID (PID) of another existing device as the operating system won't be able to detect the device properly as the VID and PID take priority over the OS descriptor.
 
 If the device has been properly installed, the device should be listed in **Devices and Printers**.
 
 ![devices and printers.](images/devices-and-printers-3d.png)
 
-In the **Device Manager**, the matching device id and the compatible id can be verified.
+In the **Device Manager**, the matching device ID and the compatible ID can be verified.
 
 ![device manager.](images/device-manager-3d.png)
 
@@ -159,11 +160,9 @@ The 3D Print driver properties can be obtained by visiting the registry at **HKE
 
 ![view 3d print driver properties in the registry.](images/printers-registry-3d.png)
 
-## Additional resources
+## Resources
 
 For more information, see the following documents and resources:
-
-[3D Printing in Windows](https://www.microsoft.com/3d-print/windows-3d-printing)
 
 [3D Printing SDK (MSI download)](https://download.microsoft.com/download/6/2/7/62727B7E-D493-4B7E-9429-56FF84365852/MS3DPrinting.msi)
 

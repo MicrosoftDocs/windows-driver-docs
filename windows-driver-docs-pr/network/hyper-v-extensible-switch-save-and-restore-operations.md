@@ -2,6 +2,7 @@
 title: Hyper-V Extensible Switch Save and Restore Operations Overview
 description: Hyper-V Extensible Switch Save and Restore Operations Overview
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Hyper-V Extensible Switch Save and Restore Operations Overview

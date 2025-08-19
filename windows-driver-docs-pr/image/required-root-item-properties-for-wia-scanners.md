@@ -2,6 +2,7 @@
 title: Required Root Item Properties for WIA Scanners
 description: Required Root Item Properties for WIA Scanners
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Required Root Item Properties for WIA Scanners

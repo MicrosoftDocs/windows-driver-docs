@@ -2,14 +2,10 @@
 description: Audio Devices Design Guide
 title: Audio Devices Design Guide
 ms.date: 04/20/2017
-ms.topic: article
+ms.topic: design-pattern
 ---
 
 # Audio Devices Design Guide
-
-
-## <span id="audio_drivers"></span><span id="AUDIO_DRIVERS"></span>
-
 
 This section describes how to design Microsoft Windows Driver Model (WDM) audio drivers. These drivers control audio adapters that render and capture streams containing audio data in wave and MIDI formats.
 
@@ -32,13 +28,3 @@ The following topics are discussed:
 [Windows Audio Processing Objects](windows-audio-processing-objects.md)
 
 [Audio Miniport Drivers](audio-miniport-drivers.md)
-
-[Legacy Audio Interfaces](legacy-audio-interfaces.md)
-
- 
-
- 
-
-
-
-

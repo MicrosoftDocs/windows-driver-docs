@@ -1,10 +1,11 @@
 ---
-title: Standard options
+title: Standard Options
 description: Standard options are associated with standard features and are identified by predefined names that the GPD language recognizes.
 keywords:
 - printer options WDK Unidrv , standard
 - standard options WDK Unidrv
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Standard options

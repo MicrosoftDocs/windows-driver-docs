@@ -11,6 +11,7 @@ keywords:
 - portrait mode WDK Unidrv
 - Unidrv WDK print
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Specifying Paper Orientation

@@ -1,11 +1,12 @@
 ---
-title: Rules for modifying device properties
+title: Rules for Modifying Device Properties
 description: Provides information about rules for modifying device properties.
 keywords:
 - device properties WDK device installations , rules for modifying
 - device properties WDK device installations , modifying
 - modifying device properties WDK device installations
 ms.date: 08/15/2022
+ms.topic: best-practice
 ---
 
 # Rules for modifying device properties

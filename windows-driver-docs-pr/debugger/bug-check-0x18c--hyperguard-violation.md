@@ -17,7 +17,7 @@ api_type:
 The HYPERGUARD\_VIOLATION bug check has a value of 0x0000018C. This indicates that the kernel has detected that critical kernel code or data have been corrupted.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 > [!NOTE] 
@@ -98,8 +98,3 @@ This bugcheck is generated when the kernel detects that critical kernel code or 
 ## See Also
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
-
-
-
-
-

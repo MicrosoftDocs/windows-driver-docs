@@ -1,41 +1,25 @@
 ---
-title: File systems and filter driver design guide
-description: File systems driver design guide
-ms.assetid: 62DE75F7-0211-4173-AF45-84B2DDFDC95C
-ms.date: 03/08/2022
-ms.topic: article
+title: File System and File System Filter Drivers
+description: Introduces file system drivers and file system filter drivers.
+ms.date: 04/30/2025
+keywords:
+- file system filter drivers , Windows , WDK
+- file system drivers , Windows , WDK
+ms.topic: concept-article
 ---
 
-# File systems driver design guide
+# File System and File System Filter Drivers
 
-This section of the WDK provides design guidelines related to file systems and filter drivers. See the [programming reference](/windows-hardware/drivers/ddi/_ifsk/) for reference pages.
+The documentation under this node contains developer-related information for the following types of drivers:
 
-## File systems
+* [File system drivers](about-file-system-drivers.md). Developing a new file system is almost always unnecessary and requirements/specifications for new file system drivers aren't predictable. For this reason, the documentation is limited to [INF creation](creating-an-inf-file-for-a-file-system-driver.md) and [sample code](file-system-sample-code.md).
 
-File systems in Windows are implemented as file system drivers working above the storage system.
+* [File system (FS) filter drivers](about-file-system-filter-drivers.md), also known as *minifilter drivers* or *minifilters*.
 
-Every system-supplied file system in Windows is designed to provide reliable data storage with varying features to meet the user's requirements. Standard file systems available in Windows include NTFS, ExFAT, UDF, and FAT32. A comparison of features for each of these file systems is shown in [File System Functionality Comparison](/windows/desktop/FileIO/filesystem-functionality-comparison). Additionally, the [Resilient File System](/windows-server/storage/refs/refs-overview) (ReFS), available on Windows Server 2012 and later versions, offers scalable large volume support and the ability to detect and correct data corruption on disk.
+## Other resources
 
-Developing a new file system driver is almost always unnecessary, and requirements/specifications for new file system drivers are not predictable. To that end, this design guide does not cover file system development. If you do need to develop a new file system driver beyond those available in Windows, sample code is available as a model (see below).
+* For DDI reference pages, see the [programming reference](/windows-hardware/drivers/ddi/_ifsk/).
 
-## File system filter drivers
+* For driver certification information, see the [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/). Tests for file systems and minifilter drivers are found under [Filter.Driver](/windows-hardware/test/hlk/testref/filter-driver).
 
-A file system filter driver, or minifilter, intercepts requests targeted at a file system or another file system filter driver. By intercepting the request before it reaches its intended target, a minifilter can extend or replace functionality provided by the original target of the request. Examples of filter drivers include:
-
-- Anti-virus filters
-- Backup agents
-- Encryption products
-
-Filter driver developers use the system-supplied [Filter Manager](./filter-manager-concepts.md), which provides a framework for developing filter drivers without having to manage all the complexities of file I/O. The Filter Manager simplifies the development of third-party filter drivers and solves many of the problems with the legacy filter driver model, such as the ability to control load order through an assigned altitude.
-
-## File system and filter sample code
-
-A number of Windows driver samples are available, including samples for file system development and file system filter driver development. See [Windows driver samples](../samples/index.md) for a complete list.
-
-## File system filter driver certification
-
-Certification information for File Systems and File System Filter Drivers is found in the [Windows Hardware Lab Kit (HLK)](https://go.microsoft.com/fwlink/p/?LinkId=733613). Tests for File Systems and File System Filter Drivers are found in the [Filter.Driver](/previous-versions/windows/hardware/hck/jj124779(v=vs.85)) category of the HCK.
-
-## Additional resources
-
-Along with this documentation and the sample code mentioned above, [OSR](https://go.microsoft.com/fwlink/p/?linkid=50692) offers a variety of resources for file system filter development, including seminars and community discussion forums such as the NTFDS forum.
+* For community support, [OSR](https://community.osr.com/) offers various training resources for file system filter developers. They also host community discussion forums such as the [Windows File Systems and Minifilters Devs Interest List](https://community.osr.com/c/ntfsd/6). These forums enable you to ask questions and communicate with filter driver developers from around the world.

@@ -1,5 +1,5 @@
 ---
-title: Support printer change notifications
+title: Support Printer Change Notifications
 description: Provides information about how to support printer change notifications.
 keywords:
 - print providers WDK, printer change notifications
@@ -9,6 +9,7 @@ keywords:
 - events WDK printer
 - print queues WDK, printer change notifications
 ms.date: 09/08/2022
+ms.topic: best-practice
 ---
 
 # Support printer change notifications

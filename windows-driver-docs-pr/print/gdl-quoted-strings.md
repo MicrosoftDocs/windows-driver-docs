@@ -7,6 +7,7 @@ keywords:
 - strings WDK GDL , quoted strings
 - quoted strings WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Quoted Strings
@@ -22,7 +23,7 @@ A *quoted string* begins and ends with the double quotation character ("). Any c
 
 -   The less than symbol (&lt;) introduces a [HexSubString](gdl-hexsubstrings.md) context.
 
--   Quoted strings can appear within a nested context; only the HexSubString context is recognized within a uoted string.
+-   Quoted strings can appear within a nested context; only the HexSubString context is recognized within a quoted string.
 
  
 

@@ -1,5 +1,5 @@
 ---
-title: GetVendorData method of the MSFT\_StorageEnclosure class
+title: GetVendorData Method of the MSFT_StorageEnclosure Class
 description: Returns the vendor-specific data from an enclosure.
 ms.assetid: 1CBBC9A4-73D1-4B4C-A164-7D9D40285709
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

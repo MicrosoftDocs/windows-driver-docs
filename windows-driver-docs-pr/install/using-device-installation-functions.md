@@ -5,6 +5,7 @@ keywords:
 - SetupAPI functions WDK , device installation functions
 - device installation functions WDK SetupAPI
 ms.date: 03/11/2022
+ms.topic: concept-article
 ---
 
 # Using Device Installation Functions

@@ -1,5 +1,5 @@
 ---
-title: Enumerating installed device setup classes
+title: Enumerating Installed Device Setup Classes
 description: Provides information about enumerating installed device setup classes.
 keywords:
 - enumerating installed device setup classes WDK
@@ -7,6 +7,7 @@ keywords:
 - installed device setup classes WDK , enumerating
 - device setup classes WDK device installations , enumerating
 ms.date: 08/15/2022
+ms.topic: concept-article
 ---
 
 # Enumerating installed device setup classes

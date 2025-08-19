@@ -1,7 +1,8 @@
 ---
-title: MSiSCSI\_RequestTimeStatistics WMI Class
+title: MSiSCSI_RequestTimeStatistics WMI Class
 description: MSiSCSI\_RequestTimeStatistics WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_RequestTimeStatistics WMI Class

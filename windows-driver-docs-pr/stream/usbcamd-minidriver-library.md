@@ -1,5 +1,5 @@
 ---
-title: USBCAMD minidriver library
+title: USBCAMD Minidriver Library
 description: USBCAMD minidriver Library
 keywords:
 - Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library
@@ -9,6 +9,7 @@ keywords:
 - USB-based streaming cameras WDK USBCAMD2
 - cameras WDK USBCAMD2
 ms.date: 06/19/2020
+ms.topic: concept-article
 ---
 
 # USBCAMD minidriver library

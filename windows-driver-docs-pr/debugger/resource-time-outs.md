@@ -3,6 +3,7 @@ title: Resource Time Outs
 description: Resource Time Outs
 keywords: ["resource time outs"]
 ms.date: 05/23/2017
+ms.topic: troubleshooting-general
 ---
 
 # Resource Time Outs
@@ -97,8 +98,3 @@ fec6bef4 77f716ab 0012dd64 0012dd3c 00000000 ntoskrnl!_KiSystemService+0x83
  
 
  
-
-
-
-
-

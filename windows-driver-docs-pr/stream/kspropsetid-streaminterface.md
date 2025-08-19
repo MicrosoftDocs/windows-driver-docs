@@ -1,7 +1,8 @@
 ---
-title: KSPROPSETID\_StreamInterface
+title: KSPROPSETID_StreamInterface
 description: KSPROPSETID\_StreamInterface
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_StreamInterface

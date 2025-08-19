@@ -2,8 +2,8 @@
 title: Custom Symbol Stores and Symbol Servers
 description: Custom Symbol Stores and Symbol Servers
 keywords: ["symbol servers", "symbol servers, overview", "symbol stores", "symbol stores, overview", "SymSrv", "SymSrv, overview", "SymStore", "SymStore, overview"]
-ms.custom: contperf-fy22q2
 ms.date: 10/28/2021
+ms.topic: concept-article
 ---
 
 # Custom Symbol Stores and Symbol Servers
@@ -20,7 +20,7 @@ The files are indexed according to unique parameters such as the time stamp and 
 
 The debugger accesses the files in a symbol store by using a *symbol server*. Debugging Tools for Windows includes both a symbol store creation tool, [SymStore](symstore.md), and a symbol server, *SymSrv*. It also includes a tool, [SymProxy](symproxy.md), for setting up an HTTP symbol store on a network to serve as a proxy for all symbol stores that the debugger may need to access.
 
-A symbol server enables the debuggers to automatically retrieve the correct symbol files from a symbol store without the user needing to know product names, releases, or build numbers. Debugging Tools for Windows contains a symbol server called *SymSrv*. The symbol server is activated by including a certain text string in the symbol path. Each time the debugger needs to load symbols for a newly loaded module, it calls the symbol server to locate the appropriate symbol files. For information about working with the symbol server, see see [Microsoft Public Symbols](microsoft-public-symbols.md).
+A symbol server enables the debuggers to automatically retrieve the correct symbol files from a symbol store without the user needing to know product names, releases, or build numbers. Debugging Tools for Windows contains a symbol server called *SymSrv*. The symbol server is activated by including a certain text string in the symbol path. Each time the debugger needs to load symbols for a newly loaded module, it calls the symbol server to locate the appropriate symbol files. For information about working with the symbol server, see [Microsoft Public Symbols](microsoft-public-symbols.md).
 
 If you wish to use a different method for your symbol search than that provided by SymSrv, it is possible to develop your own symbol server DLL. For details on implementing such a symbol server, see [Other Symbol Servers](other-symbol-servers.md).
 
@@ -28,7 +28,7 @@ This section includes:
 
 [HTTP Symbol Stores](http-symbol-stores.md)
 
-[File Share (SMB) Symbol Server](file-share--smb--symbol-server.md)
+[File Share (SMB) Debugger Symbol Server](file-share--smb--symbol-server.md)
 
 [Symbol Store Folder Tree](symbol-store-folder-tree.md)
 

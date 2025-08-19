@@ -1,9 +1,10 @@
 ---
-title: Overview of container IDs
+title: Overview of Container IDs
 description: Overview of container IDs
 keywords:
 - container IDs WDK , about
 ms.date: 04/08/2022
+ms.topic: concept-article
 ---
 
 # Overview of container IDs

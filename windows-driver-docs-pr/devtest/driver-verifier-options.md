@@ -5,6 +5,7 @@ keywords:
 - Driver Verifier WDK , options listed
 - errors WDK Driver Verifier
 ms.date: 06/29/2021
+ms.topic: concept-article
 ---
 
 # Driver Verifier options and rule classes
@@ -174,7 +175,7 @@ Additional IRQL checking augments the DDI Compliance Checking IRQL rules for PAS
 
 [Driver Isolation Checks](../develop/validating-windows-drivers.md#driver-verifier-driver-isolation-checks)
 
-Driver Isolation checks are critical for validating the runtime driver package isolation requirements of Windows Drivers For more information, see [Getting started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).  The checks monitor registry reads and writes that are not allowed for isolated driver packages.
+Driver Isolation checks are critical for validating the runtime driver package isolation requirements of Windows Drivers For more information, see [Get started developing Windows drivers](../develop/get-started-developing-windows-drivers.md).  The checks monitor registry reads and writes that are not allowed for isolated driver packages.
 
 ## Standard settings
 

@@ -1,5 +1,5 @@
 ---
-title: FilmScanMode element
+title: FilmScanMode Element
 description: The optional FilmScanMode element specifies the exposure type of the film to be scanned.
 keywords: ["FilmScanMode element Imaging Devices"]
 topic_type:

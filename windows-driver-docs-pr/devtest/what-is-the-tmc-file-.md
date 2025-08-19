@@ -1,7 +1,8 @@
 ---
-title: What is the TMC file
+title: What is the TMC File
 description: What is the TMC file
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # What is the TMC file?

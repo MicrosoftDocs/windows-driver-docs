@@ -2,7 +2,7 @@
 title: Activating a Smart Client (Kernel Mode)
 description: Once the KD connection server has been activated, you can create a smart client on another computer and begin a debugging session.
 keywords: ["Activating a Smart Client (Kernel Mode) Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 11/22/2024
 topic_type:
 - apiref
 ms.topic: reference
@@ -10,10 +10,10 @@ api_name:
 - Activating a Smart Client (Kernel Mode)
 api_type:
 - NA
+ms.custom: sfi-ropc-nochange
 ---
 
 # Activating a Smart Client (Kernel Mode)
-
 
 Once the KD connection server has been activated, you can create a smart client on another computer and begin a debugging session.
 
@@ -21,7 +21,24 @@ There are two ways to start a smart client: by starting KD or WinDbg with the ke
 
 You need to specify the remote transfer protocol used by the KD connection server. You can also specify the protocol for the actual kernel connection between the KD connection server and the target computer, or you can use the default.
 
+> [!IMPORTANT]
+> There are important security considerations when using remote debugging. For more information, including information on enabling secure mode, see [Security During Remote Debugging](security-during-remote-debugging.md) and [Security Considerations for Windows Debugging Tools](security-considerations.md).
+
 The general syntax for starting a smart client depends on the protocol used. The following options exist:
+
+*Recommended connection methods, with some additional security*
+
+```console
+Debugger -k kdsrv:server=@{spipe:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,pipe=PipeName[,password=Password]},trans=@{ConnectType} [Options]
+
+Debugger -k kdsrv:server=@{ssl:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,port=Socket[,password=Password]},trans=@{ConnectType} [Options]
+
+Debugger -k kdsrv:server=@{ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,port=Socket[,password=Password]},trans=@{ConnectType} [Options]
+
+Debugger -k kdsrv:server=@{com:port=COMPort,baud=BaudRate,channel=COMChannel[,password=Password]},trans=@{ConnectType} [Options]
+```
+
+*Unsecure connection methods*
 
 ```console
 Debugger -k kdsrv:server=@{npipe:server=Server,pipe=PipeName[,password=Password]},trans=@{ConnectType} [Options]
@@ -29,17 +46,23 @@ Debugger -k kdsrv:server=@{npipe:server=Server,pipe=PipeName[,password=Password]
 Debugger -k kdsrv:server=@{tcp:server=Server,port=Socket[,password=Password][,ipversion=6]},trans=@{ConnectType} [Options]
 
 Debugger -k kdsrv:server=@{tcp:clicon=Server,port=Socket[,password=Password][,ipversion=6]},trans=@{ConnectType} [Options]
-
-Debugger -k kdsrv:server=@{com:port=COMPort,baud=BaudRate,channel=COMChannel[,password=Password]},trans=@{ConnectType} [Options]
-
-Debugger -k kdsrv:server=@{spipe:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,pipe=PipeName[,password=Password]},trans=@{ConnectType} [Options]
-
-Debugger -k kdsrv:server=@{ssl:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,port=Socket[,password=Password]},trans=@{ConnectType} [Options]
-
-Debugger -k kdsrv:server=@{ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,port=Socket[,password=Password]},trans=@{ConnectType} [Options]
 ```
 
 To use the graphical interface to connect to a KD connection server, WinDbg must be in dormant mode -- it must either have been started with no command-line parameters, or it must have ended the previous debugging session. Select the **File | Connect to Remote Stub** menu command. When the **Connect to Remote Stub Server** dialog box appears, enter one of the following strings into the **Connection string** text box:
+
+*Recommended connection methods, with some additional security*
+
+```dbgcmd
+spipe:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,pipe=PipeName[,password=Password] 
+
+ssl:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,port=Socket[,password=Password] 
+
+ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,port=Socket[,password=Password] 
+
+com:port=COMPort,baud=BaudRate,channel=COMChannel[,password=Password] 
+```
+
+*Unsecure connection methods*
 
 ```dbgcmd
 npipe:server=Server,pipe=PipeName[,password=Password] 
@@ -47,20 +70,9 @@ npipe:server=Server,pipe=PipeName[,password=Password]
 tcp:server=Server,port=Socket[,password=Password][,ipversion=6] 
 
 tcp:clicon=Server,port=Socket[,password=Password][,ipversion=6] 
-
-com:port=COMPort,baud=BaudRate,channel=COMChannel[,password=Password] 
-
-spipe:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,pipe=PipeName[,password=Password] 
-
-ssl:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,port=Socket[,password=Password] 
-
-ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,port=Socket[,password=Password] 
 ```
 
 Alternatively, you can use the **Browse** button to locate active KD connection servers. 
-
-## <span id="ddk_activating_a_smart_client_kernel_mode__dbg"></span><span id="DDK_ACTIVATING_A_SMART_CLIENT_KERNEL_MODE__DBG"></span>
-
 
 The parameters in the preceding commands have the following possible values:
 
@@ -115,7 +127,6 @@ Tells the debugger how to connect to the target. The following kernel connection
 
 ```dbgcmd
 com:port=ComPort,baud=BaudRate 
-1394:channel=1394Channel[,symlink=1394Protocol] 
 usb2:targetname=String 
 com:pipe,port=\\VMHost\pipe\PipeName[,resets=0][,reconnect]
 com:modem 
@@ -127,12 +138,4 @@ For information about these protocols, see [Getting Set Up for Debugging](gettin
 Any additional command-line parameters can be placed here. See [Command-Line Options](command-line-options.md) for a full list.
 
 Since the KD connection server simply acts as a gateway for the smart client, the additional *Options* will be the same as those you would use if you were starting a kernel debugger on computer where KdSrv is running. The exception to this is any option that specifies a path or filename will be taken as a path on the computer where the smart client is running.
-
  
-
- 
-
-
-
-
-

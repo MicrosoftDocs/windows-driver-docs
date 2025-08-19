@@ -1,5 +1,5 @@
 ---
-title: DeleteObject method of the MSFT\_Partition class
+title: DeleteObject Method of the MSFT_Partition Class
 description: Deletes the partition and corresponding volume.
 ms.assetid: 4B1C92EE-4835-428E-BF52-4C816A60B418
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

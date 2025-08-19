@@ -4,6 +4,7 @@ description: This topic describes the GUID_NDIS_STATUS_PACKET_FILTER GUID for th
 keywords:
 - GUID_NDIS_STATUS_PACKET_FILTER, WDK GUID_NDIS_STATUS_PACKET_FILTER network drivers
 ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # GUID_NDIS_STATUS_PACKET_FILTER

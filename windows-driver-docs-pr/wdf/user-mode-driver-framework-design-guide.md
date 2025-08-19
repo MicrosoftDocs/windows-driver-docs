@@ -2,6 +2,7 @@
 title: UMDF 1.x Design Guide
 description: This section contains information that applies only to User-Mode Driver Framework (UMDF) versions 1.11 and earlier.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # UMDF 1.x Design Guide

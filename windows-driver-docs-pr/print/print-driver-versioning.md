@@ -1,5 +1,5 @@
 ---
-title: Print driver versioning
+title: Print Driver Versioning
 description: Provides information about print driver versioning.
 keywords:
 - installing drivers WDK printer, versioning
@@ -7,6 +7,7 @@ keywords:
 - version numbers WDK printer
 - printer driver versioning WDK
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print driver versioning

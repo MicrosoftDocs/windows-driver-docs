@@ -12,21 +12,21 @@ keywords:
 - miniport drivers WDK display , video memory management
 - user-mode display drivers WDK Windows Vista , GPU scheduling
 - miniport drivers WDK display , GPU scheduling
-ms.date: 01/23/2019
+ms.date: 07/01/2024
+ms.topic: concept-article
 ---
 
 # Video Memory Management and GPU Scheduling
 
+The video memory manager (*VidMm*) is a system-supplied component within the DirectX Graphics Kernel (*Dxgkrnl*) that is responsible for managing a GPU's memory. *VidMm* handles tasks related to the allocation, deallocation, and overall management of graphics memory resources used by both kernel-mode display drivers (KMDs) and user-mode drivers (UMDs). It works alongside the system-supplied GPU scheduler (*VidSch*) to manage memory resources efficiently.
 
-## <span id="ddk_video_memory_management_and_gpu_scheduling_gg"></span><span id="DDK_VIDEO_MEMORY_MANAGEMENT_AND_GPU_SCHEDULING_GG"></span>
-
-The video memory manager is currently implemented in the following OS files: 
+*VidMm* is implemented in the following OS files:
 
 * dxgkrnl.sys
 * dxgmms1.sys
 * dxgmms2.sys
 
-These files are only available as part of an OS install, and are not available as a separate download. These files are only designed to work together with the other OS files that accompany them. Mismatching versions between these files are not supported by Microsoft, and routinely do not work.
+These files are only available as part of an OS install, and aren't available as a separate download. These files are only designed to work together with the other OS files that accompany them. Graphics driver developers must not mix versions of these files.
 
 The following sections describe the video memory management and graphics processing unit (GPU) scheduling model:
 
@@ -39,12 +39,3 @@ The following sections describe the video memory management and graphics process
 [Video memory offer and reclaim](video-memory-offer-and-reclaim.md)
 
 [GPU preemption](gpu-preemption.md)
-
- 
-
- 
-
-
-
-
-

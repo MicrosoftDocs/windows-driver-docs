@@ -1,4 +1,4 @@
-- name: "Driver Security Guidance"
+- name: "Driver security guidance"
   href: index.md
 # Auto-expanded node
   items: 
@@ -8,7 +8,12 @@
     href: threat-modeling-for-drivers.md
   - name: "Windows security model for driver developers"
     href: windows-security-model.md
+  - name: "Best practices for constraining high privileged behavior in kernel mode drivers"
+    href: driver-security-dev-best-practices.md
+- name: "Tools for driver security"
+# Auto-expanded node
+  items: 
   - name: "Implement HVCI compatible code"
     href: implement-hvci-compatible-code.md
-  - name: "Development security practices for Windows driver developers"
-    href: driver-security-dev-best-practices.md
+  - name: "Use BinSkim to check binaries"
+    href: binskim-check-binaries.md

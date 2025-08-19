@@ -2,34 +2,26 @@
   href: index.md
 - name: "What is a driver?"
   href: what-is-a-driver-.md
-- name: "Do you need to write a driver?"
+- name: "Built-in drivers"
   href: do-you-need-to-write-a-driver-.md
 - name: "Choosing a driver model"
   href: choosing-a-driver-model.md
-- name: "Write your first driver"
+- name: "Tutorials to write your first driver"
 # Auto-expanded node
   items: 
-  - name: "Write your first driver"
-    href: writing-your-first-driver.md
-  - name: "Write a Universal Windows driver (UMDF 2) based on a template"
-    href: writing-a-umdf-driver-based-on-a-template.md
   - name: "Write a universal Hello World driver (KMDF)"
     href: writing-a-very-small-kmdf--driver.md
   - name: "Write a Universal Windows driver (KMDF) based on a template"
     href: writing-a-kmdf-driver-based-on-a-template.md
+  - name: "Write a Universal Windows driver (UMDF 2) based on a template"
+    href: writing-a-umdf-driver-based-on-a-template.md
 - name: "From Sample Code to Production Driver"
   href: from-sample-code-to-production-driver.md
-- name: "Windows compatible hardware development boards"
-  href: windows-compatible-hardware-development-boards.md
-- name: "Sharks Cove hardware development board"
-  href: sharks-cove-hardware-development-board.md
 - name: "Provision a  computer for driver deployment and testing (WDK 10)"
   href: provision-a-target-computer-wdk-8-1.md
 - name: "Concepts for all driver developers"
 # Auto-expanded node
   items: 
-  - name: "Concepts for all driver developers"
-    href: concepts-and-knowledge-for-all-driver-developers.md
   - name: "User mode and kernel mode"
     href: user-mode-and-kernel-mode.md
   - name: "Virtual address spaces"

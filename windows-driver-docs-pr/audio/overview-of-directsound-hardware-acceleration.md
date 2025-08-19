@@ -4,6 +4,7 @@ description: Overview of DirectSound Hardware Acceleration
 keywords:
 - hardware acceleration WDK DirectSound , about DirectSound hardware acceleration
 ms.date: 10/27/2017
+ms.topic: concept-article
 ---
 
 # Overview of DirectSound Hardware Acceleration

@@ -3,6 +3,7 @@ title: Using CVS
 description: Using CVS
 keywords: ["Concurrent Versions System (CVS)", "source servers, CVS", "SrcSrv, CVS", "Concurrent Versions System (CVS), overview"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using CVS
@@ -31,8 +32,3 @@ ssindex.cmd -system=cvs -??
  
 
  
-
-
-
-
-

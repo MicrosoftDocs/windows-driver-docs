@@ -2,6 +2,7 @@
 title: User Interface Functions
 description: User Interface Functions
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # User Interface Functions

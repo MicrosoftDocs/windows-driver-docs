@@ -1,5 +1,5 @@
 ---
-title: GetSupportedSize method of the MSFT\_StorageTier class
+title: GetSupportedSize Method of the MSFT_StorageTier Class
 description: Returns the supported sizes for a new storage tier.
 ms.assetid: 6D88653E-0F32-42A3-9B14-7E13CBABE1D7
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

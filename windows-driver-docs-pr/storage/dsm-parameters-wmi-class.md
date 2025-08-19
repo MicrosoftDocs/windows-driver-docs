@@ -1,7 +1,8 @@
 ---
-title: DSM\_PARAMETERS WMI Class
+title: DSM_PARAMETERS WMI Class
 description: DSM\_PARAMETERS WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # DSM\_PARAMETERS WMI Class

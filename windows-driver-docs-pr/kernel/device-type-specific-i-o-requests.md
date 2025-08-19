@@ -3,6 +3,7 @@ title: Device Type-Specific I/O Requests
 description: Device Type-Specific I/O Requests
 keywords: ["IRPs WDK kernel , device type-specific I/O requests", "device type-specific I/O requests WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Device Type-Specific I/O Requests

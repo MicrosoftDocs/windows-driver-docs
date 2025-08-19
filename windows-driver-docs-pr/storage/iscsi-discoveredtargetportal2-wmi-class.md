@@ -1,7 +1,8 @@
 ---
-title: ISCSI\_DiscoveredTargetPortal2 WMI Class
+title: ISCSI_DiscoveredTargetPortal2 WMI Class
 description: ISCSI\_DiscoveredTargetPortal2 WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # ISCSI\_DiscoveredTargetPortal2 WMI Class

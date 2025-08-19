@@ -4,6 +4,7 @@ description: This topic describes the GUID_NDIS_GEN_LINK_PARAMETERS GUID for the
 keywords:
 - GUID_NDIS_GEN_LINK_PARAMETERS, WDK GUID_NDIS_GEN_LINK_PARAMETERS network drivers
 ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # GUID_NDIS_GEN_LINK_PARAMETERS

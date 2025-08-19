@@ -1,5 +1,5 @@
 ---
-title: MaxValue element
+title: MaxValue Element
 description: The required MaxValue element specifies the maximum value that the scan device supports for scanner configuration elements that require a range of values.
 keywords: ["MaxValue element Imaging Devices"]
 topic_type:

@@ -8,10 +8,10 @@ keywords:
 - testing drivers WDK , ONECPU
 - logical processors WDK
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # PNPCPU
-
 
 PNPCPU (Pnpcpu.exe) is a command line tool that simulates a hot add of processors to a running instance of Windows Server 2008.
 
@@ -30,12 +30,3 @@ This section includes the following information:
 [PNPCPU General Notes](pnpcpu-general-notes.md)
 
 [PNPCPU Limitations](pnpcpu-limitations.md)
-
- 
-
- 
-
-
-
-
-

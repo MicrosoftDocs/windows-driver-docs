@@ -1,5 +1,5 @@
 ---
-title: RefreshInformation function
+title: RefreshInformation Function
 description: The RefreshInformation WMI method updates all tables for the HBA that corresponds to the calling instance object.
 keywords: ["RefreshInformation function Storage Devices"]
 topic_type:

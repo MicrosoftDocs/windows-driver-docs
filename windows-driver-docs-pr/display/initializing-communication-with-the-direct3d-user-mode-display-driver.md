@@ -6,7 +6,7 @@ keywords:
 - Direct3D WDK display
 - user-mode display drivers WDK Windows Vista , Direct3D
 ms.date: 09/17/2019
-ms.custom: seodec18
+ms.topic: concept-article
 ---
 
 # Initializing Communication with the Direct3D User-Mode Display Driver

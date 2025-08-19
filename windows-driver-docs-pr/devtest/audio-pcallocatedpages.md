@@ -1,5 +1,5 @@
 ---
-title: PcAllocatedPages rule (audio)
+title: PcAllocatedPages Rule (Audio)
 description: The PcAllocatedPages rule specifies that a PortCls miniport driver frees previous allocated pages by calling AllocatePagesForMdl or AllocateContiguousPagesForMdl methods.
 ms.date: 05/21/2018
 keywords: ["PcAllocatedPages rule (audio)"]

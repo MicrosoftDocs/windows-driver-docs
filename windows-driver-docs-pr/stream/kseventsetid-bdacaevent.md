@@ -2,6 +2,7 @@
 title: KSEVENTSETID_BdaCAEvent
 description: KSEVENTSETID_BdaCAEvent is the BDA conditional access (CA) event set.
 ms.date: 10/12/2021
+ms.topic: reference
 ---
 
 # KSEVENTSETID_BdaCAEvent

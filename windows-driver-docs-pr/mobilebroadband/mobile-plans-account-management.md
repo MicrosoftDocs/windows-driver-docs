@@ -1,9 +1,10 @@
 ---
-title: Mobile Plans account management
+title: Mobile Plans Account Management
 description: This topic describes the Windows account management experience with Mobile Plans.
 keywords:
 - Windows Mobile Plans account management, Mobile Plans mobile operators
 ms.date: 03/15/2019
+ms.topic: concept-article
 ---
 
 # Mobile Operator account management in Windows 10
@@ -19,7 +20,7 @@ The *View my account* link could be configured to:
 - Launch a web browser and open a defined web page.
 - Launch the Mobile Plans app and open the mobile operator web portal.
 
- Once you have decided on one of these options, please request a COSA database update to implement the right behavior. For more info, please see [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
+ Once you have decided on one of these options, please request a COSA database update to implement the right behavior. For more info, please see [Planning your desktop COSA database submission](planning-your-desktop-cosa-database-submission.md).
 
 The following settings apply for the above options:
 
@@ -214,6 +215,8 @@ A certificate with the following Subject Name will be passed during the call to 
 C=US, ST=WA, L=Redmond, O=Microsoft Corporation, CN=partners.datamart.windows.com
 ```
 
+The certificate chains to this CA: [DigiCert Global Root G2](https://crt.sh/?d=8656329).
+
 We recommend that all Mobile Operators validate that the Subject Name of the certificate matches the one above.
 
 ### How to enable Get Balance in Windows COSA
@@ -226,6 +229,6 @@ The following COSA settings are required:
 - DataMarketplaceRoamingUIEnabled
 - SIM ICCID range (ICCID Range – Start and ICCID Range – End)
 
-For more info about all supported fields, see the Desktop COSA-only settings on [Desktop COSA/APN database settings](desktop-cosa-apn-database-settings.md).
+For more info about all supported fields, see the Desktop COSA-only settings on [Desktop COSA database settings](desktop-cosa-database-settings.md).
 
 Download the [COSA/APN update spreadsheet](https://go.microsoft.com/fwlink/p/?linkid=851213).

@@ -2,6 +2,7 @@
 title: WIA Item Property and Location Changes
 description: WIA Item Property and Location Changes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Item Property and Location Changes

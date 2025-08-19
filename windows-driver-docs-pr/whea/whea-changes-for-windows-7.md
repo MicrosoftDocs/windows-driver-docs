@@ -7,6 +7,7 @@ keywords:
 - Windows 7 WDK WHEA
 - Windows 7 WDK WHEA , WHEA changes
 ms.date: 03/03/2023
+ms.topic: release-notes
 ---
 
 # WHEA Changes for Windows 7

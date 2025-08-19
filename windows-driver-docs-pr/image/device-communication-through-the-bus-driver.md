@@ -1,7 +1,8 @@
 ---
-title: Device Communication through the Bus Driver
+title: Device Communication Through the Bus Driver
 description: Device Communication through the Bus Driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Device Communication through the Bus Driver

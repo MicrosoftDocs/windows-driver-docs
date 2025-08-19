@@ -1,7 +1,8 @@
 ---
-title: MSiSCSI\_SecurityCapabilities WMI Class
+title: MSiSCSI_SecurityCapabilities WMI Class
 description: MSiSCSI\_SecurityCapabilities WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_SecurityCapabilities WMI Class

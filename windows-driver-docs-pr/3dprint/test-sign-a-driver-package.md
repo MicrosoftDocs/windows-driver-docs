@@ -1,7 +1,8 @@
 ---
-title: Test-sign a driver package
+title: Test-Sign a Driver Package
 description: This section describes how to test-sign a driver package.
 ms.date: 03/17/2023
+ms.topic: how-to
 ---
 
 # Test-sign a driver package

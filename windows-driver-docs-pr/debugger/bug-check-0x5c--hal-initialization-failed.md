@@ -14,19 +14,14 @@ api_type:
 
 # Bug Check 0x5C: HAL\_INITIALIZATION\_FAILED
 
-
 The HAL\_INITIALIZATION\_FAILED bug check has a value of 0x0000005C.
 
-This indicates that the HAL initialization failed.
+This indicates that the HAL initialization failed. The hardware abstraction layer is low level code that is intialized early in the Windows start up.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
+## See Also
 
+[Bug Check Code Reference](bug-check-code-reference2.md)
  
-
- 
-
-
-
-

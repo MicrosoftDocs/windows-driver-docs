@@ -1,7 +1,8 @@
 ---
-title: NDIS/WIFI verification rule set
+title: NDIS/WIFI Verification Rule Set
 description: Note  You can test NDIS/WIFI drivers with these rules starting with Windows 8.1. .
 ms.date: 05/21/2018
+ms.topic: checklist
 ---
 
 # NDIS/WIFI verification rule set
@@ -56,7 +57,7 @@ ms.date: 05/21/2018
 <td align="left"><p><a href="ndis-ndisoiddoublerequest.md" data-raw-source="[&lt;strong&gt;NdisOidDoubleRequest&lt;/strong&gt;](ndis-ndisoiddoublerequest.md)"><strong>NdisOidDoubleRequest</strong></a></p></td>
 <td align="left"><p>This <a href="ndis-ndisoiddoublerequest.md" data-raw-source="[&lt;strong&gt;NdisOidDoubleRequest&lt;/strong&gt;](ndis-ndisoiddoublerequest.md)"><strong>NdisOidDoubleRequest</strong></a> rule verifies that:</p>
 <ul>
-<li><p>Minport driver must complete the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> that is currently pending.</p></li>
+<li><p>Miniport driver must complete the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> that is currently pending.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">

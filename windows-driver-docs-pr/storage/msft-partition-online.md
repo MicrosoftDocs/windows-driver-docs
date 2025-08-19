@@ -1,5 +1,5 @@
 ---
-title: Online method of the MSFT\_Partition class
+title: Online Method of the MSFT_Partition Class
 description: Brings the partition online by mounting the associated volume (if one exists).
 ms.assetid: BC790184-88EE-4A45-A9E8-C520E26F991D
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

@@ -18,7 +18,7 @@ api_type:
 The VIDEO\_MEMORY\_MANAGEMENT\_INTERNAL bug check has a value of 0x0000010E. This indicates that the video memory manager has encountered a condition that it is unable to recover from.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## VIDEO\_MEMORY\_MANAGEMENT\_INTERNAL Parameters
@@ -238,7 +238,7 @@ Parameter 1 describes the type of video memory error. Values for Parameter 1 tha
 </tr>
 <tr class="even">
 <td align="left"><p>0x2B</p></td>
-<td align="left"><p>VidMm is trying to free the an invalid Cpu Host Aperture page range.</p></td>
+<td align="left"><p>VidMm is trying to free an invalid Cpu Host Aperture page range.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x2C</p></td>

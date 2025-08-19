@@ -5,6 +5,7 @@ keywords:
 - task offload WDK TCP/IP transport , checksum tasks
 - checksum tasks WDK networking
 ms.date: 09/19/2018
+ms.topic: how-to
 ---
 
 # Offloading Checksum Tasks

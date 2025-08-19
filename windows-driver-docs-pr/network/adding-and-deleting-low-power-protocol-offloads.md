@@ -2,6 +2,7 @@
 title: Adding and Deleting Low Power Protocol Offloads
 description: Adding and Deleting Low Power Protocol Offloads
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Adding and Deleting Low Power Protocol Offloads

@@ -1,11 +1,12 @@
 ---
-title: Determining If a Driver Leaks Framework Objects
+title: Determining if a Driver Leaks Framework Objects
 description: This topic describes how you can find driver memory leaks caused by unreleased references. It applies to User-Mode Driver Framework (UMDF) version 1 and 2 drivers.
 keywords:
 - debugging scenarios WDK UMDF , determining whether a driver leaks framework objects
 - UMDF WDK , debugging scenarios, determining whether a driver leaks framework objects
 - UMDF WDK , determining whether a driver leaks framework objects
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Determining If a Driver Leaks Framework Objects
@@ -50,8 +51,8 @@ To test if your UMDF version 2 driver leaks framework objects, use the following
 
 3.  Reboot, establish a debugger connection, and then use the following debugger commands:
 
-    -   [**!wdfkd.wdfdriverinfo 0x10**](../debugger/-wdfkd-wdfdriverinfo.md) to display the handle hierarchy
-    -   [**!wdfkd.wdftagtracker**](../debugger/-wdfkd-wdftagtracker.md) to display tag information
+    -   [**!wdfkd.wdfdriverinfo 0x10**](../debuggercmds/-wdfkd-wdfdriverinfo.md) to display the handle hierarchy
+    -   [**!wdfkd.wdftagtracker**](../debuggercmds/-wdfkd-wdftagtracker.md) to display tag information
 
 If UMDF Verifier is on, memory leaks are detected at driver unload, just as in KMDF.
 

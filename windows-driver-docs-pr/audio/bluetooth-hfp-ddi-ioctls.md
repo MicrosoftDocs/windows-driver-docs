@@ -5,19 +5,17 @@ ms.date: 03/06/2023
 ms.topic: reference
 ---
 
-
 # Bluetooth HFP DDI IOCTLs
-
 
 Windows 8 introduces a set of I/O control codes (IOCTLs) as part of a DDI that allows the audio driver to work with the Hands-free profile (HFP) class driver, to operate a Bluetooth audio bypass connection.
 
 Unless otherwise stated, the following is true for all the IOCTLs in this section:
 
--   If the request is successful, the Information member of the STATUS\_BLOCK structure is set to the size, in bytes, of the output buffer. Otherwise, the Information member is set to zero. The Status member is set to an NTSTATUS value.
+- If the request is successful, the Information member of the STATUS\_BLOCK structure is set to the size, in bytes, of the output buffer. Otherwise, the Information member is set to zero. The Status member is set to an NTSTATUS value.
 
--   All IOCTLS require IRQL &lt;= PASSIVE\_LEVEL.
+- All IOCTLS require IRQL &lt;= PASSIVE\_LEVEL.
 
--   The audio driver should use the IOCTLs with the IRP\_MJ\_DEVICE\_CONTROL request.
+- The audio driver should use the IOCTLs with the IRP\_MJ\_DEVICE\_CONTROL request.
 
 For most of the IOCTL function codes, the audio driver must initialize the FileObject pointer in the IO\_STACK\_LOCATION for the HFP driver when the audio driver initializes a device control IRP to send to the HFP driver. The audio driver typically retrieves the file object pointer by calling IoGetDeviceObjectPointer.
 
@@ -65,10 +63,6 @@ Windows 10 has updated the set of IOCTLs by adding the following new one:
 
 For information about the structures that work with these IOCTLs, see [Bluetooth HFP DDI Structures](bluetooth-hfp-ddi-structures.md).
 
-## <span id="related_topics"></span>Related topics
-
+## Related topics
 
 [Bluetooth HFP DDI Structures](bluetooth-hfp-ddi-structures.md)
-
- 
-

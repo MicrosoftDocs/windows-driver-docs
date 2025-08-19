@@ -1,9 +1,10 @@
 ---
-title: General guidelines for INF files
+title: General Guidelines for INF Files
 description: Provides general guidelines for INF files.
 keywords:
 - INF files WDK device installations, general guidelines
 ms.date: 03/23/2023
+ms.topic: best-practice
 ---
 
 # General guidelines for INF files

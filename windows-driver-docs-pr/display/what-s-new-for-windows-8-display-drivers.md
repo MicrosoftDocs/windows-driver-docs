@@ -1,10 +1,11 @@
 ---
-title: What's new for Windows 8 display drivers (WDDM 1.2)
+title: What's New for Windows 8 Display Drivers (WDDM 1.2)
 description: Features new in Windows 8 for display drivers.
 keywords:
 - new for Windows 8 WDK display
 - WDDM 1.2, new for Windows 8 WDK display
 ms.date: 07/18/2022
+ms.topic: whats-new
 ---
 
 # What was new for Windows 8 display drivers (WDDM 1.2)

@@ -1,5 +1,5 @@
 ---
-title: DeleteObject method of the MSFT\_FileServer class
+title: DeleteObject Method of the MSFT_FileServer Class
 description: Deletes the file server. If the file server contains any file shares, these shares must be removed first.
 ms.assetid: 81C51A89-AB40-4125-919E-EFADB101AC83
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

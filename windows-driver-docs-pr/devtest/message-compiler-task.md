@@ -1,11 +1,11 @@
 ---
-title: Message compiler task
+title: Message Compiler Task
 description: The Windows Driver Kit (WDK) provides the MessageCompiler task so that you can run the MC.exe tool when you build your driver using MSBuild. For information about using MC.exe, see Message Compiler (MC.exe).
-ms.date: 04/20/2017
+ms.date: 09/27/2023
+ms.topic: concept-article
 ---
 
 # Message compiler task
-
 
 The Windows Driver Kit (WDK) provides the MessageCompiler task so that you can run the MC.exe tool when you build your driver using MSBuild. For information about using MC.exe, see [**Message Compiler (MC.exe)**](/windows/desktop/WES/message-compiler--mc-exe-).
 
@@ -24,7 +24,7 @@ The following example shows how to edit the metadata in the .vcxproj file.
 
 The following example shows the command-line invocation:
 
-```
+```console
 mc.exe –s "c:\test\" a.mc
 ```
 
@@ -226,9 +226,9 @@ In the example above, MSBuild invokes mc.exe on the file a.mc, with the –s swi
 <td align="left"><strong>-d</strong></td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>ValdateAgainstBaselineResource</strong>
+<td align="left"><strong>ValidateAgainstBaselineResource</strong>
 <p>If this is set to true, then it generates the -t switch.</p></td>
-<td align="left">%(MessageCompile.ValdateAgainstBaselineResource)</td>
+<td align="left">%(MessageCompile.ValidateAgainstBaselineResource)</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
@@ -252,12 +252,6 @@ In the example above, MSBuild invokes mc.exe on the file a.mc, with the –s swi
 </tbody>
 </table>
 
- 
-
-## <span id="related_topics"></span>Related topics
-
+## Related topics
 
 [**Message Compiler (MC.exe)**](/windows/desktop/WES/message-compiler--mc-exe-)
-
- 
-

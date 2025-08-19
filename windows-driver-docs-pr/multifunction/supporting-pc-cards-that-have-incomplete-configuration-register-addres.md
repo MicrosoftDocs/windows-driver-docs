@@ -1,11 +1,12 @@
 ---
-title: PC cards with incomplete configuration register addresses
+title: PC Cards with Incomplete Configuration Register Addresses
 description: Information on supporting PC cards with incomplete configuration register addresses.
 keywords:
 - incomplete configuration registers WDK multifunction devices
 - system-supplied multifunction bus drivers WDK
 - mf.sys
 ms.date: 03/17/2023
+ms.topic: concept-article
 ---
 
 # PC cards with incomplete configuration register addresses

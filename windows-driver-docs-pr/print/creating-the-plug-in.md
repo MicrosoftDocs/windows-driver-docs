@@ -5,6 +5,7 @@ keywords:
 - COM interfaces WDK print , creating plug-ins
 - plug-ins WDK print , creating
 ms.date: 01/27/2023
+ms.topic: how-to
 ---
 
 # Creating the Plug-In

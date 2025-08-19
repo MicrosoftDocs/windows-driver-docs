@@ -2,6 +2,7 @@
 title: V (Windows Debugger Glossary)
 description: Glossary page - V
 ms.date: 11/28/2017
+ms.topic: glossary
 ---
 
 # V
@@ -16,8 +17,3 @@ In kernel-mode debugging the debugger engine creates a *virtual thread* for each
  
 
  
-
-
-
-
-

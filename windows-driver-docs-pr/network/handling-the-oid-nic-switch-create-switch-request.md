@@ -2,6 +2,7 @@
 title: Handling the OID_NIC_SWITCH_CREATE_SWITCH Request
 description: Handling the OID_NIC_SWITCH_CREATE_SWITCH Request
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Handling the OID\_NIC\_SWITCH\_CREATE\_SWITCH Request
@@ -57,7 +58,7 @@ When it receives the OID method request of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](./
 
      
 
-If the PF miniport driver successfully completesthe OID method request of OID\_NIC\_SWITCH\_CREATE\_SWITCH, it allows the following to occur:
+If the PF miniport driver successfully completes the OID method request of OID\_NIC\_SWITCH\_CREATE\_SWITCH, it allows the following to occur:
 
 -   VFs can be allocated on the NIC switch through OID method requests of [OID\_NIC\_SWITCH\_ALLOCATE\_VF](./oid-nic-switch-allocate-vf.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Unidrv/PScript5 plug-in configuration modules
+title: Unidrv/PScript5 Plug-In Configuration Modules
 description: Provides information about Unidrv/PScript5 plug-in configuration modules.
 keywords:
 - Version 3 XPS drivers WDK XPSDrv, Unidrv plug-in
@@ -9,6 +9,7 @@ keywords:
 - Unidrv, XPSDrv print drivers
 - Unidrv WDK print
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Unidrv/PScript5 plug-in configuration modules

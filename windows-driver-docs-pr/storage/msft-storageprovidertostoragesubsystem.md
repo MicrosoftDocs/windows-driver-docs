@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageProviderToStorageSubSystem class
+title: MSFT_StorageProviderToStorageSubSystem Class
 description: Association between StorageProvider and StorageSubSystem.
 ms.assetid: 0be0f434-3d17-4075-86db-58b11ef15544
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

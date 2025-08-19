@@ -4,6 +4,7 @@ description: Client-Initiated Request to Close a Call
 keywords:
 - client-initiated close call requests WDK CoNDIS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Client-Initiated Request to Close a Call
@@ -16,11 +17,11 @@ If a client is closing a multipoint call to which more than one party is still c
 
 A client initiates the closing of a call with [**NdisClCloseCall**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclclosecall). The following figure shows a client initiating the closing of a call through a call manager.
 
-![diagram illustrating a client initiating the closing of a call through a call manager.](images/cm-20.png)
+:::image type="content" source="images/cm-20.png" alt-text="Diagram showing a client initiating the closure of a call through a call manager.":::
 
 The next figure shows a client initiating the closing of a call through an MCM driver.
 
-![diagram illustrating a client initiating the closing of a call through an mcm driver.](images/fig1-20.png)
+:::image type="content" source="images/fig1-20.png" alt-text="Diagram displaying a client initiating the closure of a call through an MCM driver.":::
 
 A connection-oriented client typically calls **NdisClCloseCall** in any one of the following circumstances:
 

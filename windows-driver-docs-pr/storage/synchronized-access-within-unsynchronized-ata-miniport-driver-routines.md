@@ -1,11 +1,12 @@
 ---
-title: Synchronized Access within ATA Miniport Driver Routines
+title: Synchronized Access Within ATA Miniport Driver Routines
 description: Synchronized Access within Unsynchronized ATA Miniport Driver Routines
 keywords:
 - ATA Port drivers WDK , synchronization
 - synchronization WDK ATA Port driver
 - unsynchronized processing WDK ATA Port driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Synchronized Access within ATA Miniport Driver Routines

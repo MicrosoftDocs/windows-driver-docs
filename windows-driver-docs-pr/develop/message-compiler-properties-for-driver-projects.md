@@ -2,6 +2,7 @@
 title: Message Compiler Properties for Driver Projects
 description: Sets the properties for the Message Compiler (MC.exe) tool.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Message Compiler Properties for Driver Projects

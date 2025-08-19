@@ -10,6 +10,7 @@ keywords:
 - .etl files
 - etl files
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Displaying a Trace Log
@@ -34,12 +35,4 @@ This section includes:
 TraceView requires a PDB file, a TMF file, or a TMF directory to display the contents of a trace log. TraceView does not use the %TRACE\_FORMAT\_SEARCH\_PATH% environment variable.
 
 The trace session name is not saved in the event trace log (.etl) file or in the TraceView output file or summary file. When you use TraceView to display a trace log, it uses the default session name, **LogSession***N*, as the name of the trace session (where *N* is a zero-based integer that represents the order in which the session is created).
-
- 
-
- 
-
-
-
-
 

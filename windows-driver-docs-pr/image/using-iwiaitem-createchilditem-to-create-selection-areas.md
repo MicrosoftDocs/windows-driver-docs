@@ -2,6 +2,7 @@
 title: Using IWiaItem CreateChildItem to Create Selection Areas
 description: Using IWiaItem CreateChildItem to Create Selection Areas
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using IWiaItem::CreateChildItem to Create Selection Areas

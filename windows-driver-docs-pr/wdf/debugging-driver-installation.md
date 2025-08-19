@@ -8,6 +8,7 @@ keywords:
 - debugging drivers WDK KMDF , installations
 - driver debugging WDK KMDF
 ms.date: 04/20/2017
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshooting KMDF and UMDF Driver Installation

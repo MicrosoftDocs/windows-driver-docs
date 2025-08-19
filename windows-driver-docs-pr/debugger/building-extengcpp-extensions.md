@@ -3,6 +3,7 @@ title: Building EngExtCpp Extensions
 description: Building EngExtCpp Extensions
 keywords: ["EngExtCpp extensions, building"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Building EngExtCpp Extensions

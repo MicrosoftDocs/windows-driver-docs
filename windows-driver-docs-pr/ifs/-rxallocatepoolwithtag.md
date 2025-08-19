@@ -1,5 +1,5 @@
 ---
-title: \_RxAllocatePoolWithTag function
+title: _RxAllocatePoolWithTag Function
 description: \_RxAllocatePoolWithTag allocates memory from a pool with a four-byte tag at the beginning of the block that can be used to help catch instances of memory trashing.
 keywords: ["_RxAllocatePoolWithTag function Installable File System Drivers"]
 topic_type:

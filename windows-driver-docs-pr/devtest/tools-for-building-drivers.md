@@ -11,6 +11,7 @@ keywords:
 - building software components WDK
 - software component building WDK
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # Tools for Building Drivers
@@ -24,14 +25,5 @@ ms.date: 04/20/2017
 
 -   [WDK and Visual Studio build environment](wdk-and-visual-studio-build-environment.md)
 -   [BinPlace](binplace.md)
--   [Nmake2MsBuild](nmake2msbuild.md)
 -   [ProjectUpgradeTool](projectupgradetool.md)
-
- 
-
- 
-
-
-
-
 

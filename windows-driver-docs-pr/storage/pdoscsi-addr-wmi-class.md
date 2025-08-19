@@ -1,7 +1,8 @@
 ---
-title: PDOSCSI\_ADDR WMI Class
+title: PDOSCSI_ADDR WMI Class
 description: PDOSCSI\_ADDR WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # PDOSCSI\_ADDR WMI Class
@@ -22,7 +23,7 @@ class PDOSCSI_ADDR
 };
 ```
 
-When this class definition iscompiled by the WMI tool suite, it produces the [**PDOSCSI\_ADDR**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_pdoscsi_addr) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**PDOSCSI\_ADDR**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_pdoscsi_addr) data structure. There are no methods associated with this WMI class.
 
  
 

@@ -2,6 +2,7 @@
 title: Audio Power Management Interfaces
 description: Audio Power Management Interfaces
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Audio Power Management Interfaces
@@ -16,7 +17,7 @@ The following two interfaces are discussed:
 
 Implemented by an adapter driver and exposed to PortCls for power management of an audio adapter card.
 
-Implemented by an adapter driver and exposed to PortCls. This interface provides power managent messages about the audio adapter and the system.
+Implemented by an adapter driver and exposed to PortCls. This interface provides power management messages about the audio adapter and the system.
 
 An optional interface that a miniport driver can expose if it requires advance notification of impending power-state changes.
 

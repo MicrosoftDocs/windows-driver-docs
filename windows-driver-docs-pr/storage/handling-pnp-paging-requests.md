@@ -7,6 +7,7 @@ keywords:
 - SFD WDK storage , PnP
 - PnP WDK storage
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Handling PnP Paging Requests

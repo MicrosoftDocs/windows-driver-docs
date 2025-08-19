@@ -1,7 +1,8 @@
 ---
-title: Create a MobileBroadbandNetwork object
+title: Create a MobileBroadbandNetwork Object
 description: Create a MobileBroadbandNetwork object
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Create a MobileBroadbandNetwork object
@@ -24,7 +25,7 @@ else
 }
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Common tasks for mobile broadband Windows Runtime APIs](./create-a-mobilebroadbandaccount-object.md)

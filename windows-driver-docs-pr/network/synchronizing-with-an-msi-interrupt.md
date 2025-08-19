@@ -8,6 +8,7 @@ keywords:
 - interrupts WDK networking , synchronizing
 - synchronization WDK MSI-X
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Synchronizing with an MSI Interrupt

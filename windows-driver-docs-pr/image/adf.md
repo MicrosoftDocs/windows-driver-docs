@@ -1,5 +1,5 @@
 ---
-title: ADF element
+title: ADF Element
 description: The optional ADF element describes the capabilities of the automatic document feeder (ADF) that is attached to the scanner.
 keywords: ["ADF element Imaging Devices"]
 topic_type:

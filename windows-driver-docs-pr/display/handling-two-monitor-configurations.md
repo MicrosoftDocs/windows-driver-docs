@@ -5,6 +5,7 @@ keywords:
 - TMM WDK display , two monitor configurations
 - monitor configurations WDK display , two monitors
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Handling Two Monitor Configurations
@@ -43,4 +44,4 @@ In the preceding **SetActiveTopology** call, parameter three is set to 1 and not
 
 The following figure shows the flow of operations that occur when TMM handles the situation when a monitor is added to make a two-monitor configuration.
 
-![diagram illustrating adding a monitor to make a two-monitor configuration.](images/tmm-newconfig.png)
+:::image type="content" source="images/tmm-newconfig.png" alt-text="Diagram illustrating the process of adding a monitor to create a two-monitor configuration.":::

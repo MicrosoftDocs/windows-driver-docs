@@ -1,10 +1,11 @@
 ---
-title: Attributes for device fonts
+title: Attributes for Device Fonts
 description: Provides information about attributes for device fonts.
 keywords:
 - device fonts WDK Unidrv
 - font attributes WDK Unidrv
 ms.date: 01/26/2023
+ms.topic: reference
 ---
 
 # Attributes for device fonts
@@ -21,8 +22,6 @@ The following table lists attributes describing the printer's support for device
 | **LookAheadRegion** | Numeric (integer) value representing how far ahead the driver must "look" to determine whether it should emit text. This value is in *y* master units, but must be convertible to an integral number of pixels. For more information, see the comment that follows this table. | Optional. If not specified, the default value is zero. Used only with serial printers, (for example, HP DeskJet), for ordering text and bitmap data. |
 | ***MaxFontUsePerPage*** | Numeric value representing the maximum number of fonts the printer can use per page. | Optional. If not specified, there is no limit. |
 | **TextYOffset** | Numeric value representing the vertical distance, in *y* master units, by which resident fonts must be repositioned to align with bitmap font baselines. | Optional. If not specified, the default value is 0. (Used with some dot-matrix printers.) |
-
-For examples, see the [sample GPD files](sample-gpd-files.md).
 
 To determine the size of the lookahead region, the printer driver must perform an addition based on the current scan line and the value of the **\*LookAheadRegion** attribute. Because the scan line is in units of pixels while **\*LookAheadRegion** is in vertical master units, the driver must convert the attribute value into pixels.
 

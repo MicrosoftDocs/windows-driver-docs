@@ -8,6 +8,7 @@ keywords:
 - Security Reference Monitor WDK
 - IRP_MJ_CREATE
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Create Processing

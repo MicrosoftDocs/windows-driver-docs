@@ -20,8 +20,6 @@ The following topics provide information about the interfaces and the methods th
 
 [IAudioProcessingObjectRT](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt)
 
-[IAudioSystemEffects2](iaudiosystemeffects2.md)
-
 [IAudioSystemEffects](iaudiosystemeffects.md)
 
 [IAudioSystemEffectsCustomFormats](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffectscustomformats)

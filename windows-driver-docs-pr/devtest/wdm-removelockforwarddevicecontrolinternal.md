@@ -1,6 +1,6 @@
 ---
-title: RemoveLockForwardDeviceControlInternal rule (wdm)
-description: The RemoveLockForwardDeviceControlInternal rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in correctly when forwarding a IRP using IoCallDriver to a another device.
+title: RemoveLockForwardDeviceControlInternal Rule (WDM)
+description: The RemoveLockForwardDeviceControlInternal rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in correctly when forwarding an IRP using IoCallDriver to another device.
 ms.date: 05/21/2018
 keywords: ["RemoveLockForwardDeviceControlInternal rule (wdm)"]
 topic_type:
@@ -15,7 +15,7 @@ api_type:
 # RemoveLockForwardDeviceControlInternal rule (wdm)
 
 
-The **RemoveLockForwardDeviceControlInternal** rule verifies that calls to [**IoAcquireRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock) and [**IoReleaseRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreleaseremovelock) are used in correctly when forwarding a IRP using [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to a another device.
+The **RemoveLockForwardDeviceControlInternal** rule verifies that calls to [**IoAcquireRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock) and [**IoReleaseRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreleaseremovelock) are used in correctly when forwarding an IRP using [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to another device.
 
 **Driver model: WDM**
 

@@ -2,6 +2,7 @@
 title: Introduction to Hyper-V Extensible Switch
 description: The Hyper-V extensible switch supports an interface that allows instances of NDIS filter drivers (known as extensible switch extensions) to bind within the extensible switch driver stack.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Introduction to Hyper-V Extensible Switch

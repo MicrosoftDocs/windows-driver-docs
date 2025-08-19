@@ -1,7 +1,8 @@
 ---
-title: MSFC\_HBAPortStatistics WMI Class
+title: MSFC_HBAPortStatistics WMI Class
 description: MSFC\_HBAPortStatistics WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSFC\_HBAPortStatistics WMI Class

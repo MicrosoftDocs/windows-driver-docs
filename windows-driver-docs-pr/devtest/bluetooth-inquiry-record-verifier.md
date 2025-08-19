@@ -2,6 +2,7 @@
 title: Bluetooth Inquiry Record Verifier
 description: The Bluetooth Inquiry Record Verifier displays a Bluetooth device’s inquiry record as Microsoft Windows interprets it.
 ms.date: 04/20/2017
+ms.topic: troubleshooting-known-issue
 ---
 
 # Bluetooth Inquiry Record Verifier
@@ -44,12 +45,4 @@ Use the **View** menu to display results and to view errors.
 -   On searching for remote devices, everything found is listed during the initial inquiry. Once the inquiry is complete, only devices for which we have a friendly name persist.
 -   Extended Inquiry Response record parsing does not work.
 -   **LanguageBaseAttributeIDList** may be marked incorrectly as invalid.
-
- 
-
- 
-
-
-
-
 

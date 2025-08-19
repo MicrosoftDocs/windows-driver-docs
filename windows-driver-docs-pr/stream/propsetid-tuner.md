@@ -1,7 +1,8 @@
 ---
-title: PROPSETID\_TUNER
+title: PROPSETID_TUNER
 description: PROPSETID\_TUNER
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # PROPSETID\_TUNER

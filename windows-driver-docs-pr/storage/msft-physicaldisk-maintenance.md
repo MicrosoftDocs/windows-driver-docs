@@ -1,5 +1,5 @@
 ---
-title: Maintenance method of the MSFT\_PhysicalDisk class
+title: Maintenance Method of the MSFT_PhysicalDisk Class
 description: Allows a user to perform certain maintenance tasks on the physical disk while it is part of a concrete pool.
 ms.assetid: 99730040-46E2-4886-A0FE-4C2D8980DC87
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

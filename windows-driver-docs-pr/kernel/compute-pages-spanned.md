@@ -1,7 +1,8 @@
 ---
-title: Windows kernel obsolete macros
+title: Windows Kernel Obsolete Macros
 description: This topic summarizes the following obsolete macros
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Windows kernel obsolete macros

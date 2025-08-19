@@ -1,5 +1,5 @@
 ---
-title: C28111 warning
+title: C28111 Warning
 description: Warning C28111 The IRQL where the floating-point state was saved does not match the current IRQL (for this restore operation).
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -7,6 +7,7 @@ keywords:
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28111"
+ms.topic: reference
 ---
 
 # C28111
@@ -67,12 +68,4 @@ void driver_utility()
     }
 }
 ```
-
- 
-
- 
-
-
-
-
 

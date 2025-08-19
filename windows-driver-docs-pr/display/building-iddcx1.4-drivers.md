@@ -1,10 +1,11 @@
 ---
-title: Building IddCx 1.4 drivers
+title: Building IddCx 1.4 Drivers
 description: How to build IddCx version 1.4 indirect display drivers
 ms.date: 09/28/2020
 keywords:
 - Building indirect display drivers, version 1.4
 - Building IDDs, version 1.4
+ms.topic: concept-article
 ---
 
 # Building IddCx 1.4 drivers

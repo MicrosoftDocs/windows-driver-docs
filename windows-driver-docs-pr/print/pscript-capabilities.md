@@ -5,6 +5,7 @@ keywords:
 - PostScript Printer Driver WDK print , capabilities
 - Pscript WDK print , capabilities
 ms.date: 01/30/2023
+ms.topic: overview
 ---
 
 # Pscript Capabilities

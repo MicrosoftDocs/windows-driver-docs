@@ -1,11 +1,12 @@
 ---
-title: About Storport virtual miniport drivers
+title: About Storport Virtual Miniport Drivers
 description: Overview of Storage Virtual Miniport Drivers
 keywords:
 - storage virtual miniport drivers WDK , about
 - virtual miniport drivers WDK
 - miniport drivers WDK storage , virtual
 ms.date: 03/01/2022
+ms.topic: concept-article
 ---
 
 # About Storport virtual miniport drivers

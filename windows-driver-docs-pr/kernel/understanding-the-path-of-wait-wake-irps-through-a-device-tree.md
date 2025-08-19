@@ -1,8 +1,9 @@
 ---
-title: Understanding the Path of Wait/Wake IRPs through a Device Tree
+title: Understanding the Path of Wait/Wake IRPs Through a Device Tree
 description: Understanding the Path of Wait/Wake IRPs through a Device Tree
 keywords: ["wait/wake IRPs WDK power management , device tree path", "bus drivers WDK power management", "USB WDK power management", "function drivers WDK power management", "FDOs WDK power management", "filter DOs WDK power management", "physical device objects WDK power management", "PDOs WDK power management"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Understanding the Path of Wait/Wake IRPs through a Device Tree

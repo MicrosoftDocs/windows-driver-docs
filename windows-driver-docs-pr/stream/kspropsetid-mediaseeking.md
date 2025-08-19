@@ -1,7 +1,8 @@
 ---
-title: KSPROPSETID\_MediaSeeking
+title: KSPROPSETID_MediaSeeking
 description: KSPROPSETID\_MediaSeeking
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_MediaSeeking

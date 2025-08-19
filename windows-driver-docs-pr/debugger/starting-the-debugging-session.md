@@ -2,6 +2,7 @@
 title: Starting the Debugging Session
 description: Starting the Debugging Session
 ms.date: 11/28/2017
+ms.topic: how-to
 ---
 
 # Starting the Debugging Session
@@ -49,8 +50,3 @@ If you want to run the user-mode debugger from the kernel debugger while also us
  
 
  
-
-
-
-
-

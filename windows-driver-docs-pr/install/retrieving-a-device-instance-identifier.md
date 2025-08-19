@@ -2,6 +2,7 @@
 title: Retrieving a Device Instance Identifier
 description: Retrieving a Device Instance Identifier
 ms.date: 04/05/2022
+ms.topic: concept-article
 ---
 
 # Retrieving a Device Instance Identifier

@@ -1,11 +1,18 @@
 ---
-title: Build a basic v4 printer driver
+title: Build a Basic V4 Printer Driver
 description: Build a basic v4 printer driver by using the driver development wizard in Microsoft Visual Studio 2019 to select the minimum set of features to create a functional printer driver.
-ms.date: 01/25/2023
-ms.custom: contperf-fy22q1
+ms.date: 12/19/2024
+ms.topic: how-to
 ---
 
 # Build a basic v4 printer driver
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
+
+[!include[Print driver end of life servicing](../includes/print-eol-servicing.md)]
+
+> [!WARNING]
+> This printer driver tutorial contains multiple errors and is not usable at this time.
 
 Build a basic v4 printer driver by using the driver development wizard in Microsoft Visual Studio 2019 to select the minimum set of features to create a functional printer driver.
 
@@ -193,6 +200,7 @@ Provider=%ManufacturerName%
 CatalogFile=MyV4PrintDriver.cat
 ClassVer=4.0
 DriverVer=03/17/2014,1.0.0.0
+PnpLockdown=1
 
 [Manufacturer]
 %ManufacturerName%=Standard,NT$ARCH$
@@ -306,4 +314,4 @@ Create a print queue using either plug-and-play or the **Add Printer Wizard**.
 
 For more information about INF files for the v4 printer driver, see [V4 Driver INF](v4-driver-inf.md).
 
-In addition to the files in the preceding table, notice that a *MyV4PrintDriver Render Filter* folder was created. This is the render filter project template and it provides a good foundation for building an XPS rendering filter and an XPS filter pipeline configuration file. For more information about XPS rendering filters, see [XPSDrv Render Module](xpsdrv-render-module.md), and to see an example of an XPS rendering filter, see the [XPS Rasterization Filter Service](/samples/microsoft/windows-driver-samples/xps-rasterization-filter-service-sample/) sample.
+In addition to the files in the preceding table, notice that a *MyV4PrintDriver Render Filter* folder was created. This is the render filter project template and it provides a good foundation for building an XPS rendering filter and an XPS filter pipeline configuration file. For more information about XPS rendering filters, see [XPSDrv Render Module](xpsdrv-render-module.md).

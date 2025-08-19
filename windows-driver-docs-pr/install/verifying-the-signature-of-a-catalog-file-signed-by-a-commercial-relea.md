@@ -2,6 +2,7 @@
 title: Verify Catalog File Signed by Commercial Certificate
 description: Verifying the Signature of a Catalog File Signed by a Commercial Release Certificate
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Verifying the Signature of a Catalog File Signed by a Commercial Release Certificate

@@ -11,6 +11,7 @@ keywords:
 - data buffers WDK file system minifilter
 - I/O WDK file systems
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Determining the Buffering Method for an I/O Operation

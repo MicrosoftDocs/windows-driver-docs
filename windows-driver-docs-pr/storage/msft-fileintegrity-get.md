@@ -1,5 +1,5 @@
 ---
-title: Get method of the MSFT\_FileIntegrity class
+title: Get Method of the MSFT_FileIntegrity Class
 description: Retrieves the file integrity information for the specified file.
 ms.assetid: C376D77A-1AB6-4000-AB5E-814104B9751B
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

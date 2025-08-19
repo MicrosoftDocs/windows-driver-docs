@@ -1,5 +1,5 @@
 ---
-title: SetSecurityDescriptor method of the MSFT\_StorageSubSystem class
+title: SetSecurityDescriptor Method of the MSFT_StorageSubSystem Class
 description: Sets the security descriptor that controls access to the storage subsystem object instance.
 ms.assetid: 045CDEC1-3B2D-4BB1-BA2D-8873B589C402
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: CreateStoragePool method of the MSFT\_StorageSubSystem class
+title: CreateStoragePool Method of the MSFT_StorageSubSystem Class
 description: Creates a storage pool from available physical disks contained within a common primordial pool.
 ms.assetid: 3fa2f78f-be75-42c0-baba-b08f4959af8c
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

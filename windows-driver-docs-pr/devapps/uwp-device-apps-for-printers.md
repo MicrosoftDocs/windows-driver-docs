@@ -1,10 +1,14 @@
 ---
-title: UWP device apps for printers
+title: UWP Device Apps for Printers
 description: This section introduces UWP device apps for printers.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
+ms.topic: concept-article
 ---
 
 # UWP device apps for printers
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 > [!IMPORTANT]
 > Starting with the release of Windows 11 SDK (22000.1), Print Support Apps (PSA) are the recommended method of developing UWP apps for printers. See the [Print support app design guide](print-support-app-design-guide.md) and the [Print support app association](print-support-app-association.md) topics for more information on using PSA with your print devices.
@@ -66,14 +70,9 @@ The UWP device app samples for printers demonstrate the printer-related features
 
 ## Related topics
 
-[Developing v4 print drivers](../print/v4-printer-driver.md)
-
-[Printer Extension Interfaces (v4 Print Driver)](/windows-hardware/drivers/ddi/_print/)
-
-[Bidirectional Communications](../print/bidirectional-communication.md)
-
-[Getting started with UWP apps](getting-started.md)
-
-[Create a UWP device app (step-by-step guide)](step-1--create-a-uwp-device-app.md)
-
-[Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
+- [Developing v4 print drivers](../print/v4-printer-driver.md)
+- [Printer Extension Interfaces (v4 Print Driver)](/windows-hardware/drivers/ddi/_print/)
+- [Bidirectional Communications](../print/bidirectional-communication.md)
+- [Getting started with UWP apps](getting-started.md)
+- [Create a UWP device app (step-by-step guide)](step-1--create-a-uwp-device-app.md)
+- [Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)

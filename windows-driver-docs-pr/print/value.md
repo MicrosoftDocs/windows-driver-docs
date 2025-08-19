@@ -4,6 +4,7 @@ description: The WSD Value construct allows you to extend the bidi communication
 keywords:
 - Value construct
 ms.date: 09/09/2022
+ms.topic: concept-article
 ---
 
 # Value (WSD)

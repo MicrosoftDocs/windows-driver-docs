@@ -6,6 +6,7 @@ keywords:
 - TraceView WDK , exiting
 - TraceView WDK , command-line interface
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Starting and Exiting TraceView
@@ -35,12 +36,4 @@ Exiting TraceView does not stop trace sessions that were started by other method
 To start the TraceView at the command line, open a Command Prompt window, navigate to the \\tools\\tracing\\i386 directory of the WDK, and then type a TraceView command, such as **traceview /?**. (If you type **traceview** with no parameters, the TraceView window opens.)
 
 For information about the TraceView commands, see [TraceView Command-Line Interface](traceview-command-line-interface.md).
-
- 
-
- 
-
-
-
-
 

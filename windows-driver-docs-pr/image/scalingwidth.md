@@ -1,5 +1,5 @@
 ---
-title: ScalingWidth element (fast scan direction)
+title: ScalingWidth Element (Fast Scan Direction)
 description: The required ScalingWidth element specifies the document scaling in the fast scan direction.
 keywords: ["ScalingWidth element Imaging Devices"]
 topic_type:

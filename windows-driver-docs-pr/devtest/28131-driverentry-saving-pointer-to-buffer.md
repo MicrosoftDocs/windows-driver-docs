@@ -1,11 +1,12 @@
 ---
-title: C28131 warning
+title: C28131 Warning
 description: Warning C28131 The DriverEntry routine should save a copy of the argument, not the pointer, because the I/O Manager frees the buffer.
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
 ms.date: 09/27/2022
 f1_keywords: ["C28131", "NOT_COPYING_NAME", "__WARNING_NOT_COPYING_NAME"]
+ms.topic: reference
 ---
 # Warning C28131
 

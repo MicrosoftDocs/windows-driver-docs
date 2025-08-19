@@ -8,6 +8,7 @@ keywords:
 - SAN service providers WDK , shutting down SAN
 - Windows Sockets Direct WDK , shutting down SAN use
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Shutting Down the Use of a SAN

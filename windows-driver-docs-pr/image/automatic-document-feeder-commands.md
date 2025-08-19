@@ -2,6 +2,7 @@
 title: Automatic Document Feeder Commands
 description: Automatic Document Feeder Commands
 ms.date: 03/27/2023
+ms.topic: reference
 ---
 
 # Automatic Document Feeder Commands

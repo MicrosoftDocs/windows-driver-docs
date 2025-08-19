@@ -1,5 +1,5 @@
 ---
-title: MSFT\_VirtualDiskToPhysicalDisk class
+title: MSFT_VirtualDiskToPhysicalDisk Class
 description: Association between VirtualDisk and PhysicalDisk.A virtual disk and a physical disk are associated when the virtual disk has data residing on the physical disk.
 ms.assetid: F2B91FCD-81BF-44D8-B6D1-CDECC765726F
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

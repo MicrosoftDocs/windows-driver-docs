@@ -1,11 +1,12 @@
 ---
-title: Registering context types
+title: Registering Context Types
 description: Registering Context Types
 keywords:
 - contexts WDK file system minifilter , registering types
 - registering context types
 - FLT_CONTEXT_REGISTRATION
 ms.date: 10/25/2021
+ms.topic: concept-article
 ---
 
 # Registering context types

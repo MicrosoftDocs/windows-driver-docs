@@ -1,7 +1,8 @@
 ---
+title: Using Scope Access with Property Commands (WpdServiceSampleDriver)
 description: Using scope access with property commands (WpdServiceSampleDriver)
-title: Using scope access with property commands (WpdServiceSampleDriver)
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Using scope access with property commands (WpdServiceSampleDriver)

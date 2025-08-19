@@ -3,6 +3,7 @@ title: Preventing System Power State Changes
 description: Preventing System Power State Changes
 keywords: ["system power states WDK kernel , preventing changes", "state transitions WDK power management", "PoRegisterSystemState", "PoSetSystemState", "PoUnregisterSystemState", "working states WDK power management"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Preventing System Power State Changes

@@ -5,32 +5,54 @@ keywords:
 - memory segments WDK display , about memory segments
 - hidden video memory WDK display
 - video memory manager WDK display
-ms.date: 04/20/2017
+ms.date: 07/29/2025
+ms.topic: how-to
 ---
 
 # Using Memory Segments to Describe the GPU Address Space
 
+A memory segment is a contiguous range of virtual addresses mapped to a contiguous range of physical addresses. They were introduced in Windows Vista.
 
-## <span id="ddk_using_memory_segments_to_describe_the_gpu_address_space_gg"></span><span id="DDK_USING_MEMORY_SEGMENTS_TO_DESCRIBE_THE_GPU_ADDRESS_SPACE_GG"></span>
+The video memory manager (*VidMm*) is responsible for managing the address space of the GPU. Before it can do so, the kernel-mode display miniport driver (KMD) must describe the GPU's address space to *VidMm* by using memory segments.
 
+KMD creates memory segments to generalize and virtualize video memory resources. It can configure memory segments according to the memory types that the hardware supports (for example, frame buffer memory or system memory aperture).
 
-Before the video memory manager can manage the address space of the GPU, the display miniport driver must describe the GPU's address space to the video memory manager by using memory segments. The display miniport driver creates memory segments to generalize and virtualize video memory resources. The driver can configure memory segments according to the memory types that the hardware supports (for example, frame buffer memory or system memory aperture).
+During driver initialization, the KMD must return the list of segment types that describe how *VidMm* can manage memory resources. The KMD specifies the number of segment types that it supports and describes each segment type by responding to calls to its [**DxgkDdiQueryAdapterInfo**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo) function. The driver describes each segment using a [**DXGK_SEGMENTDESCRIPTOR**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentdescriptor) structure. For more information, see [Initializing Use of Memory Segments](initializing-use-of-memory-segments.md).
 
-During driver initialization, the driver must return the list of segment types that describe how memory resources can be managed by the video memory manager. The driver specifies the number of segment types that it supports and describes each segment type by responding to calls to its [**DxgkDdiQueryAdapterInfo**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo) function. The driver describes each segment using a [**DXGK\_SEGMENTDESCRIPTOR**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentdescriptor) structure. For more information, see [Initializing Use of Memory Segments](initializing-use-of-memory-segments.md).
+Thereafter, the number and types of segments remain unchanged. *VidMm*:
 
-Thereafter, the number and types of segments remain unchanged. The video memory manager ensures that each process receives a fair share of the resources in any particular segment. The video memory manager manages all segments independently, and segments do not overlap. Therefore, the video memory manager allocates a fair amount of video memory resources from one segment to an application regardless of the amount of resources that application currently holds from another segment.
+* Ensures that each process receives a fair share of the resources in any particular segment,
 
-The driver assigns a segment identifier to each of its memory segments. Later, when the video memory manager requests to create allocations for video resources and render those resources, the driver identifies the segments that support the request and specifies, in order, the segments that the driver prefers the video memory manager use. For more information, see [Specifying Segments When Creating Allocations](specifying-segments-when-creating-allocations.md).
+* Manages all segments independently.
 
-The driver is not required to specify all video memory resources that are available to the GPU in its memory segments; however, the driver must specify all memory resources that the video memory manager manages among all processes running on the system. For example, a vertex shader microcode that implements a fixed function pipeline can reside in the GPU address space, but outside the memory managed by the video memory manager (that is, not part of a segment) because the microcode is always available to all processes and is never the source of contention between processes. However, the video memory manager must allocate video memory resources, such as vertex buffers, textures, render targets, and application-specific shader code, from one of the driver's memory segments because the resource types must be fairly available to all processes.
+Segments don't overlap. So, *VidMm* can allocate a fair amount of video memory resources from one segment regardless of the amount of resources that an application holds from another segment.
 
-The following figure shows how the driver can configure memory segments from the GPU address space.
+The KMD assigns a segment identifier to each of its memory segments. Later, when *VidMm* requests to create allocations for video resources and render those resources, the KMD:
 
-![diagram illustrating the division of gpu address space into segments.](images/memseg.png)
+* Identifies the segments that support the request.
 
-**Note**   Video memory that is hidden from the video memory manager cannot be mapped into user space or be made exclusively available to any particular process. To do so breaks the fundamental rules of virtual memory that require that all processes running on the system have access to all memory.
+* Specifies, in order, the segments that the driver prefers *VidMm* to use.
 
- 
+For more information, see [Specifying Segments When Creating Allocations](specifying-segments-when-creating-allocations.md).
 
- 
+The KMD isn't required to specify all video memory resources available to the GPU in its memory segments. However, the KMD must specify all memory resources that *VidMm* manages among all processes running on the system. For example:
 
+* A vertex shader microcode that implements a fixed function pipeline can reside in the GPU address space, but outside the memory that *VidMm* manages (that is, not part of a segment). This configuration is possible because the microcode is always available to all processes and is never the source of contention between processes.
+
+* For resources such as vertex buffers, textures, render targets, and application-specific shader code, *VidMm* must allocate video memory resources from one of the driver's memory segments. This requirement is because the resource types must be fairly available to all processes.
+
+The following figure shows an example of how a KMD can configure memory segments from the GPU address space.
+
+:::image type="content" source="images/memseg.png" alt-text="Diagram illustrating the division of GPU address space into memory segments.":::
+
+The numbers in the figure correspond to the following memory segments:
+
+1. The CPU-accessible linear segment: This segment is accessible by the CPU and is organized as a linear address space.
+
+2. Non-CPU-accessible linear segment: This segment is organized as a linear address space, but isn't accessible by the CPU. It's used for resources that don't require CPU access.
+
+3. Read-only AGP aperture segment: This segment is used for read-only access to AGP (Accelerated Graphics Port) memory.
+
+4. Aperture segment: This segment is used for resources that are accessed through the AGP aperture.
+
+The Hidden boxes represent memory segments that the KMD doesn't expose to *VidMm*. Video memory that is hidden from *VidMm* can't be mapped into user space or be made exclusively available to any particular process. Doing so breaks the fundamental rules of virtual memory that require all processes running on the system to have access to all memory.

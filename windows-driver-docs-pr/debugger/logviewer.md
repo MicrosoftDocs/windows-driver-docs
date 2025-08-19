@@ -3,6 +3,7 @@ title: LogViewer
 description: LogViewer
 keywords: ["LogViewer, overview"]
 ms.date: 05/23/2017
+ms.topic: overview
 ---
 
 # LogViewer
@@ -26,8 +27,3 @@ This section includes:
  
 
  
-
-
-
-
-

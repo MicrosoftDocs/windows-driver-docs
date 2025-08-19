@@ -7,6 +7,7 @@ keywords:
 - network interface cards WDK networking , surprise removals
 - Plug and Play WDK NDIS miniport , surprise NIC removal
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling the Surprise Removal of a NIC

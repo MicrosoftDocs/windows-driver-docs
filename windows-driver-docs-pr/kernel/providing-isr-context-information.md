@@ -3,6 +3,7 @@ title: Providing ISR Context Information
 description: Providing ISR Context Information
 keywords: ["interrupt service routines WDK kernel , context information", "ISRs WDK kernel , context information", "interrupt objects WDK kernel , context information", "context information WDK interrupts", "pointers WDK interrupts"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Providing ISR Context Information

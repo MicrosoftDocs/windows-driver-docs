@@ -3,6 +3,7 @@ title: Setting Up Exclusion Lists
 description: Setting Up Exclusion Lists
 keywords: ["SymProxy, exclusion lists"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Setting Up Exclusion Lists
@@ -44,8 +45,3 @@ SymProxy reads from the exclusion list every half-hour so that you do not need t
  
 
  
-
-
-
-
-

@@ -6,6 +6,7 @@ keywords:
 - COM object creation WDK audio
 - objects WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating Audio Driver Objects

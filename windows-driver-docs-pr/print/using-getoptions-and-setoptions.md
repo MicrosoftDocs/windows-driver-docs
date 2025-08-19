@@ -5,6 +5,7 @@ keywords:
 - GetOptions
 - SetOptions
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # Using GetOptions and SetOptions

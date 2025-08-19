@@ -1,7 +1,8 @@
 ---
-title: Combining platform extensions with operating system versions
+title: Combining Platform Extensions with Operating System Versions
 description: Provides information on combining platform extensions with operating system versions
 ms.date: 06/15/2022
+ms.topic: how-to
 ---
 
 # Combining platform extensions with operating system versions
@@ -98,6 +99,25 @@ When you install a driver package on a device, Windows follows these steps to pr
     For example, if an INF *Models* section has a platform extension of **ntx86**, Windows selects that section if the host operating system is Microsoft Windows 2000 or later version of Windows on an x86-based system.
 
 1. If Windows cannot find a matching [**INF *Models* section**](inf-models-section.md), it will not install that driver package on the device.
+
+### How *TargetOsVersion* decorations are resolved
+
+When determining the applicable [**INF *Models* sections**](inf-models-section.md), the evaluation is performed per-line within the [**INF Manufacturer section**](inf-manufacturer-section.md), where, for a given OS version, each line may have up to one applicable section.
+
+The below INF excerpt shows an example where [ExampleModelsSection_1.NTamd64.10.0...17134] will be selected on a Windows build number equal to or greater than 17134 , and *both* [ExampleModelsSection_1.NTamd64.10.0...17134] and [ExampleModelsSection_2.NTamd64.10.0...22000] will be selected on a Windows build number equal to or greater than 22000.
+
+```inf
+[Manufacturer]
+%ManufacturerName% = ExampleModelsSection_1,NTamd64.10.0...17134
+%ManufacturerName% = ExampleModelsSection_2,NTamd64.10.0...22000
+```
+
+The below INF excerpt shows an example where [ExampleModelsSection_1.NTamd64.10.0...17134] will be selected on a Windows build number equal to or greater than 17134, and [ExampleModelsSection_1.NTamd64.10.0...22000] will be selected on a Windows build number equal to or greater than 22000.
+
+```inf
+[Manufacturer]
+%ManufacturerName% = ExampleModelsSection_1,NTamd64.10.0...17134,NTamd64.10.0...22000
+```
 
 ## Sample INF *Models* sections with *TargetOSVersion* decorations
 

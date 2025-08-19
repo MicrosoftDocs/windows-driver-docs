@@ -1,11 +1,12 @@
 ---
-title: MRxCleanupFobx routine (Windows Drivers)
+title: MRxCleanupFobx Routine (Windows Drivers)
 description: Learn more about the MRxCleanupFobx routine.
 keywords:
 - mrx/MRxCleanupFobx
 - MRxCleanupFobx
 - PMRX_CALLDOWN
 ms.date: 11/02/2022
+ms.topic: reference
 ---
 
 # MRxCleanupFobx routine

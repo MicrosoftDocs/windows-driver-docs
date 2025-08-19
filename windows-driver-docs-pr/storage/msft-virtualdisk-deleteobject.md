@@ -1,5 +1,5 @@
 ---
-title: DeleteObject method of the MSFT\_VirtualDisk class
+title: DeleteObject Method of the MSFT_VirtualDisk Class
 description: Deletes the virtual disk.
 ms.assetid: 00B55357-8DEC-43C0-9E0F-3073B4328BB2
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

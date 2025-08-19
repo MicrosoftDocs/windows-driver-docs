@@ -1,5 +1,5 @@
 ---
-title: FSCTL_ENUM_EXTERNAL_BACKING control code
+title: FSCTL_ENUM_EXTERNAL_BACKING Control Code
 description: The FSCTL_ENUM_EXTERNAL_BACKING control code begins or continues an enumeration of files on a volume that have a backing source.
 keywords: ["FSCTL_ENUM_EXTERNAL_BACKING control code Installable File System Drivers"]
 topic_type:
@@ -46,7 +46,7 @@ To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers
 
 | Code | Meaning |
 | ---- | ------- |
-| STATUS_ACCESS_DENIED | The requestor does not have administrative privileges. |
+| STATUS_ACCESS_DENIED | The requester does not have administrative privileges. |
 | STATUS_BUFFER_TOO_SMALL | The length of the output buffer pointed to by **OutputBuffer** and specified by **OutputBufferLength** is too small. |
 | STATUS_NO_MORE_FILES | No more files on the volume have a backing source. |
 | STATUS_INTERNAL_ERROR | The requested volume is not accessible. |

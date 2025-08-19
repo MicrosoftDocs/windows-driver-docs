@@ -1,7 +1,8 @@
 ---
-title: Miscellaneous rule set (WDM)
+title: Miscellaneous Rule Set (WDM)
 description: Use these rules to verify that your driver correctly follows a general set of requirements for the proper handling of registry keys, strings and device object pointers.
 ms.date: 05/21/2018
+ms.topic: checklist
 ---
 
 # Miscellaneous rule set (WDM)

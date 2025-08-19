@@ -1,5 +1,5 @@
 ---
-title: Directory Services for printers
+title: Directory Services for Printers
 description: Provides information about Directory Services for printers.
 keywords:
 - Directory Services WDK printer
@@ -7,6 +7,7 @@ keywords:
 - print queues WDK, Directory Services
 - queues WDK printer, Directory Services
 ms.date: 09/12/2022
+ms.topic: overview
 ---
 
 # Directory Services for printers

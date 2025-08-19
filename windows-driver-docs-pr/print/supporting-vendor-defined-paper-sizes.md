@@ -5,6 +5,7 @@ keywords:
 - vendor-supplied paper sizes WDK Unidrv
 - nonstandard paper sizes WDK Unidrv
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Supporting Vendor-Defined Paper Sizes

@@ -1,5 +1,5 @@
 ---
-title: C28133 warning
+title: C28133 Warning
 description: Warning C28133 IoInitializeTimer is best called from AddDevice.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -7,6 +7,7 @@ keywords:
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28133"
+ms.topic: reference
 ---
 
 # C28133

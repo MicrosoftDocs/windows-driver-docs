@@ -8,6 +8,7 @@ keywords:
 - offline state WDK printer
 - hot-pluggable bus WDK printer
 ms.date: 01/27/2023
+ms.topic: troubleshooting-error-codes
 ---
 
 # Device Error States
@@ -48,7 +49,7 @@ You should also perform the following additional test procedures for offline and
 
 - **Hot-Pluggable Bus Errors**
   
-  - With the device connected, unload and load the device stack (for example, the [USB Driver Stack](/windows-hardware/drivers/ddi/index)). Send print jobs before, during, and after unloading the stack. For example, with USB devices connected, uninstall the USB root hub or host controller to which the device is connected.
+  - With the device connected, unload and load the device stack (for example, the [USB Driver Stack](/windows-hardware/drivers/usbcon/usb-dual-role-driver-stack-architecture)). Send print jobs before, during, and after unloading the stack. For example, with USB devices connected, uninstall the USB root hub or host controller to which the device is connected.
   
   - Test unloading and loading the device stack with and without print jobs in progress. Verify that the job can be canceled, recovered from, and restarted.
   

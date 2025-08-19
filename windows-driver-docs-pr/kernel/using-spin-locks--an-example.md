@@ -1,8 +1,9 @@
 ---
-title: Using Spin Locks An Example
+title: Using Spin Locks an Example
 description: Using Spin Locks An Example
 keywords: ["spin locks WDK kernel", "interrupt spin locks WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Using Spin Locks: An Example

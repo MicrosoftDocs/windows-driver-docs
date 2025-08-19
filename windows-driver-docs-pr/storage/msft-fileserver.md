@@ -1,5 +1,5 @@
 ---
-title: MSFT\_FileServer class
+title: MSFT_FileServer Class
 description: Models the Windows operating system's concept of a file server.
 ms.assetid: 1AF4536E-8B51-46A5-856F-9BE2482312F6
 keywords:
@@ -23,7 +23,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

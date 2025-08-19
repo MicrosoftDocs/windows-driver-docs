@@ -2,6 +2,7 @@
 title: Overview of SerCx2 I/O Transactions
 description: SerCx2 handles a read or write request from a client by issuing one or more I/O transactions to the serial controller driver.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Overview of SerCx2 I/O Transactions

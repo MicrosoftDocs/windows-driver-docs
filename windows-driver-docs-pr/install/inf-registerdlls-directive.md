@@ -1,5 +1,5 @@
 ---
-title: INF RegisterDlls directive
+title: INF RegisterDlls Directive
 description: A RegisterDlls directive references one or more INF sections used to specify files that are OLE controls and require self-registration.
 keywords:
 - INF RegisterDlls Directive Device and Driver Installation
@@ -10,13 +10,15 @@ api_name:
 - INF RegisterDlls Directive
 api_type:
 - NA
-ms.date: 07/11/2022
+ms.date: 04/17/2025
 ---
 
 # INF RegisterDlls directive
 
+[!INCLUDE [Caution invalid INF directive](../includes/inf-directive-invalid-22h2.md)]
+
 > [!NOTE]
-> If you are building a universal or mobile driver package, this directive is not valid. You can use the [Reg2inf tool](../devtest/reg2inf.md) to convert existing [INF RegisterDlls directives](../install/inf-registerdlls-directive.md) into [INF AddReg directives](../install/inf-addreg-directive.md) in order to make a driver package universal.  For more info, see [Using a Universal INF File](using-a-universal-inf-file.md).
+> You can use the [Reg2inf tool](../devtest/reg2inf.md) to convert existing **INF RegisterDlls directives** into [INF AddReg directives](../install/inf-addreg-directive.md) in order to make a driver package Universal.
 
 A **RegisterDlls** directive references one or more INF sections used to specify files that are OLE controls and require self-registration.
 

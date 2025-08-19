@@ -1,5 +1,5 @@
 ---
-title: Offline method of the MSFT\_Disk class
+title: Offline Method of the MSFT_Disk Class
 description: Takes the disk offline.
 ms.assetid: B7AA8543-0623-40C6-A906-09DE0B0D19FB
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

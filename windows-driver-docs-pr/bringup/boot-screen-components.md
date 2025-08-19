@@ -1,7 +1,8 @@
 ---
-title: Boot screen components
+title: Boot Screen Components
 description: Describes the components of the firmware update boot screen.
-ms.date: 03/22/2023
+ms.date: 09/24/2024
+ms.topic: concept-article
 ---
 
 # Boot screen components

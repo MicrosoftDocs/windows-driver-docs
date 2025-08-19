@@ -1,5 +1,5 @@
 ---
-title: Using SetupAPI To Verify Driver Authenticode Signatures
+title: Using SetupAPI to Verify Driver Authenticode Signatures
 description: Using SetupAPI To Verify Driver Authenticode Signatures
 keywords:
 - SetupAPI functions WDK , verifying signatures
@@ -9,6 +9,7 @@ keywords:
 - verifying Authenticode signatures
 - checking Authenticode signatures
 ms.date: 03/11/2022
+ms.topic: how-to
 ---
 
 # Using SetupAPI To Verify Driver Authenticode Signatures

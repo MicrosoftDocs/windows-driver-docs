@@ -2,6 +2,7 @@
 title: Enabling Fault Injection
 description: Enabling Fault Injection
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Enabling Fault Injection
@@ -38,12 +39,4 @@ The **runtest** option executes simple disable and enable operations on a driver
     4.  If the WMI event is fired, the **runtest** option repeats step 7 for the next function in the list.
 
 8.  Unregisters the driver.
-
- 
-
- 
-
-
-
-
 

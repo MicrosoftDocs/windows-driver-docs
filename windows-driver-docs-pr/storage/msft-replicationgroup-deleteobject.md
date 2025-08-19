@@ -1,5 +1,5 @@
 ---
-title: DeleteObject method of the MSFT\_ReplicationGroup class
+title: DeleteObject Method of the MSFT_ReplicationGroup Class
 description: Deletes an empty replication group.
 ms.assetid: B0439C17-741B-43ED-99C1-B2A1CE99E267
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

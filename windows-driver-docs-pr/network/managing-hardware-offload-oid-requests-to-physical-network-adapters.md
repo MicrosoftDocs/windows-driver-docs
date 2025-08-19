@@ -2,6 +2,7 @@
 title: Managing Hardware Offload OID Requests to Physical Network Adapters
 description: Managing Hardware Offload OID Requests to Physical Network Adapters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Managing Hardware Offload OID Requests to Physical Network Adapters
@@ -15,11 +16,11 @@ In this configuration, an extensible switch extension is exposed to every networ
 
 The following figure shows an example of an extensible switch team for NDIS 6.40 (Windows Server 2012 R2) and later.
 
-![diagram of extensible switch team for ndis 6.40.](images/vswitch-oid-controlpath2-ndis640.png)
+:::image type="content" source="images/vswitch-oid-controlpath2-ndis640.png" alt-text="Diagram showing an extensible switch team for NDIS 6.40.":::
 
 The following figure shows an example of an extensible switch team for NDIS 6.30 (Windows Server 2012).
 
-![diagram of extensible switch team for ndis 6.30.](images/vswitch-oid-controlpath2.png)
+:::image type="content" source="images/vswitch-oid-controlpath2.png" alt-text="Diagram illustrating an extensible switch team for NDIS 6.30.":::
 
 **Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*.
 

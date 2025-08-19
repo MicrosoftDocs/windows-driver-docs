@@ -3,7 +3,8 @@ title: Using GetGlobalAttribute
 description: Using GetGlobalAttribute
 keywords:
 - GetGlobalAttribute
-ms.date: 01/31/2023
+ms.date: 02/20/2024
+ms.topic: concept-article
 ---
 
 # Using GetGlobalAttribute
@@ -14,142 +15,23 @@ All of the global attribute names are the same as the keyword names defined in *
 
 In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE_DATATYPE**](/windows-hardware/drivers/ddi/printoem/ne-printoem-_eattribute_datatype) enumerated type.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Global Attribute</th>
-<th>Output Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>CenterRegistered</strong></p></td>
-<td><p><em>pdwDataType: kADT_BOOL</p>
-<p><em></em>pbData</em>: <strong>TRUE</strong> or <strong>FALSE</strong></p>
-<p><em><em>pcbNeeded</em>: <strong>sizeof</strong>(BOOL)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>ColorDevice</strong></p></td>
-<td><p></em>pdwDataType: kADT_BOOL</p>
-<p><em><em>pbData</em>: <strong>TRUE</strong> or <strong>FALSE</strong></p>
-<p><em></em>pcbNeeded</em>: <strong>sizeof</strong>(BOOL)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Extensions</strong></p></td>
-<td><p><em><em>pdwDataType</em>: kADT_ASCII</p>
-<p><em>pbData</em>: ASCII string (in MULTI_SZ format) containing registered values of extensionOption the printer supports.</p>
-<p><em></em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the last null character)</p>
-<p>Note: "<em>FileSystem: True" is treated as if <strong></em>Extensions</strong> had the "FileSystem" option. "FileSystem: False" is treated as if <em>Extensions did not have the "FileSystem" option.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>FileVersion</strong></p></td>
-<td><p><em></em>pdwDataType</em>: kADT_DWORD</p>
-<p><em><em>pbData</em>: a DWORD whose high-order word contains the major version number, and whose low-order word contains the minor version number.</p>
-<p><em></em>pcbNeeded</em>: <strong>sizeof</strong>(DWORD)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>FreeVM</strong></p></td>
-<td><p><em><em>pdwDataType</em>: kADT_DWORD</p>
-<p><em></em>pbData</em>: value of <em>FreeVM</p>
-<p><em></em>pcbNeeded</em>: <strong>sizeof</strong>(DWORD)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LandscapeOrientation</strong></p></td>
-<td><p><em><em>pdwDataType</em>: kADT_ASCII</p>
-<p><em>pbData</em>: NULL-terminated ASCII string of either "Plus90" or "Minus90".</p>
-<p><em></em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the last null character)</p>
-<p>Note: "Minus90" is returned only when the PPD contains "<em>LandscapeOrientation: Minus90". In all other cases, "Plus90" is returned.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LanguageEncoding</strong></p></td>
-<td><p><em></em>pdwDataType</em>: kADT_ASCII</p>
-<p><em>pbData</em>: NULL-terminated ASCII string containing one of the following encodingOption values:</p>
-<p>"ISOLatin1"</p>
-<p>"Unicode"</p>
-<p>"JIS83-RKSJ"</p>
-<p>"None"</p>
-<p><em><em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the last null character)</p>
-<p>Notes</p>
-<p>"WindowsANSI" is treated the same as "ISOLatin1". Other encodingOption values are not supported.</p>
-<p>If *LanguageEncoding is absent,*LanguageVersion is used to deduce the return value.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LanguageLevel</strong></p></td>
-<td><p><em></em>pdwDataType</em>: kADT_DWORD</p>
-<p><em><em>pbData</em>: PostScript language level supported by the printer</p>
-<p><em></em>pcbNeeded</em>: <strong>sizeof</strong>(DWORD)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>NickName</strong></p></td>
-<td><p><em><em>pdwDataType</em>: kADT_UNICODE</p>
-<p><em>pbData</em>: NULL-terminated Unicode string of the PPD's *ShortNickName value if*ShortNickName is present, or *NickName value if*ShortNickName is absent.</p>
-<p><em></em>pcbNeeded</em>: byte count of the Unicode string pointed to by <em>pbData</em> (including the last null character)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>PPD-Adobe</strong></p></td>
-<td><p><em><em>pdwDataType</em>: kADT_DWORD</p>
-<p><em></em>pbData</em>: a DWORD whose high-order word contains the major version number, and whose low-order word contains the minor version number.</p>
-<p><em><em>pcbNeeded</em>: <strong>sizeof</strong>(DWORD)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>PrintPSErrors</strong></p></td>
-<td><p></em>pdwDataType: kADT_BOOL</p>
-<p><em><em>pbData</em>: <strong>TRUE</strong> or <strong>FALSE</strong></p>
-<p><em></em>pcbNeeded</em>: <strong>sizeof</strong>(BOOL)</p>
-<p>Note: If <em>PrintPSErrors is absent, it is assumed to be <strong>TRUE</strong>.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Product</strong></p></td>
-<td><p><em></em>pdwDataType</em>: kADT_BINARY</p>
-<p><em>pbData</em>: the <em>Product value</p>
-<p><em></em>pcbNeeded</em>: byte count of output binary data</p>
-<p>Note: only the first <em>Product entry is returned.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Protocols</strong></p></td>
-<td><p><em></em>pdwDataType</em>: kADT_ASCII</p>
-<p><em>pbData</em>: ASCII string (in MULTI_SZ format) containing registered values of protocolOption the printer supports.</p>
-<p><em><em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the last null character)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>PSVersion</strong></p></td>
-<td><p><em></em>pdwDataType</em>: kADT_BINARY</p>
-<p><em>pbData</em>: the <em>PSVersion value</p>
-<p><em></em>pcbNeeded</em>: byte count of output binary data</p>
-<p>Note: only the first <em>PSVersion entry is returned.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>SuggestedJobTimeout</strong></p></td>
-<td><p><em></em>pdwDataType</em>: kADT_DWORD</p>
-<p><em><em>pbData</em>: the *SuggestedJobTimeout value. If it is absent from the PPD, returns 0 by default.</p>
-<p><em></em>pcbNeeded</em>: <strong>sizeof</strong>(DWORD)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>SuggestedWaitTimeout</strong></p></td>
-<td><p><em><em>pdwDataType</em>: kADT_DWORD</p>
-<p><em></em>pbData</em>: the <em>SuggestedWaitTimeout value. If it is not present in the PPD, returns 300 by default.</p>
-<p><em></em>pcbNeeded</em>: <strong>sizeof</strong>(DWORD)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Throughput</strong></p></td>
-<td><p><em><em>pdwDataType</em>: kADT_DWORD</p>
-<p><em></em>pbData</em>: the <em>Throughput value. If it is not present in the PPD, returns 0 by default.</p>
-<p><em></em>pcbNeeded</em>: <strong>sizeof</strong>(DWORD)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>TTRasterizer</strong></p></td>
-<td><p><em><em>pdwDataType</em>: kADT_ASCII</p>
-<p><em>pbData</em>: a NULL-terminated ASCII string containing one of following rasterizerOption values:</p>
-<p>"None"</p>
-<p>"Accept68K"</p>
-<p>"Type42"</p>
-<p>"TrueImage"</p>
-<p><em></em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the last null character)</p>
-<p>Note: if the*TTRasterizer entry is absent, "None" is returned.</p></td>
-</tr>
-</tbody>
-</table>
+| Global attribute | Output parameters |
+|--|--|
+| **CenterRegistered** | *pdwDataType*: kADT_BOOL<br><br>*pbData*: **TRUE** or **FALSE**<br><br>*pcbNeeded*: sizeof(BOOL) |
+| **ColorDevice** | *pdwDataType*: kADT_BOOL<br><br>*pbData*: **TRUE** or **FALSE**<br><br>*pcbNeeded*: sizeof(BOOL) |
+| **Extensions** | *pdwDataType*: kADT_ASCII<br><br>*pbData*: ASCII string (in MULTI_SZ format) containing registered values of extensionOption the printer supports.<br><br>*pcbNeeded*: byte count of the ASCII string pointed to by pbData (including the last null character).<br><br>"FileSystem: True" is treated as if **Extensions** had the "FileSystem" option. "FileSystem: False" is treated as if Extensions didn't have the "FileSystem" option. |
+| **FileVersion** | *pdwDataType*: kADT_DWORD<br><br>*pbData*: a DWORD whose high-order word contains the major version number, and whose low-order word contains the minor version number.<br><br>*pcbNeeded*: sizeof(DWORD) |
+| **FreeVM** | *pdwDataType*: kADT_DWORD<br><br>*pbData*: value of FreeVM<br><br>*pcbNeeded*: sizeof(DWORD) |
+| **LandscapeOrientation** | *pdwDataType*: kADT_ASCII<br><br>*pbData*: NULL-terminated ASCII string of either "Plus90" or "Minus90".<br><br>*pcbNeeded*: byte count of the ASCII string pointed to by pbData (including the last null character).<br><br>"Minus90" is returned only when the PPD contains "LandscapeOrientation: Minus90". In all other cases, "Plus90" is returned. |
+| **LanguageEncoding** | *pdwDataType*: kADT_ASCII<br><br>*pbData*: NULL-terminated ASCII string containing one of the following encodingOption values:<br><br>"ISOLatin1"<br><br>"Unicode"<br><br>"JIS83-RKSJ"<br><br>"None"<br><br>*pcbNeeded*: byte count of the ASCII string pointed to by pbData (including the last null character).<br><br>"WindowsANSI" is treated the same as "ISOLatin1". Other encodingOption values aren't supported.<br><br>If LanguageEncoding is absent, LanguageVersion is used to deduce the return value. |
+| **LanguageLevel** | *pdwDataType*: kADT_DWORD<br><br>*pbData*: PostScript language level supported by the printer<br><br>*pcbNeeded*: sizeof(DWORD) |
+| **NickName** | *pdwDataType*: kADT_UNICODE<br><br>*pbData*: NULL-terminated Unicode string of the PPD's ShortNickName value if ShortNickName is present, or NickName value if ShortNickName is absent.<br><br>*pcbNeeded*: byte count of the Unicode string pointed to by pbData (including the last null character) |
+| **PPD-Adobe** | *pdwDataType*: kADT_DWORD<br><br>*pbData*: a DWORD whose high-order word contains the major version number, and whose low-order word contains the minor version number.<br><br>*pcbNeeded*: sizeof(DWORD) |
+| **PrintPSErrors** | *pdwDataType*: kADT_BOOL<br><br>*pbData*: **TRUE** or **FALSE**<br><br>*pcbNeeded*: sizeof(BOOL)<br><br>If PrintPSErrors is absent, it's assumed to be **TRUE**. |
+| **Product** | *pdwDataType*: kADT_BINARY<br><br>*pbData*: the Product value<br><br>*pcbNeeded*: byte count of output binary data<br><br>Only the first Product entry is returned. |
+| **Protocols** | *pdwDataType*: kADT_ASCII<br><br>*pbData*: ASCII string (in MULTI_SZ format) containing registered values of protocolOption the printer supports.<br><br>*pcbNeeded*: byte count of the ASCII string pointed to by pbData (including the last null character) |
+| **PSVersion** | *pdwDataType*: kADT_BINARY<br><br>*pbData*: the PSVersion value<br><br>*pcbNeeded*: byte count of output binary data<br><br>Only the first PSVersion entry is returned. |
+| **SuggestedJobTimeout** | *pdwDataType*: kADT_DWORD<br><br>*pbData*: the SuggestedJobTimeout value. If it's absent from the PPD, returns 0 by default.<br><br>*pcbNeeded*: sizeof(DWORD) |
+| **SuggestedWaitTimeout** | *pdwDataType*: kADT_DWORD<br><br>*pbData*: the SuggestedWaitTimeout value. If it isn't present in the PPD, returns 300 by default.<br><br>*pcbNeeded*: sizeof(DWORD) |
+| **Throughput** | *pdwDataType*: kADT_DWORD<br><br>*pbData*: the Throughput value. If it isn't present in the PPD, returns 0 by default.<br><br>*pcbNeeded*: sizeof(DWORD) |
+| **TTRasterizer** | *pdwDataType*: kADT_ASCII<br><br>*pbData*: a NULL-terminated ASCII string containing one of following rasterizerOption values:<br><br>"None"<br><br>"Accept68K"<br><br>"Type42"<br><br>"TrueImage"<br><br>*pcbNeeded*: byte count of the ASCII string pointed to by pbData (including the last null character).<br><br>If the*TTRasterizer entry is absent, "None" is returned. |

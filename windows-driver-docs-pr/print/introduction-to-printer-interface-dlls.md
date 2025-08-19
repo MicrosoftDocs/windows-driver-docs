@@ -4,6 +4,7 @@ description: Introduction to Printer Interface DLLs
 keywords:
 - printer interface DLL WDK , about printer interface DLL
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Introduction to Printer Interface DLLs

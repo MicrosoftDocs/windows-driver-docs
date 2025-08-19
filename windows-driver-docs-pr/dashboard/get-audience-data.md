@@ -1,8 +1,8 @@
 ---
 title: Get audience data
 description: These methods from the Microsoft Hardware APIs get the applicable audiences for an organization to be used in a shipping label.
-ms.topic: article
 ms.date: 08/21/2018
+ms.topic: how-to
 ---
 # Get audience data
 
@@ -60,7 +60,7 @@ This method has the following syntax.
 
 |Header|Type|Description|
 |--|--|--|
-|Authorization|string|Required. The Azure AD access token in the form **Bearer** *\<token\>*.|
+|Authorization|string|Required. The Microsoft Entra ID access token in the form **Bearer** *\<token\>*.|
 |accept|string|Optional. Specifies the type of content. Allowed value is “application/json”|
 
 ### Request parameters
@@ -96,7 +96,7 @@ The following example demonstrates the JSON response body returned by a successf
     {
       "id": "10415bba-3572-421b-a3de-d0d347bace5f",
       "name": "Test Audience 2",
-      "description": "Additional Audeince",
+      "description": "Additional Audience",
       "audienceName": "Test_Audeince_2"
     }
   ],

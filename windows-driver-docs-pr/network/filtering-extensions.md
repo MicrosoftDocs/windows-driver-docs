@@ -2,6 +2,7 @@
 title: Filtering Extensions
 description: Filtering Extensions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Filtering Extensions

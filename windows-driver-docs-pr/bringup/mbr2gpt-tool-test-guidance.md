@@ -1,7 +1,8 @@
 ---
-title: MBR2GPT tool test guidance
+title: MBR2GPT Tool Test Guidance
 description: Provides guidance on the MBR2GPT tool test.
-ms.date: 03/23/2023
+ms.date: 05/12/2025
+ms.topic: checklist
 ---
 
 # MBR2GPT tool test guidance
@@ -82,7 +83,7 @@ System firmware can vary by manufacturer and by device. Contact the device manuf
 
 Restore data and settings using USMT Load State.
 
-### Conversion as part of Hyper-V generation 1 VM
+### Conversion as part of Hyper-V Generation 1 VM
 
 1. Start with a device running Windows 7, 8, or 8.1 in BIOS mode.
 
@@ -94,9 +95,9 @@ Restore data and settings using USMT Load State.
 
 1. Detach VHD
 
-1. Create a generation 2 VM with UEFI support and attach the above VHD created from Step 5 above.
+1. Create a Generation 2 VM with UEFI support and attach the above VHD created from Step 5 above.
 
-1. Boot to Windows 10, version 1703 in UEFI mode using a gen 2 VM.
+1. Boot to Windows 10, version 1703 in UEFI mode using a Generation 2 VM.
 
 For any of the scenarios above, you can convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you will need to delete the existing protectors and recreate them.
 

@@ -2,6 +2,7 @@
 title: Developing Drivers with WDF - Reference Book
 description: The Developing Drivers with Windows Driver Foundation book is also available to help you learn the concepts and fundamentals of Windows Driver Frameworks (WDF).
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Developing Drivers with the Windows Driver Foundation: Reference Book

@@ -4,6 +4,7 @@ description: Accessing configuration information
 keywords:
 - NetAdapterCx accessing configuration information, NetCx accessing configuration information
 ms.date: 06/05/2017
+ms.topic: concept-article
 ---
 
 # Accessing configuration information

@@ -1,5 +1,5 @@
 ---
-title: UpdateHostStorageCache method of the MSFT\_StorageSetting class
+title: UpdateHostStorageCache Method of the MSFT_StorageSetting Class
 description: Updates the internal cache of software objects (that is, Disks, Partitions, Volumes) for the storage setting.
 ms.assetid: A4B49108-44F2-4BD0-A642-9A0755DCFC81
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

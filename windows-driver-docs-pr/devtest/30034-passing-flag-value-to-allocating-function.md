@@ -1,9 +1,10 @@
 ---
-title: C30034 warning
+title: C30034 Warning
 description: Warning C30034 Passing a flag value to an allocating function that could result in executable memory being allocated.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C30034"
+ms.topic: reference
 ---
 
 # C30034
@@ -41,12 +42,4 @@ ExInitializeNPagedLookasideList(   pLookaside,
                 tag,
                 depth);
 ```
-
- 
-
- 
-
-
-
-
 

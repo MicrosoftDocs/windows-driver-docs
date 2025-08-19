@@ -3,6 +3,7 @@ title: Calling Extensions and Extension Functions
 description: Calling Extensions and Extension Functions
 keywords: ["Debugger Engine API, calling extensions"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Calling Extensions and Extension Functions

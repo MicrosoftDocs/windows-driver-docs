@@ -2,11 +2,12 @@
 title: Security Guidelines for Offload-Capable Miniport Drivers Overview
 description: Security Guidelines for Offload-Capable Miniport Drivers Overview
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Security Guidelines for Offload-Capable Miniport Drivers Overview
 
-To increase its performance, the Microsoft TCP/IP transport can offload tasks or connections to a network interface card (NIC) that has the appropriate TCP/IP-offload capabilities. Offloaded TCP/IP network communication tasks are handled in the NIC hardware. Miniport drivers advertise the various offload capabilities of the NIC hardware to the operating system and confugure the NIC hardware. The NIC hardware performs the advertised offload tasks on outgoing and incoming packets in the send and receive dispatch handlers. The hardware performs operations such as computing IP header checksum and so on.
+To increase its performance, the Microsoft TCP/IP transport can offload tasks or connections to a network interface card (NIC) that has the appropriate TCP/IP-offload capabilities. Offloaded TCP/IP network communication tasks are handled in the NIC hardware. Miniport drivers advertise the various offload capabilities of the NIC hardware to the operating system and configure the NIC hardware. The NIC hardware performs the advertised offload tasks on outgoing and incoming packets in the send and receive dispatch handlers. The hardware performs operations such as computing IP header checksum and so on.
 
 To ensure a secure environment, the miniport driver should advertise only those offload capabilities that the NIC hardware can provide and no others. The miniport driver should configure the hardware to offload the advertised tasks on the packets that meet the advertised criteria. On the send path, the operating system does not require a driver to offload a task that the miniport driver did not advertise. On the receive path, the miniport driver and NIC should not perform any tasks that are not included in the capabilities of the NIC hardware that the miniport driver advertised.
 

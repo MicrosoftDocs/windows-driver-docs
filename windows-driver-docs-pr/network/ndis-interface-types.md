@@ -4,6 +4,7 @@ description: This topic describes types for NDIS Interfaces.
 keywords:
 - NDIS Interface Types, WDK NDIS Interface Types network drivers
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # NDIS Interface Types
@@ -556,7 +557,7 @@ The following table describes IfType values.
 </td><td data-th="Value">
 <p>88</p>
 </td><td data-th="Comment">
-<p>Appletalk remote access protocol</p>
+<p>AppleTalk remote access protocol</p>
 </td></tr>
 <tr><td data-th="Name">
 <p>IF_TYPE_PROP_CNLS</p>

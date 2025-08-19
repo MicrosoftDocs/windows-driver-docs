@@ -1,7 +1,8 @@
 ---
-title: Receive notification for device information account changes
+title: Receive Notification for Device Information Account Changes
 description: Receive notification for device information account changes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Receive notification for device information account changes
@@ -28,7 +29,7 @@ To receive a notification for device information account changes, use the [**Acc
     }
     ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Common tasks for mobile broadband Windows Runtime APIs](./create-a-mobilebroadbandaccount-object.md)

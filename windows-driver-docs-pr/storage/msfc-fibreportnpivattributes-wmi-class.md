@@ -1,7 +1,8 @@
 ---
-title: MSFC\_FibrePortNPIVAttributes WMI Class
+title: MSFC_FibrePortNPIVAttributes WMI Class
 description: MSFC\_FibrePortNPIVAttributes WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSFC\_FibrePortNPIVAttributes WMI Class

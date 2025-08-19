@@ -2,6 +2,7 @@
 title: Static Driver Verifier Diagnostics
 description: Static Driver Verifier Diagnostics
 ms.date: 04/20/2017
+ms.topic: troubleshooting
 ---
 
 # Static Driver Verifier Diagnostics
@@ -21,9 +22,9 @@ msbuild /t:sdv /p:Inputs="/check:* /debug" mydriver.VcxProj /p:Configuration="Re
 
 Enabling diagnostics will result in significantly more output to the command window, as well as the creation of specific log files.
 
-### <span id="enabling_diagnostics"></span><span id="ENABLING_DIAGNOSTICS"></span>Understanding Diagonistics
+### <span id="enabling_diagnostics"></span><span id="ENABLING_DIAGNOSTICS"></span>Understanding Diagnostics
 
-SDV will create several files at each stage of execution which will provide details on that step.  When SDV fails partway through execution, it will not create any diagonistic files for later stages.
+SDV will create several files at each stage of execution which will provide details on that step.  When SDV fails partway through execution, it will not create any diagnostic files for later stages.
 
 The files created are, in order:
 * **smvexecute-NormalBuild.log**: This is located in your driver's source directory and shows the output of SDV's initial attempt to build the driver without additional instrumentation and analysis.

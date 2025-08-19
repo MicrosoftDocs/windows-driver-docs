@@ -1,7 +1,8 @@
 ---
-title: ISCSI\_PortalInfo WMI Class
+title: ISCSI_PortalInfo WMI Class
 description: ISCSI\_PortalInfo WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # ISCSI\_PortalInfo WMI Class
@@ -17,7 +18,7 @@ class ISCSI_PortalInfo
 {
     [read,
      WmiDataId(1),
-     description("An integer used to uniquely identify a paticular port"),
+     description("An integer used to uniquely identify a particular port"),
      WmiVersion(1)] uint32 Index;
 
     [read,

@@ -2,6 +2,7 @@
 title: Example 10 Detecting a Heap Memory Leak in a Process
 description: Example 10 Detecting a Heap Memory Leak in a Process
 ms.date: 10/12/2018
+ms.topic: concept-article
 ---
 
 # Example 10: Detecting a Heap Memory Leak in a Process
@@ -51,8 +52,3 @@ This example uses GFlags and User Mode Dump Heap (UMDH, umdh.exe), a tool includ
  
 
  
-
-
-
-
-

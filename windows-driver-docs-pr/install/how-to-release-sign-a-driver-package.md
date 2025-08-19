@@ -12,6 +12,7 @@ keywords:
 - release-signing driver packages WDK
 - release-signing driver packages WDK , about test signing driver packages
 ms.date: 03/03/2022
+ms.topic: how-to
 ---
 
 # How to Release-Sign a Driver Package

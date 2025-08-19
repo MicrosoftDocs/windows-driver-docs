@@ -1,7 +1,8 @@
 ---
-title: KSNODETYPE\_VIDEO\_SELECTOR
+title: KSNODETYPE_VIDEO_SELECTOR
 description: KSNODETYPE\_VIDEO\_SELECTOR
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSNODETYPE\_VIDEO\_SELECTOR

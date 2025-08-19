@@ -1,7 +1,8 @@
 ---
+title: Support for Property Commands (WpdBasicHardwareDriverSample)
 description: Support for property commands (WpdBasicHardwareDriverSample)
-title: Support for property commands (WpdBasicHardwareDriverSample)
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Supporting WPD property commands (WpdBasicHardwareDriverSample)

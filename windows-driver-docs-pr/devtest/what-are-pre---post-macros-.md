@@ -1,7 +1,8 @@
 ---
-title: What are PRE / POST macros
+title: What are PRE / POST Macros
 description: What are PRE / POST macros
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # What are PRE / POST macros?
@@ -20,12 +21,4 @@ POST macro // If defined
 ```
 
 For an example about how to define the PRE/POST macros, see [How are Trace-If expressions used?](how-are-trace-if-expressions-used-.md).
-
- 
-
- 
-
-
-
-
 

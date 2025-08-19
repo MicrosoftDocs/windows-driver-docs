@@ -1,5 +1,5 @@
 ---
-title: MSFT\_DiskImageToVolume class
+title: MSFT_DiskImageToVolume Class
 description: Association between DiskImage and Volume.
 ms.assetid: A8E35879-C5E8-4FEA-A34E-397A0D99D6B9
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

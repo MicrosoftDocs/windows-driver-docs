@@ -1,18 +1,26 @@
 ---
-title: Write a Universal Windows driver (KMDF) based on a template
-description: This topic describes how to write a Universal Windows driver using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
-keywords:
-- Write a KMDF driver
-ms.date: 10/24/2022
+title: Write a Universal Windows Driver (KMDF) Based on a Template
+description: This topic describes how to write a Universal Windows driver using Kernel-Mode Driver Framework (KMDF). 
+ms.date: 12/09/2024
+ms.topic: tutorial
 ---
 
-# Write a Universal Windows driver (KMDF) based on a template
+# Tutorial: Write a Universal Windows driver (KMDF) based on a template
 
-This topic describes how to write a [Universal Windows driver](/windows-hardware/drivers) using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
+This topic describes how to write a *Universal Windows driver* using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
 
-To get started, be sure you have the latest versions of [Microsoft Visual Studio](../download-the-wdk.md#download-and-install-the-windows-11-version-22h2-wdk) and the [Windows Driver Kit (WDK)](../download-the-wdk.md) installed.
+## Prerequisites
 
-[Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
+- Follow the steps to install [Windows Driver Kit (WDK)](../download-the-wdk.md). [Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
+- Install [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/). When you install Visual Studio 2022, select the **Desktop development with C++** workload, then under **Individual Components** add:
+
+    - MSVC v143 - VS 2022 C++ ARM64/ARM64EC Spectre-mitigated libs (Latest)
+    - MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
+    - C++ ATL for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
+    - C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)
+    - C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
+    - C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)
+    - Windows Driver Kit
 
 ## Create and build a driver
 
@@ -23,6 +31,9 @@ To get started, be sure you have the latest versions of [Microsoft Visual Studio
 1. Select **Kernel Mode Driver (KMDF)** from the list of project types. Select **Next**.
 
     :::image type="content" source="images/vs2019-kmdf2-template.png" alt-text="Screen shot of the new project dialog box, showing kernel mode driver selected.":::
+
+    > [!TIP]
+    > If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, launch **Visual Studio Installer**, select **Modify**, add **Windows Driver Kits** in the **Individual Component** tab, and select **Modify**.
 
 1. In the **Configure your new project** dialog box, enter "KmdfDriver" in the **Project name** field.
 
@@ -144,9 +155,9 @@ Now that you have installed your KMDF driver on the target computer, you'll atta
 1. At this point, you can experiment with the debugger by entering commands at the **kd&gt;** prompt. For example, you could try these commands:
 
     - [lm](./device-nodes-and-device-stacks.md)
-    - [.sympath](../debugger/-sympath--set-symbol-path-.md)
-    - [.reload](../debugger/-reload--reload-module-.md)
-    - [x KmdfHelloWorld!\*](../debugger/x--examine-symbols-.md)
+    - [.sympath](../debuggercmds/-sympath--set-symbol-path-.md)
+    - [.reload](../debuggercmds/-reload--reload-module-.md)
+    - [x KmdfDriver!\*](../debuggercmds/x--examine-symbols-.md)
 
 1. To let the target computer run again, choose **Go** from the **Debug** menu or press "g," then press "enter."
 

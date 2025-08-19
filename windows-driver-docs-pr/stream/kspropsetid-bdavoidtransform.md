@@ -1,7 +1,8 @@
 ---
-title: KSPROPSETID\_BdaVoidTransform
+title: KSPROPSETID_BdaVoidTransform
 description: KSPROPSETID\_BdaVoidTransform
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_BdaVoidTransform

@@ -1,7 +1,8 @@
 ---
-title: ESRT table definition
+title: ESRT Table Definition
 description: The pointer to the ESRT table is identified via its corresponding GUID in the EFI_CONFIGURATION_TABLE.
 ms.date: 03/23/2023
+ms.topic: concept-article
 ---
 
 # ESRT table definition

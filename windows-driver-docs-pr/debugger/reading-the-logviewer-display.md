@@ -3,6 +3,7 @@ title: Reading the LogViewer Display
 description: Reading the LogViewer Display
 keywords: ["LogViewer, display"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Reading the LogViewer Display
@@ -70,8 +71,3 @@ Function calls that returned failure status codes are shaded in pink.
  
 
  
-
-
-
-
-

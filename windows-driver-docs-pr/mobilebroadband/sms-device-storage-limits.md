@@ -1,7 +1,8 @@
 ---
-title: SMS device storage limits
+title: SMS Device Storage Limits
 description: SMS device storage limits
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # SMS device storage limits
@@ -19,7 +20,7 @@ We recommend the following:
 
 -   SMS client apps should not delete messages on read. SMS client apps should let Windows automatically delete old messages when device storage gets full.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Developing SMS apps](developing-sms-apps.md)

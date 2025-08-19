@@ -1,7 +1,8 @@
 ---
-title: KSPROPSETID\_BdaFrequencyFilter
+title: KSPROPSETID_BdaFrequencyFilter
 description: KSPROPSETID\_BdaFrequencyFilter
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_BdaFrequencyFilter

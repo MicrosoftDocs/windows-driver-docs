@@ -1,5 +1,5 @@
 ---
-title: About storage filter drivers
+title: About Storage Filter Drivers
 description: Storage Filter Drivers
 keywords:
 - storage filter drivers WDK
@@ -7,6 +7,7 @@ keywords:
 - storage drivers WDK , filter drivers
 - SFD WDK storage
 ms.date: 03/24/2022
+ms.topic: concept-article
 ---
 
 # About storage filter drivers

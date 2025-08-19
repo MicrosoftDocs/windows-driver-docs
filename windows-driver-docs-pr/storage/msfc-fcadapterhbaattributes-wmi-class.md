@@ -1,7 +1,8 @@
 ---
-title: MSFC\_FCAdapterHBAAttributes WMI Class
+title: MSFC_FCAdapterHBAAttributes WMI Class
 description: MSFC\_FCAdapterHBAAttributes WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSFC\_FCAdapterHBAAttributes WMI Class

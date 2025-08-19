@@ -1,7 +1,8 @@
 ---
-title: MSiSCSI\_RedirectPortalInfoClass WMI Class
+title: MSiSCSI_RedirectPortalInfoClass WMI Class
 description: MSiSCSI\_RedirectPortalInfoClass WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_RedirectPortalInfoClass WMI Class

@@ -6,6 +6,7 @@ keywords:
 - extension units WDK USB Video Class , samples, registry entry
 - sample code WDK USB Video Class , registry entry for UVC extension units
 ms.date: 09/17/2021
+ms.topic: sample
 ---
 
 # Sample Registry Entry for UVC Extension Units

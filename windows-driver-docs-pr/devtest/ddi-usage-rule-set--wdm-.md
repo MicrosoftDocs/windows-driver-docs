@@ -1,7 +1,8 @@
 ---
-title: DDI usage rule set (WDM)
+title: DDI Usage Rule Set (WDM)
 description: Use these rules to verify that your driver correctly uses WDM DDIs correctly.
 ms.date: 10/21/2020
+ms.topic: best-practice
 ---
 
 # DDI usage rule set (WDM)

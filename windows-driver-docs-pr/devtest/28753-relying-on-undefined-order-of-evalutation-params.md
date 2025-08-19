@@ -1,9 +1,10 @@
 ---
-title: C28753 warning
+title: C28753 Warning
 description: Warning C28753 Relying on undefined order of evaluation of parameters.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28753"
+ms.topic: reference
 ---
 
 # C28753
@@ -15,7 +16,7 @@ C/C++ allows the compiler to generate code to evaluate actual parameters in any 
 
 A common mistake is with the use of smart pointers where the address-of operator **&** has side effects, in calls like this:
 
-```ManagedCPlusPlus
+```cpp
 sp->Foo(&sp);
 ```
 
@@ -26,23 +27,15 @@ The calls to member access operator **-&gt;** and operator **&** might happen in
 
 The code following example generates this warning.
 
-```ManagedCPlusPlus
+```cpp
 sp->Foo(&sp)
 ```
 
 The following code example avoids this warning.
 
-```ManagedCPlusPlus
+```cpp
 SmartPtr spTemp;
 sp->Foo(&spTemp);
 sp = spTemp;
 ```
-
- 
-
- 
-
-
-
-
 

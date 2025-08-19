@@ -1,10 +1,11 @@
 ---
-title: Updates for IddCx versions 1.4 and later
+title: Updates for IddCx Versions 1.4 and Later
 description: IddCx version 1.4 updates for indirect display drivers
 ms.date: 08/09/2022
 keywords:
 - Indirect display driver, IddCx versions 1.4 and later
 - IDD, IddCx versions 1.4 and later
+ms.topic: release-notes
 ---
 
 # Updates for IddCx versions 1.4 and later

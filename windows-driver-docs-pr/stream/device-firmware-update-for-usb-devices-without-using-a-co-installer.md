@@ -1,8 +1,8 @@
 ---
-title: Device firmware update For USB devices without using a co-installer
+title: Device Firmware Update for USB Devices without using a Co-installer
 description: Outlines a recommended method to update USB device firmware without a co-installer.
-ms.date: 03/24/2023
-ms.custom: contperf-fy22q3
+ms.date: 04/28/2025
+ms.topic: best-practice
 ---
 
 # Device firmware update For USB devices without using a co-installer
@@ -11,7 +11,7 @@ ms.custom: contperf-fy22q3
 > Starting with the WDK for Windows 11, version 22H2, WDF redistributable co-installers are no longer supported.
 > To learn how to work around this change, see [WDF redistributable co-installers don't work](/windows-hardware/drivers/wdk-known-issues#wdf-redistributable-co-installers-dont-work) in the *WDK known issues* article.
 
-USB Device vendors use co-installers to update device firmware for devices that use inbox USB device drivers. However, co-installers aren't supported by the new "Universal INF" standard, which is a requirement on Windows 10. This poses a challenge to existing USB device firmware update process. This article outlines a recommended method to update USB device firmware without a co-installer.
+USB device vendors use co-installers to update device firmware for devices that use inbox USB device drivers. However, co-installers aren't supported by the new "Universal INF" standard, which is a requirement on Windows 10. This poses a challenge to existing USB device firmware update process. This article outlines a recommended method to update USB device firmware without a co-installer.
 
 ## Requirements
 
@@ -41,13 +41,13 @@ There are two ways the firmware could be updated:
 
 1. Firmware Update Device Driver
 
-    1. A vendor supplied lower filter driver that puts the device in "firmware update mode".
+    1. A vendor supplied lower filter driver that puts the device in firmware update mode.
 
     1. The device enumerates as a firmware update device.
 
     1. Vendor supplied firmware update driver loads against this device and updates the firmware.
 
-## Method 1: Firmware Update Filter Driver
+## Method 1: Firmware update filter driver
 
 In this method, a lower filter driver to the USB device driver installs as part of driver update process. This filter driver performs the firmware update.
 
@@ -61,7 +61,7 @@ The driver update package on the Windows Update server contains:
 
 ![Firmware update UMDF lower filter driver method.](images/fw-update-umdf-lower-filter-driver-method.png)
 
-While installing the driver update package, the firmware update WDF filter driver's [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine is called. From this routine, the WDF filter driver gets for the device firmware version from the device HW registry key. The device firmware should have placed the firmware version using the MSOS descriptor onto the device HW registry key.
+While installing the driver update package, the firmware update WDF filter driver's [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine is called. From this routine, the WDF filter driver gets for the device firmware version from the device HW registry key. The device firmware should place the firmware version using the MSOS descriptor onto the device HW registry key.
 
 1. If the device firmware version and the filter driver expected firmware version are different, or
 
@@ -73,7 +73,7 @@ While installing the driver update package, the firmware update WDF filter drive
 
     1. Because there's no necessity for updating the firmware as the device has the expected firmware.
 
-When the [EVT_WDF_DEVICE_D0_ENTRY](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) callback of the WDF filter driver is called at a later point, the filter driver must register for device interface change notifications using CM_Register_Notification or IoRegisterPlugPlayNotification (UMDF or KMDF) to listen to the device interface class the USB device will register the device into. Ror example, the firmware update filter driver for an RGB camera would register for KSCATEGORY_VIDEO_CAMERA. On receiving the notification, the filter driver should post a work-item that would perform the firmware update.
+When the [EVT_WDF_DEVICE_D0_ENTRY](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) callback of the WDF filter driver is called at a later point, the filter driver must register for device interface change notifications using CM_Register_Notification or IoRegisterPlugPlayNotification (UMDF or KMDF) to listen to the device interface class the USB device registers the device into. Ror example, the firmware update filter driver for an RGB camera would register for KSCATEGORY_VIDEO_CAMERA. On receiving the notification, the filter driver should post a work-item that would perform the firmware update.
 
 UMDF based firmware update drivers can use the device specific APIs or issue the control transfers directly to access the USB device to perform the firmware update. For example, the UMDF based filter driver for a camera would use Camera APIs to perform the firmware update.
 
@@ -83,9 +83,9 @@ On completion of flashing the firmware, the device must disconnect and reconnect
 
 The method of using a "firmware update filter driver", is recommended for devices that have enough resources to hold two full firmware images (the update image and a backup image) on the device memory. The reason is if there were failures during downloading the updated firmware, the device can abandon the update and boot into its original firmware. Thus, not bricking the device.
 
-## Method 2: Firmware Update Device Driver
+## Method 2: Firmware update device driver
 
-In this method, a lower filter driver to the USB device will be installed as part of the driver update process. This filter driver sends a command to the device to restart in firmware update mode, where the device exposes a firmware update interface. The driver for the firmware update interface will load and perform the firmware update.
+In this method, a lower filter driver to the USB device is installed as part of the driver update process. This filter driver sends a command to the device to restart in firmware update mode, where the device exposes a firmware update interface. The driver for the firmware update interface loads and performs the firmware update.
 
 The driver update package on Windows Update server for the device contains:
 
@@ -101,7 +101,7 @@ In addition to the driver update package, a separate Firmware Update Device Driv
 
 ![Firmware update WDF driver method.](images/fw-update-wdf-driver-method.png)
 
-While installing the driver update package, the WDF lower filter driver's AddDevice routine is called. From this routine, the filter driver queries for the device firmware version from the device HW registry key. The device firmware should have placed the "firmware version", using the MSOS descriptor or the USB device's extension INF, onto the device HW registry key.
+While installing the driver update package, the WDF lower filter driver's AddDevice routine is called. From this routine, the filter driver queries for the device firmware version from the device HW registry key. The device firmware places the "firmware version", using the MSOS descriptor or the USB device's extension INF, onto the device HW registry key.
 
 1. If the device firmware version and the filter driver expected firmware versions are different or
 
@@ -111,7 +111,7 @@ While installing the driver update package, the WDF lower filter driver's AddDev
 
 1. Else, the WDF filter driver won't insert itself into the device stack
 
-When the [EVT_WDF_DEVICE_D0_ENTRY](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) callback of the WDF filter driver is called at a later point, the filter driver issues a vendor specific command to the device that will place it in firmware update mode. that is The device will disconnect and reconnect, exposing the firmware update interface.
+When the [EVT_WDF_DEVICE_D0_ENTRY](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) callback of the WDF filter driver is called at a later point, the filter driver issues a vendor specific command to the device that places it in firmware update mode. The device disconnects and reconnects, exposing the firmware update interface.
 
 The system enumerates the firmware update device interface. A custom firmware update WDF driver supplied by the vendor, in the firmware update package, will be load for this firmware update interface. This driver updates the firmware.
 
@@ -123,7 +123,7 @@ This method is recommended for devices that can't hold the updated and original 
 
 ## Recovery
 
-The firmware update process can fail for various reasons. If that happens, when the device is enumerated again, the firmware update driver may try to update the firmware again and may fail again and this update process could end up in a loop. The firmware update driver must put an upper limit to the number of retries it can perform. When the firmware update retries gets beyond a threshold (for example, 3 retries) then the filter driver shouldn't attempt to update the firmware again, until a new version of the driver is downloaded from WU. The firmware update driver may use the registry to persist the retry states.
+The firmware update process can fail for various reasons. If that happens, when the device is enumerated again, the firmware update driver may try to update the firmware again and may fail again and this update process could end up in a loop. The firmware update driver must put an upper limit to the number of retries it can perform. When the firmware update retries exceed a threshold (for example, three retries) then the filter driver shouldn't attempt to update the firmware again, until a new version of the driver is downloaded from WU. The firmware update driver may use the registry to persist the retry states.
 
 At the end of device firmware update, we recommend that the device reset itself and re-enumerate.
 
@@ -142,9 +142,10 @@ Signature="$WINDOWS NT$"
 Class=Extension
 ClassGUID={e2f84ce7-8efa-411c-aa69-97454ca4cb57}
 Provider=%CONTOSO%
-ExtensionId = {BC6EE554-271C-48C8-B713-8078833962BD} ; replace with your own GUID
-CatalogFile.NT = SampleExtension.cat
+ExtensionId={BC6EE554-271C-48C8-B713-8078833962BD} ; replace with your own GUID
+CatalogFile.NT=SampleExtension.cat
 DriverVer=08/28/2017,10.0.1700.000
+PnpLockdown=1
 
 [SourceDisksFiles]
 ContosoFirmwareUpdateFilterDriver.dll=1
@@ -154,9 +155,9 @@ ContosoFirmware.bin=1
 1 = %MediaDescription%
 
 [DestinationDirs]
-UMDriverCopy=12,UMDF ; copy to drivers\UMDF
-ContosoFirmwareCopy=12,ContosoFirmware ; copy to drivers\ContosoFirmware
-DefaultDestDir = 12
+UMDriverCopy=13
+ContosoFirmwareCopy=13
+DefaultDestDir = 13
 
 [UMDriverCopy]
 ContosoFirmwareUpdateFilterDriver.dll
@@ -165,40 +166,37 @@ ContosoFirmwareUpdateFilterDriver.dll
 ContosoFirmware.bin
 
 [Manufacturer]
-%CONTOSO% = ContosoFirmwareUpdateFilterDriver,ntamd64
+%CONTOSO% = ContosoFirmwareUpdateFilterDriver,NTamd64.10.0...22000
 
-[ContosoFirmwareUpdateFilterDriver.ntamd64]
+[ContosoFirmwareUpdateFilterDriver.NTamd64.10.0...22000]
 ; replace with your camera device VID PID
-%ContosoCamera.DeviceDesc% = ContosoFirmwareUpdateFilterDriver_Install, USB\VID_1234&PID_1234&REV_1234
+%ContosoCamera.DeviceDesc% = ContosoFirmwareUpdateFilterDriver_Win11Install, USB\VID_1234&PID_1234&REV_1234
 
-[ContosoFirmwareUpdateFilterDriver_Install]
+[ContosoFirmwareUpdateFilterDriver_Win11Install]
+Include=wudfrd.inf
+Needs=wudfrd.NT
 CopyFiles=UMDriverCopy, ContosoFirmwareCopy
 
-[ContosoFirmwareUpdateFilterDriver_Install.HW]
-AddReg = ContosoFirmwareUpdateFilterDriver.AddReg
+[ContosoFirmwareUpdateFilterDriver_Win11Install.HW]
+Include=wudfrd.inf
+Needs=wudfrd.NT.HW
 
 [ContosoFirmwareUpdateFilterDriver.AddReg]
 ; Load the redirector as an lower filter on this specific device.
 ; 0x00010008 - FLG_ADDREG_TYPE_MULTI_SZ | FLG_ADDREG_APPEND
 HKR,,"LowerFilters",0x00010008,"WUDFRd"
 
-[ContosoFirmwareUpdateFilterDriver_Install.Services]
-AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+[ContosoFirmwareUpdateFilterDriver_Win11Install.Services]
+Include=wudfrd.inf
+Needs=WUDFRD.NT.Services
 
-[WUDFRD_ServiceInstall]
-DisplayName = %WudfRdDisplayName%
-ServiceType = 1
-StartType = 3
-ErrorControl = 1
-ServiceBinary = %12%\WUDFRd.sys
-
-[ContosoFirmwareUpdateFilterDriver_Install.Wdf]
+[ContosoFirmwareUpdateFilterDriver_Win11Install.Wdf]
 UmdfService=ContosoFirmwareUpdateFilterDriver, ContosoFirmwareUpdateFilterDriver.UmdfFilter
 UmdfServiceOrder=ContosoFirmwareUpdateFilterDriver
 
 [ContosoFirmwareUpdateFilterDriver.UmdfFilter]
 UmdfLibraryVersion=2.0.0
-ServiceBinary= "%12%\UMDF\ContosoFirmwareUpdateFilterDriver.dll"
+ServiceBinary= "%13%\ContosoFirmwareUpdateFilterDriver.dll"
 
 [Strings]
 CONTOSO = "Contoso Inc."

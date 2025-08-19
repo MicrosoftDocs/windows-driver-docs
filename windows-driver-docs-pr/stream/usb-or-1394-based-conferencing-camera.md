@@ -9,6 +9,7 @@ keywords:
 - video conferencing cameras WDK video capture
 - cameras WDK video capture
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # USB or 1394-Based Conferencing Camera

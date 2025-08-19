@@ -1,7 +1,8 @@
 ---
-title: What is the Defaultwpp.ini file
+title: What is the Defaultwpp.ini File
 description: What is the Defaultwpp.ini file
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # What is the Defaultwpp.ini file?

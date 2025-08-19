@@ -1,5 +1,5 @@
 ---
-title: MODM_SETVOLUME function (Windows Drivers)
+title: MODM_SETVOLUME Function (Windows Drivers)
 description: Learn more about the MODM_SETVOLUME function.
 keywords:
 - mmddk/modMessage
@@ -66,7 +66,7 @@ The **modMessage** function returns MMSYSERR\_NOERROR if the operation was succe
 
 ## Remarks
 
-This volume level is the final output volume; therefore, only drivers for internal synthesizer devices can support volume level changes. Drivers for MIDI output ports must return a MMSYSERR\_NOTSUPPORTED error for this message. Support for volume level changes is optional for internal synthesizer devices. When a driver receives a [**MODM\_GETDEVCAPS**](modm-getdevcaps.md) message, it must indicate support for volume level changes by setting or clearing the MIDICAPS\_VOLUME and MIDICAPS\_LRVOLUME bits in the **dwSupport** field of the [MIDIOUTCAPS](/windows/win32/api/mmeapi/ns-mmeapi-midioutcaps) data structure. If a driver supports the **MODM\_SETVOLUME** message, it must also support **MODM\_GETVOLUME**.
+This volume level is the final output volume; therefore, only drivers for internal synthesizer devices can support volume level changes. Drivers for MIDI output ports must return an MMSYSERR\_NOTSUPPORTED error for this message. Support for volume level changes is optional for internal synthesizer devices. When a driver receives a [**MODM\_GETDEVCAPS**](modm-getdevcaps.md) message, it must indicate support for volume level changes by setting or clearing the MIDICAPS\_VOLUME and MIDICAPS\_LRVOLUME bits in the **dwSupport** field of the [MIDIOUTCAPS](/windows/win32/api/mmeapi/ns-mmeapi-midioutcaps) data structure. If a driver supports the **MODM\_SETVOLUME** message, it must also support **MODM\_GETVOLUME**.
 
 ## Requirements
 

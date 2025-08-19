@@ -6,6 +6,7 @@ keywords:
 - extension units WDK USB Video Class , samples, plug-in DLL
 - sample code WDK USB Video Class , extension unit plug-in DLL
 ms.date: 09/17/2021
+ms.topic: sample
 ---
 
 # Sample extension unit plug-in DLL

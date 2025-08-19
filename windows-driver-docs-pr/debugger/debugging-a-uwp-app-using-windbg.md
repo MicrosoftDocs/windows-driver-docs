@@ -1,7 +1,8 @@
 ---
-title: Debugging a UWP app using WinDbg
+title: Debugging a UWP App Using WinDbg
 description: You can debug Universal Windows Platform (UWP) app using WinDbg.
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Debugging a UWP app using WinDbg
@@ -63,7 +64,7 @@ To create a workable test app, it is only necessary to complete up to step three
 
 **Locating the Full Package Name and AppId**
 
-Use the .querypackages command to locate the full package name and the AppId. Type .querypackages and then user CRTL+F to search up in the output for the application name, such as HelloWorld. When the entry is located using CTRL+F, it will show the package full name, for example *e24caf14-8483-4743-b80c-ca46c28c75df\_1.0.0.0\_x86\_\_97ghe447vaan8* and the AppId of *App*.
+Use the .querypackages command to locate the full package name and the AppId. Type .querypackages and then use CTRL+F to search the output for the application name, such as HelloWorld. When the entry is located using CTRL+F, it will show the package full name, for example *00001111-aaaa-2222-bbbb-3333cccc4444\_1.0.0.0\_x86\_\_97ghe447vaan8* and the AppId of *App*.
 
 Example:
 
@@ -86,13 +87,13 @@ AppId: App
 
 For troubleshooting, you may want to view the base package name in Visual Studio.
 
-To locate the base package name in Visual Studio, click on the ApplicationManifest.xml file in project explorer. The base package name will be displayed under the packaging tab as "Package name". By default, the package name will be a GUID, for example *e24caf14-8483-4743-b80c-ca46c28c75df*.
+To locate the base package name in Visual Studio, click on the ApplicationManifest.xml file in project explorer. The base package name will be displayed under the packaging tab as "Package name". By default, the package name will be a GUID, for example *00001111-aaaa-2222-bbbb-3333cccc4444*.
 
 To use notepad to locate the base package name, open the ApplicationManifest.xml file and locate the **Identity Name** tag.
 
 ```xml
   <Identity
-    Name="e24caf14-8483-4743-b80c-ca46c28c75df"
+    Name="00001111-aaaa-2222-bbbb-3333cccc4444"
     Publisher="CN= User1"
     Version="1.0.0.0" />
 ```
@@ -179,7 +180,7 @@ Background Task Id: {ee4438ee-22db-4cdd-85e4-8ad8a1063523}
 
 If you know the full package name you can use .querypackage to display the *Background Task Id* field.
 
-You can also locate the BackgroundTaskId by using the enumerateBgTasks option of the PLMDebug. For more information about the PMLDebug utiltity, see [**PLMDebug**](plmdebug.md).
+You can also locate the BackgroundTaskId by using the enumerateBgTasks option of the PLMDebug. For more information about the PMLDebug utility, see [**PLMDebug**](plmdebug.md).
 
 ```console
 C:\Program Files\Debugging Tools for Windows (x64)>PLMDebug /enumerateBgTasks Microsoft.SDKSamples.BackgroundTask.CPP_1.0.0.0_x64__8wekyb3d8bbwe
@@ -424,7 +425,7 @@ Example:
 
 **Attach a debugger when your app is launched**
 
-Suppose you have an app named HelloWorld that is in a package named e24caf14-8483-4743-b80c-ca46c28c75df\_1.0.0.0\_x86\_\_97ghe447vaan8. Verify that your package is installed by displaying the full names and running states all installed packages. In a Command Prompt window, enter the following command. You can use CTRL+F to search the command output for the app name of HelloWorld.
+Suppose you have an app named HelloWorld that is in a package named 00001111-aaaa-2222-bbbb-3333cccc4444\_1.0.0.0\_x86\_\_97ghe447vaan8. Verify that your package is installed by displaying the full names and running states all installed packages. In a Command Prompt window, enter the following command. You can use CTRL+F to search the command output for the app name of HelloWorld.
 
 ```dbgcmd
 .querypackages 
@@ -498,5 +499,3 @@ Finally, decrement the debug reference count for the package.
 ```
 
 ## <span id="related_topics"></span>See also
-
-

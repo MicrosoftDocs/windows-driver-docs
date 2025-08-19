@@ -1,9 +1,10 @@
 ---
-title: C28722 warning
+title: C28722 Warning
 description: Warning C28722 Unannotated buffer in function declaration.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28722"
+ms.topic: reference
 ---
 
 # C28722
@@ -29,12 +30,4 @@ The following code example avoids this warning by using the SAL annotation **\_O
 ```
 int foo( _Out_writes_(cch) LPTSTR buffer, size_t cch );
 ```
-
- 
-
- 
-
-
-
-
 

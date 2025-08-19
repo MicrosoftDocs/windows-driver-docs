@@ -4,6 +4,7 @@ description: CM_PROB_DRIVER_FAILED_LOAD
 keywords:
 - CM_PROB_DRIVER_FAILED_LOAD
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 39 - CM_PROB_DRIVER_FAILED_LOAD

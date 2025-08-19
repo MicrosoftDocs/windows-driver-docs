@@ -3,14 +3,15 @@ title: Using Callback Objects
 description: Using Callback Objects
 keywords: ["Debugger Engine API, callback objects", "callback objects", "callback objects, event callbacks", "event callbacks", "callback objects, input callbacks", "input callbacks", "callback objects, output callbacks", "output callbacks"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using Callback Objects
 
 
-There are three callback COM like interfaces that are used by the engine: [IDebugEventCallbacks](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugeventcallbacks) for notifying [debugger extensions](debugger-extensions.md) and applications of changes to the engine or target, [IDebugInputCallbacks](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebuginputcallbacks) for requesting input, and [IDebugOutputCallbacks](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugoutputcallbacks) for sending output.
+There are three callback COM like interfaces that are used by the engine: [IDebugEventCallbacks](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugeventcallbacks) for notifying [debugger extensions](../debuggercmds/debugger-extensions.md) and applications of changes to the engine or target, [IDebugInputCallbacks](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebuginputcallbacks) for requesting input, and [IDebugOutputCallbacks](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugoutputcallbacks) for sending output.
 
-Callback objects are registered with clients. At most, one instance of each of the three callback interfaces can be registered with each client (the Unicode and ASCII versions of a interface count as the same interface).
+Callback objects are registered with clients. At most, one instance of each of the three callback interfaces can be registered with each client (the Unicode and ASCII versions of an interface count as the same interface).
 
 When a client is created, the engine remembers the thread in which it was created. The engine uses this same thread whenever it makes a call to a callback instance registered with the client. If the thread is in use, the engine will queue the calls it needs to make. To allow the engine to make these calls, the method [*DispatchCallbacks*](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-dispatchcallbacks) should be called whenever a client's thread is idle. The method [**ExitDispatch**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-exitdispatch) will cause *DispatchCallbacks* to return. If the thread is the same thread that was used to start the debugger session, then the engine can make the callback calls during the [**WaitForEvent**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-waitforevent) method, and *DispatchCallbacks* does not need to be called.
 

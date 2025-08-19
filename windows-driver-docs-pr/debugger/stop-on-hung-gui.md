@@ -1,8 +1,9 @@
 ---
-title: Stop on hung GUI
+title: Stop on Hung GUI
 description: Stop on hung GUI
 keywords: ["Stop on hung GUI (global flag)"]
 ms.date: 05/23/2017
+ms.topic: error-reference
 ---
 
 # Stop on hung GUI
@@ -43,8 +44,3 @@ The **Stop on hung GUI** flag appears in GFlags, but it has no effect on Windows
  
 
  
-
-
-
-
-

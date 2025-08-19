@@ -1,11 +1,12 @@
 ---
-title: Handling an IRP that the Framework Does Not Support
+title: Handling an IRP that the Framework does not Support
 description: Handling an IRP that the Framework Does Not Support
 keywords:
 - unsupported WDM IRPs WDK KMDF
 - IRPs WDK KMDF , unsupported
 - WDM IRPs WDK KMDF , unsupported
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling an IRP that the Framework Does Not Support

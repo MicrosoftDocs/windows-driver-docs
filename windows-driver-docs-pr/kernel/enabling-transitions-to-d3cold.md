@@ -2,6 +2,7 @@
 title: Enabling Transitions to D3cold
 description: All versions of Windows enable a device to be in D3cold while the computer is sleeping (in one of the system low-power states, S1 through S4).
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Enabling Transitions to D3cold

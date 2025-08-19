@@ -1,7 +1,8 @@
 ---
-title: Microsoft Bluetooth Test Platform - Audio and HID scenario tests
+title: Microsoft Bluetooth Test Platform - Audio and HID Scenario Tests
 description: Bluetooth Test Platform (BTP) audio and HID scenario tests.
-ms.date: 04/11/2023
+ms.date: 01/10/2024
+ms.topic: how-to
 ---
 
 # BTP audio and HID scenario tests

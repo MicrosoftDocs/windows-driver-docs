@@ -8,6 +8,7 @@ keywords:
 - remote I/O targets WDK UMDF
 - general I/O targets WDK UMDF , about general I/O targets
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # General I/O Targets in UMDF

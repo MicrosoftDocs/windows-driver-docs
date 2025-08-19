@@ -1,7 +1,8 @@
 ---
 title: Error Record Persistence Mechanism
 description: Error Record Persistence Mechanism
-ms.date: 03/03/2023
+ms.date: 03/26/2025
+ms.topic: concept-article
 ---
 
 # Error Record Persistence Mechanism

@@ -1,5 +1,5 @@
 ---
-title: Testing and debugging TDR during driver development
+title: Testing and Debugging TDR During Driver Development
 description: TDR testing and debugging information for developers
 keywords:
 - TDR debugging, driver development
@@ -11,13 +11,13 @@ keywords:
 - WDK display development
 - TDR tests, WHLK
 - TDR tests, Windows Hardware Lab Kit
-ms.date: 03/30/2021
-ms.custom: contperf-fy21q3
+ms.date: 10/04/2024
+ms.topic: concept-article
 ---
 
 # Testing and debugging TDR during driver development
 
-This topic provides TDR testing and debugging strategies for display driver developers.
+This article describes TDR (timeout detection and recovery) testing and debugging strategies for graphics display driver developers.
 
 ## TDR tests in WHLK
 
@@ -25,10 +25,10 @@ The [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) (WHLK) contains TDR-
 
 ## TDR registry keys for testing and debugging
 
-Developers can use the following TDR (timeout detection and recovery)-related registry keys for testing or debugging purposes only during the driver development process.
+Developers can use the following TDR-related registry keys for testing or debugging purposes *only during the driver development process*.
 
 > [!IMPORTANT]
-> These registry keys should not be manipulated by end users, or by applications outside of targeted testing or debugging during driver development.
+> We recommend that end users not manipulate these registry keys. They should also not be manipulated by applications outside of targeted testing or debugging during driver development.
 
 ### TdrLevel
 
@@ -48,11 +48,11 @@ Where TdrLevel*Xxx* can be one of the following values:
 | TdrLevelOff (0) | Detection disabled |
 | TdrLevelBugcheck (1) | Bug check on detected timeout; for example, no recovery. |
 | TdrLevelRecoverVGA (2) | Recover to VGA (not implemented). |
-| TdrLevelRecover (3) | Recover on timeout. This is the default value. |
+| TdrLevelRecover (3) | Recover on timeout (default value). |
 
 ### TdrDelay
 
-Specifies the number of seconds that the GPU can delay the preempt request from the GPU scheduler. This is effectively the timeout threshold.
+Specifies the number of seconds that the GPU can delay the preempt request from the GPU scheduler. TdrDelay is effectively the timeout threshold.
 
 ```registry
 KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
@@ -87,8 +87,8 @@ ValueData : TDR_DEBUG_MODE_XXX (see the following table)
 | ----- | ------- |
 | TDR_DEBUG_MODE_OFF (0) | Break to kernel debugger before the recovery to allow investigation of the timeout. |
 | TDR_DEBUG_MODE_IGNORE_TIMEOUT (1) | Ignore any timeout. |
-| TDR_DEBUG_MODE_RECOVER_NO_PROMPT (2) | Recover without breaking into the debugger. This is the default value. |
-| TDR_DEBUG_MODE_RECOVER_UNCONDITIONAL (3) | Recover even if some recovery conditions are not met (for example, recover on consecutive timeouts). |
+| TDR_DEBUG_MODE_RECOVER_NO_PROMPT (2) | Recover without breaking into the debugger (default value). |
+| TDR_DEBUG_MODE_RECOVER_UNCONDITIONAL (3) | Recover even if some recovery conditions aren't met (for example, recover on consecutive timeouts). |
 
 ### TdrLimitTime
 
@@ -114,11 +114,33 @@ ValueData : Number of TDRs before crashing. The default value is 5.
 
 ### TdrTestMode
 
-Reserved. Do not use.
+Reserved. Don't use.
 
 ```registry
 KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
 KeyValue  : TdrTestMode
 ValueType : REG_DWORD
 ValueData : Do not use.
+```
+
+### TdrDodPresentDelay
+
+Specifies the number of seconds allowed for the kernel-mode display-only driver's (KMDOD) [**DxgkDdiPresentDisplayOnly**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_presentdisplayonly) function to complete an asynchronous present by reporting progress to **pfnPresentDisplayOnlyProgress** (which is passed in the [**DXGKARG_PRESENT_DISPLAYONLY**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_present_displayonly) structure).
+
+```registry
+KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
+KeyValue  : TdrDodPresentDelay
+ValueType : REG_DWORD
+ValueData : Number of seconds allowed for **DxgkDdiPresentDisplayOnly** to complete an asynchronous present. The default value is 2 seconds. (Min: 1, Max: 15 * 60 = 15 minutes). This value is for debugging purposes only.
+```
+
+### TdrDodVSyncDelay
+
+Specifies the number of seconds the V-sync watchdog waits for a V-sync signal to be reported before triggering a TDR in a KMDOD.
+
+```registry
+KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
+KeyValue  : TdrDodVSyncDelay
+ValueType : REG_DWORD
+ValueData : Number of seconds that the V-sync watchdog waits for a V-sync to be reported before a TDR occurs with Kernel Mode Display-Only Drivers. Drivers are expected to report V-sync interrupts at the cadence of the display mode refresh rate. The default value is 2 seconds. (Min: 1s, Max: 15 * 60 = 15 minutes). This value is for debugging purposes only.
 ```

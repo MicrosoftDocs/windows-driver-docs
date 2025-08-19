@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_AUDIOENGINE enumeration
+title: KSPROPERTY_AUDIOENGINE Enumeration
 description: The properties contained in the KSPROPSETID\_AudioEngine property set are defined by this enumeration and must be supported by a KSNODETYPE\_AUDIO\_ENGINE node.
 keywords: ["KSPROPERTY_AUDIOENGINE enumeration Audio Devices"]
 topic_type:
@@ -22,7 +22,7 @@ The properties contained in the [KSPROPSETID\_AudioEngine](kspropsetid-audioengi
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 typedef enum  { 
   KSPROPERTY_AUDIOENGINE_LFXENABLE               = 0,
   KSPROPERTY_AUDIOENGINE_GFXENABLE               = 1,

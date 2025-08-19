@@ -17,6 +17,7 @@ keywords:
 - WinDbg WDK software tracing
 - virtual files WDK software tracing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Log Session Parameter Options
@@ -114,12 +115,4 @@ Indicates the maximum number of trace messages that TraceView stores before it b
 A value of **0** means that there is no maximum value. TraceView retains all messages and never overwrites them. The default value of this option, **65536**, is the value recommended for most systems. Larger values might cause significant delays.
 
 This value appears in the **Max Trace Records** column of the [Trace Session List](trace-session-list.md).
-
- 
-
- 
-
-
-
-
 

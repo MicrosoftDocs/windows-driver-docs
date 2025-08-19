@@ -1,8 +1,8 @@
 ---
 title: Create a new shipping label
 description: This method shows how to create a new shipping label in the Microsoft Hardware API.
-ms.topic: article
 ms.date: 08/21/2018
+ms.topic: how-to
 ---
 
 # Create a new shipping label
@@ -27,7 +27,7 @@ The productID and submissionID in the method represent the submission for which 
 
 | Header | Type | Description |
 |:--|:--|:--|
-| Authorization | String | Required. The Azure AD access token in the form **Bearer** \<token\>. |
+| Authorization | String | Required. The Microsoft Entra ID access token in the form **Bearer** \<token\>. |
 | Accept | String | Optional. Specifies the type of content. Allowed value is “application/json” |
 
 

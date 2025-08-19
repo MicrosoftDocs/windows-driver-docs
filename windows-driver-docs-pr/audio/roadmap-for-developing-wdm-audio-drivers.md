@@ -2,12 +2,13 @@
 title: Roadmap for Developing WDM Audio Drivers
 description: Roadmap for Developing WDM Audio Drivers
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Roadmap for Developing WDM Audio Drivers
 
 
-![figure of a roadmap with the text "wdk" superimposed on a highway](images/wdkroadmap-th.png)Audio drivers are based on the Windows driver model (WDM).
+:::image type="content" source="images/wdkroadmap-th.png" alt-text="Illustration of a roadmap with the text 'WDM' superimposed on a highway.":::
 
 To create a WDM audio driver, perform the following steps:
 
@@ -29,7 +30,7 @@ To create a WDM audio driver, perform the following steps:
 
 5.  **Learn about the Windows driver build, test, and debug processes and tools.**
 
-    Building a driver is not the same as building a user-mode application. See [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers) for information about Windows driver build, debug, and test processes, and driver signing. See [Driver Development Tools](../devtest/index.md) for information about building, testing, verifying, and debugging tools.
+    Building a driver is not the same as building a user-mode application. See [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop) for information about Windows driver build, debug, and test processes, and driver signing. See [Driver Development Tools](../devtest/index.md) for information about building, testing, verifying, and debugging tools.
 
 6.  **Review audio driver samples in the WDK.**
 
@@ -41,15 +42,15 @@ To create a WDM audio driver, perform the following steps:
 
 8.  **Develop, build, test, and debug your WDM audio driver.**
 
-    For information about how to develop an audio driver for your specific audio adapter, see [Adapter Driver Construction](adapter-driver-construction.md). See [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers) for information about iterative building, testing, and debugging. This process will help ensure that you build a driver that works.
+    For information about how to develop an audio driver for your specific audio adapter, see [Adapter Driver Construction](adapter-driver-construction.md). See [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop) for information about iterative building, testing, and debugging. This process will help ensure that you build a driver that works.
 
 9.  **Create a driver package for your WDM audio driver.**
 
-    For more information, see [Creating a Driver Package](/windows-hardware/drivers). For information about how to install an audio adapter, see [Installing a Port Class Audio Adapter](installing-a-port-class-audio-adapter.md).
+    For more information, see Get started developing Windows drivers](/windows-hardware/drivers/develop/get-started-developing-windows-drivers). For information about how to install an audio adapter, see [Installing a Port Class Audio Adapter](installing-a-port-class-audio-adapter.md).
 
 10. **Sign and distribute your WDM audio driver.**
 
-    The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for the Windows Certification Program, you can distribute it through the Microsoft Windows Update program. For more information, see [Distributing a driver package](/windows-hardware/drivers).
+    The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for the Windows Certification Program, you can distribute it through the Microsoft Windows Update program. For more information, see [Distributing a Driver Package](/windows-hardware/drivers/develop/distributing-a-driver-package).
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
 

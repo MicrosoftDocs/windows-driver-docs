@@ -10,6 +10,7 @@ keywords:
 - PSHED plug-ins WDK WHEA , error injection
 - error injection WDK WHEA
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Participating in Error Injection

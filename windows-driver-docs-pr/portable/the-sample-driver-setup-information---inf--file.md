@@ -1,7 +1,8 @@
 ---
+title: The Sample Driver Setup Information (.Inf) File
 description: The Sample Driver Setup Information (.inf) File
-title: The Sample Driver Setup Information (.inf) File
 ms.date: 03/03/2023
+ms.topic: install-set-up-deploy
 ---
 
 # The Sample Driver Setup Information (.inf) File

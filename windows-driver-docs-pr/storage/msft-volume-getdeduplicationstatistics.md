@@ -1,5 +1,5 @@
 ---
-title: GetDedupProperties method of the MSFT\_Volume class
+title: GetDedupProperties Method of the MSFT_Volume Class
 description: Gets deduplication properties of the volume.
 ms.assetid: 94B6A3CD-7D52-468F-9E6C-54870C97A383
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

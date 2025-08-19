@@ -2,6 +2,7 @@
 title: Managing Port Policies
 description: Managing Port Policies
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Managing Port Policies

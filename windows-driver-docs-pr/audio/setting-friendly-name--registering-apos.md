@@ -2,6 +2,7 @@
 title: Setting Friendly Names, Sideband SCO Transport and Registering APOs
 description: This topic describes how a Port Class Bluetooth sideband audio driver can set the friendly name for a device interface, and register any APO that is used by the Bluetooth device.
 ms.date: 10/05/2022
+ms.topic: concept-article
 ---
 
 # Setting Friendly Names, Sideband SCO Transport, and Registering APOs
@@ -14,7 +15,7 @@ Before calling PcRegisterSubdevice for the "topology" sub-device, the driver fol
 
 ## DEVPKEY_DeviceInterface_FriendlyName
 
-The audio driver sends an [**IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR**](/windows-hardware/drivers/ddi/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor) request to the Hands-free profile (HFP) audio driver. The requested information is returned in the form of a [**BTHHFP_DESCRIPTOR**](/windows-hardware/drivers/ddi/bthhfpddi/ns-bthhfpddi-_bthhfp_descriptor) structure, plus an other data referenced by the structure. The audio driver then calls IoSetDeviceInterfacePropertyData to set DEVPKEY_DeviceInterface_FriendlyName to the value in the *FriendlyName* field of the **BTHHFP_DESCRIPTOR** structure.
+The audio driver sends an [**IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR**](/windows-hardware/drivers/ddi/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor) request to the Hands-free profile (HFP) audio driver. The requested information is returned in the form of a [**BTHHFP_DESCRIPTOR**](/windows-hardware/drivers/ddi/bthhfpddi/ns-bthhfpddi-_bthhfp_descriptor) structure, plus other data referenced by the structure. The audio driver then calls IoSetDeviceInterfacePropertyData to set DEVPKEY_DeviceInterface_FriendlyName to the value in the *FriendlyName* field of the **BTHHFP_DESCRIPTOR** structure.
 
 The audio driver sets the parameters to IoSetDeviceInterfacePropertyData as follows:
 
@@ -54,4 +55,6 @@ HKR,"EPFX\\0",%PKEY_FX_EndpointEffectClsid%,,%FX_DISCOVER_EFFECTS_APO_CLSID%
 
 ## Related topics
 
-- [Related Design Guidelines](related-design-guidelines.md)
+[Audio Processing Object Architecture](audio-processing-object-architecture.md)
+
+[Implementing Audio Processing Objects](implementing-audio-processing-objects.md)

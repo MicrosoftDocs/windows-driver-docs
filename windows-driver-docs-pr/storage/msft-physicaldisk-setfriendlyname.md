@@ -1,5 +1,5 @@
 ---
-title: SetFriendlyName method of the MSFT\_PhysicalDisk class
+title: SetFriendlyName Method of the MSFT_PhysicalDisk Class
 description: Sets or changes the friendly name for the physical disk.
 ms.assetid: 64A8F43F-6A3F-4956-9C8B-0F3D7FA6F2CE
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

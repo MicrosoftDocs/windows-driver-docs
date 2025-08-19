@@ -4,6 +4,7 @@ description: Writing a FilterUnloadCallback Routine
 keywords:
 - FilterUnloadCallback
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing a FilterUnloadCallback Routine

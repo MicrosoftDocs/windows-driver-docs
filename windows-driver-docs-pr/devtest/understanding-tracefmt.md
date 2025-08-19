@@ -5,6 +5,7 @@ keywords:
 - Tracefmt WDK , about Tracefmt
 - TMF files WDK , Tracefmt
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Understanding Tracefmt
@@ -16,7 +17,7 @@ ms.date: 04/20/2017
 [Trace providers](trace-provider.md) record trace messages in binary form for efficiency. To display the trace messages in readable form, Tracefmt applies the formatting instructions for each message, and then displays the messages or saves them in a text file.
 
 > [!TIP]
-> [TraceView](traceview.md) provides the same funtionality as Tracefmt with an easier-to-use GUI.
+> [TraceView](traceview.md) provides the same functionality as Tracefmt with an easier-to-use GUI.
 
 The formatting instructions for trace messages are included in the source code of trace providers that use WPP software tracing and then are compiled into the private or full versions of the PDB symbol file for the trace provider. The WPP preprocessor extracts the formatting instructions from the private symbols and places them in a [trace message format (.tmf) file](trace-message-format-file.md) for the provider.
 

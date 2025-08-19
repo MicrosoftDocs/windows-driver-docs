@@ -2,6 +2,7 @@
 title: SR-IOV PF/VF Backchannel Communication Overview
 description: SR-IOV PF/VF Backchannel Communication Overview
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # SR-IOV PF/VF Backchannel Communication Overview

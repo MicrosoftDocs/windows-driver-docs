@@ -8,6 +8,7 @@ keywords:
 - verification engine WDK Static Driver Verifier
 - proof engine WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Verification Engine
@@ -22,12 +23,4 @@ The verification engine takes the following input:
 -   [Static Driver Verifier rule](static-driver-verifier-rule.md)
 
 -   Static Driver Verifier [operating system model](operating-system-model.md)
-
- 
-
- 
-
-
-
-
 

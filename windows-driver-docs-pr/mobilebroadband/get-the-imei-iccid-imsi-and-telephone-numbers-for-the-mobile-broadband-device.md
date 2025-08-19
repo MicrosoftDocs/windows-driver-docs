@@ -1,7 +1,8 @@
 ---
-title: Get IMEI, ICCID, IMSI, and telephone numbers for the MB device
+title: Get IMEI, ICCID, IMSI, and Telephone Numbers for the MB Device
 description: Get the IMEI, ICCID, IMSI and telephone numbers for the mobile broadband device
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Get the IMEI, ICCID, IMSI and telephone numbers for the mobile broadband device
@@ -58,7 +59,7 @@ The following properties are available for the current network device for the ac
 account.currentDeviceInformation.mobileEquipmentId
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Common tasks for mobile broadband Windows Runtime APIs](./create-a-mobilebroadbandaccount-object.md)

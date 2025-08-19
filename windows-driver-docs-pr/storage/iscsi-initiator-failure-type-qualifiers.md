@@ -1,7 +1,8 @@
 ---
-title: ISCSI\_INITIATOR\_FAILURE\_TYPE\_QUALIFIERS
+title: ISCSI_INITIATOR_FAILURE_TYPE_QUALIFIERS
 description: ISCSI\_INITIATOR\_FAILURE\_TYPE\_QUALIFIERS
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # ISCSI\_INITIATOR\_FAILURE\_TYPE\_QUALIFIERS
@@ -21,7 +22,7 @@ The following table describes the ISCSI\_INITIATOR\_FAILURE\_TYPE\_QUALIFIERS va
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Initiator failure falue</th>
+<th align="left">Initiator failure value</th>
 <th align="left">Meaning</th>
 </tr>
 </thead>

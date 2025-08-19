@@ -1,12 +1,13 @@
 ---
-title: Driver matching criteria
+title: Driver Matching Criteria
 description: This topic describes the elements that are used to choose the best match on a driver.
 ms.date: 03/11/2022
+ms.topic: concept-article
 ---
 
 # Driver matching criteria
 
-This topic describes the elements that are used to choose the best driver match for a device on Windows 8 (WDDM 1.2). Graphics/display drivers follow standard Plug and Play (PnP) algorithms. For more up-to-date information, see [How Windows ranks driver packages](../install/how-setup-ranks-drivers--windows-vista-and-later-.md).
+This topic describes the elements that are used to choose the best driver match for a device on Windows 8 (WDDM 1.2). Graphics/display drivers follow standard Plug and Play (PnP) algorithms. For more up-to-date information, see [How Windows ranks driver packages](../install/how-windows-ranks-driver-packages.md).
 
 The following elements are used to choose the best match on a driver. They are listed in order from most significant to least significant:
 

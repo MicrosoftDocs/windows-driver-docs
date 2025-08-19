@@ -1,5 +1,5 @@
 ---
-title: FilmScanModeValue element
+title: FilmScanModeValue Element
 description: The required FilmScanModeValue element identifies a specific film exposure type that the film scanning option supports.
 keywords: ["FilmScanModeValue element Imaging Devices"]
 topic_type:

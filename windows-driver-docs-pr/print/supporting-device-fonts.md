@@ -7,6 +7,7 @@ keywords:
 - device fonts WDK printer graphics
 - fonts WDK printer graphics
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Supporting Device Fonts

@@ -100,7 +100,7 @@ In the specific case where this message is sent in response to a host message th
 
  
 
-If the error condition was caused by an Remote NDIS message (for example, the device can't recognize a particular RNDIS message), then the device should append the original message at the end of the status message defined above.
+If the error condition was caused by a Remote NDIS message (for example, the device can't recognize a particular RNDIS message), then the device should append the original message at the end of the status message defined above.
 
 This message is used to report an error condition only in circumstances where the device is not able to generate a response message with appropriate status. Examples of appropriate usage are:
 

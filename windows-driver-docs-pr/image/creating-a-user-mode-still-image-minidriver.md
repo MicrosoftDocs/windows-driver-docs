@@ -2,6 +2,7 @@
 title: Creating a User-Mode Still Image Minidriver
 description: Creating a User-Mode Still Image Minidriver
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating a User-Mode Still Image Minidriver
@@ -16,7 +17,7 @@ All user-mode still image minidrivers must implement the interface methods defin
 
 1.  Obtain a GUID for the interface, and include it in a header file and a setup information (INF) file.
 
-2.  Create a implementation file such as ( .cpp).
+2.  Create an implementation file such as ( .cpp).
 
 3.  Create a customized class definition, using **IStiUSD** as an inherited class.
 

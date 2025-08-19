@@ -5,6 +5,7 @@ keywords:
 - FLT_PREOP_SYNCHRONIZE
 - synchronization WDK file system minifilter
 ms.date: 07/19/2022
+ms.topic: concept-article
 ---
 
 # Returning FLT_PREOP_SYNCHRONIZE

@@ -6,6 +6,7 @@ keywords:
 - upgrading network components WDK , phases
 - GUI mode phase WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GUI Mode Phase of the Network Upgrade Process

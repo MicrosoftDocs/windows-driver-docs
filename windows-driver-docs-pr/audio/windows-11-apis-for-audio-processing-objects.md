@@ -10,7 +10,8 @@ keywords:
 - Audio Settings, Audio Notifications
 - Windows 11 audio 
 - CAPX, Core Audio Processing Object Extensions
-ms.date: 09/29/2022
+ms.date: 08/11/2023
+ms.topic: concept-article
 ---
 
 # Windows 11 APIs for Audio Processing Objects
@@ -99,7 +100,7 @@ The following code is from the [Aec APO MFX sample - AecApoMfx.cpp](https://gith
 The  [IApoAcousticEchoCancellation interface](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iapoacousticechocancellation) has no explicit methods on it. Its purpose is to identify an AEC APO to the audio engine. This interface may only be implemented by mode effects (MFX) on capture endpoints. Implementing this interface on any other APO will lead to a failure in loading that APO. For general information about MFX, see [Audio Processing Objects Architecture](./audio-processing-object-architecture.md).
 
 If the mode effect on a capture endpoint is implemented as a series of chained APOs, only the APO closest to the device may implement this interface.
-APOs that implement this interface will be offered the APO_CONNECTION_PROPERTY_V2 structure in its call to [IAudioProcessingobjectRT::APOProcess](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess). The APO can check for a APO_CONNECTION_PROPERTY_V2_SIGNATURE signature on the connection property and typecast the incoming APO_CONNECTION_PROPERTY structure to a APO_CONNECTION_PROPERTY_V2 structure. 
+APOs that implement this interface will be offered the APO_CONNECTION_PROPERTY_V2 structure in its call to [IAudioProcessingobjectRT::APOProcess](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess). The APO can check for an APO_CONNECTION_PROPERTY_V2_SIGNATURE signature on the connection property and typecast the incoming APO_CONNECTION_PROPERTY structure to an APO_CONNECTION_PROPERTY_V2 structure. 
 
 In recognition of the fact that AEC APOs usually run their algorithms at a specific sampling rate/channel count, the audio engine provides resampling support to APOs that implement the IApoAcousticEchoCancellation interface.
 
@@ -189,7 +190,6 @@ The following code from the [Aec APO sample header-  AecAPO.h](https://github.co
 
 The following code is from the [Aec APO MFX sample - AecApoMfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/AecApo/AecApoMfx.cpp) and shows the implementation of AddAuxiliaryInput, when the APO can only handle one auxiliary input.
 
-
 ```cpp
 STDMETHODIMP
 CAecApoMFX::AddAuxiliaryInput(
@@ -222,7 +222,7 @@ Also review the sample code that shows the implementation of `CAecApoMFX::IsInpu
 
 ### Sequence of operations - AEC
 
-On initialization: 
+On initialization:
 
 1. IAudioProcessingObject::Initialize
 2. IApoAuxiliaryInputConfiguration::AddAuxiliaryInput
@@ -249,6 +249,97 @@ This is the recommended buffer behavior for AEC.
 - On the call to IAudioProcessingObjectRT::APOProcess, the circular buffer should be read for the latest audio packet from the reference stream, and this packet should be used for running through the echo cancellation algorithm.
 - Timestamps on the reference and microphone data may be used to line up the speaker and mic data.
 
+## Reference Loopback Stream
+
+By default, the loopback stream "taps into" (listens to) the audio stream prior to any volume or muting being applied.  A loopback stream tapped before volume has been applied is known as a pre-volume loopback stream.  An advantage of having a pre-volume loopback stream is a clear and uniform audio stream, regardless of the current volume setting.
+
+Some AEC algorithms may prefer obtaining a loopback stream that has been connected after any volume processing (including being muted).  This configuration is known as post-volume loopback.
+
+In the next major version of Windows AEC APOs can request post-volume loopback on supported endpoints.
+
+### Limitations
+
+Unlike pre-volume loopback streams, which are available for all render endpoints, post-volume loopback streams may not be available on all endpoints.
+
+### Requesting Post-Volume Loopback
+
+AEC APOs that wish to use post-volume loopback should implement the [IApoAcousticEchoCancellation2](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iapoacousticechocancellation2) interface.
+
+An AEC APO can request post-volume loopback by returning the **APO_REFERENCE_STREAM_PROPERTIES_POST_VOLUME_LOOPBACK** flag via the Properties parameter in its implementation of [IApoAcousticEchoCancellation2::GetDesiredReferenceStreamProperties](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iapoacousticechocancellation2-getdesiredreferencestreamproperties).
+
+Depending on the render endpoint currently being used, post-volume loopback may not be available.  An AEC APO is notified if post-volume loopback is being used when its [IApoAuxiliaryInputConfiguration::AddAuxiliaryInput](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iapoauxiliaryinputconfiguration-addauxiliaryinput) method is called. If the [AcousticEchoCanceller_Reference_Input](/windows/win32/api/audioengineextensionapo/ns-audioengineextensionapo-acousticechocanceller_reference_input) streamProperties field contains **APO_REFERENCE_STREAM_PROPERTIES_POST_VOLUME_LOOPBACK**, post-volume loopback is in use.
+
+The following code from the AEC APO sample header- AecAPO.h shows the three new public methods being added.
+
+```cpp
+public:
+  // IApoAcousticEchoCancellation2
+  STDMETHOD(GetDesiredReferenceStreamProperties)(
+    _Out_ APO_REFERENCE_STREAM_PROPERTIES * properties) override;
+
+  // IApoAuxiliaryInputConfiguration
+  STDMETHOD(AddAuxiliaryInput)(
+    DWORD dwInputId,
+    UINT32 cbDataSize,
+    _In_ BYTE* pbyData,
+    _In_ APO_CONNECTION_DESCRIPTOR *pInputConnection
+    ) override;
+```
+
+The following code snippet is from the AEC APO MFX sample - AecApoMfx.cpp and shows the implementation of GetDesiredReferenceStreamProperties, and relevant portion of AddAuxiliaryInput.
+
+```cpp
+STDMETHODIMP SampleApo::GetDesiredReferenceStreamProperties(
+  _Out_ APO_REFERENCE_STREAM_PROPERTIES * properties)
+{
+  RETURN_HR_IF_NULL(E_INVALIDARG, properties);
+
+  // Always request that a post-volume loopback stream be used, if
+  // available. We will find out which type of stream was actually
+  // created when AddAuxiliaryInput is invoked.
+  *properties = APO_REFERENCE_STREAM_PROPERTIES_POST_VOLUME_LOOPBACK;
+  return S_OK;
+}
+
+STDMETHODIMP
+CAecApoMFX::AddAuxiliaryInput(
+    DWORD dwInputId,
+    UINT32 cbDataSize,
+    BYTE *pbyData,
+    APO_CONNECTION_DESCRIPTOR * pInputConnection
+)
+{
+   // Parameter checking skipped for brevity, please see sample for 
+   // full implementation.
+
+  AcousticEchoCanceller_Reference_Input* referenceInput = nullptr;
+  APOInitSystemEffects3* papoSysFxInit3 = nullptr;
+
+  if (cbDataSize == sizeof(AcousticEchoCanceller_Reference_Input))
+  {
+    referenceInput = 
+      reinterpret_cast<AcousticEchoCanceller_Reference_Input*>(pbyData);
+
+    if (WI_IsFlagSet(
+          referenceInput->streamProperties,
+          APO_REFERENCE_STREAM_PROPERTIES_POST_VOLUME_LOOPBACK))
+    {
+      // Post-volume loopback is being used.
+      m_bUsingPostVolumeLoopback = TRUE;
+        
+      // Note that we can get to the APOInitSystemEffects3 from     
+      // AcousticEchoCanceller_Reference_Input.
+      papoSysFxInit3 = (APOInitSystemEffects3*)pbyData;
+    }
+    else  if (cbDataSize == sizeof(APOInitSystemEffects3))
+    {
+      // Post-volume loopback is not supported.
+      papoSysFxInit3 = (APOInitSystemEffects3*)pbyData;
+    }
+
+    // Remainder of method skipped for brevity.
+```
+
 ## Settings Framework
 
 The Settings Framework allows APOs to expose methods for querying and modifying the property store for audio effects ("FX Property Store") on an audio endpoint. This framework can be used by APOs and by Hardware Support Apps (HSA) that wish to communicate settings to that APO. HSAs can be Universal Windows Platform (UWP) apps and require a special capability to invoke the APIs in the Settings Framework. For more information about HSA apps, see [UWP device apps](../devapps/index.md).
@@ -267,7 +358,7 @@ The way to think about user versus default is whether you want the properties to
 
 #### APO Contexts
 
-The CAPX settings framwork allows an APO author to group APO properties by *contexts*. Each APO can define its own context and update properties relative to its own context. The effects property store for an audio endpoint may have zero or more contexts. Vendors are free to create contexts however they choose, whether that is by SFX/MFX/EFX or by mode. A vendor could also choose to have a single context for all APOs shipped by that vendor.
+The CAPX settings framework allows an APO author to group APO properties by *contexts*. Each APO can define its own context and update properties relative to its own context. The effects property store for an audio endpoint may have zero or more contexts. Vendors are free to create contexts however they choose, whether that is by SFX/MFX/EFX or by mode. A vendor could also choose to have a single context for all APOs shipped by that vendor.
 
 ### Settings Restricted Capability
 
@@ -460,7 +551,7 @@ private:
     wil::com_ptr_nothrow<IPropertyStore> m_userStore;
     wil::com_ptr_nothrow<IPropertyStore> m_volatileStore;
 
-    // Each APO has its own private collection of properties. The collection is dentified through a
+    // Each APO has its own private collection of properties. The collection is identified through a
     // a property store context GUID, which is defined below and in the audio driver INF file.
     const GUID m_propertyStoreContext = ...;
 };
@@ -571,7 +662,7 @@ HRESULT PropertyChangeNotificationClient::StartListeningForPropertyStoreChanges(
     return S_OK;
 }
 
-// Unsubscrbe to event callbacks. Since IAudioSystemEffectsPropertyStore takes a reference on our
+// Unsubscribe to event callbacks. Since IAudioSystemEffectsPropertyStore takes a reference on our
 // PropertyChangeNotificationClient class, it is important that this method is invoked prior to cleanup,
 // to break the circular reference.
 HRESULT PropertyChangeNotificationClient::StopListeningForPropertyStoreChanges()
@@ -720,7 +811,7 @@ public:
 private:
     wil::com_ptr_nothrow<IMMDevice> m_device;
 
-    // Each APO has its own private collection of properties. The collection is dentified through a
+    // Each APO has its own private collection of properties. The collection is identified through a
     // a property store context GUID, which is defined below and in the audio driver INF file.
     const GUID m_propertyStoreContext = ...;
 
@@ -760,7 +851,7 @@ STDMETHODIMP SampleApo::GetApoNotificationRegistrationInfo(
     (void)m_device.query_to(&apoNotificationDescriptors[0].audioSystemEffectsPropertyChange.device);
     apoNotificationDescriptors[0].audioSystemEffectsPropertyChange.propertyStoreContext =   m_propertyStoreContext;
 
-    // Our APO wants to get notified when a endpoint property changes on the audio endpoint.
+    // Our APO wants to get notified when an endpoint property changes on the audio endpoint.
     apoNotificationDescriptors[1].type = APO_NOTIFICATION_TYPE_ENDPOINT_PROPERTY_CHANGE;
     (void)m_device.query_to(&apoNotificationDescriptors[1].audioEndpointPropertyChange.device);
 
@@ -803,7 +894,7 @@ STDMETHODIMP_(void) SampleApo::HandleNotification(_In_ APO_NOTIFICATION* apoNoti
         && apoNotification->audioSystemEffectsPropertyChange.propertyStoreType == AUDIO_SYSTEMEFFECTS_PROPERTYSTORE_TYPE_USER)
     {
         // Check if one of the properties that we are interested in has changed.
-        // As an example, we check for "PKEY_Endpoint_Enable_Channel_Swap_SFX" which is a ficticious
+        // As an example, we check for "PKEY_Endpoint_Enable_Channel_Swap_SFX" which is a fictitious
         // PROPERTYKEY that could be set on our user property store.
         if (apoNotification->audioSystemEffectsPropertyChange.propertyKey ==
             PKEY_Endpoint_Enable_Channel_Swap_SFX)
@@ -864,7 +955,7 @@ HRESULT CSwapAPOMFX::GetApoNotificationRegistrationInfo(_Out_writes_(*count) APO
         CoTaskMemAlloc(sizeof(APO_NOTIFICATION_DESCRIPTOR) * numDescriptors)));
     RETURN_IF_NULL_ALLOC(apoNotificationDescriptors);
 
-    // Our APO wants to get notified when a endpoint property changes on the audio endpoint.
+    // Our APO wants to get notified when an endpoint property changes on the audio endpoint.
     apoNotificationDescriptors[0].type = APO_NOTIFICATION_TYPE_ENDPOINT_PROPERTY_CHANGE;
     (void)m_device.query_to(&apoNotificationDescriptors[0].audioEndpointPropertyChange.device);
 
@@ -976,7 +1067,7 @@ STDMETHODIMP SampleApo::Initialize(UINT32 cbDataSize, BYTE* pbyData)
 
     if (m_apoLoggingService != nullptr)
     {
-        m_apoLoggingService->ApoLog(APO_LOG_LEVEL_INFO, L"APO Initializion completed");
+        m_apoLoggingService->ApoLog(APO_LOG_LEVEL_INFO, L"APO Initialization completed");
     }
     return S_OK;
 }
@@ -1253,7 +1344,7 @@ SFX (Stream) and MFX (Mode) were referred in Windows 8.1 to LFX (local) and MFX 
 
 Device-specific registration uses HKR instead of HKCR.
    
-The INF file  will need to have the following enties added.
+The INF file  will need to have the following entries added.
 
 ```inf
   HKR,"FX\\0\\%WMALFXGFXAPO_Context%",%PKEY_FX_Association%,,%KSNODETYPE_ANY%

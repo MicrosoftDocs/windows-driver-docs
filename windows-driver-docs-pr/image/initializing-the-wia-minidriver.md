@@ -2,6 +2,7 @@
 title: Initializing the WIA Minidriver
 description: Initializing the WIA Minidriver
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Initializing the WIA Minidriver

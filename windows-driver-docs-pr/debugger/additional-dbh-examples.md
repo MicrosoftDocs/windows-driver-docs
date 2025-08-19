@@ -3,14 +3,14 @@ title: Additional DBH Examples
 description: Additional DBH Examples
 keywords: ["DBH, displaying symbols", "DBH, symbol decorations", "DBH, data types", "DBH, imaginary symbols"]
 ms.date: 05/23/2017
+ms.topic: example-scenario
 ---
 
 # Additional DBH Examples
 
-
 Here are additional examples of commands that can be issued at the DBH prompt.
 
-### <span id="displaying_private_symbols_and_public_symbols"></span><span id="DISPLAYING_PRIVATE_SYMBOLS_AND_PUBLIC_SYMBOLS"></span>Displaying Private Symbols and Public Symbols
+## Displaying Private Symbols and Public Symbols
 
 If the target is a full symbol file, then each public symbol appears twice in the file: in the public symbol table, and in the private symbol data. The copy in the public symbol table often contains various decorations (prefixes and suffixes). For details, see [Public and Private Symbols](public-and-private-symbols.md).
 
@@ -77,7 +77,7 @@ modbase :   400000
 
 If the -d command-line option had been used, the results would have shown the decorated public name from the beginning.
 
-### <span id="determining_the_decorations_of_a_specific_symbol"></span><span id="DETERMINING_THE_DECORATIONS_OF_A_SPECIFIC_SYMBOL"></span>Determining the Decorations of a Specific Symbol
+## Determining the Decorations of a Specific Symbol
 
 DBH can determine the decorations on a specific symbol. This can be useful when used in conjunction with a program that requires symbols to be specified with their decorations, such as [PDBCopy](pdbcopy.md).
 
@@ -129,7 +129,7 @@ modbase :  1000000
 
 This reveals that the decorated name of the symbol is **\_MyFunction1@4**.
 
-### <span id="decoding_symbol_decorations"></span><span id="DECODING_SYMBOL_DECORATIONS"></span>Decoding Symbol Decorations
+## Decoding Symbol Decorations
 
 The **undec** command can be used to reveal the meaning of C++ symbol decorations. In the following example, the decorations attached to ??\_C@\_03GGCAPAJC@Sep?$AA@ are decoded to indicate that it is a string:
 
@@ -165,7 +165,7 @@ The **undec** command does not display information about initial underscores, th
 
 You can use the **undec** command with any string, not just the name of a symbol in the currently loaded module.
 
-### <span id="sorting_a_list_of_symbols_by_address"></span><span id="SORTING_A_LIST_OF_SYMBOLS_BY_ADDRESS"></span>Sorting a List of Symbols by Address
+## Sorting a List of Symbols by Address
 
 If you simply want a list of symbols, sorted in address order, you can run DBH in batch mode and pipe the results to a **sort** command. The address values typically begin in the 18th column of each line, so the following command sorts the results by address:
 
@@ -173,7 +173,7 @@ If you simply want a list of symbols, sorted in address order, you can run DBH i
 dbh -p:4672 enum mymodule!* | sort /+18
 ```
 
-### <span id="displaying_source_line_information"></span><span id="DISPLAYING_SOURCE_LINE_INFORMATION"></span>Displaying Source Line Information
+## Displaying Source Line Information
 
 When you use a full symbol file, DBH can display source line information. This does not require access to any source files, since this information is stored in the symbol files themselves.
 
@@ -198,9 +198,9 @@ dbh [1000000]: srclines myprogram.cpp 767
 line 767 e:\mydirectory\src\myprogram.cpp
 ```
 
-Note that the output of **srclines** is similar to that of the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) debugger command.
+Note that the output of **srclines** is similar to that of the [**ln (List Nearest Symbols)**](../debuggercmds/ln--list-nearest-symbols-.md) debugger command.
 
-### <span id="displaying_a_data_type"></span><span id="DISPLAYING_A_DATA_TYPE"></span>Displaying a Data Type
+## Displaying a Data Type
 
 The **type** command can be used to display information about a data type. Here it displays data about the CMDPROC type:
 
@@ -222,7 +222,7 @@ modbase :  1000000
 
 The value listed after "tag" specifies the nature of this data type. In this case, **SymTagTypedef** indicates that this type was defined using a **typedef** statement.
 
-### <span id="using_imaginary_symbols"></span><span id="USING_IMAGINARY_SYMBOLS"></span>Using Imaginary Symbols
+## Using Imaginary Symbols
 
 The **add** command can add an imaginary symbol to the loaded module. The actual symbol file is not altered; only the image of that file in DBH's memory is changed.
 
@@ -331,12 +331,3 @@ pid:6040 mod:MyModule[400000]: enum timetest!ma*
      3             415810 :   malloc
      5             415450 :   mainCRTStartup 
 ```
-
-
-
-
-
-
-
-
-

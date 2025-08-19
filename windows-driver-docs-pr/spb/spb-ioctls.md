@@ -1,7 +1,7 @@
 ---
-title: SPB I/O requests
+title: SPB I/O Requests
 description: These IOCTLs are sent by a client (peripheral driver) handled by controller driver.
-ms.date: 03/06/2023
+ms.date: 01/12/2024
 ms.topic: reference
 ---
 

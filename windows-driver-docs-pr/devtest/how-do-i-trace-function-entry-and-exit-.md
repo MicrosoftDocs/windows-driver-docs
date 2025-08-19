@@ -1,7 +1,8 @@
 ---
-title: How do I trace function entry and exit
+title: How do I Trace Function Entry and Exit
 description: How do I trace function entry and exit
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How do I trace function entry and exit?

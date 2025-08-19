@@ -2,6 +2,7 @@
 title: H (Windows Debugger Glossary)
 description: Glossary page - H 
 ms.date: 11/28/2017
+ms.topic: glossary
 ---
 
 # H
@@ -23,8 +24,3 @@ In a typical two-system kernel debugging session, the debugger is running on the
  
 
  
-
-
-
-
-

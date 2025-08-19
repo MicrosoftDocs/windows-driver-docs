@@ -1,5 +1,5 @@
 ---
-title: MSFT\_TargetPortal class
+title: MSFT_TargetPortal Class
 description: Represents a target portal.
 ms.assetid: 27412123-730E-4AD4-9899-049CB9528CCB
 keywords:
@@ -18,7 +18,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

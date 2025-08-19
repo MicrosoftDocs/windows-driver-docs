@@ -7,6 +7,7 @@ keywords:
 - renderer WDK MSPlot
 - graphics DDI functions WDK print
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Plotter Driver Renderer

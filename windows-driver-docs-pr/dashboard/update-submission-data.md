@@ -1,8 +1,8 @@
 ---
 title: Update submission data
 description: This method, in the Microsoft Hardware API, updates details of a submission.
-ms.topic: article
 ms.date: 04/05/2018
+ms.topic: how-to
 ---
 
 # Update submission data 
@@ -24,7 +24,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Header | Type | Description |
 |:--|:--|:--|
-|Authorization | String | Required. The Azure AD access token in the form **Bearer** \<token\>. |
+|Authorization | String | Required. The Microsoft Entra ID access token in the form **Bearer** \<token\>. |
 | accept | String |	Optional. Specifies the type of content. Allowed value is “application/json” |
 
 ### Request parameters

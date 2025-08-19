@@ -7,6 +7,7 @@ keywords:
 - DEVPKEY_Device_LocationInfo
 - IoGetDeviceProperty
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Obtaining PCI Segment Values

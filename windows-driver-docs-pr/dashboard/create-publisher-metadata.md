@@ -1,8 +1,8 @@
 ---
 title: Create Publisher Driver Metadata
 description: Describes the API call to create publisher driver package metadata for Partner Center submissions.
-ms.topic: article
 ms.date: 11/06/2019
+ms.topic: reference
 ---
 
 # Create Publisher Driver Metadata
@@ -25,7 +25,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Header | Type | Description |
 |:--|:--|:--|
-| Authorization | String | Required. The Azure AD access token in the form **Bearer** \<token\>. |
+| Authorization | String | Required. The Microsoft Entra ID access token in the form **Bearer** \<token\>. |
 | accept | String | Optional. Specifies the type of content. Allowed value is “application/json” |
 
 ### Request parameters

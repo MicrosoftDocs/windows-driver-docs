@@ -1,7 +1,8 @@
 ---
-title: DSM\_COUNTERS WMI Class
+title: DSM_COUNTERS WMI Class
 description: DSM\_COUNTERS WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # DSM\_COUNTERS WMI Class

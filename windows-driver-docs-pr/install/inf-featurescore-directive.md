@@ -1,5 +1,5 @@
 ---
-title: INF FeatureScore directive
+title: INF FeatureScore Directive
 description: The FeatureScore directive provides an additional ranking criterion for drivers based on the features that a driver supports.
 keywords:
 - INF FeatureScore Directive Device and Driver Installation
@@ -52,7 +52,7 @@ The feature score provides a way to rank drivers based on the features that a dr
 
 The feature score supplements the identifier score, which makes it possible for driver writers to more easily and precisely distinguish between different drivers for a device that is based on well-defined criteria.
 
-For more information about how drivers are ranked, see [How Windows Ranks Drivers (Windows Vista and Later)](how-setup-ranks-drivers--windows-vista-and-later-.md).
+For more information about how drivers are ranked, see [How Windows Ranks Drivers (Windows Vista and Later)](how-windows-ranks-driver-packages.md).
 
 ## See also
 

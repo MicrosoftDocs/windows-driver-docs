@@ -15,6 +15,7 @@ keywords:
 - attributes WDK WDTF
 - Boolean logic WDK WDTF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Simple Data Evaluation Language Overview
@@ -122,7 +123,7 @@ Within WDTF, all non-phantom devices (that is, physically present devices) are d
 
 The following illustration shows the [**IWDTFTarget2::GetRelations**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-getrelations) method.
 
-![diagram illustrating the target::getrelations method.](images/wdtf-getrelations.gif)
+:::image type="content" source="images/wdtf-getrelations.gif" alt-text="Diagram illustrating the Target::GetRelations method in WDTF showing individual and related targets.":::
 
 The [**IWDTFTarget2::GetRelations**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-getrelations) method accepts only the relation specifier portion of the SDEL statement syntax and returns an [**IWDTFTargets2**](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftargets2) collection interface that contains all of the targets that meet the relationship criteria. The following VBScript code example returns a collection that contains the original target and all of its siblings.
 

@@ -1,8 +1,9 @@
 ---
-title: Stopping a Device to Disable It (Windows 98/Me)
+title: Stopping a Device to Disable it (Windows 98/Me)
 description: Stopping a Device to Disable It (Windows 98/Me)
 keywords: ["disabling PnP devices"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Stopping a Device to Disable It (Windows 98/Me)

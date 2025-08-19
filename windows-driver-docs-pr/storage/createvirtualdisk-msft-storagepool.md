@@ -1,5 +1,5 @@
 ---
-title: CreateVirtualDisk method of the MSFT\_StoragePool class
+title: CreateVirtualDisk Method of the MSFT_StoragePool Class
 description: Creates a virtual disk using the resources of the storage pool.
 ms.assetid: 1a5bf78d-356c-44a7-8f76-2cad85d3c171
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - vdssys.h
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

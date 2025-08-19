@@ -1,7 +1,8 @@
 ---
-title: WDDM 1.2 driver enforcement guidelines
+title: WDDM 1.2 Driver Enforcement Guidelines
 description: This section describes WDDM 1.2 driver enforcement guidelines.
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # WDDM 1.2 driver enforcement guidelines

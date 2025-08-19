@@ -3,6 +3,7 @@ title: Using the Help Documentation - WinDbg (Classic)
 description: Using the Help Documentation - WinDbg (Classic)
 keywords: ["HTML Help", "searching the Help file", "index of the Help file", "favorites in the Help file", "printing topics from the Help file", "hh.exe", "help file", "help file, overview", "help file, searching"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using the Help Documentation - WinDbg (Classic)
@@ -67,7 +68,7 @@ To open this Help documentation, do one of the following:
 
 -   At a command prompt, browse to the folder that contains Debugger.chm and run **hh debugger.chm**.
 
--   In any Windows debugger, use the [**.hh (Open HTML Help File)**](-hh--open-html-help-file-.md) command.
+-   In any Windows debugger, use the [**.hh (Open HTML Help File)**](../debuggercmds/-hh--open-html-help-file-.md) command.
 
 -   In WinDbg, click **Contents** on the **Help** menu. This command open the Help documentation and opens the **Contents** tab.
 
@@ -80,8 +81,3 @@ To open this Help documentation, do one of the following:
  
 
  
-
-
-
-
-

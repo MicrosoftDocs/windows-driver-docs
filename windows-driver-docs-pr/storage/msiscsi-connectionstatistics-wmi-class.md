@@ -1,7 +1,8 @@
 ---
-title: MSiSCSI\_ConnectionStatistics WMI Class
+title: MSiSCSI_ConnectionStatistics WMI Class
 description: MSiSCSI\_ConnectionStatistics WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_ConnectionStatistics WMI Class

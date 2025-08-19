@@ -1,7 +1,8 @@
 ---
 title: Using NDIS 6.30 Data Structures
 description: Using NDIS 6.30 Data Structures
-ms.date: 03/02/2023
+ms.date: 07/23/2025
+ms.topic: concept-article
 ---
 
 # Using NDIS 6.30 Data Structures
@@ -17,7 +18,7 @@ The following structures were updated for NDIS 6.30:
 
 - [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters)
 - [**NDIS\_MINIPORT\_ADAPTER\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_attributes)
-- [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes)
+- [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes)
 - [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes)
 - [**NDIS\_MINIPORT\_ADAPTER\_NATIVE\_802\_11\_ATTRIBUTES**](/previous-versions/windows/hardware/wireless/ff565926(v=vs.85))
 - [**NDIS\_NET\_BUFFER\_LIST\_FILTERING\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_net_buffer_list_filtering_info)

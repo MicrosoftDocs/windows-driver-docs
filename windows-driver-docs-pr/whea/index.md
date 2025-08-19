@@ -1,5 +1,5 @@
 ---
-title: Windows Hardware Error Architecture (WHEA) design guide
+title: Windows Hardware Error Architecture (WHEA) Design Guide
 description: Windows Hardware Error Architecture (WHEA) design guide
 ms.assetid: 7a42bacd-cafe-48e0-8568-402738fd6e7c
 keywords:
@@ -10,8 +10,8 @@ keywords:
 - detecting hardware errors WDK
 - reporting hardware errors WDK
 - recovering from hardware errors WDK WHEA
-ms.date: 03/03/2023
-ms.topic: article
+ms.date: 12/17/2024
+ms.topic: design-pattern
 ---
 
 # Windows Hardware Error Architecture (WHEA) design guide
@@ -20,7 +20,7 @@ This section describes the Windows Hardware Error Architecture (WHEA), which pro
 
 - An overview of WHEA and its components. For more information, see [Windows Hardware Error Architecture Overview](windows-hardware-error-architecture-overview.md).
 
-- How to develop and distribute platform-specific hardware error driver (PSHED) plug-ins. For more information, see [Platform-Specific Hardware Error Driver Plug-Ins](platform-specific-hardware-error-driver-plug-ins2.md).
+- How to develop and distribute platform-specific hardware error driver (PSHED) plug-ins. For more information, see [Platform-Specific Hardware Error Driver Plug-ins](platform-specific-hardware-error-driver-plug-ins2.md).
 
 - How user-mode applications can communicate with the WHEA platform. For more information, see [Windows Hardware Error Architecture-Aware User-Mode Applications](windows-hardware-error-architecture-aware-user-mode-applications.md).
 
@@ -34,7 +34,7 @@ This section describes the Windows Hardware Error Architecture (WHEA), which pro
 
 [Windows Hardware Error Architecture Overview](windows-hardware-error-architecture-overview.md)
 
-[Platform-Specific Hardware Error Driver Plug-Ins](platform-specific-hardware-error-driver-plug-ins2.md)
+[Platform-Specific Hardware Error Driver Plug-ins](platform-specific-hardware-error-driver-plug-ins2.md)
 
 [Windows Hardware Error Architecture-Aware User-Mode Applications](windows-hardware-error-architecture-aware-user-mode-applications.md)
 
@@ -42,7 +42,7 @@ This section describes the Windows Hardware Error Architecture (WHEA), which pro
 
 ## Related topics
 
-[Windows Hardware Error Architecture ACPI Table Specification](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/WHEA_ACPI-tables.docx)  
+[Windows Hardware Error Architecture Advanced Configuration and Power Interface (ACPI) Table Specification](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/WHEA_ACPI-tables.docx)  
 
 [Hardware Management and Security](/previous-versions/windows/hardware/design/dn614601(v=vs.85))  
 

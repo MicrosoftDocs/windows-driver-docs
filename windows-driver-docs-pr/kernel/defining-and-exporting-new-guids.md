@@ -1,15 +1,12 @@
 ---
 title: Defining and Exporting New GUIDs
-description: Defining and Exporting New GUIDs
+description: Defining and exporting new GUIDs
 keywords: ["globally unique identifiers WDK kernel", "GUIDs WDK kernel", "identifiers WDK GUIDs", "exporting GUIDs"]
-ms.date: 06/16/2017
+ms.date: 05/12/2025
+ms.topic: how-to
 ---
 
-# Defining and Exporting New GUIDs
-
-
-
-
+# Defining and exporting new GUIDs
 
 You define a new GUID for an item the driver exports to other system components, drivers, or applications. For example, you define a new GUID for a custom PnP event on one of its devices. To define and export a new GUID, you must do the following:
 
@@ -17,9 +14,9 @@ You define a new GUID for an item the driver exports to other system components,
 
     Choose a name that represents the purpose of the GUID. For example, the operating system uses such names as GUID\_BUS\_TYPE\_PCI and PARPORT\_WMI\_ALLOCATE\_FREE\_COUNTS\_GUID.
 
-2.  Generate a value for the GUID using Uuidgen.exe or Guidgen.exe. When you install the Microsoft Windows SDK, Uuidgen.exe is automatically installed. Guidgen.exe is available from the [Microsoft Exchange Server GUID Generator](https://go.microsoft.com/fwlink/p/?linkid=121586) download page.
+2.  Generate a value for the GUID using Uuidgen.exe or Guidgen.exe. When you install the Microsoft Windows SDK, Uuidgen.exe is automatically installed.
 
-    These utilities generate a unique, formatted string that represents a 128-bit value. The "-s" switch on Uuidgen.exe outputs the GUID formatted as a C structure.
+    These utilities generate a unique, formatted string that represents a 128-bit value. The "-s" switch-on Uuidgen.exe outputs the GUID formatted as a C structure.
 
 3.  Define the GUID in an appropriate header file.
 
@@ -38,7 +35,7 @@ You define a new GUID for an item the driver exports to other system components,
     :
     ```
 
-    If the GUID is defined in a header file that contains statements other than GUID definitions, you must take an extra step to ensure that the GUID is instantiated in drivers that include the header file. The **DEFINE\_GUID** statement must occur outside any **\#ifdef** statements that prevent multiple inclusion. Otherwise, if the header file is included in a precompiled header, the GUID will not be instantiated in drivers that use the header file. See Example 2 for a sample GUID definition in a mixed header file.
+    If the GUID is defined in a header file that contains statements other than GUID definitions, you must take an extra step to ensure that the GUID is instantiated in drivers that include the header file. The **DEFINE\_GUID** statement must occur outside any **\#ifdef** statements that prevent multiple inclusion. Otherwise, if the header file is included in a precompiled header, the GUID won't be instantiated in drivers that use the header file. See Example 2 for a sample GUID definition in a mixed header file.
 
     **Example 2: Defining GUIDs in a Mixed Header File**
 
@@ -69,16 +66,13 @@ You define a new GUID for an item the driver exports to other system components,
     #endif  // DEFINE_GUID
     ```
 
-    Putting a GUID definition outside statements that prevent multiple inclusion does not cause multiple instances of the GUID in a driver because **DEFINE\_GUID** defines the GUID as an EXTERN\_C variable. Multiple declarations of an EXTERN variable are allowed as long as the types match.
+    Putting a GUID definition outside statements that prevent multiple inclusion doesn't cause multiple instances of the GUID in a driver because **DEFINE\_GUID** defines the GUID as an EXTERN\_C variable. Multiple declarations of an EXTERN variable are allowed as long as the types match.
 
 4.  When creating a GUID for a new [device setup class](../install/overview-of-device-setup-classes.md) or [device interface class](../install/overview-of-device-interface-classes.md), the following rules apply:
-    -   Do not use a single GUID to identify both a device setup class and a device interface class.
+    -   Don't use a single GUID to identify both a device setup class and a device interface class.
 
     -   When creating a symbolic name to associate with the GUID, use the following convention:
 
         For device setup classes, use the format GUID\_DEVCLASS\_*XXX*.
 
         For device interface classes, use the format GUID\_DEVINTERFACE\_*XXX*.
-
- 
-

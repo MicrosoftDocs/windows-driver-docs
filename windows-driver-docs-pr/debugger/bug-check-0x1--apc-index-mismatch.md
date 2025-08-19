@@ -2,7 +2,7 @@
 title: Bug Check 0x1 APC_INDEX_MISMATCH
 description: Learn about bug check 0x00000001, which indicates a mismatch in the APC state index.
 keywords: ["Bug check 0x1 APC_INDEX_MISMATCH", "APC_INDEX_MISMATCH"]
-ms.date: 12/15/2022
+ms.date: 10/02/2023
 topic_type:
 - apiref
 ms.topic: reference
@@ -17,7 +17,7 @@ api_type:
 The APC_INDEX_MISMATCH bug check has a value of 0x00000001. The bug check indicates a mismatch in the asynchronous procedure calls (APC) state index.
 
 > [!IMPORTANT]
-> This article is for programmers. If you're a Microsoft customer and your computer displays a blue screen error code, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This article is for programmers. If you're a Microsoft customer and your computer displays a blue screen error code, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## APC_INDEX_MISMATCH parameters
 
@@ -38,9 +38,9 @@ You can resolve this problem by using WinDbg or by using basic troubleshooting t
 
 ### Debug by using WinDbg
 
-The [!analyze](-analyze.md) debugger extension displays information about the bug check and can help you determine the root cause.
+The [!analyze](../debuggercmds/-analyze.md) debugger extension displays information about the bug check and can help you determine the root cause.
 
-You can use the [!apc](-apc.md) extension to display the contents of one or more APCs.
+You can use the [!apc](../debuggercmds/-apc.md) extension to display the contents of one or more APCs.
 
 You also can set a breakpoint in the code that precedes this stop code and attempt to single-step forward into the faulting code.
 
@@ -56,7 +56,7 @@ If you aren't equipped to use the Windows debugger to work on this problem:
 
 - Confirm that any new hardware that's installed is compatible with the installed version of Windows. For example, you can get information about required hardware at [Windows 10 specifications](https://www.microsoft.com/windows/windows-10-specifications).
 
-For more general troubleshooting information, see [Blue screen data](blue-screen-data.md).
+For more general troubleshooting information, see [Analyze Bug Check Blue Screen Data](blue-screen-data.md).
 
 ## Remarks
 

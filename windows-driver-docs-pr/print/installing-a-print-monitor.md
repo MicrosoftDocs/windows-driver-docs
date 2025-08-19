@@ -1,5 +1,5 @@
 ---
-title: Installing a print monitor
+title: Installing a Print Monitor
 description: Provides information about methods that can be used to install print monitors.
 keywords:
 - print monitors WDK, installing
@@ -8,6 +8,7 @@ keywords:
 - language monitors WDK print, installing
 - port monitors WDK print, installing
 ms.date: 09/08/2022
+ms.topic: concept-article
 ---
 
 # Installing a print monitor

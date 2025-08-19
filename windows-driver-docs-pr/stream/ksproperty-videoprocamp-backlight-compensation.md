@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_VIDEOPROCAMP\_BACKLIGHT\_COMPENSATION
+title: KSPROPERTY_VIDEOPROCAMP_BACKLIGHT_COMPENSATION
 description: The KSPROPERTY\_VIDEOPROCAMP\_BACKLIGHT\_COMPENSATION property controls the back-light compensation setting on the camera. This property is optional.
 keywords: ["KSPROPERTY_VIDEOPROCAMP_BACKLIGHT_COMPENSATION Streaming Media Devices"]
 topic_type:

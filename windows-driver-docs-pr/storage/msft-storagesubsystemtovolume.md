@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToVolume class
+title: MSFT_StorageSubSystemToVolume Class
 description: Association between an MSFT\_StorageSubSystem and MSFT\_Volume.
 ms.assetid: EA89DCE7-39BE-4BEC-9C27-2C267595010D
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

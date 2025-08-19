@@ -1,7 +1,7 @@
 ---
-title: FLT_PARAMETERS for IRP_MJ_QUERY_OPEN union
+title: FLT_PARAMETERS for IRP_MJ_QUERY_OPEN Union
 description: The following union component is used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_QUERY_OPEN.
-keywords: ["FLT_PARAMETERS for IRP_MJ_QUERY_OPEN union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
+keywords: ["FLT_PARAMETERS for IRP_MJ_QUERY_OPEN union WDK", "FLT_PARAMETERS union WDK", "PFLT_PARAMETERS union pointer Installable File System WDK"]
 topic_type:
 - apiref
 api_name:
@@ -10,7 +10,7 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 03/13/2023
+ms.date: 02/12/2024
 ms.topic: reference
 ---
 
@@ -39,7 +39,7 @@ typedef union _FLT_PARAMETERS {
 
 - **FileInformation**: A pointer to a caller-allocated buffer into which the routine writes the requested information about the file object. The **FileInformationClass** member specifies the type of information that the caller requests.
 
-- **Length**: The size, in bytes, of the buffer pointed to by **FileInformation**.
+- **Length**: A pointer to the size, in bytes, of the buffer pointed to by **FileInformation**.
 
 - **FileInformationClass**: Specifies the type of information to be returned about the file, in the buffer that **FileInformation** points to. Device and intermediate drivers can specify any of the following [**FILE_INFORMATION_CLASS**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_file_information_class) values. Other values cause the call to fail and should not be passed to PreQueryOpen/PostQueryOpen calls.
 
@@ -48,12 +48,15 @@ typedef union _FLT_PARAMETERS {
   | FileStatInformation | A [**FILE_STAT_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stat_information) structure. This structure contains an access mask. For more information about access masks, see [ACCESS_MASK](../kernel/access-mask.md). |
   | FileStatLxInformation | A [**FILE_STAT_LX_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stat_lx_information) structure. This structure contains an access mask. For more information about access masks, see [ACCESS_MASK](../kernel/access-mask.md). |
   | FileCaseSensitiveInformation | A [**FILE_CASE_SENSITIVE_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_case_sensitive_information) structure. |
+  | FileStatBasicInformation | A [**FILE_STAT_BASIC_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-file_stat_basic_information) structure. |
 
 ## Remarks
 
 The [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP_MJ_QUERY_OPEN operations contains the parameters for an **QueryOpen** operation represented by a callback data ([**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT_IO_PARAMETER_BLOCK structure.
 
-IRP_MJ_QUERY_OPEN is a file system (FSFilter) callback operation.
+IRP_MJ_QUERY_OPEN is a file system (FSFilter) callback operation. A filter can reject the operation in both its [pre-operation callback](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback) and [post-operation callback](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_post_operation_callback) using FLT_PREOP_DISALLOW_FSFILTER_IO and FLT_POSTOP_DISALLOW_FSFILTER_IO, respectively.
+
+The File System does *not* fill in the **Information** field in the IO_STATUS block.  Filters shouldn't inspect this value in their post-calls.
 
 For more information about FSFilter callback operations, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlregisterfilesystemfiltercallbacks).
 
@@ -69,7 +72,7 @@ For more information about FSFilter callback operations, see the reference entry
 
 [**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block)
 
-[**FLT_IS_FASTIO_OPERATION**](/windows-hardware/drivers/ddi/index)
+[**FLT_IS_FASTIO_OPERATION**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-flt_is_fastio_operation)
 
 [**FLT_IS_FS_FILTER_OPERATION**](/previous-versions/ff544648(v=vs.85))
 

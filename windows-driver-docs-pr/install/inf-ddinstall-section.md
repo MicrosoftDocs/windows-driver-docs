@@ -1,5 +1,5 @@
 ---
-title: INF DDInstall section
+title: INF DDInstall Section
 description: Each per-Models DDInstall section contains an optional DriverVer directive and one or more directives referencing additional named sections in the INF file, shown here with the most frequently specified INF directives, CopyFiles and AddReg, listed first.
 keywords:
 - INF DDInstall Section Device and Driver Installation
@@ -112,7 +112,7 @@ Needs= KS.Registration, KSCAPTUR.Registration.NT, MSPCLOCK.Installation
 
 (Windows Vista and later) This directive provides an additional ranking criterion for drivers that are based on the features that a driver supports. For example, feature scores might be defined for a [device setup class](./overview-of-device-setup-classes.md) that distinguishes between drivers based on class-specific criteria.
 
-For more information about how drivers are ranked, see [How Windows Ranks Drivers (Windows Vista and Later)](how-setup-ranks-drivers--windows-vista-and-later-.md).
+For more information about how drivers are ranked, see [How Windows Ranks Drivers (Windows Vista and Later)](how-windows-ranks-driver-packages.md).
 
 For more information about this directive, see [**INF FeatureScore Directive**](inf-featurescore-directive.md).
 

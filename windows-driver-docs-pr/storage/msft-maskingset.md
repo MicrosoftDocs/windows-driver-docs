@@ -1,5 +1,5 @@
 ---
-title: MSFT\_MaskingSet class
+title: MSFT_MaskingSet Class
 description: Represents a masking set.
 ms.assetid: 2B745820-9347-414A-8D33-36C8DB97385D
 keywords:
@@ -17,7 +17,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

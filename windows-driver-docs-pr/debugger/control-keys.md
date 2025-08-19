@@ -3,6 +3,7 @@ title: Control Keys
 description: Control Keys
 keywords: ["control keys", "control keys, complete listing"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Control Keys
@@ -20,8 +21,3 @@ WinDbg also uses the CTRL key, the ALT key, and the F keys as shortcut keys to t
  
 
  
-
-
-
-
-

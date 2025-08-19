@@ -2,6 +2,7 @@
 title: GPUView Command-Line Options
 description: "You can control GPUView from a Command Prompt window."
 ms.date: 05/10/2022
+ms.topic: reference
 ---
 
 # GPUView Command-Line Options

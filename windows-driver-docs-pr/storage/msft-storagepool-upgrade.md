@@ -1,5 +1,5 @@
 ---
-title: Upgrade method of the MSFT\_StoragePool class
+title: Upgrade Method of the MSFT_StoragePool Class
 description: Upgrades the metadata on the storage pool.
 ms.assetid: FE6ADA25-70F4-49EF-AC2B-799AFCECFBBC
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - netcfgn.h
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

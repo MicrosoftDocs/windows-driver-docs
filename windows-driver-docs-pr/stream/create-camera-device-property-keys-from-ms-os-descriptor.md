@@ -1,7 +1,8 @@
 ---
-title: Create device property keys from the MS OS descriptor in USB Video Class (UVC) camera firmware
+title: Create Device Property Keys from the MS OS Descriptor in USB Video Class (UVC) Camera Firmware
 description: Describes how to create device property keys from the MS OS descriptor in USB Video Class (UVC) camera firmware.
 ms.date: 06/24/2021
+ms.topic: how-to
 ---
 
 # Create device property keys from the MS OS descriptor in USB Video Class (UVC) camera firmware

@@ -1,5 +1,5 @@
 ---
-title: Supporting PC Cards That Conform to the Multifunction Standard
+title: Supporting PC Cards that Conform to the Multifunction Standard
 description: Provides information on supporting PC cards that conform to the multifunction standard.
 keywords:
 - PCMCIA buses WDK multifunction devices
@@ -9,6 +9,7 @@ keywords:
 - system-supplied multifunction bus drivers WDK
 - mf.sys
 ms.date: 03/17/2023
+ms.topic: concept-article
 ---
 
 # Supporting PC Cards That Conform to the Multifunction Standard

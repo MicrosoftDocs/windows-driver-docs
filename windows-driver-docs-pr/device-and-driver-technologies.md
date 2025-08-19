@@ -2,17 +2,18 @@
 title: Overview of Driver Technologies
 description: This section contains information about each of the supported Windows driver technologies.
 ms.date: 02/22/2023
+ms.topic: concept-article
 ---
 
 # Overview of Driver Technologies
 
-For general information about developing drivers see [Getting started with Windows drivers](gettingstarted/index.md) and [Write your first driver](gettingstarted/writing-your-first-driver.md).
+For general information about developing drivers see [Get started with drivers on Windows](gettingstarted/index.md) and [Write your first driver](gettingstarted/writing-your-first-driver.md).
 
-The majority of the driver technology information is the same for all editions of Windows 10. When you must make special considerations for a particular edition of Windows, such as for Windows 10 Mobile, we explicitly called these out in each technology area.
+The majority of the driver technology information is the same for all editions of Windows 10. When you must make special considerations for a particular edition of Windows, we explicitly called these out in each technology area.
 
 ## Windows drivers
 
-You can create a Windows Driver—a driver that uses a subset of the available interfaces—to run on all editions of Windows 10. Where possible, use a Windows Driver to enable deployment of your drivers on multiple devices. For more information about how to build, install, deploy, and debug a Windows Driver for Windows 10, see [Getting Started with Windows Drivers](develop/getting-started-with-windows-drivers.md) and [Deploying a Driver to a Test Computer](develop/deploying-a-driver-to-a-test-computer.md).
+You can create a Windows Driver—a driver that uses a subset of the available interfaces—to run on all editions of Windows 10. Where possible, use a Windows Driver to enable deployment of your drivers on multiple devices. For more information about how to build, install, deploy, and debug a Windows Driver for Windows 10, see [Get started developing Windows drivers](develop/get-started-developing-windows-drivers.md) and [Deploying a Driver to a Test Computer](develop/deploying-a-driver-to-a-test-computer.md).
 
 ## Device drivers and Windows 10 for desktop computers
 
@@ -25,7 +26,7 @@ For information about the tools used to develop desktop drivers, see [Driver Dev
 - [Audio](audio/index.md)
 - [Battery Drivers](battery/index.md)
 - [Biometric Drivers](biometric/index.md)
-- [Bluetooth Drivers](bluetooth/index.md)
+- [Bluetooth Drivers](/windows-hardware/drivers/bluetooth/)
 - [Component Firmware Update (CFU)](cfu/index.md)
 - [Display, graphics, and compute accelerator drivers](display/index.md)
 - [File system drivers](ifs/index.md)
@@ -39,14 +40,14 @@ For information about the tools used to develop desktop drivers, see [Driver Dev
 - [Mobile broadband](mobilebroadband/index.md)
 - [Multifunction device drivers](multifunction/index.md)
 - [NetAdapterCx](netcx/index.md)
-- [Network drivers](network/index.md)
+- [Network drivers](/windows-hardware/drivers/network)
 - [NFC device drivers](nfc/index.md)
 - [Parallel port drivers](parports/index.md)
 - [Partner application development](partnerapps/index.md)
 - [PCI drivers](pci/index.md)
 - [PCMCIA drivers](pcmcia/index.md)
 - [Point of Service device drivers](pos/index.md)
-- [Power management technologies](powermeter/index.md)
+- [Power management technologies](/windows-hardware/drivers/powermeter)
 - [Print device drivers](print/index.md)
 - [SD card bus drivers](sd/index.md)
 - [Sensor drivers](sensors/index.md)
@@ -64,6 +65,6 @@ For information about the tools used to develop desktop drivers, see [Driver Dev
 
 ## Related sections
 
-- [Getting started with Windows drivers](gettingstarted/index.md)
+- [Get started with drivers on Windows](gettingstarted/index.md)
 - [Driver Development Tools](devtest/index.md)
-- [Partner Center for Windows Hardware](dashboard/index.yml)
+- [Partner Center for Windows Hardware](dashboard/index.md)

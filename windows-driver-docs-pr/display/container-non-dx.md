@@ -1,7 +1,8 @@
 ---
-title: Container support for non-DX APIs
+title: Container Support for non-DX APIs
 description: Non-DX APIs must interact with drivers and kernel more directly, so they are exposed to more complications
 ms.date: 05/07/2019
+ms.topic: concept-article
 ---
 
 # Container support for non-DX APIs
@@ -10,7 +11,7 @@ Windows 10 added features that significantly impact non-DX APIs and the lower-le
 
 1. Paravirtualized WDDM adapters
 2. Users now have control over the adapter used by applications that don't discriminate themselves
-3. [Universal drivers](../develop/getting-started-with-windows-drivers.md) introduces a new set of design principals
+3. [Universal drivers](../develop/get-started-developing-windows-drivers.md) introduces a new set of design principals
 
 Maintaining compatibility with the latest Windows 10 features requires the modifications described in the sections below.
 
@@ -28,7 +29,7 @@ In the installation INF, the driver can define multiple values in the following 
 The former sub-keys modify the system32 directory, while the latter sub-keys modify the syswow64 directory.
 Each value type under a subkey must be REG_MULTI_SZ or REG_SZ.
 If the value type is REG_MULTI_SZ, there must be maximum 2 strings in the value.
-This implies that each value defines a pair of stings, where the second string could be empty.
+This implies that each value defines a pair of strings, where the second string could be empty.
 The first name in a pair is a path to a file in the driver store.
 The path is relative to the root of the driver store and can contain sub-directories.
 The second name in a pair is the name of the file how it will appear in the system32 or syswow64 directory.
@@ -108,7 +109,7 @@ DXGI returns its LUID through [IDXGIAdapter::GetDesc](/windows/win32/api/dxgi/nf
 
 ## DCHU design modifications
 
-Honor as many [universal driver](../develop/getting-started-with-windows-drivers.md) design principals as possible,
+Honor as many [universal driver](../develop/get-started-developing-windows-drivers.md) design principals as possible,
 which may vary based on the exact device being supported.
 
 ## D3DKMT headers

@@ -1,10 +1,11 @@
 ---
-title: Irql rule set (WDM)
+title: IRQL Rule Set (WDM)
 description: Learn about using rules (WDM) to verify that your driver makes DDI calls at the required IRQL. In addition, learn how to select the IRQL rule set.
 ms.date: 05/21/2018
+ms.topic: concept-article
 ---
 
-# Irql rule set (WDM)
+# IRQL rule set (WDM)
 
 
 Use these rules to verify that your driver makes DDI calls at the required IRQL.
@@ -211,7 +212,7 @@ The driver calls <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kelowerirql" 
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="wdm-irqlpspassive.md" data-raw-source="[&lt;strong&gt;IrqlPsPassive&lt;/strong&gt;](wdm-irqlpspassive.md)"><strong>IrqlPsPassive</strong></a></p></td>
-<td align="left"><p>The <a href="wdm-irqlpspassive.md" data-raw-source="[&lt;strong&gt;IrqlPsPassive&lt;/strong&gt;](wdm-irqlpspassive.md)"><strong>IrqlPsPassive</strong></a> rule specifies that the driver calls the following <a href="/windows-hardware/drivers/ddi/index" data-raw-source="[&lt;strong&gt;Process Structure routines&lt;/strong&gt;](/windows-hardware/drivers/ddi/index)"><strong>Process Structure routines</strong></a> only when it is executing at IRQL = PASSIVE_LEVEL:</p></td>
+<td align="left"><p>The <a href="wdm-irqlpspassive.md" data-raw-source="[&lt;strong&gt;IrqlPsPassive&lt;/strong&gt;](wdm-irqlpspassive.md)"><strong>IrqlPsPassive</strong></a> rule specifies that the driver calls the specific Process Structure routines only when it is executing at IRQL = PASSIVE_LEVEL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="wdm-irqlreturn.md" data-raw-source="[&lt;strong&gt;IrqlReturn&lt;/strong&gt;](wdm-irqlreturn.md)"><strong>IrqlReturn</strong></a></p></td>

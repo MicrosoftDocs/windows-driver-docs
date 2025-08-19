@@ -1,16 +1,17 @@
 ---
-title: File system sample code
+title: File System Sample Code
 description: File system sample code
 keywords:
 - drivers WDK file system
 - file system drivers WDK
-ms.date: 02/10/2020
+ms.date: 04/30/2025
+ms.topic: concept-article
 ---
 
 # File system sample code
 
-In almost all situations, developing a full file system driver for Windows is not necessary. If you do decide to develop a new file system driver, the [*fastfat* sample](../samples/file-system-driver-samples.md) is available for you to use as a model. To learn how to install a file system driver, see [Creating an INF File for a File System Driver](creating-an-inf-file-for-a-file-system-driver.md).
+In almost all situations, developing a full file system for Windows isn't necessary. If you do decide to develop a new file system driver beyond the file systems available in Windows, see the following sample code:
 
-The WDK does not provide conceptual documentation for file system development.
+* [FastFAT file system driver](/samples/microsoft/windows-driver-samples/fastfat-file-system-driver/). This sample is a complete file system. It addresses issues such as storing data on disk, interacting with the cache manager, and handling various I/O operations such as file creation, deletion, and reading/writing data. It also demonstrates how to set information on a file and perform control operations on the file system.
 
-Most file system-related development on Windows involves the creation of a file system filter (or "minifilter") driver that interacts with the system-supplied [Filter Manager](filter-manager-concepts.md).
+* [CDFS driver](/samples/microsoft/windows-driver-samples/cdfs-file-system-driver/). The CD-ROM file system driver is for removable media.

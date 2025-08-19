@@ -1,5 +1,5 @@
 ---
-title: KSJACK\_DESCRIPTION2 structure
+title: KSJACK_DESCRIPTION2 Structure
 description: The KSJACK\_DESCRIPTION2 structure specifies the capabilities and the current state of a jack that supports jack presence detection.
 keywords: ["KSJACK_DESCRIPTION2 structure Audio Devices", "PKSJACK_DESCRIPTION2 structure pointer Audio Devices"]
 topic_type:
@@ -22,7 +22,7 @@ The `KSJACK_DESCRIPTION2` structure specifies the capabilities and the current s
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _tagKSJACK_DESCRIPTION2 {
   DWORD DeviceStateInfo;
   DWORD JackCapabilities;

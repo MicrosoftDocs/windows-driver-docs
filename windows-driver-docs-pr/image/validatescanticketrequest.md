@@ -1,5 +1,5 @@
 ---
-title: ValidateScanTicketRequest element
+title: ValidateScanTicketRequest Element
 description: The required ValidateScanTicketRequest operation element enables a client to determine if the settings for future scan operations are valid.
 keywords: ["ValidateScanTicketRequest element Imaging Devices"]
 topic_type:
@@ -172,5 +172,3 @@ The following code example shows a validation request for an invalid scan ticket
 ## See also
 
 [**ScanTicket**](scanticket.md)
-
-[**ValidateScanTicketRequest**](validatescanticketrequest.md)

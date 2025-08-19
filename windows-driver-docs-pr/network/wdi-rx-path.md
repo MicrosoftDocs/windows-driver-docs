@@ -2,6 +2,7 @@
 title: WDI RX path
 description: This section describes the WDI RX path
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # WDI RX path

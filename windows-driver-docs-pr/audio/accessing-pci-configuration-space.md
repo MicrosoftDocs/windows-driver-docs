@@ -6,6 +6,7 @@ keywords:
 - audio adapter drivers WDK , PCI configuration space
 - adapter drivers WDK audio , PCI configuration space
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Accessing PCI Configuration Space

@@ -3,6 +3,7 @@ title: Using Symbols
 description: Using Symbols
 keywords: ["Debugger Engine, symbols", "symbols"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using Symbols
@@ -17,7 +18,7 @@ For an overview of symbols, including using symbol files and symbol servers, see
 
 To find the location of a symbol given its name, use [**GetOffsetByName**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-getoffsetbyname). For details on the syntax used to specify symbol names, see [Symbol Syntax and Symbol Matching](symbol-syntax-and-symbol-matching.md).
 
-If the exact name of a symbol is not known, or multiple symbols have the same name, [**StartSymbolMatch**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-startsymbolmatch) will begin a search for symbols whose names match a given pattern. For details on the syntax, see [String Wildcard Syntax](string-wildcard-syntax.md).
+If the exact name of a symbol is not known, or multiple symbols have the same name, [**StartSymbolMatch**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-startsymbolmatch) will begin a search for symbols whose names match a given pattern. For details on the syntax, see [String Wildcard Syntax](../debuggercmds/string-wildcard-syntax.md).
 
 To find the name of a symbol given its location, use [**GetNameByOffset**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-getnamebyoffset). To find the names of symbols in a module near a given location, use [**GetNearNamebyOffset**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-getnearnamebyoffset).
 

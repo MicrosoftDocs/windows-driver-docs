@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StoragePoolToVolume class
+title: MSFT_StoragePoolToVolume Class
 description: Association between MSFT\_StoragePool and MSFT\_Volume. This association should only exist for concrete pools.
 ms.assetid: E8A036AD-47E1-47CF-A382-E7FC4DB671CB
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

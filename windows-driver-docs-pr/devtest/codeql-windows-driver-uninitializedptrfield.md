@@ -2,6 +2,7 @@
 title: UninitializedPtrField (Supplemental Windows Driver CodeQL Query)
 description: UninitializedPtrField a Supplemental Windows Driver CodeQL Query
 ms.date: 01/11/2021
+ms.topic: best-practice
 ---
 
 # UninitializedPtrField (Windows Driver CodeQL Query)
@@ -16,7 +17,7 @@ Make sure to initialize all pointer fields before usage.
 
 ## Example
 
-The following example shows a scenario where the field *ptr_* is not initialzied and later dereferenced:
+The following example shows a scenario where the field *ptr_* is not initialized and later dereferenced:
 
 ```cpp
 template <typename T>

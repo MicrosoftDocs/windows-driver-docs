@@ -6,6 +6,7 @@ keywords:
 - TMC files WDK
 - files WDK software tracing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Trace Message Control File
@@ -31,12 +32,4 @@ The TMC file also contains the following information:
 -   The [trace flags](trace-flags.md) defined by the trace provider.
 
 TraceView uses the TMC file to find the trace flags for each provider. You can use this file as a quick reference to the control GUID of a trace provider.
-
- 
-
- 
-
-
-
-
 

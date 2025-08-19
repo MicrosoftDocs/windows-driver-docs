@@ -1,5 +1,5 @@
 ---
-title: IdentifyElement method of the MSFT\_StorageEnclosure class
+title: IdentifyElement Method of the MSFT_StorageEnclosure Class
 description: Permits a user to perform identification tasks on the enclosure and its elements.
 ms.assetid: 9993C05C-28A4-4AB8-8860-ADE5D3032AF3
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

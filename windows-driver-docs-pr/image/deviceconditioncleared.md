@@ -1,5 +1,5 @@
 ---
-title: DeviceConditionCleared element
+title: DeviceConditionCleared Element
 description: The required DeviceConditionCleared element contains information about a previously reported DeviceCondition condition that has been cleared.
 keywords: ["DeviceConditionCleared element Imaging Devices"]
 topic_type:
@@ -52,8 +52,6 @@ The **DeviceConditionCleared** element contains the [**ConditionId**](conditioni
 [**ConditionId**](conditionid.md)
 
 [**DeviceCondition**](devicecondition.md)
-
-[**DeviceConditionCleared**](deviceconditioncleared.md)
 
 [**ScannerStatusConditionClearedEvent**](scannerstatusconditionclearedevent.md)
 

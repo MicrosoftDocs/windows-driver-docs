@@ -6,6 +6,7 @@ keywords:
 - data type negotiation WDK AVStream
 - AVStream hardware codec support WDK , handling data type negotiation
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Handling Data Type Negotiation in AVStream Codecs

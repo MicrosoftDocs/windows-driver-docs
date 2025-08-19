@@ -3,13 +3,10 @@ title: Overview of RPC Debugging
 description: Overview of RPC Debugging
 keywords: ["RPC debugging, overview", "remote procedure call (RPC)"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Overview of RPC Debugging
-
-
-## <span id="ddk_overview_of_rpc_debugging_dbg"></span><span id="DDK_OVERVIEW_OF_RPC_DEBUGGING_DBG"></span>
-
 
 Microsoft Remote Procedure Call (RPC) makes it easy to cross process and machine boundaries and carry data around. This network programming standard is one reason that networking with Microsoft Windows is so powerful.
 
@@ -25,11 +22,9 @@ In many cases, you can troubleshoot a problem by using the techniques outlined i
 
 If you want to explore the mechanics of how this information is stored, or if you want to devise your own techniques for state information analysis, see [RPC State Information Internals](rpc-state-information-internals.md).
 
+## RPC Security 
+
+For general information about RPC security and guidelines for usage, see [Writing a Secure RPC Client or Server](/windows/win32/rpc/writing-a-secure-rpc-client-or-server).
+
+
  
-
- 
-
-
-
-
-

@@ -1,7 +1,8 @@
 ---
-title: Generate ACPI tables by using AcpiGenFx
+title: Generate ACPI Tables by Using AcpiGenFx
 description: Use the ACPI Generation Framework (AcpiGenFx) library to write an app that generates ACPI tables.
 ms.date: 03/23/2023
+ms.topic: how-to
 ---
 
 # Generate ACPI tables by using AcpiGenFx

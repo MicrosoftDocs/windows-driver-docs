@@ -1,7 +1,8 @@
 ---
-title: MSiSCSI\_BootConfiguration WMI Class
+title: MSiSCSI_BootConfiguration WMI Class
 description: MSiSCSI\_BootConfiguration WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_BootConfiguration WMI Class

@@ -2,6 +2,7 @@
 title: Virtual Function Teardown Sequence
 description: Virtual Function Teardown Sequence
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Virtual Function Teardown Sequence
@@ -27,7 +28,7 @@ NDIS, the virtualization stack, and the PF miniport driver follow these steps du
 
 1.  The virtualization stack moves the media access control (MAC) and virtual LAN (VLAN) filters for the virtual machine (VM) network adapter to the default virtual port (VPort) that is attached to the PF. The VM network adapter is exposed in the guest operating system of the child partition.
 
-    Aftet the filters are moved to the default VPort, the synthetic data path is fully operational for network traffic to and from the networking components that run in the guest operating system. The PF miniport driver indicates received packets on the default PF VPort which uses the synthetic data path to indicate the packets to the guest operating system. Similarly, all transmitted packets from the guest operating system are routed through the synthetic data path and transmitted through the default PF VPort.
+    After the filters are moved to the default VPort, the synthetic data path is fully operational for network traffic to and from the networking components that run in the guest operating system. The PF miniport driver indicates received packets on the default PF VPort which uses the synthetic data path to indicate the packets to the guest operating system. Similarly, all transmitted packets from the guest operating system are routed through the synthetic data path and transmitted through the default PF VPort.
 
 2.  The virtualization stack deletes the VPort that is attached to the VF by issuing an object identifier (OID) set request of [OID\_NIC\_SWITCH\_DELETE\_VPORT](./oid-nic-switch-delete-vport.md) to the PF miniport driver. The miniport driver frees any hardware or software resources associated with the VPort and completes the OID request.
 

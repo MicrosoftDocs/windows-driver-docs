@@ -6,6 +6,7 @@ keywords:
 - customized print Web pages WDK , installing
 - manufacturer-specific printer installations WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Installing Pages for a Manufacturer

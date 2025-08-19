@@ -2,6 +2,7 @@
 title: PwrTest ProcessIdle Scenario
 description: The PwrTest ProcessIdle Scenario forces background maintenance tasks to run (now rather than at their scheduled time) and monitors their progress.
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # PwrTest ProcessIdle Scenario
@@ -180,13 +181,5 @@ The following table describes the XML elements that appear in the log file.
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
-
- 
-
- 
-
-
-
-
 
 

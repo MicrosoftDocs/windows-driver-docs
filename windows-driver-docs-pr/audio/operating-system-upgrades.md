@@ -9,6 +9,7 @@ keywords:
 - CAPX settings framework
 - migrating settings WDK audio
 ms.date: 10/25/2022
+ms.topic: concept-article
 ---
 
 # Operating System Upgrades

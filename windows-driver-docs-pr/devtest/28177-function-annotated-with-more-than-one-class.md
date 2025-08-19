@@ -1,9 +1,10 @@
 ---
-title: C28177 warning
+title: C28177 Warning
 description: Warning C28177 Function is annotated with more than one function class. All but one will be ignored.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28177"
+ms.topic: reference
 ---
 
 # C28177
@@ -12,12 +13,4 @@ f1_keywords:
 warning C28177: Function is annotated with more than one function class. All but one will be ignored.
 
 This warning can be generated when there is a chain of typedefs.
-
- 
-
- 
-
-
-
-
 

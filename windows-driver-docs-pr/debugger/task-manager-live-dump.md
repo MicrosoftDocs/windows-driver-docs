@@ -1,14 +1,15 @@
 ---
-title: Task Manager live memory dump
-description: This topic describes how to take a live kernel memory dump using task manger.
-ms.date: 02/15/2023
+title: Task Manager Live Memory Dump
+description: This topic describes how to take a live kernel memory dump using task manager.
+ms.date: 12/12/2024
+ms.topic: concept-article
 ---
 
 # Task Manager live memory dump
 
 ## Overview
 
-Now available in Windows Insider Preview builds in the Canary Channel (Build 25276 and higher) and Dev Channel (Build 23419 and higher), Task Manager can be used to create a live kernel memory dump. This is in addition to the existing capability of using Task Manager to create a memory dump of a specific process.
+Task Manager can be used to create a live kernel memory dump. This is in addition to the existing capability of using Task Manager to create a memory dump of a specific process.
 
 A live kernel memory dump contains a consistent snapshot of kernel memory (and optionally, other types of memory) and saves it to a dump file. Unlike other methods to manually generate a kernel memory dump, this method does not cause a system crash.
 
@@ -18,7 +19,9 @@ The option to create a live kernel memory dump is available on the *System* proc
 
 A *Full live kernel memory dump* contains active kernel memory, with optional inclusion of hypervisor memory and user-mode memory.  The options to capture hypervisor and user pages are available for full live kernel dumps.  Alternatively, a *Kernel stacks memory dump* is a smaller file, limited to kernel processor states and all kernel thread stacks.  
 
-For general information about live kernel memory dumps, see [Kernel Live Memory Dump Code Reference](bug-check-code-reference-live-dump.md).
+For general information about live kernel memory dumps, see [Kernel Live Memory Dump Code Reference](kernel-live-dump-code-reference.md).
+
+The Task Manager live dump feature was released in early 2023 and was first available in Windows Insider Preview builds in the Canary Channel (Build 25276 and higher) and Dev Channel (Build 23419 and higher) and in July 2023, is available in Windows [OS build 22621.1992](https://support.microsoft.com/topic/july-11-2023-kb5028185-os-build-22621-1992-605fa18f-bd49-41d8-80b1-245080e26c3d) and later.
 
 ## Create a live kernel memory dump of the system using Task Manager
 
@@ -34,7 +37,7 @@ To capture a live kernel memory dump using Task Manager, complete the following 
 
 5. From the pull down menu, select either a **Full live kernel memory dump** or a **Kernel Stacks memory dump**.
 
-![task manager live memory dump ui.](images/task-manager-live-dump-ui.png)
+:::image type="content" source="images/task-manager-live-dump-ui.png" alt-text="Screenshot of Task Manager live memory dump user interface.":::
 
 ## Creating a memory dump for a user-mode process
 
@@ -44,7 +47,7 @@ A similar procedure is used in Task Manager to create a memory dump of a process
 
 The live kernel memory dump file options are available under the Task Manager settings.
 
-![task manager live memory dump options ui.](images/task-manager-live-dump-options-ui.png)
+:::image type="content" source="images/task-manager-live-dump-options-ui.png" alt-text="Screenshot of Task Manager live memory dump advanced options user interface.":::
 
 The top button will revert the live kernel memory dump settings to their defaults.
 
@@ -107,9 +110,9 @@ For more information, see:
 
 - [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-- [!analyze](-analyze.md)
+- [!analyze](../debuggercmds/-analyze.md)
 
-- [Kernel Live Memory Dump Code Reference](bug-check-code-reference-live-dump.md)
+- [Kernel Live Memory Dump Code Reference](kernel-live-dump-code-reference.md)
 
 ## Bug Check Code: 0x161 - LIVE_SYSTEM_DUMP
 

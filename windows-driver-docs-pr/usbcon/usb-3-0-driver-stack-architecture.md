@@ -1,7 +1,8 @@
 ---
-title: USB host-side drivers in Windows
+title: USB Host-Side Drivers in Windows
 description: This article provides an overview of the Universal Serial Bus (USB) driver stack architecture.
-ms.date: 02/23/2023
+ms.date: 01/17/2024
+ms.topic: overview
 ---
 
 # USB host-side drivers in Windows
@@ -67,7 +68,7 @@ For more information, see [USB Generic Parent Driver (Usbccgp.sys)](usb-common-c
 
 ## WinUSB (Winusb.sys)
 
-Windows USB (WinUSB) is a Microsoft-provided generic driver for USB devices. WinUSB architecture consists of a kernel-mode driver (Winusb.sys) and a user-mode dynamic link library (Winusb.dll). For devices that don't require a custom function driver, Winusb.sys can be installed in the device's kernel-mode stack as the function driver. User-mode processes can then communicate with Winusb.sys by using a set of device I/O control requests or by calling **WinUsb\_Xxx** functions. For more information, see [WinUSB](winusb.md).
+Windows USB (WinUSB) is a Microsoft-provided generic driver for USB devices. WinUSB architecture consists of a kernel-mode driver (Winusb.sys) and a user-mode dynamic link library (Winusb.dll). For devices that don't require a custom function driver, Winusb.sys can be installed in the device's kernel-mode stack as the function driver. User-mode processes can then communicate with Winusb.sys by using a set of device I/O control requests or by calling **WinUsb\_Xxx** functions. For more information, see [Introduction to WinUSB for Developers](introduction-to-winusb-for-developers.md).
 
 In Windows 8, the Microsoft-provided information (INF) file for WinUSB, Winusb.inf, contains USB\\MS\_COMP\_WINUSB as a device identifier string. This allows Winusb.sys to get automatically loaded as the function driver for those devices that have a matching WinUSB compatible ID in the MS OS descriptor. Such devices are called WinUSB devices. Hardware manufacturers are not required to distribute an INF file for their WinUSB device, making the driver installation process simpler for the end user. For more information, see [WinUSB Device](automatic-installation-of-winusb.md).
 

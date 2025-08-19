@@ -2,6 +2,7 @@
 title: Fast Startup from a Low-Power State
 description: Fast Startup from a Low-Power State
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Fast Startup from a Low-Power State

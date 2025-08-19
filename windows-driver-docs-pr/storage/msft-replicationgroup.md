@@ -1,5 +1,5 @@
 ---
-title: MSFT\_ReplicationGroup class
+title: MSFT_ReplicationGroup Class
 description: Represents a consistency grouping of storage replicas.
 ms.assetid: C828E13D-0AC5-4E83-9BEE-982B4BB1D729
 keywords:
@@ -18,7 +18,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

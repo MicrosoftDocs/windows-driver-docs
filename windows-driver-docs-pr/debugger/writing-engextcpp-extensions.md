@@ -3,6 +3,7 @@ title: Writing EngExtCpp Extensions
 description: Writing EngExtCpp Extensions
 keywords: ["EngExtCpp extensions, writing"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Writing EngExtCpp Extensions
@@ -26,8 +27,3 @@ When an EngExtCpp extension is used with remote DbgEng interfaces, the WDbgExts 
  
 
  
-
-
-
-
-

@@ -2,6 +2,7 @@
 title: Using the SPB I/O Request Interface
 description: Starting with Windows 8, the SPB framework extension (SpbCx) is a system-supplied component that supports the SPB I/O request interface.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using the SPB I/O Request Interface
@@ -21,7 +22,7 @@ SpbCx cooperates with an SPB controller driver to handle I/O requests from drive
 
 Only drivers can send I/O requests to the I/O request interface of an SPB controller. Applications cannot directly send I/O requests to an SPB controller. Instead, an application can send I/O requests to the driver for an SPB-connected peripheral device, and then rely on the driver to send the SPB controller any I/O requests that might be required to transfer data to or from the device.
 
-Before a driver can send I/O requests to an SPB-connected peripheral device, the driver must open a open a logical connection to the device. To open this connection, the driver uses the connection ID that it received as a hardware resource from the Plug and Play manager. For more information, see [Connection IDs for SPB Peripheral Devices](./connection-ids-for-spb-connected-peripheral-devices.md).
+Before a driver can send I/O requests to an SPB-connected peripheral device, the driver must open a logical connection to the device. To open this connection, the driver uses the connection ID that it received as a hardware resource from the Plug and Play manager. For more information, see [Connection IDs for SPB Peripheral Devices](./connection-ids-for-spb-connected-peripheral-devices.md).
 
 SpbCx and the SPB controller driver jointly handle read and write requests for SPB-connected peripheral devices. In response to an [**IRP\_MJ\_READ**](/previous-versions/ff546883(v=vs.85)) request, the SPB controller transfers the specified number of bytes from a peripheral device to a driver-supplied buffer. In response to an [**IRP\_MJ\_WRITE**](/previous-versions//ff546904(v=vs.85)) request, the SPB controller transfers the specified number of bytes from a driver-supplied buffer to a peripheral device.
 

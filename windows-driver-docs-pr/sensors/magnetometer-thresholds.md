@@ -1,7 +1,7 @@
 ---
-title: Magnetometer thresholds
+title: Magnetometer Thresholds
 description: This topic provides information about the magnetometer thresholds.
-ms.date: 03/02/2023
+ms.date: 01/11/2024
 ms.topic: reference
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: C28141 warning
+title: C28141 Warning
 description: Warning C28141 The argument causes the IRQ Level to be set below the current IRQL, and this function cannot be used for that purpose.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -7,6 +7,7 @@ keywords:
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28141"
+ms.topic: reference
 ---
 
 # C28141
@@ -46,12 +47,4 @@ The following code example avoids this warning.
 KeRaiseIrql(DISPATCH_LEVEL, &OldIrql);
 KeLowerIrql(OldIrql);
 ```
-
- 
-
- 
-
-
-
-
 

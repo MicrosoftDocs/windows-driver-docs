@@ -1,10 +1,11 @@
 ---
-title: Accessing device properties
+title: Accessing Device Properties
 description: Provides information about accessing device properties.
 keywords:
 - device properties WDK device installations , accessing
 - accessing device properties WDK device installations
 ms.date: 08/15/2022
+ms.topic: concept-article
 ---
 
 # Accessing device properties

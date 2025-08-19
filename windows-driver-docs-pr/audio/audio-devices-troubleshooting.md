@@ -1,7 +1,8 @@
 ---
-title: Audio devices troubleshooting overview
+title: Audio Devices Troubleshooting Overview
 description: This section provides information on troubleshooting device drivers for device driver developers.
 ms.date: 10/28/2022
+ms.topic: concept-article
 ---
 
 # Audio devices troubleshooting overview

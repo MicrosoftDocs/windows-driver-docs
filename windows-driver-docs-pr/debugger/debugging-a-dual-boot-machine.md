@@ -3,6 +3,7 @@ title: Debugging a Dual-Boot Machine
 description: Debugging a Dual-Boot Machine
 keywords: ["dual-boot machines"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging a Dual-Boot Machine
@@ -20,8 +21,3 @@ On an x86 computer, you should also verify that boosect.ini exists. This file co
  
 
  
-
-
-
-
-

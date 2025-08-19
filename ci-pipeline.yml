@@ -1,0 +1,33 @@
+trigger:
+- main
+
+jobs:
+- job: MergeBranches
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - checkout: self
+    persistCredentials: true
+  - script: |
+      git config --global user.name "Ted Hudek"
+      git config --global user.email "tedhudek@users.noreply.github.com"
+      git checkout main
+      git checkout release-amethyst
+      git merge main --no-ff --no-commit
+      if [ $? -eq 0 ]; then
+        git commit -m "Merged main into release"
+        git push origin release-amethyst
+        git checkout live
+        git merge main --no-ff --no-commit
+        if [ $? -eq 0 ]; then
+          git commit -m "Merged main into live"
+          git push origin live
+        else
+          echo "Merge conflict when merging main to live"
+          exit 1
+        fi
+      else
+        echo "Merge conflict when merging main to release"
+        exit 1
+      fi
+    displayName: 'Merge main to release, then to live'

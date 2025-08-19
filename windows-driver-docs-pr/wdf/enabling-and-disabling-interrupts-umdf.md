@@ -2,6 +2,7 @@
 title: Enabling and Disabling Interrupts (UMDF 1)
 description: Enabling and Disabling Interrupts
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Enabling and Disabling Interrupts (UMDF 1)

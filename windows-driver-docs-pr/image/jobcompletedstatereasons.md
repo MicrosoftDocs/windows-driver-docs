@@ -1,5 +1,5 @@
 ---
-title: JobCompletedStateReasons element
+title: JobCompletedStateReasons Element
 description: The required JobCompletedStateReasons element is a collection of all additional information about how and why a scan job completed.
 keywords: ["JobCompletedStateReasons element Imaging Devices"]
 topic_type:

@@ -1,7 +1,7 @@
 ---
-title: Activity detection sensor data fields
+title: Activity Detection Sensor Data Fields
 description: This topic provides information about the data fields that are specific to the activity detection sensor.
-ms.date: 03/02/2023
+ms.date: 01/11/2024
 ms.topic: reference
 ---
 

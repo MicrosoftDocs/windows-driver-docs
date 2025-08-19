@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageEnclosureToPhysicalDisk class
+title: MSFT_StorageEnclosureToPhysicalDisk Class
 description: Association between StorageEnclosure and PhysicalDisk.
 ms.assetid: B2FDB260-CD0D-4481-B002-572D58D0CF84
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

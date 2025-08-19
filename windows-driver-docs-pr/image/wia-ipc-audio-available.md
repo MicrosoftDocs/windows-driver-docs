@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPC\_AUDIO\_AVAILABLE
-description: The WIA\_IPC\_AUDIO\_AVAILABLE property is obsolete and should not be used.
+title: WIA_IPC_AUDIO_AVAILABLE
+description: The WIA_IPC_AUDIO_AVAILABLE property is obsolete and should not be used.
 keywords: ["WIA_IPC_AUDIO_AVAILABLE Imaging Devices"]
 topic_type:
 - apiref
@@ -11,34 +11,23 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 05/04/2023
 ---
 
-# WIA\_IPC\_AUDIO\_AVAILABLE
+# WIA_IPC_AUDIO_AVAILABLE
 
 
-The WIA\_IPC\_AUDIO\_AVAILABLE property is obsolete and should not be used.
+The WIA_IPC_AUDIO_AVAILABLE property is obsolete and should not be used.
 
-Property Type: VT\_I4
+Property Type: VT_I4
 
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** wiadef.h (include Wiadef.h)
 
  
 

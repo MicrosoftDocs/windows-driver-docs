@@ -2,6 +2,8 @@
 description: Using the WpdInfo Tool
 title: Using the WpdInfo Tool
 ms.date: 03/03/2023
+ms.topic: concept-article
+ms.custom: sfi-image-nochange
 ---
 
 # Using the WpdInfo Tool

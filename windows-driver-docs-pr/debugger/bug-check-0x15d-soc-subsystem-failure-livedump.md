@@ -57,7 +57,7 @@ The SOC\_SUBSYSTEM\_FAILURE\_LIVEDUMP live dump has a value of 0x0000015D. This 
 
 ## Resolution
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 Use the provided nt!SOC\_SUBSYSTEM\_FAILURE\_DETAILS structure to dump the failure data using the dt command and the address provided by Arg1.
 
@@ -72,7 +72,7 @@ Use the provided nt!SOC\_SUBSYSTEM\_FAILURE\_DETAILS structure to dump the failu
 
 Work with SoC vendor to further parse the data, including the optional vendor supplied general purpose data block.
 
-You may want to examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command. You can specify the processor number to examine the stacks on all processors.
+You may want to examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](../debuggercmds/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command. You can specify the processor number to examine the stacks on all processors.
 
 You can also set a breakpoint in the code leading up to this stop code and attempt to single step forward into the faulting code.
 
@@ -88,7 +88,7 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   You can try running the hardware diagnostics supplied by the system manufacturer.
 
--   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
+-   For additional general troubleshooting information, see [**Analyze Bug Check Blue Screen Data**](blue-screen-data.md).
 
 ## Requirements
 
@@ -111,6 +111,6 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 ## See Also
 
-[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+[Kernel Live Dump Code Reference](kernel-live-dump-code-reference.md)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)

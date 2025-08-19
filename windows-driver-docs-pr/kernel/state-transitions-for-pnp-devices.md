@@ -3,6 +3,7 @@ title: State Transitions for PnP Devices
 description: State Transitions for PnP Devices
 keywords: ["PnP WDK kernel , state transitions", "Plug and Play WDK kernel , state transitions", "state transitions WDK PnP", "device states WDK PnP"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # State Transitions for PnP Devices

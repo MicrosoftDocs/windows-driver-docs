@@ -13,6 +13,7 @@ keywords:
 - converting trace log format
 - formats WDK audio , trace logs
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating Text Versions of Trace Logs

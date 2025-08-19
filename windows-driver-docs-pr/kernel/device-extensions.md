@@ -1,13 +1,14 @@
 ---
 title: Device Extensions
-description: Device Extensions
+description: Device extensions
 keywords: ["device objects WDK kernel , device extensions", "device extensions WDK kernel", "extensions WDK device objects", "higher-level driver extensions WDK kernel", "lower-level driver extensions WDK kernel", "intermediate driver extensions WDK kernel"]
-ms.date: 07/21/2021
+ms.date: 05/12/2025
+ms.topic: concept-article
 ---
 
-# Device Extensions
+# Device extensions
 
-For most intermediate and lowest-level drivers, the device extension is the most important data structure associated with a device object. Its internal structure is driver-defined, and it is typically used to:
+For most intermediate and lowest-level drivers, the device extension is the most important data structure associated with a device object. Its internal structure is driver-defined, and it's typically used to:
 
 - Maintain device state information.
 
@@ -23,7 +24,7 @@ The I/O manager's [**IoCreateDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-
 
 Every standard driver routine that receives an IRP also receives a pointer to a device object representing the target device for the requested I/O operation. These driver routines can access the corresponding device extension through this pointer. Usually, a *DeviceObject* pointer is also an input parameter to a lowest-level driver's ISR.
 
-The following figure shows a representative set of driver-defined data for the device extension of a lowest-level driver's device object. A higher-level driver would not provide storage for an interrupt object pointer returned by [**IoConnectInterrupt**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterrupt) and passed to [**KeSynchronizeExecution**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesynchronizeexecution) and [**IoDisconnectInterrupt**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iodisconnectinterrupt). However, a higher-level driver would provide storage for the timer and DPC objects shown in the following figure if the driver has a *CustomTimerDpc* routine. A higher-level driver also might provide storage for an executive spin lock and interlocked work queue.
+The following figure shows a representative set of driver-defined data for the device extension of a lowest-level driver's device object. A higher-level driver wouldn't provide storage for an interrupt object pointer returned by [**IoConnectInterrupt**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterrupt) and passed to [**KeSynchronizeExecution**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesynchronizeexecution) and [**IoDisconnectInterrupt**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iodisconnectinterrupt). However, a higher-level driver would provide storage for the timer and DPC objects shown in the following figure if the driver has a *CustomTimerDpc* routine. A higher-level driver also might provide storage for an executive spin lock and interlocked work queue.
 
 ![diagram illustrating an example device extension for a lowest-level driver.](images/3devext.png)
 
@@ -43,8 +44,8 @@ While a higher-level driver can read data from the next-lower-level driver's dev
 
 - Never attempt to access the lower driver's device extension for the following reasons:
 
-  - There is no safe way to synchronize access to a single device extension between two drivers.
+  - There's no safe way to synchronize access to a single device extension between two drivers.
 
-  - A pair of drivers that implement such a backdoor communication scheme cannot be upgraded individually, cannot have an intermediate driver inserted between them without changing existing driver source, and cannot be recompiled and moved readily from one Windows platform to the next.
+  - A pair of drivers that implement such a backdoor communication scheme can't be upgraded individually, can't have an intermediate driver inserted between them without changing existing driver source, and can't be recompiled and moved readily from one Windows platform to the next.
 
 To preserve their interoperability with lower-level drivers from one Windows platform or version to the next, higher-level drivers either must reuse the IRPs given them or must create new IRPs, and they must use [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to communicate requests to lower-level drivers.

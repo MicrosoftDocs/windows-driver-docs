@@ -6,6 +6,7 @@ keywords:
 - printer driver installations WDK , manifests
 - manifests WDK printer
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print Driver Manifests

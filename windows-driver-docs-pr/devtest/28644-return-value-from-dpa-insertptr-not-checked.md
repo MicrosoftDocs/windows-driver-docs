@@ -1,9 +1,10 @@
 ---
-title: C28644 warning
+title: C28644 Warning
 description: Warning C28644 Return value from DPA_InsertPtr not checked.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28644"
+ms.topic: reference
 ---
 
 # C28644

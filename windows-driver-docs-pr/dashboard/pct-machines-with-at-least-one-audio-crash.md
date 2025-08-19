@@ -1,8 +1,8 @@
 ---
 title: Percent of machines with at least one audio crash
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have at least one audio crash in AudioSrv.dll or AudioDG.exe
-ms.topic: article
 ms.date: 11/19/2022
+ms.topic: reference
 ---
 
 # Percent of machines with at least one audio crash
@@ -20,7 +20,7 @@ See the "Audio user-mode reliability" section at [Audio measures](audio-measures
 |**Measurement criteria**|Percent of machines|
 |**Minimum population**|1000 machines|
 |**Passing criteria**|<=0.4 % of machines with at least one crash in AudioSrv<br><1% of machines with at least one crash in either AudioSrv or AudioDG|
-|**Measure IDs**|*23032999 (Legacy), 38373370 - both AudioSrv and AudioDG|
+|**Measure IDs**| 38373370 - both AudioSrv and AudioDG|
 
 ## Calculation
 

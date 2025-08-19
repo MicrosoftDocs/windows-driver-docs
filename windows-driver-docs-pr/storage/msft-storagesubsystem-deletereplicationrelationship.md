@@ -1,5 +1,5 @@
 ---
-title: DeleteReplicationRelationship method of the MSFT\_StorageSubSystem class
+title: DeleteReplicationRelationship Method of the MSFT_StorageSubSystem Class
 description: Deletes a replication relationship between groups. The groups themselves are deleted if they have no more relationships with other groups. The method is only available on subsystems that support fully discovered replication.
 ms.assetid: FCACCFF1-A80C-4B51-888A-90E31760C067
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

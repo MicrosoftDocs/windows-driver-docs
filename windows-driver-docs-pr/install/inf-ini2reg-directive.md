@@ -1,5 +1,5 @@
 ---
-title: INF Ini2Reg directive
+title: INF Ini2Reg Directive
 description: An Ini2Reg directive references one or more named sections in which lines or sections from a supplied INI file are moved into the registry. This creates or replaces one or more value entries under a specified key.
 keywords:
 - INF Ini2Reg Directive Device and Driver Installation
@@ -10,13 +10,12 @@ api_name:
 - INF Ini2Reg Directive
 api_type:
 - NA
-ms.date: 07/11/2022
+ms.date: 07/17/2023
 ---
 
 # INF Ini2Reg directive
 
-> [!CAUTION]
-> If you are building a universal or Windows Driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md) and [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).
+[!INCLUDE [Caution invalid INF directive](../includes/inf-directive-invalid-22h2.md)]
 
 An **Ini2Reg** directive references one or more named sections in which lines or sections from a supplied INI file are moved into the registry. This creates or replaces one or more value entries under a specified key.
 
@@ -80,7 +79,7 @@ If the specified subkey already exists in the registry, replace its value entry 
 
 The **Ini2Reg** directive is valid in any of the sections shown in the formal syntax statement. This directive is also valid in INF-writer-defined sections referenced by an [**AddInterface**](inf-addinterface-directive.md) directive or referenced in an [**InterfaceInstall32**](inf-interfaceinstall32-section.md) section.
 
-If an INF file is used to install devices on Windows XP and later versions of Windows, the INF file should not contain **Ini2Reg** directives. INF files that contain **Ini2Reg** directives will not pass ["Designed For Windows" logo testing](/windows-hardware/drivers), will not receive a digital signature, and therefore will be untrusted by Windows (see [How Windows Selects Drivers](./how-windows-selects-a-driver-for-a-device.md)).
+If an INF file is used to install devices on Windows XP and later versions of Windows, the INF file should not contain **Ini2Reg** directives. INF files that contain **Ini2Reg** directives will not pass "Designed For Windows" logo testing, will not receive a digital signature, and therefore will be untrusted by Windows (see [How Windows Selects Drivers](./how-windows-selects-a-driver-for-a-device.md)).
 
 Each *ini-to-registry-section* name must be unique to the INF file. Each INF-writer-created section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 

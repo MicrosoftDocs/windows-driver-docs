@@ -1,7 +1,8 @@
 ---
-title: Test automation tools
+title: Test Automation Tools
 description: GPIO test automation uses the MITT platform.
 ms.date: 10/17/2018
+ms.topic: how-to
 ---
 
 # Test automation tools

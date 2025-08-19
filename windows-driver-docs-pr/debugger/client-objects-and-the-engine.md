@@ -3,6 +3,7 @@ title: Client Objects and the Engine
 description: Client Objects and the Engine
 keywords: ["EngExtCpp extensions, client objects"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Client Objects and the Engine
@@ -58,7 +59,7 @@ An EngExtCpp extension interacts with the [debugger engine](introduction.md#debu
 
  
 
-The following members provide access to later versions of the engine API interfaces. These interfaces may not be available in all versions of the debugger engine. If they are not available, any attempt to use them will result in a exception being thrown.
+The following members provide access to later versions of the engine API interfaces. These interfaces may not be available in all versions of the debugger engine. If they are not available, any attempt to use them will result in an exception being thrown.
 
 <table>
 <colgroup>

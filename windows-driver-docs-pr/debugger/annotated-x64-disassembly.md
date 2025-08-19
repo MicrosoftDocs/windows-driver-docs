@@ -3,6 +3,7 @@ title: Annotated x64 Disassembly
 description: Annotated x64 Disassembly
 keywords: ["x64 processor, annotated disassembly"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Annotated x64 Disassembly
@@ -329,8 +330,3 @@ The return value is stored in **rax**, and then the non-volatile registers are r
 [X86-64 Wikipedia](https://en.wikipedia.org/wiki/X86-64)
 
  
-
-
-
-
-

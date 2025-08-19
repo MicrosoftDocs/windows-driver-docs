@@ -1,7 +1,7 @@
 ---
-title: Accelerometer thresholds
+title: Accelerometer Thresholds
 description: This topic provides information about the accelerometer thresholds.
-ms.date: 03/02/2023
+ms.date: 01/11/2024
 ms.topic: reference
 ---
 
@@ -27,4 +27,4 @@ Accelerometer drivers must always report one sample reading immediately after th
 
 ## Related topics
 
-[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
+- [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)

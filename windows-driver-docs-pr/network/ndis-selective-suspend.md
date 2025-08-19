@@ -2,6 +2,7 @@
 title: Introduction to NDIS Selective Suspend
 description: Introduction to NDIS Selective Suspend
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Introduction to NDIS Selective Suspend

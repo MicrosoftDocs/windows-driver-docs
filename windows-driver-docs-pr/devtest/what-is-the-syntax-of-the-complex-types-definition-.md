@@ -1,7 +1,8 @@
 ---
-title: What is the syntax of the complex types definition
+title: What is the Syntax of the Complex Types Definition
 description: What is the syntax of the complex types definition
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # What is the syntax of the complex types definition?

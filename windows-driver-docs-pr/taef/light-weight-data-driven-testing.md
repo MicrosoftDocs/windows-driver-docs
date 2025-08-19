@@ -2,6 +2,7 @@
 title: Light-weight Data-driven Testing
 description: Light-weight Data-driven Testing
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # <span id="taef.light-weight_data-driven_testing"></span>Light-weight Data-driven Testing
@@ -85,7 +86,7 @@ While working with managed code, the specification and retrieval of data set is 
 
 Just like in the case of table based data-driven tests, sets of data specified as metadata, will allow retrieval via TestContext.DataRow.**Note that to keep the data-driven test light weight, the parameter type will always be WEX::Common::String (in native code) and String(in managed code)**
 
-**If multiple of data values are specified, a catersian product of all possible values will be obtained and the test method will be invoked for each combination.**
+**If multiple of data values are specified, a cartesian product of all possible values will be obtained and the test method will be invoked for each combination.**
 
 It is further possible to have some metadata sets (like [ThreadingModel metadata sets](threading-models.md)) as well as data sets specified for the same test method. In such a case a combinatorial expansion of all metadata sets and data sets will be produced by TAEF and the test methods in concern will be invoked with every combination.
 
@@ -132,7 +133,7 @@ Lines 8, 13, and 18 show the metadata set that has been specified for this light
 
 You can select on the Data value or name just like you could in Table based data-driven tests. For example you can select SetsOfDataTest\#metadataSet1 by a selection query like **/select:@Data:Color='Maroon'** or **/name:\*\#metadataSet1**
 
-For quick reference, /listproperties output from the manged test example is shown below:
+For quick reference, /listproperties output from the managed test example is shown below:
 
 ``` syntax
 te Examples\CSharp.DataDriven.Example.dll /name:*SetsOfMetadataTest* /listproperties

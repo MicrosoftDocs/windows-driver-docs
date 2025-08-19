@@ -1,7 +1,8 @@
 ---
-title: MSiSCSI\_LB\_Operations WMI Class
+title: MSiSCSI_LB_Operations WMI Class
 description: MSiSCSI\_LB\_Operations WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_LB\_Operations WMI Class
@@ -43,7 +44,7 @@ class MSiSCSI_LB_Operations {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces one of the [MSiSCSI\_LB\_Operations](/windows-hardware/drivers/ddi/index) data structures.
+When the WMI tool suite compiles the preceding class definition, it produces one of the [MSiSCSI\_LB\_Operations](msiscsi-lb-operations-wmi-class.md) data structures.
 
  
 

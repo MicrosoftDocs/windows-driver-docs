@@ -8,6 +8,7 @@ keywords:
 - framework objects WDK KMDF , device access controls
 - security descriptors WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Controlling Device Access in KMDF Drivers

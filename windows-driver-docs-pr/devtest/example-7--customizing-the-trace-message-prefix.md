@@ -7,6 +7,7 @@ keywords:
 - trace message prefix WDK Tracefmt
 - custom trace message prefix WDK Tracefmt
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 7: Customizing the Trace Message Prefix
@@ -63,12 +64,4 @@ tracedrv_c264: TracedrvDispatchDeviceControl: 0af4.0c64: 07/25/2003-13:55:39.998
 **Note**   If you are setting the trace prefix in a command or batch file, where the percent symbol represents a variable for a command-line parameter, use two consecutive percent symbols for the prefix variables. For example, to include the system time in the prefix, type **%%4**.
 
  
-
- 
-
- 
-
-
-
-
 

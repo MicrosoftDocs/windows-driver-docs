@@ -3,6 +3,7 @@ title: Manifest File Placement
 description: Manifest File Placement
 keywords: ["LogViewer, manifest, file placement"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Manifest File Placement
@@ -30,8 +31,3 @@ All additional manifest files must reside in the same directory as Main.h.
  
 
  
-
-
-
-
-

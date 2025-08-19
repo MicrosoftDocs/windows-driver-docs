@@ -7,6 +7,7 @@ keywords:
 - protocol drivers WDK networking , header-data split
 - filter drivers WDK networking , header-data split
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting Header-Data Split in Protocol Drivers and Filter Drivers

@@ -1,7 +1,8 @@
 ---
+title: Support for Capability Commands (WpdServiceSampleDriver Sample)
 description: Support for capability commands (WpdServiceSampleDriver sample)
-title: Support for capability commands (WpdServiceSampleDriver sample)
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Support for capability commands (WpdServiceSampleDriver sample)

@@ -1,7 +1,8 @@
 ---
-title: Stampinf task
+title: Stampinf Task
 description: The Windows Driver Kit (WDK) provides the StampInf task so that you can run the stampinf.exe tool when you build your driver using MSBuild. For information about the stampinf.exe tool, see Stampinf.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Stampinf task
@@ -149,12 +150,4 @@ In the example above, MSBuild invokes stampinf.exe on both a.inf and b.inf, but 
 </table>
 
  
-
- 
-
- 
-
-
-
-
 

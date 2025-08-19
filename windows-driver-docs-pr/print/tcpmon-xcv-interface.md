@@ -1,5 +1,5 @@
 ---
-title: TCPMON Xcv interface
+title: TCPMON Xcv Interface
 description: Provides information about TCPMON Xcv interface.
 keywords:
 - print monitors WDK, TCPMON Xcv
@@ -7,6 +7,7 @@ keywords:
 - Xcv interface WDK print
 - TCPMON Xcv interface WDK print
 ms.date: 09/08/2022
+ms.topic: reference
 ---
 
 # TCPMON Xcv interface

@@ -2,6 +2,7 @@
 title: Signing a Catalog File with a Commercial Release Certificate
 description: Signing a Catalog File with a Commercial Release Certificate
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Signing a Catalog File with a Commercial Release Certificate

@@ -6,6 +6,7 @@ keywords:
 - NT Kernel Logger trace sessions WDK
 - Windows Kernel Trace provider WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # NT Kernel Logger Trace Session
@@ -30,12 +31,4 @@ The NT Kernel Logger provider cannot log to other trace sessions, and other [tra
 To format trace messages from the NT Kernel Logger trace session, use Tracefmt with the system.tmf file. This file is included in the WDK.
 
 To trace kernel events during system boot, convert a Global Logger trace session, which traces during system boot, to an NT Kernel Logger trace session. For information, see [Boot-time Global Logger Session](boot-time-global-logger-session.md)
-
- 
-
- 
-
-
-
-
 

@@ -6,6 +6,7 @@ keywords:
 - receiving data WDK networking
 - indications WDK CoNDIS WAN
 ms.date: 03/02/2023
+ms.topic: how-to
 ---
 
 # Indicating Received Data from a CoNDIS WAN Miniport Driver

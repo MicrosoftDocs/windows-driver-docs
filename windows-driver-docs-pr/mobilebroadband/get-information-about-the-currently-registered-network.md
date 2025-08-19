@@ -1,7 +1,8 @@
 ---
-title: Get information about the currently registered network
+title: Get Information About the Currently Registered Network
 description: Get information about the currently registered network
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Get information about the currently registered network
@@ -19,7 +20,7 @@ if (myNetwork != null && myNetwork.registeredDataClass == DataClasses.LteAdvance
 }
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Common tasks for mobile broadband Windows Runtime APIs](./create-a-mobilebroadbandaccount-object.md)

@@ -3,6 +3,7 @@ title: Using AgeStore
 description: Using AgeStore
 keywords: ["AgeStore, using"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using AgeStore
@@ -66,8 +67,3 @@ The FAT32 file system always stores LAT information (although only the date, and
  
 
  
-
-
-
-
-

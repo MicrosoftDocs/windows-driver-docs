@@ -2,6 +2,7 @@
 title: Example 6 Clearing All Flags
 description: Example 6 Clearing All Flags
 ms.date: 10/12/2018
+ms.topic: concept-article
 ---
 
 # Example 6: Clearing All Flags
@@ -81,8 +82,3 @@ The command has no effect because it adds the value 0 to system-wide flag entry.
  
 
  
-
-
-
-
-

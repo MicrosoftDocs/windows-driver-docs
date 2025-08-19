@@ -1,11 +1,12 @@
 ---
-title: Print spooler support for printer Directory Services
+title: Print Spooler Support for Printer Directory Services
 description: Provides information about print spooler support for printer Directory Services.
 keywords:
 - Directory Services WDK printer
 - print spooler Directory Services support WDK
 - publishing WDK printer
 ms.date: 09/16/2022
+ms.topic: concept-article
 ---
 
 # Print spooler support for printer Directory Services

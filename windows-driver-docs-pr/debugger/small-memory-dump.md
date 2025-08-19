@@ -3,6 +3,7 @@ title: Small Memory Dump
 description: Small Memory Dump
 keywords: ["dump file, Small Memory Dump", "Small Memory Dump"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Small Memory Dump
@@ -27,7 +28,7 @@ This dump file includes the following:
 
 -   A list of loaded drivers.
 
-In Windows XP and later versions of Windows, the following items are also included:
+The following items are also included:
 
 -   A list of loaded modules and unloaded modules.
 
@@ -51,9 +52,3 @@ If a second bug check occurs and a second Small Memory Dump file is created, the
  
 
  
-
-
-
-
-
-

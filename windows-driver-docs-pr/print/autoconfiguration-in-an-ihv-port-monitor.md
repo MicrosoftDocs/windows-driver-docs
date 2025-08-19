@@ -1,11 +1,12 @@
 ---
-title: Autoconfiguration in an IHV port monitor
+title: Autoconfiguration in an IHV Port Monitor
 description: Provides information about how to use autoconfiguration in an IHV port monitor.
 keywords:
 - IHV port monitor autoconfiguration WDK printer
 - autoconfiguration WDK printer, IHV port monitors
 - printer autoconfiguration WDK printer, IHV port monitors
 ms.date: 09/07/2022
+ms.topic: best-practice
 ---
 
 # Autoconfiguration in an IHV port monitor

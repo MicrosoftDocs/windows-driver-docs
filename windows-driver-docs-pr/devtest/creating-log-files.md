@@ -5,6 +5,7 @@ keywords:
 - log files WDK Driver Verifier
 - Driver Verifier WDK , log files
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating Log Files
@@ -20,12 +21,4 @@ Log files are created from the Verifier utility by using the **/log** parameter.
 Each entry will contain both global counters and individual counters, just as with the **verifier /query** command.
 
 For an explanation of these statistics, see [Monitoring Global Counters](monitoring-global-counters.md) and [Monitoring Individual Counters](monitoring-individual-counters.md).
-
- 
-
- 
-
-
-
-
 

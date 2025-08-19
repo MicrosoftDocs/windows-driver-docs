@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageObject class
+title: MSFT_StorageObject Class
 description: MSFT\_StorageObject is the base class for all storage object classes.
 ms.assetid: 0B9FF9B2-98AE-49C7-AD19-501FE30DE723
 keywords:
@@ -20,7 +20,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

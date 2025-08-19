@@ -6,6 +6,7 @@ keywords:
 - removing trace sessions
 - TraceView WDK , removing trace
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Removing a Trace Session
@@ -22,12 +23,4 @@ When you *remove* a trace session from the TraceView window, TraceView deletes t
 You can remove a real-time trace session or a trace log session from the Trace Session List.
 
 To remove a real-time trace session, the session must be [stopped](stopping-a-trace-session.md) (that is, all providers must be disabled). If any providers in the session are still running (that is, are enabled), the **Remove Log Session** command is dimmed.
-
- 
-
- 
-
-
-
-
 

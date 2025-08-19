@@ -1,7 +1,8 @@
 ---
-title: Writing a WDTF Simple I/O plug-in for your device
+title: Writing a WDTF Simple I/O Plug-In for your Device
 description: To get the most benefit from the Device Fundamental tests, your device should have a Simple I/O plug-in that can perform simple I/O to your device.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing a WDTF Simple I/O plug-in for your device

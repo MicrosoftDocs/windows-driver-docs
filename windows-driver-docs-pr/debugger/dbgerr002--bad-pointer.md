@@ -3,6 +3,7 @@ title: dbgerr002 Bad Pointer
 description: dbgerr002 Bad Pointer
 keywords: ["dbgerr002", "Bad pointer (dbgerr002)"]
 ms.date: 05/23/2017
+ms.topic: error-reference
 ---
 
 # dbgerr002: Bad Pointer
@@ -26,8 +27,3 @@ If your symbol store was created by using SymStore, you can find the full path t
  
 
  
-
-
-
-
-

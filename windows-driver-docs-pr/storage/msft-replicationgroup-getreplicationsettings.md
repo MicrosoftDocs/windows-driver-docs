@@ -1,5 +1,5 @@
 ---
-title: GetReplicationSettings method of the MSFT\_ReplicationGroup class
+title: GetReplicationSettings Method of the MSFT_ReplicationGroup Class
 description: Returns the replication settings for this replication group.
 ms.assetid: 6A4144F4-C432-439C-B0F1-DAB8E8636ECC
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

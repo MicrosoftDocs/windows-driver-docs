@@ -2,7 +2,8 @@
 title: Analyzing a Kernel-Mode Dump File
 description: Analyzing a Kernel-Mode Dump File
 keywords: ["dump file, analyzing a kernel-mode dump file"]
-ms.date: 06/05/2020
+ms.date: 12/13/2024
+ms.topic: concept-article
 ---
 
 # Analyzing a Kernel-Mode Dump File
@@ -15,7 +16,7 @@ This section includes:
 
 ### Installing Symbol Files
 
-Regardless of which tool you use, you need to access the symbol files for the version of Windows that generated the dump file. These files will be used by the debugger you choose to use to analyze the dump file. For information about working with the symbol server, see see [Microsoft Public Symbols](microsoft-public-symbols.md).
+Regardless of which tool you use, you need to access the symbol files for the version of Windows that generated the dump file. These files will be used by the debugger you choose to use to analyze the dump file. For information about working with the symbol server, see [Microsoft Public Symbols](microsoft-public-symbols.md).
 
 ### DumpExam
 

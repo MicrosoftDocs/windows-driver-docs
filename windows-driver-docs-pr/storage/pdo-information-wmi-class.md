@@ -1,7 +1,8 @@
 ---
-title: PDO\_INFORMATION WMI Class
+title: PDO_INFORMATION WMI Class
 description: PDO\_INFORMATION WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # PDO\_INFORMATION WMI Class

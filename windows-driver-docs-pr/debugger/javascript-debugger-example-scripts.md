@@ -2,6 +2,7 @@
 title: JavaScript Debugger Example Scripts
 description: This topic provides the information on user and kernel mode JavaScript code samples, such as the Data Filtering Plug and Play Device Tree sample.
 ms.date: 02/02/2021
+ms.topic: example-scenario
 ---
 
 # JavaScript Debugger Example Scripts
@@ -44,7 +45,7 @@ function sayHi()
 }
 ```
 
-3. Use the [**.scriptrun (Run Script)**](-scriptrun--run-script-.md)command to load and execute the script. The .scriptrun command will run code at the root/top and the code under the function names *initializeScript* and *invokeScript*.
+3. Use the [**.scriptrun (Run Script)**](../debuggercmds/-scriptrun--run-script-.md)command to load and execute the script. The .scriptrun command will run code at the root/top and the code under the function names *initializeScript* and *invokeScript*.
 
 ```dbgcmd
 0:000> .scriptrun c:\WinDbg\Scripts\HelloWorld.js
@@ -107,7 +108,7 @@ Either load a kernel dump file or establish a kernel mode connection to a target
 JavaScript script successfully loaded from 'c:\WinDbg\Scripts\processarchitecture.js'
 ```
 
-Use the [dx](dx--display-visualizer-variables-.md) command to display the process architecture of the current process.
+Use the [dx](../debuggercmds/dx--display-visualizer-variables-.md) command to display the process architecture of the current process.
 
 ```dbgcmd
 2: kd> dx @$curprocess
@@ -132,7 +133,7 @@ This sample code filters the device node tree to display just devices that conta
 
 This script is intended to support live kernel mode debugging.
 
-You can use the !devnode 0 1 command to display information about the device tree. For more information, see [**!devnode**](-devnode.md).
+You can use the !devnode 0 1 command to display information about the device tree. For more information, see [**!devnode**](../debuggercmds/-devnode.md).
 
 ```javascript
 // PlugAndPlayDeviceTree.js
@@ -775,9 +776,3 @@ Debugger.State.Scripts.titleFinder.Contents.findTitleWithLINQ() : C:\Windows\Sys
  
 
  
-
-
-
-
-
-

@@ -1,6 +1,6 @@
 ---
-title: StorPortAllocatePool rule (storport)
-description: This rule verifies that the miniport must not attempt to call StorPortFreePool on an deallocated buffer.
+title: StorPortAllocatePool Rule (Storport)
+description: This rule verifies that the miniport must not attempt to call StorPortFreePool on a deallocated buffer.
 ms.date: 05/21/2018
 keywords: ["StorPortAllocatePool rule (storport)"]
 topic_type:
@@ -15,7 +15,7 @@ api_type:
 # StorPortAllocatePool rule (storport)
 
 
-This rule verifies that the miniport must not attempt to call [**StorPortFreePool**](/windows-hardware/drivers/ddi/storport/nf-storport-storportfreepool) on an deallocated buffer.
+This rule verifies that the miniport must not attempt to call [**StorPortFreePool**](/windows-hardware/drivers/ddi/storport/nf-storport-storportfreepool) on a deallocated buffer.
 
 **Driver model: Storport**
 

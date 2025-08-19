@@ -1,7 +1,8 @@
 ---
-title: ISCSI\_ConnectionStaticInfo WMI Class
+title: ISCSI_ConnectionStaticInfo WMI Class
 description: ISCSI\_ConnectionStaticInfo WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # ISCSI\_ConnectionStaticInfo WMI Class

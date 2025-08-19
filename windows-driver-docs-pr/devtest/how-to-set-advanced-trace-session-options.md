@@ -1,9 +1,10 @@
 ---
-title: How to set advanced trace session options
+title: How to Set Advanced Trace Session Options
 description: How to set advanced trace session options
 keywords:
 - trace sessions WDK , advanced options
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How to set advanced trace session options
@@ -22,12 +23,4 @@ Use the following procedure to set advanced trace session options while you are 
 5.  On the **Log Session Options** page, set the basic trace session options, if desired.
 
 6.  Click the **Advanced Log Session Options** button.
-
- 
-
- 
-
-
-
-
 

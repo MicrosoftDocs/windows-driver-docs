@@ -1,5 +1,5 @@
 ---
-title: GetSupportedOperations method of the MSFT\_ReplicationCapabilities class
+title: GetSupportedOperations Method of the MSFT_ReplicationCapabilities Class
 description: Returns, for a given ReplicationType, the supported operations on a storage synchronized association that can be supplied to the ModifyReplicaSynchronization operation.
 ms.assetid: 6D3911FC-CA5B-418D-878F-6630871C3B90
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

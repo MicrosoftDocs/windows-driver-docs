@@ -2,6 +2,7 @@
 title: UsePositionLock
 description: The UsePositionLock registry value changes how PortCls serializes its I/O.
 ms.date: 09/29/2022
+ms.topic: concept-article
 ---
 
 # UsePositionLock

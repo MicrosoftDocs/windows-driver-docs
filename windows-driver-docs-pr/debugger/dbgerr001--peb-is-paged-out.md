@@ -3,6 +3,7 @@ title: dbgerr001 PEB is Paged Out
 description: dbgerr001 PEB is Paged Out
 keywords: ["dbgerr001", "PEB is paged out (dbgerr001)"]
 ms.date: 05/23/2017
+ms.topic: error-reference
 ---
 
 # dbgerr001: PEB is Paged Out
@@ -28,8 +29,3 @@ Without this data structure, the debugger cannot determine what images the symbo
  
 
  
-
-
-
-
-

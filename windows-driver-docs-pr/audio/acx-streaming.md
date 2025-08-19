@@ -1,16 +1,14 @@
 ---
-title: ACX streaming
+title: ACX Streaming
 description: This topic provides a summary of the ACX streaming and the associated buffering, which is critical to a glitch free audio experience.
-ms.date: 04/19/2023
+ms.date: 07/17/2024
 ms.localizationpriority: medium
+ms.topic: concept-article
 ---
 
 # ACX streaming
 
->[!IMPORTANT]
-> Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-This topic discusses ACX streaming and the associated buffering, which is critical to a glitch free audio experience. It describes the the mechanisms used by the driver to communicate about the stream state and manage the buffer for the stream. For a list of common ACX audio terms and an introduction to ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md).
+This topic discusses ACX streaming and the associated buffering, which is critical to a glitch free audio experience. It describes the mechanisms used by the driver to communicate about the stream state and manage the buffer for the stream. For a list of common ACX audio terms and an introduction to ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md).
 
 ## ACX streaming types
 
@@ -84,7 +82,7 @@ The driver will also add an ACXAUDIOENGINE element to streams created for offloa
 
 This diagram shows a multi-stack ACX driver.
 
-![diagram illustrating three boxes with a DSP, CODEC and AMP and a kernel streaming interface shown on top](images/audio-acx-multi-stack-kernel-streaming.png)
+:::image type="content" source="images/audio-acx-multi-stack-kernel-streaming.png" alt-text="Diagram illustrating DSP, CODEC, and AMP boxes with a kernel streaming interface on top.":::
 
 Each ACX driver controls a separate portion of the audio hardware and could be provided by a different vendor. ACX provides a compatible kernel streaming interface to allow applications to run as is.
 
@@ -202,7 +200,162 @@ When exposing support for Large Buffers, the driver will also provide a callback
   
 The packet size for stream buffer allocation is determined based on the minimum and maximum.
 
-Since the minimum and maximum buffer sizes may be volatile, the driver can fail the packet allocation call if the minimum and maximum have changed.  
+Since the minimum and maximum buffer sizes may be volatile, the driver can fail the packet allocation call if the minimum and maximum have changed.
+
+### Specifying ACX buffer constraints
+
+To specify ACX buffer constraints, ACX drivers can use the KS/PortCls properties setting - [KSAUDIO_PACKETSIZE_CONSTRAINTS2](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints2) and the [KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT structure](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_signalprocessingmode_constraint).
+
+The following code sample shows how to set buffer size constraints for WaveRT buffers for different signal processing modes.
+
+```cpp
+//
+// Describe buffer size constraints for WaveRT buffers
+// Note: 10msec for each of the Modes is the default system behavior.
+//
+static struct
+{
+    KSAUDIO_PACKETSIZE_CONSTRAINTS2                 TransportPacketConstraints;         // 1
+    KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT    AdditionalProcessingConstraints[4]; // + 4 = 5
+} DspR_RtPacketSizeConstraints =
+{
+    {
+        10 * HNSTIME_PER_MILLISECOND,                           // 10 ms minimum processing interval
+        FILE_BYTE_ALIGNMENT,                                    // 1 byte packet size alignment
+        0,                                                      // no maximum packet size constraint
+        5,                                                      // 5 processing constraints follow
+        {
+            STATIC_AUDIO_SIGNALPROCESSINGMODE_RAW,              // constraint for raw processing mode
+            0,                                                  // NA samples per processing frame
+            10 * HNSTIME_PER_MILLISECOND,                       // 100000 hns (10ms) per processing frame
+        },
+    },
+    {
+        {
+            STATIC_AUDIO_SIGNALPROCESSINGMODE_DEFAULT,          // constraint for default processing mode
+            0,                                                  // NA samples per processing frame
+            10 * HNSTIME_PER_MILLISECOND,                       // 100000 hns (10ms) per processing frame
+        },
+        {
+            STATIC_AUDIO_SIGNALPROCESSINGMODE_COMMUNICATIONS,   // constraint for movie communications mode
+            0,                                                  // NA samples per processing frame
+            10 * HNSTIME_PER_MILLISECOND,                       // 100000 hns (10ms) per processing frame
+        },
+        {
+            STATIC_AUDIO_SIGNALPROCESSINGMODE_MEDIA,            // constraint for default media mode
+            0,                                                  // NA samples per processing frame
+            10 * HNSTIME_PER_MILLISECOND,                       // 100000 hns (10ms) per processing frame
+        },
+        {
+            STATIC_AUDIO_SIGNALPROCESSINGMODE_MOVIE,            // constraint for movie movie mode
+            0,                                                  // NA samples per processing frame
+            10 * HNSTIME_PER_MILLISECOND,                       // 100000 hns (10ms) per processing frame
+        },
+    }
+};
+```
+
+A DSP_DEVPROPERTY structure is used to store the constraints.
+
+```cpp
+typedef struct _DSP_DEVPROPERTY {
+    const DEVPROPKEY   *PropertyKey;
+    DEVPROPTYPE Type;
+    ULONG BufferSize;
+    __field_bcount_opt(BufferSize) PVOID Buffer;
+} DSP_DEVPROPERTY, PDSP_DEVPROPERTY;
+```
+
+And an array of those structures is created.
+
+```cpp
+const DSP_DEVPROPERTY DspR_InterfaceProperties[] =
+{
+    {
+        &DEVPKEY_KsAudio_PacketSize_Constraints2,       // Key
+        DEVPROP_TYPE_BINARY,                            // Type
+        sizeof(DspR_RtPacketSizeConstraints),           // BufferSize
+        &DspR_RtPacketSizeConstraints,                  // Buffer
+    },
+};
+```
+
+Later in the EvtCircuitCompositeCircuitInitialize function, the AddPropertyToCircuitInterface helper function is used to add the array of interface properties to the circuit.
+
+```cpp
+   // Set RT buffer constraints.
+    //
+    status = AddPropertyToCircuitInterface(Circuit, ARRAYSIZE(DspC_InterfaceProperties), DspC_InterfaceProperties);
+```
+
+The AddPropertyToCircuitInterface helper function takes the [AcxCircuitGetSymbolicLinkName](/windows-hardware/drivers/ddi/acxcircuit/nf-acxcircuit-acxcircuitgetsymboliclinkname) for the circuit and then calls [IoGetDeviceInterfaceAlias](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfacealias) to locate the audio interface used by the circuit.
+
+Then the SetDeviceInterfacePropertyDataMultiple function calls [IoSetDeviceInterfacePropertyData function](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacepropertydata) to modify the current value of the device interface property - the KS audio property values on the audio interface for the ACXCIRCUIT.
+
+```cpp
+PAGED_CODE_SEG
+NTSTATUS AddPropertyToCircuitInterface(
+    _In_ ACXCIRCUIT                                         Circuit,
+    _In_ ULONG                                              PropertyCount,
+    _In_reads_opt_(PropertyCount) const DSP_DEVPROPERTY   * Properties
+)
+{
+    PAGED_CODE();
+
+    NTSTATUS        status      = STATUS_UNSUCCESSFUL;
+    UNICODE_STRING  acxLink     = {0};
+    UNICODE_STRING  audioLink   = {0};
+    WDFSTRING       wdfLink     = AcxCircuitGetSymbolicLinkName(Circuit);
+    bool            freeStr     = false;
+
+    // Get the underline unicode string.
+    WdfStringGetUnicodeString(wdfLink, &acxLink);
+
+    // Make sure there is a string.
+    if (!acxLink.Length || !acxLink.Buffer)
+    {
+        status = STATUS_INVALID_DEVICE_STATE;
+        DrvLogError(g_BthLeVDspLog, FLAG_INIT,
+            L"AcxCircuitGetSymbolicLinkName failed, Circuit: %p, %!STATUS!",
+            Circuit, status);
+        goto exit;
+    }
+
+    // Get the audio interface.
+    status = IoGetDeviceInterfaceAlias(&acxLink, &KSCATEGORY_AUDIO, &audioLink);
+    if (!NT_SUCCESS(status))
+    {
+        DrvLogError(g_BthLeVDspLog, FLAG_INIT,
+            L"IoGetDeviceInterfaceAlias failed, Circuit: %p, symbolic link name: %wZ, %!STATUS!",
+            Circuit, &acxLink, status);
+        goto exit;
+    }
+
+    freeStr = true;
+
+    // Set specified properties on the audio interface for the ACXCIRCUIT.
+    status = SetDeviceInterfacePropertyDataMultiple(&audioLink, PropertyCount, Properties);
+    if (!NT_SUCCESS(status))
+    {
+        DrvLogError(g_BthLeVDspLog, FLAG_INIT,
+            L"SetDeviceInterfacePropertyDataMultiple failed, Circuit: %p, symbolic link name: %wZ, %!STATUS!",
+            Circuit, &audioLink, status);
+        goto exit;
+    }
+
+    status = STATUS_SUCCESS;
+
+exit:
+
+    if (freeStr)
+    {
+        RtlFreeUnicodeString(&audioLink);
+        freeStr = false;
+    }
+
+    return status;
+}
+```
   
 ### Stream state changes
 
@@ -241,7 +394,44 @@ Once the stream notification has been signaled, the client can send [KSPROPERTY_
 For Burst capture, the source circuit can release a new packet to the ACX framework as soon as GETREADPACKET has been called.
 
 The client can also use [KSPROPERTY_RTAUDIO_PACKETVREGISTER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_packetvregister_property) to get a pointer to the RTAUDIO_PACKETVREGISTER structure for the stream. This structure will be updated by the ACX framework before signaling packet complete.
-  
+
+##### Legacy KS kernel streaming behavior
+
+There can be situations, such as when a driver implements burst capture (as in a key word spotter implementation), where the legacy kernel streaming packet handling behavior needs to be used instead of the PacketVRegister. To use the previous packet-based behavior, the driver should return STATUS_NOT_SUPPORTED for [KSPROPERTY_RTAUDIO_PACKETVREGISTER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_packetvregister_property).
+
+The following sample shows how to do this in the [AcxStreamInitAssignAcxRequestPreprocessCallback](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxstreaminitassignacxrequestpreprocesscallback) for an ACXSTREAM. For more information see [AcxStreamDispatchAcxRequest](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxstreamdispatchacxrequest).
+
+```cpp
+Circuit_EvtStreamRequestPreprocess(
+    _In_  ACXOBJECT  Object,
+    _In_  ACXCONTEXT DriverContext,
+    _In_  WDFREQUEST Request)
+{
+    ACX_REQUEST_PARAMETERS params;
+    PCIRCUIT_STREAM_CONTEXT streamCtx;
+
+    streamCtx = GetCircuitStreamContext(Object);
+    // The driver would define the pin type to track which pin is the keyword pin.
+    // The driver would add this to the driver-defined context when the stream is created.
+    // The driver would use AcxStreamInitAssignAcxRequestPreprocessCallback to set
+    // the Circuit_EvtStreamRequestPreprocess callback for the stream.
+    if (streamCtx && streamCtx->PinType == CapturePinTypeKeyword)
+    {
+        if (IsEqualGUID(params.Parameters.Property.Set, KSPROPSETID_RtAudio) &&
+            params.Parameters.Property.Id == KSPROPERTY_RTAUDIO_PACKETVREGISTER)
+        {
+            status = STATUS_NOT_SUPPORTED;
+            outDataCb = 0;
+
+            WdfRequestCompleteWithInformation(Request, status, outDataCb);
+            return;
+        }
+    }
+
+    (VOID)AcxStreamDispatchAcxRequest((ACXSTREAM)Object, Request);
+}
+```
+
 #### Stream position  
 
 The ACX framework will call the [EvtAcxStreamGetPresentationPosition](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_presentation_position)   callback to get the current stream position. The current stream position will include the PlayOffset and the WriteOffset.  
@@ -265,19 +455,65 @@ Packet allocation with EvtAcxStreamAllocateRtPackets will normally happen before
 
 The AcxStreamStateAcquire state is not used. ACX removes the need for the driver to have the acquire state, as this state is implicit with the prepare hardware ([EvtAcxStreamPrepareHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_prepare_hardware)) and release hardware ([EvtAcxStreamReleaseHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware)) callbacks.
 
-#### Stream close
-
-When the client closes the stream, the driver will receive EvtAcxStreamPause and EvtAcxStreamReleaseHardware before the ACXSTREAM object is deleted by the ACX Framework. The driver can supply the standard WDF EvtCleanupCallback entry in the [WDF_OBJECT_ATTRIBUTES structure](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) when calling AcxStreamCreate to perform final cleanup for the ACXSTREAM. WDF will call EvtCleanupCallback when the framework attempts to delete the object. Do not use EvtDestroyCallback, which is only called once all references to the object have been released which is indeterminant.
-
-The driver should clean up system memory resources associated with the ACXSTREAM object in EvtCleanupCallback if the resources haven't already been cleaned up in EvtAcxStreamReleaseHardware.
-
-#### Stream surprise removal and invalidation  
-
-If the driver determines the stream has become invalid (e.g. the jack goes unplugged), the circuit will shut down all streams.  
-  
 ### Large buffer streams and offload engine support  
 
 ACX uses the ACXAUDIOENGINE element to designate an ACXPIN that will handle Offload stream creation and the different elements required for offload stream volume, mute, and peak meter state. This is similar to the existing audio engine node in WaveRT drivers.
+
+## Stream close process
+
+When the client closes the stream, the driver will receive EvtAcxStreamPause and EvtAcxStreamReleaseHardware before the ACXSTREAM object is deleted by the ACX Framework. The driver can supply the standard WDF EvtCleanupCallback entry in the [WDF_OBJECT_ATTRIBUTES structure](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) when calling AcxStreamCreate to perform final cleanup for the ACXSTREAM. WDF will call EvtCleanupCallback when the framework attempts to delete the object. Do not use EvtDestroyCallback, which is only called once all references to the object have been released which is indeterminate.
+
+The driver should clean up system memory resources associated with the ACXSTREAM object in EvtCleanupCallback, if the resources haven't already been cleaned up in EvtAcxStreamReleaseHardware.
+
+It is important that the driver does not clean up resources that support the stream, until requested to by the client.
+
+The AcxStreamStateAcquire state is not used. ACX removes the need for the driver to have the acquire state, as this state is implicit with the prepare hardware (EvtAcxStreamPrepareHardware) and release hardware (EvtAcxStreamReleaseHardware) callbacks.
+
+### Stream surprise removal and invalidation  
+
+If the driver determines the stream has become invalid (e.g. the jack goes unplugged), the circuit will shut down all streams.  
+
+### Stream memory cleanup
+
+The disposal of the stream's resources can be done in the driver's stream context cleanup (not destroy). Never put the disposal of anything that is shared in an object's context destroy callback. This guidance applies to all the ACX objects.
+
+The destroy callback is invoked after the last ref is gone, when it is unknown.
+
+In general, the stream's cleanup callback is called when the handle is closed. One exception to this is when the driver created the stream in its callback. If ACX failed to add this stream to its stream-bridge just before returning from the stream-create operation, the stream is cancelled async, and the current thread returns an error to the create-stream client. The stream should not have any mem allocations allocated at this point. For more information, see [EVT_ACX_STREAM_RELEASE_HARDWARE callback](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware).
+
+### Stream memory clean up sequence
+
+The stream buffer is a system resource and it should be released only when the user mode client closes the stream’s handle. The buffer (which is different from the device’s hardware resources) has the same lifetime as the stream’s handle. When the client closes the handle ACX invokes the stream objects cleanup callback and then the stream obj’s delete callback when the ref on the object goes to zero.
+
+It is possible for ACX to defer a STREAM obj deletion to a work-item when the driver created a stream-obj and then it failed the create-stream callback. To prevent a deadlock with a shutdown WDF thread, ACX defers the deletion to a different thread. To avoid any possible side-effects of this behavior (deferred release of resources), the driver can release the allocated stream resources before it returns an error from the stream-create.
+
+The driver must free the audio buffers when ACX invokes the [EVT_ACX_STREAM_FREE_RTPACKETS callback](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_free_rtpackets). This callback is called when the user closes the stream handles.
+
+Because RT buffers are mapped in user-mode, the buffer lifetime is the same as the handle lifetime. The driver should not attempt to release/free the audio buffers before ACX invokes this callback.
+
+[EVT_ACX_STREAM_FREE_RTPACKETS callback](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_free_rtpackets) should be call after [EVT_ACX_STREAM_RELEASE_HARDWARE callback](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware) and end before EvtDeviceReleaseHardware.
+
+This callback may happen after the driver processed the WDF release hardware callback, because the user-mode client can hold on to its handles for long time. The driver should not attempt to wait for these handles to go away, this will just create a 0x9f  DRIVER_POWER_STATE_FAILURE bug check. See [EVT_WDF_DEVICE_RELEASE_HARDWARE callback function](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware) for more information.
+
+This EvtDeviceReleaseHardware code from the sample ACX driver, shows an example of calling [AcxDeviceRemoveCircuit](/windows-hardware/drivers/ddi/acxdevice/nf-acxdevice-acxdeviceremovecircuit)  and then releasing the streaming h/w memory.
+
+```cpp
+    RETURN_NTSTATUS_IF_FAILED(AcxDeviceRemoveCircuit(Device, devCtx->Render));
+    RETURN_NTSTATUS_IF_FAILED(AcxDeviceRemoveCircuit(Device, devCtx->Capture));
+
+    // NOTE: Release streaming h/w resources here.
+
+    CSaveData::DestroyWorkItems();
+    CWaveReader::DestroyWorkItems();
+```
+
+In summary:
+
+*wdf device release hardware -> release device’s h/w resources*
+
+[AcxStreamFreeRtPackets](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_free_rtpackets) -> release/free audio buffer associated with handle
+
+For more information on managing WDF and circuit objects, see [ACX WDF Driver Lifetime Management](acx-wdf-driver-lifetime-management.md).
 
 ## Streaming DDIs
 
@@ -293,35 +529,35 @@ This structure identifies the driver callbacks for streaming to the ACX framewor
 
 ### Streaming callbacks
 
-#### EVTACXSTREAMALLOCATERTPACKETS
+#### EvtAcxStreamAllocateRtPackets
 
 The [EvtAcxStreamAllocateRtPackets](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_allocate_rtpackets) event tells the driver to allocate RtPackets for streaming. An AcxRtStream will receive PacketCount = 2 for event driven streaming or PacketCount = 1 for timer based streaming. If the driver uses a single buffer for both packets, the second RtPacketBuffer should have a [WDF_MEMORY_DESCRIPTOR](/windows-hardware/drivers/ddi/wdfmemory/ns-wdfmemory-_wdf_memory_descriptor) with Type = WdfMemoryDescriptorTypeInvalid with an RtPacketOffset that aligns with the end of the first packet (packet[2].RtPacketOffset = packet[1].RtPacketOffset+packet[1].RtPacketSize).
 
-#### EVTACXSTREAMFREERTPACKETS
+#### EvtAcxStreamFreeRtPackets
 
 The [EvtAcxStreamFreeRtPackets](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_free_rtpackets) event tells the driver to free the RtPackets that were allocated in a previous call to EvtAcxStreamAllocateRtPackets. The same packets from that call are included.
 
-#### EVTACXSTREAMGETHWLATENCY
+#### EvtAcxStreamGetHwLatency
 
 The [EvtAcxStreamGetHwLatency](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_hw_latency) event tells the driver to provide stream latency for the specific circuit of this stream (overall latency will be a sum of the latency of the different circuits). The FifoSize is in bytes and the Delay is in 100-nanosecond units.
 
-#### EVTACXSTREAMSETRENDERPACKET
+#### EvtAcxStreamSetRenderPacket
 
 The [EvtAcxStreamSetRenderPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_set_render_packet) event tells the driver which packet was just released by the client. If there are no glitches, this packet should be (CurrentRenderPacket + 1), where CurrentRenderPacket is the packet the driver is currently streaming from.
 
-Flags can be 0 or AcxStreamSetRenderPacketEndOfStream, indicating the Packet is the last packet in the stream, and EosPacketLength is a valid length in bytes for the packet.
+Flags can be 0 or `KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM = 0x200`, indicating the Packet is the last packet in the stream, and EosPacketLength is a valid length in bytes for the packet. For more information see _OptionsFlags_ in [KSSTREAM_HEADER structure (ks.h)](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header).
 
 The driver should continue to increase the CurrentRenderPacket as packets are rendered instead of changing its CurrentRenderPacket to match this value.
 
-#### EVTACXSTREAMGETCURRENTPACKET
+#### EvtAcxStreamGetCurrentPacket
 
 The [EvtAcxStreamGetCurrentPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_current_packet) tells the driver to indicate which packet (0-based) is currently being rendered to the hardware or is currently being filled by the capture hardware.
 
-#### EVTACXSTREAMGETCAPTUREPACKET
+#### EvtAcxStreamGetCapturePacket
 
 The [EvtAcxStreamGetCapturePacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_capture_packet) tells the driver to indicate which packet (0-based) was completely filled most recently, including the QPC value at the time the driver started filling the packet.
 
-#### EVTACXSTREAMGETPRESENTATIONPOSITION
+#### EvtAcxStreamGetPresentationPosition
 
 The [EvtAcxStreamGetPresentationPosition](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_presentation_position) tells the driver to indicate the current position along with the QPC value at the time the current position was calculated.
 

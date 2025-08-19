@@ -3,6 +3,7 @@ title: WdbgExts Functions
 description: WdbgExts Functions
 keywords: ["WdbgExts extensions, functions"]
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # WdbgExts Functions

@@ -1,2168 +1,2020 @@
-- name: "Streaming media devices design guide"
+- name: Streaming media devices design guide
   href: index.md
-- name: "Camera privacy controls (shutters and kill switches)"
-# Auto-expanded node
-  items: 
-  - name: "Camera privacy shutters and kill switches"
+- name: Camera privacy controls (shutters and kill switches)
+  items:
+  - name: Camera privacy shutters and kill switches
     href: camera-privacy-controls.md
-  - name: "Privacy shutter/switch notification"
+  - name: Privacy shutter/switch notification
     href: privacy-shutter-notification.md
-- name: "Background segmentation portrait mode and eye gaze stare mode driver sample"
-# Auto-expanded node
-  items: 
-  - name: "Background segmentation portrait mode and eye gaze stare mode driver sample"
+  - name: Privacy shutter replacement image
+    href: privacy-shutter-replacement-image.md
+- name: Background segmentation portrait mode and eye gaze stare mode driver sample
+  items:
+  - name: Background segmentation portrait mode and eye gaze stare mode driver sample
     href: background-segmentation-portrait-mode-eye-gaze-stare-mode-driver-sample.md
-- name: "Device firmware update for USB devices without using a co-installer"
-# Auto-expanded node
-  items: 
-  - name: "Device firmware update for USB devices without using a co-installer"
+- name: Device firmware update for USB devices without using a co-installer
+  items:
+  - name: Device firmware update for USB devices without using a co-installer
     href: device-firmware-update-for-usb-devices-without-using-a-co-installer.md
-- name: "Network camera design guide"
-# Auto-expanded node
-  items: 
-  - name: "Network camera design guide"
+- name: Network cameras
+  items:
+  - name: Network cameras
+    href: network-cameras.md
+  - name: Network camera design guide
     href: network-camera-design-guide.md
-  - name: "KSPROPERTYSETID_NetworkCameraControl"
+  - name: KSPROPERTYSETID_NetworkCameraControl
     href: kspropertysetid-networkcameracontrol.md
-  - name: "KSPROPERTY_NETWORKCAMERACONTROL_EVENTTOPICS_XML"
+  - name: KSPROPERTY_NETWORKCAMERACONTROL_EVENTTOPICS_XML
     href: ksproperty-networkcameracontrol-eventtopics-xml.md
-  - name: "KSPROPERTY_NETWORKCAMERACONTROL_METADATA"
+  - name: KSPROPERTY_NETWORKCAMERACONTROL_METADATA
     href: ksproperty-networkcameracontrol-metadata.md
-  - name: "KSPROPERTY_NETWORKCAMERACONTROL_NTP"
+  - name: KSPROPERTY_NETWORKCAMERACONTROL_NTP
     href: ksproperty-networkcameracontrol-ntp.md
-  - name: "KSPROPERTY_NETWORKCAMERACONTROL_URI"
+  - name: KSPROPERTY_NETWORKCAMERACONTROL_URI
     href: ksproperty-networkcameracontrol-uri.md
-- name: "Digital Window overview"
-# Auto-expanded node
-  items: 
-  - name: "Digital Window overview"
+- name: Camera settings page and companion apps
+  items:
+  - name: Camera settings page
+    href: camera-settings-page.md
+  - name: Camera companion apps
+    href: camera-companion-apps.md
+- name: Digital Window overview
+  items:
+  - name: Digital Window overview
     href: digital-window-overview.md
-- name: "USB Video Class (UVC) camera implementation guide"
-# Auto-expanded node
-  items: 
-  - name: "USB Video Class (UVC) camera implementation guide"
+- name: Camera Profile V2 developer specification
+  items:
+  - name: Camera Profile V2 developer specification
+    href: camera-profile-v2-specification.md
+  - name: Architectural overview
+    href: camera-profile-v2-architectural-overview.md
+  - name: Detailed design for IHVs and OEMs
+    href: camera-profile-v2-detailed-design-for-ihvs-and-oems.md
+  - name: Sample profile declaration
+    href: camera-profile-v2-sample-profile-declaration.md
+  - name: Legacy profile
+    href: camera-profile-v2-legacy-profile.md
+  - name: Sensor group generation
+    href: camera-profile-v2-sensor-group-generation.md
+  - name: Sensor group configuration
+    href: camera-profile-v2-sensor-group-configuration.md
+  - name: Device MFT support
+    href: camera-profile-v2-device-mft-support.md
+  - name: Sensor group transforms
+    href: camera-profile-v2-sensor-group-transforms.md
+  - name: Constraint match logic
+    href: camera-profile-v2-constraint-match-logic.md
+  - name: Detailed design for ISVs
+    href: camera-profile-v2-detailed-design-for-isvs.md
+  - name: Profile discovery
+    href: camera-profile-v2-profile-discovery.md
+  - name: Interfaces and interactions
+    href: camera-profile-v2-interfaces-and-interactions.md
+  - name: Sample code
+    href: camera-profile-v2-sample-code.md
+- name: USB Video Class (UVC) camera implementation guide
+  items:
+  - name: USB Video Class (UVC) camera implementation guide
     href: uvc-camera-implementation-guide.md
-  - name: "Create device property keys from the MS OS descriptor in UVC camera firmware"
+  - name: Create device property keys from the MS OS descriptor in UVC camera firmware
     href: create-camera-device-property-keys-from-ms-os-descriptor.md
-  - name: "Microsoft extensions to USB Video Class 1.5 specification"
+  - name: Microsoft extensions to USB Video Class 1.5 specification
     href: uvc-extensions-1-5.md
-  - name: "Camera Intrinsics"
+  - name: Camera Intrinsics
     href: camera-intrinsics.md
-  - name: "Camera Capture Metadata"
+  - name: Camera Capture Metadata
     href: mf-capture-metadata.md
-  - name: "Camera Device Orientation"
+  - name: Camera Device Orientation
     href: camera-device-orientation.md
-  - name: "Camera Profiles"
+  - name: Camera Profiles
     href: camera-profiles.md
-  - name: "DShow Bridge implementation guidance for UVC devices"
+  - name: DShow Bridge implementation guidance for UVC devices
     href: dshow-bridge-implementation-guidance-for-usb-video-class-devices.md
-  - name: "USB Video Class (UVC) driver implementation checklist"
+  - name: USB Video Class (UVC) driver implementation checklist
     href: uvc-driver-implementation-checklist.md
-  - name: "Device MFT design guide"
+  - name: Device MFT design guide
     href: dmft-design.md
-  - name: "Infrared stream support in UVC"
+  - name: Infrared stream support in UVC
     href: infrared-stream-support-in-uvc.md
-  - name: "Camera class INF file setting for Universal camera drivers"
+  - name: Camera class INF file setting for Universal camera drivers
     href: camera-driver-inf-file-class-setting.md
-  - name: "Driver support for Camera UVC Control Cache"
+  - name: Driver support for Camera UVC Control Cache
     href: camera-device-uvc-control-cache.md
-- name: "Windows Hello Camera driver bring up guide"
+- name: Windows Hello Camera driver bring up guide
   href: windows-hello-camera-driver-bring-up-guide.md
-- name: "Extended camera controls"
+- name: Extended camera controls
   href: standardized-extended-controls-.md
-- name: "Frame Server Custom Media Source"
+- name: Frame Server Custom Media Source
   href: frame-server-custom-media-source.md
-- name: "360 camera video capture"
+- name: 360 camera video capture
   href: 360-camera-video-capture.md
-- name: "Flashlight (Lamp) Support"
+- name: Flashlight (Lamp) Support
   href: flashlight-support.md
-- name: "TorchControl shared usage registry settings"
+- name: TorchControl shared usage registry settings
   href: oem-guidance-on-registry-keys-for-shared-torch-usage.md
-- name: "Streaming Media Samples"
+- name: Streaming Media Samples
   href: streaming-media-samples.md
-- name: "OEM guidance on settings for the Windows 10 in-box camera app"
+- name: OEM guidance on settings for the Windows 10 in-box camera app
   href: oem-guidance-on-settings-for-the-windows-10-in-box-camera-app.md
-- name: "Video stabilization registry settings"
+- name: Video stabilization registry settings
   href: oem-guidance-on-registry-keys-for-video-stabilization.md
-- name: "Universal camera driver model for Windows 10"
-# Auto-expanded node
-  items: 
-  - name: "Universal camera driver model design guide for Windows 10"
+- name: Universal camera driver model for Windows 10
+  items:
+  - name: Universal camera driver model design guide for Windows 10
     href: windows-10-technical-preview-camera-drivers-design-guide.md
-  - name: "Universal camera driver interfaces for Windows 10"
-# Auto-expanded node
-    items: 
-    - name: "Universal camera driver reference for Windows 10"
+  - name: Universal camera driver interfaces for Windows 10
+    items:
+    - name: Universal camera driver reference for Windows 10
       href: windows-10-technical-preview-camera-drivers-reference.md
-    - name: "Universal camera driver controls for Windows 10"
+    - name: Universal camera driver controls for Windows 10
       href: camera-driver-controls.md
-    - name: "Universal camera driver enumerations for Windows 10"
+    - name: Universal camera driver enumerations for Windows 10
       href: camera-driver-enumerations.md
-    - name: "Universal camera driver functions for Windows 10"
+    - name: Universal camera driver functions for Windows 10
       href: camera-driver-functions.md
-    - name: "Universal camera driver structures for Windows 10"
+    - name: Universal camera driver structures for Windows 10
       href: camera-driver-structures.md
-- name: "AVStream Minidrivers Design Guide"
-# Auto-expanded node
-  items: 
-  - name: "AVStream Minidrivers Design Guide"
-    href: avstream-minidrivers-design-guide.md
-  - name: "New AVStream Interfaces for Windows 8.1"
+- name: AVStream Minidrivers Design Guide
+  items:
+  - name: New AVStream Interfaces for Windows 8.1
     href: new-avstream-interfaces-for-windows-8-1.md
-  - name: "New AVStream Interfaces for Windows 8"
+  - name: New AVStream Interfaces for Windows 8
     href: new-windows-8-ddis.md
-  - name: "Writing an AVStream Minidriver"
-# Auto-expanded node
-    items: 
-    - name: "Writing an AVStream Minidriver"
+  - name: Writing an AVStream Minidriver
+    items:
+    - name: Writing an AVStream Minidriver
       href: writing-an-avstream-minidriver.md
-    - name: "Introduction to AVStream"
-# Auto-expanded node
-      items: 
-      - name: "Introduction to AVStream"
-        href: introduction-to-avstream.md
-      - name: "AVStream Overview"
+    - name: Introduction to AVStream
+      items:
+      - name: AVStream Overview
         href: avstream-overview.md
-      - name: "AVStream Headers"
+      - name: AVStream Headers
         href: avstream-headers.md
-      - name: "AVStream Object Hierarchy"
+      - name: AVStream Object Hierarchy
         href: avstream-object-hierarchy.md
-      - name: "AVStream Descriptors"
+      - name: AVStream Descriptors
         href: avstream-descriptors.md
-      - name: "AVStream Dispatch Tables"
+      - name: AVStream Dispatch Tables
         href: avstream-dispatch-tables.md
-      - name: "Initializing an AVStream Minidriver"
+      - name: Initializing an AVStream Minidriver
         href: initializing-an-avstream-minidriver.md
-      - name: "Pin-Centric Processing"
+      - name: Pin-Centric Processing
         href: pin-centric-processing.md
-      - name: "Filter-Centric Processing"
+      - name: Filter-Centric Processing
         href: filter-centric-processing.md
-      - name: "Event Handling in AVStream"
+      - name: Event Handling in AVStream
         href: event-handling-in-avstream.md
-      - name: "Sample User-Mode Code for Methods and Events"
+      - name: Sample User-Mode Code for Methods and Events
         href: sample-user-mode-code-for-methods-and-events.md
-      - name: "AVStream Child Devices"
+      - name: AVStream Child Devices
         href: avstream-child-devices.md
-      - name: "Restarting Processing in AVStream"
+      - name: Restarting Processing in AVStream
         href: restarting-processing-in-avstream.md
-    - name: "AVStream Testing and Debugging"
+    - name: AVStream Testing and Debugging
       href: avstream-testing-and-debugging.md
-    - name: "Writing AVStream Minidrivers for Hardware"
-# Auto-expanded node
-      items: 
-      - name: "Writing AVStream Minidrivers for Hardware"
+    - name: Writing AVStream Minidrivers for Hardware
+      items:
+      - name: Writing AVStream Minidrivers for Hardware
         href: writing-avstream-minidrivers-for-hardware.md
-      - name: "AVStream DMA Services"
+      - name: AVStream DMA Services
         href: avstream-dma-services.md
-      - name: "Packet-based DMA in AVStream"
+      - name: Packet-based DMA in AVStream
         href: packet-based-dma-in-avstream.md
-      - name: "Common Buffer DMA in AVStream"
+      - name: Common Buffer DMA in AVStream
         href: common-buffer-dma-in-avstream.md
-      - name: "Supporting DMA in 64-Bit AVStream Drivers"
+      - name: Supporting DMA in 64-Bit AVStream Drivers
         href: supporting-dma-in-64-bit-avstream-drivers.md
-    - name: "AVStream Architecture: Advanced Topics"
-# Auto-expanded node
-      items: 
-      - name: "AVStream Architecture: Advanced Topics"
-        href: avstream-architecture--advanced-topics.md
-      - name: "Power and State Changes in AVStream"
+    - name: 'AVStream Architecture: Advanced Topics'
+      items:
+      - name: Power and State Changes in AVStream
         href: power-and-state-changes-in-avstream.md
-      - name: "Object Bags"
+      - name: Object Bags
         href: object-bags.md
-      - name: "Flow Control Gates in AVStream"
+      - name: Flow Control Gates in AVStream
         href: flow-control-gates-in-avstream.md
-      - name: "AVStream Allocators"
+      - name: AVStream Allocators
         href: avstream-allocators.md
-      - name: "AVStream Pipes and Circuits"
+      - name: AVStream Pipes and Circuits
         href: avstream-pipes-and-circuits.md
-      - name: "Frame Injection"
+      - name: Frame Injection
         href: frame-injection.md
-      - name: "AVStream Splitters"
+      - name: AVStream Splitters
         href: avstream-splitters.md
-      - name: "Data Range Intersections in AVStream"
+      - name: Data Range Intersections in AVStream
         href: data-range-intersections-in-avstream.md
-      - name: "Using AVStream with the Kernel Streaming Proxy Module"
+      - name: Using AVStream with the Kernel Streaming Proxy Module
         href: using-avstream-with-the-kernel-streaming-proxy-module.md
-      - name: "Stream Pointers"
-# Auto-expanded node
-        items: 
-        - name: "Stream Pointers"
-          href: stream-pointers.md
-        - name: "Introduction to Stream Pointers"
+      - name: Stream Pointers
+        items:
+        - name: Introduction to Stream Pointers
           href: introduction-to-stream-pointers.md
-        - name: "Leading and Trailing Edge Stream Pointers"
+        - name: Leading and Trailing Edge Stream Pointers
           href: leading-and-trailing-edge-stream-pointers.md
-        - name: "Locking and Unlocking Stream Pointers"
+        - name: Locking and Unlocking Stream Pointers
           href: locking-and-unlocking-stream-pointers.md
-        - name: "Cloning Stream Pointers"
+        - name: Cloning Stream Pointers
           href: cloning-stream-pointers.md
-        - name: "Stream Pointers and Offsets"
+        - name: Stream Pointers and Offsets
           href: stream-pointers-and-offsets.md
-        - name: "Stream Pointers and IRP Cancellation"
+        - name: Stream Pointers and IRP Cancellation
           href: stream-pointers-and-irp-cancellation.md
-        - name: "Stream Pointer Timers"
+        - name: Stream Pointer Timers
           href: stream-pointer-timers.md
-      - name: "Mutexes in AVStream"
-# Auto-expanded node
-        items: 
-        - name: "Mutexes in AVStream"
+      - name: Mutexes in AVStream
+        items:
+        - name: Mutexes in AVStream
           href: mutexes-in-avstream.md
-        - name: "Device Mutex in AVStream"
+        - name: Device Mutex in AVStream
           href: device-mutex-in-avstream.md
-        - name: "Filter Control Mutex in AVStream"
+        - name: Filter Control Mutex in AVStream
           href: filter-control-mutex-in-avstream.md
-        - name: "Processing Mutex in AVStream"
+        - name: Processing Mutex in AVStream
           href: processing-mutex-in-avstream.md
-      - name: "AVStream Clocks"
+      - name: AVStream Clocks
         href: avstream-clocks.md
-  - name: "Capturing Video to VRAM using AVStream"
-# Auto-expanded node
-    items: 
-    - name: "Capturing Video to VRAM using AVStream"
+  - name: Capturing Video to VRAM using AVStream
+    items:
+    - name: Capturing Video to VRAM using AVStream
       href: capturing-video-to-vram-using-avstream.md
-    - name: "Overview of VRAM Capture in AVStream "
+    - name: 'Overview of VRAM Capture in AVStream '
       href: overview-of-vram-capture-in-avstream.md
-    - name: "VRAM Capture Properties"
+    - name: VRAM Capture Properties
       href: vram-capture-properties.md
-    - name: "Capturing Uncompressed Data to VRAM"
+    - name: Capturing Uncompressed Data to VRAM
       href: capturing-uncompressed-data-to-vram.md
-    - name: "Adding VRAM Capture Support to Existing AVStream Drivers"
+    - name: Adding VRAM Capture Support to Existing AVStream Drivers
       href: adding-vram-capture-support-to-existing-avstream-drivers.md
-  - name: "Broadcast Driver Architecture Drivers"
-# Auto-expanded node
-    items: 
-    - name: "Broadcast Driver Architecture Drivers"
-      href: broadcast-driver-architecture-drivers2.md
-    - name: "Broadcast Receiver Topology"
-# Auto-expanded node
-      items: 
-      - name: "Broadcast Receiver Topology"
+  - name: Broadcast Driver Architecture Drivers
+    items:
+    - name: Broadcast Receiver Topology
+      items:
+      - name: Broadcast Receiver Topology
         href: broadcast-receiver-topology.md
-      - name: "Functional Topology"
+      - name: Functional Topology
         href: functional-topology.md
-      - name: "Control Nodes, Filters and Hardware"
-# Auto-expanded node
-        items: 
-        - name: "Control Nodes, Filters and Hardware"
-          href: control-nodes--filters-and-hardware.md
-        - name: "Control Nodes"
+      - name: Control Nodes, Filters and Hardware
+        items:
+        - name: Control Nodes
           href: control-nodes.md
-        - name: "Combining Nodes in a Filter"
+        - name: Combining Nodes in a Filter
           href: combining-nodes-in-a-filter.md
-        - name: "Separating Nodes in Individual Filters"
+        - name: Separating Nodes in Individual Filters
           href: separating-nodes-in-individual-filters.md
-        - name: "Control Nodes for Processing IP Data"
+        - name: Control Nodes for Processing IP Data
           href: control-nodes-for-processing-ip-data.md
-      - name: "Common Control Nodes and Filters"
+      - name: Common Control Nodes and Filters
         href: common-control-nodes-and-filters.md
-    - name: "Broadcast Driver Architecture Minidrivers"
-# Auto-expanded node
-      items: 
-      - name: "Broadcast Driver Architecture Minidrivers"
+    - name: Broadcast Driver Architecture Minidrivers
+      items:
+      - name: Broadcast Driver Architecture Minidrivers
         href: broadcast-driver-architecture-minidrivers.md
-      - name: "Initializing a BDA Minidriver"
+      - name: Initializing a BDA Minidriver
         href: initializing-a-bda-minidriver.md
-      - name: "Starting a BDA Minidriver"
+      - name: Starting a BDA Minidriver
         href: starting-a-bda-minidriver.md
-      - name: "Creating Dispatch Tables"
+      - name: Creating Dispatch Tables
         href: creating-dispatch-tables.md
-      - name: "Defining Automation Tables"
+      - name: Defining Automation Tables
         href: defining-automation-tables.md
-      - name: "Initializing a BDA Filter"
+      - name: Initializing a BDA Filter
         href: initializing-a-bda-filter.md
-      - name: "Using BDA Property and Method Sets"
-# Auto-expanded node
-        items: 
-        - name: "Using BDA Property and Method Sets"
-          href: using-bda-property-and-method-sets.md
-        - name: "Determining BDA Device Topology"
+      - name: Using BDA Property and Method Sets
+        items:
+        - name: Determining BDA Device Topology
           href: determining-bda-device-topology.md
-        - name: "Mapping Connection Topology"
+        - name: Mapping Connection Topology
           href: mapping-connection-topology.md
-        - name: "Determining the Controlling Pin of a Node"
+        - name: Determining the Controlling Pin of a Node
           href: determining-the-controlling-pin-of-a-node.md
-        - name: "Configuring a BDA Filter"
+        - name: Configuring a BDA Filter
           href: configuring-a-bda-filter.md
-        - name: "Changing BDA Filter Properties"
+        - name: Changing BDA Filter Properties
           href: changing-bda-filter-properties.md
-        - name: "Accessing Frequency Properties of a BDA Tuner Node"
+        - name: Accessing Frequency Properties of a BDA Tuner Node
           href: accessing-frequency-properties-of-a-bda-tuner-node.md
-      - name: "Caching Pin Information for DirectShow"
+      - name: Caching Pin Information for DirectShow
         href: caching-pin-information-for-directshow.md
-      - name: "Securing a BDA Minidriver"
-# Auto-expanded node
-        items: 
-        - name: "Securing a BDA Minidriver"
+      - name: Securing a BDA Minidriver
+        items:
+        - name: Securing a BDA Minidriver
           href: securing-a-bda-minidriver.md
-        - name: "Introducing Threats to a BDA Minidriver"
+        - name: Introducing Threats to a BDA Minidriver
           href: introducing-threats-to-a-bda-minidriver.md
-        - name: "Preventing BDA Minidriver Threats"
+        - name: Preventing BDA Minidriver Threats
           href: preventing-bda-minidriver-threats.md
-      - name: "Connecting Between Pins of Filters for BDA Minidrivers"
+      - name: Connecting Between Pins of Filters for BDA Minidrivers
         href: connecting-between-pins-of-filters-for-bda-minidrivers.md
-    - name: "Sample BDA Drivers"
+    - name: Sample BDA Drivers
       href: sample-bda-drivers.md
-    - name: "Building and Testing BDA Drivers"
-# Auto-expanded node
-      items: 
-      - name: "Building and Testing BDA Drivers"
+    - name: Building and Testing BDA Drivers
+      items:
+      - name: Building and Testing BDA Drivers
         href: building-and-testing-bda-drivers.md
-      - name: "Building BDA Drivers"
+      - name: Building BDA Drivers
         href: building-bda-drivers.md
-      - name: "Testing BDA Drivers Using BDA Filters"
+      - name: Testing BDA Drivers Using BDA Filters
         href: testing-bda-drivers-using-bda-filters.md
-  - name: "Encoder Devices"
-# Auto-expanded node
-    items: 
-    - name: "Encoder Devices"
+  - name: Encoder Devices
+    items:
+    - name: Encoder Devices
       href: encoder-devices.md
-    - name: "Encoder Implementation and Support"
+    - name: Encoder Implementation and Support
       href: encoder-implementation-and-support.md
-    - name: "Encoder Code Examples"
+    - name: Encoder Code Examples
       href: encoder-code-examples.md
-    - name: "Encoder Installation and Registration"
+    - name: Encoder Installation and Registration
       href: encoder-installation-and-registration.md
-  - name: "AV/C Client Drivers"
-# Auto-expanded node
-    items: 
-    - name: "AV/C Client Drivers"
+  - name: AV/C Client Drivers
+    items:
+    - name: AV/C Client Drivers
       href: av-c-client-drivers2.md
-    - name: "AV/C Overview"
-# Auto-expanded node
-      items: 
-      - name: "AV/C Overview"
+    - name: AV/C Overview
+      items:
+      - name: AV/C Overview
         href: av-c-overview.md
-      - name: "AV/C Driver Stacks"
-# Auto-expanded node
-        items: 
-        - name: "AV/C Driver Stacks"
+      - name: AV/C Driver Stacks
+        items:
+        - name: AV/C Driver Stacks
           href: av-c-driver-stacks.md
-        - name: "Peer Subunit Driver Stack"
+        - name: Peer Subunit Driver Stack
           href: peer-subunit-driver-stack.md
-        - name: "Virtual Subunit Driver Stack"
+        - name: Virtual Subunit Driver Stack
           href: virtual-subunit-driver-stack.md
-      - name: "AV/C Device Identifiers"
-# Auto-expanded node
-        items: 
-        - name: "AV/C Device Identifiers"
+      - name: AV/C Device Identifiers
+        items:
+        - name: AV/C Device Identifiers
           href: av-c-device-identifiers.md
-        - name: "Peer Subunit Device Identifiers"
+        - name: Peer Subunit Device Identifiers
           href: peer-subunit-device-identifiers.md
-        - name: "Virtual Subunit Device Identifiers"
+        - name: Virtual Subunit Device Identifiers
           href: virtual-subunit-device-identifiers.md
-      - name: "AV/C Kernel-Streaming Interface and Kernel-Streaming Proxy Plug-ins"
+      - name: AV/C Kernel-Streaming Interface and Kernel-Streaming Proxy Plug-ins
         href: av-c-kernel-streaming-interface-and-kernel-streaming-proxy-plug-ins.md
-      - name: "AV/C Subunit Plug Connection and Format Management"
+      - name: AV/C Subunit Plug Connection and Format Management
         href: av-c-subunit-plug-connection-and-format-management.md
-      - name: "AV/C Connection Scenarios"
-# Auto-expanded node
-        items: 
-        - name: "AV/C Connection Scenarios"
+      - name: AV/C Connection Scenarios
+        items:
+        - name: AV/C Connection Scenarios
           href: av-c-connection-scenarios.md
-        - name: "Connections Between Subunit Plugs and Unit Plugs Within One AV/C Unit"
+        - name: Connections Between Subunit Plugs and Unit Plugs Within One AV/C Unit
           href: connections-between-subunit-plugs-and-unit-plugs-within-one-av-c-unit.md
-        - name: "Connections Between Two Subunit Plugs Within One AV/C Unit"
+        - name: Connections Between Two Subunit Plugs Within One AV/C Unit
           href: connections-between-two-subunit-plugs-within-one-av-c-unit.md
-        - name: "Connections Between Two Subunit Plugs in Different AV/C Units"
+        - name: Connections Between Two Subunit Plugs in Different AV/C Units
           href: connections-between-two-subunit-plugs-in-different-av-c-units.md
-        - name: "Connections Between Two Unit Plugs in Different AV/C Units"
+        - name: Connections Between Two Unit Plugs in Different AV/C Units
           href: connections-between-two-unit-plugs-in-different-av-c-units.md
-      - name: "AV/C Subunit Driver Debugging"
+      - name: AV/C Subunit Driver Debugging
         href: av-c-subunit-driver-debugging.md
-    - name: "Using Avc.sys"
-# Auto-expanded node
-      items: 
-      - name: "Using Avc.sys"
+    - name: Using Avc.sys
+      items:
+      - name: Using Avc.sys
         href: using-avc-sys.md
-      - name: "Building and Sending an AV/C Command"
+      - name: Building and Sending an AV/C Command
         href: building-and-sending-an-av-c-command.md
-      - name: "Initializing a Subunit Driver and Establishing Pin Connections"
+      - name: Initializing a Subunit Driver and Establishing Pin Connections
         href: initializing-a-subunit-driver-and-establishing-pin-connections.md
-      - name: "Virtual Subunit Driver Notes"
+      - name: Virtual Subunit Driver Notes
         href: virtual-subunit-driver-notes.md
-    - name: "AV/C Streaming Overview"
-# Auto-expanded node
-      items: 
-      - name: "AV/C Streaming Overview"
+    - name: AV/C Streaming Overview
+      items:
+      - name: AV/C Streaming Overview
         href: av-c-streaming-overview.md
-      - name: "AV/C Streaming Driver Stack"
+      - name: AV/C Streaming Driver Stack
         href: av-c-streaming-driver-stack.md
-      - name: "AV/C Streaming INF Example"
+      - name: AV/C Streaming INF Example
         href: av-c-streaming-inf-example.md
-    - name: "Using Avcstrm.sys"
-# Auto-expanded node
-      items: 
-      - name: "Using Avcstrm.sys"
+    - name: Using Avcstrm.sys
+      items:
+      - name: Using Avcstrm.sys
         href: using-avcstrm-sys.md
-      - name: "Create a Stream"
+      - name: Create a Stream
         href: create-a-stream.md
-      - name: "Submit Data Buffer"
+      - name: Submit Data Buffer
         href: submit-data-buffer.md
-      - name: "Get and Set the Stream State"
+      - name: Get and Set the Stream State
         href: get-and-set-the-stream-state.md
-      - name: "Close a Stream"
+      - name: Close a Stream
         href: close-a-stream.md
-      - name: "Abort a Stream"
+      - name: Abort a Stream
         href: abort-a-stream.md
-  - name: "USB Video Class Driver"
-# Auto-expanded node
-    items: 
-    - name: "USB Video Class Driver"
-      href: usb-video-class-driver.md
-    - name: "USB Video Class Driver Overview"
+  - name: USB Video Class Driver
+    items:
+    - name: USB Video Class Driver Overview
       href: usb-video-class-driver-overview.md
-    - name: "USB Video Class Driver Stack"
+    - name: USB Video Class Driver Stack
       href: usb-video-class-driver-stack.md
-    - name: "Differences between UVC 1.0 and UVC 1.1"
+    - name: Differences between UVC 1.0 and UVC 1.1
       href: differences-between-uvc-1-0-and-uvc-1-1.md
-    - name: "USB Video Class Implementation"
+    - name: USB Video Class Implementation
       href: usb-video-class-implementation.md
-    - name: "USB Video Class Properties "
+    - name: 'USB Video Class Properties '
       href: usb-video-class-properties.md
-    - name: "USB H.264 Video Cameras Support"
+    - name: USB H.264 Video Cameras Support
       href: usb-h-264-video-cameras-support.md
-    - name: "USB Video Class Extension Units"
-# Auto-expanded node
-      items: 
-      - name: "USB Video Class Extension Units"
-        href: usb-video-class-extension-units.md
-      - name: "Introduction to USB Video Class Extension Units"
+    - name: USB Video Class Extension Units
+      items:
+      - name: Introduction to USB Video Class Extension Units
         href: introduction-to-usb-video-class-extension-units.md
-      - name: "Device Requirements for USB Video Class Extension Units"
+      - name: Device Requirements for USB Video Class Extension Units
         href: device-requirements-for-usb-video-class-extension-units.md
-      - name: "Extension Unit Plug-In Architecture"
+      - name: Extension Unit Plug-In Architecture
         href: extension-unit-plug-in-architecture.md
-      - name: "UVC Extension Unit Code Samples"
-# Auto-expanded node
-        items: 
-        - name: "UVC Extension Unit Code Samples"
-          href: uvc-extension-unit-code-samples.md
-        - name: "Building the Extension Unit Sample Control"
+      - name: UVC Extension Unit Code Samples
+        items:
+        - name: Building the Extension Unit Sample Control
           href: building-the-extension-unit-sample-control.md
-        - name: "Sample Interface for UVC Extension Units"
+        - name: Sample Interface for UVC Extension Units
           href: sample-interface-for-uvc-extension-units.md
-        - name: "Sample Extension Unit Plug-in DLL"
+        - name: Sample Extension Unit Plug-in DLL
           href: sample-extension-unit-plug-in-dll.md
-        - name: "Sample Registry Entry for UVC Extension Units"
+        - name: Sample Registry Entry for UVC Extension Units
           href: sample-registry-entry-for-uvc-extension-units.md
-        - name: "Sample Application for UVC Extension Units"
+        - name: Sample Application for UVC Extension Units
           href: sample-application-for-uvc-extension-units.md
-        - name: "Supporting Autoupdate Events with Extension Units"
+        - name: Supporting Autoupdate Events with Extension Units
           href: supporting-autoupdate-events-with-extension-units.md
-        - name: "Sample Extension Unit Descriptor"
+        - name: Sample Extension Unit Descriptor
           href: sample-extension-unit-descriptor.md
-        - name: "Providing a UVC INF File"
+        - name: Providing a UVC INF File
           href: providing-a-uvc-inf-file.md
-  - name: "AVStream Samples"
+  - name: AVStream Samples
     href: avstream-samples.md
-  - name: "Video Capture Devices"
-# Auto-expanded node
-    items: 
-    - name: "Video Capture Devices"
+  - name: Video Capture Devices
+    items:
+    - name: Video Capture Devices
       href: video-capture-devices.md
-    - name: "Video Capture Overview"
-# Auto-expanded node
-      items: 
-      - name: "Video Capture Overview"
+    - name: Video Capture Overview
+      items:
+      - name: Video Capture Overview
         href: video-capture-overview.md
-      - name: "Streaming Data from a Video Capture Device"
-# Auto-expanded node
-        items: 
-        - name: "Streaming Data from a Video Capture Device"
+      - name: Streaming Data from a Video Capture Device
+        items:
+        - name: Streaming Data from a Video Capture Device
           href: streaming-data-from-a-video-capture-device.md
-        - name: "Specifying Stream Formats"
+        - name: Specifying Stream Formats
           href: specifying-stream-formats.md
-        - name: "Time Stamps"
+        - name: Time Stamps
           href: time-stamps.md
-        - name: "Video Stream Extended Headers"
+        - name: Video Stream Extended Headers
           href: video-stream-extended-headers.md
-      - name: "Mediums and Categories"
-# Auto-expanded node
-        items: 
-        - name: "Mediums and Categories"
+      - name: Mediums and Categories
+        items:
+        - name: Mediums and Categories
           href: mediums-and-categories.md
-        - name: "Medium GUIDs"
+        - name: Medium GUIDs
           href: medium-guids.md
-        - name: "Stream Categories"
-# Auto-expanded node
-          items: 
-          - name: "Stream Categories"
+        - name: Stream Categories
+          items:
+          - name: Stream Categories
             href: stream-categories.md
-          - name: "Capture, Preview, and Still Category"
+          - name: Capture, Preview, and Still Category
             href: capture--preview--and-still-category.md
-          - name: "VBI Category"
+          - name: VBI Category
             href: vbi-category.md
-          - name: "Analog Video Category"
+          - name: Analog Video Category
             href: analog-video-category.md
-          - name: "Videoport Category"
+          - name: Videoport Category
             href: videoport-category.md
-          - name: "Videoport VBI Category"
+          - name: Videoport VBI Category
             href: videoport-vbi-category.md
-          - name: "CC Category"
+          - name: CC Category
             href: cc-category.md
-          - name: "Teletext Category"
+          - name: Teletext Category
             href: teletext-category.md
-          - name: "NABTS Categories"
+          - name: NABTS Categories
             href: nabts-categories.md
-          - name: "Timecode Category"
+          - name: Timecode Category
             href: timecode-category.md
-      - name: "Supporting Video Capture Devices with Tuners"
-# Auto-expanded node
-        items: 
-        - name: "Supporting Video Capture Devices with Tuners"
+      - name: Supporting Video Capture Devices with Tuners
+        items:
+        - name: Supporting Video Capture Devices with Tuners
           href: supporting-video-capture-devices-with-tuners.md
-        - name: "Video Capture Devices with Radio Tuners"
-# Auto-expanded node
-          items: 
-          - name: "Video Capture Devices with Radio Tuners"
+        - name: Video Capture Devices with Radio Tuners
+          items:
+          - name: Video Capture Devices with Radio Tuners
             href: video-capture-devices-with-radio-tuners.md
-          - name: "Recognizing the First Tuning Request"
+          - name: Recognizing the First Tuning Request
             href: recognizing-the-first-tuning-request.md
-        - name: "Scanning to Tunable Signals"
-# Auto-expanded node
-          items: 
-          - name: "Scanning to Tunable Signals"
+        - name: Scanning to Tunable Signals
+          items:
+          - name: Scanning to Tunable Signals
             href: scanning-to-tunable-signals.md
-          - name: "Hardware-Assisted Scanning Algorithm"
+          - name: Hardware-Assisted Scanning Algorithm
             href: hardware-assisted-scanning-algorithm.md
-          - name: "Event Mechanism and Flow"
+          - name: Event Mechanism and Flow
             href: event-mechanism-and-flow.md
-        - name: "Detecting Tuner Standards"
+        - name: Detecting Tuner Standards
           href: detecting-tuner-standards.md
-      - name: "Filter Graph Examples"
-# Auto-expanded node
-        items: 
-        - name: "Filter Graph Examples"
-          href: filter-graph-examples.md
-        - name: "USB or 1394-Based Conferencing Camera"
+      - name: Filter Graph Examples
+        items:
+        - name: USB or 1394-Based Conferencing Camera
           href: usb-or-1394-based-conferencing-camera.md
-        - name: "USB-Based Camera with a Capture Button"
+        - name: USB-Based Camera with a Capture Button
           href: usb-based-camera-with-a-capture-button.md
-        - name: "PCI-Based TV Capture"
+        - name: PCI-Based TV Capture
           href: pci-based-tv-capture.md
-        - name: "Video Port-Based Capture"
+        - name: Video Port-Based Capture
           href: video-port-based-capture.md
-        - name: "Filters Used with the Video Capture Devices"
+        - name: Filters Used with the Video Capture Devices
           href: filters-used-with-the-video-capture-devices.md
-        - name: "DirectShow Filter to Stream Class Minidriver Communication"
+        - name: DirectShow Filter to Stream Class Minidriver Communication
           href: directshow-filter-to-stream-class-minidriver-communication.md
-      - name: "Video Capture Property Sets"
-# Auto-expanded node
-        items: 
-        - name: "Video Capture Property Sets"
+      - name: Video Capture Property Sets
+        items:
+        - name: Video Capture Property Sets
           href: video-capture-property-sets.md
-        - name: "Allocator Properties"
+        - name: Allocator Properties
           href: allocator-properties.md
-        - name: "Tuner Properties"
+        - name: Tuner Properties
           href: tuner-properties.md
-        - name: "Crossbar Properties"
+        - name: Crossbar Properties
           href: crossbar-properties.md
-        - name: "Dropped Frame Properties"
+        - name: Dropped Frame Properties
           href: dropped-frame-properties.md
-        - name: "TV Audio Properties"
+        - name: TV Audio Properties
           href: tv-audio-properties.md
-        - name: "Video Compression Properties"
+        - name: Video Compression Properties
           href: video-compression-properties.md
-        - name: "Video Control Properties"
+        - name: Video Control Properties
           href: video-control-properties.md
-        - name: "Video Decoder Properties"
+        - name: Video Decoder Properties
           href: video-decoder-properties.md
-        - name: "Camera Control Properties"
-# Auto-expanded node
-          items: 
-          - name: "Camera Control Properties"
+        - name: Camera Control Properties
+          items:
+          - name: Camera Control Properties
             href: camera-control-properties.md
-          - name: "Extended Camera Control Properties"
+          - name: Extended Camera Control Properties
             href: extended-camera-control-properties.md
-          - name: "How To Implement Extended Camera Control Properties"
+          - name: How To Implement Extended Camera Control Properties
             href: how-to-implement-extended-camera-control-properties.md
-          - name: "Extended Camera Control Payloads"
+          - name: Extended Camera Control Payloads
             href: extended-camera-control-payloads.md
-          - name: "Photo Sequence Mode"
+          - name: Photo Sequence Mode
             href: photo-sequence-mode.md
-        - name: "Video Processing Amplifier Properties"
+        - name: Video Processing Amplifier Properties
           href: video-processing-amplifier-properties.md
-        - name: "External Device Properties"
+        - name: External Device Properties
           href: external-device-properties.md
-        - name: "External Transport Properties"
+        - name: External Transport Properties
           href: external-transport-properties.md
-        - name: "Timecode Properties"
+        - name: Timecode Properties
           href: timecode-properties.md
-        - name: "UVC Video Capture Selector Properties"
+        - name: UVC Video Capture Selector Properties
           href: uvc-video-capture-selector-properties.md
-        - name: "Custom Property Sets and Interfaces"
+        - name: Custom Property Sets and Interfaces
           href: custom-property-sets-and-interfaces.md
-      - name: "Video Capture Event Sets"
-# Auto-expanded node
-        items: 
-        - name: "Video Capture Event Sets"
-          href: video-capture-event-sets.md
-        - name: "Tuner Events"
+      - name: Video Capture Event Sets
+        items:
+        - name: Tuner Events
           href: tuner-events.md
-        - name: "Video Decoder Change Event"
+        - name: Video Decoder Change Event
           href: video-decoder-change-event.md
-        - name: "Crossbar Change Event"
+        - name: Crossbar Change Event
           href: crossbar-change-event.md
-        - name: "TV Audio Change Event"
+        - name: TV Audio Change Event
           href: tv-audio-change-event.md
-        - name: "Video Capture Events"
+        - name: Video Capture Events
           href: video-capture-events.md
-    - name: "Implementing Video Capture Support"
-# Auto-expanded node
-      items: 
-      - name: "Implementing Video Capture Support"
-        href: implementing-video-capture-support.md
-      - name: "Registering with the Stream Class Interface"
+    - name: Implementing Video Capture Support
+      items:
+      - name: Registering with the Stream Class Interface
         href: registering-with-the-stream-class-interface.md
-      - name: "Selecting a Stream Format"
+      - name: Selecting a Stream Format
         href: selecting-a-stream-format.md
-      - name: "Opening and Closing a Stream"
+      - name: Opening and Closing a Stream
         href: opening-and-closing-a-stream.md
-      - name: "Streaming States"
+      - name: Streaming States
         href: streaming-states.md
-      - name: "State Transitions"
+      - name: State Transitions
         href: state-transitions.md
-      - name: "Capturing Video"
+      - name: Capturing Video
         href: capturing-video.md
-  - name: "Hardware Codec Support in AVStream"
-# Auto-expanded node
-    items: 
-    - name: "Hardware Codec Support in AVStream"
+  - name: Hardware Codec Support in AVStream
+    items:
+    - name: Hardware Codec Support in AVStream
       href: hardware-codec-support-in-avstream.md
-    - name: "Getting Started with Hardware Codec Support in AVStream"
+    - name: Getting Started with Hardware Codec Support in AVStream
       href: getting-started-with-hardware-codec-support-in-avstream.md
-    - name: "Handling Data Type Negotiation in AVStream Codecs"
+    - name: Handling Data Type Negotiation in AVStream Codecs
       href: handling-data-type-negotiation-in-avstream-codecs.md
-    - name: "Using Hardware Mediums in AVStream Codecs"
+    - name: Using Hardware Mediums in AVStream Codecs
       href: using-hardware-mediums-in-avstream-codecs.md
-    - name: "Specifying Allocator Framing in AVStream Codecs"
+    - name: Specifying Allocator Framing in AVStream Codecs
       href: specifying-allocator-framing-in-avstream-codecs.md
-    - name: "Describing Extended Sample Information in AVStream Codecs"
+    - name: Describing Extended Sample Information in AVStream Codecs
       href: describing-extended-sample-information-in-avstream-codecs.md
-    - name: "Supporting Dynamic Format Changes in AVStream Codecs"
+    - name: Supporting Dynamic Format Changes in AVStream Codecs
       href: supporting-dynamic-format-changes-in-avstream-codecs.md
-    - name: "Handling End of Stream in AVStream Codecs"
+    - name: Handling End of Stream in AVStream Codecs
       href: handling-end-of-stream-in-avstream-codecs.md
-    - name: "Resetting State in AVStream Codecs"
+    - name: Resetting State in AVStream Codecs
       href: resetting-state-in-avstream-codecs.md
-    - name: "Handling Stride in AVStream Codecs"
+    - name: Handling Stride in AVStream Codecs
       href: handling-stride-in-avstream-codecs.md
-    - name: "Installing an AVStream-based Hardware Codec Driver"
+    - name: Installing an AVStream-based Hardware Codec Driver
       href: installing-an-avstream-based-hardware-codec-driver.md
-    - name: "Validating and Certifying Hardware Codecs"
-# Auto-expanded node
-      items: 
-      - name: "Validating and Certifying Hardware Codecs"
+    - name: Validating and Certifying Hardware Codecs
+      items:
+      - name: Validating and Certifying Hardware Codecs
         href: validating-and-certifying-hardware-codecs.md
-      - name: "Codec Merit Validation"
+      - name: Codec Merit Validation
         href: codec-merit-validation.md
-- name: "Windows 2000 Kernel Streaming Model Design Guide"
-# Auto-expanded node
-  items: 
-  - name: "Windows 2000 Kernel Streaming Model Design Guide"
-    href: windows-2000-kernel-streaming-model-design-guide.md
-  - name: "Streaming Minidrivers"
-# Auto-expanded node
-    items: 
-    - name: "Streaming Minidrivers"
+- name: Windows 2000 Kernel Streaming Model Design Guide
+  items:
+  - name: Streaming Minidrivers
+    items:
+    - name: Streaming Minidrivers
       href: streaming-minidrivers2.md
-    - name: "Class Driver and Minidriver Definitions"
+    - name: Class Driver and Minidriver Definitions
       href: class-driver-and-minidriver-definitions.md
-    - name: "Stream Class and Minidriver Interface"
+    - name: Stream Class and Minidriver Interface
       href: stream-class-and-minidriver-interface.md
-    - name: "Writing a Stream Minidriver"
+    - name: Writing a Stream Minidriver
       href: writing-a-stream-minidriver.md
-    - name: "Stream Class Registry Values"
+    - name: Stream Class Registry Values
       href: stream-class-registry-values.md
-    - name: "Stream Class Child Devices"
+    - name: Stream Class Child Devices
       href: stream-class-child-devices.md
-    - name: "Handling Stream Request Blocks"
+    - name: Handling Stream Request Blocks
       href: handling-stream-request-blocks.md
-    - name: "Minidriver Initialization"
+    - name: Minidriver Initialization
       href: minidriver-initialization.md
-    - name: "Minidriver Flow of Control"
+    - name: Minidriver Flow of Control
       href: minidriver-flow-of-control.md
-    - name: "Supporting Multiple Streams"
+    - name: Supporting Multiple Streams
       href: supporting-multiple-streams.md
-    - name: "Data Formats and Data Ranges in Streaming Minidrivers"
+    - name: Data Formats and Data Ranges in Streaming Minidrivers
       href: data-formats-and-data-ranges-in-streaming-minidrivers.md
-    - name: "Supporting Property Sets"
+    - name: Supporting Property Sets
       href: supporting-property-sets.md
-    - name: "Handling Events"
+    - name: Handling Events
       href: handling-events.md
-    - name: "Minidriver Synchronization"
+    - name: Minidriver Synchronization
       href: minidriver-synchronization.md
-    - name: "Synchronization Examples"
+    - name: Synchronization Examples
       href: synchronization-examples.md
-    - name: "Handling dispatch routines in stream drivers"
+    - name: Handling dispatch routines in stream drivers
       href: handling-dispatch-routines-in-stream-drivers.md
-    - name: "Notes on Writing Stream Class Minidrivers"
+    - name: Notes on Writing Stream Class Minidrivers
       href: notes-on-writing-stream-class-minidrivers.md
-    - name: "Stream Class Debugging"
+    - name: Stream Class Debugging
       href: stream-class-debugging.md
-  - name: "USBCAMD Minidriver Library"
-# Auto-expanded node
-    items: 
-    - name: "USBCAMD Minidriver Library"
+  - name: USBCAMD Minidriver Library
+    items:
+    - name: USBCAMD Minidriver Library
       href: usbcamd-minidriver-library.md
-    - name: "USBCAMD2 Camera Configurations"
+    - name: USBCAMD2 Camera Configurations
       href: usbcamd2-camera-configurations.md
-    - name: "USBCAMD2 Features"
+    - name: USBCAMD2 Features
       href: usbcamd2-features.md
-    - name: "USBCAMD2 Minidriver Operation"
-# Auto-expanded node
-      items: 
-      - name: "USBCAMD2 Minidriver Operation"
+    - name: USBCAMD2 Minidriver Operation
+      items:
+      - name: USBCAMD2 Minidriver Operation
         href: usbcamd2-minidriver-operation.md
-      - name: "Acquiring USBCAMD2 Features"
+      - name: Acquiring USBCAMD2 Features
         href: acquiring-usbcamd2-features.md
-      - name: "Data Flow Using Isochronous Pipes"
+      - name: Data Flow Using Isochronous Pipes
         href: data-flow-using-isochronous-pipes.md
-      - name: "Capturing Still Frames from a USB Camera"
+      - name: Capturing Still Frames from a USB Camera
         href: capturing-still-frames-from-a-usb-camera.md
-  - name: "DVD Decoder Minidrivers"
-# Auto-expanded node
-    items: 
-    - name: "DVD Decoder Minidrivers"
+  - name: DVD Decoder Minidrivers
+    items:
+    - name: DVD Decoder Minidrivers
       href: dvd-decoder-minidrivers2.md
-    - name: "DVD Decoder Support in Windows"
-# Auto-expanded node
-      items: 
-      - name: "DVD Decoder Support in Windows"
+    - name: DVD Decoder Support in Windows
+      items:
+      - name: DVD Decoder Support in Windows
         href: dvd-decoder-support-in-windows.md
-      - name: "Hardware-based DVD Decoding"
+      - name: Hardware-based DVD Decoding
         href: hardware-based-dvd-decoding.md
-      - name: "Software-based DVD Decoding"
+      - name: Software-based DVD Decoding
         href: software-based-dvd-decoding.md
-      - name: "DVD Decoder Related KS Properties"
+      - name: DVD Decoder Related KS Properties
         href: dvd-decoder-related-ks-properties.md
-      - name: "DVD Decoder Related KS Events"
+      - name: DVD Decoder Related KS Events
         href: dvd-decoder-related-ks-events.md
-    - name: "DVD Data Streams"
-# Auto-expanded node
-      items: 
-      - name: "DVD Data Streams"
+    - name: DVD Data Streams
+      items:
+      - name: DVD Data Streams
         href: dvd-data-streams.md
-      - name: "Input Streams"
+      - name: Input Streams
         href: input-streams.md
-      - name: "Output Streams"
+      - name: Output Streams
         href: output-streams.md
-      - name: "Stream Changes"
+      - name: Stream Changes
         href: stream-changes.md
-      - name: "Stream Synchronization"
+      - name: Stream Synchronization
         href: stream-synchronization.md
-      - name: "Closed Captioning Streams"
+      - name: Closed Captioning Streams
         href: closed-captioning-streams.md
-      - name: "Multiple Data Streams on the same Hardware"
+      - name: Multiple Data Streams on the same Hardware
         href: multiple-data-streams-on-the-same-hardware.md
-    - name: "DVD Copyright Protection"
-# Auto-expanded node
-      items: 
-      - name: "DVD Copyright Protection"
+    - name: DVD Copyright Protection
+      items:
+      - name: DVD Copyright Protection
         href: dvd-copyright-protection.md
-      - name: "Copyright Protection Implementation"
+      - name: Copyright Protection Implementation
         href: copyright-protection-implementation.md
-      - name: "Synchronizing Key Exchange with Data Flow"
+      - name: Synchronizing Key Exchange with Data Flow
         href: synchronizing-key-exchange-with-data-flow.md
-      - name: "Macrovision"
+      - name: Macrovision
         href: macrovision.md
-    - name: "DVD Regionalization"
+    - name: DVD Regionalization
       href: dvd-regionalization.md
-    - name: "Master Clock"
-# Auto-expanded node
-      items: 
-      - name: "Master Clock"
+    - name: Master Clock
+      items:
+      - name: Master Clock
         href: master-clock.md
-      - name: "DVD Decoder Related Clock Events"
+      - name: DVD Decoder Related Clock Events
         href: dvd-decoder-related-clock-events.md
-      - name: "DVD Related Clock Functions"
+      - name: DVD Related Clock Functions
         href: dvd-related-clock-functions.md
-  - name: "Kernel Streaming"
-# Auto-expanded node
-    items: 
-    - name: "Kernel Streaming"
+  - name: Kernel Streaming
+    items:
+    - name: Kernel Streaming
       href: kernel-streaming.md
-    - name: "KS Minidriver Architecture"
-# Auto-expanded node
-      items: 
-      - name: "KS Minidriver Architecture"
+    - name: KS Minidriver Architecture
+      items:
+      - name: KS Minidriver Architecture
         href: ks-minidriver-architecture.md
-      - name: "KS Filters"
+      - name: KS Filters
         href: ks-filters.md
-      - name: "KS Pins"
+      - name: KS Pins
         href: ks-pins.md
-      - name: "KS Data Formats and Data Ranges"
+      - name: KS Data Formats and Data Ranges
         href: ks-data-formats-and-data-ranges.md
-      - name: "KS Mediums"
+      - name: KS Mediums
         href: ks-mediums.md
-      - name: "KS Interfaces"
+      - name: KS Interfaces
         href: ks-interfaces.md
-      - name: "Quality Management"
+      - name: Quality Management
         href: quality-management.md
-    - name: "KS Properties, Events, and Methods"
-# Auto-expanded node
-      items: 
-      - name: "KS Properties, Events, and Methods"
+    - name: KS Properties, Events, and Methods
+      items:
+      - name: KS Properties, Events, and Methods
         href: ks-properties--events--and-methods.md
-      - name: "KS Properties"
+      - name: KS Properties
         href: ks-properties.md
-      - name: "KS Events"
+      - name: KS Events
         href: ks-events.md
-      - name: "KS Methods"
+      - name: KS Methods
         href: ks-methods.md
-    - name: "KS Clocks"
-# Auto-expanded node
-      items: 
-      - name: "KS Clocks"
+    - name: KS Clocks
+      items:
+      - name: KS Clocks
         href: ks-clocks.md
-      - name: "Master Clocks"
+      - name: Master Clocks
         href: master-clocks.md
-      - name: "Default Clocks"
+      - name: Default Clocks
         href: default-clocks.md
-    - name: "KS Allocators"
-# Auto-expanded node
-      items: 
-      - name: "KS Allocators"
+    - name: KS Allocators
+      items:
+      - name: KS Allocators
         href: ks-allocators.md
-      - name: "Default Allocators"
+      - name: Default Allocators
         href: default-allocators.md
-      - name: "Filter Specific Allocators"
+      - name: Filter Specific Allocators
         href: filter-specific-allocators.md
-      - name: "Allocation Schemes"
+      - name: Allocation Schemes
         href: allocation-schemes.md
-- name: "Kernel Streaming Proxy Plug-ins Design Guide"
-# Auto-expanded node
-  items: 
-  - name: "Kernel Streaming Proxy Plug-ins Design Guide"
+- name: Kernel Streaming Proxy Plug-ins Design Guide
+  items:
+  - name: Kernel Streaming Proxy Plug-ins Design Guide
     href: kernel-streaming-proxy-plug-ins-design-guide.md
-  - name: "Registering KS Proxy Plug-ins"
+  - name: Registering KS Proxy Plug-ins
     href: registering-ks-proxy-plug-ins.md
-  - name: "Interface Handler Plug-in"
+  - name: Interface Handler Plug-in
     href: interface-handler-plug-in.md
-  - name: "Property Page Plug-in"
+  - name: Property Page Plug-in
     href: property-page-plug-in.md
-- name: "AVStream Property Sets"
-# Auto-expanded node
-  items: 
-  - name: "AVStream Property Sets"
-    href: avstream-property-sets.md
-  - name: "KSPROPSETID_Clock"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_Clock"
+- name: AVStream Property Sets
+  items:
+  - name: KSPROPSETID_Clock
+    items:
+    - name: KSPROPSETID_Clock
       href: kspropsetid-clock.md
-    - name: "KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME"
+    - name: KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME
       href: ksproperty-clock-correlatedphysicaltime.md
-    - name: "KSPROPERTY_CLOCK_CORRELATEDTIME"
+    - name: KSPROPERTY_CLOCK_CORRELATEDTIME
       href: ksproperty-clock-correlatedtime.md
-    - name: "KSPROPERTY_CLOCK_FUNCTIONTABLE"
+    - name: KSPROPERTY_CLOCK_FUNCTIONTABLE
       href: ksproperty-clock-functiontable.md
-    - name: "KSPROPERTY_CLOCK_PHYSICALTIME"
+    - name: KSPROPERTY_CLOCK_PHYSICALTIME
       href: ksproperty-clock-physicaltime.md
-    - name: "KSPROPERTY_CLOCK_RESOLUTION"
+    - name: KSPROPERTY_CLOCK_RESOLUTION
       href: ksproperty-clock-resolution.md
-    - name: "KSPROPERTY_CLOCK_STATE"
+    - name: KSPROPERTY_CLOCK_STATE
       href: ksproperty-clock-state.md
-    - name: "KSPROPERTY_CLOCK_TIME"
+    - name: KSPROPERTY_CLOCK_TIME
       href: ksproperty-clock-time.md
-  - name: "KSPROPSETID_Connection"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_Connection"
+  - name: KSPROPSETID_Connection
+    items:
+    - name: KSPROPSETID_Connection
       href: kspropsetid-connection.md
-    - name: "KSPROPERTY_CONNECTION_ALLOCATORFRAMING"
+    - name: KSPROPERTY_CONNECTION_ALLOCATORFRAMING
       href: ksproperty-connection-allocatorframing.md
-    - name: "KSPROPERTY_CONNECTION_ALLOCATORFRAMING_EX"
+    - name: KSPROPERTY_CONNECTION_ALLOCATORFRAMING_EX
       href: ksproperty-connection-allocatorframing-ex.md
-    - name: "KSPROPERTY_CONNECTION_ACQUIREORDERING"
+    - name: KSPROPERTY_CONNECTION_ACQUIREORDERING
       href: ksproperty-connection-acquireordering.md
-    - name: "KSPROPERTY_CONNECTION_DATAFORMAT"
+    - name: KSPROPERTY_CONNECTION_DATAFORMAT
       href: ksproperty-connection-dataformat.md
-    - name: "KSPROPERTY_CONNECTION_PRIORITY"
+    - name: KSPROPERTY_CONNECTION_PRIORITY
       href: ksproperty-connection-priority.md
-    - name: "KSPROPERTY_CONNECTION_PROPOSEDATAFORMAT"
+    - name: KSPROPERTY_CONNECTION_PROPOSEDATAFORMAT
       href: ksproperty-connection-proposedataformat.md
-    - name: "KSPROPERTY_CONNECTION_STARTAT"
+    - name: KSPROPERTY_CONNECTION_STARTAT
       href: ksproperty-connection-startat.md
-    - name: "KSPROPERTY_CONNECTION_STATE"
+    - name: KSPROPERTY_CONNECTION_STATE
       href: ksproperty-connection-state.md
-  - name: "KSPROPSETID_General"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_General"
+  - name: KSPROPSETID_General
+    items:
+    - name: KSPROPSETID_General
       href: kspropsetid-general.md
-    - name: "KSPROPERTY_GENERAL_COMPONENTID"
+    - name: KSPROPERTY_GENERAL_COMPONENTID
       href: ksproperty-general-componentid.md
-  - name: "KSPROPSETID_GM"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_GM"
+  - name: KSPROPSETID_GM
+    items:
+    - name: KSPROPSETID_GM
       href: kspropsetid-gm.md
-    - name: "KSPROPERTY_GM_GRAPHMANAGER"
+    - name: KSPROPERTY_GM_GRAPHMANAGER
       href: ksproperty-gm-graphmanager.md
-    - name: "KSPROPERTY_GM_TIMESTAMP_CLOCK"
+    - name: KSPROPERTY_GM_TIMESTAMP_CLOCK
       href: ksproperty-gm-timestamp-clock.md
-    - name: "KSPROPERTY_GM_RATEMATCH"
+    - name: KSPROPERTY_GM_RATEMATCH
       href: ksproperty-gm-ratematch.md
-    - name: "KSPROPERTY_GM_RENDER_CLOCK"
+    - name: KSPROPERTY_GM_RENDER_CLOCK
       href: ksproperty-gm-render-clock.md
-  - name: "KSPROPSETID_MediaSeeking"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_MediaSeeking"
+  - name: KSPROPSETID_MediaSeeking
+    items:
+    - name: KSPROPSETID_MediaSeeking
       href: kspropsetid-mediaseeking.md
-    - name: "KSPROPERTY_MEDIASEEKING_CAPABILITIES"
+    - name: KSPROPERTY_MEDIASEEKING_CAPABILITIES
       href: ksproperty-mediaseeking-capabilities.md
-    - name: "KSPROPERTY_MEDIASEEKING_FORMATS"
+    - name: KSPROPERTY_MEDIASEEKING_FORMATS
       href: ksproperty-mediaseeking-formats.md
-    - name: "KSPROPERTY_MEDIASEEKING_TIMEFORMAT"
+    - name: KSPROPERTY_MEDIASEEKING_TIMEFORMAT
       href: ksproperty-mediaseeking-timeformat.md
-    - name: "KSPROPERTY_MEDIASEEKING_POSITION"
+    - name: KSPROPERTY_MEDIASEEKING_POSITION
       href: ksproperty-mediaseeking-position.md
-    - name: "KSPROPERTY_MEDIASEEKING_STOPPOSITION"
+    - name: KSPROPERTY_MEDIASEEKING_STOPPOSITION
       href: ksproperty-mediaseeking-stopposition.md
-    - name: "KSPROPERTY_MEDIASEEKING_POSITIONS"
+    - name: KSPROPERTY_MEDIASEEKING_POSITIONS
       href: ksproperty-mediaseeking-positions.md
-    - name: "KSPROPERTY_MEDIASEEKING_DURATION"
+    - name: KSPROPERTY_MEDIASEEKING_DURATION
       href: ksproperty-mediaseeking-duration.md
-    - name: "KSPROPERTY_MEDIASEEKING_AVAILABLE"
+    - name: KSPROPERTY_MEDIASEEKING_AVAILABLE
       href: ksproperty-mediaseeking-available.md
-    - name: "KSPROPERTY_MEDIASEEKING_PREROLL"
+    - name: KSPROPERTY_MEDIASEEKING_PREROLL
       href: ksproperty-mediaseeking-preroll.md
-    - name: "KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT"
+    - name: KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT
       href: ksproperty-mediaseeking-converttimeformat.md
-  - name: "KSPROPSETID_Pin"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_Pin"
+  - name: KSPROPSETID_Pin
+    items:
+    - name: KSPROPSETID_Pin
       href: kspropsetid-pin.md
-    - name: "KSPROPERTY_PIN_CATEGORY"
+    - name: KSPROPERTY_PIN_CATEGORY
       href: ksproperty-pin-category.md
-    - name: "KSPROPERTY_PIN_CINSTANCES"
+    - name: KSPROPERTY_PIN_CINSTANCES
       href: ksproperty-pin-cinstances.md
-    - name: "KSPROPERTY_PIN_COMMUNICATION"
+    - name: KSPROPERTY_PIN_COMMUNICATION
       href: ksproperty-pin-communication.md
-    - name: "KSPROPERTY_PIN_CONSTRAINEDDATARANGES"
+    - name: KSPROPERTY_PIN_CONSTRAINEDDATARANGES
       href: ksproperty-pin-constraineddataranges.md
-    - name: "KSPROPERTY_PIN_CTYPES"
+    - name: KSPROPERTY_PIN_CTYPES
       href: ksproperty-pin-ctypes.md
-    - name: "KSPROPERTY_PIN_DATAFLOW"
+    - name: KSPROPERTY_PIN_DATAFLOW
       href: ksproperty-pin-dataflow.md
-    - name: "KSPROPERTY_PIN_DATAINTERSECTION"
+    - name: KSPROPERTY_PIN_DATAINTERSECTION
       href: ksproperty-pin-dataintersection.md
-    - name: "KSPROPERTY_PIN_DATARANGES"
+    - name: KSPROPERTY_PIN_DATARANGES
       href: ksproperty-pin-dataranges.md
-    - name: "KSPROPERTY_PIN_GLOBALCINSTANCES"
+    - name: KSPROPERTY_PIN_GLOBALCINSTANCES
       href: ksproperty-pin-globalcinstances.md
-    - name: "KSPROPERTY_PIN_INTERFACES"
+    - name: KSPROPERTY_PIN_INTERFACES
       href: ksproperty-pin-interfaces.md
-    - name: "KSPROPERTY_PIN_MEDIUMS"
+    - name: KSPROPERTY_PIN_MEDIUMS
       href: ksproperty-pin-mediums.md
-    - name: "KSPROPERTY_PIN_MODEDATAFORMATS"
+    - name: KSPROPERTY_PIN_MODEDATAFORMATS
       href: ksproperty-pin-modedataformats.md
-    - name: "KSPROPERTY_PIN_NAME"
+    - name: KSPROPERTY_PIN_NAME
       href: ksproperty-pin-name.md
-    - name: "KSPROPERTY_PIN_NECESSARYINSTANCES"
+    - name: KSPROPERTY_PIN_NECESSARYINSTANCES
       href: ksproperty-pin-necessaryinstances.md
-    - name: "KSPROPERTY_PIN_PHYSICALCONNECTION"
+    - name: KSPROPERTY_PIN_PHYSICALCONNECTION
       href: ksproperty-pin-physicalconnection.md
-    - name: "KSPROPERTY_PIN_PROPOSEDATAFORMAT"
+    - name: KSPROPERTY_PIN_PROPOSEDATAFORMAT
       href: ksproperty-pin-proposedataformat.md
-    - name: "KSPROPERTY_PIN_PROPOSEDATAFORMAT2"
+    - name: KSPROPERTY_PIN_PROPOSEDATAFORMAT2
       href: ksproperty-pin-proposedataformat2.md
-  - name: "KSPROPSETID_Quality"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_Quality"
+  - name: KSPROPSETID_Quality
+    items:
+    - name: KSPROPSETID_Quality
       href: kspropsetid-quality.md
-    - name: "KSPROPERTY_QUALITY_ERROR"
+    - name: KSPROPERTY_QUALITY_ERROR
       href: ksproperty-quality-error.md
-    - name: "KSPROPERTY_QUALITY_REPORT"
+    - name: KSPROPERTY_QUALITY_REPORT
       href: ksproperty-quality-report.md
-  - name: "KSPROPSETID_Stream"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_Stream"
+  - name: KSPROPSETID_Stream
+    items:
+    - name: KSPROPSETID_Stream
       href: kspropsetid-stream.md
-    - name: "KSPROPERTY_STREAM_ALLOCATOR"
+    - name: KSPROPERTY_STREAM_ALLOCATOR
       href: ksproperty-stream-allocator.md
-    - name: "KSPROPERTY_STREAM_QUALITY"
+    - name: KSPROPERTY_STREAM_QUALITY
       href: ksproperty-stream-quality.md
-    - name: "KSPROPERTY_STREAM_DEGRADATION"
+    - name: KSPROPERTY_STREAM_DEGRADATION
       href: ksproperty-stream-degradation.md
-    - name: "KSPROPERTY_STREAM_MASTERCLOCK"
+    - name: KSPROPERTY_STREAM_MASTERCLOCK
       href: ksproperty-stream-masterclock.md
-    - name: "KSPROPERTY_STREAM_TIMEFORMAT"
+    - name: KSPROPERTY_STREAM_TIMEFORMAT
       href: ksproperty-stream-timeformat.md
-    - name: "KSPROPERTY_STREAM_PRESENTATIONTIME"
+    - name: KSPROPERTY_STREAM_PRESENTATIONTIME
       href: ksproperty-stream-presentationtime.md
-    - name: "KSPROPERTY_STREAM_PRESENTATIONEXTENT"
+    - name: KSPROPERTY_STREAM_PRESENTATIONEXTENT
       href: ksproperty-stream-presentationextent.md
-    - name: "KSPROPERTY_STREAM_FRAMETIME"
+    - name: KSPROPERTY_STREAM_FRAMETIME
       href: ksproperty-stream-frametime.md
-    - name: "KSPROPERTY_STREAM_RATECAPABILITY"
+    - name: KSPROPERTY_STREAM_RATECAPABILITY
       href: ksproperty-stream-ratecapability.md
-    - name: "KSPROPERTY_STREAM_RATE"
+    - name: KSPROPERTY_STREAM_RATE
       href: ksproperty-stream-rate.md
-    - name: "KSPROPERTY_STREAM_PIPE_ID"
+    - name: KSPROPERTY_STREAM_PIPE_ID
       href: ksproperty-stream-pipe-id.md
-  - name: "KSPROPSETID_StreamAllocator"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_StreamAllocator"
+  - name: KSPROPSETID_StreamAllocator
+    items:
+    - name: KSPROPSETID_StreamAllocator
       href: kspropsetid-streamallocator.md
-    - name: "KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE"
+    - name: KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE
       href: ksproperty-streamallocator-functiontable.md
-    - name: "KSPROPERTY_STREAMALLOCATOR_STATUS"
+    - name: KSPROPERTY_STREAMALLOCATOR_STATUS
       href: ksproperty-streamallocator-status.md
-  - name: "KSPROPSETID_StreamInterface"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_StreamInterface"
+  - name: KSPROPSETID_StreamInterface
+    items:
+    - name: KSPROPSETID_StreamInterface
       href: kspropsetid-streaminterface.md
-    - name: "KSPROPERTY_STREAMINTERFACE_HEADERSIZE"
+    - name: KSPROPERTY_STREAMINTERFACE_HEADERSIZE
       href: ksproperty-streaminterface-headersize.md
-  - name: "KSPROPSETID_Topology"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_Topology"
+  - name: KSPROPSETID_Topology
+    items:
+    - name: KSPROPSETID_Topology
       href: kspropsetid-topology.md
-    - name: "KSPROPERTY_TOPOLOGY_CATEGORIES"
+    - name: KSPROPERTY_TOPOLOGY_CATEGORIES
       href: ksproperty-topology-categories.md
-    - name: "KSPROPERTY_TOPOLOGY_CONNECTIONS"
+    - name: KSPROPERTY_TOPOLOGY_CONNECTIONS
       href: ksproperty-topology-connections.md
-    - name: "KSPROPERTY_TOPOLOGY_NAME"
+    - name: KSPROPERTY_TOPOLOGY_NAME
       href: ksproperty-topology-name.md
-    - name: "KSPROPERTY_TOPOLOGY_NODES"
+    - name: KSPROPERTY_TOPOLOGY_NODES
       href: ksproperty-topology-nodes.md
-  - name: "KSPROPSETID_VramCapture"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_VramCapture"
+  - name: KSPROPSETID_VramCapture
+    items:
+    - name: KSPROPSETID_VramCapture
       href: kspropsetid-vramcapture.md
-    - name: "KSPROPERTY_DISPLAY_ADAPTER_GUID"
+    - name: KSPROPERTY_DISPLAY_ADAPTER_GUID
       href: ksproperty-display-adapter-guid.md
-    - name: "KSPROPERTY_PREFERRED_CAPTURE_SURFACE"
+    - name: KSPROPERTY_PREFERRED_CAPTURE_SURFACE
       href: ksproperty-preferred-capture-surface.md
-    - name: "KSPROPERTY_CURRENT_CAPTURE_SURFACE"
+    - name: KSPROPERTY_CURRENT_CAPTURE_SURFACE
       href: ksproperty-current-capture-surface.md
-    - name: "KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS"
+    - name: KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS
       href: ksproperty-map-capture-handle-to-vram-address.md
-- name: "Broadcast Driver Architecture Property, Event, and Method Sets"
-# Auto-expanded node
-  items: 
-  - name: "Broadcast Driver Architecture Property, Event, and Method Sets"
+- name: Broadcast Driver Architecture Property, Event, and Method Sets
+  items:
+  - name: Broadcast Driver Architecture Property, Event, and Method Sets
     href: broadcast-driver-architecture-property--event--and-method-sets.md
-  - name: "KSPROPSETID_BdaAutodemodulate"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_BdaAutodemodulate"
+  - name: KSPROPSETID_BdaAutodemodulate
+    items:
+    - name: KSPROPSETID_BdaAutodemodulate
       href: kspropsetid-bdaautodemodulate.md
-    - name: "KSPROPERTY_BDA_AUTODEMODULATE_START"
+    - name: KSPROPERTY_BDA_AUTODEMODULATE_START
       href: ksproperty-bda-autodemodulate-start.md
-    - name: "KSPROPERTY_BDA_AUTODEMODULATE_STOP"
+    - name: KSPROPERTY_BDA_AUTODEMODULATE_STOP
       href: ksproperty-bda-autodemodulate-stop.md
-  - name: "KSPROPSETID_BdaCA"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_BdaCA"
+  - name: KSPROPSETID_BdaCA
+    items:
+    - name: KSPROPSETID_BdaCA
       href: kspropsetid-bdaca.md
-    - name: "KSPROPERTY_BDA_CA_MODULE_STATUS"
+    - name: KSPROPERTY_BDA_CA_MODULE_STATUS
       href: ksproperty-bda-ca-module-status.md
-    - name: "KSPROPERTY_BDA_CA_MODULE_UI"
+    - name: KSPROPERTY_BDA_CA_MODULE_UI
       href: ksproperty-bda-ca-module-ui.md
-    - name: "KSPROPERTY_BDA_CA_REMOVE_PROGRAM"
+    - name: KSPROPERTY_BDA_CA_REMOVE_PROGRAM
       href: ksproperty-bda-ca-remove-program.md
-    - name: "KSPROPERTY_BDA_CA_SET_PROGRAM_PIDS"
+    - name: KSPROPERTY_BDA_CA_SET_PROGRAM_PIDS
       href: ksproperty-bda-ca-set-program-pids.md
-    - name: "KSPROPERTY_BDA_CA_SMART_CARD_STATUS"
+    - name: KSPROPERTY_BDA_CA_SMART_CARD_STATUS
       href: ksproperty-bda-ca-smart-card-status.md
-    - name: "KSPROPERTY_BDA_ECM_MAP_STATUS"
+    - name: KSPROPERTY_BDA_ECM_MAP_STATUS
       href: ksproperty-bda-ecm-map-status.md
-  - name: "KSEVENTSETID_BdaCAEvent"
-# Auto-expanded node
-    items: 
-    - name: "KSEVENTSETID_BdaCAEvent"
+  - name: KSEVENTSETID_BdaCAEvent
+    items:
+    - name: KSEVENTSETID_BdaCAEvent
       href: kseventsetid-bdacaevent.md
-    - name: "KSEVENT_BDA_CA_MODULE_STATUS_CHANGED"
+    - name: KSEVENT_BDA_CA_MODULE_STATUS_CHANGED
       href: ksevent-bda-ca-module-status-changed.md
-    - name: "KSEVENT_BDA_CA_MODULE_UI_REQUESTED"
+    - name: KSEVENT_BDA_CA_MODULE_UI_REQUESTED
       href: ksevent-bda-ca-module-ui-requested.md
-    - name: "KSEVENT_BDA_CA_SMART_CARD_STATUS_CHANGED"
+    - name: KSEVENT_BDA_CA_SMART_CARD_STATUS_CHANGED
       href: ksevent-bda-ca-smart-card-status-changed.md
-    - name: "KSEVENT_BDA_PROGRAM_FLOW_STATUS_CHANGED"
+    - name: KSEVENT_BDA_PROGRAM_FLOW_STATUS_CHANGED
       href: ksevent-bda-program-flow-status-changed.md
-  - name: "KSMETHODSETID_BdaChangeSync"
-# Auto-expanded node
-    items: 
-    - name: "KSMETHODSETID_BdaChangeSync"
+  - name: KSMETHODSETID_BdaChangeSync
+    items:
+    - name: KSMETHODSETID_BdaChangeSync
       href: ksmethodsetid-bdachangesync.md
-    - name: "KSMETHOD_BDA_CHECK_CHANGES"
+    - name: KSMETHOD_BDA_CHECK_CHANGES
       href: ksmethod-bda-check-changes.md
-    - name: "KSMETHOD_BDA_COMMIT_CHANGES"
+    - name: KSMETHOD_BDA_COMMIT_CHANGES
       href: ksmethod-bda-commit-changes.md
-    - name: "KSMETHOD_BDA_GET_CHANGE_STATE"
+    - name: KSMETHOD_BDA_GET_CHANGE_STATE
       href: ksmethod-bda-get-change-state.md
-    - name: "KSMETHOD_BDA_START_CHANGES"
+    - name: KSMETHOD_BDA_START_CHANGES
       href: ksmethod-bda-start-changes.md
-  - name: "KSMETHODSETID_BdaDeviceConfiguration"
-# Auto-expanded node
-    items: 
-    - name: "KSMETHODSETID_BdaDeviceConfiguration"
+  - name: KSMETHODSETID_BdaDeviceConfiguration
+    items:
+    - name: KSMETHODSETID_BdaDeviceConfiguration
       href: ksmethodsetid-bdadeviceconfiguration.md
-    - name: "KSMETHOD_BDA_CREATE_PIN_FACTORY"
+    - name: KSMETHOD_BDA_CREATE_PIN_FACTORY
       href: ksmethod-bda-create-pin-factory.md
-    - name: "KSMETHOD_BDA_CREATE_TOPOLOGY"
+    - name: KSMETHOD_BDA_CREATE_TOPOLOGY
       href: ksmethod-bda-create-topology.md
-    - name: "KSMETHOD_BDA_DELETE_PIN_FACTORY"
+    - name: KSMETHOD_BDA_DELETE_PIN_FACTORY
       href: ksmethod-bda-delete-pin-factory.md
-  - name: "KSPROPSETID_BdaDigitalDemodulator"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_BdaDigitalDemodulator"
+  - name: KSPROPSETID_BdaDigitalDemodulator
+    items:
+    - name: KSPROPSETID_BdaDigitalDemodulator
       href: kspropsetid-bdadigitaldemodulator.md
-    - name: "KSPROPERTY_BDA_GUARD_INTERVAL"
+    - name: KSPROPERTY_BDA_GUARD_INTERVAL
       href: ksproperty-bda-guard-interval.md
-    - name: "KSPROPERTY_BDA_INNER_FEC_RATE"
+    - name: KSPROPERTY_BDA_INNER_FEC_RATE
       href: ksproperty-bda-inner-fec-rate.md
-    - name: "KSPROPERTY_BDA_INNER_FEC_TYPE"
+    - name: KSPROPERTY_BDA_INNER_FEC_TYPE
       href: ksproperty-bda-inner-fec-type.md
-    - name: "KSPROPERTY_BDA_MODULATION_TYPE"
+    - name: KSPROPERTY_BDA_MODULATION_TYPE
       href: ksproperty-bda-modulation-type.md
-    - name: "KSPROPERTY_BDA_OUTER_FEC_RATE"
+    - name: KSPROPERTY_BDA_OUTER_FEC_RATE
       href: ksproperty-bda-outer-fec-rate.md
-    - name: "KSPROPERTY_BDA_OUTER_FEC_TYPE"
+    - name: KSPROPERTY_BDA_OUTER_FEC_TYPE
       href: ksproperty-bda-outer-fec-type.md
-    - name: "KSPROPERTY_BDA_SYMBOL_RATE"
+    - name: KSPROPERTY_BDA_SYMBOL_RATE
       href: ksproperty-bda-symbol-rate.md
-    - name: "KSPROPERTY_BDA_SPECTRAL_INVERSION"
+    - name: KSPROPERTY_BDA_SPECTRAL_INVERSION
       href: ksproperty-bda-spectral-inversion.md
-    - name: "KSPROPERTY_BDA_TRANSMISSION_MODE"
+    - name: KSPROPERTY_BDA_TRANSMISSION_MODE
       href: ksproperty-bda-transmission-mode.md
-  - name: "KSPROPSETID_BdaFrequencyFilter"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_BdaFrequencyFilter"
+  - name: KSPROPSETID_BdaFrequencyFilter
+    items:
+    - name: KSPROPSETID_BdaFrequencyFilter
       href: kspropsetid-bdafrequencyfilter.md
-    - name: "KSPROPERTY_BDA_RF_TUNER_BANDWIDTH"
+    - name: KSPROPERTY_BDA_RF_TUNER_BANDWIDTH
       href: ksproperty-bda-rf-tuner-bandwidth.md
-    - name: "KSPROPERTY_BDA_RF_TUNER_FREQUENCY"
+    - name: KSPROPERTY_BDA_RF_TUNER_FREQUENCY
       href: ksproperty-bda-rf-tuner-frequency.md
-    - name: "KSPROPERTY_BDA_RF_TUNER_FREQUENCY_MULTIPLIER"
+    - name: KSPROPERTY_BDA_RF_TUNER_FREQUENCY_MULTIPLIER
       href: ksproperty-bda-rf-tuner-frequency-multiplier.md
-    - name: "KSPROPERTY_BDA_RF_TUNER_POLARITY"
+    - name: KSPROPERTY_BDA_RF_TUNER_POLARITY
       href: ksproperty-bda-rf-tuner-polarity.md
-    - name: "KSPROPERTY_BDA_RF_TUNER_RANGE"
+    - name: KSPROPERTY_BDA_RF_TUNER_RANGE
       href: ksproperty-bda-rf-tuner-range.md
-    - name: "KSPROPERTY_BDA_RF_TUNER_TRANSPONDER"
+    - name: KSPROPERTY_BDA_RF_TUNER_TRANSPONDER
       href: ksproperty-bda-rf-tuner-transponder.md
-  - name: "KSPROPSETID_BdaLNBInfo"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_BdaLNBInfo"
+  - name: KSPROPSETID_BdaLNBInfo
+    items:
+    - name: KSPROPSETID_BdaLNBInfo
       href: kspropsetid-bdalnbinfo.md
-    - name: "KSPROPERTY_BDA_LNB_LOF_HIGH_BAND"
+    - name: KSPROPERTY_BDA_LNB_LOF_HIGH_BAND
       href: ksproperty-bda-lnb-lof-high-band.md
-    - name: "KSPROPERTY_BDA_LNB_LOF_LOW_BAND"
+    - name: KSPROPERTY_BDA_LNB_LOF_LOW_BAND
       href: ksproperty-bda-lnb-lof-low-band.md
-    - name: "KSPROPERTY_BDA_LNB_SWITCH_FREQUENCY"
+    - name: KSPROPERTY_BDA_LNB_SWITCH_FREQUENCY
       href: ksproperty-bda-lnb-switch-frequency.md
-  - name: "KSPROPSETID_BdaNullTransform"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_BdaNullTransform"
+  - name: KSPROPSETID_BdaNullTransform
+    items:
+    - name: KSPROPSETID_BdaNullTransform
       href: kspropsetid-bdanulltransform.md
-    - name: "KSPROPERTY_BDA_NULL_TRANSFORM_START"
+    - name: KSPROPERTY_BDA_NULL_TRANSFORM_START
       href: ksproperty-bda-null-transform-start.md
-    - name: "KSPROPERTY_BDA_NULL_TRANSFORM_STOP"
+    - name: KSPROPERTY_BDA_NULL_TRANSFORM_STOP
       href: ksproperty-bda-null-transform-stop.md
-  - name: "KSPROPSETID_BdaPIDFilter"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_BdaPIDFilter"
+  - name: KSPROPSETID_BdaPIDFilter
+    items:
+    - name: KSPROPSETID_BdaPIDFilter
       href: kspropsetid-bdapidfilter.md
-    - name: "KSPROPERTY_BDA_PIDFILTER_LIST_PIDS"
+    - name: KSPROPERTY_BDA_PIDFILTER_LIST_PIDS
       href: ksproperty-bda-pidfilter-list-pids.md
-    - name: "KSPROPERTY_BDA_PIDFILTER_MAP_PIDS"
+    - name: KSPROPERTY_BDA_PIDFILTER_MAP_PIDS
       href: ksproperty-bda-pidfilter-map-pids.md
-    - name: "KSPROPERTY_BDA_PIDFILTER_UNMAP_PIDS"
+    - name: KSPROPERTY_BDA_PIDFILTER_UNMAP_PIDS
       href: ksproperty-bda-pidfilter-unmap-pids.md
-  - name: "KSPROPSETID_BdaPinControl"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_BdaPinControl"
+  - name: KSPROPSETID_BdaPinControl
+    items:
+    - name: KSPROPSETID_BdaPinControl
       href: kspropsetid-bdapincontrol.md
-    - name: "KSPROPERTY_BDA_PIN_ID"
+    - name: KSPROPERTY_BDA_PIN_ID
       href: ksproperty-bda-pin-id.md
-    - name: "KSPROPERTY_BDA_PIN_TYPE"
+    - name: KSPROPERTY_BDA_PIN_TYPE
       href: ksproperty-bda-pin-type.md
-  - name: "KSEVENTSETID_BdaPinEvent"
-# Auto-expanded node
-    items: 
-    - name: "KSEVENTSETID_BdaPinEvent"
+  - name: KSEVENTSETID_BdaPinEvent
+    items:
+    - name: KSEVENTSETID_BdaPinEvent
       href: kseventsetid-bdapinevent.md
-    - name: "KSEVENT_BDA_PIN_CONNECTED"
+    - name: KSEVENT_BDA_PIN_CONNECTED
       href: ksevent-bda-pin-connected.md
-    - name: "KSEVENT_BDA_PIN_DISCONNECTED"
+    - name: KSEVENT_BDA_PIN_DISCONNECTED
       href: ksevent-bda-pin-disconnected.md
-  - name: "KSPROPSETID_BdaSignalStats"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_BdaSignalStats"
+  - name: KSPROPSETID_BdaSignalStats
+    items:
+    - name: KSPROPSETID_BdaSignalStats
       href: kspropsetid-bdasignalstats.md
-    - name: "KSPROPERTY_BDA_SIGNAL_LOCK_CAPS"
+    - name: KSPROPERTY_BDA_SIGNAL_LOCK_CAPS
       href: ksproperty-bda-signal-lock-caps.md
-    - name: "KSPROPERTY_BDA_SIGNAL_LOCK_TYPE"
+    - name: KSPROPERTY_BDA_SIGNAL_LOCK_TYPE
       href: ksproperty-bda-signal-lock-type.md
-    - name: "KSPROPERTY_BDA_SIGNAL_LOCKED"
+    - name: KSPROPERTY_BDA_SIGNAL_LOCKED
       href: ksproperty-bda-signal-locked.md
-    - name: "KSPROPERTY_BDA_SIGNAL_PRESENT"
+    - name: KSPROPERTY_BDA_SIGNAL_PRESENT
       href: ksproperty-bda-signal-present.md
-    - name: "KSPROPERTY_BDA_SIGNAL_QUALITY"
+    - name: KSPROPERTY_BDA_SIGNAL_QUALITY
       href: ksproperty-bda-signal-quality.md
-    - name: "KSPROPERTY_BDA_SIGNAL_STRENGTH"
+    - name: KSPROPERTY_BDA_SIGNAL_STRENGTH
       href: ksproperty-bda-signal-strength.md
-    - name: "KSPROPERTY_BDA_SAMPLE_TIME"
+    - name: KSPROPERTY_BDA_SAMPLE_TIME
       href: ksproperty-bda-sample-time.md
-  - name: "KSPROPSETID_BdaTableSection"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_BdaTableSection"
+  - name: KSPROPSETID_BdaTableSection
+    items:
+    - name: KSPROPSETID_BdaTableSection
       href: kspropsetid-bdatablesection.md
-    - name: "KSPROPERTY_BDA_TABLE_SECTION"
+    - name: KSPROPERTY_BDA_TABLE_SECTION
       href: ksproperty-bda-table-section.md
-  - name: "KSPROPSETID_BdaTopology"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_BdaTopology"
+  - name: KSPROPSETID_BdaTopology
+    items:
+    - name: KSPROPSETID_BdaTopology
       href: kspropsetid-bdatopology.md
-    - name: "KSPROPERTY_BDA_CONTROLLING_PIN_ID"
+    - name: KSPROPERTY_BDA_CONTROLLING_PIN_ID
       href: ksproperty-bda-controlling-pin-id.md
-    - name: "KSPROPERTY_BDA_NODE_DESCRIPTORS"
+    - name: KSPROPERTY_BDA_NODE_DESCRIPTORS
       href: ksproperty-bda-node-descriptors.md
-    - name: "KSPROPERTY_BDA_NODE_EVENTS"
+    - name: KSPROPERTY_BDA_NODE_EVENTS
       href: ksproperty-bda-node-events.md
-    - name: "KSPROPERTY_BDA_NODE_METHODS"
+    - name: KSPROPERTY_BDA_NODE_METHODS
       href: ksproperty-bda-node-methods.md
-    - name: "KSPROPERTY_BDA_NODE_PROPERTIES"
+    - name: KSPROPERTY_BDA_NODE_PROPERTIES
       href: ksproperty-bda-node-properties.md
-    - name: "KSPROPERTY_BDA_NODE_TYPES"
+    - name: KSPROPERTY_BDA_NODE_TYPES
       href: ksproperty-bda-node-types.md
-    - name: "KSPROPERTY_BDA_PIN_TYPES"
+    - name: KSPROPERTY_BDA_PIN_TYPES
       href: ksproperty-bda-pin-types.md
-    - name: "KSPROPERTY_BDA_TEMPLATE_CONNECTIONS"
+    - name: KSPROPERTY_BDA_TEMPLATE_CONNECTIONS
       href: ksproperty-bda-template-connections.md
-  - name: "KSPROPSETID_BdaVoidTransform"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_BdaVoidTransform"
+  - name: KSPROPSETID_BdaVoidTransform
+    items:
+    - name: KSPROPSETID_BdaVoidTransform
       href: kspropsetid-bdavoidtransform.md
-    - name: "KSPROPERTY_BDA_VOID_TRANSFORM_START"
+    - name: KSPROPERTY_BDA_VOID_TRANSFORM_START
       href: ksproperty-bda-void-transform-start.md
-    - name: "KSPROPERTY_BDA_VOID_TRANSFORM_STOP"
+    - name: KSPROPERTY_BDA_VOID_TRANSFORM_STOP
       href: ksproperty-bda-void-transform-stop.md
-- name: "Broadcast Driver Architecture Constants"
-# Auto-expanded node
-  items: 
-  - name: "Broadcast Driver Architecture Constants"
+- name: Broadcast Driver Architecture Constants
+  items:
+  - name: Broadcast Driver Architecture Constants
     href: broadcast-driver-architecture-constants.md
-  - name: "BDA Filter Category GUIDs"
+  - name: BDA Filter Category GUIDs
     href: bda-filter-category-guids.md
-  - name: "BDA Node Category GUIDs"
+  - name: BDA Node Category GUIDs
     href: bda-node-category-guids.md
-  - name: "BDA Pin Name GUIDs"
+  - name: BDA Pin Name GUIDs
     href: bda-pin-name-guids.md
-  - name: "BDA Stream Format GUIDs"
+  - name: BDA Stream Format GUIDs
     href: bda-stream-format-guids.md
-  - name: "Broadcast Network Type GUIDs"
+  - name: Broadcast Network Type GUIDs
     href: broadcast-network-type-guids.md
-- name: "Encoder Property Sets"
-# Auto-expanded node
-  items: 
-  - name: "Encoder Property Sets"
+- name: Encoder Property Sets
+  items:
+  - name: Encoder Property Sets
     href: encoder-property-sets.md
-  - name: "CODECAPI_VIDEO_ENCODER"
+  - name: CODECAPI_VIDEO_ENCODER
     href: codecapi-video-encoder.md
-  - name: "CODECAPI_AUDIO_ENCODER"
+  - name: CODECAPI_AUDIO_ENCODER
     href: codecapi-audio-encoder.md
-  - name: "CODECAPI_SETALLDEFAULTS"
+  - name: CODECAPI_SETALLDEFAULTS
     href: codecapi-setalldefaults.md
-  - name: "CODECAPI_ALLSETTINGS"
+  - name: CODECAPI_ALLSETTINGS
     href: codecapi-allsettings.md
-  - name: "CODECAPI_SUPPORTSEVENTS"
+  - name: CODECAPI_SUPPORTSEVENTS
     href: codecapi-supportsevents.md
-  - name: "CODECAPI_CURRENTCHANGELIST"
+  - name: CODECAPI_CURRENTCHANGELIST
     href: codecapi-currentchangelist.md
-  - name: "ENCAPIPARAM_BITRATE"
+  - name: ENCAPIPARAM_BITRATE
     href: encapiparam-bitrate.md
-  - name: "ENCAPIPARAM_BITRATE_MODE"
+  - name: ENCAPIPARAM_BITRATE_MODE
     href: encapiparam-bitrate-mode.md
-  - name: "ENCAPIPARAM_PEAK_BITRATE"
+  - name: ENCAPIPARAM_PEAK_BITRATE
     href: encapiparam-peak-bitrate.md
-- name: "Encoder Events"
-# Auto-expanded node
-  items: 
-  - name: "Encoder Events"
+- name: Encoder Events
+  items:
+  - name: Encoder Events
     href: encoder-events.md
-  - name: "CODECAPI_CHANGELISTS"
+  - name: CODECAPI_CHANGELISTS
     href: codecapi-changelists.md
-- name: "AV/C Protocol Driver Function Codes"
-# Auto-expanded node
-  items: 
-  - name: "AV/C Protocol Driver Function Codes"
+- name: AV/C Protocol Driver Function Codes
+  items:
+  - name: AV/C Protocol Driver Function Codes
     href: av-c-protocol-driver-function-codes.md
-  - name: "AVC_FUNCTION_COMMAND"
+  - name: AVC_FUNCTION_COMMAND
     href: avc-function-command.md
-  - name: "AVC_FUNCTION_GET_PIN_COUNT"
+  - name: AVC_FUNCTION_GET_PIN_COUNT
     href: avc-function-get-pin-count.md
-  - name: "AVC_FUNCTION_GET_PIN_DESCRIPTOR"
+  - name: AVC_FUNCTION_GET_PIN_DESCRIPTOR
     href: avc-function-get-pin-descriptor.md
-  - name: "AVC_FUNCTION_GET_CONNECTINFO"
+  - name: AVC_FUNCTION_GET_CONNECTINFO
     href: avc-function-get-connectinfo.md
-  - name: "AVC_FUNCTION_SET_CONNECTINFO"
+  - name: AVC_FUNCTION_SET_CONNECTINFO
     href: avc-function-set-connectinfo.md
-  - name: "AVC_FUNCTION_ACQUIRE"
+  - name: AVC_FUNCTION_ACQUIRE
     href: avc-function-acquire.md
-  - name: "AVC_FUNCTION_RELEASE"
+  - name: AVC_FUNCTION_RELEASE
     href: avc-function-release.md
-  - name: "AVC_FUNCTION_CLR_CONNECTINFO"
+  - name: AVC_FUNCTION_CLR_CONNECTINFO
     href: avc-function-clr-connectinfo.md
-  - name: "AVC_FUNCTION_GET_EXT_PLUG_COUNTS"
+  - name: AVC_FUNCTION_GET_EXT_PLUG_COUNTS
     href: avc-function-get-ext-plug-counts.md
-  - name: "AVC_FUNCTION_GET_UNIQUE_ID"
+  - name: AVC_FUNCTION_GET_UNIQUE_ID
     href: avc-function-get-unique-id.md
-  - name: "AVC_FUNCTION_GET_REQUEST"
+  - name: AVC_FUNCTION_GET_REQUEST
     href: avc-function-get-request.md
-  - name: "AVC_FUNCTION_SEND_RESPONSE"
+  - name: AVC_FUNCTION_SEND_RESPONSE
     href: avc-function-send-response.md
-  - name: "AVC_FUNCTION_FIND_PEER_DO"
+  - name: AVC_FUNCTION_FIND_PEER_DO
     href: avc-function-find-peer-do.md
-  - name: "AVC_FUNCTION_PEER_DO_LIST"
+  - name: AVC_FUNCTION_PEER_DO_LIST
     href: avc-function-peer-do-list.md
-  - name: "AVC_FUNCTION_GET_SUBUNIT_INFO"
+  - name: AVC_FUNCTION_GET_SUBUNIT_INFO
     href: avc-function-get-subunit-info.md
-- name: "AV/C Streaming Protocol Driver Function Codes"
-# Auto-expanded node
-  items: 
-  - name: "AV/C Streaming Protocol Driver Function Codes"
+- name: AV/C Streaming Protocol Driver Function Codes
+  items:
+  - name: AV/C Streaming Protocol Driver Function Codes
     href: av-c-streaming-protocol-driver-function-codes.md
-  - name: "AVCSTRM_READ"
+  - name: AVCSTRM_READ
     href: avcstrm-read.md
-  - name: "AVCSTRM_WRITE"
+  - name: AVCSTRM_WRITE
     href: avcstrm-write.md
-  - name: "AVCSTRM_ABORT_STREAMING"
+  - name: AVCSTRM_ABORT_STREAMING
     href: avcstrm-abort-streaming.md
-  - name: "AVCSTRM_OPEN"
+  - name: AVCSTRM_OPEN
     href: avcstrm-open.md
-  - name: "AVCSTRM_CLOSE"
+  - name: AVCSTRM_CLOSE
     href: avcstrm-close.md
-  - name: "AVCSTRM_GET_STATE"
+  - name: AVCSTRM_GET_STATE
     href: avcstrm-get-state.md
-  - name: "AVCSTRM_SET_STATE"
+  - name: AVCSTRM_SET_STATE
     href: avcstrm-set-state.md
-  - name: "AVCSTRM_GET_PROPERTY"
+  - name: AVCSTRM_GET_PROPERTY
     href: avcstrm-get-property.md
-  - name: "AVCSTRM_SET_PROPERTY"
+  - name: AVCSTRM_SET_PROPERTY
     href: avcstrm-set-property.md
-- name: "AV/C Streaming Constants"
-# Auto-expanded node
-  items: 
-  - name: "AV/C Streaming Constants"
+- name: AV/C Streaming Constants
+  items:
+  - name: AV/C Streaming Constants
     href: av-c-streaming-constants.md
-  - name: "AV/C Streaming Format GUIDs"
+  - name: AV/C Streaming Format GUIDs
     href: av-c-streaming-format-guids.md
-- name: "Video Capture Minidriver Property Sets"
-# Auto-expanded node
-  items: 
-  - name: "Video Capture Minidriver Property Sets"
+- name: Video Capture Minidriver Property Sets
+  items:
+  - name: Video Capture Minidriver Property Sets
     href: video-capture-minidriver-property-sets.md
-  - name: "PROPSETID_ALLOCATOR_CONTROL"
-# Auto-expanded node
-    items: 
-    - name: "PROPSETID_ALLOCATOR_CONTROL"
+  - name: PROPSETID_ALLOCATOR_CONTROL
+    items:
+    - name: PROPSETID_ALLOCATOR_CONTROL
       href: propsetid-allocator-control.md
-    - name: "KSPROPERTY_ALLOCATOR_CONTROL_HONOR_COUNT"
+    - name: KSPROPERTY_ALLOCATOR_CONTROL_HONOR_COUNT
       href: ksproperty-allocator-control-honor-count.md
-    - name: "KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE"
+    - name: KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE
       href: ksproperty-allocator-control-surface-size.md
-    - name: "KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS"
+    - name: KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS
       href: ksproperty-allocator-control-capture-caps.md
-    - name: "KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE"
+    - name: KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE
       href: ksproperty-allocator-control-capture-interleave.md
-  - name: "PROPSETID_EXT_DEVICE"
-# Auto-expanded node
-    items: 
-    - name: "PROPSETID_EXT_DEVICE"
+  - name: PROPSETID_EXT_DEVICE
+    items:
+    - name: PROPSETID_EXT_DEVICE
       href: propsetid-ext-device.md
-    - name: "KSPROPERTY_EXTDEVICE_ID"
+    - name: KSPROPERTY_EXTDEVICE_ID
       href: ksproperty-extdevice-id.md
-    - name: "KSPROPERTY_EXTDEVICE_VERSION"
+    - name: KSPROPERTY_EXTDEVICE_VERSION
       href: ksproperty-extdevice-version.md
-    - name: "KSPROPERTY_EXTDEVICE_POWER_STATE"
+    - name: KSPROPERTY_EXTDEVICE_POWER_STATE
       href: ksproperty-extdevice-power-state.md
-    - name: "KSPROPERTY_EXTDEVICE_PORT"
+    - name: KSPROPERTY_EXTDEVICE_PORT
       href: ksproperty-extdevice-port.md
-    - name: "KSPROPERTY_EXTDEVICE_CAPABILITIES"
+    - name: KSPROPERTY_EXTDEVICE_CAPABILITIES
       href: ksproperty-extdevice-capabilities.md
-  - name: "PROPSETID_EXT_TRANSPORT"
-# Auto-expanded node
-    items: 
-    - name: "PROPSETID_EXT_TRANSPORT"
+  - name: PROPSETID_EXT_TRANSPORT
+    items:
+    - name: PROPSETID_EXT_TRANSPORT
       href: propsetid-ext-transport.md
-    - name: "KSPROPERTY_EXTXPORT_CAPABILITIES"
+    - name: KSPROPERTY_EXTXPORT_CAPABILITIES
       href: ksproperty-extxport-capabilities.md
-    - name: "KSPROPERTY_EXTXPORT_INPUT_SIGNAL_MODE"
+    - name: KSPROPERTY_EXTXPORT_INPUT_SIGNAL_MODE
       href: ksproperty-extxport-input-signal-mode.md
-    - name: "KSPROPERTY_EXTXPORT_OUTPUT_SIGNAL_MODE"
+    - name: KSPROPERTY_EXTXPORT_OUTPUT_SIGNAL_MODE
       href: ksproperty-extxport-output-signal-mode.md
-    - name: "KSPROPERTY_EXTXPORT_LOAD_MEDIUM"
+    - name: KSPROPERTY_EXTXPORT_LOAD_MEDIUM
       href: ksproperty-extxport-load-medium.md
-    - name: "KSPROPERTY_EXTXPORT_MEDIUM_INFO"
+    - name: KSPROPERTY_EXTXPORT_MEDIUM_INFO
       href: ksproperty-extxport-medium-info.md
-    - name: "KSPROPERTY_EXTXPORT_STATE"
+    - name: KSPROPERTY_EXTXPORT_STATE
       href: ksproperty-extxport-state.md
-    - name: "KSPROPERTY_EXTXPORT_STATE_NOTIFY"
+    - name: KSPROPERTY_EXTXPORT_STATE_NOTIFY
       href: ksproperty-extxport-state-notify.md
-    - name: "KSPROPERTY_EXTXPORT_TIMECODE_SEARCH"
+    - name: KSPROPERTY_EXTXPORT_TIMECODE_SEARCH
       href: ksproperty-extxport-timecode-search.md
-    - name: "KSPROPERTY_EXTXPORT_ATN_SEARCH"
+    - name: KSPROPERTY_EXTXPORT_ATN_SEARCH
       href: ksproperty-extxport-atn-search.md
-    - name: "KSPROPERTY_EXTXPORT_RTC_SEARCH"
+    - name: KSPROPERTY_EXTXPORT_RTC_SEARCH
       href: ksproperty-extxport-rtc-search.md
-    - name: "KSPROPERTY_RAW_AVC_CMD"
+    - name: KSPROPERTY_RAW_AVC_CMD
       href: ksproperty-raw-avc-cmd.md
-  - name: "PROPSETID_TIMECODE_READER"
-# Auto-expanded node
-    items: 
-    - name: "PROPSETID_TIMECODE_READER"
+  - name: PROPSETID_TIMECODE_READER
+    items:
+    - name: PROPSETID_TIMECODE_READER
       href: propsetid-timecode-reader.md
-    - name: "KSPROPERTY_TIMECODE_READER"
+    - name: KSPROPERTY_TIMECODE_READER
       href: ksproperty-timecode-reader.md
-    - name: "KSPROPERTY_ATN_READER"
+    - name: KSPROPERTY_ATN_READER
       href: ksproperty-atn-reader.md
-    - name: "KSPROPERTY_RTC_READER"
+    - name: KSPROPERTY_RTC_READER
       href: ksproperty-rtc-reader.md
-  - name: "PROPSETID_TUNER"
-# Auto-expanded node
-    items: 
-    - name: "PROPSETID_TUNER"
+  - name: PROPSETID_TUNER
+    items:
+    - name: PROPSETID_TUNER
       href: propsetid-tuner.md
-    - name: "KSPROPERTY_TUNER_CAPS"
+    - name: KSPROPERTY_TUNER_CAPS
       href: ksproperty-tuner-caps.md
-    - name: "KSPROPERTY_TUNER_FREQUENCY"
+    - name: KSPROPERTY_TUNER_FREQUENCY
       href: ksproperty-tuner-frequency.md
-    - name: "KSPROPERTY_TUNER_INPUT"
+    - name: KSPROPERTY_TUNER_INPUT
       href: ksproperty-tuner-input.md
-    - name: "KSPROPERTY_TUNER_MODE"
+    - name: KSPROPERTY_TUNER_MODE
       href: ksproperty-tuner-mode.md
-    - name: "KSPROPERTY_TUNER_MODE_CAPS"
+    - name: KSPROPERTY_TUNER_MODE_CAPS
       href: ksproperty-tuner-mode-caps.md
-    - name: "KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS"
+    - name: KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS
       href: ksproperty-tuner-networktype-scan-caps.md
-    - name: "KSPROPERTY_TUNER_SCAN_CAPS"
+    - name: KSPROPERTY_TUNER_SCAN_CAPS
       href: ksproperty-tuner-scan-caps.md
-    - name: "KSPROPERTY_TUNER_SCAN_STATUS"
+    - name: KSPROPERTY_TUNER_SCAN_STATUS
       href: ksproperty-tuner-scan-status.md
-    - name: "KSPROPERTY_TUNER_STANDARD"
+    - name: KSPROPERTY_TUNER_STANDARD
       href: ksproperty-tuner-standard.md
-    - name: "KSPROPERTY_TUNER_STANDARD_MODE"
+    - name: KSPROPERTY_TUNER_STANDARD_MODE
       href: ksproperty-tuner-standard-mode.md
-    - name: "KSPROPERTY_TUNER_STATUS"
+    - name: KSPROPERTY_TUNER_STATUS
       href: ksproperty-tuner-status.md
-    - name: "KSPROPERTY_TUNER_IF_MEDIUM"
+    - name: KSPROPERTY_TUNER_IF_MEDIUM
       href: ksproperty-tuner-if-medium.md
-  - name: "PROPSETID_VIDCAP_CAMERACONTROL"
-# Auto-expanded node
-    items: 
-    - name: "PROPSETID_VIDCAP_CAMERACONTROL"
+  - name: PROPSETID_VIDCAP_CAMERACONTROL
+    items:
+    - name: PROPSETID_VIDCAP_CAMERACONTROL
       href: propsetid-vidcap-cameracontrol.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXPOSURE"
+    - name: KSPROPERTY_CAMERACONTROL_EXPOSURE
       href: ksproperty-cameracontrol-exposure.md
-    - name: "KSPROPERTY_CAMERACONTROL_FOCUS"
+    - name: KSPROPERTY_CAMERACONTROL_FOCUS
       href: ksproperty-cameracontrol-focus.md
-    - name: "KSPROPERTY_CAMERACONTROL_IRIS"
+    - name: KSPROPERTY_CAMERACONTROL_IRIS
       href: ksproperty-cameracontrol-iris.md
-    - name: "KSPROPERTY_CAMERACONTROL_ZOOM"
+    - name: KSPROPERTY_CAMERACONTROL_ZOOM
       href: ksproperty-cameracontrol-zoom.md
-    - name: "KSPROPERTY_CAMERACONTROL_PAN"
+    - name: KSPROPERTY_CAMERACONTROL_PAN
       href: ksproperty-cameracontrol-pan.md
-    - name: "KSPROPERTY_CAMERACONTROL_ROLL"
+    - name: KSPROPERTY_CAMERACONTROL_ROLL
       href: ksproperty-cameracontrol-roll.md
-    - name: "KSPROPERTY_CAMERACONTROL_TILT"
+    - name: KSPROPERTY_CAMERACONTROL_TILT
       href: ksproperty-cameracontrol-tilt.md
-    - name: "KSPROPERTY_CAMERACONTROL_SCANMODE"
+    - name: KSPROPERTY_CAMERACONTROL_SCANMODE
       href: ksproperty-cameracontrol-scanmode.md
-    - name: "KSPROPERTY_CAMERACONTROL_PRIVACY"
+    - name: KSPROPERTY_CAMERACONTROL_PRIVACY
       href: ksproperty-cameracontrol-privacy.md
-    - name: "KSPROPERTY_CAMERACONTROL_PANTILT"
+    - name: KSPROPERTY_CAMERACONTROL_PANTILT
       href: ksproperty-cameracontrol-pantilt.md
-    - name: "KSPROPERTY_CAMERACONTROL_PAN_RELATIVE"
+    - name: KSPROPERTY_CAMERACONTROL_PAN_RELATIVE
       href: ksproperty-cameracontrol-pan-relative.md
-    - name: "KSPROPERTY_CAMERACONTROL_TILT_RELATIVE"
+    - name: KSPROPERTY_CAMERACONTROL_TILT_RELATIVE
       href: ksproperty-cameracontrol-tilt-relative.md
-    - name: "KSPROPERTY_CAMERACONTROL_ROLL_RELATIVE"
+    - name: KSPROPERTY_CAMERACONTROL_ROLL_RELATIVE
       href: ksproperty-cameracontrol-roll-relative.md
-    - name: "KSPROPERTY_CAMERACONTROL_ZOOM_RELATIVE"
+    - name: KSPROPERTY_CAMERACONTROL_ZOOM_RELATIVE
       href: ksproperty-cameracontrol-zoom-relative.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXPOSURE_RELATIVE"
+    - name: KSPROPERTY_CAMERACONTROL_EXPOSURE_RELATIVE
       href: ksproperty-cameracontrol-exposure-relative.md
-    - name: "KSPROPERTY_CAMERACONTROL_IRIS_RELATIVE"
+    - name: KSPROPERTY_CAMERACONTROL_IRIS_RELATIVE
       href: ksproperty-cameracontrol-iris-relative.md
-    - name: "KSPROPERTY_CAMERACONTROL_FOCUS_RELATIVE"
+    - name: KSPROPERTY_CAMERACONTROL_FOCUS_RELATIVE
       href: ksproperty-cameracontrol-focus-relative.md
-    - name: "KSPROPERTY_CAMERACONTROL_PANTILT_RELATIVE"
+    - name: KSPROPERTY_CAMERACONTROL_PANTILT_RELATIVE
       href: ksproperty-cameracontrol-pantilt-relative.md
-    - name: "KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH"
+    - name: KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH
       href: ksproperty-cameracontrol-focal-length.md
-    - name: "KSPROPERTY_CAMERACONTROL_AUTO_EXPOSURE_PRIORITY"
+    - name: KSPROPERTY_CAMERACONTROL_AUTO_EXPOSURE_PRIORITY
       href: ksproperty-cameracontrol-auto-exposure-priority.md
-  - name: "KSPROPERTYSETID_ExtendedCameraControl"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPERTYSETID_ExtendedCameraControl"
+  - name: KSPROPERTYSETID_ExtendedCameraControl
+    items:
+    - name: KSPROPERTYSETID_ExtendedCameraControl
       href: kspropertysetid-extendedcameracontrol.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE
       href: ksproperty-cameracontrol-extended-photomode.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOFRAMERATE"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOFRAMERATE
       href: ksproperty-cameracontrol-extended-photoframerate.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMAXFRAMERATE"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMAXFRAMERATE
       href: ksproperty-cameracontrol-extended-photomaxframerate.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOTRIGGERTIME"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOTRIGGERTIME
       href: ksproperty-cameracontrol-extended-phototriggertime.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_WARMSTART"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_WARMSTART
       href: ksproperty-cameracontrol-extended-warmstart.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_MAXVIDFPS_PHOTORES"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_MAXVIDFPS_PHOTORES
       href: ksproperty-cameracontrol-extended-maxvidfps-photores.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOTHUMBNAIL"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOTHUMBNAIL
       href: ksproperty-cameracontrol-extended-photothumbnail.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_SCENEMODE"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_SCENEMODE
       href: ksproperty-cameracontrol-extended-scenemode.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_TORCHMODE"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_TORCHMODE
       href: ksproperty-cameracontrol-extended-torchmode.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE
       href: ksproperty-cameracontrol-extended-flashmode.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_OPTIMIZATIONHINT"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_OPTIMIZATIONHINT
       href: ksproperty-cameracontrol-extended-optimizationhint.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE
       href: ksproperty-cameracontrol-extended-whitebalancemode.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE
       href: ksproperty-cameracontrol-extended-exposuremode.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE
       href: ksproperty-cameracontrol-extended-focusmode.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ISO"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_ISO
       href: ksproperty-cameracontrol-extended-iso.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW
       href: ksproperty-cameracontrol-extended-fieldofview.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_EVCOMPENSATION"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_EVCOMPENSATION
       href: ksproperty-cameracontrol-extended-evcompensation.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_CAMERAANGLEOFFSET"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_CAMERAANGLEOFFSET
       href: ksproperty-cameracontrol-extended-cameraangleoffset.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ADVANCEDPHOTO"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_ADVANCEDPHOTO
       href: ksproperty-cameracontrol-extended-advancedphoto.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_FACEAUTH_MODE"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_FACEAUTH_MODE
       href: ksproperty-cameracontrol-extended-faceauth-mode.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_FACEDETECTION"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_FACEDETECTION
       href: ksproperty-cameracontrol-extended-facedetection.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE
       href: ksproperty-cameracontrol-extended-flashmode2.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSPRIORITY"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSPRIORITY
       href: ksproperty-cameracontrol-extended-focuspriority.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSSTATE"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSSTATE
       href: ksproperty-cameracontrol-extended-focusstate.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_HISTOGRAM"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_HISTOGRAM
       href: ksproperty-cameracontrol-extended-histogram.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_IRTORCHMODE"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_IRTORCHMODE
       href: ksproperty-cameracontrol-extended-irtorchmode.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ISO_ADVANCED"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_ISO_ADVANCED
       href: ksproperty-cameracontrol-extended-iso-advanced.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_METADATA"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_METADATA
       href: ksproperty-cameracontrol-extended-metadata.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_OIS"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_OIS
       href: ksproperty-cameracontrol-extended-ois.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_OPTIMIZATIONHINT"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_OPTIMIZATIONHINT
       href: ksproperty-cameracontrol-extended-optimizationhint-.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOCONFIRMATION"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOCONFIRMATION
       href: ksproperty-cameracontrol-extended-photoconfirmation.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE
       href: ksproperty-cameracontrol-extended-photomode2.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE
       href: ksproperty-cameracontrol-extended-profile.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_RELATIVEPANELOPTIMIZATION"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_RELATIVEPANELOPTIMIZATION
       href: ksproperty-cameracontrol-extended-relativepaneloptimization.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_CONFIGCAPS"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_CONFIGCAPS
       href: ksproperty-cameracontrol-extended-roi-configcaps.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_ISPCONTROL"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_ISPCONTROL
       href: ksproperty-cameracontrol-extended-roi-ispcontrol.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_SCENEMODE"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_SCENEMODE
       href: ksproperty-cameracontrol-extended-scenemode2.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_VFR"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_VFR
       href: ksproperty-cameracontrol-extended-vfr.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOHDR"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOHDR
       href: ksproperty-cameracontrol-extended-videohdr.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOSTABILIZATION"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOSTABILIZATION
       href: ksproperty-cameracontrol-extended-videostabilization.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOTEMPORALDENOISING"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOTEMPORALDENOISING
       href: ksproperty-cameracontrol-extended-videotemporaldenoising.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM
       href: ksproperty-cameracontrol-extended-zoom.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION"
-      href: ksproperty-cameracontrol-extended-backgroundsegmentation.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_EYEGAZECORRECTION"
-      href: ksproperty-cameracontrol-extended-eyegazecorrection.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW"
-      href: ksproperty-cameracontrol-extended-digitalwindow.md
-    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW_CONFIGCAPS"
-      href: ksproperty-cameracontrol-extended-digitalwindow-configcaps.md
-    - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CAPABILITY"
+    - name: KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CAPABILITY
       href: ksproperty-cameracontrol-perframesetting-capability.md
-    - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR"
+    - name: KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR
       href: ksproperty-cameracontrol-perframesetting-clear.md
-    - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET"
+    - name: KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET
       href: ksproperty-cameracontrol-perframesetting-set.md
-  - name: "PROPSETID_VIDCAP_CROSSBAR"
-# Auto-expanded node
-    items: 
-    - name: "PROPSETID_VIDCAP_CROSSBAR"
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION
+      href: ksproperty-cameracontrol-extended-backgroundsegmentation.md
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_EYEGAZECORRECTION
+      href: ksproperty-cameracontrol-extended-eyegazecorrection.md
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW
+      href: ksproperty-cameracontrol-extended-digitalwindow.md
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW_CONFIGCAPS
+      href: ksproperty-cameracontrol-extended-digitalwindow-configcaps.md
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW2
+      href: ksproperty-cameracontrol-extended-fieldofview2.md
+    - name: KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW2_CONFIGCAPS
+      href: ksproperty-cameracontrol-extended-fieldofview2-configcaps.md
+  - name: PROPSETID_VIDCAP_CROSSBAR
+    items:
+    - name: PROPSETID_VIDCAP_CROSSBAR
       href: propsetid-vidcap-crossbar.md
-    - name: "KSPROPERTY_CROSSBAR_CAN_ROUTE"
+    - name: KSPROPERTY_CROSSBAR_CAN_ROUTE
       href: ksproperty-crossbar-can-route.md
-    - name: "KSPROPERTY_CROSSBAR_CAPS"
+    - name: KSPROPERTY_CROSSBAR_CAPS
       href: ksproperty-crossbar-caps.md
-    - name: "KSPROPERTY_CROSSBAR_PININFO"
+    - name: KSPROPERTY_CROSSBAR_PININFO
       href: ksproperty-crossbar-pininfo.md
-    - name: "KSPROPERTY_CROSSBAR_ROUTE"
+    - name: KSPROPERTY_CROSSBAR_ROUTE
       href: ksproperty-crossbar-route.md
-  - name: "PROPSETID_VIDCAP_DROPPEDFRAMES"
-# Auto-expanded node
-    items: 
-    - name: "PROPSETID_VIDCAP_DROPPEDFRAMES"
+  - name: PROPSETID_VIDCAP_DROPPEDFRAMES
+    items:
+    - name: PROPSETID_VIDCAP_DROPPEDFRAMES
       href: propsetid-vidcap-droppedframes.md
-    - name: "KSPROPERTY_DROPPEDFRAMES_CURRENT"
+    - name: KSPROPERTY_DROPPEDFRAMES_CURRENT
       href: ksproperty-droppedframes-current.md
-  - name: "PROPSETID_VIDCAP_EXTENSION_UNIT"
-# Auto-expanded node
-    items: 
-    - name: "PROPSETID_VIDCAP_EXTENSION_UNIT"
+  - name: PROPSETID_VIDCAP_EXTENSION_UNIT
+    items:
+    - name: PROPSETID_VIDCAP_EXTENSION_UNIT
       href: propsetid-vidcap-extension-unit.md
-    - name: "KSPROPERTY_EXTENSION_UNIT_INFO"
+    - name: KSPROPERTY_EXTENSION_UNIT_INFO
       href: ksproperty-extension-unit-info.md
-  - name: "PROPSETID_VIDCAP_TVAUDIO"
-# Auto-expanded node
-    items: 
-    - name: "PROPSETID_VIDCAP_TVAUDIO"
+  - name: PROPSETID_VIDCAP_TVAUDIO
+    items:
+    - name: PROPSETID_VIDCAP_TVAUDIO
       href: propsetid-vidcap-tvaudio.md
-    - name: "KSPROPERTY_TVAUDIO_CAPS"
+    - name: KSPROPERTY_TVAUDIO_CAPS
       href: ksproperty-tvaudio-caps.md
-    - name: "KSPROPERTY_TVAUDIO_CURRENTLY_AVAILABLE_MODES"
+    - name: KSPROPERTY_TVAUDIO_CURRENTLY_AVAILABLE_MODES
       href: ksproperty-tvaudio-currently-available-modes.md
-    - name: "KSPROPERTY_TVAUDIO_MODE"
+    - name: KSPROPERTY_TVAUDIO_MODE
       href: ksproperty-tvaudio-mode.md
-  - name: "PROPSETID_VIDCAP_SELECTOR"
-# Auto-expanded node
-    items: 
-    - name: "PROPSETID_VIDCAP_SELECTOR"
+  - name: PROPSETID_VIDCAP_SELECTOR
+    items:
+    - name: PROPSETID_VIDCAP_SELECTOR
       href: propsetid-vidcap-selector.md
-    - name: "KSPROPERTY_SELECTOR_SOURCE_NODE_ID"
+    - name: KSPROPERTY_SELECTOR_SOURCE_NODE_ID
       href: ksproperty-selector-source-node-id.md
-    - name: "KSPROPERTY_NUM_SOURCES"
+    - name: KSPROPERTY_NUM_SOURCES
       href: ksproperty-num-sources.md
-  - name: "PROPSETID_VIDCAP_VIDEOCOMPRESSION"
-# Auto-expanded node
-    items: 
-    - name: "PROPSETID_VIDCAP_VIDEOCOMPRESSION"
+  - name: PROPSETID_VIDCAP_VIDEOCOMPRESSION
+    items:
+    - name: PROPSETID_VIDCAP_VIDEOCOMPRESSION
       href: propsetid-vidcap-videocompression.md
-    - name: "KSPROPERTY_VIDEOCOMPRESSION_GETINFO"
+    - name: KSPROPERTY_VIDEOCOMPRESSION_GETINFO
       href: ksproperty-videocompression-getinfo.md
-    - name: "KSPROPERTY_VIDEOCOMPRESSION_KEYFRAME_RATE"
+    - name: KSPROPERTY_VIDEOCOMPRESSION_KEYFRAME_RATE
       href: ksproperty-videocompression-keyframe-rate.md
-    - name: "KSPROPERTY_VIDEOCOMPRESSION_OVERRIDE_FRAME_SIZE"
+    - name: KSPROPERTY_VIDEOCOMPRESSION_OVERRIDE_FRAME_SIZE
       href: ksproperty-videocompression-override-frame-size.md
-    - name: "KSPROPERTY_VIDEOCOMPRESSION_OVERRIDE_KEYFRAME"
+    - name: KSPROPERTY_VIDEOCOMPRESSION_OVERRIDE_KEYFRAME
       href: ksproperty-videocompression-override-keyframe.md
-    - name: "KSPROPERTY_VIDEOCOMPRESSION_PFRAMES_PER_KEYFRAME"
+    - name: KSPROPERTY_VIDEOCOMPRESSION_PFRAMES_PER_KEYFRAME
       href: ksproperty-videocompression-pframes-per-keyframe.md
-    - name: "KSPROPERTY_VIDEOCOMPRESSION_QUALITY"
+    - name: KSPROPERTY_VIDEOCOMPRESSION_QUALITY
       href: ksproperty-videocompression-quality.md
-    - name: "KSPROPERTY_VIDEOCOMPRESSION_WINDOWSIZE"
+    - name: KSPROPERTY_VIDEOCOMPRESSION_WINDOWSIZE
       href: ksproperty-videocompression-windowsize.md
-  - name: "PROPSETID_VIDCAP_VIDEOCONTROL"
-# Auto-expanded node
-    items: 
-    - name: "PROPSETID_VIDCAP_VIDEOCONTROL"
+  - name: PROPSETID_VIDCAP_VIDEOCONTROL
+    items:
+    - name: PROPSETID_VIDCAP_VIDEOCONTROL
       href: propsetid-vidcap-videocontrol.md
-    - name: "KSPROPERTY_VIDEOCONTROL_CAPS"
+    - name: KSPROPERTY_VIDEOCONTROL_CAPS
       href: ksproperty-videocontrol-caps.md
-    - name: "KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE"
+    - name: KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE
       href: ksproperty-videocontrol-actual-frame-rate.md
-    - name: "KSPROPERTY_VIDEOCONTROL_FRAME_RATES"
+    - name: KSPROPERTY_VIDEOCONTROL_FRAME_RATES
       href: ksproperty-videocontrol-frame-rates.md
-    - name: "KSPROPERTY_VIDEOCONTROL_MODE"
+    - name: KSPROPERTY_VIDEOCONTROL_MODE
       href: ksproperty-videocontrol-mode.md
-  - name: "PROPSETID_VIDCAP_VIDEODECODER"
-# Auto-expanded node
-    items: 
-    - name: "PROPSETID_VIDCAP_VIDEODECODER"
+  - name: PROPSETID_VIDCAP_VIDEODECODER
+    items:
+    - name: PROPSETID_VIDCAP_VIDEODECODER
       href: propsetid-vidcap-videodecoder.md
-    - name: "KSPROPERTY_VIDEODECODER_CAPS"
+    - name: KSPROPERTY_VIDEODECODER_CAPS
       href: ksproperty-videodecoder-caps.md
-    - name: "KSPROPERTY_VIDEODECODER_STANDARD"
+    - name: KSPROPERTY_VIDEODECODER_STANDARD
       href: ksproperty-videodecoder-standard.md
-    - name: "KSPROPERTY_VIDEODECODER_STATUS"
+    - name: KSPROPERTY_VIDEODECODER_STATUS
       href: ksproperty-videodecoder-status.md
-    - name: "KSPROPERTY_VIDEODECODER_OUTPUT_ENABLE"
+    - name: KSPROPERTY_VIDEODECODER_OUTPUT_ENABLE
       href: ksproperty-videodecoder-output-enable.md
-    - name: "KSPROPERTY_VIDEODECODER_VCR_TIMING"
+    - name: KSPROPERTY_VIDEODECODER_VCR_TIMING
       href: ksproperty-videodecoder-vcr-timing.md
-  - name: "PROPSETID_VIDCAP_VIDEOPROCAMP"
-# Auto-expanded node
-    items: 
-    - name: "PROPSETID_VIDCAP_VIDEOPROCAMP"
+  - name: PROPSETID_VIDCAP_VIDEOPROCAMP
+    items:
+    - name: PROPSETID_VIDCAP_VIDEOPROCAMP
       href: propsetid-vidcap-videoprocamp.md
-    - name: "KSPROPERTY_VIDEOPROCAMP_BACKLIGHT_COMPENSATION"
+    - name: KSPROPERTY_VIDEOPROCAMP_BACKLIGHT_COMPENSATION
       href: ksproperty-videoprocamp-backlight-compensation.md
-    - name: "KSPROPERTY_VIDEOPROCAMP_BRIGHTNESS"
+    - name: KSPROPERTY_VIDEOPROCAMP_BRIGHTNESS
       href: ksproperty-videoprocamp-brightness.md
-    - name: "KSPROPERTY_VIDEOPROCAMP_COLORENABLE"
+    - name: KSPROPERTY_VIDEOPROCAMP_COLORENABLE
       href: ksproperty-videoprocamp-colorenable.md
-    - name: "KSPROPERTY_VIDEOPROCAMP_CONTRAST"
+    - name: KSPROPERTY_VIDEOPROCAMP_CONTRAST
       href: ksproperty-videoprocamp-contrast.md
-    - name: "KSPROPERTY_VIDEOPROCAMP_GAMMA"
+    - name: KSPROPERTY_VIDEOPROCAMP_GAMMA
       href: ksproperty-videoprocamp-gamma.md
-    - name: "KSPROPERTY_VIDEOPROCAMP_HUE"
+    - name: KSPROPERTY_VIDEOPROCAMP_HUE
       href: ksproperty-videoprocamp-hue.md
-    - name: "KSPROPERTY_VIDEOPROCAMP_SATURATION"
+    - name: KSPROPERTY_VIDEOPROCAMP_SATURATION
       href: ksproperty-videoprocamp-saturation.md
-    - name: "KSPROPERTY_VIDEOPROCAMP_SHARPNESS"
+    - name: KSPROPERTY_VIDEOPROCAMP_SHARPNESS
       href: ksproperty-videoprocamp-sharpness.md
-    - name: "KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE"
+    - name: KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE
       href: ksproperty-videoprocamp-whitebalance.md
-    - name: "KSPROPERTY_VIDEOPROCAMP_GAIN"
+    - name: KSPROPERTY_VIDEOPROCAMP_GAIN
       href: ksproperty-videoprocamp-gain.md
-    - name: "KSPROPERTY_VIDEOPROCAMP_DIGITAL_MULTIPLIER"
+    - name: KSPROPERTY_VIDEOPROCAMP_DIGITAL_MULTIPLIER
       href: ksproperty-videoprocamp-digital-multiplier.md
-    - name: "KSPROPERTY_VIDEOPROCAMP_DIGITAL_MULTIPLIER_LIMIT"
+    - name: KSPROPERTY_VIDEOPROCAMP_DIGITAL_MULTIPLIER_LIMIT
       href: ksproperty-videoprocamp-digital-multiplier-limit.md
-    - name: "KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE_COMPONENT"
+    - name: KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE_COMPONENT
       href: ksproperty-videoprocamp-whitebalance-component.md
-    - name: "KSPROPERTY_VIDEOPROCAMP_POWERLINE_FREQUENCY"
+    - name: KSPROPERTY_VIDEOPROCAMP_POWERLINE_FREQUENCY
       href: ksproperty-videoprocamp-powerline-frequency.md
-  - name: "KSPROPERTY_CAMERACONTROL_FLASH_PROPERTY"
+  - name: KSPROPERTY_CAMERACONTROL_FLASH_PROPERTY
     href: ksproperty-cameracontrol-flash-property.md
-  - name: "KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_PROPERTY"
+  - name: KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_PROPERTY
     href: ksproperty-cameracontrol-image-pin-capability-property.md
-  - name: "KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY"
+  - name: KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY
     href: ksproperty-cameracontrol-region-of-interest-property.md
-  - name: "KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY"
+  - name: KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY
     href: ksproperty-cameracontrol-video-stabilization-mode-property.md
-- name: "Video Capture Minidriver Event Sets"
-# Auto-expanded node
-  items: 
-  - name: "Video Capture Minidriver Event Sets"
-    href: video-capture-minidriver-event-sets.md
-  - name: "EVENTSETID_TUNER"
-# Auto-expanded node
-    items: 
-    - name: "EVENTSETID_TUNER"
+- name: Video Capture Minidriver Event Sets
+  items:
+  - name: EVENTSETID_TUNER
+    items:
+    - name: EVENTSETID_TUNER
       href: eventsetid-tuner.md
-    - name: "KSEVENT_TUNER_CHANGED"
+    - name: KSEVENT_TUNER_CHANGED
       href: ksevent-tuner-changed.md
-    - name: "KSEVENT_TUNER_INITIATE_SCAN"
+    - name: KSEVENT_TUNER_INITIATE_SCAN
       href: ksevent-tuner-initiate-scan.md
-  - name: "EVENTSETID_VIDEODECODER"
-# Auto-expanded node
-    items: 
-    - name: "EVENTSETID_VIDEODECODER"
+  - name: EVENTSETID_VIDEODECODER
+    items:
+    - name: EVENTSETID_VIDEODECODER
       href: eventsetid-videodecoder.md
-    - name: "KSEVENT_VIDEODECODER_CHANGED"
+    - name: KSEVENT_VIDEODECODER_CHANGED
       href: ksevent-videodecoder-changed.md
-  - name: "EVENTSETID_CROSSBAR"
-# Auto-expanded node
-    items: 
-    - name: "EVENTSETID_CROSSBAR"
+  - name: EVENTSETID_CROSSBAR
+    items:
+    - name: EVENTSETID_CROSSBAR
       href: eventsetid-crossbar.md
-    - name: "KSEVENT_CROSSBAR_CHANGED"
+    - name: KSEVENT_CROSSBAR_CHANGED
       href: ksevent-crossbar-changed.md
-  - name: "KSEVENTSETID_CameraAsyncControl"
-# Auto-expanded node
-    items: 
-    - name: "KSEVENTSETID_CameraAsyncControl"
+  - name: KSEVENTSETID_CameraAsyncControl
+    items:
+    - name: KSEVENTSETID_CameraAsyncControl
       href: kseventsetid-cameraasynccontrol.md
-    - name: "KSEVENT_CAMERACONTROL_FOCUS"
+    - name: KSEVENT_CAMERACONTROL_FOCUS
       href: ksevent-cameracontrol-focus.md
-    - name: "KSEVENT_CAMERACONTROL_ZOOM"
+    - name: KSEVENT_CAMERACONTROL_ZOOM
       href: ksevent-cameracontrol-zoom.md
-  - name: "KSEVENTSETID_Device"
-# Auto-expanded node
-    items: 
-    - name: "KSEVENTSETID_Device"
+  - name: KSEVENTSETID_Device
+    items:
+    - name: KSEVENTSETID_Device
       href: kseventsetid-device.md
-    - name: "KSEVENT_DEVICE_LOST"
+    - name: KSEVENT_DEVICE_LOST
       href: ksevent-device-lost.md
-    - name: "KSEVENT_DEVICE_PREEMPTED"
+    - name: KSEVENT_DEVICE_PREEMPTED
       href: ksevent-device-preempted.md
-  - name: "KSEVENTSETID_VIDCAP_TVAUDIO"
-# Auto-expanded node
-    items: 
-    - name: "KSEVENTSETID_VIDCAP_TVAUDIO"
+  - name: KSEVENTSETID_VIDCAP_TVAUDIO
+    items:
+    - name: KSEVENTSETID_VIDCAP_TVAUDIO
       href: kseventsetid-vidcap-tvaudio.md
-    - name: "KSEVENT_TVAUDIO_CHANGED"
+    - name: KSEVENT_TVAUDIO_CHANGED
       href: ksevent-tvaudio-changed.md
-  - name: "KSEVENTSETID_VIDCAPNotify"
-# Auto-expanded node
-    items: 
-    - name: "KSEVENTSETID_VIDCAPNotify"
+  - name: KSEVENTSETID_VIDCAPNotify
+    items:
+    - name: KSEVENTSETID_VIDCAPNotify
       href: kseventsetid-vidcapnotify.md
-    - name: "KSEVENT_VIDCAPTOSTI_EXT_TRIGGER"
+    - name: KSEVENT_VIDCAPTOSTI_EXT_TRIGGER
       href: ksevent-vidcaptosti-ext-trigger.md
-    - name: "KSEVENT_VIDCAP_AUTO_UPDATE"
+    - name: KSEVENT_VIDCAP_AUTO_UPDATE
       href: ksevent-vidcap-auto-update.md
-    - name: "KSEVENT_VIDCAP_SEARCH"
+    - name: KSEVENT_VIDCAP_SEARCH
       href: ksevent-vidcap-search.md
-  - name: "KSEVENTSETID_VolumeLimit"
-# Auto-expanded node
-    items: 
-    - name: "KSEVENTSETID_VolumeLimit"
+  - name: KSEVENTSETID_VolumeLimit
+    items:
+    - name: KSEVENTSETID_VolumeLimit
       href: kseventsetid-volumelimit.md
-    - name: "KSEVENT_VOLUMELIMIT_CHANGED"
+    - name: KSEVENT_VOLUMELIMIT_CHANGED
       href: ksevent-volumelimit-changed.md
-- name: "Device transform manager events"
-# Auto-expanded node
-  items: 
-  - name: "Device transform manager events"
+- name: Device transform manager events
+  items:
+  - name: Device transform manager events
     href: device-mft-events.md
-  - name: "METransformFlushInputStream"
+  - name: METransformFlushInputStream
     href: metransformflushinputstream.md
-  - name: "METransformHaveOutput"
+  - name: METransformHaveOutput
     href: metransformhaveoutput.md
-  - name: "METransformInputStreamStateChanged"
+  - name: METransformInputStreamStateChanged
     href: metransforminputstreamstatechanged.md
-  - name: "METransformNeedInput"
+  - name: METransformNeedInput
     href: metransformneedinput.md
-- name: "Kernel Streaming Topology Nodes"
-# Auto-expanded node
-  items: 
-  - name: "Kernel Streaming Topology Nodes"
-    href: kernel-streaming-topology-nodes.md
-  - name: "KSNODETYPE_VIDEO_STREAMING"
+- name: Kernel Streaming Topology Nodes
+  items:
+  - name: KSNODETYPE_VIDEO_STREAMING
     href: ksnodetype-video-streaming.md
-  - name: "KSNODETYPE_VIDEO_INPUT_TERMINAL"
+  - name: KSNODETYPE_VIDEO_INPUT_TERMINAL
     href: ksnodetype-video-input-terminal.md
-  - name: "KSNODETYPE_VIDEO_OUTPUT_TERMINAL"
+  - name: KSNODETYPE_VIDEO_OUTPUT_TERMINAL
     href: ksnodetype-video-output-terminal.md
-  - name: "KSNODETYPE_VIDEO_SELECTOR"
+  - name: KSNODETYPE_VIDEO_SELECTOR
     href: ksnodetype-video-selector.md
-  - name: "KSNODETYPE_VIDEO_PROCESSING"
+  - name: KSNODETYPE_VIDEO_PROCESSING
     href: ksnodetype-video-processing.md
-  - name: "KSNODETYPE_VIDEO_CAMERA_TERMINAL"
+  - name: KSNODETYPE_VIDEO_CAMERA_TERMINAL
     href: ksnodetype-video-camera-terminal.md
-  - name: "KSNODETYPE_VIDEO_INPUT_MTT"
+  - name: KSNODETYPE_VIDEO_INPUT_MTT
     href: ksnodetype-video-input-mtt.md
-  - name: "KSNODETYPE_VIDEO_OUTPUT_MTT"
+  - name: KSNODETYPE_VIDEO_OUTPUT_MTT
     href: ksnodetype-video-output-mtt.md
-- name: "Kernel Streaming Interface Sets"
-# Auto-expanded node
-  items: 
-  - name: "Kernel Streaming Interface Sets"
+- name: Kernel Streaming Interface Sets
+  items:
+  - name: Kernel Streaming Interface Sets
     href: kernel-streaming-interface-sets.md
-  - name: "KSINTERFACESETID_Media"
-# Auto-expanded node
-    items: 
-    - name: "KSINTERFACESETID_Media"
+  - name: KSINTERFACESETID_Media
+    items:
+    - name: KSINTERFACESETID_Media
       href: ksinterfacesetid-media.md
-    - name: "KSINTERFACE_MEDIA_MUSIC"
+    - name: KSINTERFACE_MEDIA_MUSIC
       href: ksinterface-media-music.md
-    - name: "KSINTERFACE_MEDIA_WAVE_BUFFERED"
+    - name: KSINTERFACE_MEDIA_WAVE_BUFFERED
       href: ksinterface-media-wave-buffered.md
-    - name: "KSINTERFACE_MEDIA_WAVE_QUEUED"
+    - name: KSINTERFACE_MEDIA_WAVE_QUEUED
       href: ksinterface-media-wave-queued.md
-  - name: "KSINTERFACESETID_Standard"
-# Auto-expanded node
-    items: 
-    - name: "KSINTERFACESETID_Standard"
+  - name: KSINTERFACESETID_Standard
+    items:
+    - name: KSINTERFACESETID_Standard
       href: ksinterfacesetid-standard.md
-    - name: "KSINTERFACE_STANDARD_STREAMING"
+    - name: KSINTERFACE_STANDARD_STREAMING
       href: ksinterface-standard-streaming.md
-    - name: "KSINTERFACE_STANDARD_LOOPED_STREAMING"
+    - name: KSINTERFACE_STANDARD_LOOPED_STREAMING
       href: ksinterface-standard-looped-streaming.md
-    - name: "KSINTERFACE_STANDARD_CONTROL"
+    - name: KSINTERFACE_STANDARD_CONTROL
       href: ksinterface-standard-control.md
-- name: "Kernel Streaming Event Sets"
-# Auto-expanded node
-  items: 
-  - name: "Kernel Streaming Event Sets"
-    href: kernel-streaming-event-sets.md
-  - name: "KSEVENTSETID_Clock"
-# Auto-expanded node
-    items: 
-    - name: "KSEVENTSETID_Clock"
+- name: Kernel Streaming Event Sets
+  items:
+  - name: KSEVENTSETID_Clock
+    items:
+    - name: KSEVENTSETID_Clock
       href: kseventsetid-clock.md
-    - name: "KSEVENT_CLOCK_INTERVAL_MARK"
+    - name: KSEVENT_CLOCK_INTERVAL_MARK
       href: ksevent-clock-interval-mark.md
-    - name: "KSEVENT_CLOCK_POSITION_MARK"
+    - name: KSEVENT_CLOCK_POSITION_MARK
       href: ksevent-clock-position-mark.md
-  - name: "KSEVENTSETID_Connection"
-# Auto-expanded node
-    items: 
-    - name: "KSEVENTSETID_Connection"
+  - name: KSEVENTSETID_Connection
+    items:
+    - name: KSEVENTSETID_Connection
       href: kseventsetid-connection.md
-    - name: "KSEVENT_CONNECTION_POSITIONUPDATE"
+    - name: KSEVENT_CONNECTION_POSITIONUPDATE
       href: ksevent-connection-positionupdate.md
-    - name: "KSEVENT_CONNECTION_DATADISCONTINUITY"
+    - name: KSEVENT_CONNECTION_DATADISCONTINUITY
       href: ksevent-connection-datadiscontinuity.md
-    - name: "KSEVENT_CONNECTION_TIMEDISCONTINUITY"
+    - name: KSEVENT_CONNECTION_TIMEDISCONTINUITY
       href: ksevent-connection-timediscontinuity.md
-    - name: "KSEVENT_CONNECTION_PRIORITY"
+    - name: KSEVENT_CONNECTION_PRIORITY
       href: ksevent-connection-priority.md
-    - name: "KSEVENT_CONNECTION_ENDOFSTREAM"
+    - name: KSEVENT_CONNECTION_ENDOFSTREAM
       href: ksevent-connection-endofstream.md
-  - name: "KSEVENTSETID_DynamicFormatChange"
-# Auto-expanded node
-    items: 
-    - name: "KSEVENTSETID_DynamicFormatChange"
+  - name: KSEVENTSETID_DynamicFormatChange
+    items:
+    - name: KSEVENTSETID_DynamicFormatChange
       href: kseventsetid-dynamicformatchange.md
-    - name: "KSEVENT_DYNAMIC_FORMAT_CHANGE"
+    - name: KSEVENT_DYNAMIC_FORMAT_CHANGE
       href: ksevent-dynamic-format-change.md
-  - name: "KSEVENTSETID_StreamAllocator"
-# Auto-expanded node
-    items: 
-    - name: "KSEVENTSETID_StreamAllocator"
+  - name: KSEVENTSETID_StreamAllocator
+    items:
+    - name: KSEVENTSETID_StreamAllocator
       href: kseventsetid-streamallocator.md
-    - name: "KSEVENT_STREAMALLOCATOR_INTERNAL_FREEFRAME"
+    - name: KSEVENT_STREAMALLOCATOR_INTERNAL_FREEFRAME
       href: ksevent-streamallocator-internal-freeframe.md
-    - name: "KSEVENT_STREAMALLOCATOR_FREEFRAME"
+    - name: KSEVENT_STREAMALLOCATOR_FREEFRAME
       href: ksevent-streamallocator-freeframe.md
-- name: "Kernel Streaming Method Sets"
-# Auto-expanded node
-  items: 
-  - name: "Kernel Streaming Method Sets"
+- name: Kernel Streaming Method Sets
+  items:
+  - name: Kernel Streaming Method Sets
     href: kernel-streaming-method-sets.md
-  - name: "KSMETHODSETID_StreamAllocator"
-# Auto-expanded node
-    items: 
-    - name: "KSMETHODSETID_StreamAllocator"
+  - name: KSMETHODSETID_StreamAllocator
+    items:
+    - name: KSMETHODSETID_StreamAllocator
       href: ksmethodsetid-streamallocator.md
-    - name: "KSMETHOD_STREAMALLOCATOR_ALLOC"
+    - name: KSMETHOD_STREAMALLOCATOR_ALLOC
       href: ksmethod-streamallocator-alloc.md
-    - name: "KSMETHOD_STREAMALLOCATOR_FREE"
+    - name: KSMETHOD_STREAMALLOCATOR_FREE
       href: ksmethod-streamallocator-free.md
-- name: "Stream Class SRB Reference"
-# Auto-expanded node
-  items: 
-  - name: "Stream Class SRB Reference"
+- name: Stream Class SRB Reference
+  items:
+  - name: Stream Class SRB Reference
     href: stream-class-srb-reference.md
-  - name: "Device-Specific Command Codes"
-# Auto-expanded node
-    items: 
-    - name: "Device-Specific Command Codes"
-      href: device-specific-command-codes.md
-    - name: "SRB_CHANGE_POWER_STATE"
+  - name: Device-Specific Command Codes
+    items:
+    - name: SRB_CHANGE_POWER_STATE
       href: srb-change-power-state.md
-    - name: "SRB_CLOSE_DEVICE_INSTANCE"
+    - name: SRB_CLOSE_DEVICE_INSTANCE
       href: srb-close-device-instance.md
-    - name: "SRB_CLOSE_STREAM"
+    - name: SRB_CLOSE_STREAM
       href: srb-close-stream.md
-    - name: "SRB_GET_DATA_INTERSECTION"
+    - name: SRB_GET_DATA_INTERSECTION
       href: srb-get-data-intersection.md
-    - name: "SRB_GET_DEVICE_PROPERTY"
+    - name: SRB_GET_DEVICE_PROPERTY
       href: srb-get-device-property.md
-    - name: "SRB_GET_STREAM_INFO"
+    - name: SRB_GET_STREAM_INFO
       href: srb-get-stream-info.md
-    - name: "SRB_INITIALIZATION_COMPLETE"
+    - name: SRB_INITIALIZATION_COMPLETE
       href: srb-initialization-complete.md
-    - name: "SRB_INITIALIZE_DEVICE"
+    - name: SRB_INITIALIZE_DEVICE
       href: srb-initialize-device.md
-    - name: "SRB_NOTIFY_IDLE_STATE"
+    - name: SRB_NOTIFY_IDLE_STATE
       href: srb-notify-idle-state.md
-    - name: "SRB_OPEN_DEVICE_INSTANCE"
+    - name: SRB_OPEN_DEVICE_INSTANCE
       href: srb-open-device-instance.md
-    - name: "SRB_OPEN_STREAM"
+    - name: SRB_OPEN_STREAM
       href: srb-open-stream.md
-    - name: "SRB_PAGING_OUT_DRIVER"
+    - name: SRB_PAGING_OUT_DRIVER
       href: srb-paging-out-driver.md
-    - name: "SRB_SET_DEVICE_PROPERTY"
+    - name: SRB_SET_DEVICE_PROPERTY
       href: srb-set-device-property.md
-    - name: "SRB_SURPRISE_REMOVAL"
+    - name: SRB_SURPRISE_REMOVAL
       href: srb-surprise-removal.md
-    - name: "SRB_UNINITIALIZE_DEVICE"
+    - name: SRB_UNINITIALIZE_DEVICE
       href: srb-uninitialize-device.md
-    - name: "SRB_UNKNOWN_DEVICE_COMMAND"
+    - name: SRB_UNKNOWN_DEVICE_COMMAND
       href: srb-unknown-device-command.md
-  - name: "Stream-Specific Command Codes"
-# Auto-expanded node
-    items: 
-    - name: "Stream-Specific Command Codes"
-      href: stream-specific-command-codes.md
-    - name: "SRB_CLOSE_MASTER_CLOCK"
+  - name: Stream-Specific Command Codes
+    items:
+    - name: SRB_CLOSE_MASTER_CLOCK
       href: srb-close-master-clock.md
-    - name: "SRB_GET_DATA_FORMAT"
+    - name: SRB_GET_DATA_FORMAT
       href: srb-get-data-format.md
-    - name: "SRB_GET_STREAM_PROPERTY"
+    - name: SRB_GET_STREAM_PROPERTY
       href: srb-get-stream-property.md
-    - name: "SRB_GET_STREAM_STATE"
+    - name: SRB_GET_STREAM_STATE
       href: srb-get-stream-state.md
-    - name: "SRB_INDICATE_MASTER_CLOCK"
+    - name: SRB_INDICATE_MASTER_CLOCK
       href: srb-indicate-master-clock.md
-    - name: "SRB_OPEN_MASTER_CLOCK"
+    - name: SRB_OPEN_MASTER_CLOCK
       href: srb-open-master-clock.md
-    - name: "SRB_PROPOSE_DATA_FORMAT"
+    - name: SRB_PROPOSE_DATA_FORMAT
       href: srb-propose-data-format.md
-    - name: "SRB_PROPOSE_STREAM_RATE"
+    - name: SRB_PROPOSE_STREAM_RATE
       href: srb-propose-stream-rate.md
-    - name: "SRB_READ_DATA"
+    - name: SRB_READ_DATA
       href: srb-read-data.md
-    - name: "SRB_SET_DATA_FORMAT"
+    - name: SRB_SET_DATA_FORMAT
       href: srb-set-data-format.md
-    - name: "SRB_SET_STREAM_PROPERTY"
+    - name: SRB_SET_STREAM_PROPERTY
       href: srb-set-stream-property.md
-    - name: "SRB_SET_STREAM_RATE"
+    - name: SRB_SET_STREAM_RATE
       href: srb-set-stream-rate.md
-    - name: "SRB_SET_STREAM_STATE"
+    - name: SRB_SET_STREAM_STATE
       href: srb-set-stream-state.md
-    - name: "SRB_UNKNOWN_STREAM_COMMAND"
+    - name: SRB_UNKNOWN_STREAM_COMMAND
       href: srb-unknown-stream-command.md
-    - name: "SRB_WRITE_DATA"
+    - name: SRB_WRITE_DATA
       href: srb-write-data.md
-- name: "DVD Decoder Minidriver Property Sets"
-# Auto-expanded node
-  items: 
-  - name: "DVD Decoder Minidriver Property Sets"
+- name: DVD Decoder Minidriver Property Sets
+  items:
+  - name: DVD Decoder Minidriver Property Sets
     href: dvd-decoder-minidriver-property-sets.md
-  - name: "KSPROPSETID_AudioDecoderOut"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_AudioDecoderOut"
+  - name: KSPROPSETID_AudioDecoderOut
+    items:
+    - name: KSPROPSETID_AudioDecoderOut
       href: kspropsetid-audiodecoderout.md
-    - name: "KSPROPERTY_AUDDECOUT_MODES"
+    - name: KSPROPERTY_AUDDECOUT_MODES
       href: ksproperty-auddecout-modes.md
-    - name: "KSPROPERTY_AUDDECOUT_CUR_MODE"
+    - name: KSPROPERTY_AUDDECOUT_CUR_MODE
       href: ksproperty-auddecout-cur-mode.md
-  - name: "KSPROPSETID_DvdSubPic"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_DvdSubPic"
+  - name: KSPROPSETID_DvdSubPic
+    items:
+    - name: KSPROPSETID_DvdSubPic
       href: kspropsetid-dvdsubpic.md
-    - name: "KSPROPERTY_DVDSUBPIC_PALETTE"
+    - name: KSPROPERTY_DVDSUBPIC_PALETTE
       href: ksproperty-dvdsubpic-palette.md
-    - name: "KSPROPERTY_DVDSUBPIC_HLI"
+    - name: KSPROPERTY_DVDSUBPIC_HLI
       href: ksproperty-dvdsubpic-hli.md
-    - name: "KSPROPERTY_DVDSUBPIC_COMPOSIT_ON"
+    - name: KSPROPERTY_DVDSUBPIC_COMPOSIT_ON
       href: ksproperty-dvdsubpic-composit-on.md
-  - name: "KSPROPSETID_CopyProt"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_CopyProt"
+  - name: KSPROPSETID_CopyProt
+    items:
+    - name: KSPROPSETID_CopyProt
       href: kspropsetid-copyprot.md
-    - name: "KSPROPERTY_DVDCOPY_CHLG_KEY"
+    - name: KSPROPERTY_DVDCOPY_CHLG_KEY
       href: ksproperty-dvdcopy-chlg-key.md
-    - name: "KSPROPERTY_DVDCOPY_DVD_KEY1"
+    - name: KSPROPERTY_DVDCOPY_DVD_KEY1
       href: ksproperty-dvdcopy-dvd-key1.md
-    - name: "KSPROPERTY_DVDCOPY_DEC_KEY2"
+    - name: KSPROPERTY_DVDCOPY_DEC_KEY2
       href: ksproperty-dvdcopy-dec-key2.md
-    - name: "KSPROPERTY_DVDCOPY_TITLE_KEY"
+    - name: KSPROPERTY_DVDCOPY_TITLE_KEY
       href: ksproperty-dvdcopy-title-key.md
-    - name: "KSPROPERTY_COPY_MACROVISION"
+    - name: KSPROPERTY_COPY_MACROVISION
       href: ksproperty-copy-macrovision.md
-    - name: "KSPROPERTY_DVDCOPY_REGION"
+    - name: KSPROPERTY_DVDCOPY_REGION
       href: ksproperty-dvdcopy-region.md
-    - name: "KSPROPERTY_DVDCOPY_SET_COPY_STATE"
+    - name: KSPROPERTY_DVDCOPY_SET_COPY_STATE
       href: ksproperty-dvdcopy-set-copy-state.md
-    - name: "KSPROPERTY_DVDCOPY_DISC_KEY"
+    - name: KSPROPERTY_DVDCOPY_DISC_KEY
       href: ksproperty-dvdcopy-disc-key.md
-  - name: "KSPROPSETID_TSRateChange"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_TSRateChange"
+  - name: KSPROPSETID_TSRateChange
+    items:
+    - name: KSPROPSETID_TSRateChange
       href: kspropsetid-tsratechange.md
-    - name: "KS_AM_RATE_SimpleRateChange"
+    - name: KS_AM_RATE_SimpleRateChange
       href: ks-am-rate-simpleratechange.md
-    - name: "KS_AM_RATE_ExactRateChange"
+    - name: KS_AM_RATE_ExactRateChange
       href: ks-am-rate-exactratechange.md
-    - name: "KS_AM_RATE_MaxFullDataRate"
+    - name: KS_AM_RATE_MaxFullDataRate
       href: ks-am-rate-maxfulldatarate.md
-    - name: "KS_AM_RATE_Step"
+    - name: KS_AM_RATE_Step
       href: ks-am-rate-step.md
-  - name: "KSPROPSETID_VPConfig and KSPROPSETID_VPVBIConfig"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_VPConfig and KSPROPSETID_VPVBIConfig"
+  - name: KSPROPSETID_VPConfig and KSPROPSETID_VPVBIConfig
+    items:
+    - name: KSPROPSETID_VPConfig and KSPROPSETID_VPVBIConfig
       href: kspropsetid-vpconfig-and-kspropsetid-vpvbiconfig.md
-    - name: "KSPROPERTY_VPCONFIG_NUMCONNECTINFO"
+    - name: KSPROPERTY_VPCONFIG_NUMCONNECTINFO
       href: ksproperty-vpconfig-numconnectinfo.md
-    - name: "KSPROPERTY_VPCONFIG_GETCONNECTINFO"
+    - name: KSPROPERTY_VPCONFIG_GETCONNECTINFO
       href: ksproperty-vpconfig-getconnectinfo.md
-    - name: "KSPROPERTY_VPCONFIG_SETCONNECTINFO"
+    - name: KSPROPERTY_VPCONFIG_SETCONNECTINFO
       href: ksproperty-vpconfig-setconnectinfo.md
-    - name: "KSPROPERTY_VPCONFIG_VPDATAINFO"
+    - name: KSPROPERTY_VPCONFIG_VPDATAINFO
       href: ksproperty-vpconfig-vpdatainfo.md
-    - name: "KSPROPERTY_VPCONFIG_MAXPIXELRATE"
+    - name: KSPROPERTY_VPCONFIG_MAXPIXELRATE
       href: ksproperty-vpconfig-maxpixelrate.md
-    - name: "KSPROPERTY_VPCONFIG_NUMVIDEOFORMAT"
+    - name: KSPROPERTY_VPCONFIG_NUMVIDEOFORMAT
       href: ksproperty-vpconfig-numvideoformat.md
-    - name: "KSPROPERTY_VPCONFIG_GETVIDEOFORMAT"
+    - name: KSPROPERTY_VPCONFIG_GETVIDEOFORMAT
       href: ksproperty-vpconfig-getvideoformat.md
-    - name: "KSPROPERTY_VPCONFIG_SETVIDEOFORMAT"
+    - name: KSPROPERTY_VPCONFIG_SETVIDEOFORMAT
       href: ksproperty-vpconfig-setvideoformat.md
-    - name: "KSPROPERTY_VPCONFIG_INVERTPOLARITY"
+    - name: KSPROPERTY_VPCONFIG_INVERTPOLARITY
       href: ksproperty-vpconfig-invertpolarity.md
-    - name: "KSPROPERTY_VPCONFIG_DECIMATIONCAPABILITY"
+    - name: KSPROPERTY_VPCONFIG_DECIMATIONCAPABILITY
       href: ksproperty-vpconfig-decimationcapability.md
-    - name: "KSPROPERTY_VPCONFIG_SCALEFACTOR"
+    - name: KSPROPERTY_VPCONFIG_SCALEFACTOR
       href: ksproperty-vpconfig-scalefactor.md
-    - name: "KSPROPERTY_VPCONFIG_DDRAWHANDLE"
+    - name: KSPROPERTY_VPCONFIG_DDRAWHANDLE
       href: ksproperty-vpconfig-ddrawhandle.md
-    - name: "KSPROPERTY_VPCONFIG_VIDEOPORTID"
+    - name: KSPROPERTY_VPCONFIG_VIDEOPORTID
       href: ksproperty-vpconfig-videoportid.md
-    - name: "KSPROPERTY_VPCONFIG_DDRAWSURFACEHANDLE"
+    - name: KSPROPERTY_VPCONFIG_DDRAWSURFACEHANDLE
       href: ksproperty-vpconfig-ddrawsurfacehandle.md
-    - name: "KSPROPERTY_VPCONFIG_SURFACEPARAMS"
+    - name: KSPROPERTY_VPCONFIG_SURFACEPARAMS
       href: ksproperty-vpconfig-surfaceparams.md
-  - name: "KSPROPSETID_Wave"
-# Auto-expanded node
-    items: 
-    - name: "KSPROPSETID_Wave"
+  - name: KSPROPSETID_Wave
+    items:
+    - name: KSPROPSETID_Wave
       href: kspropsetid-wave.md
-    - name: "KSPROPERTY_WAVE_COMPATIBLE_CAPABILITIES"
+    - name: KSPROPERTY_WAVE_COMPATIBLE_CAPABILITIES
       href: ksproperty-wave-compatible-capabilities.md
-    - name: "KSPROPERTY_WAVE_INPUT_CAPABILITIES"
+    - name: KSPROPERTY_WAVE_INPUT_CAPABILITIES
       href: ksproperty-wave-input-capabilities.md
-    - name: "KSPROPERTY_WAVE_OUTPUT_CAPABILITIES"
+    - name: KSPROPERTY_WAVE_OUTPUT_CAPABILITIES
       href: ksproperty-wave-output-capabilities.md
-    - name: "KSPROPERTY_WAVE_BUFFER"
+    - name: KSPROPERTY_WAVE_BUFFER
       href: ksproperty-wave-buffer.md
-    - name: "KSPROPERTY_WAVE_FREQUENCY"
+    - name: KSPROPERTY_WAVE_FREQUENCY
       href: ksproperty-wave-frequency.md
-    - name: "KSPROPERTY_WAVE_VOLUME"
+    - name: KSPROPERTY_WAVE_VOLUME
       href: ksproperty-wave-volume.md
-    - name: "KSPROPERTY_WAVE_PAN"
+    - name: KSPROPERTY_WAVE_PAN
       href: ksproperty-wave-pan.md
-- name: "DVD Decoder Minidriver Event Sets"
-# Auto-expanded node
-  items: 
-  - name: "DVD Decoder Minidriver Event Sets"
+- name: DVD Decoder Minidriver Event Sets
+  items:
+  - name: DVD Decoder Minidriver Event Sets
     href: dvd-decoder-minidriver-event-sets.md
-  - name: "KSEVENTSETID_VPNotify"
-# Auto-expanded node
-    items: 
-    - name: "KSEVENTSETID_VPNotify"
+  - name: KSEVENTSETID_VPNotify
+    items:
+    - name: KSEVENTSETID_VPNotify
       href: kseventsetid-vpnotify.md
-    - name: "KSEVENT_VPNOTIFY_FORMATCHANGE"
+    - name: KSEVENT_VPNOTIFY_FORMATCHANGE
       href: ksevent-vpnotify-formatchange.md
-- name: "COM Interfaces"
+- name: COM Interfaces
   href: com-interfaces.md
-- name: "Ks.h stucture typedef reference"
-# Auto-expanded node
-  items: 
-  - name: "Ks.h stucture typedef reference"
+- name: Ks.h stucture typedef reference
+  items:
+  - name: Ks.h stucture typedef reference
     href: ks-h-typedef-reference.md
-  - name: "KSDEGRADE"
+  - name: KSDEGRADE
     href: ksdegrade-structure.md
-  - name: "KSEVENT"
+  - name: KSEVENT
     href: ksevent-structure.md
-  - name: "KSMETHOD"
+  - name: KSMETHOD
     href: ksmethod-structure.md
-  - name: "KSPIN_INTERFACE"
+  - name: KSPIN_INTERFACE
     href: kspin-interface-structure.md
-  - name: "KSPIN_MEDIUM"
+  - name: KSPIN_MEDIUM
     href: kspin-medium-structure.md
-  - name: "KSPROPERTY"
+  - name: KSPROPERTY
     href: ksproperty-structure.md

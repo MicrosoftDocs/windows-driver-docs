@@ -1,5 +1,5 @@
 ---
-title: Get method of the MSFT\_FileStorageTier class
+title: Get Method of the MSFT_FileStorageTier Class
 description: Gets tier information for pinned files.
 ms.assetid: 5EC4BA2D-159F-4CE4-995C-1690A1DAF3F4
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

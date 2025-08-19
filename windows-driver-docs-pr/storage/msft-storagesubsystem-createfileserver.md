@@ -1,5 +1,5 @@
 ---
-title: CreateFileServer method of the MSFT\_StorageSubSystem class
+title: CreateFileServer Method of the MSFT_StorageSubSystem Class
 description: Creates a file server on a storage subsystem.
 ms.assetid: 60B1D607-A675-484C-8893-2B0F332A5094
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

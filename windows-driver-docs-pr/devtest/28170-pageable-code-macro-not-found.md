@@ -1,5 +1,5 @@
 ---
-title: C28170 warning
+title: C28170 Warning
 description: Warning C28170 The function has been declared to be in a paged segment, but neither PAGED_CODE nor PAGED_CODE_LOCKED was found.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -7,6 +7,7 @@ keywords:
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28170" 
+ms.topic: reference
 ---
 
 # C28170
@@ -49,12 +50,4 @@ void func2()
    PAGED_CODE(); // includes PAGED_CODE macro
 }
 ```
-
- 
-
- 
-
-
-
-
 

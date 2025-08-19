@@ -3,6 +3,7 @@ title: Threads and Processes
 description: Threads and Processes
 keywords: ["Debugger Engine, threads and processes"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Threads and Processes
@@ -37,8 +38,3 @@ For details about using thread and processes, see [Controlling Threads and Proce
  
 
  
-
-
-
-
-

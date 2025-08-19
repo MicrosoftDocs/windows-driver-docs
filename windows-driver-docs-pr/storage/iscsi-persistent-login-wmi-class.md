@@ -1,7 +1,8 @@
 ---
-title: ISCSI\_Persistent\_Login WMI Class
+title: ISCSI_Persistent_Login WMI Class
 description: ISCSI\_Persistent\_Login WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # ISCSI\_Persistent\_Login WMI Class

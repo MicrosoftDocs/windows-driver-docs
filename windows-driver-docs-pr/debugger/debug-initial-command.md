@@ -1,8 +1,9 @@
 ---
-title: Debug initial command
+title: Debug Initial Command
 description: Debug initial command
 keywords: ["Debug initial command (global flag)"]
 ms.date: 12/22/2021
+ms.topic: reference
 ---
 
 # Debug initial command
@@ -58,8 +59,3 @@ For details on NTSD, see [Debugging Using CDB and NTSD](debugging-using-cdb-and-
  
 
  
-
-
-
-
-

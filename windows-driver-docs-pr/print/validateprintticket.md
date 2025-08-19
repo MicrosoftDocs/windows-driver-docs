@@ -1,9 +1,10 @@
 ---
-title: ValidatePrintTicket overview
+title: ValidatePrintTicket Overview
 description: Each plug-in calls the IPrintOemPrintTicketProvider::ValidatePrintTicket method to validate the PrintTicket.
 keywords:
 - ValidatePrintTicket
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # ValidatePrintTicket overview

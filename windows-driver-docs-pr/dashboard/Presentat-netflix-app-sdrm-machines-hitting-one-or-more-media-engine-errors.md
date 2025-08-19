@@ -1,19 +1,17 @@
 ---
 title: PresentAt - Netflix app (Software Digital Rights Management) % of machines hitting one or more media engine errors
 description: Percent of machines using Present AT that hit one or more media engine errors during video playback on the Netflix app, which supports Software Digital Rights Management (SWDRM). This measure monitors media engine errors that arise for driver versions using Present AT on Netflix app. 
-ms.topic: article
-ms.date: 07/15/2022
+ms.date: 06/20/2023
+ms.topic: error-reference
 ---
 
-#  Percent of machines using PresentAt on Netflix app (Software Digital Rights Management) that hit one or more media engine errors
+# Percent of machines using PresentAt on Netflix app (Software Digital Rights Management) that hit one or more media engine errors
 
 ## Description
 
 During a user's session, a machine hits one or more media engine errors during video playback on the Netflix app, which supports Software Digital Rights Management (SWDRM). This measure monitors media engine errors that arise for driver versions using Present AT on Netflix app.
 
-Examples of media engine errors can be found here: [Errors Online: Error lookup](https://windowsinternalservices.azurewebsites.net)
-
-
+Media engine errors can be found in [The Microsoft Error Lookup Tool](/windows/win32/debug/system-error-code-lookup-tool)
 
 ## Measure attributes
 
@@ -24,11 +22,11 @@ Examples of media engine errors can be found here: [Errors Online: Error lookup]
 | **Measurement criteria** | Percent of machines |
 | **Minimum population** | 100 machines |
 | **Passing criteria** | <=2% of devices hit a playback error|
-| **Measure ID** | 39664000 |
+| **Measure ID** | 44233428 |
 
 ## Calculation
 
 1. The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have 1 or more media engine errors while using the Netflix app with Present AT
-2. Failure machines = count(machines with 1 or more video playback errors using Netflix app with Present AT)
-3. Total machines = count(machines using Netflix app with Present AT)
-4. Final calculation = Failure machines / Total machines
+1. Failure machines = count(machines with 1 or more video playback errors using Netflix app with Present AT)
+1. Total machines = count(machines using Netflix app with Present AT)
+1. Final calculation = Failure machines / Total machines

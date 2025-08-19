@@ -11,6 +11,7 @@ keywords:
 - tracing WDK , session creation
 - trace logs WDK TraceView , sessions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating a Trace Session
@@ -54,12 +55,4 @@ This section includes:
 TraceView requires a [PDB symbol file](pdb-symbol-files.md), a [trace message format (TMF) file](trace-message-format-file.md), or a TMF directory when creating a trace session. TraceView does not use the %TRACE\_FORMAT\_SEARCH\_PATH% environment variable.
 
 When you use the TraceView window to create a trace session, the trace session runs only as long as the window remains open. You cannot close the window and leave the session running. To start a trace session that runs independently of the TraceView window, use the [TraceView command-line interface](traceview-command-line-interface.md).
-
- 
-
- 
-
-
-
-
 

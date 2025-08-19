@@ -3,12 +3,10 @@ title: Get RPC Endpoint Information
 description: Get RPC Endpoint Information
 keywords: ["RPC endpoint Information"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Get RPC Endpoint Information
-
-
-## <span id="ddk_get_rpc_endpoint_information_dbg"></span><span id="DDK_GET_RPC_ENDPOINT_INFORMATION_DBG"></span>
 
 
 Endpoint information is displayed by the **!rpcexts.getendpointinfo** extension, or by DbgRpc when the **-e** switch is used.
@@ -62,13 +60,8 @@ Searching for endpoint info ...
 
 For details on the optional parameters, see [**DbgRpc Command-Line Options**](dbgrpc-command-line-options.md).
 
-For a similar example using the RPC debugger extensions, see [**!rpcexts.getendpointinfo**](-rpcexts-getendpointinfo.md).
+For a similar example using the RPC debugger extensions, see [**!rpcexts.getendpointinfo**](../debuggercmds/-rpcexts-getendpointinfo.md).
 
  
 
  
-
-
-
-
-

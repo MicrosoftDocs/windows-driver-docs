@@ -9,6 +9,7 @@ keywords:
 - filter pipeline property bags WDK XPSDrv
 - property bags WDK filter pipeline
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Filter Pipeline Configuration File

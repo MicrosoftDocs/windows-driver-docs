@@ -4,6 +4,8 @@ description: Handling Stride in AVStream Codecs
 keywords:
 - AVStream hardware codec support WDK , handling stride
 ms.date: 04/20/2017
+ms.topic: concept-article
+ms.custom: sfi-ropc-nochange
 ---
 
 # Handling Stride in AVStream Codecs

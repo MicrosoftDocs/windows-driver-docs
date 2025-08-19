@@ -5,6 +5,7 @@ keywords:
 - filtering trace messages, changing rules WDK
 - trace message filters WDK , changing rules
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Changing a Rule
@@ -23,12 +24,4 @@ To change a rule in a filter:
 5.  Click **Modify Rule**.
 
 If you have saved the rule in a [workspace](using-traceview-workspaces.md), you must [resave the workspace](saving-or-resaving-a-workspace.md) after changing the rule. Otherwise, the original rule remains in the workspace.
-
- 
-
- 
-
-
-
-
 

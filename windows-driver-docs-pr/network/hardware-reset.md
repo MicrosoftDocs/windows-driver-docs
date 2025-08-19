@@ -8,6 +8,7 @@ keywords:
 - MiniportResetEx
 - hardware resets WDK NDIS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Miniport Driver Hardware Reset
@@ -20,7 +21,7 @@ A miniport driver must register a [*MiniportResetEx*](/windows-hardware/drivers/
 
 *MiniportResetEx* can complete synchronously or asynchronously with a call to [**NdisMResetComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismresetcomplete)(see the following figure).
 
-![diagram illustrating resetting a network interface card.](images/207-09.png)
+:::image type="content" source="images/207-09.png" alt-text="Diagram illustrating the process of resetting a network interface card.":::
 
 *MiniportResetEx* should:
 

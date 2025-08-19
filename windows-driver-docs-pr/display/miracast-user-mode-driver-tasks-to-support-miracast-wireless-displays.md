@@ -1,7 +1,8 @@
 ---
-title: WDDM 1.3 Miracast user-mode drivers to support wireless displays
+title: WDDM 1.3 Miracast User-Mode Drivers to Support Wireless Displays
 description: User-mode driver support for Miracast on Windows 8.1
 ms.date: 03/24/2023
+ms.topic: concept-article
 ---
 
 # Miracast user-mode driver tasks to support Miracast wireless displays on Windows 8.1

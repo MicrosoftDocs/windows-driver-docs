@@ -2,6 +2,7 @@
 title: UseAfterFree (Windows Driver CodeQL Query)
 description: UseAfterFree, High Precision a Supplemental Windows Driver CodeQL Query
 ms.date: 01/11/2021
+ms.topic: best-practice
 ---
 
 # UseAfterFree (Windows Driver CodeQL Query)
@@ -10,7 +11,7 @@ ms.date: 01/11/2021
 
 This [CodeQL query](./static-tools-and-codeql.md) has high precision, which helps in bug automation, but has some limitations and therefore will not be able to detect all cases of UseAfterFree defects.  
 
-A [UseAfterFree defect](http://cwe.mitre.org/data/definitions/416.html) occurs when an allocated memory block is used after it has been freed (also known as a "dangling pointer").
+A [UseAfterFree defect](https://cwe.mitre.org/data/definitions/416.html) occurs when an allocated memory block is used after it has been freed (also known as a "dangling pointer").
 
 Behavior in such cases is undefined and in practice may have unintended consequences including memory corruption, use of incorrect values, or arbitrary code execution.
 
@@ -20,7 +21,7 @@ Behavior in such cases is undefined and in practice may have unintended conseque
 Set pointers to NULL immediately after they are freed.
 
 ## Example
-In the following example, `pSomePointer` is freed only if `Status` value was not zero, and before dereferencing `pSomePointer` to call `Method`, `Status` is checked again.  Unfortunately `Status` was changed between the two references to `pSomePointer`, which allows for the possiblity that the call to `pSomePointer->Method()` is being performed over a previously freed pointer.
+In the following example, `pSomePointer` is freed only if `Status` value was not zero, and before dereferencing `pSomePointer` to call `Method`, `Status` is checked again.  Unfortunately `Status` was changed between the two references to `pSomePointer`, which allows for the possibility that the call to `pSomePointer->Method()` is being performed over a previously freed pointer.
 
 ```c
 NTSTATUS Status = x();

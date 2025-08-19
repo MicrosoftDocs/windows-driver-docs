@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToOffloadDataTransferSetting class
+title: MSFT_StorageSubSystemToOffloadDataTransferSetting Class
 description: Association between StorageSubSystem and OffloadDataTransferSetting.
 ms.assetid: 63E7794B-BD92-47AD-A1C3-0FF57B80AC2B
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

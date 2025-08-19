@@ -8,6 +8,7 @@ keywords:
 - .out files
 - out files
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Tracefmt Output File
@@ -31,12 +32,4 @@ EventTrace
 [0]0888.0D60::10/23/2003-12:27:40.173 [tracedrv]Hello, 5 Hi
 [0]0888.0D60::10/23/2003-12:27:40.173 [tracedrv]Hello, 6 Hi
 ```
-
- 
-
- 
-
-
-
-
 

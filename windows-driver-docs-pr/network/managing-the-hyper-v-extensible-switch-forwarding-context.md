@@ -2,6 +2,7 @@
 title: Managing the Hyper-V Extensible Switch Forwarding Context
 description: Managing the Hyper-V Extensible Switch Forwarding Context
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Managing the Hyper-V Extensible Switch Forwarding Context

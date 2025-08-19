@@ -2,6 +2,7 @@
 title: User Mode Monitor
 description: User Mode Monitor
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # User Mode Monitor

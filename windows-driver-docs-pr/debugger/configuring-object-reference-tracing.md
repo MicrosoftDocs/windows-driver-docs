@@ -3,6 +3,7 @@ title: Configuring Object Reference Tracing
 description: Configuring Object Reference Tracing
 keywords: ["Object Reference Tracing, configuration"]
 ms.date: 01/26/2021
+ms.topic: how-to
 ---
 
 # Configuring Object Reference Tracing
@@ -18,7 +19,7 @@ You can use Gflags to enable, disable, and configure the Object Reference Tracin
 
     You must limit the trace to objects with specified pool tags, to objects created by a specified process, or both.
 
-3.  To limit the trace to objects with a particular pool tag, type the pool tag name. To list multiple pool tags, use semicolons (;) to separate the pool tags. When you list multiple pool tags, the trace includes objects with any of the specified pool tags. Pool tags are case sensitive. Use the [!pool](-pool.md) and [!poolfind](-poolfind.md) debugger commands to determine pool names.
+3.  To limit the trace to objects with a particular pool tag, type the pool tag name. To list multiple pool tags, use semicolons (;) to separate the pool tags. When you list multiple pool tags, the trace includes objects with any of the specified pool tags. Pool tags are case sensitive. Use the [!pool](../debuggercmds/-pool.md) and [!poolfind](../debuggercmds/-poolfind.md) debugger commands to determine pool names.
 
     For example, Fred;Tag1.
 
@@ -34,7 +35,7 @@ You can use Gflags to enable, disable, and configure the Object Reference Tracin
 
 The following screen shot shows Object Reference Tracing enabled on the **Kernel Flags** tab.
 
-![screen shot that shows object reference tracing enabled on the kernel flags tab.](images/gflags-obj.png)
+:::image type="content" source="images/gflags-obj.png" alt-text="Screenshot of object reference tracing enabled on the Kernel Flags tab in Gflags dialog box.":::
 
 This trace will include only objects that were created by the notepad.exe process that have the pool tag **Fred** or **Tag1**. Because this is a run time (kernel flags) setting, the trace starts immediately. If it were a registry setting, you would have to restart Windows to start the trace.
 
@@ -47,8 +48,3 @@ This trace will include only objects that were created by the notepad.exe proces
  
 
  
-
-
-
-
-

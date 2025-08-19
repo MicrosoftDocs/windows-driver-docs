@@ -6,6 +6,7 @@ keywords:
 - trace message filters WDK , saving
 - saving trace filters
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Saving a Filter
@@ -18,12 +19,4 @@ There is no specific procedure to save a filter. Instead, you can save the trace
 2.  At the bottom of the page, in the **Workspace** box, type a name for the workspace, and click **OK**.
 
 When saving the filter in a workspace, be careful not to overwrite files that you want to save. Because the path and file name of the trace log are saved in the workspace, if you open a workspace, the existing trace log file is overwritten. For more information, see [Using TraceView Workspaces](using-traceview-workspaces.md).
-
- 
-
- 
-
-
-
-
 

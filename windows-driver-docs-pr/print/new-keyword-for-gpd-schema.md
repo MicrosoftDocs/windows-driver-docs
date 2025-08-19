@@ -7,6 +7,7 @@ keywords:
 - keywords WDK printer autoconfiguration
 - in-box autoconfiguration support WDK printer , keywords
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # New Keyword for GPD Schema

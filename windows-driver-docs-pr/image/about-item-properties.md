@@ -1,7 +1,8 @@
 ---
-title: About item properties
+title: About Item Properties
 description: About item properties
 ms.date: 03/27/2023
+ms.topic: concept-article
 ---
 
 # About item properties

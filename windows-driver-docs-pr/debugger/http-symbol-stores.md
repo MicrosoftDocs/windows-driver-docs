@@ -3,13 +3,10 @@ title: HTTP Symbol Stores
 description: HTTP Symbol Stores
 keywords: ["HTTP symbol stores"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # HTTP Symbol Stores
-
-
-## <span id="ddk_using_other_symbol_stores_dbg"></span><span id="DDK_USING_OTHER_SYMBOL_STORES_DBG"></span>
-
 
 By using the SRV protocol supported through symsrv.dll (shipped with debugger), the symbol store can be accessed using HTTP (instead of just UNC/SMB).
 
@@ -24,14 +21,13 @@ In order to make a symbol store accessible over the Internet, you must configure
 **Note**  Because of the way IIS will be configured to serve symbol files, it is not recommended that the same server instance be used for any other purpose. Typically the desired security settings for a symbol server will not make sense for other uses, for example for an external facing commerce server. Make sure that the sample configuration described here makes sense for your environment and adapt it as appropriate for your specific needs.
 
  
-
-### <span id="configuring_the_directories"></span><span id="CONFIGURING_THE_DIRECTORIES"></span>Creating the Symbol Directory
+## Creating the Symbol Directory
 
 Begin by selecting the directory you will use as your symbol store. In our examples, we call this directory c:\\symstore and the name of the server on the network is \\SymMachineName.
 
 For details on how to populate your symbol store, see [SymStore](symstore.md) and [Symbol Store Folder Tree](symbol-store-folder-tree.md).
 
-### <span id="configuring_iis"></span><span id="CONFIGURING_IIS"></span>Configuring IIS
+## Configuring IIS
 
 Internet Information Services (IIS) must be configured to serve the symbols by creating a virtual directory and configuring MIME types. After this has been done, the authentication method may be chosen.
 
@@ -51,7 +47,7 @@ Internet Information Services (IIS) must be configured to serve the symbols by c
 
 6.  Click **OK** to finish the adding the virtual directory.
 
-Perform the subdirectory configuration process once for the server. Note that this is a global setting and will effect applications not hosted in the root folder of a site.
+Perform the subdirectory configuration process once for the server. Note that this is a global setting and will affect applications not hosted in the root folder of a site.
 
 **Subdirectory Configuration**
 
@@ -119,14 +115,12 @@ You can edit the web.config file to configure MIME types for Symbols. This appro
 
 IIS is now ready to serve symbol files of all types from the symbol store.
 
-## <span id="Configuring_Authentication"></span><span id="configuring_authentication"></span><span id="CONFIGURING_AUTHENTICATION"></span>Configuring Authentication
+## Configuring Authentication
 
 
 It is possible to configure IIS to use “Integrated Windows Authentication” so that clients (windbg.exe for example) can automatically authenticate against IIS without prompting the end-user for credentials.
 
 **Note**  Only configure Windows Authentication on IIS to control access to the symbol server if that is appropriate for your environment. There are other security options available to further control access to IIS if that is required for your environment.
-
- 
 
 **To configure the authentication method as Anonymous**
 
@@ -146,7 +140,7 @@ It is possible to configure IIS to use “Integrated Windows Authentication” s
 
 If Window Authentication is not listed, use **Turn Windows features on and off** to enable the feature. The location of the feature is different in each version of Windows. In Windows 8.1/Windows 2012 R2, it is located under Internet Information Services | World Wide Web Services | Security.
 
-## <span id="Disable_Kerberos_Support"></span><span id="disable_kerberos_support"></span><span id="DISABLE_KERBEROS_SUPPORT"></span>Disable Kerberos Support
+## Disable Kerberos Support
 
 
 SymSrv.dll does not support Kerberos authentication when connecting to IIS. As such, Kerberos authentication must be disabled in IIS and NTLM needs to be set as the only Windows Authentication protocol.
@@ -171,8 +165,7 @@ SymSrv.dll does not support Kerberos authentication when connecting to IIS. As s
     appcmd.exe set config -section:system.webServer/security/authentication/windowsAuthentication /+"providers.[value='Negotiate,NTLM']" /commit:apphost
     ```
 
-## <span id="Configuring_SymSrv_Client_Authentication_Prompts"></span><span id="configuring_symsrv_client_authentication_prompts"></span><span id="CONFIGURING_SYMSRV_CLIENT_AUTHENTICATION_PROMPTS"></span>Configuring SymSrv Client Authentication Prompts
-
+## Configuring SymSrv Client Authentication Prompts
 
 When SymSrv receives authentication requests, the debugger can either display the authentication dialog box or automatically refuse the request, depending on how it has been configured. You can configure this behavior using !sym prompts on|off. For example to turn prompts on, use this command.
 
@@ -186,13 +179,5 @@ To check the current setting, use this command.
 !sym prompts
 ```
 
-For more information see [**!sym**](-sym.md) and [Firewalls and Proxy Servers](firewalls-and-proxy-servers.md).
-
+For more information see [**!sym**](../debuggercmds/-sym.md) and [Firewalls and Proxy Servers](firewalls-and-proxy-servers.md).
  
-
- 
-
-
-
-
-

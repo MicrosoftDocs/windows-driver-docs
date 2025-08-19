@@ -9,6 +9,7 @@ keywords:
 - child devices WDK KMDF
 - bus enumeration WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting PnP and Power Management in Bus Drivers

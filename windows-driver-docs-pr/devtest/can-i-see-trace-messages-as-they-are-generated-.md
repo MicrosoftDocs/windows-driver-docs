@@ -1,7 +1,8 @@
 ---
-title: Can I see trace messages as they are generated
+title: Can I See Trace Messages as they are Generated
 description: Can I see trace messages as they are generated
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Can I see trace messages as they are generated?
@@ -64,12 +65,4 @@ tracefmt -rt MyTrace -p c:\tracing -display -o mytrace.txt
 ```
 
 For a detailed example, see [Example 5: Formatting Real-Time Trace Sessions](example-5--formatting-real-time-trace-sessions.md).
-
- 
-
- 
-
-
-
-
 

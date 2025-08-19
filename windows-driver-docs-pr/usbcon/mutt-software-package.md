@@ -1,7 +1,8 @@
 ---
-title: Tools in the MUTT software package
+title: Tools in the MUTT Software Package
 description: The MUTT software package contains several tools to be used with MUTT devices. The suite of tools include a firmware upgrade application, driver installation package, and applications that send transfers to the device.
-ms.date: 02/14/2023
+ms.date: 01/17/2024
+ms.topic: overview
 ---
 
 # Tools in the MUTT software package
@@ -12,7 +13,7 @@ The MUTT software package contains several tools to be used with [MUTT devices](
 
 The Microsoft USB Test Tool (MUTT) software package contains test tools for hardware test engineers to test interoperability of their USB controller or hub with the Microsoft USB driver stack. The included documentation provides a brief overview of the different types of MUTT hardware and suggests topologies for controller, hub, device, and BIOS/UEFI testing. The documentation also contains procedural information about how to run the tests, trace events in the USB driver stack, and capture information in the kernel debugger.
 
-**[Download the mutt software package.](https://go.microsoft.com/fwlink/p/?LinkId=786621)**
+**[Download the mutt software package.](https://www.microsoft.com/download/details.aspx?id=51604)**
 
 ## Test tool descriptions
 

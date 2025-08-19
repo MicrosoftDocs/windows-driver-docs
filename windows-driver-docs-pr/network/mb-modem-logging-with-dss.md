@@ -4,7 +4,9 @@ description: MB modem logging with DSS
 keywords:
 - MB modem logging with DSS, Mobile Broadband modem logging with DSS
 ms.date: 03/21/2019
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # MB modem logging with DSS
@@ -35,7 +37,7 @@ Once the modem writes any logs to the newly created data channel, the modem call
 
 ## Modem logging data path
 
-Moddem logging uses the MBIM Data Service Stream (DSS) to transfer the data for logging payloads. For more information about DSS, see Section 10.5.38 of the [MBIM 1.0 specification](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip). 
+Modem logging uses the MBIM Data Service Stream (DSS) to transfer the data for logging payloads. For more information about DSS, see Section 10.5.38 of the [MBIM 1.0 specification](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip). 
 
 When connecting or disconnecting from DSS, the following GUID is used for modem logging:
 

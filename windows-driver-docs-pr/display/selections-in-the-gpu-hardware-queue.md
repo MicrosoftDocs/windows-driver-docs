@@ -2,6 +2,7 @@
 title: Selections in the GPU Hardware Queue
 description: "The following diagram is a screen shot of the Object Details dialog when a Dma Packet is selected."
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Selections in the GPU Hardware Queue  

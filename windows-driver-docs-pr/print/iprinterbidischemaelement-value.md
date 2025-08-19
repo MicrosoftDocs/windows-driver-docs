@@ -1,5 +1,5 @@
 ---
-title: IPrinterBidiSchemaElement Value method
+title: IPrinterBidiSchemaElement Value Method
 description: The Value method returns the Bidi Schema element value.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

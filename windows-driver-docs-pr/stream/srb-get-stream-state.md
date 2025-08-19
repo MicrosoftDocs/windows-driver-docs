@@ -1,7 +1,8 @@
 ---
-title: SRB\_GET\_STREAM\_STATE
+title: SRB_GET_STREAM_STATE
 description: SRB\_GET\_STREAM\_STATE
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # SRB\_GET\_STREAM\_STATE

@@ -1,5 +1,5 @@
 ---
-title: GetSupportedGroupFeatures method of the MSFT\_ReplicationCapabilities class
+title: GetSupportedGroupFeatures Method of the MSFT_ReplicationCapabilities Class
 description: Returns, for a given ReplicationType, the supported group features.
 ms.assetid: A7037D94-1196-4F10-9084-F797A75C7C8D
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

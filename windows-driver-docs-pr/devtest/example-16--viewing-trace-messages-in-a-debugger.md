@@ -5,6 +5,7 @@ keywords:
 - trace message displaying WDK
 - displaying trace messages
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 16: Viewing Trace Messages in a Debugger

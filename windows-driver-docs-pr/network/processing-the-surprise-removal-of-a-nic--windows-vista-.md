@@ -2,6 +2,7 @@
 title: Processing the Surprise Removal of a NIC (Windows Vista)
 description: Processing the Surprise Removal of a NIC (Windows Vista)
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Processing the Surprise Removal of a NIC (Windows Vista)

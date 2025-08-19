@@ -2,6 +2,7 @@
 title: Example 4 Setting Multiple Flags
 description: Example 4 Setting Multiple Flags
 ms.date: 10/12/2018
+ms.topic: concept-article
 ---
 
 # Example 4: Setting Multiple Flags
@@ -46,8 +47,3 @@ Kernel (run time) flags are effective immediately and remain effective until Win
  
 
  
-
-
-
-
-

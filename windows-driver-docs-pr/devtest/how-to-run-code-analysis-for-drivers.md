@@ -1,7 +1,8 @@
 ---
-title: How to run Code Analysis for drivers
+title: How to Run Code Analysis for Drivers
 description: Code Analysis for Drivers provides information about possible defects in the source code. You can run code analysis manually, and you can also run code analysis automatically with each build.
-ms.date: 04/20/2017
+ms.date: 07/02/2024
+ms.topic: how-to
 ---
 
 # How to run Code Analysis for drivers
@@ -15,6 +16,11 @@ In this topic:
 * [Suppressing the report of defects](#suppressing-the-report-of-defects)
 * [Changing stack usage limits for warning C6262 for kernel-mode drivers](#changing-stack-usage-limits-for-warning-c6262-for-kernel-mode-drivers)
 * [Related topics](#related-topics)
+
+> [!IMPORTANT]
+> Code Analysis for drivers is available in the Windows 24H2 WDK and EWDK, but be advised that it is set to be retired at a future date. <br>
+> Going forward, CodeQL will be the primary static analysis tool for drivers. CodeQL provides a powerful query language that treats code as a database to be queried, making it simple to write queries for specific behaviors, patterns, and more.
+> For more information about using CodeQL, see [CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md).
 
 ## Running code analysis
 
@@ -51,7 +57,7 @@ If possible defects are found in the source code, the **Code Analysis Results** 
 
 ## Suppressing the report of defects
 
-In some cases, you might want to suppress the report of a particular warning messages; for example, if the warning is primarily informational and you know the cause of the error.
+In some cases, you might want to suppress the report of a particular warning message; for example, if the warning is primarily informational and you know the cause of the error.
 
 ### To suppress warning messages
 

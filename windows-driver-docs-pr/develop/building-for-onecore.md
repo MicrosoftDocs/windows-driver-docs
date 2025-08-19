@@ -2,6 +2,7 @@
 title: Building for OneCore
 description: You can build a single binary that targets pre-Windows 10 and OneCore editions.
 ms.date: 04/28/2020
+ms.topic: concept-article
 ---
 
 # Building for OneCore
@@ -38,7 +39,7 @@ If your code calls non-universal APIs, you might see the following [ApiValidator
 
 * `Error: <Binary Name> has a dependency on <Module Name><Api Name> but is missing: IsApiSetImplemented("<contract-name-for-Module>)`
     
-    API calls in the above category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the [API Layering](api-layering.md) requirement for [Windows Drivers](./getting-started-with-windows-drivers.md), wrap these calls with [**IsApiSetImplemented**](/windows/win32/api/apiquery2/nf-apiquery2-isapisetimplemented).
+    API calls in the above category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the [API Layering](api-layering.md) requirement for [Windows Drivers](./get-started-developing-windows-drivers.md), wrap these calls with [**IsApiSetImplemented**](/windows/win32/api/apiquery2/nf-apiquery2-isapisetimplemented).
 
 This enables you to compile your code with no errors.  Then at runtime, if the target machine does not have the needed API, [**IsApiSetImplemented**](/windows/win32/api/apiquery2/nf-apiquery2-isapisetimplemented) returns FALSE.
 

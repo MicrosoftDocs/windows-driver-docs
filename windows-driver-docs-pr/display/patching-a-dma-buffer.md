@@ -5,6 +5,7 @@ keywords:
 - DMA buffers WDK display , patching
 - patching DMA buffers WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Patching a DMA Buffer

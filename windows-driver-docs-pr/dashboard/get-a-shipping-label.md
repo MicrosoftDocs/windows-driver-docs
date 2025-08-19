@@ -1,8 +1,8 @@
 ---
 title: Get a shipping label
 description: These methods from the Microsoft Hardware APIs get data for shipping labels of hardware products registered to your Hardware dev center Account.
-ms.topic: article
 ms.date: 08/21/2018
+ms.topic: how-to
 ---
 
 # Get a shipping label
@@ -25,7 +25,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Header | Type | Description |
 |:--|:--|:--|
-| authorization | string | Required. The Azure AD access token in the form **Bearer** \*<token\>*. |
+| authorization | string | Required. The Microsoft Entra ID access token in the form **Bearer** \*<token\>*. |
 | accept | string | Optional. Specifies the type of content. Allowed value is “application/json” |
 
 ### Request parameters

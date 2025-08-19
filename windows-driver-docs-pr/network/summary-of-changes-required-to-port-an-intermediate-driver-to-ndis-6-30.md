@@ -2,6 +2,7 @@
 title: Summary of changes to port an intermediate driver to NDIS 6.30
 description: To update an NDIS 6.x intermediate (IM) driver to support NDIS 6.30, you must modify it as outlined in the following sections.
 ms.date: 03/02/2023
+ms.topic: upgrade-and-migration-article
 ---
 
 # Summary of Changes Required to Port an Intermediate Driver to NDIS 6.30

@@ -8,6 +8,7 @@ keywords:
 - AppVerif.exe
 - user-mode application testing
 ms.date: 01/14/2022
+ms.topic: reference
 ---
 
 # Application Verifier - Stop Codes - Webservices
@@ -15,7 +16,7 @@ ms.date: 01/14/2022
 The following stop codes are contained in this set of tests.
 
 <h3>An invalid address of a Web Services Windows API intrinsic object was passed to the function</h3>
-<p></p><i>Probable cause</i><p>A call was made to an Web Services Windows API with an invalid object. The object referenced in parameter 1 may be invalid or have been already freed. To list the objects which have been created and freed, enter !avrf -ws -obj at the debugger prompt.</p>
+<p></p><i>Probable cause</i><p>A call was made to a Web Services Windows API with an invalid object. The object referenced in parameter 1 may be invalid or have been already freed. To list the objects which have been created and freed, enter !avrf -ws -obj at the debugger prompt.</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
   <li><b>Format:</b>&nbsp;-&nbsp;Invalid address of a Web Services Windows API intrinsic object</li>
   <li><b>Parameter 1</b>&nbsp;-&nbsp;Address of object.</li>

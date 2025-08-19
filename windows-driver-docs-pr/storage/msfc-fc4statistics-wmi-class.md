@@ -1,7 +1,8 @@
 ---
-title: MSFC\_FC4STATISTICS WMI Class
+title: MSFC_FC4STATISTICS WMI Class
 description: MSFC\_FC4STATISTICS WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSFC\_FC4STATISTICS WMI Class

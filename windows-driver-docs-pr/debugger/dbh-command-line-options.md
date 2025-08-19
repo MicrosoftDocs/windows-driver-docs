@@ -14,7 +14,6 @@ api_type:
 
 # DBH Command-Line Options
 
-
 The DBH command line uses the following syntax.
 
 ```console
@@ -29,8 +28,7 @@ dbh -?
 dbh -??  
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 <span id="-p_PID"></span><span id="-p_pid"></span><span id="-P_PID"></span>**-p:**<em>PID</em>  
 Specifies the process ID of the process whose symbols are to be loaded.
@@ -41,7 +39,7 @@ Specifies the executable file whose symbols are to be loaded, including the file
 <span id="_______SymbolFileName______"></span><span id="_______symbolfilename______"></span><span id="_______SYMBOLFILENAME______"></span> *SymbolFileName*   
 Specifies the symbol file whose symbols are to be loaded, including the file name extension (.pdb or .dbg). You should include a relative or absolute directory path; if no path is included, the current working directory is assumed.
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
+*Options*
 Any combination of the following options.
 
 <span id="-d"></span><span id="-D"></span>**-d**  
@@ -62,15 +60,6 @@ Displays help text for the DBH command line.
 <span id="_______-________"></span> **-??**   
 Displays help text for the DBH command line, and displays a list of all DBH commands.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about the DBH tool, see [Using DBH](using-dbh.md).
-
- 
-
- 
-
-
-
-
-

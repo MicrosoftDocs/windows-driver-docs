@@ -3,6 +3,7 @@ title: Setting Up an AML Debugging Session
 description: Setting Up an AML Debugging Session
 keywords: ["AMLI Debugger, setup", "debug build, of acpi.sys", "acpi.sys"]
 ms.date: 11/07/2018
+ms.topic: concept-article
 ---
 
 # Setting Up an AML Debugging Session
@@ -13,7 +14,7 @@ ms.date: 11/07/2018
 
 The AMLI Debugger code is contained in Acpi.sys. In order to fully perform AML debugging, this driver must be installed on your target computer, which it normally is.
 
-To activate breaking into debugger on free builds, use the **!amli set dbgbrkon** command, that is part of the AMLI Debugger extensions. For more information, see [**!amli set**](-amli-set.md).
+To activate breaking into debugger on free builds, use the **!amli set dbgbrkon** command, that is part of the AMLI Debugger extensions. For more information, see [**!amli set**](../debuggercmds/-amli-set.md).
 
  
 ## See Also

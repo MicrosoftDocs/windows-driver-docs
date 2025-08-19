@@ -1,5 +1,5 @@
 ---
-title: Determining Whether a Device Is Plugged In
+title: Determining Whether a Device is Plugged in
 description: Determining Whether a Device Is Plugged In
 keywords:
 - reinstalling unplugged devices
@@ -9,6 +9,7 @@ keywords:
 - plugged in device checks WDK
 - determining plugged in devices WDK
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Determining Whether a Device Is Plugged In

@@ -13,6 +13,7 @@ keywords:
 - power states WDK KMDF
 - device power states WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Power Management for I/O Queues

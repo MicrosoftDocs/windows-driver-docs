@@ -2,6 +2,7 @@
 title: Roadmap for Developing NDIS Intermediate Drivers
 description: Roadmap for Developing NDIS Intermediate Drivers
 ms.date: 03/02/2023
+ms.topic: checklist
 ---
 
 # Roadmap for Developing NDIS Intermediate Drivers
@@ -30,7 +31,7 @@ To create a Network Driver Interface Specification (NDIS) intermediate driver pa
 
 - Step 4: Learn about the Windows driver build, test, and debug processes and tools.
 
-    Building a driver differs from building a user-mode application. For more information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) testing, see [Building, Debugging, and Testing Drivers](/windows-hardware/drivers). For more information about building, testing, verifying, and debugging tools, see [Driver Development Tools](../devtest/index.md).
+    Building a driver differs from building a user-mode application. For more information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) testing, see [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop). For more information about building, testing, verifying, and debugging tools, see [Driver Development Tools](../devtest/index.md).
 
 - Step 5: Read the intermediate driver, miniport driver, and protocol driver introduction topics.
     [Introduction to NDIS Intermediate Drivers](introduction-to-ndis-intermediate-drivers.md)
@@ -40,7 +41,7 @@ To create a Network Driver Interface Specification (NDIS) intermediate driver pa
 
     Intermediate drivers use a combination of protocol driver and miniport driver interfaces in addition to some intermediate driver specific interfaces. As an option, you can also read the miniport driver and protocol driver design guides.
 
-- Step 7: Review the [NDIS intermediate driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617916) in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+- Step 7: Review the [NDIS intermediate driver sample](https://github.com/microsoft/Windows-driver-samples/tree/95037b3f77f3a745f7682f991ac80e81f91f5362/network/ndis/mux) in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples/tree/develop) repository on GitHub.
 
 - Step 8: Develop (or port), build, test, and debug your NDIS driver.
 
@@ -50,7 +51,7 @@ To create a Network Driver Interface Specification (NDIS) intermediate driver pa
   - [Porting NDIS 6.x Drivers to NDIS 6.20](porting-ndis-6-x-drivers-to-ndis-6-20.md)
   - [Porting NDIS 6.x Drivers to NDIS 6.30](porting-ndis-6-x-drivers-to-ndis-6-30.md)
 
-    For more information about iterative building, testing, and debugging, see [Overview of Build, Debug, and Test Process](/windows-hardware/drivers). This process will help ensure that you build a driver that works.
+    For more information about iterative building, testing, and debugging, see [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop). This process will help ensure that you build a driver that works.
 
 - Step 9: Create a driver package for your driver.
 

@@ -4,6 +4,7 @@ description: PNPCPU General Commands
 keywords:
 - PNPCPU WDK , commands
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # PNPCPU General Commands
@@ -34,12 +35,4 @@ Displays usage information similar to this documentation.
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 There are no further optional parameters for any of the commands listed.
-
- 
-
- 
-
-
-
-
 

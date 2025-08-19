@@ -3,6 +3,7 @@ title: Debug WinLogon
 description: Debug WinLogon
 keywords: ["Debug WinLogon (global flag)"]
 ms.date: 05/23/2017
+ms.topic: error-reference
 ---
 
 # Debug WinLogon
@@ -53,8 +54,3 @@ For details on NTSD, see [Debugging Using CDB and NTSD](debugging-using-cdb-and-
  
 
  
-
-
-
-
-

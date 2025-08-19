@@ -1,5 +1,5 @@
 ---
-title: SetupAPI component
+title: SetupAPI Component
 description: SetupAPI
 keywords:
 - SetupAPI WDK device installations , functions
@@ -11,6 +11,7 @@ keywords:
 - functions WDK SetupAPI
 - device installations WDK , SetupAPI
 ms.date: 03/11/2022
+ms.topic: concept-article
 ---
 
 # SetupAPI

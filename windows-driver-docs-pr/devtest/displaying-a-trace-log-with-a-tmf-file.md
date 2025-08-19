@@ -5,6 +5,7 @@ keywords:
 - trace message format files WDK
 - TMF files WDK , displaying trace logs
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Displaying a Trace Log with a TMF File
@@ -34,12 +35,4 @@ If you do not have the [PDB symbol file](pdb-symbol-files.md) for the trace prov
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 For more information about specifying TMF files, see Select TMF Files and Set TMF Search Path.
-
- 
-
- 
-
-
-
-
 

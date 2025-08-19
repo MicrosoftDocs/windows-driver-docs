@@ -1,10 +1,11 @@
 ---
-title: Opening a device's hardware key
+title: Opening a Device's Hardware Key
 description: Provides information about opening a device's hardware key.
 keywords:
 - hardware keys WDK device installations , opening
 - opening hardware keys WDK device installations
 ms.date: 08/15/2022
+ms.topic: concept-article
 ---
 
 # Opening a device's hardware key

@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToVirtualDisk class
+title: MSFT_StorageSubSystemToVirtualDisk Class
 description: Association between StorageSubSystem and VirtualDisk.
 ms.assetid: 2fb7838f-e8c7-4fb4-83f1-4746a2bb3642
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

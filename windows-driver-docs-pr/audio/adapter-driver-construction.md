@@ -12,13 +12,12 @@ keywords:
 - audio adapters WDK , constructing
 - adapter drivers WDK audio , constructing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Adapter Driver Construction
 
-
 ## <span id="adapter_driver_construction"></span><span id="ADAPTER_DRIVER_CONSTRUCTION"></span>
-
 
 Driver support for a particular audio adapter card takes the form of an adapter driver. An adapter driver consists of the following:
 

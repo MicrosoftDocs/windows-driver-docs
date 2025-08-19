@@ -1,7 +1,8 @@
 ---
-title: What Is Device Stage
+title: What is Device Stage
 description: What Is Device Stage
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # What Is Device Stage?

@@ -1,7 +1,8 @@
 ---
-title: Component Firmware Update (CFU) standalone tool
+title: Component Firmware Update (CFU) Standalone Tool
 description: Provides information on the Component Firmware Update (CFU) standalone tool that sends firmware update image files to a device.
 ms.date: 03/17/2023
+ms.topic: overview
 ---
 
 # Component Firmware Update (CFU) standalone tool

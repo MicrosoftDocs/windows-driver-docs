@@ -1,7 +1,8 @@
 ---
+title: Support for Enumeration Commands (WpdBasicHardwareDriverSample)
 description: Support for enumeration commands (WpdBasicHardwareDriverSample)
-title: Support for enumeration commands (WpdBasicHardwareDriverSample)
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Support for enumeration commands (WpdBasicHardwareDriverSample)
@@ -26,7 +27,7 @@ For the sample driver, the code remains intact for the WPD\_COMMAND\_OBJECT\_ENU
 
 The driver calls the **WpdObjectEnumerator::OnStartFind** handler in response to the WPD\_COMMAND\_OBJECT\_ENUMERATION\_START\_FIND command. The handler, in turn, creates, initializes, and adds a new enumeration context to the client context map. For the sample driver, the **InitializeEnumerationContext** helper function that is called from within the **OnStartFind** handler was modified.
 
-The modifications to both the **OnStartFind** handler and the **InitializeEnumerationContext** helper function included removing support for objects that were no longer supported (the storage, folder, and file objects) and adding support for the sensor object. The following is the code for the **InitalizeEnumerationContext** helper function:
+The modifications to both the **OnStartFind** handler and the **InitializeEnumerationContext** helper function included removing support for objects that were no longer supported (the storage, folder, and file objects) and adding support for the sensor object. The following is the code for the **InitializeEnumerationContext** helper function:
 
 ```cpp
 VOID WpdObjectEnumerator::InitializeEnumerationContext(
@@ -43,7 +44,7 @@ VOID WpdObjectEnumerator::InitializeEnumerationContext(
 
     // Our sample driver has a very simple object structure where we know
     // how many children are under each parent.
-    // The eumeration context is initialized below with this information.
+    // The enumeration context is initialized below with this information.
     if (strParentObjectID.CompareNoCase(L"") == 0)
     {
         // Clients passing an 'empty' string for the parent are asking for the

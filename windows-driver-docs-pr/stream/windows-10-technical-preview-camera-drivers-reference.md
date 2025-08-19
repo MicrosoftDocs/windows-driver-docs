@@ -1,7 +1,8 @@
 ---
-title: Universal camera driver reference for Windows 10
+title: Universal Camera Driver Reference for Windows 10
 description: Provides information about universal camera driver interfaces for Windows 10.
-ms.date: 03/03/2023
+ms.date: 02/21/2025
+ms.topic: reference
 ---
 
 # Universal camera driver reference for Windows 10

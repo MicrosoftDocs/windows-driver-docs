@@ -11,7 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 10/04/2021
+ms.date: 05/11/2023
 ---
 
 # WIA_IPA_FORMAT
@@ -46,212 +46,56 @@ For Windows 8 and later versions of Windows, the following values have been add
 
 - WiaImgFmt_XmlPat
 
-Beginning with Windows Vista and later versions of Windows, the following values are added for the WIA_IPA_FORMAT property:
-
-- WiaImgFmt_PDFA
-
-- WiaImgFmt_JBIG
-
-- WiaImgFmt_XPS
-
 For both the WiaImgFmt_PDFA and WiaImgFmt_XPS formats, the drivers should support any [**WIA_IPA_COMPRESSION**](wia-ipa-compression.md) value. For these two formats, the default WIA_IPA_COMPRESSION value, WIA_COMPRESSION_NONE, means "not defined." The scanner (or the driver, where the PDF/A or XPS file is generated) must choose the internal compression mode that is used for image data.
 
 The following table describes the constants that are valid with WIA_IPA_FORMAT.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Format</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>WiaAudFmt_AIFF</p></td>
-<td><p>AIFF audio format</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaAudFmt_MP3</p></td>
-<td><p>MP3 audio format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaAudFmt_WAV</p></td>
-<td><p>WAV audio format</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaAudFmt_WMA</p></td>
-<td><p>WMA audio format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_ASF</p></td>
-<td><p>ASF video format</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_AVI</p></td>
-<td><p>AVI video format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_BMP</p></td>
-<td><p>Windows Device Independent Bitmap (DIB) file</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_CIFF</p></td>
-<td><p>Camera Image File format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_CSV<strong></p></td>
-<td><p>Comma separated file</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_DPOF</p></td>
-<td><p>DPOF printing format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_EMF</p></td>
-<td><p>Extended Windows metafile</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_EXEC</p></td>
-<td><p>Executable file</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_EXIF</p></td>
-<td><p>Exchangeable File Format</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_FLASHPIX</p></td>
-<td><p>FlashPix format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_GIF</p></td>
-<td><p>GIF image format</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_HTML</p></td>
-<td><p>HTML format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_ICO</p></td>
-<td><p>Windows icon file format</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_JBIG*</p></td>
-<td><p>Joint Bi-level Image experts Group format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_JBIG2</strong></p></td>
-<td><p>Joint Bi-level Image experts Group format (version 2)</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_JPEG</p></td>
-<td><p>JPEG compressed format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_JPEG2K</p></td>
-<td><p>JPEG 2000 compressed format</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_JPEG2KX</p></td>
-<td><p>JPEG 2000 compressed format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_MEMORYBMP</p></td>
-<td><p>Windows bitmap without a header file</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_MPG</p></td>
-<td><p>MPEG video format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_PHOTOCD</p></td>
-<td><p>Eastman Kodak file format</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_PDFA<em></p></td>
-<td><p>PDF/A (ISO/CD 19005-1) format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_PICT</p></td>
-<td><p>Apple file format</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_PNG</p></td>
-<td><p>W3C PNG format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_RAW</p></td>
-<td><p>WIA Raw image file format for data transfers only</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_RawBar</em><em></p></td>
-<td><p>WIA Barcode Metadata Raw Format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_RawMic</em><em></p></td>
-<td><p>WIA MICR Metadata Raw Format</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_RawPat</em><em></p></td>
-<td><p>WIA Patch Code Metadata Raw Format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_RAWRGB</p></td>
-<td><p>Raw RGB format</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_RTF</p></td>
-<td><p>Rich Text File format</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_SCRIPT</p></td>
-<td><p>Script file</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_TIFF</p></td>
-<td><p>Tagged Image File Format (TIFF)</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_TXT</p></td>
-<td><p>Text file</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_UNICODE16</p></td>
-<td><p>Unicode 16-bit encoding</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_WMF</p></td>
-<td><p>Windows metafile</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_XML</p></td>
-<td><p>XML file</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_XmlBar</em><em></p></td>
-<td><p>XML file whose content is compliant with the WIA Barcode Metadata Schema</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_XmlMic</em><em></p></td>
-<td><p>XML file whose content is compliant with the WIA MICR Metadata Schema</p></td>
-</tr>
-<tr class="odd">
-<td><p>WiaImgFmt_XmlPat</em><em></p></td>
-<td><p>XML file whose content is compliant with the WIA Patch Code Metadata Schema</p></td>
-</tr>
-<tr class="even">
-<td><p>WiaImgFmt_XPS</em></p></td>
-<td><p>XPS document file</p></td>
-</tr>
-</tbody>
-</table>
-
-Formats that are marked with an asterisk (\*) are for Windows Vista and later versions of Windows only.
-
-Formats that are marked with two asterisks (\*\*) are for Windows 8 and later versions of Windows only.
+| Format | Description |
+|--|--|
+| WiaAudFmt_AIFF | AIFF audio format |
+| WiaAudFmt_MP3 | MP3 audio format |
+| WiaAudFmt_WAV | WAV audio format |
+| WiaAudFmt_WMA | WMA audio format |
+| WiaImgFmt_ASF | ASF video format |
+| WiaImgFmt_AVI | AVI video format |
+| WiaImgFmt_BMP | Windows Device Independent Bitmap (DIB) file |
+| WiaImgFmt_CIFF | Camera Image File format |
+| WiaImgFmt_CSV | Comma separated file |
+| WiaImgFmt_DPOF | DPOF printing format |
+| WiaImgFmt_EMF | Extended Windows metafile |
+| WiaImgFmt_EXEC | Executable file |
+| WiaImgFmt_EXIF | Exchangeable File Format |
+| WiaImgFmt_FLASHPIX | FlashPix format |
+| WiaImgFmt_GIF | GIF image format |
+| WiaImgFmt_HTML | HTML format |
+| WiaImgFmt_ICO | Windows icon file format |
+| WiaImgFmt_JBIG | Joint Bi-level Image experts Group format |
+| WiaImgFmt_JBIG2 | Joint Bi-level Image experts Group format (version 2) |
+| WiaImgFmt_JPEG | JPEG compressed format |
+| WiaImgFmt_JPEG2K | JPEG 2000 compressed format |
+| WiaImgFmt_JPEG2KX | JPEG 2000 compressed format |
+| WiaImgFmt_MEMORYBMP | Windows bitmap without a header file |
+| WiaImgFmt_MPG | MPEG video format |
+| WiaImgFmt_PHOTOCD | Eastman Kodak file format |
+| WiaImgFmt_PDFA | PDF/A (ISO/CD 19005-1) format |
+| WiaImgFmt_PICT | Apple file format |
+| WiaImgFmt_PNG | W3C PNG format |
+| WiaImgFmt_RAW | WIA Raw image file format for data transfers only |
+| WiaImgFmt_RawBar | WIA Barcode Metadata Raw Format |
+| WiaImgFmt_RawMic | WIA MICR Metadata Raw Format |
+| WiaImgFmt_RawPat | WIA Patch Code Metadata Raw Format |
+| WiaImgFmt_RAWRGB | Raw RGB format |
+| WiaImgFmt_RTF | Rich Text File format |
+| WiaImgFmt_SCRIPT | Script file |
+| WiaImgFmt_TIFF | Tagged Image File Format (TIFF) |
+| WiaImgFmt_TXT | Text file |
+| WiaImgFmt_UNICODE16 | Unicode 16-bit encoding |
+| WiaImgFmt_WMF | Windows metafile |
+| WiaImgFmt_XML | XML file |
+| WiaImgFmt_XmlBar | XML file whose content is compliant with the WIA Barcode Metadata Schema |
+| WiaImgFmt_XmlMic | XML file whose content is compliant with the WIA MICR Metadata Schema |
+| WiaImgFmt_XmlPat | XML file whose content is compliant with the WIA Patch Code Metadata Schema |
+| WiaImgFmt_XPS | XPS document file |
 
 All WIA 2.0 minidrivers must set the initial value of this property to its default value, which is WiaImgFmt_BMP.
 

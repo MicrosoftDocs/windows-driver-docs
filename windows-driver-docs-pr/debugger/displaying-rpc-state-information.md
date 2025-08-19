@@ -3,13 +3,10 @@ title: Displaying RPC State Information
 description: Displaying RPC State Information
 keywords: ["RPC debugging, displaying RPC state information"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Displaying RPC State Information
-
-
-## <span id="ddk_displaying_rpc_state_information_dbg"></span><span id="DDK_DISPLAYING_RPC_STATE_INFORMATION_DBG"></span>
-
 
 All RPC run-time state information is contained in cells. A cell is the smallest unit of information that can be viewed and updated individually. Both the DbgRpc tool and the RPC debugger extensions allow you to view the contents of any given cell or to run high-level queries.
 
@@ -38,10 +35,9 @@ The following high-level queries are also available:
 [Get RPC Client Call Information](get-rpc-client-call-information.md)
 
  
+## RPC Security 
+
+For general information about RPC security and guidelines for usage, see [Writing a Secure RPC Client or Server](/windows/win32/rpc/writing-a-secure-rpc-client-or-server).
+  
 
  
-
-
-
-
-

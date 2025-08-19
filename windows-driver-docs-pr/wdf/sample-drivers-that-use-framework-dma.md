@@ -1,11 +1,12 @@
 ---
-title: Sample Drivers That Use Framework DMA
+title: Sample Drivers that Use Framework DMA
 description: Sample Drivers That Use Framework DMA
 keywords:
 - DMA operations WDK KMDF , sample drivers
 - bus-master DMA WDK KMDF , sample drivers
 - sample drivers WDK KMDF
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Sample Drivers That Use Framework DMA

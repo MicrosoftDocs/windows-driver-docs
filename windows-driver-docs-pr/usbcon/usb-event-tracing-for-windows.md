@@ -1,21 +1,17 @@
 ---
 description: This topic provides information for client driver developers about the tracing and logging features for Universal Serial Bus (USB).
 title: Overview of USB Event Tracing for Windows
-ms.date: 04/20/2017
+ms.date: 04/17/2025
+ms.topic: concept-article
 ---
 
-# Overview of USB Event Tracing for Windows
+# Overview of USB event tracing for Windows
 
 This topic provides information for client driver developers about the tracing and logging features for Universal Serial Bus (USB). This information is provided for the benefit of those who develop and debug USB devices. It includes information on how to install the tools, create trace files, and analyze the events in a USB trace file. The topic assumes that you have a comprehensive understanding of the USB ecosystem and hardware that is required to successfully use the USB tracing and logging features.
 
 To interpret the event traces, you must also understand the Windows [USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md), the [official USB Specifications, and the USB Device Class Specifications](https://www.usb.org/documents).
 
-- [About Event Tracing for Windows](#about-event-tracing-for-windows)
-- [USB Support for ETW Logging](#usb-support-for-etw-logging)
-- [USB ETW Support in Windows 7](#usb-etw-support-in-windows-7)
-- [USB ETW Support in Windows 8](#usb-etw-support-in-windows-8)
-
-## About Event Tracing for Windows
+## About event tracing for Windows
 
 Event Tracing for Windows (ETW) is a general-purpose, high-speed tracing facility that is provided by the operating system. It uses a buffering and logging mechanism that is implemented in the kernel to provide a tracing mechanism for events that are raised by both user-mode applications and kernel-mode device drivers. Additionally, ETW provides the ability to dynamically enable and disable logging, which makes it easy to perform detailed tracing in production environments without requiring reboots or application restarts. The logging mechanism uses per-processor buffers that are written to disk by an asynchronous writer thread. This buffering allows large-scale server applications to write events with minimum disturbance.
 
@@ -25,7 +21,7 @@ ETW was significantly upgraded for Windows Vista and Windows 7. One of the most 
 
 For more information about ETW and WPP, see Event Tracing and [Event Tracing for Windows (ETW)](../devtest/event-tracing-for-windows--etw-.md).
 
-## USB Support for ETW Logging
+## USB support for ETW logging
 
 USB is one of the most prevalent means of connecting an ever-increasing variety of peripheral devices to PCs. There is a very large installed base of USB host PCs and USB peripheral devices, and system vendors, device vendors, and end users expect and demand that USB devices operate flawlessly at the system and device level.
 
@@ -33,11 +29,11 @@ The large installed base and proliferation of USB devices have uncovered compati
 
 It has been difficult or impossible to investigate and debug USB device issues without direct access to the system, and/or devices, or in some cases a system crash dump. Even with full access to the hardware and a crash dump, extracting the relevant information has been a time-intensive technique that is known only by a few core USB driver developers. You can debug USB problems by using hardware or software analyzers, but they are very expensive and are available to only a small percentage of professionals.
 
-## USB ETW Support in Windows 7
+## USB ETW support
 
-In Windows 7, ETW provides an event logging mechanism that the USB driver stack can exploit to aid in investigating, diagnosing, and debugging USB-related issues. USB driver stack ETW event logging supports most or all debugging capabilities that are provided by the existing ad hoc logging mechanism in the USB driver stack, without any of its limitations. This translates into ease of debugging USB-related issues, which should provide a more robust USB driver stack in the long term.
+ETW provides an event logging mechanism that the USB driver stack can exploit to aid in investigating, diagnosing, and debugging USB-related issues. USB driver stack ETW event logging supports most or all debugging capabilities that are provided by the existing ad hoc logging mechanism in the USB driver stack, without any of its limitations. This translates into ease of debugging USB-related issues, which should provide a more robust USB driver stack in the long term.
 
-We added ETW logging to the USB host controller drivers and to the USB hub driver in Windows 7. The USB host controller driver layer includes the host controller port driver (usbport.sys) and the miniport drivers (usbehci.sys, usbohci.sys, and usbuhci.sys). The USB hub driver layer consists of the USB hub driver (usbhub.sys). The USB driver ETW event providers are included in all editions and SKUs of Windows 7.
+We added ETW logging to the USB host controller drivers and to the USB hub driver. The USB host controller driver layer includes the host controller port driver (usbport.sys) and the miniport drivers (usbehci.sys, usbohci.sys, and usbuhci.sys). The USB hub driver layer consists of the USB hub driver (usbhub.sys).
 
 - USB Hub Events
 
@@ -47,9 +43,7 @@ We added ETW logging to the USB host controller drivers and to the USB hub drive
 
     While USB event collection is enabled, the USB port event provider reports I/O from client drivers, opening and closing of device endpoints, and miniport state transitions such as miniport start and stop. Logged I/O includes requests for the state of physical USB ports. State transitions on physical USB ports are one of the key initiators of activity in the core USB driver stack.
 
-## USB ETW Support in Windows 8
-
-Windows 8 provides a USB driver stack to support USB 3.0 devices. The Microsoft-provided USB 3.0 driver stack consists of three drivers: Usbxhci.sys, Ucx01000.sys, and Usbhub3.sys. All three drivers work together to add native support to Windows for most USB 3.0 host controllers. The new driver stack supports SuperSpeed, high-speed, full-speed, and low-speed devices. The USB 2.0 driver stack is supported on Windows 8. Through event traces, the USB 3.0 driver stack provides a view into the fine-grained activity of the host controller and all devices connected to it.
+Windows provides a USB driver stack to support USB 3.0 devices. The Microsoft-provided USB 3.0 driver stack consists of three drivers: Usbxhci.sys, Ucx01000.sys, and Usbhub3.sys. All three drivers work together to add native support to Windows for most USB 3.0 host controllers. The new driver stack supports SuperSpeed, high-speed, full-speed, and low-speed devices. Through event traces, the USB 3.0 driver stack provides a view into the fine-grained activity of the host controller and all devices connected to it.
 
 - USB Hub3 Events
 
@@ -66,14 +60,13 @@ Windows 8 provides a USB driver stack to support USB 3.0 devices. The Microsoft
 ## In this section
 
 | Topic | Description |
-| --- | --- |
-|[How to capture a USB event trace with Logman](how-to-capture-a-usb-event-trace.md) | This topic provides information about using the [Logman](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753820(v=ws.10)) tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file. |
+|--|--|
+| [How to capture a USB event trace with Logman](how-to-capture-a-usb-event-trace.md) | This topic provides information about using the [Logman](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753820(v=ws.10)) tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file. |
 | [Using activity ID GUIDs in USB ETW traces](using-usb-etw.md) | This topic provides information about Activity ID GUIDs, how to add those GUIDs in the event trace providers, and view them in Netmon. |
-|[USB ETW traces in Netmon](viewing-etw-traces-in-netmon.md) | You can view USB ETW event traces using Microsoft Network Monitor, also referred to as Netmon. Netmon does not parse the trace automatically. It requires USB ETW parsers. USB ETW parsers are text files, written in Network Monitor Parser Language (NPL), that describe the structure of USB ETW event traces. The parsers also define USB-specific columns and filters. These parsers make Netmon the best tool for analyzing USB ETW traces. |
+| [USB ETW traces in Netmon](viewing-etw-traces-in-netmon.md) | You can view USB ETW event traces using Microsoft Network Monitor, also referred to as Netmon. Netmon does not parse the trace automatically. It requires USB ETW parsers. USB ETW parsers are text files, written in Network Monitor Parser Language (NPL), that describe the structure of USB ETW event traces. The parsers also define USB-specific columns and filters. These parsers make Netmon the best tool for analyzing USB ETW traces. |
 | [Using Xperf with USB ETW](using-xperf-with-usb-etw.md) | This topic describes how to use Xperf with Netmon to analyze USB trace data. |
 | [USB ETW and Power Management](usb-etw-and-power-management.md) | This topic provides a brief overview about using ETW to examine USB selective suspend state and identifying system energy efficiency problems by using the Windows PowerCfg utility. |
 
 ## Related topics
 
-[Using USB ETW](using-usb-etw.md)  
-[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)
+- [Using USB ETW](using-usb-etw.md)

@@ -8,7 +8,8 @@ keywords:
 - WHEA WDK , querying system event log
 - Windows Hardware Error Architecture WDK , querying system event log
 - event log WDK WHEA
-ms.date: 03/03/2023
+ms.date: 12/17/2024
+ms.topic: concept-article
 ---
 
 # Querying the System Event Log for Hardware Error Events
@@ -17,7 +18,7 @@ The name of the provider that logs the hardware error events is **Microsoft-Wind
 
 This provider is designed for users in desktop scenarios. It provides a human readable message with the main details of the event so a user can get a basic idea of what occurred.
 
-The following code example shows how to query the system event log to retrieve any hardware error events that were previously logged by WHEA.
+The following code example shows how to query the system event log to retrieve any hardware error events that were previously logged by the Windows Hardware Error Architecture (WHEA).
 
 ```cpp
 // Function to query the event log for hardware error events

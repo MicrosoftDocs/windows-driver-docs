@@ -1,6 +1,6 @@
 ---
-title: RemoveLockForwardDeviceControl rule (wdm)
-description: The RemoveLockForwardDeviceControl rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used correctly when the driver uses IoCallDriver to forward an IRP to a another device.
+title: RemoveLockForwardDeviceControl Rule (WDM)
+description: The RemoveLockForwardDeviceControl rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used correctly when the driver uses IoCallDriver to forward an IRP to another device.
 ms.date: 05/21/2018
 keywords: ["RemoveLockForwardDeviceControl rule (wdm)"]
 topic_type:
@@ -15,7 +15,7 @@ api_type:
 # RemoveLockForwardDeviceControl rule (wdm)
 
 
-The **RemoveLockForwardDeviceControl** rule verifies that calls to [**IoAcquireRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock) and [**IoReleaseRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreleaseremovelock) are used correctly when the driver uses [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to forward an IRP to a another device.
+The **RemoveLockForwardDeviceControl** rule verifies that calls to [**IoAcquireRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock) and [**IoReleaseRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreleaseremovelock) are used correctly when the driver uses [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to forward an IRP to another device.
 
 **Driver model: WDM**
 

@@ -2,6 +2,7 @@
 description: Handling Access Control
 title: Handling Access Control
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Handling Access Control

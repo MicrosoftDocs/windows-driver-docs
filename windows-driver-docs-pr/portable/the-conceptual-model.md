@@ -2,6 +2,7 @@
 description: The Conceptual Model
 title: The Conceptual Model
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # The Conceptual Model

@@ -1,7 +1,8 @@
 ---
 title: Universal Windows Drivers for Audio
 description: In Windows 10 you can write a universal audio driver that will work across many types of hardware.
-ms.date: 08/15/2022
+ms.date: 06/20/2024
+ms.topic: concept-article
 ---
 
 # Universal Windows Drivers for Audio
@@ -14,21 +15,21 @@ IHVs can develop a Universal Windows driver that works on all devices (desktops,
 
 These tools are available to develop Universal Windows drivers:
 
-- Visual Studio 2015: Set "Target Platform" equal to "Universal". For more information about setting up the driver development environment, see [Getting Started with Universal Windows Drivers](/windows-hardware/drivers).
+- Visual Studio 2015: Set "Target Platform" equal to "Universal". For more information about setting up the driver development environment, see [Windows hardware developer documentation](/windows-hardware/drivers) and [Building a driver with the WDK](/windows-hardware/drivers/develop/building-a-driver).
 
-- APIValidator Tool: You can use the ApiValidator.exe tool to verify that the APIs your driver calls are valid for a Universal Windows driver. This tool is part of the Windows Driver Kit (WDK) for Windows 10, and runs automatically if you are using Visual Studio 2015. For more information, see [Validating Universal Windows Drivers](/windows-hardware/drivers).
+- APIValidator Tool: You can use the ApiValidator.exe tool to verify that the APIs your driver calls are valid for a Universal Windows driver. This tool is part of the Windows Driver Kit (WDK) for Windows 10, and runs automatically if you are using Visual Studio 2015. For more information, see [APIValidator](/windows-hardware/drivers/develop/validating-windows-drivers#apivalidator).
 
 - DDI reference documentation: The DDI reference documentation is updated to indicate which DDIs are supported by Universal Windows drivers. For more information, see [Audio Devices Reference](/previous-versions/ff536192(v=vs.85)).
 
 ## Create a Universal Audio Driver
 
-For step-by-step guidance, see [Getting Started with Universal Windows Drivers](/windows-hardware/drivers). Here is a summary of the steps:
+For step-by-step guidance, see [Windows hardware developer documentation](/windows-hardware/drivers) and [Building a driver with the WDK](/windows-hardware/drivers/develop/building-a-driver). Here is a summary of the steps:
 
 1. Load the universal audio sysvad sample to use as starting point for your universal audio driver. Alternatively, start with the empty WDM driver template and add in code from the universal sysvad sample as needed for your audio driver.
 
 1. In the project properties, set Target Platform to "Universal".
 
-1. Create an installation package: If your target is device running Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), use a configurable INF file. If your target is device running Windows 10 Mobile, use PkgGen to generate an .spkg file.
+1. Create an installation package: If your target is device running Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), use a Universal INF file. If your target is device running Windows 10 Mobile, use PkgGen to generate an .spkg file.
 
 1. Build, install, deploy, and debug the driver for Windows 10 for desktop editions or Windows 10 Mobile.
 
@@ -64,7 +65,7 @@ Follow this process to convert an existing audio driver to a Universal Windows d
 
 1. Recompile your driver as a Universal Windows driver. In the project properties, set Target Platform to "Universal".
 
-1. Use the ApiValidator.exe tool to verify that the DDIs that your driver calls are valid for a Universal Windows driver. This tool is part of the Windows Driver Kit (WDK) for Windows 10, and runs automatically if you are using Visual Studio 2015. For more information, see [Validating Universal Windows Drivers](/windows-hardware/drivers).
+1. Use the ApiValidator.exe tool to verify that the DDIs that your driver calls are valid for a Universal Windows driver. This tool is part of the Windows Driver Kit (WDK) for Windows 10, and runs automatically if you are using Visual Studio 2015. For more information, see [APIValidator](/windows-hardware/drivers/develop/validating-windows-drivers#apivalidator).
 
 1. If the driver calls interfaces that are not part of OneCoreUAP, the compiler reports errors.
 
@@ -84,7 +85,7 @@ Optionally, separate INF files can be used for the DSP and Codec.
 
 This diagram summarizes a componentized audio installation.
 
-![The componentized audio stack showing DSP driver codec and APOs.](images/audio-componentized-stack-diagram.png)
+:::image type="content" source="images/audio-componentized-stack-diagram.png" alt-text="Diagram of componentized audio stack with DSP driver, codec, and APOs.":::
 
 A separate extension INF file is used to customize each base driver component for a particular system. Customizations include tuning parameters and other system-specific settings. For more information, see
 [Using an Extension INF File](../install/using-an-extension-inf-file.md).
@@ -99,7 +100,7 @@ APO INF packages must be submitted to the Partner Center separately from the bas
 
 ### SYSVAD  componentized INF files
 
-To see an example of componentized INF files examine the [sysvad/TabletAudioSample](https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad/TabletAudioSample), on Github.
+To see an example of componentized INF files examine the [sysvad/TabletAudioSample](https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad/TabletAudioSample), on GitHub.
 
 | File name                              | Description                                                                    |
 |----------------------------------------|--------------------------------------------------------------------------------|
@@ -156,7 +157,7 @@ Where:
 
 ### Plug and Play INF version and date evaluation for driver update
 
-The Windows Plug and Play system evaluates the date and the driver version to determine which drive to install when multiple drivers exist.  For more information, see [How Windows Ranks Drivers](../install/how-setup-ranks-drivers--windows-vista-and-later-.md).
+The Windows Plug and Play system evaluates the date and the driver version to determine which drive to install when multiple drivers exist.  For more information, see [How Windows Ranks Drivers](../install/how-windows-ranks-driver-packages.md).
 
 To allow the latest driver to be used, be sure and update the date and version, for each new version of the driver.
 

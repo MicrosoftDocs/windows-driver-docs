@@ -1,7 +1,8 @@
 ---
 title: How Device Property Pages are Displayed
 description: How Device Property Pages are Displayed
-ms.date: 04/20/2017
+ms.date: 03/12/2024
+ms.topic: concept-article
 ---
 
 # How Device Property Pages are Displayed
@@ -9,21 +10,12 @@ ms.date: 04/20/2017
 
 A device property page is displayed in the following ways:
 
--   Device Manager displays the property page any time that the properties for a device are displayed.
+-   To see the properties for a device, right-click the Start button, select Device Manager, then navigate to the device and right-click it. Select **Properties**.
 
--   Starting with Windows 7, **Devices and Printers** displays the property page any time that a user right-clicks a device. To display the property page in **Devices and Printers**, do the following:
+-   Starting with Windows 11, you can also go into Settings and do the following:
 
-    -   Right-click the icon in **Devices and Printers** that represents a device that is connected to the system.
+    -   Select **Bluetooth & devices** and then a device type, for example **Printers & scanners**
 
-    -   Click **Properties**.
-
-    -   On the **Properties** window, click the **Hardware** tab, and then click **Properties**.
-
- 
-
- 
-
-
-
+    -   Select a specific device and then explore the various properties options, including hardware properties
 
 

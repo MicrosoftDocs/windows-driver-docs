@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageReliabilityCounter class
+title: MSFT_StorageReliabilityCounter Class
 description: The MSFT\_StorageReliabilityCounter class provides reliability statistics or counters reported by a storage device.
 ms.assetid: A64126B3-0399-47A3-95E3-0755EE34C2C4
 keywords:
@@ -33,7 +33,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

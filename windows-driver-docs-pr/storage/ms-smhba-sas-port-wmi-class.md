@@ -1,7 +1,8 @@
 ---
-title: MS\_SMHBA\_SAS\_Port WMI Class
+title: MS_SMHBA_SAS_Port WMI Class
 description: MS\_SMHBA\_SAS\_Port WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MS\_SMHBA\_SAS\_Port WMI Class

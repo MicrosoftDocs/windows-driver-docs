@@ -3,6 +3,7 @@ title: Workspace Contents
 description: Workspace Contents
 keywords: ["workspaces, contents of workspaces", "workspaces, automatically starting a session"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Workspace Contents
@@ -27,15 +28,15 @@ Each workspace preserves the following information about the debugger configurat
 
 -   The source path. (In remote debugging, the main source path and the local source path are saved.)
 
--   The current source options that were set with [**l+, l- (Set Source Options)**](l---l---set-source-options-.md).
+-   The current source options that were set with [**l+, l- (Set Source Options)**](../debuggercmds/l---l---set-source-options-.md).
 
 -   Log file settings.
 
--   The COM or 1394 kernel connection settings, if the connection was started by using the graphical interface.
+-   The COM kernel connection settings, if the connection was started by using the graphical interface.
 
 -   The most recent paths in each **Open** dialog box (except for the workspace file and text file paths, which are not saved).
 
--   The current [**.enable\_unicode**](-enable-unicode--enable-unicode-display-.md), [**.force\_radix\_output**](-force-radix-output--use-radix-for-integers-.md), and [**.enable\_long\_status**](-enable-long-status--enable-long-integer-display-.md) settings.
+-   The current [**.enable\_unicode**](../debuggercmds/-enable-unicode--enable-unicode-display-.md), [**.force\_radix\_output**](../debuggercmds/-force-radix-output--use-radix-for-integers-.md), and [**.enable\_long\_status**](../debuggercmds/-enable-long-status--enable-long-integer-display-.md) settings.
 
 All default workspaces and named workspaces preserve the following information about the WinDbg graphical interface. This information is loaded cumulatively, starting with the base workspace and ending with the most recently-loaded workspace.
 
@@ -90,8 +91,3 @@ If you are debugging multiple user-mode processes, only breakpoints that are ass
  
 
  
-
-
-
-
-

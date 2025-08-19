@@ -1,15 +1,15 @@
 ---
 title: Machines that reported a PnP error code within two days of installing a driver update
-description: The measure aggregates telemetry from a 30-day sliding window into a percentage of machines that successfully installed the driver and then Encountered a PNP error within two days of install
-ms.topic: article
-ms.date: 09/03/2021
+description: The measure aggregates data from a 30-day sliding window into a percentage of machines that successfully installed the driver and then encountered a Plug and Play error within two days of install.
+ms.date: 07/15/2024
+ms.topic: error-reference
 ---
 
-# Machines that reported a PnP error code within two days of installing a driver update
+# Machines that reported a Plug and Play (PnP) error code within two days of installing a driver update
 
 ## Description
 
-Machines can experience post-installation PnP errors that result in a negative user experience; from the device not working as expected to an unexpected reboot. A list of PNP error codes is located on [Device Manager Problem Codes](../install/device-manager-error-messages.md) and [Windows Support](https://support.microsoft.com/help/310123/error-codes-in-device-manager-in-windows).
+Machines can experience post-installation Plug and Play (PnP) errors that result in a negative user experience; from the device not working as expected to an unexpected reboot. A list of PnP error codes is located on [Device Manager Problem Codes](../install/device-manager-error-messages.md) and [Error codes in Device Manager in Windows](https://support.microsoft.com/topic/error-codes-in-device-manager-in-windows-524e9e89-4dee-8883-0afa-6bca0456324e).
 
 ## Measure attributes
 
@@ -19,7 +19,7 @@ Machines can experience post-installation PnP errors that result in a negative u
 | **Time period** | 30 day sliding window |
 | **Measurement criteria** | Aggregation of machines |
 | **Minimum population** | 100 machines |
-| **Passing criteria** | <=5% machines encounter a post-install PNP error |
+| **Passing criteria** | <=5% machines encounter a post-install PnP error |
 | **Cohort-enabled** | Yes |
 | **Minimum population per cohort** | 500 machines |
 | **High failure rate target** | <= 50% |
@@ -28,12 +28,12 @@ Machines can experience post-installation PnP errors that result in a negative u
 
 ## Calculation
 
-1. The measure aggregates telemetry from a 30-day sliding window into a percentage of machines that successfully installed the driver, then encountered a PNP error within 2 days of installation
-   1. Any PNP errors associated with an install outside of the 30-day window are not counted
+1. The measure aggregates data from a 30-day sliding window into a percentage of machines that successfully installed the driver, then encountered a PnP error within two days of installation
+   1. Any PnP errors associated with an install outside of the 30-day window aren't counted
 
-1. Post installation PNP errors = Count(machines with a PNP error,within two days of driver installation)
+1. Post installation PnP errors = Count(machines with a PnP error,within two days of driver installation)
 1. Total post installation errors = Count(all machines that successfully installed the driver)
 
 ### Final calculation
 
-Post installation PNP error rate = post installation PNP errors / total post installation errors
+Post installation PnP error rate = post installation PnP errors / total post installation errors

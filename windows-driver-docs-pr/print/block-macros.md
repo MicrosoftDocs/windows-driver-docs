@@ -1,10 +1,11 @@
 ---
-title: Block macros
+title: Block Macros
 description: A block macro is used to delimit a set of GPD file entries that you want to insert repeatedly into a GPD file
 keywords:
 - block macros WDK GPD files
 - referencing macros
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # Block macros

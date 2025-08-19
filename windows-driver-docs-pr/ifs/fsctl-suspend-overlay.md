@@ -1,5 +1,5 @@
 ---
-title: FSCTL_SUSPEND_OVERLAY control code
+title: FSCTL_SUSPEND_OVERLAY Control Code
 description: The FSCTL_SUSPEND_OVERLAY control code suspends a backing source attached to a volume, preventing access to the backing source and allowing it to be modified or removed.
 keywords: ["FSCTL_SUSPEND_OVERLAY control code Installable File System Drivers"]
 topic_type:
@@ -57,7 +57,7 @@ BOOL
 
 | Code | Meaning |
 | ---- | ------- |
-| STATUS_ACCESS_DENIED | The requestor does not have administrative privileges. |
+| STATUS_ACCESS_DENIED | The requester does not have administrative privileges. |
 | STATUS_BUFFER_TOO_SMALL | The length of the input buffer pointed to by **InputBuffer**, and specified by **InputBufferLength**, is too small. |
 | STATUS_INTERNAL_ERROR | The requested volume is not accessible. |
 | STATUS_INVALID_DEVICE_REQUEST | The backing service is not present or not started. |

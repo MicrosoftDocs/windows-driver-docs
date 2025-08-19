@@ -1,7 +1,8 @@
 ---
-title: KSPROPSETID\_BdaLNBInfo
+title: KSPROPSETID_BdaLNBInfo
 description: KSPROPSETID\_BdaLNBInfo
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_BdaLNBInfo

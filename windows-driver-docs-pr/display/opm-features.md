@@ -5,6 +5,7 @@ keywords:
 - OPM WDK display , features
 - OPM WDK display , COPP and OPM comparison
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # OPM Features

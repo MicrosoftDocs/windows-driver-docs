@@ -2,6 +2,7 @@
 title: Windows Kernel-Mode Security Reference Monitor
 description: Windows Kernel-Mode Security Reference Monitor
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Windows Kernel-Mode Security Reference Monitor

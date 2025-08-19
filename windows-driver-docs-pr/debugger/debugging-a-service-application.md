@@ -3,6 +3,7 @@ title: Debugging a Service Application
 description: Debugging a Service Application
 keywords: ["service application debugging", "postmortem debugging, debugging service applications", "services"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging a Service Application
@@ -27,8 +28,3 @@ For an overview of services, service applications, and the service control manag
  
 
  
-
-
-
-
-

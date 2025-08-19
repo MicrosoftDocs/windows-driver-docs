@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_JACK enumeration
+title: KSPROPERTY_JACK Enumeration
 description: The KSPROPERTY\_JACK enumeration defines new property IDs that are used by audio jack structures.
 keywords: ["KSPROPERTY_JACK enumeration Audio Devices"]
 topic_type:
@@ -22,7 +22,7 @@ The `KSPROPERTY_JACK` enumeration defines new property IDs that are used by audi
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 typedef enum  { 
   KSPROPERTY_JACK_DESCRIPTION   = 1,
   KSPROPERTY_JACK_DESCRIPTION2  = 2,

@@ -2,6 +2,7 @@
 title: Overview of NDIS Wake Reason Status Indications
 description: Overview of NDIS Wake Reason Status Indications
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Overview of NDIS Wake Reason Status Indications

@@ -1,7 +1,8 @@
 ---
-title: MS\_SM\_HbaApiVersion WMI Class
+title: MS_SM_HbaApiVersion WMI Class
 description: MS\_SM\_HbaApiVersion WMI Class
 ms.date: 07/13/2022
+ms.topic: reference
 ---
 
 # MS_SM_HbaApiVersion WMI Class

@@ -1,7 +1,8 @@
 ---
-title: MobileBroadbandInfo XML example
+title: MobileBroadbandInfo XML Example
 description: MobileBroadbandInfo XML example
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # MobileBroadbandInfo XML example

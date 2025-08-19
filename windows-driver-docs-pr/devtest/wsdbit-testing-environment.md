@@ -15,6 +15,7 @@ keywords:
 - WSDBIT tool WDK , devices for testing
 - WSDAPI Basic Interoperability Tool WDK , devices for testing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WSDBIT Testing Environment
@@ -29,7 +30,7 @@ To facilitate debugging and troubleshooting, you should use a network monitor to
 
 The following figure shows the network topology that consists of a device, client, and network monitor--all connected through a hub.
 
-![diagram illustrating the network topology for wsdapi basic interoperability tool (wsdbit) testing.](images/wsdbit1.png)
+:::image type="content" source="images/wsdbit1.png" alt-text="Diagram illustrating the network topology for WSDAPI Basic Interoperability Tool (WSDBIT) testing environment.":::
 
 ## Test Device
 

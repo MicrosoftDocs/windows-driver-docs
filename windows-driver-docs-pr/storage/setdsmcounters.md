@@ -1,5 +1,5 @@
 ---
-title: SetDSMCounters function
+title: SetDSMCounters Function
 description: The SetDSMCounters method is used to set the timer counters for a particular DSM.
 keywords: ["SetDSMCounters function Storage Devices"]
 topic_type:

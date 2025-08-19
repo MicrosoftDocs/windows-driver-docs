@@ -2,6 +2,7 @@
 title: PwrTest Idle Scenario
 description: The PwrTest Idle Scenario monitors user and CPU idle statistics displays idle statistics gathered by kernel every 15 seconds.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # PwrTest Idle Scenario
@@ -167,13 +168,5 @@ The following table describes the XML elements that appear in the log file.
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
-
- 
-
- 
-
-
-
-
 
 

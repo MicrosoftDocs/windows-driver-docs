@@ -1,8 +1,8 @@
 ---
 title: Wi-Fi connection failures from devices and access-point pairs with more than 50% signal quality
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of instances where a device fails to connect to an access point
-ms.topic: article
 ms.date: 01/23/2023
+ms.topic: troubleshooting-known-issue
 ---
 
 # Wi-Fi connection failures from devices and access-point pairs with more than 50% signal quality
@@ -20,7 +20,7 @@ A Wi-Fi access point (AP) is networking hardware that allows other Wi-Fi enabled
 | **Measurement criteria** | Device / AP pair aggregation |
 | **Minimum instances** | 1,000 |
 | **Passing criteria** | <= 6% of Instances have connection failures to APs |
-| **Measure ID** | 32321149 (Legacy), 40722983 |
+| **Measure ID** | 40722983 |
 
 ## Calculation
 

@@ -9,20 +9,20 @@ keywords:
 - current boot entry WDK
 - NVRAM boot options WDK , default boot entries
 - EFI NVRAM boot options WDK , default boot entries
-ms.date: 04/20/2017
+ms.date: 12/12/2024
+ms.topic: how-to
 ---
 
 # Changing the Default Boot Entry
-
-
-## <span id="ddk_changing_the_default_boot_entry_tools"></span><span id="DDK_CHANGING_THE_DEFAULT_BOOT_ENTRY_TOOLS"></span>
-
 
 The default boot entry is the entry that the boot loader selects when the boot menu time-out expires. You can change the default boot entry to ensure that the operating system configuration that you prefer is loaded automatically.
 
 For Windows, you can use BCDEdit to change the default boot entry.
 
-### <span id="using_bcdedit"></span><span id="USING_BCDEDIT"></span>Using BCDEdit
+> [!CAUTION]
+> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the **BCDEdit /set** command could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings. For more information, see *[How to open MSConfig in Windows 10](https://support.microsoft.com/help/4026130/windows-how-to-open-msconfig-in-windows-10)*.
+
+## Using BCDEdit
 
 You can specify the default boot entry using the **/default** option. The syntax to specify the default operating system is as follows:
 
@@ -41,12 +41,4 @@ To change the default boot entry to the earlier Windows operating system loader 
 ```
 bcdedit /default {ntldr}
 ```
-
- 
-
- 
-
-
-
-
 

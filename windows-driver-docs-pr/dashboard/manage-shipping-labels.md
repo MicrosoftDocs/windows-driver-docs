@@ -1,8 +1,8 @@
 ---
 title: Manage Shipping Labels
 description: This document contains information about how to create or update shipping labels for driver submission in the hardware dashboard
-ms.topic: article
 ms.date: 08/23/2018
+ms.topic: how-to
 ---
 # Manage Shipping Labels
 
@@ -24,7 +24,7 @@ Methods for managing shipping labels
 
 1. If you have not done so already, complete all the [prerequisites](dashboard-api.md) for the Microsoft Hardware APIs.
 
-2. [Obtain an Azure AD access token](dashboard-api.md#obtain-an-azure-ad-access-token). You must pass this access token to the methods in the Microsoft Store submission API. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.
+2. [Obtain a Microsoft Entra ID access token](dashboard-api.md#obtain-a-microsoft-entra-id-access-token). You must pass this access token to the methods in the Microsoft Store submission API. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.
 
 3. You should have created a product and submission in order to create a shipping label. See [Manage product submissions](manage-product-submissions.md) for details about creating a product and submission.
 

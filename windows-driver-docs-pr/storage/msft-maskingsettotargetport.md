@@ -1,5 +1,5 @@
 ---
-title: MSFT\_MaskingSetToTargetPort class
+title: MSFT_MaskingSetToTargetPort Class
 description: Association between MaskingSet and TargetPort.
 ms.assetid: CBB7BA43-8506-474C-BE1B-58326AAECD8F
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

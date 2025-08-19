@@ -1,7 +1,8 @@
 ---
-title: Overview of developing Windows client drivers for USB devices
+title: Overview of Developing Windows Client Drivers for USB Devices
 description: This article describes Universal Serial Bus (USB) support in the Windows operating system, so that you can develop USB device drivers that are interoperable with Windows.
-ms.date: 01/17/2023
+ms.date: 01/17/2024
+ms.topic: concept-article
 ---
 
 # Overview of developing Windows client drivers for USB devices
@@ -14,7 +15,7 @@ You can develop a custom client driver for a USB device by using the [Windows Dr
 
 ## Developer audience
 
-A client driver for a USB device is a WDF or WDM driver that communicates with the device through DDIs exposed by the USB driver stack. This section is intended for use by C/C++ programmers who are familiar with WDM. Before you use this section, you should understand basic driver development. For more information, see [Getting Started with Windows Drivers](../gettingstarted/index.md). For WDF drivers, the client driver can use [Kernel-Mode Driver Framework](../debugger/kernel-mode-driver-framework-debugging.md) (KMDF) or [User-Mode Driver Framework](../wdf/index.md) (UMDF) interfaces designed specifically to work with USB targets. For more information about the USB-specific interfaces, see [WDF USB Reference](/windows-hardware/drivers/ddi/wdfusb/) and [UMDF USB I/O Target Interfaces](/windows-hardware/drivers/ddi/wudfddi/).
+A client driver for a USB device is a WDF or WDM driver that communicates with the device through DDIs exposed by the USB driver stack. This section is intended for use by C/C++ programmers who are familiar with WDM. Before you use this section, you should understand basic driver development. For more information, see [Get started with drivers on Windows](../gettingstarted/index.md). For WDF drivers, the client driver can use [Kernel-Mode Driver Framework](../debugger/kernel-mode-driver-framework-debugging.md) (KMDF) or [User-Mode Driver Framework](../wdf/index.md) (UMDF) interfaces designed specifically to work with USB targets. For more information about the USB-specific interfaces, see [WDF USB Reference](/windows-hardware/drivers/ddi/wdfusb/) and [UMDF USB I/O Target Interfaces](/windows-hardware/drivers/ddi/wudfddi/).
 
 ## Development tools
 

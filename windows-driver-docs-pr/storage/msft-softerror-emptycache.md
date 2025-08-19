@@ -1,5 +1,5 @@
 ---
-title: MSFT\_SoftError\_EmptyCache class
+title: MSFT_SoftError_EmptyCache Class
 description: Represents an empty-cache error.
 ms.assetid: 9B5449D1-C89A-4087-B2C0-FA66BD8E6D6E
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

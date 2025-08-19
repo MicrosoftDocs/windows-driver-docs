@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageNodeToPhysicalDisk class
+title: MSFT_StorageNodeToPhysicalDisk Class
 description: Association between a MSFT\_StorageNode and a MSFT\_PhysicalDisk.
 ms.assetid: B9C7B6DA-2BBC-4D67-95FF-635458A60FCF
 keywords:
@@ -23,7 +23,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

@@ -6,6 +6,7 @@ keywords:
 - PDB symbol files WDK
 - symbol files WDK software tracing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # PDB Symbol Files
@@ -23,12 +24,4 @@ The compiler generates a PDB file when you compile a debug (checked) version of 
 The [trace consumers](trace-consumer.md) in the WDK, [TraceView](traceview.md) and [Tracefmt](tracefmt.md), can extract the trace message formatting information directly from the PDB file or from a TMF file. Others require a TMF file. [Tracepdb](tracepdb.md) takes a PDB file as input, extracts the formatting information, and creates a TMF file as output.
 
 Other trace consumers, such as Tracerpt, a tool included in Windows, do not use PDB files or TMF files. Instead, they use the information in Managed Object Format (MOF) files to format trace events. These tools cannot format trace messages.
-
- 
-
- 
-
-
-
-
 

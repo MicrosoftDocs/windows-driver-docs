@@ -1,7 +1,8 @@
 ---
-title: Know when network connectivity changes
+title: Know when Network Connectivity Changes
 description: Know when network connectivity changes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Know when network connectivity changes
@@ -19,7 +20,7 @@ To know when network connectivity changes, use the [**AccountUpdated**](/uwp/api
 
 5.  If the network has changed, query the [**CurrentNetwork**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccount#Windows_Networking_NetworkOperators_MobileBroadbandAccount_CurrentNetwork) property for the current network object.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Common tasks for mobile broadband Windows Runtime APIs](./create-a-mobilebroadbandaccount-object.md)

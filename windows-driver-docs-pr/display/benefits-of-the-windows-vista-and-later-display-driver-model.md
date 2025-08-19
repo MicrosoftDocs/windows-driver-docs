@@ -4,7 +4,8 @@ description: Benefits of the Windows Display Driver Model (WDDM)
 keywords:
 - display driver model WDK Windows Vista , benefits
 - Windows Vista display driver model WDK , benefits
-ms.date: 03/20/2023
+ms.date: 08/21/2024
+ms.topic: concept-article
 ---
 
 # Benefits of the WDDM
@@ -28,7 +29,7 @@ Creating graphics/display drivers is easier using the WDDM as opposed to using t
 
 - Calls that create and destroy surfaces and that lock and unlock resources are more evenly paired.
 
-- WDDM handles video memory, system memory, and managed surfaces identically. Operating systems prior to Windows Vista handled these components in subtly different ways.
+- WDDM handles video memory, system memory, and managed surfaces identically. Operating systems before Windows Vista handled these components in subtly different ways.
 
 - Shader translation is performed in the user-mode portion of the display drivers.
 

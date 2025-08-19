@@ -18,7 +18,7 @@ api_type:
 The WIN32K\_SECURITY\_FAILURE bug check has a value of 0x00000197. This indicates a security failure was detected in win32k.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## WIN32K\_SECURITY\_FAILURE Parameters

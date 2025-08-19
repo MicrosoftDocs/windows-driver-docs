@@ -1,5 +1,5 @@
 ---
-title: Supporting WMI Data Blocks and Events in Your Driver
+title: Supporting WMI Data Blocks and Events in your Driver
 description: Supporting WMI Data Blocks and Events in Your Driver
 keywords:
 - WMI WDK KMDF , data blocks
@@ -9,6 +9,7 @@ keywords:
 - events WDK KMDF , WMI
 - tracing WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting WMI Data Blocks and Events in Your Driver

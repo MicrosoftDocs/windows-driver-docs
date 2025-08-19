@@ -3,6 +3,7 @@ title: Logger Restrictions and Limitations
 description: Logger Restrictions and Limitations
 keywords: ["Logger, restrictions", "Logger, limitations"]
 ms.date: 05/23/2017
+ms.topic: troubleshooting-known-issue
 ---
 
 # Logger Restrictions and Limitations
@@ -20,8 +21,3 @@ Unfortunately, there is no easy way around such problems. The only workaround is
  
 
  
-
-
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToReplicationCapabilities class
+title: MSFT_StorageSubSystemToReplicationCapabilities Class
 description: Association between an MSFT\_StorageSubSystem and MSFT\_ReplicationCapabilities.
 ms.assetid: 73AC3F3F-645B-4D0C-AA7E-2CAAB47E27D8
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

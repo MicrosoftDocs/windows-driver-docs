@@ -1,7 +1,8 @@
 ---
-title: MS\_SM\_AdapterInformationQuery WMI Class
+title: MS_SM_AdapterInformationQuery WMI Class
 description: MS\_SM\_AdapterInformationQuery WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MS\_SM\_AdapterInformationQuery WMI Class
@@ -18,7 +19,7 @@ class MS_SM_AdapterInformationQuery
     string  InstanceName;
     boolean Active;
 
-    [Description ("Unique identifier for the adapter. This idenitifer must "
+    [Description ("Unique identifier for the adapter. This identifier must "
                   "be unique among all adapters. The same "
                   "value for the identifier must be used for the same adapter "
                   "in other classes that expose adapter information"),

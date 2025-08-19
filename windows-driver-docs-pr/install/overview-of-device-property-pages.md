@@ -2,6 +2,7 @@
 title: Overview of Device Property Pages
 description: Overview of Device Property Pages
 ms.date: 03/11/2022
+ms.topic: concept-article
 ---
 
 # Overview of Device Property Pages

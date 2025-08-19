@@ -1,5 +1,5 @@
 ---
-title: SetAttributes method of the MSFT\_Disk class
+title: SetAttributes Method of the MSFT_Disk Class
 description: Sets the disk's attributes and properties.
 ms.assetid: 71D7E14B-8E03-479A-BA80-821EE019B8CB
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

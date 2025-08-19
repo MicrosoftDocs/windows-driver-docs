@@ -5,6 +5,7 @@ keywords:
 - NetAdapterCx Introduction to net rings, NetCx Introduction to net rings, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
 ms.date: 10/29/2019
 ms.custom: 19H1
+ms.topic: concept-article
 ---
 
 # Introduction to net rings
@@ -17,7 +18,7 @@ For more information about packet descriptors, see [Packet descriptors and exten
 
 Every core descriptor in the packet ring has indices into the fragment ring for locating that packet's fragment descriptors. Another data structure, the **NET_RING_COLLECTION**, groups the packet ring and fragment ring together for a given packet queue as shown in the following diagram.
 
-![multi-ring layout.](images/multi-ring.png) 
+:::image type="content" source="images/multi-ring.png" alt-text="Diagram that shows the multi-ring layout of a NET_RING_COLLECTION structure, including a packet ring and fragment ring."::: 
 
 Every packet queue has its own **NET_RING_COLLECTION** structure, and, consequently, its own packet ring, fragment ring, and descriptors in those rings. Therefore, the network data transfer operation of each packet queue is completely independent. To learn more about packet queues, see [Transmit and receive queues](transmit-and-receive-queues.md).
 
@@ -49,7 +50,7 @@ For specific information about managing the elements in net rings, see [Net ring
 
 ## Sending and receiving network data with net rings
 
-See the following topics for more information and code samples about sending and receving network data in net rings.
+See the following topics for more information and code samples about sending and receiving network data in net rings.
 
 [Sending network data with net rings](sending-network-data-with-net-rings.md)
 

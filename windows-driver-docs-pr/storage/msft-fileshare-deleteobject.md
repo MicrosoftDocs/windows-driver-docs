@@ -1,5 +1,5 @@
 ---
-title: DeleteObject method of the MSFT\_FileShare class
+title: DeleteObject Method of the MSFT_FileShare Class
 description: Deletes the file share.
 ms.assetid: 8A462AB0-00D1-43DF-ABB9-6374DDEA9639
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

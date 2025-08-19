@@ -1,5 +1,5 @@
 ---
-title: C28129 warning
+title: C28129 Warning
 description: Warning C28129 An assignment has been made to an operand, which should only be modified using bit sets and clears.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -7,6 +7,7 @@ keywords:
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28129"
+ms.topic: reference
 ---
 
 # C28129
@@ -29,12 +30,4 @@ The following code example avoids this warning.
 ```
 fdo->Flags |= DO_BUFFERED_IO;
 ```
-
- 
-
- 
-
-
-
-
 

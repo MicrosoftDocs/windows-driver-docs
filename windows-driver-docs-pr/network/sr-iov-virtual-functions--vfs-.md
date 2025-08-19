@@ -1,8 +1,8 @@
 ---
 title: SR-IOV Virtual Functions (VFs)
 description: A PCI Express (PCIe) VF is a lightweight PCIe function on a network adapter that supports single root I/O virtualization (SR-IOV).
-ms.date: 03/09/2022
-ms.custom: contperf-fy22q3
+ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # SR-IOV Virtual Functions (VFs)
@@ -40,4 +40,3 @@ The VF miniport driver may also communicate with the PF miniport driver. This co
  
 
  
-

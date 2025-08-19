@@ -1,5 +1,5 @@
 ---
-title: MediaSides element
+title: MediaSides Element
 description: The optional MediaSides element contains the parameters that are unique to each physical side of the scanned media.
 keywords: ["MediaSides element Imaging Devices"]
 topic_type:

@@ -3,6 +3,7 @@ title: Handling a System Set-Power IRP in a Filter Driver
 description: Handling a System Set-Power IRP in a Filter Driver
 keywords: ["set-power IRPs WDK power management", "filter drivers WDK power management"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Handling a System Set-Power IRP in a Filter Driver

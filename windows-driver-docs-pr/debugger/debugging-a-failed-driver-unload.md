@@ -3,6 +3,7 @@ title: Debugging a Failed Driver Unload
 description: Debugging a Failed Driver Unload
 keywords: ["failed driver unload", "driver unload debugging", "unload failures"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Debugging a Failed Driver Unload
@@ -21,7 +22,7 @@ Here is an example of how to debug this problem. Although **DeviceObject** is us
 
 1.  Put a breakpoint right after the driver calls **IoCreateDevice**. Get the **DeviceObject** address.
 
-2.  Find the object header by using the [**!object**](-object.md) extension on this object address:
+2.  Find the object header by using the [**!object**](../debuggercmds/-object.md) extension on this object address:
 
     ```dbgcmd
     kd> !object 81a578c0 
@@ -39,15 +40,10 @@ Here is an example of how to debug this problem. Although **DeviceObject** is us
     kd> ba w4 81a578a8 "k;g" 
     ```
 
-4.  Use [**g (Go)**](g--go-.md). The debugger will produce a log.
+4.  Use [**g (Go)**](../debuggercmds/g--go-.md). The debugger will produce a log.
 
 5.  Look for the mismatched reference/dereference pair -- specifically, a missing dereference. (Note that **ObReferenceObject** is implemented as a macro inside the kernel.)
 
  
 
  
-
-
-
-
-

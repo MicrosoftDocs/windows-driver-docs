@@ -7,6 +7,7 @@ keywords:
 - local Bluetooth WDK
 - remote Bluetooth WDK
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Bluetooth IOCTLs

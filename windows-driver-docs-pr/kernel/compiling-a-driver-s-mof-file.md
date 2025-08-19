@@ -3,6 +3,7 @@ title: Compiling a Driver's MOF File
 description: Compiling a Driver's MOF File
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "compiling MOF files"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Compiling a Driver's MOF File
@@ -44,7 +45,7 @@ A driver specifies its MOF resource name in response to a registration request (
 
 For more information about handling **IRP\_MN\_REGINFO** and **IRP\_MN\_REGINFO\_EX** requests, see [Registering as a WMI Data Provider](registering-as-a-wmi-data-provider.md).
 
-For more information about handling WMI IRPs using WMI iibrary routines, see [Handling WMI Requests](handling-wmi-requests.md).
+For more information about handling WMI IRPs using WMI library routines, see [Handling WMI Requests](handling-wmi-requests.md).
 
 For more information about defining and including resources in executable files, see the Microsoft Windows SDK.
 

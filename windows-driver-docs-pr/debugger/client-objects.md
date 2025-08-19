@@ -3,6 +3,7 @@ title: Client Objects
 description: Client Objects
 keywords: ["Debugger Engine, client objects", "client objects"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Client Objects
@@ -15,7 +16,7 @@ Almost all interaction with the [debugger engine](introduction.md#debugger-engin
 
 ### <span id="primary-clients"></span><span id="PRIMARY_CLIENTS"></span>Primary Clients
 
-A *primary client* is a client that has joined the current debugging session. Initially, when a new client object is created, it is not a primary client. A client becomes a primary client when it is used to acquire a target (for example, by calling [**CreateProcess2**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-createprocess2)) or is connected to the debugging session using [**ConnectSession**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-connectsession). The debugger command [**.clients**](-clients--list-debugging-clients-.md) lists only the primary clients.
+A *primary client* is a client that has joined the current debugging session. Initially, when a new client object is created, it is not a primary client. A client becomes a primary client when it is used to acquire a target (for example, by calling [**CreateProcess2**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-createprocess2)) or is connected to the debugging session using [**ConnectSession**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-connectsession). The debugger command [**.clients**](../debuggercmds/-clients--list-debugging-clients-.md) lists only the primary clients.
 
 ### <span id="callback-objects"></span><span id="CALLBACK_OBJECTS"></span>Callback Objects
 
@@ -25,7 +26,7 @@ Callback objects can be registered with each client. There are three types of ca
 
 2.  **Output Callback Objects** (or *output callbacks*): the engine calls output callbacks to display output. For example, a debugger with a console window could register an output callback to present the debugger's output to the user, or a debugger might register an output callback to send the output to a log file.
 
-3.  **Event Callback Objects** (or *event callbacks*): the engine calls event callbacks whenever an event occurs in a target (or there is a change in the engine's state). For example, a debugger extension library could register an event callback to monitor certain events or perform automated actions when an particular event occurs.
+3.  **Event Callback Objects** (or *event callbacks*): the engine calls event callbacks whenever an event occurs in a target (or there is a change in the engine's state). For example, a debugger extension library could register an event callback to monitor certain events or perform automated actions when a particular event occurs.
 
 ### <span id="remote-debugging"></span><span id="REMOTE_DEBUGGING"></span>Remote Debugging
 

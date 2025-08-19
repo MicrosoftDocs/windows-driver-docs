@@ -1,5 +1,5 @@
 ---
-title: Show method of the MSFT\_VirtualDisk class
+title: Show Method of the MSFT_VirtualDisk Class
 description: Shows a virtual disk to an initiator.
 ms.assetid: 6B2649E0-669B-4E8A-9DC5-78287ECE5625
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

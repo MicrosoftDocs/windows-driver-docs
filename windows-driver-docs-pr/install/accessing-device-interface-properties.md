@@ -1,7 +1,8 @@
 ---
-title: Accessing Device Interface Properties before Windows Vista
+title: Accessing Device Interface Properties Before Windows Vista
 description: Accessing Device Interface Properties before Windows Vista
 ms.date: 04/05/2022
+ms.topic: concept-article
 ---
 
 # Accessing Device Interface Properties before Windows Vista

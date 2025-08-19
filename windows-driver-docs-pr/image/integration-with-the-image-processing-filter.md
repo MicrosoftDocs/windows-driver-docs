@@ -2,6 +2,7 @@
 title: Integration with the Image Processing Filter
 description: Integration with the Image Processing Filter
 ms.date: 04/20/2017
+ms.topic: integration
 ---
 
 # Integration with the Image Processing Filter

@@ -1,7 +1,8 @@
 ---
-title: Introduction to enabling MB experiences using portable hotspot devices
+title: Introduction to Enabling MB Experiences Using Portable Hotspot Devices
 description: Introduction to enabling mobile broadband (MB) experiences using portable hotspot devices
 ms.date: 07/05/2019
+ms.topic: concept-article
 ---
 
 # Introduction to enabling mobile broadband (MB) experiences using portable hotspot devices
@@ -18,7 +19,7 @@ The following topics are available in this section:
 
 -   [Communication channels](communication-channels.md)
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Overview of mobile broadband](overview-of-mobile-broadband.md)

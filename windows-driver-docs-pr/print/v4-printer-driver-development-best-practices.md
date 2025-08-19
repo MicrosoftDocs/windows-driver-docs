@@ -1,7 +1,8 @@
 ---
-title: V4 printer driver development best practices
+title: V4 Printer Driver Development Best Practices
 description: Since v4 printer drivers are invoked directly from the Driver Store, and they are also expected to communicate with low-rights applications like Internet Explorer, it is important to follow the recommended best practices when you develop v4 printer drivers.
 ms.date: 01/25/2023
+ms.topic: best-practice
 ---
 
 # V4 printer driver development best practices
@@ -14,7 +15,7 @@ This section discusses the following topics:
 
 [Working with the Driver Store](working-with-the-driver-store.md)
 
-[Working well with enhanced point and print](working-well-with-enhanced-point-and-print.md)
+[Work with enhanced point and print](working-well-with-enhanced-point-and-print.md)
 
 [V4 printer driver security considerations](v4-printer-driver-security-considerations.md)
 

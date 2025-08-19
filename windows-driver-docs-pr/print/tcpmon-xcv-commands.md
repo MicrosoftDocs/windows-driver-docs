@@ -1,5 +1,5 @@
 ---
-title: TCPMON Xcv commands
+title: TCPMON Xcv Commands
 description: Provides information about TCPMON Xcv commands.
 keywords:
 - print monitors WDK, TCPMON Xcv
@@ -17,6 +17,7 @@ keywords:
 - SNMPDeviceIndex
 - SNMPEnabled
 ms.date: 09/08/2022
+ms.topic: reference
 ---
 
 # TCPMON Xcv commands

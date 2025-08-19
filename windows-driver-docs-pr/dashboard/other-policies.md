@@ -1,8 +1,8 @@
 ---
 title: Other Policies
 description: Other policies for publishing drivers
-ms.topic: article
 ms.date: 09/22/2020
+ms.topic: concept-article
 ---
 
 # Overview of Driver Policies
@@ -14,5 +14,8 @@ Some existing policies that lead to the driver submission being rejected include
 * OEMs can only target hardware IDs that target their own systems.
 
 ## Other Policies
-* [Extension INF targeting evaluation rules defined](./extension-inf-targeting-rules.md)
+* [Deploying Audio Processing Objects](./deploying-audio-processing-objects.md)
 * [Driver Release Cadence](./driver-release-cadence.md)
+* [Establish HWID or CHID targeting relationship](./establish-relationship-for-chid-targeting.md)
+* [Executable version numbers for audio drivers](./executable-version-numbers-audio-drivers.md)
+* [Extension INF Targeting Rules](./extension-inf-targeting-rules.md)

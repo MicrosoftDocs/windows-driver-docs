@@ -1,7 +1,8 @@
 ---
-title: MSiSCSI\_Operations WMI Class
+title: MSiSCSI_Operations WMI Class
 description: MSiSCSI\_Operations WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_Operations WMI Class

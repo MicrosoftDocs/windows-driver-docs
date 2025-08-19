@@ -1,7 +1,8 @@
 ---
-title: Other ACPI namespace objects
+title: Other ACPI Namespace Objects
 description: For some specific classes of device, there are requirements for additional ACPI namespace objects to appear under those devices in the namespace.
 ms.date: 03/23/2023
+ms.topic: concept-article
 ---
 
 # Other ACPI namespace objects
@@ -87,7 +88,7 @@ Windows needs to know the visibility and connect-ability of USB Ports on the sys
 
 ## SD host controllers and devices
 
-SD host controllers are used on SoC platforms for access to storage as well as I/O devices. Windows includes an inbox driver for SDA-standard host controller hardware. For compatibility with this driver, an SD Host Controller device must comply with the SD Association's [SD Host Controller Specification](https://www.sdcard.org/developers/overview/host_controller/).
+SD host controllers are used on SoC platforms for access to storage as well as I/O devices. Windows includes an inbox driver for SDA-standard host controller hardware. For compatibility with this driver, an SD Host Controller device must comply with the SD Association's [SD Host Controller Specification](https://www.sdcard.org/developers/sd-standard-overview/host-controllers/).
 
 On SoC platforms, the SD host controller can be enumerated by ACPI. Windows uses the following ACPI namespace objects when enumerating and configuring compatible SD hardware:
 

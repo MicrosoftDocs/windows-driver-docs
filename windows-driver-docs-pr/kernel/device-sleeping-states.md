@@ -1,11 +1,12 @@
 ---
 title: Device Low-Power States
-description: Device Low-Power States
+description: Provides information about device low-power states.
 keywords: ["device power states WDK kernel", "device low-power states WDK power management", "sleep power management WDK kernel", "Dx names WDK power management", "asleep devices WDK power management", "lowest-powered device state WDK kernel", "highest-powered device low-power state WDK kernel", "intermediate sleeping state WDK kernel", "low power modes WDK kernel", "power saving modes WDK kernel", "continuous power WDK kernel", "delays WDK power management", "state transition delays WDK power management"]
-ms.date: 07/21/2021
+ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
-# Device Low-Power States
+# Device low-power states
 
 Device power states D1, D2, and D3 are the device low-power states. Starting with Windows 8, D3 is divided into two substates, [D3hot](#d3hot-substate) and [D3cold](#d3cold-substate).
 
@@ -116,8 +117,6 @@ Total restore time is the highest of any of the device power states, except for 
 A device in the D3hot substate may or may not be able to request wake-up. To supply information about whether this substate can support a wake signal, a bus driver uses the [**DEVICE_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure or, starting with Windows 8, the [GUID_D3COLD_SUPPORT_INTERFACE](using-guid-d3cold-support-interface.md) driver interface.
 
 In D3hot, only minimal trickle current is available. Drivers and hardware must be prepared for the absence of power. The specification for a bus that supports D3hot typically provides detailed requirements for power sources that can be used in this state. To return the device to the working state, the device's drivers must be able to restore and reinitialize the device without depending on the BIOS to run any code in the option ROM that might be available for the device.
-
-The parent bus driver will not remove system power from the parent bus of any device that enters D3hot unless the computer as a whole transitions to the S0 state.
 
 All classes of device define the D3hot substate.
 

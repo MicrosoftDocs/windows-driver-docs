@@ -1,9 +1,10 @@
 ---
-title: Plug and Play (PnP) in WDDM 1.2 and later
+title: Plug and Play (PnP) in WDDM 1.2 and Later
 description: All Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers must support the following behavior in response to start and stop requests.
 keywords:
 - Plug and Play in display drivers WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Plug and Play (PnP) in WDDM 1.2 and later

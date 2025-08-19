@@ -1,5 +1,5 @@
 ---
-title: AV/C kernel interface and streaming proxy plug-ins
+title: AV/C Kernel Interface and Streaming Proxy Plug-Ins
 description: Provides information about AV/C kernel-streaming interface and kernel-streaming proxy plug-ins
 keywords:
 - kernel-streaming interface WDK AV/C
@@ -10,6 +10,7 @@ keywords:
 - Kernel Streaming Proxy WDK AVStream
 - KS proxy WDK AVStream
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # AV/C kernel-streaming interface and kernel-streaming proxy plug-ins

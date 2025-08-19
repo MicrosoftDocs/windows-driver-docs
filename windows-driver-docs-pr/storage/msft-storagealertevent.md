@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageAlertEvent class
+title: MSFT_StorageAlertEvent Class
 description: Represents a storage alert event.
 ms.assetid: 3DB2E42D-28BA-418C-8494-1C6FDCF44B98
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

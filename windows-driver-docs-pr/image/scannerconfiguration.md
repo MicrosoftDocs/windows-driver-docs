@@ -1,5 +1,5 @@
 ---
-title: ScannerConfiguration element
+title: ScannerConfiguration Element
 description: The required ScannerConfiguration element is a collection of elements that describes the scanner's configurable capabilities.
 keywords: ["ScannerConfiguration element Imaging Devices"]
 topic_type:

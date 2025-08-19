@@ -10,7 +10,8 @@ keywords:
 - Plug and Play WDK NDIS protocol
 - notifications WDK PnP , NDIS protocol drivers
 - event notifications WDK networking
-ms.date: 04/20/2017
+ms.date: 07/23/2025
+ms.topic: concept-article
 ---
 
 # Handling PnP Events and Power Management Events in a Protocol Driver
@@ -27,7 +28,7 @@ The following list contains PnP and power management events, as indicated by the
 
     If the miniport adapter is in a low-power state, the protocol driver cannot issue any OID requests. This requirement is an additional power management restriction that is added to the other restrictions that apply when the driver stack is in the Paused state.
 
-    If the underlying miniport adapter is not power management–aware, the miniport driver sets the **PowerManagementCapabilities** member of [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) to **NULL** and NDIS sets the **PowerManagementCapabilities** member of [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) to **NULL**.
+    If the underlying miniport adapter is not power management–aware, the miniport driver sets the **PowerManagementCapabilities** member of [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) to **NULL** and NDIS sets the **PowerManagementCapabilities** member of [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) to **NULL**.
 
     **Note**  Starting with NDIS 6.30, after being notified of this event, the protocol driver must stop generating new I/O requests and should not wait for the completion of any pending I/O requests within the context of the call to [*ProtocolNetPnPEvent*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event).
 
@@ -87,7 +88,7 @@ The following list contains PnP and power management events, as indicated by the
 
 -   **NetEventIMReEnableDevice**
 
-    Indicates that the configuration has changed for a virtual miniport of an NDIS 6.0 or later intermediate driver. **NetEventIMReEnableDevice** is similar to the **NetEventReconfigure** event except that the intermediate driver receives this event for a single virtual miniport and the **NetEventReconfigure** event applies to all of the intermediate driver's virtual miniports. For example, an intermediate driver receives the **NetEventIMReEnableDevice** event when a user disables and then enables a single virtual miniport from the Device Manager or another source. For examples of intermediate driver power management, see the [NDIS MUX Intermediate Driver and Notify Object](https://go.microsoft.com/fwlink/p/?LinkId=617916) driver sample available in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+    Indicates that the configuration has changed for a virtual miniport of an NDIS 6.0 or later intermediate driver. **NetEventIMReEnableDevice** is similar to the **NetEventReconfigure** event except that the intermediate driver receives this event for a single virtual miniport and the **NetEventReconfigure** event applies to all of the intermediate driver's virtual miniports. For example, an intermediate driver receives the **NetEventIMReEnableDevice** event when a user disables and then enables a single virtual miniport from the Device Manager or another source. For examples of intermediate driver power management, see the [NDIS MUX Intermediate Driver and Notify Object](https://github.com/microsoft/Windows-driver-samples/tree/95037b3f77f3a745f7682f991ac80e81f91f5362/network/ndis/mux) driver sample available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples/tree/develop) repository on GitHub.
 
 The **Buffer** member of the NET\_PNP\_EVENT structure points to a buffer that contains information specific to the event being indicated.
 

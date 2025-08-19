@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToPartition class
+title: MSFT_StorageSubSystemToPartition Class
 description: Association between MSFT\_StorageSubSystem and MSFT\_Partition.
 ms.assetid: 57565912-703D-4213-A53A-3A9A5D5EF46F
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

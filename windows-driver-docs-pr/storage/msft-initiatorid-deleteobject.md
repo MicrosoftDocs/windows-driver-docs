@@ -1,5 +1,5 @@
 ---
-title: DeleteObject method of the MSFT\_InitiatorId class
+title: DeleteObject Method of the MSFT_InitiatorId Class
 description: Deletes an instance of an initiator identifier.
 ms.assetid: 233E2BFD-81B6-4769-9C65-8EF914F9F869
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

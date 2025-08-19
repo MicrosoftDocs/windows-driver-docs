@@ -3,6 +3,7 @@ title: Processor Architecture
 description: Processor Architecture
 keywords: ["processor architecture", "architecture of processors", "CPU architecture"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Processor Architecture
@@ -20,8 +21,3 @@ This section includes:
  
 
  
-
-
-
-
-

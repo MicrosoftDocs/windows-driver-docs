@@ -4,6 +4,7 @@ description: The Web Services for Devices (WSD) `List` construct is a string typ
 keywords:
 - List construct
 ms.date: 09/08/2022
+ms.topic: concept-article
 ---
 
 # List (WSD)

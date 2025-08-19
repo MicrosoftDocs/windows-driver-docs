@@ -3,12 +3,13 @@ title: Choosing the 32-Bit or 64-Bit Debugging Tools
 description: When you install Debugging Tools for Windows, you get both a 32-bit set of tools and a 64-bit set of tools.
 keywords: ["32-bit debugger package", "32-bit debugging tools", "64-bit debugger package", "64-bit debugging tools", "installation, choosing between 32-bit and 64-bit packages"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
-# Choosing the 32-Bit or 64-Bit Debugging Tools
+# Choosing the 32-bit or 64-bit Debugging Tools
 
 
-When you install Debugging Tools for Windows, you get both a 32-bit set of tools and a 64-bit set of tools.
+When you [Install Debugging Tools for Windows](debugger-download-tools.md), you get both a 32-bit set of tools and a 64-bit set of tools.
 
 If you are using one of the other debugging environments (WinDbg, KD, CDB, or NTSD), you have to make the choice yourself. To determine which set of debugging tools to use, you need to know the type of processor that is running on your host computer and whether the host computer is running a 32- or 64-bit version of Windows.
 
@@ -26,7 +27,7 @@ If your host computer uses an x64-based processor and is running a 64-bit versio
 
 - If you are performing live kernel-mode debugging, you can use either the 32-bit debugging tools or the x64 debugging tools. (This situation applies to both x86-based and x64-based targets.)
 
-- If you are debugging live user-mode code that is running on the same computer as the debugger, use the 64-bit tools for debugging 64-bit code and 32-bit code running on WOW64. To set the debugger for 32-bit or 64-bit mode, use the [**.effmach**](-effmach--effective-machine-.md) command.
+- If you are debugging live user-mode code that is running on the same computer as the debugger, use the 64-bit tools for debugging 64-bit code and 32-bit code running on WOW64. To set the debugger for 32-bit or 64-bit mode, use the [**.effmach**](../debuggercmds/-effmach--effective-machine-.md) command.
 
 - If you are debugging live 32-bit user-mode code that is running on a separate target computer, use the 32-bit debugging tools.
 

@@ -5,6 +5,7 @@ keywords:
 - trace sessions WDK , stopping
 - stopping trace sessions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 7: Stopping All Trace Sessions
@@ -30,12 +31,4 @@ To stop the session, type **Y**. Tracelog then lists the properties of the sessi
 ```
 The "MyTrace" session has been stopped
 ```
-
- 
-
- 
-
-
-
-
 

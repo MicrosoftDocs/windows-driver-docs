@@ -6,6 +6,8 @@ keywords:
 - custom property pages WDK networking
 - property pages WDK networking
 ms.date: 04/20/2017
+ms.topic: how-to
+ms.custom: sfi-ropc-nochange
 ---
 
 # Specifying Custom Property Pages for Network Adapters

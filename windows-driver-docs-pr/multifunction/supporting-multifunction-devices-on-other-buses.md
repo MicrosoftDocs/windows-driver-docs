@@ -1,5 +1,5 @@
 ---
-title: Supporting Multifunction Devices On Other Buses
+title: Supporting Multifunction Devices on Other Buses
 description: Provides information about supporting multifunction devices on other buses.
 keywords:
 - multifunction devices WDK , other buses
@@ -8,6 +8,7 @@ keywords:
 - USB WDK multifunction devices
 - IEEE 1394 WDK multifunction devices
 ms.date: 03/17/2023
+ms.topic: concept-article
 ---
 
 # Supporting Multifunction Devices On Other Buses
@@ -26,4 +27,4 @@ Vendors of this type of multifunction device must do the following:
 
 - Provide an INF file for each function of the device.
 
-    The INF files can be the same files that are used when the functions are packaged as a individual devices. The INF files do not need any special multifunction semantics.
+    The INF files can be the same files that are used when the functions are packaged as individual devices. The INF files do not need any special multifunction semantics.

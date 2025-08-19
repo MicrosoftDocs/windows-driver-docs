@@ -1,7 +1,8 @@
 ---
-title: KSPROPSETID\_BdaCA
+title: KSPROPSETID_BdaCA
 description: KSPROPSETID\_BdaCA
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_BdaCA

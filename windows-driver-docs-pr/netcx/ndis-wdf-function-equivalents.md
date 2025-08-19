@@ -4,6 +4,7 @@ description: NDIS-WDF function equivalents
 keywords:
 - NetAdapterCx NDIS-WDF function equivalents, NetCx NDIS-WDF function equivalents
 ms.date: 06/05/2017
+ms.topic: reference
 ---
 
 # NDIS-WDF function equivalents

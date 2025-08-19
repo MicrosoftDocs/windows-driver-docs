@@ -1,5 +1,5 @@
 ---
-title: SM\_SendRLS function
+title: SM_SendRLS Function
 description: The SM\_SendRLS WMI method sends a read link status (RLS) through the indicated local port. This RLS is sent to the indicated remote port to retrieve a link error status block that is associated with the remote port.
 keywords: ["SM_SendRLS function Storage Devices"]
 topic_type:

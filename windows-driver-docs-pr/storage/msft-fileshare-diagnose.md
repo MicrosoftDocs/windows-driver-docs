@@ -1,5 +1,5 @@
 ---
-title: Diagnose method of the MSFT\_FileShare class
+title: Diagnose Method of the MSFT_FileShare Class
 description: Performs a diagnostic on the file share, returning any actionable results.
 ms.assetid: 2BBE9751-7B3F-4A32-8CA5-041C826FB421
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

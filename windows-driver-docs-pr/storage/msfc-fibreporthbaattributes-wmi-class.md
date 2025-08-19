@@ -1,7 +1,8 @@
 ---
-title: MSFC\_FibrePortHBAAttributes WMI Class
+title: MSFC_FibrePortHBAAttributes WMI Class
 description: MSFC\_FibrePortHBAAttributes WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSFC\_FibrePortHBAAttributes WMI Class

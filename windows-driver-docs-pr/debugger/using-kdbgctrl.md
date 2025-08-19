@@ -3,6 +3,7 @@ title: Using KDbgCtrl
 description: Using KDbgCtrl
 keywords: ["KDbgCtrl", "KDbgCtrl, basic use", "DbgPrint buffer, changing buffer size", "DbgPrint buffer, KDbgCtrl utility"]
 ms.date: 05/17/2018
+ms.topic: concept-article
 ---
 
 # Using KDbgCtrl
@@ -44,7 +45,7 @@ When User-Mode Error Handling is enabled, some user-mode events will cause the t
 
 Specifically, all **int 3** interrupts -- such as breakpoints inserted into the code by a debugger or calls to **DbgBreakPoint** -- will cause a break into the kernel debugger. However, standard exceptions -- such as access violations and division by zero -- will usually not be sent to the kernel debugger.
 
-If a user-mode debugger is already attached to the process, this debugger will capture all user-mode errors, and the kernel debugger will not be alterted. For the precedence ranking of the various user-mode error handlers, see [Enabling Postmortem Debugging](enabling-postmortem-debugging.md).
+If a user-mode debugger is already attached to the process, this debugger will capture all user-mode errors, and the kernel debugger will not be altered. For the precedence ranking of the various user-mode error handlers, see [Enabling Postmortem Debugging](enabling-postmortem-debugging.md).
 
 For User-Mode Error Handling to function, either Full Kernel Debugging or Automatic Kernel Debugging must be enabled as well.
 
@@ -87,7 +88,7 @@ You can use **kdbgctrl -cb** to check whether kernel debugging is blocked.
 
 The DbgPrint buffer stores messages that the target computer has sent to the kernel debugger.
 
-If Full Kernel Debugging is enabled, these messages will automatically appear in the kernel debugger. But if this option is disabled, these messages will be stored in the buffer. At a later point in time, you can enable kernel debugging, connect to a kernel debugger, and use the [**!dbgprint**](-dbgprint.md) extension to see the contents of this buffer. For more information about this buffer, see The DbgPrint Buffer.
+If Full Kernel Debugging is enabled, these messages will automatically appear in the kernel debugger. But if this option is disabled, these messages will be stored in the buffer. At a later point in time, you can enable kernel debugging, connect to a kernel debugger, and use the [**!dbgprint**](../debuggercmds/-dbgprint.md) extension to see the contents of this buffer. For more information about this buffer, see The DbgPrint Buffer.
 
 The default size of the DbgPrint buffer is 4 KB on a free build of Windows. To determine the current buffer size, use **kdbgctrl -cdb**. To change the buffer size, use **kdbgctrl -sdb***Size*, where *Size* specifies the new buffer size. For syntax details, see [**KDbgCtrl Command-Line Options**](kdbgctrl-command-line-options.md).
 

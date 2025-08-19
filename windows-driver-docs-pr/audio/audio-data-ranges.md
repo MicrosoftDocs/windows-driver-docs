@@ -10,13 +10,10 @@ keywords:
 - WDM audio data ranges WDK
 - data ranges WDK audio , about audio data ranges
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Audio Data Ranges
-
-
-## <span id="audio_data_ranges"></span><span id="AUDIO_DATA_RANGES"></span>
-
 
 Each pin on a KS filter declares which data formats it supports. The pin factory exposes this information as an array of data ranges. Unlike the format descriptors described previously, a data range describes a range of data formats. For example, the data range for a wave pin specifies the range of sample sizes, frequencies, and channels that the pin supports.
 

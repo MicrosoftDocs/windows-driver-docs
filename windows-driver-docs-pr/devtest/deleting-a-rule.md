@@ -6,6 +6,7 @@ keywords:
 - trace message filters WDK , deleting rules
 - deleting rules
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Deleting a Rule
@@ -20,12 +21,4 @@ To delete a rule from a filter:
 3.  Click **Delete Rule**.
 
 If you have saved the rule in a [workspace](using-traceview-workspaces.md), you must [resave the workspace](saving-or-resaving-a-workspace.md) after deleting the rule. Otherwise, the rule is not deleted from the workspace.
-
- 
-
- 
-
-
-
-
 

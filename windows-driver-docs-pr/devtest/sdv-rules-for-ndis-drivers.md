@@ -2,6 +2,7 @@
 title: Rules for NDIS Drivers
 description: Rules for NDIS Drivers
 ms.date: 05/21/2018
+ms.topic: best-practice
 ---
 
 # Rules for NDIS Drivers
@@ -59,10 +60,10 @@ This section lists and describes the [Static Driver Verifier rules](./static-dri
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="ndis-wifi-verification-rule-set.md" data-raw-source="[NDIS/WIFI verification rule set](ndis-wifi-verification-rule-set.md)">NDIS/WIFI verification rule set</a></p></td>
-<td align="left"><blockquote>
+<td align="left">
 [!Note]<br />
 You can test NDIS/WIFI drivers with these rules starting with Windows 8.1.
-</blockquote>
+
  </td>
 </tr>
 </tbody>

@@ -6,6 +6,7 @@ keywords:
 - boot-time Global Logger trace session WDK , creating
 - EnableKernelFlags WDK
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How to Create a Boot-Time Global Logger Session

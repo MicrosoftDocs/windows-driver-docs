@@ -1,5 +1,5 @@
 ---
-title: DeviceCondition element
+title: DeviceCondition Element
 description: The optional DeviceCondition element provides details about one of the scanner's currently active conditions.
 keywords: ["DeviceCondition element Imaging Devices"]
 topic_type:

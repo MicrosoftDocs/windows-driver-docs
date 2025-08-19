@@ -4,10 +4,6 @@
   items: 
   - name: "Windows 10: What's new for USB"
     href: windows-10--what-s-new-for-usb.md
-  - name: "Windows 8.1: What's new for USB"
-    href: what-s-new-for-usb-in-windows-blue.md
-  - name: "Windows 8: What's new for USB"
-    href: what-s-new-in-usb-in-windows-8.md
 - name: "Concepts for all USB developers"
   items: 
   - name: "Getting started with USB development"
@@ -242,6 +238,8 @@
     href: hardware-design-of-a-usb-type-c-system.md
   - name: "OEM tasks for USB Type-C systems"
     href: oem-tasks-for-usb-type-c-systems-running-windows.md
+  - name: USB Type-C troubleshooting notifications
+    href: usb-type-c-troubleshooting-notifications.md
   - name: USB Type-C slow charging notification requirements
     href: usb-type-c-slow-charging-notification-requirements.md
   - name: "USB Type-C Connector System Software Interface (UCSI) driver"
@@ -356,8 +354,6 @@
     href: supported-usb-classes.md
   - name: "USB serial driver (Usbser.sys)"
     href: usb-driver-installation-based-on-compatible-ids.md
-  - name: "Microsoft-Defined USB Driver Frameworks"
-    href: microsoft-defined-usb-frameworks.md
   - name: "USB Device Registry Entries"
     href: usb-device-specific-registry-settings.md
   - name: "Usbccgp.sys"
@@ -379,7 +375,7 @@
   - name: "Winusb.sys"
     items: 
     - name: "Introduction to WinUSB (Winusb.sys)"
-      href: winusb.md
+      href: introduction-to-winusb-for-developers.md
     - name: "WinUSB Architecture and Modules"
       href: winusb-architecture.md
     - name: "WinUSB (Winusb.sys) Installation"

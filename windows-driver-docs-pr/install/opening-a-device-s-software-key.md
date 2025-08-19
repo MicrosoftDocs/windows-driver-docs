@@ -1,12 +1,13 @@
 ---
-title: Opening a device's software key
+title: Opening a Device's Software Key
 description: Provides information about opening a device's software key.
 keywords:
 - software keys WDK device installations
 - opening software keys WDK device installations
 - modifying registry values in a device's software key
 - modifying registry values WDK device installations , device software key
-ms.date: 08/15/2022
+ms.date: 04/17/2025
+ms.topic: concept-article
 ---
 
 # Opening a device's software key
@@ -29,26 +30,17 @@ To open or create a device's software key, follow these guidelines:
 
 ## Modifying Registry Values in a Device's Software Key
 
-You must not modify the values of the following registry entries (*device properties*) in a device's [*software key*](opening-a-device-s-software-key.md):
+You must not modify the values of the following registry entries (*device properties*) in a device's software key:
 
 - DriverDate
-
 - DriverDateData
-
 - DriverDesc
-
 - DriverVersion
-
 - InfPath
-
 - InfSection
-
 - InfSectionExt
-
 - MatchingDeviceId
-
 - ProviderName
-
 - EnumPropPages32
 
 These device properties represent a device's installation state. Direct modification of these properties might invalidate the device's installation state. For example, changing information related to the [INF file](overview-of-inf-files.md) invalidates information about driver files that are associated with such properties as device and driver signing information. Changing driver version or driver date might break Windows Update functionality.

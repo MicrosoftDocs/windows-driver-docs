@@ -5,6 +5,7 @@ keywords:
 - Sdv-map.h WDK Static Driver Verifier , approving
 - approving Sdv-map.h
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Approving the Sdv-map.h File
@@ -55,12 +56,4 @@ To fix this error, delete the lines in the Sdv.map file that cause the error or 
 1.  Open the Sdv-map.h file and change **//Approved=true** to **//Approved=false**.
 
 2.  Use the **staticdv /scan** command to regenerate the map file, or use a **staticdv /rule** or **staticdv /config** command to run an SDV analysis.
-
- 
-
- 
-
-
-
-
 

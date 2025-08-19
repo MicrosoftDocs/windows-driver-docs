@@ -7,31 +7,48 @@ keywords:
 - Stampinf WDK KMDF
 - KMDF WDK , INX files
 - Kernel-Mode Driver Framework WDK , INX files
-ms.date: 05/07/2022
-ms.custom: contperf-fy22q4
+ms.date: 02/20/2025
+ai-usage: ai-assisted
+ms.topic: how-to
 ---
 
 # Using INX Files to Create INF Files
 
-When you're writing a Windows driver, instead of maintaining multiple version-specific INF files, you can create a single INX file and use Microsoft Visual Studio or the [Stampinf](../devtest/stampinf.md) tool to generate version-specific INF files when you need them.
+When writing a Windows driver, you can create a single INX file instead of multiple version-specific INF files. Use Microsoft Visual Studio or the [Stampinf](../devtest/stampinf.md) tool to generate the version-specific INF files as needed.
 
 An *INX file* is like an INF file, but it contains string variables that represent version information.
 
 When you build your driver using  Visual Studio, the build process runs Stampinf to replace the string variables in INX files with text strings that represent a specific hardware architecture or a framework version. You can also manually run Stampinf, which is located in the *bin* subdirectory of the WDK.
 
+## Configuring the INX file path in Visual Studio
+
+When building a driver in Visual Studio, it's essential to verify that the project shows the correct location of the INX file to avoid errors such as `The specified task executable 'stampinf.exe' could not be run.`. Follow these steps to ensure the INX file path is correctly set:
+
+1. Launch Visual Studio and open your driver project.
+1. Right-click on the project in the Solution Explorer and select **Properties**.
+1. Select the **Build** tab.
+1. In the **Output** section, ensure that the path to the INX file is correctly specified. If the path is incorrect or missing, update it to the correct location where your INX file is stored.
+1. Ensure that the Stampinf tool (Stampinf.exe) is installed and accessible in your build environment. This tool is responsible for processing INX files during the build process.
+
+If you encounter a `FileNotFoundException` error, double-check the INX file path and verify that the Stampinf tool can be executed without errors.
+
+## Updating Stampinf properties
+
 To modify Stampinf properties within Visual Studio:
 
 1. Open the Property Pages for your driver package project.
 1. Right-click the package project in Solution Explorer and select **Properties**.
-1. In the Property Pages for the package, click **Configuration Properties**, and then **StampInf**.
+1. In the Property Pages for the package, select **Configuration Properties**, and then **StampInf**.
 
 The WDK includes INX files for all the KMDF and UMDF sample drivers.
+
+## String variables for INX files
 
 You can use the following string variables in an INX file:
 
 *$ARCH$*
 <ul>
-Stampinf replaces this variable with an architecture-specific string. For example, if you are using an x86 build environment, the tool replaces $ARCH$ with "x86". You can use the $ARCH$ string wherever you need to specify a specific architecture within an INF file, such as within an [**INF Manufacturer section**](../install/inf-manufacturer-section.md), as follows:
+Stampinf replaces this variable with an architecture-specific string. For example, if you're using an x86 build environment, the tool replaces $ARCH$ with "x86". You can use the $ARCH$ string wherever you need to specify a specific architecture within an INF file, such as within an [**INF Manufacturer section**](../install/inf-manufacturer-section.md), as follows:
 
 <pre>
 [Manufacturer]

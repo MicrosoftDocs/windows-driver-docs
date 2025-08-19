@@ -1,16 +1,17 @@
 ---
-title: Obtaining preparsed data
+title: Obtaining Preparsed Data
 description: Obtaining preparsed data
 keywords:
 - collections WDK HID , preparsed data
 - HID collections WDK , preparsed data
 - preparsed data WDK HID
-ms.date: 10/12/2022
+ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # Obtaining preparsed data
 
-This section describes how user-mode applications and kernel-mode drivers obtain a HID collection's [preparsed data](preparsed-data.md), which is an opaque structure that describes a collection's HID reports.
+This article describes how user-mode applications and kernel-mode drivers obtain a HID collection's [preparsed data](preparsed-data.md), which is an opaque structure that describes a collection's HID reports.
 
 ## User-Mode Application
 

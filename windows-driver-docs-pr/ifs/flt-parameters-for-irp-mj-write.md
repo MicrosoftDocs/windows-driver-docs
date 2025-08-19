@@ -1,5 +1,5 @@
 ---
-title: FLT_PARAMETERS for IRP_MJ_WRITE union
+title: FLT_PARAMETERS for IRP_MJ_WRITE Union
 description: The following union component is used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_WRITE.
 keywords: ["FLT_PARAMETERS for IRP_MJ_WRITE union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
@@ -56,6 +56,11 @@ If both a **WriteBuffer** and **MdlAddress** buffer are provided, it is recommen
 
 If a minifilter changes the value of **MdlAddress**, then after its post operation callback, Filter Manager will free the MDL currently stored in **MdlAddress** and restore the previous value of **MdlAddress**.
 
+If the IRP_MN_COMPLETE bit is set in Iopb->MinorFunction then **MdlAddress** is the address to send to [CcMdlReadComplete](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccmdlreadcomplete).
+
+If the IRP_MN_MDL bit (and not the IRP_MN_COMPLETE bit) is set in Iopb->MinorFunction then **MdlAddress** is the address to send to [CcPrepareMdlWrite](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccpreparemdlwrite).
+
+
 IRP_MJ_WRITE can be an IRP-based operation or a fast I/O operation.
 
 ## Requirements
@@ -70,7 +75,7 @@ IRP_MJ_WRITE can be an IRP-based operation or a fast I/O operation.
 
 [**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block)
 
-[**FLT_IS_FASTIO_OPERATION**](/windows-hardware/drivers/ddi/index)
+[**FLT_IS_FASTIO_OPERATION**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-flt_is_fastio_operation)
 
 [**FLT_IS_FS_FILTER_OPERATION**](/previous-versions/ff544648(v=vs.85))
 

@@ -1,5 +1,5 @@
 ---
-title: Supporting minifilter contexts
+title: Supporting Minifilter Contexts
 description: Filter manager provides support for minifilter contexts
 keywords:
 - filter manager WDK file system minifilter , contexts
@@ -7,6 +7,7 @@ keywords:
 - minifilter drivers WDK , context
 - contexts WDK file system minifilter
 ms.date: 01/22/2021
+ms.topic: concept-article
 ---
 
 # Supporting minifilter contexts

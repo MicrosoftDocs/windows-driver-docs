@@ -4,6 +4,7 @@ description: Understanding the Sdv-map.h File
 keywords:
 - Sdv-map.h WDK Static Driver Verifier , about Sdv-map.h
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Understanding the Sdv-map.h File
@@ -22,12 +23,4 @@ The function role types that appear in the Sdv-map.h file are the ones that SDV 
 SDV does not require that the driver declare function role types for all of the callback functions that it uses. It requires only that if the driver has declared the function role type that SDV knows about and interprets it correctly. If a driver does not have a function role type that SDV requires to verify a particular rule, SDV concludes that the rule does not apply to the driver. This is not considered to be an error or a defect. 
 
 It is important that you correct any errors in the Sdv-map.h file before verifying the driver. If the file is wrong, the verification might not be reliable.
-
- 
-
- 
-
-
-
-
 

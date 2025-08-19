@@ -2,6 +2,7 @@
 title: Overview of Executing Tests
 description: Overview of Executing Tests
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Overview of Executing Tests
@@ -54,7 +55,7 @@ Specifying the **"/list"** command option along with the test files will list th
 
 ## Test Results
 
-For any generic test case, the test result depends on whether the Verify calls made succeeded or failed. You can find the APIs available and other details on ['Verify'](verify.md). If no Verify call is made during the test, the test result will default to "Passed" for the log subscribers provided with TAEF. You could choose to specify a **"DefaultTestResult"** explictly while authoring the test. See [Authoring Tests](authoring-tests.md) for more details.
+For any generic test case, the test result depends on whether the Verify calls made succeeded or failed. You can find the APIs available and other details on ['Verify'](verify.md). If no Verify call is made during the test, the test result will default to "Passed" for the log subscribers provided with TAEF. You could choose to specify a **"DefaultTestResult"** explicitly while authoring the test. See [Authoring Tests](authoring-tests.md) for more details.
 
 ## Help - Command Options
 

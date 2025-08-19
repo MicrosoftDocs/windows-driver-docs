@@ -1,7 +1,8 @@
 ---
-title: Code example for initializing device properties
+title: Code Example for Initializing Device Properties
 description: Code example for initializing device properties
 ms.date: 03/28/2023
+ms.topic: how-to
 ---
 
 # Code example for initializing device properties

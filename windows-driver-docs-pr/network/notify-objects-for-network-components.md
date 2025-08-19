@@ -9,6 +9,7 @@ keywords:
 - displaying Property pages
 - property pages WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Notify Objects for Network Components

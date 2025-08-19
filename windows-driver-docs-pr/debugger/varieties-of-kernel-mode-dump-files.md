@@ -1,15 +1,12 @@
 ---
 title: Varieties of Kernel-Mode Dump Files
-description: Varieties of Kernel-Mode Dump Files
+description: This article describes the five varieties of Kernel-Mode Dump Files
 keywords: ["dump file, kernel-mode file types"]
-ms.date: 05/23/2017
+ms.date: 01/24/2025
+ms.topic: concept-article
 ---
 
 # Varieties of Kernel-Mode Dump Files
-
-
-## <span id="ddk_varieties_of_kernel_mode_dump_files_dbg"></span><span id="DDK_VARIETIES_OF_KERNEL_MODE_DUMP_FILES_DBG"></span>
-
 
 There are five settings for kernel-mode crash dump files:
 
@@ -27,29 +24,16 @@ The difference between these dump files is one of size. The *Complete Memory Dum
 
 If you select *Automatic Memory Dump*, the dump file is the same as a Kernel Memory Dump, but Windows has more flexibility in setting the size of the system paging file.
 
-The advantage to the larger files is that, since they contain more information, they are more likely to help you find the cause of the crash.
+The advantage of larger files is that they contain more information, making them more likely to help you find the cause of the crash.
 
-The advantage of the smaller files is that they are smaller and written more quickly. Speed is often valuable; if you are running a server, you may want the server to reboot as quickly as possible after a crash, and the reboot will not take place until the dump file has been written.
+The advantage of smaller files is that they're quicker to write. Speed is often valuable; if you're running a server, you probably want it to reboot as quickly as possible after a crash. The reboot doesn't take place until the dump file is written.
 
-After a Complete Memory Dump or Kernel Memory Dump has been created, it is possible to create a Small Memory Dump file from the larger dump file. See the [**.dump (Create Dump File)**](-dump--create-dump-file-.md) command for details.
+After a Complete Memory Dump or Kernel Memory Dump is created, you can create a Small Memory Dump file from the larger dump file. For more information, see the [**.dump (Create Dump File)**](../debuggercmds/-dump--create-dump-file-.md) command.
 
-**Note**   Much information can be obtained by analyzing a kernel-mode dump file. However, no kernel-mode dump file can provide as much information as actually debugging the crash directly with a kernel debugger.
+**Note**   You can obtain much information by analyzing a kernel-mode dump file. However, no kernel-mode dump file can provide as much information as debugging the crash directly with a kernel debugger. A dump file is a snapshot in time, where with live debugging, you can view all memory values in real time as the program executes.
 
- 
-
-## <span id="related_topics"></span>See also
-
+## See also
 
 [Kernel-Mode Dump Files](kernel-mode-dump-files.md)
 
 [Enabling a Kernel-Mode Dump File](enabling-a-kernel-mode-dump-file.md)
-
- 
-
- 
-
-
-
-
-
-

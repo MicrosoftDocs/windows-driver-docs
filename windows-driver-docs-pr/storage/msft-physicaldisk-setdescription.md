@@ -1,5 +1,5 @@
 ---
-title: SetDescription method of the MSFT\_PhysicalDisk class
+title: SetDescription Method of the MSFT_PhysicalDisk Class
 description: Sets or changes the description for the physical disk.
 ms.assetid: 2BD6A32E-DE02-4632-98E4-123EF9A7EDD5
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

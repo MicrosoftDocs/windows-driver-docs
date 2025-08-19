@@ -1,5 +1,5 @@
 ---
-title: FSCTL_GET_REPARSE_POINT control code
+title: FSCTL_GET_REPARSE_POINT Control Code
 description: The FSCTL_GET_REPARSE_POINT control code retrieves the reparse point data associated with the specified file or directory.
 keywords: ["FSCTL_GET_REPARSE_POINT control code Installable File System Drivers"]
 topic_type:
@@ -36,7 +36,12 @@ For more information about reparse points and the FSCTL_GET_REPARSE_POINT contro
 
 - **OutputBuffer** [out]: Pointer to a caller-allocated [**REPARSE_GUID_DATA_BUFFER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_guid_data_buffer) or [**REPARSE_DATA_BUFFER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_data_buffer) structure that receives the reparse point data.
 
-- **OutputBufferLength** [out]: Size, in bytes, of the buffer pointed to by the **OutputBuffer** parameter. For a REPARSE_GUID_DATA_BUFFER structure, this value must be at least REPARSE_GUID_DATA_BUFFER_HEADER_SIZE, plus the size of the expected user-defined data, and it must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE. For a REPARSE_DATA_BUFFER structure, this value must be at least REPARSE_DATA_BUFFER_HEADER_SIZE, plus the size of the expected user-defined data, and it must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE.
+- **OutputBufferLength** [out]: Size, in bytes, of the buffer pointed to by the **OutputBuffer** parameter. The number of bytes is calculated as follows:
+
+  | Structure | OutputBufferLength |
+  | --------- | ------------------ |
+  | **REPARSE_GUID_DATA_BUFFER** | Must be at least REPARSE_GUID_DATA_BUFFER_HEADER_SIZE plus the size of the expected user-defined data; and must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE. |
+  | **REPARSE_DATA_BUFFER**      | Must be at least REPARSE_DATA_BUFFER_HEADER_SIZE plus the size of the expected user-defined data; and must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE. |
 
 ## Status block
 
@@ -44,8 +49,8 @@ For more information about reparse points and the FSCTL_GET_REPARSE_POINT contro
 
 | Code | Meaning |
 | ---- | ------- |
-| STATUS_BUFFER_OVERFLOW | The buffer that the **OutputBuffer** parameter points to is large enough to hold the fixed portion of the REPARSE_GUID_DATA_BUFFER or REPARSE_DATA_BUFFER structure but not the user-defined data. In this case, only the fixed portion of the reparse point data is returned in the **OutputBuffer** buffer. The **LengthReturned** parameter to [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) receives the actual length, in bytes, of data returned. This is a warning code. |
-| STATUS_BUFFER_TOO_SMALL | The buffer that the **OutputBuffer** parameter points to is not large enough to hold the reparse point data. The **LengthReturned** parameter to [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) (or the **Information** member of the **IoStatus** parameter to [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))) receives the required buffer size. In this case, no reparse point data is returned. This is an error code. |
+| STATUS_BUFFER_OVERFLOW | The buffer that the **OutputBuffer** parameter points to is large enough to hold the fixed portion of the REPARSE_GUID_DATA_BUFFER or REPARSE_DATA_BUFFER structure but not the user-defined data. In this case, only **OutputBufferLength** bytes are returned in the **OutputBuffer** buffer. The **LengthReturned** parameter to [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) receives the actual length, in bytes, of data returned. This is a warning code. |
+| STATUS_BUFFER_TOO_SMALL | The buffer that **OutputBuffer** points to is less than ```sizeof(REPARSE_GUID_DATA_BUFFER)``` and is not large enough to hold the reparse point data. The **LengthReturned** parameter to [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) (or the **Information** member of the **IoStatus** parameter to [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))) receives the required buffer size. In this case, no reparse point data is returned. This is an error code. |
 | STATUS_IO_REPARSE_DATA_INVALID | One of the specified parameter values was invalid. This is an error code. |
 | STATUS_NOT_A_REPARSE_POINT | The file or directory is not a reparse point. This is an error code. |
 

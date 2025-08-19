@@ -2,6 +2,7 @@
 title: Active Memory Dump
 description: Active Memory Dump
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Active Memory Dump
@@ -20,7 +21,7 @@ The Active Memory Dump file is written to %SystemRoot%\\Memory.dmp by default.
 
 The Active Memory Dump is available in Windows 10 and later.
 
-**Note**  To suppress missing page error messages when debugging an Active Memory Dump, use the [**.ignore\_missing\_pages**](-ignore-missing-pages--suppress-missing-page-errors-.md) command.
+**Note**  To suppress missing page error messages when debugging an Active Memory Dump, use the [**.ignore\_missing\_pages**](../debuggercmds/-ignore-missing-pages--suppress-missing-page-errors-.md) command.
 
  
 
@@ -32,9 +33,3 @@ The Active Memory Dump is available in Windows 10 and later.
  
 
  
-
-
-
-
-
-

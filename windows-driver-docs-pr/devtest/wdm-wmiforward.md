@@ -1,5 +1,5 @@
 ---
-title: WmiForward rule (wdm)
+title: WmiForward Rule (WDM)
 description: The WmiForward rule specifies that the driver must forward WMI minor IRPs when forwarding is required.
 ms.date: 05/21/2018
 keywords: ["WmiForward rule (wdm)"]
@@ -23,7 +23,7 @@ This rule does not apply to bus drivers.
 
 A *WMI minor IRP* is an [**IRP\_MJ\_SYSTEM\_CONTROL**](../kernel/irp-mj-system-control.md) request with a WMI minor function code.
 
-For more information about processing WMI minor IRPs, see [**WMI Requirements for WDM Drivers**](../kernel/wmi-requirements-for-wdm-drivers.md), [**Handling WMI Requests**](../kernel/handling-wmi-requests.md), [**Windows Management Instrumentation Routines**](/windows-hardware/drivers/ddi/index), and [**WMI Library Support Routines**](/windows-hardware/drivers/ddi/index).
+For more information about processing WMI minor IRPs, see [**WMI Requirements for WDM Drivers**](../kernel/wmi-requirements-for-wdm-drivers.md), [**Handling WMI Requests**](../kernel/handling-wmi-requests.md), and [**Implementing WMI**](../kernel/implementing-wmi.md).
 
 **Driver model: WDM**
 
@@ -57,8 +57,8 @@ Use the following steps to run an analysis of your code:
 [**IoAcquireRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock)
 [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)
 [**PoCallDriver**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocalldriver)
+
 ## See also
 
 [**WMI Requirements for WDM Drivers**](../kernel/wmi-requirements-for-wdm-drivers.md)
 [**Handling WMI Requests**](../kernel/handling-wmi-requests.md)
-[**WMI Library Support Routines**](/windows-hardware/drivers/ddi/index)

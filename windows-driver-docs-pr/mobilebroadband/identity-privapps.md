@@ -1,23 +1,24 @@
 ---
-title: Identity (SoftwareInfo - priviliged applications)
-description: Identity (SoftwareInfo - priviliged applications)
+title: Identity (SoftwareInfo - Privileged Applications)
+description: Identity (SoftwareInfo - privileged applications)
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
-# Identity (SoftwareInfo - priviliged applications)
+# Identity (SoftwareInfo - privileged applications)
 
 [!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Identity element specifies the publisher identity and application manifest name of the app.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
 <Identity Name=”tns:AsciiIdentifierType” Publisher=”tns:DistinguishedNameType” AccessCustomDriver=”xs:boolean” />
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 <table>
@@ -59,12 +60,12 @@ The Identity element specifies the publisher identity and application manifest n
 
  
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 There are no child elements.
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -88,7 +89,7 @@ There are no child elements.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -140,7 +141,7 @@ There are no child elements.
 </xs:simpleType>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 The Identity element is optional.

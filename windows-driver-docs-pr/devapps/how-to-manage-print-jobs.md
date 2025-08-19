@@ -1,10 +1,14 @@
 ---
-title: How to manage print jobs in a UWP device app
+title: How to Manage Print Jobs in a UWP Device App
 description: In Windows 8.1, UWP device apps for printers can manage print jobs.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
+ms.topic: how-to
 ---
 
 # How to manage print jobs in a UWP device app
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 In Windows 8.1, UWP device apps for printers can manage print jobs. This topic uses the C# version of the [Print job management and printer maintenance](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20job%20management%20and%20printer%20maintenance) sample to demonstrate how to create a view of print jobs, monitor those jobs, and if necessary, cancel a job. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
@@ -32,7 +36,7 @@ Before you get started:
 
 1. Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](/windows/uwp/design/).
 
-1. If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** project to your UWP device app solution. You can find this project in the [Print job management and printer maintenance](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20job%20management%20and%20printer%20maintenance) sample.
+1. If you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** project to your UWP device app solution. You can find this project in the [Print job management and printer maintenance](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20job%20management%20and%20printer%20maintenance) sample.
 
 Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.
 
@@ -245,7 +249,7 @@ internal class DisplayablePrintJobStatus
 
 ## Step 4: Cancel print job
 
-Similar to displaying print job status, cancelling a print job is fairly straightforward when you have an `IPrintJob` object. The `IPrintJob` class provides a `RequestCancel` method that initiates the cancellation of the corresponding print job. This is demonstrated in the sample's `CancelPrintJob_Click` method.
+Similar to displaying print job status, canceling a print job is fairly straightforward when you have an `IPrintJob` object. The `IPrintJob` class provides a `RequestCancel` method that initiates the cancellation of the corresponding print job. This is demonstrated in the sample's `CancelPrintJob_Click` method.
 
 This example shows the `CancelPrintJob_Click` method in the **PrintJobManagement.xaml.cs** file.
 
@@ -308,14 +312,9 @@ The following steps build your app and install the device metadata.
 
 ## Related topics
 
-[Job Management (v4 Printer Driver)](../print/job-management.md)
-
-[Developing v4 print drivers](../print/v4-printer-driver.md)
-
-[Bidirectional Communications](../print/bidirectional-communication.md)
-
-[Getting started with UWP apps](getting-started.md)
-
-[Create a UWP device app (step-by-step guide)](step-1--create-a-uwp-device-app.md)
-
-[Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
+- [Job Management (v4 Printer Driver)](../print/job-management.md)
+- [Developing v4 print drivers](../print/v4-printer-driver.md)
+- [Bidirectional Communications](../print/bidirectional-communication.md)
+- [Getting started with UWP apps](getting-started.md)
+- [Create a UWP device app (step-by-step guide)](step-1--create-a-uwp-device-app.md)
+- [Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)

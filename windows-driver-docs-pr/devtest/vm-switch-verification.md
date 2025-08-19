@@ -1,7 +1,8 @@
 ---
-title: VM switch verification
+title: VM Switch Verification
 description: The VM switch verification option monitors filter drivers (extensible switch extensions) that run inside the Hyper-V Extensible Switch. Use this option to catch errors that occur in send or receive operations within the extensible switch.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # VM switch verification

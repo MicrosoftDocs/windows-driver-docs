@@ -1,5 +1,5 @@
 ---
-title: Diagnose method of the MSFT\_Volume class
+title: Diagnose Method of the MSFT_Volume Class
 description: Performs a diagnostic on the volume, returning any actionable results.
 ms.assetid: 57B10BFE-DD51-4E33-A7C9-8AB89953D638
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

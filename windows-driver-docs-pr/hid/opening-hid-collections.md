@@ -1,12 +1,13 @@
 ---
-title: Opening HID collections
-description: This section describes how a HID Client can communicate with the HID Class driver (HIDClass) to operate the device's HID collections.
-ms.date: 10/12/2022
+title: Opening HID Collections
+description: This article describes how a HID Client can communicate with the HID Class driver (HIDClass) to operate the device's HID collections.
+ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # Opening HID collections
 
-This section describes how a HID Client can communicate with the HID Class driver (HIDClass) to operate the device's HID collections.
+This article describes how a HID Client can communicate with the HID Class driver (HIDClass) to operate the device's HID collections.
 
 HID Clients can operate in the following modes:
 

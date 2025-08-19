@@ -1,5 +1,5 @@
 ---
-title: FLT_PARAMETERS for IRP_MJ_CREATE union
+title: FLT_PARAMETERS for IRP_MJ_CREATE Union
 description: The following union component is used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_CREATE.
 keywords: ["FLT_PARAMETERS for IRP_MJ_CREATE union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
@@ -82,7 +82,7 @@ IRP_MJ_CREATE is an IRP-based operation.
 
 [FLT_IO_PARAMETER_BLOCK](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block)
 
-[FLT_IS_FASTIO_OPERATION](/windows-hardware/drivers/ddi/index)
+[FLT_IS_FASTIO_OPERATION](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-flt_is_fastio_operation)
 
 [FLT_PARAMETERS](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
 

@@ -1,7 +1,8 @@
 ---
-title: Mobile operator notification event technical details
+title: Mobile Operator Notification Event Technical Details
 description: Mobile operator notification event technical details
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Mobile operator notification event technical details
@@ -172,7 +173,7 @@ Windows accepts an XML-based provisioning file from you. A sample version of the
     <Global>
         <!-- Adjust the Carrier ID to fit match the Service Number in service metadata. Refer to the documentation about CarrierId. -->
         <CarrierId>{11111111-1111-1111-1111-111111111111}</CarrierId>
-        <!-- Adjust the Susbscriber ID. Refer to the documentation about Subscriber ID's. -->
+        <!-- Adjust the Subscriber ID. Refer to the documentation about Subscriber ID's. -->
         <SubscriberId>1234567890</SubscriberId>
     </Global>
     <MBNProfiles>

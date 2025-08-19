@@ -1,7 +1,8 @@
 ---
-title: KSPROPSETID\_BdaSignalStats
+title: KSPROPSETID_BdaSignalStats
 description: KSPROPSETID\_BdaSignalStats
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_BdaSignalStats

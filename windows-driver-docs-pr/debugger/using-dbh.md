@@ -3,14 +3,14 @@ title: Using DBH
 description: Using DBH
 keywords: ["DBH, using"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using DBH
 
+DBH is a command-line tool that exposes many of the functions in the DbgHelp API (dbghelp.dll). It can display information about the contents of a symbol file, display specific details of the symbols in the file, and search through the file for symbols matching various criteria. For more information, see [Debug Help Library](/windows/win32/debug/debug-help-library).
 
-DBH is a command-line tool that exposes many of the functions in the DbgHelp API (dbghelp.dll). It can display information about the contents of a symbol file, display specific details of the symbols in the file, and search through the file for symbols matching various criteria.
-
-The functionality provided by DBH is similar to that provided within WinDbg, KD, and CDB by commands such as [**x (Examine Symbols)**](x--examine-symbols-.md).
+The functionality provided by DBH is similar to that provided within WinDbg, KD, and CDB by commands such as [**x (Examine Symbols)**](../debuggercmds/x--examine-symbols-.md).
 
 ### <span id="running_dbh_in_interactive_mode"></span><span id="RUNNING_DBH_IN_INTERACTIVE_MODE"></span>Running DBH in Interactive Mode
 
@@ -85,8 +85,3 @@ To exit DBH, use the **q** command at the DBH prompt.
  
 
  
-
-
-
-
-

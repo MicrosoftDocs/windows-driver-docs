@@ -1,5 +1,5 @@
 ---
-title: MSFT\_MaskingSetToVirtualDisk class
+title: MSFT_MaskingSetToVirtualDisk Class
 description: Association between MaskingSet and VirtualDisk.
 ms.assetid: 4E5328D1-655B-45A5-9D76-A2042377F7F1
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

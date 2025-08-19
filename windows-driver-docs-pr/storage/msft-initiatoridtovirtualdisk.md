@@ -1,5 +1,5 @@
 ---
-title: MSFT\_InitiatorIdToVirtualDisk class
+title: MSFT_InitiatorIdToVirtualDisk Class
 description: Association between InitiatorId and VirtualDisk.
 ms.assetid: A0E84922-4D13-4934-8F00-2C2809062713
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

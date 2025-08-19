@@ -8,6 +8,7 @@ keywords:
 - private DEVMODE WDK print
 - public DEVMODE WDK print
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Providing DEVMODE Structure Additions

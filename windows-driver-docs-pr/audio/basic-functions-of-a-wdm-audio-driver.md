@@ -5,6 +5,7 @@ keywords:
 - WDM audio drivers WDK , about WDM audio drivers
 - audio drivers WDK , about audio drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Basic Functions of a WDM Audio Driver
@@ -15,7 +16,7 @@ ms.date: 04/20/2017
 
 A Microsoft Windows Driver Model (WDM) audio driver provides the following functionality:
 
--   The driver exposes all the types of input and output streams, and the number of instances of each stream type that it can support. The driver provides this information in the form of a set of pin factories and the number of pins that each factory can instantiate. For example, a simple audio device might input a single PCM audio stream and output a single PCM audio stream. The filter for this device contains two pin factories--one for the input stream an one for the output stream--and each pin factory supports only a single pin instance. If the adapter card contains only one of these devices, the adapter driver provides a filter factory containing only a single instance of a filter with these capabilities.
+-   The driver exposes all the types of input and output streams, and the number of instances of each stream type that it can support. The driver provides this information in the form of a set of pin factories and the number of pins that each factory can instantiate. For example, a simple audio device might input a single PCM audio stream and output a single PCM audio stream. The filter for this device contains two pin factories--one for the input stream and one for the output stream--and each pin factory supports only a single pin instance. If the adapter card contains only one of these devices, the adapter driver provides a filter factory containing only a single instance of a filter with these capabilities.
 
 -   The driver supports one or more property sets. For example, all audio drivers should support [KSPROPSETID\_Audio](./kspropsetid-audio.md), but some audio drivers might support additional property sets as well. Clients of the driver use property requests both to discover a filter's capabilities and to change the filter's configurable settings.
 

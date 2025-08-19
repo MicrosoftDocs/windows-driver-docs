@@ -2,6 +2,7 @@
 title: Querying a Packet's Extensible Switch Destination Port Data
 description: Querying a Packet's Extensible Switch Destination Port Data
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Querying a Packet's Extensible Switch Destination Port Data

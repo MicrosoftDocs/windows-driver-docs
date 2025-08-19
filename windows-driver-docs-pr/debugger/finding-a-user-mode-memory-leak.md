@@ -3,6 +3,7 @@ title: Finding a User-Mode Memory Leak
 description: Finding a User-Mode Memory Leak
 keywords: ["memory leak, user-mode", "memory leak, user-mode, overview"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Finding a User-Mode Memory Leak
@@ -17,8 +18,3 @@ The first technique determines which process is leaking memory. After you know w
  
 
  
-
-
-
-
-

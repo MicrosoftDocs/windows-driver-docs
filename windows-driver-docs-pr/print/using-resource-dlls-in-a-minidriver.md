@@ -1,10 +1,11 @@
 ---
-title: Use resource DLLs in a minidriver
+title: Use Resource DLLs in a Minidriver
 description: Provides information about how to use resource DLLs in a minidriver.
 keywords:
 - GPD files WDK Unidrv, resource DLLs
 - resource DLLs WDK Unidrv
 ms.date: 01/31/2023
+ms.topic: how-to
 ---
 
 # Use resource DLLs in a minidriver

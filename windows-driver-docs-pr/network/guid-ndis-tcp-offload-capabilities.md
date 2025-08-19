@@ -4,6 +4,7 @@ description: This topic describes the GUID_NDIS_TCP_OFFLOAD_CAPABILITIES GUID fo
 keywords:
 - GUID_NDIS_TCP_OFFLOAD_CAPABILITIES, WDK GUID_NDIS_TCP_OFFLOAD_CAPABILITIES network drivers
 ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # GUID_NDIS_TCP_OFFLOAD_CAPABILITIES

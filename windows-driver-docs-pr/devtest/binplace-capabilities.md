@@ -7,6 +7,7 @@ keywords:
 - splitting files
 - moving files WDK BinPlace
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # BinPlace Capabilities
@@ -42,12 +43,4 @@ When BinPlace is used on an executable file, and there is an associated symbol f
 For a large project, BinPlace can be used to organize a great number of files into the proper project directories. If you are building a large set of binary files and you are going to collect various subsets of the files into different packages, BinPlace can manage this process.
 
 For more information, see [BinPlace Destination Directories](binplace-destination-directories.md).
-
- 
-
- 
-
-
-
-
 

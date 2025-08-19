@@ -1,7 +1,8 @@
 ---
-title: DSM\_LB\_Operations WMI Class
+title: DSM_LB_Operations WMI Class
 description: DSM\_LB\_Operations WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # DSM\_LB\_Operations WMI Class

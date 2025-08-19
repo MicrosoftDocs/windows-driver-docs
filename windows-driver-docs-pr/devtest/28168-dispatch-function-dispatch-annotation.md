@@ -1,9 +1,10 @@
 ---
-title: C28168 warning
+title: C28168 Warning
 description: Warning C28168 The dispatch function does not have a _Dispatch_type_ annotation matching this dispatch table entry.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28168" 
+ms.topic: reference
 ---
 
 # C28168
@@ -40,7 +41,7 @@ pDo->MajorFunction[IRP_MJ_CREATE] = SampleCreate;
 
 In some circumstances, you might need to suppress this warning. There are some drivers, for example, filter drivers, that might register dispatch routines inside a loop, after they have registered others directly.
 
-```ManagedCPlusPlus
+```cpp
 DriverObject->MajorFunction[IRP_MJ_CREATE]         = DispatchCreate;
 DriverObject->MajorFunction[IRP_MJ_READ]           = DispatchRead;
 for (Index = 0; Index <= IRP_MJ_MAXIMUM_FUNCTION; Index++)
@@ -51,7 +52,7 @@ for (Index = 0; Index <= IRP_MJ_MAXIMUM_FUNCTION; Index++)
 
 In this example, the **DispatchPassIrp** function is correctly declared with the following annotations:
 
-```ManagedCPlusPlus
+```cpp
 __drv_dispatchType(IRP_MJ_CREATE_NAMED_PIPE)
 __drv_dispatchType(IRP_MJ_QUERY_INFORMATION)
 // .... 
@@ -68,12 +69,4 @@ The function 'DispatchPassIrp' does not have a _Dispatch_type_ annotation matchi
 ```
 
 This use of a loop in the dispatch table is common in some filter drivers. In this situation, the error message can be ignored, as this is a limitation of static analysis. The Code Analysis tool reports this error when the annotations on the function do not match the dispatch table entry slot. In this case, the Code Analysis tool reports an illegal assignment (that’s undone later). However, there is no way for a static tool to know that an illegal state will be undone later. If you know you are making an assignments this way, and fixing them later, you can suppress the warning.
-
- 
-
- 
-
-
-
-
 

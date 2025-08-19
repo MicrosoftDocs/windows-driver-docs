@@ -1,5 +1,5 @@
 ---
-title: GrantAccess method of the MSFT\_FileShare class
+title: GrantAccess Method of the MSFT_FileShare Class
 description: Grants to the specified user accounts the specified access to the file share.
 ms.assetid: 9303326E-062D-452A-9E3C-AD9F394A49D4
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

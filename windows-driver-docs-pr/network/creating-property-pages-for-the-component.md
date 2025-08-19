@@ -8,6 +8,7 @@ keywords:
 - properties WDK networking
 - property-page callback functions WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating Property Pages for the Component

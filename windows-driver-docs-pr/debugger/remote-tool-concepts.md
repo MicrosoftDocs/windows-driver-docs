@@ -3,6 +3,7 @@ title: Remote Tool Concepts
 description: Remote Tool Concepts
 keywords: ["Remote Tool, Remote Tool Concepts"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Remote Tool Concepts
@@ -42,8 +43,3 @@ For help with the Remote Server query command, see [**Remote Server Query Comman
  
 
  
-
-
-
-
-

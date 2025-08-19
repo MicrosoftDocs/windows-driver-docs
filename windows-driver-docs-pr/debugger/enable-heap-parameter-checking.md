@@ -1,8 +1,9 @@
 ---
-title: Enable heap parameter checking
+title: Enable Heap Parameter Checking
 description: Enable heap parameter checking
 keywords: ["Enable heap parameter checking (global flag)"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Enable heap parameter checking
@@ -47,8 +48,3 @@ The **Enable heap parameter checking** flag verifies selected aspects of the hea
  
 
  
-
-
-
-
-

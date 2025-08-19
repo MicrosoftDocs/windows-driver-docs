@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPA\_UPLOAD\_ITEM\_SIZE
-description: The WIA\_IPA\_UPLOAD\_ITEM\_SIZE property is used by applications to specify the number of bytes to upload for an item. The application creates and maintains this property.
+title: WIA_IPA_UPLOAD_ITEM_SIZE
+description: The WIA_IPA_UPLOAD_ITEM_SIZE property is used by applications to specify the number of bytes to upload for an item. The application creates and maintains this property.
 keywords: ["WIA_IPA_UPLOAD_ITEM_SIZE Imaging Devices"]
 topic_type:
 - apiref
@@ -11,44 +11,19 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 05/04/2023
 ---
 
-# WIA\_IPA\_UPLOAD\_ITEM\_SIZE
+# WIA_IPA_UPLOAD_ITEM_SIZE
 
+The WIA_IPA_UPLOAD_ITEM_SIZE property is used by applications to specify the number of bytes to upload for an item. The application creates and maintains this property.
 
-The WIA\_IPA\_UPLOAD\_ITEM\_SIZE property is used by applications to specify the number of bytes to upload for an item. The application creates and maintains this property.
+Property Type: VT_I4
 
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read/write
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Available on Windows Vista and later operating systems.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

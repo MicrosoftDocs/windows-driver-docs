@@ -3,6 +3,7 @@ title: Using the Windows Performance Toolkit (WPT) with WDF
 description: Starting in Windows 10, you can use the Windows Performance Toolkit (WPT) to view performance data for a KMDF or UMDF 2 driver.
 Search.SourceType: Video
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Using the Windows Performance Toolkit (WPT) with WDF
@@ -29,7 +30,8 @@ The WPT is part of the Windows Assessment and Deployment Kit (ADK). You can inst
 The WPT consists of two separate tools: Windows Performance Recorder and Windows Performance Analyzer (WPA). In this topic, we use WPR to record a trace, and then WPA to view the trace in a configurable GUI format.
 
 To learn how to use the Windows Performance Toolkit to measure the performance of a WDF driver, either watch the following video, or read the steps below the video. The video and the steps cover the same procedure.
->[!VIDEO https://www.microsoft.com/videoplayer/embed/fc37f465-9456-45d7-bbe9-6f7d44342563]
+
+>[!VIDEO 7c679c97-e011-4359-aa65-67ee605c3cd4]
 
 **Recording and viewing an event log for a WDF driver**
 
@@ -71,7 +73,7 @@ To capture another trace for the same driver, use Wpr.exe to start and stop a ne
 
 To start analyzing the driver's performance, find the **Graph Explorer** on the left, open the **Computation** category, and then drag the UMDF or KMDF graph to the main work area, under the **Analysis** tab. This screenshot shows the **Graph Explorer** pane:
 
-![graph explorer in wpa.](images/WpaUMDFIoCapture-LeftPane.png)
+:::image type="content" source="images/WpaUMDFIoCapture-LeftPane.png" alt-text="Screenshot of the Graph Explorer pane in Windows Performance Analyzer.":::
 
 There is a dedicated table for UMDF and another for KMDF drivers.
 
@@ -85,7 +87,7 @@ WPT can display WDF I/O request completion throughput in two ways:
 
 The following screenshot shows sample summary graphs and tables for CPU and UMDF I/O request performance. In the UMDF I/O Request Completion Rate graph, the number of requests per second is shown on the y axis.
 
-![Screenshot that shows sample summary graphs for "U M D F I/O Requests" and "C P U Usage (Sampled)".](images/WpaUMDFIoCapture-Narrow.PNG)
+:::image type="content" source="images/WpaUMDFIoCapture-Narrow.PNG" alt-text="Screenshot of sample summary graphs for UMDF I/O Requests and CPU Usage (Sampled).":::
 
 In the [summary table](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448109(v=win.10)), most columns are self-explanatory, but there are a couple things to note. The WdfDevice column contains the WDFDEVICE handle associated with the I/O request. The ActivityID contains a unique identifier for the I/O request. The framework creates this identifier when it delivers an I/O request to the driver. If an activity identifier is already associated with the corresponding IRP, the framework uses that identifier. For more information, see [Using Activity Identifiers](using-activity-identifiers.md).
 
@@ -96,7 +98,7 @@ Entry time is the trace timestamp when the framework delivered the request to th
 
 Here's a similar screenshot showing I/O request info for a KMDF driver.
 
-![graph for umdf i/o request performance.](images/WpaKMDFIoCapture-Narrow.PNG)
+:::image type="content" source="images/WpaKMDFIoCapture-Narrow.PNG" alt-text="Screenshot of a graph for KMDF I/O request performance.":::
 
 ## PnP Power callback graph and summary table
 
@@ -105,7 +107,7 @@ WPT can also display the processing time of each PnP and power callback. The fol
 
 The WdfDevice column contains the WDFDEVICE handle associated with the callback. The ActivityID contains a unique identifier for the callback instance.
 
-![pnp power callback graph.](images/wpa-fx2-pnppwr.PNG)
+:::image type="content" source="images/wpa-fx2-pnppwr.PNG" alt-text="Screenshot of a PnP Power callback graph for KMDF and UMDF drivers.":::
 
 ## Which calls are instrumented?
 

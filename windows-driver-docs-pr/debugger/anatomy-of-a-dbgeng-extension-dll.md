@@ -3,6 +3,7 @@ title: Anatomy of a DbgEng Extension DLL
 description: Anatomy of a DbgEng Extension DLL
 keywords: ["DbgEng Extensions, DLL anatomy"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Anatomy of a DbgEng Extension DLL
@@ -47,7 +48,7 @@ When an extension DLL is loaded, the callback functions are called by the engine
 
 3.  If exported, **KnownStructOutput** is called to request a list of structures the DLL knows how to print on a single line.
 
-See [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md) for information about how to use the debugger to load and unload an extension DLL, and see [Using Debugger Extension Commands](using-debugger-extension-commands.md) for information about executing an extension command.
+See [Loading Debugger Extension DLLs](../debuggercmds/loading-debugger-extension-dlls.md) for information about how to use the debugger to load and unload an extension DLL, and see [Using Debugger Extension Commands](../debuggercmds/using-debugger-extension-commands.md) for information about executing an extension command.
 
 The debugger engine will place a **try / except** block around a call to an extension DLL. This protects the engine from some types of bugs in the extension code; but, since the extension calls are executed in the same thread as the engine, they can still cause it to crash.
 

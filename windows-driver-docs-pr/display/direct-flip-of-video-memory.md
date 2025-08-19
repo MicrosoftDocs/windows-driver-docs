@@ -1,10 +1,11 @@
 ---
-title: Direct flip of video memory
+title: Direct Flip of Video Memory
 description: The direct flip feature allows for special optimizations to the composition model to reduce power consumption.
 keywords:
 - direct flip
 - DirectFlip
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Direct flip of video memory

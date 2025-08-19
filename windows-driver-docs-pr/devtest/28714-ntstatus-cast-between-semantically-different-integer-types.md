@@ -1,9 +1,10 @@
 ---
-title: C28714 warning
+title: C28714 Warning
 description: Warning C28714 Cast between semantically different integer types.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28714"
+ms.topic: reference
 ---
 
 # C28714
@@ -16,12 +17,4 @@ This warning indicates that an **NTSTATUS** value is being explicitly cast to a 
 In most cases, the **NT\_SUCCESS** macro should be used to test the value of an **NTSTATUS**. This macro returns **true** if the returned status value is neither a warning nor an error code. If a function returns a Boolean to indicate its failure/success, it should explicitly return the appropriate Boolean type rather than depend on casting of **NTSTATUS** to a Boolean type.
 
 Also, occasionally a program may attempt to reuse a Boolean local variable to store **NTSTATUS** values. This practice is often error-prone; it is much safer (and likely more efficient) to use a separate **NTSTATUS** variable.
-
- 
-
- 
-
-
-
-
 

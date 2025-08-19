@@ -1,7 +1,8 @@
 ---
-title: Updating Your Package-Aware Driver's INF
+title: Updating your Package-Aware Driver's INF
 description: Updating Your Package-Aware Driver's INF
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # Updating Your Package-Aware Driver's INF

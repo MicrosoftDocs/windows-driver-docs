@@ -3,6 +3,7 @@ title: Kill Tool
 description: The Kill tool, kill.exe, terminates one or more processes and all of their threads. This tool works only on processes running on the local computer.
 keywords: kill Tool, Kill.exe, kill.exe
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Kill Tool
@@ -27,7 +28,7 @@ Forces the termination of the process without prompting the user for confirmatio
 <span id="_______PID______"></span><span id="_______pid______"></span> *PID*
 Specifies the process identifier (PID) of the task to be terminated.
 
-To find the PID for a task, use TaskList in Microsoft Windows XP and later or [TList](tlist.md) in Windows 2000.
+To find the PID for a task, use TaskList.
 
 <span id="_______Pattern_"></span><span id="_______pattern_"></span><span id="_______PATTERN_"></span> <em>Pattern</em>**\***  
 Specifies all or part of the name of a task or window. The Kill tool terminates all processes whose process names or window names match the pattern. The asterisk is required.

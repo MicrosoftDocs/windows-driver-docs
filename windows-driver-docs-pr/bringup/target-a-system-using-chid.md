@@ -1,14 +1,15 @@
 ---
-title: Target a system using CHID targeting
+title: Target a System Using CHID Targeting
 description: Provides information about how to target a system using CHID targeting.
 ms.date: 03/23/2023
+ms.topic: concept-article
 ---
 
 # Target a system using CHID targeting
 
 Computer Hardware IDs (CHID)s are created by the OEM/ODM running either a Windows Developer Kit(WDK) tool (ComputerHardwareIDs.exe) or the Audit tool available to OEMs through the [Microsoft OEM download site](https://www.microsoftoem.com) (login required).
 
-The CHIDs are Computer Hardware IDs and Windows makes use of these IDs in varying levels of specificity for targeting purposes. Once the correct driver is delivered to the system, then normal PNP ranking takes over as described in [How Windows Ranks Drivers](../install/how-setup-ranks-drivers--windows-vista-and-later-.md), and the vendor can build a strategy around this that makes sense for their product line.
+The CHIDs are Computer Hardware IDs and Windows makes use of these IDs in varying levels of specificity for targeting purposes. Once the correct driver is delivered to the system, then normal PNP ranking takes over as described in [How Windows Ranks Drivers](../install/how-windows-ranks-driver-packages.md), and the vendor can build a strategy around this that makes sense for their product line.
 
 The OEM/ODM needs to ensure all appropriate SMBIOS fields are populated with data, based on the information provided in the [SMBIOS](smbios.md) guidance and following the [DMTF SMBIOS specification](https://www.dmtf.org/standards/smbios) to ensure CHIDs are individual and unique.
 
@@ -16,7 +17,7 @@ Microsoft is now requiring that a Firmware Update Package include Computer Hardw
 
 ## Related resources
 
-[Partner Center](../dashboard/index.yml)
+[Partner Center](../dashboard/index.md)
 
 [Specifying Hardware IDs for a Computer](../install/specifying-hardware-ids-for-a-computer.md)
 

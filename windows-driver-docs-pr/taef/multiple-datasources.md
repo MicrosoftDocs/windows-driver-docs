@@ -2,6 +2,7 @@
 title: Multiple DataSources
 description: Multiple DataSources
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Multiple DataSources
@@ -90,7 +91,7 @@ Just to re-iterate: **the test method will be run once for each n-way combinator
 ## <span id="Constraints_that_apply_while_specifying_Multiple_DataSources"></span><span id="constraints_that_apply_while_specifying_multiple_datasources"></span><span id="CONSTRAINTS_THAT_APPLY_WHILE_SPECIFYING_MULTIPLE_DATASOURCES"></span>Constraints that apply while specifying Multiple DataSources
 
 
-The constraints are applicable only when you want to specify a Table based DataSource in the multiple DataSource specifications. **Table DataSource** must be specified as Table:&lt;reative path to XML file&gt;\#&lt;TableId&gt;. If TAEF discovers that "TableId" is provided as a separate metadata, it will assume that the DataSource is a single Table-based DataSource and proceed.
+The constraints are applicable only when you want to specify a Table based DataSource in the multiple DataSource specifications. **Table DataSource** must be specified as Table:&lt;relative path to XML file&gt;\#&lt;TableId&gt;. If TAEF discovers that "TableId" is provided as a separate metadata, it will assume that the DataSource is a single Table-based DataSource and proceed.
 
  
 

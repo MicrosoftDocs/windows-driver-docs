@@ -2,6 +2,7 @@
 title: Identifying Device Functions in MFPs
 description: Identifying Device Functions in MFPs
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Identifying Device Functions in MFPs

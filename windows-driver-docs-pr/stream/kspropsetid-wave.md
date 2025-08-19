@@ -1,7 +1,8 @@
 ---
-title: KSPROPSETID\_Wave
+title: KSPROPSETID_Wave
 description: KSPROPSETID\_Wave
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_Wave

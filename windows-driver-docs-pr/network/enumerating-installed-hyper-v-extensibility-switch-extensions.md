@@ -2,6 +2,7 @@
 title: Enumerating Hyper-V Extensible Switch Extensions
 description: Enumerating Hyper-V Extensible Switch Extensions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Enumerating Hyper-V Extensible Switch Extensions

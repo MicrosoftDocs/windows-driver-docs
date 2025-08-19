@@ -1,7 +1,8 @@
 ---
-title: Device transform manager events
+title: Device Transform Manager Events
 description: This section contains information about the Device Transform Manager events.
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # Device transform manager events

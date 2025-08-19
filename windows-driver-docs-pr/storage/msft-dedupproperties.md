@@ -1,5 +1,5 @@
 ---
-title: MSFT\_DedupProperties class
+title: MSFT_DedupProperties Class
 description: Volume deduplication properties.
 ms.assetid: BE95BD75-F45E-494B-9091-558815543801
 keywords:
@@ -22,7 +22,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

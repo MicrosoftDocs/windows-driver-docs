@@ -2,6 +2,7 @@
 title: Add UI to a WIA Minidriver
 description: Add UI to a WIA Minidriver
 ms.date: 03/27/2023
+ms.topic: concept-article
 ---
 
 # Add UI to a WIA Minidriver

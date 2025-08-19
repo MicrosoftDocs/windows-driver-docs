@@ -1,7 +1,8 @@
 ---
-title: CreateVirtualPortExUsingDHCHAP method (Windows Drivers)
+title: CreateVirtualPortExUsingDHCHAP Method (Windows Drivers)
 description: Learn more about the CreateVirtualPortExUsingDHCHAP method.
 ms.date: 10/14/2022
+ms.topic: reference
 ---
 
 # CreateVirtualPortExUsingDHCHAP method

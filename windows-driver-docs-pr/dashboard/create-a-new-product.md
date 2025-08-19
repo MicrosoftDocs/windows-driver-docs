@@ -2,7 +2,7 @@
 title: Create a new product
 description: Use this method in the Microsoft Hardware API to create a new hardware product.
 ms.date: 04/05/2018
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Create a new product
@@ -26,7 +26,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Header | Type | Description |
 |:--|:--|:--|
-| Authorization | string | Required. The Azure AD access token in the form **Bearer** \<token\>. |
+| Authorization | string | Required. The Microsoft Entra ID access token in the form **Bearer** \<token\>. |
 | accept | string | Optional. Specifies the type of content. Allowed value is “application/json” |
 
 

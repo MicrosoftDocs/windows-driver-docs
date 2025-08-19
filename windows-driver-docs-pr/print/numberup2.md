@@ -1,7 +1,8 @@
 ---
-title: NumberUp property
+title: NumberUp Property
 description: Provides information about how many logical pages should be placed on a single page of media.
 ms.date: 09/08/2021
+ms.topic: reference
 ---
 
 # NumberUp property

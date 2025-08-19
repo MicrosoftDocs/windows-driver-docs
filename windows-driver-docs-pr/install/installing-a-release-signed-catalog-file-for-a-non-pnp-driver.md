@@ -2,6 +2,7 @@
 title: Installing a Release-Signed Catalog File for a Non-PnP Driver
 description: Installing a Release-Signed Catalog File for a Non-PnP Driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Installing a Release-Signed Catalog File for a Non-PnP Driver
@@ -15,7 +16,7 @@ To install a catalog file for a non-PnP driver that is released to the public, a
 
  
 
-**Tip**   Using embedded signatures is generally easier and more efficient than by using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](/windows-hardware/drivers).
+**Tip**   Using embedded signatures is generally easier and more efficient than by using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Introduction to Test-Signing](/windows-hardware/drivers/install/introduction-to-test-signing).
 
  
 

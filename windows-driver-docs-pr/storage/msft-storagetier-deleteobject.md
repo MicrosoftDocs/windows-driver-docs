@@ -1,5 +1,5 @@
 ---
-title: DeleteObject method of the MSFT\_StorageTier class
+title: DeleteObject Method of the MSFT_StorageTier Class
 description: Deletes the storage tier.
 ms.assetid: 4F78C506-173D-4747-BC81-C18D9AA4BF72
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

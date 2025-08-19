@@ -1,7 +1,8 @@
 ---
-title: How to send a USB control transfer
+title: How to Send a USB Control Transfer
 description: This article explains the structure of a control transfer and how a client driver should send a control request to the device.
-ms.date: 03/02/2023
+ms.date: 01/17/2024
+ms.topic: how-to
 ---
 
 # How to send a USB control transfer
@@ -158,7 +159,7 @@ The host starts the transaction with an OUT token packet (\#481). The purpose of
 
 - [Kernel-Mode Driver Framework](../wdf/index.md)
 - [User- Mode Driver Framework](../wdf/index.md)
-- [WinUSB](winusb.md)
+- [Introduction to WinUSB for Developers](introduction-to-winusb-for-developers.md)
 
 ## Prerequisites
 
@@ -188,7 +189,7 @@ You can obtain all that information from the official USB specification.
 
 If you are writing a UMDF driver, get the header file, Usb_hw.h from the UMDF Sample Driver for OSR USB Fx2 Learning Kit. This header file contains useful macros and structure for formatting the setup packet for the control transfer.
 
-All UMDF drivers must communicate with a kernel-mode driver in order to send and receive data from devices. For a USB UMDF driver, the kernel-mode driver is always the Microsoft-provided driver [WinUSB](winusb.md) (Winusb.sys).
+All UMDF drivers must communicate with a kernel-mode driver in order to send and receive data from devices. For a USB UMDF driver, the kernel-mode driver is always the Microsoft-provided driver [WinUSB](introduction-to-winusb-for-developers.md) (Winusb.sys).
 
 Whenever a UMDF driver makes a request for the USB driver stack, the Windows I/O manager sends the request to WinUSB. After receiving the request, WinUSB either processes the request or forwards it to the USB driver stack.
 
@@ -221,7 +222,7 @@ Certain types of control requests are not exposed through WDF. For those request
 
 Use the helper macros and structure defined in usb_hw.h. This header is included with the UMDF Sample Driver for OSR USB Fx2 Learning Kit.
 
-Use this table to determine the best way to send control requests to the USB driver stack. If you are unable to view this table, see the table in [this article](/windows-hardware/drivers/ddi/index).
+Use this table to determine the best way to send control requests to the USB driver stack. 
 
 | If you want to send a control request to... | For a KMDF driver... | For a UMDF driver... | For a WDM driver, build a URB structure (Helper routine) |
 |---|---|---|---|

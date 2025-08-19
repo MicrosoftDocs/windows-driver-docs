@@ -6,6 +6,7 @@ keywords:
 - trace message control files WDK
 - TMC files WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Tracepdb Overview
@@ -30,12 +31,4 @@ On systems prior to Windows Vista, Tracepdb requires mspdb70.dll and msvcr70.dll
 On systems prior to Windows Vista, you must copy the Dbghelp.dll file from the bin\\&lt;*Platform*&gt; subdirectory of the Windows Driver Kit (WDK) (where &lt;*Platform*&gt;is either x86, amd64, or ia64) into the directory in which Tracefmt.exe is located.
 
 For more information about event tracing, see the Windows SDK documentation. For information about using event tracing in kernel-mode drivers and user-mode applications, see [WPP Software Tracing](wpp-software-tracing.md).
-
- 
-
- 
-
-
-
-
 

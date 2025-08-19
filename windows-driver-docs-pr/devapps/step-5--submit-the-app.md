@@ -1,10 +1,14 @@
 ---
-title: Step 5 Submit the Microsoft Store device app
+title: Step 5 Submit the Microsoft Store Device App
 description: This topic describes how to submit your UWP device app to the Microsoft Store dashboard.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
+ms.topic: how-to
 ---
 
 # Step 5: Submit the Microsoft Store device app
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 ![device app workflow, step 5.](images/5-device-app-workflow.png)
 
@@ -68,4 +72,4 @@ The Microsoft Store dashboard validates the Microsoft Store device app package a
 
 ## Next step
 
-[Step 6: Submit device metadata](step-6--submit-device-metadata.md)
+- [Step 6: Submit device metadata](step-6--submit-device-metadata.md)

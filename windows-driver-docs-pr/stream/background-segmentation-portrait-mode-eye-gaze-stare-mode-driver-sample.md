@@ -1,7 +1,8 @@
 ---
-title: Background segmentation shallow focus mode and eye gaze stare mode driver sample
-description: Provides an example implementation of background segmentation shallow focus mode and eye gaze stare mode controls in a camera driver.
+title: Background Segmentation Shallow Focus Mode and Eye Gaze Stare Mode Driver Sample
+description: An example implementation of background segmentation shallow focus mode and eye gaze stare mode controls in a camera driver.
 ms.date: 05/16/2022
+ms.topic: concept-article
 ---
 
 # Background segmentation shallow focus mode and eye gaze stare mode driver sample
@@ -11,7 +12,7 @@ This is an example implementation of background segmentation shallow focus mode 
 These controls are typically implemented in C++, as part of the user mode extension of an Avstream camera driver in Device MFT.
 
 > [!NOTE]
-> The [EyeGazeAndBackgroundSegmentation](https://github.com/microsoft/Windows-Camera/tree/master/Samples/ExtendedControlAndMetadata/EyeGazeAndBackgroundSegmentation) C# UWP application sample on GitHub previews a camera and interacts with its extended controls.
+> The [WinRT_ExtendedControlAndMetadataSample](https://github.com/microsoft/Windows-Camera/tree/master/Samples/ExtendedControlAndMetadata/WinRT_ExtendedControlAndMetadataSample) C# UWP application sample on GitHub previews a camera and interacts with its extended controls.
 
 ## SampleMFT.h
 

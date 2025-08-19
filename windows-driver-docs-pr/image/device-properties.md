@@ -1,7 +1,8 @@
 ---
-title: Imaging device properties
+title: Imaging Device Properties
 description: Imaging device properties
 ms.date: 07/06/2020
+ms.topic: concept-article
 ---
 
 # Imaging device properties

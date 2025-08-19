@@ -18,7 +18,7 @@ api_type:
 The REFERENCE\_BY\_POINTER bug check has a value of 0x00000018. This indicates that the reference count of an object is illegal for the current state of the object.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## REFERENCE\_BY\_POINTER Parameters
@@ -67,7 +67,7 @@ Drivers must match calls to the routines that increase (*reference*) and decreas
 
 Make sure that the driver matches calls to the routines that increase and decrease the reference count of the object. Make sure that your driver does not make extra calls to routines that dereference the object (see Parameter 2).
 
-You can use a debugger to help analyze this problem. For more information, see [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md). The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+You can use a debugger to help analyze this problem. For more information, see [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md). The [**!analyze**](../debuggercmds/-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 To find the handle and pointer count on the object, use the **!object** debugger command.
 
@@ -85,7 +85,7 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   Confirm that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about required hardware at [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications).
 
--   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
+-   For additional general troubleshooting information, see [**Analyze Bug Check Blue Screen Data**](blue-screen-data.md).
 
  
 

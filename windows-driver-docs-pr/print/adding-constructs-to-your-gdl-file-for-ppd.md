@@ -1,11 +1,12 @@
 ---
-title: Adding Constructs to Your GDL File for PPD
+title: Adding Constructs to your GDL File for PPD
 description: Adding Constructs to Your GDL File for PPD
 keywords:
 - constructs WDK printer autoconfig
 - PPD files WDK autoconfiguration , constructs
 - in-box autoconfiguration support WDK printer , constructs
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Adding Constructs to Your GDL File for PPD

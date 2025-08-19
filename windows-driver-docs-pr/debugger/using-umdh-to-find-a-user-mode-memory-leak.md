@@ -3,6 +3,7 @@ title: Using UMDH to Find a User-Mode Memory Leak
 description: Using UMDH to Find a User-Mode Memory Leak
 keywords: ["memory leak, user-mode, UMDH", "UMDH, memory leak detection"]
 ms.date: 08/16/2018
+ms.topic: how-to
 ---
 
 # Using UMDH to Find a User-Mode Memory Leak
@@ -111,8 +112,3 @@ After making these preparations, you can use UMDH to capture information about t
  
 
  
-
-
-
-
-

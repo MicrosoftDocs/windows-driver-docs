@@ -5,6 +5,7 @@ keywords:
 - trace sessions WDK , Global Logger
 - Global Logger trace session WDK , examples
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 13: Creating a Global Logger Session
@@ -44,12 +45,4 @@ tracelog -remove GlobalLogger
 This command deletes any registry entries for optional parameters (none, in this case). It leaves the **GlobalLogger** subkey and the **Start** entry, but it sets the value of **Start** to 0 (do not start).
 
 The **tracelog -remove** command is not required. You can leave the entries in the registry and use them the next time you run a Global Logger trace session. If you start the session with different parameters, Tracelog replaces the values of the registry entries with the values specified in the **tracelog -start** command.
-
- 
-
- 
-
-
-
-
 

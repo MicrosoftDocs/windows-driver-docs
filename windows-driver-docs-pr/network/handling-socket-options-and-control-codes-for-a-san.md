@@ -7,6 +7,7 @@ keywords:
 - retrieving SAN socket options
 - SAN service providers WDK , status information
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling Socket Options and Control Codes for a SAN

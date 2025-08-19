@@ -5,6 +5,7 @@ keywords:
 - biometric drivers WDK , managing queues
 - managing queues WDK biometric
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Managing Queues in a WBDI Driver
@@ -12,7 +13,7 @@ ms.date: 03/03/2023
 
 WBDI drivers should create at least one queue to handle multiple concurrent requests from the service. If you are using UMDF, you can take advantage of its queue management support.
 
-In [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/main/biometrics/driver), the CBiometricIoQueue class implements the I/O queue interface.
+In [WudfBioUsbSample](https://github.com/microsoft/Windows-driver-samples/releases/tag/win11-22h2), the CBiometricIoQueue class implements the I/O queue interface.
 
 In the method `CBiometricIoQueue::Initialize`, specifically, the driver queries the owning CBiometricIoQueue object for a pointer to the [IQueueCallbackDeviceIoControl](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iqueuecallbackdeviceiocontrol) interface that the framework uses to determine the event callback functions that the driver subscribes to on the queue:
 

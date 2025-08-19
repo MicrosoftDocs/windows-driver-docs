@@ -2,6 +2,7 @@
 title: Declaring Functions by Using Function Role Types for NDIS Drivers
 description: Declaring Functions by Using Function Role Types for NDIS Drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Declaring Functions by Using Function Role Types for NDIS Drivers
@@ -68,7 +69,7 @@ NDIS_IO_WORKITEM MPQueuedWorkItem;
 
 As required in the C programming language, the parameter types that you use in the function definition must match the parameter types of the function prototype, or in this case, the function role type. SDV depends upon the function signatures for analysis and ignores functions whose signatures do not match.
 
-For example, you should declare an [*MiniportInterrupt*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_isr) function using the MINIPORT\_ISR function role type:
+For example, you should declare a [*MiniportInterrupt*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_isr) function using the MINIPORT\_ISR function role type:
 
 ```
 MINIPORT_ISR myMPIsr;

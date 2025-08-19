@@ -1,9 +1,10 @@
 ---
-title: ConvertDevModeToPrintTicket overview
+title: ConvertDevModeToPrintTicket Overview
 description: The ConvertDevModeToPrintTicket method is called for each print driver plug-in that was installed.
 keywords:
 - ConvertDevModeToPrintTicket
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # ConvertDevModeToPrintTicket overview

@@ -6,6 +6,7 @@ keywords:
 - .ctl files
 - ctl files
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating a Trace Session with a CTL File
@@ -55,12 +56,4 @@ When creating a trace session with a control GUID, you can use the **Tracing Fla
 If the TMC file is not available, you can set the trace flags and level for the provider manually in the **Advanced Trace Session Options** dialog box. For instructions, see [Setting Advanced Trace Session Options](setting-advanced-trace-session-options.md).
 
 For information about specifying TMF files, see Select TMF Files and Set TMF Search Path.
-
- 
-
- 
-
-
-
-
 

@@ -6,6 +6,7 @@ keywords:
 - nodes WDK BDA
 - IP data processing WDK BDA
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Control Nodes for Processing IP Data

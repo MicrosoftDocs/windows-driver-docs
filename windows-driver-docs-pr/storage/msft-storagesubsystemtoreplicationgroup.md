@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToReplicationGroup class
+title: MSFT_StorageSubSystemToReplicationGroup Class
 description: Association between a MSFT\_StorageSubSystem and MSFT\_ReplicationGroup.
 ms.assetid: FBADE666-2039-4C76-ACBC-E5804EFFF11C
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

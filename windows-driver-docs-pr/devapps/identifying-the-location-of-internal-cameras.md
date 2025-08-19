@@ -1,10 +1,14 @@
 ---
-title: Identifying the location of internal cameras
+title: Identifying the Location of Internal Cameras
 description: This topic provides info about supporting internal cameras on systems in Windows 8.1.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
+ms.topic: how-to
 ---
 
 # Identifying the location of internal cameras (UWP device apps)
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 This topic provides info about supporting internal cameras on systems in Windows 8.1. It describes how to identify the physical location of built-in cameras so that they work correctly with UWP apps. It also describes how to set the Model ID so that the camera works with UWP device apps. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
@@ -160,7 +164,7 @@ The PLD_Panel value provided in ACPI tables enables cameras to be distinguished 
 > [!NOTE]
 > The PLD_Panel setting in the registry key is optional. Windows determines the camera's physical location by the settings in the ACPI table.
 
-The PLD_Panel registry value is defined as _PLD (Physical Device Location) in the ACPI specification. This value, which indicates the camera's physical location in its enclosure, must be one of the following.
+The PLD_Panel registry value is defined as_PLD (Physical Device Location) in the ACPI specification. This value, which indicates the camera's physical location in its enclosure, must be one of the following.
 
 | Value | Description |
 |--|--|
@@ -209,4 +213,4 @@ Both the Microsoft Store device app and the device metadata package can be prein
 
 ## Related topics
 
-[UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md)
+- [UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md)

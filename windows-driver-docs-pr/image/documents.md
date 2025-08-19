@@ -1,5 +1,5 @@
 ---
-title: Documents element
+title: Documents Element
 description: The required Documents element contains the actual scan characteristics that are used during image acquisition, plus a collection of all Document elements that the scan job contains.
 keywords: ["Documents element Imaging Devices"]
 topic_type:

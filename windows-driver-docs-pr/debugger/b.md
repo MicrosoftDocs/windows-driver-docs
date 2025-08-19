@@ -2,6 +2,7 @@
 title: B (Windows Debugger Glossary)
 description: Glossary page - B
 ms.date: 11/28/2017
+ms.topic: glossary
 ---
 
 # B
@@ -45,8 +46,3 @@ The hexadecimal code indicating a specific type of bug check .
  
 
  
-
-
-
-
-

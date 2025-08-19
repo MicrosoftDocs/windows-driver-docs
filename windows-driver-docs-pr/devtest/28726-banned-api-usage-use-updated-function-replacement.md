@@ -1,8 +1,9 @@
 ---
-title: C28726 warning
+title: C28726 Warning
 description: Warning C28726 Banned API Usage.
 ms.date: 08/22/2022
 f1_keywords: ["C28726", "BANNED_API_USAGEL2", "__WARNING_BANNED_API_USAGEL2"]
+ms.topic: reference
 ---
 # Warning C28726
 

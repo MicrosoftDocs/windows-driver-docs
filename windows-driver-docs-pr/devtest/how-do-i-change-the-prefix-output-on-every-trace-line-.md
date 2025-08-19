@@ -1,7 +1,8 @@
 ---
-title: How do I change the prefix output on every trace line
+title: How do I Change the Prefix Output on Every Trace Line
 description: How do I change the prefix output on every trace line
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How do I change the prefix output on every trace line?

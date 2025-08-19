@@ -1,7 +1,8 @@
 ---
-title: I2C controller tests in MITT
+title: I2C Controller Tests in MITT
 description: I2C test modules that are included in the MITT software package can be used to test data transfers for an I2C controller and its driver. The MITT board acts as a client device connected to the I2C bus.
-ms.date: 01/13/2023
+ms.date: 01/12/2024
+ms.topic: how-to
 ---
 
 # I2C controller tests in MITT
@@ -29,7 +30,7 @@ I<sup>2</sup>C test modules that are included in the MITT software package can b
 2. Use the jumper on to the I<sup>2</sup>C header (above **JB1**) to select the correct I<sup>2</sup>C voltage between 3.3V and 1.8V. In this image, 1.8V is selected.
 3. Connect SCL, SDA, and GND pins on the adapter board to the exposed SCL, SDA, and GND lines on the system under test.
 
-    :::image type="content" source="images/i2c-power.png" alt-text="Picure of the I2C adapter.":::
+    :::image type="content" source="images/i2c-power.png" alt-text="Picture of the I2C adapter.":::
 
 4. Use the jumper on the I2C adapter board to select the correct I2C voltage between 3.3V and 1.8V. In this image, the 1.8V is selected.
 5. On the MITT board, set switch **SW0** to the high position. This position enables the default mode for I<sup>2</sup>C when the MITT is powered.

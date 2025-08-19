@@ -9,6 +9,7 @@ keywords:
 - USB I/O targets WDK UMDF
 - I/O targets WDK UMDF , USB
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # USB I/O Targets in UMDF

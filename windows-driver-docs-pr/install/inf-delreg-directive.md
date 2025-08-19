@@ -1,5 +1,5 @@
 ---
-title: INF DelReg directive
+title: INF DelReg Directive
 description: A DelReg directive references one or more INF-writer-defined sections describing keys and/or value entries to be removed from the registry.
 keywords:
 - INF DelReg Directive Device and Driver Installation
@@ -16,7 +16,7 @@ ms.date: 07/08/2022
 # INF DelReg directive
 
 > [!CAUTION]
-> If you are building a universal or Windows Driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md) and [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).
+> If you are building a universal or Windows Driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md) and [Get started developing Windows drivers](../develop/get-started-developing-windows-drivers.md).
 
 A **DelReg** directive references one or more INF-writer-defined sections describing keys and/or value entries to be removed from the registry.
 

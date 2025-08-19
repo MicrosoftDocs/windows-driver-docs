@@ -7,6 +7,7 @@ keywords:
 - DriverEntry WDK file systems
 - global initialization WDK file system minifilter
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Writing a DriverEntry Routine for a Minifilter Driver

@@ -1,5 +1,5 @@
 ---
-title: Security checks on IRP_MJ_DIRECTORY_CONTROL
+title: Security Checks on IRP_MJ_DIRECTORY_CONTROL
 description: Describes how a file system does security checks on IRP_MJ_DIRECTORY_CONTROL
 keywords:
 - IRP_MJ_DIRECTORY_CONTROL
@@ -7,6 +7,7 @@ keywords:
 - security checks WDK file systems , IRP_MJ_DIRECTORY_CONTROL
 - directory controls WDK file systems
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Security checks on IRP_MJ_DIRECTORY_CONTROL

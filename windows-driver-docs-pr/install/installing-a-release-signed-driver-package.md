@@ -2,6 +2,7 @@
 title: Installing a Release-Signed Driver Package
 description: Installing a Release-Signed Driver Package
 ms.date: 02/11/2022
+ms.topic: concept-article
 ---
 
 # Installing a Release-Signed Driver Package

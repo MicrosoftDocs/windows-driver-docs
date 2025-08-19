@@ -1,5 +1,5 @@
 ---
-title: Synchronizing Two or More Streams
+title: Synchronizing Two Or More Streams
 description: Synchronizing Two or More Streams
 keywords:
 - HD Audio, synchronizing streams
@@ -7,6 +7,7 @@ keywords:
 - synchronizing streams WDK audio
 - stream synchronization WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Synchronizing Two or More Streams

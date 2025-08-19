@@ -3,6 +3,7 @@ title: Standardized INF keywords for VMMQ
 description: The *RssOnHostVPorts standardized INF keyword is defined to enable or disable support for VMMQ.
 ms.date: 02/28/2021
 ms:custom: UpdateFrequency3
+ms.topic: reference
 ---
 
 # Standardized INF keywords for VMMQ
@@ -32,7 +33,7 @@ During miniport adapter initialization, the miniport driver must examine the **\
 
 ## Handling RSS INF keywords for VMMQ
 
-If a NIC supports VMMQ, all [Standardized INF Keywords for RSS](standardized-inf-keywords-for-rss.md) should also be supported to provide future compatibility even if the OS doesn't not currently use them all.
+If a NIC supports VMMQ, all [Standardized INF Keywords for RSS](standardized-inf-keywords-for-rss.md) should also be supported to provide future compatibility even if the OS does not currently use them all.
 You should use the keywords as normal for RSS functionality except for:
 
 -   **\*RSSProfile**: The “ClosestProcessor” profile should be supported and used as a policy for VMMQ.

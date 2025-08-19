@@ -9,6 +9,7 @@ keywords:
 - Network Module Registrar WDK , detaching network modules
 - NMR WDK , detaching network modules
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Detaching a Client Module from a Provider Module

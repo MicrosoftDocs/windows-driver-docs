@@ -1,5 +1,5 @@
 ---
-title: Set method of the MSFT\_FileIntegrity class
+title: Set Method of the MSFT_FileIntegrity Class
 description: Sets the file integrity state for the specified file.
 ms.assetid: 19ADB940-56F2-44C1-BC9A-77869930B5DB
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

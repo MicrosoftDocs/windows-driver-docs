@@ -1,20 +1,11 @@
 ---
 title: RSS Configuration
-description: RSS Configuration
-keywords:
-- receive-side scaling WDK networking , ndirection table example
-- RSS WDK networking , indirection table example
-- receive-side scaling WDK networking , configuration
-- RSS WDK networking , configuration
-- ndirection table example WDK RSS
-ms.date: 04/20/2017
+description: To obtain RSS configuration information, an overlying driver can send an OID query to a miniport driver.
+ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # RSS Configuration
-
-
-
-
 
 To obtain RSS configuration information, an overlying driver can send an OID query of [OID\_GEN\_RECEIVE\_SCALE\_CAPABILITIES](./oid-gen-receive-scale-capabilities.md) to a miniport driver. NDIS also provides the RSS configuration information to overlying protocol drivers in the [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) structure during initialization.
 
@@ -44,7 +35,7 @@ To rebalance the processing load, the overlying driver can set the RSS parameter
 
 The following figure provides example contents for two instances of the indirection table.
 
-![diagram illustrating the contents of two instances of an rss indirection table.](images/rss-table.png)
+:::image type="content" source="images/rss-table.png" alt-text="Diagram illustrating the contents of two instances of an RSS indirection table with a four processor configuration and 64 entries.":::
 
 The preceding figure assumes a four processor configuration, and the number of least significant bits used from the hash value is 6 bits. Therefore, the indirection table contains 64 entries.
 

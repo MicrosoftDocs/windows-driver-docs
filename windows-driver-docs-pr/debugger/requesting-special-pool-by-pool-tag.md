@@ -2,6 +2,7 @@
 title: Requesting Special Pool by Pool Tag
 description: Requesting Special Pool by Pool Tag
 ms.date: 11/28/2017
+ms.topic: how-to
 ---
 
 # Requesting Special Pool by Pool Tag
@@ -24,7 +25,7 @@ In Windows Vista and later versions of Windows, you can also use the command lin
 
 3. The following screen shot shows a tag entered as text on the System Registry tab.
 
-   ![screen shot of a tag entered as text on the system registry tab.](images/gflags-specialpool-text.png)
+   :::image type="content" source="images/gflags-specialpool-text.png" alt-text="Screenshot of a tag entered as text on the System Registry tab in GFlags.":::
 
 4. Click **Apply**.
 
@@ -32,7 +33,7 @@ In Windows Vista and later versions of Windows, you can also use the command lin
 
    The following illustration shows the effect of clicking **Apply**.
 
-   ![screen shot that shows the effect of clicking apply.](images/gflags-specialpool-hex.png)
+   :::image type="content" source="images/gflags-specialpool-hex.png" alt-text="Screenshot showing the effect of clicking Apply in GFlags, displaying the tag as hexadecimal values.":::
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Remarks
 

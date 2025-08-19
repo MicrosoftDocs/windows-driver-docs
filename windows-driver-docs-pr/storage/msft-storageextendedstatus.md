@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageExtendedStatus class
+title: MSFT_StorageExtendedStatus Class
 description: Provides extra status information about an extrinsic method's invocation.
 ms.assetid: BD1268B5-A1B6-4ADB-90FA-C270E23B4844
 keywords:
@@ -14,7 +14,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

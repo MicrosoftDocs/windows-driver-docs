@@ -17,7 +17,7 @@ api_type:
 The ACPI\_BIOS\_ERROR bug check has a value of 0x000000A5. This bug check indicates that the Advanced Configuration and Power Interface (ACPI) BIOS of the computer is not fully compliant with the ACPI specification.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## ACPI\_BIOS\_ERROR Parameters
@@ -76,7 +76,7 @@ If the BIOS incompatibility is related to Plug and Play (PnP) or power managemen
 <tr class="odd">
 <td align="left"><p>0x05</p></td>
 <td align="left"><p>The ACPI extension that _PRW belongs to</p></td>
-<td align="left"><p>Aointer to the _PRW</p></td>
+<td align="left"><p>A pointer to the _PRW</p></td>
 <td align="left"><p>The number of elements in the _PRW</p></td>
 <td align="left"><p>ACPI evaluated a _PRW, and the package that came back failed to contain at least two elements. The ACPI specification requires that two elements always be present in a _PRW.</p></td>
 </tr>
@@ -584,7 +584,7 @@ The value of Parameter 1 indicates the error.
 
 ## Resolution
 
-If you are debugging this error, use the [**!analyze -v**](-analyze.md) extension. This extension displays all the relevant data (device extensions, nsobjects, or whatever is appropriate to the specific error).
+If you are debugging this error, use the [**!analyze -v**](../debuggercmds/-analyze.md) extension. This extension displays all the relevant data (device extensions, nsobjects, or whatever is appropriate to the specific error).
 
 If you are not performing debugging, this error indicates that you have to obtain a new BIOS. Contact your vendor or visit the internet to get a new BIOS.
 

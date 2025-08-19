@@ -5,6 +5,7 @@ keywords:
 - Verifier utility
 - Driver Verifier WDK , Verifier utility
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # The Verifier Utility
@@ -30,12 +31,4 @@ This section includes:
 [**Verifier Command Line**](verifier-command-line.md)
 
 [Driver Verifier Manager](driver-verifier-manager--windows-xp-and-later-.md)
-
- 
-
- 
-
-
-
-
 

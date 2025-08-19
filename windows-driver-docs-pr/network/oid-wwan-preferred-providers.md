@@ -24,7 +24,7 @@ Miniport drivers can access the Subscriber Identity Module (SIM card) or the pro
 
 When processing OID\_WWAN\_PREFERRED\_PROVIDERS, miniport drivers may set only the WWAN\_PROVIDER\_STATE\_PREFERRED or WWAN\_PROVIDER\_STATE\_FORBIDDEN flags to tag the list entries. Be aware that forbidden providers might not appear in the list for GSM-based devices.
 
-Miniport driverrs should set the **PreferredListHeader.ElementType** member to *WwanStructProvider*. The miniport driver should set the **PreferredListHeader.ElementCount** member to 0 when responding to OID\_WWAN\_PREFERRED\_PROVIDERS set requests.
+Miniport drivers should set the **PreferredListHeader.ElementType** member to *WwanStructProvider*. The miniport driver should set the **PreferredListHeader.ElementCount** member to 0 when responding to OID\_WWAN\_PREFERRED\_PROVIDERS set requests.
 
 Whether the PPL on the device can be overwritten or not when processing set requests depends on the device capability, the cellular technology, and/or the network provider's policy.
 

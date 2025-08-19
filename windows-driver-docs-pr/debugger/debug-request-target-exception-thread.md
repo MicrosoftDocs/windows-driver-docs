@@ -1,5 +1,5 @@
 ---
-title: DEBUG\_REQUEST\_TARGET\_EXCEPTION\_THREAD
+title: DEBUG_REQUEST_TARGET_EXCEPTION_THREAD
 description: DEBUG\_REQUEST\_TARGET\_EXCEPTION\_THREAD
 keywords: ["DEBUG_REQUEST_TARGET_EXCEPTION_THREAD Windows Debugging"]
 topic_type:
@@ -33,9 +33,3 @@ The operating system thread ID for the stored event. The type of the thread ID i
  
 
  
-
-
-
-
-
-

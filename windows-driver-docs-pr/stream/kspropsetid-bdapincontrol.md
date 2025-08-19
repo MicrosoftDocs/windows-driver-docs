@@ -1,7 +1,8 @@
 ---
-title: KSPROPSETID\_BdaPinControl
+title: KSPROPSETID_BdaPinControl
 description: KSPROPSETID\_BdaPinControl
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_BdaPinControl

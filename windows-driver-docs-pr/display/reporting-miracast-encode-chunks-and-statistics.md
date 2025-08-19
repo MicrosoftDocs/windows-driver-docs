@@ -1,7 +1,8 @@
 ---
-title: Reporting Miracast encode chunks and statistics on Windows 8.1
+title: Reporting Miracast Encode Chunks and Statistics on Windows 8.1
 description: Display hardware can process each video frame sent over a Miracast wireless display link by splitting the frame into multiple parts, or encode chunks.
 ms.date: 03/24/2023
+ms.topic: concept-article
 ---
 
 # Reporting Miracast encode chunks and statistics on Windows 8.1

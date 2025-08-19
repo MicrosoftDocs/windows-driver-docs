@@ -1,9 +1,10 @@
 ---
-title: C28651 warning
+title: C28651 Warning
 description: Warning C28651 Static initializer causes copy on write pages due to member function pointers.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28651"
+ms.topic: reference
 ---
 
 # C28651

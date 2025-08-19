@@ -5,6 +5,7 @@ keywords:
 - Static Driver Verifier Report WDK , Source Code pane
 - Source Code pane WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Source Code Pane Actions
@@ -29,12 +30,4 @@ You can perform the following actions in the **Source Code** pane:
     1.  Click anywhere in the **Source Code** pane tab.
     2.  From the **Edit** menu, select **Select All** (or press CTRL + A).
     3.  From the **Edit** menu, select **Copy** (or press CTRL+C).
-
- 
-
- 
-
-
-
-
 

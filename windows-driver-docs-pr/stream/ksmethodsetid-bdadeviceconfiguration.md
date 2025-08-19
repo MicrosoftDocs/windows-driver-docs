@@ -2,6 +2,7 @@
 title: KSMETHODSETID_BdaDeviceConfiguration
 description: KSMETHODSETID_BdaDeviceConfiguration is the BDA device configuration method set.
 ms.date: 10/12/2021
+ms.topic: reference
 ---
 
 # KSMETHODSETID_BdaDeviceConfiguration

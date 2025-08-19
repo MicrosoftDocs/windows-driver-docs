@@ -5,6 +5,7 @@ keywords:
 - Driver Verifier WDK , viewing settings
 - viewing Driver Verifier setting
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Viewing Driver Verifier Settings
@@ -31,12 +32,4 @@ Press **Finish** to stop viewing these settings.
 ### <span id="viewing_the_currently_active_features"></span><span id="VIEWING_THE_CURRENTLY_ACTIVE_FEATURES"></span>Viewing the Currently-Active Features
 
 If you wish to view the Driver Verifier features that are currently active, rather than the settings that will take effect after the next boot, see [Using Volatile Settings](using-volatile-settings.md).
-
- 
-
- 
-
-
-
-
 

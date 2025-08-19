@@ -2,6 +2,7 @@
 title: Windows 10 What's New for Audio Drivers
 description: This topic provides a high level summary of what's new in audio for Windows 10.
 ms.date: 04/20/2017
+ms.topic: whats-new
 ---
 
 # Windows 10: What's New for Audio Drivers
@@ -47,7 +48,7 @@ The total latency of a device is the sum of the latencies of the following compo
 
 In Windows 10 work was done to reduce the latency in the OS. Without any driver changes, applications in Windows 10 will experience 4.5-16ms lower latency. In addition, if the driver has been updated to take advantage of the new low latency DDIs that use small buffers to process audio data, then the latency will be reduced even more. If a driver supports 3ms audio buffers, then the roundtrip latency is ~10ms.
 
-![low latency audio stack diagram showing apps, audio engine driver and h/w.](images/low-latency-audio-stack-diagram-1.png)
+:::image type="content" source="images/low-latency-audio-stack-diagram-1.png" alt-text="Diagram showing low latency audio stack with apps, audio engine driver, and hardware components.":::
 
 The audio stack supports multiple packet sizes and dynamic packet resizing, in order to optimize the tradeoff between latency and power based on the user’s scenario. In addition, streams will be prioritized, in order to ensure that high priority streams (e.g. phone calls) have dedicated resources.
 
@@ -111,7 +112,7 @@ For more information, see [Implementing Hardware Offloaded APO Effects](implemen
 
 ## Cortana Voice Activation - Wake on Voice
 
-Cortana, the personal assistant technology was first demonstarted at the Microsoft BUILD Developer Conference in 2013. Voice activation is a feature that enables users to invoke a speech recognition engine from various device power states by saying a specific phrase - "Hey Cortana". The "Hey Cortana" Voice Activation (VA) feature allows users to quickly engage an experience (e.g., Cortana) outside of their active context (i.e., what is currently on screen) by using their voice. The feature is targeted for scenarios when the screen is off, idle or when it is fully active. If the hardware supports buffering, users can then chain the key phrase and command phrase together. This improves the end to end wake on voice experience for the user. For more information, see [Voice Activation](voice-activation.md).
+Cortana, the personal assistant technology was first demonstrated at the Microsoft BUILD Developer Conference in 2013. Voice activation is a feature that enables users to invoke a speech recognition engine from various device power states by saying a specific phrase - "Hey Cortana". The "Hey Cortana" Voice Activation (VA) feature allows users to quickly engage an experience (e.g., Cortana) outside of their active context (i.e., what is currently on screen) by using their voice. The feature is targeted for scenarios when the screen is off, idle or when it is fully active. If the hardware supports buffering, users can then chain the key phrase and command phrase together. This improves the end to end wake on voice experience for the user. For more information, see [Voice Activation](voice-activation.md).
 
 ## Windows Universal Drivers for Audio
 
@@ -137,5 +138,5 @@ For more information, see [Audio Hardware Resource Management](audio-hardware-re
 PNP rebalancing is used in certain PCI scenarios where memory resources need to be reallocated. In that case, some drivers are unloaded, and then reloaded at different memory locations, in order to create free contiguous memory space. Rebalance can be triggered in two main scenarios:
 
 1. PCI hotplug: A user plugs in a device and the PCI bus does not have enough resources to load the driver for the new device. Some examples of devices that fall into this category include Thunderbolt, USB-C and NVME Storage. In this scenario, memory resources need to be rearranged and consolidated (rebalanced) to support the additional devices being added.
-2. PCI resizeable BARs: After a driver for a device is successfully loaded in memory, it requests additional resources. Some examples of devices include high-end graphics cards and storage devices.
+2. PCI resizable BARs: After a driver for a device is successfully loaded in memory, it requests additional resources. Some examples of devices include high-end graphics cards and storage devices.
 For more information, see [Implement PnP Rebalance for PortCls Audio Drivers](implement-pnp-rebalance-for-portcls-audio-drivers.md).

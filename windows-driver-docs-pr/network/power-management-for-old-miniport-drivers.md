@@ -4,6 +4,7 @@ description: Power Management for Old Miniport Drivers
 keywords:
 - power management WDK NDIS miniport , old miniport drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Power Management for Old Miniport Drivers
@@ -20,7 +21,7 @@ NDIS treats a miniport driver as an old miniport driver that is not power manage
 
 -   The user disables power management in the user interface.
 
-NDIS supports only two device power states for old miniport drivers that do not support power manegement: the highest-powered (D0) state and the D3 state.
+NDIS supports only two device power states for old miniport drivers that do not support power management: the highest-powered (D0) state and the D3 state.
 
 During initialization, an old miniport driver can indicate that NDIS should not halt it before the system transitions to the sleeping (D3) state. A miniport driver makes such an indication by setting the NDIS\_ATTRIBUTE\_NO\_HALT\_ON\_SUSPEND flag in the *AttributeFlags* parameter that the miniport driver passes to the [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function. An old miniport driver should set this flag only if it can:
 

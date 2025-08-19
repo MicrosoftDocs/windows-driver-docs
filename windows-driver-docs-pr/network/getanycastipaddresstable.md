@@ -28,7 +28,7 @@ NETIOAPI_API GetAnycastIpAddressTable(
 
    Possible values for the address family are listed in the Winsock2.h header file. Note that the values for the AF\_ address family and PF\_ protocol family constants are identical (for example, AF\_INET and PF\_INET), so you can use either constant.
 
-   On Windows Vista and later versions of the Windows operating systems, possible values for the *Family* parameterare defined in the Ws2def.h header file. Note that the Ws2def.h header file is automatically included in Netioapi.h and you should never use Ws2def.h directly.
+   On Windows Vista and later versions of the Windows operating systems, possible values for the *Family* parameter are defined in the Ws2def.h header file. Note that the Ws2def.h header file is automatically included in Netioapi.h and you should never use Ws2def.h directly.
 
    The following values are currently supported for the address family:
 

@@ -1,5 +1,5 @@
 ---
-title: C28118 warning
+title: C28118 Warning
 description: irq-exceeds-caller
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -7,6 +7,7 @@ keywords:
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28118"
+ms.topic: reference
 ---
 
 # C28118

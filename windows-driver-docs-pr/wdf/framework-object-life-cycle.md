@@ -8,6 +8,7 @@ keywords:
 - reference counts WDK KMDF
 - framework objects WDK KMDF , deleting
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Framework Object Life Cycle

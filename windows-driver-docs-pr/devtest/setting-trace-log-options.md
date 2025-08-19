@@ -7,6 +7,7 @@ keywords:
 - trace logs WDK TraceView , setting options
 - log files WDK TraceView , setting options
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Setting Trace Log Options
@@ -35,12 +36,4 @@ In the associated text box, type a path and file name for the summary file. The 
 If you specify an existing listing or summary file, TraceView overwrites the file without warning.
 
 TraceView creates the summary file when you stop the trace session. If you close the TraceView window before stopping the trace session, TraceView does not create a summary file for the session.
-
- 
-
- 
-
-
-
-
 

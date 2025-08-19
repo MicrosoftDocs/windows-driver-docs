@@ -11,6 +11,7 @@ keywords:
 - miniport drivers WDK audio , kernel-mode hardware acceleration
 - synthesizers WDK audio , kernel-mode hardware acceleration
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Kernel Mode Hardware Acceleration DDI
@@ -26,8 +27,6 @@ Implementing kernel-mode components entails making additions to the miniport dev
 If you have not written a user-mode version before doing your kernel-mode implementation, read the user-mode sections of this document to become familiar with the concepts, which apply to kernel mode as well. Kernel-mode discussions build on common concepts that are introduced in the user-mode examples.
 
 The next two sections give a brief background of WDM kernel streaming and an overview of how to implement a miniport-driver for a synthesizer:
-
-[DirectMusic WDM Kernel Streaming Background](directmusic-wdm-kernel-streaming-background.md)
 
 [Synthesizer Miniport Driver Overview](synthesizer-miniport-driver-overview.md)
 

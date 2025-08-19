@@ -1,5 +1,5 @@
 ---
-title: Repair method of the MSFT\_FileIntegrity class
+title: Repair Method of the MSFT_FileIntegrity Class
 description: Repairs the data for the specified file.
 ms.assetid: 09FF3AEB-4BD2-4A53-B46D-B3B84CAB02A5
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

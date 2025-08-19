@@ -1,7 +1,8 @@
 ---
-title: MSiSCSI\_SessionStatistics WMI Class
+title: MSiSCSI_SessionStatistics WMI Class
 description: MSiSCSI\_SessionStatistics WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_SessionStatistics WMI Class

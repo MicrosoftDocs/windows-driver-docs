@@ -6,6 +6,7 @@ keywords:
 - BR_CMYKCOLOR
 - XO_FROM_CMYK
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Supporting CMYK Color Space

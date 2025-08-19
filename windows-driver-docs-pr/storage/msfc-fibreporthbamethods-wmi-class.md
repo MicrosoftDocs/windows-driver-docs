@@ -1,7 +1,8 @@
 ---
-title: MSFC\_FibrePortHBAMethods WMI Class
+title: MSFC_FibrePortHBAMethods WMI Class
 description: MSFC\_FibrePortHBAMethods WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSFC\_FibrePortHBAMethods WMI Class

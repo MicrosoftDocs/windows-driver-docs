@@ -2,6 +2,7 @@
 title: Step 2 A Driver for the Device is Selected
 description: Step 2 A Driver for the Device is Selected
 ms.date: 03/23/2023
+ms.topic: how-to
 ---
 
 # Step 2: A Driver Package for the Device is Selected
@@ -35,7 +36,7 @@ As soon as Windows has found one or more matching [driver packages](driver-packa
 
 2.  If Windows has found multiple matching driver packages, Windows first assigns a ranking value to each match from each driver package. If only one driver has the lowest rank value, it installs that driver package on the device.
 
-    For more information about the ranking process, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
+    For more information about the ranking process, see [How Windows Ranks Drivers](how-windows-ranks-driver-packages.md).
 
 3.  If multiple driver packages have the same lowest rank value, Windows uses the driver date and version to select the best driver package for the device. The date and version are specified by the [**INF DriverVer directive**](inf-driverver-directive.md) that is contained in the driver package's [INF file](overview-of-inf-files.md).
 

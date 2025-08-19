@@ -3,6 +3,7 @@ title: Reading and Filtering Debugging Messages
 description: Reading and Filtering Debugging Messages
 keywords: ["reading and filtering debugging messages", "debugging messages, reading and filtering"]
 ms.date: 07/20/2020
+ms.topic: how-to
 ---
 
 # Reading and Filtering Debugging Messages
@@ -139,7 +140,7 @@ The fourth message was passed to **DbgPrint** instead of **DbgPrintEx**. In Wind
 
 When the **DbgPrint**, **DbgPrintEx**, **vDbgPrintEx**, **vDbgPrintExWithPrefix**, **KdPrint**, or **KdPrintEx** routine transmits a message to the debugger, the formatted string is sent to the **DbgPrint** buffer. The contents of this buffer are displayed immediately in the Debugger Command window, unless you disabled this display by using the **Buffer DbgPrint Output** option of GFlags.
 
-During local kernel debugging, and any other time this display has been disabled, the contents of the DbgPrint buffer can only be viewed by using the [**!dbgprint**](-dbgprint.md) extension command.
+During local kernel debugging, and any other time this display has been disabled, the contents of the DbgPrint buffer can only be viewed by using the [**!dbgprint**](../debuggercmds/-dbgprint.md) extension command.
 
 Any single call to **DbgPrint**, **DbgPrintEx**, **vDbgPrintEx**, **vDbgPrintExWithPrefix**, **KdPrint**, or **KdPrintEx** transmits only 512 bytes of information. Any output longer than the 512 bytes is lost. The DbgPrint buffer itself can hold up to 4 KB of data on a free build of Windows, and up to 32 KB of data on a checked build of Windows. On Windows Server 2003 and later versions of Windows, you can use the KDbgCtrl tool to alter the size of the DbgPrint buffer. This tool is part of Debugging Tools for Windows.
 

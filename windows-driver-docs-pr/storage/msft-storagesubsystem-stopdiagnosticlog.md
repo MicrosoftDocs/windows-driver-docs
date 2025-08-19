@@ -1,5 +1,5 @@
 ---
-title: StopDiagnosticLog method of the MSFT\_StorageSubSystem class
+title: StopDiagnosticLog Method of the MSFT_StorageSubSystem Class
 description: Stops the diagnostic log for the storage subsystem.
 ms.assetid: 3D5D7A2B-C052-4834-AF7D-6432F407F647
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

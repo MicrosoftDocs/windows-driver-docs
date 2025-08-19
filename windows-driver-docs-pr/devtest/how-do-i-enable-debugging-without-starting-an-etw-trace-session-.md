@@ -1,7 +1,8 @@
 ---
-title: How do I enable debugging without starting an ETW trace session
+title: How do I Enable Debugging Without Starting an ETW Trace Session
 description: How do I enable debugging without starting an ETW trace session
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How do I enable debugging without starting an ETW trace session?
@@ -52,12 +53,4 @@ If you are using the kernel debugger, set the level and flag values for the WPP 
     ```
     kd>ed nt!Kd_DEFAULT_Mask 0xff
     ```
-
- 
-
- 
-
-
-
-
 

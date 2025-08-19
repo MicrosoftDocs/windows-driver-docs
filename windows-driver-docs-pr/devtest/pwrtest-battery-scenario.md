@@ -2,6 +2,7 @@
 title: PwrTest Battery Scenario
 description: The PwrTest Battery Scenario is designed to facilitate automated inspection of battery and power source information.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # PwrTest Battery Scenario
@@ -41,7 +42,7 @@ pwrtest /battery /c:4 /i:1000
   </SystemInformation>
   <BatteryScenario>
     <Batteries>
-      <Battery id="" shortterm="" rechargable="" >
+      <Battery id="" shortterm="" rechargeable="" >
         <Name></Name>
         <UniqueID></UniqueID>
         <Chemistry></Chemistry>
@@ -163,13 +164,5 @@ The following table describes the XML elements that appear in the log file.
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
-
- 
-
- 
-
-
-
-
 
 

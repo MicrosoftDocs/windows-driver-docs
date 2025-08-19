@@ -1,7 +1,8 @@
 ---
-title: Validating a hybrid system configuration
+title: Validating a Hybrid System Configuration
 description: A decription of the procedure to validate a hybrid system.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Validating a hybrid system configuration

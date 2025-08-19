@@ -9,6 +9,7 @@ keywords:
 - battery class drivers WDK
 - battery class drivers WDK , about battery class drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing Battery Miniclass Drivers
@@ -27,11 +28,11 @@ Information about writing battery miniclass drivers is organized as follows:
 
 [Supplying Required Battery Miniclass Driver Functionality](supplying-required-battery-miniclass-driver-functionality.md)
 
-[DriverEntry Routine of a Battery Miniclass Driver](driverentry-routine-of-a-battery-miniclass-driver.md)
+[Battery miniclass driver: DriverEntry routine](driverentry-routine-of-a-battery-miniclass-driver.md)
 
-[AddDevice Routine of a Battery Miniclass Driver](adddevice-routine-of-a-battery-miniclass-driver.md)
+[AddDevice routine for battery miniclass drivers](adddevice-routine-of-a-battery-miniclass-driver.md)
 
-[DispatchDeviceControl Routine of a Battery Miniclass Driver](dispatchdevicecontrol-routine-of-a-battery-miniclass-driver.md)
+[Battery miniclass driver's DispatchDeviceControl routine](dispatchdevicecontrol-routine-of-a-battery-miniclass-driver.md)
 
 [DispatchSystemControl Routine of a Battery Miniclass Driver](dispatchsystemcontrol-routine-of-a-battery-miniclass-driver.md)
 

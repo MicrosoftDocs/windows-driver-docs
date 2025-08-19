@@ -5,6 +5,7 @@ keywords:
 - query operations WDK NDIS intermediate
 - set operations WDK NDIS intermediate
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Issuing Set and Query Requests from an Intermediate Driver

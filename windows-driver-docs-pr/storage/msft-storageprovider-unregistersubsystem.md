@@ -1,5 +1,5 @@
 ---
-title: UnregisterSubsystem method of the MSFT\_StorageProvider class
+title: UnregisterSubsystem Method of the MSFT_StorageProvider Class
 description: Unregisters a subsystem. The provider will no longer manage this subsystem.
 ms.assetid: AD78886B-F238-4FFA-94AC-512606393066
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: DeleteObject method of the MSFT\_MaskingSet class
+title: DeleteObject Method of the MSFT_MaskingSet Class
 description: Deletes the masking set instance.
 ms.assetid: 169B2338-3B9C-488F-9BF1-9E64A7915683
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

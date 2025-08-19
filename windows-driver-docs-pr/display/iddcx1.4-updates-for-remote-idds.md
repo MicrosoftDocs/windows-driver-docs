@@ -1,5 +1,5 @@
 ---
-title: IddCx 1.4 updates for remote IDDs
+title: IddCx 1.4 Updates for Remote IDDs
 description: IddCx version 1.4 updates for remote indirect display drivers
 ms.date: 09/28/2020
 keywords:
@@ -7,6 +7,7 @@ keywords:
 - Remote IDD, IddCx versions 1.4 and later
 - Remote indirect display driver
 - Remote IDD
+ms.topic: release-notes
 ---
 
 # IddCx 1.4 updates for remote IDDs

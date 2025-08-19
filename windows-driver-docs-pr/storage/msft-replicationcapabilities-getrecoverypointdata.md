@@ -1,5 +1,5 @@
 ---
-title: GetRecoveryPointData method of the MSFT\_ReplicationCapabilities class
+title: GetRecoveryPointData Method of the MSFT_ReplicationCapabilities Class
 description: Returns, for a given ReplicationType, recovery point data.
 ms.assetid: F14F4AFE-F554-4DFA-8E45-2B953676E357
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

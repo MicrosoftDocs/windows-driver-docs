@@ -3,6 +3,7 @@ title: Choosing Which Public Symbols to Remove
 description: Choosing Which Public Symbols to Remove
 keywords: ["PDBCopy, removing public symbols", "symbols, AgeStore"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Choosing Which Public Symbols to Remove
@@ -123,8 +124,3 @@ If you do not wish to publicize the names of the functions following each inert 
  
 
  
-
-
-
-
-

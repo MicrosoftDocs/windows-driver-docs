@@ -7,6 +7,7 @@ keywords:
 - print Web pages WDK , ASP files
 - Web pages WDK printer , ASP files
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # ASP Files for Print Web Pages

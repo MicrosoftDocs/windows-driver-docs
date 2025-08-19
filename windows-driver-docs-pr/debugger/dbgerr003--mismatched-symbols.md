@@ -3,6 +3,7 @@ title: dbgerr003 Mismatched Symbols
 description: dbgerr003 Mismatched Symbols
 keywords: ["dbgerr003", "Mismatched symbols (dbgerr003)"]
 ms.date: 05/23/2017
+ms.topic: error-reference
 ---
 
 # dbgerr003: Mismatched Symbols
@@ -18,8 +19,3 @@ The debugger might load the specified symbol file despite this error, depending 
  
 
  
-
-
-
-
-

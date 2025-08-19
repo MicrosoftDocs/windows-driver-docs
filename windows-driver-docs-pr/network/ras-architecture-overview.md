@@ -6,6 +6,7 @@ keywords:
 - RAS WDK networking
 - architecture WDK WAN , RAS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # RAS Architecture Overview
@@ -30,7 +31,7 @@ Developers provide TAPI-aware applications and WAN miniport drivers. CoNDIS WAN 
 
 The following figure shows the RAS architecture.
 
-![diagram illustrating the ras architecture.](images/condsras.png)
+:::image type="content" source="images/condsras.png" alt-text="Diagram illustrating the RAS architecture.":::
 
 The following sections briefly describe the components in the RAS architecture.
 

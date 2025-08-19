@@ -1,7 +1,8 @@
 ---
+title: Case Study - Troubleshooting an Unknown USB Device
 description: Provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.
-title: Case Study - Troubleshooting an unknown USB device
-ms.date: 04/20/2017
+ms.date: 05/29/2025
+ms.topic: troubleshooting-general
 ---
 
 # Case Study: Troubleshooting an unknown USB device by using ETW and Netmon
@@ -12,16 +13,16 @@ For this example, we plugged in a device and it appeared as an unknown device in
 
 ## About the Unknown Device Problem
 
-To debug an unknown USB device problem, it helps to understand what the USB driver stack does to enumerate a device when a user plugs it into the system. For information on USB enumeration, see the blog post titled [How does USB stack enumerate a device?](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/how-does-usb-stack-enumerate-a-device/ba-p/270685)
+To debug an unknown USB device problem, it helps to understand what the USB driver stack does to enumerate a device when a user plugs it into the system. For information on USB enumeration, see the blog post titled [How does USB stack enumerate a device?](https://techcommunity.microsoft.com/blog/microsoftusbblog/how-does-usb-stack-enumerate-a-device/270685)
 
 Typically when the USB driver stack fails to enumerate a device, the hub driver still reports the arrival of the device to Windows and the USB device is marked as an unknown device in Device Manager. The device has a Device ID of USB\\VID\_0000&PID\_0000 and a Hardware ID and Compatible ID of USB\\UNKNOWN. The following events cause the USB hub driver to enumerate a USB device as an unknown device:
 
-* A port reset request timed out during enumeration.
-* The Set Address request for the USB device failed.
-* The request for the USB device's Device Descriptor failed.
-* The [USB Device Descriptor](usb-device-descriptors.md) was malformed and failed validation.
-* The request for the Configuration Descriptor failed.
-* The [USB Configuration Descriptor](usb-configuration-descriptors.md) was malformed and failed validation.
+- A port reset request timed out during enumeration.
+- The Set Address request for the USB device failed.
+- The request for the USB device's Device Descriptor failed.
+- The [USB Device Descriptor](usb-device-descriptors.md) was malformed and failed validation.
+- The request for the Configuration Descriptor failed.
+- The [USB Configuration Descriptor](usb-configuration-descriptors.md) was malformed and failed validation.
 
 In Windows 7, unknown devices that fail enumeration are marked with failure [Code 43](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725873(v=ws.10)?redirectedfrom=MSDN) in Device Manager.
 
@@ -45,7 +46,7 @@ Because this is a device failure, we recommend that you use Netmon with the USB 
 
 Event 2 is the first USB event in the log. This and several subsequent events describe the USB host controllers, hubs, and devices that were connected to the system when we started the trace. We can call this group of events the device summary events, or just summary events. Like the first event, the summary events do not describe driver activity. Summary events record the state of the devices at the start of a logging session. Other events represent something happening on the bus, interactions with client drivers or the system, or changes of internal state.
 
-The USB hub and USB port drivers both log summary events. The driver that logged an event is identified in the Protocol Name column. For example, an event that is logged by the USB port driver has the USBPort\_MicrosoftWindowsUSBPORT protocol name. A USB event trace typically contains a sequence of port summary events, followed by a sequence of hub summary events. Many of the USB port and USB hub summary events have the words “Information” or “Attributes” in their description.
+The USB hub and USB port drivers both log summary events. The driver that logged an event is identified in the Protocol Name column. For example, an event that is logged by the USB port driver has the USBPort\_MicrosoftWindowsUSBPORT protocol name. A USB event trace typically contains a sequence of port summary events, followed by a sequence of hub summary events. Many of the USB port and USB hub summary events have the words "Information" or "Attributes" in their description.
 
 How can you identify the end of the summary events? If there is a significant break in the timestamp pattern among the USB hub events at the start of the log, that break is probably the end of the device summary. Otherwise, the first USB port event after any USB hub events is likely the first non-summary event. Figure 3 on the following page shows the first non-summary event in this sample trace.
 
@@ -116,7 +117,7 @@ The USB error filter narrows the list of events to only those that meet the crit
 | (USBPort_MicrosoftWindowsUSBUSBPORT AND NetEvent.Header.Descriptor.Opcode == 34) | USB port events that have opcode 34 are port errors. |
 | (USBHub_MicrosoftWindowsUSBUSBHUB AND NetEvent.Header.Descriptor.Opcode == 11) | USB hub events that have opcode 11 are hub errors. |
 | (NetEvent.Header.Descriptor.Level == 0x2) | Events that have level 0x2 are usually errors. |
-| (USBHub_MicrosoftWindowsUSBUSBHUB AND NetEvent.Header.Descriptor.Id == 210) | USB hub events with ID 210 are ”USB Hub Exception Logged” events. For more information, see [Understanding Error Events and Status Codes](#understanding-error-events-and-status-codes). |
+| (USBHub_MicrosoftWindowsUSBUSBHUB AND NetEvent.Header.Descriptor.Id == 210) | USB hub events with ID 210 are "USB Hub Exception Logged" events. For more information, see [Understanding Error Events and Status Codes](#understanding-error-events-and-status-codes). |
 
 This image shows the smaller set of events that appear in the **Frame Summary** pane after we applied the USB error filter to our sample trace log.
 
@@ -128,8 +129,8 @@ To see an overview of the sequence of errors, you can briefly view each error ev
 
 You can create custom filters in Netmon. The easiest method is to create a filter from data on the screen in one of the following ways:
 
-* Right-click a field in the **Frame Details** pane and select **Add Selected Value to Display Filter**.
-* Right-click a field in the **Frame Summary** pane and select **Add [field name] to Display Filter**.
+- Right-click a field in the **Frame Details** pane and select **Add Selected Value to Display Filter**.
+- Right-click a field in the **Frame Summary** pane and select **Add [field name] to Display Filter**.
 
 You can change the operators (such as OR, AND, and ==) and the filter values to build the appropriate filter expressions.
 
@@ -191,5 +192,5 @@ For USB enumeration to continue, the device should have responded to this reques
 
 ## Related topics
 
-[Using USB ETW](using-usb-etw.md)  
-[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)
+- [Using USB ETW](using-usb-etw.md)
+- [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)

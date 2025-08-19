@@ -1,7 +1,8 @@
 ---
 description: USBStress is the combination of a user-mode application (usbstress.exe) and driver installation package for the kernel-mode driver, usbstress.sys.
 title: USBStress
-ms.date: 04/20/2017
+ms.date: 09/23/2024
+ms.topic: overview
 ---
 
 # USBStress package
@@ -34,7 +35,7 @@ This list summarizes the tests that USBStress performs:
 
 To install the usbstress.sys driver for the MUTT device, use MuttUtil with the `-UpdateDriver `option:
 
-``` syntax
+```output
 c:\Program Files (x86)\USBTest\x64>MuttUtil.exe -UpdateDriver usbstress.inf
 Return value: 0
 

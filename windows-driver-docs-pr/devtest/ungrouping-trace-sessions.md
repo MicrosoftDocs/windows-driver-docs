@@ -6,6 +6,7 @@ keywords:
 - trace sessions WDK , groups
 - ungrouping trace sessions
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Ungrouping Trace Sessions
@@ -20,12 +21,4 @@ To ungroup a trace session group:
 3.  Click **Ungroup Session**.
 
 When you ungroup stopped trace sessions, they start running again. To remove the trace sessions, stop them, and then [remove them](removing-a-trace-session.md).
-
- 
-
- 
-
-
-
-
 

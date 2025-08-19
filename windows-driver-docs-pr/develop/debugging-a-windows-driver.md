@@ -1,7 +1,8 @@
 ---
-title: Debugging a Windows driver
+title: Debugging a Windows Driver
 description: Describes debugging techniques you can use with a Windows driver, in particular the Inflight Trace Recorder.
 ms.date: 04/28/2020
+ms.topic: concept-article
 ---
 
 # Debugging a Windows Driver 
@@ -20,4 +21,4 @@ To send a trace message from your driver binary, use this code:
    TraceEvents(TRACE_LEVEL_INFORMATION, TRACE_DRIVER, "%!FUNC! Entry");
    ```
 
-You can access the ETW logs using Tracelog by using [!wmitrace](../debugger/wmi-tracing-extensions--wmitrace-dll-.md) in a debugger session.
+You can access the ETW logs using Tracelog by using [!wmitrace](../debuggercmds/wmi-tracing-extensions--wmitrace-dll-.md) in a debugger session.

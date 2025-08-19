@@ -6,6 +6,7 @@ keywords:
 - NDIS timer services WDK
 - canceling NDIS timers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Servicing Timers

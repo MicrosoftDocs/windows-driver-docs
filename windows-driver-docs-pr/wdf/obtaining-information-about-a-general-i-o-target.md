@@ -5,6 +5,7 @@ keywords:
 - general I/O targets WDK KMDF , information about
 - status information WDK KMDF , general I/O targets
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Obtaining Information About a General I/O Target

@@ -2,6 +2,7 @@
 title: Implementation Tips and Requirements for OPM
 description: Implementation Tips and Requirements for OPM
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # Implementation Tips and Requirements for OPM

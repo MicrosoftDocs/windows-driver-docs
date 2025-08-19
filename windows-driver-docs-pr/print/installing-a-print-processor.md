@@ -1,5 +1,5 @@
 ---
-title: Install a print processor
+title: Install a Print Processor
 description: Provides information about how to install a print processor.
 keywords:
 - print processors WDK, installing
@@ -9,6 +9,7 @@ keywords:
 - print processors WDK, associating with print queue
 - print queues WDK
 ms.date: 09/26/2022
+ms.topic: install-set-up-deploy
 ---
 
 # Install a print processor

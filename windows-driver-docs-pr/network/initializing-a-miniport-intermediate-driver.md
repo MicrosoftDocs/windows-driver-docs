@@ -7,6 +7,7 @@ keywords:
 - initializing miniport-intermediate drivers
 - miniport-intermediate drivers WDK NDIS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing a Miniport-Intermediate Driver

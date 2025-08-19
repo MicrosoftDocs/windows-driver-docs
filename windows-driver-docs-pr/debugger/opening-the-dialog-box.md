@@ -3,6 +3,7 @@ title: Opening the Dialog Box
 description: Opening the Dialog Box
 keywords: ["GFlags, dialog box (opening)"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Opening the Dialog Box
@@ -24,8 +25,3 @@ ms.date: 05/23/2017
  
 
  
-
-
-
-
-

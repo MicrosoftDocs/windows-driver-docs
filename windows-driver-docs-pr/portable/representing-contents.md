@@ -2,6 +2,7 @@
 description: Representing Contents
 title: Representing Contents
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Representing Contents

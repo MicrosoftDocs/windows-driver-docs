@@ -1,11 +1,12 @@
 ---
-title: ATA port driver support routines
+title: ATA Port Driver Support Routines
 description: Describes the ATA port driver routines
 keywords:
 - ATA driver support routines
 - storage WDK
 - storage support routines
 ms.date: 10/08/2019
+ms.topic: reference
 ---
 
 # ATA port driver support routines

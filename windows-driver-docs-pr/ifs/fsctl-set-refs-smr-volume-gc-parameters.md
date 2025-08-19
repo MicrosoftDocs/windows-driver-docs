@@ -1,5 +1,5 @@
 ---
-title: FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS control code
+title: FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS Control Code
 description: The FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS control code controls the garbage collection on a Shingled Magnetic Recording (SMR) volume.
 keywords: ["FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS control code Installable File System Drivers"]
 topic_type:

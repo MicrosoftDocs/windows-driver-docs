@@ -4,6 +4,7 @@ description: CM_PROB_DISABLED_SERVICE
 keywords:
 - CM_PROB_DISABLED_SERVICE
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 32 - CM_PROB_DISABLED_SERVICE

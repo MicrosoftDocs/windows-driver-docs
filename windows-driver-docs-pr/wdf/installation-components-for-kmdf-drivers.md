@@ -5,13 +5,14 @@ keywords:
 - framework-based drivers WDK KMDF , installing
 - INF files WDK KMDF , about installing KMDF drivers
 - installation components for drivers WDK KMDF
-ms.date: 05/16/2019
+ms.date: 06/19/2024
+ms.topic: install-set-up-deploy
 ---
 
 # Redistributable Framework Components
 
 > [!NOTE]
-> If your driver only targets Windows 10, you do not need to redistribute WDF or provide a Coinstaller in your driver package. To target Windows 10:
+> If your driver only targets Windows 10 or later, you do not need to redistribute WDF or provide a Coinstaller in your driver package. Use these steps:
 >1. In Visual Studio, in the **Project Settings** property page, under **Driver Settings** -> **Target OS Version**, select **Windows 10 or higher**.  This is equivalent to adding the following to the .vcxproj file: 
 >```xml
 ><PropertyGroup Label="Configuration">
@@ -47,16 +48,15 @@ You never need both the co-installer and the .msu file.
 
 ## Where can I find these files, and what's included?
 
-The co-installers are located in `%program files%\Windows Kits\<version>\redist\wdf`.
+These files are no longer included in the WDK.  Instead, they are available as a separate download from the Microsoft Download Center.  The download page is [Windows Driver Kit 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170).
+
+After installation, the MSU and co-installers can be found under `%program files%\Windows Kits\8.0\redist\wdf`.
 
 This directory contains the following files, for x86 and x64:
 
 -   *WdfCoinstaller01007.dll*, *WdfCoinstaller01009.dll*, *WdfCoinstaller01011.dll* (co-installers for KMDF 1.7/1.9/1.11).
 -   *WUDFUpdate\_01007.dll*, *WUDFUpdate\_01009.dll*, *WUDFUpdate\_01011.dll* (co-installers for UMDF).
 -   *winusbcoinstaller.dll*, *winusbcoinstaller2.dll* (co-installers for WinUSB 1.5/1.9).
-
-If you would like the MSU file, please download and install the package (in MSI format) from [WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170).
-After installation, the MSU and co-installers can be found in `%program files%\Windows Kits\8.0\redist\wdf`.
 
 ## Co-installer Naming and Versioning
 

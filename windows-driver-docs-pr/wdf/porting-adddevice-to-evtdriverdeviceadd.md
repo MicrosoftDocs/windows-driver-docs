@@ -2,6 +2,7 @@
 title: Porting AddDevice to EvtDriverDeviceAdd
 description: Porting AddDevice to EvtDriverDeviceAdd
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Porting AddDevice to EvtDriverDeviceAdd

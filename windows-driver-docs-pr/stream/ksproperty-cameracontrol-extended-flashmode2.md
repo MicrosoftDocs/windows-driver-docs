@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE (assistant flash)
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE (Assistant Flash)
 description: The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE property is extended to support assistant flash.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE Streaming Media Devices"]
 topic_type:

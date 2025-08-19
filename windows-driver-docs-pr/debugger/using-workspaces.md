@@ -3,6 +3,7 @@ title: Using Workspaces - WinDbg (Classic)
 description: Using Workspaces - WinDbg (Classic)
 keywords: ["workspaces", "workspaces, overview", "WinDbg, workspaces"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using Workspaces - WinDbg (Classic)
@@ -24,8 +25,3 @@ This section includes the following topics:
  
 
  
-
-
-
-
-

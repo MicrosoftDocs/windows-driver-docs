@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToTargetPort class
+title: MSFT_StorageSubSystemToTargetPort Class
 description: Association between StorageSubSystem and TargetPort.
 ms.assetid: 70E186A0-7FBB-4EFB-ADAA-7EE7068DCF6F
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

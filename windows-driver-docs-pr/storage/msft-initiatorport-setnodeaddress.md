@@ -1,5 +1,5 @@
 ---
-title: SetNodeAddress method of the MSFT\_InitiatorPort class
+title: SetNodeAddress Method of the MSFT_InitiatorPort Class
 description: Sets the node address for an iSCSI initiator port by passing an IQN as the node address string.
 ms.assetid: 0F1A5F3C-3064-44EE-A8D2-0A6E735CDE5A
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

@@ -1,7 +1,8 @@
 ---
-title: Build and submit a firmware package to Windows Update (WU)
+title: Build and Submit a Firmware Package to Windows Update (WU)
 description: Provides information about how to build and submit a firmware package to Windows Update (WU).
 ms.date: 03/22/2023
+ms.topic: how-to
 ---
 
 # Build and submit a firmware package to Windows Update (WU)
@@ -63,7 +64,7 @@ If you follow this format, the submission should pass. To confirm the parent fol
 
 [Device.Fundamentals Reliability Testing Prerequisites](/windows-hardware/test/hlk/testref/devicefundamentals-reliability-testing-prerequisites)
 
-[Driver Signing](../dashboard/index.yml)
+[Driver Signing](../dashboard/index.md)
 
 [Microsoft UEFI CA Signing Policy updates](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
 

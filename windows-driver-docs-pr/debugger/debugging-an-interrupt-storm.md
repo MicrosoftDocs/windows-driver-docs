@@ -3,6 +3,7 @@ title: Debugging an Interrupt Storm
 description: Debugging an Interrupt Storm
 keywords: ["pending IRPs", "I/O Request Packet (IRP), pending"]
 ms.date: 05/15/2020
+ms.topic: concept-article
 ---
 
 # Debugging an Interrupt Storm
@@ -177,7 +178,7 @@ ds1wdm!AdapterIsr+ad:
 bfe33e7b c20800           ret     0x8 
 ```
 
-Use the **r** command to examine the registers. In particular, look at the EAX register. If the EAX register contents shown in the following code example is anything other then zero, this ISR claimed the interrupt. Otherwise, the interrupt was not claimed, and the operating system will call the next ISR. This example shows that the video card is not claiming the interrupt:
+Use the **r** command to examine the registers. In particular, look at the EAX register. If the EAX register contents shown in the following code example is anything other than zero, this ISR claimed the interrupt. Otherwise, the interrupt was not claimed, and the operating system will call the next ISR. This example shows that the video card is not claiming the interrupt:
 
 ```dbgcmd
 kd> r

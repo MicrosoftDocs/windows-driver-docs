@@ -2,6 +2,7 @@
 title: Matching Symbol Names
 description: Matching Symbol Names
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Matching Symbol Names
@@ -22,8 +23,3 @@ For example, suppose there are two files, Longfilename1.pdb and Longfilename2.pd
  
 
  
-
-
-
-
-

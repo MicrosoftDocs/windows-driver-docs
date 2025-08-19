@@ -8,6 +8,7 @@ keywords:
 - Serial
 - UART
 ms.date: 03/22/2023
+ms.topic: reference
 ---
 
 # Microsoft Debug Port Table 2 (DBG2)
@@ -100,7 +101,7 @@ Table 1 defines the fields in DBG2.
 |  |  | 0x0002 | MAX311xE SPI UART |
 |  |  | 0x0003 | Arm PL011 UART |
 |  |  | 0x0004 | MSM8x60 (e.g. 8960) |
-|  |  | 0x0005 | Nvidia 16550 |
+|  |  | 0x0005 | NVIDIA 16550 |
 |  |  | 0x0006 | TI OMAP |
 |  |  | 0x0007 | Reserved (Do Not Use) |
 |  |  | 0x0008 | APM88xxxx |

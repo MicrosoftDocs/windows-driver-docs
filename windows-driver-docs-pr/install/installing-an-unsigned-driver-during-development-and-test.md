@@ -1,5 +1,5 @@
 ---
-title: Installing an Unsigned Driver during Development and Test
+title: Installing an Unsigned Driver During Development and Test
 description: Installing an Unsigned Driver during Development and Test
 keywords:
 - driver signing WDK , unsigned drivers
@@ -12,6 +12,7 @@ keywords:
 - kernel-mode driver signing WDK
 - F8 key WDK drvier signing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Installing an Unsigned Driver during Development and Test

@@ -3,6 +3,7 @@ title: Multiple PDP contexts
 description: scenraio about multiple PDP contexts
 keywords: MPDP, Multiple PDP context, additional PDP Context
 ms.date: 03/01/2021
+ms.topic: example-scenario
 ---
 # Multiple PDP contexts
 ## Usage scenarios
@@ -25,10 +26,10 @@ For more information, see [Developing apps using multiple PDP contexts](../mobil
 
 ## Primary Flow
 ### App activates additional PDP contexts:
-![Flow diagram showing the App activating additional PDP contexts.](images/App_activate_additional_PDP_contexts.PNG?raw=true "App_activate_additional_PDP_contexts")
+:::image type="content" source="images/App_activate_additional_PDP_contexts.PNG?raw=true" alt-text="Diagram that shows the process of an app activating additional PDP contexts.":::
 
 ### Additional NetAdapter Initialization
-![Additional NetAdapter Initialization.](images/Additional_NetAdapter_Initialization.PNG?raw=true "Additional_NetAdapter_Initialization")
+:::image type="content" source="images/Additional_NetAdapter_Initialization.PNG?raw=true" alt-text="Diagram that illustrates the additional NetAdapter initialization process.":::
 
 
 ## Decision Logic in WwanSvc for Additional PDP Context Connections
@@ -37,7 +38,7 @@ For more information, see [Developing apps using multiple PDP contexts](../mobil
 1. WCM should no longer use the *cost* property of the default profile.
 1. If the new additional pdp context APN request coincides with the default internet APN, disconnect the current additional PDP context.
 
-![Decision Logic in WWANSVC for Connecting Additional PDP Context connection.](images/design_wwansvc_additional_pdp_contexts.png?raw=true "design_wwansvc_additional_pdp_contexts")
+:::image type="content" source="images/design_wwansvc_additional_pdp_contexts.png?raw=true" alt-text="Flowchart that demonstrates the decision logic in WWANSVC for connecting additional PDP context connections.":::
 
 
 ## Hardware Lab Kit (HLK) Tests
@@ -90,7 +91,7 @@ Payload: 0x0600000034000000640000009800000028000000C000000018000000D80000001C000
 e 04-01 12:39:12.815 P0004 T0376 Windows Mobile Broadband Class Driver Event Provider for OPN Sending command MessageType: 0x3, MessageLength: 372, MessageTransactionId: 533, TotalFragments: 1, CurrentFragment: 0, ServiceId: {a289cc33-bcbb-8b4f-b6b0-133ec2aae6df}, CommandId: 19, CommandType: 1, InformationBufferLength: 324, InformationBuffer: 0x0600000034000000640000009800000028000000C000000018000000D80000001C000000F400000034000000280100001C000000A289CC33BCBB8B4FB6B0133EC2AAE6DF140000000100000002000000030000000400000005000000060000000700000008000000090000000A0000000B0000000C0000000D0000000F000000100000001300000014000000150000001600000017000000533FBEEB14FE44679F9033A223E56C3F050000000100000002000000030000000400000005000000E550A0C85E82479E82F710ABF4C3351F01000000010000001D2B5FF70AA148B2AA5250F15767174E0200000001000000030000003D01DCC5FEF54D050D3ABEF7058E9AAF08000000010000000300000004000000050000000600000007000000080000000A00000068223D049F6C4E0F822D28441FB72340020000000100000002000000 0                    Info Windows Mobile Broadband Class Driver Event Provider for OPN
 w 04-01 12:39:12.815 P0004 T0376 usbbus        Sending 372 bytes on control channel                                                                 MbbBusSendMessageFragment businit_c1472 TRACE_LEVEL_INFORMATION
 w 04-01 12:39:12.815 P0004 T0376 usbbus        SetActivityIdForRequest succeeded. Set request activityId = 207b1c4a-085c-0001-270f-83205c08d601     SetActivityIdForRequest businit_c1383 TRACE_LEVEL_INFORMATION
-e 04-01 12:39:12.815 P0004 T0376 Windows Mobile Broadband Class Driver Event Provider [1] Send encapsulted command MessageType=0x3, MessageLength=372, TransactionId=533, TotalFrags=1, CurrentFrag=0, ServiceId={33cc89a2-bbbc-4f8b-b6b0-133ec2aae6df}, CID=19, CommandType=1, InfoLength=324 0                    Info Windows Mobile Broadband Class Driver Event Provider
+e 04-01 12:39:12.815 P0004 T0376 Windows Mobile Broadband Class Driver Event Provider [1] Send encapsulated command MessageType=0x3, MessageLength=372, TransactionId=533, TotalFrags=1, CurrentFrag=0, ServiceId={33cc89a2-bbbc-4f8b-b6b0-133ec2aae6df}, CID=19, CommandType=1, InfoLength=324 0                    Info Windows Mobile Broadband Class Driver Event Provider
 w 04-01 12:39:12.815 P0004 T0376 mbbcx         [Util][ReqId=0x04ae][TID=0x00000215] Pending send Fragment 00/01                                     MbbUtilSendMessageFragments util_cpp1269 TRACE_LEVEL_INFORMATION
 w 04-01 12:39:12.815 P0000 T0000 usbbus        CompletionRoutine() for request 00001C79D4105668 status=STATUS_SUCCESS                               SendCompletionRoutine businit_c1398 TRACE_LEVEL_INFORMATION
 w 04-01 12:39:12.815 P0000 T0000 mbbcx         [Util][ReqId=0x04ae][TID=0x00000215] 01/01 fragment completed with status=STATUS_SUCCESS             MbbUtilSendMessageFragmentComplete util_cpp1401 TRACE_LEVEL_INFORMATION

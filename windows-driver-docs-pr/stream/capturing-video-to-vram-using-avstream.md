@@ -1,5 +1,5 @@
 ---
-title: Capturing Video to VRAM using AVStream
+title: Capturing Video to VRAM Using AVStream
 description: Capturing Video to VRAM using AVStream
 keywords:
 - AVStream WDK , VRAM capture
@@ -11,6 +11,7 @@ keywords:
 - display minidrivers WDK VRAM capture
 - minidrivers WDK VRAM capture
 ms.date: 06/16/2020
+ms.topic: concept-article
 ---
 
 # Capturing Video to VRAM using AVStream

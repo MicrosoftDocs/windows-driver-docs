@@ -4,6 +4,7 @@ description: Performing a Post-Association Operation
 keywords:
 - post-association operations WDK Native 802.11 IHV Extensions DLL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Performing a Post-Association Operation
@@ -57,7 +58,7 @@ After the data port has been authenticated, the IHV Extensions DLL must call [**
 
 The following figure shows the steps involved during the post-association operation.
 
-![diagram illustrating the steps involved during the post-association operation.](images/ihv-ext-postassoc.png)
+:::image type="content" source="images/ihv-ext-postassoc.png" alt-text="Diagram showing the steps in the post-association operation.":::
 
 The IHV Extensions DLL must follow these guidelines when performing the post-association operation.
 

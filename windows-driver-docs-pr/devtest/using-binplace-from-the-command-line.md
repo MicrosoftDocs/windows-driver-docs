@@ -2,6 +2,7 @@
 title: Using BinPlace from the Command Line
 description: Using BinPlace from the Command Line
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using BinPlace from the Command Line
@@ -74,12 +75,4 @@ binplace -a -x -s d:\stripped g:\builddir\mydriver.sys
 ```
 
 Here the class subdirectory is **\*/drivertree**. For the executable file, the asterisk (\*) is replaced with the processor type. Assuming you are running on an x86 computer, the executable file is placed in d:\\projectroot\\i386\\drivertree\\application.exe. The stripped symbol file is placed in g:\\full\\drivertree\\sys\\application.pdb, because the asterisk is ignored for a symbol file. Because the **-n** switch was omitted, the full symbol file is not placed anywhere.
-
- 
-
- 
-
-
-
-
 

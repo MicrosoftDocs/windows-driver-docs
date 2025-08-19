@@ -1,7 +1,8 @@
 ---
-title: How to run stress and transfer performance tests for MUTT devices
+title: How to Run Stress and Transfer Performance Tests for MUTT Devices
 description: How to run stress and transfer and Super MUTT performance tests.
-ms.date: 01/25/2023
+ms.date: 01/16/2024
+ms.topic: how-to
 ---
 
 # How to run stress and transfer performance tests for MUTT devices

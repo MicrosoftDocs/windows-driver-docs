@@ -6,6 +6,7 @@ keywords:
 - validating index values WDK display
 - index validation WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Validating Index Values

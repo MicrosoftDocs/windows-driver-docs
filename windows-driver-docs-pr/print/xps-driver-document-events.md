@@ -1,5 +1,5 @@
 ---
-title: XPS driver document events
+title: XPS Driver Document Events
 description: Provides information about XPS driver document events.
 keywords:
 - Version 3 XPS drivers WDK XPSDrv , events
@@ -7,6 +7,7 @@ keywords:
 - notifications WDK XPSDrv
 - DrvDocumentEvent
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # XPS driver document events
@@ -72,7 +73,7 @@ DOCUMENTEVENT_XPS_ADDFIXEDDOCUMENTSEQUENCEPRINTTICKETPRE
 WPF is about to add a PrintTicket to the FixedDocumentSequence (Job Level).
 
 DOCUMENTEVENT_XPS_ADDFIXEDDOCUMENTSEQUENCEPRINTTICKETPOST  
-WPF should free the datathat the driver returns on the corresponding **DOCUMENTEVENT_XPS_ADDFIXEDDOCUMENTSEQUENCEPRINTTICKETPRE** event.
+WPF should free the data that the driver returns on the corresponding **DOCUMENTEVENT_XPS_ADDFIXEDDOCUMENTSEQUENCEPRINTTICKETPRE** event.
 
 DOCUMENTEVENT_XPS_ADDFIXEDDOCUMENTPRINTTICKETPRE  
 WPF is about to add a PrintTicket to the FixedDocument (Document Level).
@@ -206,7 +207,7 @@ DOCUMENTEVENT_XPS_ADDFIXEDDOCUMENTSEQUENCEPRINTTICKETPOS
 **NULL**
 
 DOCUMENTEVENT_XPS_ADDFIXEDDOCUMENTPRINTTICKETPRE  
-A pointer to a PrintPropertiesCollection structure (see Winspool.h) that contains a "PrintTicket" property of type EPrintPropertyType::PropertyTypeBuffer. Thisproperty is always present. When no PrintTicket is available, the value of **PrintPropertyValue**.propertyBlob.pBuf is **NULL**.
+A pointer to a PrintPropertiesCollection structure (see Winspool.h) that contains a "PrintTicket" property of type EPrintPropertyType::PropertyTypeBuffer. This property is always present. When no PrintTicket is available, the value of **PrintPropertyValue**.propertyBlob.pBuf is **NULL**.
 
 The property contains the XML PrintTicket, from which WPF will use the PrintTicket instead of the one that the **XPSDocumentWriter** caller supplies. (If *pvOut* is **NULL** or the property is not present or the property data is **NULL**, WPF uses the caller-supplied PrintTicket.)
 
@@ -309,7 +310,7 @@ The following escape codes are defined in Winddiui.h.
 #define DOCUMENTEVENT_XPS_ADDFIXEDPAGEPOST                            4
 #define DOCUMENTEVENT_XPS_ADDFIXEDDOCUMENTPOST                        5
 #define DOCUMENTEVENT_XPS_ADDFIXEDDOCUMENTSEQUENCEPOST                13
-// DOCUMENTEVENT_XPS_ADDFIXEDDOCUMENTSEQUENCEPOST must have same value as //DOCUMENTEVENT_STARTDOCPOST for Winspool.drv to signal the tray ballon that //the document is completed
+// DOCUMENTEVENT_XPS_ADDFIXEDDOCUMENTSEQUENCEPOST must have same value as //DOCUMENTEVENT_STARTDOCPOST for Winspool.drv to signal the tray balloon that //the document is completed
 #define DOCUMENTEVENT_XPS_CANCELJOB                                   6
 #define DOCUMENTEVENT_XPS_ADDFIXEDDOCUMENTSEQUENCEPRINTTICKETPRE      7
 #define DOCUMENTEVENT_XPS_ADDFIXEDDOCUMENTPRINTTICKETPRE              8

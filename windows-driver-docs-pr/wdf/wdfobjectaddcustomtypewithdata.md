@@ -1,5 +1,5 @@
 ---
-title: WdfObjectAddCustomTypeWithData macro
+title: WdfObjectAddCustomTypeWithData Macro
 description: The WdfObjectAddCustomTypeWithData macro associates a framework object with a custom type, and optionally associates this pair with a data buffer and event callback functions.
 keywords:
  - WdfObjectAddCustomTypeWithData macro

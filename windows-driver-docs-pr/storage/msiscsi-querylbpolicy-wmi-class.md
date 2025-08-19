@@ -1,7 +1,8 @@
 ---
-title: MSiSCSI\_QueryLBPolicy WMI Class
+title: MSiSCSI_QueryLBPolicy WMI Class
 description: MSiSCSI\_QueryLBPolicy WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_QueryLBPolicy WMI Class

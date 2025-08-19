@@ -6,6 +6,7 @@ keywords:
 - capturing video WDK AVStream , tuners
 - tuners WDK video capture
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting Video Capture Devices with Tuners

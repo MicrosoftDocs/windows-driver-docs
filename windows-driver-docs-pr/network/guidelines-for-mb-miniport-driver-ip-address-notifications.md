@@ -2,7 +2,9 @@
 title: Guidelines for MB Miniport Driver IP Address Notifications
 description: Guidelines for MB Miniport Driver IP Address Notifications
 ms.date: 04/20/2017
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # Guidelines for MB Miniport Driver IP Address Notifications
@@ -32,7 +34,7 @@ Certain changes to the TCP/IP stack, such as the loading of a mandatory filter d
 
 Miniport drivers should use following procedure to be notified when the addresses are removed, and must be reset again.
 
-1.  During **driver initialization**, miniport drivers should specify a callback function to register for IP interface change notifications using [**NotifyIpInterfaceChange**](/previous-versions/windows/hardware/drivers/ff568805(v=vs.85)). Windows will call the function wheneven an IP interface is added, deleted or changed.
+1.  During **driver initialization**, miniport drivers should specify a callback function to register for IP interface change notifications using [**NotifyIpInterfaceChange**](/previous-versions/windows/hardware/drivers/ff568805(v=vs.85)). Windows will call the function whenever an IP interface is added, deleted or changed.
 
 2.  During **adapter initialization**, miniport drivers should save in miniport driver's local adapter context the **LUID** value from the [**NDIS\_MINIPORT\_INIT\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_init_parameters) structure that is passed to the miniport driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function. The value contains the *NetLuid* which identifies adapter's interface, which is used in the notification callback.
 

@@ -1,5 +1,5 @@
 ---
-title: MPIOMoveDevice function
+title: MPIOMoveDevice Function
 description: The MPIOMoveDevice method is used to set the active path on the device.
 keywords: ["MPIOMoveDevice function Storage Devices"]
 topic_type:

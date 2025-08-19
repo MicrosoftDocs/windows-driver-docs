@@ -1,5 +1,5 @@
 ---
-title: SRB\_PROPOSE\_STREAM\_RATE
+title: SRB_PROPOSE_STREAM_RATE
 description: SRB\_PROPOSE\_STREAM\_RATE
 keywords: ["SRB_PROPOSE_STREAM_RATE Streaming Media Devices"]
 topic_type:

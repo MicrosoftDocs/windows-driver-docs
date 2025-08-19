@@ -1,9 +1,10 @@
 ---
-title: Code integrity checks
+title: Code Integrity Checks
 description: Code integrity checks for Driver Verifier
 keywords:
 - Code integrity checks for Driver Verifier
 ms.date: 09/14/2017 
+ms.topic: concept-article
 ---
 
 # Code integrity checking

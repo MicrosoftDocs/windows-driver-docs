@@ -3,6 +3,7 @@ title: Other Symbol Servers
 description: Other Symbol Servers
 keywords: ["symbol servers, writing your own symbol server"]
 ms.date: 12/27/2022
+ms.topic: concept-article
 ---
 
 # Other Symbol Server DLLs
@@ -40,8 +41,3 @@ The Portable PDB (Program Database) format describes an encoding of debugging in
 For information about creating custom symbol servers, see [Custom Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
  
  
-
-
-
-
-

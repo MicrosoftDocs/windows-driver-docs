@@ -3,6 +3,7 @@ title: Using Wmimofck.exe
 description: Using Wmimofck.exe
 keywords: ["WMI WDK kernel , Wmimofck.exe utility", "Wmimofck.exe utility"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Using Wmimofck.exe

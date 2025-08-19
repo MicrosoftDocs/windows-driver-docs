@@ -1,7 +1,8 @@
 ---
-title: AVStream driver samples
+title: AVStream Driver Samples
 description: The AVStream driver samples in this directory provide a starting point for writing a custom streaming media driver for your device.
 ms.date: 03/22/2023
+ms.topic: example-scenario
 ---
 
 # AVStream driver samples

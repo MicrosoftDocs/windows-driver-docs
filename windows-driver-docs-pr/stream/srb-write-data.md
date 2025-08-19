@@ -1,5 +1,5 @@
 ---
-title: SRB\_WRITE\_DATA
+title: SRB_WRITE_DATA
 description: SRB\_WRITE\_DATA
 keywords: ["SRB_WRITE_DATA Streaming Media Devices"]
 topic_type:

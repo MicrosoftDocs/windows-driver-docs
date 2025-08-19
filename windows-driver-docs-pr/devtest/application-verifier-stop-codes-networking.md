@@ -8,6 +8,7 @@ keywords:
 - AppVerif.exe
 - user-mode application testing
 ms.date: 01/13/2022
+ms.topic: reference
 ---
 
 # Application Verifier - Stop Codes - Networking
@@ -150,10 +151,10 @@ The following stop codes are contained in this set of tests.
 <h3>A Winsock API was called before a successful WSAStartup() or after a balancing successful WSACleanup() call was made</h3>
 <p></p><i>Probable cause</i><p>A call was made to a networking API before a successful WSAStarup() or after a balancing successful WSACleanup() call. WSAStartup is required to provide a reference count by any component using Winsock to guarantee initialization for Winsock API usage. An unbalance WSAStartup/WSACleanup call pattern by a component can lead to undefined behavior as this can cause the Winsock layer to unload libraries and release resources while still being used.</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
-  <li><b>Parameter 1</b>&nbsp;-&nbsp;Last sucessfull WSAStartup call by this caller. Use dps to dump the stack if not NULL</li>
-  <li><b>Parameter 2</b>&nbsp;-&nbsp;Last sucessfull WSACleanup call by this caller. Use dps to dump the stack if not NULL</li>
+  <li><b>Parameter 1</b>&nbsp;-&nbsp;Last successful WSAStartup call by this caller. Use dps to dump the stack if not NULL</li>
+  <li><b>Parameter 2</b>&nbsp;-&nbsp;Last successful WSACleanup call by this caller. Use dps to dump the stack if not NULL</li>
   <li><b>Parameter 3</b>&nbsp;-&nbsp;Last successful WSAStartup call in this process. Use dps to dump the stack if not NULL</li>
-  <li><b>Parameter 4</b>&nbsp;-&nbsp;Last sucessfull WSACleanup call in this process. Use dps to dump the stack if not NULL</li>
+  <li><b>Parameter 4</b>&nbsp;-&nbsp;Last successful WSACleanup call in this process. Use dps to dump the stack if not NULL</li>
 </ul>
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;Networking</li>
@@ -169,10 +170,10 @@ The following stop codes are contained in this set of tests.
 <h3>Networking API called before a successful WSPStartup() or after a balancing successful WSPCleanup() call made</h3>
 <p></p><i>Probable cause</i><p>A call was made to a Winsock service provider API before a successful WSPStarup() or after a balancing successful WSPCleanup() call. This is generally pointing to a fault to a specific Winsock layered service provider (LSP) layered between the application and Winsock. WSPStartup is required to provide a reference count by any LSP using Winsock to guarantee initialization for Winsock service provider API usage. An unbalance WSPStartup/WSPCleanup call pattern by an LSP can lead to undefined behavior as this can cause the Winsock layer to unload libraries and release resources while still being used.</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
-  <li><b>Parameter 1</b>&nbsp;-&nbsp;Last sucessfull WSPStartup call by this caller. Use dps to dump the stack if not NULL</li>
-  <li><b>Parameter 2</b>&nbsp;-&nbsp;Last sucessfull WSPCleanup call by this caller. Use dps to dump the stack if not NULL</li>
+  <li><b>Parameter 1</b>&nbsp;-&nbsp;Last successful WSPStartup call by this caller. Use dps to dump the stack if not NULL</li>
+  <li><b>Parameter 2</b>&nbsp;-&nbsp;Last successful WSPCleanup call by this caller. Use dps to dump the stack if not NULL</li>
   <li><b>Parameter 3</b>&nbsp;-&nbsp;Last successful WSPStartup call in this process. Use dps to dump the stack if not NULL</li>
-  <li><b>Parameter 4</b>&nbsp;-&nbsp;Last sucessfull WSPCleanup call in this process. Use dps to dump the stack if not NULL</li>
+  <li><b>Parameter 4</b>&nbsp;-&nbsp;Last successful WSPCleanup call in this process. Use dps to dump the stack if not NULL</li>
 </ul>
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;Networking</li>
@@ -188,10 +189,10 @@ The following stop codes are contained in this set of tests.
 <h3>A Winsock name service provider API was called before a successful NSPStartup() or after a balancing successful NSPCleanup() call was made</h3>
 <p></p><i>Probable cause</i><p>A call was made to a Winsock name service provider API before a successful NSPStarup() or after a balancing successful NSPCleanup() call. This is generally pointing to a fault to a specific Winsock name service provider (NSP) layered between the application and Winsock. NSPStartup is required to provide a reference count by any NSP using Winsock to guarantee initialization for Winsock name service provider API usage. An unbalance NSPStartup/NSPCleanup call pattern by an NSP can lead to undefined behavior as this can cause the Winsock layer to unload libraries and release resources while still being used.</p>
 <p></p><I>Information displayed by Application Verifier</I><ul>
-  <li><b>Parameter 1</b>&nbsp;-&nbsp;Last sucessfull NSPStartup call by this caller. Use dps to dump the stack if not NULL</li>
-  <li><b>Parameter 2</b>&nbsp;-&nbsp;Last sucessfull NSPCleanup call by this caller. Use dps to dump the stack if not NULL</li>
-  <li><b>Parameter 3</b>&nbsp;-&nbsp;Last sucessfull NSPStartup call in this process. Use dps to dump the stack if not NULL</li>
-  <li><b>Parameter 4</b>&nbsp;-&nbsp;Last sucessfull NSPCleanup call in this process. Use dps to dump the stack if not NULL</li>
+  <li><b>Parameter 1</b>&nbsp;-&nbsp;Last successful NSPStartup call by this caller. Use dps to dump the stack if not NULL</li>
+  <li><b>Parameter 2</b>&nbsp;-&nbsp;Last successful NSPCleanup call by this caller. Use dps to dump the stack if not NULL</li>
+  <li><b>Parameter 3</b>&nbsp;-&nbsp;Last successful NSPStartup call in this process. Use dps to dump the stack if not NULL</li>
+  <li><b>Parameter 4</b>&nbsp;-&nbsp;Last successful NSPCleanup call in this process. Use dps to dump the stack if not NULL</li>
 </ul>
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;Networking</li>

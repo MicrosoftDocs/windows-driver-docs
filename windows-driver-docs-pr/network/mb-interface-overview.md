@@ -2,7 +2,9 @@
 title: MB Interface Overview
 description: MB Interface Overview
 ms.date: 04/20/2017
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # MB Interface Overview
@@ -14,7 +16,7 @@ Windows 8 MB miniport drivers are based on the [NDIS 6.30](introduction-to-ndis
 
 The following diagram represents the architecture of the MB driver model.
 
-![diagram illustrating the architecture of the mobile broadband driver model.](images/wwanarchitecture.png)
+:::image type="content" source="images/wwanarchitecture.png" alt-text="Diagram that shows the architecture of the MB driver model.":::
 
 ### Terminology
 

@@ -1,7 +1,8 @@
 ---
-title: Determine which mobile broadband network is currently connected
+title: Determine Which Mobile Broadband Network is Currently Connected
 description: Determine which mobile broadband network is currently connected
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Determine which mobile broadband network is currently connected
@@ -15,7 +16,7 @@ For example:
 account.currentNetwork.accessPointName
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Common tasks for mobile broadband Windows Runtime APIs](./create-a-mobilebroadbandaccount-object.md)

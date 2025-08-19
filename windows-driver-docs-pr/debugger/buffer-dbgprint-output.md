@@ -3,6 +3,7 @@ title: Buffer DbgPrint Output
 description: Buffer DbgPrint Output
 keywords: ["Buffer DbgPrint Output (global flag)"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Buffer DbgPrint Output
@@ -42,15 +43,10 @@ The **Buffer DbgPrint Output** flag suppresses debugger output from **DbgPrint**
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-When debugger output is suppressed, it does not automatically appear in the kernel debugger. However, the message is always sent to the DbgPrint buffer, where it can be accessed by using the [**!dbgprint**](-dbgprint.md) debugger extension.
+When debugger output is suppressed, it does not automatically appear in the kernel debugger. However, the message is always sent to the DbgPrint buffer, where it can be accessed by using the [**!dbgprint**](../debuggercmds/-dbgprint.md) debugger extension.
 
 For information about the functions that communicate with the debugger, see [Sending Output to the Debugger](sending-output-to-the-debugger.md).
 
  
 
  
-
-
-
-
-

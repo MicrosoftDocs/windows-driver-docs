@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPS\_PREVIEW
-description: The WIA\_IPS\_PREVIEW property indicates the preview mode for a device.
+title: WIA_IPS_PREVIEW
+description: The WIA_IPS_PREVIEW property indicates the preview mode for a device.
 keywords: ["WIA_IPS_PREVIEW Imaging Devices"]
 topic_type:
 - apiref
@@ -11,81 +11,34 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 05/08/2023
 ---
 
-# WIA\_IPS\_PREVIEW
+# WIA_IPS_PREVIEW
 
+The WIA_IPS_PREVIEW property indicates the preview mode for a device.
 
-The WIA\_IPS\_PREVIEW property indicates the preview mode for a device.
+Property Type: VT_I4
 
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read/write
 
 ## Remarks
 
-An application sets WIA\_IPS\_PREVIEW to place a device into a preview mode.
+An application sets WIA_IPS_PREVIEW to place a device into a preview mode.
 
-The following table describes the constants that are valid with WIA\_IPS\_PREVIEW.
+The following table describes the constants that are valid with WIA_IPS_PREVIEW.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>WIA_FINAL_SCAN</p></td>
-<td><p>The application will perform a final scan.</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_PREVIEW_SCAN</p></td>
-<td><p>The application will perform a preview scan.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Value | Definition |
+|--|--|
+| WIA_FINAL_SCAN | The application will perform a final scan. |
+| WIA_PREVIEW_SCAN | The application will perform a preview scan. |
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Available in Windows Vista and later operating systems. For Windows XP, use the WIA_DPS_PREVIEW property instead.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
-
-[**WIA\_DPS\_PREVIEW**](wia-dps-preview.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_DPS_PREVIEW**](wia-dps-preview.md)

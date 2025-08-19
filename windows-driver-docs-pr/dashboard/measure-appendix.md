@@ -1,8 +1,8 @@
 ---
 title: Appendix for the Microsoft driver measure dictionary
 description: Collection of ancillary materials for the Microsoft driver measure dictionary
-ms.topic: article
 ms.date: 05/20/2019
+ms.topic: reference
 ---
 
 # Appendix for the Microsoft driver measure dictionary
@@ -36,11 +36,11 @@ ms.date: 05/20/2019
 |Msosync.exe|Cloud Storage|
 |Microsoft One Connect|Productivity|
 |Windbg.exe|Developer Tools|
-|Microsoft Office Onenote|Productivity|
+|Microsoft Office OneNote|Productivity|
 |Microsoft Mahjong|Games|
 |Power Point|Productivity|
 |Windbg.exe|Developer Tools|
-|Microsoft Office Onenote|Productivity|
+|Microsoft Office OneNote|Productivity|
 |Microsoft Zune Music|Media|
 |Microsoft Mahjong|Games|
 |PowerPoint|Productivity|

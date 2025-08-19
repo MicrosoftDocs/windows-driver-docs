@@ -5,6 +5,7 @@ keywords:
 - downloaded font commands WDK Unidrv
 - font commands WDK Unidrv
 ms.date: 01/26/2023
+ms.topic: reference
 ---
 
 # Commands for Downloaded Fonts
@@ -22,5 +23,3 @@ The following table lists the commands for controlling downloaded fonts. All com
 | **CmdSelectFontWidth** | Command to select the width of a downloaded font. | Optional. If not present, the width of the downloaded font is scaled proportionally its height. |
 | **CmdSetCharCode** | Command to specify the character code of the next character to be downloaded or deleted. | Required if the printer supports downloaded fonts. |
 | **CmdSetFontID** | Command to set the current font ID. | Required if the printer supports downloaded fonts. |
-
-For examples, see the [sample GPD files](sample-gpd-files.md).

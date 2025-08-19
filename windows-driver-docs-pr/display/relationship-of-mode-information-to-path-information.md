@@ -2,27 +2,24 @@
 title: Relationship of Mode Information to Path Information
 description: Relationship of Mode Information to Path Information
 keywords:
-- connecting displays WDK Windows 7 display , CCD concepts, mode and path information
-- connecting displays WDK Windows Server 2008 R2 display , CCD concepts, mode and path information
-- configuring displays WDK Windows 7 display , CCD concepts, mode and path information
-- configuring displays WDK Windows Server 2008 R2 display , CCD concepts, mode and path information
-- CCD concepts WDK Windows 7 display , mode and path information
-- CCD concepts WDK Windows Server 2008 R2 display , mode and path information
-- mode and path information WDK Windows 7 display
-- mode and path information WDK Windows Server 2008 R2 display
-- path and mode information WDK Windows 7 display
-- path and mode information WDK Windows Server 2008 R2 display
-ms.date: 04/20/2017
+- connecting and configuring displays, Windows
+- mode and path information, CCD concepts
+- virtual mode, connecting and configuring displays
+- mode and path information, Windows
+ms.date: 06/27/2024
+ms.topic: concept-article
 ---
 
 # Relationship of Mode Information to Path Information
 
+The connecting and configuring displays (CCD) [**QueryDisplayConfig**](/windows/win32/api/winuser/nf-winuser-querydisplayconfig) function always returns path information and source and target mode information for a particular display configuration. The following figure shows an example of how the source and target mode information relates to the path information when the [**DISPLAYCONFIG_PATH_SUPPORT_VIRTUAL_MODE**](/windows/win32/api/wingdi/ns-wingdi-displayconfig_path_info) isn't set; that is, when the path isn't virtual-aware. In this example, the QDC_ALL_PATHS flag was passed to the *Flags* parameter in the call to **QueryDisplayConfig**.
 
-This section applies only to Windows 7 and later, and Windows Server 2008 R2 and later versions of Windows operating system.
+:::image type="content" source="images/displayconfigpathandmode.png" alt-text="Diagram illustrating the relationship between mode information and path information in a display configuration that doesn't support virtual modes.":::
 
-The [**QueryDisplayConfig**](/windows/win32/api/winuser/nf-winuser-querydisplayconfig) CCD function always returns path information and source and target mode information for a particular display configuration. The following figure shows an example of how the source and target mode information relates to the path information. In this example, the QDC\_ALL\_PATHS flag was passed to the *Flags* parameter in the call to **QueryDisplayConfig**.
+Starting in Windows 10, the [**DISPLAYCONFIG_PATH_INFO**](/windows/win32/api/wingdi/ns-wingdi-displayconfig_path_info), [**DISPLAYCONFIG_PATH_SOURCE_INFO**](/windows/win32/api/wingdi/ns-wingdi-displayconfig_path_source_info), and [**DISPLAYCONFIG_PATH_TARGET_INFO**](/windows/win32/api/wingdi/ns-wingdi-displayconfig_path_target_info) structures are updated to support paths that are virtual-aware:
 
-![diagram illustrating the relationship of mode information to path information.](images/displayconfigpathandmode.png)
+* The [**DISPLAYCONFIG_PATH_SUPPORT_VIRTUAL_MODE**](/windows/win32/api/wingdi/ns-wingdi-displayconfig_path_info) flag was added as a **flags** value. When this flag is set, it indicates that the path supports virtual modes.
 
- 
+* A union was added to **DISPLAYCONFIG_PATH_SOURCE_INFO**. The **modeInfoIdx** member is used only when the added flag isn't set. When the flag is set, mode information is in the **cloneGroupId** and **sourceModeInfoIdx** members.
 
+* A union was added to **DISPLAYCONFIG_PATH_TARGET_INFO**. The **modeInfoIdx** member is used only when the added flag isn't set. When the flag is set, mode information is in the **desktopModeInfoIdx** and **targetModeInfoIdx** members.

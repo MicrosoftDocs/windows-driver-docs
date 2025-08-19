@@ -9,6 +9,7 @@ keywords:
 - filters WDK XPS
 - IPrintPipelineFilter
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # XPS Filters
@@ -32,18 +33,6 @@ In some older XPS filters, the **DllGetClassObject** function retrieves a refere
 XPS filters make the printing subsystem more robust, because the filters run in a process different from the spooler. This "sandboxing" both protects against failures and allows a plug-in to run with different security permissions. XPSDrv also enables you to reuse filters across families of printers to lower costs and development time.
 
 For maximum flexibility and reuse, each filter should perform a specific print processing function. For example, one filter would only apply a watermark, while another would only perform accounting.
-
-The following [XPS driver and filter samples](/samples/microsoft/windows-driver-samples/xpsdrv-driver-and-filter-sample/) are available on Github:
-
-- Booklet
-
-- Color conversion
-
-- Nup
-
-- Page scaling
-
-- Watermark
 
 For more information about the filter pipeline manager, see [XPSDrv Render Module](xpsdrv-render-module.md).
 

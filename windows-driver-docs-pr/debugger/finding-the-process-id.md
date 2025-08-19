@@ -2,8 +2,9 @@
 title: Finding the Process ID
 description: Finding the Process ID
 keywords: ["process, process ID (PID)", "PID (process ID)", "TList, related techniques", "Task Manager"]
-ms.date: 03/10/2022
-ms.custom: contperf-fy21q3
+ms.date: 12/06/2024
+ms.topic: concept-article
+ms.custom: sfi-image-nochange
 ---
 
 # Finding the process ID
@@ -18,7 +19,7 @@ Task Manager can be opened in a number of ways, but the simplest is to select Ct
 
 In Windows, first click **More details** to expand the information displayed.  From the **Processes** tab, select **Details** to see the process ID listed in the *PID* column.
 
-![partial screen shot of task manager in Windows 11, showing process numbers, sorted by user name.](images/process-id-task-manager-windows-11.png)
+:::image type="content" source="images/process-id-task-manager-windows-11.png" alt-text="Screenshot of Task Manager in Windows 11, displaying process numbers sorted by user name.":::
 
 Click on any column name to sort. You can right click a process name to see more options for a process.
 
@@ -77,7 +78,7 @@ For more information, see [TList](tlist.md).
 
 ## The **.tlist** debugger command
 
-If there's already a user-mode debugger running on the system in question, the [**.tlist (List Process IDs)**](-tlist--list-process-ids-.md) command will display a list of all PIDs on that system.
+If there's already a user-mode debugger running on the system in question, the [**.tlist (List Process IDs)**](../debuggercmds/-tlist--list-process-ids-.md) command will display a list of all PIDs on that system.
 
 ## PowerShell Get-Process command
 
@@ -95,8 +96,4 @@ For more information, see [Get-Process](/powershell/module/microsoft.powershell.
 
 ## Additional resources
 
-To learn more about Windows internals (including memory usage, context, threads, and processes), review additional resources, such as [*Windows Internals*](/sysinternals/resources/windows-internals) by Mark Russinovich, David Solomon, and Alex Ionescu.
-
-
-
-
+To learn more about Windows internals (including context, threads, and processes), review additional resources, such as [*Windows Internals*](/sysinternals/resources/windows-internals) by  Pavel Yosifovich, Mark Russinovich, David Solomon, and Alex Ionescu.

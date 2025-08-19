@@ -3,6 +3,7 @@ title: How to Complete an IRP in a Dispatch Routine
 description: How to Complete an IRP in a Dispatch Routine
 keywords: ["completing IRPs WDK kernel , dispatch routines", "dispatch routines WDK kernel , completing IRPs", "status information WDK IRPs", "I/O status blocks WDK kernel", "status blocks WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # How to Complete an IRP in a Dispatch Routine

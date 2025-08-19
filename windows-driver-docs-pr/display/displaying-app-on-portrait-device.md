@@ -1,7 +1,8 @@
 ---
-title: Example code for displaying an app on a portrait device
+title: Example Code for Displaying an App on a Portrait Device
 description: Here is code that you can use to make your app display correctly on a portrait device.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example code for displaying an app on a portrait device

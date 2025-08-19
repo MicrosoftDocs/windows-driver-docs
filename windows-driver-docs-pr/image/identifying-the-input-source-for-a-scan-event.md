@@ -2,6 +2,7 @@
 title: Identifying the Input Source for a Scan Event
 description: Identifying the Input Source for a Scan Event
 ms.date: 05/29/2020
+ms.topic: concept-article
 ---
 
 # Identifying the Input Source for a Scan Event

@@ -1,7 +1,9 @@
 ---
-title: Custom USB interface support for 3D printers
+title: Custom USB Interface Support for 3D Printers
 description: This topic describes how to enable a custom USB interfaces for 3D printers in the v3 and v4 print driver ecosystems.
 ms.date: 03/17/2023
+ms.topic: concept-article
+ms.custom: sfi-image-nochange
 ---
 
 # Enable a custom USB interface for a 3D printer
@@ -106,8 +108,6 @@ This API is used by third-party manufacturers to print the document on their pri
 - **printerName** can be obtained from the registry using the port name. Third-party manufacturers may not be able to use the port name to communicate with their device. The printer name is unique on a Windows machine and their software will be capable of identifying which printer to print the job on. All printers active on a machine can be found at the following registry key:
 
     **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Print\\Printers**
-
-![3d printer registry.](images/3d-printer-registry.png)
 
 ### HRESULT Query(\_In\_ LPCWSTR command, \_In\_ LPCWSTR commandData, \_Out\_ LPWSTR resultBuffer, \_Out\_ resultBufferSize, , \_In\_ LPVOID\* ppPartnerData)
 

@@ -4,6 +4,7 @@ description: Creating a Trace Session for a Registered Provider
 keywords:
 - registered providers WDK software tracing
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating a Trace Session for a Registered Provider
@@ -51,12 +52,4 @@ The "Windows Kernel Trace" provider that appears in the list of named providers 
 The TMF file for the Windows Kernel Trace, system.tmf, is included in the WDK. Click **Select TMF Files**, click **Add**, navigate to the \\tools\\tracing\\i386 subdirectory, and then select system.tmf.
 
 For more information, see [Creating an NT Kernel Logger trace session](creating-an-nt-kernel-logger-trace-session.md).
-
- 
-
- 
-
-
-
-
 

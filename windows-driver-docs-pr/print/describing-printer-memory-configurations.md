@@ -8,6 +8,7 @@ keywords:
 - memory configurations WDK Unidrv
 - Unidrv WDK print
 ms.date: 01/27/2023
+ms.topic: how-to
 ---
 
 # Describing Printer Memory Configurations

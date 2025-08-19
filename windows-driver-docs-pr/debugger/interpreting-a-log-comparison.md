@@ -3,6 +3,7 @@ title: Interpreting a Log Comparison
 description: Interpreting a Log Comparison
 keywords: ["UMDH, interpreting a log comparison"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Interpreting a Log Comparison
@@ -60,8 +61,3 @@ Suppose you have two computers: a *logging computer* where you create a UMDH log
  
 
  
-
-
-
-
-

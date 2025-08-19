@@ -2,6 +2,7 @@
 title: Table Data Source
 description: Table Data Source
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Table Data Source

@@ -3,6 +3,7 @@ title: Debugging a Stalled System
 description: Debugging a Stalled System
 keywords: ["stalled system debugging"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging a Stalled System
@@ -38,8 +39,3 @@ Some useful techniques in this case include:
  
 
  
-
-
-
-
-

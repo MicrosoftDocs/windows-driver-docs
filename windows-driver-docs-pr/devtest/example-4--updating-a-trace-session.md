@@ -5,6 +5,7 @@ keywords:
 - trace sessions WDK , updating
 - updating trace sessions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 4: Updating a Trace Session

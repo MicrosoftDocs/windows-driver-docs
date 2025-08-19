@@ -2,6 +2,7 @@
 title: Setting Up the Web Site
 description: Setting Up the Web Site
 ms.date: 11/28/2017
+ms.topic: how-to
 ---
 
 # Setting Up the Web Site
@@ -42,8 +43,3 @@ The source directory can now be used for debugging by another computer with a so
  
 
  
-
-
-
-
-

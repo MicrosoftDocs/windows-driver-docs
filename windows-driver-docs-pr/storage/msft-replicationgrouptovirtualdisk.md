@@ -1,5 +1,5 @@
 ---
-title: MSFT\_ReplicationGroupToVirtualDisk class
+title: MSFT_ReplicationGroupToVirtualDisk Class
 description: Association between an MSFT\_ReplicationGroup and its MSFT\_VirtualDisk objects.
 ms.assetid: 21D7BD95-14EC-4869-80A9-50238B32BC27
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

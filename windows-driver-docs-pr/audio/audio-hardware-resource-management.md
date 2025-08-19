@@ -2,6 +2,7 @@
 title: Audio Hardware Resource Management
 description: Windows 10 includes the ability to express concurrency constraints using and XML file.
 ms.date: 12/03/2021
+ms.topic: concept-article
 ---
 
 # Audio Hardware Resource Management
@@ -191,7 +192,7 @@ Before streams are created, the audio hardware resource manager determines which
 
 When the resource group is assigned, the audio endpoint is notified of the assigned resource group. The resource XML declares which resource groups are applicable to the endpoint, in order of priority/preference, and the endpoint can be moved between the supported resource groups as needed to meet the overall system resource needs. 
 
-With out resource groups, in releases before Windows 11, the resource management system assumes that hardware resources are limited, but those resources can be moved freely across the audio endpoints (DSP MIPS). For example the system can create up to three offload streams, one communications stream, and one speech stream at a time, across any combination of audio endpoints. When resources are declared and used, they all come from a single pool. This can be thought of as having a single resource group shared across all audio endpoints.  As there was only one resource group, there was no need to notify the driver which group was in use.
+Without resource groups, in releases before Windows 11, the resource management system assumes that hardware resources are limited, but those resources can be moved freely across the audio endpoints (DSP MIPS). For example the system can create up to three offload streams, one communications stream, and one speech stream at a time, across any combination of audio endpoints. When resources are declared and used, they all come from a single pool. This can be thought of as having a single resource group shared across all audio endpoints.  As there was only one resource group, there was no need to notify the driver which group was in use.
 
 ### Example Resource Group Scenario
 

@@ -1,5 +1,5 @@
 ---
-title: MSFT\_PhysicalDiskToStorageReliabilityCounter class
+title: MSFT_PhysicalDiskToStorageReliabilityCounter Class
 description: Association between a MSFT\_PhysicalDisk object and the corresponding MSFT\_StorageReliabilityCounter object.
 ms.assetid: 2900E210-F130-4DCF-B451-7EACFF04B759
 keywords:
@@ -14,7 +14,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

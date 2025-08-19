@@ -1,5 +1,5 @@
 ---
-title: SetSecurityDescriptor method of the MSFT\_StorageProvider class
+title: SetSecurityDescriptor Method of the MSFT_StorageProvider Class
 description: Sets the security descriptor that controls access to the storage provider object instance.
 ms.assetid: B8C903EE-96CA-4854-971A-C7A914F91BB5
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

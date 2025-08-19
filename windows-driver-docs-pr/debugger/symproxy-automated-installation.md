@@ -2,6 +2,8 @@
 title: SymProxy Automated Installation
 description: These steps along with the Install.cmd script below can help automate the installation of SymProxy to a default IIS installation. 
 ms.date: 03/12/2019
+ms.topic: install-set-up-deploy
+ms.custom: sfi-ropc-nochange
 ---
 
 # SymProxy Automated Installation
@@ -41,7 +43,7 @@ Example Install.Cmd parameter usage:
 Install.cmd D:\SymStore\Symbols CONTOSO\SymProxyService Pa$$word
 ```
 
-## <span id="install.cmd"></span><span id="INSTALL.CMD"></span>Install.cmd
+## Install.cmd
 
 
 ```bat
@@ -64,7 +66,7 @@ wevtutil.exe install-manifest %windir%\System32\inetsrv\symproxy.man
 regedit.exe /s symproxy.reg
 
 ::
-::  Web server Configuraiton
+::  Web server Configuration
 ::
 
 IF not exist %VirDirectory% mkdir %VirDirectory%
@@ -110,7 +112,7 @@ rem Add * to the MIME Types of the 'Default Web Site'
 </appcmd>    
 ```
 
-## <span id="Testing_the_SymProxy_Installation_"></span><span id="testing_the_symproxy_installation_"></span><span id="TESTING_THE_SYMPROXY_INSTALLATION_"></span>Testing the SymProxy Installation
+## Testing the SymProxy Installation
 
 
 The system should now be ready to acquire and serve files. To test it, start by restarting the IISAdmin service by running iisreset.exe. This will reload the ISAPI filter with the current IIS and SymProxy configuration.
@@ -131,17 +133,10 @@ Open the Performance Monitor and view the Symbol Proxy counters.
 
 Open the Event Viewer and view the Microsoft\\Windows\\SymProxy events.
 
-## <span id="related_topics"></span>See also
-
+## See also
 
 [Installing SymProxy](installing-symproxy.md)
 
  
 
  
-
-
-
-
-
-

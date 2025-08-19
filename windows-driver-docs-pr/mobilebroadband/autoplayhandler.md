@@ -2,6 +2,7 @@
 title: AutoplayHandler
 description: AutoplayHandler
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # AutoplayHandler
@@ -10,7 +11,7 @@ ms.date: 04/20/2017
 
 The AutoplayHandler element specifies a UWP device app that should appear as the recommended AutoPlay action when a user plugs in a device.
 
-## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+## Usage
 
 
 ``` syntax
@@ -19,12 +20,12 @@ The AutoplayHandler element specifies a UWP device app that should appear as the
 </AutoplayHandler>
 ```
 
-## <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributes
+## Attributes
 
 
 There are no attributes.
 
-## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
+## Child elements
 
 
 <table>
@@ -64,7 +65,7 @@ There are no attributes.
 
  
 
-## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
+## Parent elements
 
 
 <table>
@@ -88,7 +89,7 @@ There are no attributes.
 
  
 
-## <span id="XSD"></span><span id="xsd"></span>XSD
+## XSD
 
 
 ``` syntax
@@ -106,7 +107,7 @@ There are no attributes.
   </xs:complexType>
 ```
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 -   The structure for the [PackageIdentity](packageidentity.md) and [Application](application-windowsinfo-v2.md) elements are identical with the Application Manifest structure, so copy the elements from the application's manifest.

@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageSubSystemToStoragePool class
+title: MSFT_StorageSubSystemToStoragePool Class
 description: Association between StorageSubSystem and StoragePool.
 ms.assetid: 8fa2f262-3ffd-4bcb-b6a6-628e7d3fbe63
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

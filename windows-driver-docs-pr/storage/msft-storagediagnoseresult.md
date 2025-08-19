@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageDiagnoseResult class
+title: MSFT_StorageDiagnoseResult Class
 description: Represents the result of a diagnose method call on a storage object.
 ms.assetid: 6C164BE2-2B7B-404B-A254-1FBBB9FAE579
 keywords:
@@ -23,7 +23,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

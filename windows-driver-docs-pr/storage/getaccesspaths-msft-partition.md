@@ -1,5 +1,5 @@
 ---
-title: GetAccessPaths method of the MSFT\_Partition class
+title: GetAccessPaths Method of the MSFT_Partition Class
 description: Retrieves all mount points and drive letters that can be used to access the partition.
 ms.assetid: a7c0e34e-b9f3-40ce-b81d-b4a46dc9c0ec
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

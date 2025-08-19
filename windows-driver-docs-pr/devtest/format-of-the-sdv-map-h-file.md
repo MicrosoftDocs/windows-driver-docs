@@ -5,6 +5,7 @@ keywords:
 - Sdv-map.h WDK Static Driver Verifier , formats
 - formats WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Format of the Sdv-map.h File
@@ -33,12 +34,4 @@ When SDV finds an entry point, it creates a **\#define** directive in the follow
 ```
 #define fun_Function_RoleType EntryPoint
 ```
-
- 
-
- 
-
-
-
-
 

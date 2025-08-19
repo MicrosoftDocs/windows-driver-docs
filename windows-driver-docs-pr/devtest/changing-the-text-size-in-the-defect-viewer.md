@@ -6,10 +6,10 @@ keywords:
 - Defect Viewer WDK Static Driver Verifier
 - text size WDK Defect Viewer
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Changing the Text Size in the Defect Viewer
-
 
 To change the size of the text in the Defect Viewer windows, from the **View** menu, select **Smaller** or **Larger**, or press the F1 (smaller) or F2 (larger) keys. You can press them repeatedly to increase or decrease the text size until it reaches its minimum or maximum size.
 
@@ -17,13 +17,4 @@ This feature affects only the Defect Viewer. It does not change the size of the 
 
 The following screen shot shows how to change text size in the Defect Viewer window.
 
-![screen shot showing how to change text size in the defect viewer window.](images/sdv-defectviewerbig.png)
-
- 
-
- 
-
-
-
-
-
+:::image type="content" source="images/sdv-defectviewerbig.png" alt-text="Screenshot of the Defect Viewer window with options to change text size.":::

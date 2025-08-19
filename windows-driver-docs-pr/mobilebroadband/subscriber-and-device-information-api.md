@@ -2,6 +2,7 @@
 title: Subscriber and Device Information API
 description: Subscriber and Device Information API
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Subscriber and Device Information API
@@ -27,7 +28,7 @@ The Subscriber and Device Information API provides the following subscriber and 
 
 For more info about the Subscriber and Device Information API, see [**Windows.Networking.NetworkOperators namespace**](/uwp/api/Windows.Networking.NetworkOperators).
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [List of mobile broadband Windows Runtime APIs](list-of-mobile-broadband-windows-runtime-apis.md)

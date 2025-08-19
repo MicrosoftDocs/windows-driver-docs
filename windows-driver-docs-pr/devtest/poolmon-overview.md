@@ -5,12 +5,10 @@ keywords:
 - PoolMon WDK , about PoolMon
 - Memory Pool Monitor WDK , about Memory Pool Monitor
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # PoolMon Overview
-
-
-## <span id="ddk_poolmon_overview_tools"></span><span id="DDK_POOLMON_OVERVIEW_TOOLS"></span>
 
 
 PoolMon displays the following data about memory allocations. The data is sorted by the allocations' pool tags.
@@ -34,12 +32,4 @@ Using PoolMon, you can also:
 -   Save configured data to a file.
 
 -   Generate a file of the tags used by drivers on the local system (32-bit Windows only).
-
- 
-
- 
-
-
-
-
 

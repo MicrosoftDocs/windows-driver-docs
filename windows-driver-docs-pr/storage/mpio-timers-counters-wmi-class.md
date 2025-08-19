@@ -1,7 +1,8 @@
 ---
-title: MPIO\_TIMERS\_COUNTERS WMI Class
+title: MPIO_TIMERS_COUNTERS WMI Class
 description: MPIO\_TIMERS\_COUNTERS WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MPIO\_TIMERS\_COUNTERS WMI Class
@@ -20,7 +21,7 @@ class MPIO_TIMERS_COUNTERS
     //
     // Flag indicating if automatic path verification must be performed every
     // N seconds (where N depends on the value set in PathVerificationPeriod).
-    // Type is boolean and must be filled with either 0 (disbale) or 1 (enable).
+    // Type is boolean and must be filled with either 0 (disable) or 1 (enable).
     //
     [WmiDataId(1),
      read, write,

@@ -1,7 +1,8 @@
 ---
-title: Buy hardware for using MITT
+title: Buy Hardware for Using MITT
 description: To you use Multiple Interface Test Tool (MITT), order you need a MITT board and bus-specific adapter boards that plug into ports on the MITT board. The type of adapter board depends on the bus you want to test.
-ms.date: 04/20/2017
+ms.date: 01/12/2024
+ms.topic: checklist
 ---
 
 # Buy hardware for using MITT
@@ -12,39 +13,39 @@ To use the Multiple Interface Test Tool (MITT), you need a MITT board and bus-sp
 
 - **MITT board**
 
-    For example, FPGA development board (Nexys2). See [FPGA board from Digilent](https://store.digilentinc.com/nexys-2-spartan-3e-fpga-trainer-board-retired-see-nexys-4-ddr/).
+    For example, [FPGA development board (Nexys A7)](https://www.amd.com/en/corporate/university-program/aup-boards/digilent-nexys-a7.html).
 
-    ![mitt board.](images/g73a5707.jpg)
+    :::image type="content" source="images/nexys-a7-top-600.png" alt-text="Picture of a MITT board.":::
 
 - **UART/SPI adapter board**
 
     See [UART/SPI adapter board from JJG Technologies.](http://www.jjgtechnologies.com/UART-SPI.htm)
 
-    ![uart adapter board.](images/uart1.png)
+    :::image type="content" source="images/uart1.png" alt-text="Picture of a UART adapter board.":::
 
 - **GPIO adapter board**
 
     See [GPIO adapter board from JJG Technologies.](http://www.jjgtechnologies.com/GPIO.htm)
 
-    ![gpio adapter for mitt.](images/gpioadapter.jpg)
+    :::image type="content" source="images/gpioadapter.jpg" alt-text="Picture of a GPIO adapter for MITT.":::
 
 - **I2C adapter board**
 
     See [I2C adapter board from JJG Technologies.](http://www.jjgtechnologies.com/I2C.htm)
 
-    ![i2c adapter for mitt.](images/i2cadapter.jpg)
+    :::image type="content" source="images/i2cadapter.jpg" alt-text="Picture of an I2C adapter for MITT.":::
 
 - **MCATT expansion board**
 
     See [MCATT expansion board from JJG Technologies.](http://www.jjgtechnologies.com/mcatt.htm)
 
-    ![mcatt expansion board.](images/mcatt-exp.jpg)
+    :::image type="content" source="images/mcatt-exp.jpg" alt-text="Picture of an MCATT expansion board.":::
 
 - **Touch simulator pad**
 
     Touch simulator pad and a band cable to connect to the adapter. MCATT tool is able to stimulate a capacitive touch device by stimulating the precise points that come in contact with the board. The boards can be customized to have various sized and contact point resolutions.
 
-    ![touch simulator pad.](images/touch.jpg)
+    :::image type="content" source="images/touch.jpg" alt-text="Picture of a touch simulator pad.":::
 
     These pad is customized for the device to test.
 
@@ -54,4 +55,4 @@ To use the Multiple Interface Test Tool (MITT), you need a MITT board and bus-sp
 
 ## Related topics
 
-[Testing with Multi Interface Test Tool (MITT)]()
+- [SPI tests in MITT](spi-tests-in-mitt.md)

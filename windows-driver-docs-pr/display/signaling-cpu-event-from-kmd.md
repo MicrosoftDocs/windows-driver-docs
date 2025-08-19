@@ -1,10 +1,11 @@
 ---
-title: Signaling a CPU event from KMD
+title: Signaling a CPU Event from KMD
 description: How to signal a CPU event from KMD
 ms.date: 09/12/2022
 keywords:
 - Signal a CPU event from KMD
 - Signal a CPU event from kernel-mode driver
+ms.topic: concept-article
 ---
 
 # Signaling a CPU event from a kernel-mode driver

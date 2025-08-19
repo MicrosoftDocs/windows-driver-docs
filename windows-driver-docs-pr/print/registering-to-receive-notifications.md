@@ -10,6 +10,7 @@ keywords:
 - UnRegisterForPrintAsyncNotifications
 - unregistering for spooler notifications
 ms.date: 06/12/2020
+ms.topic: how-to
 ---
 
 # Registering to receive notifications

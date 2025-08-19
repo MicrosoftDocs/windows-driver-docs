@@ -2,6 +2,7 @@
 title: Driver development changes for Windows Server 2022
 description: This section describes new features for driver development in Windows 10.
 ms.date: 05/28/2021
+ms.topic: whats-new
 ---
 
 # What's new in Windows Server 2022
@@ -74,19 +75,19 @@ For information on what is new on the WinDbg Preview debugger, see [WinDbg Previ
 
 - [Portable PDB Symbols](./debugger/symbols-portable-pdb.md) support.
 - [Support for Open Enclave debugging](./debugger/open-enclave-debugging.md)- WinDbg Preview can now debug Open Enclave (OE) applications.
-- For user mode time travel debugging, a new timeline window displays a visual representation of important events in your trace: exceptions, breakpoints, function calls, and memory accesses. For more information, see [WinDbg Preview - Timeline](./debugger/windbg-timeline-preview.md).
+- For user mode time travel debugging, a new timeline window displays a visual representation of important events in your trace: exceptions, breakpoints, function calls, and memory accesses. For more information, see [WinDbg Preview - Timeline](./debuggercmds/windbg-timeline-preview.md).
 
-Updates and addtions to debug transport topics, such as [Setting Up KDNET Network Kernel Debugging Automatically](./debugger/setting-up-a-network-debugging-connection-automatically.md), [Setting Up Kernel-Mode Debugging over USB EEM on an Arm device using KDNET](./debugger/setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md) and [Setting Up 2PF Kernel-Mode Debugging using KDNET](./debugger/setting-up-kernel-mode-debugging-using-2pf.md).
+Updates and additions to debug transport topics, such as [Setting Up KDNET Network Kernel Debugging Automatically](./debugger/setting-up-a-network-debugging-connection-automatically.md), [Setting Up Kernel-Mode Debugging over USB EEM on an Arm device using KDNET](./debugger/setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md) and [Setting Up 2PF Kernel-Mode Debugging using KDNET](./debugger/setting-up-kernel-mode-debugging-using-2pf.md).
 
-Bugcheck stop code topic addtions and updates, including listing live dump codes in a new section - 
-[Kernel Live Dump Code Reference](./debugger/bug-check-code-reference-live-dump.md).
+Bugcheck stop code topic additions and updates, including listing live dump codes in a new section - 
+[Kernel Live Dump Code Reference](./debugger/kernel-live-dump-code-reference.md).
 
 
 ## Driver Quality
 
 New [CodeQL and the Static Tools Logo Test](./devtest/static-tools-and-codeql.md) and [Supplemental Windows Driver CodeQL Queries](./devtest/codeql-windows-driver-rules.md).
 
-Updates and additions to Driver Verfier rules, for example the new [DoubleFetch rule](./devtest/wdm-doublefetch.md). 
+Updates and additions to Driver Verifier rules, for example the new [DoubleFetch rule](./devtest/wdm-doublefetch.md). 
 
 ## Driver Security
 

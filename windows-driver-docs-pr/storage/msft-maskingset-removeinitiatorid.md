@@ -1,5 +1,5 @@
 ---
-title: RemoveInitiatorId method of the MSFT\_MaskingSet class
+title: RemoveInitiatorId Method of the MSFT_MaskingSet Class
 description: Removes one or more initiator identifiers from the masking set.
 ms.assetid: 1EB34D83-40B8-4174-9AC5-06091EC5A610
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

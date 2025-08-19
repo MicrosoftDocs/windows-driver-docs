@@ -5,6 +5,7 @@ keywords:
 - filtering trace messages, adding rules WDK
 - trace message filters WDK , adding rules
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Adding a Rule
@@ -21,12 +22,4 @@ To add a rule to a filter:
 4.  Click **Add Rule**.
 
 If you are using a [workspace](using-traceview-workspaces.md), you must [resave the workspace](saving-or-resaving-a-workspace.md) after adding the rule. Otherwise, the rule is not added to the workspace.
-
- 
-
- 
-
-
-
-
 

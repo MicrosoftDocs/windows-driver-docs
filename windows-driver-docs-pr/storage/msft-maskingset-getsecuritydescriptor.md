@@ -1,5 +1,5 @@
 ---
-title: GetSecurityDescriptor method of the MSFT\_MaskingSet class
+title: GetSecurityDescriptor Method of the MSFT_MaskingSet Class
 description: Retrieves the security descriptor that controls access to the masking set object instance.
 ms.assetid: 8738053D-3852-4EB9-9297-48428030CFEF
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

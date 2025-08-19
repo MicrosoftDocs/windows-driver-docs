@@ -5,6 +5,7 @@ keywords:
 - preoperation callback routines WDK file system minifilter , completing I/O operations
 - completing I/O requests WDK file system
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Completing an I/O Operation in a Preoperation Callback Routine

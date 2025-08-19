@@ -1,7 +1,8 @@
 ---
-title: Indicator implementation
+title: Indicator Implementation
 description: This topic describes indicator implementation.
-ms.date: 10/17/2018
+ms.date: 03/26/2025
+ms.topic: concept-article
 ---
 
 # Indicator implementation

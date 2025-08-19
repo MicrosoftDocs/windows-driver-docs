@@ -16,7 +16,7 @@ ms.date: 04/20/2017
 # Pvk2Pfx
 
 
-Pvk2Pfx (Pvk2Pfx.exe) is a command-line tool copies public key and private key information contained in .spc, .cer, and .pvk files to a Personal Information Exchange (.pfx) file.
+Pvk2Pfx (Pvk2Pfx.exe) is a command-line tool that copies public key and private key information contained in .spc, .cer, and .pvk files to a Personal Information Exchange (.pfx) file.
 
 ```
     pvk2pfx /pvk 

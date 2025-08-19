@@ -1,8 +1,8 @@
 ---
 title: Number of user mode crashes in Windows components
 description: Learn about the measure that monitors how often Windows components are crashing in the display driver, related to the number of machines using the driver.
-ms.topic: article
 ms.date: 09/03/2021
+ms.topic: concept-article
 ---
 
 # Number of user mode crashes in Windows components

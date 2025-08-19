@@ -1,5 +1,5 @@
 ---
-title: Add bidirectional communication
+title: Add Bidirectional Communication
 description: Provides information about how to add bidirectional communication.
 keywords:
 - print spooler customizing WDK, bidirectional communication
@@ -8,6 +8,7 @@ keywords:
 - bidirectional communication WDK print
 - bidi communication WDK print
 ms.date: 09/07/2022
+ms.topic: concept-article
 ---
 
 # Add bidirectional communication

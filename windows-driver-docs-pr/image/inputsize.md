@@ -1,5 +1,5 @@
 ---
-title: InputSize element
+title: InputSize Element
 description: The optional InputSize element specifies the size of the original scan media.
 keywords: ["InputSize element Imaging Devices"]
 topic_type:
@@ -47,7 +47,7 @@ The optional **InputSize** element specifies the size of the original scan media
 
 ## Remarks
 
-The **InputSize** element can contain the [**DocumentSizeAutoDetect**](documentsizeautodetect.md) or [**InputMediaSize**](inputmediasize.md) element, but not both. **DocumentSizeAutoDetect** specifies that the device utomatically detects the size of the original page. **InputMediaSize** specifies the size of the media to be scanned for the current job.
+The **InputSize** element can contain the [**DocumentSizeAutoDetect**](documentsizeautodetect.md) or [**InputMediaSize**](inputmediasize.md) element, but not both. **DocumentSizeAutoDetect** specifies that the device automatically detects the size of the original page. **InputMediaSize** specifies the size of the media to be scanned for the current job.
 
 The client can specify the optional **MustHonor** attribute only when the **InputSize** element is contained within a **CreateScanJobRequest** hierarchy. For more information about **MustHonor** and its usage, see [**CreateScanJobRequest**](createscanjobrequest.md).
 

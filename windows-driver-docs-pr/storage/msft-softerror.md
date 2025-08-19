@@ -1,5 +1,5 @@
 ---
-title: MSFT\_SoftError class
+title: MSFT_SoftError Class
 description: Represents a soft error.
 ms.assetid: 95810BD7-A582-4B4A-A878-35CDDD949599
 keywords:
@@ -21,7 +21,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

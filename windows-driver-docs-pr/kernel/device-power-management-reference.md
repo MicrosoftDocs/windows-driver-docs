@@ -1,9 +1,10 @@
 ---
-title: Device power management reference
+title: Device Power Management Reference
 description: Describes DDIs that drivers can use to divide their device hardware into multiple logical components to enable fine-grained power management
 keywords: [AcceptDeviceNotification]
 ms.date: 12/17/2018
 ms.custom: 19H1
+ms.topic: reference
 ---
 
 # Device power management reference
@@ -54,7 +55,7 @@ These callback routines are required by the power management framework (PoFx) to
 
 ## Device Power Management Structures
 
-The the power management framework (PoFx) defines these structures to support device power management.
+The power management framework (PoFx) defines these structures to support device power management.
 
 |Topic|Description|
 |----|----|

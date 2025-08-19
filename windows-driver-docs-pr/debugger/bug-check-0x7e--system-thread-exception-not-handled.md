@@ -17,7 +17,7 @@ api_type:
 The SYSTEM_THREAD_EXCEPTION_NOT_HANDLED bug check has a value of 0x0000007E. This bug check indicates that a system thread generated an exception that the error handler didn't catch.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## SYSTEM_THREAD_EXCEPTION_NOT_HANDLED parameters
 
@@ -48,9 +48,9 @@ If you plan to debug this problem, the exception address (parameter 2) should id
 
 If a driver is listed by name within the bug check message, disable or remove that driver. If the issue is narrowed down to a single driver, set breakpoints and single-step forward in code to locate the failure and gain insight into events leading up to the crash.
 
-The [!analyze](-analyze.md) debugger extension displays information about the bug check and can be helpful in determining the root cause.
+The [!analyze](../debuggercmds/-analyze.md) debugger extension displays information about the bug check and can be helpful in determining the root cause.
 
-More analysis can be done by using the [!thread](-thread.md) extension, and the [dds, dps, and dqs (display words and symbols)](dds--dps--dqs--display-words-and-symbols-.md) commands. This technique is reasonable when WinDbg reports "Probably caused by : ntkrnlmp.exe."
+More analysis can be done by using the [!thread](../debuggercmds/-thread.md) extension, and the [dds, dps, and dqs (display words and symbols)](../debuggercmds/dds--dps--dqs--display-words-and-symbols-.md) commands. This technique is reasonable when WinDbg reports "Probably caused by : ntkrnlmp.exe."
 
 If exception code 0x80000003 occurs, a hard-coded breakpoint or assertion was hit, but the system was started with the **/NODEBUG** switch. This problem shouldn't occur frequently. If it occurs repeatedly, make sure that a kernel debugger is connected and the system is started with the **/DEBUG** switch.
 
@@ -62,7 +62,7 @@ For more information about WinDbg and **!analyze**, see:
 
 - [Analyzing a kernel-mode dump file with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-- [Using the !analyze extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
+- [Using the !analyze extension](using-the--analyze-extension.md) and [!analyze](../debuggercmds/-analyze.md)
 
 ## Remarks
 
@@ -78,4 +78,4 @@ If you're not equipped to use the Windows debugger to work on this problem, you 
 
 - Confirm that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about required hardware at [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications).
 
-For more general troubleshooting information, see [Blue screen data](blue-screen-data.md).
+For more general troubleshooting information, see [Analyze Bug Check Blue Screen Data](blue-screen-data.md).

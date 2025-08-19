@@ -1,11 +1,12 @@
 ---
-title: Registering a device interface class
+title: Registering a Device Interface Class
 description: Learn more about how to register a device interface class
 keywords:
 - interface classes WDK device installations
 - registering device interface classes
 - device interface classes WDK device installations
 ms.date: 04/11/2022
+ms.topic: concept-article
 ---
 
 # Registering a device interface class

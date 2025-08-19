@@ -5,7 +5,8 @@ keywords:
 - Bluetooth WDK , registry entries
 - registry WDK Bluetooth
 - COD_Type subkey
-ms.date: 04/20/2017
+ms.date: 01/10/2024
+ms.topic: reference
 ---
 
 # Bluetooth Registry Entries
@@ -44,4 +45,4 @@ You can override the default system scanning parameters by providing one or more
 | ConnectionIntervalMax     | DWORD 0x10001 | 0x0006    | 0x0C80                                                                         |
 
 >[!NOTE]
->Changes to scanning parameters make a global impact on the performance of the Bluetooth stack. Making changes to scanning parameters programmatically is not permitted. Using Low Duty Cycle scanning parameters that are too aggressive can not only have a negative impact to the available bandwidth for other Bluetooth Low Energy connections, but also for Bluetooth BR/EDR connections.
+>Changes to scanning parameters make a global impact on the performance of the Bluetooth stack. Making changes to scanning parameters programmatically is not permitted. Using Low Duty Cycle scanning parameters that are too aggressive can't only have a negative impact to the available bandwidth for other Bluetooth Low Energy connections, but also for Bluetooth BR/EDR connections.

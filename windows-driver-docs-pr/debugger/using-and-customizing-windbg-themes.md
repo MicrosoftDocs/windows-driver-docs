@@ -3,6 +3,7 @@ title: Using and Customizing WinDbg Themes - WinDbg (Classic)
 description: Using and Customizing WinDbg Themes - WinDbg (Classic)
 keywords: ["themes", "workspaces, themes"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using and Customizing WinDbg Themes - WinDbg (Classic)
@@ -25,8 +26,3 @@ This section includes the following topics:
  
 
  
-
-
-
-
-

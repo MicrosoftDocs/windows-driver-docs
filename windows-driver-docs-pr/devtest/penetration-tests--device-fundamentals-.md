@@ -2,6 +2,7 @@
 title: Penetration Tests (Device Fundamentals)
 description: The Device Fundamentals Penetration tests perform various forms of input attacks, which are a critical component of security testing. Attack and Penetration testing can help identify vulnerabilities in software interfaces.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Penetration Tests (Device Fundamentals)
@@ -276,7 +277,7 @@ The Open and Close Test uses the same options used in [Basic Open Operations](#b
 ## Related topics
 
 
-[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)
+[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers/develop/test-a-driver-package)
 
 [How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)
 
@@ -284,5 +285,5 @@ The Open and Close Test uses the same options used in [Basic Open Operations](#b
 
 [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 
-[How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers)
+[How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers/develop/how-to-test-a-driver-at-runtime-from-a-command-prompt)
 

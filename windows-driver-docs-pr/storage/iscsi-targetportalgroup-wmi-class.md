@@ -1,7 +1,8 @@
 ---
-title: ISCSI\_TargetPortalGroup WMI Class
+title: ISCSI_TargetPortalGroup WMI Class
 description: ISCSI\_TargetPortalGroup WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # ISCSI\_TargetPortalGroup WMI Class

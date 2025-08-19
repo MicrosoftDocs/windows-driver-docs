@@ -3,6 +3,7 @@ title: Using the System's Cancel Spin Lock
 description: Using the System's Cancel Spin Lock
 keywords: ["cancel spin locks WDK kernel", "spin locks WDK kernel", "system cancel spin locks WDK kernel", "STATUS_CANCELLED"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Using the System's Cancel Spin Lock

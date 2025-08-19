@@ -8,6 +8,7 @@ keywords:
 - files WDK device installations
 - sample files WDK device installations
 ms.date: 12/01/2021
+ms.topic: install-set-up-deploy
 ---
 
 # Sample Device Installation Files

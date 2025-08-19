@@ -2,6 +2,7 @@
 title: Managing Custom Port Feature Status Information
 description: Managing Custom Port Feature Status Information
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Managing Custom Port Feature Status Information

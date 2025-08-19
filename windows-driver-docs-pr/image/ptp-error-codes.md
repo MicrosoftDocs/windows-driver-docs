@@ -2,6 +2,7 @@
 title: PTP Error Codes
 description: PTP Error Codes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # PTP Error Codes

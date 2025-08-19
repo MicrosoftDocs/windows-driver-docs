@@ -3,6 +3,7 @@ title: Calling PoStartNextPowerIrp from a Bus Driver
 description: Calling PoStartNextPowerIrp from a Bus Driver
 keywords: ["bus drivers WDK power management", "power IRPs WDK kernel , PoStartNextPowerIrp", "PoStartNextPowerIrp"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Calling PoStartNextPowerIrp from a Bus Driver

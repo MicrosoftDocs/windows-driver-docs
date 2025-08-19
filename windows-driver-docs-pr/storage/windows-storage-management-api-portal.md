@@ -1,26 +1,19 @@
 ---
 title: Windows Storage Management Provider
-description: The Windows Storage Management provider can be used to manage a wide range of storage configurations, from single-disk desktops to external storage arrays.
-ms.assetid: ff5e492d-5e62-4c9b-8f55-07859c9fee83
-ms.author: windowssdkdev
-ms.topic: article
-ms.date: 05/31/2018
+description: Introduces the Windows Storage Management Provider API.
+ms.date: 11/21/2024
+ms.topic: concept-article
 ---
 
-# Windows Storage Management Provider
+# Windows Storage Management Provider API
 
-## Purpose
+A Windows [Storage Management Provider](storage-management-providers.md) (SMP) provides an interface for management applications to interact with storage configurations, including disks, partitions, volumes, and storage spaces. As a bridge between management applications and the underlying storage subsystems, it enables the creation, modification, and monitoring of storage resources through a standardized set of Windows Management Instrumentation (WMI) classes.  
 
-The Windows Storage Management provider can be used to manage a wide range of storage configurations, from single-disk desktops to external storage arrays.
+Storage subsystem manufacturers can support Windows-based storage management for their products by implementing an SMP.
 
-Storage subsystem manufacturers can support Windows-based storage management for their products by implementing a Storage Management Provider (SMP). For more information, see [How to Implement a Storage Management Provider](/previous-versions/windows/hardware/drivers/dn342891(v=vs.85)).
+* [Storage Management API Classes](storage-management-api-classes.md)
 
-The Windows Storage Management API supersedes the [Virtual Disk Service](/windows/win32/vds/virtual-disk-service-portal) API beginning with the Windows 8 and Windows Server 2012 operating systems.
-
-## In this section
-
--   [Storage Management API Classes](storage-management-api-classes.md)
--   [Storage Management API Common Return Codes](storage-management-api-common-return-codes.md)
+* [Storage Management API Common Return Codes](storage-management-api-common-return-codes.md)
 
 ## Developer audience
 
@@ -28,8 +21,6 @@ The Windows Storage Management API is designed for WMI developers who use C/C++,
 
 ## Run-time requirements
 
-The Windows Storage Management API is included in Windows 8 and Windows Server 2012.
+The Windows Storage Management API is included starting in Windows 8 and Windows Server 2012.
 
- 
-
- 
+The Windows Storage Management API supersedes the [Virtual Disk Service](/windows/win32/vds/virtual-disk-service-portal) (VDS) API beginning with the Windows 8 and Windows Server 2012 operating systems.

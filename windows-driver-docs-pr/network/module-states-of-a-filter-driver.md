@@ -9,6 +9,7 @@ keywords:
 - filter drivers WDK networking , filter modules
 - NDIS filter drivers WDK ,
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Module States of a Filter Driver
@@ -33,7 +34,7 @@ An [NDIS filter driver](ndis-filter-drivers.md) must support the following opera
 
 The following figure shows the relationships between these states.
 
-![diagram illustrating filter module states.](images/filterstate.png)
+:::image type="content" source="images/filterstate.png" alt-text="Diagram that shows the relationships between operational in an NDIS filter driver.":::
 
 The following defines the filter module states:
 

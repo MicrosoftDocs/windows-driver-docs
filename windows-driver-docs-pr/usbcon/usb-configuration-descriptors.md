@@ -1,7 +1,8 @@
 ---
-title: USB configuration descriptors
+title: USB Configuration Descriptors
 description: A USB device exposes its capabilities in the form of a series of interfaces called a USB configuration.
-ms.date: 02/24/2023
+ms.date: 01/17/2024
+ms.topic: concept-article
 ---
 
 # USB configuration descriptors

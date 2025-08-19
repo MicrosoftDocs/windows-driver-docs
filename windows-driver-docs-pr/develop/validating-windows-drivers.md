@@ -1,88 +1,165 @@
 ---
-title: Validating Universal Windows drivers
-description: You can use the ApiValidator.exe tool to verify that the APIs that your driver calls are valid for a Universal Windows driver.
-ms.date: 04/28/2020
+title: Validating Windows Drivers
+description: Various tools to use to validate that your driver package is compliant with the Windows Drivers rules.
+ms.date: 08/12/2024
+ms.topic: how-to
 ---
 
 # Validating Windows Drivers
 
-Use the InfVerif, Driver Verifier Driver Isolation Checks, and ApiValidator tools to test your Windows Driver for compliance with the requirements described in [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md).
+Use the InfVerif, Driver Verifier Driver Isolation Checks, and ApiValidator tools to test your [driver package](../install/driver-packages.md) for compliance with the Windows Drivers requirements described in [Get started developing Windows drivers](get-started-developing-windows-drivers.md).
 
 ## InfVerif
 
 [InfVerif](../devtest/infverif.md) is a tool that validates INF syntax and checks that the INF conforms to requirements and restrictions.
 
-Use InfVerif with `/w` and `/v` to verify that a Windows Driver:
+Use InfVerif with `/w` to verify that a Windows Driver:
 
 * Meets the **declarative (D)** principle of [DCH Design Principles](dch-principles-best-practices.md)
-* Complies with the [driver package isolation](driver-isolation.md) requirement of [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md)
+* Complies with the [driver package isolation](driver-isolation.md) requirement of [Get started developing Windows drivers](get-started-developing-windows-drivers.md)
 
 For more details, see [Running InfVerif from the command line](../devtest/running-infverif-from-the-command-line.md).
 
-### Targeting current and earlier versions of Windows
-
-Each run of InfVerif tests a single ruleset, for example `/w` (Windows driver compatibility) or `/k` (Hardware Dev Center submission).  If your INF contains syntax introduced in a more recent version of Windows and you also want to target previous Windows versions, use [INF decorations](../install/inf-manufacturer-section.md) to mark version-specific INF entries and then run InfVerif multiple times, for example:
+InfVerif validates Driver Isolation requirements with the '/w' argument, as shown here:
 
 ```inf
-infverif /k <INF file>
-infverif /w NTAMD64.10.0.0.<build number where w is a requirement> <INF file>
+infverif.exe /w <INF file> [<INF file>]
 ```
 
-If there are no errors, the INF meets the [Driver Package Isolation](driver-isolation.md) requirement of Windows Drivers.
+If InfVerif reports no errors when validating with /w, the INF meets the [Driver Package Isolation](driver-isolation.md) requirement of Windows Drivers.
 
-For example, the [INF AddEventProvider Directive](../install/inf-addeventprovider-directive.md) is available starting in Windows 10, version 1809. To use this directive in an INF targeting an OS version before Windows 10, version 1809, decorate both the install section using legacy INF syntax for registering ETW event providers as well as the install section using the updated syntax.
+### Targeting current and earlier versions of Windows
 
-For sample code showing how to use OS decorations, see [Combining Platform Extensions with Operating System Versions](../install/combining-platform-extensions-with-operating-system-versions.md).
+If your INF contains syntax introduced in a recent version of Windows, such as the [INF AddEventProvider Directive](../install/inf-addeventprovider-directive.md) which is available starting in Windows 10 version 1809 and you also want to target previous Windows versions, use [INF decorations](../install/inf-manufacturer-section.md) to mark version-specific INF entries. For sample code showing how to use OS version decorations, see [Combining Platform Extensions with Operating System Versions](../install/combining-platform-extensions-with-operating-system-versions.md).
+
+INF files using OS version decorations may fail InfVerif because Driver Isolation requirements may not be supported on the previous Windows versions. To validate such an INF, you may specify the minimum Windows version where Driver Isolation checks should be applied, using the '/wbuild' argument. For example, an INF file that uses the AddEventProvider directive might use the following to only apply Driver Isolation checks to Windows 10 version 1809 and later:
+
+```inf
+infverif.exe /w /wbuild NTAMD64.10.0.0.17763 <INF file> [<INF file>]
+```
 
 ## Driver Verifier Driver Isolation Checks
 
-To qualify as a Windows Driver, a driver must meet [Driver Package Isolation](driver-isolation.md) requirements. Starting in Windows 10 Preview Build 19568, [Driver Verifier](../devtest/driver-verifier.md) (DV) monitors registry reads and writes that are not allowed for isolated driver packages.
+To qualify as a Windows Driver, a driver package must meet [Driver Package Isolation](driver-isolation.md) requirements. Starting in Windows 11, [Driver Verifier](../devtest/driver-verifier.md) (DV) can monitor kernel binaries for registry and file system reads and writes that are not allowed for isolated driver packages.
 
-You can either view violations as they happen in a kernel debugger, or you can configure DV to halt the system and generates a memory dump with details when a violation occurs. You might start driver development with the first method, then switch to the second as your driver nears completion.
+You can either view violations as they happen in a kernel debugger, you can review the violations as reported in the System event log, or you can configure DV to halt the system and generate a memory dump with details when a violation occurs. You might start driver development with the first and second methods, then switch to the second as your driver nears completion.
 
-To view violations as they occur, first connect a kernel debugger and then use the following commands. After a reboot has enabled the DV settings, you can monitor violations in kernel debugger output.
-
-To enable driver isolation checks on a single driver:
+To enable driver isolation checks so they will be reported via kernel debugger and System event log but not bugcheck the system:
 
 ```command
-verifier /rc 33 36 /driver myDriver.sys
+verifier /rc 33 36 /driver myDriver.sys [myDriver2.sys ...]
 ```
 
-To check more than one driver, separate each driver name with a space:
+To configure DV to bugcheck when a driver isolation violation occurs, use the following syntax:
 
 ```command
-verifier /rc 33 36 /driver myDriver1.sys myDriver2.sys
+verifier /onecheck /rc 33 36 /driver myDriver1.sys [myDriver2.sys ...]
 ```
 
-To configure DV to bugcheck when a violation occurs, use the following syntax:
-
-```
-verifier /onecheck /rc 33 36 /driver myDriver1.sys
-```
-
-You'll need to reboot to enable the verification settings. To do this from the command line, specify:
+Regardless of which monitoring method you choose, you'll need to reboot to enable the verification settings. To do this from the command line, specify:
 
 ```command
 shutdown /r /t 0
 ```
 
-Here are a few examples of error messages:
+Here are a few examples of error messages as seen in the kernel debugger:
 
 Example: **ZwCreateKey** provides full absolute path:
 
-`DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should not use absolute paths. Detected creation of unisolated registry key \Registry\Machine\SYSTEM`
+```
+DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should not use absolute paths. Detected creation of unisolated registry key \Registry\Machine\SYSTEM
+```
 
 Example: **ZwCreateKey** provides path relative to a handle that is not from an approved API:
 
-`DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should only use key handles returned from WDF or WDM APIs. Detected creation of unisolated registry key \REGISTRY\MACHINE\SYSTEM\SomeKeyThatShouldNotExist`
+```
+DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should only use key handles returned from WDF or WDM APIs. Detected creation of unisolated registry key \REGISTRY\MACHINE\SYSTEM\SomeKeyThatShouldNotExist
+```
 
-Consider enabling [Device Fundamentals tests](../devtest/run-devfund-tests-via-the-command-line.md) with DV driver isolation checks to help catch driver isolation violations early.
+Consider running [Device Fundamentals tests](../devtest/run-devfund-tests-via-the-command-line.md) with DV driver isolation checks enabled on your driver to help catch driver isolation violations early.
+
+> [!NOTE]
+> DV does not want to flood users with a deluge of reports of the same violation, so it has a throttling mechanism where it may throttle the reporting of each unique error.  Starting with Windows 11 24H2, in order to make sure you see the full set of Driver Isolation violations for any given run of a test or series of tests, you can request to have the throttling for Driver Isolation violations to be reset using:
+>
+> verifier /dif 33 /action 1
+> 
+> If you do not do this before you run a test, then you may not see certain violations during the running of your tests if those violations already occurred before the test was started.
+
+### WHCP compliance
+
+Currently, the [Windows Hardware Compatibility Program (WHCP) program](/windows-hardware/design/compatibility/whcp-specifications-policies) does not mandate full driver package isolation.  However, starting with Windows 11 24H2, the WHCP program starts including driver isolation related requirements. To enable the same level of driver package isolation validation as the [Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) does as part of enforcing the WHCP requirements, you would use the following syntax:
+
+```command
+Verifier /dif 33 /33 whcp /driver myDriver.sys [myDriver2.sys ...]
+```
+
+When using this syntax, all driver isolation violations will still be reported, but the ones not currently being enforced for the HLK will be reported as warnings instead of errors.  Ones listed as warnings will not cause HLK failures and will not cause the system to bugcheck if you enable the driver isolation checks with /onecheck to have it generate a bugcheck when a violation occurs.
+
+When viewing events with a kernel debugger, the ones that are considered errors will be prefixed with `DRIVER_ISOLATION_VIOLATION` while the ones that are warnings will be prefixed with `DRIVER_ISOLATION_WARNING`.
+
+When viewing events in the System event log, the events with an `ErrorLevel` attribute of 0 are considered errors and events with another `ErrorLevel` value are not considered errors.  Please see the "Viewing violations in the System event log" section below for more information.
+
+### Viewing violations in the System event log
+
+Driver verifier violations are reported in the System event log from the provider `Microsoft-Windows-Kernel-XDV` and with an event ID of '4'.  On Windows 11 24H2 and later, the events will contain an `ErrorLevel` value.  Events with an `ErrorLevel` value of 0 are considered errors according to the driver isolation mode active (full driver isolation compliance vs WHCP isolation compliance) when the violation was generated. Events with other `ErrorLevel` values are not considered errors.  For example, an event with these attributes would be considered an error:
+
+```
+EventData
+	RuleId	0x210001
+	ErrorMessage	Registry operations should not use absolute paths. Detected opening of unisolated registry key \Registry\Machine\System\CurrentControlSet\Services\ExampleDriver\Parameters
+	Module	\SystemRoot\System32\drivers\ExampleDriver.sys
+	Irql	0
+	ErrorLevel	0x0
+```
+
+While an event with these attributes would not be considered an error:
+
+```
+EventData
+	RuleId	0x210001
+	ErrorMessage	Registry operations should only use key handles returned from WDF or WDM APIs. Detected querying of value under unisolated registry key \REGISTRY\MACHINE\SYSTEM\ControlSet001\Control
+	Module	\SystemRoot\System32\drivers\ExampleDriver.sys
+	Irql	0
+	ErrorLevel	0xf4240
+```
+
+If you are using the Event Viewer application to view the System event log, you can filter the view of the log using the menu on the right side of the application by clicking "Filter Current Log".  On the dialog that pops up, if you go to the XML tab and edit the query manually, you can use this query to filter the System event log to just DV violations that should be considered an error:
+
+```xml
+<QueryList>
+  <Query Id="0" Path="System">
+    <Select Path="System">*[System/Provider[@Name='Microsoft-Windows-Kernel-XDV'] and System[(EventID='4')] and (EventData/Data[@Name='ErrorLevel']='0')]</Select>
+  </Query>
+</QueryList>
+```
+
+If you want to filter the view of the event log to all DV violations that should be considered an error after a certain time (e.g. after the time that a test pass started), you can do:
+
+```xml
+<QueryList>
+  <Query Id="0" Path="System">
+    <Select Path="System">*[System/Provider[@Name='Microsoft-Windows-Kernel-XDV'] and System[(EventID='4')] and System/TimeCreated[@SystemTime&gt;='2024-01-24T23:00:00.0Z'] and (EventData/Data[@Name='ErrorLevel']='0')]</Select>
+  </Query>
+</QueryList>
+```
+
+Or if you prefer an XML file that you can load up to view, you can use wevtutil to generate such an XML based on the same queries:
+
+```command
+wevtutil qe System /q:"*[System/Provider[@Name='Microsoft-Windows-Kernel-XDV'] and System[(EventID='4')] and (EventData/Data[@Name='ErrorLevel']='0')]" /e:Events > DriverVerifierErrors.xml
+
+wevtutil qe System /q:"*[System/Provider[@Name='Microsoft-Windows-Kernel-XDV'] and System[(EventID='4')] and System/TimeCreated[@SystemTime>='2024-01-24T23:00:00.0Z'] and (EventData/Data[@Name='ErrorLevel']='0')]" /e:Events > DriverVerifierErrors.xml
+```
+
+### KMDF drivers
+
+When KMDF drivers use WDF APIs to access the registry, such as [WdfRegistryCreateKey](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistrycreatekey), [WdfRegistryOpenKey](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryopenkey), or [WdfRegistryQueryValue](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryqueryvalue), the registry access happens via wdf01000.sys instead of the KMDF driver binary directly.  In order to view violations caused by your KMDF driver binary, please enable driver isolation checks on wdf01000.sys in addition to your KMDF driver binary.  Note that when you do this, you will see violations from all KMDF drivers on the system that are using WDF for their registry accesses.
 
 ## ApiValidator
 
 The ApiValidator tool verifies that the APIs that your binaries call are valid for a Windows Driver. The tool returns an error if your binaries call an API that is outside the set of valid APIs for Windows Drivers. This tool is part of the WDK for Windows 10.
 
-ApiValidator validates that a driver supports [API Layering](api-layering.md), one of the requirements for Windows Drivers. For a full list of requirements, see [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md).
+ApiValidator validates that a driver supports [API Layering](api-layering.md), one of the requirements for Windows Drivers. For a full list of requirements, see [Get started developing Windows drivers](get-started-developing-windows-drivers.md).
 
 ### Running ApiValidator in Visual Studio
 
@@ -139,11 +216,15 @@ You can also run Apivalidator.exe from the command prompt. In your WDK installat
 
 Use the following syntax:
 
-`Apivalidator.exe -DriverPackagePath: <driver folder path> -SupportedApiXmlFiles: (path to XML files containing supported APIs for Windows drivers)`
+```command
+Apivalidator.exe -DriverPackagePath: <driver folder path> -SupportedApiXmlFiles: (path to XML files containing supported APIs for Windows drivers)
+```
 
 For example, to verify the APIs called by the Activity sample in the WDK, first build the sample in Visual Studio. Then open a command prompt and navigate to the directory containing the tool, for example `C:\Program Files (x86\Windows Kits\10\bin\x64`. Enter the following command:
 
-`apivalidator.exe -DriverPackagePath:"C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2\_fx2\Debug" -SupportedApiXmlFiles:"c:\Program Files (x86)\Windows Kits\10\build\universalDDIs\x64\UniversalDDIs.xml"`
+```command
+apivalidator.exe -DriverPackagePath:"C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2\_fx2\Debug" -SupportedApiXmlFiles:"c:\Program Files (x86)\Windows Kits\10\build\universalDDIs\x64\UniversalDDIs.xml"
+```
 
 The command produces the following output:
 
@@ -162,7 +243,6 @@ ApiValidator.exe Driver located at C:\Program Files (x86)\Windows Kits\10\src\us
 ```
 
 ### Troubleshooting ApiValidator
-
 
 If ApiValidator.exe outputs an incorrect format error such as the following:
 
@@ -186,6 +266,3 @@ Use this workaround:
 * Arm64 binaries can be tested on x64 machines but not on an x86 machine.
 * ApiValidator can run on x86 to test x86 binaries and Arm binaries.
 * ApiValidator can run on x64 to test x86, x64, Arm, and Arm64 binaries.
-
-
-

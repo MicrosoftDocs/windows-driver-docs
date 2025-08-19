@@ -28,8 +28,7 @@ dbgrpc [-s Server -p ProtSeq] [-r Radix] [-c|-a] [-C CallID] [-I IfStart] [-N Pr
 dbgrpc -? 
 ```
 
-## <span id="ddk_dbgrpc_command_line_options_dbg"></span><span id="DDK_DBGRPC_COMMAND_LINE_OPTIONS_DBG"></span>Parameters
-
+## Parameters
 
 <span id="_______-s_______Server______"></span><span id="_______-s_______server______"></span><span id="_______-S_______SERVER______"></span> **-s** *Server*   
 Allows DbgRpc to view information from a remote machine. The server name should not be preceded by slash marks. For more information about using DbgRpc remotely, see [Using the DbgRpc Tool](using-the-dbgrpc-tool.md).
@@ -76,15 +75,13 @@ Specifies the first DWORD of the interface's universally unique identifier (UUID
 <span id="_______ProcNum______"></span><span id="_______procnum______"></span><span id="_______PROCNUM______"></span> *ProcNum*   
 Specifies the procedure number of this call. (The RPC Run-Time identifies individual routines from an interface by numbering them by position in the IDL file -- the first routine in the interface is 0, the second 1, and so on.) This parameter is optional; include it only if you want to display calls matching a specific *ProcNum* value.
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](rpc-debugging.md).
 
+For general information about RPC security and guidelines for usage, see [Writing a Secure RPC Client or Server](/windows/win32/rpc/writing-a-secure-rpc-client-or-server).
  
 
  
 
-
-
-
-
+ 

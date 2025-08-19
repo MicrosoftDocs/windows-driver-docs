@@ -2,6 +2,7 @@
 title: Windows Kernel-Mode Executive Support Library
 description: Windows Kernel-Mode Executive Support Library
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Windows Kernel-Mode Executive Support Library

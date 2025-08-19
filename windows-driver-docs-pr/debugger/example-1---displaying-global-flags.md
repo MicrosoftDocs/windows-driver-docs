@@ -2,6 +2,7 @@
 title: Example 1 Displaying Global Flags
 description: Example 1 Displaying Global Flags
 ms.date: 10/12/2018
+ms.topic: concept-article
 ---
 
 # Example 1: Displaying Global Flags
@@ -52,8 +53,3 @@ Remember that the flag value displayed might not be the current, effective flag 
  
 
  
-
-
-
-
-

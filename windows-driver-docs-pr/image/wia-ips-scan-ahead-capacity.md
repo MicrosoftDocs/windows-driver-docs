@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPS\_SCAN\_AHEAD\_CAPACITY
-description: The WIA\_IPS\_SCAN\_AHEAD\_CAPACITY describes the maximum number of pages that the scanner can scan ahead (and store in the internal scanner memory buffer) at the current scan job settings (the current document size, scan resolution, data type, file format, compression, and so on). The WIA minidriver creates and maintains this property.
+title: WIA_IPS_SCAN_AHEAD_CAPACITY
+description: The WIA_IPS_SCAN_AHEAD_CAPACITY describes the maximum number of pages that the scanner can scan ahead (and store in the internal scanner memory buffer) at the current scan job settings (the current document size, scan resolution, data type, file format, compression, and so on). The WIA minidriver creates and maintains this property.
 keywords: ["WIA_IPS_SCAN_AHEAD_CAPACITY Imaging Devices"]
 topic_type:
 - apiref
@@ -11,49 +11,25 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 05/22/2018
+ms.date: 05/08/2023
 ---
 
-# WIA\_IPS\_SCAN\_AHEAD\_CAPACITY
+# WIA_IPS_SCAN_AHEAD_CAPACITY
 
+The **WIA_IPS_SCAN_AHEAD_CAPACITY** describes the maximum number of pages that the scanner can scan ahead (and store in the internal scanner memory buffer) at the current scan job settings (the current document size, scan resolution, data type, file format, compression, and so on). The WIA minidriver creates and maintains this property.
 
-The **WIA\_IPS\_SCAN\_AHEAD\_CAPACITY** describes the maximum number of pages that the scanner can scan ahead (and store in the internal scanner memory buffer) at the current scan job settings (the current document size, scan resolution, data type, file format, compression, and so on). The WIA minidriver creates and maintains this property.
+Property Type: VT_UI4
 
-
-
-
-Property Type: VT\_UI4
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read/Write
 
 ## Remarks
 
-When the [**WIA\_IPS\_SCAN\_AHEAD**](wia-ips-scan-ahead.md) property is supported, this property is valid only for the Feeder item (WIA\_CATEGORY\_FEEDER), and is optional.
+When the [**WIA_IPS_SCAN_AHEAD**](wia-ips-scan-ahead.md) property is supported, this property is valid only for the Feeder item (WIA_CATEGORY_FEEDER), and is optional.
 
 A value of 0 means "undefined/unknown number of pages."
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

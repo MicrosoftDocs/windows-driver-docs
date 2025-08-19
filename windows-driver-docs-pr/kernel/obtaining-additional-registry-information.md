@@ -3,6 +3,7 @@ title: Obtaining Additional Registry Information
 description: Obtaining Additional Registry Information
 keywords: ["filtering registry calls WDK kernel , additional information to obtain", "registry filtering drivers WDK kernel , additional information to obtain"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Obtaining Additional Registry Information

@@ -1,7 +1,8 @@
 ---
-title: DSM\_QueryUniqueId WMI Class
+title: DSM_QueryUniqueId WMI Class
 description: DSM\_QueryUniqueId WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # DSM\_QueryUniqueId WMI Class
@@ -22,8 +23,8 @@ class DSM_QueryUniqueId
     //
     // This Identifier needs to be set by DSMs that want management applications
     // like VDS to be able to manage the devices controlled by the particular DSM.
-    // This DsmUniqueId will be used in conjuction with the DsmPathId to construct
-    // a path identitifer that is unique not just among all paths known to this DSM,
+    // This DsmUniqueId will be used in conjunction with the DsmPathId to construct
+    // a path identifier that is unique not just among all paths known to this DSM,
     // but also among all the DSMs present on the system.
     //
     [WmiDataId(1),

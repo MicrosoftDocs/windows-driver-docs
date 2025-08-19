@@ -1,5 +1,5 @@
 ---
-title: GetSecurityDescriptor method of the MSFT\_StoragePool class
+title: GetSecurityDescriptor Method of the MSFT_StoragePool Class
 description: Retrieves the security descriptor that controls access to the storage pool object instance.
 ms.assetid: 61EADF85-824D-4A76-8646-AC80AA162507
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

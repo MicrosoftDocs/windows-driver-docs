@@ -1,5 +1,5 @@
 ---
-title: MSFT\_Volume class
+title: MSFT_Volume Class
 description: Represents a volume on a computer.
 ms.assetid: 007dd46a-4812-4273-beaa-74fbe9520c7d
 keywords:
@@ -24,7 +24,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

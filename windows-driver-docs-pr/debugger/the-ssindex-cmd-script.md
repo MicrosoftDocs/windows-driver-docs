@@ -3,6 +3,7 @@ title: The Ssindex.cmd Script
 description: The Ssindex.cmd Script
 keywords: ["SrcSrv, Ssindex.cmd script", "Ssindex.cmd script"]
 ms.date: 03/07/2022
+ms.topic: concept-article
 ---
 
 # The Ssindex.cmd Script
@@ -21,8 +22,3 @@ For more information, run Ssindex.cmd with the **-?** or **-??** (verbose help) 
  
 
  
-
-
-
-
-

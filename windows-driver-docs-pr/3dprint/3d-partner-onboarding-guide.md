@@ -1,7 +1,8 @@
 ---
-title: 3D print partner onboarding guide
+title: 3D Print Partner Onboarding Guide
 description: This article describes how to implement 3D printer drivers that are then published on Windows Update.
 ms.date: 03/17/2023
+ms.topic: how-to
 ---
 
 # 3D print partner onboarding guide
@@ -59,7 +60,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
 1. Build the Fabrikam driver (slicer template only)
 
-    - Build and obtain the driver package. This creates a x64 folder with the slicer part.
+    - Build and obtain the driver package. This creates an x64 folder with the slicer part.
 
 1. Adding the custom slicer
 
@@ -84,4 +85,4 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
 1. Publish and distribute the driver
 
-    - Follow the guidance in the [Windows Partner Center](../dashboard/index.yml) topics to publish your driver.
+    - Follow the guidance in the [Windows Partner Center](../dashboard/index.md) topics to publish your driver.

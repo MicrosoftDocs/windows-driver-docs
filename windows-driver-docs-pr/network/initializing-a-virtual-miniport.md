@@ -7,6 +7,7 @@ keywords:
 - NDIS intermediate drivers WDK , virtual miniports
 - intermediate drivers WDK networking , virtual miniports
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing a Virtual Miniport
@@ -15,7 +16,7 @@ ms.date: 04/20/2017
 
 
 
-To initiate the initialization of a virtual miniport, an intermediate driver calls the [**NdisIMInitializeDeviceInstanceEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisiminitializedeviceinstanceex) function. The intermediate driver usually makes this call from its [*ProtocolBindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex) function. After the intermediate driver calls **NdisIMInitializeDeviceInstanceEx** and the Plug an Play manager requests NDIS to start the virtual device, NDIS calls the driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function.
+To initiate the initialization of a virtual miniport, an intermediate driver calls the [**NdisIMInitializeDeviceInstanceEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisiminitializedeviceinstanceex) function. The intermediate driver usually makes this call from its [*ProtocolBindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex) function. After the intermediate driver calls **NdisIMInitializeDeviceInstanceEx** and the Plug and Play manager requests NDIS to start the virtual device, NDIS calls the driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function.
 
 The call to *MiniportInitializeEx* can be in the context of **NdisIMInitializeDeviceInstanceEx** if the Plug and Play manager starts the virtual device before **NdisIMInitializeDeviceInstanceEx** returns. If the intermediate driver provides more than one virtual miniport, the driver must call **NdisIMInitializeDeviceInstanceEx** for each virtual miniport that it makes available.
 

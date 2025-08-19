@@ -1,5 +1,5 @@
 ---
-title: Communicating with a storage port driver
+title: Communicating with a Storage Port Driver
 description: How storage miniports communicate with a storage port driver
 keywords:
 - storage miniport drivers WDK
@@ -7,6 +7,7 @@ keywords:
 - storage drivers WDK , miniport drivers
 - Storage miniports should avoid calling operating system routines
 ms.date: 03/16/2021
+ms.topic: concept-article
 ---
 
 # Communicating with a storage port driver

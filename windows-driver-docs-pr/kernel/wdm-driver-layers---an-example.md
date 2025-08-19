@@ -1,8 +1,9 @@
 ---
-title: WDM Driver Layers An Example
+title: WDM Driver Layers an Example
 description: WDM Driver Layers An Example
 keywords: ["WDM drivers WDK kernel , layered drivers", "layered drivers WDK kernel", "driver layers WDK WDM", "joysticks WDK WDM"]
 ms.date: 06/16/2017
+ms.topic: design-pattern
 ---
 
 # WDM Driver Layers: An Example

@@ -1,7 +1,8 @@
 ---
-title: KSPROPSETID\_BdaNullTransform
+title: KSPROPSETID_BdaNullTransform
 description: KSPROPSETID\_BdaNullTransform
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_BdaNullTransform

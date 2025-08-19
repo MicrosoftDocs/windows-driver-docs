@@ -12,6 +12,7 @@ keywords:
 - test signing driver packages WDK
 - test signing driver packages WDK , about test signing driver packages
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Test-Signing Driver Packages
@@ -77,7 +78,7 @@ Starting with Windows Vista, embedding a signature in a driver file is optional 
 
 The PnP device installation signing requirements do not apply to non-PnP drivers.
 
-**Note**   Using embedded signatures is generally simpler and more efficient than using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](/windows-hardware/drivers).
+**Note**   Using embedded signatures is generally simpler and more efficient than using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Introduction to Test-Signing](/windows-hardware/drivers/install/introduction-to-test-signing).
 
 ### To embed a test signature in a file for a non-PnP kernel-mode driver that is not a boot-start driver
 

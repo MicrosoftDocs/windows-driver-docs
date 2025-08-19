@@ -18,7 +18,7 @@ api_type:
 The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the code used for all USB 3 bug checks. Parameter 1 specifies the type of the USB 3 bug check, and the meanings of the other parameters are dependent on Parameter 1.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## BUGCODE\_USB3\_DRIVER Parameters
@@ -400,6 +400,6 @@ To send a chained [**MDL**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl), the 
 
 [Universal Serial Bus (USB)](../index.yml)
 
-[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+[Kernel Live Dump Code Reference](kernel-live-dump-code-reference.md)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)

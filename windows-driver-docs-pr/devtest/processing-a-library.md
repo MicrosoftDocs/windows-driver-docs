@@ -4,6 +4,7 @@ description: Processing a Library
 keywords:
 - library WDK Static Driver Verifier , processing
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Processing a Library
@@ -23,12 +24,4 @@ Static Driver Verifier keeps a cache of the libraries that you add. Only librari
 You can also process libraries from a Visual Studio Command Prompt window using the **msbuild t:/sdv p:"/Inputs=/lib"** *libraryproject.vcxproj* option. For information about the command options, see [Static Driver Verifier commands (MSBuild)](-static-driver-verifier-commands--msbuild-.md).
 
 If you are unable to process a required library for any reason, you can still verify the driver that uses it. However, the results are less reliable.
-
- 
-
- 
-
-
-
-
 

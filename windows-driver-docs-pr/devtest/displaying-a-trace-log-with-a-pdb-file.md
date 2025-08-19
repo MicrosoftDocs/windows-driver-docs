@@ -6,6 +6,7 @@ keywords:
 - PDB symbol files WDK
 - symbol files WDK software tracing
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Displaying a Trace Log with a PDB File
@@ -35,12 +36,4 @@ If you have the PDB symbol file for the provider, use the following procedure to
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 When you display the contents of a log file, the expected value in the **State** column of the Trace Session List is **EXISTING**. This value indicates that the trace messages come from a log, not a running trace session.
-
- 
-
- 
-
-
-
-
 

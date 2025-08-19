@@ -5,6 +5,7 @@ keywords:
 - BinPlace WDK , about BinPlace
 - place files WDK BinPlace
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using BinPlace
@@ -21,12 +22,4 @@ BinPlace is controlled through a combination of the BinPlace command line, vario
 -   [**BinPlace Command-Line Syntax**](binplace-command-line-syntax.md)
 -   [BinPlace Macros and Environment Variables](binplace-macros-and-environment-variables.md)
 -   [**Place File Syntax**](place-file-syntax.md)
-
- 
-
- 
-
-
-
-
 

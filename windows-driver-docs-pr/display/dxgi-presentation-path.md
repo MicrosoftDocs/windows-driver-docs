@@ -2,6 +2,7 @@
 title: DXGI Presentation Path
 description: DXGI Presentation Path
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # DXGI Presentation Path

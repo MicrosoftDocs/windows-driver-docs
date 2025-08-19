@@ -1,5 +1,5 @@
 ---
-title: FLT_PARAMETERS for IRP_MJ_SET_INFORMATION union
+title: FLT_PARAMETERS for IRP_MJ_SET_INFORMATION Union
 description: Union component used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_SET_INFORMATION.
 keywords: ["FLT_PARAMETERS for IRP_MJ_SET_INFORMATION union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
@@ -111,7 +111,7 @@ The **AdvanceOnly** member is set to **TRUE** by the cache manager to notify the
 
 [**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block)
 
-[**FLT_IS_FASTIO_OPERATION**](/windows-hardware/drivers/ddi/index)
+[**FLT_IS_FASTIO_OPERATION**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-flt_is_fastio_operation)
 
 [**FLT_IS_FS_FILTER_OPERATION**](/previous-versions/ff544648(v=vs.85))
 

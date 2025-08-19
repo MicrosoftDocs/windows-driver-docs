@@ -2,6 +2,7 @@
 title: K (Windows Debugger Glossary)
 description: Glossary page - K
 ms.date: 11/28/2017
+ms.topic: glossary
 ---
 
 # K
@@ -54,8 +55,3 @@ A debugger session in which the target is running in kernel mode.
  
 
  
-
-
-
-
-

@@ -1,7 +1,8 @@
 ---
-title: Power framework (PoFx) driver samples
+title: Power Framework (PoFx) Driver Samples
 description: The driver samples in this directory provide a starting point for writing a custom PoFx driver for your device.
 ms.date: 03/22/2023
+ms.topic: example-scenario
 ---
 
 # Power framework (PoFx) driver samples

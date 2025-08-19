@@ -5,10 +5,10 @@ keywords:
 - Static Driver Verifier Report WDK , Trace Tree pane
 - Trace Tree pane WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Understanding the Trace Tree Pane
-
 
 The **Trace Tree** pane is the focus of the Defect Viewer. Typically, you step through the code in the **Trace Tree** pane, while watching its effect on the code in the **Source Code** pane and on the values in the **State** pane.
 
@@ -16,7 +16,7 @@ The **Trace Tree** pane is organized into a hierarchical structure with a series
 
 The following screen shot shows an example **Trace Tree** pane.
 
-![screen shot of the trace tree pane in the defect viewer.](images/sdv-tracetree.png)
+:::image type="content" source="images/sdv-tracetree.png" alt-text="Screenshot of the Trace Tree pane in the Defect Viewer with expandable and collapsible nodes.":::
 
 Each code element in the **Trace Tree** pane is preceded by its line number in the source file. This numbering helps you find the code element in the Source Tree window and in the source file.
 
@@ -27,6 +27,3 @@ IoReleaseCancelSpinLock(KeGetCurrentIrql());
 ```
 
 In this situation, the **Trace Tree** pane would include a critical element for the [**KeGetCurrentIrql**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kegetcurrentirql) function call, a few calls to the SDV operating system model to randomly generate an IRQL, and then a call to [**IoReleaseCancelSpinLock**](/previous-versions/windows/hardware/drivers/ff549550(v=vs.85)) with the returned IRQL.
-
- 
-

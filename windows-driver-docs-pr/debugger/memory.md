@@ -3,6 +3,7 @@ title: Memory
 description: Memory
 keywords: ["Debugger Engine, memory", "data spaces"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Memory
@@ -19,8 +20,3 @@ For details about reading and writing memory, see [Memory Access](memory-access.
  
 
  
-
-
-
-
-

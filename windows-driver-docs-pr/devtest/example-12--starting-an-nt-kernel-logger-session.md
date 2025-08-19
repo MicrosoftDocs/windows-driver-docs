@@ -5,6 +5,7 @@ keywords:
 - trace sessions WDK , NT Kernel Logger
 - NT Kernel Logger trace sessions WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 12: Starting an NT Kernel Logger Session
@@ -40,12 +41,4 @@ To format and display the trace messages from this session, use Tracefmt. The fo
 ```
 tracefmt -rt -display
 ```
-
- 
-
- 
-
-
-
-
 

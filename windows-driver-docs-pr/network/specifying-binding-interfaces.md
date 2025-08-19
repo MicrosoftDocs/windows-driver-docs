@@ -5,6 +5,7 @@ keywords:
 - add-registry-sections WDK networking , binding interfaces
 - binding interfaces WDK networking
 ms.date: 05/16/2022
+ms.topic: concept-article
 ---
 
 # Specifying Binding Interfaces

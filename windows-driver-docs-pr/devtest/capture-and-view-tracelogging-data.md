@@ -1,7 +1,8 @@
 ---
-title: Capture and view TraceLogging data
+title: Capture and View TraceLogging Data
 description: Capture and view TraceLogging data
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Capture and view TraceLogging data

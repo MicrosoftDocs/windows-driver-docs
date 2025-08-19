@@ -1,7 +1,8 @@
 ---
-title: 3D printer driver design guide
+title: 3D Printer Driver Design Guide
 description: This section provides information about 3D printer drivers in Windows 10.
-ms.date: 03/17/2023
+ms.date: 08/16/2024
+ms.topic: concept-article
 ---
 
 # 3D printer driver design guide
@@ -22,14 +23,6 @@ This section provides information about 3D printer drivers in Windows 10.
 
 For the latest information about 3D printing in Windows 10, see the following resources:
 
-[3D printing on Windows](https://www.microsoft.com/3d-print/windows-3d-printing)
-
-[3D hardware partners](https://www.microsoft.com/3d-print/printing-partners)
-
-[3D Builder resources](https://www.microsoft.com/3d-print/3d-builder-resources)
-
-[3D Builder user's guide](https://www.microsoft.com/3d-print/3d-builder-users-guide)
-
 [Channel 9 3D printing blog](https://channel9.msdn.com/Blogs/3D-Printing)
 
 Download the [Windows 3D Printing SDK](https://download.microsoft.com/download/6/2/7/62727B7E-D493-4B7E-9429-56FF84365852/MS3DPrinting.msi) to start developing drivers for printing to a 3D printer.
@@ -49,8 +42,6 @@ Download the [Windows 3D Printing SDK](https://download.microsoft.com/download/6
 [Enable WSPrint 2.0 on a device](enabling-wsprint-on-a-device.md)
 
 [Print schema keywords for 3D manufacturing](print-schema-keywords-for-3d-manufacturing.md)
-
-[3D hardware partners](3d-printing-partners.md)
 
 ## Related sections
 

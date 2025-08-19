@@ -3,6 +3,7 @@ title: The Logger Manifest
 description: The Logger Manifest
 keywords: ["Logger, manifest"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # The Logger Manifest
@@ -22,8 +23,3 @@ This section includes:
  
 
  
-
-
-
-
-

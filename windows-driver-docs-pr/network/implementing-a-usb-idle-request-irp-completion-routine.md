@@ -2,6 +2,7 @@
 title: Implementing a USB Idle Request IRP Completion Routine
 description: Implementing a USB Idle Request IRP Completion Routine
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Implementing a USB Idle Request IRP Completion Routine

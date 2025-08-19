@@ -1,5 +1,5 @@
 ---
-title: GetSupportedSize method of the MSFT\_StoragePool class
+title: GetSupportedSize Method of the MSFT_StoragePool Class
 description: Retrieves the supported virtual disk sizes that can be created in the storage pool.
 ms.assetid: C993C168-910B-4151-9B24-7A72807939F0
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

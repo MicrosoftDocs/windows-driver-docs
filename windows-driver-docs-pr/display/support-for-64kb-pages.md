@@ -1,7 +1,8 @@
 ---
-title: Support for 64KB pages
+title: Support for 64KB Pages
 description: WDDM 2.0+ support for 64 KB pages
 ms.date: 03/15/2023
+ms.topic: concept-article
 ---
 
 # Support for 64KB pages
@@ -60,4 +61,4 @@ When an allocation that is covered by a 64 KB PTE is placed to a memory segment 
 
 In the following diagram a 4 KB allocation and a 64 KB aligned allocation are in the same virtual address range covered by a level 0 page table and in a segment that supports 64 KB pages.
 
-![dual pte mode page tables.](images/support-for-64kb-pages.1.png)
+:::image type="content" source="images/support-for-64kb-pages.1.png" alt-text="Diagram showing dual PTE mode with 4KB and 64KB aligned allocations in the same virtual address range.":::

@@ -5,6 +5,7 @@ keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , WLAN adapter advanced properties
 - WLAN adapters WDK , advanced properties extended
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Extending the Advanced Properties for Wireless Network Adapters

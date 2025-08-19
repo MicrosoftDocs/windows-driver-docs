@@ -5,6 +5,7 @@ keywords:
 - TraceView WDK , preparing to use
 - files WDK TraceView
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Preparing to Use TraceView

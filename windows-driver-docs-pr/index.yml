@@ -5,10 +5,10 @@ brand: windows
 metadata:
    title: Windows developer documentation
    description: Design, develop, and deploy hardware and device drivers for Windows PCs and other devices.
-   author: tedhudek
-   ms.author: tedhudek
+   author: mhopkins-msft
+   ms.author: mhopkins
    ms.topic: hub-page
-   ms.date: 08/05/2021
+   ms.date: 12/10/2024
    ms.localizationpriority: medium
    uhfHeaderId: "MSDocsHeader-WinHW"
    
@@ -21,20 +21,22 @@ highlightedContent:
    - title: Device and driver installation
      itemType: overview
      url: ./install/overview-of-device-and-driver-installation.md
+   - title: Driver security checklist
+     itemType: how-to-guide
+     url: ./driversecurity/driver-security-checklist.md
    - title: Join the Insider Program
      itemType: overview
      url: /windows-insider
-   - title: Online training for Windows developers
-     itemType: learn
-     url: /training/browse/?products=windows
+
+
 
 conceptualContent:
   # title: Get started
   items:
-    - title: Get the tools
+    - title: Get started
       links:
-        - text: Visual Studio
-          url: https://go.microsoft.com/fwlink/p/?LinkId=698539
+        - text: Partner Center for Windows Hardware
+          url: ./dashboard/index.md
           itemType: download
         - text: Debugging Tools for Windows
           url: ./debugger/index.md
@@ -59,6 +61,9 @@ conceptualContent:
         - text: Debug Windows drivers
           url: ./debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md
           itemType: tutorial
+        - text: Debugger commands
+          url: ./debuggercmds/index.md
+          itemType: tutorial          
     - title: API reference
       links:
         - text: Windows driver API reference
@@ -111,47 +116,12 @@ additionalContent:
           url: ./gettingstarted/writing-a-very-small-kmdf--driver.md
         - title: Get started with Windows drivers
           summary: Write a single driver package that runs across multiple device types.
-          url: ./develop/getting-started-with-windows-drivers.md
+          url: ./develop/get-started-developing-windows-drivers.md
         - title: Add boot entries
           summary: A boot entry is a set of options that define a load configuration for an operating system or bootable program.
           url: ./devtest/adding-boot-entries.md
         - title: Edit boot options
           summary: Learn how to customize boot options.
           url: ./devtest/editing-boot-options.md
-        - title: Use Device Manager to uninstall devices and driver packages
-          summary: Device Manager is a Control Panel application that allows you to manage devices and drivers. 
-          url: ./install/using-device-manager-to-uninstall-devices-and-driver-packages.md
-        - title: Create a new shipping label
-          summary: Use this method in the Microsoft Hardware API to create a new shipping label. 
-          url: ./dashboard/create-a-new-shipping-label.md
-        - title: Manage shipping labels
-          summary: Learn how to manage shipping labels for your Windows Hardware dashboard submissions. 
-          url: ./dashboard/manage-shipping-labels.md
-        - title: Get a code signing certificate
-          summary: Learn how to get a code signing certificate to secure your digital information.
-          url: ./dashboard/code-signing-cert-manage.md
     # Section
-    - title: Resources
-      items:
-        - title: Partner Center for Windows Hardware
-          summary: Learn how to create and manage system and driver submissions quickly and easily.
-          url: ./dashboard/index.yml
-        - title: What's new in driver development
-          summary: Learn about the latest driver development features in Windows 11.
-          url: ./what-s-new-in-driver-development.md
-        - title: Overview of Driver Technologies
-          summary: Entryway to specific Windows driver models, from Bluetooth to USB and more.
-          url: ./device-and-driver-technologies.md
-        - title: Bug Check Code Reference
-          summary: This section contains descriptions of common bug check codes, including the parameters displayed with the error code on the blue bug check screen.
-          url: ./debugger/bug-check-code-reference2.md
-        - title: Driver Verifier
-          summary: Driver Verifier monitors Windows kernel-mode drivers and graphics drivers to detect illegal function calls or actions that might corrupt the system.
-          url: ./devtest/driver-verifier.md
-        - title: Windows Device Console (Devcon.exe)
-          summary: DevCon is a command-line tool that displays detailed information about devices on computers running Windows.
-          url: ./devtest/devcon.md
-        - title: WinUSB (Winusb.sys)
-          summary: This section describes the generic WinUSB driver (Winusb.sys) and its user-mode component (Winusb.dll) provided by Microsoft for all USB devices.
-          url: ./usbcon/winusb.md
-  footer: "[@WindowsDocs on Twitter](https://twitter.com/WindowsDocs) - [OneDevMinute on YouTube](/shows/One-Dev-Minute/?WT.mc_id=odm-c9-niner) - [Windows developer support](https://developer.microsoft.com/windows/support) - [Stack Overflow](https://stackoverflow.com/questions/tagged/windows)"
+  footer: "[@WindowsDocs on X](https://x.com/WindowsDocs) - [OneDevMinute on YouTube](/shows/One-Dev-Minute/?WT.mc_id=odm-c9-niner) - [Windows developer support](https://developer.microsoft.com/windows/support) - [Stack Overflow](https://stackoverflow.com/questions/tagged/windows)"

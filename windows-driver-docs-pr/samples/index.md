@@ -1,12 +1,13 @@
 ---
-title: Windows driver samples
-description: Windows 10 driver samples are available on the Microsoft Samples portal and on GitHub.
-ms.date: 03/22/2023
+title: Windows Driver Samples
+description: Windows 11 driver samples are available on the Microsoft Samples portal and on GitHub.
+ms.date: 09/11/2024
+ms.topic: reference
 ---
 
 # Windows driver samples
 
-You can browse and download individual Windows 10 driver samples on the [Microsoft Samples portal](/samples/browse/?products=windows-wdk). You can also clone, fork, or download the [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples) repo on GitHub.
+You can browse and download individual Windows 11 driver samples on the [Microsoft Samples portal](/samples/browse/?products=windows-wdk). You can also clone, fork, or download the [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples) repo on GitHub.
 
 Earlier versions of Windows driver samples are archived at Microsoft Archive on GitHub:
 
@@ -18,15 +19,13 @@ For Windows 7, samples were included in the Windows Driver Kit (WDK).
 
 ## Driver samples for specific technologies
 
-For more information about the Windows 10 driver samples available for a specific technology area, see the following topics:
+For more information about the Windows 11 driver samples available for a specific technology area, see the following topics:
 
 - [Audio driver samples](audio-driver-samples.md)
 
 - [AVStream driver samples](avstream-driver-samples.md)
 
 - [Battery driver samples](battery-driver-samples.md)
-
-- [Biometrics driver samples](biometrics-driver-samples.md)
 
 - [Bluetooth driver samples](bluetooth-driver-samples.md)
 
@@ -51,8 +50,6 @@ For more information about the Windows 10 driver samples available for a specifi
 - [Power framework (PoFx) driver samples](power-framework--pofx--driver-samples.md)
 
 - [Point of service (POS) driver samples](point-of-service--pos--driver-samples.md)
-
-- [Print driver samples](print-driver-samples.md)
 
 - [Secure Digital (SD) driver samples](secure-digital--sd--driver-samples.md)
 
@@ -83,5 +80,3 @@ For more information about the Windows 10 driver samples available for a specifi
 - [Windows Image Acquisition (WIA) driver samples](wia-driver-samples.md)
 
 - [Windows Management Instrumentation (WMI) driver samples](windows-management-instrumentation--wmi--driver-samples.md)
-
-- [Windows Portable Device (WPD) driver samples](windows-portable-device--wpd--driver-samples.md)

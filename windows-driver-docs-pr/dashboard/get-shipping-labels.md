@@ -1,8 +1,8 @@
 ---
 title: Get shipping label data
 description: These methods from the Microsoft Hardware APIs get data for shipping labels of hardware products registered to your Dev Center Account.
-ms.topic: article
 ms.date: 10/03/2019
+ms.topic: how-to
 ---
 # Get shipping label data
 
@@ -341,7 +341,7 @@ This object has the following values
 | Value | Type | Description |
 |:--|:--|:--|
 |flooringBuildNumber|number|The build number of the release when you want a driver to only be offered at and above this build number. For example, if the floor needs to be 10.1.17135, the input needs to be 17135. The major version (10.1) always defaults to the appropriate version automatically.|
-|ceiling|number|The build number of the release when you want a driver to only be offered at or below this build number. For example, if the ceiling needs to be 10.1.17139, the input needs to be 17139. The major version (10.1) always defaults to the appropriate version automatically.|
+|ceilingBuildNumber|number|The build number of the release when you want a driver to only be offered at or below this build number. For example, if the ceiling needs to be 10.1.17139, the input needs to be 17139. The major version (10.1) always defaults to the appropriate version automatically.|
 
 For more info, see [Limiting driver distribution by Windows versions](./limit-driver-distribution.md).
 

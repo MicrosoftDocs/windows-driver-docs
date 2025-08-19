@@ -10,7 +10,8 @@ keywords:
 - WPP software tracing WDK , about WPP
 - default WPP software tracing
 - tracing WDK , WPP
-ms.date: 04/20/2017
+ms.date: 12/12/2024
+ms.topic: concept-article
 ---
 
 # WPP Software Tracing
@@ -46,7 +47,6 @@ For more information, see <a href="tools-for-software-tracing.md" data-raw-sourc
 </table>
 
  
-
 Logging messages with WPP software tracing is similar to using Windows event logging services. The driver logs a message ID and unformatted binary data in a log file. Subsequently, a postprocessor converts the information in the log file to a human-readable form. However, WPP software tracing supports message formats that are more capable and flexible than that supported by the event logging services. For example, WPP software tracing has built-in support for IP addresses, GUIDs, system IDs, time stamps, and other useful data types. In addition, users can add custom data types relevant to their application.
 
 ### An overview of the WPP software tracing process

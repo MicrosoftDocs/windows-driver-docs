@@ -1,5 +1,5 @@
 ---
-title: C28143 warning
+title: C28143 Warning
 description: Warning C28143 A dispatch routine that calls IoMarkIrpPending must also return STATUS_PENDING.
 keywords:
 - warnings listed WDK PREfast for Drivers
@@ -7,6 +7,7 @@ keywords:
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28143"
+ms.topic: reference
 ---
 
 # C28143

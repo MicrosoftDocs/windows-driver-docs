@@ -5,6 +5,7 @@ keywords:
 - trace buffers WDK
 - buffers WDK software tracing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 8: Configuring Trace Buffers
@@ -51,12 +52,4 @@ Log Filename:           d:\traces\testtrace.etl
 ```
 
 It is always important to watch the **Events Lost** counter in the trace session properties list. If you are losing events, rerun the trace session with increased buffer capacity (size, number, or both). To view the properties of a trace session, use **tracelog -l** or **tracelog -q***SessionName*.
-
- 
-
- 
-
-
-
-
 

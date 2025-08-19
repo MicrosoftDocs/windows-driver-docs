@@ -3,6 +3,7 @@ title: Symbols
 description: Symbols
 keywords: ["Debugger Engine, symbols"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Symbols
@@ -25,8 +26,3 @@ For details about using symbols, see [Using Symbols](using-symbols.md). For an o
  
 
  
-
-
-
-
-

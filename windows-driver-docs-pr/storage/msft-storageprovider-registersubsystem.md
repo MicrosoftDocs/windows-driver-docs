@@ -1,5 +1,5 @@
 ---
-title: RegisterSubsystem method of the MSFT\_StorageProvider class
+title: RegisterSubsystem Method of the MSFT_StorageProvider Class
 description: Registers a subsystem to be managed by this provider.
 ms.assetid: 0C882319-FC92-4C79-A89C-F16C6439A221
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

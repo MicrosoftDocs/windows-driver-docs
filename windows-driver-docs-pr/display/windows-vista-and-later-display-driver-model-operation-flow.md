@@ -8,20 +8,21 @@ keywords:
 - command buffers WDK display , operation flow
 - DMA buffers WDK display , operation flow
 - buffers WDK display
-ms.date: 03/20/2023
+ms.date: 04/24/2025
+ms.topic: concept-article
 ---
 
 # Windows Display Driver Model (WDDM) operation flow
 
 The following diagram shows the flow of WDDM operations that occur from when a rendering device is created to when the content is presented to the display. The information that follows the diagram describes the ordered sequence of the operation flow in more detail.
 
-![diagram illustrating the wddm operation flow.](images/lddmflow.png)
+:::image type="content" source="images/lddmflow.png" alt-text="Diagram that shows the WDDM operation flow from creating a rendering device to presenting content on the display.":::
 
 * **Creating a Rendering Device**
 
   After an application requests to create a rendering device:
 
-  * **1**: The DirectX Graphics Kernel Subsystem (*Dxgkrnl*) calls the display miniport driver's (KMD) [**DxgkDdiCreateDevice**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createdevice) function.
+  * **1**: The DirectX Graphics Kernel Subsystem (*Dxgkrnl*) calls the kernel-mode display miniport driver's (KMD) [**DxgkDdiCreateDevice**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createdevice) function.
 
     KMD initializes direct memory access (DMA) by returning a pointer to a filled [**DXGK_DEVICEINFO**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_deviceinfo) structure in the **pInfo** member of the [**DXGKARG_CREATEDEVICE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_createdevice) structure.
 
@@ -64,6 +65,6 @@ The following diagram shows the flow of WDDM operations that occur from when a r
 
   * **14**: *Dxgkrnl* calls KMD's [**DxgkDdiSubmitCommand**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_submitcommand) function to queue the DMA buffer to the GPU execution unit. Each DMA buffer submitted to the GPU contains a fence identifier, which is a number. After the GPU finishes processing the DMA buffer, the GPU generates an interrupt.
 
-  * **15**: KMD is notified of the interrupt in its [**DxgkDdiInterruptRoutine**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_interrupt_routine) function. KMD should read, from the GPU, the fence identifier of the DMA buffer that just completed.
+  * **15**: KMD is notified of the interrupt in its [**DxgkDdiInterruptRoutine**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_interrupt_routine) function. KMD should read the fence identifier of the completed DMA buffer from the GPU.
 
-  * **16**: KMD should call the [**DxgkCbNotifyInterrupt**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_notify_interrupt) function to notify the DXGK that the DMA buffer completed. KMD should also call the [**DxgkCbQueueDpc**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_queue_dpc) function to queue a deferred procedure call (DPC).
+  * **16**: KMD should call [**DxgkCbNotifyInterrupt**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_notify_interrupt) to notify *Dxgkrnl* that the DMA buffer completed. KMD should also call [**DxgkCbQueueDpc**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_queue_dpc) to queue a deferred procedure call (DPC).

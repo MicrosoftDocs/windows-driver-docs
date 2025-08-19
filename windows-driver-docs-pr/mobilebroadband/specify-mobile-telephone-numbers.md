@@ -1,7 +1,8 @@
 ---
-title: Specify mobile telephone numbers
+title: Specify Mobile Telephone Numbers
 description: Specify mobile telephone numbers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Specify mobile telephone numbers
@@ -35,12 +36,12 @@ The following table is an example:
 
  
 
-## <span id="SMS_short_codes"></span><span id="sms_short_codes"></span><span id="SMS_SHORT_CODES"></span>SMS short codes
+## SMS short codes
 
 
 SMS short codes that have short phone numbers that are four to six digits long and are typically used to communicate with automated mobile network operator services are supported.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Send SMS by using the text-mode interface](calculate-characters-and-segments-of-a-draft-sms.md)

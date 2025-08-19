@@ -2,6 +2,7 @@
 description: The Windows Portable Devices Files
 title: The Windows Portable Devices Files
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # The Windows Portable Devices Files

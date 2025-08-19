@@ -2,6 +2,7 @@
 title: Uploading Data to a Device
 description: Uploading Data to a Device
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Uploading Data to a Device

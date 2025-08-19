@@ -1,7 +1,8 @@
 ---
-title: Code example for obtaining a Function Instance object
+title: Code Example for Obtaining a Function Instance Object
 description: Code example for obtaining a Function Instance object
 ms.date: 03/28/2023
+ms.topic: example-scenario
 ---
 
 # Code example for obtaining a Function Instance object

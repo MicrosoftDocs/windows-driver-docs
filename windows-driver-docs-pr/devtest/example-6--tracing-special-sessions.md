@@ -4,6 +4,7 @@ description: Example 6 Tracing Special Sessions
 keywords:
 - Tracefmt WDK , special sessions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 6: Tracing Special Sessions
@@ -22,12 +23,4 @@ This command does not include the name of the trace session, even though it uses
 However, the **-tmf** parameter is required in order to direct Tracefmt to the system.tmf file. By default, Tracefmt uses default.tmf, which does not include formatting instructions for NT Kernel Logger trace messages. The **-p** parameter finds the TMF file only when the TMF file name is a message guid, such as 37753236-c81f-505e-d40a-128d3bb2b5ff.tmf.
 
 This command also uses the **-display** parameter, which displays the trace messages in the Command Prompt window in addition to writing them to a log file. In this case, because the **-o** parameter is omitted, the messages are written to the default log file, FmtFile.txt, in the local directory.
-
- 
-
- 
-
-
-
-
 

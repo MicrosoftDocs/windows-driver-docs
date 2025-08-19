@@ -1,5 +1,5 @@
 ---
-title: Color commands
+title: Color Commands
 description: Provides information about color commands for printing.
 keywords:
 - printer commands WDK Unidrv, colors
@@ -9,6 +9,7 @@ keywords:
 - patterns WDK Unidrv
 - brushes WDK Unidrv
 ms.date: 01/26/2023
+ms.topic: reference
 ---
 
 # Color commands
@@ -40,8 +41,6 @@ The [printer commands](printer-commands.md) in the following table are used by p
 | **CmdSelectYellowColor** | Command to select yellow background color. | Optional |
 | **CmdSelectWhiteColor** | Command to select background white color. | Optional |
 
-For examples, see the [sample GPD files](sample-gpd-files.md).
-
 ## Commands for controlling printer palettes
 
 The [printer commands](printer-commands.md) in the following table are used by printers that support programmable palettes for both foreground (text and vector) printing and for raster printing.
@@ -55,8 +54,6 @@ The [printer commands](printer-commands.md) in the following table are used by p
 | **CmdDefinePaletteEntry** | Command to define a palette entry. | Required if the printer supports palettes.<br><br>In 24 BPP mode, Unidrv allows palettes for which **PaletteSize** is 1.<br><br>This allows GPD developers to implement a direct RGB color selection command for their devices. To do so, set **PaletteSize** to 1, and specify the selection color command in the **CmdDefinePaletteEntry** command. The **CmdSelectPaletteEntry** command must also be specified but can be defined as a **NULL** command. |
 | **CmdRedefinePaletteEntry** | Command to redefine a palette entry. | Optional. If not specified, **CmdDefinePaletteEntry** is used to redefined palette entries. |
 | **CmdSelectPaletteEntry** | Command to select a palette entry as the current color. | Required if the printer supports palettes. |
-
-For examples, see the [sample GPD files](sample-gpd-files.md).
 
 ## Commands for selecting pattern brushes
 

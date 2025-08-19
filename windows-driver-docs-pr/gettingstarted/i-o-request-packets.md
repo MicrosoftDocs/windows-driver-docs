@@ -1,7 +1,8 @@
 ---
-title: I/O request packets
-description: I/O request packets
-ms.date: 04/20/2017
+title: I/O Request Packets
+description: Learn about I/O request packets (IRPs) and their role in communication between operating system components and device drivers.
+ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # I/O request packets

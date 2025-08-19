@@ -1,5 +1,5 @@
 ---
-title: INF Manufacturer section
+title: INF Manufacturer Section
 description: The Manufacturer section identifies the manufacturer of one or more devices that can be installed by using the INF file.
 keywords:
 - INF Manufacturer Section Device and Driver Installation
@@ -10,7 +10,7 @@ api_name:
 - INF Manufacturer Section
 api_type:
 - NA
-ms.date: 01/24/2023
+ms.date: 05/21/2025
 ---
 
 # INF Manufacturer section
@@ -192,9 +192,13 @@ The following table defines the build number for the Windows operating system.
 
 | Windows version | Build number |
 |--|--|
+| Windows Server 2025 | 26100 |
+| Windows 11 version 24H2 | 26100 |
+| Windows 11 version 23H2 | 22631 |
 | Windows 11 version 22H2 | 22621 |
 | Windows 11 version 21H2 | 22000 |
 | Windows Server 2022 | 20348 |
+| Windows 10 version 22H2 | 19045 |
 | Windows 10 version 21H2 | 19044 |
 | Windows 10 version 21H1 | 19043 |
 | Windows 10 version 20H2 | 19042 |
@@ -268,9 +272,9 @@ This example shows a **Manufacturer** section typical to an INF for a single IHV
 
 ```inf
 [Manufacturer]
-%Mfg%=Contoso        ; Models section == Contoso
+%Mfg%=Contoso,NTamd64        ; Models section == Contoso
 
-[Contoso]
+[Contoso.NTamd64]
 
 ; ...
 [Strings]
@@ -281,10 +285,10 @@ The next example shows part of a **Manufacturer** section typical to an INF for 
 
 ```inf
 [Manufacturer]
-%CONTOSO%=Contoso_Section
+%CONTOSO%=Contoso_Section,NTamd64
 ; several entries omitted here for brevity
-%FABRIKAM%=Fabrikam_Section
-%ADATUM%=Adatum_Section
+%FABRIKAM%=Fabrikam_Section,NTamd64
+%ADATUM%=Adatum_Section,NTamd64
 ```
 
 The following example shows a **Manufacturer** section that is specific to x86 platforms, Windows XP and later:

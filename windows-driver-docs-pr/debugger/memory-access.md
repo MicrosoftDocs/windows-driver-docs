@@ -3,6 +3,7 @@ title: Memory Access
 description: Memory Access
 keywords: ["Debugger Engine, memory access", "memory access"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Memory Access
@@ -30,8 +31,3 @@ This section includes:
  
 
  
-
-
-
-
-

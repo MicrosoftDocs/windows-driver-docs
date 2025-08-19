@@ -12,6 +12,7 @@ keywords:
 - trace consumers WDK
 - trace controllers WDK
 ms.date: 09/12/2018
+ms.topic: overview
 ---
 
 # TraceView

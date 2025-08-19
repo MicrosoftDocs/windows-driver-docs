@@ -3,13 +3,10 @@ title: Checking for Stuck Threads
 description: Checking for Stuck Threads
 keywords: ["RPC debugging, stuck threads"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Checking for Stuck Threads
-
-
-## <span id="ddk_checking_for_stuck_threads_dbg"></span><span id="DDK_CHECKING_FOR_STUCK_THREADS_DBG"></span>
-
 
 RPC needs its worker threads available in order to perform normally. A common problem is that some component in the same process will deadlock while holding one of the global critical sections (for example, loader lock or heap lock). This will cause many threads to hang -- very possibly including some RPC worker threads.
 
@@ -17,7 +14,7 @@ If this occurs, the RPC server will not respond to the outside world. RPC calls 
 
 A similar problem can result if a faulty driver prevents IRPs from completing and reaching the RPC server.
 
-If you suspect that one of these problems may be occurring, use DbgRpc with the **-t** switch (or use the [**!rpcexts.getthreadinfo**](-rpcexts-getthreadinfo.md) extension). The process ID should be used as a parameter. In the following example, assume the process ID is 0xC4:
+If you suspect that one of these problems may be occurring, use DbgRpc with the **-t** switch (or use the [**!rpcexts.getthreadinfo**](../debuggercmds/-rpcexts-getthreadinfo.md) extension). The process ID should be used as a parameter. In the following example, assume the process ID is 0xC4:
 
 ```dbgcmd
 D:\wmsg>dbgrpc -t -P c4
@@ -36,12 +33,3 @@ Searching for thread info ...
 The TID column gives the thread ID for each thread. The LASTTIME column contains the time stamp of the last change in state for each thread.
 
 Whenever the server receives a request, at least one thread will change state, and its time stamp will be updated. Therefore, if an RPC request is made to the server and the request fails but none of the time stamps change, this indicates that the request is not actually reaching the RPC Run-Time. You should investigate the cause of this.
-
- 
-
- 
-
-
-
-
-

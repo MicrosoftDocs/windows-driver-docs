@@ -5,6 +5,7 @@ keywords:
 - miniport drivers WDK networking , OID requests
 - OIDs WDK networking , miniport drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling OID Requests In a Miniport Adapter

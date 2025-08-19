@@ -11,6 +11,7 @@ keywords:
 - dynamic enumeration WDK KMDF
 - static enumeration WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling Enumeration Requests

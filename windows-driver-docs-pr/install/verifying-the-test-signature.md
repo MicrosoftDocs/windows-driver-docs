@@ -2,6 +2,7 @@
 title: Verifying the Test Signature
 description: Verifying the Test Signature
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Verifying the Test Signature

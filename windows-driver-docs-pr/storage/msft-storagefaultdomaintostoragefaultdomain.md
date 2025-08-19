@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StorageFaultDomainToStorageFaultDomain class
+title: MSFT_StorageFaultDomainToStorageFaultDomain Class
 description: Association between an MSFT\_StorageFaultDomain object and its ancestor or descendent MSFT\_StorageFaultDomain objects.
 ms.assetid: A45632F0-7607-49F8-BB6C-FF1043A9E173
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

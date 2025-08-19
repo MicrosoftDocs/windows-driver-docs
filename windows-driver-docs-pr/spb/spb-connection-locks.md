@@ -2,6 +2,7 @@
 title: SPB Connection Locks
 description: Connection locks are useful for enabling two clients to share access to a target peripheral device on a simple peripheral bus (SPB).
 ms.date: 09/14/2021
+ms.topic: concept-article
 ---
 
 # SPB Connection Locks
@@ -39,7 +40,7 @@ However, a more complex device might implement several device functions. This de
 
 A client uses a connection lock to obtain exclusive access to a target device, but the connection lock does not prevent data transfers to or from other devices on the bus.
 
-To perform a series of data transfers as an atomic bus operation, clients typically use an [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence-control-code) request. A less common way to perform an atomic bus operation is to use a controller lock. A client sends [IOCTL_SPB_LOCK_CONTROLLER](./spb-ioctls.md#ioctl_spb_lock_controller-control-code) and [IOCTL_SPB_UNLOCK_CONTROLLER](./spb-ioctls.md#ioctl_spb_unlock_controller-control-code) requests to a acquire and release a controller lock.
+To perform a series of data transfers as an atomic bus operation, clients typically use an [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence-control-code) request. A less common way to perform an atomic bus operation is to use a controller lock. A client sends [IOCTL_SPB_LOCK_CONTROLLER](./spb-ioctls.md#ioctl_spb_lock_controller-control-code) and [IOCTL_SPB_UNLOCK_CONTROLLER](./spb-ioctls.md#ioctl_spb_unlock_controller-control-code) requests to acquire and release a controller lock.
 
 Controller locks are distinct from connection locks. A controller lock enables a sequence of I/O transfers to and from a target device on the bus to be performed as a single, atomic bus operation. While the controller lock is in effect, transfers to or from other devices on the bus are deferred until the controller lock is released. For more information, see [Atomic Bus Operations](./atomic-bus-operations.md).
 

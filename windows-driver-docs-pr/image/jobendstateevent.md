@@ -1,5 +1,5 @@
 ---
-title: JobEndStateEvent element
+title: JobEndStateEvent Element
 description: The required JobEndStateEvent element informs the client that the scanner has finished processing a job.
 keywords: ["JobEndStateEvent element Imaging Devices"]
 topic_type:

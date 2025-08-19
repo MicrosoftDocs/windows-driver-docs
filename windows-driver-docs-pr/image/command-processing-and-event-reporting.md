@@ -1,7 +1,8 @@
 ---
-title: Command processing and event reporting
+title: Command Processing and Event Reporting
 description: Command processing and event reporting
 ms.date: 03/29/2023
+ms.topic: concept-article
 ---
 
 # Command processing and event reporting

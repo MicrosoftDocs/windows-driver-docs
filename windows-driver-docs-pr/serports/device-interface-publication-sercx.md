@@ -1,7 +1,8 @@
 ---
-title: Device Interface publication for a SerCx or SerCx2 managed Serial Port
+title: Device Interface Publication for a SerCx or SerCx2 Managed Serial Port
 description: Learn how to publish a device interface for a SerCx or SerCx2 managed serial port.
 ms.date: 01/20/2023
+ms.topic: how-to
 ---
 
 # Device Interface publication for a SerCx or SerCx2 managed Serial Port
@@ -51,7 +52,7 @@ If a `FriendlyName` is defined using the methods above, SerCx/SerCx2 will publis
 
 ### Enabling unprivileged access
 
-By default, the controller/port will be accessible only to privileged users and applications. If access from unprivileged applications is required, the SerCx/SerCx2 client must override the default security descriptor after calling `SerCx2InitializeDeviceInit()` or `SerCxDeviceInitConfig()`, but before calling `SerCx2InitializeDevice()` or `SerCxInitialize()`, at which time the applied security descriptor is propogated to the controller PDO.
+By default, the controller/port will be accessible only to privileged users and applications. If access from unprivileged applications is required, the SerCx/SerCx2 client must override the default security descriptor after calling `SerCx2InitializeDeviceInit()` or `SerCxDeviceInitConfig()`, but before calling `SerCx2InitializeDevice()` or `SerCxInitialize()`, at which time the applied security descriptor is propagated to the controller PDO.
 
 An example of how to enable unprivileged access on SerCx2 from within the SerCx2 client controller driver's `EvtDeviceAdd` is below.
 

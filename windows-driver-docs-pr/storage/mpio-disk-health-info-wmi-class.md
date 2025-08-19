@@ -1,7 +1,8 @@
 ---
-title: MPIO\_DISK\_HEALTH\_INFO WMI Class
+title: MPIO_DISK_HEALTH_INFO WMI Class
 description: MPIO\_DISK\_HEALTH\_INFO WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MPIO\_DISK\_HEALTH\_INFO WMI Class

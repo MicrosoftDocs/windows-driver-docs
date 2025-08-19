@@ -3,13 +3,10 @@ title: RPC State Information Internals
 description: RPC State Information Internals
 keywords: ["RPC debugging, RPC state information internals"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # RPC State Information Internals
-
-
-## <span id="ddk_rpc_state_information_internals_dbg"></span><span id="DDK_RPC_STATE_INFORMATION_INTERNALS_DBG"></span>
-
 
 This section provides details of the internal structure of the state information gathered by the RPC Run-Time.
 
@@ -21,7 +18,7 @@ Each key object in the RPC Run-Time will maintain one or more cells of informati
 
 **When an RPC client is running**, the RPC Run-Time creates a Client Call object each time a call is made. This Client Call object contains information about this particular call.
 
-### <span id="endpoint_cells"></span><span id="ENDPOINT_CELLS"></span>Endpoint Cells
+## Endpoint Cells
 
 From the RPC run-time's point of view, an endpoint is an entry point through which the particular server can be contacted. The endpoint is always associated with a given RPC transport. The endpoint state information is used to associate a client call with a particular process on the server.
 
@@ -36,7 +33,7 @@ The status value: *allocated*, *active*, or *inactive*. Most endpoints are activ
 <span id="EndpointName"></span><span id="endpointname"></span><span id="ENDPOINTNAME"></span>**EndpointName**  
 The first 28 characters of the endpoint name.
 
-### <span id="thread_cells"></span><span id="THREAD_CELLS"></span>Thread Cells
+## Thread Cells
 
 Server threads are worker threads (standard Win32 threads for use by RPC).
 
@@ -51,7 +48,7 @@ The time (in milliseconds after boot) when the information was last updated.
 <span id="TID"></span><span id="tid"></span>**TID**  
 The thread ID of this thread. This is useful when trying to correlate with the thread list in the debugger.
 
-### <span id="connection_object_cells"></span><span id="CONNECTION_OBJECT_CELLS"></span>Connection Object Cells
+## Connection Object Cells
 
 The fields in a connection object cell are:
 
@@ -98,7 +95,7 @@ The Process ID of the caller. Valid only for LRPC calls.
 <span id="TID"></span><span id="tid"></span>**TID**  
 The Thread ID of the caller. Valid only for LRPC calls.
 
-### <span id="client_call_object_cells"></span><span id="CLIENT_CALL_OBJECT_CELLS"></span>Client Call Object Cells
+## Client Call Object Cells
 
 A Client Call (CCALL) object is broken into two cells, because the information about a client call is too large to fit in one cell. The first cell is called *Client Call Information*, and the second is called *Call Target Information*. Most tools will show the information together, so you do not need to distinguish between them.
 
@@ -132,8 +129,3 @@ The first 24 characters of the name of the server to which the call is made.
  
 
  
-
-
-
-
-

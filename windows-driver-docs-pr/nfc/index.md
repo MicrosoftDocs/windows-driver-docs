@@ -1,5 +1,5 @@
 ---
-title: NFC design guide
+title: NFC Design Guide
 description: Windows exposes a rich set of experiences using NFC technology.
 ms.assetid: 26BFE25A-AC46-4634-8330-990DB447E55A
 keywords:
@@ -10,8 +10,8 @@ keywords:
 - NFP
 - smart card
 - smartcard
-ms.date: 11/15/2022
-ms.topic: article
+ms.date: 01/11/2024
+ms.topic: design-pattern
 ---
 
 # Near field communications (NFC) design guide
@@ -28,4 +28,4 @@ To enable NFC support, Microsoft relies on IHVs to provide device drivers that i
 ## Related topics
 
 - [Getting Started with UMDF](../wdf/getting-started-with-umdf-version-2.md)
-- [NFC device driver interface (DDI) reference](/windows-hardware/drivers/ddi/index)
+- [NFC class extension (CX) design guide](/windows-hardware/drivers/nfc/nfc-class-extension-)

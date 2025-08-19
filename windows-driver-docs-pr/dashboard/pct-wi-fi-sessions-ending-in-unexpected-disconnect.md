@@ -1,8 +1,8 @@
 ---
 title: Percentage of Wi-Fi sessions ending in a disconnection with more than 50% signal quality
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of instances where a device unexpectedly disconnects from Wi-Fi
-ms.topic: article
 ms.date: 01/23/2023
+ms.topic: concept-article
 ---
 
 # Percentage of Wi-Fi sessions ending in a disconnection with more than 50% signal quality
@@ -20,7 +20,7 @@ Once a device successfully connects to Wi-Fi, it must maintain that connection, 
 | **Measurement criteria** | Device / AP pair aggregation |
 | **Minimum instances** | 1,000 instances |
 | **Passing criteria** | <= 26% of Instances don't end in an unexpected disconnect |
-| **Measure ID** | 32321753 (Legacy), 40408290 |
+| **Measure ID** | 40408290 |
 
 ## Calculation
 

@@ -9,6 +9,7 @@ keywords:
 - trace sessions WDK , flags
 - trace sessions WDK , levels
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Selecting Flags and Levels
@@ -31,12 +32,4 @@ The **Tracing Flags and Level Selection** dialog box is enabled only when TraceV
 If the **Tracing Flags and Level Selection** dialog box is disabled, you can set the trace flags and level for the provider manually in the **Advanced Trace Session Options** dialog box. For instructions, see [Setting Advanced Trace Session Options](setting-advanced-trace-session-options.md).
 
 Flags and levels are properties of the trace provider. Typically, the flags represent increasingly detailed reporting levels and levels represent the severity of the event (information, warning, or error).
-
- 
-
- 
-
-
-
-
 

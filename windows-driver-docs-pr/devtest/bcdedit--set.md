@@ -10,7 +10,6 @@ api_name:
 - BCDEdit /set
 api_type:
 - NA
-ms.custom: contperf-fy21q2 
 ---
 
 # BCDEdit /set
@@ -360,7 +359,7 @@ Use the **BCDEdit / hypervisorsettings** option to set or display the hypervisor
 Controls whether the hypervisor debugger is enabled.
 
 **hypervisordebugtype** \[ **SERIAL** | **1394** | **NET** \] 
-Can be SERIAL, 1394, or NET. For more infomation, see [BCDEdit /hypervisorsettings](bcdedit--hypervisorsettings.md).
+Can be SERIAL, 1394, or NET. For more information, see [BCDEdit /hypervisorsettings](bcdedit--hypervisorsettings.md).
 
 ## Hypervisor Settings
 
@@ -402,7 +401,7 @@ Enables kernel Emergency Management Services. The BCDEdit /ems option enables or
 The BCDEdit /emssettings option sets the global Emergency Management Services (EMS) settings for the computer. For more information, see  For more information, see [BCDEdit /emssettings](bcdedit--emssettings.md).
 
 ## Virtual Secure Mode
-**vmslaunchtype** \[ **Off** | **Auto**\]  
+**vsmlaunchtype** \[ **Off** | **Auto**\]  
 Controls the Virtual Secure Mode launch type. Can be Off or Auto. For more information, see [Manage Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage).
 
 ## Event Logging

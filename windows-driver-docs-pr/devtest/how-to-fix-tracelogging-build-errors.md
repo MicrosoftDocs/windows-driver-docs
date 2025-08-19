@@ -1,7 +1,8 @@
 ---
-title: How to fix TraceLogging build errors
+title: How to Fix TraceLogging Build Errors
 description: This topic describes some common build errors and how to resolve them.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How to fix TraceLogging build errors
@@ -63,12 +64,4 @@ See Case\#1. It is likely that your SDK does not define the macro **DECLSPEC\_SA
 #define WINEVENT_KEYWORD_TELEMETRY  0x2000000000000
 #endif
 ```
-
- 
-
- 
-
-
-
-
 

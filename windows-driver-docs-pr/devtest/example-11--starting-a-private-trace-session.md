@@ -5,6 +5,7 @@ keywords:
 - trace sessions WDK , private
 - private trace sessions WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 11: Starting a Private Trace Session
@@ -42,12 +43,4 @@ In this example, the command starts the critical section process logger on two r
 ```
 tracelog -start MyTrace -um -critsec -pids 2 4806 5164 -f testtrace.etl
 ```
-
- 
-
- 
-
-
-
-
 

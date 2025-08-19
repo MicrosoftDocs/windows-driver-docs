@@ -1,11 +1,12 @@
 ---
-title: Initialize a print monitor
+title: Initialize a Print Monitor
 description: Provides information about how to initialize a print monitor.
 keywords:
 - print monitors WDK, initializing
 - initializing print monitors
 - LoadLibrary
 ms.date: 09/14/2022
+ms.topic: how-to
 ---
 
 # Initialize a print monitor

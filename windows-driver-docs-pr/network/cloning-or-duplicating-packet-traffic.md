@@ -2,6 +2,7 @@
 title: Cloning Packet Traffic
 description: Cloning Packet Traffic
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Cloning Packet Traffic

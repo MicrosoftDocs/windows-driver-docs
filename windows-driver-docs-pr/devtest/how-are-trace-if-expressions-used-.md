@@ -1,7 +1,8 @@
 ---
-title: How are Trace-If expressions used
+title: How are Trace-If Expressions Used
 description: How are Trace-If expressions used
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # How are Trace-If expressions used?

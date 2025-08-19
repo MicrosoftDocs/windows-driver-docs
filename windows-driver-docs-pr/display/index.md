@@ -1,25 +1,21 @@
 ---
-title: Driver design guides for display, graphics, and compute accelerator devices
-description: Design guide for display device drivers, graphics device drivers, and compute accelerator device drivers
+title: Developer Documentaton for Display, Graphics, and Compute Accelerator Drivers
+description: Documentation to develop display device drivers, graphics device drivers, and compute accelerator device drivers
 keywords:
 - display driver development WDK , Windows
 - graphics driver development WDK , Windows
 - compute accelerator driver development WDK, Windows
-- miniport drivers WDK display
-ms.date: 02/22/2023
-ms.custom: contperf-fy22q3
-ms.topic: article
+- display miniport drivers , WDK , Windows
+ms.date: 11/21/2024
+ms.topic: concept-article
 ---
 
-# Driver design guides for display, graphics, and compute accelerator devices
+# Developer documentation for display, graphics, and compute accelerator drivers
 
-The following design guides are for developers of display, graphics, and compute accelerator drivers on Windows. For information about available "Video driver samples", see [Windows driver samples](../samples/index.md).
+Today's graphics and display drivers are developed on the [Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md).
 
-- [Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md)
+Compute accelerator drivers use the [Microsoft Compute Driver Model](mcdm.md) (MCDM), which is a subset of WDDM 2.0+.
 
-  - WDDM is the driver architecture available starting with Windows Vista. Drivers that adhere to WDDM run on Windows Vista and later.
-  - For compute accelerator drivers, use the [Microsoft Computer Driver Model](mcdm.md) (MCDM), which is a subset of WDDM 2.0+.
+For information about available driver samples, see [Windows driver samples](../samples/index.md).
 
-- [Legacy: Windows 2000 Display Driver Model (XDDM)](windows-2000-display-driver-model-design-guide.md)
-
-  XDDM was the display and graphics driver architecture available for Windows 2000 through Windows Vista and Windows 7 only.
+The legacy [Windows 2000 Display Driver Model (XDDM)](/previous-versions/windows/drivers/display/windows-2000-display-driver-model-design-guide) was the display and graphics driver architecture available for Windows 2000 through Windows Vista and Windows 7 only.

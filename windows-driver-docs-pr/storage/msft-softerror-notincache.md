@@ -1,5 +1,5 @@
 ---
-title: MSFT\_SoftError\_NotInCache class
+title: MSFT_SoftError_NotInCache Class
 description: Represents a not-in-cache error.
 ms.assetid: EF2B4036-008A-49D2-A784-4089F62BEB3F
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

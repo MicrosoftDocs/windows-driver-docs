@@ -2,6 +2,7 @@
 title: Querying the PCI vendor and device IDs for a virtual function
 description: Querying the PCI Vendor and Device Identifiers for a Virtual Function
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Querying the PCI Vendor and Device Identifiers for a Virtual Function

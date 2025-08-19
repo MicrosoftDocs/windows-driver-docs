@@ -2,6 +2,7 @@
 title: Using Virtual Switch Filtering
 description: Using Virtual Switch Filtering
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using Virtual Switch Filtering
@@ -56,7 +57,7 @@ Callbacks should not add or delete WFP filters synchronously in the context of t
 
 ### Port 0 Traffic
 
-For WFP virtual switch callouts, traffic from port 0 (the default port ID) is trusted and should not be filtered. This is because, generally, traffic over port 0 originates from other extensions in the driver stack and is thus treated by the data path as privileged and trusted. Virtual switch extensions will sparingly use port 0 for situations such as originating a control packet, which should not be filtered and rejected by any underlying extensions. For more information about Hyper-V extensible switch source port mofification, see [Modifying a Packet's Extensible Switch Source Port Data](modifying-a-packet-s-extensible-switch-source-port-data.md).
+For WFP virtual switch callouts, traffic from port 0 (the default port ID) is trusted and should not be filtered. This is because, generally, traffic over port 0 originates from other extensions in the driver stack and is thus treated by the data path as privileged and trusted. Virtual switch extensions will sparingly use port 0 for situations such as originating a control packet, which should not be filtered and rejected by any underlying extensions. For more information about Hyper-V extensible switch source port modification, see [Modifying a Packet's Extensible Switch Source Port Data](modifying-a-packet-s-extensible-switch-source-port-data.md).
 
 ### Callout Matching Rules
 

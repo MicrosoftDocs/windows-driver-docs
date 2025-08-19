@@ -2,6 +2,7 @@
 title: U (Windows Debugger Glossary)
 description: Glossary page - U
 ms.date: 11/28/2017
+ms.topic: glossary
 ---
 
 # U
@@ -37,8 +38,3 @@ See target application.
  
 
  
-
-
-
-
-

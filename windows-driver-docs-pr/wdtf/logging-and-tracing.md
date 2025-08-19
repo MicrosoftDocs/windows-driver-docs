@@ -5,6 +5,7 @@ keywords:
 - logging WDK WDTF
 - tracing WDK WDTF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WDTF Object Logging
@@ -15,7 +16,7 @@ ms.date: 04/20/2017
 
 WDTF Object *Logging* is a feature in WDTF that enables WDTF objects to write log messages to a common log file automatically. The name of the object logging file is called TestTextLog.log. WDTF Object logging has two key benefits. It simplifies test script authoring by using WDTF object methods to log the high level method call, the method's parameters, and the method's result. WDTF Object logging also improves diagnosability by providing a consistent mechanism for writing common log messages.
 
-By default WDTF object logging is disabled. You enable object logging by calling the [**IWDTFConfig2::EnableObjectLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfconfig2-enableobjectlogging) method. After you enable logging, you can temporarily disable or re-enable it for specific actions or collections of actions by calling the methods [**IWDTFAction2::EnableObjectLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfaction2-enableobjectlogging), [**IWDTFAction2::DisableObjectLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfaction2-disableobjectlogging), [**IWDTFActions2::EnableObjectLogging**](/windows-hardware/drivers/ddi/index), and [**IWDTFActions2::DisableObjectLogging**](/windows-hardware/drivers/ddi/index).
+By default WDTF object logging is disabled. You enable object logging by calling the [**IWDTFConfig2::EnableObjectLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfconfig2-enableobjectlogging) method. After you enable logging, you can temporarily disable or re-enable it for specific actions or collections of actions by calling the methods [**IWDTFAction2::EnableObjectLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfaction2-enableobjectlogging), [**IWDTFAction2::DisableObjectLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfaction2-disableobjectlogging), [**IWDTFActions2::EnableObjectLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfaction2-enableobjectlogging), and [**IWDTFActions2::DisableObjectLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfactions2-disableobjectlogging).
 
 The log messages that the WDTF writes to the log file have common patterns.
 
@@ -38,7 +39,7 @@ WDTF_TARGETS    : INFO  :          Target: Generic volume
 WDTF_TARGETS    : INFO  :          Target: Generic volume
 ```
 
-If object logging is enabled, object error logging is enabled by default. Otherwise, error logging defaults to disabled. Like object logging, you can enable/disable error logging by calling the methods [**IWDTFConfig2::EnableObjectErrorLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfconfig2-enableobjecterrorlogging), [**IWDTFConfig2::DisableObjectErrorLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfconfig2-disableobjecterrorlogging), [**IWDTFAction2::EnableObjectErrorLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfaction2-enableobjecterrorlogging), [**IWDTFAction2::DisableObjectErrorLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfaction2-disableobjecterrorlogging), [**IWDTFActions2::EnableObjectErrorLogging**](/windows-hardware/drivers/ddi/index), and [**IWDTFActions2::DisableObjectErrorLogging**](/windows-hardware/drivers/ddi/index).
+If object logging is enabled, object error logging is enabled by default. Otherwise, error logging defaults to disabled. Like object logging, you can enable/disable error logging by calling the methods [**IWDTFConfig2::EnableObjectErrorLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfconfig2-enableobjecterrorlogging), [**IWDTFConfig2::DisableObjectErrorLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfconfig2-disableobjecterrorlogging), [**IWDTFAction2::EnableObjectErrorLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfaction2-enableobjecterrorlogging), [**IWDTFAction2::DisableObjectErrorLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfactions2-disableobjecterrorlogging), [**IWDTFActions2::EnableObjectErrorLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfconfig2-enableobjecterrorlogging), and [**IWDTFActions2::DisableObjectErrorLogging**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfactions2-disableobjecterrorlogging).
 
 The log messages that the WDTF writes to the log file for error logging have the following patterns. Look for the keyword "ERROR" to jump to the first error in the log.
 

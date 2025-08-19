@@ -1,8 +1,8 @@
 ---
 title:  Percent of Devices with WinML Runtime Error
 description: The measure monitors the overall health and reliability of Windows Machine Learning 
-ms.topic: article
 ms.date: 8/26/2020
+ms.topic: concept-article
 ---
 
 # Percent of Devices with WinML Runtime Error

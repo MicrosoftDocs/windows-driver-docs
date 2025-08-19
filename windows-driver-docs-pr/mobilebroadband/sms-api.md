@@ -2,6 +2,7 @@
 title: SMS API
 description: SMS API
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # SMS API
@@ -23,7 +24,7 @@ The SMS API supports the following use cases:
 
 For more info about the SMS API, see [**Windows.Devices.Sms namespace**](/uwp/api/Windows.Devices.Sms).
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [List of mobile broadband Windows Runtime APIs](list-of-mobile-broadband-windows-runtime-apis.md)

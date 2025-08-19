@@ -1,5 +1,5 @@
 ---
-title: INF DefaultInstall section
+title: INF DefaultInstall Section
 description: An INF file's DefaultInstall section is accessed if a user selects the "Install" menu item after selecting and holding (or right-clicking) on the INF file name.
 keywords:
 - INF DefaultInstall Section Device and Driver Installation

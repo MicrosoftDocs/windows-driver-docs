@@ -1,5 +1,5 @@
 ---
-title: RemoveVirtualPort method
+title: RemoveVirtualPort Method
 description: The RemoveVirtualPort method removes a virtual port for a specific world wide port name (WWPN) .
 keywords: ["RemoveVirtualPort method Storage Devices"]
 topic_type:

@@ -2,6 +2,7 @@
 title: PwrTest Timer Scenario
 description: The PwrTest Timer Scenario logs system timer resolution changes as they happen.
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # PwrTest Timer Scenario
@@ -156,13 +157,5 @@ The following table describes the XML elements that appear in the log file.
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
-
- 
-
- 
-
-
-
-
 
 

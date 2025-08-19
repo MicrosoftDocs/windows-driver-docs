@@ -6,6 +6,7 @@ keywords:
 - network INF files WDK , DDInstall.Services section
 - DDInstall.Services section WDK networking
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # DDInstall.Services Section in a Network INF File
@@ -39,7 +40,7 @@ DisplayName = %Adapter1.DispName%
 ServiceType = 1 ;SERVICE_KERNEL_DRIVER
 StartType = 2 ;SERVICE_AUTO_START
 ErrorControl = 1 ;SERVICE_ERROR_NORMAL
-ServiceBinary = %12%\a1.sys
+ServiceBinary = %13%\a1.sys
 LoadOrderGroup = NDIS
  
 [a1.AddEventLog]

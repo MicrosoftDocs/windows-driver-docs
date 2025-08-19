@@ -8,6 +8,7 @@ keywords:
 - output files WDK TraceView
 - files WDK TraceView
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Output File Options
@@ -32,12 +33,4 @@ These options apply only to the trace session that you are creating, even if you
 If you specify the path and file name of an existing output or summary file, TraceView overwrites that file without warning.
 
 TraceView creates the summary file when you stop the trace session. If you close the TraceView window before stopping the trace session, TraceView does not create a summary file for the session.
-
- 
-
- 
-
-
-
-
 

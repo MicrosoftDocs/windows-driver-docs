@@ -5,6 +5,7 @@ keywords:
 - add-registry-sections WDK networking , ISDN adapters
 - ISDN adapters WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Specifying ISDN Keys and Values for an ISDN Adapter
@@ -120,7 +121,7 @@ The ISDN Wizard, which runs automatically during the installation of an ISDN com
 
 -   An **IsdnNumBChannels** value and a *D-channel* key for each D-channel
 
-    The *D-channel* key is an zero-based index from 0 through 9 that identifies the D-channel. **IsdnNumBChannels** is a REG\_DWORD value added to the *D-channel* key. **IsdnNumBChannels** specifies the number of B-channels supported by the D-channel.
+    The *D-channel* key is a zero-based index from 0 through 9 that identifies the D-channel. **IsdnNumBChannels** is a REG\_DWORD value added to the *D-channel* key. **IsdnNumBChannels** specifies the number of B-channels supported by the D-channel.
 
 The following is an example of an *add-registry-section* that adds ISDN keys and values to the instance key of an ISDN adapter. Two D-channels are specified for the adapter, and two B-channels are specified for each D-channel.
 

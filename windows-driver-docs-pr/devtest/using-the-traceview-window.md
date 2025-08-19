@@ -10,6 +10,7 @@ keywords:
 - displaying trace logs
 - log files WDK TraceView , displaying
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using the TraceView Window
@@ -26,12 +27,4 @@ This section includes:
 [Trace Session List](trace-session-list.md)
 
 [Trace Message Lists](trace-message-lists.md)
-
- 
-
- 
-
-
-
-
 

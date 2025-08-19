@@ -10,6 +10,7 @@ keywords:
 - Sdv-map.h WDK Static Driver Verifier , about Sdv-map.h
 - scanning DriverEntry routine WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Sdv-map.h
@@ -30,12 +31,4 @@ This section includes:
 [Approving Sdv-map.h](approving-the-sdv-map-h-file.md)
 
 [Duplicate Entry Points for a Function Role Type](duplicate-entry-points-for-a-function-role-type.md)
-
- 
-
- 
-
-
-
-
 

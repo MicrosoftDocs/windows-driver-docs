@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StoragePool class
+title: MSFT_StoragePool Class
 description: Represents a logical grouping of physical disks that may be used to create virtual disks.
 ms.assetid: 5b6c5566-7a3f-4bc4-b69e-53664920c9b2
 keywords:
@@ -44,7 +44,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 
@@ -368,7 +367,7 @@ The operational status of the storage pool. Unlike **HealthStatus**, this proper
 |  **Stressed** 4                                                                           | The storage pool is functioning, but needs attention. For example, the storage subsystem may be overloaded or overheated.                                                                  |
 |  **Predictive Failure** 5                                   | The storage pool is functioning, but predicting a failure in the near future.                                                                                                              |
 |  **Error** 6                                                                                       | An error has occurred.                                                                                                                                                                     |
-|  **Non-Recoverable Error** 7                       | An nonrecoverable error has occurred.                                                                                                                                                      |
+|  **Non-Recoverable Error** 7                       | A nonrecoverable error has occurred.                                                                                                                                                      |
 |  **Starting** 8                                                                           | The storage pool is in the process of starting.                                                                                                                                            |
 |  **Stopping** 9                                                                           | The storage pool is in the process of stopping.                                                                                                                                            |
 |  **Stopped** 10                                                                              | The storage pool was stopped in a clean and orderly fashion.                                                                                                                               |

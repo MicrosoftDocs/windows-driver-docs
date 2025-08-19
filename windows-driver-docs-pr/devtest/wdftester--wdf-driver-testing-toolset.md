@@ -2,6 +2,7 @@
 title: WdfTester WDF Driver Testing Toolset
 description: WdfTester WDF Driver Testing Toolset
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # WdfTester: WDF Driver Testing Toolset
@@ -16,12 +17,4 @@ This section includes the following topics:
 [WDF Driver Call Tracer (WdfCallTracer)](wdf-driver-call-tracer--wdfcalltracer-.md)
 
 [KMDF Functions that Return NSTATUS Codes](wdftester-functions-that-return-nstatus-codes.md)
-
- 
-
- 
-
-
-
-
 

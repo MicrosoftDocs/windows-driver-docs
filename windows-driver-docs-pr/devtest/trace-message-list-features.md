@@ -4,6 +4,7 @@ description: Trace Message List Features
 keywords:
 - Trace Message Lists WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Trace Message List Features
@@ -52,12 +53,4 @@ To copy trace messages from a Trace Message List, do the following:
 The messages are copied in a tab-delimited format. You can paste them into a text file or spreadsheet file for later use.
 
 For more information about saving trace messages, see [Creating Text Versions of Trace Logs](creating-text-versions-of-trace-logs.md).
-
- 
-
- 
-
-
-
-
 

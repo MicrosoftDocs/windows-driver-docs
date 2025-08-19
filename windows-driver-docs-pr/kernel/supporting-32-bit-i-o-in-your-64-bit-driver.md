@@ -1,8 +1,9 @@
 ---
-title: Supporting 32-Bit I/O in Your 64-Bit Driver
+title: Supporting 32-Bit I/O in your 64-Bit Driver
 description: Supporting 32-Bit I/O in Your 64-Bit Driver
 keywords: ["32-bit I/O support WDK 64-bit", "64-bit WDK kernel , 32-bit I/O support", "thunking WDK", "WOW64 thunking layer WDK", "converting parameters to fixed-precision types", "32-bit I/O support WDK 64-bit , about 32-bit I/O support in 64-bit", "control codes WDK 64-bit", "I/O control codes WDK kernel , 32-bit I/O in 64-bit drivers", "IOCTLs WDK kernel , 32-bit I/O in 64-bit drivers", "file system control codes WDK 64-bit", "FSCTL WDK 64-bit", "buffer pointers WDK 64-bit"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Supporting 32-Bit I/O in Your 64-Bit Driver

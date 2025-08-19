@@ -1,8 +1,8 @@
 ---
 title: UDDP Audio - Percent of machines with at least one APO disablement in past seven days
 description: When Audio APOs crash at least 10 times consecutively, the Audio service disables the APO's further usage in order for the suer to have an error free sound experience. This may result in our Audio Crash measure failing for some time on the driver submission and then start to pass again when the APO causing the issue in that driver submission gets disabled. This measure keeps track of the APO disablements in the past 7 days compared to the devices using audio in that day (Audio Client Initialize event)
-ms.topic: article
 ms.date: 01/19/2023
+ms.topic: concept-article
 ---
 
 # Percent of machines with at least one APO disablement in past 7 days
@@ -14,7 +14,7 @@ When Audio APOs crash at least 10 times consecutively, the Audio service disable
 
 |Attribute|Value|
 |----|----|
-|**Audience**|Windows machiens that have an audio APO|
+|**Audience**|Windows machines that have an audio APO|
 |**Time period**|Each day's failure rate includes APO disablements from the past 7 days|
 |**Machine vs. Instance**|Machine|
 |**Passing criteria**|<=0.1 % of machines have an APO disablement in the past 7 days|

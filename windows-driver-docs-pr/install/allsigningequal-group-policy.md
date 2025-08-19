@@ -7,6 +7,7 @@ keywords:
 - searching for drivers during device installation WDK device installations , AllSigningEqual group policy
 - AllSigningEq
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # AllSigningEqual Group Policy
@@ -71,4 +72,4 @@ To ensure that the settings are updated on the target system, do the following:
 
 This configuration change is made one time and applies to all subsequent driver package installations on the computer until AllSigningEqual is reconfigured.
 
-For more information about driver package ranking, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
+For more information about driver package ranking, see [How Windows Ranks Drivers](how-windows-ranks-driver-packages.md).

@@ -1,5 +1,5 @@
 ---
-title: FSCTL_REQUEST_OPLOCK_LEVEL_2 control code
+title: FSCTL_REQUEST_OPLOCK_LEVEL_2 Control Code
 description: The FSCTL_REQUEST_OPLOCK_LEVEL_2 control code requests a level 2 opportunistic lock (oplock) on a file.
 keywords: ["FSCTL_REQUEST_OPLOCK_LEVEL_2 control code Installable File System Drivers"]
 topic_type:

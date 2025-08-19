@@ -1,7 +1,8 @@
 ---
-title: Sensor driver samples
+title: Sensor Driver Samples
 description: The driver samples in this directory provide a starting point for writing a custom sensor driver for your device.
 ms.date: 03/22/2023
+ms.topic: tutorial
 ---
 
 # Sensor driver samples

@@ -1,7 +1,8 @@
 ---
 title: Using SetupAPI to Uninstall Devices and Driver Packages
 description: Using SetupAPI to Uninstall Devices and Driver Packages
-ms.date: 03/11/2022
+ms.date: 06/04/2024
+ms.topic: concept-article
 ---
 
 # Using SetupAPI to Uninstall Devices and Driver Packages
@@ -35,6 +36,8 @@ Starting with Windows XP, a device installation application can call the [SetupU
 Starting with Windows Vista, this function also removes the [driver package](driver-packages.md), which contains the specified INF file, from the [Driver Store](driver-store.md).
 
 Alternatively, a device installation application can call [DiUninstallDriver](/windows/win32/api/newdev/nf-newdev-diuninstalldriverw) to remove a driver package from the Driver Store.
+
+For more information on removing a driver package from the Driver Store, see [Delete a Driver Package from the Driver Store](./how-devices-and-driver-packages-are-uninstalled.md#delete-a-driver-package-from-the-driver-store).
 
 ### <a href="" id="deleting-the-binary-files-of-the-installed-driver"></a> Deleting the Binary Files of the Installed Driver
 

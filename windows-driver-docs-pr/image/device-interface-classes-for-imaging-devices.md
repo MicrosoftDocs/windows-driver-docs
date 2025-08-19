@@ -3,6 +3,7 @@ title: Device Interface Classes for Imaging Devices
 description: Device Interface Classes for Imaging Devices
 keywords: ["device interface classes WDK imaging"]
 ms.date: 11/28/2017
+ms.topic: overview
 ---
 
 # Device Interface Classes for Imaging Devices

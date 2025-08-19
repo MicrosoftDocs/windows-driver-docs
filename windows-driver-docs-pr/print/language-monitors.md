@@ -1,11 +1,12 @@
 ---
-title: Language monitors
+title: Language Monitors
 description: Provides information about language monitors.
 keywords:
 - print monitors WDK, language monitors
 - language monitors WDK print
 - language monitors WDK print, about language monitors
 ms.date: 09/08/2022
+ms.topic: concept-article
 ---
 
 # Language monitors

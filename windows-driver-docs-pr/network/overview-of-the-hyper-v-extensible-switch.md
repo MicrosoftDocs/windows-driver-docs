@@ -1,7 +1,8 @@
 ---
 title: Overview of the Hyper-V Extensible Switch
-description: This section provides an overview of the Hyper-V Extensible Switch
-ms.date: 04/20/2017
+description: The Hyper-V Extensible Switch is a virtual Ethernet switch that runs in the management operating system of the Hyper-V parent partition.
+ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # Overview of the Hyper-V Extensible Switch
@@ -112,10 +113,10 @@ For more information on this type of extension, see [Forwarding Extensions](./fo
 
 The following figure shows the components of the extensible switch interface for NDIS 6.40 (Windows Server 2012 R2) and later.
 
-![diagram illustrating hyper\-v extensible switch architecture for ndis 6.40 and later.](images/vswitcharchitecture-ndis640.png)
+:::image type="content" source="images/vswitcharchitecture-ndis640.png" alt-text="Diagram illustrating Hyper-V Extensible Switch architecture for NDIS 6.40 and later.":::
 
 The following figure shows the components of the extensible switch interface for NDIS 6.30 (Windows Server 2012).
 
-![diagram illustrating the synthetic device data paths with sr-iov.](images/vswitcharchitecture.png)
+:::image type="content" source="images/vswitcharchitecture.png" alt-text="Diagram illustrating the synthetic device data paths with SR-IOV.":::
 
 For more information about the components for the extensible switch interface, see [Hyper-V Extensible Switch Architecture](./hyper-v-extensible-switch-architecture.md).

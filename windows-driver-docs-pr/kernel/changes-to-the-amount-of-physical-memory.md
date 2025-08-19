@@ -3,6 +3,7 @@ title: Changes to the Amount of Physical Memory
 description: Changes to the Amount of Physical Memory
 keywords: ["dynamic hardware partitioning WDK , physical memory", "hardware partitioning WDK dynamic , physical memory", "partitions WDK dynamic hardware , physical memory", "physical memory WDK dynamic hardware partitioning", "memory WDK dynamic hardware partitioning"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Changes to the Amount of Physical Memory

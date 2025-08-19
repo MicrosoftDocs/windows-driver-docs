@@ -1,7 +1,8 @@
 ---
-title: Available interfaces and related APIs
+title: Available Interfaces and Related APIs
 description: There are three GPIO interfaces one for each device. Each interface is referenced by a GUID.
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # Available interfaces and related APIs

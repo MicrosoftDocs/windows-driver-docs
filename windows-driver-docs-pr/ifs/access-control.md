@@ -1,5 +1,5 @@
 ---
-title: Access control in a driver
+title: Access Control in a Driver
 description: Drivers protect themselves from inappropriate access through access control.
 keywords:
 - security WDK file systems , minimizing threats
@@ -8,6 +8,7 @@ keywords:
 - validating security WDK file systems
 - checking security
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Access control in a driver

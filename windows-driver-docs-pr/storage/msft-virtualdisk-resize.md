@@ -1,5 +1,5 @@
 ---
-title: Resize method of the MSFT\_VirtualDisk class
+title: Resize Method of the MSFT_VirtualDisk Class
 description: Resizes a virtual disk.
 ms.assetid: 6672EB31-A5CE-49E0-8F4F-6874BC95F0DD
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

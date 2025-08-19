@@ -2,6 +2,7 @@
 description: The WpdBasicHardwareDriver Sample
 title: The WpdBasicHardwareDriver Sample
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # The WpdBasicHardwareDriver Sample

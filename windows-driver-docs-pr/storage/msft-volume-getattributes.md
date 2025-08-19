@@ -1,5 +1,5 @@
 ---
-title: GetAttributes method of the MSFT\_Volume class
+title: GetAttributes Method of the MSFT_Volume Class
 description: Retrieves the volume attributes.
 ms.assetid: 82CA68FB-0394-4816-A8EA-510D8D926B1E
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

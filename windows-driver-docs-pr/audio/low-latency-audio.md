@@ -1,7 +1,8 @@
 ---
 title: Low Latency Audio
 description: This article discusses audio latency changes in Windows 10. It covers API options for application developers and changes in drivers that can be made to support low latency audio.
-ms.date: 10/28/2022
+ms.date: 12/13/2024
+ms.topic: concept-article
 ---
 
 # Low Latency Audio
@@ -22,14 +23,14 @@ The goals of this document are to:
 
 This article covers:
 
-1. The new **[AudioGraph](/uwp/api/Windows.Media.Audio.AudioGraph)** API for interactive and media creation scenarios.
+1. The **[AudioGraph](/uwp/api/Windows.Media.Audio.AudioGraph)** API for interactive and media creation scenarios.
 1. Changes in WASAPI to support low latency.
 1. Enhancements in the driver DDIs.
 
 ## Terminology
 
 | Term | Description |
-|---|---|
+|------|-------------|
 | Render latency | Delay between the time that an application submits a buffer of audio data to the render APIs, until the time that it's heard from the speakers. |
 | Capture latency | Delay between the time that a sound is captured from the microphone, until the time it's sent to the capture APIs that are being used by the application. |
 | Roundtrip latency | Delay between the time that a sound is captured from the microphone, processed by the application and submitted by the application for rendering to the speakers. It's roughly equal to render latency + capture latency. |
@@ -40,7 +41,7 @@ This article covers:
 
 The following diagram shows a simplified version of the Windows audio stack.
 
-:::image type="content" source="images/low-latency-audio-stack-diagram-1.png" alt-text="Diagram of the low latency audio stack showing apps, audio engine driver, and hardware.":::
+:::image type="content" source="images/low-latency-audio-stack-diagram-1.png" alt-text="Diagram showing the low latency audio stack with apps, audio engine driver, and hardware.":::
 
 Here's a summary of the latencies in the render path:
 audio processing objects
@@ -87,11 +88,11 @@ Windows 10 and later have been enhanced in three areas to reduce latency:
    1. Applications that use floating point data will have 16-ms lower latency.
    1. Applications that use integer data will have 4.5-ms lower latency.
 1. Systems with updated drivers will provide even lower round-trip latency:
-   1. Drivers can use new DDIs to report the supported sizes of the buffer that is used to transfer data between Windows and the hardware. Data transfers don't have to always use 10-ms buffers, as they did in previous Windows versions. Instead, the driver can specify if it can use small buffers, for example, 5 ms, 3 ms, 1 ms, etc.
-   1. Applications that require low latency can use new audio APIs (AudioGraph or WASAPI), to query the buffer sizes that are supported by the driver and select the one that will be used for the data transfer to/from the hardware.
+   1. Drivers can use the low latency DDIs to report the supported sizes of the buffer that is used to transfer data between Windows and the hardware. Data transfers don't have to always use 10-ms buffers, as they did in previous Windows versions. Instead, the driver can specify if it can use small buffers, for example, 5 ms, 3 ms, 1 ms, etc.
+   1. Applications that require low latency can use the low latency audio APIs (AudioGraph or WASAPI), to query the buffer sizes that are supported by the driver and select the one that will be used for the data transfer to/from the hardware.
 1. When an application uses buffer sizes below a certain threshold to render and capture audio, Windows enters a special mode, where it manages its resources in a way that avoids interference between the audio streaming and other subsystems. This will reduce the interruptions in the execution of the audio subsystem and minimize the probability of audio glitches. When the application stops streaming, Windows returns to its normal execution mode. The audio subsystem consists of the following resources:
    1. The audio engine thread that is processing low latency audio.
-   1. All the threads and interrupts that have been registered by the driver (using the new DDIs that are described in the section about driver resource registration).
+   1. All the threads and interrupts that have been registered by the driver (using the low latency DDIs that are described in the section about driver resource registration).
    1. Some or all of the audio threads from the applications that request small buffers, and from all applications that share the same audio device graph (for example, same signal processing mode) with any application that requested small buffers:
 1. AudioGraph callbacks on the streaming path.
 1. If the application uses WASAPI, then only the work items that were submitted to the [Real-Time Work Queue API](/windows/desktop/ProcThread/platform-work-queue-api) or **[MFCreateMFByteStreamOnStreamEx](/windows/win32/api/mfidl/nf-mfidl-mfcreatemfbytestreamonstreamex)** and were tagged as "Audio" or "ProAudio".
@@ -116,7 +117,7 @@ The following sections will explain the low latency capabilities in each API. As
 
 ### AudioGraph
 
-AudioGraph is a new Universal Windows Platform API in Windows 10 and later that is aimed at realizing interactive and music creation scenarios with ease. AudioGraph is available in several programming languages (C++, C#, JavaScript) and has a simple and feature-rich programming model.
+AudioGraph is a Universal Windows Platform API in Windows 10 and later that is aimed at realizing interactive and music creation scenarios with ease. AudioGraph is available in several programming languages (C++, C#, JavaScript) and has a simple and feature-rich programming model.
 
 In order to target low latency scenarios, AudioGraph provides the **[AudioGraphSettings::QuantumSizeSelectionMode](/uwp/api/Windows.Media.Audio.AudioGraphSettings#Windows_Media_Audio_AudioGraphSettings_QuantumSizeSelectionMode)** property. This property can be any of the values shown in the table below:
 
@@ -144,7 +145,7 @@ Starting in Windows 10, WASAPI has been enhanced to:
 
 The above features will be available on all Windows devices. However, certain devices with enough resources and updated drivers will provide a better user experience than others.
 
-The above functionality is provided by a new interface, called **[IAudioClient3](/windows/win32/api/audioclient/nn-audioclient-iaudioclient3)**, which derives from **[IAudioClient2](/windows/win32/api/audioclient/nn-audioclient-iaudioclient2)**.
+The above functionality is provided by an interface, called **[IAudioClient3](/windows/win32/api/audioclient/nn-audioclient-iaudioclient3)**, which derives from **[IAudioClient2](/windows/win32/api/audioclient/nn-audioclient-iaudioclient2)**.
 
 **[IAudioClient3](/windows/win32/api/audioclient/nn-audioclient-iaudioclient3)** defines the following 3 methods:
 
@@ -326,7 +327,7 @@ int _tmain(int argc, _TCHAR* argv[])
        HANDLE signalEvent;
        LONG Priority = 1;
        IRtwqAsyncResult *pAsyncResult = NULL;
-       RTWQWORKITEM_KEY workItemKey = NULL;;
+       RTWQWORKITEM_KEY workItemKey = NULL;
        IRtwqAsyncCallback *callback = NULL;
        IUnknown *appObject = NULL;
        IUnknown *appState = NULL;
@@ -403,7 +404,7 @@ In order for audio drivers to support low latency, Windows 10 and later provide 
 1. \[Optional, but recommended\] Register the driver resources (interrupts, threads), so that they can be protected by Windows in low latency scenarios.
 HDAudio miniport function drivers that are enumerated by the inbox HDAudio bus driver hdaudbus.sys don't need to register the HDAudio interrupts, as this is already done by hdaudbus.sys. However, if the miniport driver creates its own threads, then it needs to register them.
 
-The following three sections will explain each new feature in more depth.
+The following three sections will explain each feature in more depth.
 
 ### Declare the minimum buffer size
 
@@ -462,7 +463,7 @@ The DDIs that are described in this section allow the driver to:
 - "Burst" captured data faster than real-time if the driver has internally accumulated captured data. This is primarily intended for voice activation scenarios but can apply during normal streaming as well.
 - Provide timestamp information about its current stream position rather than Windows guessing, potentially allowing for accurate position information.
 
-This DDI is useful in the case, where a DSP is used. However, a standard HD Audio driver or other simple circular DMA buffer designs might not find much benefit in these new DDIs listed here.
+This DDI is useful in the case, where a DSP is used. However, a standard HD Audio driver or other simple circular DMA buffer designs might not find much benefit in these DDIs listed here.
 
 - [IMiniportWaveRTInputStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertinputstream)
 - [IMiniportWaveRTOutputStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertoutputstream)
@@ -541,7 +542,7 @@ In order to measure the roundtrip latency for different buffer sizes, users need
 - If you're asked to reboot the system, select **Yes** to reboot.
 - After rebooting, the system will be using the inbox Microsoft HDAudio driver and not the third-party codec driver. Remember which driver you were using before so that you can fall back to that driver if you want to use the optimal settings for your audio codec.
 
-:::image type="content" source="images/low-latency-audio-roundtrip-latency.png" alt-text="Graph showing the differences in the roundtrip latency between WASAPI and AudioGraph with different buffer sizes.":::
+:::image type="content" source="images/low-latency-audio-roundtrip-latency.png" alt-text="Graph illustrating roundtrip latency differences between WASAPI and AudioGraph for various buffer sizes.":::
 
 The differences in the latency between WASAPI and AudioGraph are due to the following reasons:
 

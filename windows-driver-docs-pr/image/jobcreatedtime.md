@@ -1,5 +1,5 @@
 ---
-title: JobCreatedTime element
+title: JobCreatedTime Element
 description: The optional JobCreatedTime element specifies the time at which the job was created.
 keywords: ["JobCreatedTime element Imaging Devices"]
 topic_type:

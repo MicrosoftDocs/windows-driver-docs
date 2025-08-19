@@ -1,10 +1,8 @@
 ---
-title: Building a light and color testing tool (MALT)
-author: windows-driver-content
+title: Building a Light and Color Testing Tool (MALT)
 description: This topic provides instructions on how to use the MALT (Microsoft Ambient Light Tool) as a light and color testing solution.
-ms.assetid: d045b771-b536-457c-897b-ecb6517bf0a8
-
-ms.date: 08/22/2022
+ms.date: 04/29/2024
+ms.topic: concept-article
 ---
 
 # Building a light and color testing tool (MALT)
@@ -24,9 +22,9 @@ This guide assumes that you have basic knowledge in electronics, programming, an
 You will need the following components.
 
 - [Microcontroller](https://store.arduino.cc/mega-2560-r3)
-- [Calibrated light source of sufficient range / spectrum](https://www.superbrightleds.com/12v-led-panel-light-for-vehicles-trailers-1x1-2-500-lumens-35w-even-glowr-light-fixture-natural-white)
-- [Power supply for light source](https://www.superbrightleds.com/12v-led-panel-light-for-vehicles-trailers-1x1-2-500-lumens-35w-even-glowr-light-fixture-natural-white#tab-powersupply)
-- [Digital to analog converter (DAC)](https://www.microchip.com/wwwproducts/en/MCP4821)
+- [Calibrated light source of sufficient range and spectrum](https://www.superbrightleds.com/catalog/product/view/id/102447/s/12v-led-panel-light-for-vehicles-trailers-1-x1-2-500-lumens-35w-even-glowr-light-fixture-natural-white)
+- [Power supply for light source](https://www.superbrightleds.com/catalog/product/view/id/102447/s/12v-led-panel-light-for-vehicles-trailers-1-x1-2-500-lumens-35w-even-glowr-light-fixture-natural-white#accessories_power_supplies)
+- [Digital to analog converter (DAC)](https://www.microchip.com/en-us/product/MCP4821)
 - Two [Ambient light sensors (ex TI OPT3001 or better)](https://www.ti.com/product/OPT3001)
 - Two [Color sensors](https://www.digikey.com/product-detail/en/ams/AS73211-AQFT/AS73211-AQFT-ND/7802175)
 - [Light enclosure](#step-1---assemble-light-enclosure)

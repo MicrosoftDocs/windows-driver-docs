@@ -1,7 +1,8 @@
 ---
-title: Open the networks list
+title: Open the Networks List
 description: Open the networks list
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Open the networks list
@@ -15,7 +16,7 @@ For example:
 account.currentNetwork.showConnectionUI()
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Common tasks for mobile broadband Windows Runtime APIs](./create-a-mobilebroadbandaccount-object.md)

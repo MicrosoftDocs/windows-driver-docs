@@ -9,6 +9,7 @@ keywords:
 - GDL WDK , parsing errors
 - GDL WDK , errors
 ms.date: 04/20/2017
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshooting GDL Parsing

@@ -1,8 +1,9 @@
 ---
-title: Enable heap tail checking
+title: Enable Heap Tail Checking
 description: Enable heap tail checking
 keywords: ["Enable heap tail checking (global flag)"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Enable heap tail checking
@@ -51,8 +52,3 @@ This flag adds a short pattern to the end of each allocation. The Windows heap m
  
 
  
-
-
-
-
-

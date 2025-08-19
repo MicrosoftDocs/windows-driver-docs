@@ -1,5 +1,5 @@
 ---
-title: SendRPS function
+title: SendRPS Function
 description: The SendRPS WMI method sends a read port status block (RPS) request to the indicated port or domain controller.
 keywords: ["SendRPS function Storage Devices"]
 topic_type:

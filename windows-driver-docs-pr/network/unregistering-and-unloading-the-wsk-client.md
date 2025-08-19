@@ -5,6 +5,7 @@ keywords:
 - Network Module Registrar WDK Winsock Kernel
 - NMR WDK Winsock Kernel
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Unregistering and Unloading the WSK Client

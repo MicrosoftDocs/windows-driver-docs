@@ -5,6 +5,7 @@ keywords:
 - pageable drivers WDK KMDF
 - KMDF WDK , pageable drivers
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating Pageable Code in a KMDF Driver

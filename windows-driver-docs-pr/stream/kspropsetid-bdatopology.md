@@ -1,7 +1,8 @@
 ---
-title: KSPROPSETID\_BdaTopology
+title: KSPROPSETID_BdaTopology
 description: KSPROPSETID\_BdaTopology
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_BdaTopology

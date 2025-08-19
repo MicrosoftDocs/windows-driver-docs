@@ -23,7 +23,7 @@ bcdedit [/store <filename>] /enum [<type> | <id>] [/v]
 ```
 
 > [!CAUTION]
->Administrative privileges are required to use BCDEdit to view the BCD store. Changing some boot entry options using the BCDEdit /set command could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings.
+>Administrative privileges are required to use BCDEdit to view the BCD store. Changing some boot entry options using the BCDEdit /set command could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings. For more information, see *[How to open MSConfig in Windows 10](https://support.microsoft.com/help/4026130/windows-how-to-open-msconfig-in-windows-10)*.
 
 ## Parameters
 

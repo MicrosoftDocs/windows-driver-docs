@@ -4,6 +4,7 @@ description: Feature Score
 keywords:
 - feature score WDK device installations
 ms.date: 12/03/2021
+ms.topic: concept-article
 ---
 
 # Feature Score
@@ -40,4 +41,4 @@ For example, the following sets the feature score of a driver package to 0x00FD0
 FeatureScore=xFD
 ```
 
-For more information about driver package ranking, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
+For more information about driver package ranking, see [How Windows Ranks Drivers](how-windows-ranks-driver-packages.md).

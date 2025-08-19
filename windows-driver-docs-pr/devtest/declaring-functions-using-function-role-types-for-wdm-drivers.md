@@ -2,6 +2,7 @@
 title: Declaring Functions Using Function Role Types for WDM Drivers
 description: Declaring Functions Using Function Role Types for WDM Drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Declaring Functions Using Function Role Types for WDM Drivers
@@ -127,7 +128,7 @@ DriverObject->MajorFunction[IRP_MJ_CREATE] =
 DriverObject->MajorFunction[IRP_MJ_CLEANUP] = FooCreateCleanup; // Advanced style for a multi-role dispatch routine 
 ```
 
-In order for a driver to be able to run SDV properly, **the driver must only use either the *basic* or *advanced* style shown above**.  SDV verficiation on the driver **will not work as expected** if one of these two methods is not used.
+In order for a driver to be able to run SDV properly, **the driver must only use either the *basic* or *advanced* style shown above**.  SDV verification on the driver **will not work as expected** if one of these two methods is not used.
 
 ### <span id="function_parameters_and_function_role_types"></span><span id="FUNCTION_PARAMETERS_AND_FUNCTION_ROLE_TYPES"></span>Function Parameters and Function Role Types
 

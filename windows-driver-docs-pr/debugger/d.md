@@ -2,6 +2,7 @@
 title: D (Windows Debugger Glossary)
 description: Glossary page - D
 ms.date: 11/28/2017
+ms.topic: glossary
 ---
 
 # D
@@ -76,8 +77,3 @@ A crash dump file that is being debugged.
  
 
  
-
-
-
-
-

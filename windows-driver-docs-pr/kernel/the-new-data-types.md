@@ -3,6 +3,7 @@ title: The New Data Types
 description: The New Data Types
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows", "data types WDK 64-bit", "fixed-precision integer types WDK 64-bit", "pointer-precision integer types WDK 64-bit", "specific-precision pointer types WDK 64-bit", "converting data types", "64-bit WDK kernel , data types"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # The New Data Types

@@ -1,8 +1,9 @@
 ---
-title: Using LINQ With the debugger objects
+title: Using LINQ with the Debugger Objects
 description: Using LINQ With the debugger objects. LINQ syntax can be used with the debugger objects to search and manipulate data.
 keywords: ["Using LINQ With the debugger objects"]
 ms.date: 04/12/2019
+ms.topic: how-to
 ---
 
 # Using LINQ With the debugger objects
@@ -13,7 +14,7 @@ Debugger objects are projected into a namespace rooted at "Debugger". Processes,
 
 LINQ is conceptually similar to the Structured Query Language (SQL) that is used to query databases. You can use a number of LINQ methods to search, filter and parse debug data. The LINQ C# method syntax is used. For more information on LINQ and the LINQ C# syntax, see [Getting Started with LINQ in C#](/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)
 
-LINQ that is used in the debugger support uses the “method syntax” of LINQ and not the “query syntax”. You can find more details about the differences in [LINQ (Language-Integrated Query)](/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq).
+LINQ that is used in the debugger support uses the "method syntax" of LINQ and not the "query syntax". You can find more details about the differences in [LINQ (Language-Integrated Query)](/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq).
 
 LINQ commands such as the following can be used with the debugger objects. All, .Any, .Count, .First, .Flatten, .GroupBy, .Last, .OrderBy, .OrderByDescending, .Select, and .Where. These methods follow (as closely as possible) the C# LINQ method form.
 
@@ -35,7 +36,7 @@ You can also work with the debugger objects with NatVis. For more information se
 
 ## Dx command
 
-The examples shown here use the dx command, for more information about working with the dx command, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md).
+The examples shown here use the dx command, for more information about working with the dx command, see [dx (Display Debugger Object Model Expression)](../debuggercmds/dx--display-visualizer-variables-.md).
 
 ## Developing a LINQ Query
 
@@ -459,9 +460,9 @@ Error Handling Methods
 
 **AllNonError (PredicateMethod)**: Returns whether all non-error elements of a collection satisfy a given condition.
 
-**FirstNonError (\[PredicateMethod\])**: Returns the first element of a collection that isn’t an error.
+**FirstNonError (\[PredicateMethod\])**: Returns the first element of a collection that isn't an error.
 
-**LastNonError (\[PredicateMethod\])**: Returns the last element of a collection that isn’t an error.
+**LastNonError (\[PredicateMethod\])**: Returns the last element of a collection that isn't an error.
 
 
 
@@ -611,7 +612,7 @@ As with other dx commands, you can select and hold (or right-click) a command af
 ```dbgcmd
 # 0: kd> dx -g @$cursession.Devices.DeviceTree.Flatten(n => n.Children)
 =====================================================================================================================================================================================================================================================================================================================
-# =                                                              = (+) DeviceNodeObject = InstancePath                                                 = ServiceName               = (+) PhysicalDeviceObject                                    = State                          = (+) Resoures = (+) Children       =
+# =                                                              = (+) DeviceNodeObject = InstancePath                                                 = ServiceName               = (+) PhysicalDeviceObject                                    = State                          = (+) Resources = (+) Children       =
 =====================================================================================================================================================================================================================================================================================================================
 = [0x0] : HTREE\ROOT\0                                         - {...}                - HTREE\ROOT\0                                                 -                           - 0xffffb6075614be40 : Device for "\Driver\PnpManager"        - DeviceNodeStarted (776)        - {...}        - [object Object]    =
 = [0x1] : ROOT\volmgr\0000 (volmgr)                            - {...}                - ROOT\volmgr\0000                                             - volmgr                    - 0xffffb607561fbe40 : Device for "\Driver\PnpManager"        - DeviceNodeStarted (776)        - {...}        - [object Object]    =
@@ -667,7 +668,7 @@ Use the *DeviceNodeObject.Problem* object to view devices that have specific pro
 dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.DeviceNodeObject.Problem <operator> <problemCode>)
 ```
 
-For example, to view devices that have a non zero problem code use this command. This provides similar information to "[**!devnode**](-devnode.md) 0 21".
+For example, to view devices that have a non zero problem code use this command. This provides similar information to "[**!devnode**](../debuggercmds/-devnode.md) 0 21".
 
 ```dbgcmd
 1: kd> dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.DeviceNodeObject.Problem != 0)
@@ -854,7 +855,7 @@ For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](/
 
 ## <span id="see_also"></span>See also
 
-[dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)
+[dx (Display Debugger Object Model Expression)](../debuggercmds/dx--display-visualizer-variables-.md)
 
 [Native Debugger Objects in NatVis](native-debugger-objects-in-natvis.md)
 

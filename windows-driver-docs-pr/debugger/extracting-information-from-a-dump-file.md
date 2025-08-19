@@ -1,17 +1,24 @@
 ---
-title: Extract information from a dump file
+title: Extract Information from a Dump File
 description: Learn how to debug a dump file to determine certain kinds of information, such as the name of the target computer.
 keywords: ["extracting information from a dump file", "dump file, extracting various information", "machine name (determining from a dump file)", "computer name (determining from a dump file)", "IP address (determining from a dump file)"]
-ms.date: 12/14/2022
+ms.date: 12/11/2024
+ms.topic: how-to
 ---
 
 # Extract information from a dump file
 
-Some information, such as the name of the target computer, is easily available during live debugging. You can also debug a dump file to determine the information. This article explains how to extract information from a dump file.
+Some information, such as the name of the target computer, becomes readily available during live debugging. You can also debug a dump file to determine a sub set of information. This article explains how to extract information from a dump file.
+
+For general information on working with dump files, see:
+
+- [Analyzing a User-Mode Dump File](analyzing-a-user-mode-dump-file.md)
+
+- [Analyzing a Kernel-Mode Dump File](analyzing-a-kernel-mode-dump-file.md)
 
 ## Find the computer name in a kernel-mode dump file
 
-Use the [!peb](-peb.md) extension if you need to determine the name of the computer on which the crash dump was made. Look for the value of COMPUTERNAME in its output.
+Use the [!peb](../debuggercmds/-peb.md) extension if you need to determine the name of the computer on which the crash dump was made. Look for the value of COMPUTERNAME in its output.
 
 ## Find the IP address in a kernel-mode dump file
 
@@ -19,7 +26,7 @@ To determine the IP address of the computer on which the crash dump was made, fi
 
 ## Find the process ID in a user-mode dump file
 
-To determine the process ID of the target application from a user-mode dump file, use the [| (Process status)](---process-status-.md) command. This command displays all the processes being debugged at the time the dump was written. The process marked with a period (.) is the current process. Its process ID is given in hexadecimal after the **id:** notation.
+To determine the process ID of the target application from a user-mode dump file, use the [| (Process status)](../debuggercmds/---process-status-.md) command. This command displays all the processes being debugged at the time the dump was written. The process marked with a period (.) is the current process. Its process ID is given in hexadecimal after the **id:** notation.
 
 ## Integrate WER into applications
 
@@ -27,7 +34,7 @@ To determine the process ID of the target application from a user-mode dump file
 
 ## See also
 
-- [Advanced driver debugging [336 KB] [PPT]](https://download.microsoft.com/download/f/0/5/f05a42ce-575b-4c60-82d6-208d3754b2d6/adv-drv_debug.ppt)
+- [Advanced driver debugging - 2005 [336 KB] [PPT]](https://download.microsoft.com/download/f/0/5/f05a42ce-575b-4c60-82d6-208d3754b2d6/adv-drv_debug.ppt)
 
 - [Download the Windows Driver Kit (WDK)](../download-the-wdk.md)
 
@@ -44,8 +51,3 @@ To determine the process ID of the target application from a user-mode dump file
  
 
  
-
-
-
-
-

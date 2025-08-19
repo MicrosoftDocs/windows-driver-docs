@@ -2,6 +2,7 @@
 title: Get NVM Thresholds (Function Index 5)
 description: This function returns the lifetime percentage warning and error thresholds, which if hit or surpassed, indicate a problem with the NVDIMM-N.
 ms.date: 11/18/2022
+ms.topic: reference
 ---
 
 # Get NVM Thresholds (Function Index 5)

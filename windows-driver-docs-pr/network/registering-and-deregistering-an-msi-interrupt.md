@@ -8,6 +8,7 @@ keywords:
 - interrupts WDK networking , registering
 - MSI-X WDK networking , deregistering interrupts
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Registering and Deregistering an MSI Interrupt

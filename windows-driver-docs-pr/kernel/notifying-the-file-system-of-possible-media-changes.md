@@ -3,6 +3,7 @@ title: Notifying the File System of Possible Media Changes
 description: Notifying the File System of Possible Media Changes
 keywords: ["removable media WDK kernel , notifying of media changes", "notifications WDK removable media", "media change notifications WDK removable media"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Notifying the File System of Possible Media Changes

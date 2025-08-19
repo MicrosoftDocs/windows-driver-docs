@@ -2,6 +2,7 @@
 title: Device Support
 description: Device Support
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Device Support
@@ -42,7 +43,7 @@ namespace WEX { namespace TestExecution
 } /*namespace TestExecution*/ } /*namespace WEX*/
 ```
 
-In our example, class MyTestResource implements ITestResource COM Interface. In ITestResource.h, you will also find a list of "must-have" properties defined. It should be possible to obtain the GUID for the test resource using GetGuid(..) and the Name, Id and Type of the resource using GetValue(...). If any of this are missing in a TestResource, TAEF will consisder it to be invalid and not maintain it's information.(See "Building the resource list" section that follows).
+In our example, class MyTestResource implements ITestResource COM Interface. In ITestResource.h, you will also find a list of "must-have" properties defined. It should be possible to obtain the GUID for the test resource using GetGuid(..) and the Name, Id and Type of the resource using GetValue(...). If any of this are missing in a TestResource, TAEF will consider it to be invalid and not maintain it's information.(See "Building the resource list" section that follows).
 
 ## <span id="Authoring_for_device_support_-_Specifying_resource_dependent_metadata"></span><span id="authoring_for_device_support_-_specifying_resource_dependent_metadata"></span><span id="AUTHORING_FOR_DEVICE_SUPPORT_-_SPECIFYING_RESOURCE_DEPENDENT_METADATA"></span>Authoring for device support - Specifying resource dependent metadata
 
@@ -166,7 +167,7 @@ The same basic principle is followed in all test methods. Take a look at other t
 ## <span id="Executing_a_test_resource_dependent_test_module"></span><span id="executing_a_test_resource_dependent_test_module"></span><span id="EXECUTING_A_TEST_RESOURCE_DEPENDENT_TEST_MODULE"></span>Executing a test resource dependent test module
 
 
-With the test resource dependent tests now authored and built, you can now execute it using TAEF. The key point to note is that TestResourceDependent tests can only be executed inproc. This means that even if you don't explicitly specify **"/inproc"** switch, it will get added on as soon as TAEF discovers the test resource dependent test module. As you may know, tests from only one test module can be executed in a given TAEF execution when the "/inproc" switch is present. This means you can not specify more than one test module at the commandline if your test module is resource dependent.
+With the test resource dependent tests now authored and built, you can now execute it using TAEF. The key point to note is that TestResourceDependent tests can only be executed inproc. This means that even if you don't explicitly specify **"/inproc"** switch, it will get added on as soon as TAEF discovers the test resource dependent test module. As you may know, tests from only one test module can be executed in a given TAEF execution when the "/inproc" switch is present. This means you can't specify more than one test module at the commandline if your test module is resource dependent.
 
 To actually execute all the tests in our test module, you can simply run:
 

@@ -1,7 +1,8 @@
 ---
-title: Use the XPS rasterization service
+title: Use the XPS Rasterization Service
 description: Provides information about how to use the XPS rasterization service.
 ms.date: 01/31/2023
+ms.topic: how-to
 ---
 
 # Use the XPS rasterization service

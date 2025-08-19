@@ -2,6 +2,7 @@
 title: Container IDs Generated from a Bus-Specific Unique ID
 description: Container IDs Generated from a Bus-Specific Unique ID
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Container IDs Generated from a Bus-Specific Unique ID

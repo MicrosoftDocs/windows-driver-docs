@@ -2,6 +2,7 @@
 title: Introduction to NDIS 6.40
 description: This section introduces NDIS 6.40 and describes its major design additions. NDIS 6.40 is included in the Windows 8.1 and Windows Server 2012 R2 and later.
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Introduction to NDIS 6.40

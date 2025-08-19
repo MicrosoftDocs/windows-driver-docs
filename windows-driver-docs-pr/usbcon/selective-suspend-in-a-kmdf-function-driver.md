@@ -1,7 +1,8 @@
 ---
-title: Selective suspend in USB KMDF function drivers
+title: Selective Suspend in USB KMDF Function Drivers
 description: This article describes how KMDF function drivers support USB selective suspend.
-ms.date: 02/23/2023
+ms.date: 01/17/2024
+ms.topic: concept-article
 ---
 
 # Selective suspend in USB KMDF function drivers
@@ -152,7 +153,7 @@ The following example from the Osrusbfx2 KMDF sample shows how to call this meth
 ```cpp
     WDF_USB_DEVICE_INFORMATION          deviceInfo;
 // Retrieve USBD version information, port driver capabilities and device
-// capabilites such as speed, power, etc.
+// capabilities such as speed, power, etc.
 //
 
 WDF_USB_DEVICE_INFORMATION_INIT(&deviceInfo);

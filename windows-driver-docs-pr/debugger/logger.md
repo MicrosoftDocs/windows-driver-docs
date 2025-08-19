@@ -3,6 +3,7 @@ title: Logger
 description: Logger
 keywords: ["Logger, overview"]
 ms.date: 05/23/2017
+ms.topic: overview
 ---
 
 # Logger
@@ -26,8 +27,3 @@ This section includes:
  
 
  
-
-
-
-
-

@@ -3,6 +3,7 @@ title: Including GUIDs in Driver Code
 description: Including GUIDs in Driver Code
 keywords: ["globally unique identifiers WDK kernel", "GUIDs WDK kernel", "identifiers WDK GUIDs"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Including GUIDs in Driver Code

@@ -2,6 +2,7 @@
 title: V4 Print Class Driver Rendering
 description: For rendering, the v4 printer driver can utilize the existing rendering capabilities of a Print Class driver.
 ms.date: 01/25/2023
+ms.topic: concept-article
 ---
 
 # V4 Print Class Driver Rendering

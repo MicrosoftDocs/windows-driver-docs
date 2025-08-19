@@ -1,5 +1,5 @@
 ---
-title: Resize method of the MSFT\_Partition class
+title: Resize Method of the MSFT_Partition Class
 description: Resizes the partition and any associated file system volume to the size specified by the Size parameter.
 ms.assetid: 89343280-F14E-47B2-A8F6-28F85B525804
 keywords:
@@ -15,7 +15,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

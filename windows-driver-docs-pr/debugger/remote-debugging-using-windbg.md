@@ -1,7 +1,8 @@
 ---
 title: Remote Debugging Using WinDbg
 description: Remote debugging involves two debuggers running at two different locations.
-ms.date: 11/28/2017
+ms.date: 12/13/2024
+ms.topic: how-to
 ---
 
 # Remote Debugging Using WinDbg
@@ -13,19 +14,24 @@ The code that is being debugged could be running on the same computer that is ru
 
 The following diagram illustrates a remote session where the debugging server, running on a host computer, is performing kernel-mode debugging of code that is running on a separate target computer.
 
-![diagram that shows remote, host, and target computers connected with cables.](images/clientservertarget.png)
+:::image type="content" source="images/clientservertarget.png" alt-text="Diagram illustrating remote, host, and target computers connected for kernel-mode debugging.":::
 
-There are several transport protocols you can use for a remote debugging connection: TCP, NPIPE, SPIPE, SSL, and COM Port. Suppose you have chosen to use TCP as the protocol and you have chosen to use WinDbg as both the debugging client and the debugging server. You can use the following procedure to establish a remote kernel-mode debugging session:
+
+> [!IMPORTANT]
+> There are additional important security considerations when using remote debugging, for more information, including information on enabling secure mode, see [Security During Remote Debugging](security-during-remote-debugging.md) and [Security Considerations for Windows Debugging Tools](security-considerations.md).
+
+There are several transport protocols you can use for a remote debugging connection: TCP, NPIPE, SPIPE, SSL, and COM Port. Suppose you have chosen to use TCP as the protocol and you have chosen to use WinDbg as both the debugging client and the debugging server. You can use the following procedure to establish a remote kernel-mode debugging session.
 
 1. On the host computer, open WinDbg and establish a kernel-mode debugging session with a target computer. (See [Live Kernel-Mode Debugging Using WinDbg (Classic)](performing-kernel-mode-debugging-using-windbg.md).)
+
 2. Break in by choosing **Break** from the **Debug** menu or by pressing CTRL-Break.
+
 3. In the [Debugger Command Window](debugger-command-window.md), enter the following command.
 
    **.server tcp:port=5005**
 
    **Note**  The port number 5005 is arbitrary. The port number is your choice.
-
-     
+    
 
 4. WinDbg will respond with output similar to the following.
 
@@ -35,6 +41,7 @@ There are several transport protocols you can use for a remote debugging connect
    ```
 
 5. On the remote computer, open WinDbg, and choose **Connect to Remote Session** from the **File** menu.
+
 6. Under **Connection String**, enter the following string.
 
    **tcp:Port=5005,Server=**<em>YourHostComputer</em>
@@ -43,8 +50,7 @@ There are several transport protocols you can use for a remote debugging connect
 
    Select **OK**.
 
-## <span id="Using_the_Command_Line"></span><span id="using_the_command_line"></span><span id="USING_THE_COMMAND_LINE"></span>Using the Command Line
-
+## Using the Command Line
 
 As an alternative to the procedure given in the preceding section, you can set up a remote debugging session at the command line. Suppose you are set up to establish a kernel-mode debugging session, between a host computer and a target computer, over a 1394 cable on channel 32. You can use the following procedure to establish a remote debugging session:
 
@@ -58,16 +64,13 @@ As an alternative to the procedure given in the preceding section, you can set u
 
    where *YourHostComputer* is the name of your host computer, which is running the debugging server.
 
-## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+> [!IMPORTANT]
+> The 1394 transport is available for use in Windows 10, version 1607 and earlier. 
+> It is not available in later versions of Windows. You should transition your projects to other transports, such as KDNET using Ethernet. 
+> For more information about that transport, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
+>
 
+## Additional Information
 
-There are many ways to establish remote debugging other than the ones shown in this topic. For complete information about setting up a debugging server in the WinDbg [Debugger Command Window](debugger-command-window.md), see [**.server (Create Debugging Server)**](-server--create-debugging-server-.md). For complete information about launching WinDbg (and establishing remote debugging) at the command line, see [**WinDbg Command-Line Options**](windbg-command-line-options.md).
-
+There are many ways to establish remote debugging other than the ones shown in this topic. For complete information about setting up a debugging server in the WinDbg [Debugger Command Window](debugger-command-window.md), see [**.server (Create Debugging Server)**](../debuggercmds/-server--create-debugging-server-.md). For complete information about launching WinDbg (and establishing remote debugging) at the command line, see [**WinDbg Command-Line Options**](windbg-command-line-options.md).
  
-
- 
-
-
-
-
-

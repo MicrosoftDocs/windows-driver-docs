@@ -1,5 +1,5 @@
 ---
-title: MSFT\_StoragePoolToStorageTier class
+title: MSFT_StoragePoolToStorageTier Class
 description: Association between a storage pool and storage tiers in that pool.
 ms.assetid: 39B3D9AA-56FA-49ED-8EF2-E85947F382E0
 keywords:
@@ -16,7 +16,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: AddEuro feature
+title: AddEuro Feature
 description: The AddEuro feature adds this symbol to the printer's device font.
 keywords:
 - minidrivers WDK Pscript , AddEuro feature
@@ -8,6 +8,7 @@ keywords:
 - European Union symbol WDK print
 - ADHasEuro
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # AddEuro feature

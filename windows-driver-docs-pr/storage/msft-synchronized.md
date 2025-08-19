@@ -1,5 +1,5 @@
 ---
-title: MSFT\_Synchronized class
+title: MSFT_Synchronized Class
 description: Synchronized status of a storage object and its snapshots, clones, or mirrors.
 ms.assetid: 460FAAB4-9DB2-4B02-9E2B-07791E93E728
 keywords:
@@ -28,7 +28,6 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.author: windowssdkdev
 ms.date: 05/31/2018
 ---
 

@@ -1,13 +1,8 @@
 ---
 title: Overview of NDIS versions
 description: The Windows operating system, Microsoft Windows Driver Kit (WDK), and Driver Development Kit (DDK) version support for NDIS versions. Support for major NDIS features across NDIS versions.
-keywords:
-- network drivers WDK , NDIS versions
-- NDIS WDK , versions in network drivers
-- backward compatibility WDK networking
-- compatibility WDK networking
-ms.date: 03/02/2023
-ms.custom: contperf-fy21q4
+ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # Overview of NDIS versions
@@ -23,6 +18,9 @@ The following table describes Windows operating system, Microsoft Windows Driver
 
 | Operating system | Development Kit | Supported NDIS version | CoNDIS | Deserialized driver | Intermediate driver |
 | --- | --- | --- | --- | --- | --- |
+| Windows 11, version 24H2 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.89. For more information about NDIS 6.89 features, see [Introduction to NDIS 6.89](introduction-to-ndis-6-89.md). | X | X | X |
+| Windows Server 2022 23H2 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.88. For more information about NDIS 6.88 features, see [Introduction to NDIS 6.88](introduction-to-ndis-6-88.md). | X | X | X |
+| Windows 11, version 22H2 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.87. For more information about NDIS 6.87 features, see [Introduction to NDIS 6.87](introduction-to-ndis-6-87.md). | X | X | X |
 | Windows 11, version 21H2 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.86. For more information about NDIS 6.86 features, see [Introduction to NDIS 6.86](introduction-to-ndis-6-86.md). | X | X | X |
 | Windows Server 2022 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.85. For more information about NDIS 6.85 features, see [Introduction to NDIS 6.85](introduction-to-ndis-6-85.md). | X | X | X |
 | Windows 10, version 2004 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.84. For more information about NDIS 6.84 features, see [Introduction to NDIS 6.84](introduction-to-ndis-6-84.md). | X | X | X |
@@ -50,6 +48,3 @@ The following table describes Windows operating system, Microsoft Windows Driver
 | Windows 98 | Windows NT 4.0 DDK or Windows 98 DDK | 4.1. Protocol driver is a vxd-type driver. | X | X | X |
 | Windows 95 OSR2 | Windows NT 4.0 DDK or Windows 95 DDK | 4.0. Protocol driver is a vxd-type driver. Added these features: [**MiniportSendPackets**](/previous-versions/windows/hardware/network/ff550524(v=vs.85)), [**ProtocolReceivePacket**](/previous-versions/windows/hardware/network/ff563251(v=vs.85)), [**MiniportAllocateComplete**](/previous-versions/windows/hardware/network/ff549352(v=vs.85)).|  |  |  |
 | Windows 95 | Windows NT 4.0 DDK or Windows 95 DDK | 3.1. Added support for miniport drivers and Plug and Play. |  |  |  |
-
-
-

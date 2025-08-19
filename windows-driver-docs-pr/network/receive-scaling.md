@@ -8,6 +8,7 @@ keywords:
 - miniport drivers WDK networking , scaling receive-packet processing
 - NDIS miniport drivers WDK , scaling receive-packet processing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Receive Side Scaling Support

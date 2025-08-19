@@ -11,6 +11,7 @@ keywords:
 - OPM WDK display , getting graphics adapter information
 - protection levels WDK display , changing
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Using the OPM DDI
@@ -32,7 +33,7 @@ The Microsoft DirectX graphics kernel subsystem (*Dxgkrnl.sys*) uses the OPM DDI
 
     - The output's connector type.
     - The types of content protection that the output supports. Outputs can currently support:
-      - [Analog Copy Protection (ACP)](https://business.tivo.com/services/acp-technology)
+      - Analog Copy Protection (ACP)
       - [Content Generation Management System Analog (CGMS-A)](cgms-a-standards.md)
       - [High-bandwidth Digital Content Protection (HDCP)](https://www.digital-cp.com/hdcp-specifications)
       - [DisplayPort](https://go.microsoft.com/fwlink/p/?linkid=71382) Content Protection (DPCP)

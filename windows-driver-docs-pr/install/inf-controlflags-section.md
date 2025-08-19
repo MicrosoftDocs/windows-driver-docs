@@ -1,5 +1,5 @@
 ---
-title: INF ControlFlags section
+title: INF ControlFlags Section
 description: A ControlFlags section identifies devices for which Windows should take certain unique actions during installation.
 keywords:
 - INF ControlFlags Section Device and Driver Installation

@@ -1,7 +1,8 @@
 ---
-title: MS\_SM\_EventControl WMI Class
+title: MS_SM_EventControl WMI Class
 description: MS\_SM\_EventControl WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MS\_SM\_EventControl WMI Class

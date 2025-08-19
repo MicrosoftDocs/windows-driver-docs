@@ -1,10 +1,11 @@
 ---
-title: Port monitor server DLL functions
+title: Port Monitor Server DLL Functions
 description: Provides information about required and optional port monitor server DLL functions.
 keywords:
 - port monitors WDK print, functions
 - server DLL port monitor functions WDK
 ms.date: 09/08/2022
+ms.topic: reference
 ---
 
 # Port monitor server DLL functions

@@ -30,7 +30,7 @@ The UNEXPECTED_STORE_EXCEPTION bug check has a value of 0x00000154. This bug che
 
 ## Resolution
 
-To determine the cause of the issue, use the debugger to gather additional information. Examine multiple dump files to see if this stop code has similar characteristics, such as the same code running when the stop code appears. For more information, see [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md), [Using the !analyze extension](using-the--analyze-extension.md) and [!analyze](-analyze.md).
+To determine the cause of the issue, use the debugger to gather additional information. Examine multiple dump files to see if this stop code has similar characteristics, such as the same code running when the stop code appears. For more information, see [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md), [Using the !analyze extension](using-the--analyze-extension.md) and [!analyze](../debuggercmds/-analyze.md).
 
 After information about the source code in question is available, set a breakpoint in the related code before this code is executed. Single step forward through the code, looking at the values of critical variables that are used to control the code flow. Carefully examine this area of your code to look for false assumptions or other mistakes.
 

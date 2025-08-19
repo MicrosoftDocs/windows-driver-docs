@@ -2,6 +2,7 @@
 title: CM_PROB_USED_BY_DEBUGGER
 description: CM_PROB_USED_BY_DEBUGGER
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 53 - CM_PROB_USED_BY_DEBUGGER

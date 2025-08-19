@@ -2,6 +2,7 @@
 title: Querying Storport for Hardware Information
 description: Querying Storport for Hardware Information
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Querying Storport for Hardware Information

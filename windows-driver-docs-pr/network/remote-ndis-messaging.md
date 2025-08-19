@@ -4,6 +4,7 @@ description: Remote NDIS Messaging
 keywords:
 - Remote NDIS WDK networking , messaging
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Remote NDIS Messaging

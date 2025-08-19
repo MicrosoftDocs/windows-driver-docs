@@ -16,7 +16,8 @@ keywords:
 - Resetting state WDK networking
 - Halting state WDK networking
 - Initializing state WDK networking
-ms.date: 04/20/2017
+ms.date: 07/23/2025
+ms.topic: concept-article
 ---
 
 # Indicating Connection Status
@@ -52,7 +53,7 @@ A miniport driver must not indicate any media connection status changes when NDI
 <a href="" id="initializing"></a>Initializing  
 NDIS calls a miniport driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function to initialize an adapter. During the adapter initialization, the miniport driver must follow these guidelines:
 
--   If the miniport driver does not indicate the media connection status after returning from *MiniportInitializeEx*, NDIS uses the value of the **MediaConnectState** member of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure to determine the media connection status. The miniport driver provides NDIS with this structure when the driver calls [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) from its *MiniportInitializeEx* function.
+-   If the miniport driver does not indicate the media connection status after returning from *MiniportInitializeEx*, NDIS uses the value of the **MediaConnectState** member of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) structure to determine the media connection status. The miniport driver provides NDIS with this structure when the driver calls [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) from its *MiniportInitializeEx* function.
 
     **Note**  If the **MediaConnectState** member is set to MediaConnectStateUnknown, NDIS will proceed as if the adapter is disconnected.
 

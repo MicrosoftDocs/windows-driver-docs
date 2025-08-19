@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_OPTIMIZATIONHINT (application performance strategy)
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_OPTIMIZATIONHINT (Application Performance Strategy)
 description: Camera drivers may optimize their capture operation based on hints provided by the application. This property informs the driver to set its performance strategy based on what operation is likely used the most.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_OPTIMIZATIONHINT Streaming Media Devices"]
 topic_type:
