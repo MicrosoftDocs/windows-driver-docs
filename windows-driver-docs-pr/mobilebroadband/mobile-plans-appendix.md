@@ -17,13 +17,13 @@ This reference design is a template that you can alter to best represent your br
 
 1. The user clicks on the "Continue" button:
 
-    <img src="images/dynamo_appendix_mo_direct_1_continue.png" alt="MO Direct walkthrough: user clicks on the continue button" title="MO Direct walkthrough: user clicks on the continue button" width="600" />
+    :::image type="content" source="images/dynamo_appendix_mo_direct_1_continue.png" alt-text="MO Direct walkthrough: user clicks on the continue button":::
 
     - This dialog is prompted by Mobile Plans app.
 
 2. The user enters the MO Direct portal and signs in with their MO account:
 
-    <img src="images/dynamo_appendix_mo_direct_2_sign_in.png" alt="MO Direct walkthrough: user enters MO Direct portal and signs in with their MO account" title="MO Direct walkthrough: user enters MO Direct portal and signs in with their MO account" width="600" />
+    :::image type="content" source="images/dynamo_appendix_mo_direct_2_sign_in.png" alt-text="MO Direct walkthrough: user enters MO Direct portal and signs in with their MO account":::
 
     - Page layout is consistent throughout all pages. For example, logo and branding elements are in top left, and navigation elements are on the bottom.
     - The sign-in page can link to signing up for a new account.
@@ -31,7 +31,7 @@ This reference design is a template that you can alter to best represent your br
 
 3. The user picks an option:
 
-    <img src="images/dynamo_appendix_mo_direct_3_options.png" alt="MO Direct walkthrough: user picks an option" title="MO Direct walkthrough: user picks an option" width="600" />
+    :::image type="content" source="images/dynamo_appendix_mo_direct_3_options.png" alt-text="MO Direct walkthrough: user picks an option":::
 
     - Present the most important content, available services, at the center of the page.
     - Logo and branding elements are in the top left corner.
@@ -41,7 +41,7 @@ This reference design is a template that you can alter to best represent your br
 
 4. The user submits the order:
 
-    <img src="images/dynamo_appendix_mo_direct_4_submit_order.png" alt="MO Direct walkthrough: user submits an order" title="MO Direct walkthrough: user submits an order" width="600" />
+    :::image type="content" source="images/dynamo_appendix_mo_direct_4_submit_order.png" alt-text="MO Direct walkthrough: user submits an order":::
 
     - Page layout is consistent throughout all pages. For example, logo and branding elements are in top left, and navigation elements are on the bottom.
     - The Terms of Service link must be visible on the web page.
@@ -49,13 +49,13 @@ This reference design is a template that you can alter to best represent your br
 
 5. If the user cancels the MO Direct flow at any time:
 
-    <img src="images/dynamo_appendix_mo_direct_5_cancel.png" alt="MO Direct walkthrough: user cancels MO Direct flow" title="MO Direct walkthrough: user cancels MO Direct flow" width="600" />
+    :::image type="content" source="images/dynamo_appendix_mo_direct_5_cancel.png" alt-text="MO Direct walkthrough: user cancels MO Direct flow":::
 
     - A confirmation dialog to leave the MO Direct experience is prompted by Mobile Plans app.
 
 6. An order is completed:
 
-    <img src="images/dynamo_appendix_mo_direct_6_order_complete.png" alt="MO Direct walkthrough: order complete" title="MO Direct walkthrough: order complete" width="600" />
+    :::image type="content" source="images/dynamo_appendix_mo_direct_6_order_complete.png" alt-text="MO Direct walkthrough: order complete":::
 
     - This shows an example of transaction confirmation, which is part of the mobile operator portal.
     - Once the order is processed successfully and, in this case, after clicking “Continue,” the notification should be posted to the Mobile Plans app with the purchase result, eSIM activation code, and other information required in the API. The user will be automatically redirected to the Mobile Plans app PDP (product details page).
@@ -64,13 +64,13 @@ This reference design is a template that you can alter to best represent your br
 
 7. Downloading an eSIM profile (if applicable):
 
-    <img src="images/dynamo_appendix_mo_direct_7_downloading_esim_profile.png" alt="MO Direct walkthrough: downloading an eSIM profile (if applicable)" title="MO Direct walkthrough: downloading an eSIM profile (if applicable)" width="600" />
+    :::image type="content" source="images/dynamo_appendix_mo_direct_7_downloading_esim_profile.png" alt-text="MO Direct walkthrough: downloading an eSIM profile (if applicable)":::
 
     - The eSIM profile is being downloaded.
 
 8. The MO Direct plan is activated:
 
-    <img src="images/dynamo_appendix_mo_direct_8_activated.png" alt="MO Direct walkthrough: MO Direct plan is activated" title="MO Direct walkthrough: MO Direct plan is activated" width="600" />
+    :::image type="content" source="images/dynamo_appendix_mo_direct_8_activated.png" alt-text="MO Direct walkthrough: MO Direct plan is activated":::
 
     - The device is connected.
     - The user has an active MO Direct account.
@@ -88,13 +88,13 @@ The back button on the menu bar of the Mobile Plans app will navigate users to t
 > [!IMPORTANT]
 > Build your MO Direct portal as if you are building a shopping cart experience if you would like the user to return to the previous state without losing any data they had entered.
 
-<img src="images/dynamo_appendix_mo_direct_9_back_button.png" alt="MO Direct walkthrough: back button example" title="MO Direct walkthrough: back button example" width="600" />
+:::image type="content" source="images/dynamo_appendix_mo_direct_9_back_button.png" alt-text="MO Direct walkthrough: back button example":::
 
 ### Error while loading the MO Direct experience
 
 When there are any unhandled errors or exceptions on the MO Direct portal that cause the Mobile Plans app to fail to load the MO Direct experience, the following error is displayed:
 
-<img src="images/dynamo_appendix_mo_direct_10_error.png" alt="MO Direct walkthrough: error example" title="MO Direct walkthrough: error example" width="600" />
+:::image type="content" source="images/dynamo_appendix_mo_direct_10_error.png" alt-text="MO Direct walkthrough: error example":::
 
 ## High level integration schedule
 
