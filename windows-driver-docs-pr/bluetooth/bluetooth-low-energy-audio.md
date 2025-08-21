@@ -166,7 +166,7 @@ Bluetooth LE Audio requires unicast render audio formats to be declared for the 
 - Communications (AUDIO_SIGNALPROCESSINGMODE_COMMUNICATIONS)
   - This mode is used for bidirectional scenarios, such as voice calls.
 
-The following tables are lists of symmetric formats for each use case and signal processing mode. Asymmetric format support is defined in [Stereo render with mono capture](#stereo-render-with-mono-capture).
+The following tables are lists of symmetric formats for each use case and signal processing mode. Asymmetric format support is defined in [Super wideband stereo for voice scenarios](#super-wideband-stereo-for-voice-scenarios).
 
 Audio formats are ordered from most preferred to least preferred.
 
