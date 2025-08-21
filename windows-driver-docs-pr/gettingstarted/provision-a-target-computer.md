@@ -1,11 +1,11 @@
 ---
-title: Provision a Computer for Driver Deployment and Testing (WDK 10)
-ms.date: 09/27/2024
+title: Provision a Computer for Driver Deployment and Testing
+ms.date: 08/21/2025
 description: This guide provides instructions on how to configure a computer for automatic driver deployment, testing, and debugging using Microsoft Visual Studio.
 ms.topic: how-to
 ---
 
-# Provision a computer for driver deployment and testing (WDK 10)
+# Provision a computer for driver deployment and testing
 
 *Provisioning a target or test computer* is the process of configuring a computer for automatic driver deployment, testing, and debugging. To provision a computer, use Microsoft Visual Studio.
 
@@ -28,7 +28,9 @@ When provisioning systems for driver deployment, the host and the target machine
 
 1. If the target computer is a VM, it should be started in non-enhanced mode, for disabling VM enhanced mode configuration, see [share devices with your virtual machine](/virtualization/hyper-v-on-windows/user-guide/enhanced-session-mode)
 
-1. If you will be deploying a test driver on the target machine, enable test signing from an elevated command with  **bcdedit /set testsigning on**
+1. If you will be deploying a test driver on the target machine, enable test signing from an elevated command with:
+
+    `bcdedit /set testsigning on`
 
 1. If you will be testing the driver with WDTF, make sure to enable Driver Verifier using the properties page and restart the target machine after the deployment
    - On the host computer, in Visual Studio, right click on the driver project go to **Properties &gt; Configuration Properties &gt; Driver Install &gt; Driver Verification &gt; Enable Driver Verification**
@@ -68,7 +70,7 @@ Now you're ready to provision the target computer from the host computer in Visu
 
 1. The provisioning process takes several minutes and might automatically reboot the target computer once or twice. When provisioning is complete, select **Finish**.
 
-1.  **Restart** the computer.
+1. **Restart** the computer.
 
 ## See Also
 

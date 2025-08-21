@@ -21271,6 +21271,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows-driver-docs-pr/gettingstarted/provision-a-target-computer-wdk-8-1.md",
+      "redirect_URL": "/windows-hardware/drivers/gettingstarted/provision-a-target-computer",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/gettingstarted/writing-your-first-driver.md",
       "redirect_URL": "/windows-hardware/drivers/gettingstarted/writing-a-very-small-kmdf--driver",
       "redirect_document_id": false
