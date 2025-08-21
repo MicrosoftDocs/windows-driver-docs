@@ -17,7 +17,7 @@
     href: writing-a-umdf-driver-based-on-a-template.md
 - name: "From Sample Code to Production Driver"
   href: from-sample-code-to-production-driver.md
-- name: "Provision a  computer for driver deployment and testing (WDK 10)"
+- name: "Provision a  computer for driver deployment and testing"
   href: provision-a-target-computer.md
 - name: "Concepts for all driver developers"
 # Auto-expanded node
