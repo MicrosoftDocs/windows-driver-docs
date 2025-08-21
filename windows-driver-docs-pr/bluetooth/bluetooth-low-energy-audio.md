@@ -750,11 +750,11 @@ Windows shall ensure that only classic audio or LE audio is active for a paired 
 
 Bluetooth LE Audio doesn't have any power management requirements or flows outside of what is already defined by [WDF](../wdf/pnp-and-power-management-callback-sequences.md).
 
-### Stereo render with mono capture
+### Super wideband stereo for voice scenarios
 
-Today's Bluetooth audio experience is convenient but has limitations, especially when compared to wired audio experiences. One key limitation, with user-facing consequences, is the drop to mono audio whenever the microphone is active. This blocks experiences like Spatial Audio in Teams and other VoIP apps from working, and it heavily degrades gaming experiences involving voice chat.
+Today's Bluetooth audio experience is convenient but has limitations, especially when compared to wired audio experiences. One key limitation, with user-facing consequences, is the drop to mono audio whenever the microphone is active. This blocks experiences like spatial audio in Teams and other VoIP apps from working, and it heavily degrades gaming experiences involving voice chat.
 
-Bluetooth LE Audio can close the gap with improved audio fidelity and reduced latency for these scenarios by adding support for stereo playback while the microphone is in use.
+Bluetooth LE Audio closes the gap with improved audio fidelity and reduced latency by adding support for stereo playback while the microphone is in use.
 
 #### Render/capture format pairs
 
