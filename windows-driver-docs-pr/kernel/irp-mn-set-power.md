@@ -1,7 +1,7 @@
 ---
 title: IRP_MN_SET_POWER
 description: This IRP notifies a driver of a change to the system power state or sets the device power state for a device.
-ms.date: 04/22/2025
+ms.date: 08/26/2025
 ms.topic: reference
 keywords:
  - IRP_MN_SET_POWER Kernel-Mode Driver Architecture
@@ -33,15 +33,16 @@ The **Parameters.Power.Type** member specifies the type of power state being set
 
 The **Parameters.Power.State** member specifies the power state itself, as follows:
 
-- If **Parameters.Power.Type** is **SystemPowerState**, the value is an enumerator of the [**SYSTEM_POWER_STATE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state) type.
-
-- If **Parameters.Power.Type** is **DevicePowerState**, the value is an enumerator of the [**DEVICE_POWER_STATE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_device_power_state) type.
+    - If **Parameters.Power.Type** is **SystemPowerState**, the value is an enumerator of the [**SYSTEM_POWER_STATE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state) type.
+    - If **Parameters.Power.Type** is **DevicePowerState**, the value is an enumerator of the [**DEVICE_POWER_STATE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_device_power_state) type.
 
 The **Parameters.Power.ShutdownType** member specifies additional information about the requested transition. The possible values for this member are **POWER_ACTION** enumeration values. For more information, see [System Power Actions](./system-power-actions.md).
 
 Starting with Windows Vista, the **Parameters.Power.SystemPowerStateContext** member is a read-only, partially opaque [**SYSTEM_POWER_STATE_CONTEXT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_system_power_state_context) structure that contains information about the previous system power states of a computer. If **Parameters.Power.Type** is **SystemPowerState** and **Parameters.Power.State** is **PowerSystemWorking**, two flag bits in this structure indicate whether a fast startup or a wake-from-hibernation caused the computer to enter the S0 (working) system state. For more information, see [Distinguishing Fast Startup from Wake-from-Hibernation](./distinguishing-fast-startup-from-wake-from-hibernation.md).
 
-The following table shows the contents of **IRP_MN_SET_POWER.Parameters.Power.{State|ShutdownType}** and the **CurrentSystemState**, **TargetSystemState**, and **EffectiveSystemState** bit fields in the [**SYSTEM_POWER_STATE_CONTEXT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_system_power_state_context) structure for each system power transition.  Each row represents one **IRP_MN_SET_POWER**.
+### System power transition context for IRP_MN_SET_POWER
+
+The following table shows the contents of **IRP_MN_SET_POWER.Parameters.Power.{State|ShutdownType}** and the **CurrentSystemState**, **TargetSystemState**, and **EffectiveSystemState** bit fields in the [**SYSTEM_POWER_STATE_CONTEXT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_system_power_state_context) structure for each system power transition. Each row represents one **IRP_MN_SET_POWER**.
 
 | Transition | State | Shutdown Type | Current SystemState | Target SystemState | Effective SystemState | Comments |
 |--|--|--|--|--|--|--|
