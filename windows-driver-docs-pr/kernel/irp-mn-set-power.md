@@ -33,8 +33,8 @@ The **Parameters.Power.Type** member specifies the type of power state being set
 
 The **Parameters.Power.State** member specifies the power state itself, as follows:
 
-    - If **Parameters.Power.Type** is **SystemPowerState**, the value is an enumerator of the [**SYSTEM_POWER_STATE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state) type.
-    - If **Parameters.Power.Type** is **DevicePowerState**, the value is an enumerator of the [**DEVICE_POWER_STATE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_device_power_state) type.
+- If **Parameters.Power.Type** is **SystemPowerState**, the value is an enumerator of the [**SYSTEM_POWER_STATE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state) type.
+- If **Parameters.Power.Type** is **DevicePowerState**, the value is an enumerator of the [**DEVICE_POWER_STATE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_device_power_state) type.
 
 The **Parameters.Power.ShutdownType** member specifies additional information about the requested transition. The possible values for this member are **POWER_ACTION** enumeration values. For more information, see [System Power Actions](./system-power-actions.md).
 
