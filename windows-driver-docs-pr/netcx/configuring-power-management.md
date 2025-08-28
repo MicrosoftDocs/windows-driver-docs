@@ -150,7 +150,7 @@ EvtDeviceArmWakeFromSx(
 
     for(UINT32 i = 0; i < NetPowerOffloadListGetCount(&powerOffloadList); i++)
     {
-        NETPOWEROFFLOAD powerOffload = NetPowerOffloadGetElement(&powerOffloadList, i);
+        NETPOWEROFFLOAD powerOffload = NetPowerOffloadListGetElement(&powerOffloadList, i);
         NET_POWER_OFFLOAD_TYPE const powerOffloadType = NetPowerOffloadGetType(powerOffload);
 
         if(powerOffloadType == NetPowerOffloadTypeArp)
