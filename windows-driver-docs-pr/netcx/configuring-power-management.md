@@ -165,7 +165,7 @@ EvtDeviceArmWakeFromSx(
 }
 ```
 
-On the way [back to high power](../wdf/power-up-sequence-for-a-function-or-filter-driver.md) the driver normally disables the previously programmed protocol power offloads and wake patterns in the corresponding [*EvtDeviceDisarmWakeFromSx*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx) and [*EvtDeviceDisarmWakeFromS0*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0) callbacks.
+On the way [back to high power](../wdf/power-up-sequence-for-a-function-or-filter-driver.md) the driver normally disables the previously programmed protocol power offloads and wake patterns in the corresponding [*EvtDeviceDisarmWakeFromSx*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx) and [*EvtDeviceDisarmWakeFromS0*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0) callbacks. [**NetDeviceGetPowerOffloadList**](/windows-hardware/drivers/ddi/netpoweroffloadlist/nf-netpoweroffloadlist-netdevicegetpoweroffloadlist) and [**NetDeviceGetWakeSourceList**](/windows-hardware/drivers/ddi/netwakesourcelist/nf-netwakesourcelist-netdevicegetwakesourcelist) can be used to retrieve the the protocol power offloads and wake pattern in the callbacks.
 
 ## Reporting wake reason
 
