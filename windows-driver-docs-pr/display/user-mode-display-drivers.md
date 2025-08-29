@@ -37,8 +37,6 @@ The UMD can consist of one DLL that supports multiple Direct3D versions, or it c
 
 [Supporting Direct3D Version 10](supporting-direct3d-version-10.md)
 
-[Supporting Direct3D Version 10.1](supporting-direct3d-version-10-1.md)
-
 [Supporting Direct3D Version 11](supporting-direct3d-version-11.md)
 
 [Processing High-Definition Video](processing-high-definition-video.md)

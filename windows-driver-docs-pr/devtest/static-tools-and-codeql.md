@@ -173,12 +173,12 @@ CodeQL installs the query packs to the default directory:
 
 ### Download the Windows driver query suites
 
-Microsoft provides two query suites to simplify the end-to-end driver developer workflow. The *windows_driver_recommended.qls* suite is a superset of all the queries Microsoft deems valuable for driver developers, and *windows_driver_mustfix.qls* suite contains queries deemed **"Must-Fix"** for WHCP certification. *windows_driver_mustfix.qls* must be run and passed in order to pass the Static Tools Logo Test. 
+Microsoft provides two query suites to simplify the end-to-end driver developer workflow. The *recommended.qls* suite is a superset of all the queries Microsoft deems valuable for driver developers, and *mustfix.qls* suite contains queries deemed **"Must-Fix"** for WHCP certification. *mustfix.qls* must be run and passed in order to pass the Static Tools Logo Test. 
 
-Copy the two query suite files from [https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/suites](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/suites) to your local PC.
+Copy the two query suite files from [https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/windows-driver-suites](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/windows-driver-suites) to your local PC.
 
-- *windows_driver_recommended.qls*
-- *windows_driver_mustfix.qls*
+- *recommended.qls*
+- *mustfix.qls*
 
 For details of the contents of the query suites, see [CodeQL Queries and Suites](../devtest/codeql-queries.md).
 
@@ -241,7 +241,7 @@ At this point, the database creation is complete and the next step is to perform
     Example:
 
     ```console
-    codeql database analyze D:\DriverDatabase suites/windows\_driver_recommended.qls --format=sarifv2.1.0 --output=D:\DriverAnalysis1.sarif 
+    codeql database analyze D:\DriverDatabase suites/windows\recommended.qls --format=sarifv2.1.0 --output=D:\DriverAnalysis1.sarif 
     ```
 
     For more information or help using the `database analyze` command, see [Analyzing Databases with the CodeQL CLI](https://codeql.github.com/docs/codeql-cli/analyzing-databases-with-the-codeql-cli/), [Using a CodeQL pack to analyze a CodeQL database](https://docs.github.com/en/code-security/codeql-cli/using-the-advanced-functionality-of-the-codeql-cli/publishing-and-using-codeql-packs#using-a-codeql-pack-to-analyze-a-codeql-database), or [Using CodeQL help](#using-codeql-help).
@@ -310,7 +310,7 @@ These instructions only apply when using both Visual Studio 17.7 or earlier, alo
 
     Example:
 
-    `codeql database analyze D:\DriverDatabase --format=sarifv2.1.0 --output=D:\DriverAnalysis1.sarif D:\codeql-home\Windows-driver-developer-supplemental-tools\src\suites\windows_driver_mustfix.qls`
+    `codeql database analyze D:\DriverDatabase --format=sarifv2.1.0 --output=D:\DriverAnalysis1.sarif D:\codeql-home\Windows-driver-developer-supplemental-tools\src\windows-driver-suites\mustfix.qls`
 
    Be sure to check the path to the suite or query you want to run, not every branch has the same file structure.
 

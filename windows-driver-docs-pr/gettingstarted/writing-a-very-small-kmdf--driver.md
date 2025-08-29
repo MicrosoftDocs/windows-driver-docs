@@ -1,7 +1,7 @@
 ---
 title: Write a Hello World Windows Driver (Kernel-Mode)
 description: How to write a Windows driver using Kernel-Mode Driver Framework (KMDF). You start with a Microsoft Visual Studio template.
-ms.date: 02/03/2025
+ms.date: 08/18/2025
 ms.topic: tutorial
 ---
 
@@ -14,13 +14,13 @@ This article describes how to write a small *Universal Windows driver* using Ker
 - Follow the steps to install [Windows Driver Kit (WDK)](../download-the-wdk.md). [Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
 - Install [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/). When you install Visual Studio 2022, select the **Desktop development with C++** workload, then under **Individual Components** add:
 
-    - MSVC v143 - VS 2022 C++ ARM64/ARM64EC Spectre-mitigated libs (Latest)
-    - MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
-    - C++ ATL for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
-    - C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)
-    - C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
-    - C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)
-    - Windows Driver Kit
+  - MSVC v143 - VS 2022 C++ ARM64/ARM64EC Spectre-mitigated libs (Latest)
+  - MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
+  - C++ ATL for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
+  - C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)
+  - C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
+  - C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)
+  - Windows Driver Kit
 
 ## Create and build a driver
 
@@ -61,7 +61,7 @@ This article describes how to write a small *Universal Windows driver* using Ker
 
 ## Write your first driver code
 
-Now that you created your empty Hello World project and added the Driver.c source file, you write the most basic code necessary for the driver to run by implementing two basic event callback functions. 
+Now that you created your empty Hello World project and added the Driver.c source file, you write the most basic code necessary for the driver to run by implementing two basic event callback functions.
 
 1. In Driver.c, start by including these headers:
 
@@ -72,9 +72,9 @@ Now that you created your empty Hello World project and added the Driver.c sourc
 
     > [!TIP]
     > If you can't add `Ntddk.h`, open **Configuration -> C/C++ -> General -> Additional Include Directories** and add `C:\Program Files (x86)\Windows Kits\10\Include\<build#>\km`, replacing `<build#>` with the appropriate directory in your WDK installation.
-    > 
+    >
 
-    [Ntddk.h](/windows-hardware/drivers/ddi/ntddk) contains core Windows kernel definitions for all drivers, while [Wdf.h](/windows-hardware/drivers/ddi/_wdf) contains definitions for drivers based on the Windows Driver Framework (WDF). 
+    [Ntddk.h](/windows-hardware/drivers/ddi/ntddk) contains core Windows kernel definitions for all drivers, while [Wdf.h](/windows-hardware/drivers/ddi/_wdf) contains definitions for drivers based on the Windows Driver Framework (WDF).
 
 1. Next, provide declarations for the two callbacks:
 
@@ -118,7 +118,7 @@ Now that you created your empty Hello World project and added the Driver.c sourc
     }
     ```
 
-    [*DriverEntry*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) is the entry point for all drivers, like `Main()` is for many user mode applications. The job of *DriverEntry* is to initialize driver-wide structures and resources. In this example, you printed "Hello World" for *DriverEntry*, configured the driver object to register your *EvtDeviceAdd* callback's entry point, then created the driver object and returned. 
+    [*DriverEntry*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) is the entry point for all drivers, like `Main()` is for many user mode applications. The job of *DriverEntry* is to initialize driver-wide structures and resources. In this example, you printed "Hello World" for *DriverEntry*, configured the driver object to register your *EvtDeviceAdd* callback's entry point, then created the driver object and returned.
 
     The driver object acts as the parent object for all other framework objects you might create in your driver, which include device objects, I/O queues, timers, spinlocks, and more. For more information about framework objects, see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md).
 
@@ -240,7 +240,7 @@ Next, you build your driver.
 
 1. To build your driver, choose **Build Solution** from the **Build** menu. Visual Studio shows the build progress in the **Output** window. (If the **Output** window isn't visible, choose **Output** from the **View** menu.) When you verify that the solution built successfully, you can close Visual Studio.
 
-1. To see the built driver, in File Explorer, go to your **KmdfHelloWorld** folder, and then to **x64\\Debug\KmdfHelloWorld**. The folder includes:
+1. To see the built driver, in File Explorer, go to your **KmdfHelloWorld** folder, and then to **x64\Debug\KmdfHelloWorld**. The folder includes:
 
     - KmdfHelloWorld.sys -- the kernel-mode driver file
     - KmdfHelloWorld.inf -- an information file that Windows uses when you install the driver
@@ -253,7 +253,7 @@ Next, you build your driver.
 
 Typically when you test and debug a driver, the debugger and the driver run on separate computers. The computer that runs the debugger is called the *host computer*, and the computer that runs the driver is called the *target computer*. The target computer is also called the *test computer*.
 
-So far you used Visual Studio to build a driver on the host computer. Now you need to configure a target computer. 
+So far you used Visual Studio to build a driver on the host computer. Now you need to configure a target computer.
 
 1. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md).
 
@@ -267,8 +267,7 @@ So far you used Visual Studio to build a driver on the host computer. Now you ne
 1. Go to **Driver Install > Deployment**.
 1. For **Target Device Name**, select the name of the computer that you configured for testing and debugging. In this exercise, we use a computer named MyTestComputer.
 1. To ensure that you are testing the latest version of the driver,check **Remove previous driver versions before deployment**.
-1. Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. For this exercise, the hardware ID is Root\\KmdfHelloWorld. Select **OK**.
-
+1. Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. For this exercise, the hardware ID is Root\KmdfHelloWorld. Select **OK**.
 
     >[!NOTE]
     > In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that is given a place in the [device tree](device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**. You see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfHelloWorld > Driver Files**, and double-click KmdfHelloWorld.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
@@ -290,26 +289,26 @@ With your Hello World driver deployed to the target computer, now you install th
 
 1. On the host computer, navigate to the Tools folder in your WDK installation and locate the DevCon tool. For example, look in the following folder:
 
-    *C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\x64\\devcon.exe*
+    *C:\Program Files (x86)\Windows Kits\10\Tools\\\<version number>\x64\devcon.exe*
 
     Copy the DevCon tool to your remote computer.
 
-1. On the target computer, install the driver by navigating to the folder containing the driver files, then running the DevCon tool. 
+1. On the target computer, install the driver by navigating to the folder containing the driver files, then running the DevCon tool.
     1. Here's the general syntax for the devcon tool that you'll use to install the driver:
 
-        *devcon install \<INF file\> \<hardware ID\>*
+        *devcon install \<INF file> \<hardware ID>*
 
-        The INF file required for installing this driver is KmdfHelloWorld.inf. The INF file contains the hardware ID for installing the driver binary, *KmdfHelloWorld.sys*. Recall that the hardware ID, located in the INF file, is **Root\\KmdfHelloWorld**.
+        The INF file required for installing this driver is KmdfHelloWorld.inf. The INF file contains the hardware ID for installing the driver binary, *KmdfHelloWorld.sys*. Recall that the hardware ID, located in the INF file, is **Root\KmdfHelloWorld**.
     2. Open a Command Prompt window as Administrator. Navigate to your folder containing the built driver .sys file and enter this command:
 
-        **devcon install kmdfhelloworld.inf root\\kmdfhelloworld**
+        **devcon install kmdfhelloworld.inf root\kmdfhelloworld**
 
-        If you get an error message about *devcon* not being recognized, try adding the path to the *devcon* tool. For example, if you copied it to a folder on the target computer called *C:\\Tools*, then try using the following command:
+        If you get an error message about *devcon* not being recognized, try adding the path to the *devcon* tool. For example, if you copied it to a folder on the target computer called *C:\Tools*, then try using the following command:
 
-        **c:\\tools\\devcon install kmdfhelloworld.inf root\kmdfhelloworld**
+        **c:\tools\devcon install kmdfhelloworld.inf root\kmdfhelloworld**
 
         A dialog box appears indicating that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
-        
+
         :::image type="content" source="../debugger/images/debuglab-image-install-security-warning.png" alt-text="Screenshot of the security warning displayed during the driver installation process.":::
 
 ## Debug the driver
@@ -318,15 +317,15 @@ Now that you installed your KmdfHelloWorld driver on the target computer, you at
 
 1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. You use the x64version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation. Here's the default path to WinDbg.exe:
 
-    *C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64*
+    *C:\Program Files (x86)\Windows Kits\10\Debuggers\x64*
 
 1. Launch WinDbg to connect to a kernel debug session on the target computer by using the following command. The value for the port and key should be the same as what you used to provision the target computer. You use **50000** for the port and **1.2.3.4** for the key, the values you used during the deploy step. The *k* flag indicates that this is a kernel debug session.
 
     **WinDbg -k net:port=50000,key=1.2.3.4**
 
-1. On the **Debug** menu, choose **Break**. The debugger on the host computer breaks into the target computer. In the **Debugger Command** window, you can see the kernel debugging command prompt: **kd\>**.
+1. On the **Debug** menu, choose **Break**. The debugger on the host computer breaks into the target computer. In the **Debugger Command** window, you can see the kernel debugging command prompt: **kd>**.
 
-1. At this point, you can experiment with the debugger by entering commands at the **kd&gt;** prompt. For example, you could try these commands:
+1. At this point, you can experiment with the debugger by entering commands at the **kd>** prompt. For example, you could try these commands:
 
     - [lm](../debuggercmds/lm--list-loaded-modules-.md)
     - [.sympath](../debuggercmds/-sympath--set-symbol-path-.md)
@@ -345,8 +344,6 @@ For more information about remote debugging, see [Remote Debugging Using WinDbg]
 
 ## Related articles
 
-[Debugging Tools for Windows](../debugger/index.md)
-
-[Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md)
-
-[Write your first driver](writing-your-first-driver.md)
+- [Debugging Tools for Windows](../debugger/index.md)
+- [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md)
+- [Write your first driver](writing-your-first-driver.md)

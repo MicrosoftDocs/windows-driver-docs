@@ -3,6 +3,7 @@ title: Installing Test Certificates
 description: Installing Test Certificates
 ms.date: 07/20/2020
 ms.topic: concept-article
+ms.custom: sfi-image-nochange
 ---
 
 # Installing Test Certificates

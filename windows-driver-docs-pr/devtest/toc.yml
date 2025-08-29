@@ -108,7 +108,7 @@
       href: wdf-verification.md
     - name: File System Filter verification
       href: file-system-filter-verification.md
-    - name: "Driver Verifier: What's new"
+    - name: 'Driver Verifier: What''s new'
       href: driver-verifier--what-s-new.md
     - name: Using Driver Verifier
       items:
@@ -122,8 +122,6 @@
           href: driver-verifier-manager--windows-xp-and-later-.md
       - name: Controlling Driver Verifier
         items:
-        - name: Controlling Driver Verifier
-          href: controlling-driver-verifier.md
         - name: Selecting Driver Verifier Options
           href: selecting-driver-verifier-options.md
         - name: Selecting Drivers to be Verified
@@ -136,8 +134,6 @@
           href: using-the-global-flags-utility.md
       - name: Monitoring Driver Verifier
         items:
-        - name: Monitoring Driver Verifier
-          href: monitoring-driver-verifier.md
         - name: Monitoring Global Counters
           href: monitoring-global-counters.md
         - name: Monitoring Individual Counters
@@ -152,9 +148,11 @@
         href: debugging-memory-leaks---driver-verifier-detected-violation--c4---0x62.md
       - name: 'Debugging deadlocks - DRIVER_VERIFIER_DETECTED_VIOLATION (C4): 0x1001'
         href: debugging-deadlocks---driver-verifier-detected-violation--c4---0x1001.md
-      - name: 'Debugging DDI Compliance bugs  - DRIVER_VERIFIER_DETECTED_VIOLATION (C4): 0x20002 - 0x20022'
+      - name: 'Debugging DDI Compliance bugs  - DRIVER_VERIFIER_DETECTED_VIOLATION
+          (C4): 0x20002 - 0x20022'
         href: debugging-ddi-compliance-bugs----driver-verifier-detected-violation--c4---0x000200--.md
-      - name: Debugging NDIS/WiFi time-out errors - DRIVER_VERIFIER_DETECTED_VIOLATION (C4)
+      - name: Debugging NDIS/WiFi time-out errors - DRIVER_VERIFIER_DETECTED_VIOLATION
+          (C4)
         href: debugging-ndis-wifi-timeouts---driver-verifier-detected-violation--c4---0x92003--etc-.md
   - name: DDI Compliance Rules
     items:
@@ -1469,15 +1467,14 @@
         href: supported-drivers.md
       - name: Static Driver Verifier Limitations
         items:
-        - name: Static Driver Verifier Limitations
-          href: static-driver-verifier-limitations.md
         - name: Determining if Static Driver Verifier supports your driver or library
           href: determining-if-static-driver-verifier-supports-your-driver-or-library.md
         - name: Static Driver Verifier General Tool and Technical Limitations
           href: static-driver-verifier-general-tool-and-technical-limitations.md
         - name: Using the _analysis_assume Function to Suppress False Defects
           href: using-the--analysis-assume-function-to-suppress-false-defects.md
-        - name: Using __sdv_save_request and __sdv_retrieve_request for Deferred Procedure Calls
+        - name: Using __sdv_save_request and __sdv_retrieve_request for Deferred Procedure
+            Calls
           href: using---sdv-save-request-and---sdv-retrieve-request-for-deferred-proce.md
         - name: Using __sdv_save_adapter_context to Track Adapter Context Fields
           href: using---sdv-save-adapter-context-to-track-adapter-context-fields.md
@@ -1513,8 +1510,6 @@
         href: static-driver-verifier-report.md
       - name: Trace Viewer
         items:
-        - name: Trace Viewer
-          href: defect-viewer.md
         - name: Understanding the Trace Viewer
           href: understanding-the-defect-viewer.md
         - name: Opening and Closing the Trace Viewer
@@ -1525,8 +1520,6 @@
           href: changing-the-text-size-in-the-defect-viewer.md
       - name: Static Driver Verifier Report Panes
         items:
-        - name: Static Driver Verifier Report Panes
-          href: static-driver-verifier-report-panes.md
         - name: Trace Tree Pane
           items:
           - name: Trace Tree Pane
@@ -1541,8 +1534,6 @@
             href: saving-defect-traces.md
         - name: Source Code Pane
           items:
-          - name: Source Code Pane
-            href: source-code-pane.md
           - name: Understanding the Source Code Pane
             href: understanding-the-source-code-pane.md
           - name: Using the Source Code Pane
@@ -1603,7 +1594,8 @@
         items:
         - name: Static Driver Verifier Error Messages
           href: static-driver-verifier-error-messages.md
-        - name: The process cannot access the file <Path> because it is being used by another process
+        - name: The process cannot access the file <Path> because it is being used
+            by another process
           href: the-process-cannot-access-the-file---path---because-it-is-being-used-b.md
       - name: Static Driver Verifier Diagnostics
         href: static-driver-verifier-diagnostics.md
@@ -1683,8 +1675,6 @@
       href: wdftester-functions-that-return-nstatus-codes.md
 - name: Tools for Testing Drivers
   items:
-  - name: Tools for Testing Drivers
-    href: tools-for-testing-drivers.md
   - name: Device Fundamentals Tests
     items:
     - name: Device Fundamentals Tests
@@ -1805,7 +1795,6 @@
         href: devcon-updateni.md
   - name: Additional Test Tools
     items:
-    - name: Additional Test Tools
     - name: PoolMon
       items:
       - name: PoolMon
@@ -1836,8 +1825,6 @@
         items:
         - name: PwrTest Log File
           href: pwrtest-log-file.md
-        - name: PwrTest Scenarios
-          href: pwrtest-scenarios.md
         - name: PwrTest Battery Scenario
           href: pwrtest-battery-scenario.md
         - name: PwrTest Connected Standby Scenario
@@ -1910,8 +1897,6 @@
           href: secure-communication-scenarios.md
       - name: WSDBIT Reference
         items:
-        - name: WSDBIT Reference
-          href: wsdbit-reference.md
         - name: Sample Metadata Response Output
           href: sample-metadata-response-output.md
         - name: SimpleService WSDL
@@ -1954,8 +1939,6 @@
     href: survey-of-software-tracing-tools.md
   - name: Tracing Tool Concepts
     items:
-    - name: Tracing Tool Concepts
-      href: tracing-tool-concepts.md
     - name: Trace Log
       href: trace-log.md
     - name: Trace Provider
@@ -2006,8 +1989,6 @@
         href: traceview-limitations.md
     - name: Using TraceView
       items:
-      - name: Using TraceView
-        href: using-traceview.md
       - name: TraceView Basics
         items:
         - name: TraceView Basics
@@ -2104,8 +2085,6 @@
         href: resolving-traceview-errors.md
       - name: Advanced TraceView Features
         items:
-        - name: Advanced TraceView Features
-          href: advanced-traceview-features.md
         - name: Creating Text Versions of Trace Logs
           href: creating-text-versions-of-trace-logs.md
         - name: Grouping Trace Sessions
@@ -2138,8 +2117,6 @@
             href: special-actions-for-filter-rules.md
         - name: Using TraceView Workspaces
           items:
-          - name: Using TraceView Workspaces
-            href: using-traceview-workspaces.md
           - name: Saving or Resaving a Workspace
             href: saving-or-resaving-a-workspace.md
           - name: Opening a Workspace
@@ -2176,8 +2153,6 @@
         href: tracelog-enumguid-display.md
     - name: Tracelog Examples
       items:
-      - name: Tracelog Examples
-        href: tracelog-examples.md
       - name: 'Example 1: Basic Start Command'
         href: example-1--basic-start-command.md
       - name: 'Example 2: Basic Start Command with Provider'
@@ -2226,8 +2201,6 @@
       href: understanding-tracefmt.md
     - name: Tracefmt Concepts
       items:
-      - name: Tracefmt Concepts
-        href: tracefmt-concepts.md
       - name: Tracefmt Output File
         href: tracefmt-output-file.md
       - name: Summary Message File
@@ -2238,8 +2211,6 @@
       href: tracefmt-commands.md
     - name: Tracefmt Examples
       items:
-      - name: Tracefmt Examples
-        href: tracefmt-examples.md
       - name: 'Example 1: No Parameters'
         href: example-1--no-parameters.md
       - name: 'Example 2: Basic Command'
@@ -2294,12 +2265,8 @@
       href: tracing-and-diagnosability-for-wdf-drivers.md
   - name: Software Tracing FAQ
     items:
-    - name: Software Tracing FAQ
-      href: software-tracing-faq.md
     - name: Getting Started with Software Tracing
       items:
-      - name: Getting Started with Software Tracing
-        href: getting-started-with-software-tracing.md
       - name: Where are the tracing tools?
         href: where-are-the-tracing-tools-.md
       - name: Where are the tracing samples?
@@ -2322,17 +2289,17 @@
         href: how-do-i-change-the-prefix-output-on-every-trace-line-.md
     - name: Basic Software Tracing
       items:
-      - name: Basic Software Tracing
-        href: basic-software-tracing.md
       - name: What is the performance cost of software tracing?
         href: what-is-the-performance-cost-of-software-tracing-.md
-      - name: Can I optimize the conditional checks that the WPP macros produce before the tracing?
+      - name: Can I optimize the conditional checks that the WPP macros produce before
+          the tracing?
         href: can-i-optimize-the-conditional-checks-that-the-wpp-macros-produce-befo.md
       - name: Can I tell if my trace provider is enabled for tracing?
         href: can-i-tell-if-my-trace-provider-is-enabled-for-tracing-.md
       - name: How are flag values assigned?
         href: how-are-flag-values-assigned-.md
-      - name: 'Where do I put the #include statement for the trace message header file?'
+      - name: 'Where do I put the #include statement for the trace message header
+          file?'
         href: where-do-i-put-the--include-statement-for-the-trace-message-header-fil.md
       - name: What is the text that precedes each trace message?
         href: what-is-the-text-that-precedes-each-trace-message-.md
@@ -2340,9 +2307,8 @@
         href: how-do-i-include-the-source-line-number-in-the-trace-message-prefix-.md
     - name: System and Language Support for Software Tracing
       items:
-      - name: System and Language Support for Software Tracing
-        href: system-and-language-support-for-software-tracing.md
-      - name: How do I implement software tracing for Windows XP and later versions of Windows?
+      - name: How do I implement software tracing for Windows XP and later versions
+          of Windows?
         href: how-do-i-implement-software-tracing-for-windows-xp-and-later-versions-.md
       - name: How do I add tracing to a driver or export driver written in C++?
         href: how-do-i-add-tracing-to-a-driver-or-export-driver-written-in-c---.md
@@ -2356,8 +2322,6 @@
         href: enabling-wpp-tracing-through-windows-event-log.md
     - name: Debugging Support for Software Tracing
       items:
-      - name: Debugging Support for Software Tracing
-        href: debugging-support-for-software-tracing.md
       - name: How do I send trace messages to a kernel debugger?
         href: how-do-i-send-trace-messages-to-a-kernel-debugger-.md
       - name: How do I send trace messages to a user-mode debugger?
@@ -2368,8 +2332,6 @@
         href: how-do-i-enable-debugging-without-starting-an-etw-trace-session-.md
     - name: Customizing Software Tracing
       items:
-      - name: Customizing Software Tracing
-        href: customizing-software-tracing.md
       - name: What is the Defaultwpp.ini file?
         href: what-is-the-defaultwpp-ini-file-.md
       - name: Can I customize DoTraceMessage?
@@ -2388,8 +2350,6 @@
         href: do-i-need-to-call-wpp-check-for-null-string-.md
     - name: Advanced Software Tracing
       items:
-      - name: Advanced Software Tracing
-        href: advanced-software-tracing.md
       - name: How do I generate trace messages from a header file?
         href: how-do-i-generate-trace-messages-from-a-header-file-.md
       - name: What happens to NULL strings in tracing code?
@@ -2414,7 +2374,8 @@
         href: what-are-pre---post-macros-.md
       - name: How are Trace-If expressions used?
         href: how-are-trace-if-expressions-used-.md
-      - name: 'How do I notify a driver when enabling, disabling, or changing certain flags? '
+      - name: 'How do I notify a driver when enabling, disabling, or changing certain
+          flags? '
         href: how-do-i-notify-a-driver-when-enabling--disabling--or-changing-certain.md
       - name: How do I use WPP in static libraries?
         href: how-do-i-use-wpp-in-static-libraries-.md
@@ -2460,8 +2421,6 @@
       href: using-kernel-mode-performance-counters.md
 - name: Additional Driver Tools
   items:
-  - name: Additional Driver Tools
-    href: additional-driver-tools.md
   - name: Tools for Building Drivers
     items:
     - name: Tools for Building Drivers
@@ -2672,7 +2631,8 @@
           href: add-hardware-ids-and-model-ids.md
         - name: Specify applications in the Device Metadata Authoring Wizard
           href: specify-applications.md
-        - name: Specify AutoPlay Handler and options in the Device Metadata Authoring Wizard
+        - name: Specify AutoPlay Handler and options in the Device Metadata Authoring
+            Wizard
           href: specify-autoplay-handler-and-other-options.md
         - name: Review and save package in the Device Metadata Authoring Wizard
           href: review-and-save-package.md
@@ -2682,7 +2642,8 @@
         items:
         - name: Using the Mobile Broadband Metadata Authoring Wizard
           href: using-the-mobile-broadband-tool.md
-        - name: Select locales and package type in the Mobile Broadband Metadata Authoring Wizard
+        - name: Select locales and package type in the Mobile Broadband Metadata Authoring
+            Wizard
           href: select-locales-and-package-type-mbb.md
         - name: Select service icon in the Mobile Broadband Metadata Authoring Wizard
           href: select-device-icon-mbb.md
@@ -2690,11 +2651,13 @@
           href: describe-service.md
         - name: Add Hardware IDs in the Mobile Broadband Metadata Authoring Wizard
           href: add-hardware-ids-and-model-ids-mbb.md
-        - name: Specify account information in the Mobile Broadband Metadata Authoring Wizard
+        - name: Specify account information in the Mobile Broadband Metadata Authoring
+            Wizard
           href: specify-account-info.md
         - name: Specify applications in the Mobile Broadband Metadata Authoring Wizard
           href: specify-applications-mbb.md
-        - name: Review and save package in the Mobile Broadband Metadata Authoring Wizard
+        - name: Review and save package in the Mobile Broadband Metadata Authoring
+            Wizard
           href: review-and-save-package-mbb.md
         - name: Creating a service metadata submission package in Visual Studio
           href: creating-a-service-metadata-submission-package-in-visual-studio.md

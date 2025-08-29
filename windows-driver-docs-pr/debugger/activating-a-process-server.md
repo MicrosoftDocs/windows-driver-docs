@@ -10,6 +10,7 @@ api_name:
 - Activating a Process Server
 api_type:
 - NA
+ms.custom: sfi-ropc-nochange
 ---
 
 # Activating a Process Server
@@ -25,7 +26,7 @@ The process server that is included in Debugging Tools for Windows is called Dbg
 DbgSrv supports several transport protocols: named pipe (NPIPE), TCP, COM port, secure pipe (SPIPE), and secure sockets layer (SSL).
 
 
-*Recommended connection methods, with soem additional security*
+*Recommended connection methods, with some additional security*
 
 ```console
 dbgsrv -t spipe:proto=Protocol,{certuser=Cert|machuser=Cert},pipe=PipeName[,hidden][,password=Password] [[-sifeo Executable] -c[s] AppCmdLine] [-x | -pc] 

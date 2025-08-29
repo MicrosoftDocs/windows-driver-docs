@@ -1,7 +1,7 @@
 ---
 title: LSA Plugin or UEFI Firmware Signing Requirements
 description: You can use the Partner Center hardware dashboard to digitally sign Local Security Authority (LSA) plugins and UEFI firmware binaries, to enable them to be installed on windows devices.
-ms.date: 05/29/2025
+ms.date: 08/19/2025
 ms.topic: checklist
 ---
 
@@ -14,6 +14,7 @@ You can use the Partner Center hardware dashboard to digitally sign [Local Secur
 - LSA plugins and UEFI firmware signing require an [extended validation (EV) code signing certificate](code-signing-reqs.md#ev-certificate-signed-drivers).
 - All LSA and UEFI submissions must be a single, signed CAB library file, and contain all files required for signing.
 - This file should contain no folders and only the binaries or .efi files to be signed.
+- Don't include option ROMs and EFI applications in the same submission for signing. 
 - **UEFI FIRMWARE ONLY** - The CAB file signature must match the [Authenticode certificate](../install/authenticode.md) for your organization.
 - Depending on your certificate provider, you might need to use [SignTool](/windows/desktop/SecCrypto/signtool) or an external process.
 - EFI ByteCode (EBC) files must be compiled using the /ALIGN:32 flag for processing to succeed.

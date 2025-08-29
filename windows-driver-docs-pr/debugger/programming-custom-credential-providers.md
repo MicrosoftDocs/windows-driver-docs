@@ -4,6 +4,7 @@ description: This topic describes how to program a custom credential provider fo
 keywords: ["symbols, programming"]
 ms.date: 12/12/2024
 ms.topic: concept-article
+ms.custom: sfi-ropc-nochange
 ---
 
 # Programming custom credential providers

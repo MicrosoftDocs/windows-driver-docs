@@ -10,13 +10,13 @@ ms.topic: concept-article
 
 # CodeQL Queries and Suites for Windows Driver Testing
 
-The [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools) offers two query suites to simplify Windows driver development and ensure compliance with the Windows Hardware Compatibility Program (WHCP). The *windows_driver_recommended.qls* suite includes all recommended queries for driver developers, while the *windows_driver_mustfix.qls* suite focuses on "Must-Fix" queries required for WHCP certification. Both suites are updated regularly.
+The [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/windows-driver-suites) offers two query suites to simplify Windows driver development and ensure compliance with the Windows Hardware Compatibility Program (WHCP). The *recommended.qls* suite includes all recommended queries for driver developers, while the *mustfix.qls* suite focuses on "Must-Fix" queries required for WHCP certification. Both suites are updated regularly.
 
 ### Must-Fix queries for WCHP certification
 
 The following subset of queries are **Must-Fix** for WHCP certification and are also included in the **Recommended Fix** suite.
 
-This set of rules is included in *windows_driver_mustfix.qls*.
+This set of rules is included in *mustfix.qls*.
 
 | ID                       | Location                                                                                     | [Common Weakness Enumeration](https://cwe.mitre.org/)                     |
 |--------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
@@ -26,7 +26,7 @@ This set of rules is included in *windows_driver_mustfix.qls*.
 | [cpp/comparison-with-wider-type](https://codeql.github.com/codeql-query-help/cpp/cpp-comparison-with-wider-type/)       | *codeql/cpp-queries/`<Version>`/Security/CWE/CWE-190/ComparisonWithWiderType.ql*    | [CWE-190](https://cwe.mitre.org/data/definitions/190.html), [CWE-197](https://cwe.mitre.org/data/definitions/197.html), [CWE-835](https://cwe.mitre.org/data/definitions/835.html) |
 | [cpp/hresult-boolean-conversion](https://codeql.github.com/codeql-query-help/cpp/cpp-hresult-boolean-conversion/)       | *codeql/cpp-queries/`<Version>`/Security/CWE/CWE-253/HResultBooleanConversion.ql*   | [CWE-253](https://cwe.mitre.org/data/definitions/253.html)                |
 
-The *windows_driver_mustfix.qls* file includes the following **Must-Fix** code queries.
+The *mustfix.qls* file includes the following **Must-Fix** code queries.
 
 ```text
 # Copyright (c) Microsoft Corporation.
@@ -71,7 +71,7 @@ The *windows_mustfix_partial.qls* file includes the following **Must-Fix** code 
 
 ### Recommended Fix Queries
 
-These queries are part of the *windows_driver_recommended.qls* query suite in the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools). The "Common Weakness Enumeration" (CWE) column identifies what kinds of security issues the given query searches for. See [Mitre's page on CWE](https://cwe.mitre.org/) for more details about CWEs.
+These queries are part of the *recommended.qls* query suite in the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools). The "Common Weakness Enumeration" (CWE) column identifies what kinds of security issues the given query searches for. See [Mitre's page on CWE](https://cwe.mitre.org/) for more details about CWEs.
 
 The "Common Weakness Enumeration" (CWE) column shows the types of security issues the query identifies.
 
@@ -109,7 +109,7 @@ The "Common Weakness Enumeration" (CWE) column shows the types of security issue
 | [cpp/hresult-boolean-conversion](https://codeql.github.com/codeql-query-help/cpp/cpp-hresult-boolean-conversion/)   | *codeql/cpp-queries/`<Version>`/Security/CWE/CWE-253/HResultBooleanConversion.ql* | [CWE-253](https://cwe.mitre.org/data/definitions/253.html) |
 | [cpp/suspicious-add-sizeof](https://codeql.github.com/codeql-query-help/cpp/cpp-suspicious-add-sizeof/) | *codeql/cpp-queries/`<Version>`/Security/CWE/CWE-468/CWE-468/SuspiciousAddWithSizeof.ql*|[CWE-468](https://cwe.mitre.org/data/definitions/468.html)|
 
-The *windows_driver_recommended.qls* file includes the following recommended code queries.
+The *recommended.qls* file includes the following recommended code queries.
 
 ```text
 # Copyright (c) Microsoft Corporation.

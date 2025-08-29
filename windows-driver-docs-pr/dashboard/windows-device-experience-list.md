@@ -1,11 +1,11 @@
 ---
-title: Windows Device Experience List
-description: The Windows device experience list is a comprehensive list of devices that have supporting Windows device experiences submitted through the dashboard.
+title: Search the Windows Device Experience List
+description: Learn to search the Windows device experience list, a comprehensive list of devices that have supporting Windows device experiences submitted through the dashboard.
 ms.date: 08/16/2024
 ms.topic: overview
 ---
 
-# Windows device experience list
+# Search the Windows device experience list
 
 The Windows device experience list is a comprehensive list of devices that have supporting Windows device experiences submitted through the dashboard. Most external devices and PCs are eligible to have a device experience. Devices and Printers folder devices and Device Stage devices have specific rules on submissions to the dashboard and the Windows Certification Program.
 

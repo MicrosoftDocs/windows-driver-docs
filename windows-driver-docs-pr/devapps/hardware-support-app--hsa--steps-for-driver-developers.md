@@ -9,6 +9,7 @@ keywords:
 - Hardware
 ms.date: 07/21/2025
 ms.topic: how-to
+ms.custom: sfi-image-nochange
 ---
 
 # Hardware Support App (HSA): Steps for Driver Developers

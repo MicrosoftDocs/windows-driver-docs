@@ -4,6 +4,7 @@ description: WMI Generic Property Page Provider
 keywords: ["WMI WDK kernel , property sheets", "property sheets WDK WMI", "generic property page providers WDK WMI", "property pages WDK WMI", "property qualifiers WDK WMI", "device property sheets WDK WMI"]
 ms.date: 06/16/2017
 ms.topic: concept-article
+ms.custom: sfi-ropc-nochange
 ---
 
 # WMI Generic Property Page Provider

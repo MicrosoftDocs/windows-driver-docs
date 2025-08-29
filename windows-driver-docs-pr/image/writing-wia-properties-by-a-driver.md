@@ -3,6 +3,7 @@ title: Writing WIA Properties by a Driver
 description: Writing WIA Properties by a Driver
 ms.date: 04/20/2017
 ms.topic: concept-article
+ms.custom: sfi-ropc-nochange
 ---
 
 # Writing WIA Properties by a Driver

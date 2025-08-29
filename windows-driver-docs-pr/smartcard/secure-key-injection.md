@@ -3,6 +3,7 @@ title: Secure Key Injection
 description: Secure Key Injection
 ms.date: 04/20/2017
 ms.topic: how-to
+ms.custom: sfi-image-nochange
 ---
 
 # Secure Key Injection

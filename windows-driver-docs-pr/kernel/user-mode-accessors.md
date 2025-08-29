@@ -2,7 +2,7 @@
 title: User-mode Accessors
 description: Learn about user-mode accessors that provide safe access to user-mode memory from kernel-mode code
 keywords: ["user-mode accessors", "kernel-mode", "user-mode memory", "probing", "volatile access", "memory safety", "UMA"]
-ms.date: 07/25/2025
+ms.date: 08/11/2025
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -32,7 +32,6 @@ The following code snippets illustrate these issues.
 Kernel-mode code that needs to access user-mode memory must do so within a `__try/__except` block to ensure the memory is valid. The following code snippet shows a typical pattern for accessing user-mode memory:
 
 ```c
-
 // User-mode structure definition
 typedef struct _StructWithData {
     ULONG Size;
@@ -43,7 +42,7 @@ typedef struct _StructWithData {
 void MySysCall(StructWithData* Ptr) {
     __try {
         // Probe user-mode memory to ensure it's valid
-        ProbeForRead (Ptr, sizeof(StructWithData), 1);
+        ProbeForRead(Ptr, sizeof(StructWithData), 1);
 
         // Allocate memory in the kernel
         PVOID LocalData = ExAllocatePool2(POOL_FLAG_PAGED, Ptr->Size);
@@ -65,11 +64,10 @@ However, one problem that can occur in this code is due to multithreading in use
 An attempt to address the multithreading issue in Example 1 might be to copy ```Ptr->Size``` into a local variable before the allocation and copy:
 
 ``` c
-
 void MySysCall(StructWithData* Ptr) {
     __try {
         // Probe user-mode memory to ensure it's valid
-        ProbeForRead (Ptr, sizeof(StructWithData), 1);
+        ProbeForRead(Ptr, sizeof(StructWithData), 1);
         
         // Read Ptr->Size once to avoid possible memory change in user mode
         ULONG LocalSize = Ptr->Size;
@@ -113,10 +111,10 @@ void MySysCall(StructWithData* Ptr) {
         //This UMA call safely copies UM data into the KM heap allocation.
         CopyFromUser(&LocalData, Ptr, LocalSize);
         
-        // To be safe, set LocalData.Size to be LocalSize, which was the value used
-        // to make the pool allocation just in case LocalData.Size was changed.
-        LocalData.Size = LocalSize;
-        
+        // To be safe, set LocalData->Size to be LocalSize, which was the value used
+        // to make the pool allocation just in case LocalData->Size was changed.
+        ((StructWithData*)LocalData)->Size = LocalSize;
+
     } __except (…) {}
 }
 ```

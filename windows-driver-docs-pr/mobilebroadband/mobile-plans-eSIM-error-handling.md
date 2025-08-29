@@ -36,4 +36,4 @@ Mobile operators might choose not to support handling errors passed by the Mobil
 
 The following image shows an example of the error message that is displayed to the user:
 
-<img src="images/mobile_plans_implementation_error_message.png" alt="Example of Mobile Plans app eSIM download error" title="Example of Mobile Plans app eSIM download error" width="600" />
+:::image type="content" source="images/mobile_plans_implementation_error_message.png" alt-text="Example of Mobile Plans app eSIM download error":::

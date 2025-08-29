@@ -1,12 +1,12 @@
-- name: "Partner Center for Windows Hardware"
+- name: Partner Center for Windows Hardware
   href: index.md
-- name: "Register for the Windows Hardware program"
-  href: hardware-program-register.md 
-- name: "Manage dashboard users"
-  href: hardware-dashboard-users-manage.md 
-- name: "Hardware submissions"
+- name: Register for the Windows Hardware program
+  href: hardware-program-register.md
+- name: Manage dashboard users
+  href: hardware-dashboard-users-manage.md
+- name: Hardware submissions
   items:
-  - name: "Create a new hardware submission"
+  - name: Create a new hardware submission
     href: hardware-submission-create.md
   - name: View hardware submissions
     href: hardware-submissions-view.md
@@ -14,335 +14,359 @@
     href: hardware-submission-update.md
   - name: Create a WLK hardware submission package
     href: hardware-submission-wlk.md
-  - name: "Submission IDs"
+  - name: Submission IDs
     href: hardware-submission-ids.md
-- name: "Driver code signing"
+- name: Driver code signing
   items:
-  - name: "Requirements"
-    href: code-signing-reqs.md 
-  - name: "Manage code signing certificates"
-    href: code-signing-cert-manage.md 
+  - name: Requirements
+    href: code-signing-reqs.md
+  - name: Manage code signing certificates
+    href: code-signing-cert-manage.md
   - name: Validate a Microsoft signature
     href: code-signing-validate.md
-  - name: "Attestation sign Windows 10+ drivers"
-    href: code-signing-attestation.md 
-- name: "File signing"
+  - name: Attestation sign Windows 10+ drivers
+    href: code-signing-attestation.md
+- name: File signing
   items:
-  - name: "Requirements"
+  - name: Requirements
     href: file-signing-reqs.md
-  - name: "File sign an LSA plugin or UEFI firmware binary"
+  - name: File sign an LSA plugin or UEFI firmware binary
     href: file-signing-manage.md
-- name: "Shipping labels"
-  items: 
-  - name: "Manage driver distribution with shipping labels"
+- name: Shipping labels
+  items:
+  - name: Manage driver distribution with shipping labels
     href: manage-driver-distribution-by-submission.md
-  - name: "Publishing restrictions"
+  - name: Publishing restrictions
     href: publishing-restrictions.md
-  - name: "Publish a driver to Windows Update"
+  - name: Publish a driver to Windows Update
     href: publish-a-driver-to-windows-update.md
-  - name: "Understanding Windows Update rules for driver distribution"
+  - name: Understanding Windows Update rules for driver distribution
     href: understanding-windows-update-automatic-and-optional-rules-for-driver-distribution.md
-  - name: "Validating driver updates for Modern Standby systems"
+  - name: Validating driver updates for Modern Standby systems
     href: validating-driver-updates-for-modern-standby-systems.md
-  - name: "Share a driver with a partner"
+  - name: Share a driver with a partner
     href: sharing-drivers-with-your-partners.md
-  - name: "Expire a driver from Windows Update"
+  - name: Expire a driver from Windows Update
     href: expire-a-driver-from-windows-update.md
-  - name: "View partner shipping labels for a shared driver"
+  - name: View partner shipping labels for a shared driver
     href: viewing-shipping-labels-for-your-shared-driver.md
-  - name: "Using Computer Hardware IDs (CHIDs)"
+  - name: Using Computer Hardware IDs (CHIDs)
     href: using-chids.md
-  - name: "Working with extension INF files"
+  - name: Working with extension INF files
     href: submit-dashboard-extension-inf-files.md
-  - name: "How to limit or expand a driver’s distribution based on Windows version"
+  - name: How to limit or expand a driver’s distribution based on Windows version
     href: limit-driver-distribution.md
-  - name: "Publishing for test distribution"
+  - name: Publishing for test distribution
     href: publishing-for-test-distribution.md
   - name: Gradual rollout
     href: gradual-rollout.md
-  - name: "Driver package metadata"
+  - name: Driver package metadata
     href: driver-package-metadata.md
     items:
-    - name: "Create Publisher Driver Metadata"
+    - name: Create Publisher Driver Metadata
       href: create-publisher-metadata.md
-- name: "Driver flighting"
+- name: Driver flighting
   items:
-  - name: "Overview of driver flighting"
+  - name: Overview of driver flighting
     href: driver-flighting.md
-  - name: "Other Policies"
+  - name: Other Policies
     items:
-    - name: "Overview of other policies"
+    - name: Overview of other policies
       href: other-policies.md
-    - name: "Deploying Audio Processing Objects"
+    - name: Deploying Audio Processing Objects
       href: deploying-audio-processing-objects.md
-    - name: "Driver release cadence"
+    - name: Driver release cadence
       href: driver-release-cadence.md
-    - name: "Establish HWID or CHID targeting relationship"
+    - name: Establish HWID or CHID targeting relationship
       href: establish-relationship-for-chid-targeting.md
-    - name: "Executable version numbers for audio drivers"
+    - name: Executable version numbers for audio drivers
       href: executable-version-numbers-audio-drivers.md
-    - name: "Extension INF targeting rules"
+    - name: Extension INF targeting rules
       href: extension-inf-targeting-rules.md
-  - name: "Microsoft driver measures"
+  - name: Microsoft driver measures
     href: overview-of-microsoft-driver-measure-dictionary.md
-  - name: "Driver measure attributes"
+  - name: Driver measure attributes
     href: measure-attributes.md
-  - name: "Reports"
+  - name: Reports
     items:
-    - name: "Cohort failure report"
+    - name: Cohort failure report
       href: IDR-cohort-report.md
-    - name: "Plug and Play failure report"
+    - name: Plug and Play failure report
       href: pnp-failure-report.md
-    - name: "Reliability failure report"
+    - name: Reliability failure report
       href: reliability-failure-report.md
-    - name: "Driver install and health summary report"
+    - name: Driver install and health summary report
       href: driver-install-health-summary-report.md
-  - name: "Systemic measures"
+  - name: Systemic measures
     items:
-    - name: "Driver installation measures"
+    - name: Driver installation measures
       items:
-      - name: "Percent of machines where the driver install process completes successfully"
+      - name: Percent of machines where the driver install process completes successfully
         href: pct-machines-where-driver-install-completes-successfully.md
-      - name: "Machines that reported a PnP error code within two days of installing a driver update"
+      - name: Machines that reported a PnP error code within two days of installing
+          a driver update
         href: pct-machines-installed-driver-update-and-reported-pnp-error-within-2-days.md
-    - name: "Reliability measures"
+    - name: Reliability measures
       items:
-      - name: "Percentage of machines without a kernel mode crash"
+      - name: Percentage of machines without a kernel mode crash
         href: pct-machines-without-kernel-mode-crash.md
-      - name: "Percentage of machines without a live kernel dump"
+      - name: Percentage of machines without a live kernel dump
         href: pct-machines-without-live-kernel-dump.md
-  - name: "Device class measures"
+  - name: Device class measures
     items:
-    - name: "Audio"
+    - name: Audio
       items:
-      - name: "Audio measures"
+      - name: Audio measures
         href: audio-measures.md
-      - name: "Stream Initialization: Percentage of machines with at least one audio stream initialization failure"
+      - name: 'Stream Initialization: Percentage of machines with at least one audio
+          stream initialization failure'
         href: pct-machines-with-at-least-one-audio-stream-initialization-failure.md
-      - name: "Stream Initialization: Percent of machines with subpar stream initialization success rate"
+      - name: 'Stream Initialization: Percent of machines with subpar stream initialization
+          success rate'
         href: pct-machines-with-subpar-stream-initialization-success-rate.md
-      - name: "Stream Initialization: Percent of machine endpoints with at least one audio stream initialization failure"
+      - name: 'Stream Initialization: Percent of machine endpoints with at least one
+          audio stream initialization failure'
         href: pct-machine-endpoints-with-at-least-one-audio-stream-initialization-failure-per-driver.md
-      - name: "Stream Initialization: Percent of machine endpoints with subpar stream initialization success rate"
+      - name: 'Stream Initialization: Percent of machine endpoints with subpar stream
+          initialization success rate'
         href: pct-machine-endpoints-with-subpar-stream-initialization-success-rate.md
-      - name: "Audio Reliabity: Percent of machines with at least one audio crash"
+      - name: 'Audio Reliabity: Percent of machines with at least one audio crash'
         href: pct-machines-with-at-least-one-audio-crash.md
-      - name: "Audio Reliability: Percent of machines with at least one audio hang"
+      - name: 'Audio Reliability: Percent of machines with at least one audio hang'
         href: pct-machines-with-at-least-one-audio-hang.md
-      - name: "Render Stream Initialization: Percent of machine endpoints with at least one audio render stream initialization failure"
+      - name: 'Render Stream Initialization: Percent of machine endpoints with at
+          least one audio render stream initialization failure'
         href: pct-machine-endpoints-with-at-least-one-audio-render-stream-initialization-failure-per-driver.md
-      - name: "Render Stream Initialization: Percent of machines with at least one audio render stream initialization failure per Driver"
+      - name: 'Render Stream Initialization: Percent of machines with at least one
+          audio render stream initialization failure per Driver'
         href: pct-machines-with-at-least-one-audio-render-stream-initialization-failure.md
-      - name: "Capture Stream Initialization: Percent of machine endpoints with at least one audio capture stream initialization failure"
-        href: pct-machine-endpoints-with-at-least-one-audio-capture-stream-initialization-failure-per-driver.md 
-      - name: "Capture Stream Initialization: Percent of machines with at least one audio capture stream initialization failure per Driver"
+      - name: 'Capture Stream Initialization: Percent of machine endpoints with at
+          least one audio capture stream initialization failure'
+        href: pct-machine-endpoints-with-at-least-one-audio-capture-stream-initialization-failure-per-driver.md
+      - name: 'Capture Stream Initialization: Percent of machines with at least one
+          audio capture stream initialization failure per Driver'
         href: pct-machines-with-at-least-one-audio-capture-stream-initialization-failure.md
-      - name: "Audio Reliability: Percentage of machine endpoints with at least one audio crash"
+      - name: 'Audio Reliability: Percentage of machine endpoints with at least one
+          audio crash'
         href: pct-machine-endpoints-with-at-least-one-audio-crash.md
-      - name: "Audio Reliability: Percentage of machine endpoints with at least one audio hang"
+      - name: 'Audio Reliability: Percentage of machine endpoints with at least one
+          audio hang'
         href: pct-machine-endpoints-with-at-least-one-audio-hang.md
-      - name: "Percent of devices with at least one APO disablement in past 7 days"
+      - name: Percent of devices with at least one APO disablement in past 7 days
         href: pct-machines-with-at-least-one-APO-disablement-in-past-7-days.md
-      - name: "Appealing rejection of an audio driver"
+      - name: Appealing rejection of an audio driver
         href: appeal-rejected-audio-driver.md
-    - name: "Camera"
+    - name: Camera
       items:
-      - name: "Camera measures"
+      - name: Camera measures
         href: camera-measures.md
-      - name: "Percent of camera initialization failures"
+      - name: Percent of camera initialization failures
         href: camera-initialization-failure-rate.md
-      - name: "Percent of camera preview failures"
+      - name: Percent of camera preview failures
         href: camera-preview-failure-rate.md
-      - name: "Percent of camera photo capture failures"
+      - name: Percent of camera photo capture failures
         href: camera-photo-failure-rate.md
-      - name: "Percent of camera video and stream failures"
+      - name: Percent of camera video and stream failures
         href: camera-video-and-stream-failure-rate.md
-      - name: "Percent of legacy camera DShow failures"
+      - name: Percent of legacy camera DShow failures
         href: camera-legacy-DShow-failure-rate.md
-      - name: "Percent of camera DShow bridge engine failures"
+      - name: Percent of camera DShow bridge engine failures
         href: camera-DShow-bridge-failure-rate.md
-      - name: "Percent of machines with camera failures"
+      - name: Percent of machines with camera failures
         href: camera-machines-failure-rate.md
-    - name: "Fingerprint"
+    - name: Fingerprint
       items:
-      - name: "Fingerprint measures"
+      - name: Fingerprint measures
         href: fingerprint-measures.md
-      - name: "Success Rate of Fingerprint Enrollment"
+      - name: Success Rate of Fingerprint Enrollment
         href: success-rate-fingerprint-enrollment.md
-      - name: "Success Rate of Fingerprint Signin Experience"
+      - name: Success Rate of Fingerprint Signin Experience
         href: success-rate-fingerprint-signin-experience.md
-    - name: "Firmware"
+    - name: Firmware
       items:
-      - name: "Firmware measures"
+      - name: Firmware measures
         href: firmware-measures.md
-      - name: "Percent of machines reporting successful firmware installation from ESRT"
+      - name: Percent of machines reporting successful firmware installation from
+          ESRT
         href: ESRT-pct-machines-reporting-successful-firmware-installation.md
-      - name: "Percent of machinces exceeded firmware max retry limit from ESRT"
+      - name: Percent of machinces exceeded firmware max retry limit from ESRT
         href: ESRT-pct-machines-exceed-max-retry.md
-      - name: "Percent of machines with WHEA error after firmware installation"
+      - name: Percent of machines with WHEA error after firmware installation
         href: ESRT-pct-machines-WHEA-error.md
-      - name: "Percent of machines with abnormal shutdown not due to bugcheck or power button"
+      - name: Percent of machines with abnormal shutdown not due to bugcheck or power
+          button
         href: ESRT-pct-machines-ABS.md
-      - name: "Percent of machines that successfully installed firmware and not heartbeat within 7 days"
+      - name: Percent of machines that successfully installed firmware and not heartbeat
+          within 7 days
         href: ESRT-7-day-brick-detector.md
-      - name: "Percent of machines that successfully installed firmware and not heartbeat within 14 days"
+      - name: Percent of machines that successfully installed firmware and not heartbeat
+          within 14 days
         href: ESRT-14-day-brick-detector.md
-      - name: "Percent of machines with pending firmware updates due to Bitlocker Risk"
+      - name: Percent of machines with pending firmware updates due to Bitlocker Risk
         href: ESRT-pct-machines-blocked-bitlocker.md
-      - name: "Percent of machines updated and successfully unlocked bitlocker recovery"
+      - name: Percent of machines updated and successfully unlocked bitlocker recovery
         href: ESRT-pct-machines-entered-bitlocker-recovery.md
-      - name: "Percent of machines passing TPM critical checks for attestation but might have PCR mismatches"
+      - name: Percent of machines passing TPM critical checks for attestation but
+          might have PCR mismatches
         href: ESRT-pre-attestation-health-check.md
-    - name: "Graphics"
+    - name: Graphics
       items:
-      - name: "Graphics measures"
+      - name: Graphics measures
         href: graphics-measures.md
-      - name: "Myriad of machines that had a stop error caused by a discrete graphics driver crash"
+      - name: Myriad of machines that had a stop error caused by a discrete graphics
+          driver crash
         href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-standard.md
-      - name: "Myriad of machines that had a stop error caused by an integrated GPU driver crash"
+      - name: Myriad of machines that had a stop error caused by an integrated GPU
+          driver crash
         href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-standard.md
-      - name: "Myriad of machines that had a TDR caused by a graphics driver crash"
+      - name: Myriad of machines that had a TDR caused by a graphics driver crash
         href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-standard.md
-      - name: "Myriad of machines with integrated GPU that had a TDR caused by a graphics driver crash"
+      - name: Myriad of machines with integrated GPU that had a TDR caused by a graphics
+          driver crash
         href: graphics-tdr-integrated-gpu.md
-      - name: "Myriad of of drivers that were rolled back or re-installed within 2 days of installation"
+      - name: Myriad of of drivers that were rolled back or re-installed within 2
+          days of installation
         href: myriad-drivers-rolled-back-standard.md
-      - name: "Number of user mode crashes in Microsoft Photos app"
+      - name: Number of user mode crashes in Microsoft Photos app
         href: user-mode-reliability-for-crashes-in-microsoft-photos-app-expanded.md
-      - name: "Number of user mode for crashes in creative applications"
+      - name: Number of user mode for crashes in creative applications
         href: graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps-expanded.md
-      - name: "Number of user mode crashes in top Microsoft apps"
+      - name: Number of user mode crashes in top Microsoft apps
         href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale-expanded.md
-      - name: "User mode crashes in Microsoft Edge Chromium"
+      - name: User mode crashes in Microsoft Edge Chromium
         href: graphics-user-mode-crashes-edge-chromium-standard.md
-      - name: "Number of user mode crashes in Windows components"
+      - name: Number of user mode crashes in Windows components
         href: user-mode-reliability-for-crashes-in-windows-components.md
-      - name: "Crashes in communication and collaboration apps"
+      - name: Crashes in communication and collaboration apps
         href: graphics-user-mode-crashes-collaboration-standard.md
-      - name: "Number of user mode crashes or TDRs in UWP gaming applications"
+      - name: Number of user mode crashes or TDRs in UWP gaming applications
         href: number-user-mode-crashes-in-UWP-gaming-applications.md
-      - name: "Number of user mode crashes or TDRs in Win32 gaming applications"
+      - name: Number of user mode crashes or TDRs in Win32 gaming applications
         href: number-user-mode-crashes-in-win32-gaming-applications.md
-      - name: "Percent of devices with WinML Runtime Errors"
+      - name: Percent of devices with WinML Runtime Errors
         href: pct-devices-winml-runtime-error.md
-      - name: "PresentAT Netflix app SDRM machines hitting one or more media engine errors"
+      - name: PresentAT Netflix app SDRM machines hitting one or more media engine
+          errors
         href: presentat-netflix-app-sdrm-machines-hitting-one-or-more-media-engine-errors.md
-      - name: "Percent of devices with SWDRM playback that triggered the Catalog reload event"
+      - name: Percent of devices with SWDRM playback that triggered the Catalog reload
+          event
         href: pct-devices-with-SWDRM-playback-that-triggered-the-catalog-reload-event.md
-      - name: "Session based SWDRM Driver measure for Video playback on Netflix"
+      - name: Session based SWDRM Driver measure for Video playback on Netflix
         href: session-based-SWDRM-driver-measure-for-video-playback-on-netflix.md
-      - name: "Session based HWDRM Driver measure for Video playback on Netflix"
+      - name: Session based HWDRM Driver measure for Video playback on Netflix
         href: session-based-HWDRM-driver-measure-for-video-playback-on-netflix.md
-    - name: "Wi-Fi"
+    - name: Wi-Fi
       items:
-      - name: "Wi-Fi Measures"
+      - name: Wi-Fi Measures
         href: wi-fi-measures.md
-      - name: "Wi-Fi connection failures from devices and access-point pairs with more than 50% signal quality"
+      - name: Wi-Fi connection failures from devices and access-point pairs with more
+          than 50% signal quality
         href: percent-of-wifi-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
-      - name: "Internet connection failures of device and access-point pairs with more than 50% signal quality"
+      - name: Internet connection failures of device and access-point pairs with more
+          than 50% signal quality
         href: percent-of-internet-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
-      - name: "Percentage of Wi-Fi sessions ending in a disconnection with more than 50% signal quality"
+      - name: Percentage of Wi-Fi sessions ending in a disconnection with more than
+          50% signal quality
         href: pct-wi-fi-sessions-ending-in-unexpected-disconnect.md
-    - name: "Experimental Measures"
-  - name: "Appendix"
+  - name: Appendix
     href: measure-appendix.md
-  - name: "Glossary"
+  - name: Glossary
     href: measures-glossary.md
-- name: "Device Metadata"
+- name: Device Metadata
   items:
-  - name: "The Device Metadata Experience"
-    items: 
-    - name: "Creating a Device Metadata Experience"
-      href: create-a-device-metadata-experience.md
-    - name: "Creating a Preview Package"
-      href: creating-a-preview-package.md
-  - name: "Managing Device Metadata Experiences"
-    href: manage-device-metadata-experiences.md
-  - name: "Submitting a Device Metadata Package"
-    items: 
-    - name: "Submission and validation"
-      href: submit-a-device-metadata-package--dashboard-help-.md
-    - name: "Create the LocaleInfo.xml Submission File"
-      href: create-the-localeinfoxml-submission-file.md
-    - name: "Submit a PC device manifest package"
-      href: submit-a-pc-device-manifest-package.md
-    - name: "Submit a mobile broadband device manifest package"
-      href: submit-a-mobile-broadband-device-manifest-package.md
-    - name: "Submit a Multiple-locale device manifest package"
-      href: submit-a-multiple-locale-device-manifest-package.md
-    - name: "Submit a Bulk Metadata Package"
-      href: submit-a-bulk-metadata-package.md
-    - name: "Errors and Solutions When Submitting Device Metadata Experiences"
-      href: errors-and-solutions-when-submitting-device-metadata-experiences.md
-  - name: "Device Metadata Business Rules"
-    href: device-metadata-business-rules.md
-  - name: "Mobile broadband experience"
-    items: 
-    - name: "Create a mobile broadband experience"
-      href: create-a-mobile-broadband-experience.md
-    - name: "Developer and preview mode"
-      href: developer-and-preview-mode.md
-    - name: "Service icon requirements"
-      href: service-icon-requirements.md
-    - name: "Service number"
-      href: service-number.md
-    - name: "Trusted certificates"
-      href: trusted-certificates.md
-- name: "Hardware dashboard API"
-  items: 
-  - name: "Getting started with the hardware dashboard API"
-    href: dashboard-api.md
-  - name: "Product data API"
-    items: 
-    - name: "Get product data"
-      href: get-product-data.md
-    - name: "Get all products"
-      href: get-all-products.md
-    - name: "Get a product"
-      href: get-a-product.md
-    - name: "Get all submissions"
-      href: get-all-submissions.md
-    - name: "Get a submission"
-      href: get-a-submission.md
-  - name: "Product submission APIs"
-    items: 
-    - name: "Manage product submissions"
-      href: manage-product-submissions.md
-    - name: "Create a new product"
-      href: create-a-new-product.md
-    - name: "Create a new submission for a product"
-      href: create-a-new-submission-for-a-product.md
-    - name: "Commit a product submission"
-      href: commit-a-product-submission.md
-    - name: "Update submission data"
-      href: update-submission-data.md
-    - name: "Update product data"
-      href: update-product-data.md
-    - name: "Manage preproduction signing submissions"
-      href: manage-preprod-submissions.md
-  - name: "APIs to get shipping label data"
-    items: 
-    - name: "Get shipping label data"
-      href: get-shipping-labels.md
-    - name: "Get all shipping labels"
-      href: get-all-shipping-labels.md
-    - name: "Get a shipping label"
-      href: get-a-shipping-label.md
-  - name: "APIs to manage shipping labels"
+  - name: The Device Metadata Experience
     items:
-    - name: "Manage shipping labels"
+    - name: Creating a Device Metadata Experience
+      href: create-a-device-metadata-experience.md
+    - name: Creating a Preview Package
+      href: creating-a-preview-package.md
+  - name: Managing Device Metadata Experiences
+    href: manage-device-metadata-experiences.md
+  - name: Submitting a Device Metadata Package
+    items:
+    - name: Submission and validation
+      href: submit-a-device-metadata-package--dashboard-help-.md
+    - name: Create the LocaleInfo.xml Submission File
+      href: create-the-localeinfoxml-submission-file.md
+    - name: Submit a PC device manifest package
+      href: submit-a-pc-device-manifest-package.md
+    - name: Submit a mobile broadband device manifest package
+      href: submit-a-mobile-broadband-device-manifest-package.md
+    - name: Submit a Multiple-locale device manifest package
+      href: submit-a-multiple-locale-device-manifest-package.md
+    - name: Submit a Bulk Metadata Package
+      href: submit-a-bulk-metadata-package.md
+    - name: Errors and Solutions When Submitting Device Metadata Experiences
+      href: errors-and-solutions-when-submitting-device-metadata-experiences.md
+  - name: Device Metadata Business Rules
+    href: device-metadata-business-rules.md
+  - name: Mobile broadband experience
+    items:
+    - name: Create a mobile broadband experience
+      href: create-a-mobile-broadband-experience.md
+    - name: Developer and preview mode
+      href: developer-and-preview-mode.md
+    - name: Service icon requirements
+      href: service-icon-requirements.md
+    - name: Service number
+      href: service-number.md
+    - name: Trusted certificates
+      href: trusted-certificates.md
+- name: Hardware dashboard API
+  items:
+  - name: Getting started with the hardware dashboard API
+    href: dashboard-api.md
+  - name: Product data API
+    items:
+    - name: Get product data
+      href: get-product-data.md
+    - name: Get all products
+      href: get-all-products.md
+    - name: Get a product
+      href: get-a-product.md
+    - name: Get all submissions
+      href: get-all-submissions.md
+    - name: Get a submission
+      href: get-a-submission.md
+  - name: Product submission APIs
+    items:
+    - name: Manage product submissions
+      href: manage-product-submissions.md
+    - name: Create a new product
+      href: create-a-new-product.md
+    - name: Create a new submission for a product
+      href: create-a-new-submission-for-a-product.md
+    - name: Commit a product submission
+      href: commit-a-product-submission.md
+    - name: Update submission data
+      href: update-submission-data.md
+    - name: Update product data
+      href: update-product-data.md
+    - name: Manage preproduction signing submissions
+      href: manage-preprod-submissions.md
+  - name: APIs to get shipping label data
+    items:
+    - name: Get shipping label data
+      href: get-shipping-labels.md
+    - name: Get all shipping labels
+      href: get-all-shipping-labels.md
+    - name: Get a shipping label
+      href: get-a-shipping-label.md
+  - name: APIs to manage shipping labels
+    items:
+    - name: Manage shipping labels
       href: manage-shipping-labels.md
-    - name: "Create a new shipping label"
+    - name: Create a new shipping label
       href: create-a-new-shipping-label.md
-    - name: "Update a shipping label"
+    - name: Update a shipping label
       href: update-a-shipping-label.md
-    - name: "Cancel a shipping label"
+    - name: Cancel a shipping label
       href: cancel-a-shipping-label.md
-  - name: "Get audience data"
+  - name: Get audience data
     href: get-audience-data.md
-- name: "Windows Device Experience List"
+- name: Search the Windows Device Experience List
   href: windows-device-experience-list.md
-- name: "Windows Certified Products List"
+- name: Search the Windows Certified Products List
   href: windows-certified-products-list.md
-- name: "Technical support"
+- name: Technical support
   href: technical-support.md

@@ -4,6 +4,7 @@ description: "This section describes how to start a remote, process server and d
 keywords: ["Remote, Process Server and Dump file Sessions", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/10/2020
 ms.topic: how-to
+ms.custom: sfi-image-nochange
 ---
 
 # WinDbg - Start a remote, process server and dump file session

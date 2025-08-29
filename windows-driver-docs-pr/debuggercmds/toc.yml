@@ -1,2065 +1,2026 @@
-- name: "Debugger Commands"
+- name: Debugger Commands
   href: index.md
-- name: "Using WinDbg"
-# Auto-expanded node
-  items: 
-  - name: "WinDbg - Overview"
+- name: Using WinDbg
+  items:
+  - name: WinDbg - Overview
     href: windbg-overview.md
-  - name: "WinDbg - Release notes"
+  - name: WinDbg - Release notes
     href: windbg-release-notes.md
-  - name: "WinDbg - Command line startup options"
+  - name: WinDbg - Command line startup options
     href: windbg-command-line-preview.md
-  - name: "WinDbg – Settings and workspaces"
+  - name: WinDbg – Settings and workspaces
     href: windbg-setup-preview.md
-  - name: "WinDbg – Keyboard shortcuts"
+  - name: WinDbg – Keyboard shortcuts
     href: windbg-keyboard-shortcuts.md
-  - name: "WinDbg - Start a user-mode session"
+  - name: WinDbg - Start a user-mode session
     href: windbg-user-mode-preview.md
-  - name: "WinDbg - Start a kernel mode session"
+  - name: WinDbg - Start a kernel mode session
     href: windbg-kernel-mode-preview.md
-  - name: "WinDbg - Start a remote, process or dump file session"
+  - name: WinDbg - Start a remote, process or dump file session
     href: windbg-remote-preview.md
-  - name: "WinDbg – File menu"
+  - name: WinDbg – File menu
     href: windbg-file-preview.md
-  - name: "WinDbg – Home menu"
+  - name: WinDbg – Home menu
     href: windbg-home-preview.md
-  - name: "WinDbg – View menu"
+  - name: WinDbg – View menu
     href: windbg-view-preview.md
-  - name: "WinDbg – Breakpoints menu"
+  - name: WinDbg – Breakpoints menu
     href: windbg-breakpoints-preview.md
-  - name: "WinDbg – Time Travel menu"
+  - name: WinDbg – Time Travel menu
     href: windbg-timetravel-preview.md
-  - name: "WinDbg – Data Model menu"
+  - name: WinDbg – Data Model menu
     href: windbg-data-model-preview.md
-  - name: "WinDbg – Scripting menu"
+  - name: WinDbg – Scripting menu
     href: windbg-scripting-preview.md
-  - name: "WinDbg – Notes, Command, Memory and Source menus"
+  - name: WinDbg – Notes, Command, Memory and Source menus
     href: windbg-notes-etc-preview.md
-  - name: "WinDbg - Restricted Mode"
+  - name: WinDbg - Restricted Mode
     href: windbg-restricted-mode-preview.md
-  - name: "WinDbg Basics"
+  - name: WinDbg Basics
     href: windbg-preview-basics.md
-  - name: "Time Travel Debugging"
-# Auto-expanded node
-    items: 
-    - name: "Time Travel Debugging - Overview"
+  - name: Time Travel Debugging
+    items:
+    - name: Time Travel Debugging - Overview
       href: time-travel-debugging-overview.md
-    - name: "Time Travel Debugging - Release Notes"
+    - name: Time Travel Debugging - Release Notes
       href: time-travel-debugging-release-notes.md
-    - name: "Time Travel Debugging - Record a trace"
+    - name: Time Travel Debugging - Record a trace
       href: time-travel-debugging-record.md
-    - name: "Time Travel Debugging - Replay a trace"
+    - name: Time Travel Debugging - Replay a trace
       href: time-travel-debugging-replay.md
-    - name: "WinDbg - Timelines"
+    - name: WinDbg - Timelines
       href: windbg-timeline-preview.md
-    - name: "Time Travel Debugging - Working with trace files"
+    - name: Time Travel Debugging - Working with trace files
       href: time-travel-debugging-trace-file-information.md
-    - name: "Time Travel Debugging - Troubleshooting"
+    - name: Time Travel Debugging - Troubleshooting
       href: time-travel-debugging-troubleshooting.md
-    - name: "Time Travel Debugging - Navigation commands"
+    - name: Time Travel Debugging - Navigation commands
       href: time-travel-debugging-navigation-commands.md
-    - name: "Time Travel Debugging - Commands"
-# Auto-expanded node
-      items: 
-      - name: "Time Travel Debugging - Overview of Extension Commands"
+    - name: Time Travel Debugging - Commands
+      items:
+      - name: Time Travel Debugging - Overview of Extension Commands
         href: time-travel-debugging-extension-commands.md
-      - name: "Time Travel Debugging - !tt (time travel)"
+      - name: Time Travel Debugging - !tt (time travel)
         href: time-travel-debugging-extension-tt.md
-      - name: "Time Travel Debugging - !index (time travel)"
+      - name: Time Travel Debugging - !index (time travel)
         href: time-travel-debugging-extension-index.md
-      - name: "Time Travel Debugging - !positions (time travel)"
+      - name: Time Travel Debugging - !positions (time travel)
         href: time-travel-debugging-extension-positions.md
-    - name: "Time Travel Debugging - Walkthrough"
+    - name: Time Travel Debugging - Walkthrough
       href: time-travel-debugging-walkthrough.md
-    - name: "Time Travel Debugging - Time Travel Debugging objects"
-# Auto-expanded node
-      items: 
-      - name: "Time Travel Debugging - Introduction to Time Travel Debugging objects"
+    - name: Time Travel Debugging - Time Travel Debugging objects
+      items:
+      - name: Time Travel Debugging - Introduction to Time Travel Debugging objects
         href: time-travel-debugging-object-model.md
-      - name: "Time Travel Debugging - Calls objects"
+      - name: Time Travel Debugging - Calls objects
         href: time-travel-debugging-calls-objects.md
-      - name: "Time Travel Debugging - Heap objects"
+      - name: Time Travel Debugging - Heap objects
         href: time-travel-debugging-heap-objects.md
-      - name: "Time Travel Debugging - Memory objects"
+      - name: Time Travel Debugging - Memory objects
         href: time-travel-debugging-memory-objects.md
-      - name: "Time Travel Debugging - Event objects"
+      - name: Time Travel Debugging - Event objects
         href: time-travel-debugging-event-objects.md
-      - name: "Time Travel Debugging - Exception objects"
+      - name: Time Travel Debugging - Exception objects
         href: time-travel-debugging-exception-objects.md
-      - name: "Time Travel Debugging - Position objects"
+      - name: Time Travel Debugging - Position objects
         href: time-travel-debugging-position-objects.md
-      - name: "Time Travel Debugging - Range objects"
+      - name: Time Travel Debugging - Range objects
         href: time-travel-debugging-range-objects.md
-      - name: "Time Travel Debugging - Thread objects"
+      - name: Time Travel Debugging - Thread objects
         href: time-travel-debugging-thread-objects.md
-      - name: "Time Travel Debugging - Module objects"
+      - name: Time Travel Debugging - Module objects
         href: time-travel-debugging-module-objects.md
-      - name: "Time Travel Debugging - Collection objects"
+      - name: Time Travel Debugging - Collection objects
         href: time-travel-debugging-collection-objects.md
-    - name: "Time Travel Debugging - JavaScript Automation"
+    - name: Time Travel Debugging - JavaScript Automation
       href: time-travel-debugging-javascript-automation.md
-    - name: "Time Travel Debugging - TTD.exe command line utility"
+    - name: Time Travel Debugging - TTD.exe command line utility
       href: time-travel-debugging-ttd-exe-command-line-util.md
-- name: "Using Debugger Commands"
-# Auto-expanded node
-  items: 
-  - name: "Using Debugger Commands"
+- name: Using Debugger Commands
+  items:
+  - name: Using Debugger Commands
     href: using-debugger-commands.md
-  - name: "Evaluating Expressions"
+  - name: Evaluating Expressions
     href: evaluating-expressions.md
-  - name: "Using Shell Commands"
+  - name: Using Shell Commands
     href: using-shell-commands.md
-  - name: "Using Aliases"
+  - name: Using Aliases
     href: using-aliases.md
-  - name: "Using Script Files"
+  - name: Using Script Files
     href: using-script-files.md
-  - name: "Using Debugger Extensions"
-# Auto-expanded node
-    items: 
-    - name: "Using Debugger Extensions"
+  - name: Using Debugger Extensions
+    items:
+    - name: Using Debugger Extensions
       href: debugger-extensions.md
-    - name: "Loading Debugger Extension DLLs"
+    - name: Loading Debugger Extension DLLs
       href: loading-debugger-extension-dlls.md
-    - name: "Using Debugger Extension Commands"
+    - name: Using Debugger Extension Commands
       href: using-debugger-extension-commands.md
-    - name: "Writing New Debugger Extensions"
+    - name: Writing New Debugger Extensions
       href: writing-new-debugger-extensions.md
-  - name: "Debugger Commands"
-# Auto-expanded node
-    items: 
-    - name: "Debugger Commands"
+  - name: Debugger Commands
+    items:
+    - name: Debugger Commands
       href: debugger-commands.md
-    - name: "Syntax Rules"
-# Auto-expanded node
-      items: 
-      - name: "Syntax Rules"
+    - name: Syntax Rules
+      items:
+      - name: Syntax Rules
         href: syntax-rules.md
-      - name: "Numerical Expression Syntax"
-# Auto-expanded node
-        items: 
-        - name: "Numerical Expression Syntax"
+      - name: Numerical Expression Syntax
+        items:
+        - name: Numerical Expression Syntax
           href: numerical-expression-syntax.md
-        - name: "MASM Numbers and Operators"
+        - name: MASM Numbers and Operators
           href: masm-numbers-and-operators.md
-        - name: "C++ Numbers and Operators"
+        - name: C++ Numbers and Operators
           href: c---numbers-and-operators.md
-        - name: "MASM Expressions vs. C++ Expressions"
+        - name: MASM Expressions vs. C++ Expressions
           href: masm-expressions-vs--c---expressions.md
-        - name: "Mixed Expression Examples"
+        - name: Mixed Expression Examples
           href: expression-examples.md
-        - name: "Sign Extension"
+        - name: Sign Extension
           href: sign-extension.md
-      - name: "String Wildcard Syntax"
+      - name: String Wildcard Syntax
         href: string-wildcard-syntax.md
-      - name: "Register Syntax"
+      - name: Register Syntax
         href: register-syntax.md
-      - name: "Pseudo-Register Syntax"
+      - name: Pseudo-Register Syntax
         href: pseudo-register-syntax.md
-      - name: "Source Line Syntax"
+      - name: Source Line Syntax
         href: source-line-syntax.md
-      - name: "Address and Address Range Syntax"
+      - name: Address and Address Range Syntax
         href: address-and-address-range-syntax.md
-      - name: "Thread Syntax"
+      - name: Thread Syntax
         href: thread-syntax.md
-      - name: "Process Syntax"
+      - name: Process Syntax
         href: process-syntax.md
-      - name: "System Syntax"
+      - name: System Syntax
         href: system-syntax.md
-      - name: "Multiprocessor Syntax"
+      - name: Multiprocessor Syntax
         href: multiprocessor-syntax.md
-    - name: "Command Tokens"
-# Auto-expanded node
-      items: 
-      - name: "Command Tokens"
-        href: command-tokens.md
-      - name: ";  (Command Separator)"
-        href: ----command-separator-.md
-      - name: "{ }  (Block Delimiter)"
-        href: ------block-delimiter-.md
-      - name: "${ }  (Alias Interpreter)"
-        href: -------alias-interpreter-.md
-      - name: "$$  (Comment Specifier)"
-        href: -----comment-specifier-.md
-      - name: "*  (Comment Line Specifier)"
-        href: ----comment-line-specifier-.md
-      - name: ".block"
+    - name: Command Tokens
+      items:
+      - name: ;  (Command Separator)
+        href: '----command-separator-.md'
+      - name: '{ }  (Block Delimiter)'
+        href: '------block-delimiter-.md'
+      - name: ${ }  (Alias Interpreter)
+        href: '-------alias-interpreter-.md'
+      - name: $$  (Comment Specifier)
+        href: '-----comment-specifier-.md'
+      - name: '*  (Comment Line Specifier)'
+        href: '----comment-line-specifier-.md'
+      - name: .block
         href: -block.md
-      - name: ".break"
+      - name: .break
         href: -break3.md
-      - name: ".catch"
+      - name: .catch
         href: -catch.md
-      - name: ".continue"
+      - name: .continue
         href: -continue.md
-      - name: ".do"
+      - name: .do
         href: -do.md
-      - name: ".else"
+      - name: .else
         href: -else.md
-      - name: ".elsif"
+      - name: .elsif
         href: -elsif.md
-      - name: ".for"
+      - name: .for
         href: -for.md
-      - name: ".foreach"
+      - name: .foreach
         href: -foreach.md
-      - name: ".if"
+      - name: .if
         href: -if.md
-      - name: ".leave"
+      - name: .leave
         href: -leave.md
-      - name: ".printf"
+      - name: .printf
         href: -printf.md
-      - name: ".while"
+      - name: .while
         href: -while.md
-    - name: "Commands"
-# Auto-expanded node
-      items: 
-      - name: "Commands"
+    - name: Commands
+      items:
+      - name: Commands
         href: commands.md
-      - name: "ENTER (Repeat Last Command)"
+      - name: ENTER (Repeat Last Command)
         href: enter--repeat-last-command-.md
-      - name: "$<, $><, $$<, $$><, $$ >a< (Run Script File)"
-        href: -----------------------a---run-script-file-.md
-      - name: "? (Command Help)"
-        href: ---command-help-.md
-      - name: "? (Evaluate Expression)"
-        href: ---evaluate-expression-.md
-      - name: "?? (Evaluate C++ Expression)"
-        href: ----evaluate-c---expression-.md
-      - name: "# (Search for Disassembly Pattern)"
-        href: ---search-for-disassembly-pattern-.md
-      - name: "|| (System Status)"
-        href: ----system-status-.md
-      - name: "||s (Set Current System)"
+      - name: $<, $><, $$<, $$><, $$ >a< (Run Script File)
+        href: '-----------------------a---run-script-file-.md'
+      - name: '? (Command Help)'
+        href: '---command-help-.md'
+      - name: '? (Evaluate Expression)'
+        href: '---evaluate-expression-.md'
+      - name: ?? (Evaluate C++ Expression)
+        href: '----evaluate-c---expression-.md'
+      - name: '# (Search for Disassembly Pattern)'
+        href: '---search-for-disassembly-pattern-.md'
+      - name: '|| (System Status)'
+        href: '----system-status-.md'
+      - name: '||s (Set Current System)'
         href: --s--set-current-system-.md
-      - name: "| (Process Status)"
-        href: ---process-status-.md
-      - name: "|s (Set Current Process)"
+      - name: '| (Process Status)'
+        href: '---process-status-.md'
+      - name: '|s (Set Current Process)'
         href: -s--set-current-process-.md
-      - name: "~ (Thread Status)"
-        href: ---thread-status-.md
-      - name: "~e (Thread-Specific Command)"
+      - name: ~ (Thread Status)
+        href: '---thread-status-.md'
+      - name: ~e (Thread-Specific Command)
         href: -e--thread-specific-command-.md
-      - name: "~f (Freeze Thread)"
+      - name: ~f (Freeze Thread)
         href: -f--freeze-thread-.md
-      - name: "~u (Unfreeze Thread)"
+      - name: ~u (Unfreeze Thread)
         href: -u--unfreeze-thread-.md
-      - name: "~n (Suspend Thread)"
+      - name: ~n (Suspend Thread)
         href: -n--suspend-thread-.md
-      - name: "~m (Resume Thread)"
+      - name: ~m (Resume Thread)
         href: -m--resume-thread-.md
-      - name: "~s (Set Current Thread)"
+      - name: ~s (Set Current Thread)
         href: -s--set-current-thread-.md
-      - name: "~s (Change Current Processor)"
+      - name: ~s (Change Current Processor)
         href: -s--change-current-processor-.md
-      - name: "a (Assemble)"
+      - name: a (Assemble)
         href: a--assemble-.md
-      - name: "ad (Delete Alias)"
+      - name: ad (Delete Alias)
         href: ad--delete-alias-.md
-      - name: "ah (Assertion Handling)"
+      - name: ah (Assertion Handling)
         href: ah--assertion-handling-.md
-      - name: "al (List Aliases)"
+      - name: al (List Aliases)
         href: al--list-aliases-.md
-      - name: "as, aS (Set Alias)"
+      - name: as, aS (Set Alias)
         href: as--as--set-alias-.md
-      - name: "ba (Break on Access)"
+      - name: ba (Break on Access)
         href: ba--break-on-access-.md
-      - name: "bc (Breakpoint Clear)"
+      - name: bc (Breakpoint Clear)
         href: bc--breakpoint-clear-.md
-      - name: "bd (Breakpoint Disable)"
+      - name: bd (Breakpoint Disable)
         href: bd--breakpoint-disable-.md
-      - name: "be (Breakpoint Enable)"
+      - name: be (Breakpoint Enable)
         href: be--breakpoint-enable-.md
-      - name: "bl (Breakpoint List)"
+      - name: bl (Breakpoint List)
         href: bl--breakpoint-list-.md
-      - name: "bp, bu, bm (Set Breakpoint)"
+      - name: bp, bu, bm (Set Breakpoint)
         href: bp--bu--bm--set-breakpoint-.md
-      - name: "br (Breakpoint Renumber)"
+      - name: br (Breakpoint Renumber)
         href: br--breakpoint-renumber-.md
-      - name: "bs (Update Breakpoint Command)"
+      - name: bs (Update Breakpoint Command)
         href: bs--update-breakpoint-command-.md
-      - name: "bsc (Update Conditional Breakpoint)"
+      - name: bsc (Update Conditional Breakpoint)
         href: bsc--update-conditional-breakpoint-.md
-      - name: "c (Compare Memory)"
+      - name: c (Compare Memory)
         href: c--compare-memory-.md
-      - name: "d, da, db, dc, dd, dD, df, dp, dq, du, dw, dW, dyb, dyd (Display Memory)"
+      - name: d, da, db, dc, dd, dD, df, dp, dq, du, dw, dW, dyb, dyd (Display Memory)
         href: d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md
-      - name: "dda, ddp, ddu, dpa, dpp, dpu, dqa, dqp, dqu (Display Referenced Memory)"
+      - name: dda, ddp, ddu, dpa, dpp, dpu, dqa, dqp, dqu (Display Referenced Memory)
         href: dda--ddp--ddu--dpa--dpp--dpu--dqa--dqp--dqu--display-referenced-memory.md
-      - name: "dds, dps, dqs (Display Words and Symbols)"
+      - name: dds, dps, dqs (Display Words and Symbols)
         href: dds--dps--dqs--display-words-and-symbols-.md
-      - name: "dg (Display Selector)"
+      - name: dg (Display Selector)
         href: dg--display-selector-.md
-      - name: "dl (Display Linked List)"
+      - name: dl (Display Linked List)
         href: dl--display-linked-list-.md
-      - name: "ds, dS (Display String)"
+      - name: ds, dS (Display String)
         href: ds--ds--display-string-.md
-      - name: "dt (Display Type)"
+      - name: dt (Display Type)
         href: dt--display-type-.md
-      - name: "dtx (Display Type - Extended Debugger Object Model Information)"
+      - name: dtx (Display Type - Extended Debugger Object Model Information)
         href: dtx--display-type---extended-debugger-object-model-information-.md
-      - name: "dv (Display Local Variables)"
+      - name: dv (Display Local Variables)
         href: dv--display-local-variables-.md
-      - name: "dx (Display Debugger Object Model Expression)"
+      - name: dx (Display Debugger Object Model Expression)
         href: dx--display-visualizer-variables-.md
-      - name: "e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza, ezu (Enter Values)"
+      - name: e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza, ezu (Enter Values)
         href: e--ea--eb--ed--ed--ef--ep--eq--eu--ew--eza--ezu--enter-values-.md
-      - name: "f, fp (Fill Memory)"
+      - name: f, fp (Fill Memory)
         href: f--fp--fill-memory-.md
-      - name: "g (Go)"
+      - name: g (Go)
         href: g--go-.md
-      - name: "gc (Go from Conditional Breakpoint)"
+      - name: gc (Go from Conditional Breakpoint)
         href: gc--go-from-conditional-breakpoint-.md
-      - name: "gh (Go with Exception Handled)"
+      - name: gh (Go with Exception Handled)
         href: gh--go-with-exception-handled-.md
-      - name: "gn, gN (Go with Exception Not Handled)"
+      - name: gn, gN (Go with Exception Not Handled)
         href: gn--gn--go-with-exception-not-handled-.md
-      - name: "gu (Go Up)"
+      - name: gu (Go Up)
         href: gu--go-up-.md
-      - name: "ib, iw, id (Input from Port)"
+      - name: ib, iw, id (Input from Port)
         href: ib--iw--id--input-from-port-.md
-      - name: "j (Execute If - Else)"
+      - name: j (Execute If - Else)
         href: j--execute-if---else-.md
-      - name: "k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)"
+      - name: k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)
         href: k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md
-      - name: "l+, l- (Set Source Options)"
+      - name: l+, l- (Set Source Options)
         href: l---l---set-source-options-.md
-      - name: "ld (Load Symbols)"
+      - name: ld (Load Symbols)
         href: ld--load-symbols-.md
-      - name: "lm (List Loaded Modules)"
+      - name: lm (List Loaded Modules)
         href: lm--list-loaded-modules-.md
-      - name: "ln (List Nearest Symbols)"
+      - name: ln (List Nearest Symbols)
         href: ln--list-nearest-symbols-.md
-      - name: "ls, lsa (List Source Lines)"
+      - name: ls, lsa (List Source Lines)
         href: ls--lsa--list-source-lines-.md
-      - name: "lsc (List Current Source)"
+      - name: lsc (List Current Source)
         href: lsc--list-current-source-.md
-      - name: "lse (Launch Source Editor)"
+      - name: lse (Launch Source Editor)
         href: lse--launch-source-editor-.md
-      - name: "lsf, lsf- (Load or Unload Source File)"
+      - name: lsf, lsf- (Load or Unload Source File)
         href: lsf--lsf---load-or-unload-source-file-.md
-      - name: "lsp (Set Number of Source Lines)"
+      - name: lsp (Set Number of Source Lines)
         href: lsp--set-number-of-source-lines-.md
-      - name: "m (Move Memory)"
+      - name: m (Move Memory)
         href: m--move-memory-.md
-      - name: "n (Set Number Base)"
+      - name: n (Set Number Base)
         href: n--set-number-base-.md
-      - name: "ob, ow, od (Output to Port)"
+      - name: ob, ow, od (Output to Port)
         href: ob--ow--od--output-to-port-.md
-      - name: "p (Step)"
+      - name: p (Step)
         href: p--step-.md
-      - name: "pa (Step to Address)"
+      - name: pa (Step to Address)
         href: pa--step-to-address-.md
-      - name: "pc (Step to Next Call)"
+      - name: pc (Step to Next Call)
         href: pc--step-to-next-call-.md
-      - name: "pct (Step to Next Call or Return)"
+      - name: pct (Step to Next Call or Return)
         href: pct--step-to-next-call-or-return-.md
-      - name: "ph (Step to Next Branching Instruction)"
+      - name: ph (Step to Next Branching Instruction)
         href: ph--step-to-next-branching-instruction-.md
-      - name: "pt (Step to Next Return)"
+      - name: pt (Step to Next Return)
         href: pt--step-to-next-return-.md
-      - name: "q, qq (Quit)"
+      - name: q, qq (Quit)
         href: q--qq--quit-.md
-      - name: "qd (Quit and Detach)"
+      - name: qd (Quit and Detach)
         href: qd--quit-and-detach-.md
-      - name: "r (Registers)"
+      - name: r (Registers)
         href: r--registers-.md
-      - name: "rdmsr (Read MSR)"
+      - name: rdmsr (Read MSR)
         href: rdmsr--read-msr-.md
-      - name: "rm (Register Mask)"
+      - name: rm (Register Mask)
         href: rm--register-mask-.md
-      - name: "s (Search Memory)"
+      - name: s (Search Memory)
         href: s--search-memory-.md
-      - name: "so (Set Kernel Debugging Options)"
+      - name: so (Set Kernel Debugging Options)
         href: so--set-kernel-debugging-options-.md
-      - name: "sq (Set Quiet Mode)"
+      - name: sq (Set Quiet Mode)
         href: sq--set-quiet-mode-.md
-      - name: "ss (Set Symbol Suffix)"
+      - name: ss (Set Symbol Suffix)
         href: ss--set-symbol-suffix-.md
-      - name: "sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions)"
+      - name: sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions)
         href: sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md
-      - name: "t (Trace)"
+      - name: t (Trace)
         href: t--trace-.md
-      - name: "ta (Trace to Address)"
+      - name: ta (Trace to Address)
         href: ta--trace-to-address-.md
-      - name: "tb (Trace to Next Branch)"
+      - name: tb (Trace to Next Branch)
         href: tb--trace-to-next-branch-.md
-      - name: "tc (Trace to Next Call)"
+      - name: tc (Trace to Next Call)
         href: tc--trace-to-next-call-.md
-      - name: "tct (Trace to Next Call or Return)"
+      - name: tct (Trace to Next Call or Return)
         href: tct--trace-to-next-call-or-return-.md
-      - name: "th (Trace to Next Branching Instruction)"
+      - name: th (Trace to Next Branching Instruction)
         href: th--trace-to-next-branching-instruction-.md
-      - name: "tt (Trace to Next Return)"
+      - name: tt (Trace to Next Return)
         href: tt--trace-to-next-return-.md
-      - name: "u (Unassemble)"
+      - name: u (Unassemble)
         href: u--unassemble-.md
-      - name: "uf (Unassemble Function)"
+      - name: uf (Unassemble Function)
         href: uf--unassemble-function-.md
-      - name: "up (Unassemble from Physical Memory)"
+      - name: up (Unassemble from Physical Memory)
         href: up--unassemble-from-physical-memory-.md
-      - name: "ur (Unassemble Real Mode BIOS)"
+      - name: ur (Unassemble Real Mode BIOS)
         href: ur--unassemble-real-mode-bios-.md
-      - name: "ux (Unassemble x86 BIOS)"
+      - name: ux (Unassemble x86 BIOS)
         href: ux--unassemble-x86-bios-.md
-      - name: "vercommand (Show Debugger Command Line)"
+      - name: vercommand (Show Debugger Command Line)
         href: vercommand--show-debugger-command-line-.md
-      - name: "version (Show Debugger Version)"
+      - name: version (Show Debugger Version)
         href: version--show-debugger-version-.md
-      - name: "vertarget (Show Target Computer Version)"
+      - name: vertarget (Show Target Computer Version)
         href: vertarget--show-target-computer-version-.md
-      - name: "wrmsr (Write MSR)"
+      - name: wrmsr (Write MSR)
         href: wrmsr--write-msr-.md
-      - name: "wt (Trace and Watch Data)"
+      - name: wt (Trace and Watch Data)
         href: wt--trace-and-watch-data-.md
-      - name: "x (Examine Symbols)"
+      - name: x (Examine Symbols)
         href: x--examine-symbols-.md
-      - name: "z (Execute While)"
+      - name: z (Execute While)
         href: z--execute-while-.md
-    - name: "Meta-Commands"
-# Auto-expanded node
-      items: 
-      - name: "Meta-Commands"
+    - name: Meta-Commands
+      items:
+      - name: Meta-Commands
         href: meta-commands.md
-      - name: ".abandon (Abandon Process)"
+      - name: .abandon (Abandon Process)
         href: -abandon--abandon-process-.md
-      - name: ".allow_exec_cmds (Allow Execution Commands)"
+      - name: .allow_exec_cmds (Allow Execution Commands)
         href: -allow-exec-cmds--allow-execution-commands-.md
-      - name: ".allow_image_mapping (Allow Image Mapping)"
+      - name: .allow_image_mapping (Allow Image Mapping)
         href: -allow-image-mapping--allow-image-mapping-.md
-      - name: ".apply_dbp (Apply Data Breakpoint to Context)"
+      - name: .apply_dbp (Apply Data Breakpoint to Context)
         href: -apply-dbp--apply-data-breakpoint-to-context-.md
-      - name: ".asm (Change Disassembly Options)"
+      - name: .asm (Change Disassembly Options)
         href: -asm--change-disassembly-options-.md
-      - name: ".attach (Attach to Process)"
+      - name: .attach (Attach to Process)
         href: -attach--attach-to-process-.md
-      - name: ".beep (Speaker Beep)"
+      - name: .beep (Speaker Beep)
         href: -beep--speaker-beep-.md
-      - name: ".bpcmds (Display Breakpoint Commands)"
+      - name: .bpcmds (Display Breakpoint Commands)
         href: -bpcmds--display-breakpoint-commands-.md
-      - name: ".bpsync (Synchronize Threads at Breakpoint)"
+      - name: .bpsync (Synchronize Threads at Breakpoint)
         href: -bpsync--synchronize-threads-at-breakpoint-.md
-      - name: ".breakin (Break to the Kernel Debugger)"
+      - name: .breakin (Break to the Kernel Debugger)
         href: -breakin--break-to-the-kernel-debugger-.md
-      - name: ".browse (Display Command in Browser)"
+      - name: .browse (Display Command in Browser)
         href: -browse--display-command-in-browser-.md
-      - name: ".bugcheck (Display Bug Check Data)"
+      - name: .bugcheck (Display Bug Check Data)
         href: -bugcheck--display-bug-check-data-.md
-      - name: ".cache (Set Cache Size)"
+      - name: .cache (Set Cache Size)
         href: -cache--set-cache-size-.md
-      - name: ".call (Call Function)"
+      - name: .call (Call Function)
         href: -call--call-function-.md
-      - name: ".chain (List Debugger Extensions)"
+      - name: .chain (List Debugger Extensions)
         href: -chain--list-debugger-extensions-.md
-      - name: ".childdbg (Debug Child Processes)"
+      - name: .childdbg (Debug Child Processes)
         href: -childdbg--debug-child-processes-.md
-      - name: ".clients (List Debugging Clients)"
+      - name: .clients (List Debugging Clients)
         href: -clients--list-debugging-clients-.md
-      - name: ".closehandle (Close Handle)"
+      - name: .closehandle (Close Handle)
         href: -closehandle--close-handle-.md
-      - name: ".cls (Clear Screen)"
+      - name: .cls (Clear Screen)
         href: -cls--clear-screen-.md
-      - name: ".context (Set User-Mode Address Context)"
+      - name: .context (Set User-Mode Address Context)
         href: -context--set-user-mode-address-context-.md
-      - name: ".copysym (Copy Symbol Files)"
+      - name: .copysym (Copy Symbol Files)
         href: -copysym--copy-symbol-files-.md
-      - name: ".cordll (Control CLR Debugging)"
+      - name: .cordll (Control CLR Debugging)
         href: -cordll--control-clr-debugging-.md
-      - name: ".crash (Force System Crash)"
+      - name: .crash (Force System Crash)
         href: -crash--force-system-crash-.md
-      - name: ".create (Create Process)"
+      - name: .create (Create Process)
         href: -create--create-process-.md
-      - name: ".createdir (Set Created Process Directory)"
+      - name: .createdir (Set Created Process Directory)
         href: -createdir--set-created-process-directory-.md
-      - name: ".cxr (Display Context Record)"
+      - name: .cxr (Display Context Record)
         href: -cxr--display-context-record-.md
-      - name: ".dbgdbg (Debug Current Debugger)"
+      - name: .dbgdbg (Debug Current Debugger)
         href: -dbgdbg--debug-current-debugger-.md
-      - name: ".detach (Detach from Process)"
+      - name: .detach (Detach from Process)
         href: -detach--detach-from-process-.md
-      - name: ".dml_flow (Unassemble with Links)"
+      - name: .dml_flow (Unassemble with Links)
         href: -dml-flow.md
-      - name: ".dml_start (Display DML Starting Point)"
+      - name: .dml_start (Display DML Starting Point)
         href: -dml-start.md
-      - name: ".dump (Create Dump File)"
+      - name: .dump (Create Dump File)
         href: -dump--create-dump-file-.md
-      - name: ".dumpcab (Create Dump File CAB)"
+      - name: .dumpcab (Create Dump File CAB)
         href: -dumpcab--create-dump-file-cab-.md
-      - name: ".dvalloc (Allocate Memory)"
+      - name: .dvalloc (Allocate Memory)
         href: -dvalloc--allocate-memory-.md
-      - name: ".dvfree (Free Memory)"
+      - name: .dvfree (Free Memory)
         href: -dvfree--free-memory-.md
-      - name: ".echo (Echo Comment)"
+      - name: .echo (Echo Comment)
         href: -echo--echo-comment-.md
-      - name: ".echocpunum (Show CPU Number)"
+      - name: .echocpunum (Show CPU Number)
         href: -echocpunum--show-cpu-number-.md
-      - name: ".echotime (Show Current Time)"
+      - name: .echotime (Show Current Time)
         href: -echotime--show-current-time-.md
-      - name: ".echotimestamps (Show Time Stamps)"
+      - name: .echotimestamps (Show Time Stamps)
         href: -echotimestamps--show-time-stamps-.md
-      - name: ".ecxr (Display Exception Context Record)"
+      - name: .ecxr (Display Exception Context Record)
         href: -ecxr--display-exception-context-record-.md
-      - name: ".effmach (Effective Machine)"
+      - name: .effmach (Effective Machine)
         href: -effmach--effective-machine-.md
-      - name: ".enable_long_status (Enable Long Integer Display)"
+      - name: .enable_long_status (Enable Long Integer Display)
         href: -enable-long-status--enable-long-integer-display-.md
-      - name: ".enable_unicode (Enable Unicode Display)"
+      - name: .enable_unicode (Enable Unicode Display)
         href: -enable-unicode--enable-unicode-display-.md
-      - name: ".endpsrv (End Process Server)"
+      - name: .endpsrv (End Process Server)
         href: -endpsrv--end-process-server-.md
-      - name: ".endsrv (End Debugging Server)"
+      - name: .endsrv (End Debugging Server)
         href: -endsrv--end-debugging-server-.md
-      - name: ".enumtag (Enumerate Secondary Callback Data)"
+      - name: .enumtag (Enumerate Secondary Callback Data)
         href: -enumtag--enumerate-secondary-callback-data-.md
-      - name: ".event_code (Display Event Code)"
+      - name: .event_code (Display Event Code)
         href: -event-code--display-event-code-.md
-      - name: ".eventlog (Display Recent Events)"
+      - name: .eventlog (Display Recent Events)
         href: -eventlog--display-recent-events-.md
-      - name: ".exdicmd (EXDI Command)"
+      - name: .exdicmd (EXDI Command)
         href: -exdicmd--exdi-command-.md
-      - name: ".exepath (Set Executable Path)"
+      - name: .exepath (Set Executable Path)
         href: -exepath--set-executable-path-.md
-      - name: ".expr (Choose Expression Evaluator)"
+      - name: .expr (Choose Expression Evaluator)
         href: -expr--choose-expression-evaluator-.md
-      - name: ".exptr (Display Exception Pointers)"
+      - name: .exptr (Display Exception Pointers)
         href: -exptr--display-exception-pointers-.md
-      - name: ".exr (Display Exception Record)"
+      - name: .exr (Display Exception Record)
         href: -exr--display-exception-record-.md
-      - name: ".excr (Display Exception Context Record)"
+      - name: .excr (Display Exception Context Record)
         href: -excr--display-exception-context-record-.md
-      - name: ".extmatch (Display All Matching Extensions)"
+      - name: .extmatch (Display All Matching Extensions)
         href: -extmatch--display-all-matching-extensions-.md
-      - name: ".extpath (Set Extension Path)"
+      - name: .extpath (Set Extension Path)
         href: -extpath--set-extension-path-.md
-      - name: ".f+, .f- (Shift Local Context)"
+      - name: .f+, .f- (Shift Local Context)
         href: -f----f---shift-local-context-.md
-      - name: ".fiber (Set Fiber Context)"
+      - name: .fiber (Set Fiber Context)
         href: -fiber--set-fiber-context-.md
-      - name: ".fiximports (Fix Target Module Imports)"
+      - name: .fiximports (Fix Target Module Imports)
         href: -fiximports--fix-target-module-imports-.md
-      - name: ".flash_on_break (Flash on Break)"
+      - name: .flash_on_break (Flash on Break)
         href: -flash-on-break--flash-on-break-.md
-      - name: ".fnent (Display Function Data)"
+      - name: .fnent (Display Function Data)
         href: -fnent--display-function-data-.md
-      - name: ".fnret (Display Function Return Value)"
+      - name: .fnret (Display Function Return Value)
         href: -fnret--display-function-return-value-.md
-      - name: ".force_radix_output (Use Radix for Integers)"
+      - name: .force_radix_output (Use Radix for Integers)
         href: -force-radix-output--use-radix-for-integers-.md
-      - name: ".force_tb (Forcibly Allow Branch Tracing)"
+      - name: .force_tb (Forcibly Allow Branch Tracing)
         href: -force-tb--forcibly-allow-branch-tracing-.md
-      - name: ".formats (Show Number Formats)"
+      - name: .formats (Show Number Formats)
         href: -formats--show-number-formats-.md
-      - name: ".fpo (Control FPO Overrides)"
+      - name: .fpo (Control FPO Overrides)
         href: -fpo--control-fpo-overrides-.md
-      - name: ".frame (Set Local Context)"
+      - name: .frame (Set Local Context)
         href: -frame--set-local-context-.md
-      - name: ".help (Meta-Command Help)"
+      - name: .help (Meta-Command Help)
         href: -help--meta-command-help-.md
-      - name: ".hh (Open HTML Help File)"
+      - name: .hh (Open HTML Help File)
         href: -hh--open-html-help-file-.md
-      - name: ".hideinjectedcode (Hide Injected Code)"
+      - name: .hideinjectedcode (Hide Injected Code)
         href: -hideinjectedcode.md
-      - name: ".holdmem (Hold and Compare Memory)"
+      - name: .holdmem (Hold and Compare Memory)
         href: -holdmem--hold-and-compare-memory-.md
-      - name: ".idle_cmd (Set Idle Command)"
+      - name: .idle_cmd (Set Idle Command)
         href: -idle-cmd--set-idle-command-.md
-      - name: ".ignore_missing_pages (Suppress Missing Page Errors)"
+      - name: .ignore_missing_pages (Suppress Missing Page Errors)
         href: -ignore-missing-pages--suppress-missing-page-errors-.md
-      - name: ".inline (Toggle Inline Function Debugging)"
+      - name: .inline (Toggle Inline Function Debugging)
         href: -inline--toggle-inline-debugging-.md
-      - name: ".imgscan (Find Image Headers)"
+      - name: .imgscan (Find Image Headers)
         href: -imgscan--find-image-headers-.md
-      - name: ".jdinfo (Use JIT_DEBUG_INFO)"
+      - name: .jdinfo (Use JIT_DEBUG_INFO)
         href: -jdinfo--use-jit-debug-info-.md
-      - name: ".kdfiles (Set Driver Replacement Map)"
+      - name: .kdfiles (Set Driver Replacement Map)
         href: -kdfiles--set-driver-replacement-map-.md
-      - name: ".kdtargetmac (Display Target MAC Address)"
+      - name: .kdtargetmac (Display Target MAC Address)
         href: -kdtargetmac--display-target-mac-address-.md
-      - name: ".kframes (Set Stack Length)"
+      - name: .kframes (Set Stack Length)
         href: -kframes--set-stack-length-.md
-      - name: ".kill (Kill Process)"
+      - name: .kill (Kill Process)
         href: -kill--kill-process-.md
-      - name: ".lastevent (Display Last Event)"
+      - name: .lastevent (Display Last Event)
         href: -lastevent--display-last-event-.md
-      - name: ".lines (Toggle Source Line Support)"
+      - name: .lines (Toggle Source Line Support)
         href: -lines--toggle-source-line-support-.md
-      - name: ".load, .loadby (Load Extension DLL)"
+      - name: .load, .loadby (Load Extension DLL)
         href: -load---loadby--load-extension-dll-.md
-      - name: ".locale (Set Locale)"
+      - name: .locale (Set Locale)
         href: -locale--set-locale-.md
-      - name: ".logappend (Append Log File)"
+      - name: .logappend (Append Log File)
         href: -logappend--append-log-file-.md
-      - name: ".logclose (Close Log File)"
+      - name: .logclose (Close Log File)
         href: -logclose--close-log-file-.md
-      - name: ".logfile (Display Log File Status)"
+      - name: .logfile (Display Log File Status)
         href: -logfile--display-log-file-status-.md
-      - name: ".logopen (Open Log File)"
+      - name: .logopen (Open Log File)
         href: -logopen--open-log-file-.md
-      - name: ".netuse (Control Network Connections)"
+      - name: .netuse (Control Network Connections)
         href: -netuse--control-network-connections-.md
-      - name: ".noshell (Prohibit Shell Commands)"
+      - name: .noshell (Prohibit Shell Commands)
         href: -noshell--prohibit-shell-commands-.md
-      - name: ".noversion (Disable Version Checking)"
+      - name: .noversion (Disable Version Checking)
         href: -noversion--disable-version-checking-.md
-      - name: ".ocommand (Expect Commands from Target)"
+      - name: .ocommand (Expect Commands from Target)
         href: -ocommand--expect-commands-from-target-.md
-      - name: ".nvload (NatVis Load)"
+      - name: .nvload (NatVis Load)
         href: -nvload--natvis-load-.md
-      - name: ".nvlist (NatVis List)"
+      - name: .nvlist (NatVis List)
         href: -nvlist--natvis-list-.md
-      - name: ".nvunload (NatVis Unload)"
+      - name: .nvunload (NatVis Unload)
         href: -nvunload--natvis-unload-.md
-      - name: ".nvunloadall (NatVis Unload All)"
+      - name: .nvunloadall (NatVis Unload All)
         href: -nvunloadall--natvis-unload-all-.md
-      - name: ".ofilter (Filter Target Output)"
+      - name: .ofilter (Filter Target Output)
         href: -ofilter--filter-target-output-.md
-      - name: ".open (Open Source File)"
+      - name: .open (Open Source File)
         href: -open--open-source-file-.md
-      - name: ".opendump (Open Dump File)"
+      - name: .opendump (Open Dump File)
         href: -opendump--open-dump-file-.md
-      - name: ".outmask (Control Output Mask)"
+      - name: .outmask (Control Output Mask)
         href: -outmask--control-output-mask-.md
-      - name: ".pagein (Page In Memory)"
+      - name: .pagein (Page In Memory)
         href: -pagein--page-in-memory-.md
-      - name: ".pcmd (Set Prompt Command)"
+      - name: .pcmd (Set Prompt Command)
         href: -pcmd--set-prompt-command-.md
-      - name: ".pop (Restore Debugger State)"
+      - name: .pop (Restore Debugger State)
         href: -pop--restore-debugger-state-.md
-      - name: ".prefer_dml (Prefer Debugger Markup Language)"
+      - name: .prefer_dml (Prefer Debugger Markup Language)
         href: -prefer-dml.md
-      - name: ".process (Set Process Context)"
+      - name: .process (Set Process Context)
         href: -process--set-process-context-.md
-      - name: ".prompt_allow (Control Prompt Display)"
+      - name: .prompt_allow (Control Prompt Display)
         href: -prompt-allow--control-prompt-display-.md
-      - name: ".push (Save Debugger State)"
+      - name: .push (Save Debugger State)
         href: -push--save-debugger-state-.md
-      - name: ".quit_lock (Prevent Accidental Quit)"
+      - name: .quit_lock (Prevent Accidental Quit)
         href: -quit-lock--prevent-accidental-quit-.md
-      - name: ".readmem (Read Memory from File)"
+      - name: .readmem (Read Memory from File)
         href: -readmem--read-memory-from-file-.md
-      - name: ".reboot (Reboot Target Computer)"
+      - name: .reboot (Reboot Target Computer)
         href: -reboot--reboot-target-computer-.md
-      - name: ".record_branches (Enable Branch Recording)"
+      - name: .record_branches (Enable Branch Recording)
         href: -record-branches--enable-branch-recording-.md
-      - name: ".reload (Reload Module)"
+      - name: .reload (Reload Module)
         href: -reload--reload-module-.md
-      - name: ".remote (Create Remote.exe Server)"
+      - name: .remote (Create Remote.exe Server)
         href: -remote--create-remote-exe-server-.md
-      - name: ".remote_exit (Exit Debugging Client)"
+      - name: .remote_exit (Exit Debugging Client)
         href: -remote-exit--exit-debugging-client-.md
-      - name: ".restart (Restart Target Application)"
+      - name: .restart (Restart Target Application)
         href: -restart--restart-target-application-.md
-      - name: ".restart (Restart Kernel Connection)"
+      - name: .restart (Restart Kernel Connection)
         href: -restart--restart-kernel-connection-.md
-      - name: ".rrestart (Register for Restart)"
+      - name: .rrestart (Register for Restart)
         href: -rrestart--register-for-restart-.md
-      - name: ".scroll_prefs (Control Source Scrolling Preferences)"
+      - name: .scroll_prefs (Control Source Scrolling Preferences)
         href: -scroll-prefs--control-source-scrolling-preferences-.md
-      - name: ".scriptdebug (Debug JavaScript)"
+      - name: .scriptdebug (Debug JavaScript)
         href: -scriptdebug--debug-javascript-.md
-      - name: ".scriptlist (List Loaded Scripts)"
+      - name: .scriptlist (List Loaded Scripts)
         href: -scriptlist--list-loaded-scripts-.md
-      - name: ".scriptload (Load Script)"
+      - name: .scriptload (Load Script)
         href: -scriptload--load-script-.md
-      - name: ".scriptproviders (List Script Providers)"
+      - name: .scriptproviders (List Script Providers)
         href: -scriptproviders--list-script-providers-.md
-      - name: ".scriptrun (Run Script)"
+      - name: .scriptrun (Run Script)
         href: -scriptrun--run-script-.md
-      - name: ".scriptunload (Unload Script)"
+      - name: .scriptunload (Unload Script)
         href: -scriptunload--unload-script-.md
-      - name: ".secure (Activate Secure Mode)"
+      - name: .secure (Activate Secure Mode)
         href: -secure--activate-secure-mode-.md
-      - name: ".send_file (Send File)"
+      - name: .send_file (Send File)
         href: -send-file--send-file-.md
-      - name: ".server (Create Debugging Server)"
+      - name: .server (Create Debugging Server)
         href: -server--create-debugging-server-.md
-      - name: ".servers (List Debugging Servers)"
+      - name: .servers (List Debugging Servers)
         href: -servers--list-debugging-servers-.md
-      - name: ".setdll (Set Default Extension DLL)"
+      - name: .setdll (Set Default Extension DLL)
         href: -setdll--set-default-extension-dll-.md
-      - name: ".shell (Command Shell)"
+      - name: .shell (Command Shell)
         href: -shell--command-shell-.md
-      - name: ".settings (Set Debug Settings)"
+      - name: .settings (Set Debug Settings)
         href: -settings--set-debug-settings-.md
-      - name: ".show_read_failures"
+      - name: .show_read_failures
         href: -show-read-failures.md
-      - name: ".show_sym_failures"
+      - name: .show_sym_failures
         href: -show-sym-failures.md
-      - name: ".sleep (Pause Debugger)"
+      - name: .sleep (Pause Debugger)
         href: -sleep--pause-debugger-.md
-      - name: ".sound_notify (Use Notification Sound)"
+      - name: .sound_notify (Use Notification Sound)
         href: -sound-notify--use-notification-sound-.md
-      - name: ".srcfix, .lsrcfix (Use Source Server)"
+      - name: .srcfix, .lsrcfix (Use Source Server)
         href: -srcfix---lsrcfix--use-source-server-.md
-      - name: ".srcnoisy (Noisy Source Loading)"
+      - name: .srcnoisy (Noisy Source Loading)
         href: -srcnoisy--noisy-source-loading-.md
-      - name: ".srcpath, .lsrcpath (Set Source Path)"
+      - name: .srcpath, .lsrcpath (Set Source Path)
         href: -srcpath---lsrcpath--set-source-path-.md
-      - name: ".step_filter (Set Step Filter)"
+      - name: .step_filter (Set Step Filter)
         href: -step-filter--set-step-filter-.md
-      - name: ".suspend_ui (Suspend WinDbg Interface)"
+      - name: .suspend_ui (Suspend WinDbg Interface)
         href: -suspend-ui--suspend-windbg-interface-.md
-      - name: ".symfix (Set Symbol Store Path)"
+      - name: .symfix (Set Symbol Store Path)
         href: -symfix--set-symbol-store-path-.md
-      - name: ".symopt (Set Symbol Options)"
+      - name: .symopt (Set Symbol Options)
         href: -symopt--set-symbol-options-.md
-      - name: ".sympath (Set Symbol Path)"
+      - name: .sympath (Set Symbol Path)
         href: -sympath--set-symbol-path-.md
-      - name: ".thread (Set Register Context)"
+      - name: .thread (Set Register Context)
         href: -thread--set-register-context-.md
-      - name: ".time (Display System Time)"
+      - name: .time (Display System Time)
         href: -time--display-system-time-.md
-      - name: ".tlist (List Process IDs)"
+      - name: .tlist (List Process IDs)
         href: -tlist--list-process-ids-.md
-      - name: ".trap (Display Trap Frame)"
+      - name: .trap (Display Trap Frame)
         href: -trap--display-trap-frame-.md
-      - name: ".tss (Display Task State Segment)"
+      - name: .tss (Display Task State Segment)
         href: -tss--display-task-state-segment-.md
-      - name: ".ttime (Display Thread Times)"
+      - name: .ttime (Display Thread Times)
         href: -ttime--display-thread-times-.md
-      - name: ".typeopt (Set Type Options)"
+      - name: .typeopt (Set Type Options)
         href: -typeopt--set-type-options-.md
-      - name: ".unload (Unload Extension DLL)"
+      - name: .unload (Unload Extension DLL)
         href: -unload--unload-extension-dll-.md
-      - name: ".unloadall (Unload All Extension DLLs)"
+      - name: .unloadall (Unload All Extension DLLs)
         href: -unloadall--unload-all-extension-dlls-.md
-      - name: ".urestart (Unregister for Restart)"
+      - name: .urestart (Unregister for Restart)
         href: -urestart--unregister-for-restart-.md
-      - name: ".wake (Wake Debugger)"
+      - name: .wake (Wake Debugger)
         href: -wake--wake-debugger-.md
-      - name: ".write_cmd_hist (Write Command History)"
+      - name: .write_cmd_hist (Write Command History)
         href: -write-cmd-hist--write-command-history-.md
-      - name: ".writemem (Write Memory to File)"
+      - name: .writemem (Write Memory to File)
         href: -writemem--write-memory-to-file-.md
-      - name: ".wtitle (Set Window Title)"
+      - name: .wtitle (Set Window Title)
         href: -wtitle--set-window-title-.md
-    - name: "General Extension Commands"
-# Auto-expanded node
-      items: 
-      - name: "General Extension Commands"
+    - name: General Extension Commands
+      items:
+      - name: General Extension Commands
         href: general-extensions.md
-      - name: "!acl"
+      - name: '!acl'
         href: -acl.md
-      - name: "!address"
+      - name: '!address'
         href: -address.md
-      - name: "!analyze"
+      - name: '!analyze'
         href: -analyze.md
-      - name: "!asd"
+      - name: '!asd'
         href: -asd.md
-      - name: "!atom"
+      - name: '!atom'
         href: -atom.md
-      - name: "!bitcount"
+      - name: '!bitcount'
         href: -bitcount.md
-      - name: "!blackboxbsd"
+      - name: '!blackboxbsd'
         href: -blackboxbsd.md
-      - name: "!blackboxscm"
+      - name: '!blackboxscm'
         href: -blackboxscm.md
-      - name: "!chksym"
+      - name: '!chksym'
         href: -chksym.md
-      - name: "!chkimg"
+      - name: '!chkimg'
         href: -chkimg.md
-      - name: "!cppexr"
+      - name: '!cppexr'
         href: -cppexr.md
-      - name: "!cpuid"
+      - name: '!cpuid'
         href: -cpuid.md
-      - name: "!cs"
+      - name: '!cs'
         href: -cs.md
-      - name: "!cxr"
+      - name: '!cxr'
         href: -cxr.md
-      - name: "!dh"
+      - name: '!dh'
         href: -dh.md
-      - name: "!dlls"
+      - name: '!dlls'
         href: -dlls.md
-      - name: "!dml_proc"
+      - name: '!dml_proc'
         href: -dml-proc.md
-      - name: "!dumpfa"
+      - name: '!dumpfa'
         href: -dumpfa.md
-      - name: "!envvar"
+      - name: '!envvar'
         href: -envvar.md
-      - name: "!error"
+      - name: '!error'
         href: -error.md
-      - name: "!exchain"
+      - name: '!exchain'
         href: -exchain.md
-      - name: "!exr"
+      - name: '!exr'
         href: -exr.md
-      - name: "!findxmldata"
+      - name: '!findxmldata'
         href: -findxmldata.md
-      - name: "!for_each_frame"
+      - name: '!for_each_frame'
         href: -for-each-frame.md
-      - name: "!for_each_function"
+      - name: '!for_each_function'
         href: -for-each-function.md
-      - name: "!for_each_local"
+      - name: '!for_each_local'
         href: -for-each-local.md
-      - name: "!for_each_module"
+      - name: '!for_each_module'
         href: -for-each-module.md
-      - name: "!for_each_register"
+      - name: '!for_each_register'
         href: -for-each-register.md
-      - name: "!gflag"
+      - name: '!gflag'
         href: -gflag.md
-      - name: "!gle"
+      - name: '!gle'
         href: -gle.md
-      - name: "!gs"
+      - name: '!gs'
         href: -gs.md
-      - name: "!handle"
+      - name: '!handle'
         href: -handle.md
-      - name: "!heap"
+      - name: '!heap'
         href: -heap.md
-      - name: "!help"
+      - name: '!help'
         href: -help.md
-      - name: "!homedir"
+      - name: '!homedir'
         href: -homedir.md
-      - name: "!hstring"
+      - name: '!hstring'
         href: -hstring.md
-      - name: "!hstring2"
+      - name: '!hstring2'
         href: -hstring2.md
-      - name: "!htrace"
+      - name: '!htrace'
         href: -htrace.md
-      - name: "!imggp"
+      - name: '!imggp'
         href: -imggp.md
-      - name: "!imgreloc"
+      - name: '!imgreloc'
         href: -imgreloc.md
-      - name: "!kuser"
+      - name: '!kuser'
         href: -kuser.md
-      - name: "!list"
+      - name: '!list'
         href: -list.md
-      - name: "!lmi"
+      - name: '!lmi'
         href: -lmi.md
-      - name: "!mui"
+      - name: '!mui'
         href: -mui.md
-      - name: "!net_send"
+      - name: '!net_send'
         href: -net-send.md
-      - name: "!obja"
+      - name: '!obja'
         href: -obja.md
-      - name: "!owner"
+      - name: '!owner'
         href: -owner.md
-      - name: "!peb"
+      - name: '!peb'
         href: -peb.md
-      - name: "!rebase"
+      - name: '!rebase'
         href: -rebase.md
-      - name: "!rtlavl"
+      - name: '!rtlavl'
         href: -rtlavl.md
-      - name: "!sd"
+      - name: '!sd'
         href: -sd.md
-      - name: "!sid"
+      - name: '!sid'
         href: -sid.md
-      - name: "!slist"
+      - name: '!slist'
         href: -slist.md
-      - name: "!std_map"
+      - name: '!std_map'
         href: -std-map.md
-      - name: "!stl"
+      - name: '!stl'
         href: -stl.md
-      - name: "!str"
+      - name: '!str'
         href: -str.md
-      - name: "!sym"
+      - name: '!sym'
         href: -sym.md
-      - name: "!symsrv"
+      - name: '!symsrv'
         href: -symsrv.md
-      - name: "!teb"
+      - name: '!teb'
         href: -teb.md
-      - name: "!tls"
+      - name: '!tls'
         href: -tls.md
-      - name: "!token"
+      - name: '!token'
         href: -token.md
-      - name: "!tp"
+      - name: '!tp'
         href: -tp.md
-      - name: "!triage"
+      - name: '!triage'
         href: -triage.md
-      - name: "!ustr"
+      - name: '!ustr'
         href: -ustr.md
-      - name: "!version"
+      - name: '!version'
         href: -version.md
-      - name: "!winrterr"
+      - name: '!winrterr'
         href: -winrterr.md
-    - name: "Kernel-Mode Extension Commands"
-# Auto-expanded node
-      items: 
-      - name: "Kernel-Mode Extension Commands"
+    - name: Kernel-Mode Extension Commands
+      items:
+      - name: Kernel-Mode Extension Commands
         href: kernel-mode-extensions.md
-      - name: "!ahcache"
+      - name: '!ahcache'
         href: -ahcache.md
-      - name: "!alignmentfaults"
+      - name: '!alignmentfaults'
         href: -alignmentfaults.md
-      - name: "!analyzebugcheck"
+      - name: '!analyzebugcheck'
         href: -analyzebugcheck.md
-      - name: "!apc"
+      - name: '!apc'
         href: -apc.md
-      - name: "!apicerr"
+      - name: '!apicerr'
         href: -apicerr.md
-      - name: "!arbinst"
+      - name: '!arbinst'
         href: -arbinst.md
-      - name: "!arbiter"
+      - name: '!arbiter'
         href: -arbiter.md
-      - name: "!ate"
+      - name: '!ate'
         href: -ate.md
-      - name: "!bcb"
+      - name: '!bcb'
         href: -bcb.md
-      - name: "!blockeddrv"
+      - name: '!blockeddrv'
         href: -blockeddrv.md
-      - name: "!bpid"
+      - name: '!bpid'
         href: -bpid.md
-      - name: "!btb"
+      - name: '!btb'
         href: -btb.md
-      - name: "!bth"
+      - name: '!bth'
         href: -bth.md
-      - name: "!bugdump"
+      - name: '!bugdump'
         href: -bugdump.md
-      - name: "!bushnd"
+      - name: '!bushnd'
         href: -bushnd.md
-      - name: "!ca"
+      - name: '!ca'
         href: -ca.md
-      - name: "!callback"
+      - name: '!callback'
         href: -callback.md
-      - name: "!calldata"
+      - name: '!calldata'
         href: -calldata.md
-      - name: "!can_write_kdump"
+      - name: '!can_write_kdump'
         href: -can-write-kdump.md
-      - name: "!cbreg"
+      - name: '!cbreg'
         href: -cbreg.md
-      - name: "!cchelp"
+      - name: '!cchelp'
         href: -cchelp.md
-      - name: "!chklowmem"
+      - name: '!chklowmem'
         href: -chklowmem.md
-      - name: "!cmreslist"
+      - name: '!cmreslist'
         href: -cmreslist.md
-      - name: "!cpuinfo"
+      - name: '!cpuinfo'
         href: -cpuinfo.md
-      - name: "!db, !dc, !dd, !dp, !dq, !du, !dw"
+      - name: '!db, !dc, !dd, !dp, !dq, !du, !dw'
         href: -db---dc---dd---dp---dq---du---dw.md
-      - name: "!dbgprint"
+      - name: '!dbgprint'
         href: -dbgprint.md
-      - name: "!dblink"
+      - name: '!dblink'
         href: -dblink.md
-      - name: "!dcr"
+      - name: '!dcr'
         href: -dcr.md
-      - name: "!dcs"
+      - name: '!dcs'
         href: -dcs.md
-      - name: "!deadlock"
+      - name: '!deadlock'
         href: -deadlock.md
-      - name: "!defwrites"
+      - name: '!defwrites'
         href: -defwrites.md
-      - name: "!devext"
+      - name: '!devext'
         href: -devext.md
-      - name: "!devhandles"
+      - name: '!devhandles'
         href: -devhandles.md
-      - name: "!devnode"
+      - name: '!devnode'
         href: -devnode.md
-      - name: "!devobj"
+      - name: '!devobj'
         href: -devobj.md
-      - name: "!devstack"
+      - name: '!devstack'
         href: -devstack.md
-      - name: "!dflink"
+      - name: '!dflink'
         href: -dflink.md
-      - name: "!diskspace"
+      - name: '!diskspace'
         href: -diskspace.md
-      - name: "!dma"
+      - name: '!dma'
         href: -dma.md
-      - name: "!dpa"
+      - name: '!dpa'
         href: -dpa.md
-      - name: "!dpcs"
+      - name: '!dpcs'
         href: -dpcs.md
-      - name: "!driveinfo"
+      - name: '!driveinfo'
         href: -driveinfo.md
-      - name: "!drivers"
+      - name: '!drivers'
         href: -drivers.md
-      - name: "!drvobj"
+      - name: '!drvobj'
         href: -drvobj.md
-      - name: "!dskheap"
+      - name: '!dskheap'
         href: -dskheap.md
-      - name: "!eb, !ed"
+      - name: '!eb, !ed'
         href: -eb---ed.md
-      - name: "!ecb, !ecd, !ecw"
+      - name: '!ecb, !ecd, !ecw'
         href: -ecb---ecd---ecw.md
-      - name: "!ecs"
+      - name: '!ecs'
         href: -ecs.md
-      - name: "!errlog"
+      - name: '!errlog'
         href: -errlog.md
-      - name: "!errpkt"
+      - name: '!errpkt'
         href: -errpkt.md
-      - name: "!errrec"
+      - name: '!errrec'
         href: -errrec.md
-      - name: "!exca"
+      - name: '!exca'
         href: -exca.md
-      - name: "!filecache"
+      - name: '!filecache'
         href: -filecache.md
-      - name: "!filelock"
+      - name: '!filelock'
         href: -filelock.md
-      - name: "!fileobj"
+      - name: '!fileobj'
         href: -fileobj.md
-      - name: "!filetime"
+      - name: '!filetime'
         href: -filetime.md
-      - name: "!finddata"
+      - name: '!finddata'
         href: -finddata.md
-      - name: "!findfilelockowner"
+      - name: '!findfilelockowner'
         href: -findfilelockowner.md
-      - name: "!findthreads"
+      - name: '!findthreads'
         href: -findthreads.md
-      - name: "!for_each_process"
+      - name: '!for_each_process'
         href: -for-each-process.md
-      - name: "!for_each_thread"
+      - name: '!for_each_thread'
         href: -for-each-thread.md
-      - name: "!fpsearch"
+      - name: '!fpsearch'
         href: -fpsearch.md
-      - name: "!frozen"
+      - name: '!frozen'
         href: -frozen.md
-      - name: "!fwver"
+      - name: '!fwver'
         href: -fwver.md
-      - name: "!fxdevice"
+      - name: '!fxdevice'
         href: -fxdevice.md
-      - name: "!gbl"
+      - name: '!gbl'
         href: -gbl.md
-      - name: "!gentable"
+      - name: '!gentable'
         href: -gentable.md
-      - name: "!hidppd"
+      - name: '!hidppd'
         href: -hidppd.md
-      - name: "!ib, !id, !iw"
+      - name: '!ib, !id, !iw'
         href: -ib---id---iw.md
-      - name: "!icpleak"
+      - name: '!icpleak'
         href: -icpleak.md
-      - name: "!idt"
+      - name: '!idt'
         href: -idt.md
-      - name: "!ih"
+      - name: '!ih'
         href: -ih.md
-      - name: "!ihs"
+      - name: '!ihs'
         href: -ihs.md
-      - name: "!ioresdes"
+      - name: '!ioresdes'
         href: -ioresdes.md
-      - name: "!ioctldecode"
+      - name: '!ioctldecode'
         href: -ioctldecode.md
-      - name: "!ioreslist"
+      - name: '!ioreslist'
         href: -ioreslist.md
-      - name: "!iovirp"
+      - name: '!iovirp'
         href: -iovirp.md
-      - name: "!ipi"
+      - name: '!ipi'
         href: -ipi.md
-      - name: "!irp"
+      - name: '!irp'
         href: -irp.md
-      - name: "!irpfind"
+      - name: '!irpfind'
         href: -irpfind.md
-      - name: "!irpzone"
+      - name: '!irpzone'
         href: -irpzone.md
-      - name: "!irql"
+      - name: '!irql'
         href: -irql.md
-      - name: "!isainfo"
+      - name: '!isainfo'
         href: -isainfo.md
-      - name: "!isr"
+      - name: '!isr'
         href: -isr.md
-      - name: "!ivt"
+      - name: '!ivt'
         href: -ivt.md
-      - name: "!job"
+      - name: '!job'
         href: -job.md
-      - name: "!kb, !kv"
+      - name: '!kb, !kv'
         href: -kb---kv.md
-      - name: "!loadermemorylist"
+      - name: '!loadermemorylist'
         href: -loadermemorylist.md
-      - name: "!lockedpages"
+      - name: '!lockedpages'
         href: -lockedpages.md
-      - name: "!locks (!kdext*.locks)"
+      - name: '!locks (!kdext*.locks)'
         href: -locks---kdext--locks-.md
-      - name: "!logonsession"
+      - name: '!logonsession'
         href: -logonsession.md
-      - name: "!lookaside"
+      - name: '!lookaside'
         href: -lookaside.md
-      - name: "!lpc"
+      - name: '!lpc'
         href: -lpc.md
-      - name: "!mca"
+      - name: '!mca'
         href: -mca.md
-      - name: "!memlist"
+      - name: '!memlist'
         href: -memlist.md
-      - name: "!memusage"
+      - name: '!memusage'
         href: -memusage.md
-      - name: "!mps"
+      - name: '!mps'
         href: -mps.md
-      - name: "!mtrr"
+      - name: '!mtrr'
         href: -mtrr.md
-      - name: "!npx"
+      - name: '!npx'
         href: -npx.md
-      - name: "!ob, !od, !ow"
+      - name: '!ob, !od, !ow'
         href: -ob---od---ow.md
-      - name: "!object"
+      - name: '!object'
         href: -object.md
-      - name: "!obtrace"
+      - name: '!obtrace'
         href: -obtrace.md
-      - name: "!openmaps"
+      - name: '!openmaps'
         href: -openmaps.md
-      - name: "!pars"
+      - name: '!pars'
         href: -pars.md
-      - name: "!pat"
+      - name: '!pat'
         href: -pat.md
-      - name: "!pci"
+      - name: '!pci'
         href: -pci.md
-      - name: "!pciir"
+      - name: '!pciir'
         href: -pciir.md
-      - name: "!pcitree"
+      - name: '!pcitree'
         href: -pcitree.md
-      - name: "!pcm"
+      - name: '!pcm'
         href: -pcm.md
-      - name: "!pcr"
+      - name: '!pcr'
         href: -pcr.md
-      - name: "!pcrs"
+      - name: '!pcrs'
         href: -pcrs.md
-      - name: "!pfn"
+      - name: '!pfn'
         href: -pfn.md
-      - name: "!pmc"
+      - name: '!pmc'
         href: -pmc.md
-      - name: "!pmssa"
+      - name: '!pmssa'
         href: -pmssa.md
-      - name: "!powertriage"
+      - name: '!powertriage'
         href: -powertriage.md
-      - name: "!pnpevent"
+      - name: '!pnpevent'
         href: -pnpevent.md
-      - name: "!pocaps"
+      - name: '!pocaps'
         href: -pocaps.md
-      - name: "!pool"
+      - name: '!pool'
         href: -pool.md
-      - name: "!poolfind"
+      - name: '!poolfind'
         href: -poolfind.md
-      - name: "!poolused"
+      - name: '!poolused'
         href: -poolused.md
-      - name: "!poolval"
+      - name: '!poolval'
         href: -poolval.md
-      - name: "!popolicy"
+      - name: '!popolicy'
         href: -popolicy.md
-      - name: "!pplookaside"
+      - name: '!pplookaside'
         href: -pplookaside.md
-      - name: "!ppmidle"
+      - name: '!ppmidle'
         href: -ppmidle.md
-      - name: "!ppmidleaccounting"
+      - name: '!ppmidleaccounting'
         href: -ppmidleaccounting.md
-      - name: "!ppmidlepolicy"
+      - name: '!ppmidlepolicy'
         href: -ppmidlepolicy.md
-      - name: "!ppmlpscenarios"
+      - name: '!ppmlpscenarios'
         href: -ppmlpscenarios.md
-      - name: "!ppmperf"
+      - name: '!ppmperf'
         href: -ppmperf.md
-      - name: "!ppmperfpolicy"
+      - name: '!ppmperfpolicy'
         href: -ppmperfpolicy.md
-      - name: "!ppmsettings"
+      - name: '!ppmsettings'
         href: -ppmsettings.md
-      - name: "!ppmstate"
+      - name: '!ppmstate'
         href: -ppmstate.md
-      - name: "!prcb"
+      - name: '!prcb'
         href: -prcb.md
-      - name: "!process"
+      - name: '!process'
         href: -process.md
-      - name: "!processfields"
+      - name: '!processfields'
         href: -processfields.md
-      - name: "!processirps"
+      - name: '!processirps'
         href: -processirps.md
-      - name: "!psp"
+      - name: '!psp'
         href: -psp.md
-      - name: "!pte"
+      - name: '!pte'
         href: -pte.md
-      - name: "!pte2va"
+      - name: '!pte2va'
         href: -pte2va.md
-      - name: "!ptov"
+      - name: '!ptov'
         href: -ptov.md
-      - name: "!qlocks"
+      - name: '!qlocks'
         href: -qlocks.md
-      - name: "!ready"
+      - name: '!ready'
         href: -ready.md
-      - name: "!reg"
+      - name: '!reg'
         href: -reg.md
-      - name: "!regkcb"
+      - name: '!regkcb'
         href: -regkcb.md
-      - name: "!rellist"
+      - name: '!rellist'
         href: -rellist.md
-      - name: "!ruleinfo"
+      - name: '!ruleinfo'
         href: -ruleinfo.md
-      - name: "!running"
+      - name: '!running'
         href: -running.md
-      - name: "!scm"
+      - name: '!scm'
         href: -scm.md
-      - name: "!search"
+      - name: '!search'
         href: -search.md
-      - name: "!searchpte"
+      - name: '!searchpte'
         href: -searchpte.md
-      - name: "!sel"
+      - name: '!sel'
         href: -sel.md
-      - name: "!session"
+      - name: '!session'
         href: -session.md
-      - name: "!smt"
+      - name: '!smt'
         href: -smt.md
-      - name: "!sprocess"
+      - name: '!sprocess'
         href: -sprocess.md
-      - name: "!srb"
+      - name: '!srb'
         href: -srb.md
-      - name: "!stacks"
+      - name: '!stacks'
         href: -stacks.md
-      - name: "!swd"
+      - name: '!swd'
         href: -swd.md
-      - name: "!sysinfo"
+      - name: '!sysinfo'
         href: -sysinfo.md
-      - name: "!sysptes"
+      - name: '!sysptes'
         href: -sysptes.md
-      - name: "!thread"
+      - name: '!thread'
         href: -thread.md
-      - name: "!threadfields"
+      - name: '!threadfields'
         href: -threadfields.md
-      - name: "!time"
+      - name: '!time'
         href: -time.md
-      - name: "!timer"
+      - name: '!timer'
         href: -timer.md
-      - name: "!tokenfields"
+      - name: '!tokenfields'
         href: -tokenfields.md
-      - name: "!trap"
+      - name: '!trap'
         href: -trap.md
-      - name: "!tss"
+      - name: '!tss'
         href: -tss.md
-      - name: "!tz"
+      - name: '!tz'
         href: -tz.md
-      - name: "!tzinfo"
+      - name: '!tzinfo'
         href: -tzinfo.md
-      - name: "!ubc"
+      - name: '!ubc'
         href: -ubc.md
-      - name: "!ubd"
+      - name: '!ubd'
         href: -ubd.md
-      - name: "!ube"
+      - name: '!ube'
         href: -ube.md
-      - name: "!ubl"
+      - name: '!ubl'
         href: -ubl.md
-      - name: "!ubp"
+      - name: '!ubp'
         href: -ubp.md
-      - name: "!urb"
+      - name: '!urb'
         href: -urb.md
-      - name: "!vad"
+      - name: '!vad'
         href: -vad.md
-      - name: "!vad_reload"
+      - name: '!vad_reload'
         href: -vad-reload.md
-      - name: "!validatelist"
+      - name: '!validatelist'
         href: -validatelist.md
-      - name: "!verifier"
+      - name: '!verifier'
         href: -verifier.md
-      - name: "!vm"
+      - name: '!vm'
         href: -vm.md
-      - name: "!vpb"
+      - name: '!vpb'
         href: -vpb.md
-      - name: "!vtop"
+      - name: '!vtop'
         href: -vtop.md
-      - name: "!wdmaud"
+      - name: '!wdmaud'
         href: -wdmaud.md
-      - name: "!whattime"
+      - name: '!whattime'
         href: -whattime.md
-      - name: "!whatperftime"
+      - name: '!whatperftime'
         href: -whatperftime.md
-      - name: "!whea"
+      - name: '!whea'
         href: -whea.md
-      - name: "!wsle"
+      - name: '!wsle'
         href: -wsle.md
-      - name: "!zombies"
+      - name: '!zombies'
         href: -zombies.md
-    - name: "User-Mode Extension Commands"
-# Auto-expanded node
-      items: 
-      - name: "User-Mode Extension Commands"
+    - name: User-Mode Extension Commands
+      items:
+      - name: User-Mode Extension Commands
         href: user-mode-extensions.md
-      - name: "!avrf"
+      - name: '!avrf'
         href: -avrf.md
-      - name: "!critsec"
+      - name: '!critsec'
         href: -critsec.md
-      - name: "!dp (!ntsdexts.dp)"
+      - name: '!dp (!ntsdexts.dp)'
         href: -dp---ntsdexts-dp-.md
-      - name: "!dreg"
+      - name: '!dreg'
         href: -dreg.md
-      - name: "!dt"
+      - name: '!dt'
         href: -dt.md
-      - name: "!findstack"
+      - name: '!findstack'
         href: -findstack.md
-      - name: "!gatom"
+      - name: '!gatom'
         href: -gatom.md
-      - name: "!igrep"
+      - name: '!igrep'
         href: -igrep.md
-      - name: "!locks (!ntsdexts.locks)"
+      - name: '!locks (!ntsdexts.locks)'
         href: -locks---ntsdexts-locks-.md
-      - name: "!mapped_file"
+      - name: '!mapped_file'
         href: -mapped-file.md
-      - name: "!runaway"
+      - name: '!runaway'
         href: -runaway.md
-      - name: "!threadtoken"
+      - name: '!threadtoken'
         href: -threadtoken.md
-      - name: "!uniqstack"
+      - name: '!uniqstack'
         href: -uniqstack.md
-      - name: "!vadump"
+      - name: '!vadump'
         href: -vadump.md
-      - name: "!vprot"
+      - name: '!vprot'
         href: -vprot.md
-    - name: "Specialized Extension Commands"
-# Auto-expanded node
-      items: 
-      - name: "Specialized Extension Commands"
-        href: specialized-extensions.md
-      - name: "Storage Kernel Debugger Extensions"
-# Auto-expanded node
-        items: 
-        - name: "Storage Kernel Debugger Extensions"
+    - name: Specialized Extension Commands
+      items:
+      - name: Storage Kernel Debugger Extensions
+        items:
+        - name: Storage Kernel Debugger Extensions
           href: storage-kernel-debugger-extensions.md
-        - name: "!storagekd.storadapter"
+        - name: '!storagekd.storadapter'
           href: -storagekd-storadapter.md
-        - name: "!storagekd.storclass"
+        - name: '!storagekd.storclass'
           href: -storagekd-storclass.md
-        - name: "!storagekd.storhelp"
+        - name: '!storagekd.storhelp'
           href: -storagekd-storhelp.md
-        - name: "!storagekd.storlogirp"
+        - name: '!storagekd.storlogirp'
           href: -storagekd-storlogirp.md
-        - name: "!storagekd.storloglist"
+        - name: '!storagekd.storloglist'
           href: -storagekd-storloglist.md
-        - name: "!storagekd.storlogsrb"
+        - name: '!storagekd.storlogsrb'
           href: -storagekd-storlogsrb.md
-        - name: "!storagekd.storsrb"
+        - name: '!storagekd.storsrb'
           href: -storagekd-storsrb.md
-        - name: "!storagekd.storunit"
+        - name: '!storagekd.storunit'
           href: -storagekd-storunit.md
-      - name: "Bluetooth Extensions (Bthkd.dll)"
-# Auto-expanded node
-        items: 
-        - name: "Bluetooth Extensions (Bthkd.dll)"
+      - name: Bluetooth Extensions (Bthkd.dll)
+        items:
+        - name: Bluetooth Extensions (Bthkd.dll)
           href: bluetooh-extensions--bthkd-dll-.md
-        - name: "!bthkd.bthdevinfo"
+        - name: '!bthkd.bthdevinfo'
           href: -bthkd-bthdevinfo.md
-        - name: "!bthkd.bthenuminfo"
+        - name: '!bthkd.bthenuminfo'
           href: -bthkd-bthenuminfo.md
-        - name: "!bthkd.bthinfo"
+        - name: '!bthkd.bthinfo'
           href: -bthkd-bthinfo-.md
-        - name: "!bthkd.bthhelp"
+        - name: '!bthkd.bthhelp'
           href: -bthkd-bthhelp.md
-        - name: "!bthkd.bthtree"
+        - name: '!bthkd.bthtree'
           href: -bthkd-bthtree.md
-        - name: "!bthkd.bthusbtransfer"
+        - name: '!bthkd.bthusbtransfer'
           href: -bthkd-bthusbtransfer.md
-        - name: "!bthkd.dibflags"
+        - name: '!bthkd.dibflags'
           href: -bthkd-dibflags.md
-        - name: "!bthkd.hcicmd"
+        - name: '!bthkd.hcicmd'
           href: -bthkd-hcicmd.md
-        - name: "!bthkd.hciinterface"
+        - name: '!bthkd.hciinterface'
           href: -bthkd-hciinterface.md
-        - name: "!bthkd.l2capinterface"
+        - name: '!bthkd.l2capinterface'
           href: -bthkd-l2capinterface-.md
-        - name: "!bthkd.rfcomminfo"
+        - name: '!bthkd.rfcomminfo'
           href: -bthkd-rfcomminfo.md
-        - name: "!bthkd.rfcommconnection"
+        - name: '!bthkd.rfcommconnection'
           href: -bthkd-rfcommconnection.md
-        - name: "!bthkd.rfcommchannel"
+        - name: '!bthkd.rfcommchannel'
           href: -bthkd-rfcommchannel.md
-        - name: "!bthkd.sdpinterface"
+        - name: '!bthkd.sdpinterface'
           href: -bthkd-sdpinterface.md
-        - name: "!bthkd.scointerface"
+        - name: '!bthkd.scointerface'
           href: -bthkd-scointerface-.md
-        - name: "!bthkd.sdpnode"
+        - name: '!bthkd.sdpnode'
           href: -bthkd-sdpnode.md
-        - name: "!bthkd.sdpstream"
+        - name: '!bthkd.sdpstream'
           href: -bthkd-sdpstream.md
-      - name: "Audio Class Extensions (Acxkd.dll)"
-# Auto-expanded node
-        items: 
-        - name: "Audio Class Extensions (Acxkd.dll)"
+      - name: Audio Class Extensions (Acxkd.dll)
+        items:
+        - name: Audio Class Extensions (Acxkd.dll)
           href: -acxkd.md
-      - name: "GPIO Extensions"
-# Auto-expanded node
-        items: 
-        - name: "GPIO Extensions"
+      - name: GPIO Extensions
+        items:
+        - name: GPIO Extensions
           href: gpio-extensions.md
-        - name: "!gpiokd.help"
+        - name: '!gpiokd.help'
           href: -gpiokd-help.md
-        - name: "!gpiokd.bankinfo"
+        - name: '!gpiokd.bankinfo'
           href: -gpiokd-bankinfo.md
-        - name: "!gpiokd.clientlist"
+        - name: '!gpiokd.clientlist'
           href: -gpiokd-clientlist.md
-        - name: "!gpiokd.gpioext"
+        - name: '!gpiokd.gpioext'
           href: -gpiokd-gpioext.md
-        - name: "!gpiokd.pininfo"
+        - name: '!gpiokd.pininfo'
           href: -gpiokd-pininfo.md
-        - name: "!gpiokd.pinisrvec"
+        - name: '!gpiokd.pinisrvec'
           href: -gpiokd-pinisrvec.md
-        - name: "!gpiokd.pintable"
+        - name: '!gpiokd.pintable'
           href: -gpiokd-pintable.md
-      - name: "USB 3.0 Extensions"
-# Auto-expanded node
-        items: 
-        - name: "USB 3.0 Extensions"
+      - name: USB 3.0 Extensions
+        items:
+        - name: USB 3.0 Extensions
           href: usb-3-extensions.md
-        - name: "USB 3.0 Data Structures"
+        - name: USB 3.0 Data Structures
           href: usb-3-0-data-structures.md
-        - name: "!usb3kd.help"
+        - name: '!usb3kd.help'
           href: -usb3kd-help.md
-        - name: "!usb3kd.device_info"
+        - name: '!usb3kd.device_info'
           href: -usb3kd-device-info.md
-        - name: "!usb3kd.device_info_from_pdo"
+        - name: '!usb3kd.device_info_from_pdo'
           href: -usb3kd-device-info-from-pdo.md
-        - name: "!usb3kd.dsf"
+        - name: '!usb3kd.dsf'
           href: -usb3kd-dsf.md
-        - name: "!usb3kd.hub_info"
+        - name: '!usb3kd.hub_info'
           href: -usb3kd-hub-info.md
-        - name: "!usb3kd.hub_info_from_fdo"
+        - name: '!usb3kd.hub_info_from_fdo'
           href: -usb3kd-hub-info-from-fdo.md
-        - name: "!usb3kd.port_info"
+        - name: '!usb3kd.port_info'
           href: -usb3kd-port-info.md
-        - name: "!usb3kd.ucx_device"
+        - name: '!usb3kd.ucx_device'
           href: -usb3kd-ucx-device.md
-        - name: "!usb3kd.ucx_endpoint"
+        - name: '!usb3kd.ucx_endpoint'
           href: -usb3kd-ucx-endpoint.md
-        - name: "!usb3kd.ucx_controller"
+        - name: '!usb3kd.ucx_controller'
           href: -usb3kd-ucx-controller.md
-        - name: "!usb3kd.ucx_controller_list"
+        - name: '!usb3kd.ucx_controller_list'
           href: -usb3kd-ucx-controller-list.md
-        - name: "!usb3kd.usbanalyze"
+        - name: '!usb3kd.usbanalyze'
           href: -usb3kd-usbanalyze.md
-        - name: "!usb3kd.usbdstatus"
+        - name: '!usb3kd.usbdstatus'
           href: -usb3kd-usbdstatus.md
-        - name: "!usb3kd.usb_tree"
+        - name: '!usb3kd.usb_tree'
           href: -usb3kd-usb-tree.md
-        - name: "!usb3kd.urb"
+        - name: '!usb3kd.urb'
           href: -usb3kd-urb.md
-        - name: "!usb3kd.xhci_capability"
+        - name: '!usb3kd.xhci_capability'
           href: -usb3kd-xhci-capability.md
-        - name: "!usb3kd.xhci_commandring"
+        - name: '!usb3kd.xhci_commandring'
           href: -usb3kd-xhci-commandring.md
-        - name: "!usb3kd.xhci_deviceslots"
+        - name: '!usb3kd.xhci_deviceslots'
           href: -usb3kd-xhci-deviceslots.md
-        - name: "!usb3kd.xhci_dumpall"
+        - name: '!usb3kd.xhci_dumpall'
           href: -usb3kd-xhci-dumpall.md
-        - name: "!usb3kd.xhci_eventring"
+        - name: '!usb3kd.xhci_eventring'
           href: -usb3kd-xhci-eventring.md
-        - name: "!usb3kd.xhci_findowner"
+        - name: '!usb3kd.xhci_findowner'
           href: -usb3kd-xhci-findowner.md
-        - name: "!usb3kd.xhci_info"
+        - name: '!usb3kd.xhci_info'
           href: -usb3kd-xhci-info.md
-        - name: "!usb3kd.xhci_registers"
+        - name: '!usb3kd.xhci_registers'
           href: -usb3kd-xhci-registers.md
-        - name: "!usb3kd.xhci_resourceusage"
+        - name: '!usb3kd.xhci_resourceusage'
           href: -usb3kd-xhci-resourceusage.md
-        - name: "!usb3kd.xhci_trb"
+        - name: '!usb3kd.xhci_trb'
           href: -usb3kd-xhci-trb.md
-        - name: "!usb3kd.xhci_transferring"
+        - name: '!usb3kd.xhci_transferring'
           href: -usb3kd-xhci-transferring.md
-      - name: "USB 2.0 Debugger Extensions"
-# Auto-expanded node
-        items: 
-        - name: "USB 2.0 Debugger Extensions"
+      - name: USB 2.0 Debugger Extensions
+        items:
+        - name: USB 2.0 Debugger Extensions
           href: usb-2-0-extensions.md
-        - name: "!usbkd.usbhelp"
+        - name: '!usbkd.usbhelp'
           href: -usbkd-usbhelp.md
-        - name: "!usbkd._ehcidd"
+        - name: '!usbkd._ehcidd'
           href: -usbkd--ehcidd.md
-        - name: "!usbkd._ehciep"
+        - name: '!usbkd._ehciep'
           href: -usbkd--ehciep.md
-        - name: "!usbkd._ehciframe"
+        - name: '!usbkd._ehciframe'
           href: -usbkd--ehciframe.md
-        - name: "!usbkd._ehciqh"
+        - name: '!usbkd._ehciqh'
           href: -usbkd--ehciqh.md
-        - name: "!usbkd._ehciregs"
+        - name: '!usbkd._ehciregs'
           href: -usbkd--ehciregs.md
-        - name: "!usbkd._ehcisitd"
+        - name: '!usbkd._ehcisitd'
           href: -usbkd--ehcisitd.md
-        - name: "!usbkd._ehcistq"
+        - name: '!usbkd._ehcistq'
           href: -usbkd--ehcistq.md
-        - name: "!usbkd._ehcitd"
+        - name: '!usbkd._ehcitd'
           href: -usbkd--ehcitd.md
-        - name: "!usbkd._ehcitfer"
+        - name: '!usbkd._ehcitfer'
           href: -usbkd--ehcitfer.md
-        - name: "!usbkd._ehciitd"
+        - name: '!usbkd._ehciitd'
           href: -usbkd--ehciitd.md
-        - name: "!usbkd.doesdumphaveusbdata"
+        - name: '!usbkd.doesdumphaveusbdata'
           href: -usbkd-doesdumphaveusbdata.md
-        - name: "!usbkd.isthisdumpasyncissue"
+        - name: '!usbkd.isthisdumpasyncissue'
           href: -usbkd-isthisdumpasyncissue.md
-        - name: "!usbkd.urbfunc"
+        - name: '!usbkd.urbfunc'
           href: -usbkd-urbfunc.md
-        - name: "!usbkd.usb2"
+        - name: '!usbkd.usb2'
           href: -usbkd-usb2.md
-        - name: "!usbkd.usb2tree"
+        - name: '!usbkd.usb2tree'
           href: -usbkd-usb2tree.md
-        - name: "!usbkd.usbchain"
+        - name: '!usbkd.usbchain'
           href: -usbkd-usbchain.md
-        - name: "!usbkd.usbdevobj"
+        - name: '!usbkd.usbdevobj'
           href: -usbkd-usbdevobj.md
-        - name: "!usbkd.usbdpc"
+        - name: '!usbkd.usbdpc'
           href: -usbkd-usbdpc.md
-        - name: "!usbkd.ehci_info_from_fdo"
+        - name: '!usbkd.ehci_info_from_fdo'
           href: -usbkd-ehci-info-from-fdo.md
-        - name: "!usbkd.usbdevh"
+        - name: '!usbkd.usbdevh'
           href: -usbkd-usbdevh.md
-        - name: "!usbkd.usbep"
+        - name: '!usbkd.usbep'
           href: -usbkd-usbep.md
-        - name: "!usbkd.usbfaildata"
+        - name: '!usbkd.usbfaildata'
           href: -usbkd-usbfaildata.md
-        - name: "!usbkd.usbhcdext"
+        - name: '!usbkd.usbhcdext'
           href: -usbkd-usbhcdext.md
-        - name: "!usbkd.usbdstatus"
+        - name: '!usbkd.usbdstatus'
           href: -usbkd-usbdstatus.md
-        - name: "!usbkd.usbhcdhccontext"
+        - name: '!usbkd.usbhcdhccontext'
           href: -usbkd-usbhcdhccontext.md
-        - name: "!usbkd.usbhcdlist"
+        - name: '!usbkd.usbhcdlist'
           href: -usbkd-usbhcdlist.md
-        - name: "!usbkd.usbhcdlistlogs"
+        - name: '!usbkd.usbhcdlistlogs'
           href: -usbkd-usbhcdlistlogs.md
-        - name: "!usbkd.usbhcdlog"
+        - name: '!usbkd.usbhcdlog'
           href: -usbkd-usbhcdlog.md
-        - name: "!usbkd.usbhcdlogex"
+        - name: '!usbkd.usbhcdlogex'
           href: -usbkd-usbhcdlogex.md
-        - name: "!usbkd.usbhcdpnp"
+        - name: '!usbkd.usbhcdpnp'
           href: -usbkd-usbhcdpnp.md
-        - name: "!usbkd.usbhcdpow"
+        - name: '!usbkd.usbhcdpow'
           href: -usbkd-usbhcdpow.md
-        - name: "!usbkd.hub2_info_from_fdo"
+        - name: '!usbkd.hub2_info_from_fdo'
           href: -usbkd-hub2-info-from-fdo.md
-        - name: "!usbkd.usbhuberr"
+        - name: '!usbkd.usbhuberr'
           href: -usbkd-usbhuberr.md
-        - name: "!usbkd.usbhubext"
+        - name: '!usbkd.usbhubext'
           href: -usbkd-usbhubext.md
-        - name: "!usbkd.usbhubinfo"
+        - name: '!usbkd.usbhubinfo'
           href: -usbkd-usbhubinfo.md
-        - name: "!usbkd.usbhublog"
+        - name: '!usbkd.usbhublog'
           href: -usbkd-usbhublog.md
-        - name: "!usbkd.usbhubmddevext"
+        - name: '!usbkd.usbhubmddevext'
           href: -usbkd-usbhubmddevext.md
-        - name: "!usbkd.usbhubmdpd"
+        - name: '!usbkd.usbhubmdpd'
           href: -usbkd-usbhubmdpd.md
-        - name: "!usbkd.usbhubpd"
+        - name: '!usbkd.usbhubpd'
           href: -usbkd-usbhubpd.md
-        - name: "!usbkd.usbhubs"
+        - name: '!usbkd.usbhubs'
           href: -usbkd-usbhubs.md
-        - name: "!usbkd.usblist"
+        - name: '!usbkd.usblist'
           href: -usbkd-usblist.md
-        - name: "!usbkd.usbpo"
+        - name: '!usbkd.usbpo'
           href: -usbkd-usbpo.md
-        - name: "!usbkd.usbpdos"
+        - name: '!usbkd.usbpdos'
           href: -usbkd-usbpdos.md
-        - name: "!usbkd.usbpdoxls"
+        - name: '!usbkd.usbpdoxls'
           href: -usbkd-usbpdoxls.md
-        - name: "!usbkd.usbpnp"
+        - name: '!usbkd.usbpnp'
           href: -usbkd-usbpnp.md
-        - name: "!usbkd.usbportisasyncadv"
+        - name: '!usbkd.usbportisasyncadv'
           href: -usbkd-usbportisasyncadv.md
-        - name: "!usbkd.usbportmdportlog"
+        - name: '!usbkd.usbportmdportlog'
           href: -usbkd-usbportmdportlog.md
-        - name: "!usbkd.usbportmddcontext"
+        - name: '!usbkd.usbportmddcontext'
           href: -usbkd-usbportmddcontext.md
-        - name: "!usbkd.usbportmddevext"
+        - name: '!usbkd.usbportmddevext'
           href: -usbkd-usbportmddevext.md
-        - name: "!usbkd.usbtriage"
+        - name: '!usbkd.usbtriage'
           href: -usbkd-usbtriage.md
-        - name: "!usbkd.usbtt"
+        - name: '!usbkd.usbtt'
           href: -usbkd-usbtt.md
-        - name: "!usbkd.usbtx"
+        - name: '!usbkd.usbtx'
           href: -usbkd-usbtx.md
-        - name: "!usbkd.usbusb2ep"
+        - name: '!usbkd.usbusb2ep'
           href: -usbkd-usbusb2ep.md
-        - name: "!usbkd.usbusb2tt"
+        - name: '!usbkd.usbusb2tt'
           href: -usbkd-usbusb2tt.md
-        - name: "!usbkd.usbver"
+        - name: '!usbkd.usbver'
           href: -usbkd-usbver.md
-      - name: "RCDRKD Extensions"
-# Auto-expanded node
-        items: 
-        - name: "RCDRKD Extensions"
+      - name: RCDRKD Extensions
+        items:
+        - name: RCDRKD Extensions
           href: rcdrkd-extensions.md
-        - name: "!rcdrkd.rcdrhelp"
+        - name: '!rcdrkd.rcdrhelp'
           href: -rcdrkd-rcdrhelp.md
-        - name: "!rcdrkd.rcdrcrashdump"
+        - name: '!rcdrkd.rcdrcrashdump'
           href: -rcdrkd-rcdrcrashdump.md
-        - name: "!rcdrkd.rcdrlogdump"
+        - name: '!rcdrkd.rcdrlogdump'
           href: -rcdrkd-rcdrlogdump.md
-        - name: "!rcdrkd.rcdrloglist"
+        - name: '!rcdrkd.rcdrloglist'
           href: -rcdrkd-rcdrloglist.md
-        - name: "!rcdrkd.rcdrlogsave"
+        - name: '!rcdrkd.rcdrlogsave'
           href: -rcdrkd-rcdrlogsave.md
-        - name: "!rcdrkd.rcdrsearchpath"
+        - name: '!rcdrkd.rcdrsearchpath'
           href: -rcdrkd-rcdrsearchpath.md
-        - name: "!rcdrkd.rcdrsettraceprefix"
+        - name: '!rcdrkd.rcdrsettraceprefix'
           href: -rcdrkd-rcdrsettraceprefix.md
-        - name: "!rcdrkd.rcdrtmffile"
+        - name: '!rcdrkd.rcdrtmffile'
           href: -rcdrkd-rcdrtmffile.md
-        - name: "!rcdrkd.rcdrtraceprtdebug"
+        - name: '!rcdrkd.rcdrtraceprtdebug'
           href: -rcdrkd-rcdrtraceprtdebug.md
-      - name: "HID Extensions"
-# Auto-expanded node
-        items: 
-        - name: "HID Extensions"
+      - name: HID Extensions
+        items:
+        - name: HID Extensions
           href: hid-extensions.md
-        - name: "!hidkd.help"
+        - name: '!hidkd.help'
           href: -hidkd-help.md
-        - name: "!hidkd.hidfdo"
+        - name: '!hidkd.hidfdo'
           href: -hidkd-hidfdo.md
-        - name: "!hidkd.hidpdo"
+        - name: '!hidkd.hidpdo'
           href: -hidkd-hidpdo.md
-        - name: "!hidkd.hidtree"
+        - name: '!hidkd.hidtree'
           href: -hidkd-hidtree.md
-        - name: "!hidkd.hidppd"
+        - name: '!hidkd.hidppd'
           href: -hidkd-hidppd.md
-        - name: "!hidkd.hidrd"
+        - name: '!hidkd.hidrd'
           href: -hidkd-hidrd.md
-      - name: "Logger Extensions (Logexts.dll)"
-# Auto-expanded node
-        items: 
-        - name: "Logger Extensions (Logexts.dll)"
+      - name: Logger Extensions (Logexts.dll)
+        items:
+        - name: Logger Extensions (Logexts.dll)
           href: logger-extensions--logexts-dll-.md
-        - name: "!logexts.help"
+        - name: '!logexts.help'
           href: -logexts-help.md
-        - name: "!logexts.logb"
+        - name: '!logexts.logb'
           href: -logexts-logb.md
-        - name: "!logexts.logc"
+        - name: '!logexts.logc'
           href: -logexts-logc.md
-        - name: "!logexts.logd"
+        - name: '!logexts.logd'
           href: -logexts-logd.md
-        - name: "!logexts.loge"
+        - name: '!logexts.loge'
           href: -logexts-loge.md
-        - name: "!logexts.logi"
+        - name: '!logexts.logi'
           href: -logexts-logi.md
-        - name: "!logexts.logm"
+        - name: '!logexts.logm'
           href: -logexts-logm.md
-        - name: "!logexts.logo"
+        - name: '!logexts.logo'
           href: -logexts-logo.md
-      - name: "NDIS Extensions (Ndiskd.dll)"
-# Auto-expanded node
-        items: 
-        - name: "NDIS Extensions (Ndiskd.dll)"
+      - name: NDIS Extensions (Ndiskd.dll)
+        items:
+        - name: NDIS Extensions (Ndiskd.dll)
           href: ndis-extensions--ndiskd-dll-.md
-        - name: "!ndiskd.help"
+        - name: '!ndiskd.help'
           href: -ndiskd-help.md
-        - name: "!ndiskd.netadapter"
+        - name: '!ndiskd.netadapter'
           href: -ndiskd-netadapter.md
-        - name: "!ndiskd.minidriver"
+        - name: '!ndiskd.minidriver'
           href: -ndiskd-minidriver.md
-        - name: "!ndiskd.rcvqueue"
+        - name: '!ndiskd.rcvqueue'
           href: -ndiskd-rcvqueue.md
-        - name: "!ndiskd.protocol"
+        - name: '!ndiskd.protocol'
           href: -ndiskd-protocol.md
-        - name: "!ndiskd.mopen"
+        - name: '!ndiskd.mopen'
           href: -ndiskd-mopen.md
-        - name: "!ndiskd.filter"
+        - name: '!ndiskd.filter'
           href: -ndiskd-filter.md
-        - name: "!ndiskd.filterdriver"
+        - name: '!ndiskd.filterdriver'
           href: -ndiskd-filterdriver.md
-        - name: "!ndiskd.nbl"
+        - name: '!ndiskd.nbl'
           href: -ndiskd-nbl.md
-        - name: "!ndiskd.nb"
+        - name: '!ndiskd.nb'
           href: -ndiskd-nb.md
-        - name: "!ndiskd.nblpool"
+        - name: '!ndiskd.nblpool'
           href: -ndiskd-nblpool.md
-        - name: "!ndiskd.nbpool"
+        - name: '!ndiskd.nbpool'
           href: -ndiskd-nbpool.md
-        - name: "!ndiskd.pendingnbls"
+        - name: '!ndiskd.pendingnbls'
           href: -ndiskd-pendingnbls.md
-        - name: "!ndiskd.nbllog"
+        - name: '!ndiskd.nbllog'
           href: -ndiskd-nbllog.md
-        - name: "!ndiskd.oid"
+        - name: '!ndiskd.oid'
           href: -ndiskd-oid.md
-        - name: "!ndiskd.interfaces"
+        - name: '!ndiskd.interfaces'
           href: -ndiskd-interfaces.md
-        - name: "!ndiskd.ifprovider"
+        - name: '!ndiskd.ifprovider'
           href: -ndiskd-ifprovider.md
-        - name: "!ndiskd.ifstacktable"
+        - name: '!ndiskd.ifstacktable'
           href: -ndiskd-ifstacktable.md
-        - name: "!ndiskd.compartments"
+        - name: '!ndiskd.compartments'
           href: -ndiskd-compartments.md
-        - name: "!ndiskd.pkt"
+        - name: '!ndiskd.pkt'
           href: -ndiskd-pkt.md
-        - name: "!ndiskd.pktpools"
+        - name: '!ndiskd.pktpools'
           href: -ndiskd-pktpools.md
-        - name: "!ndiskd.findpacket"
+        - name: '!ndiskd.findpacket'
           href: -ndiskd-findpacket.md
-        - name: "!ndiskd.vc"
+        - name: '!ndiskd.vc'
           href: -ndiskd-vc.md
-        - name: "!ndiskd.af"
+        - name: '!ndiskd.af'
           href: -ndiskd-af.md
-        - name: "!ndiskd.ndisref"
+        - name: '!ndiskd.ndisref'
           href: -ndiskd-ndisref.md
-        - name: "!ndiskd.ndisevent"
+        - name: '!ndiskd.ndisevent'
           href: -ndiskd-ndisevent.md
-        - name: "!ndiskd.ndisstack"
+        - name: '!ndiskd.ndisstack'
           href: -ndiskd-ndisstack.md
-        - name: "!ndiskd.wdiadapter"
+        - name: '!ndiskd.wdiadapter'
           href: -ndiskd-wdiadapter.md
-        - name: "!ndiskd.wdiminidriver"
+        - name: '!ndiskd.wdiminidriver'
           href: -ndiskd-wdiminidriver.md
-        - name: "!ndiskd.nwadapter"
+        - name: '!ndiskd.nwadapter'
           href: -ndiskd-nwadapter.md
-        - name: "!ndiskd.ndisrwlock"
+        - name: '!ndiskd.ndisrwlock'
           href: -ndiskd-ndisrwlock.md
-        - name: "!ndiskd.ndisslot"
+        - name: '!ndiskd.ndisslot'
           href: -ndiskd-ndisslot.md
-        - name: "!ndiskd.ndis"
+        - name: '!ndiskd.ndis'
           href: -ndiskd-ndis.md
-        - name: "!ndiskd.dbglevel"
+        - name: '!ndiskd.dbglevel'
           href: -ndiskd-dbglevel.md
-        - name: "!ndiskd.dbgsystems"
+        - name: '!ndiskd.dbgsystems'
           href: -ndiskd-dbgsystems.md
-        - name: "!ndiskd.ndiskdversion"
+        - name: '!ndiskd.ndiskdversion'
           href: -ndiskd-ndiskdversion.md
-        - name: "!ndiskd.netreport"
+        - name: '!ndiskd.netreport'
           href: -ndiskd-netreport.md
-        - name: "NDIS CX Extensions (Ndiskd.dll)"
-# Auto-expanded node
-          items: 
-          - name: "!ndiskd.cxadapter"
+        - name: NDIS CX Extensions (Ndiskd.dll)
+          items:
+          - name: '!ndiskd.cxadapter'
             href: -ndiskd-cxadapter.md
-          - name: "!ndiskd.netqueue"
+          - name: '!ndiskd.netqueue'
             href: -ndiskd-netqueue.md
-          - name: "!ndiskd.netrb"
+          - name: '!ndiskd.netrb'
             href: -ndiskd-netrb.md
-          - name: "!ndiskd.netpacket"
+          - name: '!ndiskd.netpacket'
             href: -ndiskd-netpacket.md
-          - name: "!ndiskd.netfragment"
+          - name: '!ndiskd.netfragment'
             href: -ndiskd-netfragment.md
-          - name: "!ndiskd.nrc"
+          - name: '!ndiskd.nrc'
             href: -ndiskd-nrc.md
-          - name: "!ndiskd.netring"
+          - name: '!ndiskd.netring'
             href: -ndiskd-netring.md
-      - name: "RPC Extensions (Rpcexts.dll)"
-# Auto-expanded node
-        items: 
-        - name: "RPC Extensions (Rpcexts.dll)"
+      - name: RPC Extensions (Rpcexts.dll)
+        items:
+        - name: RPC Extensions (Rpcexts.dll)
           href: rpc-extensions--rpcexts-dll-.md
-        - name: "!rpcexts.eeinfo"
+        - name: '!rpcexts.eeinfo'
           href: -rpcexts-eeinfo.md
-        - name: "!rpcexts.eerecord"
+        - name: '!rpcexts.eerecord'
           href: -rpcexts-eerecord.md
-        - name: "!rpcexts.getcallinfo"
+        - name: '!rpcexts.getcallinfo'
           href: -rpcexts-getcallinfo.md
-        - name: "!rpcexts.getclientcallinfo"
+        - name: '!rpcexts.getclientcallinfo'
           href: -rpcexts-getclientcallinfo.md
-        - name: "!rpcexts.getdbgcell"
+        - name: '!rpcexts.getdbgcell'
           href: -rpcexts-getdbgcell.md
-        - name: "!rpcexts.getendpointinfo"
+        - name: '!rpcexts.getendpointinfo'
           href: -rpcexts-getendpointinfo.md
-        - name: "!rpcexts.getthreadinfo"
+        - name: '!rpcexts.getthreadinfo'
           href: -rpcexts-getthreadinfo.md
-        - name: "!rpcexts.help"
+        - name: '!rpcexts.help'
           href: -rpcexts-help.md
-        - name: "!rpcexts.rpcreadstack"
+        - name: '!rpcexts.rpcreadstack'
           href: -rpcexts-rpcreadstack.md
-        - name: "!rpcexts.rpctime"
+        - name: '!rpcexts.rpctime'
           href: -rpcexts-rpctime.md
-        - name: "!rpcexts.thread"
+        - name: '!rpcexts.thread'
           href: -rpcexts-thread.md
-      - name: "ACPI Extensions (Acpikd.dll and Kdexts.dll)"
-# Auto-expanded node
-        items: 
-        - name: "ACPI Extensions (Acpikd.dll and Kdexts.dll)"
+      - name: ACPI Extensions (Acpikd.dll and Kdexts.dll)
+        items:
+        - name: ACPI Extensions (Acpikd.dll and Kdexts.dll)
           href: acpi-extensions--acpikd-dll-and-kdexts-dll-.md
-        - name: "!acpicache"
+        - name: '!acpicache'
           href: -acpicache.md
-        - name: "!acpiinf"
+        - name: '!acpiinf'
           href: -acpiinf.md
-        - name: "!acpiirqarb"
+        - name: '!acpiirqarb'
           href: -acpiirqarb.md
-        - name: "!acpikd.help"
+        - name: '!acpikd.help'
           href: -acpikd-help.md
-        - name: "!amli ?"
+        - name: '!amli ?'
           href: -amli--.md
-        - name: "!amli bc"
+        - name: '!amli bc'
           href: -amli-bc.md
-        - name: "!amli bd"
+        - name: '!amli bd'
           href: -amli-bd.md
-        - name: "!amli be"
+        - name: '!amli be'
           href: -amli-be.md
-        - name: "!amli bl"
+        - name: '!amli bl'
           href: -amli-bl.md
-        - name: "!amli bp"
+        - name: '!amli bp'
           href: -amli-bp.md
-        - name: "!amli cl"
+        - name: '!amli cl'
           href: -amli-cl.md
-        - name: "!amli debugger"
+        - name: '!amli debugger'
           href: -amli-debugger.md
-        - name: "!amli dh"
+        - name: '!amli dh'
           href: -amli-dh.md
-        - name: "!amli dl"
+        - name: '!amli dl'
           href: -amli-dl.md
-        - name: "!amli dns"
+        - name: '!amli dns'
           href: -amli-dns.md
-        - name: "!amli do"
+        - name: '!amli do'
           href: -amli-do.md
-        - name: "!amli ds"
+        - name: '!amli ds'
           href: -amli-ds.md
-        - name: "!amli find"
+        - name: '!amli find'
           href: -amli-find.md
-        - name: "!amli lc"
+        - name: '!amli lc'
           href: -amli-lc.md
-        - name: "!amli ln"
+        - name: '!amli ln'
           href: -amli-ln.md
-        - name: "!amli r"
+        - name: '!amli r'
           href: -amli-r.md
-        - name: "!amli set"
+        - name: '!amli set'
           href: -amli-set.md
-        - name: "!amli u"
+        - name: '!amli u'
           href: -amli-u.md
-        - name: "!facs"
+        - name: '!facs'
           href: -facs.md
-        - name: "!fadt"
+        - name: '!fadt'
           href: -fadt.md
-        - name: "!mapic"
+        - name: '!mapic'
           href: -mapic.md
-        - name: "!nsobj"
+        - name: '!nsobj'
           href: -nsobj.md
-        - name: "!nstree"
+        - name: '!nstree'
           href: -nstree.md
-        - name: "!rsdt"
+        - name: '!rsdt'
           href: -rsdt.md
-      - name: "Kernel Streaming Extensions (Ks.dll)"
-# Auto-expanded node
-        items: 
-        - name: "Kernel Streaming Extensions (Ks.dll)"
+      - name: Kernel Streaming Extensions (Ks.dll)
+        items:
+        - name: Kernel Streaming Extensions (Ks.dll)
           href: kernel-streaming-extensions--ks-dll-.md
-        - name: "!ks.help"
+        - name: '!ks.help'
           href: -ks-help.md
-        - name: "!ks.kshelp"
+        - name: '!ks.kshelp'
           href: -ks-kshelp.md
-        - name: "!ks.pchelp"
+        - name: '!ks.pchelp'
           href: -ks-pchelp.md
-        - name: "!ks.allstreams"
+        - name: '!ks.allstreams'
           href: -ks-allstreams.md
-        - name: "!ks.automation"
+        - name: '!ks.automation'
           href: -ks-automation.md
-        - name: "!ks.devhdr"
+        - name: '!ks.devhdr'
           href: -ks-devhdr.md
-        - name: "!ks.dump"
+        - name: '!ks.dump'
           href: -ks-dump.md
-        - name: "!ks.dumpbag"
+        - name: '!ks.dumpbag'
           href: -ks-dumpbag.md
-        - name: "!ks.dumpcircuit"
+        - name: '!ks.dumpcircuit'
           href: -ks-dumpcircuit.md
-        - name: "!ks.dumplog"
+        - name: '!ks.dumplog'
           href: -ks-dumplog.md
-        - name: "!ks.dumpqueue"
+        - name: '!ks.dumpqueue'
           href: -ks-dumpqueue.md
-        - name: "!ks.enumdevobj"
+        - name: '!ks.enumdevobj'
           href: -ks-enumdevobj.md
-        - name: "!ks.enumdrvobj"
+        - name: '!ks.enumdrvobj'
           href: -ks-enumdrvobj.md
-        - name: "!ks.eval"
+        - name: '!ks.eval'
           href: -ks-eval.md
-        - name: "!ks.findlive"
+        - name: '!ks.findlive'
           href: -ks-findlive.md
-        - name: "!ks.forcedump"
+        - name: '!ks.forcedump'
           href: -ks-forcedump.md
-        - name: "!ks.graph"
+        - name: '!ks.graph'
           href: -ks-graph.md
-        - name: "!ks.libexts"
+        - name: '!ks.libexts'
           href: -ks-libexts.md
-        - name: "!ks.objhdr"
+        - name: '!ks.objhdr'
           href: -ks-objhdr.md
-        - name: "!ks.ohdr"
+        - name: '!ks.ohdr'
           href: -ks-ohdr.md
-        - name: "!ks.pciaudio"
+        - name: '!ks.pciaudio'
           href: -ks-pciaudio.md
-        - name: "!ks.pciks"
+        - name: '!ks.pciks'
           href: -ks-pciks.md
-        - name: "!ks.topology"
+        - name: '!ks.topology'
           href: -ks-topology.md
-      - name: "ACX KD Audio Class Extension (AcxKd.dll)"
-# Auto-expanded node
-        items: 
-        - name: "ACX KD Audio Class Extension (AcxKd.dll)"
-          href: -acxkd.md          
-      - name: "SCSI Miniport Extensions (Scsikd.dll and Minipkd.dll)"
-# Auto-expanded node
-        items: 
-        - name: "SCSI Miniport Extensions (Scsikd.dll and Minipkd.dll)"
+      - name: ACX KD Audio Class Extension (AcxKd.dll)
+        items:
+        - name: ACX KD Audio Class Extension (AcxKd.dll)
+          href: -acxkd.md
+      - name: SCSI Miniport Extensions (Scsikd.dll and Minipkd.dll)
+        items:
+        - name: SCSI Miniport Extensions (Scsikd.dll and Minipkd.dll)
           href: scsi-miniport-extensions--scsikd-dll-and-minipkd-dll-.md
-        - name: "!scsikd.help"
+        - name: '!scsikd.help'
           href: -scsikd-help.md
-        - name: "!scsikd.classext"
+        - name: '!scsikd.classext'
           href: -scsikd-classext.md
-        - name: "!scsikd.scsiext"
+        - name: '!scsikd.scsiext'
           href: -scsikd-scsiext.md
-        - name: "!scsikd.srbdata"
+        - name: '!scsikd.srbdata'
           href: -scsikd-srbdata.md
-        - name: "!minipkd.help"
+        - name: '!minipkd.help'
           href: -minipkd-help.md
-        - name: "!minipkd.adapter"
+        - name: '!minipkd.adapter'
           href: -minipkd-adapter.md
-        - name: "!minipkd.adapters"
+        - name: '!minipkd.adapters'
           href: -minipkd-adapters.md
-        - name: "!minipkd.exports"
+        - name: '!minipkd.exports'
           href: -minipkd-exports.md
-        - name: "!minipkd.lun"
+        - name: '!minipkd.lun'
           href: -minipkd-lun.md
-        - name: "!minipkd.portconfig"
+        - name: '!minipkd.portconfig'
           href: -minipkd-portconfig.md
-        - name: "!minipkd.req"
+        - name: '!minipkd.req'
           href: -minipkd-req.md
-        - name: "!minipkd.srb"
+        - name: '!minipkd.srb'
           href: -minipkd-srb.md
-      - name: "Windows Driver Framework Extensions (Wdfkd.dll)"
-# Auto-expanded node
-        items: 
-        - name: "Windows Driver Framework Extensions (Wdfkd.dll)"
+      - name: Windows Driver Framework Extensions (Wdfkd.dll)
+        items:
+        - name: Windows Driver Framework Extensions (Wdfkd.dll)
           href: kernel-mode-driver-framework-extensions--wdfkd-dll-.md
-        - name: "!wdfkd.help"
+        - name: '!wdfkd.help'
           href: -wdfkd-help.md
-        - name: "!wdfkd.wdfchildlist"
+        - name: '!wdfkd.wdfchildlist'
           href: -wdfkd-wdfchildlist.md
-        - name: "!wdfkd.wdfcollection"
+        - name: '!wdfkd.wdfcollection'
           href: -wdfkd-wdfcollection.md
-        - name: "!wdfkd.wdfcommonbuffer"
+        - name: '!wdfkd.wdfcommonbuffer'
           href: -wdfkd-wdfcommonbuffer.md
-        - name: "!wdfkd.wdfcrashdump"
+        - name: '!wdfkd.wdfcrashdump'
           href: -wdfkd-wdfcrashdump.md
-        - name: "!wdfkd.wdfdevext"
+        - name: '!wdfkd.wdfdevext'
           href: -wdfkd-wdfdevext.md
-        - name: "!wdfkd.wdfdevice"
+        - name: '!wdfkd.wdfdevice'
           href: -wdfkd-wdfdevice.md
-        - name: "!wdfkd.wdfdeviceinterrupts"
+        - name: '!wdfkd.wdfdeviceinterrupts'
           href: -wdfkd-wdfdeviceinterrupts.md
-        - name: "!wdfkd.wdfdevicequeues"
+        - name: '!wdfkd.wdfdevicequeues'
           href: -wdfkd-wdfdevicequeues.md
-        - name: "!wdfkd.wdfdmaenabler"
+        - name: '!wdfkd.wdfdmaenabler'
           href: -wdfkd-wdfdmaenabler.md
-        - name: "!wdfkd.wdfdmaenablers"
+        - name: '!wdfkd.wdfdmaenablers'
           href: -wdfkd-wdfdmaenablers.md
-        - name: "!wdfkd.wdfdmatransaction"
+        - name: '!wdfkd.wdfdmatransaction'
           href: -wdfkd-wdfdmatransaction.md
-        - name: "!wdfkd.wdfdriverinfo"
+        - name: '!wdfkd.wdfdriverinfo'
           href: -wdfkd-wdfdriverinfo.md
-        - name: "!wdfkd.wdfextendwatchdog"
+        - name: '!wdfkd.wdfextendwatchdog'
           href: -wdfkd-wdfextendwatchdog.md
-        - name: "!wdfkd.wdffindobjects"
+        - name: '!wdfkd.wdffindobjects'
           href: -wdfkd-wdffindobjects.md
-        - name: "!wdfkd.wdfforwardprogress"
+        - name: '!wdfkd.wdfforwardprogress'
           href: -wdfkd-wdfforwardprogress.md
-        - name: "!wdfkd.wdfgetdriver"
+        - name: '!wdfkd.wdfgetdriver'
           href: -wdfkd-wdfgetdriver.md
-        - name: "!wdfkd.wdfhandle"
+        - name: '!wdfkd.wdfhandle'
           href: -wdfkd-wdfhandle.md
-        - name: "!wdfkd.wdfhelp"
+        - name: '!wdfkd.wdfhelp'
           href: -wdfkd-wdfhelp.md
-        - name: "!wdfkd.wdfinterrupt"
+        - name: '!wdfkd.wdfinterrupt'
           href: -wdfkd-wdfinterrupt.md
-        - name: "!wdfkd.wdfiotarget"
+        - name: '!wdfkd.wdfiotarget'
           href: -wdfkd-wdfiotarget.md
-        - name: "!wdfkd.wdfldr"
+        - name: '!wdfkd.wdfldr'
           href: -wdfkd-wdfldr.md
-        - name: "!wdfkd.wdflogdump"
+        - name: '!wdfkd.wdflogdump'
           href: -wdfkd-wdflogdump.md
-        - name: "!wdfkd.wdflogsave"
+        - name: '!wdfkd.wdflogsave'
           href: -wdfkd-wdflogsave.md
-        - name: "!wdfkd.wdfmemory"
+        - name: '!wdfkd.wdfmemory'
           href: -wdfkd-wdfmemory.md
-        - name: "!wdfkd.wdfobject"
+        - name: '!wdfkd.wdfobject'
           href: -wdfkd-wdfobject.md
-        - name: "!wdfkd.wdfopenhandles"
+        - name: '!wdfkd.wdfopenhandles'
           href: -wdfkd-wdfopenhandles.md
-        - name: "!wdfkd.wdfpoolusage"
+        - name: '!wdfkd.wdfpoolusage'
           href: -wdfkd-wdfpoolusage.md
-        - name: "!wdfkd.wdfqueue"
+        - name: '!wdfkd.wdfqueue'
           href: -wdfkd-wdfqueue.md
-        - name: "!wdfkd.wdfrequest"
+        - name: '!wdfkd.wdfrequest'
           href: -wdfkd-wdfrequest.md
-        - name: "!wdfkd.wdfsearchpath"
+        - name: '!wdfkd.wdfsearchpath'
           href: -wdfkd-wdfsearchpath.md
-        - name: "!wdfkd.wdfsettraceprefix"
+        - name: '!wdfkd.wdfsettraceprefix'
           href: -wdfkd-wdfsettraceprefix.md
-        - name: "!wdfkd.wdfsetdriver"
+        - name: '!wdfkd.wdfsetdriver'
           href: -wdfkd-wdfsetdriver.md
-        - name: "!wdfkd.wdfspinlock"
+        - name: '!wdfkd.wdfspinlock'
           href: -wdfkd-wdfspinlock.md
-        - name: "!wdfkd.wdftagtracker"
+        - name: '!wdfkd.wdftagtracker'
           href: -wdfkd-wdftagtracker.md
-        - name: "!wdfkd.wdftmffile"
+        - name: '!wdfkd.wdftmffile'
           href: -wdfkd-wdftmffile.md
-        - name: "!wdfkd.wdftraceprtdebug"
+        - name: '!wdfkd.wdftraceprtdebug'
           href: -wdfkd-wdftraceprtdebug.md
-        - name: "!wdfkd.wdfumdevstack"
+        - name: '!wdfkd.wdfumdevstack'
           href: -wdfkd-wdfumdevstack.md
-        - name: "!wdfkd.wdfumdevstacks"
+        - name: '!wdfkd.wdfumdevstacks'
           href: -wdfkd-wdfumdevstacks.md
-        - name: "!wdfkd.wdfumdownirp"
+        - name: '!wdfkd.wdfumdownirp'
           href: -wdfkd-wdfumdownirp.md
-        - name: "!wdfkd.wdfumfile"
+        - name: '!wdfkd.wdfumfile'
           href: -wdfkd-wdfumfile.md
-        - name: "!wdfkd.wdfumirp"
+        - name: '!wdfkd.wdfumirp'
           href: -wdfkd-wdfumirp.md
-        - name: "!wdfkd.wdfumirps"
+        - name: '!wdfkd.wdfumirps'
           href: -wdfkd-wdfumirps.md
-        - name: "!wdfkd_wdfumtriage"
+        - name: '!wdfkd_wdfumtriage'
           href: -wdfkd-wdfumtriage.md
-        - name: "!wdfkd.wdfusbdevice"
+        - name: '!wdfkd.wdfusbdevice'
           href: -wdfkd-wdfusbdevice.md
-        - name: "!wdfkd.wdfusbinterface"
+        - name: '!wdfkd.wdfusbinterface'
           href: -wdfkd-wdfusbinterface.md
-        - name: "!wdfkd.wdfusbpipe"
+        - name: '!wdfkd.wdfusbpipe'
           href: -wdfkd-wdfusbpipe.md
-        - name: "!wdfkd.wdfwmi"
+        - name: '!wdfkd.wdfwmi'
           href: -wdfkd-wdfwmi.md
-      - name: "User-Mode Driver Framework Extensions (Wudfext.dll)"
-# Auto-expanded node
-        items: 
-        - name: "User-Mode Driver Framework Extensions (Wudfext.dll)"
+      - name: User-Mode Driver Framework Extensions (Wudfext.dll)
+        items:
+        - name: User-Mode Driver Framework Extensions (Wudfext.dll)
           href: user-mode-driver-framework-extensions--wudfext-dll-.md
-        - name: "!wudfext.help"
+        - name: '!wudfext.help'
           href: -wudfext-help.md
-        - name: "!wudfext.umdevstack"
+        - name: '!wudfext.umdevstack'
           href: -wudfext-umdevstack.md
-        - name: "!wudfext.umdevstacks"
+        - name: '!wudfext.umdevstacks'
           href: -wudfext-umdevstacks.md
-        - name: "!wudfext.umfile"
+        - name: '!wudfext.umfile'
           href: -wudfext-umfile.md
-        - name: "!wudfext.umirp"
+        - name: '!wudfext.umirp'
           href: -wudfext-umirp.md
-        - name: "!wudfext.umirps"
+        - name: '!wudfext.umirps'
           href: -wudfext-umirps.md
-        - name: "!wudfext.wudfdevice"
+        - name: '!wudfext.wudfdevice'
           href: -wudfext-wudfdevice.md
-        - name: "!wudfext.wudfdevicequeues"
+        - name: '!wudfext.wudfdevicequeues'
           href: -wudfext-wudfdevicequeues.md
-        - name: "!wudfext.wudfdownkmirp"
+        - name: '!wudfext.wudfdownkmirp'
           href: -wudfext-wudfdownkmirp.md
-        - name: "!wudfext.wudfdriverinfo"
+        - name: '!wudfext.wudfdriverinfo'
           href: -wudfext-wudfdriverinfo.md
-        - name: "!wudfext.wudfdumpobjects"
+        - name: '!wudfext.wudfdumpobjects'
           href: -wudfext-wudfdumpobjects.md
-        - name: "!wudfext.wudffile"
+        - name: '!wudfext.wudffile'
           href: -wudfext-wudffile.md
-        - name: "!wudfext.wudffilehandletarget"
+        - name: '!wudfext.wudffilehandletarget'
           href: -wudfext-wudffilehandletarget.md
-        - name: "!wudfext.wudfiotarget"
+        - name: '!wudfext.wudfiotarget'
           href: -wudfext-wudfiotarget.md
-        - name: "!wudfext.wudfobject"
+        - name: '!wudfext.wudfobject'
           href: -wudfext-wudfobject.md
-        - name: "!wudfext.wudfqueue"
+        - name: '!wudfext.wudfqueue'
           href: -wudfext-wudfqueue.md
-        - name: "!wudfext.wudfrefhist"
+        - name: '!wudfext.wudfrefhist'
           href: -wudfext-wudfrefhist.md
-        - name: "!wudfext.wudfrequest"
+        - name: '!wudfext.wudfrequest'
           href: -wudfext-wudfrequest.md
-        - name: "!wudfext.wudfusbinterface"
+        - name: '!wudfext.wudfusbinterface'
           href: -wudfext-wudfusbinterface.md
-        - name: "!wudfext.wudfusbpipe"
+        - name: '!wudfext.wudfusbpipe'
           href: -wudfext-wudfusbpipe.md
-        - name: "!wudfext.wudfusbtarget"
+        - name: '!wudfext.wudfusbtarget'
           href: -wudfext-wudfusbtarget.md
-      - name: "WMI Tracing Extensions (Wmitrace.dll)"
-# Auto-expanded node
-        items: 
-        - name: "WMI Tracing Extensions (Wmitrace.dll)"
+      - name: WMI Tracing Extensions (Wmitrace.dll)
+        items:
+        - name: WMI Tracing Extensions (Wmitrace.dll)
           href: wmi-tracing-extensions--wmitrace-dll-.md
-        - name: "!wmitrace.disable"
+        - name: '!wmitrace.disable'
           href: -wmitrace-disable.md
-        - name: "!wmitrace.dumpmini"
+        - name: '!wmitrace.dumpmini'
           href: -wmitrace-dumpmini.md
-        - name: "!wmitrace.dumpminievent"
+        - name: '!wmitrace.dumpminievent'
           href: -wmitrace-dumpminievent.md
-        - name: "!wmitrace.dynamicprint"
+        - name: '!wmitrace.dynamicprint'
           href: -wmitrace-dynamicprint.md
-        - name: "!wmitrace.enable"
+        - name: '!wmitrace.enable'
           href: -wmitrace-enable.md
-        - name: "!wmitrace.eventlogdump"
+        - name: '!wmitrace.eventlogdump'
           href: -wmitrace-eventlogdump.md
-        - name: "!wmitrace.help"
+        - name: '!wmitrace.help'
           href: -wmitrace-help.md
-        - name: "!wmitrace.logdump"
+        - name: '!wmitrace.logdump'
           href: -wmitrace-logdump.md
-        - name: "!wmitrace.logger"
+        - name: '!wmitrace.logger'
           href: -wmitrace-logger.md
-        - name: "!wmitrace.logsave"
+        - name: '!wmitrace.logsave'
           href: -wmitrace-logsave.md
-        - name: "!wmitrace.searchpath"
+        - name: '!wmitrace.searchpath'
           href: -wmitrace-searchpath.md
-        - name: "!wmitrace.setprefix"
+        - name: '!wmitrace.setprefix'
           href: -wmitrace-setprefix.md
-        - name: "!wmitrace.start"
+        - name: '!wmitrace.start'
           href: -wmitrace-start.md
-        - name: "!wmitrace.stop"
+        - name: '!wmitrace.stop'
           href: -wmitrace-stop.md
-        - name: "!wmitrace.strdump"
+        - name: '!wmitrace.strdump'
           href: -wmitrace-strdump.md
-        - name: "!wmitrace.tmffile"
+        - name: '!wmitrace.tmffile'
           href: -wmitrace-tmffile.md
-        - name: "!wmitrace.traceoperation"
+        - name: '!wmitrace.traceoperation'
           href: -wmitrace-traceoperation.md

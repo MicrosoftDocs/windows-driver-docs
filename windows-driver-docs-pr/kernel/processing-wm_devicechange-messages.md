@@ -1,12 +1,11 @@
 ---
 title: Processing WM_DEVICECHANGE Messages
 description: Processing WM_DEVICECHANGE messages
-ms.date: 06/06/2022
+ms.date: 08/20/2025
 ms.topic: concept-article
 ---
 
 # Processing WM_DEVICECHANGE messages
-
 
 How a user-mode application processes `WM_DEVICECHANGE` messages depends on whether the application is based purely on the Win32 API or whether it is based on the Microsoft Foundation Class (MFC) library.
 
@@ -14,7 +13,7 @@ How a user-mode application processes `WM_DEVICECHANGE` messages depends on whet
 
 Win32-based applications process the messages that are sent to the application's window(s) by implementing a *Window Procedure*. For more information about window procedures, see the [Window Procedures](/windows/win32/winmsg/window-procedures) topic in the Microsoft Windows SDK documentation.
 
-The following code example shows how to process `WM_DEVICECHANGE` messages in a Win32-based application:
+The following code example shows how to process [WM_DEVICECHANGE](/windows/win32/devio/wm-devicechange) messages in a Win32-based application:
 
 ```cpp
 // Prototype for the function that handles the
@@ -88,7 +87,7 @@ OnDeviceChange(
     if (devHdr->dbch_devicetype == DBT_DEVTYP_DEVICEINTERFACE)
     {
       // Get a pointer to the device interface structure
-      devInterface = (PDEV_BROADCAST_INTERFACE)devHdr;
+      devInterface = (PDEV_BROADCAST_DEVICEINTERFACE)devHdr;
 
       // Check whether this is a message about a processor
       if (IsEqualGUID(
@@ -178,7 +177,7 @@ CAppWnd::OnDeviceChange(
 
     if (devHdr->dbch_devicetype == DBT_DEVTYP_DEVICEINTERFACE)
     {
-      devInterface = (PDEV_BROADCAST_INTERFACE)devHdr;
+      devInterface = (PDEV_BROADCAST_DEVICEINTERFACE)devHdr;
 
       if (IsEqualGUID(
             devInterface->dbcc_classguid,

@@ -6,6 +6,7 @@ keywords:
 - capturing video WDK AVStream , capturing process
 ms.date: 04/20/2017
 ms.topic: concept-article
+ms.custom: sfi-ropc-nochange
 ---
 
 # Capturing Video
