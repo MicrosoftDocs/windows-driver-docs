@@ -10,6 +10,7 @@ keywords:
 - canceling send operations WDK networking
 - cancellation IDs WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Canceling a Send Operation

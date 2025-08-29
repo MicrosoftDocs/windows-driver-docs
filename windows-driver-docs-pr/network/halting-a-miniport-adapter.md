@@ -9,6 +9,7 @@ keywords:
 - halting adapters
 - stopping adapters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Halting a Miniport Adapter

@@ -2,6 +2,7 @@
 title: Microsoft OS 2.0 Descriptors Specification
 description: This article defines and describes the implementation of version 2.0 of the Microsoft OS descriptors.
 ms.date: 09/18/2024
+ms.topic: reference
 ---
 
 # Microsoft OS 2.0 Descriptors Specification

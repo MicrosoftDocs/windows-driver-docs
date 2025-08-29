@@ -10,6 +10,7 @@ keywords:
 - canceling trace sessions
 - restarting trace sessions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Joining a Trace Session

@@ -7,6 +7,7 @@ keywords:
 - revision history WDK UMDF
 - version information WDK UMDF
 ms.date: 06/06/2024
+ms.topic: release-notes
 ---
 
 # UMDF Version History

@@ -9,6 +9,7 @@ keywords:
 - allocation swizzle locks WDK display
 - evicted allocations WDK display
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Locking Swizzled Allocations

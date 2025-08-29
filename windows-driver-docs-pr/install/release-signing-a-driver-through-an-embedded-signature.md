@@ -2,6 +2,7 @@
 title: Release-Signing a Driver Binary through an Embedded Signature
 description: Release-Signing a Driver Binary through an Embedded Signature
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Release-Signing a Driver Binary through an Embedded Signature

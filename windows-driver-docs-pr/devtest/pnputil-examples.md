@@ -2,6 +2,7 @@
 title: PnPUtil Examples
 description: PnPUtil Examples
 ms.date: 12/12/2024
+ms.topic: how-to
 ---
 
 # PnPUtil Examples

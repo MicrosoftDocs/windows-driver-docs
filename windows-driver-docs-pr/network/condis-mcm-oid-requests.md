@@ -5,6 +5,7 @@ keywords:
 - miniport call managers WDK networking , OID requests
 - MCMs WDK networking , OID requests
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # CoNDIS MCM OID Requests

@@ -3,6 +3,7 @@ title: Porting your Driver to 64-Bit Windows
 description: Porting Your Driver to 64-Bit Windows
 keywords: ["64-bit WDK kernel", "thunking WDK", "WOW64 thunking layer WDK", "converting parameters to fixed-precision types"]
 ms.date: 11/05/2024
+ms.topic: concept-article
 ---
 
 # Using single source code base for 64-bit Windows

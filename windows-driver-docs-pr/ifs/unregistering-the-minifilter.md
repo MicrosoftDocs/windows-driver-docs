@@ -4,6 +4,7 @@ description: Unregistering the Minifilter
 keywords:
 - unregistering minifilters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Unregistering the Minifilter

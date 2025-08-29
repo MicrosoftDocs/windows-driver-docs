@@ -2,6 +2,7 @@
 title: State Indicators
 description: This section describes the states of the mode and docking indicators.
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # State indicators

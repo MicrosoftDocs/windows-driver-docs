@@ -7,6 +7,7 @@ keywords:
 - data bypass mode WDK networking
 - bypass mode WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Data Bypass Mode

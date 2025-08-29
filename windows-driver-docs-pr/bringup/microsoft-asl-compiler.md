@@ -2,6 +2,7 @@
 title: Microsoft ASL Compiler
 description: Version 5.0 of the Microsoft ASL compiler supports the features in the ACPI 5.0 specification.
 ms.date: 09/25/2024
+ms.topic: reference
 ---
 
 # Microsoft ASL compiler

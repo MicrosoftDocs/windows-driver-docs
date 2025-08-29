@@ -2,6 +2,7 @@
 title: Identity (SoftwareInfo)
 description: Identity (SoftwareInfo)
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Identity (SoftwareInfo)

@@ -4,6 +4,7 @@ description: Warning C30033 Executable allocation was detected in a driver compi
 ms.date: 04/20/2017
 f1_keywords: 
   - "C30033"
+ms.topic: reference
 ---
 
 # C30033

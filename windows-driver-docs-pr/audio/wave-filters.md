@@ -17,6 +17,7 @@ keywords:
 - audio devices, WaveCyclic
 - WaveCyclic, filter
 ms.date: 05/08/2018
+ms.topic: concept-article
 ---
 
 # Wave Filters

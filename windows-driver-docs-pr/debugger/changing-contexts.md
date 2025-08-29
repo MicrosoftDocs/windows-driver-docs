@@ -3,6 +3,7 @@ title: Changing Contexts
 description: Changing Contexts
 keywords: ["context", "logon session, context", "context, session context", "session, context", "user sessions", "session"]
 ms.date: 08/02/2018
+ms.topic: how-to
 ---
 
 # Changing Contexts

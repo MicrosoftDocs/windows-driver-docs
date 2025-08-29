@@ -2,6 +2,7 @@
 title: Freeing a VM Queue
 description: Freeing a VM Queue
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Freeing a VM Queue

@@ -3,6 +3,7 @@ title: "Time Travel Debugging Extension !positions Command "
 description: "The !positions extension displays all the active threads, including their current positions."
 keywords: ["positions", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 11/13/2024
+ms.topic: concept-article
 ---
 
 # !positions

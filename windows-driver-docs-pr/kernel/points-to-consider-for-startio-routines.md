@@ -3,6 +3,7 @@ title: Points to Consider for StartIo Routines
 description: Points to Consider for StartIo Routines
 keywords: ["StartIo routines, about StartIo routines"]
 ms.date: 06/16/2017
+ms.topic: best-practice
 ---
 
 # Points to Consider for StartIo Routines

@@ -4,6 +4,7 @@ description: Getting Started with Biometric Drivers
 keywords:
 - biometric drivers WDK , about biometric drivers
 ms.date: 12/09/2024
+ms.topic: get-started
 ---
 
 # Getting Started with Biometric Drivers

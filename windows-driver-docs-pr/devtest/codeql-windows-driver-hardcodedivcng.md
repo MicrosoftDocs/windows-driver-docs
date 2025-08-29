@@ -2,6 +2,7 @@
 title: HardcodedIVCNG(Supplemental Windows Driver CodeQL Query)
 description: HardcodedIVCNG a Supplemental Windows Driver CodeQL Query
 ms.date: 01/11/2021
+ms.topic: best-practice
 ---
 
 # HardcodedIVCNG (Windows Driver CodeQL Query)

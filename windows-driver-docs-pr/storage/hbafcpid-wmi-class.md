@@ -2,6 +2,7 @@
 title: HBAFCPID WMI Class
 description: HBAFCPID WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # HBAFCPID WMI Class

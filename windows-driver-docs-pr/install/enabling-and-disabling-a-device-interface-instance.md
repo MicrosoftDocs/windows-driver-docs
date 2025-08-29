@@ -7,6 +7,7 @@ keywords:
 - IoSetDeviceInterfaceState
 - device interface classes WDK device installations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Enabling and Disabling a Device Interface Instance

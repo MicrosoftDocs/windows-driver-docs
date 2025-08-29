@@ -2,6 +2,7 @@
 title: Handling OID_NIC_SWITCH_ALLOCATE_VF Requests
 description: Handling OID_NIC_SWITCH_ALLOCATE_VF Requests
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling OID\_NIC\_SWITCH\_ALLOCATE\_VF Requests

@@ -4,6 +4,7 @@ description: Routines Implemented by the Kernel Network Mini-Redirector
 keywords:
 - mini-redirectors WDK , routines implemented
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Routines Implemented by the Kernel Network Mini-Redirector

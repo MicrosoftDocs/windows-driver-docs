@@ -2,6 +2,7 @@
 title: Other Visual Items of the Segment Viewer Window
 description: When the Segment Viewer window is invoked from pressing the Segment Viewer button in the Object Details dialog that is displayed. 
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Other Visual Items of the Segment Viewer Window

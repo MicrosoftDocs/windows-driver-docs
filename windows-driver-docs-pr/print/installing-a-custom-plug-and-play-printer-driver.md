@@ -4,6 +4,7 @@ description: Installing a Custom Plug and Play Printer Driver
 keywords:
 - customizing printer drivers WDK , Plug and Play
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Installing a Custom Plug and Play Printer Driver

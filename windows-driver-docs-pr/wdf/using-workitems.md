@@ -2,6 +2,7 @@
 title: Using Work Items
 description: Using Work Items
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Using Work Items

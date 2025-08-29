@@ -2,6 +2,7 @@
 title: Simple Duplex-Capable Document Feeder
 description: Simple Duplex-Capable Document Feeder
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Simple Duplex-Capable Document Feeder

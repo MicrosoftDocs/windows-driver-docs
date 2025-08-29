@@ -2,6 +2,7 @@
 title: What is an Autologger
 description: What is an autologger
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # What is an autologger?

@@ -2,6 +2,7 @@
 title: Using MakeCat to Create a Catalog File
 description: Using MakeCat to Create a Catalog File
 ms.date: 02/11/2022
+ms.topic: how-to
 ---
 
 # Using MakeCat to Create a Catalog File

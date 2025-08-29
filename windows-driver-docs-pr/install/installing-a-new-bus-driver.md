@@ -2,6 +2,7 @@
 title: Installing a New Bus Driver
 description: Installing a New Bus Driver
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Installing a New Bus Driver

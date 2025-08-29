@@ -10,6 +10,7 @@ keywords:
 - User-Mode Driver Framework WDK , registry
 - keys WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using the Registry in UMDF 1.x Drivers

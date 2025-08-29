@@ -6,6 +6,7 @@ keywords:
 - intermediate drivers WDK networking , registering
 - NDIS intermediate drivers WDK , registering
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Registering an Intermediate Driver as a Protocol

@@ -2,6 +2,7 @@
 title: Static Driver Verifier Commands (MSBuild)
 description: Commands used with Static Driver Verifier
 ms.date: 07/02/2024
+ms.topic: reference
 ---
 
 # Static Driver Verifier commands (MSBuild)

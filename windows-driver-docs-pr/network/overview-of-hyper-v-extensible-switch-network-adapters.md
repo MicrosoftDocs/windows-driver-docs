@@ -2,6 +2,7 @@
 title: Overview of Hyper-V Extensible Switch Network Adapters
 description: Overview of Hyper-V Extensible Switch Network Adapters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Overview of Hyper-V Extensible Switch Network Adapters

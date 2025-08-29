@@ -7,6 +7,7 @@ keywords:
 - protocol drivers WDK
 - protocol drivers WDK , porting to NDIS 6.20
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Summary of Changes Required to Port a Protocol Driver to NDIS 6.20

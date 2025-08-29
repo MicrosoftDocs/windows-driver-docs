@@ -2,6 +2,7 @@
 title: File System Security Issues
 description: File System Security Issues
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # File System Security Issues

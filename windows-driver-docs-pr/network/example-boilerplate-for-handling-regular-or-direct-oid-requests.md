@@ -2,6 +2,7 @@
 title: Example boilerplate for handling Regular or Direct OID requests
 description: This topic describes example boilerplate code for handling Regular or Direct OID requests
 ms.date: 09/28/2017
+ms.topic: concept-article
 ---
 
 # Example boilerplate for handling Regular or Direct OID requests

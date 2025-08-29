@@ -6,6 +6,7 @@ keywords:
 - writing callback routines
 - IRQL, preoperation callback routine
 ms.date: 01/24/2023
+ms.topic: concept-article
 ---
 
 # Writing Pre-operation Callback Routines

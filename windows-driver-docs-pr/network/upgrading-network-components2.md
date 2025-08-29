@@ -9,6 +9,7 @@ keywords:
 - notifications WDK networking , upgrading network components
 - upgrading network components WDK , steps
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Upgrading Network Components

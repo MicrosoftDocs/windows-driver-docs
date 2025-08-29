@@ -2,6 +2,7 @@
 title: WIA Minidriver Best Practices
 description: WIA Minidriver Best Practices
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # WIA Minidriver Best Practices

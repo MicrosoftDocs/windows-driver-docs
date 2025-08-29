@@ -2,6 +2,7 @@
 title: Using Activity ID GUIDs in USB ETW Traces
 description: This topic provides information about Activity ID GUIDs, how to add those GUIDs in the event trace providers, and view them in Netmon.
 ms.date: 01/17/2024
+ms.topic: concept-article
 ---
 
 # Using activity ID GUIDs in USB ETW traces

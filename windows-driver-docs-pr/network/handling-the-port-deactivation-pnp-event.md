@@ -7,6 +7,7 @@ keywords:
 - PnP event notifications WDK NDIS ports
 - deactivation PnP events WDK NDIS ports
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling the Port Deactivation PnP Event

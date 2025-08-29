@@ -17,6 +17,7 @@ keywords:
 - MultiChannel Streaming Tool WDK AVStream
 - USB Video Class descriptor viewer WDK AVStream
 ms.date: 04/23/2021
+ms.topic: system-utilities
 ---
 
 # AVStream testing and debugging

@@ -7,6 +7,7 @@ keywords:
 - base objects WDK UMDF
 - IWDFObject
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Framework Base Object

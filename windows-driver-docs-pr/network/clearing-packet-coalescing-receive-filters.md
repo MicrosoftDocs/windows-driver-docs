@@ -2,6 +2,7 @@
 title: Clearing Packet Coalescing Receive Filters
 description: Clearing Packet Coalescing Receive Filters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Clearing Packet Coalescing Receive Filters

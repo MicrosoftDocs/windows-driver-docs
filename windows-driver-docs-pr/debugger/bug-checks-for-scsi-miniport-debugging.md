@@ -3,6 +3,7 @@ title: Bug Checks for SCSI Miniport Debugging
 description: Bug Checks for SCSI Miniport Debugging
 keywords: ["SCSI Miniport debugging, bug checks"]
 ms.date: 05/23/2017
+ms.topic: troubleshooting-error-codes
 ---
 
 # Bug Checks for SCSI Miniport Debugging

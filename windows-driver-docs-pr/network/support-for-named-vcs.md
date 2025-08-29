@@ -9,6 +9,7 @@ keywords:
 - miniport call managers WDK networking , naming virtual connections
 - MCMs WDK networking , namin
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Support for Named VCs

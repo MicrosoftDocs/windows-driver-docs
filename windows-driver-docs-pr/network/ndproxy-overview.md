@@ -6,6 +6,7 @@ keywords:
 - NDISWAN WDK networking
 - architecture WDK WAN , NDPROXY
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # NDPROXY Overview

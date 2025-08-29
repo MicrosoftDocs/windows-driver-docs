@@ -9,6 +9,7 @@ keywords:
 - UMDF WDK , file object to handle I/O
 - user-mode drivers WDK UMDF , file object to handle I/O
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating a File Object to Handle I/O

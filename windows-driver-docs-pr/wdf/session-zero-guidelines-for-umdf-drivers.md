@@ -2,6 +2,7 @@
 title: Session Zero Guidelines for UMDF Drivers
 description: Session Zero Guidelines for UMDF Drivers
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # Session Zero Guidelines for UMDF Drivers

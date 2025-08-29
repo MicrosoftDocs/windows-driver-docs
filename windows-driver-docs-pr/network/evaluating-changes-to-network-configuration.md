@@ -6,6 +6,7 @@ keywords:
 - network notify objects WDK , change processing
 - changes to network configuration WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Evaluating Changes to Network Configuration

@@ -7,6 +7,7 @@ keywords:
 - file objects WDK UMDF
 - IWDFFile
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Framework File Object

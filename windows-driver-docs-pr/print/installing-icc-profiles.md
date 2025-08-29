@@ -5,6 +5,7 @@ keywords:
 - color management WDK print , installing ICC profiles
 - ICC profiles WDK print
 ms.date: 05/08/2023
+ms.topic: concept-article
 ---
 
 # Installing ICC Profiles

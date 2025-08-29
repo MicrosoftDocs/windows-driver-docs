@@ -9,6 +9,7 @@ keywords:
 - Windows Filtering Platform callout drivers WDK , filter additions and deletions
 - callout drivers WDK Windows Filtering Platform , filter additions and deletions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Processing Notify Callouts

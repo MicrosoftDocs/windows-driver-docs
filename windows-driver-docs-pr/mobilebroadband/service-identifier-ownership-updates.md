@@ -2,6 +2,7 @@
 title: Service Identifier Ownership Updates
 description: Service identifier ownership updates
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Service identifier ownership updates

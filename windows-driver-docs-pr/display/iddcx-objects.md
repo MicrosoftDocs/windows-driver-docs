@@ -7,6 +7,7 @@ keywords:
 - IDD objects
 - Indirect display driver, UMDF objects
 - IDD, UMDF objects
+ms.topic: concept-article
 ---
 
 # IddCx Objects

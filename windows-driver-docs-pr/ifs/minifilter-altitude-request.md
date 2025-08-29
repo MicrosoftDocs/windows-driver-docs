@@ -7,6 +7,7 @@ keywords:
 - minifilter altitude request
 - WDK request a filter altitude
 - WDK request a minifilter altitude
+ms.topic: how-to
 ---
 
 # Request a filter altitude identifier

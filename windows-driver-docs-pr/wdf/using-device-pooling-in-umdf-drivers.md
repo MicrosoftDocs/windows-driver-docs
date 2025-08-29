@@ -2,6 +2,7 @@
 title: Using Device Pooling in UMDF Drivers
 description: Using Device Pooling in UMDF Drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using Device Pooling in UMDF Drivers

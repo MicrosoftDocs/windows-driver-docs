@@ -14,7 +14,7 @@ api_type:
 
 # !usbkd.ehci\_info\_from\_fdo
 
-The [**!usbkd.ehci\_info\_from\_fdo**](-usbkd-ehci-info-from-fdo.md) command displays information about a USB host controller.
+The **!usbkd.ehci\_info\_from\_fdo** command displays information about a USB host controller.
 
 ```dbgcmd
 !usbkd.ehci_info_from_fdo fdo
@@ -42,7 +42,7 @@ EHCI MINIPORT(s) dt usbport!_USBPORT_MINIPORT_DRIVER ffffe00001f48bd0
 ...
 ```
 
-In the preceding output, you can see that the address of the FDO of the USB host controller is `ffffe00001ca1050`. Pass the address of the FDO to [**!ehci\_info\_from\_fdo**](-usbkd-ehci-info-from-fdo.md).
+In the preceding output, you can see that the address of the FDO of the USB host controller is `ffffe00001ca1050`. Pass the address of the FDO to **!ehci\_info\_from\_fdo**.
 
 ```dbgcmd
 0: kd> !usbkd.ehci_info_from_fdo ffffe00001ca1050

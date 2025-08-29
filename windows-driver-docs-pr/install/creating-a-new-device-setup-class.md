@@ -5,6 +5,7 @@ keywords:
 - device setup classes WDK device installations
 - setup classes WDK device installations
 ms.date: 04/11/2022
+ms.topic: concept-article
 ---
 
 # Creating a new device setup class

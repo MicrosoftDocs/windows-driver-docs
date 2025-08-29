@@ -2,6 +2,7 @@
 title: Hardware-Offloaded Audio Processing
 description: Hardware-offloaded audio processing allows the main audio processing tasks to be performed outside the computer's main CPU.
 ms.date: 10/02/2023
+ms.topic: concept-article
 ---
 
 # Hardware-Offloaded Audio Processing

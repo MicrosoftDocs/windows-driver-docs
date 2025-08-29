@@ -2,6 +2,7 @@
 title: Release-Signing a Driver Package's Catalog File
 description: Release-Signing a Driver Package's Catalog File
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Release-Signing a Driver Package's Catalog File

@@ -5,6 +5,7 @@ keywords:
 - biometric drivers WDK , windows hello
 - signing biometric drivers
 ms.date: 12/09/2024
+ms.topic: how-to
 ---
 
 # Steps to Submit a Fingerprint Driver for Windows Hello Compatibility

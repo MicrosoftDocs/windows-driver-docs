@@ -6,6 +6,7 @@ keywords:
 - NDIS miniport drivers WDK , unloading
 - unloading miniport drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Unloading a Miniport Driver

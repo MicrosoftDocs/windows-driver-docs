@@ -3,6 +3,7 @@ title: "Time travel navigation commands"
 description: "This section describes the time travel navigation commands."
 keywords: ["Time travel navigation commands", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 11/15/2024
+ms.topic: concept-article
 ---
 
 # Time travel navigation commands

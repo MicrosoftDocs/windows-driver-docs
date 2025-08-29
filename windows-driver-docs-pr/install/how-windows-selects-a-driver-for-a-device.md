@@ -4,6 +4,7 @@ description: How Windows selects a driver package for a device
 keywords:
 - driver selections WDK device installations , where Device setupsearches
 ms.date: 07/19/2023
+ms.topic: concept-article
 ---
 
 # How Windows selects a driver package for a device

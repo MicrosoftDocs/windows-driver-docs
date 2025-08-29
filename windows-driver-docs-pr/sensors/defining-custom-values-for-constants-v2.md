@@ -2,6 +2,7 @@
 title: Defining Custom Values for Sensor Universal Driver Constants
 description: Defining custom values for sensor universal driver constants
 ms.date: 08/16/2024
+ms.topic: concept-article
 ---
 
 # Defining custom values for sensor constants

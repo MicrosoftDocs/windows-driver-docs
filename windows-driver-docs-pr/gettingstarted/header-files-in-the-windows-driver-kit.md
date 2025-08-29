@@ -11,6 +11,7 @@ keywords:
 - kernel-mode header files WDK
 - files WDK header files
 ms.date: 12/09/2024
+ms.topic: reference
 ---
 
 # Header files in the Windows Driver Kit

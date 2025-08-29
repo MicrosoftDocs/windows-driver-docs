@@ -4,6 +4,7 @@ description: Hardware Considerations for Biometric Drivers
 keywords:
 - biometric drivers WDK , hardware considerations
 ms.date: 03/03/2023
+ms.topic: checklist
 ---
 
 # Hardware Considerations for Biometric Drivers

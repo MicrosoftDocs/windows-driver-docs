@@ -5,6 +5,7 @@ keywords:
 - WAN miniport drivers WDK networking , architecture
 - architecture WDK WAN
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Overview of the WAN Architecture

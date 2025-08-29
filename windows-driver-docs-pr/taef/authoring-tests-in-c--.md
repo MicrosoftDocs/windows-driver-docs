@@ -2,6 +2,7 @@
 title: Authoring Tests in C++
 description: Authoring Tests in C++
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Authoring Tests in C++

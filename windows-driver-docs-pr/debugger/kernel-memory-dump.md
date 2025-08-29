@@ -3,6 +3,7 @@ title: Kernel Memory Dump
 description: Kernel Memory Dump
 keywords: ["dump file, Kernel Memory Dump", "Kernel Memory Dump"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Kernel Memory Dump

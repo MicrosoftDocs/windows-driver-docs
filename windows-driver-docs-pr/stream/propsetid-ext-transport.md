@@ -2,6 +2,7 @@
 title: PROPSETID_EXT_TRANSPORT
 description: PROPSETID\_EXT\_TRANSPORT
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # PROPSETID\_EXT\_TRANSPORT

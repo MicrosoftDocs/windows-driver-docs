@@ -5,6 +5,7 @@ keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , wireless connection properties
 - wireless connection properties WDK Native 802.11 IHV UI Extensions DLL
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Extending Wireless Connection Properties

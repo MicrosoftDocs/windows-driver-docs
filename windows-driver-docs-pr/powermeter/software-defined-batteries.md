@@ -5,6 +5,7 @@ keywords:
 - Software Defined Battery
 - SDB
 ms.date: 11/09/2017
+ms.topic: concept-article
 ---
 
 # Software Defined Battery

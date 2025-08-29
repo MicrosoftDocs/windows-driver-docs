@@ -7,6 +7,7 @@ keywords:
 - IEEE 1394 controller example WDK storage
 - PCI IEEE 1394 controller example WDK storage
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Device Object Example for an IEEE 1394 Controller

@@ -2,6 +2,7 @@
 title: Compiling an NDIS 6.30 driver
 description: This section explains how to compile an NDIS 6.30 driver
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Compiling an NDIS 6.30 Driver

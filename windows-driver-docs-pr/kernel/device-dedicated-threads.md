@@ -3,6 +3,7 @@ title: Device-Dedicated Threads
 description: Device-Dedicated Threads
 keywords: ["thread objects WDK kernel", "device-dedicated threads WDK kernel", "run-time priority inversions WDK kernel", "PsCreateSystemThread", "KeSetBasePriorityThread"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Device-Dedicated Threads

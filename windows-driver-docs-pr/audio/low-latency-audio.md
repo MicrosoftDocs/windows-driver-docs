@@ -2,6 +2,7 @@
 title: Low Latency Audio
 description: This article discusses audio latency changes in Windows 10. It covers API options for application developers and changes in drivers that can be made to support low latency audio.
 ms.date: 12/13/2024
+ms.topic: concept-article
 ---
 
 # Low Latency Audio
@@ -326,7 +327,7 @@ int _tmain(int argc, _TCHAR* argv[])
        HANDLE signalEvent;
        LONG Priority = 1;
        IRtwqAsyncResult *pAsyncResult = NULL;
-       RTWQWORKITEM_KEY workItemKey = NULL;;
+       RTWQWORKITEM_KEY workItemKey = NULL;
        IRtwqAsyncCallback *callback = NULL;
        IUnknown *appObject = NULL;
        IUnknown *appState = NULL;

@@ -5,6 +5,7 @@ keywords:
 - monitor EDID override, IHVs, manufacturers, vendors
 - monitor EDID override, INF file
 ms.date: 09/20/2024
+ms.topic: how-to
 ---
 
 # Using an INF file to override EDIDs

@@ -8,6 +8,7 @@ keywords:
 - AppVerif.exe
 - user-mode application testing
 ms.date: 01/11/2022
+ms.topic: troubleshooting-general
 ---
 
 # Application Verifier - Debugging Application Verifier Stops

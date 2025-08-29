@@ -6,6 +6,7 @@ keywords:
 - NDIS filter drivers WDK , binding relationships
 - binding relationships WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Specifying Filter Driver Binding Relationships

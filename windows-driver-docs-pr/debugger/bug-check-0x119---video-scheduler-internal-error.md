@@ -9,6 +9,7 @@ api_name:
 - VIDEO_SCHEDULER_INTERNAL_ERROR
 api_type:
 - NA
+ms.topic: reference
 ---
 
 # Bug Check 0x119: VIDEO_SCHEDULER_INTERNAL_ERROR

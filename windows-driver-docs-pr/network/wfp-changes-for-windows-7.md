@@ -2,6 +2,7 @@
 title: WFP Changes for Windows 7
 description: WFP Changes for Windows 7
 ms.date: 04/20/2017
+ms.topic: release-notes
 ---
 
 # WFP Changes for Windows 7

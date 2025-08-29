@@ -2,6 +2,7 @@
 title: Add Interrupt Event Support
 description: Add Interrupt Event Support
 ms.date: 03/27/2023
+ms.topic: how-to
 ---
 
 # Add Interrupt Event Support

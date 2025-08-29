@@ -4,6 +4,7 @@ description: XPS Support in Earlier Versions of Windows
 keywords:
 - XPSDrv printer drivers WDK , earlier Windows versions
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # XPS Support in Earlier Versions of Windows

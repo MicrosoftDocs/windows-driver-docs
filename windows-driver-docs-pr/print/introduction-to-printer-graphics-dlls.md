@@ -7,6 +7,7 @@ keywords:
 - graphics DLL WDK printer
 - printer graphics DLL WDK
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Introduction to Printer Graphics DLLs

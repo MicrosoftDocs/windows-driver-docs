@@ -2,6 +2,7 @@
 title: WDTF Object Name Tags
 description: The WDTF OBJECT_NAME tags are used in WDTF object logging.
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # WDTF Object Name tags

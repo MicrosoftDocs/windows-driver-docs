@@ -2,6 +2,7 @@
 title: WDI USB suspend sequence
 description: When NDIS detects idle for longer than the Selective Suspend idle timeout (SSIdleTimeout), NDIS calls the UE.
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # WDI USB suspend sequence

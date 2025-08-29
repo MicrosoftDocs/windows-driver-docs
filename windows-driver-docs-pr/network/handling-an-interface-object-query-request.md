@@ -8,6 +8,7 @@ keywords:
 - OID requests WDK networking
 - query requests WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling an Interface Object Query Request

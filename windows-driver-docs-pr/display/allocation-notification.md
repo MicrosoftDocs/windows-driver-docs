@@ -5,6 +5,7 @@ keywords:
 - allocation notification DDI
 - allocation notification, WDDM
 ms.date: 08/23/2024
+ms.topic: concept-article
 ---
 
 # Allocation notification

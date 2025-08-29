@@ -2,6 +2,7 @@
 title: KSNODETYPE_VIDEO_INPUT_TERMINAL
 description: KSNODETYPE\_VIDEO\_INPUT\_TERMINAL
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSNODETYPE\_VIDEO\_INPUT\_TERMINAL

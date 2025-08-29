@@ -7,6 +7,7 @@ keywords:
 - Dynamic Update
 - driver distribution
 ms.date: 09/17/2024
+ms.topic: concept-article
 ---
 
 # Understanding Windows Update rules for driver distribution

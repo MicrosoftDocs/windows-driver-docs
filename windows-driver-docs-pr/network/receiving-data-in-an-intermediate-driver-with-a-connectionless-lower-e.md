@@ -5,6 +5,7 @@ keywords:
 - intermediate drivers WDK networking , receive operations
 - NDIS intermediate drivers WDK , receive operations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Receiving Data in an Intermediate Driver with a Connectionless Lower Edge

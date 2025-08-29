@@ -5,6 +5,7 @@ keywords:
 - general I/O targets WDK KMDF , initializing
 - initializing general I/O targets WDK KMDF
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Initializing a General I/O Target

@@ -5,6 +5,7 @@ keywords:
 - root-level-only attributes WDK Unidrv
 - general printer attributes WDK Unidrv , root-level-only
 ms.date: 01/27/2023
+ms.topic: reference
 ---
 
 # New Root-Level-Only GPD Attributes for Windows Vista

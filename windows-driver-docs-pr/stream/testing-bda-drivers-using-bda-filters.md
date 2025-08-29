@@ -8,6 +8,7 @@ keywords:
 - DirectShow filters WDK AVStream
 - Graph Editor WDK BDA
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Testing BDA Drivers Using BDA Filters

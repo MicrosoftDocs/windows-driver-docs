@@ -6,6 +6,7 @@ keywords:
 - resource maps WDK multifunction devices
 - child function resource maps WDK
 ms.date: 03/17/2023
+ms.topic: concept-article
 ---
 
 # Creating Resource Maps for a Multifunction Device

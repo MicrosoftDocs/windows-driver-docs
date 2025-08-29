@@ -2,6 +2,7 @@
 title: Full-Duplex Mode
 description: Full-Duplex Mode
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Full-Duplex Mode

@@ -2,6 +2,7 @@
 title: Porting an INF to Follow Driver Package Isolation
 description: This article provides tips on how to port an INF from old syntax to conform to driver package isolation
 ms.date: 12/20/2024
+ms.topic: concept-article
 ---
 
 # Porting an INF to follow driver package isolation
@@ -167,7 +168,7 @@ This isn't supported. An INF should only be changing settings on services create
 
 ## Using AddReg to modify intrinsic state of a service
 
-If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to modify intrinsic service state, then the INF isn't compliant with driver package isolation.  Intrinsic service state is state about the serivce that is managed by the Service Control Manager.  This includes, but is not limited to:
+If your INF uses an [AddReg directive](../install/inf-addreg-directive.md) to modify intrinsic service state, then the INF isn't compliant with driver package isolation.  Intrinsic service state is state about the service that is managed by the Service Control Manager.  This includes, but is not limited to:
 * Display name
 * Description
 * Image path

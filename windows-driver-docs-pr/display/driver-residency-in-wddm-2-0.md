@@ -4,6 +4,7 @@ description: This section provides details about the driver residency changes fo
 keywords:
 - WDDM 2.0 , driver residency
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # Driver residency in WDDM 2.0

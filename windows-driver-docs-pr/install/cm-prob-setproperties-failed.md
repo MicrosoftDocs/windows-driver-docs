@@ -4,6 +4,7 @@ description: CM_PROB_SETPROPERTIES_FAILED
 keywords:
 - CM_PROB_SETPROPERTIES_FAILED
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 50 - CM_PROB_SETPROPERTIES_FAILED

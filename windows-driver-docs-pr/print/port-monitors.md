@@ -8,6 +8,7 @@ keywords:
 - port monitors WDK print, DLLs
 - print queues WDK, port monitors
 ms.date: 09/08/2022
+ms.topic: concept-article
 ---
 
 # Port monitors

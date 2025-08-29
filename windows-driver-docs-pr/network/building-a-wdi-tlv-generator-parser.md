@@ -2,6 +2,7 @@
 title: Adding the WDI TLV generator/parser to your driver
 description: To add the WDI TLV generator/parser to your driver, follow these steps.
 ms.date: 03/02/2023
+ms.topic: how-to
 ---
 
 # Adding the WDI TLV generator/parser to your driver

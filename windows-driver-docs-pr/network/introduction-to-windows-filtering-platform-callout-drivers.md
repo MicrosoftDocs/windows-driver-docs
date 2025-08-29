@@ -2,6 +2,7 @@
 title: Introduction to Windows Filtering Platform Callout Drivers
 description: A callout driver creates callouts which extend the Windows Filtering Platform by processing TCP/IP network data in more advanced ways than basic filtering can handle.
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # Introduction to Windows Filtering Platform (WFP) Callout Drivers

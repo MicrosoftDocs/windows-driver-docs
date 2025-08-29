@@ -3,6 +3,7 @@ title: Overview of RPC Debugging
 description: Overview of RPC Debugging
 keywords: ["RPC debugging, overview", "remote procedure call (RPC)"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Overview of RPC Debugging

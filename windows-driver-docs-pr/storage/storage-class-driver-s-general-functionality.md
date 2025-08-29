@@ -5,6 +5,7 @@ keywords:
 - storage class drivers WDK , functionality
 - class drivers WDK storage , functionality
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Storage Class Driver's General Functionality

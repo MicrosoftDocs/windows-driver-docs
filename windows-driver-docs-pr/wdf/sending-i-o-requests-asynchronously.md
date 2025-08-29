@@ -7,6 +7,7 @@ keywords:
 - sending I/O requests WDK KMDF , asynchronous
 - asynchronously sending I/O requests WDK KMDF
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Sending I/O Requests Asynchronously

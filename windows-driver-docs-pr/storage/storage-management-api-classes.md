@@ -3,6 +3,7 @@ title: Storage Management API Classes
 description: Storage Management API Classes
 ms.assetid: 99AC16D5-710C-41E1-A296-586F92C91C86
 ms.date: 05/31/2018
+ms.topic: reference
 ---
 
 # Storage Management API Classes

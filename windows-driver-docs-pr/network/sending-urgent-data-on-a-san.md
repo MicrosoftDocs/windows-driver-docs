@@ -4,6 +4,7 @@ description: Sending Urgent Data on a SAN
 keywords:
 - urgent data WDK SANs
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Sending Urgent Data on a SAN

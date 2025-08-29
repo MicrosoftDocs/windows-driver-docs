@@ -2,6 +2,7 @@
 title: Controlling Device Access
 description: Controlling Device Access
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Controlling Device Access

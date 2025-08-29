@@ -2,6 +2,7 @@
 title: MSIX Manifest Specification for Print Support Virtual Printer
 description: Provides MSIX manifest guidance and examples for printer OEMs and IHVs that are implementing a Print Support Virtual Printer.
 ms.date: 01/10/2025
+ms.topic: concept-article
 ---
 
 # MSIX Manifest Specification for Print Support Virtual Printer

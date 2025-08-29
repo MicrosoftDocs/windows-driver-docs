@@ -6,6 +6,7 @@ keywords:
 - StaticDV WDK , about Static Driver Verifier
 - SDV WDK , about Static Driver Verifier
 ms.date: 07/02/2024
+ms.topic: concept-article
 ---
 
 # Understanding Static Driver Verifier

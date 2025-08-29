@@ -6,6 +6,7 @@ keywords:
 - Video Class drivers WDK USB , about USB Video Class driver stack
 - UVC drivers WDK AVStream , about USB Video Class driver stack
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # USB Video Class Driver Stack

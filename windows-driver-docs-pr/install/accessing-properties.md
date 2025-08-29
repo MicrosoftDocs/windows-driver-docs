@@ -4,6 +4,7 @@ description: Accessing Properties
 keywords:
 - device properties WDK device installations , accessing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Accessing Properties

@@ -10,6 +10,7 @@ keywords:
 - NVRAM boot options WDK , default boot entries
 - EFI NVRAM boot options WDK , default boot entries
 ms.date: 12/12/2024
+ms.topic: how-to
 ---
 
 # Changing the Default Boot Entry

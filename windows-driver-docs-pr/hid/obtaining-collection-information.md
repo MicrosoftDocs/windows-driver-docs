@@ -5,6 +5,7 @@ keywords:
 - collections WDK HID , informatin gathering
 - HID collections WDK , information gathering
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Obtaining Collection Information

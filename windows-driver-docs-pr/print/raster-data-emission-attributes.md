@@ -5,6 +5,7 @@ keywords:
 - data emission raster printing attributes WDK Unidrv
 - emission raster printing attributes WDK Unidrv
 ms.date: 01/29/2024
+ms.topic: reference
 ---
 
 # Raster data emission attributes

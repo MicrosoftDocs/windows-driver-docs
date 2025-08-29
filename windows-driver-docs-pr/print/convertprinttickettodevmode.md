@@ -4,6 +4,7 @@ description: Describes IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode
 keywords:
 - ConvertPrintTicketToDevMode
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # ConvertPrintTicketToDevMode overview

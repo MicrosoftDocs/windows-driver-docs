@@ -10,6 +10,7 @@ api_name:
 - Activating a KD Connection Server
 api_type:
 - NA
+ms.custom: sfi-ropc-nochange
 ---
 
 # Activating a KD Connection Server

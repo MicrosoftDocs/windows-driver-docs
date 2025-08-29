@@ -3,6 +3,7 @@ title: Debugger Engine Overview
 description: Debugger Engine Overview
 keywords: ["Debugger Engine", "Debugger Engine, overview"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugger Engine Overview

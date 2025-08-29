@@ -7,6 +7,7 @@ keywords:
 - FilterUnloadCallback
 - unload routines WDK file system minifilter
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Registering a FilterUnloadCallback Routine

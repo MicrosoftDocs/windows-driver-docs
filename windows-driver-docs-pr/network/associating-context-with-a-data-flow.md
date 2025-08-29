@@ -7,6 +7,7 @@ keywords:
 - flowContext parameter WDK Windows Filtering Platform
 - associating context with data flow WDK Windows Filtering Platform
 ms.date: 01/14/2019
+ms.topic: concept-article
 ---
 
 # Associating Context with a Data Flow

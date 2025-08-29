@@ -82,7 +82,7 @@ Possible values for **SendFramingBits** and **RecvFramingBits** include any the 
 ## See also
 
 
-[OID\_WAN\_CO\_GET\_LINK\_INFO](oid-wan-co-get-link-info.md)
+[OID\_WAN\_CO\_GET\_STATS\_INFO](oid-wan-co-get-stats-info.md)
 
 
 

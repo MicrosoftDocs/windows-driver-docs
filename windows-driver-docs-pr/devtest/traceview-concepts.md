@@ -14,6 +14,7 @@ keywords:
 - search paths WDK software tracing
 - TMF files WDK , options
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # TraceView Concepts

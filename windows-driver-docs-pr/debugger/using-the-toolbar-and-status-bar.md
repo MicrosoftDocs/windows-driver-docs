@@ -3,6 +3,7 @@ title: Using the Toolbar and Status Bar - WinDbg (Classic)
 description: Using the Toolbar and Status Bar - WinDbg (Classic)
 keywords: ["toolbar (WinDbg)", "toolbar (WinDbg), overview", "buttons (WinDbg Toolbar)", "buttons (WinDbg Toolbar), overview", "status bar", "status bar, overview", "WinDbg, toolbar", "WinDbg, status bar", "WinDbg, buttons"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using the Toolbar and Status Bar - WinDbg (Classic)

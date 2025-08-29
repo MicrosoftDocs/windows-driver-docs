@@ -4,6 +4,7 @@ description: Warning C30032 Calling a memory allocating function and forcing the
 ms.date: 04/20/2017
 f1_keywords: 
   - "C30032"
+ms.topic: reference
 ---
 
 # C30032

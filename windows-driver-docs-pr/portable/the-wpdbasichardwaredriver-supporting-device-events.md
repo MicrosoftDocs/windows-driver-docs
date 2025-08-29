@@ -2,6 +2,7 @@
 description: Supporting Device Events
 title: Supporting Device Events
 ms.date: 03/03/2023
+ms.topic: how-to
 ---
 
 # Supporting Device Events

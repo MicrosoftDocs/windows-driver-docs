@@ -2,6 +2,7 @@
 title: WIA Tools
 description: WIA tools
 ms.date: 05/11/2023
+ms.topic: system-utilities
 ---
 
 # WIA tools

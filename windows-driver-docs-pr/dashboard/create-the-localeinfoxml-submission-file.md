@@ -2,6 +2,7 @@
 title: Create the LocaleInfo.xml Submission File
 description: Create the LocaleInfo.xml Submission File
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Create the LocaleInfo.xml Submission File

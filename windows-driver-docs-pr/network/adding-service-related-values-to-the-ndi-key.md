@@ -6,6 +6,7 @@ keywords:
 - Nido keys and values WDK networking
 - service-related values to Ndi key WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Adding Service-Related Values to the Ndi Key

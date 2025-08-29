@@ -6,6 +6,7 @@ keywords:
 - errors WDK KMDF
 - errors WDK KMDF , framework object creation
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Framework Object Creation Errors

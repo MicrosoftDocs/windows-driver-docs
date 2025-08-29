@@ -2,6 +2,7 @@
 title: Starting and Pausing a Filter Module
 description: Starting and Pausing a Filter Module
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Starting and Pausing a Filter Module

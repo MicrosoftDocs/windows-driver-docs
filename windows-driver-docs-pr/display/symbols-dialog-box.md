@@ -2,6 +2,7 @@
 title: Symbols Dialog Box
 description: "The Symbols dialog box is used for resolving symbols."
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Symbols Dialog Box  

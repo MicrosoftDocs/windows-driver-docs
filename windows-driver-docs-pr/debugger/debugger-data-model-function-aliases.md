@@ -3,6 +3,7 @@ title: Debugger Data Model Function Aliases
 description: Function aliases are a quick unique short name by which a user of the debugger can access functionality defined in a debugger extension.
 keywords: ["Debugger Data Model Function Aliases"]
 ms.date: 03/21/2017
+ms.topic: reference
 ---
 
 # Debugger Data Model Function Aliases

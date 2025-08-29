@@ -2,6 +2,7 @@
 title: Required DXGI Formats
 description: This topic presents the requirements that Microsoft Direct3D feature levels place on the user-mode display driver.
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Required DXGI formats

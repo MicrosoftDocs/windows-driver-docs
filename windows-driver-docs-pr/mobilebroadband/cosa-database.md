@@ -4,6 +4,7 @@ description: This article contains information about the COSA database. COSA is 
 ms.date: 05/21/2024
 author: mhopkins-msft
 ms.author: mhopkins
+ms.topic: concept-article
 ---
 
 # Introduction to the COSA database

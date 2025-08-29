@@ -6,6 +6,7 @@ keywords:
 - SAN proxy drivers WDK , IOCTLs
 - IOCTLs WDK SANs
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Implementing IOCTLs for a SAN Service Provider

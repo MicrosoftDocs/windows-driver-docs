@@ -5,6 +5,7 @@ keywords:
 - streaming media samples WDK
 - samples WDK streaming media
 ms.date: 01/09/2025
+ms.topic: concept-article
 ---
 
 # Streaming media samples

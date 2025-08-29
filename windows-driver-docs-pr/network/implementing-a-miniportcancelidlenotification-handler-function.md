@@ -2,6 +2,7 @@
 title: Implementing a MiniportCancelIdleNotification Handler Function
 description: Implementing a MiniportCancelIdleNotification Handler Function
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Implementing a MiniportCancelIdleNotification Handler Function

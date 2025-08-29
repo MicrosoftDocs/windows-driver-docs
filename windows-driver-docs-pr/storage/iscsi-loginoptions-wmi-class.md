@@ -2,6 +2,7 @@
 title: ISCSI_LoginOptions WMI Class
 description: ISCSI\_LoginOptions WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # ISCSI\_LoginOptions WMI Class

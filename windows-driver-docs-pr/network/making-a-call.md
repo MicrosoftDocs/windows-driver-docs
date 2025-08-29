@@ -5,6 +5,7 @@ keywords:
 - call setup WDK CoNDIS
 - making calls WDK CoNDIS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Making a Call

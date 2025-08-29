@@ -2,6 +2,7 @@
 title: Receive Side Scaling Version 2 (RSSv2)
 description: This article describes Receive Side Scaling Version 2 (RSSv2)
 ms.date: 01/31/2025
+ms.topic: concept-article
 ---
 
 # Receive Side Scaling Version 2 (RSSv2)

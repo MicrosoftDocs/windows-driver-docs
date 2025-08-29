@@ -2,6 +2,7 @@
 title: Windows Driver Samples
 description: Windows 11 driver samples are available on the Microsoft Samples portal and on GitHub.
 ms.date: 09/11/2024
+ms.topic: reference
 ---
 
 # Windows driver samples

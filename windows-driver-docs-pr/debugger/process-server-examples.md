@@ -3,6 +3,7 @@ title: Process Server Examples
 description: Process Server Examples
 keywords: ["process server, examples"]
 ms.date: 06/08/2020
+ms.topic: how-to
 ---
 
 # Process Server Examples

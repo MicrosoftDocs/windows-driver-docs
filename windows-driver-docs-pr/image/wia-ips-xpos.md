@@ -53,8 +53,6 @@ A driver must also update the WIA_IPS_XEXTENT, WIA_IPS_XPOS, WIA_IPS_YEXTENT, an
 
 [**WIA_IPS_XEXTENT**](wia-ips-xextent.md)
 
-[**WIA_IPS_XPOS**](wia-ips-xpos.md)
-
 [**WIA_IPS_XRES**](wia-ips-xres.md)
 
 [**WIA_IPS_YEXTENT**](wia-ips-yextent.md)

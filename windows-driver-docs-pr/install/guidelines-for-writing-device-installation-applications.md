@@ -5,6 +5,7 @@ keywords:
 - installation applications WDK , guidelines
 - device installation applications WDK , guidelines
 ms.date: 03/23/2022
+ms.topic: concept-article
 ---
 
 # Guidelines for Writing Device Installation Applications

@@ -2,6 +2,7 @@
 title: Viewing and Editing Global Variables in WinDbg (Classic)
 description: Viewing and Editing Global Variables in WinDbg (Classic)
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Viewing and Editing Global Variables in WinDbg (Classic)

@@ -2,6 +2,7 @@
 title: Hyper-V Extensible Switch Extensions
 description: Hyper-V Extensible Switch Extensions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Hyper-V Extensible Switch Extensions

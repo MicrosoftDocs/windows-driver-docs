@@ -2,6 +2,7 @@
 title: MobileBroadbandInfo XML Schema Overview
 description: MobileBroadbandInfo XML schema overview
 ms.date: 10/10/2023
+ms.topic: concept-article
 ---
 
 # MobileBroadbandInfo XML schema overview

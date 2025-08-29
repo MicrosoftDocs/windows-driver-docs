@@ -18,6 +18,7 @@ keywords:
 - I/O request packets WDK KMDF
 - I/O requests WDK KMDF , IRPs
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WDM Concepts for WDF Drivers

@@ -2,6 +2,7 @@
 title: Custom Port Feature Status
 description: Custom Port Feature Status
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Custom Port Feature Status

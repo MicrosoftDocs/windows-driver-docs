@@ -3,6 +3,7 @@ title: WMI Property Qualifiers
 description: WMI Property Qualifiers
 keywords: ["MOF property qualifiers WDK WMI", "property qualifiers WDK WMI", "qualifiers WDK WMI", "standard MOF qualifiers WDK WMI"]
 ms.date: 06/16/2017
+ms.topic: reference
 ---
 
 # WMI Property Qualifiers

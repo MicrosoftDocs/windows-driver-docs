@@ -10,6 +10,7 @@ keywords:
 - architecture WDK WAN , connections
 - WAN miniport drivers WDK networking , bindings
 ms.date: 10/14/2021
+ms.topic: concept-article
 ---
 
 # WAN Driver Bindings and Connections

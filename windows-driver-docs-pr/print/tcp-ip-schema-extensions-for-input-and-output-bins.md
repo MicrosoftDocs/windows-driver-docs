@@ -9,6 +9,7 @@ keywords:
 - output bins WDK printer
 - input bins WDK printer
 ms.date: 01/31/2024
+ms.topic: concept-article
 ---
 
 # TCP/IP schema extensions for input and output bins

@@ -2,6 +2,7 @@
 title: Macro Example to Filter Error Codes
 description: Macro Example to Filter Error Codes
 ms.date: 04/20/2017
+ms.topic: error-reference
 ---
 
 # Macro Example to Filter Error Codes

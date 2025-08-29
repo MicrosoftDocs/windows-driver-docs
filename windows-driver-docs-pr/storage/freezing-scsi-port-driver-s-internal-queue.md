@@ -2,6 +2,7 @@
 title: Freezing SCSI Port Driver's Internal Queue
 description: Freezing SCSI Port Driver's Internal Queue
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Freezing SCSI Port Driver's Internal Queue

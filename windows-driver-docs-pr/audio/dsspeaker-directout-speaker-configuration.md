@@ -4,6 +4,7 @@ description: DSSPEAKER_DIRECTOUT Speaker Configuration
 keywords:
 - DSSPEAKER_DIRECTOUT speaker configuration WDK audio
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # DSSPEAKER\_DIRECTOUT Speaker Configuration

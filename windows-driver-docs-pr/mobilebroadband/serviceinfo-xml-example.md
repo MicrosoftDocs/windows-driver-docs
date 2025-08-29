@@ -2,6 +2,7 @@
 title: ServiceInfo XML Example
 description: ServiceInfo XML Example
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # ServiceInfo XML Example

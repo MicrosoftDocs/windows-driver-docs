@@ -39,6 +39,7 @@ api_name:
 targetos: Windows
 req.typenames: TTraceLevel
 req.product: Windows 10 or later.
+ms.topic: reference
 ---
 
 # IWDTFDriverPackageAction2::GetQueryForDeviceThatCanUsePackage method

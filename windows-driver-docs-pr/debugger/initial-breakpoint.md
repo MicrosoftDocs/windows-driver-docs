@@ -3,6 +3,7 @@ title: Initial Breakpoint
 description: Initial Breakpoint
 keywords: ["initial breakpoint", "breakpoints, initial breakpoint"]
 ms.date: 06/26/2023
+ms.topic: concept-article
 ---
 
 # Initial Breakpoint

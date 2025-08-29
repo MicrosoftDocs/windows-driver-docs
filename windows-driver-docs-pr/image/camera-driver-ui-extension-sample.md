@@ -2,6 +2,7 @@
 title: Camera Driver UI Extension Sample
 description: Camera driver UI extension sample
 ms.date: 03/27/2023
+ms.topic: tutorial
 ---
 
 # Camera driver UI extension sample

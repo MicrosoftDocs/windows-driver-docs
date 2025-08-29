@@ -3,6 +3,7 @@ title: Parsing Extension Arguments
 description: Parsing Extension Arguments
 keywords: ["EngExtCpp extensions, parsing arguments"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Parsing Extension Arguments

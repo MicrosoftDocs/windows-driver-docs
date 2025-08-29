@@ -2,6 +2,7 @@
 title: System Calls to Recommend VidPN Topology
 description: System Calls to Recommend VidPN Topology
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # System Calls to Recommend VidPN Topology

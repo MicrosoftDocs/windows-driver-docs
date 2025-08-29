@@ -2,6 +2,7 @@
 title: The MTP Setup Information (.Inf) File
 description: The MTP Setup Information (.inf) File
 ms.date: 12/09/2024
+ms.topic: install-set-up-deploy
 ---
 
 # The MTP Setup Information (WpdMtp.inf) File

@@ -12,6 +12,7 @@ keywords:
 - templates WDK CPSUI
 - treeview pages WDK CPSUI
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # CPSUI-Supplied Pages and Templates

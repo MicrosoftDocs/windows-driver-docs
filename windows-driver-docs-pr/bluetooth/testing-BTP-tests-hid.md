@@ -2,6 +2,7 @@
 title: Microsoft Bluetooth Test Platform - HID
 description: Bluetooth Test Platform (BTP) HID tests.
 ms.date: 04/11/2023
+ms.topic: how-to
 ---
 
 # BTP HID tests

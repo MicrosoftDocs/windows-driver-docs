@@ -7,6 +7,7 @@ keywords:
 - User-Mode Driver Framework WDK , device interfaces
 - device interfaces WDK UMDF
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Using Device Interfaces in UMDF Drivers

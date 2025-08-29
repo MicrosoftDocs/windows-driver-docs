@@ -7,6 +7,7 @@ keywords:
 - property sheet pages WDK print , functions
 - functions WDK CPSUI
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # Application-Supplied Callback Functions

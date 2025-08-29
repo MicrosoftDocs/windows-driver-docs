@@ -6,6 +6,7 @@ keywords:
 - non-PPD features WDK Pscript
 - driver features WDK Pscript
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # PPD Features

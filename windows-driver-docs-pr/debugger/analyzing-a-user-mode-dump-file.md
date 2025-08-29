@@ -3,6 +3,7 @@ title: Analyzing a User-Mode Dump File
 description: This article describes analyzing a User-Mode Dump File with WinDbg and CDB
 keywords: ["dump file, analyzing a user-mode dump file"]
 ms.date: 01/24/2025
+ms.topic: concept-article
 ---
 
 # Analyzing a User-Mode Dump File

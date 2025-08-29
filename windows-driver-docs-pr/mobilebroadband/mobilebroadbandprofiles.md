@@ -2,6 +2,7 @@
 title: MobileBroadbandProfiles
 description: MobileBroadbandProfiles
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # MobileBroadbandProfiles

@@ -3,6 +3,7 @@ title: Debugger Reference
 description: Debugger Reference
 keywords: ["Debugger Reference"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Debugger Reference

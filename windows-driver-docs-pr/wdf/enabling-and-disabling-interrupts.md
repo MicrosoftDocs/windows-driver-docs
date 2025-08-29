@@ -9,6 +9,7 @@ keywords:
 - status information WDK KMDF , enabling interrupts
 - status information WDK KMDF , disabling interrupts
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Enabling and Disabling Interrupts

@@ -32,7 +32,7 @@ The  driver sets the members of the **NDIS_TIMESTAMP_CAPABILITIES** structure  a
 
 1. Generate an **NDIS_STATUS_TIMESTAMP_CAPABILITY** status indication by calling [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) to report the timestamping capabilities. The **StatusBuffer** field of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure should point to the initialized **NDIS_TIMESTAMP_CAPABILITIES** structure.
 
-The miniport driver must also generate the [**NDIS_STATUS_TIMESTAMP_CAPABILITY**](ndis-status-timestamp-capability.md) status indication whenever it detects a change in underlying hardware capabilities.
+The miniport driver must also generate the **NDIS_STATUS_TIMESTAMP_CAPABILITY**(ndis-status-timestamp-capability.md) status indication whenever it detects a change in underlying hardware capabilities.
 
 Here's how a miniport driver might indicate its supported timestamping capabilities:
 

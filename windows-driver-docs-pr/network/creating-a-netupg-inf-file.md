@@ -7,6 +7,7 @@ keywords:
 - upgrading network components WDK , customizing
 - customizing network upgrade process WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating a Netupg.inf File

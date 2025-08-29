@@ -3,6 +3,7 @@ title: "!exr (WinDbg)"
 description: "The !exr extension command is obsolete"
 keywords: ["!exr extension (obsolete)"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # !exr

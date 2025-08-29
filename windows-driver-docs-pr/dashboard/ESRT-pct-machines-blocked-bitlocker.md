@@ -2,6 +2,7 @@
 title: Percent of machines with pending firmware updates due to Bitlocker Risk
 description: The measure aggregates telemetry from a 28-day sliding window into a ratio of machines that were blocked by bitlocker over the machines that attempted a firmware install
 ms.date: 10/31/2019
+ms.topic: concept-article
 ---
  
 # Percent of machines with pending firmware updates due to Bitlocker Risk

@@ -5,6 +5,7 @@ keywords:
 - custom UI WDK Native 802.11 IHV UI Extensions DLL , querying
 - querying custom UI display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Querying for the Display of a Custom UI

@@ -7,6 +7,7 @@ keywords:
 - virtual miniports WDK networking
 - initializing virtual miniports
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing Virtual Miniports

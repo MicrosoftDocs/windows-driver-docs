@@ -23,6 +23,7 @@ keywords:
 - starting I/O queues WDK KMDF
 - dispatching methods WDK KMDF
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Managing I/O Queues

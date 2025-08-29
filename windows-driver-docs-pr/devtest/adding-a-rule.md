@@ -5,6 +5,7 @@ keywords:
 - filtering trace messages, adding rules WDK
 - trace message filters WDK , adding rules
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Adding a Rule

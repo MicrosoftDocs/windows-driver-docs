@@ -7,6 +7,7 @@ keywords:
 - command ordering WDK PCL XL
 - writing PCL XL GPD files
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # Writing a PCL XL GPD File

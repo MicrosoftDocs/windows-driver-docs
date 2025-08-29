@@ -2,6 +2,7 @@
 title: Audio Endpoint Container ID
 description: Learn about reliable methods for obtaining the container ID of an audio endpoint associated with a Bluetooth audio device
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Audio endpoint container ID

@@ -5,6 +5,7 @@ ms.date: 12/18/2024
 keywords:
 - Indirect display drivers, debugging
 - IDDs, debugging
+ms.topic: concept-article
 ---
 
 # Debugging indirect display drivers

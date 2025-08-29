@@ -2,6 +2,7 @@
 title: Driver Install Tests (Device Fundamentals)
 description: The Driver Install test category includes tests that uninstall and reinstall a driver several times to test install functionality.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Driver Install Tests (Device Fundamentals)
@@ -56,4 +57,4 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup\LogLevel
 
 [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 
-[How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers)
+[How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers/develop/how-to-test-a-driver-at-runtime-from-a-command-prompt)

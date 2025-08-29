@@ -2,6 +2,7 @@
 title: MSFC_HbaApiVersion WMI Class
 description: MSFC_HbaApiVersion WMI Class
 ms.date: 07/13/2022
+ms.topic: reference
 ---
 
 # MSFC_HbaApiVersion WMI Class

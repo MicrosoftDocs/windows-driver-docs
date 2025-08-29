@@ -2,6 +2,7 @@
 title: Where are the Tracing Samples
 description: Where are the tracing samples
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Where are the tracing samples?

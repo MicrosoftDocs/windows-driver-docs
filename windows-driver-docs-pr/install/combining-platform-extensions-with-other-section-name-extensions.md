@@ -10,6 +10,7 @@ keywords:
 - decorated INF WDK
 - operating systems WDK
 ms.date: 02/02/2022
+ms.topic: concept-article
 ---
 
 # Combining Platform Extensions with Other Section Name Extensions

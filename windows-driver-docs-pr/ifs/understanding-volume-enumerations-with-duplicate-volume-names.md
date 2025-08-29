@@ -8,6 +8,7 @@ keywords:
 - duplicate volume names WDK file system
 - enumerating volumes WDK file system
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Understanding Volume Enumerations with Duplicate Volume Names

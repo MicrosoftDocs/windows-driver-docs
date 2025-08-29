@@ -6,6 +6,7 @@ keywords:
 - NT Kernel Logger trace sessions WDK
 - Windows Kernel Trace provider WDK
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating an NT Kernel Logger Trace Session

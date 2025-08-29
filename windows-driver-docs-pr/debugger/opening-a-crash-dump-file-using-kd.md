@@ -2,6 +2,7 @@
 title: Opening a Dump File Using KD
 description: Opening a Dump File Using KD
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Opening a Dump File Using KD

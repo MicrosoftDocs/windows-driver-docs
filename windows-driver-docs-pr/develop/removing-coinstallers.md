@@ -2,6 +2,7 @@
 title: Removing Co-installers from Driver Packages
 description: This page addresses common reasons for co-installers to be present in a driver package, and mechanisms to perform the same task without a co-installer.
 ms.date: 05/15/2023
+ms.topic: concept-article
 ---
 
 # Removing Co-installers from Driver Packages

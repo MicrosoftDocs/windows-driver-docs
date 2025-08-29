@@ -3,6 +3,7 @@ title: Separate DispatchCreate and DispatchClose Routines
 description: Separate DispatchCreate and DispatchClose Routines
 keywords: ["dispatch routines WDK kernel , DispatchCreate routine", "dispatch routines WDK kernel , DispatchClose routine", "DispatchClose routine", "DispatchCreate routine", "IRP_MJ_CREATE I/O function code", "IRP_MJ_CLOSE I/O function code", "create dispatch routines WDK kernel", "close dispatch routines WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Separate DispatchCreate and DispatchClose Routines

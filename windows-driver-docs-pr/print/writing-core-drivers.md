@@ -2,6 +2,7 @@
 title: Writing Core Drivers
 description: Writing Core Drivers
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # Writing Core Drivers

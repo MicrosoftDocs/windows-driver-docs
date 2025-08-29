@@ -3,6 +3,7 @@ title: C28720 Warning
 description: Warning C28720 Banned API Usage.
 ms.date: 08/22/2022
 f1_keywords: ["C28720", "ISBADXXXPTR_API_USAGE", "__WARNING_ISBADXXXPTR_API_USAGE"]
+ms.topic: reference
 ---
 # Warning C28720
 

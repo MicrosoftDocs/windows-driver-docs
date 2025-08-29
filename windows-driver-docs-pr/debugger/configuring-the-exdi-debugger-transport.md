@@ -3,6 +3,7 @@ title: Configuring the EXDI Debugger Transport
 description: Debugging Tools for Windows supports debugging using EXDI. This topic describes how to configure the EXDI transport.
 ms.date: 10/30/2024
 ms.localizationpriority: medium
+ms.topic: how-to
 ---
 
 # Configuring the EXDI Debugger Transport
@@ -66,7 +67,7 @@ This topic describes the use of the EXDI COM GDB Server client (ExdiGdbSrv.dll),
 
 ## Summary of process to use an EXDI connection
 
-Use this this process to use an EXDI connection with WinDbg. 
+Use this process to use an EXDI connection with WinDbg. 
 
 1. Download and install the Windows debugging tools on the host system.
 1. Launch WinDbg using the UI or the -kx option to connect to the EXDI server.
@@ -84,11 +85,11 @@ The following options can be configured in the EXDI kernel connection UI.
 
 :::image type="content" source="images/windbgx-exdi-server-config-ui.png" alt-text="Windbg EXDI kernel connection UI, with connection options shown, including IP and port address.":::
 
-- **Target type** `[Trace32|BMC-OpenOCD|QEMU|VMWare|UEFI]` Select according to the target type you would like to debug. The following target types are available.
+- **Target type** `[Trace32|BMC-OpenOCD|QEMU|VMware|UEFI]` Select according to the target type you would like to debug. The following target types are available.
     - Trace32 : Lauterbach Trace32 HW debugger GDB server configuration
     - BMC-OpenOCD : BMC-OpenOCD HW debugger GDB server configuration 
     - QEMU : QEMU SW simulator GDB server configuration
-    - VMWare : VMWare GDB server configuration
+    - VMware : VMware GDB server configuration
     - UEFI : UEFI firmware debugging 
 
 - **Target architecture** `[x86 | ARM64 | x64]` - Target processor architecture. Note that all target types may not support all target architectures.

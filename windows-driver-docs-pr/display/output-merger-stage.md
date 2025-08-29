@@ -2,6 +2,7 @@
 title: Output Merger Stage
 description: Output Merger Stage
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Output Merger Stage

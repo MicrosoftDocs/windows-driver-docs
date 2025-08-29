@@ -3,6 +3,7 @@ title: Using Scatter/Gather DMA
 description: Using Scatter/Gather DMA
 keywords: ["AdapterListControl routine", "scatter/gather DMA WDK I/O", "PutScatterGatherList", "GetScatterGatherList", "DMA transfers WDK kernel , scatter/gather DMA"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Using Scatter/Gather DMA

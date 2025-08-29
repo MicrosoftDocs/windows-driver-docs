@@ -2,6 +2,7 @@
 title: Introduction to Single Root I/O Virtualization (SR-IOV)
 description: Learn about the single root I/O virtualization interface and how it supports Microsoft Hyper-V performance improvements.
 ms.date: 01/31/2025
+ms.topic: concept-article
 ---
 
 # Introduction to single root I/O virtualization

@@ -2,6 +2,7 @@
 title: Introduction to NDIS 6.87
 description: This section introduces NDIS 6.87 and describes changes from NDIS 6.86. NDIS 6.87 is included in Windows 11, version 22H2.
 ms.date: 03/08/2024
+ms.topic: concept-article
 ---
 
 # Introduction to NDIS 6.87

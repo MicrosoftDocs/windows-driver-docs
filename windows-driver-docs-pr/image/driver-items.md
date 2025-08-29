@@ -2,6 +2,7 @@
 title: Driver Items
 description: Driver Items
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Driver Items

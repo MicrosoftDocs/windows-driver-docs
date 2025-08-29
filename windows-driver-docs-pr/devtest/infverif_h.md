@@ -2,6 +2,7 @@
 title: InfVerif /h
 description: This topic describes the functionality and usage of InfVerif with '/h' mode.
 ms.date: 12/04/2024
+ms.topic: concept-article
 ---
 
 # InfVerif /h

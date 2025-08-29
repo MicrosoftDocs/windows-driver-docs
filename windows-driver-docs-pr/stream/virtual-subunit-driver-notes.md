@@ -7,6 +7,7 @@ keywords:
 - external devices WDK AV/C
 - IOCTL_AVC_CLASS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Virtual Subunit Driver Notes

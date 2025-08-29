@@ -2,6 +2,7 @@
 title: Memory View Menu
 description: "The Segment Viewer window has its own menu, *Actions*."
 ms.date: 05/10/2022
+ms.topic: end-user-help
 ---
 
 # Memory View Menu

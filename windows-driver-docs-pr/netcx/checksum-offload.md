@@ -5,6 +5,7 @@ keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads, Checksum Offload
 ms.date: 08/10/2020
 ms.custom: Fe
+ms.topic: concept-article
 ---
 
 # Checksum offload

@@ -6,6 +6,7 @@ keywords:
 - ports WDK , file system minifilter
 - closing communication server ports
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Closing the Communication Server Port

@@ -7,6 +7,7 @@ keywords:
 - port states WDK NDIS
 - port numbers WDK NDIS
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Managing an NDIS Port

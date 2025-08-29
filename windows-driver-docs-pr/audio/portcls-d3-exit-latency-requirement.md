@@ -2,6 +2,7 @@
 title: PortCls D3 Exit Latency Requirement
 description: This topic discusses how the Windows port class driver (PortCls) can use a new Windows 8 interface to manipulate the exit latency requirement for the D3 sleep state.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # PortCls D3 Exit Latency Requirement

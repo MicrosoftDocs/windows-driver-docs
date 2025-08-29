@@ -6,6 +6,7 @@ keywords:
 - viewing printer details page
 - displaying printer details page
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Which Printer Details Page is Displayed?

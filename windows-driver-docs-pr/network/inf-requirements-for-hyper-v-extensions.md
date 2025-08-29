@@ -2,6 +2,7 @@
 title: INF Requirements for Hyper-V Extensible Switch Extensions
 description: INF Requirements for Hyper-V Extensible Switch Extensions
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # INF Requirements for Hyper-V Extensible Switch Extensions

@@ -4,6 +4,7 @@ description: Resetting State in AVStream Codecs
 keywords:
 - AVStream hardware codec support WDK , resetting state
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Resetting State in AVStream Codecs

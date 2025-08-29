@@ -2,6 +2,7 @@
 title: Supporting Rotation
 description: Supporting Rotation
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting Rotation

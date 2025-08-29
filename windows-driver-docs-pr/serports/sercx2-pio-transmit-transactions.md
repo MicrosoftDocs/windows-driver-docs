@@ -2,6 +2,7 @@
 title: SerCx2 PIO-Transmit Transactions
 description: SerCx2 requires all serial controller drivers to implement support for transmit transactions that use programmed I/O (PIO).
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # SerCx2 PIO-Transmit Transactions

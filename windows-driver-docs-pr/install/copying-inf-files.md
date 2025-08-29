@@ -5,6 +5,7 @@ keywords:
 - INF files WDK device installations , copying
 - copying INF files
 ms.date: 01/21/2022
+ms.topic: concept-article
 ---
 
 # Copying INF Files

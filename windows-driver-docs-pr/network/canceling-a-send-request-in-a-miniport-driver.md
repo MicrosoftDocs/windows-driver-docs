@@ -6,6 +6,7 @@ keywords:
 - MiniportCancelSend
 - canceling send requests WDK networking
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Canceling a Send Request in a Miniport Driver

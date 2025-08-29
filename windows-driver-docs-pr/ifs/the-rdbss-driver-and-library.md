@@ -14,6 +14,7 @@ keywords:
 - structures WDK RDBSS
 - data structures WDK RDBSS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # The RDBSS Driver and Library

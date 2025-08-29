@@ -9,6 +9,7 @@ keywords:
 - CCD APIs WDK Windows 7 display
 - CCD APIs WDK Windows Server 2008 R2 display
 ms.date: 12/18/2024
+ms.topic: reference
 ---
 
 # CCD APIs

@@ -2,6 +2,7 @@
 title: Get audience data
 description: These methods from the Microsoft Hardware APIs get the applicable audiences for an organization to be used in a shipping label.
 ms.date: 08/21/2018
+ms.topic: how-to
 ---
 # Get audience data
 

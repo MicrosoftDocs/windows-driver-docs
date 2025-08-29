@@ -74,7 +74,7 @@ devcon /r install c:\windows\inf\newdvc.inf ISAPNP\CSC4324\0
 ## Examples
 
 - [Example 33: Install a device](devcon-examples.md#example-33-install-a-device)
-- [Example 34: Install a device using unattended setup](devcon-examples.md#example-34-install-a-device-using-unattended-setup)
+- [Example 34: Install a device using unattended setup](devcon-examples.md#example-34-install-a-device-by-using-unattended-setup)
 
 ## See also
 

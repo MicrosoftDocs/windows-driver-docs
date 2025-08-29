@@ -2,6 +2,7 @@
 title: Threat Modeling for Drivers
 description: Driver writers and architects should make threat modeling an integral part of the design process for any driver. This article provides guidelines for creating threat models for drivers for the Microsoft Windows family of operating systems.
 ms.date: 08/31/2023
+ms.topic: concept-article
 ---
 
 # Threat modeling for drivers
@@ -116,7 +117,7 @@ After you identify the points at which a driver might be vulnerable, you can det
 - Could malicious use of a feature compromise security?
 - Do default settings provide adequate security?
 
-## <span id="The_STRIDE_approach"></span><span id="the_stride_approach"></span><span id="THE_STRIDE_APPROACH"></span>The STRIDE approach to threat categorization
+## The STRIDE approach to threat categorization
 
 The acronym STRIDE describes six categories of threats to software. This acronym is derived from:
 

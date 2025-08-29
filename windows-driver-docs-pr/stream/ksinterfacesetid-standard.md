@@ -2,6 +2,7 @@
 title: KSINTERFACESETID_Standard
 description: This interface set contains general interface types that various pins can support.
 ms.date: 10/12/2021
+ms.topic: reference
 ---
 
 # KSINTERFACESETID_Standard

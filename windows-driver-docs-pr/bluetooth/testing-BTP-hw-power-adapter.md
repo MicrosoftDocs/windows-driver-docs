@@ -3,6 +3,7 @@ title: Microsoft Bluetooth Test Platform - Power Adapter
 description: Bluetooth Test Platform (BTP) supported hardware (power adapter).
 ms.date: 01/10/2024
 ms.localizationpriority: medium
+ms.topic: checklist
 ---
 
 # Traduci power adapter

@@ -8,6 +8,7 @@ keywords:
 - audio drivers WDK , HD Audio
 - Intel High Definition Audio Specification
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # High Definition Audio DDI

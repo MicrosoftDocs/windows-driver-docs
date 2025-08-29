@@ -2,6 +2,7 @@
 title: Overview of Single Root I/O Virtualization (SR-IOV)
 description: This article provides an overview of the Single Root I/O Virtualization (SR-IOV) interface, an extension to the PCI Express (PCIe) specification.
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # Overview of Single Root I/O Virtualization (SR-IOV)

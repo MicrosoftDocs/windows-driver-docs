@@ -15,6 +15,7 @@ keywords:
 - GUIDs WDK audio
 - category GUIDs WDK audio
 ms.date: 08/17/2022
+ms.topic: concept-article
 ---
 
 # Pin Category Property

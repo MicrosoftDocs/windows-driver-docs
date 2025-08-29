@@ -2,6 +2,7 @@
 title: Platform Performance Thresholds
 description: There are two types of performance thresholds - static thresholds which remain fixed for the platform and dynamic thresholds that change at runtime.
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Platform Performance Thresholds

@@ -7,6 +7,7 @@ keywords:
 - testing drivers
 - deploying drivers
 ms.date: 08/23/2017
+ms.topic: concept-article
 ---
 
 # Developing, Testing, and Deploying Drivers

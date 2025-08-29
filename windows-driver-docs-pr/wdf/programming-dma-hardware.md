@@ -8,6 +8,7 @@ keywords:
 - DMA transfers WDK KMDF , starting
 - starting DMA transfers WDK KMDF
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Programming DMA Hardware

@@ -2,6 +2,7 @@
 title: Camera Companion Apps
 description: Describes companion apps, an extensibility feature for manufacturers of cameras to build custom applications that can configure the camera and adjust default image settings.
 ms.date: 12/19/2024
+ms.topic: concept-article
 ---
 
 # Camera companion apps

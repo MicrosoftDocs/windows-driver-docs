@@ -2,6 +2,7 @@
 title: WAN Driver Models
 description: Learn about WAN driver models, and learn how to choose between NDIS WAN and CoNDIS WAN.
 ms.date: 01/31/2025
+ms.topic: concept-article
 ---
 
 # WAN driver models

@@ -12,6 +12,7 @@ keywords:
 - commercial test certificates WDK
 - Enterprise CA test certificates WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Test-Signing a Driver File

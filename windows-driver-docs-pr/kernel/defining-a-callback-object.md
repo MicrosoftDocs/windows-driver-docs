@@ -3,6 +3,7 @@ title: Defining a Callback Object
 description: Defining a Callback Object
 keywords: ["callback objects WDK kernel", "registering callback notifications"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Defining a Callback Object

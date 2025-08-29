@@ -2,6 +2,7 @@
 title: Determine Which Mobile Broadband Network is Currently Connected
 description: Determine which mobile broadband network is currently connected
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Determine which mobile broadband network is currently connected

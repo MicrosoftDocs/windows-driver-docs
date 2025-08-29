@@ -2,6 +2,7 @@
 title: USB Device Descriptor
 description: USB Device Descriptor
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # USB Device Descriptor

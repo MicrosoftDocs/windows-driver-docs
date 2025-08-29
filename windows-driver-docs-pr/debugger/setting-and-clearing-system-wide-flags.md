@@ -3,6 +3,7 @@ title: Setting and Clearing System-wide Flags
 description: Setting and Clearing System-wide Flags
 keywords: ["GFlags, system-wide flags"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Setting and Clearing System-wide Flags

@@ -3,6 +3,7 @@ title: WMI WNODE_XXX Structures
 description: WMI WNODE_XXX Structures
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI", "WNODE_XXX structures"]
 ms.date: 06/16/2017
+ms.topic: reference
 ---
 
 # WMI WNODE\_XXX Structures

@@ -2,6 +2,7 @@
 title: Encoder Property Sets
 description: Describes encoder and codec API-specific property sets available for encoder minidrivers that use WDM kernel-streaming services.
 ms.date: 10/11/2021
+ms.topic: reference
 ---
 
 # Encoder Property Sets

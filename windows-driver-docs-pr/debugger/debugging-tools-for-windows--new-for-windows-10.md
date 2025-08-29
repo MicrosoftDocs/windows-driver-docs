@@ -2,6 +2,7 @@
 title: Debugging Tools for Windows New for Windows 10 - WinDbg (Classic)
 description: For Windows 10, Debugging Tools for Windows includes these new features.
 ms.date: 01/22/2019
+ms.topic: concept-article
 ---
 
 # Debugging Tools for Windows: New for Windows 10 - WinDbg (Classic)

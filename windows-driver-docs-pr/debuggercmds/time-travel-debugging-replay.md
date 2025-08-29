@@ -3,6 +3,7 @@ title: "Time Travel Debugging - Replay a trace"
 description: "This section describes how to replay time travel traces."
 keywords: ["Replay a trace", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 11/18/2024
+ms.topic: concept-article
 ---
 
 # Time Travel Debugging - Replay a trace

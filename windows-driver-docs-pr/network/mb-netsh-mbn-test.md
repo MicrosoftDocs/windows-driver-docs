@@ -2,6 +2,7 @@
 title: netsh mbn test installation
 description: Netsh mbn test installation
 ms.date: 03/01/2021
+ms.topic: install-set-up-deploy
 ---
 # netsh mbn test
 **netsh mbn test** is a test kit separate from the normal release version.

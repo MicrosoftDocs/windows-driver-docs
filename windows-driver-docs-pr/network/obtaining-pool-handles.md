@@ -9,6 +9,7 @@ keywords:
 - NDIS miniport drivers WDK , pool handles
 - intermediate drivers WDK networking , po
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Obtaining Pool Handles

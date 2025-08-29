@@ -3,6 +3,7 @@ title: "Time Travel Debugging - Overview"
 description: "This section describes time travel debugging."
 keywords: ["Overview", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 11/15/2024
+ms.topic: concept-article
 ---
 
 # Time Travel Debugging - Overview

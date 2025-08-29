@@ -2,6 +2,7 @@
 title: Rules for Storport Drivers
 description: Rules for Storport Drivers
 ms.date: 05/21/2018
+ms.topic: best-practice
 ---
 
 # Rules for Storport Drivers

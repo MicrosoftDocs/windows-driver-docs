@@ -2,6 +2,7 @@
 title: Logging scenarios
 description: This topic describes logging scenarios for user-initiated feedback with IHV trace logging in WDI drivers.
 ms.date: 06/15/2018
+ms.topic: concept-article
 ---
 
 # Logging scenarios

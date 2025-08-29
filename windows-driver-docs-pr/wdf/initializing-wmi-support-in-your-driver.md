@@ -10,6 +10,7 @@ keywords:
 - MOF resource names WDK KMDF
 - initializing WMI support WDK KMDF
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Initializing WMI Support in Your Driver

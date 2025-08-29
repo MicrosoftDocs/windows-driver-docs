@@ -3,6 +3,7 @@ title: Checking for Stuck Threads
 description: Checking for Stuck Threads
 keywords: ["RPC debugging, stuck threads"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Checking for Stuck Threads

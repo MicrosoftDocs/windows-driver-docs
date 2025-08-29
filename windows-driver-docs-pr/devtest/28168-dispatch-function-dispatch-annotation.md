@@ -4,6 +4,7 @@ description: Warning C28168 The dispatch function does not have a _Dispatch_type
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28168" 
+ms.topic: reference
 ---
 
 # C28168

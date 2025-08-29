@@ -2,6 +2,7 @@
 title: ISCSI_SESSION_TYPE_QUALIFIERS
 description: ISCSI\_SESSION\_TYPE\_QUALIFIERS
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # ISCSI\_SESSION\_TYPE\_QUALIFIERS

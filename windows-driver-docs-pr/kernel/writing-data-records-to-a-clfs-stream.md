@@ -3,6 +3,7 @@ title: Writing Data Records to a CLFS Stream
 description: Writing Data Records to a CLFS Stream
 keywords: ["Common Log File System WDK kernel , data records", "CLFS WDK kernel , data records", "data records WDK CLFS", "reserved space WDK CLFS", "aligned entries WDK CLFS", "writing data records", "buffers WDK CLFS"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Writing Data Records to a CLFS Stream

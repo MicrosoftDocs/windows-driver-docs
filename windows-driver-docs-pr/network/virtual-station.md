@@ -4,6 +4,7 @@ description: Virtual Station
 keywords:
 - Virtual Station WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Virtual Station

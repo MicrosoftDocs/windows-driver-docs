@@ -4,6 +4,7 @@ description: Determining Whether a Platform is Mobile or Desktop
 keywords:
 - TMM WDK display , determining mobile or desktop
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Determining Whether a Platform is Mobile or Desktop

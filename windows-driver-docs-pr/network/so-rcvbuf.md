@@ -4,6 +4,7 @@ description: SO_RCVBUF
 ms.date: 08/08/2017
 keywords: 
  -SO_RCVBUF Network Drivers Starting with Windows Vista
+ms.topic: reference
 ---
 
 # SO\_RCVBUF

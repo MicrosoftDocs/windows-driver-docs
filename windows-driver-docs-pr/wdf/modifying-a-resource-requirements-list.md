@@ -5,6 +5,7 @@ keywords:
 - hardware resources WDK KMDF , modifying resource requirements lists
 - resource requirements lists WDK KMDF , modifying
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Modifying a Resource Requirements List

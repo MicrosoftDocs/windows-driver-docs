@@ -2,6 +2,7 @@
 title: KSPROPSETID_DvdSubPic
 description: KSPROPSETID\_DvdSubPic
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_DvdSubPic

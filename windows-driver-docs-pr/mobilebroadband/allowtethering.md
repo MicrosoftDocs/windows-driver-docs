@@ -2,6 +2,7 @@
 title: AllowTethering
 description: AllowTethering
 ms.date: 10/10/2023
+ms.topic: concept-article
 ---
 
 # AllowTethering

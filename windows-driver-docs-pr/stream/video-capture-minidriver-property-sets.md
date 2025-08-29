@@ -2,6 +2,7 @@
 title: Video Capture Minidriver Property Sets
 description: Video Capture Minidriver Property Sets
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # Video Capture Minidriver Property Sets

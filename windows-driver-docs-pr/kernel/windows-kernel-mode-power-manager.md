@@ -2,6 +2,7 @@
 title: Windows Kernel-Mode Power Manager
 description: Windows Kernel-Mode Power Manager
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Windows Kernel-Mode Power Manager

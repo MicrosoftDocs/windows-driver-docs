@@ -2,6 +2,7 @@
 title: Avoiding Reboot when Updating a UMDF Driver
 description: Avoiding Reboot when Updating a UMDF Driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Avoiding Reboot when Updating a UMDF Driver

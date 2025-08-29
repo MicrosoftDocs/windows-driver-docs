@@ -8,6 +8,7 @@ keywords:
 - HID API
 - HID Collection
 ms.date: 09/18/2024
+ms.topic: concept-article
 ---
 
 # HID Clients Overview

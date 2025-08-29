@@ -2,6 +2,7 @@
 title: CODECAPI_ALLSETTINGS
 description: The CODECAPI_ALLSETTINGS property is used to pass back and forth a minidriver-generated block of data.
 ms.date: 10/08/2021
+ms.topic: reference
 ---
 
 # CODECAPI_ALLSETTINGS

@@ -2,6 +2,7 @@
 title: IWiaMiniDrvCallBack COM Interface
 description: IWiaMiniDrvCallBack COM Interface
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # IWiaMiniDrvCallBack COM Interface

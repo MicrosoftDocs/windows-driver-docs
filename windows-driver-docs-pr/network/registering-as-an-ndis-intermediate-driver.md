@@ -6,6 +6,7 @@ keywords:
 - intermediate drivers WDK networking , registering
 - NDIS intermediate drivers WDK , registering
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Registering as an NDIS Intermediate Driver

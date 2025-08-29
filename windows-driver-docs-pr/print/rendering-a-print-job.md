@@ -9,6 +9,7 @@ keywords:
 - print jobs WDK, rendering
 - banding WDK print
 ms.date: 01/30/2023
+ms.topic: how-to
 ---
 
 # Render a print job

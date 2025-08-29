@@ -2,6 +2,7 @@
 title: MagneticStripeReaderDataReceived
 description: The MagneticStripeReaderDataReceived event is raised after a successful magnetic stripe reader (MSR) scan event.
 ms.date: 03/17/2023
+ms.topic: reference
 ---
 
 # MagneticStripeReaderDataReceived

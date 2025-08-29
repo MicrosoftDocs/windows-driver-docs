@@ -5,6 +5,7 @@ keywords:
 - WMI SRBs WDK storage , designing callback routines
 - callback routines WDK WMI SRBs
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Designing WMI Miniport Driver Callback Routines

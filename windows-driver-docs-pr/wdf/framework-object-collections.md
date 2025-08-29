@@ -7,6 +7,7 @@ keywords:
 - framework collection objects WDK KMDF
 - object collections WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Framework Object Collections

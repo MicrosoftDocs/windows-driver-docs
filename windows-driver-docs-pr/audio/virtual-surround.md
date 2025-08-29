@@ -2,6 +2,7 @@
 title: Virtual Surround
 description: Virtual Surround
 ms.date: 11/07/2018
+ms.topic: concept-article
 ---
 
 # Virtual Surround

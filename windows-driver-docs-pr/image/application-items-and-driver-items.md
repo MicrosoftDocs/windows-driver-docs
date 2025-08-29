@@ -2,6 +2,7 @@
 title: Application Items and Driver Items
 description: Application Items and Driver Items
 ms.date: 03/27/2023
+ms.topic: concept-article
 ---
 
 # Application Items and Driver Items

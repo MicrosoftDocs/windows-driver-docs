@@ -3,6 +3,7 @@ title: WMI Class Examples
 description: WMI Class Examples
 keywords: ["classes WDK WMI", "WMI WDK kernel , classes"]
 ms.date: 06/16/2017
+ms.topic: reference
 ---
 
 # WMI Class Examples

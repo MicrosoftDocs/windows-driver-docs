@@ -6,6 +6,7 @@ keywords:
 - Defect Viewer WDK Static Driver Verifier
 - resizing Defect Viewer
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Resizing the Defect Viewer Windows

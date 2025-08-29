@@ -2,6 +2,7 @@
 title: Finding and Mapping Hardware Resources in UMDF 1.x Drivers
 description: Finding and Mapping Hardware Resources in UMDF 1.x Drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Finding and Mapping Hardware Resources in UMDF 1.x Drivers

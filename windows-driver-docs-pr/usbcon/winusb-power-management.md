@@ -2,6 +2,7 @@
 title: WinUSB Power Management
 description: WinUSB power management
 ms.date: 01/17/2024
+ms.topic: concept-article
 ---
 
 # WinUSB power management

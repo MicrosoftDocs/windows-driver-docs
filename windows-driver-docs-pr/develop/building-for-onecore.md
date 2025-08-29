@@ -2,6 +2,7 @@
 title: Building for OneCore
 description: You can build a single binary that targets pre-Windows 10 and OneCore editions.
 ms.date: 04/28/2020
+ms.topic: concept-article
 ---
 
 # Building for OneCore

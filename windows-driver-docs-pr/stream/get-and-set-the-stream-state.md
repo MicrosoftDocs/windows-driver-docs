@@ -10,6 +10,7 @@ keywords:
 - KSSTATE_PAUSE
 - KSSTATE_RUN
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Get and Set the Stream State

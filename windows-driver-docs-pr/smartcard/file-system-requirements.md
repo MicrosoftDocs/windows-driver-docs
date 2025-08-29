@@ -2,6 +2,7 @@
 title: File System Requirements
 description: File System Requirements
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # File System Requirements
@@ -116,7 +117,7 @@ This file is created and its content maintained by the Base CSP/KSP. Information
 
 **CONTAINERMAPRECORD**
 
-These records contain the CAPI-assigned container GUID and the key sizes for the associated key exchange or signing keys that are associated with that container. All WORD members are little-Endean byte order.
+These records contain the CAPI-assigned container GUID and the key sizes for the associated key exchange or signing keys that are associated with that container. All WORD members are little-Endian byte order.
 
 ``` syntax
 //
@@ -270,7 +271,7 @@ Known principals are identifiers for the various types of users that can attempt
 
 | Name          | Description                                                                                                                                                                                                                                                                                 | Mnemonic | PIN\_ID mapping    |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--------------------|
-| Everyone      | Any requestor, including unauthenticated (or anonymous) users.                                                                                                                                                                                                                              | E        | ROLE\_EVERYONE (0) |
+| Everyone      | Any requester, including unauthenticated (or anonymous) users.                                                                                                                                                                                                                              | E        | ROLE\_EVERYONE (0) |
 | User          | A user client of the card, who proves their identity to the card by use of a PIN.                                                                                                                                                                                                             | U        | ROLE\_USER (1)     |
 | Administrator | Card issuer or other party with an administrative relationship to the card or data on the card. Uses a special PIN or KEY (that may or may not be unique to the card or user) to perform administrative tasks that the user cannot perform without using this data, such as PIN unblocking. | A        | ROLE\_ADMIN (2)    |
 

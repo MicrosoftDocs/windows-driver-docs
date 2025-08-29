@@ -3,6 +3,7 @@ title: Setting Up Kernel-Mode Debugging of a Virtual Machine Manually Using a Vi
 description: Debugging Tools for Windows supports kernel debugging of a virtual machine using a Virtual COM Port.
 keywords: ["virtual machine debugging", "Virtual PC debugging", "VMware debugging"]
 ms.date: 12/13/2024
+ms.topic: how-to
 ---
 
 # Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a Virtual COM Port
@@ -128,9 +129,9 @@ You can use the Control Panel to allow access through the Windows firewall. Open
 
 ## Third Party VMs
 
-### VMWare  
+### VMware  
 
-If you restart the virtual machine by using the VMWare facilities (for example, the reset button), exit WinDbg, and then restart WinDbg to continue debugging. During virtual machine debugging, VMWare often consumes 100% of the CPU.
+If you restart the virtual machine by using the VMware facilities (for example, the reset button), exit WinDbg, and then restart WinDbg to continue debugging. During virtual machine debugging, VMware often consumes 100% of the CPU.
  
 ## See also
 

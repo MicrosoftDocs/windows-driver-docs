@@ -6,6 +6,7 @@ keywords:
 - print spooler notification WDK
 - notification WDK print spooler
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Spooler Notification

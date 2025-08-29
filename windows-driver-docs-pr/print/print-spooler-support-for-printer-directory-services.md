@@ -6,6 +6,7 @@ keywords:
 - print spooler Directory Services support WDK
 - publishing WDK printer
 ms.date: 09/16/2022
+ms.topic: concept-article
 ---
 
 # Print spooler support for printer Directory Services

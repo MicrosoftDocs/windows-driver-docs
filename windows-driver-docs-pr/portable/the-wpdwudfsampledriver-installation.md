@@ -2,6 +2,7 @@
 description: Installing the WpdWudfSampleDriver Sample
 title: Installing the WpdWudfSampleDriver Sample
 ms.date: 03/03/2023
+ms.topic: how-to
 ---
 
 # Installing the WpdWudfSampleDriver Sample

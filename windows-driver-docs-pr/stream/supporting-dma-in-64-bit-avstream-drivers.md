@@ -9,6 +9,7 @@ keywords:
 - 64-bit WDK AVStream
 - 32-bit addressable devices WDK AVStream
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting DMA in 64-Bit AVStream Drivers

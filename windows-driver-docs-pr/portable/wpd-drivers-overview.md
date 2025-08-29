@@ -2,6 +2,7 @@
 description: Introduction to Windows Portable Devices (WPD) Drivers 
 title: Introduction to WPD Drivers 
 ms.date: 12/09/2024
+ms.topic: concept-article
 ---
 
 # Introduction to Windows Portable Devices (WPD) Drivers 

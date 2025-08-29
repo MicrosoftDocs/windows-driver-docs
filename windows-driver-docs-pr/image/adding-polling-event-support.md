@@ -2,6 +2,7 @@
 title: Add Polling Event Support
 description: Add Polling Event Support
 ms.date: 03/27/2023
+ms.topic: how-to
 ---
 
 # Add Polling Event Support

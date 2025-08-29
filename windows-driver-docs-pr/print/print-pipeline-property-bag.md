@@ -3,6 +3,7 @@ title: Print Pipeline Property Bag
 description: The print pipeline property bag is used to pass information between filters in the filter pipeline.
 keywords: ["Print Pipeline Property Bag Print Devices"]
 ms.date: 12/19/2024
+ms.topic: reference
 ---
 
 # Print pipeline property bag

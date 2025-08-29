@@ -4,6 +4,7 @@ description: Obtaining the NDIS Version
 keywords:
 - NDIS version information WDK , versus operating system version
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Obtaining the NDIS Version

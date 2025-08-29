@@ -2,6 +2,7 @@
 title: Using NDIS 6.40 Data Structures
 description: The following structures and enumerations were updated for NDIS 6.40.
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Using NDIS 6.40 Data Structures

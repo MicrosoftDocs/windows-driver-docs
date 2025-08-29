@@ -7,6 +7,7 @@ keywords:
 - reserved keywords WDK
 - Undefine directive WDK GDL
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # \#Undefine Preprocessor Directive

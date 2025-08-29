@@ -7,6 +7,7 @@ keywords:
 - functional VidPN WDK display
 - determining VidPN supported WDK display
 ms.date: 12/06/2018
+ms.topic: concept-article
 ---
 
 # Determining VidPN support on a Display Adapter

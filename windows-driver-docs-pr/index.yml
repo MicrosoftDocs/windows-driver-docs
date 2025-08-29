@@ -5,8 +5,8 @@ brand: windows
 metadata:
    title: Windows developer documentation
    description: Design, develop, and deploy hardware and device drivers for Windows PCs and other devices.
-   author: sonialopez
-   ms.author: sonialopez
+   author: mhopkins-msft
+   ms.author: mhopkins
    ms.topic: hub-page
    ms.date: 12/10/2024
    ms.localizationpriority: medium
@@ -33,10 +33,10 @@ highlightedContent:
 conceptualContent:
   # title: Get started
   items:
-    - title: Get the tools
+    - title: Get started
       links:
-        - text: Visual Studio
-          url: https://go.microsoft.com/fwlink/p/?LinkId=698539
+        - text: Partner Center for Windows Hardware
+          url: ./dashboard/index.md
           itemType: download
         - text: Debugging Tools for Windows
           url: ./debugger/index.md

@@ -3,6 +3,7 @@ title: "WinDbg - Command line startup options"
 description: "This section covers the command line startup options for the WinDbg debugger."
 keywords: ["Command line startup options", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 09/11/2019
+ms.topic: reference
 ---
 
 # WinDbg - Command line startup options
@@ -105,7 +106,7 @@ Option | Description
 -xe *Exception*  |   Enable first-chance exception handling for the specified exception.
 -xd *Exception* |   Enable second-chance exception handling for the specified exception.
 -xn *Exception* |   For the given exception, disable first- and second-chance-handling, and only display a message on the console.
--xi *Exception* |   Completely ignore the given exception, disabling first- and second-chance handling, and not outputing anything to the console.
+-xi *Exception* |   Completely ignore the given exception, disabling first- and second-chance handling, and not outputting anything to the console.
 
 For a list of exceptions that can be specified, see [Event Definitions and Defaults](./../debugger/controlling-exceptions-and-events.md#event-definitions-and-defaults).
 

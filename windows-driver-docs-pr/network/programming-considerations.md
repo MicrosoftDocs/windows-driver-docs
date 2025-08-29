@@ -8,6 +8,7 @@ keywords:
 - in-progress calls WDK Network Module Registrar
 - counting references WDK Network Module Registrar
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Programming Considerations

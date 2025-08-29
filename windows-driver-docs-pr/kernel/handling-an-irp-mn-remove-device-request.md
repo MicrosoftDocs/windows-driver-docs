@@ -3,6 +3,7 @@ title: Handling an IRP_MN_REMOVE_DEVICE Request
 description: Handling an IRP_MN_REMOVE_DEVICE Request
 keywords: ["IRP_MN_REMOVE_DEVICE"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Handling an IRP\_MN\_REMOVE\_DEVICE Request

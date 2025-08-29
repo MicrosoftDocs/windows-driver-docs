@@ -2,6 +2,7 @@
 title: Windows Audio Architecture
 description: This topic provided a high level summary of the Windows 10/11 audio architecture.
 ms.date: 11/10/2023
+ms.topic: concept-article
 ---
 
 # Windows Audio Architecture

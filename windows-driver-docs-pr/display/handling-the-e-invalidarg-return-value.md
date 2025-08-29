@@ -5,6 +5,7 @@ keywords:
 - user-mode display drivers WDK Windows Vista , E_INVALIDARG return value
 - E_INVALIDARG return value WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling the E\_INVALIDARG Return Value

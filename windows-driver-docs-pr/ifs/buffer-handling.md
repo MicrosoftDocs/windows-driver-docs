@@ -10,6 +10,7 @@ keywords:
 - address validation WDK file systems
 - fast I/O WDK file systems
 ms.date: 11/04/2024
+ms.topic: concept-article
 ---
 
 # Buffer Handling

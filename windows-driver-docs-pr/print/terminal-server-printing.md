@@ -5,6 +5,7 @@ keywords:
 - printer drivers WDK , terminal servers
 - terminal server printing WDK
 ms.date: 03/24/2023
+ms.topic: concept-article
 ---
 
 # Terminal Server Printing

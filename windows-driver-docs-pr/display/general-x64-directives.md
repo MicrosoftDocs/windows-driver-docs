@@ -2,6 +2,7 @@
 title: General X64 Directives
 description: This topic describes the changes that are needed to properly decorate the INF for use on 64-bit Windows.
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # General x64 directives

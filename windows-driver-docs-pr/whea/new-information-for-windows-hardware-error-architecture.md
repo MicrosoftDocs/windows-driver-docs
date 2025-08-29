@@ -7,7 +7,8 @@ keywords:
 - hardware errors WDK WHEA , new information
 - errors WDK WHEA , new information about WHEA
 - source information WDK WHEA , new
-ms.date: 03/03/2023
+ms.date: 03/26/2025
+ms.topic: release-notes
 ---
 
 # New Information for Windows Hardware Error Architecture
@@ -27,7 +28,7 @@ This section includes the following topics:
 Starting with Windows 8, the following changes have been made to Windows Hardware Error Architecture (WHEA)
 
 -   A new WMI provider class [**WHEAPolicyManagementMethods**](/windows-hardware/drivers/ddi/_whea/).
--   WHEA policies can be managed either though [**WHEAPolicyManagementMethods**](/windows-hardware/drivers/ddi/_whea/) or through the WHEA Powershell module. If the policy is updated through either of these modes, the policy values take effect immediately.
+-   WHEA policies can be managed either though [**WHEAPolicyManagementMethods**](/windows-hardware/drivers/ddi/_whea/) or through the WHEA PowerShell module. If the policy is updated through either of these modes, the policy values take effect immediately.
 -   The WHEA WMI Method [**WHEAErrorSourceMethods::SetErrorSourceInfoRtn**](/windows-hardware/drivers/ddi/_whea/) is deprecated.
 
  

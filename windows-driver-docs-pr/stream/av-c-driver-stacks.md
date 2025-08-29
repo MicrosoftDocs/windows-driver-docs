@@ -7,6 +7,7 @@ keywords:
 - stacks WDK AV/C
 - Avc.sys function driver WDK , driver stacks
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # AV/C Driver Stacks

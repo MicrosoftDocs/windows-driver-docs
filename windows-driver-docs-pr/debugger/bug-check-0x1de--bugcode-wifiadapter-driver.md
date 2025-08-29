@@ -9,6 +9,7 @@ api_name:
 - BUGCODE_WIFIADAPTER_DRIVER
 api_type:
 - NA
+ms.topic: reference
 ---
 
 # Bug Check 0x1DE: BUGCODE\_WIFIADAPTER\_DRIVER

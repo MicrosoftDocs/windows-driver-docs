@@ -2,6 +2,7 @@
 description: Defining the Service Objects
 title: Defining the Service Objects
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Defining the Service Objects

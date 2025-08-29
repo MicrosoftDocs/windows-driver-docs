@@ -6,6 +6,7 @@ keywords:
 - HID collections WDK , free resources
 - freeing HID resources
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Freeing Resources

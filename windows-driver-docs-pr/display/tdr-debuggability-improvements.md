@@ -5,6 +5,7 @@ keywords:
 - WDDM, TDR debugging
 - WDDM, driver development debugging TDR
 ms.date: 09/20/2024
+ms.topic: release-notes
 ---
 
 # TDR debuggability improvements

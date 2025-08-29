@@ -6,6 +6,7 @@ keywords:
 - RSS WDK networking , non-RSS receive processing
 - non-RSS receive processing WDK RSS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Non-RSS Receive Processing

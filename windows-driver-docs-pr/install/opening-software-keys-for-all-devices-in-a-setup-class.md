@@ -5,6 +5,7 @@ keywords:
 - software keys WDK device installations , opening for all devices in a setup class
 - setup classes WDK device installations , opening software keys for devices
 ms.date: 08/15/2022
+ms.topic: how-to
 ---
 
 # Opening software keys for all devices in a setup class

@@ -3,6 +3,7 @@ title: Debugging Arm64
 description: Debugging Arm64
 keywords: ["Debugging Arm64", "Debugging", "Arm64"]
 ms.date: 07/17/2018
+ms.topic: concept-article
 ---
 
 # Debugging on Arm64

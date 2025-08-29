@@ -5,6 +5,7 @@ keywords:
 - Print Capabilities WDK, Unidrv
 - Print Capabilities WDK, PScript5
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print capabilities in Unidrv and PScript5 print drivers

@@ -2,6 +2,7 @@
 title: Accessing Hardware and Handling Interrupts
 description: Accessing Hardware and Handling Interrupts
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Accessing Hardware and Handling Interrupts

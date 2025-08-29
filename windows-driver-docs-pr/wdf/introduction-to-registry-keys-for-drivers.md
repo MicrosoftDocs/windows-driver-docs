@@ -14,6 +14,7 @@ keywords:
 - hardware keys WDK KMDF
 - keys WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Introduction to Registry Keys for Drivers

@@ -2,6 +2,7 @@
 title: Calling SetupWriteTextLogError
 description: Calling SetupWriteTextLogError
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Calling SetupWriteTextLogError

@@ -4,6 +4,7 @@ description: Print Provider Capabilities
 keywords:
 - print providers WDK , capabilities
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Print Provider Capabilities

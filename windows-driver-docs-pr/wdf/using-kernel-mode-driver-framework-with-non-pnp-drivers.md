@@ -10,6 +10,7 @@ keywords:
 - PnP WDK KMDF , non-PnP drivers
 - framework-based drivers WDK KMDF , PnP
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using Kernel-Mode Driver Framework with Non-PnP Drivers

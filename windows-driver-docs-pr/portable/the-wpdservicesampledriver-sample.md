@@ -2,6 +2,7 @@
 description: The WpdServiceSampleDriver Sample
 title: The WpdServiceSampleDriver Sample
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # The WpdServiceSampleDriver Sample

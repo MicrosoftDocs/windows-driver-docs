@@ -8,6 +8,7 @@ keywords:
 - library WDK Static Driver Verifier
 - library WDK Static Driver Verifier , about library processing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Library Processing in Static Driver Verifier

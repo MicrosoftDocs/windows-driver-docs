@@ -2,6 +2,7 @@
 title: PackageInfo XML Example
 description: PackageInfo XML Example
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # PackageInfo XML Example

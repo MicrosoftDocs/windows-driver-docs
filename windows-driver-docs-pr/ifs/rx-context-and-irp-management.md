@@ -16,6 +16,7 @@ keywords:
 - I/O request packets WDK RDBSS
 - context WDK RDBSS
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # RX\_CONTEXT and IRP Management

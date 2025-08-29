@@ -3,6 +3,7 @@ title: ACX Multi Stack Cross Driver Communications
 description: This topic provides a high level summary of the multi stack cross driver communications.
 ms.date: 09/29/2023
 ms.localizationpriority: medium
+ms.topic: concept-article
 ---
 
 # ACX multi stack cross driver communications
@@ -57,7 +58,7 @@ Aggregator_SendModuleCommand(
 
     *OutSize = 0;
 
-    moduleProperty = CONTAINING_RECORD(Params.Parameters.Property.Control, KSAUDIOMODULE_PROPERTY, ClassId);;
+    moduleProperty = CONTAINING_RECORD(Params.Parameters.Property.Control, KSAUDIOMODULE_PROPERTY, ClassId);
     aggregationDeviceIndex = AUDIOMODULE_GET_AGGDEVICEID(moduleProperty->InstanceId);
 
     ple = CircuitCtx->AggregatorCircuit->AggregatorEndpoint->AudioPaths[aggregationDeviceIndex]->TargetCircuitList.Flink;

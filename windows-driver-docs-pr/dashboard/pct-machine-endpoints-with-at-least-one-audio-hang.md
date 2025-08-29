@@ -2,6 +2,7 @@
 title: Percent of machine endpoints with at least one audio hang
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of machine endpoints that have at least one audio hang in AudioSrv.dll or AudioDG.exe
 ms.date: 11/19/2022
+ms.topic: concept-article
 ---
 
 # Percent of machine endpoints with at least one audio hang

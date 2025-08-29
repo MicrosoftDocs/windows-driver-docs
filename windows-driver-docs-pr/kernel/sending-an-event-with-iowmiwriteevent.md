@@ -3,6 +3,7 @@ title: Sending an Event with IoWMIWriteEvent
 description: Sending an Event with IoWMIWriteEvent
 keywords: ["WMI WDK kernel , event tracking", "events WDK WMI", "tracing WDK WMI", "sending WMI events", "event blocks WDK WMI", "notifications WDK WMI", "IoWMIWriteEvent", "dynamic instance names WDK WMI"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Sending an Event with IoWMIWriteEvent

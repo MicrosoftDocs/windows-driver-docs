@@ -2,6 +2,7 @@
 title: WexLogger
 description: WexLogger
 ms.date: 12/15/2021
+ms.topic: reference
 ---
 
 # WexLogger
@@ -269,7 +270,7 @@ The following steps are necessary to set up each remote logging connection:
     -   **RemoteLogController.WexLoggerRemoteConnectionData**, in Wex.Logger.Interop.dll
 
 3.  Launch the child process with the connection data
-4.  Call **RemoteLogController::InitalizeLogging(*\[connection data created in step 1\]*)**. This call must be made after the child process is launched, since it will time out if the child does not call **LogController::InitializeLogging()** in a timely manner.
+4.  Call **RemoteLogController::InitializeLogging(*\[connection data created in step 1\]*)**. This call must be made after the child process is launched, since it will time out if the child does not call **LogController::InitializeLogging()** in a timely manner.
 
     **Note:** Be sure to check the return value of this call.
 

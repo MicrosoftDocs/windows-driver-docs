@@ -2,6 +2,7 @@
 title: Package (SoftwareInfo - Priviliged Applications)
 description: Package (SoftwareInfo - priviliged applications)
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Package (SoftwareInfo - priviliged applications)

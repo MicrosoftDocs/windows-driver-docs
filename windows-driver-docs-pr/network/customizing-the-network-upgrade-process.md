@@ -6,6 +6,7 @@ keywords:
 - upgrading network components WDK , customizing
 - customizing network upgrade process WDK networking
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Customizing the Network Upgrade Process

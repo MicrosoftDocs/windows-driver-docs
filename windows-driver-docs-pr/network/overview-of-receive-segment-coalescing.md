@@ -2,6 +2,7 @@
 title: Overview of Receive Segment Coalescing
 description: Learn how to use receive segment coalescing (RSC) to reduce overhead by coalescing a sequence of received segments and passing them to the host TCP/IP stack.
 ms.date: 01/07/2024
+ms.topic: concept-article
 ---
 
 # Overview of receive segment coalescing

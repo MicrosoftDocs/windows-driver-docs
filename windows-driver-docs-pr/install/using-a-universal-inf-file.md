@@ -2,6 +2,7 @@
 title: Using a Universal INF File
 description: If you are building a universal or mobile driver package, you must use a universal INF file.
 ms.date: 01/14/2022
+ms.topic: concept-article
 ---
 
 # Using a Universal INF File

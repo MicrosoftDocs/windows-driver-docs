@@ -6,6 +6,7 @@ keywords:
 - non-PCM audio formats WDK , waveOut
 - looping non-PCM formats
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Specifics for waveOut Clients

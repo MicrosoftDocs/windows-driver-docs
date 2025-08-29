@@ -2,6 +2,7 @@
 title: Enabling Fault Injection
 description: Enabling Fault Injection
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Enabling Fault Injection

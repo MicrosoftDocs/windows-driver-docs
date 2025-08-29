@@ -2,6 +2,7 @@
 title: WinUSB Functions for Pipe Policy Modification
 description: Winusb.dll exposes the WinUsb_GetPipePolicy function to retrieve the pipe's default policy.
 ms.date: 01/17/2024
+ms.topic: concept-article
 ---
 
 # WinUSB functions for pipe policy modification

@@ -2,6 +2,7 @@
 title: WinUSB Architecture and Modules
 description: WinUSB consists of Winusb.sys, a kernel-mode driver, and Winusb.dll, user-mode DLL.
 ms.date: 09/18/2024
+ms.topic: concept-article
 ---
 
 # WinUSB architecture and modules

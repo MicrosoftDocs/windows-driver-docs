@@ -7,6 +7,7 @@ keywords:
 - GPD file entries WDK Unidrv , comments
 - comments WDK GPD files
 ms.date: 06/16/2023
+ms.topic: concept-article
 ---
 
 # Comments and ignored blocks

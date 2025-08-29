@@ -2,6 +2,7 @@
 title: Providing IPrintCoreHelper Configuration Service to Filters
 description: Providing IPrintCoreHelper Configuration Service to Filters
 ms.date: 01/30/2023
+ms.topic: how-to
 ---
 
 # Providing IPrintCoreHelper Configuration Service to Filters

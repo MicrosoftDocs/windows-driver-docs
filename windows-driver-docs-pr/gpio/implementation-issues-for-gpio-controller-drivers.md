@@ -2,6 +2,7 @@
 title: Implementation Issues for GPIO Controller Drivers
 description: The GPIO framework extension (GpioClx) provides a flexible device driver interface (DDI).
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Implementation Issues for GPIO Controller Drivers

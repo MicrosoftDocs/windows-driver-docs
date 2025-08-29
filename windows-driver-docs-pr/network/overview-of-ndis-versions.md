@@ -2,6 +2,7 @@
 title: Overview of NDIS versions
 description: The Windows operating system, Microsoft Windows Driver Kit (WDK), and Driver Development Kit (DDK) version support for NDIS versions. Support for major NDIS features across NDIS versions.
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # Overview of NDIS versions

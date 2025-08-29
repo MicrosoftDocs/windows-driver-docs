@@ -3,6 +3,7 @@ title: Analyzing a Kernel-Mode Dump File with KD
 description: Analyzing a Kernel-Mode Dump File with KD
 keywords: ["KD, analyzing a dump file", "CAB file containing a dump file, analyzing kernel-mode dump file with KD"]
 ms.date: 11/09/2022
+ms.topic: concept-article
 ---
 
 # Analyzing a Kernel-Mode Dump File with KD

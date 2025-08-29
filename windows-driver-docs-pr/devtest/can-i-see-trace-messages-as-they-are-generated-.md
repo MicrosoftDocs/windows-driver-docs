@@ -2,6 +2,7 @@
 title: Can I See Trace Messages as they are Generated
 description: Can I see trace messages as they are generated
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Can I see trace messages as they are generated?

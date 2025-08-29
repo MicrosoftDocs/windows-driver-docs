@@ -3,6 +3,7 @@ title: Registering an ISR
 description: Registering an ISR
 keywords: ["interrupt service routines WDK kernel , registering ISRs", "interrupt objects WDK kernel , registering ISRs", "ISRs WDK kernel , registering ISRs", "registering ISRs WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Registering an ISR

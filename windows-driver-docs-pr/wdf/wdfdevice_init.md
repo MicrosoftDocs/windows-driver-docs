@@ -4,6 +4,7 @@ description: The WDFDEVICE_INIT structure is an opaque structure that is defined
 keywords:
  - WDFDEVICE_INIT structure
 ms.date: 06/19/2024
+ms.topic: reference
 ---
 
 # WDFDEVICE_INIT structure

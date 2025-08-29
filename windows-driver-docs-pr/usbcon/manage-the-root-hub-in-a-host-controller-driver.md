@@ -2,6 +2,7 @@
 title: Root Hub Callback Functions of a USB Host Controller Driver
 description: UCX performs root hub management.
 ms.date: 01/17/2024
+ms.topic: concept-article
 ---
 
 # Root hub callback functions of a USB host controller driver

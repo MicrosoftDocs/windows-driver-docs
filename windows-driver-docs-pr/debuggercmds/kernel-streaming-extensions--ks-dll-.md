@@ -3,6 +3,7 @@ title: "Kernel Streaming Extensions (Ks.dll)"
 description: "Kernel Streaming Extensions (Ks.dll)"
 keywords: ["kernel streaming debugging, extensions (ks.dll)", "ks.dll (kernel streaming extensions)", "extensions, kernel streaming"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Kernel Streaming Extensions (Ks.dll)

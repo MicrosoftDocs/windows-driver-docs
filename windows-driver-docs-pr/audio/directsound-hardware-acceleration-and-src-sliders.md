@@ -5,6 +5,7 @@ keywords:
 - hardware acceleration WDK DirectSound , SRC sliders
 - sliders WDK audio
 ms.date: 10/27/2017
+ms.topic: concept-article
 ---
 
 # DirectSound Hardware-Acceleration and SRC Sliders

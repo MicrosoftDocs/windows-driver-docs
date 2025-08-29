@@ -2,6 +2,7 @@
 title: Enumerating Virtual Functions on a Network Adapter
 description: Enumerating Virtual Functions on a Network Adapter
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Enumerating Virtual Functions on a Network Adapter

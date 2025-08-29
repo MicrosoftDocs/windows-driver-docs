@@ -2,6 +2,7 @@
 title: Add Document Feeder Support for Windows Me and Windows XP
 description: Add document feeder support for Windows Me and Windows XP
 ms.date: 03/27/2023
+ms.topic: how-to
 ---
 
 # Add document feeder support

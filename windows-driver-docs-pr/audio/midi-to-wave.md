@@ -12,6 +12,7 @@ keywords:
 - custom rendering in user mode WDK audio , MIDI-to-wave conversions
 - DirectMusic custom rendering WDK audio , MIDI-to-wave conversions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # MIDI to Wave

@@ -2,6 +2,7 @@
 description: The WPD Driver Samples
 title: The WPD Driver Samples
 ms.date: 12/05/2024
+ms.topic: concept-article
 ---
 
 # The WPD Driver Samples

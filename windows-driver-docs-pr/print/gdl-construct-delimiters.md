@@ -6,6 +6,7 @@ keywords:
 - GDL WDK , constructs
 - parser WDK GDL , handling construct delimiters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Construct Delimiters

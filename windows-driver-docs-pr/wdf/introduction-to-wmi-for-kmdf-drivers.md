@@ -6,6 +6,7 @@ keywords:
 - WMI WDK KMDF , about WMI for framework-based drivers
 - callback functions WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Introduction to WMI for KMDF Drivers

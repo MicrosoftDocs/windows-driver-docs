@@ -10,6 +10,7 @@ keywords:
 - .etl files
 - etl files
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Displaying a Trace Log

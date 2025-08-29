@@ -8,6 +8,7 @@ keywords:
 - GPD files WDK GDL extensions
 - GPD files WDK GDL extensions , adding
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Adding GDL Extensions to an Existing GPD File

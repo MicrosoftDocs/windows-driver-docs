@@ -2,6 +2,7 @@
 title: Specifying the Source and Target Locations for Device Files
 description: Specifying the Source and Target Locations for Device Files
 ms.date: 01/21/2022
+ms.topic: concept-article
 ---
 
 # Specifying the Source and Target Locations for Device Files

@@ -2,7 +2,7 @@
 title: OID_PM_HARDWARE_CAPABILITIES
 ms.topic: reference
 description: As a query, overlying drivers can use the OID_PM_HARDWARE_CAPABILITIES OID to query the power management hardware capabilities of a network adapter.
-ms.date: 08/08/2017
+ms.date: 07/23/2025
 keywords: 
  -OID_PM_HARDWARE_CAPABILITIES Network Drivers Starting with Windows Vista
 ---
@@ -14,7 +14,7 @@ As a query, overlying drivers can use the OID\_PM\_HARDWARE\_CAPABILITIES OID to
 
 ## Remarks
 
-NDIS handles the query for miniport drivers. Starting with NDIS 6.20, miniport drivers supply the power management hardware capabilities during initialization in the **PowerManagementCapabilitiesEx** member of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure.
+NDIS handles the query for miniport drivers. Starting with NDIS 6.20, miniport drivers supply the power management hardware capabilities during initialization in the **PowerManagementCapabilitiesEx** member of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) structure.
 
 The miniport driver must issue an [**NDIS\_STATUS\_PM\_CAPABILITIES\_CHANGE**](./ndis-status-pm-capabilities-change.md) status indication to report changes in the power management hardware capabilities of a network adapter to NDIS and overlying drivers.
 
@@ -54,7 +54,7 @@ The request failed for reasons other than the preceding reasons.
 ## See also
 
 
-[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes)
+[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes)
 
 [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 

@@ -4,6 +4,7 @@ description: CM_PROB_HALTED
 keywords:
 - CM_PROB_HALTED
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 44 - CM_PROB_HALTED

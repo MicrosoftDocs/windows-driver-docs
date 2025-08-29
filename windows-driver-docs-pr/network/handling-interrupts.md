@@ -5,6 +5,7 @@ keywords:
 - interrupts WDK networking , handling
 - MiniportInterrupt
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Handling interrupts for NDIS miniport drivers

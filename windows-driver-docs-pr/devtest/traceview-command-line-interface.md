@@ -5,6 +5,7 @@ keywords:
 - TraceView WDK , command-line interface
 - commands WDK TraceView
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # TraceView Command-Line Interface

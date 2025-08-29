@@ -8,6 +8,7 @@ keywords:
 - transport address translation to host name WDK Winsock Kernel
 - transport addresses WDK Winsock Kernel
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Resolving Host Names and IP Addresses

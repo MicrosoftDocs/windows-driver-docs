@@ -6,6 +6,7 @@ keywords:
 - extended audio capabilities WDK audio
 - WDM audio drivers WDK , extensions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WDM Audio Extensions to Legacy Windows Multimedia APIs

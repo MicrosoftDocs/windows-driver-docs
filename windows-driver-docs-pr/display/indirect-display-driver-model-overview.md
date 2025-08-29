@@ -10,6 +10,7 @@ keywords:
 - Indirect display driver implementation
 - IDD implementation
 ms.date: 09/20/2024
+ms.topic: concept-article
 ---
 
 # Indirect display driver overview

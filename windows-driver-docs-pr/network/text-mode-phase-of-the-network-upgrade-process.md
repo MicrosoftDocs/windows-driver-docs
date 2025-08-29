@@ -6,6 +6,7 @@ keywords:
 - upgrading network components WDK , phases
 - text mode phase WDK networking
 ms.date: 04/20/2017
+ms.topic: upgrade-and-migration-article
 ---
 
 # Text Mode Phase of the Network Upgrade Process

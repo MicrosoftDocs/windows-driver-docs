@@ -2,6 +2,7 @@
 title: What Does the Zw Prefix Mean
 description: What Does the Zw Prefix Mean
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # What Does the Zw Prefix Mean?

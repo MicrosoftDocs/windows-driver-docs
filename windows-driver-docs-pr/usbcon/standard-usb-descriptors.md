@@ -2,6 +2,7 @@
 title: Standard USB Descriptors
 description: A USB device provides information about itself in data structures called USB descriptors. This section provides information about device, configuration, interface, and endpoint descriptors and ways to retrieve them from a USB device.
 ms.date: 01/17/2024
+ms.topic: concept-article
 ---
 
 # Standard USB descriptors

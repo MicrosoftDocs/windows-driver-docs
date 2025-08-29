@@ -2,6 +2,7 @@
 title: Allocation Usage Tracking
 description: With the allocation list going away, the video memory manager no longer has visibility into the allocations being referenced in a particular command buffer.
 ms.date: 01/18/2024
+ms.topic: concept-article
 ---
 
 # Allocation usage tracking

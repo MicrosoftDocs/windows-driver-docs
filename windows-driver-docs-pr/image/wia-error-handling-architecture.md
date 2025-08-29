@@ -2,6 +2,7 @@
 title: WIA Error Handling Architecture
 description: WIA Error Handling Architecture
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Error Handling Architecture

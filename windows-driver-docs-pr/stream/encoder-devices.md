@@ -13,6 +13,7 @@ keywords:
 - integrated encoders WDK AVStream
 - standalone encoders WDK AVStream
 ms.date: 06/16/2020
+ms.topic: concept-article
 ---
 
 # Encoder devices

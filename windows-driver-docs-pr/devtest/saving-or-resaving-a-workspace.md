@@ -7,6 +7,7 @@ keywords:
 - resaving workspaces
 - updating workspaces
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Saving or Resaving a Workspace

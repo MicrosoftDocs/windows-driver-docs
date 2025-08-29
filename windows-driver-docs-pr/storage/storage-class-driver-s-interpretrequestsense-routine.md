@@ -7,6 +7,7 @@ keywords:
 - errors WDK storage
 - retrying requests WDK storage
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Storage Class Driver's InterpretRequestSense Routine

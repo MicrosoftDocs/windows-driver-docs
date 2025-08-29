@@ -1,11 +1,12 @@
 ---
-title: Microsoft PostScript printer driver
+title: Microsoft PostScript Printer Driver
 description: The PostScript printer driver (Pscript) is the Microsoft standard printer driver for PostScript printers.
 keywords:
 - printer drivers WDK, PostScript Printer Driver
 - PostScript Printer Driver WDK print
 - Pscript WDK print
-ms.date: 06/21/2024
+ms.date: 04/25/2025
+ms.topic: overview
 ---
 
 # Microsoft PostScript printer driver

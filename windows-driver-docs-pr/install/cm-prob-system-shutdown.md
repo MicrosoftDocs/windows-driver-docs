@@ -4,6 +4,7 @@ description: CM_PROB_SYSTEM_SHUTDOWN
 keywords:
 - CM_PROB_SYSTEM_SHUTDOWN
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 46 - CM_PROB_SYSTEM_SHUTDOWN

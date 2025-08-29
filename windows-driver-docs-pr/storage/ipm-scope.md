@@ -2,6 +2,7 @@
 title: Idle Power Management Scope
 description: Idle Power Management Scope
 ms.date: 06/27/2024
+ms.topic: concept-article
 ---
 
 # Idle Power Management Scope

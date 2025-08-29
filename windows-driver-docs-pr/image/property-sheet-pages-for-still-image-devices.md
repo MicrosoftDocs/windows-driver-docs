@@ -2,6 +2,7 @@
 title: Property Sheet Pages for Still Image Devices
 description: Property Sheet Pages for Still Image Devices
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Property Sheet Pages for Still Image Devices

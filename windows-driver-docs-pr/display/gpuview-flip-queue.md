@@ -2,6 +2,7 @@
 title: GPUView Flip Queue
 description: The following figure shows a zoomed-in screen shot of the main UI with a focus on the Flip Queues. 
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # GPUView Flip Queue

@@ -4,6 +4,7 @@ description: The Country and Operator Settings Asset (COSA) database is used by 
 ms.date: 08/22/2024
 author: mhopkins-msft
 ms.author: mhopkins
+ms.topic: faq
 ---
 
 # COSA database overview and frequently asked questions

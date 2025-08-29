@@ -2,6 +2,7 @@
 title: How to View a USB ETW Trace in Netmon
 description: This article describes how to view an event trace file by using Netmon.
 ms.date: 01/16/2024
+ms.topic: how-to
 ---
 
 # How to view a USB ETW trace in Netmon

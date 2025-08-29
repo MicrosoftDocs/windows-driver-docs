@@ -8,6 +8,7 @@ keywords:
 - BIOS brightness control WDK display
 - automatic brightness WDK display
 ms.date: 09/26/2024
+ms.topic: concept-article
 ---
 
 # Supporting brightness controls on integrated display panels

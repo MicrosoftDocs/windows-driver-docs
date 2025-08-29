@@ -3,6 +3,7 @@ title: "!kb, !kv (WinDbg)"
 description: "!kb, !kv"
 keywords: ["!kb extension (obsolete)", "!kv extension (obsolete)"]
 ms.date: 03/25/2024
+ms.topic: reference
 ---
 
 # !kb, !kv

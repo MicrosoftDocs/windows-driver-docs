@@ -8,6 +8,7 @@ keywords:
 - bidirectional communication WDK print
 - bidi communication WDK print
 ms.date: 09/07/2022
+ms.topic: concept-article
 ---
 
 # Add bidirectional communication

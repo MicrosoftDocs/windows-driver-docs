@@ -8,6 +8,7 @@ keywords:
 - duplicating socket handles WDK SANs
 - shared underlying sockets WDK SANs
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Duplicating Socket Handles for a SAN

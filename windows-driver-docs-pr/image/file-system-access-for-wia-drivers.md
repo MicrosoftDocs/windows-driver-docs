@@ -2,6 +2,7 @@
 title: File System Access for WIA Drivers
 description: File System Access for WIA Drivers
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # File System Access for WIA Drivers

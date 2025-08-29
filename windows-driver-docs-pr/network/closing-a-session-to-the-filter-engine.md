@@ -7,6 +7,7 @@ keywords:
 - filter engine WDK Windows Filtering Platform
 - closing filter engine sessions WDK Windows Filtering Platform
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Closing a Session to the Filter Engine

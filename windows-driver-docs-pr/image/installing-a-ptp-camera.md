@@ -2,6 +2,7 @@
 title: Installing a PTP Camera
 description: Installing a PTP Camera
 ms.date: 05/08/2023
+ms.topic: concept-article
 ---
 
 # Installing a PTP Camera

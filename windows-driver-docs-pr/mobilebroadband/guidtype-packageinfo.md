@@ -2,6 +2,7 @@
 title: GUIDType (PackageInfo)
 description: GUIDType (PackageInfo)
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # GUIDType (PackageInfo)

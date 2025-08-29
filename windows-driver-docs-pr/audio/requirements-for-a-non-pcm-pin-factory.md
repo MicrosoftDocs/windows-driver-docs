@@ -6,6 +6,7 @@ keywords:
 - pin factories WDK audio
 - data-intersection handlers WDK audio , non-PCM wave formats
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Requirements for a Non-PCM Pin Factory

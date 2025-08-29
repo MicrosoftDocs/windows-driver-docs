@@ -7,6 +7,7 @@ keywords:
 - Web pages WDK printer, installing print drivers from
 - installing drivers WDK printer, Web pages
 ms.date: 09/14/2022
+ms.topic: install-set-up-deploy
 ---
 
 # Install print drivers from a Web page

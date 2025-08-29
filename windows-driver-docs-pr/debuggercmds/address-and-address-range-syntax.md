@@ -3,6 +3,7 @@ title: Address and Address Range Syntax
 description: Address and Address Range Syntax
 keywords: ["Address and Address Range Syntax", "WinDbg", "Windows Debugging"]
 ms.date: 05/28/2021
+ms.topic: concept-article
 ---
 
 # Address and Address Range Syntax

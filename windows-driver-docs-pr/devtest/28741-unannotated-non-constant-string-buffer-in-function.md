@@ -4,6 +4,7 @@ description: Warning C28741 Unannotated buffer in the function.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28741"
+ms.topic: reference
 ---
 
 # C28741

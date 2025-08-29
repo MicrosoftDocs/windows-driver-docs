@@ -2,6 +2,7 @@
 title: Microsoft Bluetooth Test Platform - Bluefruit Friend
 description: Bluetooth Test Platform (BTP) supported hardware (Bluefruit Friend).
 ms.date: 01/10/2024
+ms.topic: get-started
 ---
 
 # Bluefruit LE UART Friend (nRF51822)

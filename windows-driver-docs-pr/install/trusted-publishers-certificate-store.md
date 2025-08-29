@@ -6,6 +6,7 @@ keywords:
 - Trusted Publishers certificate store WDK
 - certificate stores WDK
 ms.date: 03/18/2022
+ms.topic: concept-article
 ---
 
 # Trusted Publishers Certificate Store

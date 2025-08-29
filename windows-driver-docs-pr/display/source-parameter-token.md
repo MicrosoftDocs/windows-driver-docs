@@ -2,6 +2,7 @@
 title: Source Parameter Token
 description: Source Parameter Token
 ms.date: 01/05/2018
+ms.topic: reference
 ---
 
 # Source Parameter Token

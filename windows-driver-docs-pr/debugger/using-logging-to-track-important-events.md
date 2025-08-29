@@ -3,6 +3,7 @@ title: Using Logging to Track Important Events
 description: Using Logging to Track Important Events
 keywords: ["kernel streaming debugging, video stream stall, logging"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using Logging to Track Important Events

@@ -2,6 +2,7 @@
 title: WIA Item Tree Architecture
 description: WIA Item Tree Architecture
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Item Tree Architecture

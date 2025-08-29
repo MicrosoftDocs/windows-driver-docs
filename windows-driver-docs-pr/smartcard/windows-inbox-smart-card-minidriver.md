@@ -2,6 +2,7 @@
 title: Windows Inbox Smart Card Minidriver
 description: Windows provides an inbox generic class minidriver that supports Personal Identity Verification (PIV)-compliant smart cards and cards that implement the Generic Identity Device Specification (GIDS) card edge.
 ms.date: 12/19/2024
+ms.topic: concept-article
 ---
 
 # Windows inbox smart card minidriver

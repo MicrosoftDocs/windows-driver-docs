@@ -10,6 +10,7 @@ keywords:
 - Kernel Streaming Proxy WDK AVStream
 - KS proxy WDK AVStream
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # AV/C kernel-streaming interface and kernel-streaming proxy plug-ins

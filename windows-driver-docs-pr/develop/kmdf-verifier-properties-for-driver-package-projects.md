@@ -2,6 +2,7 @@
 title: KMDF Verifier Properties for Driver Package Projects
 description: Sets properties for KMDF Verifier on a remote computer.  Use these settings to build and deploy a KMDF driver to a test computer.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # KMDF Verifier Properties for Driver Package Projects

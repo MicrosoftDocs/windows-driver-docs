@@ -6,6 +6,7 @@ keywords:
 - device interface names WDK audio
 - interface names WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Obtaining a Device Interface Name

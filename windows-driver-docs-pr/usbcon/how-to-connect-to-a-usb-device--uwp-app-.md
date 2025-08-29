@@ -2,6 +2,7 @@
 title: How to Connect to a USB Device (UWP App)
 description: In Windows, you can write a UWP app that interacts with a USB device.
 ms.date: 01/12/2024
+ms.topic: how-to
 ---
 
 # How to connect to a USB device (UWP app)

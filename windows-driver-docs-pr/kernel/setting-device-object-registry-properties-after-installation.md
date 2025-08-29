@@ -3,6 +3,7 @@ title: Setting Device Object Registry Properties After Installation
 description: Setting Device Object Registry Properties After Installation
 keywords: ["device objects WDK kernel , registry", "registry WDK device objects"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Setting Device Object Registry Properties After Installation

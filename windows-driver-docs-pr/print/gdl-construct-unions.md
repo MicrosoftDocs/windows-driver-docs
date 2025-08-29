@@ -11,6 +11,7 @@ keywords:
 - parser WDK GDL , handling unions
 - GDL WDK , unions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Construct Unions

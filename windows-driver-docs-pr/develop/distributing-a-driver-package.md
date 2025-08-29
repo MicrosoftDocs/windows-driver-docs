@@ -2,6 +2,7 @@
 title: Distributing a Driver Package
 description: This topic describes distributing a driver package usingWindows Update - a robust, secure, globally scaled, regulatory compliant, distribution system that should be used.
 ms.date: 01/14/2025
+ms.topic: concept-article
 ---
 
 # Distributing a driver package

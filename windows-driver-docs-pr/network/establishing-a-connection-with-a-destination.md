@@ -10,6 +10,7 @@ keywords:
 - connections WDK Winsock Kernel
 - destination connections WDK Winsock Kernel
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Establishing a Connection with a Destination

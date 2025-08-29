@@ -7,6 +7,7 @@ keywords:
 - Plug and Play WDK NDIS miniport , removing NIC
 - removing NICs WDK networking
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Removing a NIC

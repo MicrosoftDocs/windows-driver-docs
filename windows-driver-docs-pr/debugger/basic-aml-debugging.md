@@ -3,6 +3,7 @@ title: Basic AML Debugging
 description: Basic AML Debugging
 keywords: ["AMLI Debugger, basic use"]
 ms.date: 11/07/2018
+ms.topic: how-to
 ---
 
 # Basic AML Debugging

@@ -4,6 +4,7 @@ description: How to run DevGen, including syntax and parameters.
 keywords:
 - DevGen Command Syntax Driver Development Tools
 ms.date: 12/01/2022
+ms.topic: how-to
 ---
 
 # DevGen Command Syntax

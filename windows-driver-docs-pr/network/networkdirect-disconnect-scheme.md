@@ -2,6 +2,7 @@
 title: NetworkDirect Disconnect Scheme
 description: This section describes the NetworkDirect disconnect scheme
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # NetworkDirect Disconnect Scheme

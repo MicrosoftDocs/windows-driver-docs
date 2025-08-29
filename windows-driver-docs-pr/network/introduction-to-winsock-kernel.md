@@ -2,6 +2,7 @@
 title: Introduction to Winsock Kernel
 description: Learn how to use Winsock Kernel to perform network I/O operations.
 ms.date: 01/31/2025
+ms.topic: concept-article
 ---
 
 # Introduction to Winsock Kernel

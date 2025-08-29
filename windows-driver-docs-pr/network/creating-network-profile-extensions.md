@@ -5,6 +5,7 @@ keywords:
 - network profiles WDK Native 802.11 IHV Extensions DLL , creating extensions
 - scan operation WDK Native 802.11
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating Network Profile Extensions

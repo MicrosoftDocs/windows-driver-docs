@@ -3,6 +3,7 @@ title: Configure and Query Audio Device Modules
 description: This article shows how to send commands and receive change notifications from audio device modules. from a Universal Windows Platform (UWP) app.
 ms.date: 06/28/2017
 keywords: windows 10, uwp
+ms.topic: how-to
 ---
 
 # Configure and query audio device modules 

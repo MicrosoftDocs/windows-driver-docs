@@ -4,6 +4,7 @@ description: Describes how WDDM uses a segmentation model to abstract GPU access
 keywords:
 - WDDM , GPU segments, memory segments, aperture segments, system memory segments, physical memory reference, accessed physically, primary surfaces
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # GPU segments

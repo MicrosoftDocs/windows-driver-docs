@@ -2,6 +2,7 @@
 title: Present Charts
 description: The Present Charts are process-specific. They are shown below the Context CPU Queue and above the threads. 
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Present Charts

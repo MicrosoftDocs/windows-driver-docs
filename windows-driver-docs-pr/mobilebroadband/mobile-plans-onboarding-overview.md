@@ -4,6 +4,7 @@ description: An overview of the steps required to onboard to Mobile Plans
 keywords:
 - Windows Mobile Plans mobile operator onboarding
 ms.date: 10/06/2023
+ms.topic: concept-article
 ---
 
 # Mobile Plans onboarding overview

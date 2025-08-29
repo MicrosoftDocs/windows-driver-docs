@@ -4,6 +4,7 @@ description: The Web Services for Devices (WSD) Installed construct indicates wh
 keywords:
 - Installed construct
 ms.date: 09/08/2022
+ms.topic: reference
 ---
 
 # Installed (WSD)

@@ -2,6 +2,7 @@
 title: Standardized INF keywords for NVGRE Task Offload
 description: This section describes standardized keywords used in INF files for NVGRE-capable drivers
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Standardized INF Keywords for NVGRE Task Offload

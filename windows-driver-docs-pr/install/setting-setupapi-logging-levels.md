@@ -4,6 +4,7 @@ description: Setting SetupAPI Logging Levels
 keywords:
 - logging levels WDK SetupAPI
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Setting SetupAPI Logging Levels

@@ -2,6 +2,7 @@
 title: Virtual Machine Queue (VMQ) Overview
 description: Learn how the NDIS virtual machine queue (VMQ) architecture provides several advantages for virtualization.
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # Virtual machine queue (VMQ) overview

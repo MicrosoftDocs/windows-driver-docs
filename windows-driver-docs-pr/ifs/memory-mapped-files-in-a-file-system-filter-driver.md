@@ -5,6 +5,7 @@ keywords:
 - security WDK file systems , memory mapped files
 - memory mapped files WDK file systems
 ms.date: 06/14/2023
+ms.topic: concept-article
 ---
 
 # Memory Mapped Files in a File System Filter Driver

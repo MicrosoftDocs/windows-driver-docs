@@ -8,6 +8,7 @@ keywords:
 - files WDK Static Driver Verifier
 - output files WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Static Driver Verifier Output Files

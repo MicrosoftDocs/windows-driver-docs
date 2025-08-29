@@ -2,6 +2,7 @@
 title: Installing GPUView
 description: Lists the components that are packaged with GPUView and describes how to install GPUView.
 ms.date: 07/08/2024
+ms.topic: concept-article
 ---
 
 # Installing GPUView

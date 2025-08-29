@@ -2,6 +2,7 @@
 title: Setting the Feature Score for Windows 7 Display Drivers
 description: Setting the Feature Score for Windows 7 Display Drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting the Feature Score for Windows 7 Display Drivers

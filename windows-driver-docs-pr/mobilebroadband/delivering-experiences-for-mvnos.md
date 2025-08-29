@@ -2,6 +2,7 @@
 title: Delivering Experiences for MVNOs
 description: Delivering experiences for MVNOs
 ms.date: 10/10/2023
+ms.topic: concept-article
 ---
 
 # Delivering experiences for MVNOs

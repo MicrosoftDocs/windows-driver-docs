@@ -2,6 +2,7 @@
 title: Debugging a User-Mode Process Using CDB
 description: You can use CDB to attach to a running process or to spawn and attach to new process.
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # <span id="debugger.debugging_a_user-mode_process_using_cdb"></span>Debugging a User-Mode Process Using CDB

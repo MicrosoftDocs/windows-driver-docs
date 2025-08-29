@@ -2,12 +2,11 @@
 title: Introduction to Threaded DPCs
 description: A *threaded DPC* is a DPC that the system executes at IRQL equal to PASSIVE_LEVEL.
 keywords: ["threaded DPCs WDK kernel", "real-time threads WDK kernel", "preempted DPCs WDK kernel"]
-ms.date: 07/22/2021
+ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
-# Introduction to Threaded DPCs
-
-Threaded DPCs are available in Windows Vista and later versions of Windows.
+# Introduction to threaded DPCs
 
 A *threaded DPC* is a DPC that the system executes at IRQL equal to PASSIVE_LEVEL. Threaded DPCs are enabled by default, but you can disable them by setting the **HKLM\\System\\CCS\\Control\\SessionManager\\Kernel\\ThreadDpcEnable** registry key to zero. When threaded DPCs are disabled, they execute as ordinary DPCs.
 

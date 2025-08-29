@@ -6,6 +6,7 @@ keywords:
 - monitor configurations WDK display , existing monitors
 - TMM WDK display , existing monitor configurations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling Existing Monitor Configurations

@@ -5,6 +5,7 @@ keywords:
 - INF files WDK device installations , sections
 - sections WDK INF files
 ms.date: 01/14/2022
+ms.topic: reference
 ---
 
 # Summary of INF Sections

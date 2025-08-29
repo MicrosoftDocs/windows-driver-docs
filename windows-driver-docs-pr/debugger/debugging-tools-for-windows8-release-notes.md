@@ -2,6 +2,7 @@
 title: Debugging Tools For Windows 8 Release Notes
 description: Debugging Tools For Windows 8 Release Notes
 ms.date: 11/28/2017
+ms.topic: release-notes
 ---
 
 # Debugging Tools For Windows 8 Release Notes

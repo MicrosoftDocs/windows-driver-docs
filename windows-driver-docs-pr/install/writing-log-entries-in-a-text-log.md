@@ -10,6 +10,7 @@ keywords:
 - SetupAPI logging WDK Windows Vista , writing text log entries
 - SetupWriteTextLog
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing Log Entries in a Text Log

@@ -9,6 +9,7 @@ keywords:
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
 ms.date: 05/11/2023
+ms.topic: reference
 ---
 
 # Identifiers for High Definition Audio (HDAUDIO) devices

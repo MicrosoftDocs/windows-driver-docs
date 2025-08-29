@@ -2,6 +2,7 @@
 title: ReleaseDeviceRequested
 description: The ReleaseDeviceRequested event occurs when another client attempts to claim a device.
 ms.date: 03/17/2023
+ms.topic: reference
 ---
 
 # ReleaseDeviceRequested

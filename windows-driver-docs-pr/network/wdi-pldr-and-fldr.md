@@ -2,6 +2,7 @@
 title: WDI PLDR Recovery
 description: This section describes recovery of PLDR for WDI drivers
 ms.date: 03/02/2023
+ms.topic: troubleshooting-general
 ---
 
 # PLDR

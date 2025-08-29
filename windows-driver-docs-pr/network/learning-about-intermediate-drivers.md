@@ -10,6 +10,7 @@ keywords:
 - NDIS intermediate drivers WDK , connection-oriented lower edge
 - network drivers WDK , types
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Learning About Intermediate Drivers

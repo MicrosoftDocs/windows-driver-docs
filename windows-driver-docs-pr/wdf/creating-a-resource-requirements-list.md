@@ -8,6 +8,7 @@ keywords:
 - resource-requirements-list objects WDK KMDF
 - framework resource-requirements-list objects WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating a Resource Requirements List

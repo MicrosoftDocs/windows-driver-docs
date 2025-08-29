@@ -4,6 +4,7 @@ description: Warning C28601 Avoid blocking on HWND_BROADCAST.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28601"
+ms.topic: reference
 ---
 
 # C28601

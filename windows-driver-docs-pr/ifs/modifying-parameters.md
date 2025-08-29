@@ -8,6 +8,7 @@ keywords:
 - memory descriptor lists WDK file system minifilter
 - MDLs WDK file systems
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Modifying Parameters

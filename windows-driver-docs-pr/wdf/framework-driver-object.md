@@ -7,6 +7,7 @@ keywords:
 - driver objects WDK UMDF
 - IWDFDriver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Framework Driver Object

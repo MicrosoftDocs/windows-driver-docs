@@ -3,6 +3,7 @@ title: Debugger Error and Warning Messages
 description: Debugger Error and Warning Messages
 keywords: ["error messages", "warning messages"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Debugger Error and Warning Messages

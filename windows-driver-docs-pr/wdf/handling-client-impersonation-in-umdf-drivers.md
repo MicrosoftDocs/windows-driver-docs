@@ -2,6 +2,7 @@
 title: Handling Client Impersonation in UMDF Drivers
 description: This topic describes how a User-Mode Driver Framework (UMDF) driver accesses protected resources, starting in UMDF version 2.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Handling Client Impersonation in UMDF Drivers

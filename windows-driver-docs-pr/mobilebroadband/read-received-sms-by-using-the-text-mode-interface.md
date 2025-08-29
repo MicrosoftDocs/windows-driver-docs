@@ -2,6 +2,7 @@
 title: Read Received SMS by Using the Text-Mode Interface
 description: Read received SMS by using the text-mode interface
 ms.date: 10/10/2023
+ms.topic: how-to
 ---
 
 # Read received SMS by using the text-mode interface

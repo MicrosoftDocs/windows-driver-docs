@@ -4,6 +4,7 @@ description: Warning C28718 Unannotated buffer.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28718"
+ms.topic: reference
 ---
 
 # C28718

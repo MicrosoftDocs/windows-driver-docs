@@ -2,6 +2,7 @@
 title: Overview of NDIS Driver Types
 description: Network Driver Interface Specification (NDIS) supports the following driver types.
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # Overview of NDIS driver types

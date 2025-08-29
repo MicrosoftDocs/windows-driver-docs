@@ -2,6 +2,7 @@
 title: PairTool Examples
 description: This article shows examples of how to use the PairTool utility.
 ms.date: 11/08/2023
+ms.topic: how-to
 ---
 
 # PairTool examples

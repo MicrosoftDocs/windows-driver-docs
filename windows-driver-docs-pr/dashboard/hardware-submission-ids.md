@@ -2,6 +2,7 @@
 title: Dashboard submission product and shipping label IDs
 description: Dashboard submission product and shipping label IDs
 ms.date: 09/19/2024
+ms.topic: concept-article
 ---
 
 # Dashboard submission product and shipping label IDs

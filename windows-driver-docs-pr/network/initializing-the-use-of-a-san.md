@@ -2,6 +2,7 @@
 title: Initializing the Use of a SAN
 description: Initializing the Use of a SAN
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing the Use of a SAN

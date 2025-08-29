@@ -3,6 +3,7 @@ title: Debugging User-Mode Processes Without Symbols
 description: Debugging User-Mode Processes Without Symbols
 keywords: ["symbols, debugging without symbols"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Debugging User-Mode Processes Without Symbols

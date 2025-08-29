@@ -5,6 +5,7 @@ keywords:
 - GPD file entries WDK Unidrv , Boolean values
 - Boolean values WDK GPD files
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # Boolean Values

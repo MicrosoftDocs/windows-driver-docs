@@ -4,6 +4,7 @@ description: IPrintOemUIMXDC COM Interface
 keywords:
 - IPrintOemUIMXDC
 ms.date: 07/17/2023
+ms.topic: reference
 ---
 
 # IPrintOemUIMXDC COM Interface

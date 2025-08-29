@@ -2,6 +2,7 @@
 title: WIA Transfer Architecture
 description: WIA Transfer Architecture
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Transfer Architecture

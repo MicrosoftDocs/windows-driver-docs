@@ -3,6 +3,7 @@ title: KSEVENTSETID\_AudioControlChange
 description: KSEVENTSETID\_AudioControlChange
 keywords: ["KSEVENTSETID_AudioControlChange"]
 ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 

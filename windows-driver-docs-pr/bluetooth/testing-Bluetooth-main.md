@@ -2,6 +2,7 @@
 title: Bluetooth Driver Testing Resources
 description: Overview of bluetooth driver testing resources.
 ms.date: 01/10/2024
+ms.topic: overview
 ---
 
 # Bluetooth driver testing resources

@@ -2,6 +2,7 @@
 title: Hang detection and recovery
 description: After a command is issued to the IHV component, the host starts a timer.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Hang detection and recovery

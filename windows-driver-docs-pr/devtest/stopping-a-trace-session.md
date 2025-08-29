@@ -6,6 +6,7 @@ keywords:
 - stopping trace sessions
 - TraceView WDK , stopping trace
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Stopping a Trace Session

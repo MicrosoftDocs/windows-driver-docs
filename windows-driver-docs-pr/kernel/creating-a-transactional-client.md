@@ -3,6 +3,7 @@ title: Creating a Transactional Client
 description: Creating a Transactional Client
 keywords: ["transactional clients WDK KTM", "transactional clients WDK KTM , creating transactional clients"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Creating a Transactional Client

@@ -2,6 +2,7 @@
 title: Debugging a Driver
 description: Typically, debugging a kernel-mode driver requires two computers.
 ms.date: 08/22/2019
+ms.topic: concept-article
 ---
 
 # Debugging a Driver

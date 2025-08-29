@@ -5,6 +5,7 @@ keywords:
 - registry WDK device installations , accessing registry keys safely
 - accessing registry keys safely WDK device installations
 ms.date: 08/15/2022
+ms.topic: concept-article
 ---
 
 # Accessing registry keys safely

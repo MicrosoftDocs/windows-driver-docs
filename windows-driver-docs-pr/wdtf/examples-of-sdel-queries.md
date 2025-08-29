@@ -5,6 +5,7 @@ keywords:
 - SDEL
 - SDEL queries
 ms.date: 09/03/2020
+ms.topic: concept-article
 ---
 
 # Examples of SDEL Queries

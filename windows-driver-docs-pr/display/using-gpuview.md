@@ -6,6 +6,7 @@ keywords:
 - GPUView, performance analysis
 - CPU activity, GPU activity, performance analysis
 ms.date: 01/06/2025
+ms.topic: concept-article
 ---
 
 # About GPUView

@@ -9,6 +9,7 @@ keywords:
 - GDL WDK , index tree
 - parser WDK GDL , index tree
 ms.date: 04/20/2017
+ms.topic: tutorial
 ---
 
 # GDL Exercise Notes

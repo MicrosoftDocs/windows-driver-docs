@@ -9,6 +9,7 @@ keywords:
 - DXGI DDI conformance WDK Windows 7 display
 - DXGI DDI conformance WDK Windows Server 2008 R2 display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Conforming to the DXGI DDI

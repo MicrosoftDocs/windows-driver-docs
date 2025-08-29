@@ -4,6 +4,7 @@ description: Configuring power management
 keywords:
 - NetAdapterCx configuring power management, NetCx configuring power management
 ms.date: 06/12/2020
+ms.topic: concept-article
 ---
 
 # Configuring NetAdapterCx power management
@@ -126,7 +127,7 @@ EvtDeviceArmWakeFromSx(
 
     NetDeviceGetWakeSourceList(Device, &wakeSourceList);
 
-    for(UINT32 i = 0; i < NetWakeSourceListGetCount(&wakeSourceList; i++); i++)
+    for(UINT32 i = 0; i < NetWakeSourceListGetCount(&wakeSourceList); i++)
     {
         NETWAKESOURCE wakeSource = NetWakeSourceListGetElement(&wakeSourceList, i);
         NET_WAKE_SOURCE_TYPE const wakeSourceType = NetWakeSourceGetType(wakeSource);
@@ -149,7 +150,7 @@ EvtDeviceArmWakeFromSx(
 
     for(UINT32 i = 0; i < NetPowerOffloadListGetCount(&powerOffloadList); i++)
     {
-        NETPOWEROFFLOAD powerOffload = NetPowerOffloadGetElement(&powerOffloadList, i);
+        NETPOWEROFFLOAD powerOffload = NetPowerOffloadListGetElement(&powerOffloadList, i);
         NET_POWER_OFFLOAD_TYPE const powerOffloadType = NetPowerOffloadGetType(powerOffload);
 
         if(powerOffloadType == NetPowerOffloadTypeArp)
@@ -164,7 +165,7 @@ EvtDeviceArmWakeFromSx(
 }
 ```
 
-On the way [back to high power](../wdf/power-up-sequence-for-a-function-or-filter-driver.md) the driver normally disables the previously programmed protocol power offloads and wake patterns in the corresponding [*EvtDeviceDisarmWakeFromSx*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx) and [*EvtDeviceDisarmWakeFromS0*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0) callbacks.
+On the way [back to high power](../wdf/power-up-sequence-for-a-function-or-filter-driver.md) the driver normally disables the previously programmed protocol power offloads and wake patterns in the corresponding [*EvtDeviceDisarmWakeFromSx*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx) and [*EvtDeviceDisarmWakeFromS0*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0) callbacks. [**NetDeviceGetPowerOffloadList**](/windows-hardware/drivers/ddi/netpoweroffloadlist/nf-netpoweroffloadlist-netdevicegetpoweroffloadlist) and [**NetDeviceGetWakeSourceList**](/windows-hardware/drivers/ddi/netwakesourcelist/nf-netwakesourcelist-netdevicegetwakesourcelist) can be used to retrieve the the protocol power offloads and wake pattern in the callbacks.
 
 ## Reporting wake reason
 

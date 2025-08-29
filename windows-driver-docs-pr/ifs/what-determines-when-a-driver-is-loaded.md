@@ -17,6 +17,7 @@ keywords:
 - boot drivers WDK file system
 - boot-start drivers WDK file system
 ms.date: 09/25/2024
+ms.topic: concept-article
 ---
 
 # File system filter load order

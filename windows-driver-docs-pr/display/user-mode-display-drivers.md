@@ -8,11 +8,12 @@ keywords:
 - user-mode display drivers WDK Windows Vista
 - Direct3D WDK display
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # User-mode display drivers
 
-Along with a kerne-mode display driver, graphics hardware vendors must also write a user-mode display driver (UMD) for their display adapters. The UMD is a dynamic-link library (DLL) that the Direct3D runtime loads.
+Along with a kernel-mode display driver, graphics hardware vendors must also write a user-mode display driver (UMD) for their display adapters. The UMD is a dynamic-link library (DLL) that the Direct3D runtime loads.
 
 The UMD can consist of one DLL that supports multiple Direct3D versions, or it can consist of separate DLLs. The following articles discuss various aspects of the UMD:
 
@@ -35,8 +36,6 @@ The UMD can consist of one DLL that supports multiple Direct3D versions, or it c
 [DirectX Video Acceleration 2.0](directx-video-acceleration-2-0.md)
 
 [Supporting Direct3D Version 10](supporting-direct3d-version-10.md)
-
-[Supporting Direct3D Version 10.1](supporting-direct3d-version-10-1.md)
 
 [Supporting Direct3D Version 11](supporting-direct3d-version-11.md)
 

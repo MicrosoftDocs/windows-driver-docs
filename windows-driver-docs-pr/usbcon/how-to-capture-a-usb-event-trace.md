@@ -2,6 +2,7 @@
 title: How to Capture a USB Event Trace With Logman
 description: This article provides information about using the Logman tool to capture a USB ETW event trace.
 ms.date: 01/12/2024
+ms.topic: how-to
 ---
 
 # How to capture a USB event trace with Logman

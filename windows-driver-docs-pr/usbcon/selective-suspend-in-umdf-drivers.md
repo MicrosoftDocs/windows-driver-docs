@@ -2,6 +2,7 @@
 title: Selective Suspend in USB UMDF Drivers
 description: This topic describes how UMDF function drivers support USB selective suspend.
 ms.date: 01/17/2024
+ms.topic: concept-article
 ---
 
 # Selective suspend in USB UMDF drivers

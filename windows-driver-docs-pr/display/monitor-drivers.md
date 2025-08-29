@@ -6,6 +6,7 @@ keywords:
 - monitor drivers WDK
 - display drivers WDK , monitor drivers
 ms.date: 09/23/2024
+ms.topic: concept-article
 ---
 
 # Monitor driver stack

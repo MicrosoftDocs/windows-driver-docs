@@ -2,6 +2,7 @@
 title: EVENTSETID_TUNER
 description: The EVENTSETID_Tuner event set notifies clients when a tuner change event occurs.
 ms.date: 10/11/2021
+ms.topic: reference
 ---
 
 # EVENTSETID_TUNER

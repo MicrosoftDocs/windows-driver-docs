@@ -4,6 +4,7 @@ description: Implementing a ProtocolNetPnPEvent Handler in an Intermediate Drive
 keywords:
 - ProtocolNetPnPEvent
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Implementing a ProtocolNetPnPEvent Handler in an Intermediate Driver

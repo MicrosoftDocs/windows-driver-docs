@@ -2,6 +2,7 @@
 title: Roadmap for Developing Biometric Drivers
 description: Roadmap for Developing Biometric Drivers
 ms.date: 12/09/2024
+ms.topic: checklist
 ---
 
 # Roadmap for Developing Biometric Drivers

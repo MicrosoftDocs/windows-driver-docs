@@ -2,6 +2,7 @@
 title: Adding Extensible Switch Destination Port Data to a Packet
 description: Adding Extensible Switch Destination Port Data to a Packet
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Adding Extensible Switch Destination Port Data to a Packet

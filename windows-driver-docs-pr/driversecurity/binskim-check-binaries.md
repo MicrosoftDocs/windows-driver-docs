@@ -2,6 +2,7 @@
 title: Use BinSkim to check binaries
 description: This article describes how  driver developers can use BinSkim to examine binary files to identify coding and building practices that can potentially render the binary vulnerable.
 ms.date: 12/09/2024
+ms.topic: how-to
 ---
 
 # Use BinSkim to examine binary files to identify  vulnerabilities

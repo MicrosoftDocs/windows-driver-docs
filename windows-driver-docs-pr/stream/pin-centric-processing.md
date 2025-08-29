@@ -7,6 +7,7 @@ keywords:
 - filter types WDK AVStream
 - AVStrMiniPinProcess
 ms.date: 06/18/2020
+ms.topic: concept-article
 ---
 
 # Pin-centric processing

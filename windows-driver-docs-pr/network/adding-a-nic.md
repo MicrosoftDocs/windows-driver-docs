@@ -7,6 +7,7 @@ keywords:
 - Plug and Play WDK NDIS miniport , adding NIC
 - adding NICs WDK networking
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Adding a NIC

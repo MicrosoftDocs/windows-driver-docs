@@ -2,6 +2,7 @@
 title: Using Kernel Mode Performance Counters
 description: Using Kernel Mode Performance Counters
 ms.date: 08/24/2023
+ms.topic: how-to
 ---
 
 # Using Kernel Mode Performance Counters

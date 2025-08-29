@@ -2,6 +2,7 @@
 title: Forwarding Packets to Hyper-V Extensible Switch Ports
 description: Forwarding Packets to Hyper-V Extensible Switch Ports
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Forwarding Packets to Hyper-V Extensible Switch Ports

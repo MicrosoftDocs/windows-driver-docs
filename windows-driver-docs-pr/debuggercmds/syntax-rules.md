@@ -3,6 +3,7 @@ title: "Syntax Rules"
 description: "This section describes the syntax rules that you must follow to use debugger commands."
 keywords: commands, syntax rules, meta-commands 
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Syntax Rules

@@ -4,6 +4,7 @@ description: Configuring a Protected Output
 keywords:
 - OPM WDK display , configuring protected outputs
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Configuring a Protected Output

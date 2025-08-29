@@ -6,6 +6,7 @@ keywords:
 - port management WDK print
 - port management WDK print , about port management
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Managing a Port

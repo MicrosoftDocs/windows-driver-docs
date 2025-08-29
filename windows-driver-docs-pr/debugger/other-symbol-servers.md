@@ -3,6 +3,7 @@ title: Other Symbol Servers
 description: Other Symbol Servers
 keywords: ["symbol servers, writing your own symbol server"]
 ms.date: 12/27/2022
+ms.topic: concept-article
 ---
 
 # Other Symbol Server DLLs

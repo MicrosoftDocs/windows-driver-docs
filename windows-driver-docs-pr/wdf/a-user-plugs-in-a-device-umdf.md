@@ -5,6 +5,7 @@ keywords:
 - power management scenarios WDK UMDF , plugging in a device
 - plugging in a device scenario WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # A User Plugs in a Device (UMDF 1)

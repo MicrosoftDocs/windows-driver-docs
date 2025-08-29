@@ -2,6 +2,7 @@
 title: IStiDevice COM Interface
 description: IStiDevice COM Interface
 ms.date: 04/28/2023
+ms.topic: reference
 ---
 
 # IStiDevice COM Interface

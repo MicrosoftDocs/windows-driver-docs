@@ -8,6 +8,7 @@ keywords:
 - storing print port configuration information
 - spooler registry information WDK print monitor
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Storing Port Configuration Information

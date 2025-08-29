@@ -2,6 +2,7 @@
 title: TWAIN and Raw RGB Format
 description: TWAIN and Raw RGB Format
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # TWAIN and Raw RGB Format

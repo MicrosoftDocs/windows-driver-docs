@@ -4,6 +4,7 @@ description: DSSPEAKER_SURROUND Speaker Configuration
 keywords:
 - DSSPEAKER_SURROUND speaker configuration WDK audio
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # DSSPEAKER\_SURROUND Speaker Configuration

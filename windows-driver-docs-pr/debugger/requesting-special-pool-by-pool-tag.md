@@ -2,6 +2,7 @@
 title: Requesting Special Pool by Pool Tag
 description: Requesting Special Pool by Pool Tag
 ms.date: 11/28/2017
+ms.topic: how-to
 ---
 
 # Requesting Special Pool by Pool Tag

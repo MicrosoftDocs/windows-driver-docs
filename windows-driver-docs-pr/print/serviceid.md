@@ -5,6 +5,7 @@ keywords:
 - WSDMON port monitors WDK , ServiceID command
 - ServiceID
 ms.date: 09/08/2021
+ms.topic: reference
 ---
 
 # ServiceID command

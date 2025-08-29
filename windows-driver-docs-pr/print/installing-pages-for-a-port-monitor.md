@@ -6,6 +6,7 @@ keywords:
 - customized print Web pages WDK , installing
 - port monitors WDK print , customized Web pages
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Installing Pages for a Port Monitor

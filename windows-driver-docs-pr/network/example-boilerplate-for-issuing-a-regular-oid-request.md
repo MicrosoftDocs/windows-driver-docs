@@ -2,6 +2,7 @@
 title: Example boilerplate for issuing a Regular OID request
 description: This topic describes example boilerplate code for issuing a Regular OID request
 ms.date: 09/28/2017
+ms.topic: concept-article
 ---
 
 # Example boilerplate for issuing a Regular OID request

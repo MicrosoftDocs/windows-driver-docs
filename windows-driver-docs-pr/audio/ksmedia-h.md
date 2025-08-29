@@ -2,6 +2,7 @@
 title: Ksmedia.h
 description: This section contains reference topics for the Ksmedia.h header.
 ms.date: 10/24/2022
+ms.topic: reference
 ---
 
 # Ksmedia.h

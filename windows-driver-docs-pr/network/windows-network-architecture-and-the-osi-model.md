@@ -2,6 +2,7 @@
 title: Windows network architecture and the OSI model
 description: Windows network architecture and how Windows network drivers implement the bottom four layers of the OSI model.
 ms.date: 01/31/2025
+ms.topic: concept-article
 ---
 
 # Windows network architecture and the OSI model

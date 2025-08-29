@@ -3,6 +3,7 @@ title: Handling System Power State Requests
 description: Handling System Power State Requests
 keywords: ["power states WDK kernel", "power management WDK kernel , power state requests", "system power states WDK kernel , power state requests", "requests WDK power management", "IRPs WDK power management", "I/O request packets WDK power management", "power requests WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Handling System Power State Requests

@@ -2,6 +2,7 @@
 description: Fixed Property-Attribute Retrieval
 title: Fixed Property-Attribute Retrieval
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Fixed Property-Attribute Retrieval

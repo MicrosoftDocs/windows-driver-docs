@@ -8,6 +8,7 @@ keywords:
 - property sheet pages WDK print, group parents
 - grouping property sheet pages
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Group parent

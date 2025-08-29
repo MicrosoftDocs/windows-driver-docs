@@ -53,8 +53,6 @@ The **DeviceConditionCleared** element contains the [**ConditionId**](conditioni
 
 [**DeviceCondition**](devicecondition.md)
 
-[**DeviceConditionCleared**](deviceconditioncleared.md)
-
 [**ScannerStatusConditionClearedEvent**](scannerstatusconditionclearedevent.md)
 
 [**ScannerStatusConditionEvent**](scannerstatusconditionevent.md)

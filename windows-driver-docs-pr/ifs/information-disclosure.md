@@ -9,6 +9,7 @@ keywords:
 - buffers WDK file systems
 - disclosure WDK file systems
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Information Disclosure

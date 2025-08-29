@@ -1,7 +1,8 @@
 ---
 title: GPIO-Based Hardware Resources
 description: Starting with Windows 8, the general-purpose I/O (GPIO) pins that are controlled by a GPIO controller driver are available to other drivers as system-managed hardware resources.
-ms.date: 03/03/2023
+ms.date: 03/26/2025
+ms.topic: concept-article
 ---
 
 # GPIO-Based Hardware Resources

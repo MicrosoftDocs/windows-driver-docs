@@ -3,6 +3,7 @@ title: Debugging Session and Execution Model
 description: Debugging Session and Execution Model
 keywords: ["Debugger Engine, execution model", "execution model", "Debugger Engine, debugging session"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging Session and Execution Model

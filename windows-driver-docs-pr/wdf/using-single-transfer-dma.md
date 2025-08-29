@@ -2,6 +2,7 @@
 title: Using Single Transfer DMA
 description: This topic describes how a KMDF driver requests single transfer DMA.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Using Single Transfer DMA

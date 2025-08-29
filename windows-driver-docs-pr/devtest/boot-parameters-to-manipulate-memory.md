@@ -10,6 +10,7 @@ keywords:
 - simulating low-memory environments WDK boot parameters
 - memory WDK boot parameters
 ms.date: 07/19/2024
+ms.topic: reference
 ---
 
 # Boot Parameters to Manipulate Memory
@@ -42,7 +43,7 @@ You can also use the **truncatememory** option with the **bcdedit /set** command
 bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} truncatememory 0x40000000
 ```
 
-After rebooting, use a utility such as [systeminfo](/windows-server/administration/windows-commands/systeminfo) to confirm the the amount of available memory.
+After rebooting, use a utility such as [systeminfo](/windows-server/administration/windows-commands/systeminfo) to confirm the amount of available memory.
 
 When you are finished testing, you can remove the **removememory** and **truncatememory** boot entry options using the [**BCDEdit /deletevalue**](./bcdedit--deletevalue.md) command.
 

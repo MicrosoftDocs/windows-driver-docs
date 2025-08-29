@@ -12,6 +12,7 @@ keywords:
 - time stamps WDK audio
 - DirectMusic kernel-mode WDK audio , vs. user mode
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # User Mode Versus Kernel Mode

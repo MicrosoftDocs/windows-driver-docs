@@ -11,6 +11,7 @@ keywords:
 - encoding WDK AVStream
 - decoding WDK AVStream
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing AVStream Minidrivers for Hardware

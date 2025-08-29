@@ -2,6 +2,7 @@
 title: WIA Utility Classes
 description: "Learn more about: WIA Utility Classes"
 ms.date: 08/25/2020
+ms.topic: reference
 ---
 
 # WIA Utility Classes

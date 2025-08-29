@@ -4,6 +4,7 @@ description: Obtaining an HDAUDIO_BUS_INTERFACE_BDL DDI Object
 keywords:
 - HDAUDIO_BUS_INTERFACE_BDL structure
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Obtaining an HDAUDIO\_BUS\_INTERFACE\_BDL DDI Object

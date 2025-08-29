@@ -2,6 +2,7 @@
 title: Developer and preview mode
 description: Developer and preview mode
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Developer and preview mode

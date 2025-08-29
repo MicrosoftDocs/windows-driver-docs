@@ -2,6 +2,7 @@
 title: Infrared Stream Support in UVC
 description: Provides information on infrared stream support in UVC
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Infrared stream support in UVC

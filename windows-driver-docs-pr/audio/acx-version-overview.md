@@ -3,6 +3,7 @@ title: ACX Version Information
 description: This topic provides a summary of the ACX and KMDF version information 
 ms.date: 03/07/2024
 ms.localizationpriority: medium
+ms.topic: reference
 ---
 
 # ACX version information

@@ -6,6 +6,7 @@ keywords:
 - static parameters WDK networking
 - parameters WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting Static Parameters

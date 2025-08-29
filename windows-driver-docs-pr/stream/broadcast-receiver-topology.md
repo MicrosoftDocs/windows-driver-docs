@@ -7,6 +7,7 @@ keywords:
 - broadcast receiver topology WDK BDA
 - receiver topology WDK BDA
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Broadcast Receiver Topology

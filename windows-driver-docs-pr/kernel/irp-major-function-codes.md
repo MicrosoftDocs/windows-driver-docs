@@ -1,10 +1,11 @@
 ---
 title: IRP Major Function Codes
-description: IRP Major Function Codes
-ms.date: 03/13/2020
+description: Provides information about IRP major function codes.
+ms.date: 02/21/2025
+ms.topic: reference
 ---
 
-# IRP Major Function Codes
+# IRP major function codes
 
 Each driver-specific I/O stack location ([**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)) for every [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) contains a major function code (**IRP_MJ_*XXX***), which tells the driver what operation it or the underlying device driver should carry out to satisfy the I/O request. Each kernel-mode driver must provide dispatch routines for the major function codes that it must support.
 

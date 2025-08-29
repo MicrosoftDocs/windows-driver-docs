@@ -3,7 +3,8 @@ title: Using WHEA on Windows 10
 description: Describes how to report a WHEA error on Windows 10
 keywords:
 - Windows Hardware Error Architecture WDK , Windows 10 changes
-ms.date: 03/03/2023
+ms.date: 03/26/2025
+ms.topic: how-to
 ---
 
 # Using WHEA on Windows 10

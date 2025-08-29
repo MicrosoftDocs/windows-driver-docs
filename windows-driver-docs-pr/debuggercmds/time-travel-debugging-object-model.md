@@ -3,6 +3,7 @@ title: "Time Travel Debugging - Introduction to Time Travel Debugging objects"
 description: "This section describes how to use the data model to query time travel traces. "
 keywords: ["Introduction to Time Travel Debugging objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 11/20/2024
+ms.topic: concept-article
 ---
 
 # Introduction to Time Travel Debugging objects

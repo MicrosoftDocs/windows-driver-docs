@@ -7,6 +7,7 @@ keywords:
 - tracing WDK , framework-based drivers
 - WPP software tracing WDK , framework-based drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using WPP Software Tracing in KMDF Drivers

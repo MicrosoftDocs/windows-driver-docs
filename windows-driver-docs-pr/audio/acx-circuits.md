@@ -3,6 +3,7 @@ title: ACX Circuits
 description: This topic provides a summary of ACX Circuits 
 ms.date: 03/08/2024
 ms.localizationpriority: medium
+ms.topic: concept-article
 ---
 
 # ACX circuits

@@ -2,6 +2,7 @@
 title: Setting Up USB KDNET EEM Kernel-Mode Debugging (KDNET-EEM-USB)
 description: Debugging Tools for Windows supports kernel debugging over a USB cable using EEM. This topic describes how to set up USB EEM on using the kdnet.exe utility. (KDNET-EEM-USB)
 ms.date: 10/09/2024
+ms.topic: how-to
 ---
 
 # Setting Up USB KDNET EEM Kernel-Mode Debugging (KDNET-EEM-USB)
@@ -16,7 +17,7 @@ The following is required:
 
 - On the target computer, a Synopsys USB 3.0 controller connected to an USB type C port.
 
-- On the host computer, an externally accesible  USB 3.0 port is required.
+- On the host computer, an externally accessible USB 3.0 port is required.
 
 - Windows 10 October 2020 Update (20H2) or later
 

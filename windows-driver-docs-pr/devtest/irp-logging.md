@@ -5,6 +5,7 @@ keywords:
 - IRP Logging feature WDK Driver Verifier
 - DC2WMIParser tool
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # IRP Logging

@@ -12,6 +12,7 @@ keywords:
 - services advertising WDK Bluetooth
 - SdpCreateNodeTree
 ms.date: 01/10/2024
+ms.topic: concept-article
 ---
 
 # Building SDP records

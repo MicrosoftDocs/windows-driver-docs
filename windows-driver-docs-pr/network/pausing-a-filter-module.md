@@ -7,6 +7,7 @@ keywords:
 - filter drivers WDK networking , pausing filter modules
 - NDIS filter drivers WDK , pausing filter modules
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Pausing a Filter Module

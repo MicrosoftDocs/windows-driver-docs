@@ -10,6 +10,7 @@ keywords:
 - SeOpenObjectAuditAlarm
 - event WDK See also events
 ms.date: 07/11/2024
+ms.topic: concept-article
 ---
 
 # Auditing in file systems

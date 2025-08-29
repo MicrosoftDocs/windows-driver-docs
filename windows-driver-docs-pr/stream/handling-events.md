@@ -8,6 +8,7 @@ keywords:
 - events WDK streaming minidriver
 - event sets WDK streaming minidriver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling Events

@@ -2,6 +2,7 @@
 title: Flow Control
 description: Flow Control
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Flow Control

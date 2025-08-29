@@ -3,6 +3,7 @@ title: Wait/Wake Callback Routines
 description: Wait/Wake Callback Routines
 keywords: ["sending wait/wake IRPs", "wait/wake IRPs WDK power management , sending", "callback routines WDK power management"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Wait/Wake Callback Routines

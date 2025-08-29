@@ -9,6 +9,7 @@ keywords:
 - HID collections WDK , opening
 - opening HID collections
 ms.date: 09/18/2024
+ms.topic: concept-article
 ---
 
 # Finding and opening a HID collection

@@ -2,6 +2,7 @@
 title: DLL Start/Stop Operations Topics
 description: DLL Start/Stop Operations Topics
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # DLL Start/Stop Operations Topics

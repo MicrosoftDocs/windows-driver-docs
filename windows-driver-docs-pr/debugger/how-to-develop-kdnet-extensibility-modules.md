@@ -2,6 +2,7 @@
 title: Develop KDNET Transport Extensibility Modules
 description: This topic describes how the KDNET transport can be extended to run on any hardware through the use of a separate hardware driver extensibility module dll.  
 ms.date: 10/25/2024
+ms.topic: how-to
 ---
 
 # Develop KDNET transport extensibility modules

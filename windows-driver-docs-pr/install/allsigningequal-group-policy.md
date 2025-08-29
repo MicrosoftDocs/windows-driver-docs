@@ -7,6 +7,7 @@ keywords:
 - searching for drivers during device installation WDK device installations , AllSigningEqual group policy
 - AllSigningEq
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # AllSigningEqual Group Policy

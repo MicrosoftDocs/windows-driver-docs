@@ -11,6 +11,7 @@ topic_type:
 api_name: 
 api_type: 
 api_location: 
+ms.topic: reference
 ---
 
 # PS\_StorageCmdlets class

@@ -2,6 +2,7 @@
 title: Packet Flow over a Virtual Port
 description: Packet Flow over a Virtual Port
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Packet Flow over a Virtual Port

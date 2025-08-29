@@ -3,6 +3,7 @@ title: Get RPC Endpoint Information
 description: Get RPC Endpoint Information
 keywords: ["RPC endpoint Information"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Get RPC Endpoint Information

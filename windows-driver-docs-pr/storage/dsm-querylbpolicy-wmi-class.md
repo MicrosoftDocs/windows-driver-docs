@@ -2,6 +2,7 @@
 title: DSM_QueryLBPolicy WMI Class
 description: DSM\_QueryLBPolicy WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # DSM\_QueryLBPolicy WMI Class

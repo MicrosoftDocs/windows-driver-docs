@@ -2,6 +2,7 @@
 title: Film Scanner Architecture
 description: Film Scanner Architecture
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Film Scanner Architecture

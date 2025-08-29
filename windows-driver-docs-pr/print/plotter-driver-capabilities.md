@@ -5,6 +5,7 @@ keywords:
 - Plotter Driver WDK print , capabilities
 - MSPlot WDK print , capabilities
 ms.date: 01/30/2023
+ms.topic: overview
 ---
 
 # Plotter Driver Capabilities

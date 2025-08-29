@@ -3,6 +3,7 @@ title: HTTP Symbol Stores
 description: HTTP Symbol Stores
 keywords: ["HTTP symbol stores"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # HTTP Symbol Stores

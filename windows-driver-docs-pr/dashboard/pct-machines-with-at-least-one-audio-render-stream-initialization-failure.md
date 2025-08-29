@@ -2,6 +2,7 @@
 title: Percent of machines with at least one audio render stream initialization failure 
 description: This measure calculates the percentage of machines with at least one ACI render stream initialization failure
 ms.date: 11/07/2022
+ms.topic: reference
 ---
 
 # Percent of machines with at least one audio render stream initialization failure

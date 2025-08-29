@@ -6,6 +6,7 @@ keywords:
 - AV/C WDK , Avc.sys usage
 - subunit support WDK AV/C
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using Avc.sys

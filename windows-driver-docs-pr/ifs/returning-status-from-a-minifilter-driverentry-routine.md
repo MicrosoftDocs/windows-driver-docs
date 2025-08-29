@@ -5,6 +5,7 @@ keywords:
 - status values WDK file system
 - returning status WDK file system
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Returning Status from a Minifilter DriverEntry Routine

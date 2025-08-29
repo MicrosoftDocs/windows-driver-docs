@@ -9,6 +9,7 @@ keywords:
 - power-down sequence WDK KMDF
 - power-up sequence WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # The PnP Manager Redistributes System Resources

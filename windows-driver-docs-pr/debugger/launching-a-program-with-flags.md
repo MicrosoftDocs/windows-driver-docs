@@ -3,6 +3,7 @@ title: Launching a Program with Flags
 description: Launching a Program with Flags
 keywords: ["GFlags, launching a program with flags"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Launching a Program with Flags

@@ -10,6 +10,7 @@ keywords:
 - storage class drivers WDK , initializing
 - class drivers WDK storage , initializing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling PnP Initialization in a Storage Class Driver

@@ -2,6 +2,7 @@
 title: Voice Activation
 description: Cortana, the Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation.
 ms.date: 08/17/2023
+ms.topic: concept-article
 ---
 
 # Voice Activation

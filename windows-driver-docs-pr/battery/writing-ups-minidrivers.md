@@ -10,6 +10,7 @@ keywords:
 - UPS minidrivers WDK , about writing UPS minidrivers
 - uninterruptible power supply WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing UPS Minidrivers

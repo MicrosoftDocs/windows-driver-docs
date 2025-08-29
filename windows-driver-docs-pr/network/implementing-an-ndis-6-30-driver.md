@@ -2,6 +2,7 @@
 title: Implementing an NDIS 6.30 Driver
 description: Implementing an NDIS 6.30 Driver
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Implementing an NDIS 6.30 Driver

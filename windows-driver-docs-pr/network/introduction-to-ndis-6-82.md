@@ -2,6 +2,7 @@
 title: Introduction to NDIS 6.82
 description: This section introduces NDIS 6.82 and describes changes from NDIS 6.81. NDIS 6.82 is included in Windows 10, version 1809.
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Introduction to NDIS 6.82

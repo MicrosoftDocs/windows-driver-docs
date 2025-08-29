@@ -2,6 +2,7 @@
 title: Provisioning API
 description: Provisioning API
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Provisioning API

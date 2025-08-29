@@ -6,6 +6,7 @@ keywords:
 - TCP/IP WDK SANs
 - NIC components WDK SANs
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Windows Sockets Direct Architecture

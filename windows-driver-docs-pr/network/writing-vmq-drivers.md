@@ -2,6 +2,7 @@
 title: Getting Started Writing VMQ Drivers
 description: This section provides information about writing NDIS virtual machine queue (VMQ) drivers. You should already understand the Virtual Machine Queue Architecture before you read this section.
 ms.date: 04/20/2017
+ms.topic: get-started
 ---
 
 # Getting Started Writing VMQ Drivers

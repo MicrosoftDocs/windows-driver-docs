@@ -2,6 +2,7 @@
 title: How do I Use WPP when Building in Visual Studio
 description: How do I use WPP when building in Visual Studio
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How do I use WPP when building in Visual Studio?

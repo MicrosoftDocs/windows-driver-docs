@@ -6,6 +6,7 @@ keywords:
 - text strings WDK GPD files
 - strings WDK GPD files
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Text Strings

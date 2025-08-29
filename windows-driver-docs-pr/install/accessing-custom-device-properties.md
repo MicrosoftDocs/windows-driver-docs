@@ -2,6 +2,7 @@
 title: Accessing Custom Settings
 description: Accessing Custom Device Settings
 ms.date: 04/05/2022
+ms.topic: concept-article
 ---
 
 # Accessing Custom Settings

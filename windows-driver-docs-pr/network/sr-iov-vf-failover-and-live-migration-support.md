@@ -2,6 +2,7 @@
 title: SR-IOV VF Failover and Live Migration Support
 description: SR-IOV VF Failover and Live Migration Support
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # SR-IOV VF Failover and Live Migration Support

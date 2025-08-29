@@ -4,6 +4,7 @@ description: CM_PROB_LEGACY_SERVICE_NO_DEVICES
 keywords:
 - CM_PROB_LEGACY_SERVICE_NO_DEVICES
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 41 - CM_PROB_LEGACY_SERVICE_NO_DEVICES

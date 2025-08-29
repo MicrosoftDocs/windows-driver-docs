@@ -2,6 +2,7 @@
 title: MS_SMHBA_SAS_PHY WMI Class
 description: MS\_SMHBA\_SAS\_PHY WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MS\_SMHBA\_SAS\_PHY WMI Class

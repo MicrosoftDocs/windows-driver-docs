@@ -6,6 +6,7 @@ keywords:
 - connection-oriented NDIS WDK , miniport drivers
 - CoNDIS WDK networking , miniport drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Connection-Oriented Operations Performed by Miniport Drivers

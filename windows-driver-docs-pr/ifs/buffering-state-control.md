@@ -9,6 +9,7 @@ keywords:
 - cache WDK RDBSS
 - SRV_OPEN structure
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Buffering State Control

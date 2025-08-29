@@ -2,6 +2,7 @@
 title: Determining Receive Filtering Capabilities
 description: Determining Receive Filtering Capabilities
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Determining Receive Filtering Capabilities

@@ -5,6 +5,7 @@ keywords:
 - SAN sockets WDK , closing
 - closing SAN sockets
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Closing a SAN Socket

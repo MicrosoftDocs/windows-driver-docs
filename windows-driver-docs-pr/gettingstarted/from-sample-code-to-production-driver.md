@@ -2,6 +2,7 @@
 title: From Sample Code to Production Driver - What to Change in the Samples
 description: This topic provides information for developers about how to change WDK sample drivers before releasing device drivers based on these samples.
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # From Sample Code to Production Driver - What to Change in the Samples

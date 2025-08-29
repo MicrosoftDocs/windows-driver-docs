@@ -6,6 +6,7 @@ keywords:
 - group of pictures WDK DVD decoder
 - GOP WDK DVD decoder
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Closed Captioning Streams

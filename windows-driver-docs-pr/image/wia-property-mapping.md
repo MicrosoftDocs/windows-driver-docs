@@ -2,6 +2,7 @@
 title: WIA Property Mapping
 description: WIA Property Mapping
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Property Mapping

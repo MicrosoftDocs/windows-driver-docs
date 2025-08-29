@@ -6,6 +6,7 @@ keywords:
 - KS WDK , architecture
 - filter graphs WDK kernel streaming
 ms.date: 06/18/2020
+ms.topic: concept-article
 ---
 
 # KS minidriver architecture

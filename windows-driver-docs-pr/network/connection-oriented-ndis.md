@@ -7,6 +7,7 @@ keywords:
 - network drivers WDK , CoNDIS
 - NDIS WDK , CoNDIS
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Connection-Oriented NDIS

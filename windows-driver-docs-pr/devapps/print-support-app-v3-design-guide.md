@@ -2,6 +2,7 @@
 title: Print Support App v3 API Design Guide
 description: Provides guidance and examples for printer OEMs and IHVs that are implementing a v3 Print Support App (PSA) for their device.
 ms.date: 01/10/2025
+ms.topic: concept-article
 ---
 
 # Print Support Application v3 API design guide
@@ -148,7 +149,7 @@ public sealed class PrintSupportWorkflowBackgroundTask : IBackgroundTask
         PrintWorkflowPrinterJob printerJob, PrintWorkflowConfiguration workflowConfig )
     {
         var errorToastXml = new XmlDocument();
-        // Generate Toast Xml based on error information from Exception and PrintWorkflowPrinterJob.
+        // Generate Toast XML based on error information from Exception and PrintWorkflowPrinterJob.
         return errorToastXml;
     }
 }

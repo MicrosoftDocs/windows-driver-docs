@@ -2,6 +2,7 @@
 title: Active Memory Dump
 description: Active Memory Dump
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Active Memory Dump

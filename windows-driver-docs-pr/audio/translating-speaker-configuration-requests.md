@@ -4,6 +4,7 @@ description: Translating Speaker-Configuration Requests
 keywords:
 - translating speaker-configuration requests WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Translating Speaker-Configuration Requests

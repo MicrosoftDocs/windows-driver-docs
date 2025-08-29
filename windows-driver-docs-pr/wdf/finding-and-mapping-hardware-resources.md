@@ -2,6 +2,7 @@
 title: Finding and Mapping Hardware Resources
 description: This topic describes how a Kernel-Mode Driver Framework (KMDF) driver or User-Mode Driver Framework (UMDF) driver starting in version 2 maps a translated memory resource (CmResourceTypeMemory) that it receives in its EvtDevicePrepareHardware callback function.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Finding and Mapping Hardware Resources

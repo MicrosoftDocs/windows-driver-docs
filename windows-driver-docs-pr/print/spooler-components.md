@@ -2,6 +2,7 @@
 title: Spooler Components
 description: Spooler Components
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # Spooler Components

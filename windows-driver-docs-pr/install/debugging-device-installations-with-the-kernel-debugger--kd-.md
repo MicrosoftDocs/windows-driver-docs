@@ -2,6 +2,7 @@
 title: Debugging Device Installations with the Kernel Debugger (KD)
 description: Debugging Device Installations with the Kernel Debugger (KD)
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Debugging Device Installations with the Kernel Debugger (KD)

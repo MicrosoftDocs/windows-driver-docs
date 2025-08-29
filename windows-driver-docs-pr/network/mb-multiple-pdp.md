@@ -3,6 +3,7 @@ title: Multiple PDP contexts
 description: scenraio about multiple PDP contexts
 keywords: MPDP, Multiple PDP context, additional PDP Context
 ms.date: 03/01/2021
+ms.topic: example-scenario
 ---
 # Multiple PDP contexts
 ## Usage scenarios

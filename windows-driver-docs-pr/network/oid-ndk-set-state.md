@@ -79,8 +79,3 @@ An NDK-capable miniport driver's [*MiniportOidRequest*](/windows-hardware/driver
 [**NdisReadConfiguration**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisreadconfiguration)
 
 [**NDK\_ADAPTER**](/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter)
-
-[OID\_NDK\_SET\_STATE](oid-ndk-set-state.md)
-
- 
-

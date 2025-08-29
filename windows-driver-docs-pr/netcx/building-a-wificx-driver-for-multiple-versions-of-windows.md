@@ -2,6 +2,7 @@
 title: Building a WiFiCx driver for multiple versions of Windows
 description: Describes how to build a WiFiCx driver for multiple versions of Windows.
 ms.date: 04/05/2023
+ms.topic: how-to
 ---
 
 # Building a WiFiCx driver for multiple versions of Windows

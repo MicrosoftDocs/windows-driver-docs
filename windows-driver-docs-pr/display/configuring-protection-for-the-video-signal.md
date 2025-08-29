@@ -2,6 +2,7 @@
 title: Configuring Protection for the Video Signal
 description: Configuring Protection for the Video Signal
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Configuring Protection for the Video Signal

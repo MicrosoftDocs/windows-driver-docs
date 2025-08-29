@@ -2,6 +2,7 @@
 title: Debugger Data Model C++ Concepts
 description: This topic describes concepts in Debugger C++ Data Model.
 ms.date: 09/12/2019
+ms.topic: concept-article
 ---
 
 # Debugger Data Model C++ Concepts
@@ -310,8 +311,6 @@ This topic is part of a series which describes the interfaces accessible from C+
 [Debugger Data Model C++ Objects](data-model-cpp-objects.md)
 
 [Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
-
-[Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
 
 [Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
 

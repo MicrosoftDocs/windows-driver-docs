@@ -7,6 +7,7 @@ keywords:
 - parameters WDK networking
 - configuration parameters WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Specifying Configuration Parameters for the Advanced Properties Page

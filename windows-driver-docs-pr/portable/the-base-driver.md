@@ -2,6 +2,7 @@
 description: The Base Driver
 title: The Base Driver
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # The Base Driver

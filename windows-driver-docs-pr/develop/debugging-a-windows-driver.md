@@ -2,6 +2,7 @@
 title: Debugging a Windows Driver
 description: Describes debugging techniques you can use with a Windows driver, in particular the Inflight Trace Recorder.
 ms.date: 04/28/2020
+ms.topic: concept-article
 ---
 
 # Debugging a Windows Driver 

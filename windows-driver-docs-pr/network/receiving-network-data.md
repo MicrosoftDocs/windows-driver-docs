@@ -10,6 +10,7 @@ keywords:
 - data WDK networking , returning
 - packets WDK networking , returning
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Receiving Network Data

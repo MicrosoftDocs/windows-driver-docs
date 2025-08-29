@@ -2,6 +2,7 @@
 title: KSPROPSETID_CopyProt
 description: KSPROPSETID\_CopyProt
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_CopyProt

@@ -2,6 +2,7 @@
 title: WIA_IPS_DESKEW_X and WIA_IPS_DESKEW_Y Properties
 description: WIA_IPS_DESKEW_X and WIA_IPS_DESKEW_Y Properties
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # WIA\_IPS\_DESKEW\_X and WIA\_IPS\_DESKEW\_Y Properties

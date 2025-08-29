@@ -9,6 +9,7 @@ keywords:
 - DrvTextOut
 - Unidrv WDK print
 ms.date: 01/27/2023
+ms.topic: how-to
 ---
 
 # Handling Device-Managed Surfaces

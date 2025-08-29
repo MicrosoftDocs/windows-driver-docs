@@ -2,6 +2,7 @@
 title: Creating Test Certificates
 description: Creating Test Certificates
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating Test Certificates

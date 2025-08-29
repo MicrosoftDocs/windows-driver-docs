@@ -8,6 +8,7 @@ keywords:
 - IOCTL_HID_GET_Xxx requests WDK HID
 - HID reports WDK , obtaining
 ms.date: 09/12/2024
+ms.topic: concept-article
 ---
 
 # Obtaining HID Reports

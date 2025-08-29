@@ -7,6 +7,7 @@ keywords:
 - MSIs WDK networking , handling interrupts
 - interrupts WDK networking , handling
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling an MSI Interrupt

@@ -5,6 +5,7 @@ keywords:
 - Tracefmt WDK , TMF files
 - TMF files WDK , examples
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 3: Specifying a TMF File

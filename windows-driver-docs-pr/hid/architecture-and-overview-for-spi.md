@@ -2,6 +2,7 @@
 title: Architecture and Overview for HID Over the SPI Transport
 description: Describes the driver stack for devices that support HID over the SPI transport.
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # Architecture and overview for HID over the SPI transport

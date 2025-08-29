@@ -6,6 +6,7 @@ keywords:
 - semantic model checks WDK file systems , set file information processing
 - set file information processing WDK file systems
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Set File Information Processing

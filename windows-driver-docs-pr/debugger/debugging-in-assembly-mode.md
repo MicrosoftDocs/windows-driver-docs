@@ -3,6 +3,7 @@ title: Debugging in Assembly Mode
 description: Debugging in Assembly Mode
 keywords: ["assembly debugging", "assembly mode", "assembly debugging, overview"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging in Assembly Mode

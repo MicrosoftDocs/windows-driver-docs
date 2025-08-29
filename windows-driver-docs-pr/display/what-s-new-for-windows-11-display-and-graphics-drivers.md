@@ -2,6 +2,7 @@
 title: What's New for Windows 11 Graphics Display Drivers
 description: Lists features added for graphics display drivers starting in Windows 11
 ms.date: 08/21/2024
+ms.topic: whats-new
 ---
 
 # What's new for Windows 11 graphics display drivers

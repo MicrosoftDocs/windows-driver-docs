@@ -5,6 +5,7 @@ keywords:
 - network services installation requirements WDK
 - service installation requirements WDK networking
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Installation Requirements for Network Services

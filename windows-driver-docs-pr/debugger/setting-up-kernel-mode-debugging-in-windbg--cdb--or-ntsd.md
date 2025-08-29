@@ -3,6 +3,7 @@ title: Setting Up Kernel-Mode Debugging
 description: This section describes how to set up kernel-mode debugging.
 keywords: ["Kernel-mode debugging", "Setting up kernel-mode debugging"]
 ms.date: 10/09/2024
+ms.topic: concept-article
 ---
 
 # Setting Up Kernel-Mode Debugging

@@ -3,6 +3,7 @@ title: Isolating Pageable Code
 description: Isolating Pageable Code
 keywords: ["pageable drivers WDK kernel , isolating code", "isolating pageable code", "spin locks WDK memory"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Isolating Pageable Code

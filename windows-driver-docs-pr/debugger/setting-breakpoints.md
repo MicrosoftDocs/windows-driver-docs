@@ -3,6 +3,7 @@ title: Setting Breakpoints
 description: Setting Breakpoints
 keywords: ["Debugger Engine API, setting breakpoints"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Setting Breakpoints

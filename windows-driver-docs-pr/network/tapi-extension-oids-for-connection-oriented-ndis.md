@@ -4,6 +4,7 @@ description: This topic describes TAPI extension OIDs for connection-oriented ND
 keywords:
 - TAPI extension OIDs connection-oriented NDIS
 ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # TAPI extension OIDs for connection-oriented NDIS

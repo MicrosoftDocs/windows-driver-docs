@@ -2,6 +2,7 @@
 title: iSCSI WMI Common Classes
 description: iSCSI WMI Common Classes
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # iSCSI WMI Common Classes

@@ -2,6 +2,7 @@
 title: Elements of the Dialog
 description: "The Object Details dialog has a very useful, relatively hidden functionality: the Locate Object button."
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Elements of the Dialog

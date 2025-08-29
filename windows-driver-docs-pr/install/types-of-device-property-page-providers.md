@@ -2,6 +2,7 @@
 title: Types of Device Property Page Providers
 description: Types of Device Property Page Providers
 ms.date: 03/11/2022
+ms.topic: concept-article
 ---
 
 # Types of Device Property Page Providers

@@ -4,6 +4,7 @@ description: Each plug-in calls the IPrintOemPrintTicketProvider::ValidatePrintT
 keywords:
 - ValidatePrintTicket
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # ValidatePrintTicket overview

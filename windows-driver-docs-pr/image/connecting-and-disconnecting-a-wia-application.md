@@ -2,6 +2,7 @@
 title: Connecting and Disconnecting a WIA Application
 description: Connecting and disconnecting a WIA application
 ms.date: 03/29/2023
+ms.topic: concept-article
 ---
 
 # Connecting and disconnecting a WIA application

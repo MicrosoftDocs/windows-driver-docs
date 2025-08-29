@@ -2,6 +2,7 @@
 title: SetupAPI Logging Functions
 description: SetupAPI Logging Functions
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # SetupAPI Logging Functions

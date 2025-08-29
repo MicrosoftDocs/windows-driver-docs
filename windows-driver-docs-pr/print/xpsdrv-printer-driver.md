@@ -8,6 +8,7 @@ keywords:
 - configuration modules WDK XPSDrv
 - render modules WDK XPSDrv
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # XPS Printer Driver (XPSDrv)

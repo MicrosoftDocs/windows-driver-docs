@@ -2,6 +2,7 @@
 title: Overview of NDIS QoS Parameters
 description: Overview of NDIS QoS Parameters
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Overview of NDIS QoS Parameters

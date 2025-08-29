@@ -6,6 +6,7 @@ keywords:
 - I/O requests WDK KMDF , forwarding
 - request processing WDK KMDF , forwarding I/O requests
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Forwarding I/O Requests

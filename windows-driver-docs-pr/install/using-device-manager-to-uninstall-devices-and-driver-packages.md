@@ -3,6 +3,7 @@ title: Using Device Manager to Uninstall Devices and Driver Packages
 description: Using Device Manager to Uninstall Devices and Driver Packages
 ms.date: 09/17/2024
 ai-usage: ai-assisted
+ms.topic: how-to
 ---
 
 # Using Device Manager to Uninstall Devices and Driver Packages
@@ -44,4 +45,4 @@ Also be aware that Windows Update may also reinstall drivers if it detects that 
 
 ## Related topics
 
-[Deleting a Driver Package from the Driver Store](./how-devices-and-driver-packages-are-uninstalled.md#deleting-a-driver-package-from-the-driver-store)
+[Delete a Driver Package from the Driver Store](./how-devices-and-driver-packages-are-uninstalled.md#delete-a-driver-package-from-the-driver-store)

@@ -7,6 +7,7 @@ keywords:
 - Extended Attributes
 - $Kernel
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 # Kernel Extended Attributes
 

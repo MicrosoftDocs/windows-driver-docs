@@ -6,6 +6,7 @@ keywords:
 - symbolic names WDK GPD files
 - identifiers WDK GPD files
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Symbolic Names

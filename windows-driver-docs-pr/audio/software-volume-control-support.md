@@ -2,6 +2,7 @@
 title: Software Volume Control Support
 description: Software Volume Control Support
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Software Volume Control Support

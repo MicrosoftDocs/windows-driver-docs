@@ -8,6 +8,7 @@ keywords:
 - near field proximity
 - NFP
 ms.date: 01/11/2024
+ms.topic: design-pattern
 ---
 
 # Wi-Fi direct pairing implementation
@@ -249,4 +250,4 @@ Any attempt to tap the device on a system running an operating system that doesn
 
 ## Related topics
 
-- [NFC device driver interface (DDI) reference](/windows-hardware/drivers/ddi/index)
+- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)

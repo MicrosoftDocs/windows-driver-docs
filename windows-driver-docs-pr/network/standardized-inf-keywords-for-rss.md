@@ -2,6 +2,7 @@
 title: Standardized INF Keywords for RSS
 description: The RSS interface supports standardized INF keywords that appear in the registry and are specified in INF files.
 ms.date: 09/27/2024
+ms.topic: reference
 ---
 
 # Standardized INF Keywords for RSS

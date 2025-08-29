@@ -9,6 +9,7 @@ keywords:
 - registering operation region handlers
 - deregistering operation region handlers
 ms.date: 03/17/2023
+ms.topic: concept-article
 ---
 
 # Registering and Deregistering an Operation Region Handler

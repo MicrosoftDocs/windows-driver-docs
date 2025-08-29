@@ -2,6 +2,7 @@
 title: Clearing a Receive Filter on a Virtual Port
 description: Clearing a Receive Filter on a Virtual Port
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Clearing a Receive Filter on a Virtual Port

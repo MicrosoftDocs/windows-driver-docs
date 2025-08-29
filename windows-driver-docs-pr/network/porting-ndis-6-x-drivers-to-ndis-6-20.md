@@ -6,6 +6,7 @@ keywords:
 - NDIS 6.x drivers WDK
 - NDIS 6.x drivers WDK , porting to NDIS 6.20
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Porting NDIS 6.x Drivers to NDIS 6.20

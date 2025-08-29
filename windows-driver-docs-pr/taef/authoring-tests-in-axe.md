@@ -2,6 +2,7 @@
 title: Authoring Tests in AXE
 description: Authoring Tests in AXE
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Authoring Tests in AXE

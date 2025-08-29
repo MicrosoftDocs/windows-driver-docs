@@ -7,6 +7,7 @@ keywords:
 - master clocks WDK DVD decoder
 - clocks WDK DVD decoder
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # DVD Related Clock Functions

@@ -2,6 +2,7 @@
 title: Using an Interrupt to Wake a Device
 description: When a device transitions to a low-power state, the framework disconnects (or reports as inactive) interrupts that are used for I/O handling.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Using an Interrupt to Wake a Device

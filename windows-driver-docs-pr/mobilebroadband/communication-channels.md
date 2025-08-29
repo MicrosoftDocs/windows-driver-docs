@@ -2,6 +2,7 @@
 title: Peronal Hotspot Communication Channels
 description: Peronal hotspot communication channels
 ms.date: 10/05/2023
+ms.topic: concept-article
 ---
 
 # Personal hotspot communication channels

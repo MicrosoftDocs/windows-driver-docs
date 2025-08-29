@@ -5,6 +5,7 @@ keywords:
 - BasicDisplay , Microsoft Basic Display Driver
 - BasicRender , Microsoft Basic Render Driver
 ms.date: 10/17/2024
+ms.topic: overview
 ---
 
 # Microsoft Basic Display Driver

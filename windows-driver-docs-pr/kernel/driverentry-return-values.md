@@ -3,6 +3,7 @@ title: DriverEntry Return Values
 description: DriverEntry Return Values
 keywords: ["DriverEntry WDK kernel , return values", "return values WDK DriverEntry routine"]
 ms.date: 06/16/2017
+ms.topic: reference
 ---
 
 # DriverEntry Return Values

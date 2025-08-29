@@ -1,7 +1,7 @@
 ---
 title: IRP_MN_QUERY_ID
 description: Bus drivers must handle requests for BusQueryDeviceID for their child devices (child PDOs). Bus drivers can handle requests for BusQueryHardwareIDs, BusQueryCompatibleIDs, and BusQueryInstanceID for their child devices.
-ms.date: 08/12/2017
+ms.date: 07/09/2025
 ms.topic: reference
 keywords:
  - IRP_MN_QUERY_ID Kernel-Mode Driver Architecture
@@ -12,11 +12,11 @@ keywords:
 
 Bus drivers must handle requests for **BusQueryDeviceID** for their child devices (child PDOs). Bus drivers can handle requests for **BusQueryHardwareIDs**, **BusQueryCompatibleIDs**, and **BusQueryInstanceID** for their child devices.
 
-Beginning with Windows 7, bus drivers must also handle requests for BusQueryContainerID for their child PDOs.
+Beginning with Windows 7, bus drivers must also handle requests for **BusQueryContainerID** for their child PDOs.
 
 For more information about these identifiers (IDs), see [Device Identification Strings](../install/device-identification-strings.md).
 
-**Note**  Function drivers and filter drivers do not handle this IRP.
+**Note:** Function drivers and filter drivers do not handle this IRP.
 
  ## Value
 
@@ -35,16 +35,13 @@ The PnP manager and drivers send this IRP at IRQL PASSIVE\_LEVEL in an arbitrary
 
 ## Input Parameters
 
-
 The **Parameters.QueryId.IdType** member of the [**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure specifies the kind of ID(s) requested. Possible values include BusQueryDeviceID, BusQueryHardwareIDs, BusQueryCompatibleIDs, BusQueryInstanceID, and BusQueryContainerID. The following ID type is reserved: BusQueryDeviceSerialNumber.
 
 ## Output Parameters
 
-
 Returned in the I/O status block.
 
 ## I/O Status Block
-
 
 A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriate error status.
 
@@ -70,11 +67,11 @@ If a driver returns an ID with an illegal character, the system will bug check. 
 
 A driver must conform to the following length restrictions for IDs:
 
--   Each hardware ID or compatible ID that a driver returns in this IRP must be less than MAX\_DEVICE\_ID\_LEN characters long. This constant currently has a value of 200 as defined in sdk\\inc\\cfgmgr32.h.
+-   Each [hardware ID](../install/hardware-ids.md) or [compatible ID](../install/compatible-ids.md) that a driver returns in this IRP must be less than MAX\_DEVICE\_ID\_LEN characters long. This constant currently has a value of 200 as defined in sdk\\inc\\cfgmgr32.h.
 
--   The container ID that a driver returns in this IRP must be formatted as a globally unique identifier (GUID), and must be MAX\_GUID\_STRING\_LEN characters, which includes the null terminator.
+-   The [container ID](../install/container-ids.md) that a driver returns in this IRP must be formatted as a globally unique identifier (GUID), and must be MAX\_GUID\_STRING\_LEN characters, which includes the null terminator.
 
--   If a bus driver supplies globally unique instance IDs for its child devices (that is, the driver sets [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities)**.UniqueID** for the devices), then the combination of device ID plus instance ID must be less than (MAX\_DEVICE\_ID\_LEN - 1) characters. The operating system requires the additional character for a path separator.
+-   If a bus driver supplies globally unique instance IDs for its child devices (that is, the driver sets [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities)**.UniqueID** for the devices), then the combination of [device ID](../install/device-ids.md) plus [instance ID](../install/instance-ids.md) must be less than (MAX\_DEVICE\_ID\_LEN - 1) characters. The operating system requires the additional character for a path separator.
 
 -   If a bus driver does not supply globally unique instance IDs for its child devices, then the combination of device ID plus instance ID must be less than (MAX\_DEVICE\_ID\_LEN - 28). The value of this equation is currently 172.
 
@@ -82,25 +79,25 @@ Bus drivers should be prepared to handle this IRP for a child device immediately
 
 **Specifying BusQueryDeviceID and BusQueryInstanceID**
 
-The values a bus driver supplies for BusQueryDeviceID and BusQueryInstanceID allow the operating system to differentiate a device from other devices on the computer. The operating system uses the device ID and instance ID that are returned in the **IRP\_MN\_QUERY\_ID** IRP and the unique ID field that are returned in the [**IRP\_MN\_QUERY\_CAPABILITIES**](irp-mn-query-capabilities.md) IRP to locate registry information for the device.
+The values a bus driver supplies for BusQueryDeviceID and BusQueryInstanceID allow the operating system to differentiate a device from other devices on the computer. The operating system uses the [device ID](../install/device-ids.md) and [instance ID](../install/instance-ids.md) that are returned in the **IRP\_MN\_QUERY\_ID** IRP and the unique ID field that are returned in the [**IRP\_MN\_QUERY\_CAPABILITIES**](irp-mn-query-capabilities.md) IRP to locate registry information for the device.
 
-For **BusQueryDeviceID**, a bus driver supplies the device's *device ID*. A device ID should contain the most-specific description of the device possible, incorporating the name of the enumerator and strings identifying the manufacturer, device, revision, packager, and packaged product, where possible. For example, the PCI bus driver responds with device IDs of the form PCI\\VEN\_xxxx&DEV\_xxxx&SUBSYS\_xxxxxxxx&REV\_xx, encoding all five of the items mentioned above. However, a device ID should not contain enough information to differentiate between two identical devices. This information should be encoded in the instance ID.
+For **BusQueryDeviceID**, a bus driver supplies the device's [device ID](../install/device-ids.md). A device ID should contain the most-specific description of the device possible, incorporating the name of the enumerator and strings identifying the manufacturer, device, revision, packager, and packaged product, where possible. For example, the PCI bus driver responds with device IDs of the form PCI\\VEN\_xxxx&DEV\_xxxx&SUBSYS\_xxxxxxxx&REV\_xx, encoding all five of the items mentioned above. However, a device ID should not contain enough information to differentiate between two identical devices. This information should be encoded in the instance ID.
 
-For BusQueryInstanceID, a bus driver should supply a string that contains the *instance ID* for the device. Setup and bus drivers use the instance ID, with other information, to differentiate between two identical devices on the computer. The instance ID is either unique across the whole computer or just unique on the device's parent bus.
+For **BusQueryInstanceID**, a bus driver should supply a string that contains the [instance ID](../install/instance-ids.md) for the device. Windows and bus drivers use the instance ID, with other information, to differentiate between two identical devices on the computer. The instance ID is either unique across the whole computer or just unique on the device's parent bus.
 
-If an instance ID is only unique on the bus, the bus driver specifies that string for BusQueryInstanceID but also specifies a **UniqueID** value of **FALSE** in response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](irp-mn-query-capabilities.md) request for the device. If **UniqueID** is **FALSE**, the PnP manager enhances the instance ID by adding information about the device's parent and thus makes the ID unique on the computer. In this case the bus driver should not take extra steps to make its devices' instance IDs globally unique; just return the appropriate capabilities information and the operating system takes care of it.
+If an [instance ID](../install/instance-ids.md) is only unique on the bus, the bus driver specifies that string for BusQueryInstanceID but also specifies a **UniqueID** value of **FALSE** in response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](irp-mn-query-capabilities.md) request for the device. If **UniqueID** is **FALSE**, the PnP manager enhances the instance ID by adding information about the device's parent and thus makes the ID unique on the computer. In this case the bus driver should not take extra steps to make its devices' instance IDs globally unique; just return the appropriate capabilities information and the operating system takes care of it.
 
 If a bus driver can supply a globally unique ID for each child device, such as a serial number, the bus driver specifies those strings for BusQueryInstanceID and specifies a **UniqueID** value of **TRUE** in response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](irp-mn-query-capabilities.md) request for each device.
 
 **Specifying BusQueryHardwareIDs and BusQueryCompatibleIDs**
 
-The values a bus driver supplies for BusQueryHardwareIDs and BusQueryCompatibleIDs allow Setup to locate the appropriate drivers for the bus's child device.
+The values a bus driver supplies for BusQueryHardwareIDs and BusQueryCompatibleIDs allow Windows to locate the appropriate drivers for the bus's child device.
 
 A bus driver responds to each of these requests with a REG\_MULTI\_SZ list of IDs that describe the device. The maximum length, in characters, of a list of IDs, including the two NULL characters that terminate the list, is REGSTR\_VAL\_MAX\_HCID\_LEN.
 
-When returning more than one *hardware ID* and/or more than one *compatible ID*, a bus driver should list the IDs in the order of most-specific to most-general to facilitate choosing the best driver match for the device. The first entry in the hardware IDs list is the most-specific description of the device and, as such, it is usually identical to the device ID.
+When returning more than one [hardware ID](../install/hardware-ids.md) and/or more than one [compatible ID](../install/compatible-ids.md), a bus driver should list the IDs in the order of most-specific to most-general to facilitate choosing the best driver match for the device. The first entry in the hardware IDs list is the most-specific description of the device and, as such, it is usually identical to the device ID.
 
-Setup checks the IDs against the IDs listed in INF files for possible matches. Setup first scans the hardware IDs list, then the compatible IDs list. Earlier entries are treated as more specific descriptions of the device, and later entries as more general (and thus less optimal) matches for the device. If no match is found in the list of hardware IDs, Setup might prompt the user for installation media before moving on to the list of compatible IDs.
+Windows checks the IDs against the IDs listed in INF files for possible matches. Windows first scans the hardware IDs list, then the compatible IDs list. Earlier entries are treated as more specific descriptions of the device, and later entries as more general (and thus less optimal) matches for the device. If no match is found in the list of hardware IDs, Windows might prompt the user for installation media before moving on to the list of compatible IDs.
 
 See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 

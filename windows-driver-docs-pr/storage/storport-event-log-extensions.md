@@ -2,6 +2,7 @@
 title: Storport Event Log Extensions
 description: Storport Event Log Extensions
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # Storport Event Log Extensions

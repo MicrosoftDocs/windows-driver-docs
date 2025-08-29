@@ -10,6 +10,7 @@ keywords:
 - disk space attacks WDK file systems
 - malicious applications WDK file systems
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Denial of Service

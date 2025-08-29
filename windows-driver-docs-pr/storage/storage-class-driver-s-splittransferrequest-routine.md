@@ -7,6 +7,7 @@ keywords:
 - splitting transfer requests
 - transfer request splitting WDK storage
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Storage Class Driver's SplitTransferRequest Routine

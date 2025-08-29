@@ -5,6 +5,7 @@ keywords:
 - I/O requests WDK UMDF , obtaining parameters
 - request processing WDK UMDF , obtaining parameters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Obtaining Parameters for I/O Requests

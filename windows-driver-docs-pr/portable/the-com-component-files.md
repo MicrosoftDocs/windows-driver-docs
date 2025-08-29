@@ -2,6 +2,7 @@
 description: The COM Component Files
 title: The COM Component Files
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # The COM Component Files

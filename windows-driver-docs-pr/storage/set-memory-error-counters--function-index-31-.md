@@ -2,6 +2,7 @@
 title: Set Memory Error Counters (Function Index 31)
 description: This function sets the counters that track correctable and uncorrectable memory error events to a caller-specified value. The purpose of this function is to enable software validation.
 ms.date: 11/18/2022
+ms.topic: reference
 ---
 
 # Set Memory Error Counters (Function Index 31)

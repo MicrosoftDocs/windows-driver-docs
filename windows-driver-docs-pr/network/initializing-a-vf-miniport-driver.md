@@ -2,6 +2,7 @@
 title: Initializing a VF Miniport Driver
 description: The guidelines for writing a MiniportInitializeEx function for the miniport driver for a PCI Express (PCIe) Virtual Function (VF).
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing a VF Miniport Driver

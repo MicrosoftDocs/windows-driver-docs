@@ -2,6 +2,7 @@
 title: Viewing a Thread
 description: Understanding the thread execution display of GPUView is critical to see where threads are active and where they perform video-specific functionality. 
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Viewing a Thread

@@ -8,12 +8,13 @@ keywords:
 - WDM function drivers WDK ACPI , operation regions
 - operation region memory buffer WDK ACPI
 - memory buffers WDK ACPI
-ms.date: 03/17/2023
+ms.date: 07/29/2025
+ms.topic: concept-article
 ---
 
 # Maintaining an Operation Region Memory Buffer
 
-The driver maintains an operation region memory buffer. The memory buffer contains the data fields associated with an operation region. The ACPI driver calls an operation region handler to access the data fields in an operation region memory buffer.
+An operation region is the communication interface between an ACPI device and the device's function driver. The driver maintains an operation region memory buffer. The memory buffer contains the data fields associated with an operation region. The ACPI driver calls an operation region handler to access the data fields in an operation region memory buffer.
 
 The operation region memory buffer must comply with the following:
 

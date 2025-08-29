@@ -2,6 +2,7 @@
 title: Power Management for HID Over the I2C
 description: This article describes power management for devices that support HID over the I2C.
 ms.date: 10/22/2024
+ms.topic: concept-article
 ---
 
 # HID power management over the I2C

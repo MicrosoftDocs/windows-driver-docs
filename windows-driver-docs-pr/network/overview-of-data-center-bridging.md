@@ -3,6 +3,7 @@ title: Overview of Data Center Bridging
 description: Learn how IEEE 802.1 Data Center Bridging (DCB) standards define a unified 802.3 ethernet media interface for LAN and SAN technologies.
 ms.date: 01/06/2024
 ms. custom: contperf-fy22q4
+ms.topic: concept-article
 ---
 
 # Overview of Data Center Bridging

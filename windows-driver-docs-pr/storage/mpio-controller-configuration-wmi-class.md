@@ -2,6 +2,7 @@
 title: MPIO_CONTROLLER_CONFIGURATION WMI Class
 description: MPIO\_CONTROLLER\_CONFIGURATION WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MPIO\_CONTROLLER\_CONFIGURATION WMI Class

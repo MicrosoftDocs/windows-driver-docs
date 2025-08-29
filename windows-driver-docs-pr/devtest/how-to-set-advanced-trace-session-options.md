@@ -4,6 +4,7 @@ description: How to set advanced trace session options
 keywords:
 - trace sessions WDK , advanced options
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How to set advanced trace session options

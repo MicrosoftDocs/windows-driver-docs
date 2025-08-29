@@ -3,6 +3,7 @@ title: Configuring IIS for SymProxy
 description: Configuring IIS for SymProxy
 keywords: ["SymProxy, IIS"]
 ms.date: 04/02/2021
+ms.topic: how-to
 ---
 
 # Configuring IIS for SymProxy

@@ -6,7 +6,8 @@ keywords:
 - porting miniport drivers to NDIS 6.20 WDK
 - miniport drivers WDK
 - miniport drivers WDK , porting to NDIS 6.20
-ms.date: 03/02/2023
+ms.date: 07/23/2025
+ms.topic: best-practice
 ---
 
 # Summary of Changes Required to Port a Miniport Driver to NDIS 6.20
@@ -50,7 +51,7 @@ Replace the preprocessor definition NDIS60\_MINIPORT\_DRIVER or NDIS61\_MINIPORT
     -   Hardware assist (VMQ)
 -   Use the updated versions of these structures:
 
-    -   [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes)
+    -   [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes)
     -   [**NDIS\_RESTART\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_restart_general_attributes)
     -   [**NDIS\_RECEIVE\_SCALE\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters)
     -   [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes)

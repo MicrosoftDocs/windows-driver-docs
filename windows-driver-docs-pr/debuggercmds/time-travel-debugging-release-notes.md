@@ -2,7 +2,8 @@
 title: "Time travel debugging release notes"
 description: "This topic provides information on what's new in Time Travel Debugging."
 keywords: ["release notes", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 11/15/2024
+ms.date: 06/23/2025
+ms.topic: release-notes
 ---
 
 # Time travel debugging release notes
@@ -10,6 +11,77 @@ ms.date: 11/15/2024
 :::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Time travel debugging logo featuring a clock.":::
 
 This topic provides information on what's new in Time Travel Debugging.
+
+## 1.11.532
+
+This is a maintenance release that makes improvements to recording robustness. This TTD release coincides with the June 2025 release of Windbg. One new feature is the Position data model object now reports percentage into the trace.
+
+### Changed
+
+- Miscellaneous infrastructure maintenance.
+- Use the ISO standard implementation of C++ volatile. (1.11.518)
+- Add Percent to Position data model projection. (1.11.514)
+
+### Fixed
+
+- Increase the robustness of TTD's handling of decoded instructions. (1.11.530)
+- Remove uses of XSAVE in the emulator and optimize internal register transfer. (1.11.509)
+
+## 1.11.506
+
+This is a minor release to coincide with the April 2025 release of WinDbg.
+
+### Changed
+
+- Clicking on a TTD position in the data model (i.e. in the Modules list) navigates to that position in the trace. (1.11.492)
+
+  Note: The command window won't show the updated TTD position until the next step or run command is executed.
+
+### Fixed
+
+- Add process name to .out file when attaching to a PID to aid troubleshooting. (1.11.486)
+
+## 1.11.481
+
+We have revamped the !tt command to give you more powerful ways to navigate through your trace:
+- Fractional percentages can be used to narrow down the search space (!tt 23.65)
+- Find the previous/next time a register changes value (!tt br ebx)
+- Find the previous/next time a memory range is accessed (!tt ba- [addr] [range])
+- Find the previous/next time execution moves to a different module (!tt bm)
+- Find the previous/next time execution moves to a specific module (!tt bm ntdll)
+
+For more details see [!tt (time travel)](time-travel-debugging-extension-tt.md).
+
+Some notable fixes:
+- "Error: 64 bit value loses precision on conversion to number" messages when using `@$cursession.TTD.Data.Heap()` on 32-bit trace are gone.
+- Help option parsing (`-?`, `-help`) is now correctly detected anywhere in the command line.
+- `dx @$cursession.TTD.Calls()` no longer requires addresses to match the start of a function. Instead, the address will be mapped to the start of the closest matching function.
+- TTD correctly reports target OS version from vertarget command.
+- Using "-monitor" with a hosted service name no longer records unrelated hosted services.
+
+### Added
+
+- Register change breakpoints in TTD traces (1.11.431)
+
+### Changed
+
+- Fix recording of services by name using monitor mode (1.11.477)
+- Capture actual target system's OS information for use by debugger (1.11.473)
+- Fix the transfer of XMM registers between the emulator and CONTEXT (1.11.469)
+- Allow call queries against addresses inside a function (1.11.459)
+- Support symbols as addresses/sizes in !tt command line (1.11.454)
+- Improve the consistency and extend the capabilities of TTD navigation commands (1.11.453)
+- Improve module DB consistency in the face of corrupted data (1.11.430)
+
+### Fixed
+
+- Add process name to output when attaching to PID (1.11.486)
+- TTD.Data.Heap() reports "Error: 64 bit value loses precision on conversion to number" in some cases (1.11.471)
+- Improve the reliability of recording a process with shadow stacks enabled (1.11.466)
+- Add module navigation via !tt bm and data model (1.11.462)
+- Fix Some issues with command-line parsing. (1.11.444)
+- Fix lodsd, load doubleword at address (zero out upper part of rax) (1.11.434)
+- Fix some libfuzzer bugs (1.11.433)
 
 ## 1.11.429
 
@@ -27,7 +99,7 @@ Fixes:
 Improved accessibility: Progress UI now properly scales with Text Size changes.
 
 The ```@$cursession.TTD.Calls()``` command in the debugger now supports wildcards that match a large number of functions.
-It is now possible to query for large numbers of functions (```@$cursession.TTD.Calls("kernel32!*")```).
+It's now possible to query for large numbers of functions (```@$cursession.TTD.Calls("kernel32!*")```).
 
 Automation: A new ```-onMonitorReadyEvent``` command-line option indicates when the recording monitor (```-monitor``` switch)
 is ready to record new processes.
@@ -69,7 +141,7 @@ Recording can now be restricted to a specific set of modules using the `-module`
 
 Matching record and replay components are now included in the distribution. In the event of an incompatibility between the debugger and the command line recorder, or a replay bug, the replay components can be copied into the debugger install as a workaround until a new debugger is released.
 
-The installed file location can be found in Powershell by doing the following:
+The installed file location can be found in PowerShell by doing the following:
 
 ```
 ls (Get-AppxPackage | where Name -eq 'Microsoft.TimeTravelDebugging').InstallLocation
@@ -146,7 +218,7 @@ This release increases visibility of certain error messages by extracting them f
 
 ### Fixed
 
-- Fix file conflict while reading .out file from seperate process. (1.11.171)
+- Fix file conflict while reading .out file from separate process. (1.11.171)
 - Fix rare crash during trace replay. (1.11.166)
 
 ## 1.11.163
@@ -167,7 +239,7 @@ This release is the first public release of the command line recorder. Along wit
 enable public release of the command line recorder, this release also includes a number of bug fixes, including
 a couple of fixes to the CPU emulator.
 
-The new ```-timestampFileName``` switch enables timestamp-based .run file generation. This is useful when you are
+The new ```-timestampFileName``` switch enables timestamp-based .run file generation. This is useful when you're
 recording many instances of the same process, and want to minimize recording startup time.
 
 ### Changed

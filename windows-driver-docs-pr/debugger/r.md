@@ -2,6 +2,7 @@
 title: R  (Windows Debugger Glossary)
 description: Glossary page - R
 ms.date: 11/28/2017
+ms.topic: glossary
 ---
 
 # R

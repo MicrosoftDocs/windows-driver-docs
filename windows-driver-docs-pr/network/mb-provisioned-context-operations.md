@@ -2,7 +2,9 @@
 title: MB Provisioned Context Operations
 description: MB Provisioned Context Operations
 ms.date: 03/01/2021
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # MB Provisioned Context Operations

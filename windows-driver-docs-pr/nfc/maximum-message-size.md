@@ -8,6 +8,7 @@ keywords:
 - near field proximity
 - NFP
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # NFP maximum message size
@@ -17,5 +18,5 @@ Each provider implementation can specify a maximum message size for publications
 ## Related topics
 
 - **[IOCTL_NFP_GET_MAX_MESSAGE_BYTES](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_max_message_bytes)**
-- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)
+- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)
 - [Near field proximity DDI reference](/windows-hardware/drivers/ddi/_nfpdrivers)

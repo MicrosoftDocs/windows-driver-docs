@@ -3,6 +3,7 @@ title: Introduction to WinUSB for Developers
 description: This article describes the generic WinUSB driver (winusb.sys) and its user-mode component (winusb.dll) provided by Microsoft for all USB devices.
 ms.date: 10/16/2024
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 
 # Introduction to WinUSB for developers

@@ -3,6 +3,7 @@ title: Handling WMI Requests
 description: Handling WMI Requests
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Handling WMI Requests

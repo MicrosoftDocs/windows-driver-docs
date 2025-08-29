@@ -10,6 +10,7 @@ keywords:
 - pausing miniport adapters
 - stopping miniport adapters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Pausing an Adapter

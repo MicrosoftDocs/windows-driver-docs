@@ -11,6 +11,7 @@ keywords:
 - removing devices WDK KMDF
 - ejecting devices WDK KMDF
 ms.date: 07/21/2023
+ms.topic: concept-article
 ---
 
 # A User Unplugs a Device

@@ -7,6 +7,7 @@ keywords:
 - miniport drivers WDK storage
 - initializing WDK storage , virtual miniport drivers
 ms.date: 03/01/2022
+ms.topic: concept-article
 ---
 
 # Implementing a Storport virtual miniport driver

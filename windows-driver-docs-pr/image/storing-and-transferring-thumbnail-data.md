@@ -2,6 +2,7 @@
 title: Storing and Transferring Thumbnail Data
 description: Storing and Transferring Thumbnail Data
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Storing and Transferring Thumbnail Data

@@ -2,6 +2,7 @@
 title: How do I Update the Flags in a Running Trace Session
 description: How do I update the flags in a running trace session
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How do I update the flags in a running trace session?

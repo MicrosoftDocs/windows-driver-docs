@@ -8,6 +8,7 @@ keywords:
 - standby tests WDK printer
 - hibernate tests WDK printer
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Power Management

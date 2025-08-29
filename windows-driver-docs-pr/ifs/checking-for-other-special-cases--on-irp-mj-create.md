@@ -5,6 +5,7 @@ keywords:
 - IRP_MJ_CREATE
 - security checks WDK file systems , IRP_MJ_CREATE
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Checking for Other Special Cases on IRP\_MJ\_CREATE

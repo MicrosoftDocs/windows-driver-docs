@@ -4,6 +4,7 @@ description: This section describes General discard reasons for Windows Filterin
 keywords:
 - General discard reasons network drivers
 ms.date: 11/09/2017
+ms.topic: error-reference
 ---
 
 # General discard reasons

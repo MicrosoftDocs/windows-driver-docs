@@ -2,6 +2,7 @@
 title: When to Use This Technique
 description: When to Use This Technique
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # When to Use This Technique

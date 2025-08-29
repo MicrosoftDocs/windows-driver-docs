@@ -2,6 +2,7 @@
 title: WDF Driver Call Tracer (WdfCallTracer)
 description: WDF Driver Call Tracer (WdfCallTracer)
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # WDF Driver Call Tracer (WdfCallTracer)

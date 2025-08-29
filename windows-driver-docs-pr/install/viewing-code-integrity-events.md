@@ -6,6 +6,7 @@ keywords:
 - viewing Code Integrity events
 - displaying Code Integrity events
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Viewing Code Integrity Events

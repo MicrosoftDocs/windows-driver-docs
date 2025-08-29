@@ -8,6 +8,7 @@ keywords:
 - helper interfaces WDK printer interface DLL
 - publishing WDK printer interface DLL
 ms.date: 01/30/2023
+ms.topic: how-to
 ---
 
 # Publishing the Interfaces

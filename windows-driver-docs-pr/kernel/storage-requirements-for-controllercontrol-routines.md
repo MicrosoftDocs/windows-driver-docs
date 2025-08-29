@@ -3,6 +3,7 @@ title: Storage Requirements for ControllerControl Routines
 description: Storage Requirements for ControllerControl Routines
 keywords: ["controller objects WDK kernel , writing ControllerControl routines", "ControllerControl routines, writing", "ControllerControl routines, storage", "storage WDK controller objects"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Storage Requirements for ControllerControl Routines

@@ -2,6 +2,7 @@
 title: Transferring Data to a WIA Application
 description: Transferring Data to a WIA Application
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Transferring Data to a WIA Application

@@ -7,6 +7,7 @@ keywords:
 - kernel streaming WDK , interfaces
 - KS WDK , interfaces
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # KS Interfaces

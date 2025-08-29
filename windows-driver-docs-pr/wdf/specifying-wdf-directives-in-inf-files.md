@@ -18,6 +18,7 @@ keywords:
 - INF files WDK UMDF , directives
 - UmdfDispatcher INF directive WDK UMDF , syntax
 ms.date: 09/07/2023
+ms.topic: concept-article
 ---
 
 # Specifying WDF Directives in INF Files

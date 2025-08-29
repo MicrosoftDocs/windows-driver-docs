@@ -2,6 +2,7 @@
 title: USB Driver
 description: USB driver
 ms.date: 05/02/2023
+ms.topic: reference
 ---
 
 # USB driver

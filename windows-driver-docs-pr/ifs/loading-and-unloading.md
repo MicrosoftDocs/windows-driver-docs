@@ -9,6 +9,7 @@ keywords:
 - loading drivers WDK file system
 - unloading drivers
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # Loading and unloading a minifilter

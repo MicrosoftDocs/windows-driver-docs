@@ -9,6 +9,7 @@ keywords:
 - I/O targets WDK UMDF
 - targets WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using I/O Targets in UMDF

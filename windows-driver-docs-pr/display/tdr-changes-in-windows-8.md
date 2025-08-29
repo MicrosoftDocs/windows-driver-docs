@@ -4,6 +4,7 @@ description: Starting with Windows 8, GPU timeout detection and recovery (TDR) 
 keywords:
 - TDR (timeout detection and recovery) WDK display , changes in Windows 8
 ms.date: 09/20/2024
+ms.topic: concept-article
 ---
 
 # TDR in Windows 8 and later

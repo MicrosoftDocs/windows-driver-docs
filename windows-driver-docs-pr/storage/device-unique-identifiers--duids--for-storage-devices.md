@@ -11,6 +11,7 @@ keywords:
 - device layout signatures WDK storage
 - signatures WDK , storage
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # Device Unique Identifiers (DUIDs) for Storage Devices

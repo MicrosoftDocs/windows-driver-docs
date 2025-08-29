@@ -6,6 +6,7 @@ keywords:
 - deep inspection WDK Windows Filtering Platform
 - stream data deep inspection WDK Windows Filtering Platform
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using a Callout for Deep Inspection of Stream Data

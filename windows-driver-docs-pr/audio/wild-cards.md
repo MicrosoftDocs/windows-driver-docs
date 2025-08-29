@@ -6,6 +6,7 @@ keywords:
 - wild cards WDK audio
 - data ranges WDK audio , wild cards
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Wild Cards

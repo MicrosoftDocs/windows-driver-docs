@@ -8,6 +8,7 @@ keywords:
 - notifications WDK PnP , NDIS miniport drivers
 - event notifications WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Exporting a MiniportDevicePnPEventNotify Function

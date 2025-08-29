@@ -11,6 +11,7 @@ keywords:
 - SetDisplayConfig WDK Windows 7 display
 - SetDisplayConfig WDK Windows Server 2008 R2 display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # SetDisplayConfig Summary and Scenarios

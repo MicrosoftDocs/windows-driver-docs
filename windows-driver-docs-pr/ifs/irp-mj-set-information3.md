@@ -9,6 +9,7 @@ keywords:
 - hard link operations WDK file systems
 - names WDK file systems
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Security checks on IRP_MJ_SET_INFORMATION

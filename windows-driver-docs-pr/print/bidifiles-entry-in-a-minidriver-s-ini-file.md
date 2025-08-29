@@ -7,6 +7,7 @@ keywords:
 - bidi extension files WDK printer autoconfig
 - in-box autoconfiguration support WDK printer , bidi extension files
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # BidiFiles Entry in a Minidriver's INI File

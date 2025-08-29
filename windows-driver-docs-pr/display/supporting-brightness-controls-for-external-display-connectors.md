@@ -3,6 +3,7 @@ title: Supporting Brightness Controls for External Display Connectors
 description: This feature only allows OEMs to indicate to Windows that an external connector display supports brightness control.
 keywords: ["brightness WDK display", "ACPI-based brightness hot-keys WDK display", "notifying brightness hot keys WDK display", "BIOS brightness control WDK display", "automatic brightness WDK display"]
 ms.date: 03/20/2023
+ms.topic: concept-article
 ---
 
 # Supporting brightness controls for external display connectors

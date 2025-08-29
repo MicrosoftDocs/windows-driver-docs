@@ -8,6 +8,7 @@ keywords:
 - NFP
 description: Information about meeting the requirements for NFP devices on connected standby. platforms
 ms.date: 01/11/2024
+ms.topic: best-practice
 ---
 
 # NFC client driver power management requirements
@@ -26,5 +27,5 @@ To meet these goals, the following are recommended for the NFC client drivers:
 
 ## Related topics
 
-- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)
-- [NFC class extension (CX) reference](/windows-hardware/drivers/ddi/index)
+- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)
+- [NFC class extension (CX) design guide](/windows-hardware/drivers/nfc/nfc-class-extension-)

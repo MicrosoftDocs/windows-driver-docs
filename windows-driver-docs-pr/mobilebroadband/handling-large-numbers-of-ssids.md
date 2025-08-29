@@ -2,6 +2,7 @@
 title: Handling Large Numbers of SSIDs
 description: Handling large numbers of SSIDs
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling large numbers of SSIDs

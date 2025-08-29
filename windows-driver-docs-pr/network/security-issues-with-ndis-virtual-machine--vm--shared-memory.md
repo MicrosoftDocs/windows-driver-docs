@@ -2,6 +2,7 @@
 title: Security Issues with NDIS Virtual Machine (VM) Shared Memory
 description: Security Issues with NDIS Virtual Machine (VM) Shared Memory
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Security Issues with NDIS Virtual Machine (VM) Shared Memory

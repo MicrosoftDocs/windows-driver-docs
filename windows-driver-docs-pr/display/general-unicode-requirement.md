@@ -2,6 +2,7 @@
 title: General Unicode Requirement in INF Files
 description: INF files should generally be saved and encoded as Unicode.
 ms.date: 05/23/2024
+ms.topic: concept-article
 ---
 
 # General Unicode requirement in INF files

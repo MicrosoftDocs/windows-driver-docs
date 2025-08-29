@@ -2,6 +2,7 @@
 title: WDK Build Output
 description: By default, the WDK uses the intermediate directory $(IntDir) macro to specify the default build output directory.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WDK Build Output

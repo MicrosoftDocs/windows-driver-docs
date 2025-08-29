@@ -6,7 +6,9 @@ keywords:
 - mobile broadband (MB) WDK
 - mobile broadband (MB) WDK , NDIS 6.20 interfacing
 ms.date: 03/02/2023
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # MB / NDIS 6.20 Interfacing Overview

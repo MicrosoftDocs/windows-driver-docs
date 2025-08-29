@@ -2,6 +2,7 @@
 title: SIM PIN API
 description: SIM PIN API
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # SIM PIN API

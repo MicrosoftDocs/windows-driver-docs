@@ -5,6 +5,7 @@ keywords:
 - DevFund tests
 - command line
 ms.date: 06/29/2018
+ms.topic: how-to
 ---
 
 # How to run the DevFund Tests via the command-line

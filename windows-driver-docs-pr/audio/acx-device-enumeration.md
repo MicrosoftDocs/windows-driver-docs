@@ -3,6 +3,7 @@ title: ACX Device Enumeration
 description: This topic provides a summary of the ACX device enumeration, startup and shutdown, and device rebalance.
 ms.date: 01/23/2025
 ms.localizationpriority: medium
+ms.topic: concept-article
 ---
 
 # ACX device enumeration

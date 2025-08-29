@@ -8,6 +8,7 @@ keywords:
 - data types WDK GDL
 - GDL WDK , data types
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Enumerations and XSD-Defined Data Types

@@ -3,6 +3,7 @@ title: Using a CustomTimerDpc Routine
 description: Using a CustomTimerDpc Routine
 keywords: ["timer objects WDK kernel , CustomTimerDpc routines", "CustomTimerDpc", "disabling timer objects", "timer objects WDK kernel , disabling", "periodic timers WDK kernel", "queuing timer objects", "timer objects WDK kernel , expirations", "timer expirations WDK kernel", "expired timers WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Using a CustomTimerDpc Routine

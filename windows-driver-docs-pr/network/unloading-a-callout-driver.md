@@ -6,6 +6,7 @@ keywords:
 - callout drivers WDK Windows Filtering Platform , unloading
 - unloading drivers WDK Windows Filtering Platform
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Unloading a Callout Driver

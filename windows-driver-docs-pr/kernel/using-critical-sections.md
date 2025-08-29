@@ -3,6 +3,7 @@ title: Using Critical Sections
 description: Using Critical Sections
 keywords: ["interrupt service routines WDK kernel , critical sections", "ISRs WDK kernel , critical sections", "InterruptService", "synchronization WDK kernel , interrupts"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Using Critical Sections

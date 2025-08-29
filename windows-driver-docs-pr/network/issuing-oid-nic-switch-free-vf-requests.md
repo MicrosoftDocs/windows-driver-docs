@@ -2,6 +2,7 @@
 title: Issuing OID_NIC_SWITCH_FREE_VF Requests
 description: Issuing OID_NIC_SWITCH_FREE_VF Requests
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Issuing OID\_NIC\_SWITCH\_FREE\_VF Requests

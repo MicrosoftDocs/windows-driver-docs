@@ -2,6 +2,7 @@
 title: Debugging Still Image Components
 description: Debugging still image components
 ms.date: 04/21/2023
+ms.topic: concept-article
 ---
 
 # Debugging still image components

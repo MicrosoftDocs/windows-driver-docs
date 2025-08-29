@@ -7,6 +7,7 @@ keywords:
 - scenarios WDK WSDBIT
 - test scenarios WDK WSDBIT
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Client Scenarios for WSDBIT

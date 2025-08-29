@@ -2,6 +2,7 @@
 title: WMI Data Source
 description: WMI Data Source
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WMI Data Source

@@ -3,6 +3,7 @@ title: Introduction to the Directed Power Management Framework
 description: Describes the Directed Power Management Framework, or DFx, which is part of the Power Framework, or PoFx, version 3.
 ms.date: 08/10/2022
 ms.custom: 19H1
+ms.topic: concept-article
 ---
 
 # Introduction to the Directed Power Management Framework
@@ -19,7 +20,9 @@ DFx does not power down paging or debug devices.
 
 ## Requirements for WDF (non-miniport) drivers
 
-A WDF driver that is a power policy owner must implement an appropriate S0-Idle policy by specifying  **SystemManagedIdleTimeout** or **SystemManagedIdleTimeoutWithHint** in the [WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure. This will allow the device to power down when it is idle. As an added resiliency measure, the driver can opt into DFx by adding the following registry key to the INF's [AddReg directive section](../install/inf-addreg-directive.md) within the [DDInstall.HW section](../install/inf-ddinstall-hw-section.md):
+A WDF driver that is a power policy owner must implement an appropriate S0-Idle policy by specifying  **SystemManagedIdleTimeout** or **SystemManagedIdleTimeoutWithHint** in the [WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure. This will allow the device to power down when it is idle. As an added power resiliency measure, the driver can opt into DFx. The power subsystem may direct WDF to power down the device if it is a D-state constraint and has not already powered down when the system enters into a low power modern standby state. When the power subsystem directs WDF to power down the device, WDF will initiate a transition to a low power Dx state. This is conceptually similar to how WDF may power down the device in response to a system power transition to Sx (where x > 0). When the device has been directed to power down by PoFx, power managed IO requests or a call to [WdfDeviceStopIdle](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle) will not restore the device to a powered on D0 state. See [WdfDeviceStopIdle](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle) for more information.
+
+A driver can opt into by adding the following registry key to the INF's [AddReg directive section](../install/inf-addreg-directive.md) within the [DDInstall.HW section](../install/inf-ddinstall-hw-section.md):
 
 `HKR,"WDF","WdfDirectedPowerTransitionEnable",0x00010001,1`
 

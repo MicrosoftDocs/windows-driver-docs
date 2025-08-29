@@ -2,6 +2,7 @@
 title: How do I Send Trace Messages to a User-Mode Debugger
 description: How do I send trace messages to a user-mode debugger
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How do I send trace messages to a user-mode debugger?

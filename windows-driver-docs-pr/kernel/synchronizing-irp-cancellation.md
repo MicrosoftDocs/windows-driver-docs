@@ -3,6 +3,7 @@ title: Synchronizing IRP Cancellation
 description: Synchronizing IRP Cancellation
 keywords: ["canceling IRPs, synchronization", "Cancel routines, synchronization", "synchronization WDK IRPs", "cancelable IRPs WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Synchronizing IRP Cancellation

@@ -2,6 +2,7 @@
 title: Tools Related to Debugging Tools for Windows
 description: This section describes tools that are related to debugging but aren't included in the Debugging Tools for Windows package.
 ms.date: 06/05/2020
+ms.topic: overview
 ---
 
 # Tools Related to Debugging Tools for Windows

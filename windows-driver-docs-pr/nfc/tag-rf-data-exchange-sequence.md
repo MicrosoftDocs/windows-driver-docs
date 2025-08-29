@@ -8,6 +8,7 @@ keywords:
 - near field proximity
 - NFP
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # Tag RF data exchange sequence
@@ -40,5 +41,5 @@ The NFC CX performs a presence check in StateRfDataXchg when there is no data to
 
 ## Related topics
 
-- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)
-- [NFC class extension (CX) reference](/windows-hardware/drivers/ddi/index)
+- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)
+- [NFC class extension (CX) design guide](/windows-hardware/drivers/nfc/nfc-class-extension-)

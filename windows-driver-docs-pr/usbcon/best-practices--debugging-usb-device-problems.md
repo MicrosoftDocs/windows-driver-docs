@@ -2,6 +2,7 @@
 title: Debugging USB Device Issues by Using ETW Events
 description: This topic provides tips for debugging USB device problems by using ETW events.
 ms.date: 01/12/2024
+ms.topic: how-to
 ---
 
 # Debugging USB device issues by using ETW events

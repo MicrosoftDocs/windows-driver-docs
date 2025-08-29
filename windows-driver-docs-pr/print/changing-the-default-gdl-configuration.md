@@ -8,6 +8,7 @@ keywords:
 - default GDL configurations WDK
 - DefaultOption directive WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Changing the Default GDL Configuration

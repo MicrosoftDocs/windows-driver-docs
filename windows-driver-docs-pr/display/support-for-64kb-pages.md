@@ -2,6 +2,7 @@
 title: Support for 64KB Pages
 description: WDDM 2.0+ support for 64 KB pages
 ms.date: 03/15/2023
+ms.topic: concept-article
 ---
 
 # Support for 64KB pages

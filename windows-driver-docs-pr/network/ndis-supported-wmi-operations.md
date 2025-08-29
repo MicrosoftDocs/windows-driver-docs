@@ -10,6 +10,7 @@ keywords:
 - adapters WDK networking , enumerating
 - QU
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # NDIS-Supported WMI Operations

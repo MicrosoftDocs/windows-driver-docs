@@ -5,6 +5,7 @@ keywords:
 - Storport drivers WDK , queue management
 - queues WDK Storport
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Storport Queue Management

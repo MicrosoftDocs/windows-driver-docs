@@ -6,6 +6,7 @@ keywords:
 - ACPI IPMI operation region WDK Power Meter
 - IPMI WDK Power Meter
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # ACPI IPMI Operation Region

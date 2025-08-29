@@ -20,3 +20,5 @@
   href: pci-sample.md
 - name: "Obtaining PCI Segment Values"
   href: obtaining-pci-segment-values.md
+- name: "Dynamic Link Rate Management"
+  href: nvme-dynamic-link-rate-management.md

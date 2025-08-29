@@ -10,6 +10,7 @@ keywords:
 - network modules WDK Network Module Registrar , attachment
 - NmrClientAttachProvider
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Attaching a Provider Module to a Client Module

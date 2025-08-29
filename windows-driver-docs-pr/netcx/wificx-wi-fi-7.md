@@ -2,6 +2,7 @@
 title: WiFiCx Wi-Fi 7 feature requirements
 description: Driver changes required to support Wi-Fi 7 functionalities in WiFiCx, including Multi-Link Operation (MLO). 
 ms.date: 08/23/2023
+ms.topic: best-practice
 ---
 
 # WiFiCx Wi-Fi 7 feature requirements

@@ -6,6 +6,7 @@ keywords:
 - text logs WDK SetupAPI , event levels
 - LogLevel
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting the Event Level for a Text Log

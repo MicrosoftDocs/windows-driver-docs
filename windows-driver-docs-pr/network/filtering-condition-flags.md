@@ -4,6 +4,7 @@ description: This section describes filtering condition flags.
 keywords:
 - Filtering condition flags network drivers
 ms.date: 01/07/2019
+ms.topic: concept-article
 ---
 
 # Filtering condition flags

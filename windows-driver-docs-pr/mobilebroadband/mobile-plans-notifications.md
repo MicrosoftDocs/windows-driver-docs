@@ -4,6 +4,7 @@ description: This topic describes how to configure toast notifications in Mobile
 keywords:
 - Windows Mobile Plans toast notifications
 ms.date: 10/06/2023
+ms.topic: overview
 ---
 
 # Mobile Plans notifications

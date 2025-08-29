@@ -2,6 +2,7 @@
 title: Cross Architecture Execution
 description: Cross Architecture Execution
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Cross Architecture Execution

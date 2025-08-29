@@ -2,6 +2,7 @@
 title: IWiaDrvItem COM Interface
 description: IWiaDrvItem COM interface
 ms.date: 05/03/2023
+ms.topic: reference
 ---
 
 # IWiaDrvItem COM interface

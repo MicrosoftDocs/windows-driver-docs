@@ -8,6 +8,7 @@ keywords:
 - graphics printers WDK Unidrv
 - Unidrv WDK print
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # Using Unidrv Vector Graphics Capabilities

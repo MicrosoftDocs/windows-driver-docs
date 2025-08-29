@@ -2,6 +2,7 @@
 title: Registry Entries for StorPort Miniport Drivers
 description: StorPort defines a set of registry entries to configure the behavior of StorPort and miniport operations.
 ms.date: 09/30/2024
+ms.topic: reference
 ---
 
 # Registry Entries for StorPort Miniport Drivers

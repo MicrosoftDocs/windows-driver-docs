@@ -5,6 +5,7 @@ keywords:
 - Extension Unit controls WDK USB Video Class
 - controls WDK USB Video Class
 ms.date: 09/17/2021
+ms.topic: how-to
 ---
 
 # Building the Extension Unit Sample Control

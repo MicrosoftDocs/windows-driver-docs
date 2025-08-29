@@ -3,6 +3,7 @@ title: Supporting Standard WMI Blocks
 description: Supporting Standard WMI Blocks
 keywords: ["WMI WDK kernel , event blocks", "event blocks WDK WMI", "data blocks WDK WMI", "WMI WDK kernel , data blocks", "blocks WDK WMI", "standard blocks WDK WMI"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Supporting Standard WMI Blocks

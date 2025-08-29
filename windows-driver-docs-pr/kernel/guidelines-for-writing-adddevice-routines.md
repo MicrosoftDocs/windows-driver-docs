@@ -3,6 +3,7 @@ title: Guidelines for Writing AddDevice Routines
 description: Guidelines for Writing AddDevice Routines
 keywords: ["AddDevice routines WDK kernel , design guidelines"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Guidelines for Writing AddDevice Routines

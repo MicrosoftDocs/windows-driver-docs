@@ -10,6 +10,7 @@ keywords:
 - monitors WDK print
 - print monitors WDK , about print monitors
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing a Print Monitor

@@ -6,6 +6,7 @@ keywords:
 - Level 1 I/O Verification WDK Driver Verifier
 - Level 2 I/O Verification WDK Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # I/O Verification

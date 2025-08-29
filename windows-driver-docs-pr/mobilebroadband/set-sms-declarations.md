@@ -2,6 +2,7 @@
 title: Set SMS Declarations
 description: Set SMS declarations
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Set SMS declarations

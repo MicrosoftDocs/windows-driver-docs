@@ -2,6 +2,7 @@
 title: Examples of Graphics Memory Reporting
 description: Examples of Graphics Memory Reporting
 ms.date: 08/29/2024
+ms.topic: concept-article
 ---
 
 # Examples of graphics memory reporting

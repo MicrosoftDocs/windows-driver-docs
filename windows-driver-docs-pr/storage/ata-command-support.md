@@ -2,6 +2,7 @@
 title: ATA Command Support
 description: ATA Command Support
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # ATA Command Support

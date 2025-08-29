@@ -3,6 +3,7 @@ title: Firewalls and Proxy Servers
 description: Firewalls and Proxy Servers
 keywords: ["SymSrv, firewalls and proxy servers", "firewalls and SymSrv", "internet firewalls and SymSrv", "proxy servers and SymSrv"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Firewalls and Proxy Servers

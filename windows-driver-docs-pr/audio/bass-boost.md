@@ -2,6 +2,7 @@
 title: Bass Boost
 description: Bass Boost
 ms.date: 06/15/2022
+ms.topic: concept-article
 ---
 
 # Bass Boost

@@ -9,6 +9,7 @@ keywords:
 - plugged in device checks WDK
 - determining plugged in devices WDK
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Determining Whether a Device Is Plugged In

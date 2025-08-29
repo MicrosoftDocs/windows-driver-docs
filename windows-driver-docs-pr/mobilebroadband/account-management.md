@@ -2,6 +2,7 @@
 title: Account Management
 description: Account management
 ms.date: 10/05/2023
+ms.topic: concept-article
 ---
 
 # Account management

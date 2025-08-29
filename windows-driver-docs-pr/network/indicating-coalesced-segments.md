@@ -2,6 +2,7 @@
 title: Indicating Coalesced Segments
 description: This section describes how to indicate coalesced segments
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Indicating Coalesced Segments

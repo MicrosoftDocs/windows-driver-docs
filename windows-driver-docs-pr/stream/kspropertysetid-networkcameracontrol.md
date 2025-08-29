@@ -2,6 +2,7 @@
 title: KSPROPERTYSETID_NetworkCameraControl
 description: Defines the network camera property set ID. 
 ms.date: 06/24/2021
+ms.topic: reference
 ---
 
 # KSPROPERTYSETID_NetworkCameraControl

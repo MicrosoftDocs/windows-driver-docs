@@ -2,6 +2,7 @@
 title: Test Modes
 description: Test Modes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Test Modes

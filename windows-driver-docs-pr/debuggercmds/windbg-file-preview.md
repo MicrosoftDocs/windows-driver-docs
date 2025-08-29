@@ -3,6 +3,7 @@ title: "WinDbg - File Menu"
 description: "This section describes how to use the file menu in the WinDbg debugger."
 keywords: ["File Menu", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/10/2020
+ms.topic: how-to
 ---
 
 # WinDbg - File Menu
@@ -46,7 +47,7 @@ Use *Open source file* to open a source file. Do this when you want to work with
 
 ### Open script
 
-Use *Open script* to open an existing Javascript or NatVis script. For more information on working with scripts see [WinDbg - Scripting Menu](windbg-scripting-preview.md).
+Use *Open script* to open an existing JavaScript or NatVis script. For more information on working with scripts see [WinDbg - Scripting Menu](windbg-scripting-preview.md).
 
 ### Settings
 

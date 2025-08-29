@@ -3,6 +3,7 @@ title: Setting the MofImagePath Registry Value
 description: Setting the MofImagePath Registry Value
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "MofImagePath"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Setting the MofImagePath Registry Value

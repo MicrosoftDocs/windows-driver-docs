@@ -10,6 +10,7 @@ keywords:
 - Network Module Registrar WDK , attaching network modules
 - NMR WDK , attaching network modules
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Network Module Attachment

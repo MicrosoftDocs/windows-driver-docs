@@ -14,6 +14,7 @@ keywords:
 - jobs WDK print
 - print jobs WDK
 ms.date: 09/16/2022
+ms.topic: how-to
 ---
 
 # Process a print job

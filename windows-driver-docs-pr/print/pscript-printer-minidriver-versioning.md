@@ -4,6 +4,7 @@ description: Pscript Printer Minidriver Versioning
 keywords:
 - minidrivers WDK Pscript , versioning
 ms.date: 01/30/2023
+ms.topic: reference
 ---
 
 # Pscript Printer Minidriver Versioning

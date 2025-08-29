@@ -3,6 +3,7 @@ title: Critical Section Time Outs
 description: Critical Section Time Outs
 keywords: ["critical section, debugging critical section time outs"]
 ms.date: 07/24/2023
+ms.topic: troubleshooting-general
 ---
 
 # Critical Section Time Outs
@@ -147,8 +148,6 @@ For a code sample and example debugging session of an orphaned critical section,
 
 [Displaying a Critical Section](displaying-a-critical-section.md)
 
-[Critical Section Time Outs](critical-section-time-outs.md) (user mode)
-
-[**!ntsdexts.locks**](../debuggercmds/-locks---ntsdexts-locks-.md) 
+[!ntsdexts.locks](../debuggercmds/-locks---ntsdexts-locks-.md) 
 
 [!cs ](../debuggercmds/-cs.md)

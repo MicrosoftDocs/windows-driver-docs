@@ -6,6 +6,7 @@ keywords:
 - initializing header-data split providers
 - header-data split providers WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing a Header-Data Split Provider

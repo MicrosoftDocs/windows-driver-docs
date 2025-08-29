@@ -2,6 +2,7 @@
 title: Appeal a rejected audio driver
 description: How to appeal an audio driver that was rejected
 ms.date: 07/08/2024
+ms.topic: how-to
 ---
 
 # Appeal a rejected audio driver

@@ -2,6 +2,7 @@
 title: Choose Columns Dialog
 description: The Choose columns dialog is used to customize the displayed columns in the main Segment Viewer window. 
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Choose Columns Dialog

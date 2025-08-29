@@ -3,6 +3,7 @@ title: Writing DbgEng Extensions
 description: Writing DbgEng Extensions
 keywords: DbgEng Extensions, debugger extensions 
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Writing DbgEng Extensions

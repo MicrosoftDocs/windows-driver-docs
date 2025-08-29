@@ -2,6 +2,7 @@
 title: Setting a VMQ Filter
 description: Setting a VMQ Filter
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting a VMQ Filter

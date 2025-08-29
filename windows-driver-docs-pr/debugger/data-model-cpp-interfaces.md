@@ -2,6 +2,7 @@
 title: Debugger Data Model C++ Interfaces 
 description: This topic describes how to use Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
 ms.date: 10/08/2018
+ms.topic: reference
 ---
 
 # Debugger Data Model C++ Interfaces 
@@ -884,8 +885,6 @@ Identical | The two signatures or types are identical.
 This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
 
 [Debugger Data Model C++ Overview](data-model-cpp-overview.md)
-
-[Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
 
 [Debugger Data Model C++ Objects](data-model-cpp-objects.md)
 

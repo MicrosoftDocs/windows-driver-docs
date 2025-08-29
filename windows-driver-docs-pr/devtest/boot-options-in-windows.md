@@ -17,6 +17,7 @@ keywords:
 - boot loaders WDK
 - firmware-independent boot options WDK
 ms.date: 12/12/2024
+ms.topic: concept-article
 ---
 
 # Overview of Boot Options in Windows

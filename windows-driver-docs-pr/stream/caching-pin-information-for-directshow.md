@@ -9,6 +9,7 @@ keywords:
 - Broadcast Driver Architecture WDK AVStream , pin data cache
 - BDA WDK AVStream , pin data cache
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Caching Pin Information for DirectShow

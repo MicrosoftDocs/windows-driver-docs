@@ -3,6 +3,7 @@ title: S (Windows Debugger Glossary)
 description: Glossary page - S
 keywords: ["suspended thread", "suspended process"]
 ms.date: 05/23/2017
+ms.topic: glossary
 ---
 
 # S

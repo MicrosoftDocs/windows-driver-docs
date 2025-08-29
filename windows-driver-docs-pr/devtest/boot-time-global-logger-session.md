@@ -9,6 +9,7 @@ keywords:
 - boot-time Global Logger trace session WDK , about Global Logger sessions
 - tracing WDK , during boot
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Boot-Time Global Logger Session

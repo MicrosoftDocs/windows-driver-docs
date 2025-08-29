@@ -2,6 +2,7 @@
 title: Managing the Signing Process
 description: Managing the Signing Process
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Managing the Signing Process

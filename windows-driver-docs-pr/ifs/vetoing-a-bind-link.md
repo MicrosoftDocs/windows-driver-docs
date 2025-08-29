@@ -2,6 +2,7 @@
 title: Vetoing a Bind Link
 description: Minifilters can veto a bind link on the system boot partition starting in Windows 11, version 24H2.
 ms.date: 02/12/2024
+ms.topic: concept-article
 ---
 
 # Vetoing a bind link

@@ -4,6 +4,7 @@ description: This section describes Network layer discard reasons for Windows Fi
 keywords:
 - Network layer discard reasons network drivers
 ms.date: 11/09/2017
+ms.topic: error-reference
 ---
 
 # Network layer discard reasons

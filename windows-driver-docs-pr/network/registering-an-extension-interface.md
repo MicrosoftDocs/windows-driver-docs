@@ -8,6 +8,7 @@ keywords:
 - registering Winsock Kernel extension interfaces
 - SIO_WSK_REGISTER_EXTENSION
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Registering an Extension Interface

@@ -2,6 +2,7 @@
 title: Design Purchase Flows in a Mobile Broadband App
 description: Design purchase flows in a mobile broadband app
 ms.date: 10/10/2023
+ms.topic: how-to
 ---
 
 # Design purchase flows in a mobile broadband app

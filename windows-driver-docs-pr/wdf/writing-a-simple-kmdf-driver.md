@@ -7,6 +7,7 @@ keywords:
 - Kernel-Mode Driver Framework WDK , writing a simple driver
 - framework-based drivers WDK KMDF , writing a simple driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing a Simple WDF Driver

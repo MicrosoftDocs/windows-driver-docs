@@ -2,6 +2,7 @@
 title: Error Handling for HID Over SPI
 description: How to handle errors that may occur in HID over SPI.
 ms.date: 01/11/2024
+ms.topic: troubleshooting-general
 ---
 
 # Error handling for HID over SPI

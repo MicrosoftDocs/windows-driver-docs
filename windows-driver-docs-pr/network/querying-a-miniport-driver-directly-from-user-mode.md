@@ -4,6 +4,7 @@ description: Querying a Miniport Driver Directly From User Mode
 keywords:
 - user-mode driver queries WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Querying a Miniport Driver Directly From User Mode

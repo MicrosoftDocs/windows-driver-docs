@@ -4,6 +4,7 @@ description: This topic describes the GUID_NDIS_STATUS_PORT_STATE GUID for the N
 keywords:
 - GUID_NDIS_STATUS_PORT_STATE, WDK GUID_NDIS_STATUS_PORT_STATE network drivers
 ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # GUID_NDIS_STATUS_PORT_STATE

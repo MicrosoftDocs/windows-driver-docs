@@ -10,6 +10,7 @@ keywords:
 - MID_ATLAS structure
 - MID_MAP structure
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Multiplex ID Management

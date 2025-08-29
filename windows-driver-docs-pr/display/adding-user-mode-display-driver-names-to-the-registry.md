@@ -6,6 +6,7 @@ keywords:
 - user-mode display drivers WDK Windows Vista , names added to registry
 - registry WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Adding User-Mode Display Driver Names to the Registry

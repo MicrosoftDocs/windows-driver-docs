@@ -2,6 +2,7 @@
 title: Developer Guidelines
 description: This topic discusses general guidelines for working with and developing smart card minidrivers. 
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Developer Guidelines

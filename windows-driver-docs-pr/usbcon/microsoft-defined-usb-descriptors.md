@@ -2,6 +2,7 @@
 title: Microsoft OS Descriptors for USB Devices
 description: Microsoft provides a set of proprietary device classes and USB descriptors, which are called Microsoft OS Descriptors (MODs).
 ms.date: 06/26/2024
+ms.topic: concept-article
 ---
 
 # Microsoft OS descriptors for USB devices

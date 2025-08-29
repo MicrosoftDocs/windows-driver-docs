@@ -3,6 +3,7 @@ title: "Time Travel Debugging - JavaScript Automation"
 description: "This section describes how to use JavaScript automation to work with TTD traces."
 keywords: ["JavaScript Automation", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 11/19/2024
+ms.topic: concept-article
 ---
 
 # Time Travel Debugging - JavaScript Automation

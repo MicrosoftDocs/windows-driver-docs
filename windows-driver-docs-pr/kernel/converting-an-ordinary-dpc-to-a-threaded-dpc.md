@@ -3,6 +3,7 @@ title: Converting an Ordinary DPC to a Threaded DPC
 description: Converting an Ordinary DPC to a Threaded DPC
 keywords: ["threaded DPCs WDK kernel", "converting DPCs"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Converting an Ordinary DPC to a Threaded DPC

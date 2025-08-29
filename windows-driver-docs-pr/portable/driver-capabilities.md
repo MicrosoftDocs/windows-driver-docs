@@ -2,6 +2,7 @@
 description: Driver Capabilities
 title: Driver Capabilities
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Driver Capabilities

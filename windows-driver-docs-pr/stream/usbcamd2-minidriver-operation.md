@@ -10,6 +10,7 @@ keywords:
 - cameras WDK USBCAMD2
 - SRBs WDK USBCAMD2
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # USBCAMD2 Minidriver Operation

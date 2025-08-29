@@ -2,6 +2,7 @@
 title: Get Information About the Currently Registered Network
 description: Get information about the currently registered network
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Get information about the currently registered network

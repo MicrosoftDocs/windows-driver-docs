@@ -2,6 +2,7 @@
 title: StorNVMe SCSI Translation Support 
 description: StorNVMe SCSI Translation Support 
 ms.date: 12/20/2024
+ms.topic: reference
 ---
 
 # StorNVMe SCSI Translation Support

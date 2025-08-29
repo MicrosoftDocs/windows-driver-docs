@@ -2,6 +2,7 @@
 title: Setting the Parameters of a NIC Switch
 description: Setting the Parameters of a NIC Switch
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting the Parameters of a NIC Switch

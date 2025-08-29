@@ -2,6 +2,7 @@
 title: Modifying the Source Indexing Streams in a .pdb File
 description: Modifying the Source Indexing Streams in a .pdb File
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Modifying the Source Indexing Streams in a .pdb File

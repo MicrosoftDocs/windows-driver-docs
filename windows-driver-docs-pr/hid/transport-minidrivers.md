@@ -2,6 +2,7 @@
 title: Transport Minidriver Overview
 description: This section contains details for vendors who need to create their own HID minidrivers. 
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Transport Minidriver Overview

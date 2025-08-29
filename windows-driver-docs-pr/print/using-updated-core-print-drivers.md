@@ -2,6 +2,7 @@
 title: Using Updated Core Print Drivers
 description: Using Updated Core Print Drivers
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # Using Updated Core Print Drivers

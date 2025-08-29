@@ -3,6 +3,7 @@ title: Using a Repeater
 description: Using a Repeater
 keywords: ["repeater, using a repeater"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using a Repeater

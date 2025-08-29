@@ -2,6 +2,7 @@
 title: Enable Silent Process Exit Monitoring
 description: Enable silent process exit monitoring
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # Enable silent process exit monitoring

@@ -3,6 +3,8 @@ title: Programming custom credential providers
 description: This topic describes how to program a custom credential provider for the Windows debugger. 
 keywords: ["symbols, programming"]
 ms.date: 12/12/2024
+ms.topic: concept-article
+ms.custom: sfi-ropc-nochange
 ---
 
 # Programming custom credential providers

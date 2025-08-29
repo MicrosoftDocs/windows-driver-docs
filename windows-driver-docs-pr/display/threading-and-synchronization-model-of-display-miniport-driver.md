@@ -7,6 +7,7 @@ keywords:
 - miniport drivers WDK display , synchronization
 - miniport drivers WDK display , threading
 ms.date: 10/03/2023
+ms.topic: concept-article
 ---
 
 # Threading and Synchronization Model of Display Miniport Driver

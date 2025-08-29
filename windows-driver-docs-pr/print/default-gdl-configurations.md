@@ -9,6 +9,7 @@ keywords:
 - configurations WDK GDL , examples
 - DefaultOption directive WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Default GDL Configurations

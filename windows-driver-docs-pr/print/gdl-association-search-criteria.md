@@ -10,6 +10,7 @@ keywords:
 - GDL WDK , entries
 - unidentified entries WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Association Search Criteria

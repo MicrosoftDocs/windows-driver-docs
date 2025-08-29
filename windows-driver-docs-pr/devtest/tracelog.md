@@ -8,6 +8,7 @@ keywords:
 - event tracing controller WDK Tracelog
 - trace session management WDK Tracelog
 ms.date: 12/12/2024
+ms.topic: reference
 ---
 
 # Tracelog

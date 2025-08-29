@@ -38,6 +38,7 @@ api_name:
 - IWDTFDriverSetupSystemAction2.WaitNoPendingInstallEvents
 targetos: Windows
 req.typenames: 
+ms.topic: reference
 ---
 
 # IWDTFDriverSetupSystemAction2::WaitNoPendingInstallEvents

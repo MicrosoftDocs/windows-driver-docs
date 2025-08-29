@@ -7,6 +7,7 @@ keywords:
 - packets WDK networking , sending
 - sending data WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Sending Network Data

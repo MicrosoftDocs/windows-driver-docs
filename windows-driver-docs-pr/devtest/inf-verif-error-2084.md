@@ -2,6 +2,7 @@
 title: InfVerif Error 2084
 description: Supporting documentation for InfVerif (InfVerif.exe) error code 2084.
 ms.date: 07/15/2024
+ms.topic: troubleshooting-error-codes
 ---
 
 # InfVerif Error 2084

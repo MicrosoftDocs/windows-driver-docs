@@ -2,6 +2,7 @@
 title: WIA Architecture Overview
 description: WIA Architecture Overview
 ms.date: 07/18/2018
+ms.topic: concept-article
 ---
 
 # WIA Architecture Overview

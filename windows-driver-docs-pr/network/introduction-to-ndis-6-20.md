@@ -6,6 +6,7 @@ keywords:
 - NDIS 6.20 WDK , about
 - Network Driver Interface Specification (NDIS) 6.20 WDK
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Introduction to NDIS 6.20

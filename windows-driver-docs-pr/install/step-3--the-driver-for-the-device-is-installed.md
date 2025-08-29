@@ -2,6 +2,7 @@
 title: Step 3 The Driver for the Device is Installed
 description: Step 3 The Driver for the Device is Installed
 ms.date: 11/18/2021
+ms.topic: how-to
 ---
 
 # Step 3: The Driver Package for the Device is Installed

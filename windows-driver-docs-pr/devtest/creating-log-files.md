@@ -5,6 +5,7 @@ keywords:
 - log files WDK Driver Verifier
 - Driver Verifier WDK , log files
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating Log Files

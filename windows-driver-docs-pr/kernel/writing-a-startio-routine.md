@@ -3,6 +3,7 @@ title: Writing a StartIo Routine
 description: Writing a StartIo Routine
 keywords: ["StartIo routines, about StartIo routines", "StartIo routines, writing", "starting I/O operations", "I/O operation starting WDK kernel", "IRPs WDK kernel , queuing", "queuing IRPs", "dequeuing IRPs"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Writing a StartIo Routine

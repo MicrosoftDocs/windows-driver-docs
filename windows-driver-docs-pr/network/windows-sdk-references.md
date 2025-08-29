@@ -4,6 +4,7 @@ description: Windows SDK References
 keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , Windows SDK references
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Windows SDK References

@@ -8,6 +8,7 @@ keywords:
 - ETW WDK , providers
 - providers WDK ETW
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Registered Provider

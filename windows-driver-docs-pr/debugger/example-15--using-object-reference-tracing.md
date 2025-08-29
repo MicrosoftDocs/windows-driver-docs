@@ -2,6 +2,7 @@
 title: Example 15 Using Object Reference Tracing
 description: Example 15 Using Object Reference Tracing
 ms.date: 10/12/2018
+ms.topic: concept-article
 ---
 
 # Example 15: Using Object Reference Tracing

@@ -38,6 +38,7 @@ api_name:
 - IWDTFDriverSetupSystemAction2.RescanAllDevices
 targetos: Windows
 req.typenames: 
+ms.topic: reference
 ---
 
 # IWDTFDriverSetupSystemAction2::RescanAllDevices

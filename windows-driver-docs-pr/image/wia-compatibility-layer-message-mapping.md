@@ -2,6 +2,7 @@
 title: WIA Compatibility Layer Message Mapping
 description: WIA Compatibility Layer Message Mapping
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Compatibility Layer Message Mapping

@@ -2,6 +2,7 @@
 title: Shutting Down a SAN Connection
 description: Shutting Down a SAN Connection
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Shutting Down a SAN Connection

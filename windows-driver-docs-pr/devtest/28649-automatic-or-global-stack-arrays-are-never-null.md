@@ -4,6 +4,7 @@ description: Warning C28649 Automatic or Global Stack Arrays are never NULL.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28649"
+ms.topic: reference
 ---
 
 # C28649

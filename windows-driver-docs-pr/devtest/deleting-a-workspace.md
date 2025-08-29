@@ -5,6 +5,7 @@ keywords:
 - deleting workspaces
 - workspaces WDK TraceView , deleting
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Deleting a Workspace

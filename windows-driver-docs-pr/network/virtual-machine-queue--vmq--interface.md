@@ -2,6 +2,7 @@
 title: Virtual Machine Queue (VMQ) Interface
 description: A network adapter that supports the VMQ interface includes hardware that routes packets to receive queues.
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # Virtual Machine Queue (VMQ) Interface

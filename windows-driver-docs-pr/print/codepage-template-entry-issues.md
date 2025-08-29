@@ -5,6 +5,7 @@ keywords:
 - data types WDK GDL , problems with template data types
 - CodePage directive WDK GDL
 ms.date: 04/20/2017
+ms.topic: troubleshooting-general
 ---
 
 # CodePage Template Entry Issues

@@ -2,6 +2,7 @@
 title: Unlock a Device
 description: Unlock a device
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Unlock a device

@@ -12,6 +12,7 @@ keywords:
 - icons WDK AutoPlay
 - copying icon files
 ms.date: 01/03/2024
+ms.topic: concept-article
 ---
 
 # Providing Icons for a Device

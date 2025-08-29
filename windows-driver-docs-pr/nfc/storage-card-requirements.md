@@ -2,6 +2,7 @@
 title: Storage Card Requirements
 description: This topic describes the APDU requirements for storage cards
 ms.date: 01/11/2024
+ms.topic: reference
 ---
 
 # Storage card requirements

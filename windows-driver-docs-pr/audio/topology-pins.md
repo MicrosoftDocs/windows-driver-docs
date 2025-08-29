@@ -15,6 +15,7 @@ keywords:
 - pin factories WDK audio
 - PCPIN_DESCRIPTOR structure
 ms.date: 11/14/2022
+ms.topic: concept-article
 ---
 
 # Topology Pins

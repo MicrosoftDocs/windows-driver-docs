@@ -3,6 +3,7 @@ title: Debugging a Stack Trace that has JScript Frames
 description: The JScript Stack Dump Creation and Consumption feature works by collecting JScript frames and stitching them against debugger physical frames. 
 keywords: ["JScript", "jscript9diagdump.dll"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging a Stack Trace that has JScript Frames

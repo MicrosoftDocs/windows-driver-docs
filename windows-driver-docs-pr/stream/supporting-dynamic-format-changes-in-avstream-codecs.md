@@ -7,6 +7,7 @@ keywords:
 - dynamic format change WDK AVStream
 - AVStream hardware codec support WDK , supporting dynamic format change
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Supporting Dynamic Format Changes in AVStream Codecs

@@ -5,6 +5,7 @@ keywords:
 - SetupAPI logging WDK Windows Vista , driver rank information
 - signature indicators WDK device installations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Driver Package Rank Information in the SetupAPI Log

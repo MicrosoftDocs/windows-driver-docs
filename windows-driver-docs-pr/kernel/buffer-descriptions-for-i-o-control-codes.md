@@ -2,7 +2,8 @@
 title: Buffer Descriptions for I/O Control Codes
 description: Buffer Descriptions for I/O Control Codes
 keywords: ["I/O control codes WDK kernel , buffer descriptions", "control codes WDK IOCTLs , buffer descriptions", "IOCTLs WDK kernel , buffer descriptions", "buffer descriptions WDK IOCTLs"]
-ms.date: 07/29/2021
+ms.date: 04/30/2025
+ms.topic: reference
 ---
 
 # Buffer Descriptions for I/O Control Codes
@@ -34,15 +35,15 @@ For these transfer types, IRPs also supply a pointer to an MDL at **Irp->MdlAddr
 This represents the second buffer that is specified in calls to [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) and **IoBuildDeviceIoControlRequest**.
 This buffer can be used as either an input buffer or an output buffer, as follows:
 
--   METHOD_IN_DIRECT is specified if the driver that handles the IRP receives data in the buffer when it is called. The MDL describes an input buffer, and specifying METHOD_IN_DIRECT ensures that the executing thread has read-access to the buffer.
+- METHOD_IN_DIRECT is specified if the driver that handles the IRP receives data in the buffer when it's called. The MDL describes an input buffer, and specifying METHOD_IN_DIRECT ensures that the executing thread has read-access to the buffer.
 
--   METHOD_OUT_DIRECT is specified if the driver that handles the IRP will write data into the buffer before completing the IRP. The MDL describes an output buffer, and specifying METHOD_OUT_DIRECT ensures that the executing thread has write-access to the buffer.
+- METHOD_OUT_DIRECT is specified if the driver that handles the IRP writes data into the buffer before completing the IRP. The MDL describes an output buffer, and specifying METHOD_OUT_DIRECT ensures that the executing thread has write-access to the buffer.
 
 For both of these transfer types, **Parameters.DeviceIoControl.OutputBufferLength** specifies the size of the buffer that is described by the MDL.
 
 ## METHOD_NEITHER
 
-The I/O manager does not provide any system buffers or MDLs.
+The I/O manager doesn't provide any system buffers or MDLs.
 The IRP supplies the user-mode virtual addresses of the input and output buffers that were specified to **DeviceIoControl** or **IoBuildDeviceIoControlRequest**, without validating or mapping them.
 
 The input buffer's address is supplied by **Parameters.DeviceIoControl.Type3InputBuffer** in the driver's **IO_STACK_LOCATION** structure, and the output buffer's address is specified by **Irp->UserBuffer**.

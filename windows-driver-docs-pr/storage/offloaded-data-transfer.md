@@ -6,6 +6,7 @@ keywords:
 - offloaded data transfers
 - Windows offloaded data transfers
 - offloaded data transfers, storage
+ms.topic: concept-article
 ---
 
 # Windows Storage Offloaded Data Transfer

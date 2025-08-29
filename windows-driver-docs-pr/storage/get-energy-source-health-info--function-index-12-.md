@@ -2,6 +2,7 @@
 title: Get Energy Source Health Info (Function Index 12)
 description: This function returns information about the health of the Energy Source (ES) module.
 ms.date: 11/18/2022
+ms.topic: reference
 ---
 
 # Get Energy Source Health Info (Function Index 12)

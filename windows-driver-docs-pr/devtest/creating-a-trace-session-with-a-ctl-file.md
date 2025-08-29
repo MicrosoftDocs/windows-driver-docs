@@ -6,6 +6,7 @@ keywords:
 - .ctl files
 - ctl files
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating a Trace Session with a CTL File

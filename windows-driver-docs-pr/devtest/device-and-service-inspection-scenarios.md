@@ -8,6 +8,7 @@ keywords:
 - test scenarios WDK WSDBIT
 - Device and Service inspection scenario WDK WSDBIT
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Device and Service Inspection Scenarios

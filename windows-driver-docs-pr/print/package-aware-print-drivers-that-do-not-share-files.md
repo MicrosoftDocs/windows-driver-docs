@@ -4,6 +4,7 @@ description: Package-Aware Print Drivers that Do Not Share Files
 keywords:
 - package-aware print drivers WDK
 ms.date: 05/08/2023
+ms.topic: how-to
 ---
 
 # Package-Aware Print Drivers that Do Not Share Files

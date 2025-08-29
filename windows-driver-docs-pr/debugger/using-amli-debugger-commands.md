@@ -3,6 +3,7 @@ title: Using AMLI Debugger Commands
 description: Using AMLI Debugger Commands
 keywords: ["AMLI Debugger, AMLI Debugger commands"]
 ms.date: 11/07/2018
+ms.topic: concept-article
 ---
 
 # Using AMLI Debugger Commands

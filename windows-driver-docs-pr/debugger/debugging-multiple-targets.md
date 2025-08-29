@@ -3,6 +3,7 @@ title: Debugging Multiple Targets
 description: Debugging Multiple Targets
 keywords: ["multiple targets", "system", "system, overview"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging Multiple Targets

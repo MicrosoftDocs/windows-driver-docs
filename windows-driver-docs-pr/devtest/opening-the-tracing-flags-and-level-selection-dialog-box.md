@@ -7,6 +7,7 @@ keywords:
 - trace levels WDK
 - levels WDK software tracing
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Opening the Tracing Flags and Level Selection dialog box

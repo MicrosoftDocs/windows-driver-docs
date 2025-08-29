@@ -9,6 +9,7 @@ keywords:
 - dialog box procedures WDK CPSUI
 - window messages WDK CPSUI
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Dialog Box Procedures and CPSUI

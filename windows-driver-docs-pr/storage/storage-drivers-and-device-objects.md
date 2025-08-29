@@ -5,6 +5,7 @@ keywords:
 - storage drivers WDK , device objects
 - device objects WDK storage
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # About Storage Drivers and Device Objects

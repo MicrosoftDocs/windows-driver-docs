@@ -2,6 +2,7 @@
 title: Marshalling Helper Functions
 description: This topic provides information about the marshaling helper functions in the sensorsutils.h header file.
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # Marshalling helper functions

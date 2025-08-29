@@ -6,6 +6,7 @@ keywords:
 - trace sessions WDK , groups
 - ungrouping trace sessions
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Ungrouping Trace Sessions

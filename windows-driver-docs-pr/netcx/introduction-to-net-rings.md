@@ -5,6 +5,7 @@ keywords:
 - NetAdapterCx Introduction to net rings, NetCx Introduction to net rings, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
 ms.date: 10/29/2019
 ms.custom: 19H1
+ms.topic: concept-article
 ---
 
 # Introduction to net rings

@@ -2,6 +2,7 @@
 title: Step 2 A Driver for the Device is Selected
 description: Step 2 A Driver for the Device is Selected
 ms.date: 03/23/2023
+ms.topic: how-to
 ---
 
 # Step 2: A Driver Package for the Device is Selected

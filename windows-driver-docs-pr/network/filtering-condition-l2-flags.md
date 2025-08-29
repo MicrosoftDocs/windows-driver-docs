@@ -4,6 +4,7 @@ description: This section describes filtering condition L2 flags.
 keywords:
 - Filtering condition L2 flags network drivers
 ms.date: 11/08/2017
+ms.topic: concept-article
 ---
 
 # Filtering condition L2 flags

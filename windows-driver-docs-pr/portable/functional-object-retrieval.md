@@ -2,6 +2,7 @@
 description: Functional-Object Retrieval
 title: Functional-Object Retrieval
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Functional-Object Retrieval

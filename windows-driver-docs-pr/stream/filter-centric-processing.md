@@ -7,6 +7,7 @@ keywords:
 - filter types WDK AVStream
 - AVStrMiniFilterProcess
 ms.date: 06/18/2020
+ms.topic: concept-article
 ---
 
 # Filter-centric processing

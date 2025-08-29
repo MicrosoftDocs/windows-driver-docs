@@ -3,6 +3,7 @@ title: Debugging WinLogon
 description: Debugging WinLogon
 keywords: ["WinLogon debugging", "NTSD, debugging CSRSS", "controlling the user-mode debugger from the kernel debugger, debugging WinLogon"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging WinLogon

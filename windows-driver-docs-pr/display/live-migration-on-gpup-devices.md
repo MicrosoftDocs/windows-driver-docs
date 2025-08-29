@@ -9,6 +9,7 @@ keywords:
 - WDDM, GPUP
 - WDDM, GPU-P
 ms.date: 03/28/2024
+ms.topic: concept-article
 ---
 
 # Live migration on GPU-P devices

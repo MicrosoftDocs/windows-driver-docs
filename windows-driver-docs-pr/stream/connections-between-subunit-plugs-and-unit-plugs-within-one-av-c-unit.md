@@ -6,6 +6,7 @@ keywords:
 - AV/C WDK , connection scenarios
 - AVCCONNECTINFO
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Connections between subunit plugs and unit plugs within one AV/C unit

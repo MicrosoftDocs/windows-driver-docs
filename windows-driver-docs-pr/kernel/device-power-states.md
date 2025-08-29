@@ -3,6 +3,7 @@ title: Device Power States
 description: Device power states
 keywords: ["device power states WDK kernel", "power states WDK kernel", "states WDK power management", "Dx names WDK power management", "low power modes WDK kernel", "power saving modes WDK kernel", "continuous power WDK kernel", "delays WDK power management"]
 ms.date: 11/08/2024
+ms.topic: concept-article
 ---
 
 # Device power states

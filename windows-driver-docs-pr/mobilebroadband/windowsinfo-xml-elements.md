@@ -2,6 +2,7 @@
 title: WindowsInfo XML Elements List
 description: WindowsInfo XML elements list
 ms.date: 07/05/2019
+ms.topic: reference
 ---
 
 # WindowsInfo XML elements list

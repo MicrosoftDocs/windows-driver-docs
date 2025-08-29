@@ -5,6 +5,7 @@ keywords:
 - value macros WDK GPD files
 - referencing macros
 ms.date: 12/19/2024
+ms.topic: concept-article
 ---
 
 # Value macros

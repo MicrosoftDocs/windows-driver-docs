@@ -2,6 +2,7 @@
 title: Shader Relative Addressing
 description: Shader Relative Addressing
 ms.date: 01/05/2018
+ms.topic: concept-article
 ---
 
 # Shader Relative Addressing

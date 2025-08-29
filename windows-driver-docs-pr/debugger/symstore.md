@@ -3,6 +3,7 @@ title: SymStore
 description: SymStore
 keywords: ["SymStore, features", "SymStore, using", "symbol stores, SymStore (symstore.exe)"]
 ms.date: 03/27/2018
+ms.topic: overview
 ---
 
 # SymStore

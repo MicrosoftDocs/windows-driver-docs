@@ -2,6 +2,7 @@
 title: Communicating With GenericUSBFn.sys From a User-Mode Service
 description: Create a user-mode service that communicates with GenericUSBFn.sys by sending I/O control code (IOCTL) requests.
 ms.date: 01/17/2024
+ms.topic: how-to
 ---
 
 # Communicating with GenericUSBFn.sys from a user-mode service

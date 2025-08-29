@@ -2,6 +2,7 @@
 title: Creating an Interrupt Object (UMDF 1)
 description: Creating an Interrupt Object
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating an Interrupt Object (UMDF 1)

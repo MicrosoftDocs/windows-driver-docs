@@ -3,6 +3,7 @@ title: Removing a Device in a Filter Driver
 description: Removing a Device in a Filter Driver
 keywords: ["filter drivers WDK PnP"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Removing a Device in a Filter Driver

@@ -8,6 +8,7 @@ keywords:
 - KMDF bug checks WDK
 - WDF_VIOLATION
 ms.date: 04/20/2017
+ms.topic: error-reference
 ---
 
 # Bug Checks from KMDF Drivers

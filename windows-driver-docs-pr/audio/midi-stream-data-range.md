@@ -4,6 +4,7 @@ description: MIDI Stream Data Range
 keywords:
 - MIDI stream data ranges WDK audio
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # MIDI Stream Data Range

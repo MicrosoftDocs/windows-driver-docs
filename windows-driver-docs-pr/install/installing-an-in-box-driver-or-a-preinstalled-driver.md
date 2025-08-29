@@ -6,6 +6,7 @@ keywords:
 - inbox driver installations WDK
 - preinstalled drivers WDK device installations
 ms.date: 03/11/2022
+ms.topic: concept-article
 ---
 
 # Installing an Inbox Driver or a Preinstalled Driver

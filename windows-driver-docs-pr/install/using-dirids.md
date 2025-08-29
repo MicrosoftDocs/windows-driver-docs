@@ -7,6 +7,7 @@ keywords:
 - directory identifiers WDK INF files
 - directories WDK INF files
 ms.date: 07/16/2024
+ms.topic: how-to
 ---
 
 # Using Dirids

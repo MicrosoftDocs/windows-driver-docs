@@ -7,6 +7,7 @@ keywords:
 - identifiers WDK device , USB devices
 - USB identifiers WDK device installations
 ms.date: 04/08/2022
+ms.topic: reference
 ---
 
 # Identifiers for USB devices

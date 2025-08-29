@@ -1,12 +1,12 @@
 ---
 title: Using MDLs
-description: Using MDLs
+description: Provides information about using MDLs.
 keywords: ["memory management WDK kernel ,"]
-ms.date: 06/16/2017
+ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
 # Using MDLs
-
 
 An I/O buffer that spans a range of contiguous virtual memory addresses can be spread over several physical pages, and these pages can be discontiguous. The operating system uses a *memory descriptor list* (MDL) to describe the physical page layout for a virtual memory buffer.
 
@@ -48,7 +48,7 @@ MDL chains are typically used to manage an array of buffers that are associated 
 
 The [I/O manager](windows-kernel-mode-i-o-manager.md) is a frequent source of I/O requests. When the I/O manager completes an I/O request, the I/O manager frees the IRP and frees any MDLs that are attached to the IRP. Some of these MDLs might have been attached to the IRP by drivers that are located beneath the I/O manager in the device stack. Similarly, if your driver is the source of an I/O request, your driver must clean up the IRP and any MDLs that are attached to the IRP when the I/O request completes.
 
-### Example
+## Example
 
 The following code example is a driver-implemented function that frees an MDL chain from an IRP:
 

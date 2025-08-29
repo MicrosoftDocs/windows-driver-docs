@@ -2,6 +2,7 @@
 title: Collection List Helpers
 description: The collection list helper functions are used by the v2 sensor drivers, for working with SENSOR\_COLLECTION\_LIST structures.
 ms.date: 01/11/2024
+ms.topic: reference
 ---
 
 # Collection list helpers

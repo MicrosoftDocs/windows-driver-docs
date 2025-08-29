@@ -6,6 +6,7 @@ keywords:
 - resetting miniport adapters
 - adapters WDK networking , reset operations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Simplified Reset Handling

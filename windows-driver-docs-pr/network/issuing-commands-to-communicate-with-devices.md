@@ -6,6 +6,7 @@ keywords:
 - lower edge of NDIS miniport drivers WDK networking , device communication
 - WDM lower edge WDK networking , device communication
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Issuing Commands to Communicate with Devices

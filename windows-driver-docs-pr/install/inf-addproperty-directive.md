@@ -1,6 +1,6 @@
 ---
 title: INF AddProperty Directive
-description: An AddProperty directive references one or more INF file sections that modify the device properties that are set for a device instance, a device setup class, a device interface class, or a device interface.
+description: An AddProperty directive references one or more INF file sections that modify the device properties that are set for a device instance, a device container, a device setup class, a device interface class, or a device interface.
 keywords:
 - INF AddProperty Directive Device and Driver Installation
 topic_type:
@@ -10,12 +10,12 @@ api_name:
 - INF AddProperty Directive
 api_type:
 - NA
-ms.date: 06/14/2022
+ms.date: 03/21/2025
 ---
 
 # INF AddProperty directive
 
-An **AddProperty** directive references one or more INF file sections that modify the [device properties](device-properties.md) that are set for a device instance, a [device setup class](./overview-of-device-setup-classes.md), a [device interface class](./overview-of-device-interface-classes.md), or a device interface.
+An **AddProperty** directive references one or more INF file sections that modify the [device properties](device-properties.md) that are set for a device instance, a [device container](./container-ids.md), a [device setup class](./overview-of-device-setup-classes.md), a [device interface class](./overview-of-device-interface-classes.md), or a device interface.
 
 ```inf
 [DDInstall] |
@@ -55,7 +55,7 @@ An *add-property-section* that is referenced by an **AddProperty** directive has
 
 ```inf
 [add-property-section]
-(property-name, , , [flags], value]) | 
+(property-name, , , [flags], value) | 
 ({property-category-guid}, property-pid, type, [flags], value)
 ...
 ```
@@ -79,7 +79,19 @@ One of the following property names that represent the device instance [driver p
 
 - **DeviceBrandingIcon**
 
-For more info about adding custom device icons, see [Providing Icons for a Device](providing-vendor-icons-for-the-shell-and-autoplay.md).
+For more information about adding custom device icons, see [Providing Icons for a Device](providing-vendor-icons-for-the-shell-and-autoplay.md).
+
+One of the following property names that represent device container [driver package](driver-packages.md) properties.
+
+- **ContainerModelName**
+
+- **ContainerManufacturer**
+
+- **ContainerCategories**
+
+- **ContainerIcon**
+
+For more information about specifying the information that describes the physical device, see [Driver Package Container Metadata](driver-package-container-metadata.md)
 
 *property-category-guid*  
 A GUID value that identifies the property category. The GUID value can be a system-defined GUID that identifies one of the property categories for a device instance, a [device setup class](./overview-of-device-setup-classes.md), a [device interface class](./overview-of-device-interface-classes.md), or a device interface. All properties that have the same GUID value are members of the same category. These property categories are defined in *Devpkey.h*.
@@ -122,8 +134,19 @@ A flag that performs a bitwise OR of the value entry value to that of the existi
 **0x00000010** (FLG_ADDPROPERTY_AND)  
 A flag that performs a bitwise AND of the value entry value to that of the existing property value. This flag is valid only if the property data type is DEVPROP_TYPE_UINT32.
 
+For device container properties listed in *property-name*, flags are not needed and will be ignored during parsing.
+
 *value*  
 The value that the add operation uses to modify a property value, depending on the property data type and the value of the *flags* entry.
+
+For some device container properties listed in *property-name*, the value can be a %strkey% token, allowing for locale-specific strings. The following table describes what values can be specified for those properties. For more information about locale-specific strings, see [INF Strings Section](inf-strings-section.md).
+
+| Property Name         | Value                                                                                                     | Localizable via [Strings.LanguageID] sections for %strkey% token |
+|-----------------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| ContainerModelName    | A string or %strkey% token                                                                                | Yes |
+| ContainerManufacturer | A string or %strkey% token                                                                                | Yes |
+| ContainerCategories   | A list of strings, delimited by comma, from [**DeviceCategory**](/previous-versions/windows/hardware/metadata/ff541101(v=vs.85))  | No |
+| ContainerIcon         | A string or %strkey% token that represents the path to icon file that is included with the driver package | Yes |
 
 ## Remarks
 
@@ -139,9 +162,7 @@ The following example of an add property section includes two line entries: the 
 
 The first line includes the *property-name* entry value "DeviceModel" and the *value* entry value "Sample Device Model Name."
 
-The second line entry sets a custom property in a custom property category. The property-category-guid entry value is "c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e" and the property-identifier entry value is "2".
-
-The optional *flags* entry value is not present, and the type entry value is "18" (DEVPROP_TYPE_STRING). The value entry value is "String value for property 1."
+The second line entry sets a custom property in a custom property category. The property-category-guid entry value is "c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e" and the property-identifier entry value is "2". The optional *flags* entry value is not present, and the type entry value is "18" (DEVPROP_TYPE_STRING). The value entry value is "String value for property 1."
 
 ```inf
 [SampleAddPropertySection]

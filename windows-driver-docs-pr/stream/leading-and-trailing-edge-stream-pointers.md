@@ -6,6 +6,7 @@ keywords:
 - leading edge stream pointers WDK AVStream
 - trailing edge stream pointers WDK AVStream
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Leading and Trailing Edge Stream Pointers

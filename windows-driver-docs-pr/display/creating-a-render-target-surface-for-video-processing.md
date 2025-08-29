@@ -5,6 +5,7 @@ keywords:
 - video processing WDK DirectX VA , render target surfaces
 - render target surfaces WDK DirectX VA
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating a Render Target Surface for Video Processing

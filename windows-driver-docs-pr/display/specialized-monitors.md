@@ -9,6 +9,7 @@ keywords:
 - HMD
 - virtual reality
 ms.date: 06/27/2024
+ms.topic: concept-article
 ---
 
 # Head-mounted and specialized monitors

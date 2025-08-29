@@ -4,6 +4,7 @@ description: Default Clocks
 keywords:
 - default clocks WDK kernel streaming
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Default Clocks

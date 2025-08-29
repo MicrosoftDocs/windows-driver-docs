@@ -3,6 +3,7 @@ title: Symbol Status Abbreviations
 description: Symbol Status Abbreviations
 keywords: ["symbols, symbol status abbreviations", "deferred (symbol status abbreviation)", "(symbol status abbreviation)", "T (symbol status abbreviation)", "C (symbol status abbreviation)", "DIA (symbol status abbreviation)", "Export (symbol status abbreviation)", "PERF (symbol status abbreviation)", "PDB (symbol status abbreviation)"]
 ms.date: 05/23/2017
+ms.topic: glossary
 ---
 
 # Symbol Status Abbreviations

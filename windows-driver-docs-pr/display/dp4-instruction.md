@@ -2,6 +2,7 @@
 title: DP4 Instruction (Windows Drivers)
 description: Learn more about DP4 Instruction. 
 ms.date: 10/12/2022
+ms.topic: reference
 ---
 
 # DP4 Instruction

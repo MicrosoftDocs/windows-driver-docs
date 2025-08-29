@@ -2,6 +2,7 @@
 title: HardwareID Registry Subkey
 description: HardwareID Registry Subkey
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # HardwareID Registry Subkey

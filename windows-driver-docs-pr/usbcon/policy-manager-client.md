@@ -2,6 +2,7 @@
 title: Write a USB Type-C Policy Manager Client Driver
 description:  The client driver can participate in the policy decisions for USB Type-C connectors.
 ms.date: 01/17/2024
+ms.topic: how-to
 ---
 
 # Write a USB Type-C Policy Manager client driver
