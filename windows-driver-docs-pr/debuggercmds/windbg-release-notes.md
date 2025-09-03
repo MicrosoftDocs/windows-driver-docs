@@ -12,6 +12,38 @@ ms.topic: release-notes
 
 This topic provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
+## 1.2508.27001.0
+
+### New Features
+
+* Added option to disable graphics hardware acceleration for WinDbg.
+* Added a new `.AlternateFunctions` property on `<frame>.Attributes.SourceInformation`.
+
+### Bug Fixes
+
+* Fixed an issue where the Start Debugging page would not refresh after opening a dialog window.
+* Fixed an issue where connect to device tab menu items were not accessible to UI automation.
+* Fixed an issue where the uncommitted command input is lost when exploring command history.
+* Fixed mouse wheel handling to properly smooth scrolling (mice with smooth wheels and trackpads).
+* Fixed misleading recursive step-over behavior in 32-bit x86 debugging when function prologues called `__SEH_prolog4`.
+* Fixed a bug in .AllowNugetExeUpdate setting for NuGet based extension galleries.
+* Fixed a bug when reading DWARFv5 symbols around .debug_names tables and name indices.
+* Corrected step-in behavior for source lines with multiple step-filtered calls.
+* Fixed crash caused by invalid natvis version string.
+* Fixed environment block transmission for `CreateProcessW` in remote debugging.
+* Fixed !percpu and !allpercpu commands for cpu pointers dynamically allocated via alloc_percpu in the Linux kernel.
+* Fixed issue with CPU numberings in Linux kernel debug sessions.
+* Fixed missing disassembly window function labels for non-PDB symbol targets.
+* Fixed handling of placeholder relocations in ELF binaries
+* Fixed double free in dwarf symbols handling of DW_OP_fbreg.
+* Fixed regression in dump collection code preventing full memory dump collection for x64-on-arm64 emulated processes.
+
+### General UI Improvements
+
+* Improvements to how WinDbg restores window position when changing monitors of different resolutions. WinDbg also now saves and restores snapped positions.
+* Implemented horizontal scrolling using mouse wheel while holding shift key.
+* Updated Open Folder picker to use the modern dialog window.
+
 ## 1.2506.12002.0
 
 ### New Features
