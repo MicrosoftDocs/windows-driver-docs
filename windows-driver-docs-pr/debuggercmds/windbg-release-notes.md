@@ -34,7 +34,7 @@ This topic provides information on what's new in WinDbg. Earlier versions were r
 * Fixed !percpu and !allpercpu commands for cpu pointers dynamically allocated via alloc_percpu in the Linux kernel.
 * Fixed issue with CPU numberings in Linux kernel debug sessions.
 * Fixed missing disassembly window function labels for non-PDB symbol targets.
-* Fixed handling of placeholder relocations in ELF binaries
+* Fixed handling of placeholder relocations in ELF binaries.
 * Fixed double free in dwarf symbols handling of DW_OP_fbreg.
 * Fixed regression in dump collection code preventing full memory dump collection for x64-on-arm64 emulated processes.
 
