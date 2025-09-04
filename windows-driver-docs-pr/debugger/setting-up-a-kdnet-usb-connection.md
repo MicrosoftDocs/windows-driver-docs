@@ -214,7 +214,8 @@ Option 1: From the debugger prompt run the following command.
 ```console
 kd> dx Debugger.Settings.Debug.Advanced.RestartKdNetUsbDebugDevice=true
 ```
-WARNING: you may not be able to use the strategy to set the option if the USB debug device is already failing to enumerate as this will prevent the session from connecting to and breaking in to the target so you will never get to a functional debugger prompt.
+>[!WARNING]
+>You may not be able to use the strategy to set the option if the USB debug device is already failing to enumerate as this will prevent the session from connecting to and breaking in to the target so you will never get to a functional debugger prompt.
 
 Option 2: From the (new) Windbg application go to "File" -> "Settings" -> "Kernel debugging settings" and click the checkbox "Enable automatic reset of host USB controller when needed." then launch as normal from the "attach to kernel" dialog.
 
@@ -229,7 +230,7 @@ Option 3: Create (or modify existing) config.xml file to include the `RestartKdN
   </Namespace>
 </Settings>
 ```
-If, there is a config.xml already present, then merge the `<Setting Name="RestartKdNetUsbDebugDevice" Type="VT_BOOL" Value="true"></Setting>` xml element into the `Debug.Advanced` node in the existing xml document.
+If there is a config.xml already present, then merge the `<Setting Name="RestartKdNetUsbDebugDevice" Type="VT_BOOL" Value="true"></Setting>` xml element into the `Debug.Advanced` node in the existing xml document.
 
 ## See also
 
