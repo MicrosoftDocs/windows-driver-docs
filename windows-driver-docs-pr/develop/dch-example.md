@@ -1,11 +1,11 @@
 ---
-title: DCH Example
-description: Describes how the DCHU driver sample applies the DCH design principles (Declarative, Componentized, Hardware Support Apps [HSA]).
-ms.date: 05/05/2023
+title: DCH-Compliant Driver Package Example
+description: Describes how the DCHU driver sample applies the DCH design principles (declarative, componentized, hardware support apps [HSA]).
+ms.date: 09/11/2025
 ms.topic: example-scenario
 ---
 
-# DCH-Compliant Driver Package Example
+# DCH-compliant driver package example
 
 This article describes how the [DCHU driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU) applies [DCH design principles](dch-principles-best-practices.md).  You can use it as a model to apply DCH design principles to your own driver package.
 
@@ -130,7 +130,7 @@ osrfx2_DCHU_componentsoftware.exe
 
 The [source code for the Win32 app](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_componentsoftware) is included in the sample.
 
-The component driver package is only distributed on Desktop SKUs due to targeting set in the [Windows Hardware Dev Center dashboard](https://partner.microsoft.com/dashboard/Registration/Hardware).  For more info, see [Publish a driver to Windows Update](../dashboard/publish-a-driver-to-windows-update.md).
+The component driver package is only distributed on Desktop SKUs due to targeting set in the [Windows Hardware Dev Center dashboard](https://partner.microsoft.com/dashboard/home).  For more info, see [Publish a driver to Windows Update](../dashboard/publish-a-driver-to-windows-update.md).
 
 ## Allow communication with a hardware support app
 
@@ -175,37 +175,31 @@ This directive can also be used to coordinate installation of INF files in multi
 > [!NOTE]
 > While a base driver can payload an extension (and target the base driver in the shipping label), an extension bundled with another driver cannot be published to the extension hardware ID.
 
-## Run from the Driver Store
+## Run from the driver store
 
-To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [**dirid 13**](../install/using-dirids.md) where possible.  Using a destination directory value of 13 can result in improved stability during the driver update process.  Here's an example from [`osrfx2_DCHU_base.inx`]:
+To make it easier to update the driver, Fabrikam specifies the [driver store](../install/driver-store.md) as the destination to copy the driver files by using [**dirid 13**](../install/using-dirids.md) where possible.  Using a destination directory value of 13 can result in improved stability during the driver update process.  Here's an example from [`osrfx2_DCHU_base.inx`]:
 
 ```inf
 [DestinationDirs]
-OsrFx2_CopyFiles = 13 ; copy to Driver Store
+OsrFx2_CopyFiles = 13 ; copy to driver store
 ```
 
-See the [run from Driver Store](./run-from-driver-store.md) page for more details regarding how to dynamically find and load files from the Driver Store.
+See the [Run from Driver Store](./run-from-driver-store.md) page for more details regarding how to dynamically find and load files from the driver store.
 
 ## Summary
 
-The following diagram shows the driver packages that Fabrikam and Contoso created for their DCH-compliant driver.  In the loosely coupled example, they'll make three separate submissions on the [Windows Hardware Dev Center dashboard](https://partner.microsoft.com/dashboard/Registration/Hardware): one for the base, one for the extension, and one for the component.  In the tightly coupled example, they'll make two submissions: base and extension/component.
+The following diagram shows the driver packages that Fabrikam and Contoso created for their DCH-compliant driver.  In the loosely coupled example, they'll make three separate submissions on the [Windows Hardware Dev Center dashboard](https://partner.microsoft.com/dashboard/home): one for the base, one for the extension, and one for the component.  In the tightly coupled example, they'll make two submissions: base and extension/component.
 
-![Extension, base, and component driver packages.](images/universal-scenarios.png)
+:::image type="content" source="images/universal-scenarios.png" alt-text="Screenshot of a diagram showing the relationships between extension, base, and component driver packages in both loosely coupled and tightly coupled scenarios.":::
 
 The component INF will match on the component hardware ID, whereas the base and extensions will match on the board's hardware ID.
 
 ## See also
 
-[Get started developing Windows drivers](get-started-developing-windows-drivers.md)
-
-[Using an Extension INF File](../install/using-an-extension-inf-file.md)
-
-[osrfx2_DCHU_base.inx](https://github.com/microsoft/Windows-driver-samples/blob/main/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/osrfx2_DCHU_base.inx)
-
-["loosely coupled" osrfx2_DCHU_component.inx](https://github.com/microsoft/Windows-driver-samples/blob/main/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_component/osrfx2_DCHU_component.inx)
-
-["loosely coupled" osrfx2_DCHU_extension.inx](https://github.com/microsoft/Windows-driver-samples/blob/main/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx)
-
-["tightly coupled" osrfx2_DCHU_component.inx](https://github.com/microsoft/Windows-driver-samples/blob/main/general/DCHU/osrfx2_DCHU_extension_tight/osrfx2_DCHU_component/osrfx2_DCHU_component.inx)
-
-["tightly coupled" osrfx2_DCHU_extension.inx](https://github.com/microsoft/Windows-driver-samples/blob/main/general/DCHU/osrfx2_DCHU_extension_tight/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx)
+- [Get started developing Windows drivers](get-started-developing-windows-drivers.md)
+- [Using an Extension INF File](../install/using-an-extension-inf-file.md)
+- [osrfx2_DCHU_base.inx](https://github.com/microsoft/Windows-driver-samples/blob/main/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/osrfx2_DCHU_base.inx)
+- ["loosely coupled" osrfx2_DCHU_component.inx](https://github.com/microsoft/Windows-driver-samples/blob/main/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_component/osrfx2_DCHU_component.inx)
+- ["loosely coupled" osrfx2_DCHU_extension.inx](https://github.com/microsoft/Windows-driver-samples/blob/main/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx)
+- ["tightly coupled" osrfx2_DCHU_component.inx](https://github.com/microsoft/Windows-driver-samples/blob/main/general/DCHU/osrfx2_DCHU_extension_tight/osrfx2_DCHU_component/osrfx2_DCHU_component.inx)
+- ["tightly coupled" osrfx2_DCHU_extension.inx](https://github.com/microsoft/Windows-driver-samples/blob/main/general/DCHU/osrfx2_DCHU_extension_tight/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx)
