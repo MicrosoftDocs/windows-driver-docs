@@ -17,6 +17,7 @@ There are two types of support issues in Windows developer support, dashboard is
 
     :::image type="content" source="images/hardware-submission-support/dashboard-submit-incident.png" alt-text="Screenshot showing the Ask Copilot link for dashboard support.":::
 
+1. Sign in with your Partner Center account.
 1. Fill in all the required information.
 1. Select **Save**.
 1. Select **Partner Center** from the **Select the product** family dropbox.
