@@ -106,3 +106,7 @@ Microsoft recommends that mobile operators:
 - Include appropriate error handling for unsupported devices
 - Provide clear instructions to users when manual identifier entry is required
 - Test the implementation across different device types and configurations
+
+## Related content
+
+[Use a QR code or URI link to download an eSIM profile](activate-by-link.md)
