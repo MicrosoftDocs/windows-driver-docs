@@ -508,7 +508,7 @@ Portable PDB support has been added. The Portable PDB (Program Database) format 
 * Running 'dx' without any parameters will now show the root namespace for easier browsability.
 * You can now modify the default symbol and source cache location via the settings menu.
 * Improved support for recording AVX-512 (recording of AVX-512 will cause a larger than normal slow-down).
-* We've enabled [offline licensing](/windows/uwp/publish/organizational-licensing#allowing-disconnected-offline-licensing).
+* We've enabled [offline licensing](/windows/apps/publish/distribute-lob-apps-to-enterprises#allowing-disconnected-offline-licensing).
 
 ## 1.0.1905.12001
 
