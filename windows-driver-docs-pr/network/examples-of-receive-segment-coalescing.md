@@ -113,7 +113,7 @@ None of these segments generates an exception.
 
 -   X’SEQ &gt; X.SEQ
 
--   X’.ACK == X.ACK
+-   X’.ACK &gt; X.ACK
 
 None of these segments generates an exception.
 ### Result
