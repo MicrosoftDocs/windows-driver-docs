@@ -7,7 +7,7 @@ ms.topic: best-practice
 
 # Request device identifiers for eSIM provisioning
 
-Mobile operators may require device identifiers to provision an eSIM profile for users. On Windows devices, these identifiers can be accessed through the Cellular Identifiers dialog. The Cellular Device Identifiers feature enables mobile operators to request device-specific information—such as IMEI, EID, MAKE, and MODEL—via a user-consented dialog in Windows Settings.
+Mobile operators may require device identifiers to provision an eSIM profile for users. On Windows devices, these identifiers can be accessed through the Cellular Identifiers dialog. The Cellular Device Identifiers feature enables mobile operators to request device-specific information — such as IMEI (International Mobile Equipment Identity), EID (Embedded Identity Document), MAKE, and MODEL — via a user-consented dialog in Windows Settings.
 
 ## What is the *ms-settings:cellular-id* protocol?
 
@@ -29,7 +29,7 @@ Device identifiers can be requested in two ways:
 
 ### Method 1: Request identifiers via a callback URL
 
-Mobile operators can provide a callback URL that includes placeholders for the required device identifiers. This enables automatic population of the identifiers when the user consents to share them. The callback URL with the populated identifiers will then be launched in the default web browser.
+Mobile operators can provide a callback URL that includes placeholders for the required device identifiers. This callback URL enables automatic population of the identifiers when the user consents to share them. The callback URL with the populated identifiers is launched in the default web browser.
 
 The callback URL must be a valid URL utilizing the HTTPS protocol. It should be appended to the Windows protocol in the following format:
 
@@ -64,7 +64,7 @@ https://contoso.com/?eid=12345678&make=VGVzdE1ha2U=&model=VGVzdE1vZGVs&iccid=012
 
 ### Method 2: Display identifiers directly to the user
 
-Mobile operators can invoke the Windows protocol `ms-settings:cellular-id` from their web portal without a callback URL. This opens a dialog in Windows Settings that displays key device identifiers, allowing users to manually copy and paste them into the operator's portal.
+Mobile operators can invoke the Windows protocol `ms-settings:cellular-id` from their web portal without a callback URL. This protocol opens a dialog in Windows Settings that displays key device identifiers, allowing users to manually copy and paste them into the operator's portal.
 
 Example JavaScript code:
 
@@ -90,14 +90,14 @@ The specific identifiers shown depend on the device configuration and may includ
 
 The following error dialogs may appear:
 
-### Selected SIM slot does not support eSIM
+### Selected SIM slot doesn't support eSIM
 This dialog appears when the callback URL requests the EID but the device is currently using a physical SIM slot or doesn't support eSIM.
 
 ### Unexpected issue dialog
 This dialog may appear if there's an issue with the callback URL:
-- The callback URL does not begin with the HTTPS protocol
+- The callback URL doesn't begin with the HTTPS protocol
 - The callback URL is invalid  
-- The callback URL does not include at least one supported identifier
+- The callback URL doesn't include at least one supported identifier
 
 ## Best practices
 
