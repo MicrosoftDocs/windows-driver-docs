@@ -161,7 +161,7 @@ The redistributable component `dbgeng.dll` now has improved stack walking suppor
 
 ### Breaking change
 
-* Now dbghelp.dll dynamically links to msdia140.dll. This change should affect only tools that redistribute dbghelp.dll without also including msdia140.dll. Note that msdia140.dll is included in NuGet packages that include dbghelp.dll.
+Now dbghelp.dll dynamically links to msdia140.dll. This change should affect only tools that redistribute dbghelp.dll without also including msdia140.dll. Note that msdia140.dll is included in NuGet packages that include dbghelp.dll.
 
 ### Bug fixes
 
@@ -239,7 +239,7 @@ To aid debugging issues with downloading sources based on [embedded SourceLink](
 
 We made some small improvements to windows like the **Modules** window and the **Stack** window:
 
-* By selecting the header column, you can sort grid views.
+* The header column is used to sort grid views.
 * More right-click actions are available.
 * The **Stack** window shows frames as inlined when appropriate.
 
@@ -386,13 +386,13 @@ When you debug a 32-bit WOW process from a 64-bit context, you can now access bo
 - `dx @$curthread.NativeEnvironment`
 - `dx @$curthread.NativeStack`
 
-#### JavaScript debugging improvements
+### JavaScript debugging improvements
 
-JavaScript loaded in the UI can now be directly debugged within the console by using the `.scriptdebug` command. For more information, see [JavaScript debugger scripting - JavaScript debugging](../debugger/javascript-debugger-scripting.md#javascript-debugging).
+JavaScript loaded in the UI now uses the `.scriptdebug` command for direct debugging within the console. For more information, see [JavaScript debugger scripting - JavaScript debugging](../debugger/javascript-debugger-scripting.md#javascript-debugging).
 
 ### Accessibility improvements
 
-With WinDbg Preview, we're committed to building a debugger that's inclusive for engineers with disabilities. We made the following accessibility improvements:
+With WinDbg Preview, we committed to building a debugger that's inclusive for engineers with disabilities. We made the following accessibility improvements:
 
 - Made command window links clickable via the keyboard (select Shift+Enter).
 - Improved keyboard navigation of the main menu.
@@ -468,7 +468,7 @@ Portable PDB support was added. The PDB format describes an encoding of debuggin
 
 ## 1.0.1912.11001
 
-- **TTD Timelines**: A new window displays a visual representation of important events in your trace: exceptions, breakpoints, function calls, and memory accesses. Timelines automatically open and display exceptions (if present) and breakpoints. For more information, see [WinDbg Preview - Timeline](windbg-timeline-preview.md).
+- **TTD timelines**: A new window displays a visual representation of important events in your trace: exceptions, breakpoints, function calls, and memory accesses. Timelines automatically open and display exceptions (if present) and breakpoints. For more information, see [WinDbg Preview - Timeline](windbg-timeline-preview.md).
 - **Switched to default window chrome**: The custom window chrome that we used caused some scaling and resizing issues, so we removed it for now.
 - **File menu improved keyboard navigation**: The file menu is easier to navigate with only a keyboard.
 
@@ -484,83 +484,73 @@ Portable PDB support was added. The PDB format describes an encoding of debuggin
 
 - **Improvements to TTD calls objects**: [Calls queries](./time-travel-debugging-calls-objects.md) now include parameter names, types, and values. When you query across traces for function calls, you can get fully typed parameters and their values. This capability makes it easy to filter down results by parameters.
 - **Support for Open Enclave**: WinDbg Preview can now debug Open Enclave applications. For more information, see [Open Enclave debugging](../debugger/open-enclave-debugging.md)).
-- **ELF core dumps**: As part of supporting Open Enclave, WinDbg can open ELF core dumps and binaries and also DWARF symbols (DWARF 5 isn't currently supported) from both Enclaves and Linux applications. When you open a core dump from a non-Windows application, basic windows and commands should all work properly, but most extensions and Windows-specific commands won't work. ELF and DWARF files are downloaded from symbol servers following the [key conventions defined here](https://github.com/dotnet/symstore/blob/master/docs/specs/SSQP_Key_Conventions.md). Enclaves are the only supported scenario, but we're open to feedback on opening other Linux core dumps.
+- **ELF core dumps**: As part of supporting Open Enclave, WinDbg can open ELF core dumps and binaries and also DWARF symbols (DWARF 5 isn't currently supported) from both enclaves and Linux applications. When you open a core dump from a non-Windows application, basic windows and commands should all work properly, but most extensions and Windows-specific commands won't work. ELF and DWARF files are downloaded from symbol servers following the key conventions that are defined in [SSQP key conventions](https://github.com/dotnet/symstore/blob/master/docs/specs/SSQP_Key_Conventions.md). Enclaves are the only supported scenario, but we welcome feedback on opening other Linux core dumps.
 - **TTD file format change**: A major update to the file format for TTD traces breaks forward compatibility. Previous versions of WinDbg Preview won't be able to open traces recorded with this version and future versions of WinDbg Preview. This version and future versions will be able to open both new and old traces.
 
 ### Other changes
 
 * TTD now uses the 64-bit engine for indexing and the appropriate debugger engine bitness for replays to minimize potential memory issues when indexing and SOS issues when replaying.
 * Running `dx` without any parameters now shows the root namespace for easier browsability.
-* You can now modify the default symbol and source cache location via the **Settings** menu.
-* Improved support for recording AVX-512 (recording of AVX-512 causes a larger-than-normal slow down).
-* We enabled [offline licensing](/windows/uwp/publish/organizational-licensing#allowing-disconnected-offline-licensing).
+* The **Settings** menu now has options to modify the default symbol and source cache location.
+* Support for recording AVX-512 (recording of AVX-512 causes a larger-than-normal slow down) is improved.
+* [Offline licensing](/windows/apps/publish/distribute-lob-apps-to-enterprises#allowing-disconnected-offline-licensing) is enabled.
 
 ## 1.0.1905.12001
 
-- **Improvements to SymSetDiaSession error mitigation**: The fix to mitigate the error caused by applications injecting DbgHelp into our process wasn't working in some scenarios. We made improvements to it and will continue to monitor feedback on this error.
-
+- **Improvements to SymSetDiaSession error mitigation**: The fix to mitigate the error caused by applications injecting DbgHelp into our process wasn't working in some scenarios. We made improvements to it and continue to monitor feedback on this error.
 - **Accent color customization**: A lot of scenarios need several instances of WinDbg open. Moving back and forth between them can be confusing and take some time to figure out which one is the "right" one. We added the ability to change the blue accent color to help visually distinguish sessions and make it easier to swap between them.
 
    Select the **View** ribbon and select an option for **Accent color** in the last section. When future sessions are launched from recent targets, the accent color persists as part of the target's workspace.
 
 - **Source tokenization improvements**: The source window now has basic support for tokenizing Rust source files and C++ SEH __try/__except/__finally/__leave.
-
-- **Coroutine improvements**: Improved support for coroutine local variables and certain optimized variables.
-
-- **Default symbol and source cache setting**: Added an option to the settings menu under **Debugging settings** to change the cache location for symbols.
-
-- **Note**: There's a known issue that making this blank causes source loading to fail. We'll add validation to prevent this issue from happening in a future release.
-
-- **-pv fixes**: Fixed a bug that may have prevented -pv (noninvasive attach) from working in some circumstances.
+- **Coroutine improvements**: We improved support for coroutine local variables and certain optimized variables.
+- **Default symbol and source cache setting**: We added an option to the **Settings** menu under **Debugging settings** to change the cache location for symbols. There's a known issue that making this setting blank causes source loading to fail. We plan to add validation to prevent this issue from happening in a future release.
+- **-pv fixes**: We fixed a bug that might have prevented `-pv` (noninvasive attach) from working in some circumstances.
 
 ## 1.0.1904.18001
 
-- **Fix for SymSetDiaSession error**: We had reports for a while of an error that prevents WinDbg Preview from being launched in some situations. There are a few external applications that attempt to inject a version of DbgHelp into our process before we load it. Some of them are using a version of DbgHelp with missing functionality, which causes this error when we attempt to use those features. We added a fix for this and will be tracking if there are still scenarios in which it occurs.
-
-- **Font control**: We added settings for controlling font and font size. There are two different settings, one for text windows (mono-spaced windows like **Disassembly**, **Source**, and **Command**) and one for tool windows (like **Locals** and **Stack**). A few areas aren't affected by these options. We'll update them in the future.
-
+- **Fix for SymSetDiaSession error**: We had reports of an error that prevents WinDbg Preview from opening in some situations. A few external applications attempt to inject a version of DbgHelp into our process before we load it. Some of them are using a version of DbgHelp with missing functionality, which causes this error when we attempt to use those features. We added a fix for this issue and will be tracking it to determine if there are scenarios in which it still occurs.
+- **Font control**: We added settings for controlling font and font size. There are two different settings: one is for text windows (mono-spaced windows like **Disassembly**, **Source**, and **Command**), and one is for tool windows (like **Locals** and **Stack**). A few areas aren't affected by these options. We plan to update them in the future.
 - **Highlighting improvements**: Persistent highlighting of text in the **Command** window now also highlights text in the source and notes windows.
+- **Source loading improvements**: We changed how loading source files works. Previously, when you opened a source file, engine operations like running more commands weren't possible or were unpredictable. We changed where the loading occurs to enable better parallelism and more reliable cancellation of source opening operations.
 
-- **Source loading improvements**: We changed how loading source files works. Previously when you opened a source file, engine operations like running more commands weren't possible or were unpredictable. We changed where the loading occurs to enable better parallelism and more reliable cancellation of source opening operations.
-
-Other changes and bug fixes:
+### Other changes and bug fixes
 
 * Added **Go to disassembly** to the context menu of the source window.
-* Added a checkbox to **Follow current instruction** in the **Disassembly** window.
+* Added a **Follow current instruction** checkbox on the **Disassembly** window.
 * Fixed a bug that caused the **Command** window to perform slowly when outputting large amounts of text.
 * Changed Page up and Page down keys to perform similarly to Visual Studio.
-* When an ASM file is opened in the source window, it now has basic comment, string, and directive highlighting.
+* Made changes so that when an ASM file is opened in the source window, it now has basic comment, string, and directive highlighting.
 
 ## 1.0.1812.12001
 
 This version includes the following updates:
 
-- **Debugger data model C++ header**: There's a new C++ header, `DbgModel.h`, included as part of the Windows SDK for extending the debugger data model via C++. For more information, see [Debugger Data Model C++ overview](../debugger/data-model-cpp-overview.md). This release includes a new extension that adds some more "API-style" features to the debugger data model that can be accessed through the `dx` command, JavaScript, and the new `DbgModel.h` header. This extension extends the data model to include knowledge about assembly and code execution through the [Debugger.Utility.Code](../debugger/dbgmodel-namespace-code.md) namespace and the local file system through the [Debugger.Utility.FileSystem namespace](../debugger/dbgmodel-namespace-file-system.md).
+- **Debugger data model C++ header**: There's a new C++ header, `DbgModel.h`, included as part of the Windows SDK for extending the debugger data model via C++. For more information, see [Debugger data model C++ overview](../debugger/data-model-cpp-overview.md). This release includes a new extension that adds more API-style features to the debugger data model that can be accessed through the `dx` command, JavaScript, and the new `DbgModel.h` header. This extension extends the data model to include knowledge about assembly and code execution through the [Debugger.Utility.Code](../debugger/dbgmodel-namespace-code.md) namespace and the local file system through the [Debugger.Utility.FileSystem namespace](../debugger/dbgmodel-namespace-file-system.md).
+- **Synthetic types extension**: With this new API extension, we have a new sample up on our [GitHub repo](https://github.com/Microsoft/WinDbg-Samples/tree/master/SyntheticTypes). This JavaScript extension reads basic C header files and defines synthetic type information for the structures and unions defined in the header. Through the `dx` command, memory can then be viewed structured as if you had a PDB with type information for those types.
 
-- **Synthetic types extension**: With this new API extension, we have a new sample up on our GitHub repo at https://github.com/Microsoft/WinDbg-Samples/tree/master/SyntheticTypes. This JavaScript extension reads basic C header files and defines synthetic type information for the structures and unions defined in the header. Through the `dx` command, memory can then be viewed structured as if you had a PDB with type information for those types.
-
-Other changes and bug fixes:
+### Other changes and bug fixes
 
 - WinDbg Preview now more intelligently handles bringing source windows or the **Disassembly** window to the foreground when stepping.
-- WinDbg Preview window title was rearranged to have more important information at the start when kernel debugging.
+- The WinDbg Preview window title was rearranged to have more important information at the start when kernel debugging.
 - The alternating background contrast in the **Command** window should be slightly more noticeable.
 
 ## 1.0.1810.2001
 
 This version includes these updates:
 
-- **New Settings** dialog that's accessed from the **File** menu or the **Home** ribbon.
-- Events and exceptions settings dialog. This menu changes how the debugger handles events and exceptions, the equivalent of the `sx` commands or WinDbg's event filters dialog. Select **Settings** on the **Home** ribbon, and then select **Events and Exceptions** on the left menu to manage events and exceptions.
-- Improved TTD indexer with better performance. This increases the performance of indexing TTD trace files, making the indexing process much faster (between 2x-10x) while making index files much smaller (~50% smaller). The perf improvements are most noticeable for traces over 4 GB in size, or when you use a machine with many CPU cores (8+). The new indexer makes it more feasible to debug very large traces (50 GB+).
-- New `debugArch` launch flag for specifying architecture. WinDbg Preview attempts to launch the debugger engine with the correct bitness to the target to better support debugging managed code. There are circumstances where it can't determine the right bitness or you might want to override what it decides. Use -debugArch x86|amd64 to control the architecture of the debugger engine.
+- Added a new **Settings** dialog that's accessed from the **File** menu or the **Home** ribbon.
+- Added an events and exceptions settings dialog. This menu changes how the debugger handles events and exceptions, the equivalent of the `sx` commands or WinDbg's event filters dialog. On the **Home** ribbon, select **Settings**. Then on the left menu, select **Events and Exceptions** to manage events and exceptions.
+- Improved the TTD indexer with better performance. This improvement increases the performance of indexing TTD trace files, which makes the indexing process much faster (between 2x and 10x) while making index files much smaller (~50% smaller). The performance improvements are most noticeable for traces over 4 GB in size, or when you use a machine with many CPU cores (8+). The new indexer makes it more feasible to debug very large traces (50 GB+).
+- Added a new `debugArch` launch flag for specifying architecture. WinDbg Preview attempts to launch the debugger engine with the correct bitness to the target to better support debugging managed code. There are circumstances where it can't determine the right bitness, or you might want to override what it decides. Use `-debugArch` x86|amd64 to control the architecture of the debugger engine.
 
-Other changes and bug fixes:
+### Other changes and bug fixes
 
 -  Fixed a bug that caused black bars to appear on a full screen debugger with a floating window open.
 -  Fixed a bug that caused symbol options to be cleared unintentionally.
--  Command history is now preserved when launching from recent targets.
--  In the data model window, you can now edit values.
--  Un-indexed TTD traces are now more clear that they're un-indexed.
+-  Preserved command history now when launching from recent targets.
+-  Supported editing in the data model window where you can now edit values.
+-  Made TTD traces more clear because they're un-indexed.
 -  Improved the performance of the **Locals** window.
 -  Added a ribbon button to save the **Command** window logs to a file.
 -  Added `. SelectMany(\<projection\>)` to the default set of LINQ methods.
@@ -569,22 +559,22 @@ Other changes and bug fixes:
 
 This version includes the following updates:
 
-- **Automatic saving and loading of breakpoints**: This step is a first step to replace workspaces. We're starting down that route by enabling the saving and loading of breakpoints. Launching something that you debugged previously from the **Recents** tab on the **File** menu now loads the breakpoints from that session. The plan is to expand this functionality to preserve more information across sessions. Hardware breakpoints (`ba`) and other various properties on breakpoints like thread and process-specific contexts as well as conditions that aren't currently being saved.
+- **Automatic saving and loading of breakpoints**: This step is the first step to replace workspaces. You can now save and load breakpoints. Launching something that you debugged previously from the **Recents** tab on the **File** menu now loads the breakpoints from that session. The plan is to expand this functionality to preserve more information across sessions. Hardware breakpoints (`ba`) and other various properties on breakpoints like thread and process-specific contexts and conditions aren't currently being saved.
 
-Minor changes and bug fixes:
+### Minor changes and bug fixes
 
-- Added command-line options `-x`, `-xe`, `-xd`, `-xn`, and `-xi` for controlling the handling of exceptions and events. These command-line options behave just like their command counterparts.
+- Added command-line options `-x`, `-xe`, `-xd`, `-xn`, and `-xi` for controlling the handling of exceptions and events. These command-line options behave like their command counterparts.
 - Added support in the notes window for bold, underline, and italic formatting.
 - Fixed some zoom and scrolling issues.
-- Selecting text in the **Command**, **Memory**, **Source**, or **Disassembly** windows now shows a light highlight over other instances of the selected text.
+- Added support so that selecting text in the **Command**, **Memory**, **Source**, or **Disassembly** windows now highlights other instances of the selected text.
 - Fixed a bug where interrupting symbol loading caused symbol loading to fail for the rest of the session.
-- NatVis now reloads properly on restarting a session.
+- Fixed a bug so that NatVis now reloads properly when a session restarts.
 
 ## 1.0.1805.17002
 
 This version includes the following updates:
 
-- **New **Disassembly** window**: The **Disassembly** window now includes:
+- **New Disassembly window**: The window now includes:
 
    - Scrolling up or down now continuously loads more disassembly whenever possible.
    - Syntax highlighting for numbers, code addresses, and opcodes.
@@ -594,52 +584,52 @@ This version includes the following updates:
 
 - **Faster Source window**: The **Source** window was updated to be faster and more resource efficient.
 
-Minor changes and bug fixes:
+### Minor changes and bug fixes
 
 - Fixed issues around symbol caching.
 - Fixed some cases where toggle initial break wasn't usable when the target wasn't broken in.
-- If you select a tab on the **Command** window with nothing available, the cursor now stays in the input field.
-- WinDbg Preview now autodetects bitness when opening CAB files.
+- Added support so that if you select a tab on the **Command** window with nothing available, the cursor now stays in the input field.
+- Added support so that WinDbg Preview now autodetects bitness when it opens CAB files.
 
 ## 1.0.1804.18003
 
 This version includes the following updates:
 
-- **Symbol status and cancellation improvements**: There are times where the debugger displays **BUSY** loading symbols, and it's difficult to determine what it's doing and why without `!sym` noisy enabled. We updated WinDbg Preview to have some better communication around what it's doing when loading symbols to help troubleshoot any issues.
+- **Symbol status and cancellation improvements**: There are times where the debugger displays **BUSY** loading symbols, and it's difficult to determine what it's doing and why without having `!sym` noisy enabled. We updated WinDbg Preview to have some better communication around what it's doing when loading symbols to help troubleshoot any issues.
 
-   In addition to easily seeing exactly what's happening, we made some changes that make cancelling symbols more reliable and the **Logs** window contains some of the details that are normally output when `!sym` noisy is enabled. If you select **View** > **Logs**, you get the full noisy symbol loading output without having to turn it on and attempt to reload the symbols.
+   In addition to easily seeing what's happening, we made some changes that make canceling symbols more reliable. The **Logs** window contains some of the details that are normally output when `!sym` noisy is enabled. If you select **View** > **Logs**, you get the full noisy symbol loading output without having to turn it on and attempt to reload the symbols.
 
-- **Experimental notes window**: WinDbg Preview now has a window for taking notes. Select **View** > **Notes** to open it. If you copy/paste into it, DML links are preserved and still work as if it was the **Command** window. You can also save and load notes files from the **Notes** ribbon when the window is open.
+- **Experimental Notes window**: WinDbg Preview now has a window for taking notes. Select **View** > **Notes** to open it. If you copy/paste into it, DML links are preserved and still work as if it was the **Command** window. You can also save and load notes files from the **Notes** ribbon when the window is open.
 
-- **Experimental faster Source window**: To help improve the performance of WinDbg Preview, an experimental new source window is more efficient. A few gaps exist around context menus and syntax highlighting, but we want to give everyone the option of trying it out before it's finished to give us early feedback. Run `$UseFastSourceWindow` to use it. If you want to go back to the old one, run `$UseMonacoSourceWindow`. The setting preserves across sessions. You need to close and reopen source windows to get the new version.
+- **Experimental faster Source window**: To help improve the performance of WinDbg Preview, an experimental new **Source** window is more efficient. A few gaps exist around context menus and syntax highlighting, but we want to give everyone the option of trying it out before it's finished to give us early feedback. Run `$UseFastSourceWindow` to use it. If you want to go back to the old one, run `$UseMonacoSourceWindow`. The setting preserves across sessions. You need to close and reopen source windows to get the new version.
 
 - **JSProvider API version 1.2**: For JavaScript extensions that declare support for API version 1.2:
 
-   - Any object with a `.compareTo` method that exits the script has a custom comparator on it (comparison operators will work in the DX evaluator and elsewhere: for example, `IModelObject::Compare`)
-   - Any object with a `.equals` method that exits the script has a custom equality operator on it (== and != works in the DX evaluator and elsewhere: for example: `IModelObject::IsEqualTo`).
-   - Native or data model objects that enter the script have `.compareTo` and `.equals` on them, which allow access to any custom comparator or custom equality implementations.
+   - Any object with a `.compareTo` method that exits the script has a custom comparator on it. (Comparison operators work in the DX evaluator and elsewhere. An example is `IModelObject::Compare`.)
+   - Any object with a `.equals` method that exits the script has a custom equality operator on it (The `==` and `!=` operators work in the DX evaluator and elsewhere. An example is `IModelObject::IsEqualTo`.).
+   - Native or data model objects that enter the script have `.compareTo` and `.equals` on them, which allows access to any custom comparator or custom equality implementations.
  
-Minor changes and bug fixes:
+### Minor changes and bug fixes
 
-- `.server` now lists fully qualified domain name for easier use when there's domain issues around short names.
-- Ctrl+G now works in the source window.
-- Added address bar to the **Disassembly** window.
-- WinDbg Preview now handles `_NT_SYMBOL_PATH` in a more expected way.
-- Added -server command-line option.
-- TTD data model queries can now be displayed progressively, so if you interrupt it, you still see some results. This feature is still experimental and optional. Run `dx @$cursession.TTD.AsyncQueryEnabled = 1` to enable it.
-- The `dps` command now has links to the source files it refers to.
+- Added support so that `.server` now lists a fully qualified domain name for easier use when there are domain issues around short names.
+- Added support so that Ctrl+G now works on the **Source** window.
+- Added an address bar to the **Disassembly** window.
+- Added support so that WinDbg Preview now handles `_NT_SYMBOL_PATH` in a more expected way.
+- Added the `-server` command-line option.
+- Added support so that TTD data model queries are now displayed progressively. If you interrupt it, you still see some results. This feature is experimental and optional. Run `dx @$cursession.TTD.AsyncQueryEnabled = 1` to enable it.
+- Added support so that the `dps` command now has links to the source files to which it refers.
 
 ## 1.1801.19001.0
 
 This version includes the following updates:
 
-- **Text Highlighting**: You can now highlight all instances of selected text directly in the debugger. To use this feature, select some text in the **Command** window and then select **Highlight** on the command ribbon or select Ctrl+Alt+H. Using one of those options on already highlighted text removes the highlighting.
+- **Text Highlighting**: You can now highlight all instances of selected text directly in the debugger. To use this feature, select some text on the **Command** window and then select **Highlight** on the command ribbon. You can also select Ctrl+Alt+H. If you use one of those options on already highlighted text, the highlighting is removed.
 
 If you prefer to use commands, you can use the `$hl` command:
 
 `$hl ["someValueHere"]`: Highlight gives text (or clear highlighting if already highlighted).
 `$hl clearAll`: Clear all highlighted entries.
-`$hl caseSensitive [1|0]`: Set highlight matching to case sensitive or case insensitive (default is case insensitive).
+`$hl caseSensitive [1|0]`: Set highlight matching to case sensitive or case insensitive. (The default is case insensitive.)
 
 This release also includes some minor bug fixes.
 
@@ -649,47 +639,43 @@ This version includes the following updates:
 
 - **TTD memory queries**: You can now query TTD for memory accesses similarly to how you query for calls today. You can now find all the reads, writes, and executions that access a specific range of memory.
 
-   - Read and write example: `dx @$cursession.TTD.Memory(startAddress, endAddress, "rw")`
-   - Unique execution example: `dx @$cursession.TTD.Memory(startAddress, endAddress, "ec")`
+   - **Read and write example**: `dx @$cursession.TTD.Memory(startAddress, endAddress, "rw")`
+   - **Unique execution example**: `dx @$cursession.TTD.Memory(startAddress, endAddress, "ec")`
 
 - **Settings changes**: WinDbg Preview now automatically saves settings between sessions, including your symbol path and source path.
 
 ### JavaScript improvements
 
-- 64-bit numbers and numerics in JavaScript now contain a modulo method which allows a true 64-bit modulo operation.
-- Objects defined in JavaScript can now implement a custom comparable or equatable notion which works in `dx` by using standard C++ operators or in LINQ operations. To utilize this functionality, the script must declare in the `initializeScript` array that it supports a new version of the host API by inserting a record `new host.apiVersionSupport(1, 2)`. After you do that, you can use these functions in any `dx` or Data Model Window LINQ query. If the method implements `.compareTo(other)`, it's comparable (comparison operators work in `dx` and LINQ). If the method returns a negative value, such as `this < other`. If the method returns zero, `this == other`. If the method returns a positive value, `this > other`. If the method implements `.equals(other)`, it's equatable (== works in `dx` and LINQ). The method must return either true or false.
+- 64-bit numbers and numerics in JavaScript now contain a modulo method, which allows a true 64-bit modulo operation.
+- Objects defined in JavaScript can now implement a custom comparable or equatable notion. It works in `dx` by using standard C++ operators or in LINQ operations. To use this functionality, the script must declare in the `initializeScript` array that it supports a new version of the host API by inserting a record `new host.apiVersionSupport(1, 2)`. Afterwards, you can use these functions in any `dx` or Data Model Window LINQ query. If the method implements `.compareTo(other)`, it's comparable (comparison operators work in `dx` and LINQ). If the method returns a negative value, then `this < other`. If the method returns zero, then `this == other`. If the method returns a positive value, then `this > other`. If the method implements `.equals(other)`, it's equatable (`==` works in `dx` and LINQ). The method must return either true or false.
 
-Minor changes and bug fixes:
+### Minor changes and bug fixes
 
 - Fixed a bug where the stack and **Locals** windows weren't working during boot debugging.
 - Updated the output of LM to more accurately report `ProductVersion` and similar fields.
 - Enabled the **Step out back** button during TTD sessions.
 - Added support for `-lsrcpath`.
 - Fixed the headers in the **Locals**, **Watch**, and **Model** windows so that they don't disappear when you scroll down.
-- When you use Alt+Tab to go back to WinDbg Preview, the **Command** window properly preserves the cursor location.
+- Added support so that when you use Alt+Tab to go back to WinDbg Preview, the **Command** window properly preserves the cursor location.
 - Added the Ctrl+Alt+V shortcut for toggling verbose mode.
-- You can now disable autoscrolling of the **Command** window by selecting and holding (or right-clicking) the **Command** window tab and choosing **Turn off auto scrolling**.
-- You can now debug child processes through the launch executable advanced page.
+- Added support so that you can now disable autoscrolling of the **Command** window by selecting and holding (or right-clicking) the **Command** window tab and choosing **Turn off auto scrolling**.
+- Added support so that you can now debug child processes through the launch executable advanced page.
 
 ## 1.0.14.0
 
 This version includes the following updates:
 
-- **Improved process server experience**: A new notification on the **File** menu to show what process server you're connected to and interacting with was added. As part of these changes, when ending a debugging session, the process server connection persists and can be disconnected on the **File** menu.
-
+- **Improved process server experience**: A new notification on the **File** menu shows what process server you're connected to and interacting with. As part of these changes, when a debugging session is ending, the process server connection persists and you can disconnect on the **File** menu.
 - **New preset layout options on the View ribbon**: A new **Layouts** option is available on the **View** ribbon. There are currently three layouts: the default, one focused on disassembly, and one minimal.
-
 - **Time Travel Debugging ribbon**: An enhanced Time Travel ribbon appears when you debug a Time Travel Debugging trace.
-
 - **Metadata from JavaScript scripts**: JavaScript extensions can now return metadata for properties and other constructs. The extension can now provide help strings, indicate the display radix for values, and more. Metadata is provided by placing a metadata descriptor on an object via either the presence of `Symbol.metadataDescriptor` or an explicit call to `host.metadata.defineMetadata`. Function returns, iterated values, and other value contexts can return metadata for their value via `host.metadata.valueWithMetadata`.
+- **JavaScript API updates**: Some potentially source-level breaking changes were made to the APIs within the JavaScript provider (including new projected methods and properties on native objects). Existing extensions won't see any of the potentially breaking changes without indicating that they support a new version of the JsProvider API. Support for the new API version is indicated by placing a `host.apiVersionSupport` record in the array returned by `initializeScript` with a claim of supporting version 1.1.
 
-- **JavaScript API updates**: Some potentially source-level breaking changes were made to the APIs within the JavaScript provider (including new projected methods and properties on native objects). Existing extensions won't see any of the potentially breaking changes without indicating that they support a new version of the JsProvider API. Support for the new API version is indicated by placing a `host.apiVersionSupport` record in the array returned by `initializeScript` with a claim of supporting version 1.1. maybe? .. with a value that indicates support for version 1.1.
+### Changes in API version 1.1
 
-Changes in API version 1.1 include:
-
-- `host.getModuleSymbol` and `host.getModuleType` return null if they can't find the symbol instead of throwing an exception.
+- The `host.getModuleSymbol` and `host.getModuleType` functions return null if they can't find the symbol instead of throwing an exception.
 - All native objects have the address property on them in addition to `.targetLocation`. If the object doesn't have an address, an exception is thrown when accessing the property.
-- All native objects have new `.getObjectValue` and `.setObjectValue` methods on them to access properties on the object which might conflict with names that JavaScript places on the object (for example, `address`) .
+- All native objects have new `.getObjectValue` and `.setObjectValue` methods on them to access properties on the object, which might conflict with names that JavaScript places on the object (for example, `address`).
 
 ### More JavaScript changes
 
@@ -700,18 +686,18 @@ Changes in API version 1.1 include:
 - The breakpoint command in the script debugger can now break on function names in addition to line/column positions.
 - Type objects in JavaScript extensions have access to their containing module through the `.containingModule` property.
 
-Minor changes and bug fixes:
+### Minor changes and bug fixes
 
 - Fixed formatting of conditional ribbon tabs to be less confusing.
 - Reworked DML to be stricter in parsing to improve performance.
 - Made various fixes with the performance and behavior of Ctrl+F.
-- Added a warning when running un-elevated prior to trying to use TTD.
+- Added a warning when running unelevated prior to trying to use TTD.
 - Added the option to override automatic target bitness detection.
 - Disabled various **File** menu and ribbon options when they can't be used (like **Go** when in a dump file).
 
-Known issues:
+### Known issues
 
-- SOS doesn't work on x86 traces.
+SOS doesn't work on x86 traces.
 
 ## 1.0.13.0
 
