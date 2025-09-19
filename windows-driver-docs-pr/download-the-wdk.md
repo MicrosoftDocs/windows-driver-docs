@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 07/01/2025
+ms.date: 10/01/2025
 ms.topic: how-to
 ---
 
@@ -34,11 +34,9 @@ Beginning with WDK version 10.0.26100.1, the WDK supports the development, testi
 
 The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2022 System Requirements](/visualstudio/releases/2022/system-requirements).
 
-The following editions of Visual Studio 2022 support driver development for this release:
+Driver deveploment for this release is supported in Visual Studio 2022 Community, Professional, or Enterprise edition.
 
-- [Download Visual Studio Community 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=17)
-- [Download Visual Studio Professional 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=17)
-- [Download Visual Studio Enterprise 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=17)
+[Download Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
 
 When you install Visual Studio 2022, select the **Desktop development with C++** workload. Then, under Individual Components, add:
 
@@ -68,7 +66,7 @@ The provided links for the SDK and the WDK have matching build numbers, which is
 
 ## ![download icon for WDK](images/download-install.png) Step 3: Install the WDK
 
-- [Download the latest WDK](https://go.microsoft.com/fwlink/?linkid=2324617)
+- [Download the latest WDK]([TBD])
 
 Starting with version 17.11.0, the WDK VSIX is included as an individual component in Visual Studio. Before installing the WDK, the installer checks if a compatible version of the VSIX is already installed. If the installer doesn't find the WDK VSIX, it prompts you to install it. To install the WDK VSIX, launch the Visual Studio Installer, select **Modify**, go to the **Individual Components** tab, add **Windows Driver Kit**, and then select **Modify**.
 

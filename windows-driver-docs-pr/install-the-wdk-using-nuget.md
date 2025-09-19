@@ -8,7 +8,7 @@ keywords:
 - NuGet
 - install
 - download
-ms.date: 07/01/2025
+ms.date: 10/01/2025
 ms.topic: install-set-up-deploy
 ---
 
@@ -61,6 +61,11 @@ When you install Visual Studio 2022, select the **Desktop development with C++**
 - C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
 - C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)
 - Windows Driver Kit
+
+> [!TIP]
+> Use the Search box to look for "64 latest spectre" (in English installations) or "64 latest" (in non-English installations) to quickly see these components.
+
+:::image type="content" source="images/installing-VS-components-64-latest-spectre.png" alt-text="Image showing the six components listed with checkboxes set.":::
 
 ## How to Install WDK NuGet
 
