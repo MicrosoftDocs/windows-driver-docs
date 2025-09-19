@@ -9,6 +9,9 @@ ms.date: 04/02/2025
 # CLFS logfile authentication
 
 CLFS logfile authentication is a security mitigation which improves the safety of file parsing by ensuring the CLFS driver is the author and writer of logfiles. The logfile authentication is accomplished by recording hash-based message authentication codes (HMAC) in a reserved section at the end of each logfile. If a logfile is created or modified by anything other than the CLFS API (for example, CLFS driver), then the logfile is deemed unsafe to parse and CLFS produces an error to the caller (`ERROR_LOG_METADATA_CORRUPT` in user mode, `STATUS_LOG_METADATA_CORRUPT` in kernel mode).
+CLFS authentication checking is enabled by default on the following versions:
+
+* Windows 11, version 25H2
 
 ## User impact
 
