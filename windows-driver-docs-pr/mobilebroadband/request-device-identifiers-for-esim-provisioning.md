@@ -66,7 +66,7 @@ https://contoso.com/?eid=12345678&make=VGVzdE1ha2U=&model=VGVzdE1vZGVs&iccid=012
 
 Mobile operators can invoke the Windows protocol `ms-settings:cellular-id` from their web portal without a callback URL. This protocol opens a dialog in Windows Settings that displays key device identifiers and allows users to manually copy and paste them into the operator's portal.
 
-:::image type="content" source="images/identifiers.png" alt-text="Cellular Device Identifiers dialog showing information such as IMEI, EID, ICCID, Make, and Model":::
+:::image type="content" source="images/mobile-identifier.png" alt-text="Cellular Device Identifiers dialog showing information such as IMEI, EID, ICCID, Make, and Model":::
 
 Example JavaScript code:
 
@@ -107,7 +107,7 @@ This dialog might appear if there's an issue with the callback URL:
 - The callback URL is invalid  
 - The callback URL doesn't include at least one supported identifier
 
-:::image type="content" source=/images/mobile-error-unexpected.png" alt-text="Error dialog: the URL is not using HTTPS, is invalid, or does not include at least one supported identifier.":::
+:::image type="content" source="/images/mobile-error-unexpected.png" alt-text="Error dialog: the URL is not using HTTPS, is invalid, or does not include at least one supported identifier.":::
 
 ## Best practices
 
