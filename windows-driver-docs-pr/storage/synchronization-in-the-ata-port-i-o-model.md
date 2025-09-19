@@ -5,6 +5,7 @@ keywords:
 - ATA Port drivers WDK , synchronization
 - synchronization WDK ATA Port driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Synchronization in the ATA Port I/O Model

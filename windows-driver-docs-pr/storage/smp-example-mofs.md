@@ -2,6 +2,7 @@
 title: SMP Example MOFs (Windows Drivers)
 description: Learn more about SMP Example MOFs.
 ms.date: 10/14/2022
+ms.topic: reference
 ---
 
 # SMP Example MOFs

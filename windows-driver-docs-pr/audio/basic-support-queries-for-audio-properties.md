@@ -9,6 +9,7 @@ keywords:
 - valid ranges WDK audio
 - range values WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Basic Support Queries for Audio Properties

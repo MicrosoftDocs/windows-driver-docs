@@ -2,6 +2,7 @@
 title: SetTunnelModeOuterAddress
 description: SetTunnelModeOuterAddress
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # SetTunnelModeOuterAddress

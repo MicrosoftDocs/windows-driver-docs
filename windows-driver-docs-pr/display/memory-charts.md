@@ -2,6 +2,7 @@
 title: Memory Charts
 description: The Memory Charts show local and system memory usage over time.
 ms.date: 05/10/2022
+ms.topic: overview
 ---
 
 # Memory Charts

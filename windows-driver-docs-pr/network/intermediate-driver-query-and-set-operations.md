@@ -10,6 +10,7 @@ keywords:
 - set operations WDK NDIS intermediate
 - OIDs WDK networking , intermediate driver queries and sets
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Intermediate Driver Query and Set Operations

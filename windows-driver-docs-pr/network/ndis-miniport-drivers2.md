@@ -2,6 +2,7 @@
 title: Miniport drivers
 description: Miniport drivers manage a network interface card (NIC) and interface with higher-level drivers. Learn about connectionless and connection-oriented miniport drivers, and the relationship between miniport drivers and NDIS.
 ms.date: 09/27/2024
+ms.topic: concept-article
 ---
 
 # Miniport drivers

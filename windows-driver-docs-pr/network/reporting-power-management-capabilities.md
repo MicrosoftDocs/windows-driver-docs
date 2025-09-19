@@ -1,7 +1,7 @@
 ---
 title: Reporting Power Management Capabilities
 description: Reporting Power Management Capabilities
-ms.date: 04/20/2017
+ms.date: 07/23/2025
 ms.topic: concept-article
 ---
 
@@ -19,7 +19,7 @@ If an NDIS 6.1 or earlier miniport driver is bound to an NDIS 6.20 protocol driv
 
 The hardware capabilities that a miniport driver reports can be enabled or disabled in INF file settings. For more information about power management INF file settings, see [Standardized INF Keywords for Power Management](standardized-inf-keywords-for-power-management.md).
 
-During miniport initialization, a miniport driver initializes an [**NDIS\_PM\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure with the power management capabilities of the underlying hardware. The miniport driver sets the **PowerManagementCapabilitiesEx** member of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure to point to the **NDIS\_PM\_CAPABILITIES** structure.
+During miniport initialization, a miniport driver initializes an [**NDIS\_PM\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure with the power management capabilities of the underlying hardware. The miniport driver sets the **PowerManagementCapabilitiesEx** member of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) structure to point to the **NDIS\_PM\_CAPABILITIES** structure.
 
 The [**NDIS\_PM\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure includes the following information:
 

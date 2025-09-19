@@ -4,6 +4,7 @@ description: This topic describes the configuration steps for the Mobile Plans p
 keywords:
 - Windows Mobile Plans configuration, Mobile Plans configuration mobile operators
 ms.date: 02/25/2019
+ms.topic: checklist
 ---
 
 # Mobile Plans service configuration
@@ -40,4 +41,4 @@ The Mobile Plans service must ingest some configuration information to support a
 
 The following image shows an example for the *standard gateway page* in the Mobile Plans app. The “A” annotation corresponds to the branding logo you submit, and the “B” annotation corresponds to the brand name.
 
-<img src="images/mobile_plans_configuration_mo_page.png" alt="Mobile Plans mobile operator page - asset usage example" title="Mobile Plans mobile operator page - asset usage example" width="600" />
+:::image type="content" source="images/mobile_plans_configuration_mo_page.png" alt-text="Mobile Plans mobile operator page - asset usage example":::

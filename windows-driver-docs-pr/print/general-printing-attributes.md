@@ -2,6 +2,7 @@
 title: General Printing Attributes
 description: General Printing Attributes
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # General Printing Attributes

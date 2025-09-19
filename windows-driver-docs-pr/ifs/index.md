@@ -5,6 +5,7 @@ ms.date: 04/30/2025
 keywords:
 - file system filter drivers , Windows , WDK
 - file system drivers , Windows , WDK
+ms.topic: concept-article
 ---
 
 # File System and File System Filter Drivers

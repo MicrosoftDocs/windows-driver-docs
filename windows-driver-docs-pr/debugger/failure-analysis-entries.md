@@ -2,6 +2,7 @@
 title: Failure Analysis Entries
 description: A DebugFailureAnalysis object has a collection of failure analysis entries.
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Failure Analysis Entries

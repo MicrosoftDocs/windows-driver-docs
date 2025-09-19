@@ -11,6 +11,7 @@ keywords:
 - dbg symbol files WDK BinPlace
 - .dbg files
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Symbol File Systems

@@ -11,6 +11,7 @@ keywords:
 - AC-3 WDK DVD decoder
 - MPEG2 video input streams WDK DVD decoder
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Input Streams

@@ -5,6 +5,7 @@ keywords:
 - direct OID request interface WDK networking
 - direct OID request path WDK networking
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Direct OID Request Interface in NDIS 6.1

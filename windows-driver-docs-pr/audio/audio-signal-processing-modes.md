@@ -2,6 +2,7 @@
 title: Audio Signal Processing Modes
 description: Drivers declare the supported audio signal processing modes for each device.
 ms.date: 03/26/2025
+ms.topic: concept-article
 ---
 
 # Audio Signal Processing Modes
@@ -23,6 +24,9 @@ Audio categories (selected by applications) are mapped to audio modes (defined b
 |Notification*|Render|Ringtones, alarms, alerts, etc.|
 
 \* New in Windows 10.
+
+> [!IMPORTANT]
+> Raw capture streams must not include any time varying or adaptive processing, such as echo control, automatic gain control, or noise suppression.  The only audio processing permitted in raw capture is linear equalization to flatten frequency response.
 
 ## Signal Processing Mode Driver Requirements
 

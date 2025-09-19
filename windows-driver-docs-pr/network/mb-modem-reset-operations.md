@@ -4,7 +4,9 @@ description: MB modem reset operations
 keywords:
 - MB modem reset, Mobile Broadband modem reset, Mobile Broadband miniport driver modem reset
 ms.date: 08/09/2018
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: reference
 ---
 
 # MB modem reset operations

@@ -2,6 +2,7 @@
 title: Auto-Configured Scanning
 description: Auto-Configured Scanning
 ms.date: 03/27/2023
+ms.topic: concept-article
 ---
 
 # Auto-Configured Scanning

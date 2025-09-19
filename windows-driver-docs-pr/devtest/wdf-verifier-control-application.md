@@ -11,6 +11,7 @@ keywords:
 - verifier WDK KMDF
 - verifier WDK UMDF
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # WDF Verifier Control Application

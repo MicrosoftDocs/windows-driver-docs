@@ -6,6 +6,7 @@ keywords:
 - functions WDK printer graphics DLL
 - graphics DLL WDK printer, functions
 ms.date: 01/27/2023
+ms.topic: reference
 ---
 
 # Functions defined by printer graphics DLLs

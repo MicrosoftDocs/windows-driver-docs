@@ -2,6 +2,7 @@
 title: Arrow on Event Line
 description: "When events are selected in different dialogs, a line is drawn in GPUView's main window to denote the position of the event."
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Arrow on Event Line  

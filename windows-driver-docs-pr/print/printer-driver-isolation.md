@@ -2,6 +2,7 @@
 title: Printer Driver Isolation
 description: Printer driver isolation improves the reliability of the Windows print service, by enabling printer drivers to run in processes that are separate from the process in which the print spooler runs.
 ms.date: 04/25/2025
+ms.topic: concept-article
 ---
 
 # Printer driver isolation

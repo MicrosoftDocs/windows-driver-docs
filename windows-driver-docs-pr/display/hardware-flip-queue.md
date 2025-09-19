@@ -5,6 +5,7 @@ keywords:
 - Direct3D, hardware flip queue
 - D3D, hardware flip queue
 ms.date: 04/24/2025
+ms.topic: concept-article
 ---
 
 # Hardware flip queue

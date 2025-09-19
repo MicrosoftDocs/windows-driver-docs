@@ -2,6 +2,7 @@
 title: WIA Security and Security Descriptors
 description: WIA Security and Security Descriptors
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Security and Security Descriptors

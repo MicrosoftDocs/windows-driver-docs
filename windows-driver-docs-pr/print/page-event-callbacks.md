@@ -9,6 +9,7 @@ keywords:
 - page event callbacks WDK CPSUI
 - event callbacks WDK CPSUI
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Page Event Callbacks

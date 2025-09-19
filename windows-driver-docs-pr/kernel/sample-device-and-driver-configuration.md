@@ -3,6 +3,7 @@ title: Sample Device and Driver Configuration
 description: Sample Device and Driver Configuration
 keywords: ["WDM drivers WDK kernel , configurations", "WDM drivers WDK kernel , layered drivers", "layered drivers WDK kernel", "driver layers WDK WDM", "keyboards WDK kernel", "mouse WDK kernel", "hardware configurations WDK kernel", "intermediate drivers WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Sample Device and Driver Configuration

@@ -10,6 +10,7 @@ keywords:
 - receiving data WDK networking
 - allocating MDLs
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Retreat Operations

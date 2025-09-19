@@ -2,6 +2,7 @@
 title: SoftwareInfo XML Elements List
 description: SoftwareInfo XML elements list
 ms.date: 07/05/2019
+ms.topic: reference
 ---
 
 # SoftwareInfo XML elements list

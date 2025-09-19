@@ -6,6 +6,7 @@ keywords:
 - warnings WDK PREfast for Drivers
 - errors WDK PREfast for Drivers
 ms.date: 07/02/2024
+ms.topic: error-reference
 ---
 
 # Code Analysis for Drivers Warnings
@@ -58,7 +59,7 @@ Code Analysis for Drivers reports the following types of warnings:
 </tr>
 <tr class="even">
 <td align="left"><p><a href="28114-improper-irp-stack-copy.md" data-raw-source="[C28114](28114-improper-irp-stack-copy.md)">C28114</a></p></td>
-<td align="left"><p>warning: C28114: Copying a whole IRP stack entry leaves certain fields initialized that should be cleared or updated.</p></td>
+<td align="left"><p>warning C28114: Copying a whole IRP stack entry leaves certain fields initialized that should be cleared or updated.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="28120-irql-execution-too-low.md" data-raw-source="[C28120](28120-irql-execution-too-low.md)">C28120</a></p></td>

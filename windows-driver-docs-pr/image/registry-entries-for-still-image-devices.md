@@ -2,6 +2,7 @@
 title: Registry Entries for Still Image Devices
 description: Registry entries for still image devices
 ms.date: 05/03/2023
+ms.topic: reference
 ---
 
 # Registry entries for still image devices

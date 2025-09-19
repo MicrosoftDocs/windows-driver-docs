@@ -6,6 +6,7 @@ keywords:
 - virtual machine queue (VMQ) WDK NDIS 6.20
 - VMQ WDK NDIS 6.20
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Virtual Machine Queue (VMQ) in NDIS 6.20

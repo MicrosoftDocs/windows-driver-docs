@@ -3,6 +3,7 @@ title: x64 Instructions
 description: x64 Instructions
 keywords: ["x64 processor, instructions"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # x64 Instructions

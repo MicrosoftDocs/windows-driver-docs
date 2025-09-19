@@ -5,6 +5,7 @@ keywords:
 - Point and Print WDK , DLLs
 - DLLs WDK Point and Print
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Point and Print DLLs

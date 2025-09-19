@@ -2,6 +2,7 @@
 title: Offload the Segmentation of Large TCP Packets
 description: Learn how NDIS miniport drivers can offload the segmentation of large TCP packets.
 ms.date: 01/31/2025
+ms.topic: concept-article
 ---
 
 # Offload the segmentation of large TCP packets

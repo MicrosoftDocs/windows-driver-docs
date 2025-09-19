@@ -2,6 +2,7 @@
 title: Required Flatbed Item Properties
 description: Required Flatbed Item Properties
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Required Flatbed Item Properties

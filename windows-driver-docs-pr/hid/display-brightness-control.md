@@ -2,6 +2,7 @@
 title: Display Brightness Control
 description: Allows keyboards (external or embedded on laptops), to control a laptop's or tablet's screen brightness through HID.
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # Display brightness control

@@ -5,6 +5,7 @@ keywords:
 - Windows Filtering Platform callout drivers WDK , defined
 - callout drivers WDK Windows Filtering Platform , defined
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Callout Driver

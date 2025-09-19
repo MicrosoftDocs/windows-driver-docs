@@ -9,6 +9,7 @@ keywords:
 - Redirected Drive Buffering Subsystem WDK file systems , free routines
 - free routines WDK RDBSS
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Pool Allocation and Free Routines

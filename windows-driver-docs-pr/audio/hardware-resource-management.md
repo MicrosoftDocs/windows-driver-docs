@@ -2,6 +2,7 @@
 title: Hardware Resource Management
 description: Hardware Resource Management
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Hardware Resource Management

@@ -2,6 +2,7 @@
 title: Percent of machines updated and successfully unlocked bitlocker recovery
 description: The measure aggregates telemetry from a 28-day sliding window into a ratio of machines that reported a bitlocker recovery event over the machines that attempted a firmware install
 ms.date: 10/31/2019
+ms.topic: concept-article
 ---
  
 # Percent of machines updated and successfully unlocked bitlocker recovery

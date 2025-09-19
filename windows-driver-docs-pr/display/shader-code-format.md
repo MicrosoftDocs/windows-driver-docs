@@ -2,6 +2,7 @@
 title: Shader Code Format
 description: Shader Code Format
 ms.date: 01/05/2018
+ms.topic: concept-article
 ---
 
 # Shader Code Format

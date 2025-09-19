@@ -3,6 +3,7 @@ title: Extract Information from a Dump File
 description: Learn how to debug a dump file to determine certain kinds of information, such as the name of the target computer.
 keywords: ["extracting information from a dump file", "dump file, extracting various information", "machine name (determining from a dump file)", "computer name (determining from a dump file)", "IP address (determining from a dump file)"]
 ms.date: 12/11/2024
+ms.topic: how-to
 ---
 
 # Extract information from a dump file

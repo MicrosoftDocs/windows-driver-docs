@@ -5,12 +5,16 @@ keywords:
 - device metadata resources
 - device experience resources
 - UWP device app resources
-ms.date: 04/20/2017
+ms.date: 06/25/2025
+ms.topic: overview
 ---
 
 # Additional resources
 
-\[This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8. If you’re developing device experiences for Windows 8.1, use the Device Metadata Authoring Wizard available with [Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1](../other-wdk-downloads.md).\]
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
+
+This article describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8. If you're developing device experiences for Windows 8.1, use the Device Metadata Authoring Wizard available with [Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1](../other-wdk-downloads.md).
 
 For more information about UWP device apps, see:
 

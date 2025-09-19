@@ -3,6 +3,7 @@ title: "TTD Thread Objects"
 description: "This section describes the thread model objects associated with time travel debugging."
 keywords: ["TTD Thread Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 11/20/2024
+ms.topic: concept-article
 ---
 
 # TTD Thread Objects

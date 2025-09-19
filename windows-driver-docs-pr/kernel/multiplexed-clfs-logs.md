@@ -2,7 +2,8 @@
 title: Multiplexed CLFS Logs
 description: Multiplexed CLFS logs
 keywords: ["Common Log File System WDK kernel , multiplexed logs", "CLFS WDK kernel , multiplexed logs", "multiplexed logs WDK CLFS", "stable storage WDK CLFS", "storage WDK CLFS"]
-ms.date: 04/04/2025
+ms.date: 09/19/2025
+ms.topic: concept-article
 ---
 
 # Multiplexed CLFS logs

@@ -5,6 +5,7 @@ keywords:
 - network drivers WDK , security
 - security WDK networking
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # Security Issues for Network Drivers

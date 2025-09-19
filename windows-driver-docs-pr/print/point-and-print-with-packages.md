@@ -7,6 +7,7 @@ keywords:
 - UAC WDK printer
 - driver store WDK printer
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Point and Print with Packages

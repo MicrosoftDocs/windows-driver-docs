@@ -7,6 +7,7 @@ keywords:
 - descriptors WDK USB Video Class , sample code
 - sample code WDK USB Video Class , extension unit descriptors
 ms.date: 09/17/2021
+ms.topic: reference
 ---
 
 # Sample extension unit descriptor

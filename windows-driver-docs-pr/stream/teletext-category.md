@@ -8,6 +8,7 @@ keywords:
 - World Standard Teletext data WDK video capture
 - WST data WDK video capture
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Teletext Category

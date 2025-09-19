@@ -3,6 +3,7 @@ title: Filter Module Synchronous OID Requests
 description: This topic describes Filter Module Synchronous OID requests
 keywords: Filter Module Synchronous OID Requests Interface, Filter Module Synchronous OID call, WDK Filter Module Synchronous OIDs, Filter Module Synchronous OID request
 ms.date: 04/03/2017
+ms.topic: concept-article
 ---
 
 # Filter Module Synchronous OID Requests

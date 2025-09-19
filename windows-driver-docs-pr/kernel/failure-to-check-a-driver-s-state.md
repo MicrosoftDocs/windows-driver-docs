@@ -3,6 +3,7 @@ title: Failure to Check a Driver's State
 description: Failure to Check a Driver's State
 keywords: ["reliability WDK kernel , driver state checking", "checking driver states", "driver state checking", "verifying driver states", "correct device states WDK kernel", "device states WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: troubleshooting-general
 ---
 
 # Failure to Check a Driver's State

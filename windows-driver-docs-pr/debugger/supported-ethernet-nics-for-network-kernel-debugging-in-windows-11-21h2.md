@@ -2,6 +2,7 @@
 title: Supported Ethernet NICs for Network Kernel Debugging in Windows 11 21H2
 description: Learn about kernel debugging over an Ethernet network cable when the target computer is running Windows 11 21H2.
 ms.date: 08/28/2023
+ms.topic: reference
 ---
 
 # Supported Ethernet NICs for Network Kernel Debugging in Windows 11 21H2

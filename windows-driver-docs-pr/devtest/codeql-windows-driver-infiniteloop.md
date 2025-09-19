@@ -2,6 +2,7 @@
 title: InfiniteLoop (Supplemental Windows Driver CodeQL Query)
 description: InfiniteLoop a Supplemental Windows Driver CodeQL Query
 ms.date: 01/11/2021
+ms.topic: best-practice
 ---
 
 # InfiniteLoop (Windows Driver CodeQL Query)

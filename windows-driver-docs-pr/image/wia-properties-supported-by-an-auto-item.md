@@ -2,6 +2,7 @@
 title: WIA Properties Supported by an Auto Item
 description: WIA Properties Supported by an Auto Item
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Properties Supported by an Auto Item

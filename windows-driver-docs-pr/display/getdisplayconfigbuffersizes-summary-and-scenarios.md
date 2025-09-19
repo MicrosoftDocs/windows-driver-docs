@@ -11,6 +11,7 @@ keywords:
 - GetDisplayConfigBufferSizes WDK Windows 7 display
 - GetDisplayConfigBufferSizes WDK Windows Server 2008 R2 display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GetDisplayConfigBufferSizes Summary and Scenarios

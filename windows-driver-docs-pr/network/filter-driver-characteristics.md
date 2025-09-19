@@ -5,6 +5,7 @@ keywords:
 - filter drivers WDK networking , characteristics
 - NDIS filter drivers WDK , characteristics
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Filter Driver Characteristics

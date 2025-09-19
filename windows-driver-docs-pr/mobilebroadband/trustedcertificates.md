@@ -2,6 +2,7 @@
 title: TrustedCertificates
 description: TrustedCertificates
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # TrustedCertificates

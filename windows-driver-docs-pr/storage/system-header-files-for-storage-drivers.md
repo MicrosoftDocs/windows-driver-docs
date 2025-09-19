@@ -5,6 +5,7 @@ keywords:
 - storage drivers WDK , system header files
 - header files WDK storage
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # System Header Files for Storage Drivers

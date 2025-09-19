@@ -5,6 +5,7 @@ keywords:
 - printer font descriptions WDK Unidrv , substitutions
 - substitution font table WDK Unidrv
 ms.date: 06/22/2023
+ms.topic: concept-article
 ---
 
 # Font substitution

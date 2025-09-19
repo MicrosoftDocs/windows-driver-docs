@@ -12,6 +12,7 @@ keywords:
 - audio adapters WDK , constructing
 - adapter drivers WDK audio , constructing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Adapter Driver Construction

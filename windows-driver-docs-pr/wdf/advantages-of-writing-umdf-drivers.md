@@ -6,6 +6,7 @@ keywords:
 - UMDF WDK , advantages
 - user-mode drivers WDK UMDF , advantages
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Advantages of Writing UMDF Drivers

@@ -5,6 +5,7 @@ keywords:
 - PoolMon WDK , displays
 - Memory Pool Monitor WDK , displays
 ms.date: 05/16/2023
+ms.topic: reference
 ---
 
 # PoolMon Display

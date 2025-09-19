@@ -15,6 +15,7 @@ keywords:
 - platform-specific hardware error drivers WDK WHEA
 - PSHED WDK WHEA
 ms.date: 03/26/2025
+ms.topic: error-reference
 ---
 
 # Error Processing

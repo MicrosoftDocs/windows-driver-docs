@@ -4,6 +4,7 @@ description: Details of the IPrintCoreHelperUni Interface
 keywords:
 - IPrintCoreHelperUni
 ms.date: 01/27/2023
+ms.topic: reference
 ---
 
 # Details of the IPrintCoreHelperUni Interface

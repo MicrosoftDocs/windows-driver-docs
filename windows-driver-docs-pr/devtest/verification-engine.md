@@ -8,6 +8,7 @@ keywords:
 - verification engine WDK Static Driver Verifier
 - proof engine WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Verification Engine

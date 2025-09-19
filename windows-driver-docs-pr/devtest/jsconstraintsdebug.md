@@ -2,6 +2,7 @@
 title: JSConstraintsDebug
 description: JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides debugging support for JavaScript Constraints while developing a V4 printer driver.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # JSConstraintsDebug

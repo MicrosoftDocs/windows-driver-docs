@@ -10,6 +10,7 @@ api_name:
 - .endsrv (End Debugging Server)
 api_type:
 - NA
+ms.custom: sfi-ropc-nochange
 ---
 
 # .endsrv (End Debugging Server)

@@ -2,6 +2,7 @@
 title: USB Hardware Verifier (USB3HWVerifierAnalyzer.exe)
 description: This article describes the USB hardware verifier tool (USB3HWVerifierAnalyzer.exe) that is used for testing and debugging specific hardware events.
 ms.date: 04/17/2025
+ms.topic: concept-article
 ---
 
 # USB hardware verifier (USB3HWVerifierAnalyzer.exe)

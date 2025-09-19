@@ -1,10 +1,11 @@
 ---
-title: Windows Compatible Products List
-description: The Windows compatible products list is a comprehensive list of certified devices and systems.
-ms.date: 08/19/2024
+title: Search the Windows Compatible Products List
+description: Learn to search the Windows compatible products list, a comprehensive list of certified devices and systems.
+ms.date: 08/21/2025
+ms.topic: feature-availability
 ---
 
-# Windows compatible products list
+# Search the Windows compatible products list
 
 The [Windows compatible products list](https://partner.microsoft.com/dashboard/hardware/search/cpl) is a comprehensive list of certified devices and systems. The Windows compatible products list has the following features and restrictions:
 

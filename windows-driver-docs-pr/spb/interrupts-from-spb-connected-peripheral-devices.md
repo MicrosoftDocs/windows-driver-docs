@@ -2,6 +2,7 @@
 title: Interrupts From SPB-Connected Peripheral Devices
 description: Unlike a bus such as PCI, a simple peripheral bus (SPB), such as I<sup>2</sup>C or SPI, provides no standardized, bus-specific means to convey interrupt requests from peripheral devices to the processor.
 ms.date: 01/12/2024
+ms.topic: concept-article
 ---
 
 # Interrupts from SPB-connected peripheral devices

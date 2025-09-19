@@ -2,6 +2,7 @@
 title: WDDM Driver and Feature Caps
 description: This topic describes Windows Display Driver Model (WDDM) driver feature capabilities (caps).
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WDDM driver and feature caps

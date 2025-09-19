@@ -2,6 +2,7 @@
 title: PTP Error Recovery
 description: PTP Error Recovery
 ms.date: 04/20/2017
+ms.topic: troubleshooting-error-codes
 ---
 
 # PTP Error Recovery

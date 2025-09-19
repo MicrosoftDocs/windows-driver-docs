@@ -10,6 +10,7 @@ keywords:
 - Shutdown state WDK networking
 - Initializing state WDK ne
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Miniport Adapter States and Operations

@@ -2,6 +2,7 @@
 title: Dynamically Configuring MSI-X
 description: Dynamically Configuring MSI-X
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Dynamically Configuring MSI-X

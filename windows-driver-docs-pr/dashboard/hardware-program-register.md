@@ -3,6 +3,7 @@ title: Register for the Microsoft Windows Hardware Developer Program
 description: How to register for the Microsoft Windows Hardware Developer Program.
 ms.date: 04/21/2025
 ms.topic: how-to
+ms.custom: sfi-image-nochange
 ---
 
 # Register for the Microsoft Windows Hardware Developer Program

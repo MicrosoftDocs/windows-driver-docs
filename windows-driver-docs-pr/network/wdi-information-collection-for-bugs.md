@@ -2,6 +2,7 @@
 title: WDI information collection for bugs
 description: Bugs in any non-trivial software are inevitable.
 ms.date: 03/02/2023
+ms.topic: troubleshooting-general
 ---
 
 # WDI information collection for bugs

@@ -2,6 +2,7 @@
 title: Common, Camera, and Scanner Properties
 description: Common, camera, and scanner properties
 ms.date: 03/29/2023
+ms.topic: concept-article
 ---
 
 # Common, camera, and scanner properties

@@ -2,7 +2,8 @@
 title: Dedicated CLFS Logs
 description: Dedicated CLFS logs
 keywords: ["Common Log File System WDK kernel , dedicated logs", "CLFS WDK kernel , dedicated logs", "dedicated logs WDK CLFS", "stable storage WDK CLFS", "storage WDK CLFS"]
-ms.date: 04/03/2025
+ms.date: 09/19/2025
+ms.topic: concept-article
 ---
 
 # Dedicated CLFS logs

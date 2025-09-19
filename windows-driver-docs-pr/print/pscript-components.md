@@ -5,6 +5,7 @@ keywords:
 - PostScript Printer Driver WDK print , components
 - Pscript WDK print , components
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Pscript Components

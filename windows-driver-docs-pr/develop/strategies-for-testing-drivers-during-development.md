@@ -2,6 +2,7 @@
 title: Recommendations for Testing Driver Code and Driver Package.
 description: When should you start testing? As soon as you have the requirements for your driver, you can begin to design test cases to test that the critical requirements have been implemented.
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # Tips for testing drivers during development

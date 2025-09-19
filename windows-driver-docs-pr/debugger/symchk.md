@@ -3,6 +3,7 @@ title: SymChk
 description: SymChk
 keywords: ["SymChk", "SymChk, overview", "symbols, SymChk"]
 ms.date: 05/23/2017
+ms.topic: overview
 ---
 
 # SymChk

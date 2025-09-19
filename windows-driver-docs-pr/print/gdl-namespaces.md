@@ -7,6 +7,7 @@ keywords:
 - namespaces WDK GDL , examples
 - unnamed namespaces WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # GDL Namespaces

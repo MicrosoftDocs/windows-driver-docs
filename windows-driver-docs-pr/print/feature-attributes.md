@@ -6,6 +6,7 @@ keywords:
 - feature attributes WDK Unidrv
 - printer features WDK Unidrv , attributes
 ms.date: 06/22/2023
+ms.topic: concept-article
 ---
 
 # Feature attributes

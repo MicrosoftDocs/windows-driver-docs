@@ -2,6 +2,7 @@
 title: Prepare Your Sensor Test Board
 description: This topic shows you how to prepare your sensor test board for connection to the Sharks Cove board.
 ms.date: 01/11/2024
+ms.topic: how-to
 ---
 
 # Prepare your sensor test board

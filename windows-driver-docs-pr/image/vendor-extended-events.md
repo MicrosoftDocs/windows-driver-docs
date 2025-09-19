@@ -2,6 +2,7 @@
 title: Vendor-Extended Events
 description: Vendor-Extended Events
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Vendor-Extended Events

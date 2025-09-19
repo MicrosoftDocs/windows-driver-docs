@@ -2,6 +2,7 @@
 title: Multiple DataSources
 description: Multiple DataSources
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Multiple DataSources

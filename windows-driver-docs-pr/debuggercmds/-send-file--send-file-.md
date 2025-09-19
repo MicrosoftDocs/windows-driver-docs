@@ -39,8 +39,8 @@ Causes the debugger to copy all loaded symbol files.
 
 |  Item  | Description          |
 |--------|----------------------|
-|Modes   |User mode, kernel mode|
-|Targets |Live, crash dump      |
+|Modes   |User mode             |
+|Targets |Live                  |
 |Platforms|All                  |
 
 ## Remarks

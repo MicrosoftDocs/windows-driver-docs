@@ -3,6 +3,7 @@ title: Manage hardware dashboard users
 description: This article describes how to manage your hardware dashboard users with Partner Center User Management.
 ms.date: 09/11/2024
 ms.topic: how-to
+ms.custom: sfi-image-nochange
 ---
 
 # Manage hardware dashboard users

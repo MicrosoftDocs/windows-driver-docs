@@ -2,6 +2,7 @@
 title: Driver flighting
 description: Distribute your driver within defined Windows Insider rings. Driver flighting provides automatic monitoring and evaluation.
 ms.date: 09/12/2024
+ms.topic: how-to
 ---
 
 # Driver flighting

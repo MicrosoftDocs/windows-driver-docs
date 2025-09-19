@@ -2,6 +2,7 @@
 title: Interface Implementation Guidance
 description: This section provides guidance for interface implementation.
 ms.date: 03/26/2025
+ms.topic: concept-article
 ---
 
 # Interface implementation guidance

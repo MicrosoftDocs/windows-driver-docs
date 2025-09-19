@@ -5,6 +5,7 @@ keywords:
 - trace consumers WDK
 - receiving trace messages
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Trace Consumer

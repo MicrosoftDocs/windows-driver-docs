@@ -3,7 +3,8 @@ title: CLFS Terminology
 description: This article gives definitions of key terms used in the Common Log File System (CLFS) documentation.
 Robots: noindex, nofollow
 keywords: ["Common Log File System WDK kernel , terminology", "CLFS WDK kernel , terminology"]
-ms.date: 04/02/2025
+ms.date: 09/19/2025
+ms.topic: glossary
 ---
 
 # CLFS terminology

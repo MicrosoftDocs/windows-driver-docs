@@ -3,6 +3,7 @@ title: Other Symbol Stores
 description: Other Symbol Stores
 keywords: ["symbol stores, writing your own symbol store"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Other Symbol Stores

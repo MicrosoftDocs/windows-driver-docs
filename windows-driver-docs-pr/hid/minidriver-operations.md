@@ -2,6 +2,7 @@
 title: Minidrivers and the HID Class Driver
 description: Minidrivers and the HID class driver
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # Minidrivers and the HID class driver

@@ -230,8 +230,6 @@
         href: installing-the-update.md
     - name: Implementing support for UEFI firmware updates
       items:
-      - name: Implementing support for UEFI firmware updates
-        href: implementing-support-for-uefi-firmware-updates.md
       - name: ESRT table definition
         href: esrt-table-definition.md
       - name: Plug and play device

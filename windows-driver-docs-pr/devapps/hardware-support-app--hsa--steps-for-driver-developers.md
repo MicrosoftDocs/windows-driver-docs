@@ -7,10 +7,15 @@ keywords:
 - custom capabilities
 - UWP
 - Hardware
-ms.date: 04/30/2025
+ms.date: 07/21/2025
+ms.topic: how-to
+ms.custom: sfi-image-nochange
 ---
 
 # Hardware Support App (HSA): Steps for Driver Developers
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 A Hardware Support App (HSA) is a device-specific app that is paired with a specific driver or [RPC (Remote Procedure Call)](/windows/desktop/Rpc/rpc-start-page) endpoint.
 
@@ -415,28 +420,17 @@ The following schema is also valid as of Windows 10, version 1809.  It enables a
 </xs:schema>
 ```
 
-## See also
+## Related topics
 
-[Get started developing Windows drivers](../develop/get-started-developing-windows-drivers.md)
-
-[Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide)
-
-[Universal Windows Platform (UWP)](/windows/uwp/design/basics)
-
-[App capabilities](/windows/uwp/packaging/app-capability-declarations)
-
-[Develop UWP apps using Visual Studio](/windows/uwp/develop/)
-
-[Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
-
-[Develop UWP apps](/windows/uwp/develop/)
-
-[Package an app using the Desktop App Converter (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter)
-
-[Custom Capability Sample App](https://github.com/Microsoft/Windows-universal-samples/tree/main/Samples/CustomCapability)
-
-[Custom Capability Driver Sample](https://aka.ms/customcapabilitydriversample )
-
-[Sideload apps in Windows 10](/windows/application-management/sideload-apps-in-windows-10)
-
-[FAQ on Custom Capabilities](FAQ-on-custom-capabilities.yml)
+- [Get started developing Windows drivers](../develop/get-started-developing-windows-drivers.md)
+- [Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide)
+- [Universal Windows Platform (UWP)](/windows/uwp/design/basics)
+- [App capabilities](/windows/uwp/packaging/app-capability-declarations)
+- [Develop UWP apps using Visual Studio](/windows/uwp/develop/)
+- [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
+- [Develop UWP apps](/windows/uwp/develop/)
+- [Package an app using the Desktop App Converter (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter)
+- [Custom Capability Sample App](https://github.com/Microsoft/Windows-universal-samples/tree/main/Samples/CustomCapability)
+- [Custom Capability Driver Sample](https://aka.ms/customcapabilitydriversample )
+- [Sideload apps in Windows 10](/windows/application-management/sideload-apps-in-windows-10)
+- [FAQ on Custom Capabilities](FAQ-on-custom-capabilities.yml)

@@ -2,7 +2,9 @@
 title: MB PIN Operations
 description: MB PIN Operations
 ms.date: 03/05/2021
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # MB PIN Operations

@@ -2,7 +2,8 @@
 title: SR-IOV OIDs
 description: This section describes Single Root I/O Virtualization (SR-IOV) OIDs and their characteristics.
 keywords: ["SR-IOV OIDs", "Single Root I/O Virtualization OIDs", "WDK SR-IOV OIDs", "SR-IOV object identifiers"]
-ms.date: 04/20/2017
+ms.date: 07/23/2025
+ms.topic: reference
 ---
 
 # SR-IOV OIDs
@@ -21,10 +22,10 @@ The OID is used only in method requests. These requests could be issued for set 
 The OID request is handled directly by NDIS and not by the miniport driver. The driver will not be issued these OIDs.
 - P  
 The OID request is issued only to the miniport driver of the network adapter's physical function (PF).  
-The PF driver must support these OIDs. The driver must also list these OIDs in the **SupportedOidList** member of the [NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure that the driver passes in the *MiniportAttributes* parameter of the call to [NdisMSetMiniportAttributes](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes).
+The PF driver must support these OIDs. The driver must also list these OIDs in the **SupportedOidList** member of the [NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) structure that the driver passes in the *MiniportAttributes* parameter of the call to [NdisMSetMiniportAttributes](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes).
 - V  
 The OID request is issued only to the miniport driver of one of the network's virtual functions (VFs).  
-The VF driver must support these OIDs. The driver must also list these OIDs in the **SupportedOidList** member of the [NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure that the driver passes in the *MiniportAttributes* parameter of the call to [NdisMSetMiniportAttributes](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes).
+The VF driver must support these OIDs. The driver must also list these OIDs in the **SupportedOidList** member of the [NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) structure that the driver passes in the *MiniportAttributes* parameter of the call to [NdisMSetMiniportAttributes](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes).
 
 | Name                                                                                                 | Q | S | M | N | P | V |
 |---                                                                                                   |---|---|---|---|---|---|

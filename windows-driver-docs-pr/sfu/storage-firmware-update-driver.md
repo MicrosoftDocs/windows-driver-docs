@@ -2,6 +2,8 @@
 title: Storage Firmware Update (SFU) Driver
 description: Provides implementation details for the Storage Firmware Update (SFU) driver.
 ms.date: 08/27/2024
+ms.topic: concept-article
+ms.custom: sfi-image-nochange
 ---
 
 # Storage Firmware Update (SFU) driver

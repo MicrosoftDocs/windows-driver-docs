@@ -4,7 +4,9 @@ description: MB 5G Operations Terminology
 keywords:
 - MB 5G Operations Terminology, Mobile Broadband 5G Operations Terminology
 ms.date: 03/01/2021
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: glossary
 ---
 
 # MB 5G Operations Terminology

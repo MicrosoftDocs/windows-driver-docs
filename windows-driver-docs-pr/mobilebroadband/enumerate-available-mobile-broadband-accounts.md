@@ -2,6 +2,7 @@
 title: Enumerate Available Mobile Broadband Accounts
 description: Enumerate available mobile broadband accounts
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Enumerate available mobile broadband accounts

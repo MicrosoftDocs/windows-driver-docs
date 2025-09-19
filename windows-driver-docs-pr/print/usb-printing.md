@@ -5,6 +5,7 @@ keywords:
 - printer drivers WDK, USB
 - USB printers WDK
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # Microsoft USB printer driver (Usbprint.sys)

@@ -8,6 +8,7 @@ keywords:
 - back buffers WDK Windows 7 display , fully typed
 - fully-typed back buffers WDK Windows 7 display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Fully-Typed Back Buffers Casting

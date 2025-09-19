@@ -2,6 +2,7 @@
 title: Wi-Fi measures
 description: Wi-Fi measures filter out benign initialization errors during Bluetooth driver flighting
 ms.date: 05/20/2019
+ms.topic: concept-article
 ---
 
 # Wi-Fi measures

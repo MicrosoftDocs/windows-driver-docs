@@ -2,6 +2,7 @@
 title: WIA with Web Services for Devices
 description: WIA with Web Services for Devices
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA with Web Services for Devices

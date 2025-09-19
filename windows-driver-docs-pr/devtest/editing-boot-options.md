@@ -8,6 +8,7 @@ keywords:
 - custom boot options WDK
 - boot entries WDK
 ms.date: 12/12/2024
+ms.topic: how-to
 ---
 
 # Edit boot options

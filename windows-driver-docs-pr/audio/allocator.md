@@ -7,6 +7,7 @@ keywords:
 - synthesizers WDK audio , MIDI transport
 - allocators WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Allocator

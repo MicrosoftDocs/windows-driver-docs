@@ -4,6 +4,7 @@ description: Option Attributes for the InputBin Feature
 keywords:
 - InputBin Feature
 ms.date: 01/27/2023
+ms.topic: overview
 ---
 
 # Option Attributes for the InputBin Feature

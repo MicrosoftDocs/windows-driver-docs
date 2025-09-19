@@ -5,6 +5,7 @@ keywords:
 - printer commands WDK Unidrv , cursors
 - cursor commands WDK Unidrv
 ms.date: 06/16/2023
+ms.topic: reference
 ---
 
 # Cursor commands

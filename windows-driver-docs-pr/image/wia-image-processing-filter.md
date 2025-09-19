@@ -2,6 +2,7 @@
 title: WIA Image Processing Filter
 description: WIA Image Processing Filter
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Image Processing Filter

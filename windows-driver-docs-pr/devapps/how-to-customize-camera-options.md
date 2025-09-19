@@ -1,11 +1,14 @@
 ---
 title: How to Customize Camera Options with a UWP Device App
 description: In Windows 8.1, UWP device apps let device manufacturers customize the flyout that displays more camera options in some camera apps.
-ms.date: 03/17/2023
+ms.date: 07/21/2025
 ms.topic: how-to
 ---
 
 # How to customize camera options with a UWP device app
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 In Windows 8.1, UWP device apps let device manufacturers customize the flyout that displays more camera options in some camera apps. This topic introduces the **More options** flyout that's displayed by the CameraCaptureUI API, and shows how the C# version of the [UWP device app for camera](/samples/browse/) sample replaces the default flyout with a custom flyout. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
@@ -359,9 +362,7 @@ The following steps build your app and install the device metadata.
 To test the camera options experience, first download these samples:
 
 - [UWP device app for camera sample](/samples/browse/)
-
 - [Camera Capture UI sample](/samples/browse/)
-
 - [Driver MFT sample](/samples/browse/)
 
 Then, follow the sample testing instructions provided on the [Driver MFT sample](/samples/browse/) page.

@@ -2,6 +2,7 @@
 title: Use of Mapping Buffers in the Storport I/O Model
 description: Use of Mapping Buffers in the Storport I/O Model
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Use of Mapping Buffers in the Storport I/O Model

@@ -3,6 +3,7 @@ title: Features Added in Prior WDDM 2.X Versions
 description: Describes features in prior Windows 10 releases for display and graphics drivers
 ms.date: 08/10/2021
 ms.custom: 19H1
+ms.topic: whats-new
 ---
 
 # Features added in prior WDDM 2.X versions
@@ -141,7 +142,7 @@ The following is a list of feature additions and updates for WDDM 2.1.
 
 * Driver Store installation for graphics drivers to improve driver upgrade resiliency.
 
-* DXIL, a new shader complier language
+* DXIL, a new shader compiler language
 
 * D3D12 performance and optimization improvements
 

@@ -2,7 +2,8 @@
 title: CLFS Marshalling Areas
 description: CLFS marshalling areas
 keywords: ["Common Log File System WDK kernel , marshalling areas", "CLFS WDK kernel , marshalling areas", "marshalling areas WDK CLFS", "log I/O buffers WDK CLFS", "maximum number of log I/O buffers WDK CLFS", "memory allocations WDK CLFS", "buffers WDK CLFS", "appending records WDK CLFS", "stable storage WDK CLFS", "volatile memory WDK CLFS", "storage WDK CLFS"]
-ms.date: 04/02/2025
+ms.date: 09/19/2025
+ms.topic: concept-article
 ---
 
 # CLFS marshalling areas

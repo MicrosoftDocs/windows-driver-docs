@@ -8,6 +8,7 @@ keywords:
 - standard variable expressions WDK Unidrv
 - max_repeat
 ms.date: 01/31/2024
+ms.topic: concept-article
 ---
 
 # Standard variable expressions

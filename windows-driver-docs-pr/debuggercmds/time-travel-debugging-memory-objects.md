@@ -3,6 +3,7 @@ title: "TTD Memory Objects"
 description: "This section describes the memory model objects associated with time travel debugging."
 keywords: ["TTD Memory Objects", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
 ms.date: 11/14/2024
+ms.topic: concept-article
 ---
 
 # TTD Memory Objects

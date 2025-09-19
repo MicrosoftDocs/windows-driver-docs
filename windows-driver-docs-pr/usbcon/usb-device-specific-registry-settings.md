@@ -2,6 +2,7 @@
 title: USB Device Registry Entries
 description: This article describes USB device-specific registry entries.
 ms.date: 04/22/2025
+ms.topic: reference
 ---
 
 # USB device registry entries

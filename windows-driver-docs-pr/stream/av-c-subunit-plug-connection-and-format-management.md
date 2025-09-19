@@ -11,6 +11,7 @@ keywords:
 - formats WDK AV/C
 - pin formats WDK AV/C
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # AV/C Subunit Plug Connection and Format Management

@@ -2,6 +2,7 @@
 title: WIA Film Scanners
 description: WIA Film Scanners
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Film Scanners

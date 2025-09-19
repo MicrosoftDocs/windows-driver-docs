@@ -2,6 +2,7 @@
 title: Camera Profiles
 description: This article discusses the format of camera profiles and various ways to define them
 ms.date: 08/16/2019
+ms.topic: concept-article
 ---
 
 # Camera Profiles

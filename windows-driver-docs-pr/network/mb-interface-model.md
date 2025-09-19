@@ -2,6 +2,7 @@
 title: MB Interface Model Overview
 description: This section provides information for mobile broadband devices that are implemented based on the Mobile Broadband Interface Model (MBIM) specification.
 ms.date: 04/20/2017
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
 ms.topic: concept-article
 ---

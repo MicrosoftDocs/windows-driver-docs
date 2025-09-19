@@ -2,6 +2,7 @@
 description: Common failures for USB tests in the Windows HLK.
 title: Common Failures for USB Tests in the Windows HLK
 ms.date: 01/12/2024
+ms.topic: troubleshooting-general
 ---
 
 # Common failures for USB tests in the Windows HLK

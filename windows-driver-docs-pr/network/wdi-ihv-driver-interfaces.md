@@ -1,7 +1,8 @@
 ---
 title: WDI IHV driver interfaces
 description: The WDI IHV miniport is like any other NDIS miniport driver and it would follow the development practices and documentation for any NDIS miniport.
-ms.date: 03/02/2023
+ms.date: 07/23/2025
+ms.topic: concept-article
 ---
 
 # WDI IHV driver interfaces
@@ -91,7 +92,7 @@ The WDI model splits the [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/
 
     Other commands may also be sent down to the IHV component as part of the MiniportInitializeEx processing of the Microsoft Component. However, until [*MiniportWdiStartOperation*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_start_adapter_operation) is called, the Microsoft component does not send any tasks down that need over-the-air communication. Except for [OID\_WDI\_TASK\_OPEN](./oid-wdi-task-open.md) always being sent first, the order of the other commands/calls may change.
 
-    Using data obtained from the WDI IHV miniport driver, the Microsoft component calls [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) and sets [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) and [**NDIS\_MINIPORT\_ADAPTER\_NATIVE\_802\_11\_ATTRIBUTES**](/previous-versions/windows/hardware/wireless/ff565926(v=vs.85)) on NDIS.
+    Using data obtained from the WDI IHV miniport driver, the Microsoft component calls [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) and sets [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes) and [**NDIS\_MINIPORT\_ADAPTER\_NATIVE\_802\_11\_ATTRIBUTES**](/previous-versions/windows/hardware/wireless/ff565926(v=vs.85)) on NDIS.
 
 4.  Call [*MiniportWdiStartOperation*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_start_adapter_operation).
 

@@ -4,6 +4,7 @@ description: Routines Not Used by RDBSS
 keywords:
 - mini-redirectors WDK , RDBSS
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Routines Not Used by RDBSS

@@ -1,7 +1,8 @@
 ---
 title: Secure Boot
 description: Secure boot
-ms.date: 09/26/2024
+ms.date: 07/21/2025
+ms.topic: concept-article
 ---
 
 # Secure boot
@@ -25,3 +26,6 @@ For more information regarding Windows requirements for Secure boot, see **Syste
 [Secured Boot and Measured Boot: Hardening Early Boot Components Against Malware](/previous-versions/windows/hardware/design/dn653311(v=vs.85))
 
 [Windows 8.1 Secure Boot Key Creation and Management Guidance](/previous-versions/windows/it-pro/windows-8.1-and-8/dn747883(v=win.10))
+
+[Enabling Secure Boot](https://support.microsoft.com/windows/windows-11-and-secure-boot-a8ff1202-c0d9-42f5-940f-843abef64fad)
+

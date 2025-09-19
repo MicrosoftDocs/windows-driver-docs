@@ -6,6 +6,7 @@ keywords:
 - WDDM, GPU fence synchronization object
 - WDDM, hardware scheduling
 ms.date: 11/08/2024
+ms.topic: concept-article
 ---
 
 # Native GPU fence object

@@ -2,6 +2,7 @@
 title: Container IDs for eSATA Devices
 description: Container IDs for eSATA Devices
 ms.date: 03/15/2023
+ms.topic: concept-article
 ---
 
 # Container IDs for eSATA Devices

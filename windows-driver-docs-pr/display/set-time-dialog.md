@@ -2,6 +2,7 @@
 title: Set Time Dialog
 description: To view the Set time dialog, visit the Segment Viewer Actions menu and select Go to time?.
 ms.date: 05/10/2022
+ms.topic: end-user-help
 ---
 
 # Set Time Dialog

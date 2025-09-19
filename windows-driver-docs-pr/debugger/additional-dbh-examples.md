@@ -3,6 +3,7 @@ title: Additional DBH Examples
 description: Additional DBH Examples
 keywords: ["DBH, displaying symbols", "DBH, symbol decorations", "DBH, data types", "DBH, imaginary symbols"]
 ms.date: 05/23/2017
+ms.topic: example-scenario
 ---
 
 # Additional DBH Examples

@@ -3,6 +3,7 @@ title: Client Objects
 description: Client Objects
 keywords: ["Debugger Engine, client objects", "client objects"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Client Objects

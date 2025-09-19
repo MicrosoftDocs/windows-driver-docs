@@ -7,6 +7,7 @@ keywords:
 - virtual mode, connecting and configuring displays
 - mode and path information, Windows
 ms.date: 06/27/2024
+ms.topic: concept-article
 ---
 
 # Relationship of Mode Information to Path Information

@@ -2,6 +2,7 @@
 title: Virtual Address Spaces
 description: Learn how processors use virtual addresses to read and write to memory locations.
 ms.date: 06/28/2024
+ms.topic: concept-article
 ---
 
 # Virtual address spaces

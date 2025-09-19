@@ -2,6 +2,7 @@
 title: Device Services Extension API
 description: Device Services Extension API
 ms.date: 10/06/2023
+ms.topic: reference
 ---
 
 # Device Services Extension API

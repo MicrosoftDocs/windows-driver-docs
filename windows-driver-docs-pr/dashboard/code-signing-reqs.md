@@ -2,6 +2,7 @@
 title: Driver code signing requirements
 description: Driver code signing requirements
 ms.date: 05/29/2025
+ms.topic: best-practice
 ---
 
 # Driver code signing requirements

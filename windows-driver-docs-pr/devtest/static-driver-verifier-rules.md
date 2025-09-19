@@ -2,6 +2,7 @@
 title: DDI Compliance Rules
 description: DDI Compliance Rules
 ms.date: 05/21/2018
+ms.topic: checklist
 ---
 
 # DDI Compliance Rules

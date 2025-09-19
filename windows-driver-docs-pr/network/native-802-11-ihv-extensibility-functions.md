@@ -3,6 +3,7 @@ title: Native 802.11 IHV Extensibility functions
 description: This section describes Native 802.11 IHV Extensibility functions for the Native 802.11 IHV Extensions DLL
 keywords: ["Native 802.11 IVH Extensibility functions", "Native 802.11 IHV Extensions DLL Extensibility Functions", "WDK Native 802.11 IVH Extensibility functions"]
 ms.date: 04/27/2017
+ms.topic: concept-article
 ---
 
 # Native 802.11 IHV Extensibility functions

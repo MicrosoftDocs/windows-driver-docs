@@ -1,7 +1,7 @@
 ---
 title: Bug Check 0x1A MEMORY_MANAGEMENT
 description: The MEMORY_MANAGEMENT bug check has a value of 0x0000001A and indicates that a severe memory management error occurred.
-keywords: ["Bug check 0x1A MEMORY_MANAGEMENT", "MEMORY_MANAGEMENT"]
+keywords: ["Bug check 0x1A MEMORY_MANAGEMENT", "MEMORY_MANAGEMENT", "Stop code", "BSOD","Memory Management", "Blue Screen"]
 ms.date: 04/06/2023
 topic_type:
 - apiref

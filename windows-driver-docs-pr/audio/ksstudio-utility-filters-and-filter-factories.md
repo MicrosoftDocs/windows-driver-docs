@@ -10,6 +10,7 @@ keywords:
 - audio filter graphs WDK
 - graphical representation WDK audio
 ms.date: 04/22/2021
+ms.topic: concept-article
 ---
 
 # KsStudio - Filters and Filters and Factories

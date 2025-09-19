@@ -2,6 +2,7 @@
 title: Traffic Class Priority Assignment
 description: Traffic Class Priority Assignment
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Traffic Class Priority Assignment

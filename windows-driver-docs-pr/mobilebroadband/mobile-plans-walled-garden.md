@@ -4,6 +4,7 @@ description: Mobile Plans walled garden
 keywords:
 - Windows Mobile Plans mobile operators walled garden
 ms.date: 12/12/2023
+ms.topic: concept-article
 ---
 
 # Mobile Plans walled garden

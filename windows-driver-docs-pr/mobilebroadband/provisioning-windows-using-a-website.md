@@ -85,7 +85,7 @@ The format of the URL is `<https://Operator> URL[?propN=valN[&propN=valN]*]`, wh
 
 - **propN**: A property name.
 
-- **valN**: The corresponding value to the propery name.
+- **valN**: The corresponding value to the property name.
 
 The following table lists the properties that can be included. If a property value is not provided by the mobile broadband device, that property is not included.
 

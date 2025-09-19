@@ -24,6 +24,7 @@ keywords:
 - WDM audio data formats WDK
 - data formats WDK audio , header files
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Header File Changes

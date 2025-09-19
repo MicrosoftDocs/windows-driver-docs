@@ -2,6 +2,7 @@
 title: Segment Viewer Window
 description: The Segment Viewer displays information about the memory layout at a particular instant of time for a particular memory segment.
 ms.date: 05/10/2022
+ms.topic: overview
 ---
 
 # Segment Viewer Window

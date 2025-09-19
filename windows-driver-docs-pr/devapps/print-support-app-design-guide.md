@@ -1,19 +1,20 @@
 ---
 title: Print Support App v1 and v2 Design Guide
 description: Provides guidance and examples for printer OEMs and IHVs that are implementing a v1 and v2 Print Support App (PSA) for their device.
-ms.date: 01/10/2025
+ms.date: 06/25/2025
 ms.topic: concept-article
 ---
 
 # Print Support App v1 and v2 design guide
 
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
+
 This article provides guidance and examples for printer OEMs and IHVs to develop a print support app (PSA) that can enhance a Windows user's print experience in several ways.
 
-> [!IMPORTANT]
-> Starting with the release of Windows 11 SDK (22000.1), Print Support Apps (PSA) are the recommended method of developing UWP apps for printers. To develop a Print Support App for your print device, download and install the Windows 11 SDK for the Windows version you are targeting.
+Starting with the release of Windows 11 SDK (22000.1), Print Support Apps (PSA) are the recommended method of developing UWP apps for printers. To develop a Print Support App for your print device, download and install the Windows 11 SDK for the Windows version you are targeting.
 
-> [!IMPORTANT]
-> This article contains sections that describe PSA functionality that is available starting in Windows 11, version 22H2. Those sections contain a note indicating that it applies to that version.
+This article contains sections that describe PSA functionality that is available starting in Windows 11, version 22H2. Those sections contain a note indicating that it applies to that version.
 
 For more information, see the following articles:
 
@@ -32,7 +33,7 @@ This need for showing custom print preferences is addressed by this API with an 
 
 Another area where the printer manufacturers can improve and differentiate is print quality. Manufacturers can improve print quality after rendering by optimizing the content for the specific printer. They can also present a high-fidelity preview that better represents the final output as it could take printer specific features into consideration.
 
-![print support app print timeline](images/psa-api-print-timeline.png)
+:::image type="content" source="images/psa-api-print-timeline.png" alt-text="print support app print timeline":::
 
 ## Terminology
 
@@ -79,7 +80,7 @@ The Print Support App is expected to handle multiple simultaneous activations fo
 
 The following sequence diagram represents the concept of Settings UI print ticket manipulation:
 
-![sequence diagram of settings U I print ticket manipulation](images/psa-api-2.png)
+:::image type="content" source="images/psa-api-2.png" alt-text="sequence diagram of settings U I print ticket manipulation":::
 
 ### Changing PrintTicket in the settings UI
 
@@ -240,7 +241,7 @@ namespace PsaSampleApp
 
 WireShark response from an IPP printer to a get-printer-attributes query:
 
-![wireshark response from an I P P printer to a get printer attributes query](images/psa-api-3.png)
+:::image type="content" source="images/psa-api-3.png" alt-text="wireshark response from an I P P printer to a get printer attributes query":::
 
 C# sample code for getting ink names and ink levels from the printer:
 
@@ -443,7 +444,7 @@ Once the user has committed to print by pressing the print button on print dialo
 
 Sequence diagram for the PDL modification event:
 
-![sequence diagram for the source stream P D L modification event](images/psa-api-4.png)
+:::image type="content" source="images/psa-api-4.png" alt-text="sequence diagram for the source stream P D L modification event":::
 
 The PSA foreground application is launched when the PSA background task requests launching UI. The PSA can use the foreground contract to get user input and/or to show a preview print preview to the user.
 
@@ -512,7 +513,7 @@ namespace PsaBackground
 
 Sequence diagram for the PDL modification event:
 
-![sequence diagram for the input stream P D L modification event](images/psa-api-5.png)
+:::image type="content" source="images/psa-api-5.png" alt-text="sequence diagram for the input stream P D L modification event":::
 
 C# sample code for Print Support Job Monitor reading and writing print job content:
 
@@ -609,7 +610,7 @@ private async void OnPdlModificationRequested(PrintWorkflowJobBackgroundSession 
 
 Sequence diagram for print job UI activation for the **PdlDataAvailable** event:
 
-![sequence diagram for print job U I activation for the P D L data available event](images/psa-api-6.png)
+:::image type="content" source="images/psa-api-6.png" alt-text="sequence diagram for print job U I activation for the P D L data available event":::
 
 C# sample code for the PSA job UI activation contract:
 
@@ -800,7 +801,7 @@ private async void OnPdlModificationRequested(PrintWorkflowJobBackgroundSession 
 
 Sequence diagram for job notification event:
 
-![sequence diagram for the job notification event](images/psa-api-7.png)
+:::image type="content" source="images/psa-api-7.png" alt-text="sequence diagram for the job notification event":::
 
 C# sample code, continuing from the workflow job UI activation for **PDLDataAvailable** event section above, to show error on job notification:
 

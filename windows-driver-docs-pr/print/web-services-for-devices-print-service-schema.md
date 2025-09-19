@@ -2,6 +2,7 @@
 title: Web Services for Devices Print Service Schema
 description: Web Services for Devices Print Service Schema
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Web Services for Devices Print Service Schema

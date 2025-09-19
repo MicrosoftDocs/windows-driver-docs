@@ -9,6 +9,7 @@ keywords:
 - send operations WDK NDIS protocol
 - receive operations WDK NDIS protocol
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Send and Receive Operations in Protocol Drivers

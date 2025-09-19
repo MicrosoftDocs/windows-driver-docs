@@ -2,6 +2,7 @@
 title: Specify Mobile Telephone Numbers
 description: Specify mobile telephone numbers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Specify mobile telephone numbers

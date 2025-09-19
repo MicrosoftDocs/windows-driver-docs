@@ -2,6 +2,7 @@
 title: SR-IOV Architecture Overview and Key Components
 description: Learn about single root I/O virtualization (SR-IOV) architecture, its components, and how it improves network virtualization performance. Explore key features and boost your network efficiency.
 ms.date: 05/22/2025
+ms.topic: concept-article
 ---
 
 # SR-IOV architecture

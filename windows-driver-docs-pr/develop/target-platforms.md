@@ -2,6 +2,7 @@
 title: Target Platform on Driver Reference Pages
 description: In the Requirements block at the bottom of Microsoft driver reference pages, you''ll see an entry called Target Platform.
 ms.date: 06/21/2024
+ms.topic: reference
 ---
 
 # Target platforms

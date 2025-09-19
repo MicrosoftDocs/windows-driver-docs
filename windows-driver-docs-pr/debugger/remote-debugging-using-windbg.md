@@ -2,6 +2,7 @@
 title: Remote Debugging Using WinDbg
 description: Remote debugging involves two debuggers running at two different locations.
 ms.date: 12/13/2024
+ms.topic: how-to
 ---
 
 # Remote Debugging Using WinDbg

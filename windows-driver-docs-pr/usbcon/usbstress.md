@@ -2,6 +2,7 @@
 description: USBStress is the combination of a user-mode application (usbstress.exe) and driver installation package for the kernel-mode driver, usbstress.sys.
 title: USBStress
 ms.date: 09/23/2024
+ms.topic: overview
 ---
 
 # USBStress package

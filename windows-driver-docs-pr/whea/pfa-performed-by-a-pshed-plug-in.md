@@ -9,6 +9,7 @@ keywords:
 - PSHED plug-in WDK WHEA
 - PSHED plug-in WDK WHEA , predictive failure analysis
 ms.date: 03/26/2025
+ms.topic: concept-article
 ---
 
 # PFA Performed by a PSHED Plug-In

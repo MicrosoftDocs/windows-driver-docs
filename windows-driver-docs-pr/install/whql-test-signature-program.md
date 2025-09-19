@@ -11,6 +11,7 @@ keywords:
 - signatures WDK , WHQL
 - test signing drivers WDK , WHQL digital signatures
 - WHQL digital signatures WDK
+ms.topic: how-to
 ---
 
 # WHQL test signature program

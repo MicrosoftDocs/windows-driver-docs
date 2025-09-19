@@ -5,6 +5,7 @@ ms.date: 12/12/2024
 ms.custom: 
 - CI 111498
 - CSSTroubleshooting
+ms.topic: troubleshooting
 ---
 
 # USB Audio 2.0 drivers

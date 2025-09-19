@@ -2,6 +2,7 @@
 title: Interrupt Moderation
 description: Learn how to use interrupt moderation to reduce the number of hardware interruptions.
 ms.date: 01/31/2025
+ms.topic: concept-article
 ---
 
 # Interrupt moderation

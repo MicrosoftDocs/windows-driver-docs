@@ -2,6 +2,7 @@
 title: Mouse Functionality
 description: "The mouse is a primary tool for discovering details about different items within GPUView's main window."
 ms.date: 05/10/2022
+ms.topic: end-user-help
 ---
 
 # Mouse Functionality

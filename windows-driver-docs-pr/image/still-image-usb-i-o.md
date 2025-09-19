@@ -2,6 +2,7 @@
 title: Still Image USB I/O
 description: Still Image USB I/O
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Still Image USB I/O

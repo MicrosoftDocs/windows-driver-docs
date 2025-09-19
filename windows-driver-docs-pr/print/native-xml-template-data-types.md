@@ -9,6 +9,7 @@ keywords:
 - ArrayLabel directive WDK GDL
 - XMLDataType directive WDK GDL
 ms.date: 06/08/2020
+ms.topic: concept-article
 ---
 
 # Native XML Template Data Types

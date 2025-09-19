@@ -2,6 +2,7 @@
 title: WMI Property Qualifier Definitions in Config.mof
 description: WMI Property Qualifier Definitions in Config.mof
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # WMI Property Qualifier Definitions in Config.mof

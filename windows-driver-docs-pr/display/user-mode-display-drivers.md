@@ -8,6 +8,7 @@ keywords:
 - user-mode display drivers WDK Windows Vista
 - Direct3D WDK display
 ms.date: 12/18/2024
+ms.topic: concept-article
 ---
 
 # User-mode display drivers
@@ -35,8 +36,6 @@ The UMD can consist of one DLL that supports multiple Direct3D versions, or it c
 [DirectX Video Acceleration 2.0](directx-video-acceleration-2-0.md)
 
 [Supporting Direct3D Version 10](supporting-direct3d-version-10.md)
-
-[Supporting Direct3D Version 10.1](supporting-direct3d-version-10-1.md)
 
 [Supporting Direct3D Version 11](supporting-direct3d-version-11.md)
 

@@ -5,6 +5,7 @@ keywords:
 - GPD file entries WDK Unidrv , numeric values
 - numeric values WDK GPD files
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Numeric Values

@@ -6,6 +6,7 @@ keywords:
 - Global Logger trace session WDK , about Global Logger sessions
 - Global Logger trace session WDK , registry entries
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Global Logger Trace Session

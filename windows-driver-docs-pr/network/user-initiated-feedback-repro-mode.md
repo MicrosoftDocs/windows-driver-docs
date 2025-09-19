@@ -2,6 +2,7 @@
 title: User-initiated feedback - repro mode
 description: This topic describes repro mode for user-initiated feedback with IHV trace logging in WDI drivers.
 ms.date: 06/15/2018
+ms.topic: concept-article
 ---
 
 # User-initiated feedback - repro mode

@@ -7,10 +7,14 @@ keywords:
 - custom capabilities
 - UWP
 - Hardware
-ms.date: 05/08/2025
+ms.date: 07/21/2025
+ms.topic: how-to
 ---
 
 # Hardware Support App (HSA): Steps for App Developers
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
 
 This article describes how to associate a device-specific app with a driver or [RPC (Remote Procedure Call)](/windows/desktop/Rpc/rpc-start-page) endpoint. When paired in this fashion, the app is referred to as a Hardware Support App (HSA). You can distribute and update a Hardware Support App through the Microsoft Store.
 
@@ -43,9 +47,7 @@ If your app communicates with an NT service, then you need to use the RPC APIs. 
 Now you're ready to request access to a custom capability from a capability owner. You need to gather the following info:
 
 - App PFN (Package Family Name) from the Microsoft Store
-
 - Name of the custom capability
-
 - Signature Hash of the app signing cert which can be generated from your .cer file using certutil.exe. The certificate must be SHA-256.
 
 To generate the signature hash, run `C:\Windows\System32\certutil.exe -dump CertificateName.cer`.
@@ -110,31 +112,19 @@ To preinstall a UWP app with custom capabilities, use [DISM - Deployment Image S
 When the target machine is in Developer Mode, you can try the following steps to debug app registration failure:
 
 1. Remove the custom capability entry from your AppX manifest.
-
 1. Build your app and deploy it.
-
 1. In a PowerShell window, type `Get-AppxPackage`.
-
 1. Look for your app in the list and verify the exact package family name for your app.
-
 1. Update your SCCD with the package family name.
-
 1. Add the custom capability entry back into your AppX manifest.
-
 1. Rebuild and deploy.
 
-## See Also
+## Related topics
 
-[Hardware Support App (HSA): Steps for Driver Developers](hardware-support-app--hsa--steps-for-driver-developers.md)
-
-[Enable your device for development](/windows/uwp/get-started/enable-your-device-for-development)
-
-[Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability)
-
-[Get started developing Windows drivers](../develop/get-started-developing-windows-drivers.md)
-
-[Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
-
-[Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide)
-
-[Universal Windows Platform (UWP)](/windows/uwp/design/basics)
+- [Hardware Support App (HSA): Steps for Driver Developers](hardware-support-app--hsa--steps-for-driver-developers.md)
+- [Enable your device for development](/windows/uwp/get-started/enable-your-device-for-development)
+- [Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability)
+- [Get started developing Windows drivers](../develop/get-started-developing-windows-drivers.md)
+- [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
+- [Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide)
+- [Universal Windows Platform (UWP)](/windows/uwp/design/basics)

@@ -7,6 +7,7 @@ keywords:
 - SFD WDK storage , AddDevice
 - AddDevice routine WDK storage
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Storage Filter Driver's AddDevice Routine

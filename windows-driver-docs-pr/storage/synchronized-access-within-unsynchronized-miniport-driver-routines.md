@@ -2,6 +2,7 @@
 title: Synchronized Access Within Miniport Driver Routines
 description: Even when a miniport driver executes in full-duplex mode or has unsynchronized processing of SRBs, it might still require synchronized access.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Synchronized Access within Miniport Driver Routines

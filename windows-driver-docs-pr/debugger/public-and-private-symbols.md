@@ -3,6 +3,7 @@ title: Public and Private Symbols
 description: Public and Private Symbols
 keywords: ["symbols, public", "symbols, private", "public symbols", "private symbols", "retail symbols", "export symbols", "symbol file, full symbol file", "symbol file, stripped symbol file", "full symbol file"]
 ms.date: 09/30/2021
+ms.topic: concept-article
 ---
 
 # Public and Private Symbols

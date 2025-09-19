@@ -4,6 +4,7 @@ description: PCM Stream Data Range
 keywords:
 - PCM stream data ranges WDK
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # PCM Stream Data Range

@@ -5,6 +5,7 @@ keywords:
 - non-COM-based rendering plug-ins WDK print
 - rendering plug-ins WDK print , non-COM-based
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Non-COM-Based Rendering Plug-Ins

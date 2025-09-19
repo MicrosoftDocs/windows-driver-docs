@@ -260,7 +260,7 @@ You can now click the "bp" link to the right of each handler to set a breakpoint
 
 ## See also
 
-[Network Driver Design Guide](../network/index.md)
+[Network Driver Design Guide](/windows-hardware/drivers/network/))
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 

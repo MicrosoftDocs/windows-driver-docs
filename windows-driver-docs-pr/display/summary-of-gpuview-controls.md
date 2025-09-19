@@ -2,6 +2,7 @@
 title: Summary of GPUView Controls
 description: "The tables in this section summarize the controls that GPUView provides."
 ms.date: 05/10/2022
+ms.topic: checklist
 ---
 
 # Summary of GPUView Controls  
