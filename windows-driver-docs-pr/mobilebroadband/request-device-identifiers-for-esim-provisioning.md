@@ -7,7 +7,7 @@ ms.topic: best-practice
 
 # Request device identifiers for eSIM provisioning
 
-Mobile operators may require device identifiers to provision an eSIM profile for users. On Windows devices, these identifiers can be accessed through the Cellular Identifiers dialog. The Cellular Device Identifiers feature enables mobile operators to request device-specific information — such as IMEI (International Mobile Equipment Identity), EID (Embedded Identity Document), MAKE, and MODEL — via a user-consented dialog in Windows Settings.
+Mobile operators might require device identifiers to provision an eSIM profile for users. On Windows devices, these identifiers can be accessed through the Cellular Identifiers dialog. The Cellular Device Identifiers feature enables mobile operators to request device-specific information — such as IMEI (International Mobile Equipment Identity), EID (Embedded Identity Document), MAKE, and MODEL — via a user-consented dialog in Windows Settings.
 
 ## What is the *ms-settings:cellular-id* protocol?
 
@@ -15,7 +15,7 @@ The `ms-settings:cellular-id` protocol is a Windows protocol link that launches 
 
 ## Supported identifiers
 
-The following identifiers are supported:
+The following identifiers are available:
 
 - **IMEI** - Identifier of the cellular device
 - **EID** - Identifier of the eSIM module  
@@ -29,7 +29,7 @@ Device identifiers can be requested in two ways:
 
 ### Method 1: Request identifiers via a callback URL
 
-Mobile operators can provide a callback URL that includes placeholders for the required device identifiers. This callback URL enables automatic population of the identifiers when the user consents to share them. The callback URL with the populated identifiers is launched in the default web browser.
+Mobile operators can provide a callback URL that includes placeholders for the required device identifiers. This callback URL automatically populates the identifiers when the user consents to share them. The system opens the callback URL with the populated identifiers in the default web browser.
 
 The callback URL must be a valid URL utilizing the HTTPS protocol. It should be appended to the Windows protocol in the following format:
 
@@ -55,7 +55,7 @@ function launchCellularIdentifiers() {
 }
 ```
 
-After user consent, the callback URL with filled identifiers would be:
+After user consent, the callback URL with filled identifiers is:
 ```
 https://contoso.com/?eid=12345678&make=VGVzdE1ha2U=&model=VGVzdE1vZGVs&iccid=012345678&imei=234567898
 ```
@@ -64,7 +64,9 @@ https://contoso.com/?eid=12345678&make=VGVzdE1ha2U=&model=VGVzdE1vZGVs&iccid=012
 
 ### Method 2: Display identifiers directly to the user
 
-Mobile operators can invoke the Windows protocol `ms-settings:cellular-id` from their web portal without a callback URL. This protocol opens a dialog in Windows Settings that displays key device identifiers, allowing users to manually copy and paste them into the operator's portal.
+Mobile operators can invoke the Windows protocol `ms-settings:cellular-id` from their web portal without a callback URL. This protocol opens a dialog in Windows Settings that displays key device identifiers and allows users to manually copy and paste them into the operator's portal.
+
+:::image type="content" source="../images/identifiers.png" alt-text="Cellular Device Identifiers dialog showing information such as IMEI, EID, ICCID, Make, and Model" title="Cellular Device Identifiers" width="640":::
 
 Example JavaScript code:
 
@@ -84,6 +86,8 @@ When the protocol is invoked, Windows displays a consent dialog asking the user 
 - **With callback URL**: After consent, the browser automatically navigates to the callback URL with populated identifiers
 - **Without callback URL**: A dialog displays the identifiers for manual copying
 
+:::image type="content" source="../images/mobile-info-share.png" alt-text="Dialog asking for customer permission to share Cellular Device Identifiers information such as IMEI, EID, ICCID, Make, and Model" title="Share Cellular Device Identifiers" width="640":::
+
 The specific identifiers shown depend on the device configuration and may include IMEI, EID, and ICCID.
 
 ## Troubleshooting
@@ -91,13 +95,19 @@ The specific identifiers shown depend on the device configuration and may includ
 The following error dialogs may appear:
 
 ### Selected SIM slot doesn't support eSIM
-This dialog appears when the callback URL requests the EID but the device is currently using a physical SIM slot or doesn't support eSIM.
+
+This dialog appears when the callback URL requests the EID but the device currently uses a physical SIM slot or doesn't support eSIM.
+
+:::image type="content" source="../images/mobile-error-no-support.png" alt-text="Error dialog: the selected SIM slot does not support eSIM." title="Error SIM slot" width="640":::
 
 ### Unexpected issue dialog
-This dialog may appear if there's an issue with the callback URL:
+
+This dialog might appear if there's an issue with the callback URL:
 - The callback URL doesn't begin with the HTTPS protocol
 - The callback URL is invalid  
 - The callback URL doesn't include at least one supported identifier
+
+:::image type="content" source="../images/mobile-error-unexpected.png" alt-text="Error dialog: the URL is not using HTTPS, is invalid, or does not include at least one supported identifier." title="Error SIM slot" width="640":::
 
 ## Best practices
 
