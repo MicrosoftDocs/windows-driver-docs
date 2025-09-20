@@ -1,26 +1,94 @@
 ---
 title: Device-Level Thermal Management
-description: Starting with Windows 8, Windows supports device-level thermal management for kernel-mode device drivers.
-ms.date: 07/21/2021
+description: Learn about Windows thermal management concepts, cooling modes, and when to implement thermal management in your device drivers.
+ms.date: 09/19/2025
 ms.topic: concept-article
 ---
 
-# Device-Level Thermal Management
+# Device-level thermal management
 
-Starting with Windows 8, Windows supports device-level thermal management for kernel-mode device drivers. Windows thermal management has these goals:
+Starting with Windows 8, Windows supports thermal management for kernel-mode device drivers. This coordinated approach helps prevent overheating and ensures reliable device operation across the platform.
 
-- Prevent devices in a hardware platform from overheating, which can cause them to operate incorrectly or unreliably.
+This article provides an overview of device-level thermal management concepts. For implementation information, see [Thermal Management Implementation](thermal-management-implementation.md).
 
-- Avoid making user-accessible surfaces on a computer case too hot to comfortably touch or hold.
+## Goals of thermal management
 
-Similar to power management, thermal management must be implemented on a platform-wide basis by coordinating device-local thermal constraints in the context of global thermal conditions. By providing global coordination, the operating system can distribute cooling requirements across multiple devices in a way that minimizes interference with tasks that the user is performing. Thermal requirements can be balanced intelligently with other system requirements, such as power management and responsiveness to user actions.
+Windows thermal management has these primary goals:
 
-In contrast, a device driver that tries to manage thermal levels for its device locally, in isolation from the other devices in the platform, is more likely to make poor decisions that result in inefficient power usage and an unresponsive user interface (UI).
+- Prevent devices in a hardware platform from overheating: Keep devices operating within safe temperature ranges to ensure they operate correctly and reliably.
+- User safety: Prevent user-accessible surfaces from becoming too hot to comfortably touch or hold.
+- System optimization: Balance thermal requirements with power management and user responsiveness needs. Windows intelligently balances the thermal-level requirements of the devices in the platform to extend the time that the platform can operate on a battery charge, and to maintain the appearance of a computer that is always on and always connected.
 
-To participate in global thermal management, a device driver implements a [GUID_THERMAL_COOLING_INTERFACE](global-thermal-mgmt.md) driver interface. During system startup, a system-supplied driver, Acpi.sys, queries the device drivers in the system to determine which of them support this interface. A driver can receive an [**IRP_MN_QUERY_INTERFACE**](./irp-mn-query-interface.md) request for this interface any time after the [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine for the driver's device is called. In response to this request, the driver for a device that has thermal management capabilities can supply a pointer to a [**THERMAL_COOLING_INTERFACE**](/previous-versions/hh698275(v=vs.85)) structure. This structure contains pointers to a set of callback routines that are implemented by the driver. To manage thermal levels in the device, the operating system calls these routines directly.
+## Platform-wide coordination
 
-The two principal routines in this interface are [*ActiveCooling*](/previous-versions/hh698235(v=vs.85)) and [*PassiveCooling*](/previous-versions/hh698270(v=vs.85)). The driver's *ActiveCooling* routine engages or disengages active cooling in the device. For example, this routine might turn a fan on and off. The driver's *PassiveCooling* routine controls the degree to which the performance of the device must be throttled to maintain acceptable thermal levels. For example, this routine might be called to run the device at half speed to prevent it from overheating.
+Similar to power management, thermal management works best when implemented on a platform-wide basis rather than in isolation. The OS coordinates device-local thermal constraints in the context of global thermal conditions. It:
 
-By default, before the first call to the *ActiveCooling* routine, active cooling is disengaged (for example, the fan is turned off). Before the first call to the *PassiveCooling* routine, the driver configures the device to run at full performance, with no cooling restrictions.
+- Distributes cooling requirements across multiple devices
+- Minimizes interference with tasks that the user is performing
+- Balances thermal needs with power management and system responsiveness
 
-A driver can implement one or both of these routines, depending on the capabilities of the device hardware. For more information, see [Passive and Active Cooling Modes](passive-and-active-cooling-modes.md).
+In contrast, device drivers that manage thermal levels in isolation from other platform devices are more likely to make suboptimal decisions that result in inefficient power usage and an unresponsive user interface (UI).
+
+## Thermal zones and ACPI
+
+The Advanced Configuration and Power Interface (ACPI) enables hardware platform vendors to partition their platforms into regions called **thermal zones**.
+
+Sensor devices track the temperature in each thermal zone. When a thermal zone starts to overheat, the OS can take coordinated actions to cool down the devices in that zone. These actions can be categorized as either passive cooling or active cooling.
+
+## Cooling modes
+
+There are two primary approaches to thermal management:
+
+- Passive cooling
+- Active cooling
+
+In response to changes in computer usage or environmental conditions, the operating system (OS) uses one (or possibly both) of these approaches to manage thermal levels dynamically in the hardware platform.
+
+### Passive cooling
+
+To perform passive cooling, the OS throttles one or more devices in the thermal zone to reduce the heat generated by these devices. Throttling might involve reducing the frequency of the clock that drives a device, lowering the voltage supplied to the device, or turning off a part of the device. As a rule, throttling limits device performance.
+
+Examples of passive cooling include:
+
+- Running a processor at half speed
+- Dimming display backlights
+- Reducing GPU performance
+- Slowing battery charging rates
+
+### Active cooling
+
+To perform active cooling, the OS turns on a cooling device, such as a fan. Where passive cooling decreases the power consumed by the devices in a thermal zone, active cooling increases power consumption.
+
+Examples of active cooling include:
+
+- Turning fans on and off
+- Adjusting fan speeds
+- Activating liquid cooling systems
+
+## Choosing a cooling mode
+
+In the design of a hardware platform, the decision to use passive cooling or active cooling is based on:
+
+- The physical characteristics of the hardware platform
+- The power source for the platform
+- How the platform is used
+
+Active cooling might be more straightforward to implement, but has several potential drawbacks:
+
+- The addition of active cooling devices (for example, fans) might increase the cost and size of the hardware platform.
+- The power required to run an active cooling device might reduce the time that a battery-powered platform can operate on a battery charge.
+- Fan noise might be undesirable in some applications, and fans require ventilation.
+
+Passive cooling is the only cooling mode available to many mobile devices. In particular, handheld computing platforms are likely to have closed cases and run on batteries. These platforms typically contain devices that can throttle performance to reduce heat generation. These devices include processors, graphics processing units (GPUs), battery chargers, and display backlights.
+
+Handheld computing platforms typically use System on a Chip (SoC) chips that contain processors and GPUs, and the SoC hardware vendors supply the thermal management software for these devices. However, peripheral devices, such as battery chargers and display backlights, are external to SoC chips. The vendors for these devices must supply device drivers, and these drivers must provide any thermal management support that might be required for the devices. A relatively simple way for a device driver to support thermal management is to implement the [GUID_THERMAL_COOLING_INTERFACE driver interface](thermal-management-implementation.md).
+
+## See also
+
+- [Thermal Management Overview](/windows-hardware/design/device-experiences/thermal-management-in-windows)
+- [Thermal Management Design Guide](/windows-hardware/design/device-experiences/design-guide)
+- [Thermal User Experience](/windows-hardware/design/device-experiences/user-experience)
+- [Examples, Requirements, and Diagnostics](/windows-hardware/design/device-experiences/examples--requirements-and-diagnostics)
+- [Thermal Management Data Types](/windows-hardware/design/device-experiences/thermal-management-datatypes)
+- [Thermal Management IOCTLs](/windows-hardware/design/device-experiences/thermal-management-ioctls)
+- [Thermal Management Functions](/windows-hardware/design/device-experiences/thermal-management-functions)
