@@ -1,9 +1,9 @@
 ---
 title: CLFS Logfile Authentication
 description: CLFS logfile authentication
-keywords: ["Common Log File System WDK kernel , authentication", "CLFS WDK kernel ,authentication ", "authentication WDK CLFS",
- "Common Log File System WDK kernel , security mitigation", "CLFS WDK kernel , security mitigation ", "security mitigation WDK CLFS"]
-ms.date: 04/02/2025
+keywords: ["Common Log File System WDK kernel , authentication", "CLFS WDK kernel , authentication", "authentication WDK CLFS", "Common Log File System WDK kernel , security mitigation", "CLFS WDK kernel , security mitigation", "security mitigation WDK CLFS"]
+ms.date: 09/19/2025
+ms.topic: concept-article
 ---
 
 # CLFS logfile authentication
