@@ -1009,12 +1009,10 @@
     href: sharing-processor-resources-during-startup-from-a-low-power-state.md
   - name: Fast Startup from a Low-Power State
     href: fast-startup-from-a-low-power-state.md
-  - name: Device-Level Thermal Management
+  - name: Device-level thermal management
     href: device-level-thermal-management.md
-  - name: Passive and Active Cooling Modes
-    href: passive-and-active-cooling-modes.md
-  - name: Global thermal management
-    href: global-thermal-mgmt.md
+  - name: Thermal management implementation
+    href: thermal-management-implementation.md
 - name: Windows Management Instrumentation (WMI)
   items:
   - name: Implementing WMI
