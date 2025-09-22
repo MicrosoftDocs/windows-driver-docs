@@ -1,7 +1,7 @@
 ---
 title: Windows Drivers Kit (WDK) release notes
 description: Highlights the latest features in new WDK releases.
-ms.date: 10/01/2025
+ms.date: 09/23/2025
 ms.topic: release-notes
 ---
 

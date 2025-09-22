@@ -5,7 +5,7 @@ keywords:
 - Windows Driver Kit
 - previous versions
 - WDK
-ms.date: 10/01/2025
+ms.date: 09/23/2025
 ms.topic: feature-availability
 ---
 
@@ -17,7 +17,7 @@ The table below list previous versions of Windows Driver Kit (WDK) that are no l
 
 | Windows Version | Build Number | Visual Studio | WDK | Comments |
 | --- | --- | --- | --- | --- |
-| Windows 11 25H2 (Ge) | 26100.6584 | VS 2022 | [WDK]([TBD]]), [EWDK]([TBD]), [WDK NuGet]([TBD]]) | 2500B (latest) |
+| Windows 11 25H2 (Ge) | 26100.6584 | VS 2022 | [WDK]([TBD]]), [EWDK]([TBD]), [WDK NuGet]([TBD]]) | 2509B (latest) |
 | Windows 11 24H2 (Ge) | 26100.4202 | VS 2022 | Removed | 2505D |
 | Windows 11 24H2 (Ge) | 26100.3323 | VS 2022 | Removed | 2502D |
 | Windows 11 24H2 (Ge) | 26100.2454 | VS 2022 | Removed | 2411D |
