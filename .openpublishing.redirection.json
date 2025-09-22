@@ -9771,6 +9771,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows-driver-docs-pr/kernel/global-thermal-mgmt.md",
+      "redirect_url": "/windows-hardware/drivers/kernel/device-level-thermal-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/kernel/passive-and-active-cooling-modes.md",
+      "redirect_url": "/windows-hardware/drivers/kernel/device-level-thermal-management",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/kernel/implementing-plug-and-play.md",
       "redirect_url": "/windows-hardware/drivers/kernel/introduction-to-plug-and-play",
       "redirect_document_id": false
