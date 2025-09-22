@@ -1,7 +1,7 @@
 ---
 title: Registry Entries for StorPort Miniport Drivers
 description: StorPort defines a set of registry entries to configure the behavior of StorPort and miniport operations.
-ms.date: 09/30/2024
+ms.date: 09/22/2025
 ms.topic: reference
 ---
 
@@ -15,7 +15,10 @@ StorPort defines a set of registry entries to configure the behavior of StorPort
 
 ## Service Entries
 
-Registry entries for the miniport are keyed by the *\\Parameters* subkey and the *\\Parameters\\Device* subkey of the miniport's services key. For individual adapter entries, the subkey is extended to include the adapter index, such as *\\Parameters\\Device1*.
+Registry entries for StorPort miniport drivers can be configured at two different scopes:
+
+* **Miniport scope**: Settings that apply to all adapters managed by the miniport driver are located under the *\\Parameters\\Device* subkey of the miniport's services key.
+* **Adapter scope**: Settings that apply to a specific adapter are located under *\\Parameters\\Device<adapter#>*, where the adapter number (such as *\\Parameters\\Device1*) identifies the individual adapter instance.
 
 ### Name: DriverParameter
 
@@ -99,7 +102,8 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
   * Default: 1000
   * Minimum: 16
   * Maximum: 255
-* Description: The number or requests that an adapter can process. When set, the range is smaller than the default.
+* Description: The number of requests that an adapter can queue and process simultaneously. When this registry value is set, it overrides the default and limits the queue depth to the specified value (16-255 range).
+* Applies: Starting with Windows Server 2003.
 
 ### Name: BusType
 
