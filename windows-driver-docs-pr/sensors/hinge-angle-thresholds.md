@@ -1,13 +1,13 @@
 ---
 title: Hinge Angle Sensor Thresholds
-description: This topic provides information about the hinge angle sensor thresholds.
+description: This article provides information about the hinge angle sensor thresholds.
 ms.date: 09/22/2025
 ms.topic: reference
 ---
 
 # Hingle angle thresholds
 
-This topic provides information about the hinge angle sensor thresholds.
+This article provides information about the hinge angle sensor thresholds.
 
 The following table lists the available thresholds values for the hinge angle sensor. For more information about the types shown in the type column, see the [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant).
 
@@ -21,6 +21,6 @@ When PKEY_SensorData_HingeAngle is set to 0.0f, the driver must report sample re
 
 Hinge angle sensor drivers must always report one sample reading immediately after the sensors class extension calls the [EvtSensorStart](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config) callback irrespective of the threshold values. This sample is known as the known as *initial sample reading*.
 
-## Related topics
+## Related articles
 
 - [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
