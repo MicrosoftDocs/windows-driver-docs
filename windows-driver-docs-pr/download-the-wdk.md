@@ -34,7 +34,7 @@ Beginning with WDK version 10.0.26100.1, the WDK supports the development, testi
 
 The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2022 System Requirements](/visualstudio/releases/2022/system-requirements).
 
-Driver deveploment for this release is supported in Visual Studio 2022 Community, Professional, or Enterprise edition.
+Driver development for this release is supported in Visual Studio 2022 Community, Professional, or Enterprise edition.
 
 [Download Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
 
