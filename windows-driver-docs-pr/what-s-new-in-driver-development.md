@@ -1,7 +1,7 @@
 ---
 title: What's New in Driver Development for Windows 11, Version 24H2
 description: This section describes new features for driver development in Windows 11, version 24H2.
-ms.date: 09/18/2024
+ms.date: 09/23/2025
 ms.topic: whats-new
 ---
 
@@ -22,14 +22,15 @@ Starting from WDK version 10.0.26100.1, WDK now supports development, testing an
 Updates to the [ACX audio class extensions overview](./audio/acx-audio-class-extensions-overview.md) and the [Windows 11 APIs for Audio Processing Objects](./audio/windows-11-apis-for-audio-processing-objects.md) articles including new information on the following:
 
 - [ACX multi circuit composition](./audio/acx-multi-circuit-composition.md)
-
 - [ACX multi stack cross driver communications](./audio/acx-multi-stack.md)
-
 - [ACX audio data formats and data format lists](./audio/acx-data-formats.md)
-
 - [ACX power management](./audio/acx-power-management.md)
-
 - [ACX WDF driver lifetime management](./audio/acx-wdf-driver-lifetime-management.md)
+
+### SoundWire Device Class for Audio (SDCA)
+
+The SDCA driver stack now supports the SDCA Companion Amp Function and Multichannel Capture scenarios. All SDCA drivers are included Inbox.
+Enable connectivity to Wi-Fi 7 enterprise networks.
 
 ## Camera and streaming media
 
@@ -44,12 +45,9 @@ Three new camera articles for Windows 11, version 24H2 (also applies to Windows 
 New camera KS Properties and DDIs:
 
 - [KSPROPERTY_CAMERACONTROL_EXTENDED_FRAMERATE_THROTTLE](./stream/ksproperty-cameracontrol-extended-framerate-throttle.md)
-
 - [KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW2](./stream/ksproperty-cameracontrol-extended-fieldofview2.md)
-
 - [KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW2_CONFIGCAPS](./stream/ksproperty-cameracontrol-extended-fieldofview2-configcaps.md)
-
-- [**KSCAMERA_EXTENDEDPROP_FIELDOFVIEW2_CONFIGCAPS**](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kscamera_extendedprop_fieldofview2_configcaps)
+- **[KSCAMERA_EXTENDEDPROP_FIELDOFVIEW2_CONFIGCAPS](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kscamera_extendedprop_fieldofview2_configcaps)**
 
 Updated UVC MSXUs for framerate throttle and FoV2 additions. For more information, see [Microsoft extensions to USB Video Class 1.5 specification](./stream/uvc-extensions-1-5.md).
 
@@ -64,9 +62,7 @@ GPUs are increasingly used in artificial intelligence and machine learning scena
 - A [GPU native fence synchronization object](./display/native-gpu-fence-objects.md) is added as an extension to the monitored fence object, supporting the following extra features:
 
   - GPU wait on monitored fence value, which allows for high performance engine-to-engine synchronization without requiring CPU round trips.
-  
   - Conditional interrupt notification only for GPU fence signals that have CPU waiters, enabling substantial power savings.
-  
   - Fence value storage in the GPU's local memory.
 
 - [User-mode work submission](./display/user-mode-work-submission.md) is an in-progress feature that isn't yet enabled for final use. This feature allows user-mode drivers to submit work directly to the GPU without kernel-mode intervention.
@@ -98,14 +94,19 @@ Starting in Windows 11, version 24H2:
 - UDP Receive Segment Coalescing Offload (URO) is a new hardware offload feature that enables network interface cards (NICs) to coalesce UDP receive segments. For more information, see [UDP Receive Segment Coalescing Offload (URO)](network/udp-rsc-offload.md) and [NetAdapterCx URO](netcx/rsc-offload.md).
 
 - [WiFiCx Wi-Fi 7](./netcx/wificx-wi-fi-7.md) introduces support for Wi-Fi 7 features, providing faster connectivity speeds, lower latency, and improved security. WiFiCx Wi-Fi 7 enables:
-  
+
   - Multi-Link Operation (MLO) with roaming differentiation to leverage multiple simultaneous channels to the Wi-Fi access point (AP).
-  
   - Enhanced capabilities for WPA3-SAE authentication and Opportunistic Wireless Encryption (OWE) with GCMP-256 cipher.
 
 - [WiFiCx WPA3 SoftAP](./netcx/wificx-wpa3-softap.md) enables devices to set up a Soft Access Point (SoftAP) using the Wi-Fi Protected Access 3 - Simultaneous Authentication of Equals (WPA3-SAE) security protocol.
 
 - [WiFiCx QoS R1](./netcx/qos-r1.md) introduces advanced traffic management capabilities for WiFiCx devices. QoS R1 enables prioritization of Wi-Fi data packets through Mirrored Stream Classification Service (MSCS) and QoS Mapping (DSCP-to-UP Mapping).
+
+- The WDK adds changes to the WiFiCx public header and library to enable IHV drivers to connect to Wi-Fi 7 enterprise networks. The WiFiCx driver TLV parser version is bumped up to 2.0.13 and capabilities are added to enable both Windows and the driver to be aware of Wi-Fi 7 enterprise connectivity support from the other.
+
+### Packet Monitor Clnt NPIs
+
+Pktmon Clnt NPIs are available for kernel-mode drivers to push network packet notifications into the PktMon platform. You can use these NPIs to diagnose performance and network connectivity issues. The NPIs allow run-time registration with the PktMon platform so that drivers can safely run on systems without Pktmon support.
 
 ## Kernel
 
@@ -119,20 +120,26 @@ Four new *wdm.h* power management DDIs for Windows 11, version 24H2:
 
 - **[PoUnregisterFromEffectivePowerModeNotifications](/windows-hardware/drivers/ddi/wdm/nf-wdm-pounregisterfromeffectivepowermodenotifications)** function - Unregisters from effective power mode change notifications.
 
+### usermode_accessors.h
+
+Contains dedicated functions for the kernel to use when reading from and writing to the user-mode virtual address space.
+
 ## Storage drivers
 
 - A storport miniport driver can now read configuration data from more locations within the registry. For more information, see **[StorPortReadRegistryKey](/windows-hardware/drivers/ddi/storport/nf-storport-storportreadregistrykey)** and **[StorPortReadDriverRegistry](/windows-hardware/drivers/ddi/storport/nf-storport-storportreaddriverregistry)**.
 
 - Stornvme supports more vendor-specific NVMe features and log pages. For more information, see the *[StorageAdapterProtocolSpecificPropertyEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-storage_property_id)*, *[StorageDeviceProtocolSpecificPropertyEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-storage_property_id)*, *[NVMeDataTypeLogPageEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-_storage_protocol_nvme_data_type)*, and *[NVMeDataTypeFeatureEx](/windows-hardware/drivers/ddi/ntddstor/ne-ntddstor-_storage_protocol_nvme_data_type)* enum values. The [ntddstor.h](/windows-hardware/drivers/ddi/ntddstor/) header file contains usage guidance for these new property identifiers and data types as well as their associated input and output structures.
 
+### Icekeymaninterface.h
+
+- Adds new flag to capabilities structure for implementation to attest FIPS module compliance. 
+- Introduces new interface API for validating a wrapped key can be unwrapped by the system.
+
 ## Install
 
 - **INF AddComClass directive**: An *AddComClass* directive is used within a `com-server-install-section` and registers a COM class.
-
 - **INF AddComServer directive**: An *AddComServer* directive is used within a `DDInstall.COM` section and registers a COM server.
-
 - **INF DDInstall.COM section**: The `DDInstall.COM` section contains one or more INF *AddComServer* directives that reference other INF-writer-defined sections in an INF file.
-
 - The driver package INF registry conversion tool (`reg2inf.exe`) converts a registry key and its values or a COM .dll implementing a **[DllRegisterServer](/windows/win32/api/olectl/nf-olectl-dllregisterserver)** routine into a set of [INF AddReg directives](./install/inf-addreg-directive.md) or [INF DDInstall.COM section](./install/inf-ddinstall-com-section.md) for in-proc COM servers for inclusion into a driver package INF file.
 
 ## USB
@@ -157,32 +164,21 @@ Major new WinDbg features are listed here. For full details on the updates to Wi
 
 You can now live debug a Linux process. For more information, see these articles:
 
-[Linux live remote process debugging](./debugger/linux-live-remote-process-debugging.md)
-
-[Linux symbols and sources](./debugger/linux-dwarf-symbols.md)
+- [Linux live remote process debugging](./debugger/linux-live-remote-process-debugging.md)
+- [Linux symbols and sources](./debugger/linux-dwarf-symbols.md)
 
 ### Other WinDbg updates and new features
 
 - [Source Code Extended Access](./debugger/source-code-extended-access.md)
-
 - [Open Enclave debugging](./debugger/open-enclave-debugging.md)
-
 - [Ambiguous breakpoint resolution](./debugger/ambiguous-breakpoint-resolution.md)
-
 - [WinDbg - Restricted Mode](./debugger/windbg-restricted-mode-preview.md)
-
 - Improved [JavaScript Debugger Scripting - JavaScript Debugging](./debugger/javascript-debugger-scripting.md#javascript-debugging)
-
 - Accessibility improvements
-
 - Time Travel Debugging on ARM64
-
 - Smart number selection and search
-
 - New disassembly window
-
 - Updates to [Supported Ethernet NICs for Network Kernel Debugging in Windows 11](./debugger/supported-ethernet-nics-for-network-kernel-debugging-in-windows-11.md)
-
 - Expanded bug check information including new bug checks described in [Bug Check Code Reference](./debugger/bug-check-code-reference2.md)
 
 ## Related articles
@@ -190,13 +186,9 @@ You can now live debug a Linux process. For more information, see these articles
 For information on what was new for drivers in past Windows releases, see the following pages:
 
 - [Driver development changes for Windows 11, version 23H2](driver-changes-for-windows-11-version-23h2.md)
-
 - [Driver development changes for Windows 11, version 22H2](driver-changes-for-windows-11-version-22h2.md)
-
 - [Driver development changes for Windows 11, version 21H2](driver-changes-for-windows-11-version-21h2.md)
-
 - [Driver development changes for Windows Server 2022](driver-changes-for-windows-server-2022.md)
-
 - [Driver development changes for Windows 10, version 2004](driver-changes-for-windows-10-version-2004.md)
 
 [Back to Top](#top)

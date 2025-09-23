@@ -13,17 +13,18 @@ The following features and bug fixes are in Windows 11 24H2 WDK update.
 
 *Released Nov 01, 2025*
 
-
 ### SoundWire Device Class for Audio (SDCA)
 
 The SDCA driver stack now supports the SDCA Companion Amp Function and Multichannel Capture scenarios. All SDCA drivers are included Inbox.
 Enable connectivity to Wi-Fi 7 enterprise networks.
 
-The WDK adds changes to the WiFiCx public header and library to enable Ihv drivers to connect to Wi-Fi 7 Enterprise networks. The WiFiCx driver tlv parser version is bumped up to 2.0.13 and capabilities are added to enable both the OS and the driver to be aware of Wi-Fi 7 enterprise connectivity support from the other.
+### Networking
+
+The WDK adds changes to the WiFiCx public header and library to enable IHV drivers to connect to Wi-Fi 7 enterprise networks. The WiFiCx driver TLV parser version is bumped up to 2.0.13 and capabilities are added to enable both Windows and the driver to be aware of Wi-Fi 7 enterprise connectivity support from the other.
 
 ### Icekeymaninterface.h
 
-- Adds new flag to capabilities structure for implementation to attest FIPS module compliance. 
+- Adds new flag to capabilities structure for implementation to attest FIPS module compliance.
 - Introduces new interface API for validating a wrapped key can be unwrapped by the system.
 
 ### Packet Monitor Clnt NPIs
@@ -33,7 +34,6 @@ Pktmon Clnt NPIs are available for kernel-mode drivers to push network packet no
 ### usermode_accessors.h
 
 Contains dedicated functions for the kernel to use when reading from and writing to the user-mode virtual address space.
-
 
 ## Version 10.0.26100.4202
 
