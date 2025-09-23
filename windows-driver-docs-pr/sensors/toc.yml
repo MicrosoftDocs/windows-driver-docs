@@ -16,8 +16,6 @@
       href: magnetometer-thresholds.md
     - name: Gyroscope thresholds
       href: gyroscope-thresholds.md
-    - name: Hinge angle sensor thresholds
-      href: hinge-angle-thresholds.md
     - name: Orientation sensor thresholds
       href: orientation-sensor-thresholds.md
     - name: Light sensor thresholds
@@ -54,8 +52,6 @@
       href: gravity-vector-data-fields.md
     - name: Gyroscope data fields
       href: gyroscope-data-fields.md
-    - name: Hinge angle sensor data fields
-      href: hinge-angle-data-fields.md
     - name: Light sensor data fields
       href: light-sensor-data-fields.md
     - name: Orientation sensor data fields
