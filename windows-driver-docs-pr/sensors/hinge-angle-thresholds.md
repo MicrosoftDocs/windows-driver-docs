@@ -5,7 +5,7 @@ ms.date: 09/23/2025
 ms.topic: reference
 ---
 
-# Hingle angle thresholds
+# Hinge angle sensor thresholds
 
 This article provides information about the hinge angle sensor thresholds.
 
