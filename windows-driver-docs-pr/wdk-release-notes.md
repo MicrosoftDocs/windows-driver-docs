@@ -1,13 +1,39 @@
 ---
 title: Windows Drivers Kit (WDK) release notes
 description: Highlights the latest features in new WDK releases.
-ms.date: 07/01/2025
+ms.date: 09/23/2025
 ms.topic: release-notes
 ---
 
 # Windows Driver Kit (WDK) release notes
 
 The following features and bug fixes are in Windows 11 24H2 WDK update.
+
+## Version 10.0.26100.6584
+
+*Released September 23, 2025*
+
+### SoundWire Device Class for Audio (SDCA)
+
+The SDCA driver stack now supports the SDCA Companion Amp Function and Multichannel Capture scenarios. All SDCA drivers are included Inbox.
+Enable connectivity to Wi-Fi 7 enterprise networks.
+
+### Networking
+
+The WDK adds changes to the WiFiCx public header and library to enable IHV drivers to connect to Wi-Fi 7 enterprise networks. The WiFiCx driver TLV parser version is bumped up to 2.0.13 and capabilities are added to enable both Windows and the driver to be aware of Wi-Fi 7 enterprise connectivity support from the other.
+
+### icekeymaninterface.h
+
+- Adds new flag to capabilities structure for implementation to attest FIPS module compliance.
+- Introduces new interface API for validating a wrapped key can be unwrapped by the system.
+
+### Packet Monitor Clnt NPIs
+
+Pktmon Clnt NPIs are available for kernel-mode drivers to push network packet notifications into the PktMon platform. You can use these NPIs to diagnose performance and network connectivity issues. The NPIs allow run-time registration with the PktMon platform so that drivers can safely run on systems without Pktmon support.
+
+### usermode_accessors.h
+
+Contains dedicated functions for the kernel to use when reading from and writing to the user-mode virtual address space.
 
 ## Version 10.0.26100.4202
 
