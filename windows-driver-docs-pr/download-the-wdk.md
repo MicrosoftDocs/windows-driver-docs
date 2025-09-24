@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 07/01/2025
+ms.date: 09/23/2025
 ms.topic: how-to
 ---
 
@@ -30,15 +30,13 @@ WDK is available as a NuGet package starting from version 10.0.26100.1. Access a
 
 Beginning with WDK version 10.0.26100.1, the WDK supports the development, testing, and deployment of drivers on ARM64 machines. You can install and run the WDK and EWDK natively on ARM64 hardware. The WDK also continues to support the emulation of x86 KMDF and UMDF 2 drivers on ARM64 hardware. You can now debug and deploy drivers to an ARM64 target machine from both ARM64 and x64 host machines. When you install the WDK or EWDK on ARM64 machines, the process automatically identifies and installs all necessary dependencies, including build tools, binaries, and libraries.
 
-## ![download icon for Visual Studio](images/download-install.png) Step 1: Install Visual Studio 2022
+## ![Download icon for Visual Studio](images/download-install.png) Step 1: Install Visual Studio 2022
 
 The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2022 System Requirements](/visualstudio/releases/2022/system-requirements).
 
-The following editions of Visual Studio 2022 support driver development for this release:
+Driver development for this release is supported in Visual Studio 2022 Community, Professional, or Enterprise edition.
 
-- [Download Visual Studio Community 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=17)
-- [Download Visual Studio Professional 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=17)
-- [Download Visual Studio Enterprise 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=17)
+[Download Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
 
 When you install Visual Studio 2022, select the **Desktop development with C++** workload. Then, under Individual Components, add:
 
@@ -58,7 +56,7 @@ When you install Visual Studio 2022, select the **Desktop development with C++**
 > [!NOTE]
 > The **Desktop development with C++** workload doesn't install the Windows SDK 10.0.26100.1.
 
-## ![download icon for SDK](images/download-install.png) Step 2: Install the SDK
+## ![Download icon for SDK](images/download-install.png) Step 2: Install the SDK
 
 Installing Visual Studio doesn't download the latest SDK version. Use the following link to install the latest SDK version:
 
@@ -66,9 +64,9 @@ Installing Visual Studio doesn't download the latest SDK version. Use the follow
 
 The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, make sure that the build numbers match. For more information, see [Kit versioning](#kit-versioning).
 
-## ![download icon for WDK](images/download-install.png) Step 3: Install the WDK
+## ![Download icon for WDK](images/download-install.png) Step 3: Install the WDK
 
-- [Download the latest WDK](https://go.microsoft.com/fwlink/?linkid=2324617)
+- [Download the latest WDK](https://go.microsoft.com/fwlink/?linkid=2335869)
 
 Starting with version 17.11.0, the WDK VSIX is included as an individual component in Visual Studio. Before installing the WDK, the installer checks if a compatible version of the VSIX is already installed. If the installer doesn't find the WDK VSIX, it prompts you to install it. To install the WDK VSIX, launch the Visual Studio Installer, select **Modify**, go to the **Individual Components** tab, add **Windows Driver Kit**, and then select **Modify**.
 
@@ -77,7 +75,7 @@ Starting with version 17.11.0, the WDK VSIX is included as an individual compone
 > [!TIP]
 > If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this issue, launch Visual Studio Installer, select **Modify**, add **Windows Driver Kit** in the **Individual Component** tab, and select **Modify**.
 
-## ![download icon for EWDK](images/download-install.png) Enterprise WDK (EWDK)
+## ![Download icon for EWDK](images/download-install.png) Enterprise WDK (EWDK)
 
 Instead of downloading Visual Studio, the SDK, and the WDK separately, you can download the EWDK. The EWDK is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.
 

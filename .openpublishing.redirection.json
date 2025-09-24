@@ -8116,6 +8116,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows-driver-docs-pr/driver-changes-for-windows-10-version-2004.md",
+      "redirect_URL": "/windows-hardware/drivers/what-s-new-in-driver-development",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/driver-changes-for-windows-11.md",
       "redirect_URL": "/windows-hardware/drivers/what-s-new-in-driver-development",
       "redirect_document_id": false
