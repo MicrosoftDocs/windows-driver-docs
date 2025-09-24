@@ -197,6 +197,4 @@ For information on what was new for drivers in past Windows releases, see the fo
 
 - [Driver development changes for Windows Server 2022](driver-changes-for-windows-server-2022.md)
 
-- [Driver development changes for Windows 10, version 2004](driver-changes-for-windows-10-version-2004.md)
-
 [Back to Top](#top)
