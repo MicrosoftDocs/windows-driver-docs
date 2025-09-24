@@ -11,7 +11,7 @@ The following features and bug fixes are in Windows 11 24H2 WDK update.
 
 ## Version 10.0.26100.6584
 
-*Released Nov 01, 2025*
+*Released September 23, 2025*
 
 ### SoundWire Device Class for Audio (SDCA)
 
@@ -22,7 +22,7 @@ Enable connectivity to Wi-Fi 7 enterprise networks.
 
 The WDK adds changes to the WiFiCx public header and library to enable IHV drivers to connect to Wi-Fi 7 enterprise networks. The WiFiCx driver TLV parser version is bumped up to 2.0.13 and capabilities are added to enable both Windows and the driver to be aware of Wi-Fi 7 enterprise connectivity support from the other.
 
-### Icekeymaninterface.h
+### icekeymaninterface.h
 
 - Adds new flag to capabilities structure for implementation to attest FIPS module compliance.
 - Introduces new interface API for validating a wrapped key can be unwrapped by the system.
