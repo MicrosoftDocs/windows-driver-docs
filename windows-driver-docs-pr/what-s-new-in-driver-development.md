@@ -7,11 +7,11 @@ ms.topic: whats-new
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 25H2
 
-This section describes new features and updates for driver development in Windows 11, version 25H2. To target this version of Windows, you can use [WDK 10.0.26100.6584](./download-the-wdk.md) (released September 23, 2025).
+This section describes new features and updates for driver development in Windows 11, version 25H2. To target this version of Windows, you can use [Windows Driver Kit (WDK) 10.0.26100.6584](./download-the-wdk.md) (released September 23, 2025).
 
 ## WDK NuGet package support
 
-The WDK NuGet package consists of essential libraries, headers, DLL, tools and metadata used for building Windows drivers that can be shared and supported by modern CI/CD pipelines. Users can access and consume the NuGet packages directly from nuget.org within Visual Studio. Using NuGet with the WDK provides a convenient solution for WDK acquisition and updates. It manages dependencies such as the SDK, to help keep the driver development tool chain up to date. For more information, see [Install the latest WDK using NuGet - Step by Step](install-the-wdk-using-nuget.md).
+The WDK NuGet package consists of essential libraries, headers, DLL, tools, and metadata. Developers use these components to build Windows drivers. Modern CI/CD pipelines can share and support these components. Users can access and consume the NuGet packages directly from nuget.org within Visual Studio. Using NuGet with the WDK provides a convenient solution for WDK acquisition and updates. It manages dependencies such as the SDK, to help keep the driver development tool chain up to date. For more information, see [Install the latest WDK using NuGet - Step by Step](install-the-wdk-using-nuget.md).
 
 ## Audio
 
@@ -22,7 +22,7 @@ Enable connectivity to Wi-Fi 7 enterprise networks.
 
 ## Network drivers
 
-- The WDK adds changes to the WiFiCx public header and library to enable IHV drivers to connect to Wi-Fi 7 enterprise networks. The WiFiCx driver TLV parser version is bumped up to 2.0.13 and capabilities are added to enable both Windows and the driver to be aware of Wi-Fi 7 enterprise connectivity support from the other.
+- The WDK adds changes to the WiFiCx public header and library to enable IHV drivers to connect to Wi-Fi 7 enterprise networks. The WiFiCx driver TLV parser version is now 2.0.13. New capabilities allow Windows and the driver to detect Wi-Fi 7 enterprise connectivity support from each other.
 
 ### Packet Monitor Clnt NPIs
 
@@ -38,8 +38,8 @@ Contains dedicated functions for the kernel to use when reading from and writing
 
 ### Icekeymaninterface.h
 
-- Adds new flag to capabilities structure for implementation to attest FIPS module compliance. 
-- Introduces new interface API for validating a wrapped key can be unwrapped by the system.
+- Adds new flag to capabilities structure for implementation to attest FIPS module compliance.
+- Introduces new interface API for validating a wrapped key that the system can unwrap.
 
 ## Related articles
 
