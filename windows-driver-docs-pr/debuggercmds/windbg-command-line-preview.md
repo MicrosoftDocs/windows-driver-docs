@@ -1,5 +1,5 @@
 ---
-title: "WinDbg - Command-line startup options"
+title: "WinDbg - Command-Line Startup Options"
 description: "This section covers the command-line startup options for WinDbg, the debugger for Windows."
 keywords: ["Command line startup options", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 09/11/2019
@@ -29,8 +29,8 @@ The following tables summarize the available command-line options.
 | `-c  command`  | Runs a command line after the debugger is attached. Enclose this command in quotation marks. Separate multiple commands with semicolons. |
 | `-v`               | Enables verbose output in the debugger.                                                            |
 | `-T Title`       | Sets the window title.                                                                     |
-| `-logo LogFile`  | Log open. Begins logging information to a log file. If the file exists, it's overwritten.                                |
-| `-loga LogFile`  | Log append. Begins logging information to a log file. If the file exists, it's appended.                               |
+| `-logo LogFile`  | Opens log. Begins logging information to a log file. If the file exists, it's overwritten.                                |
+| `-loga LogFile`  | Appends log. Begins logging information to a log file. If the file exists, it's appended.                               |
 | `-e EventHandle` | Signals the event with the specific handle after the next exception in a target.                                         |
 |       `-?`         | Displays a summary of commands available.                                                           |
 
@@ -42,7 +42,7 @@ The following tables summarize the available command-line options.
 |        `-kqm`        | Starts kernel debugging in quiet mode.                                                                |
 |        `-kl`         | Starts a kernel debugging session on the same machine as the debugger.                                         |
 | `-kx ExdiOptions`  | Starts a kernel debugging session by using an EXDI driver. For more information about EXDI, see [Configure the EXDI debugger transport](../debugger/configuring-the-exdi-debugger-transport.md). |
-|         `-I`         | After a reboot, the debugger breaks into the target computer as soon as a kernel module is loaded.                         |
+|         `-I`         | Breaks into the target computer as soon as a kernel module is loaded after a reboot                         |
 
 #### User mode options
 
@@ -78,7 +78,7 @@ Option | Description
 Option | Description
 |------ | -----------|
 `-y SymbolPath` | Specifies the symbol path to use. Separate multiple paths with a semicolon (;). If the path contains spaces, enclose it in quotation marks. For more information and for other ways to change this path, see [Symbol path](../debugger/symbol-path.md).
-`-n`              | Noisy symbol load. Enables verbose output from symbol handler.
+`-n`              | Addresses noisy symbol load. Enables verbose output from symbol handler.
 `-i *ImagePath`  | Sets the image search path to use.
 `-sdce`           | Causes the debugger to display "File access error" messages during symbol load.
 `-ses`            | Causes the debugger to perform a strict evaluation of all symbol files and ignore any questionable symbols.
@@ -105,17 +105,17 @@ Option | Description
 `-x`   |   Enables second-chance handling only for access violation exceptions.
 `-xe Exception`  |   Enables first-chance exception handling for the specified exception.
 `-xd Exception` |   Enables second-chance exception handling for the specified exception.
-`-xn Exception` |   For the specific exception, disables first- and second-chance handling, and displays only a message on the console.
+`-xn Exception` |   Disables first-chance and second-chance handling for the specific exception, and displays only a message on the console.
 `-xi Exception` |   Ignores the specific exception. Disables first-chance handling and second-chance handling. Doesn't output anything to the console.
 
 For a list of exceptions that you can specify, see [Event definitions and defaults](./../debugger/controlling-exceptions-and-events.md#event-definitions-and-defaults).
 
-#### Post-mortem
+#### Postmortem
 
 Option  | Description
 |------ | -----------|
-`-I`     | Sets WinDbg as the default post-mortem debugger for the system.
-`-IS`    | Sets WinDbg as the default post-mortem debugger for the system silently. Only errors are reported.
+`-I`     | Sets WinDbg as the default postmortem debugger for the system.
+`-IS`    | Sets WinDbg as the default postmortem debugger for the system silently. Only errors are reported.
 
 #### Deprecated options
 
