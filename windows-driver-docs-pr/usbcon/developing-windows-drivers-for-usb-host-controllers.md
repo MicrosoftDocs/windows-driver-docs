@@ -40,7 +40,7 @@ The WDK contains resources that are required for driver development, such as hea
 
 Read the official specification that describes the expected behavior of different components (device, host controller, and hub) of the architecture.
 
-[xHCI for Universal Serial Bus: Specification](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/extensible-host-controler-interface-usb-xhci.html)
+[xHCI for Universal Serial Bus: Specification](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/extensible-host-controler-interface-usb-xhci.pdf)
 
 [Official Universal Serial Bus Documents](https://www.usb.org/documents)
 
