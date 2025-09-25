@@ -12,6 +12,23 @@ ms.topic: release-notes
 
 This topic provides information on what's new in Time Travel Debugging.
 
+## 1.11.553
+
+!tt with no arguments now shows brief help text and the current position (instead of moving to the beginning of the trace).
+
+A new data model method enables you to see the history of a local variable's values. Within a Frame object (such as @$curframe
+for the current frame), you can use .TTD.VariableHistory() to get a log of the values written to a variable and the range of
+positions the variable held that value.
+- `dx -g @$curframe.TTD.VariableHistory().Variables` displays the list of local variable names.
+- `dx -g @$curframe.TTD.VariableHistory().Variables[n].Values` displays the history for local variable #n.
+
+We have also made our TTD Replay API available in an experimental SDK. This is the same API that the debugger uses to
+interact with TTD and what enables .Calls() / .Memory() to efficiently gather data. For more details see https://aka.ms/ttdsdk. 
+
+### Fixed
+
+- Fix crash caused by the deprecation of `ErrorReporting::PrintError` (1.11.553)
+
 ## 1.11.532
 
 This is a maintenance release that makes improvements to recording robustness. This TTD release coincides with the June 2025 release of Windbg. One new feature is the Position data model object now reports percentage into the trace.
