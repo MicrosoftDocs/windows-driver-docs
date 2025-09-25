@@ -1245,28 +1245,30 @@
     items:
     - name: Introduction to the Common Log File System
       href: introduction-to-the-common-log-file-system.md
-    - name: CLFS Terminology
+    - name: CLFS terminology
       href: clfs-terminology.md
-    - name: CLFS Log Sequence Numbers
+    - name: CLFS log sequence numbers
       href: clfs-log-sequence-numbers.md
-    - name: CLFS Marshalling Areas
+    - name: CLFS marshalling areas
       href: clfs-marshalling-areas.md
-    - name: Writing Data Records to a CLFS Stream
+    - name: Writing data records to a CLFS stream
       href: writing-data-records-to-a-clfs-stream.md
-    - name: Writing Restart Records to a CLFS Stream
+    - name: Writing restart records to a CLFS stream
       href: writing-restart-records-to-a-clfs-stream.md
-    - name: Reading Data Records from a CLFS Stream
+    - name: Reading data records from a CLFS stream
       href: reading-data-records-from-a-clfs-stream.md
-    - name: Reading Restart Records from a CLFS Stream
+    - name: Reading restart records from a CLFS stream
       href: reading-restart-records-from-a-clfs-stream.md
-    - name: CLFS Stable Storage
+    - name: CLFS stable storage
       href: clfs-stable-storage.md
-    - name: Dedicated CLFS Logs
+    - name: Dedicated CLFS logs
       href: dedicated-clfs-logs.md
-    - name: Multiplexed CLFS Logs
+    - name: Multiplexed CLFS logs
       href: multiplexed-clfs-logs.md
-    - name: CLFS Support for Archiving
+    - name: CLFS support for archiving
       href: clfs-support-for-archiving.md
+    - name: CLFS logfile authentication
+      href: clfs-authentication.md
   - name: Kernel Transaction Manager
     items:
     - name: Introduction to KTM
