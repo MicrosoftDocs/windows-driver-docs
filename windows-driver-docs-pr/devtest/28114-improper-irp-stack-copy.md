@@ -13,7 +13,7 @@ ms.topic: reference
 # C28114
 
 
-warning: C28114: Copying a whole IRP stack entry leaves certain fields initialized that should be cleared or updated.
+warning C28114: Copying a whole IRP stack entry leaves certain fields initialized that should be cleared or updated.
 
 <table>
 <colgroup>

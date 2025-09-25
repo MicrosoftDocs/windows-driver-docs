@@ -10,7 +10,7 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 03/13/2023
+ms.date: 09/22/2025
 ms.topic: reference
 ---
 
@@ -45,11 +45,11 @@ typedef union _FLT_PARAMETERS {
 
 - **ByteOffset**: Starting byte offset within the file of the range to be locked.
 
-- **ProcessId**: Opaque pointer to the process object for the process that requested the byte-range lock.
+- **ProcessId**: Opaque pointer to the process object for the process that requested the byte-range lock. This member is always populated, but only meaningful for FastIo locking operations. It's distinguished from the value returned by [**FltGetRequestorProcess**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetrequestorprocess) because **ProcessId** always identifies the original requesting process, while **FltGetRequestorProcess** might return either the result of [**IoGetRequestorProcess**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogetrequestorprocess) (for IRP operations) or [**PsGetCurrentProcess**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetcurrentprocessid) (for FastI/O operations), which can differ from the original requestor.
 
-- **FailImmediately**: Boolean value specifying whether the lock request should fail if the lock cannot be granted immediately. This member is set to **FALSE** if the requesting thread can be put into a wait state until the request is granted or **TRUE** if it cannot.  
+- **FailImmediately**: Boolean value specifying whether the lock request should fail if the lock cannot be granted immediately. This member is set to **FALSE** if the requesting thread can be put into a wait state until the request is granted or **TRUE** if it cannot. This member is always populated, but only meaningful for FastIo locking operations.
 
-- **ExclusiveLock**: Boolean value specifying whether an exclusive lock is requested. This member is set to **TRUE** if an exclusive lock is requested or **FALSE** if a shared lock is requested.
+- **ExclusiveLock**: Boolean value specifying whether an exclusive lock is requested. This member is set to **TRUE** if an exclusive lock is requested or **FALSE** if a shared lock is requested. This member is always populated, but only meaningful for FastIo locking operations.
 
 ## Remarks
 
@@ -100,3 +100,4 @@ IRP_MJ_LOCK_CONTROL can be an IRP-based I/O operation or a fast I/O operation.
 [**PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_complete_lock_callback_data_routine)
 
 [**PUNLOCK_ROUTINE**](/windows-hardware/drivers/ddi/ntifs/nc-ntifs-punlock_routine)
+

@@ -56,7 +56,7 @@ To perform this operation, minifilter drivers call [**FltFsControlFile**](/windo
 | STATUS_END_OF_FILE | The **FileOffset** member of[**FSCTL_OFFLOAD_WRITE_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input) begins after end-of-file (EOF). |
 | STATUS_DISMOUNTED_VOLUME | An offload write cannot occur on a dismounted volume. |
 | STATUS_MEDIA_WRITE_PROTECTED | The volume is read only. |
-| STATUS_INSUFFICIENT_RESOUCES | Insufficient resources are available to complete the request. |
+| STATUS_INSUFFICIENT_RESOURCES | Insufficient resources are available to complete the request. |
 | STATUS_BUFFER_TOO_SMALL | **InputBufferLength** is too small for **InputBuffer** to contain an[**FSCTL_OFFLOAD_WRITE_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input) structure, or **OutputBufferLength** is too small for **OutputBuffer** to receive an [**FSCTL_OFFLOAD_WRITE_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_output) structure. |
 
 ## Remarks
@@ -91,3 +91,4 @@ When STATUS_INVALID_PARAMETER is returned, the error could be one of the followi
 [**FSCTL_OFFLOAD_WRITE_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_input)
 
 [**FSCTL_OFFLOAD_WRITE_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_write_output)
+
