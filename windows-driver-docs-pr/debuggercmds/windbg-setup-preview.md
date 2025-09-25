@@ -1,89 +1,89 @@
 ---
-title: "WinDbg - Settings and workspaces"
-description: "This section describes how to setup the WinDbg debugger."
+title: "WinDbg - Settings and Workspaces"
+description: "This article describes how to set up the WinDbg debugger."
 keywords: ["Settings and workspaces", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/16/2020
 ms.topic: how-to
 ---
 
-# WinDbg - Settings and workspaces
+# WinDbg: Settings and workspaces
 
 :::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
-This section describes how to setup and configure the WinDbg debugger.
+This article describes how to set up and configure WinDbg, the debugger for Windows.
 
 ## Settings
 
-Use the settings menu to set things such as the source and symbol path as well as choose the light and dark theme for the debugger. 
+Use the **Settings** menu to set items such as the source and symbol path. You can also choose the light or dark theme for WinDbg.
 
-:::image type="content" source="images/windbgx-settings-menu.png" alt-text="Screenshot of WinDbg settings menu displaying the general tab.":::
+:::image type="content" source="images/windbgx-settings-menu.png" alt-text="Screenshot of the WinDbg Settings menu displaying the General tab.":::
 
-There are currently six settings dialog panels:
+There are currently six **Settings** dialogs:
 
-- General
-- Command Window
-- Debugging Settings
-- Disassembly windows
-- Events & exceptions
-- Source window
+- **General**
+- **Command window**
+- **Debugging settings**
+- **Disassembly windows**
+- **Events & exceptions**
+- **Source window**
 
-For more information on setting the paths, see [Symbol path for Windows debugger](../debugger/symbol-path.md) and [Source Code Debugging in WinDbg (Classic)](../debugger/source-window.md).
+For more information on setting the paths, see [Symbol path for Windows debugger](../debugger/symbol-path.md) and [Source code debugging in WinDbg (classic)](../debugger/source-window.md).
 
 ## Workspaces
 
-Workspaces allows you to save configuration information in the target connection information file.
+With workspaces, you can save configuration information in the target connection information file.
 
-The options in workspaces are saved upon closing the debugger or can be manually saved using *File* -> *Save Workspace*. 
+The options in workspaces are saved when you close the debugger. To save them manually, select **File** > **Save Workspace**.
 
-Workspaces are automatically loaded when launching from the recent targets list or they can be manually loaded in the file menu. 
+Workspaces are automatically loaded if you open them from the recent targets list. You can also load them manually in the **File** menu.
 
-In addition to the target connection information, the following settings are stored in the workspaces file.
+In addition to the target connection information, the following settings are stored in the workspace file.
 
-#### General Settings
+#### General settings
 
 > [!NOTE]
 > This list and format isn't final and is subject to change.
 
 Setting | Default | Description
 --- | --- | ---
-FinalBreak |true | If true, ignores the final breakpoint (-g command-line option).
-SourceDebugging |true  | Toggles between source or assembly mode.
-DebugChildProcesses | false| (User mode only) If true will debug child processes launched by the target application. (-o command-line option).
-Noninvasive | false  |  Specifies non-invasive attach (-pv command-line option).
-NoDebugHeap | false  |  Specifies the debug heap should not be used (-hd command-line option).
-Verbose | false  | When verbose mode is turned on, some display commands (such as register dumping) produce more detailed output. (-v command-line option).
-Elevate | - |  Used internally by WinDbg - Do not modify.
-Restartable | - |  Used internally by WinDbg - Do not modify.
-UseImplicitCommandLine | false | Use implicit command-line (-cimp command-line option). This starts the debugger with an implicit command line instead of an explicit process to run.
+`FinalBreak` |`true` | If `true`, ignores the final breakpoint (`-g` command-line option).
+`SourceDebugging` |`true`  | Toggles between source or assembly mode.
+`DebugChildProcesses` | `false`| (User mode only.) If `true`, debugs child processes started by the target application (`-o` command-line option).
+`Noninvasive` | `false`  |  Specifies noninvasive attach (`-pv` command-line option).
+`NoDebugHeap` | `false`  |  Specifies the debug heap shouldn't be used (`-hd` command-line option).
+`Verbose` | `false`  | When verbose mode is turned on, some display commands (such as register dumping) produce more detailed output (`-v` command-line option).
+`Elevate` | - |  Used internally by WinDbg. Do not modify.
+`Restartable` | - |  Used internally by WinDbg. Do not modify.
+`UseImplicitCommandLine` | `false` | Use implicit command line (`-cimp` command-line option). This setting starts the debugger with an implicit command line instead of an explicit process to run.
 
-For more information about the command line options, see [WinDbg Command-Line Options](../debugger/windbg-command-line-options.md).
+For more information about the command-line options, see [WinDbg command-line options](../debugger/windbg-command-line-options.md).
 
-#### Symbol Settings
+#### Symbol settings
 
 Setting | Default | Description
 --- | --- | ---
-SymbolOptionsOverride | 0 | An explicit symbol option mask, in the form of a single hex number.
-ShouldOverrideSymbolOptions | false | If set to *true* override all of the symbol options listed below with the provided  symbol option mask, described  above.
-SymOptExactSymbols | false | This option causes the debugger to perform a strict evaluation of all symbol files.
-SymOptFailCriticalErrors | false | This symbol option causes file access error dialog boxes to be suppressed.
-SymOptIgnoreCvRec | false | This option causes the symbol handler to ignore the CV record in the loaded image header when searching for symbols. 
-SymOptIgnoreNtSympath | false | This option causes the debugger to ignore the environment variable settings for the symbol path and the executable image path. 
-SymOptNoCpp | false | This symbol option turns off C++ translation. When this symbol option is set, :: is replaced by __ in all symbols. 
-SymOptNoUnqualifiedLoads | false | This symbol option disables the symbol handler's automatic loading of modules. When this option is set and the debugger attempts to match a symbol, it will only search modules which have already been loaded. 
-SymOptAutoPublics | false | This symbol option causes DbgHelp to search the public symbol table in a .pdb file only as a last resort. If any matches are found when searching the private symbol data, the public symbols will not be searched. This improves symbol search speed. 
-SymOptDebug | false | This symbol option turns on noisy symbol loading. This instructs the debugger to display information about its search for symbols.
+`SymbolOptionsOverride` | 0 | An explicit symbol option mask in the form of a single hex number.
+`ShouldOverrideSymbolOptions` | `false` | If set to `true`, override all the symbol options listed in this table with the provided symbol option mask, which is described in the preceding table.
+`SymOptExactSymbols` | `false` | This option causes the debugger to perform a strict evaluation of all symbol files.
+`SymOptFailCriticalErrors` | `false` | This symbol option causes file access error dialog boxes to be suppressed.
+`SymOptIgnoreCvRec` | `false` | This option causes the symbol handler to ignore the CV record in the loaded image header when searching for symbols.
+`SymOptIgnoreNtSympath` | `false` | This option causes the debugger to ignore the environment variable settings for the symbol path and the executable image path.
+`SymOptNoCpp` | `false` | This symbol option turns off C++ translation. When this symbol option is set, `__` replaces `::` in all symbols.
+`SymOptNoUnqualifiedLoads` | `false` | This symbol option disables the symbol handler's automatic loading of modules. When this option is set, the debugger attempts to match a symbol. It searches only modules that were already loaded.
+`SymOptAutoPublics` | `false` | This symbol option causes DbgHelp to search the public symbol table in a .pdb file only as a last resort. If any matches are found when searching the private symbol data, the public symbols aren't searched. This setting improves symbol search speed.
+`SymOptDebug` | `false` | This symbol option turns on noisy symbol loading. This setting instructs the debugger to display information about its search for symbols.
 
-For more information on symbol options, see [Symbol Options](../debugger/symbol-options.md).
+For more information on symbol options, see [Symbol options](../debugger/symbol-options.md).
 
 #### Window layout settings
 
- Window layout is saved globally and are not saved in the workspaces file. 
+ Window layout settings are saved globally and aren't saved in the workspace file.
 
-#### Workspaces XML file
+#### Workspace XML file
 
 The workspace and target connection information is stored in XML format.
 
-The following file, shows an example workspaces configuration file.
+The following file shows an example workspace configuration file.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -118,11 +118,10 @@ The following file, shows an example workspaces configuration file.
 </TargetConfig>
 ```
 
-Note that this file format continues to evolve as more features are added to the WinDbg debugger.
+This file format continues to evolve as more features are added to WinDbg.
 
 ---
 
-## See Also
+## Related content
 
-[WinDbg Features](../debugger/debugging-using-windbg-preview.md)
-
+- [WinDbg features](../debugger/debugging-using-windbg-preview.md)
