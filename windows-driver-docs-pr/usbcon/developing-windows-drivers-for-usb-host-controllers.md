@@ -1,7 +1,7 @@
 ---
 title: Overview of Developing Windows Drivers for USB Host Controllers
 description: This article describes support in the Windows operating system, for developing a USB host controller driver that communicates with the Microsoft-provided USB host controller extension (UCX).
-ms.date: 01/12/2024
+ms.date: 09/25/2025
 ms.topic: concept-article
 ---
 
