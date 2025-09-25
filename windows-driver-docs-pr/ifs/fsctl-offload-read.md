@@ -55,7 +55,7 @@ To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers
 | STATUS_FILE_LOCK_CONFLICT | Insufficient read access due to the current file locking state. |
 | STATUS_END_OF_FILE | The **FileOffset** member of [**FSCTL_OFFLOAD_READ_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input) begins after end-of-file (EOF). |
 | STATUS_DISMOUNTED_VOLUME | An offload read cannot occur on a dismounted volume. |
-| STATUS_INSUFFICIENT_RESOUCES | Insufficient resources are available to complete the request. |
+| STATUS_INSUFFICIENT_RESOURCES | Insufficient resources are available to complete the request. |
 | STATUS_BUFFER_TOO_SMALL | **OutputBufferLength** is too small for **OutputBuffer** to receive an [**FSCTL_OFFLOAD_READ_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output) structure. |
 
 ## Remarks
@@ -90,3 +90,4 @@ When STATUS_INVALID_PARAMETER is returned, the error could be one of the followi
 [**FSCTL_OFFLOAD_READ_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input)
 
 [**FSCTL_OFFLOAD_READ_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output)
+

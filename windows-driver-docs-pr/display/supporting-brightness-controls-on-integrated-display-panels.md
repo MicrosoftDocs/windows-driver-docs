@@ -7,13 +7,15 @@ keywords:
 - notifying brightness hot keys WDK display
 - BIOS brightness control WDK display
 - automatic brightness WDK display
-ms.date: 09/26/2024
+ms.date: 08/15/2025
 ms.topic: concept-article
 ---
 
 # Supporting brightness controls on integrated display panels
 
 This article describes the mechanisms and requirements for supporting brightness controls on integrated display panels. It outlines the collaboration between the system-supplied monitor driver (*Monitor.sys*), kernel-mode display miniport drivers (KMD), and the BIOS through ACPI methods. Whether through KMD or ACPI, the goal is to ensure that users can easily adjust their display's brightness, enhancing their computing experience while optimizing power usage.
+
+For information about brightness control support for external display connectors, see [Supporting brightness controls for external display connectors](supporting-brightness-controls-for-external-display-connectors.md).
 
 ## Brightness control support in *Monitor.sys*
 
@@ -25,16 +27,18 @@ Brightness controls are implemented in *Monitor.sys*. This system-supplied monit
 
 * Registers with the Advanced Configuration and Power Interface (ACPI) to process ACPI-based brightness shortcut keys. For compatibility with the legacy [Windows 2000 Display Driver Model](windows-2000-display-driver-model-design-guide.md), the monitor driver implements the IOCTL-based brightness controls.
 
-Either the kernel-mode display miniport driver (KMD) or the ACPI methods exposed by the BIOS can support changing the brightness of an integrated display panel. For the first video target that is marked as having output technology that connects internally in a computer ([**D3DKMDT_VOT_INTERNAL**](/windows-hardware/drivers/ddi/d3dkmdt/ne-d3dkmdt-_d3dkmdt_video_output_technology)), the monitor driver calls the KMD's [**DxgkDdiQueryInterface**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_interface) function to query for both of the following interfaces:
+Either the kernel-mode display miniport driver (KMD) or the ACPI methods exposed by the BIOS can support changing the brightness of an integrated display panel. For the first video target that is marked as having output technology that connects internally in a computer ([**D3DKMDT_VOT_INTERNAL**](/windows-hardware/drivers/ddi/d3dkmdt/ne-d3dkmdt-_d3dkmdt_video_output_technology)), the monitor driver calls the KMD's [**DxgkDdiQueryInterface**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_interface) function to query for all of the following interfaces:
 
 * The [Brightness Control Interface](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-dxgk_brightness_interface). GUID_DEVINTERFACE_BRIGHTNESS and DXGK_BRIGHTNESS_INTERFACE_VERSION_1 identify this interface.
 
 * The [Brightness Control Interface V.2](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-dxgk_brightness_interface_2). GUID_DEVINTERFACE_BRIGHTNESS_2 and DXGK_BRIGHTNESS_INTERFACE_VERSION_2 identify this interface.
 
-If the KMD doesn't support at least the Brightness Control Interface, the monitor driver uses ACPI to query for the \_BCL, \_BCM, and _BQC methods on the child device. For more information about these methods, see the ACPI specification on the [ACPI website](https://go.microsoft.com/fwlink/p/?linkid=57185).
+* The [Brightness Control Interface V.3](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-dxgk_brightness_interface_3). GUID_DEVINTERFACE_BRIGHTNESS_3 and DXGK_BRIGHTNESS_INTERFACE_VERSION_3 identify this interface.
+
+If the KMD doesn't support at least the Brightness Control Interface, the monitor driver uses ACPI to query for the \_BCL, \_BCM, and \_BQC methods on the child device. For more information about these methods, see the ACPI specification on the [ACPI website](https://go.microsoft.com/fwlink/p/?linkid=57185).
 
 > [!NOTE]
-> In the Windows Display Driver Model (WDDM), an ACPI identifier is not used to identify an integrated display panel. This is different from the [Windows 2000 Display Driver Model](windows-2000-display-driver-model-design-guide.md), which supports only display panels with an identifier of 0x0110.
+> In the Windows Display Driver Model (WDDM), an ACPI identifier isn't used to identify an integrated display panel. This is different from the [Windows 2000 Display Driver Model](windows-2000-display-driver-model-design-guide.md), which supports only display panels with an identifier of 0x0110.
 
 If either the KMD or BIOS-exposed ACPI methods support brightness controls, the monitor driver registers for ACPI notifications of brightness shortcut keys. No alternative mechanism exists to signal the monitor driver about shortcut key notifications. If the monitor driver can't use either brightness-control mechanism or if the KMD supplies the brightness control interface but fails a call to the [**DxgkDdiGetPossibleBrightness**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgk_brightness_get_possible) function, the monitor driver doesn't support brightness controls.
 
@@ -46,7 +50,7 @@ The only requirement for values from zero to 100 is that larger values must repr
 
 ## Disabling automatic brightness changes by the BIOS
 
-The KMD should set bit 2 of the argument to the \_DOS method. Setting this bit avoids problems that might occur if the system BIOS and monitor driver both control display panel brightness. For more information about the _DOS method and its arguments, see the ACPI specification. By setting bit 2, the system BIOS is informed that it shouldn't perform any automatic brightness changes.
+The KMD should set bit 2 of the argument to the \_DOS method. Setting this bit avoids problems that might occur if the system BIOS and monitor driver both control display panel brightness. For more information about the \_DOS method and its arguments, see the ACPI specification. By setting bit 2, the system BIOS is informed that it shouldn't perform any automatic brightness changes.
 
 ## BIOS requirements to support brightness controls
 
@@ -54,7 +58,7 @@ For the KMD to support controlling integrated panel brightness in an optimum way
 
 ### Brightness control methods
 
-An integrated panel device should support the ACPI brightness control methods (\_BCL, \_BCM, and \_BQC). \_BCL and \_BCM are unchanged since version 1.0b of the ACPI specification; you can find their definitions in the ACPI 3.0 specification in sections B.6.2 and B.6.3. _BQC is optional and is defined in the ACPI 3.0 specification in section B.6.4. For definitions of brightness levels, see Brightness Levels.
+An integrated panel device should support the ACPI brightness control methods (\_BCL, \_BCM, and \_BQC). \_BCL and \_BCM are unchanged since version 1.0b of the ACPI specification; you can find their definitions in the ACPI 3.0 specification in sections B.6.2 and B.6.3. \_BQC is optional and is defined in the ACPI 3.0 specification in section B.6.4. For definitions of brightness levels, see Brightness Levels.
 
 The following are the aliases for the ACPI brightness control methods defined in *Dispmprt.h*:
 
@@ -64,7 +68,7 @@ The following are the aliases for the ACPI brightness control methods defined in
 
 ### Disabling the automatic system BIOS brightness control
 
-The system BIOS should support setting bit 2 of the argument to the _DOS method on the graphics adapter to allow automatic system BIOS brightness changes to be disabled. This bit is an addition to the previously defined values for the bits in this method. For details about this bit, see section B.4.1 in the ACPI 3.0 specification.
+The system BIOS should support setting bit 2 of the argument to the \_DOS method on the graphics adapter to allow automatic system BIOS brightness changes to be disabled. This bit is an addition to the previously defined values for the bits in this method. For details about this bit, see section B.4.1 in the ACPI 3.0 specification.
 
 If this bit isn't supported, the monitor driver and the system BIOS can both change the brightness level, resulting in a flicker of brightness. In addition, the brightness might potentially be set to a value that isn't what the user requested.
 
@@ -98,7 +102,7 @@ For increasing and decreasing brightness levels, the monitor driver's default be
 
 Incrementing or decrementing with shortcut keys can create asymmetrical patterns in brightness levels, as the following examples show.
 
-* Available _BCL brightness control levels specified as 0, 1, 5, 10, ..., 95, 100
+* Available \_BCL brightness control levels specified as 0, 1, 5, 10, ..., 95, 100
 
   * Results using the ACPI_NOTIFY_INC_BRIGHTNESS_HOTKEY notification:  
         0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100
@@ -106,7 +110,7 @@ Incrementing or decrementing with shortcut keys can create asymmetrical patterns
   * Results using the ACPI_NOTIFY_DEC_BRIGHTNESS_HOTKEY notification:  
         100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 0
 
-* Available _BCL brightness control levels specified as 1, 5, 10, ..., 95, 100
+* Available \_BCL brightness control levels specified as 1, 5, 10, ..., 95, 100
 
   * Results using the ACPI_NOTIFY_INC_BRIGHTNESS_HOTKEY notification:  
         1, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100
