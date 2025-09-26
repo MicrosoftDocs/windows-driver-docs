@@ -33,7 +33,7 @@ Pktmon Clnt NPIs are available for kernel-mode drivers to push network packet no
 
 ### usermode_accessors.h
 
-Contains dedicated functions for the kernel to use when reading from and writing to the user-mode virtual address space. For more information, see [usermode_accessor.h](https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/usermode_accessors/).
+Contains dedicated functions for the kernel to use when reading from and writing to the user-mode virtual address space. For more information, see [usermode_accessor.h](/kernel/user-mode-accessors.md).
 
 ## Version 10.0.26100.4202
 
