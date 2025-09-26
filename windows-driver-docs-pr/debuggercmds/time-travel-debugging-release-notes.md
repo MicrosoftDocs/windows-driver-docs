@@ -16,14 +16,14 @@ This topic provides information on what's new in Time Travel Debugging.
 
 `!tt` with no arguments now shows brief help text and the current position (instead of moving to the beginning of the trace).
 
-A new data model method enables you to see the history of a local variable's values. Within a Frame object (such as @$curframe
-for the current frame), you can use .TTD.VariableHistory() to get a log of the values written to a variable and the range of
+A new data model method enables you to see the history of a local variable's values. Within a Frame object, such as @$curframe
+for the current frame, you can use .TTD.VariableHistory() to get a log of the values written to a variable and the range of
 positions the variable held that value.
 - `dx -g @$curframe.TTD.VariableHistory().Variables` displays the list of local variable names.
 - `dx -g @$curframe.TTD.VariableHistory().Variables[n].Values` displays the history for local variable #n.
 
 The TTD Replay API is also available in an experimental SDK. This API is the same API that the debugger uses to
-interact with TTD and what enables .Calls() / .Memory() to efficiently gather data. For more details, see https://aka.ms/ttdsdk. 
+interact with TTD and what enables .Calls() / .Memory() to efficiently gather data. For more information, see https://aka.ms/ttdsdk. 
 
 ### Fixed
 
@@ -31,7 +31,7 @@ interact with TTD and what enables .Calls() / .Memory() to efficiently gather da
 
 ## 1.11.532
 
-This is a maintenance release that makes improvements to recording robustness. This TTD release coincides with the June 2025 release of Windbg. One new feature is the Position data model object now reports percentage into the trace.
+This release is a maintenance release that makes improvements to recording robustness. This TTD release coincides with the June 2025 release of Windbg. One new feature is the Position data model object now reports percentage into the trace.
 
 ### Changed
 
@@ -46,7 +46,7 @@ This is a maintenance release that makes improvements to recording robustness. T
 
 ## 1.11.506
 
-This is a minor release to coincide with the April 2025 release of WinDbg.
+This release wis a minor release to coincide with the April 2025 release of WinDbg.
 
 ### Changed
 
@@ -60,19 +60,19 @@ This is a minor release to coincide with the April 2025 release of WinDbg.
 
 ## 1.11.481
 
-We have revamped the !tt command to give you more powerful ways to navigate through your trace:
+We revamped the !tt command to give you more powerful ways to navigate through your trace:
 - Fractional percentages can be used to narrow down the search space (!tt 23.65)
 - Find the previous/next time a register changes value (!tt br ebx)
 - Find the previous/next time a memory range is accessed (!tt ba- [addr] [range])
 - Find the previous/next time execution moves to a different module (!tt bm)
 - Find the previous/next time execution moves to a specific module (!tt bm ntdll)
 
-For more details, see [!tt (time travel)](time-travel-debugging-extension-tt.md).
+For more information, see [!tt (time travel)](time-travel-debugging-extension-tt.md).
 
 Some notable fixes:
 - "Error: 64-bit value loses precision on conversion to number" messages when using `@$cursession.TTD.Data.Heap()` on 32-bit trace are gone.
 - Help option parsing (`-?`, `-help`) is now correctly detected anywhere in the command line.
-- `dx @$cursession.TTD.Calls()` no longer requires addresses to match the start of a function. Instead, the address will be mapped to the start of the closest matching function.
+- `dx @$cursession.TTD.Calls()` no longer requires addresses to match the start of a function. Instead, the address is mapped to the start of the closest matching function.
 - TTD correctly reports target OS version from vertarget command.
 - Using "-monitor" with a hosted service name no longer records unrelated hosted services.
 
@@ -104,7 +104,7 @@ Some notable fixes:
 
 This update of TTD contains a few bug fixes along with some internal changes to improve reliability.
 
-Note: 1.11.410 introduced a regression in the emulation of the Intel/AMD LODSD instruction. A fix for this will come in the next release.
+Note: 1.11.410 introduced a regression in the emulation of the Intel/AMD LODSD instruction. A fix for this regression will come in the next release.
 
 Fixes:
 - Improve packet reading robustness and other misc changes to improve reliability.
@@ -152,7 +152,7 @@ AMD/Intel fixes:
 
 TTD now implements and publishes publicly an API to control the recorder from within the live recorded process. Documentation and a sample can be found in [GitHub](https://github.com/microsoft/WinDbg-Samples/tree/HEAD/TTD).
 
-TTD can now inject itself with recording turned off using the new `-recordMode` switch. By default, TTD uses `-recordMode Automatic` which causes all threads to be recorded. If `-recordMode Manual` is specified, then TTD injects into the target process but doesn't record anything until told to do so through an API call.
+TTD can now inject itself with recording turned off using the new `-recordMode` switch. By default, TTD uses `-recordMode Automatic`, which causes all threads to be recorded. If `-recordMode Manual` is specified, then TTD injects into the target process but doesn't record anything until told to do so through an API call.
 
 Recording can now be restricted to a specific set of modules using the `-module` switch. In some scenarios, this restriction can result in substantially faster recording and smaller trace files. More than one `-module` switch may be specified.
 
@@ -187,7 +187,7 @@ none
 
 ### Known issues
 
-- On ARM64, the compiler is failing to tail-call multiple high-frequency functions which in extreme cases can cause the recorder to run out of stack space and crash.
+- On ARM64, the compiler is failing to tail-call multiple high-frequency functions, which in extreme cases can cause the recorder to run out of stack space and crash.
 
 ## 1.11.261
 
