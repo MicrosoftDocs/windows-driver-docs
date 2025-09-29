@@ -1,5 +1,5 @@
 ---
-title: "WinDbg - Settings and Workspaces"
+title: 'WinDbg: Settings and Workspaces'
 description: "This article describes how to set up the WinDbg debugger."
 keywords: ["Settings and workspaces", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/16/2020
@@ -27,7 +27,7 @@ There are currently six **Settings** dialogs:
 - **Events & exceptions**
 - **Source window**
 
-For more information on setting the paths, see [Symbol path for Windows debugger](../debugger/symbol-path.md) and [Source code debugging in WinDbg (classic)](../debugger/source-window.md).
+For more information on setting the paths, see [Symbol path for Windows debugger](../debugger/symbol-path.md) and [Source code debugging in WinDbg (Classic)](../debugger/source-window.md).
 
 ## Workspaces
 

@@ -1,5 +1,5 @@
 ---
-title: "WinDbg - Command-Line Startup Options"
+title: 'WinDbg: Command-Line Startup Options'
 description: "This section covers the command-line startup options for WinDbg, the debugger for Windows."
 keywords: ["Command line startup options", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 09/11/2019

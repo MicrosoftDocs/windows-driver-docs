@@ -1,5 +1,5 @@
 ---
-title: "WinDbg - Start a kernel mode session"
+title: 'WinDbg: Start a Kernel Mode Session'
 description: "This article describes how to start a kernel mode session with WinDbg."
 keywords: ["Starting a kernel mode session", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/09/2020

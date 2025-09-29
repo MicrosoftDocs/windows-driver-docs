@@ -184,7 +184,7 @@ Fixed several issues when you interact with WinDbg by using a screen reader.
 
 ### Bug fixes
 
-* Fixed an issue where uninstalling WinDbgX prevents the opening of WinDbg (classic).
+* Fixed an issue where uninstalling WinDbgX prevents the opening of WinDbg (Classic).
 * Fixed an issue where WinDbgX would resize after it appeared during opening.
 
 ### Time Travel Debugging
@@ -324,7 +324,7 @@ Made many bug fixes and small improvements.
 > [!NOTE]
 > The debugger was renamed from *WinDbg Preview* to *WinDbg*.
 >
-> The legacy debugger released with [Debugging Tools for Windows](../debugger/debugger-download-tools.md) is now known as *WinDbg (classic)*.
+> The legacy debugger released with [Debugging Tools for Windows](../debugger/debugger-download-tools.md) is now known as *WinDbg (Classic)*.
 
 ### Time Travel Debugging on ARM64
 
@@ -412,7 +412,7 @@ Time Travel Debugging now provides an `Overwrite` data access type. Memory queri
 
 ### Timeline bookmarks
 
-Bookmark important Time Travel positions in WinDbg instead of manually copying and pasting the position to Notepad. Bookmarks make it easier to view at a glance different positions in the trace relative to other events and to annotate them.
+Bookmark important time travel positions in WinDbg instead of manually copying and pasting the position to Notepad. Bookmarks make it easier to view at a glance different positions in the trace relative to other events and to annotate them.
 
 You can provide a descriptive name for bookmarks.
 
@@ -464,7 +464,7 @@ Portable PDB support was added. The PDB format describes an encoding of debuggin
 ### Other changes and bug fixes
 
 - Provided support for AMD64 and Linux kernel dump debugging for WinDbg.
-- Made Time Travel recording enhancements and other fixes.
+- Made time travel recording enhancements and other fixes.
 
 ## 1.0.1912.11001
 
@@ -577,10 +577,10 @@ This version includes the following updates:
 - **New Disassembly window**: The window now includes:
 
    - Scrolling up or down now continuously loads more disassembly whenever possible.
-   - Syntax highlighting for numbers, code addresses, and opcodes.
+   - Highlighting is used to identify syntax for numbers, code addresses, and operation codes.
    - Selecting a code symbol jumps the Disassembly window to that location.
    - Hovering over numbers shows a tooltip that converts that number to other bases.
-   - Headers signifying the start of a function.
+   - Using headers signifies the start of a function.
 
 - **Faster Source window**: The Source window was updated to be faster and more resource efficient.
 
@@ -699,7 +699,7 @@ SOS doesn't work on x86 traces.
 
 ## 1.0.13.0
 
-This version adds Time Travel tracing. With Time Travel Debugging, you can record a process and then replay it later both forward and backward. TTD can help you debug issues easier by letting you "rewind" your debugger session instead of having to reproduce the issue until you find the bug. For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
+This version adds time travel tracing. With Time Travel Debugging, you can record a process and then replay it later both forward and backward. TTD can help you debug issues easier by letting you "rewind" your debugger session instead of having to reproduce the issue until you find the bug. For more information, see [Time Travel Debugging: Overview](time-travel-debugging-overview.md).
 
 ## 1.0.12.0
 
@@ -707,5 +707,5 @@ This version was the first release of WinDbg Preview. For general information on
 
 ## Related content
 
-- [WinDbg – Installation](index.md)
-- [WinDbg – Command-line startup options](windbg-command-line-preview.md)
+- [WinDbg: Installation](index.md)
+- [WinDbg: Command-line startup options](windbg-command-line-preview.md)

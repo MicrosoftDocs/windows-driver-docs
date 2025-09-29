@@ -1,5 +1,5 @@
 ---
-title: "WinDbg - Breakpoints Menu"
+title: 'WinDbg: Breakpoints Menu'
 description: "This section describes how to set and clear breakpoints by using WinDbg, the debugger for Windows."
 keywords: ["Breakpoints Menu", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 08/15/2017
@@ -24,4 +24,4 @@ Use the **View** menu to open the Breakpoints window so that you can view, set, 
 
 The Breakpoints window keeps a running total of each time that the breakpoint is hit.
 
-The general process of working with breakpoints is similar to previous versions of WinDbg. For more information about setting breakpoints, see [Set breakpoints in WinDbg (classic)](../debugger/setting-breakpoints-in-windbg.md).
+The general process of working with breakpoints is similar to previous versions of WinDbg. For more information about setting breakpoints, see [Set breakpoints in WinDbg (Classic)](../debugger/setting-breakpoints-in-windbg.md).

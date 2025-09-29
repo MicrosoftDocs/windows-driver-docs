@@ -1,5 +1,5 @@
 ---
-title: "WinDbg - Restricted Mode"
+title: 'WinDbg: Restricted Mode'
 description: "Restricted mode limits the types of debugging sessions that WinDbg can start to remote debugging sessions and dump files only. "
 keywords: ["Restricted Mode", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 08/09/2021
@@ -16,11 +16,11 @@ This article describes how to enable the restricted mode feature that restricts 
 
 With WinDbg, you can start various debugging session types. In some circumstances, you might not want WinDbg to start certain debugging sessions. Restricted mode limits the types of debugging sessions that WinDbg can start to only remote debugging sessions and loading dump files.
 
-To enable restricted mode, you can use a Windows Defender Application Control (WDAC) policy or the registry key.
+To enable restricted mode, you can use a Windows Defender Application Control policy or the registry key.
 
 ## Configuration by using Windows Defender Application Control
 
-You can enable restricted mode by using a WDAC policy. A WDAC policy can prevent local administrators from altering policy settings after a policy is deployed. To enable restricted mode by using a WDAC policy, configure your policy with the following setting:
+You can enable restricted mode by using a Windows Defender Application Control policy. A Windows Defender Application Control policy can prevent local administrators from altering policy settings after a policy is deployed. To enable restricted mode by using a Windows Defender Application Control policy, configure your policy with the following setting:
 
 ```xml
 <Settings>

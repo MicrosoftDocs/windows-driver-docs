@@ -1,5 +1,5 @@
 ---
-title: "WinDbg - Remote, Process Server, and Dump File Sessions"
+title: 'WinDbg: Remote, Process Server, and Dump File Sessions'
 description: "This article describes how to start a remote, process server, or dump file session with the WinDbg debugger."
 keywords: ["Remote, Process Server and Dump file Sessions", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/10/2020

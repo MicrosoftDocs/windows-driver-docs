@@ -1,5 +1,5 @@
 ---
-title: "WinDbg - File Menu"
+title: 'WinDbg: File Menu'
 description: "This article describes how to use the File menu in the WinDbg debugger."
 keywords: ["File Menu", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/10/2020
@@ -43,7 +43,7 @@ C:\Users\*UserName*\AppData\Local\DBG\targets
 
 ### Open source file
 
-Use **Open source file** to open a source file. Do this step when you want to work with other source files that didn't load because of code execution. For more information on working with source files, see [Source code debugging in WinDbg (classic)](../debugger/source-window.md)
+Use **Open source file** to open a source file. Do this step when you want to work with other source files that didn't load because of code execution. For more information on working with source files, see [Source code debugging in WinDbg (Classic)](../debugger/source-window.md)
 
 ### Open script
 
@@ -51,7 +51,7 @@ Use **Open script** to open an existing JavaScript or NatVis script. For more in
 
 ### Settings
 
-Use the **Settings** menu to set the source and symbol path and choose the light or dark theme for the debugger. For more information on settings, see [WinDbg setup: Settings and workspaces](windbg-setup-preview.md).
+Use **Settings** to set the source and symbol path and choose the light or dark theme for the debugger. For more information on settings, see [WinDbg setup: Settings and workspaces](windbg-setup-preview.md).
 
 ### About
 

@@ -1,5 +1,5 @@
 ---
-title: "WinDbg - Notes, Command, Memory, and Source Menus"
+title: 'WinDbg: Notes, Command, Memory, and Source Menus'
 description: "This article describes how to work with the Notes, Command, Memory, and Source menus."
 keywords: ["Notes, Command, Memory and Source Menus", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/10/2020
@@ -8,7 +8,7 @@ ms.topic: how-to
 
 # WinDbg: Notes, Command, Memory, and Source menus
 
-This article describes how work with the **Notes**, **Command**, **Memory**, and **Source** menus in WinDbg, the debugger for Windows.
+This article describes how to work with the **Notes**, **Command**, **Memory**, and **Source** menus in WinDbg, the debugger for Windows.
 
 ## Notes
 
