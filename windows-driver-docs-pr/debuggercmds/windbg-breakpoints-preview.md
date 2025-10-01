@@ -18,10 +18,10 @@ Use the **Breakpoints** menu to create new and remove existing breakpoints. You 
 
 ## Breakpoints window
 
-Use the **View** menu to open the Breakpoints window so that you can view, set, and clear breakpoints. You can also double-click a breakpoint to open its source file.
+Use the **View** menu to open the **Breakpoints** window so that you can view, set, and clear breakpoints. You can also double-click a breakpoint to open its source file.
 
 :::image type="content" source="images/windbgx-breakpoints-window.png" alt-text="Screenshot of the Breakpoints window in WinDbg.":::
 
-The Breakpoints window keeps a running total of each time that the breakpoint is hit.
+The **Breakpoints** window keeps a running total of each time that the breakpoint is hit.
 
 The general process of working with breakpoints is similar to previous versions of WinDbg. For more information about setting breakpoints, see [Set breakpoints in WinDbg (Classic)](../debugger/setting-breakpoints-in-windbg.md).

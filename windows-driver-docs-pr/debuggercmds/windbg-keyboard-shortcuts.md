@@ -70,15 +70,15 @@ Ctrl+Alt+K      |  Toggle initial break.
 | Keystroke     | Description             |
 | ------------- |-------------------------|
 Ctrl+Tab        |       Open window changer.
-Alt+1           |       Open/focus on Command window.
-Alt+2           |       Open/focus on Watch window.
-Alt+3           |       Open/focus on Locals window.
-Alt+4           |       Open/focus on Registers window.
-Alt+5           |       Open/focus on Memory window.
-Alt+6           |       Open/focus on Stack window.
-Alt+7           |       Open/focus on Disassembly window.
-Alt+8           |       Open/focus on Breakpoints window.
-Alt+9           |       Open/focus on Threads window.
+Alt+1           |       Open/focus on **Command** window.
+Alt+2           |       Open/focus on **Watch** window.
+Alt+3           |       Open/focus on **Locals** window.
+Alt+4           |       Open/focus on **Registers** window.
+Alt+5           |       Open/focus on **Memory** window.
+Alt+6           |       Open/focus on **Stack** window.
+Alt+7           |       Open/focus on **Disassembly** window.
+Alt+8           |       Open/focus on **Breakpoints** window.
+Alt+9           |       Open/focus on **Threads** window.
 
 ### Scripting
 

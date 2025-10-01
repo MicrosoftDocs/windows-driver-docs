@@ -6,9 +6,9 @@ ms.date: 01/10/2020
 ms.topic: how-to
 ---
 
-# WinDbg: Data model menu
+# WinDbg: Data Model menu
 
-This article describes how to work with the data model menu in WinDbg, the debugger for Windows.
+This article describes how to work with the **Data Model** menu in WinDbg, the debugger for Windows.
 
 ## New model query
 
@@ -54,7 +54,7 @@ Debugger.Sessions.First().Devices.DeviceTree.Flatten(n => n.Children).GroupBy(n 
 
 ### Change query
 
-Edit the query text box to change the query that's used in the active Data Model window.
+Edit the query text box to change the query that's used in the active **Data Model** window.
 
 ### Change window or tab title
 

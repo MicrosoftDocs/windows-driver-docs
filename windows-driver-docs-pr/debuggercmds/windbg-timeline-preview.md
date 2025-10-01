@@ -14,15 +14,15 @@ Time Travel Debugging (TTD) allows users to record traces, which are recordings 
 
 :::image type="content" source="images/windbgx-timeline.png" alt-text="Screenshot of timelines in the debugger displaying exceptions, memory access, breakpoints, and function calls.":::
 
-Use the Timelines window to view important events, understand their relative position, and easily jump to their location in your TTD trace file. Use multiple timelines to visually explore events in the time travel trace and discover event correlation.
+Use the **Timelines** window to view important events, understand their relative position, and easily jump to their location in your TTD trace file. Use multiple timelines to visually explore events in the time travel trace and discover event correlation.
 
-The Timelines window appears when you open a TTD trace file. It shows key events without you having to manually create data model queries. At the same time, all the time travel objects are available to allow for more complex data queries.
+The **Timelines** window appears when you open a TTD trace file. It shows key events without you having to manually create data model queries. At the same time, all the time travel objects are available to allow for more complex data queries.
 
 For more information about how to create and work with time travel trace files, see [Time Travel Debugging: Overview](time-travel-debugging-overview.md).
 
 ## Types of timelines
 
-The Timelines window shows events in the following timelines:
+The **Timelines** window shows events in the following timelines:
 
 - **Exceptions**: You can filter on a specific exception code.
 - **Breakpoints**: You can see on a timeline when breakpoints hit.
@@ -98,7 +98,7 @@ To demonstrate debugging timeline techniques, the [Time Travel Debugging walkthr
 
 In this scenario, the first step is to find the exception in the time travel trace. Double-click the only exception that you see on the timeline.
 
-In the Command window, you can see that the following command was issued when you selected the exception.
+In the **Command** window, you can see that the following command was issued when you selected the exception.
 
 ```dbgcmd
 (2dcc.6600): Break instruction exception - code 80000003 (first/second chance not available)
@@ -119,9 +119,9 @@ As you do that process, examine the values of local variables and the stack:
 
 At the point of failure, in trace it's common to end up a few steps after the true cause in error-handling code. With time travel, you can go back one instruction at a time to locate the true root cause.
 
-On the **Home** ribbon, use the **Step Into Back** command to step back three instructions. As you do this process, continue to examine the Stack, Locals, and Register windows.
+On the **Home** ribbon, use the **Step Into Back** command to step back three instructions. As you do this process, continue to examine the **Stack**, **Locals**, and **Registers** windows.
 
-The Command window displays the time travel position and the registers as you step back three instructions.
+The **Command** window displays the time travel position and the registers as you step back three instructions.
 
 ```dbgcmd
 0:000> t-
@@ -152,9 +152,9 @@ At this point in the trace, your stack and base pointer have values that make mo
 esp=003cf718 ebp=003cf7c8
 ```
 
-The Locals window contains values from your target app. The source code window highlights the line of code that's ready to be executed in your source code at this point in the trace.
+The **Locals** window contains values from your target app. The **Source** code window highlights the line of code that's ready to be executed in your source code at this point in the trace.
 
-To further investigate, open up a Memory window to view the contents near the stack pointer (`esp`) memory address. In this example, it has a value of `003cf7c8`. Select **Memory** > **Text** > **ASCII** to display the ASCII text stored at that address.
+To investigate further, open up a **Memory** window to view the contents near the stack pointer (`esp`) memory address. In this example, it has a value of `003cf7c8`. Select **Memory** > **Text** > **ASCII** to display the ASCII text stored at that address.
 
 :::image type="content" source="images/windbgx-timeline-demo-lab-registers-stack-memory.png" alt-text="Screenshot of the debugger displaying the Registers, Stack, and Memory windows.":::
 
@@ -241,7 +241,7 @@ You can provide a descriptive name for bookmarks.
 
 :::image type="content" source="images/windbgx-timeline-bookmark-new.png" alt-text="Screenshot of the New Bookmark dialog showing an example name for the first API call in the Display Greeting app.":::
 
-Select **View** > **Timeline** to open the Timelines window so that you can access the **Bookmarks** timeline. When you hover over a bookmark, the bookmark name appears.
+Select **View** > **Timeline** to open the **Timelines** window so that you can access the **Bookmarks** timeline. When you hover over a bookmark, the bookmark name appears.
 
 :::image type="content" source="images/windbgx-timeline-bookmarks.png" alt-text="Screenshot of the timeline displaying three bookmarks with the cursor hovering over one to reveal the bookmark name.":::
 

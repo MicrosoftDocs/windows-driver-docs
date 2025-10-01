@@ -28,14 +28,14 @@ Use the **End** buttons to restart, detach, and stop debugging.
 
 ## Preferences
 
-Use **Preferences** buttons to toggle between source code and assembly views and to access the **Settings** menu.
+Use the **Preferences** buttons to toggle between source code and assembly views and to access the **Settings** menu.
 
 ## Help (support)
 
-Use **Help** buttons to do the following:
+Use the **Help** buttons to do the following tasks:
 
-- **Review local help**: Offline
-- **Access online help**: Most up to date
+- **Review local help**: Offline help
+- **Access online help**: Most up-to-date help
 
 ## GitHub feedback
 

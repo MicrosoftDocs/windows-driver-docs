@@ -12,7 +12,7 @@ This article describes how to use the scripting support in WinDbg, the debugger 
 
 :::image type="content" source="images/windbgx-javascript-new-script.png" alt-text="Screenshot of the Scripting menu in WinDbg.":::
 
-The WinDbg scripting window features basic syntax highlighting, IntelliSense, and error recognition.
+The WinDbg **Scripting** window features basic syntax highlighting, IntelliSense, and error recognition.
 
 Use the ribbon buttons to:
 
@@ -22,7 +22,7 @@ Use the ribbon buttons to:
 - Save a script.
 - Unlink a script.
 
-You can also automatically execute scripts by right-clicking in the Scripting window and selecting **Execute Script on Save**. When you successfully load a script, a green checkbox appears on the script title bar. If there are errors in the script, a red X appears.
+You can also automatically execute scripts by right-clicking in the **Scripting** window and selecting **Execute Script on Save**. When you successfully load a script, a green checkbox appears on the script title bar. If there are errors in the script, a red X appears.
 
 ## JavaScript scripting
 
