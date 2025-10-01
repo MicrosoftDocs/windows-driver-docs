@@ -49,7 +49,7 @@ Get started debugging in WinDbg with the following features:
 
     For more information, see [Launch app package](./windbg-user-mode-preview.md#launch-app-package).
 
-    :::image type="content" source="images/windbgx-launch-app-package.png" border="false" alt-text="Screenshot of the Launch app package - Applications tab in WinDbg with cal in the search box and three apps listed.":::
+    :::image type="content" source="images/windbgx-launch-app-package.png" border="false" alt-text="Screenshot of the Launch app package option  and Applications tab in WinDbg with cal in the search box and three apps listed.":::
 
 - **Attach to a process**: Use the **Attach** view to get a detailed summary of running processes, access easier configuration, and search support.
 
@@ -71,7 +71,7 @@ Take advantage of the many improvements to the tool windows in WinDbg:
 
    :::image type="content" source="images/windbgx-disassembly.png" border="false" alt-text="Screenshot of the Disassembly window in WinDbg.":::
 
-- **Breakpoints**: Shows all of your current breakpoints, a one-click toggle, and a hit count. For more information, see [WinDbg - Breakpoints](windbg-breakpoints-preview.md).
+- **Breakpoints**: Shows all of your current breakpoints, a one-click toggle, and a hit count. For more information, see [WinDbg: Breakpoints](windbg-breakpoints-preview.md).
 
    :::image type="content" source="images/windbgx-breakpoints-window.png" border="false" alt-text="Screenshot of the Breakpoints window in WinDbg showing current breakpoints.":::
 
@@ -79,11 +79,11 @@ Take advantage of the many improvements to the tool windows in WinDbg:
 
    :::image type="content" source="images/windbgx-scripting-intellisense.png" alt-text="Screenshot of the Scripting window in WinDbg with IntelliSense and error highlighting.":::
 
-- **Data model**: Provides an expandable and browsable version of the `dx` and `dx -g` commands. This feature helps you create powerful tables on top of your NatVis, JavaScript, and LINQ queries. For more information, see [WinDbg - Data model](windbg-data-model-preview.md).
+- **Data Model**: Provides an expandable and browsable version of the `dx` and `dx -g` commands. This feature helps you create powerful tables on top of your NatVis, JavaScript, and LINQ queries. For more information, see [WinDbg: Data model](windbg-data-model-preview.md).
 
    :::image type="content" source="images/windbgx-data-model-explore-window.png" alt-text="Screenshot of the data model window in WinDbg with expandable and browsable features.":::
 
-- **Locals** and **Watch**: Based off the data model used by the `dx` command. They both benefit from the same features as other data model windows.
+- **Locals** and **Watch**: Based on the data model used by the `dx` command. They both benefit from the same features as other data model windows.
 - **Memory**: Has highlighting and improved scrolling.
 - **Logs**: Provides an under-the-covers log of the WinDbg internals. You can view the logs for troubleshooting or to monitor long-running commands.
 

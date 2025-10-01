@@ -25,7 +25,7 @@ For more information about how to create and work with time travel trace files, 
 The **Timelines** window shows events in the following timelines:
 
 - **Exceptions**: You can filter on a specific exception code.
-- **Breakpoints**: You can see on a timeline when breakpoints hit.
+- **Breakpoints**: You can see when breakpoints hit on a timeline.
 - **Memory Accesses**: You can read, write, and execute between two memory addresses.
 - **Function Calls**: You can search in the form of `module!function`.
 
@@ -53,21 +53,21 @@ After you add a breakpoint, the positions on the timeline show you when that bre
 
 When the breakpoint is cleared, the associated breakpoint timeline is automatically removed.
 
-### Function calls
+### Function Calls
 
 You can see the positions of function calls on the timeline. To do this step, provide the search in the form of `module!function`. An example is `TimelineTestCode!multiplyTwo`. You can also specify wildcards, for example, `TimelineTestCode!m*`.
 
-:::image type="content" source="images/windbgx-timeline-function-calls-dialog.png" alt-text="Adding a timeline in the debugger with a function call name entered.":::
+:::image type="content" source="images/windbgx-timeline-function-calls-dialog.png" alt-text="Screenshot of adding a timeline in the debugger with a function call name entered.":::
 
-When you hover over a function call, the function name, input parameters, their values, and the return value appear. This example shows **buffer** and **size** because they're the parameters to `DisplayGreeting!GetCppConGreeting`.
+When you hover over a function call, the function name, input parameters, their values, and the return value appear. This example shows the buffer and size because they're the parameters for `DisplayGreeting!GetCppConGreeting`.
 
 :::image type="content" source="images/windbgx-timeline-function-calls.png" alt-text="Screenshot of a timeline in the debugger displaying function calls and the Registers window.":::
 
-### Memory access
+### Memory Accesses
 
-Use the memory access timeline to see when a specific range of memory was read or written to, or where code execution took place. Start and stop addresses are used to define a range between two memory addresses.
+Use the **Memory Accesses** timeline to see when a specific range of memory was read or written to, or where code execution took place. Start and stop addresses are used to define a range between two memory addresses.
 
-:::image type="content" source="images/windbgx-timeline-memory-access-dialog.png" alt-text="Screenshot of adding a timeline memory access dialog with the Write option selected.":::
+:::image type="content" source="images/windbgx-timeline-memory-access-dialog.png" alt-text="Screenshot of adding a Memory Accesses dialog with the Write option selected.":::
 
 When you hover over a memory access item, the value and the instruction pointer appear.
 

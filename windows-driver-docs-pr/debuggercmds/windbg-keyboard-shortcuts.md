@@ -20,7 +20,7 @@ All the ribbon menu options are available by using the Alt key plus the first le
 
 | Keystroke     | Description             |
 | ------------- |-------------------------|
-F5 | Continue
+F5 | Continue.
 F10     | Step over.
 F11     | Step into.
 Shift+F11   |   Step out.

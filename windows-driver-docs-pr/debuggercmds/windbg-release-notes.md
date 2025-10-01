@@ -76,11 +76,11 @@ More features:
 
 ### General UI improvements
 
-* Command suggestion pop-up aligns to the cursor and shows only the suggested completions, instead of everything before the cursor.
-* Launch debug target error dialog provides more detail and, for open dump failures, provides a hyperlink to a file TSG that failed to open.
-* Tool window title bars have the same context menu as their docked tab.
-* Visual improvements to **Locals**, **Watch**, and **Model** windows.
-* Time Travel Debugging (TTD) updated to version 1.11.532. For more information, see [TTD release notes](time-travel-debugging-release-notes.md).
+* Aligned the Command suggestion pop-up to the cursor. It now shows only suggested completions instead of everything before the cursor.
+* Provided more detail to the opening debug target error dialog. For open dump failures, provided a hyperlink to a TSG file that failed to open.
+* Gave tool window title bars the same context menu as their docked tab.
+* Made visual improvements to **Locals**, **Watch**, and **Model** windows.
+* Updated Time Travel Debugging (TTD) to version 1.11.532. For more information, see [TTD release notes](time-travel-debugging-release-notes.md).
 
 ## 1.2502.25002.0
 
@@ -237,7 +237,7 @@ To aid debugging issues with downloading sources based on [embedded SourceLink](
 
 ### General UI improvements
 
-We made small improvements to windows such as the **Modules** and **Stack** windows:
+Made small improvements to windows such as the **Modules** and **Stack** windows:
 
 * The header column is used to sort grid views.
 * More right-click actions are available.

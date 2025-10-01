@@ -28,9 +28,9 @@ Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount
 
 :::image type="content" source="images/windbgx-data-model-process-threads.png" alt-text="Screenshot of the Data Model window displaying processes and threads in WinDbg.":::
 
-## Data model explorer
+## Data Model explorer
 
-Use the data model explorer to quickly browse every data model object in the `Debugger` namespace.
+Use the Data Model explorer to quickly browse every data model object in the `Debugger` namespace.
 
 :::image type="content" source="images/windbgx-data-model-explore-window.png" alt-text="Screenshot of the Data Model window with debug object sessions in WinDbg.":::
 

@@ -51,10 +51,10 @@ Setting | Default | Description
 `DebugChildProcesses` | `false`| (User mode only.) If `true`, debugs child processes started by the target application (`-o` command-line option).
 `Noninvasive` | `false`  |  Specifies noninvasive attach (`-pv` command-line option).
 `NoDebugHeap` | `false`  |  Specifies the debug heap shouldn't be used (`-hd` command-line option).
-`Verbose` | `false`  | When verbose mode is turned on, some display commands (such as register dumping) produce more detailed output (`-v` command-line option).
+`Verbose` | `false`  | When verbose mode is turned on, produces more detailed output (`-v` command-line option) for some display commands (such as register dumping).
 `Elevate` | - |  Used internally by WinDbg. Do not modify.
 `Restartable` | - |  Used internally by WinDbg. Do not modify.
-`UseImplicitCommandLine` | `false` | Use implicit command line (`-cimp` command-line option). This setting starts the debugger with an implicit command line instead of an explicit process to run.
+`UseImplicitCommandLine` | `false` | Uses implicit command line (`-cimp` command-line option). This setting starts the debugger with an implicit command line instead of an explicit process to run.
 
 For more information about the command-line options, see [WinDbg command-line options](../debugger/windbg-command-line-options.md).
 
@@ -62,8 +62,8 @@ For more information about the command-line options, see [WinDbg command-line op
 
 Setting | Default | Description
 --- | --- | ---
-`SymbolOptionsOverride` | 0 | An explicit symbol option mask in the form of a single hex number.
-`ShouldOverrideSymbolOptions` | `false` | If set to `true`, override all the symbol options listed in this table with the provided symbol option mask, which is described in the preceding table.
+`SymbolOptionsOverride` | 0 | This explicit symbol option mask is in the form of a single hex number.
+`ShouldOverrideSymbolOptions` | `false` | If set to `true`, overrides all the symbol options listed in this table with the provided symbol option mask, which is described in the preceding table.
 `SymOptExactSymbols` | `false` | This option causes the debugger to perform a strict evaluation of all symbol files.
 `SymOptFailCriticalErrors` | `false` | This symbol option causes file access error dialog boxes to be suppressed.
 `SymOptIgnoreCvRec` | `false` | This option causes the symbol handler to ignore the CV record in the loaded image header when searching for symbols.

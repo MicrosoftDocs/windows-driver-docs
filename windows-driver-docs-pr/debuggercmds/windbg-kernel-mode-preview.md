@@ -15,7 +15,7 @@ This article describes how to start a kernel mode session with WinDbg, the debug
 The process is similar to how it was done with previous versions of WinDbg. Select the tab for the type of transport that you're using, fill in the required fields, and select **OK**.
 
 > [!NOTE]
-> Local kernel debugging requires WinDbg to be launched elevated.
+> Local kernel debugging requires WinDbg to start with elevated privileges.
 
 :::image type="content" source="images/windbgx-attach-to-kernel.png" alt-text="Screenshot of the Start debugging pane with the Attach to kernel menu showing the Net tab.":::
 
