@@ -344,7 +344,7 @@ WinDbg Preview search now includes the option to search by using regular express
 
 ### Restricted mode
 
-Restricted mode is an optional setting that can limit the type of debugging sessions that WinDbg Preview can start to remote debugging sessions and dump files only. For more information, see [WinDbg - Restricted mode](windbg-restricted-mode-preview.md).
+Restricted mode is an optional setting that can limit the type of debugging sessions that WinDbg Preview can start to remote debugging sessions and dump files only. For more information, see [WinDbg: Restricted mode](windbg-restricted-mode-preview.md).
 
 ### Shadowed variable support
 
@@ -388,7 +388,7 @@ When you debug a 32-bit WOW process from a 64-bit context, you can now access bo
 
 ### JavaScript debugging improvements
 
-JavaScript loaded in the UI now uses the `.scriptdebug` command for direct debugging within the console. For more information, see [JavaScript debugger scripting - JavaScript debugging](../debugger/javascript-debugger-scripting.md#javascript-debugging).
+JavaScript loaded in the UI now uses the `.scriptdebug` command for direct debugging within the console. For more information, see [JavaScript debugger scripting: JavaScript debugging](../debugger/javascript-debugger-scripting.md#javascript-debugging).
 
 ### Accessibility improvements
 
@@ -468,7 +468,7 @@ Portable PDB support was added. The PDB format describes an encoding of debuggin
 
 ## 1.0.1912.11001
 
-- **TTD timelines**: A new window displays a visual representation of important events in your trace: exceptions, breakpoints, function calls, and memory accesses. Timelines automatically open and display exceptions (if present) and breakpoints. For more information, see [WinDbg Preview - Timeline](windbg-timeline-preview.md).
+- **TTD timelines**: A new window displays a visual representation of important events in your trace: exceptions, breakpoints, function calls, and memory accesses. Timelines automatically open and display exceptions (if present) and breakpoints. For more information, see [WinDbg Preview: Timeline](windbg-timeline-preview.md).
 - **Switched to default window chrome**: The custom window chrome that we used caused some scaling and resizing issues, so we removed it for now.
 - **File menu improved keyboard navigation**: The file menu is easier to navigate with only a keyboard.
 

@@ -53,7 +53,7 @@ After you add a breakpoint, the positions on the timeline show you when that bre
 
 When the breakpoint is cleared, the associated breakpoint timeline is automatically removed.
 
-### Function Calls
+### Function calls
 
 You can see the positions of function calls on the timeline. To do this step, provide the search in the form of `module!function`. An example is `TimelineTestCode!multiplyTwo`. You can also specify wildcards, for example, `TimelineTestCode!m*`.
 
@@ -63,7 +63,7 @@ When you hover over a function call, the function name, input parameters, their 
 
 :::image type="content" source="images/windbgx-timeline-function-calls.png" alt-text="Screenshot of a timeline in the debugger displaying function calls and the Registers window.":::
 
-### Memory Accesses
+### Memory access
 
 Use the **Memory Accesses** timeline to see when a specific range of memory was read or written to, or where code execution took place. Start and stop addresses are used to define a range between two memory addresses.
 

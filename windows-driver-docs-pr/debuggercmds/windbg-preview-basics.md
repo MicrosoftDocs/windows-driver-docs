@@ -36,8 +36,8 @@ ms.topic: overview
 
 | Title               | Description        |
 | ------------------- | -------------------|
-| [Time Travel Debugging: Overview](./time-travel-debugging-overview.md) | Time Travel Debugging (TTD) overview. |
-[Time Travel Debugging: Sample app walkthrough](./time-travel-debugging-walkthrough.md) | Time travel tutorial. |
+| [Time Travel Debugging: Overview](./time-travel-debugging-overview.md) | Time Travel Debugging (TTD) overview |
+[Time Travel Debugging: Sample app walkthrough](./time-travel-debugging-walkthrough.md) | Time travel tutorial |
 
 ## TTD queries
 
