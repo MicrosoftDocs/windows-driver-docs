@@ -1,16 +1,16 @@
 ---
 title: 'WinDbg: Time Travel'
-description: "This article describes how to work with the time travel menu."
+description: "This article describes how to work with the Time travel menu."
 keywords: ["Time Travel", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/10/2020
 ms.topic: how-to
 ---
 
-# WinDbg: Time Travel menu
+# WinDbg: Time travel menu
 
 :::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
-This article describes how to work with the time travel menu in WinDbg.
+This article describes how to work with the **Time travel** menu in WinDbg.
 
 :::image type="content" source="images/windbgx-timetravel-menu.png" alt-text="Screenshot of the Time travel menu in WinDbg.":::
 
@@ -20,7 +20,7 @@ For more information about time travel, see [Time Travel Debugging: Overview](ti
 
 ### Index trace
 
-Use **Index Trace** to force a re-index of a time travel trace.
+Use **Index Trace** to force a reindex of a time travel trace.
 
 ### Events
 
