@@ -8,7 +8,7 @@ ms.topic: how-to
 
 # WinDbg: Notes, Command, Memory, and Source menus
 
-This article describes how to work with the **Notes**, **Command**, **Memory**, and **Source** menus in WinDbg, the debugger for Windows.
+This article describes how to work with the **Notes**, **Command**, **Memory**, and **Source** menus in WinDbg.
 
 ## Notes
 

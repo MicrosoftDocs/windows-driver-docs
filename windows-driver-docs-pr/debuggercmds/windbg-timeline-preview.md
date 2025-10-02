@@ -47,7 +47,7 @@ You can also add a new timeline for a specific exception type.
 
 ### Breakpoints
 
-After you add a breakpoint, the positions on the timeline show you when that breakpoint hit. For example, you can use the [bp Set Breakpoint command](bp--bu--bm--set-breakpoint-.md). When you hover over a breakpoint, the address and the instruction pointer associated with the breakpoint appear.
+After you add a breakpoint, the positions on the timeline show you when that breakpoint is hit. For example, you can use the [bp Set Breakpoint command](bp--bu--bm--set-breakpoint-.md). When you hover over a breakpoint, the address and the instruction pointer associated with the breakpoint appear.
 
 :::image type="content" source="images/windbgx-timeline-breakpoints.png" alt-text="Screenshot of a timeline in the debugger displaying approximately 30 breakpoint indicators.":::
 

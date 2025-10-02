@@ -10,7 +10,7 @@ ms.topic: how-to
 
 :::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
-This article describes how to start a user mode session with WinDbg, the debugger for Windows.
+This article describes how to start a user mode session with WinDbg.
 
 Select **File** > **Start debugging**, and select either of these four options:
 

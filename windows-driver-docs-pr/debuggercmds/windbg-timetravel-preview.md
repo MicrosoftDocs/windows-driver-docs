@@ -20,7 +20,7 @@ For more information about time travel, see [Time Travel Debugging: Overview](ti
 
 ### Index trace
 
-Use **Index Trace** to force a reindex of a time travel trace.
+Use **Index Trace** to force a re-index of a time travel trace.
 
 ### Events
 

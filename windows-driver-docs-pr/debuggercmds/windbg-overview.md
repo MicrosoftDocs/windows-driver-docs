@@ -1,6 +1,6 @@
 ---
 title: Windows Debugger WinDbg Overview
-description: Explore WinDbg, the debugger for Windows, to learn about general features and tool windows.
+description: Explore WinDbg to learn about general features and tool windows.
 keywords: ["Overview of WinDbg's major features", "WinDbg", "Overview", "Windows Debugging"]
 ms.date: 07/17/2025
 ms.topic: concept-article
@@ -9,7 +9,7 @@ ms.custom: sfi-image-nochange
 
 # What is WinDbg?
 
-WinDbg, the debugger for Windows, is the latest version of the debugger that offers more modern visuals, faster windows, and a full-fledged scripting experience. WinDbg is built with an extensible debugger data model.
+WinDbg is the latest version of the debugger that offers more modern visuals, faster windows, and a full-fledged scripting experience. WinDbg is built with an extensible debugger data model.
 
 > [!NOTE]
 > WinDbg was previously released as WinDbg Preview in the Microsoft Store. WinDbg uses the same underlying engine as WinDbg (Classic). It supports all the same commands, extensions, and workflows.

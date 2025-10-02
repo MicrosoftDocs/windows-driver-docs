@@ -10,7 +10,7 @@ ms.topic: checklist
 
 :::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
-This article summarizes the keyboard shortcuts for WinDbg, the debugger for Windows.
+This article summarizes the keyboard shortcuts for WinDbg.
 
 All the ribbon menu options are available by using the Alt key plus the first letter of the option. Examples are Alt+H to go to the **Home** menu and Alt+H+S to stop debugging.
 

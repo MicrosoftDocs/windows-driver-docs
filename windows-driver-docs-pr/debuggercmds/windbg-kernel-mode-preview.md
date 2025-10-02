@@ -10,7 +10,7 @@ ms.topic: how-to
 
 :::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
-This article describes how to start a kernel mode session with WinDbg, the debugger for Windows.
+This article describes how to start a kernel mode session with WinDbg.
 
 The process is similar to how it was done with previous versions of WinDbg. Select the tab for the type of transport that you're using, fill in the required fields, and select **OK**.
 

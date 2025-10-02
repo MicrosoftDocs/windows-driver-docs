@@ -8,7 +8,7 @@ ms.topic: how-to
 
 # WinDbg: Scripting menu
 
-This article describes how to use the scripting support in WinDbg, the debugger for Windows.
+This article describes how to use the scripting support in WinDbg.
 
 :::image type="content" source="images/windbgx-javascript-new-script.png" alt-text="Screenshot of the Scripting menu in WinDbg.":::
 

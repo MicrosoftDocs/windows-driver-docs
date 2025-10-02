@@ -11,7 +11,7 @@ ms.custom: sfi-image-nochange
 
 :::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
-This article describes how to start a remote, process server, or dump file session with WinDbg, the debugger for Windows.
+This article describes how to start a remote, process server, or dump file session with WinDbg.
 
 ## Remote debug server
 
