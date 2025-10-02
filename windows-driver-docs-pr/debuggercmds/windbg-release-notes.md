@@ -10,7 +10,7 @@ ms.topic: release-notes
 
 :::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
-This article provides information on what's new in WinDbg, the debugger for Windows. Earlier versions were released as *WinDbg Preview*.
+This article provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
 ## 1.2508.27001.0
 

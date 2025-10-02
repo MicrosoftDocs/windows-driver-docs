@@ -10,7 +10,7 @@ ms.topic: how-to
 
 :::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
-This article describes how to use the **File** menu in WinDbg, the debugger for Windows.
+This article describes how to use the **File** menu in WinDbg.
 
 ### Start debugging
 

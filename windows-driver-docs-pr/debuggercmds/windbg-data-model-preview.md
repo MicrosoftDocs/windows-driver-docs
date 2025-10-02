@@ -8,7 +8,7 @@ ms.topic: how-to
 
 # WinDbg: Data Model menu
 
-This article describes how to work with the **Data Model** menu in WinDbg, the debugger for Windows.
+This article describes how to work with the **Data Model** menu in WinDbg.
 
 ## New model query
 

@@ -8,7 +8,7 @@ ms.topic: how-to
 
 # WinDbg: Breakpoints menu
 
-This section describes how to work with breakpoints by using WinDbg, the debugger for Windows.
+This section describes how to work with breakpoints by using WinDbg.
 
 ## Breakpoints menu
 
