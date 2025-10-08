@@ -38,7 +38,7 @@ Use **Watch** to watch local variables and registers.
 
 ## Memory
 
-Use **Memory** to display memory locations. In addition to providing a memory address, you can use pseudo-register values such as `$scopeip` and `$eventip` to examine memory. Preappend the @ symbol to use pseudo-register values in **Memory**, for example, `@$scopeip`. For more information, see [Pseudo-register syntax](pseudo-register-syntax.md)
+Use **Memory** to display memory locations. In addition to providing a memory address, you can use pseudo-register values such as `$scopeip` and `$eventip` to examine memory. Preappend the @ symbol to use pseudo-register values in **Memory**, for example, `@$scopeip`. For more information, see [Pseudo-register syntax](pseudo-register-syntax.md).
 
 ## Stack
 
