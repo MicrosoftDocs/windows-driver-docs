@@ -43,7 +43,7 @@ C:\Users\*UserName*\AppData\Local\DBG\targets
 
 ### Open source file
 
-Use **Open source file** to open a source file. Do this step when you want to work with other source files that didn't load because of code execution. For more information on working with source files, see [Source code debugging in WinDbg (Classic)](../debugger/source-window.md)
+Use **Open source file** to open a source file. Do this step when you want to work with other source files that didn't load because of code execution. For more information on working with source files, see [Source code debugging in WinDbg (Classic)](../debugger/source-window.md).
 
 ### Open script
 
