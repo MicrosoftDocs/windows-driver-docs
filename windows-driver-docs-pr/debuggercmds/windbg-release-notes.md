@@ -245,8 +245,7 @@ Made small improvements to windows such as the **Modules** and **Stack** windows
 
 ### Bug fixes
 
-* Fixed an issue where PDBs larger than 4 GB wouldn't download over HTTP.
-  - Edge is an example of such a PDB.
+* Fixed an issue where PDBs larger than 4 GB wouldn't download over HTTP. Edge is an example of such a PDB.
 * Fixed a caching issue in the debugger credential provider. (Now it caches credentials per site.)
 * Fixed bugs during evaluation of the extension gallery load triggers.
 * Fixed a bug with `!address` that could cause a crash.
@@ -271,7 +270,7 @@ For the foreseeable future, the WinDbg client requires Windows because WinDbg do
 
 #### Record a subset of execution with Time Travel Debugging
 
-You can now specify a list of modules to record to focus TTD on the modules that you care about. This functionality can reduce recording overhead. To use it, in the **Configure and Record** dialog, select **Record subset of execution**. Then specify the modules that you want recorded. (For more information, see [Known issues](#known-issues)).
+You can now specify a list of modules to record to focus TTD on the modules that you care about. This functionality can reduce recording overhead. To use it, in the **Configure and Record** dialog, select **Record subset of execution**. Then specify the modules that you want recorded. (For more information, see [Known issues](#known-issues).)
 
 For finer control, you can precisely record your program by using a new in-process recording API. To learn how to record your program, see our [sample code](https://github.com/microsoft/WinDbg-Samples/tree/master/TTD/LiveRecorderApiSample) and [documentation](https://github.com/microsoft/WinDbg-Samples/tree/master/TTD/docs).
 
@@ -604,7 +603,7 @@ This version includes the following updates:
 - **JSProvider API version 1.2**: For JavaScript extensions that declare support for API version 1.2:
 
    - Any object with a `.compareTo` method that exits the script has a custom comparator on it. (Comparison operators work in the DX evaluator and elsewhere. An example is `IModelObject::Compare`.)
-   - Any object with a `.equals` method that exits the script has a custom equality operator on it (The `==` and `!=` operators work in the DX evaluator and elsewhere. An example is `IModelObject::IsEqualTo`.).
+   - Any object with a `.equals` method that exits the script has a custom equality operator on it. (The `==` and `!=` operators work in the DX evaluator and elsewhere. An example is `IModelObject::IsEqualTo`.)
    - Native or data model objects that enter the script have `.compareTo` and `.equals` on them, which allows access to any custom comparator or custom equality implementations.
 
 ### Minor changes and bug fixes
@@ -645,7 +644,7 @@ This version includes the following updates:
 ### JavaScript improvements
 
 - The 64-bit numbers and numerics in JavaScript now contain a modulo method, which allows a true 64-bit modulo operation.
-- Objects defined in JavaScript can now implement a custom comparable or equitable notion. It works in `dx` by using standard C++ operators or in LINQ operations. To use this functionality, the script must declare in the `initializeScript` array that it supports a new version of the host API by inserting a record `new host.apiVersionSupport(1, 2)`. Afterwards, you can use these functions in any `dx` or Data Model Window LINQ query. If the method implements `.compareTo(other)`, it's comparable (comparison operators work in `dx` and LINQ). If the method returns a negative value, then `this < other`. If the method returns zero, then `this == other`. If the method returns a positive value, then `this > other`. If the method implements `.equals(other)`, it's equitable (`==` works in `dx` and LINQ). The method must return either true or false.
+- Objects defined in JavaScript can now implement a custom comparable or equitable notion. It works in `dx` by using standard C++ operators or in LINQ operations. To use this functionality, the script must declare in the `initializeScript` array that it supports a new version of the host API by inserting a record `new host.apiVersionSupport(1, 2)`. Afterward, you can use these functions in any `dx` or Data Model Window LINQ query. If the method implements `.compareTo(other)`, it's comparable (comparison operators work in `dx` and LINQ). If the method returns a negative value, then `this < other`. If the method returns zero, then `this == other`. If the method returns a positive value, then `this > other`. If the method implements `.equals(other)`, it's equitable (`==` works in `dx` and LINQ). The method must return either true or false.
 
 ### Minor changes and bug fixes
 
