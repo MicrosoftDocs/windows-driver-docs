@@ -22,7 +22,7 @@ WinDbgX [options]
 
 The following tables summarize the available command-line options.
 
-#### General Options
+#### General options
 
 |     Option      |                                                                          Description                                                                          |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -34,7 +34,7 @@ The following tables summarize the available command-line options.
 | `-e EventHandle` | Signals the event with the given handle after the next exception in a target.                                         |
 |       `-?`         | Displays a summary of commands available.                                                           |
 
-#### Kernel Options
+#### Kernel options
 
 |       Option       |                                                                      Description                                                                      |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -44,7 +44,7 @@ The following tables summarize the available command-line options.
 | `-kx ExdiOptions`  | Starts a kernel debugging session using an EXDI driver. For more information about EXDI, see [Configuring the EXDI Debugger Transport](../debugger/configuring-the-exdi-debugger-transport.md). |
 |         `-I`         | After a reboot, the debugger will break into the target computer as soon as a kernel module is loaded.                         |
 
-#### User Mode Options
+#### User mode options
 
 Option | Description
 |------ | -----------|
@@ -55,7 +55,7 @@ Option | Description
 `-hd` | Specifies that the debug heap should not be used.
 `-cimp` | Specifies that any processes created will use an implicit command-line set by the server instead of a user-given command-line string from the client.
 
-#### Target Options
+#### Target options
 
 | Option                     |                 Description                                                                                                                                  |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -73,7 +73,7 @@ Option | Description
 | `-openPrivateDumpByHandle Handle` | *Microsoft internal use only*. Specifies the handle of a crash dump file to debug.                                                                 |
 | `-benchmarkStartup`      | *Microsoft internal use only*. Runs a startup benchmark and appends the result to a file.                                                                                                    |
 
-#### Symbol Options
+#### Symbol options
 
 Option | Description
 |------ | -----------|
@@ -89,7 +89,7 @@ Option | Description
 `-sup`           | Causes the symbol handler to search the public symbol table during every symbol search.
 `-sflags`         | Sets all the symbol handler options at once.
 
-#### Source Path Options
+#### Source path options
 
  Option   | Description
 |-------- | -----------|
@@ -110,14 +110,14 @@ Option | Description
 
 For a list of exceptions that can be specified, see [Event Definitions and Defaults](./../debugger/controlling-exceptions-and-events.md#event-definitions-and-defaults).
 
-#### Post Mortem
+#### Postmortem
 
 Option  | Description
 |------ | -----------|
 `-I`     | Sets WinDbg as the default post-mortem debugger for the system.
 `-IS`    | Sets WinDbg as the default post-mortem debugger for the system silently, with only errors being reported.
 
-#### Deprecated Options
+#### Deprecated options
 
 Option | Description
 |------ | -----------|
