@@ -1,6 +1,6 @@
 ---
 title: 'WinDbg: Breakpoints Menu'
-description: "This section describes how to set and clear breakpoints by using WinDbg, the debugger for Windows."
+description: "This section describes how to set and clear breakpoints by using WinDbg."
 keywords: ["Breakpoints Menu", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 08/15/2017
 ms.topic: how-to
