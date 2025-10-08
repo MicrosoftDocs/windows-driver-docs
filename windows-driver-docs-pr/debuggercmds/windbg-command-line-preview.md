@@ -129,7 +129,7 @@ Option | Description
 
 For general information on the startup parameters, see [WinDbg Command-Line Options](../debugger/windbg-command-line-options.md).
 
-You can use -? to list the supported command line options.
+You can use `-?` to list the supported command-line options.
 
 :::image type="content" source="images/windbgx-start-up-options.png" alt-text="Screenshot of WinDbgX command-line help output displaying various options.":::
 
