@@ -35,7 +35,7 @@ With workspaces, you can save configuration information in the target connection
 
 The options in workspaces are saved when you close the debugger. To save them manually, select **File** > **Save Workspace**.
 
-Workspaces are automatically loaded if you open them from the recent targets list. You can also load them manually in the **File** menu.
+Workspaces are automatically loaded if you open them from the recent targets list. You can also load them manually on the **File** menu.
 
 In addition to the target connection information, the following settings are stored in the workspace file.
 
@@ -62,7 +62,7 @@ For more information about the command-line options, see [WinDbg command-line op
 
 Setting | Default | Description
 --- | --- | ---
-`SymbolOptionsOverride` | 0 | This explicit symbol option mask is in the form of a single hex number.
+`SymbolOptionsOverride` | `0` | This explicit symbol option mask is in the form of a single hex number.
 `ShouldOverrideSymbolOptions` | `false` | If set to `true`, overrides all the symbol options listed in this table with the provided symbol option mask, which is described in the preceding table.
 `SymOptExactSymbols` | `false` | This option causes the debugger to perform a strict evaluation of all symbol files.
 `SymOptFailCriticalErrors` | `false` | This symbol option causes file access error dialog boxes to be suppressed.
