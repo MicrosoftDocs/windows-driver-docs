@@ -1,50 +1,49 @@
 ---
-title: "WinDbg -  Notes, Command, Memory and Source Menus"
-description: "This section describes how work with the Notes, Command, Memory and Source menus."
+title: 'WinDbg: Notes, Command, Memory, and Source Menus'
+description: "This article describes how to work with the Notes, Command, Memory, and Source menus."
 keywords: ["Notes, Command, Memory and Source Menus", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/10/2020
 ms.topic: how-to
 ---
 
-# WinDbg - Notes, Command, Memory and Source Menus
+# WinDbg: Notes, Command, Memory, and Source menus
 
-This section describes how work with the Notes, Command, Memory and Source menus in WinDbg.
+This article describes how to work with the **Notes**, **Command**, **Memory**, and **Source** menus in WinDbg.
 
 ## Notes
 
-Use the menu to:
+Use the **Notes** menu to:
 
-- Open a notes file
-- Save a notes file
+- Open a notes file.
+- Save a notes file.
 
 ## Command
 
-Use the command menu to:
+Use the **Command** menu to:
 
-- Prefer DML
-- Highlight and Un-highlight the current text selection (CTRL+ALT+H)
-- Clear the command window text
-- Save window text to a dml file
+- Prefer Debugger Markup Language (DML).
+- Highlight and clear highlighting for the current text selection (Ctrl+Alt+H).
+- Clear the Command window text.
+- Save window text to a .dml file.
 
 ## Memory
 
-Use the memory menu  to:
+Use the **Memory** menu to:
 
-- Set a data model memory query
-- Set the memory size, for example to byte or long
-- Set the display format, for example hex or signed
-- Set the text display format, for example to ASCII
+- Set a data model memory query.
+- Set the memory size, for example, to byte or long.
+- Set the display format, for example, to hex or signed.
+- Set the text display format, for example, to ASCII.
 
 ## Source
 
-Use the source menu to:
+Use the **Source** menu to:
 
-- Open a source file
-- Set an instruction pointer
-- Run to cursor
-- Close all source windows
+- Open a source file.
+- Set an instruction pointer.
+- Run to cursor.
+- Close all source windows.
 
-## See Also
+## Related content
 
-[WinDbg Features](../debugger/debugging-using-windbg-preview.md)
-
+- [WinDbg features](../debugger/debugging-using-windbg-preview.md)
