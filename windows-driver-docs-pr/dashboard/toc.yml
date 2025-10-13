@@ -221,6 +221,8 @@
         href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-standard.md
       - name: Myriad of machines that had a TDR caused by a graphics driver crash
         href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-standard.md
+      - name: Myriad of machines that had a user mode crash or hang
+        href: myriad-of-machines-that-had-a-user-mode-crash-or-hang.md
       - name: Myriad of machines with integrated GPU that had a TDR caused by a graphics
           driver crash
         href: graphics-tdr-integrated-gpu.md
