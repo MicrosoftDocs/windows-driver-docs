@@ -12,7 +12,7 @@ ms.topic: release-notes
 
 This article provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
-# 1.2510.7001.1
+## 1.2510.7001.1
 
 ### User Interface & Experience Improvements
 - Open Any Memory Window Instance from Ribbon
