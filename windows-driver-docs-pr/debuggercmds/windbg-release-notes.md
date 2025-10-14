@@ -12,6 +12,33 @@ ms.topic: release-notes
 
 This article provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
+## 1.2510.7001.1
+
+### User Interface & Experience Improvements
+- Open Any Memory Window Instance from Ribbon
+
+### Debugging & Performance Enhancements
+- Prevented stealing of process instrumentation callbacks to improve debugging reliability
+- Enhanced Time Travel Debugging (TTD) variable history with tabular format preference for better data visualization
+- Fixed crash in variable history when reusing generators by ensuring proper function captures
+- Enhanced evaluator for ambiguous breakpoints to handle more complex debugging scenarios
+- Fixed empty Publisher column display for store applications and PLM processes
+
+### TTD & Replay API Updates
+- Updated `!tt` command to provide one-line help and current position when called without arguments instead of moving to trace beginning
+- Added experimental Replay API SDK availability for external integration
+- Enhanced variable history data model methods for improved programmatic access
+- Fixed various TTD replay operation optimizations and callback support improvements
+
+### Bug Fixes & Stability
+- Fixed error reporting that incorrectly showed "error: The operation completed successfully"
+- Addressed host URL processing issues in fasttfgitview commands
+- Improved error text around symbol resolution to provide clearer feedback
+- Fixed issues with loading PDBs for flat mapped .NET assemblies on Linux
+- Resolved uninitialized read bug in debugging components
+- Fixed extension gallery file search issues with short file names
+
+
 ## 1.2508.27001.0
 
 ### New features
