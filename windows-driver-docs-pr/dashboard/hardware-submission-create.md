@@ -1,7 +1,7 @@
 ---
 title: Create a New Hardware Submission
 description: Create a new hardware submission on the Partner Center hardware dashboard for your Windows tested drivers to obtain certification.
-ms.date: 07/15/2025
+ms.date: 10/16/2025
 ms.topic: how-to
 ---
 
@@ -121,7 +121,7 @@ To resolve the issue, [install standalone HLK Studio](/windows-hardware/test/hlk
 
 ### Other issues
 
-For other issues, see [Support for dashboard or Windows Hardware Lab Kit (HLK)](technical-support.md).
+For other issues, see [Support for Partner Center dashboard](technical-support.md).
 
 ## Related articles
 
