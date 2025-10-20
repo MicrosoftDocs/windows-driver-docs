@@ -1,7 +1,7 @@
 ---
 title: KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER
 description: The KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER property specifies a driver-allocated cyclic buffer for audio data.
-ms.date: 09/25/2025
+ms.date: 10/20/2025
 keywords: ["KSPROPERTY_RTAUDIO_BUFFER Audio Devices"]
 topic_type:
 - apiref
@@ -34,12 +34,12 @@ A **KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER** property request returns STATUS_SUCC
 
 | Status code | Meaning |
 |--|--|
+| STATUS_ALREADY_INITIALIZED | Returned if the registers have already been allocated or if KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER was called by a different process, meaning that the looped memory buffer has already been allocated and mapped to a different process than the one requesting the registers. |
+| STATUS_DEVICE_NOT_READY | The device isn't ready |
+| STATUS_INSUFFICIENT_RESOURCES | Returned if there is insufficient memory to allocate the registers. |
+| STATUS_INVALID_PARAMETER | If the KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER or provided KSMIDILOOPED_BUFFER are invalid or an invalid buffer size is requested. |
 | STATUS_SUCCESS | Indicates successful completion. |
 | STATUS_UNSUCCESSFUL | A cyclic buffer with the specified combination of buffer attributes can't be allocated. |
-| STATUS_INSUFFICIENT_RESOURCES | Memory for the buffer can't be allocated. |
-| STATUS_DEVICE_NOT_READY | The device isn't ready |
-| STATUS_INVALID_PARAMETER | If the KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER or provided KSMIDILOOPED_BUFFER are invalid or an invalid buffer size is requested. |
-| STATUS_ALREADY_INITIALIZED | Returned if looped streaming is already initialized for this pin. |
 
 ## Remarks
 

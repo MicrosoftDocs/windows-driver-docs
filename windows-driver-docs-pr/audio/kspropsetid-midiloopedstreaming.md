@@ -1,7 +1,7 @@
 ---
 title: KSPROPSETID_MIDILOOPEDSTREAMING
 description: KSPROPSETID_MIDILOOPEDSTREAMING
-ms.date: 02/10/2025
+ms.date: 10/20/2025
 ms.topic: reference
 ---
 
@@ -23,8 +23,6 @@ It is defined as follows.
 
 The `KSPROPSETID_MIDILOOPEDSTREAMING` property set contains the following properties:
 
-[**KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER**](ksproperty-midiloopedstreaming-buffer.md)
-
-[**KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS**](ksproperty-midiloopedstreaming-registers.md)
-
-[**KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT**](ksproperty-midiloopedstreaming-notification-event.md)
+- **[KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER](ksproperty-midiloopedstreaming-buffer.md)**
+- **[KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS](ksproperty-midiloopedstreaming-registers.md)**
+- **[KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT](ksproperty-midiloopedstreaming-notification-event.md)**

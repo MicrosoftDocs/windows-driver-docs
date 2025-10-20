@@ -34,11 +34,11 @@ A **KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT** property request returns
 
 | Status code | Meaning |
 |--|--|
-| STATUS_UNSUCCESSFUL | A cyclic buffer with the specified combination of buffer attributes cannot be allocated. |
-| STATUS_INSUFFICIENT_RESOURCES | Memory for the buffer cannot be allocated. |
-| STATUS_DEVICE_NOT_READY | The device is not ready |
 | STATUS_ALREADY_INITIALIZED | The events have already been set. |
 | STATUS_ALREADY_INITIALIZED | **[KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER](ksproperty-midiloopedstreaming-buffer.md)** was called by a different process than the one attempting to configure the notification events. |
+| STATUS_DEVICE_NOT_READY | The device is not ready |
+| STATUS_INSUFFICIENT_RESOURCES | Memory for the buffer cannot be allocated. |
+| STATUS_UNSUCCESSFUL | A cyclic buffer with the specified combination of buffer attributes cannot be allocated. |
 
 ## Remarks
 
