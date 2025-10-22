@@ -5,16 +5,14 @@ ms.date: 10/21/2025
 ms.topic: concept-article
 ---
 
-# Buses and Sensors measures
+# Buses and Sensors Measures
 
 ## Overview
 
-The USB (Universal Serial Bus) device class encompasses a wide variety of USB-connected devices including storage devices, input devices, audio devices, communication devices, and custom USB peripherals. USB is one of the most prevalent connection standards in modern computing, supporting both data transfer and power delivery across multiple generations of the specification.
+The Buses and Sensors device classes encompass critical hardware connectivity and environmental sensing components that enable modern computing experiences. These device classes include USB connectivity, system buses (PCIe, I2C, SPI), and various sensors (accelerometers, gyroscopes, ambient light, proximity) that provide essential data for adaptive computing, security, and user experience features across desktop, mobile, and IoT scenarios.
 
-## USB Driver Development Frameworks
+**USB** drivers leverage multiple framework options depending on complexity and device type. **WinUSB** provides the simplest path for custom devices, allowing user-mode applications to communicate directly through the WinUSB API without requiring custom kernel drivers. Standard USB device classes utilize inbox drivers like HID (hidusb.sys) for input devices and Mass Storage (usbstor.sys) for storage devices. Complex USB implementations use the **Windows Driver Framework (WDF)** with KMDF for kernel-mode drivers requiring direct hardware access and UMDF for user-mode drivers with enhanced security.
 
-USB drivers on Windows can be built using several different frameworks optimized for specific device types and use cases. **WinUSB** is Microsoft's generic USB driver that provides the most simplified development path for custom USB devices, vendor-specific hardware, and prototyping scenarios. It eliminates the need for custom kernel drivers by allowing user-mode applications to communicate directly with devices through the WinUSB API, though it's limited to bulk, interrupt, and control transfers.
+**Buses** such as PCIe, I2C, and SPI rely on specialized frameworks including the **Simple Peripheral Bus (SPB)** framework for I2C/SPI controllers and **PCIe miniport drivers** that integrate with the Windows PCI bus driver architecture.
 
-For standard device classes, Windows provides inbox class drivers including HID (hidusb.sys) for input devices, Mass Storage (usbstor.sys) for storage devices, and Audio/Video class drivers for multimedia devices.
-
-For more complex USB devices requiring custom drivers, the Windows Driver Framework (WDF) offers both KMDF for kernel-mode drivers requiring direct hardware access and UMDF for user-mode drivers with enhanced security and stability.
+**Sensors** development primarily uses the **Windows Sensor Framework** and **Sensor Class Extension (SensorsCx)** which provide standardized APIs for environmental, motion, orientation, and biometric sensors. The framework abstracts hardware complexity through the **Universal Sensor Driver Model** enabling consistent sensor data delivery to applications via the **Windows Runtime Sensor APIs**. Modern sensor implementations also leverage the **Human Interface Device (HID)** framework for sensors that report through HID descriptors, and increasingly utilize **Windows IoT Core** extensions for edge computing scenarios where sensors integrate with cloud services and machine learning pipelines

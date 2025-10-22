@@ -24,4 +24,4 @@ Users want to consistently connect to the Internet via Ethernet within a reasona
 
 ## Calculation
 
-1. This measure determines the time it takes from Ethernet detection to achieve Internet gain. Specifically, it measures the time from DHCP MediaConnected to NCSI CapabilityChange telemetry events. The measure calculates median time taken for internet connectivity through ethernet.
+This measure determines the time it takes from Ethernet detection to achieve Internet gain. Specifically, it measures the time from DHCP MediaConnected to NCSI CapabilityChange telemetry events. The measure calculates median time taken for internet connectivity through ethernet.

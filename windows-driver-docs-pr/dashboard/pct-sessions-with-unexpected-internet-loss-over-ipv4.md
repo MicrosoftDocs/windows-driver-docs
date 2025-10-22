@@ -24,4 +24,4 @@ Once a device successfully establishes a IPv4 and connects to Internet, the user
 
 ## Calculation
 
-1. This measure calculates the percentage of instances aggregated per device that have at least one unexpected Internet loss.  After gaining Internet above, Internet loss occurs when NCSI CapabilityChange event is fired during a DHCP connectivity session with the old capability being Internet.
+This measure calculates the percentage of instances aggregated per device that have at least one unexpected Internet loss.  After gaining Internet above, Internet loss occurs when NCSI CapabilityChange event is fired during a DHCP connectivity session with the old capability being Internet.
