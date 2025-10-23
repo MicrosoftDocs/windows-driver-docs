@@ -1,6 +1,6 @@
 ---
 title: Percent of machines with user mode crashes out of the total flighting population (non-ecosystem, with INF matching ID)
-description: The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have at least one user mode crash
+description: The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have at least one user mode crash, for non-ecosystem drivers with an INF matching ID
 ms.date: 10/22/2025
 ms.topic: reference
 ---
