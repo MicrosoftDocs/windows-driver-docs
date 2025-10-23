@@ -23,7 +23,7 @@ To access the Trusted Root Certification Authorities certificate store on a Wind
 
 1. Open the Windows Run dialog: Press **Windows key** + **R** to open the Run dialog.
 
-1. Open the Microsoft Management Console (MMC): Type `mmc` into the Run dialog and press **Enter**. This command opens the Microsoft Management Console. If Account Control (UAC) prompts you, select **Yes** to allow the MMC to make changes to your device.
+1. Open the Microsoft Management Console (MMC): Type `mmc` into the Run dialog and press **Enter**. This command opens the Microsoft Management Console. If User Account Control (UAC) prompts you, select **Yes** to allow the MMC to make changes to your device.
 
 1. Add the certificates snap-in:
 
