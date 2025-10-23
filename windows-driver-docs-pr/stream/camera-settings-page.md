@@ -53,30 +53,30 @@ Enabled color cameras are shown in the list. Specialty cameras, such as IR camer
 When a camera is disabled through the camera settings page, a section appears with a list of disabled cameras. Select **Enable** to enable camera again.
 
 > [!NOTE]
-> Some cameras don't appear in the camera settings page if they're missing a driver, in a nonfunctional state, or disabled through alternate utilities, such as Device Manager.
+> Some cameras don't appear in the camera settings page if they're missing a driver, in a nonfunctional state, or disabled through other utilities, such as Device Manager.
 
 <a name="configuring-individual-cameras"></a>
 ## Configure individual cameras
 
-Select an individual camera from **Connected cameras** in the camera settings page to view a page that displays a camera preview, allows management of the camera, and allows configuration of default imaging settings.
+In the camera settings page, select an individual camera from **Connected cameras** to view a page that displays a camera preview, allows management of the camera, and allows configuration of default imaging settings.
 
 The default settings displayed on this page are saved per camera and per user account. Default imaging settings aren't backed up and restored during operating system reinstallation or during setup of a new Windows device.
 
 ### Disable a camera
 
-To disable a camera, select it from **Connected cameras** on the camera settings page to open a page with its settings. Then, select **Disable**. Before it disables the camera, the page prompts you to confirm.
+To disable a camera, select it from **Connected cameras** on the camera settings page to open a page with the camera settings. Then, select **Disable**. Before it disables the camera, the page prompts you to confirm.
 
-On some systems, more than one camera shares a common ISP. If you disable one camera, the action can disable multiple cameras. This situation is common on tablet form factor devices that have both an integrated front-facing, or *videoconferencing*, camera and a world-facing camera. In this scenario, the confirmation prompt explains that disabling one camera causes other cameras on the system to be disabled as a group.
+On some systems, more than one camera shares a common ISP. If you disable one camera, the action can disable other cameras. This situation is common on tablet form factor devices that have both an integrated front-facing, or *videoconferencing*, camera and a world-facing camera. In this scenario, the confirmation prompt explains that disabling one camera causes other cameras on the system to be disabled as a group.
 
-In some circumstances, cameras require a system restart to be disabled. In this scenario, the camera continues to display in the **Connected cameras** list of the camera settings page. It remains grayed out with a message indicating the need to restart the computer.
+In some circumstances, cameras require a system restart to be disabled. The camera continues to display in the **Connected cameras** list of the camera settings page. It remains grayed out with a message indicating the need to restart the computer.
 
 ### Troubleshoot a camera
 
-To troubleshoot a camera, select it from the **Connected cameras** list on the camera settings page to open its subpage, and then select **Troubleshoot**. The **Get Help** utility offers an interactive camera troubleshooting experience.
+To troubleshoot a camera, on the camera settings page, select it from **Connected cameras** to open its subpage, and then select **Troubleshoot**. The **Get Help** utility offers an interactive camera troubleshooting experience.
 
 ### Adjust basic image settings
 
-When you select camera from **Connected cameras** on the camera settings page, under **Basic settings**, the page presents sliders and toggles for basic imaging settings, as supported by the camera.
+When you select a camera from **Connected cameras** on the camera settings page, under **Basic settings**, the page presents sliders and toggles for basic imaging settings, as supported by the camera.
 
 The following table lists available basic settings that the camera must implement for each setting to be visible. It lists the corresponding KS Property, or UVC Control for USB cameras. If none of the settings are available on the camera, the **Basic settings** section isn't visible.
 
@@ -92,13 +92,13 @@ The **Brightness** control is a unique control because, depending on what contro
 
 The ideal behavior of a slider for default image brightness is to act as a relative offset/bias to the camera's Auto Exposure (AE) algorithm. This approach ensures that adjustments are scene-independent and the camera can be set to always be a bit brighter or a bit darker for any given lighting environment.
 
-The EV Compensation control is explicitly designed to act as a bias to a camera's AE algorithm. If a camera supports the EV Compensation control, the **Brightness** slider in the camera settings maps to this control. If the camera doesn't support the EV Compensation control but supports the legacy Brightness control, the **Brightness** slider maps to the legacy Brightness control. If the camera supports neither control, the **Brightness** slider isn't visible in the camera settings page.
+The **EV Compensation** control is explicitly designed to act as a bias to a camera's AE algorithm. If a camera supports the **EV Compensation** control, the **Brightness** slider in the camera settings maps to this control. If the camera doesn't support the **EV Compensation** control but supports the legacy **Brightness** control, the **Brightness** slider maps to the legacy **Brightness** control. If the camera supports neither control, the **Brightness** slider isn't visible in the camera settings page.
 
-Similarly, apps that offer in-app brightness sliders are encouraged to use the same logic to map the in-app brightness control to the EV Compensation or legacy Brightness control. This logic is implemented in the Windows Camera app.
+Similarly, apps that offer in-app brightness sliders are encouraged to use the same logic to map the in-app brightness control to the **EV Compensation** or legacy **Brightness** control. This logic is implemented in the Windows Camera app.
 
 ### Adjust Windows Studio Effects (or Camera Effects)
 
-When you select camera from **Connected cameras** on the camera settings page, under **Camera Effects**, the page presents sliders and toggles for camera effect settings, as supported by the camera.
+When you select a camera from **Connected cameras** on the camera settings page, under **Camera Effects**, the page presents sliders and toggles for camera effect settings, as supported by the camera.
 
 Windows devices that support Windows Studio Effects instead use the name **Windows Studio Effects** for this section.
 
@@ -112,7 +112,7 @@ The following table lists the available Camera Effects, and the corresponding KS
 | Enhanced Eye Contact  | [**KSPROPERTY_CAMERACONTROL_EXTENDED_EYEGAZECORRECTION**](ksproperty-cameracontrol-extended-eyegazecorrection.md) (with KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_ON flag) |
 | Auto Framing | [**KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW**](ksproperty-cameracontrol-extended-digitalwindow.md) (with KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_AUTOFACEFRAMING flag) |
 
-This section displays the following controls:
+This section displays these toggles in the following circumstances:
 
 - If a camera only supports **Standard Blur**, the control displays as a toggle with the label **Background blur**.
 - If a camera supports both **Standard Blur** and **Portrait Blur**, the control displays as a toggle with the label **Background effects**, plus a radio button to select **Standard blur** and **Portrait blur** that's available when **Background effects** is turned on.
@@ -148,32 +148,32 @@ When an application opens and starts the camera, Windows starts the camera and t
 
 For example, if you set the default Contrast to 55% using the camera settings page, and then start the camera in an application, such as Microsoft Teams:
 
-- **If the application opens a handle to the camera and then requests the stream to start**: Windows sets the camera's current value for the Contrast control (KSPROPERTY_VIDEOPROCAMP_CONTRAST) to 55%. Control of the camera is then handed over to the application.
+- **If the application opens a handle to the camera and then requests the stream to start**: Windows sets the camera's current value for the **Contrast** control (KSPROPERTY_VIDEOPROCAMP_CONTRAST) to 55%. Control of the camera is then handed over to the application.
 
-- **If the application opens a handle to the camera, writes the current value of the Contrast control to 45%, and then requests the stream to start**: Windows skips writing the current value for the Contrast control because the app already preinitialized it.
+- **If the application opens a handle to the camera, writes the current value of the Contrast control to 45%, and then requests the stream to start**: Windows skips writing the current value for the **Contrast** control because the app already preinitialized it.
 
-While the camera is running, the application might do the following actions with the current value of the Contrast control:
+While the camera is running, the application might do the following actions with the current value of the **Contrast** control:
 
-- **Do nothing**: the Contrast remains at the value set during initialization during the session.
+- **Do nothing**: The contrast remains at the value set during initialization during the session.
 
-- **Write it to a different value**: the Contrast changes to whatever the application set it to, during the session or until the same application writes it again, whichever comes first.
+- **Write it to a different value**: The contrast changes to whatever the application set it to, during the session or until the same application writes it again, whichever comes first.
 
-When camera applications, like Microsoft Teams, write to camera controls, like Contrast and Brightness, they do so by writing the camera's KS properties. This changes the current value of the control on the camera. It doesn't modify the default value like the camera settings page does.
+When camera applications, like Microsoft Teams, write to camera controls, like **Contrast** and **Brightness**, they do so by writing the camera's KS properties. This changes the current value of the control on the camera. It doesn't modify the default value like the camera settings page does.
 
 ### Use the camera settings page while the camera is in use
 
-Behavior can be more complex when the camera settings page is used while another application is using the camera. The camera settings page always displays the default values. The preview stream and the video stream shown in the application represent the current values set on the camera.
+Behavior can be more complex when the camera settings page is used while another application uses the camera. The camera settings page always displays the default values. The preview stream and the video stream shown in the application represent the current values set on the camera.
 
-Consider a basic scenario where an application opens the camera. The application has no UI to adjust the current value of the Contrast control. If you open the camera settings page to adjust the Contrast while the application runs, there are no issues. The app didn't change the current value of the Contrast control from the default value.
+Consider a basic scenario where an application opens the camera. The application has no UI to adjust the current value of the **Contrast** control. If you open the camera settings page to adjust the Contrast while the application runs, there are no issues. The app didn't change the current value of the **Contrast** control from the default value.
 
-In a more complex scenario, the default value of the Contrast control is 55%. The application that uses the camera sets the current value of the Contrast control to 45%. In this case, the camera stream runs with the Contrast set to 45%. If you open the camera settings page while the application is running, the preview reflects a Contrast of 45%. The Contrast slider shows the default value of 55%, which is a mismatch.
+In a more complex scenario, the default value of the **Contrast** control is 55%. The application that uses the camera sets the current value of the **Contrast** control to 45%. In this case, the camera stream runs with the Contrast set to 45%. If you open the camera settings page while the application is running, the preview reflects a contrast of 45%. The **Contrast** slider shows the default value of 55%, which is a mismatch.
 
 You could change the Contrast using the application. The current value of the Contrast would change, which affects the video stream in both the app and in the camera settings page preview. The Contrast slider in the camera settings page continues to display 55%.
 
 Alternatively, you could change the Contrast using the camera settings page. For example, adjust the slider to 40%. The camera settings page saves 40% as the new default value, and sets the camera's current value to 40%. This change causes the video stream in both the camera settings page and in the application to change and reflect a Contrast of 40%.
 
 > [!NOTE]
-> Some applications use the [**IMFCameraControlMonitor**](/windows/win32/api/mfidl/nn-mfidl-imfcameracontrolmonitor) API to monitor for external changes to controls. Suppose an application wants to keep the Contrast at 45% while it uses the camera. That application can monitor the Contrast KS Property. If the KS Property is changed externally in the camera settings page, the application can immediately rewrite the KS Property back to 45%.
+> Some applications use the [**IMFCameraControlMonitor**](/windows/win32/api/mfidl/nn-mfidl-imfcameracontrolmonitor) API to monitor for external changes to controls. Suppose an application wants to keep the contrast at 45% while it uses the camera. That application can monitor the Contrast KS Property. If the KS Property is changed externally in the camera settings page, the application can immediately rewrite the KS Property back to 45%.
 
 Synchronization issues are uncommon. They only happen when you make real-time changes to image settings in an application and launches the camera settings page at the same time to adjust the same image setting.
 
@@ -186,7 +186,7 @@ Camera manufacturers might want to provide their own custom applications that al
 Windows 11 provides a Camera Companion App framework that allows manufacturers to develop applications with the following capabilities:
 
 - Ability to display and modify the same default value settings that the camera settings page supports. For example, Brightness, Contrast, and Background effects.
-- Ability to register, update, or delete default value settings for other camera controls that are known to Windows but aren't exposed through the camera settings page. For example, the Hue control.
+- Ability to register, update, or delete default value settings for other camera controls that are known to Windows but aren't exposed through the camera settings page. For example, the **Hue** control.
 - Ability to register, update, or delete default value settings for manufacturer-proprietary camera controls. For example, the on/off control for a camera manufacturer's custom lighting adjustment effect.
 
 When a camera associates a specific Companion App with it, an entry for that app is added to the camera settings page. If the app is installed, it can be launched from the camera settings page or a link to the Microsoft Store is displayed to download it.
