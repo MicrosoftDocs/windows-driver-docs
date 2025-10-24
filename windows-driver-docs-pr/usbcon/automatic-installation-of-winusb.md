@@ -3,7 +3,7 @@ title: WinUSB Device
 description: Learn about how Windows recognizes a WinUSB device. You can load the Winusb.sys driver without having to provide a custom INF file.
 ms.date: 10/27/2025
 ms.topic: concept-article
-#customer intent: As a software developer, I need to know how use Winusb.sys as a driver without having to provide an INF file for devices that my team creates.
+#customer intent: As a software developer, I need to know how to use Winusb.sys as a driver without having to provide an INF file for devices that my team creates.
 ---
 
 # WinUSB device
@@ -124,7 +124,7 @@ During device enumeration, The USB driver stack then retrieves the **DeviceInter
 
 Before Windows 8, to configure power management features of WinUSB, you had to write registry entry values in the **HW.AddReg** section of your custom INF.
 
-In Windows 8 and later, you can specify power settings in device. You can report values through the extended properties OS feature descriptor that enable or disable features in WinUSB for that device. There are two features that you can configure: *selective suspend* and *system wake*. Selective suspend allows the device to enter low-power state when it's idle. System wake refers to the ability to a device to wake up a system when the system is in low-power state.
+In Windows 8 and later, you can specify power settings in device. You can report values through the extended properties OS feature descriptor that enable or disable features in WinUSB for that device. There are two features that you can configure: *selective suspend* and *system wake*. Selective suspend allows the device to enter low-power state when it's idle. System wake refers to the ability of a device to wake up a system when the system is in low-power state.
 
 For more information, see [WinUSB Power Management](winusb-power-management.md).
 
