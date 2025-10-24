@@ -3,7 +3,7 @@ title: Windows hardware developer documentation
 summary: Learn how to design, develop, and deploy hardware and device drivers for Windows PCs and other devices.
 brand: windows
 metadata:
-   title: Windows developer documentation
+   title: Windows Hardware Developer Documentation
    description: Design, develop, and deploy hardware and device drivers for Windows PCs and other devices.
    author: mhopkins-msft
    ms.author: mhopkins
@@ -15,40 +15,79 @@ metadata:
 highlightedContent:
   # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
    items:
-   - title: Get the Windows Driver Kit
-     itemType: download
-     url: ./download-the-wdk.md
-   - title: Device and driver installation
+   - title: Get Started with Drivers on Windows
+     itemType: get-started
+     url: ./gettingstarted/index.md
+   - title: What's New in Driver Development
+     itemType: whats-new
+     url: ./what-s-new-in-driver-development.md
+   - title: Windows Driver Frameworks
      itemType: overview
-     url: ./install/overview-of-device-and-driver-installation.md
+     url: ./wdf/index.md
    - title: Driver security checklist
      itemType: how-to-guide
      url: ./driversecurity/driver-security-checklist.md
-   - title: Join the Insider Program
+   # - title: Download WinDbg
+   #   itemType: download
+   #   url: https://aka.ms/windbg/download
+   - title: Install the Windows Driver Kit via NuGet
+     itemType: download
+     url: ./install-the-wdk-using-nuget.md
+   - title: Driver Development Tools
      itemType: overview
-     url: /windows-insider
-
-
+     url: ./devtest/index.md
+   - title: Windows Driver Samples
+     itemType: overview
+     url: ./samples/index.md
+   - title: Download the Windows Driver Kit (WDK)
+     itemType: download
+     url: ./download-the-wdk.md
+   # - title: API Reference
+   #   itemType: reference
+   #   url: /windows-hardware/drivers/ddi/
 
 conceptualContent:
-  # title: Get started
+  # title: Getting Started Guides
   items:
-    - title: Get started
+    - title: Getting Started Guides
       links:
+        - text: Device and driver installation
+          itemType: overview
+          url: ./install/overview-of-device-and-driver-installation.md
+        - text: Windows Drivers Kit (WDK) Release Notes
+          itemType: whats-new
+          url: ./wdk-release-notes.md
+        - text: Kernel Mode Driver Architecture Design Guide
+          itemType: how-to-guide
+          url: ./kernel/index.md
+        - text: Overview of Driver Technologies
+          itemType: overview
+          url: ./device-and-driver-technologies.md
         - text: Partner Center for Windows Hardware
           url: ./dashboard/index.md
           itemType: download
+        # - text: Writing Drivers for Different Versions of Windows
+        #  itemType: how-to-guide
+        #  url: # Doesn't exist
+
+    - title: Development and Debugging
+      links:
+        - text: Developing Drivers
+          url: ./develop/dch-example.md
+          itemType: tutorial
+        - text: Building a Windows Driver
+          url: ./develop/building-a-windows-driver.md
+          itemType: overview
+        - text: Debugging a Windows Driver
+          url: ./develop/debugging-a-windows-driver.md
+          itemType: overview
         - text: Debugging Tools for Windows
           url: ./debugger/index.md
           itemType: download
-        - text: Windows driver samples
-          url: /samples/browse/?products=windows-wdk
-          itemType: download
-        - text: Installing preview versions of the WDK
-          url: ./installing-preview-versions-wdk.md
+        - text: Debugger Commands
+          url: ./debuggercmds/index.md
           itemType: overview
-    - title: Debugging
-      links:
+
         - text: Getting started with WinDbg
           url: ./debugger/getting-started-with-windbg.md
           itemType: get-started
@@ -64,6 +103,8 @@ conceptualContent:
         - text: Debugger commands
           url: ./debuggercmds/index.md
           itemType: tutorial          
+
+
     - title: API reference
       links:
         - text: Windows driver API reference
@@ -75,6 +116,7 @@ conceptualContent:
         - text: Core kernel API reference
           url: /windows-hardware/drivers/ddi/_kernel
           itemType: reference
+
     - title: Build devices
       links:
         - text: Get started with Windows 11
