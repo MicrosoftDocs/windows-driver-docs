@@ -27,9 +27,6 @@ highlightedContent:
    - title: Driver security checklist
      itemType: how-to-guide
      url: ./driversecurity/driver-security-checklist.md
-   # - title: Download WinDbg
-   #   itemType: download
-   #   url: https://aka.ms/windbg/download
    - title: Install the Windows Driver Kit via NuGet
      itemType: download
      url: ./install-the-wdk-using-nuget.md
@@ -42,12 +39,9 @@ highlightedContent:
    - title: Download the Windows Driver Kit (WDK)
      itemType: download
      url: ./download-the-wdk.md
-   # - title: API Reference
-   #   itemType: reference
-   #   url: /windows-hardware/drivers/ddi/
 
 conceptualContent:
-  # title: Getting Started Guides
+  title: Dive into developing drivers for Windows
   items:
     - title: Getting Started Guides
       links:
@@ -87,83 +81,100 @@ conceptualContent:
         - text: Debugger Commands
           url: ./debuggercmds/index.md
           itemType: overview
-
-        - text: Getting started with WinDbg
-          url: ./debugger/getting-started-with-windbg.md
-          itemType: get-started
-        - text: Setting up KDNET debugging
-          url: ./debugger/setting-up-a-network-debugging-connection-automatically.md
-          itemType: overview
-        - text: Download Debugging Tools for Windows - WinDbg
-          url: ./debugger/debugger-download-tools.md
-          itemType: download
-        - text: Debug Windows drivers
-          url: ./debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md
-          itemType: tutorial
-        - text: Debugger commands
-          url: ./debuggercmds/index.md
-          itemType: tutorial          
-
-
-    - title: API reference
-      links:
-        - text: Windows driver API reference
+        - text: Windows device driver interface (DDI) reference
+          itemType: reference
           url: /windows-hardware/drivers/ddi/
-          itemType: reference
-        - text: WDF API reference
-          url: /windows-hardware/drivers/ddi/_wdf
-          itemType: reference
-        - text: Core kernel API reference
-          url: /windows-hardware/drivers/ddi/_kernel
-          itemType: reference
 
-    - title: Build devices
+    - title: Testing and verification
       links:
-        - text: Get started with Windows 11
-          url: /windows-hardware/get-started
+        - text: Testing a driver
+          url: ./develop/testing-a-driver.md
+          itemType: how-to-guide
+        - text: Test with Hardware Lab Kit (HLK)
+          url: /windows-hardware/test/hlk/
           itemType: overview
-        - text: Design Windows 11 devices
-          url: /windows-hardware/design
+        - text: Tools for Verifying Drivers
+          url: ./devtest/tools-for-verifying-drivers.md
           itemType: overview
-        - text: Customize
-          url: /windows-hardware/customize
+        - text: Device Fundamentals Tests
+          url: ./devtest/device-fundamentals-tests.md
           itemType: overview
-        - text: Manufacture
-          url: /windows-hardware/manufacture
+        - text: How to create a driver verification log
+          url: ./develop/creating-a-driver-verification-log.md
+          itemType: how-to-guide
+        - text: Driver Signing
+          url: ./install/driver-signing.md
           itemType: overview
-        - text: Test for performance and compatibility
-          url: /windows-hardware/test
+
+    - title: Deployment and Distribution
+      links:
+        - text: Distributing a Driver Package
+          url: ./develop/distributing-a-driver-package.md
+          itemType: deploy
+        - text: Safe Deployment Best Practices for Windows Drivers
+          url: ./develop/safe-deployment-best-practices-for-drivers.md
+          itemType: concept
+        - text: Deploying a Driver to a Test Computer
+          url: ./develop/deploying-a-driver-to-a-test-computer.md
+          itemType: deploy
+
+    - title: Blogs
+      links:
+        - text: Windows Driver Developer Blog
+          url: https://techcommunity.microsoft.com/category/windows/blog/windowsdriverdev
+          itemType: whats-new
+        - text: WinHEC Online Community Hub
+          url: https://techcommunity.microsoft.com/category/winhec-online
+          itemType: whats-new
+        - text: Windows Hardware Certification
+          url: https://techcommunity.microsoft.com/category/winhec-online/blog/windows-hardware-certification
+          itemType: whats-new
+        - text: Hardware Dev Center
+          url: https://techcommunity.microsoft.com/category/winhec-online/blog/hardware-dev-center
+          itemType: whats-new
+
+    - title: Additional Resources
+      links:
+        - text: Bring Up Guide
+          url: ./bringup/index.md
           itemType: overview
-        - text: Test with the Hardware Lab Kit (HLK)
-          url: /windows-hardware/test/hlk
+        - text: UWP Device Apps
+          url: ./devapps/index.md
+          itemType: overview
+        - text: Windows Driver Samples
+          url: https://github.com/Microsoft/Windows-driver-samples
+          itemType: sample
+        - text: Search WDK Samples
+          url: https://learn.microsoft.com/samples/browse/?products=windows-wdk
+          itemType: sample
+        - text: Overview of Boot Options in Windows
+          url: ./devtest/boot-options-in-windows.md
           itemType: overview
 
 tools:
-  title: Driver platforms and frameworks
+  title: Tools
   items:
-    - title: Kernel/Windows Driver Model
-      imageSrc: /media/logos/logo_windows.svg
-      url: ./kernel/index.md
-    - title: Windows Driver Frameworks
-      imageSrc: /media/logos/logo_windows.svg
-      url: ./wdf/index.md
+    - title: Download WinDbg
+      imageSrc: ./images/download-install.png
+      url: https://aka.ms/windbg/download
 
 additionalContent:
   sections:
     # Section
-    - title: Tasks
+    - title: Develop Windows drivers and give us feedback
       items:
-        - title: Write a Hello World Windows Driver
-          summary: Learn how to write a very small Windows Driver using KMDF.
+        - title: Have a question?
+          summary: Windows Drivers Kit Q&A
+          url: https://learn.microsoft.com/answers/tags/508/windows-development-wdk?page=1
+        - title: Submit feedback
+          summary: Windows drivers developer survey
+          # url: Doesn't exist yet
+        - title: Task
+          summary: Write a Hello World Windows Driver (Kernel-Mode Driver Framework)
           url: ./gettingstarted/writing-a-very-small-kmdf--driver.md
-        - title: Get started with Windows drivers
-          summary: Write a single driver package that runs across multiple device types.
-          url: ./develop/get-started-developing-windows-drivers.md
-        - title: Add boot entries
-          summary: A boot entry is a set of options that define a load configuration for an operating system or bootable program.
-          url: ./devtest/adding-boot-entries.md
-        - title: Edit boot options
-          summary: Learn how to customize boot options.
-          url: ./devtest/editing-boot-options.md
+        - title: Tutorial
+          summary: From Sample Code to Production Driver
+          url: ./gettingstarted/from-sample-code-to-production-driver.md
     # Section
+
   footer: "[@WindowsDocs on X](https://x.com/WindowsDocs) - [OneDevMinute on YouTube](/shows/One-Dev-Minute/?WT.mc_id=odm-c9-niner) - [Windows developer support](https://developer.microsoft.com/windows/support) - [Stack Overflow](https://stackoverflow.com/questions/tagged/windows)"
