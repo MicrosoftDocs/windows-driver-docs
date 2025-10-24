@@ -5,7 +5,7 @@ ms.date: 10/20/2005
 ms.topic: concept-article
 ---
 
-# Percentage of Sessions with unexpected Internet loss over IPv4
+# Percentage of sessions with unexpected Internet loss over IPv4
 
 Unexpected Internet loss can disrupt user productivity, degrade application performance, and signal underlying issues in network stability. This measure tracks how often devices lose IPv4 Internet connectivity after a successful connection has been established. By analyzing telemetry across sessions, Microsoft can identify patterns of instability, validate driver and stack behavior, and guide improvements to ensure a more reliable Ethernet experience.
 

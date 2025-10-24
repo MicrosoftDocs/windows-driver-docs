@@ -14,7 +14,7 @@ Ethernet measures are diagnostic metrics used to monitor and improve the perform
 Ethernet measures provide insights into the performance and reliability of wired network connections across Windows devices. 
 These metrics are collected during Windows flighting and diagnostic sessions. They help Microsoft and hardware partners identify trends, isolate faulty drivers, and improve future driver releases. By analyzing Ethernet measures, developers can reduce connection failures and improve compatibility across platforms. By understanding and applying these metrics, developers and OEMs can deliver better networking experiences to users.
 
-## Driver Development
+## Driver development
 
 Microsoft provides LAN device manufactures with the Network Driver Interface Specification (NDIS) and NetAdapter Windows Driver Framework (WDF) class extension.
 An NDIS-compliant driver built with the Windows Driver Framework (WDF) enables manufacturers to develop a universal driver that works across device platforms.
