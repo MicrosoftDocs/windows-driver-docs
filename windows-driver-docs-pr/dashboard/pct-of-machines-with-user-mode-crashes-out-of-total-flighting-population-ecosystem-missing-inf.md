@@ -1,15 +1,16 @@
 ---
 title: Percent of machines with user mode crashes out of the total flighting population (ecosystem, missing INF matching ID)
-description: The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have at least one user mode crash, for ecosystem drivers without a missing INF matching ID
+description: The measure aggregates telemetry from a seven-day sliding window into a percentage of machines that have at least one user mode crash, for ecosystem drivers without a missing INF matching ID
 ms.date: 10/22/2025
 ms.topic: reference
 ---
 
-# Percent of machines with user mode crashes out of the total flighting population (ecosystem, missing INF matching ID)
+# Percent of machines with user mode crashes out of the total flighting population (ecosystem, missing Setup Information File (INF) matching ID)
 
 ## Description
 
-This is a measure of the percentage of machines with user mode crashes with valid FailureInfo data out of the total flighting population, where the failing device does not have a hardware ID that matches the hardware ID of the submission.
+This metric shows the percentage of machines with user-mode crashes and valid FailureInfo data, where the failing device doesn't have a hardware ID that matches the hardware ID in the submission.
+It reflects the total flighting population.
 
 ## Measure attributes
 
