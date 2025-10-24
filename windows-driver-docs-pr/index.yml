@@ -67,7 +67,7 @@ conceptualContent:
     - title: Development and Debugging
       links:
         - text: Developing Drivers
-          url: ./develop/dch-example.md
+          url: ./develop/index.md
           itemType: tutorial
         - text: Building a Windows Driver
           url: ./develop/building-a-windows-driver.md
@@ -151,12 +151,12 @@ conceptualContent:
           url: ./devtest/boot-options-in-windows.md
           itemType: overview
 
-tools:
-  title: Tools
-  items:
-    - title: Download WinDbg
-      imageSrc: ./images/download-install.png
-      url: https://aka.ms/windbg/download
+# tools:
+#   title: Tools
+#   items:
+#     - title: Download WinDbg
+#       imageSrc: ./images/download-install.png
+#       url: https://aka.ms/windbg/download
 
 additionalContent:
   sections:
@@ -168,7 +168,7 @@ additionalContent:
           url: https://learn.microsoft.com/answers/tags/508/windows-development-wdk?page=1
         - title: Submit feedback
           summary: Windows drivers developer survey
-          # url: Doesn't exist yet
+          url: https://forms.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UQ1BEVVVRTjc4VFBZNjdTQk5VNEtIN0hUNi4u
         - title: Task
           summary: Write a Hello World Windows Driver (Kernel-Mode Driver Framework)
           url: ./gettingstarted/writing-a-very-small-kmdf--driver.md
