@@ -21,7 +21,7 @@ ms.date: 02/19/2025
 ms.topic: concept-article
 ---
 
-# Using Automatic Synchronization
+# Using automatic synchronization
 
 
 Almost all of the code in a framework-based driver resides in event callback functions. The framework automatically synchronizes most of a driver's callback functions, as follows:
@@ -81,7 +81,7 @@ In summary, the framework's automatic synchronization capability provides the fo
 
 -   The framework doesn't synchronize a driver's other callback functions, such as the driver's [*CompletionRoutine*](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_completion_routine) callback function, or the callback functions that the I/O target object defines. Instead, the framework provides additional [locks](using-framework-locks.md) that drivers can use to synchronize these callback functions.
 
-### Choosing a Synchronization Scope
+### Choosing a synchronization scope
 
 You can choose to have the framework synchronize all of the callback functions that are associated with all of a device's I/O queues. Alternatively, you can choose to have the framework separately synchronize the callback functions for each of a device's I/O queues. The synchronization options that are available to your driver are as follows:
 
@@ -111,7 +111,7 @@ The framework doesn't synchronize and doesn't obtain a synchronization lock.
 <a href="" id="wdfsynchronizationscopeinheritfromparent"></a>**WdfSynchronizationScopeInheritFromParent**  
 The framework obtains the object's **SynchronizationScope** value from the object's parent object.
 
-In general, we don't recommend using device-level synchronization.
+In general, avoid using device-level synchronization.
 
 For more information about the synchronization scope values, see [**WDF\_SYNCHRONIZATION\_SCOPE**](/windows-hardware/drivers/ddi/wdfobject/ne-wdfobject-_wdf_synchronization_scope).
 
@@ -137,15 +137,15 @@ However, you can set **AutomaticSerialization** to **TRUE** only if all of the c
 
 If you set **AutomaticSerialization** to **TRUE**, select queue-level synchronization.
 
-### Choosing an Execution Level
+### Choosing an execution level
 
 When a driver creates some types of framework objects, it can specify an *execution level* for the object. The execution level specifies the IRQL at which the framework calls the object's event callback functions that handle a driver's I/O requests.
 
-If a driver supplies an execution level, the supplied level affects the callback functions for queue and file objects. Ordinarily, if the driver is using automatic synchronization, the framework calls these callback functions at IRQL = DISPATCH\_LEVEL. By specifying an execution level, the driver can force the framework to call these callback functions at IRQL = PASSIVE\_LEVEL. The framework uses the following rules when setting the IRQL at which queue and file object callback functions are called:
+If a driver supplies an execution level, the supplied level affects the callback functions for queue and file objects. Ordinarily, if the driver uses automatic synchronization, the framework calls these callback functions at IRQL = DISPATCH\_LEVEL. By specifying an execution level, the driver can force the framework to call these callback functions at IRQL = PASSIVE\_LEVEL. The framework uses the following rules when setting the IRQL at which it calls queue and file object callback functions:
 
--   If a driver uses automatic synchronization, its queue and file object callback functions are called at IRQL = DISPATCH\_LEVEL unless the driver asks the framework to call its callback functions at IRQL = PASSIVE\_LEVEL.
+-   If a driver uses automatic synchronization, the framework calls its queue and file object callback functions at IRQL = DISPATCH\_LEVEL unless the driver asks the framework to call its callback functions at IRQL = PASSIVE\_LEVEL.
 
--   If a driver isn't using automatic synchronization and doesn't specify an execution level, the driver's queue and file object callback functions can be called at IRQL <= DISPATCH\_LEVEL.
+-   If a driver doesn't use automatic synchronization and doesn't specify an execution level, the framework can call the driver's queue and file object callback functions at IRQL <= DISPATCH\_LEVEL.
 
 If your driver provides file object callback functions, you most likely want the framework to call these callback functions at IRQL = PASSIVE\_LEVEL because some file data, such as the file name, is pageable.
 
@@ -155,7 +155,7 @@ To supply an execution level, your driver must specify a value for the **Executi
 The framework calls the object's callback functions at IRQL = PASSIVE\_LEVEL.
 
 <a href="" id="wdfexecutionleveldispatch"></a>**WdfExecutionLevelDispatch**  
-The framework can call the object's callback functions at IRQL &lt;= DISPATCH\_LEVEL. If the driver is using automatic synchronization, the framework always calls the callback functions at IRQL = DISPATCH\_LEVEL.
+The framework can call the object's callback functions at IRQL &lt;= DISPATCH\_LEVEL. If the driver uses automatic synchronization, the framework always calls the callback functions at IRQL = DISPATCH\_LEVEL.
 
 <a href="" id="wdfexecutionlevelinheritfromparent"></a>**WdfExecutionLevelInheritFromParent**  
 The framework obtains the object's **ExecutionLevel** value from the object's parent.
@@ -215,9 +215,9 @@ The following table shows the IRQL level at which the framework can call a drive
 
  
 
-You can set the execution level to **WdfExecutionLevelPassive** or **WdfExecutionLevelDispatch** for driver, device, file, queue, timer, and general objects. For other objects, only **WdfExecutionLevelInheritFromParent** is allowed.
+You can set the execution level to **WdfExecutionLevelPassive** or **WdfExecutionLevelDispatch** for driver, device, file, queue, timer, and general objects. For other objects, you can only set **WdfExecutionLevelInheritFromParent**.
 
-You should specify **WdfExecutionLevelPassive** if:
+Specify **WdfExecutionLevelPassive** if:
 
 -   Your driver's callback functions must call framework methods or Windows Driver Model (WDM) routines that you can call only at IRQL = PASSIVE\_LEVEL.
 
