@@ -13,7 +13,7 @@ ms.topic: troubleshooting
 
 Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. It's designed to support the USB Audio 2.0 device class. The driver is a WaveRT audio port class miniport.
 
-The driver is named: *usbaudio2.sys*. The associated INF file is *usbaudio2.inf*.
+The driver is named: *usbaudio2.sys*. The associated information (INF) file is *usbaudio2.inf*.
 
 The driver identifies in device manager as *USB Audio Class 2 Device*. This name is overwritten with a USB product string, if it's available.
 
@@ -125,7 +125,7 @@ The following restrictions apply:
 | Type I IEEE_FLOAT format:  | bSubslotSize == 4      | bBitResolution == 32      |
 | Type III IEC61937 formats: | bSubslotSize == 2      | bBitResolution == 16      |
 
-### Class-Specific AS isochronous audio data endpoint descriptor
+### Class-specific AS isochronous audio data endpoint descriptor
 
 For details on this specification, see ADC-2 4.10.1.2.
 
@@ -181,9 +181,9 @@ The volume interval expressed by the MIN and MAX fields should be an integer mul
 
 If a feature unit implements single channel controls and a primary control for Mute or Volume, then the driver uses the single channel controls and ignores the primary control.
 
-## Additional Information for OEM and IHVs
+## Additional information for hardware manufacturers
 
-OEMs and IHVs should test their existing and new devices against the supplied in-box driver.
+Hardware manufacturers should test their existing and new devices against the supplied in-box driver.
 
 There isn't any specific partner customization that is associated with the in-box USB Audio 2.0 driver.
 
@@ -227,7 +227,7 @@ Due to a limitation of the Windows audio stack, an arbitrary number of channels,
 
 For IHV provided driver USB Audio 2.0 drivers, those drivers continue to be preferred for their devices over the Microsoft in-box driver unless they update their driver to explicitly override this behavior and use the in-box driver.
 
-## Audio Jack Registry Descriptions
+## Audio jack registry descriptions
 
 Starting in Windows 10 release 1703, IHVs that create USB Audio Class 2.0 devices having one or more jacks have the capability to describe these jacks to the in-box Audio Class 2.0 driver. The in-box driver uses the supplied jack information when handling the [KSPROPERTY_JACK_DESCRIPTION](./ksproperty-jack-description.md) for this device.
 
@@ -245,9 +245,8 @@ REG_DWORD  T<tid>_J<n>_PortConnection     The enum value is define in EPxcPortCo
 REG_DWORD  T<tid>_J<n>_Color              The color needs to be represent by RGB like this: 0x00RRGGBB (NOT a COLORREF).
 ```
 
-\<tid\> = terminal ID (As defined in the descriptor)
-
-\<n\> = Jack number (1 ~ n).
+- \<tid\> = terminal ID, as defined in the descriptor
+- \<n\> = Jack number (1 ~ n)
 
 Convention for \<tid\> and \<n\> is:
 
@@ -255,21 +254,18 @@ Convention for \<tid\> and \<n\> is:
 - No leading zeros
 - n is 1-based (first jack is jack 1 rather than jack 0)
 
-For example:
-
-T1_NrJacks, T1_J2_ChannelMapping, T1_J2_ConnectorType
+For example: `T1_NrJacks, T1_J2_ChannelMapping, T1_J2_ConnectorType`
 
 For more audio jack information, see [KSJACK_DESCRIPTION structure](./ksjack-description.md).
 
 These registry values can be set in various ways:
 
 - By using custom INFs, which wrap the in-box INF for the purpose to set these values.
-
 - Directly by the hardware device by using a Microsoft OS Descriptor for USB devices, as in the example in the next section. For more information, see [Microsoft OS Descriptors for USB Devices](../usbcon/microsoft-defined-usb-descriptors.md).
 
-### Microsoft OS Descriptors for USB Example
+### Microsoft OS descriptors for USB Example
 
-The following Microsoft OS Descriptors for USB example contains the channel mapping and color for one jack. The example is for a noncomposite device with single feature descriptor.
+The following Microsoft OS descriptors for USB example contains the channel mapping and color for one jack. The example is for a noncomposite device with single feature descriptor.
 
 The IHV vendor should extend it to contain any other information for the jack description.
 
