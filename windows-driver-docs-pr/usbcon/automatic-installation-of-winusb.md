@@ -8,7 +8,7 @@ ms.topic: concept-article
 
 # WinUSB device
 
-This article describes how Windows recognizes a WinUSB device. Developers and software development companies can use the information in this article to develop a device that uses Winusb.sys as the function driver. This article shows you how to load the driver automatically without having to provide a custom information (INF) file.
+This article describes how Windows recognizes a WinUSB device. Manufacturers and independent hardware vendors (IHV) can use the information in this article to develop a device that uses Winusb.sys as the function driver. This article shows you how to load the driver automatically without having to provide a custom information (INF) file.
 
 ## What is a WinUSB device
 
@@ -16,9 +16,9 @@ A WinUSB device is a Universal Serial Bus (USB) device whose firmware defines ce
 
 The purpose of a WinUSB device is to enable Windows to load Winusb.sys as the device's function driver without a custom INF file. For a WinUSB device, you aren't required to distribute INF files for your device, which makes the driver installation process simple for end users. Conversely, if you need to provide a custom INF, you shouldn't define your device as a WinUSB device and specify the hardware ID of the device in the INF.
 
-Microsoft provides Winusb.inf that contains information required by to install Winusb.sys as the device driver for a USB device.
+Microsoft provides a Winusb.inf file that contains information required to install Winusb.sys as the device driver for a USB device.
 
-Before Windows 8, to load Winusb.sys as the function driver, you needed to provide a custom INF. The custom INF specifies the device-specific hardware ID and also includes sections from the in-box Winusb.inf. Those sections are required for instantiating the service, copying inbox binaries, and registering a device interface GUID that applications required to find the device and talk to it. For information, see [Writing a custom INF for WinUSB installation](winusb-installation.md#writing-a-custom-inf-for-winusb-installation).
+Before Windows 8, to load Winusb.sys as the function driver, you needed to provide a custom INF. The custom INF specifies the device-specific hardware ID and also includes sections from the in-box Winusb.inf. Those sections are required for instantiating the service, copying inbox binaries, and registering a device interface GUID that applications required to find the device and talk to it. For more information, see [Writing a custom INF for WinUSB installation](winusb-installation.md#writing-a-custom-inf-for-winusb-installation).
 
 In Windows 8, the in-box Winusb.inf file is updated to enable Windows to automatically match the INF with a WinUSB device.
 
@@ -80,13 +80,13 @@ For a WinUSB device, Device Manager shows `WinUsb Device` as the device descript
 
 To uniquely identify and differentiate the device in Device Manager, Windows 8 provides a new property on a device class. The property instructs the system to give precedence to the device description reported by the device in its **iProduct** string descriptor over the description in the INF. The USBDevice class defined in Windows 8 sets this property.
 
-When a device is installed under the USBDevice class, Windows queries the device for a device description and sets the Device Manager string to whatever is retrieved in the query. In that case, the device description provided in the INF is ignored. Notice the device description strings: **MUTT** in the preceding image. The string is provided by the USB device in its product string descriptor.
+When a device is installed under the USBDevice class, Windows queries the device for a device description and sets the Device Manager string to whatever is retrieved in the query. In that case, the device description provided in the INF is ignored. Notice the device description strings: **MUTT** in the preceding image. The USB device provides the string in its product string descriptor.
 
 The new class property isn't supported on earlier versions of Windows. To have a customized device description on an earlier version of Windows, you have to write your own custom INF.
 
 ## How to configure a WinUSB device
 
-To identify a USB device as a WinUSB device, the device firmware must have Microsoft OS Descriptors. For more information, see [Microsoft OS descriptors for USB devices](microsoft-defined-usb-descriptors.md).
+To identify a USB device as a WinUSB device, the device firmware must have Microsoft OS descriptors. For more information, see [Microsoft OS descriptors for USB devices](microsoft-defined-usb-descriptors.md).
 
 ### Supporting extended feature descriptors
 
@@ -94,19 +94,19 @@ For the USB driver stack to know that the device supports extended feature descr
 
 The retrieved string descriptor has a **bMS_VendorCode** field value. The value indicates the vendor code that the USB driver stack must use to retrieve the extended feature descriptor.
 
-To define an OS string descriptor, see *The OS String Descriptor* in [Microsoft OS descriptors for USB devices](microsoft-defined-usb-descriptors.md#why-does-windows-issue-a-string-descriptor-request-to-index-0xee).
+To define an OS string descriptor, see [Microsoft OS descriptors for USB devices](microsoft-defined-usb-descriptors.md#why-does-windows-issue-a-string-descriptor-request-to-index-0xee).
 
 ### Setting the compatible ID
 
 An extended compatible ID OS feature descriptor is required to match the in-box Winusb.inf and load the WinUSB driver module.
 
-The extended compatible ID OS feature descriptor includes a header section followed by one or more function sections depending on whether the device is composite or noncomposite. The header section specifies the length of the entire descriptor, number of function sections, and version number.
+The extended compatible ID OS feature descriptor includes a header section followed by one or more function sections, depending on whether the device is composite or noncomposite. The header section specifies the length of the entire descriptor, number of function sections, and version number.
 
 For a noncomposite device, the header is followed by one function section associated with the device's only interface. The **compatibleID** field of that section must specify `WINUSB` as the field value. For a composite device, there are multiple function sections. The **compatibleID** field of each function section must specify `WINUSB`.
 
 ### Registering a device interface GUID
 
-An extended properties OS feature descriptor that is required to register its device interface GUID. The GUID is required to find the device from an application or service, configure the device, and perform I/O operations.
+An extended properties OS feature descriptor is required to register its device interface GUID. The GUID is required to find the device from an application or service, configure the device, and perform I/O operations.
 
 In previous versions of Windows, device interface GUID registration is done through the custom INF. Starting in Windows 8, your device should report the interface GUID by using extended properties OS feature descriptor.
 
@@ -133,8 +133,8 @@ For more information, see [WinUSB Power Management](winusb-power-management.md).
 | DeviceIdleEnabled | This value is set to 1 to indicate that the device can power down when idle (selective suspend). |
 | DefaultIdleState | This value is set to 1 to indicate that the device can be suspended when idle by default. |
 | DefaultIdleTimeout | This value is set to 5000 in milliseconds to indicate the amount of time in milliseconds to wait before determining that a device is idle. |
-| UserSetDeviceIdleEnabled | This value is set to 1 to allow the user to control the ability of the device to enable or disable USB selective suspend. There's a checkbox **Allow the computer to turn off this device to save power** on the device **Power Management** property page. Users can enable or disable USB selective suspend. |
-| SystemWakeEnabled | This value is set to 1 to allow the user to control the ability of the device to wake the system from a low-power state. When enabled, the **Allow this device to wake the computer** checkbox appears in the device power management property page. The user can enable or disable USB system wake. |
+| UserSetDeviceIdleEnabled | This value is set to 1 to allow the user to control the ability of the device to enable or disable USB selective suspend. There's a checkbox **Allow the computer to turn off this device to save power** in the device **Power Management** property page. Users can enable or disable USB selective suspend. |
+| SystemWakeEnabled | This value is set to 1 to allow the user to control the ability of the device to wake the system from a low-power state. When enabled, the **Allow this device to wake the computer** checkbox appears in the device **Power Management** property page. The user can enable or disable USB system wake. |
 
 For example, to enable selective suspend on the device, add a custom property section that sets the **bPropertyName** field to a Unicode string `DeviceIdleEnabled` and **wPropertyNameLength** to 36 bytes. Set the **bPropertyData** field to `0x00000001`. The property values are stored as little-endian 32-bit integers.
 
@@ -146,7 +146,7 @@ This image shows sample settings for a WinUSB device.
 
 :::image type="content" source="images/winusb-device-reg.png" alt-text="Screenshot of Windows Registry Editor showing settings for a WinUSB device.":::
 
-For more examples, see [Microsoft OS Descriptors](microsoft-defined-usb-descriptors.md).
+For more examples, see [Microsoft OS descriptors](microsoft-defined-usb-descriptors.md).
 
 ## Related content
 
