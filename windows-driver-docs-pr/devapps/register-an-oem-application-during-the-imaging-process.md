@@ -10,7 +10,7 @@ ms.topic: how-to
 >[!IMPORTANT]
 > Universal Orchestrator provides functionality for OEMs to register an application during the imaging process to perform a one-time expedited install or update. This installation happens within 30 minutes of a user logging into a new device. Expediting an application might have a negative performance impact to the out of box experience for new devices.
 >
-> This functionality is only available on Windows 11 23H2 - KB5046732 (OS Build 22631.4541) and later.
+> This functionality is available starting with Windows 11 23H2 - KB5046732 (OS Build 22631.4541).
 
 ## Requirements
 
