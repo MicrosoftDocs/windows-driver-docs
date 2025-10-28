@@ -14,11 +14,13 @@ A *driver* is a software component that lets the operating system and a device c
 
 ## Expanding the definition
 
-Our explanation simplifies the concept of drivers. Here are some more points to consider:
+This explanation simplifies the concept of drivers. Here are some more points to consider:
 
 - The device manufacturer doesn't always develop the driver. If a device follows a published hardware standard, Microsoft can write the driver, so the device designer doesn't have to provide one.
 
-- Not all drivers communicate directly with a device. Often, several drivers layered in a [driver stack](driver-stacks.md) take part in an I/O request. The conventional way to visualize the stack is with the first participant at the top and the last participant at the bottom, as shown in this diagram. Some drivers in the stack change the request from one format to another. These drivers don't communicate directly with the device. Instead, they change the request and pass it to drivers that are lower in the stack.
+- Not all drivers communicate directly with a device. Often, several drivers layered in a [driver stack](driver-stacks.md) take part in an I/O request.
+
+  The conventional way to visualize the stack is with the first participant at the top and the last participant at the bottom, as shown in this diagram. Some drivers in the stack change the request from one format to another. These drivers don't communicate directly with the device. Instead, they change the request and pass it to drivers that are lower in the stack.
 
   :::image type="content" source="images/whatisadriver02.png" alt-text="Diagram that illustrates the communication between an application, operating system, three drivers, and a device.":::
 
@@ -36,7 +38,7 @@ To refine the definition, a driver is any software component that observes or pa
 
 This expanded definition is more accurate but is still incomplete. Some drivers aren't associated with any hardware device at all. 
 
-For example, if you need to write a tool that accesses core operating system data structures, you can split the tool into two components. The first component runs in user mode and presents the user interface. The second component runs in kernel mode and accesses the core operating system data. The component that runs in user mode is called an *application*. The component that runs in kernel mode is called a *software driver*. A software driver isn't associated with a hardware device.
+If you need to write a tool that accesses core operating system data structures, you can split the tool into two components. The first component runs in user mode and presents the user interface. The second component runs in kernel mode and accesses the core operating system data. The component that runs in user mode is called an *application*. The component that runs in kernel mode is called a *software driver*. A software driver isn't associated with a hardware device.
 
 This diagram illustrates a user-mode application communicating with a kernel-mode software driver.
 
@@ -61,3 +63,9 @@ In many cases, a device doesn't connect directly to the PCI bus. Instead, the de
 The function driver for the toaster communicates indirectly with the toaster by sending a request to the function driver for the USB host controller. The function driver for the USB host controller then communicates directly with the USB host controller hardware, which communicates with the toaster.
 
 :::image type="content" source="images/whatisadriver04.png" alt-text="Diagram that demonstrates the interaction between USB toaster drivers, USB host controller driver, and the PCI bus.":::
+
+## Related content
+
+- [Driver stacks](driver-stacks.md)
+- [Device nodes and device stacks](device-nodes-and-device-stacks.md)
+- [User mode and kernel mode](user-mode-and-kernel-mode.md)
