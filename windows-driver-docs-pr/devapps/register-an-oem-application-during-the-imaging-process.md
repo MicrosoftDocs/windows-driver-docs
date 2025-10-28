@@ -1,7 +1,7 @@
 ---
 title: Register an OEM Application during the Imaging Process via Universal Orchestrator Framework
 description: Provides information on registering an OEM application during the imaging process via Universal Orchestrator framework.
-ms.date: 02/12/2025
+ms.date: 10/27/2025
 ms.topic: how-to
 ---
 
@@ -107,7 +107,6 @@ The scripts perform basic validation and stage the registration to the appropria
 To use the scripts:
 
 1. Download the scripts to your device. From the GitHub repo page, you can select to download as a ZIP file and extract to your device
-
 1. In a PowerShell window, run \"Import-Module \<PathToScripts>\scripts\AppOrchestration.psd1\"
 
 > [!NOTE]
