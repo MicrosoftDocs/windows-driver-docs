@@ -44,4 +44,4 @@ The articles in this section show how to add minidrivers to Unidrv to support di
 
 ## Related content
 
-- [Print DDI reference](/windows-hardware/drivers/ddi/_print)
+- [Print DDI reference](/windows-hardware/drivers/ddi/_print/)
