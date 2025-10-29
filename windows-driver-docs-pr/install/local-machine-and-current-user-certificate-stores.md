@@ -1,8 +1,9 @@
 ---
 title: Local Machine and Current User Certificate Stores
-description: Local Machine and Current User Certificate Stores
-ms.date: 12/04/2024
+description: Learn about the local machine certificate and current user certificate stores, and how stores inherit certificates.
+ms.date: 10/30/2025
 ms.topic: concept-article
+#customer intent: As a developer or administrator, I need to understand the relationship between local machine and current user certificate stores. 
 ---
 
 # Local machine and current user certificate stores
@@ -11,11 +12,11 @@ Each of the system certificate stores has the following types:
 
 - Local machine certificate store
 
-    This type of certificate store is local to the computer, global to all users on the computer, and  is located under the `HKEY_LOCAL_MACHINE` root in the registry.
+  This type of certificate store is local to the computer and global to all users on the computer. It's located under the `HKEY_LOCAL_MACHINE` root in the registry.
 
 - Current user certificate store
 
-    This type of certificate store is local to a user account on the computer, and is located under the `HKEY_CURRENT_USER` registry root.
+  This type of certificate store is local to a user account on the computer. It's located under the `HKEY_CURRENT_USER` registry root.
 
 For specific registry locations of certificate stores, see [System Store Locations](/windows/desktop/seccrypto/system-store-locations).
 
