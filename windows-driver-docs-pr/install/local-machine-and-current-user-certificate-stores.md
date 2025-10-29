@@ -25,4 +25,4 @@ All current user certificate stores *except the Current User or Personal store* 
 > [!NOTE]
 > The driver signing verification during Plug and Play (PnP) installation requires that root and Authenticode certificates, including [test certificates](./makecert-test-certificate.md), are located in a local machine certificate store.
 
-For more information about how to add or delete certificates from the system certificate stores, see [**CertMgr**](../devtest/certmgr.md).
+For more information about how to add or delete certificates from the system certificate stores, see [CertMgr](../devtest/certmgr.md).
