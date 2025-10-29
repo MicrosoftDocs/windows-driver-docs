@@ -12,6 +12,6 @@ The integrated power management features supported by Microsoft Windows operatin
 
 Device Manager shows whether an individual computer supports ACPI. Check the driver information for the **Computer** device category. For example, the following screenshot shows the Driver properties of an ACPI x64-based PC on a Windows 11 system.
 
-::::image type="content" source="images/acpi-properties.png" alt-text="Screenshot that shows the ACPI x64-based PC driver properties.":::
+:::image type="content" source="images/acpi-properties.png" alt-text="Screenshot that shows the ACPI x64-based PC driver properties.":::
 
 For more information about ACPI, see the [ACPI 5.0 specification](https://uefi.org/specifications).
