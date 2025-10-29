@@ -29,7 +29,7 @@ The v4 print driver model is optimized for several new scenarios:
 > [!NOTE]
 > To help to better explain some of the concepts in this section, a fictional company called Fabrikam is used.
 
-## High-level Architecture
+## High-level architecture
 
 The following architecture diagram is a high-level representation of a v4 print driver. Except for the rendering filters and user interface applications, Microsoft implements all the other functional blocks in the diagram.
 
@@ -48,6 +48,6 @@ V4 print drivers rely heavily on data files and JavaScript for extensibility. Th
 | [V4 printer driver connectivity](v4-driver-connectivity-architecture.md) | Provides information about v4 printer driver connectivity. |
 | [Build a v4 printer driver](building-a-basic-v4-printer-driver.md) | Provides information about how to build a v4 printer driver in Visual Studio. |
 
-## Related sections
+## Related content
 
 - [Print DDI reference](/windows-hardware/drivers/ddi/_print/)
