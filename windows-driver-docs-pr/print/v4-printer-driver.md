@@ -50,4 +50,4 @@ V4 print drivers rely heavily on data files and JavaScript for extensibility. Th
 
 ## Related sections
 
-- [Print DDI reference](/windows-hardware/drivers/ddi/_print)
+- [Print DDI reference](/windows-hardware/drivers/ddi/_print/)
