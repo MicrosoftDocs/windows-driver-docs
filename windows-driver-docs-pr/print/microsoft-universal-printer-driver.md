@@ -1,28 +1,27 @@
 ---
 title: Microsoft Universal Printer Driver (Unidrv)
-description: This section shows how to add minidrivers to Unidrv to support different printer models.
+description: Use these resources to learn how to add minidrivers to Unidrv to support different printer models.
 keywords:
 - printer drivers WDK, Unidrv
 - Unidrv WDK print
 - Universal printer driver WDK See Unidrv
 - minidrivers WDK Unidrv
-ms.date: 12/18/2024
+ms.date: 10/30/2025
 ms.topic: concept-article
+#customer intent: As a hardware designer, I need to access resources about the universal printer driver.
 ---
 
 # Microsoft universal printer driver (Unidrv)
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
-The articles in this section show how to add minidrivers to Unidrv to support different printer models. The universal print driver (Unidrv) is also referred to as the v3 print driver.
+The articles in this section show how to add minidrivers to Unidrv to support different printer models. The universal print driver (Unidrv) is also referred to as the *v3 print driver*.
 
 ## In this section
 
 | Article | Description |
 |---|---|
-| [Introduction to the universal printer driver (Unidrv)](introduction-to-the-universal-printer-driver.md) | Provides an introduction to the universal printer driver (Unidrv), Microsoft's standard v3 printer driver for non-PostScript printers. |
 | [Introduction to GPD files](introduction-to-gpd-files.md) | Provides an introduction to GPD files. |
-| [Printer attributes](printer-attributes.md) | Provides information about printer attributes. |
 | [Printer commands](printer-commands.md) | Provides information about printer commands. |
 | [Printer features](printer-features.md) | Provides information about printer features. |
 | [Printer options](printer-options.md) | Provides information about printer options. |
@@ -43,6 +42,6 @@ The articles in this section show how to add minidrivers to Unidrv to support di
 | [Unidrv printer minidriver versioning](unidrv-printer-minidriver-versioning.md) | Provides information about Unidrv printer minidriver versioning. |
 | [Adding forms to the forms database](adding-forms-to-the-forms-database.md) | Provides information about how to add forms to the forms database. |
 
-## Related sections
+## Related content
 
-[Print DDI reference](/windows-hardware/drivers/ddi/_print)
+- [Print DDI reference](/windows-hardware/drivers/ddi/_print)
