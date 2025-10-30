@@ -1,61 +1,62 @@
 ---
 title: Introduction to WinUSB for Developers
-description: This article describes the generic WinUSB driver (winusb.sys) and its user-mode component (winusb.dll) provided by Microsoft for all USB devices.
-ms.date: 10/16/2024
+description: Learn about the generic WinUSB driver (winusb.sys) and its user-mode component (winusb.dll) that Microsoft provides for all USB devices.
+ms.date: 10/30/2025
 ai-usage: ai-assisted
 ms.topic: concept-article
+#customer intent: As a driver developer, I want to understand how Windows USB can work in my development process USB devices.
 ---
 
 # Introduction to WinUSB for developers
 
-As a driver developer, understanding WinUSB (Windows USB) can significantly streamline your development process, especially when working with USB devices. WinUSB is a generic driver included with Windows that allows you to communicate with USB devices without the need to write a custom driver. This can save you time, reduce complexity, and ensure compatibility across different Windows versions.
+As a driver developer, understanding WinUSB (Windows USB) can significantly streamline your development process, especially when you work with USB devices. WinUSB is a generic driver included with Windows. It allows you to communicate with USB devices without the need to write a custom driver. Using this driver can save you time, reduce complexity, and ensure compatibility across different Windows versions.
 
-## Key Benefits of Using WinUSB
+## Key benefits of using WinUSB
 
-1. **Simplified Development**:
+- Simplified development
 
-   - **Ease of Use**: WinUSB abstracts much of the complexity involved in USB communication, making it easier for you to interact with USB devices.
-   - **No Custom Driver Needed**: For many USB devices, WinUSB can be used directly, eliminating the need to write and maintain a custom driver.
+  - **Ease of use**: WinUSB abstracts much of the complexity involved in USB communication, which makes it easier for you to interact with USB devices.
+  - **No custom driver needed**: For many USB devices, WinUSB can be used directly, which eliminates the need to write and maintain a custom driver.
 
-1. **Cross-Platform Compatibility**:
+- Cross-platform compatibility
 
-   - **Standardized Interface**: WinUSB provides a standardized interface for USB communication, which can be beneficial for ensuring compatibility across different Windows versions.
+  - **Standardized interface**: WinUSB provides a standardized interface for USB communication, which can help ensure compatibility across different Windows versions.
 
-1. **Time and Cost Efficiency**:
+- Time and cost efficiency
 
-   - **Reduced Development Time**: Using WinUSB can significantly reduce the time required to develop and test a USB driver.
-   - **Lower Maintenance Costs**: Since WinUSB is maintained by Microsoft, you can rely on it being updated and supported, reducing long-term maintenance costs.
+  - **Reduced development time**: Using WinUSB can significantly reduce the time required to develop and test a USB driver.
+  - **Lower maintenance costs**: Because Microsoft maintains WinUSB, you can rely on it being updated and supported, which reduces long-term maintenance costs.
 
-1. **Access to USB Features**:
+- Access to USB features
 
-   - **Full USB Functionality**: WinUSB supports a wide range of USB features, including bulk transfers, control transfers, interrupt transfers, and isochronous transfers.
+  - **Full USB functionality**: WinUSB supports a wide range of USB features, including bulk transfers, control transfers, interrupt transfers, and isochronous transfers.
 
-## What You Can Accomplish with WinUSB
+## What you can accomplish with WinUSB
 
-1. **Device Communication**:
+- Device communication
 
-   - **Data Transfer**: Send and receive data to and from a USB device using bulk, control, interrupt, or isochronous transfers.
-   - **Control Requests**: Send control requests to configure the device or retrieve information.
+  - **Data transfer**: Send and receive data to and from a USB device using bulk, control, interrupt, or isochronous transfers.
+  - **Control requests**: Send control requests to configure the device or retrieve information.
 
-1. **Device Configuration**:
+- Device configuration
 
-   - **Setting Configuration**: Configure the USB device by selecting configurations, interfaces, and alternate settings.
-   - **Endpoint Management**: Manage endpoints for data transfer.
+  - **Setting configuration**: Select configurations, interfaces, and alternate settings to configure the USB device.
+  - **Endpoint management**: Manage endpoints for data transfer.
 
-1. **Device Enumeration**:
+- Device enumeration
 
-   - **Device Identification**: Enumerate and identify USB devices connected to the system.
-   - **Descriptor Retrieval**: Retrieve device descriptors, configuration descriptors, interface descriptors, and endpoint descriptors.
+  - **Device identification**: Enumerate and identify USB devices connected to the system.
+  - **Descriptor retrieval**: Retrieve device descriptors, configuration descriptors, interface descriptors, and endpoint descriptors.
 
-1. **Custom Applications**:
+- Custom applications
 
-   - **User-Mode Applications**: Develop user-mode applications that communicate with USB devices using the WinUSB API.
-   - **Firmware Updates**: Implement firmware update mechanisms for USB devices.
+  - **User-mode applications**: Develop user-mode applications that communicate with USB devices using the WinUSB API.
+  - **Firmware updates**: Implement firmware update mechanisms for USB devices.
 
-1. **Testing and Debugging**:
+- Testing and debugging
 
-   - **Prototyping**: Quickly prototype USB device communication to test hardware functionality.
-   - **Debugging**: Use WinUSB to debug communication issues between the host and the USB device.
+  - **Prototyping**: Quickly prototype USB device communication to test hardware functionality.
+  - **Debugging**: Use WinUSB to debug communication issues between the host and the USB device.
 
 ## Components of WinUSB
 
@@ -64,9 +65,9 @@ WinUSB includes:
 - A kernel-mode driver (winusb.sys)
 - A user-mode dynamic link library (winusb.dll) that exposes WinUSB functions described in [winusb.h](/windows/win32/api/winusb#functions). You can use these functions to manage USB devices with user-mode software.
 
-By default, winusb.sys is installed in the device's kernel-mode stack as an upper filter driver. Apps communicate with the device's UMDF function driver to issue read, write, or device I/O control requests. In this configuration, winusb.sys serves as the device stack's Plug and Play and power owner. You can also install winusb.sys as the function driver for a USB device.
+By default, winusb.sys is installed in the device's kernel-mode stack as an upper filter driver. Apps communicate with the device's User-Mode Driver Framework (UMDF) function driver to issue read, write, or device I/O control requests. In this configuration, winusb.sys serves as the device stack's Plug and Play and power owner. You can also install winusb.sys as the function driver for a USB device.
 
-## Getting Started with WinUSB
+## Get started with WinUSB
 
 This section includes information on:
 
@@ -74,11 +75,11 @@ This section includes information on:
 - Using WinUSB to communicate with USB devices
 - Installing winusb.sys as the function driver for a USB device
 
-You will also find detailed code examples that show how apps and USB devices communicate.
+It also includes detailed code examples that show how apps and USB devices communicate.
 
 > [!NOTE]
 > WinUSB supports isochronous transfers starting in Windows 8.
 
-## Related Topics
+## Related content
 
 - [Microsoft-provided USB drivers](system-supplied-usb-drivers.md)
