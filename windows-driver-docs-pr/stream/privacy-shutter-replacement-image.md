@@ -19,7 +19,7 @@ This feature is only implemented by cameras that have privacy shutters/kill swit
 
 Devices that want to support a custom image for image replacement must also provide a signed binary, part of their driver package that contains their replacement image.
 
-Due to image replacement overwriting the existing output buffer, this requires that the device is outputting uncompressed frames. In the case of compressed frames, such as MJPEG and JPEG, no image replacement will occur and the original image from the driver will instead be delivered.
+Because image replacement overwrites the existing output buffer, the device outputs uncompressed frames. For compressed frames like MJPEG and JPEG, no image replacement occurs, and the original image from the driver is delivered instead.
 
 ## Implementation overview
 
