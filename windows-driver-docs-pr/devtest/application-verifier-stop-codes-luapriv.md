@@ -7,7 +7,7 @@ keywords:
 - Application Verifier
 - AppVerif.exe
 - user-mode application testing
-ms.date: 01/14/2022
+ms.date: 10/31/2025
 ms.topic: reference
 ---
 
@@ -27,7 +27,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;CANNOTQUERYOBJECT</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3300</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -47,7 +47,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;CANTCANONICALIZEPATH</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3301</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -67,7 +67,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;CANTOPEN_NONCRITICAL</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3302</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -87,7 +87,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;BADHKCU</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3303</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -107,7 +107,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;NO_USERPROFILE</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3304</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -127,7 +127,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;OK_OBJECT_PREFIX</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3305</li>
   <li><b>Severity:</b>&nbsp;Info</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -147,7 +147,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;RESTRICTED_NAMESPACE</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3306</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -167,7 +167,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;NO_NAMESPACE</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3307</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -187,7 +187,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;CANTGETPARENT</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3308</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -207,7 +207,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;CANT_OPEN_PARENT</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3309</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -227,7 +227,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;NON_LUA_USER</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x330A</li>
   <li><b>Severity:</b>&nbsp;Info</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -247,7 +247,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;STRING2SID_FAILED</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x330B</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -267,7 +267,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;GETTOKENINFO</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x330C</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -287,7 +287,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;UNKNOWN_PRIVILEGE</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x330D</li>
   <li><b>Severity:</b>&nbsp;Info</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -307,7 +307,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;PRIV_LOOKUP_FAILED</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x330E</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -327,7 +327,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;USED_PRIVILEGE_LUID</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x330F</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -347,7 +347,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;FAILED_PRIVILEGE_LUID</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3310</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -367,7 +367,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;PRIVILEGED_USER</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3311</li>
   <li><b>Severity:</b>&nbsp;Info</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -387,7 +387,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;IRRELEVANT_PRIVILEGE_DENIED</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3312</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -407,7 +407,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;IRRELEVANT_UNKNOWN_PRIVILEGE_DENIED</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3313</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -427,7 +427,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;CANT_QUERY_VALUE</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3314</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -447,7 +447,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;UNKNOWN_MAPPING</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3315</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -467,7 +467,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;INI_PROFILE_ACCESS_DENIED</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3316</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -487,7 +487,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;OK_OBJECT_DUMP</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3317</li>
   <li><b>Severity:</b>&nbsp;Info</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -507,7 +507,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;BAD_OBJECT_DUMP</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3318</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -527,7 +527,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;SD2TEXT</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3319</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -547,7 +547,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;DENY_ACE</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x331A</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -567,7 +567,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;RESTRICTED_RIGHT</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x331B</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -587,7 +587,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;RESTRICTED_RIGHT_MORE</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x331C</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -607,7 +607,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;CREATOR_OWNER</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x331D</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -627,7 +627,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;OK_OBJECT_GRANT</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x331E</li>
   <li><b>Severity:</b>&nbsp;Info</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -647,7 +647,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;EMPTY_DACL</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x331F</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -667,7 +667,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;MISSING_PIECE</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3320</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -687,7 +687,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;MISSING_ACE</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3321</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -707,7 +707,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;MAXIMUM_ALLOWED</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3322</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -727,7 +727,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;UNKNOWN_MAXIMUM_ALLOWED</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3323</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -747,7 +747,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;UNKNOWN_PERMS</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3324</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -767,7 +767,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;INI_PROFILE_ACCESS_GRANTED</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3325</li>
   <li><b>Severity:</b>&nbsp;Info</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -787,7 +787,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;CHECKTOKENMEMBERSHIP_TRUSTED</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3326</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -807,7 +807,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;CHECKTOKENMEMBERSHIP_UNTRUSTED</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3327</li>
   <li><b>Severity:</b>&nbsp;Info</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -827,7 +827,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;INI_PROFILE_CONCERN</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3328</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -847,7 +847,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;OP_REQUIRES_ACCESS</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3329</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -867,7 +867,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;CANNOT_QUERY_ACCESS</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x332A</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -887,7 +887,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;ELEVATION_REQUIRED</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x332B</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -907,7 +907,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;ELEVATION_DETECTED</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x332C</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -927,7 +927,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;OBJECT_INACCESSIBLE</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x332D</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -947,7 +947,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;FAILED_API_CALL</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x332E</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -967,7 +967,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;SECURITY_LOG_OPENED</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x332F</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -987,7 +987,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;INI_PROFILE_FAILED</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3330</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1007,7 +1007,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;VIRTUALIZED_DELETION</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3331</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1027,7 +1027,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;UNKNOWN_API_OPTIONS</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3332</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1047,7 +1047,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;SET_GLOBAL_HOOK</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3333</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1067,7 +1067,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;SET_HOOK_FAILED</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3334</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1087,7 +1087,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;NETUSERGETINFO</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3335</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1107,7 +1107,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;SETACTIVEPWRSCHEME</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3336</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1127,7 +1127,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;SETACTIVEPWRSCHEME_FAILED</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3337</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1147,7 +1147,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;ACCESSCHECK</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3338</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1167,7 +1167,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;HARDADMINCHECK</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3339</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1187,7 +1187,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;FILE_NAME</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x333A</li>
   <li><b>Severity:</b>&nbsp;Info</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1207,7 +1207,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;FILE_VERSION</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x333B</li>
   <li><b>Severity:</b>&nbsp;Info</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1227,7 +1227,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;FILE_PRODUCT_VERSION</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x333C</li>
   <li><b>Severity:</b>&nbsp;Info</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1247,7 +1247,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;FILE_DESCRIPTION</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x333D</li>
   <li><b>Severity:</b>&nbsp;Info</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1267,7 +1267,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;FILE_PRODUCT_NAME</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x333E</li>
   <li><b>Severity:</b>&nbsp;Info</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1287,7 +1287,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;FILE_COMPANY_NAME</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x333F</li>
   <li><b>Severity:</b>&nbsp;Info</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1307,7 +1307,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;FILE_ORIGINAL_FILENAME</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3340</li>
   <li><b>Severity:</b>&nbsp;Info</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1327,7 +1327,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;RESTRICTED_BY_MIC</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x3341</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1347,7 +1347,7 @@ The following stop codes are contained in this set of tests.
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;LuaPriv</li>
   <li><b>Stop ID:</b>&nbsp;LUAPRIV_VERSION</li>
-  <li><b>Stop code:</b>&nbsp;3300NAN</li>
+  <li><b>Stop code:</b>&nbsp;0x33FF</li>
   <li><b>Severity:</b>&nbsp;Info</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
