@@ -192,7 +192,7 @@
         href: ethernet-measures.md
       - name: Median Time to Internet on IPv4
         href: median-time-to-internet-on-ipv4.md
-      - name: Percentage of Machines that achieved brief Internet multiple times within an hour on IPv4
+      - name: Percentage of machines that achieved brief internet multiple times within an hour on IPv4
         href: percent-machines-brief-internet-ipv4.md
       - name: Percentage of Sessions with unexpected Internet loss over IPv4
         href: percent-sessions-with-unexpected-internet-loss-over-ipv4.md

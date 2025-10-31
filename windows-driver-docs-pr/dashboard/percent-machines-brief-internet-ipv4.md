@@ -28,7 +28,7 @@ period of time.
 
 ## Calculation
 
-1. This measure aggregates telemetry from each device. When the Dynamic Host Configuration Protocol (DHCP) client detects an adapter, it assigns an IP address to the device. After the device connects to the Internet, it's expected to stay connected for the duration of the IP address lease. Each disconnect during an hour period is counted.
+- This measure aggregates telemetry from each device. When the Dynamic Host Configuration Protocol (DHCP) client detects an adapter, it assigns an IP address to the device. After the device connects to the internet, it's expected to stay connected for the duration of the IP address lease. Each disconnect during an hour period is counted.
 
-2. If there are more than 3 disconnects within an hour, the machine for that hour is considered "thrashing" and counted as 100. Otherwise, that hour in which at least a single
+- If there are more than 3 disconnects within an hour, the machine for that hour is considered "thrashing" and counted as 100. Otherwise, that hour in which at least a single
 connection attempt happens is counted as 0. Hour instances are weighted over the number of instances produced by the device, and averages among all devices.
