@@ -70,4 +70,4 @@ The identification numbers used in the URL and their locations are:
 - [Update a hardware submission](hardware-submission-update.md)
 - [How to validate the Microsoft signature](code-signing-validate.md)
 - [Windows HLK getting started](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started)
-- [Attestation sign Windows drivers](code-signing-attestation.md).
+- [Attestation sign Windows drivers](code-signing-attestation.md)
