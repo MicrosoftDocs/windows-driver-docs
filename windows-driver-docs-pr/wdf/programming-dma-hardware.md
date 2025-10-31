@@ -11,12 +11,12 @@ ms.date: 04/20/2017
 ms.topic: how-to
 ---
 
-# Programming DMA Hardware
+# Programming DMA hardware
 
 
 \[Applies to KMDF only\]
 
-This topic describes the functionality that a KMDF driver for a bus-master DMA device typically provides in its [*EvtProgramDma*](/windows-hardware/drivers/ddi/wdfdmatransaction/nc-wdfdmatransaction-evt_wdf_program_dma) event callback function. If your driver uses the framework's DMA support, the driver must provide this callback. This information also applies to a KMDF driver for a [system-mode DMA device](supporting-system-mode-dma.md) that has a hardware interrupt.
+This topic describes the functionality that a KMDF driver for a bus-master DMA device typically provides in its [*EvtProgramDma*](/windows-hardware/drivers/ddi/wdfdmatransaction/nc-wdfdmatransaction-evt_wdf_program_dma) event callback function. If your driver uses the framework's DMA support, you must provide this callback. This information also applies to a KMDF driver for a [system-mode DMA device](supporting-system-mode-dma.md) that has a hardware interrupt.
 
 
 
@@ -25,11 +25,11 @@ The [*EvtProgramDma*](/windows-hardware/drivers/ddi/wdfdmatransaction/nc-wdfdmat
 
 The [*EvtProgramDma*](/windows-hardware/drivers/ddi/wdfdmatransaction/nc-wdfdmatransaction-evt_wdf_program_dma) callback function programs the device by using the hardware resources that the driver's [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function received. If the *EvtProgramDma* callback function successfully programs the hardware, it returns **TRUE**.
 
-After the hardware has completed the DMA transfer, typically the hardware issues an interrupt and the system calls the driver's [*EvtInterruptIsr*](/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_isr) callback function. The driver's *EvtInterruptIsr* callback function usually:
+After the hardware completes the DMA transfer, it typically issues an interrupt and the system calls the driver's [*EvtInterruptIsr*](/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_isr) callback function. The driver's *EvtInterruptIsr* callback function usually:
 
 -   Clears the hardware interrupt.
 
--   Saves the interrupt's context information if it is needed. This information might be lost after the callback function returns and the system lowers the IRQL (because lowering the IRQL allows additional interrupts to occur).
+-   Saves the interrupt's context information if it's needed. This information might be lost after the callback function returns and the system lowers the IRQL (because lowering the IRQL allows additional interrupts to occur).
 
 -   Calls [**WdfInterruptQueueDpcForIsr**](/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptqueuedpcforisr) to schedule an [*EvtInterruptDpc*](/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_dpc) callback function.
 
@@ -41,11 +41,11 @@ To stop a transaction when the driver detects an error, the [*EvtProgramDma*](/w
 
 1.  Call [**WdfDmaTransactionDmaCompletedFinal**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactiondmacompletedfinal).
 
-2.  Call [**WdfObjectDelete**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete) to delete the DMA transaction object, or call [**WdfDmaTransactionRelease**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactionrelease) to release and reuse the DMA transaction object.
+1.  Call [**WdfObjectDelete**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete) to delete the DMA transaction object, or call [**WdfDmaTransactionRelease**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactionrelease) to release and reuse the DMA transaction object.
 
-3.  [Requeue the I/O request](requeuing-i-o-requests.md) or [complete the I/O request](completing-i-o-requests.md), if the transaction is associated with a framework request object. To retrieve a handle to the request, the driver can call [**WdfDmaTransactionGetRequest**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactiongetrequest).
+1.  [Requeue the I/O request](requeuing-i-o-requests.md) or [complete the I/O request](completing-i-o-requests.md), if the transaction is associated with a framework request object. To retrieve a handle to the request, the driver can call [**WdfDmaTransactionGetRequest**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactiongetrequest).
 
-4.  Return **FALSE**.
+1.  Return **FALSE**.
 
 Steps 1 and 4 are illustrated in the following code example, taken from the [PLX9x5x](/samples/browse/) sample’s [*EvtProgramDma*](/windows-hardware/drivers/ddi/wdfdmatransaction/nc-wdfdmatransaction-evt_wdf_program_dma) callback function for read requests in the *Read.c* file.
 

@@ -127,7 +127,7 @@ If you want the framework to provide queue-level synchronization for a device, y
 
 -   Alternatively, you can use the following steps in all framework versions:
     1.  Set **SynchronizationScope** to **WdfSynchronizationScopeQueue** in the [**WDF\_OBJECT\_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure of the *device* object.
-    2.  Use the default **WdfSynchronizationScopeInheritFromParent** value for each device's *queue* objects.
+    1.  Use the default **WdfSynchronizationScopeInheritFromParent** value for each device's *queue* objects.
 
 If you don't want the framework to synchronize the callback functions that handle your driver's I/O requests, use the default **SynchronizationScope** value for your driver's driver, device, and queue objects. In this case, the framework doesn't automatically synchronize the driver's I/O request-related callback functions. The framework can call the callback functions at IRQL &lt;= DISPATCH\_LEVEL.
 
