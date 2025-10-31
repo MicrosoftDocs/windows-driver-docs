@@ -590,7 +590,7 @@ This command will give details about the nature of the error and what heap block
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;Leak</li>
   <li><b>Stop ID:</b>&nbsp;ALLOCATION</li>
-  <li><b>Stop code:</b>&nbsp;0x0</li>
+  <li><b>Stop code:</b>&nbsp;0x900</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;Break</li>
@@ -611,7 +611,7 @@ This command will give details about the nature of the error and what heap block
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;Leak</li>
   <li><b>Stop ID:</b>&nbsp;HANDLE</li>
-  <li><b>Stop code:</b>&nbsp;0x1</li>
+  <li><b>Stop code:</b>&nbsp;0x901</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;Break</li>
@@ -633,7 +633,7 @@ This command will give details about the nature of the error and what heap block
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;Leak</li>
   <li><b>Stop ID:</b>&nbsp;REGISTRY</li>
-  <li><b>Stop code:</b>&nbsp;0x2</li>
+  <li><b>Stop code:</b>&nbsp;0x902</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;Break</li>
@@ -654,7 +654,7 @@ This command will give details about the nature of the error and what heap block
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;Leak</li>
   <li><b>Stop ID:</b>&nbsp;VIRTUAL_RESERVATION</li>
-  <li><b>Stop code:</b>&nbsp;0x3</li>
+  <li><b>Stop code:</b>&nbsp;0x903</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;Break</li>
@@ -675,7 +675,7 @@ This command will give details about the nature of the error and what heap block
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;Leak</li>
   <li><b>Stop ID:</b>&nbsp;SYSSTRING</li>
-  <li><b>Stop code:</b>&nbsp;0x4</li>
+  <li><b>Stop code:</b>&nbsp;0x904</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;Break</li>
@@ -696,7 +696,7 @@ This command will give details about the nature of the error and what heap block
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;Leak</li>
   <li><b>Stop ID:</b>&nbsp;POWER_NOTIFICATION</li>
-  <li><b>Stop code:</b>&nbsp;0x5</li>
+  <li><b>Stop code:</b>&nbsp;0x905</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;Break</li>
@@ -1134,7 +1134,7 @@ Dump the critical section at address \<*parameter1*\> and look for the corruptio
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;SRWLock</li>
   <li><b>Stop ID:</b>&nbsp;NOT_INITIALIZED</li>
-  <li><b>Stop code:</b>&nbsp;0x0</li>
+  <li><b>Stop code:</b>&nbsp;0x250</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;Break</li>
@@ -1159,7 +1159,7 @@ Dump the critical section at address \<*parameter1*\> and look for the corruptio
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;SRWLock</li>
   <li><b>Stop ID:</b>&nbsp;ALREADY_INITIALIZED</li>
-  <li><b>Stop code:</b>&nbsp;0x1</li>
+  <li><b>Stop code:</b>&nbsp;0x251</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;Break</li>
@@ -1184,7 +1184,7 @@ Dump the critical section at address \<*parameter1*\> and look for the corruptio
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;SRWLock</li>
   <li><b>Stop ID:</b>&nbsp;MISMATCHED_ACQUIRE_RELEASE</li>
-  <li><b>Stop code:</b>&nbsp;0x2</li>
+  <li><b>Stop code:</b>&nbsp;0x252</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;Break</li>
@@ -1209,7 +1209,7 @@ Dump the critical section at address \<*parameter1*\> and look for the corruptio
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;SRWLock</li>
   <li><b>Stop ID:</b>&nbsp;RECURSIVE_ACQUIRE</li>
-  <li><b>Stop code:</b>&nbsp;0x3</li>
+  <li><b>Stop code:</b>&nbsp;0x253</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;Break</li>
@@ -1234,7 +1234,7 @@ Dump the critical section at address \<*parameter1*\> and look for the corruptio
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;SRWLock</li>
   <li><b>Stop ID:</b>&nbsp;EXIT_THREAD_OWNS_LOCK</li>
-  <li><b>Stop code:</b>&nbsp;0x4</li>
+  <li><b>Stop code:</b>&nbsp;0x254</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;Break</li>
@@ -1259,7 +1259,7 @@ Dump the critical section at address \<*parameter1*\> and look for the corruptio
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;SRWLock</li>
   <li><b>Stop ID:</b>&nbsp;INVALID_OWNER</li>
-  <li><b>Stop code:</b>&nbsp;0x5</li>
+  <li><b>Stop code:</b>&nbsp;0x255</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
@@ -1284,7 +1284,7 @@ Dump the critical section at address \<*parameter1*\> and look for the corruptio
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;SRWLock</li>
   <li><b>Stop ID:</b>&nbsp;IN_FREED_MEMORY</li>
-  <li><b>Stop code:</b>&nbsp;0x6</li>
+  <li><b>Stop code:</b>&nbsp;0x256</li>
   <li><b>Severity:</b>&nbsp;Error</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;Break</li>
@@ -1310,7 +1310,7 @@ Dump the critical section at address \<*parameter1*\> and look for the corruptio
 <p></p><i>Additional Information</i><ul>
   <li><b>Test Layer:</b>&nbsp;SRWLock</li>
   <li><b>Stop ID:</b>&nbsp;IN_UNLOADED_DLL</li>
-  <li><b>Stop code:</b>&nbsp;0x7</li>
+  <li><b>Stop code:</b>&nbsp;0x257</li>
   <li><b>Severity:</b>&nbsp;Warning</li>
   <li><b>One-time error:</b>&nbsp;</li>
   <li><b>Error report:</b>&nbsp;None</li>
