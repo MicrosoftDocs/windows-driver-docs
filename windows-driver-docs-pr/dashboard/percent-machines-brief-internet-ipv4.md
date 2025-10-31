@@ -12,7 +12,7 @@ Frequent and brief Internet connectivity interruptions can degrade user experien
 ## Description
 
 Once a device successfully establishes a IPv4 connection and connects to the Internet, it must maintain that connection throughout that lease session.
-This measure monitors the number of disconnects that were cut short before the lease expiry.  A user's internet should not repeatedly drop and reconnect ("thrash") within a short
+This measure monitors the number of disconnects that were cut short before the lease expiry. A user's internet shouldn't repeatedly drop and reconnect ("thrash") within a short
 period of time.
 
 ## Measure attributes
@@ -28,8 +28,7 @@ period of time.
 
 ## Calculation
 
-1. This measure aggregates telemetry from each device. Once DHCP client recognizes an adapter, an IP address is assigned to a device and once the device acquires Internet access,
-it is expected to be connected for the Internet for the duration of the IP address lease.  Each disconnect during an hour period is counted.
+1. This measure aggregates telemetry from each device. When the Dynamic Host Configuration Protocol (DHCP) client detects an adapter, it assigns an IP address to the device. After the device connects to the Internet, it's expected to stay connected for the duration of the IP address lease. Each disconnect during an hour period is counted.
 
-2. If there are more than 3 disconnects within an hour, the machine for that hour is considered "thrashing" and counted as 100.  Otherwise, that hour in which at least a single
-connection attempt happens is counted as 0.  Hour instances are weighted over the number of instance produced by the device, and averages among all devices.
+2. If there are more than 3 disconnects within an hour, the machine for that hour is considered "thrashing" and counted as 100. Otherwise, that hour in which at least a single
+connection attempt happens is counted as 0. Hour instances are weighted over the number of instances produced by the device, and averages among all devices.
