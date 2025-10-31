@@ -164,6 +164,10 @@
         href: percent-of-machines-with-user-mode-crashes-ecosystem-missing-inf.md
       - name: Percent of machines with user mode crashes out of the total flighting population (non-ecosystem, with INF matching ID)
         href: percent-of-machines-with-user-mode-crashes-non-ecosystem-with-inf.md
+      - name: Percent of machines with WUDF user mode crashes out of the total flighting population (ecosystem, missing INF matching ID)
+        href: percent-of-machines-with-wudf-user-mode-crashes-ecosystem-missing-inf.md
+      - name: Percent of machines with WUDF user mode crashes out of the total flighting population (non-ecosystem, with INF matching ID)
+        href: percent-of-machines-with-wudf-user-mode-crashes-ecosystem-with-inf.md
     - name: Camera
       items:
       - name: Camera measures
@@ -188,6 +192,8 @@
         href: ethernet-measures.md
       - name: Median Time to Internet on IPv4
         href: median-time-to-internet-on-ipv4.md
+      - name: Percentage of Machines that achieved brief Internet multiple times within an hour on IPv4
+        href: percent-machines-brief-internet-ipv4.md
       - name: Percentage of Sessions with unexpected Internet loss over IPv4
         href: percent-sessions-with-unexpected-internet-loss-over-ipv4.md
     - name: Fingerprint
