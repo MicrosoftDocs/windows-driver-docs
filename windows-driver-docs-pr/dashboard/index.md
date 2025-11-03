@@ -18,11 +18,11 @@ To submit binaries for attestation signing or to submit binaries for Windows Har
 
 ## Step 2: Register for the Hardware Developer Program
 
-Now that you have your EV certificate ready, you can now register for the Hardware Developer Program. Follow the steps in [Register for the Microsoft Windows Hardware Developer Program](hardware-program-register.md).
+After you have your EV certificate ready, you can register for the Hardware Developer Program. Follow the steps in [Register for the Microsoft Windows Hardware Developer Program](hardware-program-register.md).
 
 ## Step 3: Test your hardware and drivers
 
-After you register in the Hardware Developer program, you need to design, create, and test your hardware and drivers. To ensure that your drivers and hardware run on Windows systems as your customers expect, to participate in the [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/).
+After you register in the Hardware Developer program, you need to design, create, and test your hardware and drivers. To ensure that your drivers and hardware run on Windows systems as your customers expect, you need to participate in the [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/).
 
 ## Step 4: Submit for certification and compatibility
 
@@ -39,7 +39,7 @@ If you have drivers that you want to distribute with Windows Update or share wit
 
 ## Step 6: Publish your driver
 
-When your driver has passes the review process in the Partner Center hardware dashboard, it becomes eligible for the hardware compatibility or certification program. In addition, provide an announcement date in your submission to publish it to the [Windows Server Catalog](https://www.windowsservercatalog.com/) and the [Windows compatible products list](windows-certified-products-list.md).
+When your driver passes the review process in the Partner Center hardware dashboard, it becomes eligible for the hardware compatibility or certification program. In addition, provide an announcement date in your submission to publish it to the [Windows Server Catalog](https://www.windowsservercatalog.com/) and the [Windows compatible products list](windows-certified-products-list.md).
 
 You can continue to use the Partner Center hardware dashboard to:
 
@@ -49,7 +49,7 @@ You can continue to use the Partner Center hardware dashboard to:
 
 ## Step 7: Share a link to a Windows Certification Verification Report
 
-After your driver is certified, you can share the verification report with a sharable URL. With this URL, you can access and downloaded the report without prior authorization or access to the Partner Center. The sharable URL contains three identification numbers separated by slashes:
+After your driver is certified, you can share the verification report with a sharable URL. With this URL, you can access and download the report without prior authorization or access to the Partner Center. The sharable URL contains three identification numbers separated by slashes:
 
 `https://developer.microsoft.com/dashboard/hardware/driver/DownloadCertificationReport/<SellerID>/<PrivateProductID>/<SubmissionID>`
 
