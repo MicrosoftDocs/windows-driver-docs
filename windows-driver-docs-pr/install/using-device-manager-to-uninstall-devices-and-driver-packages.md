@@ -4,7 +4,7 @@ description: Learn how to use Device Manager to uninstall devices and driver pac
 ms.date: 10/31/2025
 ai-usage: ai-assisted
 ms.topic: how-to
-#customer intend: As an administrator or developer, I want to know how to uninstall device drivers
+#customer intent: As an administrator or developer, I want to know how to uninstall device drivers
 ---
 
 # Using Device Manager to uninstall devices and driver packages
