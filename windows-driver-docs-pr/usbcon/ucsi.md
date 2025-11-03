@@ -28,13 +28,13 @@ USB role switching is handled in the firmware of the system. The USB Role Switch
 
 - USB host-side drivers
 
-  The USB host-side drivers are a set of drivers that work with EHCI or XHCI compliant USB host controllers. If the role-switch driver enumerates the host role, the drivers are loaded. If your host controller isn't specification-compliant, you can write a custom driver by using [USB host controller extension programming interface](/previous-versions/windows/hardware/drivers/mt188009(v=vs.85)). For information, see [Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md).
+  The USB host-side drivers are a set of drivers that work with EHCI or XHCI compliant USB host controllers. If the role-switch driver enumerates the host role, the drivers are loaded. If your host controller isn't specification-compliant, you can write a custom driver by using [USB host controller extension programming interface](/previous-versions/windows/hardware/drivers/mt188009(v=vs.85)). For more information, see [Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md).
 
   Windows 10 Mobile doesn't support [all USB devices classes](supported-usb-classes.md).
 
 - USB connector manager
 
-  Microsoft provides a UCSI in-box driver with Windows (UcmUcsiCx.sys) that implements the features defined in the [USB Type-C Connector System Software Interface Specification](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb-type-c-ucsi-spec.html). The specification describes the capabilities of UCSI and explains the registers and data structures, for hardware component designers, system builders, and device driver developers.
+  Microsoft provides a UCSI in-box driver with Windows (UcmUcsiCx.sys) that implements the features defined in the [USB Type-C Connector System Software Interface Specification](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb-type-c-ucsi-spec.html). The specification describes the capabilities of UCSI. It explains the registers and data structures, for hardware component designers, system builders, and device driver developers.
 
   This driver is intended for systems with embedded controllers. This driver is a client to the Microsoft-provided USB connector manager class extension driver (Ucmcx.sys). The driver handles tasks such as initiating a request to the firmware to change the data or power roles and getting information needed to provide troubleshooting messages to the user.
 
@@ -47,10 +47,10 @@ In addition to the commands marked as **Required**, Windows requires these comma
 - GET_ALTERNATE_MODES
 - GET_CAM_SUPPORTED
 - GET_PDOS
-- SET_NOTIFICATION_ENABLE: The system or controller must support the following notifications within SET_NOTIFICATION_ENABLE:
+- SET_NOTIFICATION_ENABLE: The system or controller must support the following notifications in SET_NOTIFICATION_ENABLE:
   - Supported Provider Capabilities Change
   - Negotiated Power Level Change
-- GET_CONNECTOR_STATUS: The system or controller must support these connector status changes within GET_CONNECTOR_STATUS:
+- GET_CONNECTOR_STATUS: The system or controller must support these connector status changes in GET_CONNECTOR_STATUS:
   - Supported Provider Capabilities Change
   - Negotiated Power Level Change
 
@@ -58,7 +58,9 @@ For more information, see [Intel BIOS Implementation of UCSI](https://www.intel.
 
 ## UCM-UCSI ACPI device for UCSI 2.0 and greater
 
-Starting in Windows 11, version 22H2 September Update, the Windows UCM-UCSI ACPI device drivers support UCSI specification version 2.0 and 2.1. The UCSI specification 2.0 has breaking changes in the memory mapping of its data structures as defined in [UCSI specification Table 3-1 Data Structures](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb-type-c-ucsi-spec.html). To maintain backward compatibility, Windows requires the UCSI PPM of specification version 2.0 or greater to implement the following _DSM function under the **UCM-UCSI ACPI device** in ACPI firmware and return a nonzero value to indicate that UCSI OPM should follow the reported UCSI specification version.
+Starting in Windows 11, version 22H2 September Update, the Windows UCM-UCSI ACPI device drivers support UCSI specification version 2.0 and 2.1. The UCSI specification 2.0 has breaking changes in the memory mapping of its data structures as defined in [UCSI specification Table 3-1 Data Structures](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb-type-c-ucsi-spec.html). 
+
+To maintain backward compatibility, Windows requires the UCSI PPM of specification version 2.0 or greater to implement the following _DSM function under the **UCM-UCSI ACPI device** in ACPI firmware and return a nonzero value to indicate that UCSI OPM should follow the reported UCSI specification version.
 
 - **Arg0**: UUID = 6F8398C2-7CA4-11E4-AD36-631042B5008F
 - **Arg1**: Revision ID = 0
