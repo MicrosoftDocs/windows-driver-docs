@@ -12,13 +12,13 @@ ms.topic: how-to
 This page describes how to uninstall a device or driver package on Windows 10 and Windows 11.
 
 > [!CAUTION]
-> Before uninstalling a device, we recommend physically unplugging the device from the system. If the device is uninstalled before it's unplugged, Windows might then rediscover the device and reinstall drivers for it. This reinstallation can happen immediately after the uninstall or upon rebooting the system.
+> Before you uninstall a device, we recommend physically unplugging the device from the system. If the device is uninstalled before it's unplugged, Windows might then rediscover the device and reinstall drivers for it. This reinstallation can happen immediately after the uninstall or upon rebooting the system.
 
 To open the **Apps** page in **Settings**, in the Windows search, enter and select **Add or remove programs**. If the device or driver package that you want to remove appears in the list of programs, you can uninstall it.
 
 If your device or driver package doesn't appear in the list, you need to use Device Manager to uninstall the device. If that device is the only device using the driver package, then you can also remove the driver package by using Device Manager.
 
-Then follow these steps:
+Follow these steps:
 
 1. To launch Device Manager, in Windows search, enter and select **Device Manager**.
 1. Select the **View** menu and turn on **Show hidden devices**.
@@ -30,17 +30,17 @@ You might need to restart the computer.
 
 Be sure that you're signed in with an account that has administrative privileges. If you don't have the necessary permissions, the option to delete the driver software might not appear.
 
-For more information about uninstalling driver and driver packages, see [How devices and driver packages are uninstalled](how-devices-and-driver-packages-are-uninstalled.md).
+For more information, see [How devices and driver packages are uninstalled](how-devices-and-driver-packages-are-uninstalled.md).
 
-## Ensuring permanent removal
+## Ensure permanent removal
 
-To ensure that a driver package is permanently removed and not reinstalled automatically, you need to delete the driver package from the [Driver store](./driver-store.md). To do so, use the [`pnputil`](../devtest/pnputil.md) command. For example, you can use the following command to delete a driver package:
+To ensure that a driver package is permanently removed and not reinstalled automatically, you need to delete the driver package from the [Driver store](./driver-store.md). To do so, use the [pnputil](../devtest/pnputil.md) command. For example, you can use the following command to delete a driver package:
 
 ```cmd
 pnputil /delete-driver <Published Name> /uninstall
 ```
 
-This command updates any devices using the specified driver package to use a different driver package before removing the specified driver package from the system. If there are no other driver packages on the system that match on the device, the device has no driver package, so it won't function. Be careful before you remove a driver package from the system.
+This command updates any devices that use the specified driver package to use a different driver package before it removes the specified driver package from the system. If there are no other driver packages on the system that match on the device, the device has no driver package, so it won't function. Be careful before you remove a driver package from the system.
 
 If Windows Update detects that a necessary driver is missing, it can reinstall that driver. You might need to adjust your Windows Update settings to prevent this action.
 
