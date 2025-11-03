@@ -8,7 +8,7 @@ ms.topic: troubleshooting
 
 # USB audio device not playing
 
-This article discusses the *Audio services not responding* error and USB audio device doesn't work in Windows 10 version 1703.
+This article discusses the *Audio services not responding* error and *USB audio device doesn't work* in Windows 10 version 1703.
 
 ## Symptoms
 
@@ -55,4 +55,4 @@ If the device isn't yet connected, install the device-specific driver first by u
 
 ## Related content
 
-- [Audio Devices Troubleshooting](audio-devices-troubleshooting.md)
+- [Audio devices troubleshooting overview](audio-devices-troubleshooting.md)
