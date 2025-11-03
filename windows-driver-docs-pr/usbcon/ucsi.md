@@ -1,7 +1,7 @@
 ---
 title: USB-C Connector System Software Interface (UCSI) Driver
 description: Learn about the USB Type-C Connector System Software Interface specification-compliant driver for an Advanced Configuration and Power Interface transport.
-ms.date: 10/30/2025
+ms.date: 11/03/2025
 ms.topic: concept-article
 #customer intent: As a driver developer, I want to understand about the UCSI specification-compliant driver to support an embedded controller with ACPI transport.
 ---
@@ -29,8 +29,6 @@ USB role switching is handled in the firmware of the system. The USB Role Switch
 - USB host-side drivers
 
   The USB host-side drivers are a set of drivers that work with EHCI or XHCI compliant USB host controllers. If the role-switch driver enumerates the host role, the drivers are loaded. If your host controller isn't specification-compliant, you can write a custom driver by using [USB host controller extension programming interface](/previous-versions/windows/hardware/drivers/mt188009(v=vs.85)). For more information, see [Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md).
-
-  Windows 10 Mobile doesn't support [all USB devices classes](supported-usb-classes.md).
 
 - USB connector manager
 
