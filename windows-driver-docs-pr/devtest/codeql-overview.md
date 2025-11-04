@@ -10,7 +10,7 @@ ms.topic: overview
 
 # CodeQL and Static Tools Logo Test Overview
 
-earn how CodeQL helps reduce the attack surface for Windows by ensuring third-party drivers meet strong security standards. This article explains the benefits of using CodeQL for WHCP compliance.
+Learn how CodeQL helps reduce the attack surface for Windows by ensuring third-party drivers meet strong security standards. This article explains the benefits of using CodeQL for WHCP compliance.
 
 One step in setting this security bar is the requirement to the [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility) (WHCP) which states that all driver submissions must use the [CodeQL](https://codeql.github.com/) engine on driver source code and fix any violations that are deemed **Must-Fix**.
 
@@ -38,7 +38,7 @@ Using CodeQL for WHCP testing is allowed under the **[Hardware Lab Kit (HLK)](/w
 
 For WHCP participants, the HLK's EULA overwrites GitHub's CodeQL Terms and Conditions by stating that CodeQL **can be used** during automated analysis, CI or CD, as part of normal engineering processes for the purposes of analyzing drivers to be submitted and certified as part of the WHCP.
 
-The [Static Tools Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae) enforces this requirement to analyze driver source code and fix any ***Must-Fix** violations.
+The [Static Tools Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae) enforces this requirement to analyze driver source code and fix any **Must-Fix** violations.
 
 > [!IMPORTANT]
 > Windows Hardware Compatibility Program requires CodeQL for Static Tool Logo (STL) Tests on our Client and Server Operating Systems. We will continue to maintain support for SDV and CA on older products. We strongly encourage partners to review the CodeQL requirements for the [Static Tool Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
