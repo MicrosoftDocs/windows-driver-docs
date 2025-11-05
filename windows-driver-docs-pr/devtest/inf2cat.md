@@ -1,6 +1,6 @@
 ---
 title: Inf2Cat
-description: Inf2Cat (Inf2Cat.exe) is a command-line tool that determines whether a driver package's INF file can be digitally-signed for a specified list of Windows versions.
+description: Inf2Cat (Inf2Cat.exe) is a command-line tool that determines whether a driver package's INF file can be digitally signed for a specified list of Windows versions.
 keywords:
 - Inf2Cat Driver Development Tools
 topic_type:
@@ -15,7 +15,7 @@ ms.date: 05/31/2023
 
 # Inf2Cat
 
-Inf2Cat (Inf2Cat.exe) is a command-line tool that determines whether a [driver package's](../install/driver-packages.md) INF file can be digitally-signed for a specified list of Windows versions. If so, Inf2Cat generates the unsigned [catalog files](../install/catalog-files.md) that apply to the specified Windows versions.
+Inf2Cat (Inf2Cat.exe) is a command-line tool that determines whether a [driver package's](../install/driver-packages.md) INF file can be digitally signed for a specified list of Windows versions. If so, Inf2Cat generates the unsigned [catalog files](../install/catalog-files.md) that apply to the specified Windows versions.
 
 ```command
     Inf2Cat /driver:
@@ -54,8 +54,8 @@ Configures Inf2Cat to verify that a [driver package's](../install/driver-package
 
 |Windows version|Version identifier|
 |--- |--- |
-|Windows 11, version 25H2 x64 Edition|10_GE_X64|
-|Windows 11, version 25H2 Arm64 Edition|10_GE_ARM64|
+|Windows 11, version 25H2 x64 Edition|10_25H2_X64|
+|Windows 11, version 25H2 Arm64 Edition|10_25H2_ARM64|
 |Windows 11, version 24H2 x64 Edition|10_GE_X64|
 |Windows 11, version 24H2 Arm64 Edition|10_GE_ARM64|
 |Windows Server 2025 x64 Edition|Server2025_X64|
@@ -126,7 +126,7 @@ Include page hashes with files.  Optionally followed by a list of files.
 
 ## Comments
 
-The Inf2Cat tool checks [driver package's](../install/driver-packages.md) INF files for structural errors and verifies that a driver package can be digitally-signed. A driver package can be signed only if all of the files that are referenced in an INF file are present and the source files are in the correct location. If an INF file cannot be signed or if it contains structural errors, the driver package might not be installed correctly or might incorrectly display a driver signing warning dialog box during installation.
+The Inf2Cat tool checks [driver package's](../install/driver-packages.md) INF files for structural errors and verifies that a driver package can be digitally signed. A driver package can be signed only if all of the files that are referenced in an INF file are present and the source files are in the correct location. If an INF file can't be signed or if it contains structural errors, the driver package might not be installed correctly or might incorrectly display a driver signing warning dialog box during installation.
 
 Inf2Cat generates a [catalog file](../install/catalog-files.md) only if the catalog file is specified in the driver package's INF file and the catalog file applies to one or more of the specified Windows versions. If the [**INF Version section**](../install/inf-version-section.md) of an INF file supplies only a CatalogFile=*filename.cat* directive, that catalog file applies to the entire driver package. To support [cross-platform installations](../install/creating-inf-files-for-multiple-platforms-and-operating-systems.md), the INF file should include CatalogFile.*PlatformExtension*=*unique-filename.cat* directives.
 
