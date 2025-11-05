@@ -1,33 +1,39 @@
 ---
-title: Finding the Process ID
-description: Finding the Process ID
+title: Find Process ID (PID) in Windows
+description: "Learn how to find a process ID (PID) in Windows using Task Manager, tasklist command, TList utility, or PowerShell. Identify running processes quickly."
 keywords: ["process, process ID (PID)", "PID (process ID)", "TList, related techniques", "Task Manager"]
-ms.date: 12/06/2024
+ms.date: 11/04/2025
 ms.topic: concept-article
 ms.custom: sfi-image-nochange
 ---
 
-# Finding the process ID
+# Find the process ID
 
-Each process running in Windows is assigned a unique decimal number called the process ID (PID). This number is used in a number of ways, for example to specify the process when attaching a debugger to it.
+Windows assigns each running process a unique decimal number called the process ID (PID). Use this number in many ways, such as specifying the process when attaching a debugger to it.
 
-This topic describes how you can determine the PID for a given app using Task Manager, the tasklist Windows command, the TList utility, the PowerShell Get-Process command, or the debugger.
+**In this article, you'll learn how to find a process ID using:**
 
-## Task Manager
+- [Task Manager](#task-manager) - Quick visual method
+- [tasklist command](#the-tasklist-command) - Command-line option
+- [TList utility](#tlist-utility) - Advanced debugging tool
+- [PowerShell Get-Process](#powershell-get-process-command) - Automation-friendly
+- [Debugger .tlist command](#the-tlist-debugger-command) - For active debugging sessions
 
-Task Manager can be opened in a number of ways, but the simplest is to select Ctrl+Alt+Delete, and then select **Task Manager**.
+**To find a PID using Task Manager**
 
-In Windows, first click **More details** to expand the information displayed.  From the **Processes** tab, select **Details** to see the process ID listed in the *PID* column.
+1. Open Task Manager by selecting Ctrl+Alt+Delete, then select **Task Manager**.
+2. Select **More details** to expand the information displayed (Windows only).
+3. From the **Processes** tab, select **Details** to see the process ID in the *PID* column.
 
-:::image type="content" source="images/process-id-task-manager-windows-11.png" alt-text="Screenshot of Task Manager in Windows 11, displaying process numbers sorted by user name.":::
+You can select any column name to sort, or right-click a process name for more options.
 
-Click on any column name to sort. You can right click a process name to see more options for a process.
+:::image type="content" source="images/process-id-task-manager-windows-11.png" alt-text="Screenshot of Task Manager Details tab showing process IDs in the PID column.":::
 
-Some kernel errors may cause delays in Task Manager's graphical interface.
+Some kernel errors might cause delays in Task Manager's graphical interface.
 
 ## The **tasklist** command
 
-Use the built in Windows **tasklist** command from a command prompt to display all processes, their PIDs, and a variety of other details.
+Use the built-in Windows **tasklist** command from a command prompt to display all processes, their PIDs, and a variety of other details.
 
 ```console
 C:\>tasklist
@@ -50,11 +56,11 @@ Use `tasklist /?` to display command line help.
 
 Task List Viewer (TList), or tlist.exe, is a command-line utility that displays the list of tasks, or user-mode processes, currently running on the local computer. TList is included in the Debugging Tools for Windows. For information on how to download and install the debugging tools, see [Debugging Tools for Windows](debugger-download-tools.md).
 
-If you installed the Windows Driver Kit in the default directory on a 64 bit PC, the debugging tools are located here:
+If you installed the Windows Driver Kit in the default directory on a 64-bit PC, you can find the debugging tools here:
 
 `C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\`
 
-When you run TList from the command prompt, it will display a list of all the user-mode processes in memory with a unique PID number. For each process, it shows the PID, process name, and, if the process has a window, the title of that window.
+When you run TList from the command prompt, it displays a list of all the user-mode processes in memory with a unique PID number. For each process, it shows the PID, process name, and, if the process has a window, the title of that window.
 
 ```console
 C:\Program Files (x86)\Windows Kits\10\Debuggers\x64>tlist -t
@@ -76,13 +82,21 @@ wininit.exe (980)
 
 For more information, see [TList](tlist.md).
 
-## The **.tlist** debugger command
+## The .tlist debugger command
 
-If there's already a user-mode debugger running on the system in question, the [**.tlist (List Process IDs)**](../debuggercmds/-tlist--list-process-ids-.md) command will display a list of all PIDs on that system.
+If you have a user-mode debugger already running on the system, use the [.tlist (List Process IDs)](../debuggercmds/-tlist--list-process-ids-.md) command to display all PIDs.
+
+**Example:**
+
+```dotnetcli
+0:000> .tlist
+```
+
+This method is useful when you're actively debugging and need to identify other processes without leaving the debugger.
 
 ## PowerShell Get-Process command
 
-To work with automation scripts, use the Get-Process PowerShell command. Specify a specific process name, to see the process ID for that process.
+To work with automation scripts, use the Get-Process PowerShell command. Specify a specific process name to see the process ID for that process.
 
 ```powershell
 C:\> Get-Process explorer
@@ -94,6 +108,10 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 
 For more information, see [Get-Process](/powershell/module/microsoft.powershell.management/get-process).
 
-## Additional resources
+## Related topics
 
-To learn more about Windows internals (including context, threads, and processes), review additional resources, such as [*Windows Internals*](/sysinternals/resources/windows-internals) by  Pavel Yosifovich, Mark Russinovich, David Solomon, and Alex Ionescu.
+- [Debugging Tools for Windows](debugger-download-tools.md) - Download tools used in this article
+- [TList command reference](tlist.md) - Detailed TList utility documentation
+- [.tlist debugger command](../debuggercmds/-tlist--list-process-ids-.md) - Debugger command reference
+- [Get-Process PowerShell cmdlet](/powershell/module/microsoft.powershell.management/get-process) - Complete PowerShell documentation
+- [Windows Internals](/sysinternals/resources/windows-internals) - Deep dive into Windows processes and threads
