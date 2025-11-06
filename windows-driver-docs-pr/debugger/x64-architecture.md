@@ -49,7 +49,7 @@ The x64 processor also provides several sets of floating-point registers:
 
 - Eight 64-bit MMX registers. (These registers overlap with the x87 registers.)
 
-- The original set of eight 128-bit SSE registers is increased to sixteen.
+- The original set of eight 128-bit SSE registers is increased to 16.
 
 ## Calling conventions
 
@@ -61,7 +61,7 @@ Unlike the x86 architecture, the C/C++ compiler supports only one calling conven
 
 - The caller reserves space on the stack for arguments passed in registers. The called function can use this space to spill the contents of registers to the stack.
 
-- You pass any additional arguments on the stack.
+- You pass any other arguments on the stack.
 
 - An integer or pointer return value is returned in the **rax** register, while a floating-point return value is returned in **xmm0**.
 
