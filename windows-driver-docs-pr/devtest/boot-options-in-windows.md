@@ -31,13 +31,11 @@ This article provides an overview of boot options in Windows. You'll learn about
 During development, you can use this information to configure boot options for debugging, testing, and troubleshooting your driver.
 
 > [!CAUTION]
-> You need administrative privileges to use BCDEdit to modify BCD. Changing some boot entry options by using BCDEdit could make your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings. For more information, see *[How to open MSConfig in Windows 10](https://support.microsoft.com/help/4026130/windows-how-to-open-msconfig-in-windows-10)*.
+> You need administrative privileges to use BCDEdit to modify BCD. Changing some boot entry options by using BCDEdit could make your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings. 
 
 ## Boot Loading Architecture
 
 Windows uses three primary components to load the operating system quickly and securely:
-
-:::image type="content" source="images/boot-process-diagram.png" alt-text="Diagram showing the boot process from Windows Boot Manager to the OS loader.":::
 
 - **Windows Boot Manager**: Starts the system, displays the boot menu to the user, and loads the selected operating system loader.
 - **Windows operating system loader**: Resides in the Windows partition, takes over the boot process, and loads the operating system.
@@ -75,6 +73,7 @@ To edit boot options in Windows, use BCDEdit (BCDEdit.exe), a command-line tool 
 - [Boot Configuration Data WMI Provider](/previous-versions/windows/desktop/bcd/boot-configuration-data-portal) - For programmatic changes
 
 ## Next steps
+
 - [Learn BCDEdit commands and syntax](editing-boot-options.md)
 - [View all BCD boot options](bcd-boot-options-reference.md)
 - [Set up boot parameters for debugging](using-boot-parameters.md)

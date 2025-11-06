@@ -9,7 +9,7 @@ ms.topic: overview
 
 PnPUtil (PnPUtil.exe) is a command line tool for managing Windows driver packages. Use it to:
 
-- Add a driver package to the [driver store](/windows-hardware/drivers/install/driver-store.md).
+- Add a driver package to the [driver store](/windows-hardware/drivers/install/driver-store).
 - Install a driver package on the computer.
 - Delete a driver package from the driver store.
 - Enumerate the driver packages that are currently in the driver store. The tool lists only driver packages that aren't in-box packages. An *in-box* driver package is one that's included in the default installation of Windows or its service packs.
