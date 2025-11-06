@@ -1,36 +1,45 @@
 ---
 title: Forcing a System Crash from the Keyboard
-description: Learn how to configure your settings to force a system crash from the PS/2, USB, and Hyper-V keyboard types.
+description: Discover how to trigger a system crash using keyboard shortcuts. Configure registry settings for PS/2, USB, and Hyper-V keyboards with this guide.
 keywords: ["boot process, causing system crash from keyboard", "CTRL+SCROLL LOCK", "system crash, causing from keyboard", "bug check, causing from keyboard", "keyboard-caused system crash", "USB keyboard and system crash", "PS/2 keyboard and system crash", "forcing system crash from keyboard"]
-ms.date: 09/23/2024
+ms.date: 11/04/2025
 ai-usage: ai-assisted
 ms.topic: how-to
 ---
 
 # Forcing a system crash from the keyboard
 
-The following types of keyboards can cause a system crash directly:
+When troubleshooting system issues, you might need to generate a crash dump file to analyze the system state. You can force a system crash directly from your keyboard by using specific key combinations. This capability is useful when a system becomes unresponsive or when you need to capture diagnostic information.
 
-- **PS/2 keyboards connected on i8042prt ports**
-  This feature is available in Windows 2000 and later versions of the Windows operating system.
+This article explains how to:
 
-- **USB keyboards**  
-  This feature is available in Windows Vista and later versions of the Windows operating system.
+- Configure registry settings to enable keyboard-initiated crashes
+- Use keyboard shortcuts to trigger a system crash
+- Set up alternate keyboard shortcuts
 
-- **Hyper-V keyboards**  
-  This feature is available in Windows 10 version 1903 and later versions of the Windows operating system.
+This feature works with PS/2 keyboards (Windows 2000 and later), USB keyboards (Windows Vista and later), and Hyper-V keyboards (Windows 10 version 1903 and later).
+
+> [!CAUTION]
+> Forcing a system crash immediately stops your system and might result in data loss. Use this feature only when necessary for debugging purposes and ensure you save your work.
 
 ## Configuration
 
-Configure the following settings to enable a system crash using the keyboard:
+Configure the following settings to enable a system crash by using the keyboard:
 
 1. If you want a crash dump file to be written, you must enable such dump files. Choose the path and file name, and select the size of the dump file. For more information, see [Enabling a kernel-mode dump file](enabling-a-kernel-mode-dump-file.md).
 
-2. With PS/2 keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\i8042prt\Parameters`, create a value named `CrashOnCtrlScroll`, and set it equal to a `REG_DWORD` value of 0x01.
+1. **For PS/2 keyboards:** Enable the keyboard-initiated crash in the registry:
+   - Navigate to `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\i8042prt\Parameters`
+   - Create a value named `CrashOnCtrlScroll`
+   - Set it to `REG_DWORD` value of `0x01`
 
-3. With USB keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\kbdhid\Parameters`, create a value named `CrashOnCtrlScroll`, and set it equal to a `REG_DWORD` value of 0x01.
+1. With USB keyboards, you must enable the keyboard-initiated crash in the registry. 
+   - In the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\kbdhid\Parameters`, create a value named `CrashOnCtrlScroll`
+   - Set it equal to a `REG_DWORD` value of 0x01.
 
-4. With Hyper-V keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\hyperkbd\Parameters`, create a value named `CrashOnCtrlScroll`, and set it equal to a `REG_DWORD` value of 0x01.
+1. With Hyper-V keyboards, you must enable the keyboard-initiated crash in the registry. 
+    - In the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\hyperkbd\Parameters`, create a value named `CrashOnCtrlScroll`
+    - Set it equal to a `REG_DWORD` value of 0x01.
 
 Some laptops use the PS/2 driver for the built-in keyboard and also support external HID keyboards.  For these systems, consider creating both the USB and PS/2 registry keys to allow the use of either keyboard.
 
@@ -38,9 +47,9 @@ You must restart the system for these settings to take effect.
 
 Once the restart is completed, the keyboard crash can be initiated by using the following hotkey sequence: Hold down the rightmost CTRL key, and press the SCROLL LOCK key twice.
 
-The system then calls `KeBugCheck` and issues [Bug check 0xE2: MANUALLY_INITIATED_CRASH](bug-check-0xe2--manually-initiated-crash.md). Unless crash dumps have been disabled, a crash dump file is then written.
+The system then calls `KeBugCheck` and issues [Bug check 0xE2: MANUALLY_INITIATED_CRASH](bug-check-0xe2--manually-initiated-crash.md). Unless crash dumps are disabled, a crash dump file is then written.
 
-If a kernel debugger is attached to the crashed machine, the machine will break into the kernel debugger after the crash dump file has been written.
+If a kernel debugger is attached to the crashed machine, the machine breaks into the kernel debugger after the crash dump file is written.
 
 ## Defining alternate keyboard shortcuts to force a system crash from the keyboard
 
@@ -60,11 +69,11 @@ You can configure alternate values under the following registry subkeys for keyb
 
 You must create the following registry `REG_DWORD` values under these subkeys:
 
-## Dump1Keys
+### Dump1Keys
 
 The `Dump1Keys` registry value is a bit map of the first hotkey to use. For example, instead of using the rightmost CTRL key to initiate the hotkey sequence, you can set the first hotkey to be the leftmost SHIFT key.
 
-The hexadecimal values for the first hot key are described in the following table.
+The following table describes the hexadecimal values for the first hot key.
 
 | Value | First Key used in the keyboard shortcut sequence |
 |-------|--------------------------------------------------|
@@ -77,7 +86,7 @@ The hexadecimal values for the first hot key are described in the following tabl
 
 You can assign `Dump1Keys` a value that enables one or more keys as the first key used in the keyboard shortcut sequence. For example, assign `Dump1Keys` a value of 0x11 to define both the rightmost and leftmost SHIFT keys as the first key in the keyboard shortcut sequence.
 
-**Dump2Key**  
+### Dump2Key
 
 The `Dump2Key` registry value is the index in the scan code table for the keyboard layout of the target computer. See the actual table in the driver:
 
@@ -103,7 +112,9 @@ Index 124 (sysreq) is a special case because an 84-key keyboard has a different 
 
 If you define alternate keyboard shortcuts to force a system crash from a USB or PS/2 keyboard, you must either set the `CrashOnCtrlScroll` registry value to 0 or remove it from the registry.
 
-Example: In this scenario, a laptop uses a PS2 keyboard driver, and an external HID keyboard is attached. Setting both values provides the ability to trigger a manual system crash from either keyboard. A manual system crash can be forced by holding the rightmost control key and pressing the spacebar twice when the following registry key is set.
+### Example
+
+In this scenario, a laptop uses a PS2 keyboard driver, and an external HID keyboard is attached. Setting both values provides the ability to trigger a manual system crash from either keyboard. You can force a manual system crash by holding the rightmost control key and pressing the spacebar twice when the following registry key is set.
 
 ```reg
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt\crashdump]
@@ -117,7 +128,7 @@ Example: In this scenario, a laptop uses a PS2 keyboard driver, and an external 
 
 ## Limitations
 
-It's possible but rare for a system to freeze in such a way that the keyboard shortcut sequence doesn't work. Using the keyboard shortcut sequence to initiate a crash will work even in many instances where **CTRL+ALT+DELETE** doesn't work.
+It's possible but rare for a system to freeze in such a way that the keyboard shortcut sequence doesn't work. Using the keyboard shortcut sequence to initiate a crash works even in many instances where **CTRL+ALT+DELETE** doesn't work.
 
 Forcing a system crash from the keyboard doesn't work if the computer stops responding at a high interrupt request level (IRQL). This limitation exists because the **Kbdhid.sys** driver, which allows the memory dump process to run, operates at a lower IRQL than the **i8042prt.sys** driver.
 

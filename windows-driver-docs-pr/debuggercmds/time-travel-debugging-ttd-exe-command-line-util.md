@@ -1,68 +1,77 @@
 ---
-title: "Time Travel Debugging - TTD.exe command line utility"
-description: "This section describes when and how to use work with the TTD.exe command line utility"
+title: "TTD.exe Command Line Utility for Time Travel Debugging"
+description: "Learn when and how to use the TTD.exe command line utility to record Time Travel Debugging traces. Install, configure, and record app execution for debugging in WinDbg."
 keywords: ["TTD.exe command line utility", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 11/15/2024
+ms.date: 11/05/2025
 ms.topic: concept-article
 ---
 
 # Time Travel Debugging - TTD.exe command line utility
 
-:::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Time travel debugging logo featuring a clock.":::
+:::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Screenshot of Time travel debugging logo featuring a clock.":::
 
-This article describes when and how to use the TTD.exe command line utility to record a trace.
+This article describes when and how to use the TTD.exe command line utility to record Time Travel Debugging (TTD) traces. The TTD.exe command line utility allows you to record app or process execution, save it to a trace file, and replay it in WinDbg to diagnose code execution issues.
+
+In this article, you'll learn:
+
+- When to use TTD.exe versus the WinDbg UI
+- How to install and configure TTD.exe
+- Three ways to record traces (launch, attach, monitor)
+- Command line options and advanced scenarios
 
 ## When to use the TTD.exe command line utility
 
-Time Travel Debugging (TTD) allows you to record the code execution of an app or process and save it in a trace file. The file can be played back in the Windows debugger to locate an issue with code execution.
+Time Travel Debugging (TTD) lets you record the code execution of an app or process and save it in a trace file. You can play back the file in the Windows debugger to locate an issue with code execution.
 
-For many scenarios, the easiest way to use TTD to record an app or process is directly from the WinDbg UI. For information on time travel debugging using the WinDbg UI, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
+For many scenarios, the easiest way to use TTD to record an app or process is directly from the WinDbg UI. If you're new to Time Travel Debugging, start with [Time Travel Debugging - Overview](time-travel-debugging-overview.md) to learn the basics using the WinDbg interface.
 
-You may have scenarios where only the TTD command line recorder is required: recording on a PC without installing the debugger, advanced recording scenarios, test automation, etc. In these scenarios you can install just the TTD command line recorder through a URL.
+You might have scenarios where you need only the TTD command line recorder: recording on a PC without installing the debugger, advanced recording scenarios, test automation, and so on. In these scenarios, you can install just the TTD command line recorder through a URL.
 
 ### TTD recording impacts the recorded process
 
-TTD recording is an invasive technology. You will notice anywhere from 5x-20x or more slowdown of the running app or process while recording, depending on the application and the recording options selected.
+TTD recording is an invasive technology. You notice anywhere from 5x-20x or more slowdown of the running app or process while recording, depending on the application and the recording options you select.
 
 The created trace files grow over time and can take significant storage space. Work to trace for the shortest period of time, capturing the program activity of interest and then close the trace as soon as possible.
 
-Once TTD is attached to a process, it cannot be removed from it. Close the app or end the process once TTD recording is complete. For system-critical processes, this will require a reboot of the OS.
+Once TTD attaches to a process, it can't remove itself. Close the app or end the process once TTD recording is complete. For system-critical processes, this action requires a reboot of the OS.
 
-### TTD recordings may contain personally identifiable or security related information
+### TTD recordings might contain personally identifiable or security related information
 
-TTD recordings capture memory contents and may contain personally identifiable or security related information,
-including but not necessarily limited to file paths, registry, memory or file contents. The exact
-information depends on target process activity while it was recorded.
+> [!IMPORTANT]
+> TTD recordings capture memory contents and might contain personally identifiable or security related information, including but not necessarily limited to file paths, registry, memory, or file contents. The exact information depends on target process activity while it was recorded.
 
-## How to download and install the TTD.exe command line utility (Preferred method)
+## Download and install the TTD.exe command line utility (preferred method)
 
-Download the TTD command line utility here - [https://aka.ms/ttd/download](https://aka.ms/ttd/download)
+Download the TTD command line utility from [https://aka.ms/ttd/download](https://aka.ms/ttd/download).
 
-Select *Install* and TTD will download and install. The TTD command is added to the system path and is available for use at the command prompt, when the install completes.
+Select *Install* and TTD downloads and installs. The TTD command is added to the system path and is available for use at the command prompt when the install completes.
+
+> [!TIP]
+> After installation, open a new command prompt and type `ttd.exe -help` to verify the installation succeeded.
 
 If you encounter difficulties installing, see [Troubleshoot installation issues with the App Installer file](/windows/msix/app-installer/troubleshoot-appinstaller-issues).
 
-On some PC's you may need to install the [Microsoft App Installer for Windows 10](https://www.microsoft.com/store/productId/9NBLGGH4NNS1). It is available in the Microsoft Store app in Windows. Windows Package Manager is supported through App Installer starting on Windows 10 1809.
+On some PCs, you might need to install the [Microsoft App Installer for Windows 10](https://www.microsoft.com/store/productId/9NBLGGH4NNS1). It's available in the Microsoft Store app in Windows. Windows Package Manager is supported through App Installer starting on Windows 10 1809.
 
-## How to download and install the TTD.exe command line utility (Offline method)
+## Download and install the TTD.exe command line utility (offline method)
 
 While the preferred installation method is to use the App Installer, you can also download the TTD command line package and extract the files manually. Here are two ways to do it.
 
-### Extract the files from an already installed TTD.exe command line utility
+### Extract the files from an installed TTD.exe command line utility
 
-If you have already installed the TTD command line utility, you can extract the files from the installed location. In PowerShell you would do this to find the installed location:
+If you already installed the TTD command line utility, you can extract the files from the installed location. In PowerShell, run the following command to find the installed location:
 
 ```powershell
 (Get-AppxPackage | where Name -eq 'Microsoft.TimeTravelDebugging').InstallLocation
 ```
 
-From there you can copy all the binaries (*.dll, *.exe, *.sys) to a new location. Here is one way to do this in PowerShell:
+From there, you can copy all the binaries (*.dll, *.exe, *.sys) to a new location. Here's one way to do this in PowerShell:
 
 ```powershell
 robocopy.exe (Get-AppxPackage | where Name -eq 'Microsoft.TimeTravelDebugging').InstallLocation c:\myttd *.exe *.dll *.sys /E /XD AppxMetadata
 ```
 
-Replace "c:\myttd" with the destination of your choice. The result will look something like this (on an x64 machine):
+Replace "c:\myttd" with the destination of your choice. The result looks something like this (on an x64 machine):
 
 ```console
 ls -Recurse c:\myttd
@@ -89,18 +98,18 @@ Mode                 LastWriteTime         Length Name
 -a---           11/9/2023  2:43 PM        1128480 TTDRecordCPU.dll
 ```
 
-Note that the x86 binaries are in a subdirectory. If you do not need to record 32-bit processes this folder can be deleted (and you could add /xd x86 to the robocopy command to avoid copying it in the first place). The ARM64 version doesn't have any subdirectories.
+Note that the x86 binaries are in a subdirectory. If you don't need to record 32-bit processes, you can delete this folder (and you could add `/xd x86` to the robocopy command to avoid copying it in the first place). The ARM64 version doesn't have any subdirectories.
 
-The TTDRecordUI.dll is only needed if you want to use the UI to control recording. If you do not want the UI, you can delete this file.
+The TTDRecordUI.dll file is only needed if you want to use the UI to control recording. If you don't want the UI, you can delete this file.
 
-### Download the TTD.exe command line utility package and extract the files manually
+### Download and manually extract the TTD.exe command line utility package
 
-If you do not want to install the TTD command line utility, you can download the package and extract the files manually. The following
-PowerShell script will:
-* Get the URL for the current version of TTD from https://aka.ms/ttd/download.
-* Download the MSIX bundle.
-* Extract the requested architecture's MSIX from MSIX bundle.
-* Extract the TTD binaries from the MSIX.
+If you don't want to install the TTD command line utility, you can download the package and extract the files manually. The following
+PowerShell script:
+* Gets the URL for the current version of TTD from https://aka.ms/ttd/download.
+* Downloads the MSIX bundle.
+* Extracts the requested architecture's MSIX from the MSIX bundle.
+* Extracts the TTD binaries from the MSIX.
 
 ```powershell
 param(
@@ -167,7 +176,7 @@ if (-not $existingBinaries) {
 }
 ```
 
-Assuming you saved the above script as `Get-Ttd.ps1`, you can run it like this to download the x64 binaries to the c:\myttd directory:
+Assuming you save the preceding script as `Get-Ttd.ps1`, run it like this to download the x64 binaries to the c:\myttd directory:
 
 ```powershell
 md c:\myttd
@@ -175,7 +184,7 @@ cd c:\myttd
 .\Get-Ttd.ps1
 ```
 
-Or you could specify the output directory and architecture:
+Or specify the output directory and architecture:
 
 ```powershell
 .\Get-Ttd.ps1 -OutDir c:\myttd-arm64 -Arch arm64
@@ -183,20 +192,22 @@ Or you could specify the output directory and architecture:
 
 Replace "c:\myttd" or "c:\myttd-arm64" with the destination of your choice.
 
-## How to record a trace using the TTD.exe command line utility
+## Record a trace using the TTD.exe command line utility
 
-There are three ways to record a trace.
+You can record a trace in three ways:
 
-- Launch a process
-- Attach to a process
-- Monitor a process
+| Method | Best for | Example scenario |
+|--------|----------|------------------|
+| **[Launch](#launch-a-process)** | Starting a new process with specific arguments | Recording a command-line tool like ping.exe |
+| **[Attach](#attach-to-a-process)** | Recording an already-running process | Debugging a service or long-running application |
+| **[Monitor](#monitor-a-process)** | Automatically recording every time a process starts | Capturing intermittent issues or startup problems |
 
-Once the process is being recorded, you need to trigger the issue that you wish to debug. You might open a problematic file or click on a specific button in the app to cause the event of interest to occur. When the application being recorded terminates, naturally or by crashing, the trace file will be finalized.
+After you start recording the process, trigger the issue you want to debug. You might open a problematic file or select a specific button in the app to cause the event of interest. When the application you're recording ends, either naturally or by crashing, the trace file is finalized.
 
 > [!TIP]
-> Recording TTD traces requires administrative rights. Typically this is done by running ttd.exe from an administrator command prompt.
+> Recording TTD traces requires administrative rights. Typically, you run ttd.exe from an administrator command prompt.
 
-For more information about recording a time travel trace using WinDbg, see [Time Travel Debugging - Record a trace](time-travel-debugging-record.md).
+For more information about recording a time travel trace by using WinDbg, see [Time Travel Debugging - Record a trace](time-travel-debugging-record.md).
 
 ### Launch a process
 
@@ -204,13 +215,13 @@ For more information about recording a time travel trace using WinDbg, see [Time
 
 Launch and trace the program (default mode).
 
-This is the only mode that allows you to pass arguments to the program. The program will launch with the same privileges as TTD.exe (as an admin). Use `-attach` or `-monitor` to record the program with its normal set of privileges.
+This mode is the only mode that lets you pass arguments to the program. The program launches with the same privileges as TTD.exe (as an admin). Use `-attach` or `-monitor` to record the program with its normal set of privileges.
 
-Including `-launch` is optional, but may be used for clarity.
+Including `-launch` is optional, but you can use it for clarity.
 
-The first unrecognized argument that doesn't start with - or / will be assumed to be an executable path to launch, and any subsequent arguments will be assumed to be the arguments for that program.
+The first unrecognized argument that doesn't start with - or / is assumed to be an executable path to launch, and any subsequent arguments are assumed to be the arguments for that program.
 
-For example, use `TTD.exe notepad.exe` to launch and record notepad. The trace will stop when you close notepad.
+For example, use `TTD.exe notepad.exe` to launch and record Notepad. The trace stops when you close Notepad.
 
 For example usage, see [Scenario usage examples - recording a process](#scenario-usage-examples---recording-a-process).
 
@@ -218,9 +229,9 @@ For example usage, see [Scenario usage examples - recording a process](#scenario
 
 `-attach <PID>`
 
-Attach to a running process specified by process ID. Use TaskManager or the TaskList utility to identify process numbers. For more information, see [Finding the process ID](../debugger/finding-the-process-id.md).
+Attach to a running process specified by process ID. Use Task Manager or the TaskList utility to identify process numbers. For more information, see [Finding the process ID](../debugger/finding-the-process-id.md).
 
-For example, use `TTD.exe -attach 21440 -out C:\traces\MyTraceFile.run` to launch and record the process with and ID of 21440 and save the trace in MyTraceFile.run.
+For example, use `TTD.exe -attach 21440 -out C:\traces\MyTraceFile.run` to launch and record the process with an ID of 21440 and save the trace in MyTraceFile.run.
 
 Make sure the directory exists (`C:\traces` in this example) before running TTD.exe.
 
@@ -230,17 +241,17 @@ For example usage, see [Scenario - Locate and attach to a running process](#scen
 
 `-monitor  <Program>`
 
-The monitor option allows for a program to be monitored and traced each time they are started. To use this option, you must specify a full path to the output location with `-out`.
+The monitor option lets you monitor and trace a program each time it starts. To use this option, you must specify a full path to the output location with `-out`.
 
-To stop monitoring press Ctrl+C.
+To stop monitoring, press Ctrl+C.
 
 The main benefits of monitoring compared to the other methods are:
 
 - You can launch the target app the normal way, no need to figure out the command line to start it.
-- The target app will run with its normal privileges. If you launch the app directly from ttd.exe it will launch elevated and that may change the behavior of the program.
-- It is useful for automation (use a script that monitors the launch of a program and collects a trace).
+- The target app runs with its normal privileges. If you launch the app directly from ttd.exe, it launches elevated and that change might affect the program's behavior.
+- It's useful for automation (use a script that monitors the launch of a program and collects a trace).
 
-The -monitor option can be specified more than once to monitor multiple programs.
+You can specify the -monitor option more than once to monitor multiple programs.
 
 For example usage, see [Scenario usage examples - monitoring processes](#scenario-usage-examples---monitoring-processes).
 
@@ -260,45 +271,50 @@ Display the command line help.
 
 Launch and trace the program (default mode).
 
-This is the only mode that allows you to pass arguments to the program. The `-launch` option must be the last TTD option in the command-line, followed by the program to launch, and any arguments that the program requires. If no mode is specified it will be treated as launch as well. For example `TTD.exe -out C:\traces ping.exe msn.com` is treated as a launch.
+This mode is the only mode that lets you pass arguments to the program. The `-launch` option must be the last TTD option in the command-line, followed by the program to launch, and any arguments that the program requires. If you don't specify a mode, the tool treats it as a launch. For example, `TTD.exe -out C:\traces ping.exe msn.com` is treated as a launch.
 
 `-attach <PID>`
 
-Attach to a running process specified by process ID. Use TaskManager or TaskList utility to identify process IDs. For more information, see [Finding the process ID](../debugger/finding-the-process-id.md).
+Attach to a running process specified by process ID. Use Task Manager or TaskList utility to identify process IDs. For more information, see [Finding the process ID](../debugger/finding-the-process-id.md).
 
 `-monitor <Program>`
 
-Trace programs or services each time they are started (until reboot). To use this option, you must specify a full path to the output location with `-out`.
+Trace programs or services each time they start (until reboot). To use this option, you must specify a full path to the output location with `-out`.
 
 ### Basic command line options
 
 `-out <path>`
 
-Specify a trace file name or a directory. If a directory, the directory must already exist. If a file name, the file name must not exist.
+Specify a trace file name or a directory. If you specify a directory, it must already exist. If you specify a file name, the file name must not exist.
 
 `-noUI`
 
-Disables the UI for manual control of recording.
+Disables the UI for manual control of recording. **Use this option for automation scenarios** where you don't need interactive control.
 
-If this option is not selected a small UI is displayed when recording is active. “Tracing Off” stops tracing and app continues; “Exit App” closes the app which also stops tracing.
+If you don't select this option, a small UI appears when recording is active:
 
 :::image type="content" source="images/ttd-time-travel-command-utility-ui-example.png" alt-text="Screenshot of small two button TTD UI displaying tracing status and an Exit App button.":::
 
+The UI provides two controls:
+
+- **Tracing Off** - Stops tracing and the app continues running
+- **Exit App** - Closes the app and stops tracing
+
 `-accepteula`
 
-Use this option to accept the EULA user license agreement. This option can be used in automation scenarios, after the EULA has been reviewed and accepted.
+Use this option to accept the EULA user license agreement. Use this option in automation scenarios, after you review and accept the EULA.
 
-TTD displays the EULA the first time it is run. Type Y or N to accept the EULA. Once accepted, the ELA will no longer be displayed at startup. If the EULA is not accepted TTD exits, and the EULA will be displayed, the next time TTD is run.
+TTD displays the EULA the first time it runs. Type Y or N to accept the EULA. Once accepted, the EULA no longer appears at startup. If you don't accept the EULA, TTD exits and displays the EULA the next time it runs.
 
 ### Trace control
 
 `-stop <process name> | <PID> | all`
 
-Stop tracing the specified process name, PID or "all" can be specified.
+Stop tracing the specified process name, PID, or "all".
 
 `-wait <timeout>`
 
-Wait for up to the amount of seconds specified for all trace sessions on the system to end. Specify -1 to wait infinitely.
+Wait for up to the specified number of seconds for all trace sessions on the system to end. Specify -1 to wait infinitely.
 
 `-tracingOff`
 
@@ -308,11 +324,11 @@ Starts application with trace recording off. You can use the UI checkbox to turn
 
 `-children`
 
-Record the target as well as any processes created by the target. Each child process will be recorded into its own trace file.
+Record the target process and any processes created by the target. Each child process is recorded into its own trace file.
 
 `-cmdLineFilter "<string>"`
 
-Record the target if its command line contains the string. This option works only with `-monitor` mode. It is useful for situations when the command line argument uniquely identifies the process you are interested in. For example, `-monitor notepad.exe -cmdLineFilter "specialfile.txt"` records notepad.exe only if specialfile.txt appears on the command line.
+Record the target process if its command line contains the string. This option works only with `-monitor` mode. It's useful when the command line argument uniquely identifies the process you're interested in. For example, `-monitor notepad.exe -cmdLineFilter "specialfile.txt"` records notepad.exe only if specialfile.txt appears on the command line.
 
 `-cleanup`
 
@@ -322,51 +338,51 @@ Uninstall process monitor driver.
 
 `-timestampFilename`
 
-Adds a timestamp to the last part of the trace file name. For example, ping_2023-06-17_103116.run.
+Adds a timestamp to the last part of the trace file name. For example, `ping_2023-06-17_103116.run`.
 
-For example to record ping.exe, with a timestamp included in the file name, use this command.
+To record `ping.exe` with a timestamp in the file name, use this command.
 
 ```console
 ttd.exe  -out c:\traces -timestampFilename ping.exe msn.com
 ```
 
-By default a sequential scan is done to find an unused file in the output directory. If ping.exe is recorded the recorder will try ping01.run, ping02.run, etc. until an unused file name is found. For most scenarios this naming method is sufficient. However, if you want to record the same program many times, the default file naming algorithm can become inefficient, when there is large number of existing files.
+By default, the recorder sequentially scans the output directory to find an unused file name. If you record `ping.exe`, the recorder tries `ping01.run`, `ping02.run`, and so on until it finds an unused file name. For most scenarios, this naming method is sufficient. However, if you want to record the same program many times, the default file naming algorithm can become inefficient when a large number of existing files are present.
 
 `-ring`
 
-Trace to a ring buffer. The file size will not grow beyond the limits specified by `-maxFile`. Only the last portion of the recording that fits within the given size, will be saved.
+Traces to a ring buffer. The file size doesn't grow beyond the limits specified by `-maxFile`. Only the last portion of the recording that fits within the given size is saved.
 
 `-maxFile <size>`
 
-Maximum size of the trace file in MB. When in full trace mode the default is 1024GB and the minimum value is 1MB. When in ring buffer mode the default is 2048MB, the minimum value is 1MB, and the maximum value is 32768MB.
+Maximum size of the trace file in MB. When in full trace mode, the default is 1,024 GB and the minimum value is 1 MB. When in ring buffer mode, the default is 2,048 MB, the minimum value is 1 MB, and the maximum value is 32,768 MB.
 
-The default for in-memory ring on 32-bit processes is 256MB.
+The default for in-memory ring on 32-bit processes is 256 MB.
 
 `-maxConcurrentRecordings <count>`
 
-Maximum number of recordings that can be ongoing at any one point in time. If not specified, an unlimited number of recordings can occur simultaneously.
+Maximum number of recordings that can be ongoing at any one point in time. If you don't specify this value, an unlimited number of recordings can occur simultaneously.
 
 `-numVCpu <number>`
 
-Specifies a number of Virtual CPUs to be reserved and used when tracing. This value affects the total memory overhead placed on the guest process' memory by TTD. If not specified then default per platform is: 55 for x64/ARM64 and 32 for x86.
+Specifies the number of virtual CPUs to reserve and use when tracing. This value affects the total memory overhead placed on the guest process' memory by TTD. If you don't specify this value, the default per platform is 55 for x64/ARM64 and 32 for x86.
 
-Change this setting in order to limit the memory impact *only* if you are running out of memory. Changing the numVCpu value to a lower number can severely impact the performance of tracing and should only be done to work around memory usage issues.
+Change this setting to limit the memory impact *only* if you're running out of memory. Lowering the `numVCpu` value can severely impact the performance of tracing and should only be done to work around memory usage issues.
 
-If TTD.exe fails to record, or the .out file indicates a simulation of 0 seconds, using `-numVCpu` may enable the recording to succeed.
+If TTD.exe fails to record, or the `.out` file indicates a simulation of 0 seconds, using `-numVCpu` might enable the recording to succeed.
 
 `-replayCpuSupport <support>`
 
- Specifies what support is expected from the CPUs that will be used to replay the trace. The default setting is recommended for portability of traces between machines but other options may be used to produce small traces files and record faster (depending on the specific instructions used by the target program).
+ Specifies the support expected from the CPUs that replay the trace. The default setting is recommended for portability of traces between machines, but you can use other options to produce smaller trace files and record faster, depending on the specific instructions used by the target program.
 
  `<support>` values
 
 | Value              | Description |
 |--------------------|-------------|
-| `Default`          | Default CPU support, just requires basic commonly-available support in the replay CPU. |
-| `MostConservative` | Requires no special support in the replay CPU. Adequate for traces that will be replayed on a completely different CPU architecture, like an Intel trace on ARM64 CPU. |
-| `MostAggressive`   | Assumes that the replay CPU will be similar and of equal or greater capability than the CPU used to record. |
-|`IntelAvxRequired`  | Assumes that the replay CPU will be Intel/AMD 64-bit CPU supporting AVX. |
-|`IntelAvx2Required` | Assumes that the replay CPU will be Intel/AMD 64-bit CPU supporting AVX2.|
+| `Default`          | Default CPU support, just requires basic commonly available support in the replay CPU. |
+| `MostConservative` | Requires no special support in the replay CPU. Adequate for traces that are replayed on a completely different CPU architecture, like an Intel trace on ARM64 CPU. |
+| `MostAggressive`   | Assumes that the replay CPU is similar and of equal or greater capability than the CPU used to record. |
+|`IntelAvxRequired`  | Assumes that the replay CPU is Intel/AMD 64-bit CPU supporting AVX. |
+|`IntelAvx2Required` | Assumes that the replay CPU is Intel/AMD 64-bit CPU supporting AVX2.|
 
 ### Reducing overhead of tracing
 
@@ -399,11 +415,18 @@ Allows an event to be signaled when tracing initialization is complete.
 
 ## Scenario usage examples - recording a process
 
+Choose a scenario that matches your needs:
+
+- **[Launch and record](#scenario---launch-and-record-a-windows-app)** - Start with a simple Notepad example.
+- **[Launch with parameters](#scenario---launch-and-record-a-windows-app-with-a-passed-parameter)** - Pass arguments to your application.
+- **[Attach to running process](#scenario---locate-and-attach-to-a-running-process)** - Record an already-running application.
+- **[Record parent and children](#scenario---record-a-parent-process-and-its-child-processes)** - Capture multi-process scenarios.
+
 ### Scenario - Launch and record a Windows app
 
-In this scenario notepad is launched and a trace is created.
+In this scenario, you launch Notepad and create a trace.
 
-1. Use the `-launch` option to start notepad and record it.
+1. Use the `-launch` option to start Notepad and record it.
 
 ```console
 C:\TTD> TTD.exe -launch notepad.exe
@@ -413,17 +436,17 @@ notepad.exe(x64) (PID:9960): Process exited with exit code 0 after 12984ms
   Full trace dumped to C:\TTD\notepad01.run
 ```
 
-2. A small application menu is displayed showing that tracing is on.
+1. A small application menu appears, showing that tracing is on.
 
 :::image type="content" source="images/ttd-time-travel-command-utility-ui-example.png" alt-text="Screenshot of TTD UI displaying tracing status and an Exit App button.":::
 
-3. When the application is closed, a trace file is generated. In this example notepad01.run.
+1. When you close the application, it generates a trace file. In this example, the trace file is named notepad01.run.
 
 ### Scenario - Launch and record a Windows app with a passed parameter
 
-In this scenario ping is started, and the address to ping is passed in as a parameter.
+In this scenario, you start ping and pass the address to ping as a parameter.
 
-1. In this example the `-launch` option is omitted as that is the default mode.
+1. In this example, you omit the `-launch` option because it's the default mode.
 
 ```console
 C:\TTD> TTD.exe ping.exe msn.com
@@ -444,15 +467,15 @@ ping.exe(x64) (PID:24044): Process exited with exit code 0 after 3390ms
   Full trace dumped to C:\TTD\ping01.run
 ```
 
-2. When the application is closed, a trace file is generated. In this example ping01.run.
+1. When you close the application, it generates a trace file. In this example, the trace file is named ping01.run.
 
 ### Scenario - Locate and attach to a running process
 
-In this scenario notepad is started, its process ID is located and a trace is created by attaching to the running application
+In this scenario, you start Notepad, find its process ID, and create a trace by attaching to the running application.
 
-1. Start the target app, in this example notepad.
+1. Start the target app, in this example, Notepad.
 
-2. Use TaskList or other methods described in to locate the process ID. For more information, see [Finding the process ID](../debugger/finding-the-process-id.md).
+1. Use TaskList or other methods to find the process ID. For more information, see [Finding the process ID](../debugger/finding-the-process-id.md).
 
 ```console
 C:\TTD> TaskList
@@ -461,7 +484,7 @@ Notepad.exe                  21440 Console                    1     73,020 K
 ...
 ```
 
-3. Using that process ID, use the `-attach` option to attach and record it. Optionally specify a filename for the trace file using `-out`.
+1. Use the process ID with the `-attach` option to attach and record it. Optionally, specify a filename for the trace file with `-out`.
 
 ```console
 C:\TTD> TTD.exe -attach 21440 -out C:\TTD\MyTraceFile.run
@@ -471,14 +494,14 @@ Attaching to 21440
   Full trace dumped to C:\TTD\MyTraceFile.run
 ```
 
-### Scenario - Recording a parent and its children processes
+### Scenario - Record a parent process and its child processes
 
-In this scenario a parent and its children processes will be recorded. As some apps may use many children processes, the family trace file that contains the children, may become quite large.
+In this scenario, you record a parent process and its child processes. Because some apps use many child processes, the family trace file that contains the children might become quite large.
 
 
 1. Specify the `-children` option and the name of the parent app to record.
 
-This is an example of recording cmd.exe launching ping.exe as a child process.
+This example records `cmd.exe` launching `ping.exe` as a child process.
 
 ```console
 ttd.exe -out d:\traces -children cmd.exe /C ping.exe msn.com
@@ -509,15 +532,15 @@ Approximate round trip times in milli-seconds:
 
 ```
 
-2. Multiple trace files are created: one for the parent process and a trace file for each child process. WinDbg only opens one trace file at a time so you will need to run separate instances of WinDbg for each trace, if you want to debug them at the same time.
+1. Multiple trace files are created: one for the parent process and a trace file for each child process. WinDbg opens only one trace file at a time, so you need to run separate instances of WinDbg for each trace if you want to debug them at the same time.
 
 ## Scenario usage examples - monitoring processes
 
 ### Scenario - monitoring for program launches and starting recording
 
-In this scenario the `-monitor` option is used to record all currently running instances as well as future instances of notepad.exe, until system is rebooted or ttd.exe is exited via Ctrl+C. The `-out` option is required for monitor, and the output folder must exist already.
+In this scenario, use the `-monitor` option to record all currently running instances and future instances of notepad.exe until the system reboots or you exit ttd.exe with Ctrl+C. You need the `-out` option for monitor, and the output folder must already exist.
 
-1. Monitor and trace the current, as well as any future instances of notepad.exe.
+1. Monitor and trace the current and future instances of notepad.exe.
 
 ```console
 C:\TTD> TTD.exe -out C:\TTD\ -monitor notepad.exe
@@ -540,13 +563,13 @@ Recording process Notepad.exe(19920)        From parent process explorer.exe(844
 
 ```
 
-2. In this example two instances of notepad.exe were loaded after tracing had started. After the activity of interest was captured, CTRL-C, was used at the command prompt to stop the recording.
+1. In this example, you load two instances of notepad.exe after tracing starts. When you capture the activity of interest, use CTRL-C at the command prompt to stop the recording.
 
 ### Scenario - monitoring two programs for program launches
 
-In this scenario the `-monitor` option is used to monitor and record two applications.
+In this scenario, use the `-monitor` option to monitor and record two applications.
 
-1. Monitor and trace the current, as well as any future instances of notepad.exe and ping.exe.
+1. Monitor and trace the current and future instances of notepad.exe and ping.exe.
 
 ```console
 C:\TTD> TTD.exe -out C:\TTD\ -monitor notepad.exe -monitor ping.exe
@@ -589,74 +612,20 @@ Recording process PING.EXE(364)        From parent process cmd.exe(21796)
   Full trace dumped to C:\TTD\PING02.run
 ```
 
-2. In this example notepad.exe and then ping.exe were loaded after tracing had started. After the activity of interest was captured, CTRL-C, was used at the command prompt to stop the recording.
+1. In this example, you load notepad.exe and then ping.exe after tracing starts. When you capture the activity of interest, use CTRL-C at the command prompt to stop the recording.
 
-### Scenario - Stopping the recording in a second window
+### Tips for working with trace files
 
-In this scenario the activity of interest was captured, and all recording is stopped using `-stop all`. A second command window is used to execute the `-stop all` option.
-
-```console
-C:\TTD> TTD.exe -stop all
-Microsoft (R) TTD 1.01.11
-Release: 1.11.121.0
-Copyright (C) Microsoft Corporation. All rights reserved.
-
-Full trace written to 'C:\TTD\Notepad01.run'
-```
-
-### Scenario - Cleaning up the monitor driver
-
-In this scenario the `-cleanup` option is used to clean up the monitor driver after all recording is complete.
-
-```console
-C:\TTD> TTD.exe -cleanup
-The monitor service is not installed
-Successfully uninstalled the Process Launch Monitor driver
-```
-
-### Additional command line examples
-
-This table highlights some additional command line usage examples. Refer to the [Command line options](#command-line-options) for additional information about the illustrated options.
-
-| Scenario                                          | Command                                                                  |Description |
-|---------------------------------------------------|--------------------------------------------------------------------------|------------|
- Attach to process but do not start recording yet   | `Ttd.exe -tracingoff notepad.exe`                                        | Launches notepad with recording turned off. The recording can be started at any time through the UI.
-Filter by command line                              | `Ttd.exe -cmdlinefilter foo.txt -monitor notepad.exe`                    | Record notepad.exe but only if foo.txt is on the command line when it is launched, placing output in current directory.
-Ring recording                                      | `Ttd.exe -ring -attach 1234`                                             | Records PID 1234 into a trace file capped to 2GB, placing output in the current directory. Older contents in the trace file are overwritten as needed to keep the file under the maximum size. </p> Use `-maxfile` to change the max size. |
-Limit trace file size                               | `Ttd.exe -maxfile 4096 notepad.exe`                                      | Record notepad.exe until the trace file reaches 4GB, placing output in current directory.
-Limit number of recordings that happen at same time | `Ttd.exe -maxconcurrentrecordings 1 -out c:\my\dir -monitor notepad.exe` | Recording is CPU-intensive and in some cases.
-Reduce memory usage in the target process           | `Ttd.exe -numvcpu 8 -monitor w3wp.exe`                                   | Some processes, such as w3wp.exe, set a small quota on the amount of memory it can use. If ttd.exe fails to start recording, use `-numvcpu` to reduce the number of virtual CPUs TTD allocates. Only try this option if ttd.exe is unable to record through other means.
-Choose between trace portability and recording speed / trace file size | `Ttd.exe -replaycpusupport mostaggressive notepad.exe` | By default TTD produces trace files that are portable across a wide range of hardware. Choosing 'mostaggressive' tells TTD it is ok to record a trace which can only be played back on CPUs with the same capabilities as the machine that recorded the trace. In some cases this can substantially improve recording speed and trace file size.
-
-### Automation command line examples
-
-This table highlights some additional command line usage examples that can be useful for the automated use of TTD.exe utility.
-
-| Scenario                                  | Command                                                | Description |
-|-------------------------------------------|--------------------------------------------------------|-------------|
-Disable UI                                  |`Ttd.exe -noui -accepteula notepad.exe`                             | Record notepad.exe, placing output into current directory, without showing the UI.
-Wait for recorder to start programmatically | `Ttd.exe -accepteula -oninitcompleteevent ttd_notepad notepad.exe` | Create a Win32 named event 'ttd_notepad' and launch notepad.exe. TTD will signal 'ttd_notepad' when recording is initialized. Automation can wait on the event before proceeding with the behavior they want to record.
-Preserve target's exit code                 | `Ttd.exe -accepteula -passthroughexit ping.exe msn.com`            | Records ping.exe, placing output in current directory. Ttd.exe's exit code will be the same as ping.exe's exit code.
-Wait for recording to end                   | `Ttd.exe -accepteula -wait 30`                                     | After recording is stopped, wait up to 30 seconds for TTD to finish writing trace file to disk. Use `-wait -1` to wait indefinitely.
-
-All of these examples use the `-accepteula` option to make sure that the automation is not blocked by the EULA confirmation dialog.
-
-## Working with the generated trace file
-
-For information on working with a trace and instructions on how to replay time travel traces, and navigate forwards and backwards in time, see [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md).
-
-### Tips on working with trace files
-
-- When sharing traces with others you only have to share the .run file. The index file (.idx) can be as large as the .run file and is automatically created when the trace file is loaded by WinDbg.
-- When collaborating with others, pass on any relevant trace positions related to the problem at hand. The collaborator can use the `!tt x:y` command to move to that exact point in time in the execution of the code. Time position ranges can be included in bug descriptions to track where the possible issue may be occurring.
-- When reporting an issue with TTD, if you supply the .run file, supply the .out file as well. This allows for the confirmation that the recording process worked properly.
+- When sharing traces with others, share only the .run file. The index file (.idx) can be as large as the .run file and is automatically created when WinDbg loads the trace file.
+- When collaborating with others, share any relevant trace positions related to the problem. The collaborator can use the `!tt x:y` command to move to that exact point in time in the execution of the code. You can include time position ranges in bug descriptions to track where the possible issue occurs.
+- When reporting an issue with TTD, if you supply the .run file, supply the .out file as well. This addition allows for the confirmation that the recording process worked properly.
 - Trace files (.run) compress well.
 
-### Troubleshooting TTD.exe
+### Troubleshooting TTD.exe recording issues
 
-There are some cases where trace file errors can occur. For more information, see [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md).
+Trace file errors can occur. For more information, see [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md).
 
-The .out file can be used for troubleshooting. The example out file shows a functional trace, ending with an exit code of zero.
+You can use the .out file for troubleshooting. The example out file shows a functional trace, ending with an exit code of zero.
 
 ```console
 Microsoft (R) TTDRecord 1.01.11
@@ -705,17 +674,15 @@ Tracing completed at: Tue May  9 00:07:34 2023 (UTC) Mon May  8 17:07:34 2023 (L
 
 Most of the .out file content is used internally by the time travel debugging team to troubleshoot recording errors. The following information can be helpful to others that are working with the trace file.
 
-- Some error messages are only displayed in the .out file and may be used to the determine the specifics of the failure.
-- Indication of wall clock time the recording started / stopped
+- Some error messages are only displayed in the .out file and might help you determine the specifics of the failure.
+- Indication of wall clock time the recording started and stopped
 - How long the recording session lasted (simulation time)
 - Whether the recording is a launch (with command line) or attach recording
 - The OS version
 
-## See Also
+## Related content
 
-[Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-
-[Time Travel Debugging - Record a trace](time-travel-debugging-record.md)
-
-[Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
-
+- **Getting started**: [Time Travel Debugging - Overview](time-travel-debugging-overview.md) - Learn the fundamentals of TTD.
+- **Recording with WinDbg**: [Time Travel Debugging - Record a trace](time-travel-debugging-record.md) - Use the WinDbg UI to record traces.
+- **Analyzing traces**: [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md) - Debug your recorded traces in WinDbg.
+- **Troubleshooting**: [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md) - Solve common recording issues.
