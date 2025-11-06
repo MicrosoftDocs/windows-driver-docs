@@ -30,4 +30,4 @@ See "Audio user-mode reliability" on [Audio measures](audio-measures.md)
 
 ### Final calculation
 
-*Measure failure rate* = # of machines with atleast *one Render Stream init failure / Total* # *machines with a stream init event*
+*Measure failure rate* = # of machines with at least *one Render Stream init failure / Total* # *machines with a stream init event*
