@@ -1,13 +1,23 @@
 ---
-title: PnPUtil Examples
-description: PnPUtil Examples
-ms.date: 12/12/2024
+title: PnPUtil Command Examples for Windows Driver Management
+description: "Learn how to use PnPUtil commands to add, delete, enable, disable, and manage Windows drivers and devices with practical examples."
+ms.date: 11/05/2025
 ms.topic: how-to
 ---
 
-# PnPUtil Examples
+# PnPUtil examples
 
-This topic provides examples on how to use the PnPUtil tool.
+This article provides practical PnPUtil command examples for managing Windows drivers and devices. Each example includes the exact syntax and expected output to help you immediately apply these commands.
+
+**In this article, you'll learn how to:**
+- Add and install driver packages
+- Enable and disable devices
+- Enumerate drivers and devices on your system
+- Troubleshoot driver issues
+
+## Prerequisites
+
+Administrator rights are required for most PnPUtil commands.
 
 ## /add-driver
 
@@ -45,13 +55,13 @@ pnputil /delete-driver oem1.inf /force
 
 ## /disable-device
 
-Disable device specified by device instance ID
+Disable the device specified by device instance ID
 
 ```console
 pnputil /disable-device "USB\VID_045E&PID_00DB\6&870CE29&0&1"
 ```
 
-Disable all devices with specific hardware/compatible ID
+Disable all devices with a specific hardware or compatible ID
 
 ```console
 pnputil /disable-device /deviceid "USB\Class_03"
@@ -237,13 +247,13 @@ pnputil /restart-device /class "USB" /bus "PCI"
 
 ## /scan-devices
 
-Scan the system for any device hardware changes
+Scan the system for any device hardware changes. Use this command after connecting new hardware to force Windows to detect it.
 
 ```console
 pnputil /scan-devices
 ```
 
-Administrator rights are required to run the pnputil /scan-devices command.
+After scanning, use /enum-devices /connected to verify your new device was detected.
 
 ## /enum-devicetree
 
@@ -288,7 +298,7 @@ pnputil /enum-containers
 Enumerate specific device container
 
 ```console
-pnputil /enum-containers /containerid ""{00000000-0000-0000-ffff-ffffffffffff}"
+pnputil /enum-containers /containerid "{00000000-0000-0000-ffff-ffffffffffff}"
 ```
 
 Enumerate all connected device containers and associated devices
@@ -304,7 +314,13 @@ Enumerate all disconnected device containers, associated devices and output to a
 pnputil /enum-containers /disconnected /devices /format xml /output-file disconnecteddevices.xml
 ```
 
-### See also
+## Troubleshooting
+
+- Verify you're running the command prompt as Administrator.
+- Check the PnPUtil Command Syntax for correct parameter format.
+- Use `/enum-devices /problem` to identify device issues.
+
+## Related content
 
 [PnPUtil](pnputil.md)
 
