@@ -57,17 +57,17 @@ For the purposes of updating device firmware, the device firmware can be assigne
 
 Your system must meet these requirements to be compatible with Windows firmware updates:
 
-1. **Implement UpdateCapsule and QueryCapsuleCapabilities**
+- **Implement UpdateCapsule and QueryCapsuleCapabilities**
    
    Required: [UEFI specification 2.8, section 8.5.3](https://uefi.org/specifications)
    
    UpdateCapsule passes the firmware update payload between Windows and the platform firmware.
 
-2. **Support firmware updates initiated by Windows**
+- **Support firmware updates initiated by Windows**
    
    System firmware and some device firmware must be updatable using this process. Your firmware code must recognize a firmware update payload passed to UpdateCapsule and initiate the update process.
 
-3. **Specify a Firmware Resource in the EFI System Resource Table (ESRT)**
+- **Specify a Firmware Resource in the EFI System Resource Table (ESRT)**
    
    The Firmware Resource enables Windows to:
    - Surface a device instance with a Hardware ID

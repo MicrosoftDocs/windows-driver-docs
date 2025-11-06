@@ -35,7 +35,7 @@ To capture a live kernel memory dump by using Task Manager, complete the followi
 
 1. Right-click the process and select **Create live kernel memory dump file**.
 
-1. From the pull down menu, select either a **Full live kernel memory dump** or a **Kernel Stacks memory dump**.
+1. From the pull-down menu, select either a **Full live kernel memory dump** or a **Kernel Stacks memory dump**.
 
 :::image type="content" source="images/task-manager-live-dump-ui.png" alt-text="Screenshot of Task Manager showing the System process with a context menu displaying Full live kernel memory dump and Kernel Stacks memory dump options.":::
 

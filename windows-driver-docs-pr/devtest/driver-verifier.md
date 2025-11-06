@@ -40,14 +40,17 @@ For information about changes in Driver Verifier for Windows 10 and previous ver
 Use Driver Verifier throughout your driver development and testing process:
 
 ### Early development
+
 - **Find problems early** in the development cycle when they're easier and less costly to correct
 - **Prevent costly delays** by catching issues before they reach production
 
 ### Troubleshooting
+
 - **Debug test failures** and computer crashes quickly
 - **Identify root causes** of driver-related system instability
 
 ### Testing and deployment
+
 - **Monitor driver behavior** when deploying for testing with WDK, Visual Studio, and [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) (Windows HLK)
 - **Ensure compatibility** with [Windows Hardware Certification Kit](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) requirements
 
@@ -67,22 +70,14 @@ Run Driver Verifier only on test computers, or on computers that you're testing 
 
    You can also choose **Create custom settings** to select from predefined settings, or to select individual options. For more information, see [Driver Verifier options and rule classes](driver-verifier-options.md) and [Selecting Driver Verifier Options](selecting-driver-verifier-options.md).
 
-1. Under **Select what drivers to verify**, choose the option that best fits your testing scenario:
+1. Under **Select what drivers to verify**, choose one of the selection schemes described in the following table:
 
-   ### Quick Selection Options
-   - **Automatically select unsigned drivers** - Perfect for testing on systems that don't require signed drivers
-   - **Automatically select drivers built for older versions of Windows** - Ideal for compatibility testing with newer Windows versions
-   - **Automatically select all drivers installed on this computer** - Maximum coverage for comprehensive system testing
-
-   ### Custom Selection
-   - **Select driver names from a list** - **Recommended for most scenarios** because you can:
-     - Focus testing on specific drivers you're developing
-     - Get detailed tracking with Enhanced I/O Verification across driver stacks
-     - Maximize memory corruption detection when testing single drivers
-     - Optimize Special Pool and I/O Verification effectiveness
-
-   > [!TIP]
-   > For performance testing or maximum resource allocation, select a single driver. For comprehensive integration testing, select the entire device stack.
+    | Option | Recommended use |
+    | ------ | --------------- |
+    | **Automatically select unsigned drivers** | Useful for testing on computers that are running versions of Windows that don't require signed drivers. |
+    | **Automatically select drivers built for older versions of Windows** | Useful for testing driver compatibility with newer versions of Windows. |
+    | **Automatically select all drivers installed on this computer** | Provides maximum coverage in terms of the number of drivers that are tested on a system. This option is useful for test scenarios where a driver can interact with other devices or drivers on a system. <br><br> This option can also exhaust the resources available for Special Pool and some resource tracking. Testing all drivers can also adversely affect system performance. |
+    | **Select driver names from a list** | In most cases, you want to specify which drivers to test.<br><br>Selecting all drivers in a device stack allows the [Enhanced I/O Verification](enhanced-i-o-verification.md) option to track objects and check compliance because an I/O request packet (IRP) is passed between each of the drivers in the stack, which allows for a greater level of detail to be provided when an error is detected.<br><br>Select a single driver if you're running a test scenario that measures system or driver performance metrics, or if you want to allocate the greatest number of resources available for detecting memory corruption or resource tracking issues (such as deadlocks or mutexes). The [Special Pool](special-pool.md) and [I/O Verification](i-o-verification.md) options are more effective when used on one driver at a time. |    
 
 1. If you chose **Select driver names from a list**, select **Next**, then select one or more specific drivers.
 
@@ -116,7 +111,7 @@ Choose your preferred method to control Driver Verifier:
 
 For each of the following actions, you can use Driver Verifier Manager or enter a command line.
 
-**To stop or reset Driver Verifier**
+To stop or reset Driver Verifier
 
 1. In **Driver Verifier Manager**, select **Delete existing settings**, then select **Finish**.
 
@@ -130,7 +125,7 @@ For each of the following actions, you can use Driver Verifier Manager or enter 
 
 1. Restart the computer.
 
-**To view Driver Verifier statistics**
+To view Driver Verifier statistics
 
 In **Driver Verifier Manager**, select **Display information about the currently verified drivers**, then select **Next**. Continuing to select **Next** displays additional information.
 
@@ -142,8 +137,7 @@ In **Driver Verifier Manager**, select **Display information about the currently
   verifier /query
   ```
 
-
-**To view Driver Verifier settings**
+To view Driver Verifier settings
 
 In **Driver Verifier Manager**, select **Display existing settings**, then select **Next**.
 
@@ -211,5 +205,6 @@ Now that you understand the basics of Driver Verifier, explore these related top
 - **[Debugging Tools for Windows](../debugger/index.md)** - Set up kernel debugging for Driver Verifier
 
 ### Get Help
+
 - **[Driver Verifier Command Syntax](verifier-command-line.md)** - Complete command reference
 - **[Controlling Driver Verifier](controlling-driver-verifier.md)** - Advanced control techniques

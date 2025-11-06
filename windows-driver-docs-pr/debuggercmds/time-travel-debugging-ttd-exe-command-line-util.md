@@ -378,7 +378,7 @@ If TTD.exe fails to record, or the `.out` file indicates a simulation of 0 secon
 
 | Value              | Description |
 |--------------------|-------------|
-| `Default`          | Default CPU support, just requires basic commonly-available support in the replay CPU. |
+| `Default`          | Default CPU support, just requires basic commonly available support in the replay CPU. |
 | `MostConservative` | Requires no special support in the replay CPU. Adequate for traces that are replayed on a completely different CPU architecture, like an Intel trace on ARM64 CPU. |
 | `MostAggressive`   | Assumes that the replay CPU is similar and of equal or greater capability than the CPU used to record. |
 |`IntelAvxRequired`  | Assumes that the replay CPU is Intel/AMD 64-bit CPU supporting AVX. |
