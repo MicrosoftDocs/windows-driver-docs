@@ -57,5 +57,5 @@ Find your target Windows version in the first column, then read across to see th
 
 ## Related content
 
-[Introduction to NDIS 6.89](windows-hardware/drivers/network/introduction-to-ndis-6-89)
-[Overview of NDIS Support for Header Versions](windows-hardware/drivers/network/overview-of-ndis-support-for-header-versions)
+[Introduction to NDIS 6.89](introduction-to-ndis-6-89)
+[Overview of NDIS Support for Header Versions](overview-of-ndis-support-for-header-versions)

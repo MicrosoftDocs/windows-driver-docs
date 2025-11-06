@@ -32,7 +32,7 @@ With message signaled interrupt (MSI) support, a NIC can also interrupt the asso
 
 The following figure illustrates the levels of hardware support for RSS.
 
-:::image type="content" source="images/rss-hw.png" alt-text=alt-text="Screenshot of RSS hardware support levels showing hash calculation with single queue, multiple queues, and message signaled interrupts.":::
+:::image type="content" source="images/rss-hw.png" alt-text="Screenshot of RSS hardware support levels showing hash calculation with single queue, multiple queues, and message signaled interrupts.":::
 
 Hardware support for RSS comes in three levels:
 

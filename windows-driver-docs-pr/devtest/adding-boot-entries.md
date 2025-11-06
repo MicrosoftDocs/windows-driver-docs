@@ -33,7 +33,7 @@ Before you begin, ensure you have:
 For more information about preparing your system, see [Editing Boot Options](./editing-boot-options.md).
 
 > [!WARNING]
-> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options could render your computer inoperable. As a safer alternative for basic boot settings, consider using the System Configuration utility (MSConfig.exe). For more information, see [How to open MSConfig in Windows 10](link-to-msconfig-article).
+> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options could render your computer inoperable. As a safer alternative for basic boot settings, consider using the System Configuration utility (MSConfig.exe). 
 
 ## Adding a new boot entry
 

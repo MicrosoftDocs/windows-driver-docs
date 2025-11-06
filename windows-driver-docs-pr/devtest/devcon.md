@@ -33,7 +33,7 @@ This tool is particularly useful for automating device management tasks, testing
 
 Ready to start managing devices with DevCon? Follow these steps:
 
-1. **Download and install** the Windows Driver Kit (WDK) from [Windows Hardware Downloads](/download-the-wdk).
+1. **Download and install** the Windows Driver Kit (WDK) from [Windows Hardware Downloads](/windows-hardware/drivers/download-the-wdk).
 2. **Navigate** to the installation directory (typically `C:\Program Files (x86)\Windows Kits\10\Tools\[version]\x64\`).
 3. **Open Command Prompt** as Administrator.
 4. **Run your first command**: `devcon find *` to list all devices.
@@ -42,7 +42,7 @@ For detailed installation paths and examples, see the sections below.
 
 ## Where to download DevCon
 
-DevCon (Devcon.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see [Windows Hardware Downloads](/download-the-wdk).
+DevCon (Devcon.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see [Windows Hardware Downloads](/windows-hardware/drivers/download-the-wdk).
 
 **Windows Driver Kit (WDK) 10 version** (installation path)
 

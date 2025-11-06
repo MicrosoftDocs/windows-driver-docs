@@ -9,17 +9,17 @@ ms.custom: sfi-image-nochange
 
 # Find the process ID
 
-Windows assigns each running process a unique decimal number called the process ID (PID). Use this number in many ways, such as specifying the process when attaching a debugger to it.
+Windows assigns each running process a unique decimal number called the process ID (PID). You use this number in many ways, such as specifying the process when attaching a debugger to it.
 
-**In this article, you'll learn how to find a process ID using:**
+In this article, you'll learn how to find a process ID using:
 
-- [Task Manager](#task-manager) - Quick visual method
+- [Task Manager](#to-find-a-pid-using-task-manager) - Quick visual method
 - [tasklist command](#the-tasklist-command) - Command-line option
 - [TList utility](#tlist-utility) - Advanced debugging tool
 - [PowerShell Get-Process](#powershell-get-process-command) - Automation-friendly
 - [Debugger .tlist command](#the-tlist-debugger-command) - For active debugging sessions
 
-**To find a PID using Task Manager**
+## To find a PID using Task Manager**
 
 1. Open Task Manager by selecting Ctrl+Alt+Delete, then select **Task Manager**.
 2. Select **More details** to expand the information displayed (Windows only).
@@ -31,7 +31,7 @@ You can select any column name to sort, or right-click a process name for more o
 
 Some kernel errors might cause delays in Task Manager's graphical interface.
 
-## The **tasklist** command
+## The tasklist command
 
 Use the built-in Windows **tasklist** command from a command prompt to display all processes, their PIDs, and a variety of other details.
 
