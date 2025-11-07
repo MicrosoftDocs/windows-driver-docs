@@ -2,15 +2,16 @@
 title: Device Power States
 description: Device power states
 keywords: ["device power states WDK kernel", "power states WDK kernel", "states WDK power management", "Dx names WDK power management", "low power modes WDK kernel", "power saving modes WDK kernel", "continuous power WDK kernel", "delays WDK power management"]
-ms.date: 11/08/2024
+ms.date: 11/05/2025
 ms.topic: concept-article
+ai-usage: ai-assisted
 ---
 
 # Device power states
 
-A device power state describes the power state of a device in a computer, independently of the other devices in the computer. Device power states are named D0, D1, D2, and D3. D0 is the fully on state, and D1, D2, and D3 are low-power states. The state number is inversely related to power consumption: higher numbered states use less power. Starting with Windows 8, the D3 state is divided into two substates, D3hot and D3cold.
+A device power state describes the power state of a device in a computer, independently of the other devices in the computer. Device power states are named D0, D1, D2, and D3. D0 is the fully on state, and D1, D2, and D3 are low-power states. The state number is inversely related to power consumption: higher numbered states use less power. Starting with Windows 8, the D3 state is divided into two substates, D3hot and D3cold.
 
-Device power states are characterized by the following attributes:
+The following attributes characterize device power states:
 
 - Power consumption: How much power does the device use?
 
@@ -42,21 +43,21 @@ Like the system, a device can transition from the working state (D0) to any low-
 
 ![diagram illustrating the valid device power state transitions.](images/dxpostates.png)
 
-This graph shows the subdivision of D3 into D3hot and D3cold. D3hot and D3cold are defined starting with Windows 8. All devices are required to support the D0 state and D3hot substate. The other states shown in the diagram are optional.
+This graph shows the subdivision of D3 into D3hot and D3cold. D3hot and D3cold are defined starting with Windows 8. All devices are required to support the D0 state and D3hot substate. The other states shown in the diagram are optional.
 
-In the preceding graph, the transition from D3hot to D3cold is the only direct transition between device low-power states. All other transitions between low-power states require an intermediate transition to D0, which allows the device driver to configure the device hardware, as required, either to enter the next low-power state or to stay in D0. However, a device exits D3hot and enters D3cold when power to the device is shut off, which requires no intervention from the device driver. This driver does any necessary configuration of the device hardware before the device enters D3hot; no additional configuration is required to prepare the device for the transition from D3hot to D3cold. For more information, see [Supporting D3cold in a Driver](supporting-d3cold-in-a-driver.md).
+In the preceding graph, the transition from D3hot to D3cold is the only direct transition between device low-power states. All other transitions between low-power states require an intermediate transition to D0, which allows the device driver to configure the device hardware, as required, either to enter the next low-power state or to stay in D0. However, a device exits D3hot and enters D3cold when power to the device is shut off, which requires no intervention from the device driver. This driver does any necessary configuration of the device hardware before the device enters D3hot; no other configuration is required to prepare the device for the transition from D3hot to D3cold. For more information, see [Supporting D3cold in a Driver](supporting-d3cold-in-a-driver.md).
 
 ## PCI Root Port to endpoint D-state mapping
 
-On Windows 10 systems, the overall platform power state depends on the power states (D-states) of SoC (System on Chip) integrated devices, including the PCI Root Ports. Depending on the platform being developed, the D-state requirements for PCI Root Ports may vary for each platform power state. OEMs are encouraged to refer to the IHV platform-specific documentation for platform and device power state requirements.  
+On Windows 10 systems, the overall platform power state depends on the power states (D-states) of SoC (System on Chip) integrated devices, including the PCI Root Ports. Depending on the platform you're developing, the D-state requirements for PCI Root Ports might vary for each platform power state. Refer to the IHV platform-specific documentation for platform and device power state requirements.  
 
-The table below enumerates the power state mapping of PCI Root Ports and its attached endpoints. The D-states of endpoints listed below must be achieved in order for the Root Port to enter the target D-state.
+The following table shows the power state mapping of PCI Root Ports and their attached endpoints. The D-states of endpoints listed in the table must be achieved for the Root Port to enter the target D-state.
 
 | Root Port Target D-State | Endpoint D-State |
 |--|--|
 | D0 | D0, D0:F1 |
 | D0:F1 | D3hot |
-| D3hot | D3cold (see note below) |
+| D3hot | D3cold (see the following note) |
 
 > [!NOTE]
-> PCI D3cold power state requires BIOS and device driver support. If support is missing, the PCI endpoint will only be able to achieve D3Hot. For more information, see [Supporting D3Cold in a driver](./supporting-d3cold-in-a-driver.md).
+> PCI D3cold power state requires BIOS and device driver support. If support is missing, the PCI endpoint can only achieve D3Hot. For more information, see [Supporting D3Cold in a driver](./supporting-d3cold-in-a-driver.md).

@@ -1,18 +1,18 @@
 ---
-title: Developer Documentaton for Display, Graphics, and Compute Accelerator Drivers
+title: Developer Documentation for Display, Graphics, and Compute Accelerator Drivers
 description: Documentation to develop display device drivers, graphics device drivers, and compute accelerator device drivers
 keywords:
 - display driver development WDK , Windows
 - graphics driver development WDK , Windows
 - compute accelerator driver development WDK, Windows
 - display miniport drivers , WDK , Windows
-ms.date: 11/21/2024
+ms.date: 11/05/2025
 ms.topic: concept-article
 ---
 
 # Developer documentation for display, graphics, and compute accelerator drivers
 
-Today's graphics and display drivers are developed on the [Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md).
+Developers create graphics and display drivers by using the [Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md).
 
 Compute accelerator drivers use the [Microsoft Compute Driver Model](mcdm.md) (MCDM), which is a subset of WDDM 2.0+.
 

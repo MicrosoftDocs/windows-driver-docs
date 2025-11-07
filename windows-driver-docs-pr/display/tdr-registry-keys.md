@@ -11,7 +11,7 @@ keywords:
 - WDK display development
 - TDR tests, WHLK
 - TDR tests, Windows Hardware Lab Kit
-ms.date: 10/04/2024
+ms.date: 11/05/2025
 ms.topic: concept-article
 ---
 
@@ -25,10 +25,10 @@ The [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) (WHLK) contains TDR-
 
 ## TDR registry keys for testing and debugging
 
-Developers can use the following TDR-related registry keys for testing or debugging purposes *only during the driver development process*.
+Use the following TDR-related registry keys for testing or debugging purposes *only during the driver development process*.
 
 > [!IMPORTANT]
-> We recommend that end users not manipulate these registry keys. They should also not be manipulated by applications outside of targeted testing or debugging during driver development.
+> End users shouldn't manipulate these registry keys. Applications shouldn't manipulate these registry keys outside of targeted testing or debugging during driver development.
 
 ### TdrLevel
 
@@ -63,7 +63,7 @@ ValueData : Number of seconds to delay. The default value is 2 seconds.
 
 ### TdrDdiDelay
 
-Specifies the number of seconds that the OS allows threads to leave the driver. After a specified time, the OS bug-checks the computer with the code VIDEO_TDR_FAILURE (0x116).
+Specifies the number of seconds that the OS allows threads to leave the driver. After the specified time, the OS bug-checks the computer with the code VIDEO_TDR_FAILURE (0x116).
 
 ```registry
 KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
@@ -103,7 +103,7 @@ ValueData : Number of seconds before crashing. The default value is 60 seconds.
 
 ### TdrLimitCount
 
-Specifies the default number of TDRs (0x117) that are allowed during the time specified by the **TdrLimitTime** key without crashing the computer.
+Specifies the default number of TDRs (0x117) that the system allows during the time specified by the **TdrLimitTime** key without crashing the computer.
 
 ```registry
 KeyPath   : HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\GraphicsDrivers
