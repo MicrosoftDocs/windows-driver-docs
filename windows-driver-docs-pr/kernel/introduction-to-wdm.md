@@ -2,7 +2,7 @@
 title: Introduction to WDM
 description: To allow driver developers to write device drivers that are source-code compatible across all Microsoft Windows operating systems, the Windows Driver Model (WDM) was introduced. Kernel-mode drivers that follow WDM rules are called WDM drivers.
 keywords: ["WDM WDK kernel", "Windows Driver Model WDK kernel", "WDM drivers WDK kernel", "Wdm.h", "Ntddk.h", "WDM drivers WDK kernel , about WDM drivers"]
-ms.date: 11/08/2024
+ms.date: 11/05/2025
 ms.topic: concept-article
 ---
 
@@ -11,15 +11,15 @@ ms.topic: concept-article
 > [!IMPORTANT]
 > This section contains guidance on WDM drivers, which is no longer the recommended driver model. For guidance on choosing a driver model, see [Choosing a driver model](../gettingstarted/choosing-a-driver-model.md).
 
-To allow driver developers to write device drivers that are source-code compatible across all Microsoft Windows operating systems, the *Windows Driver Model* (WDM) was introduced. Kernel-mode drivers that follow WDM rules are called *WDM drivers*.
+The *Windows Driver Model* (WDM) was introduced to enable driver developers to write device drivers that are source-code compatible across all Microsoft Windows operating systems. Kernel-mode drivers that follow WDM rules are called *WDM drivers*.
 
-All WDM drivers must do the following items:
+All WDM drivers must do the following tasks:
 
-- Include Wdm.h, not Ntddk.h. (Wdm.h is a subset of Ntddk.h.)
+- Include *Wdm.h*, not *Ntddk.h*. (*Wdm.h* is a subset of *Ntddk.h*.)
 
 - Be designed as a bus driver, a function driver, or a filter driver, as described in [Types of WDM Drivers](types-of-wdm-drivers.md).
 
-- [Create device objects](creating-a-device-object.md)
+- [Create device objects](creating-a-device-object.md).
 
 - Support [Plug and Play (PnP)](introduction-to-plug-and-play.md).
 
@@ -31,4 +31,4 @@ All WDM drivers must do the following items:
 
 If you're writing a new driver, consider using the [Kernel-Mode Driver Framework](../wdf/index.md) (KMDF). KMDF provides interfaces that are simpler to use than WDM interfaces.
 
-Don't write a WDM driver if the driver will be inserted into a stack of non-WDM drivers. Read the documentation for device type-specific Microsoft-supplied drivers to determine how new drivers must interface with Microsoft-supplied drivers. For more information, see [Device and Driver Technologies](../index.yml).
+Don't write a WDM driver if the driver is part of a stack of non-WDM drivers. Read the documentation for device type-specific Microsoft-supplied drivers to determine how new drivers must interface with Microsoft-supplied drivers. For more information, see [Device and Driver Technologies](../index.yml).
