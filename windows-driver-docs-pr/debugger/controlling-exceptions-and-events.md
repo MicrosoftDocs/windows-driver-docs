@@ -284,7 +284,7 @@ The following exceptions' default handling status is always "Not Handled". Be ca
 <td align="left"><p>Second-chance break</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>chhc</strong></p></td>
+<td align="left"><p><strong>ch<br>hc</strong></p></td>
 <td align="left"><p>Invalid handle</p></td>
 <td align="left"><p>Break</p></td>
 </tr>
