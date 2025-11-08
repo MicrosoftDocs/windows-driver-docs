@@ -1,6 +1,6 @@
 ---
 title: WppAutoLogTrace function
-description: For internal use only.
+description: The WppAutoLogTrace function is for internal use only.
 ms.date: 11/07/2025
 keywords: ["WppAutoLogTrace function"]
 topic_type:
@@ -17,7 +17,7 @@ api_location:
 
 # WppAutoLogTrace function
 
-This function is for internal use only.
+The WppAutoLogTrace function is for internal use only.
 
 ## Syntax
 

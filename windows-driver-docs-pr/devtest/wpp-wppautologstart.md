@@ -1,6 +1,6 @@
 ---
 title: WppAutoLogStart function
-description: For internal use only.
+description: The WppAutoLogStart function is for internal use only.
 ms.date: 11/07/2025
 keywords: ["WppAutoLogStart function"]
 topic_type:
@@ -17,7 +17,7 @@ api_location:
 
 # WppAutoLogStart function
 
-This function is for internal use only.
+The WppAutoLogStart function is for internal use only.
 
 ## Syntax
 

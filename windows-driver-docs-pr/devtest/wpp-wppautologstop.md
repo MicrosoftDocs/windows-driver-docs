@@ -1,6 +1,6 @@
 ---
 title: WppAutoLogStop function
-description: For internal use only.
+description: The WppAutoLogStop function is for internal use only.
 ms.date: 11/07/2025
 keywords: ["WppAutoLogStop function"]
 topic_type:
@@ -17,7 +17,7 @@ api_location:
 
 # WppAutoLogStop function
 
-This function is for internal use only.
+The WppAutoLogStop function is for internal use only.
 
 ## Syntax
 
