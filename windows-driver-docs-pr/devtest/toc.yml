@@ -2263,6 +2263,14 @@
       href: wpp-preprocessor.md
     - name: Tracing and Diagnosability for WDF Drivers
       href: tracing-and-diagnosability-for-wdf-drivers.md
+    - name: WPP AutoLog API Reference
+      items:
+      - name: WppAutoLogStart function
+        href: wpp-wppautologstart.md
+      - name: WppAutoLogStop function
+        href: wpp-wppautologstop.md
+      - name: WppAutoLogTrace function
+        href: wpp-wppautologtrace.md
   - name: Software Tracing FAQ
     items:
     - name: Getting Started with Software Tracing
