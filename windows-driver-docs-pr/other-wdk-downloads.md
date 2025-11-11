@@ -11,13 +11,16 @@ ms.topic: feature-availability
 
 # Windows Driver Kit Archive
 > [!IMPORTANT]
-> This Archive contains links to earlier WDK releases that are not serviced or supported by Microsoft. Some installers may be susceptible to security vulnerabilities (including [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187)). These are not recommended for production driver development.  
-> To develop Windows drivers, always use the [latest WDK version](https://learn.microsoft.com/windows-hardware/drivers/download-the-wdk).
+> This Archive contains links to earlier WDK releases that are not serviced or supported by Microsoft. Some installers may be susceptible to security vulnerabilities (including [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187)). These are not recommended for production driver development.
+>
+> To develop Windows drivers, always use the [latest WDK version](download-the-wdk.md).
 
 
 ## Legacy WDK Releases
+
 The following table lists legacy WDK releases, their compatibility and support status. Use these only for reference or non-production scenarios
-| Windows Version         | Build Number   | Supported Visual Studio | [WDK](#) | [EWDK](#) | [NuGet](#) | [SDK](#) | WDK Susceptible to CVE-2024-29187 | Comments |
+
+| Windows Version         | Build Number   | Supported Visual Studio | WDK | EWDK | NuGet | SDK | WDK Susceptible to CVE-2024-29187 | Comments |
 |------------------------|---------------|------------------------|----------|-----------|------------|----------|-------------------------------|----------|
 | Windows 11 25H2 (Ge)   | 26100         | VS 2022                | [WDK](https://go.microsoft.com/fwlink/?linkid=2335869) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2335681) | [NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.26100.6584) | [SDK](https://go.microsoft.com/fwlink/?linkid=2338977) | No | This is the primary WDK recommended for driver development |
 | Windows 11 26H1 (Br)   | 28000.1       | VS 2022                | [WDK](https://go.microsoft.com/fwlink/?linkid=2335869) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2335681) | [NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.26100.6584) | [SDK](https://go.microsoft.com/fwlink/?linkid=2338977) | No | 26H1 is not a feature update for version 25H2 and only includes platform changes to support specific silicon. For more, see [Windows Insider Blog](https://blogs.windows.com/windows-insider/) |
@@ -42,19 +45,18 @@ The following table lists legacy WDK releases, their compatibility and support s
 | Windows 10 1703 (RS2)  | 15063.0       | VS 2015                | [WDK](https://go.microsoft.com/fwlink/?linkid=2014189) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2014190) | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2014191) | Yes | Out of support |
 | Windows 10 1607 (RS1)  | 14393.0       | VS 2015                | [WDK](https://go.microsoft.com/fwlink/?linkid=2014186) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2014187) | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2014188) | Yes | Supported until 10/13/2026 under LTSC license |
 | Windows 8              | 9200          | VS 2012                | [WDK](https://go.microsoft.com/fwlink/?linkid=2014183) | N/A | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2014184) | Yes | Supported until 01/13/2026 under Premium Assurance license |
-| Windows 7              | 7600          | VS 2010                | [WDK](https://go.microsoft.com/fwlink/?linkid=2014180) | N/A | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2014181) | Yes | Supported until 01/13/2026 under Premium Assurance license
+| Windows 7              | 7600          | VS 2010                | [WDK](https://go.microsoft.com/fwlink/?linkid=2014180) | N/A | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2014181) | Yes | Supported until 01/13/2026 under Premium Assurance license |
+
 ## Additional Guidance
+
 - **Security**: These installers may have known vulnerabilities, including [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187), and are not recommended for production driver development. Use at your own risk
 - **Support**: Only the latest WDK and certain LTSC/Premium Assurance releases receive support.
 - **Compatibility**: Check required Visual Studio and SDK version before installing any WDK release.
 - **Legacy Usage**: Avoid legacy releases for new development. If required, isolate build environments and do not use on production systems.
-- **Feedback & Help**: Reach out via the [feedback form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
+- **Feedback & Help**: Reach out via the [feedback form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or email [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
 
 ## See Also
 
-- [Download the latest Windows Driver Kit](https://learn.microsoft.com/windows-hardware/drivers/download-the-wdk)
-- [WDK NuGet documentation](https://learn.microsoft.com/windows-hardware/drivers/download-wdk-nuget)
-- [Windows Driver Documentation](https://learn.microsoft.com/windows-hardware/drivers/)
-
-
-
+- [Download the latest Windows Driver Kit](download-the-wdk.md)
+- [WDK NuGet documentation](download-wdk-nuget.md)
+- [Windows Driver Documentation](index.yml)
