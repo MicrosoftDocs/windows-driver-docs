@@ -11,10 +11,9 @@ ms.topic: feature-availability
 
 # Windows Driver Kit Archive
 > [!IMPORTANT]
-> This Archive page contains links to earlier WDK releases that are neither serviced nor supported by Microsoft. These installers may be susceptible to security vulnerabilities including [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187), and are not recommended for production driver development.
-See [Download Windows Drivers Kit](https://learn.microsoft.com/windows-hardware/drivers/download-the-wdk), for the latest version of WDK recommended for driver development. 
+> This Archive contains links to earlier WDK releases that are not serviced or supported by Microsoft. Some installers may be susceptible to security vulnerabilities (including [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187)). These are not recommended for production driver development.  
+> To develop Windows drivers, always use the [latest WDK version](https://learn.microsoft.com/windows-hardware/drivers/download-the-wdk).
 
- If you have questions or feedback, please fill out the [form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or send us an email at wdkfeedback@microsoft.com.
 
 ## Legacy WDK Releases
 The following table lists legacy WDK releases, their compatibility and support status. Use these only for reference or non-production scenarios
@@ -29,10 +28,10 @@ The following table lists legacy WDK releases, their compatibility and support s
 | Windows 11 24H2 (Ge)   | 26100.1882    | VS 2022                | [WDK](https://go.microsoft.com/fwlink/?linkid=2335869) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2335681) | [NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.26100.1882) | N/A | No | Supported but not recommended for driver development |
 | Windows 11 24H2 (Ge)   | 26100.1591    | VS 2022                | [WDK](https://go.microsoft.com/fwlink/?linkid=2335869) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2335681) | [NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.26100.1591) | [SDK](https://go.microsoft.com/fwlink/?linkid=2338977) | Yes | Supported but not recommended for driver development |
 | Windows 11 24H2 (Ge)   | 26100.1       | VS 2022                | [WDK](https://go.microsoft.com/fwlink/?linkid=2335869) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2335681) | [NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.26100.1) | [SDK](https://go.microsoft.com/fwlink/?linkid=2338977) | Yes | Supported but not recommended for driver development |
-| Windows 11 23H2 (Zn)   | 22621.2428    | VS 2022                | [WDK](https://go.microsoft.com/fwlink/?linkid=2217936) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2217937) | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2217938) | Yes | Supported but not recommended for driver development (23H2 Oct 2023 Refresh) |
+| Windows 11 23H2 (Zn)   | 22621.2428    | VS 2022                | [WDK](https://go.microsoft.com/fwlink/?linkid=2217936) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2217937) | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2217938) | Yes | Supported but not recommended for driver development  |
 | Windows 11 22H2 (Ni)   | 22621.5337    | VS 2022                | [WDK](https://go.microsoft.com/fwlink/?linkid=2188002) | N/A | N/A | N/A | No | Supported but not recommended for driver development |
-| Windows 11 22H2 (Ni)   | 22621.755     | VS 2022                | N/A | [EWDK](https://go.microsoft.com/fwlink/?linkid=2188003) | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2188004) | Yes | Supported but not recommended for driver development (No matching WDK. Build 22621.755 is SDK specific.) |
-| Windows 11 22H2 (Ni)   | 22621.382     | VS 2022                | [WDK](https://go.microsoft.com/fwlink/?linkid=2188002) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2188003) | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2188004) | Yes | Supported but not recommended for driver development (22H2 May 2023 WDK Refresh) |
+| Windows 11 22H2 (Ni)   | 22621.755     | VS 2022                | N/A | [EWDK](https://go.microsoft.com/fwlink/?linkid=2188003) | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2188004) | Yes | Supported but not recommended for driver development  |
+| Windows 11 22H2 (Ni)   | 22621.382     | VS 2022                | [WDK](https://go.microsoft.com/fwlink/?linkid=2188002) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2188003) | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2188004) | Yes | Supported but not recommended for driver developmen|
 | Windows 11 21H2 (CO)   | 22000.832     | VS 2019                | [WDK](https://go.microsoft.com/fwlink/?linkid=2156297) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2156298) | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2156299) | Yes | Supported but not recommended for driver development |
 | Windows Server 2022 (FE)| 20348.1      | VS 2019                | [WDK](https://go.microsoft.com/fwlink/?linkid=2156297) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2156298) | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2156299) | Yes | Supported until 10/14/2031 under LTSC license |
 | Windows 10 2004 (VB)   | 19041         | VS 2019                | [WDK](https://go.microsoft.com/fwlink/?linkid=2128854) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2128855) | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2128856) | Yes | Out of support |
@@ -43,9 +42,19 @@ The following table lists legacy WDK releases, their compatibility and support s
 | Windows 10 1703 (RS2)  | 15063.0       | VS 2015                | [WDK](https://go.microsoft.com/fwlink/?linkid=2014189) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2014190) | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2014191) | Yes | Out of support |
 | Windows 10 1607 (RS1)  | 14393.0       | VS 2015                | [WDK](https://go.microsoft.com/fwlink/?linkid=2014186) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2014187) | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2014188) | Yes | Supported until 10/13/2026 under LTSC license |
 | Windows 8              | 9200          | VS 2012                | [WDK](https://go.microsoft.com/fwlink/?linkid=2014183) | N/A | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2014184) | Yes | Supported until 01/13/2026 under Premium Assurance license |
-| Windows 7              | 7600          | VS 2010                | [WDK](https://go.microsoft.com/fwlink/?linkid=2014180) | N/A | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2014181) | Yes | Supported until 01/13/2026 under Premium
+| Windows 7              | 7600          | VS 2010                | [WDK](https://go.microsoft.com/fwlink/?linkid=2014180) | N/A | N/A | [SDK](https://go.microsoft.com/fwlink/?linkid=2014181) | Yes | Supported until 01/13/2026 under Premium Assurance license
 ## Additional Guidance
-- Security: These installers may be susceptible to security vulnerabilities, including CVE-2024-29187, and are not recommended for production driver development. Use at your own risk
-- Support: Most of the older releases are out of support or only supported under LTSC/Premium Assurance agreements
-- Compatibility: Always verify the required Visual Studio version and SDk version before installing a WDK release
-- Feedback: Use the feedback form or email for question about archive content, or other issues related to combiling and loading the drivers.
+- **Security**: These installers may have known vulnerabilities, including [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187), and are not recommended for production driver development. Use at your own risk
+- **Support**: Only the latest WDK and certain LTSC/Premium Assurance releases receive support.
+- **Compatibility**: Check required Visual Studio and SDK version before installing any WDK release.
+- **Legacy Usage**: Avoid legacy releases for new development. If required, isolate build environments and do not use on production systems.
+- **Feedback & Help**: Reach out via the [feedback form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
+
+## See Also
+
+- [Download the latest Windows Driver Kit](https://learn.microsoft.com/windows-hardware/drivers/download-the-wdk)
+- [WDK NuGet documentation](https://learn.microsoft.com/windows-hardware/drivers/download-wdk-nuget)
+- [Windows Driver Documentation](https://learn.microsoft.com/windows-hardware/drivers/)
+
+
+
