@@ -26,7 +26,7 @@ You must select a Release configuration (for example, **/p:Configuration="Window
 
 ## Parameters
 
-### <a id="scan">:::no-loc text="/":::**:::no-loc text="scan":::**</a>
+### <a id="scan">**:::no-loc text="/scan":::**</a>
 
 Scans the driver's source code for function role type declarations. For information about how to declare the driver supplied callback functions and dispatch routines, see [Using Function Role Type Declarations](using-function-role-type-declarations.md). During this scan, SDV tries to detect the driver entry points that it needs to verify the driver. It records the results of the scan in [Sdv-map.h](sdv-map-h.md), a file that it creates in the driver's project directory.
 
@@ -72,7 +72,7 @@ Run a **/clean** command for a library when the library files are outdated, such
 
 A **/clean** command does not remove the Sdv-map.h file, if the approved flag is set to true in the Sdv-map.h file (Approved=true). SDV can then use this file for future verifications.
 
-### **:::no-loc text="/":::?**
+### **:::no-loc text="/?":::**
 
 Displays usage for SDV commands. Commands that use this parameter do not have to be run in a build environment window.
 
