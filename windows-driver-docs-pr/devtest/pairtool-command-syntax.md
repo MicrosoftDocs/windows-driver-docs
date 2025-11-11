@@ -96,7 +96,7 @@ Flags:
 
 - `/output-file` - Output file.
 
-## :::no-loc text="/enum-protocols":::
+## <a id="enum-protocols">:::no-loc text="/enum-protocols":::</a>
 
 Enumerates protocols supported in the OS this tool is running on.
 
