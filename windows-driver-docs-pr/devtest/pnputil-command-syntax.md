@@ -32,7 +32,7 @@ PNPUTIL [/add-driver <...> | /delete-driver <...> |
 
 ## Commands
 
-### /add-driver
+### :::no-loc text="/add-driver":::
 
 Adds driver package(s) into the driver store. Command available starting in Windows 10, version 1607.
 
@@ -50,7 +50,7 @@ Flags available starting in Windows 10, version 1607:
 > If the driver is not the highest ranked driver on the system, PnPUtil will not force it onto the device.
 > To check matching drivers and their rank, run the following from an elevated command prompt: `pnputil /enum-devices /instanceid <devgen device instance ID ROOT\DEVGEN{...}> /drivers`.
 
-### /delete-driver
+### :::no-loc text="/delete-driver":::
 
 Deletes a driver package from the driver store. Command available starting in Windows 10, version 1607.
 
@@ -64,7 +64,7 @@ Flags available starting in Windows 10, version 1607:
 - `/force` - delete driver package even when it is in use by devices
 - `/reboot` - reboot system if needed to complete the operation
 
-### /export-driver
+### :::no-loc text="/export-driver":::
 
 Exports driver package(s) from the driver store into a target directory. Command available starting in Windows 10, version 1607.
 
@@ -72,7 +72,7 @@ Exports driver package(s) from the driver store into a target directory. Command
 PNPUTIL /export-driver <oem#.inf | *> <target directory>
 ```
 
-### /enum-drivers
+### :::no-loc text="/enum-drivers":::
 
 Enumerates all third-party driver packages in the driver store. Command available starting in Windows 10, version 1607.
 
@@ -88,7 +88,7 @@ Flags available starting in Windows 11, version 22H2:
 
 - `/files` - enumerate all driver package files
 
-### /disable-device
+### :::no-loc text="/disable-device":::
 
 Disables devices on the system. Command available starting in Windows 10, version 2004.
 
@@ -113,7 +113,7 @@ Flags available starting in Windows 11, version 22H2:
 - `/bus <name | GUID>` - filter by bus enumerator name or bus type GUID
 - `/force` - disable even if device provides critical system functionality
 
-### /enable-device
+### :::no-loc text="/enable-device":::
 
 Enables devices on the system. Command available starting in Windows 10, version 2004.
 
@@ -136,7 +136,7 @@ Flags available starting in Windows 11, version 22H2:
 - `/class <name | GUID>` - filter by device class name or GUID
 - `/bus <name | GUID>` - filter by bus enumerator name or bus type GUID
 
-### /restart-device
+### :::no-loc text="/restart-device":::
 
 Restarts devices on the system. Command available starting in Windows 10, version 2004.
 
@@ -159,7 +159,7 @@ Flags available starting in Windows 11, version 22H2:
 - `/class <name | GUID>` - filter by device class name or GUID
 - `/bus <name | GUID>` - filter by bus enumerator name or bus type GUID.
 
-### /remove-device
+### :::no-loc text="/remove-device":::
 
 Attempts to remove a device from the system. Command available starting in Windows 10, version 2004.
 
@@ -184,7 +184,7 @@ Flags available starting in Windows 11, version 22H2:
 - `/bus <name | GUID>` - filter by bus enumerator name or bus type GUID
 - `/force` - remove even if device provides critical system functionality
 
-### /scan-devices
+### :::no-loc text="/scan-devices":::
 
 Scans the system for any device hardware changes. Command available starting in Windows 10, version 2004.
 
@@ -197,7 +197,7 @@ Flags available starting in Windows 10, version 2004:
 - `/instanceid <instance ID>` - scan device subtree for changes
 - `/async` - scan for changes asynchronously
 
-### /enum-devices
+### :::no-loc text="/enum-devices":::
 
 Enumerate all devices on the system. Command available starting in Windows 10, version 1903.
 
@@ -237,7 +237,7 @@ Flags available starting in Windows 11, version 22H2:
 - `/deviceid <device ID>` - filter by device hardware and compatible ID
 - `/resources` - display device resources
 
-### /enum-devicetree
+### :::no-loc text="/enum-devicetree":::
 
 Enumerates the device tree.
 
@@ -258,7 +258,7 @@ Flags
 - `/drivers` - display matching and installed drivers
 - `/interfaces` - display device interfaces
 
-### /enum-interfaces
+### :::no-loc text="/enum-interfaces":::
 
 Enumerates all device interfaces on the system.
 
@@ -278,7 +278,7 @@ Flags available starting in Windows 11, version 22H2:
 
 - `/properties` - display all interface properties
 
-### /enum-classes
+### :::no-loc text="/enum-classes":::
 
 Enumerates all device classes on the system.
 
@@ -293,7 +293,7 @@ Flags available starting in Windows 11, version 22H2:
 - `/class <name | GUID>` - filter by device class name or GUID
 - `/services` - display device class services
 
-### /enum-containers
+### :::no-loc text="/enum-containers":::
 
 Enumerates all device containers on the system.
 
@@ -319,7 +319,7 @@ Flags
 
 `/output-file [<filename>]` - write output to optional filename
 
-### /?
+### :::no-loc text="/":::?
 
 Displays the command-line syntax.
 

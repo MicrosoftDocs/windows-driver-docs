@@ -9,7 +9,7 @@ ms.topic: example-scenario
 
 This page provides examples on how to use the DevGen tool.
 
-## /add
+## :::no-loc text="/add":::
 
 Create a [software device](/windows/win32/api/_swdevice)
 
@@ -59,7 +59,7 @@ Create a root enumerated device and remove after user prompt
 devgen /add /bus ROOT /wait
 ```
 
-## /remove
+## :::no-loc text="/remove":::
 
 Remove a device
 

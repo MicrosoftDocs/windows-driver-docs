@@ -26,7 +26,7 @@ You must select a Release configuration (for example, **/p:Configuration="Window
 
 ## Parameters
 
-### /**scan**
+### :::no-loc text="/":::**:::no-loc text="scan":::**
 
 Scans the driver's source code for function role type declarations. For information about how to declare the driver supplied callback functions and dispatch routines, see [Using Function Role Type Declarations](using-function-role-type-declarations.md). During this scan, SDV tries to detect the driver entry points that it needs to verify the driver. It records the results of the scan in [Sdv-map.h](sdv-map-h.md), a file that it creates in the driver's project directory.
 

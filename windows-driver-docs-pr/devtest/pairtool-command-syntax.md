@@ -19,7 +19,7 @@ pairtool [/enum-endpoints <...> | /enum-services <...> | /enum-containers <...> 
           /disassociate <...> | /challenge <...> | /?] 
 ```
 
-## /enum-endpoints
+## :::no-loc text="/enum-endpoints":::
 
 Enumerates device endpoints over the various protocols Windows supports. Examples of endpoints: wireless headset, network printer, or TV.
 
@@ -48,7 +48,7 @@ Flags:
 
 - `/output-file` - Output file.
 
-## /enum-services
+## :::no-loc text="/enum-services":::
 
 Enumerates device endpoint services over the various protocols Windows supports. An endpoint service is a programmatic contract for functionality the endpoint supports. Examples of endpoint services: Bluetooth GATT, UPnP Digital Media Renderer (DMR), or ESCL scanning.
 
@@ -72,7 +72,7 @@ Flags:
 
 - `/output-file` - Output file.
 
-## /enum-containers
+## :::no-loc text="/enum-containers":::
 
 Enumerates device endpoint containers over the various protocols Windows supports. An endpoint container is a collection of one or more endpoints over one or more protocols that conceptually represent what an end-user might perceive as the actual physical device. Examples of endpoint containers: an XBOX on your network, an NAS, or a smart TV.
 
@@ -96,7 +96,7 @@ Flags:
 
 - `/output-file` - Output file.
 
-## /enum-protocols
+## :::no-loc text="/enum-protocols":::
 
 Enumerates protocols supported in the OS this tool is running on.
 
@@ -110,7 +110,7 @@ Flags:
 
 - `/output-file` - Output file.
 
-## /associate
+## :::no-loc text="/associate":::
 
 Associates or pairs an endpoint. This tool implements most supported pairing ceremonies. The ceremony options allow the tool to associate endpoints without extra user input.
 
@@ -150,7 +150,7 @@ Flags:
 
 - `/pin-match` - Use pin-match or similar ceremony.
 
-## /associate-oob
+## :::no-loc text="/associate-oob":::
 
 Associates or in other words pairs an endpoint using a binary out-of-band (OOB) blob. This tool implements most supported pairing ceremonies. The ceremony options allow the tool to associate endpoints without extra user input.
 
@@ -173,7 +173,7 @@ Flags:
 
 - `/pin-match` - Use pin-match or similar ceremony.
 
-## /disassociate
+## :::no-loc text="/disassociate":::
 
 Disassociates or unpairs an endpoint.
 
@@ -181,7 +181,7 @@ Disassociates or unpairs an endpoint.
 /disassociate <id>
 ```
 
-## /challenge
+## :::no-loc text="/challenge":::
 
 Challenge the OS to verify if an associated endpoint is currently present.
 

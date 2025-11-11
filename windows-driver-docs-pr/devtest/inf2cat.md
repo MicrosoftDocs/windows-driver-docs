@@ -37,18 +37,18 @@ If you see `An attempt was made to load a program with an incorrect format. (Exc
 
 ## Switches and Arguments
 
-### /driver:*PackagePath*
+### :::no-loc text="/driver:":::*:::no-loc text="PackagePath":::*
 
 Specifies the path to the directory that contains the INF files for driver packages. If the specified directory contains INF files for multiple driver packages, Inf2Cat will create catalog files for each driver package.
 
 > [!NOTE]
 > You can use the **/drv:** switch in place of the **/driver:** switch.
 
-### /nocat
+### :::no-loc text="/nocat":::
 
 Configures Inf2Cat to verify that the [driver package](../install/driver-packages.md) complies with the signing requirements for the specified Windows versions, but not to generate a catalog files.
 
-### /os:*WindowsVersionList*
+### :::no-loc text="/os:":::*:::no-loc text="WindowsVersionList":::*
   
 Configures Inf2Cat to verify that a [driver package's](../install/driver-packages.md) INF file complies with the signing requirements for the Windows versions that are specified by *WindowsVersionList*. *WindowsVersionList* is a comma-separated list that includes one or more of the following version identifiers.
 
@@ -98,29 +98,29 @@ Configures Inf2Cat to verify that a [driver package's](../install/driver-package
 
 Inf2Cat ignores the case of the alphabetic characters of the version identifier strings. For example, 10\_NI\_X64 and 10\_ni\_X64  are both valid identifiers for Windows 11, version 22H2 x64 Edition.
 
-### /uselocaltime
+### :::no-loc text="/uselocaltime":::
 
 Use local timezone while running driver timestamp verification tests. By default UTC is used.
 
-### /verbose
+### :::no-loc text="/verbose":::
 
 Configures Inf2Cat to display detailed information in a command window.
 
-### /?
+### :::no-loc text="/":::?
 
 Configures Inf2Cat to display help information in a command window.
 
-### /drm
+### :::no-loc text="/drm":::
 
 *Deprecated command line argument.*  
 Add drm signature attribute in .inf file to add drm signature attribute.
 
-### /pe
+### :::no-loc text="/pe":::
 
 *Deprecated command line argument.*  
 Add petrust signature attribute in .inf file to add petrust signature attribute.
 
-### /pageHashes
+### :::no-loc text="/pageHashes":::
 
 Include page hashes with files.  Optionally followed by a list of files.
 

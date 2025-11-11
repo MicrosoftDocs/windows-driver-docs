@@ -19,7 +19,7 @@ This article provides practical PnPUtil command examples for managing Windows dr
 
 Administrator rights are required for most PnPUtil commands.
 
-## /add-driver
+## :::no-loc text="/add-driver":::
 
 Add driver package
 
@@ -39,7 +39,7 @@ Add and install driver package on an existing device
 pnputil /add-driver device.inf /install
 ```
 
-## /delete-driver
+## :::no-loc text="/delete-driver":::
 
 Delete driver package
 
@@ -53,7 +53,7 @@ Force delete driver package
 pnputil /delete-driver oem1.inf /force
 ```
 
-## /disable-device
+## :::no-loc text="/disable-device":::
 
 Disable the device specified by device instance ID
 
@@ -73,7 +73,7 @@ Disable all devices of a specific class on a specific bus
 pnputil /disable-device /class "USB" /bus "PCI"
 ```
 
-## /enable-device
+## :::no-loc text="/enable-device":::
 
 Enable device specified by device instance ID
 
@@ -93,7 +93,7 @@ Enable all devices of a specific class on a specific bus
 pnputil /enable-device /class "USB" /bus "PCI"
 ```
 
-## /enum-classes
+## :::no-loc text="/enum-classes":::
 
 Enumerate all device setup classes on the system
 
@@ -107,7 +107,7 @@ Enumerate information for a specific device setup class
 pnputil /enum-classes /class "Display"
 ```
 
-## /enum-devices
+## :::no-loc text="/enum-devices":::
 
 Enumerate devices on the system. An enabled device appears with status **Started**; a disabled device appears as **Disabled**.
 
@@ -157,7 +157,7 @@ Enumerate all devices with specific bus
 pnputil /enum-devices /bus "PCI"
 ```
 
-## /enum-drivers
+## :::no-loc text="/enum-drivers":::
 
 Enumerate OEM driver packages
 
@@ -177,7 +177,7 @@ Enumerate all OEM driver packages and display driver files
 pnputil /enum-drivers /files
 ```
 
-## /enum-interfaces
+## :::no-loc text="/enum-interfaces":::
 
 Enumerate only enabled interfaces on the system
 
@@ -191,7 +191,7 @@ Enumerate all interfaces with specific interface class GUID
 pnputil /enum-interfaces /class "{884b96c3-56ef-11d1-bc8c-00a0c91405dd}"
 ```
 
-## /export-driver
+## :::no-loc text="/export-driver":::
 
 Export driver package
 
@@ -205,7 +205,7 @@ Export all driver packages
 pnputil /export-driver * c:\backup
 ```
 
-## /remove-device
+## :::no-loc text="/remove-device":::
 
 Remove device specified by device instance ID
 
@@ -225,7 +225,7 @@ Remove all devices of a specific class on a specific bus
 pnputil /remove-device /class "USB" /bus "PCI"
 ```
 
-## /restart-device
+## :::no-loc text="/restart-device":::
 
 Restart device specified by device instance ID
 
@@ -245,7 +245,7 @@ Restart all devices of a specific class on a specific bus
 pnputil /restart-device /class "USB" /bus "PCI"
 ```
 
-## /scan-devices
+## :::no-loc text="/scan-devices":::
 
 Scan the system for any device hardware changes. Use this command after connecting new hardware to force Windows to detect it.
 
@@ -255,7 +255,7 @@ pnputil /scan-devices
 
 After scanning, use /enum-devices /connected to verify your new device was detected.
 
-## /enum-devicetree
+## :::no-loc text="/enum-devicetree":::
 
 Enumerate device tree
 
@@ -287,7 +287,7 @@ Enumerate tree and display device stack information, interfaces, drivers and ser
 pnputil /enum-devicetree /stack /interfaces /drivers /services
 ```
 
-## /enum-containers
+## :::no-loc text="/enum-containers":::
 
 Enumerate all device containers on the system
 
