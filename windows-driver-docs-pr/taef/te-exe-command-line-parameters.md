@@ -43,11 +43,11 @@ Provides options for configuring TE's use of the console. The following options 
 
 Causes console output to be flushed after every line is written - useful when TE.exe's output has been redirected.
 
-#### <a id="consolepositionxycurrent">:::no-loc text="/console:position=\[x,y | current \]":::</a>
+#### <a id="consolepositionxy--current-">:::no-loc text="/console:position=\[x,y | current \]":::</a>
 
 Sets the position (in pixels) of the console window relative to the corner of the primary monitor. Use a value of **current** to specify that the current console position should be stored and used when resuming from reboot.
 
-#### <a id="consolesizexycurrent">:::no-loc text="/console:size=\[ \<x,y\> | current \]":::</a>
+#### <a id="consolesize-xy--current-">:::no-loc text="/console:size=\[ \<x,y\> | current \]":::</a>
 
 Sets the size of the console window (in character dimensions). The screen buffer size will be increased to match the size of the window if necessary. Use a value of **current** to specify that the current console size should be stored and used when resuming from reboot.
 

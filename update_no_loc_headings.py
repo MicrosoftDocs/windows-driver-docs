@@ -17,7 +17,7 @@ def generate_id_from_text(text):
     # Replace underscores with hyphens
     id_text = id_text.replace('_', '-')
     # Replace all non-word characters (\W matches anything that's not [a-zA-Z0-9_]) with hyphens
-    id_text = re.sub(r'\W', '-', id_text)
+    id_text = re.sub(r'\W', '', id_text)
     return id_text
 
 def update_heading(match):
@@ -75,15 +75,15 @@ def main():
     
     # List of files to process
     files_to_process = [
-        r'devtest\pairtool-command-syntax.md',
+        # r'devtest\pairtool-command-syntax.md',
         r'taef\te-exe-command-line-parameters.md',
-        r'devtest\-static-driver-verifier-commands--msbuild-.md',
-        r'devtest\devgen-command-syntax.md',
-        r'devtest\devgen-examples.md',
-        r'devtest\inf2cat.md',
-        r'devtest\pairtool-examples.md',
-        r'devtest\pnputil-command-syntax.md',
-        r'devtest\pnputil-examples.md',
+        # r'devtest\-static-driver-verifier-commands--msbuild-.md',
+        # r'devtest\devgen-command-syntax.md',
+        # r'devtest\devgen-examples.md',
+        # r'devtest\inf2cat.md',
+        # r'devtest\pairtool-examples.md',
+        # r'devtest\pnputil-command-syntax.md',
+        # r'devtest\pnputil-examples.md',
     ]
     
     total_updates = 0
