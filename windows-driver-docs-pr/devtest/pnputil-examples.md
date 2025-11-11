@@ -3,6 +3,7 @@ title: PnPUtil Command Examples for Windows Driver Management
 description: "Learn how to use PnPUtil commands to add, delete, enable, disable, and manage Windows drivers and devices with practical examples."
 ms.date: 11/05/2025
 ms.topic: how-to
+no-loc: [enable-device, remove-device, restart-device, export-driver]
 ---
 
 # PnPUtil examples
