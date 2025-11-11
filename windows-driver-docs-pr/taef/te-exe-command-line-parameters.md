@@ -29,37 +29,37 @@ Specify one or more test files to execute (separated by spaces). Wildcard charac
 
 **Interpretation:** Run all tests in all dlls in the current directory.
 
-### :::no-loc text="/coloredConsoleOutput:\<true/false>":::
+### <a id="coloredconsoleoutput---true-false-">:::no-loc text="/coloredConsoleOutput:\<true/false>":::</a>
 
 Specifies whether or not TAEF should output colored console text. The default is true. If set to false, TAEF will output all text with the default console color.
 
 `te.exe test1.dll /coloredConsoleOutput:false`
 
-### :::no-loc text="/console:\<optionName>=\<value>":::
+### <a id="console---optionname----value-">:::no-loc text="/console:\<optionName>=\<value>":::</a>
 
 Provides options for configuring TE's use of the console. The following options are available:
 
-#### :::no-loc text="/console:flushWrites":::
+#### <a id="console-flushwrites">:::no-loc text="/console:flushWrites":::</a>
 
 Causes console output to be flushed after every line is written - useful when TE.exe's output has been redirected.
 
-#### :::no-loc text="/console:position=\[x,y | current \]":::
+#### <a id="console-position---x-y---current---">:::no-loc text="/console:position=\[x,y | current \]":::</a>
 
 Sets the position (in pixels) of the console window relative to the corner of the primary monitor. Use a value of **current** to specify that the current console position should be stored and used when resuming from reboot.
 
-#### :::no-loc text="/console:size=\[ \<x,y\> | current \]":::
+#### <a id="console-size------x-y-----current---">:::no-loc text="/console:size=\[ \<x,y\> | current \]":::</a>
 
 Sets the size of the console window (in character dimensions). The screen buffer size will be increased to match the size of the window if necessary. Use a value of **current** to specify that the current console size should be stored and used when resuming from reboot.
 
-#### :::no-loc text="/console:topmost":::
+#### <a id="console-topmost">:::no-loc text="/console:topmost":::</a>
 
 Keeps the console running te.exe 'topmost' in the desktop z-order for the duration of execution.
 
-### :::no-loc text="/dpiaware":::
+### <a id="dpiaware">:::no-loc text="/dpiaware":::</a>
 
 Executes tests in a process marked as DPI-aware, see [High DPI](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows). This can also be set via metadata ("DpiAware").
 
-### :::no-loc text="/inproc":::
+### <a id="inproc">:::no-loc text="/inproc":::</a>
 
 Execute all tests within the TE.exe process itself rather than within TE.ProcessHost.exe.
 
@@ -68,17 +68,17 @@ te.exe test1.dll /inproc
 > [!NOTE]
 > TE only supports executing one test dll at a time when using the */inproc* setting.
 
-### :::no-loc text="/isolationLevel:\<Level>":::
+### <a id="isolationlevel---level-">:::no-loc text="/isolationLevel:\<Level>":::</a>
 
 Specifies the minimum level of isolation to be used when executing TAEF tests. If this value conflicts with the IsolationLevel specified as metadata, the value becomes the isolation level with the tightest scope. See [Test Isolation](test-isolation.md) for more details.
 
 `te.exe test1.dll /isolationLevel:Class`
 
-### :::no-loc text="/labMode":::
+### <a id="labmode">:::no-loc text="/labMode":::</a>
 
 Executes tests and removes potential blocking UI (for example, Windows Error Reporting dialogs on crashing tests).
 
-### :::no-loc text="/list":::
+### <a id="list">:::no-loc text="/list":::</a>
 
 Lists the names of all the [test\_binaries](#test_binaries) and the classes and methods within them. If selection criteria is specified, lists only the names of those which meet the criteria.
 
@@ -106,7 +106,7 @@ Lists the names of all the [test\_binaries](#test_binaries) and the classes and 
   WEX::UnitTests::Test2::Example2
 ```
 
-### :::no-loc text="/listProperties":::
+### <a id="listproperties">:::no-loc text="/listProperties":::</a>
 
 Lists the names and properties of all the test\_binaries and the classes and methods in them along with Setup and Teardown function names, if available. If selection criteria is specified, lists only the names of those which meet the criteria.
 
@@ -150,7 +150,7 @@ Lists the names and properties of all the test\_binaries and the classes and met
    Property[ThreadingModel] = STA
 ```
 
-### :::no-loc text="/name:\<testname>":::
+### <a id="name---testname-">:::no-loc text="/name:\<testname>":::</a>
 
 Test name based selection is an easy alternative to "/select:@Name='&lt;testname&gt;'". The &lt;testname&gt; can still contain wildcard characters ("\*" and "?"), but should not be contained within single quotes. If /select and /name both are specified at the command prompt, then /select query takes precedence and /name is ignored.
 
@@ -162,13 +162,13 @@ te.exe test1.dll /name:\*StringTest\*
 
 **Interpretation:** Run all tests in test1.dll which contain the phrase 'StringTest' in their namespace, class or method name.
 
-### :::no-loc text="/outputFolder:\<folderName>":::
+### <a id="outputfolder---foldername-">:::no-loc text="/outputFolder:\<folderName>":::</a>
 
 Specifies a folder to place all generated files. The default is the current directory. You can use environment variables, for example:
 
 `te.exe test1.dll /outputFolder:%TEMP%\\MyOutput`
 
-### :::no-loc text="/p:\<ParamName>=\<ParamValue>":::
+### <a id="p---paramname----paramvalue-">:::no-loc text="/p:\<ParamName>=\<ParamValue>":::</a>
 
 Defines a runtime parameter with parameter name=ParamName and parameter value=ParamValue. These parameters are accessible from a test method or setup/cleanup methods.
 
@@ -185,7 +185,7 @@ You can grab x as one of several supported types in your test code. For example,
 
 For more information, please visit the [TAEF.Runtime Parameters](runtime-parameters.md) help page.
 
-### :::no-loc text="/parallel":::
+### <a id="parallel">:::no-loc text="/parallel":::</a>
 
 Executes tests in parallel across multiple processors. Tests must opt-in to parallel execution by being marked with the 'Parallel' metadata.
 
@@ -193,11 +193,11 @@ Executes tests in parallel across multiple processors. Tests must opt-in to para
 
 For more information, please visit the [Parallel](parallel.md) help page.
 
-### :::no-loc text="/persistPictResults":::
+### <a id="persistpictresults">:::no-loc text="/persistPictResults":::</a>
 
 Caches results generated by PICT.exe for tests using [PICT DataSource](pict-data-source.md) in the current execution. The subsequent test execution will try to utilize the cached results as against running PICT.exe against the same model and seed files.
 
-### :::no-loc text="/pict:\<OptionName>=\<OptionValue>":::
+### <a id="pict---optionname----optionvalue-">:::no-loc text="/pict:\<OptionName>=\<OptionValue>":::</a>
 
 Provides options for controlling PICT.exe when it is called for tests using a [PICT DataSource](pict-data-source.md). Setting one of these options currently overrides all associated metadata in the code. The following options are available:
 
@@ -228,7 +228,7 @@ When set to true, turns on case sensitivity by passing the /c command option to 
 /Pict:Timeout=00:01:30  
 Sets the time to wait for PICT.exe to finish before killing its process. The value is in the format \[Day.\]Hour\[:Minute\[:Second\[.FractionalSeconds\]\]\].
 
-### :::no-loc text="/runas:\<RunAsType>":::
+### <a id="runas---runastype-">:::no-loc text="/runas:\<RunAsType>":::</a>
 
 Executes tests in specified environment. Please refer to the [RunAs](runas.md) documentation for detailed usage information.
 
@@ -248,11 +248,11 @@ te.exe \*.dll /runas:LowIL
 
 **Interpretation:** Run all tests in a Low Integrity process.
 
-### :::no-loc text="/runIgnoredTests":::
+### <a id="runignoredtests">:::no-loc text="/runIgnoredTests":::</a>
 
 Executes or lists (if in conjunction with [/list](#list) or [/listProperties](#listproperties)) all tests, including test classes and test methods with "Ignore" metadata set to "true". By default test classes and test methods with "Ignore" metadata set to "true" are skipped during execution and while listing.
 
-### :::no-loc text="/runon:\<MachineName>":::
+### <a id="runon---machinename-">:::no-loc text="/runon:\<MachineName>":::</a>
 
 Executes tests remotely, on the specified machine. TAEF authenticates, authorizes and deploys the necessary binaries to execute the tests, and logs all information back to the originating console. Please refer to the [Cross Machine Test Execution](cross-machine-execution.md) documentation for detailed usage information.
 
@@ -260,7 +260,7 @@ te.exe \*.dll /runon:TestMachine1
 
 **Interpretation:** Run all tests remotely on "TestMachine1".
 
-### :::no-loc text="/select:\<query>":::
+### <a id="select---query-">:::no-loc text="/select:\<query>":::</a>
 
 The selection criteria to be used when selecting tests from each test binary. Selection criteria is composed of one or more of the following:
 
@@ -291,7 +291,7 @@ te.exe test1.dll /select:@Name='\*StringTest\*'
 
 **Interpretation:** Run all tests in test1.dll which contain the phrase 'StringTest' in their namespace, class or method name.
 
-### :::no-loc text="/sessionTimeout:\<value>":::
+### <a id="sessiontimeout---value-">:::no-loc text="/sessionTimeout:\<value>":::</a>
 
 Sets a session time-out for the entire execution of Te.exe. If the time-out expires, the test session will be gracefully aborted, and the process exit code will signify that a time-out occurred.
 
@@ -325,13 +325,13 @@ te.exe test1.dll /sessionTimeout:1.2
 
 The entire test session will time out after 1 day and 2 hours.
 
-### :::no-loc text="/terminateOnFirstFailure":::
+### <a id="terminateonfirstfailure">:::no-loc text="/terminateOnFirstFailure":::</a>
 
 Terminates the test run the first time a test failure is encountered. All teardown operations for that test are invoked, but all subsequent tests are marked as ignored. Due to a known issue, tests might continue to run when using a test mode.
 
 `te.exe test1.dll /terminateOnFirstFailure`
 
-### :::no-loc text="/testDependencies:\<files>":::
+### <a id="testdependencies---files-">:::no-loc text="/testDependencies:\<files>":::</a>
 
 Specifies additional test dependencies to deploy when using [cross machine test execution](cross-machine-execution.md). Unless a full path is provided, TAEF will search relative to the current directory, not the test directory.
 
@@ -339,7 +339,7 @@ te.exe \*.dll /runon:TestMachine1 /TestDependencies:test\*.jpg;file1.doc
 
 **Interpretation:** Run all tests remotely on "TestMachine1", and copy 'test\*.jpg' and 'file1.doc' over to the remote machine before executing any tests. Each file specification can contain wildcard characters (test.txt; test\*.dll; etc.) to match one or more files.
 
-### :::no-loc text="/testTimeout:\<value>":::
+### <a id="testtimeout---value-">:::no-loc text="/testTimeout:\<value>":::</a>
 
 Sets a global test time-out for the entire execution of Te.exe. This value overrides any [test time-out](standard-test-metadata.md) metadata that may have been set for a given test being executed.
 
@@ -373,7 +373,7 @@ te.exe test1.dll /testTimeout:1.2
 
 Every test and setup/cleanup method will time out after 1 day and 2 hours.
 
-### :::no-loc text="/unicodeOutput:\<true/false>":::
+### <a id="unicodeoutput---true-false-">:::no-loc text="/unicodeOutput:\<true/false>":::</a>
 
 When TE is piped to a text file, it outputs unicode by default. The one exception to this is if you have requested to append to an existing ANSII file (via '&gt;&gt;').
 
@@ -383,7 +383,7 @@ In order to override this behavior, you may specify /unicodeOutput:false. This w
 
 ## Logger Settings
 
-### :::no-loc text="/appendWttLogging":::
+### <a id="appendwttlogging">:::no-loc text="/appendWttLogging":::</a>
 
 When WTT logging is enabled, appends to the log file rather than overwriting it. Must be used in conjunction with [/enableWttLogging](#enablewttlogging).
 
@@ -391,7 +391,7 @@ te.exe test1.dll /enableWttLogging /appendWttLogging
 
 Will create, or append to a log file called *TE.wtl* upon test execution completion.
 
-### :::no-loc text="/enableWttLogging":::
+### <a id="enablewttlogging">:::no-loc text="/enableWttLogging":::</a>
 
 Enables WTT logging; Wttlog.dll must be available in your path.
 
@@ -399,19 +399,19 @@ te.exe test1.dll /enableWttLogging
 
 Will produce a log file called *TE.wtl* upon test execution completion.
 
-### :::no-loc text="/defaultAppDomain":::
+### <a id="defaultappdomain">:::no-loc text="/defaultAppDomain":::</a>
 
 Executes managed tests in the default application domain.
 
 te.exe managed.test1.dll /defaultAppDomain  
 
-### :::no-loc text="/disableConsoleLogging":::
+### <a id="disableconsolelogging">:::no-loc text="/disableConsoleLogging":::</a>
 
 Disables console log output; must be used in conjunction with [/enableWttLogging](#enablewttlogging).
 
 `te.exe test1.dll /disableConsoleLogging /enableWttLogging`
 
-### :::no-loc text="/logFile:\<name>":::
+### <a id="logfile---name-">:::no-loc text="/logFile:\<name>":::</a>
 
 Specify a name to use as the wtt log file; must be used in conjunction with [/enableWttLogging](#enablewttlogging).
 
@@ -419,7 +419,7 @@ te.exe test1.dll /logFile:myCustomLogFile.xml /enableWttLogging
 
 Will produce a log file called *myCustomeLogFile.xml* upon test execution completion.
 
-### :::no-loc text="/logOutput:\<mode>":::
+### <a id="logoutput---mode-">:::no-loc text="/logOutput:\<mode>":::</a>
 
 Sets the output level of the logger. Valid values are:
 
@@ -428,17 +428,17 @@ Sets the output level of the logger. Valid values are:
 * *LowWithConsoleBuffering*: Same as *Low*, but includes the context of failures in both the log file and console output.
 * *Lowest*: Same as *Low*, but console output includes only errors, test failures, and the summary of execution.
 
-### :::no-loc text="/version":::
+### <a id="version">:::no-loc text="/version":::</a>
 
 Outputs detailed version information.
 
-### :::no-loc text="/wttDeviceString:\<value>":::
+### <a id="wttdevicestring---value-">:::no-loc text="/wttDeviceString:\<value>":::</a>
 
 Completely overrides the WttDeviceString used by WexLogger when it initializes WttLogger.
 
 `te.exe test1.dll /wttDeviceString:$Console`
 
-### :::no-loc text="/wttDeviceStringSuffix:\<value>":::
+### <a id="wttdevicestringsuffix---value-">:::no-loc text="/wttDeviceStringSuffix:\<value>":::</a>
 
 Appends the specified value to the default WttDeviceString used by WexLogger when it initializes WttLogger. Ignored if [wttDeviceString](#wttdevicestringvalue) is also specified.
 
@@ -446,67 +446,67 @@ Appends the specified value to the default WttDeviceString used by WexLogger whe
 
 ## Debug Settings
 
-### :::no-loc text="/breakOnCreate":::
+### <a id="breakoncreate">:::no-loc text="/breakOnCreate":::</a>
 
 Breaks into the debugger prior to instantiating each test class.
 
 `te.exe test1.dll /breakOnCreate`
 
-### :::no-loc text="/breakOnError":::
+### <a id="breakonerror">:::no-loc text="/breakOnError":::</a>
 
 Breaks into the debugger if an error or test failure is logged.
 
 `te.exe test1.dll /breakOnError`
 
-### :::no-loc text="/breakOnInvoke":::
+### <a id="breakoninvoke">:::no-loc text="/breakOnInvoke":::</a>
 
 Breaks into the debugger prior to invoking each test method.
 
 `te.exe test1.dll /breakOnInvoke`
 
-### :::no-loc text="/disableTimeouts":::
+### <a id="disabletimeouts">:::no-loc text="/disableTimeouts":::</a>
 
 Disables all time-outs during execution. This can be useful while debugging to prevent a timeout when TAEF is waiting on the part of the program that is being debugged.
 
 `te.exe test1.dll /disableTimeouts`
 
-### :::no-loc text="/miniDumpOnError":::
+### <a id="minidumponerror">:::no-loc text="/miniDumpOnError":::</a>
 
 Takes and logs a mini dump if a test error or failure occurs.
 
 `te.exe test1.dll /miniDumpOnError`
 
-### :::no-loc text="/miniDumpOnCrash":::
+### <a id="minidumponcrash">:::no-loc text="/miniDumpOnCrash":::</a>
 
 Takes and logs a mini dump if a test crash occurs.
 
 `te.exe test1.dll /miniDumpOnCrash`
 
-### :::no-loc text="/rebootStateFile":::
+### <a id="rebootstatefile">:::no-loc text="/rebootStateFile":::</a>
 
 Explicitly enables execution of [Reboot](reboot.md) tests.
 
 `te.exe test1.dll /rebootStateFile:myFile.xml`
 
-### :::no-loc text="/reportLoadingIssue":::
+### <a id="reportloadingissue">:::no-loc text="/reportLoadingIssue":::</a>
 
 Displays an error description dialog when TAEF fails to load a test dll. Must only be used for investigation of native test dll loading issues.
 
 `te.exe test1.dll /reportLoadingIssue`
 
-### :::no-loc text="/screenCaptureOnError":::
+### <a id="screencaptureonerror">:::no-loc text="/screenCaptureOnError":::</a>
 
 Takes and logs a screen capture if a test error or failure occurs.
 
 `te.exe test1.dll /screenCaptureOnError`
 
-### :::no-loc text="/stackFrameCount:\<value>":::
+### <a id="stackframecount---value-">:::no-loc text="/stackFrameCount:\<value>":::</a>
 
 Specifies the number of stack frames to display when getting call stacks. The default value is 50.
 
 `te.exe test1.dll /stackFrameCount:100`
 
-### :::no-loc text="/stackTraceOnError":::
+### <a id="stacktraceonerror">:::no-loc text="/stackTraceOnError":::</a>
 
 Takes and logs a stack trace if a test error or failure occurs.
 
@@ -514,7 +514,7 @@ Takes and logs a stack trace if a test error or failure occurs.
 
 ## Test Modes
 
-### :::no-loc text="/testmode:Loop":::
+### <a id="testmode-loop">:::no-loc text="/testmode:Loop":::</a>
 
 Allows controlling the execution using two variables *Loop* and *LoopTest*.
 
@@ -529,7 +529,7 @@ te.exe test1.dll test2.dll /testmode:Loop /Loop:3 /LoopTest:1
 
 **Interpretation:** Run every test in test1.dll and test2.dll once (determined by *LoopTest*). The whole execution (all combined tests in test1.dll and test2.dll) is run 3 times - as determined by *Loop*.
 
-### :::no-loc text="/testmode:Stress":::
+### <a id="testmode-stress">:::no-loc text="/testmode:Stress":::</a>
 
 In 'stress' test mode, TAEF will run tests indefinitely, until Ctrl+C is entered or until a WM\_CLOSE message is sent to TAEF's hidden window. /testmode:stress must be run in conjunction with [/inproc](#inproc).
 

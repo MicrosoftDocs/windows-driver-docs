@@ -44,7 +44,7 @@ Specifies the path to the directory that contains the INF files for driver packa
 > [!NOTE]
 > You can use the **/drv:** switch in place of the **/driver:** switch.
 
-### :::no-loc text="/nocat":::
+### <a id="nocat">:::no-loc text="/nocat":::</a>
 
 Configures Inf2Cat to verify that the [driver package](../install/driver-packages.md) complies with the signing requirements for the specified Windows versions, but not to generate a catalog files.
 
@@ -98,11 +98,11 @@ Configures Inf2Cat to verify that a [driver package's](../install/driver-package
 
 Inf2Cat ignores the case of the alphabetic characters of the version identifier strings. For example, 10\_NI\_X64 and 10\_ni\_X64  are both valid identifiers for Windows 11, version 22H2 x64 Edition.
 
-### :::no-loc text="/uselocaltime":::
+### <a id="uselocaltime">:::no-loc text="/uselocaltime":::</a>
 
 Use local timezone while running driver timestamp verification tests. By default UTC is used.
 
-### :::no-loc text="/verbose":::
+### <a id="verbose">:::no-loc text="/verbose":::</a>
 
 Configures Inf2Cat to display detailed information in a command window.
 
@@ -110,17 +110,17 @@ Configures Inf2Cat to display detailed information in a command window.
 
 Configures Inf2Cat to display help information in a command window.
 
-### :::no-loc text="/drm":::
+### <a id="drm">:::no-loc text="/drm":::</a>
 
 *Deprecated command line argument.*  
 Add drm signature attribute in .inf file to add drm signature attribute.
 
-### :::no-loc text="/pe":::
+### <a id="pe">:::no-loc text="/pe":::</a>
 
 *Deprecated command line argument.*  
 Add petrust signature attribute in .inf file to add petrust signature attribute.
 
-### :::no-loc text="/pageHashes":::
+### <a id="pagehashes">:::no-loc text="/pageHashes":::</a>
 
 Include page hashes with files.  Optionally followed by a list of files.
 

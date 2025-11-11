@@ -13,7 +13,7 @@ This article shows examples of how to use the PairTool utility.
 > PairTool is currently in PREVIEW.
 > This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-## :::no-loc text="/enum-protocols":::
+## <a id="enum-protocols">:::no-loc text="/enum-protocols":::</a>
 
 Discover what protocols are installed and supported on this version on Windows. Enumerating protocols can be useful to scope down endpoint discovery over specific protocols instead of all protocols. Aside from reducing many extra results, it can also be useful for performance. Discovery over wireless protocols can be expensive in terms of power consumption and quality of service (QoS), so should be avoided when not needed. Protocols like Bluetooth and WiFiDirect sometimes share the same radio hardware, which degrades the QoS of discovery when running at the same time. When QoS degrades, devices can't be discovered reliably. It's better not to use both protocols at the same time.
 
@@ -21,7 +21,7 @@ Discover what protocols are installed and supported on this version on Windows. 
 pairtool /enum-protocols
 ```
 
-## :::no-loc text="/enum-endpoints":::
+## <a id="enum-endpoints">:::no-loc text="/enum-endpoints":::</a>
 
 Discover devices over all protocols.
 
@@ -47,7 +47,7 @@ Save all discoverable Bluetooth devices to an XML file without updates.
 pairtool /enum-endpoints /protocol Bluetooth,BluetoothLE /sync /format XML /output-file out.xml
 ```
 
-## :::no-loc text="/associate":::
+## <a id="associate">:::no-loc text="/associate":::</a>
 
 Associate an endpoint. For associate to work, typically and endpoint would have `Associable: true` when enumerated. If no other parameters are passed, then pairing ceremonies that require input collect the input, like a PIN, from the console.
 
@@ -85,7 +85,7 @@ Associate an endpoint just for a specific user SID.
 pairtool /associate MCP#ab589c5e-d5c0-430f-a3f0-7295b421021a /per-user S-1-12-1-5555
 ```
 
-## :::no-loc text="/disassociate":::
+## <a id="disassociate">:::no-loc text="/disassociate":::</a>
 
 Unpair an endpoint.
 
@@ -93,7 +93,7 @@ Unpair an endpoint.
 pairtool /disassociate BluetoothLE#BluetoothLEdc:46:28:6a:16:01-d8:02:ba:2b:9e:2c
 ```
 
-## :::no-loc text="/challenge":::
+## <a id="challenge">:::no-loc text="/challenge":::</a>
 
 Challenge the liveness of the PnP device state of a paired endpoint. This challenge is useful if an endpoint's device state appears to be incorrectly online or offline.
 

@@ -22,7 +22,7 @@ DEVGEN [/add [<…>] | /remove <…>| /?]
 
 ## Commands
 
-### :::no-loc text="/add":::
+### <a id="add">:::no-loc text="/add":::</a>
 
 Create a device.
 
@@ -51,7 +51,7 @@ Flags:
 
 `/subtree` - remove entire device subtree, including any child devices.
 
-### :::no-loc text="/remove":::
+### <a id="remove">:::no-loc text="/remove":::</a>
 
 Remove a device specified by the device instance ID. Only devices created using DevGen can be removed with DevGen.
 
