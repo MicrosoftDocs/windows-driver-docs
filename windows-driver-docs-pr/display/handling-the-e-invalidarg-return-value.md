@@ -26,14 +26,14 @@ This rule creates a clear error attribution boundary between driver code and run
 
 The `E_INVALIDARG` propagation rule serves several important purposes:
 
-1. **Clear responsibility boundaries**: When the Direct3D runtime receives `E_INVALIDARG`, it knows the error originated from runtime-supplied functions, not from the driver itself.
+- **Clear responsibility boundaries**: When the Direct3D runtime receives `E_INVALIDARG`, it knows the error originated from runtime-supplied functions, not from the driver itself.
 
-1. **Debugging efficiency**: Developers can quickly identify whether an `E_INVALIDARG` error indicates that:
+- **Debugging efficiency**: Developers can quickly identify whether an `E_INVALIDARG` error indicates that:
    - The driver is calling runtime functions with invalid parameters.
    - Malicious code is interfering with the graphics stack.
    - Runtime internal issues that need investigation.
 
-1. **Security and reliability**: By requiring drivers to propagate (not generate) `E_INVALIDARG`, the system can detect anomalous behavior that might indicate security threats or stack corruption.
+- **Security and reliability**: By requiring drivers to propagate (not generate) `E_INVALIDARG`, the system can detect anomalous behavior that might indicate security threats or stack corruption.
 
 ## Implementation guidelines
 
@@ -143,12 +143,12 @@ HRESULT MyDriver_CreateResource(HANDLE hDevice, D3DDDIARG_CREATERESOURCE* pResou
 
 ## Best practices
 
-1. **Use appropriate error codes**: For driver-specific validation failures, use `E_FAIL`, `E_OUTOFMEMORY`, `E_NOTIMPL`, or other appropriate HRESULT values.
+- **Use appropriate error codes**: For driver-specific validation failures, use `E_FAIL`, `E_OUTOFMEMORY`, `E_NOTIMPL`, or other appropriate HRESULT values.
 
-1. **Always check runtime function return values**: Don't assume runtime functions always succeed.
+- **Always check runtime function return values**: Don't assume runtime functions always succeed.
 
-1. **Propagate E_INVALIDARG immediately**: When you receive `E_INVALIDARG` from a runtime function, return it directly without modification.
+- **Propagate E_INVALIDARG immediately**: When you receive `E_INVALIDARG` from a runtime function, return it directly without modification.
 
-1. **Document unexpected E_INVALIDARG**: If runtime functions return `E_INVALIDARG`, it might indicate a bug in your driver's parameter setup - investigate and fix.
+- **Document unexpected E_INVALIDARG**: If runtime functions return `E_INVALIDARG`, it might indicate a bug in your driver's parameter setup - investigate and fix.
 
-1. **Test with Driver Verifier**: Use Driver Verifier during development to catch violations of this error handling rule early.
+- **Test with Driver Verifier**: Use Driver Verifier during development to catch violations of this error handling rule early.
