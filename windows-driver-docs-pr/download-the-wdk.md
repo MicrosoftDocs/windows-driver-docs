@@ -19,8 +19,7 @@ Use the WDK to develop, test, and deploy drivers for Windows.
 
 > [!IMPORTANT]
 > 1. We recommend that developers use the latest WDK for driver development. If you're targeting older versions of Windows, follow the guidance in the [Building Drivers for Previous OS Releases Using the Latest Windows Driver Kit (WDK)](https://techcommunity.microsoft.com/blog/windowsdriverdev/building-drivers-for-previous-os-releases-using-the-latest-windows-driver-kit-wd/4374910) blog post.
-> 2. WDK version 28000.1 (26H1) has been released and it includes platform changes to support specific silicon. To download 26H1 WDK, visit [WDK Archive](other-wdk-downloads.md)
-> 3. Looking for earlier versions of WDK? Please visit [WDK Archive](other-wdk-downloads.md)
+> 2. Looking for earlier versions of WDK? Please visit [WDK Archive](other-wdk-downloads.md)
 >    
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://aka.ms/wipwdk). For installation instructions for Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](./installing-preview-versions-wdk.md).
@@ -72,12 +71,12 @@ The provided links for the SDK and the WDK have matching build numbers, which is
 
 ## ![Download icon for WDK](images/download-install.png) Step 3: Install the WDK
 
-- [Download the latest WDK](https://go.microsoft.com/fwlink/?linkid=2335869)
+The table shows the latest and supported WDK releases. 25H2 remains the default recommended kit for driver development projects, 26H1 is includes platform changes to support specific silicon, do not use if you don't have do
 
-Starting with version 17.11.0, the WDK VSIX is included as an individual component in Visual Studio. Before installing the WDK, the installer checks if a compatible version of the VSIX is already installed. If the installer doesn't find the WDK VSIX, it prompts you to install it. To install the WDK VSIX, launch the Visual Studio Installer, select **Modify**, go to the **Individual Components** tab, add **Windows Driver Kit**, and then select **Modify**.
-
-:::image type="content" source="images/install_wdk_vsix_msg.png" alt-text="Image asking the user to install WDK VSIX.":::
-
+| Release | Release Date | Download Link | Comments |
+|---------|-------------|---------------|----------|
+| **Windows 11, Version 25H2** | Released Sept 8, 2025 | [WDK Version 10.0.26100.6584](https://go.microsoft.com/fwlink/?linkid=2335869) | This is the stable WDK version recommended for all driver development across supported OS and target architectures. |
+| **Windows 11, Version 26H1** | Released Nov 18, 2025 | [WDK Version 10.0.28000.1](https://go.microsoft.com/fwlink/?linkid=2335869) | 26H1 is not a feature update for 25H2 and only includes platform changes to support specific silicon. Use only if you need these changes. |
 > [!TIP]
 > If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this issue, launch Visual Studio Installer, select **Modify**, add **Windows Driver Kit** in the **Individual Component** tab, and select **Modify**.
 
@@ -89,7 +88,8 @@ The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-- [Download EWDK with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
+- To develop driver for Window 11 25H2 and earlier:  [Download 25H2 EWDK with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
+- To you are developing a driver for specifial silicon: [Download 26H1 EWDK with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
 
 After you download the ISO, use these steps to set up your build environment:
 
@@ -100,6 +100,8 @@ After you download the ISO, use these steps to set up your build environment:
 1. When you're done with the build environment, you might want to eject the ISO.
 
 You can optionally use the Visual Studio interface with the build tools provided in the EWDK. To use the Visual Studio interface, make sure that the Visual Studio major version matches the version of the Visual Studio Build Tools in the EWDK. For example, Visual Studio 2022 works with the EWDK that contains VS17.X build tools. For a list of Visual Studio 2022 version numbers, see [Visual Studio 2022 Releases](/visualstudio/releases/2022/release-history).
+
+
 
 ## Kit versioning
 
