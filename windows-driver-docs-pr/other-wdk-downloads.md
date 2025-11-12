@@ -19,7 +19,7 @@ ms.topic: feature-availability
 
 ## Legacy WDK Releases
 
-The following table lists legacy WDK releases, their compatibility, and support status. Only use these legacy releases for reference or nonproduction scenarios.
+The following table lists legacy WDK releases, their compatibility, and support status. We recommend these to be used only for reference or nonproduction purposes.
 
 | Windows Version         | Build Number   | Supported Visual Studio | WDK | EWDK | NuGet | SDK | WDK Susceptible to CVE-2024-29187 | Comments |
 |------------------------|---------------|------------------------|----------|-----------|------------|----------|-------------------------------|----------|
