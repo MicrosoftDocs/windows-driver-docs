@@ -7,9 +7,15 @@ ms.topic: release-notes
 
 # Windows Driver Kit (WDK) release notes
 
-The following features and bug fixes are in Windows 11 24H2 WDK update.
+The following features and bug fixes are in Windows 11 24H2, 25H2 and 26H1 update WDK update.
 
-## Version 10.0.26100.6584
+## Version 10.0.28000.1 (26H1)
+
+*Released November 18, 2025*
+
+26H1 is not a feature update for version 25H2 and only includes platform changes to support specific silicon. Therefore upgrades from 25H2 to 26H1 will not be supported. 
+
+## Version 10.0.26100.6584 (25H2)
 
 *Released September 23, 2025*
 
