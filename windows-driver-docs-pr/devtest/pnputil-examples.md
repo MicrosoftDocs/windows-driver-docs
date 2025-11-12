@@ -20,7 +20,7 @@ This article provides practical PnPUtil command examples for managing Windows dr
 
 Administrator rights are required for most PnPUtil commands.
 
-## <a id="add-driver">:::no-loc text="/add-driver":::</a>
+## <span class="no-loc">/add-driver</span> <a id="add-driver"></a>
 
 Add driver package
 
@@ -40,7 +40,7 @@ Add and install driver package on an existing device
 pnputil /add-driver device.inf /install
 ```
 
-## <a id="delete-driver">:::no-loc text="/delete-driver":::</a>
+## <span class="no-loc">/delete-driver</span> <a id="delete-driver"></a>
 
 Delete driver package
 
@@ -54,7 +54,7 @@ Force delete driver package
 pnputil /delete-driver oem1.inf /force
 ```
 
-## <a id="disable-device">:::no-loc text="/disable-device":::</a>
+## <span class="no-loc">/disable-device</span> <a id="disable-device"></a>
 
 Disable the device specified by device instance ID
 
@@ -74,7 +74,7 @@ Disable all devices of a specific class on a specific bus
 pnputil /disable-device /class "USB" /bus "PCI"
 ```
 
-## <a id="enable-device">:::no-loc text="/enable-device":::</a>
+## <span class="no-loc">/enable-device</span> <a id="enable-device"></a>
 
 Enable device specified by device instance ID
 
@@ -94,7 +94,7 @@ Enable all devices of a specific class on a specific bus
 pnputil /enable-device /class "USB" /bus "PCI"
 ```
 
-## <a id="enum-classes">:::no-loc text="/enum-classes":::</a>
+## <span class="no-loc">/enum-classes</span> <a id="enum-classes"></a>
 
 Enumerate all device setup classes on the system
 
@@ -108,7 +108,7 @@ Enumerate information for a specific device setup class
 pnputil /enum-classes /class "Display"
 ```
 
-## <a id="enum-devices">:::no-loc text="/enum-devices":::</a>
+## <span class="no-loc">/enum-devices</span> <a id="enum-devices"></a>
 
 Enumerate devices on the system. An enabled device appears with status **Started**; a disabled device appears as **Disabled**.
 
@@ -158,7 +158,7 @@ Enumerate all devices with specific bus
 pnputil /enum-devices /bus "PCI"
 ```
 
-## <a id="enum-drivers">:::no-loc text="/enum-drivers":::</a>
+## <span class="no-loc">/enum-drivers</span> <a id="enum-drivers"></a>
 
 Enumerate OEM driver packages
 
@@ -178,7 +178,7 @@ Enumerate all OEM driver packages and display driver files
 pnputil /enum-drivers /files
 ```
 
-## <a id="enum-interfaces">:::no-loc text="/enum-interfaces":::</a>
+## <span class="no-loc">/enum-interfaces</span> <a id="enum-interfaces"></a>
 
 Enumerate only enabled interfaces on the system
 
@@ -192,7 +192,7 @@ Enumerate all interfaces with specific interface class GUID
 pnputil /enum-interfaces /class "{884b96c3-56ef-11d1-bc8c-00a0c91405dd}"
 ```
 
-## <a id="export-driver">:::no-loc text="/export-driver":::</a>
+## <span class="no-loc">/export-driver</span> <a id="export-driver"></a>
 
 Export driver package
 
@@ -206,7 +206,7 @@ Export all driver packages
 pnputil /export-driver * c:\backup
 ```
 
-## <a id="remove-device">:::no-loc text="/remove-device":::</a>
+## <span class="no-loc">/remove-device</span> <a id="remove-device"></a>
 
 Remove device specified by device instance ID
 
@@ -226,7 +226,7 @@ Remove all devices of a specific class on a specific bus
 pnputil /remove-device /class "USB" /bus "PCI"
 ```
 
-## <a id="restart-device">:::no-loc text="/restart-device":::</a>
+## <span class="no-loc">/restart-device</span> <a id="restart-device"></a>
 
 Restart device specified by device instance ID
 
@@ -246,7 +246,7 @@ Restart all devices of a specific class on a specific bus
 pnputil /restart-device /class "USB" /bus "PCI"
 ```
 
-## <a id="scan-devices">:::no-loc text="/scan-devices":::</a>
+## <span class="no-loc">/scan-devices</span> <a id="scan-devices"></a>
 
 Scan the system for any device hardware changes. Use this command after connecting new hardware to force Windows to detect it.
 
@@ -256,7 +256,7 @@ pnputil /scan-devices
 
 After scanning, use /enum-devices /connected to verify your new device was detected.
 
-## <a id="enum-devicetree">:::no-loc text="/enum-devicetree":::</a>
+## <span class="no-loc">/enum-devicetree</span> <a id="enum-devicetree"></a>
 
 Enumerate device tree
 
@@ -288,7 +288,7 @@ Enumerate tree and display device stack information, interfaces, drivers and ser
 pnputil /enum-devicetree /stack /interfaces /drivers /services
 ```
 
-## <a id="enum-containers">:::no-loc text="/enum-containers":::</a>
+## <span class="no-loc">/enum-containers</span> <a id="enum-containers"></a>
 
 Enumerate all device containers on the system
 
