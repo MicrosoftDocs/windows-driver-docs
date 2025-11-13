@@ -9,15 +9,17 @@ ms.date: 11/11/2025
 ms.topic: feature-availability
 ---
 # Previous WDK versions and other Downloads
-This page contains links to earlier WDK releases some of which are no longer serviced or supported by Microsoft. To develop Windows drivers, always use the [latest WDK version](download-the-wdk.md)
+This page provides links to previous version of WDK. Some of these releases are no longer serviced or supported by Microsoft. For developing Windows drivers, always use the  [latest WDK version](download-the-wdk.md) to ensure compatibility, security and access to the most up-to-date tools.
 > [!IMPORTANT]
 > Some installers might be susceptible to security vulnerabilities (including [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187)). These versions of the WDK are not recommended for production driver development.
 
 ## Current WDK Releases
 
-The following table lists the current and recommended WDK versions, along with their usage guidance. WDK version 25H2 is the latest WDK for general driver development. Use 26H1 only if you are developing drivers for specialized silicon
+The following table lists the current and recommended WDK versions, along with their usage guidance. 
+- **WDk version 25H2**: This is default kit recommended for general purpose Windows driver development.
+- **WDK version 26H1**: Use 26H1 only if you are developing drivers for specialized silicon
 
-| Windows Version         | Build Number   | Supported Visual Studio | SDK | WDK | EWDK | NuGet | WDK Susceptible to CVE-2024-29187 | Comments |
+| Windows Version         | Build Number   | Supported Visual Studio | SDK | WDK | EWDK | NuGet | Impacted by CVE-2024-29187 | Comments |
 |--------------------------|---------------|--------------------------|-----|-----|------|-------|------------------------------------|----------|
 | Windows 11 25H2 (Ge)    | 26100.6584   | VS 2022                | [SDK](https://go.microsoft.com/fwlink/?linkid=2338977) | [WDK](https://go.microsoft.com/fwlink/?linkid=2335869) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2335681) | [NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.26100.6584) | No | This is the default recommended kit for Windows driver development |
 | Windows 11 26H1 (Br)    | 28000.1    | VS 2022                | [SDK](https://go.microsoft.com/fwlink/?linkid=2320455) | [WDK](https://go.microsoft.com/fwlink/?linkid=2324617) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2324618) | [NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.26100.4204) | No | 26H1 is not a feature update for 25H2 and only includes platform changes to support specific silicon. Use only if you need these changes. For details see [Announcing Windows 11 Insider Preview Build 28000](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fblogs.windows.com%2Fwindows-insider%2F2025%2F11%2F07%2Fannouncing-windows-11-insider-preview-build-28000-canary-channel%2F&data=05%7C02%7Cpauleze%40microsoft.com%7C498c0503d8c84aa195b708de2249f8c0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638985898291940431%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2FYAhAgrFpJPAoPoMxaqrb%2FRoYooyRr%2FeMeCA5L7zFkg%3D&reserved=0) |
@@ -25,9 +27,13 @@ The following table lists the current and recommended WDK versions, along with t
 
 ## Legacy WDK Releases
 
-The following table lists legacy WDK releases, their compatibility, and support status. We recommend these to be used only for reference or nonproduction purposes.
+The following table lists legacy Windows Driver Kit (WDK) releases, their corresponding SDK and Visual Studio versions, and their susceptibility to CVE-2024-29187.
+These versions are provided only for reference or non-production use. For developing Windows drivers, always use the latest WDK version to ensure security and compatibility.
 
-| Windows Version         | Build Number   | Supported Visual Studio | SDK | WDK | EWDK | NuGet | WDK Susceptible to CVE-2024-29187 | Comments |
+> [!Note]
+> The referenced CVE impacts only WDK MSI. The EWDK and WDK NuGet is not impacted.
+
+| Windows Version         | Build Number   | Supported Visual Studio | SDK | WDK | EWDK | NuGet |Impacted by CVE-2024-29187 | Comments |
 |--------------------------|---------------|--------------------------|-----|-----|------|-------|------------------------------------|----------|
 | Windows 11 24H2 (Ge)    | 26100.4204    | VS 2022                | [SDK](https://go.microsoft.com/fwlink/?linkid=2320455) | [WDK](https://go.microsoft.com/fwlink/?linkid=2324617) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2324618) | [NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.26100.4204) | No |  |
 | Windows 11 24H2 (Ge)    | 26100.3323    | VS 2022                | [SDK](https://go.microsoft.com/fwlink/?linkid=2305205) | [WDK](https://go.microsoft.com/fwlink/?linkid=2307500) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2303317) | [NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.26100.3323) | No |  |
@@ -52,16 +58,11 @@ The following table lists legacy WDK releases, their compatibility, and support 
 | Windows 8               | 9200          | VS 2012                | [SDK](https://go.microsoft.com/fwlink/p/?LinkId=226658) | [WDK](https://go.microsoft.com/fwlink/p/?LinkID=324284) | N/A | N/A | Yes |  |
 | Windows 7               | 7600          | VS 2010                | [SDK](https://go.microsoft.com/fwlink/?LinkID=191424) | [WDK](https://www.microsoft.com/en-sg/download/details.aspx?id=11800) | N/A | N/A | Yes |  |
 
-
 ## Guidance
 
-- **Security**: These installers might have known vulnerabilities, including [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187), and aren't recommended for production driver development. Use at your own risk
-> [!Note]
-> The referenced CVE impacts to only WDK MSI. The EWDK and WDK NuGet is not impacted.
-- **Support**: Only the latest WDK and certain LTSC/Premium Assurance releases receive support.
-- **Compatibility**: Check required Visual Studio and SDK version before installing any WDK release.
-- **Legacy Usage**: Avoid legacy releases for new development. If necessary, isolate build environments and don't use on production systems.
-- **Contact Us**: Reach out via the [feedback form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or email [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
+- **Compatibility**: Verify the required Visual Studio and SDK version before installing any WDK release.
+- **Legacy Usage**: Do not use legacy releases for new development. If unavoidable, isolate build environments and ensure they are not deployed on production systems
+- **Contact Us**: Share feedback or question through the [feedback form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or email [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
 
 ## See Also
 
