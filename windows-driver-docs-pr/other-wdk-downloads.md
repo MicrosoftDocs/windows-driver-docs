@@ -15,9 +15,9 @@ The following table list the current and recommended WDK.
 | Windows Version         | Build Number   | Supported Visual Studio | SDK | WDK | EWDK | NuGet | WDK Susceptible to CVE-2024-29187 | Comments |
 |--------------------------|---------------|--------------------------|-----|-----|------|-------|------------------------------------|----------|
 | Windows 11 26H1 (Br)    | 28000.1    | VS 2022                | [SDK](https://go.microsoft.com/fwlink/?linkid=2320455) | [WDK](https://go.microsoft.com/fwlink/?linkid=2324617) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2324618) | [NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.26100.4204) | No | 26H1 is not a feature update for 25H2 and only includes platform changes to support specific silicon. Use only if you need these changes. For details see [Announcing Windows 11 Insider Preview Build 28000 |
-| Windows 11 25H2 (Ge)    | 26100.6584   | VS 2022                | [SDK](https://go.microsoft.com/fwlink/?linkid=2338977) | [WDK](https://go.microsoft.com/fwlink/?linkid=2335869) | [EWDK](https://learn.microsoft.com/en-us/legal/windows/hardware/enterprise-wdk-license-2022) | [NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.26100.6584) | No | This is the default recommended kit for Windows driver development |
+| Windows 11 25H2 (Ge)    | 26100.6584   | VS 2022                | [SDK](https://go.microsoft.com/fwlink/?linkid=2338977) | [WDK](https://go.microsoft.com/fwlink/?linkid=2335869) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2335681) | [NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.26100.6584) | No | This is the default recommended kit for Windows driver development |
 
-# Windows Driver Kit Archive
+## Windows Driver Kit Archive
 This archive contains links to earlier WDK releases that are mpt serviced or supported by Microsoft. To develop Windows drivers, always use the [latest WDK version](download-the-wdk.md)
 > [!IMPORTANT]
 > Some installers might be susceptible to security vulnerabilities (including [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187)). These versions of the WDK aren't recommended for production driver development.
