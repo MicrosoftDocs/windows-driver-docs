@@ -5,7 +5,7 @@ keywords:
 - Windows Driver Kit
 - previous versions
 - WDK
-ms.date: 11/11/2025
+ms.date: 11/13/2025
 ms.topic: feature-availability
 ---
 
