@@ -16,7 +16,7 @@ This page provides links to previous version of WDK. Some of these releases are 
 ## Current WDK Releases
 
 The following table lists the current and recommended WDK versions, along with their usage guidance. 
-- **WDk version 25H2**: This is default kit recommended for general purpose Windows driver development.
+- **WDK version 25H2**: This is default kit recommended for general purpose Windows driver development.
 - **WDK version 26H1**: Use 26H1 only if you are developing drivers for specialized silicon
 
 | Windows Version         | Build Number   | Supported Visual Studio | SDK | WDK | EWDK | NuGet | Impacted by CVE-2024-29187 | Comments |
