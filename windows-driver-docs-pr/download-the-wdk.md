@@ -18,9 +18,9 @@ Use the WDK to develop, test, and deploy drivers for Windows.
 - Use the latest release WDK to build drivers for Windows 10, Windows Server 2016, and later client and server versions.
 
 > [!IMPORTANT]
-> 1. We recommend that developers use the latest WDK for driver development. If you need to target older versions of Windows, follow the guidance in [Building Drivers for Previous OS Releases Using the Latest Windows Driver Kit (WDK)](https://techcommunity.microsoft.com/blog/windowsdriverdev/building-drivers-for-previous-os-releases-using-the-latest-windows-driver-kit-wd/4374910)
-> 2. Looking for earlier WDK versions? Visit [Other-wdk-downloads](other-wdk-downloads.md)
-> 3. WDK version 28000.1 (26H1) is available on [Other-wdk-downloads](other-wdk-downloads.md). This release includes platform changes to support specific silicon and should be used only if you require thise changes.
+> 1. We recommend using the latest WDK for driver development. If you need to target older versions of Windows, follow the guidance in [Building Drivers for Previous OS Releases Using the Latest Windows Driver Kit (WDK)](https://techcommunity.microsoft.com/blog/windowsdriverdev/building-drivers-for-previous-os-releases-using-the-latest-windows-driver-kit-wd/4374910)
+> 1. Looking for earlier WDK versions? Visit [Other-wdk-downloads](other-wdk-downloads.md)
+> 1. WDK version 28000.1 (26H1) is available on [Other-wdk-downloads](other-wdk-downloads.md). This release includes platform changes to support specific silicon and should be used only if you require thise changes.
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://aka.ms/wipwdk). For installation instructions for Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](./installing-preview-versions-wdk.md).
 
@@ -37,7 +37,7 @@ Beginning with WDK version 10.0.26100.1, the WDK supports the development, testi
 The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2022 System Requirements](/visualstudio/releases/2022/system-requirements).
 
 > [!IMPORTANT]
-> Please do not use Visual Studio 2026 for Windows driver development at this time. The WDK has not yet been validated with Visual Studio 2026, and compatibility is not guaranteed. Continue using Visual Studio 2022 for all driver development. We will update this page when Visual Studio 2026 is officially supported by WDK.
+> Don't use Visual Studio 2026 for Windows driver development at this time. The WDK has not yet been validated with Visual Studio 2026, and compatibility is not guaranteed. Continue using Visual Studio 2022 for all driver development. We will update this page when Visual Studio 2026 is officially supported by WDK.
 
 Driver development for this release is supported in Visual Studio 2022 Community, Professional, or Enterprise edition.
 
