@@ -27,8 +27,8 @@ The following table lists the current and recommended WDK versions, along with t
 
 ## Legacy WDK Releases
 
-The following table lists legacy Windows Driver Kit (WDK) releases, their corresponding SDK and Visual Studio versions, and their susceptibility to CVE-2024-29187.
-These versions are provided only for reference or non-production use. For developing Windows drivers, always use the latest WDK version to ensure security and compatibility.
+The following table lists legacy WDK releases, their corresponding SDK and Visual Studio versions, and their susceptibility to [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187).
+Except for WDK version 22621 and 22000, these versions are provided only for reference or non-production use. For developing Windows drivers, always use the latest WDK version to ensure security and compatibility.
 
 > [!Note]
 > The referenced CVE impacts only WDK MSI. The EWDK and WDK NuGet is not impacted.
