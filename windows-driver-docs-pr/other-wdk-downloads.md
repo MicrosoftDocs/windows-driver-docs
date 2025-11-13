@@ -8,16 +8,16 @@ keywords:
 ms.date: 11/11/2025
 ms.topic: feature-availability
 ---
-# Previous WDK versions and other Downloads
-This page provides links to previous version of WDK. Some of these releases are no longer serviced or supported by Microsoft. For developing Windows drivers, always use the  [latest WDK version](download-the-wdk.md) to ensure compatibility, security and access to the most up-to-date tools.
+# Other WDK Downloads
+This page provides links to previous versions of WDK. Some releases are no longer serviced or supported by Microsoft. For developing Windows drivers, always use the  [latest WDK version](download-the-wdk.md) to ensure compatibility, security and access to the most up-to-date tools.
 > [!IMPORTANT]
 > Some installers might be susceptible to security vulnerabilities (including [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187)). These versions of the WDK are not recommended for production driver development.
 
 ## Current WDK Releases
 
 The following table lists the current and recommended WDK versions, along with their usage guidance. 
-- **WDK version 25H2**: This is default kit recommended for general purpose Windows driver development.
-- **WDK version 26H1**: Use 26H1 only if you are developing drivers for specialized silicon
+- **WDK version 25H2**: Recommended for general-purpose driver development.
+- **WDK version 26H1**: Use only when developing drivers for specialized silicon.
 
 | Windows Version         | Build Number   | Supported Visual Studio | SDK | WDK | EWDK | NuGet | Impacted by CVE-2024-29187 | Comments |
 |--------------------------|---------------|--------------------------|-----|-----|------|-------|------------------------------------|----------|
@@ -28,7 +28,7 @@ The following table lists the current and recommended WDK versions, along with t
 ## Legacy WDK Releases
 
 The following table lists legacy WDK releases, their corresponding SDK and Visual Studio versions, and their susceptibility to [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187).
-Except for WDK version 22621 and 22000, these versions are provided only for reference or non-production use. For developing Windows drivers, always use the latest WDK version to ensure security and compatibility.
+Except for WDK versions 22621 and 22000, all other releases are provided only for reference or non-production use. For developing Windows drivers, always use the latest WDK version to ensure security and compatibility.
 
 > [!Note]
 > The referenced CVE impacts only WDK MSI. The EWDK and WDK NuGet is not impacted.
