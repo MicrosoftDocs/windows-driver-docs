@@ -18,7 +18,7 @@ Use the WDK to develop, test, and deploy drivers for Windows.
 - Use the latest release WDK to build drivers for Windows 10, Windows Server 2016, and later client and server versions.
 
 > [!IMPORTANT]
-> 1. We recommend using the latest WDK for driver development. If you need to target older versions of Windows, follow the guidance in [Building Drivers for Previous OS Releases Using the Latest Windows Driver Kit (WDK)](https://techcommunity.microsoft.com/blog/windowsdriverdev/building-drivers-for-previous-os-releases-using-the-latest-windows-driver-kit-wd/4374910)
+> 1. We recommend using the latest WDK 26100.6584 for driver development. If you need to target older versions of Windows, follow the guidance in [Building Drivers for Previous OS Releases Using the Latest Windows Driver Kit (WDK)](https://techcommunity.microsoft.com/blog/windowsdriverdev/building-drivers-for-previous-os-releases-using-the-latest-windows-driver-kit-wd/4374910)
 > 1. Looking for earlier WDK versions? Visit [Other-wdk-downloads](other-wdk-downloads.md)
 > 1. WDK version 28000.1 (26H1) is available on [Other-wdk-downloads](other-wdk-downloads.md). This release includes platform changes to support specific silicon and should be used only if you require these changes.
 
