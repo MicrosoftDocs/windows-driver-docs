@@ -11,7 +11,7 @@ ms.topic: concept-article
 
 Microsoft Windows-based operating systems support several types of kernel-mode network drivers. This topic briefly describes the supported types of network drivers and explains which articles you should read before writing each type of network driver.
 
-The most recent version of the Network Driver Interface Specification (NDIS) interface is version [**6.89**](introduction-to-ndis-6-89.md). For more information on all supported versions of NDIS and their features, see [Overview of NDIS versions](overview-of-ndis-versions).
+The most recent version of the Network Driver Interface Specification (NDIS) interface is version [**6.89**](introduction-to-ndis-6-89.md). For more information on all supported versions of NDIS and their features, see [Overview of NDIS versions](overview-of-ndis-versions.md).
 
 ## Supported driver types
 
