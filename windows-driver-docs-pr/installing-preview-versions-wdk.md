@@ -7,7 +7,7 @@ keywords:
 - Insider Preview
 - Download
 - drivers
-ms.date: 07/14/2025
+ms.date: 11/13/2025
 ms.topic: concept-article
 ---
 
@@ -25,7 +25,7 @@ This procedure installs the WDK Insider Preview. You install Visual Studio with 
 
 To install Visual Studio and the necessary workload or component, follow these steps:
 
-1. Download [Visual Studio 2022](/visualstudio/releases/2022).
+1. Download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2022-and-other-products).
 
    The WDK supports Visual Studio 2022, all editions. The WDK no longer supports Visual Studio 2019.
 

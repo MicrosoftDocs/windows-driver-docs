@@ -1,7 +1,7 @@
 ---
 title: Write a UMDF 2 Based on a Template
 description: How to write a Universal Windows driver using User-Mode Driver Framework (UMDF) 2. You'll start with a Microsoft Visual Studio template.
-ms.date: 12/09/2024
+ms.date: 11/13/2025
 ms.topic: tutorial
 ---
 
@@ -12,7 +12,7 @@ This topic describes how to write a *Universal Windows driver* using User-Mode D
 ## Prerequisites
 
 - Follow the steps to install [Windows Driver Kit (WDK)](../download-the-wdk.md). [Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
-- Install [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/). When you install Visual Studio 2022, select the **Desktop development with C++** workload, then under **Individual Components** add:
+- Install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2022-and-other-products). When you install Visual Studio 2022, select the **Desktop development with C++** workload, then under **Individual Components** add:
 
     - MSVC v143 - VS 2022 C++ ARM64/ARM64EC Spectre-mitigated libs (Latest)
     - MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
@@ -24,8 +24,8 @@ This topic describes how to write a *Universal Windows driver* using User-Mode D
 
 ## Create and build a driver
 
->[!NOTE]
->When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
+> [!NOTE]
+> When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
 
 1. Open Visual Studio. On the **File** menu, choose **New &gt; Project**.
 1. In the **Create a new project** dialog box, select **C++** in the left dropdown, choose **Windows** in the middle dropdown, and choose **Driver** in the right dropdown.
@@ -38,7 +38,7 @@ This topic describes how to write a *Universal Windows driver* using User-Mode D
 
 1. In the **Configure your new project** dialog box, enter "UmdfDriver" in the **Project name** field.
 
-     > [!NOTE]
+    > [!NOTE]
     > When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.  
 
 1. In the **Location** field, enter the directory where you want to create the new project.
@@ -75,15 +75,16 @@ Typically when you test and debug a driver, the debugger and driver run on separ
 > So far, you've used Visual Studio to build a driver on the host computer. Now you need to configure a target computer. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md). Then you'll be ready to deploy, install, load, and debug your driver.
 
 1. On the host computer, open your solution in Visual Studio. You can double-click the solution file, UmdfDriver.sln, in your UmdfDriver folder.
-2. In the **Solution Explorer** window, select and hold (or right-click) **UmdfDriver**, and choose **Properties**.
-3. In the **UmdfDriver Property Pages** window, go to **Configuration Properties &gt; Driver Install &gt; Deployment**, as shown here.
-4. Check **Remove previous driver versions before deployment**.
-5. For **Target Device Name**, select the name of the computer that you configured for testing and debugging.
-6. Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. In this exercise, the hardware ID is Root\\UmdfDriver. Select **OK**.
+1. In the **Solution Explorer** window, select and hold (or right-click) **UmdfDriver**, and choose **Properties**.
+1. In the **UmdfDriver Property Pages** window, go to **Configuration Properties &gt; Driver Install &gt; Deployment**, as shown here.
+1. Check **Remove previous driver versions before deployment**.
+1. For **Target Device Name**, select the name of the computer that you configured for testing and debugging.
+1. Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. In this exercise, the hardware ID is Root\\UmdfDriver. Select **OK**.
 
     :::image type="content" source="images/vs2019-umdf2-deploy.png" alt-text="screen shot of the umdfdriver property pages, showing deployment driver install selected":::
 
-    **Note**  In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](./device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**.
+    > [!NOTE]
+    > In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](./device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**.
     You can see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **UmdfDriver &gt; Driver Files**, and double-click UmdfDriver.inf. The hardware ID is under \[Standard.NT$ARCH$\].
 
     ```ManagedCPlusPlus
@@ -91,8 +92,8 @@ Typically when you test and debug a driver, the debugger and driver run on separ
     %DeviceName%=MyDevice_Install,Root\UmdfDriver
     ```
 
-7. On the **Debug** menu, choose **Start Debugging**, or press **F5** on the keyboard.
-8. Wait until your driver has been deployed, installed, and loaded on the target computer. This might take several minutes.
+1. On the **Debug** menu, choose **Start Debugging**, or press **F5** on the keyboard.
+1. Wait until your driver has been deployed, installed, and loaded on the target computer. This might take several minutes.
 
 ## Using the Driver Module Framework (DMF)
 
@@ -104,10 +105,8 @@ DMF does not replace WDF. DMF is a second framework that is used with WDF. The d
 
 For more info, see [Driver Module Framework (DMF)](https://github.com/Microsoft/DMF).
 
-## Related topics
+## Related articles
 
-[Developing, Testing, and Deploying Drivers](../develop/index.md)
-
-[Debugging Tools for Windows](../debugger/index.md)
-
-[Write your first driver](writing-your-first-driver.md)
+- [Developing, Testing, and Deploying Drivers](../develop/index.md)
+- [Debugging Tools for Windows](../debugger/index.md)
+- [Write your first driver](writing-your-first-driver.md)

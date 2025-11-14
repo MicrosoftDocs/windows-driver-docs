@@ -1,7 +1,7 @@
 ---
 title: Write a Universal Windows Driver (KMDF) Based on a Template
 description: This topic describes how to write a Universal Windows driver using Kernel-Mode Driver Framework (KMDF). 
-ms.date: 12/09/2024
+ms.date: 11/13/2025
 ms.topic: tutorial
 ---
 
@@ -12,7 +12,7 @@ This topic describes how to write a *Universal Windows driver* using Kernel-Mode
 ## Prerequisites
 
 - Follow the steps to install [Windows Driver Kit (WDK)](../download-the-wdk.md). [Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
-- Install [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/). When you install Visual Studio 2022, select the **Desktop development with C++** workload, then under **Individual Components** add:
+- Install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2022-and-other-products). When you install Visual Studio 2022, select the **Desktop development with C++** workload, then under **Individual Components** add:
 
     - MSVC v143 - VS 2022 C++ ARM64/ARM64EC Spectre-mitigated libs (Latest)
     - MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
@@ -180,7 +180,7 @@ DMF does not replace WDF. DMF is a second framework that is used with WDF. The d
 
 For more info, see [Driver Module Framework (DMF)](https://github.com/Microsoft/DMF).
 
-## Related topics
+## Related articles
 
 - [Developing, Testing, and Deploying Drivers](../develop/index.md)
 - [Debugging Tools for Windows](../debugger/index.md)
