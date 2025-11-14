@@ -1,67 +1,47 @@
 ---
-title: Navigating the Network Driver Design Guide
-description: Navigating the Network Driver Design Guide
+title: Learn about supported driver type
+description: Learn about supported NDIS driver types for Windows-based operating systems.
 keywords:
 - network drivers WDK , documentation
-ms.date: 04/20/2017
+ms.date: 11/14/2025
 ms.topic: concept-article
 ---
 
-# Navigating the Network Driver Design Guide
+# Learn about supported driver types
 
+Microsoft Windows-based operating systems support several types of kernel-mode network drivers. This topic briefly describes the supported types of network drivers and explains which articles you should read before writing each type of network driver.
 
+The most recent version of the Network Driver Interface Specification (NDIS) interface is version [**6.89**](introduction-to-ndis-6-89.md). For more information on all supported versions of NDIS and their features, see [Overview of NDIS versions](overview-of-ndis-versions).
 
-
-
-Microsoft Windows-based operating systems support several types of kernel-mode network drivers. The Network section of the Windows Driver Kit (WDK) documentation describes how to write these network drivers. This topic briefly describes the supported types of network drivers and explains which sections of the Network section you should read before writing each type of network driver.
-
-This network driver design guide documents the following Network Driver Interface Specification (NDIS) interfaces:
-
--   NDIS 6.40, which is supported on Windows 8.1, Windows Server 2012 R2, and later versions of Windows. NDIS 6.30 includes support for Network Direct Kernel Provider Interface (NDKPI) 1.12.
-
-    For more information about NDIS 6.30, see [Introduction to NDIS 6.40](introduction-to-ndis-6-40.md).
-
--   NDIS 6.30, which is supported on Windows 8, Windows Server 2012, and later versions of Windows. NDIS 6.30 includes support for single root/I/O virtualization (SR-IOV), Hyper-V extensible switch, Network Direct Kernel Provider Interface (NDKPI) 1.1, and other services.
-
-    For more information about NDIS 6.30, see [Introduction to NDIS 6.30](introduction-to-ndis-6-30.md).
-
--   NDIS 6.20, which is supported on Windows 7, Windows Server 2008 R2, and later versions of Windows. NDIS 6.20 includes support for Virtual Machine Queue (VMQ), receive side throttle, and other services.
-
-    For more information about NDIS 6.20, see [Introduction to NDIS 6.20](introduction-to-ndis-6-20.md).
-
--   NDIS 6.1, which is supported on Windows Vista with Service Pack 1 (SP1), Windows Server 2008, and later versions of Windows. NDIS 6.1 includes support for header-data split, direct OID requests, and other services.
-
-    For more information about NDIS 6.1, see [Introduction to NDIS 6.1](introduction-to-ndis-6-1.md).
-
--   NDIS 6.0, which is supported on Windows Vista and later versions of Windows. NDIS 6.0 includes support for filter drivers and many additional services that were not provided by earlier NDIS versions. NDIS 6.0 includes major updates to driver initialization and network data management including required support for driver reconfiguration at runtime and the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) architecture for handling network packet data. For more information about supporting runtime reconfiguration, see [Driver Stack Management](driver-stack-management.md). For more information about how to handle network packet data in NDIS 6.0 see [NET\_BUFFER Architecture](net-buffer-architecture.md).
-
-    For more information about NDIS 6.0, see [Introduction to NDIS 6.0](introduction-to-ndis-6-0.md).
+## Supported driver types
 
 Windows Vista and later operating system versions support the following types of kernel-mode NDIS-based network drivers:
 
-<a href="" id="miniport-drivers"></a>[Miniport Drivers](learning-about-miniport-drivers.md)  
-A *miniport driver* manages miniport adapters and provides an interface to the adapters for higher-level drivers. A *miniport adapter* is a conceptual entity that can represent either a physical device or a virtual device. For example, a miniport adapter can represent a network interface card (NIC) or a virtual device that is associated with an intermediate driver.
+### Miniport Drivers
+  
+A [*miniport driver*](learning-about-miniport-drivers.md) manages miniport adapters and provides an interface to the adapters for higher-level drivers. A *miniport adapter* is a conceptual entity that can represent either a physical device or a virtual device. For example, a miniport adapter can represent a network interface card (NIC) or a virtual device that is associated with an intermediate driver.
 
 There are many variations of miniport drivers, such as a *connection-oriented miniport call manager (MCM),* a *Windows Driver Model (WDM) miniport driver,* and the upper edge of an intermediate driver.
 
-<a href="" id="protocol-drivers"></a>[Protocol Drivers](learning-about-protocol-drivers.md)  
-A *protocol driver* provides high-level services in a driver stack. A protocol driver binds to underlying miniport adapters. An *upper-level protocol driver* implements an interface, possibly an application-specific interface, at its upper edge to provide services to users of the network. At its lower edge, a protocol driver provides a protocol interface to pass network data to and receive incoming data from the next-lower driver.
+### Protocol Drivers
+
+A [*protocol driver*](learning-about-protocol-drivers.md) provides high-level services in a driver stack. A protocol driver binds to underlying miniport adapters. An *upper-level protocol driver* implements an interface, possibly an application-specific interface, at its upper edge to provide services to users of the network. At its lower edge, a protocol driver provides a protocol interface to pass network data to and receive incoming data from the next-lower driver.
 
 There are many variations of protocol drivers, such as a *connection-oriented call manager (MCM), a connection-oriented client,* and the lower edge of an intermediate driver.
 
-<a href="" id="filter-drivers"></a>[Filter Drivers](learning-about-filter-drivers.md)  
-A *filter driver* filters information on the interface between protocol drivers and miniport drivers. *Filter modules* are attached in the binding between the protocol driver and the miniport adapter and are generally transparent to the other drivers. Filter drivers can implement *modifying or monitoring filters*. For example, a filter driver can enhance the services that the underlying miniport adapter provides or simply collect statistics.
+### Filter Drivers
 
-<a href="" id="intermediate-drivers"></a>[Intermediate Drivers](learning-about-intermediate-drivers.md)  
-An *intermediate driver* interfaces between upper-level protocol drivers and miniport drivers. Intermediate drivers provide a miniport driver interface at their upper-edge to bind to overlying protocol drivers. Intermediate drivers provide a protocol driver interface at their lower edge to bind to underlying miniport adapters. Intermediate drivers are typically used to implement *n* to *m* multiplexer services. For example, an intermediate driver can implement load balance and failover solutions.
+A [*filter driver*](learning-about-filter-drivers.md) filters information on the interface between protocol drivers and miniport drivers. *Filter modules* are attached in the binding between the protocol driver and the miniport adapter and are generally transparent to the other drivers. Filter drivers can implement *modifying or monitoring filters*. For example, a filter driver can enhance the services that the underlying miniport adapter provides or simply collect statistics.
+
+### Intermediate Drivers
+
+An [*intermediate driver*](learning-about-intermediate-drivers.md) interfaces between upper-level protocol drivers and miniport drivers. Intermediate drivers provide a miniport driver interface at their upper-edge to bind to overlying protocol drivers. Intermediate drivers provide a protocol driver interface at their lower edge to bind to underlying miniport adapters. Intermediate drivers are typically used to implement *n* to *m* multiplexer services. For example, an intermediate driver can implement load balance and failover solutions.
 
 Intermediate drivers can also manage hardware when they are configured as a *miniport-intermediate driver*.
 
-For more information about the Windows network architecture and programming considerations, see [Network Architecture for Kernel-Mode Drivers](windows-network-architecture-and-the-osi-model.md) and [Network Driver Programming Considerations](network-driver-programming-considerations.md).
+## Additional supported driver models
 
-For more information about network INF files, which are used to install network components, see [Installing Network Components](installing-network-components.md). If your network driver requires a notify object--for example, to control bindings--also see [Notify Objects for Network Components](notify-objects-for-network-components.md).
-
-The following additional driver models are available to use particular hardware technologies and architectures.
+The following driver models are available to use particular hardware technologies and architectures.
 
 <table>  
 <colgroup>  
@@ -126,12 +106,5 @@ The following additional driver models are available to use particular hardware 
 <td align="left"><p><a href="system-area-networks.md" data-raw-source="[System Area Networks](system-area-networks.md)">System Area Networks</a></p></td>
 <td align="left"><p>A type of network connection that uses Windows Sockets Direct to support a high-performance, connection-oriented network.</p></td>
 </tr>
-<tr class="odd">
-<td align="left"><p><a href="/previous-versions/ff570659(v=vs.85)" data-raw-source="[Remote NDIS (RNDIS)](/previous-versions/ff570659(v=vs.85))">Remote NDIS (RNDIS)</a></p></td>
-<td align="left"><p>A class specification that defines a system-provided, bus-independent message set over a USB bus.</p></td>
-</tr>
 </tbody>
 </table>
-
- 
-
