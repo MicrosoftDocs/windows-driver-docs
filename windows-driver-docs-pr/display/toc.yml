@@ -51,6 +51,8 @@
       href: tdr-debuggability-improvements.md
     - name: D3D12 AV1 video encoding
       href: video-encoding-d3d12-av1.md
+    - name: Generic programs
+      href: generic-programs.md
     - name: Work graphs
       href: work-graphs.md
     - name: Kernel-mode testing of WDDM features
