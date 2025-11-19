@@ -18,7 +18,7 @@ ai-usage: ai-assisted
 
 # WDDM overview
 
-The Windows Display Driver Model (WDDM) is the graphics display driver architecture for Windows. Microsoft introduced WDDM in Windows Vista (WDDM 1.0) and continues to evolve it with every Windows release. WDDM replaced the [legacy XDDM driver model]((/previous-versions/windows/drivers/display/windows-2000-display-driver-model-design-guide)) to enable advanced graphics features like the Desktop Window Manager (DWM), improved stability through fault tolerance and recovery, and better performance through efficient GPU scheduling and virtual memory management. This modern architecture enables Windows to support increasingly sophisticated graphics capabilities, from composited desktops to real-time raytracing and AI-powered graphics workloads.
+The Windows Display Driver Model (WDDM) is the graphics display driver architecture for Windows. Microsoft introduced WDDM in Windows Vista (WDDM 1.0) and continues to evolve it with every Windows release. WDDM replaced the [legacy XDDM driver model](/previous-versions/windows/drivers/display/windows-2000-display-driver-model-design-guide) to enable advanced graphics features like the Desktop Window Manager (DWM), improved stability through fault tolerance and recovery, and better performance through efficient GPU scheduling and virtual memory management. This modern architecture enables Windows to support increasingly sophisticated graphics capabilities, from composited desktops to real-time raytracing and AI-powered graphics workloads.
 
 Windows 8 (WDDM 1.2) requires WDDM.
 
