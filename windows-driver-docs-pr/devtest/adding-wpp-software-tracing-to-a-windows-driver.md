@@ -1,7 +1,7 @@
 ---
 title: Adding WPP Software Tracing to a Windows Driver
 description: To use WPP software tracing in a trace provider, such as a kernel-mode driver or a user-mode application, you need to add code (or instrument) the driver source files and modify the driver project. This section will describe those steps.
-ms.date: 04/20/2017
+ms.date: 11/18/2025
 ms.topic: how-to
 ---
 
@@ -123,7 +123,7 @@ Each trace message function that you use must have a corresponding pair of macro
 
 
 
-For the WPP macros you define, the *CONDITIONS* represent the conditions the trace message function supports, in the order they appear in the function's parameter list, separated by underscores. For example, the default trace message function, [**DoTraceMessage**](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)), only supports [Trace Flag](trace-level.md) as the condition, so there is only one parameter in the macro names (WPP\_LEVEL\_ENABLED).
+For the WPP macros you define, the *CONDITIONS* represent the conditions the trace message function supports, in the order they appear in the function's parameter list, separated by underscores. For example, the default trace message function, [**DoTraceMessage**](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)), only supports [Trace Flag](trace-flags.md) as the condition, so there is only one parameter in the macro names (WPP\_LEVEL\_ENABLED).
 
 **Note**  Unfortunately, the names of the default macros (WPP\_LEVEL\_ENABLED and WPP\_LEVEL\_LOGGER) seems to indicate the [Trace Level](trace-level.md) parameter, but they actually refer to the Trace Flag.
 
