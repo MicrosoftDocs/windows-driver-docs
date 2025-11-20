@@ -27,13 +27,13 @@ PnPUtil is built into Windows and is the recommended tool for managing driver pa
 
 Use `enum-drivers` to list third-party [driver packages](../install/driver-packages.md) in the [driver store](../install/driver-store.md).
 
-```console
+```dotnetcli
 pnputil /enum-drivers
 ```
 
 Use `/files` to list all third-party driver packages and display the associated driver files.
 
-```console
+```dotnetcli
 pnputil /enum-drivers /files
 ```
 
@@ -46,7 +46,7 @@ Use the `/format` and `/output-file` options to create reports of your installed
 
 This example command uses the PnPUtil utility to enumerate all third-party driver packages currently present on the system. It includes information about the associated driver files and outputs the results in CSV (Comma-Separated Values) format. The output is saved to a file named *MyDriverFileInventory.CSV*.
 
-```console
+```dotnetcli
 pnputil /enum-drivers /files /format CSV /output-file MyDriverFileInventory.CSV
 ```
 
@@ -58,25 +58,19 @@ Use these PowerShell scripts to find specific drivers on your system:
 
 This script identifies OEM driver packages that aren't installed on any devices (devices count = 0).
 
-```PowerShell
-$outputPath = "$env:temp\driversAndDevices.xml"
-pnputil /enum-drivers /devices /format xml /output-file $outputPath
-$doc = new-object xml
-$doc.load($outputPath)
-$doc.pnputil.driver | where {$_.devices.count -eq 0}
+```powershell
+$pnputilOutput = pnputil /enum-drivers /devices /format xml
+$pnputilOutput.pnputil.driver | where {$_.devices.count -eq 0}
 ```
 
 ### Example 2: Find driver packages with specific file types
 
 This script finds all OEM driver packages that contain files of a certain file extension, such as `.sys`.
 
-```PowerShell
-pnputil /enum-drivers /devices /files /format xml /output-file $outputPath
-$doc = new-object xml
-$doc.load($outputPath)
-$doc.pnputil.driver | where {$_.Files.File.Name -like "*.sys"}
-$sysDrivers = $doc.pnputil.driver | Where-Object {
-    $_.Files.File.Name -like "*.sys"}
+```powershell
+$pnputilOutput = pnputil /enum-drivers /devices /files /format xml
+$pnputilOutput.pnputil.driver | where {$_.Files.File.Name -like "*.sys"}
+$sysDrivers = $pnputilOutput.pnputil.driver | Where-Object {$_.Files.File.Name -like "*.sys"}
 Write-Host "Found $($sysDrivers.Count) driver(s) with .sys files.`n"
 ```
 
@@ -104,7 +98,7 @@ GetWindowsDriver -Online
 
 Other tools are available, but they have limitations. Use [PnPUtil](../devtest/pnputil.md) and the [Get-WindowsDriver commandlet](/powershell/module/dism/get-windowsdriver) instead.
 
-The Device Manager GUI provides an alternate view of driver information organized by device. This information includes the device type, device status, manufacturer, device-specific properties, and information about the driver files for a specific device. Use **View**, **Show hidden devices** to display additional information. For more information, see [Using Device Manager](../install/using-device-manager.md). Device Manager doesn't provide a way to list and parse driver packages. Use [PnPUtil](../devtest/pnputil.md) instead.
+The Device Manager GUI provides views of driver information organized by device (**View** -> **Drivers by device**), or devices organized by driver information (**View** -> **Devices by driver**). This information includes the device type, device status, manufacturer, device-specific properties, and information about the driver files for a specific device. Use **View** -> **Show hidden devices** to display additional information. For more information, see [Using Device Manager](../install/using-device-manager.md). 
 
 The System Information (Msinfo32.exe) tool lists drivers under **Software Environment**, **System Drivers**.  The displayed columns are sortable, allowing for grouping of driver state or type. For more information, see [Description of Microsoft System Information (Msinfo32.exe) Tool](https://support.microsoft.com/topic/description-of-microsoft-system-information-msinfo32-exe-tool-10d335d8-5834-90b4-8452-42c58e61f9fc). Msinfo32 doesn't provide a way to list and parse driver packages. Use [PnPUtil](../devtest/pnputil.md) instead.
 
@@ -118,7 +112,7 @@ Remove unnecessary drivers by using PnPUtil to reduce security risks and increas
 
 Locate the OEM driver name, such as *oem42.inf*, and use the following command to delete it:
 
-```Console
+```dotnetcli
 pnputil /delete-driver oem42.inf /uninstall 
 ```
 
