@@ -1,6 +1,6 @@
 ---
 title: Legacy and Unsupported WDK Versions
-description: Install versions of the Windows Driver Kit (WDK), the Enterprise Windows Driver Kit (EWDK), and WDK NuGet.
+description: Install legacy versions of Windows Drivers Kit (WDK), Enterprise Windows Drivers Kit (EWDK) or WDK NuGet Package for experimental or non-production use.
 keywords:
 - Windows Driver Kit
 - previous versions
