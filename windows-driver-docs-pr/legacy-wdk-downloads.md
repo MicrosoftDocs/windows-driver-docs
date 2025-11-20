@@ -14,7 +14,7 @@ ms.topic: feature-availability
 
 #  Legacy and Unsupported WDK versions
 
-The following table lists legacy and unsupported WDK versions, their corresponding SDK and Visual Studio versions where available. 
+The following table lists legacy and unsupported WDK versions, their corresponding SDK and Visual Studio versions where available. If you are developing a driver for the Windows platform, use one of the supported kits listed on the [supported WDK versions](./other-wdk-downlaods.md) table.
 
 > [!WARNING]
 > **Critical Security Notice:**
