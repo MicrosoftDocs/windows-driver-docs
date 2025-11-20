@@ -1,9 +1,12 @@
 ---
-title: Legacy and Unsupported WDK Versions
-description: Install legacy versions of Windows Drivers Kit (WDK), Enterprise Windows Drivers Kit (EWDK) or WDK NuGet Package for experimental or non-production use.
+title: Legacy and Unsupported WDK versions
+description: Download legacy WDK, EWDK, or WDK NuGet packages for reference or non-production use only.
 keywords:
 - Windows Driver Kit
 - previous versions
+- deprecated WDK
+- unsupported driver kits
+- security advisory
 - WDK
 ms.date: 11/13/2025
 ms.topic: feature-availability
@@ -13,10 +16,10 @@ ms.topic: feature-availability
 
 > [!WARNING]
 > **Critical Security Notice:**
-The following table lists legacy WDK releases, their corresponding SDK and Visual Studio versions. These releases contains components affected by [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187) and are **NOT safe for production driver development** and are provided only for reference or nonproduction use. For developing Windows drivers, always use the latest WDK version to ensure security and compatibility.
+The following table lists legacy WDK releases, their corresponding SDK and Visual Studio versions. These releases contain components affected by [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187) and are **NOT safe for production driver development** and are provided only for reference or nonproduction use. For developing Windows drivers, always use the latest WDK version to ensure security and compatibility.
 
 > [!NOTE]
-> The referenced CVE impacts WDK and SDK MSIs. The EWDK and WDK NuGet is not impacted.
+> The CVE affects WDK and SDK MSI installers only. EWDK and WDK NuGet packages are not impacted.
 
 | Windows Version | Build Number | Supported Visual Studio | SDK | WDK | EWDK | NuGet |
 |--|--|--|--|--|--|--|
