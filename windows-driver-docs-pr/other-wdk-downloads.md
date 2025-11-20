@@ -1,16 +1,18 @@
 ---
 title: Supported and other WDK download versions
-description: Install versions of the Windows Driver Kit (WDK), the Enterprise Windows Driver Kit (EWDK), and WDK NuGet.
+description: Download supported WDK, EWDK, and WDK NuGet packages for Windows driver development.
 keywords:
 - Windows Driver Kit
 - Enterprise Windows Driver Kit
 - WDK NuGet package
-- WDK
+- supported WDK versions
+- driver development kits
+- Windows driver tools
 ms.date: 11/19/2025
 ms.topic: how-to
 ---
 
-# Other WDK downloads
+# Other WDK Downloads
 
 This page contains download links to supported current and previous WDK versions. If you are developing drivers targeting x64 and ARM64 hardware on Windows 10, Windows 11 and Windows Server 2016 and later, always use the [latest WDK version](download-the-wdk.md) to ensure compatibility, security, and access to the most up-to-date tools. 
 
@@ -29,11 +31,12 @@ The following table lists the supported WDK versions, along with their usage gui
 | Windows 11 22H2 (Ni) | 22621.5337 | VS 2022 | N/A | [WDK](https://go.microsoft.com/fwlink/?linkid=2330411) | N/A | N/A | Supported for x86/arm32 driver development |
 | Windows 10 2004 (VB) | 19041.5738 | VS 2019 | N/A | [WDK](https://go.microsoft.com/fwlink/?linkid=2342425) | N/A | N/A | Supported for Windows 7/Windows 8/Windows 8.1 driver development.  |
 
+ If you are looking for older WDKs, that are neither supported nor recommended, they can be found on [Legacy and Unsupported Kits](./legacy-wdk-downloads.md) page. 
+
 ## Guidance
 
 - **Compatibility**: Verify the required Visual Studio and SDK version before installing any WDK release.
-- **Contact us**: Share feedback or question through the [feedback form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or email [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
-- **Legacy Unsupported Kits**: If you are looking for older WDKs, that are neither supported nor recommended, they can be found on [Legacy and Unsupported Kits](./legacy-wdk-downloads.md) page. These releases contains components affected by [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187) and are **NOT safe for production driver development** and are provided only for reference or nonproduction use. Use at your own risk
+- **Contact us**: Share feedback or questions through the [feedback form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or email [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
 
 
 ## See also
