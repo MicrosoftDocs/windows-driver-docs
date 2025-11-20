@@ -47,7 +47,6 @@ Some of these releases contain components affected by [CVE-2024-29187](https://m
 ## Guidance
 
 - **Compatibility**: Verify the required Visual Studio and SDK version before installing any WDK release.
-- **Usage**: **(*)** Unsupported SDK and WDK kits that are impacted by [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187).  
 - **Contact us**: Share feedback or question through the [feedback form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or email [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
 ## See also
 
