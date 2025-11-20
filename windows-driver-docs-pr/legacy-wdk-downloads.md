@@ -1,5 +1,5 @@
 ---
-title: Previous WDK Versions and Other Downloads
+title: Legacy and Unsupported WDK Versions
 description: Install versions of the Windows Driver Kit (WDK), the Enterprise Windows Driver Kit (EWDK), and WDK NuGet.
 keywords:
 - Windows Driver Kit
@@ -9,7 +9,7 @@ ms.date: 11/13/2025
 ms.topic: feature-availability
 ---
 
-##  Legacy and Unsupported WDK versions
+#  Legacy and Unsupported WDK versions
 
 > [!WARNING]
 > **Critical Security Notice:**
