@@ -16,7 +16,7 @@ ms.topic: feature-availability
 The following table lists legacy WDK releases, their corresponding SDK and Visual Studio versions. These releases contains components affected by [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187) and are **NOT safe for production driver development** and are provided only for reference or nonproduction use. For developing Windows drivers, always use the latest WDK version to ensure security and compatibility.
 
 > [!NOTE]
-> The referenced CVE impacts WDK and MSIs. The EWDK and WDK NuGet is not impacted.
+> The referenced CVE impacts WDK and SDK MSIs. The EWDK and WDK NuGet is not impacted.
 
 | Windows Version | Build Number | Supported Visual Studio | SDK | WDK | EWDK | NuGet |
 |--|--|--|--|--|--|--|
