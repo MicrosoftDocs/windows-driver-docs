@@ -12,7 +12,7 @@ ms.topic: how-to
 
 # Other WDK downloads
 
-This page provides download links to supported current and previous version of WDK. For driver development targeting x64 and ARM64 hardware on  Windows drivers for Windows 10, 11 and Windows Server 2012 and later, always use the [latest WDK version](download-the-wdk.md) to ensure compatibility, security, and access to the most up-to-date tools. 
+This page contains download links to supported current and previous WDK versions. If you are developing drivers targeting x64 and ARM64 hardware on Windows 10, Windows 11 and Windows Server 2016 and later, always use the [latest WDK version](download-the-wdk.md) to ensure compatibility, security, and access to the most up-to-date tools. 
 
 
 ## Supported WDK versions
