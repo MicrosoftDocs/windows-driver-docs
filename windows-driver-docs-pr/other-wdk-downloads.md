@@ -14,13 +14,9 @@ ms.date: 11/19/2025
 ms.topic: how-to
 ---
 
-# Other WDK Downloads
+# Supported WDK versions
 
-This page contains download links to supported WDKs. 
-
-## Supported WDK versions
-
-The following table lists the supported WDK versions, along with their usage guidance. If you are developing drivers targeting x64 and ARM64 hardware on Windows 10, Windows 11 and Windows Server 2016 and later, use the [latest WDK version](download-the-wdk.md) to ensure compatibility, security, and access to the most up-to-date tools. 
+The following table lists the supported WDK versions, along with their usage guidance. 
 
 | Windows Version | Build Number | Supported Visual Studio | SDK | WDK | EWDK | NuGet | Comments |
 |--|--|--|--|--|--|--|--|
@@ -32,6 +28,7 @@ The following table lists the supported WDK versions, along with their usage gui
  If you are looking for unsupported WDKs, they can be found on [legacy and unsupported WDKs](./legacy-wdk-downloads.md) page. 
 
 ## Guidance
+- **Usage Guidance**: If you are developing drivers targeting x64 and ARM64 hardware on Windows 10, Windows 11 and Windows Server 2016 and later, use the [latest WDK version](download-the-wdk.md) to ensure compatibility, security, and access to the most up-to-date tools. 
 - **Best Practice**: Always use the latest WDK for new driver development to ensure security and compatibility.
 - **Compatibility**: Verify the required Visual Studio and SDK version before installing any WDK release.
 - **Contact us**: Share feedback or questions through the [feedback form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or email [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
