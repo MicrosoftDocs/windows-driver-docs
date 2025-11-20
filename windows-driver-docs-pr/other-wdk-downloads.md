@@ -33,7 +33,8 @@ The following table lists the supported WDK versions, along with their usage gui
 
 - **Compatibility**: Verify the required Visual Studio and SDK version before installing any WDK release.
 - **Contact us**: Share feedback or question through the [feedback form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or email [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
-- **Legacy Unsupported Kits**: If you are looking for older WDKs, that are neither supported nor recommended, they can be found on [Legacy and Unsupported Kits](./legacy-wdk-downloads.md) page. **Do not use for production purposes**, these kits are only recommended for experimental and non-production use. Use at your own risk.
+- **Legacy Unsupported Kits**: If you are looking for older WDKs, that are neither supported nor recommended, they can be found on [Legacy and Unsupported Kits](./legacy-wdk-downloads.md) page. These releases contains components affected by [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187) and are **NOT safe for production driver development** and are provided only for reference or nonproduction use. Use at your own risk
+
 
 ## See also
 
