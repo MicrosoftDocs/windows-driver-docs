@@ -17,3 +17,5 @@
     href: implement-hvci-compatible-code.md
   - name: "Use BinSkim to check binaries"
     href: binskim-check-binaries.md
+  - name: Create an installed driver inventory
+    href: create-a-driver-inventory.md
