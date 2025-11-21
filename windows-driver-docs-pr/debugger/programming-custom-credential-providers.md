@@ -8,26 +8,26 @@ ms.topic: concept-article
 
 # Program custom credential providers
 
-Custom credential providers enable Windows debuggers to authenticate with symbol and source servers that use specialized authentication methods. This article shows you how to implement custom providers using DLLs, executables, or scripts.
+Custom credential providers enable Windows debuggers to authenticate with symbol and source servers that use specialized authentication methods. This article shows you how to implement custom providers by using DLLs, executables, or scripts.
 
-**What you'll learn:**
+**What you learn:**
 
-- Configure credential providers using XML
+- Configure credential providers by using XML
 - Implement providers as DLLs or executables
 - Test and troubleshoot your custom provider
 
-This topic describes how to program a custom credential provider for the Windows debugger. This allows for the use of additional symbol and source servers that require unique authentication types. The customization allows any type of authentication to be used that the server may require. 
+This article describes how to program a custom credential provider for the Windows debugger. With this provider, you can use additional symbol and source servers that require unique authentication types. The customization supports any type of authentication that the server requires. 
 
 There are two options: 
 
-- Custom provider implemented via an executable (or launched via CMD/BAT script).
-- Custom provider implemented as a DLL using the API interface described in this document.
+- Custom provider implemented through an executable (or launched through CMD/BAT script).
+- Custom provider implemented as a DLL by using the API interface described in this document.
 
 ## Windows debugger HTTPS authentication requests
 
-The Windows debuggers request symbols from a symbol server, and if the symbol server does not require authentication, the symbols are returned without the use of any credential providers. If the symbol server returns a HTTP_STATUS_DENIED 401 (Unauthorized Access / Access Denied) status code, this indicates to the debugger that authentication is required.  The 401 unauthorized code indicates that the request lacks valid authentication credentials for the target resource. This means the server is refusing to fulfill the request because the client has not provided the required authentication information. 
+The Windows debuggers request symbols from a symbol server. If the symbol server doesn't require authentication, the debuggers return the symbols without using any credential providers. If the symbol server returns a HTTP_STATUS_DENIED 401 (Unauthorized Access / Access Denied) status code, this status code indicates to the debugger that authentication is required. The 401 unauthorized code indicates that the request lacks valid authentication credentials for the target resource. This status code means the server refuses to fulfill the request because the client didn't provide the required authentication information. 
 
-If a custom credential provider is configured, it will be used and the credentials it returns, will be used to resend the failed with 401 error request. Configuring a custom credential provider, is covered in the next section of this topic.
+If you configure a custom credential provider, the debugger uses it and the credentials it returns to resend the failed request with the 401 error. The next section covers configuring a custom credential provider.
 
 ## XML configuration of the custom credential provider
 
@@ -36,25 +36,25 @@ To configure a custom credential provider, you need two XML files:
 1. **DbgCredentialProvider.config.xml** - Specifies where configuration files are located
 1. **Provider configuration XML** - Defines the provider implementation (DLL, EXE, or script)
 
-When a 401 unauthorized is returned, the debugger invokes DbgCredentialProvider.dll. This DLL looks for credential providers using the following process. It opens a file DbgCredentialProvider.config.xml which should be located in the same directory as DbgCredentialProvider.dll that provides the folder location of the configuration XML files. 
+When a 401 unauthorized error is returned, the debugger invokes DbgCredentialProvider.dll. This DLL looks for credential providers by following this process. It opens a file named DbgCredentialProvider.config.xml, which should be in the same directory as DbgCredentialProvider.dll. This file provides the folder location of the configuration XML files. 
 
 ### DbgCredentialProvider.config.xml search behavior
 
-The search behavior that is used to locate the DbgCredentialProvider.config.xml file is described here. Once DbgCredentialProvider.config.xml is found, it is opened and the search terminates. The search runs in the following order:
+The search behavior used to locate the DbgCredentialProvider.config.xml file is described here. Once the process finds DbgCredentialProvider.config.xml, it opens the file and ends the search. The search runs in the following order:
 
-1. It tries to locate the DbgCredentialProvider.config.xml file in the folder specified in `DBG_COMMON_FOLDER` environment variable, if it has been set.
-1. It tries to locate the DbgCredentialProvider.config.xml file in %LOCALAPPDATA%\Dbg\Common folder.
+1. It tries to locate the DbgCredentialProvider.config.xml file in the folder specified in the `DBG_COMMON_FOLDER` environment variable, if you set it.
+1. It tries to locate the DbgCredentialProvider.config.xml file in the `%LOCALAPPDATA%\Dbg\Common` folder.
 1. It tries to locate the DbgCredentialProvider.config.xml file in the folder of the calling application.
 1. It tries to locate the DbgCredentialProvider.config.xml file in the folder next to DbgCredentialProvider.dll.
 
 > [!NOTE]
-> **DBG_COMMON_FOLDER** is an environment variable that specifies the folder location for debugger configuration files. When set, the debugger searches this location first for `DbgCredentialProvider.config.xml` before checking any default locations.
+> **DBG_COMMON_FOLDER** is an environment variable that specifies the folder location for debugger configuration files. When you set it, the debugger searches this location first for `DbgCredentialProvider.config.xml` before checking any default locations.
 
 For information on how to set WinDbg-related environmental values, see [Environment Variables](environment-variables.md).
 
 ### XML configuration file location - DbgCredentialProvider.config.xml
 
-The config XML files are installed at the folder locations as specified in DbgCredentialProvider.config.xml.
+The installation process places the config XML files at the folder locations specified in DbgCredentialProvider.config.xml.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -72,15 +72,15 @@ The config file is located next to the DbgCredentialProvider.dll.
 </Settings>
 ```
 
-You can list more than one folder under `<Folders></Folders>` elements. The folders can be a relative or absolute path. If it's a relative path, it's relative to the location of the DbgCredentialProvider.config.xml file. The folders are searched for providers in the order listed.
+You can list more than one folder under `<Folders></Folders>` elements. The folders can be a relative or absolute path. If you specify a relative path, it's relative to the location of the DbgCredentialProvider.config.xml file. The debugger searches the folders for providers in the order listed.
 
 In the previous example, the `<Folders>` collection has just one folder, *CredentialProviders*, and it's a relative path.
 
 ### XML configuration information for the custom credential provider
 
-After the specified folder location is located, all files with the '*.xml*' extension in the *CredentialProviders* folder are enumerated. The XML files describe which debugger credential providers are available for the debugger. The credential providers (implemented in DLL, EXE or CMD/BAT scripts) location is described in the *CredentialProviders* XML file. The providers can be relative or absolute paths.
+After the debugger locates the specified folder location, it enumerates all files with the '*.xml*' extension in the *CredentialProviders* folder. The XML files describe which debugger credential providers are available for the debugger. The XML files describe the location of the credential providers (implemented in DLL, EXE, or CMD/BAT scripts). The providers' locations can be relative or absolute paths.
 
-Multiple custom credential providers are supported. The debugger asks every provider for credentials and it uses the credentials from the first provider which returns success.
+The debugger supports multiple custom credential providers. It asks every provider for credentials and uses the credentials from the first provider that returns success.
 
 The order in which the XML files are enumerated is unspecified.
 
@@ -99,7 +99,7 @@ The example DbgCredentialProvider_gcmw.xml file shows how a batch file can be ca
 </CredentialProviders>
 ```
 
-This example XML shows how a dll can be configured to be used as a credential provider.
+This example XML shows how to configure a DLL to be used as a credential provider.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -113,11 +113,11 @@ This example XML shows how a dll can be configured to be used as a credential pr
 </CredentialProviders>
 ```
 
-In this example, there's just one provider - DbgCredentialProvider_gcmw.dll - and it's located in the *GCMW* folder relative to the  DbgCredentialProvider_gcmw.xml file location.
+In this example, there's just one provider - DbgCredentialProvider_gcmw.dll - which is located in the *GCMW* folder relative to the DbgCredentialProvider_gcmw.xml file location.
 
 ### Multiple credential providers
 
-This example shows multiple credential providers. The providers are used, in the order listed, to get credentials for the requested host. As soon as one returns a valid token, that token is returned to the debugger and the following ones are not used.
+This example shows multiple credential providers. The providers are used, in the order listed, to get credentials for the requested host. As soon as one returns a valid token, that token is returned to the debugger and the following ones aren't used.
 
 ```xml
     <CredentialProviders> 
@@ -131,9 +131,9 @@ This example shows multiple credential providers. The providers are used, in the
 
 ## Use the command line to invoke the custom credential provider
 
-This section describes how the custom credential provider may be implemented as an EXE (or launched via CMD/BAT file command script). 
+This section describes how to implement the custom credential provider as an EXE or a CMD/BAT file command script. 
 
-If the provider is implemented in an EXE or a CMD script, it should be able to process the following command line parameters (case insensitive), which cannot be combined with each other.
+If you implement the provider as an EXE or a CMD script, design it to process the following command line parameters (case insensitive). You can't combine these parameters.
 
 - Get
 - Erase
@@ -141,13 +141,13 @@ If the provider is implemented in an EXE or a CMD script, it should be able to p
 
 ### Get command
 
-The **Get** command is used to retrieve a credential. The remaining data is passed to the provider via the standard input stream.
+Use the `Get` command to retrieve a credential. The provider receives the remaining data through the standard input stream.
 
-The additional input data is passed to the provider via the standard input stream, followed by an empty line to mark the end of the input parameters.
+The standard input stream passes the additional input data to the provider, followed by an empty line that marks the end of the input parameters.
 
-The parameters are not case sensitive, and any combination of upper and lower case can be used.
+The parameters aren't case sensitive, so you can use any combination of uppercase and lowercase letters.
 
-An error may be returned via `error=zzzzz`
+The provider can return an error through `error=zzzzz`.
 
 ```text
 Protocol=http or https
@@ -164,15 +164,15 @@ ParentHwnd=HWND
 
 | Field     | Type  |  Description   |
 |-----------|-------|--------------|
-| Protocol  | LPCWSTR  | HTTP or HTTPS. To increase security, HTTPS is strongly recommended. |
+| Protocol  | LPCWSTR  | HTTP or HTTPS. To increase security, use HTTPS. |
 | Host      | LPCWSTR  | The name of the host server, such as contoso.symbols.com |
 | Path      | LPCWSTR  | The path to the symbols directory, for example `apis/symbol/symsrv`. The caller/debugger makes sure that `Path` never starts with a '/' character |
-| ResourceKind | LPCWSTR  | It can be "symbols" or "sources". Additional resource kinds may be added in the future. The credential provider implementation uses this to adjust the required permissions when acquiring credentials. It also can be used to cache credentials for future use. |
-| Interactive | bool | *true* = It is okay to display UI, *false* = no UI. |
+| ResourceKind | LPCWSTR  | It can be "symbols" or "sources". Additional resource kinds might be added in the future. The credential provider implementation uses this field to adjust the required permissions when acquiring credentials. It also can be used to cache credentials for future use. |
+| Interactive | bool | *true* = It's okay to display UI, *false* = no UI. |
 | IsRetry| bool | When *true*, the provider must skip reading the caches and get new credentials. |
-| ParentHwnd | HWND | The parent HWND if an authentication UI is displayed, for example `0x%I64x`. The applications can use the DBG_CREDENTIAL_PROVIDER_PARENT_HWND environment variable or the imagehlp/dbghelp `SymSetParentWindow` method to setup the parent HWND. |
+| ParentHwnd | HWND | The parent HWND if an authentication UI is displayed, for example `0x%I64x`. The applications can use the DBG_CREDENTIAL_PROVIDER_PARENT_HWND environment variable or the imagehlp/dbghelp `SymSetParentWindow` method to set up the parent HWND. |
 
-The full URI/URL is built by concatenating `<protocol>://<host>/<path>` using the listed parameters. For example: `https://contoso.symbols.com/apis/symbol/symsrv`. The request looks like this:
+You build the full URI/URL by concatenating `<protocol>://<host>/<path>` using the listed parameters, for example: `https://contoso.symbols.com/apis/symbol/symsrv`. The request looks like this:
 
 ```console
 protocol=https
@@ -187,42 +187,42 @@ parenthwnd=593598
 
 ### Erase
 
-The credential provider may choose to use this command to erase the credentials from its cache. The input parameters are same as for Get command.
-There is no output return value needed. An Error may be returned.
+The credential provider can use this command to erase the credentials from its cache. The input parameters are the same as for the `Get` command.
+There's no output return value needed. An error might be returned.
 
 ### Store
 
-The credential provider may choose to use this command to store the credentials into its cache. The input parameters are same as for Get command. There is no output return value needed. An Error may be returned.
+The credential provider uses this command to store the credentials into its cache. The input parameters are the same as for the `Get` command. There's no output return value needed. An error might be returned.
 
 ### Local token cache and isRetry
 
-For the very first request to the provider the debugger sends the parameter `isRetry=false`. Some providers may be getting the token from their local cache. Once the debugger resends the HTTP request with this token the server may return the 401 response again. This may be because the token has expired. Then the debugger will ask the credential provider for a new token and this time the isRetry=true. In such a case the provider should not use its cache, but retrieve a brand new token.
+For the initial request to the provider, the debugger sends the parameter `isRetry=false`. Some providers might get the token from their local cache. Once the debugger resends the HTTP request with this token, the server might return the 401 response again. This response might be because the token expired. Then the debugger asks the credential provider for a new token and this time with the parameter `isRetry=true`. In such a case, the provider shouldn't use its cache, but retrieve a brand new token.
 
 ## Interactive setting - authentication UI
 
-In some non-interactive environments, such as test labs, there may be no user to interact with a UI. In such a case the parameter `issilent` would be *true*.
-The provider should not be displaying any authentication or other UI when this parameter is true.
+In some non-interactive environments, such as test labs, no user is available to interact with a UI. In such cases, set the `issilent` parameter to *true*.
+The provider shouldn't display any authentication or other UI when this parameter is true.
 
-The scripts in test labs or applications can use the following options to control the interactive flag.
+The scripts in test labs or applications can use the following options to control the interactive flag:
 
-- "!sym prompts off" or "!sym quiet" commands. For more information, see [**!sym prompts**](../debuggercmds/-sym.md).
-- sflags command line parameter of WinDbg or cdb/kd (SYMOPT_NO_PROMPTS flag).
-- [IDebugSymbols::SetSymbolOptions method](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols-setsymboloptions) (SYMOPT_NO_PROMPTS flag described in [Symbol Options](symbol-options.md))
-- [SymSetOptions function](/windows/win32/api/dbghelp/nf-dbghelp-symsetoptions) of imagehlp/dbghelp with SYMOPT_NO_PROMPTS flag.
+- Use the `!sym prompts off` or `!sym quiet` commands. For more information, see [**!sym prompts**](../debuggercmds/-sym.md).
+- Use the `sflags` command line parameter of WinDbg or cdb/kd (SYMOPT_NO_PROMPTS flag).
+- Use the [IDebugSymbols::SetSymbolOptions method](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols-setsymboloptions) (SYMOPT_NO_PROMPTS flag described in [Symbol Options](symbol-options.md))
+- Use the [SymSetOptions function](/windows/win32/api/dbghelp/nf-dbghelp-symsetoptions) of imagehlp/dbghelp with SYMOPT_NO_PROMPTS flag.
 
-### Setup the silent (non interactive) symbol sever
+### Set up the silent (non-interactive) symbol server
 
-Use [SymbolServerSetOptions function](/previous-versions/ff797954(v=vs.85)) to setup the silent (non interactive) symbol sever. If `SSRVOPT_UNATTENDED` is set to TRUE, SymSrv will not display dialog boxes or pop-ups. If data is FALSE, SymSrv will display these graphical features when making connections.
+Use the [SymbolServerSetOptions function](/previous-versions/ff797954(v=vs.85)) to set up the silent (non-interactive) symbol server. If you set `SSRVOPT_UNATTENDED` to TRUE, SymSrv doesn't display dialog boxes or pop-ups. If you set the value to FALSE, SymSrv displays these graphical features when making connections.
 
-#### Managing UI Windows
+#### Manage UI Windows
 
-Some credential providers may display an authentication UI. If so, it should use the 'ParentHwnd' parameter so this UI would appear as a modal dialog to the main debugger window. Otherwise, the authentication UI may be hidden behind the main debugger window and the user may be given the impression that the debugger is "frozen".
+Some credential providers display an authentication UI. If so, they should use the `ParentHwnd` parameter so this UI appears as a modal dialog to the main debugger window. Otherwise, the authentication UI might be hidden behind the main debugger window and the user might think that the debugger isn't responding.
 
-A debugger client application similar to WinDbg may use DBG_CREDENTIAL_PROVIDER_PARENT_HWND environment variable or imagehlp/dbghelp [SymSetParentWindow](/windows/win32/api/dbghelp/nf-dbghelp-symsetparentwindow) method to setup the parent HWND. You can also use the [IDebugAdvanced2::Request](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugadvanced2-request) message `DEBUG_REQUEST_SET_PARENT_HWND` with value of HWND cast to UINT32.
+A debugger client application similar to WinDbg can use the `DBG_CREDENTIAL_PROVIDER_PARENT_HWND` environment variable or imagehlp/dbghelp [SymSetParentWindow](/windows/win32/api/dbghelp/nf-dbghelp-symsetparentwindow) method to set up the parent HWND. You can also use the [IDebugAdvanced2::Request](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugadvanced2-request) message `DEBUG_REQUEST_SET_PARENT_HWND` with value of HWND cast to UINT32.
 
 ## Return value requirements
 
-The EXE or CMD/BAT script must return the username and password via the output stream as follows:
+The EXE or CMD/BAT script must return the username and password through the output stream as follows:
 
 ```text
 username=aaa
@@ -231,9 +231,9 @@ password=bbb - where the password can be a password or PAT
 
 ### CredentialKind
 
-The authentication request returns *CredentialKind*. There are two options for CredentialKind.
+The authentication request returns *CredentialKind*. CredentialKind has two options.
 
-- Basic Authentication: Defined in RFC 7617. Credentials are transmitted as user-id/password pairs encoded using Base64.
+- Basic Authentication: Defined in RFC 7617. The system transmits credentials as user ID and password pairs encoded with Base64.
 
 ```text
 username=xxx
@@ -241,7 +241,7 @@ credentialkind=Basic
 password=yyy --> This can be a password or a PAT token
 ```
 
-- Bearer Authentication: Defined in RFC 6750. Bearer tokens are used in HTTP requests to access OAuth 2.0 protected resources.
+- Bearer Authentication: Defined in RFC 6750. The system uses bearer tokens in HTTP requests to access OAuth 2.0 protected resources.
 
 ```text
 username=xxx
@@ -249,9 +249,9 @@ credentialkind=Bearer
 header=Bearer <TOKEN_GOES_HERE> ---> Usually OAuth2 tokens begin with "ey" and it is a very long string
 ```
 
-### Example CMD file
+### Example of a CMD file
 
-Here is an example of a CMD file which returns an HTTP authentication header:
+The following example shows a CMD file that returns an HTTP authentication header:
 
 OAuth2CredentialProvider.xml file located in CredentialProviders folder:
 
@@ -272,19 +272,19 @@ echo header=Bearer <TOKEN_GOES_HERE>
 
 ## Testing a custom provider
 
-If you are writing a custom provider located in a CMD or EXE file, you can test it simply by launching it from a console window using the commands. For example:
+If you write a custom provider located in a CMD or EXE file, you can test it by launching it from a console window. For example:
 
 ```console
 DebuggerCredentialManager.exe Get
 ```
 
-This would start the application, and print something like this and then will wait for user input (an empty line indicates end of the user input).
+This command starts the application. The application prints some information and then waits for user input. An empty line indicates the end of the user input.
 
 ```console
 [Information] [DebuggerCredentialProvider.102949]Microsoft Debugger Credential Manager version 2024.0409.02656.285 (Windows, .NET 6.0.29) 'get'
 ```
 
-Here is an example of the information you enter in the console window input stream. It can be entered in any combination of upper and lower case.
+Here's an example of the information you enter in the console window input stream. You can enter it in any combination of uppercase and lowercase.
 
 ```console
 protocol=https
@@ -296,9 +296,9 @@ issilent=false
 parenthwnd=593598
 ```
 
-Then press ENTER key twice to send a blank line and indicate the end of user input.
+Then press the ENTER key twice to send a blank line and indicate the end of user input.
 
-The provider responds via the standard output stream.
+The provider responds through the standard output stream.
 
 ```console
 [Verbose] [DebuggerCredentialProvider.103258]AzureCredentialProvider - Attempting to acquire bearer token using provider 'Msal Cache'
@@ -312,17 +312,18 @@ credentialkind=Bearer
 header=Bearer eyJ0eXAi....
 <empty line>
 ```
-The debugger will ignore any lines not matching the pattern `key=value` where key is one of the following: protocol, host, path, username, credentialkind, or header. 
 
-Case is ignored in the key value pairs. The debugger treats a blank line as the end of input.
+The debugger ignores any lines that don't match the pattern `key=value`. The key must be one of the following values: protocol, host, path, username, credentialkind, or header. 
+
+The debugger ignores case in the key value pairs. It treats a blank line as the end of input.
 
 ### Provider diagnostic information 
 
-Providers may choose to print diagnostic information on the output stream. The debugger would ignore it, nor it will display those to the user. The examples of extra information shown here are for illustration purposes only. Other providers may print other diagnostic information or not print anything.
+Providers can print diagnostic information on the output stream. The debugger ignores this information and doesn't display it to the user. The examples of extra information shown here are for illustration purposes only. Other providers might print different diagnostic information or not print anything.
 
 #### PowerShell example script returning a PAT token
 
-Here is a PS script example of returning a PAT token.
+Here's a PowerShell script example that returns a PAT token.
 
 The file PatCredentialProvider.xml configures the PATCredentialProvider.bat as the CredentialProvider.
 
@@ -333,14 +334,14 @@ The file PatCredentialProvider.xml configures the PATCredentialProvider.bat as t
 </CredentialProviders>
 ```
 
-The File PATCredentialProvider.bat located in PATCredentialProvider folder and calls PATCredentialProvider.ps1.
+The file PATCredentialProvider.bat is located in the PATCredentialProvider folder and calls PATCredentialProvider.ps1.
 
 ```console
 @echo off
 <PATH_TO_POWERSHELL>\PowerShell.exe -NoProfile -executionpolicy Unrestricted -WindowStyle Hidden -File "%~dp0\PATCredentialProvider.ps1"
 ```
 
-The PATCredentialProvider.ps1 is also located in PATCredentialProvider folder.
+The PATCredentialProvider.ps1 file is also located in the PATCredentialProvider folder.
 
 ```ps
 <#
@@ -424,7 +425,7 @@ The PATCredentialProvider.ps1 is also located in PATCredentialProvider folder.
 
 ### Overview
 
-The following describes the public interface credential providers must adhere to if the custom credential provider is implemented in a DLL. If the provider is implemented in a DLL it must export GetUserCredentials method. The are located in `namespace Debugger::CredentialProvider::Provider`.
+The following description covers the public interface credential providers must use if they implement a custom credential provider in a DLL. If you implement the provider in a DLL, you must export the GetUserCredentials method. These methods are located in `namespace Debugger::CredentialProvider::Provider`.
 
 The required *DbgCredentialProviderImpl.h* header file is published with the Windows SDK. For information on downloading the SDK, see [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk/) and [SDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewSDK).
 
@@ -457,7 +458,7 @@ enum CredentialResponseResultKind
 
 ### Request structure
 
-A structure is used to store the GetUserCredentialsRequest. It uses the same parameters as described above in the GetUserCredentialsRequest parameters table.
+A structure stores the `GetUserCredentialsRequest`. It uses the same parameters as described in the preceding table.
 
 
 ```cpp
@@ -483,7 +484,7 @@ struct GetUserCredentialsRequest
 
 ### Work with credentials
 
-A GetUserCredentials function is used to request the credentials, that will be sent to the symbol server in the HTTP request for symbols.
+A `GetUserCredentials` function requests the credentials to send to the symbol server in the HTTP request for symbols.
 
 ```cpp
 HRESULT WINAPI GetUserCredentials(
@@ -491,9 +492,9 @@ HRESULT WINAPI GetUserCredentials(
   _Inout_ GetUserCredentialsResponse * pResponse);
 ```
 
-The caller (debugger) of this method will provide the request and response parameters. The caller will ensure that the UserName, Password and ErrorMessage are nullptr upon method entry. 
+The caller (debugger) of this method provides the request and response parameters. The caller ensures that the `UserName`, `Password`, and `ErrorMessage` are `nullptr` upon method entry. 
 
-The implementation should fill UserName, Password, ErrorMessage (optionally), and Result.
+The implementation fills `UserName`, `Password`, `ErrorMessage` (optionally), and `Result`.
 
 ```cpp
 
