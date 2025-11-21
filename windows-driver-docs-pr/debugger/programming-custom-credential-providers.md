@@ -2,7 +2,7 @@
 title: Programming custom credential providers
 description: This topic describes how to program a custom credential provider for the Windows debugger. 
 keywords: ["symbols, programming"]
-ms.date: 04/25/2025
+ms.date: 11/20/2025
 ms.topic: concept-article
 ---
 
