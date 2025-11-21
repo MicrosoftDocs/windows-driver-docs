@@ -588,7 +588,7 @@ private:
 
 Now that you understand custom credential providers, try these tasks:
 
-- [Set up your first credential provider using the CMD file example](#example-cmd-file)
+- [Set up your first credential provider using the CMD file example](#example-of-a-cmd-file)
 - [Test your provider using the DebuggerCredentialManager.exe](#testing-a-custom-provider)
 - [Review the C++ API for DLL implementations](#c-api-for-credential-providers-implemented-as-a-dll)
 
