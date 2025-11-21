@@ -15,7 +15,7 @@ The following features and bug fixes are in Windows 11 WDK update.
 
 ### Usage Guidance
 
-26H1 includes platform changes to support specific silicon. Use only if you need these changes. For details see Announcing Windows 11 Insider Preview Build 28000.
+26H1 includes platform changes to support specific silicon. Use only if you need these changes. For details see [Announcing Windows 11 Insider Preview Build 28000](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fblogs.windows.com%2Fwindows-insider%2F2025%2F11%2F07%2Fannouncing-windows-11-insider-preview-build-28000-canary-channel%2F&data=05%7C02%7Cpauleze%40microsoft.com%7C498c0503d8c84aa195b708de2249f8c0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638985898291940431%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2FYAhAgrFpJPAoPoMxaqrb%2FRoYooyRr%2FeMeCA5L7zFkg%3D&reserved=0).
 
 ## Version 10.0.26100.6584 
 
