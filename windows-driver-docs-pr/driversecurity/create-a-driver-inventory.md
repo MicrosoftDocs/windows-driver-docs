@@ -1,27 +1,35 @@
 ---
 title: Create Installed Driver Package Inventory
-description: Learn how to create an inventory of installed driver packages to identify unnecessary drivers and reduce security risks. Use PnPUtil and PowerShell to audit your system.
+description: Learn how to create an inventory of installed driver packages to identify unnecessary drivers and reduce security risks. Use PnPUtil to audit your system.
 ms.date: 11/15/2025
 ms.topic: how-to
 ---
 
 # Create an inventory of installed driver packages
 
-This topic shows you how to create an inventory of installed third-party [driver packages](../install/driver-packages.md) and identify unnecessary drivers that increase security risks. You'll learn how to use PnPUtil and PowerShell to audit your system and remove unwanted driver packages.
+This article shows you how to create an inventory of installed third-party [driver packages](../install/driver-packages.md) and identify unnecessary drivers that increase security risks. You learn how to use PnPUtil and PowerShell to audit your system and remove unwanted driver packages.
 
 ## Driver security - security risk reduction
 
-Why reduce your driver footprint? Each unnecessary driver on your system poses potential security risks, consumes memory and system resources, and can cause system crashes. By maintaining only essential drivers, you improve both security and stability.
+## Why reduce driver security risks?
+
+Why reduce your driver footprint? Each unnecessary driver on your system:
+
+- Poses potential security risks.
+- Consumes memory and system resources.
+- Can cause system crashes.
+
+By maintaining only essential drivers, you improve both security and stability.
 
 When evaluating the driver security risks, consider all [driver packages](../install/driver-packages.md) present on the system, whether or not they're installed on devices. Knowing which driver packages are present (and which are third-party vs Microsoft) can help identify unwanted or out-of-date driver packages that might pose security risks.
 
-One approach is to create an initial report of installed driver packages on a new system and then re-run the report at regular intervals to look for any unexpected driver packages.
+One approach is to create an initial report of installed driver packages on a new system and then run the report again at regular intervals to look for any unexpected driver packages.
 
 ## Inventory of installed driver packages - PnPUtil
 
-PnPUtil is built into Windows and is the recommended tool for managing driver packages. No additional downloads required.
+PnPUtil is built into Windows and is the recommended tool for managing driver packages. No additional downloads are required.
 
-**Next step:** Learn the basic commands below, or see [PnPUtil Examples](../devtest/pnputil-examples.md) for more advanced scenarios.
+**Next step:** Learn the basic commands in the following section, or [view advanced PnPUtil examples](../devtest/pnputil-examples.md).
 
 ### PnPUtil /enum-drivers
 
@@ -37,7 +45,7 @@ Use `/files` to list all third-party driver packages and display the associated 
 pnputil /enum-drivers /files
 ```
 
-## PnPUtil - Exporting driver inventory reports
+## Export driver inventory reports with PnPUtil
 
 Use the `/format` and `/output-file` options to create reports of your installed driver footprint. Use these options to script gathering the driver packages on the system. Don't use scripts to process the default output or the 'text' /format option since that output can change and is localized. The output is different depending on the language installed on the system.
 
@@ -76,7 +84,7 @@ Write-Host "Found $($sysDrivers.Count) driver(s) with .sys files.`n"
 
 ## Windows images and virtual hard disks
 
-For Windows image (.wim) files or virtual hard disks (.vhd or .vhdx), first use the the [DISM utility](/windows-hardware/manufacture/desktop/what-is-dism) `/Mount-Image` command. 
+For Windows image (.wim) files or virtual hard disks (.vhd or .vhdx), first use the [Deployment Image Servicing and Management utility (DISM)](/windows-hardware/manufacture/desktop/what-is-dism) `/Mount-Image` command. 
 
 ```PowerShell
 Mount-WindowsImage -ImagePath "D:\Images\Windows11.vhdx" -Index 1 -Path "C:\Mount"
@@ -100,15 +108,15 @@ Other tools are available, but they have limitations. Use [PnPUtil](../devtest/p
 
 The Device Manager GUI provides views of driver information organized by device (**View** -> **Drivers by device**), or devices organized by driver information (**View** -> **Devices by driver**). This information includes the device type, device status, manufacturer, device-specific properties, and information about the driver files for a specific device. Use **View** -> **Show hidden devices** to display additional information. For more information, see [Using Device Manager](../install/using-device-manager.md). 
 
-The System Information (Msinfo32.exe) tool lists drivers under **Software Environment**, **System Drivers**.  The displayed columns are sortable, allowing for grouping of driver state or type. For more information, see [Description of Microsoft System Information (Msinfo32.exe) Tool](https://support.microsoft.com/topic/description-of-microsoft-system-information-msinfo32-exe-tool-10d335d8-5834-90b4-8452-42c58e61f9fc). Msinfo32 doesn't provide a way to list and parse driver packages. Use [PnPUtil](../devtest/pnputil.md) instead.
+The System Information (Msinfo32.exe) tool lists drivers under **Software Environment**, **System Drivers**. The displayed columns are sortable, allowing for grouping of driver state or type. For more information, see [Description of Microsoft System Information (Msinfo32.exe) Tool](https://support.microsoft.com/topic/description-of-microsoft-system-information-msinfo32-exe-tool-10d335d8-5834-90b4-8452-42c58e61f9fc). Msinfo32 doesn't provide a way to list and parse driver packages. Use [PnPUtil](../devtest/pnputil.md) instead.
 
 Although `driverquery` is built into Windows, it can produce misleading output and isn't recommended. Use the more capable [PnPUtil](../devtest/pnputil.md) instead.
 
-## PnPUtil - removing drivers
+## Remove drivers with PnPUtil
 
 Remove unnecessary drivers by using PnPUtil to reduce security risks and increase system reliability. Before removing any driver, verify it's not essential for system operation.
 
-*If* you determine that a driver can be removed safely, use PnPUtil to remove it. Use a non-critical PC to test that all hardware and software functions correctly after the driver is removed. As always, make use of backups and establish a system restore point.   
+*If* you determine that a driver can be removed safely, use PnPUtil to remove it. Use a non-critical PC to test that all hardware and software functions correctly after the driver is removed. As always, make use of backups and establish a system restore point.
 
 Locate the OEM driver name, such as *oem42.inf*, and use the following command to delete it:
 
