@@ -45,7 +45,7 @@ Some of these releases contain components affected by [CVE-2024-29187](https://m
 ## Guidance
 
 - **Compatibility**: Verify the required Visual Studio and SDK version before installing any WDK release.
-- **Contact us**: Share feedback or question through the [feedback form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or email [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
+- **Contact us**: Share feedback or question through the [feedback form](https://forms.microsoft.com/r/c2eHwWrE1Z) or email [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
 ## See also
 
 - [Download the latest Windows Driver Kit](download-the-wdk.md)
