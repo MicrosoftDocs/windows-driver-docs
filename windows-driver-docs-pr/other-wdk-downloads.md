@@ -30,7 +30,7 @@ The following table lists the supported WDK versions, along with their usage gui
 ## Additional Guidance
 - **Best Practice**: Always use the latest WDK for new driver development to ensure security and compatibility.
 - **Compatibility**: Verify the required Visual Studio and SDK version before installing any WDK release.
-- **Contact us**: Share feedback or questions through the [feedback form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or email [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
+- **Contact us**: Share feedback or questions through the [feedback form](https://forms.microsoft.com/Pages/DesignPageV2.aspx?origin=NeoPortalPage&subpage=design&id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UQ1BEVVVRTjc4VFBZNjdTQk5VNEtIN0hUNi4u) or email [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
 
 
 ## See also
