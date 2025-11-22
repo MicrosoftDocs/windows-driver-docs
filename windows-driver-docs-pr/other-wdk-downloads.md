@@ -11,16 +11,17 @@ ms.topic: feature-availability
 
 # Other WDK Downloads
 
-The table below list previous versions of Windows Driver Kit (WDK) that are no longer available for download. These versions have been removed from public access and are no longer maintained or supported. To develop Windows drivers, use the latest version of WDK, which includes the most up-to-date tools, features and security updates. If you have questions or feedback, please fill out the [form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or send us an email at wdkfeedback@microsoft.com.
+The table below list previous versions of Windows Driver Kit (WDK) that are no longer available for download. These versions have been removed from public access and are no longer maintained or supported. To develop Windows drivers, use the latest version of WDK, which includes the most up-to-date tools, features and security updates. If you have questions or feedback, please fill out the [feedback form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UNFlHSkFQTjBLS1lRS08wTFRZME0yRVRVVi4u) or send us an email at [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
 
 ## WDK Version Decoder
 
 | Windows Version | Build Number | Visual Studio | WDK | Comments |
 | --- | --- | --- | --- | --- |
-| Windows 11 25H2 (Ge) | 26100.6584 | VS 2022 | [WDK](https://go.microsoft.com/fwlink/?linkid=2335869), [EWDK](https://go.microsoft.com/fwlink/?linkid=2335681), [WDK NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64) | 2509B (latest) |
-| Windows 11 24H2 (Ge) | 26100.4202 | VS 2022 | Removed | 2505D |
-| Windows 11 24H2 (Ge) | 26100.3323 | VS 2022 | Removed | 2502D |
-| Windows 11 24H2 (Ge) | 26100.2454 | VS 2022 | Removed | 2411D |
+| Windows 11 26H1 (BR) | 28000.1 | VS 2022 | [WDK](https://go.microsoft.com/fwlink/?linkid=2342530), [EWDK](https://go.microsoft.com/fwlink/?linkid=2342427), [WDK NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.28000.1) | 26H1 includes platform changes to support specific silicon. Use only if you need these changes. For details see [Announcing Windows 11 Insider Preview Build 28000](https://blogs.windows.com/windows-insider/2025/11/07/announcing-windows-11-insider-preview-build-28000-canary-channel/). |
+| Windows 11 25H2 (Ge) | 26100.6584 | VS 2022 | [WDK](https://go.microsoft.com/fwlink/?linkid=2335869), [EWDK](https://go.microsoft.com/fwlink/?linkid=2335681), [WDK NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64) | This version is the default supported kit for Windows driver development. |
+| Windows 11 24H2 (Ge) | 26100.4202 | VS 2022 | Removed |  |
+| Windows 11 24H2 (Ge) | 26100.3323 | VS 2022 | Removed |  |
+| Windows 11 24H2 (Ge) | 26100.2454 | VS 2022 | Removed |  |
 | Windows 11 24H2 (Ge) | 26100.2161 | VS 2022 | Removed |  |
 | Windows 11 24H2 (Ge) | 26100.1882 | VS 2022 | Removed |  |
 | Windows 11 24H2 (Ge) | 26100.1591 | VS 2022 | Removed |  |
