@@ -16,9 +16,9 @@ This article details known issues concerning the WDK.
 
 ## WDK for Windows 11, version 26H1
 
-### ERT Support
+### Driver Testing with Visual Studio Support
 
-ERT is not supported yet in WDK version 28000.1 (26H1). 
+Driver Testing with Visual Studio is not supported yet in WDK version 28000.1 (26H1). 
 
 ## WDK for Windows 11, version 24H2
 
