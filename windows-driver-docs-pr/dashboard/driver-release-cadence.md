@@ -75,6 +75,6 @@ There are changes for releasing drivers marked as needing *Microsoft approval*. 
 
     **These calendars are subject to change based on OS release timelines.**
 
-    :::image type="content" source="images/2025_driver_calendar.png" alt-text="September - December 2025 driver release calendar showing excluded dates.":::
+    :::image type="content" source="images/2025-driver-calendar.png" alt-text="September - December 2025 driver release calendar showing excluded dates.":::
 
-    :::image type="content" source="images/2026_driver_calendar.png" alt-text="September - December 2026 driver release calendar showing excluded dates.":::
+    :::image type="content" source="images/2026-driver-calendar.png" alt-text="September - December 2026 driver release calendar showing excluded dates.":::
