@@ -42,10 +42,12 @@ Some of these releases contain components affected by [CVE-2024-29187](https://m
 | Windows 8 | 9200 | [VS 2012](https://my.visualstudio.com/Downloads?q=visual%20studio%202012) | [SDK (*)](https://go.microsoft.com/fwlink/p/?LinkId=226658) | [WDK (*)](https://go.microsoft.com/fwlink/p/?LinkID=324284) | N/A | N/A | SDK and WDK installers are impacted by CVE-2024-29187. |
 | Windows 7 | 7600 | [VS 2010](https://my.visualstudio.com/Downloads?q=visual%20studio%202010) | [SDK (*)](https://go.microsoft.com/fwlink/?LinkID=191424) | [WDK (*)](https://www.microsoft.com/en-sg/download/details.aspx?id=11800) | N/A | N/A | SDK and WDK installers are impacted by CVE-2024-29187.|
 
-## Guidance
+## Additional Guidance
 
+- **Best Practice**: Always use the latest WDK for new driver development to ensure security and compatibility.
 - **Compatibility**: Verify the required Visual Studio and SDK version before installing any WDK release.
-- **Contact us**: Share feedback or question through the [feedback form](https://forms.microsoft.com/r/c2eHwWrE1Z) or email [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
+- **Contact us**: Share feedback or questions through the [feedback form](https://forms.microsoft.com/r/c2eHwWrE1Z) or email [wdkfeedback@microsoft.com](mailto:wdkfeedback@microsoft.com).
+
 ## See also
 
 - [Download the latest Windows Driver Kit](download-the-wdk.md)
