@@ -15,9 +15,9 @@ metadata:
 highlightedContent:
   # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
    items:
-   - title: Get Started with Drivers on Windows
-     itemType: get-started
-     url: ./gettingstarted/index.md
+   - title: Install the Windows Driver Kit via NuGet
+     itemType: download
+     url: ./install-the-wdk-using-nuget.md
    - title: What's New in Driver Development
      itemType: whats-new
      url: ./what-s-new-in-driver-development.md
@@ -27,9 +27,9 @@ highlightedContent:
    - title: Driver security checklist
      itemType: how-to-guide
      url: ./driversecurity/driver-security-checklist.md
-   - title: Install the Windows Driver Kit via NuGet
-     itemType: download
-     url: ./install-the-wdk-using-nuget.md
+   - title: Get Started with Drivers on Windows
+     itemType: get-started
+     url: ./gettingstarted/index.md
    - title: Driver Development Tools
      itemType: overview
      url: ./devtest/index.md
@@ -163,18 +163,18 @@ additionalContent:
     # Section
     - title: Develop Windows drivers and give us feedback
       items:
-        - title: Have a question?
-          summary: Windows Drivers Kit Q&A
-          url: https://learn.microsoft.com/answers/tags/508/windows-development-wdk?page=1
-        - title: Submit feedback
-          summary: Windows drivers developer survey
-          url: https://forms.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UQ1BEVVVRTjc4VFBZNjdTQk5VNEtIN0hUNi4u
         - title: Task
           summary: Write a Hello World Windows Driver (Kernel-Mode Driver Framework)
           url: ./gettingstarted/writing-a-very-small-kmdf--driver.md
         - title: Tutorial
           summary: From Sample Code to Production Driver
           url: ./gettingstarted/from-sample-code-to-production-driver.md
+        - title: Have a question?
+          summary: Windows Drivers Kit Q&A
+          url: https://learn.microsoft.com/answers/tags/508/windows-development-wdk?page=1
+        - title: Submit feedback
+          summary: Windows drivers developer survey
+          url: https://forms.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0aScSwEgKxJvzxab6T-IN5UQ1BEVVVRTjc4VFBZNjdTQk5VNEtIN0hUNi4u
     # Section
 
   footer: "[@WindowsDocs on X](https://x.com/WindowsDocs) - [OneDevMinute on YouTube](/shows/One-Dev-Minute/?WT.mc_id=odm-c9-niner) - [Windows developer support](https://developer.microsoft.com/windows/support) - [Stack Overflow](https://stackoverflow.com/questions/tagged/windows)"
