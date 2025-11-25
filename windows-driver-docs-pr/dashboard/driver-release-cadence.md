@@ -1,13 +1,13 @@
 ---
 title: Driver Ship Room Release Cadence Windows
 description: This page provides information on the operation schedule for driver ship room. In order to provide the best experience for Windows users, there are certain times where aspects of publication operations are suspended.
-ms.date: 11/11/2024
+ms.date: 11/24/2025
 ms.topic: release-notes
 ---
 
 # Driver Ship Room Release Cadence Windows
 
-Last Updated: November 11, 2024
+Last Updated: November 24, 2025
 
 This article provides information on the operation schedule for Windows driver ship room. In order to provide the best experience for Windows users, there are certain times where aspects of publication operations are suspended.
 
@@ -15,7 +15,7 @@ We have a shared goal of keeping devices up to date while providing users a high
 
 Windows as a Service has a well-established OS update release cadence.
 
-- **Latest Cumulative Update (LCU)**: Monthly quality and security updates are released during the second week. The LCU is also known as the *B* release, and is offered to all eligible Windows 10 devices through Windows Update (WU) scans.
+- **Latest Cumulative Update (LCU)**: Monthly quality and security updates are released during the second week. The LCU is also known as the *B* release, and is offered to all eligible Windows 11 devices through Windows Update (WU) scans.
 
 - **Feature Updates**: Provide the latest feature experiences and quality fixes.
 
@@ -42,21 +42,21 @@ There are changes for releasing drivers marked as needing *Microsoft approval*. 
 
 1. **Certain US holidays**: Drivers needing *Microsoft approval* aren't released on certain US Holidays and long weekends
 
-    | US Holidays | 2025 | 2024 |
+    | US Holidays | 2026 | 2025 |
     |--|--|--|
-    | New Year's Day | Wednesday, January 01 | Monday, January 01 |
-    | Martin Luther King Day | Monday, January 20 | Monday, January 17 |
-    | Presidents Day | Monday, February 17 | Monday, February 19 |
-    | Memorial Day | Monday May 26 | Monday May 27 |
-    | Fourth of July | Friday, July 04 | Tuesday, July 04 |
-    | Labor Day | Monday, September 01 | Monday, September 02 |
-    | Thanksgiving Day | Thursday, November 27 | Thursday, November 28 |
-    | Day after Thanksgiving | Friday, November 28 | Friday, November 29 |
-    | Christmas Eve | Wednesday, December 24 | Tuesday, December 24 |
-    | Christmas Day | Thursday, December 25 | Wednesday, December 25 |
-    | Day after Christmas | Friday, December 26 | Thursday, December 26 |
+    | New Year's Day | Tuesday, January 01 | Wednesday, January 01 |
+    | Martin Luther King Day | Monday, January 19 | Monday, January 20 |
+    | Presidents Day | Monday, February 16 | Monday, February 17 |
+    | Memorial Day | Monday, May 25 | Monday, May 26 |
+    | Fourth of July | Friday, July 03 | Friday, July 04 |
+    | Labor Day | Monday, September 07 | Monday, September 01 |
+    | Thanksgiving Day | Thursday, November 26 | Thursday, November 27 |
+    | Day after Thanksgiving | Friday, November 27 | Friday, November 28 |
+    | Christmas Eve | Thursday, December 24 | Wednesday, December 24 |
+    | Christmas Day | Friday, December 25 | Thursday, December 25 |
+    | Day after Christmas | - | Friday, December 26 |
 
-1. **US Winter Holiday time frame release moratorium**: During the US winter holiday season, the driver ship room isn't releasing *any* drivers. For calendar year 2024, the time frame is December 14, 2024 through January 1, 2025. For calendar year 2025, the time frame is December 18, 2025 through January 1, 2026.
+2. **US Winter Holiday time frame release moratorium**: During the US winter holiday season, the driver ship room isn't releasing *any* drivers. For calendar year 2025, the time frame is December 18, 2025 through January 1, 2026. For calendar year 2026, the time frame is December 18, 2026 through January 1, 2027.
 
     See the calendars in the [Appendix](#appendix) for more dates.
 
@@ -75,6 +75,6 @@ There are changes for releasing drivers marked as needing *Microsoft approval*. 
 
     **These calendars are subject to change based on OS release timelines.**
 
-    :::image type="content" source="images/2024_driver_calendar.png" alt-text="September - December 2024 driver release calendar showing excluded dates.":::
+    :::image type="content" source="images/2025-driver-calendar.png" alt-text="September - December 2025 driver release calendar showing excluded dates.":::
 
-    :::image type="content" source="images/2025_driver_calendar.png" alt-text="September - December 2025 driver release calendar showing excluded dates.":::
+    :::image type="content" source="images/2026-driver-calendar.png" alt-text="September - December 2026 driver release calendar showing excluded dates.":::
