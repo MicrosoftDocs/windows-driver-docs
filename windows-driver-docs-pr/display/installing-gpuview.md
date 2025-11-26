@@ -1,11 +1,11 @@
 ---
-title: Installing GPUView
+title: Install GPUView
 description: Lists the components that are packaged with GPUView and describes how to install GPUView.
-ms.date: 11/05/2025
+ms.date: 11/13/2025
 ms.topic: concept-article
 ---
 
-# Installing GPUView
+# Install GPUView
 
 GPUView and its associated files are part of the [Windows Performance Toolkit (WPT)](/windows-hardware/test/wpt/), which is a feature that ships with the [Windows Assessment and Deployment Kit (ADK)](/windows-hardware/get-started/adk-install). To get GPUView, make sure that you select **Windows Performance Toolkit** when you install the ADK.  
 
@@ -21,3 +21,7 @@ The following table lists a few GPUView-specific files.
 | Log.cmd              | Script to turn on and off the appropriate information for logging |
 | SymbolSearchPath.txt | A text file that sets the symbol path to resolve stack walk and other events |
 | DxEtw.dll            | DLL used by GPUView for internal processing |
+
+## Uninstall GPUView
+
+Since GPUView is part of the WPT, which is installed with the ADK, you must uninstall the ADK to uninstall GPUView. You can do so by using **Control Panel** > **Programs and Features**.

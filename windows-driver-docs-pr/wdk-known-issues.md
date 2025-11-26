@@ -14,9 +14,15 @@ ms.topic: troubleshooting-known-issue
 
 This article details known issues concerning the WDK.
 
+## WDK for Windows 11, version 26H1
+
+### Driver Testing with Visual Studio Support
+
+Driver Testing with Visual Studio is not supported yet in WDK version 28000.1 (26H1). 
+
 ## WDK for Windows 11, version 24H2
 
-## x86 Kernel Mode Driver Development
+### x86 Kernel Mode Driver Development
 
 Starting with Windows 11, version 24H2, the WDK no longer supports x86 kernel-mode driver development. If you have a business need to develop x86 kernel-mode drivers, use [WDK Version 23H2](https://go.microsoft.com/fwlink/?linkid=2249371)
 

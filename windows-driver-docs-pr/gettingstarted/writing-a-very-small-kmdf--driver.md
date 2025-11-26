@@ -1,18 +1,18 @@
 ---
 title: Write a Hello World Windows Driver (Kernel-Mode)
 description: How to write a Windows driver using Kernel-Mode Driver Framework (KMDF). You start with a Microsoft Visual Studio template.
-ms.date: 08/18/2025
+ms.date: 11/13/2025
 ms.topic: tutorial
 ---
 
-# Tutorial: Write a Hello World Windows Driver (Kernel-Mode Driver Framework)
+# Tutorial: Write a Hello World Windows driver (Kernel-Mode Driver Framework)
 
 This article describes how to write a small *Universal Windows driver* using Kernel-Mode Driver Framework (KMDF) and then deploy and install your driver on a separate computer.
 
 ## Prerequisites
 
 - Follow the steps to install [Windows Driver Kit (WDK)](../download-the-wdk.md). [Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
-- Install [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/). When you install Visual Studio 2022, select the **Desktop development with C++** workload, then under **Individual Components** add:
+- Install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2022-and-other-products). When you install Visual Studio 2022, select the **Desktop development with C++** workload, then under **Individual Components** add:
 
   - MSVC v143 - VS 2022 C++ ARM64/ARM64EC Spectre-mitigated libs (Latest)
   - MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
@@ -94,10 +94,10 @@ Now that you created your empty Hello World project and added the Driver.c sourc
     {
         // NTSTATUS variable to record success or failure
         NTSTATUS status = STATUS_SUCCESS;
-        
+
         // Allocate the driver configuration object
         WDF_DRIVER_CONFIG config;
-        
+
         // Print "Hello World" for DriverEntry
         KdPrintEx(( DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, "KmdfHelloWorld: DriverEntry\n" ));
 
@@ -145,7 +145,7 @@ Now that you created your empty Hello World project and added the Driver.c sourc
 
         // Print "Hello World"
         KdPrintEx(( DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, "KmdfHelloWorld: KmdfHelloWorldEvtDeviceAdd\n" ));
-        
+
         // Create the device object
         status = WdfDeviceCreate(&DeviceInit, 
                                  WDF_NO_OBJECT_ATTRIBUTES,
@@ -176,10 +176,10 @@ Now that you created your empty Hello World project and added the Driver.c sourc
     {
         // NTSTATUS variable to record success or failure
         NTSTATUS status = STATUS_SUCCESS;
-        
+
         // Allocate the driver configuration object
         WDF_DRIVER_CONFIG config;
-        
+
         // Print "Hello World" for DriverEntry
         KdPrintEx(( DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, "KmdfHelloWorld: DriverEntry\n" ));
 
@@ -216,7 +216,7 @@ Now that you created your empty Hello World project and added the Driver.c sourc
 
         // Print "Hello World"
         KdPrintEx(( DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, "KmdfHelloWorld: KmdfHelloWorldEvtDeviceAdd\n" ));
-        
+
         // Create the device object
         status = WdfDeviceCreate(&DeviceInit, 
                                  WDF_NO_OBJECT_ATTRIBUTES,
