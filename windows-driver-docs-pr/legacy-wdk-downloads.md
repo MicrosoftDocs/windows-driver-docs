@@ -18,7 +18,7 @@ The following table lists unsupported WDK versions, their corresponding SDK and 
 
 > [!WARNING]
 > **Critical Security Notice (*):**
-Some of these releases contain components affected by [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187) and are **NOT safe for production driver development**. They are provided only for reference and non-production use. If you do need to access that specific kit build, then consider if you can use the matching EWDK that is not impacted by the CVE.  If EWDK is not an option, then take precautions including researching CVE, isolate your build environments, and ensure no use on production systems
+Some of these releases contain components affected by [CVE-2024-29187](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29187) and are **NOT safe for production driver development**. They are provided only for reference and non-production use. 
 
 | Windows Version | Build Number | Supported Visual Studio | SDK | WDK | EWDK | NuGet |Comment|
 |--|--|--|--|--|--|--|--|
