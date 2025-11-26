@@ -25,7 +25,7 @@ The following table lists the supported WDK versions, along with their usage gui
 | Windows 11 22H2 (Ni) | 22621.5193 | [VS 2022](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2022-and-other-products) | [SDK](https://go.microsoft.com/fwlink/?linkid=2311806) | [WDK](https://go.microsoft.com/fwlink/?linkid=2330411) | [EWDK](https://go.microsoft.com/fwlink/?linkid=2249942) | N/A | Supported for Windows 10 x86/ARM32 driver development only. |
 | Windows 10 2004 (VB) | 19041.5738 | [VS 2019](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2019-and-other-products) | [SDK](https://go.microsoft.com/fwlink/?linkid=2311805) | [WDK](https://go.microsoft.com/fwlink/?linkid=2342425) | [EWDK](https://go.microsoft.com/fwlink/p/?linkid=2128902) | N/A | Supported for Windows 7/Windows 8/Windows 8.1 driver development only.  |
 
- If you are looking for legacy or unsupported WDKs, they can be found on [unsupported WDK versions](./legacy-wdk-downloads.md) page. 
+ If you are looking for legacy or unsupported WDKs, they can be found on the [unsupported WDK versions](./legacy-wdk-downloads.md) page. 
 
 ## Additional Guidance
 - **Best Practice**: Always use the latest WDK for new driver development to ensure security and compatibility.
