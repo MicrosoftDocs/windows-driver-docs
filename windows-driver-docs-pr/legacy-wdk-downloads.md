@@ -14,7 +14,7 @@ ms.topic: feature-availability
 
 #  Unsupported WDK versions
 
-The following table lists unsupported WDK versions, their corresponding SDK and Visual Studio versions where available. If you are developing a driver for the Windows platform, use one of the supported kits listed on the [supported WDK versions](./other-wdk-downloads.md) table.
+The following table lists unsupported WDK versions, their corresponding SDK and Visual Studio versions where available. If you are developing a driver for the Windows platform, use one of the supported kits listed on the [supported WDK versions](./other-wdk-downloads.md) page.
 
 > [!WARNING]
 > **Critical Security Notice (*):**
