@@ -67,7 +67,7 @@ https://contoso.com/?eid=12345678&make=VGVzdE1ha2U=&model=VGVzdE1vZGVs&iccid=012
 
 Mobile operators can invoke the Windows protocol `ms-settings:cellular-id` from their web portal without a callback URL. This protocol opens a dialog in Windows Settings that displays key device identifiers and allows users to manually copy and paste them into the operator's portal.
 
-:::image type="content" source="images/mobile-identifiers.png" alt-text="Screenshot of the Cellular Device Identifiers dialog showing information such as IMEI, EID, ICCID, Make, and Model":::
+:::image type="content" source="images/mobile-identifiers.png" alt-text="Screenshot of the Cellular Device Identifiers dialog showing information such as IMEI, EID, ICCID, Make, and Model.":::
 
 Example JavaScript code:
 
@@ -87,7 +87,7 @@ When the protocol is invoked, Windows displays a consent dialog asking the user 
 - **With callback URL**: After consent, the browser automatically navigates to the callback URL with populated identifiers
 - **Without callback URL**: A dialog displays the identifiers for manual copying
 
-:::image type="content" source="images/mobile-info-share.png" alt-text="Screenshot of dialog asking for customer permission to share Cellular Device Identifiers information such as IMEI, EID, ICCID, Make, and Model":::
+:::image type="content" source="images/mobile-info-share.png" alt-text="Screenshot of dialog asking for customer permission to share Cellular Device Identifiers information such as IMEI, EID, ICCID, Make, and Model.":::
 
 The specific identifiers shown depend on the device configuration and may include IMEI, EID, and ICCID.
 
