@@ -12,7 +12,7 @@ ms.topic: release-notes
 
 This article provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
-# 1.2511.21001.0
+## 1.2511.21001.0
 
 ### New Features
 - Enhanced file selection with priority-based handling extended to CAB files and folders for better dump file targeting
