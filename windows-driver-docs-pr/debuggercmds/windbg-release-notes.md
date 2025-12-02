@@ -16,7 +16,7 @@ This article provides information on what's new in WinDbg. Earlier versions were
 
 ### New Features
 - Enhanced file selection with priority-based handling extended to CAB files and folders for better dump file targeting
-- Improved ELF, DWARF, and MachO symbol file downloads with enhanced logging and status messages
+- Improved ELF, DWARF, and Mach-O symbol file downloads with enhanced logging and status messages
 - DBGHELP_DIA_PATH environment variable now takes precedence over currently loaded modules for better symbol handling control
 - Member name indexing improvements for better symbol navigation and lookup performance
 
@@ -29,10 +29,10 @@ This article provides information on what's new in WinDbg. Earlier versions were
 - Fixed UI delays when using exdigdbsrv
 - Handled WMI exceptions from USB 3.1 workaround compatibility checker
 - Removed incorrect warnings (C6518) from wdbgexts.h SAL annotations
-- Fix for type information display for `char16_t` and `char32_t` types on Linux platforms
+- Fixed type information display for `char16_t` and `char32_t` types on Linux platforms
 
 ### General UI Improvements
-- Add Support for Single Line Ribbon
+- Add new Simplified Ribbon option, which reduces the Ribbon's vertical footprint
 - Enabled graphics hardware acceleration when running in Remote Desktop Protocol (RDP) sessions
 - Removed unnecessary invalidations in Disassembly window for better performance
 - Fixed DPI scaling for tool window context menus across different monitor configurations
