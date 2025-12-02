@@ -25,7 +25,6 @@ This article provides information on what's new in WinDbg. Earlier versions were
 - Fixed DAC and SOS extension loading and functionality when connected to live debugging targets
 - Resolved problem where attached process executables appeared as 'imageXXXXXXXX' instead of actual names
 - Fixed NuGet.exe download code that was broken by negative cache implementation
-- Corrected issue where WinDbg ignored host URL when processing fasttfgitview commands
 - Fixed UI delays when using exdigdbsrv
 - Handled WMI exceptions from USB 3.1 workaround compatibility checker
 - Removed incorrect warnings (C6518) from wdbgexts.h SAL annotations
@@ -45,7 +44,6 @@ This article provides information on what's new in WinDbg. Earlier versions were
 
 ### Time Travel Debugging (TTD)
 - 1.11.553 -> 1.11.567
-- Prevent the guest process from stealing the process instrumentation callback
 
 ## 1.2510.7001.0
 
