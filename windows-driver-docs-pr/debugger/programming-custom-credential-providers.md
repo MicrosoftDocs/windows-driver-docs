@@ -2,13 +2,13 @@
 title: Programming Custom Credential Providers
 description: Learn the process of implementing custom credential providers for Windows debuggers using DLLs, EXEs, or scripts for flexible authentication.
 keywords: ["symbols, programming"]
-ms.date: 11/20/2025
+ms.date: 12/2/2025
 ms.topic: concept-article
 ---
 
 # Program custom credential providers
 
-Custom credential providers enable Windows debuggers to authenticate with symbol and source servers that use specialized authentication methods. This article shows you how to implement custom providers by using DLLs, executables, or scripts.
+Custom credential providers enable Windows debuggers to authenticate with symbol and source servers that use specialized authentication methods. This article shows you how to implement custom providers implemented through DLLs, executables, or scripts.
 
 **What you learn:**
 
@@ -25,9 +25,9 @@ There are two options:
 
 ## Windows debugger HTTPS authentication requests
 
-The Windows debuggers request symbols from a symbol server. If the symbol server doesn't require authentication, the debuggers return the symbols without using any credential providers. If the symbol server returns a HTTP_STATUS_DENIED 401 (Unauthorized Access / Access Denied) status code, this status code indicates to the debugger that authentication is required. The 401 unauthorized code indicates that the request lacks valid authentication credentials for the target resource. This status code means the server refuses to fulfill the request because the client didn't provide the required authentication information. 
+The Windows debuggers request symbols from a symbol server. If the symbol server doesn't require authentication, the debuggers return the symbols without using any credential providers. When the symbol server returns an HTTP 401 (Unauthorized Access / Access Denied) status code, it indicates that authentication is required. This means the request lacks valid authentication credentials for the target resource, and the server refuses to fulfill the request until the client provides the necessary authentication information. 
 
-If you configure a custom credential provider, the debugger uses it and the credentials it returns to resend the failed request with the 401 error. The next section covers configuring a custom credential provider.
+If you configure a custom credential provider, the debugger uses the credentials it returns to retry the failed request. The next section covers configuring a custom credential provider.
 
 ## XML configuration of the custom credential provider
 
@@ -36,16 +36,16 @@ To configure a custom credential provider, you need two XML files:
 1. **DbgCredentialProvider.config.xml** - Specifies where configuration files are located
 1. **Provider configuration XML** - Defines the provider implementation (DLL, EXE, or script)
 
-When a 401 unauthorized error is returned, the debugger invokes DbgCredentialProvider.dll. This DLL looks for credential providers by following this process. It opens a file named DbgCredentialProvider.config.xml, which should be in the same directory as DbgCredentialProvider.dll. This file provides the folder location of the configuration XML files. 
+When a 401 unauthorized error is returned, the debugger invokes DbgCredentialProvider.dll. This DLL searches for credential providers by opening a file named DbgCredentialProvider.config.xml, which should be located in the same directory as DbgCredentialProvider.dll. This file provides the folder location of the configuration XML files.
 
 ### DbgCredentialProvider.config.xml search behavior
 
-The search behavior used to locate the DbgCredentialProvider.config.xml file is described here. Once the process finds DbgCredentialProvider.config.xml, it opens the file and ends the search. The search runs in the following order:
+The debugger searches for DbgCredentialProvider.config.xml in the following order, stopping when the file is found:
 
-1. It tries to locate the DbgCredentialProvider.config.xml file in the folder specified in the `DBG_COMMON_FOLDER` environment variable, if you set it.
-1. It tries to locate the DbgCredentialProvider.config.xml file in the `%LOCALAPPDATA%\Dbg\Common` folder.
-1. It tries to locate the DbgCredentialProvider.config.xml file in the folder of the calling application.
-1. It tries to locate the DbgCredentialProvider.config.xml file in the folder next to DbgCredentialProvider.dll.
+1. The folder specified by the `DBG_COMMON_FOLDER` environment variable, if you set it.
+1. `%LOCALAPPDATA%\Dbg\Common`
+1. The calling application's folder.
+1. The folder containing DbgCredentialProvider.dll.
 
 > [!NOTE]
 > **DBG_COMMON_FOLDER** is an environment variable that specifies the folder location for debugger configuration files. When you set it, the debugger searches this location first for `DbgCredentialProvider.config.xml` before checking any default locations.
@@ -54,7 +54,7 @@ For information on how to set WinDbg-related environmental values, see [Environm
 
 ### XML configuration file location - DbgCredentialProvider.config.xml
 
-The installation process places the config XML files at the folder locations specified in DbgCredentialProvider.config.xml.
+The following shows the default DbgCredentialProvider.config.xml file installed with the debugger:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -72,17 +72,17 @@ The config file is located next to the DbgCredentialProvider.dll.
 </Settings>
 ```
 
-You can list more than one folder under `<Folders></Folders>` elements. The folders can be a relative or absolute path. If you specify a relative path, it's relative to the location of the DbgCredentialProvider.config.xml file. The debugger searches the folders for providers in the order listed.
+You can list multiple folders under the `<Folders>` element. Each folder path can be either relative or absolute. Relative paths are resolved from the location of the DbgCredentialProvider.config.xml file. The debugger searches the folders for providers in the order listed.
 
-In the previous example, the `<Folders>` collection has just one folder, *CredentialProviders*, and it's a relative path.
+In the previous example, the `<Folders>` collection contains a single folder, *CredentialProviders*, specified as a relative path.
 
 ### XML configuration information for the custom credential provider
 
-After the debugger locates the specified folder location, it enumerates all files with the '*.xml*' extension in the *CredentialProviders* folder. The XML files describe which debugger credential providers are available for the debugger. The XML files describe the location of the credential providers (implemented in DLL, EXE, or CMD/BAT scripts). The providers' locations can be relative or absolute paths.
-
+After reading DbgCredentialProvider.config.xml, the debugger enumerates all files with the .xml extension in each listed folder. In the previous example, only the CredentialProviders folder is enumerated. These XML files describe which credential providers are available to the debugger, including their location (DLL, EXE, or CMD/BAT script). The locations can be specified as relative or absolute paths.
 The debugger supports multiple custom credential providers. It asks every provider for credentials and uses the credentials from the first provider that returns success.
 
-The order in which the XML files are enumerated is unspecified.
+> [!NOTE]
+> The order in which the XML files are enumerated is unspecified.
 
 The example DbgCredentialProvider_gcmw.xml file shows how a batch file can be called.
 
