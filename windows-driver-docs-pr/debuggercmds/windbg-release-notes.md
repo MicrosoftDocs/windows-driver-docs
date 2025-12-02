@@ -44,7 +44,7 @@ This article provides information on what's new in WinDbg. Earlier versions were
 - Cleaned up debugger log to exclude early application startup entries from extension gallery and other internal operations
 
 ### Time Travel Debugging (TTD)
-- 1.11.553 -> 1.11.566
+- 1.11.553 -> 1.11.567
 - Prevent the guest process from stealing the process instrumentation callback
 
 ## 1.2510.7001.0
