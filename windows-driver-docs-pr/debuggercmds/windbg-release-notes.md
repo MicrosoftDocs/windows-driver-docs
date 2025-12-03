@@ -12,6 +12,36 @@ ms.topic: release-notes
 
 This article provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
+## 1.2511.21001.0
+
+### New features
+- Enhanced file selection with priority-based handling extended to CAB files and folders for better dump file targeting
+- Improved ELF, DWARF, and Mach-O symbol file downloads with enhanced logging and status messages
+- DBGHELP_DIA_PATH environment variable now takes precedence over currently loaded modules for better symbol handling control
+- Member name indexing improvements for better symbol navigation and lookup performance
+
+### Bug fixes
+- Resolved issue where memory writes to live Linux targets would fail
+- Fixed DAC and SOS extension loading and functionality when connected to live debugging targets
+- Resolved problem where attached process executables appeared as 'imageXXXXXXXX' instead of actual names
+- Fixed NuGet.exe download code that was broken by negative cache implementation
+- Fixed UI delays when using exdigdbsrv
+- Handled WMI exceptions from USB 3.1 workaround compatibility checker
+- Removed incorrect warnings (C6518) from wdbgexts.h SAL annotations
+- Fixed type information display for `char16_t` and `char32_t` types on Linux platforms
+
+### General UI improvements
+- Add new Simplified Ribbon option, which reduces the Ribbon's vertical footprint
+- Enabled graphics hardware acceleration when running in Remote Desktop Protocol (RDP) sessions
+- Improved refresh performance in Disassembly window
+- Fixed DPI scaling for tool window context menus across different monitor configurations
+- Made version information selectable on About page for easier copying
+- Removed support for obsolete IDNA (Internationalized Domain Names in Applications) technology
+- Cleaned up debugger log to exclude early application startup entries from extension gallery and other internal operations
+
+### Time travel debugging (TTD)
+- 1.11.553 -> 1.11.567
+
 ## 1.2510.7001.0
 
 ### User Interface & Experience Improvements
