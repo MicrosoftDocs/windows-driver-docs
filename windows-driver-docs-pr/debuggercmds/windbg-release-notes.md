@@ -35,10 +35,7 @@ This article provides information on what's new in WinDbg. Earlier versions were
 - Enabled graphics hardware acceleration when running in Remote Desktop Protocol (RDP) sessions
 - Improved refresh performance in Disassembly window
 - Fixed DPI scaling for tool window context menus across different monitor configurations
-- Improved refresh behavior for windows using AddressEvaluation
-- Fixed AutoHideWindow appearance issues with RibbonWindow
 - Made version information selectable on About page for easier copying
-- Enhanced LoadLibrary calls to avoid altering DLL search paths, improving security
 - Removed support for obsolete IDNA (Internationalized Domain Names in Applications) technology
 - Cleaned up debugger log to exclude early application startup entries from extension gallery and other internal operations
 
