@@ -33,7 +33,7 @@ This article provides information on what's new in WinDbg. Earlier versions were
 ### General UI Improvements
 - Add new Simplified Ribbon option, which reduces the Ribbon's vertical footprint
 - Enabled graphics hardware acceleration when running in Remote Desktop Protocol (RDP) sessions
-- Removed unnecessary invalidations in Disassembly window for better performance
+- Improved refresh performance in Disassembly window
 - Fixed DPI scaling for tool window context menus across different monitor configurations
 - Improved refresh behavior for windows using AddressEvaluation
 - Fixed AutoHideWindow appearance issues with RibbonWindow
