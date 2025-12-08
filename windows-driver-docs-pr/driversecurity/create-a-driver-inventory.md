@@ -7,11 +7,11 @@ ms.topic: how-to
 
 # Create an inventory of installed driver packages
 
-This article shows you how to create an inventory of installed third-party [driver packages](../install/driver-packages.md) and identify unnecessary drivers that increase security risks. You learn how to use PnPUtil and PowerShell to audit your system and remove unwanted driver packages.
+This article shows you how to create an inventory of installed third-party [driver packages](../install/driver-packages.md) and identify unnecessary drivers that could increase security risks. You learn how to use PnPUtil and PowerShell to audit your system and remove unwanted driver packages.
 
 ## Driver security - security risk reduction
 
-## Why reduce driver security risks?
+## Why reduce unneeded driver packages?
 
 Why reduce your driver footprint? Each unnecessary driver on your system:
 
@@ -67,7 +67,7 @@ Use these PowerShell scripts to find specific drivers on your system:
 This script identifies OEM driver packages that aren't installed on any devices (devices count = 0).
 
 ```powershell
-$pnputilOutput = pnputil /enum-drivers /devices /format xml
+[xml] $pnputilOutput = pnputil /enum-drivers /devices /format xml
 $pnputilOutput.pnputil.driver | where {$_.devices.count -eq 0}
 ```
 
@@ -76,7 +76,7 @@ $pnputilOutput.pnputil.driver | where {$_.devices.count -eq 0}
 This script finds all OEM driver packages that contain files of a certain file extension, such as `.sys`.
 
 ```powershell
-$pnputilOutput = pnputil /enum-drivers /devices /files /format xml
+[xml] $pnputilOutput = pnputil /enum-drivers /devices /files /format xml
 $pnputilOutput.pnputil.driver | where {$_.Files.File.Name -like "*.sys"}
 $sysDrivers = $pnputilOutput.pnputil.driver | Where-Object {$_.Files.File.Name -like "*.sys"}
 Write-Host "Found $($sysDrivers.Count) driver(s) with .sys files.`n"
@@ -99,7 +99,7 @@ Get-WindowsDriver -Path "C:\Mount"
 The [Get-WindowsDriver commandlet](/powershell/module/dism/get-windowsdriver) can also list drivers in the booted Windows environment by using the `-Online` option.
 
 ```PowerShell
-GetWindowsDriver -Online
+Get-WindowsDriver -Online
 ```
 
 ## Other driver tools
