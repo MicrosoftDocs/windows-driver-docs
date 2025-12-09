@@ -1,5 +1,5 @@
 ---
-title: What Is Secure Boot for Windows
+title: What Is Secure Boot for Windows?
 description: Learn what Secure Boot is and how this UEFI security standard works to ensure your Windows PC boots using only trusted software.
 ms.date: 12/08/2025
 ms.topic: concept-article
