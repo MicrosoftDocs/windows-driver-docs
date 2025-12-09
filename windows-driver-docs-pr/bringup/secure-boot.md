@@ -23,7 +23,7 @@ For specific Windows hardware compatibility requirements for Secure Boot, see **
 
 ## Next steps
 
-- To enable Secure Boot on your device, see [Enabling Secure Boot](/windows/windows-11-and-secure-boot-a8ff1202-c0d9-42f5-940f-843abef64fad).
+- To enable Secure Boot on your device, see [Enabling Secure Boot](https://support.microsoft.com/windows/windows-11-and-secure-boot-a8ff1202-c0d9-42f5-940f-843abef64fad).
 
 ## Related resources
 
