@@ -9,8 +9,6 @@ ms.topic: how-to
 
 This article shows you how to create an inventory of installed third-party [driver packages](../install/driver-packages.md) and identify unnecessary drivers that could increase security risks. You learn how to use PnPUtil and PowerShell to audit your system and remove unwanted driver packages.
 
-## Driver security - security risk reduction
-
 ## Why reduce unneeded driver packages?
 
 Why reduce your driver footprint? Each unnecessary driver on your system:
@@ -133,7 +131,7 @@ Explanation of parameters:
 > [!IMPORTANT]
 > Make sure the driver isn't critical to system operation before removing it. Removing essential drivers can cause system instability and data loss.
 
-### See also
+## See also
 
 - [PnPUtil reference](../devtest/pnputil.md) - Complete command documentation
 - [PnPUtil command syntax](../devtest/pnputil-command-syntax.md) - Detailed syntax guide
