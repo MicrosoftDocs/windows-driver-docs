@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x139 KERNEL_SECURITY_CHECK_FAILURE
-description: The KERNEL_SECURITY_CHECK_FAILURE bug check has a value of 0x00000139. This bug check indicates that the kernel detects the corruption of a critical data structure.
+description: The KERNEL_SECURITY_CHECK_FAILURE bug check has a value of 0x00000139, and indicates that the kernel detects the corruption of a critical data structure.
 keywords: ["Bug Check 0x139 KERNEL_SECURITY_CHECK_FAILURE", "Bug Check 0x139 KERNEL_SECURITY_CHECK_FAILURE"]
 ms.date: 03/10/2022
 topic_type:
@@ -14,7 +14,7 @@ api_type:
 
 # Bug Check 0x139: KERNEL\_SECURITY\_CHECK\_FAILURE
 
-The KERNEL\_SECURITY\_CHECK\_FAILURE bug check has a value of 0x00000139. This bug check indicates that the kernel detects the corruption of a critical data structure.
+The KERNEL\_SECURITY\_CHECK\_FAILURE bug check has a value of 0x00000139, and indicates that the kernel detects the corruption of a critical data structure.
 
 > [!IMPORTANT]
 > This article is for programmers. If you're a customer who receives a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
@@ -33,16 +33,16 @@ The following table describes possible values for Parameter 1.
 
 | Parameter 1 | Description                                                                                                                                                                                                                                                                                                       |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `0` | A stack-based buffer was overrun (legacy /GS violation).                                                                                                                                                                                                                                                     |
-| `1`  |  VTGuard instrumentation code detected an attempt to use an illegal virtual function table. Typically, a C++ object was corrupted, and then a virtual method call was attempted using the corrupted object's **this** pointer.                                                                                     |
+| `0` | A stack-based buffer is overrun (legacy /GS violation).                                                                                                                                                                                                                                                     |
+| `1`  |  VTGuard instrumentation code detected an attempt to use an illegal virtual function table. Typically, a C++ object is corrupted, and then a virtual method call attempted to use the corrupted object's **this** pointer.                                                                                     |
 | `2`  |  Stack cookie instrumentation code detected a stack-based buffer overrun (/GS violation).                                                                                                                                                                                                                          |
-| `3`  |  A LIST\_ENTRY was corrupted (for example, a double remove). For more information, see the following Cause section.                                                                                                                                                                                                |
+| `3`  |  A LIST\_ENTRY is corrupted (for example, a double remove). For more information, see the following Cause section.                                                                                                                                                                                                |
 | `4`  |  Reserved                                                                                                                                                                                                                                                                                                          |
 | `5`  |  An invalid parameter was passed to a function that considers invalid parameters fatal.                                                                                                                                                                                                                            |
-| `6`  |  The stack cookie security cookie was not properly initialized by the loader. This may be caused by building a driver to run only on Windows 8 and attempting to load the driver image on an earlier version of Windows. To avoid this problem, you must build the driver to run on an earlier version of Windows. |
+| `6`  |  The loader did not properly initialize the stack cookie security cookie. This bug check be caused by building a driver to run only on Windows 8 and attempting to load the driver image on an earlier version of Windows. To avoid the problem, you must build the driver to run on an earlier version of Windows. |
 | `7`  |  A fatal program exit was requested.                                                                                                                                                                                                                                                                               |
-| `8`  |  A array bounds check inserted by the compiler detected an illegal array indexing operation.                                                                                                                                                                                                                       |
-| `9`  |  A call to **RtlQueryRegistryValues** was made specifying RTL\_QUERY\_REGISTRY\_DIRECT without RTL\_QUERY\_REGISTRY\_TYPECHECK, and the target value was not in a trusted system hive.                                                                                                                             |
+| `8`  |  An array bounds check inserted by the compiler detected an illegal array indexing operation.                                                                                                                                                                                                                       |
+| `9`  |  A call to **RtlQueryRegistryValues** was made specifying RTL\_QUERY\_REGISTRY\_DIRECT without RTL\_QUERY\_REGISTRY\_TYPECHECK, and the target value wasn't in a trusted system hive.                                                                                                                             |
 |   `10` |  Indirect call guard check detected invalid control transfer. |
 |   `11` | Write guard check detected invalid memory write. |
 |   `12` | An attempt was made to switch to an invalid fiber context. |
@@ -59,7 +59,7 @@ The following table describes possible values for Parameter 1.
 |   `26` | A call was made to an unsafe extension. |
 |   `27` | A deprecated service was invoked. |
 |   `28` | An out of bounds buffer access was detected. |
-|   `29` | An RTL_BALANCED_NODE RBTree entry has been corrupted. |
+|   `29` | An RTL_BALANCED_NODE RBTree entry is corrupted. |
 |   `37` | An out of range switch jumptable entry was invoked. |
 |   `38` | A longjmp was attempted to an invalid target. |
 |   `39` | An export suppressed call target couldn't be made a valid call target. |
@@ -67,16 +67,16 @@ The following table describes possible values for Parameter 1.
 
 ## Cause
 
-Using the parameter 1 table, and a dump file, it is possible to narrow down the cause for many bug checks of this type.
+Using the parameter 1 table, and a dump file, you can narrow down the cause for many bug checks of this type.
 
 LIST\_ENTRY corruption can be difficult to track down. This bug check indicates that an inconsistency was introduced into a doubly-linked list (detected when an individual list entry element is added to or removed from the list). Unfortunately, the inconsistency is not necessarily detected at the time when the corruption occurred, so some detective work may be necessary to identify the root cause.
 
 Common causes of list entry corruption include:
 
--   A driver has corrupted a kernel synchronization object, such as a KEVENT (for example double initializing a KEVENT while a thread was still waiting on that same KEVENT, or allowing a stack-based KEVENT to go out of scope while another thread was using that KEVENT). This type of bug check typically occurs in nt!Ke\* or nt!Ki\* code. It can happen when a thread finishes waiting on a synchronization object or when code attempts to put a synchronization object in the signaled state. Usually, the synchronization object being signaled is the one that is corrupted. Sometimes, Driver Verifier with special pool can help track down the culprit (if the corrupted synchronization object is in a pool block that is already freed).
--   A driver has corrupted a periodic KTIMER. This type of bug check typically occurs in nt!Ke\* or nt!Ki\* code and involves signaling a timer, or inserting or removing a timer from a timer table. The timer being manipulated may be the corrupted one, but it might be necessary to inspect the timer table with [**!timer**](../debuggercmds/-timer.md) (or manually walking the timer list links) to identify which timer has been corrupted. Sometimes, Driver Verifier with special pool can help track down the culprit (if the corrupted KTIMER is in a pool block that is already freed).
--   A driver has mismanaged an internal LIST\_ENTRY-style linked list. A typical example would be calling **RemoveEntryList** twice on the same list entry without reinserting the list entry between the two **RemoveEntryList** calls. Other variations are possible, such as double inserting an entry into the same list.
--   A driver has freed a data structure that contains a LIST\_ENTRY without removing the data structure from its corresponding list, causing corruption to be detected later when the list is examined after the old pool block has been reused.
+-   A driver corrupted a kernel synchronization object, such as a KEVENT (for example double initializing a KEVENT while a thread was still waiting on that same KEVENT, or allowing a stack-based KEVENT to go out of scope while another thread was using that KEVENT). This type of bug check typically occurs in nt!Ke\* or nt!Ki\* code. It can happen when a thread finishes waiting on a synchronization object or when code attempts to put a synchronization object in the signaled state. Usually, the synchronization object being signaled is the one that's corrupted. Sometimes, Driver Verifier with special pool can help track down the culprit (if the corrupted synchronization object is in a pool block that's already freed).
+-   A driver corrupted a periodic KTIMER. This type of bug check typically occurs in nt!Ke\* or nt!Ki\* code and involves signaling a timer, or inserting or removing a timer from a timer table. The timer being manipulated may be the corrupted one, but it might be necessary to inspect the timer table with [**!timer**](../debuggercmds/-timer.md) (or manually walking the timer list links) to identify which timer is corrupted. Sometimes, Driver Verifier with special pool can help track down the culprit (if the corrupted KTIMER is in a pool block that's already freed).
+-   A driver mismanaged an internal LIST\_ENTRY-style linked list. A typical example would be calling **RemoveEntryList** twice on the same list entry without reinserting the list entry between the two **RemoveEntryList** calls. Other variations are possible, such as double inserting an entry into the same list.
+-   A driver freed a data structure that contains a LIST\_ENTRY without removing the data structure from its corresponding list, causing corruption to be detected later when the list is examined after reusin the old pool block.
 -   A driver used a LIST\_ENTRY-style list in a concurrent fashion without proper synchronization, resulting in a torn update to the list.
 
 In most cases, you can identify the corrupted data structure by walking the linked list both forward and backwards (the [**dl**](../debuggercmds/dl--display-linked-list-.md) and **dlb** commands are useful for this purpose) and comparing the results. Where the list is inconsistent between a forward and backward walk is typically the location of the corruption. Since a linked list update operation can modify the list links of a neighboring element, you should look at the neighbors of a corrupted list entry closely, as they may be the underlying culprit.
@@ -85,11 +85,11 @@ Because many system components internally utilize LIST\_ENTRY lists, various typ
 
 ## Resolution
 
-Determining the cause of this issues typically requires the use of the debugger to gather additional information. Multiple dump files should be examined to see if this stop code has similar characteristics, such as the code that is running when the stop code appears.
+Determining the cause of list entry corruption issues typically requires the use of the debugger to gather other information. Multiple dump files should be examined to see if the stop code has similar characteristics, such as the code that's running when the stop code appears.
 
 For more information, see [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md), [Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](../debuggercmds/-analyze.md).
 
-Use the event log to see if there are higher level events that occur leading up to this stop code.
+Use the event log to see if there are higher level events that occur leading up to the stop code.
 
 These general troubleshooting tips may be helpful.
 
@@ -97,13 +97,13 @@ These general troubleshooting tips may be helpful.
 
 -   If new device drivers or system services have been added recently, try removing or updating them. Try to determine what changed in the system that caused the new bug check code to appear.
 
--   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. Look for critical errors in the system log that occurred in the same time window as the blue screen.
+-   Check the System Log in Event Viewer for other error messages that might help pinpoint the device or driver that is causing the error. Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 -   Look in **Device Manager** to see if any devices are marked with the exclamation point (!). Review the events log displayed in driver properties for any faulting driver. Try updating the related driver.
 
 -   Run a virus detection program. Viruses can infect all types of hard disks formatted for Windows, and resulting disk corruption can generate system bug check codes. Make sure the virus detection program checks the Master Boot Record for infections.
 
--   For additional general troubleshooting information, see [**Analyze Bug Check Blue Screen Data**](blue-screen-data.md).
+-   For more general troubleshooting information, see [**Analyze Bug Check Blue Screen Data**](blue-screen-data.md).
 
 ## See also
 
