@@ -635,8 +635,6 @@ For vendor ID 15AD, these device IDs are supported:
 
 ### Vendor ID 1D0F, Amazon.com Inc
 
-*New in WIndows 25H2*
-
 For vendor ID 1D0F, these device IDs are supported:
 
 EC20
