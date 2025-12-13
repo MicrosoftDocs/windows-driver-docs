@@ -633,6 +633,15 @@ For vendor ID 15AD, these device IDs are supported:
 
 07B0
 
+### Vendor ID 1D0F, Amazon.com Inc
+
+*New in WIndows 25H2*
+
+For vendor ID 1D0F, these device IDs are supported:
+
+EC20
+EC21
+
 ## XML Supported NIC List
 
 This is the same information shown above in the XML format.
@@ -1236,6 +1245,12 @@ This is the same information shown above in the XML format.
   <NIC>
     <manufacturer>15AD</manufacturer>
       <deviceid build="26006">07B0</deviceid>
+  </NIC>
+
+  <NIC>
+    <manufacturer>1D0F</manufacturer>
+      <deviceid build="27900">EC20</deviceid>
+      <deviceid build="27900">EC21</deviceid>
   </NIC>
 
 </SupportedNetworkInterfaceCards>
