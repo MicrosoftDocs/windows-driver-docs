@@ -1,13 +1,23 @@
 ---
-title: Upgrading Firmware for an NVMe Device
-description: Updates to the firmware on an NVMe storage device are issued to the miniport driver for that device. 
-ms.date: 04/24/2025
+title: Upgrading Firmware for an NVMe Device (Legacy Approach)
+description: Legacy approach for firmware updates on NVMe storage devices using IOCTL_SCSI_MINIPORT with SRB I/O control structures.
+ms.date: 09/29/2025
 ms.topic: how-to
 ---
 
-# Upgrading Firmware for an NVMe Device
+# Upgrading Firmware for an NVMe Device (Legacy Approach)
 
-This article describes the firmware upgrade process, the miniport firmware control requests, and the structures used in the requests. The article also provides an example of how to perform a firmware upgrade.
+> [!NOTE]
+>
+> This article describes the legacy firmware upgrade approach using **IOCTL_SCSI_MINIPORT** with SRB I/O control structures. Starting with Windows 10 (and Windows Server 2016), Microsoft recommends using the dedicated storage firmware IOCTLs instead:
+>
+> - [**IOCTL_STORAGE_FIRMWARE_GET_INFO**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_firmware_get_info)
+> - [**IOCTL_STORAGE_FIRMWARE_DOWNLOAD**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_firmware_download)
+> - [**IOCTL_STORAGE_FIRMWARE_ACTIVATE**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_firmware_activate)
+>
+> The modern approach provides direct communication with storage devices without requiring SRB structures or miniport conversion layers. This legacy documentation is maintained for compatibility with older systems and existing code.
+
+This article describes the legacy firmware upgrade process, the miniport firmware control requests, and the structures used in the requests. The article also provides an example of how to perform a firmware upgrade using the older SRB-based approach.
 
 Updates to the firmware on an NVMe storage device are issued to the miniport driver for that device. Function commands for getting firmware information, downloading, and activating firmware images are issued to the miniport.
 

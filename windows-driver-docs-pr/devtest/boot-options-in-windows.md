@@ -1,6 +1,6 @@
 ---
-title: Overview of Boot Options in Windows
-description: Describes Windows boot loader architecture, firmware-independent boot configuration, and boot option editing tool.
+title: Configure and edit boot options in Windows for driver development
+description: Learn about boot options in Windows, including the boot loader architecture, boot configuration, and the BCDEdit editing tool.
 keywords:
 - boot options WDK , Windows
 - editing boot options
@@ -16,62 +16,64 @@ keywords:
 - system-specific boot loaders WDK
 - boot loaders WDK
 - firmware-independent boot options WDK
-ms.date: 12/12/2024
+ms.date: 11/05/2025
 ms.topic: concept-article
 ---
 
-# Overview of Boot Options in Windows
+# Configure and edit boot options in Windows for driver development
 
-The Windows boot loader architecture includes a firmware-independent boot configuration and storage system called *Boot Configuration Data* (BCD) and a boot option editing tool, BCDEdit (BCDEdit.exe). During development, you can use BCDEdit to configure boot options for debugging, testing, and troubleshooting your driver on computers running Windows 11, Windows 10, Windows 8, Windows Server 2012, Windows 7, and Windows Server 2008.
+This article provides an overview of boot options in Windows. You'll learn about the key components of the boot process, including:
+
+- The Windows Boot Manager, operating system loader, and resume loader.
+- The Boot Configuration Data (BCD) store where boot options are kept.
+- The BCDEdit tool used to modify boot options.
+
+During development, you can use this information to configure boot options for debugging, testing, and troubleshooting your driver.
 
 > [!CAUTION]
-> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using BCDEdit could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings. For more information, see *[How to open MSConfig in Windows 10](https://support.microsoft.com/help/4026130/windows-how-to-open-msconfig-in-windows-10)*.
+> You need administrative privileges to use BCDEdit to modify BCD. Changing some boot entry options by using BCDEdit could make your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings. 
 
 ## Boot Loading Architecture
 
-Windows includes boot loader components that are designed to load Windows quickly and securely. It uses three components:
+Windows uses three primary components to load the operating system quickly and securely:
 
-- Windows Boot Manager
+- **Windows Boot Manager**: Starts the system, displays the boot menu to the user, and loads the selected operating system loader.
+- **Windows operating system loader**: Resides in the Windows partition, takes over the boot process, and loads the operating system.
+- **Windows resume loader**: Resumes the system from hibernation.
 
-- Windows operating system loader
+The Windows Boot Manager is generic, while the system-specific boot loaders are optimized for the OS they load. The Boot Manager passes boot parameters to the selected loader, which then completes the boot process.
 
-- Windows resume loader
-
-In this configuration, the Windows Boot Manager is generic and unaware of the specific requirements for each operating system while the system-specific boot loaders are optimized for the system that they load.
-
-When a computer with multiple boot entries includes at least one entry for Windows, the Windows Boot Manager, starts the system and interacts with the user. It displays the boot menu, loads the selected system-specific boot loader, and passes the boot parameters to the boot loader.
-
-The boot loaders reside in each Windows partition. Once selected, the boot loaders take over the boot process and load the operating system in accordance with the selected boot parameters.
-
-For additional detail on the Windows startup process refer to *Windows Internals*, published by Microsoft Press.
+For additional detail on the Windows startup process, refer to *Windows Internals*, published by Microsoft Press.
 
 ## Boot Configuration Data
 
-Windows boot options are stored in the Boot Configuration Data (BCD) store on BIOS-based and EFI-based computers.
+Windows stores boot options in the Boot Configuration Data (BCD) store on BIOS-based and EFI-based computers. The BCD store uses GUIDs and names like "Default" to identify boot-related applications.
 
-BCD provides a common, firmware-independent boot option interface. It is more secure than previous boot option storage configurations, and lets Administrators assign rights for managing boot options. BCD is available at run time and during all phases of system setup.
+Key BCD capabilities for driver development:
 
-You can manage BCD remotely and manage BCD when the system boots from media other than the media on which the BCD store resides. This feature is can be used for debugging and troubleshooting, especially when a BCD store must be restored while running Startup Repair, from USB-based storage media, or even remotely.
+- Access BCD at run time and during system setup
+- Manage BCD remotely for troubleshooting
+- Restore BCD from USB media or Startup Repair
 
-The BCD store, with its object-and-element architecture, uses GUIDs and names such as "Default" to identify boot-related applications.
+For a complete list of BCD boot options, see [BCD Boot Options Reference](./bcd-boot-options-reference.md).
 
-BCD includes its own set of boot options. For more information about these boot options, see [BCD Boot Options Reference](./bcd-boot-options-reference.md).
+## Edit boot options with BCDEdit
 
-## Editing Boot Options
+To edit boot options in Windows, use BCDEdit (BCDEdit.exe), a command-line tool included in Windows.
 
-To edit boot options in Windows, one option is to use BCDEdit (BCDEdit.exe), a tool included in Windows.
+### Prerequisites
 
-To use BCDEdit, you must be a member of the Administrators group on the computer.
+- Administrator privileges on the computer
+- BitLocker and Secure Boot disabled or suspended (if enabled)
 
-> [!NOTE]
-> Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
+### Alternative tools for editing boot options
 
-You can also use the System Configuration utility (MSConfig.exe) to change boot settings. In addition, many options can be set using the Advanced Startup settings UI in Windows.
+- [System Configuration utility (MSConfig.exe)](https://support.microsoft.com/help/4026130/windows-how-to-open-msconfig-in-windows-10) - GUI-based boot settings editor
+- Advanced Startup settings UI - Built into Windows settings
+- [Boot Configuration Data WMI Provider](/previous-versions/windows/desktop/bcd/boot-configuration-data-portal) - For programmatic changes
 
-To change boot options programmatically in Windows, use the Windows Management Instrument (WMI) interface to boot options. This BCD WMI interface is the best method to programmatically change the boot options. For information about the BCD WMI interface, see [Boot Configuration Data WMI Provider](/previous-versions/windows/desktop/bcd/boot-configuration-data-portal) in the Windows SDK documentation.
+## Next steps
 
-## Related topics
-
-- [BCD Edit Options Reference](bcd-boot-options-reference.md)
-- [Editing Boot Options](editing-boot-options.md)
-- [Using Boot Parameters](using-boot-parameters.md)
+- [Learn BCDEdit commands and syntax](editing-boot-options.md)
+- [View all BCD boot options](bcd-boot-options-reference.md)
+- [Set up boot parameters for debugging](using-boot-parameters.md)

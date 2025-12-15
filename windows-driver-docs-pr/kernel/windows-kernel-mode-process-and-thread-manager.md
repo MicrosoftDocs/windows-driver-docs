@@ -1,15 +1,21 @@
 ---
 title: Windows Kernel-Mode Process and Thread Manager
 description: Windows kernel-mode process and thread manager
-ms.date: 04/30/2025
+ms.date: 10/31/2025
 ms.topic: concept-article
 ---
 
 # Windows kernel-mode process and thread manager
 
-A *process* is a software program that is currently running in Windows. Every process has an ID, a number that identifies it. A *thread* is an object that identifies which part of the program is running. Each thread has an ID, a number that identifies it.
+The system-supplied Windows kernel-mode process and thread manager controls how processes and threads execute in the Windows operating system. Understanding this manager is essential for kernel-mode driver developers who need to create threads, monitor process creation, or synchronize access to shared resources.
 
-A process can have more than one thread. The purpose of a thread is to allocate processor time. On a machine with one processor, more than one thread can be allocated, but only one thread can run at a time. Each thread only runs a short time and then the execution is passed on to the next thread, giving the user the illusion that more than one thing is happening at once. On a machine with more than one processor, true multi-threading can take place. If an application has multiple threads, the threads can run simultaneously on different processors.
+The [ObCallback driver sample](https://github.com/microsoft/Windows-driver-samples/tree/main/general/obcallback/driver) demonstrates how to use process and thread notification routines in a kernel-mode driver.
+
+## Processes and threads overview
+
+A *process* is a software program that is currently running in Windows and identified by a unique process ID (PID). Within each process, one or more *threads* represent the actual units of execution that run the program's code. Each thread also has a unique thread ID (TID) within its process.
+
+Threads enable multitasking by sharing processor time. On a single-processor machine, multiple threads can be allocated but only one executes at a time. The processor rapidly switches between threads, creating the illusion of simultaneous execution. On multi-processor systems, true parallel execution occurs when threads run simultaneously on different processors.
 
 The Windows kernel-mode process and thread manager handles the execution of all threads in a process. Whether you have one processor or more, great care must be taken in driver programming to make sure that all threads of your process are designed so that no matter what order the threads are handled, your driver operates properly.
 
@@ -21,17 +27,12 @@ Routines that provide a direct interface to the process and thread manager are u
 
 This set of guidelines applies to these callback routines:
 
-[*PCREATE_PROCESS_NOTIFY_ROUTINE*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pcreate_process_notify_routine)
-
-[*PCREATE_PROCESS_NOTIFY_ROUTINE_EX*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pcreate_process_notify_routine_ex)
-
-[*PCREATE_THREAD_NOTIFY_ROUTINE*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pcreate_thread_notify_routine)
-
-[*PLOAD_IMAGE_NOTIFY_ROUTINE*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pload_image_notify_routine)
-
-[*POB_PRE_OPERATION_CALLBACK*](/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_pre_operation_callback)
-
-[*POB_POST_OPERATION_CALLBACK*](/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_post_operation_callback)
+- [*PCREATE_PROCESS_NOTIFY_ROUTINE*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pcreate_process_notify_routine)
+- [*PCREATE_PROCESS_NOTIFY_ROUTINE_EX*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pcreate_process_notify_routine_ex)
+- [*PCREATE_THREAD_NOTIFY_ROUTINE*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pcreate_thread_notify_routine)
+- [*PLOAD_IMAGE_NOTIFY_ROUTINE*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pload_image_notify_routine)
+- [*POB_PRE_OPERATION_CALLBACK*](/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_pre_operation_callback)
+- [*POB_POST_OPERATION_CALLBACK*](/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_post_operation_callback)
 
 Use these best practices:
 
@@ -40,9 +41,9 @@ Use these best practices:
 - Don't make registry calls.
 - Don't make blocking and/or Interprocess Communication (IPC) function calls.
 - Don't synchronize with other threads because it can lead to reentrancy deadlocks.
-- Use [System Worker Threads](./system-worker-threads.md) to queue work especially work involving:
+- Use [System Worker Threads](system-worker-threads.md) to queue work especially work involving:
   - Slow APIs or APIs that call into other process.
-  - Any blocking behavior which could interrupt threads in core services.
+  - Any blocking behavior that could interrupt threads in core services.
 - If you use System Worker Threads, don't wait on the work to complete. Doing so defeats the purpose of queuing the work to be completed asynchronously.
 - Be considerate of best practices for kernel mode stack usage. For examples, see [How do I keep my driver from running out of kernel-mode stack?](/previous-versions/windows/hardware/design/dn613940(v=vs.85)) and [Key Driver Concepts and Tips](/previous-versions/windows/hardware/design/dn614604(v=vs.85)).
 
@@ -50,12 +51,12 @@ Use these best practices:
 
 Starting in Windows 10, the Windows Subsystem for Linux (WSL) enables a user to run native Linux ELF64 binaries on Windows, alongside other Windows applications. For information about WSL architecture and the user-mode and kernel-mode components that are required to run the binaries, see the posts on the [Windows Subsystem for Linux](/archive/blogs/wsl/) blog.
 
-One of the components is a *subsystem process* that hosts the unmodified user-mode Linux binary, such as /bin/bash. Subsystem processes don't contain data structures associated with Win32 processes, such as Process Environment Block (PEB) and Thread Environment Block (TEB). For a subsystem process, system calls and user mode exceptions are dispatched to a paired driver.
+One of the components is a *subsystem process* that hosts the unmodified user-mode Linux binary, such as */bin/bash*. Subsystem processes don't contain data structures associated with Win32 processes, such as Process Environment Block (PEB) and Thread Environment Block (TEB). For a subsystem process, system calls and user mode exceptions are dispatched to a paired driver.
 
-Here are the changes to the [Process and Thread Manager Routines](/windows-hardware/drivers/ddi/_kernel) in order to support subsystem processes:
+Here are the changes to the process and thread manager routines in order to support subsystem processes:
 
 - The WSL type is indicated by the **SubsystemInformationTypeWSL** value in the [**SUBSYSTEM_INFORMATION_TYPE**](/windows-hardware/drivers/ddi/ntddk/ne-ntddk-_subsystem_information_type) enumeration. Drivers can call [**NtQueryInformationProcess**](/windows/win32/api/winternl/nf-winternl-ntqueryinformationprocess) and [**NtQueryInformationThread**](/windows/win32/api/winternl/nf-winternl-ntqueryinformationthread) to determine the underlying subsystem. Those calls return **SubsystemInformationTypeWSL** for WSL.
 
 - Other kernel mode drivers can get notified about subsystem process creation/deletion by registering their callback routine through the [**PsSetCreateProcessNotifyRoutineEx2**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pssetcreateprocessnotifyroutineex2) call. To get notifications about thread creation/deletion, drivers can call [**PsSetCreateThreadNotifyRoutineEx**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pssetcreatethreadnotifyroutineex), and specify **PsCreateThreadNotifySubsystems** as the type of notification.
 
-- The [**PS_CREATE_NOTIFY_INFO**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_ps_create_notify_info) structure has been extended to include a **IsSubsystemProcess** member that indicates a subsystem other than Win32. Other members such as **FileObject**, **ImageFileName**, **CommandLine** indicate additional information about the subsystem process. For information about the behavior of those members, see [**SUBSYSTEM_INFORMATION_TYPE**](/windows-hardware/drivers/ddi/ntddk/ne-ntddk-_subsystem_information_type).
+- The [**PS_CREATE_NOTIFY_INFO**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_ps_create_notify_info) structure was extended to include a **IsSubsystemProcess** member that indicates a subsystem other than Win32. Other members such as **FileObject**, **ImageFileName**, **CommandLine** indicate additional information about the subsystem process. For information about the behavior of those members, see [**SUBSYSTEM_INFORMATION_TYPE**](/windows-hardware/drivers/ddi/ntddk/ne-ntddk-_subsystem_information_type).

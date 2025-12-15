@@ -115,6 +115,9 @@ PrinterHardwareId3 = "PSA_BrotherMFC-J775DWF678"
 
 For consumer and home users, PSA is downloaded from the Microsoft Store and installed based on the printer's hardware ID or compatible ID. This feature is supported for enterprise and business customers as well, if they choose to use the PSA from their printer manufacturer. Association is controlled by the extension INF published on Windows Update by printer manufacturers.
 
+> [!NOTE]
+> Windows Server does not support Microsoft Store. Therefore, Print Support Apps (PSAs) cannot be automatically downloaded or installed from the Store on Windows Server. Administrators must provide and install PSAs via sideloading (MSIX/APPX) or through enterprise app management tools.  
+
 Enterprise and business customers may need to override extension INF association, if they choose to use a business logic PSA (for example, a line of business app). They need to deploy and associate a custom PSA that has built-in business logic. Examples of the business logic are managing print quota and cost, or print policy (no color or no single side printing).
 
 A registry key can be used to override a PSA association from an extension INF. This registry key method can be used for enterprise customers with Windows Print Server (Point and Print) and Universal Print.

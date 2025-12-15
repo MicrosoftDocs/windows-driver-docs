@@ -1,48 +1,45 @@
 ---
-title: "WinDbg - Scripting Menu"
-description: "This section describes how to use scripting in the WinDbg debugger."
+title: 'WinDbg: Scripting Menu'
+description: "This article describes how to use scripting in the WinDbg debugger."
 keywords: ["Scripting Menu", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 01/20/2020
 ms.topic: how-to
 ---
 
-# WinDbg - Scripting Menu
+# WinDbg: Scripting menu
 
-This section describes how to use the scripting support in the WinDbg.
+This article describes how to use the scripting support in WinDbg.
 
-:::image type="content" source="images/windbgx-javascript-new-script.png" alt-text="Screenshot of the scripting menu in WinDbg debugger.":::
+:::image type="content" source="images/windbgx-javascript-new-script.png" alt-text="Screenshot of the Scripting menu in WinDbg.":::
 
-The WinDbg script window features basic syntax highlighting, IntelliSense, and error recognition.
+The WinDbg **Scripting** window features basic syntax highlighting, IntelliSense, and error recognition.
 
 Use the ribbon buttons to:
 
-- Create a new script
-- Open an existing script
-- Execute a script
-- Save a script
-- Unlink a script
+- Create a new script.
+- Open an existing script.
+- Execute a script.
+- Save a script.
+- Unlink a script.
 
-You can also automatically execute scripts by right-clicking in the script window and selecting *Execute Script on Save*. When you successfully load a script, a green check box will appear on the script title bar. If there are errors in the script, a red x will be displayed.
+You can also automatically execute scripts by right-clicking in the **Scripting** window and selecting **Execute Script on Save**. When you successfully load a script, a green checkbox appears on the script title bar. If there are errors in the script, a red X appears.
 
-## JavaScript Scripting
+## JavaScript scripting
 
-To start using JavaScript, you must first be debugging a target. When you're ready to start working on your JavaScript, click "Load JavaScript Provider". After that you can create a new JavaScript, by picking between these two types of script templates.
+To start using JavaScript, you must first be debugging a target. When you're ready to start working on your JavaScript, select `Load JavaScript Provider`. After that, you can create a new JavaScript by choosing between the following two types of script templates:
 
-- **Extension Script** - A script which is designed to act as an extension to the debugger.  It manipulates the object model of the debugger and provides continued functionality.  No action happens upon hitting the <i>Execute</i> button on the ribbon.
+- **Extension script**: This script acts as an extension to the debugger. It manipulates the object model of the debugger and provides continued functionality. No action happens when you select **Execute** on the ribbon.
+- **Imperative script**: This script performs an action every time that you select **Execute** on the ribbon. Such a script doesn't generally modify the object model of the debugger.
 
-- **Imperative Script** - A script which is designed to perform an action each and every time the <i>Execute</i> button is clicked on the ribbon. Such a script does not generally modify the object model of the debugger.
+For more information about working with JavaScript, see:
 
-For more information about working with JavaScript, see these topics:
+- [JavaScript debugger scripting](../debugger/javascript-debugger-scripting.md)
+- [Native debugger objects in JavaScript extensions](../debugger/native-objects-in-javascript-extensions.md)
+- [JavaScript debugger example scripts](../debugger/javascript-debugger-example-scripts.md)
 
-[JavaScript Debugger Scripting](../debugger/javascript-debugger-scripting.md)
+## NatVis scripting
 
-[Native Debugger Objects in JavaScript Extensions](../debugger/native-objects-in-javascript-extensions.md)
-
-[JavaScript Debugger Example Scripts](../debugger/javascript-debugger-example-scripts.md)
-
-## NatVis Scripting
-
-Use **New Script** > **NatVis** to open the following blank NatVis template.
+Use **New Script** > **NatVis** to open the following blank NatVis template:
 
 ```xml
 <AutoVisualizer xmlns="https://schemas.microsoft.com/vstudio/debugger/natvis/2010">
@@ -51,11 +48,10 @@ Use **New Script** > **NatVis** to open the following blank NatVis template.
 </AutoVisualizer>
 ```
 
-For more information about working with NatVis, see [Debugger Objects in NatVis](../debugger/native-debugger-objects-in-natvis.md).
+For more information about working with NatVis, see [Debugger objects in NatVis](../debugger/native-debugger-objects-in-natvis.md).
 
 ---
 
-## See Also
+## Related content
 
-[WinDbg Features](../debugger/debugging-using-windbg-preview.md)
-
+- [WinDbg features](../debugger/debugging-using-windbg-preview.md)

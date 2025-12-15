@@ -156,6 +156,18 @@
         href: pct-machines-with-at-least-one-APO-disablement-in-past-7-days.md
       - name: Appealing rejection of an audio driver
         href: appeal-rejected-audio-driver.md
+    - name: Buses and Sensors
+      items:
+      - name: Buses and Sensors measures
+        href: buses-and-sensors-measures.md
+      - name: Percent of machines with user mode crashes out of the total flighting population (ecosystem, missing INF matching ID)
+        href: percent-of-machines-with-user-mode-crashes-ecosystem-missing-inf.md
+      - name: Percent of machines with user mode crashes out of the total flighting population (non-ecosystem, with INF matching ID)
+        href: percent-of-machines-with-user-mode-crashes-non-ecosystem-with-inf.md
+      - name: Percent of machines with WUDF user mode crashes out of the total flighting population (ecosystem, missing INF matching ID)
+        href: percent-of-machines-with-wudf-user-mode-crashes-ecosystem-missing-inf.md
+      - name: Percent of machines with WUDF user mode crashes out of the total flighting population (non-ecosystem, with INF matching ID)
+        href: percent-of-machines-with-wudf-user-mode-crashes-ecosystem-with-inf.md
     - name: Camera
       items:
       - name: Camera measures
@@ -174,6 +186,16 @@
         href: camera-DShow-bridge-failure-rate.md
       - name: Percent of machines with camera failures
         href: camera-machines-failure-rate.md
+    - name: Ethernet
+      items:
+      - name: Ethernet measures
+        href: ethernet-measures.md
+      - name: Median Time to Internet on IPv4
+        href: median-time-to-internet-on-ipv4.md
+      - name: Percentage of machines that achieved brief internet multiple times within an hour on IPv4
+        href: percent-machines-brief-internet-ipv4.md
+      - name: Percentage of Sessions with unexpected Internet loss over IPv4
+        href: percent-sessions-with-unexpected-internet-loss-over-ipv4.md
     - name: Fingerprint
       items:
       - name: Fingerprint measures
@@ -221,6 +243,8 @@
         href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-standard.md
       - name: Myriad of machines that had a TDR caused by a graphics driver crash
         href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-standard.md
+      - name: Myriad of machines that had a user mode crash or hang
+        href: myriad-of-machines-that-had-a-user-mode-crash-or-hang.md
       - name: Myriad of machines with integrated GPU that had a TDR caused by a graphics
           driver crash
         href: graphics-tdr-integrated-gpu.md

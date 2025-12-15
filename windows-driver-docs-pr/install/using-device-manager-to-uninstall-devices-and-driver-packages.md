@@ -1,48 +1,54 @@
 ---
 title: Using Device Manager to Uninstall Devices and Driver Packages
-description: Using Device Manager to Uninstall Devices and Driver Packages
-ms.date: 09/17/2024
+description: Learn how to use Device Manager to uninstall devices and driver packages on Windows 10 and Windows 11.
+ms.date: 10/31/2025
 ai-usage: ai-assisted
 ms.topic: how-to
+#customer intent: As an administrator or developer, I want to know how to uninstall device drivers
 ---
 
-# Using Device Manager to Uninstall Devices and Driver Packages
+# Using Device Manager to uninstall devices and driver packages
 
 This page describes how to uninstall a device or driver package on Windows 10 and Windows 11.
 
 > [!CAUTION]
-> Before uninstalling a device, we recommend physically unplugging the device from the system.  If the device is uninstalled before it is unplugged, Windows may subsequently rediscover the device and reinstall drivers for it. This can happen immediately after the uninstall or upon rebooting the system.
+> Before you uninstall a device, we recommend physically unplugging the device from the system. If the device is uninstalled before it's unplugged, Windows might then rediscover the device and reinstall drivers for it. This reinstallation can happen immediately after the uninstall or upon rebooting the system.
 
-First, open Settings (you can do this using the `Windows+I` keyboard shortcut) and type Remove. Select **Add or remove programs**. If the device or driver package that you wish to remove appears in the list of programs, select uninstall.
+To open the **Apps** page in **Settings**, in the Windows search, enter and select **Add or remove programs**. If the device or driver package that you want to remove appears in the list of programs, you can uninstall it.
 
-If your device or driver package does not appear in the list, you'll need to use Device Manager to uninstall the device.  If that device is the only device using the driver package, then the driver package can also be removed via Device Manager.  To launch Device Manager, select the Start button, type Device Manager, and press Enter.
+If your device or driver package doesn't appear in the list, you need to use Device Manager to uninstall the device. If that device is the only device using the driver package, then you can also remove the driver package by using Device Manager.
 
-Then follow these steps:
+Follow these steps:
 
-1. Select the View menu and turn on **Show Hidden Devices**.
-1. Expand the node that represents the type of device that you want to uninstall, right-select the device entry for the device you want to uninstall, and select **Uninstall device**.
-1. On the **Confirm Device Removal** dialog box, if you wish to remove the driver package in addition to uninstalling the device, select the **Delete the driver software for this device** option. When ready to complete the operation, select **OK**. Ensure that you are logged in with an account that has administrative privileges. The option to delete the driver software may not appear if you do not have the necessary permissions.
+1. To launch Device Manager, in Windows search, enter and select **Device Manager**.
+1. Select the **View** menu and turn on **Show hidden devices**.
+1. Expand the node that represents the type of device that you want to uninstall, right-select the device entry for that device, and select **Uninstall device**.
+1. In **Confirm Device Removal**, if you want to remove the driver package in addition to uninstalling the device, select the **Delete the driver software for this device** option.
+1. Select **OK**.
 
-You may also need to restart the computer.
+You might need to restart the computer.
 
-For more information about uninstalling driver and driver packages, see [How Devices and Driver Packages are Uninstalled](how-devices-and-driver-packages-are-uninstalled.md).
+Be sure that you're signed in with an account that has administrative privileges. If you don't have the necessary permissions, the option to delete the driver software might not appear.
 
-## Ensuring Permanent Removal
+For more information, see [How devices and driver packages are uninstalled](how-devices-and-driver-packages-are-uninstalled.md).
 
-To ensure that a driver package is permanently removed and not reinstalled automatically, you need to delete the driver package from the [Driver Store](./driver-store.md). This can be done using the [`pnputil`](../devtest/pnputil.md) command. For example, you can use the following command to delete a driver package:
+## Ensure permanent removal
 
-   ```shell
-   pnputil /delete-driver <Published Name> /uninstall
-   ```
+To ensure that a driver package is permanently removed and not reinstalled automatically, you need to delete the driver package from the [Driver store](./driver-store.md). To do so, use the [pnputil](../devtest/pnputil.md) command. For example, you can use the following command to delete a driver package:
 
-Note that this command updates any devices using the specified driver package to use a different driver package before removing the specified driver package from the system. If there are no other driver packages on the system that match on the device, the device will be left with no driver package and will be non-functional, so care should be taken before removing a driver package from the system.
+```cmd
+pnputil /delete-driver <Published Name> /uninstall
+```
 
-Also be aware that Windows Update may also reinstall drivers if it detects that a necessary driver is missing. You may need to adjust your Windows Update settings to prevent this.
+This command updates any devices that use the specified driver package to use a different driver package before it removes the specified driver package from the system. If there are no other driver packages on the system that match on the device, the device has no driver package, so it won't function. Be careful before you remove a driver package from the system.
 
-## Additional Considerations
-- **System Restore Point**: Before making any changes, create a system restore point to ensure you can revert back if something goes wrong.
-- **Windows Updates**: Ensure your system is up to date, as updates may resolve issues with driver management.
+If Windows Update detects that a necessary driver is missing, it can reinstall that driver. You might need to adjust your Windows Update settings to prevent this action.
 
-## Related topics
+## Additional considerations
 
-[Delete a Driver Package from the Driver Store](./how-devices-and-driver-packages-are-uninstalled.md#delete-a-driver-package-from-the-driver-store)
+- **System Restore Point**: Before you make any changes, create a system restore point to ensure you can revert back if something goes wrong.
+- **Windows Updates**: Ensure your system is up to date. Updates might resolve issues with driver management.
+
+## Related content
+
+- [Delete a driver package from the driver store](./how-devices-and-driver-packages-are-uninstalled.md#delete-a-driver-package-from-the-driver-store)

@@ -16,7 +16,7 @@ This article answers frequently asked questions about CodeQL testing requirement
 
 See the [Windows Hardware Compatibility Program Certification Process](/windows-hardware/design/compatibility/whcp-certification-process) for requirement details.
 
-## hy is CodeQL required for driver source code?
+## Why is CodeQL required for driver source code?
 
 The motivation for requiring CodeQL on driver source code is based on two main reasons:
 

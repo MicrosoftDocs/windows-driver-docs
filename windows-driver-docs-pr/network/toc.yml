@@ -4,7 +4,7 @@
     href: roadmap-for-developing-ndis-drivers.md
   - name: Using the Network Driver Design Guide
     items:
-    - name: Navigating the Network Driver Design Guide
+    - name: Learn about supported driver types
       href: using-the-network-driver-design-guide.md
     - name: Learning About Miniport Drivers
       href: learning-about-miniport-drivers.md

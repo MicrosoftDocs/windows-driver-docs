@@ -14,7 +14,7 @@ The Partner Center uses Microsoft Entra ID for user management. For some actions
 
 ## Add existing users
 
-To add existing users, you must have the Manager role assigned to your Partner Center account.
+To add existing users, you must have the Hardware Admin role assigned to your Partner Center account.
 As a user with the Manager role in Partner Center, you can add any user who is already associated with your Microsoft Entra ID tenant.
 
 To add existing users:

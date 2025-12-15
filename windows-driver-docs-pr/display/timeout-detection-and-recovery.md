@@ -5,15 +5,16 @@ keywords:
 - TDR (timeout detection and recovery), WDK display drivers
 - TDR (timeout detection and recovery), WDK graphics drivers
 - TDR (timeout detection and recovery), WDDM
-ms.date: 09/20/2024
+ms.date: 11/05/2025
 ms.topic: concept-article
+ai-usage: ai-assisted
 ---
 
 # WDDM support for timeout detection and recovery
 
 This article describes how the Windows Display Driver Model (WDDM) supports timeout detection and recovery (TDR). It provides an overview of the TDR process, explains how timeout detection works in WDDM, and describes the steps taken to recover from a timeout.
 
-The audience for this article is display/graphics driver developers.
+The audience for this article is display and graphics driver developers.
 
 For more information about TDR in WDDM, see the following articles:
 
@@ -23,9 +24,9 @@ For more information about TDR in WDDM, see the following articles:
 
 ## Overview
 
-TDR is a feature in Windows that detects when the graphics card is taking longer than expected to complete an operation. It then resets the graphics card to prevent the entire system from becoming unresponsive.
+TDR is a feature in Windows that detects when the graphics card takes longer than expected to complete an operation. It then resets the graphics card to prevent the entire system from becoming unresponsive.
 
-One of the most common stability problems in graphics occurs when a computer appears to "hang" or be completely "frozen" when it's actually processing an end-user command or operation. Many users wait a few seconds and then decide to reboot the computer. The frozen appearance of the computer frequently occurs because the GPU is busy processing intensive graphical operations, typically during game play, and hence doesn't update the display screen. TDRs enable the operating system to detect that the UI isn't responsive.
+One of the most common stability problems in graphics occurs when a computer appears to "hang" or be completely "frozen" while it's actually processing an end-user command or operation. Many users wait a few seconds and then decide to reboot the computer. The frozen appearance of the computer frequently occurs because the GPU is busy processing intensive graphical operations, typically during game play, and hence doesn't update the display screen. TDRs enable the operating system to detect that the UI isn't responsive.
 
 The following figure shows the TDR process.
 
@@ -39,9 +40,9 @@ As a side note, engine timeouts ([0x141](../debugger/bug-check-0x141---video-eng
 
 ## Timeout detection in WDDM
 
-The GPU scheduler, which is part of the DirectX graphics kernel subsystem (*Dxgkrnl.sys*), detects that the GPU is taking more than the permitted amount of time to execute a particular task. The GPU scheduler then tries to preempt this particular task. The preempt operation has a "wait" timeout, which is the actual TDR timeout. The default timeout period in Windows Vista and later operating systems is 2 seconds. If the GPU can't complete or preempt the current task within the TDR timeout period, the OS diagnoses that the GPU is frozen.
+The GPU scheduler, which is part of the DirectX graphics kernel subsystem (*Dxgkrnl.sys*), detects when the GPU takes more than the permitted amount of time to execute a particular task. The GPU scheduler then tries to preempt this particular task. The preempt operation has a "wait" timeout, which is the actual TDR timeout. The default timeout period in Windows is two seconds. If the GPU can't complete or preempt the current task within the TDR timeout period, the OS diagnoses that the GPU is frozen.
 
-To prevent timeout detection from occurring, hardware vendors should ensure that graphics operations (that is, DMA buffer completion) take no more than 2 seconds in end-user scenarios such as productivity and game play.
+To prevent timeout detection from occurring, hardware vendors should ensure that graphics operations (that is, DMA buffer completion) take no more than two seconds in end-user scenarios such as productivity and game play.
 
 ## Preparation for recovery
 
@@ -58,7 +59,7 @@ The only visible artifact from hang detection to recovery is a screen flicker. T
 When the OS successfully recovers the desktop, it completes the following actions:
 
 * Displays an informational message to the end user, saying "Display driver stopped responding and has recovered."
-* Logs the preceding message in the Event Viewer application and collects diagnosis information in the form of a debug report. If the end user opted in to provide feedback, the OS returns this debug report to Microsoft through the Online Crash Analysis (OCA) mechanism.
+* Logs the preceding message in the Event Viewer application and collects diagnosis information in the form of a debug report. If the end user opts in to provide feedback, the OS returns this debug report to Microsoft through the Online Crash Analysis (OCA) mechanism.
 
 Some legacy DirectX applications might just render black at the end of this recovery, which requires the end user to restart these applications. Well-written DirectX 9Ex and DirectX 10 and later applications that handle Device Remove technology continue to work correctly. An application must release and then re-create its Microsoft Direct3D device and all of the device's objects.
 
@@ -68,4 +69,4 @@ See [Thread synchronization and TDR](thread-synchronization-and-tdr.md) for deta
 
 ## Testing and debugging TDR
 
-See [Testing and debugging TDR](tdr-registry-keys.md) for details.
+For more information, see [Testing and debugging TDR](tdr-registry-keys.md).

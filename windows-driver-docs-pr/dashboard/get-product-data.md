@@ -465,6 +465,8 @@ The following table lists Operating system Family Codes and their descriptions.
 | Windows_v100_NI | Windows 11 Client, version 22H2 |
 | Windows_v100_GE | Windows 11 Client, version 24H2 |
 | Windows_v100Server_GE | Windows Server 2025 |
+| Windows_v100_25H2 | Windows 11 Client, version 25H2|
+| Windows_v100_26H1 | Windows 11 Client, version 26H1|
 
 ### List of Operating System Codes
 
@@ -538,6 +540,9 @@ The following table lists Operating System Codes and their descriptions.
 | WINDOWS_v100_ARM64_GE_FULL | Windows 11 Client, version 24H2 ARM64 |
 | WINDOWS_v100_SERVER_X64_GE_FULL | Windows Server 2025 x64 |
 | WINDOWS_v100_SERVER_ARM64_GE_FULL | Windows Server 2025 ARM64 |
+| WINDOWS_v100_X64_25H2_FULL | Windows 11 Client, version 25H2 x64 |
+| WINDOWS_v100_ARM64_25H2_FULL | Windows 11 Client, version 25H2 ARM64 |
+| WINDOWS_v100_ARM64_26H1_FULL | Windows 11 Client, version 26H1 ARM64 |
 
 ## Error codes
 

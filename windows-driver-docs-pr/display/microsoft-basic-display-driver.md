@@ -4,7 +4,7 @@ description: The Microsoft Basic Display Driver is the in-box display driver tha
 keywords:
 - BasicDisplay , Microsoft Basic Display Driver
 - BasicRender , Microsoft Basic Render Driver
-ms.date: 10/17/2024
+ms.date: 11/05/2025
 ms.topic: overview
 ---
 

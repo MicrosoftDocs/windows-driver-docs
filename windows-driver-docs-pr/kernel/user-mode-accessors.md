@@ -2,7 +2,7 @@
 title: User-mode Accessors
 description: Learn about user-mode accessors that provide safe access to user-mode memory from kernel-mode code
 keywords: ["user-mode accessors", "kernel-mode", "user-mode memory", "probing", "volatile access", "memory safety", "UMA"]
-ms.date: 08/11/2025
+ms.date: 10/09/2025
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -128,7 +128,7 @@ The UMA interface ships as part of the Windows Driver Kit (WDK):
 
 UMA works on all versions of Windows, not just the latest. You need to consume the latest WDK to get the function declarations and implementations from *usermode_accessors.h* and *umaccess.lib*, respectively. The resulting driver will run fine on older versions of Windows.
 
-It's recommended that all drivers built with the UMA library enable function overrides. Doing so results in a more performant scenario on the latest version of Windows. *Umaccess.lib* provides a safe, down-level implementation for all DDIs. On UMA-aware versions of the Windows kernel, drivers will have all of their functions redirected to a safer version implemented in *ntoskrnl.exe*. This redirection is achieved either by function overrides, or by updating the driver's load configuration at load time.
+*Umaccess.lib* provides a safe, down-level implementation for all DDIs. On UMA-aware versions of the Windows kernel, drivers will have all of their functions redirected to a safer version implemented in *ntoskrnl.exe*.
 
 All user-mode accessor functions must be executed within a structured exception handler (SEH) due to potential exceptions when accessing user-mode memory.
 

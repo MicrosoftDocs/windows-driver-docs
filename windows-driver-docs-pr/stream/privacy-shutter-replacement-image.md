@@ -19,6 +19,8 @@ This feature is only implemented by cameras that have privacy shutters/kill swit
 
 Devices that want to support a custom image for image replacement must also provide a signed binary, part of their driver package that contains their replacement image.
 
+Because image replacement overwrites the existing output buffer, the device outputs uncompressed frames. For compressed frames like MJPEG and JPEG, no image replacement occurs, and the original image from the driver is delivered instead.
+
 ## Implementation overview
 
 Image replacement occurs when a device sends the notification that shutter for the device is closed. If the shutter state is closed and image replacement is enabled, the camera pipeline loads the replacement image, either from a custom image provided by the camera driver or using the inbox replacement image shown here.

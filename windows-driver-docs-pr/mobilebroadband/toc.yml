@@ -478,3 +478,5 @@
         href: integrate-a-mobile-broadband-app-with-other-windows-components.md
   - name: "Use a QR code or URI link to download an eSIM profile"
     href: activate-by-link.md
+  - name: "Request device identifiers for eSIM provisioning"
+    href: request-device-identifiers-for-esim-provisioning.md

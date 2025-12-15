@@ -1,46 +1,46 @@
 ---
-title: "WinDbg - Home Menu"
-description: "This section describes how to use the home menu in the WinDbg debugger."
+title: 'WinDbg: Home Menu'
+description: "This article describes how to use the home menu in the WinDbg debugger."
 keywords: ["Home Menu", "WinDbg", "Menu", "Windows Debugging"]
 ms.date: 04/13/2023
 ms.topic: how-to
 ---
 
-# WinDbg - Home Menu
+# WinDbg: Home menu
 
 :::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
-This topic describes how to work with the home menu.
+This article describes how to work with the **Home** menu in WinDbg.
 
-:::image type="content" source="images/windbgx-home-menu.png" alt-text="Screenshot of the WinDbg home menu in the debugger.":::
+:::image type="content" source="images/windbgx-home-menu.png" alt-text="Screenshot of the Home menu in WinDbg.":::
 
-## Flow Control
+## Flow control
 
-Use the *Flow Control* buttons to break into a connected debugging target, resume code execution on the target and step in to and out of code.
+Use the **Flow Control** buttons to break into a connected debugging target, resume code execution on the target, and step into and out of code.
 
-## Reverse Flow Control
+## Reverse flow control
 
-Use the *Reverse Flow Control* buttons to travel back in time. For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
+Use the **Reverse Flow Control** buttons to travel back in time. For more information, see [Time Travel Debugging: Overview](time-travel-debugging-overview.md).
 
 ## End
 
-Use the *End* buttons to restart, detach and stop debugging.
+Use the **End** buttons to restart, detach, and stop debugging.
 
 ## Preferences
 
-Use *Preferences* buttons to toggle between source code and assembly views and to access the **Settings** menu.
+Use the **Preferences** buttons to toggle between source code and assembly views and to access the **Settings** menu.
 
-## Help (Support)
+## Help (support)
 
-Use *Help* buttons to do the following:
-- Review Local Help - Offline
-- Online Help - Most up to date
+Use the **Help** buttons to do the following tasks:
 
-## GitHub Feedback
+- **Review local help**: Offline help
+- **Access online help**: Most up-to-date help
 
-- If you find any bugs or have a feature request, you can follow the feedback button in the ribbon to go to the [GitHub page](https://aka.ms/windbg/feedback) where you can file a new issue.
+## GitHub feedback
 
-## See Also
+If you find any bugs or have a feature request, you can follow the feedback button in the ribbon to go to the [GitHub page](https://aka.ms/windbg/feedback) where you can file a new issue.
 
-[WinDbg Features](../debugger/debugging-using-windbg-preview.md)
+## Related content
 
+- [WinDbg features](../debugger/debugging-using-windbg-preview.md)

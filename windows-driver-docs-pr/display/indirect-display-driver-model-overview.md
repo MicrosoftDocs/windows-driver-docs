@@ -9,7 +9,7 @@ keywords:
 - IDD model
 - Indirect display driver implementation
 - IDD implementation
-ms.date: 09/20/2024
+ms.date: 11/05/2025
 ms.topic: concept-article
 ---
 
@@ -19,15 +19,15 @@ The indirect display driver (IDD) model provides a simple user-mode driver model
 
 * Streaming the display output over a network to a remote client (remote display).
 * Creating virtual monitors for applications such as virtual desktop environments (virtual displays).
-* Connecting a dongle to a PC via USB that has a regular monitor (VGA, DVI, HDMI, DP, etc.) connected to it.
+* Connecting a dongle to a PC via USB that has a regular monitor (VGA, DVI, HDMI, DP, and so on) connected to it.
 
 ## IDD implementation
 
-An IDD is the third party-provided [UMDF](../wdf/umdf-driver-host-process.md) driver for the device. You can develop an IDD using the functionality exposed by the [IddCx](/windows-hardware/drivers/ddi/iddcx/) (Indirect Display Driver Class eXtension) to interface with the windows graphics subsystems in the following ways:
+An IDD is the third party-provided [UMDF](../wdf/umdf-driver-host-process.md) driver for the device. You can develop an IDD by using the functionality exposed by the [IddCx](/windows-hardware/drivers/ddi/iddcx/) (Indirect Display Driver Class eXtension) to interface with the Windows graphics subsystems in the following ways:
 
 * Create the graphics adapter representing the indirect display device.
 * Report monitors being connected and disconnected from the system.
-* Provide descriptions of the monitors connected.
+* Provide descriptions of the connected monitors.
 * Provide available display modes.
 * Support other display functionality, such as hardware mouse cursor, gamma, I2C communications, and protected content.
 * Process the desktop images to display on the monitor.
@@ -42,11 +42,11 @@ The following diagram provides an architectural overview.
 
 ## User-mode model
 
-The IDD is a user-mode only model with no support for kernel-mode components. As such, the driver is able to use any DirectX APIs in order to process the desktop image. In fact, the IddCx provides the desktop image to encode in a DirectX surface.
+The IDD uses a user-mode model and doesn't support kernel-mode components. With this model, the driver can use any DirectX APIs to process the desktop image. IddCx provides the desktop image to encode in a DirectX surface.
 
 The driver shouldn't call user-mode APIs that aren't appropriate for driver use, such as GDI, windowing APIs, OpenGL, or Vulkan.
 
-The IDD should be built as a [universal windows driver](../gettingstarted/writing-a-umdf-driver-based-on-a-template.md) so it can be used on multiple Windows platforms.
+Build the IDD as a [universal windows driver](../gettingstarted/writing-a-umdf-driver-based-on-a-template.md) so you can use it on multiple Windows platforms.
 
 At build time:
 

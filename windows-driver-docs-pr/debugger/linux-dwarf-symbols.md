@@ -168,7 +168,7 @@ The dwarfdump linux command prints or checks DWARF sections as requested by spec
 bob@BOB6:/mnt/c/Users/BOB$ dwarfdump -h
 ```
 
-For more information about using dwarfdump on Ubuntu, see [dwarfdump ](https://manpages.ubuntu.com/manpages/oracular/en/man1/dwarfdump.1.html).
+For more information about using dwarfdump on Ubuntu, see [dwarfdump ](https://manpages.ubuntu.com/manpages/resolute/en/man1/dwarfdump.1.html).
 
 ## !diesym
 

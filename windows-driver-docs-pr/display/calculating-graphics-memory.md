@@ -1,7 +1,7 @@
 ---
 title: Calculating Graphics Memory
 description: Calculating Graphics Memory
-ms.date: 08/29/2024
+ms.date: 11/05/2025
 ms.topic: concept-article
 ---
 
@@ -27,7 +27,7 @@ Before [*VidMm*](video-memory-management-and-gpu-scheduling.md) can [report an a
 
   By default, the commit limit on a particular aperture segment is the size of that segment. The KMD can specify a different commit limit in the **CommitLimit** member of the [**DXGK_SEGMENTDESCRIPTOR**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentdescriptor) structure when the driver describes the segment. A commit limit that is specified in such a way applies only to the particular segment that the driver describes.
 
-  In addition to per-segment commit limit, there's a global commit limit on all aperture segments. This global commit limit is also referred to as shared system memory. *VidMm* computes this value. A KMD can reduce this value to a lower value in the **ApertureSegmentCommitLimit** member of the [**DXGK_DRIVERCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps) structure; however, we don't recommend this practice.
+  In addition to per-segment commit limit, there's a global commit limit on all aperture segments. This global commit limit is also referred to as shared system memory. *VidMm* computes this value. A KMD can reduce this value to a lower value in the **ApertureSegmentCommitLimit** member of the [**DXGK_DRIVERCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps) structure; however, don't use this practice.
 
   *VidMm* doesn't allow a KMD to violate the per-segment commit limit nor the global commit limit. If a particular segment has a commit limit of 1 GB but the global commit limit is 256 MB, *VidMm* doesn't allow a KMD to map more than 256 MB of system memory into that segment.
 
@@ -37,7 +37,7 @@ Before [*VidMm*](video-memory-management-and-gpu-scheduling.md) can [report an a
 
 * Dedicated system memory
   
-  This value is the sum of the size of all memory segments for which the KMD specifies the **PopulatedFromSystemMemory** member in the [**DXGK_SEGMENTFLAGS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentflags) structure for each segment. This number can't be greater than the total system memory that is available for graphics use (**TotalSystemMemoryAvailableForGraphics**).
+  This value is the sum of the size of all memory segments for which the KMD specifies the **PopulatedFromSystemMemory** member in the [**DXGK_SEGMENTFLAGS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentflags) structure for each segment. This number can't be greater than the total system memory that's available for graphics use (**TotalSystemMemoryAvailableForGraphics**).
 
 * Maximum shared system memory  
 

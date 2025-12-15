@@ -1,7 +1,7 @@
 ---
 title: Use a QR code or URI link to download an eSIM profile
 description: eSIM profiles downloads on Windows devices can be triggered by scanning a QR code or clicking on a URI
-ms.date: 07/29/2025
+ms.date: 09/17/2025
 ms.topic: best-practice
 ---
 
@@ -22,3 +22,7 @@ After the user selects a `lpa:` URI from the camera app, browser, e-mail, or ano
 ## How should *lpa:* URIs be used?
 
 Microsoft recommends that mobile operators incorporate `lpa:` URIs to trigger eSIM profile downloads as part of their web buy flow. After a customer completes a data plan purchase online, mobile operators can provide a link directly to the user to start a profile download either on a web page or through an e-mail.
+
+## Related content
+
+[Request device identifiers for eSIM provisioning](request-device-identifiers-for-esim-provisioning.md)

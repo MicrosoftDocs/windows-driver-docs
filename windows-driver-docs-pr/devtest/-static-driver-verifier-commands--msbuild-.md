@@ -26,19 +26,19 @@ You must select a Release configuration (for example, **/p:Configuration="Window
 
 ## Parameters
 
-### /**scan**
+### <a id="scan">**:::no-loc text="/scan":::**</a>
 
 Scans the driver's source code for function role type declarations. For information about how to declare the driver supplied callback functions and dispatch routines, see [Using Function Role Type Declarations](using-function-role-type-declarations.md). During this scan, SDV tries to detect the driver entry points that it needs to verify the driver. It records the results of the scan in [Sdv-map.h](sdv-map-h.md), a file that it creates in the driver's project directory.
 
 For more information, see [Preparing your source code](using-static-driver-verifier-to-find-defects-in-drivers.md#preparing-your-source-code).
 
-### **/check:**<em>Rule</em> | *Rule*,...  
+### <a id="check">**:::no-loc text="/check:":::**:::no-loc text="<em>Rule</em> | ":::*:::no-loc text="Rule":::*:::no-loc text=",":::...:::no-loc text="  ":::</a>
 
 Starts a verification with the specified rule(s). You can specify more than one rule by separating each rule with a comma. Run the **/check:** command and specify the driver's Visual Studio project file (\*.vcxproj).
 
 *Rule* is the name of one [rule](static-driver-verifier-rule.md) or a rule name pattern that includes wildcard characters (\*) to represent one or more characters. When used alone, the wildcard character (\*) represents all rules.
 
-### **/check:*RuleList*.sdv**
+### <a id="check">**:::no-loc text="/check:":::*:::no-loc text="RuleList":::*.:::no-loc text="sdv":::**</a>
 
 Starts a verification with the rules in the specified rule list file. You can list only one file with this parameter. In the rule list file, each line can be the name of one rule or it can be a wildcard character (\*), which represents all SDV rules.  Run **/check:*RuleList*.sdv** command and specify the driver's Visual Studio project file (\*.vcxproj).
 
@@ -46,7 +46,7 @@ Starts a verification with the rules in the specified rule list file. You can li
 
 If you specify the **/check:** option without specifying a rule, SDV runs with the default rule set for the driver model.
 
-### **/lib**
+### <a id="lib">**:::no-loc text="/lib":::**</a>
 
 Processes the library in the current directory. SDV calls MSBuild.exe to compile and build the library for external use, and it generates the files that it needs to include the library in the driver verification.
 
@@ -54,13 +54,13 @@ Use this parameter before verifying drivers that require the library. Run the **
 
 For more information about the use and effect of the **/lib** parameter, see [Library Processing in Static Driver Verifier](library-processing-in-static-driver-verifier.md).
 
-### **/view**
+### <a id="view">**:::no-loc text="/view":::**</a>
 
 Opens Static Driver Verifier. Run **/view** commands and specify the driver's Visual Studio project file (\*.vcxproj).
 
 The results are available as soon as a verification is complete, and remain available until you use a **/clean** command to delete the SDV files from the driver's project directory.
 
-### **/clean**
+### <a id="clean">**:::no-loc text="/clean":::**</a>
 
 Deletes SDV files from the directory. Because these files are used to generate the Static Driver Verifier Report display, the **/clean** command also deletes the report of the verification.
 
@@ -72,7 +72,7 @@ Run a **/clean** command for a library when the library files are outdated, such
 
 A **/clean** command does not remove the Sdv-map.h file, if the approved flag is set to true in the Sdv-map.h file (Approved=true). SDV can then use this file for future verifications.
 
-### **/?**
+### **:::no-loc text="/?":::**
 
 Displays usage for SDV commands. Commands that use this parameter do not have to be run in a build environment window.
 

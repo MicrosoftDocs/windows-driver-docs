@@ -1,15 +1,15 @@
 ---
 title: PKEY_Devices_AudioDevice_Microphone_EqCoefficientsDb
-description: In Windows 11 version 24H2 and later, PKEY_Devices_AudioDevice_Microphone_EqCoefficientsDb property key communicates the equalization curve for Windows Studio to flatten the frequency response of a microphone device.
-ms.date: 02/27/2024
+description: In Windows 11 version 24H2 and later, PKEY_Devices_AudioDevice_Microphone_EqCoefficientsDb property key communicates the equalization curve for Voice Clarity and Windows Studio to flatten the frequency response of a microphone device.
+ms.date: 12/15/2025
 ms.topic: reference
 ---
 
 # PKEY_Devices_AudioDevice_Microphone_EqCoefficientsDb
 
-In Windows 11 version 24H2 and later, the **PKEY_Devices_AudioDevice_Microphone_EqCoefficientsDb** property key communicates the equalization curve for Windows Studio to flatten the frequency response of a microphone device.
+In Windows 11 version 24H2 and later, the **PKEY_Devices_AudioDevice_Microphone_EqCoefficientsDb** property key communicates the equalization curve used by Voice Clarity and Windows Studio Effects to flatten a microphone's frequency response.
 
-This property applies exclusively to systems with Windows Studio Effects lacking hardware or firmware microphone equalization. Upon activation, Windows Studio Effects supplant all OEM audio software processing, meaning microphone equalization by OEM-provided EFX, MFX, or SFX APOs should be implemented by Windows Studio Effects APO instead. IHVs and OEMs must define this property when microphone equalization is required. The key is disregarded on non-Windows Studio Effects systems or when Windows Studio Effects are disabled.
+This property applies to systems without hardware or firmware microphone equalization. When Voice Clarity or Windows Studio Effects is active, these effect packs replace all OEM‑provided software APOs (EFX/MFX/SFX), so microphone EQ must be supplied through this property key. IHVs and OEMs must define this property when microphone equalization is required. The key is ignored whenever Voice Clarity or Windows Studio Effects is disabled.
 
 **PKEY_Devices_AudioDevice_Microphone_EqCoefficientsDb** must be a vector (VT_VECTOR | VT_R8) of 960 DOUBLE frequency-domain gain coefficients, represented in dB, spanning 0Hz-23975Hz at 25Hz intervals. A missing property equates to a 0dB gain for all 960 coefficients.
 

@@ -1,15 +1,15 @@
 ---
-title: Installing GPUView
+title: Install GPUView
 description: Lists the components that are packaged with GPUView and describes how to install GPUView.
-ms.date: 07/08/2024
+ms.date: 11/13/2025
 ms.topic: concept-article
 ---
 
-# Installing GPUView
+# Install GPUView
 
-GPUView and its associated files are a part of the [Windows Performance Toolkit (WPT)](/windows-hardware/test/wpt/), which is a feature that ships with the [Windows Assessment and Deployment Kit (ADK)](/windows-hardware/get-started/adk-install). To get GPUView, make sure that "Windows Performance Toolkit" is selected when you install the ADK.  
+GPUView and its associated files are part of the [Windows Performance Toolkit (WPT)](/windows-hardware/test/wpt/), which is a feature that ships with the [Windows Assessment and Deployment Kit (ADK)](/windows-hardware/get-started/adk-install). To get GPUView, make sure that you select **Windows Performance Toolkit** when you install the ADK.  
 
-The WPT MSI (Microsoft Software Installer) is self-extracting. It installs several files and directories on your operating system. The default installation directory is *Windows Performance Toolkit*, with GPUView and its files installed under the *gpuview* subdirectory. For example, on an x86 machine where the Windows 11 OS is installed at the root directory on C: drive, GPUView is installed in ```C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\gpuview```. You can choose the Custom Installation option for custom placement of the binaries and corresponding support files.
+The WPT MSI (Microsoft Software Installer) is self-extracting. It installs several files and directories on your operating system. The default installation directory is *Windows Performance Toolkit*, with GPUView and its files installed under the *gpuview* subdirectory. For example, on an x86 machine where the Windows 11 OS is installed at the root directory on C: drive, GPUView is installed in ```C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\gpuview```. You can choose the **Custom Installation** option for custom placement of the binaries and corresponding support files.
 
 The following table lists a few GPUView-specific files.
 
@@ -21,3 +21,7 @@ The following table lists a few GPUView-specific files.
 | Log.cmd              | Script to turn on and off the appropriate information for logging |
 | SymbolSearchPath.txt | A text file that sets the symbol path to resolve stack walk and other events |
 | DxEtw.dll            | DLL used by GPUView for internal processing |
+
+## Uninstall GPUView
+
+Since GPUView is part of the WPT, which is installed with the ADK, you must uninstall the ADK to uninstall GPUView. You can do so by using **Control Panel** > **Programs and Features**.

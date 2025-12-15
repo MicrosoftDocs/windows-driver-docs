@@ -2,7 +2,7 @@
 title: Windows Kernel Opaque Structures
 description: Windows kernel opaque structures
 keywords: ["EPROCESS", "ETHREAD", "EX_RUNDOWN_REF", "EX_TIMER", "FAST_MUTEX", "IO_CSQ", "IO_CSQ_IRP_CONTEXT", "IO_WORKITEM", "KBUGCHECK_CALLBACK_RECORD", "KBUGCHECK_REASON_CALLBACK_RECORD", "KDPC", "KFLOATING_SAVE", "KGUARDED_MUTEX", "KINTERRUPT", "KLOCK_QUEUE_HANDLE", "KTIMER", "LOOKASIDE_LIST_EX", "NPAGED_LOOKASIDE_LIST", "OBJECT_TYPE", "PAGED_LOOKASIDE_LIST", "RTL_BITMAP", "RTL_RUN_ONCE", "SECURITY_SUBJECT_CONTEXT", "SLIST_HEADER", "XSTATE_SAVE"]
-ms.date: 11/08/2024
+ms.date: 11/05/2025
 ms.topic: concept-article
 ---
 
@@ -15,7 +15,7 @@ This article lists and describes Windows kernel opaque structures. For many of t
 The **EPROCESS** structure is an opaque structure that serves as the process object for a process.
 
 Some routines, such as [**PsGetProcessCreateTimeQuadPart**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetprocesscreatetimequadpart), use **EPROCESS** to identify the process to operate on.
-Drivers can use the [**PsGetCurrentProcess**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentprocess) routine to obtain a pointer to the process object for the current process and can use the [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle) routine to obtain a pointer to the process object that is associated with the specified handle. The [**PsInitialSystemProcess**](mm64bitphysicaladdress.md) global variable points to the process object for the system process.
+Drivers can use the [**PsGetCurrentProcess**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentprocess) routine to get a pointer to the process object for the current process and can use the [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle) routine to get a pointer to the process object that's associated with the specified handle. The [**PsInitialSystemProcess**](mm64bitphysicaladdress.md) global variable points to the process object for the system process.
 
 A process object is an Object Manager object. Drivers should use Object Manager routines such as [**ObReferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject) and [**ObDereferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject) to maintain the object's reference count.
 
@@ -25,7 +25,7 @@ Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
 
 The **ETHREAD** structure is an opaque structure that serves as the thread object for a thread.
 
-Some routines, such as [**PsIsSystemThread**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psissystemthread), use **ETHREAD** to identify the thread to operate on. Drivers can use the [**PsGetCurrentThread**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetcurrentthread) routine to obtain a pointer to the thread object for the current thread and can use the [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle) routine to obtain a pointer to the thread object that is associated with the specified handle.
+Some routines, such as [**PsIsSystemThread**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psissystemthread), use **ETHREAD** to identify the thread to operate on. Drivers can use the [**PsGetCurrentThread**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetcurrentthread) routine to get a pointer to the thread object for the current thread and can use the [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle) routine to get a pointer to the thread object that's associated with the specified handle.
 
 A thread object is an Object Manager object. Drivers should use Object Manager routines such as [**ObReferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject) and [**ObDereferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject) to maintain the object's reference count.
 
@@ -33,7 +33,7 @@ Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
 
 ## EX_RUNDOWN_REF
 
-The **EX_RUNDOWN_REF** structure is an opaque system structure that contains information about the status of run-down protection for an associated shared object.
+The **EX_RUNDOWN_REF** structure is an opaque system structure that contains information about the status of rundown protection for an associated shared object.
 
 ``` syntax
 typedef struct _EX_RUNDOWN_REF {
@@ -43,7 +43,7 @@ typedef struct _EX_RUNDOWN_REF {
 } EX_RUNDOWN_REF, *PEX_RUNDOWN_REF;
 ```
 
-The run-down protection routines listed at the bottom of this page all take a pointer to an **EX_RUNDOWN_REF** structure as their first parameter.
+The rundown protection routines listed at the end of this article all take a pointer to an **EX_RUNDOWN_REF** structure as their first parameter.
 
 For more information, see [Run-Down Protection](run-down-protection.md).
 Header: *Wdm.h*. Include Wdm.h.
@@ -152,7 +152,7 @@ The **KGUARDED_MUTEX** structure is an opaque structure that represents a guarde
 
 Use **KeInitializeGuardedMutex** to initialize a **KGUARDED_MUTEX** structure as a guarded mutex.
 
-Guarded mutexes must be allocated from non-paged pool.
+Guarded mutexes must be allocated from nonpaged pool.
 
 For more information about guarded mutexes, see [Fast Mutexes and Guarded Mutexes](fast-mutexes-and-guarded-mutexes.md).
 
@@ -190,7 +190,7 @@ typedef struct _LOOKASIDE_LIST_EX {
 } LOOKASIDE_LIST_EX, *PLOOKASIDE_LIST_EX;
 ```
 
-A lookaside list is a pool of fixed-size buffers that the driver can manage locally to reduce the number of calls to system allocation routines, which improves performance. The buffers are of uniform size and are stored as entries in the lookaside list.
+A lookaside list is a pool of fixed-size buffers that the driver can manage locally to reduce the number of calls to system allocation routines. The reduction in these calls improves performance. The buffers are of uniform size and are stored as entries in the lookaside list.
 
 Drivers should treat the **LOOKASIDE_LIST_EX** structure as opaque. Drivers that access structure members or that have dependencies on the locations of these members might not remain portable and interoperable with other drivers.
 
@@ -198,7 +198,7 @@ The [Related articles](#related-articles) section contains a list of the routine
 
 For more information about lookaside lists, see [Using Lookaside Lists](using-lookaside-lists.md).
 
-On 64-bit platforms, this structure must be 16 byte aligned.
+On 64-bit platforms, this structure must be 16-byte aligned.
 
 Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
 
@@ -212,7 +212,7 @@ Drivers must always explicitly free any lookaside lists they create before unloa
 
 Drivers can also use lookaside lists for paged pool. A **PAGED_LOOKASIDE_LIST** structure describes a lookaside list that contains paged buffers. A **LOOKASIDE_LIST_EX** structure can describe a lookaside list that contains either paged or nonpaged buffers. For more information, see [Using Lookaside Lists](using-lookaside-lists.md).
 
-On 64-bit platforms, this structure must be 16 byte aligned.
+On 64-bit platforms, this structure must be 16-byte aligned.
 
 Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
 
@@ -232,7 +232,7 @@ Drivers must always explicitly free any lookaside lists they create before unloa
 
 Drivers can also use lookaside lists for nonpaged pool. An **NPAGED_LOOKASIDE_LIST** structure describes a lookaside list that contains nonpaged buffers. A **LOOKASIDE_LIST_EX** structure can describe a lookaside list that contains either paged or nonpaged buffers. For more information, see [Using Lookaside Lists](using-lookaside-lists.md).
 
-On 64-bit platforms, this structure must be 16 byte aligned.
+On 64-bit platforms, this structure must be 16-byte aligned.
 
 Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
 
@@ -250,7 +250,7 @@ Don't directly access the members of this structure. Drivers that have dependenc
 
 The **RTL_BITMAP** structure serves as a header for a general-purpose, one-dimensional bitmap of arbitrary length. A driver can use such a bitmap as an economical way to keep track of a set of reusable items. For example, a file system can use bitmaps to track which clusters and sectors on a hard disk have already been allocated to hold file data.
 
-For a list of the **Rtl*Xxx*** routines that use **RTL_BITMAP** structures, see the [Related articles](#related-articles) section. The caller of these **Rtl*Xxx*** routines is responsible for allocating the storage for the **RTL_BITMAP** structure and for the buffer that contains the bitmap. This buffer must begin on a 4 byte boundary in memory and must be a multiple of 4 bytes in length. The bitmap begins at the start of the buffer but can contain any number of bits that fit in the allocated buffer.
+For a list of the **Rtl*Xxx*** routines that use **RTL_BITMAP** structures, see the [Related articles](#related-articles) section. The caller of these **Rtl*Xxx*** routines is responsible for allocating the storage for the **RTL_BITMAP** structure and for the buffer that contains the bitmap. This buffer must begin on a 4-byte boundary in memory and must be a multiple of 4 bytes in length. The bitmap begins at the start of the buffer but can contain any number of bits that fit in the allocated buffer.
 
 Before supplying an **RTL_BITMAP** structure as a parameter to an **Rtl*Xxx*** routine, call the [**RtlInitializeBitMap**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap) routine to initialize the structure. The input parameters to this routine are a pointer to a buffer that contains the bitmap, and the size, in bits, of the bitmap. **RtlInitializeBitMap** doesn't change the contents of this buffer.
 
@@ -276,7 +276,7 @@ Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
 
 An **SLIST_HEADER** structure is an opaque structure that serves as the header for a sequenced singly linked list. For more information, see [Singly and Doubly Linked Lists](singly-and-doubly-linked-lists.md).
 
-On 64-bit platforms, **SLIST_HEADER** structures must be 16 byte aligned.
+On 64-bit platforms, **SLIST_HEADER** structures must be 16-byte aligned.
 
 Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
 

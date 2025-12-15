@@ -1,22 +1,23 @@
 ---
 title: USB Audio 2.0 Drivers
 description: A USB Audio 2.0 driver is shipped with Windows. This driver provides basic audio over USB functionality.
-ms.date: 12/12/2024
+ms.date: 10/27/2025
 ms.custom: 
 - CI 111498
 - CSSTroubleshooting
 ms.topic: troubleshooting
+#customer intent: As a developer or administrator, I want to understand possible issues with USB Audio 2.0 drivers.
 ---
 
 # USB Audio 2.0 drivers
 
 Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. It's designed to support the USB Audio 2.0 device class. The driver is a WaveRT audio port class miniport.
 
-The driver is named: *usbaudio2.sys* and the associated inf file is *usbaudio2.inf*.
+The driver is named: *usbaudio2.sys*. The associated information (INF) file is *usbaudio2.inf*.
 
-The driver will identify in device manager as "USB Audio Class 2 Device". This name will be overwritten with a USB product string, if it's available.
+The driver identifies in device manager as *USB Audio Class 2 Device*. This name is overwritten with a USB product string, if it's available.
 
-The driver is automatically enabled when a compatible device is attached to the system. However, if a third-party driver exists on the system or Windows Update, that driver will be installed and override the class driver.
+When a compatible device is attached to the system, the driver is enabled. If a partner driver exists on the system or Windows Update, that driver is installed and overrides the class driver.
 
 ## Architecture
 
@@ -26,17 +27,17 @@ The *usbaudio2.sys* driver fits within the wider architecture of Windows USB Aud
 
 ## Related USB specifications
 
-The following USB specifications define USB Audio and are referenced in this article.
+This article refers to the following USB specifications that define USB Audio.
 
 - USB-2 refers to the Universal Serial Bus Specification, Revision 2.0
-- ADC-2 refers to the USB Device Class Definition for Audio Devices, Release 2.0.
-- FMT-2 refers to the Audio Data Formats specification, Release 2.0.
+- ADC-2 refers to the USB Device Class Definition for Audio Devices, Release 2.0
+- FMT-2 refers to the Audio Data Formats specification, Release 2.0
 
-The USB-IF is a special interest group that maintains the [Official USB Specification](https://www.usb.org/documents), test specifications and tools.
+The USB-IF is a special interest group that maintains the [Official USB Specification](https://www.usb.org/documents), test specifications, and tools.
 
 ## Audio formats
 
-The driver supports the formats listed below. An alternate setting, which specifies another format defined in FMT-2, or an unknown format, will be ignored.
+The driver supports the formats listed here. An alternate setting, which specifies another format defined in FMT-2, or an unknown format, is ignored.
 
 Type I formats (FMT-2 2.3.1):
 
@@ -61,9 +62,9 @@ This section describes the features of the USB Audio 2.0 driver.
 
 The driver supports all entity types defined in ADC-2 3.13.
 
-Each Terminal Entity must have a valid clock connection in compatible USB Audio 2.0 hardware. The clock path may optionally include Clock Multiplier and Clock Selector units and must end in a Clock Source Entity.
+Each Terminal Entity must have a valid clock connection in compatible USB Audio 2.0 hardware. The clock path optionally includes Clock Multiplier and Clock Selector units and must end in a Clock Source Entity.
 
-The driver supports one single clock source only. If a device implements multiple clock source entities and a clock selector, then the driver will use the clock source that is selected by default and won't modify the clock selector's position.
+The driver supports one single clock source only. If a device implements multiple clock source entities and a clock selector, the driver uses the clock source that is selected by default. It doesn't modify the clock selector's position.
 
 A Processing Unit (ADC-2 3.13.9) with more than one input pin isn't supported.
 
@@ -83,37 +84,37 @@ For the asynchronous OUT case, the driver supports explicit feedback only. A fee
 
 There's currently limited support for devices using a shared clock for multiple endpoints.
 
-For the Adaptive IN case the driver doesn't support a feed forward endpoint. If such an endpoint is present in the alternate setting, it will be ignored. The driver handles the Adaptive IN stream in the same way as an Asynchronous IN stream.
+For the Adaptive IN case, the driver doesn't support a feed forward endpoint. If such an endpoint is present in the alternate setting, the driver ignores it. The driver handles the Adaptive IN stream in the same way as an Asynchronous IN stream.
 
-The size of isochronous packets created by the device must be within the limits specified in FMT-2.0 section 2.3.1.1. This means that the deviation of actual packet size from nominal size must not exceed +/- one audio slot (audio slot = channel count samples).
+The size of isochronous packets created by the device must be within the limits specified in FMT-2.0 section 2.3.1.1. This requirement means that the deviation of actual packet size from nominal size must not exceed +/- one audio slot. Audio slot = channel count samples.
 
 ## Descriptors
 
-An audio function must implement exactly one AudioControl  Interface Descriptor (ADC-2 4.7) and one or more AudioStreaming Interface Descriptors (ADC-2 4.9). A function with an audio control interface but no streaming interface isn't supported.
+An audio function must implement exactly one AudioControl Interface Descriptor (ADC-2 4.7) and one or more AudioStreaming Interface Descriptors (ADC-2 4.9). A function with an audio control interface but no streaming interface isn't supported.
 
-The driver supports all descriptor types defined in ADC-2, section 4. The following subsections provide comments on some specific descriptor types.
+The driver supports all descriptor types defined in ADC-2, section 4. The following sections provide comments on some descriptor types.
 
 ### Class-Specific AS interface descriptor
 
-For details on this specification, refer to ADC-2 4.9.2.
+For details on this specification, see ADC-2 4.9.2.
 
-An AS interface descriptor must start with alternate setting zero with no endpoint (no bandwidth consumption) and further alternate settings must be specified in ascending order in compatible USB Audio 2.0 hardware.
+An AS interface descriptor must start with alternate setting zero with no endpoint (no bandwidth consumption). Further alternate settings must be specified in ascending order in compatible USB Audio 2.0 hardware.
 
-An alternate setting with a format that isn't supported by the driver will be ignored.
+An alternate setting with a format that the driver doesn't support is ignored.
 
-Each non-zero alternate setting must specify an isochronous data endpoint, and optionally a feedback endpoint. A non-zero alternate setting without any endpoint isn't supported.
+Each nonzero alternate setting must specify an isochronous data endpoint, and optionally a feedback endpoint. A nonzero alternate setting without any endpoint isn't supported.
 
-The bTerminalLink field must refer to a Terminal Entity in the topology and its value must be identical in all alternate settings of an AS interface.
+The bTerminalLink field must see a Terminal Entity in the topology. Its value must be identical in all alternate settings of an AS interface.
 
 The bFormatType field in the AS interface descriptor must be identical to bFormatType specified in the Format Type Descriptor (FMT-2 2.3.1.6).
 
-For Type I formats, exactly one bit must be set to one in the bmFormats field of the AS interface descriptor. Otherwise, the format will be ignored by the driver.
+For Type I formats, exactly one bit must be set to one in the bmFormats field of the AS interface descriptor. Otherwise, the driver ignores the format.
 
-To save bus bandwidth, one AS interface can implement multiple alternate settings with the same format (in terms of bNrChannels  and AS Format Type Descriptor) but different wMaxPacketSize values in the isochronous data endpoint descriptor. For a given sample rate, the driver selects the alternate setting with the smallest wMaxPacketSize that can fulfill the data rate requirements.
+To save bus bandwidth, one AS interface can implement multiple alternate settings with the same format (in terms of bNrChannels  and AS Format Type Descriptor) but different wMaxPacketSize values in the isochronous data endpoint descriptor. For a sample rate, the driver selects the alternate setting with the smallest wMaxPacketSize that can fulfill the data rate requirements.
 
 ### Type I format type descriptor
 
-For details on this specification, refer to FMT-2 2.3.1.6.
+For details on this specification, see FMT-2 2.3.1.6.
 
 The following restrictions apply:
 
@@ -124,17 +125,17 @@ The following restrictions apply:
 | Type I IEEE_FLOAT format:  | bSubslotSize == 4      | bBitResolution == 32      |
 | Type III IEC61937 formats: | bSubslotSize == 2      | bBitResolution == 16      |
 
-### Class-Specific AS isochronous audio data endpoint descriptor
+### Class-specific AS isochronous audio data endpoint descriptor
 
-For details on this specification, refer to ADC-2 4.10.1.2.
+For details on this specification, see ADC-2 4.10.1.2.
 
-The MaxPacketsOnly flag in the bmAttributes field isn't supported and will be ignored.
+The MaxPacketsOnly flag in the bmAttributes field isn't supported and is ignored.
 
-The fields bmControls, bLockDelayUnits and wLockDelay will be ignored.
+The fields bmControls, bLockDelayUnits, and wLockDelay are ignored.
 
 ## Class requests and interrupt data messages
 
-The driver supports a subset of the control requests defined in ADC-2, section 5.2, and supports interrupt data messages (ADC-2 6.1) for some controls. The following table shows the subset that is implemented in the driver.
+The driver supports a subset of the control requests defined in ADC-2, section 5.2. It supports interrupt data messages (ADC-2 6.1) for some controls. The following table shows the subset that is implemented in the driver.
 
 | Entity           | Control                    | GET CUR | SET CUR | GET RANGE | INTERRUPT |
 |------------------|----------------------------|---------|---------|-----------|-----------|
@@ -152,41 +153,41 @@ The driver supports a subset of the control requests defined in ADC-2, section 5
 | Processing Unit  | –                          |         |         |           |           |
 | Extension Unit   | –                          |         |         |           |           |
 
-Additional information on the controls and requests is available in the following subsections.
+Additional information on the controls and requests is available in the following sections.
 
 ### Clock source entity
 
-For details on this specification, refer to ADC-2 5.2.5.1.
+For details on this specification, see ADC-2 5.2.5.1.
 
 At a minimum, a Clock Source Entity must implement Sampling Frequency Control GET RANGE and GET CUR requests (ADC-2 5.2.5.1.1) in compatible USB Audio 2.0 hardware.
 
-The Sampling Frequency Control GET RANGE request returns a list of subranges (ADC-2 5.2.1). Each subrange describes a discrete frequency, or a frequency range. A discrete sampling frequency must be expressed by setting MIN and MAX fields to the respective frequency and RES to zero. Individual subranges must not overlap. If a subrange overlaps a previous one, it will be ignored by the driver.
+The Sampling Frequency Control GET RANGE request returns a list of subranges (ADC-2 5.2.1). Each subrange describes a discrete frequency, or a frequency range. A discrete sampling frequency must be expressed by setting MIN and MAX fields to the respective frequency and RES to zero. Individual subranges must not overlap. If a subrange overlaps a previous one, the driver ignores it.
 
-A Clock Source Entity that implements one single fixed frequency only doesn't need to implement Sampling Frequency Control SET CUR. It implements GET CUR, which returns the fixed frequency, and it implements GET RANGE, which reports one single discrete frequency.
+A Clock Source Entity that implements one single fixed frequency only doesn't need to implement Sampling Frequency Control SET CUR. It implements GET CUR, which returns the fixed frequency. It also implements GET RANGE, which reports one single discrete frequency.
 
 ### Clock selector entity
 
-For details on this specification, refer to ADC-2 5.2.5.2
+For details on this specification, see ADC-2 5.2.5.2.
 
 The USB Audio 2.0 driver doesn't support clock selection. The driver uses the Clock Source Entity, which is selected by default and never issues a Clock Selector Control SET CUR request. The Clock Selector Control GET CUR request (ADC-2 5.2.5.2.1) must be implemented in compatible USB Audio 2.0 hardware.
 
 ### Feature unit
 
-For details on this specification, refer to ADC-2 5.2.5.7.
+For details on this specification, see ADC-2 5.2.5.7.
 
-The driver supports one single volume range only. If the Volume Control GET RANGE request returns more than one range, then subsequent ranges will be ignored.
+The driver supports one single volume range only. If the Volume Control GET RANGE request returns more than one range, the driver ignores subsequent ranges.
 
 The volume interval expressed by the MIN and MAX fields should be an integer multiple of the step size specified in the RES field.
 
-If a feature unit implements single channel controls and a master control for Mute or Volume, then the driver uses the single channel controls and ignores the master control.
+If a feature unit implements single channel controls and a primary control for Mute or Volume, then the driver uses the single channel controls and ignores the primary control.
 
-## Additional Information for OEM and IHVs
+## Additional information for hardware manufacturers
 
-OEMs and IHVs should test their existing and new devices against the supplied in-box driver.
+Hardware manufacturers should test their existing and new devices against the supplied in-box driver.
 
 There isn't any specific partner customization that is associated with the in-box USB Audio 2.0 driver.
 
-This INF file entry (provided in an update to Windows Release 1703), is used to identify that the in-box driver is a generic device driver.
+This INF file entry, which is provided in an update to Windows Release 1703, is used to identify that the in-box driver is a generic device driver.
 
 ```inf
 GenericDriverInstalled,,,,1
@@ -203,7 +204,7 @@ USB\Class_01&SubClass_03&Prot_20
 
 See the USB Audio 2.0 specification for subclass types.
 
-USB Audio 2.0 Devices with MIDI (subclass 0x03 above) will enumerate the MIDI function as a separate multi-function device with usbaudio.sys (USB Audio 1.0 driver) loaded.
+USB Audio 2.0 Devices with MIDI (subclass 0x03 above) enumerate the MIDI function as a separate multiple function device with usbaudio.sys (USB Audio 1.0 driver) loaded.
 
 The USB Audio 1.0 class driver registers this compatible ID with wdma_usb.inf.
 
@@ -220,19 +221,19 @@ USB\Class_01&SubClass_02&Prot_20
 USB\Class_01&SubClass_03&Prot_20
 ```
 
-An arbitrary number of channels (greater than eight) aren't supported in shared mode due to a limitation of the Windows audio stack.
+Due to a limitation of the Windows audio stack, an arbitrary number of channels, greater than eight, aren't supported in shared mode.
 
 ## IHV USB Audio 2.0 drivers and updates
 
-For IHV provided third party driver USB Audio 2.0 drivers, those drivers will continue to be preferred for their devices over our in-box driver unless they update their driver to explicitly override this behavior and use the in-box driver.
+For IHV provided driver USB Audio 2.0 drivers, those drivers continue to be preferred for their devices over the Microsoft in-box driver unless they update their driver to explicitly override this behavior and use the in-box driver.
 
-## Audio Jack Registry Descriptions
+## Audio jack registry descriptions
 
 Starting in Windows 10 release 1703, IHVs that create USB Audio Class 2.0 devices having one or more jacks have the capability to describe these jacks to the in-box Audio Class 2.0 driver. The in-box driver uses the supplied jack information when handling the [KSPROPERTY_JACK_DESCRIPTION](./ksproperty-jack-description.md) for this device.
 
 Jack information is stored in the registry in the device instance key (HW key).
 
-The following describes the audio jack information settings in the registry:
+The following list describes the audio jack information settings in the registry:
 
 ```text
 REG_DWORD  T<tid>_NrJacks                 # of the jack on this device
@@ -244,9 +245,8 @@ REG_DWORD  T<tid>_J<n>_PortConnection     The enum value is define in EPxcPortCo
 REG_DWORD  T<tid>_J<n>_Color              The color needs to be represent by RGB like this: 0x00RRGGBB (NOT a COLORREF).
 ```
 
-\<tid\> = terminal ID (As defined in the descriptor)
-
-\<n\> = Jack number (1 ~ n).
+- \<tid\> = terminal ID, as defined in the descriptor
+- \<n\> = Jack number (1 ~ n)
 
 Convention for \<tid\> and \<n\> is:
 
@@ -254,21 +254,18 @@ Convention for \<tid\> and \<n\> is:
 - No leading zeros
 - n is 1-based (first jack is jack 1 rather than jack 0)
 
-For example:
-
-T1_NrJacks, T1_J2_ChannelMapping, T1_J2_ConnectorType
+For example: `T1_NrJacks, T1_J2_ChannelMapping, T1_J2_ConnectorType`
 
 For more audio jack information, see [KSJACK_DESCRIPTION structure](./ksjack-description.md).
 
 These registry values can be set in various ways:
 
 - By using custom INFs, which wrap the in-box INF for the purpose to set these values.
+- Directly by the hardware device by using a Microsoft OS Descriptor for USB devices, as in the example in the next section. For more information, see [Microsoft OS Descriptors for USB Devices](../usbcon/microsoft-defined-usb-descriptors.md).
 
-- Directly by the hardware device via a Microsoft OS Descriptor for USB devices (see example below). For more information about creating these descriptors, see [Microsoft OS Descriptors for USB Devices](../usbcon/microsoft-defined-usb-descriptors.md).
+### Microsoft OS descriptors for USB Example
 
-### Microsoft OS Descriptors for USB Example
-
-The following Microsoft OS Descriptors for USB example contains the channel mapping and color for one jack. The example is for a non-composite device with single feature descriptor.
+The following Microsoft OS descriptors for USB example contains the channel mapping and color for one jack. The example is for a noncomposite device with single feature descriptor.
 
 The IHV vendor should extend it to contain any other information for the jack description.
 
@@ -324,21 +321,21 @@ UCHAR Example2_MSOS20DescriptorSetForUAC2 [0x76] = {
 
 ## Troubleshooting
 
-If the driver doesn't start, the system event log should be checked. The driver logs events that indicate the reason for the failure. Similarly, audio logs can be manually collected following the steps described in Matthew van Eerde's web log article, [Collecting audio logs the old-fashioned way](https://matthewvaneerde.wordpress.com/2017/01/09/collecting-audio-logs-the-old-fashioned-way/). If the failure may indicate a driver problem, please report it using the Feedback Hub described below, and include the logs.
+If the driver doesn't start, check the system event log. The driver logs events can indicate the reason for the failure. You can manually collect log as described in [Collecting audio logs the old-fashioned way](https://matthewvaneerde.wordpress.com/2017/01/09/collecting-audio-logs-the-old-fashioned-way/). If the failure might indicate a driver problem, report it using the Feedback Hub described here, and include the logs.
 
-For information on how to read logs for the USB Audio 2.0 class driver using supplemental TMF files, see [Report problems, with logs, and suggest features, with the Feedback Hub](https://matthewvaneerde.wordpress.com/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub/) on Matthew van Eerde's web log. For general information on working with TMF files, see [Displaying a Trace Log with a TMF File](../devtest/displaying-a-trace-log-with-a-tmf-file.md).
+For information on how to read logs for the USB Audio 2.0 class driver using supplemental TMF files, see [Report problems, with logs, and suggest features, with the Feedback Hub](https://matthewvaneerde.wordpress.com/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub/). For general information on working with TMF files, see [Displaying a Trace Log with a TMF File](../devtest/displaying-a-trace-log-with-a-tmf-file.md).
 
-For information on "Audio services not responding" error and USB Audio device doesn't work in Windows 10 version 1703 see, [USB Audio Not Playing](usb-audio-not-playing.md).
+For information on *Audio services not responding* and *USB Audio device doesn't work in Windows 10 version 1703*, see [USB Audio Not Playing](usb-audio-not-playing.md).
 
 ## Feedback Hub
 
-If you run into a problem with this driver, collect audio logs and then follow steps outlined in [Report problems, with logs, and suggest features, with the Feedback Hub](https://matthewvaneerde.wordpress.com/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub/) to bring it to our attention.
+If you run into a problem with this driver, collect audio logs and then follow steps outlined in [Report problems, with logs, and suggest features, with the Feedback Hub](https://matthewvaneerde.wordpress.com/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub/).
 
 ## Driver development
 
-This USB Audio 2.0 class driver was developed by [Thesycon](https://www.thesycon.info/eng/usb_audiodriver.shtml) and is supported by Microsoft.
+[Thesycon](https://www.thesycon.info/eng/usb_audiodriver.shtml) developed this USB Audio 2.0 class driver. Microsoft supports it.
 
-### See also
+## Related content
 
 - [USB Audio Not Playing](usb-audio-not-playing.md)
 - [Windows Driver Model (WDM)](../kernel/writing-wdm-drivers.md)

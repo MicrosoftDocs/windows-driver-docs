@@ -7,7 +7,7 @@ keywords:
 - Application Verifier
 - AppVerif.exe
 - user-mode application testing
-ms.date: 01/14/2022
+ms.date: 10/31/2025
 ms.topic: reference
 ---
 
@@ -830,7 +830,13 @@ This verifier stop was caused by a software component that called the print subs
 </ul>
 <p></p>
 <h3>First chance access violation detected</h3>
-<p></p><i>Probable cause</i><p>This stop is generated when the printer driver tries to access a virtual memory address that is not accessible because it is non-executable, it has been freed or decommitted, or it is reserved but not committed. To debug this stop: $ u parameter2 - to unassemble the suspect code $ .exr parameter3 - to display the exception information; $ .cxr parameter4 - to display the exception context information $ kb - to display the stack trace when the exception was raised.</p>
+<p></p><i>Probable cause</i><p>This stop is generated when the printer driver tries to access a virtual memory address that is not accessible because it is non-executable, it has been freed or decommitted, or it is reserved but not committed. To debug this stop:</p> 
+
+- **u \<*parameter2*\>** - to unassemble the suspect code 
+- **.exr \<*parameter3*\>** - to display the exception information
+- **.cxr \<*parameter4*\>** - to display the exception context information 
+- **kb** - to display the stack trace when the exception was raised
+
 <p></p><I>Information displayed by Application Verifier</I><ul>
   <li><b>Parameter 1</b>&nbsp;-&nbsp;Address being accessed.</li>
   <li><b>Parameter 2</b>&nbsp;-&nbsp;Code performing invalid access.</li>
@@ -849,7 +855,13 @@ This verifier stop was caused by a software component that called the print subs
 </ul>
 <p></p>
 <h3>The thread tried to divide an integer value by an integer divisor of zero</h3>
-<p></p><i>Probable cause</i><p>This stop is generated when the printer driver tries to divide an integer value by an integer divisor of zero. To debug this stop: $ u parameter1 - to unassemble the suspect code $ .exr parameter2 - to display the exception information; $ .cxr parameter3 - to display the exception context information $ kb - to display the stack trace when the exception was raised.</p>
+<p></p><i>Probable cause</i><p>This stop is generated when the printer driver tries to divide an integer value by an integer divisor of zero. To debug this stop:</p> 
+
+- **u \<*parameter1*\>** - to unassemble the suspect code 
+- **.exr \<*parameter2*\>** - to display the exception information 
+- **.cxr \<*parameter3*\>** - to display the exception context information 
+- **kb** - to display the stack trace when the exception was raised
+
 <p></p><I>Information displayed by Application Verifier</I><ul>
   <li><b>Parameter 1</b>&nbsp;-&nbsp;Code performing divide by zero operation.</li>
   <li><b>Parameter 2</b>&nbsp;-&nbsp;Exception record. Use .exr to display it.</li>
@@ -868,7 +880,13 @@ This verifier stop was caused by a software component that called the print subs
 </ul>
 <p></p>
 <h3>The thread tried to read or write misaligned data on hardware that does not provide alignment</h3>
-<p></p><i>Probable cause</i><p>This stop is generated when the driver tries to read or write misaligned data on hardware that does not provide alignment. For example, 16-bit values must be aligned on 2-byte boundaries; 32-bit values on 4-byte boundaries, and so on. To debug this stop: $ u parameter1 - to unassemble the culprit code $ .exr parameter2 - to display the exception information; $ .cxr parameter3 - to display the exception context information $ kb - to display the stack trace when the exception was raised.</p>
+<p></p><i>Probable cause</i><p>This stop is generated when the driver tries to read or write misaligned data on hardware that does not provide alignment. For example, 16-bit values must be aligned on 2-byte boundaries; 32-bit values on 4-byte boundaries, and so on. To debug this stop:</p> 
+
+- **u \<*parameter1*\>** - to unassemble the culprit code 
+- **.exr \<*parameter2*\>** - to display the exception information 
+- **.cxr \<*parameter3*\>** - to display the exception context information 
+- **kb** - to display the stack trace when the exception was raised
+
 <p></p><I>Information displayed by Application Verifier</I><ul>
   <li><b>Parameter 1</b>&nbsp;-&nbsp;Code where the data type misalignment occurred.</li>
   <li><b>Parameter 2</b>&nbsp;-&nbsp;Exception record. Use .exr to display it.</li>

@@ -1,7 +1,7 @@
 ---
 title: NVMe Features Supported by StorNVMe
 description: Overview of NVMe features supported by StorNVMe
-ms.date: 12/18/2024
+ms.date: 11/06/2025
 ms.topic: overview
 ---
 

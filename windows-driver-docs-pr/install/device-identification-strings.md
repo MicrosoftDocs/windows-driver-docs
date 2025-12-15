@@ -40,4 +40,4 @@ Each enumerator customizes its device IDs, hardware IDs, and compatible IDs to u
 
 ## See also
 
-- [Obtaining the list of hardware IDs for a device](hardware-ids.md#obtaining-the-list-of-hardware-ids-for-a-device)
+- [Obtaining the list of hardware IDs for a device](hardware-ids.md#obtain-the-list-of-hardware-ids-for-a-device)
