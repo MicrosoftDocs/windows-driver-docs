@@ -18,7 +18,7 @@ x64 extends x86's eight general-purpose registers to be 64-bit and adds eight ne
 
 The lower 32 bits, 16 bits, and 8 bits of each register are directly addressable in operands. This direct addressability includes registers like **esi**, whose lower 8 bits weren't previously addressable. The following table specifies the assembly-language names for the lower portions of 64-bit registers.
 
-| `64-bit register` | `Lower 32 bits` | `Lower 16 bits` | `Lower 8 bits` |
+| 64-bit register | Lower 32 bits | Lower 16 bits | Lower 8 bitsfix |
 |-----------------|---------------|---------------|--------------|
 | `rax`             | `eax`           | `ax`            | `al`           |
 | `rbx`             | `ebx`           | `bx`            | `bl`           |
