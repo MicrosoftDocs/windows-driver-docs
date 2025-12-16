@@ -1,54 +1,34 @@
 ---
-title: Testing a Driver
-description: Testing a Driver
-ms.date: 06/28/2018
+title: Test Drivers Using Visual Studio and WDK
+description: Learn how to test drivers using Visual Studio and the Windows Driver Kit (WDK). Deploy, install, and run driver tests on remote computers with step-by-step guidance.
+ms.date: 12/15/2025
 ms.topic: concept-article
 ---
 
-# Testing a Driver
+# Testing a driver
 
-The WDK adds a driver testing interface to Visual Studio that allows you to build, deploy, install, and test a driver on a remote test computer on your network. The WDK also provides a collection of device driver tests that you can use to test features and functions of your driver. You can also write customize or write your own driver tests using the Driver Test Template in Visual Studio.
+Testing a driver is essential for ensuring reliability and performance. The Windows Driver Kit (WDK) adds a driver testing interface to Visual Studio that you can use to build, deploy, install, and test a driver on a remote test computer on your network. The WDK also provides a collection of device driver tests that you can use to test features and functions of your driver. You can also customize or write your own driver tests by using the Driver Test Template in Visual Studio.
 
-## <span id="Video_Demonstration"></span><span id="video_demonstration"></span><span id="VIDEO_DEMONSTRATION"></span>Video Demonstration
+## Video demonstration
 
-
-This video demonstrates the how to run driver-related tests in a test group.
+This video demonstrates how to run driver-related tests in a test group.
 
 > [!VIDEO bd04733f-896c-4fd6-a13f-fc5892586d79]
 
+## Testing strategies
 
-This section describes some strategies for testing driver, and information about how you select and configure a remote computer to use for testing.
+This section describes some strategies for testing drivers, and information about how you select and configure a remote computer to use for testing.
 
-To prepare a driver for public distribution, you should run the [Windows Hardware Certification Kit (HCK)](/windows-hardware/test/hlk/). For information about the Windows Certification program and how to obtain the HCK, see [Windows Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)).
+To prepare a driver for public distribution, run the [Windows Hardware Certification Kit (HCK)](/windows-hardware/test/hlk/). For information about the Windows Certification program and how to obtain the HCK, see [Windows Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)).
 
-The WDK provides the test binaries and tools which make it easy to run the Device Fundamentals tests from the command-line.
+The WDK provides the test binaries and tools that make it easy to run the Device Fundamentals tests from the command line.
 For more information, see [Run the DevFund Tests via the command-line](../devtest/run-devfund-tests-via-the-command-line.md).
 
+| Topic | Description |
+|-------|-------------|
+| [Tips for testing drivers during development](strategies-for-testing-drivers-during-development.md) | **When should you start testing?** As soon as you have the requirements for your driver, begin to design test cases that verify the critical requirements. Studies show that finding and fixing defects in code becomes more expensive the longer the defects remain in the code. Finding and fixing defects early in the development cycle is less costly and disruptive than finding defects after the code is released and distributed. Creating your test cases early can also help you find problems in your design. |
+| [How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md) | The WDK extensions to Visual Studio provide a device testing interface that enables you to conveniently build, deploy, install, and test a driver on a test computer on your network. The WDK provides a collection of device driver tests that you can use to test the features and functions of your driver. |
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Topic</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><a href="strategies-for-testing-drivers-during-development.md" data-raw-source="[Tips for testing drivers during development](strategies-for-testing-drivers-during-development.md)">Tips for testing drivers during development</a></p></td>
-<td align="left"><p><strong>When should you start testing?</strong> As soon as you have the requirements for your driver, you can begin to design test cases to test that the critical requirements have been implemented. Studies show that finding and fixing defects in code becomes more expensive the longer the defects remain in the code. Finding and fixing defects early in the development cycle is less costly and disruptive than finding defects after the code has been released and distributed. Creating your test cases early can also help you find problems in your design.</p>
-<p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><a href="testing-a-driver-at-runtime.md" data-raw-source="[How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md)">How to test a driver at runtime using Visual Studio</a></p></td>
-<td align="left"><p>The WDK extensions to Visual Studio provide a device testing interface that enables you to conveniently build, deploy, install, and test a driver on a test computer on your network. The WDK provides a collection of device driver tests that you can use to test the features and functions of your driver.</p></td>
-</tr>
-</tbody>
-</table>
+## Related topic
 
-## See Also
-
-[Tools for Verifying Drivers](../devtest/tools-for-verifying-drivers.md)
+[Tools for Verifying Drivers](../devtest/static-and-dynamic-verification-tools.md)
