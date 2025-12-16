@@ -1,15 +1,13 @@
 ---
 title: KSPROPSETID_MIDILOOPEDSTREAMING
 description: KSPROPSETID_MIDILOOPEDSTREAMING
-ms.date: 10/20/2025
+ms.date: 12/16/2025
 ms.topic: reference
 ---
 
 # KSPROPSETID_MIDILOOPEDSTREAMING
 
-The `KSPROPSETID_MIDILOOPEDSTREAMING` property set specifies the properties of a MIDI looped streaming device. These properties are supported in Windows 27788 (TDB) and later Windows operating systems.
-
-It is defined as follows.
+The `KSPROPSETID_MIDILOOPEDSTREAMING` property set specifies the properties of a MIDI looped streaming device. These properties are supported in Windows 11 version 25H2 and later Windows operating systems.
 
 ```cpp
 #define STATIC_KSPROPSETID_MidiLoopedStreaming\  

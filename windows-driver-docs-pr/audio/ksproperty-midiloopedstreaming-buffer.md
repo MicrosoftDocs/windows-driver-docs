@@ -1,7 +1,7 @@
 ---
 title: KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER
 description: The KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER property specifies a driver-allocated cyclic buffer for audio data.
-ms.date: 10/20/2025
+ms.date: 12/16/2025
 keywords: ["KSPROPERTY_RTAUDIO_BUFFER Audio Devices"]
 topic_type:
 - apiref
@@ -93,7 +93,7 @@ KSMidiDevice::ConfigureLoopedBuffer(ULONG& bufferSize
 
 | Item | Description |
 |--|--|
-| Version | Available in Windows version 25H2 and later. |
+| Version | Available in Windows 11 version 25H2 and later. |
 | Header | Ksmedia.h |
 
 ## See also

@@ -1,7 +1,7 @@
 ---
 title: KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS
 description: The KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS property is used to retrieve pointers to the read and write positions that are mapped to the caller's process space. 
-ms.date: 09/25/2025
+ms.date: 12/16/2025
 keywords: ["KSPROPERTY_RTAUDIO_CLOCKREGISTER Audio Devices"]
 topic_type:
 - apiref
@@ -79,7 +79,7 @@ A **KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS** property request returns STATUS_S
 
 | Item | Description |
 |--|--|
-| Version | Available in Windows version 25H2 and later. |
+| Version | Available in Windows 11 version 25H2 and later. |
 | Header | Ksmedia.h |
 
 ## See also

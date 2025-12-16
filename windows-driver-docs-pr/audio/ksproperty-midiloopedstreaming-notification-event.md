@@ -1,7 +1,7 @@
 ---
 title: KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT
 description: The KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT property registers a reference to the handle for the MIDILOOPED streaming event and stores it.
-ms.date: 09/25/2025
+ms.date: 12/16/2025
 keywords: ["KSPROPERTY_RTAUDIO_REGISTER_NOTIFICATION_EVENT Audio Devices"]
 topic_type:
 - apiref
@@ -81,7 +81,7 @@ A **KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT** property request returns
 
 | Item | Description |
 |--|--|
-| Version | Available in Windows version 25H2 and later. |
+| Version | Available in Windows 11 version 25H2 and later. |
 | Header | Ksmedia.h |
 
 ## See also
