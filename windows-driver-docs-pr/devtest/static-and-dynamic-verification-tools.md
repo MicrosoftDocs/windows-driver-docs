@@ -22,7 +22,7 @@ Two basic types of verification tools exist:
 
 - **Static verification tools** examine the driver code without running the driver. Because these tools don't rely on tests that exercise the code, they can be extremely thorough. Theoretically, static verification tools can examine all of the driver code, including code paths that are rarely executed in practice. However, because the driver isn't actually running, these tools might generate false-positive results. That is, they might report an error in a code path that doesn't occur in practice.
 
-CodeQL is the primary static analysis tool for drivers. CodeQL provides a powerful query language that treats code as a database to be queried, making it simple to write queries for specific behaviors and patterns. The [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility) requires CodeQL for Static Tool Logo (STL) Tests on our Client and Server operating systems. For more information, see [CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md).
+    CodeQL is the primary static analysis tool for drivers. CodeQL provides a powerful query language that treats code as a database to be queried, making it simple to write queries for specific behaviors and patterns. The [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility) requires CodeQL for Static Tool Logo (STL) Tests on our Client and Server operating systems. For more information, see [CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md).
 
 - **Dynamic verification tools** examine the driver code while the driver is running, typically by intercepting calls to commonly used driver support routines and substituting calls to their own error-checking versions of the same routines. Because the driver is actually running while the dynamic tools are doing the verification, false-positive results are rare. However, because the dynamic tools detect only the actions that occur while they're monitoring the driver, the tools can miss certain driver defects if the driver test coverage isn't adequate. At the same time, by using information available at run time - for example, information that's harder to extract statically from the source code - dynamic verification tools can detect certain classes of driver errors that are harder to detect with static analysis tools.
 
@@ -31,29 +31,13 @@ Use a combination of static and dynamic verification tools. Static tools allow y
 ## Overview of verification tools
 
 > [!IMPORTANT]
-> The Static Driver Verifier (SDV) tool is no longer supported. It's unavailable in WDKs newer than build 26017. It's also not included in the Windows 24H2 RTM WDK. Don't use the SDV for analysis.
+> The Static Driver Verifier (SDV) tool is no longer supported. It's unavailable in WDKs newer than build 26017, including the Windows 24H2 RTM WDK. Don't use the SDV for analysis.
 
 The WDK describes the following verification tools and recommends their use by driver developers and testers. They're listed in the order in which you typically use them.
 
 ### After the code compiles
 
 - CodeQL is a powerful semantic code analysis engine. The combination of an extensive suite of high-value security queries and a robust platform makes it an invaluable tool for securing driver code. For more information, see [CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md).
-
-<!---
-
-## Additional static tools
-
-Depending on the version of Windows you're building a driver from, you might need other static tools.
-
-- [Code Analysis for Drivers](code-analysis-for-drivers.md) is a static verification tool that runs at compile time. Code Analysis for Drivers can verify drivers written in C/C++ and managed code. It examines the code in each function of a driver independently, so you can run it as soon as you can build your driver. It runs relatively quickly and uses few resources.
-
-  The basic features of the Code Analysis tool in Visual Studio detect general coding errors, such as not checking return values. The driver-specific features detect more subtle driver coding errors, such as leaving uninitialized fields in a copied IRP and failing to restore a changed IRQL by the end of a routine.
-
-- [Static Driver Verifier](static-driver-verifier.md) (SDV) is a static verification tool that runs at compile time and verifies kernel-mode driver code written in C/C++. It's included in the WDK and you can start it from Visual Studio Ultimate 2012 or from a Visual Studio Command prompt window by using MSBuild.
-
-  Based on a set of interface rules and a model of the operating system, Static Driver Verifier determines whether the driver properly interacts with the Windows operating system kernel. Static Driver Verifier is extremely thorough - it explores all reachable paths in the driver source code and executes them symbolically. As such, it finds bugs that aren't detected by any other conventional method of driver testing.
-
--->
 
 ### When the driver runs
 
