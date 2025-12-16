@@ -1,23 +1,23 @@
 ---
-title: Overview of Driver Technologies
-description: This section contains information about each of the supported Windows driver technologies.
-ms.date: 02/22/2023
+title: Windows Driver Technologies Overview
+description: "Explore Windows driver technologies including USB, audio, display, storage, and more. Learn about development tools and get started building drivers."
+ms.date: 12/15/2025
 ms.topic: concept-article
 ---
 
-# Overview of Driver Technologies
+# Overview of driver technologies
 
-For general information about developing drivers see [Get started with drivers on Windows](gettingstarted/index.md) and [Write your first driver](gettingstarted/writing-your-first-driver.md).
+This article provides an overview of Windows driver technologies and development resources. For general information about developing drivers, see [Get started with drivers on Windows](gettingstarted/index.md) and [Write your first driver](gettingstarted/writing-your-first-driver.md).
 
-The majority of the driver technology information is the same for all editions of Windows 10. When you must make special considerations for a particular edition of Windows, we explicitly called these out in each technology area.
+Most of the driver technology information is the same for all editions of Windows 10. When you must make special considerations for a particular edition of Windows, the documentation explicitly calls out these considerations in each technology area.
 
 ## Windows drivers
 
-You can create a Windows Driver—a driver that uses a subset of the available interfaces—to run on all editions of Windows 10. Where possible, use a Windows Driver to enable deployment of your drivers on multiple devices. For more information about how to build, install, deploy, and debug a Windows Driver for Windows 10, see [Get started developing Windows drivers](develop/get-started-developing-windows-drivers.md) and [Deploying a Driver to a Test Computer](develop/deploying-a-driver-to-a-test-computer.md).
+You can create a Windows Driver - a driver that uses a subset of the available interfaces - to run on all editions of Windows 10. Where possible, use a Windows Driver to enable deployment of your drivers on multiple devices. For more information about how to build, install, deploy, and debug a Windows Driver for Windows 10, see [Get started developing Windows drivers](develop/get-started-developing-windows-drivers.md) and [Deploying a Driver to a Test Computer](develop/deploying-a-driver-to-a-test-computer.md).
 
 ## Device drivers and Windows 10 for desktop computers
 
-For information about the tools used to develop desktop drivers, see [Driver Development Tools](devtest/index.md) and [Tools for Verifying Drivers](devtest/tools-for-verifying-drivers.md). For information about deploying drivers to Windows 10 on a desktop, see [Device and Driver Installation](install/index.md). For information about troubleshooting driver installation, see [Troubleshooting Configuration of Driver Deployment, Testing and Debugging](develop/troubleshooting-configuration-of-driver-deployment--testing-and-debugging.md).
+For information about the tools used to develop desktop drivers, see [Driver Development Tools](devtest/index.md) and [Tools for Verifying Drivers](devtest/static-and-dynamic-verification-tools.md). For information about deploying drivers to Windows 10 on a desktop, see [Device and Driver Installation](install/index.md). For information about troubleshooting driver installation, see [Troubleshooting Configuration of Driver Deployment, Testing and Debugging](develop/troubleshooting-configuration-of-driver-deployment--testing-and-debugging.md).
 
 ## Driver technologies
 
@@ -63,7 +63,7 @@ For information about the tools used to develop desktop drivers, see [Driver Dev
 - [Windows Hardware Error Architecture (WHEA)](whea/index.md)
 - [Windows portable device drivers](portable/index.md)
 
-## Related sections
+## Related topics
 
 - [Get started with drivers on Windows](gettingstarted/index.md)
 - [Driver Development Tools](devtest/index.md)

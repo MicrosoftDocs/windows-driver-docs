@@ -5,8 +5,6 @@
 - name: Tools for Verifying Drivers
   items:
   - name: Tools for Verifying Drivers
-    href: tools-for-verifying-drivers.md
-  - name: Static and Dynamic Verification Tools
     href: static-and-dynamic-verification-tools.md
   - name: CodeQL and the Static Tools Logo Test
     items:
