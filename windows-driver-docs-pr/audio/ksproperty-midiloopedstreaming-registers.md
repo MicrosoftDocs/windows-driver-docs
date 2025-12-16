@@ -1,7 +1,7 @@
 ---
 title: KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS
 description: The KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS property is used to retrieve pointers to the read and write positions that are mapped to the caller's process space. 
-ms.date: 09/25/2025
+ms.date: 12/16/2025
 keywords: ["KSPROPERTY_RTAUDIO_CLOCKREGISTER Audio Devices"]
 topic_type:
 - apiref
@@ -26,7 +26,7 @@ The following table summarizes the features of this property.
 |--|--|--|--|--|
 | Yes | No | Pin | KSPROPERTY | KSMIDILOOPED_REGISTERS |
 
-Property descriptor type is **KSPROPERTY**, property value type is a **[KSMIDILOOPED_REGISTERS](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_registers)** structure.
+Property descriptor type is **KSPROPERTY**. Property value type is a **[KSMIDILOOPED_REGISTERS](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_registers)** structure.
 
 ### Return Value
 
@@ -35,8 +35,8 @@ A **KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS** property request returns STATUS_S
 | Status code | Meaning |
 |--|--|
 | STATUS_SUCCESS | Indicates successful completion. |
-| STATUS_ALREADY_INITIALIZED | Returned if the registers have already been allocated or if KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER was called by a different process, meaning that the looped memory buffer has already been allocated and mapped to a different process than the one requesting the registers. |
-| STATUS_INSUFFICIENT_RESOURCES | Returned if there is insufficient memory to allocate the registers. |
+| STATUS_ALREADY_INITIALIZED | Returned if the registers are already allocated or if KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER was called by a different process. Meaning that the looped memory buffer is already allocated and mapped to a different process than the one requesting the registers. |
+| STATUS_INSUFFICIENT_RESOURCES | Returned if there's insufficient memory to allocate the registers. |
 
 ## Remarks
 

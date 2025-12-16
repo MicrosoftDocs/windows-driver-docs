@@ -45,7 +45,7 @@ A **KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER** property request returns STATUS_SUCC
 
 **KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER** is called with a **[KSMIDILOOPED_BUFFER_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer_property)**, containing the requested buffer size. A **[KSMIDILOOPED_BUFFER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer)** is returned, containing the allocated buffer, mapped to the caller process space, along with the actual buffer size.
 
-The buffer is double mapped (the physical memory is mapped to the virtual address space twice, back to back) to simplify the read and write operations. The double mapping enables a read or write of up to one buffer size past the end of the primary buffer to loop back to the same physical memory that is mapped to the start of the primary buffer, without the need to perform address calculations.
+The buffer is double mapped to simplify read and write operations. The physical memory is mapped to the virtual address space twice, back to back. The double mapping allows reads or writes up to one buffer size past the end of the primary buffer. These operations automatically loop back to the same physical memory that is mapped to the start of the primary buffer. This eliminates the need to perform address calculations.
 
 MIDI messages are read or written to the buffer one at a time, so the maximum single message size, enforced, is a UMP128, which is 16 bytes. The maximum read or write past the end of the primary buffer, into the double mapped buffer, is 16 bytes, which is less than the size of the mapping.
 
