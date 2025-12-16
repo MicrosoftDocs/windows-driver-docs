@@ -1,7 +1,7 @@
 ---
 title: KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS
 description: The KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS property is used to retrieve pointers to the read and write positions that are mapped to the caller's process space. 
-ms.date: 12/16/2025
+ms.date: 09/25/2025
 keywords: ["KSPROPERTY_RTAUDIO_CLOCKREGISTER Audio Devices"]
 topic_type:
 - apiref
@@ -26,7 +26,7 @@ The following table summarizes the features of this property.
 |--|--|--|--|--|
 | Yes | No | Pin | KSPROPERTY | KSMIDILOOPED_REGISTERS |
 
-Property descriptor type is **KSPROPERTY**, property value type is a **[KSMIDILOOPED_REGISTERS](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_registers.md)** structure.
+Property descriptor type is **KSPROPERTY**, property value type is a **[KSMIDILOOPED_REGISTERS](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_registers)** structure.
 
 ### Return Value
 
@@ -40,7 +40,7 @@ A **KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS** property request returns STATUS_S
 
 ## Remarks
 
-**KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS** is called with no input data. A **[KSMIDILOOPED_REGISTERS](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_registers.md)**  structure is returned, containing pointers to the read and write positions that are mapped to the caller's process space.
+**KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS** is called with no input data. A **[KSMIDILOOPED_REGISTERS](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_registers)**  structure is returned, containing pointers to the read and write positions that are mapped to the caller's process space.
 
 ### Sample Code
 
@@ -79,7 +79,7 @@ A **KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS** property request returns STATUS_S
 
 | Item | Description |
 |--|--|
-| Version | Available in Windows 11 version 25H2 and later. |
+| Version | Available in Windows version 25H2 and later. |
 | Header | Ksmedia.h |
 
 ## See also
@@ -87,7 +87,7 @@ A **KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS** property request returns STATUS_S
 - **[KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER](ksproperty-midiloopedstreaming-buffer.md)**
 - **[KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT](ksproperty-midiloopedstreaming-notification-event.md)**
 - **[KSPROPERTY](../stream/ksproperty-structure.md)**
-- **[KSPROPERTY_MIDILOOPEDSTREAMING enum](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming.md)**
-- **[KSMIDILOOPED_BUFFER_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer_property.md)**
-- **[KSMIDILOOPED_BUFFER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer.md)**
-- **[KSPROPERTY_MIDILOOPEDSTREAMING enum](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming.md)**
+- **[KSPROPERTY_MIDILOOPEDSTREAMING enum](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming)**
+- **[KSMIDILOOPED_BUFFER_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer_property)**
+- **[KSMIDILOOPED_BUFFER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer)**
+- **[KSPROPERTY_MIDILOOPEDSTREAMING enum](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming)**

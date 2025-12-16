@@ -34,15 +34,15 @@ A **KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT** property request returns
 
 | Status code | Meaning |
 |--|--|
-| STATUS_ALREADY_INITIALIZED | The events have already been set. |
+| STATUS_ALREADY_INITIALIZED | The events are already set. |
 | STATUS_ALREADY_INITIALIZED | **[KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER](ksproperty-midiloopedstreaming-buffer.md)** was called by a different process than the one attempting to configure the notification events. |
-| STATUS_DEVICE_NOT_READY | The device is not ready |
-| STATUS_INSUFFICIENT_RESOURCES | Memory for the buffer cannot be allocated. |
-| STATUS_UNSUCCESSFUL | A cyclic buffer with the specified combination of buffer attributes cannot be allocated. |
+| STATUS_DEVICE_NOT_READY | The device isn't ready |
+| STATUS_INSUFFICIENT_RESOURCES | Memory for the buffer can't be allocated. |
+| STATUS_UNSUCCESSFUL | A cyclic buffer with the specified combination of buffer attributes can't be allocated. |
 
 ## Remarks
 
-**KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT** takes in a caller created event handle in a **[KSMIDILOOPED_EVENT](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_event.md)** structure. The driver adds a reference to the handle for that event and stores it.
+**KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT** takes in a caller created event handle in a **[KSMIDILOOPED_EVENT](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_event)** structure. The driver adds a reference to the handle for that event and stores it.
 
 ### Sample Code
 
@@ -89,7 +89,7 @@ A **KSPROPERTY_MIDILOOPEDSTREAMING_NOTIFICATION_EVENT** property request returns
 - **[KSPROPERTY_MIDILOOPEDSTREAMING_BUFFER](ksproperty-midiloopedstreaming-buffer.md)**
 - **[KSPROPERTY_MIDILOOPEDSTREAMING_REGISTERS](ksproperty-midiloopedstreaming-registers.md)**
 - **[KSPROPERTY](../stream/ksproperty-structure.md)**
-- **[KSPROPERTY_MIDILOOPEDSTREAMING enum](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming.md)**
-- **[KSMIDILOOPED_BUFFER_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer_property.md)**
-- **[KSMIDILOOPED_BUFFER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer.md)**
-- **[KSPROPERTY_MIDILOOPEDSTREAMING enum](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming.md)**
+- **[KSPROPERTY_MIDILOOPEDSTREAMING enum](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming)**
+- **[KSMIDILOOPED_BUFFER_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer_property)**
+- **[KSMIDILOOPED_BUFFER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksmidilooped_buffer)**
+- **[KSPROPERTY_MIDILOOPEDSTREAMING enum](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_midiloopedstreaming)**
