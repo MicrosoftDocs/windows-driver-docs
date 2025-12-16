@@ -23672,7 +23672,12 @@
     },
     {
       "source_path": "windows-driver-docs-pr/devtest/event-tracing-for-windows--etw-.md",
-      "redirect_url": "/windows-hardware/drivers/devtest/about-event-tracing-for-drivers.md",
+      "redirect_url": "/windows-hardware/drivers/devtest/about-event-tracing-for-drivers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/tools-for-verifying-drivers.md",
+      "redirect_url": "/windows-hardware/drivers/devtest/static-and-dynamic-verification-tools",
       "redirect_document_id": false
     }
   ]
