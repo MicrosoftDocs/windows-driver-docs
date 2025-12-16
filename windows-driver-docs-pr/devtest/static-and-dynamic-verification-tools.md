@@ -18,11 +18,11 @@ For best results, use all of the tools that can run on your driver. If you omit 
 
 ## Static and dynamic verification tools
 
-Two basic types of verification tools exist:
+There are two basic types of verification tools:
 
 - **Static verification tools** examine the driver code without running the driver. Because these tools don't rely on tests that exercise the code, they can be extremely thorough. Theoretically, static verification tools can examine all of the driver code, including code paths that are rarely executed in practice. However, because the driver isn't actually running, these tools might generate false-positive results. That is, they might report an error in a code path that doesn't occur in practice.
 
-    CodeQL is the primary static analysis tool for drivers. CodeQL provides a powerful query language that treats code as a database to be queried, making it simple to write queries for specific behaviors and patterns. The [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility) requires CodeQL for Static Tool Logo (STL) Tests on our Client and Server operating systems. For more information, see [CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md).
+    [CodeQL](codeql-overview.md) is the primary static analysis tool for drivers. CodeQL provides a powerful query language that treats code as a database to be queried, making it simple to write queries for specific behaviors and patterns. The [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility) requires CodeQL for Static Tool Logo (STL) Tests on our Client and Server operating systems. For more information, see [CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md).
 
 - **Dynamic verification tools** examine the driver code while the driver is running, typically by intercepting calls to commonly used driver support routines and substituting calls to their own error-checking versions of the same routines. Because the driver is actually running while the dynamic tools are doing the verification, false-positive results are rare. However, because the dynamic tools detect only the actions that occur while they're monitoring the driver, the tools can miss certain driver defects if the driver test coverage isn't adequate. At the same time, by using information available at run time - for example, information that's harder to extract statically from the source code - dynamic verification tools can detect certain classes of driver errors that are harder to detect with static analysis tools.
 
@@ -31,7 +31,7 @@ Use a combination of static and dynamic verification tools. Static tools allow y
 ## Overview of verification tools
 
 > [!IMPORTANT]
-> The Static Driver Verifier (SDV) tool is no longer supported. It's unavailable in WDKs newer than build 26017, including the Windows 24H2 RTM WDK. Don't use the SDV for analysis.
+> The Static Driver Verifier (SDV) tool is no longer supported. It's unavailable in WDKs newer than build 26017, including the Windows 24H2 RTM WDK. Using the SDV for analysis is not recommended.
 
 The WDK describes the following verification tools and recommends their use by driver developers and testers. They're listed in the order in which you typically use them.
 
