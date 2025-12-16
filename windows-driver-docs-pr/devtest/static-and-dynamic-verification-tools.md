@@ -1,6 +1,6 @@
 ---
 title: Driver Verification Tools for Windows Development
-description: description: "Learn about Windows Driver Kit (WDK) verification tools including CodeQL, Driver Verifier, and KASAN. Detect driver errors early in development."
+description: "Learn about Windows Driver Kit (WDK) verification tools including CodeQL, Driver Verifier, and KASAN. Detect driver errors early in development."
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK

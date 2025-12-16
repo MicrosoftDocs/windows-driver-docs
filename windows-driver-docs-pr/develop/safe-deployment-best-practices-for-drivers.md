@@ -125,7 +125,7 @@ Drivers and firmware need to provide some level of forward and backward compatib
 
 ### Deployment phases
 
-Driver deployment is a multistage process that ensures security, reliability, and minimal disruption. The deployment phases—pilot deployment, gradual rollout, and full deployment—reduce risks and confirm driver stability before full distribution. CISA's [Safe Software Deployment Guidance](https://www.cisa.gov/sites/default/files/2024-10/safe-software-manufacturers-can-ensure-reliability-for-customers-508c.pdf) highlights the importance of a gradual rollout and includes a detailed deployment timeline (see figure 1 in the link provided). This timeline shows how these phases fit into the overall process. It highlights how organizations can monitor performance and test drivers thoroughly before wider distribution.
+Driver deployment is a multistage process that ensures security, reliability, and minimal disruption. The deployment phases—pilot deployment, gradual rollout, and full deployment—reduce risks and confirm driver stability before full distribution. CISA's [Safe Software Deployment Guidance](https://www.cisa.gov/resources-tools/resources/safe-software-deployment-how-software-manufacturers-can-ensure-reliability-customers) highlights the importance of a gradual rollout and includes a detailed deployment timeline. This timeline shows how these phases fit into the overall process. It highlights how organizations can monitor performance and test drivers thoroughly before wider distribution.
 
 - **Pilot deployment (internal rollout):**
   - Initial release to a limited test audience.
