@@ -6,7 +6,7 @@ keywords:
 - WDK
 - drivers
 - known issues
-ms.date: 07/01/2025
+ms.date: 12/17/2025
 ms.topic: troubleshooting-known-issue
 ---
 
@@ -18,7 +18,7 @@ This article details known issues concerning the WDK.
 
 ### Driver Testing with Visual Studio Support
 
-Driver Testing with Visual Studio is not supported yet in WDK version 28000.1 (26H1). 
+ERT driver testing in Visual Studio is supported starting with Visual Studio 2022 version 17.14.23 and later
 
 ## WDK for Windows 11, version 24H2
 
