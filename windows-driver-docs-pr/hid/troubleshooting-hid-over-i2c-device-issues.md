@@ -14,15 +14,17 @@ adobe-target: true
 
 HID over I2C (a.k.a. HID I2C) devices — such as touchpads, touchscreens, sensors, and keyboards—are widely used in modern laptops and tablets for their low power consumption and flexible integration. Diagnosing and resolving their issues can be challenging due to the complexity of interactions between HID I2C device firmware, I2C controllers, and the operating system. This guide presents a structured workflow specifically for troubleshooting HID I2C device issue. By following these steps, engineers can efficiently isolate issues, capture meaningful traces, and communicate actionable findings to device manufacturers or controller vendors.
 
-## Architecture and overview
+## Architecture and Overview
 
 This diagram shows the typical architecture of a HID I2C device and a corresponding I2C controller.
 
-![hid over i2c archiecture](images/HIDI2C_Archecture.jpg)
+![HIDI2C_Archecture](media/troubleshooting-hid-over-i2c-device-issues/hidi2c-archecture.jpg)
 
 This diagram shows an overview of this troubleshooting guide.
 
-![troubleshooting overview](images/troubleshooting-hidi2c-overview.jpg)
+![troubleshoot-hidi2c-overview](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-overview.png)
+
+
 
 ## Common Failures of HID I2C Devices
 
@@ -36,9 +38,9 @@ This diagram shows an overview of this troubleshooting guide.
 
 ## HID I2C Device is Started in Device Manager (but not working)
 
-Follow this flowchart to investigate further in this case.
+Follow this flowchart to investigate further in this case.![troubleshoot-hidi2c-device-started](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-device-started.png)
 
-![troubleshoot hidi2c device started](images/troubleshoot-hidi2c-device-started.png)
+
 
 ## Capture and Analyze Trace for HID I2C Device Issues
 
@@ -48,25 +50,17 @@ Follow the instructions at [https://aka.ms/busestrace](https://aka.ms/busestrace
 
 If there are multiple HID I2C devices, you may want to disable and/or avoid using them during the trace capture to reduce trace noise and make analysis easier.
 
- 
-
-### What Type of Trace to Capture?
+### What Type of Trace to Capture
 
 __BusesTrace.cmd__ can either capture an immediate repro trace, or configure the system for boot trace (but require a system reboot first after the script run). In most cases, especially for any device failures that happen during boot-up, a boot trace is required to capture the failure point.
 
- 
+### View HIDI2C.sys Manifested ETW Trace in WPA (Windows Performance Analyzer)
 
-### View HIDI2C.SYS Manifested ETW Trace in WPA
+To view HIDI2C.sys manifested ETW trace in [Windows Performance Analyzer | Microsoft Learn](/windows-hardware/test/wpt/windows-performance-analyzer), open both __Buses-MachineInfo.etl__ and __WPR-…-*InputTrace.etl*_ files in WPA and choose to open them in one session.
 
-1). Download Windows Performance Analyzer (WPA).
+![troubleshoot-hidi2c-open-etl-files-in-wpa](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-open-etl-files-in-wpa.png)
 
-[Windows Performance Analyzer | Microsoft Learn](/windows-hardware/test/wpt/windows-performance-analyzer)
-
-2). To view HIDI2C.SYS manifested ETW trace, open both __Buses-MachineInfo.etl__ and __WPR-…-*InputTrace.etl*_ files in WPA and also choose to open them in one session.
-
-![troubleshoot hidi2c open etl files in wpa](images/troubleshoot-hidi2c-open-etl-files-in-wpa.png)
-
-3). Manifested ETW events can be viewed using the “System Activities\Generic Events” graph. The name of that HIDI2C event provider is “Microsoft-Windows-SPB-HIDI2C”. (This also works for other manifested ETW events as well, such as HIDCLASS manifested ETW events, which provider name is “Microsoft-Windows-Input-HIDCLASS”.)
+Manifested ETW events can be viewed using the “System Activities\Generic Events” graph. The name of that HIDI2C event provider is “Microsoft-Windows-SPB-HIDI2C”. (This also works for other manifested ETW events as well, such as HIDCLASS manifested ETW events, which provider name is “Microsoft-Windows-Input-HIDCLASS”.)
 
 ![troubleshoot hidi2c view etw in wpa](images/troubleshoot-hidi2c-view-etw-in-wpa.png)
 
