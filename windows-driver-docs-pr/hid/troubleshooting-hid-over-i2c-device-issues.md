@@ -104,7 +104,7 @@ Notes: The “__GUID Name__” field displays WPP trace providers, which are usu
 
 ### Example 1: (Non-Repro) Interrupts are Received and Handled Successfully.
 
-### HIDI2C manifested ETW trace shows expected event sequences from ID 1010, 1011, 1012, 1013 and 1014.
+HIDI2C manifested ETW trace shows expected event sequences from ID 1010, 1011, 1012, 1013 and 1014.
 
  
 
