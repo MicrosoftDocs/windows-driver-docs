@@ -112,7 +112,6 @@
       href: power-management-over-i2c.md
     - name: Troubleshooting HID over I2C Device Issues
       href: troubleshooting-hid-over-i2c-device-issues.md
-      displayName: Troubleshooting HIDI2C
     - name: "Troubleshooting common errors"
       href: troubleshooting-common-errors.md
     - name: "Event tracing"
