@@ -13,7 +13,7 @@ If an audio driver doesn't implement a hardware volume node for an endpoint, Win
 
 ## Remarks
 
-IHVs and OEMs can override the default software volume value for an endpoint by setting **PKEY_AudioEndpoint_Default_VolumeInDb** on a topology filter using the driver INF file. The value specified by the key is in dB units.
+You can override the default software volume value for an endpoint by setting **PKEY_AudioEndpoint_Default_VolumeInDb** on a topology filter using the driver INF file. The value specified by the key is in dB units.
 
 This key is used for both render and capture endpoints.
 
