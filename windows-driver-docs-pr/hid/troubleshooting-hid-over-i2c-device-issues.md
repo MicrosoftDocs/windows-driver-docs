@@ -38,7 +38,9 @@ This diagram shows an overview of this troubleshooting guide.
 
 ## HID I2C Device is Started in Device Manager (but not working)
 
-Follow this guide to investigate.![troubleshoot-hidi2c-device-started](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-device-started.png)
+Follow this guide to investigate.
+
+![troubleshoot-hidi2c-device-started](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-device-started.png)
 
 ## Capture and Analyze Trace for HID I2C Device Issues
 
@@ -54,7 +56,7 @@ __BusesTrace.cmd__ can either capture an immediate repro trace, or configure the
 
 ### View HIDI2C.sys Manifested ETW Trace in Windows Performance Analyzer (WPA)
 
-To view HIDI2C.sys manifested ETW trace in [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer), open both __Buses-MachineInfo.etl__ and __WPR-…-*InputTrace.etl*_ files in WPA and choose to open them in one session.
+To view HIDI2C.sys manifested ETW trace in [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer), open both __Buses-MachineInfo.etl__ and __WPR-…-InputTrace.etl__ files in WPA and choose to open them in one session.
 
 ![troubleshoot-hidi2c-open-etl-files-in-wpa](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-open-etl-files-in-wpa.png)
 
