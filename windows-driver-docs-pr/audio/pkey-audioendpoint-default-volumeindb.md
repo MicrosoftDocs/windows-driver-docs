@@ -9,7 +9,7 @@ ms.topic: reference
 
 In Windows 10 Version 1605 and later, the **PKEY_AudioEndpoint_Default_VolumeInDb** property key configures the default volume (in dB) for the software volume node. Provide the default dB value that you would like to set.
 
-If an audio driver is not implementing hardware volume node for an endpoint, Windows inserts a software volume node to control volume on that endpoint. There are situations, where the default volume value is too low. This settings information (INF) key provides the user a better experience when appropriate gain or attenuation is applied to audio signal.
+If an audio driver doesn't implement a hardware volume node for an endpoint, Windows inserts a software volume node to control volume on that endpoint. There are situations, where the default volume value is too low. This settings information (INF) key provides the user a better experience when appropriate gain or attenuation is applied to audio signal.
 
 ## Remarks
 
