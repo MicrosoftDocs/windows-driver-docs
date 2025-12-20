@@ -1097,6 +1097,10 @@
       href: pkey-audiodevice-neversetasdefaultendpoint.md
     - name: PKEY_AudioEndpoint_Default_VolumeInDb
       href: pkey-audioendpoint-default-volumeindb.md
+    - name: PKEY_AudioEndpoint_Max_VolumeInDb
+      href: pkey-audioendpoint-max-volumeindb.md
+    - name: PKEY_AudioEndpoint_Min_VolumeInDb
+      href: pkey-audioendpoint-min-volumeindb.md
     - name: PKEY_AudioEngine_OEMFormat
       href: pkey-audioengine-oemformat.md
     - name: PKEY_AudioEngine_OEMPeriod
