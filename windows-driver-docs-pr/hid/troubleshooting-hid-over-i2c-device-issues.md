@@ -19,11 +19,11 @@ HID over I2C (a.k.a. HID I2C) devices — such as touchpads, touchscreens, senso
 
 This diagram shows the typical architecture of a HID I2C device and a corresponding I2C controller.
 
-![HIDI2C_Archecture](media/troubleshooting-hid-over-i2c-device-issues/hidi2c-archecture.jpg)
+![HIDI2C Architecture](media/troubleshooting-hid-over-i2c-device-issues/hidi2c-architecture.jpg)
 
 This diagram shows an overview of this troubleshooting guide.
 
-![troubleshoot-hidi2c-overview](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-overview.png)
+![Troubleshooting Overview](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-overview.png)
 
 
 ## Common Failures of HID I2C Devices
