@@ -1,134 +1,120 @@
 ---
-# Required metadata
-# For more information, see https://learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata
-# For valid values of ms.service, ms.prod, and ms.topic, see https://learn.microsoft.com/en-us/help/platform/metadata-taxonomies
-
-title:       # Add a title for the browser tab
-description: # Add a meaningful description for search results
-author:      AndrewYangMSFT # GitHub alias
-ms.author:   andrewya # Microsoft alias
-ms.service:  # Add the ms.service or ms.prod value
-# ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    # Add the ms.topic value
-ms.date:     12/19/2025
+title: Troubleshooting HID over I2C Device Issues
+description: This guide presents a structured workflow specifically for troubleshooting HID I2C device issue.
+ms.topic: troubleshooting-general
+ms.date: 12/22/2025
+ai-usage: ai-assisted
 ---
 
+# Troubleshooting HID over I2C device issues
 
-# Troubleshooting HID over I2C Device Issues
+HID over I2C (a.k.a. HID I2C) devices—such as touchpads, touchscreens, sensors, and keyboards—are widely used in modern laptops and tablets for their low power consumption and flexible integration. Diagnosing and resolving their issues can be challenging due to the complexity of interactions between HID I2C device firmware, I2C controllers, and the operating system. This guide presents a structured workflow specifically for troubleshooting HID I2C device issues. By following these steps, you can efficiently isolate issues, capture meaningful traces, and communicate actionable findings to device manufacturers or controller vendors.
 
-HID over I2C (a.k.a. HID I2C) devices — such as touchpads, touchscreens, sensors, and keyboards—are widely used in modern laptops and tablets for their low power consumption and flexible integration. Diagnosing and resolving their issues can be challenging due to the complexity of interactions between HID I2C device firmware, I2C controllers, and the operating system. This guide presents a structured workflow specifically for troubleshooting HID I2C device issue. By following these steps, engineers can efficiently isolate issues, capture meaningful traces, and communicate actionable findings to device manufacturers or controller vendors.
-
-
-## Architecture and Overview
+## Architecture and overview
 
 This diagram shows the typical architecture of a HID I2C device and a corresponding I2C controller.
 
-![HIDI2C Architecture](media/troubleshooting-hid-over-i2c-device-issues/hidi2c-architecture.png)
-
-
+:::image type="content" source="images/hidi2c-architecture.png" alt-text="Screenshot of the HID I2C architecture diagram showing the device firmware, I2C controller, and operating system components.":::
 
 This diagram shows an overview of this troubleshooting guide.
 
-![Troubleshooting Overview](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-overview.png)
+:::image type="content" source="images/troubleshoot-hidi2c-overview.png" alt-text="Screenshot of the troubleshooting workflow overview diagram for HID over I2C devices.":::
 
+## Common failures of HID I2C devices
 
-## Common Failures of HID I2C Devices
+| Device status | What happened | What to do next |
+|--|--|--|
+| "A request for the HID descriptor failed." | The HID I2C device firmware failed processing the read request for the HID descriptor from the host. | Contact the HID I2C device firmware owner to investigate the issue.<br/><br/>If the HID I2C device firmware didn't receive the read request, contact the I2C controller owner to investigate why the I2C controller didn't send the read request.<br/><br/>If you need more information on the request failure, follow the instructions in a later section to capture and analyze HIDI2C driver trace. |
+| "The device returned an invalid HID descriptor." | The HID I2C device firmware returned an invalid HID descriptor to the host. The descriptor contains one or more invalid fields, such as an incorrect descriptor length or an invalid register address. | Contact the HID I2C device firmware owner to address the issue.<br/><br/>If you need more information on the validation failure, follow the instructions in a later section to capture and analyze HIDI2C driver trace. |
+| "The device failed the SET_POWER command." | Writing the HID I2C command SET_POWER to the device firmware failed. | Contact the HID I2C device firmware owner to investigate the issue.<br/><br/>If the device didn't receive the write, contact the I2C controller firmware owner to investigate why the I2C controller didn't write to the HID I2C device.<br/><br/>If you need more information on the command failure, follow the instructions in a later section to capture and analyze HIDI2C driver trace. |
+| "This device cannot start. (Code 10)" with a message that indicates a descriptor parsing failure.<br/><br/>Here are some common parsing failure messages:<br/><br/> - "Report was not byte aligned."<br/><br/> - "A non constant main item was declared without a corresponding usage."<br/><br/> - "An unknown item was found in the report descriptor."<br/><br/> - "Extra end collection found or end collection not found." | The HID I2C device firmware returned an invalid HID Report descriptor. | Contact the HID I2C device firmware owner to address the issue.<br/><br/>Because the OS retrieves the HID Report Descriptor based on the information in the HID Descriptor it retrieves from the device firmware earlier, make sure that in the HID Descriptor, both the wReportDescLength field at byte offset 4 and the wReportDescRegister field at byte offset 6 are accurate.<br/><br/>You can use an I2C bus analyzer hardware to verify the actual descriptors transferred on the I2C bus. If you need more information on the descriptor validation failure, follow the instructions in a later section to capture and analyze HIDI2C driver trace. |
+| The HID I2C device is missing in Device Manager. | The ACPI firmware reported incorrect device configuration, such as incorrect Compatible ID (_CID) or incorrect device presence status (_STA). | Contact your ACPI firmware owner to inspect the device configuration. |
 
-|Device Status|What Happened|What To Do Next|
-| -------- | -------- | -------- |
-|"A request for the HID descriptor failed."|The HID I2C device firmware failed processing the read request for the HID descriptor from the host.|Please contact the HID I2C device firmware owner to investigate the issue.<br/><br/>If the HID I2C device firmware didn't receive the read request, please contact the I2C controller owner to investigate why the I2C controller didn't send the read request.<br/><br/>If you need more information on the request failure, please follow the instructions in a later section to capture and analyze HIDI2C driver trace.|
-|"The device returned an invalid HID descriptor."|The HID I2C device firmware returned an invalid HID descriptor to the host. The descriptor contains one or more invalid fields, such as an incorrect descriptor length, an invalid register address, etc. |Please contact the HID I2C device firmware owner to address the issue.<br/><br/>If you need more information on the validation failure, please follow the instructions in a later section to capture and analyze HIDI2C driver trace.|
-|"The device failed the SET_POWER command."|Writing the HID I2C command SET_POWER to the device firmware failed.|Please contact the HID I2C device firmware owner to investigate the issue.<br/><br/>If the device didn't receive the write, please contact the I2C controller firmware owner to investigate why the I2C controller didn't write to the HID I2C device.<br/><br/>If you need more information on the command failure, please follow the instructions in a later section to capture and analyze HIDI2C driver trace.|
-|"This device cannot start. (Code 10)" with a message that indicates a descriptor parsing failure.<br/><br/>Here are some common parsing failure messages:<br/><br/> - "Report was not byte aligned."<br/><br/> - "A non constant main item was declaired without a corresponding usage."<br/><br/> - "An unknown item was found in the report descriptor."<br/><br/> - "Extra end collection found or end collection not found."|The HID I2C device firmware returned an invalid HID Report descriptor.|Please contact the HID I2C device firmware owner to address the issue.<br/><br/>Because the OS retrieves the HID Report Descriptor based on the information in the HID Descriptor it retrieves from the device firmware earlier, please make sure that in the HID Descriptor, both the wReportDescLength field at byte offset 4 and the wReportDescRegister field at byte offset 6 are accurate.<br/><br/>An I2C bus analyzer hardware may be used to verify the actual descriptors transferred on the I2C bus. If you need more information on the descriptor validation failure, please follow the instructions |
-|The HID I2C device is missing in Device Manager.|The ACPI firmware reported incorrect device configuration such as incorrect Compatible ID (_CID) or incorrect device presence status (_STA).|Please contact your ACPI firmware owner to inspect the device configuration.|
-
-## HID I2C Devices are Started in Device Manager But Not Working
+## HID I2C devices are started in Device Manager but not working
 
 Follow this guide to investigate.
 
-![Troubleshooting Started HID I2C Devices](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-device-started.png)
+:::image type="content" source="images/troubleshoot-hidi2c-device-started.png" alt-text="Screenshot of the troubleshooting flowchart for started HID I2C devices that are not working.":::
 
-## Capture and Analyze Trace for HID I2C Device Issues
+## Capture and analyze trace for HID I2C device issues
 
-### Capture Trace
+### Capture trace
 
 Follow the instructions at [https://aka.ms/busestrace](https://aka.ms/busestrace) to get the __BusesTrace.cmd__ script and capture trace of Microsoft-provided drivers such as HIDI2C.SYS and HIDCLASS.SYS.
 
-If there are multiple HID I2C devices, you may want to disable and/or avoid using them during the trace capture to reduce trace noise and make analysis easier.
+If there are multiple HID I2C devices, you might want to disable or avoid using them during the trace capture to reduce trace noise and make analysis easier.
 
-### What Type of Trace to Capture
+### What type of trace to capture
 
 __BusesTrace.cmd__ can either capture an immediate repro trace, or configure the system for boot trace (but require a system reboot first after the script run). In most cases, especially for any device failures that happen during boot-up, a boot trace is required to capture the failure point.
 
-### View HIDI2C.sys Manifested ETW Trace in Windows Performance Analyzer (WPA)
+### View HIDI2C.sys manifested ETW trace in Windows Performance Analyzer (WPA)
 
 To view HIDI2C.sys manifested ETW trace in [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer), open both __Buses-MachineInfo.etl__ and __WPR-…-InputTrace.etl__ files in WPA and choose to open them in one session.
 
-![Open ETL Files in WPA](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-open-etl-files-in-wpa.png)
+:::image type="content" source="images/troubleshoot-hidi2c-open-etl-files-in-wpa.png" alt-text="Screenshot showing Windows Performance Analyzer dialog to open ETL trace files in a single session.":::
 
-Manifested ETW events can be viewed using the “System Activities\Generic Events” graph. The name of that HIDI2C event provider is “Microsoft-Windows-SPB-HIDI2C”. (This also works for other manifested ETW events as well, such as HIDCLASS manifested ETW events, which provider name is “Microsoft-Windows-Input-HIDCLASS”.)
+You can view manifested ETW events using the "System Activities\Generic Events" graph. The name of that HIDI2C event provider is "Microsoft-Windows-SPB-HIDI2C". (This also works for other manifested ETW events, such as HIDCLASS manifested ETW events, which provider name is "Microsoft-Windows-Input-HIDCLASS".)
 
-![View Manifested ETW Trace in WPA](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-view-etw-in-wpa.png)
+:::image type="content" source="images/troubleshoot-hidi2c-view-etw-in-wpa.png" alt-text="Screenshot of Windows Performance Analyzer displaying manifested ETW trace events from the HIDI2C provider.":::
 
-### Common HIDI2C Manifested ETW Events
+### Common HIDI2C manifested ETW events
 
 Event Provider Name: Microsoft-Windows-SPB-HIDI2C
 
-|Event ID|Event Name|Meaning|
-|--------|--------|--------|
-|1010|Microsoft-Windows-SPB-HIDI2C/HIDI2C_IO/win:Start|HIDI2C.SYS receives an interrupt from the HID I2C device.|
-|1011|Microsoft-Windows-SPB-HIDI2C/HIDI2C_IO/IoSpbReadDispatch|HIDI2C.SYS issues an I2C read request to the HID I2C device via the I2C controller.|
-|1012|Microsoft-Windows-SPB-HIDI2C/HIDI2C_IO/IoSpbReadComplete|The I2C controller completes the I2C read request from HIDI2C.SYS successfully.|
-|1013|Microsoft-Windows-SPB-HIDI2C/HIDI2C_IO/IoForwardToCompletionQueue|HIDI2C.SYS forwards a HID request to an internal I/O queue to complete with the HID I2C device data later.|
-|1014|Microsoft-Windows-SPB-HIDI2C/HIDI2C_IO/win:Stop|HIDI2C.SYS completes a HID request with the HID I2C device data.|
+| Event ID | Event Name | Meaning |
+|--|--|--|
+| 1010 | Microsoft-Windows-SPB-HIDI2C/HIDI2C_IO/win:Start | HIDI2C.SYS receives an interrupt from the HID I2C device. |
+| 1011 | Microsoft-Windows-SPB-HIDI2C/HIDI2C_IO/IoSpbReadDispatch | HIDI2C.SYS issues an I2C read request to the HID I2C device via the I2C controller. |
+| 1012 | Microsoft-Windows-SPB-HIDI2C/HIDI2C_IO/IoSpbReadComplete | The I2C controller completes the I2C read request from HIDI2C.SYS successfully. |
+| 1013 | Microsoft-Windows-SPB-HIDI2C/HIDI2C_IO/IoForwardToCompletionQueue | HIDI2C.SYS forwards a HID request to an internal I/O queue to complete with the HID I2C device data later. |
+| 1014 | Microsoft-Windows-SPB-HIDI2C/HIDI2C_IO/win:Stop | HIDI2C.SYS completes a HID request with the HID I2C device data. |
 
-### View HIDI2C.SYS WPP Trace in WPA
+### View HIDI2C.SYS WPP trace in WPA
 
-Unlike manifested ETW trace, WPP trace needs to be viewed using the "System Activity\WPP Trace" graph and also needs to load symbols to format the WPP trace messages with. For more information about configuring/loading symbols in WPA and the symbol path, please refer to the following documents.  (The same steps apply to any WPP trace, not just from HIDI2C.SYS.)
+Unlike manifested ETW trace, you must view WPP trace using the "System Activity\WPP Trace" graph and load symbols to format the WPP trace messages. For more information about configuring and loading symbols in WPA and the symbol path, see the following articles. (The same steps apply to any WPP trace, not just from HIDI2C.SYS.)
 
-[Load Symbols or Configure Symbol Paths | Microsoft Learn](/windows-hardware/test/wpt/load-symbols-or-configure-symbol-paths)
+[Load Symbols or Configure Symbol Paths](/windows-hardware/test/wpt/load-symbols-or-configure-symbol-paths)
 
-[Loading Symbols | Microsoft Learn](/windows-hardware/test/wpt/loading-symbols)
+[Loading Symbols](/windows-hardware/test/wpt/loading-symbols)
 
-![View WPP Trace in WPA](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-view-wpp-in-wpa.png)
+:::image type="content" source="images/troubleshoot-hidi2c-view-wpp-in-wpa.png" alt-text="Screenshot showing Windows Performance Analyzer with WPP trace events and symbols loaded.":::
 
-Notes: The “__GUID Name__” field displays WPP trace providers, which are usually driver names such as “hidi2c”. But this column is not visible by default but needs to be added using the “View Editor” dialog box.
-
+> [!NOTE]
+> The "__GUID Name__" field displays WPP trace providers, which are usually driver names such as "hidi2c". This column isn't visible by default and must be added using the "View Editor" dialog box.
 
 ## Examples
 
-### Example 1: (Non-Repro) Interrupts are Received and Handled Successfully.
+### Example 1: (Non-Repro) Interrupts are received and handled successfully
 
 HIDI2C manifested ETW trace shows expected event sequences from ID 1010, 1011, 1012, 1013 and 1014.
 
-![Example 1's Manifested ETW Trace](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-ex1-etw.png)
+:::image type="content" source="images/troubleshoot-hidi2c-ex1-etw.png" alt-text="Screenshot showing manifested ETW trace with successful interrupt handling event IDs 1010 through 1014.":::
 
-HIDI2C WPP trace, after grouped by provider names (the “Guid Name” column) and trace level, doesn’t show any errors (only Information level trace.)
+HIDI2C WPP trace, after grouped by provider names (the "Guid Name" column) and trace level, doesn't show any errors (only Information level trace.)
 
-![Example 1's WPP Trace](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-ex1-wpp.png)
+:::image type="content" source="images/troubleshoot-hidi2c-ex1-wpp.png" alt-text="Screenshot showing WPP trace grouped by provider names with only Information level events and no errors.":::
 
+### Example 2: Interrupts are received but I2C read requests are not completed successfully
 
-### Example 2: Interrupts are Received but I2C Read Requests are Not Completed Successfully.
-
-For each interrupt HIDI2C.SYS received, there should be the event sequence of ID 1010, 1011, 1012, 1013 and 1014. If any events of ID 1011, 1012 or 1013 are missing like what this example shows, something went wrong, then WPP trace of HIDI2C.SYS can be analyzed further to see if there are more detailed errors logged.
+For each interrupt HIDI2C.SYS receives, the event sequence should be ID 1010, 1011, 1012, 1013, and 1014. If any events of ID 1011, 1012, or 1013 are missing like this example shows, something went wrong. You can then analyze the WPP trace of HIDI2C.SYS further to see if more detailed errors are logged.
 
 HIDI2C manifested ETW trace shows events of ID 1010 and 1011 but not 1012 and others, which means that interrupts were received, I2C read requests were issued to the I2C controller but not completed successfully.
 
-![Example 2's Manifested ETW Trace](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-ex2-etw.png)
+:::image type="content" source="images/troubleshoot-hidi2c-ex2-etw.png" alt-text="Screenshot showing manifested ETW trace with incomplete event sequence, events 1010 and 1011 present but missing subsequent events.":::
 
-HIDI2C WPP trace, after grouped by the provider names (the “Guid Name” column) and trace level, shows that the SPB requests got timed out by the I2C controller. Further investigation from the I2C controller will be needed.
+HIDI2C WPP trace, after grouping the HIDI2C WPP trace by the provider names (the "Guid Name" column) and trace level, shows that the I2C controller timed out the SPB requests. You must investigate further from the I2C controller.
 
-![Example 2's WPP Trace](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-ex2-wpp.png)
+:::image type="content" source="images/troubleshoot-hidi2c-ex2-wpp.png" alt-text="Screenshot showing WPP trace with SPB request timeout errors from the I2C controller.":::
 
-
-### Example 3: HID I2C Device Failed Due To Returning an Invalid HID Report Descriptor
+### Example 3: HID I2C device failed due to returning an invalid HID report descriptor
 
 In this example, the HID I2C device failed with the following status in Device Manager.
 
-![Example 3's Device Status in Device Manager](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-ex3-devmgmt.png)
+:::image type="content" source="images/troubleshoot-hidi2c-ex3-devmgmt.png" alt-text="Screenshot showing Device Manager with a failed HID I2C device and error status indicating an invalid HID Report Descriptor.":::
 
-According to the Common Failures table above, this error status indicates that the HID I2C device firmware returned an invalid HID Report Descriptor. This issue should be investigated from the HID I2C device firmware first. You may want to verify that the expected HID Report Descriptor was returned. You may also use the I2C bus analyzer hardware to verify what was transferred on the I2C bus. If you need to get more information on this error, HIDCLASS.SYS trace, instead of HIDI2C.SYS trace, can be analyzed, since HID Report Descriptor is validated by HIDCLASS.SYS.
+According to the Common Failures table, this error status indicates that the HID I2C device firmware returned an invalid HID Report Descriptor. Investigate this issue from the HID I2C device firmware first. You might want to verify that the expected HID Report Descriptor was returned. You can also use the I2C bus analyzer hardware to verify what was transferred on the I2C bus. If you need to get more information on this error, analyze the HIDCLASS.SYS trace instead of HIDI2C.SYS trace, since HIDCLASS.SYS validates the HID Report Descriptor.
 
 After grouped by trace level, HIDCLASS WPP trace shows the same error but with the byte offset showing where the error occurred.
 
-![Example 3's WPP Trace](media/troubleshooting-hid-over-i2c-device-issues/troubleshoot-hidi2c-ex3-wpp.png)
+:::image type="content" source="images/troubleshoot-hidi2c-ex3-wpp.png" alt-text="Screenshot showing HIDCLASS WPP trace with validation error and byte offset where the error occurred.":::
