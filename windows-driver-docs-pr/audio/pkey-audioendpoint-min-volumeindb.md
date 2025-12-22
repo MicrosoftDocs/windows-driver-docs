@@ -28,15 +28,16 @@ The data is stored as a 16.16 fixed point value. The upper 16 bits are used for 
 ```inf
 ; The following line overrides the minimum volume (in dB) for an endpoint.
 ; It is only applicable when hardware volume is not implemented.
-; Decimal value expressed in fixed point 16.16 format and stored as a DWORD.
+; Decimal value expressed as Reg_Binary (0x00000001) to ensure we can 
+; accommodate big negative values instead of overflowing.
 
 PKEY_AudioEndpoint_Min_VolumeInDb        = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},11"
 
-; 10 dB
-HKR,EP\0,%PKEY_AudioEndpoint_Min_VolumeInDb%,0x00010001,0xA0000
-
 ;-10 dB
-;HKR,EP\0,%PKEY_AudioEndpoint_Min_VolumeInDb%,0x00010001,0xFFF60000
+HKR,EP\0,%PKEY_AudioEndpoint_Min_VolumeInDb%,0x00000001,03,00,00,00,01,00,00,00,00,00,F6,FF
+
+;+10 dB
+HKR,EP\0,%PKEY_AudioEndpoint_Min_VolumeInDb%,0x00000001,03,00,00,00,01,00,00,00,00,00,0A,00
 ```
 
 ## Related articles
