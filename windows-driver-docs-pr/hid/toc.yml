@@ -110,8 +110,8 @@
       href: plug-and-play-support-and-power-management.md
     - name: "Power management for I2C transport"
       href: power-management-over-i2c.md
-    - name: Troubleshooting HID over I2C Device Issues
-      href: troubleshooting-hid-over-i2c-device-issues.md
+    - name: Troubleshoot HID over I2C Device Issues
+      href: troubleshoot-hid-over-i2c-device-issues.md
     - name: "Troubleshooting common errors"
       href: troubleshooting-common-errors.md
     - name: "Event tracing"
