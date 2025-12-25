@@ -22511,11 +22511,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-driver-docs-pr/debugger/dbgeng-extension-design-guide.md",
-      "redirect_url": "/windows-hardware/drivers/debugger/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "windows-driver-docs-pr/debugger/dbh.md",
       "redirect_url": "/windows-hardware/drivers/debugger/",
       "redirect_document_id": false
@@ -22607,11 +22602,6 @@
     },
     {
       "source_path": "windows-driver-docs-pr/debugger/using-debugger-command-programs.md",
-      "redirect_url": "/windows-hardware/drivers/debugger/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows-driver-docs-pr/debugger/wdbgexts-extension-design-guide.md",
       "redirect_url": "/windows-hardware/drivers/debugger/",
       "redirect_document_id": false
     },

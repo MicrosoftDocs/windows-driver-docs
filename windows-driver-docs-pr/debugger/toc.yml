@@ -578,6 +578,8 @@
         href: writing-dbgeng-extensions.md
       - name: DbgEng Extension Design Guide
         items:
+        - name: DbgEng Extension Design Guide
+          href: dbgeng-extension-design-guide.md
         - name: Anatomy of a DbgEng Extension DLL
           href: anatomy-of-a-dbgeng-extension-dll.md
         - name: Using Clients and the Engine
@@ -610,6 +612,8 @@
         href: writing-wdbgexts-extensions.md
       - name: WdbgExts Extension Design Guide
         items:
+        - name: WdbgExts Extension Design Guide
+          href: wdbgexts-extension-design-guide.md
         - name: WdbgExts Extension API Overview
           href: wdbgexts-extension-api-overview.md
         - name: 32-Bit Pointers and 64-Bit Pointers
