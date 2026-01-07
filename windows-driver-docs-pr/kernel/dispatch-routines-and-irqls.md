@@ -26,7 +26,7 @@ Most drivers' dispatch routines are called in an arbitrary thread context at IRQ
 
 -   The *DispatchPower* routine of drivers that require inrush power at start-up can be called at IRQL = DISPATCH\_LEVEL.
 
--   The *DispatchPower*, *DispatchRead*, *DispatchWrite*, *DispatchDeviceControl* and *DispatchInternalDeviceControl* routines can all be called at IRQL <= DISPATCH_LEVEL.
+-   The *DispatchPower*, *DispatchRead*, *DispatchWrite*, *DispatchDeviceControl*, and *DispatchInternalDeviceControl* routines can all be called at IRQL <= DISPATCH_LEVEL.
 
 For additional information, see [Managing Hardware Priorities](managing-hardware-priorities.md).
 
