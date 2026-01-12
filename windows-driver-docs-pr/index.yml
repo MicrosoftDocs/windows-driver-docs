@@ -108,14 +108,14 @@ conceptualContent:
 
     - title: Deployment and Distribution
       links:
-        - text: Distributing a Driver Package
-          url: ./develop/distributing-a-driver-package.md
+        - text: Deploying a Driver to a Test Computer
+          url: ./develop/deploying-a-driver-to-a-test-computer.md
           itemType: deploy
         - text: Safe Deployment Best Practices for Windows Drivers
           url: ./develop/safe-deployment-best-practices-for-drivers.md
           itemType: concept
-        - text: Deploying a Driver to a Test Computer
-          url: ./develop/deploying-a-driver-to-a-test-computer.md
+        - text: Distributing a Driver Package
+          url: ./develop/distributing-a-driver-package.md
           itemType: deploy
 
     - title: Blogs
@@ -135,16 +135,16 @@ conceptualContent:
 
     - title: Additional Resources
       links:
-        - text: Bring Up Guide
+        - text: Windows Hardware Bring Up Guide
           url: ./bringup/index.md
           itemType: overview
         - text: UWP Device Apps
           url: ./devapps/index.md
           itemType: overview
-        - text: Windows Driver Samples
+        - text: Windows driver samples source code
           url: https://github.com/Microsoft/Windows-driver-samples
           itemType: sample
-        - text: Search WDK Samples
+        - text: Search WDK samples
           url: https://learn.microsoft.com/samples/browse/?products=windows-wdk
           itemType: sample
         - text: Overview of Boot Options in Windows
