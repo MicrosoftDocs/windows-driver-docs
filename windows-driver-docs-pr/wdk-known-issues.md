@@ -20,6 +20,13 @@ This article details known issues concerning the WDK.
 
 Driver testing in Visual Studio is supported starting with Visual Studio 2022 version 17.14.23 and later
 
+## WDK for Windows 11, version 25H2
+
+The following WDF versions are removed from WDK. Existing driver project using those WDF version will fail to build.
+* KMDF version 1.9, 1.11, 1.13
+* UMDF version 2.0
+Please either update the project to WDF version 15 or above; or use an older WDK.
+
 ## WDK for Windows 11, version 24H2
 
 ### x86 Kernel Mode Driver Development
