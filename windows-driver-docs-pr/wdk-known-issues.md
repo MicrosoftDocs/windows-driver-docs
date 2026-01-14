@@ -37,7 +37,7 @@ Starting with Windows 11, version 24H2, the WDK no longer supports x86 kernel-mo
 
 ### Restart after provisioning
 
-The target machine fails to restart after provisioning and deployment.
+The target machine fails to restart after provisioning and deployment steps.
 
 ### ARM64 WDK Driver SxS Support
 
@@ -85,7 +85,7 @@ While the WDK install enables Spectre mitigation by default for all drivers, it 
 
 ### Error 'A WDK corresponding to target '10.0.19041.0' wasn't found.'
 
-When selecting Windows SDK Version to '10.0 (latest installed version)' with WDK 10.0.19041.0 causes the "A WDK corresponding to target version '10.0.19041.0' wasn't found" error even if the SDK version is installed.
+Selecting Windows SDK Version to '10.0 (latest installed version)' with WDK 10.0.19041.0 causes the "A WDK corresponding to target version '10.0.19041.0' wasn't found" error even if the SDK version is installed.
 
 **Workaround:** In the properties page for the driver project (Configuration Properties >General) set Windows SDK Version to $(LatestTargetPlatformVersion). If this option isn't available to select then select the option **inherit from parent or project default**.
 
