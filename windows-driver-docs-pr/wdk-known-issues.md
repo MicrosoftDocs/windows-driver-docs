@@ -6,7 +6,7 @@ keywords:
 - WDK
 - drivers
 - known issues
-ms.date: 12/17/2025
+ms.date: 01/13/2026
 ms.topic: troubleshooting-known-issue
 ---
 
@@ -22,10 +22,12 @@ Driver testing in Visual Studio is supported starting with Visual Studio 2022 
 
 ## WDK for Windows 11, version 25H2
 
-The following WDF versions are removed from WDK. Existing driver project using those WDF version will fail to build.
-* KMDF version 1.9, 1.11, 1.13
-* UMDF version 2.0
-Please either update the project to WDF version 15 or above; or use an older WDK.
+The following WDF versions are removed from WDK. Existing driver projects using these WDF versions fail to build:
+
+- KMDF version 1.9, 1.11, 1.13
+- UMDF version 2.0
+
+Either update the project to WDF version 15 or above, or use an older version of the WDK.
 
 ## WDK for Windows 11, version 24H2
 
@@ -35,7 +37,7 @@ Starting with Windows 11, version 24H2, the WDK no longer supports x86 kernel-mo
 
 ### Restart after provisioning
 
-After provisioning and deployment, the target machine fails to restart after the deployment steps.
+The target machine fails to restart after provisioning and deployment.
 
 ### ARM64 WDK Driver SxS Support
 
@@ -71,7 +73,7 @@ To fix this problem, before installing Windows 11, version 22H2 WDK, back up the
 
 ### Issue in ExAllocatePoolZero, ExAllocatePoolQuotaZero, and ExAllocatePoolPriorityZero functions FIXED
 
-In May 2020, [OSR](https://www.osr.com/) discovered an issue with the new down-level support for automatic zeroing of pool allocations. The issue could cause an allocation to not get zero-initialized on systems running Windows 10, version 1909. This was fixed with a security refresh of the WDK for Windows 10, version 2004 and the Enterprise WDK (EWDK) for Windows 10, version 2004 on Dec 16. Microsoft took advantage of the security refresh and updated the EWDK to include the Visual Studio build tools 16.7. Microsoft recommends all driver developers uninstall the original SDK and WDK (version 2004) and install the refresh SDK and WDK or EWDK.
+In May 2020, [OSR](https://www.osr.com/) discovered an issue with the new down-level support for automatic zeroing of pool allocations. The issue could cause an allocation to not get zero-initialized on systems running Windows 10, version 1909. This was fixed with a security refresh of the WDK for Windows 10, version 2004 and the Enterprise WDK (EWDK) for Windows 10, version 2004 on December 16. Microsoft took advantage of the security refresh and updated the EWDK to include the Visual Studio build tools 16.7. Microsoft recommends all driver developers uninstall the original SDK and WDK (version 2004) and install the refresh SDK and WDK or EWDK.
 
 To ensure there was a complete security solution in place, an OS fix was released for Windows 10, version 1909 in November, so if there was a driver created with the security issue the OS would be protected from it.
 
@@ -83,7 +85,7 @@ While the WDK install enables Spectre mitigation by default for all drivers, it 
 
 ### Error 'A WDK corresponding to target '10.0.19041.0' wasn't found.'
 
-When selecting [Windows SDK Version] to '10.0 (latest installed version)' with WDK 10.0.19041.0 causes the "A WDK corresponding to target version '10.0.19041.0' wasn't found" error even if the SDK version is installed.
+When selecting Windows SDK Version to '10.0 (latest installed version)' with WDK 10.0.19041.0 causes the "A WDK corresponding to target version '10.0.19041.0' wasn't found" error even if the SDK version is installed.
 
 **Workaround:** In the properties page for the driver project (Configuration Properties >General) set Windows SDK Version to $(LatestTargetPlatformVersion). If this option isn't available to select then select the option **inherit from parent or project default**.
 
@@ -97,7 +99,7 @@ When attempting to create a Driver Verification Log (DVL), the following error i
 
 ```console
 Unhandled Exception: System.IO.FileNotFoundException.
-Could not load file or assembl.
+Could not load file or assemble.
 'System.Runtime, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
 or one of its dependencies.
 The system cannot find the file specified.
