@@ -25,7 +25,7 @@ typedef union _FLT_PARAMETERS {
   ...    ;
   struct {
     FS_FILTER_SECTION_SYNC_TYPE SyncType;
-    ULONG POINTER_ALIGNMENT     PageProtection;
+    ULONG                       PageProtection;
     PFS_FILTER_SECTION_SYNC_OUTPUT OutputInformation;
   } AcquireForSectionSynchronization;
   ...    ;
@@ -67,3 +67,4 @@ For more information about FSFilter callback operations, see the reference entry
 [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
 
 [**FsRtlRegisterFileSystemFilterCallbacks**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlregisterfilesystemfiltercallbacks)
+
