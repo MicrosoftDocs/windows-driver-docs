@@ -12,6 +12,48 @@ ms.topic: release-notes
 
 This article provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
+## Version 1.2601.12001.0
+
+### General UI Improvements
+
+- Upgraded to .NET 10
+- Upgraded Script Window to use the latest Monaco editor (0.55.1)
+- Added Undo/Redo buttons to Script ribbon tab
+- Improved focus during keyboard navigation between tool windows
+- Fixed minor issues with scrolling and selection in Disassembly window
+- Fixed issue where registers window would show different values than register command
+- Fixed several high DPI issues
+- Check and report debugger age with warning if "too old"
+- Fixed a crash when graph mode selected in Model window opened for a blank query
+- Implemented crash-safe logs for WinDbg
+
+### Debugging Engine Improvements
+
+- Improved performance of symbol name lookups that are not present (particularly for DWARF and other plug-ins)
+- Added null check on OnTargetCompositionEvent handlers
+- Enabled pointer-tag mask reading
+
+### Time Travel Debugging (TTD)
+
+- TTD version 1.11.567 -> 1.11.584
+- Several improvements to increase performance and robustness of indexing including 5x speed up for large (100+ GB) traces.
+- Fixed customer-reported issue: accessing the TEB via segment register, using 32-bit addresses, works. (1.11.572)
+- More accurate callstacks around syscalls. (1.11.582)
+
+### Bug Fixes
+
+- Fixed "type information not found" errors due to improperly handled complex locations
+- Resolved console debugger line termination issues with redirected I/O and non-Unicode characters
+- Fixed CPR/EPR event filtering on Linux
+- Fixed missing function labels in disassembly view for Linux
+- Fixed import functions resolution on Linux binaries compiled with CET
+- Fixed unresolved breakpoints causing live Linux debug sessions to become unusable after module load
+- Fixed thread local variables not viewable on Linux when connected via GDBServer
+- Fixed ELF Image page overlay crash when underlying target's memory service doesn't implement memory information
+- Fixed variadic print functions crash in debugger due to improper format parameter usage
+- Fixed inconsistency in handling long, unsigned long, and wchar_t on UNIX variant OSes (LLP64 v. LP64)
+- Fixed deadlock when waiting on cleanup thread during debugger shutdown
+
 ## 1.2511.21001.0
 
 ### New features
