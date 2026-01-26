@@ -283,6 +283,7 @@ Examples of acceptable “Other”
 ### Partner Submission Checklist
 
 Before submitting, partners should ensure:
+
 ✔ A valid justification JSON has been generated
 
 Use DriverExceptionDocGenerator to generate the JSON file.
