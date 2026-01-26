@@ -121,7 +121,7 @@ The justification JSON must follow the schema provided (omitted here for brevity
 - Driver version
 - Overview of changes
 
-### Submission Type
+### Submission Types
 
 - NewDriver
 - DriverUpdate
