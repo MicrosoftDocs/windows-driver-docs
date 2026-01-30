@@ -1,5 +1,5 @@
 ---
-title: MJPEG At-Source Auto-Decode for USB Video Class (UVC)
+title: MJPEG At-Source Autodecode for USB Video Class (UVC)
 description: Learn how to autodecode compressed MJPEG samples.
 ms.date: 01/29/2026
 ms.topic: concept-article
@@ -7,11 +7,7 @@ ms.topic: concept-article
 
 # MJPEG at-source autodecode for USB video class (UVC)
 
-Most UVC (USB) based cameras use MJPEG compression to efficiently transfer high-resolution video over USB bandwidth. However, various components in the pipeline must decode MJPEG compressed samples before they can use video or image processing algorithms.
-
-Traditionally, each component's developers must duplicate the MJPEG decoding process throughout the stack. They must also handle quirks specific to different GPU hardware and MJPEG streams.
-
-This feature resolves these issues by handling decoding of MJPEG samples in the OS pipeline.
+Most UVC-based cameras use MJPEG compression to efficiently transfer high-resolution video over USB bandwidth. However, various components in the pipeline must decode MJPEG compressed samples before they can use video or image processing algorithms. Traditionally, each component's developers must duplicate the MJPEG decoding process throughout the stack. They must also handle quirks specific to different GPU hardware and MJPEG streams. This feature resolves these issues by handling decoding of MJPEG samples in the OS pipeline.
 
 This feature also helps you avoid multiple decoding of the same sample in various parts of the pipeline when video processing is involved. For example, when the platform Device Media Foundation Transform (DMFT) processes face detection, it decodes the MJPEG samples, and then the app decodes the samples again. Also, various DMFTs that require access to image data decode the sample again at various stages.
 
@@ -41,7 +37,7 @@ In this scenario, the developer already has:
 
     ***OR***
 
-- A single custom DMFT specified using `CameraDeviceMftClsid` on the camera device interface registry key.
+- A single custom DMFT specified using CameraDeviceMftClsid on the camera device interface registry key.
 
 After you opt in to the MJPEG autodecode pipeline, the MJPEG decoder is inserted as the first component in the chain, and subsequent DMFT gets existing non-MJPEG MediaTypes and translated/decoded MediaTypes at their input.
 
@@ -55,7 +51,7 @@ In this scenario, the developer already has a:
 
     ***OR***
 
-- A single custom DMFT specified using `CameraDeviceMftClsid` on the camera device interface registry key along with "EnablePlatformDmft" REG_DWORD 1.
+- A single custom DMFT specified using CameraDeviceMftClsid on the camera device interface registry key along with "EnablePlatformDmft" REG_DWORD 1.
 
 After you opt in to the MJPEG autodecode pipeline, the MJPEG decoder functionality is combined into the first component in the chain (PDMFT). Subsequent DMFT gets existing non-MJPEG MediaTypes and translated/decoded MediaTypes at their input.
 
@@ -87,7 +83,7 @@ After you opt in to the MJPEG autodecode pipeline, the MJPEG decoder functionali
 
 ### INF method
 
-If an extension INF or custom INF is shipped for the camera, the opt-in can be achieved via the interface section of the driver INF. Then interface registry entry to be added is MJPGTranslationSubType with a REG_SZ type and the valid/supported values are `NV12` or `YUY2`.
+If an extension INF or custom INF is shipped for the camera, the opt-in can be achieved via the interface section of the driver INF. Then interface registry entry to be added is MJPGTranslationSubType with a REG_SZ type and the valid/supported values are *NV12* or *YUY2*.
 
 `MJPGTranslationSubType REG_SZ "NV12"`
 
@@ -97,15 +93,15 @@ This entry must be added to all video capture interfaces that are being register
 
 ```inf
 ; These are parts of custom inf or extention inf demonstrating the opt-in
-\[USBVideoExt.NT.Interfaces]
+[USBVideoExt.NT.Interfaces]
 AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,USBVideoExt.Interface
 AddInterface=%KSCATEGORY_VIDEO%,GLOBAL,USBVideoExt.Interface
 AddInterface=%KSCATEGORY_VIDEO_CAMERA%,GLOBAL,USBVideoExt.Interface
 
-\[USBVideoExt.Interface]
+[USBVideoExt.Interface]
 AddReg=USBVideoExt.Interface.AddReg
 
-\[USBVideoExt.Interface.AddReg]
+[USBVideoExt.Interface.AddReg]
 HKR,, MJPGTranslationSubType,,"NV12"
 ;... other interface registry entries
 ;
@@ -121,7 +117,7 @@ MJPEG autodecode can be opted-in by publishing MSOS descriptors.
 MS OS Descriptor 1.0 has two components:
 
 - A fixed-length header section
-- One or more variable length custom properties sections, which follows the header section.
+- One or more variable length custom properties sections following the header section
 
 ##### Header Section
 
@@ -142,9 +138,13 @@ MS OS Descriptor 1.0 has two components:
 | 6 | **wPropertyNameLength** | 0x0036 | The length of the property name. 54 bytes |
 | 8 | **PropertyName** | 55 00 56 00 43 00 2d 00 4d 00 4a 00 50 00 47 00 54 00 72 00 61 00 6e 00 73 00 6c 00 61 00 74 00 69 00 6f 00 6e 00 53 00 75 00 62 00 54 00 79 00 70 00 65 00 00 00 | The name of registry property in Unicode format. "UVC-MJPGTranslationSubType". |
 | 62 | **wPropertyDataLength** | 0x000A | The length of property data. For currently supported subtypes, this shall be 10 bytes (4 wide-chars + wide-char null terminator) |
-| 64 | **PropertyData** | Variable | Property data indicating preferred subtype as a null-terminated Unicode string |
+| 64 | **PropertyData** | Variable | Property data indicating preferred subtype as a null-terminated Unicode string. For more information, see [Valid values for PropertyData](#valid-values-for-propertydata). |
+
+###### Valid values for PropertyData
+
+| Value | Preferred subtype |
+|--|--|
 | 4e 00 56 00 31 00 32 00 00 00 | "NV12" |
-| OR |
 | 59 00 55 00 59 00 32 00 00 00 | "YUY2" |
 
 ##### Example
@@ -205,11 +205,11 @@ UCHAR Example_MSOS20DescriptorSetForMJPEGAutoDecodeToNV12\[0x54] =
 
 ### Backward Compatibility
 
-This feature isn't available on older versions of Windows, including all versions of Windows 10 and Windows 11 versions 21H2 and 22H2. On these versions, MJPEG MediaTypes aren't automatically decoded. The MJPEG MediaTypes remain available to all components in the pipeline and to applications.
+This feature isn't available on older versions of Windows, including all versions of Windows 10 and Windows 11 versions 21H2 and 22H2. On these versions, MJPEG MediaTypes aren't automatically decoded. The MJPEG MediaTypes remain available to all components in the pipeline, and to applications.
 
-In order to maintain backward compatibility with older OS versions:
+In order to maintain backward compatibility with older Windows versions:
 
-1. For IHVs shipping without an INF and relying on MSOS descriptors for this feature, need not take any extra steps for backward compatibility. The inbox UVC driver and pipeline components work as expected on an older OS. Applications continue to see all MediaTypes supported by the camera (including MJPEG) as available on these operating systems.
+1. For IHVs shipping without an INF and relying on MSOS descriptors for this feature, no extra steps are needed for backward compatibility. The inbox UVC driver and pipeline components work as expected on older operating systems. Applications continue to see all MediaTypes supported by the camera (including MJPEG) as available on older versions of Windows.
 
 1. For OEMs and IHVs shipping with an INF and custom DMFTs:
 
