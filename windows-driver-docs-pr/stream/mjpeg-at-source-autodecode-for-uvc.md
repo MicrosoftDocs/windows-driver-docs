@@ -1,17 +1,17 @@
 ---
-title: MJPEG At-Source Autodecode for USB Video Class (UVC)
+title: MJPEG At Source Autodecode for USB Video Class (UVC)
 description: Learn how to autodecode compressed MJPEG samples.
 ms.date: 01/29/2026
 ms.topic: concept-article
 ---
 
-# MJPEG at-source autodecode for USB video class (UVC)
+# MJPEG at source autodecode for USB video class (UVC)
 
 Most UVC-based cameras use MJPEG compression to efficiently transfer high-resolution video over USB bandwidth. However, various components in the pipeline must decode MJPEG compressed samples before they can use video or image processing algorithms. Traditionally, each component's developers must duplicate the MJPEG decoding process throughout the stack. They must also handle quirks specific to different GPU hardware and MJPEG streams. This feature resolves these issues by handling decoding of MJPEG samples in the OS pipeline.
 
 This feature also helps you avoid multiple decoding of the same sample in various parts of the pipeline when video processing is involved. For example, when the platform Device Media Foundation Transform (DMFT) processes face detection, it decodes the MJPEG samples, and then the app decodes the samples again. Also, various DMFTs that require access to image data decode the sample again at various stages.
 
-## Feature Description
+## Feature description
 
 You opt in to this feature by using the camera driver installation information (INF) file or firmware (Microsoft OS (MSOS) descriptors). When enabled, the pipeline autodecodes MJPEG MediaTypes at source, which is after the UVC driver and before the DMFT chain. The MJPEG MediaTypes are hidden from the rest of the pipeline. They're replaced with uncompressed MediaTypes of equivalent resolution and framerate.
 
@@ -128,7 +128,7 @@ MS OS Descriptor 1.0 has two components:
 | 4 | **dwWindowsVersion** | 0x0A00000D | Windows version. Version for cu release |
 | 8 | **wTotalLength** | 0x0054 | The size of entire MS OS 2.0 descriptor set. Shall be set to 84 bytes for currently supported values of subtypes |
 
-##### Custom Property Section
+##### Custom property section
 
 | Offset | Field | Value | Description |
 |---|---|---|---|
@@ -203,7 +203,7 @@ UCHAR Example_MSOS20DescriptorSetForMJPEGAutoDecodeToNV12\[0x54] =
 }
 ```
 
-### Backward Compatibility
+### Backward compatibility
 
 This feature isn't available on older versions of Windows, including all versions of Windows 10 and Windows 11 versions 21H2 and 22H2. On these versions, MJPEG MediaTypes aren't automatically decoded. The MJPEG MediaTypes remain available to all components in the pipeline, and to applications.
 

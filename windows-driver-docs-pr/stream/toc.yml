@@ -100,7 +100,7 @@
     href: camera-driver-inf-file-class-setting.md
   - name: Driver support for Camera UVC Control Cache
     href: camera-device-uvc-control-cache.md
-  - name: MJPEG At-Source Autodecode for UVC
+  - name: MJPEG at source autodecode for UVC
     href: mjpeg-at-source-autodecode-for-uvc.md
 - name: Windows Hello Camera driver bring up guide
   href: windows-hello-camera-driver-bring-up-guide.md
