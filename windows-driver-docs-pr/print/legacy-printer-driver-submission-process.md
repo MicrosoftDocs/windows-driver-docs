@@ -346,3 +346,268 @@ Attestation Example
 3       ├─ DriverException.json
 
 4       └─ SupportingDocument.docx
+
+## Schema
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://microsoft.com/schemas/driver-exception-document.json",
+  "title": "Driver Exception Document",
+  "description": "Schema for driver exception requests for deprecated V3/V4 printer drivers",
+  "type": "object",
+  "required": [
+    "Version",
+    "SubmissionDate",
+    "PartnerInformation",
+    "DriverDetails",
+    "SubmissionType",
+    "ExceptionJustification"
+  ],
+  "properties": {
+    "Version": {
+      "type": "string",
+      "description": "Schema version number",
+      "const": "1.0"
+    },
+    "SubmissionDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of submission (UTC)",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
+    },
+    "PartnerInformation": {
+      "type": "object",
+      "description": "Partner contact information",
+      "required": [
+        "CompanyName",
+        "ContactName",
+        "ContactEmail"
+      ],
+      "properties": {
+        "CompanyName": {
+          "type": "string",
+          "description": "Partner company name",
+          "minLength": 1
+        },
+        "ContactName": {
+          "type": "string",
+          "description": "Contact person name",
+          "minLength": 1
+        },
+        "ContactEmail": {
+          "type": "string",
+          "format": "email",
+          "description": "Contact email address",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "DriverDetails": {
+      "type": "object",
+      "description": "Driver package details",
+      "required": [
+        "TargetModels",
+        "Architectures",
+        "DriverVersion",
+        "ChangeOverview"
+      ],
+      "properties": {
+        "TargetModels": {
+          "type": "array",
+          "description": "List of target printer models",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "Architectures": {
+          "type": "array",
+          "description": "Architectures targeted by the driver package",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": ["x86", "x64", "arm64"],
+            "description": "Architecture (x64 also accepts amd64 in input, normalized to x64)"
+          }
+        },
+        "DriverVersion": {
+          "type": "string",
+          "description": "Driver version number",
+          "minLength": 1
+        },
+        "ChangeOverview": {
+          "type": "string",
+          "description": "Overview of changes in this driver submission",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "SubmissionType": {
+      "type": "string",
+      "description": "Type of driver submission",
+      "enum": [
+        "NewDriver",
+        "DriverUpdate"
+      ]
+    },
+    "DriverUpdateDetails": {
+      "type": "object",
+      "description": "Additional details required for driver updates (required when SubmissionType is DriverUpdate)",
+      "required": [
+        "PreviousSubmissionId",
+        "AttestNoNewHardwareIds"
+      ],
+      "properties": {
+        "PreviousSubmissionId": {
+          "type": "string",
+          "description": "Previous submission identifier",
+          "minLength": 1
+        },
+        "AttestNoNewHardwareIds": {
+          "type": "boolean",
+          "description": "Attestation that no new hardware IDs are being added"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ExceptionJustification": {
+      "type": "object",
+      "description": "Justification for the driver exception",
+      "required": [
+        "ExceptionType",
+        "ImpactOnUsers"
+      ],
+      "properties": {
+        "ExceptionType": {
+          "type": "string",
+          "description": "Type of exception being requested",
+          "enum": [
+            "CannotSupportMopria",
+            "ARM64Addition",
+            "Windows10Only",
+            "FaxDriver",
+            "SecurityVulnerability",
+            "Other"
+          ]
+        },
+        "ImpactOnUsers": {
+          "type": "string",
+          "description": "Description of impact on end users",
+          "minLength": 1
+        },
+        "CustomJustification": {
+          "type": "string",
+          "description": "Custom justification (required when ExceptionType is Other)",
+          "minLength": 1
+        },
+        "SecurityDetails": {
+          "type": "object",
+          "description": "Security vulnerability details (required when ExceptionType is SecurityVulnerability)",
+          "required": [
+            "CveReference"
+          ],
+          "properties": {
+            "CveReference": {
+              "type": "string",
+              "description": "CVE reference identifier",
+              "pattern": "^CVE-\\d{4}-\\d{4,}$"
+            },
+            "VulnerabilityDescription": {
+              "type": "string",
+              "description": "Detailed description of the vulnerability"
+            }
+          },
+          "additionalProperties": false
+        },
+        "MopriaDetails": {
+          "type": "object",
+          "description": "Mopria exception details (required when ExceptionType is CannotSupportMopria)",
+          "required": [
+            "TechnicalReason",
+            "FutureRoadmap"
+          ],
+          "properties": {
+            "TechnicalReason": {
+              "type": "string",
+              "description": "Technical reason why Mopria cannot be supported",
+              "minLength": 1
+            },
+            "FutureRoadmap": {
+              "type": "string",
+              "description": "Future roadmap for Mopria support",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "ExceptionType": {
+                "const": "Other"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "CustomJustification"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "ExceptionType": {
+                "const": "SecurityVulnerability"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "SecurityDetails"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "ExceptionType": {
+                "const": "CannotSupportMopria"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "MopriaDetails"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "SubmissionType": {
+            "const": "DriverUpdate"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "DriverUpdateDetails"
+        ]
+      }
+    }
+  ]
+}
+```
