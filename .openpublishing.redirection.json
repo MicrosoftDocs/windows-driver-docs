@@ -6126,6 +6126,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows-driver-docs-pr/wdf/writing-a-simple-kmdf-driver.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/components-of-a-simple-kmdf-driver",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows-driver-docs-pr/wdf/using-i-o-targets.md",
       "redirect_URL": "/windows-hardware/drivers/wdf/introduction-to-i-o-targets",
       "redirect_document_id": false

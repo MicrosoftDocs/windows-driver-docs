@@ -12,8 +12,8 @@
     href: framework-library-versioning.md
   - name: WDF Architecture
     href: kernel-mode-driver-framework-architecture.md
-  - name: Writing a Simple WDF Driver
-    href: writing-a-simple-kmdf-driver.md
+  - name: Components of a Simple WDF Driver
+    href: components-of-a-simple-kmdf-driver.md
   - name: DriverEntry for WDF Drivers routine
     href: driverentry-for-kmdf-drivers.md
   - name: WDFDEVICE_INIT

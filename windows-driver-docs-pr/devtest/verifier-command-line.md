@@ -417,7 +417,7 @@ Activates the specified options after the next reboot. This number can be entere
 <td align="left"><p>262144</p></td>
 <td align="left"><p>0x40000 (bit 18)</p></td>
 <td align="left"></td>
-<td align="left"><p><a href="systematic-low-resource-simulation.md" data-raw-source="[Systematic low resources simulation](systematic-low-resource-simulation.md)">Systematic low resources simulation</a> (Starting with Windows 8.1) <b>(Deprecated in Windows 10 Build 19042 and above)</b></p></td>
+<td align="left"><p><a href="systematic-low-resource-simulation.md" data-raw-source="[Systematic low resources simulation](systematic-low-resource-simulation.md)">Systematic low resources simulation</a> (Starting with Windows 8.1)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>524288</p></td>

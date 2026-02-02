@@ -37,8 +37,8 @@ Each registration file must contain the following required JSON properties:
 | Key | Type | Description |
 |--|--|--|
 | PFN | String | The Package Family Name of the app (Example: Microsoft.WindowsStore_8wekyb3d8bbwe) |
-| OEMName | String | String to represent the OEM creating this registration |
-| UpdaterName | String | Unique name to track this expedited registration |
+| OEMName | String | String to represent the OEM creating this registration.<br><br>Must contain only alphanumeric characters, underscores, and hyphens. |
+| UpdaterName | String | Unique name to track this expedited registration.<br><br>Must contain only alphanumeric characters, underscores, and hyphens. |
 | RegistrationVersion | Number | The version of this app registration |
 | Source | String | Allowed values:<br><br>Store &#124; CustomURL<br><br>Store - searches for the app directly from the Microsoft Store<br><br>CustomURL - searches for the app from a URL specified in the app registration's "Endpoint" value |
 | Scenario | String | Allowed values:<br><br>Update &#124; Acquisition &#124; StubAcquisition<br><br>Update - (Not supported for CustomURL flows) attempts to update an existing app to its latest available version. No work is done if the app isn't present<br><br>Acquisition - attempts to acquire the latest version of an app.<br><br>StubAcquisition - attempts to acquire a "stub" of the app (if it's available). Acquires the full app if the stub isn't available. |
