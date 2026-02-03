@@ -1,5 +1,7 @@
 - name: Printer driver design guide
   href: index.md
+- name: Legacy Printer Driver Submission Process
+  href: legacy-printer-driver-submission-process.md
 - name: End of servicing plan for third-party printer drivers on Windows
   href: end-of-servicing-plan-for-third-party-printer-drivers-on-windows.md
 - name: V4 Printer Drivers
