@@ -86,7 +86,7 @@ Existing driver updates are only signed and published if they:
 
 ### DriverExceptionDocGenerator Tool (Coming Soon)
 
-The justification document must follow the [schema provided.](#Schema) In the future, Microsoft will provide a dedicated tool to help partners prepare the justification JSON. This tool, named **DriverExceptionDocGenerator**, will be available as a command‑line utility and will guide partners through the process of generating a valid justification document.
+The justification document must follow the [schema provided.](#schema) In the future, Microsoft will provide a dedicated tool to help partners prepare the justification JSON. This tool, named **DriverExceptionDocGenerator**, will be available as a command‑line utility and will guide partners through the process of generating a valid justification document.
 
 #### Tool Capabilities
 
