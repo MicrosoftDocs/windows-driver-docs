@@ -23,5 +23,5 @@ The following articles describe the NDIS SR-IOV interface and the techniques for
 
 - [SR-IOV object identifiers](sr-iov-oids.md)
 
-For more information on SR-IOV, see the [PCI-SIG single root I/O virtualization and sharing](https://pcisig.com/specifications/iov/single_root) specification.
+For more information on SR-IOV, see the [PCI-SIG single root I/O virtualization and sharing](https://pcisig.com/PCIExpress/Specs/IOV/SingleRootIOVirtualizationandSharing_1.1) specification.
 
