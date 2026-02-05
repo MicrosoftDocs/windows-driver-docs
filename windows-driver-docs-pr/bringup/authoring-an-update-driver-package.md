@@ -153,7 +153,8 @@ The steps to self-sign the driver package for test purposes are enumerated below
 
     `%WindowsSdkDir%\bin\<version>\x86` (or `x64`)
 
-    > Note: The exact SDK version folder and the set of available tools depend on the installed Windows SDK/WDK components.
+    > [!NOTE]
+    > The exact SDK version folder and the set of available tools depend on the installed Windows SDK/WDK components.
 
 1. Run the following command to create a test certificate.
 
