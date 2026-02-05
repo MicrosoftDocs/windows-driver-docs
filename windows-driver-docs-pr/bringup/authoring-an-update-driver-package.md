@@ -144,7 +144,17 @@ Once the driver package INF file and firmware payload binary are ready, the enti
 
 The steps to self-sign the driver package for test purposes are enumerated below. Please note that these steps are for test purposes only. In production, firmware update driver packages must be submitted to the Partner Center for signing. For the steps to sign a firmware driver package for production see [Certifying and signing the update package](certifying-and-signing-the-update-package.md).
 
-1. Install the latest Windows SDK and Windows Driver Kit. This will install the makecert, pvk2pfx inf2cat and signtool tools under `%systemdir%\Program Files (x86)\Windows Kits\<*version*>\bin\x86`.
+1. Install the latest Windows SDK and Windows Driver Kit (WDK).
+
+    - The Windows SDK installs tools such as `makecert`, `pvk2pfx`, and `signtool`.
+    - The Windows Driver Kit (WDK) installs driver-specific tools such as `Inf2Cat`.
+
+    You can typically find these tools under the Windows Kits installation directory, for example:
+
+    `%WindowsSdkDir%\bin\<version>\x86` (or `x64`)
+
+    > [!NOTE]
+    > The exact SDK version folder and the set of available tools depend on the installed Windows SDK/WDK components.
 
 1. Run the following command to create a test certificate.
 
