@@ -38,6 +38,7 @@ The following tables summarize the available command-line options.
 
 |       Option       |                                                                      Description                                                                      |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `-d` | After a reboot, the debugger will break into the target computer as soon as a kernel module is loaded. |
 | `-k \[ConnectType\]` | Starts a kernel debugging session. If **-k** is used without any *ConnectType* options following it, it must be the final entry on the command line. |
 |        `-kqm`        | Starts KD in quiet mode.                                                                |
 |        `-kl`         | Starts a kernel debugging session on the same machine as the debugger.                                         |
