@@ -24,7 +24,12 @@ Inf2Cat (Inf2Cat.exe) is a command-line tool that determines whether a [driver p
     WindowsVersionList [/nocat] [/verbose] [/?] [other switches]
 ```
 
-The Inf2Cat tool is located in the Program Files\\Windows Kits\\8.0\\bin\\x86 or Program Files (x86)\\Windows Kits\\8.0\\bin\\x86 folder of the WDK.
+The Inf2Cat tool is installed with the Windows Driver Kit (WDK). You can typically
+find it under the Windows Kits installation directory, for example:
+
+`%WindowsSdkDir%\bin\<version>\x86` (or `x64`)
+
+> Note: The exact SDK version folder depends on the installed Windows SDK/WDK components.
 
 ## Troubleshooting
 
