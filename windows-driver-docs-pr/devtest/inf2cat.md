@@ -29,7 +29,8 @@ find it under the Windows Kits installation directory, for example:
 
 `%WindowsSdkDir%\bin\<version>\x86` (or `x64`)
 
-> Note: The exact SDK version folder depends on the installed Windows SDK/WDK components.
+> [!Note]
+> The exact SDK version folder depends on the installed Windows SDK/WDK components.
 
 ## Troubleshooting
 
