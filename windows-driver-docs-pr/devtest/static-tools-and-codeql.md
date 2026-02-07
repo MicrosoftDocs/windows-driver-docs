@@ -136,7 +136,7 @@ Select the tab for your build environment:
 
 ## [VS 17.8 or greater and CodeQL 2.15.4 or later](#tab/latest)
 
-Use this procedure if you're using Visual Studio 2022 17.8 or greater for 21H2 or later and CodeQL CLI version 2.15.4 or later.
+Use this procedure if you're using Visual Studio 2022 17.8 or greater for WHCP certification for 21H2 or later and CodeQL CLI version 2.15.4 or later.
 
 > [!NOTE]
 > If you ran CodeQL tests with an earlier version of CodeQL, make sure to remove the old CodeQL submodule if you still have an old version of the cloned repo. CodeQL might try to use the queries in the submodule by default, which may cause errors because of mismatched versions.
