@@ -4,13 +4,19 @@ description: Learn about CodeQL queries and suites for testing Windows driver so
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 05/13/2025
+ms.date: 02/06/2026
 ms.topic: concept-article
 ---
 
 # CodeQL Queries and Suites for Windows Driver Testing
 
-The [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/windows-driver-suites) offers two query suites to simplify Windows driver development and ensure compliance with the Windows Hardware Compatibility Program (WHCP). The *recommended.qls* suite includes all recommended queries for driver developers, while the *mustfix.qls* suite focuses on "Must-Fix" queries required for WHCP certification. Both suites are updated regularly.
+The [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/windows-driver-suites)  provides three query suites to simplify the end-to-end driver developer workflow. These suites are included in the microsoft/windows-drivers CodeQL pack.
+
+- *recommended.qls* contains queries recommended for driver developers to run and evaluate the results of.  We recommend running this suite by default and reviewing results.
+- *mustrun.qls* serves as a subset of the above and contains queries that **must be run** in order to pass WHCP certification.  These queries may not necessarily need to be fixed due to potential false positives, but should have their results reviewed and any real bugs found fixed.  A DVL generated without results for these checks will fail the Static Tools Logo test.
+- *mustfix.qls* serves as a further subset and contains queries that report issues that **must be fixed** in order to pass WHCP certification.  A DVL generated with failures in these rules will not pass the Static Tools Logo test.
+
+For details of the contents of the query suites, see [CodeQL Queries and Suites](../devtest/codeql-queries.md).
 
 ### Must-Fix queries for WCHP certification
 
@@ -34,39 +40,45 @@ The *mustfix.qls* file includes the following **Must-Fix** code queries.
 
 - description: Security queries required to fix when certifying Windows Drivers
 - queries: .
-  from: codeql/cpp-queries
-  version: 0.9.0
+  from: microsoft/windows-drivers
 - include:
-    query path:
+    query path: 
+      - drivers/general/queries/WdkDeprecatedApis/wdk-deprecated-api.ql
+      - drivers/general/queries/ExtendedDeprecatedApis/ExtendedDeprecatedApis.ql
+      - microsoft/Security/CWE/CWE-704/WcharCharConversionLimited.ql
+- queries: . 
+  from: microsoft/cpp-queries 
+  version: 0.0.4
+- include:
+    query path: 
       - Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql
+      - Likely Bugs/Format/WrongNumberOfFormatArguments.ql
       - Likely Bugs/Memory Management/PointerOverflow.ql
+      - Likely Bugs/Memory Management/SuspiciousCallToStrncat.ql
+      - Likely Bugs/OO/UnsafeUseOfThis.ql
+      - Likely Bugs/Protocols/TlsSettingsMisconfiguration.ql
+      - Likely Bugs/Protocols/UseOfDeprecatedHardcodedProtocol.ql
       - Likely Bugs/Underspecified Functions/TooFewArguments.ql
+      - Microsoft/Likely Bugs/Conversion/BadOverflowGuard.ql
+      - Microsoft/Likely Bugs/Drivers/IncorrectUsageOfRtlCompareMemory.ql
+      - Microsoft/Security/Cryptography/BannedEncryption.ql
+      - Microsoft/Security/Cryptography/BannedModesCAPI.ql
+      - Microsoft/Security/Cryptography/BannedModesCNG.ql
+      - Microsoft/Security/Cryptography/HardcodedIVCNG.ql
+      - Microsoft/Security/MemoryAccess/EnumIndex/UncheckedBoundsEnumAsIndex.ql
+      - Security/CWE/CWE-078/ExecTainted.ql
+      - Security/CWE/CWE-114/UncontrolledProcessOperation.ql
+      - Security/CWE/CWE-120/BadlyBoundedWrite.ql
+      - Security/CWE/CWE-120/OverrunWrite.ql
+      - Security/CWE/CWE-131/NoSpaceForZeroTerminator.ql
+      - Security/CWE/CWE-170/ImproperNullTerminationTainted.ql
       - Security/CWE/CWE-190/ComparisonWithWiderType.ql
       - Security/CWE/CWE-253/HResultBooleanConversion.ql
-- import: windows-driver-suites/windows_mustfix_partial.qls
-  from: microsoft/windows-drivers
-```
-
-This set of rules is included in *windows-driver-suites/windows_mustfix_partial.qls*.
-
-| ID                                                                                 | Location                                                                                     | [Common Weakness Enumeration](https://cwe.mitre.org/) |
-|------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [cpp/windows/wdk/deprecated-api](./codeql-windows-driver-wdkdeprecatedapi.md)      | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/WdkDeprecatedApis/wdk-deprecated-api.ql* | N/A                                                   |
-| [microsoft/Security/CWE/CWE-704/WcharCharConversionLimited](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/microsoft/Security/CWE/CWE-704/WcharCharConversionLimited.ql) | */microsoft/windows-drivers/`<Version>`/microsoft/Security/CWE/CWE-704/WcharCharConversionLimited.ql* | [CWE-704](https://cwe.mitre.org/data/definitions/704.html) |
-
-The *windows_mustfix_partial.qls* file includes the following **Must-Fix** code queries.
-
-```text
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT license.
-
-- description: Security queries required to fix when certifying Windows Drivers
-- queries: .
-  from: microsoft/windows-drivers
-- include:
-    query path:
-      - drivers/general/queries/WdkDeprecatedApis/wdk-deprecated-api.ql
-      - microsoft/Security/CWE/CWE-704/WcharCharConversionLimited.ql
+      - Security/CWE/CWE-327/OpenSslHeartbleed.ql
+      - Security/CWE/CWE-676/DangerousFunctionOverflow.ql
+      - Security/CWE/CWE-676/DangerousUseOfCin.ql
+      - Security/CWE/CWE-704/WcharCharConversion.ql 
+      - Security/CWE/CWE-732/UnsafeDaclSecurityDescriptor.ql
 ```
 
 ### Recommended Fix Queries
