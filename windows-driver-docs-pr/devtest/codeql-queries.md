@@ -6,6 +6,7 @@ keywords:
 - static verification tools WDK
 ms.date: 02/06/2026
 ms.topic: concept-article
+ai-usage: ai-assisted
 ---
 
 # CodeQL Queries and Suites for Windows Driver Testing
