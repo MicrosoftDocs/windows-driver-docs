@@ -36,34 +36,34 @@ This set of rules is included in *mustfix.qls*.
 
 | ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning |
 |---|---|---|
-| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Format/WrongNumberOfFormatArguments.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/PointerOverflow.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/SuspiciousCallToStrncat.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/OO/UnsafeUseOfThis.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Protocols/TlsSettingsMisconfiguration.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Protocols/UseOfDeprecatedHardcodedProtocol.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Underspecified Functions/TooFewArguments.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Microsoft/Likely Bugs/Conversion/BadOverflowGuard.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Microsoft/Likely Bugs/Drivers/IncorrectUsageOfRtlCompareMemory.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/BannedEncryption.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/BannedModesCAPI.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/BannedModesCNG.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/HardcodedIVCNG.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/MemoryAccess/EnumIndex/UncheckedBoundsEnumAsIndex.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-078/ExecTainted.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-114/UncontrolledProcessOperation.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-120/BadlyBoundedWrite.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-120/OverrunWrite.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-131/NoSpaceForZeroTerminator.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-170/ImproperNullTerminationTainted.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-190/ComparisonWithWiderType.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-253/HResultBooleanConversion.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-327/OpenSslHeartbleed.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-676/DangerousFunctionOverflow.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-676/DangerousUseOfCin.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-704/WcharCharConversion.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-732/UnsafeDaclSecurityDescriptor.ql* | TODO |
+| cpp/bad-addition-overflow-check | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql* | TODO |
+| cpp/wrong-number-format-arguments | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Format/WrongNumberOfFormatArguments.ql* | TODO |
+| cpp/pointer-overflow-check | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/PointerOverflow.ql* | TODO |
+| cpp/unsafe-strncat | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/SuspiciousCallToStrncat.ql* | TODO |
+| cpp/unsafe-use-of-this | */microsoft/cpp-queries/`<Version>`/Likely Bugs/OO/UnsafeUseOfThis.ql* | TODO |
+| cpp/boost/tls-settings-misconfiguration | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Protocols/TlsSettingsMisconfiguration.ql* | TODO |
+| cpp/boost/use-of-deprecated-hardcoded-security-protocol | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Protocols/UseOfDeprecatedHardcodedProtocol.ql* | TODO |
+| cpp/too-few-arguments | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Underspecified Functions/TooFewArguments.ql* | TODO |
+| cpp/microsoft/public/badoverflowguard | */microsoft/cpp-queries/`<Version>`/Microsoft/Likely Bugs/Conversion/BadOverflowGuard.ql* | TODO |
+| cpp/microsoft/public/drivers/incorrect-usage-of-rtlcomparememory | */microsoft/cpp-queries/`<Version>`/Microsoft/Likely Bugs/Drivers/IncorrectUsageOfRtlCompareMemory.ql* | TODO |
+| cpp/microsoft/public/weak-crypto/banned-encryption-algorithms | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/BannedEncryption.ql* | TODO |
+| cpp/microsoft/public/weak-crypto/capi/banned-modes | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/BannedModesCAPI.ql* | TODO |
+| cpp/microsoft/public/weak-crypto/cng/banned-modes | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/BannedModesCNG.ql* | TODO |
+| cpp/microsoft/public/weak-crypto/cng/hardcoded-iv | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/HardcodedIVCNG.ql* | TODO |
+| cpp/microsoft/public/enum-index | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/MemoryAccess/EnumIndex/UncheckedBoundsEnumAsIndex.ql* | TODO |
+| cpp/command-line-injection | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-078/ExecTainted.ql* | TODO |
+| cpp/uncontrolled-process-operation | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-114/UncontrolledProcessOperation.ql* | TODO |
+| cpp/badly-bounded-write | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-120/BadlyBoundedWrite.ql* | TODO |
+| cpp/overrunning-write | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-120/OverrunWrite.ql* | TODO |
+| cpp/no-space-for-terminator | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-131/NoSpaceForZeroTerminator.ql* | TODO |
+| cpp/user-controlled-null-termination-tainted | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-170/ImproperNullTerminationTainted.ql* | TODO |
+| cpp/comparison-with-wider-type | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-190/ComparisonWithWiderType.ql* | TODO |
+| cpp/hresult-boolean-conversion | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-253/HResultBooleanConversion.ql* | TODO |
+| cpp/openssl-heartbleed | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-327/OpenSslHeartbleed.ql* | TODO |
+| cpp/dangerous-function-overflow | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-676/DangerousFunctionOverflow.ql* | TODO |
+| cpp/dangerous-cin | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-676/DangerousUseOfCin.ql* | TODO |
+| cpp/incorrect-string-type-conversion | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-704/WcharCharConversion.ql* | TODO |
+| cpp/unsafe-dacl-security-descriptor | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-732/UnsafeDaclSecurityDescriptor.ql* | TODO |
 
 The *mustfix.qls* file includes the following **Must-Fix** code queries.
 
@@ -192,20 +192,20 @@ The *recommended.qls* suite includes all queries from the *mustfix.qls* suite (s
 
 | ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning |
 |---|---|---|
-| TODO | */microsoft/cpp-queries/`<Version>`/Best Practices/Likely Errors/OffsetUseBeforeRangeCheck.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/IntMultToLong.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/SignedOverflowCheck.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Conversion/CastArrayPointerArithmetic.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Likely Typos/IncorrectNotOperatorUsage.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/SuspiciousSizeof.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/UninitializedLocal.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-121/UnterminatedVarargsCall.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-468/SuspiciousAddWithSizeof.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-468/IncorrectPointerScaling.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-468/IncorrectPointerScalingVoid.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-676/PotentiallyDangerousFunction.ql* | TODO |
-| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-119/OverflowBuffer.ql* | TODO |
+| cpp/offset-use-before-range-check | */microsoft/cpp-queries/`<Version>`/Best Practices/Likely Errors/OffsetUseBeforeRangeCheck.ql* | TODO |
+| cpp/integer-multiplication-cast-to-long | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/IntMultToLong.ql* | TODO |
+| cpp/signed-overflow-check | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/SignedOverflowCheck.ql* | TODO |
+| cpp/upcast-array-pointer-arithmetic | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Conversion/CastArrayPointerArithmetic.ql* | TODO |
+| cpp/incorrect-not-operator-usage | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Likely Typos/IncorrectNotOperatorUsage.ql* | TODO |
+| cpp/suspicious-sizeof | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/SuspiciousSizeof.ql* | TODO |
+| cpp/uninitialized-local | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/UninitializedLocal.ql* | TODO |
+| cpp/unterminated-variadic-call | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-121/UnterminatedVarargsCall.ql* | TODO |
+| cpp/conditionally-uninitialized-variable | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql* | TODO |
+| cpp/suspicious-add-sizeof | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-468/SuspiciousAddWithSizeof.ql* | TODO |
+| cpp/suspicious-pointer-scaling | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-468/IncorrectPointerScaling.ql* | TODO |
+| cpp/suspicious-pointer-scaling-void | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-468/IncorrectPointerScalingVoid.ql* | TODO |
+| cpp/potentially-dangerous-function | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-676/PotentiallyDangerousFunction.ql* | TODO |
+| cpp/overflow-buffer | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-119/OverflowBuffer.ql* | TODO |
 
 The *recommended.qls* file includes the following recommended code queries.
 
