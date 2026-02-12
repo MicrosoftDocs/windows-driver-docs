@@ -24,15 +24,46 @@ The following subset of queries are **Must-Fix** for WHCP certification and are 
 
 This set of rules is included in *mustfix.qls*.
 
-| ID                       | Location                                                                                     | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning                     |
-|--------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [cpp/drivers/wdk-deprecated-api](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/general/queries/WdkDeprecatedApis/wdk-deprecated-api.ql) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/WdkDeprecatedApis/wdk-deprecated-api.ql* | 
-| [cpp/drivers/extended-deprecated-apis](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/general/queries/ExtendedDeprecatedApis/ExtendedDeprecatedApis.ql) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/ExtendedDeprecatedApis.ql* | [C28719 Warning](28719-banned-api-usage-use-updated-function-replacement.md), [C28726 Warning](28726-banned-api-usage-use-updated-function-replacement.md), [C28735 Warning](28735-banned-crimson-api-usage.md), [C28750 Warning](28750-banned-istrlen-usage.md) |
-| [cpp/bad-addition-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-bad-addition-overflow-check/)     | *codeql/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql* | [CWE-190](https://cwe.mitre.org/data/definitions/190.html), [CWE-192](https://cwe.mitre.org/data/definitions/192.html) |
-| [cpp/pointer-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-pointer-overflow-check/)               | *codeql/cpp-queries/`<Version>`/Likely Bugs/Memory Management/PointerOverflow.ql*  | N/A                                                                       |
-| [cpp/too-few-arguments](https://codeql.github.com/codeql-query-help/cpp/cpp-too-few-arguments/)                         | *codeql/cpp-queries/`<Version>`/Likely Bugs/Underspecified Functions/TooFewArguments.ql* | N/A                                                                       |
-| [cpp/comparison-with-wider-type](https://codeql.github.com/codeql-query-help/cpp/cpp-comparison-with-wider-type/)       | *codeql/cpp-queries/`<Version>`/Security/CWE/CWE-190/ComparisonWithWiderType.ql*    | [CWE-190](https://cwe.mitre.org/data/definitions/190.html), [CWE-197](https://cwe.mitre.org/data/definitions/197.html), [CWE-835](https://cwe.mitre.org/data/definitions/835.html) |
-| [cpp/hresult-boolean-conversion](https://codeql.github.com/codeql-query-help/cpp/cpp-hresult-boolean-conversion/)       | *codeql/cpp-queries/`<Version>`/Security/CWE/CWE-253/HResultBooleanConversion.ql*   | [CWE-253](https://cwe.mitre.org/data/definitions/253.html)                |
+#### Must-Fix queries from the microsoft/windows-drivers pack
+
+| ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning |
+|---|---|---|
+| [cpp/drivers/wdk-deprecated-api](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/WdkDeprecatedApis/wdk-deprecated-api.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/WdkDeprecatedApis/wdk-deprecated-api.ql* | N/A |
+| [cpp/drivers/extended-deprecated-apis](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/ExtendedDeprecatedApis/ExtendedDeprecatedApis.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/ExtendedDeprecatedApis/ExtendedDeprecatedApis.ql* | [C28719 Warning](28719-banned-api-usage-use-updated-function-replacement.md), [C28726 Warning](28726-banned-api-usage-use-updated-function-replacement.md), [C28735 Warning](28735-banned-crimson-api-usage.md), [C28750 Warning](28750-banned-istrlen-usage.md) |
+| [cpp/incorrect-string-type-conversion-ignore-puchar-casts](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/microsoft/Security/CWE/CWE-704/WcharCharConversionLimited.md) | */microsoft/windows-drivers/`<Version>`/microsoft/Security/CWE/CWE-704/WcharCharConversionLimited.ql* | [CWE-704](https://cwe.mitre.org/data/definitions/704.html) |
+
+#### Must-Fix queries from the microsoft/cpp-queries pack
+
+| ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning |
+|---|---|---|
+| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Format/WrongNumberOfFormatArguments.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/PointerOverflow.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/SuspiciousCallToStrncat.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/OO/UnsafeUseOfThis.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Protocols/TlsSettingsMisconfiguration.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Protocols/UseOfDeprecatedHardcodedProtocol.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Underspecified Functions/TooFewArguments.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Microsoft/Likely Bugs/Conversion/BadOverflowGuard.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Microsoft/Likely Bugs/Drivers/IncorrectUsageOfRtlCompareMemory.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/BannedEncryption.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/BannedModesCAPI.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/BannedModesCNG.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/HardcodedIVCNG.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/MemoryAccess/EnumIndex/UncheckedBoundsEnumAsIndex.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-078/ExecTainted.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-114/UncontrolledProcessOperation.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-120/BadlyBoundedWrite.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-120/OverrunWrite.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-131/NoSpaceForZeroTerminator.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-170/ImproperNullTerminationTainted.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-190/ComparisonWithWiderType.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-253/HResultBooleanConversion.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-327/OpenSslHeartbleed.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-676/DangerousFunctionOverflow.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-676/DangerousUseOfCin.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-704/WcharCharConversion.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-732/UnsafeDaclSecurityDescriptor.ql* | TODO |
 
 The *mustfix.qls* file includes the following **Must-Fix** code queries.
 
@@ -83,45 +114,98 @@ The *mustfix.qls* file includes the following **Must-Fix** code queries.
       - Security/CWE/CWE-732/UnsafeDaclSecurityDescriptor.ql
 ```
 
-### Recommended Fix Queries
+### Recommended Queries
 
-These queries are part of the *recommended.qls* query suite in the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools). The "Common Weakness Enumeration" (CWE) column identifies what kinds of security issues the given query searches for. See [Mitre's page on CWE](https://cwe.mitre.org/) for more details about CWEs.
+The *recommended.qls* suite includes all queries from the *mustfix.qls* suite (see above) plus the following additional queries from the microsoft/windows-drivers and microsoft/cpp-queries packs.
 
-The "Common Weakness Enumeration" (CWE) column shows the types of security issues the query identifies.
+#### Drivers - General
 
-#### Best Practices
+| ID | Location | [Code Analysis Warning](prefast-for-drivers-warnings.md) |
+|---|---|---|
+| [cpp/drivers/annotation-syntax](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/AnnotationSyntax/AnnotationSyntax.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/AnnotationSyntax/AnnotationSyntax.ql* | [C28266 Warning](28266-function-property-syntax-error.md) |
+| [cpp/drivers/current-function-type-not-correct](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/CurrentFunctionTypeNotCorrect/CurrentFunctionTypeNotCorrect.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/CurrentFunctionTypeNotCorrect/CurrentFunctionTypeNotCorrect.ql* | [C28101 Warning](28101-wrong-function-type.md) |
+| [cpp/drivers/default-pool-tag](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/DefaultPoolTag/DefaultPoolTag.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/DefaultPoolTag/DefaultPoolTag.ql* | [C28147 Warning](28147-improper-use-of-default-pool-tag.md) |
+| [cpp/drivers/driver-entry-save-buffer](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/DriverEntrySaveBuffer/DriverEntrySaveBuffer.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/DriverEntrySaveBuffer/DriverEntrySaveBuffer.ql* | [C28131 Warning](28131-driverentry-saving-pointer-to-buffer.md) |
+| [cpp/drivers/examined-value](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/ExaminedValue/ExaminedValue.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/ExaminedValue/ExaminedValue.ql* | [C28193 Warning](/cpp/code-quality/c28193) |
+| [cpp/drivers/irp-stack-entry-copy](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/IRPStackEntryCopy/IRPStackEntryCopy.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IRPStackEntryCopy/IRPStackEntryCopy.ql* | [C28114 Warning](28114-improper-irp-stack-copy.md) |
+| [cpp/drivers/important-function-call-optimized-out](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/ImportantFunctionCallOptimizedOut/ImportantFunctionCallOptimizedOut.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/ImportantFunctionCallOptimizedOut/ImportantFunctionCallOptimizedOut.ql* | [C28625 Warning](28625-sensitive-data-may-be-retained.md) |
+| [cpp/drivers/improper-not-operator-on-zero](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/ImproperNotOperatorOnZero/ImproperNotOperatorOnZero.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/ImproperNotOperatorOnZero/ImproperNotOperatorOnZero.ql* | [C28650 Warning](28650-generic-value-is-not-treated-as-failure.md) |
+| [cpp/drivers/invalid-function-class-typedef](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/InvalidFunctionClassTypedef/InvalidFunctionClassTypedef.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/InvalidFunctionClassTypedef/InvalidFunctionClassTypedef.ql* | [C28268 Warning](28268-function-class-does-not-match-typedef.md) |
+| [cpp/drivers/invalid-function-pointer-annotation](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/InvalidFunctionPointerAnnotation/InvalidFunctionPointerAnnotation.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/InvalidFunctionPointerAnnotation/InvalidFunctionPointerAnnotation.ql* | [C28165 Warning](28165-class-function-pointer-mismatch.md) |
+| [cpp/drivers/io-initialize-timer-call](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/IoInitializeTimerCall/IoInitializeTimerCall.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IoInitializeTimerCall/IoInitializeTimerCall.ql* | [C28133 Warning](28133-ioinitializetimer-is-best-called-from-add-device.md) |
+| [cpp/drivers/irql-annotation-issue](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/IrqlAnnotationIssue/IrqlAnnotationIssue.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IrqlAnnotationIssue/IrqlAnnotationIssue.ql* | [C28153 Warning](28153-irql-annotation-eval-context.md) |
+| [cpp/drivers/irql-cancel-routine](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/IrqlCancelRoutine/IrqlCancelRoutine.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IrqlCancelRoutine/IrqlCancelRoutine.ql* | [C28144 Warning](28144-cancelirql-should-be-current-irql.md) |
+| [cpp/drivers/irql-float-state-mismatch](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/IrqlFloatStateMismatch/IrqlFloatStateMismatch.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IrqlFloatStateMismatch/IrqlFloatStateMismatch.ql* | [C28111 Warning](28111-floating-point-irql-mismatch.md) |
+| [cpp/drivers/irql-not-saved](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/IrqlNotSaved/IrqlNotSaved.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IrqlNotSaved/IrqlNotSaved.ql* | [C28158 Warning](28158-no-irql-was-saved.md) |
+| [cpp/drivers/irql-not-used](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/IrqlNotUsed/IrqlNotUsed.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IrqlNotUsed/IrqlNotUsed.ql* | [C28157 Warning](28157-function-irql-never-restored.md) |
+| [cpp/drivers/irql-set-too-high](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/IrqlSetTooHigh/IrqlSetTooHigh.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IrqlSetTooHigh/IrqlSetTooHigh.ql* | [C28150 Warning](28150-function-causes-irq-level-to-be-set-above-max.md) |
+| [cpp/drivers/irql-set-too-low](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/IrqlSetTooLow/IrqlSetTooLow.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IrqlSetTooLow/IrqlSetTooLow.ql* | [C28124 Warning](28124-call-below-minimum-irq-level.md) |
+| [cpp/drivers/irql-too-high](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/IrqlTooHigh/IrqlTooHigh.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IrqlTooHigh/IrqlTooHigh.ql* | [C28121 Warning](28121-irq-execution-too-high.md) |
+| [cpp/drivers/irql-too-low](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/IrqlTooLow/IrqlTooLow.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IrqlTooLow/IrqlTooLow.ql* | [C28120 Warning](28120-irql-execution-too-low.md) |
+| [cpp/drivers/ke-set-event-pageable](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/KeSetEventPageable/KeSetEventPageable.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/KeSetEventPageable/KeSetEventPageable.ql* | No associated CA check |
+| [cpp/drivers/multithreaded-av-condition](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/MultithreadedAVCondition/MultithreadedAVCondition.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/MultithreadedAVCondition/MultithreadedAVCondition.ql* | [C28616 Warning](28616-multithreaded-av-condition.md) |
+| [cpp/drivers/ntstatus-explicit-cast](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/NtstatusExplicitCast/NtstatusExplicitCast.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/NtstatusExplicitCast/NtstatusExplicitCast.ql* | [C28714 Warning](28714-ntstatus-cast-between-semantically-different-integer-types.md) |
+| [cpp/drivers/ntstatus-explicit-cast2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/NtstatusExplicitCast2/NtstatusExplicitCast2.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/NtstatusExplicitCast2/NtstatusExplicitCast2.ql* | [C28715 Warning](28715-boolean-cast-between-semantically-different-integer-types.md) |
+| [cpp/drivers/ntstatus-explicit-cast3](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/NtstatusExplicitCast3/NtstatusExplicitCast3.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/NtstatusExplicitCast3/NtstatusExplicitCast3.ql* | [C28716 Warning](28716-compiler-inserted-cast-between-semantically-different-integral.md) |
+| [cpp/drivers/null-character-pointer-assignment](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/NullCharacterPointerAssignment/NullCharacterPointerAssignment.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/NullCharacterPointerAssignment/NullCharacterPointerAssignment.ql* | [C28730 Warning](28730-possible-null-character-assignment.md) |
+| [cpp/drivers/operand-assignment](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/OperandAssignment/OperandAssignment.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/OperandAssignment/OperandAssignment.ql* | [C28129 Warning](28129-assignment-made-to-operand.md) |
+| [cpp/drivers/pointer-variable-size](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/PointerVariableSize/PointerVariableSize.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/PointerVariableSize/PointerVariableSize.ql* | [C28132 Warning](28132-driver-taking-the-size-of-pointer.md) |
+| [cpp/drivers/pool-tag-integral](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/PoolTagIntegral/PoolTagIntegral.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/PoolTagIntegral/PoolTagIntegral.ql* | [C28134 Warning](28134-pool-tag-type-should-be-integral.md) |
+| [cpp/drivers/role-type-correctly-used](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/RoleTypeCorrectlyUsed/RoleTypeCorrectlyUsed.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/RoleTypeCorrectlyUsed/RoleTypeCorrectlyUsed.ql* | [C28158 Warning](declaring-functions-using-function-role-types-for-wdm-drivers.md) |
+| [cpp/drivers/routine-function-type-not-expected](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/RoutineFunctionTypeNotExpected/RoutineFunctionTypeNotExpected.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/RoutineFunctionTypeNotExpected/RoutineFunctionTypeNotExpected.ql* | [C28127 Warning](28127-function-routine-mismatch.md) |
+| [cpp/drivers/str-safe](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/StrSafe/StrSafe.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/StrSafe/StrSafe.ql* | [C28146 Warning](28146-kernel-mode-drivers-should-use-ntstrsafe.md) |
+| [cpp/drivers/strict-type-match](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/StrictTypeMatch/StrictTypeMatch.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/StrictTypeMatch/StrictTypeMatch.ql* | [C28139 Warning](28139-argument-operand-should-exactly-match.md) |
 
-| ID                       | Location   | [Common Weakness Enumeration](https://cwe.mitre.org/)   |
-| ------------------------ | ---------- | ------------------------------------------------------- |
-| [cpp/offset-use-before-range-check](https://github.com/github/codeql/blob/main/cpp/ql/src/Best%20Practices/Likely%20Errors/OffsetUseBeforeRangeCheck.qhelp)  | *codeql/cpp-queries/`<Version>`/Best Practices/Likely Errors/OffsetUseBeforeRangeCheck.ql*   | N/A |
+#### Drivers - WDM
 
-#### Likely Bugs
+| ID | Location | [Code Analysis Warning](prefast-for-drivers-warnings.md) |
+|---|---|---|
+| [cpp/drivers/illegal-field-access](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/wdm/queries/IllegalFieldAccess/IllegalFieldAccess.md) | */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/IllegalFieldAccess/IllegalFieldAccess.ql* | [C28128 Warning](28128-structure-member-directly-accessed.md) |
+| [cpp/drivers/illegal-field-access-2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/wdm/queries/IllegalFieldAccess2/IllegalFieldAccess2.md) | */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/IllegalFieldAccess2/IllegalFieldAccess2.ql* | [C28175 Warning](28175struct-member-should-not-be-accessed-by-driver.md) |
+| [cpp/drivers/illegal-field-write](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/wdm/queries/IllegalFieldWrite/IllegalFieldWrite.md) | */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/IllegalFieldWrite/IllegalFieldWrite.ql* | [C28176 Warning](28176-struct-member-should-not-be-modified-by-driver.md) |
+| [cpp/drivers/init-not-cleared](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/wdm/queries/InitNotCleared/InitNotCleared.md) | */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/InitNotCleared/InitNotCleared.ql* | [C28152 Warning](28152-do-device-initializing-flag-not-cleared.md) |
+| [cpp/drivers/kewaitlocal-requires-kernel-mode](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/wdm/queries/KeWaitLocal/KeWaitLocal.md) | */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/KeWaitLocal/KeWaitLocal.ql* | [C28135 Warning](28135-first-argument-to-kewaitforsingleobject.md) |
+| [cpp/drivers/multiple-paged-code](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/wdm/queries/MultiplePagedCode/MultiplePagedCode.md) | */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/MultiplePagedCode/MultiplePagedCode.ql* | [C28171 Warning](28171-function-has-more-than-one-page-macro-instance.md) |
+| [cpp/drivers/ob-reference-mode](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/wdm/queries/ObReferenceMode/ObReferenceMode.md) | */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/ObReferenceMode/ObReferenceMode.ql* | [C28126 Warning](28126-accessmode-param-incorrect.md) |
+| [cpp/drivers/opaque-mdl-use](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/wdm/queries/OpaqueMdlUse/OpaqueMdlUse.md) | */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/OpaqueMdlUse/OpaqueMdlUse.ql* | No associated CA check |
+| [cpp/drivers/opaque-mdl-write](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/wdm/queries/OpaqueMdlWrite/OpaqueMdlWrite.md) | */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/OpaqueMdlWrite/OpaqueMdlWrite.ql* | [C28145 Warning](28145-opaque-mdl-structure-should-not-be-modified.md) |
+| [cpp/drivers/pending-status-error](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/wdm/queries/PendingStatusError/PendingStatusError.md) | */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/PendingStatusError/PendingStatusError.ql* | [C28143 Warning](28143-iomarkirppending-must-return-statuspending.md) |
+| [cpp/drivers/wrong-dispatch-table-assignment](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/wdm/queries/WrongDispatchTableAssignment/WrongDispatchTableAssignment.md) | */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/WrongDispatchTableAssignment/WrongDispatchTableAssignment.ql* | [C28168 Warning](28168-dispatch-function-dispatch-annotation.md), [C28169 Warning](28169-dispatch-function-does-not-have-proper-annotation.md) |
 
-| ID                       | Location   | [Common Weakness Enumeration](https://cwe.mitre.org/)   |
-| ------------------------ | ---------- | ------------------------------------------------------- |
-| [cpp/bad-addition-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-bad-addition-overflow-check/)   | *codeql/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql* | [CWE-190](https://cwe.mitre.org/data/definitions/190.html), [CWE-192](https://cwe.mitre.org/data/definitions/192.html) |
-| [cpp/integer-multiplication-cast-to-long](https://codeql.github.com/codeql-query-help/cpp/cpp-integer-multiplication-cast-to-long/)   | *codeql/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/IntMultToLong.ql* | [CWE-190](https://cwe.mitre.org/data/definitions/190.html), [CWE-192](https://cwe.mitre.org/data/definitions/192.html), [CWE-197](https://cwe.mitre.org/data/definitions/197.html), [CWE-681](https://cwe.mitre.org/data/definitions/681.html) |
-| [cpp/signed-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-signed-overflow-check/)   | *codeql/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/SignedOverflowCheck.ql* | N/A |
-| [cpp/upcast-array-pointer-arithmetic](https://codeql.github.com/codeql-query-help/cpp/cpp-upcast-array-pointer-arithmetic/)   | *codeql/cpp-queries/`<Version>`/Likely Bugs/Conversion/CastArrayPointerArithmetic.ql* | [CWE-119](https://cwe.mitre.org/data/definitions/119.html), [CWE-843](https://cwe.mitre.org/data/definitions/843.html) |
-| [cpp/pointer-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-pointer-overflow-check/)   | *codeql/cpp-queries/`<Version>`/Likely Bugs/Memory Management/PointerOverflow.ql* | N/A |
-| [cpp/too-few-arguments](https://codeql.github.com/codeql-query-help/cpp/cpp-too-few-arguments/)   | *codeql/cpp-queries/`<Version>`/Likely Bugs/Underspecified Functions/TooFewArguments.ql* | N/A |
-| [cpp/incorrect-not-operator-usage](https://github.com/github/codeql/blob/main/cpp/ql/src/Likely%20Bugs/Likely%20Typos/IncorrectNotOperatorUsage.qhelp)   | *codeql/cpp-queries/`<Version>`/Likely Bugs/Likely Typos/IncorrectNotOperatorUsage.ql* | [CWE-480](https://cwe.mitre.org/data/definitions/480.html) |
-| [cpp/suspicious-add-sizeof](https://codeql.github.com/codeql-query-help/cpp/cpp-suspicious-add-sizeof/)   | *codeql/cpp-queries/`<Version>`/Likely Bugs/Memory Management/SuspiciousSizeof.ql* | [CWE-468](https://codeql.github.com/codeql-query-help/cpp/cpp-suspicious-add-sizeof/) |
-| [cpp/uninitialized-local](https://github.com/github/codeql/blob/main/cpp/ql/src/Likely%20Bugs/Memory%20Management/UninitializedLocal.qhelp)   | *codeql/cpp-queries/`<Version>`/Likely Bugs/Memory Management/UninitializedLocal.ql* | [CWE-457](https://cwe.mitre.org/data/definitions/457.html), [CWE-665](https://cwe.mitre.org/data/definitions/665.html) |
+#### Microsoft - Likely Bugs
 
-#### Security
+| ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning |
+|---|---|---|
+| [cpp/paddingbyteinformationdisclosure](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/microsoft/Likely%20Bugs/Boundary%20Violations/PaddingByteInformationDisclosure.md) | */microsoft/windows-drivers/`<Version>`/microsoft/Likely Bugs/Boundary Violations/PaddingByteInformationDisclosure.ql* | N/A |
+| [cpp/badoverflowguard](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/microsoft/Likely%20Bugs/Conversion/BadOverflowGuard.md) | */microsoft/windows-drivers/`<Version>`/microsoft/Likely Bugs/Conversion/BadOverflowGuard.ql* | N/A |
+| [cpp/infiniteloop](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/microsoft/Likely%20Bugs/Conversion/InfiniteLoop.md) | */microsoft/windows-drivers/`<Version>`/microsoft/Likely Bugs/Conversion/InfiniteLoop.ql* | N/A |
+| [cpp/use-after-free](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/microsoft/Likely%20Bugs/Memory%20Management/UseAfterFree/ProbableUseAfterFree.md) | */microsoft/windows-drivers/`<Version>`/microsoft/Likely Bugs/Memory Management/UseAfterFree/UseAfterFree.ql* | N/A |
+| [cpp/uninitializedptrfield](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/microsoft/Likely%20Bugs/UninitializedPtrField.md) | */microsoft/windows-drivers/`<Version>`/microsoft/Likely Bugs/UninitializedPtrField.ql* | N/A |
 
-| ID                       | Location   | [Common Weakness Enumeration](https://cwe.mitre.org/)   |
-| ------------------------ | ---------- | ------------------------------------------------------- |
-| [cpp/conditionally-uninitialized-variable](https://github.com/github/codeql/tree/main/cpp/ql/src/Security/CWE/CWE-457)   | *codeql/cpp-queries/`<Version>`/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql.* | [CWE-457](https://cwe.mitre.org/data/definitions/457.html) |
-| [cpp/unterminated-variadic-call](https://github.com/github/codeql/tree/main/cpp/ql/src/Security/CWE/CWE-121)   | *codeql/cpp-queries/`<Version>`/Security/CWE/CWE-121/UnterminatedVarargsCall.ql* | [CWE-121](https://cwe.mitre.org/data/definitions/121.html) |
-| [cpp/suspicious-pointer-scaling](https://github.com/github/codeql/blob/main/cpp/ql/src/Security/CWE/CWE-468/IncorrectPointerScalingChar.qhelp)   | *codeql/cpp-queries/`<Version>`/Security/CWE/CWE-468/IncorrectPointerScaling.ql* | [CWE-468](https://cwe.mitre.org/data/definitions/468.html) |
-| [cpp/suspicious-pointer-scaling-void](https://github.com/github/codeql/blob/main/cpp/ql/src/Security/CWE/CWE-468/IncorrectPointerScalingVoid.qhelp)   | *codeql/cpp-queries/`<Version>`/Security/CWE/CWE-468/IncorrectPointerScalingVoid.ql* | [CWE-468](https://cwe.mitre.org/data/definitions/468.html) |
-| [cpp/potentially-dangerous-function](https://codeql.github.com/codeql-query-help/cpp/cpp-potentially-dangerous-function/)   | *codeql/cpp-queries/`<Version>`/Security/CWE/CWE-676/PotentiallyDangerousFunction.ql* | [CWE-676](https://codeql.github.com/codeql-query-help/cpp/cpp-potentially-dangerous-function/)| 
-| [cpp/incorrect-string-type-conversion](https://codeql.github.com/codeql-query-help/cpp/cpp-incorrect-string-type-conversion/)   | *codeql/cpp-queries/`<Version>`/Security/CWE/CWE-704/WcharCharConversion.ql* | [CWE-704](https://cwe.mitre.org/data/definitions/704.html) |
-| [cpp/comparison-with-wider-type](https://codeql.github.com/codeql-query-help/cpp/cpp-comparison-with-wider-type/)   | *codeql/cpp-queries/`<Version>`/Security/CWE/CWE-190/ComparisonWithWiderType.ql* | [CWE-190](https://cwe.mitre.org/data/definitions/190.html), [CWE-197](https://cwe.mitre.org/data/definitions/197.html), [CWE-835](https://cwe.mitre.org/data/definitions/835.html) |
-| [cpp/hresult-boolean-conversion](https://codeql.github.com/codeql-query-help/cpp/cpp-hresult-boolean-conversion/)   | *codeql/cpp-queries/`<Version>`/Security/CWE/CWE-253/HResultBooleanConversion.ql* | [CWE-253](https://cwe.mitre.org/data/definitions/253.html) |
-| [cpp/suspicious-add-sizeof](https://codeql.github.com/codeql-query-help/cpp/cpp-suspicious-add-sizeof/) | *codeql/cpp-queries/`<Version>`/Security/CWE/CWE-468/CWE-468/SuspiciousAddWithSizeof.ql*|[CWE-468](https://cwe.mitre.org/data/definitions/468.html)|
+#### Microsoft - Security
+
+| ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning |
+|---|---|---|
+| [cpp/weak-crypto/cng/hardcoded-iv](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/microsoft/Security/Crytpography/HardcodedIVCNG.md) | */microsoft/windows-drivers/`<Version>`/microsoft/Security/Crytpography/HardcodedIVCNG.ql* | N/A |
+
+#### Additional recommended queries from the microsoft/cpp-queries pack
+
+| ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning |
+|---|---|---|
+| TODO | */microsoft/cpp-queries/`<Version>`/Best Practices/Likely Errors/OffsetUseBeforeRangeCheck.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/IntMultToLong.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/SignedOverflowCheck.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Conversion/CastArrayPointerArithmetic.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Likely Typos/IncorrectNotOperatorUsage.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/SuspiciousSizeof.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/UninitializedLocal.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-121/UnterminatedVarargsCall.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-468/SuspiciousAddWithSizeof.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-468/IncorrectPointerScaling.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-468/IncorrectPointerScalingVoid.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-676/PotentiallyDangerousFunction.ql* | TODO |
+| TODO | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-119/OverflowBuffer.ql* | TODO |
 
 The *recommended.qls* file includes the following recommended code queries.
 
@@ -130,119 +214,94 @@ The *recommended.qls* file includes the following recommended code queries.
 # Licensed under the MIT license.
 
 - description: Recommended and required queries for Windows Drivers.
-- import: windows-driver-suites/windows_mustfix_partial.qls
-  from: microsoft/windows-drivers
-- import: windows-driver-suites/windows_recommended_partial.qls
-  from: microsoft/windows-drivers
-- queries: .
-  from: codeql/cpp-queries
-  version: 0.9.0
-- include:
-    query path:
-      - Best Practices/Likely Errors/OffsetUseBeforeRangeCheck.ql
-      - Likely Bugs/Arithmetic/IntMultToLong.ql
-      - Likely Bugs/Arithmetic/SignedOverflowCheck.ql
-      - Likely Bugs/Conversion/CastArrayPointerArithmetic.ql
-      - Likely Bugs/Likely Typos/IncorrectNotOperatorUsage.ql
-      - Likely Bugs/Memory Management/SuspiciousSizeof.ql
-      - Likely Bugs/Memory Management/UninitializedLocal.ql
-      - Security/CWE/CWE-121/UnterminatedVarargsCall.ql
-      - Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql
-      - Security/CWE/CWE-468/IncorrectPointerScaling.ql
-      - Security/CWE/CWE-468/IncorrectPointerScalingVoid.ql
-      - Security/CWE/CWE-468/SuspiciousAddWithSizeof.ql
-      - Security/CWE/CWE-676/PotentiallyDangerousFunction.ql
-      - Security/CWE/CWE-704/WcharCharConversion.ql
-      - Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql
-      - Likely Bugs/Memory Management/PointerOverflow.ql
-      - Likely Bugs/Underspecified Functions/TooFewArguments.ql
-      - Security/CWE/CWE-190/ComparisonWithWiderType.ql
-      - Security/CWE/CWE-253/HResultBooleanConversion.ql
-```
-
-These queries are part of the *windows_recommended_partial.qls* query suite.
-
-#### Likely Bugs - windows_recommended_partial.qls
-
-| ID                       | Location   | [Common Weakness Enumeration](https://cwe.mitre.org/)   |
-| ------------------------ | ---------- | ------------------------------------------------------- |
-| [cpp/paddingbyteinformationdisclosure](./codeql-windows-driver-padding-byte-information-disclosure.md)   | *microsoft/windows-drivers/`<Version>`/microsoft/Likely Bugs/Boundary Violations/PaddingByteInformationDisclosure.ql* | N/A |
-| [cpp/badoverflowguard](./codeql-windows-driver-badoverflowguard.md)   | *microsoft/windows-drivers/`<Version>`/microsoft/Likely Bugs/Conversion/BadOverflowGuard.ql* | N/A |
-| [cpp/infiniteloop](./codeql-windows-driver-infiniteloop.md)   | *microsoft/windows-drivers/`<Version>`/microsoft/Likely Bugs/Conversion/InfiniteLoop.ql* | N/A |
-| [cpp/uninitializedptrfield](./codeql-windows-driver-uninitializedptrfield.md)   | *microsoft/windows-drivers/`<Version>`/microsoft/Likely Bugs/UninitializedPtrField.ql* | N/A |
-| [cpp/use-after-free](./codeql-windows-driver-useafterfree.md)   | *microsoft/windows-drivers/`<Version>`/microsoft/Likely Bugs/Memory Management/UseAfterFree/UseAfterFree.ql* | N/A |
-
-#### Security - windows_recommended_partial.qls
-
-| ID                       | Location   | [Code Analysis Warning](prefast-for-drivers-warnings.md)   |
-| ------------------------ | ---------- | ---------------------------------------------------------- |
-| [cpp/weak-crypto/cng/hardcoded-iv](./codeql-windows-driver-hardcodedivcng.md)   | */microsoft/windows-drivers/`<Version>`/microsoft/Security/Crytpography/HardcodedIVCNG.ql* | N/A |
-
-#### Drivers - General
-
-| ID                       | Location   | [Code Analysis Warning](prefast-for-drivers-warnings.md)   |
-| ------------------------ | ---------- | ---------------------------------------------------------- |
-| [cpp/drivers/ke-set-event-pageable](./codeql-windows-driver-keseteventpageable.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/KeSetEventPageable/KeSetEventPageable.ql*  | No associated CA check  |
-| [cpp/drivers/role-type-correctly-used](./codeql-windows-driver-roletypecorrectlyused.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/RoleTypeCorrectlyUsed/RoleTypeCorrectlyUsed.ql* | No associated CA check|
-| [cpp/drivers/irql-not-saved](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/general/queries/IrqlNotSaved/) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IrqlNotSaved/IrqlNotSaved.ql* | [C28158 Warning](28158-no-irql-was-saved.md) |
-| [cpp/drivers/irql-not-used](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/general/queries/IrqlNotUsed/) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IrqlNotUsed/IrqlNotUsed.ql* | [C28157 Warning](28157-function-irql-never-restored.md) |
-| [cpp/drivers/irql-set-too-high](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/general/queries/IrqlSetTooHigh) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IrqlTooHigh/IrqlTooHigh.ql* | [C28150 Warning](28150-function-causes-irq-level-to-be-set-above-max.md) |
-| [cpp/drivers/irql-too-low](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/general/queries//IrqlTooLow) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IrqlTooLow/IrqlTooLow.ql* | [C28120 Warning](28120-irql-execution-too-low.md) |
-| [cpp/drivers/irql-set-too-high](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/general/queries/IrqlTooHigh) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IrqlSetTooHigh/IrqlTooHigh.ql* | [C28121 Warning](28121-irq-execution-too-high.md) |
-| [cpp/drivers/irql-set-too-low](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/general/queries/IrqlSetTooLow) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/IrqlSetTooLow/IrqlSetTooLow.ql* | [C28124 Warning](28124-call-below-minimum-irq-level.md) |
-| [cpp/drivers/pool-tag-integral](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/general/queries/PoolTagIntegral) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/PoolTagIntegral/PoolTagIntegral.ql* | [C28134 Warning](28134-pool-tag-type-should-be-integral.md) |
-| [cpp/drivers/str-safe](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/general/queries/StrSafe) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/StrSafe/StrSafe.ql* | [C28146 Warning](28146-kernel-mode-drivers-should-use-ntstrsafe.md) |
-
-#### Drivers - WDM
-
-| ID                       | Location   | [Code Analysis Warning](prefast-for-drivers-warnings.md)   |
-| ------------------------ | ---------- | ---------------------------------------------------------- |
-| [cpp/drivers/illegal-field-access](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/wdm/queries/IllegalFieldAccess)| */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/IllegalFieldAccess/IllegalFieldAccess.ql* | [C28128 Warning](28128-structure-member-directly-accessed.md) |
-| [cpp/drivers/illegal-field-access2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/wdm/queries//IllegalFieldAccess2) | */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/IllegalFieldAccess2/IllegalFieldAccess2.ql* | [C28175 Warning](28175struct-member-should-not-be-accessed-by-driver.md) |
-| [cpp/drivers/illegal-field-write](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/wdm/queries/IllegalFieldWrite) | */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/IllegalFieldWrite/IllegalFieldWrite.ql* | [C28176 Warning](28176-struct-member-should-not-be-modified-by-driver.md) |
-| [cpp/drivers/opaque-mdl-use](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/wdm/queries/OpaqueMdlUse)| */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/OpaqueMdlUse/OpaqueMdlUse.ql* | (No associated CA check) |
-| [cpp/drivers/opaque-mdl-write](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/wdm/queries/OpaqueMdlWrite)| */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/OpaqueMdlUse/OpaqueMdlWrite.ql* | [C28145 Warning](28145-opaque-mdl-structure-should-not-be-modified.md) |
-| [cpp/drivers/pending-status-error](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/wdm/queries/PendingStatusError)| */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/PendingStatusError/PendingStatusError.ql* | [C28143 Warning](28143-iomarkirppending-must-return-statuspending.md) |
-| [cpp/drivers/wrong-dispatch-table-assignment](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/drivers/wdm/queries/WrongDispatchTableAssignment)| */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/WrongDispatchTableAssignment/WrongDispatchTableAssignment.ql* | [C28169 Warning](28169-dispatch-function-does-not-have-proper-annotation.md) |
-
-The *windows-driver-suites/windows_recommended_partial.qls* file includes the following recommended code queries.
-
-```text
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT license.
-
-- description: Recommended and required queries for Windows Drivers.
-- import: windows-driver-suites/windows_mustfix_partial.qls
+- import: windows-driver-suites/mustfix.qls
 - queries: .
   from: microsoft/windows-drivers
 - include:
-    query path:
+    query path: 
+      - drivers/general/queries/AnnotationSyntax/AnnotationSyntax.ql
+      - drivers/general/queries/CurrentFunctionTypeNotCorrect/CurrentFunctionTypeNotCorrect.ql
+      - drivers/general/queries/DefaultPoolTag/DefaultPoolTag.ql
+      - drivers/general/queries/DriverEntrySaveBuffer/DriverEntrySaveBuffer.ql
+      - drivers/general/queries/ExaminedValue/ExaminedValue.ql
+      - drivers/general/queries/IRPStackEntryCopy/IRPStackEntryCopy.ql
+      - drivers/general/queries/ImportantFunctionCallOptimizedOut/ImportantFunctionCallOptimizedOut.ql
+      - drivers/general/queries/ImproperNotOperatorOnZero/ImproperNotOperatorOnZero.ql
+      - drivers/general/queries/InvalidFunctionClassTypedef/InvalidFunctionClassTypedef.ql
+      - drivers/general/queries/InvalidFunctionPointerAnnotation/InvalidFunctionPointerAnnotation.ql
+      - drivers/general/queries/IoInitializeTimerCall/IoInitializeTimerCall.ql
+      - drivers/general/queries/IrqlAnnotationIssue/IrqlAnnotationIssue.ql
+      - drivers/general/queries/IrqlCancelRoutine/IrqlCancelRoutine.ql
+      - drivers/general/queries/IrqlFloatStateMismatch/IrqlFloatStateMismatch.ql
+      - drivers/general/queries/IrqlNotSaved/IrqlNotSaved.ql
+      - drivers/general/queries/IrqlNotUsed/IrqlNotUsed.ql
+      - drivers/general/queries/IrqlSetTooHigh/IrqlSetTooHigh.ql
+      - drivers/general/queries/IrqlSetTooLow/IrqlSetTooLow.ql
+      - drivers/general/queries/IrqlTooHigh/IrqlTooHigh.ql
+      - drivers/general/queries/IrqlTooLow/IrqlTooLow.ql
+      - drivers/general/queries/KeSetEventPageable/KeSetEventPageable.ql
+      - drivers/general/queries/MultithreadedAVCondition/MultithreadedAVCondition.ql
+      - drivers/general/queries/NtstatusExplicitCast/NtstatusExplicitCast.ql
+      - drivers/general/queries/NtstatusExplicitCast2/NtstatusExplicitCast2.ql
+      - drivers/general/queries/NtstatusExplicitCast3/NtstatusExplicitCast3.ql
+      - drivers/general/queries/NullCharacterPointerAssignment/NullCharacterPointerAssignment.ql
+      - drivers/general/queries/OperandAssignment/OperandAssignment.ql
+      - drivers/general/queries/PointerVariableSize/PointerVariableSize.ql
+      - drivers/general/queries/PoolTagIntegral/PoolTagIntegral.ql
+      - drivers/general/queries/RoleTypeCorrectlyUsed/RoleTypeCorrectlyUsed.ql
+      - drivers/general/queries/RoutineFunctionTypeNotExpected/RoutineFunctionTypeNotExpected.ql
+      - drivers/general/queries/StrSafe/StrSafe.ql
+      - drivers/general/queries/StrictTypeMatch/StrictTypeMatch.ql
+      - drivers/wdm/queries/IllegalFieldAccess/IllegalFieldAccess.ql
+      - drivers/wdm/queries/IllegalFieldAccess2/IllegalFieldAccess2.ql
+      - drivers/wdm/queries/IllegalFieldWrite/IllegalFieldWrite.ql
+      - drivers/wdm/queries/InitNotCleared/InitNotCleared.ql
+      - drivers/wdm/queries/KeWaitLocal/KeWaitLocal.ql
+      - drivers/wdm/queries/MultiplePagedCode/MultiplePagedCode.ql
+      - drivers/wdm/queries/ObReferenceMode/ObReferenceMode.ql
+      - drivers/wdm/queries/OpaqueMdlUse/OpaqueMdlUse.ql
+      - drivers/wdm/queries/OpaqueMdlWrite/OpaqueMdlWrite.ql
+      - drivers/wdm/queries/PendingStatusError/PendingStatusError.ql
+      - drivers/wdm/queries/WrongDispatchTableAssignment/WrongDispatchTableAssignment.ql
       - microsoft/Likely Bugs/Boundary Violations/PaddingByteInformationDisclosure.ql
       - microsoft/Likely Bugs/Conversion/BadOverflowGuard.ql
       - microsoft/Likely Bugs/Conversion/InfiniteLoop.ql
       - microsoft/Likely Bugs/Memory Management/UseAfterFree/UseAfterFree.ql
       - microsoft/Likely Bugs/UninitializedPtrField.ql
       - microsoft/Security/Crytpography/HardcodedIVCNG.ql
-      - drivers/general/queries/KeSetEventPageable/KeSetEventPageable.ql
-      - drivers/general/queries/RoleTypeCorrectlyUsed/RoleTypeCorrectlyUsed.ql
-      - drivers/general/queries/DefaultPoolTag/DefaultPoolTag.ql
-      - drivers/general/queries/ExaminedValue/ExaminedValue.ql
-      - drivers/general/queries/ExtendedDeprecatedApis/ExtendedDeprecatedApis.ql
-      - drivers/general/queries/IrqlNotSaved/IrqlNotSaved.ql
-      - drivers/general/queries/IrqlNotUsed/IrqlNotUsed.ql
-      - drivers/general/queries/IrqlTooHigh/IrqlTooHigh.ql
-      - drivers/general/queries/IrqlTooLow/IrqlTooLow.ql
-      - drivers/general/queries/IrqlSetTooHigh/IrqlTooHigh.ql
-      - drivers/general/queries/IrqlSetTooLow/IrqlSetTooLow.ql
-      - drivers/general/queries/PoolTagIntegral/PoolTagIntegral.ql
-      - drivers/general/queries/StrSafe/StrSafe.ql
-      - drivers/wdm/queries/IllegalFieldAccess/IllegalFieldAccess.ql
-      - drivers/wdm/queries/IllegalFieldAccess2/IllegalFieldAccess2.ql
-      - drivers/wdm/queries/IllegalFieldWrite/IllegalFieldWrite.ql
-      - drivers/wdm/queries/OpaqueMdlUse/OpaqueMdlUse.ql
-      - drivers/wdm/queries/OpaqueMdlUse/OpaqueMdlWrite.ql
-      - drivers/wdm/queries/PendingStatusError/PendingStatusError.ql
-      - drivers/wdm/queries/WrongDispatchTableAssignment/WrongDispatchTableAssignment.ql
+- queries: . 
+  from: microsoft/cpp-queries 
+  version: 0.0.4
+- include:
+    query path: 
+     - Best Practices/Likely Errors/OffsetUseBeforeRangeCheck.ql
+     - Likely Bugs/Arithmetic/IntMultToLong.ql
+     - Likely Bugs/Arithmetic/SignedOverflowCheck.ql
+     - Likely Bugs/Conversion/CastArrayPointerArithmetic.ql
+     - Likely Bugs/Likely Typos/IncorrectNotOperatorUsage.ql
+     - Likely Bugs/Memory Management/SuspiciousSizeof.ql
+     - Likely Bugs/Memory Management/UninitializedLocal.ql
+     - Security/CWE/CWE-121/UnterminatedVarargsCall.ql
+     - Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql
+     - Security/CWE/CWE-468/SuspiciousAddWithSizeof.ql
+     - Security/CWE/CWE-468/IncorrectPointerScaling.ql
+     - Security/CWE/CWE-468/IncorrectPointerScalingVoid.ql
+     - Security/CWE/CWE-676/PotentiallyDangerousFunction.ql
+     - Security/CWE/CWE-119/OverflowBuffer.ql
+```
+
+### Must-Run Queries
+
+The *mustrun.qls* suite imports the *recommended.qls* suite. Running this suite ensures that all recommended and must-fix queries are executed. See the recommended and must-fix sections above for the complete list of included queries.
+
+The *mustrun.qls* file includes the following content.
+
+```text
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
+
+- description: Must-run queries for Windows Drivers.
+- import: windows-driver-suites/recommended.qls #recommended includes mustfix
 ```
 ## Related Content
 
