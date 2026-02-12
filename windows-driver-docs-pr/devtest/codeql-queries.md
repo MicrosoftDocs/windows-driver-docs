@@ -11,11 +11,11 @@ ai-usage: ai-assisted
 
 # CodeQL Queries and Suites for Windows Driver Testing
 
-The [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/windows-driver-suites)  provides three query suites to simplify the end-to-end driver developer workflow. These suites are included in the microsoft/windows-drivers CodeQL pack.
+The [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/windows-driver-suites)  provides three query suites to simplify the end-to-end driver developer workflow. These suites are included in the microsoft/windows-drivers CodeQL pack, and make use of queries unique to that pack as well as general C++ queries.
 
 - *recommended.qls* contains queries recommended for driver developers to run and evaluate the results of.  We recommend running this suite by default and reviewing results.
-- *mustrun.qls* serves as a subset of the above and contains queries that **must be run** in order to pass WHCP certification.  These queries may not necessarily need to be fixed due to potential false positives, but should have their results reviewed and any real bugs found fixed.  A DVL generated without results for these checks will fail the Static Tools Logo test.
-- *mustfix.qls* serves as a further subset and contains queries that report issues that **must be fixed** in order to pass WHCP certification.  A DVL generated with failures in these rules will not pass the Static Tools Logo test.
+- *mustrun.qls* contains queries that **must be run** in order to pass WHCP certification.  These queries may not necessarily need to be fixed due to potential false positives, but should have their results reviewed and any real bugs found fixed.  A DVL generated without results for these checks will fail the Static Tools Logo test.  For 26H1, *mustrun.qls* and *recommended.qls* are identical.
+- *mustfix.qls* serves as a subset of the must-run queries and contains queries that report issues that **must be fixed** in order to pass WHCP certification.  A DVL generated with failures in these rules will not pass the Static Tools Logo test.
 
 For details of the contents of the query suites, see [CodeQL Queries and Suites](../devtest/codeql-queries.md).
 
@@ -23,7 +23,7 @@ For details of the contents of the query suites, see [CodeQL Queries and Suites]
 
 The following subset of queries are **Must-Fix** for WHCP certification and are also included in the **Recommended Fix** suite.
 
-This set of rules is included in *mustfix.qls*.
+This set of rules [is included in *mustfix.qls*](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/windows-driver-suites/mustfix.qls).
 
 #### Must-Fix queries from the microsoft/windows-drivers pack
 
@@ -66,60 +66,11 @@ This set of rules is included in *mustfix.qls*.
 | cpp/incorrect-string-type-conversion | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-704/WcharCharConversion.ql* | [CWE-704](https://cwe.mitre.org/data/definitions/704.html) |
 | cpp/unsafe-dacl-security-descriptor | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-732/UnsafeDaclSecurityDescriptor.ql* | [CWE-732](https://cwe.mitre.org/data/definitions/732.html) |
 
-The *mustfix.qls* file includes the following **Must-Fix** code queries.
-
-```text
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT license.
-
-- description: Security queries required to fix when certifying Windows Drivers
-- queries: .
-  from: microsoft/windows-drivers
-- include:
-    query path: 
-      - drivers/general/queries/WdkDeprecatedApis/wdk-deprecated-api.ql
-      - drivers/general/queries/ExtendedDeprecatedApis/ExtendedDeprecatedApis.ql
-      - microsoft/Security/CWE/CWE-704/WcharCharConversionLimited.ql
-- queries: . 
-  from: microsoft/cpp-queries 
-  version: 0.0.4
-- include:
-    query path: 
-      - Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql
-      - Likely Bugs/Format/WrongNumberOfFormatArguments.ql
-      - Likely Bugs/Memory Management/PointerOverflow.ql
-      - Likely Bugs/Memory Management/SuspiciousCallToStrncat.ql
-      - Likely Bugs/OO/UnsafeUseOfThis.ql
-      - Likely Bugs/Protocols/TlsSettingsMisconfiguration.ql
-      - Likely Bugs/Protocols/UseOfDeprecatedHardcodedProtocol.ql
-      - Likely Bugs/Underspecified Functions/TooFewArguments.ql
-      - Microsoft/Likely Bugs/Conversion/BadOverflowGuard.ql
-      - Microsoft/Likely Bugs/Drivers/IncorrectUsageOfRtlCompareMemory.ql
-      - Microsoft/Security/Cryptography/BannedEncryption.ql
-      - Microsoft/Security/Cryptography/BannedModesCAPI.ql
-      - Microsoft/Security/Cryptography/BannedModesCNG.ql
-      - Microsoft/Security/Cryptography/HardcodedIVCNG.ql
-      - Microsoft/Security/MemoryAccess/EnumIndex/UncheckedBoundsEnumAsIndex.ql
-      - Security/CWE/CWE-078/ExecTainted.ql
-      - Security/CWE/CWE-114/UncontrolledProcessOperation.ql
-      - Security/CWE/CWE-120/BadlyBoundedWrite.ql
-      - Security/CWE/CWE-120/OverrunWrite.ql
-      - Security/CWE/CWE-131/NoSpaceForZeroTerminator.ql
-      - Security/CWE/CWE-170/ImproperNullTerminationTainted.ql
-      - Security/CWE/CWE-190/ComparisonWithWiderType.ql
-      - Security/CWE/CWE-253/HResultBooleanConversion.ql
-      - Security/CWE/CWE-327/OpenSslHeartbleed.ql
-      - Security/CWE/CWE-676/DangerousFunctionOverflow.ql
-      - Security/CWE/CWE-676/DangerousUseOfCin.ql
-      - Security/CWE/CWE-704/WcharCharConversion.ql 
-      - Security/CWE/CWE-732/UnsafeDaclSecurityDescriptor.ql
-```
-
 ### Recommended Queries
 
-The *recommended.qls* suite includes all queries from the *mustfix.qls* suite (see above) plus the following additional queries from the microsoft/windows-drivers and microsoft/cpp-queries packs.
+[The *recommended.qls* suite](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/windows-driver-suites/recommended.qls) includes all queries from the *mustfix.qls* suite (see above) plus the following additional queries from the microsoft/windows-drivers and microsoft/cpp-queries packs.
 
-#### Drivers - General
+#### General driver queries from the microsoft/windows-drivers pack
 
 | ID | Location | [Code Analysis Warning](prefast-for-drivers-warnings.md) |
 |---|---|---|
@@ -157,7 +108,7 @@ The *recommended.qls* suite includes all queries from the *mustfix.qls* suite (s
 | [cpp/drivers/str-safe](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/StrSafe/StrSafe.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/StrSafe/StrSafe.ql* | [C28146 Warning](28146-kernel-mode-drivers-should-use-ntstrsafe.md) |
 | [cpp/drivers/strict-type-match](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/StrictTypeMatch/StrictTypeMatch.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/StrictTypeMatch/StrictTypeMatch.ql* | [C28139 Warning](28139-argument-operand-should-exactly-match.md) |
 
-#### Drivers - WDM
+#### WDM driver queries from the microsoft/windows-drivers pack
 
 | ID | Location | [Code Analysis Warning](prefast-for-drivers-warnings.md) |
 |---|---|---|
@@ -173,7 +124,7 @@ The *recommended.qls* suite includes all queries from the *mustfix.qls* suite (s
 | [cpp/drivers/pending-status-error](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/wdm/queries/PendingStatusError/PendingStatusError.md) | */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/PendingStatusError/PendingStatusError.ql* | [C28143 Warning](28143-iomarkirppending-must-return-statuspending.md) |
 | [cpp/drivers/wrong-dispatch-table-assignment](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/wdm/queries/WrongDispatchTableAssignment/WrongDispatchTableAssignment.md) | */microsoft/windows-drivers/`<Version>`/drivers/wdm/queries/WrongDispatchTableAssignment/WrongDispatchTableAssignment.ql* | [C28168 Warning](28168-dispatch-function-dispatch-annotation.md), [C28169 Warning](28169-dispatch-function-does-not-have-proper-annotation.md) |
 
-#### Microsoft - Likely Bugs
+#### General C++ queries from the microsoft/windows-drivers pack
 
 | ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning |
 |---|---|---|
@@ -182,14 +133,9 @@ The *recommended.qls* suite includes all queries from the *mustfix.qls* suite (s
 | [cpp/infiniteloop](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/microsoft/Likely%20Bugs/Conversion/InfiniteLoop.md) | */microsoft/windows-drivers/`<Version>`/microsoft/Likely Bugs/Conversion/InfiniteLoop.ql* | N/A |
 | [cpp/use-after-free](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/microsoft/Likely%20Bugs/Memory%20Management/UseAfterFree/ProbableUseAfterFree.md) | */microsoft/windows-drivers/`<Version>`/microsoft/Likely Bugs/Memory Management/UseAfterFree/UseAfterFree.ql* | N/A |
 | [cpp/uninitializedptrfield](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/microsoft/Likely%20Bugs/UninitializedPtrField.md) | */microsoft/windows-drivers/`<Version>`/microsoft/Likely Bugs/UninitializedPtrField.ql* | N/A |
-
-#### Microsoft - Security
-
-| ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning |
-|---|---|---|
 | [cpp/weak-crypto/cng/hardcoded-iv](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/microsoft/Security/Crytpography/HardcodedIVCNG.md) | */microsoft/windows-drivers/`<Version>`/microsoft/Security/Crytpography/HardcodedIVCNG.ql* | N/A |
 
-#### Additional recommended queries from the microsoft/cpp-queries pack
+#### General C++ queries from the microsoft/cpp-queries pack
 
 | ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning |
 |---|---|---|
@@ -208,102 +154,12 @@ The *recommended.qls* suite includes all queries from the *mustfix.qls* suite (s
 | cpp/potentially-dangerous-function | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-676/PotentiallyDangerousFunction.ql* | [CWE-676](https://cwe.mitre.org/data/definitions/676.html) |
 | cpp/overflow-buffer | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-119/OverflowBuffer.ql* | [CWE-119](https://cwe.mitre.org/data/definitions/119.html), [CWE-121](https://cwe.mitre.org/data/definitions/121.html), [CWE-122](https://cwe.mitre.org/data/definitions/122.html), [CWE-126](https://cwe.mitre.org/data/definitions/126.html) |
 
-The *recommended.qls* file includes the following recommended code queries.
-
-```text
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT license.
-
-- description: Recommended and required queries for Windows Drivers.
-- import: windows-driver-suites/mustfix.qls
-- queries: .
-  from: microsoft/windows-drivers
-- include:
-    query path: 
-      - drivers/general/queries/AnnotationSyntax/AnnotationSyntax.ql
-      - drivers/general/queries/CurrentFunctionTypeNotCorrect/CurrentFunctionTypeNotCorrect.ql
-      - drivers/general/queries/DefaultPoolTag/DefaultPoolTag.ql
-      - drivers/general/queries/DriverEntrySaveBuffer/DriverEntrySaveBuffer.ql
-      - drivers/general/queries/ExaminedValue/ExaminedValue.ql
-      - drivers/general/queries/IRPStackEntryCopy/IRPStackEntryCopy.ql
-      - drivers/general/queries/ImportantFunctionCallOptimizedOut/ImportantFunctionCallOptimizedOut.ql
-      - drivers/general/queries/ImproperNotOperatorOnZero/ImproperNotOperatorOnZero.ql
-      - drivers/general/queries/InvalidFunctionClassTypedef/InvalidFunctionClassTypedef.ql
-      - drivers/general/queries/InvalidFunctionPointerAnnotation/InvalidFunctionPointerAnnotation.ql
-      - drivers/general/queries/IoInitializeTimerCall/IoInitializeTimerCall.ql
-      - drivers/general/queries/IrqlAnnotationIssue/IrqlAnnotationIssue.ql
-      - drivers/general/queries/IrqlCancelRoutine/IrqlCancelRoutine.ql
-      - drivers/general/queries/IrqlFloatStateMismatch/IrqlFloatStateMismatch.ql
-      - drivers/general/queries/IrqlNotSaved/IrqlNotSaved.ql
-      - drivers/general/queries/IrqlNotUsed/IrqlNotUsed.ql
-      - drivers/general/queries/IrqlSetTooHigh/IrqlSetTooHigh.ql
-      - drivers/general/queries/IrqlSetTooLow/IrqlSetTooLow.ql
-      - drivers/general/queries/IrqlTooHigh/IrqlTooHigh.ql
-      - drivers/general/queries/IrqlTooLow/IrqlTooLow.ql
-      - drivers/general/queries/KeSetEventPageable/KeSetEventPageable.ql
-      - drivers/general/queries/MultithreadedAVCondition/MultithreadedAVCondition.ql
-      - drivers/general/queries/NtstatusExplicitCast/NtstatusExplicitCast.ql
-      - drivers/general/queries/NtstatusExplicitCast2/NtstatusExplicitCast2.ql
-      - drivers/general/queries/NtstatusExplicitCast3/NtstatusExplicitCast3.ql
-      - drivers/general/queries/NullCharacterPointerAssignment/NullCharacterPointerAssignment.ql
-      - drivers/general/queries/OperandAssignment/OperandAssignment.ql
-      - drivers/general/queries/PointerVariableSize/PointerVariableSize.ql
-      - drivers/general/queries/PoolTagIntegral/PoolTagIntegral.ql
-      - drivers/general/queries/RoleTypeCorrectlyUsed/RoleTypeCorrectlyUsed.ql
-      - drivers/general/queries/RoutineFunctionTypeNotExpected/RoutineFunctionTypeNotExpected.ql
-      - drivers/general/queries/StrSafe/StrSafe.ql
-      - drivers/general/queries/StrictTypeMatch/StrictTypeMatch.ql
-      - drivers/wdm/queries/IllegalFieldAccess/IllegalFieldAccess.ql
-      - drivers/wdm/queries/IllegalFieldAccess2/IllegalFieldAccess2.ql
-      - drivers/wdm/queries/IllegalFieldWrite/IllegalFieldWrite.ql
-      - drivers/wdm/queries/InitNotCleared/InitNotCleared.ql
-      - drivers/wdm/queries/KeWaitLocal/KeWaitLocal.ql
-      - drivers/wdm/queries/MultiplePagedCode/MultiplePagedCode.ql
-      - drivers/wdm/queries/ObReferenceMode/ObReferenceMode.ql
-      - drivers/wdm/queries/OpaqueMdlUse/OpaqueMdlUse.ql
-      - drivers/wdm/queries/OpaqueMdlWrite/OpaqueMdlWrite.ql
-      - drivers/wdm/queries/PendingStatusError/PendingStatusError.ql
-      - drivers/wdm/queries/WrongDispatchTableAssignment/WrongDispatchTableAssignment.ql
-      - microsoft/Likely Bugs/Boundary Violations/PaddingByteInformationDisclosure.ql
-      - microsoft/Likely Bugs/Conversion/BadOverflowGuard.ql
-      - microsoft/Likely Bugs/Conversion/InfiniteLoop.ql
-      - microsoft/Likely Bugs/Memory Management/UseAfterFree/UseAfterFree.ql
-      - microsoft/Likely Bugs/UninitializedPtrField.ql
-      - microsoft/Security/Crytpography/HardcodedIVCNG.ql
-- queries: . 
-  from: microsoft/cpp-queries 
-  version: 0.0.4
-- include:
-    query path: 
-     - Best Practices/Likely Errors/OffsetUseBeforeRangeCheck.ql
-     - Likely Bugs/Arithmetic/IntMultToLong.ql
-     - Likely Bugs/Arithmetic/SignedOverflowCheck.ql
-     - Likely Bugs/Conversion/CastArrayPointerArithmetic.ql
-     - Likely Bugs/Likely Typos/IncorrectNotOperatorUsage.ql
-     - Likely Bugs/Memory Management/SuspiciousSizeof.ql
-     - Likely Bugs/Memory Management/UninitializedLocal.ql
-     - Security/CWE/CWE-121/UnterminatedVarargsCall.ql
-     - Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql
-     - Security/CWE/CWE-468/SuspiciousAddWithSizeof.ql
-     - Security/CWE/CWE-468/IncorrectPointerScaling.ql
-     - Security/CWE/CWE-468/IncorrectPointerScalingVoid.ql
-     - Security/CWE/CWE-676/PotentiallyDangerousFunction.ql
-     - Security/CWE/CWE-119/OverflowBuffer.ql
-```
-
 ### Must-Run Queries
 
-The *mustrun.qls* suite imports the *recommended.qls* suite. Running this suite ensures that all recommended and must-fix queries are executed. See the recommended and must-fix sections above for the complete list of included queries.
+[The *mustrun.qls* suite](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/windows-driver-suites/mustrun.qls) contains queries that **must be run** in order to pass WHCP certification.  These queries may not necessarily need to be fixed due to potential false positives, but should have their results reviewed and any real bugs found fixed.  A DVL generated without results for these checks will fail the Static Tools Logo test.  
 
-The *mustrun.qls* file includes the following content.
+For 26H1, the queries exposed by *mustrun.qls* and *recommended.qls* are identical.
 
-```text
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT license.
-
-- description: Must-run queries for Windows Drivers.
-- import: windows-driver-suites/recommended.qls #recommended includes mustfix
-```
 ## Related Content
 
 - [Run the CodeQL analysis on your driver code](./static-tools-and-codeql.md)
