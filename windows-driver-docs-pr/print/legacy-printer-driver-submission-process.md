@@ -347,9 +347,9 @@ Attestation Example
 
 2       ├─ DriverFiles/...
 
-3       ├─ DriverException.json
+3       │    ├─ DriverException.json
 
-4       └─ SupportingDocument.docx
+4       │    └─ SupportingDocument.docx
 
 ## Schema
 
