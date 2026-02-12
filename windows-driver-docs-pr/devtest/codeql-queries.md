@@ -36,34 +36,34 @@ This set of rules is included in *mustfix.qls*.
 
 | ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning |
 |---|---|---|
-| cpp/bad-addition-overflow-check | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql* | TODO |
-| cpp/wrong-number-format-arguments | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Format/WrongNumberOfFormatArguments.ql* | TODO |
-| cpp/pointer-overflow-check | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/PointerOverflow.ql* | TODO |
-| cpp/unsafe-strncat | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/SuspiciousCallToStrncat.ql* | TODO |
-| cpp/unsafe-use-of-this | */microsoft/cpp-queries/`<Version>`/Likely Bugs/OO/UnsafeUseOfThis.ql* | TODO |
-| cpp/boost/tls-settings-misconfiguration | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Protocols/TlsSettingsMisconfiguration.ql* | TODO |
-| cpp/boost/use-of-deprecated-hardcoded-security-protocol | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Protocols/UseOfDeprecatedHardcodedProtocol.ql* | TODO |
-| cpp/too-few-arguments | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Underspecified Functions/TooFewArguments.ql* | TODO |
-| cpp/microsoft/public/badoverflowguard | */microsoft/cpp-queries/`<Version>`/Microsoft/Likely Bugs/Conversion/BadOverflowGuard.ql* | TODO |
-| cpp/microsoft/public/drivers/incorrect-usage-of-rtlcomparememory | */microsoft/cpp-queries/`<Version>`/Microsoft/Likely Bugs/Drivers/IncorrectUsageOfRtlCompareMemory.ql* | TODO |
-| cpp/microsoft/public/weak-crypto/banned-encryption-algorithms | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/BannedEncryption.ql* | TODO |
-| cpp/microsoft/public/weak-crypto/capi/banned-modes | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/BannedModesCAPI.ql* | TODO |
-| cpp/microsoft/public/weak-crypto/cng/banned-modes | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/BannedModesCNG.ql* | TODO |
-| cpp/microsoft/public/weak-crypto/cng/hardcoded-iv | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/HardcodedIVCNG.ql* | TODO |
-| cpp/microsoft/public/enum-index | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/MemoryAccess/EnumIndex/UncheckedBoundsEnumAsIndex.ql* | TODO |
-| cpp/command-line-injection | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-078/ExecTainted.ql* | TODO |
-| cpp/uncontrolled-process-operation | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-114/UncontrolledProcessOperation.ql* | TODO |
-| cpp/badly-bounded-write | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-120/BadlyBoundedWrite.ql* | TODO |
-| cpp/overrunning-write | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-120/OverrunWrite.ql* | TODO |
-| cpp/no-space-for-terminator | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-131/NoSpaceForZeroTerminator.ql* | TODO |
-| cpp/user-controlled-null-termination-tainted | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-170/ImproperNullTerminationTainted.ql* | TODO |
-| cpp/comparison-with-wider-type | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-190/ComparisonWithWiderType.ql* | TODO |
-| cpp/hresult-boolean-conversion | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-253/HResultBooleanConversion.ql* | TODO |
-| cpp/openssl-heartbleed | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-327/OpenSslHeartbleed.ql* | TODO |
-| cpp/dangerous-function-overflow | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-676/DangerousFunctionOverflow.ql* | TODO |
-| cpp/dangerous-cin | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-676/DangerousUseOfCin.ql* | TODO |
-| cpp/incorrect-string-type-conversion | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-704/WcharCharConversion.ql* | TODO |
-| cpp/unsafe-dacl-security-descriptor | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-732/UnsafeDaclSecurityDescriptor.ql* | TODO |
+| cpp/bad-addition-overflow-check | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql* | [CWE-190](https://cwe.mitre.org/data/definitions/190.html), [CWE-192](https://cwe.mitre.org/data/definitions/192.html) |
+| cpp/wrong-number-format-arguments | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Format/WrongNumberOfFormatArguments.ql* | [CWE-234](https://cwe.mitre.org/data/definitions/234.html), [CWE-685](https://cwe.mitre.org/data/definitions/685.html) |
+| cpp/pointer-overflow-check | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/PointerOverflow.ql* | [CWE-758](https://cwe.mitre.org/data/definitions/758.html) |
+| cpp/unsafe-strncat | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/SuspiciousCallToStrncat.ql* | [CWE-119](https://cwe.mitre.org/data/definitions/119.html), [CWE-251](https://cwe.mitre.org/data/definitions/251.html), [CWE-676](https://cwe.mitre.org/data/definitions/676.html), [CWE-788](https://cwe.mitre.org/data/definitions/788.html) |
+| cpp/unsafe-use-of-this | */microsoft/cpp-queries/`<Version>`/Likely Bugs/OO/UnsafeUseOfThis.ql* | [CWE-670](https://cwe.mitre.org/data/definitions/670.html) |
+| cpp/boost/tls-settings-misconfiguration | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Protocols/TlsSettingsMisconfiguration.ql* | [CWE-326](https://cwe.mitre.org/data/definitions/326.html) |
+| cpp/boost/use-of-deprecated-hardcoded-security-protocol | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Protocols/UseOfDeprecatedHardcodedProtocol.ql* | [CWE-327](https://cwe.mitre.org/data/definitions/327.html) |
+| cpp/too-few-arguments | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Underspecified Functions/TooFewArguments.ql* | [CWE-234](https://cwe.mitre.org/data/definitions/234.html), [CWE-685](https://cwe.mitre.org/data/definitions/685.html) |
+| cpp/microsoft/public/badoverflowguard | */microsoft/cpp-queries/`<Version>`/Microsoft/Likely Bugs/Conversion/BadOverflowGuard.ql* | [CWE-190](https://cwe.mitre.org/data/definitions/190.html), [CWE-191](https://cwe.mitre.org/data/definitions/191.html) |
+| cpp/microsoft/public/drivers/incorrect-usage-of-rtlcomparememory | */microsoft/cpp-queries/`<Version>`/Microsoft/Likely Bugs/Drivers/IncorrectUsageOfRtlCompareMemory.ql* | N/A |
+| cpp/microsoft/public/weak-crypto/banned-encryption-algorithms | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/BannedEncryption.ql* | [CWE-327](https://cwe.mitre.org/data/definitions/327.html) |
+| cpp/microsoft/public/weak-crypto/capi/banned-modes | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/BannedModesCAPI.ql* | [CWE-327](https://cwe.mitre.org/data/definitions/327.html) |
+| cpp/microsoft/public/weak-crypto/cng/banned-modes | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/BannedModesCNG.ql* | [CWE-327](https://cwe.mitre.org/data/definitions/327.html) |
+| cpp/microsoft/public/weak-crypto/cng/hardcoded-iv | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/Cryptography/HardcodedIVCNG.ql* | [CWE-327](https://cwe.mitre.org/data/definitions/327.html) |
+| cpp/microsoft/public/enum-index | */microsoft/cpp-queries/`<Version>`/Microsoft/Security/MemoryAccess/EnumIndex/UncheckedBoundsEnumAsIndex.ql* | [CWE-125](https://cwe.mitre.org/data/definitions/125.html) |
+| cpp/command-line-injection | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-078/ExecTainted.ql* | [CWE-078](https://cwe.mitre.org/data/definitions/78.html), [CWE-088](https://cwe.mitre.org/data/definitions/88.html) |
+| cpp/uncontrolled-process-operation | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-114/UncontrolledProcessOperation.ql* | [CWE-114](https://cwe.mitre.org/data/definitions/114.html) |
+| cpp/badly-bounded-write | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-120/BadlyBoundedWrite.ql* | [CWE-120](https://cwe.mitre.org/data/definitions/120.html), [CWE-787](https://cwe.mitre.org/data/definitions/787.html), [CWE-805](https://cwe.mitre.org/data/definitions/805.html) |
+| cpp/overrunning-write | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-120/OverrunWrite.ql* | [CWE-120](https://cwe.mitre.org/data/definitions/120.html), [CWE-787](https://cwe.mitre.org/data/definitions/787.html), [CWE-805](https://cwe.mitre.org/data/definitions/805.html) |
+| cpp/no-space-for-terminator | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-131/NoSpaceForZeroTerminator.ql* | [CWE-120](https://cwe.mitre.org/data/definitions/120.html), [CWE-122](https://cwe.mitre.org/data/definitions/122.html), [CWE-131](https://cwe.mitre.org/data/definitions/131.html) |
+| cpp/user-controlled-null-termination-tainted | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-170/ImproperNullTerminationTainted.ql* | [CWE-170](https://cwe.mitre.org/data/definitions/170.html) |
+| cpp/comparison-with-wider-type | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-190/ComparisonWithWiderType.ql* | [CWE-190](https://cwe.mitre.org/data/definitions/190.html), [CWE-197](https://cwe.mitre.org/data/definitions/197.html), [CWE-835](https://cwe.mitre.org/data/definitions/835.html) |
+| cpp/hresult-boolean-conversion | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-253/HResultBooleanConversion.ql* | [CWE-253](https://cwe.mitre.org/data/definitions/253.html) |
+| cpp/openssl-heartbleed | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-327/OpenSslHeartbleed.ql* | [CWE-327](https://cwe.mitre.org/data/definitions/327.html), [CWE-788](https://cwe.mitre.org/data/definitions/788.html) |
+| cpp/dangerous-function-overflow | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-676/DangerousFunctionOverflow.ql* | [CWE-242](https://cwe.mitre.org/data/definitions/242.html), [CWE-676](https://cwe.mitre.org/data/definitions/676.html) |
+| cpp/dangerous-cin | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-676/DangerousUseOfCin.ql* | [CWE-676](https://cwe.mitre.org/data/definitions/676.html) |
+| cpp/incorrect-string-type-conversion | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-704/WcharCharConversion.ql* | [CWE-704](https://cwe.mitre.org/data/definitions/704.html) |
+| cpp/unsafe-dacl-security-descriptor | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-732/UnsafeDaclSecurityDescriptor.ql* | [CWE-732](https://cwe.mitre.org/data/definitions/732.html) |
 
 The *mustfix.qls* file includes the following **Must-Fix** code queries.
 
@@ -192,20 +192,20 @@ The *recommended.qls* suite includes all queries from the *mustfix.qls* suite (s
 
 | ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning |
 |---|---|---|
-| cpp/offset-use-before-range-check | */microsoft/cpp-queries/`<Version>`/Best Practices/Likely Errors/OffsetUseBeforeRangeCheck.ql* | TODO |
-| cpp/integer-multiplication-cast-to-long | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/IntMultToLong.ql* | TODO |
-| cpp/signed-overflow-check | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/SignedOverflowCheck.ql* | TODO |
-| cpp/upcast-array-pointer-arithmetic | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Conversion/CastArrayPointerArithmetic.ql* | TODO |
-| cpp/incorrect-not-operator-usage | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Likely Typos/IncorrectNotOperatorUsage.ql* | TODO |
-| cpp/suspicious-sizeof | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/SuspiciousSizeof.ql* | TODO |
-| cpp/uninitialized-local | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/UninitializedLocal.ql* | TODO |
-| cpp/unterminated-variadic-call | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-121/UnterminatedVarargsCall.ql* | TODO |
-| cpp/conditionally-uninitialized-variable | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql* | TODO |
-| cpp/suspicious-add-sizeof | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-468/SuspiciousAddWithSizeof.ql* | TODO |
-| cpp/suspicious-pointer-scaling | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-468/IncorrectPointerScaling.ql* | TODO |
-| cpp/suspicious-pointer-scaling-void | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-468/IncorrectPointerScalingVoid.ql* | TODO |
-| cpp/potentially-dangerous-function | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-676/PotentiallyDangerousFunction.ql* | TODO |
-| cpp/overflow-buffer | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-119/OverflowBuffer.ql* | TODO |
+| cpp/offset-use-before-range-check | */microsoft/cpp-queries/`<Version>`/Best Practices/Likely Errors/OffsetUseBeforeRangeCheck.ql* | [CWE-120](https://cwe.mitre.org/data/definitions/120.html), [CWE-125](https://cwe.mitre.org/data/definitions/125.html) |
+| cpp/integer-multiplication-cast-to-long | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/IntMultToLong.ql* | [CWE-190](https://cwe.mitre.org/data/definitions/190.html), [CWE-192](https://cwe.mitre.org/data/definitions/192.html), [CWE-197](https://cwe.mitre.org/data/definitions/197.html), [CWE-681](https://cwe.mitre.org/data/definitions/681.html) |
+| cpp/signed-overflow-check | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/SignedOverflowCheck.ql* | [CWE-128](https://cwe.mitre.org/data/definitions/128.html), [CWE-190](https://cwe.mitre.org/data/definitions/190.html) |
+| cpp/upcast-array-pointer-arithmetic | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Conversion/CastArrayPointerArithmetic.ql* | [CWE-119](https://cwe.mitre.org/data/definitions/119.html), [CWE-843](https://cwe.mitre.org/data/definitions/843.html) |
+| cpp/incorrect-not-operator-usage | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Likely Typos/IncorrectNotOperatorUsage.ql* | [CWE-480](https://cwe.mitre.org/data/definitions/480.html) |
+| cpp/suspicious-sizeof | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/SuspiciousSizeof.ql* | [CWE-467](https://cwe.mitre.org/data/definitions/467.html) |
+| cpp/uninitialized-local | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Memory Management/UninitializedLocal.ql* | [CWE-457](https://cwe.mitre.org/data/definitions/457.html), [CWE-665](https://cwe.mitre.org/data/definitions/665.html) |
+| cpp/unterminated-variadic-call | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-121/UnterminatedVarargsCall.ql* | [CWE-121](https://cwe.mitre.org/data/definitions/121.html) |
+| cpp/conditionally-uninitialized-variable | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql* | [CWE-457](https://cwe.mitre.org/data/definitions/457.html) |
+| cpp/suspicious-add-sizeof | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-468/SuspiciousAddWithSizeof.ql* | [CWE-468](https://cwe.mitre.org/data/definitions/468.html) |
+| cpp/suspicious-pointer-scaling | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-468/IncorrectPointerScaling.ql* | [CWE-468](https://cwe.mitre.org/data/definitions/468.html) |
+| cpp/suspicious-pointer-scaling-void | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-468/IncorrectPointerScalingVoid.ql* | [CWE-468](https://cwe.mitre.org/data/definitions/468.html) |
+| cpp/potentially-dangerous-function | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-676/PotentiallyDangerousFunction.ql* | [CWE-676](https://cwe.mitre.org/data/definitions/676.html) |
+| cpp/overflow-buffer | */microsoft/cpp-queries/`<Version>`/Security/CWE/CWE-119/OverflowBuffer.ql* | [CWE-119](https://cwe.mitre.org/data/definitions/119.html), [CWE-121](https://cwe.mitre.org/data/definitions/121.html), [CWE-122](https://cwe.mitre.org/data/definitions/122.html), [CWE-126](https://cwe.mitre.org/data/definitions/126.html) |
 
 The *recommended.qls* file includes the following recommended code queries.
 
