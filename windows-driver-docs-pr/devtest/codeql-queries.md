@@ -4,7 +4,7 @@ description: Learn about CodeQL queries and suites for testing Windows driver so
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 02/06/2026
+ms.date: 02/12/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---

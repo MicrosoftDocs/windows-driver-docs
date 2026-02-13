@@ -4,7 +4,7 @@ description: Learn how to use CodeQL analysis on Windows driver source code to i
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 02/10/2026
+ms.date: 02/12/2026
 ms.topic: how-to
 ---
 
