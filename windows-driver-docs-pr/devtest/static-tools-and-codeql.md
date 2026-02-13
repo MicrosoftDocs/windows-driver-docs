@@ -38,9 +38,9 @@ Use this matrix to determine the versions to be downloaded.
 | Windows 11, version 22H2 | [2.6.3](https://github.com/github/codeql-cli-binaries/releases/tag/v2.6.3) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4) | 1.0.13 (If using codeql 2.15.4)  | N/A   | 0.9.0 (If using codeql 2.15.4) | [WHCP_22H2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_22H2)     |
 | Windows 11, version 23H2 | [2.6.3](https://github.com/github/codeql-cli-binaries/releases/tag/v2.6.3) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4) | 1.0.13 (If using codeql 2.15.4)  | N/A   | 0.9.0 (If using codeql 2.15.4) | [WHCP_22H2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_22H2)     |
 | Windows 11, version 24H2 | [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4)                                                                               | 1.1.0                            | N/A   | 0.9.0                          | [WHCP_24H2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_24H2)      |
-| Windows Server 2025      | [2.20.1](https://github.com/github/codeql-cli-binaries/releases/tag/v2.20.1)                                                                               | 1.6.0                            | 0.0.4 | N/A                            | [WHCP_25H2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_25H2)     |
-| Windows 11, version 25H2 | [2.20.1](https://github.com/github/codeql-cli-binaries/releases/tag/v2.20.1)                                                                               | 1.6.0                            | 0.0.4 | N/A                            | [WHCP_25H2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_25H2)     |
-| Windows 11, version 26H1 | [2.24.1](https://github.com/github/codeql-cli-binaries/releases/tag/v2.24.1)                                                                               | 1.8.2                            | 0.0.4 | N/A                            | [WHCP_26H1](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_25H2)     |
+| Windows Server 2025      | [2.20.1](https://github.com/github/codeql-cli-binaries/releases/tag/v2.20.1)                                                                               | 1.8.0                            | 0.0.4 | N/A                            | [WHCP_25H2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_25H2)     |
+| Windows 11, version 25H2 | [2.20.1](https://github.com/github/codeql-cli-binaries/releases/tag/v2.20.1)                                                                               | 1.8.0                            | 0.0.4 | N/A                            | [WHCP_25H2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_25H2)     |
+| Windows 11, version 26H1 | [2.24.1](https://github.com/github/codeql-cli-binaries/releases/tag/v2.24.1)                                                                               | 1.8.2                            | 0.0.4 | N/A                            | [WHCP_26H1](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_26H1)     |
 
 > [!NOTE]
 > A version of the CodeQL pack isn't specified for CodeQL CLI 2.4.6 and 2.6.3 because only versions of CodeQL later than v2.7.0 support CodeQL packs.
@@ -53,6 +53,7 @@ For the most recent version information, including testing the latest in develop
 | CodeQL CLI version |
 |--------------------|
 | 2.24.1 |
+| 2.23.3 |
 | 2.21.4 |
 | 2.21.2 |
 | 2.20.1 |
