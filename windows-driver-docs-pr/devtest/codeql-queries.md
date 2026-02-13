@@ -13,9 +13,9 @@ ai-usage: ai-assisted
 
 The [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/windows-driver-suites)  provides three query suites to simplify the end-to-end driver developer workflow. These suites are included in the microsoft/windows-drivers CodeQL pack, and make use of queries unique to that pack and general C++ queries from the microsoft/cpp-queries pack.
 
-- *recommended.qls* contains queries recommended for driver developers to run and evaluate the results of. We recommend running this suite by default and reviewing results.
-- *mustrun.qls* contains queries that **must be run** in order to pass Windows Hardware Compatibility Program (WHCP) certification. These queries may not necessarily need to be fixed due to potential false positives, but should have their results reviewed and any real bugs found fixed. A DVL generated without results for these checks fails the Static Tools Logo test. For 26H1, *mustrun.qls* and *recommended.qls* are identical.
-- *mustfix.qls* serves as a subset of the must-run queries and contains queries that report issues that **must be fixed** in order to pass WHCP certification. A DVL generated with failures in these rules does not pass the Static Tools Logo test.
+- *recommended.qls* contains a broad set of checks for common driver and C/C++ bugs.  We recommend running this suite by default and reviewing results.
+- *mustrun.qls* contains checks that **must be run** in order to pass Windows Hardware Compatibility Program (WHCP) certification. Because these queries may produce false positives in some cases, failing these checks will not fail the Static Tools Logo test, but developers should review the results and fix and real bugs. A DVL generated without results for these checks fails the Static Tools Logo test. For 26H1, *mustrun.qls* and *recommended.qls* are identical.
+- *mustfix.qls* serves as a subset of the must-run queries and contains checks that report issues that **must be fixed** in order to pass WHCP certification. A DVL generated with failures in these rules does not pass the Static Tools Logo test.
 
 For details of the contents of the query suites, see [CodeQL Queries and Suites](../devtest/codeql-queries.md).
 
