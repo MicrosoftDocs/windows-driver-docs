@@ -11,19 +11,19 @@ ai-usage: ai-assisted
 
 # CodeQL Queries and Suites for Windows Driver Testing
 
-The [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/windows-driver-suites)  provides three query suites to simplify the end-to-end driver developer workflow. These suites are included in the microsoft/windows-drivers CodeQL pack, and make use of queries unique to that pack as well as general C++ queries.
+The [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/windows-driver-suites)  provides three query suites to simplify the end-to-end driver developer workflow. These suites are included in the microsoft/windows-drivers CodeQL pack, and make use of queries unique to that pack and general C++ queries.
 
-- *recommended.qls* contains queries recommended for driver developers to run and evaluate the results of.  We recommend running this suite by default and reviewing results.
-- *mustrun.qls* contains queries that **must be run** in order to pass WHCP certification.  These queries may not necessarily need to be fixed due to potential false positives, but should have their results reviewed and any real bugs found fixed.  A DVL generated without results for these checks will fail the Static Tools Logo test.  For 26H1, *mustrun.qls* and *recommended.qls* are identical.
-- *mustfix.qls* serves as a subset of the must-run queries and contains queries that report issues that **must be fixed** in order to pass WHCP certification.  A DVL generated with failures in these rules will not pass the Static Tools Logo test.
+- *recommended.qls* contains queries recommended for driver developers to run and evaluate the results of. We recommend running this suite by default and reviewing results.
+- *mustrun.qls* contains queries that **must be run** in order to pass Windows Hardware Compatibility Program (WHCP) certification. These queries may not necessarily need to be fixed due to potential false positives, but should have their results reviewed and any real bugs found fixed. A DVL generated without results for these checks fails the Static Tools Logo test. For 26H1, *mustrun.qls* and *recommended.qls* are identical.
+- *mustfix.qls* serves as a subset of the must-run queries and contains queries that report issues that **must be fixed** in order to pass WHCP certification. A DVL generated with failures in these rules does not pass the Static Tools Logo test.
 
 For details of the contents of the query suites, see [CodeQL Queries and Suites](../devtest/codeql-queries.md).
 
-### Must-Fix queries for WCHP certification
+### Must-Fix queries for WHCP certification
 
 The following subset of queries are **Must-Fix** for WHCP certification and are also included in the **Recommended Fix** suite.This set of rules [is included in *mustfix.qls*](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/windows-driver-suites/mustfix.qls).
 
-Many of the rules provided below correspond to [Common Weakness Enumeration (CWEs)](https://cwe.mitre.org/) or previous [Code Analysis Warnings](prefast-for-drivers-warnings.md). 
+Many of the following rules correspond to [Common Weakness Enumeration (CWEs)](https://cwe.mitre.org/) or previous [Code Analysis Warnings](prefast-for-drivers-warnings.md). 
 
 #### Must-Fix queries from the microsoft/windows-drivers pack
 
@@ -68,7 +68,7 @@ Many of the rules provided below correspond to [Common Weakness Enumeration (CWE
 
 ### Recommended Queries
 
-[The *recommended.qls* suite](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/windows-driver-suites/recommended.qls) includes all queries from the *mustfix.qls* suite (see above) plus the following additional queries from the microsoft/windows-drivers and microsoft/cpp-queries packs.
+[The *recommended.qls* suite](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/windows-driver-suites/recommended.qls) includes all queries from the *mustfix.qls* suite plus the following more queries from the microsoft/windows-drivers and microsoft/cpp-queries packs.
 
 #### General driver queries from the microsoft/windows-drivers pack
 
@@ -156,7 +156,7 @@ Many of the rules provided below correspond to [Common Weakness Enumeration (CWE
 
 ### Must-Run Queries
 
-[The *mustrun.qls* suite](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/windows-driver-suites/mustrun.qls) contains queries that **must be run** in order to pass WHCP certification.  These queries may not necessarily need to be fixed due to potential false positives, but should have their results reviewed and any real bugs found fixed.  A DVL generated without results for these checks will fail the Static Tools Logo test.  
+[The *mustrun.qls* suite](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/windows-driver-suites/mustrun.qls) contains queries that **must be run** in order to pass WHCP certification. These queries may not necessarily need to be fixed due to potential false positives, but should have their results reviewed and any real bugs found fixed. A DVL generated without results for these checks fails the Static Tools Logo test. 
 
 For 26H1, the queries exposed by *mustrun.qls* and *recommended.qls* are identical.
 
