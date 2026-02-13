@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 # CodeQL Queries and Suites for Windows Driver Testing
 
-The [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/windows-driver-suites)  provides three query suites to simplify the end-to-end driver developer workflow. These suites are included in the microsoft/windows-drivers CodeQL pack, and make use of queries unique to that pack and general C++ queries.
+The [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/windows-driver-suites)  provides three query suites to simplify the end-to-end driver developer workflow. These suites are included in the microsoft/windows-drivers CodeQL pack, and make use of queries unique to that pack and general C++ queries from the microsoft/cpp-queries pack.
 
 - *recommended.qls* contains queries recommended for driver developers to run and evaluate the results of. We recommend running this suite by default and reviewing results.
 - *mustrun.qls* contains queries that **must be run** in order to pass Windows Hardware Compatibility Program (WHCP) certification. These queries may not necessarily need to be fixed due to potential false positives, but should have their results reviewed and any real bugs found fixed. A DVL generated without results for these checks fails the Static Tools Logo test. For 26H1, *mustrun.qls* and *recommended.qls* are identical.
@@ -68,7 +68,7 @@ Many of the following rules correspond to [Common Weakness Enumeration (CWEs)](h
 
 ### Recommended Queries
 
-[The *recommended.qls* suite](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/windows-driver-suites/recommended.qls) includes all queries from the *mustfix.qls* suite plus the following more queries from the microsoft/windows-drivers and microsoft/cpp-queries packs.
+[The *recommended.qls* suite](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/windows-driver-suites/recommended.qls) includes all queries from the *mustfix.qls* suite plus the following queries from the microsoft/windows-drivers and microsoft/cpp-queries packs.
 
 #### General driver queries from the microsoft/windows-drivers pack
 
