@@ -21,13 +21,13 @@ For details of the contents of the query suites, see [CodeQL Queries and Suites]
 
 ### Must-Fix queries for WCHP certification
 
-The following subset of queries are **Must-Fix** for WHCP certification and are also included in the **Recommended Fix** suite.
+The following subset of queries are **Must-Fix** for WHCP certification and are also included in the **Recommended Fix** suite.This set of rules [is included in *mustfix.qls*](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/windows-driver-suites/mustfix.qls).
 
-This set of rules [is included in *mustfix.qls*](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/blob/main/src/windows-driver-suites/mustfix.qls).
+Many of the rules provided below correspond to [Common Weakness Enumeration (CWEs)](https://cwe.mitre.org/) or previous [Code Analysis Warnings](prefast-for-drivers-warnings.md). 
 
 #### Must-Fix queries from the microsoft/windows-drivers pack
 
-| ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning |
+| ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / [Code Analysis Warning](prefast-for-drivers-warnings.md) |
 |---|---|---|
 | [cpp/drivers/wdk-deprecated-api](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/WdkDeprecatedApis/wdk-deprecated-api.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/WdkDeprecatedApis/wdk-deprecated-api.ql* | N/A |
 | [cpp/drivers/extended-deprecated-apis](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/drivers/general/queries/ExtendedDeprecatedApis/ExtendedDeprecatedApis.md) | */microsoft/windows-drivers/`<Version>`/drivers/general/queries/ExtendedDeprecatedApis/ExtendedDeprecatedApis.ql* | [C28719 Warning](28719-banned-api-usage-use-updated-function-replacement.md), [C28726 Warning](28726-banned-api-usage-use-updated-function-replacement.md), [C28735 Warning](28735-banned-crimson-api-usage.md), [C28750 Warning](28750-banned-istrlen-usage.md) |
@@ -35,7 +35,7 @@ This set of rules [is included in *mustfix.qls*](https://github.com/microsoft/Wi
 
 #### Must-Fix queries from the microsoft/cpp-queries pack
 
-| ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning |
+| ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) |
 |---|---|---|
 | [cpp/bad-addition-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-bad-addition-overflow-check/) | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql* | [CWE-190](https://cwe.mitre.org/data/definitions/190.html), [CWE-192](https://cwe.mitre.org/data/definitions/192.html) |
 | [cpp/wrong-number-format-arguments](https://codeql.github.com/codeql-query-help/cpp/cpp-wrong-number-format-arguments/) | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Format/WrongNumberOfFormatArguments.ql* | [CWE-234](https://cwe.mitre.org/data/definitions/234.html), [CWE-685](https://cwe.mitre.org/data/definitions/685.html) |
@@ -126,7 +126,7 @@ This set of rules [is included in *mustfix.qls*](https://github.com/microsoft/Wi
 
 #### General C++ queries from the microsoft/windows-drivers pack
 
-| ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning |
+| ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / Code Analysis warning |
 |---|---|---|
 | [cpp/paddingbyteinformationdisclosure](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/microsoft/Likely%20Bugs/Boundary%20Violations/PaddingByteInformationDisclosure.md) | */microsoft/windows-drivers/`<Version>`/microsoft/Likely Bugs/Boundary Violations/PaddingByteInformationDisclosure.ql* | N/A |
 | [cpp/badoverflowguard](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/microsoft/Likely%20Bugs/Conversion/BadOverflowGuard.md) | */microsoft/windows-drivers/`<Version>`/microsoft/Likely Bugs/Conversion/BadOverflowGuard.ql* | N/A |
@@ -137,7 +137,7 @@ This set of rules [is included in *mustfix.qls*](https://github.com/microsoft/Wi
 
 #### General C++ queries from the microsoft/cpp-queries pack
 
-| ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) / corresponding Code Analysis warning |
+| ID | Location | [Common Weakness Enumeration](https://cwe.mitre.org/) |
 |---|---|---|
 | [cpp/offset-use-before-range-check](https://codeql.github.com/codeql-query-help/cpp/cpp-offset-use-before-range-check/) | */microsoft/cpp-queries/`<Version>`/Best Practices/Likely Errors/OffsetUseBeforeRangeCheck.ql* | [CWE-120](https://cwe.mitre.org/data/definitions/120.html), [CWE-125](https://cwe.mitre.org/data/definitions/125.html) |
 | [cpp/integer-multiplication-cast-to-long](https://codeql.github.com/codeql-query-help/cpp/cpp-integer-multiplication-cast-to-long/) | */microsoft/cpp-queries/`<Version>`/Likely Bugs/Arithmetic/IntMultToLong.ql* | [CWE-190](https://cwe.mitre.org/data/definitions/190.html), [CWE-192](https://cwe.mitre.org/data/definitions/192.html), [CWE-197](https://cwe.mitre.org/data/definitions/197.html), [CWE-681](https://cwe.mitre.org/data/definitions/681.html) |
