@@ -4,7 +4,7 @@ description: Learn how to use CodeQL analysis on Windows driver source code to i
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 07/25/2025
+ms.date: 02/12/2026
 ms.topic: how-to
 ---
 
@@ -23,7 +23,7 @@ In this article, you:
 
 > [!NOTE]
 > Visual Studio (VS) 17.8 broke compatibility with older versions of CodeQL used in the WHCP_21H2 and WHCP_22H2 branches.
- CodeQL CLI version 2.15.4 is validated for use with WHCP 21H2 and WHCP 22H2 when using Visual Studio 17.8 or greater. When using Visual Studio 17.7 or earlier, use version 2.4.6 or version 2.6.3. For the WHCP Program, use the CodeQL CLI version and Windows release you're certifying for - version 2.4.6, version 2.6.3, or version 2.15.4. For general use with the main branch, use CodeQL CLI version 2.15.4.
+ CodeQL CLI version 2.15.4 is validated for use with WHCP 21H2 and WHCP 22H2 when using Visual Studio 17.8 or greater. When using Visual Studio 17.7 or earlier, use version 2.4.6 or version 2.6.3. For the WHCP Program, use the CodeQL CLI version and Windows release you're certifying for, per the following table. 
 
 Select the tab for your scenario:
 
@@ -31,18 +31,19 @@ Select the tab for your scenario:
 
 Use this matrix to determine the versions to be downloaded.
 
-| Windows Release          | CodeQL CLI version                                    | microsoft/windows-drivers CodeQL pack version | microsoft/cpp-queries CodeQL pack version | codeql/cpp-queries version | Associated repo branch to use |
+| Windows Release          | CodeQL CLI version                                    | microsoft/windows-drivers CodeQL pack version | microsoft/cpp-queries CodeQL pack version | codeql/cpp-queries version | Associated branch |
 |--------------------------|-------------------------------------------------------|-----------------------------------------------|-----------------------------------------|---------------|-----------|
-| Windows Server 2022      | [2.4.6](https://github.com/github/codeql-cli-binaries/releases/tag/v2.4.6) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4) | 1.0.13 (If using codeql 2.15.4)  | N/A   | 0.9.0 (If using codeql 2.15.4) | WHCP_21H2     |
-| Windows 11               | [2.4.6](https://github.com/github/codeql-cli-binaries/releases/tag/v2.4.6) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4) | 1.0.13 (If using codeql 2.15.4)  | N/A   | 0.9.0 (If using codeql 2.15.4) | WHCP_21H2     |
-| Windows 11, version 22H2 | [2.6.3](https://github.com/github/codeql-cli-binaries/releases/tag/v2.6.3) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4) | 1.0.13 (If using codeql 2.15.4)  | N/A   | 0.9.0 (If using codeql 2.15.4) | WHCP_22H2     |
-| Windows 11, version 23H2 | [2.6.3](https://github.com/github/codeql-cli-binaries/releases/tag/v2.6.3) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4) | 1.0.13 (If using codeql 2.15.4)  | N/A   | 0.9.0 (If using codeql 2.15.4) | WHCP_22H2     |
-| Windows 11, version 24H2 | [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4)                                                                               | 1.1.0                            | N/A   | 0.9.0                          | WHCP_24H2     |
-| Windows Server 2025      | [2.20.1](https://github.com/github/codeql-cli-binaries/releases/tag/v2.20.1)                                                                               | 1.6.0                            | 0.0.4 | N/A                            | WHCP_25H2     |
-| Windows 11, version 25H2 | [2.20.1](https://github.com/github/codeql-cli-binaries/releases/tag/v2.20.1)                                                                               | 1.6.0                            | 0.0.4 | N/A                            | WHCP_25H2     |
+| Windows Server 2022      | [2.4.6](https://github.com/github/codeql-cli-binaries/releases/tag/v2.4.6) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4) | 1.0.13 (If using codeql 2.15.4)  | N/A   | 0.9.0 (If using codeql 2.15.4) | [WHCP_21H2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_21H2)     |
+| Windows 11               | [2.4.6](https://github.com/github/codeql-cli-binaries/releases/tag/v2.4.6) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4) | 1.0.13 (If using codeql 2.15.4)  | N/A   | 0.9.0 (If using codeql 2.15.4) | [WHCP_21H2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_21H2)     |
+| Windows 11, version 22H2 | [2.6.3](https://github.com/github/codeql-cli-binaries/releases/tag/v2.6.3) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4) | 1.0.13 (If using codeql 2.15.4)  | N/A   | 0.9.0 (If using codeql 2.15.4) | [WHCP_22H2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_22H2)     |
+| Windows 11, version 23H2 | [2.6.3](https://github.com/github/codeql-cli-binaries/releases/tag/v2.6.3) or [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4) | 1.0.13 (If using codeql 2.15.4)  | N/A   | 0.9.0 (If using codeql 2.15.4) | [WHCP_22H2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_22H2)     |
+| Windows 11, version 24H2 | [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4)                                                                               | 1.1.0                            | N/A   | 0.9.0                          | [WHCP_24H2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_24H2)      |
+| Windows Server 2025      | [2.20.1](https://github.com/github/codeql-cli-binaries/releases/tag/v2.20.1)                                                                               | 1.8.0                            | 0.0.4 | N/A                            | [WHCP_25H2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_25H2)     |
+| Windows 11, version 25H2 | [2.20.1](https://github.com/github/codeql-cli-binaries/releases/tag/v2.20.1)                                                                               | 1.8.0                            | 0.0.4 | N/A                            | [WHCP_25H2](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_25H2)     |
+| Windows 11, version 26H1 | [2.24.1](https://github.com/github/codeql-cli-binaries/releases/tag/v2.24.1)                                                                               | 1.8.2                            | 0.0.4 | N/A                            | [WHCP_26H1](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/WHCP_26H1)     |
 
 > [!NOTE]
-> A version of the CodeQL pack is not specified for CodeQL CLI 2.4.6 and 2.6.3 because only versions of CodeQL later than v2.7.0 support CodeQL packs.
+> A version of the CodeQL pack isn't specified for CodeQL CLI 2.4.6 and 2.6.3 because only versions of CodeQL later than v2.7.0 support CodeQL packs.
 
 ### CodeQL versions validated for use with WHCP
 
@@ -51,6 +52,8 @@ For the most recent version information, including testing the latest in develop
 
 | CodeQL CLI version |
 |--------------------|
+| 2.24.1 |
+| 2.23.3 |
 | 2.21.4 |
 | 2.21.2 |
 | 2.20.1 |
@@ -62,7 +65,7 @@ For general use of CodeQL with other versions of Windows outside of the WHCP pro
 
 | CodeQL CLI version                                                           | microsoft/windows-drivers CodeQL pack version | microsoft/cpp-queries version | Branch to use |
 |------------------------------------------------------------------------------|-----------------------------------------------|----------------------------|---------------|
-| [2.15.4 or greater](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4) | [Latest stable version](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/pkgs/container/windows-drivers) | [0.0.4](https://github.com/orgs/microsoft/packages/container/package/cpp-queries)  | main          |
+| [2.24.1 or greater](https://github.com/github/codeql-cli-binaries/releases/tag/v2.24.1) | [Latest stable version](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/pkgs/container/windows-drivers) | [0.0.4](https://github.com/orgs/microsoft/packages/container/package/cpp-queries)  | main          |
 
 ---
 
@@ -74,11 +77,11 @@ For general use of CodeQL with other versions of Windows outside of the WHCP pro
    C:\> mkdir C:\codeql-home
    ```
 
-1. Refer to the previous tables to select which version of CodeQL CLI to use in accordance with the desired branch of Microsoft's driver queries. If you're performing analysis as part of the WHCP program, refer to the table **For Windows Hardware Compatibility Program Use**, otherwise use Main branch and [2.15.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.15.4). Using a different version may result in a database incompatible with the libraries.
+1. Refer to the previous tables to select which version of CodeQL CLI to use in accordance with the desired branch of Microsoft's driver queries. If you're performing analysis as part of the WHCP program, refer to the table **For Windows Hardware Compatibility Program Use**, otherwise use Main branch and the version of the CLI listed in the GitHub README or the preceding "for general use" table. Using a different version may result in a database incompatible with the libraries.
 
 1. Navigate to the CodeQL CLI binaries release associated with the previous tables, and download the zip file in accordance with your project's architecture. For example, for 64 bit Windows *codeql-win64.zip*.
 
-1. Extract the Codeql CLI directory to the one you just created, for example: *C:\codeql-home\codeql\\*.
+1. Extract the Codeql CLI directory to the one you created, for example: *C:\codeql-home\codeql\*.
 
 1. Verify CodeQL is installed correctly by checking the version:
 
@@ -132,9 +135,9 @@ To get help for subcommands, list them hierarchically, for example
 
 Select the tab for your build environment:
 
-## [VS 17.8 or greater and CodeQL 2.15.4](#tab/latest)
+## [VS 17.8 or greater and CodeQL 2.15.4 or later](#tab/latest)
 
-Use this procedure if you're using Visual Studio 2022 17.8 or greater with WHCP_21H2 or WHCP_22H2 and CodeQL CLI version 2.15.4. 
+Use this procedure if you're using Visual Studio 2022 17.8 or greater for WHCP certification for 21H2 or later and CodeQL CLI version 2.15.4 or later.
 
 > [!NOTE]
 > If you ran CodeQL tests with an earlier version of CodeQL, make sure to remove the old CodeQL submodule if you still have an old version of the cloned repo. CodeQL might try to use the queries in the submodule by default, which may cause errors because of mismatched versions.
@@ -143,25 +146,22 @@ Use this procedure if you're using Visual Studio 2022 17.8 or greater with WHCP_
 
 CodeQL introduced CodeQL Packages (*CodeQL packs* or *query packs*) in version 2.7.0, eliminating the need to clone the *Windows-Driver-Developer-Supplemental-Tools* repo to use the queries for certification.
 
-> [!NOTE]
-> It is possible to skip step 1, as the `--download` option downloads any necessary queries later when running the analysis process. 
-
 1. Download the correct version of the microsoft/windows-drivers pack from the [Windows Hardware Compatibility Program Use](#select-the-appropriate-codeql-version-for-your-driver) table. Specify the `@<version>` in the following command.
 
 ```console
 C:\codeql-home\> codeql pack download microsoft/windows-drivers@<version>
 ```
 
-For example, if using WHCP_24H2, run the following command to download the 1.1.0 windows-drivers query pack:
+For example, if you're certifying for WHCP 26H1, run the following command to download the 1.8.2 windows-drivers query pack:
 
 ```console
-C:\codeql-home\> codeql pack download microsoft/windows-drivers@1.1.0
+C:\codeql-home\> codeql pack download microsoft/windows-drivers@1.8.2
 ```
 
-Use this command to download version 0.9.0 of the CodeQL cpp-queries query pack.
+Use this command to download version 0.0.4 of the Microsoft cpp-queries query pack.
 
 ```console
-C:\codeql-home\> codeql pack download microsoft/cpp-queries@0.9.0
+C:\codeql-home\> codeql pack download microsoft/cpp-queries@0.0.4
 ```
 
 CodeQL installs the query packs to the default directory:
@@ -169,16 +169,13 @@ CodeQL installs the query packs to the default directory:
 `C:\Users\<current user>\.codeql\packages\microsoft\windows-drivers\<downloaded version>\`
 
 > [!IMPORTANT]
-> Do not change the install directory or move the installed query pack.
+> Don't change the install directory or move the installed query pack.
 
-### Download the Windows driver query suites
+Microsoft provides three query suites to simplify the end-to-end driver developer workflow. These suites are included in the microsoft/windows-drivers CodeQL pack.
 
-Microsoft provides two query suites to simplify the end-to-end driver developer workflow. The *recommended.qls* suite is a superset of all the queries Microsoft deems valuable for driver developers, and *mustfix.qls* suite contains queries deemed **"Must-Fix"** for WHCP certification. *mustfix.qls* must be run and passed in order to pass the Static Tools Logo Test. 
-
-Copy the two query suite files from [https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/windows-driver-suites](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools/tree/main/src/windows-driver-suites) to your local PC.
-
-- *recommended.qls*
-- *mustfix.qls*
+- *recommended.qls* contains a broad set of checks for common driver and C/C++ bugs.  We recommend running this suite by default and reviewing results.
+- *mustrun.qls* contains checks that **must be run** in order to pass Windows Hardware Compatibility Program (WHCP) certification. Because these queries may produce false positives in some cases, failing these checks will not fail the Static Tools Logo test, but developers should review the results and fix and real bugs. A DVL generated without results for these checks fails the Static Tools Logo test. For 26H1, *mustrun.qls* and *recommended.qls* are identical.
+- *mustfix.qls* serves as a subset of the must-run queries and contains checks that report issues that **must be fixed** in order to pass WHCP certification. A DVL generated with failures in these rules does not pass the Static Tools Logo test.
 
 For details of the contents of the query suites, see [CodeQL Queries and Suites](../devtest/codeql-queries.md).
 
@@ -195,7 +192,7 @@ These examples assume use of a Windows development environment and that the inst
 1. Use the CodeQL command to create a database with these parameters:
 
     - The first parameter is a link to your database directory. For example, C:\codeql-home\databases\MyDriverDatabase. (This command fails if the directory already exists.)  
-    - `--language` or `-l` specifies the language or languages your source code is in. This can be a comma-separated list, such as [cpp, javascript].  
+    - `--language` or `-l` specifies the language or languages your source code is in. This parameter can be a comma-separated list, such as [cpp, javascript].  
     - `--source-root` or `-s` specifies the path to your source code.  
     - `--command` or `-c` specifies your build command or the path to your build file.  
 
@@ -228,7 +225,7 @@ At this point, the database creation is complete and the next step is to perform
     - the first parameter is a link to your database directory. For example, *C:\codeql-home\databases\MyDriverDatabase*. (Note: this command fails if the directory doesn't exist.)
     - `--format` is the file type of the output file. Options include: SARIF and CSV. (**For WHCP Users** use SARIF format.)
     - `--output` is the path to where you want the output file, be sure to include the format in the file name. (This command fails if the directory doesn't already exist.)
-    - the query specifiers parameter is a space separated list of arguments which can include:
+    - the query specifiers parameter is a space separated list of arguments that can include:
         - a path to a query file
         - a path to a directory containing query files
         - a path to a query suite file
@@ -241,7 +238,7 @@ At this point, the database creation is complete and the next step is to perform
     Example:
 
     ```console
-    codeql database analyze D:\DriverDatabase suites/windows\recommended.qls --format=sarifv2.1.0 --output=D:\DriverAnalysis1.sarif 
+    codeql database analyze D:\DriverDatabase microsoft/windows-drivers:windows-driver-suites/recommended.qls --format=sarifv2.1.0 --output=D:\DriverAnalysis1.sarif
     ```
 
     For more information or help using the `database analyze` command, see [Analyzing Databases with the CodeQL CLI](https://codeql.github.com/docs/codeql-cli/analyzing-databases-with-the-codeql-cli/), [Using a CodeQL pack to analyze a CodeQL database](https://docs.github.com/en/code-security/codeql-cli/using-the-advanced-functionality-of-the-codeql-cli/publishing-and-using-codeql-packs#using-a-codeql-pack-to-analyze-a-codeql-database), or [Using CodeQL help](#using-codeql-help).
@@ -252,13 +249,13 @@ At this point, the database creation is complete and the next step is to perform
 
 These instructions only apply when using both Visual Studio 17.7 or earlier, along with CodeQL 2.6.3 or 2.4.6.
 
-2. Clone and install the Windows Driver Developer Supplemental Tools repository which contains the CodeQL queries specific for drivers:
+2. Clone and install the Windows Driver Developer Supplemental Tools repository that contains the CodeQL queries specific for drivers:
 
     `git clone https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools.git --recurse-submodules`
 
 3. Refer to the [Windows Hardware Compatibility Program Use](#select-the-appropriate-codeql-version-for-your-driver) table to identify the correct branch for the version of Windows you wish to certify for.
 
-4. Use the `git checkout` command to checkout the identified branch.
+4. Use the `git checkout` command to check out the identified branch.
 
 5. Confirm that the submodules are present in the codeql-home directory.
 
@@ -276,7 +273,7 @@ These instructions only apply when using both Visual Studio 17.7 or earlier, alo
         ```
     1.  Use the CodeQL command to create a database using the following parameters:
 
-        - The first parameter is a link to your database directory, for example: C:\codeql-home\databases\MyDriverDatabase. (Note: this command will fail if the directory already exists).
+        - The first parameter is a link to your database directory, for example: C:\codeql-home\databases\MyDriverDatabase. (This command fails if the directory already exists.)
         - `--language` or `-l` is the language or languages your source code is in (the parameters can be a comma separated list, for example [cpp, javascript]).
         - `-- source` or `-s` is the path to your source code.
         - `--command` or `-c` is your build command or the path to your build file.
@@ -318,19 +315,19 @@ These instructions only apply when using both Visual Studio 17.7 or earlier, alo
 
 ## View and Interpret Results
 
-We will be focusing on SARIF format for this section as it is what is required for the following steps, though you're welcome to use CSV format if it suits your needs better.
+This section focuses on generating and interpreting results in SARIF format. Other results formats such as CSV are available, but are not supported by the Static Tools Logo test.
 
 Static Analysis Results Interchange Format (SARIF) is a JSON type format used for sharing static analysis results. Read more about the standard at [OASIS Static Analysis Results Interchange Format (SARIF)](https://github.com/oasis-tcs/sarif-spec), how CodeQL uses [SARIF Output](https://codeql.github.com/docs/codeql-cli/sarif-output/#sarif-output), and [the schema json](https://github.com/oasis-tcs/sarif-spec/blob/main/sarif-2.1/schema/sarif-schema-2.1.0.json).
 
 There are several methods for interpreting the analysis results, including manually sorting through the objects. Here are a few that we use:
 
-- The [Microsoft Sarif Viewer (Web)](https://microsoft.github.io/sarif-web-component/) has functionality which allows you to drag and drop your SARIF file into the viewer, then displays results categorized by rule. This is a very quick and easy way to see the count of violations or which queries have violations, but less easy to find source code information aside from the line number. Note that the page will not update if there are no violations.
+- The [Microsoft Sarif Viewer (Web)](https://microsoft.github.io/sarif-web-component/) has functionality that allows you to drag and drop your SARIF file into the viewer, then displays results categorized by rule. This viewer is a quick and easy way to see the count of violations or which queries have violations, but only provides limited information on where in the source code the violation occurred. The page doesn't update if there are no violations.
 
 - The [Microsoft SARIF Viewer for Visual Studio](https://marketplace.visualstudio.com/items?itemName=WDGIS.MicrosoftSarifViewer) is great for displaying the results within Visual Studio for seamless transition from results to source code.
 
 - The [SARIF extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-SarifVSCode.sarif-viewer) opens a preview pane and displays any errors, warnings, or problems reported by CodeQL. To display the Sarif file in a readable format, open the file in Visual Studio Code and select *Shift-Alt-F*. 
 
-The most important section of the SARIF file is the `Results` property within the `Run` object. Each query will have a Results property with details about any detected violations and where it occurred. If no violations are found, the property value will be empty.
+The most important section of the SARIF file is the `Results` property within the `Run` object. Each query has a Results property with details about any detected violations and where it occurred. If no violations are found, the property value is empty.
 
 Queries are classified using statuses such as *error*, *warning*, and *problem*. However, this classification is separate from how the Windows Hardware Compatibility Program and the Static Tools Logo Test grade the results. Any driver with defects from any query within the **Must-Fix** suite will **not pass** the Static Tools Logo Test and will **fail to be certified**, regardless of the query classification in the raw query file (for example, *warning*).
 
@@ -338,7 +335,7 @@ Queries are classified using statuses such as *error*, *warning*, and *problem*.
 
 The Static Tools Logo Test parses a [Driver Verification Log (DVL)](../develop/creating-a-driver-verification-log.md), which is the compiled result of the CodeQL static analysis you run on the driver source code. There are three ways to convert your SARIF file to DVL format: Visual Studio, MSBuild, or from the command line using the *dvl.exe* tool. For complete steps, see [Creating a Driver Verification Log](../develop/creating-a-driver-verification-log.md).
 
-Further instructions for the Static Tools Logo HLK Test and guidance on where to place the DVL file can be found in [Running the Static Tools Logo test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae#running-the-test).
+Further instructions for the Static Tools Logo Hardware Lab Kit (HLK) Test and guidance on where to place the DVL file can be found in [Running the Static Tools Logo test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae#running-the-test).
 
 ## Troubleshooting
 
@@ -360,7 +357,7 @@ Unpacked in: C:\codeql-home\codeql\
    use 'codeql resolve qlpacks' and 'codeql resolve languages'.
 ```
 
-The database upgrade command will update a database. Be aware that this is a one way upgrade and is not reversible. For more information, see [database upgrade](https://codeql.github.com/docs/codeql-cli/manual/database-upgrade/).
+The database upgrade command updates a database. This upgrade is one way and isn't reversible. For more information, see [database upgrade](https://codeql.github.com/docs/codeql-cli/manual/database-upgrade/).
 
 ## Optional procedures
 
@@ -368,19 +365,19 @@ Optionally, you can suppress CodeQL results or run the build and analyze procedu
 
 ### Suppressing CodeQL Results 
 
-CodeQL for drivers supports suppressing results. Suppressions are currently provided as a convenience to help developers triage issues and reduce noise, not as a way to bypass the **Must-Fix**  checks. They have no impact on generating a Driver Verification Log or passing the Static Tools Logo test at this time. To use suppressions, you must run the DriverAlertSuppression.ql query at the same time as the other queries or suites you wish to run. By default, this query is enabled when running our suites from our githubs main/development branch.
+CodeQL for drivers supports suppressing results. Suppressions are currently provided as a convenience to help developers triage issues and reduce noise, not as a way to bypass the **Must-Fix**  checks. They have no impact on generating a Driver Verification Log or passing the Static Tools Logo test at this time. To use suppressions, you must run the DriverAlertSuppression.ql query at the same time as the other queries or suites you wish to run.
 
-For checks that have been ported from Code Analysis, existing Code Analysis suppressions will be honored. For more information, see [C++ warning pragma](/cpp/preprocessor/warning).
+For checks ported from Code Analysis, existing Code Analysis suppressions are honored. For more information, see [C++ warning pragma](/cpp/preprocessor/warning).
 
-- `Known limitation:` You cannot combine a #pragma(disable) and #pragma(suppress) in the same line at this time.
+- `Known limitation:` You can't combine a #pragma(disable) and #pragma(suppress) in the same line at this time.
 
 For checks that are new to CodeQL, suppress them by doing one of two things:  
 
 - Write a `#pragma(suppress:the-rule-id-here)` annotation (without quotes) on the line above the violation, as you do for Code Analysis. Replace "the-rule-id-here" with the `@id` value in the query's metadata, viewable at the top of the file.  
 
-- Write a comment on the line above comprised of the text “lgtm[the-rule-id-here]” (minus quotes). You will need to run the standard [C/C++ alert suppression query](https://github.com/github/codeql/blob/main/cpp/ql/src/AlertSuppression.ql) instead of the driver alert suppression query. 
+- Write a comment on the line above comprised of the text “lgtm[the-rule-id-here]” (minus quotes). You need to run the standard [C/C++ alert suppression query](https://github.com/github/codeql/blob/main/cpp/ql/src/AlertSuppression.ql) instead of the driver alert suppression query. 
 
-Once a suppression is present and recognized, the resulting SARIF file will include data that a result was suppressed, and most result viewers will not show the result by default.
+Once a suppression is present and recognized, the resulting SARIF file includes data that a result is suppressed. Most result viewers don't show suppressed results by default.
 
 ### Visual Studio Post-Build Event 
 
@@ -388,7 +385,7 @@ If you're building the driver using Visual Studio, you can configure CodeQL quer
 
 In this example, a small batch file is created in the target location and called as a post build event. For more information about Visual Studio C++ build events, see [Specifying build events](/cpp/build/specifying-build-events).
 
-1. Create a small batch file which re-creates the CodeQL database then runs the desired queries on it. In this example, the batch file will be named `RunCodeQLRebuildQuery.bat`. Modify the paths shown in the example batch file to match your directory locations.
+1. Create a small batch file that re-creates the CodeQL database then runs the desired queries on it. In this example, the batch file is named `RunCodeQLRebuildQuery.bat`. Modify the paths shown in the example batch file to match your directory locations.
 
    ```console
    ECHO ">>> Running CodeQL Security Rule V 1.0 <<<"
@@ -401,7 +398,7 @@ In this example, a small batch file is created in the target location and called
    SET ERRORLEVEL = 0
    ```
 
-1. The [devenv.exe / Edit](/visualstudio/ide/reference/edit-devenv-exe) option is used in the batch file to open the SARIF results file in the existing instance of Visual Studio. To view the SARIF results install the [Microsoft SARIF Viewer for Visual Studio](https://marketplace.visualstudio.com/items?itemName=WDGIS.MicrosoftSarifViewer) and refer to the instructions there for more information.
+1. The [devenv.exe / Edit](/visualstudio/ide/reference/edit-devenv-exe) option is used in the batch file to open the SARIF results file in the existing instance of Visual Studio. To view the SARIF results, install the [Microsoft SARIF Viewer for Visual Studio](https://marketplace.visualstudio.com/items?itemName=WDGIS.MicrosoftSarifViewer) and refer to the instructions there for more information.
 
 1. In the driver project, navigate to project properties. In the  **Configuration** pull down, select the build configuration that you wish to check with CodeQL - we recommend **Release**. Creating the CodeQL database and running the queries takes a few minutes, so we don't recommend you run CodeQL on the Debug configuration of your project.
 
