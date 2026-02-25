@@ -81,7 +81,7 @@ To submit your new hardware, follow these steps:
 
 1. Review the results. If your submission fails, make any necessary changes and resubmit.
    >[Notice]
-   >Driver package containing files that are not referenced by an INF will see a message here. For more information, please visit this [documentation](aka.ms/UnreferencedInfFile).
+   >Driver package containing files that are not referenced by an INF will see a message here. For more information, please visit this [documentation](https://aka.ms/UnreferencedInfFile).
 
 ## Troubleshoot submission errors
 
