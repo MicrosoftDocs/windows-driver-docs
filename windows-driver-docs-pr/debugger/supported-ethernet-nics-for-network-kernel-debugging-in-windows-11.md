@@ -635,6 +635,10 @@ For vendor ID 15AD, these device IDs are supported:
 
 ### Vendor ID 1D0F, Amazon.com Inc
 
+*New in Windows 11 25H2, 26200.7309 and 26100.7309*
+
+KDNet.exe and VerifiedNICList.xml files are part of the WinDbg Application released via the Microsoft Store as of March, 2026.
+
 For vendor ID 1D0F, these device IDs are supported:
 
 EC20
