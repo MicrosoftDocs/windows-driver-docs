@@ -181,6 +181,10 @@ This object represents the downloads for a given submission.
     {
       "type": "certificationReport",
       "url": "https:// manage.devcenter.microsoft.com/dashboard/hardware/Driver/DownloadCertificationReport/29963920/13635057453741329/1152921504621441930"
+    },
+    {
+      "type": "unreferencedFilesReport",
+      "url": "<SAS URL from Hardware API>"
     }
   ],
   "messages": []
