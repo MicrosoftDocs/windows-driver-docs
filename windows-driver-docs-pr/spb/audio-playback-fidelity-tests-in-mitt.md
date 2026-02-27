@@ -1,9 +1,12 @@
 ---
 title: Audio Playback Fidelity Tests in MITT
 description: The audio module on the MITT board is used to detect errors that occur at the transport level of the audio device by detecting sine wave frequency accuracy (at zero cross) and counting instances where the frequency or offset is incorrect.
-ms.date: 01/12/2024
+ms.date: 02/27/2026
 ms.topic: how-to
 ---
+
+> [!CAUTION]
+> The following tests are deprecated and are not included in MITT software package versions after 9.0.0.
 
 # Audio playback fidelity tests in MITT
 
@@ -35,10 +38,10 @@ The audio module on the MITT board is used to detect errors that occur at the tr
 
 **HKEY\_CURRENT\_USER\\Software\\Microsoft\\MITT\\AudioUnit** \\**** = RunAudioTest
 
-Data type  
+Data type
 REG\_DWORD
 
-Description  
+Description
 Set to 0.
 
 This will play a series of test tones, from 500hz to 18khz and report the number of glitches detected. If a high number of glitches, such as 10000+, is detected, verify that the cable is connected correctly and that the volume is not muted. Any interrupted signal is detected with a glitch per expected crossing so the number can be very high.
