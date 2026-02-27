@@ -5,12 +5,12 @@ ms.date: 02/27/2026
 ms.topic: how-to
 ---
 
-> [!CAUTION]
-> The following tests are deprecated and are not included in MITT software package versions after 9.0.0.
-
 # Audio playback fidelity tests in MITT
 
 The audio module on the MITT board is used to detect errors that occur at the transport level of the audio device by detecting sine wave frequency accuracy (at zero cross) and counting instances where the frequency or offset is incorrect. Lack of a signal or missed packets results in a shifted waveform that is audible and detectable automatically via this mechanism.
+
+> [!CAUTION]
+> The following tests are deprecated and are not included in MITT software package versions after 9.0.0.
 
 ## Before you begin
 

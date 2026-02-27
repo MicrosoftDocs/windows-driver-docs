@@ -5,9 +5,6 @@ ms.date: 02/27/2026
 ms.topic: concept-article
 ---
 
-> [!CAUTION]
-> The following tests are deprecated and are not included in MITT software package versions after 9.0.0.
-
 # Capacitive touch tests in MITT
 
 Capacitive touch tests in the MITT software package require MCATT (Microsoft Capacitive Applications Test Tool). It's an automation tool for validating capacitive based touch hardware (touchpads and touchscreens). MCATT includes a simple interface for programming the MCATT device and automated tests. You can use the tests to detect ghost points or determine the time table for the first touch input to propagate after system wake.
@@ -17,6 +14,9 @@ You can use MCATT for these test cases:
 - Stress testing
 - Targeted latency measurements
 - SimpleIo/Device Fundamentals scenarios such as power transitions while performing input on the pad.
+
+> [!CAUTION]
+> The following tests are deprecated and are not included in MITT software package versions after 9.0.0.
 
 ## Before you begin
 
