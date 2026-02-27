@@ -7,7 +7,7 @@ ms.topic: install-set-up-deploy
 
 # Download the MITT software package
 
-The MITT software package contains several tools to be used to test simple peripheral buses such as I2C and SPI with the MITT board. The suite of tools include utilities to update firmware, send requests to simulate test cases, and test driver packages, test the functionality of the bus, its controller and devices connected to the bus.
+The MITT software package contains several tools to be used to test simple peripheral buses such as I2C, SPI, and UART with the MITT board. The suite of tools include utilities to update firmware, send requests to simulate test cases, and test driver packages, test the functionality of the bus, its controller and devices connected to the bus.
 
 **[Download the MITT software package](https://www.microsoft.com/en-us/download/details.aspx?id=108567)**
 
@@ -16,7 +16,7 @@ The MITT software package contains several tools to be used to test simple perip
 | Modules | Description |
 |---|---|
 | MuttUtil | MuttUtil.exe</br><ul><li>Sends requests to communicate with various programmable blocks on the MITT board, such as the GPIO, I2C, SPI interfaces.</li><li>Updates the firmware on the MITT board.</li></ul></br>MuttUtil.dll is the user mode library that sends requests to the MITT board, which are initiated by MuttUtil.exe. |
-| MITTI2CTest.dll</br></br>MITTSPITest.dll</br></br>WITTTest driver package</br></br>SPBCmd.exe | <ul><li>MITTI2CTest.dll &mdash; Test binary for I2C controller and bus verification.</li><li>MITTSPITTest.dll &mdash; Test binary for SPI controller and bus that validates bus-level activity.</li><li>WITTTest driver package &mdash; Installation (.inf), catalog (.cat), and binary (.sys) for the test driver for devices connected to simple peripheral buses.</li><li>SPBCmd.exe &mdash; Sends requests to the test driver to manually validate data transfers over I2C and SPI buses.</li></ul> |
+| MITTI2CTest.dll</br></br>MITTSPITest.dll</br></br>WITTTest driver package</br></br>SPBCmd.exe | <ul><li>MITTI2CTest.dll &mdash; Test binary for I2C controller and bus verification.</li><li>MITTSPITest.dll &mdash; Test binary for SPI controller and bus that validates bus-level activity.</li><li>WITTTest driver package &mdash; Installation (.inf), catalog (.cat), and binary (.sys) for the test driver for devices connected to simple peripheral buses.</li><li>SPBCmd.exe &mdash; Sends requests to the test driver to manually validate data transfers over I2C and SPI buses.</li></ul> |
 
 ### Deprecated modules (removed after version 9.0.0)
 

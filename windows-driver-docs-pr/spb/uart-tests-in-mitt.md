@@ -38,7 +38,7 @@ The MITT software package includes tests for validating data transfers to a UART
 Perform these steps on the system under test that has the UART controller:
 
 1. Perform the system changes that are described under the Device.BusController.UART.HCKTestability requirement.
-2. Update the ACPI table for UART test drivers based on the template provided under \\\\&lt;hckcontrollername&gt;\\Tests\\&lt;architecture&gt;\\UART\\Sample-UART.asl or use this example. You can use the [Microsoft ASL compiler](../bringup/microsoft-asl-compiler.md).
+2. Update the ACPI table for UART test drivers based on this example. You can use the [Microsoft ASL compiler](../bringup/microsoft-asl-compiler.md).
 
     ```asl
     Device(UART) {
@@ -68,7 +68,7 @@ Perform these steps on the system under test that has the UART controller:
     }
     ```
 
-3. Install the UARTTest test peripheral driver from \\\\&lt;hckcontrollername&gt;\\Tests\\&lt;architecture&gt;\\UART by running this command:
+3. Install the UARTTest test peripheral driver from MITT software package by running this command:
 
     **pnputil -a UARTTest.inf**
 
@@ -89,11 +89,11 @@ Perform these steps on the system under test that has the UART controller:
 
     Example 1: To run the tests at 115200 bps (default)
 
-    `UtsSanity.exe –mitt`
+    `UtsSanity.exe -mitt`
 
     Example 2: To run the tests at 3Mbps:
 
-    `UtsSanity.exe -mitt –baudRate 3000000`
+    `UtsSanity.exe -mitt -baudRate 3000000`
 
 ## UART adapter schematic
 
