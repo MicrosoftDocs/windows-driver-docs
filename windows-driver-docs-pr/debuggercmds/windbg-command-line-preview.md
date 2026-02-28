@@ -2,7 +2,8 @@
 title: 'WinDbg: Command-Line Startup Options'
 description: "This section covers the command-line startup options for WinDbg."
 keywords: ["Command line startup options", "WinDbg", "Menu", "Windows Debugging"]
-ms.date: 09/11/2019
+ms.date: 02/28/2026
+ai-usage: ai-assisted
 ms.topic: reference
 ---
 
@@ -29,6 +30,8 @@ The following tables summarize the available command-line options.
 | `-c  command`  | Executes a command line after the debugger is attached. This command must be enclosed in quotation marks. Multiple commands can be separated with semicolons. |
 | `-v`               | Enables verbose output in the debugger.                                                            |
 | `-T Title`       | Sets the window title.                                                                     |
+| `-Q`             | Disables automatic saving of settings. Settings changes are only persisted when you explicitly select **File** > **Save workspace** or **Save workspace as**. |
+| `-WF SettingsFile` | Loads settings from the specified workspace file. |
 | `-logo LogFile`  | Log Open. Begins logging information to a log file. If the file exists, it will be overwritten.                                |
 | `-loga LogFile`  | Log Append. Begins logging information to a log file. If the file exists, it will be appended to.                               |
 | `-e EventHandle` | Signals the event with the given handle after the next exception in a target.                                         |
@@ -122,7 +125,6 @@ Option  | Description
 
 Option | Description
 |------ | -----------|
-`-Q`   | Deprecated command-line option.
 `-QY`  | Deprecated command-line option.
 `-QS`  | Deprecated command-line option.
 `-QSY` | Deprecated command-line option.

@@ -1,20 +1,31 @@
 ---
-title: 'WinDbg: Settings and Workspaces'
-description: "This article describes how to set up the WinDbg debugger."
-keywords: ["Settings and workspaces", "WinDbg", "Menu", "Windows Debugging"]
-ms.date: 01/16/2020
+title: 'WinDbg: Settings, Workspaces, and Saved Debug Sessions'
+description: "This article describes how to set up and configure WinDbg settings, workspaces, and saved debug sessions."
+keywords: ["Settings", "Workspaces", "Debug sessions", "WinDbg", "Menu", "Windows Debugging"]
+ms.date: 02/28/2026
+ai-usage: ai-assisted
 ms.topic: how-to
 ---
 
-# WinDbg: Settings and workspaces
+# WinDbg: Settings, workspaces, and saved debug sessions
 
 :::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
 This article describes how to set up and configure WinDbg.
 
+WinDbg uses two types of configuration files:
+
+- **Workspaces** store your WinDbg settings, such as theme, window layout, symbol paths, source paths, and other configuration options. Workspace files use the `.xml` extension and are stored by default in `%LOCALAPPDATA%\DBG\Workspaces`. Settings are automatically saved to the default workspace file (`%LOCALAPPDATA%\DBG\DbgX.xml`) when you close WinDbg.
+
+- **Saved debug sessions** store target connection information (such as which dump file to open or which process to attach to) along with per-session engine options. Debug session files use the `.debugtarget` extension and are stored by default in `%LOCALAPPDATA%\DBG\Targets`. These files appear in the **Recent** targets list on the **Start debugging** page.
+
 ## Settings
 
-Use the **Settings** menu to set items such as the source and symbol path. You can also choose the light or dark theme for WinDbg.
+Use the **Settings** menu to set items such as the source and symbol path. You can also choose the theme for WinDbg. The available theme modes are:
+
+- **System** - Follows the Windows system theme setting (default).
+- **Light** - Uses the light theme.
+- **Dark** - Uses the dark theme.
 
 :::image type="content" source="images/windbgx-settings-menu.png" alt-text="Screenshot of the WinDbg Settings menu displaying the General tab.":::
 
@@ -31,13 +42,40 @@ For more information on setting the paths, see [Symbol path for Windows debugger
 
 ## Workspaces
 
-With workspaces, you can save configuration information in the target connection information file.
+Workspaces save your WinDbg settings, such as theme, window layout, symbol paths, source paths, and other configuration options, to a file.
 
-The options in workspaces are saved when you close the debugger. To save them manually, select **File** > **Save Workspace**.
+### Saving and loading workspaces
 
-Workspaces are automatically loaded if you open them from the recent targets list. You can also load them manually on the **File** menu.
+You can manage workspaces through the **File** menu:
 
-In addition to the target connection information, the following settings are stored in the workspace file.
+- **Save workspace** - Saves the current settings to the active workspace file.
+- **Save workspace as** - Saves the current settings to a new workspace file.
+- **Open workspace** - Loads settings from a previously saved workspace file.
+
+Settings are also automatically saved when you close the debugger, unless automatic saving has been disabled with the `-Q` command-line option.
+
+### Workspace command-line options
+
+You can use the following command-line options to control workspace behavior:
+
+- `-Q` - Disables automatic saving of settings. Settings changes are only persisted when you explicitly select **Save workspace** or **Save workspace as** from the **File** menu.
+- `-WF SettingsFile` - Loads settings from the specified workspace file at startup.
+
+## Saved debug sessions
+
+Saved debug sessions store your target connection information along with per-session engine options. Debug session files use the `.debugtarget` extension and are stored by default in `%LOCALAPPDATA%\DBG\Targets`.
+
+### Saving and loading debug sessions
+
+You can manage debug sessions through the **File** menu and command line:
+
+- **Save debug session** - Saves the current target connection information to a `.debugtarget` file. This option is only available when a debug target is active.
+- **Recent targets** - On the **Start debugging** page, select a previously saved debug session from the **Recent** targets list to reload it.
+- `-loadSession` - Loads a saved debug session configuration file from the command line.
+
+### Debug session settings
+
+In addition to the target connection information, the following settings are stored in the saved debug session file (`.debugtarget` file extension).
 
 #### General settings
 
@@ -75,15 +113,11 @@ Setting | Default | Description
 
 For more information on symbol options, see [Symbol options](../debugger/symbol-options.md).
 
-#### Window layout settings
+#### Debug session XML file
 
- Window layout settings are saved globally and aren't saved in the workspace file.
+Debug session target connection information is stored in XML format with the `.debugtarget` file extension.
 
-#### Workspace XML file
-
-The workspace and target connection information is stored in XML format.
-
-The following file shows an example workspace configuration file.
+The following file shows an example debug session configuration file.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

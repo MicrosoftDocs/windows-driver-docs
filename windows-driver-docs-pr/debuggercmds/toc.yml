@@ -8,7 +8,7 @@
     href: windbg-release-notes.md
   - name: WinDbg - Command line startup options
     href: windbg-command-line-preview.md
-  - name: WinDbg – Settings and workspaces
+  - name: WinDbg – Settings, workspaces, and saved debug sessions
     href: windbg-setup-preview.md
   - name: WinDbg – Keyboard shortcuts
     href: windbg-keyboard-shortcuts.md
