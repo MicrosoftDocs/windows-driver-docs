@@ -33,7 +33,7 @@ Allow *Publishing Company Name* permission to target our *Owner Company Name* HW
 - HWIDs approved for targeting:
 
 > [!NOTE]
-> Your Seller ID is available inside the **Developer** tab on the **Legal info** page in your Microsoft Partner Center account. For more information, see [Manage a Microsoft Marketplace account in Partner Center](https://learn.microsoft.com/en-us/partner-center/account-settings/manage-account).
+> Your Seller ID is available inside the **Developer** tab on the **Legal info** page in your Microsoft Partner Center account. For more information, see [Manage a Microsoft Marketplace account in Partner Center](https://learn.microsoft.com/partner-center/account-settings/manage-account).
 
 ---
 
