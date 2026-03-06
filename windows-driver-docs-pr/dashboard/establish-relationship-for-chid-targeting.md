@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Establish a relationship for HWID and CHID targeting
 
-Establishing a relationship for Computer Hardware ID (CHID) or Hardware ID (HWID) targeting is a prerequisite for all HWID or CHID targeted driver submissions. Submissions for which an established relationship cannot be validated between the publisher and the owner of the targeted HWIDs or CHIDs are rejected. Microsoft requires the requests for establishing these relationships to come from the owner of the targeted HWIDs and CHIDs.
+Establishing a relationship for Computer Hardware ID (CHID) or Hardware ID (HWID) targeting is a prerequisite for all HWID or CHID targeted driver submissions. Submissions for which an established relationship can't be validated between the publisher and the owner of the targeted HWIDs or CHIDs are rejected. Microsoft requires the requests for establishing these relationships to come from the owner of the targeted HWIDs and CHIDs.
 
   > [!NOTE]
   > If you're a publisher whose submission was rejected, review the rejection notice on your shipping label page for the HWIDs and CHIDs that need attention. The company (OWNER) for each of the HWIDs or CHIDs are listed here and you can reach out to them to request that they set up the targeting relationship. Once Microsoft processes the approval email from the owner company, you are able to create a new submission targeting these HWIDs and CHIDs.
