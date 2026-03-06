@@ -24,7 +24,7 @@ Request the relationship in the following format, listing the specific HWIDs and
 
 Dear Microsoft,
 
-Allow *Publishing Company Name* permission to target our *Owner Company Name* HWIDs and CHIDs listed below:
+Allow *Publishing Company Name* permission to target our *Owner Company Name* HWIDs and CHIDs listed here:
 
 - HWID and CHID owner company name and Seller ID:
 - Name of the publishing company with which the relationship is being established:
