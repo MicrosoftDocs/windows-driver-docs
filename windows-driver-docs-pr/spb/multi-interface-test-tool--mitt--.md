@@ -1,7 +1,7 @@
 ---
 title: Buy Hardware for Using MITT
 description: To you use Multiple Interface Test Tool (MITT), order you need a MITT board and bus-specific adapter boards that plug into ports on the MITT board. The type of adapter board depends on the bus you want to test.
-ms.date: 01/12/2024
+ms.date: 02/27/2026
 ms.topic: checklist
 ---
 
@@ -23,17 +23,20 @@ To use the Multiple Interface Test Tool (MITT), you need a MITT board and bus-sp
 
     :::image type="content" source="images/uart1.png" alt-text="Picture of a UART adapter board.":::
 
-- **GPIO adapter board**
-
-    See [GPIO adapter board from JJG Technologies.](http://www.jjgtechnologies.com/GPIO.htm)
-
-    :::image type="content" source="images/gpioadapter.jpg" alt-text="Picture of a GPIO adapter for MITT.":::
-
 - **I2C adapter board**
 
     See [I2C adapter board from JJG Technologies.](http://www.jjgtechnologies.com/I2C.htm)
 
     :::image type="content" source="images/i2cadapter.jpg" alt-text="Picture of an I2C adapter for MITT.":::
+
+> [!CAUTION]
+> The following modules are deprecated and are not included in MITT software package versions after 9.0.0.
+
+- **GPIO adapter board**
+
+    See [GPIO adapter board from JJG Technologies.](http://www.jjgtechnologies.com/GPIO.htm)
+
+    :::image type="content" source="images/gpioadapter.jpg" alt-text="Picture of a GPIO adapter for MITT.":::
 
 - **MCATT expansion board**
 

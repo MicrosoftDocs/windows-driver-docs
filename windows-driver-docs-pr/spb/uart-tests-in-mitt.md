@@ -1,7 +1,7 @@
 ---
 title: UART Tests in MITT
 description: The MITT software package includes tests for validating data transfers to a UART controller and its driver. The MITT board's UART interface acts as a UART loopback device.
-ms.date: 01/12/2024
+ms.date: 02/27/2026
 ms.topic: how-to
 ---
 
@@ -35,10 +35,10 @@ The MITT software package includes tests for validating data transfers to a UART
 
 ## Test driver and ACPI configuration
 
-To modify the ACPI tables, install Windows Hardware Certification Kit (HCK) 8.1. Perform these steps on the system under test that has the UART controller:
+Perform these steps on the system under test that has the UART controller:
 
 1. Perform the system changes that are described under the Device.BusController.UART.HCKTestability requirement.
-2. Update the ACPI table for UART test drivers based on the template provided under \\\\&lt;hckcontrollername&gt;\\Tests\\&lt;architecture&gt;\\UART\\Sample-UART.asl or use this example. You can use the [Microsoft ASL compiler](../bringup/microsoft-asl-compiler.md).
+2. Update the ACPI table for UART test drivers based on this example. You can use the [Microsoft ASL compiler](../bringup/microsoft-asl-compiler.md).
 
     ```asl
     Device(UART) {
@@ -68,7 +68,7 @@ To modify the ACPI tables, install Windows Hardware Certification Kit (HCK) 8.1.
     }
     ```
 
-3. Install the UARTTest test peripheral driver from \\\\&lt;hckcontrollername&gt;\\Tests\\&lt;architecture&gt;\\UART by running this command:
+3. Install the UARTTest test peripheral driver from MITT software package by running this command:
 
     **pnputil -a UARTTest.inf**
 
@@ -76,7 +76,7 @@ To modify the ACPI tables, install Windows Hardware Certification Kit (HCK) 8.1.
 
 1. Perform steps described in Test driver and ACPI configuration.
 2. Create a folder on the system under test.
-3. Copy these files from %ProgramFiles(x86)%\\Windows Kits\\8.1\\Testing\\Runtimes\\TAEF to the folder.
+3. Copy these files from %ProgramFiles(x86)%\\Windows Kits\\10\\Testing\\Runtimes\\TAEF to the folder.
     - Wex.Common.dll
     - Wex.Communication.dll
     - Wex.Logger.dll
@@ -89,11 +89,11 @@ To modify the ACPI tables, install Windows Hardware Certification Kit (HCK) 8.1.
 
     Example 1: To run the tests at 115200 bps (default)
 
-    `C:\\uart&gt; UtsSanity.exe –mitt`
+    `UtsSanity.exe -mitt`
 
     Example 2: To run the tests at 3Mbps:
 
-    `C:\\uart&gt; UtsSanity.exe -mitt –baudRate 3000000`
+    `UtsSanity.exe -mitt -baudRate 3000000`
 
 ## UART adapter schematic
 
