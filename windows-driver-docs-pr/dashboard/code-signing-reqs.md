@@ -21,7 +21,7 @@ For more extensive information on driver signing requirements see the following 
 
 EV Code signing certificates can be purchased from one of the following certificate authorities:
 
-- [Certum EV code signing certificate](https://shop.certum.eu/data-safety/code-signing-certificates/certum-ev-code-sigining.html)
+- [Certum EV code signing certificate](https://shop.certum.eu/certum-ev-code-sigining.html)
 - [DigiCert EV code signing certificate](https://www.digicert.com/signing/code-signing-certificates)
 - [GlobalSign EV code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
 - [IdenTrust EV code signing certificate](https://www.identrust.com/digital-certificates/trustid-ev-code-signing)
