@@ -31,7 +31,7 @@ For information on configuring 2PF support to test a connection, see [Setting Up
 
 - The new added PF (for example, bus.dev.fun0.1) is used only by KDNET to route Debugger packets to/from the target.
 
-- The Windows inbox NIC driver will use the original PF to route Windows networking packets (TCP/IP).
+- The Windows inbox NIC driver uses the original PF to route Windows networking packets (TCP/IP).
 
 - Using this approach both drivers can work in parallel w/o interfering with each other work.
 
@@ -101,7 +101,7 @@ The Multiple PF feature is operated by using these four NDIS OIDs.
 
 #### 1. Enumerate PFs on the miniport BDF primary port  using OID: ***OID_KDNET_ENUMERATE_PFS***, see following definition.
 
-- ***OID_KDNET_ENUMERATE_PFS*** returns a list of all BDFs associated to the given primary port from where the miniport driver is running from. The port is represented by the bus.dev.fun (BDF). The operation lists the PFs that are **associated only** with the bus.dev.fun (BDF port) where the miniport driver runs. Each miniport driver can determine its BDF location.
+- ***OID_KDNET_ENUMERATE_PFS*** returns a list of all BDFs associated to the given primary port from where the miniport driver is running from. The bus.dev.fun (BDF) represents the port. The operation lists the PFs that are **associated only** with the bus.dev.fun (BDF port) where the miniport driver runs. Each miniport driver can determine its BDF location.
 
 - The list of PFs is returned to the client via a NDIS Query operation.
 
@@ -134,7 +134,7 @@ The Multiple PF feature is operated by using these four NDIS OIDs.
 - This OID request has only one Output parameter: `AddedFunctionNumber`. The `AddedFunctionNumber` indicates the added Function number value at the miniport PCI location (the BDF miniport). The kdnet.exe utility receives this value and setup dbgsettings::busparams to points to the added PF.
 
 >[!NOTE]
-> The added PF can be used exclusively by KDNET. Windows NIC drivers are rigged to expressly \*NOT\* run on an added PF. This also applies when KDNET is \*NOT\* enabled on the system and the PF has been added to the port.
+> KDNET can use the added PF exclusively. Windows NIC drivers are rigged to expressly \*NOT\* run on an added PF. This also applies when KDNET is \*NOT\* enabled on the system and the PF is added to the port.
 
 #### 3. Remove PCI PF (OID: ***OID_KDNET_REMOVE_PF***, see following definition )
 
