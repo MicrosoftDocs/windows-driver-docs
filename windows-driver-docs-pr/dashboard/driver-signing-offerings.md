@@ -23,7 +23,7 @@ Attestation signing has the following restrictions and requirements:
 
 - Attestation signing only works on Windows 10 Desktop and later versions of Windows.
 
-- Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers don't need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers. For drivers that need to run on previous versions of Windows, you should [submit HLK/HCK test logs for Windows certification](./hardware-submission-create.md).
+- Attestation signing supports Windows Desktop kernel mode and user mode drivers. For drivers that need to run on previous versions of Windows, you should [submit HLK/HCK test logs for Windows certification](./hardware-submission-create.md).
 
 - Attestation signing doesn't return the proper PE Level for **ELAM** or **Windows Hello** PE binaries. These binaries must be tested and submitted as .hlkx packages to receive the extra signature attributes.
 
@@ -51,7 +51,7 @@ Attestation signing has the following restrictions and requirements:
 For information on how to create an attestation signed driver for Windows 10+ drivers, see [Attestation sign Windows 10+ drivers](code-signing-attestation.md).
 
 ## Preproduction (Preprod) signed drivers
-Preproduction signing is an additional signing option available to partners during early development and validation. Preprod signed drivers allow partners to test in development driver binaries on systems where Secure Boot remains enabled, without distributing those binaries to retail Windows customers.
+Preproduction signing is an additional signing option available to partners during early development and validation. Preprod signed drivers allow partners to test in development driver binaries on systems where Secure Boot remains enabled.
 
 Preprod signed drivers are **not trusted by default** on retail systems. Instead, they load only on devices that have been explicitly provisioned to trust the preproduction signature. This enables higher fidelity testing, including Secure Boot compatibility, while ensuring that unfinished or unvalidated drivers cannot be deployed broadly. 
 
