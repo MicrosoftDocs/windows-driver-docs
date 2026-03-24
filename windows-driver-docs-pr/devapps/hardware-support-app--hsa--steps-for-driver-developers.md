@@ -14,9 +14,6 @@ ms.custom: sfi-image-nochange
 
 # Hardware Support App (HSA): Steps for Driver Developers
 
-> [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
-
 A Hardware Support App (HSA) is a device-specific app that is paired with a specific driver or [RPC (Remote Procedure Call)](/windows/desktop/Rpc/rpc-start-page) endpoint.
 
 To associate a Store app with a driver, first reserve a special value called a custom capability. Then permit access to apps that advertise the capability and provide the capability to the app developer.  This page describes these steps for the driver developer.

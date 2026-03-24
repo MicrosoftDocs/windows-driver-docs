@@ -7,9 +7,6 @@ ms.topic: concept-article
 
 # Printer extension library overview for UWP device apps
 
-> [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
-
 This article introduces the printer extension library, a library that helps device manufacturers write UWP device apps for their printer. The printer extension library is included with the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample, and also the [Job management and printer maintenance](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20job%20management%20and%20printer%20maintenance) sample.
 
 ## Overview
