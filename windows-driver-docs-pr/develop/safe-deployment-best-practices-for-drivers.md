@@ -22,7 +22,7 @@ Driver safe deployment best practices are grouped into three stages of the deplo
 
 - Pre-deployment
 
-  Focuses on planning, internal testing, Windows Hardware Compatibility Program (WHQL) certification, validating dependencies, and aligning deployment criteria with business and engineering goals before distribution.
+  Focuses on planning, internal testing, Windows Hardware Compatibility Program (WHCP) certification, validating dependencies, and aligning deployment criteria with business and engineering goals before distribution.
 
 - Distribution
 
