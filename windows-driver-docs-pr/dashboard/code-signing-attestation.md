@@ -7,14 +7,14 @@ ms.topic: how-to
 
 # Attestation sign Windows drivers
 
-This article describes how to sign a driver by using attestation signing. For detailed information and requirements for attestation signing, see [Windows 10 attestation signed drivers](code-signing-reqs.md#windows-10-attestation-signed-drivers-for-testing-scenarios).
+This article describes how to sign a driver by using attestation signing. For detailed information and requirements for attestation signing, see [Attestation signed drivers](driver-signing-offerings.md#attestation-signed-drivers-for-testing-scenarios).
 
 > [!IMPORTANT]
 > As of March 1, 2023, attestation signed drivers that target retail audiences are no longer published on Windows Update. Support continues for attestation-signed drivers when testing scenarios with the **CoDev** or **Test Registry Key / Surface SSRK** options.
 
 ## Prerequisites
 
-- Read and understand the requirements for [Windows 10 attestation signed drivers](code-signing-reqs.md#windows-10-attestation-signed-drivers-for-testing-scenarios) for testing scenarios.
+- Read and understand the requirements for [Attestation signed drivers](driver-signing-offerings.md#attestation-signed-drivers-for-testing-scenarios) for testing scenarios.
 
 - Register for the Hardware Developer program. If you aren't registered, follow the steps in [Register for the Microsoft Windows Hardware Developer Program](hardware-program-register.md).
 
