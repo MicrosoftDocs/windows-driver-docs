@@ -638,6 +638,7 @@ For vendor ID 15AD, these device IDs are supported:
 *New in Windows 11 25H2, 26200.7309 and 26100.7309*
 
 KDNet.exe and VerifiedNICList.xml files are part of the WinDbg Application released via the Microsoft Store as of March, 2026.
+After installing, the alias `kdnet` will be available on your PATH.
 
 For vendor ID 1D0F, these device IDs are supported:
 
