@@ -1,24 +1,24 @@
 ---
-title: GFlags - Overview
+title: Global Flags Editor - Overview
 description: Learn how GFlags, the Global Flags Editor (gflags.exe), enables and disables advanced debugging, diagnostic, and troubleshooting features. 
 keywords: GFlags, Global Flags Editor, gflags.exe
-ms.date: 07/10/2025
+ms.date: 03/31/2026
 ms.topic: overview
 ---
 
-# GFlags
+# Global Flags Editor
 
-**GFlags**, the Global Flags Editor, enables and disables advanced debugging, diagnostic, and troubleshooting features. The tool is often used to turn on indicators that other tools track, count, and log. 
+**GFlags**, the Global Flags Editor, enables and disables advanced debugging, diagnostic, and troubleshooting features. Use the tool to turn on indicators that other tools track, count, and log. 
 
-The _gflags.exe_ file is included in the [Debugging Tools for Windows 10 (WinDbg)](debugger-download-tools.md). When you install the debugging tools, the 64-bit version of the file is installed by default.
+The [Debugging Tools for Windows 10 (WinDbg)](debugger-download-tools.md) includes the _gflags.exe_ file. When you install the debugging tools, the 64-bit version of the file is installed by default.
 
 - **Windows 64-bit**: Access GFlags in the default x64 location, _C:\Program Files (x86)\Windows Kits\10\Debuggers\x64_.
 
 - **Windows 32-bit**: Access GFlags in the x86 location, _C:\Program Files (x86)\Windows Kits\10\Debuggers\x86_.
 
-## Overview of GFlags
+## How GFlags works for driver debugging and testing
 
-Driver developers and testers often use GFlags to turn on debugging, logging, and test features either directly, or by including GFlags commands in a test script. The page heap verification features can help you identify memory leaks and buffer errors in **kernel-mode** drivers.
+Driver developers and testers use GFlags to turn on debugging, logging, and test features either directly or by including GFlags commands in a test script. The page heap verification features can help you identify memory leaks and buffer errors in **kernel-mode** drivers.
 
 GFlags provides a dialog UI experience and also a command-line prompt. Most features are available from both the UI and the command line, but some features are accessible in one interface only. For more information, see [GFlags details](gflags-details.md).
 
@@ -39,10 +39,10 @@ GFlags supports the following features:
 
 ### Requirements
 
-To use most GFlags features, you must be a member of the Administrator's group on the computer. For example, to set flags in the registry or in kernel mode, or enable page heap verification.
+To use most GFlags features, such as setting flags in the registry or in kernel mode, or enabling page heap verification, you must be a member of the **Administrators** group on the computer.
 
 > [!NOTE]
-> Incorrect use of the GFlags tool can degrade system performance or prevent Windows from starting, which might require you to reinstall Windows.
+> Incorrect use of the GFlags tool can degrade system performance or prevent Windows from starting. You might need to reinstall Windows.
 
 This section includes:
 
@@ -58,12 +58,12 @@ This section includes:
 
 - [Global Flags dialog](global-flags-dialog-box.md)
 
-- [GFlags examples](gflags-examples.md)
+- [GFlags examples](example-1---displaying-global-flags.md)
 
-- [Global Flag reference](global-flag-reference.md)
+- [Global Flag reference](buffer-dbgprint-output.md)
 
 ## Related articles
 
-- [GFlags examples](gflags-examples.md)
-- [Global flag reference](global-flag-reference.md)
+- [GFlags examples](example-1---displaying-global-flags.md)
+- [Global flag reference](buffer-dbgprint-output.md)
 - [Tools included in Debugging Tools for Windows](extra-tools.md)
