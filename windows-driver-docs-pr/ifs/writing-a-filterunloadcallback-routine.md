@@ -3,8 +3,9 @@ title: Writing a FilterUnloadCallback Routine
 description: Writing a FilterUnloadCallback Routine
 keywords:
 - FilterUnloadCallback
-ms.date: 04/20/2017
+ms.date: 03/31/2026
 ms.topic: concept-article
+ai-usage: ai-assisted
 ---
 
 # Writing a FilterUnloadCallback Routine
