@@ -39,7 +39,7 @@ GFlags supports the following features:
 
 ### Requirements
 
-To use most GFlags features, you must be a member of the Administrator's group on the computer. For example, to set flags in the registry or in kernel mode, or enable page heap verification.
+To use most GFlags features, you must be a member of the Administrators group on the computer. For example, to set flags in the registry or in kernel mode, or enable page heap verification.
 
 > [!NOTE]
 > Incorrect use of the GFlags tool can degrade system performance or prevent Windows from starting, which might require you to reinstall Windows.
@@ -58,12 +58,9 @@ This section includes:
 
 - [Global Flags dialog](global-flags-dialog-box.md)
 
-- [GFlags examples](gflags-examples.md)
-
-- [Global Flag reference](global-flag-reference.md)
+- [GFlags examples](example-1---displaying-global-flags.md)
 
 ## Related articles
 
-- [GFlags examples](gflags-examples.md)
-- [Global flag reference](global-flag-reference.md)
+- [GFlags examples](example-1---displaying-global-flags.md)
 - [Tools included in Debugging Tools for Windows](extra-tools.md)
