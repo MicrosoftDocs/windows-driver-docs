@@ -2,7 +2,8 @@
 title: 'WinDbg: File Menu'
 description: "This article describes how to use the File menu in the WinDbg debugger."
 keywords: ["File Menu", "WinDbg", "Menu", "Windows Debugging"]
-ms.date: 01/10/2020
+ms.date: 02/28/2026
+ai-usage: ai-assisted
 ms.topic: how-to
 ---
 
@@ -18,9 +19,9 @@ When you first open the **File** menu, you see **Start debugging** and your rece
 
 #### Recent
 
-The recent list contains a list of your recent workspaces and debugger connections. For more information on how to work with settings and workspaces, see [WinDbg setup: Settings and workspaces](windbg-setup-preview.md).
+The recent list contains a list of your recent debug sessions and debugger connections. For more information on how to work with settings, workspaces, and debug sessions, see [WinDbg setup: Settings, workspaces, and saved debug sessions](windbg-setup-preview.md).
 
-You can use the right-click menu to manage your workspaces, like pinning, renaming, and moving them. You can also edit them in Notepad.
+You can use the right-click menu to manage your recent debug sessions, like pinning, renaming, and moving them. You can also edit them in Notepad.
 
 :::image type="content" source="images/windbgx-workspace-right-click.png" alt-text="Right-click the menu for a workspace file with options to open, rename, edit in Notepad, pin, remove from lists, and clear unpinned targets.":::
 
@@ -29,17 +30,31 @@ You can use the right-click menu to manage your workspaces, like pinning, renami
 Use the other tabs in the **Start debugging** section to start a new debugger session, like attaching or starting a process. For more information on starting a new session, see [WinDbg: Start a user-mode session](windbg-user-mode-preview.md)
 and [WinDbg: Start a kernel mode session](windbg-kernel-mode-preview.md).
 
-### Save workspace
+### Save debug session
 
-Use **Save workspace** to save the current workspace.
+Use **Save debug session** to save the current target connection information to a file. Debug session files use the `.debugtarget` extension. This option is only available when a debug target is active.
 
-Session connection information is stored in workspace configuration files. Workspace files are stored with a .debugTarget file extension.
-
-The default location for workspace files is:
+The default location for debug session files is:
 
 ```console
-C:\Users\*UserName*\AppData\Local\DBG\targets
+C:\Users\*UserName*\AppData\Local\DBG\Targets
 ```
+
+### Open workspace
+
+Use **Open workspace** to load settings from a previously saved workspace file. Workspace files use the `.xml` extension and are stored by default in:
+
+```console
+C:\Users\*UserName*\AppData\Local\DBG\Workspaces
+```
+
+### Save workspace
+
+Use **Save workspace** to save the current settings to the active workspace file.
+
+### Save workspace as
+
+Use **Save workspace as** to save the current settings to a new workspace file.
 
 ### Open source file
 
@@ -51,7 +66,7 @@ Use **Open script** to open an existing JavaScript or NatVis script. For more in
 
 ### Settings
 
-Use **Settings** to set the source and symbol path and choose the light or dark theme for the debugger. For more information on settings, see [WinDbg setup: Settings and workspaces](windbg-setup-preview.md).
+Use **Settings** to set the source and symbol path and choose the theme for the debugger. The available themes are System (follows OS setting), Light, and Dark. For more information on settings, see [WinDbg setup: Settings, workspaces, and saved debug sessions](windbg-setup-preview.md).
 
 ### About
 
