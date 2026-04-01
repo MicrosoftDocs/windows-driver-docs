@@ -1,7 +1,8 @@
 ---
 title: IddCx Versions
-description: Provides version
-ms.date: 10/02/2024
+description: Provides version information for indirect display drivers (IddCx).
+prerelease: true
+ms.date: 04/01/2026
 keywords:
 - IddCx versions, WDK
 - IddCx versions, Windows versions
@@ -9,6 +10,9 @@ ms.topic: reference
 ---
 
 # IddCx versions
+
+> [!IMPORTANT]
+> Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This page provides information about IddCx versions, including version numbers, associated version value returned by [**IddCxGetVersion**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxgetversion), and high-level changes made to each version.
 
@@ -18,6 +22,7 @@ This page also lists the IddCx version (and **IddCxGetVersion** value) shipped w
 
 | IddCx version | IddCxGetVersion returned | Changes from previous public version |
 | ------------- | ------------------------ | ------------------------------------ |
+| [1.11](iddcx1.11-updates.md) | 0x1B00 | Add D3D12, DisplayID only, atomic I2C, and update reencode count support - Windows 11 |
 | [1.10](iddcx1.10-updates.md) | 0x1A80 | Add HDR10, SDR Wide Color Gamut (WCG), and runtime power management support - Windows 2024 |
 | [1.10](iddcx1.10-updates.md) | 0x1A00 | Add HDR10 and SDR Wide Color Gamut (WCG) support - Windows 11 23H2 |
 | [1.9](iddcx1.9-updates.md) | 0x1900 | Add [**IddCxSetRealtimeGPUPriority**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxsetrealtimegpupriority); disallow UMDF process pooling |
