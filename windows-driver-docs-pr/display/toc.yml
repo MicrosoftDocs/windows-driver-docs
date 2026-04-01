@@ -694,7 +694,7 @@
     - name: IddCx versions
       href: iddcx-versions.md
     - name: IddCx 1.11 updates
- v    href: iddcx1.11-updates.md
+      href: iddcx1.11-updates.md
     - name: IddCx 1.10 updates
       href: iddcx1.10-updates.md
     - name: IddCx 1.9 updates

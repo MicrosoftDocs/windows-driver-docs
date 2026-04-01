@@ -71,7 +71,7 @@ A 1.11 driver that supports I2C by providing the [EVT_IDD_CX_MONITOR_I2C_RECEIVE
 
 ## DisplayID only descriptor support
 
-A new descriptor type, IDDCX_MONITOR_DESCRIPTION_TYPE_DISPLAYID, has been added to the [IDDCX_MONITOR_DESCRIPTION_TYPE](/windows-hardware/drivers/ddi/iddcx/ne-iddcx-iddcx_monitor_description_type) enumeration used in the arguments passed to [IddCxMonitorCreate](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitorcreate) and [IddCxMonitorCreate2](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitorcreate2). This should be used when the provided descriptor contains just a DisplayID descriptor and no EDID blocks at all.
+A new descriptor type, IDDCX_MONITOR_DESCRIPTION_TYPE_DISPLAYID, has been added to the [IDDCX_MONITOR_DESCRIPTION_TYPE](/windows-hardware/drivers/ddi/iddcx/ne-iddcx-iddcx_monitor_description_type) enumeration used in the arguments passed to [IddCxMonitorCreate](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitorcreate) and [IddCxMonitorCreate2](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitorcreate). This should be used when the provided descriptor contains just a DisplayID descriptor and no EDID blocks at all.
 
 ## Updating static desktop reencode count
 
