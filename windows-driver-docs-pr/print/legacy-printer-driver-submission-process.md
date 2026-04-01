@@ -5,7 +5,7 @@ keywords:
 - print devices WDK
 - print WDK See printer driver
 - print WDK See printing
-ms.date: 01/26/2026
+ms.date: 04/01/2026
 ms.topic: release-notes
 ---
 
@@ -44,8 +44,11 @@ Partners may include extra supporting materials if needed, such as security disc
 ### File packaging requirements
 
 - WHQL submissions:
-The justification JSON and any supporting documents must be placed inside the HLK package in the Supplemental folder before uploading.- Attestation submissions:
-Because Attestation packages don't have a Supplemental folder, the justification JSON and supporting documentation must be placed in the driver folder itself.
+  - The justification JSON and any supporting documents must be placed inside the HLK package in the Supplemental folder before uploading.
+- Attestation submissions:
+  - Because Attestation packages don't have a Supplemental folder, the justification JSON and supporting documentation must be placed in the driver folder itself.
+- DUA HLK packages:
+  - DUA HLKX submission packages do not support inclusion of files in the Supplemental folder. As a result, required justification documentation such as DriverException.json will not be included in DUA packages generated using HLK Studio. Partners should create a new HLK package submission instead.
 
 ### These documents aren't signed
 
