@@ -55,11 +55,11 @@ OpenProcessToken(GetCurrentProcess(), TOKEN_ADJUST_PRIVILEGES | TOKEN_QUERY, &pr
 
 LookupPrivilegeValue(NULL, SE_LOAD_DRIVER_NAME, &luid);
 
-Tp.PrivilegeCount = 1;
-Tp.privileges[0].Luid = luid;
-Tp.Privileges[0].Attributes = SE_PRIVILEGE_ENABLED;
+tp.PrivilegeCount = 1;
+tp.Privileges[0].Luid = luid;
+tp.Privileges[0].Attributes = SE_PRIVILEGE_ENABLED;
 
-AdjustTokenPrivileges(procToken, FALSE, &tp, sizeof(TOKEN_PRIVILEGES), (PTOKEN_PRIVILEGES) NULL, (PDWORD)NULL)
+AdjustTokenPrivileges(procToken, FALSE, &tp, sizeof(TOKEN_PRIVILEGES), (PTOKEN_PRIVILEGES) NULL, (PDWORD)NULL);
 ```
 
 ## Profile driver INF file
