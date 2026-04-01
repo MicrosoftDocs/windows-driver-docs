@@ -21,7 +21,7 @@ You can correct EDIDs in two ways:
 - Have the customer send the monitor back to the manufacturer, who reflashes the EEPROM with the correct EDID and returns the monitor to the customer.
 - Implement an INF file that contains the correct EDID info, and have the customer download it to the computer that is connected to the monitor. Windows extracts the updated EDID information from the INF and provides it to components instead of using the EEPROM EDID information, effectively overriding the EEPROM EDID. This simpler approach is the better solution for both the manufacturer and the customer.
 
-In addition to replacing the EDID information, a vendor can provide an override for the monitor name and the preferred display resolution. Customers can frequently access this override through Windows Update or digital media in the shipping box. This override receives higher precedence than the EDID override described in this article. For more information, see [Monitor INF File Sections](monitor-inf-file-sections.md).
+In addition to replacing the EDID information, a vendor can provide an override for the monitor name, preferred display resolution, and other monitor package settings. Customers can frequently access this override through Windows Update or digital media in the shipping box. This override receives higher precedence than the EDID override described in this article. For more information, see [Monitor INF Packages](monitor-inf-packages.md).
 
 ## EDID format
 

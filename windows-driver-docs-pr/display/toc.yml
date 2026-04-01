@@ -653,6 +653,8 @@
     items:
     - name: Monitor Drivers
       href: monitor-drivers.md
+    - name: Monitor INF Packages
+      href: monitor-inf-packages.md
     - name: Monitor Class Function Driver
       href: monitor-class-function-driver.md
     - name: Monitor Filter Drivers
