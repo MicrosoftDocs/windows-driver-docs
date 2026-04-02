@@ -65,15 +65,15 @@ The `InfVerif /h` rulesets are aligned with the requirements of the WHCP program
 > [!NOTE]
 > Any exceptions listed below should not be used, as the usage of them will no longer be allowed in an upcoming release.
 
-### Current Requirements as of April 2024
+### Current Requirements
 
 **Registry**
 
 <br/>INF files must not modify any global registry locations and instead only use the HKR registry root to modify or create registry information with an [AddReg directive](../install/inf-addreg-directive.md). The following paths are current exceptions to this requirement:
 
-| Root | Subkey |
-|------|--------|
-|HKLM|SYSTEM\CurrentControlSet|
+| Root | Subkey | Exception Removed Starting In |
+|------|--------|-------------------------------|
+|HKLM|SYSTEM\CurrentControlSet|Windows 11, version 25H2|
 |HKLM|SOFTWARE\Classes|
 |HKLM|SOFTWARE\Khronos|
 |HKLM|SOFTWARE\Microsoft\Analog\Providers|
@@ -83,22 +83,22 @@ The `InfVerif /h` rulesets are aligned with the requirements of the WHCP program
 |HKLM|SOFTWARE\Microsoft\Cryptography\DRM_RNG|
 |HKLM|SOFTWARE\Microsoft\EAPOL|
 |HKLM|SOFTWARE\Microsoft\Palm\DelayManipulationDuration|
-|HKLM|SOFTWARE\Microsoft\Shell\OEM\QuickActions\ColorProfileQuickAction|
-|HKLM|SOFTWARE\Microsoft\Speech_OneCore\AudioInput|
+|HKLM|SOFTWARE\Microsoft\Shell\OEM\QuickActions\ColorProfileQuickAction|Windows 11, version 25H2|
+|HKLM|SOFTWARE\Microsoft\Speech_OneCore\AudioInput|Windows 11, version 25H2|
 |HKLM|SOFTWARE\Microsoft\Windows Media Foundation|
 |HKLM|SOFTWARE\Microsoft\Windows NT\CurrentVersion\AdaptiveDisplayBrightness|
-|HKLM|SOFTWARE\Microsoft\Windows NT\CurrentVersion\drivers.desc|
-|HKLM|SOFTWARE\Microsoft\Windows NT\CurrentVersion\Drivers32|
-|HKLM|SOFTWARE\Microsoft\Windows NT\CurrentVersion\ICM|
+|HKLM|SOFTWARE\Microsoft\Windows NT\CurrentVersion\drivers.desc|Windows 11, version 25H2|
+|HKLM|SOFTWARE\Microsoft\Windows NT\CurrentVersion\Drivers32|Windows 11, version 25H2|
+|HKLM|SOFTWARE\Microsoft\Windows NT\CurrentVersion\ICM|Windows 11, version 25H2|
 |HKLM|SOFTWARE\Microsoft\Windows NT\CurrentVersion\OpenGlDrivers|
 |HKLM|SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify\ScCertProp|
 |HKLM|SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths|
-|HKLM|SOFTWARE\Microsoft\Windows\CurrentVersion\Audio|
+|HKLM|SOFTWARE\Microsoft\Windows\CurrentVersion\Audio|Windows 11, version 25H2|
 |HKLM|SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication|
 |HKLM|SOFTWARE\Microsoft\Windows\CurrentVersion\Control Panel|
 |HKLM|SOFTWARE\Microsoft\Windows\CurrentVersion\Controls Folder|
 |HKLM|SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer|
-|HKLM|SOFTWARE\Microsoft\Windows\CurrentVersion\Reliability\UserDefined|
+|HKLM|SOFTWARE\Microsoft\Windows\CurrentVersion\Reliability\UserDefined|Windows 11, version 25H2|
 |HKLM|SOFTWARE\Microsoft\Windows\CurrentVersion\Run|
 |HKLM|SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce|
 |HKLM|SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall|
@@ -112,22 +112,26 @@ The `InfVerif /h` rulesets are aligned with the requirements of the WHCP program
 
 <br/>DIRID 13 must be specified in the INF as the destination location for all entries in the [[DestinationDirs] section](../install/inf-destinationdirs-section.md). The following values are exceptions to this requirement:
 
-|DIRID Value|
-|-----------|
-|DIRID 10|
-|DIRID 11|
-|DIRID 12|
-|DIRID 23|
-|DIRID 51|
-|DIRID 52|
-|DIRID 55|
-|DIRID 16422|
-|DIRID 16425|
-|DIRID 16426|
-|DIRID 16427|
-|DIRID 16428|
-|DIRID 66000|
-|DIRID 66001|
-|DIRID 66002|
-|DIRID 66003|
-|DIRID 66004|
+|DIRID Value| File Root Directory | File Subdirectory Path | Exception Removed Starting In |
+|-----------|--------------------|------------------------|-------------------------------|
+|DIRID 10| Windows| Provisioning|
+|DIRID 10| Windows| SyChpe32|
+|DIRID 10| Windows| SysArm32|
+|DIRID 10| Windows| TWAIN_32|
+|DIRID 10| Windows| Twain_64|
+|DIRID 11| Windows\System32|
+|DIRID 12| Windows\System32\drivers|
+|DIRID 23| Windows\System32\spool\drivers\color|  
+|DIRID 51| Windows\System32\spool|
+|DIRID 52| Windows\System32\spool\drivers\...| 
+|DIRID 55| Windows\System32\spool\prtprocs\... |
+|DIRID 16422| Program Files||Windows 11, version 25H2
+|DIRID 16425| Windows\SysWOW64|
+|DIRID 16426| Program Files (x86)||Windows 11, version 25H2
+|DIRID 16427| Program Files\Common Files||Windows 11, version 25H2
+|DIRID 16428| Program Files (x86)\Common Files||Windows 11, version 25H2
+|DIRID 66000| Windows\System32\spool\drivers\...\3|
+|DIRID 66001| Windows\System32\spool\prtprocs\...|
+|DIRID 66002| Windows| |Windows 11, version 25H2
+|DIRID 66003| Windows\System32\spool\drivers\color|
+|DIRID 66004| Windows\web\printers\...|
