@@ -5,7 +5,7 @@ keywords:
 - print devices WDK
 - print WDK See printer driver
 - print WDK See printing
-ms.date: 01/26/2026
+ms.date: 04/01/2026
 ms.topic: release-notes
 ---
 
@@ -37,15 +37,18 @@ Partners are required to provide a Driver Exception Justification Document descr
 
 ### Justification document format
 
-The justification document is a JSON file that can be created using [this schema.](#schema) The DriverExceptionDocGenerator tool will be available in the near future to automatically generate the schema.
+The justification document is a JSON file that can be created using [this schema.](#schema) The DriverExceptionDocGenerator tool will be available soon to automatically generate the schema.
 
 Partners may include extra supporting materials if needed, such as security disclosures, Mopria analysis, roadmaps, model comparisons. These supporting materials help the reviewers validate exception claims.
 
 ### File packaging requirements
 
 - WHQL submissions:
-The justification JSON and any supporting documents must be placed inside the HLK package in the Supplemental folder before uploading.- Attestation submissions:
-Because Attestation packages don't have a Supplemental folder, the justification JSON and supporting documentation must be placed in the driver folder itself.
+  - The justification JSON and any supporting documents must be placed inside the HLK package in the Supplemental folder before uploading.
+- Attestation submissions:
+  - Because Attestation packages don't have a Supplemental folder, the justification JSON and supporting documentation must be placed in the driver folder itself.
+- DUA HLK packages:
+  - DUA HLKX submission packages don't support inclusion of files in the Supplemental folder. As a result, required justification documentation such as DriverException.json aren't included in DUA packages generated using HLK Studio. Partners should create a new HLK package submission instead.
 
 ### These documents aren't signed
 
@@ -60,7 +63,7 @@ Beginning January 15, 2026, the following exception categories apply:
 
 ### New Drivers
 
-New printer driver submissions will only be signed/published if they meet one of these criteria:
+New printer driver submissions are only signed/published if they meet one of these criteria:
 
 - Device can't support Mopria
 - Device is a Fax device
@@ -86,7 +89,7 @@ Existing driver updates are only signed and published if they:
 
 ### DriverExceptionDocGenerator Tool (Coming Soon)
 
-The justification document must follow the [schema provided.](#schema) In the future, Microsoft will provide a dedicated tool to help partners prepare the justification JSON. This tool, named **DriverExceptionDocGenerator**, will be available as a command‑line utility and will guide partners through the process of generating a valid justification document.
+The justification document must follow the [schema provided.](#schema) In the future, Microsoft will provide a dedicated tool to help partners prepare the justification JSON. This tool, named **DriverExceptionDocGenerator**, will be available as a command‑line utility to guide partners through the process of generating a valid justification document.
 
 #### Tool Capabilities
 
@@ -190,7 +193,7 @@ What partners must provide
 >For a New Driver
 >
 >- This pathway is intended for a new printer driver that is only for ARM64. If an existing x86 or AMD64 driver already exists, then this driver is a 'Driver Update' scenario where ARM64 support is being added.
->- If the driver also contains support for x86 or AMD64 in addition to ARM64 and is marked as 'New Driver' it will be rejected.
+>- If the driver also contains support for x86 or AMD64 in addition to ARM64 and is marked as 'New Driver,' it will be rejected.
 >
 >For a Driver Update
 >
@@ -224,7 +227,7 @@ The partner is adding or updating a driver for a fax device.
 
 Why Microsoft allows this exception
 
-Windows doesn't distinguish between a printer driver and a fax driver at an INF class level and therefore all fax drivers are subject to the same restrictions as printer drivers. However, IPP FaxOut support is still rolling out so some fax scenarios will still require a legacy V3/V4 driver.
+Windows doesn't distinguish between a printer driver and a fax driver at an INF class level and therefore all fax drivers are subject to the same restrictions as printer drivers. However, IPP FaxOut support is still rolling out so some fax scenarios still require a legacy V3/V4 driver.
 
 What partners must provide
 
@@ -232,7 +235,7 @@ What partners must provide
 - Future roadmap (if any) describing when Mopria compliance may be feasible.
 
 > [!IMPORTANT]
-> If approved for this exception the driver MUST only target a fax device. If the partner tries to target a printer device with the package, the exception is no longer valid, and the driver will be blocked from being signed and published.
+> If approved for this exception the driver MUST only target a fax device. If the partner tries to target a printer device with the package, the exception is no longer valid, and the driver is blocked from being signed and published.
 
 #### Exception Type 5: SecurityVulnerability
 
@@ -265,7 +268,7 @@ What partners must provide
 
 What this means
 
-This exception is a catch‑all category for rare, well‑justified, technically compelling exceptions not covered elsewhare in this document.
+This exception is a catch‑all category for rare, well‑justified, technically compelling exceptions not covered elsewhere in this document.
 
 Why Microsoft allows this exception
 
@@ -288,11 +291,11 @@ Examples of acceptable "Other" justifications
 
 Before submitting, partners should ensure:
 
-✔ They have generated a valid justification JSON
+✔ They generate a valid justification JSON
 
 Use DriverExceptionDocGenerator to generate the JSON file.
 
-✔ Additional supporting documents (if needed) are included
+✔ More supporting documents (if needed) are included
 
 Especially for security or Mopria documentation.
 
