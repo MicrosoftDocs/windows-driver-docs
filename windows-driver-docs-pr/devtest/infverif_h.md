@@ -34,7 +34,7 @@ infverif.exe /h <INF file> [<INF file>]
 infverif.exe /h /rulever 10.0...17763 <INF file>
 ```
 
-Using the '/rulever' argument may cause some portions of the INF to be ignored. Using the above arguments with the previous example, the [Models] section [Models.NTAMD64] will be validated using the rules for build 17763, and [Models.NTAMD64.10.0...22000] will not be validated since the specified ruleset does not apply to it.
+Using the '/rulever' argument may cause some portions of the INF to be ignored. Using the above arguments with the previous example, the [Models] section [Models.NTAMD64] will be validated using the rules for build 17763, and [Models.NTAMD64.10.0...22000] won't be validated since the specified ruleset does not apply to it.
 
 Adding the verbose option will cause InfVerif to print out the maximum ruleset used during its evaluation:
 
@@ -52,7 +52,7 @@ Running signature requirements check
 Using rules from OS build: 10.0.17763
 ```
 
-`InfVerif /h` can also use a future ruleset. There is a built-in 'vnext' OS version that will use the rules expected to be required one OS release in the future. The rules enforced by 'vnext' are not final and subject to change for the final release, but are intended to provide a good insight into future requirements.
+`InfVerif /h` can also use a future ruleset. There's a built-in 'vnext' OS version that will use the rules expected to be required one OS release in the future. The rules enforced by 'vnext' aren't final and subject to change for the final release, but are intended to provide a good insight into future requirements.
 
 ```command
 infverif.exe /h /rulever vnext <INF file>
@@ -63,7 +63,7 @@ infverif.exe /h /rulever vnext <INF file>
 The `InfVerif /h` rulesets are aligned with the requirements of the WHCP program. The requirements are defined as the full [driver package isolation](../develop/driver-isolation.md) requirements, with some set of exceptions applied to the requirements. Some exceptions will be removed each release until `InfVerif /h` enforces all driver package isolation requirements.
 
 > [!NOTE]
-> Any exceptions listed below should not be used, as the usage of them will no longer be allowed in an upcoming release.
+> Any exceptions listed below shouldn't be used, as the usage of them will no longer be allowed in an upcoming release.
 
 ### Current Requirements
 
