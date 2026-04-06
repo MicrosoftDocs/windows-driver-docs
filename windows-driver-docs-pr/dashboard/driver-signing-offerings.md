@@ -37,7 +37,7 @@ Attestation signing has the following restrictions and requirements:
 
 - Attestation signing requires that the driver folder names contain no special characters, and no UNC file share paths. Driver folder names must be fewer than 40 characters long.
 
-- When a driver receives attestation signing, it's not Windows Certified. An attestation signature from Microsoft indicates that the driver is trusted by Windows. But because the driver hasn't been tested in HLK Studio, there are no assurances about compatibility or functionality.
+- When a driver receives attestation signing, it's not Windows Certified. An attestation signature from Microsoft indicates that Windows trusts the driver. But because the driver isn't tested in HLK Studio, there are no assurances about compatibility or functionality.
 
 - DUA (Driver Update Acceptable) doesn't support attestation signed drivers.
 
@@ -60,7 +60,7 @@ For more information, see [Attestation sign Windows drivers](code-signing-attest
 
 Preproduction signing is available to partners during early development and validation. Preproduction signed drivers allow partners to test driver binaries on systems where Secure Boot remains enabled.
 
-By default, these drivers aren't trusted on retail systems. Instead, they load only on devices that have been explicitly provisioned to trust the preproduction signature. This specification enables higher fidelity testing, including Secure Boot compatibility, while ensuring that you can't broadly deploy unfinished or unvalidated drivers.
+By default, these drivers aren't trusted on retail systems. Instead, they load only on devices that are explicitly provisioned to trust the preproduction signature. This specification enables higher fidelity testing, including Secure Boot compatibility, while ensuring that you can't broadly deploy unfinished or unvalidated drivers.
 
 ### Supported scenarios
 
@@ -76,11 +76,11 @@ You might want to use preproduction signing when partners need to:
 
 When you provision a device with the preproduction signing configuration:
 
-- Driver install and load is supported, with Secure Boot enabled.  
+- Driver install and load are supported, with Secure Boot enabled.  
 
 - HVCI, Kernel Mode Code Integrity, and User Mode Code Integrity remain supported, similar to retail and attestation trusted configurations.  
 
-- Drivers don't load on retail systems unless those systems have been explicitly provisioned to trust the preproduction signature.  
+- Drivers don't load on retail systems unless those systems are explicitly provisioned to trust the preproduction signature.  
 
 ### Supported driver signature attributes
 
@@ -110,7 +110,7 @@ For Windows 10 Enterprise edition, enterprises can implement a policy to modify 
 
 The following table summarizes the driver signing requirements for Windows.
 
-| Version                             | Attestation dashboard signed | HLK test passed dashboard signed | Cross-signed using a SHA-1 certificate issued prior to July 29, 2015       |
+| Version                             | Attestation dashboard signed | HLK test passed dashboard signed | Cross-signed using an SHA-1 certificate issued before July 29, 2015       |
 |-------------------------------------|------------------------------|----------------------------------|----------------------------------------------------------------------------|
 | Windows Vista                       | No                           | Yes                              | Yes                                                                        |
 | Windows 7                           | No                           | Yes                              | Yes                                                                        |
