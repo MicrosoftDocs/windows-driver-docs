@@ -145,7 +145,7 @@ After you sign the CAB file, you're ready to submit the file in Partner Center:
 
    :::image type="content" source="./images/code-signing-attestation/hardware-list.png" alt-text="Screenshot of the list of hardware submissions.":::
 
-1. In the **Packages and signing properties** section, enter a product name for your driver submission. This name can be used to search for and organize your driver submissions.
+1. In the **Packages and signing properties** section, enter a product name for your driver submission. Use this name to search for and organize your driver submissions.
 
    > [!NOTE]
    > The name is visible when you share your driver with another company.

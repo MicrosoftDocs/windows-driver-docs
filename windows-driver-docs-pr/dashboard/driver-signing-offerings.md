@@ -11,7 +11,7 @@ This article covers various driver signing offerings available from the Hardware
 
 ## Hardware Lab Kit tested and dashboard signed drivers
 
- A dashboard signed driver that has passed the Hardware Labe Kit (HLK) tests works on Windows Vista and later, including Windows Server editions. HLK testing is the recommended method for driver signing, because it signs a driver for all OS versions.
+ A dashboard signed driver that has passed the Hardware Lab Kit (HLK) tests works on Windows Vista and later, including Windows Server editions. HLK testing is the recommended method for driver signing, because it signs a driver for all OS versions.
 
 HLK tested drivers demonstrate that a manufacturer rigorously tests their hardware to meet all Microsoft requirements regarding reliability, security, power efficiency, serviceability, and performance. Testing includes compliance with industry standards and adherence with Microsoft specifications for technology-specific features. Such testing helps to ensure correct installation, deployment, connectivity, and interoperability.
 
@@ -108,7 +108,7 @@ For Windows 10 Enterprise edition, enterprises can implement a policy to modify 
 
 ## Windows driver signing requirements
 
-The following table summarizes the driver signing requirements for Windows:
+The following table summarizes the driver signing requirements for Windows.
 
 | Version                             | Attestation dashboard signed | HLK test passed dashboard signed | Cross-signed using a SHA-1 certificate issued prior to July 29, 2015       |
 |-------------------------------------|------------------------------|----------------------------------|----------------------------------------------------------------------------|

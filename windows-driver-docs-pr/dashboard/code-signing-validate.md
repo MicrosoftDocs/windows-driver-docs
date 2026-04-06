@@ -14,7 +14,7 @@ There are a couple cases where you might want to validate the Microsoft signatur
 
 - You aren't sure if a driver is Microsoft signed or not, and you want to check.
 
-- You have two drivers. You need to determine which one is attestation signed. The other driver is signed after submission of Windows Hardware Lab Kit (HLK) or Windows Hardware Crtification Kit (HCK) results to the dashboard.
+- You have two drivers. You need to determine which one is attestation signed. The other driver is signed after submission of Windows Hardware Lab Kit (HLK) or Windows Hardware Certification Kit (HCK) results to the dashboard.
 
 ## Download signed driver files
 
