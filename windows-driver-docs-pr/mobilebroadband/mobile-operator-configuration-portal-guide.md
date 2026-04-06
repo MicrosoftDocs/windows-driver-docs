@@ -2,8 +2,6 @@
 title: Microsoft Mobile Operator Configuration Portal Guide
 description: This article introduces the mobile operator configuration portal to create a COSA database submission.
 ms.date: 08/16/2024
-author: mhopkins-msft
-ms.author: mhopkins
 ms.topic: how-to
 ---
 # Microsoft mobile operator configuration portal guide
