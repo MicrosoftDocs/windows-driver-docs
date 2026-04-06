@@ -16,7 +16,7 @@ This article describes how to sign a driver by using attestation signing.
 
 - Read and understand the requirements for [attestation signed drivers](driver-signing-offerings.md#attestation-signed-drivers-for-testing-scenarios) for testing scenarios.
 
-- Register for the Hardware Developer program. If you aren't registered, follow the steps in [Register for the Microsoft Windows Hardware Developer Program](hardware-program-register.md).
+- Register for the Hardware Developer Program. If you aren't registered, follow the steps in [Register for the Microsoft Windows Hardware Developer Program](hardware-program-register.md).
 
 - You must have an extended validation (EV) code signing certificate. Check whether your organization already has a code signing certificate.
 
@@ -160,7 +160,7 @@ After you sign the CAB file, you're ready to submit the file in Partner Center:
 
 1. After the signing process completes, download your signed driver from the hardware dashboard.
 
-## Validate the driver is properly signed
+## Validate that the driver is properly signed
 
 Confirm that your driver is properly signed with these steps:
 
@@ -180,7 +180,7 @@ Confirm that your driver is properly signed with these steps:
     C:\Echo> SignTool verify /pa /ph /v /d Echo.Sys
    ```
 
-1. To confirm the Extended Key Usages (EKUs) of the driver, complete the following steps:
+1. To confirm the Enhanced Key Usages (EKUs) of the driver, complete the following steps:
 
    1. Open Windows Explorer and locate the binary file. Right-click the file and select **Properties**.
 
@@ -192,11 +192,11 @@ Confirm that your driver is properly signed with these steps:
 
 The driver uses the following process when it resigns the driver:
 
-1. Append a Microsoft SHA2 embedded signature.
+1. Append a Microsoft SHA-2 embedded signature.
 
 1. If the driver binaries are embedded signed by the customer with their own certificates, overwrite the signatures.
 
-1. Create and sign a new catalog file with an SHA2 Microsoft certificate. The catalog replaces any existing catalog provided by the customer.
+1. Create and sign a new catalog file with an SHA-2 Microsoft certificate. The catalog replaces any existing catalog provided by the customer.
 
 ## Test your driver on Windows
 

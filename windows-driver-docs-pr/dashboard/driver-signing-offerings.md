@@ -33,7 +33,7 @@ Attestation signing has the following restrictions and requirements:
 
 - Attestation signing doesn't return the proper Portable Executable (PE) level for Early Launch Antimalware (ELAM) or Windows Hello PE binaries. These binaries must be tested and submitted as .hlkx packages to receive the extra signature attributes.
 
-- Attestation signing requires the use of an [extended validation certificate](code-signing-reqs.md#ev-certificate-signed-drivers) to submit the driver to the Partner Center (Hardware Dev Center Dashboard).
+- Attestation signing requires the use of an [extended validation certificate](code-signing-reqs.md#ev-certificate-signed-drivers) to submit the driver to Partner Center (the Hardware Dev Center dashboard).
 
 - Attestation signing requires that the driver folder names contain no special characters, and no UNC file share paths. Driver folder names must be fewer than 40 characters long.
 
