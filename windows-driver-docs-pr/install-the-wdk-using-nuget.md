@@ -20,7 +20,7 @@ This article describes how to use NuGet to install the Windows Driver Kit on you
 
 Windows Driver Kit (WDK) is a software tool set used to develop, test, and deploy Windows drivers. The content included in the WDK can be categorized into five unique types: Headers, Libraries, Samples, Tools, and Templates.
 
-The WDK is released in three different distributions, with different installation options.
+The WDK is released in three different distributions, with different installation options. Test
 
 **Windows Driver Kit (WDK)**: The WDK is available as a traditional msi based package. It requires Visual Studio to be installed and the WDK is installed to `%ProgramFiles(x86)%\Windows Kits\`. For information on downloading and installing the WDK, see [Download the Windows Driver Kit (WDK)](.\download-the-wdk.md).
 
