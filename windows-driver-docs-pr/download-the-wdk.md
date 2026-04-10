@@ -37,7 +37,7 @@ Beginning with WDK version 10.0.26100.1, the WDK supports the development, testi
 The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2022 System Requirements](/visualstudio/releases/2022/system-requirements).
 
 > [!IMPORTANT]
-> Don't use Visual Studio 2026 for Windows driver development at this time. The WDK has not yet been validated with Visual Studio 2026, and compatibility is not guaranteed. Continue using Visual Studio 2022 for all driver development. We will update this page when Visual Studio 2026 is officially supported by WDK.
+>  A Preview WDK with Visual Studio 2026 support is now available for Windows Insiders and on nuget.org. You can use this preview for validation testing and early feedback. For production driver development, we recommend continuing to use Visual Studio 2022 with the current retail WDK. For more details, see [Announcing Preview WDK with VS2026](https://techcommunity.microsoft.com/blog/windowsdriverdev/announcing-preview-wdk-with-vs2026/4508117).
 
 Driver development for this release is supported in Visual Studio 2022 Community, Professional, or Enterprise edition.
 
