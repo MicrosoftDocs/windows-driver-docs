@@ -22,6 +22,8 @@ When provisioning systems for driver deployment, the host and the target machine
 
 1. On the target computer, install the operating system that you'll use to run and test your driver.
 
+1. If the target computer is domain joined, ensure the user account has a password set. Blank passwords are not supported and will cause provisioning to fail.
+
 1. [Install the WDK](../download-the-wdk.md). You only need to install Visual Studio if you plan on doing driver development on the target computer.
 
 1. If Secure Boot is enabled on the target computer, disable it. For information about Unified Extensible Firmware Interface (UEFI) and Secure Boot, see [UEFI Firmware](/previous-versions/windows/it-pro/windows-8.1-and-8/hh824898(v=win.10)).
@@ -70,7 +72,7 @@ Now you're ready to provision the target computer from the host computer in Visu
 
 1. The provisioning process takes several minutes and might automatically reboot the target computer once or twice. When provisioning is complete, select **Finish**.
 
-1. **Restart** the computer.
+1. **Restart** the target computer. The restart is required after provisioning to ensure all configuration changes take effect.
 
 ## See Also
 
