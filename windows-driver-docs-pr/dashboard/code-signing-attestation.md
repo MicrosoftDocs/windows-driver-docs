@@ -40,7 +40,7 @@ A typical CAB file submission must contain the following components:
 
 - The symbol file used for debugging information, such as *Echo.pdb*. The *.pdb* file is required for Microsoft automated crash analysis tools.
 
-- Catalog (*.CAT*) files are required and used for company verification only. Microsoft regenerates catalog files and replaces any catalog files submitted previously.
+- Catalog (*.cat*) files are required and used for company verification only. Microsoft regenerates catalog files and replaces any catalog files submitted previously.
 
 > [!NOTE]
 > Each driver folder in your CAB file must support the same set of architectures. For example, they must support x86, x64, or they must all support both x86 and x64.
@@ -154,11 +154,11 @@ After you sign the CAB file, you're ready to submit the file in Partner Center:
 
 1. For the **Requested Signatures** option, select the signatures to include in your driver package:
 
-   :::image type="content" source="./images/code-signing-attestation/attestation-flow.png" alt-text="Screenshot showing the options for submitting the Echo driver for signing.":::
+   :::image type="content" source="./images/code-signing-attestation/attestation-flow.png" alt-text="Screenshot that shows the options for submitting the Echo driver for signing.":::
 
 1. Select **Submit** at the bottom of the page.
 
-1. After the signing process completes, download your signed driver from the hardware dashboard.
+1. After the signing process finishes, download your signed driver from the hardware dashboard.
 
 ## Validate that the driver is properly signed
 
@@ -218,7 +218,7 @@ Submit multiple drivers at the same time by following these steps:
 
 1. Create a subdirectory for each driver.
 
-   :::image type="content" source="./images/code-signing-attestation/multiple-driver-signing.png" border="false" alt-text="Diagram showing an example driver signing directory structure.":::
+   :::image type="content" source="./images/code-signing-attestation/multiple-driver-signing.png" border="false" alt-text="Diagram that shows an example driver signing directory structure.":::
 
 1. Prepare a CAB file DDF input file that references the subdirectories. For this example, the input might be similar to the following code:
 
