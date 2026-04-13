@@ -37,7 +37,7 @@ You can purchase EV code signing certificates from one of the following certific
 
 ## EV certificate signed drivers
 
-To submit binaries for attestation signing, your Hardware Dev Center dashboard account must have at least one EV certificate associated with it. This requirement is also true if you want to submit binaries for Windows Hardware Lab Kit certification.
+To submit binaries for attestation signing, your Hardware Dev Center dashboard account must have at least one EV certificate associated with it. This requirement is also true if you want to submit binaries for Windows Hardware Compatibility Program (WHCP) certification.
 
 The following rules apply:
 

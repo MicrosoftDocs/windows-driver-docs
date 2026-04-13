@@ -1,13 +1,13 @@
 ---
 title: Driver Signing Options
-description: This article covers various driver signing offerings available from the Hardware Dev Center blog. The article also recommends best practices.
+description: This article covers various driver signing offerings available from the Hardware Dev Center. The article also recommends best practices.
 ms.date: 03/23/2026
 ms.topic: best-practice
 ---
 
 # Driver signing options and best practices
 
-This article covers various driver signing offerings available from the Hardware Dev Center blog. The article also recommends best practices.
+This article covers various driver signing offerings available from the Hardware Dev Center. The article also recommends best practices.
 
 ## Hardware Lab Kit tested and dashboard signed drivers
 
