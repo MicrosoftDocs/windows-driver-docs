@@ -70,7 +70,7 @@ To use data indices to extract and set control data in a HID report, an applicat
 
 These routines are useful to an application or driver that provides a "value-added" service. For example, one that provides a custom interface to all the controls supported by a HIDClass device. Microsoft DirectInput is one example.
 
-An application or driver calling these routines can most efficiently obtain and set all values in a report. For example, to obtain all value data by their [HID usages](./hid-usages.md) it has to call [HidP_GetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue) for each usage. However, to obtain all value data by data index, it only has to call **HidP_GetData** once.
+An application or driver calling these routines can most efficiently obtain and set all values in a report. For example, to obtain all value data by their [HID usages](./hid-usages.md), it has to call [HidP_GetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue) for each usage. However, to obtain all value data by data index, it only has to call **HidP_GetData** once.
 
 An application or driver uses the data indices specified in a collection's [Button Capability Arrays](./button-capability-arrays.md) and [Value Capability Arrays](./value-capability-arrays.md) to identify HID usages.
 
