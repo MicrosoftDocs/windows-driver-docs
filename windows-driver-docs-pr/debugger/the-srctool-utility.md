@@ -10,7 +10,7 @@ ms.topic: concept-article
 
 The SrcTool (Srctool.exe) utility lists all files indexed within the .pdb file. For each file, it lists the full path, source control server, and version number of the file. Use this information for reference.
 
-You can also use SrcTool to list the raw source file information from the .pdb file. To do list the information, use the **-s** switch on the command line.
+You can also use SrcTool to list the raw source file information from the .pdb file. To list the information, use the **-s** switch on the command line.
 
 Use the **?** switch to see other options. For example, the **-x** switch is commonly used to extract all of the source files from version control.
 
