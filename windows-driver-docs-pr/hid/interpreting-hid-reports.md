@@ -63,7 +63,7 @@ An application or driver can set the state of buttons in a properly initialized 
 
 ## Extracting and setting control data by data indices
 
-[HidP_GetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue) assumes that a [usage](./hid-usages.md) uniquely identifies a value instance. This is not guaranteed by the HID specification. A usage defines the meaning of a control, but not a unique value instance within a report. Multiple values in a report may share the same usage, and their order is defined by the report layout, not by usage values. Data indices uniquely identify each value and preserve report order. HidP_GetData should be used when complete and unambiguous input data is required.
+[HidP_GetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue) assumes that a [usage](./hid-usages.md) uniquely identifies a value instance. This is not guaranteed by the HID specification. A usage defines the meaning of a control, but not a unique value instance within a report. Multiple values in a report may share the same usage, and their order is defined by the report layout, not by usage values. Data indices uniquely identify each value and preserve report order. HidP_GetData should be used when complete and unambiguous input data is required. Value capabilities with **ReportCount** greater than 1 may represent usage value arrays and should be accessed using [HidP_GetUsageValueArray](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevaluearray).
 
 To use data indices to extract and set control data in a HID report, an application or driver can use the following [HIDClass support routines](/windows-hardware/drivers/ddi/_hid/#hidclass-support-routines):
 
