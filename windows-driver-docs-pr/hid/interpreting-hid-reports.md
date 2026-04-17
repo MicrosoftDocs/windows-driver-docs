@@ -63,6 +63,8 @@ An application or driver can set the state of buttons in a properly initialized 
 
 ## Extracting and setting control data by data indices
 
+[HidP_GetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue) assumes that a [usage](./hid-usages.md) uniquely identifies a value instance. This is not guaranteed by the HID specification. A usage defines the meaning of a control, but not a unique value instance within a report. Multiple values in a report may share the same usage, and their order is defined by the report layout, not by usage values. Data indices uniquely identify each value and preserve report order. HidP_GetData should be used when complete and unambiguous input data is required.
+
 To use data indices to extract and set control data in a HID report, an application or driver can use the following [HIDClass support routines](/windows-hardware/drivers/ddi/_hid/#hidclass-support-routines):
 
 - [HidP_GetData](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getdata)
@@ -70,9 +72,9 @@ To use data indices to extract and set control data in a HID report, an applicat
 
 These routines are useful to an application or driver that provides a "value-added" service. For example, one that provides a custom interface to all the controls supported by a HIDClass device. Microsoft DirectInput is one example.
 
-An application or driver calling these routines can most efficiently obtain and set all values in a report. For example, to obtain all value data by their [HID usages](./hid-usages.md), it has to call [HidP_GetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue) for each usage. However, to obtain all value data by data index, it only has to call **HidP_GetData** once.
+An application or driver calling these routines can most efficiently obtain and set all values in a report. For example, retrieving values by [usage](./hid-usages.md) requires calling [HidP_GetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue) for each usage, while [HidP_GetData](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getdata) retrieves all values in a single call using data indices.
 
-An application or driver uses the data indices specified in a collection's [Button Capability Arrays](./button-capability-arrays.md) and [Value Capability Arrays](./value-capability-arrays.md) to identify HID usages.
+An application or driver uses the data indices specified in a collection's [Button Capability Arrays](./button-capability-arrays.md) and [Value Capability Arrays](./value-capability-arrays.md) to associate data indices with HID usages.
 
 ## See also
 
