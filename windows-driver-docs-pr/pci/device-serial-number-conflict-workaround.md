@@ -5,7 +5,7 @@ keywords:
 - PCI Express
 - PCI duplicate serial number error
 - Device Serial Number Extended Capability
-- ms.date: 04/24/2026
+ms.date: 04/24/2026
 ms.topic: concept-article
 ---
 
@@ -102,4 +102,4 @@ After restarting the computer, verify the hackflag is active by checking the reg
 
 ## Data collection
 
-If you need assistance from Microsoft support, collect the information by following the steps mentioned in [Gather information by using TSS for deployment-related issues](https://learn.microsoft.com/troubleshoot/windows-client/windows-troubleshooters/gather-information-using-tss-deployment).
+If you need assistance from Microsoft support, collect the information by following the steps mentioned in [Gather information by using TSS for deployment-related issues](https://learn.microsoft.com/troubleshoot/windows-client/windows-tss/collect-data-analyze-troubleshoot-windows-servicing-scenarios).
