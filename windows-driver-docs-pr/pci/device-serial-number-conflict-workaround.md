@@ -6,7 +6,7 @@ keywords:
 - PCI duplicate serial number error
 - Device Serial Number Extended Capability
 ms.date: 04/24/2026
-ms.topic: concept-article
+ms.topic: how-to
 ---
 
 # PCI Express device serial number conflicts cause device enumeration errors in Windows
@@ -30,7 +30,7 @@ In this scenario, some devices don't start correctly, some devices are assigned 
 
 - Devices appear interchanged or misidentified in Device Manager.
 - A device fails to start with an error code in Device Manager.
-- Driver or firmware updates are applied to the wrong device.
+- Driver updates are applied to the wrong device.
 - Device-specific settings or configurations are applied inconsistently across reboots.
 
 ## Cause
@@ -102,4 +102,4 @@ After restarting the computer, verify the hackflag is active by checking the reg
 
 ## Data collection
 
-If you need assistance from Microsoft support, collect the information by following the steps mentioned in [Gather information by using TSS for deployment-related issues](https://learn.microsoft.com/troubleshoot/windows-client/windows-tss/collect-data-analyze-troubleshoot-windows-servicing-scenarios).
+If you need assistance from Microsoft support, collect the information by following the steps mentioned in [Gather information by using TSS for deployment-related issues](/troubleshoot/windows-client/windows-tss/collect-data-analyze-troubleshoot-windows-servicing-scenarios).
