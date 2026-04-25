@@ -6,7 +6,7 @@ keywords:
 - PCI duplicate serial number error
 - Device Serial Number Extended Capability
 ms.date: 04/24/2026
-ms.topic: how-to
+ms.topic: concept-article
 ---
 
 # PCI Express device serial number conflicts cause device enumeration errors in Windows
@@ -67,20 +67,20 @@ To apply this workaround:
    1. On the **Edit** menu, point to **New**, and then select **DWORD (32-bit) Value**.
    1. Type **HackFlags**, and then press ENTER.
    1. Right-click **HackFlags**, and then select **Modify**.
-   1. In the **Value data** box, type **10000**, select **Hexadecimal** in the **Base** area, and then select **OK**.
+   1. In the **Value data** box, type **0x10000**, select **Hexadecimal** in the **Base** area, and then select **OK**.
    1. Exit Registry Editor.
 
 1. **If the `HackFlags` registry entry already exists**, the value might contain other hackflags that are already in use. In this case, combine the new flag with the existing value using a bitwise OR operation, rather than replacing it. Follow these steps:
 
    1. Right-click **HackFlags**, and then select **Modify**.
    1. Select **Hexadecimal** in the **Base** area.
-   1. Note the current **Value data** (for example, `600`).
-   1. Calculate the new value by performing a bitwise OR of the existing value with `10000`. For example, if the current value is `600`, the new value is `10600`.
+   1. Note the current **Value data** (for example, `0x600`).
+   1. Calculate the new value by performing a bitwise OR of the existing value with `0x10000`. For example, if the current value is `0x600`, the new value is `0x10600`.
    1. Type the new value in the **Value data** box, and then select **OK**.
    1. Exit Registry Editor.
 
    > [!TIP]
-   > You can use the Windows Calculator in **Programmer** mode to perform the bitwise OR. Enter the existing hex value, select **OR**, enter **10000**, and press **=** to get the combined result.
+   > You can use the Windows Calculator in **Programmer** mode to perform the bitwise OR. Enter the existing hex value, select **OR**, enter **0x10000**, and press **=** to get the combined result.
 
 1. Restart the computer for the change to take effect.
 
@@ -92,7 +92,7 @@ After restarting the computer, verify the hackflag is active by checking the reg
 
    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PnP\Pci`
 
-1. Double-click **HackFlags** and confirm that the value, when viewed in hexadecimal, includes the `10000` bit. For example, a value of `10000`, `10200`, `10600`, or any value where bit 16 is set confirms the flag is active.
+1. Double-click **HackFlags** and confirm that the value, when viewed in hexadecimal, includes the `0x10000` bit. For example, a value of `0x10000`, `0x10200`, `0x10600`, or any value where bit 16 is set confirms the flag is active.
 
 ## More information
 
