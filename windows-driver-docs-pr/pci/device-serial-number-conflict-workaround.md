@@ -80,7 +80,7 @@ To apply this workaround:
    1. Exit Registry Editor.
 
    > [!TIP]
-   > You can use the Windows Calculator in **Programmer** mode to perform the bitwise OR. Enter the existing hex value, select **OR**, enter **0x10000**, and press **=** to get the combined result.
+   > You can use the Windows Calculator in **Programmer** mode to perform the bitwise OR. Select *HEX* format, enter the existing hex value, select **OR**, enter **10000**, and press **=** to get the combined result.
 
 1. Restart the computer for the change to take effect.
 
