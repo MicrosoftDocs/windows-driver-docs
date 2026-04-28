@@ -14,6 +14,8 @@
   href: i-o-resource-usage-reduction.md
 - name: "Order of Resources in Start-Device IRP"
   href: order-of-resources-in-start-device-irp.md
+- name: PCI Express device serial number conflicts
+  href: device-serial-number-conflict-workaround.md
 - name: "PCI Express FAQ for Graphics"
   href: pci-express-faq-for-graphics.yml
 - name: "PCI Sample"
