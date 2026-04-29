@@ -21,17 +21,17 @@ The namespace URI for the Print Schema keywords for 3D manufacturing is:
 https://schemas.microsoft.com/3dmanufacturing/2013/01/pskeywords3d
 ```
 
-In this specification, the namespace prefix **psk3d:** is used to denote elements, attributes, and attribute values drawn from the Print Schema keywords for 3D manufacturing namespace. Producers MUST generate each prefixed element, attribute, or attribute value with a namespace prefix associated with the namespace declaration for the related Print Schema namespace. Consumers MUST resolve namespace prefixes against the namespace declarations to ensure that the qualified name is drawn from the correct namespace. Consumers MUST NOT rely on the namespace prefix **psk3d:** to be correctly declared and associated with the Print Schema keywords for 3D manufacturing namespace. Individual producers MAY use different Print Schema keywords for 3D manufacturing namespace prefixes or declare this namespace as the default namespace and omit the namespace prefixes for elements, attributes, and attribute values drawn from this namespace. It is NOT RECOMMENDED, however, to assign this keyword namespace to the default namespace.
+In this specification, the namespace prefix **psk3d:** is used to denote elements, attributes, and attribute values drawn from the Print Schema keywords for 3D manufacturing namespace. Producers must generate each prefixed element, attribute, or attribute value with a namespace prefix associated with the namespace declaration for the related Print Schema namespace. Consumers must resolve namespace prefixes against the namespace declarations to ensure that the qualified name is drawn from the correct namespace. Consumers must not rely on the namespace prefix **psk3d:** to be correctly declared and associated with the Print Schema keywords for 3D manufacturing namespace. Individual producers MAY use different Print Schema keywords for 3D manufacturing namespace prefixes or declare this namespace as the default namespace and omit the namespace prefixes for elements, attributes, and attribute values drawn from this namespace. It's not recommended, however, to assign this keyword namespace to the default namespace.
 
-In this specification, the namespace prefix **vnd:** is used for example purposes only to denote private keyword extension attribute values drawn from a vendor-defined namespace. Vendors SHOULD define their own unique namespace prefix for any namespace they define. Vendors SHOULD NOT define the **vnd:** namespace prefix for their namespaces. Producers SHOULD NOT generate Print Schema documents that use the **vnd:** namespace.
+In this specification, the namespace prefix **vnd:** is used for example purposes only to denote private keyword extension attribute values drawn from a vendor-defined namespace. Vendors should define their own unique namespace prefix for any namespace they define. Vendors shouldn't define the **vnd:** namespace prefix for their namespaces. Producers shouldn't generate Print Schema documents that use the **vnd:** namespace.
 
-Additionally, in this specification the namespace prefix xsd: is used to denote elements and attributes drawn from the XML Schema namespace and the namespace prefix **xsi:** is used to denote elements and attributes drawn from the XML Schema Instance namespace. XML content MUST NOT contain elements or attributes drawn from the "xml" or "xsi" namespaces unless they are explicitly permitted by the XSD schema or other requirements in this specification or the Print Schema Specification.
+Additionally, in this specification the namespace prefix xsd: is used to denote elements and attributes drawn from the XML Schema namespace and the namespace prefix **xsi:** is used to denote elements and attributes drawn from the XML Schema Instance namespace. XML content MUST NOT contain elements or attributes drawn from the "xml" or "xsi" namespaces unless they're explicitly permitted by the XSD schema or other requirements in this specification or the Print Schema Specification.
 
 See section 1.2, "XML Usage in the Print Schema" in the Print Schema Specification for additional XML requirements and namespaces defined for use in the context of the Print Schema Framework.
 
 ## 1.2. 3D manufacturing keywords versioning
 
-This specification might be periodically updated with new keywords. To ensure proper forward and backward compatibility, each new set of keywords will be given a unique namespace. Keywords defined in a particular namespace will not be modified or extended once that keyword set is released for production use. See section 1.3.2, "Keyword Versioning" in the Print Schema Specification for more information.
+This specification might be periodically updated with new keywords. To ensure proper forward and backward compatibility, each new set of keywords will be given a unique namespace. Keywords defined in a particular namespace won't be modified or extended once that keyword set is released for production use. See section 1.3.2, "Keyword Versioning" in the Print Schema Specification for more information.
 
 ## 1.3. Common Keyword Terminology
 
@@ -45,7 +45,7 @@ The *model*, in this specification, refers to the object or objects to be create
 
 The 3D manufacturing print schema keywords are based on a right-handed coordinate space, with the model coordinates appearing in the positive XYZ space. Producers and consumers MUST define and map the origin of the coordinate space to the bottom-left corner of the print output field, with the x-axis increasing to the right of the output field, the y-axis increasing to the back of the output field, and the z-axis increasing to the top of the output field.
 
-Producers and consumers MUST use the unit resolution of the coordinate space as one micron. The model MUST be transformed to this coordinate space before applying a print schema for 3D manufacturing keyword.
+Producers and consumers must use the unit resolution of the coordinate space as one micron. The model MUST be transformed to this coordinate space before applying a print schema for 3D manufacturing keyword.
 
 ![coordinate space.](images/coordinate-space.png)
 
@@ -53,9 +53,9 @@ Producers and consumers MUST use the unit resolution of the coordinate space as 
 
 Relative directions in this specification are defined as follows. The term *top* refers to the XY plane of the coordinate space with the maximum printable Z value. The term *bottom* refers to the minimum printable XY plane of the coordinate space, defined as the XY plane with a Z value of 0. This is typically coincident with the print bed surface. The term *left* refers to the minimum printable YZ plane of the coordinate space, defined as the YZ plane with an X value of 0. The term *right* refers to the YZ plane of the coordinate space with the maximum printable X value. The term *front* refers to the minimum printable XZ plane of the coordinate space, defined as the XZ plane with a Y value of 0. The term *back* refers to the XZ plane of the coordinate space with the maximum printable Y value.
 
-These terms are also applied to models, in which case they are defined relative to the bounding box of the model when transformed to the coordinate space defined in this specification.
+These terms are also applied to models, in which case they're defined relative to the bounding box of the model when transformed to the coordinate space defined in this specification.
 
-Producers and consumers MUST interpret relative coordinates in relation to the coordinate space defined in this specification.
+Producers and consumers must interpret relative coordinates in relation to the coordinate space defined in this specification.
 
 ## 1.4. Interpreting keyword descriptions
 
@@ -63,19 +63,19 @@ Print Schema 3D manufacturing keywords are specified in this document using one 
 
 ## 1.5. Keyword usage in print schema documents
 
-Print Schema 3D manufacturing keywords MUST NOT be used in any context that is not explicitly described by this specification.
+Print Schema 3D manufacturing keywords must be used in any context that isn't explicitly described by this specification.
 
-Elements with a **name** attribute value containing a private keyword extension MAY be a child of any element permitted by the Print Schema Framework.
+Elements with a **name** attribute value containing a private keyword extension may be a child of any element permitted by the Print Schema Framework.
 
 Any Print Schema 3D manufacturing keyword MAY appear as the character data contents of a Value child of an element identified with a private keyword extension, if that character data refers to the original element identified by the Print Schema 3D manufacturing keyword that is properly used elsewhere in the same Print Schema document.
 
 ## 1.6. Scoping prefixes
 
-A scoping prefix is a textual label appended to the beginning of a keyword to describe the intended breadth of impact of the keyword. Using a scoping prefix allows ascribing a specific and well-understood context to keywords in a rigorous manner. 3D manufacturing keywords SHOULD have a "Job3D" scoping prefix. Document and Page scoping prefixes MUST NOT be used in a 3D manufacturing Print Schema document. See section 5.4, "Scoping Prefixes" of the Print Schema Specification for more information.
+A scoping prefix is a textual label appended to the beginning of a keyword to describe the intended breadth of impact of the keyword. Using a scoping prefix allows ascribing a specific and well-understood context to keywords in a rigorous manner. 3D manufacturing keywords should have a "Job3D" scoping prefix. Document and Page scoping prefixes must not be used in a 3D manufacturing Print Schema document. See section 5.4, "Scoping Prefixes" of the Print Schema Specification for more information.
 
 ## 1.7. Resource identifiers
 
-Resource identifiers MAY be used in Print Schema 3D manufacturing keywords, but MUST follow the requirements in section 5.5 "Resource Identifiers" of the Print Schema Specification.
+Resource identifiers MAY be used in Print Schema 3D manufacturing keywords, but must follow the requirements in section 5.5 "Resource Identifiers" of the Print Schema Specification.
 
 ## 1.8. Parameter types
 
@@ -86,9 +86,9 @@ Parameters in the Print Schema 3D manufacturing keyword set follows the same req
 | Child | xsi:type | Value |
 |--|--|--|
 | Property psf:DataType | xsd:QName | Parameter is materialMap type and must be psk3d:MaterialMap. |
-| Property psf:MaxLength | xsd:integer | Specifies the maximum length of the string that this Parameter can be initialized to. The Value SHOULD be no greater than is reasonably needed for a particular keyword. Print Schema: defined Parameters MUST NOT specify a Value greater than 65535 characters. The Value MUST be a positive integer or 0. The Value MUST be greater than or equal to the Value of psf:MinLength. |
-| Property psf:MinLength | xsd:integer | Specifies the minimum length of the string that this Parameter can be initialized to. The Value MUST be a positive integer or 0. |
-| Property psf:Mandatory | xsd:QName | Specifies when the Parameter MUST be initialized. See section 2.1.3.1.1, "Parameter psf:Mandatory Property" for description and requirements for this Property. |
+| Property psf:MaxLength | xsd:integer | Specifies the maximum length of the string that this Parameter can be initialized to. The Value should be no greater than is reasonably needed for a particular keyword. Print Schema: defined Parameters must not specify a Value greater than 65535 characters. The Value MUST be a positive integer or 0. The Value must be greater than or equal to the Value of psf:MinLength. |
+| Property psf:MinLength | xsd:integer | Specifies the minimum length of the string that this Parameter can be initialized to. The Value must be a positive integer or 0. |
+| Property psf:Mandatory | xsd:QName | Specifies when the Parameter must be initialized. See section 2.1.3.1.1, "Parameter psf:Mandatory Property" for description and requirements for this Property. |
 | Property psf:UnitType | xsd:string | The value must be MaterialMapUnitType. |
 | Property psk3d:Job3DMaterialSelected | xsd:QName | This value represents the Job3DMaterial this Parameter corresponds to. |
 
@@ -96,7 +96,7 @@ Parameters in the Print Schema 3D manufacturing keyword set follows the same req
 
 This specification uses the same common properties as the Print Schema keywords, defined in section 5.7, "Common Properties" of the Print Schema Specification.
 
-Property values that specify the xsd:decimal type MUST have be expressible as an IEEE 754 single-precision floating-point value.
+Property values that specify the xsd:decimal type must have be expressible as an IEEE 754 single-precision floating-point value.
 
 ## 1.10. Parameter unit types
 
