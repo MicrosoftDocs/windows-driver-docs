@@ -1,7 +1,7 @@
 ---
 title: 3D Manufacturing Keywords Overview
 description: The Print Schema 3D manufacturing keywords identify possible settings for a device's capabilities or selected settings for a device configuration.
-ms.date: 03/17/2023
+ms.date: 04/29/2026
 ms.topic: concept-article
 ---
 
@@ -9,9 +9,9 @@ ms.topic: concept-article
 
 The Print Schema 3D manufacturing keywords identify possible settings for an 3D manufacturing device's capabilities or selected settings for a particular device configuration. These keywords each describe a particular concept in a well-defined manner in order to maximize clarity in the communication of settings between producers and consumers of Print Schema documents for 3D manufacturing.
 
-Producers and consumers SHOULD use the Print Schema 3D manufacturing keywords in favor of defining keywords for similar functionality in a private keyword extension. Keywords identify individual Print Schema Framework elements via the **name** attribute. The name given to a particular keyword SHOULD be representative of the setting or characteristic that keyword represents.
+Producers and consumers should use the Print Schema 3D manufacturing keywords in favor of defining keywords for similar functionality in a private keyword extension. Keywords identify individual Print Schema Framework elements via the **name** attribute. The name given to a particular keyword should be representative of the setting or characteristic that keyword represents.
 
-Keyword instances appearing within a PrintCapabilities or PrintTicket document SHOULD conform to the scoping prefix rules defined in section 1.6, Scoping prefixes, of this article . See section 5.4, "Scoping Prefixes" in the Print Schema Specification for more details on scoping prefixes.
+Keyword instances appearing within a PrintCapabilities or PrintTicket document should conform to the scoping prefix rules defined in section 1.6, Scoping prefixes, of this article . See section 5.4, "Scoping Prefixes" in the Print Schema Specification for more details on scoping prefixes.
 
 ## 1.1. XML namespaces
 
