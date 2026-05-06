@@ -34,8 +34,6 @@ Beginning with WDK version 10.0.26100.1, the WDK supports the development, testi
 
 ## ![Download icon for Visual Studio](images/download-install.png) Step 1: Install Visual Studio 2026
 
-The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2026 System Requirements](/visualstudio/releases/2026/system-requirements).
-
 Driver development for this release is supported in Visual Studio 2026 Community, Professional, or Enterprise edition.
 
 [Download Visual Studio 2026](https://visualstudio.microsoft.com/downloads/)
