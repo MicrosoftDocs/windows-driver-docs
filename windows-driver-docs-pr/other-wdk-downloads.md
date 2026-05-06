@@ -10,7 +10,7 @@ keywords:
 - Windows driver tools
 - EWDK download
 - Windows driver development tools
-ms.date: 03/05/2026
+ms.date: 05/06/2026
 ms.topic: how-to
 ---
 
