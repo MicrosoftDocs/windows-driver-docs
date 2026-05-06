@@ -1,7 +1,7 @@
 ---
 title: Windows Drivers Kit (WDK) release notes
 description: Highlights the latest features in new WDK releases.
-ms.date: 05/04/2026
+ms.date: 05/06/2026
 ms.topic: release-notes
 ---
 
@@ -11,7 +11,7 @@ The following features and bug fixes are in the Windows 11 WDK update.
 
 ## Version 10.0.28000.1839 (26H1)
 
-*Released May 4, 2026*
+*Released May 6, 2026*
 
 ### WifiCx
 This Wdk changes enables Ihvs to build drivers for the WiFiCx driver model, that will enable the device to connect to networks advertising Wpa3 compatibility mode security.
