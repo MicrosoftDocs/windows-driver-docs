@@ -1,7 +1,7 @@
 ---
 title: What's New in Driver Development for Windows 11, Version 25H2
 description: This section describes new features for driver development in Windows 11, version 25H2.
-ms.date: 05/04/2026
+ms.date: 05/06/2026
 ms.topic: whats-new
 ---
 
