@@ -1,50 +1,43 @@
 ---
-title: What's New in Driver Development for Windows 11, Version 25H2
-description: This section describes new features for driver development in Windows 11, version 25H2.
-ms.date: 09/23/2025
+title: What's New in Driver Development for Windows 11, Version 26H1
+description: This section describes new features for driver development in Windows 11, version 26H1.
+ms.date: 05/06/2026
 ms.topic: whats-new
 ---
 
-# <a name="top"></a>What's new in driver development for Windows 11, version 25H2
+# <a name="top"></a>What's new in driver development for Windows 11, version 26H1
 
-This section describes new features and updates for driver development in Windows 11, version 25H2. To target this version of Windows, you can use [Windows Driver Kit (WDK) 10.0.26100.6584](./download-the-wdk.md) (released September 23, 2025).
+This section describes new features and updates for driver development in Windows 11, version 26H1. To target this version of Windows, you can use [Windows Driver Kit (WDK) 10.0.28000.1839](./download-the-wdk.md) (released May 4, 2026).
 
-## WDK NuGet package support
+## Visual Studio 2026 Support
 
-The WDK NuGet package consists of essential libraries, headers, DLL, tools, and metadata. Developers use these components to build Windows drivers. Modern CI/CD pipelines can share and support these components. Users can access and consume the NuGet packages directly from nuget.org within Visual Studio. Using NuGet with the WDK provides a convenient solution for WDK acquisition and updates. It manages dependencies such as the SDK, to help keep the driver development tool chain up to date. For more information, see [Install the latest WDK using NuGet - Step by Step](install-the-wdk-using-nuget.md).
+Developer can now use [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) to develop drivers with the latest WDK.
 
-## Audio
+## Specific Silicon
 
-### SoundWire Device Class for Audio (SDCA)
-
-The SDCA driver stack now supports the SDCA Companion Amp Function and Multichannel Capture scenarios. All SDCA drivers are included Inbox.
-Enable connectivity to Wi-Fi 7 enterprise networks.
+26H1 includes platform changes to support specific silicon. Use only if you need these changes. For details see Announcing Windows 11 Insider Preview Build 28000.
 
 ## Network drivers
 
-- The WDK adds changes to the WiFiCx public header and library to enable IHV drivers to connect to Wi-Fi 7 enterprise networks. The WiFiCx driver TLV parser version is now 2.0.13. New capabilities allow Windows and the driver to detect Wi-Fi 7 enterprise connectivity support from each other.
-
-### Packet Monitor Clnt NPIs
-
-Pktmon Clnt NPIs are available for kernel-mode drivers to push network packet notifications into the PktMon platform. You can use these NPIs to diagnose performance and network connectivity issues. The NPIs allow run-time registration with the PktMon platform so that drivers can safely run on systems without Pktmon support.
-
-## Kernel
-
-### usermode_accessors.h
-
-Contains dedicated functions for the kernel to use when reading from and writing to the user-mode virtual address space.
+* This Wdk changes enables Ihvs to build drivers for the WiFiCx driver model, that will enable the device to connect to networks advertising Wpa3 compatibility mode security.
+* The WiFiCx driver tlv parser version is bumped up to 2.0.14, and capabilities are added to enable both the OS and the driver to use Wpa3 compatibility mode security when connecting to such networks.
+* Removed legacy WDI datapath definitions from WiFiCx header.
 
 ## Storage drivers
 
-### Icekeymaninterface.h
+The SDBUS/SDSTOR driver stack now supports SD Ultra Capacity (SDUC) cards for systems that use the SDBUS driver with native SD host controllers. The WDK includes the related SD bus interface updates in ntddsd.h to enable SDUC operations for cards over 2 TB and up to 128 TB.
 
-- Adds new flag to capabilities structure for implementation to attest FIPS module compliance.
-- Introduces new interface API for validating a wrapped key that the system can unwrap.
+## Kernel
+
+### d3dkmddi.h
+
+Added kernel header definitions for the GPU Process Debug Blob Collection feature.
 
 ## Related articles
 
 For information on what was new for drivers in past Windows releases, see the following pages:
 
+- [Driver development changes for Windows 11, version 25H2](driver-changes-for-windows-11-version-25h2.md)
 - [Driver development changes for Windows 11, version 24H2](driver-changes-for-windows-11-version-24h2.md)
 - [Driver development changes for Windows 11, version 23H2](driver-changes-for-windows-11-version-23h2.md)
 - [Driver development changes for Windows 11, version 22H2](driver-changes-for-windows-11-version-22h2.md)

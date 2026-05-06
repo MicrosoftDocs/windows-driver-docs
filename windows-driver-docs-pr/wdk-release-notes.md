@@ -1,13 +1,34 @@
 ---
 title: Windows Drivers Kit (WDK) release notes
 description: Highlights the latest features in new WDK releases.
-ms.date: 09/23/2025
+ms.date: 05/06/2026
 ms.topic: release-notes
 ---
 
 # Windows Driver Kit (WDK) release notes
 
 The following features and bug fixes are in the Windows 11 WDK update.
+
+## Version 10.0.28000.1839 (26H1)
+
+*Released May 6, 2026*
+
+### WifiCx
+This Wdk changes enables Ihvs to build drivers for the WiFiCx driver model, that will enable the device to connect to networks advertising Wpa3 compatibility mode security.
+
+The WiFiCx driver tlv parser version is bumped up to 2.0.14, and capabilities are added to enable both the OS and the driver to use Wpa3 compatibility mode security when connecting to such networks.
+
+### d3dkmddi.h
+
+Added kernel header definitions for the GPU Process Debug Blob Collection feature.
+
+### dot11wificxintf.h
+
+Removed legacy WDI datapath definitions from WiFiCx header.
+
+### ntddsd.h
+
+The SDBUS/SDSTOR driver stack now supports SD Ultra Capacity (SDUC) cards for systems that use the SDBUS driver with native SD host controllers. The WDK includes the related SD bus interface updates in ntddsd.h to enable SDUC operations for cards over 2 TB and up to 128 TB.
 
 ## Version 10.0.28000.1 (26H1)
 

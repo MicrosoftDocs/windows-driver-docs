@@ -4,6 +4,8 @@
   href: wdk-release-notes.md
 - name: New in previous releases
   items:
+  - name: What's new in driver development for Windows 11, version 25H2
+    href: driver-changes-for-windows-11-version-25h2.md
   - name: What's new in driver development for Windows 11, version 24H2
     href: driver-changes-for-windows-11-version-24h2.md
   - name: What's new in driver development for Windows 11, version 23H2
