@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 11/21/2025
+ms.date: 04/28/2026
 ms.topic: how-to
 ---
 
@@ -18,9 +18,9 @@ Use the WDK to develop, test, and deploy drivers for Windows.
 - Use the latest release WDK to build drivers for Windows 10, Windows Server 2016, and later client and server versions.
 
 > [!IMPORTANT]
-> - We recommend using the latest WDK 26100.6584 for driver development. If you need to target older versions of Windows, follow the guidance in [Building Drivers for Previous OS Releases Using the Latest Windows Driver Kit (WDK)](https://techcommunity.microsoft.com/blog/windowsdriverdev/building-drivers-for-previous-os-releases-using-the-latest-windows-driver-kit-wd/4374910)
+> - We recommend using the latest WDK 28000.1761 with Visual Studio 2026 for driver development. If you need to target older versions of Windows, follow the guidance in [Building Drivers for Previous OS Releases Using the Latest Windows Driver Kit (WDK)](https://techcommunity.microsoft.com/blog/windowsdriverdev/building-drivers-for-previous-os-releases-using-the-latest-windows-driver-kit-wd/4374910)
+> - If you want to continue using Visual Studio 2022 or are facing issues upgrading to Visual Studio 2026, use WDK 26100.6584 available in [Other WDK Downloads](other-wdk-downloads.md).
 > - Looking for earlier WDK versions? Visit [Other WDK Downloads](other-wdk-downloads.md)
-> - WDK version 28000.1 (26H1) is available in the [Other WDK Downloads](other-wdk-downloads.md) article. This release includes platform changes to support specific silicon and should be used only if you require these changes.
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://aka.ms/wipwdk). For installation instructions for Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](./installing-preview-versions-wdk.md).
 
@@ -32,34 +32,31 @@ WDK is available as a NuGet package starting from version 10.0.26100.1. Access a
 
 Beginning with WDK version 10.0.26100.1, the WDK supports the development, testing, and deployment of drivers on ARM64 machines. You can install and run the WDK and EWDK natively on ARM64 hardware. The WDK also continues to support the emulation of x86 KMDF and UMDF 2 drivers on ARM64 hardware. You can now debug and deploy drivers to an ARM64 target machine from both ARM64 and x64 host machines. When you install the WDK or EWDK on ARM64 machines, the process automatically identifies and installs all necessary dependencies, including build tools, binaries, and libraries.
 
-## ![Download icon for Visual Studio](images/download-install.png) Step 1: Install Visual Studio 2022
+## ![Download icon for Visual Studio](images/download-install.png) Step 1: Install Visual Studio 2026
 
-The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2022 System Requirements](/visualstudio/releases/2022/system-requirements).
+The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2026 System Requirements](/visualstudio/releases/2026/system-requirements).
 
-> [!IMPORTANT]
->  A Preview WDK with Visual Studio 2026 support is now available for Windows Insiders and on nuget.org. You can use this preview for validation testing and early feedback. For production driver development, we recommend continuing to use Visual Studio 2022 with the current retail WDK. For more details, see [Announcing Preview WDK with VS2026](https://techcommunity.microsoft.com/blog/windowsdriverdev/announcing-preview-wdk-with-vs2026/4508117).
+Driver development for this release is supported in Visual Studio 2026 Community, Professional, or Enterprise edition.
 
-Driver development for this release is supported in Visual Studio 2022 Community, Professional, or Enterprise edition.
+[Download Visual Studio 2026](https://visualstudio.microsoft.com/downloads/)
 
-[Download Visual Studio 2022](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2022-and-other-products)
+When you install Visual Studio 2026, select the **Desktop development with C++** workload. Then, under Individual Components, add:
 
-When you install Visual Studio 2022, select the **Desktop development with C++** workload. Then, under Individual Components, add:
-
-- MSVC v143 - VS 2022 C++ ARM64/ARM64EC Spectre-mitigated libs (Latest)
-- MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
-- C++ ATL for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
-- C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)
-- C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
-- C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)
+- C++ Spectre-mitigated libraries for x64/x86 (Latest MSVC)
+- C++ Spectre-mitigated libraries for ARM64/ARM64EC (Latest MSVC)
+- C++ ATL with Spectre mitigations for x64/x86 (Latest MSVC)
+- C++ ATL with Spectre mitigations for ARM64/ARM64EC (Latest MSVC)
+- C++ MFC with Spectre mitigations for x64/x86 (Latest MSVC)
+- C++ MFC with Spectre mitigations for ARM64/ARM64EC (Latest MSVC)
 - Windows Driver Kit
 
 > [!TIP]
-> Use the Search box to look for "64 latest spectre" (in English installations) or "64 latest" (in non-English installations) to quickly see these components.
+> Use the Search box to look for "spectre" to quickly see these components.
 
 :::image type="content" source="images/installing-VS-components-64-latest-spectre.png" alt-text="Image showing the six components listed with checkboxes set.":::
 
 > [!NOTE]
-> The **Desktop development with C++** workload doesn't install the Windows SDK 10.0.26100.1.
+> The **Desktop development with C++** workload doesn't install the Windows SDK 10.0.28000.1.
 
 ## ![Download icon for SDK](images/download-install.png) Step 2: Install the SDK
 
@@ -71,7 +68,7 @@ The provided links for the SDK and the WDK have matching build numbers, which is
 
 ## ![Download icon for WDK](images/download-install.png) Step 3: Install the WDK
 
-- [Download the latest WDK](https://go.microsoft.com/fwlink/?linkid=2335869)
+- [Download the latest WDK](https://go.microsoft.com/fwlink/?LinkId=2362091)
 
 Starting with version 17.11.0, the WDK VSIX is included as an individual component in Visual Studio. Before installing the WDK, the installer checks if a compatible version of the VSIX is already installed. If the installer doesn't find the WDK VSIX, it prompts you to install it. To install the WDK VSIX, launch the Visual Studio Installer, select **Modify**, go to the **Individual Components** tab, add **Windows Driver Kit**, and then select **Modify**.
 
@@ -84,21 +81,21 @@ Starting with version 17.11.0, the WDK VSIX is included as an individual compone
 
 Instead of downloading Visual Studio, the SDK, and the WDK separately, you can download the EWDK. The EWDK is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.
 
-The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.11.4 and MSVC toolset v14.41.
+The latest public version of the EWDK contains Visual Studio 2026 Build Tools 18.3.0 and MSVC toolset v14.50.
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-- [Download EWDK with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2022)
+- [Download EWDK with Visual Studio Build Tools](/legal/windows/hardware/enterprise-wdk-license-2026)
 
 After you download the ISO, use these steps to set up your build environment:
 
 1. Mount the EWDK ISO from a drive volume. Network share paths aren't currently supported.
 1. Run *LaunchBuildEnv.cmd*.
 1. In the environment created in step 2, type **SetupVSEnv**, and then press **Enter**.
-1. Launch **devenv.exe** from the same environment, using the full file path. For example: `"C:\Program Files\Microsoft Visual Studio\2022\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
+1. Launch **devenv.exe** from the same environment, using the full file path. For example: `"C:\Program Files\Microsoft Visual Studio\2026\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
 1. When you're done with the build environment, you might want to eject the ISO.
 
-You can optionally use the Visual Studio interface with the build tools provided in the EWDK. To use the Visual Studio interface, make sure that the Visual Studio major version matches the version of the Visual Studio Build Tools in the EWDK. For example, Visual Studio 2022 works with the EWDK that contains VS17.X build tools. For a list of Visual Studio 2022 version numbers, see [Visual Studio 2022 Releases](/visualstudio/releases/2022/release-history).
+You can optionally use the Visual Studio interface with the build tools provided in the EWDK. To use the Visual Studio interface, make sure that the Visual Studio major version matches the version of the Visual Studio Build Tools in the EWDK. For example, Visual Studio 2026 works with the EWDK that contains VS18.X build tools. For a list of Visual Studio 2026 version numbers, see [Visual Studio 2026 Releases](/visualstudio/releases/2026/release-history).
 
 ## Kit versioning
 
