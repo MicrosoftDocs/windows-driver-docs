@@ -54,12 +54,12 @@ The WDK NuGet requires Visual Studio. Download and install Visual Studio 2026 Co
 
 When you install Visual Studio 2026, select the **Desktop development with C++** workload, then under Individual Components add:
 
-- MSVC v143 - VS 2022 C++ ARM64/ARM64EC Spectre-mitigated libs (Latest)
-- MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
-- C++ ATL for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
-- C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)
-- C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
-- C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)
+- C++ Spectre-mitigated libraries for x64/x86 (Latest MSVC)
+- C++ Spectre-mitigated libraries for ARM64/ARM64EC (Latest MSVC)
+- C++ ATL with Spectre mitigations for x64/x86 (Latest MSVC)
+- C++ ATL with Spectre mitigations for ARM64/ARM64EC (Latest MSVC)
+- C++ MFC with Spectre mitigations for x64/x86 (Latest MSVC)
+- C++ MFC with Spectre mitigations for ARM64/ARM64EC (Latest MSVC)
 - Windows Driver Kit
 
 > [!TIP]
