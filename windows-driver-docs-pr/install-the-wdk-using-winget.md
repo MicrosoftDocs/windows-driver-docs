@@ -56,7 +56,7 @@ Run the following commands in PowerShell to download a [`.vsconfig` file](https:
 ```powershell
 $cfg = "$PWD\wdk-desktop.vsconfig"
 Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/microsoft/Windows-driver-samples/main/_wdk_utils/winget/configs/wdk-desktop.vsconfig' -OutFile $cfg
-winget install --exact --id Microsoft.VisualStudio.Community --source winget --override "--passive --config $cfg"
+winget install Microsoft.VisualStudio.Community --override "--passive --config $cfg"
 ```
 
 > [!NOTE]
@@ -67,7 +67,7 @@ winget install --exact --id Microsoft.VisualStudio.Community --source winget --o
 Run the following command in PowerShell to install the latest Windows SDK:
 
 ```powershell
-winget install --source winget --exact --id Microsoft.WindowsSDK.10.0.28000
+winget install Microsoft.WindowsSDK.10.0.28000
 ```
 
 ### Windows WDK
@@ -75,7 +75,7 @@ winget install --source winget --exact --id Microsoft.WindowsSDK.10.0.28000
 Run the following command in PowerShell to install the latest WDK:
 
 ```powershell
-winget install --source winget --exact --id Microsoft.WindowsWDK.10.0.28000
+winget install Microsoft.WindowsWDK.10.0.28000
 ```
 
 ## Use Dev Home to install the WDK configuration file
