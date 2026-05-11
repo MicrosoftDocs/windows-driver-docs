@@ -31,6 +31,12 @@ To share a driver with one of your partners, [create a hardware submission](hard
    | **Destination** | Select **Send to another Partner** to share your driver with a partner. If you want to create a shipping label for Windows Update, see [Publish a driver to Windows Update](publish-a-driver-to-windows-update.md). |
    | **Who is publishing?** | Search for the company name of your partner, and select it. |
    | **Required CHID targeting by receiver** | This option forces your partner to apply Computer Hardware IDs (CHIDs) to any publication requests they create based on your driver. This option allows you to protect your users when a Hardware ID might be shared among many partner companies. |
+   | **Block DUA creation by receiver**| When enabled, the receiving partner will not be able to create Driver Update Acceptance (DUA) submissions from this shared content. The receiver can still publish the shared driver to Windows Update as-is. This option is off by default.|
+   > [!NOTE] 
+   > - The "Block DUA creation by receiver" option prevents the receiving partner from downloading the DUA shell or creating derived (DUA) submissions on the shared content.
+   > - The setting applies per sharing shipping label. If you share the same submission to multiple partners, you can configure different DUA policies for each.
+   > - This setting can be changed at any time, even after the shipping label has been shared and published. The change takes effect immediately.
+   > - Enabling the block on a shipping label does not affect DUA submissions the receiver has already created — it only prevents future DUA creation.
 
 1. In the **Targeting** section, select the driver package that you want to share.
 
@@ -60,6 +66,6 @@ Revoking a hardware ID from a shared shipping label does the following steps.
 >
 > Existing shipping labels created by your partner are only allowed to expire content on a deprecated shipping label.
 >
-> The signed driver and DUA Shell packages from a deprecated shipping label can still be downloaded by your partner.
+> If the 'Block DUA creation by receiver' option is enabled on the sharing shipping label, the DUA shell will not be available for download regardless of deprecation status.
 >
 > Sharing and revoking a hardware ID does not modify your original INF.
