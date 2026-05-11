@@ -19,9 +19,9 @@ This method has the following syntax. The other sections in this topic provide u
 
 | Method | Request URI |
 |:--|:--|
-| PATCH | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels/{shippingLabelId}` |
+| PATCH | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels/{shippingLabelId}/{recipientSpecifications}` |
 
-The *productID*, *submissionID* and *shippingLabelID* in the method represent the product, submission and shipping label to be updated.
+The *productID*, *submissionID*, *shippingLabelID* and *recipientSpecifications*, in the method represent the product, submission and shipping label to be updated.
 
 ### Request header
 
@@ -83,6 +83,14 @@ The following example demonstrates the JSON request body for a shipping label. O
       "flooring": "RS1",
       "ceiling": "RS3"
     },
+    {
+        "recipientSpecifications": {
+            "blockDuaCreation": true
+        },
+        "targeting": {
+            "hardwareIds": [ ... ]
+        }
+    },
     "businessJustification": "Business justification for updating shipping label"
   }
 }
@@ -100,6 +108,10 @@ Points to note:
 
 * The hardware ID object should contain a valid combination of bundle ID, PNP ID, OS Code, and INF name when updating a shipping label. To get the valid, allowed combinations of these attributes for your submission (package), download the driver metadata file (provided as a link) when you get the details of a submission. For details, see [Driver package metadata](driver-package-metadata.md).
 
+* recipientSpecifications can now be included in the PATCH request body.
+
+* Only enforceChidTargeting and blockDuaCreation can be updated via PATCH. receiverPublisherId is immutable and cannot be changed after the shipping label is created. Attempting to change it will return a validation error.
+
 ### Request examples
 
 The following example demonstrates how to update a shipping label.
@@ -114,6 +126,25 @@ Authorization: Bearer <your access token>
 The response will be empty with a HTTP status of 204.
 
 After this step, use the method in [Get a shipping label](get-a-shipping-label.md) to get the updated details of the shipping label.
+
+## Validation error
+
+When attempting to change receiverPublisherId via PATCH: 
+
+```json
+{
+    "error": {
+        "code": "invalidInput",
+        "message": "Validation Failed.",
+        "validationErrors": [
+            {
+                "target": "recipientSpecifications.receiverPublisherId",
+                "message": "ReceiverPublisherId cannot be changed after creation."
+            }
+        ]
+    }
+}
+```
 
 ## Error codes
 
