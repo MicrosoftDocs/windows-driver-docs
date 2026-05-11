@@ -62,7 +62,8 @@ This resource represents a shipping label created for a submission of your produ
   },
   "recipientSpecifications": {
     "receiverPublisherId": "27691110",
-    "enforceChidTargeting": true
+    "enforceChidTargeting": true,
+    "blockDuaCreation": false
   },
   "targeting": {
     "hardwareIds": [
