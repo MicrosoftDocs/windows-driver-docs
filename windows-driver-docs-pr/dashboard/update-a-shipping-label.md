@@ -83,7 +83,7 @@ The following example demonstrates the JSON request body for a shipping label. O
       "flooring": "RS1",
       "ceiling": "RS3"
     },
-     "businessJustification": "Business justification for updating shipping label"
+    "businessJustification": "Business justification for updating shipping label"
   }
 }
 ```
