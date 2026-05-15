@@ -22,7 +22,7 @@ To share a driver with one of your partners, [create a hardware submission](hard
 
 1. On the shipping label page, go to the **Details** section and enter a name for the shipping label in the **Shipping label name** field. This name is private and isn't visible to your partner. The name allows you to organize and search for your shipping labels.
 
-   :::image type="content" source="images/publish-label-name-share-newcontrol.png" alt-text="screenshot that shows label name and properties.":::
+   :::image type="content" source="images/publish-label-name-share-new-control.png" alt-text="screenshot that shows label name and properties.":::
 
 1. In the **Properties** section, complete the following information:
 
