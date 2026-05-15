@@ -21,7 +21,7 @@ This method has the following syntax. The other sections in this topic provide u
 |:--|:--|
 | PATCH | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels/{shippingLabelId}` |
 
-The *productID*, *submissionID*, and *shippingLabelID* in the method represent the product, submission and shipping label to be updated.
+The *productID*, *submissionID* and *shippingLabelID* in the method represent the product, submission and shipping label to be updated.
 
 ### Request header
 
@@ -83,15 +83,7 @@ The following example demonstrates the JSON request body for a shipping label. O
       "flooring": "RS1",
       "ceiling": "RS3"
     },
-    {
-        "recipientSpecifications": {
-            "blockDuaCreation": true
-        },
-        "targeting": {
-            "hardwareIds": [ ... ]
-        }
-    },
-    "businessJustification": "Business justification for updating shipping label"
+     "businessJustification": "Business justification for updating shipping label"
   }
 }
 ```
