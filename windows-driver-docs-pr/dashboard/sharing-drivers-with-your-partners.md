@@ -66,6 +66,8 @@ Revoking a hardware ID from a shared shipping label does the following steps.
 >
 > Existing shipping labels created by your partner are only allowed to expire content on a deprecated shipping label.
 >
+> The signed driver and DUA Shell packages from a deprecated shipping label can still be downloaded by your partner.
+> 
 > If the 'Block DUA creation by receiver' option is enabled on the sharing shipping label, the DUA shell will not be available for download regardless of deprecation status.
 >
 > Sharing and revoking a hardware ID does not modify your original INF.
