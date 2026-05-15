@@ -35,7 +35,7 @@ There are two different options for updating your hardware submission:
 
 - **Driver Update Acceptable (DUA) process (not available for drivers signed with attestation).**
 After you submit your product for the Windows Hardware Compatibility Program for Windows 10 (or the certification program for previous Windows versions), you can then update it through the dashboard.
-DUA submissions can only be created off of an initial submission. Submission owners may blocked DUA creation by the receivers of the shared submission, in these instances the DUA Shell buttons are disabled. DUA submissions shared with another company don't see the download DUA Shell button as you can't do a DUA on a DUA submission.  For instructions on how to create a DUA submission from a DUA Shell, see [Create a driver only update package](/windows-hardware/test/hlk/user/create-a-driver-only-update-package).
+DUA submissions can only be created off of an initial submission. Submission owners may block DUA creation by the receivers of the shared submission, in these instances the DUA Shell buttons are disabled. DUA submissions shared with another company don't see the download DUA Shell button as you can't do a DUA on a DUA submission.  For instructions on how to create a DUA submission from a DUA Shell, see [Create a driver only update package](/windows-hardware/test/hlk/user/create-a-driver-only-update-package).
 
 - **Register an Extension Id.** Before Windows 10, the operating system selected a single driver package to install for a given device. This process resulted in large, complex driver packages that included code for all scenarios and configurations, and each minor update required an update to the entire driver package. Starting in Windows 10, you can split INF functionality into multiple components, each of which can be serviced independently. The core driver package installed on a device is now called the base driver package and is handled by the system in the same way driver packages were handled before Windows 10. To extend a base driver package's functionality, provide an extension INF in a separate driver package. For more information about using **ExtensionId**, see [Using an extension INF file](../install/using-an-extension-inf-file.md).
 
@@ -44,7 +44,7 @@ DUA submissions can only be created off of an initial submission. Submission own
 
 
 ### DUA creation restrictions on shared submissions
-Submission owners can now block receivers from creating DUA submissions on shared content by enabling the "Block DUA creation by receiver" option on a sharing shipping label. Please refur to this [HDC Blog post](https://techcommunity.microsoft.com/blog/hardware-dev-center/introducing-control-over-driver-update-acceptance-dua-creation-on-shared-driver-/4512222) for additonal context.
+Submission owners can now block receivers from creating DUA submissions on shared content by enabling the "Block DUA creation by receiver" option on a sharing shipping label. Please refer to this [HDC Blog post](https://techcommunity.microsoft.com/blog/hardware-dev-center/introducing-control-over-driver-update-acceptance-dua-creation-on-shared-driver-/4512222) for additonal context.
 - When blocked, receivers will not be able to:
     1. Download the DUA shell
     2. Create new DUA (derived) submissions
