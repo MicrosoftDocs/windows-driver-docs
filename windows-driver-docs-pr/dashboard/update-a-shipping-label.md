@@ -19,9 +19,9 @@ This method has the following syntax. The other sections in this topic provide u
 
 | Method | Request URI |
 |:--|:--|
-| PATCH | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels/{shippingLabelId}/{recipientSpecifications}` |
+| PATCH | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels/{shippingLabelId}` |
 
-The *productID*, *submissionID*, *shippingLabelID* and *recipientSpecifications*, in the method represent the product, submission and shipping label to be updated.
+The *productID*, *submissionID*, and *shippingLabelID* in the method represent the product, submission and shipping label to be updated.
 
 ### Request header
 
