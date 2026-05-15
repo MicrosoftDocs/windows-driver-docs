@@ -102,7 +102,8 @@ The following example demonstrates the JSON response body returned by a successf
       "submissionId": 1152921504621467600,
       "recipientSpecifications": {
         "receiverPublisherId": "27691110",
-        "enforceChidTargeting": false
+        "enforceChidTargeting": false,
+        "blockDuaCreation": false
       },
       "workflowStatus": {
         "currentStep": "finalizeSharing",

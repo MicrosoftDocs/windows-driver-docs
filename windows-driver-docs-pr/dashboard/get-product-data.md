@@ -558,6 +558,7 @@ The error codes are applicable to all web methods of the API. If the request can
 | 401 – Unauthorized | Authentication failed or not provided |
 | 403 – Forbidden | Forbidden to access a resource. |
 | 404 – Not Found | Requested entity isn't found. |
+| 412 - Precondition Failed|Driver Update Acceptance (DUA) creation has been restricted by the submission owner for this shared submission. The receiver cannot create derived submissions on this shared product.|
 | 415 - Unsupported Media Type | Payload is in a format not supported by this method on the target resource. |
 | 422 - Unprocessable Entity | Validation failures. |
 | 429 - Too Many Requests | Too many requests are being sent. Calls are throttled and the backoff time is provided in the response. |
@@ -585,6 +586,7 @@ If there are functional validation failures, the response body contains one of t
 | InvalidInput | Can't update the shipping label when another workflow is in progress. Try again. | Returned when a shipping label is updated when a previous workflow is still in progress. |
 | RequestInvalidForCurrentState | Can't create Publishing shipping label for inbox or system type. One can only share the shipping label. | Returned when windows update Shipping label is created on an inbox driver or a system. |
 | RequestInvalidForCurrentState | Submission isn't yet ready to create shipping label. Retry after some time. | Returned when a shipping label is created without waiting for preparation or preprocessing to complete. |
+|Precondition Failed |DUACreationNotAllowed|Driver Update Acceptance (DUA) creation has been restricted by the submission owner for this shared submission. The receiver cannot create derived submissions on this shared product.|
 
 ## See also
 

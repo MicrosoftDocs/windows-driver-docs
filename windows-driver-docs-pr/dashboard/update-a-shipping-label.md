@@ -88,6 +88,21 @@ The following example demonstrates the JSON request body for a shipping label. O
 }
 ```
 
+For sharing shipping labels, recipients specifications can be added. 
+
+```json
+{
+  {
+    "recipientSpecifications": {
+    "blockDuaCreation": true
+   },
+    "targeting": {
+    "hardwareIds": [ ... ]
+   }
+  }
+}
+```
+
 For details about the fields in the request, see [ShippingLabel resource](get-shipping-labels.md#shippinglabel-resource).
 
 Points to note:
@@ -99,6 +114,10 @@ Points to note:
 * To learn how to get a list of audiences for your organization, see [get audience](get-audience-data.md).
 
 * The hardware ID object should contain a valid combination of bundle ID, PNP ID, OS Code, and INF name when updating a shipping label. To get the valid, allowed combinations of these attributes for your submission (package), download the driver metadata file (provided as a link) when you get the details of a submission. For details, see [Driver package metadata](driver-package-metadata.md).
+
+* recipientSpecifications can now be included in the PATCH request body.
+
+* Only enforceChidTargeting and blockDuaCreation can be updated via PATCH. receiverPublisherId is immutable and cannot be changed after the shipping label is created. Attempting to change it will return a validation error.
 
 ### Request examples
 
@@ -114,6 +133,25 @@ Authorization: Bearer <your access token>
 The response will be empty with a HTTP status of 204.
 
 After this step, use the method in [Get a shipping label](get-a-shipping-label.md) to get the updated details of the shipping label.
+
+## Validation error
+
+When attempting to change receiverPublisherId via PATCH: 
+
+```json
+{
+    "error": {
+        "code": "invalidInput",
+        "message": "Validation Failed.",
+        "validationErrors": [
+            {
+                "target": "recipientSpecifications.receiverPublisherId",
+                "message": "ReceiverPublisherId cannot be changed after creation."
+            }
+        ]
+    }
+}
+```
 
 ## Error codes
 
