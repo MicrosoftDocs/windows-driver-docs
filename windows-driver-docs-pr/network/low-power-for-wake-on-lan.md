@@ -2,6 +2,7 @@
 title: Low Power for Wake on LAN
 description: Low Power for Wake on LAN
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Low Power for Wake on LAN

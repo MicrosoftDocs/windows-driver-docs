@@ -3,6 +3,7 @@ title: Registering for Target Device Change Notification
 description: Registering for Target Device Change Notification
 keywords: ["notifications WDK PnP , target device changes", "target device change notifications WDK PnP", "EventCategoryTargetDeviceChange notification", "registering target device change notifications", "IoRegisterPlugPlayNotification"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Registering for Target Device Change Notification

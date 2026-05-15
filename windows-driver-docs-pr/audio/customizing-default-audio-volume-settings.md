@@ -8,6 +8,7 @@ keywords:
 - customize audio volume settings
 - Port Class audio adapters WDK , volume settings
 ms.date: 05/05/2023
+ms.topic: how-to
 ---
 
 # Customizing HD Audio Driver Volume Settings

@@ -13,6 +13,7 @@ keywords:
 - DigitalOutputDisable flag
 - CopyProtect flag
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Content IDs and Content Rights

@@ -3,6 +3,7 @@ title: Debugging a Time Out
 description: Debugging a Time Out
 keywords: ["time outs"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging a Time Out

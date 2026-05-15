@@ -5,6 +5,7 @@ keywords:
 - threading WDK display , Level One
 - synchronization WDK display , Level One
 ms.date: 10/03/2023
+ms.topic: concept-article
 ---
 
 # Threading and Synchronization Level One

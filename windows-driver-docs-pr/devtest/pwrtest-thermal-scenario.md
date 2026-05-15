@@ -2,6 +2,7 @@
 title: PwrTest Thermal Scenario
 description: The PwrTest Thermal Scenario monitors ACPI thermal zone information and statistics.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # PwrTest Thermal Scenario

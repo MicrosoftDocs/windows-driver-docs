@@ -5,6 +5,7 @@ keywords:
 - user interface plug-ins WDK print , about user interface plug-ins
 - UI plug-ins WDK print , about user interface plug-ins
 ms.date: 06/22/2023
+ms.topic: concept-article
 ---
 
 # Introduction to user interface plug-Ins

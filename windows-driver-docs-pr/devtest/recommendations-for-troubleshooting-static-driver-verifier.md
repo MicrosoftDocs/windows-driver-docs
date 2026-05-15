@@ -2,6 +2,7 @@
 title: Recommendations for Troubleshooting Static Driver Verifier
 description: Recommendations for Troubleshooting Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: troubleshooting-general
 ---
 
 # Recommendations for Troubleshooting Static Driver Verifier

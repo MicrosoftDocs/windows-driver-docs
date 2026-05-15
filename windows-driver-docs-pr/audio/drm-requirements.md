@@ -10,6 +10,7 @@ keywords:
 - Designed for Windows XP logo test WDK audio
 - logo tests WDK audio
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # DRM Requirements

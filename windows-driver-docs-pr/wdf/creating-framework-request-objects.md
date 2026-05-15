@@ -5,6 +5,7 @@ keywords:
 - request objects WDK KMDF , creating
 - request objects WDK KMDF , read operations
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating Framework Request Objects

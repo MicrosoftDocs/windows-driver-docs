@@ -1,118 +1,119 @@
 ---
-title: "WinDbg Overview"
-description: "This section is an overview of WinDbg's major features."
+title: Windows Debugger WinDbg Overview
+description: Explore WinDbg to learn about general features and tool windows.
 keywords: ["Overview of WinDbg's major features", "WinDbg", "Overview", "Windows Debugging"]
-ms.date: 08/26/2024
+ms.date: 07/17/2025
+ms.topic: concept-article
+ms.custom: sfi-image-nochange
 ---
 
 # What is WinDbg?
 
-WinDbg is the latest version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center.
+WinDbg is the latest version of the debugger that offers more modern visuals, faster windows, and a full-fledged scripting experience. WinDbg is built with an extensible debugger data model.
 
 > [!NOTE]
-> Formerly released as *WinDbg Preview* in the Microsoft Store, *WinDbg* leverages the same underlying engine as *WinDbg (Classic)* and supports all the same commands, extensions, and workflows.
+> WinDbg was previously released as WinDbg Preview in the Microsoft Store. WinDbg uses the same underlying engine as WinDbg (Classic). It supports all the same commands, extensions, and workflows.
 
-:::image type="content" source="images/windbgx-main-menu.png" alt-text="Screenshot of the main screen in WinDbg debugger.":::
+:::image type="content" source="images/windbgx-main-menu.png" border="false" alt-text="Screenshot of the main screen in WinDbg.":::
 
-## General features
+## Use prominent features
 
-- **Connection setup and recall** - Recent targets and session configurations are saved. They can be quickly restarted from the file menu.
+Improve your debugging experience with the many features and programming benefits that are provided in WinDbg:
 
-    :::image type="content" source="images/windbgx-start-debugging-menu.png" alt-text="Screenshot of the start debugging menu in WinDbg debugger.":::
+- **Connection setup and recall**: Save recent targets and session configurations. You can quickly restart saved items from the **File** menu.
 
-- **Dark theme** - Go to File > Settings to enable the dark theme.
+    :::image type="content" source="images/windbgx-start-debugging-menu.png" border="false" alt-text="Screenshot of the start debugging screen in WinDbg.":::
 
-    :::image type="content" source="images/windbgx-dark-theme.png" alt-text="Screenshot of WinDbg debugger with dark theme enabled.":::
+- **Dark theme**: Enable user-interface preferences like the dark theme by selecting **File** > **Settings**.
 
-- **Keyboard navigation** - Use Ctrl+Tab to easily navigate between windows with just your keyboard.
+    :::image type="content" source="images/windbgx-dark-theme.png" border="false" alt-text="Screenshot of WinDbg with the dark theme enabled.":::
 
-    :::image type="content" source="images/windbgx-ctrl-tab.gif" alt-text="Screenshot demonstrating the Ctrl+Tab menu in WinDbg debugger.":::
+- **Keyboard navigation**: Use keyboard shortcuts like Ctrl+Tab, which lets you easily move between windows.
 
-- **Dump file processor detection** - Autodetects processor architecture for easier managed debugging.
+    :::image type="content" source="images/windbgx-ctrl-tab.gif" border="false" alt-text="Animation that shows how to use the Ctrl+Tab shortcut keys to move in WinDbg.":::
 
-- **Performance improvements** - Tool windows load asynchronously and can be canceled. When you run a command, WinDbg can stop the loading of your locals, watch, or other windows.
+- **Dump file processor detection**: Take advantage of autodetection for your processor architecture and quickly set up managed debugging.
+- **Performance improvements**: Work with tool windows that load asynchronously and cancel them as needed. When you run a command, WinDbg can stop the loading of your locals, watch, or other windows.
 
-## Start debugging view
+## Start debugging
 
-- **Integrated Time Travel Debugging (TTD)** - Use the "Record with Time Travel Debugging" checkbox when launching or attaching to a process. WinDbg will set up TTD, start recording, and open the trace afterwards.
+Get started debugging in WinDbg with the following features:
 
-    For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
+- **Integrated Time Travel Debugging (TTD)**: Select the **Record with Time Travel Debugging** option when you launch or attach to a process. WinDbg sets up TTD, starts recording, and opens the trace afterward.
 
-    :::image type="content" source="images/windbgx-ttd.png" alt-text="Screenshot of the process record menu in WinDbg with a Notepad process selected for recording.":::
+    For more information, see [Time Travel Debugging: Overview](time-travel-debugging-overview.md).
 
-- **Launch App packages** - Debug your universal app or background task in a single click.
+    :::image type="content" source="images/windbgx-ttd.png" border="false" alt-text="Screenshot of the Process record dialog in WinDbg with a Notepad process selected for recording.":::
 
-    For more information, see [Launch App Package](./windbg-user-mode-preview.md#launch-app-package).
+- **Launch app packages**: Debug your universal app or background task with a single mouse click.
 
-    :::image type="content" source="images/windbgx-launch-app-package.png" alt-text="Screenshot of the Launch App Package Applications tab in WinDbg with 'cal' in the search box and three apps listed.":::
+    For more information, see [Launch app package](./windbg-user-mode-preview.md#launch-app-package).
 
-- **Attach to a process** - The new attach view provides a detailed view of running processes, easier configuration, and search support.
+    :::image type="content" source="images/windbgx-launch-app-package.png" border="false" alt-text="Screenshot of the Launch app package option  and Applications tab in WinDbg with cal in the search box and three apps listed.":::
 
-    :::image type="content" source="images/windbgx-attach-to-a-process-zoomed.png" alt-text="Screenshot of the Attach to a Process dialog in WinDbg debugger.":::
+- **Attach to a process**: Use the **Attach** view to get a detailed summary of running processes, access easier configuration, and search support.
 
-## Improved tool windows
+    :::image type="content" source="images/windbgx-attach-to-a-process-zoomed.png" border="false" alt-text="Screenshot of the Attach to a Process dialog in WinDbg.":::
 
-- **Command** - The command window has improved DML support, text highlighting, search (including Regex).
+## Work with tool windows
 
-    :::image type="content" source="images/windbgx-highlighting.gif" alt-text="Screenshot of the command window in WinDbg with columns highlighted in yellow.":::
+Take advantage of the many improvements to the tool windows in WinDbg:
 
-- **Source** - The source code window provides syntax highlighting and other general improvements similar to most modern text editors.
+- **Command**: Offers improved DML support, text highlighting, and search (including regex).
 
-    :::image type="content" source="images/windbgx-source-window.png" alt-text="Screenshot of the source code window in WinDbg debugger with syntax highlighting.":::
+   :::image type="content" source="images/windbgx-highlighting.gif" border="false" alt-text="Animation that shows how to use the Command window in WinDbg, including highlighting columns in yellow.":::
 
-- **Disassembly** - The disassembly window is also improved, the highlight of the current instruction remains where it's when you scroll.
+- **Source code**: Provides syntax highlighting and other general improvements similar to most modern text editors.
 
-    :::image type="content" source="images/windbgx-disassembly.png" alt-text="Screenshot of the disassembly window in WinDbg debugger.":::
+   :::image type="content" source="images/windbgx-source-window.png" border="false" alt-text="Screenshot of the Source code window in WinDbg with syntax highlighting.":::
 
-- **Breakpoints** - The breakpoints window shows all your current breakpoints, a one-click toggle, and a hit count.
+- **Disassembly**: Maintains the highlight on the current instruction as you scroll.
 
-    For more information, see [Breakpoints](windbg-breakpoints-preview.md).
+   :::image type="content" source="images/windbgx-disassembly.png" border="false" alt-text="Screenshot of the Disassembly window in WinDbg.":::
 
-    :::image type="content" source="images/windbgx-breakpoints-window.png" alt-text="Screenshot of the breakpoint window in WinDbg debugger showing current breakpoints.":::
+- **Breakpoints**: Shows all of your current breakpoints, a one-click toggle, and a hit count. For more information, see [WinDbg: Breakpoints](windbg-breakpoints-preview.md).
 
-- **Scripting** - The new scripting window makes developing JavaScript and NatVis extensions easier, with error highlighting and IntelliSense.
+   :::image type="content" source="images/windbgx-breakpoints-window.png" border="false" alt-text="Screenshot of the Breakpoints window in WinDbg showing current breakpoints.":::
 
-    For more information, see [WinDbg - Scripting](windbg-scripting-preview.md).
+- **Scripting**: Makes it easier for you to develop JavaScript and NatVis extensions, and use error highlighting and IntelliSense. For more information, see [WinDbg: Scripting](windbg-scripting-preview.md).
 
-    :::image type="content" source="images/windbgx-scripting-intellisense.png" alt-text="Screenshot of the scripting window in WinDbg debugger with IntelliSense and error highlighting.":::
+   :::image type="content" source="images/windbgx-scripting-intellisense.png" alt-text="Screenshot of the Scripting window in WinDbg with IntelliSense and error highlighting.":::
 
-- **Data model** - The model window provides an expandable and browsable version of `dx` and `dx -g`, letting you create powerful tables on-top of your NatVis, JavaScript, and LINQ queries.
+- **Data Model**: Provides an expandable and browsable version of the `dx` and `dx -g` commands. This feature helps you create powerful tables on top of your NatVis, JavaScript, and LINQ queries. For more information, see [WinDbg: Data model](windbg-data-model-preview.md).
 
-    For more information, see [WinDbg - Data model](windbg-data-model-preview.md).
+   :::image type="content" source="images/windbgx-data-model-explore-window.png" alt-text="Screenshot of the data model window in WinDbg with expandable and browsable features.":::
 
-    :::image type="content" source="images/windbgx-data-model-explore-window.png" alt-text="Screenshot of the data model window in WinDbg debugger with expandable and browsable features.":::
+- **Locals** and **Watch**: Based on the data model used by the `dx` command. They both benefit from the same features as other data model windows.
+- **Memory**: Has highlighting and improved scrolling.
+- **Logs**: Provides an under-the-covers log of the WinDbg internals. You can view the logs for troubleshooting or to monitor long-running commands.
 
-- **Locals and watch** - The locals and watch windows are both based off the data model that is used by the `dx` command. This means they benefit from the same features as other data model windows.
+## Explore WinDbg in action
 
-- **Memory** - The memory window has highlighting and improved scrolling.
+Watch the following episodes of the [Defrag Tools](</shows/defrag-tools/>) show and see WinDbg in action:
 
-- **Logs** - This is an under the covers log of the WinDbg internals. It can be viewed for troubleshooting or to monitor long running commands.
+- [Defrag Tools #182](/shows/defrag-tools/182-windbg-preview-part-1): Tim, Chad, and Andy go over the basics of WinDbg and some of the features.
+- [Defrag Tools #183](/shows/defrag-tools/183-windbg-preview-part-2): Nick, Tim, and Chad use WinDbg and go through a quick demo.
+- [Defrag Tools #184](/shows/defrag-tools/184-javascript-in-windbg-preview): Bill and Andrew walk through the scripting features (JavaScript) in WinDbg.
+- [Defrag Tools #185](/shows/defrag-tools/185-time-travel-debugging-introduction): James and Ivette introduce TTD.
+- [Defrag Tools #186](/shows/defrag-tools/186-time-travel-debugging-advanced): James and JCAB cover advanced TTD.
 
-## Providing feedback
+## Install and configure WinDbg
 
-Your feedback helps our team guide WinDbg's development and prioritize features.
+Review the following articles for information about installing and configuring WinDbg:
 
-To report any bugs or suggest a new feature, you can follow the feedback button in the ribbon to go to the [GitHub page](https://aka.ms/windbg/feedback) where you can file a new issue.
+- [WinDbg: Command-line startup options](windbg-command-line-preview.md)
+- [WinDbg: Settings, workspaces, and saved debug sessions](windbg-setup-preview.md)
+- [WinDbg: Keyboard shortcuts](windbg-keyboard-shortcuts.md)
 
-## Other resources
+## Provide feedback
 
-- For information on what's new in the most recent release, see [Release notes](windbg-release-notes.md).
+Your feedback helps the Microsoft team guide WinDbg's development and prioritize features.
 
-- Review these topics to install and configure WinDbg:
-  - [WinDbg – Command line startup options](windbg-command-line-preview.md)
-  - [WinDbg – Settings and workspaces](windbg-setup-preview.md)
-  - [WinDbg – Keyboard shortcuts](windbg-keyboard-shortcuts-preview.md)
+To report bugs or suggest features, select **Feedback** on the ribbon to go to the [WinDbg-Feedback page](https://github.com/microsoft/WinDbg-Feedback/issues) on GitHub where you can file a new issue.
 
-- These topics describe how to get connected to the environment that you want to debug:
-  - [WinDbg – Start a user-mode session](windbg-user-mode-preview.md)
-  - [WinDbg – Start a kernel mode session](windbg-kernel-mode-preview.md)
+## Related articles
 
-- Watch these episodes of the [Defrag Tools](</shows/defrag-tools/>) show to see WinDbg in action:
-  - [Defrag Tools #182](/shows/defrag-tools/182-windbg-preview-part-1) - Tim, Chad, and Andy go over the basics of WinDbg and some of the features.
-  - [Defrag Tools #183](/shows/defrag-tools/183-windbg-preview-part-2) - Nick, Tim, and Chad use WinDbg and go over a quick demo.
-  - [Defrag Tools #184](/shows/defrag-tools/184-javascript-in-windbg-preview) - Bill and Andrew walk-through the scripting features in WinDbg.
-  - [Defrag Tools #185](/shows/defrag-tools/185-time-travel-debugging-introduction) - James and Ivette provide and introduction to Time Travel Debugging.
-  - [Defrag Tools #186](/shows/defrag-tools/186-time-travel-debugging-advanced) - James and JCAB covers advanced Time Travel Debugging.
-
-- Additional tips and tricks can be found in the [WinDbg blog archive](/archive/blogs/windbg/).
-
+- [Release notes](windbg-release-notes.md)
+- [WinDbg: Start a user-mode session](windbg-user-mode-preview.md)
+- [WinDbg: Start a kernel mode session](windbg-kernel-mode-preview.md)
+- [WinDbg blog archive](/archive/blogs/windbg/)

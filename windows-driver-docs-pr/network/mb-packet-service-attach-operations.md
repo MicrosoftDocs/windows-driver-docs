@@ -2,7 +2,11 @@
 title: MB Packet Service Operations
 description: MB Packet Service Operations
 ms.date: 03/01/2021
-ms.custom: UpdateFrequency3
+ms.update-cycle: 1095-days
+ms.topic: concept-article
+ms.custom:
+  - UpdateFrequency3
+  - sfi-image-nochange
 ---
 
 # MB Packet Service Operations

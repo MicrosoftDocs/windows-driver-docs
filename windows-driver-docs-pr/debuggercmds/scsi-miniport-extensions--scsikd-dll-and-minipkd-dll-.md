@@ -3,6 +3,7 @@ title: "SCSI Miniport Extensions (Scsikd.dll and Minipkd.dll)"
 description: "SCSI Miniport Extensions (Scsikd.dll and Minipkd.dll)"
 keywords: ["SCSI Miniport debugging, extensions (scsikd.dll and minipkd.dll)", "scsikd.dll (scsi miniport extensions)", "minipkd.dll (scsi miniport extensions)", "extensions, SCSI Miniport"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # SCSI Miniport Extensions (Scsikd.dll and Minipkd.dll)

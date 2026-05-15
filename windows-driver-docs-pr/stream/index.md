@@ -6,6 +6,7 @@ keywords:
 - media streaming WDK
 - data streaming WDK
 ms.date: 04/25/2024
+ms.topic: concept-article
 ---
 
 # Streaming media device driver design guide

@@ -2,6 +2,7 @@
 title: Assembly Config Files
 description: Assembly Config Files
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Assembly Config Files

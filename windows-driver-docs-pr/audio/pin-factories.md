@@ -13,6 +13,7 @@ keywords:
 - identifying pin factories
 - KSPIN_DESCRIPTOR structure
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Pin Factories

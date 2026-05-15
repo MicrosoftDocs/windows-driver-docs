@@ -1,8 +1,8 @@
 ---
 title: Working with extension INF files in the Windows Hardware Dashboard
 description: You can create shipping labels for your extension INF files on the Windows Hardware Dev Center, enabling you to share and publish them like other submissions.
-ms.topic: article 
-ms.date: 07/15/2024
+ms.date: 05/29/2025
+ms.topic: how-to
 ---
 
 # Working with extension INF files in the Partner Center
@@ -61,7 +61,7 @@ Create a new submission for each of the packages created and upload them to the 
 
 #### ExtensionID
 
-The ExtensionID is a GUID that you generate that is used for driver lineage identification and versioning. It describes a hardware device part or part series, and is [automatically registered](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification) to the SellerID that submitted it. The owner of this SellerID is responsible for keeping track of ExtensionID usage and mapping, similar to CHID management.
+The ExtensionID is a GUID that you generate that is used for driver lineage identification and versioning. It describes a hardware device part or part series, and is [automatically registered](https://techcommunity.microsoft.com/category/winhec-online/blog/windowshardwarecertification) to the SellerID that submitted it. The owner of this SellerID is responsible for keeping track of ExtensionID usage and mapping, similar to CHID management.
 
 For example, when you create an ExtensionID for a new system part:
 
@@ -168,4 +168,4 @@ Yes. If multiple systems use the same settings, or if you want to customize sett
 - [Using a Universal INF File](../install/using-a-universal-inf-file.md)
 - [Getting started with universal drivers](../develop/get-started-developing-windows-drivers.md)
 - [Using a component INF file](../install/using-a-component-inf-file.md)
-- [How windows ranks drivers](../install/how-setup-ranks-drivers--windows-vista-and-later-.md)
+- [How windows ranks drivers](../install/how-windows-ranks-driver-packages.md)

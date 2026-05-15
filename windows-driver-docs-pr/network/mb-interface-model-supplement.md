@@ -2,7 +2,9 @@
 title: MB Interface Model supplement
 description: This section provides supplemental information for the MB Interface Model (MBIM)
 ms.date: 04/20/2017
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # MB Interface Model Supplement

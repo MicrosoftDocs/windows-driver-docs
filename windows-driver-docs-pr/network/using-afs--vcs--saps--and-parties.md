@@ -5,6 +5,7 @@ keywords:
 - connection-oriented NDIS WDK , entities created
 - CoNDIS WDK networking , entities created
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using AFs, VCs, SAPs, and Parties

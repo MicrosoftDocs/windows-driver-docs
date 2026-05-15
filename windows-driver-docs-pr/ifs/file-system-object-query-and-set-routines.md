@@ -9,6 +9,7 @@ keywords:
 - file objects WDK mini-redirectors
 - objects WDK mini-redirectors
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # File System Object Query and Set Routines

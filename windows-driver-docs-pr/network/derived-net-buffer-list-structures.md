@@ -8,6 +8,7 @@ keywords:
 - packets WDK networking , data structures
 - derived structures WDK networking
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Derived NET\_BUFFER\_LIST Structures

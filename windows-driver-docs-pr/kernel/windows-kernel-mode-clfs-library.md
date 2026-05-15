@@ -2,6 +2,7 @@
 title: Windows Kernel-Mode CLFS Library
 description: Windows Kernel-Mode CLFS Library
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Windows Kernel-Mode CLFS Library

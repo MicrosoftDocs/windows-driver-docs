@@ -5,6 +5,7 @@ keywords:
 - add-registry-sections WDK networking , bundle membership
 - bundle membership WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Specifying Bundle Membership

@@ -7,6 +7,7 @@ keywords:
 - continued lines WDK GPD files
 - continuation character WDK GPD files
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Line Continuation

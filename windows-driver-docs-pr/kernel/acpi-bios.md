@@ -1,21 +1,17 @@
 ---
 title: Advanced Configuration and Power Interface (ACPI) BIOS
-description: ACPI BIOS
+description: Provides information about ACPI BIOS support.
 keywords: ["ACPI BIOS WDK power management"]
-ms.date: 06/16/2017
+ms.date: 10/28/2025
+ms.topic: concept-article
 ---
 
 # ACPI BIOS
 
+The integrated power management features supported by Microsoft Windows operating systems are available on computers that have an Advanced Configuration and Power Interface (ACPI) BIOS. All modern Windows operating systems require and support ACPI BIOS.
 
+Device Manager shows whether an individual computer supports ACPI. Check the driver information for the **Computer** device category. For example, the following screenshot shows the Driver properties of an ACPI x64-based PC on a Windows 11 system.
 
-
-
-The integrated power management features supported by Microsoft Windows operating systems are available only on computers that have an Advanced Configuration and Power Interface (ACPI) BIOS.
-
-Windows Server 2003, Windows XP, and Windows 2000 require that an ACPI BIOS be dated January 1, 1999 or later. However, if one of these Windows versions determines that such a BIOS is known to exhibit ACPI problems, the loader disables ACPI and instead uses Advanced Power Management (APM). Beginning with Windows Vista, the operating system supports only a computer with an ACPI-compliant BIOS that is dated January 1, 1999 or later.
-
-Device Manager shows whether an individual computer supports ACPI. Check the driver information for the **Computer** device category.
+:::image type="content" source="images/acpi-properties.png" alt-text="Screenshot that shows the ACPI x64-based PC driver properties.":::
 
 For more information about ACPI, see the [ACPI 5.0 specification](https://uefi.org/specifications).
-

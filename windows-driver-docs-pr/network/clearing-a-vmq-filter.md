@@ -2,6 +2,7 @@
 title: Clearing a VMQ Filter
 description: Clearing a VMQ Filter
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Clearing a VMQ Filter

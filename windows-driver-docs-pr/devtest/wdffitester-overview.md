@@ -2,6 +2,7 @@
 title: WdfFiTester Overview
 description: WdfFiTester Overview
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WdfFiTester Overview

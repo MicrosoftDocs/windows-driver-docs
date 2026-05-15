@@ -3,6 +3,7 @@ title: Using the Help Documentation - WinDbg (Classic)
 description: Using the Help Documentation - WinDbg (Classic)
 keywords: ["HTML Help", "searching the Help file", "index of the Help file", "favorites in the Help file", "printing topics from the Help file", "hh.exe", "help file", "help file, overview", "help file, searching"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using the Help Documentation - WinDbg (Classic)

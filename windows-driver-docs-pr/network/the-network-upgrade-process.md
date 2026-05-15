@@ -6,6 +6,7 @@ keywords:
 - upgrading network components WDK , phases
 - AnswerFile WDK networking
 ms.date: 04/20/2017
+ms.topic: upgrade-and-migration-article
 ---
 
 # The Network Upgrade Process

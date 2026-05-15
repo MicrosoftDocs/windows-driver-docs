@@ -12,6 +12,7 @@ keywords:
 - showing non-present devices
 - displaying non-present devices
 ms.date: 12/05/2022
+ms.topic: concept-article
 ---
 
 # Viewing Hidden Devices

@@ -2,6 +2,7 @@
 title: Subscriber and Device Information API
 description: Subscriber and Device Information API
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Subscriber and Device Information API

@@ -5,16 +5,21 @@ keywords:
 - WDDM, work graphs
 - Direct3D 12, work graphs
 - WDDM, GPU-driven rendering with work graphs
-ms.date: 05/03/2024
+ms.date: 11/14/2025
+ms.topic: concept-article
 ---
 
 # Work graphs
 
+Work Graphs are a system for GPU autonomy in Direct3D 12 that enables GPU-based work creation. Shader threads running on the GPU can request other work to run without waiting for that work to launch, with the system managing scheduling and memory for data flowing between tasks.
+
 This article describes the DDIs that are added for a user-mode graphics driver (UMD) to support D3D12 work graphs. The work graph feature is available starting in Windows 11, version 24H2 (WDDM 3.2). A detailed explanation of work graphs can be found in the [D3D12 Work Graphs](https://microsoft.github.io/DirectX-Specs/d3d/WorkGraphs.html) specification.
+
+ [Generic Programs](generic-programs.md) are a related feature that provides a way to define graphics and compute pipelines within state objects, using the same infrastructure as work graphs and raytracing.
 
 ## Reporting work graphs support
 
-The following interfaces are updated or introduced for a UMD to report its support for work graphs:
+UMD reports its support for work graphs through the following interfaces:
 
 * The **D3D12DDICAPS_TYPE_OPTIONS_0109** capability-reporting entry is added to the[**D3D12DDICAPS_TYPE**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddicaps_type) enum used by [**PFND3D12DDI_GETCAPS**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps).
 

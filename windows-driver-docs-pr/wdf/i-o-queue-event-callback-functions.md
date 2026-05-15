@@ -7,6 +7,7 @@ keywords:
 - callback functions WDK UMDF
 - event callback functions WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # I/O Queue Event Callback Functions

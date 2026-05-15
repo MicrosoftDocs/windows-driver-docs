@@ -2,6 +2,7 @@
 title: Plug and Play Support
 description: This article describes the enumeration process on the Universal Serial Bus.
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # Plug and Play support

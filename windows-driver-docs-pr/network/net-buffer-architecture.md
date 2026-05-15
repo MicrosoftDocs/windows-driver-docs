@@ -10,6 +10,7 @@ keywords:
 - data structures WDK networking
 - structures WDK networking
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # NET\_BUFFER Architecture

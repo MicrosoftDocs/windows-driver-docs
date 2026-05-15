@@ -2,6 +2,7 @@
 title: Supported Ethernet NICs for Network Kernel Debugging in Windows 11 23H2
 description: Learn about kernel debugging over an Ethernet network cable when the target computer is running Windows 11 23H2.
 ms.date: 10/15/2024
+ms.topic: reference
 ---
 
 # Supported Ethernet NICs for Network Kernel Debugging in Windows 11 23H2
@@ -632,6 +633,18 @@ For vendor ID 15AD, these device IDs are supported:
 
 07B0
 
+### Vendor ID 1D0F, Amazon.com Inc
+
+*New in Windows 11 25H2, 26200.7309 and 26100.7309*
+
+KDNet.exe and VerifiedNICList.xml files are part of the WinDbg Application released via the Microsoft Store as of March, 2026.
+After installing, the alias `kdnet` will be available on your PATH.
+
+For vendor ID 1D0F, these device IDs are supported:
+
+EC20
+EC21
+
 ## XML Supported NIC List
 
 This is the same information shown above in the XML format.
@@ -1235,6 +1248,12 @@ This is the same information shown above in the XML format.
   <NIC>
     <manufacturer>15AD</manufacturer>
       <deviceid build="26006">07B0</deviceid>
+  </NIC>
+
+  <NIC>
+    <manufacturer>1D0F</manufacturer>
+      <deviceid build="27900">EC20</deviceid>
+      <deviceid build="27900">EC21</deviceid>
   </NIC>
 
 </SupportedNetworkInterfaceCards>

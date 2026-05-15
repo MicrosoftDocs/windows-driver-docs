@@ -2,6 +2,7 @@
 title: V4 Printer Driver Property Bags
 description: The v4 print driver model provides a number of property bags that facilitate a data flow from customized UI applications to the rendering process.
 ms.date: 01/25/2023
+ms.topic: concept-article
 ---
 
 # V4 Printer Driver Property Bags
@@ -24,7 +25,7 @@ The following table provides an overview of how to use different components to o
 
 In JavaScript implementations, property bags are passed in as parameters. In printer extension applications, property bags are passed in as members of the event argument used to start the application.
 
-The property bag accessors provided by the COM IPrinterQueue, IPrinterExtensionContext and IPrinterExtensionEventArgs interfaces as well as the property bag accessors in Javascript implementations will throw an exception if the property bag is not specified or not found. Additionally, querying for individual properties on an IPrinterPropertyBag interface will throw exceptions if the property is not found. You should use a try catch statement to avoid crashing if a property is not available.
+The property bag accessors provided by the COM IPrinterQueue, IPrinterExtensionContext and IPrinterExtensionEventArgs interfaces as well as the property bag accessors in JavaScript implementations will throw an exception if the property bag is not specified or not found. Additionally, querying for individual properties on an IPrinterPropertyBag interface will throw exceptions if the property is not found. You should use a try catch statement to avoid crashing if a property is not available.
 
 ## Driver Property Bag
 

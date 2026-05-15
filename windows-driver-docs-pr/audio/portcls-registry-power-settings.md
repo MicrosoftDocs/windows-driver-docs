@@ -2,6 +2,7 @@
 title: PortCls Registry Power Settings
 description: This topic explains the PortCls registry power settings for Windows.
 ms.date: 09/29/2022
+ms.topic: concept-article
 ---
 
 # PortCls Registry Power Settings

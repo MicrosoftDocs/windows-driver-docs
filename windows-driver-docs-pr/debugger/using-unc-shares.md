@@ -2,6 +2,7 @@
 title: Using UNC Shares
 description: Using UNC Shares
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Using UNC Shares

@@ -2,6 +2,7 @@
 title: Issuing NDIS Wake Reason Status Indications
 description: Issuing NDIS Wake Reason Status Indications
 ms.date: 03/02/2023
+ms.topic: how-to
 ---
 
 # Issuing NDIS Wake Reason Status Indications

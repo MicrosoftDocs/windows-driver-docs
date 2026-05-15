@@ -4,6 +4,7 @@ description: Signature Score
 keywords:
 - signature score WDK device installations
 ms.date: 12/03/2021
+ms.topic: concept-article
 ---
 
 # Signature Score
@@ -31,7 +32,7 @@ The signature score ranks a driver package according to how the driver package i
 
 -   Windows assigns the fourth and worst signature score (highest signature score value) to driver packages that are not signed or whose signing state is unknown.
 
-For more information about driver ranking, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
+For more information about driver ranking, see [How Windows Ranks Drivers](how-windows-ranks-driver-packages.md).
 
  
 

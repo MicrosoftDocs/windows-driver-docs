@@ -8,6 +8,7 @@ keywords:
 - dropped HID reports WDK
 - errors WDK HID reports
 ms.date: 01/11/2024
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshooting HID reports

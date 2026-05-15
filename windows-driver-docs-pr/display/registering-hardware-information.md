@@ -5,6 +5,7 @@ keywords:
 - registry WDK display
 - hardware information in registry WDK display
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Registering Hardware Information

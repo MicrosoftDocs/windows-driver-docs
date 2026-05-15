@@ -7,8 +7,7 @@ keywords:
 - Testing drivers
 - Testing pre-production drivers
 - Pre-production driver signing and testing
-author: mhopkins-msft
-ms.author: mhopkins
+ms.topic: how-to
 ---
 
 # How to test preproduction drivers with Secure Boot enabled

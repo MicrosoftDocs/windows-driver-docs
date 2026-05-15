@@ -2,7 +2,8 @@
 title: DumpChk
 description: Learn about DumpChk (the Microsoft Crash Dump File Checker tool), which is a program that performs a quick analysis of a crash dump file.
 keywords: ["DumpChk"]
-ms.date: 12/21/2023
+ms.date: 12/06/2024
+ms.topic: reference
 ---
 
 # DumpChk
@@ -12,6 +13,9 @@ ms.date: 12/21/2023
 ## Where to get DumpChk
 
 **DumpChk.exe** is included in [Debugging Tools for Windows](index.md).
+
+> [!NOTE]
+> Dumpchk is not included in the stand alone version of the Windows Debugger. If you are looking for dumpchk, install the [Windows Debugging Tools](debugger-download-tools.md).
 
 ## DumpChk command-line options
 

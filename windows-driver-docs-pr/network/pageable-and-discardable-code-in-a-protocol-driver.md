@@ -6,6 +6,7 @@ keywords:
 - NDIS protocol drivers WDK , pageable and discardable code
 - pageable and discardable code WDK NDIS protocol
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Pageable and Discardable Code in a Protocol Driver

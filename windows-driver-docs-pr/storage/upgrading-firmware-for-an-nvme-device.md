@@ -1,16 +1,29 @@
 ---
-title: Upgrading Firmware for an NVMe Device
-description: Updates to the firmware on an NVMe storage device are issued to the miniport driver for that device. 
-ms.date: 06/26/2024
+title: Upgrading Firmware for an NVMe Device (Legacy Approach)
+description: Legacy approach for firmware updates on NVMe storage devices using IOCTL_SCSI_MINIPORT with SRB I/O control structures.
+ms.date: 09/29/2025
+ms.topic: how-to
 ---
 
-# Upgrading Firmware for an NVMe Device
+# Upgrading Firmware for an NVMe Device (Legacy Approach)
+
+> [!NOTE]
+>
+> This article describes the legacy firmware upgrade approach using **IOCTL_SCSI_MINIPORT** with SRB I/O control structures. Starting with Windows 10 (and Windows Server 2016), Microsoft recommends using the dedicated storage firmware IOCTLs instead:
+>
+> - [**IOCTL_STORAGE_FIRMWARE_GET_INFO**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_firmware_get_info)
+> - [**IOCTL_STORAGE_FIRMWARE_DOWNLOAD**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_firmware_download)
+> - [**IOCTL_STORAGE_FIRMWARE_ACTIVATE**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_firmware_activate)
+>
+> The modern approach provides direct communication with storage devices without requiring SRB structures or miniport conversion layers. This legacy documentation is maintained for compatibility with older systems and existing code.
+
+This article describes the legacy firmware upgrade process, the miniport firmware control requests, and the structures used in the requests. The article also provides an example of how to perform a firmware upgrade using the older SRB-based approach.
 
 Updates to the firmware on an NVMe storage device are issued to the miniport driver for that device. Function commands for getting firmware information, downloading, and activating firmware images are issued to the miniport.
 
 ## Firmware upgrade process
 
-NVMe devices certified for Windows are capable of updating their firmware while the device is in operation. Firmware is updated using the [**IOCTL_SCSI_MINIPORT**](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_miniport) request containing the associated firmware control data formatted in an SRB. The update process involves:
+NVMe devices certified for Windows are capable of updating their firmware while the device is in operation. Firmware is updated using the [**IOCTL_SCSI_MINIPORT**](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_miniport) request containing the associated firmware control data formatted in an SRB (storage request block). The update process involves:
 
 1. Gather the firmware slot information to determine where to place the update. There are a few considerations in deciding where to place the firmware update, such as:
 
@@ -535,7 +548,7 @@ Exit:
 
 > [!NOTE]
 >
-> Downloading multiple firmware images simultaneously is not supported. A single firmware download is always followed by a single firmware activation.
+> Downloading multiple firmware images simultaneously isn't supported. A single firmware download is always followed by a single firmware activation.
 
 A firmware image already resident in a slot can be reactivated by using just the activate function command with the corresponding slot number.
 

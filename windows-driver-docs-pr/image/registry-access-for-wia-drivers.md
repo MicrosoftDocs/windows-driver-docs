@@ -2,6 +2,7 @@
 title: Registry Access for WIA Drivers
 description: Registry Access for WIA Drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Registry Access for WIA Drivers

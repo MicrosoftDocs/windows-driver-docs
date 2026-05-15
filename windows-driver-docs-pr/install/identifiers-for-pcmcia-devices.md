@@ -10,6 +10,7 @@ keywords:
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Identifiers for PCMCIA Devices

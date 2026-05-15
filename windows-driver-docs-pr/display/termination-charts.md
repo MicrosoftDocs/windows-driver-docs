@@ -2,6 +2,7 @@
 title: Termination Charts
 description: The Termination Charts are both adapter- and process-specific.
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Termination Charts

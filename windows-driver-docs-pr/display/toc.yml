@@ -4,7 +4,7 @@
   items:
   - name: WDDM Overview
     href: windows-vista-display-driver-model-design-guide.md
-  - name: Roadmap for the Windows Display Driver Model (WDDM)
+  - name: Roadmap for WDDM driver development
     href: roadmap-for-developing-drivers-for-the-windows-vista-display-driver-mo.md
   - name: WDDM Architecture and Operation
     items:
@@ -22,7 +22,8 @@
       href: what-s-new-for-windows-11-display-and-graphics-drivers.md
     - name: What's new for Windows 10 display and graphics drivers
       href: what-s-new-for-windows-10-display-and-graphics-drivers.md
-    - name: What's new for prior WDDM 2.X versions for Windows 10 display and graphics drivers
+    - name: What's new for prior WDDM 2.X versions for Windows 10 display and graphics
+        drivers
       href: what-s-new-for-prior-wddm-2-x-versions.md
     - name: What's new for Windows 8.1 display drivers (WDDM 1.3)
       href: what-s-new-for-windows-8-1-display-drivers--wddm-1-3-.md
@@ -36,6 +37,8 @@
       href: querying-wddm-feature-support-and-enablement.md
     - name: Allocation notification
       href: allocation-notification.md
+    - name: Automatic display switching
+      href: automatic-display-switch.md
     - name: Dirty bit tracking
       href: dirty-bit-tracking.md
     - name: Live migration on GPU-P devices
@@ -48,6 +51,8 @@
       href: tdr-debuggability-improvements.md
     - name: D3D12 AV1 video encoding
       href: video-encoding-d3d12-av1.md
+    - name: Generic programs
+      href: generic-programs.md
     - name: Work graphs
       href: work-graphs.md
     - name: Kernel-mode testing of WDDM features
@@ -84,17 +89,23 @@
         href: mcdm-architecture.md
       - name: MCDM KM driver implementation guidelines
         href: mcdm-implementation-guidelines.md
+  - name: WDDM 2.5 features
+    items:
+    - name: D3D12 render passes
+      href: d3d12-render-passes.md
   - name: WDDM 2.4 features
     items:
+    - name: GPU paravirtualization
+      href: gpu-paravirtualization.md
     - name: IOMMU-based GPU isolation
       href: iommu-based-gpu-isolation.md
   - name: WDDM 2.1 features
     href: wddm-2-1-features.md
-  - name: WDDM 2.0 and Windows 10
+  - name: WDDM 2.0 features
     items:
-    - name: WDDM 2.0 and Windows 10
+    - name: WDDM 2.0 (Windows 10) features
       href: wddm-2-0-and-windows-10.md
-    - name: GPU virtual memory in WDDM 2.0
+    - name: GPU virtual memory
       items:
       - name: GPU virtual memory in WDDM 2.0
         href: gpu-virtual-memory-in-wddm-2-0.md
@@ -132,7 +143,7 @@
           href: examples.md
       - name: IoMmu model
         href: iommu-model.md
-    - name: Driver residency in WDDM 2.0
+    - name: Driver residency
       items:
       - name: Driver residency in WDDM 2.0
         href: driver-residency-in-wddm-2-0.md
@@ -148,13 +159,13 @@
         href: process-residency-budgets.md
     - name: Context monitoring
       href: context-monitoring.md
-  - name: WDDM 1.2 and Windows 8
+  - name: WDDM 1.2 features
     items:
     - name: WDDM 1.2 and Windows 8
       href: wddm-in-windows-8.md
     - name: WDDM 1.2 features
       href: wddm-v1-2-features.md
-    - name: Advances to the display Infrastructure
+    - name: Advances to the display infrastructure
       items:
       - name: Advances to the display Infrastructure
         href: advances-to-the-display-infrastructure.md
@@ -264,9 +275,11 @@
       href: general-install-information.md
     - name: Using an INF file to override EDIDs
       href: overriding-monitor-edids.md
-  - name: Installation Requirements for Display Drivers Optimized for Windows 7 and Later
+  - name: Installation Requirements for Display Drivers Optimized for Windows 7 and
+      Later
     items:
-    - name: Installation Requirements for Display Drivers Optimized for Windows 7 and Later
+    - name: Installation Requirements for Display Drivers Optimized for Windows 7
+        and Later
       href: installing-display-drivers-optimized-for-windows-7-and-later.md
     - name: Setting the Feature Score for Windows 7 Display Drivers
       href: setting-the-feature-score-for-windows-7-display-drivers.md
@@ -278,8 +291,6 @@
       href: encoding-windows-7-display-driver-inf-files-in-unicode.md
   - name: Initializing Display Miniport and User-Mode Display Drivers
     items:
-    - name: Initializing Display Miniport and User-Mode Display Drivers
-      href: initializing-display-miniport-and-user-mode-display-drivers.md
     - name: Plug and Play (PnP) in WDDM 1.2 and later
       href: plug-and-play--pnp--start-and-stop-cases.md
     - name: Providing seamless state transitions in WDDM 1.2 and later
@@ -326,8 +337,6 @@
       href: video-memory-management-and-gpu-scheduling.md
     - name: Handling Memory Segments
       items:
-      - name: Handling Memory Segments
-        href: handling-memory-segments.md
       - name: Using Memory Segments to Describe the GPU Address Space
         href: using-memory-segments-to-describe-the-gpu-address-space.md
       - name: Configuring Memory Segment Types
@@ -360,8 +369,6 @@
           href: retrieving-graphics-memory-numbers.md
     - name: Handling Command and DMA Buffers
       items:
-      - name: Handling Command and DMA Buffers
-        href: handling-command-and-dma-buffers.md
       - name: Introduction to Command and DMA Buffers
         href: introduction-to-command-and-dma-buffers.md
       - name: Using the Guaranteed Contract DMA Buffer Model
@@ -430,8 +437,6 @@
         href: directx-video-acceleration-2-0.md
       - name: Video Decode Acceleration for DirectX VA 2.0
         items:
-        - name: Video Decode Acceleration for DirectX VA 2.0
-          href: video-decode-acceleration-for-directx-va-2-0.md
         - name: Providing Capabilities for Video Decoding
           href: providing-capabilities-for-video-decoding.md
         - name: Creating a Video Decode Device
@@ -444,8 +449,6 @@
           href: synchronizing-video-decode-operations.md
       - name: Video Processing for DirectX VA 2.0
         items:
-        - name: Video Processing for DirectX VA 2.0
-          href: video-processing-for-directx-va-2-0.md
         - name: Providing Capabilities for Video Processing
           href: providing-capabilities-for-video-processing.md
         - name: Creating a Video Processing Device
@@ -464,8 +467,6 @@
           href: creating-and-using-a-directx-va-2-0-extension-device.md
     - name: Supporting Direct3D Version 10
       items:
-      - name: Supporting Direct3D Version 10
-        href: supporting-direct3d-version-10.md
       - name: Enabling Support for the Direct3D Version 10 DDI
         href: enabling-support-for-the-direct3d-version-10-ddi.md
       - name: Initializing Communication with the Direct3D Version 10 DDI
@@ -520,8 +521,6 @@
           href: setting-dxgi-information-in-the-registry.md
     - name: Supporting Direct3D Version 10.1
       items:
-      - name: Supporting Direct3D Version 10.1
-        href: supporting-direct3d-version-10-1.md
       - name: Version Numbers for Direct3D Version 10.1
         href: version-numbers-for-direct3d-version-10-1.md
       - name: Supporting Extended Format Awareness
@@ -564,8 +563,6 @@
           href: ddi-changes-for-direct3d-version-9-drivers.md
     - name: Supporting Direct3D Version 11
       items:
-      - name: Supporting Direct3D Version 11
-        href: supporting-direct3d-version-11.md
       - name: Enabling Support for the Direct3D Version 11 DDI
         href: enabling-support-for-the-direct3d-version-11-ddi.md
       - name: Initializing Communication with the Direct3D Version 11 DDI
@@ -578,8 +575,6 @@
         href: changes-from-direct3d-10.md
       - name: Supporting Deferred Contexts
         items:
-        - name: Supporting Deferred Contexts
-          href: supporting-deferred-contexts.md
         - name: Introduction to Deferred Contexts
           href: introduction-to-deferred-contexts.md
         - name: Excluding DDI Functions for Deferred Contexts
@@ -672,8 +667,6 @@
       href: specialized-monitors-compositor.md
   - name: Multiple Monitors and Video Present Networks
     items:
-    - name: Multiple Monitors and Video Present Networks
-      href: multiple-monitors-and-video-present-networks.md
     - name: Video Present Network Terminology
       href: video-present-network-terminology.md
     - name: Introduction to Video Present Networks
@@ -700,6 +693,8 @@
       href: indirect-display-debugging.md
     - name: IddCx versions
       href: iddcx-versions.md
+    - name: IddCx 1.11 updates
+      href: iddcx1-dot-11-updates.md
     - name: IddCx 1.10 updates
       href: iddcx1.10-updates.md
     - name: IddCx 1.9 updates
@@ -722,10 +717,8 @@
         href: building-iddcx1.4-drivers.md
       - name: EvtIddCxMonitorAssignSwapChain error handling
         href: idd-evtiddcxmonitorassignswapchain-error-handling.md
-  - name: Tasks in the Windows Display Driver Model (WDDM)
+  - name: Tasks in WDDM
     items:
-    - name: Tasks in the Windows Display Driver Model (WDDM)
-      href: tasks-in-the-windows-vista-display-driver-model.md
     - name: Requesting and Using Surface Memory
       href: requesting-and-using-surface-memory.md
     - name: Specifying Memory Type for a Resource
@@ -764,7 +757,8 @@
         items:
         - name: Installing GPUView
           href: installing-gpuview.md
-        - name: Enabling Logging of DirectX Video Acceleration Version 2 and Direct3D Events
+        - name: Enabling Logging of DirectX Video Acceleration Version 2 and Direct3D
+            Events
           href: enabling-logging-of-directx-video-acceleration-version-2-and-direct3d-version-9-events.md
         - name: Generating a Trace for GPUView
           href: generating-a-trace-for-gpuview.md
@@ -866,10 +860,8 @@
           href: exporting-data-to-a-file.md
         - name: Other Visual Items of the Segment Viewer Window
           href: other-visual-items-of-the-segment-viewer-window.md
-  - name: Tips and Requirements for the Windows Display Driver Model (WDDM)
+  - name: Other WDDM driver tips and requirements
     items:
-    - name: Tips and Requirements for the Windows Display Driver Model (WDDM)
-      href: implementation-tips-and-requirements-for-the-windows-vista-display-dri.md
     - name: Hardware support for Direct3D feature levels
       items:
       - name: Hardware support for Direct3D feature levels
@@ -1020,8 +1012,6 @@
           href: ccd-apis.md
         - name: CCD Summaries and Scenarios
           items:
-          - name: CCD Summaries and Scenarios
-            href: ccd-summaries-and-scenarios.md
           - name: QueryDisplayConfig Summary and Scenarios
             href: querydisplayconfig-summary-and-scenarios.md
           - name: GetDisplayConfigBufferSizes Summary and Scenarios
@@ -1050,13 +1040,15 @@
           href: querying-vidpnhardware-capabilities.md
       - name: Example code for displaying an app on a portrait device
         href: displaying-app-on-portrait-device.md
-    - name: Wireless displays (Miracast)
+    - name: Supporting Miracast wireless displays
+      href: wireless-displays--miracast-.md
+    - name: Supporting Miracast displays in Windows 8.1
       items:
-      - name: Wireless displays (Miracast)
-        href: wireless-displays--miracast-.md
-      - name: WDDM display miniport driver tasks to support Miracast wireless displays
+      - name: Supporting Miracast in Windows 8.1
+        href: supporting-miracast-in-windows-8-1.md
+      - name: Display miniport driver tasks to support Miracast wireless displays
         href: wddm-display-miniport-driver-tasks-to-support-miracast-wireless-displays.md
-      - name: Miracast user-mode driver tasks to support Miracast wireless displays
+      - name: User-mode driver tasks to support Miracast wireless displays
         href: miracast-user-mode-driver-tasks-to-support-miracast-wireless-displays.md
       - name: Reporting Miracast encode chunks and statistics
         href: reporting-miracast-encode-chunks-and-statistics.md

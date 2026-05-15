@@ -2,6 +2,7 @@
 title: User-Defined ECPs
 description: User-Defined ECPs
 ms.date: 09/09/2021
+ms.topic: concept-article
 ---
 
 # User-defined ECPs

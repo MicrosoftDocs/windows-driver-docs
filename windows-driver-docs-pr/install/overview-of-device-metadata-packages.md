@@ -3,10 +3,14 @@ title: Overview of Device Metadata Packages
 description: Overview of Device Metadata Packages
 keywords:
 - device metadata packages WDK , about
-ms.date: 04/20/2017
+ms.date: 06/18/2025
+ms.topic: concept-article
 ---
 
 # Overview of Device Metadata Packages
+
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 Starting with Windows 7, device metadata packages contain XML documents that represent the properties of the device and its hardware functions. The Devices and Printers user interface displays device-specific information to the user based on the XML documents from the device's metadata package.
 
@@ -16,11 +20,11 @@ Starting with Windows 7, a new user interface for devices, Devices and Printers,
 
 The XML documents that are contained within device metadata packages specify the information that describes the physical device. The following list shows the type of information that the XML documents can specify:
 
--   The name of the OEM.
+- The name of the OEM.
 
--   The model name and description of the device.
+- The model name and description of the device.
 
--   One or more functional categories that the device supports.
+- One or more functional categories that the device supports.
 
 Each device metadata package consists of the following components:
 
@@ -53,4 +57,3 @@ The file name of the device metadata package uses the following naming conventio
 The *&lt;GUID&gt;* file prefix is a globally unique identifier (GUID) that is created for the device metadata package. The GUID for each metadata package file name must be unique. When you create a new or revised metadata package, you must create a new GUID, even if the changes are minor.
 
 For more information, see [Building Device Metadata Packages](building-device-metadata-packages.md).
-

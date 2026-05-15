@@ -39,6 +39,9 @@ You can use the **.remote** command in KD and CDB, but you cannot use it in WinD
 
 For more information about how to use Remote.exe Servers and Remote.exe Clients, see [Remote Debugging Through Remote.exe](../debugger/remote-debugging-through-remote-exe.md).
 
+> [!IMPORTANT]
+> There are important security considerations when using remote debugging. For more information, including information on enabling secure mode, see [Security Considerations for Windows Debugging Tools](../debugger/security-considerations.md).
+
 ## Remarks
 
 The **.remote** command creates a Remote.exe process and turns the current debugger into a Remote.exe Server. This server enables a Remote.exe Client to connect to the current debugging session.

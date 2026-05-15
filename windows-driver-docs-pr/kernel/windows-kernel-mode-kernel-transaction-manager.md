@@ -2,6 +2,7 @@
 title: Windows Kernel-Mode Kernel Transaction Manager
 description: Windows Kernel-Mode Kernel Transaction Manager
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Windows Kernel-Mode Kernel Transaction Manager

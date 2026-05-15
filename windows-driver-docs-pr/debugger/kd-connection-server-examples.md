@@ -3,6 +3,7 @@ title: KD Connection Server Examples
 description: KD Connection Server Examples
 keywords: ["KD connection server, examples"]
 ms.date: 06/08/2020
+ms.topic: example-scenario
 ---
 
 # KD Connection Server Examples

@@ -4,6 +4,7 @@ description: Creating Callback Objects Example
 keywords:
 - callback objects WDK UMDF , example of creating
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating Callback Objects Example

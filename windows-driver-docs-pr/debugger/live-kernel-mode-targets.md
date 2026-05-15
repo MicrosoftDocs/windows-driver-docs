@@ -3,6 +3,7 @@ title: Live Kernel-Mode Targets
 description: Live Kernel-Mode Targets
 keywords: ["targets, live kernel-mode", "kernel-mode targets"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Live Kernel-Mode Targets

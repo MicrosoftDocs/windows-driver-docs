@@ -2,6 +2,7 @@
 title: Setting Friendly Names, Sideband SCO Transport and Registering APOs
 description: This topic describes how a Port Class Bluetooth sideband audio driver can set the friendly name for a device interface, and register any APO that is used by the Bluetooth device.
 ms.date: 10/05/2022
+ms.topic: concept-article
 ---
 
 # Setting Friendly Names, Sideband SCO Transport, and Registering APOs

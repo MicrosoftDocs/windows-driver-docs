@@ -4,6 +4,7 @@ description: Warning C30034 Passing a flag value to an allocating function that 
 ms.date: 04/20/2017
 f1_keywords: 
   - "C30034"
+ms.topic: reference
 ---
 
 # C30034

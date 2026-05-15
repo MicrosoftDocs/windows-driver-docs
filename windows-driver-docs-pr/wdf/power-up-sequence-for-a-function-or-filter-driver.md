@@ -2,6 +2,7 @@
 title: Power-Up Sequence for a Function or Filter Driver
 description: Power-Up Sequence for a Function or Filter Driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Power-Up Sequence for a Function or Filter Driver

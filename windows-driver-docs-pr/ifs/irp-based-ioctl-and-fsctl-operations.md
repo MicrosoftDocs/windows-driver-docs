@@ -6,6 +6,7 @@ keywords:
 - FSCTL WDK file system
 - no buffers WDK file system
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # IRP-Based IOCTL and FSCTL Operations

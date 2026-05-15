@@ -12,6 +12,7 @@ keywords:
 - ArraySize directive WDK GDL
 - ArrayLabel directive WDK GDL
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Array Template Data Types

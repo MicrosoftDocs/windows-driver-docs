@@ -2,6 +2,7 @@
 title: Stack and Dump Logging
 description: Stack and Dump Logging
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Stack and Dump Logging

@@ -5,6 +5,7 @@ keywords:
 - OIDs WDK networking , filter drivers
 - filtering OID requests in filter driver
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Filtering OID Requests in an NDIS Filter Driver

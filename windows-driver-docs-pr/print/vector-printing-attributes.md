@@ -5,6 +5,7 @@ keywords:
 - vector printing attributes WDK Unidrv
 - general printer attributes WDK Unidrv , vector
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # Vector Printing Attributes

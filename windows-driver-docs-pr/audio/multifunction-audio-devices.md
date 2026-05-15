@@ -9,6 +9,7 @@ keywords:
 - multifunction audio devices WDK , about multifunction audio devices
 - multiple function audio devices WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Multifunction Audio Devices

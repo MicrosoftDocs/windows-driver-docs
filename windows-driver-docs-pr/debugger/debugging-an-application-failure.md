@@ -3,6 +3,7 @@ title: Debugging an Application Failure
 description: Debugging an Application Failure
 keywords: ["application failures"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging an Application Failure

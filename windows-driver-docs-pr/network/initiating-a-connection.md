@@ -9,6 +9,7 @@ keywords:
 - SAN connection setup WDK , flow diagram
 - SAN sockets WDK , initiating connections
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Initiating a Connection

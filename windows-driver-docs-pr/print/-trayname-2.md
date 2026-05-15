@@ -2,6 +2,7 @@
 title: TrayName (OutputBins)
 description: An IHV-mapped property name for an output tray.
 ms.date: 08/31/2021
+ms.topic: reference
 ---
 
 # TrayName (OutputBins)

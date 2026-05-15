@@ -2,6 +2,7 @@
 title: Improvements in Configuration Formats
 description: Configuration formats in v4 printer drivers have been improved to allow control over copy count and punctuation substitutions.
 ms.date: 01/25/2023
+ms.topic: release-notes
 ---
 
 # Improvements in Configuration Formats

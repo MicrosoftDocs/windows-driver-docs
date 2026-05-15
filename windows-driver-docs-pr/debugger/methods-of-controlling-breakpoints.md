@@ -2,10 +2,13 @@
 title: Methods of Controlling Breakpoints
 description: Methods of Controlling Breakpoints
 keywords: ["breakpoints, controlling"]
-ms.date: 06/26/2023
+ms.date: 08/01/2025
+ms.topic: concept-article
 ---
 
 # Methods of Controlling Breakpoints
+
+A *breakpoint* is a location in executable code at which the operating system stops execution and breaks into the debugger. This allows you to analyze the target and issue debugger commands.
 
 You can specify the location of a breakpoint by virtual address, module and routine offsets, or source file and line number (when in source mode). If you put a breakpoint on a routine without an offset, the breakpoint is activated when that routine is entered.
 

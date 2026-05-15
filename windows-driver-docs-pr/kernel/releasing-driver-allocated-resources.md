@@ -3,6 +3,7 @@ title: Releasing Driver-Allocated Resources
 description: Describes how an Unload routine releases driver-allocated resources in stages.
 keywords: ["Unload routines WDK kernel , non-PnP drivers", "non-PnP Unload routine WDK kernel", "releasing driver-allocated resources", "driver-allocated resource releases WDK kernel", "resource releasing WDK kernel"]
 ms.date: 07/22/2021
+ms.topic: how-to
 ---
 
 # Releasing Driver-Allocated Resources

@@ -2,6 +2,7 @@
 title: Wi-Fi Discovery Service Overview
 description: Wi-Fi Discovery Service Overview
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Wi-Fi Discovery Service Overview

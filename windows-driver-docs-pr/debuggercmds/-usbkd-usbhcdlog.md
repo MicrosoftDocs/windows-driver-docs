@@ -14,7 +14,7 @@ api_type:
 
 # !usbkd.usbhcdlog
 
-The [**!usbkd.usbhcdlog**](-usbkd-usbhcdlog.md) command displays a portion of the debug log for a USB host controller.
+The **!usbkd.usbhcdlog** command displays a portion of the debug log for a USB host controller.
 
 ```dbgcmd
 !usbkd.usbhcdlog DeviceExtension[, NumberOfEntries]

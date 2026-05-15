@@ -6,6 +6,7 @@ keywords:
 - BDA WDK AVStream , security
 - security WDK BDA
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Introducing Threats to a BDA Minidriver

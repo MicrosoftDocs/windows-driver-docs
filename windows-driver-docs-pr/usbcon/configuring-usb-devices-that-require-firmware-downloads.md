@@ -2,6 +2,7 @@
 description: Firmware is internal to a device, and is independent of the operating system. However, firmware downloads can cause operating system errors.
 title: Configuring a USB Device for Firmware Update
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Configuring a USB Device for Firmware Update

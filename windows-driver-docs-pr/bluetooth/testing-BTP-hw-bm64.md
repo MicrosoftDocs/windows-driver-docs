@@ -1,12 +1,13 @@
 ---
 title: Microsoft Bluetooth Test Platform - BM-64-EVB-C2 Board
 description: Bluetooth Test Platform (BTP) supported hardware (BM64).
-ms.date: 10/14/2024
+ms.date: 04/17/2025
+ms.topic: get-started
 ---
 
 # BM-64-EVB-C2 board
 
-The BM64 is a dual-mode Bluetooth v5.0 radio designed for use in headsets, speakers, or multi-speaker peripherals. More information can be found via the BM64 page from [Microchip Technology Incorporated](https://www.microchip.com/wwwproducts/en/BM64). The BM-64-EVB-C2 allows the BM64 to be utilized as a stand-alone device, allowing for connection to a test machine without the need for a Traduci. More information can be found on the [Microchip Technology BM-64-EVB-C2](https://www.microchip.com/development-tool/BM-64-EVB-C2) page.
+The BM64 is a dual-mode Bluetooth v5.0 radio designed for use in headsets, speakers, or multi-speaker peripherals. More information can be found via the BM64 page from [Microchip Technology Incorporated](https://www.microchip.com/wwwproducts/en/BM64). The BM-64-EVB-C2 allows the BM64 to be utilized as a stand-alone device, allowing for connection to a test machine without the need for a Traduci. More information can be found on the [Microchip Technology BM-64-EVB-C2](https://www.microchip.com/en-us/development-tool/BM-64-EVB-C2) page.
 
 | Device Name | Parameter | Usage Example |
 |--|--|--|
@@ -122,7 +123,7 @@ After firmware and EEPROM updates occur, the UART messaging capabilities of the 
 1. Select on the *Information* tab and select on the *Update* button.
 
     - If UART messages are being communicated correctly, the information such as the *Local Device Name* and *Bluetooth Address* is populated, and the logs show both *Event:* and *Command:* messages followed by hex codes representing the UART message contents.
-    - If no BM64 information is populated and only *Command:* messages are seen in the logs, try closing and reopening the connection. If the expected behavior still doesn't occur, refer to the [Further Help](testing-BTP-hw-bm64.md#further-help) section.
+    - If no BM64 information is populated and only *Command:* messages are seen in the logs, try closing and reopening the connection. If the expected behavior still doesn't occur, refer to the [Further Help](#further-help) section.
 
     :::image type="content" source="images/btp-bm64-spkcommand.png" alt-text="Screenshot of the SPKCommand tool showing successful communication.":::
 

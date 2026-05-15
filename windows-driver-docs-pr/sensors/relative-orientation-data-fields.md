@@ -2,6 +2,7 @@
 title: Relative Orientation Sensor Data Fields
 description: This topic provides information about the data fields that are specific to the relative orientation sensor.
 ms.date: 01/11/2024
+ms.topic: reference
 ---
 
 # Relative orientation sensor data fields

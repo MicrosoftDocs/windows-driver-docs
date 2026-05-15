@@ -6,6 +6,7 @@ keywords:
 - network INF files WDK , NetworkProvider section
 - NetworkProvider section WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Including a NetworkProvider Section

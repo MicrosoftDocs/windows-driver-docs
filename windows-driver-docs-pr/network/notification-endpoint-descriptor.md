@@ -2,6 +2,7 @@
 title: Notification Endpoint Descriptor
 description: Notification Endpoint Descriptor
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Notification Endpoint Descriptor

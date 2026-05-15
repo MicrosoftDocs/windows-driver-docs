@@ -4,6 +4,7 @@ description: Supporting OpenGL Enhancements
 keywords:
 - OpenGL enhancements WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting OpenGL Enhancements

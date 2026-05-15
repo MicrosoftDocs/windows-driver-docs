@@ -2,6 +2,7 @@
 title: Overview of the Driver Package Selection Process
 description: Overview of the Driver Package Selection Process
 ms.date: 03/23/2023
+ms.topic: concept-article
 ---
 
 # Overview of the Driver Package Selection Process
@@ -26,7 +27,7 @@ For more information about where Windows searches for matching drivers, see [Whe
 
 Windows creates a list of all the matches within each applicable [driver package](driver-packages.md) and assigns each match a rank. A single driver package may contain multiple matches for a device if the driver package has multiple lines in its [**INF *Models* section**](inf-models-section.md) entries that match on the device. Windows represents each driver package matches' rank with an integer value that is greater than or equal to zero.
 
-For more information about the ranking process, see [How Windows Ranks Driver Packages](how-setup-ranks-drivers--windows-vista-and-later-.md).
+For more information about the ranking process, see [How Windows Ranks Driver Packages](how-windows-ranks-driver-packages.md).
 
 Starting with Windows Vista, Windows also ranks driver packages based on whether the driver package is digitally signed. Windows ranks driver packages based on a digital signature as follows:
 

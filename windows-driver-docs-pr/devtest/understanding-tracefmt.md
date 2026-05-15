@@ -5,6 +5,7 @@ keywords:
 - Tracefmt WDK , about Tracefmt
 - TMF files WDK , Tracefmt
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Understanding Tracefmt

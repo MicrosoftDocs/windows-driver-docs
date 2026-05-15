@@ -3,6 +3,7 @@ title: Reusing IRPs
 description: Reusing IRPs
 keywords: ["IRPs WDK kernel , reusing", "reusing IRPs WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Reusing IRPs

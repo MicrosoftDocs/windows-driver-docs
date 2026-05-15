@@ -2,6 +2,7 @@
 title: Plug and Play Minor IRPs
 description: Plug and Play Minor IRPs
 ms.date: 08/12/2017
+ms.topic: reference
 ---
 
 # Plug and Play Minor IRPs

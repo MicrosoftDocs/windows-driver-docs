@@ -1,6 +1,6 @@
 ---
-title: Driver Development Tools
-description: Driver Development Tools
+title: Driver Development Tools for Windows
+description: Learn about Windows Driver Kit (WDK) tools for developing, testing, and verifying drivers. Includes verification, tracing, and testing tools.
 ms.assetid: 1d384d73-d1d2-445f-8077-40eed1f99a8c
 keywords:
 - tools WDK
@@ -8,35 +8,35 @@ keywords:
 - WsdCodeGen tool WDK
 - tools WDK , developing drivers
 - Web Services for Devices WDK WIA , tools
-ms.date: 06/26/2024
-ms.topic: article
+ms.date: 12/15/2025
+ms.topic: overview
 ---
 
-# Driver Development Tools
+# Driver development tools
 
 ## Purpose
 
-The Windows Driver Kit (WDK) provides a set of tools that you can use to develop, analyze, build, install, and test your driver. The WDK includes powerful verification tools that are designed to help you detect, analyze, and correct errors in driver code during the development process. Many of these tools can be used very early in the development process where they are most critical and can save you the most time and effort.
+Windows Driver Kit (WDK) provides driver development tools that help you build, test, and verify Windows drivers. The WDK includes verification tools to detect and correct driver code errors early in development, saving time and effort. Use these tools to analyze, install, and test drivers throughout the development process.
 
-## Driver Development Tools Documentation
+## Driver development tools documentation
 
 This section describes the tools and techniques that can help you during development:
 
-<a href="tools-for-verifying-drivers.md" data-raw-source="[Tools for Verifying Drivers](tools-for-verifying-drivers.md)">Tools for Verifying Drivers</a>
+- [Tools for Verifying Drivers](static-and-dynamic-verification-tools.md)
 
-<a href="additional-driver-verification-tools.md" data-raw-source="[Additional Driver Verification Tools](additional-driver-verification-tools.md)">Additional Driver Verification Tools</a>
+- [Additional Driver Verification Tools](additional-driver-verification-tools.md)
 
-<a href="tools-for-testing-drivers.md" data-raw-source="[Tools for Testing Drivers](tools-for-testing-drivers.md)">Tools for Testing Drivers</a>
+- [Tools for Testing Drivers](static-and-dynamic-verification-tools.md)
 
-<a href="tools-for-software-tracing.md" data-raw-source="[Tools for Software Tracing](tools-for-software-tracing.md)">Tools for Software Tracing</a>
+- [Tools for Software Tracing](tools-for-software-tracing.md)
 
-<a href="additional-driver-tools.md" data-raw-source="[Additional Driver Tools](additional-driver-tools.md)">Additional Driver Tools</a>
+- [Additional Driver Tools](additional-driver-tools.md)
 
-<a href="/windows-hardware/drivers/develop/validating-windows-drivers#apivalidator" data-raw-source="[ApiValidator](/windows-hardware/drivers/develop/validating-windows-drivers#apivalidator)">ApiValidator</a>
+- [ApiValidator](/windows-hardware/drivers/develop/validating-windows-drivers#apivalidator)
 You can use the ApiValidator.exe tool to verify that the APIs that your driver calls are valid for a Universal Windows driver.
 
-<a href="/windows-hardware/drivers/develop/" data-raw-source="[Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop/)">Developing, Testing, and Deploying Drivers</a>
+- [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop/)
 
 > [!IMPORTANT]
-> Windows Hardware Compatibility Program requires CodeQL for Static Tool Logo (STL) Tests on our Client and Server Operating Systems. We will continue to maintain support for SDV and CA on older products.  Partners are highly encouraged to review the CodeQL requirements for the [Static Tool Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
+> The Windows Hardware Compatibility Program requires CodeQL for Static Tool Logo (STL) Tests on our Client and Server Operating Systems. The program continues to maintain support for SDV and CA on older products. Partners are highly encouraged to review the CodeQL requirements for the [Static Tool Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
 > For more information about using CodeQL, see [CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md).

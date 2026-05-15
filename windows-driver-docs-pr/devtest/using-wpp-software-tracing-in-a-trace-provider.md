@@ -5,6 +5,7 @@ keywords:
 - Windows software trace preprocessor WDK , about WPP
 - WPP software tracing WDK , about WPP
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using WPP Software Tracing in a Trace Provider

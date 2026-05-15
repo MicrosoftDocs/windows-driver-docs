@@ -2,6 +2,7 @@
 title: Supporting NVGRE in UDP Segmentation Offload (USO)
 description: Learn how to support NVGRE in UDP segmentation offload (USO).
 ms.date: 06/15/2023
+ms.topic: concept-article
 ---
 
 # Supporting NVGRE in UDP Segmentation Offload (USO)

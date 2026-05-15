@@ -2,6 +2,7 @@
 title: Writing Custom Analysis Debugger Extensions
 description: Writing Custom Analysis Debugger Extensions
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Writing Custom Analysis Debugger Extensions

@@ -2,6 +2,7 @@
 title: Kernel Streaming Interface Sets
 description: Provides information about kernel streaming interface sets.
 ms.date: 10/11/2021
+ms.topic: reference
 ---
 
 # Kernel Streaming Interface Sets

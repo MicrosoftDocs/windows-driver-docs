@@ -2,6 +2,7 @@
 title: Firmware Attack Surface Reduction (FASR)
 description: Provides information about how to achieve secured-core PC compliance with Firmware Attack Surface Reduction (FASR).
 ms.date: 09/25/2024
+ms.topic: concept-article
 ---
 
 # Firmware Attack Surface Reduction (FASR)

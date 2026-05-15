@@ -6,6 +6,7 @@ keywords:
 - interrupts WDK KMDF , synchronization
 - synchronization WDK interrupts
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Synchronizing Interrupt Code

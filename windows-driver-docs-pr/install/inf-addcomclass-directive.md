@@ -2,6 +2,7 @@
 title: INF AddComClass directive
 description: An AddComClass directive is used within a com-server-install-section and registers a COM class.
 ms.date: 04/17/2024
+ms.topic: reference
 ---
 
 # INF AddComClass directive

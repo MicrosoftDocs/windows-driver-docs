@@ -2,7 +2,7 @@
 description: Audio Devices Design Guide
 title: Audio Devices Design Guide
 ms.date: 04/20/2017
-ms.topic: article
+ms.topic: design-pattern
 ---
 
 # Audio Devices Design Guide

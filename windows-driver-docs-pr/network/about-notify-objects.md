@@ -8,6 +8,7 @@ keywords:
 - network configuration subsystem WDK
 - subsystem WDK network configuration
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # About Notify Objects

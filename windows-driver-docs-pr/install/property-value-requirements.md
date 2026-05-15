@@ -4,6 +4,7 @@ description: Property Value Requirements
 keywords:
 - device properties WDK device installations , property value requirements
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Property Value Requirements

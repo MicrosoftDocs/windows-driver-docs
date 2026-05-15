@@ -5,6 +5,7 @@ keywords:
 - printer options WDK Unidrv , entry format
 - formats WDK printer options
 ms.date: 07/18/2023
+ms.topic: concept-article
 ---
 
 # Option entry format

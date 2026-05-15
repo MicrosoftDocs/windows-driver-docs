@@ -5,6 +5,7 @@ keywords:
 - SAN service providers WDK , extensions
 - extensions WDK SANs
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Windows Sockets SPI Extensions for SANs

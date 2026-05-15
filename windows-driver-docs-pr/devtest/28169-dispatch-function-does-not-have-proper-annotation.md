@@ -4,6 +4,7 @@ description: Warning C28169 The dispatch function does not have any _Dispatch_ty
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28169" 
+ms.topic: reference
 ---
 
 # C28169

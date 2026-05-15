@@ -3,6 +3,7 @@ title: Specifying Context Information
 description: Specifying Context Information
 keywords: ["filtering registry calls WDK kernel , context information", "registry filtering drivers WDK kernel , context information", "context information", "context information WDK filter registry call"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Specifying Context Information

@@ -9,6 +9,7 @@ keywords:
 - USB device WDK UMDF
 - USB device WDK UMDF , driver model
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Choosing a Driver Model for a USB Device

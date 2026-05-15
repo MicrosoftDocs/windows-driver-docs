@@ -2,6 +2,7 @@
 title: Architecture and Overview for HID Over the I2C Transport
 description: This article describes the driver stack for devices that support HID over the I2C transport.
 ms.date: 10/22/2024
+ms.topic: concept-article
 ---
 
 # Architecture and overview for HID over the I2C transport

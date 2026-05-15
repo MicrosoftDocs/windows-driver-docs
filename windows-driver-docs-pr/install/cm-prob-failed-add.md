@@ -4,6 +4,7 @@ description: CM_PROB_FAILED_ADD
 keywords:
 - CM_PROB_FAILED_ADD
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 31 - CM_PROB_FAILED_ADD

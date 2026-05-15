@@ -2,6 +2,7 @@
 description: Supported Property Retrieval
 title: Supported Property Retrieval
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Supported Property Retrieval

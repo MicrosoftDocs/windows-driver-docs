@@ -5,7 +5,8 @@ keywords:
 - printer capability attributes WDK Unidrv
 - general printer attributes WDK Unidrv , printer capability
 - capability attributes WDK Unidrv
-ms.date: 01/26/2024
+ms.date: 12/19/2024
+ms.topic: concept-article
 ---
 
 # Printer capability attributes

@@ -3,7 +3,8 @@ title: Known Issues with Client-Side Rendering
 description: Discussion of known issues with client-side rendering.
 keywords:
 - client-side rendering WDK print , known issues
-ms.date: 01/02/2024
+ms.date: 12/18/2024
+ms.topic: troubleshooting-known-issue
 ---
 
 # Known issues with client-side rendering

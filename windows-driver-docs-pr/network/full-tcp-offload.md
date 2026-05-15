@@ -7,6 +7,7 @@ keywords:
 - offloading processing WDK networking
 - full TCP offload WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Full TCP Offload

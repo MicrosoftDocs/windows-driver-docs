@@ -3,6 +3,7 @@ title: Specifying Device Characteristics
 description: Specifying Device Characteristics
 keywords: ["device objects WDK kernel , device characteristics", "device characteristics WDK device objects", "flags WDK device objects", "device stacks WDK kernel , device characteristics"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Specifying Device Characteristics

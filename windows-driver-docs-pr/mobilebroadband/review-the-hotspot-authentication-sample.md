@@ -2,6 +2,7 @@
 title: Review the Hotspot Authentication Sample
 description: Review the hotspot authentication sample
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Review the hotspot authentication sample

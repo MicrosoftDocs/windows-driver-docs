@@ -14,6 +14,7 @@ keywords:
 - callback routines WDK file system
 - filtering I/O operations WDK file system minifilter
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing Preoperation and Postoperation Callback Routines

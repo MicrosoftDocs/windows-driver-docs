@@ -3,6 +3,7 @@ title: Debugging BIOS Code
 description: Debugging BIOS Code
 keywords: ["BIOS debugging", "BIOS debugging, overview"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging BIOS Code

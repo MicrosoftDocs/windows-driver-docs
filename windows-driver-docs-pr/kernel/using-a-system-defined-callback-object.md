@@ -3,6 +3,7 @@ title: Using a System-Defined Callback Object
 description: Using a System-Defined Callback Object
 keywords: ["callback objects WDK kernel", "system-defined callback objects WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Using a System-Defined Callback Object

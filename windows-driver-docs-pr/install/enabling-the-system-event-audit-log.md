@@ -6,6 +6,7 @@ keywords:
 - security audit policy WDK driver signing
 - system audit policy WDK driver signing
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Enabling the System Event Audit Log

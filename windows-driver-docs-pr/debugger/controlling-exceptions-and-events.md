@@ -3,6 +3,7 @@ title: Controlling Exceptions and Events
 description: Controlling Exceptions and Events
 keywords: ["exceptions", "exceptions, overview", "exceptions, handling", "events", "events, overview", "events, handling"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Controlling Exceptions and Events
@@ -283,7 +284,7 @@ The following exceptions' default handling status is always "Not Handled". Be ca
 <td align="left"><p>Second-chance break</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>chhc</strong></p></td>
+<td align="left"><p><strong>ch<br>hc</strong></p></td>
 <td align="left"><p>Invalid handle</p></td>
 <td align="left"><p>Break</p></td>
 </tr>

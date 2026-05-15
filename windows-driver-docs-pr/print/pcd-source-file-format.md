@@ -9,6 +9,7 @@ keywords:
 - .pcd files
 - keywords WDK MSPlot
 ms.date: 07/19/2023
+ms.topic: reference
 ---
 
 # PCD source file format

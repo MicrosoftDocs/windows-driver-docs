@@ -2,6 +2,7 @@
 title: Transfer Modes
 description: Transfer Modes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Transfer Modes

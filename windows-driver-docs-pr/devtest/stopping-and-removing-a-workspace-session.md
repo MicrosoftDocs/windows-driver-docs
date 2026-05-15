@@ -7,6 +7,7 @@ keywords:
 - removing workspace sessions
 - stopping workspace sessions
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Stopping and Removing a Workspace Session

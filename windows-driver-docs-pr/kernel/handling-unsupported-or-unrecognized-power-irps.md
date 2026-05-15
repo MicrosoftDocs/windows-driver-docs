@@ -3,6 +3,7 @@ title: Handling Unsupported or Unrecognized Power IRPs
 description: Handling Unsupported or Unrecognized Power IRPs
 keywords: ["power IRPs WDK kernel , unsupported", "unsupported power IRPs WDK kernel", "unrecognized power IRPs WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Handling Unsupported or Unrecognized Power IRPs

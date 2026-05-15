@@ -5,6 +5,7 @@ keywords:
 - printer features WDK Unidrv , conflict priority
 - conflict priority WDK printer features
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Feature Conflict Priority

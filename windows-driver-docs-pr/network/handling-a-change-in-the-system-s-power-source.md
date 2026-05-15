@@ -7,6 +7,7 @@ keywords:
 - network interface cards WDK networking , power source changes
 - Plug and Play WDK NDIS miniport , power source changes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling a Change in the System's Power Source

@@ -4,6 +4,7 @@ description: IPrintCoreUI2 COM interface
 keywords:
 - IPrintCoreUI2
 ms.date: 06/26/2023
+ms.topic: reference
 ---
 
 # IPrintCoreUI2 COM interface

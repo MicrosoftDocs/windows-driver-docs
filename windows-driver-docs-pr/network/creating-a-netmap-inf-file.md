@@ -7,6 +7,7 @@ keywords:
 - netmap.inf files WDK
 - vendor-supplied files WDK netmap.inf file
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating a Netmap.inf File

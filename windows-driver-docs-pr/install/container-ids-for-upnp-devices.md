@@ -2,6 +2,7 @@
 title: Container IDs for UPnP Devices
 description: A device that supports PnP extensions (PnP-X) and Universal PnP (UPnP) can specify a container ID by including the **X_containerId** XML element in the device description document.
 ms.date: 10/17/2024
+ms.topic: concept-article
 ---
 
 # Container IDs for UPnP devices

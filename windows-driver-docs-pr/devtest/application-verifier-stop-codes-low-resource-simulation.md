@@ -8,6 +8,7 @@ keywords:
 - AppVerif.exe
 - user-mode application testing
 ms.date: 01/13/2022
+ms.topic: reference
 ---
 
 # Application Verifier - Stop Codes - Low Resource Simulation

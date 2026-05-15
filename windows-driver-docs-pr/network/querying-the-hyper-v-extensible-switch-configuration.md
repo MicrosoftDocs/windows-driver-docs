@@ -2,6 +2,7 @@
 title: Querying the Hyper-V Extensible Switch Configuration
 description: Querying the Hyper-V Extensible Switch Configuration
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Querying the Hyper-V Extensible Switch Configuration

@@ -8,7 +8,8 @@ keywords:
 - Error Correction Code memory WDK WHEA , predictive failure analysis
 - low-level hardware error handler WDK WHEA
 - LLHEH WDK WHEA
-ms.date: 03/03/2023
+ms.date: 03/26/2025
+ms.topic: concept-article
 ---
 
 # How WHEA Performs PFA on ECC Memory

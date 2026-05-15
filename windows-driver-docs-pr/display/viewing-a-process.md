@@ -2,6 +2,7 @@
 title: Viewing a Process
 description: Each process gets its own display area in the main GPUView window. 
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Viewing a Process

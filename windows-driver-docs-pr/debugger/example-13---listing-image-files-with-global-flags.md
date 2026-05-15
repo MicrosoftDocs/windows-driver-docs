@@ -2,6 +2,7 @@
 title: Example 13 Listing Image Files with Global Flags
 description: Example 13 Listing Image Files with Global Flags
 ms.date: 10/12/2018
+ms.topic: concept-article
 ---
 
 # Example 13: Listing Image Files with Global Flags

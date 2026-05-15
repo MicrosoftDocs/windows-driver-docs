@@ -4,7 +4,7 @@ description: Mobile Plans system architecture
 keywords:
 - Windows Mobile Plans mobile operators
 ms.date: 10/06/2023
-ms.topic: article
+ms.topic: solution-overview
 ---
 
 # Mobile Plans system architecture

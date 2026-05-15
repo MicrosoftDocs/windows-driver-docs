@@ -4,6 +4,7 @@ description: Printer Driver Support for Printer Directory Services
 keywords:
 - Directory Services WDK printer
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Printer Driver Support for Printer Directory Services

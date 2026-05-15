@@ -2,6 +2,7 @@
 title: Deleting a Virtual Port
 description: Deleting a Virtual Port
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Deleting a Virtual Port

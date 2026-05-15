@@ -5,6 +5,7 @@ keywords:
 - WDDM, UMD work submission to GPU
 - WDDM, hardware scheduling
 ms.date: 04/08/2024
+ms.topic: concept-article
 ---
 
 # User-mode work submission

@@ -172,5 +172,3 @@ The following code example shows a validation request for an invalid scan ticket
 ## See also
 
 [**ScanTicket**](scanticket.md)
-
-[**ValidateScanTicketRequest**](validatescanticketrequest.md)

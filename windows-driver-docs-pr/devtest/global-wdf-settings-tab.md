@@ -5,6 +5,7 @@ keywords:
 - WDF Verifier WDK , managing UMDF settings
 - UMDF Verifier settings WDK WDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Global WDF Settings Tab

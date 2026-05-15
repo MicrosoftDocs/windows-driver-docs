@@ -10,6 +10,7 @@ keywords:
 - alternate Help message files WDK netmap.inf
 - vendor-supplied files WDK netmap.inf file
 ms.date: 05/05/2023
+ms.topic: concept-article
 ---
 
 # Specifying Alternative Help Message Files in a Netmap.inf File

@@ -8,6 +8,7 @@ keywords:
 - filter drivers WDK KMDF
 - filter DOs WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating Device Objects in a Filter Driver

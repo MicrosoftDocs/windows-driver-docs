@@ -8,6 +8,7 @@ keywords:
 - near field proximity
 - NFP
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # NFP provider model
@@ -24,5 +25,5 @@ NFP providers pre-stage their communication using a pub/sub model whose transmis
 
 ## Related topics
 
-- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)
+- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)
 - [Near field proximity DDI reference](/windows-hardware/drivers/ddi/_nfpdrivers)

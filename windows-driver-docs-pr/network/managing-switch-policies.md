@@ -2,6 +2,7 @@
 title: Managing Switch Policies
 description: Managing Switch Policies
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Managing Switch Policies

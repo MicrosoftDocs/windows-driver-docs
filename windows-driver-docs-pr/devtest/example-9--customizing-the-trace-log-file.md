@@ -7,6 +7,7 @@ keywords:
 - custom trace logs WDK
 - event trace logs WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 9: Customizing the Trace Log File

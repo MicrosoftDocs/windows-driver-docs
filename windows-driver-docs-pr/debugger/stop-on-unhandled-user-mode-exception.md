@@ -2,6 +2,7 @@
 title: Stop on Unhandled User-Mode Exception
 description: Stop on unhandled user-mode exception
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # <span id="debugger.stop_on_unhandled_user-mode_exception"></span>Stop on unhandled user-mode exception

@@ -2,6 +2,7 @@
 title: Obtaining the Current Settings of WOL Patterns
 description: Obtaining the Current Settings of WOL Patterns
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Obtaining the Current Settings of WOL Patterns

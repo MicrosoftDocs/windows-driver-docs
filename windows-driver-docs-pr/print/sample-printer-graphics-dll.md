@@ -5,6 +5,7 @@ keywords:
 - printer graphics DLL WDK , samples
 - graphics DLL WDK printer , samples
 ms.date: 01/30/2023
+ms.topic: reference
 ---
 
 # Sample Printer Graphics DLL

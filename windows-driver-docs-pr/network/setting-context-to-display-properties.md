@@ -6,6 +6,7 @@ keywords:
 - network notify objects WDK , context
 - context WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Setting Context to Display Properties

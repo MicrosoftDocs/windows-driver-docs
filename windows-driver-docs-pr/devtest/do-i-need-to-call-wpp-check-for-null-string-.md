@@ -2,6 +2,7 @@
 title: Do I Need to Call WPP_CHECK_FOR_NULL_STRING
 description: Do I need to call WPP_CHECK_FOR_NULL_STRING
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Do I need to call WPP\_CHECK\_FOR\_NULL\_STRING?

@@ -1,8 +1,8 @@
 ---
 title: Create a new WLK hardware submission
 description: This article describes how to use WST to create your submission package and submit it to the hardware dashboard.
-ms.topic: article
 ms.date: 09/18/2024
+ms.topic: how-to
 ---
 
 # Create a WLK hardware submission package

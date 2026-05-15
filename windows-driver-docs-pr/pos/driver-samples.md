@@ -2,6 +2,7 @@
 title: POS Driver Samples
 description: The following samples demonstrate how to create universal drivers for point of service (POS) devices.
 ms.date: 03/17/2023
+ms.topic: example-scenario
 ---
 
 # POS driver samples

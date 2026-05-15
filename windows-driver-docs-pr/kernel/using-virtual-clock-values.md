@@ -3,6 +3,7 @@ title: Using Virtual Clock Values
 description: Using Virtual Clock Values
 keywords: ["virtual clock values WDK KTM", "Kernel Transaction Manager WDK , virtual clock values", "KTM WDK , virtual clock values", "transactions WDK KTM , virtual clock values"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Using Virtual Clock Values

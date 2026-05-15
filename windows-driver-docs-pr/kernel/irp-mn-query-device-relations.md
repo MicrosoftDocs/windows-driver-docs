@@ -172,7 +172,7 @@ The following list summarizes the situations in which you can safely acquire a p
 
 -   Device object in a PnP
 
-    A device object that is in a PnP device stack learns about the stack's PDO when the [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine for the device is called. The driver can safely cache the pointer to the PDO if the use of the pointer is properly synchronized with incoming [**IRP\_MN\_REMOVE\_DEVICE**](irp-mn-remove-device.md) messages by using the [remove lock routines](/windows-hardware/drivers/ddi/index).
+    A device object that is in a PnP device stack learns about the stack's PDO when the [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine for the device is called. The driver can safely cache the pointer to the PDO if the use of the pointer is properly synchronized with incoming [**IRP\_MN\_REMOVE\_DEVICE**](irp-mn-remove-device.md) messages by using the remove lock routines.
 
 -   Device object in a non-PnP stack, not at bottom of stack
 

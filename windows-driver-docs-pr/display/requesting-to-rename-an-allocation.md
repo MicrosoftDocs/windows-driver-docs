@@ -7,6 +7,7 @@ keywords:
 - allocation renaming WDK display
 - renaming allocations WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Requesting to Rename an Allocation

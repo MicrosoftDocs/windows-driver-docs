@@ -10,6 +10,7 @@ api_name:
 - ndiskd.netreport
 api_type:
 - NA
+ms.custom: sfi-image-nochange
 ---
 
 # !ndiskd.netreport
@@ -74,7 +75,7 @@ The Data flows tab, which appears if NBL tracking was enabled on the target syst
 
 ## See also
 
-[Network Driver Design Guide](../network/index.md)
+[Network Driver Design Guide](/windows-hardware/drivers/network/))
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 

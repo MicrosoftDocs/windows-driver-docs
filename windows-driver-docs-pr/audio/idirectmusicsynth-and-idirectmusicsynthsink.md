@@ -15,6 +15,7 @@ keywords:
 - custom synths WDK audio , interfaces
 - DirectMusic custom rendering WDK audio , synthesizers
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # IDirectMusicSynth and IDirectMusicSynthSink

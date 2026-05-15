@@ -15,6 +15,7 @@ keywords:
 - port drivers WDK audio
 - PortCls WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Introduction to Port Class

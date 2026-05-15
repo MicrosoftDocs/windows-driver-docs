@@ -8,6 +8,7 @@ keywords:
 - Windows Hardware Error Architecture WDK , setting error source information
 - hardware error sources WDK WHEA , setting information
 ms.date: 03/03/2023
+ms.topic: how-to
 ---
 
 # Setting Error Source Information

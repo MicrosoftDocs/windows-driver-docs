@@ -9,6 +9,7 @@ keywords:
 - hardware error sources WDK WHEA , disabling
 - disabling an error source
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Disabling an Error Source

@@ -2,6 +2,7 @@
 title: Accessing Device Setup Class Properties
 description: Accessing Device Setup Class Properties
 ms.date: 04/05/2022
+ms.topic: concept-article
 ---
 
 # Accessing Device Setup Class Properties

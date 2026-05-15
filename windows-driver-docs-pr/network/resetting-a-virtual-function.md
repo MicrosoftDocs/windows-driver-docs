@@ -2,6 +2,7 @@
 title: Resetting a Virtual Function
 description: Resetting a Virtual Function
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Resetting a Virtual Function

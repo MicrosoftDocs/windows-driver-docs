@@ -5,6 +5,7 @@ keywords:
 - statistics OIDs WDK networking
 - 64-bit statistics OIDs WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Querying 64-Bit Statistics OIDs

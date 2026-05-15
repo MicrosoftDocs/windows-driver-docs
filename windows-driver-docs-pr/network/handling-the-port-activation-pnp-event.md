@@ -7,6 +7,7 @@ keywords:
 - PnP event notifications WDK NDIS ports
 - activation PnP events WDK NDIS ports
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling the Port Activation PnP Event

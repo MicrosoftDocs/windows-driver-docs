@@ -2,6 +2,7 @@
 title: LocationPath Registry Subkey
 description: LocationPath Registry Subkey
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # LocationPath Registry Subkey

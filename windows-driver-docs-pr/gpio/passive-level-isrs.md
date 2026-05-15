@@ -2,6 +2,7 @@
 title: Passive-Level ISRs
 description: Starting with Windows 8, kernel-mode driver framework (KMDF) and user-mode driver framework (UMDF) drivers can, as an option, register their interrupt service routines (ISRs) to run at passive level.
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Passive-Level ISRs

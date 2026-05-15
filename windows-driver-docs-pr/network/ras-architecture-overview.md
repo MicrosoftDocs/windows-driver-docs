@@ -6,6 +6,7 @@ keywords:
 - RAS WDK networking
 - architecture WDK WAN , RAS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # RAS Architecture Overview

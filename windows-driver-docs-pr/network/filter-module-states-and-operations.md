@@ -11,6 +11,7 @@ keywords:
 - Restarting state WDK networking
 - Running state WDK ne
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Filter Module States and Operations

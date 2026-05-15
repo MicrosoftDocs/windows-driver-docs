@@ -9,6 +9,7 @@ keywords:
 - UlGenerateDigitModes
 - UlMonitorDigitModes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Responding to an OID\_CO\_TAPI\_LINE\_CAPS Query

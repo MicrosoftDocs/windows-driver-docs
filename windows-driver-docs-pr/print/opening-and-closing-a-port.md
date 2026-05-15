@@ -13,6 +13,7 @@ keywords:
 - spooler opening and closing ports WDK print
 - print spooler opening and closing ports WDK
 ms.date: 09/08/2022
+ms.topic: how-to
 ---
 
 # Open and close a port

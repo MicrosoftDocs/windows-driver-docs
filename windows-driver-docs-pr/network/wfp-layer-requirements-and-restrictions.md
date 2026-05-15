@@ -6,6 +6,7 @@ keywords:
 - packet processing WDK Windows Filtering Platform
 - layers for packet processing WDK Windows Filtering Platform
 ms.date: 01/22/2019
+ms.topic: checklist
 ---
 
 # WFP Layer Requirements and Restrictions

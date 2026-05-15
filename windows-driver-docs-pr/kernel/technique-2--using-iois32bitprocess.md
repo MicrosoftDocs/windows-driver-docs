@@ -3,6 +3,7 @@ title: Technique 2 Using IoIs32bitProcess
 description: Technique 2 Using IoIs32bitProcess
 keywords: ["32-bit I/O support WDK 64-bit , IoIs32bitProcess", "IoIs32bitProcess"]
 ms.date: 06/16/2017
+ms.topic: tutorial
 ---
 
 # Technique 2: Using IoIs32bitProcess

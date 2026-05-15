@@ -5,6 +5,7 @@ keywords:
 - SAN process cleanups WDK
 - cleaning up SAN process WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Cleaning up a Process for a SAN

@@ -3,13 +3,12 @@ title: Installing SymProxy
 description: Installing SymProxy
 keywords: ["SymProxy, installation"]
 ms.date: 03/12/2019
+ms.topic: concept-article
 ---
 
 # Installing SymProxy
 
-
-## <span id="Summary_of_installation_tasks"></span><span id="summary_of_installation_tasks"></span><span id="SUMMARY_OF_INSTALLATION_TASKS"></span>Summary of installation tasks
-
+## Summary of installation tasks
 
 The following summarizes the tasks to install and configure SymProxy.
 
@@ -23,7 +22,7 @@ The following summarizes the tasks to install and configure SymProxy.
 
 These steps can be automated using the Install.cmd file. For more information, see [SymProxy Automated Installation](symproxy-automated-installation.md).
 
-## <span id="Copy_the_SymProxy_files_to_IIS"></span><span id="copy_the_symproxy_files_to_iis"></span><span id="COPY_THE_SYMPROXY_FILES_TO_IIS"></span>Copy the SymProxy files to IIS
+## Copy the SymProxy files to IIS
 
 
 The SymProxy files are included in the Debuggers directory of the Windows Driver Kit. For example this is the location of the 64 bit files for Windows 10 kit. C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64\\symproxy.

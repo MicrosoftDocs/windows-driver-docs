@@ -3,7 +3,7 @@ title: Introduction
 description: Introduction
 ms.assetid: 0AEFA19D-C270-4777-8C08-E6056FBB6BC5
 ms.date: 12/15/2019
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Storage driver design guide

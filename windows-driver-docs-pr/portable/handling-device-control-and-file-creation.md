@@ -2,6 +2,7 @@
 description: Handling Device Control and File Creation
 title: Handling Device Control and File Creation
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Handling Device Control and File Creation

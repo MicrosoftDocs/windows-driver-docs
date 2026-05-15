@@ -6,6 +6,7 @@ keywords:
 - compressing raster data WDK Unidrv
 - customized raster data compression WDK Unidrv
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 
 # Using Customized Compression

@@ -2,6 +2,7 @@
 title: ENCAPIPARAM_BITRATE_MODE
 description: The ENCAPIPARAM_BITRATE property is used to describe the encoding mode of the device.
 ms.date: 10/08/2021
+ms.topic: reference
 ---
 
 # ENCAPIPARAM_BITRATE_MODE

@@ -5,6 +5,7 @@ keywords:
 - NetAdapterCx Net rings and net ring iterators cancel, NetAdapterCx cancel packet queue
 ms.date: 11/01/2019
 ms.custom: Vib
+ms.topic: concept-article
 ---
 
 # Canceling network data with net rings

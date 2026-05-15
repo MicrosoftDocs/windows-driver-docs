@@ -2,6 +2,7 @@
 title: Using the State-Refresh Callback Functions
 description: Using the State-Refresh Callback Functions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using the State-Refresh Callback Functions

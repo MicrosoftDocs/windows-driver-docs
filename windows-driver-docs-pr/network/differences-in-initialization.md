@@ -4,6 +4,7 @@ description: Differences in Initialization
 keywords:
 - initializing connection-oriented protocols
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Differences in Initialization

@@ -3,6 +3,7 @@ title: Custom Symbol Stores and Symbol Servers
 description: Custom Symbol Stores and Symbol Servers
 keywords: ["symbol servers", "symbol servers, overview", "symbol stores", "symbol stores, overview", "SymSrv", "SymSrv, overview", "SymStore", "SymStore, overview"]
 ms.date: 10/28/2021
+ms.topic: concept-article
 ---
 
 # Custom Symbol Stores and Symbol Servers

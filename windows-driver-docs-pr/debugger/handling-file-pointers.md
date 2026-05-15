@@ -3,6 +3,7 @@ title: Handling File Pointers
 description: Handling File Pointers
 keywords: ["SymProxy, file pointers"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Handling File Pointers

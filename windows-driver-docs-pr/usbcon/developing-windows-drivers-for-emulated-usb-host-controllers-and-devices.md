@@ -2,6 +2,7 @@
 title: Overview of Developing Windows Drivers for Emulated USB Devices (UDE)
 description: Overview of developing Windows drivers for emulated USB devices (UDE)
 ms.date: 01/12/2024
+ms.topic: concept-article
 ---
 
 # Overview of developing Windows drivers for emulated USB devices (UDE)

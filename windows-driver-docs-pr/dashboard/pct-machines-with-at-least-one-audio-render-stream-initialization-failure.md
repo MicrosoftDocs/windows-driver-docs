@@ -1,8 +1,8 @@
 ---
 title: Percent of machines with at least one audio render stream initialization failure 
 description: This measure calculates the percentage of machines with at least one ACI render stream initialization failure
-ms.topic: article
 ms.date: 11/07/2022
+ms.topic: reference
 ---
 
 # Percent of machines with at least one audio render stream initialization failure
@@ -30,4 +30,4 @@ See "Audio user-mode reliability" on [Audio measures](audio-measures.md)
 
 ### Final calculation
 
-*Measure failure rate* = # of machines with atleast *one Render Stream init failure / Total* # *machines with a stream init event*
+*Measure failure rate* = # of machines with at least *one Render Stream init failure / Total* # *machines with a stream init event*

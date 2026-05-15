@@ -6,6 +6,7 @@ keywords:
 - resource destruction WDK display
 - destroying resources WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Handling Resource Creation and Destruction

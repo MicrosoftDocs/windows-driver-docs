@@ -9,6 +9,7 @@ keywords:
 - GDL WDK , source files
 - source files WDK GDL
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # \#Include Preprocessor Directive

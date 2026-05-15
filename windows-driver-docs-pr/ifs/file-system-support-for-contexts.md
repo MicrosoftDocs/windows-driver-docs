@@ -4,6 +4,7 @@ description: File System Support for Contexts
 keywords:
 - contexts WDK file system minifilter , file system support
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # File System Support for Contexts

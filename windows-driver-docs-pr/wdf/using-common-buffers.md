@@ -7,6 +7,7 @@ keywords:
 - common buffers WDK KMDF
 - buffers WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using Common Buffers

@@ -2,6 +2,7 @@
 title: Collection List Legacy Helpers
 description: The collection list legacy helper functions are used by v2 sensor drivers for interacting with SENSOR\_COLLECTION\_LIST structures.
 ms.date: 01/11/2024
+ms.topic: reference
 ---
 
 # Collection list legacy helpers

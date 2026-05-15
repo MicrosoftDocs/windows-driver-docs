@@ -4,6 +4,7 @@ description: Option attributes for the Halftone feature
 keywords:
 - Halftone Feature
 ms.date: 07/19/2023
+ms.topic: reference
 ---
 
 # Option attributes for the Halftone feature

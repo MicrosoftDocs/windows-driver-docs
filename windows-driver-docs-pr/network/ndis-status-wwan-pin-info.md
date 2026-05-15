@@ -101,8 +101,3 @@ When miniport drivers use the NDIS\_STATUS\_WWAN\_PIN\_INFO notification to resp
 
 
 [OID\_WWAN\_PIN](oid-wwan-pin.md)
-
-[**NDIS\_STATUS\_WWAN\_PIN\_INFO**](ndis-status-wwan-pin-info.md)
-
- 
-

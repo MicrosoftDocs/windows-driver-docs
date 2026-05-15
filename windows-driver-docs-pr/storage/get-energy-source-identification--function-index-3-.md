@@ -2,6 +2,7 @@
 title: Get Energy Source Identification (Function Index 3)
 description: This function returns identification information about the Energy Source (ES), which can be host-managed or device-managed.
 ms.date: 11/18/2022
+ms.topic: reference
 ---
 
 # Get Energy Source Identification (Function Index 3)

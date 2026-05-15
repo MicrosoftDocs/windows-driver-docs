@@ -9,6 +9,7 @@ keywords:
 - interfaces WDK DRM
 - functions WDK DRM
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # DRM Functions and Interfaces

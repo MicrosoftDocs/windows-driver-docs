@@ -3,13 +3,10 @@ title: Get RPC Thread Information
 description: Get RPC Thread Information
 keywords: ["RPC thread information"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Get RPC Thread Information
-
-
-## <span id="ddk_get_rpc_thread_information_dbg"></span><span id="DDK_GET_RPC_THREAD_INFORMATION_DBG"></span>
-
 
 Thread information is displayed by the **!rpcexts.getthreadinfo** extension, or by DbgRpc when the **-t** switch is used.
 

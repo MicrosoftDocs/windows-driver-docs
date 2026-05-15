@@ -1,55 +1,49 @@
 ---
 title: Symbols for Windows Debugging
-description: Symbols for the Windows debuggers (WinDbg, KD, CDB, and NTSD) are available from a public symbol server. 
+description: Explore symbols for the Windows debuggers (WinDbg, KD, CDB, and NTSD) that are available from a public symbol server.
 keywords: ["symbols", "setup, symbols", "symbols, setup"]
-ms.date: 08/26/2024
+ms.date: 07/11/2025
+ms.topic: concept-article
 ---
 
 # Symbols for Windows debugging
 
-Symbol files hold a variety of data which are not actually needed when running the binaries, but which could be very useful in the debugging process.
+Symbol files hold various data that while not essential for running the binaries, can be useful for debugging. Symbols can include the symbol name, symbol type (if applicable), symbol store address (or register), and any parent or child symbols. Examples of symbols include variable names (local and global), functions, and any entry point into a module.
 
-Symbols can include the name, type (if applicable), the address or register where it is stored, and any parent or child symbols. Examples of symbols include variable names (local and global), functions, and any entry point into a module.
+The debugger gets its information about symbols from symbol files located on the local file system or loaded from a remote symbol server. When you use a symbol server, the debugger automatically uses the correct version of the symbol file to match the module in the target. 
 
-The debugger gets its information about symbols from symbol files, which are located on the local file system or loaded from a remote symbol server. When using a symbol server, the debugger will automatically use the correct version of the symbol file to match the module in the target. 
+## Locate symbols for Windows debuggers
 
-Symbols for the Windows debuggers (WinDbg, KD, CDB, and NTSD) are available from a public symbol server via the internet. 
+Symbols for the Windows debuggers are available from a public symbol server over the internet. Windows debuggers include WinDbg (a kernel-mode and user-mode debugger), the kernel debugger (KD), Microsoft Console Debugger (CDB), and Microsoft NT Symbolic Debugger (NTSD).
 
->[!TIP] 
-> Symbols can be loaded automatically using the [**.symfix (Set Symbol Store Path)**](../debuggercmds/-symfix--set-symbol-store-path-.md) command, as long as you have access to the internet while your debugger is running. Then use the [**.reload (Reload Module)**](../debuggercmds/-reload--reload-module-.md) command to load the symbols.
+- For user-mode debugging, you need symbols for your target application.
 
-If you are performing user-mode debugging, you will need symbols for your target application. If you are performing kernel-mode debugging, you will need symbols for the driver you are debugging, as well as the Windows public symbols. 
+- For kernel-mode debugging, you need symbols for the driver you're debugging and also the Windows public symbols. 
 
-These topics explain how to access symbols during a debugging session, how to control the debugger's symbol options and symbol matching.
+You can load symbols automatically with the `.symfix` command, which [sets the symbol store path](../debuggercmds/-symfix--set-symbol-store-path-.md). To run the command, you need access to the internet while your debugger is running. Next, use the `.reload` command to [reload the module and symbols](../debuggercmds/-reload--reload-module-.md).
 
-[Microsoft public symbol server](microsoft-public-symbols.md)
+To learn more about symbols, including WinDbg support for Portable PDB symbols, see the following articles:
 
-[Windows Symbol Packages](debugger-download-symbols.md)
+- [Symbols and symbol files](symbols-and-symbol-files.md)
+- [Public and private symbols](public-and-private-symbols.md)
+- [Portable Program Database (PDB) symbols](symbols-portable-pdb.md)
 
-[Symbol path for Windows debuggers](symbol-path.md)
+## Access symbols while debugging
 
-These topics explain what symbols are, as well as describe WinDbg support for Portable PDB symbols.
+The following articles describe how to access symbols during a debugging session. They also explain how to control the debugger's symbol options and symbol matching.
 
-[Symbols and Symbol Files](symbols-and-symbol-files.md)
+- [Microsoft public symbol server](microsoft-public-symbols.md)
+- [Windows symbol packages for debugging](debugger-download-symbols.md)
+- [Symbol path for Windows debuggers](symbol-path.md)
 
-[Public and Private Symbols](public-and-private-symbols.md)
+> [!TIP]
+> To configure your debugger to access symbols for your own programs and for Windows, get started quickly by reading [Symbol path](symbol-path.md) and [Microsoft public symbol server](microsoft-public-symbols.md). Use the `!sym noisy` command to display more detail as symbols are loaded to troubleshoot issues with symbols. For more information, see the [!sym command reference](../debuggercmds/-sym.md).
 
-[Portable PDB Symbols](symbols-portable-pdb.md)
+## Related articles
 
-For additional detail on working with symbols refer to these pages.
-
-[Using a Symbol Server](using-a-symbol-server.md)
-
-[Advanced SymSrv Use](advanced-symsrv-use.md)
-
-[Firewalls and Proxy Servers](firewalls-and-proxy-servers.md)
-
-[Symbol Syntax and Symbol Matching](symbol-syntax-and-symbol-matching.md)
-
-[Custom Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md)
-
-[Symbol Problems While Debugging](symbol-problems-while-debugging.md)
-
-If you simply want to configure your debugger to access symbols for your own programs and for Windows, you may find it quicker to read the less-detailed introductory topics [Symbol Path](symbol-path.md) and [Microsoft public symbol server](microsoft-public-symbols.md). Use the Use [**!sym noisy**](../debuggercmds/-sym.md) command to display additional detail as symbols are loaded to troubleshoot issues with symbols. 
-
- 
+- [Use a symbol server (SymSrv)](using-a-symbol-server.md)
+- [Advanced use cases for SymSrv](advanced-symsrv-use.md)
+- [Firewalls and proxy servers](firewalls-and-proxy-servers.md)
+- [Symbol syntax and symbol matching](symbol-syntax-and-symbol-matching.md)
+- [Custom symbol stores and symbol servers](symbol-stores-and-symbol-servers.md)
+- [Symbol problems while debugging](symbol-problems-while-debugging.md)

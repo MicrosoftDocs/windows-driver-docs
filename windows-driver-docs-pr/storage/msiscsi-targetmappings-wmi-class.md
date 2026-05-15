@@ -2,6 +2,7 @@
 title: MSiSCSI_TargetMappings WMI Class
 description: MSiSCSI\_TargetMappings WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MSiSCSI\_TargetMappings WMI Class

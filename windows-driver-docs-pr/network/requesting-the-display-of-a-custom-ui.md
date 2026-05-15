@@ -4,6 +4,7 @@ description: Requesting the Display of a Custom UI
 keywords:
 - custom UI WDK Native 802.11 IHV UI Extensions DLL , requesting display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Requesting the Display of a Custom UI

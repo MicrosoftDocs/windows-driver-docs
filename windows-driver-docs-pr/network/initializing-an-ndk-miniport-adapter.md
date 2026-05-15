@@ -2,6 +2,7 @@
 title: Initializing an NDK Miniport Adapter
 description: This section describes how to initialize an NDK miniport adapter
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Initializing an NDK Miniport Adapter

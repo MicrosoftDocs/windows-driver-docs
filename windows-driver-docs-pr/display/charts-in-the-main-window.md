@@ -2,6 +2,7 @@
 title: Charts in the Main Window
 description: GPUView provides a number of different charts that show information gathered from specific events in a graphical manner.
 ms.date: 05/10/2022
+ms.topic: overview
 ---
 
 # Charts in the Main Window

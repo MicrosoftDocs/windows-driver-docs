@@ -3,6 +3,7 @@ title: Using the Kernel Stack
 description: Using the Kernel Stack
 keywords: ["memory management WDK kernel , kernel stack", "kernel-mode stack space WDK", "kernel stack space WDK"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Using the Kernel Stack

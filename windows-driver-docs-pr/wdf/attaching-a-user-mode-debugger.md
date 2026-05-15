@@ -13,6 +13,7 @@ keywords:
 - debugging drivers WDK UMDF , attaching a user-mode debugger
 - driver debugging WDK UMDF , attaching a user-mode debugger
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Attaching a User-Mode Debugger

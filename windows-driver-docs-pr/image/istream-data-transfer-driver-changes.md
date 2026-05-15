@@ -2,6 +2,7 @@
 title: IStream Data Transfer Driver Changes
 description: IStream Data Transfer Driver Changes
 ms.date: 04/20/2017
+ms.topic: release-notes
 ---
 
 # IStream Data Transfer Driver Changes

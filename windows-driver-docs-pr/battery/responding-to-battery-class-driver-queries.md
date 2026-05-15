@@ -8,6 +8,7 @@ keywords:
 - status information WDK battery
 - queries WDK battery
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Responding to Battery Class Driver Queries

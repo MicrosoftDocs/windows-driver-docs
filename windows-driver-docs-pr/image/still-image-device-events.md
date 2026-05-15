@@ -2,6 +2,7 @@
 title: Still Image Device Events
 description: Still image device events
 ms.date: 05/02/2023
+ms.topic: concept-article
 ---
 
 # Still image device events

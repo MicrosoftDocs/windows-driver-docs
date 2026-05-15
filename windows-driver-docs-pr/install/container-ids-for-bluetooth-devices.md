@@ -2,6 +2,7 @@
 title: Container IDs for Bluetooth Devices
 description: Container IDs for Bluetooth Devices
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Container IDs for Bluetooth Devices

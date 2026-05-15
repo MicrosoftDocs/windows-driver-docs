@@ -2,6 +2,7 @@
 title: NDKPI listeners, connectors, and endpoints
 description: This section describes NDKPI listeners, connectors, and endpoints, and reference counting for connectors and endpoints
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # NDKPI Listeners, Connectors, and Endpoints

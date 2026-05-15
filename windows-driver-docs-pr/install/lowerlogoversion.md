@@ -4,6 +4,7 @@ description: LowerLogoVersion is a device setup class property that affects the 
 keywords:
 - LowerLogoVersion
 ms.date: 04/12/2022
+ms.topic: concept-article
 ---
 
 # LowerLogoVersion
@@ -27,4 +28,4 @@ A **LowerLogoVersion** value is a NULL-terminated string that specifies the Wind
 
 The system default **LowerLogoVersion** value for a system-defined [device setup class](./overview-of-device-setup-classes.md) is "5.1." This means that drivers that have a WHQL signature for Windows Server 2003 and Windows XP have the same signature score as a driver that is signed by Microsoft for Windows Vista and later versions of Windows.
 
-For more information about driver package ranking, see [How Windows ranks driver packages](how-setup-ranks-drivers--windows-vista-and-later-.md).
+For more information about driver package ranking, see [How Windows ranks driver packages](how-windows-ranks-driver-packages.md).

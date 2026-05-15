@@ -21,7 +21,7 @@ The **.netuse** command adds a connection to a network share.
 .netuse /a "[Local]" "Remote" "[User]" "[Password]" 
 ```
 
-## <span id="ddk_meta_control_network_connections_dbg"></span><span id="DDK_META_CONTROL_NETWORK_CONNECTIONS_DBG"></span>Parameters
+## Parameters
 
 
 <span id="________a______"></span><span id="________A______"></span> **/a**   

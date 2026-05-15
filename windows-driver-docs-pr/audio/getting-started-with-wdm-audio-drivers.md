@@ -8,6 +8,7 @@ keywords:
 - vendor-supplied drivers WDK audio
 - custom audio drivers WDK
 ms.date: 02/17/2022
+ms.topic: concept-article
 ---
 
 # WDM Audio Drivers Overview

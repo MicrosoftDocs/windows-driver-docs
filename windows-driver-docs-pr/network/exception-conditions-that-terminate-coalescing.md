@@ -2,6 +2,7 @@
 title: Exception Conditions that Terminate Coalescing
 description: This section defines the checks that a receive segment coalescing (RSC)-capable miniport driver must perform on a segment before it can be coalesced.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Exception Conditions that Terminate Coalescing

@@ -4,6 +4,7 @@ description: Warning C28723 Unannotated buffer in function definition that has n
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28723"
+ms.topic: reference
 ---
 
 # C28723

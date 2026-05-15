@@ -2,6 +2,7 @@
 title: GPIO Buttons and Indicators Supplemental Testing
 description: This topic describes Windows 8.1 test scenarios for hardware buttons and indicators, to ensure an optimal user experience for various form factors.
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # GPIO buttons and indicators supplemental testing

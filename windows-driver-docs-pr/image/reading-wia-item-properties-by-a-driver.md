@@ -2,6 +2,7 @@
 title: Reading WIA Item Properties by a Driver
 description: Reading WIA Item Properties by a Driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Reading WIA Item Properties by a Driver

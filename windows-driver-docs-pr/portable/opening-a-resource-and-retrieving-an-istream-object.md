@@ -2,6 +2,7 @@
 title: Opening a Resource and Retrieving an IStream Object
 description: Opening a Resource and Retrieving an IStream object
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Opening a Resource and Retrieving an IStream object

@@ -2,6 +2,7 @@
 title: Direct3D Version 10 Kernel Handles
 description: Direct3D Version 10 Kernel Handles
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Direct3D Version 10 Kernel Handles

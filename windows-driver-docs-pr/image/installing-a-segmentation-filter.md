@@ -2,6 +2,7 @@
 title: Installing a Segmentation Filter
 description: Installing a Segmentation Filter
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Installing a Segmentation Filter

@@ -8,6 +8,7 @@ keywords:
 - event notifications WDK networking , filter drivers
 - Plug and Play WDK networking , filter
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Filter Module PnP Event Notifications

@@ -3,6 +3,7 @@ title: Interrupt Affinity
 description: Interrupt affinity
 keywords: ["interrupt service routines WDK kernel , affinity", "ISRs WDK kernel , affinity", "affinity policy WDK interrupts", "IRQ_DEVICE_POLICY", "processor affinity WDK kernel"]
 ms.date: 11/08/2024
+ms.topic: how-to
 ---
 
 # Interrupt affinity

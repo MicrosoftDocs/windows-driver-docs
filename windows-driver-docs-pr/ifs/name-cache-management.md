@@ -11,6 +11,7 @@ keywords:
 - name cache WDK RDBSS
 - NAME_CACHE_CONTROL structure
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Name Cache Management

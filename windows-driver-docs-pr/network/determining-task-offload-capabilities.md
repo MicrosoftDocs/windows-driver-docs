@@ -4,6 +4,7 @@ description: Determining Task Offload Capabilities
 keywords:
 - task offload WDK TCP/IP transport , capabilities
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Determining Task Offload Capabilities

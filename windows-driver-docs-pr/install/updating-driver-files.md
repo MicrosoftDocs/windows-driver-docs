@@ -10,6 +10,7 @@ keywords:
 - installing devices WDK , updating existing drivers
 - existing driver updates WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Updating Driver Files

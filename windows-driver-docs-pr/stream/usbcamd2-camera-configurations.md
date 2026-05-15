@@ -9,6 +9,7 @@ keywords:
 - USB-based streaming cameras WDK USBCAMD2
 - cameras WDK USBCAMD2
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # USBCAMD2 Camera Configurations

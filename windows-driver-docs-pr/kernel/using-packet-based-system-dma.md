@@ -3,6 +3,7 @@ title: Using Packet-Based System DMA
 description: Using Packet-Based System DMA
 keywords: ["system DMA WDK kernel , packet-based", "packet-based DMA WDK kernel", "DMA transfers WDK kernel , packet-based"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Using Packet-Based System DMA

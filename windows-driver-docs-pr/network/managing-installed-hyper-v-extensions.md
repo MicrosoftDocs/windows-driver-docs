@@ -2,6 +2,7 @@
 title: Managing Installed Hyper-V Extensible Switch Extensions
 description: Managing Installed Hyper-V Extensible Switch Extensions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Managing Installed Hyper-V Extensible Switch Extensions

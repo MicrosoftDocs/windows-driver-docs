@@ -3,6 +3,7 @@ title: Multiprocessor-Safe
 description: Multiprocessor-Safe
 keywords: ["multiprocessor safe WDK kernel", "symmetric multiprocessor platforms WDK kernel", "SMP WDK kernel", "spin locks WDK kernel", "synchronization WDK kernel , multiprocessor safe", "symmetric platforms WDK kernel", "locking WDK kernel", "deadlocks WDK kernel", "critical section routines WDK kernel", "shared data protections WDK kernel", "dispatcher objects WDK kernel , multiprocessor safe", "kernel dispatcher objects WDK , multiprocessor safe"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Multiprocessor-Safe

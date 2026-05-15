@@ -2,6 +2,7 @@
 title: PnPUtil Return Values
 description: PnPUtil Return Values
 ms.date: 01/08/2024
+ms.topic: error-reference
 ---
 
 # PnPUtil Return Values

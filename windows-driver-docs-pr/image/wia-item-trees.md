@@ -2,6 +2,7 @@
 title: WIA Item Trees
 description: WIA Item Trees
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Item Trees

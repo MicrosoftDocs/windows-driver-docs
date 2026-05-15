@@ -6,6 +6,7 @@ keywords:
 - network interfaces WDK , services
 - services WDK network interface
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # NDIS Network Interface Services

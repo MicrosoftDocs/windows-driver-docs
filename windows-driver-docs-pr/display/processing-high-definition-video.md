@@ -5,6 +5,7 @@ keywords:
 - high-definition video WDK Windows 7 display
 - high-definition video WDK Windows Server 2008 R2 display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Processing High-Definition Video

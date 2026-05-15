@@ -2,6 +2,7 @@
 title: Camera Profile V2 Architectural Overview
 description: This article provides a Camera Profile V2 architectural overview.
 ms.date: 06/08/2023
+ms.topic: concept-article
 ---
 
 # Architectural overview (Camera Profile V2)

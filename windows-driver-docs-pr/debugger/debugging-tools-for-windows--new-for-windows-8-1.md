@@ -2,6 +2,7 @@
 title: Debugging Tools for Windows New for Windows 8.1
 description: For Windows 8.1, Debugging Tools for Windows includes these new features.
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Debugging Tools for Windows: New for Windows 8.1

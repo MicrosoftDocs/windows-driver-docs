@@ -17,6 +17,7 @@ keywords:
 - input pipes WDK KMDF
 - output pipes WDK KMDF
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Working with USB Pipes

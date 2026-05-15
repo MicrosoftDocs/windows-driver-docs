@@ -5,6 +5,7 @@ keywords:
 - connection offload WDK TCP/IP transport , current settings
 - current connection offload settings WDK TCP/IP offload
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Determining the Current Connection Offload Settings

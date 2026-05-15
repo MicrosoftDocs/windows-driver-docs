@@ -2,6 +2,7 @@
 description: Command-Option Retrieval
 title: Command-Option Retrieval
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Command-Option Retrieval

@@ -4,6 +4,7 @@ description: Varying resource maps let you subdivide a parent resource among chi
 keywords:
 - varying resource maps WDK multifunction devices
 ms.date: 05/08/2023
+ms.topic: concept-article
 ---
 
 # Creating Varying Resource Maps

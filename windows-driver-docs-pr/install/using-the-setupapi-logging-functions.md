@@ -6,6 +6,7 @@ keywords:
 - functions WDK SetupAPI
 - text logs WDK SetupAPI , functions
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using the SetupAPI Logging Functions

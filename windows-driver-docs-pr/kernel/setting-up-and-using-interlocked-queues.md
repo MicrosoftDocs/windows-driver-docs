@@ -3,6 +3,7 @@ title: Setting Up and Using Interlocked Queues
 description: Setting Up and Using Interlocked Queues
 keywords: ["interlocked IRP queues WDK kernel", "doubly linked IRPs WDK kernel", "driver-dedicated threads WDK IRPs"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Setting Up and Using Interlocked Queues

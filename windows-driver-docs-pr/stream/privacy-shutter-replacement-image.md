@@ -2,6 +2,7 @@
 title: Privacy shutter replacement image
 description: Enable image replacement for a camera that supports shutter state reporting and provide a custom replacement image.
 ms.date: 04/25/2024
+ms.topic: how-to
 ---
 
 # Privacy shutter replacement image
@@ -17,6 +18,8 @@ Starting in Windows 11, version 21H2, the Windows Hardware Compatibility Program
 This feature is only implemented by cameras that have privacy shutters/kill switches. Implementation details for privacy shutters are described in the [Privacy shutter/switch notification](privacy-shutter-notification.md) article.
 
 Devices that want to support a custom image for image replacement must also provide a signed binary, part of their driver package that contains their replacement image.
+
+Because image replacement overwrites the existing output buffer, the device outputs uncompressed frames. For compressed frames like MJPEG and JPEG, no image replacement occurs, and the original image from the driver is delivered instead.
 
 ## Implementation overview
 

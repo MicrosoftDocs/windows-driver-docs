@@ -2,6 +2,7 @@
 title: WDI TLV versioning
 description: To maintain backwards compatibility, both WDI and the miniport use the TLV stream as a versioning boundary.
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # WDI TLV versioning

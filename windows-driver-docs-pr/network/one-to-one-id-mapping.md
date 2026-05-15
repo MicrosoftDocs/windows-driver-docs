@@ -7,6 +7,7 @@ keywords:
 - one-to-one ID mapping WDK networking
 - preupgrade IDs WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # One-to-One ID Mapping

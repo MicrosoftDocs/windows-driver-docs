@@ -5,6 +5,7 @@ keywords:
 - AVStream WDK , AV/C
 - AV/C WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # AV/C Client Drivers

@@ -38,6 +38,7 @@ api_name:
 - IWDTFDriverSetupSystemAction2.SnapTriageLogs
 targetos: Windows
 req.typenames: 
+ms.topic: reference
 ---
 
 # IWDTFDriverSetupSystemAction2::SnapTriageLogs

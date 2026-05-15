@@ -2,6 +2,7 @@
 title: Add Attachments to Images
 description: Add Attachments to Images
 ms.date: 03/27/2023
+ms.topic: concept-article
 ---
 
 # Add Attachments to Images

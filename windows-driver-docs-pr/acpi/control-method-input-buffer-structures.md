@@ -2,6 +2,7 @@
 title: Control Method Input Buffer Structures
 description: Provides information about control method input buffer structures
 ms.date: 03/17/2023
+ms.topic: reference
 ---
 
 # Control Method Input Buffer Structures

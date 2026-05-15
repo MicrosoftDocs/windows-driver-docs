@@ -2,6 +2,7 @@
 title: Extended Support for DirectX VA 2.0
 description: Extended Support for DirectX VA 2.0
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Extended Support for DirectX VA 2.0

@@ -3,6 +3,7 @@ title: "!dcs (WinDbg)"
 description: "!dcs extension is obsolete."
 keywords: ["!dcs extension (obsolete)"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # !dcs

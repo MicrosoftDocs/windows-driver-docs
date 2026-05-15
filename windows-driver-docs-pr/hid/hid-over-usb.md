@@ -9,6 +9,7 @@ keywords:
 - USB 3.0
 - USB, HID
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # HID over USB overview

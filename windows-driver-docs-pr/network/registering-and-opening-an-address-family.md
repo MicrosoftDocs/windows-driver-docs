@@ -7,6 +7,7 @@ keywords:
 - registering address families
 - opening address families
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Registering and Opening an Address Family

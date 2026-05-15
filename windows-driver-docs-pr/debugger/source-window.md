@@ -3,6 +3,7 @@ title: Source Code Debugging in WinDbg (Classic)
 description: Source Code Debugging in WinDbg (Classic)
 keywords: ["debugging information windows, Source windows", "Source windows", "source debugging, Source windows"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Source Code Debugging in WinDbg (Classic)

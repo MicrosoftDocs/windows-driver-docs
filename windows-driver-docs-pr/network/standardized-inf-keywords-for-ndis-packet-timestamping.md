@@ -2,6 +2,7 @@
 title: Standardized INF keywords for NDIS packet timestamping
 description: Standardized INF keywords for NDIS packet timestamping
 ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # Standardized INF keywords for NDIS packet timestamping

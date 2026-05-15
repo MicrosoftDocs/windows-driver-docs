@@ -7,6 +7,7 @@ keywords:
 - user-mode display drivers WDK Windows Vista , synchronization
 - user-mode display drivers WDK Windows Vista , threading
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Threading Model of User-Mode Display Driver

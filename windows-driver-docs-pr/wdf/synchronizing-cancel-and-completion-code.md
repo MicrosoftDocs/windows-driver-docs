@@ -9,6 +9,7 @@ keywords:
 - request processing WDK KMDF , synchronization
 - I/O requests WDK KMDF , synchronization
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Synchronizing Cancel and Completion Code

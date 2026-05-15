@@ -3,6 +3,7 @@ title: Creating IOCTL Requests in Drivers
 description: Creating IOCTL Requests in Drivers
 keywords: ["I/O control codes WDK kernel , creating requests", "control codes WDK IOCTLs , creating requests", "IOCTLs WDK kernel , creating requests", "synchronization WDK IRPs", "embedded pointers WDK IOCTLs"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Creating IOCTL Requests in Drivers

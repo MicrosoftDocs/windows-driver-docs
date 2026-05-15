@@ -3,6 +3,7 @@ title: Power IRPs for Individual Devices
 description: Power IRPs for Individual Devices
 keywords: ["power IRPs WDK kernel , devices", "device power IRPs WDK kernel", "power sequence values WDK kernel", "working state returns WDK power management", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Power IRPs for Individual Devices

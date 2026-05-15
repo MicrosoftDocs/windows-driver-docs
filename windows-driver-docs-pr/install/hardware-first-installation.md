@@ -8,6 +8,7 @@ keywords:
 - distribution medium WDK device installations , hardware-first installations
 - device installations WDK , types
 ms.date: 04/20/2017
+ms.topic: install-set-up-deploy
 ---
 
 # Hardware-First Installation

@@ -2,6 +2,7 @@
 title: Unidrv/PScript5 XPSDrv UI behavior changes
 description: Unidrv/PScript5 XPSDrv UI behavior changes
 ms.date: 06/12/2024
+ms.topic: release-notes
 ---
 
 # Unidrv/PScript5 XPSDrv UI behavior changes

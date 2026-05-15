@@ -4,6 +4,7 @@ description: Generating OID Requests from an NDIS Filter Driver
 keywords:
 - OIDs WDK networking , filter drivers
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Generating OID Requests from an NDIS Filter Driver

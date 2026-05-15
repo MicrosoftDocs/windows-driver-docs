@@ -4,6 +4,7 @@ description: Reprocessing a Library
 keywords:
 - library WDK Static Driver Verifier , reprocessing
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Reprocessing a Library

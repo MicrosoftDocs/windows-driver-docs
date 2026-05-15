@@ -6,6 +6,7 @@ keywords:
 - WDTF WDK , tracing events
 - tracing WDK WDTF
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Enabling and Viewing WDTF Traces
@@ -67,11 +68,11 @@ Viewing WDTF traces requires formatting the ETL files. The following steps show 
 
 All WDTF objects provide tracing information as they run.
 
-WDTF provides a set of configurable [**TTraceLevel**](/windows-hardware/drivers/ddi/index) levels. For information on how to set the **TTraceLevel** of a specific object instance at run-time, see the [**ITracing::SetTraceLevel**](/windows-hardware/drivers/ddi/index) method.
+WDTF provides a set of configurable [**TTraceLevel**](/windows-hardware/drivers/ddi/wdtf/ne-wdtf-__midl___midl_itf_wdtf_0000_0001_0001) levels. For information on how to set the **TTraceLevel** of a specific object instance at run-time, see the [**ITracing::SetTraceLevel**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-itracing-settracelevel) method.
 
-For information on how to set the default [**TTraceLevel**](/windows-hardware/drivers/ddi/index) for an interface, see the [Windows Device Testing Framework Reference](/windows-hardware/drivers/ddi/index).
+For information on how to set the default **TTraceLevel** for an interface, see the [Windows Device Testing Framework Reference](/windows-hardware/drivers/ddi/_dtf/index).
 
-For a detailed description of the types of traces included in each [**TTraceLevel**](/windows-hardware/drivers/ddi/index), see the [**ITracer**](/windows-hardware/drivers/ddi/index) interface. You can globally configure these levels yourself using the **ITracer**'s registry TraceLevel Path.
+For a detailed description of the types of traces included in each **TTraceLevel**, see the [**ITracer**](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-itracer) interface. You can globally configure these levels yourself using the **ITracer**'s registry TraceLevel Path.
 
 The following table describes the trace levels that you can set.
 
@@ -87,7 +88,7 @@ The following table describes the trace levels that you can set.
 
 When you are debugging by using trace content, consider setting the trace levels to 1 for all objects and then setting trace levels much higher for the objects that you are examining.
 
-For more information about trace levels, see the [**ITracer**](/windows-hardware/drivers/ddi/index) interface.
+For more information about trace levels, see the [**ITracer**](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-itracer) interface.
 
 ## Related topics
 

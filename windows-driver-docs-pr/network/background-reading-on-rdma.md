@@ -2,6 +2,7 @@
 title: Background Reading on RDMA
 description: RDMA is a networking technology that provides high-throughput, low-latency communication that minimizes CPU usage.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Background Reading on RDMA

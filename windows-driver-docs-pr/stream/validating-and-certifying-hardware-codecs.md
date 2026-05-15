@@ -6,6 +6,7 @@ keywords:
 - hardware codecs WDK AVStream , certifying
 - hardware codec support WDK AVStream , validating and certifying
 ms.date: 06/19/2020
+ms.topic: concept-article
 ---
 
 # Validating and certifying hardware codecs

@@ -2,6 +2,7 @@
 title: Enhanced Driver Configuration
 description: GPD and PPD files can be used to provide enhanced driver configuration information for a v4 print driver.
 ms.date: 01/26/2023
+ms.topic: concept-article
 ---
 
 # Enhanced Driver Configuration

@@ -4,6 +4,7 @@ description: DataType Template Directive
 keywords:
 - DataType directive WDK GDL
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # DataType Template Directive

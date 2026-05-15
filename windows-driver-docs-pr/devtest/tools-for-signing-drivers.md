@@ -2,6 +2,7 @@
 title: Tools for Signing Drivers
 description: Tools for Signing Drivers
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Tools for Signing Drivers

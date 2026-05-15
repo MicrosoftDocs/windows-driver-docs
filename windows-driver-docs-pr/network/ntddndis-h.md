@@ -5,6 +5,7 @@ keywords:
 - Ntddndis.h network drivers
 ms.date: 08/08/2017
 ms.custom: 19H1
+ms.topic: reference
 ---
 
 # Ntddndis.h

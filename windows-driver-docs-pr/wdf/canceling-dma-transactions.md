@@ -2,6 +2,7 @@
 title: Canceling DMA Transactions
 description: Canceling DMA Transactions
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Canceling DMA Transactions

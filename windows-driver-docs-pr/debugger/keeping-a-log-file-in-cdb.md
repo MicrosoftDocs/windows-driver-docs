@@ -2,6 +2,7 @@
 title: Keeping a Log File in CDB
 description: Keeping a Log File in CDB
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Keeping a Log File in CDB

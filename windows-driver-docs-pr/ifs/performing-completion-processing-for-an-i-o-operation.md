@@ -5,6 +5,7 @@ keywords:
 - postoperation callback routines WDK file system minifilter , completion processing
 - completing I/O requests WDK file system
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Performing Completion Processing for an I/O Operation

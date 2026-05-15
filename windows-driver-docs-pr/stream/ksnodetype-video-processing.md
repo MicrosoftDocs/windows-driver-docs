@@ -2,6 +2,7 @@
 title: KSNODETYPE_VIDEO_PROCESSING
 description: KSNODETYPE\_VIDEO\_PROCESSING
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSNODETYPE\_VIDEO\_PROCESSING

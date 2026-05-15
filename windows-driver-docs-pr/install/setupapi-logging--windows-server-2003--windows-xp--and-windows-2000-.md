@@ -8,6 +8,7 @@ keywords:
 - SetupAPI logging WDK Windows 2000
 - SetupAPI logging WDK Windows XP
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # SetupAPI Logging (Windows Server 2003, Windows XP, and Windows 2000)

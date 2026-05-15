@@ -2,6 +2,7 @@
 title: Hardware Security Test Interface (HSTI) 1.1A
 description: Provides information about Hardware Security Test Interface (HSTI) 1.1a.
 ms.date: 03/23/2023
+ms.topic: concept-article
 ---
 
 # Hardware Security Test Interface (HSTI) 1.1a

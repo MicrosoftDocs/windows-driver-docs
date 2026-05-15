@@ -3,6 +3,7 @@ title: Points to Consider About User I/O Requests
 description: Points to Consider about User I/O Requests
 keywords: ["device-specific I/O control codes WDK kernel", "private I/O control codes WDK kernel", "layered driver IRP processing WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Points to Consider about User I/O Requests

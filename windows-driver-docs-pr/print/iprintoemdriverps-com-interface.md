@@ -4,6 +4,7 @@ description: IPrintOemDriverPS COM Interface
 keywords:
 - IPrintOemDriverPS
 ms.date: 07/14/2023
+ms.topic: reference
 ---
 
 # IPrintOemDriverPS COM Interface

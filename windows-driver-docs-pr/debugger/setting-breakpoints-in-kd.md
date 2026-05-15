@@ -2,6 +2,7 @@
 title: Setting Breakpoints in KD
 description: Setting Breakpoints in KD
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Setting Breakpoints in KD

@@ -4,6 +4,7 @@ description: CM_PROB_NO_SOFTCONFIG
 keywords:
 - CM_PROB_NO_SOFTCONFIG
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 34 - CM_PROB_NO_SOFTCONFIG

@@ -2,6 +2,7 @@
 title: Using Virtual Switch Filtering
 description: Using Virtual Switch Filtering
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using Virtual Switch Filtering

@@ -2,6 +2,7 @@
 title: Generating OID Requests from an NDIS Protocol Driver
 description: Generating OID Requests from an NDIS Protocol Driver
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Generating OID Requests from an NDIS Protocol Driver

@@ -2,6 +2,7 @@
 title: MS_SM_ScsiInformationMethods WMI Class
 description: MS\_SM\_ScsiInformationMethods WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MS\_SM\_ScsiInformationMethods WMI Class

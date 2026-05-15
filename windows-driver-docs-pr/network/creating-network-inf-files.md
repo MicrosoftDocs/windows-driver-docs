@@ -9,6 +9,7 @@ keywords:
 - INF files WDK network
 - network INF files WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating Network INF Files

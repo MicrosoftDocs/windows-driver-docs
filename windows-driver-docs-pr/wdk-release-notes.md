@@ -1,12 +1,108 @@
 ---
 title: Windows Drivers Kit (WDK) release notes
 description: Highlights the latest features in new WDK releases.
-ms.date: 11/05/2024
+ms.date: 05/06/2026
+ms.topic: release-notes
 ---
 
 # Windows Driver Kit (WDK) release notes
 
-The following features and bug fixes are in Windows 11 24H2 WDK update.
+The following features and bug fixes are in the Windows 11 WDK update.
+
+## Version 10.0.28000.1839 (26H1)
+
+*Released May 6, 2026*
+
+### WifiCx
+This Wdk changes enables Ihvs to build drivers for the WiFiCx driver model, that will enable the device to connect to networks advertising Wpa3 compatibility mode security.
+
+The WiFiCx driver tlv parser version is bumped up to 2.0.14, and capabilities are added to enable both the OS and the driver to use Wpa3 compatibility mode security when connecting to such networks.
+
+### d3dkmddi.h
+
+Added kernel header definitions for the GPU Process Debug Blob Collection feature.
+
+### dot11wificxintf.h
+
+Removed legacy WDI datapath definitions from WiFiCx header.
+
+### ntddsd.h
+
+The SDBUS/SDSTOR driver stack now supports SD Ultra Capacity (SDUC) cards for systems that use the SDBUS driver with native SD host controllers. The WDK includes the related SD bus interface updates in ntddsd.h to enable SDUC operations for cards over 2 TB and up to 128 TB.
+
+## Version 10.0.28000.1 (26H1)
+
+*Released November 21, 2025*
+
+### Usage Guidance
+
+26H1 includes platform changes to support specific silicon. Use only if you need these changes. For details see [Announcing Windows 11 Insider Preview Build 28000](https://blogs.windows.com/windows-insider/2025/11/07/announcing-windows-11-insider-preview-build-28000-canary-channel/).
+
+## Version 10.0.26100.6584 
+
+*Released September 23, 2025*
+
+### SoundWire Device Class for Audio (SDCA)
+
+The SDCA driver stack now supports the SDCA Companion Amp Function and Multichannel Capture scenarios. All SDCA drivers are included Inbox.
+Enable connectivity to Wi-Fi 7 enterprise networks.
+
+### Networking
+
+The WDK adds changes to the WiFiCx public header and library to enable IHV drivers to connect to Wi-Fi 7 enterprise networks. The WiFiCx driver TLV parser version is bumped up to 2.0.13 and capabilities are added to enable both Windows and the driver to be aware of Wi-Fi 7 enterprise connectivity support from the other.
+
+### icekeymaninterface.h
+
+- Adds new flag to capabilities structure for implementation to attest FIPS module compliance.
+- Introduces new interface API for validating a wrapped key can be unwrapped by the system.
+
+### Packet Monitor Clnt NPIs
+
+Pktmon Clnt NPIs are available for kernel-mode drivers to push network packet notifications into the PktMon platform. You can use these NPIs to diagnose performance and network connectivity issues. The NPIs allow run-time registration with the PktMon platform so that drivers can safely run on systems without Pktmon support.
+
+### usermode_accessors.h
+
+Contains dedicated functions for the kernel to use when reading from and writing to the user-mode virtual address space. For more information, see [usermode_accessor.h](./kernel/user-mode-accessors.md).
+
+## Version 10.0.26100.4202
+
+*Released June 16, 2025*
+
+### Windows Driver Kit End User License Agreement (EULA)
+
+The Windows Driver Kit EULA is updated. This update includes a routine review, and some fixed broken links.
+
+### Bluetooth Stereo Render Feature
+
+Audio Configuration 8 is now available, enabling stereo render with concurrent mono capture. This enhancement supports Spatial Audio in Microsoft Teams and delivers an improved wireless gaming audio experience.
+
+### Enclave Access Restriction Update
+
+The [IMAGE_ENCLAVE_CONFIG32](/windows/win32/api/winnt/ns-winnt-image_enclave_config32) flag now enforces a policy that restricts enclave access to the containing process's address space. Enclaves must use [EnclaveCopyIntoEnclave](/windows/win32/api/winenclaveapi/nf-winenclaveapi-enclavecopyintoenclave) and [EnclaveCopyOutOfEnclave](/windows/win32/api/winenclaveapi/nf-winenclaveapi-enclavecopyoutofenclave) APIs for memory access. Additionally, the [EnclaveRestrictContainingProcessAccess](/windows/win32/api/winenclaveapi/nf-winenclaveapi-enclaverestrictcontainingprocessaccess) API can be used to modify this restriction at runtime.
+
+## Version 10.0.26100.3323
+
+*Released March 14, 2025*.
+
+### SoundWire Device Class for Audio (SDCA)
+
+The SdcaClass driver now sends notifications to the attached SDCA XU driver for changes in the hardware Function Status control along with system posture changes.
+
+### Bluetooth LE Audio Bidirectional Multichannel Streaming
+
+A new set of data structures are added to support bidirectional multichannel streaming. For example, stereo render with mono capture for Bluetooth LE Audio. There are now flags to specify the audio codec location for bidirectional multichannel streaming support.
+
+## Version 10.0.26100.2454
+
+*Released November 27, 2024*.
+
+### Packet Monitor APIs
+
+Pktmon APIs are available for kernel-mode drivers to send and receive network package notifications. You can use these APIs to diagnose performance and network connectivity issues.
+
+### Bug Fixes
+
+WDK installer unexpectedly launches the bundled VSIX installation at the end of installation if an earlier WDK was already present on the computer. The WDK VSIX is no longer part of the WDK MSI, so the installer no longer exhibits this behavior.
 
 ## Version 10.0.26100.2161
 

@@ -5,6 +5,7 @@ keywords:
 - templates WDK GDL , associating templates with keywords
 - keywords WDK GDL , associating templates with keywords
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Criteria for Associating GDL Templates with Keywords

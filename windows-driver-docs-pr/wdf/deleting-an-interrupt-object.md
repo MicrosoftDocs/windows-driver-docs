@@ -2,6 +2,7 @@
 title: Deleting an Interrupt Object
 description: Deleting an Interrupt Object
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Deleting an Interrupt Object

@@ -3,6 +3,7 @@ title: Introduction to SynchCritSection Routines
 description: Introduction to SynchCritSection Routines
 keywords: ["SynchCritSection", "critical section routines WDK kernel"]
 ms.date: 07/22/2021
+ms.topic: concept-article
 ---
 
 # Introduction to SynchCritSection Routines

@@ -8,6 +8,7 @@ keywords:
 - near field proximity
 - NFP
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # NFC architecture
@@ -23,4 +24,4 @@ The high-level architecture diagram of the NFC stack on Windows is shown further
 
 ## Related topics
 
-- [NFC device driver interface (DDI) reference](/windows-hardware/drivers/ddi/index)
+- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)

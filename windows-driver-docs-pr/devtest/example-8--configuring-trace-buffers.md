@@ -5,6 +5,7 @@ keywords:
 - trace buffers WDK
 - buffers WDK software tracing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 8: Configuring Trace Buffers

@@ -3,6 +3,7 @@ title: Displaying a Critical Section
 description: Displaying a Critical Section
 keywords: ["critical section", "critical section, overview"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Displaying a Critical Section

@@ -6,6 +6,7 @@ keywords:
 - prefix WDK Tracefmt
 - trace message prefix WDK Tracefmt
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Trace Message Prefix

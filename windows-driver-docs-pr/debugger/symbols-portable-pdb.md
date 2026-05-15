@@ -3,6 +3,7 @@ title: Portable PDB Symbols
 description: The Portable PDB (Program Database) format describes an encoding of debugging information produced by compilers of Common Language Infrastructure languages and consumed by debuggers.
 keywords: ["symbols, overview"]
 ms.date: 09/22/2023
+ms.topic: overview
 ---
 
 # Portable PDB Symbols

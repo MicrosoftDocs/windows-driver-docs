@@ -7,6 +7,7 @@ keywords:
 - customized print Web pages WDK , updating information
 - updating print Web page information
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Updating Web Page Information

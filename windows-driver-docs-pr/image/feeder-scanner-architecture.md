@@ -2,6 +2,7 @@
 title: Feeder Scanner Architecture
 description: Feeder Scanner Architecture
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Feeder Scanner Architecture

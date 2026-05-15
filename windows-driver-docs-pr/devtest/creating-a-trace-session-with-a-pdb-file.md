@@ -6,6 +6,7 @@ keywords:
 - PDB symbol files WDK
 - symbol files WDK software tracing
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating a Trace Session with a PDB File

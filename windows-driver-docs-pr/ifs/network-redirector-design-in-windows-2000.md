@@ -9,6 +9,7 @@ keywords:
 - buffering code WDK network redirectors
 - kernel network redirectors WDK , Windows 2000
 ms.date: 09/05/2024
+ms.topic: design-pattern
 ---
 
 # Network redirector design
@@ -17,7 +18,7 @@ This article describes the driver model for network redirectors that was introdu
 
 A significant challenge in the design of network redirectors is the relatively complex translation that is performed from user-initiated operations to low-level network operations, both with respect to operation selection and timing. Dealing with the Windows I/O System, Cache Manager, and Memory Manager is a relatively complex undertaking. This statement is especially true when considering the variety of buffering modes that might be appropriate for a remote communication mechanism, such as a computer network where the speed and reliability can vary considerably. The implementation of these buffering operations in a network redirector represents a significant investment in function that would ideally be shared and reused by drivers.
 
-Windows 2000 introduced a driver model for network redirectors based on a layered or miniport driver approach. This model is refered to as the mini-redirector architecture (*rdr2*). Rather than having to re-implement the complex code used for buffering and interaction with the I/O Manager and Cache Manager in each driver, this large block of code was pulled out and made available to all potential network redirectors. The shared common buffering code is called the Redirected Drive Buffering SubSystem (RDBSS).
+Windows 2000 introduced a driver model for network redirectors based on a layered or miniport driver approach. This model is referred to as the mini-redirector architecture (*rdr2*). Rather than having to re-implement the complex code used for buffering and interaction with the I/O Manager and Cache Manager in each driver, this large block of code was pulled out and made available to all potential network redirectors. The shared common buffering code is called the Redirected Drive Buffering SubSystem (RDBSS).
 
 A model of this architecture with multiple redirectors is shown below.
 

@@ -9,6 +9,7 @@ keywords:
 - registering interrupts
 - deregistering interrupts
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Registering and Deregistering Interrupts

@@ -2,6 +2,7 @@
 title: Revise Forward Request Logic
 description: Revise Forward Request Logic
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Revise Forward Request Logic

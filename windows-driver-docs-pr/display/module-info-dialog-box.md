@@ -2,6 +2,7 @@
 title: Module Info Dialog Box
 description: "The Module Info dialog box displays all the kernel mode modules loaded on the system from which the event log trace was gathered."
 ms.date: 05/10/2022
+ms.topic: overview
 ---
 
 # Module Info Dialog Box  

@@ -2,6 +2,7 @@
 title: IRP-Based I/O Operations That Have No Buffers
 description: IRP-Based I/O Operations That Have No Buffers
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # IRP-Based I/O Operations That Have No Buffers

@@ -2,6 +2,7 @@
 title: IStream Transfer Driver Example
 description: IStream Transfer Driver Example
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # IStream Transfer Driver Example

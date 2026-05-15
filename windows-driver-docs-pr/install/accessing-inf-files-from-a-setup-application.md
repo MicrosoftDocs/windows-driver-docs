@@ -4,6 +4,7 @@ description: Accessing INF Files from a Device Installation Application
 keywords:
 - INF files WDK device installations , device installation application operations
 ms.date: 02/02/2022
+ms.topic: concept-article
 ---
 
 # Accessing INF Files from a Device Installation Application

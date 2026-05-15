@@ -17,6 +17,7 @@ keywords:
 - rotation support flags WDK video present networks
 - enumeration pivot WDK video present networks
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Enumerating Cofunctional VidPN Source and Target Modes

@@ -6,6 +6,7 @@ keywords:
 - adapter drivers WDK audio , power management
 - audio adapter drivers WDK , power management
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Implementing IAdapterPowerManagement

@@ -7,11 +7,12 @@ keywords:
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28118"
+ms.topic: reference
 ---
 
 # C28118
 
-warning: C28118: The current function is permitted to run at an IRQ level above the maximum permitted for %func% (%level%). Prior function calls or annotation are inconsistent with use of that function.
+warning C28118: The current function is permitted to run at an IRQ level above the maximum permitted for %func% (%level%). Prior function calls or annotation are inconsistent with use of that function.
 
 <table>
 <colgroup>

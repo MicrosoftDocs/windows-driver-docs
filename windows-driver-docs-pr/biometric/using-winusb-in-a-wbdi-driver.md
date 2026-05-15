@@ -4,6 +4,7 @@ description: Using WinUSB in a WBDI Driver
 keywords:
 - biometric drivers WDK , WinUSB
 ms.date: 03/03/2023
+ms.topic: how-to
 ---
 
 # Using WinUSB in a WBDI Driver

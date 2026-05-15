@@ -2,6 +2,7 @@
 title: DSM_VERSION WMI Class
 description: DSM\_VERSION WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # DSM\_VERSION WMI Class

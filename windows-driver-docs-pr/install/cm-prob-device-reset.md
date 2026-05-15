@@ -2,6 +2,7 @@
 title: CM_PROB_DEVICE_RESET
 description: CM_PROB_DEVICE_RESET
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 54 - CM_PROB_DEVICE_RESET

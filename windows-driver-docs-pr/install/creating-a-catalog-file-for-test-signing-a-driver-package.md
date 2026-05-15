@@ -5,6 +5,7 @@ keywords:
 - test signing driver packages WDK , catalog files
 - catalog files WDK driver signing , creating
 ms.date: 02/11/2022
+ms.topic: concept-article
 ---
 
 # Creating a Catalog File for Test-Signing a Driver Package

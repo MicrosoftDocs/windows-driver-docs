@@ -2,6 +2,7 @@
 title: Initialize the Battery Class Device
 ms.date: 10/04/2023
 description: Discover how to initialize the battery class device and register the miniclass driver with the class driver to enable their support routines and make the battery device visible to the composite battery and power meter.
+ms.topic: how-to
 ---
 
 # Initialize the battery class device

@@ -6,6 +6,7 @@ keywords:
 - request objects WDK KMDF , reusing
 - reusing request objects WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Reusing Framework Request Objects

@@ -10,6 +10,7 @@ keywords:
 - synthesizers WDK audio , kernel-mode hardware acceleration
 - synthesizers WDK audio , voice allocations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Voice Allocation

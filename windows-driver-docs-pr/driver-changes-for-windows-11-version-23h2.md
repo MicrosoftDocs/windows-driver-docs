@@ -2,6 +2,7 @@
 title: What's New in Driver Development for Windows 11, Version 23H2
 description: This section describes new features for driver development in Windows 11, version 23H2.
 ms.date: 06/26/2024
+ms.topic: whats-new
 ---
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 23H2
@@ -107,6 +108,5 @@ For information on what was new for drivers in past Windows releases, see the fo
 - [Driver development changes for Windows 11, version 22H2](driver-changes-for-windows-11-version-22h2.md)
 - [Driver development changes for Windows 11, version 21H2](driver-changes-for-windows-11-version-21h2.md)
 - [Driver development changes for Windows Server 2022](driver-changes-for-windows-server-2022.md)
-- [Driver development changes for Windows 10, version 2004](driver-changes-for-windows-10-version-2004.md)
 
 [Back to Top](#top)

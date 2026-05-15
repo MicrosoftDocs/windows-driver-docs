@@ -5,6 +5,7 @@ keywords:
 - task offload WDK TCP/IP transport , enabling services
 - task offload WDK TCP/IP transport , disabling services
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Enabling and Disabling Task Offload Services

@@ -2,6 +2,7 @@
 title: Using HTTP Sites and UNC Shares in Conjunction with Regular Version Control
 description: Using HTTP Sites and UNC Shares in Conjunction with Regular Version Control
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Using HTTP Sites and UNC Shares in Conjunction with Regular Version Control

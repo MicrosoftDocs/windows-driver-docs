@@ -13,6 +13,7 @@ keywords:
 - reference tracking WDK RDBSS
 - assert routine WDK RDBSS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Diagnostics and Debugging

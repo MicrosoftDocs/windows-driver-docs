@@ -5,6 +5,7 @@ keywords:
 - general I/O targets WDK UMDF , information about
 - status information WDK I/O targets
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Obtaining Information About a General I/O Target in UMDF

@@ -9,6 +9,7 @@ keywords:
 - index operations WDK network interface
 - locally unique identifier WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Allocating an Interface Index

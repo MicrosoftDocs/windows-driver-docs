@@ -7,6 +7,7 @@ keywords:
 - interfaces WDK device
 - device interface classes WDK device installations
 ms.date: 04/11/2022
+ms.topic: concept-article
 ---
 
 # Overview of device interface classes

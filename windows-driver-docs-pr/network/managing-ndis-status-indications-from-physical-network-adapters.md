@@ -2,6 +2,7 @@
 title: Managing NDIS Status Indications from Physical Network Adapters
 description: Managing NDIS Status Indications from Physical Network Adapters
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Managing NDIS Status Indications from Physical Network Adapters

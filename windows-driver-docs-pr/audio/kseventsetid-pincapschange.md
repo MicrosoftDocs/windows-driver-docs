@@ -2,6 +2,7 @@
 title: KSEVENTSETID\_PinCapsChange
 description: KSEVENTSETID\_PinCapsChange
 ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 

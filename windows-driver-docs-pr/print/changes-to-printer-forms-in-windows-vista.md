@@ -10,6 +10,7 @@ keywords:
 - custom forms WDK printer
 - FORM_INFO_2 data structure WDK printer
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Changes to Printer Forms in Windows Vista

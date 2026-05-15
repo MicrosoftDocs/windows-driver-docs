@@ -10,6 +10,7 @@ keywords:
 - surprise device removal WDK KMDF
 - unexpected device removal WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using Self-Managed I/O

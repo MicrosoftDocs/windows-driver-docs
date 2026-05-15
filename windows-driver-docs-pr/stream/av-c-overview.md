@@ -7,7 +7,8 @@ keywords:
 - peer Avc.sys mode WDK AV/C
 - virtual Avc.sys mode WDK AV/C
 - Avc.sys function driver WDK , about Avc.sys function driver
-ms.date: 03/05/2021
+ms.date: 04/25/2025
+ms.topic: concept-article
 ---
 
 # AV/C overview
@@ -34,4 +35,4 @@ Typically, vendors write an AV/C subunit driver to provide support to:
 
 - Control the subunit based on a device type defined by the 1394 Trade Association specifications.
 
-- Manage plug connections to stream data based on IEC-61883 standards across the IEEE 1394 bus. For more information about the 61883 standards, see the [IEC](https://www.iec.ch/) website.
+- Manage plug connections to stream data based on IEC-61883 standards across the IEEE 1394 bus. For more information about the 61883 standards, see the [International Electrotechnical Commission (IEC)](https://webstore.iec.ch/?linkid=8732) website.

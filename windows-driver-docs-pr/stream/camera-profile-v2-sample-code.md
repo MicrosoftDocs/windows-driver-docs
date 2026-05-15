@@ -2,6 +2,7 @@
 title: Camera Profile V2 Sample Code
 description: This topic provides sample code for the Camera Profile V2 developer specification.
 ms.date: 06/08/2023
+ms.topic: reference
 ---
 
 # Sample code (Camera Profile V2)

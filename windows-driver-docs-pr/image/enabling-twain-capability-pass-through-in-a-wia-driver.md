@@ -2,6 +2,7 @@
 title: Enabling TWAIN Capability Pass-Through in a WIA Driver
 description: Enabling TWAIN Capability Pass-Through in a WIA Driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Enabling TWAIN Capability Pass-Through in a WIA Driver

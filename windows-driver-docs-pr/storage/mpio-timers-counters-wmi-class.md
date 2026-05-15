@@ -2,6 +2,7 @@
 title: MPIO_TIMERS_COUNTERS WMI Class
 description: MPIO\_TIMERS\_COUNTERS WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MPIO\_TIMERS\_COUNTERS WMI Class

@@ -38,6 +38,7 @@ api_name:
 - IWDTFDriverSetupSystemAction2.ImportDriverPackage
 targetos: Windows
 req.typenames: 
+ms.topic: reference
 ---
 
 # IWDTFDriverSetupSystemAction2::ImportDriverPackage

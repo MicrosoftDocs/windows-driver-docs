@@ -3,6 +3,7 @@ title: Splitting DMA Transfer Requests
 description: Splitting DMA Transfer Requests
 keywords: ["I/O WDK kernel , splitting transfer requests", "splitting transfer requests", "transfer request splitting WDK kernel", "data transfers WDK kernel , splitting requests", "transferring data WDK kernel , splitting requests"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Splitting DMA Transfer Requests

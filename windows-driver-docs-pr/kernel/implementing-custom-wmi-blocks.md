@@ -3,6 +3,7 @@ title: Implementing Custom WMI Blocks
 description: Implementing Custom WMI Blocks
 keywords: ["WMI WDK kernel , event blocks", "event blocks WDK WMI", "data blocks WDK WMI", "WMI WDK kernel , data blocks", "blocks WDK WMI", "custom blocks WDK WMI"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Implementing Custom WMI Blocks

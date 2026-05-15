@@ -1,8 +1,8 @@
 ---
 title: Percent of machines that successfully installed firmware and have seen no heartbeat within 7 days
 description: The measure aggregates telemetry from a 28-day sliding window into a ratio of machines that have not reported any telemetry in 7 days over machines that successfully installed the firmware
-ms.topic: article
 ms.date: 10/31/2019
+ms.topic: concept-article
 ---
  
 # Percent of machines that successfully installed firmware and have seen no heartbeat within 7 days

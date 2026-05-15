@@ -3,6 +3,7 @@ title: Anatomy of a DbgEng Extension DLL
 description: Anatomy of a DbgEng Extension DLL
 keywords: ["DbgEng Extensions, DLL anatomy"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Anatomy of a DbgEng Extension DLL

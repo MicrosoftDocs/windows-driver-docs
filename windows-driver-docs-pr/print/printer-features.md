@@ -8,6 +8,7 @@ keywords:
 - printer features WDK Unidrv , about printer features
 - Unidrv WDK print
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Printer Features

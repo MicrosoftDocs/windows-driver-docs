@@ -2,6 +2,7 @@
 title: Querying NDIS QoS Parameters
 description: Querying NDIS QoS Parameters
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Querying NDIS QoS Parameters

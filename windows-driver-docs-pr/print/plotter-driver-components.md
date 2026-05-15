@@ -5,6 +5,7 @@ keywords:
 - Plotter Driver WDK print , components
 - MSPlot WDK print , components
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Plotter Driver Components

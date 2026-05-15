@@ -3,13 +3,10 @@ title: Controlling a Remote Debugging Session
 description: Controlling a Remote Debugging Session
 keywords: ["remote debugging through the debugger, controlling a session"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Controlling a Remote Debugging Session
-
-
-## <span id="ddk_controlling_a_remote_debugging_session_dbg"></span><span id="DDK_CONTROLLING_A_REMOTE_DEBUGGING_SESSION_DBG"></span>
-
 
 Once the remote session has been started, commands can be entered into either the debugging server or the debugging client. If there are multiple clients, any of them can enter commands. Once ENTER is pressed, the command is transmitted to the debugging server and executed.
 
@@ -50,7 +47,8 @@ Terminating a server will prevent any future clients from attaching to it. It wi
 To exit from one debugging client without terminating the server, you must issue a command from that specific client. If this client is KD or CDB, use the [**CTRL+B**](ctrl-b--quit-local-debugger-.md) key to exit. If you are using a script to run KD or CDB, use [**.remote\_exit (Exit Debugging Client)**](../debuggercmds/-remote-exit--exit-debugging-client-.md). If this client is WinDbg, choose **Exit** from the **File** menu to exit.
 
 To terminate the entire session and exit the debugging server, use the [**q (Quit)**](../debuggercmds/q--qq--quit-.md) command. This command can be entered from any server or client, and it will terminate the entire session for all users.
-
  
+> [!IMPORTANT]
+> There are additional important security considerations when using remote debugging, for more information, including information on enabling secure mode, see [Security During Remote Debugging](security-during-remote-debugging.md) and [Security Considerations for Windows Debugging Tools](security-considerations.md).
 
  

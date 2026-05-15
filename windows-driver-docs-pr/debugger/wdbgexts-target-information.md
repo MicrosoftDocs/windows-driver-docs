@@ -3,6 +3,7 @@ title: WdbgExts Target Information
 description: WdbgExts Target Information
 keywords: ["WdbgExts extensions, target"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # WdbgExts Target Information

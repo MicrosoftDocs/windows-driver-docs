@@ -11,6 +11,7 @@ keywords:
 - tracing WDK , Tracefmt
 - trace message format files WDK
 ms.date: 04/20/2017
+ms.topic: overview
 ---
 
 # Tracefmt

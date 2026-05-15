@@ -2,6 +2,7 @@
 title: How do I Debug Tracing Failures
 description: How do I debug tracing failures
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # How do I debug tracing failures?

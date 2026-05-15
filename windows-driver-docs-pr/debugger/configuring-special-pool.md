@@ -3,6 +3,7 @@ title: Configuring Special Pool
 description: Configuring Special Pool
 keywords: ["GFlags, configuring kernel special pool", "kernel special pool", "special pool", "pool tags and special pool"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Configuring Special Pool

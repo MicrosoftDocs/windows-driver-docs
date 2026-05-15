@@ -2,6 +2,7 @@
 title: WDI NDIS idle detection
 description: This following diagram shows a simple state diagram of NDIS idle detection, which is used to drive USB selective suspend.
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # WDI NDIS idle detection

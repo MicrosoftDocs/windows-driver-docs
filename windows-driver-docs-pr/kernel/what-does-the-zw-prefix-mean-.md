@@ -2,6 +2,7 @@
 title: What Does the Zw Prefix Mean
 description: What Does the Zw Prefix Mean
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # What Does the Zw Prefix Mean?
@@ -73,7 +74,7 @@ Many of the Windows driver support routines have names that begin with two- or t
 <tr class="even">
 <td><p><strong>Nt</strong> and <strong>Zw</strong></p></td>
 <td><p>Native system services</p></td>
-<td><p><a href="/windows/win32/api/winternl/nf-winternl-ntcreatefile" data-raw-source="[NtCreateFile](/windows/win32/api/winternl/nf-winternl-ntcreatefile)">NtCreateFile</a> and <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile" data-raw-source="[&lt;strong&gt;ZwCreateFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile)"><strong>ZwCreateFile</strong></a></p></td>
+<td><p><a href="/windows/win32/api/winternl/nf-winternl-ntcreatefile" data-raw-source="[&lt;strong&gt;NtCreateFile&lt;/strong&gt;](/windows/win32/api/winternl/nf-winternl-ntcreatefile)"><strong>NtCreateFile</strong></a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatefile" data-raw-source="[&lt;strong&gt;ZwCreateFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatefile)"><strong>ZwCreateFile</strong></a></p></td>
 </tr>
 </tbody>
 </table>

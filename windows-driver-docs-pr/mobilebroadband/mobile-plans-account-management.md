@@ -4,6 +4,7 @@ description: This topic describes the Windows account management experience with
 keywords:
 - Windows Mobile Plans account management, Mobile Plans mobile operators
 ms.date: 03/15/2019
+ms.topic: concept-article
 ---
 
 # Mobile Operator account management in Windows 10
@@ -28,7 +29,7 @@ The following settings apply for the above options:
 
 The following image shows an example of the network flyout:
 
-<img src="images/mobile_plans_network_flyout_basic.png" alt="Windows Connection Manager showing basic MO" title="Windows Connection Manager showing basic MO" width="250" />
+:::image type="content" source="images/mobile_plans_network_flyout_basic.png" alt-text="Windows Connection Manager showing basic MO":::
 
 ## Enhanced account management experience
 
@@ -52,7 +53,7 @@ The network flyout has the following elements:
 
 The following image shows these network flyout elements. Connect with a data plan corresponds with A, View my account corresponds with B, and Balance information corresponds with C.
 
-<img src="images/dynamo_prepaid_network_flyout_5_getbalance.png" alt="Windows Connection Manager showing behavior depending on GetBalance API calls" title="Windows Connection Manager showing behavior depending on GetBalance API calls" width="600" />
+:::image type="content" source="images/dynamo_prepaid_network_flyout_5_getbalance.png" alt-text="Windows Connection Manager showing behavior depending on GetBalance API calls":::
 
 To provide the right information in the network flyout, MOs provide *Type* and *Balance* (dataRemainingMB and timeRemaining) information as defined in the [GetBalance API](#getbalance-api) section.
 
@@ -72,13 +73,13 @@ The following table provides a reference between the `GetBalance` response type 
 
 The `GetBalance` API queries current subscription status, controls whether the Mobile Plans experience is available on the device, and shows remaining data and time in the network flyout for prepaid subscriptions. The following diagram shows the high-level flow for the `GetBalance` API.
 
-<img src="images/mobile_plans_get_balance_api_flow.png" alt="GetBalance API flow" title="GetBalance API flow" width="600" />
+:::image type="content" source="images/mobile_plans_get_balance_api_flow.png" alt-text="GetBalance API flow":::
 
 ### Resource model
 
 Communication between the Mobile Plans service and the Mobile Operator API involves manipulating the resources in the following diagram. Explanations for each resource are in the tables following the diagram.
 
-<img src="images/mobile_plans_get_balance_resource.png" alt="GetBalance API resource model diagram" title="GetBalance API resource model diagram" width="600" />
+:::image type="content" source="images/mobile_plans_get_balance_resource.png" alt-text="GetBalance API resource model diagram":::
 
 #### SIM resource
 

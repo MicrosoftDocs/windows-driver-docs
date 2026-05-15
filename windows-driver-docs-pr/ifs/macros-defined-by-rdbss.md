@@ -6,6 +6,7 @@ keywords:
 - Redirected Drive Buffering Subsystem WDK file systems , macros
 - macros WDK RDBSS
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Macros Defined by RDBSS

@@ -3,6 +3,7 @@ title: Debugging a Stack Overflow
 description: This topic describes debugging a use mode stack overflow
 keywords: ["stack overflow", "call stack, debugging a stack overflow"]
 ms.date: 08/26/2024
+ms.topic: concept-article
 ---
 
 # Debugging a Stack Overflow

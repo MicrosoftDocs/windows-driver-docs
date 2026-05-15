@@ -1,25 +1,20 @@
 ---
-description: This topic summarizes the new features and improvements for Windows Portable Devices (WPD) in Windows 8.
+description: This topic summarizes the new features and improvements for Windows Portable Devices (WPD).
 title: What's New in WPD
-ms.date: 03/03/2023
+ms.date: 12/09/2024
+ms.topic: whats-new
 ---
 
 # What's New in WPD
 
-
 This topic summarizes the new features and improvements for Windows Portable Devices (WPD).
 
-## <span id="The_NetMon_Tool"></span><span id="the_netmon_tool"></span><span id="THE_NETMON_TOOL"></span>The NetMon Tool
+## The NetMon Tool
 
+The Network Monitor tool, also known as *NetMon.exe* tool, is a Windows-based application that you can use to view traces from WPD components. This tool replaces *WpdMon.exe* which had shipped in previous versions of the operating system.
 
-The *NetMon.exe*tool is a Windows-based application that you can use to view traces from WPD components. This tool replaces *WpdMon.exe* which had shipped in previous versions of the operating system.
+For more information, see [Using the NetMon Tool](using-the-netmon-tool.md)
 
-## <span id="related_topics"></span>Related topics
-
-
-[Using the NetMon Tool](using-the-netmon-tool.md)
-
- 
 
  
 

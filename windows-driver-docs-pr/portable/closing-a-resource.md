@@ -2,6 +2,7 @@
 description: Closing a Resource
 title: Closing a Resource
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Closing a Resource

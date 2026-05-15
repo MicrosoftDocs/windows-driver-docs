@@ -5,6 +5,7 @@ keywords:
 - Ethernet frame splitting WDK networking , beginning of upper-layer protocol
 - upper-layer protocols WDK header-data split
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Splitting Frames at the Beginning of the Upper Layer-Protocol Headers

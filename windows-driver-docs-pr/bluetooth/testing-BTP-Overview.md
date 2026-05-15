@@ -2,6 +2,7 @@
 title: Overview of Microsoft Bluetooth Test Platform
 description: High-level overview of the Bluetooth Test Platform (BTP)
 ms.date: 10/02/2023
+ms.topic: concept-article
 ---
 
 # Overview

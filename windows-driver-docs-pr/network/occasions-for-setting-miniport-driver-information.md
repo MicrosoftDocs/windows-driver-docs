@@ -2,6 +2,7 @@
 title: Occasions for Setting Miniport Driver Information
 description: Occasions for Setting Miniport Driver Information
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Occasions for Setting Miniport Driver Information

@@ -8,6 +8,7 @@ keywords:
 - GPD files WDK Unidrv , about GPD files
 - Unidrv WDK print
 ms.date: 09/24/2024
+ms.topic: concept-article
 ---
 
 # Introduction to GPD files

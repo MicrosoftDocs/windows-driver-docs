@@ -2,6 +2,7 @@
 title: Standard XPS Filters
 description: Windows provides two (standard) XPS filters to support built-in conversion from XPS to PCL6 and PostScript level 3.
 ms.date: 01/25/2023
+ms.topic: concept-article
 ---
 
 # Standard XPS Filters

@@ -4,6 +4,7 @@ description: Sample Print Processor
 keywords:
 - print processors WDK , samples
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Sample Print Processor

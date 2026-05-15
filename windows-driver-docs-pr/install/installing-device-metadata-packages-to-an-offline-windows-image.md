@@ -1,11 +1,14 @@
 ---
 title: Installing Device Metadata Packages to an Offline Windows Image
 description: Installing Device Metadata Packages to an Offline Windows Image
-ms.date: 04/20/2017
+ms.date: 06/19/2025
+ms.topic: concept-article
 ---
 
 # Installing Device Metadata Packages to an Offline Windows Image
 
+> [!IMPORTANT]
+> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](driver-package-container-metadata.md)**.
 
 Computer OEMs can add device metadata packages to an offline image of Windows by copying the packages to the local device metadata store. This store is in the following location:
 
@@ -28,12 +31,3 @@ A device metadata package that is localized for the Japanese language must be co
 ```
 
 For more information, see [Device Metadata Store](device-metadata-store.md).
-
- 
-
- 
-
-
-
-
-

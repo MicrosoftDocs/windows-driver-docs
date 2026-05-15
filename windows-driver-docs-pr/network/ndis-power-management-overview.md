@@ -2,6 +2,7 @@
 title: NDIS Power Management Overview
 description: NDIS Power Management Overview
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # NDIS Power Management Overview

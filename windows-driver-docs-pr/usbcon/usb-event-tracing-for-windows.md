@@ -1,7 +1,8 @@
 ---
 description: This topic provides information for client driver developers about the tracing and logging features for Universal Serial Bus (USB).
 title: Overview of USB Event Tracing for Windows
-ms.date: 06/26/2024
+ms.date: 04/17/2025
+ms.topic: concept-article
 ---
 
 # Overview of USB event tracing for Windows
@@ -68,5 +69,4 @@ Windows provides a USB driver stack to support USB 3.0 devices. The Microsoft-p
 
 ## Related topics
 
-- [Using USB ETW](using-usb-etw.md)  
-- [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)
+- [Using USB ETW](using-usb-etw.md)

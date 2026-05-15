@@ -3,6 +3,7 @@ title: DeviceD1 and DeviceD2
 description: DeviceD1 and DeviceD2
 keywords: ["DeviceD1", "DeviceD2"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # DeviceD1 and DeviceD2

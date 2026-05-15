@@ -2,6 +2,7 @@
 description: Access Control
 title: Access Control
 ms.date: 03/03/2023
+ms.topic: how-to
 ---
 
 # Access Control

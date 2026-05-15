@@ -2,6 +2,7 @@
 title: Considerations for Convertibles
 description: This topic discusses timing and performance considerations for convertibles.
 ms.date: 10/17/2018
+ms.topic: design-pattern
 ---
 
 # Considerations for convertibles

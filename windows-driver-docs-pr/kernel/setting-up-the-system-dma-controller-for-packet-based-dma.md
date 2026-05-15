@@ -3,6 +3,7 @@ title: Setting Up the System DMA Controller for Packet-Based DMA
 description: Setting Up the System DMA Controller for Packet-Based DMA
 keywords: ["system DMA WDK kernel , packet-based", "packet-based DMA WDK kernel", "DMA transfers WDK kernel , packet-based", "AllocateAdapterChannel", "MapTransfer"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Setting Up the System DMA Controller for Packet-Based DMA

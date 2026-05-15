@@ -6,6 +6,7 @@ keywords:
 - GUIDs WDK software tracing
 - identifiers WDK software tracing
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating a Trace Session with a Control GUID

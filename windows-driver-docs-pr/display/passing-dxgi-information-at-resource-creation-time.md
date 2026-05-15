@@ -2,6 +2,7 @@
 title: Passing DXGI Information at Resource Creation Time
 description: Passing DXGI Information at Resource Creation Time
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Passing DXGI Information at Resource Creation Time

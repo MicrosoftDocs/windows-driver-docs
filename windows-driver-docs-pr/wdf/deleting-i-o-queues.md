@@ -6,6 +6,7 @@ keywords:
 - temporary I/O queues WDK KMDF
 - deleting I/O queues WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Deleting I/O Queues

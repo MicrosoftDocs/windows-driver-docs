@@ -4,6 +4,7 @@ description: Initiating Filtering
 keywords:
 - filtering I/O operations WDK file system minifilter
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initiating Filtering

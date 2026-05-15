@@ -2,6 +2,7 @@
 title: What are the WPP Extended Format Specification Strings
 description: What are the WPP extended format specification strings
 ms.date: 01/27/2021
+ms.topic: concept-article
 ---
 
 # What are the WPP extended format specification strings

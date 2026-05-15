@@ -9,6 +9,7 @@ keywords:
 - KSPROPERTY_BDA_TEMPLATE_CONNECTIONS
 - template filter topology WDK BDA
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Determining BDA Device Topology

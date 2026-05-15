@@ -4,6 +4,7 @@ description: Troubleshooting the Implementation of Container IDs
 keywords:
 - container IDs WDK , troubleshooting
 ms.date: 04/20/2017
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshooting the Implementation of Container IDs

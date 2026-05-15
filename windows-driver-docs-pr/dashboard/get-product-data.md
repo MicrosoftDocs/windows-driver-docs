@@ -1,8 +1,8 @@
 ---
 title: Get product data
 description: These methods from the Microsoft Hardware APIs retrieve data for hardware products registered to your Dev Center Account.
-ms.topic: article
 ms.date: 09/12/2024
+ms.topic: how-to
 ---
 
 # Get product data
@@ -181,6 +181,10 @@ This object represents the downloads for a given submission.
     {
       "type": "certificationReport",
       "url": "https:// manage.devcenter.microsoft.com/dashboard/hardware/Driver/DownloadCertificationReport/29963920/13635057453741329/1152921504621441930"
+    },
+    {
+      "type": "unreferencedFilesReport",
+      "url": "<SAS URL from Hardware API>"
     }
   ],
   "messages": []
@@ -192,7 +196,7 @@ This object has the following values
 | Value | Type | Description |
 |:-|:-|:-|
 | Items | array | An array of download types and the URL for each. |
-| Type | string | The type of package available for download. Possible values are:<ul><li>"initialPackage" – package uploaded by user (for a new submission, it points to the SAS URI for uploading the package)<li>"derivedPackage" – shell for derived submissions<li>"signedPackage" – package signed by Microsoft<li>"certificationReport" – certification report for the signed product<li>driverMetadata - link points to a file which allows to download of driver metadata. For more information, see [driver package metadata](driver-package-metadata.md).<li>ExternalNotes<li>Unknown |
+| Type | string | The type of package available for download. Possible values are:<ul><li>"initialPackage" – package uploaded by user (for a new submission, it points to the SAS URI for uploading the package)<li>"derivedPackage" – shell for derived submissions<li>"signedPackage" – package signed by Microsoft<li>"certificationReport" – certification report for the signed product<li>"unreferencedFileReport" - report that identifies unreferenced files in the driver package submitted if found. If the driver package does not have any unreferenced files no file will be returned. For more information, see [Unreferenced INF Files](https://techcommunity.microsoft.com/blog/hardware-dev-center/attention-hdc-is-changing-the-policy-on-signing-unreferenced-files-in-driver-pac/4495518).<li>ExternalNotes<li>Unknown |
 | Messages | array | An array of strings to provide messages about the downloadable files |
 
 ### Link object
@@ -259,7 +263,7 @@ This object provides more attributes about the product if it is of type RAID con
 | isThirdPartyNeeded | boolean | Non-Microsoft driver needed for connectivity |
 | isSES | boolean | SES (SCSI Enclosure Services). Indicates if a SES is included. SCSI is the standard term for a service bus that connects devices on a system, originally Small Computer System Interface. SES is short for SCSI Enclosure Services. |
 | isSAFTE | boolean | SAF-TE (ANBll Specification). Indicates if a SAF-TE is included. ANBll an industry specification. SAF-TE is short for SCSI Accessed Fault Tolerant Enclosures. SCSI is the standard term for a service bus that connects devices on a system, originally Small Computer System Interface. |
-| additionalInfo | string | Additonal Information |
+| additionalInfo | string | Additional Information |
 
 #### SVVP Object
 
@@ -465,6 +469,8 @@ The following table lists Operating system Family Codes and their descriptions.
 | Windows_v100_NI | Windows 11 Client, version 22H2 |
 | Windows_v100_GE | Windows 11 Client, version 24H2 |
 | Windows_v100Server_GE | Windows Server 2025 |
+| Windows_v100_25H2 | Windows 11 Client, version 25H2|
+| Windows_v100_26H1 | Windows 11 Client, version 26H1|
 
 ### List of Operating System Codes
 
@@ -538,6 +544,9 @@ The following table lists Operating System Codes and their descriptions.
 | WINDOWS_v100_ARM64_GE_FULL | Windows 11 Client, version 24H2 ARM64 |
 | WINDOWS_v100_SERVER_X64_GE_FULL | Windows Server 2025 x64 |
 | WINDOWS_v100_SERVER_ARM64_GE_FULL | Windows Server 2025 ARM64 |
+| WINDOWS_v100_X64_25H2_FULL | Windows 11 Client, version 25H2 x64 |
+| WINDOWS_v100_ARM64_25H2_FULL | Windows 11 Client, version 25H2 ARM64 |
+| WINDOWS_v100_ARM64_26H1_FULL | Windows 11 Client, version 26H1 ARM64 |
 
 ## Error codes
 

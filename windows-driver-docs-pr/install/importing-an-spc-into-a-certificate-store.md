@@ -2,6 +2,7 @@
 title: Importing an SPC into a Certificate Store
 description: Importing an SPC into a Certificate Store
 ms.date: 06/16/2023
+ms.topic: how-to
 ---
 
 # Importing an SPC into a Certificate Store

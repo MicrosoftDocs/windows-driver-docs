@@ -1,18 +1,26 @@
 ---
 title: Write a Universal Windows Driver (KMDF) Based on a Template
-description: This topic describes how to write a Universal Windows driver using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
-keywords:
-- Write a KMDF driver
-ms.date: 10/24/2022
+description: This article describes how to write a Universal Windows driver using Kernel-Mode Driver Framework (KMDF). 
+ms.date: 11/13/2025
+ms.topic: tutorial
 ---
 
-# Write a Universal Windows driver (KMDF) based on a template
+# Tutorial: Write a Universal Windows driver (KMDF) based on a template
 
-This topic describes how to write a [Universal Windows driver](/windows-hardware/drivers) using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
+This article describes how to write a *Universal Windows driver* using Kernel-Mode Driver Framework (KMDF). You start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
 
-Before you proceed, you'll need to follow the installation steps listed in [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
+## Prerequisites
 
-[Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
+- Follow the steps to install [Windows Driver Kit (WDK)](../download-the-wdk.md). [Debugging Tools for Windows](../debugger/index.md) is included when you install the WDK.
+- Install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2022-and-other-products). When you install Visual Studio 2022, select the **Desktop development with C++** workload, then under **Individual Components** add:
+
+    - MSVC v143 - VS 2022 C++ ARM64/ARM64EC Spectre-mitigated libs (Latest)
+    - MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
+    - C++ ATL for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
+    - C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)
+    - C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
+    - C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)
+    - Windows Driver Kit
 
 ## Create and build a driver
 
@@ -23,6 +31,9 @@ Before you proceed, you'll need to follow the installation steps listed in [Down
 1. Select **Kernel Mode Driver (KMDF)** from the list of project types. Select **Next**.
 
     :::image type="content" source="images/vs2019-kmdf2-template.png" alt-text="Screen shot of the new project dialog box, showing kernel mode driver selected.":::
+
+    > [!TIP]
+    > If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this issue, launch **Visual Studio Installer**, select **Modify**, add **Windows Driver Kits** in the **Individual Component** tab, and select **Modify**.
 
 1. In the **Configure your new project** dialog box, enter "KmdfDriver" in the **Project name** field.
 
@@ -35,13 +46,13 @@ Before you proceed, you'll need to follow the installation steps listed in [Down
 
     :::image type="content" source="images/vs2019-kmdf2-configure.png" alt-text="Screen shot of the project configuration dialog box.":::
 
-    Visual Studio creates one project and a solution. You can see them in the **Solution Explorer** window. (If the **Solution Explorer** window is not visible, choose **Solution Explorer** from the **View** menu.) The solution has a driver project named KmdfDriver. To see the driver source code, open any of the files under **Source Files**. Driver.c and Device.c are good places to start.
+    Visual Studio creates one project and a solution. You can see them in the **Solution Explorer** window. (If the **Solution Explorer** window isn't visible, choose **Solution Explorer** from the **View** menu.) The solution has a driver project named KmdfDriver. To see the driver source code, open any of the files under **Source Files**. Driver.c and Device.c are good places to start.
 
     :::image type="content" source="images/vs2019-kmdf2-solution-explorer.png" alt-text="Screen shot of solution explorer showing the files in the driver project.":::
 
 1. In the **Solution Explorer** window, select and hold (or right-click) **KmdfDriver**, and choose **Properties**. Navigate to **Configuration Properties &gt; Driver Settings &gt; General**, and note that **Target Platform** defaults to **Universal.**
 
-1. To build your driver, choose **Build Solution** from the **Build** menu. Microsoft Visual Studio displays build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.)
+1. To build your driver, choose **Build Solution** from the **Build** menu. Microsoft Visual Studio displays build progress in the **Output** window. (If the **Output** window isn't visible, choose **Output** from the **View** menu.)
 
     Verify that the build output includes:
 
@@ -49,25 +60,25 @@ Before you proceed, you'll need to follow the installation steps listed in [Down
     >    Driver is 'Universal'.
     ```
 
-    When you've verified that the solution built successfully, you can close Visual Studio.
+    When you verify that the solution built successfully, you can close Visual Studio.
 
 1. To see the built driver, in File Explorer, go to your **KmdfDriver** folder, and then to **x64\\Debug\\KmdfDriver**. The directory includes the following files:
 
-    - KmdfDriver.sys -- the kernel-mode driver file
-    - KmdfDriver.inf -- an information file that Windows uses when you install the driver
+    - KmdfDriver.sys--the kernel-mode driver file
+    - KmdfDriver.inf--an information file that Windows uses when you install the driver
 
 ## Deploy the driver
 
 Typically when you test and debug a driver, the debugger and driver run on separate computers. The computer that runs the debugger is called the *host computer*, and the computer that runs the driver is called the *target computer*. The target computer is also called the *test computer*. For more information about debugging drivers, see [Debugging Tools for Windows](../debugger/index.md).
 
-So far you've used Visual Studio to build a driver on the host computer. Now you need to configure a target computer.
+So far, you used Visual Studio to build a driver on the host computer. Now you need to configure a target computer.
 
 1. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md).
 
     > [!TIP]
-    > When you follow the steps to provision the target computer automatically using a network cable, take note of the port and key. You'll use them later in the debugging step. In this example, we'll use **50000** as the port and **1.2.3.4** as the key.
+    > When you follow the steps to provision the target computer automatically using a network cable, take note of the port and key. You use them later in the debugging step. In this example, we use **50000** as the port and **1.2.3.4** as the key.
     >
-    > In real driver debugging scenarios, we recommend using a KDNET-generated key. For more information about how to use KDNET to generate a random key, see the [Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)](../debugger/debug-universal-drivers--kernel-mode-.md) topic.
+    > In real driver debugging scenarios, we recommend using a KDNET-generated key. For more information about how to use KDNET to generate a random key, see the [Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)](../debugger/debug-universal-drivers--kernel-mode-.md) article.
 
 1. On the host computer, open your solution in Visual Studio. You can double-click the solution file, KmdfDriver.sln, in your KmdfDriver folder.
 
@@ -84,14 +95,14 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
     :::image type="content" source="images/vs2019-kmdfdriver-property-pages.png" alt-text="screen shot of the kmdfdriver package property pages window, showing deployment driver install selected":::
 
     > [!NOTE]
-    > In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](./device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**. You'll see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfDriver &gt; Driver Files** and double-click KmdfDriver.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
+    > In this exercise, the hardware ID doesn't identify a real piece of hardware. It identifies an imaginary device that is given a place in the [device tree](./device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, don't select **Hardware ID Driver Update**; instead, select **Install and Verify**. You see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfDriver &gt; Driver Files** and double-click KmdfDriver.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
 
     ```C++
     [Standard.NT$ARCH$]
     %KmdfDriver.DeviceDesc%=KmdfDriver_Device, Root\KmdfDriver
     ```
 
-1. On the **Build** menu, choose **Deploy Solution**. Visual Studio automatically copies the files required to install and run the driver to the target computer. This may take a minute or two.
+1. On the **Build** menu, choose **Deploy Solution**. Visual Studio automatically copies the files required to install and run the driver to the target computer.
 
     When you deploy a driver, the driver files are copied to the %Systemdrive%\drivertest\drivers folder on the test computer. If something goes wrong during deployment, you can check to see if the files are copied to the test computer. Verify that the .inf, .cat, test cert, and .sys files, and any other necessary files, are present in the %systemdrive%\drivertest\drivers folder.
 
@@ -99,7 +110,7 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
 
 ## Install the driver
 
-With your KMDF driver deployed to the target computer, now you'll install the driver. When you previously provisioned the target computer with Visual Studio using the *automatic* option, Visual Studio set up the target computer to run test signed drivers as part of the provisioning process. Now you just need to install the driver using the DevCon tool.
+With your KMDF driver deployed to the target computer, now you install the driver. When you previously provisioned the target computer with Visual Studio using the *automatic* option, Visual Studio set up the target computer to run test signed drivers as part of the provisioning process. Now you just need to install the driver using the DevCon tool.
 
 1. On the host computer, navigate to the Tools folder in your WDK installation and locate the DevCon tool. For example, look in the following folder:
 
@@ -109,7 +120,7 @@ With your KMDF driver deployed to the target computer, now you'll install the dr
 
 1. On the target computer, install the driver by navigating to the folder containing the driver files, then running the DevCon tool.
 
-    1. Here's the general syntax for the devcon tool that you will use to install the driver:
+    1. Here's the general syntax for the devcon tool that you use to install the driver:
 
         *devcon install \<INF file\> \<hardware ID\>*
 
@@ -123,25 +134,25 @@ With your KMDF driver deployed to the target computer, now you'll install the dr
 
         **c:\\tools\\devcon install kmdfdriver.inf root\kmdfdriver**
 
-        A dialog box will appear indicating that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
+        A dialog box appears indicating that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
 
         :::image type="content" source="../debugger/images/debuglab-image-install-security-warning.png" alt-text="screenshot of driver installation warning.":::
 
 ## Debug the driver
 
-Now that you have installed your KMDF driver on the target computer, you'll attach a debugger remotely from the host computer.
+Now that you installed your KMDF driver on the target computer, attach a debugger remotely from the host computer.
 
-1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. We will use the x64version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation. Here is the default path to WinDbg.exe:
+1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. Use the x64version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation. Here's the default path to WinDbg.exe:
 
     *C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64*
 
-1. Launch WinDbg to connect to a kernel debug session on the target computer by using the following command. The value for the port and key should be the same as what you used to provision the target computer. We'll use **50000** for the port and **1.2.3.4** for the key, the values we used during the deploy step. The *k* flag indicates that this is a kernel debug session.
+1. Launch WinDbg to connect to a kernel debug session on the target computer by using the following command. The value for the port and key should be the same as what you used to provision the target computer. We use **50000** for the port and **1.2.3.4** for the key, the values we used during the deploy step. The *k* flag indicates that this is a kernel debug session.
 
     **WinDbg -k net:port=50000,key=1.2.3.4**
 
-1. On the **Debug** menu, choose **Break**. The debugger on the host computer will break into the target computer. In the **Debugger Command** window, you can see the kernel debugging command prompt: **kd\>**.
+1. On the **Debug** menu, choose **Break**. The debugger on the host computer breaks into the target computer. In the **Debugger Command** window, you can see the kernel debugging command prompt: **kd\>**.
 
-1. At this point, you can experiment with the debugger by entering commands at the **kd&gt;** prompt. For example, you could try these commands:
+1. At this point, you can experiment with the debugger by entering commands at the **kd->** prompt. For example, you could try these commands:
 
     - [lm](./device-nodes-and-device-stacks.md)
     - [.sympath](../debuggercmds/-sympath--set-symbol-path-.md)
@@ -153,7 +164,7 @@ Now that you have installed your KMDF driver on the target computer, you'll atta
 1. To stop the debugging session, choose **Detach Debuggee** from the **Debug** menu.
 
     > [!IMPORTANT]
-    > Make sure you use the "go" command to let the target computer run again before exiting the debugger, or the target computer will remain unresponsive to your mouse and keyboard input because it is still talking to the debugger.
+    > Make sure you use the "go" command to let the target computer run again before exiting the debugger, or the target computer remains unresponsive to your mouse and keyboard input because it's still talking to the debugger.
 
 For a detailed step-by-step walkthrough of the driver debugging process, see [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md).
 
@@ -163,13 +174,13 @@ For more information about remote debugging, see [Remote Debugging Using WinDbg]
 
 The [Driver Module Framework (DMF)](https://github.com/Microsoft/DMF) is an extension to WDF that enables extra functionality for a WDF driver developer. It helps developers write any type of WDF driver better and faster.
 
-DMF as a framework allows creation of WDF objects called DMF Modules. The code for these DMF Modules can be shared between different drivers. In addition, DMF bundles a library of DMF Modules that we have developed for our drivers and feel would provide value to other driver developers.
+DMF as a framework allows creation of WDF objects called DMF Modules. The code for these DMF Modules can be shared between different drivers. In addition, DMF bundles a library of DMF Modules that we developed for our drivers and feel would provide value to other driver developers.
 
-DMF does not replace WDF. DMF is a second framework that is used with WDF. The developer leveraging DMF still uses WDF and all its primitives to write device drivers.
+DMF doesn't replace WDF. DMF is a second framework that is used with WDF. The developer using DMF still uses WDF and all its primitives to write device drivers.
 
 For more info, see [Driver Module Framework (DMF)](https://github.com/Microsoft/DMF).
 
-## Related topics
+## Related articles
 
 - [Developing, Testing, and Deploying Drivers](../develop/index.md)
 - [Debugging Tools for Windows](../debugger/index.md)

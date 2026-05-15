@@ -3,6 +3,7 @@ title: Breakpoint Syntax
 description: This topic covers breakpoint syntax
 keywords: debugger, breakpoints on methods, breakpoints, syntax rules for commands, b (breakpoint identifier), literal MASM identifier, templated functions
 ms.date: 06/26/2023
+ms.topic: concept-article
 ---
 
 # Breakpoint Syntax
@@ -83,8 +84,6 @@ In version 10.0.25310.1001 and later of the debugger engine, ambiguous breakpoin
 ## See also
 
 [Using Breakpoints](using-breakpoints.md)
-
-[Breakpoint Syntax](breakpoint-syntax.md)
 
 [bp, bu, bm (Set Breakpoint)](../debuggercmds/bp--bu--bm--set-breakpoint-.md)
 

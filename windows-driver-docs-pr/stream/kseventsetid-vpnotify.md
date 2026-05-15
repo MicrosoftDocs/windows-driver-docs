@@ -2,6 +2,7 @@
 title: KSEVENTSETID_VPNotify
 description: The KSEVENTSETID_VPNotify event set is used to notify clients when a video port event occurs.
 ms.date: 10/12/2021
+ms.topic: reference
 ---
 
 # KSEVENTSETID_VPNotify

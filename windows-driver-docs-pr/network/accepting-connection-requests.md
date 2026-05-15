@@ -10,6 +10,7 @@ keywords:
 - refusing SAN connection requests
 - rejecting SAN connection requests
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Accepting Connection Requests

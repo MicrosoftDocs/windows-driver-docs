@@ -8,6 +8,7 @@ keywords:
 - thread terminations WDK file systems
 - terminated processes or threads WDK file systems
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Process and Thread Termination Issues

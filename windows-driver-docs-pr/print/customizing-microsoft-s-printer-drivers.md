@@ -7,6 +7,7 @@ keywords:
 - printer driver customizing WDK , about customizing printer drivers
 - customizing printer drivers WDK , about customizing printer drivers
 ms.date: 01/24/2023
+ms.topic: concept-article
 ---
 
 # Customizing Microsoft Printer Drivers

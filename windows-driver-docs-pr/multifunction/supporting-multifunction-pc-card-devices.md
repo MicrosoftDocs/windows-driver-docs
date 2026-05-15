@@ -9,6 +9,7 @@ keywords:
 - configuration registers WDK multifunction devices
 - registers WDK multifunction devices
 ms.date: 03/17/2023
+ms.topic: how-to
 ---
 
 # Supporting Multifunction PC Card Devices

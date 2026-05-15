@@ -2,6 +2,7 @@
 title: SR-IOV Synthetic Data Path
 description: SR-IOV Synthetic Data Path
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # SR-IOV Synthetic Data Path

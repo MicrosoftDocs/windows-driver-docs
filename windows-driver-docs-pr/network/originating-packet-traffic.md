@@ -2,6 +2,7 @@
 title: Originating Packet Traffic
 description: Originating Packet Traffic
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Originating Packet Traffic

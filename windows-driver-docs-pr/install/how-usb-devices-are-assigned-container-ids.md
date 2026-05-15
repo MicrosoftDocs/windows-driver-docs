@@ -2,6 +2,7 @@
 title: How USB Devices are Assigned Container IDs
 description: How USB Devices are Assigned Container IDs
 ms.date: 12/13/2021
+ms.topic: concept-article
 ---
 
 # How USB Devices are Assigned Container IDs

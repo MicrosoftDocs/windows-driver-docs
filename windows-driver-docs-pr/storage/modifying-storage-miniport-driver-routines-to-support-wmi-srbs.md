@@ -4,6 +4,7 @@ description: Modifying Storage Miniport Driver Routines to Support WMI SRBs
 keywords:
 - WMI SRBs WDK storage , modifying routines to support
 ms.date: 10/08/2019
+ms.topic: concept-article
 ---
 
 # Modifying Storage Miniport Driver Routines to Support WMI SRBs

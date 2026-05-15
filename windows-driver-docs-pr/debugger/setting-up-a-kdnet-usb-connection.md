@@ -2,6 +2,7 @@
 title: Setting up KDNET USB kernel-mode debugging (KDNET-USB)
 description: Learn how to use kdnet.exe to set up KDNET-USB kernel-mode debugging over a USB 3.0 cable.
 ms.date: 10/09/2024
+ms.topic: how-to
 ---
 
 # Setting up KDNET USB kernel-mode debugging (KDNET-USB)
@@ -169,7 +170,7 @@ please try resync with target, recycle the host debugger, or reboot the target W
 
 This issue can happen because the pci.sys driver is probing the debug device. To eliminate these error messages, create the following registry entry on the TARGET device at an administrator command prompt.
 
-This setting can also allow the debugger to connect if the initial KD transport failed to connect at boot, for some other reason, for example if the the debug device could not be configured at boot.
+This setting can also allow the debugger to connect if the initial KD transport failed to connect at boot, for some other reason, for example if the debug device could not be configured at boot.
 
 ```console
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\SERVICES\kdnet /v SkipPciProbeDebugDevice /t REG_DWORD /d 1 /f
@@ -196,6 +197,41 @@ Adding `NO_KDNIC` is optional and can be used only if the target has an extra NI
 Adding `NO_KDNIC` will prevent the kdnic.sys driver (a miniport timer-based driver) from running on top of KDNET, meaning that Windows TCP/IP traffic won’t be routed via KDNET transport. Then the KDNET transport can be used only to route debugging-related packets between the target KDNET and the host debugger.
 
 This can help with network performance that can be affected when kdnic.sys driver is running on top of kdnet. In this situation the target will never go to sleep, preventing power drip tests, or delays will occur when accessing the target via RDP. This is because the KDNET interface needs to route both debugger packets and Windows TCP/IP network packets when kdnic.sys is running.
+
+### Automatic reset of Host USB Controller
+
+Sometimes the debugger can encounter a banged USB stack condition which can be caused by a previously failed USB enumeration.
+This will lead to the debugger failing to connect to the target machine even when all settings are correctly configured.
+
+In IC scenarios, this issue can be worked around by manually disabling\re-enabling the parent USB controller.
+For other scenarios, like automated test labs, manual steps like this are not feasible.
+By enabling the `RestartKdNetUsbDebugDevice` setting, the debugger client will automatically monitor for failed USB enumeration 
+and reset the USB stack when a banged device is detected. This will allow the debugger to connect without any user intervention.
+This functionality is built into the debugger client application and so is only active when the debugger client is running and the setting is enabled.
+
+#### How to enable:
+
+Option 1: From the debugger prompt run the following command.
+```console
+kd> dx Debugger.Settings.Debug.Advanced.RestartKdNetUsbDebugDevice=true
+```
+>[!WARNING]
+>You may not be able to use the strategy to set the option if the USB debug device is already failing to enumerate as this will prevent the session from connecting to and breaking in to the target so you will never get to a functional debugger prompt.
+
+Option 2: From the (new) Windbg application go to "File" -> "Settings" -> "Kernel debugging settings" and click the checkbox "Enable automatic reset of host USB controller when needed." then launch as normal from the "attach to kernel" dialog.
+
+Option 3: Create (or modify existing) config.xml file to include the `RestartKdNetUsbDebugDevice` setting. The config.xml file is loaded from the same directory as the debugger client application i.e. kd.exe or (legacy) windbg.exe. If there is not one present, create a new file called config.xml with the following contents:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Settings Version="2">
+  <Namespace Name="Debug">
+    <Namespace Name="Advanced">
+      <Setting Name="RestartKdNetUsbDebugDevice" Type="VT_BOOL" Value="true"></Setting>
+    </Namespace>
+  </Namespace>
+</Settings>
+```
+If there is a config.xml already present, then merge the `<Setting Name="RestartKdNetUsbDebugDevice" Type="VT_BOOL" Value="true"></Setting>` xml element into the `Debug.Advanced` node in the existing xml document.
 
 ## See also
 

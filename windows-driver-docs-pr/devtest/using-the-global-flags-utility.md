@@ -5,6 +5,7 @@ keywords:
 - Global Flags utility
 - Driver Verifier WDK , Global Flags utility
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using the Global Flags Utility

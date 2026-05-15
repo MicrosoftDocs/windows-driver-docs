@@ -2,6 +2,7 @@
 title: VMQ Transmit Path
 description: VMQ Transmit Path
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # VMQ Transmit Path

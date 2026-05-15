@@ -6,6 +6,7 @@ keywords:
 - NDIS filter drivers WDK , buffers
 - buffer management WDK NDIS filter
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Filter Driver Buffer Management

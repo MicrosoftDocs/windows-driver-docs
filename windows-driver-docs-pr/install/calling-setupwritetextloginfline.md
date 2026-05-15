@@ -2,6 +2,7 @@
 title: Calling SetupWriteTextLogInfLine
 description: Calling SetupWriteTextLogInfLine
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Calling SetupWriteTextLogInfLine

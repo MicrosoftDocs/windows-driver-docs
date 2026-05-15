@@ -2,6 +2,7 @@
 title: Application (WindowsInfo)
 description: Application (WindowsInfo)
 ms.date: 10/10/2023
+ms.topic: reference
 ---
 
 # Application (WindowsInfo)

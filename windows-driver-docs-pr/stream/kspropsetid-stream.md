@@ -2,6 +2,7 @@
 title: KSPROPSETID_Stream
 description: KSPROPSETID\_Stream
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # KSPROPSETID\_Stream

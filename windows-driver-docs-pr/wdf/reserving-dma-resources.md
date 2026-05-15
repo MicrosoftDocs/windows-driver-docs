@@ -2,6 +2,7 @@
 title: Reserving DMA Resources
 description: Reserving DMA Resources
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Reserving DMA Resources

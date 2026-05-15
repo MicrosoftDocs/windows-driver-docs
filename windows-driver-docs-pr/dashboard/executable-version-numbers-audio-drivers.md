@@ -1,8 +1,8 @@
 ---
 title: Executable version numbers for audio drivers 
 description: Policy defines how driver package executables are evaluated. 
-ms.topic: article
 ms.date: 04/09/2024
+ms.topic: best-practice
 ---
 # Executable version numbers for audio drivers 
 

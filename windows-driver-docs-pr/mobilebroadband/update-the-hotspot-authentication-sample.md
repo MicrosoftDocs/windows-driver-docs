@@ -2,6 +2,7 @@
 title: Update the Hotspot Authentication Sample
 description: Update the hotspot authentication sample
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Update the hotspot authentication sample

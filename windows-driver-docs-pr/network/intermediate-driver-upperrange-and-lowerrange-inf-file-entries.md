@@ -6,6 +6,7 @@ keywords:
 - UpperRange INF file entries
 - LowerRange INF file entries
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Intermediate Driver UpperRange And LowerRange INF File Entries

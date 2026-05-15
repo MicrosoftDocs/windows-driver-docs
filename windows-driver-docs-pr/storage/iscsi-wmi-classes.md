@@ -2,6 +2,7 @@
 title: iSCSI WMI Classes
 description: iSCSI WMI Classes
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # iSCSI WMI Classes

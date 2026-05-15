@@ -2,6 +2,7 @@
 title: WMI Minor IRPs
 description: WMI Minor IRPs
 ms.date: 08/12/2017
+ms.topic: reference
 ---
 
 # WMI Minor IRPs

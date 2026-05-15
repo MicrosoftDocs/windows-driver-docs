@@ -5,6 +5,7 @@ keywords:
 - virtual connections WDK CoNDIS , deleting
 - deleting virtual connections
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Deleting a VC

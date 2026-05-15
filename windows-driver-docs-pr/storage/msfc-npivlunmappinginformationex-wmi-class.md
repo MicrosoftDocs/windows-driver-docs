@@ -2,6 +2,7 @@
 title: MSFC_NPIVLUNMappingInformationEx WMI Class (Windows Drivers)
 description: Learn more about the MSFC_NPIVLUNMappingInformationEx WMI Class.
 ms.date: 10/14/2022
+ms.topic: reference
 ---
 
 # MSFC\_NPIVLUNMappingInformationEx WMI Class

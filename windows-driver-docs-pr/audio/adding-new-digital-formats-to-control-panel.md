@@ -2,6 +2,7 @@
 title: Adding New Digital Formats to Control Panel
 description: Adding New Digital Formats to Control Panel
 ms.date: 05/05/2023
+ms.topic: concept-article
 ---
 
 # Adding New Digital Formats to Control Panel

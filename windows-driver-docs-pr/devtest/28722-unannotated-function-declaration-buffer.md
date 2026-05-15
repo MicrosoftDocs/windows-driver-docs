@@ -4,6 +4,7 @@ description: Warning C28722 Unannotated buffer in function declaration.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28722"
+ms.topic: reference
 ---
 
 # C28722

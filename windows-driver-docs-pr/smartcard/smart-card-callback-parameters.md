@@ -6,6 +6,7 @@ keywords:
 - callback parameters WDK smart card
 - vendor-supplied drivers WDK smart card , IOCTL request management
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Smart Card Callback Parameters

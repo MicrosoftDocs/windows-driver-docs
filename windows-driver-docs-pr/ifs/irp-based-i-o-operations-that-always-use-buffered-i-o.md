@@ -4,6 +4,7 @@ description: IRP-Based I/O Operations That Always Use Buffered I/O
 keywords:
 - buffered I/O WDK file system
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # IRP-Based I/O Operations That Always Use Buffered I/O

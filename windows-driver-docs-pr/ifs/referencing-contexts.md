@@ -5,6 +5,7 @@ keywords:
 - contexts WDK file system minifilter , referencing
 - referencing contexts
 ms.date: 10/25/2021
+ms.topic: concept-article
 ---
 
 # Referencing Contexts

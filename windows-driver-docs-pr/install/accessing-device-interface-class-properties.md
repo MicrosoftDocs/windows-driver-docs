@@ -2,6 +2,7 @@
 title: Accessing Device Interface Class Properties
 description: Accessing Device Interface Class Properties
 ms.date: 04/05/2022
+ms.topic: concept-article
 ---
 
 # Accessing Device Interface Class Properties

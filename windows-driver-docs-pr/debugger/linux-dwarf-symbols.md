@@ -2,7 +2,8 @@
 title: Linux symbols and sources
 description: Linux symbols and sources
 keywords: ["symbols, linux, process"]
-ms.date: 03/18/2024
+ms.date: 01/31/2025
+ms.topic: concept-article
 ---
 
 # Linux symbols and sources
@@ -167,7 +168,7 @@ The dwarfdump linux command prints or checks DWARF sections as requested by spec
 bob@BOB6:/mnt/c/Users/BOB$ dwarfdump -h
 ```
 
-For more information about using dwarfdump on Ubuntu, see [dwarfdump ](https://manpages.ubuntu.com/manpages/mantic/en/man1/dwarfdump.1.html).
+For more information about using dwarfdump on Ubuntu, see [dwarfdump ](https://manpages.ubuntu.com/manpages/resolute/en/man1/dwarfdump.1.html).
 
 ## !diesym
 
@@ -520,3 +521,7 @@ Example:
 [Using Symbols](using-symbols.md)
 
 [!sym](../debuggercmds/-sym.md)
+
+[Linux crash dumps](linux-crash-dumps.md)
+
+[Linux live remote process debugging](linux-live-remote-process-debugging.md)

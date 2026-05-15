@@ -9,6 +9,7 @@ keywords:
 - Device setup WDK device installations, SetupAPI
 - installing devices WDK, SetupAPI
 ms.date: 12/05/2022
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshooting Device and Driver Installations

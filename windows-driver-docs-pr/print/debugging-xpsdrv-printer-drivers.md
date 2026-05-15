@@ -8,6 +8,7 @@ keywords:
 - spoolsv.exe process WDK print
 - printfilterpipelinesvc.exe process WDK print
 ms.date: 01/27/2023
+ms.topic: how-to
 ---
 
 # Debugging XPSDrv Printer Drivers

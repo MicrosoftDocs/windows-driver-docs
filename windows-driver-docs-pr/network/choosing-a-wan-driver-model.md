@@ -1,54 +1,41 @@
 ---
 title: WAN Driver Models
-description: How to choose a WAN Driver Model. Introduction to NDIS WAN and CoNDIS WAN.
-keywords:
-- WAN miniport drivers WDK networking , driver models
-- WAN miniport drivers WDK networking , NDIS WAN vs CoNDIS WAN drivers
-- driver models WDK WAN
-- WAN driver
-- CoNDIS drivers WDK networking , WAN drivers
-- CoNDIS WAN drivers WDK networking
-ms.date: 10/14/2021
+description: Learn about WAN driver models, and learn how to choose between NDIS WAN and CoNDIS WAN.
+ms.date: 01/31/2025
+ms.topic: concept-article
 ---
 
-# WAN Driver Models
-
+# WAN driver models
 
 Microsoft Windows 2000 and later operating systems support two WAN driver models: NDIS WAN and CoNDIS WAN.
 
-NDIS WAN miniport drivers are built on the NDIS model for connectionless miniport drivers. NDIS WAN miniport drivers are not supported for NDIS version 5.0 and later drivers. New drivers should be based on the CoNDIS WAN driver architecture.
+## NDIS WAN
 
-CoNDIS WAN drivers are built on the connection-oriented NDIS (CoNDIS) driver model.
+NDIS WAN miniport drivers are built on the NDIS model for connectionless miniport drivers. NDIS WAN miniport drivers aren't supported for NDIS version 5.0 and later drivers. New drivers should be based on the CoNDIS WAN driver architecture.
 
-CoNDIS WAN miniport drivers and miniport call managers (MCMs) can:
+## CoNDIS WAN
 
--   Call the same NDIS functions that non-WAN connection-oriented miniport drivers call.
+CoNDIS WAN drivers are built on the connection-oriented NDIS (CoNDIS) driver model. CoNDIS WAN miniport drivers and miniport call managers (MCMs) can:
 
--   Export the same set of *MiniportXxx* functions that non-WAN connection-oriented miniport drivers export.
+- Call the same NDIS functions that non-WAN connection-oriented miniport drivers call.
 
--   Provide additional WAN-specific capabilities.
+- Export the same set of *MiniportXxx* functions that non-WAN connection-oriented miniport drivers export.
+
+- Provide additional WAN-specific capabilities.
 
 For more information about CoNDIS drivers, see [Connection-Oriented NDIS](connection-oriented-ndis.md).
 
-If you are writing a new WAN driver, we recommend that you use the CoNDIS WAN model.
+If you're writing a new WAN driver, we recommend that you use the CoNDIS WAN model.
 
-Microsoft will continue to support existing NDIS WAN miniport drivers. You do not have to write CoNDIS drivers for old hardware.
+Microsoft will continue to support existing NDIS WAN miniport drivers. You don't have to write CoNDIS drivers for old hardware.
 
-The following topics describe the primary advantages of using the CoNDIS WAN model:
+The following articles describe the primary advantages of using the CoNDIS WAN model:
 
-[CoNDIS WAN Is More Flexible](condis-wan-is-more-flexible.md)
+- [CoNDIS WAN Is More Flexible](condis-wan-is-more-flexible.md)
 
-[CoNDIS WAN Is Less Complex](condis-wan-is-less-complex.md)
+- [CoNDIS WAN Is Less Complex](condis-wan-is-less-complex.md)
 
-[Other Benefits of CoNDIS WAN](other-benefits-of-condis-wan.md)
+- [Other Benefits of CoNDIS WAN](other-benefits-of-condis-wan.md)
 
-[Other NDIS Features Available to CoNDIS WAN Drivers](other-ndis-features-available-to-condis-wan-drivers.md)
-
- 
-
- 
-
-
-
-
+- [Other NDIS Features Available to CoNDIS WAN Drivers](other-ndis-features-available-to-condis-wan-drivers.md)
 

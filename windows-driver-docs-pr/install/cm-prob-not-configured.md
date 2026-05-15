@@ -4,6 +4,7 @@ description: CM_PROB_NOT_CONFIGURED
 keywords:
 - CM_PROB_NOT_CONFIGURED
 ms.date: 02/28/2020
+ms.topic: reference
 ---
 
 # Code 1 - CM_PROB_NOT_CONFIGURED

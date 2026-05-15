@@ -13,7 +13,7 @@ keywords:
 - querying power management capability data
 - headers WDK PCI
 ms.date: 09/26/2024
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # PCI driver programming guide
@@ -25,7 +25,7 @@ The following table summarizes the PCIe features supported by different versions
 | Resizable BAR capability</br>See section 7.22. | Windows 10 |
 | Atomic Operations</br>See section 6.15. | Windows 10 |
 | ACPI additions for FW latency optimizations</br>See [ACPI Additions for FW Latency Optimizations](https://pcisig.com/specifications) | Windows 10 |
-| ATS/PRI</br>-  [ATS specification](https://go.microsoft.com/fwlink/p/?LinkId=787061)</br>-  [Errata for the PCI Express&#174; Base Specification Revision 3.1, Single Root I/O Virtualization and Sharing Revision 1.1, Address Translation and Sharing Revision 1.1, and M.2 Specification Revision 1.0](https://pcisig.com/specifications/iov/) | Windows 10 |
+| ATS/PRI</br>-  [ATS specification](https://go.microsoft.com/fwlink/p/?LinkId=787061)</br>-  [Errata for the PCI Express&#174; Base Specification Revision 3.1, Single Root I/O Virtualization and Sharing Revision 1.1, Address Translation and Sharing Revision 1.1, and M.2 Specification Revision 1.0](https://pcisig.com/PCIExpress/Errata/Base/_3.1_SingleRootIOVirtualizationandSharing_1.1_AddressTranslationandSharing_1.1_andM.2_1.0?utm_source=chatgpt.com) | Windows 10 |
 | Optimized Buffer Flush/Fill (OBFF)</br>See section 6.19. | -  Windows 8</br>-  Windows Server 2012 |
 | Latency Tolerance Reporting (LTR) Capability</br>See section 7.25. | - Windows 8</br>-  Windows Server 2012 |
 | Alternative Routing-ID Interpretation (ARI)</br>See section 6.13. | -  Windows 8</br>-  Windows Server 2012 |

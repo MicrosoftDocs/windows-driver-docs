@@ -5,6 +5,7 @@ keywords:
 - WDM information WDK KMDF
 - status information WDK KMDF , WDM
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Obtaining WDM Information

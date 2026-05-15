@@ -2,6 +2,7 @@
 title: Dispatching IRPs to I/O Queues
 description: Dispatching IRPs to I/O Queues
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Dispatching IRPs to I/O Queues

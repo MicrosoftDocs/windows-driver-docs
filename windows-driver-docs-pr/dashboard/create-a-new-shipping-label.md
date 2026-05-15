@@ -1,8 +1,8 @@
 ---
 title: Create a new shipping label
 description: This method shows how to create a new shipping label in the Microsoft Hardware API.
-ms.topic: article
 ms.date: 08/21/2018
+ms.topic: how-to
 ---
 
 # Create a new shipping label

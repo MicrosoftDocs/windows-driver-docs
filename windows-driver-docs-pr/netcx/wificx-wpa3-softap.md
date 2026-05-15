@@ -2,6 +2,7 @@
 title: WPA3 SoftAP
 description: The WPA3 SoftAP feature enables devices to set up a SoftAP that utilizes WPA3-SAE and is capable of operating on either the 2.4 GHz or 5 GHz band.
 ms.date: 02/29/2024
+ms.topic: concept-article
 ---
 
 # WiFiCx WPA3 SoftAP

@@ -2,6 +2,7 @@
 title: BIOS/UEFI Testing With the MUTT Devices
 description: BIOS/UEFI testing validates USB boot and handoff of the controller to the operating system.
 ms.date: 01/16/2024
+ms.topic: checklist
 ---
 
 # BIOS/UEFI testing with the MUTT devices

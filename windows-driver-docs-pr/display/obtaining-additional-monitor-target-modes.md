@@ -4,6 +4,7 @@ description: Obtaining Additional Monitor Target Modes
 keywords:
 - monitor target modes WDK display
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Obtaining Additional Monitor Target Modes

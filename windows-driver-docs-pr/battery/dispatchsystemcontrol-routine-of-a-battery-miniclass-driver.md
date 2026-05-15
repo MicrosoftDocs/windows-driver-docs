@@ -6,6 +6,7 @@ keywords:
 - DispatchSystemControl routine
 - WMI WDK battery
 ms.date: 10/04/2023
+ms.topic: concept-article
 ---
 
 # DispatchSystemControl Routine of a Battery Miniclass Driver

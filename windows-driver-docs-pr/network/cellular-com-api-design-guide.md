@@ -4,6 +4,7 @@ description: This section provides information on the cellular COM API.
 keywords:
 - Cellular COM API design guide network drivers
 ms.date: 11/07/2017
+ms.topic: concept-article
 ---
 
 # Cellular COM API design guide

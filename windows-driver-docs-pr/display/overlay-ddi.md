@@ -5,6 +5,7 @@ keywords:
 - Overlay DDI WDK Windows 7 display
 - Overlay DDI WDK Server 2008 R2 display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Overlay DDI

@@ -9,6 +9,7 @@ keywords:
 - driver entry points WDK Static Driver Verifier
 - entry points WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Scanning the Driver

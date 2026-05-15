@@ -4,6 +4,7 @@ description: Provides information about IPrintTicketProvider interface methods t
 keywords:
 - OpenPrinter
 ms.date: 01/27/2023
+ms.topic: reference
 ---
 
 # OpenPrinter

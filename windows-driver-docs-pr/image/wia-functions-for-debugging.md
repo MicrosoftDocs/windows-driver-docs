@@ -2,6 +2,7 @@
 title: WIA Functions for Debugging
 description: WIA functions for debugging
 ms.date: 05/10/2023
+ms.topic: reference
 ---
 
 # WIA functions for debugging

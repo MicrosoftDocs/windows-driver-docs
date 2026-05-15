@@ -3,6 +3,7 @@ title: Using a Source Server
 description: Using a Source Server
 keywords: ["source server (srcsrv.dll)", "source server (srcsrv.dll), overview", "SrcSrv (srcsrv.dll)", "SrcSrv (srcsrv.dll), overview"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Using a Source Server

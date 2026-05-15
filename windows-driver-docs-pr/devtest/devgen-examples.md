@@ -2,13 +2,14 @@
 title: DevGen Examples
 description: DevGen examples.
 ms.date: 12/01/2022
+ms.topic: example-scenario
 ---
 
 # DevGen Examples
 
 This page provides examples on how to use the DevGen tool.
 
-## /add
+## <a id="add">:::no-loc text="/add":::</a>
 
 Create a [software device](/windows/win32/api/_swdevice)
 
@@ -58,7 +59,7 @@ Create a root enumerated device and remove after user prompt
 devgen /add /bus ROOT /wait
 ```
 
-## /remove
+## <a id="remove">:::no-loc text="/remove":::</a>
 
 Remove a device
 

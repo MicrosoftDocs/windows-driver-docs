@@ -2,6 +2,7 @@
 title: Informing an Application of Item Tree Changes
 description: Informing an Application of Item Tree Changes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Informing an Application of Item Tree Changes

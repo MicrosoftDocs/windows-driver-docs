@@ -2,6 +2,7 @@
 title: Write a UDE Client Driver
 description: This article describes the behavior of USB device emulation(UDE) class extension and tasks that a client driver must perform for an emulated host controller and devices attached to it.
 ms.date: 01/17/2024
+ms.topic: how-to
 ---
 
 # Write a UDE client driver

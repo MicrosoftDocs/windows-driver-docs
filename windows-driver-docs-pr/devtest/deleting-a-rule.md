@@ -6,6 +6,7 @@ keywords:
 - trace message filters WDK , deleting rules
 - deleting rules
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Deleting a Rule

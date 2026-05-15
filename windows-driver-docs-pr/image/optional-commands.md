@@ -2,6 +2,7 @@
 title: Optional Commands
 description: Describes commands that can be implemented by the microdriver but are not required.
 ms.date: 09/28/2021
+ms.topic: concept-article
 ---
 
 # Optional Commands

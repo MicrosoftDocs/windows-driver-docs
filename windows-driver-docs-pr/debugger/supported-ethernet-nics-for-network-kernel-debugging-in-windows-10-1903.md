@@ -2,6 +2,7 @@
 title: Supported Ethernet NICs for Network Kernel Debugging in Windows 10 Version 1903 (19H1) Build 18362
 description: Learn about kernel debugging over an Ethernet network cable when the target computer is running Windows 10, version 1903.
 ms.date: 06/18/2020
+ms.topic: reference
 ---
 
 # Supported Ethernet NICs for Network Kernel Debugging in Windows 10 version 1903 (19H1) Build 18362

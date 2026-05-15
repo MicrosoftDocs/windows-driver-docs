@@ -2,6 +2,7 @@
 title: ISCSI_PORTAL_TYPE_QUALIFIERS
 description: ISCSI\_PORTAL\_TYPE\_QUALIFIERS
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # ISCSI\_PORTAL\_TYPE\_QUALIFIERS

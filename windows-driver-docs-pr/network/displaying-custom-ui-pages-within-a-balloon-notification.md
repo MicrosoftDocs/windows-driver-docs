@@ -5,6 +5,7 @@ keywords:
 - custom UI WDK Native 802.11 IHV UI Extensions DLL , balloon notifications
 - balloon notifications WDK
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Displaying Custom UI Pages within a Balloon Notification

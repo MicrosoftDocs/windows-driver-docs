@@ -6,6 +6,7 @@ keywords:
 - checking in-progress installations
 - verifying in-progress installations
 ms.date: 03/08/2022
+ms.topic: concept-article
 ---
 
 # How a Device Installation Application checks for in-progress device installations

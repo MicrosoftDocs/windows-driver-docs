@@ -2,6 +2,7 @@
 title: Control Panel Wizard Replacement
 description: Control Panel Wizard Replacement
 ms.date: 06/09/2020
+ms.topic: concept-article
 ---
 
 # Control Panel Wizard Replacement

@@ -13,6 +13,7 @@ keywords:
 - noncolor output WDK printer
 - grayscale output WDK printer
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Identifying a Printer's Color Capability

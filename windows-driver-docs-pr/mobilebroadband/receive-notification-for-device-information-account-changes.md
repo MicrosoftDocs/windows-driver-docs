@@ -2,6 +2,7 @@
 title: Receive Notification for Device Information Account Changes
 description: Receive notification for device information account changes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Receive notification for device information account changes

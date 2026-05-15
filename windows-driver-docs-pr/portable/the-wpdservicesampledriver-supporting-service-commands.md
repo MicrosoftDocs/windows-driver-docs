@@ -2,6 +2,7 @@
 description: Supporting the Service Commands
 title: Supporting the Service Commands
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Supporting the Service Commands
@@ -158,7 +159,7 @@ In the sample driver, the WPD\_COMMAND\_SERVICE\_METHODS\_START\_INVOKE command 
 | Method name                          | Description                                                                                                                                                                                                           |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **WpdServiceMethods::OnStartInvoke** | Calls the **StartMethod** helper function and upon completion, returns the invoked method's context in an **IPortableDeviceValues** object.                                                                           |
-| **WpdServiceMethods::StartMethod**   | Verifies that the given service supports the requested method, and if it does, creates a new **ServiceMethodContext** object. After the context is created, the **ServiceMethodContext::Initalize** method is called. |
+| **WpdServiceMethods::StartMethod**   | Verifies that the given service supports the requested method, and if it does, creates a new **ServiceMethodContext** object. After the context is created, the **ServiceMethodContext::Initialize** method is called. |
 | **ServiceMethodContext::Initialize** | Creates a **CMethodTask** object and invokes the **CMethodTask::Run** method.                                                                                                                                         |
 | **CMethodTask::Run**                 | Creates a separate thread in which the invoked method can run.                                                                                                                                                        |
 

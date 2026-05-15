@@ -7,6 +7,7 @@ keywords:
 - security checks WDK file systems , IRP_MJ_CREATE
 - ACL WDK file systems
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Management of Access Control Lists on IRP\_MJ\_CREATE

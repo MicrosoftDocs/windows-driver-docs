@@ -2,6 +2,7 @@
 title: Web Services on Devices for Printing (WS-Print)
 description: Web services on devices for printing (WS-Print) was introduced to provide a connection protocol for printing and scanning peripherals.
 ms.date: 09/24/2024
+ms.topic: concept-article
 ---
 
 # Web Services on devices for printing (WS-Print)

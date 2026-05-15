@@ -2,6 +2,7 @@
 title: Hot Spot Authentication
 description: Hot spot authentication
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Hot spot authentication

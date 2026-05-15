@@ -2,6 +2,7 @@
 title: Enabling Support for the Direct3D Version 10 DDI
 description: Enabling Support for the Direct3D Version 10 DDI
 ms.date: 10/20/2018
+ms.topic: concept-article
 ---
 
 # Enabling Support for the Direct3D Version 10 DDI

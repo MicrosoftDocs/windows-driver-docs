@@ -2,6 +2,7 @@
 title: UE hang detection and recovery flow
 description: This diagram shows the UE hang detection and reset flow.
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # UE hang detection and recovery flow

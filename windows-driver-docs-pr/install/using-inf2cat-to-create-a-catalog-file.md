@@ -2,6 +2,7 @@
 title: Using Inf2Cat to Create a Catalog File
 description: Using Inf2Cat to Create a Catalog File
 ms.date: 05/08/2023
+ms.topic: how-to
 ---
 
 # Using Inf2Cat to Create a Catalog File

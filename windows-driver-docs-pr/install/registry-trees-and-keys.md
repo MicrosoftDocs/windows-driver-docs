@@ -2,6 +2,7 @@
 title: Registry Trees and Keys for Devices and Drivers
 description: Registry Trees and Keys for Devices and Drivers
 ms.date: 05/20/2022
+ms.topic: concept-article
 ---
 
 # Registry Trees and Keys for Devices and Drivers

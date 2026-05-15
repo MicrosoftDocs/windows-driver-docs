@@ -2,6 +2,7 @@
 title: Device Experience Scenarios for Document Devices
 description: Device experience scenarios for document devices
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Device experience scenarios for document devices

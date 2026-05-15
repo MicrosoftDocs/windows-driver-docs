@@ -4,6 +4,7 @@ description: CM_PROB_PHANTOM
 keywords:
 - CM_PROB_PHANTOM
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Code 45 - CM_PROB_PHANTOM

@@ -7,6 +7,7 @@ keywords:
 - registering network interfaces
 - NdisIfRegisterInterface
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Registering a Network Interface

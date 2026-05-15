@@ -2,6 +2,7 @@
 title: Hello World Installation File
 description: Hello World installation file
 ms.date: 06/23/2023
+ms.topic: install-set-up-deploy
 ---
 
 # Hello World installation file

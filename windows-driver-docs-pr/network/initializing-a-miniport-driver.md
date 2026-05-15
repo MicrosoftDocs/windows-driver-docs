@@ -6,6 +6,7 @@ keywords:
 - initializing miniport drivers
 - NDIS miniport drivers WDK , initializing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing a Miniport Driver

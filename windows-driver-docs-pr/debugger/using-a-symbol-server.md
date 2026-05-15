@@ -2,6 +2,7 @@
 title: Using a Symbol Server
 description: Using a Symbol Server
 ms.date: 09/28/2021
+ms.topic: how-to
 ---
 
 # Using a Symbol Server
@@ -12,7 +13,7 @@ A symbol server enables the debugger to automatically retrieve the correct symbo
 
 SymSrv can be used with WinDbg, KD, NTSD, or CDB.
 
-To use this symbol server with the debugger, simply include the text **srv\\*** in the symbol path. For example:
+To use this symbol server with the debugger, simply include the text **srv\*** in the symbol path. For example:
 
 ```console
 set _NT_SYMBOL_PATH = srv*DownstreamStore*SymbolStoreLocation

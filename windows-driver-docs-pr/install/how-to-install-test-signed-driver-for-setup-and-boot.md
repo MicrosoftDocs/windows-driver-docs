@@ -2,6 +2,7 @@
 title: How to Install a Test-signed Driver Package Required for Windows Setup and Boot
 description: Describes how to install a test-signed driver package on a computer running Windows Server or after Windows Setup
 ms.date: 03/03/2022
+ms.topic: how-to
 ---
 
 # How to Install a Test-signed Driver Package Required for Windows Setup and Boot

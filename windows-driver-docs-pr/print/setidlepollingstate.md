@@ -4,6 +4,7 @@ description: SetIdlePollingState
 keywords:
 - SetIdlePollingState
 ms.date: 01/30/2024
+ms.topic: reference
 ---
 
 # SetIdlePollingState

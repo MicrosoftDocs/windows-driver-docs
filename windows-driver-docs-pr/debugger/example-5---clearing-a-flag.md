@@ -2,6 +2,7 @@
 title: Example 5 Clearing a Flag
 description: Example 5 Clearing a Flag
 ms.date: 10/12/2018
+ms.topic: concept-article
 ---
 
 # Example 5: Clearing a Flag

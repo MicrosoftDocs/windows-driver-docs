@@ -2,6 +2,7 @@
 title: Analyzing USB Performance Issues by Using Xperf and Netmon
 description: This topic provides information about how to view the timeline of events captured in a USB ETW log.
 ms.date: 01/12/2024
+ms.topic: how-to
 ---
 
 # Analyzing USB performance issues by using Xperf and Netmon

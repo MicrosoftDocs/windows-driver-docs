@@ -13,6 +13,7 @@ keywords:
 - stopping I/O targets WDK KMDF
 - restarting I/O targets WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Controlling a General I/O Target's State

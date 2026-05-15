@@ -2,6 +2,7 @@
 title: Run New SMS Received Background Events
 description: Run new SMS received background events
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Run new SMS received background events

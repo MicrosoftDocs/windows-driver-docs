@@ -2,6 +2,7 @@
 title: Sharing Processor Resources During Startup from a Low-Power State
 description: Sharing Processor Resources During Startup from a Low-Power State
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Sharing Processor Resources During Startup from a Low-Power State

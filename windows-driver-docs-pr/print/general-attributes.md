@@ -6,6 +6,7 @@ keywords:
 - general printer attributes WDK Unidrv
 - general printer attributes WDK Unidrv , about general printer attributes
 ms.date: 06/22/2023
+ms.topic: concept-article
 ---
 
 # General attributes

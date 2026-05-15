@@ -2,6 +2,7 @@
 description: The WpdHelloWorldDriver Sample
 title: The WpdHelloWorldDriver Sample
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # The WpdHelloWorldDriver Sample

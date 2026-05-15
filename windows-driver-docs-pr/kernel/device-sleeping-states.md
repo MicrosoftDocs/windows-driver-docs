@@ -1,11 +1,12 @@
 ---
 title: Device Low-Power States
-description: Device Low-Power States
+description: Provides information about device low-power states.
 keywords: ["device power states WDK kernel", "device low-power states WDK power management", "sleep power management WDK kernel", "Dx names WDK power management", "asleep devices WDK power management", "lowest-powered device state WDK kernel", "highest-powered device low-power state WDK kernel", "intermediate sleeping state WDK kernel", "low power modes WDK kernel", "power saving modes WDK kernel", "continuous power WDK kernel", "delays WDK power management", "state transition delays WDK power management"]
-ms.date: 03/11/2024
+ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
-# Device Low-Power States
+# Device low-power states
 
 Device power states D1, D2, and D3 are the device low-power states. Starting with Windows 8, D3 is divided into two substates, [D3hot](#d3hot-substate) and [D3cold](#d3cold-substate).
 
@@ -13,11 +14,12 @@ D1 and D2 are intermediate low-power states. Many classes of devices do not defi
 
 The following sections describe D1, D2, and D3:
 
-- [Device Power State D1](#device-power-state-d1)
-
-- [Device Power State D2](#device-power-state-d2)
-
-- [Device Power State D3](#device-power-state-d3)
+- [Device low-power states](#device-low-power-states)
+  - [Device Power State D1](#device-power-state-d1)
+  - [Device Power State D2](#device-power-state-d2)
+  - [Device Power State D3](#device-power-state-d3)
+    - [D3hot substate](#d3hot-substate)
+    - [D3cold substate](#d3cold-substate)
 
 ## Device Power State D1
 
@@ -67,7 +69,7 @@ Many classes of device do not define this state.
 
 D3 is the lowest-powered device low-power state. All devices must support this state.
 
-Starting with Windows 8, the operating system subdivides D3 into two separate and distinct substates, D3hot and D3cold. Earlier versions of Windows define the D3 state, but not the D3hot and D3cold substates. However, all versions of the [PCI Bus Power Management Interface Specification](https://pcisig.com/specifications/conventional/) define separate D3hot and D3cold substates, and versions 4 and later of the [Advanced Configuration and Power Interface Specification](https://uefi.org/specifications) define D3hot and D3cold substates.
+Starting with Windows 8, the operating system subdivides D3 into two separate and distinct substates, D3hot and D3cold. Earlier versions of Windows define the D3 state, but not the D3hot and D3cold substates. However, all versions of the [PCI Bus Power Management Interface Specification](https://pcisig.com/specifications) define separate D3hot and D3cold substates, and versions 4 and later of the [Advanced Configuration and Power Interface Specification](https://uefi.org/specifications) define D3hot and D3cold substates.
 
 Although versions of Windows before Windows 8 do not explicitly define the D3hot and D3cold substates of D3, these substates exist implicitly in these earlier versions of Windows. A device is implicitly in the D3hot substate if the device is explicitly in the D3 state, and the computer is in the S0 system power state. In D3hot, a device is connected to a power source (although the device might be configured to draw low current), and the presence of the device on the bus can be detected. A device is implicitly in the D3cold substate if it is explicitly in the D3 state, and the computer is in a low-power Sx state (a state other than S0). In this implicit D3cold substate, the device might receive a trickle current, but the device and the computer are effectively turned off until a wake event occurs.
 

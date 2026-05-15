@@ -1,14 +1,26 @@
 ---
-title: PnPUtil Examples
-description: PnPUtil Examples
-ms.date: 01/08/2024
+title: PnPUtil Command Examples for Windows Driver Management
+description: "Learn how to use PnPUtil commands to add, delete, enable, disable, and manage Windows drivers and devices with practical examples."
+ms.date: 11/05/2025
+ms.topic: how-to
+no-loc: ["enable-device", "remove-device", "restart-device", "scan-devices"]
 ---
 
-# PnPUtil Examples
+# PnPUtil examples
 
-This topic provides examples on how to use the PnPUtil tool.
+This article provides practical PnPUtil command examples for managing Windows drivers and devices. Each example includes the exact syntax and expected output to help you immediately apply these commands.
 
-## /add-driver
+**In this article, you'll learn how to:**
+- Add and install driver packages
+- Enable and disable devices
+- Enumerate drivers and devices on your system
+- Troubleshoot driver issues
+
+## Prerequisites
+
+Administrator rights are required for most PnPUtil commands.
+
+## <span class="no-loc">/add-driver</span> <a id="add-driver"></a>
 
 Add driver package
 
@@ -28,7 +40,7 @@ Add and install driver package on an existing device
 pnputil /add-driver device.inf /install
 ```
 
-## /delete-driver
+## <span class="no-loc">/delete-driver</span> <a id="delete-driver"></a>
 
 Delete driver package
 
@@ -42,15 +54,15 @@ Force delete driver package
 pnputil /delete-driver oem1.inf /force
 ```
 
-## /disable-device
+## <span class="no-loc">/disable-device</span> <a id="disable-device"></a>
 
-Disable device specified by device instance ID
+Disable the device specified by device instance ID
 
 ```console
 pnputil /disable-device "USB\VID_045E&PID_00DB\6&870CE29&0&1"
 ```
 
-Disable all devices with specific hardware/compatible ID
+Disable all devices with a specific hardware or compatible ID
 
 ```console
 pnputil /disable-device /deviceid "USB\Class_03"
@@ -62,7 +74,7 @@ Disable all devices of a specific class on a specific bus
 pnputil /disable-device /class "USB" /bus "PCI"
 ```
 
-## /enable-device
+## <span class="no-loc">/enable-device</span> <a id="enable-device"></a>
 
 Enable device specified by device instance ID
 
@@ -82,7 +94,7 @@ Enable all devices of a specific class on a specific bus
 pnputil /enable-device /class "USB" /bus "PCI"
 ```
 
-## /enum-classes
+## <span class="no-loc">/enum-classes</span> <a id="enum-classes"></a>
 
 Enumerate all device setup classes on the system
 
@@ -96,7 +108,7 @@ Enumerate information for a specific device setup class
 pnputil /enum-classes /class "Display"
 ```
 
-## /enum-devices
+## <span class="no-loc">/enum-devices</span> <a id="enum-devices"></a>
 
 Enumerate devices on the system. An enabled device appears with status **Started**; a disabled device appears as **Disabled**.
 
@@ -146,7 +158,7 @@ Enumerate all devices with specific bus
 pnputil /enum-devices /bus "PCI"
 ```
 
-## /enum-drivers
+## <span class="no-loc">/enum-drivers</span> <a id="enum-drivers"></a>
 
 Enumerate OEM driver packages
 
@@ -166,7 +178,7 @@ Enumerate all OEM driver packages and display driver files
 pnputil /enum-drivers /files
 ```
 
-## /enum-interfaces
+## <span class="no-loc">/enum-interfaces</span> <a id="enum-interfaces"></a>
 
 Enumerate only enabled interfaces on the system
 
@@ -180,7 +192,7 @@ Enumerate all interfaces with specific interface class GUID
 pnputil /enum-interfaces /class "{884b96c3-56ef-11d1-bc8c-00a0c91405dd}"
 ```
 
-## /export-driver
+## <span class="no-loc">/export-driver</span> <a id="export-driver"></a>
 
 Export driver package
 
@@ -194,7 +206,7 @@ Export all driver packages
 pnputil /export-driver * c:\backup
 ```
 
-## /remove-device
+## <span class="no-loc">/remove-device</span> <a id="remove-device"></a>
 
 Remove device specified by device instance ID
 
@@ -214,7 +226,7 @@ Remove all devices of a specific class on a specific bus
 pnputil /remove-device /class "USB" /bus "PCI"
 ```
 
-## /restart-device
+## <span class="no-loc">/restart-device</span> <a id="restart-device"></a>
 
 Restart device specified by device instance ID
 
@@ -234,17 +246,17 @@ Restart all devices of a specific class on a specific bus
 pnputil /restart-device /class "USB" /bus "PCI"
 ```
 
-## /scan-devices
+## <span class="no-loc">/scan-devices</span> <a id="scan-devices"></a>
 
-Scan the system for any device hardware changes
+Scan the system for any device hardware changes. Use this command after connecting new hardware to force Windows to detect it.
 
 ```console
 pnputil /scan-devices
 ```
 
-Administrator rights are required to run the pnputil /scan-devices command.
+After scanning, use /enum-devices /connected to verify your new device was detected.
 
-## /enum-devicetree
+## <span class="no-loc">/enum-devicetree</span> <a id="enum-devicetree"></a>
 
 Enumerate device tree
 
@@ -276,7 +288,7 @@ Enumerate tree and display device stack information, interfaces, drivers and ser
 pnputil /enum-devicetree /stack /interfaces /drivers /services
 ```
 
-## /enum-containers
+## <span class="no-loc">/enum-containers</span> <a id="enum-containers"></a>
 
 Enumerate all device containers on the system
 
@@ -287,7 +299,7 @@ pnputil /enum-containers
 Enumerate specific device container
 
 ```console
-pnputil /enum-containers /containerid ""{00000000-0000-0000-ffff-ffffffffffff}"
+pnputil /enum-containers /containerid "{00000000-0000-0000-ffff-ffffffffffff}"
 ```
 
 Enumerate all connected device containers and associated devices
@@ -303,7 +315,13 @@ Enumerate all disconnected device containers, associated devices and output to a
 pnputil /enum-containers /disconnected /devices /format xml /output-file disconnecteddevices.xml
 ```
 
-### See also
+## Troubleshooting
+
+- Verify you're running the command prompt as Administrator.
+- Check the PnPUtil Command Syntax for correct parameter format.
+- Use `/enum-devices /problem` to identify device issues.
+
+## Related content
 
 [PnPUtil](pnputil.md)
 

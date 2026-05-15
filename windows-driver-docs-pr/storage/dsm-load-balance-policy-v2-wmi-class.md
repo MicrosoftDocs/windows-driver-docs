@@ -2,6 +2,7 @@
 title: DSM_Load_Balance_Policy_V2 WMI Class
 description: DSM\_Load\_Balance\_Policy\_V2 WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # DSM\_Load\_Balance\_Policy\_V2 WMI Class

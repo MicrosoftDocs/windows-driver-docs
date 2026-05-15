@@ -2,6 +2,7 @@
 title: INF AddFilter Directive
 description: An AddFilter directive describes the installation a driver service as a filter driver.
 ms.date: 09/03/2024
+ms.topic: reference
 ---
 
 # INF AddFilter Directive

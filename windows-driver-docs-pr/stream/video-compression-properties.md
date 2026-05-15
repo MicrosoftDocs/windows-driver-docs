@@ -6,6 +6,7 @@ keywords:
 - compression properties WDK video capture
 - PROPSETID_VIDCAP_VIDEOCOMPRESSION
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Video Compression Properties

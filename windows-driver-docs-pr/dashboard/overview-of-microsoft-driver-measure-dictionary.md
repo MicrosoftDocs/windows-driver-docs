@@ -1,8 +1,8 @@
 ---
 title: Microsoft driver measure
 description: Publishers and authors use the descriptions of the Microsoft driver measures to better understand the criteria Microsoft uses in evaluating driver quality during driver flighting.
-ms.topic: article
 ms.date: 09/19/2024
+ms.topic: concept-article
 ---
 
 # Overview of the Microsoft driver measures
@@ -64,7 +64,9 @@ Microsoft constructs each measure differently, with a unique calculation logic, 
 ## Related topics
 
 - [Audio measures](audio-measures.md)
+- [Buses and Sensors measures](buses-and-sensors-measures.md)
 - [Camera measures](camera-measures.md)
+- [Ethernet measures](ethernet-measures.md)
 - [Fingerprint measures](fingerprint-measures.md)
 - [Firmware measures](firmware-measures.md)
 - [Graphics measures](graphics-measures.md)

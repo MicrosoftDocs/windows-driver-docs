@@ -5,6 +5,7 @@ keywords:
 - Print Capabilities WDK , plug-ins
 - IPrintOemPrintTicketProvider
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print Driver Plug-in Support

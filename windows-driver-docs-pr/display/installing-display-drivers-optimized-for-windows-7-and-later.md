@@ -2,6 +2,7 @@
 title: Installation Requirements for Display Drivers
 description: Installation Requirements for Display Drivers Optimized for Windows 7 and Later
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Installation Requirements for Display Drivers Optimized for Windows 7 and Later

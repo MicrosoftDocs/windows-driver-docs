@@ -1,17 +1,17 @@
 ---
 title: Get a submission
 description: Retrieves data for a specific submission of a product to the hardware dashboard in the Microsoft Partner Center.
-ms.topic: article
 ms.date: 04/05/2018
+ms.topic: how-to
 ---
 
 # Get a submission
 
-Use this method in the Microsoft Hardware API to retrieve data for a specific submission of a product.
+To retrieve data for a specific submission of a product, use this method in the Microsoft Hardware API.
 
 ## Prerequisites
 
-If you have not done so already, complete all the [prerequisites](dashboard-api.md) for the Microsoft Hardware APIs before trying to use any of these methods.
+Complete all the [prerequisites](dashboard-api.md) for the Microsoft Hardware APIs before trying to use any of these methods.
 
 ## Request
 
@@ -30,11 +30,11 @@ This method has the following syntax. See the following sections for usage examp
 
 ### Request parameters
 
-Do not provide request parameters for this method.
+Don't provide request parameters for this method.
 
 ### Request body
 
-Do not provide a request body for this method.
+Don't provide a request body for this method.
 
 ### Request examples
 
@@ -48,7 +48,7 @@ Authorization: Bearer <your access token>
 
 ## Response
 
-The following example demonstrates the JSON response body returned by a successful request for a specific submission of a product. For more details about the values in the response body, see the following section.
+The following example demonstrates the JSON response body returned by a successful request for a specific submission of a product. For more information about the values in the responce body, see the following secction.
 
 ```json
 {
@@ -76,6 +76,10 @@ The following example demonstrates the JSON response body returned by a successf
       {
         "type": "certificationReport",
         "url": "https:// manage.devcenter.microsoft.com/dashboard/hardware/Driver/DownloadCertificationReport/29963920/13635057453741329/1152921504621441930"
+      },
+      {
+        "type": "unreferencedFilesReport",
+        "url": "<SAS URL from Hardware API>"
       }
     ],
     "messages": []
@@ -102,7 +106,7 @@ The following example demonstrates the JSON response body returned by a successf
 
 ### Response body
 
-Refer to [Submission resource](get-product-data.md#submission-resource)  for more details
+For more details, see [Submission resource](get-product-data.md#submission-resource)
 
 ## Error codes
 

@@ -2,6 +2,7 @@
 title: Creating a Persistent Unique Identifier for a Universal Drivers Based Sensor
 description: Creating a persistent unique identifier for a universal drivers based driver
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # Creating a persistent unique identifier for a sensor

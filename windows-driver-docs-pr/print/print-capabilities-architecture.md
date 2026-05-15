@@ -4,6 +4,7 @@ description: Provides information about print capabilities architecture.
 keywords:
 - Print Capabilities WDK, architecture
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Print capabilities architecture

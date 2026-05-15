@@ -5,7 +5,8 @@ keywords:
 - WHEA WDK , debugger extensions
 - Windows Hardware Error Architecture WDK , debugger extensions
 - debugger extensions WDK WHEA , whea debugger extension WDK WHEA , errpkt debugger extension WDK WHEA , errrec debugger extension WDK WHEA
-ms.date: 03/03/2023
+ms.date: 03/26/2025
+ms.topic: reference
 ---
 
 # Windows Hardware Error Architecture Debugger Extensions

@@ -2,6 +2,7 @@
 title: V4 Printer Driver User Interfaces
 description: V4 print drivers support customization in both the Windows Desktop UI, and the Microsoft Store app UI.
 ms.date: 01/25/2023
+ms.topic: concept-article
 ---
 
 # V4 Printer Driver User Interfaces

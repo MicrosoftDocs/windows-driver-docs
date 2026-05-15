@@ -6,6 +6,7 @@ keywords:
 - events WDK KMDF
 - events WDK KMDF , framework objects
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Framework Object Events

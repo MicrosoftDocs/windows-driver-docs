@@ -1,35 +1,37 @@
 ---
 title: Bug Check Code Reference
-description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
+description: Explore common bug checks, review the codes displayed on the bug check screen, and learn how to use the !analyze extension in the Windows Debugger (WinDbg).
 ms.custom: "se-defect-target"
-ms.date: 08/23/2024
+ms.date: 07/15/2025
+ms.topic: error-reference
 ---
 
-# Bug Check Code Reference
+# Bug check code reference
 
-This section contains descriptions of common bug check codes that are displayed on the blue bug check screen. This section also describes how you can use the [**!analyze**](../debuggercmds/-analyze.md) extension in the Windows Debugger to display information about a bug check code.
+This article describes common bug check codes displayed on the bug check screen. You can use the [!analyze](../debuggercmds/-analyze.md) extension in the Windows Debugger (WinDbg) to display information about a bug check code.
 
-> [!NOTE]
-> This topic is for programmers. If you are a customer whose system has displayed a blue screen with a bug check code, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
+The information in this article is intended for programmers. Depending on your scenario requirements, you might be interested in another article:
 
-For general information about bug check system halt errors, see [Bug Checks (Blue Screens)](bug-checks--blue-screens-.md).
+- If you're a customer whose system is displaying a bug check code, see [Resolving Blue Screen errors in Windows](https://support.microsoft.com/windows/resolving-blue-screen-errors-in-windows-60b01860-58f2-be66-7516-5c45a66ae3c6).
 
-If you are an IT professional, see this article for additional information, [Troubleshoot "blue screen" or Stop error problems before you contact Microsoft Support](https://support.microsoft.com/help/3106831/). 
+- If you're an IT professional, you can find more information in [Advanced troubleshooting for stop code errors](/troubleshoot/windows-client/performance/stop-code-error-troubleshooting). 
 
-## Using WinDbg to display stop code information
+- For general information about bug check system halt errors, see [Bug checks](bug-checks--blue-screens-.md).
 
-If a specific bug check code does not appear in this topic, use the [**!analyze**](../debuggercmds/-analyze.md) extension in the Windows Debugger (WinDbg) with the following syntax (in kernel mode), replacing `<code>` with a bug check code:
+## Use WinDbg to display stop code information
 
-`!analyze -show <code>`
+If you're looking for a specific bug check code that isn't described in this article, you can use the [!analyze](../debuggercmds/-analyze.md) extension in WinDbg. This command causes WinDbg to display information about the specified bug check code.
 
-Entering this command causes WinDbg to display information about the specified bug check code. If your default number base (radix) is not 16, prefix `<code>` with **0x**.
+Run the extention in kernel mode with the syntax `!analyze -show <code>`. Replace the `<code>` placeholder with the bug check code to analyze. If your default number base (radix) isn't 16, prefix the `<code>` value with `0x`.
 
-Provide the stop code parameters to the !analyze command to display any available parameter information. For example, to display information on [Bug Check 0x9F: DRIVER_POWER_STATE_FAILURE](bug-check-0x9f--driver-power-state-failure.md), with a parameter 1 value of 0x3, use `!analyze -show 0x9F 0x3` as shown here.  
+If you want to display any available parameter information, include the stop code parameters in the `!analyze` command. To display information on [Bug Check 0x9F: DRIVER_POWER_STATE_FAILURE](bug-check-0x9f--driver-power-state-failure.md) for a parameter 1 value of 0x3, you use the command `!analyze -show 0x9F 0x3`. The following example demonstrates the syntax and output:
 
 ```dbgcmd
 1: kd> !analyze -show 0x9F 0x3
+
 DRIVER_POWER_STATE_FAILURE (9f)
 A driver has failed to complete a power IRP within a specific time.
+
 Arguments:
 Arg1: 0000000000000003, A device object has been blocking an Irp for too long a time
 Arg2: 0000000000000000, Physical Device Object of the stack
@@ -37,29 +39,23 @@ Arg3: 0000000000000000, nt!_TRIAGE_9F_POWER on Win7 and higher, otherwise the Fu
 Arg4: 0000000000000000, The blocked IRP
 ```
 
-To download WinDbg, see [Debugging Tools for Windows](debugger-download-tools.md). To learn more about the WinDbg development tools, see [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md).
+To download WinDbg, see [Debugging tools for Windows](debugger-download-tools.md). To learn more about the WinDbg development tools, see [Get started with Windows debugging](getting-started-with-windows-debugging.md).
 
-## Bug check dump files
+## Work with dump files
 
-When a bug check occurs, a dump file may be available that contains additional information about the contents of memory when the stop code occurred. To understand the contents of memory during a failure, knowledge of processor memory registers and assembly is required.
+When a bug check occurs, a **bug check dump file** might be available. The file contains more information about the memory contents when the stop code occurred. To understand the contents of memory during a failure, knowledge of processor memory registers and assembly is required. For more information, see:
 
-For more information, see:
+- [Analyze a kernel-mode dump file with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
+- The [!analyze](../debuggercmds/-analyze.md) extension for WinDbg
+- [Processor architecture (x86 or x64)](processor-architecture.md)
 
-- [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
+**Live dump stop codes** don't reset the operating system. They allow for the capture of memory information for abnormal situations where the operating system can continue. This article doesn't list the live dump stop codes. For more information, see [Kernel live dump code reference](kernel-live-dump-code-reference.md).
 
-- [!analyze](../debuggercmds/-analyze.md)
+## Review bug check codes
 
-- [Processor Architecture](processor-architecture.md)
+The following table lists the bug check codes and provides links for more information about each code.
 
-## Live Dumps
-
- Live Dump stop codes do not reset the OS, but allow for the capture of memory information for abnormal situations where the operating system can continue. Live dump stop codes are not listed here. For information about live dumps, see [Bug Check Code Reference - Live Dump](kernel-live-dump-code-reference.md).
-
-## Bug Check Codes
-
-The following table provides links to bug check codes.
-
-| Code       | Name                                                                                                                                              |
+| Code       | Name and reference link                                                                                                                           |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0x00000001 | [**APC\_INDEX\_MISMATCH**](bug-check-0x1--apc-index-mismatch.md)                                                                                  |
 | 0x00000002 | [**DEVICE\_QUEUE\_NOT\_BUSY**](bug-check-0x2--device-queue-not-busy.md)                                                                           |
@@ -425,6 +421,8 @@ The following table provides links to bug check codes.
 | 0x000001EA | [**SECURE\_PCI\_CONFIG\_SPACE\_ACCESS\_VIOLATION**](bug-check-0x1ea--secure-pci-config-space-access-violation.md)                                 |
 | 0x000001EB | [**DAM\_WATCHDOG\_TIMEOUT**](bug-check-0x1eb--dam-watchdog-timeout.md)                                                                            |
 | 0x000001ED | [**HANDLE\_ERROR\_ON\_CRITICAL\_THREAD**](bug-check-0x1ed--handle-error-on-critical-thread.md)                                                    |
+| 0x000001F1 | [**KASAN\_ENLIGHTENMENT\_VIOLATION**](bug-check-0x1f1--kasan-enlightement-violation.md)                                                           |
+| 0x000001F2 | [**KASAN\_ILLEGAL\_ACCESS**](bug-check-0x1f2--kasan-illegal-access.md)                                                                            |
 | 0x00000356 | [**XBOX\_ERACTRL\_CS\_TIMEOUT**](bug-check-0x356--xbox-eractrl-cs-timeout.md)                                                                     |
 | 0x00000BFE | [**BC\_BLUETOOTH\_VERIFIER\_FAULT**](bug-check-0xbfe--bc-bluetooth-verifier-fault.md)                                                             |
 | 0x00000BFF | [**BC\_BTHMINI\_VERIFIER\_FAULT**](bug-check-0xbff--bc-bthmini-verifier-fault.md)                                                                 |
@@ -439,8 +437,7 @@ The following table provides links to bug check codes.
 | 0xC0000221 | [**STATUS\_IMAGE\_CHECKSUM\_MISMATCH**](bug-check-0xc0000221--status-image-checksum-mismatch.md)                                                  |
 | 0xDEADDEAD | [**MANUALLY\_INITIATED\_CRASH1**](bug-check-0xdeaddead--manually-initiated-crash1.md)                                                             |
 
-## See also
+## Related articles
 
-[Bug Checks (Blue Screens)](bug-checks--blue-screens-.md)
-
-[Analyze Bug Check Blue Screen Data](blue-screen-data.md)
+- [Bug checks)](bug-checks--blue-screens-.md)
+- [Analyze bug check Blue Screen data](blue-screen-data.md)

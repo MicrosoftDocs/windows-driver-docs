@@ -2,6 +2,7 @@
 title: Improvements in XPSDrv
 description: This article provides information about updates that have been made to the XPSDrv rendering architecture.
 ms.date: 09/21/2023
+ms.topic: release-notes
 ---
 
 # Improvements in XPSDrv

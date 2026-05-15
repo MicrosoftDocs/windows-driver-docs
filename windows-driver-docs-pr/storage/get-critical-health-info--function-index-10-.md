@@ -2,6 +2,7 @@
 title: Get Critical Health Info (Function Index 10)
 description: This function returns critical health-related information.
 ms.date: 11/17/2022
+ms.topic: reference
 ---
 
 # Get Critical Health Info (Function Index 10)

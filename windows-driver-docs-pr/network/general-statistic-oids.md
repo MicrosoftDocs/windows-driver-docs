@@ -2,6 +2,7 @@
 title: General Statistic OIDs
 description: General Statistic OIDs
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # General Statistic OIDs

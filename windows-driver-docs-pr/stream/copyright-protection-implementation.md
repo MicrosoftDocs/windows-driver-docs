@@ -14,6 +14,7 @@ keywords:
 - cryptography WDK DVD decoder
 - authentication WDK DVD decoder
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Copyright Protection Implementation

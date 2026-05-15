@@ -2,6 +2,7 @@
 title: Setting up USB 3.0 xHCI kernel-mode debugging (KDUSB xHCI-DBC USB 3.0)
 description: Learn how to manually set up xHCI kernel-mode debugging over a USB 3.0 cable. (KDUSB xHCI-DBC USB 3.0)
 ms.date: 10/09/2024
+ms.topic: how-to
 ---
 
 # Setting up USB 3.0 xHCI kernel-mode debugging (KDUSB xHCI-DBC USB 3.0)

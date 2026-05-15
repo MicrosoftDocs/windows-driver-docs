@@ -2,6 +2,7 @@
 title: Excluding Packet Delivery to Extensible Switch Destination Ports
 description: Excluding Packet Delivery to Extensible Switch Destination Ports
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Excluding Packet Delivery to Extensible Switch Destination Ports

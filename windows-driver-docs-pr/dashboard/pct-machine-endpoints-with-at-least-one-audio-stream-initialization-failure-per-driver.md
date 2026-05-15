@@ -1,8 +1,8 @@
 ---
 title: Percent of machine endpoints with at least one audio stream initialization failure per Driver
 description: This measure calculates the percentage of machine endpoints with at least one audio stream initialization failure.
-ms.topic: article
 ms.date: 11/18/2022
+ms.topic: concept-article
 ---
 
 # Percent of machine endpoints with at least 1 audio stream initialization failure per Driver

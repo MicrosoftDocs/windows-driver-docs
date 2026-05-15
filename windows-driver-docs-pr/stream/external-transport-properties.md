@@ -6,6 +6,7 @@ keywords:
 - transport properties WDK video capture
 - PROPSETID_EXT_TRANSPORT
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # External Transport Properties

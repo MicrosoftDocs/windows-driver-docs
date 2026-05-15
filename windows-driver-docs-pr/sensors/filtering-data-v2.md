@@ -16,6 +16,7 @@ keywords:
 - filtering data
 - data filtering
 ms.date: 01/11/2024
+ms.topic: how-to
 ---
 
 # Filtering data

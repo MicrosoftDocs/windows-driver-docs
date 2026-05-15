@@ -4,6 +4,7 @@ description: Determining Connection Offload Capabilities
 keywords:
 - connection offload WDK TCP/IP transport , capabilities
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Determining Connection Offload Capabilities

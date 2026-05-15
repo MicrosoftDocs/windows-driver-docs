@@ -7,6 +7,7 @@ keywords:
 - NDIS filter drivers WDK , OID requests
 - OIDs WDK networking , filter drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Filter Module OID Requests

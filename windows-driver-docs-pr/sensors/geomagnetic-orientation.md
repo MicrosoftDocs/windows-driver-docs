@@ -2,6 +2,7 @@
 title: Geomagnetic Orientation
 description: This topic provides information about the data fields that are specific to the geomagnetic orientation sensor.
 ms.date: 12/01/2022
+ms.topic: reference
 ---
 
 # Geomagnetic orientation

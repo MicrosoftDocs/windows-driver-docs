@@ -6,6 +6,7 @@ keywords:
 - PnP WDK UMDF , power management interfaces
 - power management WDK UMDF , interfaces
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # PnP and Power Management Interfaces

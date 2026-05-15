@@ -4,6 +4,7 @@ description: This section contains kernel mode network driver topics for the Ws2
 keywords:
 - Ws2def.h network drivers
 ms.date: 08/08/2017
+ms.topic: reference
 ---
 
 # Ws2def.h

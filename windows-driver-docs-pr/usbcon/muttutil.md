@@ -2,6 +2,7 @@
 title: MuttUtil
 description: MuttUtil performs various tasks on MUTT devices.
 ms.date: 09/23/2024
+ms.topic: how-to
 ---
 
 # MuttUtil

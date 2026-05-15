@@ -4,6 +4,7 @@ description: TraceView Limitations
 keywords:
 - TraceView WDK , limitations
 ms.date: 09/12/2018
+ms.topic: concept-article
 ---
 
 # TraceView Limitations

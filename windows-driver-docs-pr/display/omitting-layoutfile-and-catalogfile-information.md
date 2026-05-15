@@ -7,6 +7,7 @@ keywords:
 - CatalogFile directive WDK display
 - LayoutFile directive WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Omitting LayoutFile and CatalogFile Information

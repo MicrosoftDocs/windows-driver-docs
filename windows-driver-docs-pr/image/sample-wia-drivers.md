@@ -2,6 +2,7 @@
 title: Sample WIA Drivers
 description: Sample WIA Drivers
 ms.date: 05/29/2020
+ms.topic: reference
 ---
 
 # Sample WIA Drivers

@@ -13,6 +13,7 @@ keywords:
 - filters WDK audio , MIDI
 - filters WDK audio , DirectMusic
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # MIDI and DirectMusic Filters

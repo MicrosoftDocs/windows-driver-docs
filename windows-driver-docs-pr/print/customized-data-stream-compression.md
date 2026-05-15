@@ -8,6 +8,7 @@ keywords:
 - compressed data streams WDK Unidrv
 - Unidrv WDK print
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Customized Data Stream Compression

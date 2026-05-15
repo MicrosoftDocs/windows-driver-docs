@@ -2,6 +2,7 @@
 title: Deployment Properties for Driver Package Projects
 description: You can configure the automatic deployment of a driver package on a remote test computer in each configuration of your project.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Deployment Properties for Driver Package Projects
@@ -58,7 +59,6 @@ You can use the **Additional Files** box to specify custom installation scripts 
 
 
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
-* [How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md)
 * [Getting Started with Windows Debugging](../debugger/getting-started-with-windows-debugging.md)
  
 

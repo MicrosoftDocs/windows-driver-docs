@@ -4,6 +4,7 @@ description: This topic describes the Integration step for the Mobile Plans prog
 keywords:
 - Windows Mobile Plans Integration, Mobile Plans integration mobile operators
 ms.date: 03/25/2019
+ms.topic: integration
 ---
 
 # Mobile Plans Integration

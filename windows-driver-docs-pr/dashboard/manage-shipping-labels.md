@@ -1,8 +1,8 @@
 ---
 title: Manage Shipping Labels
 description: This document contains information about how to create or update shipping labels for driver submission in the hardware dashboard
-ms.topic: article
 ms.date: 08/23/2018
+ms.topic: how-to
 ---
 # Manage Shipping Labels
 

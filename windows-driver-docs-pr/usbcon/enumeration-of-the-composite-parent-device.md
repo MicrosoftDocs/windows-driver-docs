@@ -2,6 +2,7 @@
 title: Enumeration of USB composite devices
 description: When a new USB device is connected to a host machine, the USB bus driver creates a physical device object (PDO) for the device.
 ms.date: 06/27/2024
+ms.topic: concept-article
 ---
 
 # Enumeration of USB composite devices

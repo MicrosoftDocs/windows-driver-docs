@@ -3,6 +3,7 @@ title: Using AMLI Debugger Extensions
 description: Using AMLI Debugger Extensions
 keywords: ["AMLI Debugger, AMLI Debugger extensions", "amli extension", "acpikd.amli extension"]
 ms.date: 11/07/2018
+ms.topic: concept-article
 ---
 
 # Using AMLI Debugger Extensions

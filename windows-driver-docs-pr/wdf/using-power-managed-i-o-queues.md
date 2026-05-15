@@ -6,6 +6,7 @@ keywords:
 - power-managed I/O queues WDK KMDF
 - Requeue argument WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using Power-Managed I/O Queues

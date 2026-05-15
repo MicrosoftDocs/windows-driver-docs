@@ -4,6 +4,7 @@ description: IPrintOemDriverUni COM Interface
 keywords:
 - IPrintOemDriverUni
 ms.date: 07/17/2023
+ms.topic: reference
 ---
 
 # IPrintOemDriverUni COM Interface

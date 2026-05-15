@@ -3,6 +3,7 @@ title: Annotated x64 Disassembly
 description: Annotated x64 Disassembly
 keywords: ["x64 processor, annotated disassembly"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Annotated x64 Disassembly

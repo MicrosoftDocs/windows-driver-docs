@@ -2,6 +2,7 @@
 title: Using KMDF Verifier
 description: Using KMDF Verifier
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Using KMDF Verifier

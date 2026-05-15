@@ -2,6 +2,7 @@
 title: Implementation Notes for Segmentation Filters
 description: Implementation Notes for Segmentation Filters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Implementation Notes for Segmentation Filters

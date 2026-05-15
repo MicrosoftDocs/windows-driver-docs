@@ -4,6 +4,7 @@ description: How to run DevGen, including syntax and parameters.
 keywords:
 - DevGen Command Syntax Driver Development Tools
 ms.date: 12/01/2022
+ms.topic: how-to
 ---
 
 # DevGen Command Syntax
@@ -21,7 +22,7 @@ DEVGEN [/add [<…>] | /remove <…>| /?]
 
 ## Commands
 
-### /add
+### <a id="add">:::no-loc text="/add":::</a>
 
 Create a device.
 
@@ -50,7 +51,7 @@ Flags:
 
 `/subtree` - remove entire device subtree, including any child devices.
 
-### /remove
+### <a id="remove">:::no-loc text="/remove":::</a>
 
 Remove a device specified by the device instance ID. Only devices created using DevGen can be removed with DevGen.
 

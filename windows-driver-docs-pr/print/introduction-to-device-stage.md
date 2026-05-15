@@ -2,6 +2,7 @@
 title: Introduction to Device Stage
 description: Introduction to Device Stage
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Introduction to Device Stage

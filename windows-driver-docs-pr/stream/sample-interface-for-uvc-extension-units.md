@@ -6,6 +6,7 @@ keywords:
 - extension units WDK USB Video Class , samples, interface
 - sample code WDK USB Video Class , interface for UVC extension units
 ms.date: 09/17/2021
+ms.topic: reference
 ---
 
 # Sample Interface for UVC Extension Units

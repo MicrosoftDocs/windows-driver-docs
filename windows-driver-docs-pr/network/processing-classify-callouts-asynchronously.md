@@ -7,6 +7,7 @@ keywords:
 - pending WFP classify callouts WDK Windows Filtering Platform
 - classify callouts WDK Windows Filtering Platform , asynchronous processing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Processing Classify Callouts Asynchronously

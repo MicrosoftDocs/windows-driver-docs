@@ -2,6 +2,7 @@
 title: Provisioning for Hotspot Authentication
 description: Provisioning for hotspot authentication
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Provisioning for hotspot authentication

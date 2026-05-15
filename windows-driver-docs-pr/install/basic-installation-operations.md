@@ -6,6 +6,7 @@ keywords:
 - device installation functions WDK SetupAPI
 - SP_DEVINFO_DATA
 ms.date: 03/11/2022
+ms.topic: install-set-up-deploy
 ---
 
 # Basic Installation Operations

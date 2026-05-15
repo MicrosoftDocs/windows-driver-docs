@@ -6,6 +6,7 @@ keywords:
 - client modules WDK Network Module Registrar , multiple attached
 - multiple attached network modules WDK Network Module Registrar
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Managing Multiple Attached Client Modules

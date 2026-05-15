@@ -2,6 +2,7 @@
 title: Ending a Debugging Session in KD
 description: Ending a Debugging Session in KD
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Ending a Debugging Session in KD

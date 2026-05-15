@@ -2,6 +2,7 @@
 title: Writing an Error or Warning Log Entry
 description: Writing an Error or Warning Log Entry
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Writing an Error or Warning Log Entry

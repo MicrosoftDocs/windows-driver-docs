@@ -7,6 +7,7 @@ keywords:
 - pausing driver stacks WDK networking
 - restarting driver stacks WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Enhanced Run-time Reconfiguration Abilities

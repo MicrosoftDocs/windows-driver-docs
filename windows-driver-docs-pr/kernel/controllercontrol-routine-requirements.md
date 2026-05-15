@@ -3,6 +3,7 @@ title: ControllerControl Routine Requirements
 description: ControllerControl Routine Requirements
 keywords: ["controller objects WDK kernel , writing ControllerControl routines", "ControllerControl routines, writing", "ControllerControl routines, requirements"]
 ms.date: 07/21/2021
+ms.topic: concept-article
 ---
 
 # ControllerControl Routine Requirements

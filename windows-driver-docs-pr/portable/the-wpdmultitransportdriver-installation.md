@@ -2,6 +2,7 @@
 description: Installing the WpdMultiTransportDriver Sample
 title: Installing the WpdMultiTransportDriver Sample
 ms.date: 03/03/2023
+ms.topic: how-to
 ---
 
 # Installing the WpdMultiTransportDriver Sample

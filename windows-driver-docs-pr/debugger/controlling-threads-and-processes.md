@@ -3,6 +3,7 @@ title: Controlling Threads and Processes
 description: Controlling Threads and Processes
 keywords: ["Debugger Engine API, threads and processes"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Controlling Threads and Processes

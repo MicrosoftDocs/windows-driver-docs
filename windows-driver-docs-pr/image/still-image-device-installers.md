@@ -2,6 +2,7 @@
 title: Still Image Device Installers
 description: Microsoft provides a class installer for still image devices
 ms.date: 03/24/2023
+ms.topic: install-set-up-deploy
 ---
 
 # Still Image Device Installers

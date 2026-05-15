@@ -2,6 +2,7 @@
 title: Validating Windows Drivers
 description: Various tools to use to validate that your driver package is compliant with the Windows Drivers rules.
 ms.date: 08/12/2024
+ms.topic: how-to
 ---
 
 # Validating Windows Drivers

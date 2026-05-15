@@ -2,6 +2,7 @@
 title: Creating Device-Specific Components for Image Acquisition APIs
 description: Creating Device-Specific Components for Image Acquisition APIs
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating Device-Specific Components for Image Acquisition APIs

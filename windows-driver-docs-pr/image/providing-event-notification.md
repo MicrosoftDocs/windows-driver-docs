@@ -2,6 +2,7 @@
 title: Providing Event Notification
 description: Providing Event Notification
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Providing Event Notification

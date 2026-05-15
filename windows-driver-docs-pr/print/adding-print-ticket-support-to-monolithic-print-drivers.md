@@ -7,6 +7,7 @@ keywords:
 - Print Tickets WDK , monolithic print drivers
 - IPrintTicketProvider
 ms.date: 01/26/2023
+ms.topic: how-to
 ---
 
 # Add print ticket support to monolithic print drivers

@@ -2,6 +2,7 @@
 title: Access Permissions for WIA Drivers
 description: Access Permissions for WIA Drivers
 ms.date: 03/27/2023
+ms.topic: concept-article
 ---
 
 # Access Permissions for WIA Drivers

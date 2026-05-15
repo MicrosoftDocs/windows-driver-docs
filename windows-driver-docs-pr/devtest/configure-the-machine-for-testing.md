@@ -5,6 +5,7 @@ keywords:
 - Sysfund tests
 - data-driven tests
 ms.date: 10/12/2018
+ms.topic: how-to
 ---
 
 # Configure the machine for testing

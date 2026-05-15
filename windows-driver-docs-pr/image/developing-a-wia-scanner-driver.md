@@ -2,6 +2,7 @@
 title: Developing a WIA Scanner Driver
 description: Developing a WIA Scanner Driver
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Developing a WIA Scanner Driver

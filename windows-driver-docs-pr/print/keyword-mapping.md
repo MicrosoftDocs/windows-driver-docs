@@ -2,6 +2,7 @@
 title: Keyword Mapping
 description: Keyword Mapping
 ms.date: 01/27/2023
+ms.topic: reference
 ---
 
 # Keyword Mapping

@@ -2,6 +2,7 @@
 title: Viewing and Editing Memory in CDB
 description: Viewing and Editing Memory in CDB
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Viewing and Editing Memory in CDB

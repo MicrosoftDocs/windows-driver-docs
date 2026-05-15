@@ -3,6 +3,7 @@ title: Using the CONNECT_FULLY_SPECIFIED Version of IoConnectInterruptEx
 description: Using the CONNECT_FULLY_SPECIFIED Version of IoConnectInterruptEx
 keywords: ["IoConnectInterruptEx", "CONNECT_FULLY_SPECIFIED", "manual interrupt detections WDK kernel", "line-based interrupts WDK kernel", "message-signaled interrupts WDK kernel", "FullySpecified"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Using the CONNECT\_FULLY\_SPECIFIED Version of IoConnectInterruptEx

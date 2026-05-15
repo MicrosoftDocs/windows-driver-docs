@@ -3,6 +3,7 @@ title: Dispatch Routines and IRQLs
 description: Dispatch Routines and IRQLs
 keywords: ["dispatch routines WDK kernel , IRQLs", "IRQLs WDK dispatch routines"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Dispatch Routines and IRQLs
@@ -24,6 +25,8 @@ Most drivers' dispatch routines are called in an arbitrary thread context at IRQ
 -   The [*DispatchPower*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine of drivers in the hibernation and/or paging paths can be called at IRQL = DISPATCH\_LEVEL. The [*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routines of such drivers must be prepared to handle PnP [**IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION**](./irp-mn-device-usage-notification.md) requests.
 
 -   The *DispatchPower* routine of drivers that require inrush power at start-up can be called at IRQL = DISPATCH\_LEVEL.
+
+-   The *DispatchPower*, *DispatchRead*, *DispatchWrite*, *DispatchDeviceControl*, and *DispatchInternalDeviceControl* routines can all be called at IRQL <= DISPATCH_LEVEL.
 
 For additional information, see [Managing Hardware Priorities](managing-hardware-priorities.md).
 

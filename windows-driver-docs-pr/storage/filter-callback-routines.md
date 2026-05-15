@@ -2,6 +2,7 @@
 title: Filter Callback Routines
 description: Filter Callback Routines
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Filter Callback Routines

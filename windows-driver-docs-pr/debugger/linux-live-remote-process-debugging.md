@@ -3,6 +3,8 @@ title: Linux live remote process debugging
 description: Linux live remote process debugging
 keywords: ["remote debugging, linux, process"]
 ms.date: 05/02/2024
+ms.topic: how-to
+ms.custom: sfi-image-nochange
 ---
 
 # Linux live remote process debugging
@@ -360,6 +362,8 @@ Use the `--debug` option to display additional information on the gdbserver cons
 [Linux symbols and sources](linux-dwarf-symbols.md)
 
 [Source Code Extended Access](source-code-extended-access.md)
+
+[Linux crash dumps](linux-crash-dumps.md)
 
 [ELFUTILS debuginfod](https://sourceware.org/elfutils/Debuginfod.html)
 

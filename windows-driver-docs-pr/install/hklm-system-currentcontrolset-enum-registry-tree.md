@@ -2,6 +2,7 @@
 title: HKLM\SYSTEM\CurrentControlSet\Enum Registry Tree
 description: The HKLM\SYSTEM\CurrentControlSet\Enum registry tree contains information about the devices on the system.
 ms.date: 05/20/2022
+ms.topic: reference
 ---
 
 # HKLM\\SYSTEM\\CurrentControlSet\\Enum Registry Tree

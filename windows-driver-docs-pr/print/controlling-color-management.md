@@ -4,6 +4,7 @@ description: Color management for a printer can be controlled by an application,
 keywords:
 - color management WDK print , controlling
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Controlling Color Management

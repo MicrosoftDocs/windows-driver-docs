@@ -2,6 +2,7 @@
 title: High Definition Audio DDI Reference
 description: High Definition Audio DDI Reference
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # High Definition Audio DDI Reference

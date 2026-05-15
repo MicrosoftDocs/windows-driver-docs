@@ -2,6 +2,7 @@
 title: ENCAPIPARAM_BITRATE
 description: The ENCAPIPARAM_BITRATE property is used to describe the bit rate supported by the device.
 ms.date: 10/08/2021
+ms.topic: reference
 ---
 
 # ENCAPIPARAM_BITRATE

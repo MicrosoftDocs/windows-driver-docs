@@ -8,6 +8,7 @@ keywords:
 - kernel-mode software tracing WDK
 - boot-time tracing WDK , about boot-time tracing
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Tracing During Boot

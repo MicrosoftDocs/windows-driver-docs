@@ -2,6 +2,7 @@
 title: Synchronizing Interrupt Code (UMDF 1)
 description: Synchronizing Interrupt Code
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Synchronizing Interrupt Code (UMDF 1)

@@ -12,6 +12,7 @@ keywords:
 - neither buffered nor direct I/O WDK KMDF
 - I/O requests WDK KMDF , data buffers
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Accessing Data Buffers in WDF Drivers (KMDF or UMDF)

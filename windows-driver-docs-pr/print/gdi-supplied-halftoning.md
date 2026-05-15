@@ -4,6 +4,7 @@ description: GDI-Supplied Halftoning
 keywords:
 - GDI-supplied halftoning WDK Unidrv
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # GDI-Supplied Halftoning

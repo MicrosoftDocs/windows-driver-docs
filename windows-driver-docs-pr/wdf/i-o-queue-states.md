@@ -11,6 +11,7 @@ keywords:
 - drained I/O queue state WDK KMDF
 - purged I/O queue state WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # I/O Queue States

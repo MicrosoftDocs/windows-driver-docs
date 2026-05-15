@@ -2,6 +2,7 @@
 title: Retrieving Graphics Memory Numbers
 description: Retrieving Graphics Memory Numbers
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Retrieving Graphics Memory Numbers

@@ -5,6 +5,7 @@ keywords:
 - IOMMU , WDDM
 - GPU isolation, WDDM
 ms.date: 09/24/2024
+ms.topic: concept-article
 ---
 
 # IOMMU-based GPU isolation

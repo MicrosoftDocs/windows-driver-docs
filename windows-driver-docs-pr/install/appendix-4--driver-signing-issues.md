@@ -2,6 +2,7 @@
 title: Appendix 4 Driver Signing Issues
 description: Two known driver signing issues are described below.
 ms.date: 04/20/2017
+ms.topic: troubleshooting-known-issue
 ---
 
 # Appendix 4: Driver Signing Issues

@@ -2,6 +2,7 @@
 title: Dynamic Format Change
 description: Dynamic Format Change
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Dynamic Format Change

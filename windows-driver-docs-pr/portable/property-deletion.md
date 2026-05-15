@@ -2,6 +2,7 @@
 description: Property Deletion
 title: Property Deletion
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Property Deletion

@@ -3,6 +3,7 @@ title: Calling WmiSystemControl to Handle WMI IRPs
 description: Calling WmiSystemControl to Handle WMI IRPs
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI", "WmiSystemControl"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Calling WmiSystemControl to Handle WMI IRPs

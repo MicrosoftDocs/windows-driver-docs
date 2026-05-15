@@ -5,6 +5,7 @@ keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads
 ms.date: 10/09/2020
 ms.custom: Fe
+ms.topic: concept-article
 ---
 
 # Introduction to NetAdapterCx hardware offloads

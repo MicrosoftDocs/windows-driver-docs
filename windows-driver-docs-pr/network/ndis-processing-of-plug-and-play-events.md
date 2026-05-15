@@ -5,6 +5,7 @@ keywords:
 - Plug and Play WDK NDIS miniport , IRP processing for NIC
 - IRP processing for NIC WDK NDIS
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Overview of NDIS Processing of Plug and Play Events

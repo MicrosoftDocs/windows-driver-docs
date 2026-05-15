@@ -5,6 +5,7 @@ keywords:
 - hardware keys WDK device installations , opening
 - opening hardware keys WDK device installations
 ms.date: 08/15/2022
+ms.topic: concept-article
 ---
 
 # Opening a device's hardware key

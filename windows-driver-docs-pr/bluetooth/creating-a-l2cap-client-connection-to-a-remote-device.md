@@ -10,6 +10,7 @@ keywords:
 - Logical Link Controller and Adaptation Protocol WDK Bluetooth
 - connections WDK Bluetooth
 ms.date: 01/10/2024
+ms.topic: concept-article
 ---
 
 # Creating a L2CAP client connection to a remote device

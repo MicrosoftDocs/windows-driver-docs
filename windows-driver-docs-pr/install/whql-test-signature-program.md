@@ -1,9 +1,7 @@
 ---
 title: WHQL Test Signature Program
 description: WHQL test signature program
-author: mhopkins-msft
 ms.date: 09/12/2024
-ms.author: mhopkins
 keywords:
 - driver signing WDK , WHQL digital signatures
 - signing drivers WDK , WHQL digital signatures
@@ -11,6 +9,7 @@ keywords:
 - signatures WDK , WHQL
 - test signing drivers WDK , WHQL digital signatures
 - WHQL digital signatures WDK
+ms.topic: how-to
 ---
 
 # WHQL test signature program

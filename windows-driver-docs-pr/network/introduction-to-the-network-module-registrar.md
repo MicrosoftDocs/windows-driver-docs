@@ -5,6 +5,7 @@ keywords:
 - Network Module Registrar WDK , about Network Module Registrar
 - NMR WDK , about Network Module Registrar
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Introduction to the Network Module Registrar

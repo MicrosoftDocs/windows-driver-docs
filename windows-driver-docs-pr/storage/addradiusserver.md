@@ -2,6 +2,7 @@
 title: AddRADIUSServer
 description: AddRADIUSServer
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # AddRADIUSServer

@@ -1,8 +1,8 @@
 ---
 title: Percent of machine endpoints with at least one audio capture stream initialization failure per driver
 description: This measure calculates the percentage of machine endpoints on which there was nonzero audio stream initialization unexpected failures
-ms.topic: article
 ms.date: 11/07/2022
+ms.topic: concept-article
 ---
 
 # Percent of machine endpoints with at least one audio capture stream initialization failure per driver

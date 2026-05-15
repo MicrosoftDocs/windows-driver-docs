@@ -3,6 +3,7 @@ title: Handling Device Interface Change Events
 description: Handling Device Interface Change Events
 keywords: ["notifications WDK PnP , device interface changes", "EventCategoryDeviceInterfaceChange notification", "device interface change notifications WDK PnP"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Handling Device Interface Change Events

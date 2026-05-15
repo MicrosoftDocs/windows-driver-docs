@@ -2,7 +2,6 @@
 metadata:
   title: FAQ on Custom Capabilities
   description: Describes Custom Capabilities for Hardware Support Apps (HSA) and how they differ from other capabilities.
-  ms.author: bagold
   ms.date: 03/17/2023
   ms.localizationpriority: medium
   ms.topic: faq
@@ -30,3 +29,8 @@ sections:
           |Deployment Dependencies    |WU: Driver package<br>Store: App|WU: Driver package<br>Store: App                  |
                                                                                                                                                                                                               
           For more information on DCAs, see [Getting started with Microsoft Store device apps](./getting-started.md).
+
+      - question: |
+          Is there a replacement for device metadata functionality?
+        answer: |
+          Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.

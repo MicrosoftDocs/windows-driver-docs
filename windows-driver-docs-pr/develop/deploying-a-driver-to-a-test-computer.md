@@ -2,6 +2,7 @@
 title: Deploying a Driver to a Test Computer
 description: In Visual Studio, the WDK provides a test feature that enables you to build, deploy, a driver on a test computer.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Deploying a Driver to a Test Computer

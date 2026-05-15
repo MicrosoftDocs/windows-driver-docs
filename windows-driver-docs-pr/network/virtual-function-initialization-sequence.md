@@ -2,6 +2,7 @@
 title: Virtual Function Initialization Sequence
 description: Virtual Function Initialization Sequence
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Virtual Function Initialization Sequence

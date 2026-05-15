@@ -2,6 +2,7 @@
 title: Stream Class SRB Reference
 description: Stream Class SRB Reference
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # Stream Class SRB Reference

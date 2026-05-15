@@ -9,6 +9,7 @@ keywords:
 - functional device objects WDK KMDF
 - FDOs WDK KMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Creating Device Objects in a Function Driver

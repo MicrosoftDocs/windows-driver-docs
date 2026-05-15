@@ -3,11 +3,12 @@ title: Live Local Debugging
 description: Live Local Debugging
 keywords: ["kernel streaming debugging, live local debugging"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Live Local Debugging
 
-In Microsoft Windows XP and later operating systems, it is possible to do local kernel debugging by starting the kernel debugger (KD) or WinDbg with the **-kl** command line option:
+It is possible to do local kernel debugging by starting the kernel debugger (KD) or WinDbg with the **-kl** command line option:
 
 ```console
 kd [-y SymbolPath] -kl 

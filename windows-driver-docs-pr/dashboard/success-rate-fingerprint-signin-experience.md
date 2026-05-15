@@ -1,8 +1,8 @@
 ---
 title: Success rate of Fingerprint Sign-in Experience
 description: The measure tracks the user experience of logging in with a fingerpring sensor.
-ms.topic: article
 ms.date: 03/13/2020
+ms.topic: concept-article
 ---
  
 # Success rate of Fingerprint Sign-in Experience

@@ -8,6 +8,7 @@ keywords:
 - near field proximity
 - NFP
 ms.date: 01/11/2024
+ms.topic: best-practice
 ---
 
 # NFC power management
@@ -22,4 +23,4 @@ The NFC driver shall intelligently manage the power state of the device. The fol
 
 ## Related topics
 
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)

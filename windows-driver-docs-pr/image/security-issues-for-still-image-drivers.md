@@ -2,6 +2,7 @@
 title: Security Issues for Still Image Drivers
 description: Security Issues for Still Image Drivers
 ms.date: 07/18/2018
+ms.topic: concept-article
 ---
 
 # Security Issues for Still Image Drivers

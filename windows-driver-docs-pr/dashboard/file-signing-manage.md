@@ -1,8 +1,8 @@
 ---
 title: LSA and UEFI file signing
 description: Local Security Authority (LSA) plug-in and Unified Extensible Firmware Interface (UEFI) firmware signing.
-ms.topic: article
 ms.date: 09/12/2024
+ms.topic: how-to
 ---
 
 # File-sign a Local Security Authority (LSA) plugin or Unified Extensible Firmware Interface (UEFI) firmware binary

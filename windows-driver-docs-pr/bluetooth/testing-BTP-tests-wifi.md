@@ -2,6 +2,7 @@
 title: Microsoft Bluetooth Test Platform - Wi-Fi and Bluetooth Coexistence
 description: Bluetooth Test Platform (BTP) Wi-Fi and Bluetooth coexistence tests.
 ms.date: 01/10/2024
+ms.topic: how-to
 ---
 
 # BTP Wi-Fi and Bluetooth coexistence tests

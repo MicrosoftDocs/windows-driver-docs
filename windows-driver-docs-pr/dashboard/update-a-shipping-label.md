@@ -1,8 +1,8 @@
 ---
 title: Update a shipping label
 description: This method updates a shipping label in the hardware dashboard API.
-ms.topic: article
 ms.date: 08/21/2018
+ms.topic: how-to
 ---
 
 # Update a shipping label

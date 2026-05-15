@@ -2,6 +2,7 @@
 title: Enabling and Disabling Shared GPIO Interrupts
 description: In some cases, interrupt request lines from two or more peripheral devices might connect to the same physical general-purpose I/O (GPIO) pin. The GPIO pin for a shared interrupt line is typically configured for level-triggered interrupts.
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Enabling and Disabling Shared GPIO Interrupts

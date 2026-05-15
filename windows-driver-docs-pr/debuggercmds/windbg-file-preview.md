@@ -1,68 +1,83 @@
 ---
-title: "WinDbg - File Menu"
-description: "This section describes how to use the file menu in the WinDbg debugger."
+title: 'WinDbg: File Menu'
+description: "This article describes how to use the File menu in the WinDbg debugger."
 keywords: ["File Menu", "WinDbg", "Menu", "Windows Debugging"]
-ms.date: 01/10/2020
+ms.date: 02/28/2026
+ai-usage: ai-assisted
+ms.topic: how-to
 ---
 
-# WinDbg - File Menu
+# WinDbg: File menu
 
 :::image type="content" source="images/windbgx-preview-logo.png" alt-text="WinDbg logo with a magnifying glass inspecting bits.":::
 
-This topic describes how to how to use the file menu.
+This article describes how to use the **File** menu in WinDbg.
 
 ### Start debugging
 
-When you first open the file menu, you'll see *Start debugging* and your recent debugger targets. Use *Start debugging* to configure new and open previous debugger sessions.
+When you first open the **File** menu, you see **Start debugging** and your recent debugger targets. Use **Start debugging** to configure new and open previous debugger sessions.
 
 #### Recent
 
-The recent list contains a list of your recent workspaces and debugger connections. For more information on working settings workspaces, see [WinDbg Setup – Settings and workspaces](windbg-setup-preview.md).
+The recent list contains a list of your recent debug sessions and debugger connections. For more information on how to work with settings, workspaces, and debug sessions, see [WinDbg setup: Settings, workspaces, and saved debug sessions](windbg-setup-preview.md).
 
-You can use the right click menu to manage your workspaces, like pinning, renaming and moving them. As well as editing them in notepad.
+You can use the right-click menu to manage your recent debug sessions, like pinning, renaming, and moving them. You can also edit them in Notepad.
 
-:::image type="content" source="images/windbgx-workspace-right-click.png" alt-text="Right-click menu for workspace file with options to open, rename, edit in notepad, pin, remove from list, and clear unpinned targets.":::
+:::image type="content" source="images/windbgx-workspace-right-click.png" alt-text="Right-click the menu for a workspace file with options to open, rename, edit in Notepad, pin, remove from lists, and clear unpinned targets.":::
 
 #### Start a new session
 
-Use the other tabs in the *Start debugging* section to start a new debugger session, like attaching or launching a process. For more information on starting a new session see [WinDbg - Start a user-mode session](windbg-user-mode-preview.md)
-and [WinDbg - Start a kernel mode session](windbg-kernel-mode-preview.md)
+Use the other tabs in the **Start debugging** section to start a new debugger session, like attaching or starting a process. For more information on starting a new session, see [WinDbg: Start a user-mode session](windbg-user-mode-preview.md)
+and [WinDbg: Start a kernel mode session](windbg-kernel-mode-preview.md).
+
+### Save debug session
+
+Use **Save debug session** to save the current target connection information to a file. Debug session files use the `.debugtarget` extension. This option is only available when a debug target is active.
+
+The default location for debug session files is:
+
+```console
+C:\Users\*UserName*\AppData\Local\DBG\Targets
+```
+
+### Open workspace
+
+Use **Open workspace** to load settings from a previously saved workspace file. Workspace files use the `.xml` extension and are stored by default in:
+
+```console
+C:\Users\*UserName*\AppData\Local\DBG\Workspaces
+```
 
 ### Save workspace
 
-Use *Save workspace* to save the current workspace.
+Use **Save workspace** to save the current settings to the active workspace file.
 
-Session connection information is stored in workspace configuration files. Workspace files are stored with a .debugTarget file extension.
+### Save workspace as
 
-The default location for workspace files is:
-
-```console
-C:\Users\*UserName*\AppData\Local\DBG\targets
-```
+Use **Save workspace as** to save the current settings to a new workspace file.
 
 ### Open source file
 
-Use *Open source file* to open a source file. Do this when you want to work with additional source files that have not been loaded because of code execution. For more information on working with source files, see [Source Code Debugging in WinDbg (Classic)](../debugger/source-window.md)
+Use **Open source file** to open a source file. Do this step when you want to work with other source files that didn't load because of code execution. For more information on working with source files, see [Source code debugging in WinDbg (Classic)](../debugger/source-window.md).
 
 ### Open script
 
-Use *Open script* to open an existing Javascript or NatVis script. For more information on working with scripts see [WinDbg - Scripting Menu](windbg-scripting-preview.md).
+Use **Open script** to open an existing JavaScript or NatVis script. For more information on working with scripts, see [WinDbg: Scripting menu](windbg-scripting-preview.md).
 
 ### Settings
 
-Use the settings menu to set the source and symbol path as well as choose the light and dark theme for the debugger. For more information on settings see [WinDbg Setup – settings and workspaces](windbg-setup-preview.md).
+Use **Settings** to set the source and symbol path and choose the theme for the debugger. The available themes are System (follows OS setting), Light, and Dark. For more information on settings, see [WinDbg setup: Settings, workspaces, and saved debug sessions](windbg-setup-preview.md).
 
 ### About
 
-Use *About* to display build version information for the debugger. You can use also use this screen to view the Microsoft privacy statement.
+Use **About** to display build version information for the debugger. You can also use this screen to view the Microsoft privacy statement.
 
 ### Exit
 
-Use *Exit* to exit the debugger.
+Use **Exit** to exit the debugger.
 
 ---
 
-## See Also
+## Related content
 
-[WinDbg Features](../debugger/debugging-using-windbg-preview.md)
-
+- [WinDbg features](../debugger/debugging-using-windbg-preview.md)

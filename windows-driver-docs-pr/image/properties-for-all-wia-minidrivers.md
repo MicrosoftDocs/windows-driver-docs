@@ -2,6 +2,7 @@
 title: Properties for All WIA Minidrivers
 description: Properties for All WIA Minidrivers
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Properties for All WIA Minidrivers

@@ -6,6 +6,7 @@ keywords:
 - listing surfaces WDK display
 - resource object surface memory WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Requesting and Using Surface Memory

@@ -3,6 +3,7 @@ title: Breakpoints
 description: Breakpoints
 keywords: ["Debugger Engine, breakpoints"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Breakpoints

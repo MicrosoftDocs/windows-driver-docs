@@ -6,6 +6,7 @@ keywords:
 - installing Native 802.11 IHV extensions
 - Native 802.11 IHV Extensions WDK , installing
 ms.date: 06/17/2022
+ms.topic: concept-article
 ---
 
 # Installing Native 802.11 IHV Extensions

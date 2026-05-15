@@ -8,6 +8,7 @@ keywords:
 - FSCTL_MOVE_FILE
 - control processing WDK file systems
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # File System Control Processing

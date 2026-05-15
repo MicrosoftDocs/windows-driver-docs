@@ -2,6 +2,7 @@
 title: Specifications and Resources
 description: To work with the smart card support in Microsoft Windows operating systems, smart card readers and cards should be compatible with Interoperability Specification for ICCs and Personal Computer Systems.
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Specifications and Resources

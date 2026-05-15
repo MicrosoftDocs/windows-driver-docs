@@ -14,7 +14,7 @@ api_type:
 
 # !usbkd.usbhcdlist
 
-The [**!usbkd.usbhcdlist**](-usbkd-usbhcdlist.md) command displays information about all USB host controllers that are represented by the USB port driver (Usbport.sys). For information about the USB port driver and the associated miniport drivers, see [USB host-side drivers in Windows](../usbcon/usb-3-0-driver-stack-architecture.md).
+The **!usbkd.usbhcdlist** command displays information about all USB host controllers that are represented by the USB port driver (Usbport.sys). For information about the USB port driver and the associated miniport drivers, see [USB host-side drivers in Windows](../usbcon/usb-3-0-driver-stack-architecture.md).
 
 ```dbgcmd
 !usbkd.usbhcdlist
@@ -26,7 +26,7 @@ Usbkd.dll
 
 ## Examples
 
-Here is an example of a portion of the output of [**!usbhcdlist**](-usbkd-usbhcdlist.md).
+Here is an example of a portion of the output of **!usbhcdlist**.
 
 ```dbgcmd
 0: kd> !usbkd.usbhcdlist

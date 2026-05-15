@@ -3,12 +3,10 @@ title: Get RPC Client Call Information
 description: Get RPC Client Call Information
 keywords: ["RPC client call information", "CCALL (client call)"]
 ms.date: 05/23/2017
+ms.topic: reference
 ---
 
 # Get RPC Client Call Information
-
-
-## <span id="ddk_get_rpc_client_call_information_dbg"></span><span id="DDK_GET_RPC_CLIENT_CALL_INFORMATION_DBG"></span>
 
 
 Client call (CCALL) call information is displayed by the **!rpcexts.getclientcallinfo** extension, or by DbgRpc when the **-a** switch is used.

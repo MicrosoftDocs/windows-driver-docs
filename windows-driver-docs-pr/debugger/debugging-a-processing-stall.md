@@ -3,6 +3,7 @@ title: Debugging a Processing Stall
 description: Debugging a Processing Stall
 keywords: ["kernel streaming debugging, video stream stall, processing stall"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging a Processing Stall

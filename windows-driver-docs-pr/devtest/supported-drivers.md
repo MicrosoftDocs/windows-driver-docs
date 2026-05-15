@@ -7,6 +7,7 @@ keywords:
 - SDV WDK , requirements
 - function prototypes WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Supported Drivers
@@ -63,7 +64,7 @@ For SDV to verify an NDIS driver, the driver must:
 
 - Include Ndis.h and Ntddk.h.
 
-- Follow the guidelines in the [Network Design Guide](../network/index.md) to create NDIS drivers.
+- Follow the guidelines in the [Network Design Guide](/windows-hardware/drivers/network/)) to create NDIS drivers.
 
 - Annotate each callback function by using an SDV-NDIS callback function role type, as described in [Using Function Role Type Declarations](using-function-role-type-declarations.md). For a list of the supported role types, see [Static Driver Verifier NDIS Function Declarations](static-driver-verifier-ndis-function-declarations.md).
 

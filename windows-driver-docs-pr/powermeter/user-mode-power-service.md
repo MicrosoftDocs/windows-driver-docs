@@ -6,6 +6,7 @@ keywords:
 - User-Mode Power Service WDK Power Meter
 - UMPS WDK Power Meter
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # User-Mode Power Service

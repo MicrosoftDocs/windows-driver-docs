@@ -6,6 +6,7 @@ keywords:
 - option attributes WDK Unidrv
 - printer options WDK Unidrv , attributes
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Option Attributes

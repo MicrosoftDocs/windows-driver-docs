@@ -2,6 +2,7 @@
 title: Nondefault Virtual Ports and VMQ
 description: Nondefault Virtual Ports and VMQ
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Nondefault Virtual Ports and VMQ

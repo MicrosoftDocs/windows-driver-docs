@@ -2,6 +2,7 @@
 title: KeSetEventPageable (Supplemental Windows Driver CodeQL Query)
 description: KeSetEventPageable a Supplemental Windows Driver CodeQL Query
 ms.date: 02/06/2024
+ms.topic: best-practice
 ---
 
 # KeSetEventPageable (Windows Driver CodeQL Query)

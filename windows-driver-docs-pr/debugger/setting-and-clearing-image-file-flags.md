@@ -3,6 +3,7 @@ title: Setting and Clearing Image File Flags
 description: Setting and Clearing Image File Flags
 keywords: ["GFlags, image file flags"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Setting and Clearing Image File Flags

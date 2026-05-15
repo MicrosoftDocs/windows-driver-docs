@@ -7,6 +7,7 @@ keywords:
 - status information WDK KMDF
 - status information WDK KMDF , I/O requests
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Obtaining Information About an I/O Request

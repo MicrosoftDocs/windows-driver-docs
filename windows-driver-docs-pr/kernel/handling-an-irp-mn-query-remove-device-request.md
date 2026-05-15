@@ -2,34 +2,31 @@
 title: Handling an IRP_MN_QUERY_REMOVE_DEVICE Request
 description: Handling an IRP_MN_QUERY_REMOVE_DEVICE Request
 keywords: ["IRP_MN_QUERY_REMOVE_DEVICE"]
-ms.date: 06/16/2017
+ms.date: 12/20/2024
+ms.topic: how-to
 ---
 
 # Handling an IRP\_MN\_QUERY\_REMOVE\_DEVICE Request
 
+The PnP manager sends this [IRP](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) to inform drivers that a device is about to be removed from the machine and to ask whether the device can be removed without disrupting the machine. It also sends this IRP when a user requests to update drivers for the device.
 
-
-
-
-The PnP manager sends this IRP to inform drivers that a device is about to be removed from the machine and to ask whether the device can be removed without disrupting the machine. It also sends this IRP when a user requests to update drivers for the device.
-
-The PnP manager sends this IRP at IRQL PASSIVE\_LEVEL in the context of a system thread.
+The PnP manager sends this IRP at IRQL [PASSIVE\_LEVEL](./managing-hardware-priorities.md) in the context of a system thread.
 
 It does the following before sending this IRP to the drivers for a device:
 
 -   Notifies all user-mode applications that registered for notification on the device (or a related device).
 
-    This includes applications that registered for notification on the device, on one of the device's descendants (child device, child of child, and so forth), or on one of the device's removal relations. An application registers for such notification by calling **RegisterDeviceNotification**.
+    This includes applications that registered for notification on the device, on one of the device's descendants (child device, child of child, and so forth), or on one of the device's [removal relations](./irp-mn-query-device-relations.md). An application registers for such notification by calling [**CM_Register_Notification**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_register_notification) or  [**RegisterDeviceNotification**](/windows/win32/api/winuser/nf-winuser-registerdevicenotificationa).
 
-    In response to this notification, an application either prepares for device removal (closes handles to the device) or fails the query.
+    In response to this notification, an application either prepares for device removal (closes handles to the device) or fails the query. See [Registering for Notification of Device Interface Arrival and Device Removal](../install/registering-for-notification-of-device-interface-arrival-and-device-removal.md) for more information on how to handle these notifications.
 
 -   Notifies all kernel-mode drivers that registered for notification on the device (or a related device).
 
-    This includes drivers that registered for notification on the device, on one of the device's descendants, or on one of the device's removal relations. A driver registers for this notification by calling [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification) with an event category of **EventCategoryTargetDeviceChange**.
+    This includes drivers that registered for notification on the device, on one of the device's descendants, or on one of the device's [removal relations](./irp-mn-query-device-relations.md). A driver registers for this notification by calling [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification) with an event category of **EventCategoryTargetDeviceChange**.
 
     In response to this notification, a driver either prepares for device removal (closes handles to the device) or fails the query.
 
--   Sends [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](./irp-mn-query-remove-device.md) IRPs to the drivers for the device's descendants.
+-   Sends [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](./irp-mn-query-remove-device.md) IRPs to the drivers for the device's descendants. See below for more information on how a device stack handles this IRP.
 
 -   (Windows 2000 and later systems) If a file system is mounted on the device, the PnP manager sends a query-remove request to the file system and any file system filters. If there are open handles to the device, the file system typically fails the query-remove request. If not, the file system typically locks the volume to prevent future creates from succeeding. If a mounted file system does not support a query-remove request, the PnP manager fails the query-remove request for the device.
 
@@ -39,7 +36,7 @@ An **IRP\_MN\_QUERY\_REMOVE\_DEVICE** request is handled first by the top driver
 
 In response to an **IRP\_MN\_QUERY\_REMOVE\_DEVICE**, a driver must do the following:
 
-1.  Determine whether the device can be removed from the machine without disrupting operation.
+1.  Determine whether the device can be removed from the machine safely.
 
     A driver must fail a query-remove IRP if any of the following are true:
 
@@ -86,6 +83,3 @@ In response to an **IRP\_MN\_QUERY\_REMOVE\_DEVICE**, a driver must do the follo
 If any driver in the device stack fails an **IRP\_MN\_QUERY\_REMOVE\_DEVICE**, the PnP manager sends an **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** to the device stack. This prevents drivers from requiring an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine for a query-remove IRP to detect whether a lower driver failed the IRP.
 
 Once a driver succeeds an **IRP\_MN\_QUERY\_REMOVE\_DEVICE** and it considers the device to be in the remove-pending state, the driver must fail any subsequent create requests for the device. The driver processes all other IRPs as usual, until the driver receives an **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** or an **IRP\_MN\_REMOVE\_DEVICE**.
-
- 
-

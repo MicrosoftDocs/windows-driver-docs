@@ -3,6 +3,7 @@ title: Debugging a Deadlock
 description: Debugging a Deadlock
 keywords: ["deadlocks", "thread, no ready threads"]
 ms.date: 06/10/2017
+ms.topic: how-to
 ---
 
 # Debugging a Deadlock

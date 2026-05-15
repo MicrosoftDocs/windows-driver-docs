@@ -2,6 +2,7 @@
 description: Guidance for the Hardware Vendor
 title: Guidance for the Hardware Vendor
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Guidance for the Hardware Vendor

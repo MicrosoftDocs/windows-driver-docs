@@ -2,6 +2,7 @@
 title: WIA Scanner Storage Compatibility for Windows XP and Windows Me
 description: WIA Scanner Storage Compatibility for Windows XP and Windows Me
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # WIA Scanner Storage Compatibility for Windows XP and Windows Me

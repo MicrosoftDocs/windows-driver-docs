@@ -7,6 +7,7 @@ keywords:
 - depth-stencil values WDK display
 - stencil values WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Copying Depth-Stencil Values

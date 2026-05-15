@@ -2,6 +2,7 @@
 title: "Option: Help"
 description: "This option starts GPUView's help file."
 ms.date: 05/10/2022
+ms.topic: end-user-help
 ---
 
 # Option: Help  

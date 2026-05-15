@@ -6,6 +6,7 @@ keywords:
 - Energy Meter Interface WDK
 - PMI WDK Energy Meter
 ms.date: 10/14/2021
+ms.topic: concept-article
 ---
 
 # Integrating EMI data into E3
@@ -22,6 +23,7 @@ Energy Estimation Engine (E3) attributes energy to software applications. If the
 | MBB or MBB_*         | mbb       |
 | DISPLAY or DISPLAY_* | display   |
 | GPU or GPU_*         | soc       |
+| NPU or NPU_*         | npu       |
 
 ## How the rails are mapped to E3 component energy
 

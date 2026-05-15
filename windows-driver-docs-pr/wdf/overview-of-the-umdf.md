@@ -11,6 +11,7 @@ keywords:
 - stacks WDK UMDF
 - device stacks WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Overview of UMDF

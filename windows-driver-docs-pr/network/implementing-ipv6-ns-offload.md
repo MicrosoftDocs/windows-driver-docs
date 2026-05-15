@@ -2,6 +2,7 @@
 title: Implementing IPv6 NS Offload
 description: This section describes how to implement IPv6 neighbor solicitation (NS) offload
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Implementing IPv6 NS Offload

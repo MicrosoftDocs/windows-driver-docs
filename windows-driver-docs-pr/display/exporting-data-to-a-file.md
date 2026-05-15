@@ -2,6 +2,7 @@
 title: Exporting Data to a File
 description: Exporting Data to a File 
 ms.date: 05/10/2022
+ms.topic: concept-article
 ---
 
 # Exporting Data to a File

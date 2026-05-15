@@ -2,6 +2,7 @@
 title: Identity (SoftwareInfo - Privileged Applications)
 description: Identity (SoftwareInfo - privileged applications)
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Identity (SoftwareInfo - privileged applications)

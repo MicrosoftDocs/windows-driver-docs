@@ -6,6 +6,7 @@ keywords:
 - Windows Sockets Direct WDK , blocking calls
 - SAN blocking calls WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Blocking Calls for a SAN

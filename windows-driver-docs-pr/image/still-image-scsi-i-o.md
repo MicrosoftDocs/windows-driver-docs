@@ -2,6 +2,7 @@
 title: Still Image SCSI I/O
 description: Still Image SCSI I/O
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Still Image SCSI I/O

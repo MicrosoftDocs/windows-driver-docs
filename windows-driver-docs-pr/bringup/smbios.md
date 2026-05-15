@@ -2,6 +2,7 @@
 title: SMBIOS
 description: The SMBIOS specification defines data structures and information that goes into the data structures pertinent to a system.
 ms.date: 09/26/2024
+ms.topic: concept-article
 ---
 
 # SMBIOS

@@ -1,8 +1,8 @@
 ---
 title: Publishing restrictions
 description: The following items are restricted during publication. You can still create a shipping label for them, but the request requires another Microsoft review.
-ms.topic: article
 ms.date: 09/19/2024
+ms.topic: concept-article
 ---
 
 # Publishing restrictions

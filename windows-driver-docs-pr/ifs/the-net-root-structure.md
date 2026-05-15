@@ -15,6 +15,7 @@ keywords:
 - structures WDK RDBSS
 - connection information WDK RDBSS
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # The NET_ROOT Structure

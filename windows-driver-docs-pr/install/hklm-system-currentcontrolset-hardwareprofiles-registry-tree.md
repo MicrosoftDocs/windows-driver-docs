@@ -2,6 +2,7 @@
 title: HKLM\SYSTEM\CurrentControlSet\HardwareProfiles Registry Tree
 description: HKLM\SYSTEM\CurrentControlSet\HardwareProfiles registry tree contains information about the hardware profiles on the system.
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # HKLM\\SYSTEM\\CurrentControlSet\\HardwareProfiles Registry Tree

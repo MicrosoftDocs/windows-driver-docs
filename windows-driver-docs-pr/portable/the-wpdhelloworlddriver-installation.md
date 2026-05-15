@@ -2,6 +2,7 @@
 description: Installing the WpdHelloWorldDriver Sample
 title: Installing the WpdHelloWorldDriver Sample
 ms.date: 03/03/2023
+ms.topic: how-to
 ---
 
 # Installing the WpdHelloWorldDriver Sample

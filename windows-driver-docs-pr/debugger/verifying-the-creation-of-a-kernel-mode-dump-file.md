@@ -3,6 +3,7 @@ title: Verifying the Creation of a Kernel-Mode Dump File
 description: Verifying the Creation of a Kernel-Mode Dump File
 keywords: ["dump file, verifying kernel-mode dump creation"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Verifying the Creation of a Kernel-Mode Dump File

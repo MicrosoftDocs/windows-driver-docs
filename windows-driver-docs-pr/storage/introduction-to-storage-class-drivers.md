@@ -6,6 +6,7 @@ keywords:
 - class drivers WDK storage , about storage class drivers
 - HBA WDK storage
 ms.date: 12/15/2019
+ms.topic: concept-article
 ---
 
 # Introduction to Storage Class Drivers

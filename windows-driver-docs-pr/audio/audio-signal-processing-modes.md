@@ -1,7 +1,8 @@
 ---
 title: Audio Signal Processing Modes
 description: Drivers declare the supported audio signal processing modes for each device.
-ms.date: 05/22/2024
+ms.date: 03/26/2025
+ms.topic: concept-article
 ---
 
 # Audio Signal Processing Modes
@@ -23,6 +24,9 @@ Audio categories (selected by applications) are mapped to audio modes (defined b
 |Notification*|Render|Ringtones, alarms, alerts, etc.|
 
 \* New in Windows 10.
+
+> [!IMPORTANT]
+> Raw capture streams must not include any time varying or adaptive processing, such as echo control, automatic gain control, or noise suppression.  The only audio processing permitted in raw capture is linear equalization to flatten frequency response.
 
 ## Signal Processing Mode Driver Requirements
 
@@ -104,7 +108,7 @@ OEMs define what effects will be used for each mode. Windows defines a list of s
 
 For information on how to associate APOs with modes, see [Implementing Audio Processing Objects](implementing-audio-processing-objects.md).
 
-It is possible for applications to ask what effects would be applied to a specific stream for either RAW or non- RAW processing. Applications can also ask to be notified when the effects or raw processing state change. The application may use this information to determine if a specific streaming category like communication is available, or if only RAW mode is in use. If only RAW mode is available, the application can determine how much audio processing of its own to add.
+It is possible for applications to ask what effects would be applied to a specific stream for either RAW or non-RAW processing. Applications can also ask to be notified when the effects or raw processing state change. The application may use this information to determine if a specific streaming effect like "acoustic echo cancelation" is available, or if no effects are in use. If no effects are in use, the application can determine how much audio processing of its own to add.
 
 If System.Devices.AudioDevice.RawProcessingSupported is true, applications also have the option to set a "use RAW" flag on certain streams. If System.Devices.AudioDevice.RawProcessingSupported is false, applications cannot set the "use RAW" flag.
 

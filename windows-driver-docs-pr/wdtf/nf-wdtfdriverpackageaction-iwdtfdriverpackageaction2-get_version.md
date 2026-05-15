@@ -39,6 +39,7 @@ api_name:
 - IWDTFDriverPackageAction2.get_Version
 targetos: Windows
 req.typenames: 
+ms.topic: reference
 ---
 
 # IWDTFDriverPackageAction2::get_Version

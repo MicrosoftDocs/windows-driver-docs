@@ -2,6 +2,7 @@
 title: Speaker Phantoming
 description: Speaker Phantoming
 ms.date: 11/07/2018
+ms.topic: concept-article
 ---
 
 # Speaker Phantoming

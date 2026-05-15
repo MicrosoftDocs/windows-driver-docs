@@ -11,6 +11,7 @@ keywords:
 - DefaultInstall section WDK file system
 - AddRegistry section WDK file system
 ms.date: 09/26/2024
+ms.topic: concept-article
 ---
 
 # Creating an INF file for a minifilter driver

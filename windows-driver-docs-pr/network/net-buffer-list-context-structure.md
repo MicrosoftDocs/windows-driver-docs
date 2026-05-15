@@ -11,6 +11,7 @@ keywords:
 - packets WDK networking , context data
 - context da
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # NET\_BUFFER\_LIST\_CONTEXT Structure

@@ -6,6 +6,7 @@ keywords:
 - HID collections WDK , preparsed data
 - preparsed data WDK HID
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # Obtaining preparsed data

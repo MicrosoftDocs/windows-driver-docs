@@ -6,6 +6,7 @@ keywords:
 - querying Bluetooth interfaces
 - interfaces WDK Bluetooth
 ms.date: 01/10/2024
+ms.topic: how-to
 ---
 
 # Querying for Bluetooth interfaces

@@ -5,6 +5,7 @@ keywords:
 - bidi extension files WDK printer autoconfig
 - in-box autoconfiguration support WDK printer , bidi extension files
 ms.date: 04/20/2017
+ms.topic: example-scenario
 ---
 
 # Bidi Extension Sample for TCP/IP Port Monitor

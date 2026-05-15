@@ -8,6 +8,7 @@ keywords:
 - initializing client modules
 - NmrRegisterClient
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing and Registering a Client Module

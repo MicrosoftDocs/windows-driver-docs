@@ -8,6 +8,7 @@ keywords:
 - initializing provider modules
 - NmrRegisterProvider
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initializing and Registering a Provider Module

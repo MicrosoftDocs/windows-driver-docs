@@ -2,6 +2,7 @@
 title: Audio Power Management Interfaces
 description: Audio Power Management Interfaces
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Audio Power Management Interfaces

@@ -2,6 +2,7 @@
 title: Using Core Drivers
 description: Using Core Drivers
 ms.date: 05/08/2023
+ms.topic: concept-article
 ---
 
 # Using Core Drivers

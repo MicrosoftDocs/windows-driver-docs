@@ -2,6 +2,7 @@
 title: Immediate Idle Timeout Opt-in
 description: This topic discusses the ImmediateIdle registry value that a Windows 8 driver can use to opt-in to an immediate power down state, when power is no longer needed.
 ms.date: 08/17/2022
+ms.topic: reference
 ---
 
 # <span id="audio.immediate_idle_timeout_opt-in"></span>Immediate Idle Timeout Opt-in

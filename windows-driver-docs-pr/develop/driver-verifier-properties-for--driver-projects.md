@@ -2,6 +2,7 @@
 title: Driver Verifier Properties for  Driver Package Projects
 description: Driver Verifier is a run-time verification tool that increases the effectiveness of your driver testing.
 ms.date: 04/20/2017
+ms.topic: best-practice
 ---
 
 # Driver Verifier Properties for Driver Package Projects

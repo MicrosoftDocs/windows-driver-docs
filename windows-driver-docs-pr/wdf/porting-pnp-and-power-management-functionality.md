@@ -2,6 +2,7 @@
 title: Porting PnP and Power Management
 description: Porting PnP and Power Management
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Porting PnP and Power Management

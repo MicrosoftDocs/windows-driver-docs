@@ -5,6 +5,7 @@ keywords:
 - hardware acceleration WDK DirectSound , 3D mixing
 - 3D mixing WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting 3D DirectSound Acceleration in WDM Audio

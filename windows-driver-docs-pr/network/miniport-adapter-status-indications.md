@@ -8,6 +8,7 @@ keywords:
 - NdisMIndicateStatusEx
 - NDIS_STATUS_INDICATION
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Miniport Adapter Status Indications

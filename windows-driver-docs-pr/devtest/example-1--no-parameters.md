@@ -4,6 +4,7 @@ description: Example 1 No Parameters
 keywords:
 - Tracefmt WDK , parameters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Example 1: No Parameters

@@ -7,6 +7,7 @@ keywords:
 - decorated INF WDK
 - INF Models Section
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Decorations in Printer INF Files

@@ -5,6 +5,7 @@ keywords:
 - aspect ratio scaling WDK display
 - custom scaling WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using Aspect Ratio and Custom Scaling Modes

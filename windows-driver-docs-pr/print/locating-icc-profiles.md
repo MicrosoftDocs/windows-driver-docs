@@ -5,6 +5,7 @@ keywords:
 - color management WDK print , locating ICC profiles
 - ICC profiles WDK print
 ms.date: 01/27/2023
+ms.topic: how-to
 ---
 
 # Locating ICC Profiles

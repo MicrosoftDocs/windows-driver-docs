@@ -3,6 +3,7 @@ title: Using WdbgExts Extension Callbacks
 description: Using WdbgExts Extension Callbacks
 keywords: ["WdbgExts extensions, callbacks, using"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using WdbgExts Extension Callbacks

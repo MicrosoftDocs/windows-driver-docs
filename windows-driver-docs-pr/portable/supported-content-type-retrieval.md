@@ -2,6 +2,7 @@
 description: Supported Content-Type Retrieval
 title: Supported Content-Type Retrieval
 ms.date: 03/03/2023
+ms.topic: reference
 ---
 
 # Supported Content-Type Retrieval

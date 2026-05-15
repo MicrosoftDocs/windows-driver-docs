@@ -7,6 +7,7 @@ keywords:
 - failed applications WDK UMDF
 - application failures WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # How UMDF Handles Application Failures

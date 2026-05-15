@@ -1,7 +1,8 @@
 ---
 title: SPI Tests in MITT
 description: SPI test modules that are included in the MITT software package.
-ms.date: 01/12/2024
+ms.date: 02/27/2026
+ms.topic: how-to
 ---
 
 # SPI tests in MITT
@@ -92,7 +93,7 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
 ## SPI automation tests
 
 1. Create a folder on the system under test.
-2. Copy the TAEF binaries to the folder and then add it to your PATH environment variable. The required TAEF binaries are in %ProgramFiles(x86)%\\Windows Kits\\8.1\\Testing\\Runtimes\\TAEF .
+2. Copy the TAEF binaries to the folder and then add it to your PATH environment variable. The required TAEF binaries are in %ProgramFiles(x86)%\\Windows Kits\\10\\Testing\\Runtimes\\TAEF .
 3. Copy Muttutil.dll and Mittspitest.dll from the MITT software package to the folder.
 4. View all MITT SPI tests by using the **/list** option:
 

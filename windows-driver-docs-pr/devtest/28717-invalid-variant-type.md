@@ -4,6 +4,7 @@ description: Warning C28717 Invalid VARIANT type.
 ms.date: 04/20/2017
 f1_keywords: 
   - "C28717"
+ms.topic: reference
 ---
 
 # C28717

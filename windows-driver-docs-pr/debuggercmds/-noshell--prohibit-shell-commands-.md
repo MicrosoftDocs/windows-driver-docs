@@ -44,3 +44,5 @@ If you use the **.noshell** command, you cannot use [**.shell (Command Shell)**]
 
 If you are performing remote debugging, this command is useful for security purposes.
 
+> [!IMPORTANT]
+> There are important security considerations when using remote debugging. For more information, including information on enabling secure mode, see [Security Considerations for Windows Debugging Tools](../debugger/security-considerations.md).

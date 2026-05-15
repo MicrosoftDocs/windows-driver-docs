@@ -4,6 +4,7 @@ description: Trace Message List Columns
 keywords:
 - Trace Message Lists WDK
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Trace Message List Columns

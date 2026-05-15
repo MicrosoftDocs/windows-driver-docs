@@ -1,7 +1,8 @@
 ---
 title: Get Started With MITT
 description: To run MITT tests, you must install the MITT firmware on a new MITT board. These steps describe how to update the MITT firmware and prepare the host machine for running MITT tests.
-ms.date: 01/12/2024
+ms.date: 02/27/2026
+ms.topic: get-started
 ---
 
 # Get started with MITT
@@ -18,25 +19,20 @@ To run MITT tests, you must install the MITT firmware on a new MITT board. These
 
 To run MITT tests, you need a computer that will run as the host and system under test (SUT).
 
-- The computer must be running Windows 8.1 version of the operating system.
+- The computer must be running Windows 10 or later.
 - The computer must have the MITT software package installed.
 - The computer must be connected as a target to a kernel debugger running on a separate machine. For more information about how to get Windbg, see [Windows Debugging](../debugger/index.md).
 
 > [!NOTE]
 > Windbg can be installed as a standalone tool set.
 
->[!NOTE]
->If your SUT is a phone, then the host computer, SUT, and MITT board must be configured as shown in this image.
-
-![mitt computer setup.](images/mitt-computer-setup.jpg)
-
 ## Install WDTF Runtime Library
 
-To run the MITT tests, you need Windows Driver Test Framework (WDTF). When you install the Windows Driver Kit (WDK), the runtime is installed automatically. For complete installation instructions, follow the steps described in [WDTF Runtime Library](/windows-hardware/drivers/ddi/index).
+To run the MCATT/GPIO/Audio MITT tests, you need Windows Driver Test Framework (WDTF). When you install the Windows Driver Kit (WDK), the runtime is installed automatically. For complete installation instructions, follow the steps described in [WDTF Runtime Library](/windows-hardware/drivers/wdtf/wdtf-runtime-library). I2C, SPI, and UART MITT tests do not require WDTF.
 
 **Download location**: [WDK and WinDbg downloads](../download-the-wdk.md)
 
-The runtime is installed here %ProgramFiles(x86)%\\Windows Kits\\8.1\\Testing\\Runtimes\\TAEF
+The runtime is installed here %ProgramFiles(x86)%\\Windows Kits\\10\\Testing\\Runtimes\\TAEF
 
 The system under test must be connected to a kernel debugger. Debugging tools are installed with the WDK. For more information, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](../debugger/index.md) and [Windows Debugging](../debugger/symbols.md).
 
@@ -44,7 +40,7 @@ The system under test must be connected to a kernel debugger. Debugging tools ar
 
 1. Connect the MITT board to a USB 2.0 port on the host computer. We recommend that you use root hub ports and avoid controllers with embedded hubs.
 2. Make sure that the board power switch (next to the audio jack) is turned on. The red Power LED should be on.
-3. In Device Manager, locate the device node.
+3. In Device Manager, locate the device node. If the device node enumerates as "MITT", you can skip to step 13. If it enumerates as "ONBOARD USB", continue to step 4.
 
     ![device node for mitt.](images/install-mitt.png)
 
@@ -53,10 +49,10 @@ The system under test must be connected to a kernel debugger. Debugging tools ar
 6. Select **Let me pick from a list of device drivers on my computer**.
 7. Select **Show All Devices** and click **Next** in the **Select your device's type from the list below** page.
 8. Click on **Have Disk...** on the **Select the device driver you want to install for this hardware** page.
-9. Browse to the MITT installation directory (Program Files\\MITT\\*&lt;architecture&gt;* or Program Files (x86)\\MITT\\*&lt;architecture&gt;*) in the **Install From Disk dialog** and click **Ok**.
+9. Browse to the MITT installation directory (Program Files (x86)\\MITT\\*&lt;architecture&gt;*) in the **Install From Disk dialog** and click **Ok**.
 10. Under **Manufacturer** select **Microsoft**. Under **Model** select **USB MUTT DEFAULT** from the list and click **Next**.
 11. Click **Yes** and install the driver. Ignore the warning about the driver might be compatible with the hardware. Close the final page.
-12. In a command prompt from Program Files\\MITT\\*&lt;architecture&gt;*, run this command:
+12. In a command prompt from Program Files (x86)\\MITT\\*&lt;architecture&gt;*, run this command:
 
     **MuttUtil.exe -List**
 

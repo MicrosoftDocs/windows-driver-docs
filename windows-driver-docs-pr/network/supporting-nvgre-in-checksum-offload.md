@@ -2,6 +2,7 @@
 title: Supporting NVGRE in Checksum Offload
 description: This section describes supporting NVGRE in checksum offload
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Supporting NVGRE in Checksum Offload

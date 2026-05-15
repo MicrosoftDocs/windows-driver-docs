@@ -6,6 +6,7 @@ keywords:
 - GUIDs WDK software tracing
 - identifiers WDK software tracing
 ms.date: 11/22/2022
+ms.topic: concept-article
 ---
 
 # Message GUID

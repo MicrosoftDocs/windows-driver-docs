@@ -7,6 +7,7 @@ keywords:
 - property WDK bidi communication
 - value WDK bidi communication
 ms.date: 06/11/2018
+ms.topic: concept-article
 ---
 
 # Bidirectional Communication Schema

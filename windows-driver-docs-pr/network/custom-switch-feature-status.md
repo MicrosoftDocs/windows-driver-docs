@@ -2,6 +2,7 @@
 title: Custom Switch Feature Status
 description: Custom Switch Feature Status
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Custom Switch Feature Status

@@ -4,6 +4,7 @@ description: This topic describes the GUID_NDIS_GEN_ENUMERATE_PORTS GUID for the
 keywords:
 - GUID_NDIS_GEN_ENUMERATE_PORTS, WDK GUID_NDIS_GEN_ENUMERATE_PORTS network drivers
 ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # GUID_NDIS_GEN_ENUMERATE_PORTS

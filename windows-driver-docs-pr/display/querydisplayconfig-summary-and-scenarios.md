@@ -11,6 +11,7 @@ keywords:
 - QueryDisplayConfig WDK Windows 7 display
 - QueryDisplayConfig WDK Windows Server 2008 R2 display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # QueryDisplayConfig Summary and Scenarios

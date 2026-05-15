@@ -4,6 +4,7 @@ description: Using GetOptionAttribute
 keywords:
 - GetOptionAttribute
 ms.date: 02/21/2024
+ms.topic: concept-article
 ---
 
 # Using GetOptionAttribute

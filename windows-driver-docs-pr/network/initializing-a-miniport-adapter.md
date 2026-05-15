@@ -2,6 +2,7 @@
 title: Initializing a Miniport Adapter
 description: When a networking device becomes available, the system loads the required NDIS miniport driver.
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Initializing a Miniport Adapter

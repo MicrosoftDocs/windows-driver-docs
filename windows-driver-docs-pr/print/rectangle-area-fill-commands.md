@@ -5,6 +5,7 @@ keywords:
 - rectangular area fill commands WDK Unidrv
 - filling rectangular areas WDK Unidrv
 ms.date: 01/29/2024
+ms.topic: reference
 ---
 
 # Rectangle area fill commands

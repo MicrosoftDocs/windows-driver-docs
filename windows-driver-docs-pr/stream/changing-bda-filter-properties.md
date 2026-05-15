@@ -6,6 +6,7 @@ keywords:
 - filter property changes WDK BDA
 - method sets WDK BDA , filter property changes
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Changing BDA Filter Properties

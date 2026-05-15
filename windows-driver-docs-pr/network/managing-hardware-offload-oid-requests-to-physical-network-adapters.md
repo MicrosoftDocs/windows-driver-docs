@@ -2,6 +2,7 @@
 title: Managing Hardware Offload OID Requests to Physical Network Adapters
 description: Managing Hardware Offload OID Requests to Physical Network Adapters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Managing Hardware Offload OID Requests to Physical Network Adapters

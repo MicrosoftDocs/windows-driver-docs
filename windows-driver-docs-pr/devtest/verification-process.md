@@ -7,6 +7,7 @@ keywords:
 - SDV WDK , verification process
 - verification process WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Verification Process

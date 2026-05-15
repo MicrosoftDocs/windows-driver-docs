@@ -2,6 +2,7 @@
 title: Information Logged After Loading
 description: "When GPUView successfully loads, it logs the GuidStats.txt and FuncStats.txt text files and places these files in the same directory that contains GPUView.exe."
 ms.date: 05/10/2022
+ms.topic: reference
 ---
 
 # Information Logged After Loading  

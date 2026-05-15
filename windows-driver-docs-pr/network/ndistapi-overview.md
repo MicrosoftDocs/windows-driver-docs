@@ -5,6 +5,7 @@ keywords:
 - NDISTAPI WDK networking
 - architecture WDK WAN , NDISTAPI
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # NDISTAPI Overview

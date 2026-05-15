@@ -8,6 +8,7 @@ keywords:
 - locale-specific driver files WDK
 - Unicode INF files WDK
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Creating International INF Files

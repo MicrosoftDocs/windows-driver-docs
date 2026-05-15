@@ -7,6 +7,7 @@ keywords:
 - connection-oriented NDIS WDK , service access points
 - CoNDIS WDK networking , service access points
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Operations on Address Families and SAPs

@@ -3,6 +3,7 @@ title: Registering for Device Interface Change Notification
 description: Registering for Device Interface Change Notification
 keywords: ["notifications WDK PnP , device interface changes", "EventCategoryDeviceInterfaceChange notification", "device interface change notifications WDK PnP", "registering device interface change notifications", "IoRegisterPlugPlayNotification"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Registering for Device Interface Change Notification

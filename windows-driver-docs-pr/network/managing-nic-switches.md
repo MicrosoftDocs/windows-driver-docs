@@ -2,6 +2,7 @@
 title: Managing NIC Switches
 description: Managing NIC Switches
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Managing NIC Switches

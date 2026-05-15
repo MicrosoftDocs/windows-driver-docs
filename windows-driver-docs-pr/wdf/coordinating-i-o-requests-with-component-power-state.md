@@ -2,6 +2,7 @@
 title: Coordinating I/O Requests with Component Power State
 description: Coordinating I/O Requests with Component Power State
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Coordinating I/O Requests with Component Power State

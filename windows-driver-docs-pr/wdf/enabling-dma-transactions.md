@@ -6,6 +6,7 @@ keywords:
 - DMA operations WDK KMDF , transactions
 - bus-master DMA WDK KMDF , transactions
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Enabling DMA Transactions

@@ -2,6 +2,7 @@
 title: Guidelines for Managing Packet Coalescing Receive Filters
 description: Guidelines for Managing Packet Coalescing Receive Filters
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Guidelines for Managing Packet Coalescing Receive Filters

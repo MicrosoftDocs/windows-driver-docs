@@ -3,6 +3,7 @@ title: Providing CustomTimerDpc Context Information
 description: Providing CustomTimerDpc Context Information
 keywords: ["timer objects WDK kernel , CustomTimerDpc routines", "CustomTimerDpc", "DeferredContext routine", "context information WDK synchronization", "timer objects WDK kernel , context information"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Providing CustomTimerDpc Context Information

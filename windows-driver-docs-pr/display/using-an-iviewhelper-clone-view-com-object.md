@@ -9,6 +9,7 @@ keywords:
 - video present networks WDK display , about IViewHelper
 - VidPN WDK display , about IViewHelper
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Using an IViewHelper Clone-View COM Object

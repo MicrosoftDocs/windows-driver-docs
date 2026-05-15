@@ -12,6 +12,7 @@ keywords:
 - operating system boot options WDK
 - load configurations WDK boot options
 ms.date: 04/19/2019
+ms.topic: concept-article
 ---
 
 # Tools for Changing Boot Options for Driver Testing and Debugging
@@ -47,4 +48,4 @@ This section includes:
 - [BCD Boot Options Reference](./bcd-boot-options-reference.md)
 - [Using Boot Parameters](using-boot-parameters.md)
 - [BCD Boot Options Reference](bcd-boot-options-reference.md)
-- [Boot Options in Previous Versions of Windows](boot-options-in-previous-versions-of-windows.md)
+

@@ -8,6 +8,7 @@ keywords:
 - installing devices WDK , UMDF
 - adding devices WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Adding a Device Overview

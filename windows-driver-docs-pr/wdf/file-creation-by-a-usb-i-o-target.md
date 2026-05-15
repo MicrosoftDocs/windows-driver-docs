@@ -9,6 +9,7 @@ keywords:
 - USB I/O targets WDK UMDF , file creation
 - I/O targets WDK UMDF , USB, file creation
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # File Creation by a USB I/O Target

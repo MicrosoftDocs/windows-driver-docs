@@ -2,6 +2,7 @@
 title: MS_SMHBA_BINDINGENTRY WMI Class
 description: MS\_SMHBA\_BINDINGENTRY WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MS\_SMHBA\_BINDINGENTRY WMI Class

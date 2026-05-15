@@ -8,6 +8,7 @@ keywords:
 - closing call managers
 - closing miniport call managers
 ms.date: 03/02/2023
+ms.topic: concept-article
 ---
 
 # Closing a CoNDIS Call Manager or MCM

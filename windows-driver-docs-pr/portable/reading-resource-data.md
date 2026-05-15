@@ -2,6 +2,7 @@
 description: Reading Resource Data
 title: Reading Resource Data
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Reading Resource Data

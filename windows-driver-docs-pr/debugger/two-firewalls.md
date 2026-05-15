@@ -2,10 +2,15 @@
 title: Two Firewalls
 description: Two Firewalls
 keywords: ["remote debugging, two firewalls", "firewalls and remote debugging"]
-ms.date: 06/08/2020
+ms.date: 07/29/2025
+ms.topic: example-scenario
+ms.custom: sfi-ropc-nochange
 ---
 
 # Two Firewalls
+
+> [!IMPORTANT]
+> There are additional important security considerations when using remote debugging, for more information, including information on enabling secure mode, see [Security During Remote Debugging](security-during-remote-debugging.md) and [Security Considerations for Windows Debugging Tools](security-considerations.md).
 
 In this scenario, you need to perform kernel debugging on a computer in Building A. Your technician is located in Building C, and has access to symbols there. However, both buildings have firewalls that will not allow incoming connections.
 
@@ -23,7 +28,7 @@ There will be four computers involved in this scenario:
 
 First, make sure the target computer is configured for debugging and is attached to the local host computer. In this example, a 1394 cable is used.
 
-Second, start the repeater on 127.0.20.20:
+Second, start the proxy repeater on 127.0.20.20:
 
 ```console
 dbengprx -p -s tcp:port=9001 -c tcp:port=9000,clicon=127.0.10.10
@@ -32,23 +37,23 @@ dbengprx -p -s tcp:port=9001 -c tcp:port=9000,clicon=127.0.10.10
 Third, start the KD connection server on 127.0.10.10 in Building A as follows:
 
 ```console
-kdsrv -t tcp:port=9000,clicon=127.0.20.20,password=longjump
+kdsrv -t tcp:port=9000,clicon=127.0.20.20,password=Password
 ```
 
 Finally, start the smart client on 127.0.30.30 in Building C. (This can actually be done before or after starting the server in Building A.)
 
 ```console
-windbg -k kdsrv:server=@{tcp:server=127.0.20.20,port=9001,password=longjump},trans=@{1394:channel=9} -y SymbolPath
+windbg -k kdsrv:server=@{tcp:server=127.0.20.20,port=9001,password=Password},trans=@{1394:channel=9} -y SymbolPath
 ```
 
 ## Five-Computer Scenario
 
 This scenario can be made even more complicated if you suppose that the symbols are on one computer in Building C, but the technician is at a different computer.
 
-Suppose that 127.0.30.30 has the symbols, as before, and that its local name is \\\\BOXC. The smart client can be started with the same command as above but with an additional **-server** parameter. Since no one will be using this machine, it will take less processing time if you use KD instead of WinDbg:
+Suppose that 127.0.30.30 has the symbols, as before, and that its local name is `\\BOXC`. The smart client can be started with the same command as above but with an additional **-server** parameter. Since no one will be using this machine, it will take less processing time if you use KD instead of WinDbg:
 
 ```console
-kd -server npipe:pipe=randomname -k kdsrv:server=@{tcp:server=127.0.20.20,port=9001,password=longjump},trans=@{1394:channel=9} -y SymbolPath
+kd -server npipe:pipe=randomname -k kdsrv:server=@{tcp:server=127.0.20.20,port=9001,password=Password},trans=@{1394:channel=9} -y SymbolPath
 ```
 
 Then the technician, elsewhere in the building, can start a debugging client as follows:
@@ -57,4 +62,8 @@ Then the technician, elsewhere in the building, can start a debugging client as 
 windbg -remote npipe:server=\\BOXC,pipe=randomname
 ```
 
-Notice that the password must be supplied by the first non-repeater in the chain (the smart client on \\\\BOXC), not by the final debugger in the chain.
+Notice that the password must be supplied by the first non-repeater in the chain (the smart client on `\\BOXC`), not by the final debugger in the chain.
+
+> [!IMPORTANT]
+> There are important security considerations when using remote debugging. For more information, including information on enabling secure mode, see [Security During Remote Debugging](security-during-remote-debugging.md) and [Security Considerations for Windows Debugging Tools](security-considerations.md).
+

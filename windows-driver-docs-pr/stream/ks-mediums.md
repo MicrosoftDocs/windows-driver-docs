@@ -7,6 +7,7 @@ keywords:
 - kernel streaming WDK , mediums
 - KS WDK , mediums
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # KS Mediums

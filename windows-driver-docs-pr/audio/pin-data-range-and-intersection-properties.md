@@ -9,6 +9,7 @@ keywords:
 - formats WDK audio , pins
 - intersections WDK audio
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Pin Data-Range and Intersection Properties

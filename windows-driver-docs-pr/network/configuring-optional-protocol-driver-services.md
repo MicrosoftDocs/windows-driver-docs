@@ -5,6 +5,7 @@ keywords:
 - protocol drivers WDK networking , optional services
 - NDIS protocol drivers WDK , optional services
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Configuring Optional Protocol Driver Services

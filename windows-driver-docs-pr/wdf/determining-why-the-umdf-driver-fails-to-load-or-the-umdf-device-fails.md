@@ -9,6 +9,7 @@ keywords:
 - UMDF WDK , driver not loading scenario
 - UMDF WDK , device not starting scenario
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Determining Why the UMDF Driver Fails to Load or the UMDF Device Fails to Start

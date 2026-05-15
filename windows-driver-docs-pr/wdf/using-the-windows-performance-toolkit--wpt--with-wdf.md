@@ -3,6 +3,7 @@ title: Using the Windows Performance Toolkit (WPT) with WDF
 description: Starting in Windows 10, you can use the Windows Performance Toolkit (WPT) to view performance data for a KMDF or UMDF 2 driver.
 Search.SourceType: Video
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Using the Windows Performance Toolkit (WPT) with WDF
@@ -29,7 +30,8 @@ The WPT is part of the Windows Assessment and Deployment Kit (ADK). You can inst
 The WPT consists of two separate tools: Windows Performance Recorder and Windows Performance Analyzer (WPA). In this topic, we use WPR to record a trace, and then WPA to view the trace in a configurable GUI format.
 
 To learn how to use the Windows Performance Toolkit to measure the performance of a WDF driver, either watch the following video, or read the steps below the video. The video and the steps cover the same procedure.
->[!VIDEO https://www.microsoft.com/videoplayer/embed/fc37f465-9456-45d7-bbe9-6f7d44342563]
+
+>[!VIDEO 7c679c97-e011-4359-aa65-67ee605c3cd4]
 
 **Recording and viewing an event log for a WDF driver**
 

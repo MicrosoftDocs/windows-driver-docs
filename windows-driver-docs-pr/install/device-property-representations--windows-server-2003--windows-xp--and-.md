@@ -4,6 +4,7 @@ description: Device Property Representations (Windows Server 2003, Windows XP, a
 keywords:
 - device properties WDK device installations , representations
 ms.date: 04/04/2022
+ms.topic: concept-article
 ---
 
 # Device Property Representations (Windows Server 2003, Windows XP, and Windows 2000)

@@ -2,6 +2,7 @@
 title: Developer Guidelines
 description: This topic discusses general guidelines for working with and developing smart card minidrivers. 
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Developer Guidelines
@@ -599,7 +600,7 @@ Group Policy settings for the Microsoft Base Smart Card Crypto Service Provider 
 ## <span id="_Group_Policy_Settings_for_Microsoft_CNG_Smart_Card_KSP"></span><span id="_group_policy_settings_for_microsoft_cng_smart_card_ksp"></span><span id="_GROUP_POLICY_SETTINGS_FOR_MICROSOFT_CNG_SMART_CARD_KSP"></span> Group Policy Settings for Microsoft CNG Smart Card KSP
 
 
-Group Policy Settings for Microsoft CNG Smart Card Key Storage Provider are located in \[HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Cryptography \\Providers\\Microsoft Smart Card Key Storage Provider\].
+Group Policy Settings for Microsoft CNG Smart Card Key Storage Provider are located in \[HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Cryptography\\Providers\\Microsoft Smart Card Key Storage Provider\].
 
 <table>
 <colgroup>

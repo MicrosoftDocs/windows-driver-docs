@@ -11,6 +11,7 @@ keywords:
 - function drivers WDK ACPI
 - WDM function drivers WDK ACPI
 ms.date: 09/12/2024
+ms.topic: how-to
 ---
 
 # Supporting ACPI devices

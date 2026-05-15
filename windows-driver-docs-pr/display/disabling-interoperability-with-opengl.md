@@ -6,6 +6,7 @@ keywords:
 - interoperability WDK display
 - OpenGL WDK display
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Disabling Interoperability with OpenGL

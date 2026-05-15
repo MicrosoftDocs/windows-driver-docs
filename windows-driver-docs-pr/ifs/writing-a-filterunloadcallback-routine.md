@@ -3,7 +3,9 @@ title: Writing a FilterUnloadCallback Routine
 description: Writing a FilterUnloadCallback Routine
 keywords:
 - FilterUnloadCallback
-ms.date: 04/20/2017
+ms.date: 03/31/2026
+ms.topic: concept-article
+ai-usage: ai-assisted
 ---
 
 # Writing a FilterUnloadCallback Routine
@@ -21,7 +23,7 @@ typedef NTSTATUS
     );
 ```
 
-The *FilterUnloadCallback* routine has one input parameter, *Flags*, which can be **NULL** or FLTFL\_FILTER\_UNLOAD\_MANDATORY. The filter manager sets this parameter to FLTFL\_FILTER\_UNLOAD\_MANDATORY to indicate that the unload operation is mandatory. For more information about this parameter, see [**PFLT\_FILTER\_UNLOAD\_CALLBACK**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_filter_unload_callback).
+The *FilterUnloadCallback* routine has one input parameter, *Flags*, which can be **0** or FLTFL\_FILTER\_UNLOAD\_MANDATORY. The filter manager sets this parameter to FLTFL\_FILTER\_UNLOAD\_MANDATORY to indicate that the unload operation is mandatory. For more information about this parameter, see [**PFLT\_FILTER\_UNLOAD\_CALLBACK**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_filter_unload_callback).
 
 A minifilter driver's *FilterUnloadCallback* routine must perform the following steps:
 

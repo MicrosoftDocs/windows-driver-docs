@@ -2,6 +2,7 @@
 title: Opening a Dump File Using CDB
 description: Opening a Dump File Using CDB
 ms.date: 11/28/2017
+ms.topic: concept-article
 ---
 
 # Opening a Dump File Using CDB

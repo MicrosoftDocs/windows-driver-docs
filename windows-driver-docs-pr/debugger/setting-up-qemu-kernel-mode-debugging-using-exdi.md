@@ -3,6 +3,7 @@ title: Setting Up QEMU Kernel-Mode Debugging Using EXDI
 description: Debugging Tools for Windows supports debugging QEMU using EXDI. This topic describes how to setup QEMU kernel debugging using EXDI.
 ms.date: 10/28/2024
 ms.localizationpriority: medium
+ms.topic: how-to
 ---
 
 # Setting Up QEMU Kernel-Mode Debugging Using EXDI

@@ -5,6 +5,7 @@ keywords:
 - filter drivers file system , placeholders
 - minifilter, file system placeholders
 ms.date: 02/22/2023
+ms.topic: concept-article
 ---
 
 # About placeholders

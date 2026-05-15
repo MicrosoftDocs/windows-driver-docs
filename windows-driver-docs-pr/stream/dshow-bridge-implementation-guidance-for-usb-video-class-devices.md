@@ -2,6 +2,7 @@
 title: DShow Bridge Implementation Guidance for UVC Devices
 description: Provides DShow Bridge implementation guidance for UVC devices.
 ms.date: 12/16/2020
+ms.topic: concept-article
 ---
 
 # DShow Bridge implementation guidance for UVC devices

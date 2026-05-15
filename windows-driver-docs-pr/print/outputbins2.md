@@ -2,6 +2,7 @@
 title: OutputBins
 description: OutputBins
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # OutputBins

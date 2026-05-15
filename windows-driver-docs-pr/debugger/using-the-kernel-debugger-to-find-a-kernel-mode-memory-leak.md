@@ -3,6 +3,7 @@ title: Using the Kernel Debugger to Find a Kernel-Mode Memory Leak
 description: Using the Kernel Debugger to Find a Kernel-Mode Memory Leak
 keywords: ["memory leak, kernel-mode, kernel debugger"]
 ms.date: 05/23/2017
+ms.topic: how-to
 ---
 
 # Using the Kernel Debugger to Find a Kernel-Mode Memory Leak

@@ -1,13 +1,14 @@
 ---
 title: Writing 64-Bit Printer Drivers
-description: Writing 64-Bit Printer Drivers
+description: Provides information about writing 64-bit printer drivers.
 keywords:
 - printer drivers WDK , 64-bit
 - 64-bit WDK printer
-ms.date: 01/31/2023
+ms.date: 02/21/2025
+ms.topic: concept-article
 ---
 
-# Writing 64-Bit Printer Drivers
+# Writing 64-bit printer drivers
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
@@ -27,7 +28,7 @@ If a 32-bit application is running on a 64-bit version of the Microsoft Windows 
 
 In existing 32-bit driver code, be careful about conversions between pointer types and integer types such as DWORD or ULONG. If you have experience writing code for 32-bit machines, you might be used to assuming that a pointer value fits into a DWORD or ULONG. For 64-bit code, this assumption is dangerous. If you cast a pointer to type DWORD or ULONG, a 64-bit pointer might be truncated.
 
-Instead, cast the pointer to type DWORD\_PTR or ULONG\_PTR. An unsigned integer of type DWORD\_PTR or ULONG\_PTR is always large enough to store the entire pointer, regardless of whether the code is compiled for a 32-bit or 64-bit computer.
+Instead, cast the pointer to type DWORD_PTR or ULONG_PTR. An unsigned integer of type DWORD_PTR or ULONG_PTR is always large enough to store the entire pointer, regardless of whether the code is compiled for a 32-bit or 64-bit computer.
 
 For example, the pDrvOptItems.UserData pointer field in the [**OEMCUIPPARAM**](/windows-hardware/drivers/ddi/printoem/ns-printoem-_oemcuipparam) structure is of type ULONG_PTR. The following code example shows what not to do if you copy a 64-bit pointer value to this field.
 

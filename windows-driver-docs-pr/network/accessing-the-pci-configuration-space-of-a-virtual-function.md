@@ -2,6 +2,7 @@
 title: Accessing the PCI Configuration Space of a Virtual Function
 description: Accessing the PCI Configuration Space of a Virtual Function
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Accessing the PCI Configuration Space of a Virtual Function

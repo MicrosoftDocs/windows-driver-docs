@@ -2,6 +2,7 @@
 title: Creating a WIA Camera Item Tree Layout
 description: Creating a WIA Camera Item Tree Layout
 ms.date: 06/09/2020
+ms.topic: concept-article
 ---
 
 # Creating a WIA Camera Item Tree Layout

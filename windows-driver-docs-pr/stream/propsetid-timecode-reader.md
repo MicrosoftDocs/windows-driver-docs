@@ -2,6 +2,7 @@
 title: PROPSETID_TIMECODE_READER
 description: PROPSETID\_TIMECODE\_READER
 ms.date: 11/28/2017
+ms.topic: reference
 ---
 
 # PROPSETID\_TIMECODE\_READER

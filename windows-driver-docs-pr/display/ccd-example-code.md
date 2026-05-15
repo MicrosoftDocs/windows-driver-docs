@@ -8,6 +8,7 @@ keywords:
 - configuring displays Windows , CCD APIs, example code
 - CCD APIs WDK Windows display , example code
 ms.date: 07/02/2024
+ms.topic: example-scenario
 ---
 
 # CCD example code

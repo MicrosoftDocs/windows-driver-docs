@@ -3,6 +3,7 @@ title: Debugging Windows Setup and the OS Loader
 description: Debugging Windows Setup and the OS Loader
 keywords: ["Windows setup debugging", "OS Loader debugging", "setup debugging"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Debugging Windows Setup and the OS Loader

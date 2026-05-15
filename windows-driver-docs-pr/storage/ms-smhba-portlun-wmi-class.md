@@ -2,6 +2,7 @@
 title: MS_SMHBA_PORTLUN WMI Class
 description: MS\_SMHBA\_PORTLUN WMI Class
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # MS\_SMHBA\_PORTLUN WMI Class

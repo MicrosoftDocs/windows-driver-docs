@@ -2,6 +2,7 @@
 description: Supporting Event Cookies
 title: Supporting Event Cookies
 ms.date: 03/03/2023
+ms.topic: how-to
 ---
 
 # Supporting Event Cookies

@@ -4,6 +4,7 @@ description: This section describes metadata field identifiers for Windows Filte
 keywords:
 - Metadata field identifiers network drivers
 ms.date: 11/09/2017
+ms.topic: reference
 ---
 
 # Metadata field identifiers

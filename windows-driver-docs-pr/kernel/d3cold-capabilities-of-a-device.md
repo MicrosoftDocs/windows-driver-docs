@@ -2,6 +2,7 @@
 title: D3cold Capabilities of a Device
 description: Before the driver that is the power policy owner (PPO) for a device enables the device to enter D3cold (when the computer is to remain in S0), the driver must verify that the device will be responsive and continue to operate correctly after the device enters D3cold.
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # D3cold Capabilities of a Device
@@ -11,7 +12,7 @@ Before the driver that is the power policy owner (PPO) for a device enables the 
 
 For a Plug and Play (PnP) device, the operating system typically gets information about the D3cold capabilities of the device from the parent bus driver.
 
-For example, if a device is attached to a PCI or PCI Express bus, the device's PCI configuration space contains a Power Management Register Block that indicates the capabilities of the device. Capability flags in this block specify the device power states from which the device can signal a power management event, or PME (the PCI term for a wake event). These states might include D3hot and D3cold. For more information about PCI power management, see the [PCI Bus Power Management Interface Specification](https://pcisig.com/specifications/conventional/pci_bus_power_management_interface/).
+For example, if a device is attached to a PCI or PCI Express bus, the device's PCI configuration space contains a Power Management Register Block that indicates the capabilities of the device. Capability flags in this block specify the device power states from which the device can signal a power management event, or PME (the PCI term for a wake event). These states might include D3hot and D3cold. For more information about PCI power management, see the [PCI Bus Power Management Interface Specification](https://pcisig.com/specifications).
 
 If a device must be able to signal a wake event from any low-power Dx state that it enters, the device should not enter D3cold unless the device, parent bus controller, and hardware platform support signaling a wake event from D3cold.
 

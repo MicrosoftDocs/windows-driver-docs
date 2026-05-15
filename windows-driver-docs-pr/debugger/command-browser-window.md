@@ -3,6 +3,7 @@ title: Using the Command Browser Window in WinDbg (Classic) Classic
 description: Using the Command Browser Window in WinDbg (Classic) Classic
 keywords: ["debugging information windows, command browser window", "command browser window", "Debugger Command window, command browser window"]
 ms.date: 05/23/2017
+ms.topic: concept-article
 ---
 
 # Using the Command Browser Window in WinDbg (Classic) Classic

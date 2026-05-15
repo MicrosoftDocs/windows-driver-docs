@@ -3,6 +3,7 @@ title: Managing Device Power Policy
 description: Managing Device Power Policy
 keywords: ["device power policy WDK kernel", "power policy WDK kernel", "device power policy owners WDK kernel", "function drivers WDK power management", "device power states WDK kernel", "initial device power state WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Managing Device Power Policy

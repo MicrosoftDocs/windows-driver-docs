@@ -5,6 +5,7 @@ keywords:
 - Verifier utility
 - Driver Verifier WDK , Verifier utility
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # The Verifier Utility

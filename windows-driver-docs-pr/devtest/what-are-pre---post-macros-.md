@@ -2,6 +2,7 @@
 title: What are PRE / POST Macros
 description: What are PRE / POST macros
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # What are PRE / POST macros?

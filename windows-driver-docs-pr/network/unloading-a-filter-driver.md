@@ -6,6 +6,7 @@ keywords:
 - NDIS filter drivers WDK , unloading
 - unloading filter drivers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Unloading a Filter Driver

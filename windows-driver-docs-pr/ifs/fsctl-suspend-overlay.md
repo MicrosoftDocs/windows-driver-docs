@@ -57,7 +57,7 @@ BOOL
 
 | Code | Meaning |
 | ---- | ------- |
-| STATUS_ACCESS_DENIED | The requestor does not have administrative privileges. |
+| STATUS_ACCESS_DENIED | The requester does not have administrative privileges. |
 | STATUS_BUFFER_TOO_SMALL | The length of the input buffer pointed to by **InputBuffer**, and specified by **InputBufferLength**, is too small. |
 | STATUS_INTERNAL_ERROR | The requested volume is not accessible. |
 | STATUS_INVALID_DEVICE_REQUEST | The backing service is not present or not started. |

@@ -2,6 +2,7 @@
 title: Switch Policies
 description: Switch Policies
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Switch Policies

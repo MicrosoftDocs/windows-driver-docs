@@ -7,6 +7,7 @@ keywords:
 - COM interfaces WDK print
 - plug-ins WDK print
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Implementing Printer Driver COM Interfaces

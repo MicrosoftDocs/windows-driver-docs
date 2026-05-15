@@ -6,6 +6,7 @@ keywords:
 - callback interfaces WDK UMDF
 - associating callback interfaces WDK UMDF
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Associating Callback Interfaces Example

@@ -2,6 +2,7 @@
 title: Using Interrupt Resource Descriptors
 description: Using Interrupt Resource Descriptors
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Using Interrupt Resource Descriptors

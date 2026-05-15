@@ -3,6 +3,7 @@ title: dbgerr005 Private Symbols Required
 description: dbgerr005 Private Symbols Required
 keywords: ["dbgerr005", "Private symbols required (dbgerr005)"]
 ms.date: 05/23/2017
+ms.topic: error-reference
 ---
 
 # dbgerr005: Private Symbols Required

@@ -2,8 +2,7 @@
 title: COSA Database Overview and Frequently Asked Questions
 description: The Country and Operator Settings Asset (COSA) database is used by mobile operators to provision Windows devices for mobile broadband.
 ms.date: 08/22/2024
-author: mhopkins-msft
-ms.author: mhopkins
+ms.topic: faq
 ---
 
 # COSA database overview and frequently asked questions

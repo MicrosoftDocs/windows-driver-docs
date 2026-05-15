@@ -7,6 +7,7 @@ keywords:
 - pre-allocated backfill storage WDK header-data split
 - data backfill space WDK header-data split
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Allocating Backfill for the Data Buffer

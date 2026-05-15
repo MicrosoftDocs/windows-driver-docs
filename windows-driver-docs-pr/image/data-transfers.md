@@ -2,6 +2,7 @@
 title: Data Transfers
 description: Data Transfers
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Data Transfers

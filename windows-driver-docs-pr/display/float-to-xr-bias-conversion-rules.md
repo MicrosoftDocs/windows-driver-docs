@@ -8,6 +8,7 @@ keywords:
 - float WDK Windows 7 display
 - float WDK Windows 7 display , conversion to XR_BIAS
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # Float to XR\_BIAS Conversion Rules

@@ -2,6 +2,7 @@
 title: HBA_BIND_TYPE
 description: HBA\_BIND\_TYPE
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # HBA\_BIND\_TYPE

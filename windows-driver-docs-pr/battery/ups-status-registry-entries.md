@@ -2,6 +2,7 @@
 title: UPS Status Registry Entries
 description: UPS minidrivers must set certain UPS Status Registry Entries
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # UPS\\Status Registry Entries

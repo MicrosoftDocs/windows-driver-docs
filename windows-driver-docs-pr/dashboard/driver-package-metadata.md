@@ -1,8 +1,8 @@
 ---
 title: Driver package metadata
 description: Describes the structure of the driver package metadata for Partner Center submissions.
-ms.topic: article
 ms.date: 08/21/2018
+ms.topic: reference
 ---
 
 # Driver package metadata
@@ -38,7 +38,8 @@ If you are the publisher and received the submission via sharing you may need to
               "pci\\ven_test&dev_abcd": {
                 "Manufacturer": "RAID",
                 "DeviceDescription": "Virtual Raid Adapter",
-                "FeatureScore": null
+                "FeatureScore": null,
+                "CeilingOsCode": "WINDOWS_v100_X64_20H1_FULL"
               }
             }
           }
@@ -68,6 +69,7 @@ The file has the following values:
 |Manufacturer|string|Manufacturer of the hardware ID|
 |DeviceDescription|string|Description of the hardware ID|
 |FeatureScore|string|Feature score for the driver|
+|CeilingOsCode|string|The ceiling operating system code beyond which this PnP-to-driver mapping should not be offered. When set, audience generation is capped at the specified OS version. `null` when no ceiling is detected, in which case the driver is offered through the latest applicable OS. Maps to an *operatingSystemCode* value (same vocabulary used by `OSPnPInfoMap` keys). <b>Note:</b> The CeilingOsCode field will only be populated for packages submitted after May 8th 2026. Packages submitted before this date will not have this field in their metadata — it will not be backfilled for existing submissions.|
 
 ## See also
 

@@ -2,6 +2,7 @@
 title: Creating a Single Driver Package for Windows XP and Windows Vista
 description: Creating a Single Driver Package for Windows XP and Windows Vista
 ms.date: 01/27/2023
+ms.topic: how-to
 ---
 
 # Creating a Single Driver Package for Windows XP and Windows Vista

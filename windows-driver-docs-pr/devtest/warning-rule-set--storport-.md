@@ -2,6 +2,7 @@
 title: Warning Rule Set (Storport)
 description: Learn about using rules (Storport) to verify that your driver can correctly processes IRPs in various contexts and follow Microsoft recommended best practices.
 ms.date: 05/21/2018
+ms.topic: reference
 ---
 
 # Warning rule set (Storport)

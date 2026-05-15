@@ -3,6 +3,7 @@ title: Example Sequence
 keywords: ["Examples of sequences of IOCTLs in the Smart Card resource manager including start-up connection and disconnection", "NFC","near field communications","proximity","near field proximity","NFP"]
 description: Provides examples of sequences of IOCTLs in the Smart Card resource manager, including start-up, connection, and disconnection.
 ms.date: 01/11/2024
+ms.topic: concept-article
 ---
 
 # Example sequence
@@ -65,5 +66,5 @@ The Power reset is irrelevant since we do not support SCARD_SWALLOWED, SCARD_POW
 
 ## Related topics
 
-- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)
+- [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)
 - [Smart card DDI and command reference](/previous-versions/dn905601(v=vs.85))

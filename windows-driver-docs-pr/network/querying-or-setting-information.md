@@ -4,6 +4,7 @@ description: Querying or Setting Information
 keywords:
 - querying connection-oriented information
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Querying or Setting Information

@@ -9,6 +9,7 @@ keywords:
 - overlay support WDK Windows Server 2008 R2 display
 - overlay support WDK Windows Server 2008 R2 display , verifying
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Verifying Overlay Support

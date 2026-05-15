@@ -2,6 +2,7 @@
 title: Overview of Developing Windows Drivers for USB Type-C Connectors
 description: You need to write a driver for the connector if your USB Type-C system does not include an embedded controller, otherwise you can load the Microsoft-provided UCSI driver.
 ms.date: 01/12/2024
+ms.topic: concept-article
 ---
 
 # Overview of developing Windows drivers for USB Type-C connectors

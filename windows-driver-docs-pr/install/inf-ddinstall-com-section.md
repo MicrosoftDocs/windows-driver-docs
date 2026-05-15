@@ -2,6 +2,7 @@
 title: INF DDInstall.COM section
 description: The DDInstall.COM section contains one or more INF AddComServer directives that reference other INF-writer-defined sections in an INF file.
 ms.date: 04/18/2024
+ms.topic: reference
 ---
 
 # INF DDInstall.COM section

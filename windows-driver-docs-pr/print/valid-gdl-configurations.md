@@ -7,6 +7,7 @@ keywords:
 - configurations WDK GDL , valid configurations
 - validating GDL configurations WDK
 ms.date: 04/20/2017
+ms.topic: checklist
 ---
 
 # Valid GDL Configurations

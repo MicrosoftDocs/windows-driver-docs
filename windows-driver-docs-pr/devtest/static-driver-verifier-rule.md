@@ -13,6 +13,7 @@ keywords:
 - assignment statements WDK Static Driver Verifier
 - abort statements WDK Static Driver Verifier
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Static Driver Verifier Rule

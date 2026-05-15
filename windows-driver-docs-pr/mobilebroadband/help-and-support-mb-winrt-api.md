@@ -2,6 +2,7 @@
 title: Help and Support
 description: Help and support
 ms.date: 10/06/2023
+ms.topic: end-user-help
 ---
 
 # Help and support

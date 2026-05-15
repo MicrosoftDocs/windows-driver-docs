@@ -9,6 +9,7 @@ keywords:
 - DMA services WDK AVStream
 - Direct Memory Access WDK AVStream
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Common Buffer DMA in AVStream

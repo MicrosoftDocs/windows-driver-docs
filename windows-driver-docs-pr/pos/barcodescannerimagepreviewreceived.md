@@ -2,6 +2,7 @@
 title: BarcodeScannerImagePreviewReceived
 description: The BarcodeScannerImagePreviewReceived event occurs when the device receives a bitmap image of the scan.
 ms.date: 03/17/2023
+ms.topic: reference
 ---
 
 # BarcodeScannerImagePreviewReceived

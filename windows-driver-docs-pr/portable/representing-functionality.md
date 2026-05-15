@@ -2,6 +2,7 @@
 description: Representing Functionality
 title: Representing Functionality
 ms.date: 03/03/2023
+ms.topic: concept-article
 ---
 
 # Representing Functionality

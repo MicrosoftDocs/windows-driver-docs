@@ -6,6 +6,7 @@ keywords:
 - RSS WDK networking , indicating receive data
 - indicating receive data WDK RSS
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Indicating RSS Receive Data

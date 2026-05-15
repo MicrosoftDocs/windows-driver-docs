@@ -7,6 +7,7 @@ keywords:
 - user-mode drivers WDK UMDF , impersonation
 - impersonation WDK UMDF
 ms.date: 04/20/2017
+ms.topic: how-to
 ---
 
 # Handling Client Impersonation in UMDF 1.x Drivers

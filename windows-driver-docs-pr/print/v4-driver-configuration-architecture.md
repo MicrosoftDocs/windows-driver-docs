@@ -2,6 +2,7 @@
 title: V4 Printer Driver Configuration Architecture
 description: The v4 printer driver model supports a greatly simplified configuration layer.
 ms.date: 01/25/2023
+ms.topic: concept-article
 ---
 
 # V4 Printer Driver Configuration Architecture

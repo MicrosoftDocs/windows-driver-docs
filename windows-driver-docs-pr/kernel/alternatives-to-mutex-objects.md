@@ -3,6 +3,7 @@ title: Alternatives to Mutex Objects
 description: Alternatives to Mutex Objects
 keywords: ["kernel dispatcher objects WDK , mutex objects", "dispatcher objects WDK kernel , mutex objects", "mutex objects WDK kernel", "fast mutexes WDK kernel", "guarded mutexes WDK kernel"]
 ms.date: 06/16/2017
+ms.topic: concept-article
 ---
 
 # Alternatives to Mutex Objects

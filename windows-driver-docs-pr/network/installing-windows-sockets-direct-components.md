@@ -2,6 +2,7 @@
 title: Installing Windows Sockets Direct Components
 description: Installing Windows Sockets Direct Components
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Installing Windows Sockets Direct Components

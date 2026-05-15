@@ -2,6 +2,7 @@
 title: Run System Power Device Fundamental Tests in Visual Studio for MUTT Devices
 description: Describes the device fundamental tests that you must run for MUTT devices that are attached to available ports.
 ms.date: 01/16/2024
+ms.topic: how-to
 ---
 
 # How to run system power device fundamental (devfund) tests in Visual Studio for MUTT devices

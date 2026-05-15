@@ -9,6 +9,7 @@ keywords:
 - driver color management WDK See color management WDK
 - device color management WDK See color management WDK
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 
 # Driver control and device control

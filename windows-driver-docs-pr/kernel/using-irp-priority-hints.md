@@ -2,6 +2,7 @@
 title: Using IRP Priority Hints
 description: Using IRP Priority Hints
 ms.date: 10/17/2018
+ms.topic: concept-article
 ---
 
 # Using IRP Priority Hints

@@ -2,6 +2,7 @@
 title: Initiating System Restarts During Device Installations
 description: Initiating System Restarts During Device Installations
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Initiating System Restarts During Device Installations

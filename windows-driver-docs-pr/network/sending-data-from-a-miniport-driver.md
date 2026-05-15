@@ -4,6 +4,7 @@ description: Sending Data from a Miniport Driver
 keywords:
 - sending data WDK networking
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Sending Data from a Miniport Driver

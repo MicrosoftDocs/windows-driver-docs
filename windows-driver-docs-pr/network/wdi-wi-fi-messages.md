@@ -2,6 +2,7 @@
 title: WDI message structure
 description: This section describes the structure for WDI command messages
 ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # WDI message structure

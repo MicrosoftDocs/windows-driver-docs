@@ -4,7 +4,9 @@ description: MB 5G Operations Overview
 keywords:
 - MB 5G Operations Overview, Mobile Broadband 5G Operations Overview
 ms.date: 03/01/2021
+ms.update-cycle: 1095-days
 ms.custom: UpdateFrequency3
+ms.topic: concept-article
 ---
 
 # MB 5G Operations Overview

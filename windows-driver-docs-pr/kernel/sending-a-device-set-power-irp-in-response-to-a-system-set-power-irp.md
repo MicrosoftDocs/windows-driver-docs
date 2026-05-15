@@ -3,6 +3,7 @@ title: Sending a Device Set-Power IRP in Response to a System Set-Power IRP
 description: Sending a Device Set-Power IRP in Response to a System Set-Power IRP
 keywords: ["sending set-power IRPs", "set-power IRPs WDK power management"]
 ms.date: 06/16/2017
+ms.topic: how-to
 ---
 
 # Sending a Device Set-Power IRP in Response to a System Set-Power IRP

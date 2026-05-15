@@ -7,6 +7,7 @@ keywords:
 - notifications WDK Bluetooth
 - profile drivers WDK Bluetooth
 ms.date: 01/10/2024
+ms.topic: concept-article
 ---
 
 # Supporting Bluetooth event notifications

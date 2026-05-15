@@ -6,6 +6,7 @@ keywords:
 - install sections WDK printer
 - sections WDK printer
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 
 # Printer INF File Install Sections

@@ -7,6 +7,7 @@ keywords:
 - reserved keywords WDK
 - UndefinePrefix directive WDK GDL
 ms.date: 04/20/2017
+ms.topic: reference
 ---
 
 # \#UndefinePrefix Preprocessor Directive

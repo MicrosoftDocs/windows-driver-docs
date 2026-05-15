@@ -4,6 +4,7 @@ description: Controlling Filter Manager Operation
 keywords:
 - filter manager WDK file system minifilter , controlling operation
 ms.date: 04/20/2017
+ms.topic: concept-article
 ---
 
 # Controlling Filter Manager Operation

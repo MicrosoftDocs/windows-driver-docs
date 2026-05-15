@@ -1,14 +1,30 @@
 ---
-description: Windows Portable Devices
-title: Windows Portable Devices
-ms.date: 03/03/2023
-ms.topic: article
+description: Windows Portable Devices Documentation landing page
+title: Windows Portable Devices Documentation
+ms.date: 12/05/2024
+ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 
-# Windows Portable Devices
+# Windows Portable Devices (WPD) Documentation
 
-## In This Section
+Welcome to the Windows Portable Devices (WPD) Driver documentation. WPD is a Microsoft framework that enables communication between Windows and portable devices, such as smartphones, cameras, and media players. 
 
-- [WPD Design Guide](wpd-design-guide.md)
-- [WPD Programming Guide](wpd-programming-guide.md)
-- [WPD Reference](/previous-versions/windows/hardware/drivers/ff597901(v=vs.85))
+This documentation provides essential resources and guidelines for developers and hardware manufacturers to create and implement drivers that facilitate seamless interaction with these devices.
+
+## Get Started
+
+To get started with WPD, you can see the following topics: 
+
+- WPD overview
+
+    - [Introduction to WPD Drivers](wpd-drivers-overview.md)
+    - [Device Installation](device-installation.md)
+    - [Architecture overview](architecture-overview.md)
+    - [Requirements to create a WPD driver](requirements.md)
+
+    
+- WPD programming guide
+
+    - [WPD driver development tools](familiarizing-yourself-with-the-sample-driver.md)
+    - [WPD driver samples](the-wpd-driver-samples.md)

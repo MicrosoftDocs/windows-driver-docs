@@ -2,6 +2,7 @@
 title: How Device Property Pages are Displayed
 description: How Device Property Pages are Displayed
 ms.date: 03/12/2024
+ms.topic: concept-article
 ---
 
 # How Device Property Pages are Displayed

@@ -2,6 +2,7 @@
 title: Debugger Operation
 description: This section covers debugger operation
 ms.date: 12/12/2022
+ms.topic: reference
 ---
 
 # Debugger Operation
