@@ -96,6 +96,21 @@ The following example demonstrates the JSON request body for a shipping label. O
 }
 ```
 
+For sharing shipping labels, recipients specifications can be added. 
+
+```json
+{
+  {
+    "recipientSpecifications": {
+    "blockDuaCreation": true
+   },
+    "targeting": {
+    "hardwareIds": [ ... ]
+   }
+  }
+}
+```
+
 For details about the fields in the request, see [ShippingLabel resource](get-shipping-labels.md#shippinglabel-resource).
 
 Points to note:
