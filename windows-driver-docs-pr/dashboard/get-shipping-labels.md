@@ -62,7 +62,8 @@ This resource represents a shipping label created for a submission of your produ
   },
   "recipientSpecifications": {
     "receiverPublisherId": "27691110",
-    "enforceChidTargeting": true
+    "enforceChidTargeting": true,
+    "blockDuaCreation": false
   },
   "targeting": {
     "hardwareIds": [
@@ -208,7 +209,8 @@ This object represents the details and conditions under which the submission is 
 ```json
 {
 	"receiverPublisherId": "27691110",
-	"enforceChidTargeting": false
+	"enforceChidTargeting": false,
+    "blockDuaCreation": false
 }
 ```
 This object has the following values
@@ -217,6 +219,7 @@ This object has the following values
 |:--|:--|:--|
 |receiverPublisherId|string|Seller ID with whom the driver is being shared. The recipients can download driver, publish to Windows Update, create DUA packages. Recipients cannot further share with other Partners.|
 |enforceChidTargeting|boolean|Indicates whether a partner is required to apply CHIDs to any shipping labels they create for this driver submission. This allows you to protect your users when a Hardware ID may be shared among many partner companies.|
+|blockDuaCreation|Boolean|Indicates whether DUA (Driver Update Acceptance) creation is blocked for receivers of this shared shipping label. When true, receivers cannot download the DUA shell or create derived submissions. Default is false.|
 
 ### Targeting object
 
