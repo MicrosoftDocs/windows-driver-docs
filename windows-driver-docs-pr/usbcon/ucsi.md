@@ -52,7 +52,7 @@ In addition to the commands marked as **Required**, Windows requires these comma
   - Supported Provider Capabilities Change
   - Negotiated Power Level Change
 
-For more information, see [Intel BIOS Implementation of UCSI](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/bios-implementation-of-ucsi.html).
+For more information, see [Intel BIOS Implementation of UCSI](https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/bios-implementation-of-ucsi.pdf).
 
 ## UCM-UCSI ACPI device for UCSI 2.0 and greater
 
