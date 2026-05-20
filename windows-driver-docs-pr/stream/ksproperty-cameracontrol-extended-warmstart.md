@@ -85,7 +85,7 @@ When responding to a KSPROPERTY\_TYPE\_GET request, the driver sets the members 
 </tr>
 <tr class="even">
 <td>PinId</td>
-<td>The pin ID for the photo pin.</td>
+<td>The pin ID for the pin to be utilized for Warm Start</td>
 </tr>
 <tr class="odd">
 <td>Size</td>
