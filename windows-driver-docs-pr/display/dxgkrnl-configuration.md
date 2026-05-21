@@ -24,4 +24,3 @@ If they're defined, DxgKrnl uses the following values under the key `HKEY_LOCAL_
 | --- | --- | --- |
 | MemoryManager\SystemPartitionCommitLimitPercentage | DWORD | Minimum limit for the percentage of system memory that accelerators are allowed to access, if available at runtime. |
 | MemoryManager\SystemPartitionCommitLimitPercentageMax | DWORD | Maximum limit for the percentage of system memory that accelerators are allowed to access, if available at runtime. |
-| MemoryManager\SystemPartitionCpuOnlyMemory | DWORD | MB of system memory that accelerators aren't allowed to access. |
