@@ -1092,5 +1092,7 @@
       href: adaptive-refresh-for-playing-24-fps-content.md
     - name: GPU power management of idle states and active power
       href: gpu-power-management-of-idle-and-active-power.md
+    - name: DxgKrnl Configuration
+      href: dxgkrnl-configuration.md
 - name: WDK Sample Code
   href: display-samples.md
