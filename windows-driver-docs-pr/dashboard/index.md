@@ -1,7 +1,7 @@
 ---
 title: Partner Center for Windows Hardware
 description: Learn how to get started with the hardware submission process by using the Partner Center for Windows Hardware.
-ms.date: 10/31/2025
+ms.date: 10/30/2025
 ms.topic: get-started
 #customer intent: As a hardware developer, I want the Partner Center for Windows Hardware to create certified hardware devices for use with Windows.
 ---
