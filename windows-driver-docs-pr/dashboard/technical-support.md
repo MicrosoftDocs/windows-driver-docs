@@ -13,7 +13,7 @@ The Windows Hardware Program & Hardware Dev Center (HDC) provide enrolled partne
 There are two ways to open a support case:
 
 - **Open a case directly with program support via Engage Center** (You must be signed in with a Partner Center account that is enrolled in the Hardware Program → use [Microsoft Engage Center](https://engagecenter.microsoft.com/#view/Microsoft_AzureCXP_EngageHub/EngageHubMenu.MenuView/targetExperience/sfb/sapId/bc9d4067-7218-61b9-1d2c-68ae591acf9d) *(fastest resolution)*.
-- **You can't sign in with an account that has completed enrollment in the Hardware Program** (for example, your enrollment is incomplete, your account is suspended, or you can't access the enrolled tenant) → use [Partner Center support](#cant-sign-in-with-an-enrolled-account-open-a-partner-center-enrollment-case).
+- **You can't sign in with an account that has completed enrollment in the Hardware Program** (for example, your enrollment is incomplete, your account is suspended, or you can't access the enrolled tenant) → use [Partner Center support](https://partner.microsoft.com/support?stage=2&topicid=abf19e05-3f3a-f111-88b3-000d3a16941b).
 
 ## Open a case in Microsoft Engage Center (recommended)
 
