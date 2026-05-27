@@ -39,7 +39,7 @@ Microsoft Engage Center is the fastest path to reach the Hardware Program suppor
 
 If you can't sign in to Engage Center with an account that is enrolled in the Hardware Program — for example, your enrollment is incomplete, you can't access the enrolled tenant, or you're trying to enroll for the first time — open a case through Partner Center support instead.
 
-1. Go to Partner Center support: [https://partner.microsoft.com/en-us/support](https://partner.microsoft.com/en-us/support?stage=2&topicid=abf19e05-3f3a-f111-88b3-000d3a16941b).
+1. Go to [Partner Center support](https://partner.microsoft.com/support?stage=2&topicid=abf19e05-3f3a-f111-88b3-000d3a16941b).
 
 2. Under **Next Step** choose the option to 'Provide issue details'
 
