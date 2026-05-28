@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Using Computer Hardware IDs (CHIDs)
 
-Computer Hardware IDs (CHIDs) are defined in the [Specifying Hardware IDs for a Computer](../install/specifying-hardware-ids-for-a-computer.md).
+Computer Hardware IDs (CHIDs) are defined in [Computer Hardware ID (CHID)](../install/computer-hardware-ids.md).
 
 Windows 10 adds several new CHIDs that incorporate Baseboard Manufacturer and Baseboard Product information. These new CHIDs are included in the CHID hierarchy. The following table shows the hierarchy in descending order of specificity. CHIDs that are new to Windows 10 are highlighted in bold.
 
@@ -45,7 +45,7 @@ CHIDs are generated based on case sensitive SMBIOS values. Care must be taken to
 
 The ComputerHardwareIds tool only computes CHIDs that have the necessary SMBIOS values available. If an SMBIOS data field is missing (or it's null), then any related CHIDs aren't generated. For example, if the SMBIOS SKU field is null, then CHIDs 0, 3, 4 6 and 7 aren't available for that particular system.
 
-For more information about CHIDs, see [Specifying Hardware IDs for a Computer](../install/specifying-hardware-ids-for-a-computer.md).
+For more information about CHIDs, see [Computer Hardware ID (CHID)](../install/computer-hardware-ids.md).
 
 ## How the Windows Update Service uses CHID
 

@@ -452,6 +452,8 @@
       href: device-ids.md
     - name: Hardware ID
       href: hardware-ids.md
+    - name: Computer Hardware ID (CHID)
+      href: computer-hardware-ids.md
     - name: Compatible ID
       href: compatible-ids.md
     - name: Instance ID
