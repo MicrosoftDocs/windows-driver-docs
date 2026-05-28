@@ -23,7 +23,7 @@ Microsoft Engage Center is the fastest path to reach the Hardware Program suppor
 
 2. Sign in with your **Partner Center account that is enrolled in the Hardware Program**.
 
-   > [NOTE]
+   > [!NOTE]
    > You must sign in with an account that is enrolled in the Hardware Program. If you sign in with a different account, you are blocked from selecting the correct routing choices during the creation workflow. If you can't sign in with an enrolled account, use the following steps instead.
 
 3. When creating the case, select the following values:
