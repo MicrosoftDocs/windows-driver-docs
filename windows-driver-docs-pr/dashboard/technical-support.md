@@ -24,7 +24,7 @@ Microsoft Engage Center is the fastest path to reach the Hardware Program suppor
 2. Sign in with your **Partner Center account that is enrolled in the Hardware Program**.
 
    > [NOTE]
-   > You must sign in with an account that is enrolled in the Hardware Program. If you sign in with a different account, you will be blocked selecting the correct routing choices during the creation workflow. If you can't sign in with an enrolled account, follow the steps in below instead.
+   > You must sign in with an account that is enrolled in the Hardware Program. If you sign in with a different account, you are blocked from selecting the correct routing choices during the creation workflow. If you can't sign in with an enrolled account, use the following steps instead.
 
 3. When creating the case, select the following values:
 
@@ -41,6 +41,6 @@ If you can't sign in to Engage Center with an account that is enrolled in the Ha
 
 1. Go to [Partner Center support](https://partner.microsoft.com/support?stage=2&topicid=abf19e05-3f3a-f111-88b3-000d3a16941b).
 
-2. Under **Next Step** choose the option to 'Provide issue details'
+2. Under **Next Step**, choose the option **Provide issue details**
 
-3. Complete the form and submit the case. A confirmation email with a support request number will be sent to the contacts confirming receipt of the submission.
+3. Complete the form and submit the case. A confirmation email with a support request number is sent to the contacts.
