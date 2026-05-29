@@ -1,33 +1,14 @@
 ---
 title: Using Computer Hardware IDs (CHIDs)
-description: Computer Hardware IDs (CHIDs) are defined in the Specifying Hardware IDs for a Computer.
-ms.date: 04/20/2017
+description: Learn how Computer Hardware IDs (CHIDs) are used for driver distribution in Partner Center and Windows Update.
+ms.date: 05/29/2026
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 
 # Using Computer Hardware IDs (CHIDs)
 
-Computer Hardware IDs (CHIDs) are defined in [Computer Hardware ID (CHID)](../install/computer-hardware-ids.md).
-
-Windows 10 adds several new CHIDs that incorporate Baseboard Manufacturer and Baseboard Product information. These new CHIDs are included in the CHID hierarchy. The following table shows the hierarchy in descending order of specificity. CHIDs that are new to Windows 10 are highlighted in bold.
-
-| HWID | Contents |
-|--|--|
-| HardwareID-0 | Manufacturer + Family + Product Name + SKU Number + BIOS Vendor + BIOS Version + BIOS Major Release + BIOS Minor Release |
-| HardwareID-1 | Manufacturer + Family + Product Name + BIOS Vendor + BIOS Version + BIOS Major Release + BIOS Minor Release |
-| HardwareID-2 | Manufacturer + Product Name + BIOS Vendor + BIOS Version + BIOS Major Release + BIOS Minor Release |
-| HardwareID-3 | **Manufacturer + Family + ProductName + SKU Number + Baseboard_Manufacturer + Baseboard_Product** |
-| HardwareID-4 | Manufacturer + Family + ProductName + SKU Number |
-| HardwareID-5 | Manufacturer + Family + ProductName |
-| HardwareID-6 | **Manufacturer + SKU Number + Baseboard_Manufacturer + Baseboard_Product** |
-| HardwareID-7 | Manufacturer + SKU Number |
-| HardwareID-8 | **Manufacturer + ProductName + Baseboard_Manufacturer + Baseboard_Product** |
-| HardwareID-9 | Manufacturer + ProductName |
-| HardwareID-10 | **Manufacturer + Family + Baseboard_Manufacturer + Baseboard_Product** |
-| HardwareID-11 | Manufacturer + Family |
-| HardwareID-12 | Manufacturer + Enclosure Type |
-| HardwareID-13 | **Manufacturer + Baseboard_Manufacturer + Baseboard_Product** |
-| HardwareID-14 | Manufacturer |
+Computer Hardware IDs (CHIDs) are defined in [Computer Hardware ID (CHID)](../install/computer-hardware-ids.md). For the full CHID hierarchy and the SMBIOS field combinations used for each HardwareID value, see that article.
 
 OEMs must provide the correct CHID information to the driver publisher. The [ComputerHardwareIds](../devtest/computerhardwareids.md) tool, included in the Windows Desktop Tools SDK, can help with reporting CHIDs from a known set of System Management BIOS (SMBIOS) values. ComputerHardwareIds performs two different tasks.
 

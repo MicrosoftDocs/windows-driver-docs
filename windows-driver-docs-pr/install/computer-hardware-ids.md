@@ -92,7 +92,6 @@ The following tables show which SMBIOS fields are combined to form each CHID. CH
 
 ## Related articles
 
+- [Using Computer Hardware IDs (CHIDs)](../dashboard/using-chids.md)
 - [Target a system using CHID](../bringup/target-a-system-using-chid.md)
-- [Establish a relationship for HWID and CHID targeting](../dashboard/establish-relationship-for-chid-targeting.md)
-- [Hardware ID](hardware-ids.md)
 - [Windows 10 Driver Publishing Workflow](https://go.microsoft.com/fwlink/p/?LinkId=617374)
