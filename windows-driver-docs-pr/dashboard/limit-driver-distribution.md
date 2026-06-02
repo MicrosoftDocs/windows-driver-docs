@@ -50,6 +50,8 @@ If you select a value for the OS floor that is earlier than the options listed i
 
 :::image type="content" source="images/restrict-floor-error-too-low.png" alt-text="Screenshot of an error message requiring the user to select a later OS version.":::
 
+**Important!** Ensure that the selected OS floor is consistent with the OS compatibility defined in your INF. If the OS floor is set to a version higher than the maximum OS version supported (CeilingOsCode) for any hardware ID included in the shipping label, publishing will be blocked. For more information on CeilingOsCode, see [Upcoming changes to driver metadata and publishing validations in Hardware Dev Center](https://techcommunity.microsoft.com/blog/hardware-dev-center/upcoming-changes-to-driver-metadata-and-publishing-validations-in-hardware-dev-c/4511758).
+
 ## Setting an OS ceiling
 
 > [!NOTE]

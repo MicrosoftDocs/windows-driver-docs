@@ -181,6 +181,10 @@ This object represents the downloads for a given submission.
     {
       "type": "certificationReport",
       "url": "https:// manage.devcenter.microsoft.com/dashboard/hardware/Driver/DownloadCertificationReport/29963920/13635057453741329/1152921504621441930"
+    },
+    {
+      "type": "unreferencedFilesReport",
+      "url": "<SAS URL from Hardware API>"
     }
   ],
   "messages": []
@@ -192,7 +196,7 @@ This object has the following values
 | Value | Type | Description |
 |:-|:-|:-|
 | Items | array | An array of download types and the URL for each. |
-| Type | string | The type of package available for download. Possible values are:<ul><li>"initialPackage" – package uploaded by user (for a new submission, it points to the SAS URI for uploading the package)<li>"derivedPackage" – shell for derived submissions<li>"signedPackage" – package signed by Microsoft<li>"certificationReport" – certification report for the signed product<li>driverMetadata - link points to a file which allows to download of driver metadata. For more information, see [driver package metadata](driver-package-metadata.md).<li>ExternalNotes<li>Unknown |
+| Type | string | The type of package available for download. Possible values are:<ul><li>"initialPackage" – package uploaded by user (for a new submission, it points to the SAS URI for uploading the package)<li>"derivedPackage" – shell for derived submissions<li>"signedPackage" – package signed by Microsoft<li>"certificationReport" – certification report for the signed product<li>"unreferencedFileReport" - report that identifies unreferenced files in the driver package submitted if found. If the driver package does not have any unreferenced files no file will be returned. For more information, see [Unreferenced INF Files](https://techcommunity.microsoft.com/blog/hardware-dev-center/attention-hdc-is-changing-the-policy-on-signing-unreferenced-files-in-driver-pac/4495518).<li>ExternalNotes<li>Unknown |
 | Messages | array | An array of strings to provide messages about the downloadable files |
 
 ### Link object
@@ -554,6 +558,7 @@ The error codes are applicable to all web methods of the API. If the request can
 | 401 – Unauthorized | Authentication failed or not provided |
 | 403 – Forbidden | Forbidden to access a resource. |
 | 404 – Not Found | Requested entity isn't found. |
+| 412 - Precondition Failed|Driver Update Acceptance (DUA) creation has been restricted by the submission owner for this shared submission. The receiver cannot create derived submissions on this shared product.|
 | 415 - Unsupported Media Type | Payload is in a format not supported by this method on the target resource. |
 | 422 - Unprocessable Entity | Validation failures. |
 | 429 - Too Many Requests | Too many requests are being sent. Calls are throttled and the backoff time is provided in the response. |
@@ -581,6 +586,7 @@ If there are functional validation failures, the response body contains one of t
 | InvalidInput | Can't update the shipping label when another workflow is in progress. Try again. | Returned when a shipping label is updated when a previous workflow is still in progress. |
 | RequestInvalidForCurrentState | Can't create Publishing shipping label for inbox or system type. One can only share the shipping label. | Returned when windows update Shipping label is created on an inbox driver or a system. |
 | RequestInvalidForCurrentState | Submission isn't yet ready to create shipping label. Retry after some time. | Returned when a shipping label is created without waiting for preparation or preprocessing to complete. |
+|Precondition Failed |DUACreationNotAllowed|Driver Update Acceptance (DUA) creation has been restricted by the submission owner for this shared submission. The receiver cannot create derived submissions on this shared product.|
 
 ## See also
 

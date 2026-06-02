@@ -8,7 +8,7 @@ keywords:
 - NuGet
 - install
 - download
-ms.date: 09/23/2025
+ms.date: 05/06/2025
 ms.topic: install-set-up-deploy
 ---
 
@@ -46,20 +46,20 @@ For directions on building drivers in large automated system, see [Building Loca
 
 - X64/ARM64 PC with Windows 11 or newer.
 
-### Install Visual Studio 2022
+### Install Visual Studio 2026
 
-The WDK NuGet requires Visual Studio. Download and install Visual Studio 2022 Community, Professional, or Enterprise edition.
+The WDK NuGet requires Visual Studio. Download and install Visual Studio 2026 Community, Professional, or Enterprise edition.
 
 [Download Visual Studio Tools](https://visualstudio.microsoft.com/downloads/)
 
-When you install Visual Studio 2022, select the **Desktop development with C++** workload, then under Individual Components add:
+When you install Visual Studio 2026, select the **Desktop development with C++** workload, then under Individual Components add:
 
-- MSVC v143 - VS 2022 C++ ARM64/ARM64EC Spectre-mitigated libs (Latest)
-- MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
-- C++ ATL for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
-- C++ ATL for latest v143 build tools with Spectre Mitigations (x86 & x64)
-- C++ MFC for latest v143 build tools with Spectre Mitigations (ARM64/ARM64EC)
-- C++ MFC for latest v143 build tools with Spectre Mitigations (x86 & x64)
+- C++ Spectre-mitigated libraries for x64/x86 (Latest MSVC)
+- C++ Spectre-mitigated libraries for ARM64/ARM64EC (Latest MSVC)
+- C++ ATL with Spectre mitigations for x64/x86 (Latest MSVC)
+- C++ ATL with Spectre mitigations for ARM64/ARM64EC (Latest MSVC)
+- C++ MFC with Spectre mitigations for x64/x86 (Latest MSVC)
+- C++ MFC with Spectre mitigations for ARM64/ARM64EC (Latest MSVC)
 - Windows Driver Kit
 
 > [!TIP]

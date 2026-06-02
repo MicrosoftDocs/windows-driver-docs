@@ -12,6 +12,54 @@ ms.topic: release-notes
 
 This article provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
+## Version 1.2603.20001.0
+
+### New features
+
+* Added initial support for ARM64 Scalable Vector Extensions (SVE), laying the groundwork for debugging ARM64 targets that use SVE registers
+* Added **Open Workspace** and **Save Workspace** buttons for easier session management
+* Added **System Theme Mode** — WinDbg now follows the Windows system light/dark theme setting
+* Significantly improved help text for CPU instructions in the disassembly view, providing better inline documentation
+* Improved KDNET reverse-protocol reconnection reliability when the target reboots unexpectedly
+* `kdnet.exe` configuration tool is now included with WinDbg
+* Added command-line options `-Q` and `-WF` to WinDbg
+
+### Debugging engine improvements
+
+* Improved register state handling (XSTATE) across diverse target configurations
+* SIMD vector registers can now be displayed in multiple views (byte, word, dword, float, etc.), making it easier to inspect packed data in different formats
+* Long integers are now printed using the default radix in the data model
+* Added an API for manually opening target composition symbols
+* Improved performance of symbol name lookups, particularly for DWARF and other plug-in symbol providers
+
+### General UI improvements
+
+* Updated .NET SDK to 10.0.103 (security update)
+* Updated Command Window ribbon menu icons and added more actions
+* Pasting into the Command Window input now strips trailing whitespace
+
+### Time Travel Debugging (TTD)
+
+* Updated TTD to version 1.11.592
+* Improved indexer robustness when indexing large (tens to hundreds of GB) traces. This required a change to the index format, so existing traces will need to be re-indexed.
+* `@$cursession.TTD.Calls()` now reports more accurate parameter information for 32-bit assembly stubs
+* Fixed an issue where an executable entry point's exit code was not properly returned by the recorded process
+
+### Bug fixes
+
+* Fixed incorrect x64 Parity Flag displayed in the Registers window
+* Fixed an issue where the embedded PDB path in the debug directory was not tried when a mismatched PDB was found first in the search path
+* Fixed a hang in CLR stack walks when the DBI stack walker entered a loop
+* Fixed a crash caused by a null pointer returned from `GetSymbolById` in CLR composition
+* Fixed Command Window prompt not appearing when opened late in a session
+* Fixed Command Window input and history bugs
+* Fixed an issue where script error hints were not appearing in the Script Editor
+* Fixed a crash during tool window docking operations
+* Fixed an issue where some registry reads were not reflecting the latest values
+* Fixed an issue where Command Window input text "bounced" when moving the cursor
+* Fixed an issue where Alt+Space did not invoke the System Menu for floating windows
+* Fixed an issue where expanding items in the Locals window would scroll the item out of view
+
 ## Version 1.2601.12001.0
 
 ### General UI Improvements

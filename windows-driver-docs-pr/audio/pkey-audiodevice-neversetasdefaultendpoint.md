@@ -11,6 +11,12 @@ ms.topic: reference
 
 You might decide to set up certain devices so that they can never be selected as default devices. These include, for example, modem lines and medical audio devices.Windows 7 and later versions of Windows provide the **PKEY\_AudioDevice\_NeverSetAsDefaultEndpoint** registry key to allow you to prevent the selection of the endpoint of a device as the default endpoint.
 
+> [!IMPORTANT]
+> When you set **PKEY\_AudioDevice\_NeverSetAsDefaultEndpoint**, you must also set **PKEY\_AudioEndpoint\_Association** in the same `EP\\` subkey. The AudioEndpointBuilder service uses the Association value to match the endpoint property to the correct endpoint on the device. If the Association is not set, the **PKEY\_AudioDevice\_NeverSetAsDefaultEndpoint** property is not applied.
+
+> [!NOTE]
+> Setting this property prevents the endpoint from being selected as the default endpoint both by the automatic default-device selection algorithm and by the user through the Sound settings UI. The user cannot manually set the endpoint as the default device or the default communications device for the roles and flows specified in the mask.
+
 The following INF file excerpt shows how to use **PKEY\_AudioDevice\_NeverSetAsDefaultEndpoint** to set up an endpoint so that it can never be selected as default.
 
 ```inf
@@ -47,7 +53,12 @@ PKEY_AudioDevice_NeverSetAsDefaultEndpoint = "{F3E80BEF-1723-4FF2-BCC4-7F83DC5E4
 
 In the preceding example, NeverSetAsDefaultEndpointMaskValue represents a DWORD mask value that is a combination of device role flags and data flow flags.
 
-The following INF file snippet shows how an undefined output device (KSNODETYPE\_OUTPUT\_UNDEFINED) is set up so that its endpoint is never selected as default, regardless of the device role and the data flow direction.
+*KSNODETYPE\_GUID* is the value for **PKEY\_AudioEndpoint\_Association** that determines which endpoints the property applies to. You can specify one of the following:
+
+- **A specific pin-category GUID** such as KSNODETYPE\_OUTPUT\_UNDEFINED or KSNODETYPE\_SPEAKER, to target only endpoints whose pin category matches that GUID.
+- **KSNODETYPE\_ANY** (`{00000000-0000-0000-0000-000000000000}`), a null GUID that acts as a wildcard and matches all endpoints on the device regardless of their pin category.
+
+The following INF file snippet shows how a device is set up so that its endpoint is never selected as default, regardless of the device role and the data flow direction. This example uses **KSNODETYPE\_ANY** to apply the property to all endpoints.
 
 ```inf
 [Version]
@@ -70,13 +81,13 @@ AddReg=MDVAD.EPProperties.AddReg
 ;; AddReg section to setup endpoint so that
 ;; it cannot be selected as the default endpoint.
 [MDVAD.EPProperties.AddReg]
-HKR,"EP\\0",%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_OUTPUT_UNDEFINED%
-HKR,"EP\\0",%PKEY_AudioDevice_NeverSetAsDefaultEndpoint%,0x00010001,0x00000305
+HKR,"EP\\0",%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_ANY%
+HKR,"EP\\0",%PKEY_AudioDevice_NeverSetAsDefaultEndpoint%,0x00010001,0x00000307
 ...
 
 [Strings]
 KSCATEGORY_AUDIO="{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
-KSNODETYPE_OUTPUT_UNDEFINED="{DFF21CE0-F70F-11D0-B917-00A0C9223196}"
+KSNODETYPE_ANY="{00000000-0000-0000-0000-000000000000}"
 PKEY_AudioEndpoint_Association="{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
 PKEY_AudioDevice_NeverSetAsDefaultEndpoint = "{F3E80BEF-1723-4FF2-BCC4-7F83DC5E46D4},3"
 ```

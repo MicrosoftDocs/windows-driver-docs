@@ -22,7 +22,7 @@ Driver safe deployment best practices are grouped into three stages of the deplo
 
 - Pre-deployment
 
-  Focuses on planning, internal testing, Windows Hardware Quality Lab (WHQL) certification, validating dependencies, and aligning deployment criteria with business and engineering goals before distribution.
+  Focuses on planning, internal testing, Windows Hardware Compatibility Program (WHCP) certification, validating dependencies, and aligning deployment criteria with business and engineering goals before distribution.
 
 - Distribution
 
@@ -59,11 +59,11 @@ Before distributing a driver, test, validate, and assess its security. This step
 
 Driver security is critical for system stability, protection, and compliance with Windows driver policies.
 
-- Digitally sign your driver in accordance with [Driver Signing](signing-a-driver.md) requirements. Review the [Driver code signing requirements](../dashboard/code-signing-reqs.md) for more compliance and policy guidance.
+- Digitally sign your driver in accordance with [Driver Signing](signing-a-driver.md) requirements. Review the [Driver code signing requirements](../dashboard/code-signing-reqs.md) and [Driver signing offerings](../dashboard/driver-signing-offerings.md) for more compliance and policy guidance.
 
   - Properly sign all drivers intended for deployment, whether through Windows Update or alternate channels, to ensure integrity and trust.
 
-  - Obtain Windows Hardware Quality Labs (WHQL) signatures for drivers, regardless of the distribution channel, including Windows Update, OEM-controlled channels, or vendor-controlled channels such as websites or enterprise-specific tools. By obtaining a [WHQL release signature](../install/whql-release-signature.md), Windows systems trust driver packages by default. Without it, extra configuration steps are required to establish trust by using alternate certificates, which introduces complexity and risk during deployment. The WHQL certification that you need to get a WHQL release signature validates that the driver passes Microsoft's compatibility tests and meets required security standards.
+  - Obtain Windows Hardware Compatibility Program (WHQL) signatures for drivers, regardless of the distribution channel, including Windows Update, OEM-controlled channels, or vendor-controlled channels such as websites or enterprise-specific tools. By obtaining a [WHQL release signature](../install/whql-release-signature.md), Windows systems trust driver packages by default. Without it, extra configuration steps are required to establish trust by using alternate certificates, which introduces complexity and risk during deployment. The WHQL certification that you need to get a WHQL release signature validates that the driver passes Microsoft's compatibility tests and meets required security standards.
 
 - Follow Microsoft's [Driver Security Checklist](../driversecurity/driver-security-checklist.md) to minimize vulnerabilities.
 

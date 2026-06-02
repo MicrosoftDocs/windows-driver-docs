@@ -7,9 +7,6 @@ ms.topic: concept-article
 
 # Print support app association
 
-> [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
-
 Follow the guidance in this article to set up and associate a print support app with a printer.
 
 Starting with the release of Windows 11 SDK (22000.1), Print Support Apps (PSA) are the recommended method of developing UWP apps for printers. To develop a Print Support App for your print device, download and install the [Windows 11 SDK (22000.1)](https://go.microsoft.com/fwlink/?linkid=2166460).
@@ -116,7 +113,10 @@ PrinterHardwareId3 = "PSA_BrotherMFC-J775DWF678"
 For consumer and home users, PSA is downloaded from the Microsoft Store and installed based on the printer's hardware ID or compatible ID. This feature is supported for enterprise and business customers as well, if they choose to use the PSA from their printer manufacturer. Association is controlled by the extension INF published on Windows Update by printer manufacturers.
 
 > [!NOTE]
-> Windows Server does not support Microsoft Store. Therefore, Print Support Apps (PSAs) cannot be automatically downloaded or installed from the Store on Windows Server. Administrators must provide and install PSAs via sideloading (MSIX/APPX) or through enterprise app management tools.  
+> Windows Server does not support Microsoft Store. Therefore, Print Support Apps (PSAs) cannot be automatically downloaded or installed from the Store on Windows Server. Administrators must provide and install PSAs via sideloading (MSIX/APPX) or through enterprise app management tools.
+
+> [!NOTE]
+> In typical scenarios, Print Support Apps (PSAs) are published as free apps to the public Microsoft Store. When a printer is connected to a client PC, the associated PSA is automatically downloaded and installed from the Microsoft Store without requiring the user to sign in interactively.  
 
 Enterprise and business customers may need to override extension INF association, if they choose to use a business logic PSA (for example, a line of business app). They need to deploy and associate a custom PSA that has built-in business logic. Examples of the business logic are managing print quota and cost, or print policy (no color or no single side printing).
 

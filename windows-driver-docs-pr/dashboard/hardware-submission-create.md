@@ -80,6 +80,8 @@ To submit your new hardware, follow these steps:
    :::image type="content" source="images/hardware-submission-create/hardware-progress-tracker.png" alt-text="Screenshot that shows the progress tracker.":::
 
 1. Review the results. If your submission fails, make any necessary changes and resubmit.
+   >[Notice]
+   >Driver package containing files that are not referenced by an INF will see a message here. For more information, please visit this [documentation](https://techcommunity.microsoft.com/blog/hardware-dev-center/attention-hdc-is-changing-the-policy-on-signing-unreferenced-files-in-driver-pac/4495518).
 
 ## Troubleshoot submission errors
 

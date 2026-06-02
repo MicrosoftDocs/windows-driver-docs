@@ -693,6 +693,8 @@
       href: indirect-display-debugging.md
     - name: IddCx versions
       href: iddcx-versions.md
+    - name: IddCx 1.11 updates
+      href: iddcx1-dot-11-updates.md
     - name: IddCx 1.10 updates
       href: iddcx1.10-updates.md
     - name: IddCx 1.9 updates
@@ -1090,5 +1092,7 @@
       href: adaptive-refresh-for-playing-24-fps-content.md
     - name: GPU power management of idle states and active power
       href: gpu-power-management-of-idle-and-active-power.md
+    - name: DxgKrnl Configuration
+      href: dxgkrnl-configuration.md
 - name: WDK Sample Code
   href: display-samples.md

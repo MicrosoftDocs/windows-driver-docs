@@ -94,6 +94,20 @@ The following example demonstrates the JSON request body for creating a new ship
   "destination": "windowsUpdate"
 }
 ```
+The following example demonstrates when the *destination* is *anotherPartner*, the recipientSpecifications object now accepts blockDuaCreation:
+
+```json
+{
+    "recipientSpecifications": {
+        "receiverPublisherId": "27691110",
+        "enforceChidTargeting": false,
+        "blockDuaCreation": true
+    },
+    "targeting": { ... },
+    "name": "Sharing Label Name",
+    "destination": "anotherPartner"
+}
+```
 
 For details about the fields in the request, see [ShippingLabel resource](get-shipping-labels.md#shippinglabel-resource).
 
@@ -103,6 +117,7 @@ For details about the fields in the request, see [ShippingLabel resource](get-sh
 - if in the shipping label *isAutoInstallDuringOSUpgrade* or *isAutoInstallOnApplicableSystems* is true, then *manualAcquisition* must be false and the driver will be published with "May request user input" set to false.
 - if in the shipping label *isAutoInstallDuringOSUpgrade* and *isAutoInstallOnApplicableSystems* are false, then *manualAcquisition* must be true and the driver will be published with "May request user input" set to true.
 - When sharing with other partners  (*destination* is **anotherPartner**), you must include the [recipientSpecifications](get-shipping-labels.md#recipient-specifications-object) object.
+- The recipientSpecifications object supports an optional blockDuaCreation field (default false). When set to true, the receiving partner will not be able to download the DUA shell or create derived (DUA) submissions from this shared content.
 
 #### Populating targeting information
 

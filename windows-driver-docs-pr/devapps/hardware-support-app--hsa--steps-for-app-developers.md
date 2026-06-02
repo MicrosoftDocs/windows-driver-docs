@@ -13,9 +13,6 @@ ms.topic: how-to
 
 # Hardware Support App (HSA): Steps for App Developers
 
-> [!IMPORTANT]
-> Device metadata is deprecated and will be removed in a future release of Windows. For information about the replacement for this functionality, see **[Driver Package Container Metadata](../install/driver-package-container-metadata.md)**.
-
 This article describes how to associate a device-specific app with a driver or [RPC (Remote Procedure Call)](/windows/desktop/Rpc/rpc-start-page) endpoint. When paired in this fashion, the app is referred to as a Hardware Support App (HSA). You can distribute and update a Hardware Support App through the Microsoft Store.
 
 Start with either a [Universal Windows Platform (UWP) app](/windows/uwp/get-started/universal-application-platform-guide) or a desktop (Win32) app. If you would like to use a desktop app, use the [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) to create a Windows App Package that you can upload to the Store.

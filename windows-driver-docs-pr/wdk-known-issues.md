@@ -20,6 +20,20 @@ This article details known issues concerning the WDK.
 
 Driver testing in Visual Studio is supported starting with Visual Studio 2022 version 17.14.23 and later
 
+### Using Driver Test Explorer with Visual Studio 18.5 or later
+
+A regression was identified where Driver Test Explorer fails to load driver tests when using newer WDK VSIX packages together with Visual Studio 2026 version 18.5 or later. The issue does not appear to affect Visual Studio 18.4.0. Internal investigation indicates the issue is associated with changes introduced in a newer WDK VSIX release.
+
+#### How this issue shows up
+
+- Driver Test Explorer displays no tests under the Driver Test Group.
+- Issue reproduces with WDK VSIX on 18.5.0 or newer Visual Studio builds.
+  
+#### Workaround
+
+- Rollback the WDK VSIX to Visual Studio 18.4.0.
+
+
 ## WDK for Windows 11, version 25H2
 
 The following WDF versions are removed from WDK. Existing driver projects using these WDF versions fail to build:

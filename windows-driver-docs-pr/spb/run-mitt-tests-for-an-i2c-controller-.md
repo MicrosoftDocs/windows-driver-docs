@@ -1,7 +1,7 @@
 ---
 title: I2C Controller Tests in MITT
 description: I2C test modules that are included in the MITT software package can be used to test data transfers for an I2C controller and its driver. The MITT board acts as a client device connected to the I2C bus.
-ms.date: 01/12/2024
+ms.date: 02/27/2026
 ms.topic: how-to
 ---
 
@@ -80,7 +80,7 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
           Return(RBUF)
         }
     }
-    
+
     //TP2 400Khz  Fast Target
     Device(TP2) {
         Name (_HID, "STK0002")
@@ -94,7 +94,7 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
           Return(RBUF)
         }
     }
-    
+
     //TP3 1 Mhz  FastPlus Target
     Device(TP3) {
         Name (_HID, "STK0003")
@@ -108,7 +108,7 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
           Return(RBUF)
         }
     }
-    
+
     //TP4 1.4 Mhz High Speed, optional target
     Device(TP4) {
         Name (_HID, "STK0004")
@@ -122,7 +122,7 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
           Return(RBUF)
         }
     }
-    
+
     //TP5 3.4 Mhz High Speed, optional target
     Device(TP5) {
         Name (_HID, "STK0005")
@@ -144,7 +144,7 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
 ## I<sup>2</sup>C automation tests
 
 1. Create a folder on the system under test.
-2. Copy the TAEF binaries to the folder and then add it to your PATH environment variable. The required TAEF binaries are in %ProgramFiles(x86)%\\Windows Kits\\8.1\\Testing\\Runtimes\\TAEF .
+2. Copy the TAEF binaries to the folder and then add it to your PATH environment variable. The required TAEF binaries are in %ProgramFiles(x86)%\\Windows Kits\\10\\Testing\\Runtimes\\TAEF .
 3. Copy Muttutil.dll and Mitti2ctest.dll from the MITT software package to the folder.
 4. View all MITT I<sup>2</sup>C tests by using the **/list** option:
 

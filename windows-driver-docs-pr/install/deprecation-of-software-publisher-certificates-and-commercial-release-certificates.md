@@ -16,8 +16,7 @@ ms.custom: sfi-image-nochange
 
 The [Microsoft Trusted Root Program](/security/trusted-root/program-requirements) no longer supports root certificates that have kernel mode signing capabilities.
 
-For policy requirements, see [Windows 10 kernel mode code signing requirements]
-(/security/trusted-root/program-requirements#f-windows-10-kernel-mode-code-signing-kmcs-requirements).
+For policy requirements, see [Windows 10 kernel mode code signing requirements](/security/trusted-root/program-requirements#f-windows-10-kernel-mode-code-signing-kmcs-requirements).
 
 Existing [cross-signed root certificates](cross-certificates-for-kernel-mode-code-signing.md) with kernel-mode code-signing capabilities continue to work until expiration. All software publisher certificates, commercial release certificates, and commercial test certificates that chain back to these root certificates also become invalid on the same schedule.
 

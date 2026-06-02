@@ -58,7 +58,7 @@ As an example, a driver might specify a queue as parent of an interrupt to synch
 
 After calling [**WdfInterruptCreate**](/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptcreate), the driver can optionally call [**WdfInterruptSetPolicy**](/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptsetpolicy) or [**WdfInterruptSetExtendedPolicy**](/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptsetextendedpolicy) to specify additional interrupt parameters. Typically the driver calls these methods from its [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function.
 
-The framework automatically deletes the interrupt before deleting the interrupt's parent. Optionally, a driver can call [**WdfObjectDelete**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete) to delete the interrupt at an earlier time.
+The framework automatically deletes the interrupt before deleting the interrupt's parent. A driver must not call [**WdfObjectDelete**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete) to delete the interrupt at an earlier time.
 
 ## Supporting message-signaled interrupts
 

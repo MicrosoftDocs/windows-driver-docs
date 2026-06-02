@@ -102,7 +102,7 @@ Watch the following episodes of the [Defrag Tools](</shows/defrag-tools/>) show 
 Review the following articles for information about installing and configuring WinDbg:
 
 - [WinDbg: Command-line startup options](windbg-command-line-preview.md)
-- [WinDbg: Settings and workspaces](windbg-setup-preview.md)
+- [WinDbg: Settings, workspaces, and saved debug sessions](windbg-setup-preview.md)
 - [WinDbg: Keyboard shortcuts](windbg-keyboard-shortcuts.md)
 
 ## Provide feedback

@@ -95,6 +95,8 @@ The following example demonstrates the JSON response body returned by a successf
   "type": "initial"
 }
 ```
+>[!Note]
+>When creating a derived (type: "derived") submission on a shared product, the request will fail with HTTP 412 (DUACreationNotAllowed) if the submission owner has enabled "Block DUA creation by receiver" on the sharing shipping label.
 
 ### Response body
 

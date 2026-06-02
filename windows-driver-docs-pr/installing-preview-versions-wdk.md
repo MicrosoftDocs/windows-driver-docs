@@ -45,11 +45,11 @@ reg add HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\StrongName\Verificatio
 
 ### Step 3. Install SDK Insider Preview 
 
-Install the SDK Insider Preview by following the instructions at [Get the SDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewSDK).
+Install the SDK Insider Preview by following the instructions at [Get the SDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewSDK).
 
 ### Step 4. Complete the WDK install
 
-Complete the installation of the WDK Insider Preview by following the instructions at [Get the WDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
+Complete the installation of the WDK Insider Preview by following the instructions at [Get the WDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
 
 > [!Note]
 > During the installation, Visual Studio installs the WDK Visual Studio Extensions. For more information, see [Download the Windows Driver Kit](download-the-wdk.md#download-icon-for-wdk-step-3-install-the-wdk).
@@ -60,7 +60,7 @@ An alternate approach is to install the EWDK Insider Preview. The EWDK is a stan
 
 ### Step 1. Get the EWDK Insider Preview
 
-Start by following the instructions in [Get the EWDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK).
+Start by following the instructions in [Get the EWDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK).
 
 ### Step 2. Turn off strong name validation
 
@@ -78,4 +78,4 @@ Mount the ISO that you downloaded from the Insider Preview page, and select **La
 
 ### Step 4. Complete the EWDK install
 
-Complete the installation of the EWDK Insider Preview by following the instructions at [Get the EWDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK).
+Complete the installation of the EWDK Insider Preview by following the instructions at [Get the EWDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK).
