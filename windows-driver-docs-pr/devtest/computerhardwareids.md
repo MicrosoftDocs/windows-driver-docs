@@ -38,9 +38,9 @@ None
 
 ## Comments
 
-The ComputerHardwareIds tool creates hardware IDs for the computer based on information from fields in the System Management BIOS (SMBIOS) for the computer. For a list of the fields, see [Specifying Hardware IDs for a Computer](../install/specifying-hardware-ids-for-a-computer.md).
+The ComputerHardwareIds tool creates hardware IDs for the computer based on information from fields in the System Management BIOS (SMBIOS) for the computer. For a list of the fields, see [Computer Hardware ID (CHID)](../install/computer-hardware-ids.md).
 
-For more information about selecting hardware ID values for the computer as well as more information about device metadata packages, see [Specifying Hardware IDs for a Computer](../install/specifying-hardware-ids-for-a-computer.md).
+For more information about selecting hardware ID values for the computer, see [Computer Hardware ID (CHID)](../install/computer-hardware-ids.md). For more information about device metadata packages, see [Specifying Hardware IDs for a Computer](../install/specifying-hardware-ids-for-a-computer.md).
 
 ## ComputerHardwareIds example output
 
@@ -77,5 +77,5 @@ For more information about device metadata packages, see [Device Metadata Packag
 
 ## See also
 
-- [Specifying Hardware IDs for a Computer](../install/specifying-hardware-ids-for-a-computer.md)
+- [Computer Hardware ID (CHID)](../install/computer-hardware-ids.md)
 - [Download the Windows Driver Kit (WDK)](../download-the-wdk.md)

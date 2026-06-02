@@ -19,6 +19,6 @@ Microsoft is now requiring that a Firmware Update Package include Computer Hardw
 
 [Partner Center](../dashboard/index.md)
 
-[Specifying Hardware IDs for a Computer](../install/specifying-hardware-ids-for-a-computer.md)
+[Computer Hardware ID (CHID)](../install/computer-hardware-ids.md)
 
 [Download Driver Publishing Workflow for Windows 10](https://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx)
