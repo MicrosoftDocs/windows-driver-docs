@@ -4,7 +4,7 @@ description: Learn how CodeQL tests improve driver security for the Windows Hard
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 05/13/2025
+ms.date: 06/01/2026
 ms.topic: overview
 ---
 
@@ -42,6 +42,10 @@ The [Static Tools Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4a
 
 > [!IMPORTANT]
 > Windows Hardware Compatibility Program requires CodeQL for Static Tool Logo (STL) Tests on our Client and Server Operating Systems. We will continue to maintain support for SDV and CA on older products. We strongly encourage partners to review the CodeQL requirements for the [Static Tool Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
+
+> [!NOTE]
+> The Windows HLK (Updated May 2026) for Windows 11, version 25H2 has a known issue causing the Static Tools Logo test to fail.
+ Due to a known issue, running the Static Tools Logo test in the Windows HLK (Updated May 2026) for Windows 11, version 25H2 will result in an error stating the Driver Verification Log does not match a version requirement.  Please run CodeQL and generate a DVL using the Windows Driver Kit version 28000.1761 as normal, then apply waiver #320241 to unblock submission.  This issue will be resolved in the next version of the HLK for Windows 11, version 25H2.
 
 ### HLK EULA and CodeQL
 
