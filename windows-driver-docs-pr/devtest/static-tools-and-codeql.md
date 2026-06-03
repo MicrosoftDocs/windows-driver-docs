@@ -11,8 +11,7 @@ ms.topic: how-to
 # Run CodeQL Analysis on Windows Driver Code
 
 > [!IMPORTANT]
-> The Windows HLK (Updated May 2026) for Windows 11, version 25H2 has a known issue causing the Static Tools Logo test to fail.
- Due to a known issue, running the Static Tools Logo test in the Windows HLK (Updated May 2026) for Windows 11, version 25H2 will result in an error stating the Driver Verification Log does not match a version requirement.  Please run CodeQL and generate a DVL using the Windows Driver Kit version 28000.1761 as normal, then apply waiver #320241 to unblock submission.  This issue will be resolved in the next version of the HLK for Windows 11, version 25H2.
+> Due to a known issue, running the Static Tools Logo test in the Windows HLK (Updated May 2026) for Windows 11, version 25H2 will result in an error stating the Driver Verification Log does not meet a version requirement.  Please run CodeQL and generate a DVL using the Windows Driver Kit version 28000.1761 as normal, then apply waiver #320241 to unblock submission.  This issue will be resolved in the next version of the HLK for Windows 11, version 25H2.
 
 CodeQL is a powerful static analysis engine that helps developers identify security vulnerabilities and code violations in Windows driver source code. This article explains how to use CodeQL analysis to create a Driver Verification File for Windows Hardware Compatibility Program (WHCP) certification.
 

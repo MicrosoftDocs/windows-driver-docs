@@ -12,9 +12,8 @@ ms.topic: faq
 
 This article answers frequently asked questions about CodeQL testing requirements for the Windows Hardware Compatibility Program. Learn how CodeQL improves driver certification and ensures high-security standards.
 
-> [!NOTE]
-> The Windows HLK (Updated May 2026) for Windows 11, version 25H2 has a known issue causing the Static Tools Logo test to fail.
- Due to a known issue, running the Static Tools Logo test in the Windows HLK (Updated May 2026) for Windows 11, version 25H2 will result in an error stating the Driver Verification Log does not match a version requirement.  Please run CodeQL and generate a DVL using the Windows Driver Kit version 28000.1761 as normal, then apply waiver #320241 to unblock submission.  This issue will be resolved in the next version of the HLK for Windows 11, version 25H2.
+> [!IMPORTANT]
+> Due to a known issue, running the Static Tools Logo test in the Windows HLK (Updated May 2026) for Windows 11, version 25H2 will result in an error stating the Driver Verification Log does not meet a version requirement.  Please run CodeQL and generate a DVL using the Windows Driver Kit version 28000.1761 as normal, then apply waiver #320241 to unblock submission.  This issue will be resolved in the next version of the HLK for Windows 11, version 25H2.
 
 ## When is CodeQL required for device certification?
 
