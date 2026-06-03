@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 Computer Hardware IDs (CHIDs) are defined in [Computer Hardware ID (CHID)](../install/computer-hardware-ids.md). For the full CHID hierarchy and the SMBIOS field combinations used for each HardwareID value, see that article.
 
-OEMs must provide the correct CHID information to the driver publisher. The [ComputerHardwareIds](../devtest/computerhardwareids.md) tool, included in the Windows Desktop Tools SDK, can help with reporting CHIDs from a known set of System Management BIOS (SMBIOS) values. ComputerHardwareIds performs two different tasks.
+OEMs must provide the correct CHID information to the driver publisher. The [ComputerHardwareIds](../install/computer-hardware-ids.md#generate-chids-with-the-computerhardwareids-tool) tool, included in the Windows Driver Kit (WDK), can help with reporting CHIDs from a known set of System Management BIOS (SMBIOS) values. ComputerHardwareIds performs two different tasks.
 
 1. Default behavior: The tool reports the system's SMBIOS values and generated CHIDs.
 

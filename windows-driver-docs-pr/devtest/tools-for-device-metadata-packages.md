@@ -1,8 +1,9 @@
 ---
 title: Tools for Device Metadata Packages
 description: Tools for Device Metadata Packages
-ms.date: 06/24/2025
+ms.date: 06/03/2026
 ms.topic: overview
+ai-usage: ai-assisted
 ---
 
 # Tools for Device Metadata Packages
@@ -13,4 +14,3 @@ ms.topic: overview
 The Microsoft Windows Driver Kit (WDK) includes the following tools that you can use to create device metadata packages:
 
 - [Device Metadata Authoring Wizard](device-metadata-authoring-wizard-portal.md)
-- [ComputerHardwareIds](computerhardwareids.md)

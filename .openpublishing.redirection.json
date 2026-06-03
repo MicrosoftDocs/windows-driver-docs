@@ -16842,12 +16842,17 @@
     },
     {
       "source_path": "windows-driver-docs-pr/devtest/computerhardwareids-output.md",
-      "redirect_URL": "/windows-hardware/drivers/devtest/computerhardwareids",
+      "redirect_URL": "/windows-hardware/drivers/install/computer-hardware-ids#generate-chids-with-the-computerhardwareids-tool",
       "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/devtest/computerhardwareids-overview.md",
-      "redirect_URL": "/windows-hardware/drivers/devtest/computerhardwareids",
+      "redirect_URL": "/windows-hardware/drivers/install/computer-hardware-ids#generate-chids-with-the-computerhardwareids-tool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/computerhardwareids.md",
+      "redirect_URL": "/windows-hardware/drivers/install/computer-hardware-ids#generate-chids-with-the-computerhardwareids-tool",
       "redirect_document_id": false
     },
     {

@@ -45,4 +45,5 @@ For more information about the format requirements of the **HardwareID** XML ele
 
 ## Related articles
 
+- [Computer Hardware ID (CHID)](computer-hardware-ids.md)
 - [Windows 10 Driver Publishing Workflow](https://go.microsoft.com/fwlink/p/?LinkId=617374 )
