@@ -44,6 +44,9 @@ The value returned by **IddCxGetVersion** has been updated to return 0x1B00.
 
 Drivers now have the ability to determine if a particular feature of IddCx 1.11 is available in the underlying OS by calling [IddCxCheckOsFeatureSupport](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxcheckosfeaturesupport). Multiple OS versions can report support for IddCx 1.11 through **IddCxGetVersion**, but possibly only some of the features will be available.
 
+> [!IMPORTANT]
+> IddCxCheckOsFeatureSupport MUST be called before any adapters are created, in other words, before any calls to IddCxAdapterInitAsync.
+
 ## D3D12 support
 
 IddCx 1.11 drivers that support D3D12 can associate an [ID3D12Device](/windows/win32/api/d3d12/nn-d3d12-id3d12device) object with a swapchain and receive [ID3D12Resource](/windows/win32/api/d3d12/nn-d3d12-id3d12resource) objects using calls to [IddCxSwapChainReleaseAndAcquireBuffer2](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchainreleaseandacquirebuffer2). An overview of the related changes is given in the following sections.
