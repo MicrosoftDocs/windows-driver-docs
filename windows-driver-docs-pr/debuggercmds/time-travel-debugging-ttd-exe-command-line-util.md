@@ -2,7 +2,7 @@
 title: "TTD.exe Command Line Utility for Time Travel Debugging"
 description: "Learn when and how to use the TTD.exe command line utility to record Time Travel Debugging traces. Install, configure, and record app execution for debugging in WinDbg."
 keywords: ["TTD.exe command line utility", "TTD", "Time Travel", "WinDbg", "Windows Debugging"]
-ms.date: 11/05/2025
+ms.date: 06/11/2026
 ms.topic: concept-article
 ---
 
@@ -10,9 +10,9 @@ ms.topic: concept-article
 
 :::image type="content" source="images/ttd-time-travel-debugging-logo.png" alt-text="Screenshot of Time travel debugging logo featuring a clock.":::
 
-This article describes when and how to use the TTD.exe command line utility to record Time Travel Debugging (TTD) traces. The TTD.exe command line utility allows you to record app or process execution, save it to a trace file, and replay it in WinDbg to diagnose code execution issues.
+This article describes when and how to use the TTD.exe command line utility to record Time Travel Debugging (TTD) traces. The TTD.exe command line utility enables you to record app or process execution, save it to a trace file, and replay it in WinDbg to diagnose code execution problems. Windows Server 2016, 2019, 2022, and 2025 support TTD.exe.
 
-In this article, you'll learn:
+In this article, you learn:
 
 - When to use TTD.exe versus the WinDbg UI
 - How to install and configure TTD.exe
