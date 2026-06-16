@@ -103,6 +103,8 @@ The following camera driver controls are new for Windows 10, version 1607.
 
 The following camera driver controls are new for Windows 10, version 1709.
 
+[**KSPROPERTY_CAMERACONTROL_EXTENDED_SECURE_MODE**](ksproperty-cameracontrol-extended-secure-mode.md)
+
 [**KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOTEMPORALDENOISING**](ksproperty-cameracontrol-extended-videotemporaldenoising.md)
 
 The following camera driver controls are new for Windows 10, version 1903.
