@@ -109,7 +109,7 @@ Generate an advanced query string (AQS) that contains identification information
 
     In the example of the SuperMUTT device, **[GetDeviceSelector](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_GetDeviceSelector_System_UInt32_System_UInt32_System_Guid_)** retrieves an AQS string similar to this string:
 
-    `"System.Devices.InterfaceClassGuid:="{DEE824EF-729B-4A0E-9C14-B7117D33A817}" AND System.Devices.InterfaceEnabled:=System.StructuredQueryType.Boolean#True AND System.DeviceInterface.WinUsb.UsbVendorId:=1118 AND System.DeviceInterface.WinUsb.UsbProductId:=61441"`
+    `"System.Devices.InterfaceClassGuid:="{aaaabbbb-0000-cccc-1111-dddd2222eeee}" AND System.Devices.InterfaceEnabled:=System.StructuredQueryType.Boolean#True AND System.DeviceInterface.WinUsb.UsbVendorId:=1118 AND System.DeviceInterface.WinUsb.UsbProductId:=61441"`
 
     **Note**  Notice that the device interface GUID that appears in the string is not the one you specified. That GUID is the actual device interface GUID registered by Winusb.sys for UWP apps.
 
@@ -123,7 +123,7 @@ This is the simplest way to find a USB device. For details, see [Quickstart: enu
 
 1. Pass the retrieved AQS string to **[FindAllAsync](/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_FindAllAsync_System_String_)**. The call retrieves a **[DeviceInformationCollection](/uwp/api/Windows.Devices.Enumeration.DeviceInformationCollection)** object.
 1. Loop through the collection. Each iteration gets a **[DeviceInformation](/uwp/api/Windows.Devices.Enumeration.DeviceInformation)** object.
-1. Get the **[DeviceInformation.Id](/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id)** property value. The string value is the device instance path. For example, "\\\\\\\\?\\\\USB\#VID_045E&PID_078F\#6&1b8ff026&0&5\#{dee824ef-729b-4a0e-9c14-b7117d33a817}".
+1. Get the **[DeviceInformation.Id](/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id)** property value. The string value is the device instance path. For example, "\\\\\\\\?\\\\USB\#VID_045E&PID_078F\#6&1b8ff026&0&5\#{aaaabbbb-0000-cccc-1111-dddd2222eeee}".
 1. Call **[FromIdAsync](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_FromIdAsync_System_String_)** by passing the device instance string and get the **[UsbDevice](/uwp/api/Windows.Devices.Usb.UsbDevice)** object. You can then use the **UsbDevice** object to perform other operations, such as sending a control transfer. When the app has finished using the **UsbDevice** object, the app must release it by calling **[Close](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_Close)**.
     **Note**  When UWP app suspends, the device is closed automatically. To avoid using a stale handle for future operations, the app must released the **[UsbDevice](/uwp/api/Windows.Devices.Usb.UsbDevice)** reference.
 

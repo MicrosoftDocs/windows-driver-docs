@@ -184,61 +184,61 @@ Command output:
 ```output
 Verifying: toaster.inf
 File is signed in catalog: toaster.cat
-Hash of file (sha1): 580C2A24C3A9E12817E18ADF1C4FE9CF31B01EA3
+Hash of file (sha1): AA11BB22CC33DD44EE55FF66AA77BB88CC99DD00
 
 Signing Certificate Chain:
 
     Issued to: VeriSign Class 3 Public Primary Certification Authority - G5
     Issued by: VeriSign Class 3 Public Primary Certification Authority - G5
     Expires:   Wed Jul 16 15:59:59 2036
-    SHA1 hash: 4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5
+    SHA1 hash: BB22CC33DD44EE55FF66AA77BB88CC99DD00EE11
 
         Issued to: VeriSign Class 3 Code Signing 2010 CA
         Issued by: VeriSign Class 3 Public Primary Certification Authority - G5
         Expires:   Fri Feb 07 15:59:59 2020
-        SHA1 hash: 495847A93187CFB8C71F840CB7B41497AD95C64F
+        SHA1 hash: CC33DD44EE55FF66AA77BB88CC99DD00EE11FF22
 
             Issued to: Contoso, Inc
             Issued by: VeriSign Class 3 Code Signing 2010 CA
             Expires:   Thu Dec 04 15:59:59 2014
-            SHA1 hash: EFC77FA6BA295580C2A2CD25B56C00606CA21269
+            SHA1 hash: DD44EE55FF66AA77BB88CC99DD00EE11FF22AA33
 
 The signature is timestamped: Mon Jan 27 14:48:55 2014
 Timestamp Verified by:
     Issued to: Thawte Timestamping CA
     Issued by: Thawte Timestamping CA
     Expires:   Thu Dec 31 15:59:59 2020
-    SHA1 hash: BE36A4562FB2EE05DBB3D32323ADF445084ED656
+    SHA1 hash: EE55FF66AA77BB88CC99DD00EE11FF22AA33BB44
 
         Issued to: Symantec Time Stamping Services CA - G2
         Issued by: Thawte Timestamping CA
         Expires:   Wed Dec 30 15:59:59 2020
-        SHA1 hash: 6C07453FFDDA08B83707C09B82FB3D15F35336B1
+        SHA1 hash: FF66AA77BB88CC99DD00EE11FF22AA33BB44CC55
 
             Issued to: Symantec Time Stamping Services Signer - G4
             Issued by: Symantec Time Stamping Services CA - G2
             Expires:   Tue Dec 29 15:59:59 2020
-            SHA1 hash: 65439929B67973EB192D6FF243E6767ADF0834E4
+            SHA1 hash: AA77BB88CC99DD00EE11FF22AA33BB44CC55DD66
 Cross Certificate Chain:
     Issued to: Microsoft Code Verification Root
     Issued by: Microsoft Code Verification Root
     Expires:   Sat Nov 01 05:54:03 2025
-    SHA1 hash: 8FBE4D070EF8AB1BCCAF2A9D5CCAE7282A2C66B3
+    SHA1 hash: BB88CC99DD00EE11FF22AA33BB44CC55DD66EE77
 
  Issued to: VeriSign Class 3 Public Primary Certification Authority - G5
         Issued by: Microsoft Code Verification Root
         Expires:   Mon Feb 22 11:35:17 2021
-        SHA1 hash: 57534CCC33914C41F70E2CBB2103A1DB18817D8B
+        SHA1 hash: AA11BB22CC33DD44EE55FF66AA77BB88CC99DD00
 
             Issued to: VeriSign Class 3 Code Signing 2010 CA
             Issued by: VeriSign Class 3 Public Primary Certification Authority -  G5
             Expires:   Fri Feb 07 15:59:59 2020
-            SHA1 hash: 495847A93187CFB8C71F840CB7B41497AD95C64F
+            SHA1 hash: CC33DD44EE55FF66AA77BB88CC99DD00EE11FF22
 
                 Issued to: Contoso, Inc
                 Issued by: VeriSign Class 3 Code Signing 2010 CA
                 Expires:   Thu Dec 04 15:59:59 2014
-                SHA1 hash: EFC77FA6BA295580C2A2CD25B56C00606CA21269
+                SHA1 hash: DD44EE55FF66AA77BB88CC99DD00EE11FF22AA33
 
 Successfully verified: toaster.inf
 
@@ -258,38 +258,38 @@ signtool verify /v /kp toaster.sys
 Command output:
 
 ```output
-Verifying: toaster.sys Hash of file (sha1): CCF5F5C02FEDE87D92FCB7B536DBF5D5EFDB7B41
+Verifying: toaster.sys Hash of file (sha1): BB22CC33DD44EE55FF66AA77BB88CC99DD00EE11
 
 Signing Certificate Chain:
     Issued to: VeriSign Class 3 Public Primary Certification Authority - G5
     Issued by: VeriSign Class 3 Public Primary Certification Authority - G5
     Expires:   Wed Jul 16 15:59:59 2036
-    SHA1 hash: 4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5
+    SHA1 hash: BB22CC33DD44EE55FF66AA77BB88CC99DD00EE11
 
         Issued to: VeriSign Class 3 Code Signing 2010 CA
         Issued by: VeriSign Class 3 Public Primary Certification Authority - G5
         Expires:   Fri Feb 07 15:59:59 2020
-        SHA1 hash: 495847A93187CFB8C71F840CB7B41497AD95C64F
+        SHA1 hash: CC33DD44EE55FF66AA77BB88CC99DD00EE11FF22
 
             Issued to: Contoso, Inc
             Issued by: VeriSign Class 3 Code Signing 2010 CA
-            Expires:   Thu Dec 04 15:59:59 2014             SHA1 hash: EFC77FA6BA295580C2A2CD25B56C00606CA21269
+            Expires:   Thu Dec 04 15:59:59 2014             SHA1 hash: DD44EE55FF66AA77BB88CC99DD00EE11FF22AA33
 The signature is timestamped: Mon Jan 27 14:48:55 2014 Timestamp Verified by:
-    Issued to: Thawte Timestamping CA     Issued by: Thawte Timestamping CA     Expires:   Thu Dec 31 15:59:59 2020     SHA1 hash: BE36A4562FB2EE05DBB3D32323ADF445084ED656
-        Issued to: Symantec Time Stamping Services CA - G2         Issued by: Thawte Timestamping CA         Expires:   Wed Dec 30 15:59:59 2020         SHA1 hash: 6C07453FFDDA08B83707C09B82FB3D15F35336B1
-            Issued to: Symantec Time Stamping Services Signer - G4             Issued by: Symantec Time Stamping Services CA - G2             Expires:   Tue Dec 29 15:59:59 2020             SHA1 hash: 65439929B67973EB192D6FF243E6767ADF0834E4
+    Issued to: Thawte Timestamping CA     Issued by: Thawte Timestamping CA     Expires:   Thu Dec 31 15:59:59 2020     SHA1 hash: EE55FF66AA77BB88CC99DD00EE11FF22AA33BB44
+        Issued to: Symantec Time Stamping Services CA - G2         Issued by: Thawte Timestamping CA         Expires:   Wed Dec 30 15:59:59 2020         SHA1 hash: FF66AA77BB88CC99DD00EE11FF22AA33BB44CC55
+            Issued to: Symantec Time Stamping Services Signer - G4             Issued by: Symantec Time Stamping Services CA - G2             Expires:   Tue Dec 29 15:59:59 2020             SHA1 hash: AA77BB88CC99DD00EE11FF22AA33BB44CC55DD66
 Cross Certificate Chain:
-    Issued to: Microsoft Code Verification Root     Issued by: Microsoft Code Verification Root     Expires:   Sat Nov 01 05:54:03 2025     SHA1 hash: 8FBE4D070EF8AB1BCCAF2A9D5CCAE7282A2C66B3
+    Issued to: Microsoft Code Verification Root     Issued by: Microsoft Code Verification Root     Expires:   Sat Nov 01 05:54:03 2025     SHA1 hash: BB88CC99DD00EE11FF22AA33BB44CC55DD66EE77
         Issued to: VeriSign Class 3 Public Primary Certification Authority - G5
         Issued by: Microsoft Code Verification Root
         Expires:   Mon Feb 22 11:35:17 2021
-        SHA1 hash: 57534CCC33914C41F70E2CBB2103A1DB18817D8B
+        SHA1 hash: AA11BB22CC33DD44EE55FF66AA77BB88CC99DD00
 
             Issued to: VeriSign Class 3 Code Signing 2010 CA
             Issued by: VeriSign Class 3 Public Primary Certification Authority -  G5
             Expires:   Fri Feb 07 15:59:59 2020
-            SHA1 hash: 495847A93187CFB8C71F840CB7B41497AD95C64F
-                Issued to: Contoso, Inc                 Issued by: VeriSign Class 3 Code Signing 2010 CA                 Expires:   Thu Dec 04 15:59:59 2014                 SHA1 hash: EFC77FA6BA295580C2A2CD25B56C00606CA21269
+            SHA1 hash: CC33DD44EE55FF66AA77BB88CC99DD00EE11FF22
+                Issued to: Contoso, Inc                 Issued by: VeriSign Class 3 Code Signing 2010 CA                 Expires:   Thu Dec 04 15:59:59 2014                 SHA1 hash: DD44EE55FF66AA77BB88CC99DD00EE11FF22AA33
 Successfully verified: toaster.sys
 Number of files successfully Verified: 1 Number of warnings: 0 Number of errors: 0
 ```
