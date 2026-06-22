@@ -18,7 +18,7 @@ Before [*VidMm*](video-memory-management-and-gpu-scheduling.md) can [report an a
   This value is the total amount of system memory that is dedicated or shared to the GPU. This number is calculated as follows:
 
   ```cpp
-  TotalSystemMemoryAvailableForGraphics = MAX((TotalSystemMemory / 2), 64MB)
+  TotalSystemMemoryAvailableForGraphics = MIN((TotalSystemMemory * 80%), MAX((TotalSystemMemory - 16GB), (TotalSystemMemory * 50%))
   ```
 
 * Commit limit on aperture segment
