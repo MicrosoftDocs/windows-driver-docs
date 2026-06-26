@@ -12,6 +12,56 @@ ms.topic: release-notes
 
 This article provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
+## Version 1.2606.22001.0
+
+### New features
+
+* Added secure-kernel (`-s`) KDNET configuration support in `kdnet.exe`.
+* Improved ASAN debugging workflows in WinDbg (no more AV flood at startup!)
+* Added richer disassembly instruction hints and local markdown-backed help content.
+* Added keyboard navigation support in connect-to-device workflows.
+* Added the ability to attach directly to WSL processes.
+* Added basic APX register support in debugger register views.
+
+### Debugging Engine Improvements
+
+* Expanded Linux register and context support with SVE/SME and XSTATE handling, including signal-frame unwind support.
+* Improved source download behavior through srcsrv, including better secure-mode handling and diagnostics.
+* Improved extension gallery reliability.
+* Improved symbol troubleshooting with additional diagnostics and better source-link fallback behavior.
+* Improved reliability for register context retrieval from KD and plug-in register contexts.
+* Added support for `char8_t`, improved PE/DWARF handling with separate debug packages, and improved diagnostics for `!heap` image-backed data cases.
+* Expanded KDNET device coverage and reliability, including Intel E800/E2500/10G/40G and other NIC path fixes.
+* Fixed EXDI register-set failures and corrected handling for larger (>256-bit) vector register cases.
+
+### General UI Improvements
+
+* Improved error presentation in launch and attach flows with clearer user-facing diagnostics.
+* Improved Hex Editor and Data Model interactions, including context menus, DML highlighting, and focus stability in DMO grids.
+* Improved accessibility in command and input surfaces (automation names, high-contrast focus visibility, and keyboard focus cues).
+* Improved handling of remote-launch start directories to avoid invalid initial-path failures.
+* Added a **Copy log file path** command in the Logs tool window.
+* Added disassembly click-navigation undo and improved floating-window bookmark/script-save behavior.
+* Added configurable source-encoding fallback and an opt-out for local-dump configuration prompts.
+
+### Time Travel Debugging (TTD)
+
+* Updated TTD from 1.11.592 to 1.11.610 across the 2603-to-2606 payload.
+* Fixed a crash when running `.cxr` in TTD traces and prevented invalid register editing while debugging TTD traces.
+* Improved handling for WinDbg `-recordengine` scenarios with process-Windows Subsystem for Linux (`-pwsl`) targets.
+
+### Bug Fixes
+
+* Fixed engine architecture auto-detection for executable paths without extensions, preventing x86/x64 mismatch at launch.
+* Fixed live Linux debugging with the GDB plug-in.
+* Fixed WOW64 debugging issues when an x64 engine targets an x86 process.
+* Fixed Linux heap-walk failures in some dump scenarios.
+* Fixed false breakpoint-restore failures by skipping entries that cannot generate valid restore commands.
+* Fixed recurring UI issues in floating/auto-hide windows and command-window layout behavior.
+* Fixed empty-automation-property regressions and related accessibility label issues.
+* Fixed `symsrv2` VPack manifest parsing failures and improved cancellation behavior for symbol/source download operations.
+* Fixed `kdnet.exe` VerifiedNICList lookup for execution-alias installs.
+
 ## Version 1.2603.20001.0
 
 ### New features
