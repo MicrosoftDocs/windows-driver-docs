@@ -59,7 +59,7 @@ This article provides information on what's new in WinDbg. Earlier versions were
 * Fixed false breakpoint-restore failures by skipping entries that cannot generate valid restore commands.
 * Fixed recurring UI issues in floating/auto-hide windows and command-window layout behavior.
 * Fixed empty-automation-property regressions and related accessibility label issues.
-* Fixed `symsrv2` VPack manifest parsing failures and improved cancellation behavior for symbol/source download operations.
+* Fixed `symsrv2` VPack manifest parsing failures and improved cancellation behavior for symbol and source download operations.
 * Fixed `kdnet.exe` VerifiedNICList lookup for execution-alias installs.
 
 ## Version 1.2603.20001.0
