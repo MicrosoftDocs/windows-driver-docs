@@ -17,7 +17,7 @@ This article provides information on what's new in WinDbg. Earlier versions were
 ### New features
 
 * Added secure-kernel (`-s`) KDNET configuration support in `kdnet.exe`.
-* Improved ASAN debugging workflows in WinDbg (no more AV flood at startup!)
+* Improved ASAN debugging workflows in WinDbg (no more AV flood at startup!).
 * Added richer disassembly instruction hints and local markdown-backed help content.
 * Added keyboard navigation support in connect-to-device workflows.
 * Added the ability to attach directly to WSL processes.
@@ -38,10 +38,10 @@ This article provides information on what's new in WinDbg. Earlier versions were
 
 * Improved error presentation in launch and attach flows with clearer user-facing diagnostics.
 * Improved Hex Editor and Data Model interactions, including context menus, DML highlighting, and focus stability in DMO grids.
-* Improved accessibility in command and input surfaces (automation names, high-contrast focus visibility, and keyboard focus cues).
+* Improved accessibility in command and input surfaces, including automation names, high-contrast focus visibility, and keyboard focus cues.
 * Improved handling of remote-launch start directories to avoid invalid initial-path failures.
 * Added a **Copy log file path** command in the Logs tool window.
-* Added disassembly click-navigation undo and improved floating-window bookmark/script-save behavior.
+* Added disassembly click-navigation undo and improved floating-window bookmark and script-save behavior.
 * Added configurable source-encoding fallback and an opt-out for local-dump configuration prompts.
 
 ### Time Travel Debugging (TTD)
@@ -56,8 +56,8 @@ This article provides information on what's new in WinDbg. Earlier versions were
 * Fixed live Linux debugging with the GDB plug-in.
 * Fixed WOW64 debugging issues when an x64 engine targets an x86 process.
 * Fixed Linux heap-walk failures in some dump scenarios.
-* Fixed false breakpoint-restore failures by skipping entries that cannot generate valid restore commands.
-* Fixed recurring UI issues in floating/auto-hide windows and command-window layout behavior.
+* Fixed false breakpoint-restore failures by skipping entries that can't generate valid restore commands.
+* Fixed recurring UI issues in floating and auto-hide windows and command-window layout behavior.
 * Fixed empty-automation-property regressions and related accessibility label issues.
 * Fixed `symsrv2` VPack manifest parsing failures and improved cancellation behavior for symbol and source download operations.
 * Fixed `kdnet.exe` VerifiedNICList lookup for execution-alias installs.
