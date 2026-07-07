@@ -3,7 +3,7 @@ title: Develop a WiFiCx Client Driver Using NetAdapterCx
 description: Learn how to develop a WiFiCx client driver using NetAdapterCx. This guide explains initialization, command handling, and Wi-Fi Direct support. 
 keywords:
 - WiFiCx WDF class extension, WiFiCx, WiFi NetAdapterCx
-ms.date: 05/22/2025
+ms.date: 07/07/2026
 ms.topic: how-to
 ---
 
@@ -525,4 +525,7 @@ idleSettings.IdleTimeoutType = SystemManagedIdleTimeoutWithHint;
     status = WdfDeviceAssignS0IdleSettings(DeviceContext->WdfDevice, &idleSettings);
 
 ```
-
+## Complete Sample Code
+The Windows Driver Samples repository contains a complete WiFiCx sample driver, including source code, build instructions, and implementation guidance.
+-  [WiFiCx Sample Driver](https://github.com/microsoft/Windows-driver-samples/blob/main/network/wifi/wificx/README.md)
+This sample provides a production-quality for developers building WiFiCx-based Windows Wi-Fi drivers.
