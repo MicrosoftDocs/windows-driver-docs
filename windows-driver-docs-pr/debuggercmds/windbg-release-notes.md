@@ -4,6 +4,7 @@ description: "This article provides information on what's new in WinDbg."
 keywords: ["Release notes", "WinDbg", "Windows Debugging"]
 ms.date: 07/01/2025
 ms.topic: release-notes
+ai-usage: ai-assisted
 ---
 
 # Release notes
@@ -12,7 +13,7 @@ ms.topic: release-notes
 
 This article provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
-## Version 1.2606.22001.0
+## 1.2606.22001.0
 
 ### New features
 
@@ -62,7 +63,7 @@ This article provides information on what's new in WinDbg. Earlier versions were
 * Fixed `symsrv2` VPack manifest parsing failures and improved cancellation behavior for symbol and source download operations.
 * Fixed `kdnet.exe` VerifiedNICList lookup for execution-alias installs.
 
-## Version 1.2603.20001.0
+## 1.2603.20001.0
 
 ### New features
 
@@ -110,7 +111,7 @@ This article provides information on what's new in WinDbg. Earlier versions were
 * Fixed an issue where Alt+Space did not invoke the System Menu for floating windows
 * Fixed an issue where expanding items in the Locals window would scroll the item out of view
 
-## Version 1.2601.12001.0
+## 1.2601.12001.0
 
 ### General UI Improvements
 
