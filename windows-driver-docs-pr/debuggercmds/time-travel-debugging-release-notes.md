@@ -12,6 +12,27 @@ ms.topic: release-notes
 
 This topic provides information on what's new in Time Travel Debugging.
 
+## 1.11.611
+
+Fixed several issues that could cause crashes when recording AVX-enabled and AVX512-enabled programs.
+
+`@$cursession.TTD.Calls()` reports more accurate parameter information for 32-bit assembly stubs.
+
+Improved the robustness of the indexer when indexing large (tens to hundreds of GB) traces. This improvement required a change to the index format, so you need to re-index traces.
+
+### Changed
+
+- Update MSDIS to current version to get Intel APX support (1.11.601).
+- Fix monitoring of processes with PID of 4 or 8 (1.11.595).
+
+### Fixed
+
+- Add XSTATE support to TTD CONTEXT handling (1.11.609).
+- Fix issues encountered with the newest version of MSVC (and clang) (1.11.607).
+- Ensure the correct default parameter type size is always set (1.11.593).
+- New trace file format with runtime-chosen page size (1.11.592).
+- Work around the "REX.B + NOP" bug in MSDIS (1.11.591).
+
 ## 1.11.553
 
 `!tt` with no arguments now shows brief help text and the current position (instead of moving to the beginning of the trace).
