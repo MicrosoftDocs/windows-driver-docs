@@ -14,9 +14,9 @@ This topic provides information on what's new in Time Travel Debugging.
 
 ## 1.11.611
 
-Fixed several issues that could cause crashes when recording AVX-enabled and AVX512-enabled programs.  
+Fixed several issues that could cause crashes when recording AVX-enabled and AVX512-enabled programs.
 
-@$cursession.TTD.Calls() reports more accurate parameter information for 32-bit assembly stubs.  
+`@$cursession.TTD.Calls()` reports more accurate parameter information for 32-bit assembly stubs.
 
 Improved the robustness of the indexer when indexing large (tens to hundreds of GB) traces. This improvement required a change to the index format, so you need to re-index traces.
 
