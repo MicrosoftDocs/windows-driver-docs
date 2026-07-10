@@ -527,5 +527,5 @@ idleSettings.IdleTimeoutType = SystemManagedIdleTimeoutWithHint;
 ```
 ## Complete Sample Code
 The Windows Driver Samples repository contains a complete WiFiCx sample driver, including source code, build instructions, and implementation guidance.
--  [WiFiCx Sample Driver](https://github.com/microsoft/Windows-driver-samples/blob/main/network/wifi/wificx/README.md)
+-  [WiFiCx Sample Driver](https://github.com/microsoft/Windows-driver-samples/tree/main/network/wlan/wificx)
 This sample provides a production-quality for developers building WiFiCx-based Windows Wi-Fi drivers.
