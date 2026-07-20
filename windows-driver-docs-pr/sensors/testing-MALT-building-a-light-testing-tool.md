@@ -44,7 +44,7 @@ The enclosure we used for laptops was 16"x16"x12", with a 10"x10" aperture at th
 An effective light enclosure will provide a sterile light environment where light cast on the device under test will be from the controlled light source and not environmental. The following are examples of light boxes.
 
 - [Custom 3D printed case](https://github.com/Microsoft/busiotools/tree/master/sensors/Tools/MALT/Schematics/enclosure)
-- [Storage tote](https://www.sterilite.com/product-page.html?product=15253V06)
+- [Storage tote](https://www.sterilite.com/product/18-gal-latching-tuff1-tote/)
 - Cardboard box
 
 The enclosure needs to be large enough for the SUT and remove it from external light influence. The light fixture can be placed on top or mounted inside the enclosure.
