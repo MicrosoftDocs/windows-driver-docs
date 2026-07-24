@@ -8,7 +8,7 @@ keywords:
 - NuGet
 - install
 - download
-ms.date: 05/06/2025
+ms.date: 07/22/2026
 ms.topic: install-set-up-deploy
 ---
 

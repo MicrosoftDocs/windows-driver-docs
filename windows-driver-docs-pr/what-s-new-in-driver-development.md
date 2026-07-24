@@ -1,13 +1,13 @@
 ---
 title: What's New in Driver Development for Windows 11, Version 26H1
 description: This section describes new features for driver development in Windows 11, version 26H1.
-ms.date: 05/06/2026
+ms.date: 07/22/2026
 ms.topic: whats-new
 ---
 
 # <a name="top"></a>What's new in driver development for Windows 11, version 26H1
 
-This section describes new features and updates for driver development in Windows 11, version 26H1. To target this version of Windows, you can use [Windows Driver Kit (WDK) 10.0.28000.1839](./download-the-wdk.md) (released May 4, 2026).
+This section describes new features and updates for driver development in Windows 11, version 26H1. To target this version of Windows, use [Windows Driver Kit (WDK) 10.0.28000.2526](./download-the-wdk.md) (released July 23, 2026).
 
 ## Visual Studio 2026 Support
 

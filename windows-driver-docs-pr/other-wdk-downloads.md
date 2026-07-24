@@ -10,7 +10,7 @@ keywords:
 - Windows driver tools
 - EWDK download
 - Windows driver development tools
-ms.date: 05/06/2026
+ms.date: 07/22/2026
 ms.topic: how-to
 ---
 
@@ -20,7 +20,7 @@ The following table lists the supported WDK versions, along with their usage gui
 
 | Windows Version | Build Number | Supported Visual Studio | SDK | WDK | EWDK | NuGet | Comments |
 |--|--|--|--|--|--|--|--|
-| Windows 11 26H1 (Br) | 28000.1839 | [VS 2026](https://visualstudio.microsoft.com/downloads/) | [SDK](https://go.microsoft.com/fwlink/?linkid=2361309) | [WDK](https://go.microsoft.com/fwlink/?LinkId=2362091) | [EWDK](/legal/windows/hardware/enterprise-wdk-license-2026) | [NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.28000.1839) | This version is the default supported kit for Windows driver development. |
+| Windows 11 26H1 (Br) | 28000.2526 | [VS 2026](https://visualstudio.microsoft.com/downloads/) | [SDK](https://go.microsoft.com/fwlink/?linkid=2372508) | [WDK](https://go.microsoft.com/fwlink/?LinkId=2371554) | [EWDK](/legal/windows/hardware/enterprise-wdk-license-2026) | [NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.28000.2526) | This version is the default supported kit for Windows driver development. |
 | Windows 11 25H2 (Ge) | 26100.6584 | [VS 2022](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2022-and-other-products) | [SDK](https://go.microsoft.com/fwlink/?linkid=2338977) | [WDK](https://go.microsoft.com/fwlink/?linkid=2335869) | [EWDK](/legal/windows/hardware/enterprise-wdk-license-2022) | [NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.26100.6584) | This version is the default supported kit for Windows driver development in VS2022. |
 | Windows 11 26H1 (Br) | 28000.1 | [VS 2022](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2022-and-other-products) | [SDK](https://go.microsoft.com/fwlink/?linkid=2342535) | [WDK](https://go.microsoft.com/fwlink/?linkid=2342530) | [EWDK](/legal/windows/hardware/enterprise-wdk-license-2022) | [NuGet](https://www.nuget.org/packages/Microsoft.Windows.WDK.x64/10.0.28000.1-RTM) | 26H1 includes platform changes to support specific silicon. Use only if you need these changes. For details see [Announcing Windows 11 Insider Preview Build 28000](https://blogs.windows.com/windows-insider/2025/11/07/announcing-windows-11-insider-preview-build-28000-canary-channel/). |
 | Windows 11 22H2 (Ni) | 22621.5193 | [VS 2022](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2022-and-other-products) | [SDK](https://go.microsoft.com/fwlink/?linkid=2311806) | [WDK](https://go.microsoft.com/fwlink/?linkid=2330411) | [EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)  | N/A | Supported for Windows 10 x86/ARM32 driver development only. |

@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 05/06/2026
+ms.date: 07/22/2026
 ms.topic: how-to
 ---
 
@@ -18,7 +18,7 @@ Use the WDK to develop, test, and deploy drivers for Windows.
 - Use the latest release WDK to build drivers for Windows 10, Windows Server 2016, and later client and server versions.
 
 > [!IMPORTANT]
-> - We recommend using the latest WDK 28000.1761 with Visual Studio 2026 for driver development. If you need to target older versions of Windows, follow the guidance in [Building Drivers for Previous OS Releases Using the Latest Windows Driver Kit (WDK)](https://techcommunity.microsoft.com/blog/windowsdriverdev/building-drivers-for-previous-os-releases-using-the-latest-windows-driver-kit-wd/4374910)
+> - Use the latest WDK 28000.2526 with Visual Studio 2026 for driver development. To target older versions of Windows, see [Building Drivers for Previous OS Releases Using the Latest Windows Driver Kit (WDK)](https://techcommunity.microsoft.com/blog/windowsdriverdev/building-drivers-for-previous-os-releases-using-the-latest-windows-driver-kit-wd/4374910).
 > - If you want to continue using Visual Studio 2022 or are facing issues upgrading to Visual Studio 2026, use WDK 26100.6584 available in [Other WDK Downloads](other-wdk-downloads.md).
 > - Looking for earlier WDK versions? Visit [Other WDK Downloads](other-wdk-downloads.md)
 
@@ -66,7 +66,7 @@ The provided links for the SDK and the WDK have matching build numbers, which is
 
 ## ![Download icon for WDK](images/download-install.png) Step 3: Install the WDK
 
-- [Download the latest WDK](https://go.microsoft.com/fwlink/?LinkId=2362091)
+- [Download the latest WDK](https://go.microsoft.com/fwlink/?LinkId=2371554)
 
 Starting with version 17.11.0, the WDK VSIX is included as an individual component in Visual Studio. Before installing the WDK, the installer checks if a compatible version of the VSIX is already installed. If the installer doesn't find the WDK VSIX, it prompts you to install it. To install the WDK VSIX, launch the Visual Studio Installer, select **Modify**, go to the **Individual Components** tab, add **Windows Driver Kit**, and then select **Modify**.
 

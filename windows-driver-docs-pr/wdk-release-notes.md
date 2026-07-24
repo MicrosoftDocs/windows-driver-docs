@@ -1,7 +1,7 @@
 ---
 title: Windows Drivers Kit (WDK) release notes
 description: Highlights the latest features in new WDK releases.
-ms.date: 05/06/2026
+ms.date: 07/22/2026
 ms.topic: release-notes
 ---
 
@@ -9,12 +9,35 @@ ms.topic: release-notes
 
 The following features and bug fixes are in the Windows 11 WDK update.
 
+## Version 10.0.28000.2526 (26H1)
+
+*Released July 23, 2026*
+
+### WiFi WPA Compatibility Mode (MRsnO)
+This WDK update enables partners to build WDI drivers that support connecting devices to networks advertising WPA3 Compatibility Mode. The WDI TLV parser version is updated to 1.1.13, and new capabilities enable both the operating system and the driver to support WPA3 Compatibility Mode when connecting to these networks.
+
+Impacted files: 
+- dot11wificxintf.h
+
+### StorPort Notification
+Added a new miniport notification that allows drivers to signal that inline-encryption keys are invalidated (for example, after a controller reset). Storport uses this notification to reprogram encryption keys before the next encrypted I/O operation.
+
+Impacted files: 
+- storeport.h
+
+### NVMe Inline Cryptography Engine (ICE) Extensions
+Added support for NVMe Inline Cryptography Engine (ICE) API extensions. These updates introduce new interfaces that enable storage drivers to take advantage of inline encryption capabilities on supported hardware platforms.
+
+Impacted files:
+- nvmeiceinterface.h
+- storport.h
+
 ## Version 10.0.28000.1839 (26H1)
 
 *Released May 6, 2026*
 
 ### WifiCx
-This Wdk changes enables Ihvs to build drivers for the WiFiCx driver model, that will enable the device to connect to networks advertising Wpa3 compatibility mode security.
+This WDK update enables partners to build drivers for the WiFiCx driver model that enables the device to connect to networks advertising WPA3 compatibility mode security.
 
 The WiFiCx driver tlv parser version is bumped up to 2.0.14, and capabilities are added to enable both the OS and the driver to use Wpa3 compatibility mode security when connecting to such networks.
 
