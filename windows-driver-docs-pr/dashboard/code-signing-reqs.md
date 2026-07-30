@@ -33,7 +33,7 @@ You can purchase EV code signing certificates from one of the following certific
 
 - [Sectigo (formerly Comodo) EV code signing certificate](https://www.sectigo.com/ssl-certificates-tls/code-signing)
 
-- [SSL.com EV code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
+- [SSL.com EV code signing certificate](https://www.ssl.com/products/software-integrity/code-signing/ev/)
 
 ## EV certificate signed drivers
 
