@@ -6,6 +6,7 @@ ms.date: 09/12/2019
 topic_type:
 - apiref
 ms.topic: reference
+ai-usage: ai-assisted
 api_name:
 - ACPI_BIOS_ERROR
 api_type:
@@ -411,13 +412,13 @@ If Parameter 1 equals **0x02**, the ACPI BIOS could not process the resource lis
 <td align="left"><p>The ACPI extension for the PCI bus</p></td>
 <td align="left"><p>0x0</p></td>
 <td align="left"><p>A pointer to the QUERY_RESOURCES IRP</p></td>
-<td align="left"><p>ACPI cannot convert the BIOS' resource list into the proper format. This probably represents an error in the BIOS' list encoding procedure.</p></td>
+<td align="left"><p>ACPI cannot convert the BIOS' resource list into the proper format. This probably represents an error in the BIOS' list encoding procedure. A BIOS that uses the ACPI QWORD Address Space Resource Descriptor must satisfy the alignment restrictions described in the Remarks section of <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlioencodememioresource">RtlIoEncodeMemIoResource</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>The ACPI extension for the PCI bus</p></td>
 <td align="left"><p>0x1</p></td>
 <td align="left"><p>A pointer to the QUERY_RESOURCE_REQUIREMENTS IRP</p></td>
-<td align="left"><p>ACPI cannot convert the BIOS' resource list into the proper format. This probably represents an error in the BIOS' list encoding procedure.</p></td>
+<td align="left"><p>ACPI cannot convert the BIOS' resource list into the proper format. This probably represents an error in the BIOS' list encoding procedure. A BIOS that uses the ACPI QWORD Address Space Resource Descriptor must satisfy the alignment restrictions described in the Remarks section of <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlioencodememioresource">RtlIoEncodeMemIoResource</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>The ACPI extension for the PCI bus</p></td>
