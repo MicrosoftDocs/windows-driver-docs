@@ -32,12 +32,14 @@
     href: ksproperty-networkcameracontrol-ntp.md
   - name: KSPROPERTY_NETWORKCAMERACONTROL_URI
     href: ksproperty-networkcameracontrol-uri.md
-- name: Camera settings page and companion apps
+- name: Camera settings page, default control values and companion apps
   items:
   - name: Camera settings page
     href: camera-settings-page.md
   - name: Camera companion apps
     href: camera-companion-apps.md
+  - name: Camera driver-defined default control values
+    href: camera-driver-defined-default-control-values.md
 - name: Digital Window overview
   items:
   - name: Digital Window overview
