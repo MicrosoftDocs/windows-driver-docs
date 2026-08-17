@@ -29,7 +29,7 @@ You can purchase EV code signing certificates from one of the following certific
 
 - [GlobalSign EV code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
 
-- [IdenTrust EV code signing certificate](https://www.identrust.com/digital-certificates/trustid-ev-code-signing)
+- [IdenTrust EV code signing certificate](https://www.identrust.com/digital-certificates/trustid-code-signing)
 
 - [Sectigo (formerly Comodo) EV code signing certificate](https://www.sectigo.com/ssl-certificates-tls/code-signing)
 
