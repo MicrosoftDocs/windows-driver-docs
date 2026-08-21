@@ -1,14 +1,15 @@
 ---
 title: USB Client Drivers for Media-Agnostic (MA-USB)
-description: USB device driver that sends MA-USB packets.
-ms.date: 01/17/2024
+description: Media-agnostic USB (MA-USB) is deprecated and will be removed in a future Windows release.
+ms.date: 08/12/2026
 ms.topic: concept-article
+ai-usage: ai-assisted
 ---
 
 # USB client drivers for media-agnostic (MA-USB)
 
-> [!NOTE]
-> Media-agnostic USB is not supported by Windows and is intended for evaluation only.
+> [!IMPORTANT]
+> Media-agnostic USB (MA-USB) was intended for evaluation purposes and is now deprecated. The MA-USB host driver (`mausbhost`) and IP transport driver (`mausbip`) will be removed in a future release of Windows.
 
 In Windows 10, version 1709, USB driver stack can send USB packets over non-USB physical mediums such as Wi-Fi by using the media-agnostic USB (MA-USB) protocol. The new feature has been designed in a way that the changes required to existing USB client drivers are minimal. That set of changes include additional information about the transport:
 
