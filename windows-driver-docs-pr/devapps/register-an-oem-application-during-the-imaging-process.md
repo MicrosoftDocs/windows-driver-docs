@@ -151,3 +151,7 @@ If the app registration contains optional values that block the expedited flow (
 
 > [!IMPORTANT]
 > Exercise caution when opting to expedite apps via this framework, as the update operations occur when the device might be in use and can cause a negative performance impact of the user experience on a new device.
+
+## Persisting registration for device recovery and resets
+
+To ensure the expedited application install or update still occurs after device recovery or reset scenarios, migrate the staged registration by using the User State Migration Tool (USMT): capture it with `ScanState.exe` before recovery or reset, and restore it with `LoadState.exe` after recovery or reset. For more information, see the [USMT documentation](/windows/deployment/usmt/usmt-include-files-and-settings).
