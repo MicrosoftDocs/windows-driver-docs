@@ -1,18 +1,19 @@
 ---
-title: Allocated Filter Altitudes
+title: Allocated filter altitudes
 description: Lists file system filter altitudes allocated by Microsoft
-ms.date: 10/28/2025
+ms.date: 09/16/2026
 ms.update-cycle: 365-days
 keywords:
 - filter driver altitude
 - minifilter driver altitude
 ms.custom: UpdateFrequency1
 ms.topic: reference
+ai-usage: ai-assisted
 ---
 
 # Allocated filter altitudes
 
-This page lists filter altitude allocations by load order group. It's updated 1-2 times per year, so might not include any recently assigned allocations.
+This page lists filter altitude allocations by load order group. Microsoft updates it one or two times a year, so it might not include recently assigned allocations.
 
 * If you already have a Microsoft-assigned "integer" altitude, you can use it to [create your own "fractional" altitude to place a new filter in the same load order group](load-order-groups-and-altitudes-for-minifilter-drivers.md#create-an-altitude).
 * If you don't have a Microsoft-assigned altitude in the appropriate load order group, [you need to request one](minifilter-altitude-request.md).
@@ -158,7 +159,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | cytmon.sys | 389230 | Cytrence Inc |
 | ZtacFltr.sys | 389225.5 | Blackpoint Cyber |
 | SophosED.sys | 389220 | Sophos |
-| MonsterK.sys | 389210 | Somma Inc |
+| MonsterK.sys | 389210 | MONITORAPP CO., LTD. |
 | MSSITDIF.SYS | 389205.8 | ISNET Corp |
 | MSSIDRVF.SYS | 389205.6 | ISNET Corp |
 | BMFWTDIF.SYS | 389205.4 | ISNET Corp |
@@ -437,8 +438,8 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | DevMonMiniFilter.sys | 386300 | Dmitry Stefankov |
 | VMWVvpfsd.sys | 386200 | VMware, Inc. |
 | RTOLogon.sys (Renamed) | 386200 | VMware, Inc. |
-| Code42Filter.sys | 386190 | Code42 |
-| AATFilter.sys | 386189.5 | Code42 |
+| Code42Filter.sys | 386190 | Mimecast (Previously Code42) |
+| AATFilter.sys | 386189.5 | Mimecast (Previously Code42) |
 | ConduantFSFltr.sys | 386180 | Conduant Corporation |
 | KtFSFilter.sys | 386170 | Keysight Technologies |
 | FileGuard.sys | 386140 | RES Software |
@@ -851,7 +852,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | xhunter64.sys | 363400 | Wellbia.com |
 | uncheater.sys | 363390 | Wellbia.com |
 | AuditFlt.sys | 363313 | Ionx Solutions LLP |
-| SPIMiniFilter.sys | 363300 | Software Pursuits Inc. |
+| SPIMiniFilter.sys (retired) | 363300 | Software Pursuits Inc. |
 | EAAntiCheat.sys | 363250 | Electronic Arts |
 | RevBitsESMF.sys | 363240.5 | RevBits LLC |
 | mracdrv.sys | 363230 | Mail&#x2024;Ru |
@@ -1553,7 +1554,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | AMFileSystemFilter.sys | 261900 | AppSense Ltd |
 | mtflt.sys | 261880 | mTalos Inc. |
 | nxrmflt.sys | 261680 | NextLabs, Inc. |
-| RsFltScanner.sys | 261400.5 | SecuritySnares |
+| SSAgent.sys (previously RsFltScanner.sys) | 261400.5 | SecuritySnares |
 | oc_fsfilter.sys | 261300 | Raiffeisen Bank Aval |
 | IslandDrv.sys | 261250.5 | Island Technology Inc. |
 | hdlpflt.sys | 261200 | McAfee Inc. |
@@ -1627,7 +1628,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | CVCBT.sys | 203400 | CommVault Systems, Inc. |
 | ResumeKeyFilter.sys | 202000 | Microsoft |
 | VeeamFCT.sys | 201900 | Veeam Software |
-| ShadowVirtualStorage.sys | 201800 | Blade SAS |
+| ShadowVirtualStorage.sys | 201800 | Shadow SAS. (Previously Blade SAS) |
 
 ## 180000 - 189999: FSFilter HSM
 
