@@ -13,6 +13,57 @@ ai-usage: ai-assisted
 
 This article provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
+## 2.2609.29001.0
+
+### New features
+
+* Added a global accent color setting that applies across sessions and targets, with per-target accent overrides still taking precedence when one is active.
+* Expanded Intel APX support with unwind and debug information for the extended general-purpose registers, and correct stack walks through APX exception frames.
+* Added potential capture of memory referenced by the APX registers when creating AMD64 kernel minidumps.
+* Added initial post-mortem APX support when debugging Linux dumps.
+* Added support for Arm scalable vector C types in symbols, locals, type inspection, and data model projections.
+* Added basic support for debugging big-endian MIPS64r6 Linux targets, including ELF and DWARF data.
+
+### Debugging Engine Improvements
+
+* Improved support for sparse extended-register contexts in kernel mini and triage dumps.
+* Improved performance when debugging Time Travel Debugging traces by detecting sanitizer instrumentation only once per trace instead of repeatedly during execution.
+
+### General UI Improvements
+
+* Improved Memory window readability with dedicated light, dark, and high-contrast colors, and added a highlight that makes the evaluated address easy to locate.
+* Improved accessibility by scaling the ribbon and the Memory window correctly with the Windows text size setting, preventing clipped labels at larger scales.
+* Preserved text highlighting when copying from the Notes window into rich-text applications.
+
+### Time Travel Debugging (TTD)
+
+* Updated TTD from 1.11.610 to 1.11.617.
+* Fixed a recording failure that could occur when a program repeatedly handled access-violation exceptions while committing memory on demand.
+* Fixed emulation of Arm64 prefetch instructions, including unscaled forms and reserved prefetch operations.
+* Fixed the initial sizing of the trace index file and removed unnecessary disk reads while indexing, improving indexing of large traces.
+
+### Bug Fixes
+
+* Fixed a crash that could occur while analyzing CAB files containing secondary dumps, and preserved extended register state in those dumps.
+* Fixed several issues that caused extended register state, including APX registers, to be lost when writing or carving dumps.
+* Fixed APX local variables stored in the extended general-purpose registers being reported as invalid during live debugging.
+* Fixed disassembly formatting and instruction help for the APX no-flags instruction prefix, which was previously parsed as the instruction mnemonic.
+* Fixed r ssp returning zero for the kernel Control-flow Enforcement Technology shadow stack pointer.
+* Fixed register context retrieval failing when a kernel dump contained an uninitialized Control-flow Enforcement Technology region.
+* Fixed kernel debugging sessions losing access to extended processor state after stopping at the initial boot breakpoint.
+* Fixed incorrect variable and constant values caused by mis-evaluation of entry-value expressions in complex DWARF debug information.
+* Fixed a crash that could occur while evaluating type information.
+* Fixed a data model lifetime issue that could break property access through prototype chains.
+* Fixed malformed output when Debugger Markup Language attributes contained a greater-than character, such as in => command expressions, in both converted text and command window output.
+* Fixed the Disassembly window not updating when switching cores on EXDI targets.
+* Fixed a crash when clearing highlighted lines in the Disassembly window.
+* Fixed a crash when opening a failed expression from Locals in the Memory window.
+* Fixed a crash when closing a script tab after running the script.
+* Fixed a regression in kdnet.exe.
+* Fixed network kernel debugging in virtual machine partitions so an explicitly configured PCI debug adapter is honored over the synthetic network transport.
+* Fixed !ipi detection of indirect request mailboxes.
+* Hardened parsing and validation of untrusted target, remote protocol, and image data to improve robustness against malformed input.
+
 ## 1.2606.22001.0
 
 ### New features
