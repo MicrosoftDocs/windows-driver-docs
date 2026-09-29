@@ -6,8 +6,9 @@ keywords:
 - driver stacks WDK AV/C
 - stacks WDK AV/C
 - Avc.sys function driver WDK , driver stacks
-ms.date: 04/20/2017
+ms.date: 09/29/2026
 ms.topic: concept-article
+ai-usage: ai-assisted
 ---
 
 # AV/C Driver Stacks
@@ -23,6 +24,9 @@ The peer driver stack is for subunits on external AV/C devices. In contrast, the
 ![diagram illustrating the separate peer-subunit and virtual-subunit stacks.](images/avcdiag.gif)
 
 At the base of the driver stacks are *1394ohci.sys* and *1394bus.sys*. These drivers provide the basic IEEE 1394 bus infrastructure support. There are instances of these drivers for each physical IEEE 1394 adapter in the system.
+
+> [!NOTE]
+> On Windows builds that implement the tunneled legacy host-controller deprecation policy, *1394ohci.sys* rejects startup of IEEE 1394 OHCI PCI controllers when Windows classifies the controller's PCI connection as Thunderbolt or USB4 tunneled, including firmware-designated external-facing PCI hierarchies. The controller remains visible in Device Manager but fails to start with Code 10 and **STATUS_NOT_SUPPORTED** (`0xC00000BB`), so downstream AV/C devices cannot enumerate through it. Native or otherwise unclassified controllers are not newly restricted. This is not a general deprecation of IEEE 1394, *Avc.sys*, or *61883.sys*. IEEE 1394 OHCI is distinct from USB OHCI. The shared [compatibility override for tunneled legacy controllers](../usbcon/usb-3-0-driver-stack-architecture.md#compatibility-overrides-for-tunneled-legacy-controllers) also applies to *1394ohci.sys*.
 
 Stacked above *1394ohci.sys* and *1394bus.sys* is *61883.sys*. There is an instance of *61883.sys* for each IEC-61883-enabled node on the IEEE 1394 bus. The driver's *61883.sys* provides the following support for the IEC 61883 protocol:
 

@@ -1,8 +1,9 @@
 ---
 title: USB Host-Side Drivers in Windows
 description: This article provides an overview of the Universal Serial Bus (USB) driver stack architecture.
-ms.date: 01/17/2024
+ms.date: 09/29/2026
 ms.topic: overview
+ai-usage: ai-assisted
 ---
 
 # USB host-side drivers in Windows
@@ -55,6 +56,30 @@ The Usbuhci.sys (universal host controller interface) miniport driver replaces t
 In all versions of Windows that support USB 2.0, the operating system is capable of managing USB 1.1 and USB 2.0 host controllers simultaneously. Whenever the operating system detects that both types of controller are present, it creates two separate device nodes, one for each host controller. Windows subsequently loads the Usbehci.sys miniport driver for the USB 2.0-compliant host controller hardware and either Usbohci.sys or Openhci.sys for the USB 1.1-compliant hardware, depending on the system configuration.
 
 Above the port driver is the USB bus driver, Usbhub.sys, also known as the hub driver. This is the device driver for each hub on the system.
+
+### Tunneled legacy host-controller deprecation
+
+On Windows builds that implement the tunneled legacy host-controller deprecation policy, Usbport.sys rejects startup of the following legacy PCI host controllers when Windows classifies their PCI connection as Thunderbolt or USB4 tunneled:
+
+| Miniport driver | Affected controller scenario |
+| --- | --- |
+| Usbehci.sys | EHCI controllers serving USB 2.0 devices. |
+| Usbuhci.sys | UHCI controllers serving USB 1.x devices. |
+| Usbohci.sys | USB OHCI controllers serving USB 1.x devices. |
+
+This classification includes applicable Thunderbolt/USB4 or firmware-designated external-facing PCI hierarchies. The restriction depends on the host controller's classified connection, not on whether a peripheral is attached to a USB-C or Thunderbolt dock.
+
+The shared Usbport.sys driver enforces the restriction during each controller's device start, not when the driver binary loads. PCI enumeration is unchanged: the controller remains visible in Device Manager but fails to start with Code 10 and **STATUS_NOT_SUPPORTED** (`0xC00000BB`). Devices downstream of that controller cannot enumerate through it.
+
+Native legacy controllers and other legacy controllers not classified as Thunderbolt or tunneled are not newly restricted. Neither are xHCI controllers or USB 1.x and USB 2.0 peripherals served by xHCI. This policy is not a general deprecation of USB 1.x, USB 2.0, or all uses of these drivers. For the corresponding restriction on IEEE 1394 OHCI controllers, see [AV/C driver stacks](../stream/av-c-driver-stacks.md).
+
+#### Compatibility overrides for tunneled legacy controllers
+
+On builds that implement this policy, it's enabled by default. To restore the prior controller startup path for both the affected USB controllers and IEEE 1394 OHCI controllers managed by 1394ohci.sys, apply the following registry override:
+
+In Registry Editor, with administrator privileges, create or update `AllowTunneledLegacyControllers` under `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\pci\Parameters`. Use type `REG_DWORD` and value `1`. The value must be a DWORD set to exactly `1`; the presence of the value alone does not enable the override.
+
+Restart Windows after applying the registry override so that the change is applied consistently. The affected controller drivers read this shared registry location; pci.sys does not enforce this policy. This override bypasses only this restriction. Other existing restrictions still apply, and restoring the prior startup path does not guarantee that a device functions.
 
 ## USB common class generic parent driver (Usbccgp.sys)
 
