@@ -1,8 +1,9 @@
 ---
 title: USB Host-Side Drivers in Windows
 description: This article provides an overview of the Universal Serial Bus (USB) driver stack architecture.
-ms.date: 01/17/2024
+ms.date: 10/01/2026
 ms.topic: overview
+ai-usage: ai-assisted
 ---
 
 # USB host-side drivers in Windows
@@ -55,6 +56,17 @@ The Usbuhci.sys (universal host controller interface) miniport driver replaces t
 In all versions of Windows that support USB 2.0, the operating system is capable of managing USB 1.1 and USB 2.0 host controllers simultaneously. Whenever the operating system detects that both types of controller are present, it creates two separate device nodes, one for each host controller. Windows subsequently loads the Usbehci.sys miniport driver for the USB 2.0-compliant host controller hardware and either Usbohci.sys or Openhci.sys for the USB 1.1-compliant hardware, depending on the system configuration.
 
 Above the port driver is the USB bus driver, Usbhub.sys, also known as the hub driver. This is the device driver for each hub on the system.
+
+### Tunneled legacy host-controller deprecation
+
+> [!NOTE]
+> On Windows builds that implement the tunneled legacy host-controller deprecation policy, the following miniport drivers reject startup of their legacy PCI host controllers when Windows classifies the controller's PCI connection as Thunderbolt or USB4 tunneled, including firmware-designated external-facing PCI hierarchies:
+>
+> | Miniport driver | Affected controller scenario |
+> | --- | --- |
+> | Usbehci.sys | EHCI controllers serving USB 2.0 devices. |
+> | Usbuhci.sys | UHCI controllers serving USB 1.x devices. |
+> | Usbohci.sys | USB OHCI controllers serving USB 1.x devices. |
 
 ## USB common class generic parent driver (Usbccgp.sys)
 
