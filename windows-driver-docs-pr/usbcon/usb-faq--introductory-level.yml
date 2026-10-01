@@ -2,7 +2,7 @@
 metadata:
   description: This topic presents frequently asked questions for driver developers who are new to developing and integrating USB devices and drivers with Windows operating systems.
   title: USB in Windows - FAQ
-  ms.date: 09/29/2026
+  ms.date: 10/01/2026
   ms.author: mhopkins
   ms.localizationpriority: medium
   ms.topic: faq
@@ -96,7 +96,7 @@ sections:
           
           Different device speeds do not determine the driver that is loaded for the controller. However, different device speeds might determine which controller is used. The controller always uses the same driver.
 
-          On Windows builds that implement the [tunneled legacy host-controller deprecation policy](usb-3-0-driver-stack-architecture.md#tunneled-legacy-host-controller-deprecation), EHCI, UHCI, and USB OHCI controllers classified as Thunderbolt or tunneled fail to start unless a compatibility override is applied. This restriction does not affect xHCI controllers or USB 1.x and USB 2.0 peripherals served by xHCI.
+          On Windows builds that implement the [tunneled legacy host-controller deprecation policy](usb-3-0-driver-stack-architecture.md#tunneled-legacy-host-controller-deprecation), the EHCI, UHCI, and USB OHCI miniport drivers reject startup of controllers classified as Thunderbolt or USB4 tunneled unless a compatibility override is applied. This restriction does not affect xHCI controllers or USB 1.x and USB 2.0 peripherals served by xHCI.
           
       - question: |
           How do I determine whether my USB 3.0 device is operating as SuperSpeed?
