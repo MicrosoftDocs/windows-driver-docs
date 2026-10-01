@@ -13,9 +13,23 @@ ai-usage: ai-assisted
 
 This article provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
-## 2.2609.29001.0
+## 1.2610.1001.0
 
 ### New features
+
+#### Featured: AI-assisted debugging with WinDbg MCP
+
+This release introduces AI-assisted debugging with WinDbg MCP, which connects supported AI clients to an active WinDbg session through the Model Context Protocol. Use natural-language prompts to analyze crash dumps and live targets, inspect debugger state, troubleshoot symbols, analyze Time Travel Debugging (TTD) traces, visualize data, and automate repeatable investigations.
+
+- **Supported clients:** Visual Studio Code with GitHub Copilot and GitHub Copilot CLI.
+- **Built-in safeguards:** Local communication through a per-process named pipe, [Secure Mode](../debugger/secure-mode.md), and cross-prompt injection protection.
+
+> [!IMPORTANT]
+> Validate AI-generated findings against the debugger output before acting on them.
+
+For setup instructions, security guidance, and troubleshooting, see the [WinDbg MCP documentation](windbg-mcp-overview.md).
+
+#### Other new features
 
 * Added a global accent color setting that applies across sessions and targets, with per-target accent overrides still taking precedence when one is active.
 * Expanded Intel APX support with unwind and debug information for the extended general-purpose registers, and correct stack walks through APX exception frames.
