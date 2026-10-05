@@ -7,14 +7,14 @@ ms.topic: how-to
 
 # Using the Microsoft C Runtime with User-Mode Drivers and Desktop Apps
 
-If you are building applications or drivers for Windows 10, you only need to read this section. If you are using a version of Visual Studio earlier than Visual Studio 2015, skip this section and start with [Redistributing the C Runtime (applies to before Visual Studio 2015)](#redistributing-the-c-runtime-applies-to-before-visual-studio-2015).
+If you are building applications or drivers for Windows 10 or Windows 11, you only need to read this section. If you are using a version of Visual Studio earlier than Visual Studio 2015, skip this section and start with [Redistributing the C Runtime (applies to before Visual Studio 2015)](#redistributing-the-c-runtime-applies-to-before-visual-studio-2015).
 
-Starting in Visual Studio 2015, the Universal C Runtime (UCRT) encompasses the C runtime. The other pieces required for a complete program (C/C++ Language Features, C++ Library) are provided by Visual Studio in the VC++ Redistributable. To avoid a runtime redistribution requirement, those pieces are statically linked.
+Starting with Visual Studio 2015, the Universal C Runtime (UCRT) encompasses the C runtime. The other pieces required for a complete program (C/C++ Language Features, C++ Library) are provided by Visual Studio in the VC++ Runtime. To avoid a runtime redistribution requirement, the C++ runtime pieces are statically linked. Only static linking must be used for drivers created with Visual Studio 2015 or later, MSVC v14.x toolset.
 
 > [!WARNING]
-> When building a user-mode driver project in Visual Studio, if you set **PlatformToolset**  to `WindowsUserModeDriver10.0`, the toolset ignores any runtime library specified in the project and instead links statically against the VC++ Runtime and dynamically against the UCRT.  When using this toolset, this hybrid linking behavior cannot be reconfigured.
+> When building a user-mode driver project in Visual Studio, if you set **PlatformToolset** to `WindowsUserModeDriver10.0`, the toolset ignores any runtime library specified in the project and instead links statically against the VC++ Runtime and dynamically against the UCRT.  When using this toolset, this hybrid linking behavior cannot be reconfigured.
 
-If you're not using the `WindowsUserModeDriver10.0` toolset, use the following procedure to make modifications (for example include another DLL):
+If you're not using the `WindowsUserModeDriver10.0` toolset, use the following procedure to make modifications (for example include another DLL) and ensure the required MSVC C++ runtime pieces are statically linked:
 
 1. Set to link statically in general: **Properties > C/C++ > Code Generation > Runtime Library = Multi-threaded (/MT)**
 2. Remove the statically linked UCRT: **Properties > Linker > Input > Ignore Specific Default Libraries += libucrt.lib**
@@ -23,9 +23,11 @@ If you're not using the `WindowsUserModeDriver10.0` toolset, use the following p
 ## Redistributing the C Runtime (applies to before Visual Studio 2015)
 
 > [!NOTE]
-> All information below this point applies only to pre-2015. Prior to 2015, there were two separate versions of the C Runtime: the Visual C++ Runtime (VCRT, for example `msvcr120.dll`) and the legacy Windows CRT (`msvcrt.dll`).  
+> All information below this point applies only to VS 2013 or earlier only. Please note, all such versions are no longer supported. More information about the support lifecycle of Visual Studio can be found at the [Visual Studio Product Lifecycle and Servicing page](https://learn.microsoft.com/en-us/visualstudio/releases/2026/servicing-vs#support-for-older-versions)
 
-Visual Studio installs the latest version of the VCRT into the `System32` directory. If the file is not in this location, you can copy it directly into the build directory of your Visual C++ project.
+Prior to VS 2015, there were two separate versions of the C Runtime: the Visual C++ Runtime (VCRT, for example `msvcr120.dll`) and the legacy Windows CRT (`msvcrt.dll`).  
+
+Visual Studio installed the latest version of the VCRT into the `System32` directory. If the file is not in this location, you can copy it directly into the build directory of your Visual C++ project.
 
 If your user-mode driver or desktop application uses the VCRT, you must distribute the appropriate dynamic-link libraries. Use the Visual C++ Redistributable Package (`VCRedist_x86.exe`, `VCRedist_x64.exe`, `VCRedist_arm.exe`). Chain the redistributable package in with other binaries, and the redistributable package will receive automatic updates.
 
