@@ -8,6 +8,7 @@ keywords:
 - minifilter driver altitude
 ms.custom: UpdateFrequency1
 ms.topic: reference
+ai-usage: ai-assisted
 ---
 
 # Allocated filter altitudes
