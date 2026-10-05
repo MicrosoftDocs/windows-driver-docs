@@ -16,9 +16,9 @@ ai-usage: ai-assisted
 This article describes how to request a new file system filter altitude. Some things to keep in mind when requesting a new altitude:
 
 > [!NOTE]
-> Microsoft assigns altitudes only to file system filters that are planned to be part of a publicly shipping product. File system filters that are used only for internal testing or other non-public purposes don't need a Microsoft-assigned altitude. You may use any altitude value for such filters.
+> Microsoft assigns altitudes only to file system filters that are planned to be part of a publicly shipping product. File system filters that are used only for internal testing or other non-public purposes don't need a Microsoft-assigned altitude. You can use any altitude value for such filters.
 >
-> Don't request an altitude assignment for a non-public file system filter. Requests for non-public file system filters aren't processed.
+> Don't request an altitude assignment for a non-public file system filter. Microsoft doesn't process requests for non-public file system filters.
 
 * Microsoft issues one "integer" altitude for each product type (that is, by load order group). If you already have a Microsoft-issued altitude, you can use it to [create a new, fractional altitude](load-order-groups-and-altitudes-for-minifilter-drivers.md#create-an-altitude) to place a new filter in the same load order group.
 

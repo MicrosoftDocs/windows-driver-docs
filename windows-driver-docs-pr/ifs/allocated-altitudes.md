@@ -16,9 +16,9 @@ ai-usage: ai-assisted
 This page lists filter altitude allocations by load order group. It's updated 1-2 times per year, so might not include any recently assigned allocations.
 
 > [!NOTE]
-> Microsoft assigns altitudes only to file system filters that are planned to be part of a publicly shipping product. File system filters that are used only for internal testing or other non-public purposes don't need a Microsoft-assigned altitude. You may use any altitude value for such filters.
+> Microsoft assigns altitudes only to file system filters that are planned to be part of a publicly shipping product. File system filters that are used only for internal testing or other non-public purposes don't need a Microsoft-assigned altitude. You can use any altitude value for such filters.
 >
-> Don't request an altitude assignment for a non-public file system filter. Requests for non-public file system filters aren't processed.
+> Don't request an altitude assignment for a non-public file system filter. Microsoft doesn't process requests for non-public file system filters.
 
 * If you already have a Microsoft-assigned "integer" altitude, you can use it to [create your own "fractional" altitude to place a new filter in the same load order group](load-order-groups-and-altitudes-for-minifilter-drivers.md#create-an-altitude).
 * If you don't have a Microsoft-assigned altitude in the appropriate load order group, [you need to request one](minifilter-altitude-request.md).
