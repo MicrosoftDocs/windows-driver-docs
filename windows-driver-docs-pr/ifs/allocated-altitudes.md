@@ -654,7 +654,6 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | ShadowPouchMon.sys | 378438.6 | DURUAN Co., Ltd. |
 | ShadowPouchMF.sys | 378438.5 | DURUAN Co., Ltd. |
 | RGateFsFilter.sys | 378125.5 | eXsoft Co., Ltd. |
-| nono-fltmgr.sys | 377813.5 | nono project (open-source, individual maintainer) |
 | CybeeObserver.sys | 377500.5 | Cybee  L.L.C. |
 | HoYoKProtect.sys | 377188.5 | miHoYo |
 | ossmon.sys | 376875.5 | Orca Security Inc. |
@@ -1180,7 +1179,6 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | vchle.sys | 325800 | Greatsoft Corp.Ltd |
 | NxFsMon.sys | 325700 | Novatix Corporation |
 | LiveGuardAntiCheat.sys | 325650 | LiveGuard Software Ltd. |
-| file.sys | 325600.5 | Individual Developer |
 | AntiLeakFilter.sys | 325600 | Individual developer (Soft3304) |
 | NanoAVMF.sys | 325510 | Panda Software |
 | shldflt.sys | 325500 | Panda Software |
