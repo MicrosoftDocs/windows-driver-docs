@@ -6,6 +6,14 @@
     href: windbg-overview.md
   - name: WinDbg - Release notes
     href: windbg-release-notes.md
+  - name: WinDbg MCP
+    items:
+    - name: WinDbg MCP overview
+      href: windbg-mcp-overview.md
+    - name: Set up and use WinDbg MCP
+      href: set-up-windbg-mcp.md
+    - name: Troubleshoot WinDbg MCP setup and connection issues
+      href: troubleshoot-windbg-mcp-setup-connection-issues.md
   - name: WinDbg - Command line startup options
     href: windbg-command-line-preview.md
   - name: WinDbg – Settings, workspaces, and saved debug sessions
