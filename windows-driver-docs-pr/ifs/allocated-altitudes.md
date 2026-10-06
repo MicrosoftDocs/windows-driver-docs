@@ -8,7 +8,6 @@ keywords:
 - minifilter driver altitude
 ms.custom: UpdateFrequency1
 ms.topic: reference
-ai-usage: ai-assisted
 ---
 
 # Allocated filter altitudes
@@ -20,7 +19,7 @@ This page lists filter altitude allocations by load order group. It's updated 1-
 >
 > Please do not request an altitude assignment for non-public file system filters. Altitude requests for non-public file system filters will not be processed.
 >
-> If a filter is planned for a publicly shipping product but its functionality or load order group might still change, wait to request a Microsoft-assigned altitude. You can use any altitude value in development and test environments until those details are stable.
+> If a filter is planned for a publicly shipping product but is still early in development, wait to request an altitude until the filter's functionality and intended load order group are stable. You can use any altitude value in your development and test environments while the filter evolves. This testing can help you confirm the appropriate load order group before you request a Microsoft-assigned altitude.
 
 * If you already have a Microsoft-assigned "integer" altitude, you can use it to [create your own "fractional" altitude to place a new filter in the same load order group](load-order-groups-and-altitudes-for-minifilter-drivers.md#create-an-altitude).
 * If you don't have a Microsoft-assigned altitude in the appropriate load order group, [you need to request one](minifilter-altitude-request.md).

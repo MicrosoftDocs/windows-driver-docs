@@ -8,7 +8,6 @@ keywords:
 - WDK request a filter altitude
 - WDK request a minifilter altitude
 ms.topic: how-to
-ai-usage: ai-assisted
 ---
 
 # Request a filter altitude identifier
@@ -32,7 +31,7 @@ This article describes how to request a new file system filter altitude. Some th
 >
 > Please do not request an altitude assignment for non-public file system filters. Altitude requests for non-public file system filters will not be processed.
 >
-> If a filter is planned for a publicly shipping product but its functionality or load order group might still change, wait to request a Microsoft-assigned altitude. You can use any altitude value in development and test environments until those details are stable.
+> If a filter is planned for a publicly shipping product but is still early in development, wait to request an altitude until the filter's functionality and intended load order group are stable. You can use any altitude value in your development and test environments while the filter evolves. This testing can help you confirm the appropriate load order group before you request a Microsoft-assigned altitude.
 
 To request a [filter altitude identifier](load-order-groups-and-altitudes-for-minifilter-drivers.md), send email in an ASCII text e-mail message to [fsfcomm@microsoft.com](mailto:fsfcomm@microsoft.com?subject=Filter%20altitude%20request) with the subject: “Filter altitude request” and the following fields and corresponding information in the message.
 
