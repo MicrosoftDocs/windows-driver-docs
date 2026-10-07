@@ -1,7 +1,7 @@
 ---
 title: System-Defined Device Setup Classes Available to Vendors
 description: Use the following list to select the right predefined values to use for the Class and ClassGuid entries in the Version section of the driver's setup information (INF) file.
-ms.date: 04/06/2026
+ms.date: 08/21/2026
 ms.topic: concept-article
 ---
 
@@ -59,6 +59,7 @@ The following table shows the predefined values to use for the **Class** and **C
 | **Network Client** | NetClient | 4d36e973-e325-11ce-bfc1-08002be10318 | Includes network and/or print providers. **NetClient** components are deprecated in Windows 8.1, Windows Server 2012 R2, and later. |
 | **Network Service** | NetService | 4d36e974-e325-11ce-bfc1-08002be10318 | Includes network services, such as redirectors and servers. |
 | **Network Transport** | NetTrans | 4d36e975-e325-11ce-bfc1-08002be10318 | Includes NDIS protocols CoNDIS stand-alone call managers, and CoNDIS clients, in addition to higher level drivers in transport stacks. |
+| **Neural Processors** | ComputeAccelerator | f01a9d53-3ff6-48d2-9f97-c8a7004be10c | Includes neural processing units (NPUs). Drivers for this class include NPU and other MCDM-based drivers. Some NPU devices might be integrated with GPU devices under the Display class. |
 | **PCI SSL Accelerator** | SecurityAccelerator | 268c95a1-edfe-11d3-95c3-0010dc4050a5 | Includes devices that accelerate secure socket layer (SSL) cryptographic processing. |
 | **PCMCIA Adapters** | PCMCIA | 4d36e977-e325-11ce-bfc1-08002be10318 | Includes PCMCIA and CardBus host controllers, but not PCMCIA or CardBus peripherals. Drivers for this class are system-supplied. |
 | **Ports (COM & LPT ports)** | Ports | 4d36e978-e325-11ce-bfc1-08002be10318 | Includes serial and parallel port devices. See also the MultiportSerial class. |
