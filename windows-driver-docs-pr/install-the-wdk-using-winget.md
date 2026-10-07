@@ -22,10 +22,11 @@ You can use the Windows Package Manager (WinGet) to install the Windows Driver K
 
 ## Install a full driver development environment using a WinGet configuration file
 
-Run the following command in PowerShell to install the WDK and all of its dependencies at once:
+Run the following command in PowerShell or Command Prompt to install the WDK and all of its dependencies at once:
 
-```powershell
-winget configure -f 'https://raw.githubusercontent.com/microsoft/Windows-driver-samples/main/_wdk_utils/winget/configs/wdk-vscommunity.dsc.yaml'
+
+```console
+winget configure -f "https://raw.githubusercontent.com/microsoft/Windows-driver-samples/main/_wdk_utils/winget/configs/wdk-vscommunity.dsc.yaml"
 ```
 
 This [configuration file](https://github.com/microsoft/Windows-driver-samples/blob/main/_wdk_utils/winget/configs/wdk-vscommunity.dsc.yaml) sets up the following components:
