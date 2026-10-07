@@ -1,7 +1,7 @@
 ---
 title: Allocated Filter Altitudes
 description: Lists file system filter altitudes allocated by Microsoft
-ms.date: 10/28/2025
+ms.date: 10/07/2026
 ms.update-cycle: 365-days
 keywords:
 - filter driver altitude
@@ -14,15 +14,10 @@ ms.topic: reference
 
 This page lists filter altitude allocations by load order group. It's updated 1-2 times per year, so might not include any recently assigned allocations.
 
-> [!NOTE]
-> Microsoft assigns altitudes only to file system filters that are planned to be part of a publicly shipping product. File system filters that are used only for internal testing or other non-public purposes don't need a Microsoft-assigned altitude. You can use any altitude value for such filters.
->
-> Please do not request an altitude assignment for non-public file system filters. Altitude requests for non-public file system filters will not be processed.
->
-> If a filter is planned for a publicly shipping product but is still early in development, wait to request an altitude until the filter's functionality and intended load order group are stable. You can use any altitude value in your development and test environments while the filter evolves. This testing can help you confirm the appropriate load order group before you request a Microsoft-assigned altitude.
-
 * If you already have a Microsoft-assigned "integer" altitude, you can use it to [create your own "fractional" altitude to place a new filter in the same load order group](load-order-groups-and-altitudes-for-minifilter-drivers.md#create-an-altitude).
 * If you don't have a Microsoft-assigned altitude in the appropriate load order group, [you need to request one](minifilter-altitude-request.md).
+
+Microsoft assigns altitudes only to file system filters that are planned to be part of a publicly shipping product. File system filters that are used only for internal testing or other non-public purposes don't need a Microsoft-assigned altitude. You can use any altitude value for such filters. If a filter is planned for a publicly shipping product but is still early in development, wait to request an altitude until the filter's functionality and intended load order group are stable. You can use any altitude value in your development and test environments while the filter evolves. This testing can help you confirm the appropriate load order group before you request a Microsoft-assigned altitude. For the complete policy, see [Request a filter altitude identifier](minifilter-altitude-request.md).
 
 To learn more about load order groups and altitudes, see [Load order groups and altitudes for minifilter drivers](load-order-groups-and-altitudes-for-minifilter-drivers.md).
 

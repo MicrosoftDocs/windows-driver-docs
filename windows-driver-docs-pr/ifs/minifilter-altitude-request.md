@@ -1,7 +1,7 @@
 ---
 title: Request a Filter Altitude Identifier
 description: Describes how to request a file system filter altitude, report a fractional altitude, or update information associated with an identifier
-ms.date: 12/18/2024
+ms.date: 10/07/2026
 keywords:
 - filter altitude request
 - minifilter altitude request
@@ -26,13 +26,14 @@ This article describes how to request a new file system filter altitude. Some th
 
 * All fields in your email request must be filled out. Any missing information might delay the assignment.
 
-> [!NOTE]
-> Microsoft assigns altitudes only to file system filters that are planned to be part of a publicly shipping product. File system filters that are used only for internal testing or other non-public purposes don't need a Microsoft-assigned altitude. You can use any altitude value for such filters.
+> [!IMPORTANT]
+> Microsoft assigns altitudes only to file system filters planned for a publicly shipping product. File system filters that are used only for internal testing or other non-public purposes don't need a Microsoft-assigned altitude. Use any altitude value for such filters.
 >
-> Please do not request an altitude assignment for non-public file system filters. Altitude requests for non-public file system filters will not be processed.
+> Do not request an altitude allocation for non-public file system filters. Altitude requests for non-public file system filters will not be processed.
 >
 > If a filter is planned for a publicly shipping product but is still early in development, wait to request an altitude until the filter's functionality and intended load order group are stable. You can use any altitude value in your development and test environments while the filter evolves. This testing can help you confirm the appropriate load order group before you request a Microsoft-assigned altitude.
 
+## Request a filter altitude identifier
 To request a [filter altitude identifier](load-order-groups-and-altitudes-for-minifilter-drivers.md), send email in an ASCII text e-mail message to [fsfcomm@microsoft.com](mailto:fsfcomm@microsoft.com?subject=Filter%20altitude%20request) with the subject: “Filter altitude request” and the following fields and corresponding information in the message.
 
 | Field | Comment |
