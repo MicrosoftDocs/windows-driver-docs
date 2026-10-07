@@ -45,6 +45,18 @@ There are two buttons on the Bluetooth Virtual Sniffer window:
 
     For a limited time, enable SSP debug mode. Send and accept SMP debug keys. Clicking again extends the time.
 
+## Associated registry keys
+
+The following keys are located in `HKLM:\SYSTEM\CurrentControlSet\Services\BthPort\Parameters`. They are set when clicking on buttons of the user interface, and can be used to revert the changes.
+
+| Value | Type | Meaning | Notes |
+| ----- | ---- | ------- | ----- |
+| `MaxEtwBytes` | DWORD | The maximum size of a HCI packet. | "Full Packet Logging" sets this to 0x400 |
+| `EtwLogSensitiveData` | DWORD | Set to 1 to enable HCI logging of sensitive data. Defaults to 0. | |
+| `EtwDropLargeEvents` | DWORD | Set to 0 to not drop large HCI packets. Defaults to 1. | |
+| `SimplePairingDebugEnabled` | DWORD | Set to 1 to enable SSP debug mode. Defaults to 0. | |
+| `SmpDebugEnabled` | DWORD | Send and accept SMP debug keys. Defaults to 0. | |
+
 ## Wireshark operation
 
 Assumes Wireshark is installed.
