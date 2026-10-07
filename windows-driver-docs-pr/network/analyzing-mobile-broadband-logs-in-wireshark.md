@@ -11,7 +11,7 @@ ms.custom: sfi-image-nochange
 Follow these steps to diagnose the logs related to mobile broadband using Wireshark:
 
 
-1. Download the ETW (Event Tracing for Windows) reader. Wireshark packages the ETW reader starting from version 3.5.
+1. Download the ETW (Event Tracing for Windows) reader. The following instructions require a minimum Wireshark version of 4.6.0.
 
  
 
@@ -29,7 +29,11 @@ Follow these steps to diagnose the logs related to mobile broadband using Wiresh
    
    :::image type="content" source="images/wireshark-mbb-logs0.png" alt-text="Screenshot of Wireshark with the ETW reader selected.":::
 
-2. Option A. Click the "…" button to choose an ETL file to decode. You can set filter parameters to only decode events from specific providers. Then click the Start button to decode the file.
+2. Click "Add" and select "Mobile Broadband" then press OK.
+
+   :::image type="content" source="images/wireshark-mbb-logs05.png" alt-text="Screenshot of the ETW reader with the provider selector and Mobile Broadband ticked.":::
+
+   Option A. Click the "…" button to choose an ETL file to decode. You can set filter parameters to only decode events from specific providers. Then click the Start button to decode the file.
 
    :::image type="content" source="images/wireshark-mbb-logs1.png" alt-text="Screenshot of the ETW reader with ETL file selection and filter parameters.":::
 
