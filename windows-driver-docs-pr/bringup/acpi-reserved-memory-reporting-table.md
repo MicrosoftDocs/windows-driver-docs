@@ -155,14 +155,6 @@ A consumer can't independently check overlap or actual address-width limits for 
 
 The [Project Mu RMEM documentation](https://github.com/microsoft/mu_basecore/blob/587366f707e8a15d4b5bec9aaea759b558486705/MdeModulePkg/Universal/Acpi/RmemAcpiDxe/ReadMe.md#windows-powershell-retrieval) includes a PowerShell retrieval and diagnostic example.
 
-## Interpreting reserved-memory totals
-
-Diagnostic tools can sum entry sizes and group them by category. Include address-hidden entries by size, while reporting that their overlap can't be independently verified.
-
-The reference example compares the RMEM total with Windows-reported physically installed memory minus physical memory available to the operating system. A difference can reflect incomplete RMEM coverage or a difference in reporting scope. Don't assume that RMEM totals must equal an operating system's aggregate hardware-reserved memory value.
-
-Retrieving the table and comparing accounting values doesn't access the reported physical-memory ranges.
-
 ## Security and privacy
 
 RMEM exposes reservation sizes, categories, labels, and, unless hidden, physical addresses to software that can retrieve the table. Address redaction doesn't conceal the reservation's existence, size, category, or label.
