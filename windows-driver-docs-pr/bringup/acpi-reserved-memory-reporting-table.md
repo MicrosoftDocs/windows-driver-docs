@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 The Reserved-Memory Reporting (RMEM) ACPI table describes physical-memory ranges that firmware reserves for platform functions. Each entry reports the size, purpose category, attributes, and an optional diagnostic label for a reservation. Firmware can hide a sensitive physical address while retaining the reservation's size and purpose.
 
-RMEM Revision 1 is supported by Windows and consumed by existing diagnostic tooling. This article describes the existing Revision 1 format implemented in Project Mu and proposed for standardization through the EDK II Code First process. It does not introduce a wire-format redesign or establish that the proposal has been adopted into the ACPI specification.
+RMEM Revision 1 is supported by Windows and consumed by existing diagnostic tooling. This article describes the Revision 1 table format and requirements for firmware producers and diagnostic consumers.
 
 ## Purpose
 
