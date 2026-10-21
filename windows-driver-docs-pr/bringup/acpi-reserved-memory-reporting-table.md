@@ -1,23 +1,23 @@
 ---
-title: Reserved-Memory Reporting (RMEM) Table
-description: Describes the RMEM Revision 1 ACPI table format, firmware publication, and validation of reserved-memory diagnostic information.
+title: ACPI RMEM Table
+description: Learn about the RMEM Revision 1 ACPI table format, firmware publication, and validation of reserved-memory diagnostic information.
 keywords:
 - ACPI
 - RMEM
 - reserved memory
 - firmware
-ms.date: 10/13/2026
+ms.date: 10/20/2026
 ms.topic: reference
 ai-usage: ai-assisted
 ---
 
 # Reserved-Memory Reporting (RMEM) Table
 
-The Reserved-Memory Reporting (RMEM) ACPI table describes physical-memory ranges that firmware reserves for platform functions. Each entry reports the size, purpose category, attributes, and an optional diagnostic label for a reservation. Firmware can hide a sensitive physical address while retaining the reservation's size and purpose.
+The Reserved-Memory Reporting (RMEM) table is an Advanced Configuration and Power Interface (ACPI) table produced by Unified Extensible Firmware Interface (UEFI) firmware. It describes firmware-reserved physical-memory ranges to help diagnostic applications explain why some installed memory is unavailable to the operating system. Each entry reports the reservation's size, purpose category, attributes, and optional diagnostic label. Firmware can redact a physical address while retaining size and purpose information.
 
-RMEM Revision 1 is supported by Windows and consumed by existing diagnostic tooling. This article describes the Revision 1 table format and requirements for firmware producers and diagnostic consumers.
+Firmware developers can use the Revision 1 format and producer requirements to construct RMEM tables. Diagnostic application developers can use the retrieval and validation guidance to interpret them. Windows applications retrieve firmware-published tables through the existing [**GetSystemFirmwareTable**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemfirmwaretable) API; no RMEM-specific Windows change is required.
 
-## Purpose
+## RMEM purpose, scope, and unsupported uses
 
 Firmware can reserve memory for security services, shared buffers, graphics, AI accelerators, firmware runtime functions, and other platform purposes. The UEFI memory map describes memory types and attributes, but it doesn't provide a uniform purpose category and diagnostic label for each reservation.
 
@@ -36,7 +36,7 @@ Only report installed physical memory whose reservation is known from an authori
 
 Revision 1 consists of a 36-byte standard ACPI description header, a 4-byte RMEM header extension, and a packed array of 48-byte entries. All offsets and lengths in the following tables are in bytes. Multibyte integers use little-endian byte order.
 
-### Table header
+## RMEM Revision 1 table header
 
 | Field | Byte length | Byte offset | Description |
 | --- | ---: | ---: | --- |
@@ -60,9 +60,9 @@ Length = EntryOffset + (48 * EntryCount)
 EntryOffset = 40
 ```
 
-The entry array starts at an 8-byte-aligned offset from the table base. The reference publisher and accompanying validation tooling limit the table to 64 entries. Firmware should omit the table when it has no reservations to report.
+The entry array starts at an 8-byte-aligned offset from the table base. The Project Mu RMEM publisher and its accompanying PowerShell validation example limit the table to 64 entries. Firmware should omit the table when it has no reservations to report.
 
-### Entry format
+## RMEM Revision 1 entry format
 
 Offsets in this table are relative to the start of an entry.
 
@@ -78,7 +78,7 @@ The actual base address and size must be aligned to 4 KiB. The last byte of the 
 
 The label can contain up to 27 ASCII characters followed by a null terminator. An absent label consists of 28 zero bytes. Set all bytes after the first null terminator to zero. A label is descriptive text, not a stable identifier for ownership, access control, or programmatic policy.
 
-### Categories
+## RMEM Revision 1 categories
 
 | Value | Category | Intended use |
 | ---: | --- | --- |
@@ -91,9 +91,9 @@ The label can contain up to 27 ASCII characters followed by a null terminator. A
 | 6 | FirmwareRuntime | Runtime data, services, or crash diagnostics. |
 | 7 | Other | A reservation that doesn't fit another category. |
 
-The reference implementation accepts categories 1 through 7. Its `RmemCategoryMax` value is an exclusive implementation bound, not a serialized category.
+The Project Mu RMEM reference implementation accepts categories 1 through 7. Its `RmemCategoryMax` value is an exclusive implementation bound, not a serialized category.
 
-### Flags
+## RMEM Revision 1 flags
 
 | Bits | Attribute | Meaning |
 | ---: | --- | --- |
@@ -139,7 +139,7 @@ Windows desktop applications can retrieve ACPI tables through [**GetSystemFirmwa
 
 Query the required buffer size, allocate a suitable buffer, retrieve the table, and check the returned size before parsing. Handle a missing table or retrieval failure explicitly. RMEM availability depends on the currently booted firmware publishing the table.
 
-Treat retrieved bytes as untrusted input. For the Revision 1 format and reference validation policy described here:
+Treat retrieved bytes as untrusted input. For the Revision 1 format and Project Mu RMEM validation policy described here:
 
 1. Require at least 40 bytes before reading the RMEM header extension.
 2. Validate the `RMEM` signature, revision 1, and complete-table checksum.
@@ -155,7 +155,7 @@ A consumer can't independently check overlap or actual address-width limits for 
 
 The [Project Mu RMEM documentation](https://github.com/microsoft/mu_basecore/blob/587366f707e8a15d4b5bec9aaea759b558486705/MdeModulePkg/Universal/Acpi/RmemAcpiDxe/ReadMe.md#windows-powershell-retrieval) includes a PowerShell retrieval and diagnostic example.
 
-## Security and privacy
+## RMEM security and privacy considerations
 
 RMEM exposes reservation sizes, categories, labels, and, unless hidden, physical addresses to software that can retrieve the table. Address redaction doesn't conceal the reservation's existence, size, category, or label.
 
@@ -166,5 +166,5 @@ Don't put secrets, product codenames, unique device information, or memory conte
 - [ACPI system description tables](/windows-hardware/drivers/bringup/acpi-system-description-tables)
 - [GetSystemFirmwareTable](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemfirmwaretable)
 - [Project Mu RMEM structure definitions](https://github.com/microsoft/mu_basecore/blob/587366f707e8a15d4b5bec9aaea759b558486705/MdeModulePkg/Include/Guid/ReservedMemoryReportingTable.h)
-- [RMEM Code First proposal: tianocore/edk2#13253](https://github.com/tianocore/edk2/issues/13253)
-- [EDK II reference implementation and specification draft: tianocore/edk2#13257](https://github.com/tianocore/edk2/pull/13257)
+- [RMEM Code First proposal: tianocore/edk2#13253 (external GitHub issue)](https://github.com/tianocore/edk2/issues/13253)
+- [EDK II reference implementation and specification draft: tianocore/edk2#13257 (external GitHub pull request)](https://github.com/tianocore/edk2/pull/13257)
