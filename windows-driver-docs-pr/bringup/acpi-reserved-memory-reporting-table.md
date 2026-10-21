@@ -13,13 +13,13 @@ ai-usage: ai-assisted
 
 # Reserved-Memory Reporting (RMEM) Table
 
-The Reserved-Memory Reporting (RMEM) table is an Advanced Configuration and Power Interface (ACPI) table produced by Unified Extensible Firmware Interface (UEFI) firmware. It describes firmware-reserved physical-memory ranges to help diagnostic applications explain why some installed memory is unavailable to the operating system. Each entry reports the reservation's size, purpose category, attributes, and optional diagnostic label. Firmware can redact a physical address while retaining size and purpose information.
+The Reserved-Memory Reporting (RMEM) table is an Advanced Configuration and Power Interface (ACPI) table published by platform firmware. It describes firmware-reserved physical-memory ranges to help diagnostic applications explain why some installed memory is unavailable to the operating system. Each entry reports the reservation's size, purpose category, attributes, and optional diagnostic label. Firmware can redact a physical address while retaining size and purpose information.
 
 Firmware developers can use the Revision 1 format and producer requirements to construct RMEM tables. Diagnostic application developers can use the retrieval and validation guidance to interpret them. Windows applications retrieve firmware-published tables through the existing [**GetSystemFirmwareTable**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemfirmwaretable) API; no RMEM-specific Windows change is required.
 
 ## RMEM purpose, scope, and unsupported uses
 
-Firmware can reserve memory for security services, shared buffers, graphics, AI accelerators, firmware runtime functions, and other platform purposes. The UEFI memory map describes memory types and attributes, but it doesn't provide a uniform purpose category and diagnostic label for each reservation.
+Firmware can reserve memory for security services, shared buffers, graphics, AI accelerators, firmware runtime functions, and other platform purposes. The Unified Extensible Firmware Interface (UEFI) memory map describes memory types and attributes, but it doesn't provide a uniform purpose category and diagnostic label for each reservation.
 
 RMEM supplements that information so diagnostic tools can:
 
