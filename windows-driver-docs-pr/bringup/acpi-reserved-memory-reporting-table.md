@@ -166,5 +166,3 @@ Don't put secrets, product codenames, unique device information, or memory conte
 - [ACPI system description tables](/windows-hardware/drivers/bringup/acpi-system-description-tables)
 - [GetSystemFirmwareTable](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemfirmwaretable)
 - [Project Mu RMEM structure definitions](https://github.com/microsoft/mu_basecore/blob/587366f707e8a15d4b5bec9aaea759b558486705/MdeModulePkg/Include/Guid/ReservedMemoryReportingTable.h)
-- [RMEM Code First proposal: tianocore/edk2#13253 (external GitHub issue)](https://github.com/tianocore/edk2/issues/13253)
-- [EDK II reference implementation and specification draft: tianocore/edk2#13257 (external GitHub pull request)](https://github.com/tianocore/edk2/pull/13257)
