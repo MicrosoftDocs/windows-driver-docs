@@ -31,9 +31,9 @@ WdfDeviceAssignS0IdleSettings(
 );
 ```
 
-The IdleTimeout defaults to 1 second. This setting is configurable via *PowerIdleTimeout* parameter in **[NFC_CX_CLIENT_CONFIG](/windows-hardware/drivers/ddi/nfccx/ns-nfccx-_nfc_cx_client_config)**. The state diagram below illustrates the various power transitions that are implied by the use of the WDF idle detection method.
+The IdleTimeout defaults to 1 second. You can configure this setting through the *PowerIdleTimeout* parameter in **NFC_CX_CLIENT_CONFIG**. The following state diagram illustrates the various power transitions that the use of the WDF idle detection method implies.
 
-The client driver can choose to be the power policy owner of the stack through the **IsPowerPolicyOwner** member of the **[NFC_CX_CLIENT_CONFIG](/windows-hardware/drivers/ddi/nfccx/ns-nfccx-_nfc_cx_client_config)** structure. This might be useful for transports such as USB where additional device power states must be configured.
+The client driver can choose to be the power policy owner of the stack through the **IsPowerPolicyOwner** member of the **NFC_CX_CLIENT_CONFIG** structure. This option might be useful for transports such as USB where you must configure additional device power states.
 
 ![power management operations.](images/powermanagementoperations.png)
 

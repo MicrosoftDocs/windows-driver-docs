@@ -26,4 +26,4 @@ The NFC class extension driver provides three extensibility points for the NFC c
 ## Related topics
 
 - [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers)
-- [NFC class extension (CX) reference](/windows-hardware/drivers/ddi/nfccx)
+- [NFC class extension (CX) reference](/windows-hardware/drivers/nfc/nfc-class-extension-quickstart)

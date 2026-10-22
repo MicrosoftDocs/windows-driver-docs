@@ -58,18 +58,18 @@ For more information about system-DMA-receive objects, see [SERCX2SYSTEMDMARECEI
 
 A **SERCX2CUSTOMRECEIVETRANSACTION** object handle is an opaque reference to a custom-receive-transaction object in version 2 of the serial framework extension (SerCx2).
 
-The [SerCx2CustomReceiveTransactionCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivetransactioncreate) method creates a custom-receive-transaction object. 
+The SerCx2CustomReceiveTransactionCreate method creates a custom-receive-transaction object. 
 SerCx2 uses this object to manage I/O transactions that use a custom data-transfer mechanism to read data received by the serial controller. 
 
 This object is opaque to serial controller drivers. 
 
-[SerCx2CustomReceiveTransactionCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivetransactioncreate) supplies, as an output parameter, a SERCX2CUSTOMRECEIVETRANSACTION handle to the newly created custom-receive-transaction object. 
+SerCx2CustomReceiveTransactionCreate supplies, as an output parameter, a SERCX2CUSTOMRECEIVETRANSACTION handle to the newly created custom-receive-transaction object. 
 
 SerCx2 and the serial controller driver use this handle to refer to the object in subsequent custom-receive transactions. 
 
 For more information, see [SerCx2 Custom-Receive Transactions](./sercx2-custom-receive-transactions.md).
 
-After [SerCx2CustomReceiveTransactionCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivetransactioncreate) creates the custom-receive-transaction object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
+After SerCx2CustomReceiveTransactionCreate creates the custom-receive-transaction object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
 
 The custom-receive-transaction object is automatically deleted when the device object is deleted. 
 
@@ -91,13 +91,13 @@ Despite the similar lifetimes of custom-receive and custom-receive-transaction o
 
 A SERCX2CUSTOMTRANSMIT object handle is an opaque reference to a custom-transmit object in version 2 of the serial framework extension (SerCx2).
 
-The [SerCx2CustomTransmitCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customtransmitcreate) method creates a custom-transmit object.h SerCx2 uses this object to manage I/O transactions that write data to the serial controller. 
+The SerCx2CustomTransmitCreate method creates a custom-transmit object. SerCx2 uses this object to manage I/O transactions that write data to the serial controller. 
 This object is opaque to serial controller drivers. 
 
-[SerCx2CustomTransmitCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customtransmitcreate) supplies, as an output parameter, a SERCX2CUSTOMTRANSMIT handle to the newly created custom-transmit object. 
+SerCx2CustomTransmitCreate returns a SERCX2CUSTOMTRANSMIT handle to the newly created custom-transmit object as an output parameter. 
 SerCx2 and the serial controller driver use this handle to refer to the object in subsequent calls to SerCx2 methods and event callback functions.
 
-After [SerCx2CustomTransmitCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customtransmitcreate) creates the custom-transmit object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
+After SerCx2CustomTransmitCreate creates the custom-transmit object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
 
 The custom-transmit object is automatically deleted when the device object is deleted. 
 The serial controller driver must _not_ try to delete the custom-transmit object by calling a method such as [WdfObjectDelete](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete).
@@ -116,16 +116,16 @@ For more information about system-DMA-transmit objects, see [SERCX2SYSTEMDMATRAN
 
 A SERCX2CUSTOMTRANSMITTRANSACTION object handle is an opaque reference to a custom-transmit-transaction object in version 2 of the serial framework extension (SerCx2).
 
-The [SerCx2CustomTransmitTransactionCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customtransmittransactioncreate) method creates a custom-transmit-transaction object. 
+The SerCx2CustomTransmitTransactionCreate method creates a custom-transmit-transaction object. 
 SerCx2 uses this object to manage I/O transactions that use a custom data-transfer mechanism to write data to the serial controller. 
 This object is opaque to serial controller drivers. 
 
-[SerCx2CustomTransmitTransactionCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customtransmittransactioncreate) supplies, as an output parameter, a SERCX2CUSTOMTRANSMITTRANSACTION handle to the newly created custom-transmit-transaction object. 
+SerCx2CustomTransmitTransactionCreate returns a SERCX2CUSTOMTRANSMITTRANSACTION handle as an output parameter to the newly created custom-transmit-transaction object. 
 SerCx2 and the serial controller driver use this handle to refer to the object in subsequent custom-transmit transactions. 
 
 For more information, see [SerCx2 Custom-Transmit Transactions](/previous-versions/dn265320(v=vs.85)).
 
-After [SerCx2CustomTransmitTransactionCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customtransmittransactioncreate) creates the custom-transmit-transaction object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
+After SerCx2CustomTransmitTransactionCreate creates the custom-transmit-transaction object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
 The custom-transmit-transaction object is automatically deleted when the device object is deleted. 
 The serial controller driver must _not_ try to delete the custom-transmit-transaction object by calling a method such as [WdfObjectDelete](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete).
 
@@ -144,14 +144,14 @@ Despite the similar lifetimes of custom-transmit and custom-transmit-transaction
 
 A SERCX2PIORECEIVE object handle is an opaque reference to a PIO-receive object in version 2 of the serial framework extension (SerCx2).
 
-The [SerCx2PioReceiveCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2pioreceivecreate) method creates a PIO-receive object. 
+The SerCx2PioReceiveCreate method creates a PIO-receive object. 
 SerCx2 uses object to manage programmed I/O (PIO) transactions that read data from the serial controller. 
 This object is opaque to serial controller drivers. 
  supplies, as an output parameter, a SERCX2PIORECEIVE handle to the newly created PIO-receive object. 
 SerCx2 and the serial controller driver use this handle to refer to the object in subsequent PIO-receive transactions. 
 
 For more information, see [SerCx2 PIO-Receive Transactions](/previous-versions/dn265332(v=vs.85)).
-After [SerCx2PioReceiveCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2pioreceivecreate) creates the PIO-receive object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
+After SerCx2PioReceiveCreate creates the PIO-receive object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
 The PIO-receive object is automatically deleted when the device object is deleted. 
 The serial controller driver must _not_ try to delete the PIO-receive object by calling a method such as [WdfObjectDelete](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete).
 
@@ -164,12 +164,14 @@ For more information about custom-receive objects, see [SERCX2CUSTOMRECEIVE Obje
 
 A SERCX2PIOTRANSMIT object handle is an opaque reference to a PIO-transmit object in version 2 of the serial framework extension (SerCx2).
 
-The [SerCx2PioTransmitCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitcreate) method creates a PIO-transmit object. 
+The SerCx2PioTransmitCreate method creates a PIO-transmit object. 
 SerCx2 uses this object to manage I/O transactions that use programmed I/O (PIO) to write data to the serial controller. 
 This object is opaque to serial controller drivers. 
-[SerCx2PioTransmitCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitcreate) supplies, as an output parameter, a SERCX2PIOTRANSMIT handle to the newly created PIO-transmit object. 
+SerCx2PioTransmitCreate returns a SERCX2PIOTRANSMIT handle as an output parameter to the new PIO-transmit object. 
 SerCx2 and the serial controller driver use this handle to refer to the object in subsequent PIO-transmit transactions. 
-For more information, see [SerCx2 PIO-Transmit Transactions](/previous-versions/dn265336(v=vs.85)).After [SerCx2PioTransmitCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitcreate) creates the PIO-transmit object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
+For more information, see [SerCx2 PIO-Transmit Transactions](/previous-versions/dn265336(v=vs.85)).
+
+After SerCx2PioTransmitCreate creates the PIO-transmit object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
 The PIO-transmit object is automatically deleted when the device object is deleted. 
 The serial controller driver must _not_ try to delete the PIO-transmit object by calling a method such as [WdfObjectDelete](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete).
 
@@ -182,14 +184,14 @@ For more information about custom-transmit objects, see [SERCX2CUSTOMTRANSMIT Ob
 
 A SERCX2SYSTEMDMARECEIVE object handle is an opaque reference to a system-DMA-receive object in version 2 of the serial framework extension (SerCx2).
 
-The [SerCx2SystemDmaReceiveCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmareceivecreate) method creates a system-DMA-receive object. 
+The SerCx2SystemDmaReceiveCreate method creates a system-DMA-receive object. 
 SerCx2 uses this object to manage system DMA transactions that read data from the serial controller. 
 This object is opaque to serial controller drivers. 
-[SerCx2SystemDmaReceiveCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmareceivecreate) supplies, as an output parameter, a SERCX2SYSTEMDMARECEIVE handle to the newly created system-DMA-receive object. 
+SerCx2SystemDmaReceiveCreate returns a SERCX2SYSTEMDMARECEIVE handle as an output parameter to the newly created system-DMA-receive object. 
 SerCx2 and the serial controller driver use this handle to refer to the object in subsequent system-DMA-receive transactions. 
 For more information, see [SerCx2 System-DMA-Receive Transactions](/previous-versions/dn265343(v=vs.85)).
 
-After [SerCx2SystemDmaReceiveCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmareceivecreate) creates the system-DMA-receive object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
+After SerCx2SystemDmaReceiveCreate creates the system-DMA-receive object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
 The system-DMA-receive object is automatically deleted when the device object is deleted. 
 A serial controller driver can, as an option, create a system-DMA-receive object, but can create no more than one such object. 
 The driver can create this object only under the following conditions:
@@ -204,14 +206,14 @@ For more information about custom-receive objects, see [SERCX2CUSTOMRECEIVE Obje
 
 A SERCX2SYSTEMDMATRANSMIT object handle is an opaque reference to a system-DMA-transmit object in version 2 of the serial framework extension (SerCx2).
 
-The [SerCx2SystemDmaTransmitCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmatransmitcreate) method creates a system-DMA-transmit object. 
+The SerCx2SystemDmaTransmitCreate method creates a system-DMA-transmit object. 
 SerCx2 uses this object to manage system DMA transactions that write data to the serial controller. 
 This object is opaque to serial controller drivers. 
-[SerCx2SystemDmaTransmitCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmatransmitcreate) supplies, as an output parameter, a SERCX2SYSTEMDMATRANSMIT handle to the newly created system-DMA-transmit object. 
+SerCx2SystemDmaTransmitCreate supplies, as an output parameter, a SERCX2SYSTEMDMATRANSMIT handle to the newly created system-DMA-transmit object. 
 SerCx2 and the serial controller driver use this handle to refer to the object in subsequent system-DMA-transmit transactions. 
 For more information, see [SerCx2 System-DMA-Transmit Transactions](/previous-versions/dn265338(v=vs.85)).
 
-After [SerCx2SystemDmaTransmitCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmatransmitcreate) creates the system-DMA-transmit object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
+After SerCx2SystemDmaTransmitCreate creates the system-DMA-transmit object, this object exists for the lifetime of the framework device object that represents the serial controller device. 
 The system-DMA-transmit object is automatically deleted when the device object is deleted. 
 The serial controller driver must _not_ try to delete the system-DMA-transmit object by calling a method such as [WdfObjectDelete](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete).
 
@@ -237,22 +239,6 @@ For more information about custom-transmit objects, see [SERCX2CUSTOMTRANSMIT Ob
 [SerCx2 System-DMA-Receive Transactions](/previous-versions/dn265343(v=vs.85))
 
 [SerCx2 System-DMA-Transmit Transactions](/previous-versions/dn265338(v=vs.85))
-
-[SerCx2CustomReceiveTransactionCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivetransactioncreate)
-
-[SerCx2CustomTransmitCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customtransmitcreate)
-
-[SerCx2CustomTransmitTransactionCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customtransmittransactioncreate)
-
-[SerCx2PioReceiveCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2pioreceivecreate)
-
-[SerCx2PioReceiveCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2pioreceivecreate)
-
-[SerCx2PioTransmitCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitcreate)
-
-[SerCx2SystemDmaReceiveCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmareceivecreate)
-
-[SerCx2SystemDmaTransmitCreate](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmatransmitcreate)
 
 [Summary of Framework Objects](../wdf/summary-of-framework-objects.md)
 

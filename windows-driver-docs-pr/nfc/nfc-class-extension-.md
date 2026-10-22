@@ -74,4 +74,4 @@ The following are the NFC smart cards and tags supported by the NFC CX driver:
 ## Related topics
 
 - [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers/)
-- [NFC class extension (CX) reference](/windows-hardware/drivers/ddi/nfccx/)
+- [NFC class extension (CX) reference](/windows-hardware/drivers/nfc/nfc-class-extension-quickstart)

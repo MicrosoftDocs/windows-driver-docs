@@ -206,7 +206,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
 
     ```
 
-1. Set the NFC CX device configuration. The device configuration includes providing the [`EvtNfcCxWriteNciPacket`](/windows-hardware/drivers/ddi/nfccx/nc-nfccx-evt_nfc_cx_write_nci_packet) callback function. This callback receives the NCI packets from the NFC CX driver that the client driver should forward to the NFC Controller.
+1. Set the NFC CX device configuration. The device configuration includes providing the [`EvtNfcCxWriteNciPacket`](/windows-hardware/drivers/ddi/) callback function. This callback receives the NCI packets from the NFC CX driver that the client driver should forward to the NFC Controller.
 
     ```cpp
         // Create the NfcCx config.
@@ -256,7 +256,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
         }
     ```
 
-1. Call the [`NfcCxDeviceInitialize`](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxdeviceinitialize) function.
+1. Call the `NfcCxDeviceInitialize` function.
 
     This function should be called after the [`WDFDEVICE`](/windows-hardware/drivers/ddi/wdfdevice/) object has been created to allow the NFC CX driver to complete its initialization of the device instance.
 
@@ -269,7 +269,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
         }
     ```
 
-1. Call [`NfcCxSetRfDiscoveryConfig`](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxsetrfdiscoveryconfig) to specify the NFC technologies and protocols supported by the NFC Controller.
+1. Call `NfcCxSetRfDiscoveryConfig` to specify the NFC technologies and protocols supported by the NFC Controller.
 
     ```cpp
         // Create the RF config. (Enable everything.)
@@ -330,7 +330,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
     }
     ```
 
-1. Call the [`NfcCxHardwareEvent`](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxhardwareevent) function with [`HostActionStart`](/windows-hardware/drivers/ddi/nfccx/ne-nfccx-_nfc_cx_host_action) and [`HostActionStop`](/windows-hardware/drivers/ddi/nfccx/ne-nfccx-_nfc_cx_host_action) to start and stop the NCI state machine at the appropriate times.
+1. Call the `NfcCxHardwareEvent` function with [`HostActionStart`](/windows-hardware/drivers/ddi/) and [`HostActionStop`](/windows-hardware/drivers/ddi/) to start and stop the NCI state machine at the appropriate times.
 
     Some drivers do this during the [`D0Entry`](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) and [`D0Exit`](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit) PnP power callbacks. This can vary depending on how your client driver handles power management, though.
 
@@ -382,7 +382,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
     }
     ```
 
-1. Implement the [`WriteNciPacket`](/windows-hardware/drivers/ddi/nfccx/nc-nfccx-evt_nfc_cx_write_nci_packet) function.
+1. Implement the [`WriteNciPacket`](/windows-hardware/drivers/ddi/) function.
 
     This callback is called by the NFC CX when there's an NCI packet to send to the NFC Controller.
 
@@ -410,7 +410,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
     };
     ```
 
-1. Call the [`NfcCxNciReadNotification`](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxncireadnotification) function when the NFC Controller has an NCI packet that should be sent to the NFC CX. This is typically done in a hardware event callback.
+1. Call the `NfcCxNciReadNotification` function when the NFC Controller has an NCI packet that should be sent to the NFC CX. Typically, do this in a hardware event callback.
 
     For example:
     - A [GPIO interrupt](../gpio/gpio-interrupts.md) event callback. (I<sup>2</sup>C and SPI)
