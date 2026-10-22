@@ -196,7 +196,8 @@ This parameter allows the storage provider to return extended (implementation-sp
  
 
 **Cannot perform the requested operation when the drive is read only** (43006)
- 
+
+**Missing documentation** (43034)
 
 ## Requirements
 
