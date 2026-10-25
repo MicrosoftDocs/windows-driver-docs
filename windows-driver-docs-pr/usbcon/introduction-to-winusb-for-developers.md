@@ -78,7 +78,7 @@ This section includes information on:
 It also includes detailed code examples that show how apps and USB devices communicate.
 
 > [!NOTE]
-> WinUSB supports isochronous transfers starting in Windows 8.
+> WinUSB supports isochronous transfers starting in Windows 8.1.
 
 ## Related content
 
