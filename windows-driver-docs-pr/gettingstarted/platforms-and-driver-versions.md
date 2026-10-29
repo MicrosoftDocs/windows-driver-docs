@@ -33,7 +33,7 @@ A kernel-mode driver can dynamically determine if an operating system provided A
 
 ### Conditionally calling Windows version-dependent functions
 
-A kernel-mode driver can use the [**MmGetSystemRoutineAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemroutineaddress) or [**MmGetSystemRoutineAddressEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemroutineaddressex) functions to dynamically check if a particular API it wants to use is available in the current run time environment and to get a function pointer to use in order to call that API.
+A kernel-mode driver can use the **MmGetSystemRoutineAddress** or **MmGetSystemRoutineAddressEx** functions to dynamically check if a particular API is available in the current runtime environment. These functions also return a function pointer that the driver can use to call the API.
 
 > [!NOTE]
 > To help preserve type checking and prevent unintentional errors, you should create a typedef that mirrors the original function type.

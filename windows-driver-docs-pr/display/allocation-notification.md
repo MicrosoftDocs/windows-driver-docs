@@ -28,7 +28,7 @@ When the system calls [**DxgkDdiCreateAllocation**](/windows-hardware/drivers/dd
 
 * The **DXGK_OPERATION_NOTIFY_ALLOC** paging operation is added to [**DXGK_BUILDPAGINGBUFFER_OPERATION**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_buildpagingbuffer_operation).
 
-* The [**DXGK_BUILDPAGINGBUFFER_NOTIFYALLOC**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgk_buildpagingbuffer_notifyalloc) structure is added for use with the **DXGK_OPERATION_NOTIFY_ALLOC** operation.
+* The **DXGK_BUILDPAGINGBUFFER_NOTIFYALLOC** structure is added for use with the **DXGK_OPERATION_NOTIFY_ALLOC** operation.
 
 ### Flags added to DXGK_ALLOCATIONINFOFLAGS2
 

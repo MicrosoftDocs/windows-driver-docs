@@ -272,6 +272,8 @@
       href: acpi-system-description-tables.md
     - name: Debug Port Table 2 (DBG2)
       href: acpi-debug-port-table.md
+    - name: Reserved-Memory Reporting (RMEM) Table
+      href: acpi-reserved-memory-reporting-table.md
     - name: Serial Port Console Redirection Table (SPCR)
       href: serial-port-console-redirection-table.md
     - name: Generate ACPI tables by using AcpiGenFx
