@@ -2,10 +2,11 @@
 metadata:
   description: This topic presents frequently asked questions for driver developers who are new to developing and integrating USB devices and drivers with Windows operating systems.
   title: USB in Windows - FAQ
-  ms.date: 04/20/2017
+  ms.date: 10/01/2026
   ms.author: mhopkins
   ms.localizationpriority: medium
   ms.topic: faq
+  ai-usage: ai-assisted
 title: USB in Windows - FAQ
 summary: |
   This topic presents frequently asked questions for driver developers who are new to developing and integrating USB devices and drivers with Windows operating systems.  
@@ -94,6 +95,9 @@ sections:
           If the PC's USB 2.0 ports use a companion controller, the host controller to which the port is routed depends on device speed. For example, a low speed device connects through a UHCI or an OHCI controller, and uses the USBUHCI or USBOHCI driver. The PC routes a high speed device to an EHCI controller, therefore, Windows uses the USBEHCI driver.
           
           Different device speeds do not determine the driver that is loaded for the controller. However, different device speeds might determine which controller is used. The controller always uses the same driver.
+
+          > [!NOTE]
+          > On Windows builds that implement the [tunneled legacy host-controller deprecation policy](usb-3-0-driver-stack-architecture.md#tunneled-legacy-host-controller-deprecation), the EHCI, UHCI, and USB OHCI miniport drivers reject startup of controllers classified as Thunderbolt or USB4 tunneled.
           
       - question: |
           How do I determine whether my USB 3.0 device is operating as SuperSpeed?
