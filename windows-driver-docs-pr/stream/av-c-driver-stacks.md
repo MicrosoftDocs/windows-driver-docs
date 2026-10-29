@@ -6,13 +6,15 @@ keywords:
 - driver stacks WDK AV/C
 - stacks WDK AV/C
 - Avc.sys function driver WDK , driver stacks
-ms.date: 10/01/2026
+ms.date: 10/29/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
 
 # AV/C Driver Stacks
 
+> [!IMPORTANT]
+> IEEE 1394 is no longer in active development and may be removed in future releases of Windows. After removal, the feature and associated capabilities will no longer work.
 
 
 
