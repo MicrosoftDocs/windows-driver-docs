@@ -30,7 +30,7 @@ Two things should be noted about this [**INF Version section**](inf-version-sect
 
 1. The [**INF Version section**](inf-version-section.md) declares three different catalog files, one for each Windows version which the driver package supports. When [**Inf2Cat**](../devtest/inf2cat.md) is executed, it creates a catalog file for each Windows version that is specified through the **/os** option.
 
-   For example, Inf2Cat creates the catalog file *toastamd64.cat* if the command-line argument /os:Vista_X64 is used. Similarly, the tool creates the catalog file *toastx86.cat* if the **/os:**<em>Vista_X86</em> option is used.
+   For example, Inf2Cat creates the catalog file *tstamd64.cat* if the command-line argument /os:Vista_X64 is used. Similarly, the tool creates the catalog file *tostx86.cat* if the **/os:**<em>Vista_X86</em> option is used.
 
 2. The [**DriverVer directive**](inf-driverver-directive.md) of the INF Version section declares an old time stamp and version.
 
@@ -56,6 +56,6 @@ Where:
 
 - The **/os:**<em>Vista_x64</em> option specifies the catalog file is for the 64-bit version of Windows Vista. The Inf2Cat tool will match the name of the catalog file to the requested Windows version. Since the *toastpkg*.inf INF file contains a CatalogFile directive which has the NTAMD64 platform extension, Inf2Cat will create a catalog file that is named *tstamd64.cat.*
 
-  One or more Windows versions may be specified in the **/os:** option. For example, if **/os:**<em>Vista_x64, Vistax32</em> is specified, Inf2Cat will create the *tstamd64.cat* and *tstx86.cat* files because of the INF CatalogFile directives in the *toastpkg*.inf INF file.
+  One or more Windows versions may be specified in the **/os:** option. For example, if **/os:**<em>Vista_X64,Vista_X86</em> is specified, Inf2Cat will create the *tstamd64.cat* and *tostx86.cat* files because of the INF CatalogFile directives in the *toastpkg*.inf INF file.
 
 For more information about the tool's command-line arguments, see [**Inf2Cat**](../devtest/inf2cat.md).
