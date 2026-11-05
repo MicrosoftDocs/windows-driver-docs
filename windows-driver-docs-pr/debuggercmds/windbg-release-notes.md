@@ -18,33 +18,33 @@ This article provides information on what's new in WinDbg. Earlier versions were
 
 ### New features
 
-* Added host.currentStack and host.currentRegisters to JavaScript debugging scripts, providing access to the current stack and register context even for targets without processes or threads.
+* Added `host.currentStack` and `host.currentRegisters` to JavaScript debugging scripts, so you can access the current stack and register context even for targets without processes or threads.
 
 ### Debugging engine improvements
 
-* Reduced load-time initialization and private-memory overhead in dbghelp.dll.
-* Improved !heap diagnostics when a legacy heap is missing or inaccessible in a dump.
+* Reduced load-time initialization and private-memory overhead in `dbghelp.dll`.
+* Improved `!heap` diagnostics when a legacy heap is missing or inaccessible in a dump.
 
-### General UI Improvements
+### General UI improvements
 
-* Updated .NET SDK to 10.0.403 (security update)
+* Updated .NET SDK to 10.0.403 (security update).
 
 ### Time Travel Debugging (TTD)
 
 * Updated TTD from 1.11.617 to 1.11.618.
 
-### Bug Fixes
+### Bug fixes
 
-* Fixed local kernel debugging failing because Windows did not trust the bundled kernel debugging driver's signature. ([GitHub issue #404](https://github.com/microsoft/WinDbg-Feedback/issues/404))
-* Fixed canceled symbol downloads preventing subsequent symbol requests from retrying, removing the need to recover with .reload /f.
+* Fixed local kernel debugging failing because Windows didn't trust the bundled kernel debugging driver's signature. ([GitHub issue #404](https://github.com/microsoft/WinDbg-Feedback/issues/404))
+* Fixed canceled symbol downloads preventing subsequent symbol requests from retrying, removing the need to recover with `.reload /f`.
 * Fixed a crash when a kernel debugging connection resets while breakpoint commands or event callbacks are running.
 * Fixed extended register state being lost when creating or carving x64 dumps from WinDbg running on Arm64.
 * Fixed missing inline stack frames and incorrect source-line mappings when reading DWARF debug information, including DWARF 5.
 * Fixed unnamed inlined functions appearing as blank symbol names in call stacks by providing descriptive placeholder names.
-* Fixed DWARF diagnostic commands, including !die and !dietree, failing on targets without an active process.
-* Fixed MIPS64 register display and inconsistent byte ordering between dv and dx for variables stored in registers.
+* Fixed DWARF diagnostic commands, including `!die` and `!dietree`, failing on targets without an active process.
+* Fixed MIPS64 register display and inconsistent byte ordering between `dv` and `dx` for variables stored in registers.
 * Fixed a crash when opening MIPS64 dumps.
-* Restored !heap statistics grouping and allocation-size filtering options used in memory-leak investigations.
+* Restored `!heap` statistics grouping and allocation-size filtering options used in memory-leak investigations.
 * Hardened validation of image-file bounds and segment-heap command arguments.
 
 ## 1.2610.1001.0
