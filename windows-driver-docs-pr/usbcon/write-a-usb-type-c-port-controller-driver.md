@@ -1,12 +1,16 @@
 ---
 title: Write a USB Type-C Port Controller Driver
 description: Describes the behavior of the USB Type-C Port Controller Interface Class Extension, known as UcmTcpciCx and tasks that a client driver must perform for a USB Type-C port controller.
-ms.date: 01/17/2024
+ms.date: 10/29/2026
 ms.custom: 19H1
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 
 # Write a USB Type-C port controller driver
+
+> [!IMPORTANT]
+> UcmTcpciCx is no longer in active development and may be removed in future releases of Windows. OEMs are advised to transition to UcmUcsiCx along with the Windows-provided UcmUcsiCx ACPI client driver (UcmUcsiAcpiClient.sys). For more information, see [USB Type-C Connector System Software Interface (UCSI) driver](ucsi.md).
 
 You need to write a USB Type-C port controller driver if your USB Type-C hardware implements the USB Type-C or Power Delivery (PD) physical layer but doesn't implement the state machines required for Power Delivery.
 
