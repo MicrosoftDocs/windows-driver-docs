@@ -130,3 +130,5 @@
   href: /windows-hardware/drivers/ddi
 - name: Windows driver samples
   href: samples/index.md
+- name: Driver Quality Initiative
+  href: driver-quality-initiative.md
