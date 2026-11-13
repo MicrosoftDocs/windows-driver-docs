@@ -16,7 +16,7 @@ This article describes how a user-mode application or kernel-mode driver can enf
 
 If a secure read is enabled for a collection, only "trusted" clients (those with SeTcbPrivilege privileges) can obtain input from an open file of a collection. Kernel-mode drivers have SeTcbPrivilege privileges by default, but user-mode applications do not. For information about how to obtain system privileges in user mode, see the information about authorization in the Microsoft Windows SDK documentation.
 
-Secure read restrictions apply only to input delivered through read requests; they do not apply to input reports explicitly requested using HidD_GetInputReport or IOCTL_HID_GET_INPUT_REPORT, which remain available by design while secure read is enabled.
+Secure read restrictions apply only to input delivered through read requests; they do not apply to input reports explicitly requested using `HidD_GetInputReport` or `IOCTL_HID_GET_INPUT_REPORT`, which remain available by design while secure read is enabled.
 
 This mechanism is provided primarily so that "trusted" user-mode system components can prevent user-mode applications without SeTcbPrivilege privileges from obtaining input from a collection during critical system operations. For example, a "trusted" user-mode system component can prevent a user-mode application without SeTcbPrivilege privileges from obtaining confidential information that a user supplies during a logon operation.
 
