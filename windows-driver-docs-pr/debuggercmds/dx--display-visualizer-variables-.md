@@ -190,6 +190,14 @@ kd> dx -g @$curprocess.Modules
 
 :::image type="content" source="images/dx-grid-example.png" alt-text="Screenshot of output from dx -g @$curprocess.modules command, displaying columnar grid output.":::
 
+The dx command also handle string interpolation with the following format.
+
+```dbgcmd
+kd> dx $"Process ID is {@$curprocess.Id,d} and RAX == {@rax,x}"
+$"Process ID is {@$curprocess.Id,d} and RAX == {@rax,x}" : Process ID is 968 and RAX == 0x657861
+    Length           : 0x25
+```
+
 Use the -h option to display information about objects.
 
 ```dbgcmd
