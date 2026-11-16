@@ -1,7 +1,7 @@
 ---
 title: Driver Ship Room Release Cadence Windows
 description: This article provides information about the operation schedule for Windows driver ship room. In order to provide the best experience for Windows users, there are certain times where aspects of publication operations are suspended.
-ms.date: 11/25/2025
+ms.date: 11/25/2026
 ms.topic: release-notes
 ---
 
@@ -42,21 +42,21 @@ There are changes for releasing drivers marked as needing *Microsoft approval*. 
 
 1. **Certain US holidays**: Drivers needing *Microsoft approval* aren't released on certain US Holidays and long weekends
 
-    | US Holidays | 2026 | 2025 |
+    | US Holidays | 2027 | 2026 |
     |--|--|--|
-    | New Year's Day | Tuesday, January 01 | Wednesday, January 01 |
-    | Martin Luther King Day | Monday, January 19 | Monday, January 20 |
-    | Presidents Day | Monday, February 16 | Monday, February 17 |
-    | Memorial Day | Monday, May 25 | Monday, May 26 |
-    | Fourth of July | Friday, July 03 | Friday, July 04 |
-    | Labor Day | Monday, September 07 | Monday, September 01 |
-    | Thanksgiving Day | Thursday, November 26 | Thursday, November 27 |
-    | Day after Thanksgiving | Friday, November 27 | Friday, November 28 |
-    | Christmas Eve | Thursday, December 24 | Wednesday, December 24 |
-    | Christmas Day | Friday, December 25 | Thursday, December 25 |
-    | Day after Christmas | - | Friday, December 26 |
+    | New Year's Day | Friday, January 01 | Thursday, January 01 |
+    | Martin Luther King Day | Monday, January 18 | Monday, January 19 |
+    | Presidents Day | Monday, February 15 | Monday, February 16 |
+    | Memorial Day | Monday, May 31 | Monday, May 25 |
+    | Fourth of July | Monday, July 05 | Friday, July 03 |
+    | Labor Day | Monday, September 06 | Monday, September 07 |
+    | Thanksgiving Day | Thursday, November 25 | Thursday, November 26 |
+    | Day after Thanksgiving | Friday, November 26 | Friday, November 27 |
+    | Christmas Eve | Friday, December 24 | Thursday, December 24 |
+    | Christmas Day | Monday, December 27 | Friday, December 25 |
+    | New Year's Day | Friday, December 31 | - |
 
-1. **US Winter Holiday time frame release moratorium**: During the US winter holiday season, the driver ship room isn't releasing *any* drivers. For calendar year 2025, the time frame is December 18, 2025 through January 1, 2026. For calendar year 2026, the time frame is December 18, 2026 through January 1, 2027.
+1. **US Winter Holiday time frame release moratorium**: During the US winter holiday season, the driver ship room isn't releasing *any* drivers. For calendar year 2026, the time frame is December 18, 2026 through January 3, 2027. 
 
     See the calendars in the [Appendix](#appendix) for more dates.
 
@@ -75,6 +75,6 @@ There are changes for releasing drivers marked as needing *Microsoft approval*. 
 
     **These calendars are subject to change based on OS release timelines.**
 
-    :::image type="content" source="images/2025-driver-calendar.png" alt-text="September - December 2025 driver release calendar showing excluded dates.":::
-
     :::image type="content" source="images/2026-driver-calendar.png" alt-text="September - December 2026 driver release calendar showing excluded dates.":::
+
+    :::image type="content" source="images/2027-driver-calendar.png" alt-text="September - December 2027 driver release calendar showing excluded dates.":::
