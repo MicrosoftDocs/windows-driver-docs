@@ -33,8 +33,8 @@ This [configuration file](https://github.com/microsoft/Windows-driver-samples/bl
 
 - Visual Studio Community
 - Visual Studio workloads and components required for driver development
-- Windows 11, version 26H1 SDK
-- Windows 11, version 26H1 WDK
+- Windows 11, version 26H2 SDK
+- Windows 11, version 26H2 WDK
 
 Configuration files work best when setting up a new machine. However, you can also use this on machines that already have some components installed — WinGet detects what's already there and only installs the missing ones.
 
@@ -47,8 +47,8 @@ If you prefer to install components one at a time, follow the steps in this sect
 
 - Visual Studio
 - Visual Studio workloads and components required for driver development
-- Windows 11, version 26H1 SDK
-- Windows 11, version 26H1 WDK
+- Windows 11, version 26H2 SDK
+- Windows 11, version 26H2 WDK
 
 ### Visual Studio
 

@@ -7,8 +7,9 @@ keywords:
 - Insider Preview
 - Download
 - drivers
-ms.date: 11/13/2025
+ms.date: 11/09/2026
 ms.topic: concept-article
+ai-usage: ai-assisted
 ---
 
 # Installing preview versions of the Windows Driver Kit (WDK)
@@ -23,15 +24,11 @@ This procedure installs the WDK Insider Preview. You install Visual Studio with 
 
 ### Step 1. Install Visual Studio
 
-To install Visual Studio and the necessary workload or component, follow these steps:
+When you install Visual Studio 2026, select the **Desktop development with C++** workload. Then, under **Individual Components**, add:
 
-1. Download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2022-and-other-products).
+- **Windows Driver Kit**
 
-   The WDK supports Visual Studio 2022, all editions. The WDK no longer supports Visual Studio 2019.
-
-1. Select the **Development with C++** workload.
-
-   For Arm64 and Arm64EC drivers, install an extra component: **Individual components > Compilers, build tools, and runtimes > Visual C++ compilers and libraries for Arm64/Arm64EC**. The WDK has Spectre mitigation enabled by default, but requires Spectre mitigated libraries installed with Visual Studio for each development architecture.
+:::image type="content" source="images/installing-wdk-vs-component.png" alt-text="Screenshot of the Visual Studio Installer Individual components tab showing the Windows Driver Kit selected.":::
 
 ### Step 2. Disable strong name validation
 

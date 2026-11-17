@@ -8,8 +8,9 @@ keywords:
 - NuGet
 - install
 - download
-ms.date: 07/22/2026
+ms.date: 11/09/2026
 ms.topic: install-set-up-deploy
+ai-usage: ai-assisted
 ---
 
 # Install the WDK using NuGet
@@ -52,20 +53,11 @@ The WDK NuGet requires Visual Studio. Download and install Visual Studio 2026 Co
 
 [Download Visual Studio Tools](https://visualstudio.microsoft.com/downloads/)
 
-When you install Visual Studio 2026, select the **Desktop development with C++** workload, then under Individual Components add:
+When you install Visual Studio 2026, select the **Desktop development with C++** workload. Then, under Individual Components, add:
 
-- C++ Spectre-mitigated libraries for x64/x86 (Latest MSVC)
-- C++ Spectre-mitigated libraries for ARM64/ARM64EC (Latest MSVC)
-- C++ ATL with Spectre mitigations for x64/x86 (Latest MSVC)
-- C++ ATL with Spectre mitigations for ARM64/ARM64EC (Latest MSVC)
-- C++ MFC with Spectre mitigations for x64/x86 (Latest MSVC)
-- C++ MFC with Spectre mitigations for ARM64/ARM64EC (Latest MSVC)
 - Windows Driver Kit
 
-> [!TIP]
-> Use the Search box to look for "64 latest spectre" (in English installations) or "64 latest" (in non-English installations) to quickly see these components.
-
-:::image type="content" source="images/installing-VS-components-64-latest-spectre.png" alt-text="Image showing the six components listed with checkboxes set.":::
+:::image type="content" source="images/installing-wdk-vs-component.png" alt-text="Screenshot of the Visual Studio Installer with Windows Driver Kit selected under Individual components.":::
 
 ## How to Install WDK NuGet
 

@@ -6,8 +6,9 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 07/22/2026
+ms.date: 11/09/2026
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 
 # Download the Windows Driver Kit (WDK)
@@ -40,18 +41,9 @@ Driver development for this release is supported in Visual Studio 2026 Community
 
 When you install Visual Studio 2026, select the **Desktop development with C++** workload. Then, under Individual Components, add:
 
-- C++ Spectre-mitigated libraries for x64/x86 (Latest MSVC)
-- C++ Spectre-mitigated libraries for ARM64/ARM64EC (Latest MSVC)
-- C++ ATL with Spectre mitigations for x64/x86 (Latest MSVC)
-- C++ ATL with Spectre mitigations for ARM64/ARM64EC (Latest MSVC)
-- C++ MFC with Spectre mitigations for x64/x86 (Latest MSVC)
-- C++ MFC with Spectre mitigations for ARM64/ARM64EC (Latest MSVC)
 - Windows Driver Kit
 
-> [!TIP]
-> Use the Search box to look for "spectre" to quickly see these components.
-
-:::image type="content" source="images/installing-VS-components-64-latest-spectre.png" alt-text="Image showing the six components listed with checkboxes set.":::
+:::image type="content" source="images/installing-wdk-vs-component.png" alt-text="Screenshot of the Visual Studio Installer with Windows Driver Kit selected under Individual components.":::
 
 > [!NOTE]
 > The **Desktop development with C++** workload doesn't install the Windows SDK 10.0.28000.1.
@@ -66,7 +58,7 @@ The provided links for the SDK and the WDK have matching build numbers, which is
 
 ## ![Download icon for WDK](images/download-install.png) Step 3: Install the WDK
 
-- [Download the latest WDK](https://go.microsoft.com/fwlink/?LinkId=2371554)
+- [Download the latest WDK](https://go.microsoft.com/fwlink/p/?LinkId=2388152)
 
 Starting with version 17.11.0, the WDK VSIX is included as an individual component in Visual Studio. Before installing the WDK, the installer checks if a compatible version of the VSIX is already installed. If the installer doesn't find the WDK VSIX, it prompts you to install it. To install the WDK VSIX, launch the Visual Studio Installer, select **Modify**, go to the **Individual Components** tab, add **Windows Driver Kit**, and then select **Modify**.
 
@@ -79,7 +71,7 @@ Starting with version 17.11.0, the WDK VSIX is included as an individual compone
 
 Instead of downloading Visual Studio, the SDK, and the WDK separately, you can download the EWDK. The EWDK is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.
 
-The latest public version of the EWDK contains Visual Studio 2026 Build Tools 18.3.0 and MSVC toolset v14.50.
+The latest public version of the EWDK contains Visual Studio 2026 Build Tools 18.8.3 and MSVC toolset v14.51.
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
