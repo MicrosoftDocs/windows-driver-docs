@@ -4,11 +4,15 @@ description: Windows Sockets Direct Component Operation Topics
 keywords:
 - Windows Sockets Direct WDK , operations
 - SAN service providers WDK
-ms.date: 04/20/2017
+ms.date: 11/12/2026
 ms.topic: reference
 ---
 
 # Windows Sockets Direct Component Operation Topics
+
+> [!IMPORTANT]
+> Windows Sockets Direct is deprecated. SAN endpoint creation will be disabled by default in a future Windows Server release, and the feature will be removed in a later release. This change doesn't affect NetworkDirect, SMB Direct, or other RDMA functionality.
+
 
 
 
