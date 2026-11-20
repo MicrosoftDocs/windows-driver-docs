@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 11/09/2026
+ms.date: 11/19/2026
 ms.topic: how-to
 ai-usage: ai-assisted
 ---
@@ -38,6 +38,15 @@ Beginning with WDK version 10.0.26100.1, the WDK supports the development, testi
 Driver development for this release is supported in Visual Studio 2026 Community, Professional, or Enterprise edition.
 
 [Download Visual Studio 2026](https://visualstudio.microsoft.com/downloads/)
+
+> [!WARNING] 
+> **Known issue with MSVC 14.52**
+> 
+> Visual Studio 18.11.4 LTSC includes the MSVC 14.52 toolset, which has a known issue that can cause driver builds that depend on **immintrin.h** or **ammintrin.h** headers to fail with compiler warning C4392.
+> 
+> For more information, see [Visual Studio feedback issue](https://dev.azure.com/devdiv/DevDiv/_workitems/edit/3097161).
+> 
+> **Workaround**: Use Visual Studio 18.11.4 Stable or an earlier supported Visual Studio version. For available versions, see [Visual Studio releases](https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-history#release-dates-and-build-numbers)
 
 When you install Visual Studio 2026, select the **Desktop development with C++** workload. Then, under Individual Components, add:
 
