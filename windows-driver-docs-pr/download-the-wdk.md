@@ -46,7 +46,7 @@ Driver development for this release is supported in Visual Studio 2026 Community
 > 
 > For more information, see [Visual Studio feedback issue](https://dev.azure.com/devdiv/DevDiv/_workitems/edit/3097161).
 > 
-> **Workaround**: Use Visual Studio 18.11.4 Stable or an earlier supported Visual Studio version. For available versions, see [Visual Studio releases](https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-history#release-dates-and-build-numbers).
+> **Workaround**: Use Visual Studio 18.11.4 Stable or an earlier supported Visual Studio version. For available versions, see [Visual Studio releases](/visualstudio/releases/2026/release-history#release-dates-and-build-numbers).
 
 When you install Visual Studio 2026, select the **Desktop development with C++** workload. Then, under Individual Components, add:
 
