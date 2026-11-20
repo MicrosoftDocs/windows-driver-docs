@@ -19,7 +19,7 @@ Use the WDK to develop, test, and deploy drivers for Windows.
 - Use the latest release WDK to build drivers for Windows 10, Windows Server 2016, and later client and server versions.
 
 > [!IMPORTANT]
-> - Use the latest WDK 28000.2526 with Visual Studio 2026 for driver development. To target older versions of Windows, see [Building Drivers for Previous OS Releases Using the Latest Windows Driver Kit (WDK)](https://techcommunity.microsoft.com/blog/windowsdriverdev/building-drivers-for-previous-os-releases-using-the-latest-windows-driver-kit-wd/4374910).
+> - Use the latest WDK 28000.3231 with Visual Studio 2026 for driver development. To target older versions of Windows, see [Building Drivers for Previous OS Releases Using the Latest Windows Driver Kit (WDK)](https://techcommunity.microsoft.com/blog/windowsdriverdev/building-drivers-for-previous-os-releases-using-the-latest-windows-driver-kit-wd/4374910).
 > - If you want to continue using Visual Studio 2022 or are facing issues upgrading to Visual Studio 2026, use WDK 26100.6584 available in [Other WDK Downloads](other-wdk-downloads.md).
 > - Looking for earlier WDK versions? Visit [Other WDK Downloads](other-wdk-downloads.md)
 
@@ -44,7 +44,7 @@ Driver development for this release is supported in Visual Studio 2026 Community
 > 
 > Visual Studio 18.11.4 LTSC includes the MSVC 14.52 toolset, which has a known issue that can cause driver builds that depend on **immintrin.h** or **ammintrin.h** headers to fail with compiler warning C4392.
 > 
-> For more information, see [Visual Studio feedback issue](https://dev.azure.com/devdiv/DevDiv/_workitems/edit/3097161).
+> For more information, see [Visual Studio feedback issue](https://developercommunity.visualstudio.com/t/WDK-ammintrinh-fails-filter-driver-buil/11181302).
 > 
 > **Workaround**: Use Visual Studio 18.11.4 Stable or an earlier supported Visual Studio version. For available versions, see [Visual Studio releases](/visualstudio/releases/2026/release-history#release-dates-and-build-numbers).
 
