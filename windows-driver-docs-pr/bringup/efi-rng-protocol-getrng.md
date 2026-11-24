@@ -29,14 +29,10 @@ typedef EFI_STATUS (EFIAPI *EFI_RNG_GET_RNG) (
 [in] A pointer to the EFI_RNG_ALGORITHM which identifies the RNG algorithm to use. If this parameter is NULL, the default algorithm supported by the driver will be used.
 
 *RNGValueLength*  
-[in] The length, in bytes, of the buffer returned by *RNGValue*.
+[in] The length, in bytes, of the buffer pointed to by *RNGValue*. The driver shall return exactly this many bytes.
 
 *RNGValue*  
-[in] Pointer to a buffer that will contain the RNG value. The value is allocated by this function using EFI_BOOT_SERVICES->AllocatePool(), and it is the caller's responsibility to free this memory by using EFI_BOOT_SERVICES->FreePool().
-
-## Remarks
-
-The minimum size of *RNGValue* is 32 bytes.
+[out] Pointer to a buffer to fill with random bytes.
 
 ## Return value
 
@@ -45,11 +41,10 @@ Returns one of the following status codes.
 | Status code | Description |
 |--|--|
 | EFI_SUCCESS | The function successfully returned an RNG value. |
-| EFI_INVALID_PARAMETER | *RNGAlgorithm* is NULL when several algorithms are possible. |
 | EFI_UNSUPPORTED | The algorithm specified by *RNGAlgorithm* is not supported by this driver. |
 | EFI_DEVICE_ERROR | An RNG value could not be retrieved because of a hardware or firmware error. |
 | EFI_NOT_READY | There is not enough entropy data available. |
-| EFI_OUT_OF_RESOURCES | The driver is unable to allocate memory for the RNG value. |
+| EFI_INVALID_PARAMETER | *RNGValue* is null or *RNGValueLength* is zero. |
 
 ## Requirements
 
