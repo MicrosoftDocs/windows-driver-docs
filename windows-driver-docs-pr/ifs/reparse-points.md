@@ -21,3 +21,5 @@ A filter can set or delete a reparse point on a file or directory by calling [**
 When a file system opens a file with a reparse point, it attempts to find the file system filter associated with the data format identified by the reparse tag. If present, the associated filter should process the file as directed by the reparse data.
 
 For more information about reparse points, see the [Windows SDK documentation](/windows/win32/fileio/reparse-points).
+
+For a practical security-assessment example involving symbolic links, privileged file writes, and reparse-point handling, see [SeCreateSymbolicLinkPrivilege: Symlink Attack on Windows from Shell](https://en.hackita.it/articoli/secreatesymboliclinkprivilege/).
