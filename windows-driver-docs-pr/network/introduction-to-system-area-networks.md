@@ -7,12 +7,16 @@ keywords:
 - hubs WDK SANs
 - nodes WDK SANs
 - SAN NIC WDK SANs
-ms.date: 01/28/2022
+ms.date: 11/12/2026
 ms.custom: engagement-fy23
 ms.topic: concept-article
 ---
 
 # Introduction to System Area Networks
+
+> [!IMPORTANT]
+> Windows Sockets Direct is deprecated. SAN endpoint creation will be disabled by default in a future Windows Server release, and the feature will be removed in a later release. This change doesn't affect NetworkDirect, SMB Direct, or other RDMA functionality.
+
 
 A *system area network (SAN)* is a high-performance, connection-oriented network that can link a cluster of computers. A SAN delivers high bandwidth (1 Gbps or greater) with low latency. A SAN is typically switched by hubs that support eight or more nodes. The cable lengths between nodes on a SAN range from a few meters to a few kilometers.
 

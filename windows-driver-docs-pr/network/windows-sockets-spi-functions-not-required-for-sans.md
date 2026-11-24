@@ -4,11 +4,15 @@ description: Windows Sockets SPI Functions not Required for SANs
 keywords:
 - SAN service providers WDK , not required functions
 - functions WDK SANs
-ms.date: 04/20/2017
+ms.date: 11/12/2026
 ms.topic: reference
 ---
 
 # Windows Sockets SPI Functions not Required for SANs
+
+> [!IMPORTANT]
+> Windows Sockets Direct is deprecated. SAN endpoint creation will be disabled by default in a future Windows Server release, and the feature will be removed in a later release. This change doesn't affect NetworkDirect, SMB Direct, or other RDMA functionality.
+
 
 
 
